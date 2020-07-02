@@ -1,0 +1,15 @@
+ext {
+    skyrimData = file("S:\\SteamLibrary\\steamapps\\common\\Skyrim\\Data")
+    papyrusCompiler = file("S:\\SteamLibrary\\steamapps\\common\\Skyrim\\Papyrus Compiler\\PapyrusCompiler.exe")
+    papyrusCompilerFlags = file("S:\\SteamLibrary\\steamapps\\common\\Skyrim\\Papyrus Compiler\\TESV_Papyrus_Flags.flg")
+    papyrusIncludeFolders = files(
+            "S:\\MO-Skyrim\\mods\\SkyUI5-SDK\\scripts\\Source",
+            "S:\\MO-Skyrim\\mods\\SKSE-Scripts\\scripts\\Source",
+            "S:\\MO-Skyrim\\mods\\base-scripts-Dragonborn",
+            "S:\\MO-Skyrim\\mods\\base-scripts-Hearthfire",
+            "S:\\MO-Skyrim\\mods\\base-scripts-Dawnguard",
+            "S:\\MO-Skyrim\\mods\\base-scripts-Skyrim"
+    )
+    papyrusFailFast = false
+    reqtificatorBuildDir = file("S:\\MO-Skyrim\\mods\\SkyProcBuild")
+}

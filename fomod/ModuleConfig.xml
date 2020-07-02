@@ -1,0 +1,151 @@
+﻿<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+	<moduleName>Requiem</moduleName>
+	<installSteps order="Explicit">
+		<!--Core files, in the this is just the welcome message-->
+		<installStep name="Core files">
+			<optionalFileGroups order="Explicit">
+				<group name="Core Files" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Core Mod">
+							<description>
+								Welcome! You are about to install Requiem - The Roleplaying Overhaul. After selecting your preferences on the following pages, you still have to create the SkyProc patch "Requiem for the Indifferent" as it was explained in the installation guide in our wiki.
+							</description>
+							<image path="fomod\images\Requiem.jpg"/>
+							<files>
+							<folder source="core" destination="." priority="0"/>
+							<file source="plugin\Requiem.esp" destination="Requiem.esp" priority="0"/>
+							</files>
+							<typeDescriptor>
+								<type name="Required"/>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<!--Visual Options: Fonts and Activate Buttons-->
+		<installStep name="Visual Options">
+			<optionalFileGroups order="Explicit">
+				<group name="Font" type="SelectExactlyOne">
+					<plugins order="Explicit">
+						<plugin name="Kingthings Petrock">
+							<description>
+								Install the Kingthings Petrock font, the traditional Requiem font.
+
+Does not support non-latin languages.
+							</description>
+							<image path="fomod\images\potato_kingthings.jpg"/>
+							<files>
+							<folder source="options\fonts\Kingthings Petrock" destination="." priority="0"/>
+							</files>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="Use current font">
+							<description>
+								Do not install any font files and use the standard Skyrim font or whichever font mod you have installed.
+							</description>
+							<image path="fomod\images\potato_vanilla.jpg"/>
+							<conditionFlags>
+								<flag name="ThisDoesNothing">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Activate Button" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Hide Activate Button">
+							<description>
+								Hide the button icon next to interaction tooltips like "talk to".
+							</description>
+							<image path="fomod\images\Activate Button.jpg"/>
+							<files>
+							<folder source="options\invisiblebuttons" destination="." priority="0"/>
+							</files>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<!--Dragonborn: enable optional access to Vanilla DB content-->
+		<installStep name="Dragonborn DLC">
+			<optionalFileGroups order="Explicit">
+				<group name="Dragonborn" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Enable access to Vanilla Dragonborn content">
+							<description>
+								This plugin enables access to Vanilla Dragonborn content. By default Dragonborn content is disabled in Requiem because it has not been adjusted for Requiem.
+							</description>
+							<files>
+								<file source="options\esp\Vanilla Dragonborn\Requiem - Vanilla Dragonborn DLC.esp" destination="Requiem - Vanilla Dragonborn DLC.esp" priority="0"/>
+							</files>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<!--Gameplay Options: Messages and Sounds-->
+		<installStep name="Optional Plugins">
+			<optionalFileGroups order="Explicit">
+				<group name="Optional Plugins" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="No Messages">
+							<description>
+								Suppress "I cannot do this"-like notifications.
+							</description>
+							<files>
+								<file source="options\esp\No Messages\Requiem - No Messages.esp" destination="Requiem - No Messages.esp" priority="0"/>
+							</files>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="No Overencumbered Messages">
+							<description>
+								Being overencumbered will not trigger the recurring notifications.
+							</description>
+							<files>
+								<file source="options\esp\No Overencumbered Messages\Requiem - No Overencumbered Messages.esp" destination="Requiem - No Overencumbered Messages.esp" priority="0"/>
+							</files>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="Restored Rewarding Sounds">
+							<description>
+								Requiem disables the sound notifications for level-ups and similar events. Install this plugin if you want to keep the sound notifications from Vanilla Skyrim.
+							</description>
+							<files>
+								<file source="options\esp\Restored Rewarding Sounds\Requiem - Restored Rewarding Sounds.esp" destination="Requiem - Restored Rewarding Sounds.esp" priority="0"/>
+							</files>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="Restored Saving Messages">
+							<description>
+								Enable this optional plugin if you want to get a notification text to confirm your save and load operations.
+							</description>
+							<files>
+								<file source="options\esp\Restored Saving Messages\Requiem - Restored Saving Messages.esp" destination="Requiem - Restored Saving Messages.esp" priority="0"/>
+							</files>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+	</installSteps>
+</config>			
