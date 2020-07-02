@@ -23,16 +23,14 @@ dependencies {
 }
 
 val createVersionFile = tasks.register<VersionFileTask>("createVersionFile") {
-    val mercurialRevision: String by rootProject.extra
-    val mercurialBranch: String by rootProject.extra
-    val mercurialBookmarks: String by rootProject.extra
+    val gitRevision: String by rootProject.extra
+    val gitBranch: String by rootProject.extra
 
     group = "build"
     description = "store Mercurial revision information in a properties file"
 
-    revision = mercurialRevision
-    branch = mercurialBranch
-    tags = mercurialBookmarks
+    revision = gitRevision
+    branch = gitBranch
     versionFile = file("file:/$projectDir/src/main/resources/version.properties")
 }
 
