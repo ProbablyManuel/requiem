@@ -32,7 +32,7 @@ try {
 }
 
 allprojects {
-    version = RequiemVersion(4, 0, 0, "Threshold")
+    version = RequiemVersion(4, 0, 1, "Threshold")
 }
 
 fun getMercurialRevisionInfo(flag: String): String {
