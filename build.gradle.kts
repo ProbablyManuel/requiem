@@ -35,9 +35,9 @@ allprojects {
     version = RequiemVersion(4, 0, 1, "Threshold")
 }
 
-fun getMercurialRevisionInfo(flag: String): String {
-    return try {
-        val command = ProcessBuilder(listOf("hg", "id", flag))
+val gitRevision by extra {
+    try {
+        val command = ProcessBuilder(listOf("git", "rev-parse", "HEAD"))
         val process = command.start()
         BufferedReader(InputStreamReader(process.inputStream)).readLine()
     } catch (e: Exception) {
@@ -45,9 +45,17 @@ fun getMercurialRevisionInfo(flag: String): String {
     }
 }
 
-val mercurialRevision by extra { getMercurialRevisionInfo("-i") }
-val mercurialBranch by extra { getMercurialRevisionInfo("-b") }
-val mercurialBookmarks by extra { getMercurialRevisionInfo("-B") }
+fun retrieveGitBranch(): String {
+    return try {
+        val command = ProcessBuilder(listOf("git", "symbolic-ref", "--short", "-q", "HEAD"))
+        val process = command.start()
+        BufferedReader(InputStreamReader(process.inputStream)).readLine()
+    } catch (e: Exception) {
+        "unknown"
+    }
+}
+
+val gitBranch by extra {retrieveGitBranch()}
 
 val papyrusCompiler: File by project.extra
 val papyrusCompilerFlags: File by project.extra
@@ -151,15 +159,10 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
     dependsOn(installDevVersion)
 
     archiveFile = file {
-        var revision = mercurialRevision
-        val branch = mercurialBranch
-        val bookmarks = mercurialBookmarks
-        val dirty = revision.endsWith("+")
-        if (dirty)
-            revision = revision.substring(0, revision.length - 1)
+        var revision = gitRevision
+        val branch = gitBranch
+
         var archiveName = "Requiem_${branch}_$revision"
-        if (bookmarks.length > 0) archiveName += "_$bookmarks"
-        if (dirty) archiveName += "_dirty"
         "distribution/$archiveName.7z"
     }
 
