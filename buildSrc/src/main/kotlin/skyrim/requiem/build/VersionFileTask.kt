@@ -13,8 +13,6 @@ open class VersionFileTask() : DefaultTask() {
     @Input
     lateinit var branch: String
     @Input
-    lateinit var tags: String
-    @Input
     val version: RequiemVersion = project.version as RequiemVersion
     @OutputFile
     lateinit var versionFile: File
@@ -25,7 +23,6 @@ open class VersionFileTask() : DefaultTask() {
         versionFile.writeText(
             """|revision=$revision
                 |branch=$branch
-                |bookmarks=$tags
                 |version=${version.toIntegerRepresenation()}
             """.trimMargin("|")
         )
