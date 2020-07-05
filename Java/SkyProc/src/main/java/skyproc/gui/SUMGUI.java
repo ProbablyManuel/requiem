@@ -162,7 +162,7 @@ public class SUMGUI extends JFrame {
     final void addComponents() {
 	try {
 
-	    backgroundPanel = new LImagePane(SUMGUI.class.getResource("background.jpg"));
+	    backgroundPanel = new LImagePane(SUMGUI.class.getResource("/background.jpg"));
 	    super.add(backgroundPanel);
 
 	    startPatch = new LButton("Patch");
@@ -341,7 +341,7 @@ public class SUMGUI extends JFrame {
 	    statusUpdate.setVisible(true);
 	    backgroundPanel.add(statusUpdate);
 
-	    skyProcLogo = new LImagePane(SPDefaultGUI.class.getResource("SkyProcLogoSmall.png"));
+	    skyProcLogo = new LImagePane(SPDefaultGUI.class.getResource("/SkyProcLogoSmall.png"));
 	    skyProcLogo.setLocation(5, statusUpdate.getY() - skyProcLogo.getHeight() - 5);
 	    backgroundPanel.add(skyProcLogo);
 
