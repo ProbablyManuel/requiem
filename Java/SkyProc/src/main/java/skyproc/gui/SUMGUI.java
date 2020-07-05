@@ -90,7 +90,6 @@ public class SUMGUI extends JFrame {
     static LCheckBox forcePatch;
     static LImagePane skyProcLogo;
     static JTextArea statusUpdate;
-    static LLabel versionNum;
     static LButton cancelPatch;
     static LButton startPatch;
     static SUMGUISave save = new SUMGUISave();
