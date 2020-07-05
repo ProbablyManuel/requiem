@@ -9,14 +9,6 @@ tasks.jar {
     }
 }
 
-
-//TODO: split library files into proper source and resource folders
-sourceSets {
-    main {
-        resources.srcDir("src/main/java")
-    }
-}
-
 val moduleName: String by project.extra("skyproc")
 
 tasks.compileJava {

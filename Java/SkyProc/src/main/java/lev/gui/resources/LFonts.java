@@ -21,7 +21,7 @@ public class LFonts {
      * @return
      */
     public static Font Typo3(float size) {
-	return getFont("Typo3-Medium.ttf", size);
+	return getFont("/Typo3-Medium.ttf", size);
     }
 
     /**
@@ -30,7 +30,7 @@ public class LFonts {
      * @return
      */
     public static Font Neuropol(float size){
-	return getFont("NEUROPOL.ttf", size);
+	return getFont("/NEUROPOL.ttf", size);
     }
 
     /**
@@ -39,7 +39,7 @@ public class LFonts {
      * @return
      */
     public static Font OptimusPrinceps(float size) {
-	return getFont("OptimusPrincepsSemiBold.ttf", size);
+	return getFont("/OptimusPrincepsSemiBold.ttf", size);
     }
 
     /**
@@ -48,7 +48,7 @@ public class LFonts {
      * @return
      */
     public static Font Oleo(float size) {
-	return getFont("OLEO.ttf", size);
+	return getFont("/OLEO.ttf", size);
     }
 
     /**
@@ -57,7 +57,7 @@ public class LFonts {
      * @return
      */
     public static Font MyriadPro (float size) {
-	return getFont("MyriadPro-Regular.ttf", size);
+	return getFont("/MyriadPro-Regular.ttf", size);
     }
 
     /**
@@ -66,7 +66,7 @@ public class LFonts {
      * @return
      */
     public static Font MyriadProBold (float size) {
-	return getFont("myriadwebpro-bold.ttf", size);
+	return getFont("/myriadwebpro-bold.ttf", size);
     }
 
     /**
@@ -75,7 +75,7 @@ public class LFonts {
      * @return
      */
     public static Font ReasonSystem (float size) {
-	return getFont("reasonSystem-Regular.ttf", size);
+	return getFont("/reasonSystem-Regular.ttf", size);
     }
 
     static Font getFont(String path, float size) {
