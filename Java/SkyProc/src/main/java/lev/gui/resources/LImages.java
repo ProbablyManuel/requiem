@@ -21,7 +21,7 @@ public class LImages {
      * @return The multipurpose background image used in DefaultGUI.
      */
     public static BufferedImage multipurpose() {
-	return create(LImages.class.getResource("multipurpose.png"));
+	return create(LImages.class.getResource("/multipurpose.png"));
     }
 
     /**
@@ -34,15 +34,15 @@ public class LImages {
     public static BufferedImage arrow(boolean leftArrow, boolean dark) {
 	if (leftArrow) {
 	    if (dark) {
-		return create(LImages.class.getResource("ArrowLeftDark.png"));
+		return create(LImages.class.getResource("/ArrowLeftDark.png"));
 	    } else {
-		return create(LImages.class.getResource("ArrowLeft.png"));
+		return create(LImages.class.getResource("/ArrowLeft.png"));
 	    }
 	} else {
 	    if (dark) {
-		return create(LImages.class.getResource("ArrowRightDark.png"));
+		return create(LImages.class.getResource("/ArrowRightDark.png"));
 	    } else {
-		return create(LImages.class.getResource("ArrowRight.png"));
+		return create(LImages.class.getResource("/ArrowRight.png"));
 	    }
 	}
     }
