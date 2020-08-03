@@ -19,15 +19,15 @@ This mod is published on NexusMods:
 
 ## Setup
 
-1. clone this repository into a new directory inside the `mods` folder of your Mod Organizer installation
-2. copy the `userSetupSample.gradle` file in the repo's root directory to `userSetup.gradle`
-3. update the copied file to reflect your personal setup
+1. Clone this repository into a new directory inside the `mods` folder of your Mod Organizer installation.
+2. Create a new file `userSetup.gradle` the repository's root directory.
+3. Copy the following content into the new file and adjust the parameters to your personal setup.
     ```
     ext {
         papyrusCompiler = file("S:\\SteamLibrary\\steamapps\\common\\Skyrim\\Papyrus Compiler\\PapyrusCompiler.exe")
         papyrusCompilerFlags = file("S:\\SteamLibrary\\steamapps\\common\\Skyrim\\Papyrus Compiler\\TESV_Papyrus_Flags.flg")
         papyrusIncludeFolders = files(
-                "S:\\MO-Skyrim\\mods\\base-scripts-usleep",
+                "S:\\MO-Skyrim\\mods\\base-scripts-ussep",
                 "S:\\MO-Skyrim\\mods\\SkyUI5-SDK\\scripts\\Source",
                 "S:\\MO-Skyrim\\mods\\SKSE-Scripts\\scripts\\Source",
                 "S:\\MO-Skyrim\\mods\\base-scripts-Dragonborn",
@@ -40,20 +40,22 @@ This mod is published on NexusMods:
     }
     ```
    * `papyrusCompiler` - path to your Papyrus compiler
-   * `papyrusCompilerFlags` - path to the Papyrus compiler flags file
+   * `papyrusCompilerFlags` - path to the Papyrus compiler flags file (you can find this file in the `Scripts.zip`
+   folder that is part of the Creation Kit installation)
    * `papyrusIncludeFolders` - list of folders with Papyrus sources to include in the compilation process for
-   referencing - scripts are taken from the first folder that contains the given file, the order is therefore important
-   to take overwrites of Vanilla scripts by the DLCs or the unofficial patches into account
+   referencing (scripts are taken from the first folder that contains the given file, the order is therefore important
+   to take overwrites of Vanilla scripts by the DLCs or the unofficial patches into account)
    * `papyrusFailFast` - if false, the Papyrus script compilation step will only fail at the end of the compilation
    process for all scripts to accumulate error messages
    * `reqtificatorBuildDir` - dedicated directory for the intermediate build files of the Reqtificator (some files can
    have long file names that cause Skyrim to crash on startup, therefore the build intermediates need to be placed
    somewhere where MO does not link them into Skyrim's data directory)
-4. open a (power)shell, go to the repository's directory and execute `gradlew.bat installDevVersion` - this may take
+4. Open a (power)shell, go to the repository's directory and execute `gradlew.bat installDevVersion`. This may take
 some time when you execute it the first time because the wrapper needs to download the Gradle distribution and other
-dependencies first
-5. enable this repository as a mod in Mod Organizer (and disable any released Requiem version you have active)
-6. follow the regular [installation instructions](https://requiem.atlassian.net/wiki/spaces/RS/pages/765394945)
+dependencies first.
+5. Enable this repository as a mod in Mod Organizer and disable any other Requiem version you may have installed.
+6. Follow the regular [installation instructions](https://requiem.atlassian.net/wiki/spaces/RS/pages/765394945) to set
+up the Reqtificator in Mod Organizer.
 
 ## Important Gradle tasks
 
