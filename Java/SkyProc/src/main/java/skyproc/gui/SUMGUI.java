@@ -86,13 +86,10 @@ public class SUMGUI extends JFrame {
     static LImagePane backgroundPanel;
     static LLabel patchNeededLabel;
     static boolean needsPatching = false;
-    static boolean justPatching = false;
-    static boolean justSettings = false;
     static boolean boss = true;
     static LCheckBox forcePatch;
     static LImagePane skyProcLogo;
     static JTextArea statusUpdate;
-    static LLabel versionNum;
     static LButton cancelPatch;
     static LButton startPatch;
     static SUMGUISave save = new SUMGUISave();
@@ -165,7 +162,7 @@ public class SUMGUI extends JFrame {
     final void addComponents() {
 	try {
 
-	    backgroundPanel = new LImagePane(SUMGUI.class.getResource("background.jpg"));
+	    backgroundPanel = new LImagePane(SUMGUI.class.getResource("/background.jpg"));
 	    super.add(backgroundPanel);
 
 	    startPatch = new LButton("Patch");
@@ -344,7 +341,7 @@ public class SUMGUI extends JFrame {
 	    statusUpdate.setVisible(true);
 	    backgroundPanel.add(statusUpdate);
 
-	    skyProcLogo = new LImagePane(SPDefaultGUI.class.getResource("SkyProcLogoSmall.png"));
+	    skyProcLogo = new LImagePane(SPDefaultGUI.class.getResource("/SkyProcLogoSmall.png"));
 	    skyProcLogo.setLocation(5, statusUpdate.getY() - skyProcLogo.getHeight() - 5);
 	    backgroundPanel.add(skyProcLogo);
 
@@ -353,9 +350,7 @@ public class SUMGUI extends JFrame {
 
 	    SPProgressBarPlug.addProgressBar(new SUMProgress());
 
-	    if (!justPatching) {
 		setVisible(true);
-	    }
 
 	} catch (IOException ex) {
 	    exhandler.handleException(ex);
@@ -413,21 +408,12 @@ public class SUMGUI extends JFrame {
 				menu.setVersion(hook.getVersion());
 			    }
 			    singleton.add(menu);
-			    if (justSettings) {
-				switchToSettingsMode();
-			    }
 			}
 
 			progress.moveToCorrectLocation();
-			if (!justPatching) {
-			    progress.setGUIref(singleton);
-			}
+			progress.setGUIref(singleton);
 
-			if (justPatching && needsImporting()) {
-			    exitRequested = true;
-			    progress.open();
-			    runThread();
-			} else if (!justPatching && hook.importAtStart()) {
+			if (hook.importAtStart()) {
 			    runThread();
 			} else if (testNeedsPatching(false)) {
 			    setPatchNeeded(true);
@@ -498,9 +484,6 @@ public class SUMGUI extends JFrame {
 	    }
 	}
 
-	// Just Patching
-	justPatching = arguments.contains("-GENPATCH");
-
 	// Exclude mods after the patch?
 	SPGlobal.setNoModsAfter(!arguments.contains("-MODSAFTER"));
 
@@ -511,8 +494,6 @@ public class SUMGUI extends JFrame {
 		    Integer.valueOf(arguments.get(index + 2)));
 	    SUMGUI.progress.setCorrectLocation(progressLoc.width, progressLoc.height);
 	}
-
-	justSettings = arguments.contains("-JUSTSETTINGS");
 
         Language ini_lang = SPGlobal.getLanguageFromSkyrimIni();
         if (ini_lang != null) {
@@ -554,64 +535,9 @@ public class SUMGUI extends JFrame {
         if (arguments.contains("-ALLMODSASMASTERS")){
             SPGlobal.setAllModsAsMasters(true);
         }
-
-	if (SPGlobal.logging()) {
-	    if (justPatching) {
-		SPGlobal.logMain("SUM", "Program is just patching. (-GENPATCH)");
-	    }
-	}
     }
 
-    static void switchToSettingsMode() {
-	patchNeededLabel.setText("Change Settings Mode - No patch will be generated.");
-	patchNeededLabel.setVisible(true);
-	forcePatch.setVisible(false);
-	cancelPatch.setVisible(false);
-	startPatch.setVisible(false);
-
-	try {
-	    final LImagePane backToSUM = new LImagePane(SUMprogram.class.getResource("BackToSUMdark.png"));
-	    backToSUM.addMouseListener(new MouseListener() {
-
-		@Override
-		public void mouseClicked(MouseEvent e) {
-		    exitProgram(false, true);
-		}
-
-		@Override
-		public void mousePressed(MouseEvent e) {
-		}
-
-		@Override
-		public void mouseReleased(MouseEvent e) {
-		}
-
-		@Override
-		public void mouseEntered(MouseEvent e) {
-		    try {
-			backToSUM.setImage(SUMprogram.class.getResource("BackToSUM.png"));
-		    } catch (IOException ex) {
-			SPGlobal.logException(ex);
-		    }
-		}
-
-		@Override
-		public void mouseExited(MouseEvent e) {
-		    try {
-			backToSUM.setImage(SUMprogram.class.getResource("BackToSUMdark.png"));
-		    } catch (IOException ex) {
-			SPGlobal.logException(ex);
-		    }
-		}
-	    });
-	    backToSUM.setLocation(0, 510);
-	    singleton.add(backToSUM);
-	} catch (IOException ex) {
-	    SPGlobal.logException(ex);
-	}
-    }
-
-    /**
+	/**
      * Lets you set the message to display when an error occurs that causes the
      * program to stop prematurely.
      *
@@ -866,7 +792,7 @@ public class SUMGUI extends JFrame {
 
     static void closingGUIwindow() {
 	SPGlobal.logMain(header, "Window Closing.");
-	if (justSettings || !patchrequested) {
+	if (!patchrequested) {
 	    exitProgram(false, true);
 	}
 	exitRequested = true;

@@ -61,7 +61,7 @@ public class SPDefaultGUI extends JFrame {
 	    // Background Panel
 	    backgroundPanel = new LImagePane(LImages.multipurpose());
 	    super.add(backgroundPanel);
-	    skyprocLogo = new LImagePane(SPDefaultGUI.class.getResource("SkyProcLogoSmall.png"));
+	    skyprocLogo = new LImagePane(SPDefaultGUI.class.getResource("/SkyProcLogoSmall.png"));
 	    skyprocLogo.setLocation(getWidth() - skyprocLogo.getWidth() - 15, this.getHeight() - skyprocLogo.getHeight() - 30);
 	    backgroundPanel.add(skyprocLogo);
 
