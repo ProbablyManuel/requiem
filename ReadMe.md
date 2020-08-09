@@ -50,11 +50,12 @@ This mod is published on NexusMods:
         The order is therefore important to select updated versions from the DLCs or the unofficial patches over
         the Vanilla scripts.
     * `papyrusFailFast` - failure handling mode for the Papyrus compilation step
-        * If set to true, the compilation fail fast as soon as there is any error.
-        * If set to false, the compilation continues after a failure in one scripts folder to accumulate error messages.
+        * If set to true, the compilation fails upon encountering the first error.
+        * If set to false, the compilation continues after the first error to accumulate all error messages.
     * `reqtificatorBuildDir` - external directory for the intermediate build files of the Reqtificator
         * This build directory must not be linked by Mod Organizer into your Skyrim installation.
         Some build intermediate files can have very long file names that can cause Skyrim to crash when starting.
+
 4. Open a (power)shell, go to the repository's directory and execute `gradlew.bat installDevVersion`. This may take
 some time when you execute it the first time because the wrapper needs to download the Gradle distribution and other
 dependencies first.
