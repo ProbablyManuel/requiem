@@ -26,8 +26,8 @@ try {
 } catch (ex: Exception) {
     logger.error("The config file 'userSetup.gradle' could not be found.")
     logger.quiet("This file specifies the settings specific to your setup.")
-    logger.quiet("Please see the template 'userSetupSample.gradle' and create")
-    logger.quiet("your own config file with the appropriate paths.")
+    logger.quiet("Please read the ReadMe file and follow its instructions to")
+    logger.quiet("create your own config file with the appropriate paths.")
     throw ex
 }
 
