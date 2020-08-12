@@ -384,29 +384,6 @@ public abstract class LImport {
     public abstract long pos();
 
     /**
-     * Uses an LStringSearcher to read file contents until one of the targets is
-     * found.
-     *
-     * @param targets
-     * @return The target found, or the empty string if none found.
-     */
-    final public String scanTo(String... targets) {
-	LStringSearcher search = new LStringSearcher(targets);
-	String result;
-	int inputInt = read();
-
-	while (inputInt != -1) {
-	    if (!(result = search.next(inputInt)).equals("")) {
-		return result;
-	    }
-
-	    inputInt = read();
-	}
-
-	return "";
-    }
-
-    /**
      *
      */
     public abstract void close();

@@ -29,15 +29,6 @@ public class LFonts {
      * @param size
      * @return
      */
-    public static Font Neuropol(float size){
-	return getFont("/NEUROPOL.ttf", size);
-    }
-
-    /**
-     *
-     * @param size
-     * @return
-     */
     public static Font OptimusPrinceps(float size) {
 	return getFont("/OptimusPrincepsSemiBold.ttf", size);
     }
@@ -47,35 +38,8 @@ public class LFonts {
      * @param size
      * @return
      */
-    public static Font Oleo(float size) {
-	return getFont("/OLEO.ttf", size);
-    }
-
-    /**
-     *
-     * @param size
-     * @return
-     */
-    public static Font MyriadPro (float size) {
-	return getFont("/MyriadPro-Regular.ttf", size);
-    }
-
-    /**
-     *
-     * @param size
-     * @return
-     */
     public static Font MyriadProBold (float size) {
 	return getFont("/myriadwebpro-bold.ttf", size);
-    }
-
-    /**
-     *
-     * @param size
-     * @return
-     */
-    public static Font ReasonSystem (float size) {
-	return getFont("/reasonSystem-Regular.ttf", size);
     }
 
     static Font getFont(String path, float size) {
