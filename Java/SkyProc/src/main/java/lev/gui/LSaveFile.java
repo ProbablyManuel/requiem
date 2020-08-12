@@ -4,11 +4,9 @@
  */
 package lev.gui;
 
-import java.awt.Color;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.Set;
 import java.util.TreeMap;
 import javax.swing.JOptionPane;
 
@@ -65,7 +63,7 @@ public abstract class LSaveFile {
      */
     protected boolean initialized = false;
 
-    /**
+	/**
      * Ties the LUserSetting to the Enum key
      *
      * @param s Enum key to tie to
@@ -255,18 +253,7 @@ public abstract class LSaveFile {
 	Add(type, new SaveBool(type.toString(), b, extraFlags));
     }
 
-    /**
-     * Adds a setting of type string.
-     *
-     * @param type Enum to be associated with.
-     * @param s Default value to assign the setting.
-     * @param extraFlags
-     */
-    public void Add(Enum type, String s, Boolean... extraFlags) {
-	Add(type, new SaveString(type.toString(), s, extraFlags));
-    }
-
-    /**
+	/**
      * Adds a setting of type integer.
      *
      * @param type Enum to be associated with.
@@ -277,18 +264,7 @@ public abstract class LSaveFile {
 	Add(type, new SaveInt(type.toString(), i, extraFlags));
     }
 
-    /**
-     * Adds a setting of type enum.
-     *
-     * @param type Enum to be associated with.
-     * @param e
-     * @param extraFlags
-     */
-    public void Add(Enum type, Enum e, Boolean... extraFlags) {
-	Add(type, new SaveEnum(type.toString(), e, extraFlags));
-    }
-
-    /**
+	/**
      * Adds a setting of type integer.
      *
      * @param type Enum to be associated with.
@@ -299,40 +275,7 @@ public abstract class LSaveFile {
 	Add(type, new SaveStringList(type.toString(), strs, extraFlags));
     }
 
-    /**
-     * Adds a setting of type float.
-     *
-     * @param type Enum to be associated with.
-     * @param f Default value to assign the setting.
-     * @param extraFlags
-     */
-    public void Add(Enum type, Float f, Boolean... extraFlags) {
-	Add(type, new SaveFloat(type.toString(), f, extraFlags));
-    }
-
-    /**
-     * Adds a setting of type Color.
-     *
-     * @param type Enum to be associated with.
-     * @param c
-     * @param extraFlags
-     */
-    public void Add(Enum type, Color c, Boolean... extraFlags) {
-	Add(type, new SaveColor(type.toString(), c, extraFlags));
-    }
-
-    /**
-     * Adds a setting of type double.
-     *
-     * @param type Enum to be associated with.
-     * @param d Default value to assign the setting.
-     * @param extraFlags
-     */
-    public void Add(Enum type, Double d, Boolean... extraFlags) {
-	Add(type, new SaveDouble(type.toString(), d, extraFlags));
-    }
-
-    /**
+	/**
      * Copies one map of settings to another. For reverting current settings to
      * default, for example.
      *
@@ -546,17 +489,7 @@ public abstract class LSaveFile {
 	return out;
     }
 
-    /**
-     * Returns the value of the setting, and assumes it's a string value.
-     *
-     * @param s
-     * @return
-     */
-    public String getStr(Enum s) {
-	return curSettings.get(s).getStr();
-    }
-
-    /**
+	/**
      * Returns the value of the setting, and assumes it's an int value.
      *
      * @param s
@@ -576,34 +509,7 @@ public abstract class LSaveFile {
 	return curSettings.get(s).getBool();
     }
 
-    /**
-     *
-     * @param s
-     * @return
-     */
-    public Color getColor(Enum s) {
-	return curSettings.get(s).getColor();
-    }
-
-    /**
-     *
-     * @param s
-     * @return
-     */
-    public Enum getEnum(Enum s) {
-	return curSettings.get(s).getEnum();
-    }
-
-    /**
-     *
-     * @param s
-     * @return
-     */
-    public float getFloat(Enum s) {
-	return curSettings.get(s).getFloat();
-    }
-
-    /**
+	/**
      * Returns the value of the setting, and assumes it's a boolean value.
      *
      * @param s
@@ -613,16 +519,7 @@ public abstract class LSaveFile {
 	return new ArrayList<>(curSettings.get(s).getStrings());
     }
 
-    /**
-     *
-     * @param e
-     * @param s
-     */
-    public void setStr(Enum e, String s) {
-	curSettings.get(e).setTo(s);
-    }
-
-    /**
+	/**
      *
      * @param e
      * @param i
@@ -631,16 +528,7 @@ public abstract class LSaveFile {
 	curSettings.get(e).setTo(i);
     }
 
-    /**
-     *
-     * @param e
-     * @param c
-     */
-    public void setColor(Enum e, Color c) {
-	curSettings.get(e).setTo(c);
-    }
-
-    /**
+	/**
      *
      * @param e
      * @param b
@@ -658,21 +546,4 @@ public abstract class LSaveFile {
 	curSettings.get(e).setTo(strs);
     }
 
-    /**
-     *
-     * @param e
-     * @param s
-     */
-    public void addString(Enum e, String s) {
-	curSettings.get(e).getStrings().add(s);
-    }
-
-    /**
-     *
-     * @param e
-     * @param s
-     */
-    public void removeString(Enum e, String s) {
-	curSettings.get(e).getStrings().remove(s);
-    }
 }
