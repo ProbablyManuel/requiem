@@ -8,8 +8,8 @@ import java.io.InputStreamReader
 
 plugins {
     kotlin("jvm") version "1.3.71"
-    id("org.jlleitschuh.gradle.ktlint") version "8.0.0"
-    id("org.beryx.jlink") version "2.17.2"
+    id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
+    id("org.beryx.jlink") version "2.21.3"
     idea
 }
 
@@ -55,7 +55,7 @@ fun retrieveGitBranch(): String {
     }
 }
 
-val gitBranch by extra {retrieveGitBranch()}
+val gitBranch by extra { retrieveGitBranch() }
 
 val papyrusCompiler: File by project.extra
 val papyrusCompilerFlags: File by project.extra
