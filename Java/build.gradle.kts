@@ -2,7 +2,7 @@ plugins {
     java
 }
 
-subprojects {
+project("Reqtificator") {
     apply<JavaPlugin>()
 
     val reqtificatorBuildDir: File? by rootProject.extra
