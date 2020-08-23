@@ -66,6 +66,7 @@ import java.util.Calendar
 import java.util.Locale
 import java.util.Properties
 import javax.swing.JFrame
+import kotlin.jvm.Throws
 import kotlin.system.exitProcess
 
 class Reqtificator(private val language: Locale) : SUM {
