@@ -8,12 +8,22 @@ plugins {
     id("org.beryx.jlink")
 }
 
+repositories {
+    mavenCentral()
+}
+
+val reqtificatorBuildDir: File? by rootProject.extra
+
+if (reqtificatorBuildDir != null) {
+    buildDir = reqtificatorBuildDir!!.resolve(project.name)
+}
+
 val reqtificatorDir = objects.directoryProperty()
 reqtificatorDir.set(file("$rootDir/SkyProc Patchers/Requiem/app"))
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("com.typesafe:config:1.3.1")
+    implementation("com.typesafe:config:1.4.0")
     implementation("org.apache.logging.log4j:log4j-api:2.13.0")
     implementation("org.apache.logging.log4j:log4j-core:2.13.0")
     implementation(project(":Java:SkyProc"))
@@ -43,7 +53,8 @@ tasks.jar {
         attributes(
             mapOf(
                 "Implementation-Title" to "Reqtificator - SkyProc Patcher for the Skyrim mod 'Requiem'",
-                "Implementation-Version" to archiveVersion
+                "Implementation-Version" to archiveVersion,
+                "provider" to "The Requiem Dungeon Masters"
             )
         )
     }
@@ -64,13 +75,13 @@ tasks.clean {
 
 tasks.compileKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     destinationDir = tasks.compileJava.map { it.destinationDir }.get()
 }
 tasks.compileTestKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
@@ -81,6 +92,7 @@ tasks.test {
 val moduleName by project.extra("skyrim.requiem")
 
 tasks.compileJava {
+    options.release.set(11)
     inputs.property("moduleName", moduleName)
     doFirst {
         options.compilerArgs = listOf("--module-path", classpath.asPath)

@@ -4,5 +4,5 @@ module skyrim.requiem {
     requires kotlin.stdlib;
     requires org.apache.logging.log4j.core;
     requires kotlin.stdlib.jdk8;
-    requires config;
+    requires typesafe.config;
 }
