@@ -1,20 +1,23 @@
+plugins {
+    `java-library`
+}
+
+java {
+    modularity.inferModulePath.set(true)
+}
+
+tasks.compileJava {
+    options.release.set(11)
+}
+
 tasks.jar {
     manifest {
         attributes(
                 mapOf(
                         "Implementation-Title" to "SkyProc Library (Requiem Version)",
-                        "Implementation-Version" to archiveVersion
+                        "Implementation-Version" to archiveVersion,
+                        "provider" to "The Requiem Dungeon Masters"
                 )
         )
-    }
-}
-
-val moduleName: String by project.extra("skyproc")
-
-tasks.compileJava {
-    inputs.property("moduleName", moduleName)
-    doFirst {
-        options.compilerArgs = listOf("--module-path", classpath.asPath)
-        classpath = files()
     }
 }
