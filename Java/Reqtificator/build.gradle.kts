@@ -26,7 +26,9 @@ if (reqtificatorBuildDir != null) {
     buildDir = reqtificatorBuildDir!!.resolve(project.name)
 }
 
-val reqtificatorDir by extra(file("$rootDir/SkyProc Patchers/Requiem/app"))
+val outputDir by project.extra(file("$buildDir/output"))
+
+val generatedResources = file("$buildDir/generated-resources")
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
@@ -40,7 +42,7 @@ dependencies {
     testImplementation("net.bytebuddy:byte-buddy:1.10.6")
 }
 
-val createVersionFile = tasks.register<VersionFileTask>("createVersionFile") {
+val createVersionFile by tasks.registering(VersionFileTask::class) {
     val gitRevision: String by rootProject.extra
     val gitBranch: String by rootProject.extra
 
@@ -49,11 +51,18 @@ val createVersionFile = tasks.register<VersionFileTask>("createVersionFile") {
 
     revision = gitRevision
     branch = gitBranch
-    versionFile = file("file:/$projectDir/src/main/resources/version.properties")
+    versionFile = file("$generatedResources/version.properties")
 }
 
-tasks.processResources {
-    dependsOn(createVersionFile)
+val copyExternalConfiguration by tasks.registering(Copy::class) {
+    from("configuration")
+    into(outputDir)
+}
+
+sourceSets {
+    main {
+        output.dir(generatedResources, "builtBy" to createVersionFile)
+    }
 }
 
 tasks.jar {
@@ -68,16 +77,9 @@ tasks.jar {
     }
 }
 
-val cleanReqtificator = tasks.register<Delete>("cleanReqtificator") {
-    group = "build"
-    description = "remove the deployed Reqtificator"
-
-    delete(reqtificatorDir)
-    delete(file("file:/$projectDir/src/main/resources/version.properties"))
-}
-
-tasks.clean {
-    dependsOn(cleanReqtificator)
+tasks.assemble {
+    dependsOn(copyExternalConfiguration)
+    dependsOn(tasks.jlink)
 }
 
 tasks.test {
@@ -90,7 +92,7 @@ tasks.compileJava {
 
 jlink {
     setProperty("options", listOf("--compress", "2", "--no-header-files", "--no-man-pages"))
-    setProperty("imageDir", reqtificatorDir)
+    setProperty("imageDir", file("$outputDir/app"))
     forceMerge("log4j-api", "kotlin") // kotlin-stdlib-common has no module-identifier and has split modules
 
     launcher {
