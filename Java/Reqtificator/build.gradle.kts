@@ -1,22 +1,40 @@
 import skyrim.requiem.build.VersionFileTask
 
 plugins {
-    application
-    java
     kotlin("jvm")
+    application
     id("org.jlleitschuh.gradle.ktlint")
     id("org.beryx.jlink")
 }
 
-val reqtificatorDir = objects.directoryProperty()
-reqtificatorDir.set(file("$rootDir/SkyProc Patchers/Requiem/app"))
+java {
+    modularity.inferModulePath.set(true)
+}
+
+application {
+    mainModule.set("skyrim.requiem")
+    mainClass.set("skyrim.requiem.MainKt")
+}
+
+repositories {
+    mavenCentral()
+}
+
+val reqtificatorBuildDir: File? by rootProject.extra
+
+if (reqtificatorBuildDir != null) {
+    buildDir = reqtificatorBuildDir!!.resolve(project.name)
+}
+
+val reqtificatorDir by extra(file("$rootDir/SkyProc Patchers/Requiem/app"))
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("com.typesafe:config:1.3.1")
+    implementation("com.typesafe:config:1.4.0")
     implementation("org.apache.logging.log4j:log4j-api:2.13.0")
     implementation("org.apache.logging.log4j:log4j-core:2.13.0")
     implementation(project(":Java:SkyProc"))
+    testImplementation(kotlin("reflect"))
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.3.2")
     testImplementation("io.mockk:mockk:1.9.3")
     testImplementation("net.bytebuddy:byte-buddy:1.10.6")
@@ -43,11 +61,11 @@ tasks.jar {
         attributes(
             mapOf(
                 "Implementation-Title" to "Reqtificator - SkyProc Patcher for the Skyrim mod 'Requiem'",
-                "Implementation-Version" to archiveVersion
+                "Implementation-Version" to archiveVersion,
+                "provider" to "The Requiem Dungeon Masters"
             )
         )
     }
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 val cleanReqtificator = tasks.register<Delete>("cleanReqtificator") {
@@ -62,37 +80,18 @@ tasks.clean {
     dependsOn(cleanReqtificator)
 }
 
-tasks.compileKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-    destinationDir = tasks.compileJava.map { it.destinationDir }.get()
-}
-tasks.compileTestKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
-
 tasks.test {
     useJUnitPlatform()
 }
 
-val moduleName by project.extra("skyrim.requiem")
-
 tasks.compileJava {
-    inputs.property("moduleName", moduleName)
-    doFirst {
-        options.compilerArgs = listOf("--module-path", classpath.asPath)
-        classpath = files()
-    }
+    destinationDir = tasks.compileKotlin.map { it.destinationDir }.get()
 }
 
 jlink {
-    setProperty("mainClass", "Reqtificator.Reqtificator")
     setProperty("options", listOf("--compress", "2", "--no-header-files", "--no-man-pages"))
     setProperty("imageDir", reqtificatorDir)
-    forceMerge("log4j-api", "config")
+    forceMerge("log4j-api", "kotlin") // kotlin-stdlib-common has no module-identifier and has split modules
 
     launcher {
         name = "launcher_template"

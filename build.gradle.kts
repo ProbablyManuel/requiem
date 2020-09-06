@@ -7,7 +7,7 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 
 plugins {
-    kotlin("jvm") version "1.3.71"
+    kotlin("jvm") version "1.4.0"
     id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
     id("org.beryx.jlink") version "2.21.3"
     idea
