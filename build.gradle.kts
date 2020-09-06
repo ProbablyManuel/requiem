@@ -64,6 +64,15 @@ val papyrusIncludeFolders: FileCollection by project.extra
 
 val reqtificatorBuildDir: File by project.extra
 
+val reqtificatorDir = file("SkyProc Patchers/Requiem")
+
+val copyReqtificator by tasks.registering(Copy::class) {
+    dependsOn("Java:Reqtificator:assemble")
+    val outputDir: File by project("Java:Reqtificator").extra
+    from (outputDir)
+    into(reqtificatorDir)
+}
+
 val compilePapyrus = tasks.register<PapyrusCompileTask>("compilePapyrus") {
     description = "Compiles all Papyrus Scripts belonging to Requiem"
     group = "build"
@@ -128,18 +137,28 @@ val cleanMcmTranslations = tasks.register<Delete>("cleanMcmTranslations") {
     delete = copyMcmTranslations.map { it.outputFiles.toSet() }.get()
 }
 
+tasks.assemble {
+    dependsOn(copyReqtificator)
+}
+
+tasks.clean {
+    delete(reqtificatorDir)
+}
+
+//TODO: remove this task once all build aspects are converted to subprojects that allow simple folder-based cleanups
 tasks.register("cleanDevVersion") {
     group = "build"
     description = "remove all build results"
 
+    dependsOn(tasks.clean)
     dependsOn(cleanPapyrus)
-    dependsOn("Java:Reqtificator:cleanReqtificator")
     dependsOn("Java:Reqtificator:clean")
     dependsOn("Java:SkyProc:clean")
     dependsOn(cleanMcmTranslations)
     dependsOn(cleanFomodInstallerInfo)
 }
 
+//TODO: supersede with "assemble" to be more in line with Gradle conventions and have fewer custom tasks
 val installDevVersion = tasks.register("installDevVersion") {
     description = "Prepare the Requiem Dev Build for ingame usage"
     group = "application"
@@ -147,10 +166,10 @@ val installDevVersion = tasks.register("installDevVersion") {
     doLast {
         println("Setup ready, you can now start the game!")
     }
+    dependsOn(tasks.assemble)
     dependsOn(compilePapyrus)
     dependsOn(copyMcmTranslations)
     dependsOn(fomodInstallerInfo)
-    dependsOn(":Java:Reqtificator:jlink")
 }
 
 tasks.register<ArchiveSevenZTask>("packRelease") {
