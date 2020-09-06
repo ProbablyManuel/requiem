@@ -7,18 +7,11 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 
 plugins {
-    kotlin("jvm") version "1.4.0"
-    id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
-    id("org.beryx.jlink") version "2.21.3"
-    idea
+    base
 }
 
 if (JavaVersion.current() != JavaVersion.VERSION_13) {
     throw ProjectConfigurationException("Java 13 is required to build Requiem", listOf())
-}
-
-repositories {
-    mavenCentral()
 }
 
 try {
@@ -69,7 +62,7 @@ val reqtificatorDir = file("SkyProc Patchers/Requiem")
 val copyReqtificator by tasks.registering(Copy::class) {
     dependsOn("Java:Reqtificator:assemble")
     val outputDir: File by project("Java:Reqtificator").extra
-    from (outputDir)
+    from(outputDir)
     into(reqtificatorDir)
 }
 
@@ -178,10 +171,10 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
     dependsOn(installDevVersion)
 
     archiveFile = file {
-        var revision = gitRevision
+        val revision = gitRevision
         val branch = gitBranch
 
-        var archiveName = "Requiem_${branch}_$revision"
+        val archiveName = "Requiem_${branch}_$revision"
         "distribution/$archiveName.7z"
     }
 
@@ -205,8 +198,6 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
     )
     excludeFolders = files(
         "file:/Papyrus/Source/Requiem/debugtools",
-        "file:/meshes/.hg",
-        "file:/textures/.hg",
         "file:/documentation/confluence"
     )
     excludePatterns = listOf(
