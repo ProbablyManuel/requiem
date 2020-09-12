@@ -3,42 +3,37 @@ package skyrim.requiem.build
 import org.apache.commons.compress.archivers.sevenz.SevenZOutputFile
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.FileCollection
-import org.gradle.api.tasks.Input
-import org.gradle.api.tasks.OutputFile
-import org.gradle.api.tasks.TaskAction
+import org.gradle.api.tasks.*
 import java.io.File
 import java.nio.file.Files
 import java.util.function.Predicate
 import java.util.regex.Pattern
 
-open class ArchiveSevenZTask : DefaultTask() {
+open class ReleaseArchiveTask : DefaultTask() {
 
     @OutputFile
     lateinit var archiveFile: File
-    @Input
-    lateinit var fileMapping: Map<File, File>
-    @Input
-    lateinit var baseDirectory: File
-    @Input
-    lateinit var excludeFolders: FileCollection
+    @InputFiles
+    lateinit var coreMod: FileCollection
+    @InputDirectory
+    lateinit var fomod: File
+    @InputFile
+    lateinit var plugin: File
     @Input
     lateinit var excludePatterns: List<String>
 
     @TaskAction
     fun buildArchive() {
         project.delete(archiveFile)
-        logger.quiet("Now starting to pack release $archiveFile")
         val patterns = excludePatterns.map { Pattern.compile(it, Pattern.CASE_INSENSITIVE).asPredicate() }
 
         SevenZOutputFile(archiveFile).use { archive ->
-            fileMapping.forEach { (source, target) ->
-                val relativeTargetDir = target.relativeTo(baseDirectory)
-                if (source.isDirectory) {
-                    copyFileTree(source, relativeTargetDir, patterns, archive)
-                } else {
-                    copyFile(source, relativeTargetDir.resolve(source.name), patterns, archive)
-                }
+            coreMod.forEach { entry ->
+                if (entry.isDirectory) copyFileTree(entry, File("core").resolve(entry.name), patterns, archive)
+                else copyFile(entry, File("core").resolve(entry.name), patterns, archive)
             }
+            copyFile(plugin, File("plugin").resolve(plugin.name), patterns, archive)
+            copyFileTree(fomod, File(fomod.name), patterns, archive)
         }
     }
 
@@ -47,13 +42,7 @@ open class ArchiveSevenZTask : DefaultTask() {
                              patterns: List<Predicate<String>>,
                              archive: SevenZOutputFile) {
         source.walkTopDown()
-            .onEnter {
-                val shouldProcess = !excludeFolders.contains(it)
-                if (shouldProcess) {
-                    logger.quiet("now packing folder '${it.relativeTo(baseDirectory)}'")
-                }
-                shouldProcess
-            }
+            .onEnter { logger.quiet("now packing folder '${it.relativeTo(project.rootDir)}'"); true }
             .filter { it.isFile }
             .forEach {
                 copyFile(it, relativeTargetDir.resolve(it.relativeTo(source)), patterns, archive)

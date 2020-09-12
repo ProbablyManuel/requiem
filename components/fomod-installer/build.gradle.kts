@@ -7,7 +7,6 @@ plugins {
 
 val outputDir by project.extra(file("$buildDir/output"))
 val installerDir by project.extra(file("$outputDir/fomod"))
-val optionsDir by project.extra(file("$outputDir/options"))
 
 val generatedFiles = file("$buildDir/generated")
 
@@ -36,9 +35,8 @@ val copyinstallerImages by tasks.registering(Copy::class) {
 
 val copyOptionFiles by tasks.registering(Copy::class) {
     from("options")
-    into("$optionsDir")
+    into("$installerDir/options")
 }
-
 
 tasks.assemble {
     dependsOn(copyinstallerFiles)
