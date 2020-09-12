@@ -1,4 +1,4 @@
-import skyrim.requiem.build.ArchiveSevenZTask
+import skyrim.requiem.build.ReleaseArchiveTask
 import skyrim.requiem.build.RequiemVersion
 import java.io.BufferedReader
 import java.io.InputStreamReader
@@ -74,9 +74,10 @@ tasks.clean {
     delete(skyProcDir)
 }
 
-val packRelease by tasks.registering(ArchiveSevenZTask::class) {
+val packRelease by tasks.registering(ReleaseArchiveTask::class) {
     description = "Pack Requiem as a ready to ship 7z archive"
     group = "distribution"
+
     dependsOn(tasks.assemble)
     dependsOn("components:fomod-installer:assemble")
     dependsOn("components:documentation:assemble")
@@ -84,26 +85,19 @@ val packRelease by tasks.registering(ArchiveSevenZTask::class) {
     archiveFile = file ("distribution/Requiem_${gitBranch}_$gitRevision.7z")
 
     val installerDir: File by project("components:fomod-installer").extra
-    val optionsDir: File by project("components:fomod-installer").extra
     val releaseDocsDir: File by project("components:documentation").extra
 
-    baseDirectory = rootDir
-    fileMapping = mapOf(
-        // fomod installer stuff
-        installerDir to file("file:fomod"),
-        optionsDir to file("file:options"),
-        // individual files
-        file("file:Requiem.esp") to file("file:plugin"),
-        file("file:Reqtificator.bat") to file("file:core"),
-        // folders
-        releaseDocsDir to file("file:core/documentation"),
-        file("file:Scripts") to file("file:core/Scripts"),
-        file("file:interface") to file("file:core/interface"),
-        file("file:meshes") to file("file:core/meshes"),
-        file("file:SkyProc Patchers/Requiem") to file("file:core/SkyProc Patchers/Requiem"),
-        file("file:sound") to file("file:core/sound"),
-        file("file:textures") to file("file:core/textures")
+    fomod = installerDir
+    plugin = file("Requiem.esp")
+    coreMod = files(
+        "Reqtificator.bat",
+        releaseDocsDir,
+        "Scripts",
+        "interface",
+        "meshes",
+        "SkyProc Patchers",
+        "sound",
+        "textures"
     )
-    excludeFolders = files()
     excludePatterns = listOf("REQ_Debug.+\\.pex")
 }

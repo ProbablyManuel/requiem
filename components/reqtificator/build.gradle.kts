@@ -96,6 +96,6 @@ jlink {
     forceMerge("log4j-api", "kotlin") // kotlin-stdlib-common has no module-identifier and has split modules
 
     launcher {
-        name = "launcher_template"
+        name = "launch_module"
     }
 }
