@@ -1,7 +1,8 @@
 include(
     "Java:SkyProc",
     "Java:Reqtificator",
-    "components:interface"
+    "components:interface",
+    "components:fomod-installer"
 )
 rootProject.name = "Requiem-Development"
 pluginManagement {
