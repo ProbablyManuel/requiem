@@ -21,7 +21,6 @@ open class FomodInstallerInfoTask : DefaultTask() {
 
     @TaskAction
     fun createMcmFiles(): Unit {
-        project.delete(outputFile)
         val content = templateFile.readText(Charsets.UTF_16).replace(placeholder, version.toString())
         outputFile.writeText(content, Charsets.UTF_16)
     }

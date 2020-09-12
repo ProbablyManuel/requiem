@@ -79,21 +79,11 @@ val compilePapyrus = tasks.register<PapyrusCompileTask>("compilePapyrus") {
     compilerLogs = file("PapyrusLogs")
 }
 
-val copyInterface by tasks.registering(Copy::class) {
+val copyInterfaceFiles by tasks.registering(Copy::class) {
     dependsOn("components:interface:assemble")
     val outputDir: File by project("components:interface").extra
     from(outputDir)
     into(interfaceDir)
-}
-
-val fomodInstallerInfo = tasks.register<FomodInstallerInfoTask>("fomodInstallerInfo") {
-    description = "set up the Fomod installer info file"
-    group = "build"
-
-    templateFile = file("fomod/info_TEMPLATE.xml")
-    version = project.version as RequiemVersion
-    placeholder = "{{version}}"
-    outputFile = file("fomod/info.xml")
 }
 
 val cleanPapyrus = tasks.register<Delete>("cleanPapyrus") {
@@ -103,16 +93,9 @@ val cleanPapyrus = tasks.register<Delete>("cleanPapyrus") {
     delete = setOf("Scripts", "PapyrusLogs")
 }
 
-val cleanFomodInstallerInfo = tasks.register<Delete>("cleanFomodInstallerInfo") {
-    description = "Delete all generated Fomod installer files"
-    group = "build"
-
-    delete = fomodInstallerInfo.map { setOf(it.outputFile) }.get()
-}
-
 tasks.assemble {
     dependsOn(copyReqtificator)
-    dependsOn(copyInterface)
+    dependsOn(copyInterfaceFiles)
 }
 
 tasks.clean {
@@ -130,7 +113,7 @@ tasks.register("cleanDevVersion") {
     dependsOn("Java:Reqtificator:clean")
     dependsOn("Java:SkyProc:clean")
     dependsOn("components:interface:clean")
-    dependsOn(cleanFomodInstallerInfo)
+    dependsOn("components:fomod-installer:clean")
 }
 
 //TODO: supersede with "assemble" to be more in line with Gradle conventions and have fewer custom tasks
@@ -143,13 +126,13 @@ val installDevVersion = tasks.register("installDevVersion") {
     }
     dependsOn(tasks.assemble)
     dependsOn(compilePapyrus)
-    dependsOn(fomodInstallerInfo)
 }
 
 tasks.register<ArchiveSevenZTask>("packRelease") {
     description = "Pack Requiem as a ready to ship 7z archive"
     group = "distribution"
     dependsOn(installDevVersion)
+    dependsOn("components:fomod-installer:assemble")
 
     archiveFile = file {
         val revision = gitRevision
@@ -159,11 +142,14 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
         "distribution/$archiveName.7z"
     }
 
+    val installerDir: File by project("components:fomod-installer").extra
+    val optionsDir: File by project("components:fomod-installer").extra
+
     baseDirectory = rootDir
     fileMapping = mapOf(
         // fomod installer stuff
-        file("file:fomod") to file("file:fomod"),
-        file("file:options") to file("file:options"),
+        installerDir to file("file:fomod"),
+        optionsDir to file("file:options"),
         // individual files
         file("file:Requiem.esp") to file("file:plugin"),
         file("file:Reqtificator.bat") to file("file:core"),
@@ -183,8 +169,6 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
     )
     excludePatterns = listOf(
         "REQ_Debug.+\\.pex",
-        "\\.hg.*",
-        ".*TEMPLATE.*",
-        ".*\\.xcf"
+        ".*TEMPLATE.*"
     )
 }
