@@ -62,8 +62,8 @@ val interfaceDir = file("Interface")
 val scriptsDir = file("Scripts")
 
 val copyReqtificator by tasks.registering(Copy::class) {
-    dependsOn("Java:Reqtificator:assemble")
-    val outputDir: File by project("Java:Reqtificator").extra
+    dependsOn("components:reqtificator:assemble")
+    val outputDir: File by project("components:reqtificator").extra
     from(outputDir)
     into(reqtificatorDir)
 }
@@ -102,7 +102,7 @@ tasks.register("cleanDevVersion") {
 
     dependsOn(tasks.clean)
     dependsOn("components:papyrus-scripts:clean")
-    dependsOn("Java:Reqtificator:clean")
+    dependsOn("components:reqtificator:clean")
     dependsOn("components:skyproc:clean")
     dependsOn("components:interface:clean")
     dependsOn("components:fomod-installer:clean")

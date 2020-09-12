@@ -19,7 +19,6 @@ open class VersionFileTask() : DefaultTask() {
 
     @TaskAction
     fun writeVersionInfo(): Unit {
-        project.delete(versionFile)
         versionFile.writeText(
             """|revision=$revision
                 |branch=$branch
