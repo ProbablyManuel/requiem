@@ -103,7 +103,7 @@ tasks.register("cleanDevVersion") {
     dependsOn(tasks.clean)
     dependsOn("components:papyrus-scripts:clean")
     dependsOn("Java:Reqtificator:clean")
-    dependsOn("Java:SkyProc:clean")
+    dependsOn("components:skyproc:clean")
     dependsOn("components:interface:clean")
     dependsOn("components:fomod-installer:clean")
     dependsOn("components:documentation:clean")

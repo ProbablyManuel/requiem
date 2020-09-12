@@ -1,5 +1,5 @@
 include(
-    "Java:SkyProc",
+    "components:skyproc",
     "Java:Reqtificator",
     "components:interface",
     "components:fomod-installer",
