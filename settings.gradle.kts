@@ -1,6 +1,6 @@
 include(
     "components:skyproc",
-    "Java:Reqtificator",
+    "components:reqtificator",
     "components:interface",
     "components:fomod-installer",
     "components:documentation",
@@ -14,4 +14,3 @@ pluginManagement {
         id("org.beryx.jlink") version "2.21.3"
     }
 }
-
