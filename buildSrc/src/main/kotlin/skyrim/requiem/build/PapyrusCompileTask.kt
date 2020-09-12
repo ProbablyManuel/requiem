@@ -12,7 +12,7 @@ open class PapyrusCompileTask : DefaultTask() {
     @InputDirectory
     lateinit var sourceFolder: File
     @OutputDirectory
-    lateinit var outputDir: File
+    lateinit var targetDir: File
     @InputFile
     lateinit var compiler: File
     @InputFile
@@ -26,8 +26,6 @@ open class PapyrusCompileTask : DefaultTask() {
 
     @TaskAction
     fun compileScripts() {
-        project.delete(outputDir.listFiles())
-        project.delete(compilerLogs.listFiles())
         val templateArgs = buildTemplateProcessArgs()
         val compilationResult = sourceFolder
             .walkTopDown()
@@ -65,7 +63,7 @@ open class PapyrusCompileTask : DefaultTask() {
             "-a",
             "-f=${compilerFlags.absolutePath}",
             "-i=${includes.joinToString(";")}",
-            "-o=${outputDir.absolutePath}"
+            "-o=${targetDir.absolutePath}"
         )
     }
 }
