@@ -56,8 +56,10 @@ val papyrusIncludeFolders: FileCollection by project.extra
 
 val reqtificatorBuildDir: File by project.extra
 
-val reqtificatorDir = file("SkyProc Patchers/Requiem")
+val skyProcDir = file("SkyProc Patchers")
+val reqtificatorDir = file("$skyProcDir/Requiem")
 val interfaceDir = file("Interface")
+val scriptsDir = file("Scripts")
 
 val copyReqtificator by tasks.registering(Copy::class) {
     dependsOn("Java:Reqtificator:assemble")
@@ -66,17 +68,11 @@ val copyReqtificator by tasks.registering(Copy::class) {
     into(reqtificatorDir)
 }
 
-val compilePapyrus = tasks.register<PapyrusCompileTask>("compilePapyrus") {
-    description = "Compiles all Papyrus Scripts belonging to Requiem"
-    group = "build"
-
-    compiler = papyrusCompiler
-    compilerFlags = papyrusCompilerFlags
-    failFast = papyrusFailFast
-    includeFolders = papyrusIncludeFolders
-    sourceFolder = file("Papyrus\\Source\\Requiem")
-    outputDir = file("Scripts")
-    compilerLogs = file("PapyrusLogs")
+val copyScripts by tasks.registering(Copy::class) {
+    dependsOn("components:papyrus-scripts:assemble")
+    val outputDir: File by project("components:papyrus-scripts").extra
+    from(outputDir)
+    into(scriptsDir)
 }
 
 val copyInterfaceFiles by tasks.registering(Copy::class) {
@@ -86,21 +82,17 @@ val copyInterfaceFiles by tasks.registering(Copy::class) {
     into(interfaceDir)
 }
 
-val cleanPapyrus = tasks.register<Delete>("cleanPapyrus") {
-    description = "Delete all compiled Papyrus scripts"
-    group = "build"
-
-    delete = setOf("Scripts", "PapyrusLogs")
-}
-
 tasks.assemble {
     dependsOn(copyReqtificator)
     dependsOn(copyInterfaceFiles)
+    dependsOn(copyScripts)
 }
 
 tasks.clean {
     delete(reqtificatorDir)
     delete(interfaceDir)
+    delete(scriptsDir)
+    delete(skyProcDir)
 }
 
 //TODO: remove this task once all build aspects are converted to subprojects that allow simple folder-based cleanups
@@ -109,7 +101,7 @@ tasks.register("cleanDevVersion") {
     description = "remove all build results"
 
     dependsOn(tasks.clean)
-    dependsOn(cleanPapyrus)
+    dependsOn("components:papyrus-scripts:clean")
     dependsOn("Java:Reqtificator:clean")
     dependsOn("Java:SkyProc:clean")
     dependsOn("components:interface:clean")
@@ -126,7 +118,6 @@ val installDevVersion = tasks.register("installDevVersion") {
         println("Setup ready, you can now start the game!")
     }
     dependsOn(tasks.assemble)
-    dependsOn(compilePapyrus)
 }
 
 tasks.register<ArchiveSevenZTask>("packRelease") {
@@ -159,18 +150,12 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
         // folders
         releaseDocsDir to file("file:core/documentation"),
         file("file:Scripts") to file("file:core/Scripts"),
-        file("file:Papyrus/Source") to file("file:core/Scripts/Source"),
         file("file:interface") to file("file:core/interface"),
         file("file:meshes") to file("file:core/meshes"),
         file("file:SkyProc Patchers/Requiem") to file("file:core/SkyProc Patchers/Requiem"),
         file("file:sound") to file("file:core/sound"),
         file("file:textures") to file("file:core/textures")
     )
-    excludeFolders = files(
-        "file:/Papyrus/Source/Requiem/debugtools"
-    )
-    excludePatterns = listOf(
-        "REQ_Debug.+\\.pex",
-        ".*TEMPLATE.*"
-    )
+    excludeFolders = files()
+    excludePatterns = listOf("REQ_Debug.+\\.pex")
 }

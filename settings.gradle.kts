@@ -3,7 +3,8 @@ include(
     "Java:Reqtificator",
     "components:interface",
     "components:fomod-installer",
-    "components:documentation"
+    "components:documentation",
+    "components:papyrus-scripts"
 )
 rootProject.name = "Requiem-Development"
 pluginManagement {
