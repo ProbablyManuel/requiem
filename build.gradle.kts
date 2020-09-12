@@ -1,7 +1,5 @@
 import skyrim.requiem.build.ArchiveSevenZTask
-import skyrim.requiem.build.FomodInstallerInfoTask
 import skyrim.requiem.build.RequiemVersion
-import skyrim.requiem.build.PapyrusCompileTask
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -27,34 +25,15 @@ allprojects {
     version = RequiemVersion(4, 0, 1, "Threshold")
 }
 
-val gitRevision by extra {
-    try {
-        val command = ProcessBuilder(listOf("git", "rev-parse", "HEAD"))
-        val process = command.start()
-        BufferedReader(InputStreamReader(process.inputStream)).readLine()
-    } catch (e: Exception) {
-        "unknown"
-    }
+fun runCommand(command: List<String>): String = try {
+    val process = ProcessBuilder(command).start()
+    BufferedReader(InputStreamReader(process.inputStream)).readLine()
+} catch (e: Exception) {
+    "unknown"
 }
 
-fun retrieveGitBranch(): String {
-    return try {
-        val command = ProcessBuilder(listOf("git", "symbolic-ref", "--short", "-q", "HEAD"))
-        val process = command.start()
-        BufferedReader(InputStreamReader(process.inputStream)).readLine()
-    } catch (e: Exception) {
-        "unknown"
-    }
-}
-
-val gitBranch by extra { retrieveGitBranch() }
-
-val papyrusCompiler: File by project.extra
-val papyrusCompilerFlags: File by project.extra
-val papyrusFailFast: Boolean by project.extra
-val papyrusIncludeFolders: FileCollection by project.extra
-
-val reqtificatorBuildDir: File by project.extra
+val gitRevision by extra { runCommand(listOf("git", "rev-parse", "HEAD")) }
+val gitBranch by extra { runCommand(listOf("git", "symbolic-ref", "--short", "-q", "HEAD")) }
 
 val skyProcDir = file("SkyProc Patchers")
 val reqtificatorDir = file("$skyProcDir/Requiem")
@@ -95,45 +74,14 @@ tasks.clean {
     delete(skyProcDir)
 }
 
-//TODO: remove this task once all build aspects are converted to subprojects that allow simple folder-based cleanups
-tasks.register("cleanDevVersion") {
-    group = "build"
-    description = "remove all build results"
-
-    dependsOn(tasks.clean)
-    dependsOn("components:papyrus-scripts:clean")
-    dependsOn("components:reqtificator:clean")
-    dependsOn("components:skyproc:clean")
-    dependsOn("components:interface:clean")
-    dependsOn("components:fomod-installer:clean")
-    dependsOn("components:documentation:clean")
-}
-
-//TODO: supersede with "assemble" to be more in line with Gradle conventions and have fewer custom tasks
-val installDevVersion = tasks.register("installDevVersion") {
-    description = "Prepare the Requiem Dev Build for ingame usage"
-    group = "application"
-
-    doLast {
-        println("Setup ready, you can now start the game!")
-    }
-    dependsOn(tasks.assemble)
-}
-
-tasks.register<ArchiveSevenZTask>("packRelease") {
+val packRelease by tasks.registering(ArchiveSevenZTask::class) {
     description = "Pack Requiem as a ready to ship 7z archive"
     group = "distribution"
-    dependsOn(installDevVersion)
+    dependsOn(tasks.assemble)
     dependsOn("components:fomod-installer:assemble")
     dependsOn("components:documentation:assemble")
 
-    archiveFile = file {
-        val revision = gitRevision
-        val branch = gitBranch
-
-        val archiveName = "Requiem_${branch}_$revision"
-        "distribution/$archiveName.7z"
-    }
+    archiveFile = file ("distribution/Requiem_${gitBranch}_$gitRevision.7z")
 
     val installerDir: File by project("components:fomod-installer").extra
     val optionsDir: File by project("components:fomod-installer").extra

@@ -65,8 +65,8 @@ up the Reqtificator in Mod Organizer.
 
 ## Important Gradle tasks
 
-* `installDevVersion` - build a playable version of Requiem in this repository
-* `cleanDevVersion` - clean up all the build related files
+* `assemble` - build a playable version of Requiem in this repository
+* `clean` - clean up all the build related files
 * `packRelease` - assembles a release-ready 7z archive based on the current repository content
 * `test` - run the Reqtificator's unit tests
 * `ktlintFormat` - enforce formatting for the Kotlin part of the Reqtificator's code base
