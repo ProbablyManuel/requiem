@@ -1,6 +1,5 @@
 import skyrim.requiem.build.ArchiveSevenZTask
 import skyrim.requiem.build.FomodInstallerInfoTask
-import skyrim.requiem.build.McmTranslationsTask
 import skyrim.requiem.build.RequiemVersion
 import skyrim.requiem.build.PapyrusCompileTask
 import java.io.BufferedReader
@@ -58,6 +57,7 @@ val papyrusIncludeFolders: FileCollection by project.extra
 val reqtificatorBuildDir: File by project.extra
 
 val reqtificatorDir = file("SkyProc Patchers/Requiem")
+val interfaceDir = file("Interface")
 
 val copyReqtificator by tasks.registering(Copy::class) {
     dependsOn("Java:Reqtificator:assemble")
@@ -79,24 +79,11 @@ val compilePapyrus = tasks.register<PapyrusCompileTask>("compilePapyrus") {
     compilerLogs = file("PapyrusLogs")
 }
 
-val copyMcmTranslations = tasks.register<McmTranslationsTask>("copyMcmTranslations") {
-    description = "Copy the English MCM strings to other languages to have always have MCM text"
-    group = "build"
-
-    templateFile = file("Interface/Translations/Requiem_TEMPLATE.txt")
-    version = project.version as RequiemVersion
-    placeholder = "{{version}}"
-    outputFiles = listOf(
-        file("Interface/Translations/Requiem_CZECH.txt"),
-        file("Interface/Translations/Requiem_ENGLISH.txt"),
-        file("Interface/Translations/Requiem_FRENCH.txt"),
-        file("Interface/Translations/Requiem_GERMAN.txt"),
-        file("Interface/Translations/Requiem_ITALIAN.txt"),
-        file("Interface/Translations/Requiem_JAPANESE.txt"),
-        file("Interface/Translations/Requiem_POLISH.txt"),
-        file("Interface/Translations/Requiem_RUSSIAN.txt"),
-        file("Interface/Translations/Requiem_SPANISH.txt")
-    )
+val copyInterface by tasks.registering(Copy::class) {
+    dependsOn("components:interface:assemble")
+    val outputDir: File by project("components:interface").extra
+    from(outputDir)
+    into(interfaceDir)
 }
 
 val fomodInstallerInfo = tasks.register<FomodInstallerInfoTask>("fomodInstallerInfo") {
@@ -123,19 +110,14 @@ val cleanFomodInstallerInfo = tasks.register<Delete>("cleanFomodInstallerInfo") 
     delete = fomodInstallerInfo.map { setOf(it.outputFile) }.get()
 }
 
-val cleanMcmTranslations = tasks.register<Delete>("cleanMcmTranslations") {
-    description = "delete all MCM text files except the English master version"
-    group = "build"
-
-    delete = copyMcmTranslations.map { it.outputFiles.toSet() }.get()
-}
-
 tasks.assemble {
     dependsOn(copyReqtificator)
+    dependsOn(copyInterface)
 }
 
 tasks.clean {
     delete(reqtificatorDir)
+    delete(interfaceDir)
 }
 
 //TODO: remove this task once all build aspects are converted to subprojects that allow simple folder-based cleanups
@@ -147,7 +129,7 @@ tasks.register("cleanDevVersion") {
     dependsOn(cleanPapyrus)
     dependsOn("Java:Reqtificator:clean")
     dependsOn("Java:SkyProc:clean")
-    dependsOn(cleanMcmTranslations)
+    dependsOn("components:interface:clean")
     dependsOn(cleanFomodInstallerInfo)
 }
 
@@ -161,7 +143,6 @@ val installDevVersion = tasks.register("installDevVersion") {
     }
     dependsOn(tasks.assemble)
     dependsOn(compilePapyrus)
-    dependsOn(copyMcmTranslations)
     dependsOn(fomodInstallerInfo)
 }
 
