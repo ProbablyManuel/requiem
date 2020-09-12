@@ -114,6 +114,7 @@ tasks.register("cleanDevVersion") {
     dependsOn("Java:SkyProc:clean")
     dependsOn("components:interface:clean")
     dependsOn("components:fomod-installer:clean")
+    dependsOn("components:documentation:clean")
 }
 
 //TODO: supersede with "assemble" to be more in line with Gradle conventions and have fewer custom tasks
@@ -133,6 +134,7 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
     group = "distribution"
     dependsOn(installDevVersion)
     dependsOn("components:fomod-installer:assemble")
+    dependsOn("components:documentation:assemble")
 
     archiveFile = file {
         val revision = gitRevision
@@ -144,6 +146,7 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
 
     val installerDir: File by project("components:fomod-installer").extra
     val optionsDir: File by project("components:fomod-installer").extra
+    val releaseDocsDir: File by project("components:documentation").extra
 
     baseDirectory = rootDir
     fileMapping = mapOf(
@@ -154,7 +157,7 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
         file("file:Requiem.esp") to file("file:plugin"),
         file("file:Reqtificator.bat") to file("file:core"),
         // folders
-        file("file:documentation") to file("file:core/documentation"),
+        releaseDocsDir to file("file:core/documentation"),
         file("file:Scripts") to file("file:core/Scripts"),
         file("file:Papyrus/Source") to file("file:core/Scripts/Source"),
         file("file:interface") to file("file:core/interface"),
@@ -164,8 +167,7 @@ tasks.register<ArchiveSevenZTask>("packRelease") {
         file("file:textures") to file("file:core/textures")
     )
     excludeFolders = files(
-        "file:/Papyrus/Source/Requiem/debugtools",
-        "file:/documentation/confluence"
+        "file:/Papyrus/Source/Requiem/debugtools"
     )
     excludePatterns = listOf(
         "REQ_Debug.+\\.pex",
