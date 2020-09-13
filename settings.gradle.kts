@@ -1,4 +1,8 @@
-include("Java:SkyProc", "Java:Reqtificator")
+include(
+    "Java:SkyProc",
+    "Java:Reqtificator",
+    "components:interface"
+)
 rootProject.name = "Requiem-Development"
 pluginManagement {
     plugins {

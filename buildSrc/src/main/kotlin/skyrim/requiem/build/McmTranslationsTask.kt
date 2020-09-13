@@ -1,10 +1,7 @@
 package skyrim.requiem.build
 
 import org.gradle.api.DefaultTask
-import org.gradle.api.tasks.Input
-import org.gradle.api.tasks.InputFile
-import org.gradle.api.tasks.OutputFiles
-import org.gradle.api.tasks.TaskAction
+import org.gradle.api.tasks.*
 import java.io.File
 
 open class McmTranslationsTask : DefaultTask() {
@@ -14,14 +11,15 @@ open class McmTranslationsTask : DefaultTask() {
     @Input
     lateinit var placeholder: String
     @Input
+    lateinit var languages: List<String>
+    @Input
     lateinit var version: RequiemVersion
-    @OutputFiles
-    lateinit var outputFiles: List<File>
+    @OutputDirectory
+    lateinit var outputFolder: File
 
     @TaskAction
     fun createMcmFiles(): Unit {
-        project.delete(outputFiles)
         val content = templateFile.readText(Charsets.UTF_16LE).replace(placeholder, version.toPrettyString())
-        outputFiles.forEach { file -> file.writeText(content, Charsets.UTF_16LE) }
+        languages.forEach { lang -> outputFolder.resolve("Requiem_$lang.txt").writeText(content, Charsets.UTF_16LE) }
     }
 }
