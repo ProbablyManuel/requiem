@@ -1,9 +1,9 @@
 package skyrim.requiem.tests.transformations
 
-import io.kotlintest.shouldBe
-import io.kotlintest.shouldNotThrow
-import io.kotlintest.shouldThrow
-import io.kotlintest.specs.WordSpec
+import io.kotest.assertions.throwables.shouldNotThrow
+import io.kotest.assertions.throwables.shouldThrow
+import io.kotest.matchers.shouldBe
+import io.kotest.core.spec.style.WordSpec
 import io.mockk.every
 import io.mockk.mockk
 import skyproc.MajorRecord

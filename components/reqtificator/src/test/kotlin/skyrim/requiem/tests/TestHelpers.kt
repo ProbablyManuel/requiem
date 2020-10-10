@@ -1,8 +1,8 @@
 package skyrim.requiem.tests
 
-import io.kotlintest.Spec
-import io.kotlintest.fail
-import io.kotlintest.specs.WordSpec
+import io.kotest.assertions.fail
+import io.kotest.core.spec.Spec
+import io.kotest.core.spec.style.WordSpec
 import io.mockk.mockkObject
 import io.mockk.mockkStatic
 import io.mockk.unmockkObject

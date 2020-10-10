@@ -1,7 +1,7 @@
 package skyrim.requiem.tests.transformations
 
-import io.kotlintest.shouldBe
-import io.kotlintest.specs.WordSpec
+import io.kotest.matchers.shouldBe
+import io.kotest.core.spec.style.WordSpec
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify
