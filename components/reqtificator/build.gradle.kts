@@ -38,8 +38,7 @@ dependencies {
     implementation("org.apache.logging.log4j:log4j-core:2.13.0")
     implementation(project(":components:skyproc"))
     testImplementation("io.kotest:kotest-runner-junit5:4.2.6")
-    testImplementation("io.mockk:mockk:1.9.3")
-    testImplementation("net.bytebuddy:byte-buddy:1.10.6")
+    testImplementation("io.mockk:mockk:1.10.2")
 }
 
 val createVersionFile by tasks.registering(VersionFileTask::class) {
