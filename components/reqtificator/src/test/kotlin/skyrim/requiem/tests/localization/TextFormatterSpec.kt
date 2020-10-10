@@ -1,8 +1,8 @@
 package skyrim.requiem.tests.localization
 
 import com.typesafe.config.ConfigFactory
-import io.kotlintest.shouldBe
-import io.kotlintest.specs.WordSpec
+import io.kotest.matchers.shouldBe
+import io.kotest.core.spec.style.WordSpec
 import skyrim.requiem.localization.TextFormatter
 import skyrim.requiem.localization.TextReference
 import skyrim.requiem.localization.UrlReference

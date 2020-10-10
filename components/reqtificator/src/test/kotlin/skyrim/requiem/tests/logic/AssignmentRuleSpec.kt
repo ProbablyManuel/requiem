@@ -2,17 +2,11 @@ package skyrim.requiem.tests.logic
 
 import com.typesafe.config.ConfigFactory
 import com.typesafe.config.ConfigValue
-import io.kotlintest.be
-import io.kotlintest.matchers.collections.containExactly
-import io.kotlintest.matchers.collections.containExactlyInAnyOrder
-import io.kotlintest.matchers.collections.shouldContainAll
-import io.kotlintest.matchers.collections.shouldContainExactly
-import io.kotlintest.matchers.collections.shouldContainExactlyInAnyOrder
-import io.kotlintest.matchers.collections.shouldNotContainAll
-import io.kotlintest.matchers.haveSize
-import io.kotlintest.should
-import io.kotlintest.shouldNotThrow
-import io.kotlintest.shouldThrow
+import io.kotest.assertions.throwables.shouldNotThrow
+import io.kotest.assertions.throwables.shouldThrow
+import io.kotest.matchers.be
+import io.kotest.matchers.collections.*
+import io.kotest.matchers.should
 import io.mockk.every
 import io.mockk.mockk
 import skyproc.ARMO
