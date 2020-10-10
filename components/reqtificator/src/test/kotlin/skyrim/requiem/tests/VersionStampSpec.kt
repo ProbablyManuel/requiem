@@ -1,8 +1,8 @@
 package skyrim.requiem.tests
 
-import io.kotlintest.shouldBe
-import io.kotlintest.shouldThrow
-import io.kotlintest.specs.WordSpec
+import io.kotest.matchers.shouldBe
+import io.kotest.assertions.throwables.shouldThrow
+import io.kotest.core.spec.style.WordSpec
 import skyrim.requiem.VersionStamp
 
 class VersionStampSpec : WordSpec() {

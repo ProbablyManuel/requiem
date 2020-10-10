@@ -1,8 +1,8 @@
 package skyrim.requiem.tests
 
-import io.kotlintest.matchers.collections.shouldContainExactlyInAnyOrder
-import io.kotlintest.shouldThrow
-import io.kotlintest.specs.WordSpec
+import io.kotest.matchers.collections.shouldContainExactlyInAnyOrder
+import io.kotest.assertions.throwables.shouldThrow
+import io.kotest.core.spec.style.WordSpec
 import io.mockk.every
 import io.mockk.mockk
 import skyproc.FormID

@@ -1,8 +1,8 @@
 package skyrim.requiem.tests.logic.conditions
 
-import io.kotlintest.be
-import io.kotlintest.matchers.collections.shouldContainExactlyInAnyOrder
-import io.kotlintest.should
+import io.kotest.matchers.be
+import io.kotest.matchers.collections.shouldContainExactlyInAnyOrder
+import io.kotest.matchers.should
 import io.mockk.every
 import io.mockk.mockk
 import skyproc.FormID
