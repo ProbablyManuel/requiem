@@ -1,8 +1,8 @@
 package skyrim.requiem.tests.setupchecks
 
-import io.kotlintest.matchers.instanceOf
-import io.kotlintest.shouldBe
-import io.kotlintest.specs.WordSpec
+import io.kotest.matchers.types.instanceOf
+import io.kotest.matchers.shouldBe
+import io.kotest.core.spec.style.WordSpec
 import skyproc.ModListing
 import skyrim.requiem.Done
 import skyrim.requiem.exceptions.LoadOrderIssueDetectedException

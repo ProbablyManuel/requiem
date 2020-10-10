@@ -1,4 +1,5 @@
 import skyrim.requiem.build.VersionFileTask
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm")
@@ -36,10 +37,8 @@ dependencies {
     implementation("org.apache.logging.log4j:log4j-api:2.13.0")
     implementation("org.apache.logging.log4j:log4j-core:2.13.0")
     implementation(project(":components:skyproc"))
-    testImplementation(kotlin("reflect"))
-    testImplementation("io.kotlintest:kotlintest-runner-junit5:3.3.2")
-    testImplementation("io.mockk:mockk:1.9.3")
-    testImplementation("net.bytebuddy:byte-buddy:1.10.6")
+    testImplementation("io.kotest:kotest-runner-junit5:4.2.6")
+    testImplementation("io.mockk:mockk:1.10.2")
 }
 
 val createVersionFile by tasks.registering(VersionFileTask::class) {
@@ -88,6 +87,10 @@ tasks.test {
 
 tasks.compileJava {
     destinationDir = tasks.compileKotlin.map { it.destinationDir }.get()
+}
+
+tasks.withType<KotlinCompile>().configureEach {
+    kotlinOptions.jvmTarget = "13"
 }
 
 jlink {
