@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mutagen.Bethesda" Version="0.29.2" />
+    <PackageReference Include="Mutagen.Bethesda.Synthesis" Version="0.18.2" />
+  </ItemGroup>
+
+</Project>
