@@ -14,7 +14,8 @@ This mod is published on NexusMods:
 ## Requirements
 
 * a Java 13 (or newer) JDK like the [OpenJDK](https://jdk.java.net/)
-* Skyrim
+* .NET 5.0 SDK ([download here](https://dotnet.microsoft.com/download))
+* Skyrim Special Edition
 * Creation Kit (you're not required to use it for modding, but you need its Papyrus Script Compiler)
 * Mod Organizer 2.x
 
