@@ -5,6 +5,7 @@ using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Synthesis;
 using Reqtificator.Export;
+using Reqtificator.Transformers;
 
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
 namespace System.Runtime.CompilerServices
@@ -34,6 +35,14 @@ namespace Reqtificator
                 Console.WriteLine("oops, where's Requiem.esp? -- hit enter to abort the patcher");
                 Console.ReadLine();
                 return;
+            }
+
+            var ammoRecords = state.LoadOrder.PriorityOrder.Ammunition().WinningOverrides();
+            var ammoPatched = new AmmunitionTransformer().ProcessCollection(ammoRecords);
+
+            foreach (var patched in ammoPatched)
+            {
+                state.PatchMod.Ammunitions.Add(patched);
             }
 
             var requiem = state.LoadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);

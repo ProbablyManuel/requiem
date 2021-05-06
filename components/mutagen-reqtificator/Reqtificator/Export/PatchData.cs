@@ -15,7 +15,7 @@ namespace Reqtificator.Export
                 $"Generated for Requiem version: {version.ShortVersion()} -- build with Mutagen";
 
             //TODO: error handling...
-            if (requiem.Globals.RecordCache.TryGetValue(StaticReferences.VersionStamp, out var original))
+            if (requiem.Globals.RecordCache.TryGetValue(StaticReferences.GlobalVariables.VersionStamp, out var original))
             {
                 var record = patch.Globals.GetOrAddAsOverride(original);
                 record.RawFloat = version.AsNumeric();
