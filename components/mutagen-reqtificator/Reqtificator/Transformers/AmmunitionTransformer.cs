@@ -3,7 +3,7 @@ using Mutagen.Bethesda.Skyrim;
 
 namespace Reqtificator.Transformers
 {
-    public class AmmunitionTransformer: Transformer<Ammunition, IAmmunitionGetter>
+    public class AmmunitionTransformer: Transformer<Ammunition, IAmmunition, IAmmunitionGetter>
     {
 
         public override bool ShouldProcess(IAmmunitionGetter record)
@@ -13,7 +13,7 @@ namespace Reqtificator.Transformers
             return keywordCheck && record.Damage > 0.0f;
         }
 
-        public override void Process(Ammunition record)
+        public override void Process(IAmmunition record)
         {
             record.Damage *= 4;
         }
