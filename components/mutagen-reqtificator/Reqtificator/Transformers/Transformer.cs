@@ -1,18 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Collections.ObjectModel;
 using System.Linq;
 using Mutagen.Bethesda;
-using Mutagen.Bethesda.Skyrim;
 using Noggog;
 
 namespace Reqtificator.Transformers
 {
     public abstract class Transformer<T, TGetter> where T : MajorRecord, TGetter where TGetter : IMajorRecordGetter
     {
-        protected abstract bool ShouldProcess(TGetter record);
+        public abstract bool ShouldProcess(TGetter record);
 
-        protected abstract void Process(T record);
+        public abstract void Process(T record);
 
         public ImmutableList<T> ProcessCollection(IEnumerable<TGetter> records)
         {
@@ -50,12 +48,12 @@ namespace Reqtificator.Transformers
             private readonly Transformer<T, TGetter> _thisTransform;
             private readonly Transformer<T, TGetter> _nextTransform;
 
-            protected override bool ShouldProcess(TGetter record)
+            public override bool ShouldProcess(TGetter record)
             {
                 return _thisTransform.ShouldProcess(record) || _nextTransform.ShouldProcess(record);
             }
 
-            protected override void Process(T record)
+            public override void Process(T record)
             {
                 if (_thisTransform.ShouldProcess(record))
                 {
