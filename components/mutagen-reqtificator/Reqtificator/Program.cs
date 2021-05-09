@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Synthesis;
@@ -40,6 +41,10 @@ namespace Reqtificator
             logSwitch.MinimumLevel = LogEventLevel.Debug;
 
             Log.Debug("now let's get serious and switch to debug mode at runtime!");
+
+            var config = HoconConfigurationFactory.FromFile("components/mutagen-reqtificator/Reqtificator.conf");
+            Log.Debug($"maxlevel: {config.GetInt("maxLevel")}");
+            Log.Debug($"subNode.omg: {config.GetString("subNode.omg")}");
 
             return await SynthesisPipeline.Instance
                 .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
