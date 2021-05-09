@@ -1,5 +1,6 @@
 ﻿using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
+using Serilog;
 
 namespace Reqtificator.Transformers
 {
@@ -16,6 +17,7 @@ namespace Reqtificator.Transformers
         public override void Process(IAmmunition record)
         {
             record.Damage *= 4;
+            Log.Debug($"{record.EditorID} scaled damage by 4");
         }
     }
 }
