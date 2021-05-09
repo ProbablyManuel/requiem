@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Mutagen.Bethesda;
@@ -6,6 +7,9 @@ using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Synthesis;
 using Reqtificator.Export;
 using Reqtificator.Transformers;
+using Serilog;
+using Serilog.Core;
+using Serilog.Events;
 
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
 namespace System.Runtime.CompilerServices
@@ -17,8 +21,26 @@ namespace Reqtificator
 {
     public class Program
     {
+        private static readonly string _logFileName = "Reqtificator.log";
+
         public static async Task<int> Main(string[] args)
         {
+            File.Delete(_logFileName);
+
+            var logSwitch = new LoggingLevelSwitch();
+
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.File(_logFileName, levelSwitch: logSwitch)
+                .CreateLogger();
+
+            Log.Information("hello Requiem on info level debugging!");
+            Log.Debug("You should never have seen this line! :o");
+
+            logSwitch.MinimumLevel = LogEventLevel.Debug;
+
+            Log.Debug("now let's get serious and switch to debug mode at runtime!");
+
             return await SynthesisPipeline.Instance
                 .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
                 .SetTypicalOpen(GameRelease.SkyrimSE, "Requiem for the Mutated.esp")
@@ -51,6 +73,7 @@ namespace Reqtificator
             var processor = new PatchData();
             processor.SetPatchHeadersAndVersion(requiem.Mod!, state.PatchMod, version);
 
+            Log.CloseAndFlush();
             Console.WriteLine("Done! Press enter to finish your self-compiled Mutagen patcher.");
             Console.ReadLine();
         }
