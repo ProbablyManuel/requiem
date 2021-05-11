@@ -1,5 +1,4 @@
 import skyrim.requiem.build.PapyrusCompileTask
-import skyrim.requiem.build.RequiemVersion
 
 plugins {
     base
