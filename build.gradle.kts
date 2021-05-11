@@ -37,6 +37,7 @@ val gitBranch by extra { runCommand(listOf("git", "symbolic-ref", "--short", "-q
 
 val skyProcDir = file("SkyProc Patchers")
 val reqtificatorDir = file("$skyProcDir/Requiem")
+val mutagenDir = file("Reqtificator")
 val interfaceDir = file("Interface")
 val scriptsDir = file("Scripts")
 
@@ -45,6 +46,13 @@ val copyReqtificator by tasks.registering(Copy::class) {
     val outputDir: File by project("components:reqtificator").extra
     from(outputDir)
     into(reqtificatorDir)
+}
+
+val copyMutagenReqtificator by tasks.registering(Copy::class) {
+    dependsOn("components:mutagen-reqtificator:assemble")
+    val outputDir: File by project("components:mutagen-reqtificator").extra
+    from(outputDir)
+    into(mutagenDir)
 }
 
 val copyScripts by tasks.registering(Copy::class) {
@@ -63,6 +71,7 @@ val copyInterfaceFiles by tasks.registering(Copy::class) {
 
 tasks.assemble {
     dependsOn(copyReqtificator)
+    dependsOn(copyMutagenReqtificator)
     dependsOn(copyInterfaceFiles)
     dependsOn(copyScripts)
 }
@@ -70,6 +79,7 @@ tasks.assemble {
 tasks.clean {
     delete(reqtificatorDir)
     delete(interfaceDir)
+    delete(mutagenDir)
     delete(scriptsDir)
     delete(skyProcDir)
 }
