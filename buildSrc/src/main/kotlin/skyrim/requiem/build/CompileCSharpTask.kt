@@ -19,7 +19,7 @@ open class CompileCSharpTask : DefaultTask() {
 
     @TaskAction
     fun buildCSharpProject() {
-        val compileTask = ProcessBuilder(listOf("dotnet", "publish", "-r", "win-x64", "-o", "$targetDirectory"))
+        val compileTask = ProcessBuilder(listOf("dotnet", "publish", "-r", "win-x64", "-o", "$targetDirectory", "-c", "release"))
             .directory(projectFolder)
             .redirectOutput(ProcessBuilder.Redirect.to(compilerLog))
             .redirectErrorStream(true)

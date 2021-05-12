@@ -1,13 +1,11 @@
 ﻿using System;
+using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
-using Mutagen.Bethesda.Synthesis;
-using Reqtificator.Export;
-using Reqtificator.Transformers;
+using Mutagen.Bethesda.Synthesis.Internal;
+using Noggog;
 using Serilog;
 using Serilog.Core;
 using Serilog.Events;
@@ -22,65 +20,65 @@ namespace Reqtificator
 {
     public class Program
     {
-        private static readonly string _logFileName = "Reqtificator.log";
+        private const string LogFileName = "Reqtificator.log";
+        private const GameRelease Release = GameRelease.SkyrimSE;
+        private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Mutilated.esp");
+        private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
 
-        public static async Task<int> Main(string[] args)
+        public static int Main(string[] args)
         {
-            File.Delete(_logFileName);
-
-            var logSwitch = new LoggingLevelSwitch();
-
+            File.Delete(LogFileName);
+            var logSwitch = new LoggingLevelSwitch(LogEventLevel.Debug);
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
-                .WriteTo.File(_logFileName, levelSwitch: logSwitch)
+                .WriteTo.File(LogFileName, levelSwitch: logSwitch)
                 .CreateLogger();
 
-            Log.Information("hello Requiem on info level debugging!");
-            Log.Debug("You should never have seen this line! :o");
+            Console.WriteLine("starting the Reqtificator");
+            Log.Information("starting the Reqtificator");
+            WarmupSkyrim.Init();
 
-            logSwitch.MinimumLevel = LogEventLevel.Debug;
+            // var config = HoconConfigurationFactory.FromFile("components/mutagen-reqtificator/Reqtificator.conf");
 
-            Log.Debug("now let's get serious and switch to debug mode at runtime!");
+            if (!GameLocations.TryGetGameFolder(Release, out var gameFolder))
+            {
+                throw new DirectoryNotFoundException("Could not locate game folder automatically.");
+            }
 
-            var config = HoconConfigurationFactory.FromFile("components/mutagen-reqtificator/Reqtificator.conf");
-            Log.Debug($"maxlevel: {config.GetInt("maxLevel")}");
-            Log.Debug($"subNode.omg: {config.GetString("subNode.omg")}");
+            var dataFolder = Path.Combine(gameFolder, "Data");
+            if (!PluginListings.TryGetListingsFile(Release, out var path))
+            {
+                throw new FileNotFoundException("Could not locate load order automatically.");
+            }
 
-            return await SynthesisPipeline.Instance
-                .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
-                .SetTypicalOpen(GameRelease.SkyrimSE, "Requiem for the Mutated.esp")
-                .Run(args);
-        }
+            var loadOrderEntries = Utility.GetLoadOrder(Release, path.Path, dataFolder);
+            var activeMods = loadOrderEntries.OnlyEnabled().TakeWhile(it => it != PatchModKey).ToImmutableList();
+            Log.Information("Active Load Order:");
+            foreach (var (index, mod) in activeMods.WithIndex())
+            {
+                Log.Information($"  {index:D3} - {mod.ModKey.FileName}");
+            }
 
-        public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
-        {
+            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(dataFolder, activeMods, Release);
+
             //TODO: refactor this into a nice verification function
-            var requiemModKey = new ModKey("Requiem", ModType.Plugin);
-
-            if (state.LoadOrder.PriorityOrder.All(x => x.ModKey != requiemModKey))
+            if (loadOrder.PriorityOrder.All(x => x.ModKey != RequiemModKey))
             {
                 Console.WriteLine("oops, where's Requiem.esp? -- hit enter to abort the patcher");
                 Console.ReadLine();
-                return;
+                return 1;
             }
 
-            var ammoRecords = state.LoadOrder.PriorityOrder.Ammunition().WinningOverrides();
-            var ammoPatched = new AmmunitionTransformer().ProcessCollection(ammoRecords);
-
-            foreach (var patched in ammoPatched)
-            {
-                state.PatchMod.Ammunitions.Add(patched);
-            }
-
-            var requiem = state.LoadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
-
-            var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
-            var processor = new PatchData();
-            processor.SetPatchHeadersAndVersion(requiem.Mod!, state.PatchMod, version);
+            Log.Information("start patching");
+            var generatedPatch = MainLogic.GeneratePatch(loadOrder, PatchModKey);
+            Log.Information("done patching, now exporting to disk");
+            MainLogic.WritePatchToDisk(generatedPatch, dataFolder);
+            Log.Information("done exporting");
 
             Log.CloseAndFlush();
             Console.WriteLine("Done! Press enter to finish your self-compiled Mutagen patcher.");
             Console.ReadLine();
+            return 0;
         }
     }
 }
