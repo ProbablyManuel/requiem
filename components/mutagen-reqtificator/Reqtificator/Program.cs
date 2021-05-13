@@ -1,16 +1,8 @@
 ﻿using System;
-using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
-using Mutagen.Bethesda.Synthesis;
-using Reqtificator.Export;
-using Reqtificator.Transformers;
 using Serilog;
-using Serilog.Core;
-using Serilog.Events;
 
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
 namespace System.Runtime.CompilerServices
@@ -22,65 +14,45 @@ namespace Reqtificator
 {
     public class Program
     {
-        private static readonly string _logFileName = "Reqtificator.log";
+        private const GameRelease Release = GameRelease.SkyrimSE;
+        private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Mutated.esp");
+        private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
 
-        public static async Task<int> Main(string[] args)
+        public static int Main(string[] args)
         {
-            File.Delete(_logFileName);
+            LogUtils.SetUpLogging();
 
-            var logSwitch = new LoggingLevelSwitch();
+            Console.WriteLine("starting the Reqtificator with console logging enabled");
+            Log.Information("starting the Reqtificator");
+            WarmupSkyrim.Init();
 
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.File(_logFileName, levelSwitch: logSwitch)
-                .CreateLogger();
+            //TODO: load base Reqtificator config + stored user settings if available
 
-            Log.Information("hello Requiem on info level debugging!");
-            Log.Debug("You should never have seen this line! :o");
+            var context = GameContext.GetRequiemContext(Release, PatchModKey);
 
-            logSwitch.MinimumLevel = LogEventLevel.Debug;
-
-            Log.Debug("now let's get serious and switch to debug mode at runtime!");
-
-            var config = HoconConfigurationFactory.FromFile("components/mutagen-reqtificator/Reqtificator.conf");
-            Log.Debug($"maxlevel: {config.GetInt("maxLevel")}");
-            Log.Debug($"subNode.omg: {config.GetString("subNode.omg")}");
-
-            return await SynthesisPipeline.Instance
-                .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
-                .SetTypicalOpen(GameRelease.SkyrimSE, "Requiem for the Mutated.esp")
-                .Run(args);
-        }
-
-        public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
-        {
             //TODO: refactor this into a nice verification function
-            var requiemModKey = new ModKey("Requiem", ModType.Plugin);
-
-            if (state.LoadOrder.PriorityOrder.All(x => x.ModKey != requiemModKey))
+            if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
             {
-                Console.WriteLine("oops, where's Requiem.esp? -- hit enter to abort the patcher");
+                Console.WriteLine($"oops, where's {RequiemModKey.FileName}? -- hit enter to abort the patcher");
                 Console.ReadLine();
-                return;
+                return 1;
             }
 
-            var ammoRecords = state.LoadOrder.PriorityOrder.Ammunition().WinningOverrides();
-            var ammoPatched = new AmmunitionTransformer().ProcessCollection(ammoRecords);
+            // @Ludo hook your logic here, you have the active mods in the context record but no data loaded yet
 
-            foreach (var patched in ammoPatched)
-            {
-                state.PatchMod.Ammunitions.Add(patched);
-            }
+            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, Release);
 
-            var requiem = state.LoadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
 
-            var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
-            var processor = new PatchData();
-            processor.SetPatchHeadersAndVersion(requiem.Mod!, state.PatchMod, version);
+            Log.Information("start patching");
+            var generatedPatch = MainLogic.GeneratePatch(loadOrder, PatchModKey);
+            Log.Information("done patching, now exporting to disk");
+            MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
+            Log.Information("done exporting");
 
             Log.CloseAndFlush();
             Console.WriteLine("Done! Press enter to finish your self-compiled Mutagen patcher.");
             Console.ReadLine();
+            return 0;
         }
     }
 }
