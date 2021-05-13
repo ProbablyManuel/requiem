@@ -23,18 +23,16 @@ namespace Reqtificator.Transformers
 
         public T? PatchRecord(TGetter record)
         {
-            return LogUtils.WithRecordContextLog(record, () =>
+            return LogUtils.WithRecordContextLog<T?>(record)(() =>
             {
+                if (ShouldProcess(record))
                 {
-                    if (ShouldProcess(record))
-                    {
-                        var copy = (T) record.DeepCopy();
-                        Process(copy);
-                        return copy;
-                    }
-
-                    return null;
+                    var copy = (T) record.DeepCopy();
+                    Process(copy);
+                    return copy;
                 }
+
+                return null;
             });
         }
 

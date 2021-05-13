@@ -25,24 +25,18 @@ namespace Reqtificator
                 .CreateLogger();
         }
 
-        public static T WithRecordContextLog<T>(IMajorRecordGetter record, Func<T> action)
+        public static Func<Func<T>, T> WithRecordContextLog<T>(IMajorRecordGetter record)
         {
-            using (LogContext.PushProperty("RecordEditorId", record.EditorID))
+            return f =>
             {
-                using (LogContext.PushProperty("RecordFormId", record.FormKey.ToString()))
+                using (LogContext.PushProperty("RecordEditorId", record.EditorID))
                 {
-                    return action();
+                    using (LogContext.PushProperty("RecordFormId", record.FormKey.ToString()))
+                    {
+                        return f();
+                    }
                 }
-            }
-        }
-
-        public static void WithRecordContextLog(IMajorRecordGetter record, Action action)
-        {
-            WithRecordContextLog(record, () =>
-            {
-                action();
-                return true;
-            });
+            };
         }
     }
 }
