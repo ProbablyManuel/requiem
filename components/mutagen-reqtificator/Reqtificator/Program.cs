@@ -1,11 +1,8 @@
 ﻿using System;
-using System.IO;
 using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
 using Serilog;
-using Serilog.Core;
-using Serilog.Events;
 
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
 namespace System.Runtime.CompilerServices
@@ -18,18 +15,12 @@ namespace Reqtificator
     public class Program
     {
         private const GameRelease Release = GameRelease.SkyrimSE;
-        private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Mutilated.esp");
-        private const string LogFileName = "Reqtificator.log";
+        private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Mutated.esp");
         private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
 
         public static int Main(string[] args)
         {
-            File.Delete(LogFileName);
-            var logSwitch = new LoggingLevelSwitch(LogEventLevel.Debug);
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.File(LogFileName, levelSwitch: logSwitch)
-                .CreateLogger();
+            LogUtils.SetUpLogging();
 
             Console.WriteLine("starting the Reqtificator");
             Log.Information("starting the Reqtificator");
