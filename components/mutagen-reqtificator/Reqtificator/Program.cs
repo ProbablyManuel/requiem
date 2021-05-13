@@ -22,7 +22,7 @@ namespace Reqtificator
         {
             LogUtils.SetUpLogging();
 
-            Console.WriteLine("starting the Reqtificator");
+            Console.WriteLine("starting the Reqtificator with console logging enabled");
             Log.Information("starting the Reqtificator");
             WarmupSkyrim.Init();
 

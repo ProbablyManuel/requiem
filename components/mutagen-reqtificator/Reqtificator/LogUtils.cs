@@ -22,6 +22,7 @@ namespace Reqtificator
                 .MinimumLevel.Debug()
                 .Enrich.FromLogContext()
                 .WriteTo.File(LogFileName, levelSwitch: logSwitch, outputTemplate: format)
+                .WriteTo.Console(levelSwitch: logSwitch, outputTemplate: format)
                 .CreateLogger();
         }
 
