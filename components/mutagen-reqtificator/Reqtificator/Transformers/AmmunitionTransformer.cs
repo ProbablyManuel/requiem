@@ -4,9 +4,8 @@ using Serilog;
 
 namespace Reqtificator.Transformers
 {
-    public class AmmunitionTransformer: Transformer<Ammunition, IAmmunition, IAmmunitionGetter>
+    public class AmmunitionTransformer : Transformer<Ammunition, IAmmunition, IAmmunitionGetter>
     {
-
         public override bool ShouldProcess(IAmmunitionGetter record)
         {
             var keywordCheck = (!record.Keywords?.Contains(StaticReferences.Keywords.AlreadyReqtified) ?? true) &&
@@ -17,7 +16,7 @@ namespace Reqtificator.Transformers
         public override void Process(IAmmunition record)
         {
             record.Damage *= 4;
-            Log.Debug($"{record.EditorID} scaled damage by 4");
+            Log.Debug("scaled damage by 4");
         }
     }
 }
