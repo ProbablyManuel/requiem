@@ -15,7 +15,8 @@ val compileCSharp by tasks.registering(CompileCSharpTask::class) {
     group = "build"
 
     compilerLog = file("$buildDir/buildlog.txt")
-    projectFolder = file(".")
+    solutionFolder = file(".")
+    projectName = "Reqtificator"
     targetDirectory = outputDir
 }
 
