@@ -42,5 +42,19 @@ namespace Reqtificator.Configuration
                     .Select(it => ModKey.FromNameAndExtension(it)).ToImmutableList()
             );
         }
+
+        public void WriteToFile(string targetFile)
+        {
+            string FmtArray(string acc, string elem) => acc.Length > 0 ? $"{acc}, \"{elem}\"" : $"\"{elem}\"";
+            var configToWrite = $@"{{
+    ""verboseLogging"": {VerboseLogging.ToString().ToLower()},
+    ""mergeLeveledLists"": {MergeLeveledLists.ToString().ToLower()},
+    ""mergeLeveledCharacters"": {MergeLeveledCharacters.ToString().ToLower()},
+    ""openEncounterZones"": {OpenEncounterZones.ToString().ToLower()},
+    ""npcVisualTemplateMods"": [{NpcVisualTemplateMods.Select(it => it.FileName).Aggregate("", FmtArray)}],
+    ""raceVisualTemplateMods"": [{RaceVisualTemplateMods.Select(it => it.FileName).Aggregate("", FmtArray)}]
+}}";
+            File.WriteAllText(targetFile, configToWrite);
+        }
     }
 }
