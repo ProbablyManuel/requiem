@@ -1,7 +1,9 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
+using Reqtificator.Configuration;
 using Serilog;
 
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
@@ -26,9 +28,9 @@ namespace Reqtificator
             Log.Information("starting the Reqtificator");
             WarmupSkyrim.Init();
 
-            //TODO: load base Reqtificator config + stored user settings if available
-
             var context = GameContext.GetRequiemContext(Release, PatchModKey);
+            var userConfigFile = Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json");
+            var userConfig = UserSettings.LoadUserSettings(userConfigFile);
 
             //TODO: refactor this into a nice verification function
             if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
