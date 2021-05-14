@@ -32,6 +32,8 @@ namespace Reqtificator
             var userConfigFile = Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json");
             var userConfig = UserSettings.LoadUserSettings(userConfigFile);
 
+            Log.Information("loaded user configuration {@config}", userConfig);
+
             //TODO: refactor this into a nice verification function
             if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
             {
