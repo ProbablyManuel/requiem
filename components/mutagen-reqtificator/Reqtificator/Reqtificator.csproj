@@ -14,4 +14,10 @@
       <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
     </ItemGroup>
 
+    <ItemGroup>
+        <EmbeddedResource Include="Resources/DefaultUserConfig.json">
+            <LogicalName>DefaultUserConfig</LogicalName>
+        </EmbeddedResource>
+    </ItemGroup>
+
 </Project>
