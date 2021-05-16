@@ -2,10 +2,7 @@ package skyrim.requiem.build
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
-import org.gradle.api.tasks.InputDirectory
-import org.gradle.api.tasks.OutputDirectory
-import org.gradle.api.tasks.OutputFile
-import org.gradle.api.tasks.TaskAction
+import org.gradle.api.tasks.*
 import java.io.File
 
 open class CompileCSharpTask : DefaultTask() {
@@ -15,12 +12,14 @@ open class CompileCSharpTask : DefaultTask() {
     @OutputDirectory
     lateinit var targetDirectory: File
     @InputDirectory
-    lateinit var projectFolder: File
+    lateinit var solutionFolder: File
+    @Input
+    lateinit var projectName: String
 
     @TaskAction
     fun buildCSharpProject() {
-        val compileTask = ProcessBuilder(listOf("dotnet", "publish", "-r", "win-x64", "-o", "$targetDirectory", "-c", "release"))
-            .directory(projectFolder)
+        val compileTask = ProcessBuilder(listOf("dotnet", "publish", projectName, "-r", "win-x64", "-o", "$targetDirectory", "-c", "release"))
+            .directory(solutionFolder)
             .redirectOutput(ProcessBuilder.Redirect.to(compilerLog))
             .redirectErrorStream(true)
         val compilationResult = compileTask.start().waitFor() == 0
