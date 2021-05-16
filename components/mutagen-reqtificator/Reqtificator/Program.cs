@@ -1,7 +1,9 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
+using Reqtificator.Configuration;
 using Serilog;
 
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
@@ -26,9 +28,9 @@ namespace Reqtificator
             Log.Information("starting the Reqtificator");
             WarmupSkyrim.Init();
 
-            //TODO: load base Reqtificator config + stored user settings if available
-
             var context = GameContext.GetRequiemContext(Release, PatchModKey);
+            var userConfigFile = Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json");
+            var userConfig = UserSettings.LoadUserSettings(userConfigFile);
 
             //TODO: refactor this into a nice verification function
             if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
@@ -40,8 +42,17 @@ namespace Reqtificator
 
             // @Ludo hook your logic here, you have the active mods in the context record but no data loaded yet
 
-            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, Release);
+            // TODO: this is just demonstration, the changes should be done in the UI and persisted into the same file
+            Log.Information("loaded user configuration {@config}", userConfig);
+            var updatedUserConfig = userConfig with
+            {
+                VerboseLogging = !userConfig.VerboseLogging,
+                NpcVisualTemplateMods = userConfig.RaceVisualTemplateMods,
+                RaceVisualTemplateMods = userConfig.NpcVisualTemplateMods
+            };
+            updatedUserConfig.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettingsUpdated.json"));
 
+            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, Release);
 
             Log.Information("start patching");
             var generatedPatch = MainLogic.GeneratePatch(loadOrder, PatchModKey);

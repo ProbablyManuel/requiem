@@ -5,7 +5,11 @@ plugins {
 }
 
 buildDir = file("./bin")
-val compileDir = file("./obj")
+//TODO: handle cleanup in a nicer way than hardcoding project paths
+val projectDirs = files("./Reqtificator", "./ReqtificatorTest")
+val objectDirs = files(projectDirs.map { "$it/obj" })
+val compileDirs = files(projectDirs.map { "$it/bin" })
+
 
 val outputDir by project.extra(file("$buildDir/Reqtificator-SSE"))
 
@@ -15,8 +19,9 @@ val compileCSharp by tasks.registering(CompileCSharpTask::class) {
     group = "build"
 
     compilerLog = file("$buildDir/buildlog.txt")
-    projectFolder = file(".")
-    targetDirectory = outputDir
+    solutionFolder = file(".")
+    projectName = "Reqtificator"
+    targetDirectory = file("$outputDir/app")
 }
 
 tasks.assemble {
@@ -24,5 +29,5 @@ tasks.assemble {
 }
 
 tasks.clean {
-    delete(compileDir)
+    delete(compileDirs, objectDirs)
 }
