@@ -10,10 +10,8 @@ private fun runProcess(args: List<String>, workDir: File): Boolean {
         .directory(workDir)
         .redirectErrorStream(true)
     val process = task.start()
-    val result = process.waitFor() == 0
-    //TODO: might be causing issues if there's too much output, but works fine for now
-    process.inputStream.reader().use { it.forEachLine { line -> println(line) }}
-    return result
+    process.inputStream.reader().use { it.forEachLine { line -> println(line) } }
+    return process.waitFor() == 0
 
 }
 
