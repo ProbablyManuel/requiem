@@ -27,7 +27,7 @@ namespace Reqtificator.Transformers
             {
                 if (ShouldProcess(record))
                 {
-                    var copy = (T) record.DeepCopy();
+                    var copy = (T)record.DeepCopy();
                     Process(copy);
                     return copy;
                 }

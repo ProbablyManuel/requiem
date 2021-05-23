@@ -1,6 +1,8 @@
 import skyrim.requiem.build.CompileCSharpTask
 import skyrim.requiem.build.TestCSharpTask
 import skyrim.requiem.build.PublishCSharpTask
+import skyrim.requiem.build.CheckFormatCSharpTask
+import skyrim.requiem.build.FormatCSharpTask
 
 plugins {
     base
@@ -47,6 +49,20 @@ val test by tasks.registering(TestCSharpTask::class) {
     solutionFolder = file(".")
 
     dependsOn(compile, testCompile)
+}
+
+val checkFormat by tasks.registering(CheckFormatCSharpTask::class) {
+    description = "Run C# unit tests for the SSE Reqtificator"
+    group = "verification"
+
+    solutionFolder = file(".")
+}
+
+val format by tasks.registering(FormatCSharpTask::class) {
+    description = "Fix formatting issues and analyzer complaints automatically when possible"
+    group = "verification"
+
+    solutionFolder = file(".")
 }
 
 tasks.assemble {
