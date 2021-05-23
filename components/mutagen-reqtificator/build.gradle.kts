@@ -37,6 +37,7 @@ val publish by tasks.registering(PublishCSharpTask::class) {
     solutionFolder = file(".")
     projectName = "Reqtificator"
     targetDirectory = file("$outputDir/app")
+    warningsAsErrors = true
 }
 
 val test by tasks.registering(TestCSharpTask::class) {

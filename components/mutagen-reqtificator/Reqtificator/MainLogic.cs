@@ -7,7 +7,7 @@ using Reqtificator.Transformers;
 
 namespace Reqtificator
 {
-    public static class MainLogic
+    internal static class MainLogic
     {
         public static SkyrimMod GeneratePatch(LoadOrder<IModListing<ISkyrimModGetter>> loadOrder, ModKey outputModKey)
         {
@@ -25,8 +25,7 @@ namespace Reqtificator
             var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
 
             var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
-            var processor = new PatchData();
-            processor.SetPatchHeadersAndVersion(requiem.Mod!, outputMod, version);
+            PatchData.SetPatchHeadersAndVersion(requiem.Mod!, outputMod, version);
 
             return outputMod;
         }

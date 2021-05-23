@@ -20,12 +20,16 @@ open class CompileCSharpTask : DefaultTask() {
 
     @InputDirectory
     lateinit var solutionFolder: File
+
     @Input
     lateinit var projectName: String
 
+    @Input
+    var warningsAsErrors: Boolean = true
+
     @TaskAction
     fun taskAction() {
-        val args = listOf("dotnet", "build", projectName)
+        val args = listOf("dotnet", "build", projectName) + if (warningsAsErrors) listOf("-warnaserror") else listOf()
         if (!runProcess(args, solutionFolder)) throw GradleException("C# project '$projectName' failed to compile!")
     }
 }
@@ -34,14 +38,20 @@ open class PublishCSharpTask : DefaultTask() {
 
     @OutputDirectory
     lateinit var targetDirectory: File
+
     @InputDirectory
     lateinit var solutionFolder: File
+
     @Input
     lateinit var projectName: String
 
+    @Input
+    var warningsAsErrors: Boolean = true
+
     @TaskAction
     fun taskAction() {
-        val args = listOf("dotnet", "publish", projectName, "-r", "win-x64", "-o", "$targetDirectory", "-c", "release")
+        val args = (listOf("dotnet", "publish", projectName, "-r", "win-x64", "-o", "$targetDirectory", "-c", "release")
+            + if (warningsAsErrors) listOf("-warnaserror") else listOf())
         if (!runProcess(args, solutionFolder)) throw GradleException("C# project '$projectName' failed to publish!")
     }
 }
