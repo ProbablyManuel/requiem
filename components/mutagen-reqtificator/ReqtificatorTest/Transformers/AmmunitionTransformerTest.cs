@@ -14,7 +14,7 @@ namespace ReqtificatorTest.Transformers
 {
     public static class AmmunitionTransformerTest
     {
-        public class ShouldProcess 
+        public class ShouldProcess
         {
             [Fact]
             public void Should_Select_Eligible_Records()

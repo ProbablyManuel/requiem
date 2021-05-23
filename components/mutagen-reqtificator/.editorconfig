@@ -5,9 +5,11 @@ indent_size = 4
 indent_style = space
 tab_width = 4
 
+dotnet_analyzer_diagnostic.severity = warning
+
 # global suppression rules
-# we're not supporting any localization in the initial release
-dotnet_diagnostic.CA1303.severity = none
+dotnet_diagnostic.CA1303.severity = none # we're not supporting any localization in the initial release
+dotnet_diagnostic.IDE0008.severity = none # I don't see a point in not using type-inference :)
 
 [UserSettings.cs]
 # only used to write booleans to json

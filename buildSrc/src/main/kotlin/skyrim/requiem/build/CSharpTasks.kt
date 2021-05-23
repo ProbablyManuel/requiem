@@ -15,6 +15,8 @@ private fun runProcess(args: List<String>, workDir: File): Boolean {
 
 }
 
+private val formatterArgs = listOf("-w", "-a", "warn")
+
 //TODO: refine input parameters to avoid unnecessary re-executions after temp build subfolders are created
 open class CompileCSharpTask : DefaultTask() {
 
@@ -67,5 +69,33 @@ open class TestCSharpTask : DefaultTask() {
     fun taskAction() {
         val args = listOf("dotnet", "test", "--verbosity", loglevel, "--no-build")
         if (!runProcess(args, solutionFolder)) throw GradleException("Unit tests for C# project were not successful!")
+    }
+}
+
+open class CheckFormatCSharpTask : DefaultTask() {
+
+    @Input
+    var loglevel: String = "normal"
+    @InputDirectory
+    lateinit var solutionFolder: File
+
+    @TaskAction
+    fun taskAction() {
+        val args = listOf("dotnet", "dotnet-format", "--verbosity", loglevel, "--check") + formatterArgs
+        if (!runProcess(args, solutionFolder)) throw GradleException("C# project does not obey format and analyzer rules!")
+    }
+}
+
+open class FormatCSharpTask : DefaultTask() {
+
+    @Input
+    var loglevel: String = "normal"
+    @InputDirectory
+    lateinit var solutionFolder: File
+
+    @TaskAction
+    fun taskAction() {
+        val args = listOf("dotnet", "dotnet-format", "--verbosity", loglevel) + formatterArgs
+        if (!runProcess(args, solutionFolder)) throw GradleException("C# project does not obey format and analyzer rules!")
     }
 }
