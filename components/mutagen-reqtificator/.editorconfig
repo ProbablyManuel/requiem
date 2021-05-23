@@ -1,0 +1,14 @@
+﻿root = true
+
+[*.cs]
+indent_size = 4
+indent_style = space
+tab_width = 4
+
+# global suppression rules
+# we're not supporting any localization in the initial release
+dotnet_diagnostic.CA1303.severity = none
+
+[UserSettings.cs]
+# only used to write booleans to json
+dotnet_diagnostic.CA1308.severity = none

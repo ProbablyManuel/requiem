@@ -1,26 +1,30 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Serilog;
 
+[assembly: CLSCompliant(false)]
+[assembly: InternalsVisibleTo("ReqtificatorTest")]
+
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
 namespace System.Runtime.CompilerServices
 {
-    internal record IsExternalInit;
+    public record IsExternalInit;
 }
 
 namespace Reqtificator
 {
-    public class Program
+    internal static class Program
     {
         private const GameRelease Release = GameRelease.SkyrimSE;
         private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Mutated.esp");
         private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
 
-        public static int Main(string[] args)
+        public static int Main()
         {
             LogUtils.SetUpLogging();
 
