@@ -1,8 +1,4 @@
-import skyrim.requiem.build.CompileCSharpTask
-import skyrim.requiem.build.TestCSharpTask
-import skyrim.requiem.build.PublishCSharpTask
-import skyrim.requiem.build.CheckFormatCSharpTask
-import skyrim.requiem.build.FormatCSharpTask
+import skyrim.requiem.build.*
 
 plugins {
     base
@@ -24,6 +20,8 @@ val compile by tasks.registering(CompileCSharpTask::class) {
 
     solutionFolder = file(".")
     projectName = "Reqtificator"
+
+    dependsOn(restoreTools)
 }
 
 val testCompile by tasks.registering(CompileCSharpTask::class) {
@@ -32,6 +30,8 @@ val testCompile by tasks.registering(CompileCSharpTask::class) {
 
     solutionFolder = file(".")
     projectName = "ReqtificatorTest"
+
+    dependsOn(restoreTools)
 }
 
 val publish by tasks.registering(PublishCSharpTask::class) {
@@ -42,6 +42,8 @@ val publish by tasks.registering(PublishCSharpTask::class) {
     projectName = "Reqtificator"
     targetDirectory = file("$outputDir/app")
     warningsAsErrors = csharpWarningsAsErrors
+
+    dependsOn(restoreTools)
 }
 
 val test by tasks.registering(TestCSharpTask::class) {
@@ -50,7 +52,7 @@ val test by tasks.registering(TestCSharpTask::class) {
 
     solutionFolder = file(".")
 
-    dependsOn(compile, testCompile)
+    dependsOn(compile, testCompile, restoreTools)
 }
 
 val checkFormat by tasks.registering(CheckFormatCSharpTask::class) {
@@ -58,6 +60,8 @@ val checkFormat by tasks.registering(CheckFormatCSharpTask::class) {
     group = "verification"
 
     solutionFolder = file(".")
+
+    dependsOn(restoreTools)
 }
 
 val format by tasks.registering(FormatCSharpTask::class) {
@@ -65,6 +69,16 @@ val format by tasks.registering(FormatCSharpTask::class) {
     group = "verification"
 
     solutionFolder = file(".")
+
+    dependsOn(restoreTools)
+}
+
+val restoreTools by tasks.registering(RestoreDotnetToolsTask::class) {
+    description = "Loads the desired version of Dotnet build tool extensions requried by other tasks"
+    group = "build"
+
+    solutionFolder = file(".")
+    manifestFile = file(".config/dotnet-tools.json")
 }
 
 tasks.assemble {
