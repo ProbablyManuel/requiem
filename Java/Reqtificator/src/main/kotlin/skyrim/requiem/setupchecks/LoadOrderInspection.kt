@@ -74,19 +74,6 @@ object CrashFixesSksePluginInstalled : LoadOrderInspection() {
     override val configKey: IgnorableWarning = IgnorableWarning.CrashFixesSksePluginMissing
 }
 
-object BashedPatchUsed : LoadOrderInspection() {
-    override fun checkSetup(context: Companion.TestContext): Either<LoadOrderIssueDetectedException, Done> {
-        return if (context.loadOrder.any { it.print().contains("Bashed Patch", ignoreCase = true) }) {
-            Left(LoadOrderIssueDetectedException("load_order_checks.bashed_patch"))
-        } else {
-            Right(Done)
-        }
-    }
-
-    override val logMessage: String = "bashed patch found in load order"
-    override val configKey: IgnorableWarning = IgnorableWarning.BashedPatchUsed
-}
-
 object BugFixesSksePluginInstalled : LoadOrderInspection() {
     override fun checkSetup(context: Companion.TestContext): Either<LoadOrderIssueDetectedException, Done> {
         return if (context.sksePlugins.contains(Paths.get("BugFixPlugin.dll"))) {

@@ -6,13 +6,7 @@ import io.kotlintest.specs.WordSpec
 import skyproc.ModListing
 import skyrim.requiem.Done
 import skyrim.requiem.exceptions.LoadOrderIssueDetectedException
-import skyrim.requiem.setupchecks.BashedPatchUsed
-import skyrim.requiem.setupchecks.BugFixesSksePluginInstalled
-import skyrim.requiem.setupchecks.CobbFixesSksePluginInstalled
-import skyrim.requiem.setupchecks.CrashFixesSksePluginInstalled
-import skyrim.requiem.setupchecks.EquippingOverhaulPresent
-import skyrim.requiem.setupchecks.LoadOrderInspection
-import skyrim.requiem.setupchecks.RecommendedModLimitForNewcomers
+import skyrim.requiem.setupchecks.*
 import skyrim.requiem.tests.left
 import skyrim.requiem.tests.right
 import java.nio.file.Paths
@@ -76,20 +70,6 @@ class LoadOrderInspectionSpec : WordSpec() {
 
                 "report no issue if the SKSE plugin is found in the expected location" {
                     CrashFixesSksePluginInstalled.checkSetup(context).right() shouldBe Done
-                }
-            }
-
-            "checking if a Bashed Patch is contained in the load order" should {
-
-                "report an issue if a bashed patch is found" {
-                    val affectedLoadOrder = loadOrder + ModListing("Bashed Patch 1.esp")
-
-                    BashedPatchUsed.checkSetup(context.copy(loadOrder = affectedLoadOrder)).left() shouldBe
-                        instanceOf(LoadOrderIssueDetectedException::class)
-                }
-
-                "report no issue if no bashed patch is found" {
-                    BashedPatchUsed.checkSetup(context).right() shouldBe Done
                 }
             }
 

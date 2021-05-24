@@ -65,7 +65,6 @@ class SetupValidator(private val popups: PopupTools) {
                 EquippingOverhaulPresent,
                 RecommendedModLimitForNewcomers,
                 CrashFixesSksePluginInstalled,
-                BashedPatchUsed,
                 BugFixesSksePluginInstalled,
                 CobbFixesSksePluginInstalled
             )
