@@ -69,8 +69,8 @@ Bool Function validateSetup(Int versionPlugin, Int versionSkyProcPatch)
 		SkyProcOutdated.Show(subVersionsPlugin[0], subVersionsPlugin[1], \
                 subVersionsPlugin[2], subVersionsSkyProc[0], subVersionsSkyProc[1], \
                 subVersionsSkyProc[2])
-	ElseIf TestList.GetNumForms() == 1
-	; bashed patch with wrong tags for Requiem for the indifferent
+	ElseIf TestList.GetNumForms() > 0
+		; bashed patch used to merge leveled lists
 		BashedPatchFailed.Show()
     Else
         return true
