@@ -99,3 +99,17 @@ open class FormatCSharpTask : DefaultTask() {
         if (!runProcess(args, solutionFolder)) throw GradleException("C# project does not obey format and analyzer rules!")
     }
 }
+
+open class RestoreDotnetToolsTask : DefaultTask() {
+
+    @Internal
+    lateinit var solutionFolder: File
+    @InputFile
+    lateinit var manifestFile: File
+
+    @TaskAction
+    fun taskAction() {
+        val args = listOf("dotnet", "tool", "restore")
+        if (!runProcess(args, solutionFolder)) throw GradleException("Failed to restore dotnet tools from manifest!")
+    }
+}
