@@ -56,6 +56,8 @@ Bool Function validateSetup(Int versionPlugin, Int versionSkyProcPatch)
 	Int[] subVersionsPlugin = getSubversions(versionPlugin)
     Int[] subVersionsSkyProc = getSubversions(versionSkyProcPatch)
 
+	LeveledItem TestListNew = Game.GetFormFromFile(0x10E4F4, "Skyrim.esm") As LeveledItem
+
 	; SKSE installation check
 	If (version_script < 46)
 		SKSE_missing.Show()
@@ -69,7 +71,7 @@ Bool Function validateSetup(Int versionPlugin, Int versionSkyProcPatch)
 		SkyProcOutdated.Show(subVersionsPlugin[0], subVersionsPlugin[1], \
                 subVersionsPlugin[2], subVersionsSkyProc[0], subVersionsSkyProc[1], \
                 subVersionsSkyProc[2])
-	ElseIf TestList.GetNumForms() > 0
+	ElseIf TestListNew.GetNumForms() > 0
 		; bashed patch used to merge leveled lists
 		BashedPatchFailed.Show()
     Else
