@@ -7,8 +7,6 @@ import java.io.File
 
 open class CompileCSharpTask : DefaultTask() {
 
-    @OutputFile
-    lateinit var compilerLog: File
     @OutputDirectory
     lateinit var targetDirectory: File
     @InputDirectory
@@ -20,9 +18,11 @@ open class CompileCSharpTask : DefaultTask() {
     fun buildCSharpProject() {
         val compileTask = ProcessBuilder(listOf("dotnet", "publish", projectName, "-r", "win-x64", "-o", "$targetDirectory", "-c", "release"))
             .directory(solutionFolder)
-            .redirectOutput(ProcessBuilder.Redirect.to(compilerLog))
             .redirectErrorStream(true)
-        val compilationResult = compileTask.start().waitFor() == 0
+        val process = compileTask.start()
+        val compilationResult = process.waitFor() == 0
+        //TODO: might be causing issues if there's too much output, but works fine for now
+        process.inputStream.reader().use { it.forEachLine { line -> println(line) }}
         if (!compilationResult) throw GradleException("C# project failed to build!")
     }
 }
