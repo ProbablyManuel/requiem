@@ -38,6 +38,7 @@ This mod is published on NexusMods:
                     "S:\\MO-Skyrim\\mods\\base-scripts-Skyrim"
             )
             papyrusFailFast = false
+            csharpWarningsAsErrors = true
             reqtificatorBuildDir = file("S:\\MO-Skyrim\\mods\\SkyProcBuild")
         }
 
@@ -53,6 +54,11 @@ This mod is published on NexusMods:
     * `papyrusFailFast` - failure handling mode for the Papyrus compilation step
         * If set to true, the compilation fails upon encountering the first error.
         * If set to false, the compilation continues after the first error to accumulate all error messages.
+    * `csharpWarningsAsErrors` - handling of compile time warnings in the C# Reqtificator.
+        * If set to true, code analysis warnings will cause the Reqtificator build task to fail
+        * If set to false, code analysis warnings will be emitted on the console, but the build will still succeed.
+        This setting only applies to the `assemble` task, `checkFormat` will always fail if a code-analyser warning is
+        present.
     * `reqtificatorBuildDir` - external directory for the intermediate build files of the Reqtificator
         * This build directory must not be linked by Mod Organizer into your Skyrim installation.
         Some build intermediate files can have very long file names that can cause Skyrim to crash when starting.
@@ -70,4 +76,5 @@ up the Reqtificator in Mod Organizer.
 * `clean` - clean up all the build related files
 * `packRelease` - assembles a release-ready 7z archive based on the current repository content
 * `test` - run the Reqtificator's unit tests
-* `ktlintFormat` - enforce formatting for the Kotlin part of the Reqtificator's code base
+* `checkFormat` - verify formatting and code analyzer rules compliance of the C# Reqtificator code base
+* `format` - apply formatting rules and automated code-analyzer issue fixes for the C# Reqtificator code base

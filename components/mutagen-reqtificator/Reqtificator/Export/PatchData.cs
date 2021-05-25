@@ -4,9 +4,9 @@ using Noggog;
 
 namespace Reqtificator.Export
 {
-    public class PatchData
+    internal class PatchData
     {
-        public void SetPatchHeadersAndVersion(ISkyrimModGetter requiem, ISkyrimMod patch, RequiemVersion version)
+        public static void SetPatchHeadersAndVersion(ISkyrimModGetter requiem, ISkyrimMod patch, RequiemVersion version)
         {
             patch.ModHeader.Author = "The Requiem Dungeon Masters";
 

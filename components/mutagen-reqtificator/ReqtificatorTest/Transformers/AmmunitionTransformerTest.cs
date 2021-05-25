@@ -1,17 +1,20 @@
-﻿using System.Collections.Immutable;
+﻿using System;
+using System.Collections.Immutable;
 using FluentAssertions;
 using Moq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
-using Reqtificator;
+using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
 using Xunit;
 
+[assembly: CLSCompliant(false)]
+
 namespace ReqtificatorTest.Transformers
 {
-    public class AmmunitionTransformerTest
+    public static class AmmunitionTransformerTest
     {
-        public class ShouldProcess 
+        public class ShouldProcess
         {
             [Fact]
             public void Should_Select_Eligible_Records()
@@ -19,8 +22,8 @@ namespace ReqtificatorTest.Transformers
                 var transformer = new AmmunitionTransformer();
                 var arrow = new Mock<IAmmunitionGetter>(MockBehavior.Strict);
                 var keywords = ImmutableList<IFormLinkGetter<IKeywordGetter>>.Empty;
-                var bla = StaticReferences.Keywords.NoWeaponReachRescaling.AsLink<Keyword>();
-                keywords = keywords.Add(bla);
+                var unrelatedKeyword = Keywords.NoWeaponReachRescaling.AsLink<Keyword>();
+                keywords = keywords.Add(unrelatedKeyword);
                 arrow.Setup(mock => mock.Keywords).Returns(keywords);
                 arrow.Setup(mock => mock.Damage).Returns(42.0f);
 
@@ -45,7 +48,7 @@ namespace ReqtificatorTest.Transformers
                 var transformer = new AmmunitionTransformer();
                 var arrow = new Mock<IAmmunitionGetter>(MockBehavior.Strict);
                 var keywords = ImmutableList<IFormLinkGetter<IKeywordGetter>>.Empty;
-                keywords = keywords.Add(StaticReferences.Keywords.AlreadyReqtified.AsLink<Keyword>());
+                keywords = keywords.Add(Keywords.AlreadyReqtified.AsLink<Keyword>());
                 arrow.Setup(mock => mock.Keywords).Returns(keywords);
                 arrow.Setup(mock => mock.Damage).Returns(42.0f);
 
@@ -58,7 +61,7 @@ namespace ReqtificatorTest.Transformers
                 var transformer = new AmmunitionTransformer();
                 var arrow = new Mock<IAmmunitionGetter>(MockBehavior.Strict);
                 var keywords = ImmutableList<IFormLinkGetter<IKeywordGetter>>.Empty;
-                keywords = keywords.Add(StaticReferences.Keywords.NoDamageRescaling.AsLink<Keyword>());
+                keywords = keywords.Add(Keywords.NoDamageRescaling.AsLink<Keyword>());
                 arrow.Setup(mock => mock.Keywords).Returns(keywords);
                 arrow.Setup(mock => mock.Damage).Returns(42.0f);
 
@@ -71,7 +74,7 @@ namespace ReqtificatorTest.Transformers
                 var transformer = new AmmunitionTransformer();
                 var arrow = new Mock<IAmmunitionGetter>(MockBehavior.Strict);
                 var keywords = ImmutableList<IFormLinkGetter<IKeywordGetter>>.Empty;
-                keywords = keywords.Add(StaticReferences.Keywords.NoWeaponReachRescaling.AsLink<Keyword>());
+                keywords = keywords.Add(Keywords.NoWeaponReachRescaling.AsLink<Keyword>());
                 arrow.Setup(mock => mock.Keywords).Returns(keywords);
                 arrow.Setup(mock => mock.Damage).Returns(0f);
 

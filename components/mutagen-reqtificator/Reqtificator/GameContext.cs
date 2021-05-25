@@ -5,7 +5,7 @@ using Mutagen.Bethesda;
 
 namespace Reqtificator
 {
-    public record GameContext (ImmutableList<LoadOrderListing> ActiveMods, string DataFolder)
+    public record GameContext(ImmutableList<LoadOrderListing> ActiveMods, string DataFolder)
     {
         public static GameContext GetRequiemContext(GameRelease release, ModKey patchToBeGenerated)
         {
