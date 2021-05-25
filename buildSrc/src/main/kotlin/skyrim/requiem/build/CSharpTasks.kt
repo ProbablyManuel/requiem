@@ -15,17 +15,23 @@ private fun runProcess(args: List<String>, workDir: File): Boolean {
 
 }
 
+private val formatterArgs = listOf("-w", "-a", "warn")
+
 //TODO: refine input parameters to avoid unnecessary re-executions after temp build subfolders are created
 open class CompileCSharpTask : DefaultTask() {
 
     @InputDirectory
     lateinit var solutionFolder: File
+
     @Input
     lateinit var projectName: String
 
+    @Input
+    var warningsAsErrors: Boolean = true
+
     @TaskAction
     fun taskAction() {
-        val args = listOf("dotnet", "build", projectName)
+        val args = listOf("dotnet", "build", projectName) + if (warningsAsErrors) listOf("-warnaserror") else listOf()
         if (!runProcess(args, solutionFolder)) throw GradleException("C# project '$projectName' failed to compile!")
     }
 }
@@ -34,14 +40,20 @@ open class PublishCSharpTask : DefaultTask() {
 
     @OutputDirectory
     lateinit var targetDirectory: File
+
     @InputDirectory
     lateinit var solutionFolder: File
+
     @Input
     lateinit var projectName: String
 
+    @Input
+    var warningsAsErrors: Boolean = true
+
     @TaskAction
     fun taskAction() {
-        val args = listOf("dotnet", "publish", projectName, "-r", "win-x64", "-o", "$targetDirectory", "-c", "release")
+        val args = (listOf("dotnet", "publish", projectName, "-r", "win-x64", "-o", "$targetDirectory", "-c", "release")
+            + if (warningsAsErrors) listOf("-warnaserror") else listOf())
         if (!runProcess(args, solutionFolder)) throw GradleException("C# project '$projectName' failed to publish!")
     }
 }
@@ -57,5 +69,47 @@ open class TestCSharpTask : DefaultTask() {
     fun taskAction() {
         val args = listOf("dotnet", "test", "--verbosity", loglevel, "--no-build")
         if (!runProcess(args, solutionFolder)) throw GradleException("Unit tests for C# project were not successful!")
+    }
+}
+
+open class CheckFormatCSharpTask : DefaultTask() {
+
+    @Input
+    var loglevel: String = "normal"
+    @InputDirectory
+    lateinit var solutionFolder: File
+
+    @TaskAction
+    fun taskAction() {
+        val args = listOf("dotnet", "dotnet-format", "--verbosity", loglevel, "--check") + formatterArgs
+        if (!runProcess(args, solutionFolder)) throw GradleException("C# project does not obey format and analyzer rules!")
+    }
+}
+
+open class FormatCSharpTask : DefaultTask() {
+
+    @Input
+    var loglevel: String = "normal"
+    @InputDirectory
+    lateinit var solutionFolder: File
+
+    @TaskAction
+    fun taskAction() {
+        val args = listOf("dotnet", "dotnet-format", "--verbosity", loglevel) + formatterArgs
+        if (!runProcess(args, solutionFolder)) throw GradleException("C# project does not obey format and analyzer rules!")
+    }
+}
+
+open class RestoreDotnetToolsTask : DefaultTask() {
+
+    @Internal
+    lateinit var solutionFolder: File
+    @InputFile
+    lateinit var manifestFile: File
+
+    @TaskAction
+    fun taskAction() {
+        val args = listOf("dotnet", "tool", "restore")
+        if (!runProcess(args, solutionFolder)) throw GradleException("Failed to restore dotnet tools from manifest!")
     }
 }

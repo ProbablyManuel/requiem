@@ -47,10 +47,10 @@ namespace Reqtificator.Configuration
         {
             string FmtArray(string acc, string elem) => acc.Length > 0 ? $"{acc}, \"{elem}\"" : $"\"{elem}\"";
             var configToWrite = $@"{{
-    ""verboseLogging"": {VerboseLogging.ToString().ToLower()},
-    ""mergeLeveledLists"": {MergeLeveledLists.ToString().ToLower()},
-    ""mergeLeveledCharacters"": {MergeLeveledCharacters.ToString().ToLower()},
-    ""openEncounterZones"": {OpenEncounterZones.ToString().ToLower()},
+    ""verboseLogging"": {VerboseLogging.ToString().ToLowerInvariant()},
+    ""mergeLeveledLists"": {MergeLeveledLists.ToString().ToLowerInvariant()},
+    ""mergeLeveledCharacters"": {MergeLeveledCharacters.ToString().ToLowerInvariant()},
+    ""openEncounterZones"": {OpenEncounterZones.ToString().ToLowerInvariant()},
     ""npcVisualTemplateMods"": [{NpcVisualTemplateMods.Select(it => it.FileName).Aggregate("", FmtArray)}],
     ""raceVisualTemplateMods"": [{RaceVisualTemplateMods.Select(it => it.FileName).Aggregate("", FmtArray)}]
 }}";
