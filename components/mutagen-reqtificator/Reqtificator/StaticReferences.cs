@@ -1,5 +1,6 @@
 ﻿using Mutagen.Bethesda;
 
+
 namespace Reqtificator.StaticReferences
 {
     public static class Keywords
