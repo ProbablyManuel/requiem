@@ -1,9 +1,9 @@
-﻿using System.IO;
-using System.Linq;
-using Mutagen.Bethesda;
+﻿using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Export;
 using Reqtificator.Transformers;
+using System.IO;
+using System.Linq;
 
 namespace Reqtificator
 {
