@@ -62,15 +62,7 @@ namespace Reqtificator
         private static void Patch(GameContext context, UserSettings userConfig)
         {
 
-            // TODO: this is just demonstration, the changes should be done in the UI and persisted into the same file
-            Log.Information("loaded user configuration {@config}", userConfig);
-            var updatedUserConfig = userConfig with
-            {
-                VerboseLogging = !userConfig.VerboseLogging,
-                NpcVisualTemplateMods = userConfig.RaceVisualTemplateMods,
-                RaceVisualTemplateMods = userConfig.NpcVisualTemplateMods
-            };
-            updatedUserConfig.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettingsUpdated.json"));
+            userConfig.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json"));
 
             var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, Release);
 
