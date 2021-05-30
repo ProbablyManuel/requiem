@@ -18,12 +18,12 @@ Message Property SkyProcMissing Auto
 Message Property SkyProcOutdated Auto
 {message if Requiem for the Indifferent is based on an older Requiem version than installed}
 Message Property BashedPatchFailed Auto
-{message if (most likely) a bashed patch has broken the SkyProc-processed levelled lists}
+{message if (most likely) a bashed patch is used to merge leveled lists}
 Message Property MehPluginsNotLoaded Auto
 {message if "Bug Fixes" or "Crash Fixes" from Meh123 are missing}
 
-LeveledItem Property TestList Auto
-{a skyproc-processed list, if a bashed patch has the wrong tags, it will have only 1 entry}
+LeveledItem Property BashedPatch_TestList Auto
+{if a bashed patch is used to merge leveled lists, this list will have non-zero entries}
 GlobalVariable Property NonCriticalWarnOverride Auto
 {toggle to suppress warnings for missing recommended third party SKSE plugins}
 
@@ -56,21 +56,17 @@ Bool Function validateSetup(Int versionPlugin, Int versionSkyProcPatch)
 	Int[] subVersionsPlugin = getSubversions(versionPlugin)
     Int[] subVersionsSkyProc = getSubversions(versionSkyProcPatch)
 
-	; SKSE installation check
 	If (version_script < 46)
 		SKSE_missing.Show()
 	ElseIf (version_skse != version_script || version_script == 0)
 		SKSE_broken.Show(version_skse as Float, version_script as Float)
 	ElseIf Game.GetModByName("Requiem for the Indifferent.esp") == 255
-	    ; SkyProc patch missing
 		SkyProcMissing.Show()
 	ElseIf versionPlugin != versionSkyProcPatch
-	    ; SkyProc patch outdated
 		SkyProcOutdated.Show(subVersionsPlugin[0], subVersionsPlugin[1], \
                 subVersionsPlugin[2], subVersionsSkyProc[0], subVersionsSkyProc[1], \
                 subVersionsSkyProc[2])
-	ElseIf TestList.GetNumForms() > 0
-		; bashed patch used to merge leveled lists
+	ElseIf BashedPatch_TestList.GetNumForms() > 0
 		BashedPatchFailed.Show()
     Else
         return true
