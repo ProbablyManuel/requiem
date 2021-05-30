@@ -69,7 +69,7 @@ namespace Reqtificator
             var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, Release);
 
             Log.Information("start patching");
-            var generatedPatch = MainLogic.GeneratePatch(loadOrder, PatchModKey);
+            var generatedPatch = MainLogic.GeneratePatch(loadOrder, userConfig, PatchModKey);
             Log.Information("done patching, now exporting to disk");
             MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
             Log.Information("done exporting");
