@@ -9,12 +9,13 @@ using Serilog;
 namespace Reqtificator.Transformers.EncounterZones
 {
     internal record OpenCombatBoundaries
-        (IReadOnlySet<IFormLink<EncounterZone>> AlwaysClosedZones, bool OpenCombatZones) : Transformer<EncounterZone,
+        (IReadOnlySet<IFormLink<IEncounterZoneGetter>> AlwaysClosedZones, bool OpenCombatZones) : Transformer<
+            EncounterZone,
             IEncounterZone, IEncounterZoneGetter>
     {
         public override bool ShouldProcess(IEncounterZoneGetter record)
         {
-            return OpenCombatZones && !AlwaysClosedZones.Contains(record.AsLink<EncounterZone>());
+            return OpenCombatZones && !AlwaysClosedZones.Contains(new FormLink<IEncounterZoneGetter>(record));
         }
 
         public override void Process(IEncounterZone record)
@@ -28,14 +29,14 @@ namespace Reqtificator.Transformers.EncounterZones
             UserSettings userConfig)
         {
             var linkCache = loadOrder.ToImmutableLinkCache();
-            var exclusions = ImmutableHashSet<IFormLink<EncounterZone>>.Empty;
+            var exclusions = ImmutableHashSet<IFormLink<IEncounterZoneGetter>>.Empty;
             foreach (var recordVersion in FormLists.ClosedEncounterZones.ResolveAll(linkCache))
             {
                 foreach (var entry in recordVersion.Items)
                 {
-                    if (entry.TryResolve<EncounterZone>(linkCache, out var foo))
+                    if (entry.TryResolve<IEncounterZoneGetter>(linkCache, out var zone))
                     {
-                        exclusions = exclusions.Add(foo.AsLink());
+                        exclusions = exclusions.Add(zone.AsLink());
                     }
                     else
                     {

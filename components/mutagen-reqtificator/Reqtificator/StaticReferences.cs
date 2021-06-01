@@ -18,6 +18,6 @@ namespace Reqtificator.StaticReferences
 
     public static class FormLists
     {
-        public static readonly FormLink<FormList> ClosedEncounterZones = new(FormKey.Factory("A46546:Requiem.esp"));
+        public static readonly FormLink<IFormListGetter> ClosedEncounterZones = new(FormKey.Factory("A46546:Requiem.esp"));
     }
 }
