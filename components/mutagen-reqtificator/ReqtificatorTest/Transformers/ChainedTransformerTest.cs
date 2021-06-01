@@ -42,7 +42,9 @@ namespace ReqtificatorTest.Transformers
                 chainedTansformer.ShouldProcess(toPatch.Object).Should().BeTrue();
 
                 toPatch.Setup(m => m.EditorID).Returns("bar_record");
+
                 chainedTansformer.ShouldProcess(toPatch.Object).Should().BeTrue();
+                toPatch.VerifyAll();
             }
 
             [Fact]
@@ -55,7 +57,9 @@ namespace ReqtificatorTest.Transformers
 
                 var toPatch = new Mock<IMajorRecordGetter>(MockBehavior.Strict);
                 toPatch.Setup(m => m.EditorID).Returns("epic_record");
+
                 chainedTansformer.ShouldProcess(toPatch.Object).Should().BeFalse();
+                toPatch.VerifyAll();
             }
         }
 
@@ -74,7 +78,9 @@ namespace ReqtificatorTest.Transformers
                 toPatchGetter.SetupGet(m => m.EditorID).Returns("foo_record");
                 toPatch.SetupGet(m => m.EditorID).Returns("foo_record");
                 toPatch.SetupSet(m => m.EditorID = "bar_foo_record");
+
                 chainedTansformer.Process(toPatch.Object);
+                toPatch.VerifyAll();
             }
 
             [Fact]
@@ -90,7 +96,9 @@ namespace ReqtificatorTest.Transformers
                 toPatchGetter.SetupGet(m => m.EditorID).Returns("bar_record");
                 toPatch.SetupGet(m => m.EditorID).Returns("bar_record");
                 toPatch.SetupSet(m => m.EditorID = "bar_bar_record");
+
                 chainedTansformer.Process(toPatch.Object);
+                toPatch.VerifyAll();
             }
 
 
@@ -108,7 +116,9 @@ namespace ReqtificatorTest.Transformers
                 toPatch.SetupSequence(m => m.EditorID).Returns("foo_record").Returns("bar_foo_record");
                 toPatch.SetupSet(m => m.EditorID = "bar_foo_record");
                 toPatch.SetupSet(m => m.EditorID = "bar_bar_foo_record");
+
                 chainedTansformer.Process(toPatch.Object);
+                toPatch.VerifyAll();
             }
         }
     }
