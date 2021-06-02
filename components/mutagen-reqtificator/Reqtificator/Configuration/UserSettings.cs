@@ -1,8 +1,8 @@
-﻿using System.Collections.Immutable;
+﻿using Hocon;
+using Mutagen.Bethesda;
+using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
-using Hocon;
-using Mutagen.Bethesda;
 
 namespace Reqtificator.Configuration
 {

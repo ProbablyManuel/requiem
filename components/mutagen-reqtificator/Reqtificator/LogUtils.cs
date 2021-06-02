@@ -1,10 +1,10 @@
-﻿using System;
-using System.IO;
-using Mutagen.Bethesda;
+﻿using Mutagen.Bethesda;
 using Serilog;
 using Serilog.Context;
 using Serilog.Core;
 using Serilog.Events;
+using System;
+using System.IO;
 
 namespace Reqtificator
 {

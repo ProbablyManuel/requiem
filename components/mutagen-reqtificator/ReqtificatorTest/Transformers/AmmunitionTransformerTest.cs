@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Immutable;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Moq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
+using System;
+using System.Collections.Immutable;
 using Xunit;
 
 [assembly: CLSCompliant(false)]
