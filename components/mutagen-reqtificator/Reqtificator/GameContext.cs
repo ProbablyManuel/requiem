@@ -1,7 +1,7 @@
-﻿using System.Collections.Immutable;
+﻿using Mutagen.Bethesda;
+using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
-using Mutagen.Bethesda;
 
 namespace Reqtificator
 {

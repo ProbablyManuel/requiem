@@ -6,14 +6,17 @@
         <TargetPlatformIdentifier>windows</TargetPlatformIdentifier>
         <Nullable>enable</Nullable>
         <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+        <UseWPF>true</UseWPF>
+        <StartupObject>Reqtificator.App</StartupObject>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Hocon.Configuration" Version="2.0.3" />
-      <PackageReference Include="Mutagen.Bethesda" Version="0.29.2" />
-      <PackageReference Include="Serilog" Version="2.10.0" />
-      <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
-      <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+        <PackageReference Include="Hocon.Configuration" Version="2.0.3"/>
+        <PackageReference Include="Mutagen.Bethesda" Version="0.29.2"/>
+        <PackageReference Include="Serilog" Version="2.10.0"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1"/>
+        <PackageReference Include="Serilog.Sinks.File" Version="4.1.0"/>
     </ItemGroup>
 
     <ItemGroup>
