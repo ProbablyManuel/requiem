@@ -51,6 +51,13 @@ This mod is published on NexusMods:
         * The scripts are taken from the first folder that contains the given file.
         The order is therefore important to select updated versions from the DLCs or the unofficial patches over
         the Vanilla scripts.
+        * Script folders should point to the .psc script source files. They are:
+            1. USSEP base-scripts, from the `scripts\source` directory in the download
+            (Oldrim version requires USLEEP; use the `scripts\source` directory from the unpacked BSA)
+            2. SKY-UI base scripts, from the `Scripts\Source` directory in the download
+            3. SKSE scripts, from the `Data\scripts\source` directory in the download
+            4. Skyrim DLC base scripts for each of Dragonborn, Hearthfire and Dawnguard, from the respective directories, and
+            5. Skyrim base scripts, all from the `Scripts\Source` directory inside `Data\scripts.zip` which comes with Skyrim.
     * `papyrusFailFast` - failure handling mode for the Papyrus compilation step
         * If set to true, the compilation fails upon encountering the first error.
         * If set to false, the compilation continues after the first error to accumulate all error messages.
