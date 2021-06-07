@@ -11,6 +11,8 @@ using System.Runtime.CompilerServices;
 
 [assembly: CLSCompliant(false)]
 [assembly: InternalsVisibleTo("ReqtificatorTest")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")] //for mocking internal entities
+
 
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
 namespace System.Runtime.CompilerServices
