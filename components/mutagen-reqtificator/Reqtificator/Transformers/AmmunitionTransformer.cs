@@ -4,7 +4,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers
 {
-    internal class AmmunitionTransformer : Transformer<Ammunition, IAmmunition, IAmmunitionGetter>
+    internal record AmmunitionTransformer : Transformer<Ammunition, IAmmunition, IAmmunitionGetter>
     {
         public override bool ShouldProcess(IAmmunitionGetter record)
         {
