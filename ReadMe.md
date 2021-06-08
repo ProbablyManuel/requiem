@@ -17,6 +17,7 @@ This mod is published on NexusMods:
 * .NET 5.0 SDK ([download here](https://dotnet.microsoft.com/download))
 * Skyrim Special Edition
 * Creation Kit (you're not required to use it for modding, but you need its Papyrus Script Compiler)
+* [SSE CreationKit Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/20061) (you're not required to use it for modding, but without it you cannot save a plugin that has a regular plugin as master file)
 * Mod Organizer 2.x
 
 ## Setup
