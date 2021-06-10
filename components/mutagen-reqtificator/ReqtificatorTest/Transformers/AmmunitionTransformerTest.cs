@@ -28,6 +28,7 @@ namespace ReqtificatorTest.Transformers
                 arrow.Setup(mock => mock.Damage).Returns(42.0f);
 
                 transformer.ShouldProcess(arrow.Object).Should().BeTrue();
+                arrow.VerifyAll();
             }
 
             [Fact]
@@ -40,6 +41,7 @@ namespace ReqtificatorTest.Transformers
                 arrow.Setup(mock => mock.Damage).Returns(42.0f);
 
                 transformer.ShouldProcess(arrow.Object).Should().BeTrue();
+                arrow.VerifyAll();
             }
 
             [Fact]
@@ -50,9 +52,9 @@ namespace ReqtificatorTest.Transformers
                 var keywords = ImmutableList<IFormLinkGetter<IKeywordGetter>>.Empty;
                 keywords = keywords.Add(Keywords.AlreadyReqtified.AsLink<Keyword>());
                 arrow.Setup(mock => mock.Keywords).Returns(keywords);
-                arrow.Setup(mock => mock.Damage).Returns(42.0f);
 
                 transformer.ShouldProcess(arrow.Object).Should().BeFalse();
+                arrow.VerifyAll();
             }
 
             [Fact]
@@ -63,9 +65,9 @@ namespace ReqtificatorTest.Transformers
                 var keywords = ImmutableList<IFormLinkGetter<IKeywordGetter>>.Empty;
                 keywords = keywords.Add(Keywords.NoDamageRescaling.AsLink<Keyword>());
                 arrow.Setup(mock => mock.Keywords).Returns(keywords);
-                arrow.Setup(mock => mock.Damage).Returns(42.0f);
 
                 transformer.ShouldProcess(arrow.Object).Should().BeFalse();
+                arrow.VerifyAll();
             }
 
             [Fact]
@@ -79,6 +81,7 @@ namespace ReqtificatorTest.Transformers
                 arrow.Setup(mock => mock.Damage).Returns(0f);
 
                 transformer.ShouldProcess(arrow.Object).Should().BeFalse();
+                arrow.VerifyAll();
             }
         }
 
@@ -91,7 +94,9 @@ namespace ReqtificatorTest.Transformers
                 var arrow = new Mock<IAmmunition>(MockBehavior.Strict);
                 arrow.Setup(mock => mock.Damage).Returns(25.0f);
                 arrow.SetupSet(mock => mock.Damage = 100.0f);
+
                 transformer.Process(arrow.Object);
+                arrow.VerifyAll();
             }
         }
     }
