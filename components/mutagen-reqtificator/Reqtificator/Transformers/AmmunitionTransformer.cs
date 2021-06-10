@@ -1,5 +1,6 @@
 ﻿using Mutagen.Bethesda;
 using Mutagen.Bethesda.Skyrim;
+using Reqtificator.StaticReferences;
 using Serilog;
 
 namespace Reqtificator.Transformers
@@ -8,8 +9,8 @@ namespace Reqtificator.Transformers
     {
         public override bool ShouldProcess(IAmmunitionGetter record)
         {
-            var keywordCheck = (!record.Keywords?.Contains(StaticReferences.Keywords.AlreadyReqtified) ?? true) &&
-                               (!record.Keywords?.Contains(StaticReferences.Keywords.NoDamageRescaling) ?? true);
+            var keywordCheck = (!record.Keywords?.Contains(Keywords.AlreadyReqtified) ?? true) &&
+                               (!record.Keywords?.Contains(Keywords.NoDamageRescaling) ?? true);
             return keywordCheck && record.Damage > 0.0f;
         }
 

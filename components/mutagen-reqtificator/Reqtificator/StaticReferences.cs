@@ -1,4 +1,5 @@
 ﻿using Mutagen.Bethesda;
+using Mutagen.Bethesda.Skyrim;
 
 
 namespace Reqtificator.StaticReferences
@@ -13,5 +14,10 @@ namespace Reqtificator.StaticReferences
     public static class GlobalVariables
     {
         public static readonly FormKey VersionStamp = FormKey.Factory("973D69:Requiem.esp");
+    }
+
+    public static class FormLists
+    {
+        public static readonly FormLink<IFormListGetter> ClosedEncounterZones = new(FormKey.Factory("A46546:Requiem.esp"));
     }
 }
