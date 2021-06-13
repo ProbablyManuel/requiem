@@ -450,24 +450,6 @@ State REQ_Combat_NoHorseTrample
 
 EndState
 
-State REQ_Compatibility_NonCriticalWarnOverride
-
-    Event OnSelectST()
-        data.REQ_Compatibility_NonCriticalWarnOverride.SetValueInt((!(data.REQ_Compatibility_NonCriticalWarnOverride.GetValueInt() as Bool)) as Int )
-        SetToggleOptionValueST(data.REQ_Compatibility_NonCriticalWarnOverride.GetValueInt() as Bool)
-    EndEvent
-
-    Event OnDefaultST()
-        data.REQ_Compatibility_NonCriticalWarnOverride.SetValueInt( 0.0 as Int)
-        SetToggleOptionValueST(data.REQ_Compatibility_NonCriticalWarnOverride.GetValueInt() as Bool)
-    EndEvent
-
-    Event OnHighlightST()
-        SetInfoText("$REQ_REQ_Compatibility_NonCriticalWarnOverride_highlight")
-    EndEvent
-
-EndState
-
 State REQ_Atmosphere_NoPoisonISM
 
     Event OnSelectST()
@@ -682,7 +664,6 @@ Event OnPageReset(String page)
         AddToggleOptionST("REQ_Debug_ArmorTraining","$REQ_REQ_Debug_ArmorTraining",data.REQ_Debug_ArmorTraining.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Compatibility_AttackSpeed","$REQ_REQ_Compatibility_AttackSpeed",data.REQ_Compatibility_AttackSpeed.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Debug_OnHit","$REQ_REQ_Debug_OnHit",data.REQ_Debug_OnHit.GetValueInt() as Bool)
-        AddToggleOptionST("REQ_Compatibility_NonCriticalWarnOverride","$REQ_REQ_Compatibility_NonCriticalWarnOverride",data.REQ_Compatibility_NonCriticalWarnOverride.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Debug_ExhaustionReset","$REQ_REQ_Debug_ExhaustionReset",data.REQ_Debug_ExhaustionReset.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Debug_MassEffectReset","$REQ_REQ_Debug_MassEffectReset",data.REQ_Debug_MassEffectReset.GetValueInt() as Bool)
     EndIf

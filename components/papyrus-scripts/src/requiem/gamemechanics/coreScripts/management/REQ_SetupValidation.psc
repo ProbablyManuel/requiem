@@ -19,13 +19,9 @@ Message Property SkyProcOutdated Auto
 {message if Requiem for the Indifferent is based on an older Requiem version than installed}
 Message Property BashedPatchFailed Auto
 {message if (most likely) a bashed patch is used to merge leveled lists}
-Message Property MehPluginsNotLoaded Auto
-{message if "Bug Fixes" or "Crash Fixes" from Meh123 are missing}
 
 LeveledItem Property BashedPatch_TestList Auto
 {if a bashed patch is used to merge leveled lists, this list will have non-zero entries}
-GlobalVariable Property NonCriticalWarnOverride Auto
-{toggle to suppress warnings for missing recommended third party SKSE plugins}
 
 ; basic version compatibility checks for Requiem
 Bool Function checkVersionCompatibility(Int versionPlugin, Int versionSaveGame)
@@ -72,17 +68,6 @@ Bool Function validateSetup(Int versionPlugin, Int versionSkyProcPatch)
         return true
 	EndIf
 	return false
-EndFunction
-
-Bool Function CheckSKSEplugins()
-	If (SKSE.GetPluginVersion("CrashFixPlugin") == -1 || SKSE.GetPluginVersion("BugFixPlugin") == -1 || SKSE.GetPluginVersion("CobbBugFixes") == -1)
-		If NonCriticalWarnOverride.GetValueInt() != 1
-			MehPluginsNotLoaded.Show()
-		EndIf
-		Return False
-	Else
-		Return True
-	EndIf
 EndFunction
 
 Int[] Function getSubversions(Int version)
