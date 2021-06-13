@@ -34,9 +34,7 @@ Function triggerUpdateIfNeeded()
 EndFunction
 
 Function checkSetup()
-    If (validator.validateSetup(VersionPlugin.getValueInt(), VersionSkyProcPatch.getValueInt()))
-        validator.checkSKSEplugins()
-    Else
+    If (!validator.validateSetup(VersionPlugin.getValueInt(), VersionSkyProcPatch.getValueInt()))
         Utility.Wait(1)
         Game.QuitToMainMenu()
     EndIf
@@ -44,10 +42,8 @@ EndFunction
 
 Function upgradeVersion()
     startUpdate()
-    If (validator.checkVersionCompatibility(VersionPlugin.getValueInt(), VersionSavegame.getValueInt()) \
-            && validator.validateSetup(VersionPlugin.getValueInt(), VersionSkyProcPatch.getValueInt()))
-        validator.checkSKSEplugins()
-    Else
+    If (!validator.checkVersionCompatibility(VersionPlugin.getValueInt(), VersionSavegame.getValueInt()) \
+            || !validator.validateSetup(VersionPlugin.getValueInt(), VersionSkyProcPatch.getValueInt()))
         Utility.Wait(1)
         Game.QuitToMainMenu()
     EndIf

@@ -22,7 +22,6 @@ GlobalVariable Property REQ_Atmosphere_AllowFastTravel Auto
 GlobalVariable Property REQ_Combat_NoFearAndYield Auto
 GlobalVariable Property REQ_Debug_OnHit Auto
 GlobalVariable Property REQ_Combat_NoHorseTrample Auto
-GlobalVariable Property REQ_Compatibility_NonCriticalWarnOverride Auto
 GlobalVariable Property REQ_Atmosphere_NoPoisonISM Auto
 GlobalVariable Property REQ_Skills_HideClutterRecipes Auto
 GlobalVariable Property REQ_Atmosphere_SlowerHorses Auto
