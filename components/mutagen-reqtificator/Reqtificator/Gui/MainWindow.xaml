@@ -66,5 +66,6 @@
             </ListView.View>
         </ListView>
         <Button Command="{Binding PatchCommand}" Width="80" HorizontalAlignment="Left">Patch</Button>
+        <Label Content="{Binding ProgramStatus}"/>
     </StackPanel>
 </Window>

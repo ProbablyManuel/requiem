@@ -22,14 +22,20 @@ namespace System.Runtime.CompilerServices
 
 namespace Reqtificator
 {
-    internal static class Program
+    internal class Program
     {
         private const GameRelease Release = GameRelease.SkyrimSE;
         private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Mutated.esp");
         private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
-        private static readonly InternalEvents Events = InternalEvents.Instance;
 
-        public static int SetUpPatcher()
+        private readonly InternalEvents _events;
+
+        public Program(InternalEvents eventsQueue)
+        {
+            _events = eventsQueue;
+        }
+
+        public int SetUpPatcher()
         {
 
             Console.WriteLine("starting the Reqtificator with console logging enabled");
@@ -48,11 +54,9 @@ namespace Reqtificator
                 return 1;
             }
 
-            // @Ludo hook your logic here, you have the active mods in the context record but no data loaded yet
-
-            Events.PatchRequested += (s, usea) => { Patch(context, usea.UserSettings); };
-            Events.NotifyUserOptionsChanged(new OptionsEventArgs(userConfig.VerboseLogging, userConfig.MergeLeveledCharacters, userConfig.MergeLeveledLists, userConfig.OpenEncounterZones));
-            Events.NotifyLoadOrderSettingsChanged(new LoadOrderSettingsEventArgs(ToModKeys(context.ActiveMods), userConfig.NpcVisualTemplateMods.ToList(), userConfig.RaceVisualTemplateMods.ToList()));
+            _events.PatchRequested += (s, usea) => { Patch(context, usea); };
+            _events.NotifyUserOptionsChanged(new OptionsEventArgs(userConfig.VerboseLogging, userConfig.MergeLeveledCharacters, userConfig.MergeLeveledLists, userConfig.OpenEncounterZones));
+            _events.NotifyLoadOrderSettingsChanged(new LoadOrderSettingsEventArgs(ToModKeys(context.ActiveMods), userConfig.NpcVisualTemplateMods.ToList(), userConfig.RaceVisualTemplateMods.ToList()));
             return 0;
         }
 
@@ -61,7 +65,7 @@ namespace Reqtificator
             return mods.Select(m => m.ModKey).ToList();
         }
 
-        private static void Patch(GameContext context, UserSettings userConfig)
+        private void Patch(GameContext context, UserSettings userConfig)
         {
 
             userConfig.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json"));
@@ -74,6 +78,7 @@ namespace Reqtificator
             MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
             Log.Information("done exporting");
 
+            _events.PublishPatchCompleted();
             Log.CloseAndFlush();
             Console.WriteLine("Done! Press enter to finish your self-compiled Mutagen patcher.");
             Console.ReadLine();

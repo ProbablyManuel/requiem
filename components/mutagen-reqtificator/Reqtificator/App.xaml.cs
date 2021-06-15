@@ -17,12 +17,15 @@ namespace Reqtificator
 
             Log.Information("Starting Gui");
 
-            MainWindowViewModel mainWindowViewModel = new();
+            var eventQueue = new InternalEvents();
+            var backend = new Program(eventQueue);
+
+            MainWindowViewModel mainWindowViewModel = new(eventQueue);
             MainWindow window = new() { DataContext = mainWindowViewModel };
             window.Show();
 
             Log.Information("Gui Started");
-            Program.SetUpPatcher();
+            backend.SetUpPatcher();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Reqtificator.Gui
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
-        private static readonly InternalEvents _events = InternalEvents.Instance;
+        private readonly InternalEvents _events;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -25,15 +25,21 @@ namespace Reqtificator.Gui
         public bool OpenEncounterZones { get; set; }
         public ICommand PatchCommand => new DelegateCommand(RequestPatch);
 
+        public string ProgramStatus { get; private set; } = "ready";
+
         private void RequestPatch()
         {
+            ProgramStatus = "patching";
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
             UserSettings updatedUserSettings = new(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
                 Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods.Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
-            _events.RequestPatch(new UserSettingsEventArgs(updatedUserSettings));
+            _events.RequestPatch(updatedUserSettings);
         }
 
-        public MainWindowViewModel()
+        public MainWindowViewModel(InternalEvents eventsQueue)
         {
+            _events = eventsQueue;
+
             Log.Information("Window created; listening to events");
             _events.LoadOrderSettingsChanged += (s, los) =>
             {
@@ -47,6 +53,12 @@ namespace Reqtificator.Gui
                 MergeLeveledCharacters = us.MergeLeveledCharacters;
                 OpenEncounterZones = us.OpenEncounterZones;
                 NotifyUserSettingsChanged();
+            };
+
+            _events.PatchCompleted += (_, _1) =>
+            {
+                ProgramStatus = "done";
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
             };
         }
 
