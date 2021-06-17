@@ -1,62 +1,29 @@
-﻿using Mutagen.Bethesda;
+﻿using System;
 using Reqtificator.Configuration;
-using System;
-using System.Collections.Generic;
-
 
 namespace Reqtificator
 {
-    public class InternalEvents
+    internal class InternalEvents
     {
-        public static readonly InternalEvents Instance = new();
-        private InternalEvents() { }
+        public event EventHandler<UserSettings> PatchRequested = delegate { };
+        public event EventHandler<PatchCompleted> PatchCompleted = delegate { };
+        public event EventHandler<Exception> ExceptionOccured = delegate { };
 
-        public event EventHandler<LoadOrderSettingsEventArgs> LoadOrderSettingsChanged = delegate { };
-        public event EventHandler<OptionsEventArgs> UserOptionsChanged = delegate { };
-        public event EventHandler<UserSettingsEventArgs> PatchRequested = delegate { };
-
-        public void NotifyLoadOrderSettingsChanged(LoadOrderSettingsEventArgs eventArgs) { LoadOrderSettingsChanged.Invoke(this, eventArgs); }
-        public void NotifyUserOptionsChanged(OptionsEventArgs eventArgs) { UserOptionsChanged.Invoke(this, eventArgs); }
-        public void RequestPatch(UserSettingsEventArgs userSettings) { PatchRequested.Invoke(this, userSettings); }
-    }
-
-    public class LoadOrderSettingsEventArgs : EventArgs
-    {
-        public LoadOrderSettingsEventArgs(IList<ModKey> loadOrder, IList<ModKey> npcVisualTemplateMods, IList<ModKey> raceVisualTemplateMods)
+        public void RequestPatch(UserSettings userSettings)
         {
-            LoadOrder = loadOrder;
-            NpcVisualTemplateMods = npcVisualTemplateMods;
-            RaceVisualTemplateMods = raceVisualTemplateMods;
+            PatchRequested.Invoke(this, userSettings);
         }
 
-        public IList<ModKey> LoadOrder { get; }
-        public IList<ModKey> NpcVisualTemplateMods { get; }
-        public IList<ModKey> RaceVisualTemplateMods { get; }
-
-    }
-    public class OptionsEventArgs : EventArgs
-    {
-        public OptionsEventArgs(bool verboseLogging, bool mergeLeveledCharacters, bool mergeLeveledLists, bool openEncounterZones)
+        public void PublishPatchCompleted()
         {
-            VerboseLogging = verboseLogging;
-            MergeLeveledCharacters = mergeLeveledCharacters;
-            MergeLeveledLists = mergeLeveledLists;
-            OpenEncounterZones = openEncounterZones;
+            PatchCompleted.Invoke(this, new PatchCompleted());
         }
 
-        public bool VerboseLogging { get; }
-        public bool MergeLeveledCharacters { get; }
-        public bool MergeLeveledLists { get; }
-        public bool OpenEncounterZones { get; }
-    }
-
-    public class UserSettingsEventArgs : EventArgs
-    {
-        public UserSettingsEventArgs(UserSettings userSettings)
+        public void ReportException(Exception ex)
         {
-            UserSettings = userSettings;
+            ExceptionOccured.Invoke(this, ex);
         }
-
-        public UserSettings UserSettings { get; }
     }
+
+    public record PatchCompleted;
 }
