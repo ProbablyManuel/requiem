@@ -14,11 +14,18 @@ namespace ReqtificatorTest.Transformers
 {
     public static class ChainedTransformerTest
     {
-        private record DummyTransformer(string Prefix) : Transformer<MajorRecord, IMajorRecord, IMajorRecordGetter>
+        private class DummyTransformer : Transformer<MajorRecord, IMajorRecord, IMajorRecordGetter>
         {
+            private readonly string _prefix;
+
+            public DummyTransformer(string prefix)
+            {
+                _prefix = prefix;
+            }
+
             public override bool ShouldProcess(IMajorRecordGetter record)
             {
-                return record.EditorID?.StartsWith(Prefix, StringComparison.InvariantCulture) ?? false;
+                return record.EditorID?.StartsWith(_prefix, StringComparison.InvariantCulture) ?? false;
             }
 
             public override void Process(IMajorRecord record)
