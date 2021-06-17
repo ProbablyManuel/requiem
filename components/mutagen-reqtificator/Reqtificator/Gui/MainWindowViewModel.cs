@@ -1,23 +1,22 @@
-﻿using Mutagen.Bethesda;
-using Reqtificator.Configuration;
-using Serilog;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
+using Mutagen.Bethesda;
+using Reqtificator.Configuration;
 
 namespace Reqtificator.Gui
 {
-    public class MainWindowViewModel : INotifyPropertyChanged
+    internal class MainWindowViewModel : INotifyPropertyChanged
     {
-        private static readonly InternalEvents _events = InternalEvents.Instance;
+        private readonly InternalEvents _events;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public ObservableCollection<ModViewModel> Mods { get; } = new ObservableCollection<ModViewModel>();
+        public ObservableCollection<ModViewModel> Mods { get; }
 
         public bool VerboseLogging { get; set; }
         public bool MergeLeveledLists { get; set; }
@@ -25,50 +24,43 @@ namespace Reqtificator.Gui
         public bool OpenEncounterZones { get; set; }
         public ICommand PatchCommand => new DelegateCommand(RequestPatch);
 
+        public string ProgramStatus { get; private set; } = "ready";
+
         private void RequestPatch()
         {
-            UserSettings updatedUserSettings = new(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
-                Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods.Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
-            _events.RequestPatch(new UserSettingsEventArgs(updatedUserSettings));
+            ProgramStatus = "patching";
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
+            UserSettings updatedUserSettings =
+                new(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
+                    Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods
+                        .Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
+            _events.RequestPatch(updatedUserSettings);
         }
 
-        public MainWindowViewModel()
+        public MainWindowViewModel(InternalEvents eventsQueue, UserSettings loadedUserConfig,
+            IReadOnlyList<LoadOrderListing> loadOrder)
         {
-            Log.Information("Window created; listening to events");
-            _events.LoadOrderSettingsChanged += (s, los) =>
-            {
-                UpdateMods(los);
-            };
+            _events = eventsQueue;
+            VerboseLogging = loadedUserConfig.VerboseLogging;
+            MergeLeveledLists = loadedUserConfig.MergeLeveledLists;
+            MergeLeveledCharacters = loadedUserConfig.MergeLeveledCharacters;
+            OpenEncounterZones = loadedUserConfig.OpenEncounterZones;
 
-            _events.UserOptionsChanged += (s, us) =>
+            Mods = new ObservableCollection<ModViewModel>();
+            foreach (ModKey mod in loadOrder.Select(x => x.ModKey))
             {
-                VerboseLogging = us.VerboseLogging;
-                MergeLeveledLists = us.MergeLeveledLists;
-                MergeLeveledCharacters = us.MergeLeveledCharacters;
-                OpenEncounterZones = us.OpenEncounterZones;
-                NotifyUserSettingsChanged();
-            };
-        }
-
-        private void NotifyUserSettingsChanged()
-        {
-            List<string> properties = new() { "VerboseLogging", "MergeLeveledLists", "MergeLeveledCharacters", "OpenEncounterZones" };
-            foreach (string? property in properties)
-            {
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(property));
-            }
-        }
-
-        private void UpdateMods(LoadOrderSettingsEventArgs los)
-        {
-            Mods.Clear();
-            foreach (ModKey mod in los.LoadOrder)
-            {
-                bool npcVisuals = los.NpcVisualTemplateMods.Contains(mod);
-                bool raceVisuals = los.RaceVisualTemplateMods.Contains(mod);
+                var npcVisuals = loadedUserConfig.NpcVisualTemplateMods.Contains(mod);
+                var raceVisuals = loadedUserConfig.RaceVisualTemplateMods.Contains(mod);
                 Mods.Add(new ModViewModel(mod, npcVisuals, raceVisuals));
             }
+
+            _events.PatchCompleted += (_, _1) =>
+            {
+                ProgramStatus = "done";
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
+            };
         }
+
         private class DelegateCommand : ICommand
         {
             private readonly Action action;
@@ -79,13 +71,15 @@ namespace Reqtificator.Gui
                 action = a;
             }
 
-            void ICommand.Execute(object? parameter) { action(); }
+            void ICommand.Execute(object? parameter)
+            {
+                action();
+            }
 
             bool ICommand.CanExecute(object? parameter)
             {
                 return true;
             }
         }
-
     }
 }
