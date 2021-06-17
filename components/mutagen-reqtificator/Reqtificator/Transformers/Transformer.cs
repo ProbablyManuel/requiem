@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Reqtificator.Transformers
 {
-    internal abstract record Transformer<T, TI, TGetter> where T : MajorRecord, TI
+    internal abstract class Transformer<T, TI, TGetter> where T : MajorRecord, TI
         where TI : IMajorRecord, TGetter
         where TGetter : IMajorRecordGetter
     {

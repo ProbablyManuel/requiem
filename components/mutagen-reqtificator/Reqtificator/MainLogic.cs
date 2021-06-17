@@ -20,7 +20,7 @@ namespace Reqtificator
             var ammoPatched = new AmmunitionTransformer().ProcessCollection(ammoRecords);
 
             var encounterZones = loadOrder.PriorityOrder.EncounterZone().WinningOverrides();
-            var encounterZonesPatched = OpenCombatBoundaries.Create(loadOrder, userConfig).ProcessCollection(encounterZones);
+            var encounterZonesPatched = new OpenCombatBoundaries(loadOrder, userConfig).ProcessCollection(encounterZones);
 
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
             foreach (var patched in ammoPatched)
