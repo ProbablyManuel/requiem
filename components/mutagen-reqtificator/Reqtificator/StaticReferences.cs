@@ -20,4 +20,10 @@ namespace Reqtificator.StaticReferences
     {
         public static readonly FormLink<IFormListGetter> ClosedEncounterZones = new(FormKey.Factory("A46546:Requiem.esp"));
     }
+
+    public static class Quests
+    {
+        public static readonly FormLink<IQuestGetter> LockpickingControl = new(FormKey.Factory("AD3B22:Requiem.esp"));
+        public static readonly FormLink<IQuestGetter> FollowerControl = new(FormKey.Factory("82F3AF:Requiem.esp"));
+    }
 }
