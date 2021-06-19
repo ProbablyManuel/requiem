@@ -5,24 +5,24 @@ namespace Reqtificator.Transformers
     abstract record TransformationResult<T, TGetter>
         where T : MajorRecord, TGetter where TGetter : IMajorRecordGetter
     {
-        internal abstract T GetMutableRecord();
+        internal abstract T ToMutableRecord();
 
-        internal abstract TGetter GetRecord();
+        internal abstract TGetter Record();
     }
 
-    record UnChanged<T, TGetter>(TGetter Record) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
+    record UnChanged<T, TGetter>(TGetter Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
         where TGetter : IMajorRecordGetter
     {
-        internal override T GetMutableRecord() => (T)Record.DeepCopy();
+        internal override T ToMutableRecord() => (T)Underlying.DeepCopy();
 
-        internal override TGetter GetRecord() => Record;
+        internal override TGetter Record() => Underlying;
     }
 
-    record Modified<T, TGetter>(T Record) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
+    record Modified<T, TGetter>(T Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
         where TGetter : IMajorRecordGetter
     {
-        internal override T GetMutableRecord() => Record;
+        internal override T ToMutableRecord() => Underlying;
 
-        internal override TGetter GetRecord() => Record;
+        internal override TGetter Record() => Underlying;
     }
 }

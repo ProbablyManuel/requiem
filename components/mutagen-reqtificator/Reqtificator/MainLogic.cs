@@ -5,6 +5,7 @@ using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.Export;
 using Reqtificator.Transformers;
+using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
 
 namespace Reqtificator
@@ -28,9 +29,13 @@ namespace Reqtificator
             var containers = loadOrder.PriorityOrder.Container().WinningOverrides();
             var containersPatched = new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
 
+            var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
+            var armorsPatched = new ArmorTypeKeyword().ProcessCollection(armors);
+
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
             doorsPatched.ForEach(r => outputMod.Doors.Add(r));
             containersPatched.ForEach(r => outputMod.Containers.Add(r));
+            armorsPatched.ForEach(r => outputMod.Armors.Add(r));
             foreach (var patched in ammoPatched)
             {
                 outputMod.Ammunitions.Add(patched);
