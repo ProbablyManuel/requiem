@@ -71,10 +71,11 @@ Event OnUpdateGameTime()
 			;VampireStageProgressionMessage.Show()
 			VampireStage4Message.Show()
 			VampireStatus = 4
-			VampireProgression(Game.GetPlayer(), 4)
+			VampireProgression(Player, 4)
+			;/ REMOVING HATE ON LEVEL 4 VAMPIRE
 			;All NPCs  hate the evil Vampire
-			Game.GetPlayer().AddtoFaction(VampirePCFaction)
-			Game.GetPlayer().SetAttackActorOnSight()
+			Player.AddtoFaction(VampirePCFaction)
+			Player.SetAttackActorOnSight()
 
 			int cfIndex = 0
 			;Debug.Trace("VAMPIRE update: DLC1CrimeFactions = " + DLC1CrimeFactions)
@@ -82,11 +83,11 @@ Event OnUpdateGameTime()
 			CrimeFactions = DLC1CrimeFactions
 			;Debug.Trace("VAMPIRE update: CrimeFactions after = " + CrimeFactions)
    			while (cfIndex < CrimeFactions.GetSize())
-;         			Debug.Trace("VAMPIRE: Setting enemy flag on " + CrimeFactions.GetAt(cfIndex))
-        			(CrimeFactions.GetAt(cfIndex) as Faction).SetPlayerEnemy()
-        			cfIndex += 1
-    			endwhile
-
+         		;Debug.Trace("VAMPIRE update: Setting enemy flag on " + CrimeFactions.GetAt(cfIndex))
+        		(CrimeFactions.GetAt(cfIndex) as Faction).SetPlayerEnemy()
+        		cfIndex += 1
+    		endwhile
+			/;
 			;stop checking GameTime until the player feeds again
 			UnregisterforUpdateGameTime()
 		ElseIf FeedTimer >= 0.2 && (VampireStatus == 2)
@@ -94,13 +95,13 @@ Event OnUpdateGameTime()
 			VampireFeedReady.SetValue(2)
 			VampireStageProgressionMessage.Show()
 			VampireStatus = 3
-			VampireProgression(Game.GetPlayer(), 3)	
+			VampireProgression(Player, 3)	
 		ElseIf FeedTimer >= 0.2 && (VampireStatus == 1)
 			;add Stage 2 Vampire buffs and spells
 			VampireFeedReady.SetValue(1)
 			VampireStageProgressionMessage.Show()
 			VampireStatus = 2
-			VampireProgression(Game.GetPlayer(), 2)	
+			VampireProgression(Player, 2)	
 		EndIf
 	Endif
 	
@@ -206,6 +207,8 @@ Function VampireChange(Actor Target)
 	Game.GetPlayer().AddtoFaction(VampirePCFaction) ;edited by Xarrian
 	Game.GetPlayer().SetAttackActorOnSight()		   ;edited by Xarrian
 	
+	;Let everyone know the player is now a vampire
+	Target.SendVampirismStateChanged(true) ;Official Patch 1.5.3
 EndFunction
 
 Function VampireFeed()
@@ -266,11 +269,11 @@ Function VampireFeed()
 	CrimeFactions = DLC1CrimeFactions
 	;Debug.Trace("VAMPIRE feed: CrimeFactions after = " + CrimeFactions)
 	while (cfIndex < CrimeFactions.GetSize())
-; 		Debug.Trace("VAMPIRE: Removing enemy flag from " + CrimeFactions.GetAt(cfIndex))
+		;Debug.Trace("VAMPIRE: Removing enemy flag from " + CrimeFactions.GetAt(cfIndex))
 		(CrimeFactions.GetAt(cfIndex) as Faction).SetPlayerEnemy(false)
 		cfIndex += 1
 	endwhile
-
+	
 	;Start checking GameTime again if we weren't already
 	UnregisterforUpdateGameTime()
 	RegisterForUpdateGameTime(2)
@@ -441,7 +444,6 @@ Function VampireCure(Actor Player)
 
 	VampireStatus = 0
 	;Player is no longer hated
-
 	Player.RemoveFromFaction(VampirePCFaction)
 	Player.SetAttackActorOnSight(False)
 	
@@ -507,6 +509,8 @@ Function VampireCure(Actor Player)
 	;make sure Hunter's Sight is gone
 	Player.RemoveSpell(VampireHuntersSight)
 	
+	;Let everyone know the player is no longer a vampire
+	player.SendVampirismStateChanged(false) ;Official Patch 1.5.3
 EndFunction
 
 Spell Property AbVampire01 Auto
