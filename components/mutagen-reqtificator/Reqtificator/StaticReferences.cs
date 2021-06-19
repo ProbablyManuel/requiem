@@ -6,6 +6,12 @@ namespace Reqtificator.StaticReferences
 {
     public static class Keywords
     {
+        public static readonly IFormLinkGetter<IKeywordGetter> ArmorHeavy =
+            new FormLink<IKeywordGetter>(FormKey.Factory("06BBD2:Skyrim.esm"));
+
+        public static readonly IFormLinkGetter<IKeywordGetter> ArmorLight =
+            new FormLink<IKeywordGetter>(FormKey.Factory("06BBD3:Skyrim.esm"));
+
         public static readonly FormKey AlreadyReqtified = FormKey.Factory("8F08B5:Requiem.esp");
         public static readonly FormKey NoDamageRescaling = FormKey.Factory("AD3B2D:Requiem.esp");
         public static readonly FormKey NoWeaponReachRescaling = FormKey.Factory("AD3B2E:Requiem.esp");
@@ -18,7 +24,8 @@ namespace Reqtificator.StaticReferences
 
     public static class FormLists
     {
-        public static readonly FormLink<IFormListGetter> ClosedEncounterZones = new(FormKey.Factory("A46546:Requiem.esp"));
+        public static readonly FormLink<IFormListGetter> ClosedEncounterZones =
+            new(FormKey.Factory("A46546:Requiem.esp"));
     }
 
     public static class Quests

@@ -15,7 +15,7 @@ namespace Reqtificator.Transformers
         {
             return records.Select(PatchRecord)
                 .WhereCastable<TransformationResult<T, TGetter>, Modified<T, TGetter>>()
-                .Select(r => r.Record)
+                .Select(r => r.Underlying)
                 .ToImmutableList();
         }
 
