@@ -30,13 +30,10 @@ This mod is published on NexusMods:
             papyrusCompiler = file("S:\\SteamLibrary\\steamapps\\common\\Skyrim Special Edition\\Papyrus Compiler\\PapyrusCompiler.exe")
             papyrusCompilerFlags = file("S:\\SteamLibrary\\steamapps\\common\\Skyrim Special Edition\\Papyrus Compiler\\TESV_Papyrus_Flags.flg")
             papyrusIncludeFolders = files(
-                    "S:\\MO-Skyrim\\mods\\base-scripts-ussep",
-                    "S:\\MO-Skyrim\\mods\\SkyUI5-SDK\\scripts\\Source",
-                    "S:\\MO-Skyrim\\mods\\SKSE-Scripts\\scripts\\Source",
-                    "S:\\MO-Skyrim\\mods\\base-scripts-Dragonborn",
-                    "S:\\MO-Skyrim\\mods\\base-scripts-Hearthfire",
-                    "S:\\MO-Skyrim\\mods\\base-scripts-Dawnguard",
-                    "S:\\MO-Skyrim\\mods\\base-scripts-Skyrim"
+                    "S:\\MO-Skyrim\\mods\\USSEP\\Scripts\\Source",
+                    "S:\\MO-Skyrim\\mods\\SkyUI5-SDK\\Scripts\\Source",
+                    "S:\\MO-Skyrim\\mods\\SKSE64\\Scripts\\Source",
+                    "S:\\MO-Skyrim\\mods\\SSE-scripts\\Source\\Scripts"
             )
             papyrusFailFast = false
             csharpWarningsAsErrors = true
@@ -50,15 +47,13 @@ This mod is published on NexusMods:
         * The scripts from the include folders will not be compiled themselves, but used by the compiler to verify
         that the function calls and other external references in the scripts to be compiled are valid.
         * The scripts are taken from the first folder that contains the given file.
-        The order is therefore important to select updated versions from the DLCs or the unofficial patches over
-        the Vanilla scripts.
+        The order is therefore important to select updated versions the unofficial patch over the vanilla scripts.
         * Script folders should point to the .psc script source files. They are:
-            1. USSEP base-scripts, from the `scripts\source` directory in the download
-            (Oldrim version requires USLEEP; use the `scripts\source` directory from the unpacked BSA)
+            1. USSEP base-scripts, from the `Scripts\Source` directory in the download
+            (Oldrim version requires USLEEP; use the `Scripts\Source` directory from the unpacked BSA)
             2. SKY-UI base scripts, from the `Scripts\Source` directory in the download
-            3. SKSE scripts, from the `Data\scripts\source` directory in the download
-            4. Skyrim DLC base scripts for each of Dragonborn, Hearthfire and Dawnguard, from the respective directories, and
-            5. Skyrim base scripts, all from the `Scripts\Source` directory inside `Data\scripts.zip` which comes with Skyrim.
+            3. SKSE scripts, from the `Data\Scripts\Source` directory in the download
+            4. Skyrim base scripts, all from the `Source\Scripts` directory inside `Data\scripts.zip` which comes with Skyrim.
     * `papyrusFailFast` - failure handling mode for the Papyrus compilation step
         * If set to true, the compilation fails upon encountering the first error.
         * If set to false, the compilation continues after the first error to accumulate all error messages.
