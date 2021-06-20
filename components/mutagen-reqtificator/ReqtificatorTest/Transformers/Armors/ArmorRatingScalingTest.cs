@@ -155,5 +155,65 @@ namespace ReqtificatorTest.Transformers.Armors
             result.Should().BeOfType<UnChanged<Armor, IArmorGetter>>();
             result.Record().Equals(input).Should().BeTrue();
         }
+
+        [Fact]
+        public void Should_not_change_templated_records()
+        {
+            var template = FormKey.Factory("ABCDEF:Requiem.esp");
+            var transformer = new ArmorRatingScaling(Config);
+
+            var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.HeavyArmor },
+                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keywords.ArmorBody },
+                TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
+                ArmorRating = 42.0f
+            };
+
+            var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
+            result.Should().BeOfType<UnChanged<Armor, IArmorGetter>>();
+            result.Record().Equals(input).Should().BeTrue();
+        }
+
+        [Fact]
+        public void Should_not_change_records_marked_as_already_reqtified()
+        {
+            var template = FormKey.Factory("ABCDEF:Requiem.esp");
+            var transformer = new ArmorRatingScaling(Config);
+
+            var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                BodyTemplate = new BodyTemplate { ArmorType = ArmorType.HeavyArmor },
+                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
+                    {Keywords.ArmorBody, Keywords.AlreadyReqtified},
+                TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
+                ArmorRating = 42.0f
+            };
+
+            var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
+            result.Should().BeOfType<UnChanged<Armor, IArmorGetter>>();
+            result.Record().Equals(input).Should().BeTrue();
+        }
+
+        [Fact]
+        public void Should_not_change_records_marked_as_excluded_from_armor_rating_scaling()
+        {
+            var template = FormKey.Factory("ABCDEF:Requiem.esp");
+            var transformer = new ArmorRatingScaling(Config);
+
+            var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                BodyTemplate = new BodyTemplate { ArmorType = ArmorType.HeavyArmor },
+                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
+                    {Keywords.ArmorBody, Keywords.NoArmorRatingRescaling},
+                TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
+                ArmorRating = 42.0f
+            };
+
+            var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
+            result.Should().BeOfType<UnChanged<Armor, IArmorGetter>>();
+            result.Record().Equals(input).Should().BeTrue();
+        }
+
     }
 }

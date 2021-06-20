@@ -35,6 +35,11 @@ namespace Reqtificator.Transformers.Armors
         public override TransformationResult<Armor, IArmorGetter> Process(
             TransformationResult<Armor, IArmorGetter> input)
         {
+            if ((input.Record().Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? false) ||
+                (input.Record().Keywords?.Contains(Keywords.NoArmorRatingRescaling.FormKey) ?? false) ||
+                !input.Record().TemplateArmor.IsNull
+                ) return input;
+
             var armorType = input.Record().BodyTemplate?.ArmorType;
             var partKeyword = GetArmorPartKeyword(input.Record());
             float? threshold = (armorType, partKeyword) switch

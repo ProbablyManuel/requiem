@@ -57,10 +57,7 @@ namespace Reqtificator
             doorsPatched.ForEach(r => outputMod.Doors.Add(r));
             containersPatched.ForEach(r => outputMod.Containers.Add(r));
             armorsPatched.ForEach(r => outputMod.Armors.Add(r));
-            foreach (var patched in ammoPatched)
-            {
-                outputMod.Ammunitions.Add(patched);
-            }
+            ammoPatched.ForEach(r => outputMod.Ammunitions.Add(r));
 
             var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
 
