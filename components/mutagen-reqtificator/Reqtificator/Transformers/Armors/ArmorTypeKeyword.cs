@@ -2,7 +2,8 @@
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.StaticReferences;
-using ArmorTransformationResult = Reqtificator.Transformers.TransformationResult<Mutagen.Bethesda.Skyrim.Armor, Mutagen.Bethesda.Skyrim.IArmorGetter>;
+using ArmorTransformationResult =
+    Reqtificator.Transformers.TransformationResult<Mutagen.Bethesda.Skyrim.Armor, Mutagen.Bethesda.Skyrim.IArmorGetter>;
 
 namespace Reqtificator.Transformers.Armors
 {
@@ -22,11 +23,13 @@ namespace Reqtificator.Transformers.Armors
         {
             if (input.Record().Keywords?.ContainsNot(keyword) ?? true)
             {
-                var mutable = input.ToMutableRecord();
-                if (mutable.Keywords is null) mutable.Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
-                mutable.Keywords.Add(keyword);
-                return new Modified<Armor, IArmorGetter>(mutable);
+                return input.Modify(armor =>
+                {
+                    armor.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
+                    armor.Keywords.Add(keyword);
+                });
             }
+
             return input;
         }
     }
