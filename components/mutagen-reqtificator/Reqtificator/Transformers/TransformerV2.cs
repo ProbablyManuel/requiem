@@ -27,5 +27,10 @@ namespace Reqtificator.Transformers
                 return Process(initial);
             });
         }
+
+        public TransformerV2<T, TGetter> AndThen(TransformerV2<T, TGetter> nextTransform)
+        {
+            return new ChainedTransformerV2<T, TGetter>(this, nextTransform);
+        }
     }
 }
