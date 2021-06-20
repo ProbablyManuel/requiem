@@ -27,7 +27,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
             var mask = new Armor.TranslationMask(defaultOn: true) { Keywords = false };
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
-            result.ToMutableRecord().Equals(input, mask).Should().BeTrue();
+            result.Record().Equals(input, mask).Should().BeTrue();
             result.Record().Keywords!.Select(k => k.FormKey).Should().Contain(
                 new ArrayList { Keywords.ArmorLight.FormKey, keyword }
             );
@@ -47,7 +47,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
             var mask = new Armor.TranslationMask(defaultOn: true) { Keywords = false };
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
-            result.ToMutableRecord().Equals(input, mask).Should().BeTrue();
+            result.Record().Equals(input, mask).Should().BeTrue();
             result.Record().Keywords!.Select(k => k.FormKey).Should().Contain(
                 new ArrayList { Keywords.ArmorHeavy.FormKey, keyword }
             );
@@ -75,7 +75,6 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.Clothing }
-
             };
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
@@ -90,7 +89,6 @@ namespace ReqtificatorTest.Transformers.Armors
             {
                 BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.LightArmor },
                 Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keywords.ArmorLight }
-
             };
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));

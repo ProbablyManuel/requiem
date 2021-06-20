@@ -8,9 +8,18 @@ namespace Reqtificator.StaticReferences
     {
         public static readonly IFormLinkGetter<IKeywordGetter> ArmorHeavy =
             new FormLink<IKeywordGetter>(FormKey.Factory("06BBD2:Skyrim.esm"));
-
         public static readonly IFormLinkGetter<IKeywordGetter> ArmorLight =
             new FormLink<IKeywordGetter>(FormKey.Factory("06BBD3:Skyrim.esm"));
+        public static readonly IFormLinkGetter<IKeywordGetter> ArmorBody =
+            new FormLink<IKeywordGetter>(FormKey.Factory("06C0EC:Skyrim.esm"));
+        public static readonly IFormLinkGetter<IKeywordGetter> ArmorFeet =
+            new FormLink<IKeywordGetter>(FormKey.Factory("06C0ED:Skyrim.esm"));
+        public static readonly IFormLinkGetter<IKeywordGetter> ArmorHands =
+            new FormLink<IKeywordGetter>(FormKey.Factory("06C0EF:Skyrim.esm"));
+        public static readonly IFormLinkGetter<IKeywordGetter> ArmorHead =
+            new FormLink<IKeywordGetter>(FormKey.Factory("06C0EE:Skyrim.esm"));
+        public static readonly IFormLinkGetter<IKeywordGetter> ArmorShield =
+            new FormLink<IKeywordGetter>(FormKey.Factory("0965B2:Skyrim.esm"));
 
         public static readonly FormKey AlreadyReqtified = FormKey.Factory("8F08B5:Requiem.esp");
         public static readonly FormKey NoDamageRescaling = FormKey.Factory("AD3B2D:Requiem.esp");
