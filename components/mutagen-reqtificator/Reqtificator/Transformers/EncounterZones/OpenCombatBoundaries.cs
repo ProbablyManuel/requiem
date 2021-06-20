@@ -8,25 +8,19 @@ using Serilog;
 
 namespace Reqtificator.Transformers.EncounterZones
 {
-    internal record OpenCombatBoundaries
-        (IReadOnlySet<IFormLink<IEncounterZoneGetter>> AlwaysClosedZones, bool OpenCombatZones) : Transformer<
-            EncounterZone,
-            IEncounterZone, IEncounterZoneGetter>
+    internal class OpenCombatBoundaries : Transformer<EncounterZone, IEncounterZone, IEncounterZoneGetter>
     {
-        public override bool ShouldProcess(IEncounterZoneGetter record)
+        private readonly IReadOnlySet<IFormLink<IEncounterZoneGetter>> _alwaysClosedZones;
+        private readonly bool _openCombatZones;
+
+        internal OpenCombatBoundaries(IReadOnlySet<IFormLink<IEncounterZoneGetter>> alwaysClosedZones,
+            bool openCombatZones)
         {
-            return OpenCombatZones && !AlwaysClosedZones.Contains(new FormLink<IEncounterZoneGetter>(record));
+            _alwaysClosedZones = alwaysClosedZones;
+            _openCombatZones = openCombatZones;
         }
 
-        public override void Process(IEncounterZone record)
-        {
-            record.Flags |= EncounterZone.Flag.DisableCombatBoundary;
-            Log.Debug("opened combat boundaries of encounter zone");
-        }
-
-
-        public static OpenCombatBoundaries Create(LoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userConfig)
+        public OpenCombatBoundaries(LoadOrder<IModListing<ISkyrimModGetter>> loadOrder, UserSettings userConfig)
         {
             var linkCache = loadOrder.ToImmutableLinkCache();
             var exclusions = ImmutableHashSet<IFormLink<IEncounterZoneGetter>>.Empty;
@@ -45,7 +39,19 @@ namespace Reqtificator.Transformers.EncounterZones
                 }
             }
 
-            return new OpenCombatBoundaries(exclusions, userConfig.OpenEncounterZones);
+            _alwaysClosedZones = exclusions;
+            _openCombatZones = userConfig.OpenEncounterZones;
+        }
+
+        public override bool ShouldProcess(IEncounterZoneGetter record)
+        {
+            return _openCombatZones && !_alwaysClosedZones.Contains(new FormLink<IEncounterZoneGetter>(record));
+        }
+
+        public override void Process(IEncounterZone record)
+        {
+            record.Flags |= EncounterZone.Flag.DisableCombatBoundary;
+            Log.Debug("opened combat boundaries of encounter zone");
         }
     }
 }
