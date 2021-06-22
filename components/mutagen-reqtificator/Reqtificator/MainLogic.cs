@@ -8,6 +8,7 @@ using Reqtificator.Export;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
+using Reqtificator.Transformers.Weapons;
 
 namespace Reqtificator
 {
@@ -54,11 +55,15 @@ namespace Reqtificator
             var armorsPatched = new ArmorTypeKeyword().AndThen(new ArmorRatingScaling(armorConfig))
                 .ProcessCollection(armors);
 
+            var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
+            var weaponsPatched = new WeaponDamageScaling().ProcessCollection(weapons);
+
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
             doorsPatched.ForEach(r => outputMod.Doors.Add(r));
             containersPatched.ForEach(r => outputMod.Containers.Add(r));
             armorsPatched.ForEach(r => outputMod.Armors.Add(r));
             ammoPatched.ForEach(r => outputMod.Ammunitions.Add(r));
+            weaponsPatched.ForEach(r => outputMod.Weapons.Add(r));
 
             var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
 
