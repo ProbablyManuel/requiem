@@ -5,6 +5,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.StaticReferences;
+using Serilog;
 
 namespace Reqtificator.Transformers.Armors
 {
@@ -57,7 +58,11 @@ namespace Reqtificator.Transformers.Armors
             {
                 var offset = Equals(partKeyword, Keywords.ArmorBody) ? 66.0f : 18.0f;
                 var factor = Equals(armorType, ArmorType.HeavyArmor) ? 6.6f : 3.3f;
-                return input.Modify(record => record.ArmorRating = record.ArmorRating * factor + offset);
+                return input.Modify(record =>
+                {
+                    record.ArmorRating = record.ArmorRating * factor + offset;
+                    Log.Debug("adjusted armor rating");
+                });
             }
 
             return input;
