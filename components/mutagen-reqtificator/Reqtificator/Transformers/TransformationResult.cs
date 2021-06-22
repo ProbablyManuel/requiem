@@ -1,5 +1,5 @@
 ﻿using System;
-using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins.Records;
 
 namespace Reqtificator.Transformers
 {

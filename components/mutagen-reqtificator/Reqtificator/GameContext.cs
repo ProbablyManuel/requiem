@@ -2,10 +2,13 @@
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using Mutagen.Bethesda.Installs;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Order;
 
 namespace Reqtificator
 {
-    public record GameContext(ImmutableList<LoadOrderListing> ActiveMods, string DataFolder)
+    public record GameContext(ImmutableList<IModListingGetter> ActiveMods, string DataFolder)
     {
         public static GameContext GetRequiemContext(GameRelease release, ModKey patchToBeGenerated)
         {
@@ -21,7 +24,7 @@ namespace Reqtificator
             }
 
             var loadOrderEntries = LoadOrder.GetListings(release, dataFolder, true);
-            var activeMods = loadOrderEntries.OnlyEnabled().TakeWhile(it => it != patchToBeGenerated)
+            var activeMods = loadOrderEntries.OnlyEnabled().TakeWhile(it => it.ModKey != patchToBeGenerated)
                 .ToImmutableList();
 
             return new GameContext(activeMods, dataFolder);

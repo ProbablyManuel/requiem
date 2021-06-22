@@ -2,6 +2,7 @@
 using System.Linq;
 using FluentAssertions;
 using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.StaticReferences;
