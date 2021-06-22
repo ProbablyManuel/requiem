@@ -3,6 +3,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.StaticReferences;
+using Serilog;
 using ArmorTransformationResult = Reqtificator.Transformers.TransformationResult<Mutagen.Bethesda.Skyrim.Armor, Mutagen.Bethesda.Skyrim.IArmorGetter>;
 
 namespace Reqtificator.Transformers.Armors
@@ -27,6 +28,7 @@ namespace Reqtificator.Transformers.Armors
                 {
                     armor.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
                     armor.Keywords.Add(keyword);
+                    Log.Debug("added missing armor type keyword");
                 });
             }
 
