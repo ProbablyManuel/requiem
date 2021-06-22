@@ -9,8 +9,8 @@ namespace Reqtificator.Transformers
     {
         public override bool ShouldProcess(IAmmunitionGetter record)
         {
-            var keywordCheck = (!record.Keywords?.Contains(Keywords.AlreadyReqtified) ?? true) &&
-                               (!record.Keywords?.Contains(Keywords.NoDamageRescaling) ?? true);
+            var keywordCheck = (!record.Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? true) &&
+                               (!record.Keywords?.Contains(Keywords.NoDamageRescaling.FormKey) ?? true);
             return keywordCheck && record.Damage > 0.0f;
         }
 

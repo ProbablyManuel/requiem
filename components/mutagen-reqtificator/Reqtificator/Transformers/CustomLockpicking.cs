@@ -21,13 +21,13 @@ namespace Reqtificator.Transformers
             {
                 Name = "dataStorage",
                 Alias = 18,
-                Object = Quests.LockpickingControl,
+                Object = Quests.LockpickingControl.AsSetter(),
                 Flags = ScriptProperty.Flag.Edited
             });
             lockPickingControScript.Properties.Add(new ScriptObjectProperty()
             {
                 Name = "FollowerControl",
-                Object = Quests.FollowerControl,
+                Object = Quests.FollowerControl.AsSetter(),
                 Flags = ScriptProperty.Flag.Edited
             });
             _lockPickingScript = lockPickingControScript;
