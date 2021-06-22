@@ -5,7 +5,8 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
-using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Order;
 using Reqtificator.Configuration;
 
 namespace Reqtificator.Gui
@@ -38,7 +39,7 @@ namespace Reqtificator.Gui
         }
 
         public MainWindowViewModel(InternalEvents eventsQueue, UserSettings loadedUserConfig,
-            IReadOnlyList<LoadOrderListing> loadOrder)
+            IReadOnlyList<IModListingGetter> loadOrder)
         {
             _events = eventsQueue;
             VerboseLogging = loadedUserConfig.VerboseLogging;

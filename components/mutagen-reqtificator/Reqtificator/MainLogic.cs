@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
-using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.Export;
@@ -12,7 +13,7 @@ namespace Reqtificator
 {
     internal static class MainLogic
     {
-        public static SkyrimMod GeneratePatch(LoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
+        public static SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             UserSettings userConfig, ModKey outputModKey)
         {
             //TODO: read this from the actual config files and pass as a argument to the function

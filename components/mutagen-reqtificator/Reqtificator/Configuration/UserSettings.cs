@@ -1,8 +1,8 @@
-﻿using Hocon;
-using Mutagen.Bethesda;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using Hocon;
+using Mutagen.Bethesda.Plugins;
 
 namespace Reqtificator.Configuration
 {
@@ -51,8 +51,8 @@ namespace Reqtificator.Configuration
     ""mergeLeveledLists"": {MergeLeveledLists.ToString().ToLowerInvariant()},
     ""mergeLeveledCharacters"": {MergeLeveledCharacters.ToString().ToLowerInvariant()},
     ""openEncounterZones"": {OpenEncounterZones.ToString().ToLowerInvariant()},
-    ""npcVisualTemplateMods"": [{NpcVisualTemplateMods.Select(it => it.FileName).Aggregate("", FmtArray)}],
-    ""raceVisualTemplateMods"": [{RaceVisualTemplateMods.Select(it => it.FileName).Aggregate("", FmtArray)}]
+    ""npcVisualTemplateMods"": [{NpcVisualTemplateMods.Select(it => it.FileName.String).Aggregate("", FmtArray)}],
+    ""raceVisualTemplateMods"": [{RaceVisualTemplateMods.Select(it => it.FileName.String).Aggregate("", FmtArray)}]
 }}";
             File.WriteAllText(targetFile, configToWrite);
         }
