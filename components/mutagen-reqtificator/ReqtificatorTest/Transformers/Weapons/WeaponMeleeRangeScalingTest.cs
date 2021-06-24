@@ -89,7 +89,7 @@ namespace ReqtificatorTest.Transformers.Weapons
             var otherKeyword = Keywords.ArmorBody;
             var transformer = new WeaponMeleeRangeScaling();
 
-            foreach (var weaponType in _ignoredTypes)
+            foreach (var weaponType in _meleeTypes)
             {
                 var input = new Weapon(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
                 {
@@ -113,7 +113,7 @@ namespace ReqtificatorTest.Transformers.Weapons
             var otherKeyword = Keywords.ArmorBody;
             var transformer = new WeaponMeleeRangeScaling();
 
-            foreach (var weaponType in _ignoredTypes)
+            foreach (var weaponType in _meleeTypes)
             {
                 var input = new Weapon(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
                 {
@@ -137,7 +137,7 @@ namespace ReqtificatorTest.Transformers.Weapons
             var otherKeyword = Keywords.ArmorBody;
             var transformer = new WeaponMeleeRangeScaling();
 
-            foreach (var weaponType in _ignoredTypes)
+            foreach (var weaponType in _meleeTypes)
             {
                 var input = new Weapon(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
                 {
