@@ -56,7 +56,9 @@ namespace Reqtificator
                 .ProcessCollection(armors);
 
             var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
-            var weaponsPatched = new WeaponDamageScaling().ProcessCollection(weapons);
+            var weaponsPatched = new WeaponDamageScaling().AndThen(new WeaponMeleeRangeScaling())
+                .AndThen(new WeaponNpcAmmunitionUsage())
+                .ProcessCollection(weapons);
 
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
             doorsPatched.ForEach(r => outputMod.Doors.Add(r));
