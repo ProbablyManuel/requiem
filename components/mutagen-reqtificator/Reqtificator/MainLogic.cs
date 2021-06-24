@@ -58,6 +58,7 @@ namespace Reqtificator
             var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
             var weaponsPatched = new WeaponDamageScaling().AndThen(new WeaponMeleeRangeScaling())
                 .AndThen(new WeaponNpcAmmunitionUsage())
+                .AndThen(new WeaponRangedSpeedScaling())
                 .ProcessCollection(weapons);
 
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
