@@ -28,11 +28,11 @@ namespace Reqtificator.Transformers.Weapons
             };
         }
 
-        private static Action<Weapon> PatchRecord(float factor, IFormLinkGetter<IKeywordGetter> keyword)
+        private static Action<Weapon> PatchRecord(float speed, IFormLinkGetter<IKeywordGetter> keyword)
         {
             return record =>
             {
-                record.Data!.Speed *= factor;
+                record.Data!.Speed = speed;
                 record.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
                 if (record.Keywords.ContainsNot(keyword)) record.Keywords.Add(keyword);
             };
