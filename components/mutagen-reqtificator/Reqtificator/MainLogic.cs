@@ -1,18 +1,20 @@
 using System.IO;
 using System.Linq;
-using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.Export;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
+using Reqtificator.Transformers.Weapons;
 
 namespace Reqtificator
 {
     internal static class MainLogic
     {
-        public static SkyrimMod GeneratePatch(LoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
+        public static SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             UserSettings userConfig, ModKey outputModKey)
         {
             //TODO: read this from the actual config files and pass as a argument to the function
@@ -53,11 +55,18 @@ namespace Reqtificator
             var armorsPatched = new ArmorTypeKeyword().AndThen(new ArmorRatingScaling(armorConfig))
                 .ProcessCollection(armors);
 
+            var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
+            var weaponsPatched = new WeaponDamageScaling().AndThen(new WeaponMeleeRangeScaling())
+                .AndThen(new WeaponNpcAmmunitionUsage())
+                .AndThen(new WeaponRangedSpeedScaling())
+                .ProcessCollection(weapons);
+
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
             doorsPatched.ForEach(r => outputMod.Doors.Add(r));
             containersPatched.ForEach(r => outputMod.Containers.Add(r));
             armorsPatched.ForEach(r => outputMod.Armors.Add(r));
             ammoPatched.ForEach(r => outputMod.Ammunitions.Add(r));
+            weaponsPatched.ForEach(r => outputMod.Weapons.Add(r));
 
             var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
 

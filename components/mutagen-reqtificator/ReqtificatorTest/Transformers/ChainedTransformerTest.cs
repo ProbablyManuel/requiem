@@ -1,7 +1,7 @@
 ﻿using System;
 using FluentAssertions;
 using Moq;
-using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins.Records;
 using Reqtificator.Transformers;
 using Xunit;
 
