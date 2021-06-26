@@ -47,7 +47,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                 Data = new WeaponData()
                 {
                     AnimationType = WeaponAnimationType.Bow,
-                    Speed = 1.0f
+                    Speed = 0.75f
                 },
                 Keywords = new KeywordList { otherKeyword }
             };
@@ -55,7 +55,7 @@ namespace ReqtificatorTest.Transformers.Weapons
 
             result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
             result.Record().Equals(input, _verificationMask).Should().BeTrue();
-            result.Record().Data!.Speed.Should().BeApproximately(input.Data.Speed * 0.3704f, 0.01f);
+            result.Record().Data!.Speed.Should().BeApproximately(0.3704f, 0.01f);
             result.Record().Keywords!.Should().Contain(new KeywordList { Keywords.WeaponBowHeavy, otherKeyword });
         }
 
@@ -70,7 +70,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                 Data = new WeaponData()
                 {
                     AnimationType = WeaponAnimationType.Crossbow,
-                    Speed = 1.0f
+                    Speed = 0.75f
                 },
                 Keywords = new KeywordList { otherKeyword }
             };
@@ -78,7 +78,7 @@ namespace ReqtificatorTest.Transformers.Weapons
 
             result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
             result.Record().Equals(input, _verificationMask).Should().BeTrue();
-            result.Record().Data!.Speed.Should().BeApproximately(input.Data.Speed * 0.4445f, 0.01f);
+            result.Record().Data!.Speed.Should().BeApproximately(0.4445f, 0.01f);
             result.Record().Keywords!.Should().Contain(new KeywordList { Keywords.WeaponCrossbowHeavy, otherKeyword });
         }
 
