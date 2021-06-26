@@ -1,14 +1,10 @@
 ﻿using FluentAssertions;
 using Mutagen.Bethesda;
-using Mutagen.Bethesda.Oblivion;
+using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
 using Xunit;
-using Door = Mutagen.Bethesda.Skyrim.Door;
-using IDoor = Mutagen.Bethesda.Skyrim.IDoor;
-using IDoorGetter = Mutagen.Bethesda.Skyrim.IDoorGetter;
 
 namespace ReqtificatorTest.Transformers
 {

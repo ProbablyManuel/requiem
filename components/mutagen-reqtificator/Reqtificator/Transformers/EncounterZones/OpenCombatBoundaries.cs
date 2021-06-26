@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
 using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.StaticReferences;
@@ -20,7 +22,7 @@ namespace Reqtificator.Transformers.EncounterZones
             _openCombatZones = openCombatZones;
         }
 
-        public OpenCombatBoundaries(LoadOrder<IModListing<ISkyrimModGetter>> loadOrder, UserSettings userConfig)
+        public OpenCombatBoundaries(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, UserSettings userConfig)
         {
             var linkCache = loadOrder.ToImmutableLinkCache();
             var exclusions = ImmutableHashSet<IFormLink<IEncounterZoneGetter>>.Empty;

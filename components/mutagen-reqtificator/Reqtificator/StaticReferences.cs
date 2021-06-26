@@ -1,6 +1,5 @@
-﻿using Mutagen.Bethesda;
+﻿using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-
 
 namespace Reqtificator.StaticReferences
 {
@@ -38,6 +37,16 @@ namespace Reqtificator.StaticReferences
 
         public static readonly IFormLinkGetter<IKeywordGetter> NoWeaponReachRescaling =
             new FormLink<IKeywordGetter>(FormKey.Factory("AD3B2E:Requiem.esp"));
+
+        public static readonly IFormLinkGetter<IKeywordGetter> NoWeaponSpeedRescaling =
+            new FormLink<IKeywordGetter>(FormKey.Factory("AD3B2F:Requiem.esp"));
+
+        public static readonly IFormLinkGetter<IKeywordGetter> WeaponBowHeavy =
+            new FormLink<IKeywordGetter>(FormKey.Factory("9F9914:Requiem.esp"));
+
+
+        public static readonly IFormLinkGetter<IKeywordGetter> WeaponCrossbowHeavy =
+            new FormLink<IKeywordGetter>(FormKey.Factory("899DBE:Requiem.esp"));
     }
 
     public static class GlobalVariables

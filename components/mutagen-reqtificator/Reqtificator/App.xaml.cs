@@ -3,6 +3,7 @@ using Reqtificator.Gui;
 using Serilog;
 using System.Windows;
 using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins;
 
 namespace Reqtificator
 {
