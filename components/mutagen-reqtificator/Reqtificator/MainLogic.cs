@@ -36,6 +36,8 @@ namespace Reqtificator
 
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
             var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE);
+            var numberOfRecordStages = 6;
+            events.PublishPatchStarted(numberOfRecordStages);
 
             var ammoRecords = loadOrder.PriorityOrder.Ammunition().WinningOverrides();
             var ammoPatched = new AmmunitionTransformer().ProcessCollection(ammoRecords);

@@ -24,6 +24,8 @@ namespace Reqtificator
 {
     internal class Backend
     {
+        private const GameRelease Release = GameRelease.SkyrimSE;
+        private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Mutated.esp");
         private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
 
         private readonly InternalEvents _events;
@@ -32,6 +34,21 @@ namespace Reqtificator
         {
             _events = eventsQueue;
             WarmupSkyrim.Init();
+
+            var context = GameContext.GetRequiemContext(Release, PatchModKey);
+            var userConfig = LoadAndVerifyUserSettings(context);
+
+            _events.PublishReadyToPatch(userConfig, context.ActiveMods.Select(x => x.ModKey));
+
+            _events.PatchRequested += (_, updatedSettings) =>
+            {
+                updatedSettings.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json"));
+                var generatedPatch = GeneratePatch(context, updatedSettings, Release, PatchModKey);
+                Log.Information("done patching, now exporting to disk");
+                MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
+                Log.Information("done exporting");
+                _events.PublishPatchCompleted();
+            };
         }
 
         public UserSettings LoadAndVerifyUserSettings(GameContext context)
