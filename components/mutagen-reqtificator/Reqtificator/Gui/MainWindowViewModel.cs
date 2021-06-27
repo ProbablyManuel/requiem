@@ -38,28 +38,34 @@ namespace Reqtificator.Gui
             _events.RequestPatch(updatedUserSettings);
         }
 
-        public MainWindowViewModel(InternalEvents eventsQueue, UserSettings loadedUserConfig,
-            IReadOnlyList<IModListingGetter> loadOrder)
+        public MainWindowViewModel(InternalEvents eventsQueue)
         {
-            _events = eventsQueue;
-            VerboseLogging = loadedUserConfig.VerboseLogging;
-            MergeLeveledLists = loadedUserConfig.MergeLeveledLists;
-            MergeLeveledCharacters = loadedUserConfig.MergeLeveledCharacters;
-            OpenEncounterZones = loadedUserConfig.OpenEncounterZones;
-
             Mods = new ObservableCollection<ModViewModel>();
-            foreach (ModKey mod in loadOrder.Select(x => x.ModKey))
-            {
-                var npcVisuals = loadedUserConfig.NpcVisualTemplateMods.Contains(mod);
-                var raceVisuals = loadedUserConfig.RaceVisualTemplateMods.Contains(mod);
-                Mods.Add(new ModViewModel(mod, npcVisuals, raceVisuals));
-            }
 
+            _events = eventsQueue;
+            _events.ReadyToPatch += (_, patchContext) => { HandlePatchReady(patchContext); };
             _events.PatchCompleted += (_, _1) =>
             {
                 ProgramStatus = "done";
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
             };
+        }
+
+        private void HandlePatchReady(PatchContext patchContext)
+        {
+            var loadedUserConfig = patchContext.UserSettings;
+            VerboseLogging = loadedUserConfig.VerboseLogging;
+            MergeLeveledLists = loadedUserConfig.MergeLeveledLists;
+            MergeLeveledCharacters = loadedUserConfig.MergeLeveledCharacters;
+            OpenEncounterZones = loadedUserConfig.OpenEncounterZones;
+
+            Mods.Clear();
+            foreach (ModKey mod in patchContext.ActiveMods)
+            {
+                var npcVisuals = loadedUserConfig.NpcVisualTemplateMods.Contains(mod);
+                var raceVisuals = loadedUserConfig.RaceVisualTemplateMods.Contains(mod);
+                Mods.Add(new ModViewModel(mod, npcVisuals, raceVisuals));
+            }
         }
 
         private class DelegateCommand : ICommand
