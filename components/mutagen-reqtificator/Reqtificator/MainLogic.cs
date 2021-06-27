@@ -15,7 +15,7 @@ namespace Reqtificator
     internal static class MainLogic
     {
         public static SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userConfig, ModKey outputModKey)
+            UserSettings userConfig, InternalEvents events, ModKey outputModKey)
         {
             //TODO: read this from the actual config files and pass as a argument to the function
             var armorConfig = new ArmorPatchingConfiguration(
@@ -52,13 +52,16 @@ namespace Reqtificator
                 new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
 
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
-            var armorsPatched = new ArmorTypeKeyword().AndThen(new ArmorRatingScaling(armorConfig))
+            var armorsPatched = new ArmorTypeKeyword()
+                .AndThen(new ArmorRatingScaling(armorConfig))
+                .AndThen(new ProgressReporter<Armor, IArmorGetter>(events))
                 .ProcessCollection(armors);
 
             var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
             var weaponsPatched = new WeaponDamageScaling().AndThen(new WeaponMeleeRangeScaling())
                 .AndThen(new WeaponNpcAmmunitionUsage())
                 .AndThen(new WeaponRangedSpeedScaling())
+                .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(events))
                 .ProcessCollection(weapons);
 
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));

@@ -60,7 +60,7 @@ namespace Reqtificator
             Log.Information("start patching");
             try
             {
-                return MainLogic.GeneratePatch(loadOrder, userConfig, patchModKey);
+                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, patchModKey);
             }
             catch (Exception ex)
             {
