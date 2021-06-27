@@ -53,7 +53,9 @@ namespace Reqtificator.Configuration
             var rawConfigs = activeMods.PriorityOrder
                 .Select(m => Path.Combine(baseFolder, m.ModKey.FileName.NameWithoutExtension, "Reqtificator.conf"))
                 .Where(File.Exists)
-                .Select(HoconConfigurationFactory.FromFile)
+                .WithIndex()
+                .Tap(f => Log.Information($"loading Reqtificator config (priority {f.Index + 1}) from '{f.Item}'"))
+                .Select(f => HoconConfigurationFactory.FromFile(f.Item))
                 .ToImmutableList();
 
             return ParseConfig(rawConfigs);

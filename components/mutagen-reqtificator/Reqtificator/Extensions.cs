@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
@@ -10,6 +11,15 @@ namespace Reqtificator
 {
     internal static class EnumerableExtensions
     {
+        public static IEnumerable<TSource> Tap<TSource>(this IEnumerable<TSource> source, Action<TSource> todo)
+        {
+            return source.Select(e =>
+            {
+                todo(e);
+                return e;
+            });
+        }
+
         public static bool ContainsNot<TSource>(this IEnumerable<TSource> source, TSource value)
         {
             return !source.Contains(value);
