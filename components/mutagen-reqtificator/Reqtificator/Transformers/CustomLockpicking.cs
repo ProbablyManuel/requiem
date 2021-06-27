@@ -41,11 +41,7 @@ namespace Reqtificator.Transformers
 
         public override void Process(TI record)
         {
-            if (record.VirtualMachineAdapter == null)
-            {
-                record.VirtualMachineAdapter = new VirtualMachineAdapter();
-            }
-
+            record.VirtualMachineAdapter ??= new VirtualMachineAdapter();
             record.VirtualMachineAdapter.Scripts.Add(_lockPickingScript);
             Log.Debug("added script for lockpicking implementation");
         }

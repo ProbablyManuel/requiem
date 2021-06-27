@@ -69,4 +69,10 @@ namespace Reqtificator.StaticReferences
         public static readonly IFormLinkGetter<IQuestGetter> FollowerControl =
             new FormLink<IQuestGetter>(FormKey.Factory("82F3AF:Requiem.esp"));
     }
+
+    public static class Npcs
+    {
+        public static readonly IFormLinkGetter<INpcGetter> Player =
+            new FormLink<INpcGetter>(FormKey.Factory("000007:Skyrim.esm"));
+    }
 }

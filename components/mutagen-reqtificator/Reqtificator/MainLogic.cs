@@ -4,6 +4,7 @@ using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.Export;
 using Reqtificator.Transformers;
+using Reqtificator.Transformers.Actors;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
 using Reqtificator.Transformers.Weapons;
@@ -19,6 +20,7 @@ namespace Reqtificator
         {
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
             var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE);
+            var importedModsLinkCache = loadOrder.ToImmutableLinkCache();
 
             var numberOfRecords = loadOrder.PriorityOrder.Armor().WinningOverrides().Count() + loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
             events.PublishPatchStarted(numberOfRecords);
@@ -50,12 +52,16 @@ namespace Reqtificator
                 .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(events))
                 .ProcessCollection(weapons);
 
+            var actors = loadOrder.PriorityOrder.Npc().WinningOverrides();
+            var actorsPatched = new ActorCommonScripts(importedModsLinkCache).ProcessCollection(actors);
+
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
             doorsPatched.ForEach(r => outputMod.Doors.Add(r));
             containersPatched.ForEach(r => outputMod.Containers.Add(r));
             armorsPatched.ForEach(r => outputMod.Armors.Add(r));
             ammoPatched.ForEach(r => outputMod.Ammunitions.Add(r));
             weaponsPatched.ForEach(r => outputMod.Weapons.Add(r));
+            actorsPatched.ForEach(r => outputMod.Npcs.Add(r));
 
             var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
 
