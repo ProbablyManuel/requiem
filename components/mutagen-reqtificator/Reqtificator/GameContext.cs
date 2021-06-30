@@ -1,10 +1,10 @@
 ﻿using Mutagen.Bethesda;
-using System.Collections.Immutable;
-using System.IO;
-using System.Linq;
 using Mutagen.Bethesda.Installs;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
+using System.Collections.Immutable;
+using System.IO;
+using System.Linq;
 
 namespace Reqtificator
 {

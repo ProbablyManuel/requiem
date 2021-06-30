@@ -1,5 +1,3 @@
-using System.IO;
-using System.Linq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
@@ -9,6 +7,8 @@ using Reqtificator.Transformers;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
 using Reqtificator.Transformers.Weapons;
+using System.IO;
+using System.Linq;
 
 namespace Reqtificator
 {
@@ -36,8 +36,9 @@ namespace Reqtificator
 
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
             var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE);
-            var numberOfRecordStages = 6;
-            events.PublishPatchStarted(numberOfRecordStages);
+
+            var numberOfRecords = loadOrder.PriorityOrder.Armor().WinningOverrides().Count() + loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
+            events.PublishPatchStarted(numberOfRecords);
 
             var ammoRecords = loadOrder.PriorityOrder.Ammunition().WinningOverrides();
             var ammoPatched = new AmmunitionTransformer().ProcessCollection(ammoRecords);
@@ -77,6 +78,7 @@ namespace Reqtificator
 
             var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
             PatchData.SetPatchHeadersAndVersion(requiem.Mod!, outputMod, version);
+            events.PublishPatchCompleted();
 
             return outputMod;
         }

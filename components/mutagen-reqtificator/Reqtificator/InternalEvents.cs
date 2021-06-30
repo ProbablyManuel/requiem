@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using Mutagen.Bethesda.Plugins;
-using Mutagen.Bethesda.Plugins.Order;
+﻿using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Reqtificator.Configuration;
 using Reqtificator.Transformers;
+using System;
+using System.Collections.Generic;
 
 namespace Reqtificator
 {
@@ -16,7 +14,7 @@ namespace Reqtificator
         public event EventHandler<PatchStarted> PatchStarted = delegate { };
         public event EventHandler<PatchCompleted> PatchCompleted = delegate { };
         public event EventHandler<Exception> ExceptionOccured = delegate { };
-        
+
         public event EventHandler<RecordProcessedResult<IMajorRecordGetter>> RecordProcessed = delegate { };
 
         internal void PublishReadyToPatch(UserSettings userConfig, IEnumerable<ModKey> activeMods)
@@ -28,9 +26,9 @@ namespace Reqtificator
         {
             PatchRequested.Invoke(this, userSettings);
         }
-        internal void PublishPatchStarted(int numberOfRecordStages)
+        public void PublishPatchStarted(int numberOfRecords)
         {
-            PatchStarted.Invoke(this, new PatchStarted(numberOfRecordStages));
+            PatchStarted.Invoke(this, new PatchStarted(numberOfRecords));
         }
 
         public void PublishPatchCompleted()
@@ -51,7 +49,7 @@ namespace Reqtificator
     }
 
     public record PatchContext(UserSettings UserSettings, IEnumerable<ModKey> ActiveMods);
-    public record PatchStarted(int NumberOfRecordStages);
+    public record PatchStarted(int NumberOfRecords);
     public record PatchCompleted;
     public record RecordProcessedResult<T>(T Record, bool Changed) where T : IMajorRecordGetter;
 }
