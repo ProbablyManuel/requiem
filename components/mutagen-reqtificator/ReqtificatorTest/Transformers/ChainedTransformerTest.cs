@@ -1,8 +1,8 @@
-﻿using System;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Moq;
 using Mutagen.Bethesda.Plugins.Records;
 using Reqtificator.Transformers;
+using System;
 using Xunit;
 
 namespace System.Runtime.CompilerServices
