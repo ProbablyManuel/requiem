@@ -55,16 +55,22 @@ namespace Reqtificator
         public SkyrimMod GeneratePatch(GameContext context, UserSettings userConfig, GameRelease release,
             ModKey patchModKey)
         {
-            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, release);
-
-            Log.Information("start patching");
             try
             {
-                return MainLogic.GeneratePatch(loadOrder, userConfig, patchModKey);
+                var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, release);
+                //TODO: update base folder for configurations if needed
+                var configFolder = Path.Combine(context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
+                var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, loadOrder);
+
+                Log.Information("start patching");
+
+                return MainLogic.GeneratePatch(loadOrder, userConfig, reqtificatorConfig, patchModKey);
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "things did not go according to plan");
                 _events.ReportException(ex);
+                //TODO: replace this throw with proper GUI-sided error handling
                 throw;
             }
         }
