@@ -15,25 +15,8 @@ namespace Reqtificator
     internal static class MainLogic
     {
         public static SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userConfig, ModKey outputModKey)
+            UserSettings userConfig, ReqtificatorConfig reqtificatorConfig, ModKey outputModKey)
         {
-            //TODO: read this from the actual config files and pass as a argument to the function
-            var armorConfig = new ArmorPatchingConfiguration(
-                HeavyArmorRatingThresholds: new ArmorRatingThresholds(
-                    Body: 74,
-                    Feet: 27,
-                    Hands: 27,
-                    Head: 35,
-                    Shield: 54),
-                LightArmorRatingThresholds: new ArmorRatingThresholds(
-                    Body: 62,
-                    Feet: 18,
-                    Hands: 18,
-                    Head: 26,
-                    Shield: 44
-                )
-            );
-
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
             var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE);
 
@@ -52,7 +35,8 @@ namespace Reqtificator
                 new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
 
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
-            var armorsPatched = new ArmorTypeKeyword().AndThen(new ArmorRatingScaling(armorConfig))
+            var armorsPatched = new ArmorTypeKeyword()
+                .AndThen(new ArmorRatingScaling(reqtificatorConfig.ArmorSettings))
                 .ProcessCollection(armors);
 
             var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();

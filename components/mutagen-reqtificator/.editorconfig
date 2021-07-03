@@ -11,6 +11,7 @@ dotnet_analyzer_diagnostic.severity = warning
 dotnet_diagnostic.CA1303.severity = none # we're not supporting any localization in the initial release
 dotnet_diagnostic.IDE0008.severity = none # I don't see a point in not using type-inference :)
 dotnet_diagnostic.CA1003.severity = none # seems to trigger false positives when I try to use relaxed non-"EventArgs" extending types for events
+dotnet_diagnostic.CA1826.severity = none # our collections shouldn't be large enough to suffer any noteworthy performance impacts 
 
 [UserSettings.cs]
 # only used to write booleans to json
