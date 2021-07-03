@@ -3,6 +3,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
+using Reqtificator.Exceptions;
 using Serilog;
 using System;
 using System.IO;
@@ -83,7 +84,12 @@ namespace Reqtificator
 
                 Log.Information("start patching");
 
-                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, reqtificatorConfig, patchModKey);
+                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, reqtificatorConfig, patchModKey) switch
+                {
+                    Success<SkyrimMod> s => s.Value,
+                    Failed<SkyrimMod> f => throw f.Error,
+                    _ => throw new NotImplementedException()
+                };
             }
             catch (Exception ex)
             {
