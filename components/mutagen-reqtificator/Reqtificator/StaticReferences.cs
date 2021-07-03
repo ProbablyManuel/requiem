@@ -59,6 +59,9 @@ namespace Reqtificator.StaticReferences
     {
         public static readonly IFormLinkGetter<IFormListGetter> ClosedEncounterZones =
             new FormLink<IFormListGetter>(FormKey.Factory("A46546:Requiem.esp"));
+
+        public static readonly IFormLinkGetter<IFormListGetter> GlobalPerks =
+            new FormLink<IFormListGetter>(FormKey.Factory("8F57EA:Requiem.esp"));
     }
 
     public static class Quests
