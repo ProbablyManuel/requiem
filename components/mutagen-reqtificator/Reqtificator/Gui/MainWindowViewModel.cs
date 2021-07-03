@@ -108,7 +108,14 @@ namespace Reqtificator.Gui
             maxRecords = 0;
             recordsProcessed = 0;
             IsPatching = false;
-            NotifyChanged(nameof(ProgramStatus), nameof(Progress), nameof(IsPatching));
+            NotifyChanged(
+                nameof(VerboseLogging),
+                nameof(MergeLeveledLists),
+                nameof(MergeLeveledCharacters),
+                nameof(OpenEncounterZones),
+                nameof(ProgramStatus),
+                nameof(Progress),
+                nameof(IsPatching));
         }
 
         private void NotifyChanged(params string[] propertyNames)

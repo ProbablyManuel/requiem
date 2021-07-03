@@ -23,11 +23,11 @@ namespace Reqtificator
             MainWindowViewModel mainWindowViewModel = new(eventQueue);
             MainWindow window = new() { DataContext = mainWindowViewModel };
 
-            var backend = new Backend(eventQueue);
-
             eventQueue.ExceptionOccured += (_, ex) => { HandleError(ex, window); };
 
             window.Show();
+
+            var backend = new Backend(eventQueue);
             Log.Debug("Gui Started");
         }
 
