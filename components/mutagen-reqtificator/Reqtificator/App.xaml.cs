@@ -33,6 +33,8 @@ namespace Reqtificator
             MainWindow window = new() { DataContext = mainWindowViewModel };
             window.Show();
 
+            eventQueue.ExceptionOccured += (_, ex) => { HandleError(ex, window); };
+
             eventQueue.PatchRequested += (_, updatedSettings) =>
             {
                 updatedSettings.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json"));
@@ -45,6 +47,14 @@ namespace Reqtificator
             };
 
             Log.Debug("Gui Started");
+        }
+
+        private static void HandleError(System.Exception ex, MainWindow window)
+        {
+            var messageText = "Unfortunately an error occurred:\r\n" + ex.Message;
+            MessageBox.Show(messageText, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            Log.Error(ex.ToString());
+            window.Close();
         }
     }
 }
