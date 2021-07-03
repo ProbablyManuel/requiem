@@ -39,6 +39,7 @@ namespace Reqtificator
             var userConfig = LoadAndVerifyUserSettings(context);
 
             _events.PublishReadyToPatch(userConfig, context.ActiveMods.Select(x => x.ModKey));
+            Log.Information("Ready to patch: userConfig detected\r\n{userConfig}", userConfig);
 
             _events.PatchRequested += (_, updatedSettings) =>
             {
@@ -72,16 +73,23 @@ namespace Reqtificator
         public SkyrimMod GeneratePatch(GameContext context, UserSettings userConfig, GameRelease release,
             ModKey patchModKey)
         {
-            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, release);
-
-            Log.Information("start patching");
             try
             {
-                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, patchModKey);
+
+                var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, release);
+                //TODO: update base folder for configurations if needed
+                var configFolder = Path.Combine(context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
+                var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, loadOrder);
+
+                Log.Information("start patching");
+
+                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, reqtificatorConfig, patchModKey);
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "things did not go according to plan");
                 _events.ReportException(ex);
+                //TODO: replace this throw with proper GUI-sided error handling
                 throw;
             }
         }
