@@ -2,6 +2,7 @@
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.StaticReferences;
+using Serilog;
 
 namespace Reqtificator.Transformers.Actors
 {
@@ -28,12 +29,14 @@ namespace Reqtificator.Transformers.Actors
                 {
                     r.VirtualMachineAdapter ??= new VirtualMachineAdapter();
                     r.VirtualMachineAdapter.Scripts.AddRange(Scripts);
+                    Log.Debug("added game mechanics scripts");
                 }),
                 ILeveledNpcGetter _ or null => input.Modify(r =>
                 {
                     r.VirtualMachineAdapter ??= new VirtualMachineAdapter();
                     r.VirtualMachineAdapter.Scripts.AddRange(Scripts);
                     r.Configuration.TemplateFlags &= ~NpcConfiguration.TemplateFlag.Script;
+                    Log.Debug("added game mechanics scripts");
                 }),
                 _ => input
             };

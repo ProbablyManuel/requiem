@@ -2,6 +2,7 @@
 using Noggog;
 using Reqtificator.Configuration;
 using Reqtificator.StaticReferences;
+using Serilog;
 
 namespace Reqtificator.Transformers.Actors
 {
@@ -24,6 +25,7 @@ namespace Reqtificator.Transformers.Actors
                 record.Configuration.MagickaOffset = (short)_config.MagickaOffset;
                 record.Configuration.StaminaOffset = (short)_config.StaminaOffset;
                 _config.SpellsToRemove.ForEach(s => record.ActorEffect?.Remove(s));
+                Log.Debug("applied player-specific changes (attribute offsets and starting spell removal)");
             });
         }
     }
