@@ -16,10 +16,8 @@ namespace Reqtificator.Gui
     {
         private readonly InternalEvents _events;
         private readonly SynchronizationContext? _syncContext;
+        private readonly BackgroundWorker worker = new();
         private int recordsProcessed;
-        private BackgroundWorker worker = new();
-
-        private UserSettings updatedUserSettings = new UserSettings(false, false, false, false, new List<ModKey>().ToImmutableList(), new List<ModKey>().ToImmutableList());
 
         public bool IsPatching { get; private set; }
 
@@ -52,15 +50,14 @@ namespace Reqtificator.Gui
         }
         private void RequestPatch()
         {
-            ProgramStatus = "patching";
+            ProgramStatus = "Patching";
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
-            updatedUserSettings =
-                new(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
+            var updatedUserSettings =
+                new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
                     Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods
                         .Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
 
             // NB: These have to be instance-level so that they don't get garbage-disposed while they're running.
-            worker = new BackgroundWorker();
             worker.DoWork += (_, _1) => { _events.RequestPatch(updatedUserSettings); };
             worker.RunWorkerAsync();
         }
