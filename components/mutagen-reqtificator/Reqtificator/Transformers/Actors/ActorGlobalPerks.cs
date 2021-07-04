@@ -6,6 +6,7 @@ using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.StaticReferences;
+using Serilog;
 
 namespace Reqtificator.Transformers.Actors
 {
@@ -20,8 +21,9 @@ namespace Reqtificator.Transformers.Actors
 
         public override TransformationResult<Npc, INpcGetter> Process(TransformationResult<Npc, INpcGetter> input)
         {
-            if (input.Record().Template.IsNotNull() && input.Record().Configuration.TemplateFlags
-                .HasFlag(NpcConfiguration.TemplateFlag.SpellList))
+            if (_globalPerks.Count == 0 ||
+                (input.Record().Template.IsNotNull() && input.Record().Configuration
+                .TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.SpellList)))
                 return input;
 
             return input.Modify(record =>
@@ -30,6 +32,7 @@ namespace Reqtificator.Transformers.Actors
                 var presentPerks = record.Perks.Select(p => p.Perk.AsGetter()).ToImmutableHashSet();
                 _globalPerks.Where(p => presentPerks.ContainsNot(p))
                     .ForEach(p => record.Perks.Add(new PerkPlacement { Perk = p.AsSetter(), Rank = 1 }));
+                Log.Debug("added global perks to actor");
             });
         }
     }

@@ -111,5 +111,21 @@ namespace ReqtificatorTest.Transformers.Actors
             result.Should().BeOfType<UnChanged<Npc, INpcGetter>>();
             result.Record().Equals(input).Should().BeTrue();
         }
+
+        [Fact]
+        public void Should_not_patch_records_if_the_list_of_perks_to_add_is_empty()
+        {
+            var transformer = new ActorGlobalPerks(ImmutableHashSet.Create<IFormLinkGetter<IPerkGetter>>());
+
+            var input = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(FormKey.Factory("ABCDEF:Requiem.esp")),
+                Configuration = new NpcConfiguration { TemplateFlags = 0 },
+                Perks = null
+            };
+            var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
+            result.Should().BeOfType<UnChanged<Npc, INpcGetter>>();
+            result.Record().Equals(input).Should().BeTrue();
+        }
     }
 }
