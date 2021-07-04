@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Collections.Immutable;
 using FluentAssertions;
 using Moq;
-using Mutagen.Bethesda.Cache.Implementations;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
