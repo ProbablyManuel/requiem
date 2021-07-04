@@ -1,5 +1,5 @@
-﻿using System;
-using Mutagen.Bethesda.Plugins.Records;
+﻿using Mutagen.Bethesda.Plugins.Records;
+using System;
 
 namespace Reqtificator.Transformers
 {
@@ -8,6 +8,8 @@ namespace Reqtificator.Transformers
     {
         internal abstract TransformationResult<T, TGetter> Modify(Action<T> func);
         internal abstract TGetter Record();
+
+        internal abstract bool IsModified();
     }
 
     record UnChanged<T, TGetter>(TGetter Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
@@ -21,6 +23,7 @@ namespace Reqtificator.Transformers
         }
 
         internal override TGetter Record() => Underlying;
+        internal override bool IsModified() => false;
     }
 
     record Modified<T, TGetter>(T Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
@@ -33,5 +36,7 @@ namespace Reqtificator.Transformers
         }
 
         internal override TGetter Record() => Underlying;
+
+        internal override bool IsModified() => true;
     }
 }

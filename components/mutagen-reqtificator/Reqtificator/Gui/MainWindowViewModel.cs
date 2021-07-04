@@ -1,19 +1,27 @@
-﻿using System;
+﻿using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Records;
+using Reqtificator.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading;
 using System.Windows.Input;
-using Mutagen.Bethesda.Plugins;
-using Mutagen.Bethesda.Plugins.Order;
-using Reqtificator.Configuration;
 
 namespace Reqtificator.Gui
 {
-    internal class MainWindowViewModel : INotifyPropertyChanged
+    internal class MainWindowViewModel : INotifyPropertyChanged, IDisposable
     {
         private readonly InternalEvents _events;
+        private readonly SynchronizationContext? _syncContext;
+        private readonly BackgroundWorker worker = new();
+        private int recordsProcessed;
+
+        public bool IsPatching { get; private set; }
+
+        private int maxRecords;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -25,41 +33,94 @@ namespace Reqtificator.Gui
         public bool OpenEncounterZones { get; set; }
         public ICommand PatchCommand => new DelegateCommand(RequestPatch);
 
-        public string ProgramStatus { get; private set; } = "ready";
+        public string ProgramStatus { get; private set; }
+        public double Progress => maxRecords == 0 ? 0 : recordsProcessed * 100 / maxRecords;
 
+        public MainWindowViewModel(InternalEvents eventsQueue)
+        {
+            Mods = new ObservableCollection<ModViewModel>();
+            ProgramStatus = "";
+
+            _syncContext = SynchronizationContext.Current;
+            _events = eventsQueue;
+            _events.ReadyToPatch += (_, patchContext) => { _syncContext?.Post(_ => HandlePatchReady(patchContext), null); };
+            _events.PatchStarted += (_, patchStarted) => { _syncContext?.Post(_ => HandlePatchStarted(patchStarted), null); };
+            _events.PatchCompleted += (_, _1) => { _syncContext?.Post(_ => HandlePatchCompleted(), null); };
+            _events.RecordProcessed += (_, result) => { _syncContext?.Post(_ => HandlePatchProgress(result), null); };
+        }
         private void RequestPatch()
         {
-            ProgramStatus = "patching";
+            ProgramStatus = "Patching";
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
-            UserSettings updatedUserSettings =
-                new(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
+            var updatedUserSettings =
+                new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
                     Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods
                         .Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
-            _events.RequestPatch(updatedUserSettings);
+
+            // NB: These have to be instance-level so that they don't get garbage-disposed while they're running.
+            worker.DoWork += (_, _1) => { _events.RequestPatch(updatedUserSettings); };
+            worker.RunWorkerAsync();
         }
 
-        public MainWindowViewModel(InternalEvents eventsQueue, UserSettings loadedUserConfig,
-            IReadOnlyList<IModListingGetter> loadOrder)
+        private void HandlePatchProgress(RecordProcessedResult<IMajorRecordGetter> result)
         {
-            _events = eventsQueue;
+            ProgramStatus = "Processed " + result.Record.GetType() + " " + result.Record.FormKey.ToString();
+            recordsProcessed++;
+            NotifyChanged(nameof(ProgramStatus), nameof(Progress));
+        }
+
+        private void HandlePatchCompleted()
+        {
+            ProgramStatus = "Done!";
+            recordsProcessed++;
+            IsPatching = false;
+            NotifyChanged(nameof(ProgramStatus), nameof(Progress), nameof(IsPatching));
+        }
+
+        private void HandlePatchStarted(PatchStarted patchStarted)
+        {
+            maxRecords = patchStarted.NumberOfRecords;
+            recordsProcessed = 0;
+            IsPatching = true;
+            NotifyChanged(nameof(ProgramStatus), nameof(Progress), nameof(IsPatching));
+        }
+
+        private void HandlePatchReady(PatchContext patchContext)
+        {
+            var loadedUserConfig = patchContext.UserSettings;
             VerboseLogging = loadedUserConfig.VerboseLogging;
             MergeLeveledLists = loadedUserConfig.MergeLeveledLists;
             MergeLeveledCharacters = loadedUserConfig.MergeLeveledCharacters;
             OpenEncounterZones = loadedUserConfig.OpenEncounterZones;
 
-            Mods = new ObservableCollection<ModViewModel>();
-            foreach (ModKey mod in loadOrder.Select(x => x.ModKey))
+            Mods.Clear();
+            foreach (ModKey mod in patchContext.ActiveMods)
             {
                 var npcVisuals = loadedUserConfig.NpcVisualTemplateMods.Contains(mod);
                 var raceVisuals = loadedUserConfig.RaceVisualTemplateMods.Contains(mod);
                 Mods.Add(new ModViewModel(mod, npcVisuals, raceVisuals));
             }
 
-            _events.PatchCompleted += (_, _1) =>
+            ProgramStatus = "Ready to patch...";
+            maxRecords = 0;
+            recordsProcessed = 0;
+            IsPatching = false;
+            NotifyChanged(
+                nameof(VerboseLogging),
+                nameof(MergeLeveledLists),
+                nameof(MergeLeveledCharacters),
+                nameof(OpenEncounterZones),
+                nameof(ProgramStatus),
+                nameof(Progress),
+                nameof(IsPatching));
+        }
+
+        private void NotifyChanged(params string[] propertyNames)
+        {
+            foreach (string propertyName in propertyNames)
             {
-                ProgramStatus = "done";
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
-            };
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            }
         }
 
         private class DelegateCommand : ICommand
@@ -81,6 +142,11 @@ namespace Reqtificator.Gui
             {
                 return true;
             }
+        }
+
+        public void Dispose()
+        {
+            worker.Dispose();
         }
     }
 }

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Reqtificator"
+        xmlns:gui="clr-namespace:Reqtificator.Gui"
         mc:Ignorable="d"
         Title="Reqtificator" SizeToContent="WidthAndHeight">
     <Window.Resources>
@@ -25,7 +26,9 @@
         <Style TargetType="ListView">
             <Setter Property="FontSize" Value="14" />
         </Style>
-    </Window.Resources>
+        <BooleanToVisibilityConverter x:Key="VisibleIfTrueConverter" />
+        <gui:InverseBooleanConverter x:Key="InverseConverter" />
+        </Window.Resources>
     <StackPanel>
         <CheckBox IsChecked="{Binding VerboseLogging}">Verbose logging</CheckBox>
         <CheckBox IsChecked="{Binding MergeLeveledCharacters}">Merge leveled characters</CheckBox>
@@ -65,7 +68,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Command="{Binding PatchCommand}" Width="80" HorizontalAlignment="Left">Patch</Button>
         <Label Content="{Binding ProgramStatus}"/>
+        <ProgressBar Height="10" Value="{Binding Progress, Mode=OneWay}" Visibility="{Binding IsPatching, Converter={StaticResource VisibleIfTrueConverter}}" />
+        <Button Command="{Binding PatchCommand}" Width="80" HorizontalAlignment="Left" IsEnabled="{Binding IsPatching, Converter={StaticResource InverseConverter}}">Patch</Button>
     </StackPanel>
 </Window>

@@ -1,5 +1,3 @@
-using System.IO;
-using System.Linq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
@@ -9,16 +7,21 @@ using Reqtificator.Transformers;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
 using Reqtificator.Transformers.Weapons;
+using System.IO;
+using System.Linq;
 
 namespace Reqtificator
 {
     internal static class MainLogic
     {
         public static SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userConfig, ReqtificatorConfig reqtificatorConfig, ModKey outputModKey)
+            UserSettings userConfig, InternalEvents events, ReqtificatorConfig reqtificatorConfig, ModKey outputModKey)
         {
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
             var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE);
+
+            var numberOfRecords = loadOrder.PriorityOrder.Armor().WinningOverrides().Count() + loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
+            events.PublishPatchStarted(numberOfRecords);
 
             var ammoRecords = loadOrder.PriorityOrder.Ammunition().WinningOverrides();
             var ammoPatched = new AmmunitionTransformer().ProcessCollection(ammoRecords);
@@ -37,12 +40,14 @@ namespace Reqtificator
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
             var armorsPatched = new ArmorTypeKeyword()
                 .AndThen(new ArmorRatingScaling(reqtificatorConfig.ArmorSettings))
+                .AndThen(new ProgressReporter<Armor, IArmorGetter>(events))
                 .ProcessCollection(armors);
 
             var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
             var weaponsPatched = new WeaponDamageScaling().AndThen(new WeaponMeleeRangeScaling())
                 .AndThen(new WeaponNpcAmmunitionUsage())
                 .AndThen(new WeaponRangedSpeedScaling())
+                .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(events))
                 .ProcessCollection(weapons);
 
             encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
@@ -56,6 +61,7 @@ namespace Reqtificator
 
             var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
             PatchData.SetPatchHeadersAndVersion(requiem.Mod!, outputMod, version);
+            events.PublishPatchCompleted();
 
             return outputMod;
         }

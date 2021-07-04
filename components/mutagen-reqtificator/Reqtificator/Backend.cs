@@ -1,13 +1,13 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using Mutagen.Bethesda;
+﻿using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Serilog;
+using System;
+using System.IO;
+using System.Linq;
+using System.Runtime.CompilerServices;
 
 [assembly: CLSCompliant(false)]
 [assembly: InternalsVisibleTo("ReqtificatorTest")]
@@ -24,6 +24,8 @@ namespace Reqtificator
 {
     internal class Backend
     {
+        private const GameRelease Release = GameRelease.SkyrimSE;
+        private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Mutated.esp");
         private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
 
         private readonly InternalEvents _events;
@@ -32,6 +34,22 @@ namespace Reqtificator
         {
             _events = eventsQueue;
             WarmupSkyrim.Init();
+
+            var context = GameContext.GetRequiemContext(Release, PatchModKey);
+            var userConfig = LoadAndVerifyUserSettings(context);
+
+            _events.PublishReadyToPatch(userConfig, context.ActiveMods.Select(x => x.ModKey));
+            Log.Information("Ready to patch: userConfig detected\r\n{userConfig}", userConfig);
+
+            _events.PatchRequested += (_, updatedSettings) =>
+            {
+                updatedSettings.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json"));
+                var generatedPatch = GeneratePatch(context, updatedSettings, Release, PatchModKey);
+                Log.Information("done patching, now exporting to disk");
+                MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
+                Log.Information("done exporting");
+                _events.PublishPatchCompleted();
+            };
         }
 
         public UserSettings LoadAndVerifyUserSettings(GameContext context)
@@ -57,6 +75,7 @@ namespace Reqtificator
         {
             try
             {
+
                 var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, release);
                 //TODO: update base folder for configurations if needed
                 var configFolder = Path.Combine(context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
@@ -64,7 +83,7 @@ namespace Reqtificator
 
                 Log.Information("start patching");
 
-                return MainLogic.GeneratePatch(loadOrder, userConfig, reqtificatorConfig, patchModKey);
+                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, reqtificatorConfig, patchModKey);
             }
             catch (Exception ex)
             {
