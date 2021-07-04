@@ -1,8 +1,8 @@
-﻿using System;
-using Mutagen.Bethesda.Plugins;
+﻿using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.StaticReferences;
+using System;
 
 namespace Reqtificator.Transformers.Weapons
 {

@@ -1,10 +1,10 @@
-﻿using System.Collections.Immutable;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Moq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Transformers.EncounterZones;
+using System.Collections.Immutable;
 using Xunit;
 using ZoneRef = Mutagen.Bethesda.Plugins.IFormLink<Mutagen.Bethesda.Skyrim.IEncounterZoneGetter>;
 

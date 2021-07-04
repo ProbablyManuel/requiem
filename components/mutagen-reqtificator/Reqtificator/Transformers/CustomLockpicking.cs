@@ -1,9 +1,9 @@
-﻿using System.Linq;
-using Mutagen.Bethesda;
+﻿using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.StaticReferences;
 using Serilog;
+using System.Linq;
 
 namespace Reqtificator.Transformers
 {
