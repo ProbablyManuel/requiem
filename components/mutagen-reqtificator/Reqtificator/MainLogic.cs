@@ -2,7 +2,6 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
-using Reqtificator.Exceptions;
 using Reqtificator.Export;
 using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
@@ -58,6 +57,7 @@ namespace Reqtificator
             var actorsPatched = globalPerks.Map(perks =>
                 new ActorCommonScripts(importedModsLinkCache)
                     .AndThen(new ActorGlobalPerks(perks))
+                    .AndThen(new PlayerChanges(reqtificatorConfig.PlayerConfig))
                     .ProcessCollection(actors));
 
             var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE).AsSuccess()
