@@ -7,10 +7,10 @@ using Mutagen.Bethesda.Skyrim;
 
 namespace Reqtificator.Transformers.Rules.Conditions
 {
-    internal record HasAnyKeyword<TMajor>
+    public record HasNoneOfKeywords<TMajor>
         (IReadOnlySet<IFormLinkGetter<IKeywordGetter>> Keywords) : IAssignmentCondition<TMajor>
         where TMajor : IMajorRecordGetter, IKeywordedGetter
     {
-        public bool CheckRecord(TMajor record) => Keywords.Any(k => record.Keywords?.Contains(k) ?? false);
+        public bool CheckRecord(TMajor record) => Keywords.All(k => record.Keywords?.ContainsNot(k) ?? true);
     }
 }

@@ -11,9 +11,6 @@ namespace Reqtificator.Transformers.Rules.Conditions
         (IReadOnlySet<IFormLinkGetter<IKeywordGetter>> Keywords) : IAssignmentCondition<TMajor>
         where TMajor : IMajorRecordGetter, IKeywordedGetter
     {
-        public bool CheckRecord(TMajor record)
-        {
-            return Keywords.All(k => record.Keywords?.Contains(k) ?? false);
-        }
+        public bool CheckRecord(TMajor record) => Keywords.All(k => record.Keywords?.Contains(k) ?? false);
     }
 }
