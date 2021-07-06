@@ -3,7 +3,9 @@ using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.Export;
+using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
+using Reqtificator.Transformers.Actors;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
 using Reqtificator.Transformers.Weapons;
@@ -14,11 +16,11 @@ namespace Reqtificator
 {
     internal static class MainLogic
     {
-        public static SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
+        public static ErrorOr<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             UserSettings userConfig, InternalEvents events, ReqtificatorConfig reqtificatorConfig, ModKey outputModKey)
         {
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
-            var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE);
+            var importedModsLinkCache = loadOrder.ToImmutableLinkCache();
 
             var numberOfRecords = loadOrder.PriorityOrder.Armor().WinningOverrides().Count() + loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
             events.PublishPatchStarted(numberOfRecords);
@@ -50,17 +52,27 @@ namespace Reqtificator
                 .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(events))
                 .ProcessCollection(weapons);
 
-            encounterZonesPatched.ForEach(r => outputMod.EncounterZones.Add(r));
-            doorsPatched.ForEach(r => outputMod.Doors.Add(r));
-            containersPatched.ForEach(r => outputMod.Containers.Add(r));
-            armorsPatched.ForEach(r => outputMod.Armors.Add(r));
-            ammoPatched.ForEach(r => outputMod.Ammunitions.Add(r));
-            weaponsPatched.ForEach(r => outputMod.Weapons.Add(r));
+            var actors = loadOrder.PriorityOrder.Npc().WinningOverrides();
+            var globalPerks = Utils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
+            var actorsPatched = globalPerks.Map(perks =>
+                new ActorCommonScripts(importedModsLinkCache)
+                    .AndThen(new ActorGlobalPerks(perks))
+                    .AndThen(new PlayerChanges(reqtificatorConfig.PlayerConfig))
+                    .ProcessCollection(actors));
+
+            var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE).AsSuccess()
+                .Map(m => m.WithRecords(encounterZonesPatched))
+                .Map(m => m.WithRecords(doorsPatched))
+                .Map(m => m.WithRecords(containersPatched))
+                .Map(m => m.WithRecords(armorsPatched))
+                .Map(m => m.WithRecords(ammoPatched))
+                .Map(m => m.WithRecords(weaponsPatched))
+                .FlatMap(m => actorsPatched.Map(m.WithRecords));
 
             var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
 
             var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
-            PatchData.SetPatchHeadersAndVersion(requiem.Mod!, outputMod, version);
+            outputMod.Map(m => { PatchData.SetPatchHeadersAndVersion(requiem.Mod!, m, version); return m; });
             events.PublishPatchCompleted();
 
             return outputMod;
