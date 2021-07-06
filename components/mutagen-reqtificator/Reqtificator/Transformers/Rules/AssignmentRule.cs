@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
+using Noggog;
 
 namespace Reqtificator.Transformers.Rules
 {
@@ -14,7 +17,7 @@ namespace Reqtificator.Transformers.Rules
         public bool CheckRecord(TMajorGetter record);
     }
 
-    internal abstract class AssignmentRule<TMajorGetter, TAssign> where TMajorGetter : IMajorRecordGetter
+    internal sealed class AssignmentRule<TMajorGetter, TAssign> where TMajorGetter : IMajorRecordGetter
         where TAssign : class, IMajorRecordGetter
     {
         public IReadOnlySet<IAssignmentCondition<TMajorGetter>> Conditions { get; }
@@ -25,7 +28,7 @@ namespace Reqtificator.Transformers.Rules
 
         public string NodeName { get; }
 
-        protected AssignmentRule(IReadOnlySet<IAssignmentCondition<TMajorGetter>> conditions,
+        public AssignmentRule(IReadOnlySet<IAssignmentCondition<TMajorGetter>> conditions,
             IReadOnlySet<IFormLinkGetter<TAssign>> assignments, IReadOnlySet<AssignmentRule<TMajorGetter, TAssign>> subNodes,
             string nodeName)
         {
@@ -51,6 +54,39 @@ namespace Reqtificator.Transformers.Rules
             }
 
             return ImmutableList<Assignment<TAssign>>.Empty;
+        }
+
+        public static IImmutableList<AssignmentRule<TMajorGetter, TAssign>> LoadFromConfigurationFile(Config config,
+            Func<HoconField, IReadOnlySet<IFormLinkGetter<TAssign>>?> assignmentExtractor,
+            Func<HoconField, IAssignmentCondition<TMajorGetter>?> conditionExtractor
+            )
+        {
+            AssignmentRule<TMajorGetter, TAssign> NodeExtractor(HoconField content)
+            {
+                IReadOnlySet<IFormLinkGetter<TAssign>>? assignments = null;
+                var conditions = ImmutableHashSet<IAssignmentCondition<TMajorGetter>>.Empty;
+                var subNodes = ImmutableHashSet<AssignmentRule<TMajorGetter, TAssign>>.Empty;
+
+                content.GetObject().ForEach(e =>
+                {
+                    if (assignmentExtractor(e.Value) is var maybeAssignment && maybeAssignment is not null)
+                        assignments = maybeAssignment;
+                    else if (conditionExtractor(e.Value) is var maybeCondition && maybeCondition is not null)
+                        conditions = conditions.Add(maybeCondition);
+                    else
+                        subNodes = subNodes.Add(NodeExtractor(e.Value));
+                });
+                return new AssignmentRule<TMajorGetter, TAssign>(
+                    assignments: assignments ?? ImmutableHashSet<IFormLinkGetter<TAssign>>.Empty,
+                    conditions: conditions,
+                    nodeName: content.Key,
+                    subNodes: subNodes
+                );
+            }
+
+            return config.Root.GetObject().Where(e => e.Key.StartsWith("feature_"))
+                .Select(kv => NodeExtractor(kv.Value))
+                .ToImmutableList();
         }
     }
 }
