@@ -1,14 +1,13 @@
-﻿using Mutagen.Bethesda;
+﻿using System;
+using System.IO;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
-using Reqtificator.Exceptions;
 using Serilog;
-using System;
-using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
 
 [assembly: CLSCompliant(false)]
 [assembly: InternalsVisibleTo("ReqtificatorTest")]
@@ -76,7 +75,6 @@ namespace Reqtificator
         {
             try
             {
-
                 var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, release);
                 //TODO: update base folder for configurations if needed
                 var configFolder = Path.Combine(context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
@@ -84,7 +82,8 @@ namespace Reqtificator
 
                 Log.Information("start patching");
 
-                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, reqtificatorConfig, patchModKey) switch
+                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, reqtificatorConfig, context,
+                        patchModKey) switch
                 {
                     Success<SkyrimMod> s => s.Value,
                     Failed<SkyrimMod> f => throw f.Error,
