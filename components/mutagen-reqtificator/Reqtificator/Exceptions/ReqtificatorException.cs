@@ -16,5 +16,17 @@ namespace Reqtificator.Exceptions
         {
             Unresolved = unresolved;
         }
-    };
+    }
+
+    public class RuleConfigurationParsingException : ReqtificatorException
+    {
+        public string SourceFile { get; }
+        public string? FailingPath { get; }
+
+        public RuleConfigurationParsingException(string sourceFile, string? failingPath = null)
+        {
+            SourceFile = sourceFile;
+            FailingPath = failingPath;
+        }
+    }
 }

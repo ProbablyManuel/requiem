@@ -29,7 +29,8 @@ namespace Reqtificator.Transformers.Rules
         public string NodeName { get; }
 
         public AssignmentRule(IReadOnlySet<IAssignmentCondition<TMajorGetter>> conditions,
-            IReadOnlySet<IFormLinkGetter<TAssign>> assignments, IReadOnlySet<AssignmentRule<TMajorGetter, TAssign>> subNodes,
+            IReadOnlySet<IFormLinkGetter<TAssign>> assignments,
+            IReadOnlySet<AssignmentRule<TMajorGetter, TAssign>> subNodes,
             string nodeName)
         {
             Conditions = conditions;
@@ -56,10 +57,28 @@ namespace Reqtificator.Transformers.Rules
             return ImmutableList<Assignment<TAssign>>.Empty;
         }
 
+        public override bool Equals(object? obj)
+        {
+            return obj switch
+            {
+                AssignmentRule<TMajorGetter, TAssign> other => NodeName.Equals(other.NodeName, StringComparison.Ordinal)
+                                                               && Conditions.SetEquals(other.Conditions)
+                                                               && Assignments.SetEquals(other.Assignments)
+                                                               && SubNodes.SetEquals(other.SubNodes),
+                _ => false
+            };
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Conditions.Select(x => x.GetHashCode()).Sum(),
+                Assignments.Select(x => x.GetHashCode()).Sum(), SubNodes.Select(x => x.GetHashCode()).Sum(), NodeName);
+        }
+
         public static IImmutableList<AssignmentRule<TMajorGetter, TAssign>> LoadFromConfigurationFile(Config config,
             Func<HoconField, IReadOnlySet<IFormLinkGetter<TAssign>>?> assignmentExtractor,
             Func<HoconField, IAssignmentCondition<TMajorGetter>?> conditionExtractor
-            )
+        )
         {
             AssignmentRule<TMajorGetter, TAssign> NodeExtractor(HoconField content)
             {
