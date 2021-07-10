@@ -30,7 +30,13 @@ namespace Reqtificator.Transformers.Rules.Conditions
 
         public override int GetHashCode()
         {
-            return 3 + Keywords.Select(x => x.GetHashCode()).Sum();
+            unchecked
+            {
+                int sum = 0;
+                foreach (IFormLinkGetter<IKeywordGetter> x in Keywords) sum += x.GetHashCode();
+
+                return 3 + sum;
+            }
         }
     }
 }

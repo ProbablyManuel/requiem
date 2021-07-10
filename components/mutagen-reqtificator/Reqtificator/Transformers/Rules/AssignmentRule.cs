@@ -71,8 +71,20 @@ namespace Reqtificator.Transformers.Rules
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Conditions.Select(x => x.GetHashCode()).Sum(),
-                Assignments.Select(x => x.GetHashCode()).Sum(), SubNodes.Select(x => x.GetHashCode()).Sum(), NodeName);
+            unchecked
+            {
+                int sum = 0;
+                foreach (IAssignmentCondition<TMajorGetter> x in Conditions) sum += x.GetHashCode();
+
+                int sum1 = 0;
+                foreach (IFormLinkGetter<TAssign> x in Assignments) sum1 += x.GetHashCode();
+
+                int sum2 = 0;
+                foreach (AssignmentRule<TMajorGetter, TAssign> x in SubNodes) sum2 += x.GetHashCode();
+
+                return HashCode.Combine(sum,
+                    sum1, sum2, NodeName);
+            }
         }
 
         public static IImmutableList<AssignmentRule<TMajorGetter, TAssign>> LoadFromConfigurationFile(Config config,
@@ -103,7 +115,7 @@ namespace Reqtificator.Transformers.Rules
                 );
             }
 
-            return config.Root.GetObject().Where(e => e.Key.StartsWith("feature_"))
+            return config.Root.GetObject().Where(e => e.Key.StartsWith("feature_", StringComparison.InvariantCulture))
                 .Select(kv => NodeExtractor(kv.Value))
                 .ToImmutableList();
         }

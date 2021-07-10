@@ -18,7 +18,8 @@ namespace ReqtificatorTest.Transformers
                 {new FormLink<IKeywordGetter>(FormKey.Factory("ABC123:Assign.esp"))},
             conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty.Add(
                 new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(
-                    new FormLink<IKeywordGetter>(FormKey.Factory("123ABC:Skyrim.esm"))))
+                    new FormLink<IKeywordGetter>(FormKey.Factory("123ABC:Skyrim.esm"))).Add(
+                    new FormLink<IKeywordGetter>(FormKey.Factory("123890:Skyrim.esm"))))
             ),
             nodeName: "some_node",
             subNodes: new HashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>()
@@ -54,7 +55,7 @@ namespace ReqtificatorTest.Transformers
                 feature_foo {
                     keywords_all = [ ""123456:Skyrim.esm"" ]
                     some_node {
-                        keywords_all = [ ""123ABC:Skyrim.esm"" ]
+                        keywords_all = [ ""123ABC:Skyrim.esm"", ""123890:Skyrim.esm"" ]
                         keywords_assign = [ ""ABC123:Assign.esp""]
                     }
                     other_node {
@@ -75,7 +76,7 @@ namespace ReqtificatorTest.Transformers
                 feature_foo {
                     keywords_all = [ """"""123456:Skyrim.esm"""""" ]
                     some_node {
-                        keywords_all = [ ""123ABC:Skyrim.esm"" ]
+                        keywords_all = [ ""123ABC:Skyrim.esm"", ""123890:Skyrim.esm"" ]
                         keywords_assign = [ ""ABC123:Assign.esp""]
                     }
                     other_node {
@@ -96,7 +97,7 @@ namespace ReqtificatorTest.Transformers
                 feature_foo {
                     keywords_all = [ ""123456 Skyrim.esm"" ]
                     some_node {
-                        keywords_all = [ ""123ABC:Skyrim.esm"" ]
+                        keywords_all = [ ""123ABC:Skyrim.esm"", ""123890:Skyrim.esm"" ]
                         keywords_assign = [ ""ABC123:Assign.esp""]
                     }
                     other_node {
@@ -117,7 +118,7 @@ namespace ReqtificatorTest.Transformers
                 feature_foo {
                     keywords_all = [ [""123456:Skyrim.esm""] ]
                     some_node {
-                        keywords_all = [ ""123ABC:Skyrim.esm"" ]
+                        keywords_all = [ [""123ABC:Skyrim.esm""] [""123890:Skyrim.esm""] ]
                         keywords_assign = [ ""ABC123:Assign.esp""]
                     }
                     other_node {
@@ -138,7 +139,7 @@ namespace ReqtificatorTest.Transformers
                 feature_foo {
                     keywords_all = [ { foo = ""123456:Skyrim.esm""} ]
                     some_node {
-                        keywords_all = [ ""123ABC:Skyrim.esm"" ]
+                        keywords_all = [ { foo = ""123ABC:Skyrim.esm"", bla = ""123890:Skyrim.esm""} ]
                         keywords_assign = [ ""ABC123:Assign.esp""]
                     }
                     other_node {
@@ -159,7 +160,51 @@ namespace ReqtificatorTest.Transformers
                 feature_foo {
                     keywords_all = [ 123456 Skyrim.esm ]
                     some_node {
-                        keywords_all = [ ""123ABC:Skyrim.esm"" ]
+                        keywords_all = [ ""123ABC:Skyrim.esm"", ""123890:Skyrim.esm"" ]
+                        keywords_assign = [ ""ABC123:Assign.esp""]
+                    }
+                    other_node {
+                        keywords_all = [ ""123DEF:Skyrim.esm"" ]
+                        keywords_assign = [ ""DEF123:Assign.esp"" ]
+                    }
+                }");
+
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
+            result.Should().HaveCount(1);
+            result[0].Should().Be(Expected);
+        }
+
+        [Fact]
+        public void Should_parse_a_valid_config_file_with_string_array_formIds_without_commas_into_a_rule()
+        {
+            var rawConfig = HoconConfigurationFactory.ParseString(@"
+                feature_foo {
+                    keywords_all = [ 123456 Skyrim.esm ]
+                    some_node {
+                        keywords_all = [ ""123ABC:Skyrim.esm""
+                                         ""123890:Skyrim.esm"" ]
+                        keywords_assign = [ ""ABC123:Assign.esp""]
+                    }
+                    other_node {
+                        keywords_all = [ ""123DEF:Skyrim.esm"" ]
+                        keywords_assign = [ ""DEF123:Assign.esp"" ]
+                    }
+                }");
+
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
+            result.Should().HaveCount(1);
+            result[0].Should().Be(Expected);
+        }
+
+        [Fact]
+        public void Should_parse_a_valid_config_file_with_unquoted_SkyProc_style_formIds_in_nested_objects_into_a_rule()
+        {
+            var rawConfig = HoconConfigurationFactory.ParseString(@"
+                feature_foo {
+                    keywords_all = [ 123456 Skyrim.esm ]
+                    some_node {
+                        keywords_all = [ {foo = 123ABC Skyrim.esm
+                                          bla = 123890 Skyrim.esm} ]
                         keywords_assign = [ ""ABC123:Assign.esp""]
                     }
                     other_node {
