@@ -300,5 +300,33 @@ namespace ReqtificatorTest.Transformers
                 e.InnerException!.Message.Should().Be("Malformed FormKey string: 123XYZ:Skyrim.esm");
             });
         }
+
+        [Fact]
+        public void Should_throw_a_config_parsing_exception_when_parsing_a_condition_with_empty_keyword_list()
+        {
+            var rawConfig = HoconConfigurationFactory.ParseString(@"
+                feature_foo {
+                    keywords_all = [  ]
+                    some_node {
+                        keywords_all = [ {foo = 123ABC Skyrim.esm
+                                          bla = 123890 Skyrim.esm} ]
+                        keywords_assign = [ ""ABC123:Assign.esp""]
+                    }
+                    other_node {
+                        keywords_all = [ ""123DEF:Skyrim.esm"" ]
+                        keywords_assign = [ ""DEF123:Assign.esp"" ]
+                    }
+                }");
+
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeAFailed(e =>
+            {
+                e.Should().BeOfType<RuleConfigurationParsingException>();
+                ((RuleConfigurationParsingException)e).FailingPath.Should().Be("feature_foo.keywords_all");
+                ((RuleConfigurationParsingException)e).SourceFile.Should().Be("tests");
+                e.InnerException.Should().BeOfType<ArgumentException>();
+                e.InnerException!.Message.Should().Be("keywords must be non-empty (Parameter 'keywords')");
+            });
+        }
     }
 }

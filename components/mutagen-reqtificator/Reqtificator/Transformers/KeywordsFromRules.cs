@@ -65,13 +65,20 @@ namespace Reqtificator.Transformers
 
             IAssignmentCondition<TMajor>? ConditionExtractor(HoconField content)
             {
-                return content.Key switch
+                try
                 {
-                    "keywords_all" => new HasAllKeywords<TMajor>(GetFormIdList<IKeywordGetter>(content)),
-                    "keywords_any" => new HasAnyKeyword<TMajor>(GetFormIdList<IKeywordGetter>(content)),
-                    "keywords_none" => new HasNoneOfKeywords<TMajor>(GetFormIdList<IKeywordGetter>(content)),
-                    _ => null
-                };
+                    return content.Key switch
+                    {
+                        "keywords_all" => new HasAllKeywords<TMajor>(GetFormIdList<IKeywordGetter>(content)),
+                        "keywords_any" => new HasAnyKeyword<TMajor>(GetFormIdList<IKeywordGetter>(content)),
+                        "keywords_none" => new HasNoneOfKeywords<TMajor>(GetFormIdList<IKeywordGetter>(content)),
+                        _ => null
+                    };
+                }
+                catch (ArgumentException e)
+                {
+                    throw new RuleConfigurationParsingException(sourceFile, content.Path.ToString(), e);
+                }
             }
 
             return AssignmentRule<TMajor, IKeywordGetter>.LoadFromConfigurationFile(config, AssignmentExtractor,
