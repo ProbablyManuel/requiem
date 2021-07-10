@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Aspects;
@@ -12,6 +13,7 @@ namespace Reqtificator.Transformers.Rules.Conditions
     {
         public HasAnyKeyword(IReadOnlySet<IFormLinkGetter<IKeywordGetter>> keywords)
         {
+            if (keywords.Count == 0) throw new ArgumentException("keywords must be non-empty", nameof(keywords));
             Keywords = keywords;
         }
 
