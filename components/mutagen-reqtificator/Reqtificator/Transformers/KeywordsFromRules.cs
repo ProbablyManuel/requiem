@@ -24,42 +24,23 @@ namespace Reqtificator.Transformers
             {
                 string FixSkyProcFormIdNotation(string original)
                 {
+                    Log.Warning($"now fixing oldschool ID '{original}'");
                     return original[6] == ' ' ? $"{original[..6]}:{original[7..]}" : original;
-                }
-
-                bool IsUnqoutedSkyProcFormId(HoconArray array)
-                {
-                    if (array.Count == 1 && array[0].Children.Count == 3 && array[0][1] is HoconWhitespace)
-                    {
-                        return (array[0][0], array[0][2]) switch
-                        {
-                            (HoconLong formId, HoconUnquotedString mod) => true,
-                            (HoconUnquotedString formId, HoconUnquotedString mod) => true,
-                            _ => false
-                        };
-                    }
-
-                    return false;
                 }
 
                 IReadOnlySet<IFormLinkGetter<T>> RecursiveExtractor(IHoconElement field)
                 {
-                    return field switch
+                    var formIds = field.Type switch
                     {
-                        HoconField hf => RecursiveExtractor(hf.Value),
-                        HoconValue hv => hv.Children.SelectMany(RecursiveExtractor).ToImmutableHashSet(),
-                        HoconArray arr when IsUnqoutedSkyProcFormId(arr) => new HashSet<IFormLinkGetter<T>>(),
-                        HoconArray arr => arr.SelectMany(RecursiveExtractor).ToImmutableHashSet(),
-                        HoconObject obj => obj.Values.SelectMany(RecursiveExtractor).ToImmutableHashSet(),
-                        HoconQuotedString str => new HashSet<IFormLinkGetter<T>>
-                            {new FormLink<T>(FormKey.Factory(FixSkyProcFormIdNotation(str.Value)))},
-                        HoconUnquotedString str => new HashSet<IFormLinkGetter<T>>
-                            {new FormLink<T>(FormKey.Factory(FixSkyProcFormIdNotation(str.Value)))},
-                        HoconTripleQuotedString str => new HashSet<IFormLinkGetter<T>>
-                            {new FormLink<T>(FormKey.Factory(FixSkyProcFormIdNotation(str.Value)))},
-                        // TODO: get information about origin file
-                        _ => throw new RuleConfigurationParsingException("unknown origin :/", rawValue.Path.ToString())
+                        HoconType.Array => field.GetArray().SelectMany(RecursiveExtractor),
+                        HoconType.Object => field.GetObject().SelectMany(x => RecursiveExtractor(x.Value)),
+                        HoconType.String => new HashSet<IFormLinkGetter<T>>
+                            {new FormLink<T>(FormKey.Factory(FixSkyProcFormIdNotation(field.GetString())))},
+                        HoconType.Number => new HashSet<IFormLinkGetter<T>>
+                            {new FormLink<T>(FormKey.Factory(FixSkyProcFormIdNotation(field.GetString())))},
+                        _ => throw new ArgumentOutOfRangeException(nameof(field))
                     };
+                    return formIds.ToImmutableHashSet();
                 }
 
                 return RecursiveExtractor(rawValue).ToImmutableHashSet();
