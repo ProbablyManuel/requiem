@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.Immutable;
 using FluentAssertions;
 using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
+using Reqtificator;
+using Reqtificator.Exceptions;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Rules;
 using Reqtificator.Transformers.Rules.Conditions;
@@ -64,9 +67,12 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
-            result.Should().HaveCount(1);
-            result[0].Should().Be(Expected);
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeASuccess(r =>
+            {
+                r.Should().HaveCount(1);
+                r[0].Should().Be(Expected);
+            });
         }
 
         [Fact]
@@ -85,9 +91,13 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
-            result.Should().HaveCount(1);
-            result[0].Should().Be(Expected);
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeOfType<Success<ImmutableList<AssignmentRule<IArmorGetter, IKeywordGetter>>>>();
+            result.Should().BeASuccess(r =>
+            {
+                r.Should().HaveCount(1);
+                r[0].Should().Be(Expected);
+            });
         }
 
         [Fact]
@@ -106,9 +116,12 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
-            result.Should().HaveCount(1);
-            result[0].Should().Be(Expected);
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeASuccess(r =>
+            {
+                r.Should().HaveCount(1);
+                r[0].Should().Be(Expected);
+            });
         }
 
         [Fact]
@@ -127,9 +140,12 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
-            result.Should().HaveCount(1);
-            result[0].Should().Be(Expected);
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeASuccess(r =>
+            {
+                r.Should().HaveCount(1);
+                r[0].Should().Be(Expected);
+            });
         }
 
         [Fact]
@@ -148,9 +164,12 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
-            result.Should().HaveCount(1);
-            result[0].Should().Be(Expected);
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeASuccess(r =>
+            {
+                r.Should().HaveCount(1);
+                r[0].Should().Be(Expected);
+            });
         }
 
         [Fact]
@@ -169,9 +188,12 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
-            result.Should().HaveCount(1);
-            result[0].Should().Be(Expected);
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeASuccess(r =>
+            {
+                r.Should().HaveCount(1);
+                r[0].Should().Be(Expected);
+            });
         }
 
         [Fact]
@@ -191,9 +213,12 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
-            result.Should().HaveCount(1);
-            result[0].Should().Be(Expected);
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeASuccess(r =>
+            {
+                r.Should().HaveCount(1);
+                r[0].Should().Be(Expected);
+            });
         }
 
         [Fact]
@@ -213,9 +238,67 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig);
-            result.Should().HaveCount(1);
-            result[0].Should().Be(Expected);
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeASuccess(r =>
+            {
+                r.Should().HaveCount(1);
+                r[0].Should().Be(Expected);
+            });
+        }
+
+
+        [Fact]
+        public void Should_throw_a_config_parsing_exception_when_processing_incorrectly_structured_data()
+        {
+            var rawConfig = HoconConfigurationFactory.ParseString(@"
+                feature_foo {
+                    keywords_all = [ false ]
+                    some_node {
+                        keywords_all = [ {foo = 123ABC Skyrim.esm
+                                          bla = 123890 Skyrim.esm} ]
+                        keywords_assign = [ ""ABC123:Assign.esp""]
+                    }
+                    other_node {
+                        keywords_all = [ ""123DEF:Skyrim.esm"" ]
+                        keywords_assign = [ ""DEF123:Assign.esp"" ]
+                    }
+                }");
+
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeAFailed(e =>
+            {
+                e.Should().BeOfType<RuleConfigurationParsingException>();
+                ((RuleConfigurationParsingException)e).FailingPath.Should().Be("feature_foo.keywords_all");
+                ((RuleConfigurationParsingException)e).SourceFile.Should().Be("tests");
+            });
+        }
+
+        [Fact]
+        public void Should_throw_a_config_parsing_exception_when_processing_an_invalid_formId()
+        {
+            var rawConfig = HoconConfigurationFactory.ParseString(@"
+                feature_foo {
+                    keywords_all = [ 123XYZ Skyrim.esm ]
+                    some_node {
+                        keywords_all = [ {foo = 123ABC Skyrim.esm
+                                          bla = 123890 Skyrim.esm} ]
+                        keywords_assign = [ ""ABC123:Assign.esp""]
+                    }
+                    other_node {
+                        keywords_all = [ ""123DEF:Skyrim.esm"" ]
+                        keywords_assign = [ ""DEF123:Assign.esp"" ]
+                    }
+                }");
+
+            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            result.Should().BeAFailed(e =>
+            {
+                e.Should().BeOfType<RuleConfigurationParsingException>();
+                ((RuleConfigurationParsingException)e).FailingPath.Should().Be("feature_foo.keywords_all");
+                ((RuleConfigurationParsingException)e).SourceFile.Should().Be("tests");
+                e.InnerException.Should().BeOfType<ArgumentException>();
+                e.InnerException!.Message.Should().Be("Malformed FormKey string: 123XYZ:Skyrim.esm");
+            });
         }
     }
 }

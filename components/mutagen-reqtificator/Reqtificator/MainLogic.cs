@@ -1,9 +1,12 @@
+using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
+using Noggog;
 using Reqtificator.Configuration;
 using Reqtificator.Export;
 using Reqtificator.StaticReferences;
@@ -11,6 +14,7 @@ using Reqtificator.Transformers;
 using Reqtificator.Transformers.Actors;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
+using Reqtificator.Transformers.Rules;
 using Reqtificator.Transformers.Weapons;
 
 namespace Reqtificator
@@ -43,9 +47,13 @@ namespace Reqtificator
                 new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
 
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
+
             var armorRules = Utils.LoadModConfigFiles(context, "ArmorKeywordAssignments")
-                .Map(configs => configs.SelectMany(KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>)
-                    .ToImmutableList());
+                .FlatMap(configs => configs.Select(x =>
+                        KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(x.Item2, x.Item1))
+                    .Aggregate(ImmutableList<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty.AsSuccess(),
+                        (acc, elem) => acc.FlatMap(list => elem.Map(list.AddRange)))
+                );
             var armorsPatched = armorRules.Map(rules =>
                 new ArmorTypeKeyword()
                     .AndThen(new ArmorRatingScaling(reqtificatorConfig.ArmorSettings))
