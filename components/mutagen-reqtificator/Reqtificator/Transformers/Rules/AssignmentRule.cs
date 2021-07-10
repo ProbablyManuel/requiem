@@ -6,6 +6,7 @@ using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Noggog;
+using Reqtificator.Exceptions;
 
 namespace Reqtificator.Transformers.Rules
 {
@@ -87,7 +88,8 @@ namespace Reqtificator.Transformers.Rules
             }
         }
 
-        public static IImmutableList<AssignmentRule<TMajorGetter, TAssign>> LoadFromConfigurationFile(Config config,
+        public static ErrorOr<ImmutableList<AssignmentRule<TMajorGetter, TAssign>>> LoadFromConfigurationFile(
+            Config config,
             Func<HoconField, IReadOnlySet<IFormLinkGetter<TAssign>>?> assignmentExtractor,
             Func<HoconField, IAssignmentCondition<TMajorGetter>?> conditionExtractor
         )
@@ -115,9 +117,17 @@ namespace Reqtificator.Transformers.Rules
                 );
             }
 
-            return config.Root.GetObject().Where(e => e.Key.StartsWith("feature_", StringComparison.InvariantCulture))
-                .Select(kv => NodeExtractor(kv.Value))
-                .ToImmutableList();
+            try
+            {
+                return config.Root.GetObject()
+                    .Where(e => e.Key.StartsWith("feature_", StringComparison.InvariantCulture))
+                    .Select(kv => NodeExtractor(kv.Value))
+                    .ToImmutableList().AsSuccess();
+            }
+            catch (ReqtificatorException e)
+            {
+                return new Failed<ImmutableList<AssignmentRule<TMajorGetter, TAssign>>>(e);
+            }
         }
     }
 }
