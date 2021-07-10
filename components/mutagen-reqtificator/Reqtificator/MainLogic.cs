@@ -1,12 +1,9 @@
-using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
-using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Configuration;
 using Reqtificator.Export;
 using Reqtificator.StaticReferences;
@@ -47,7 +44,6 @@ namespace Reqtificator
                 new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
 
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
-
             var armorRules = Utils.LoadModConfigFiles(context, "ArmorKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(x.Item2, x.Item1))
@@ -63,11 +59,19 @@ namespace Reqtificator
             );
 
             var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
-            var weaponsPatched = new WeaponDamageScaling().AndThen(new WeaponMeleeRangeScaling())
-                .AndThen(new WeaponNpcAmmunitionUsage())
-                .AndThen(new WeaponRangedSpeedScaling())
-                .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(events))
-                .ProcessCollection(weapons);
+            var weaponRules = Utils.LoadModConfigFiles(context, "WeaponKeywordAssignments")
+                .FlatMap(configs => configs.Select(x =>
+                        KeywordsFromRules.LoadFromConfigurationFile<IWeaponGetter>(x.Item2, x.Item1))
+                    .Aggregate(ImmutableList<AssignmentRule<IWeaponGetter, IKeywordGetter>>.Empty.AsSuccess(),
+                        (acc, elem) => acc.FlatMap(list => elem.Map(list.AddRange)))
+                );
+            var weaponsPatched = weaponRules.Map(rules =>
+                new WeaponDamageScaling().AndThen(new WeaponMeleeRangeScaling())
+                    .AndThen(new WeaponNpcAmmunitionUsage())
+                    .AndThen(new WeaponRangedSpeedScaling())
+                    .AndThen(new WeaponKeywordsFromRules(rules))
+                    .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(events))
+                    .ProcessCollection(weapons));
 
             var actors = loadOrder.PriorityOrder.Npc().WinningOverrides();
             var globalPerks = Utils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
@@ -83,7 +87,7 @@ namespace Reqtificator
                 .Map(m => m.WithRecords(containersPatched))
                 .FlatMap(m => armorsPatched.Map(m.WithRecords))
                 .Map(m => m.WithRecords(ammoPatched))
-                .Map(m => m.WithRecords(weaponsPatched))
+                .FlatMap(m => weaponsPatched.Map(m.WithRecords))
                 .FlatMap(m => actorsPatched.Map(m.WithRecords));
 
             var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);

@@ -8,7 +8,7 @@ using Reqtificator.Transformers;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.Rules;
 using Xunit;
-using static ReqtificatorTest.Transformers.Rules.AssignmentRuleFixture;
+using static ReqtificatorTest.Transformers.Rules.AssignmentRuleFixture<Mutagen.Bethesda.Skyrim.IArmorGetter>;
 
 namespace ReqtificatorTest.Transformers.Armors
 {
