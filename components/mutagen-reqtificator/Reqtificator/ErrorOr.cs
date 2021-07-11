@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Reqtificator.Exceptions;
 
 namespace Reqtificator
@@ -10,7 +11,6 @@ namespace Reqtificator
         public abstract ErrorOr<T2> FlatMap<T2>(Func<T, ErrorOr<T2>> func);
 
         public abstract ErrorOr<T> Recover(Func<ReqtificatorException, T> func);
-
     }
 
     internal sealed record Success<T>(T Value) : ErrorOr<T>
