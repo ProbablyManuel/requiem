@@ -1,4 +1,7 @@
 ﻿using System.Collections.Immutable;
+using System.IO;
+using System.Linq;
+using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
@@ -31,6 +34,18 @@ namespace Reqtificator
             }
 
             return records.AsSuccess();
+        }
+
+        public static ErrorOr<IImmutableList<(string, Config)>> LoadModConfigFiles(GameContext context, string filePrefix)
+        {
+            //TODO: graceful error handling for not parseable configuration files
+            var armorConfigPath = Path.Combine(context.DataFolder, "SkyProc Patchers", "Requiem", "Data");
+            IImmutableList<(string, Config)> configs = context.ActiveMods
+                .Select(m => Path.Combine(armorConfigPath, $"{filePrefix}_{m.ModKey.FileName}.conf"))
+                .Where(f => File.Exists(f))
+                .Select(f => (f, HoconConfigurationFactory.FromFile(f)))
+                .ToImmutableList();
+            return configs.AsSuccess();
         }
     }
 }
