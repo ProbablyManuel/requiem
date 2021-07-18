@@ -13,7 +13,7 @@ using Xunit;
 
 namespace ReqtificatorTest.Transformers
 {
-    public class KeywordsFromRulesTest
+    public class AssignmentsFromRulesTest
     {
         static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node1 = new(
             assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
@@ -65,7 +65,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -89,7 +89,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeOfType<Success<ImmutableList<AssignmentRule<IArmorGetter, IKeywordGetter>>>>();
             result.Should().BeASuccess(r =>
             {
@@ -114,7 +114,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -138,7 +138,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -162,7 +162,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -186,7 +186,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -211,7 +211,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -236,7 +236,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -262,7 +262,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeAFailed(e =>
             {
                 e.Should().BeOfType<RuleConfigurationParsingException>();
@@ -288,7 +288,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeAFailed(e =>
             {
                 e.Should().BeOfType<RuleConfigurationParsingException>();
@@ -316,7 +316,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeAFailed(e =>
             {
                 e.Should().BeOfType<RuleConfigurationParsingException>();
