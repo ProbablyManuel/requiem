@@ -6,13 +6,22 @@ using Mutagen.Bethesda.Skyrim;
 
 namespace Reqtificator.Transformers.Rules
 {
-    public class ActorInheritanceGraphParser
+    internal interface IActorInheritanceGraphParser
     {
-        private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _cache;
+        public abstract ILinkCache<ISkyrimMod, ISkyrimModGetter> Cache { get; }
+
+        public IEnumerable<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>> FindAllTemplates(
+            INpcGetter record,
+            NpcConfiguration.TemplateFlag flagToFollow, params NpcConfiguration.TemplateFlag[] additionalFlagsToFollow);
+    }
+
+    internal class ActorInheritanceGraphParser : IActorInheritanceGraphParser
+    {
+        public ILinkCache<ISkyrimMod, ISkyrimModGetter> Cache { get; }
 
         public ActorInheritanceGraphParser(ILinkCache<ISkyrimMod, ISkyrimModGetter> cache)
         {
-            _cache = cache;
+            Cache = cache;
         }
 
         public IEnumerable<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>> FindAllTemplates(
@@ -35,7 +44,7 @@ namespace Reqtificator.Transformers.Rules
                 foreach (var entry in lChar.Entries!)
                 {
                     foreach (var result in RecurseThroughTemplates(
-                        _cache.Resolve<INpcSpawnGetter>(entry.Data!.Reference.FormKey), flagsToFollow,
+                        Cache.Resolve<INpcSpawnGetter>(entry.Data!.Reference.FormKey), flagsToFollow,
                         dataProvidedByParents))
                     {
                         yield return result;
@@ -56,7 +65,7 @@ namespace Reqtificator.Transformers.Rules
                     var fromThisRecord = flagsToFollow.Where(f => flagsToResolve.ContainsNot(f)).ToImmutableDictionary(
                         f => f, f => actor).AddRange(dataProvidedByParents);
                     foreach (var result in RecurseThroughTemplates(
-                        _cache.Resolve<INpcSpawnGetter>(actor.Template.FormKey),
+                        Cache.Resolve<INpcSpawnGetter>(actor.Template.FormKey),
                         flagsToResolve, fromThisRecord))
                     {
                         yield return result;
