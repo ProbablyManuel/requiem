@@ -14,7 +14,7 @@ using Flags = Mutagen.Bethesda.Skyrim.NpcConfiguration.TemplateFlag;
 
 namespace ReqtificatorTest.Transformers.Rules.Conditions
 {
-    public class ActorHasNoKeywordTest
+    public class ActorHasNoneOfKeywordsTest
     {
         private static readonly IFormLinkGetter<IKeywordGetter> Keyword1 =
             new FormLink<IKeywordGetter>(FormKey.Factory("ABC123:Keywords.esp"));
@@ -49,7 +49,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
                 .Returns(
                     resolved.AsEnumerable());
             cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
-            var condition = new ActorHasNoKeyword(new HashSet<IFormLinkGetter<IKeywordGetter>>
+            var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
                 {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeTrue();
         }
@@ -87,7 +87,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
                 .Returns(new[] { resolved1, resolved2 }.AsEnumerable<IImmutableDictionary<Flags, INpcGetter>>());
             cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
-            var condition = new ActorHasNoKeyword(new HashSet<IFormLinkGetter<IKeywordGetter>>
+            var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
                 {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeTrue();
         }
@@ -116,7 +116,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
                 .Returns(
                     resolved.AsEnumerable());
             cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
-            var condition = new ActorHasNoKeyword(new HashSet<IFormLinkGetter<IKeywordGetter>>
+            var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
                 {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeFalse();
         }
@@ -145,7 +145,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
                 .Returns(
                     resolved.AsEnumerable());
             cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
-            var condition = new ActorHasNoKeyword(new HashSet<IFormLinkGetter<IKeywordGetter>>
+            var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
                 {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeFalse();
         }
@@ -183,7 +183,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
                 .Returns(new[] { resolved1, resolved2 }.AsEnumerable<IImmutableDictionary<Flags, INpcGetter>>());
             cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
-            var condition = new ActorHasNoKeyword(new HashSet<IFormLinkGetter<IKeywordGetter>>
+            var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
                 {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeFalse();
         }
