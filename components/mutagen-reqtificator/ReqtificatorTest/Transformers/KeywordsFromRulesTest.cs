@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
 using FluentAssertions;
 using Hocon;
@@ -17,38 +16,37 @@ namespace ReqtificatorTest.Transformers
     public class KeywordsFromRulesTest
     {
         static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node1 = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {new FormLink<IKeywordGetter>(FormKey.Factory("ABC123:Assign.esp"))},
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                .Add(new FormLink<IKeywordGetter>(FormKey.Factory("ABC123:Assign.esp"))),
             conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty.Add(
                 new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(
                     new FormLink<IKeywordGetter>(FormKey.Factory("123ABC:Skyrim.esm"))).Add(
                     new FormLink<IKeywordGetter>(FormKey.Factory("123890:Skyrim.esm"))))
             ),
             nodeName: "some_node",
-            subNodes: new HashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>()
+            subNodes: ImmutableHashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty
         );
 
         static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node2 = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {new FormLink<IKeywordGetter>(FormKey.Factory("DEF123:Assign.esp"))},
-            conditions: new HashSet<IAssignmentCondition<IArmorGetter>>
-            {
-                new HasAllKeywords<IArmorGetter>(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                    {new FormLink<IKeywordGetter>(FormKey.Factory("123DEF:Skyrim.esm"))})
-            },
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                .Add(new FormLink<IKeywordGetter>(FormKey.Factory("DEF123:Assign.esp"))),
+            conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty
+                .Add(new HasAllKeywords<IArmorGetter>(
+                    ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(
+                        new FormLink<IKeywordGetter>(FormKey.Factory("123DEF:Skyrim.esm")))
+                )),
             nodeName: "other_node",
-            subNodes: new HashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>()
+            subNodes: ImmutableHashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty
         );
 
         static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Expected = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>>(),
-            conditions: new HashSet<IAssignmentCondition<IArmorGetter>>
-            {
-                new HasAllKeywords<IArmorGetter>(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                    {new FormLink<IKeywordGetter>(FormKey.Factory("123456:Skyrim.esm"))})
-            },
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty,
+            conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty
+                .Add(new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                    .Add(new FormLink<IKeywordGetter>(FormKey.Factory("123456:Skyrim.esm")))
+                )),
             nodeName: "feature_foo",
-            subNodes: new HashSet<AssignmentRule<IArmorGetter, IKeywordGetter>> { Node1, Node2 }
+            subNodes: ImmutableHashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty.Add(Node1).Add(Node2)
         );
 
         [Fact]
