@@ -12,7 +12,7 @@ namespace Reqtificator.Transformers.Rules.Conditions
         private readonly IActorInheritanceGraphParser _inheritanceGraphParser;
         private readonly IImmutableSet<IFormLinkGetter<IKeywordGetter>> _keywords;
 
-        internal ActorHasNoKeyword(IImmutableSet<IFormLinkGetter<IKeywordGetter>> keywords,
+        public ActorHasNoKeyword(IImmutableSet<IFormLinkGetter<IKeywordGetter>> keywords,
             IActorInheritanceGraphParser inheritanceGraphParserParser)
         {
             _inheritanceGraphParser = inheritanceGraphParserParser;

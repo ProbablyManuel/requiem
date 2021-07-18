@@ -46,8 +46,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
 
             graph.SetupGet(g => g.Cache).Returns(cache.Object);
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
-                .Returns(
-                    resolved.AsEnumerable());
+                .Returns(resolved.AsEnumerable());
             cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
             var condition = new ActorHasAllKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
                 {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
@@ -75,8 +74,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
 
             graph.SetupGet(g => g.Cache).Returns(cache.Object);
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
-                .Returns(
-                    resolved.AsEnumerable());
+                .Returns(resolved.AsEnumerable());
             cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
             var condition = new ActorHasAllKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
                 {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
@@ -104,8 +102,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
 
             graph.SetupGet(g => g.Cache).Returns(cache.Object);
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
-                .Returns(
-                    resolved.AsEnumerable());
+                .Returns(resolved.AsEnumerable());
             cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
             var condition = new ActorHasAllKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
                 {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);

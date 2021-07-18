@@ -7,12 +7,12 @@ using Mutagen.Bethesda.Skyrim;
 
 namespace Reqtificator.Transformers.Rules.Conditions
 {
-    public class ActorHasAnyKeyword : IAssignmentCondition<INpcGetter>
+    internal class ActorHasAnyKeyword : IAssignmentCondition<INpcGetter>
     {
         private readonly IActorInheritanceGraphParser _inheritanceGraphParser;
         private readonly IImmutableSet<IFormLinkGetter<IKeywordGetter>> _keywords;
 
-        internal ActorHasAnyKeyword(IImmutableSet<IFormLinkGetter<IKeywordGetter>> keywords,
+        public ActorHasAnyKeyword(IImmutableSet<IFormLinkGetter<IKeywordGetter>> keywords,
             IActorInheritanceGraphParser inheritanceGraphParserParser)
         {
             _inheritanceGraphParser = inheritanceGraphParserParser;
