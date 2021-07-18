@@ -19,7 +19,7 @@ namespace Reqtificator.Transformers
             Config config, string sourceFile)
             where TMajor : IMajorRecordGetter, IKeywordedGetter
         {
-            IReadOnlySet<IFormLinkGetter<T>> GetFormIdList<T>(HoconField rawValue) where T : class, IMajorRecordGetter
+            IImmutableSet<IFormLinkGetter<T>> GetFormIdList<T>(HoconField rawValue) where T : class, IMajorRecordGetter
             {
                 string FixSkyProcFormIdNotation(string original)
                 {
@@ -54,7 +54,7 @@ namespace Reqtificator.Transformers
                 return RecursiveExtractor(rawValue, rawValue.Path.ToString()).ToImmutableHashSet();
             }
 
-            IReadOnlySet<IFormLinkGetter<IKeywordGetter>>? AssignmentExtractor(HoconField content)
+            IImmutableSet<IFormLinkGetter<IKeywordGetter>>? AssignmentExtractor(HoconField content)
             {
                 return content.Key switch
                 {
