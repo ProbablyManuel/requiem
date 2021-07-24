@@ -48,7 +48,6 @@ namespace Reqtificator
                 Log.Information("done patching, now exporting to disk");
                 MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
                 Log.Information("done exporting");
-                _events.PublishPatchCompleted();
             };
         }
 
