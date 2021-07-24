@@ -1,22 +1,20 @@
-﻿using Mutagen.Bethesda.Plugins;
-using Mutagen.Bethesda.Plugins.Records;
-using Reqtificator.Configuration;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading;
 using System.Windows.Input;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Records;
+using Reqtificator.Configuration;
 
 namespace Reqtificator.Gui
 {
-    internal class MainWindowViewModel : INotifyPropertyChanged, IDisposable
+    internal partial class MainWindowViewModel : INotifyPropertyChanged, IDisposable
     {
         private readonly InternalEvents _events;
-        private readonly SynchronizationContext? _syncContext;
-        private readonly BackgroundWorker worker = new();
+        private readonly BackgroundWorker _patchRequestThread;
         private int recordsProcessed;
 
         public bool IsPatching { get; private set; }
@@ -31,35 +29,46 @@ namespace Reqtificator.Gui
         public bool MergeLeveledLists { get; set; }
         public bool MergeLeveledCharacters { get; set; }
         public bool OpenEncounterZones { get; set; }
-        public ICommand PatchCommand => new DelegateCommand(RequestPatch);
-
         public string ProgramStatus { get; private set; }
         public double Progress => maxRecords == 0 ? 0 : recordsProcessed * 100 / maxRecords;
+        public ICommand PatchCommand { get; set; }
 
         public MainWindowViewModel(InternalEvents eventsQueue)
         {
             Mods = new ObservableCollection<ModViewModel>();
             ProgramStatus = "";
 
-            _syncContext = SynchronizationContext.Current;
+            var syncContext = SynchronizationContext.Current;
             _events = eventsQueue;
-            _events.ReadyToPatch += (_, patchContext) => { _syncContext?.Post(_ => HandlePatchReady(patchContext), null); };
-            _events.PatchStarted += (_, patchStarted) => { _syncContext?.Post(_ => HandlePatchStarted(patchStarted), null); };
-            _events.PatchCompleted += (_, _1) => { _syncContext?.Post(_ => HandlePatchCompleted(), null); };
-            _events.RecordProcessed += (_, result) => { _syncContext?.Post(_ => HandlePatchProgress(result), null); };
+
+            _events.ReadyToPatch += (_, patchContext) => { syncContext?.Post(_ => HandlePatchReady(patchContext), null); };
+            _events.PatchStarted += (_, patchStarted) => { syncContext?.Post(_ => HandlePatchStarted(patchStarted), null); };
+            _events.PatchCompleted += (_, _1) => { syncContext?.Post(_ => HandlePatchCompleted(), null); };
+            _events.RecordProcessed += (_, result) => { syncContext?.Post(_ => HandlePatchProgress(result), null); };
+
+            _patchRequestThread = new BackgroundWorker();
+            _patchRequestThread.DoWork += (_, _1) =>
+            {
+                var updatedUserSettings = GetUpdatedUserSettings();
+                _events.RequestPatch(updatedUserSettings);
+            };
+
+            PatchCommand = new DelegateCommand(RequestPatch);
         }
-        private void RequestPatch()
+
+        private UserSettings GetUpdatedUserSettings()
+        {
+            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
+                                Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods
+                                    .Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
+        }
+
+        private void RequestPatch(object? _)
         {
             ProgramStatus = "Patching";
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
-            var updatedUserSettings =
-                new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
-                    Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods
-                        .Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
 
-            // NB: These have to be instance-level so that they don't get garbage-disposed while they're running.
-            worker.DoWork += (_, _1) => { _events.RequestPatch(updatedUserSettings); };
-            worker.RunWorkerAsync();
+            _patchRequestThread.RunWorkerAsync();
         }
 
         private void HandlePatchProgress(RecordProcessedResult<IMajorRecordGetter> result)
@@ -101,15 +110,22 @@ namespace Reqtificator.Gui
                 Mods.Add(new ModViewModel(mod, npcVisuals, raceVisuals));
             }
 
+            NotifyChanged(
+                nameof(VerboseLogging),
+                nameof(MergeLeveledLists),
+                nameof(MergeLeveledCharacters),
+                nameof(OpenEncounterZones));
+
+            ResetStatus();
+        }
+
+        public void ResetStatus()
+        {
             ProgramStatus = "Ready to patch...";
             maxRecords = 0;
             recordsProcessed = 0;
             IsPatching = false;
             NotifyChanged(
-                nameof(VerboseLogging),
-                nameof(MergeLeveledLists),
-                nameof(MergeLeveledCharacters),
-                nameof(OpenEncounterZones),
                 nameof(ProgramStatus),
                 nameof(Progress),
                 nameof(IsPatching));
@@ -123,30 +139,9 @@ namespace Reqtificator.Gui
             }
         }
 
-        private class DelegateCommand : ICommand
-        {
-            private readonly Action action;
-            public event EventHandler? CanExecuteChanged = delegate { };
-
-            public DelegateCommand(Action a)
-            {
-                action = a;
-            }
-
-            void ICommand.Execute(object? parameter)
-            {
-                action();
-            }
-
-            bool ICommand.CanExecute(object? parameter)
-            {
-                return true;
-            }
-        }
-
         public void Dispose()
         {
-            worker.Dispose();
+            _patchRequestThread.Dispose();
         }
     }
 }
