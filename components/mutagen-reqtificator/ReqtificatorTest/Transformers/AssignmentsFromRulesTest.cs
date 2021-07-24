@@ -151,7 +151,7 @@ namespace ReqtificatorTest.Transformers
         {
             var rawConfig = HoconConfigurationFactory.ParseString(@"
                 feature_foo {
-                    keywords_all = [ { foo = ""123456:Skyrim.esm""} ]
+                    keywords_all = [ { foo { moreFoo = ""123456:Skyrim.esm""} } ]
                     some_node {
                         keywords_all = [ { foo = ""123ABC:Skyrim.esm"", bla = ""123890:Skyrim.esm""} ]
                         keywords_assign = [ ""ABC123:Assign.esp""]
