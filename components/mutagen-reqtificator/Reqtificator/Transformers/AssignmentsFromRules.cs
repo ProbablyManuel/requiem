@@ -50,7 +50,7 @@ namespace Reqtificator.Transformers
             }
 
             return AssignmentRule<TMajor, IKeywordGetter>.LoadFromConfigurationFile(config, AssignmentExtractor,
-                ConditionExtractor);
+                ConditionExtractor, _ => false);
         }
 
         public static ErrorOr<ImmutableList<AssignmentRule<INpcGetter, IPerkGetter>>> LoadPerkRules(
@@ -61,7 +61,6 @@ namespace Reqtificator.Transformers
                 return content.Key switch
                 {
                     "perks_assign" => GetFormIdList<IPerkGetter>(content, sourceFile),
-                    "spells_assign" => ImmutableHashSet<IFormLinkGetter<IPerkGetter>>.Empty, //ignore other assignments
                     _ => null
                 };
             }
@@ -69,7 +68,8 @@ namespace Reqtificator.Transformers
             var resolver = new ActorInheritanceGraphParser(linkCache);
 
             return AssignmentRule<INpcGetter, IPerkGetter>.LoadFromConfigurationFile(config, AssignmentExtractor,
-                NpcConditionExtractor(sourceFile, resolver));
+                NpcConditionExtractor(sourceFile, resolver),
+                f => f.Key.Equals("spells_assign", StringComparison.Ordinal));
         }
 
         public static ErrorOr<ImmutableList<AssignmentRule<INpcGetter, ISpellGetter>>> LoadSpellRules(
@@ -80,7 +80,6 @@ namespace Reqtificator.Transformers
                 return content.Key switch
                 {
                     "spells_assign" => GetFormIdList<ISpellGetter>(content, sourceFile),
-                    "perks_assign" => ImmutableHashSet<IFormLinkGetter<ISpellGetter>>.Empty, //ignore other assignments
                     _ => null
                 };
             }
@@ -88,7 +87,8 @@ namespace Reqtificator.Transformers
             var resolver = new ActorInheritanceGraphParser(linkCache);
 
             return AssignmentRule<INpcGetter, ISpellGetter>.LoadFromConfigurationFile(config, AssignmentExtractor,
-                NpcConditionExtractor(sourceFile, resolver));
+                NpcConditionExtractor(sourceFile, resolver),
+                f => f.Key.Equals("perks_assign", StringComparison.Ordinal));
         }
 
         private static Func<HoconField, IAssignmentCondition<INpcGetter>?> NpcConditionExtractor(string sourceFile,

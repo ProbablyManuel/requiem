@@ -91,7 +91,8 @@ namespace Reqtificator.Transformers.Rules
         public static ErrorOr<ImmutableList<AssignmentRule<TMajorGetter, TAssign>>> LoadFromConfigurationFile(
             Config config,
             Func<HoconField, IImmutableSet<IFormLinkGetter<TAssign>>?> assignmentExtractor,
-            Func<HoconField, IAssignmentCondition<TMajorGetter>?> conditionExtractor
+            Func<HoconField, IAssignmentCondition<TMajorGetter>?> conditionExtractor,
+            Func<HoconField, bool> ignoredFieldChecker
         )
         {
             AssignmentRule<TMajorGetter, TAssign> NodeExtractor(HoconField content)
@@ -106,7 +107,7 @@ namespace Reqtificator.Transformers.Rules
                         assignments = maybeAssignment;
                     else if (conditionExtractor(e.Value) is var maybeCondition && maybeCondition is not null)
                         conditions = conditions.Add(maybeCondition);
-                    else
+                    else if (!ignoredFieldChecker(e.Value))
                         subNodes = subNodes.Add(NodeExtractor(e.Value));
                 });
                 return new AssignmentRule<TMajorGetter, TAssign>(
