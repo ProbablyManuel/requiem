@@ -93,6 +93,7 @@ namespace Reqtificator
                 new ActorCommonScripts(importedModsLinkCache)
                     .AndThen(new ActorGlobalPerks(perks))
                     .AndThen(new ActorPerksFromRules(rules.perks))
+                    .AndThen(new ActorSpellsFromRules(rules.spells))
                     .AndThen(new PlayerChanges(reqtificatorConfig.PlayerConfig))
                     .ProcessCollection(actors)));
 
