@@ -14,7 +14,7 @@ namespace Reqtificator
         {
             base.OnStartup(e);
 
-            LogUtils.SetUpLogging();
+            var logContext = new ReqtificatorLogContext(LogUtils.DefaultLogFileName);
             Log.Information("starting the Reqtificator");
 
             var eventQueue = new InternalEvents();
@@ -27,7 +27,7 @@ namespace Reqtificator
 
             window.Show();
 
-            var backend = new Backend(eventQueue);
+            var backend = new Backend(eventQueue, logContext);
             Log.Debug("Gui Started");
         }
 
