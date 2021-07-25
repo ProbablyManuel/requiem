@@ -98,7 +98,6 @@ namespace Reqtificator
                 PatchData.SetPatchHeadersAndVersion(requiem.Mod!, m, version);
                 return m;
             });
-            events.PublishPatchCompleted();
 
             return outputMod;
         }

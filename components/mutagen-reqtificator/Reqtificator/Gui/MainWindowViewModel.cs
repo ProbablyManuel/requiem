@@ -38,13 +38,13 @@ namespace Reqtificator.Gui
             Mods = new ObservableCollection<ModViewModel>();
             ProgramStatus = "";
 
-            var syncContext = SynchronizationContext.Current;
+            var mainThreadContext = SynchronizationContext.Current;
             _events = eventsQueue;
 
-            _events.ReadyToPatch += (_, patchContext) => { syncContext?.Post(_ => HandlePatchReady(patchContext), null); };
-            _events.PatchStarted += (_, patchStarted) => { syncContext?.Post(_ => HandlePatchStarted(patchStarted), null); };
-            _events.PatchCompleted += (_, _1) => { syncContext?.Post(_ => HandlePatchCompleted(), null); };
-            _events.RecordProcessed += (_, result) => { syncContext?.Post(_ => HandlePatchProgress(result), null); };
+            _events.ReadyToPatch += (_, patchContext) => { mainThreadContext?.Post(_ => HandlePatchReady(patchContext), null); };
+            _events.PatchStarted += (_, patchStarted) => { mainThreadContext?.Post(_ => HandlePatchStarted(patchStarted), null); };
+            _events.PatchCompleted += (_, _1) => { mainThreadContext?.Post(_ => HandlePatchCompleted(), null); };
+            _events.RecordProcessed += (_, result) => { mainThreadContext?.Post(_ => HandlePatchProgress(result), null); };
 
             _patchRequestThread = new BackgroundWorker();
             _patchRequestThread.DoWork += (_, _1) =>

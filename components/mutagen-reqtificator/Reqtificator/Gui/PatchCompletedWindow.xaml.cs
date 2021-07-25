@@ -10,27 +10,30 @@ namespace Reqtificator.Gui
     /// </summary>
     public partial class PatchCompletedWindow : Window
     {
-        private const int GWL_STYLE = -16;
-        private const int WS_SYSMENU = 0x80000;
+        // https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowlongptra
 
-        [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
-        [DllImport("user32.dll", SetLastError = true)]
-        private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+        private const int GWL_STYLE = -16; // Sets new window style
+        private const int WS_SYSMENU = 0x80000; // Has a window menu
 
         [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
         [DllImport("user32.dll")]
-        private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+        private static extern int GetWindowLongPtr(IntPtr hWnd, int nIndex);
+
+        [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
+        [DllImport("user32.dll")]
+        private static extern int SetWindowLongPtr(IntPtr hWnd, int nIndex, int dwNewLong);
 
         public PatchCompletedWindow()
         {
             InitializeComponent();
-            SourceInitialized += Window_SourceInitialized;
+            SourceInitialized += HideWindowMenu;
         }
 
-        private void Window_SourceInitialized(object? _, EventArgs e)
+        private void HideWindowMenu(object? _, EventArgs e)
         {
             var hwnd = new WindowInteropHelper(this).Handle;
-            _ = SetWindowLong(hwnd, GWL_STYLE, GetWindowLong(hwnd, GWL_STYLE) & ~WS_SYSMENU);
+            int styleWithoutWindowMenu = GetWindowLongPtr(hwnd, GWL_STYLE) & ~WS_SYSMENU;
+            _ = SetWindowLongPtr(hwnd, GWL_STYLE, styleWithoutWindowMenu);
         }
     }
 }
