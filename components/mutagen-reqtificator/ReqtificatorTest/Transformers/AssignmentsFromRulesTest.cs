@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
 using FluentAssertions;
 using Hocon;
@@ -14,41 +13,40 @@ using Xunit;
 
 namespace ReqtificatorTest.Transformers
 {
-    public class KeywordsFromRulesTest
+    public class AssignmentsFromRulesTest
     {
         static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node1 = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {new FormLink<IKeywordGetter>(FormKey.Factory("ABC123:Assign.esp"))},
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                .Add(new FormLink<IKeywordGetter>(FormKey.Factory("ABC123:Assign.esp"))),
             conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty.Add(
                 new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(
                     new FormLink<IKeywordGetter>(FormKey.Factory("123ABC:Skyrim.esm"))).Add(
                     new FormLink<IKeywordGetter>(FormKey.Factory("123890:Skyrim.esm"))))
             ),
             nodeName: "some_node",
-            subNodes: new HashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>()
+            subNodes: ImmutableHashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty
         );
 
         static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node2 = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {new FormLink<IKeywordGetter>(FormKey.Factory("DEF123:Assign.esp"))},
-            conditions: new HashSet<IAssignmentCondition<IArmorGetter>>
-            {
-                new HasAllKeywords<IArmorGetter>(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                    {new FormLink<IKeywordGetter>(FormKey.Factory("123DEF:Skyrim.esm"))})
-            },
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                .Add(new FormLink<IKeywordGetter>(FormKey.Factory("DEF123:Assign.esp"))),
+            conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty
+                .Add(new HasAllKeywords<IArmorGetter>(
+                    ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(
+                        new FormLink<IKeywordGetter>(FormKey.Factory("123DEF:Skyrim.esm")))
+                )),
             nodeName: "other_node",
-            subNodes: new HashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>()
+            subNodes: ImmutableHashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty
         );
 
         static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Expected = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>>(),
-            conditions: new HashSet<IAssignmentCondition<IArmorGetter>>
-            {
-                new HasAllKeywords<IArmorGetter>(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                    {new FormLink<IKeywordGetter>(FormKey.Factory("123456:Skyrim.esm"))})
-            },
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty,
+            conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty
+                .Add(new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                    .Add(new FormLink<IKeywordGetter>(FormKey.Factory("123456:Skyrim.esm")))
+                )),
             nodeName: "feature_foo",
-            subNodes: new HashSet<AssignmentRule<IArmorGetter, IKeywordGetter>> { Node1, Node2 }
+            subNodes: ImmutableHashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty.Add(Node1).Add(Node2)
         );
 
         [Fact]
@@ -67,7 +65,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -91,7 +89,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeOfType<Success<ImmutableList<AssignmentRule<IArmorGetter, IKeywordGetter>>>>();
             result.Should().BeASuccess(r =>
             {
@@ -116,7 +114,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -140,7 +138,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -153,7 +151,7 @@ namespace ReqtificatorTest.Transformers
         {
             var rawConfig = HoconConfigurationFactory.ParseString(@"
                 feature_foo {
-                    keywords_all = [ { foo = ""123456:Skyrim.esm""} ]
+                    keywords_all = [ { foo { moreFoo = ""123456:Skyrim.esm""} } ]
                     some_node {
                         keywords_all = [ { foo = ""123ABC:Skyrim.esm"", bla = ""123890:Skyrim.esm""} ]
                         keywords_assign = [ ""ABC123:Assign.esp""]
@@ -164,7 +162,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -188,7 +186,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -213,7 +211,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -238,7 +236,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeASuccess(r =>
             {
                 r.Should().HaveCount(1);
@@ -264,7 +262,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeAFailed(e =>
             {
                 e.Should().BeOfType<RuleConfigurationParsingException>();
@@ -290,7 +288,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeAFailed(e =>
             {
                 e.Should().BeOfType<RuleConfigurationParsingException>();
@@ -318,7 +316,7 @@ namespace ReqtificatorTest.Transformers
                     }
                 }");
 
-            var result = KeywordsFromRules.LoadFromConfigurationFile<IArmorGetter>(rawConfig, "tests");
+            var result = AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(rawConfig, "tests");
             result.Should().BeAFailed(e =>
             {
                 e.Should().BeOfType<RuleConfigurationParsingException>();
