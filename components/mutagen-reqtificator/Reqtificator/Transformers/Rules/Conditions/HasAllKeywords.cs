@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Aspects;
@@ -11,13 +11,13 @@ namespace Reqtificator.Transformers.Rules.Conditions
     internal class HasAllKeywords<TMajor> : IAssignmentCondition<TMajor>
         where TMajor : IMajorRecordGetter, IKeywordedGetter
     {
-        public HasAllKeywords(IReadOnlySet<IFormLinkGetter<IKeywordGetter>> keywords)
+        public HasAllKeywords(IImmutableSet<IFormLinkGetter<IKeywordGetter>> keywords)
         {
             if (keywords.Count == 0) throw new ArgumentException("keywords must be non-empty", nameof(keywords));
             Keywords = keywords;
         }
 
-        public IReadOnlySet<IFormLinkGetter<IKeywordGetter>> Keywords { get; }
+        public IImmutableSet<IFormLinkGetter<IKeywordGetter>> Keywords { get; }
 
         public bool CheckRecord(TMajor record) => Keywords.All(k => record.Keywords?.Contains(k) ?? false);
 

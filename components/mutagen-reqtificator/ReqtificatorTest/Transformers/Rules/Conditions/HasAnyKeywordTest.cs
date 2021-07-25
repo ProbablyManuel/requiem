@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Immutable;
 using FluentAssertions;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
@@ -27,8 +27,8 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
                 Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, Keyword2, OtherKeyword }
             };
 
-            var condition = new HasAnyKeyword<IArmorGetter>(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2});
+            var condition = new HasAnyKeyword<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                .Add(Keyword1).Add(Keyword2));
             condition.CheckRecord(armor).Should().BeTrue();
         }
 
@@ -40,8 +40,8 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
                 Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, OtherKeyword }
             };
 
-            var condition = new HasAnyKeyword<IArmorGetter>(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2});
+            var condition = new HasAnyKeyword<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                .Add(Keyword1).Add(Keyword2));
             condition.CheckRecord(armor).Should().BeTrue();
         }
 
@@ -53,8 +53,8 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
                 Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword }
             };
 
-            var condition = new HasAnyKeyword<IArmorGetter>(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2});
+            var condition = new HasAnyKeyword<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                .Add(Keyword1).Add(Keyword2));
             condition.CheckRecord(armor).Should().BeFalse();
         }
 
@@ -66,8 +66,8 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
                 Keywords = null
             };
 
-            var condition = new HasAnyKeyword<IArmorGetter>(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2});
+            var condition = new HasAnyKeyword<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
+                .Add(Keyword1).Add(Keyword2));
             condition.CheckRecord(armor).Should().BeFalse();
         }
     }
