@@ -21,12 +21,12 @@ namespace Reqtificator.Configuration
         }
 
         public IImmutableDictionary<ModKey, IImmutableSet<ReqTags>> ParseTagsFromModHeaders(
-            LoadOrder<IModListing<ISkyrimMod>> loadOrder)
+            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
             var regex = new Regex(
-                "<<(?<legacy>REQ:\"[A-z0-9]+\";\\s*)?(?<tags>REQ:(?:UNROLL|MUTATE|TEMPER)(?:;\\s*REQ:(?:UNROLL|MUTATE|TEMPER))?)>>");
+                "<<(?<legacy>REQ:\"[A-Za-z0-9]+\";\\s*)?(?<tags>REQ:(?:UNROLL|MUTATE|TEMPER)(?:;\\s*REQ:(?:UNROLL|MUTATE|TEMPER))?)>>");
 
-            IImmutableSet<ReqTags> ExtractTags(ISkyrimMod mod)
+            IImmutableSet<ReqTags> ExtractTags(ISkyrimModGetter mod)
             {
                 var match = regex.Match(mod.ModHeader.Description ?? "");
                 if (!match.Success) return ImmutableHashSet<ReqTags>.Empty;
