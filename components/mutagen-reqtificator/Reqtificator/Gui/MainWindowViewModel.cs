@@ -47,11 +47,7 @@ namespace Reqtificator.Gui
             _events.RecordProcessed += (_, result) => { mainThreadContext?.Post(_ => HandlePatchProgress(result), null); };
 
             _patchRequestThread = new BackgroundWorker();
-            _patchRequestThread.DoWork += (_, _1) =>
-            {
-                var updatedUserSettings = GetUpdatedUserSettings();
-                _events.RequestPatch(updatedUserSettings);
-            };
+            _patchRequestThread.DoWork += (_, _1) => { _events.RequestPatch(GetUpdatedUserSettings()); };
 
             PatchCommand = new DelegateCommand(RequestPatch);
         }
@@ -96,6 +92,12 @@ namespace Reqtificator.Gui
 
         private void HandlePatchReady(PatchContext patchContext)
         {
+            DisplayUserSettings(patchContext);
+            ResetPatchingStatus();
+        }
+
+        private void DisplayUserSettings(PatchContext patchContext)
+        {
             var loadedUserConfig = patchContext.UserSettings;
             VerboseLogging = loadedUserConfig.VerboseLogging;
             MergeLeveledLists = loadedUserConfig.MergeLeveledLists;
@@ -115,11 +117,9 @@ namespace Reqtificator.Gui
                 nameof(MergeLeveledLists),
                 nameof(MergeLeveledCharacters),
                 nameof(OpenEncounterZones));
-
-            ResetStatus();
         }
 
-        public void ResetStatus()
+        private void ResetPatchingStatus()
         {
             ProgramStatus = "Ready to patch...";
             maxRecords = 0;
