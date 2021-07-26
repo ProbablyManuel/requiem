@@ -5,21 +5,21 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 
-namespace Reqtificator.Transformers.LeveledItems
+namespace Reqtificator.Transformers.LeveledCharacters
 {
-    internal class CompactLeveledItemUnrolling : TransformerV2<LeveledItem, ILeveledItemGetter>
+    internal class CompactLeveledCharacterUnrolling : TransformerV2<LeveledNpc, ILeveledNpcGetter>
     {
         private readonly IImmutableSet<ModKey> _registeredMods;
 
-        private static readonly Regex Pattern = new Regex("^[a-zA-Z0-9]+_CLI_", RegexOptions.IgnoreCase);
+        private static readonly Regex Pattern = new Regex("^[a-zA-Z0-9]+_CLChar_", RegexOptions.IgnoreCase);
 
-        public CompactLeveledItemUnrolling(IImmutableSet<ModKey> modsRegisteredForFeature)
+        public CompactLeveledCharacterUnrolling(IImmutableSet<ModKey> modsRegisteredForFeature)
         {
             _registeredMods = modsRegisteredForFeature;
         }
 
-        public override TransformationResult<LeveledItem, ILeveledItemGetter> Process(
-            TransformationResult<LeveledItem, ILeveledItemGetter> input)
+        public override TransformationResult<LeveledNpc, ILeveledNpcGetter> Process(
+            TransformationResult<LeveledNpc, ILeveledNpcGetter> input)
         {
             if (input.Record().EditorID is null || !Pattern.IsMatch(input.Record().EditorID!) ||
                 _registeredMods.ContainsNot(input.Record().FormKey.ModKey) ||

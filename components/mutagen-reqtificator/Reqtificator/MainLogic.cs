@@ -11,6 +11,7 @@ using Reqtificator.Transformers;
 using Reqtificator.Transformers.Actors;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
+using Reqtificator.Transformers.LeveledCharacters;
 using Reqtificator.Transformers.LeveledItems;
 using Reqtificator.Transformers.Rules;
 using Reqtificator.Transformers.Weapons;
@@ -51,6 +52,10 @@ namespace Reqtificator
             var leveledItems = loadOrder.PriorityOrder.LeveledItem().WinningOverrides();
             var leveledItemsPatched =
                 new CompactLeveledItemUnrolling(modsWithCompactLeveledItems).ProcessCollection(leveledItems);
+
+            var leveledCharacters = loadOrder.PriorityOrder.LeveledNpc().WinningOverrides();
+            var leveledCharactersPatched =
+                new CompactLeveledCharacterUnrolling(modsWithCompactLeveledItems).ProcessCollection(leveledCharacters);
 
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
             var armorRules = Utils.LoadModConfigFiles(context, "ArmorKeywordAssignments")
@@ -111,6 +116,7 @@ namespace Reqtificator
                 .Map(m => m.WithRecords(doorsPatched))
                 .Map(m => m.WithRecords(containersPatched))
                 .Map(m => m.WithRecords(leveledItemsPatched))
+                .Map(m => m.WithRecords(leveledCharactersPatched))
                 .FlatMap(m => armorsPatched.Map(m.WithRecords))
                 .Map(m => m.WithRecords(ammoPatched))
                 .FlatMap(m => weaponsPatched.Map(m.WithRecords))
