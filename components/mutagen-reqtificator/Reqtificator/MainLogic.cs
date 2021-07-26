@@ -11,6 +11,7 @@ using Reqtificator.Transformers;
 using Reqtificator.Transformers.Actors;
 using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
+using Reqtificator.Transformers.LeveledItems;
 using Reqtificator.Transformers.Rules;
 using Reqtificator.Transformers.Weapons;
 
@@ -24,6 +25,10 @@ namespace Reqtificator
         {
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
             var importedModsLinkCache = loadOrder.ToImmutableLinkCache();
+            var reqTags = new ReqTagParser(events).ParseTagsFromModHeaders(loadOrder);
+            var modsWithCompactLeveledItems = reqTags
+                .Where(kv => kv.Value.Contains(ReqTags.CompactLeveledLists))
+                .Select(kv => kv.Key).ToImmutableHashSet().Add(requiemModKey);
 
             var numberOfRecords = loadOrder.PriorityOrder.Armor().WinningOverrides().Count() +
                                   loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
@@ -42,6 +47,10 @@ namespace Reqtificator
             var containers = loadOrder.PriorityOrder.Container().WinningOverrides();
             var containersPatched =
                 new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
+
+            var leveledItems = loadOrder.PriorityOrder.LeveledItem().WinningOverrides();
+            var leveledItemsPatched =
+                new CompactLeveledItemUnrolling(modsWithCompactLeveledItems).ProcessCollection(leveledItems);
 
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
             var armorRules = Utils.LoadModConfigFiles(context, "ArmorKeywordAssignments")
@@ -101,6 +110,7 @@ namespace Reqtificator
                 .Map(m => m.WithRecords(encounterZonesPatched))
                 .Map(m => m.WithRecords(doorsPatched))
                 .Map(m => m.WithRecords(containersPatched))
+                .Map(m => m.WithRecords(leveledItemsPatched))
                 .FlatMap(m => armorsPatched.Map(m.WithRecords))
                 .Map(m => m.WithRecords(ammoPatched))
                 .FlatMap(m => weaponsPatched.Map(m.WithRecords))

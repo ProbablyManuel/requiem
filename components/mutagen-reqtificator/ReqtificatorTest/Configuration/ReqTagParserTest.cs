@@ -25,8 +25,8 @@ namespace ReqtificatorTest.Configuration
             {
                 ModHeader = { Description = "a mutated adventure <<REQ:MUTATE; REQ:TEMPER>>" }
             };
-            var loadOrder = new LoadOrder<IModListing<ISkyrimMod>>
-                {new ModListing<ISkyrimMod>(mod1), new ModListing<ISkyrimMod>(mod2)};
+            var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>
+                {new ModListing<ISkyrimModGetter>(mod1), new ModListing<ISkyrimModGetter>(mod2)};
             var internalEvents = new Mock<IInternalEvents>(MockBehavior.Strict);
 
             var tags = new ReqTagParser(internalEvents.Object).ParseTagsFromModHeaders(loadOrder);
@@ -44,7 +44,7 @@ namespace ReqtificatorTest.Configuration
             {
                 ModHeader = { Description = "an epic adventure with no tags" }
             };
-            var loadOrder = new LoadOrder<IModListing<ISkyrimMod>> { new ModListing<ISkyrimMod>(mod1) };
+            var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>> { new ModListing<ISkyrimModGetter>(mod1) };
             var internalEvents = new Mock<IInternalEvents>(MockBehavior.Strict);
 
             var tags = new ReqTagParser(internalEvents.Object).ParseTagsFromModHeaders(loadOrder);
@@ -61,7 +61,7 @@ namespace ReqtificatorTest.Configuration
             {
                 ModHeader = { Description = "a legacy adventure <<REQ:\"Legacy\"; REQ:UNROLL>>" }
             };
-            var loadOrder = new LoadOrder<IModListing<ISkyrimMod>> { new ModListing<ISkyrimMod>(mod1) };
+            var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>> { new ModListing<ISkyrimModGetter>(mod1) };
             var internalEvents = new Mock<IInternalEvents>(MockBehavior.Strict);
 
             internalEvents.Setup(e => e.ReportDeprecationWarning(new ReqTagPrefixDeprecationWarning(mod1.ModKey)));
@@ -81,7 +81,7 @@ namespace ReqtificatorTest.Configuration
             {
                 ModHeader = { Description = "a legacy adventure <<ROQ:MUTATE; REQ:UNROLL>>" }
             };
-            var loadOrder = new LoadOrder<IModListing<ISkyrimMod>> { new ModListing<ISkyrimMod>(mod1) };
+            var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>> { new ModListing<ISkyrimModGetter>(mod1) };
             var internalEvents = new Mock<IInternalEvents>(MockBehavior.Strict);
 
             var tags = new ReqTagParser(internalEvents.Object).ParseTagsFromModHeaders(loadOrder);
