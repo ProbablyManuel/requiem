@@ -1,10 +1,10 @@
-﻿using FluentAssertions;
+﻿using System.Collections.Generic;
+using System.Collections.Immutable;
+using FluentAssertions;
 using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
-using System.Collections.Generic;
-using System.Collections.Immutable;
 using Xunit;
 
 namespace ReqtificatorTest.Configuration
