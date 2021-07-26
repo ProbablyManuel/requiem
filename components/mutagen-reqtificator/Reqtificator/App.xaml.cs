@@ -24,7 +24,7 @@ namespace Reqtificator
             MainWindow window = new() { DataContext = mainWindowViewModel };
 
             eventQueue.ExceptionOccured += (_, ex) => { OnUiThread(dispatcher, () => HandleError(ex, window)); };
-            eventQueue.PatchCompleted += (_, _1) => { OnUiThread(dispatcher, () => HandlePatchCompleted(window, mainWindowViewModel)); };
+            eventQueue.PatchCompleted += (_, _1) => { OnUiThread(dispatcher, () => HandlePatchCompleted(window)); };
 
             window.Show();
 
@@ -37,15 +37,14 @@ namespace Reqtificator
             d.Invoke(a);
         }
 
-        private static void HandlePatchCompleted(MainWindow window, MainWindowViewModel mainWindowViewModel)
+        private static void HandlePatchCompleted(MainWindow window)
         {
             PatchCompletedViewModel patchCompletedViewModel = new();
             PatchCompletedWindow pcWindow = new() { DataContext = patchCompletedViewModel };
-            patchCompletedViewModel.CloseRequested += (s, closeAll) =>
+            patchCompletedViewModel.CloseRequested += () =>
             {
                 pcWindow.Close();
-                if (closeAll) { window.Close(); }
-                else { mainWindowViewModel.ResetStatus(); }
+                window.Close();
             };
             _ = pcWindow.ShowDialog();
         }
