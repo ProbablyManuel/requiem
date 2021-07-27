@@ -109,12 +109,11 @@ namespace Reqtificator
             var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
 
             var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
-            outputMod.Map(m =>
+            _ = outputMod.Map(m =>
             {
                 PatchData.SetPatchHeadersAndVersion(requiem.Mod!, m, version);
                 return m;
             });
-            events.PublishPatchCompleted();
 
             return outputMod;
         }

@@ -8,27 +8,9 @@
         mc:Ignorable="d"
         Title="Reqtificator" SizeToContent="WidthAndHeight">
     <Window.Resources>
-        <Style TargetType="Window">
-            <Setter Property="Background" Value="#dfdfdf" />
-        </Style>
-        <Style TargetType="StackPanel">
-            <Setter Property="Margin" Value="16" />
-        </Style>
-        <Style TargetType="CheckBox">
-            <Setter Property="Padding" Value="4" />
-            <Setter Property="Margin" Value="0, 4" />
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="Padding" Value="4" />
-            <Setter Property="Margin" Value="0, 16" />
-            <Setter Property="FontSize" Value="14" />
-        </Style>
-        <Style TargetType="ListView">
-            <Setter Property="FontSize" Value="14" />
-        </Style>
         <BooleanToVisibilityConverter x:Key="VisibleIfTrueConverter" />
         <gui:InverseBooleanConverter x:Key="InverseConverter" />
-        </Window.Resources>
+    </Window.Resources>
     <StackPanel>
         <CheckBox IsChecked="{Binding VerboseLogging}">Verbose logging</CheckBox>
         <CheckBox IsChecked="{Binding MergeLeveledCharacters}">Merge leveled characters</CheckBox>
