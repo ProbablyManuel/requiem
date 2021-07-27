@@ -1,9 +1,9 @@
-﻿using Mutagen.Bethesda.Plugins;
+﻿using System;
+using System.Collections.Generic;
+using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Reqtificator.Configuration;
 using Reqtificator.Transformers;
-using System;
-using System.Collections.Generic;
 
 namespace Reqtificator
 {
