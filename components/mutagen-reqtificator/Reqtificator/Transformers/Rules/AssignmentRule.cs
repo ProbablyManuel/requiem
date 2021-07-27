@@ -21,17 +21,17 @@ namespace Reqtificator.Transformers.Rules
     internal sealed class AssignmentRule<TMajorGetter, TAssign> where TMajorGetter : IMajorRecordGetter
         where TAssign : class, IMajorRecordGetter
     {
-        public IReadOnlySet<IAssignmentCondition<TMajorGetter>> Conditions { get; }
+        public IImmutableSet<IAssignmentCondition<TMajorGetter>> Conditions { get; }
 
-        public IReadOnlySet<IFormLinkGetter<TAssign>> Assignments { get; }
+        public IImmutableSet<IFormLinkGetter<TAssign>> Assignments { get; }
 
-        public IReadOnlySet<AssignmentRule<TMajorGetter, TAssign>> SubNodes { get; }
+        public IImmutableSet<AssignmentRule<TMajorGetter, TAssign>> SubNodes { get; }
 
         public string NodeName { get; }
 
-        public AssignmentRule(IReadOnlySet<IAssignmentCondition<TMajorGetter>> conditions,
-            IReadOnlySet<IFormLinkGetter<TAssign>> assignments,
-            IReadOnlySet<AssignmentRule<TMajorGetter, TAssign>> subNodes,
+        public AssignmentRule(IImmutableSet<IAssignmentCondition<TMajorGetter>> conditions,
+            IImmutableSet<IFormLinkGetter<TAssign>> assignments,
+            IImmutableSet<AssignmentRule<TMajorGetter, TAssign>> subNodes,
             string nodeName)
         {
             Conditions = conditions;
@@ -90,13 +90,14 @@ namespace Reqtificator.Transformers.Rules
 
         public static ErrorOr<ImmutableList<AssignmentRule<TMajorGetter, TAssign>>> LoadFromConfigurationFile(
             Config config,
-            Func<HoconField, IReadOnlySet<IFormLinkGetter<TAssign>>?> assignmentExtractor,
-            Func<HoconField, IAssignmentCondition<TMajorGetter>?> conditionExtractor
+            Func<HoconField, IImmutableSet<IFormLinkGetter<TAssign>>?> assignmentExtractor,
+            Func<HoconField, IAssignmentCondition<TMajorGetter>?> conditionExtractor,
+            Func<HoconField, bool> ignoredFieldChecker
         )
         {
             AssignmentRule<TMajorGetter, TAssign> NodeExtractor(HoconField content)
             {
-                IReadOnlySet<IFormLinkGetter<TAssign>>? assignments = null;
+                IImmutableSet<IFormLinkGetter<TAssign>>? assignments = null;
                 var conditions = ImmutableHashSet<IAssignmentCondition<TMajorGetter>>.Empty;
                 var subNodes = ImmutableHashSet<AssignmentRule<TMajorGetter, TAssign>>.Empty;
 
@@ -106,7 +107,7 @@ namespace Reqtificator.Transformers.Rules
                         assignments = maybeAssignment;
                     else if (conditionExtractor(e.Value) is var maybeCondition && maybeCondition is not null)
                         conditions = conditions.Add(maybeCondition);
-                    else
+                    else if (!ignoredFieldChecker(e.Value))
                         subNodes = subNodes.Add(NodeExtractor(e.Value));
                 });
                 return new AssignmentRule<TMajorGetter, TAssign>(

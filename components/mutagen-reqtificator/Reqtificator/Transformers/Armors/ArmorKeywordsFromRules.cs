@@ -33,7 +33,7 @@ namespace Reqtificator.Transformers.Armors
                         .ForEach(a =>
                         {
                             record.Keywords.Add(a.ToAssign);
-                            Log.Debug($"applied keywords from rule {a.SourceRule}");
+                            Log.Debug($"applied keyword '{a.ToAssign.FormKey}' from rule {a.SourceRule}");
                         });
                 });
             }
