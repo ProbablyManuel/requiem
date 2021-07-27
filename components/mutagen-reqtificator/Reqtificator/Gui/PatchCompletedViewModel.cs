@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Documents;
 using System.Windows.Input;
 
 namespace Reqtificator.Gui
@@ -9,6 +10,13 @@ namespace Reqtificator.Gui
 
         public Action CloseRequested = delegate { };
 
+        public PatchCompletedViewModel(PatchFinished patchStatus)
+        {
+            Message = MessageFactory.BuildMessage(patchStatus);
+        }
+
         private void RequestClose(object? sender) { CloseRequested.Invoke(); }
+
+        public FlowDocument Message { get; private set; }
     }
 }
