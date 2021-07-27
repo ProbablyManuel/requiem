@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Immutable;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Aspects;
 using Mutagen.Bethesda.Plugins.Records;
@@ -26,27 +26,30 @@ namespace ReqtificatorTest.Transformers.Rules
             new FormLink<IKeywordGetter>(FormKey.Factory("DEF123:Assign.esp"));
 
         internal static readonly AssignmentRule<TMajor, IKeywordGetter> Node1 = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>> { AssignKeywordNode1 },
-            conditions: new HashSet<IAssignmentCondition<TMajor>>
-                {new HasAllKeywords<TMajor>(new HashSet<IFormLinkGetter<IKeywordGetter>> {CheckKeywordNode1})},
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(AssignKeywordNode1),
+            conditions: ImmutableHashSet<IAssignmentCondition<TMajor>>.Empty.Add(
+                new HasAllKeywords<TMajor>(
+                    ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(CheckKeywordNode1))),
             nodeName: "some_node",
-            subNodes: new HashSet<AssignmentRule<TMajor, IKeywordGetter>>()
+            subNodes: ImmutableHashSet<AssignmentRule<TMajor, IKeywordGetter>>.Empty
         );
 
         internal static readonly AssignmentRule<TMajor, IKeywordGetter> Node2 = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>> { AssignKeywordNode2 },
-            conditions: new HashSet<IAssignmentCondition<TMajor>>
-                {new HasAllKeywords<TMajor>(new HashSet<IFormLinkGetter<IKeywordGetter>> {CheckKeywordNode2})},
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(AssignKeywordNode2),
+            conditions: ImmutableHashSet<IAssignmentCondition<TMajor>>.Empty.Add(
+                new HasAllKeywords<TMajor>(
+                    ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(CheckKeywordNode2))),
             nodeName: "other_node",
-            subNodes: new HashSet<AssignmentRule<TMajor, IKeywordGetter>>()
+            subNodes: ImmutableHashSet<AssignmentRule<TMajor, IKeywordGetter>>.Empty
         );
 
         internal static readonly AssignmentRule<TMajor, IKeywordGetter> TestRule = new(
-            assignments: new HashSet<IFormLinkGetter<IKeywordGetter>>(),
-            conditions: new HashSet<IAssignmentCondition<TMajor>>
-                {new HasAllKeywords<TMajor>(new HashSet<IFormLinkGetter<IKeywordGetter>> {CheckKeywordRoot})},
+            assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty,
+            conditions: ImmutableHashSet<IAssignmentCondition<TMajor>>.Empty.Add(
+                new HasAllKeywords<TMajor>(
+                    ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty.Add(CheckKeywordRoot))),
             nodeName: "feature_foo",
-            subNodes: new HashSet<AssignmentRule<TMajor, IKeywordGetter>> { Node1, Node2 }
+            subNodes: ImmutableHashSet<AssignmentRule<TMajor, IKeywordGetter>>.Empty.Add(Node1).Add(Node2)
         );
     }
 }

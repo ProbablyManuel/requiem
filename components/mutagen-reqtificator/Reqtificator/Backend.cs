@@ -8,6 +8,7 @@ using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Serilog;
+using Serilog.Events;
 
 [assembly: CLSCompliant(false)]
 [assembly: InternalsVisibleTo("ReqtificatorTest")]
@@ -29,10 +30,12 @@ namespace Reqtificator
         private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
 
         private readonly InternalEvents _events;
+        private readonly ReqtificatorLogContext _logs;
 
-        public Backend(InternalEvents eventsQueue)
+        public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext)
         {
             _events = eventsQueue;
+            _logs = logContext;
             WarmupSkyrim.Init();
 
             var context = GameContext.GetRequiemContext(Release, PatchModKey);
@@ -43,6 +46,8 @@ namespace Reqtificator
 
             _events.PatchRequested += (_, updatedSettings) =>
             {
+                var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
+                _logs.LogLevel.MinimumLevel = logLevel;
                 updatedSettings.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json"));
                 var generatedPatch = GeneratePatch(context, updatedSettings, Release, PatchModKey);
                 Log.Information("done patching, now exporting to disk");

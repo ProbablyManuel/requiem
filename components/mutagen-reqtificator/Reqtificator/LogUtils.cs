@@ -8,23 +8,27 @@ using Serilog.Events;
 
 namespace Reqtificator
 {
-    public static class LogUtils
+    internal class ReqtificatorLogContext
     {
-        private const string LogFileName = "Reqtificator.log";
+        public LoggingLevelSwitch LogLevel { get; }
 
-        public static void SetUpLogging()
+        public ReqtificatorLogContext(string logName)
         {
-            File.Delete(LogFileName);
-            var logSwitch = new LoggingLevelSwitch(LogEventLevel.Debug);
+            File.Delete(logName);
+            LogLevel = new LoggingLevelSwitch(LogEventLevel.Information);
             const string format =
                 "{Timestamp} [{Level:u3}] {RecordFormId} - {Message:lj} ({RecordEditorId}){NewLine}{Exception}";
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 .Enrich.FromLogContext()
-                .WriteTo.File(LogFileName, levelSwitch: logSwitch, outputTemplate: format)
-                .WriteTo.Console(levelSwitch: logSwitch, outputTemplate: format)
+                .WriteTo.File(logName, levelSwitch: LogLevel, outputTemplate: format)
                 .CreateLogger();
         }
+    }
+
+    public static class LogUtils
+    {
+        public const string DefaultLogFileName = "Reqtificator.log";
 
         public static Func<Func<T>, T> WithRecordContextLog<T>(IMajorRecordGetter record)
         {
