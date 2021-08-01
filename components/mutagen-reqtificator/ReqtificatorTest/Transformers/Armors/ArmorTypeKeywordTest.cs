@@ -1,4 +1,6 @@
-﻿using FluentAssertions;
+﻿using System.Collections;
+using System.Linq;
+using FluentAssertions;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
@@ -6,8 +8,6 @@ using Noggog;
 using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Armors;
-using System.Collections;
-using System.Linq;
 using Xunit;
 
 namespace ReqtificatorTest.Transformers.Armors

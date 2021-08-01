@@ -1,8 +1,8 @@
-﻿using Mutagen.Bethesda.Plugins.Records;
-using Noggog;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using Mutagen.Bethesda.Plugins.Records;
+using Noggog;
 
 namespace Reqtificator.Transformers
 {
