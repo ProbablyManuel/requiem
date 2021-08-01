@@ -1,12 +1,12 @@
-﻿using Mutagen.Bethesda;
+﻿using System.Collections.Generic;
+using System.Collections.Immutable;
+using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.StaticReferences;
 using Serilog;
-using System.Collections.Generic;
-using System.Collections.Immutable;
 
 namespace Reqtificator.Transformers.EncounterZones
 {

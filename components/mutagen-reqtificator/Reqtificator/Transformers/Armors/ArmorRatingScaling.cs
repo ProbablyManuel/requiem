@@ -1,11 +1,11 @@
-﻿using Mutagen.Bethesda;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
 using Reqtificator.StaticReferences;
 using Serilog;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Reqtificator.Transformers.Armors
 {
