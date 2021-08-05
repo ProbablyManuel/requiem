@@ -27,7 +27,7 @@ namespace Reqtificator
                 MainWindow window = new() { DataContext = mainWindowViewModel };
 
                 eventQueue.ExceptionOccured += (_, ex) => { OnUiThread(dispatcher, () => HandleError(ex, window)); };
-                eventQueue.PatchCompleted += (_, patchStatus) => { OnUiThread(dispatcher, () => HandlePatchCompleted(window, patchStatus)); };
+                eventQueue.PatchingFinished += (_, patchStatus) => { OnUiThread(dispatcher, () => HandlePatchingFinished(window, patchStatus)); };
 
                 window.Show();
 
@@ -38,7 +38,7 @@ namespace Reqtificator
             {
                 Log.Error(ex.Message);
                 Log.Error(ex.StackTrace);
-                HandlePatchCompleted(null, new PatchFinished(PatchStatus.GeneralError, new List<string>() { ex.Message }.ToImmutableList()));
+                HandlePatchingFinished(null, new PatchingFinished(PatchStatus.GeneralError, new List<string>() { ex.Message }.ToImmutableList()));
                 throw;
             }
         }
@@ -48,17 +48,16 @@ namespace Reqtificator
             d.Invoke(a);
         }
 
-        private static void HandlePatchCompleted(MainWindow? window, PatchFinished patchStatus)
+        private static void HandlePatchingFinished(MainWindow? window, PatchingFinished patchStatus)
         {
-
-            PatchCompletedViewModel patchCompletedViewModel = new(patchStatus);
-            PatchCompletedWindow pcWindow = new() { DataContext = patchCompletedViewModel };
-            patchCompletedViewModel.CloseRequested += () =>
+            PatchingFinishedViewModel patchingFinishedViewModel = new(patchStatus);
+            PatchingFinishedWindow pfWindow = new() { DataContext = patchingFinishedViewModel };
+            patchingFinishedViewModel.CloseRequested += () =>
             {
-                pcWindow.Close();
+                pfWindow.Close();
                 window?.Close();
             };
-            _ = pcWindow.ShowDialog();
+            _ = pfWindow.ShowDialog();
         }
 
         private static void HandleError(Exception ex, MainWindow window)

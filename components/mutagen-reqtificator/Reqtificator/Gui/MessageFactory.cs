@@ -11,7 +11,7 @@ namespace Reqtificator
             public static readonly Uri ServiceCentral = new("https://requiem.atlassian.net/servicedesk/customer/portal/1");
         }
 
-        internal static FlowDocument BuildMessage(PatchFinished patchFinished)
+        internal static FlowDocument BuildMessage(PatchingFinished patchFinished)
         {
             switch (patchFinished.Status)
             {
