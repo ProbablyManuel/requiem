@@ -75,7 +75,7 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var itemRef2 = new FormLink<Armor>(FormKey.Factory("ABC456:Skyrim.esm"));
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                EditorID = "REQ_Not_a_CLI_SweetRolls",
+                EditorID = "Does_not_start_with_the_expected_'<ModPrefix>_CLI'_pattern",
                 Entries = new ExtendedList<LeveledItemEntry>
                 {
                     new() {Data = new LeveledItemEntryData {Count = 3, Level = 1, Reference = itemRef1}},
