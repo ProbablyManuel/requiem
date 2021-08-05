@@ -4,13 +4,13 @@ using System.Windows.Input;
 
 namespace Reqtificator.Gui
 {
-    internal class PatchCompletedViewModel
+    internal class PatchingFinishedViewModel
     {
         public ICommand CloseCommand => new DelegateCommand(RequestClose);
 
         public Action CloseRequested = delegate { };
 
-        public PatchCompletedViewModel(PatchFinished patchStatus)
+        public PatchingFinishedViewModel(Reqtificator.PatchingFinished patchStatus)
         {
             Message = MessageFactory.BuildMessage(patchStatus);
         }
