@@ -75,7 +75,7 @@ namespace ReqtificatorTest.Transformers.LeveledCharacters
             var itemRef2 = new FormLink<Npc>(FormKey.Factory("ABC456:Skyrim.esm"));
             var input = new LeveledNpc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                EditorID = "REQ_Not_a_CLChar_BossMonsters",
+                EditorID = "Does_not_start_with_the_expected_'<ModPrefix>_CLChar'_pattern",
                 Entries = new ExtendedList<LeveledNpcEntry>
                 {
                     new() {Data = new LeveledNpcEntryData {Count = 3, Level = 1, Reference = itemRef1}},
