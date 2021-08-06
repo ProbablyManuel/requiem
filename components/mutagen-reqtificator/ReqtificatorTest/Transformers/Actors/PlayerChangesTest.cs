@@ -1,7 +1,5 @@
-﻿using System.Collections.Immutable;
-using System.Linq;
+﻿using System.Linq;
 using FluentAssertions;
-using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;

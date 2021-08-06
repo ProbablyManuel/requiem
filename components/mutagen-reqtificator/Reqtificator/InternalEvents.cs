@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Reqtificator.Configuration;
@@ -14,8 +13,7 @@ namespace Reqtificator
         public void PublishReadyToPatch(UserSettings userConfig, IEnumerable<ModKey> activeMods);
         public void RequestPatch(UserSettings userSettings);
         public void PublishPatchStarted(int numberOfRecords);
-        public void PublishFinished(PatchStatus status, ImmutableList<string> arguments);
-        public void ReportException(Exception ex);
+        public void PublishFinished(ReqtificatorOutcome outcome);
         public void ReportDeprecationWarning(IDeprecationWarning warning);
 
         public void PublishRecordProcessed<T, TGetter>(TransformationResult<T, TGetter> result)
@@ -27,7 +25,7 @@ namespace Reqtificator
         public event EventHandler<PatchContext> ReadyToPatch = delegate { };
         public event EventHandler<UserSettings> PatchRequested = delegate { };
         public event EventHandler<PatchStarted> PatchStarted = delegate { };
-        public event EventHandler<PatchingFinished> PatchingFinished = delegate { };
+        public event EventHandler<ReqtificatorOutcome> PatchingFinished = delegate { };
         public event EventHandler<Exception> ExceptionOccured = delegate { };
         public event EventHandler<IDeprecationWarning> DeprecationWarningOccured = delegate { };
 
@@ -48,14 +46,9 @@ namespace Reqtificator
             PatchStarted.Invoke(this, new PatchStarted(numberOfRecords));
         }
 
-        public void PublishFinished(PatchStatus status, ImmutableList<string> arguments)
+        public void PublishFinished(ReqtificatorOutcome outcome)
         {
-            PatchingFinished.Invoke(this, new PatchingFinished(status, arguments));
-        }
-
-        public void ReportException(Exception ex)
-        {
-            ExceptionOccured.Invoke(this, ex);
+            PatchingFinished.Invoke(this, outcome);
         }
 
         public void ReportDeprecationWarning(IDeprecationWarning warning)
@@ -71,18 +64,9 @@ namespace Reqtificator
         }
     }
 
-    public enum PatchStatus
-    {
-        Success,
-        MissingRequiem,
-        GeneralError
-    }
-
     public record PatchContext(UserSettings UserSettings, IEnumerable<ModKey> ActiveMods);
 
     public record PatchStarted(int NumberOfRecords);
-
-    public record PatchingFinished(PatchStatus Status, ImmutableList<string> Arguments);
 
     public record RecordProcessedResult<T>(T Record, bool Changed) where T : IMajorRecordGetter;
 }

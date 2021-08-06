@@ -8,9 +8,9 @@ using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Exceptions;
 
-namespace Reqtificator
+namespace Reqtificator.Utils
 {
-    internal static class Utils
+    internal static class RecordUtils
     {
         public static ErrorOr<IImmutableSet<IFormLinkGetter<TGetter>>> GetRecordsFromAllImports<TGetter>(
             IFormLinkGetter<IFormListGetter> formListLink,

@@ -31,7 +31,7 @@ namespace Reqtificator.Gui
         public bool OpenEncounterZones { get; set; }
         public string ProgramStatus { get; private set; }
         public double Progress => maxRecords == 0 ? 0 : recordsProcessed * 100 / maxRecords;
-        public ICommand PatchCommand { get; set; }
+        public ICommand PatchCommand { get; private set; }
 
         public MainWindowViewModel(InternalEvents eventsQueue)
         {
