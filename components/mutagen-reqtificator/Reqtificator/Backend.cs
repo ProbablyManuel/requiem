@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -53,7 +55,7 @@ namespace Reqtificator
                 Log.Information("done patching, now exporting to disk");
                 MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
                 Log.Information("done exporting");
-                _events.PublishPatchCompleted();
+                _events.PublishFinished(PatchStatus.Success, new List<string>().ToImmutableList());
             };
         }
 
@@ -66,9 +68,7 @@ namespace Reqtificator
             if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
             {
                 Log.Error("oops, where's your Requiem.esp?");
-                var ex = new NotImplementedException("no nice error handling for missing Requiem.esp :)");
-                _events.ReportException(ex);
-                throw ex;
+                _events.PublishFinished(PatchStatus.MissingRequiem, new List<string>().ToImmutableList());
             }
 
             return userConfig;
@@ -99,6 +99,7 @@ namespace Reqtificator
             {
                 Log.Error(ex, "things did not go according to plan");
                 _events.ReportException(ex);
+                _events.PublishFinished(PatchStatus.GeneralError, new List<string>() { ex.Message }.ToImmutableList());
                 //TODO: replace this throw with proper GUI-sided error handling
                 throw;
             }
