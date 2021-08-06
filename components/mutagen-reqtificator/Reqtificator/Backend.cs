@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
@@ -15,6 +14,7 @@ using Serilog.Events;
 [assembly: CLSCompliant(false)]
 [assembly: InternalsVisibleTo("ReqtificatorTest")]
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")] //for mocking internal entities
+[assembly: NeutralResourcesLanguage("en-US")]
 
 
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
@@ -55,7 +55,7 @@ namespace Reqtificator
                 Log.Information("done patching, now exporting to disk");
                 MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
                 Log.Information("done exporting");
-                _events.PublishFinished(PatchStatus.Success, new List<string>().ToImmutableList());
+                _events.PublishFinished(ReqtificatorOutcome.Success);
             };
         }
 
@@ -68,7 +68,7 @@ namespace Reqtificator
             if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
             {
                 Log.Error("oops, where's your Requiem.esp?");
-                _events.PublishFinished(PatchStatus.MissingRequiem, new List<string>().ToImmutableList());
+                _events.PublishFinished(ReqtificatorOutcome.MissingRequiem);
             }
 
             return userConfig;
@@ -98,9 +98,7 @@ namespace Reqtificator
             catch (Exception ex)
             {
                 Log.Error(ex, "things did not go according to plan");
-                _events.ReportException(ex);
-                _events.PublishFinished(PatchStatus.GeneralError, new List<string>() { ex.Message }.ToImmutableList());
-                //TODO: replace this throw with proper GUI-sided error handling
+                _events.PublishFinished(ReqtificatorOutcome.GeneralError(ex));
                 throw;
             }
         }
