@@ -43,7 +43,7 @@ namespace Reqtificator.Gui
 
             _events.ReadyToPatch += (_, patchContext) => { mainThreadContext?.Post(_ => HandlePatchReady(patchContext), null); };
             _events.PatchStarted += (_, patchStarted) => { mainThreadContext?.Post(_ => HandlePatchStarted(patchStarted), null); };
-            _events.PatchCompleted += (_, _1) => { mainThreadContext?.Post(_ => HandlePatchCompleted(), null); };
+            _events.PatchingFinished += (_, _1) => { mainThreadContext?.Post(_ => HandlePatchingFinished(), null); };
             _events.RecordProcessed += (_, result) => { mainThreadContext?.Post(_ => HandlePatchProgress(result), null); };
 
             _patchRequestThread = new BackgroundWorker();
@@ -74,7 +74,7 @@ namespace Reqtificator.Gui
             NotifyChanged(nameof(ProgramStatus), nameof(Progress));
         }
 
-        private void HandlePatchCompleted()
+        private void HandlePatchingFinished()
         {
             ProgramStatus = "Done!";
             recordsProcessed++;
