@@ -74,26 +74,6 @@ Does not support non-latin languages.
 				</group>
 			</optionalFileGroups>
 		</installStep>
-		<!--Dragonborn: enable optional access to Vanilla DB content-->
-		<installStep name="Dragonborn DLC">
-			<optionalFileGroups order="Explicit">
-				<group name="Dragonborn" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Enable access to Vanilla Dragonborn content">
-							<description>
-								This plugin enables access to Vanilla Dragonborn content. By default Dragonborn content is disabled in Requiem because it has not been adjusted for Requiem.
-							</description>
-							<files>
-								<file source="fomod\options\esp\Vanilla Dragonborn\Requiem - Vanilla Dragonborn DLC.esp" destination="Requiem - Vanilla Dragonborn DLC.esp" priority="0"/>
-							</files>
-							<typeDescriptor>
-								<type name="Optional"/>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-			</optionalFileGroups>
-		</installStep>
 		<!--Gameplay Options: Messages and Sounds-->
 		<installStep name="Optional Plugins">
 			<optionalFileGroups order="Explicit">
