@@ -44,8 +44,9 @@ namespace ReqtificatorTest.Transformers.Actors
                     Scripts = new ExtendedList<ScriptEntry> { otherScript }
                 }
             };
-            INpcSpawnGetter returnValue = null;
-            linkCache.Setup(c => c.TryResolve(FormKey.Null, out returnValue, ResolveTarget.Winner)).Returns(false);
+            INpcSpawnGetter? returnValue = null;
+            linkCache.Setup(c => c.TryResolve<INpcSpawnGetter>(FormKey.Null, out returnValue, ResolveTarget.Winner))
+                .Returns(false);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -70,8 +71,9 @@ namespace ReqtificatorTest.Transformers.Actors
                     Scripts = new ExtendedList<ScriptEntry> { otherScript }
                 }
             };
-            INpcSpawnGetter returnValue = new LeveledNpc(template, SkyrimRelease.SkyrimSE);
-            linkCache.Setup(c => c.TryResolve(template, out returnValue, ResolveTarget.Winner)).Returns(true);
+            INpcSpawnGetter? returnValue = new LeveledNpc(template, SkyrimRelease.SkyrimSE);
+            linkCache.Setup(c => c.TryResolve<INpcSpawnGetter>(template, out returnValue, ResolveTarget.Winner))
+                .Returns(true);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -96,8 +98,9 @@ namespace ReqtificatorTest.Transformers.Actors
                     Scripts = new ExtendedList<ScriptEntry> { otherScript }
                 }
             };
-            INpcSpawnGetter returnValue = new LeveledNpc(template, SkyrimRelease.SkyrimSE);
-            linkCache.Setup(c => c.TryResolve(template, out returnValue, ResolveTarget.Winner)).Returns(true);
+            INpcSpawnGetter? returnValue = new LeveledNpc(template, SkyrimRelease.SkyrimSE);
+            linkCache.Setup(c => c.TryResolve<INpcSpawnGetter>(template, out returnValue, ResolveTarget.Winner))
+                .Returns(true);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -124,8 +127,9 @@ namespace ReqtificatorTest.Transformers.Actors
                     Scripts = new ExtendedList<ScriptEntry> { otherScript }
                 }
             };
-            INpcSpawnGetter returnValue = new Npc(template, SkyrimRelease.SkyrimSE);
-            linkCache.Setup(c => c.TryResolve(template, out returnValue, ResolveTarget.Winner)).Returns(true);
+            INpcSpawnGetter? returnValue = new Npc(template, SkyrimRelease.SkyrimSE);
+            linkCache.Setup(c => c.TryResolve<INpcSpawnGetter>(template, out returnValue, ResolveTarget.Winner))
+                .Returns(true);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -150,8 +154,9 @@ namespace ReqtificatorTest.Transformers.Actors
                     Scripts = new ExtendedList<ScriptEntry> { otherScript }
                 }
             };
-            INpcSpawnGetter returnValue = new Npc(template, SkyrimRelease.SkyrimSE);
-            linkCache.Setup(c => c.TryResolve(template, out returnValue, ResolveTarget.Winner)).Returns(true);
+            INpcSpawnGetter? returnValue = new Npc(template, SkyrimRelease.SkyrimSE);
+            linkCache.Setup(c => c.TryResolve<INpcSpawnGetter>(template, out returnValue, ResolveTarget.Winner))
+                .Returns(true);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<UnChanged<Npc, INpcGetter>>();
