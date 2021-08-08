@@ -30,7 +30,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
         {
             var graph = new Mock<IActorInheritanceGraphParser>(MockBehavior.Strict);
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            IRaceGetter race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword }
             };
@@ -48,9 +48,9 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
                 .Returns(
                     resolved.AsEnumerable());
-            cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
+            cache.Setup(c => c.TryResolve<IRaceGetter>(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
             var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
+                { Keyword1, Keyword2 }.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeTrue();
         }
 
@@ -59,7 +59,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
         {
             var graph = new Mock<IActorInheritanceGraphParser>(MockBehavior.Strict);
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            IRaceGetter race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword }
             };
@@ -86,9 +86,9 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             graph.SetupGet(g => g.Cache).Returns(cache.Object);
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
                 .Returns(new[] { resolved1, resolved2 }.AsEnumerable<IImmutableDictionary<Flags, INpcGetter>>());
-            cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
+            cache.Setup(c => c.TryResolve<IRaceGetter>(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
             var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
+                { Keyword1, Keyword2 }.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeTrue();
         }
 
@@ -97,7 +97,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
         {
             var graph = new Mock<IActorInheritanceGraphParser>(MockBehavior.Strict);
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            IRaceGetter race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, OtherKeyword }
             };
@@ -115,9 +115,9 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
                 .Returns(
                     resolved.AsEnumerable());
-            cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
+            cache.Setup(c => c.TryResolve<IRaceGetter>(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
             var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
+                { Keyword1, Keyword2 }.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeFalse();
         }
 
@@ -126,7 +126,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
         {
             var graph = new Mock<IActorInheritanceGraphParser>(MockBehavior.Strict);
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            IRaceGetter race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword }
             };
@@ -144,9 +144,9 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
                 .Returns(
                     resolved.AsEnumerable());
-            cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
+            cache.Setup(c => c.TryResolve<IRaceGetter>(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
             var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
+                { Keyword1, Keyword2 }.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeFalse();
         }
 
@@ -155,7 +155,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
         {
             var graph = new Mock<IActorInheritanceGraphParser>(MockBehavior.Strict);
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            IRaceGetter race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Keywords = null
             };
@@ -182,9 +182,9 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             graph.SetupGet(g => g.Cache).Returns(cache.Object);
             graph.Setup(g => g.FindAllTemplates(actor, Flags.Keywords, Flags.Traits))
                 .Returns(new[] { resolved1, resolved2 }.AsEnumerable<IImmutableDictionary<Flags, INpcGetter>>());
-            cache.Setup(c => c.TryResolve(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
+            cache.Setup(c => c.TryResolve<IRaceGetter>(race.FormKey, out race, ResolveTarget.Winner)).Returns(true);
             var condition = new ActorHasNoneOfKeywords(new HashSet<IFormLinkGetter<IKeywordGetter>>
-                {Keyword1, Keyword2}.ToImmutableHashSet(), graph.Object);
+                { Keyword1, Keyword2 }.ToImmutableHashSet(), graph.Object);
             condition.CheckRecord(actor).Should().BeFalse();
         }
     }
