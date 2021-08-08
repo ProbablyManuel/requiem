@@ -32,13 +32,15 @@ namespace ReqtificatorTest
             };
             var imports = new List<FormList> { version1, version2 };
 
-            IPerkGetter perkDummy1 = new Perk(perk1.FormKey, SkyrimRelease.SkyrimSE);
-            IPerkGetter perkDummy2 = new Perk(perk2.FormKey, SkyrimRelease.SkyrimSE);
+            IPerkGetter? perkDummy1 = new Perk(perk1.FormKey, SkyrimRelease.SkyrimSE);
+            IPerkGetter? perkDummy2 = new Perk(perk2.FormKey, SkyrimRelease.SkyrimSE);
 
             linkCache.Setup(c => c.ResolveAll<IFormListGetter>(formlist.FormKey, ResolveTarget.Winner))
                 .Returns(imports);
-            linkCache.Setup(c => c.TryResolve(perk1.FormKey, out perkDummy1, ResolveTarget.Winner)).Returns(true);
-            linkCache.Setup(c => c.TryResolve(perk2.FormKey, out perkDummy2, ResolveTarget.Winner)).Returns(true);
+            linkCache.Setup(c => c.TryResolve<IPerkGetter>(perk1.FormKey, out perkDummy1, ResolveTarget.Winner))
+                .Returns(true);
+            linkCache.Setup(c => c.TryResolve<IPerkGetter>(perk2.FormKey, out perkDummy2, ResolveTarget.Winner))
+                .Returns(true);
 
             var output = Utils.GetRecordsFromAllImports<IPerkGetter>(formlist, linkCache.Object);
 
