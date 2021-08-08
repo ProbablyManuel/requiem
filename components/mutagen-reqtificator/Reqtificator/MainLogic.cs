@@ -30,6 +30,9 @@ namespace Reqtificator
             var modsWithCompactLeveledItems = reqTags
                 .Where(kv => kv.Value.Contains(ReqTags.CompactLeveledLists))
                 .Select(kv => kv.Key).ToImmutableHashSet().Add(requiemModKey);
+            var modsWithTemperedItems = reqTags
+                .Where(kv => kv.Value.Contains(ReqTags.TemperedItems))
+                .Select(kv => kv.Key).ToImmutableHashSet().Add(requiemModKey);
 
             var numberOfRecords = loadOrder.PriorityOrder.Armor().WinningOverrides().Count() +
                                   loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
@@ -51,7 +54,9 @@ namespace Reqtificator
 
             var leveledItems = loadOrder.PriorityOrder.LeveledItem().WinningOverrides();
             var leveledItemsPatched =
-                new CompactLeveledItemUnrolling(modsWithCompactLeveledItems).ProcessCollection(leveledItems);
+                new CompactLeveledItemUnrolling(modsWithCompactLeveledItems)
+                    .AndThen(new TemperedItemGeneration(modsWithTemperedItems))
+                    .ProcessCollection(leveledItems);
 
             var leveledCharacters = loadOrder.PriorityOrder.LeveledNpc().WinningOverrides();
             var leveledCharactersPatched =

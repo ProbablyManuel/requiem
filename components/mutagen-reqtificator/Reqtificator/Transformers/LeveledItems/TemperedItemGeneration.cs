@@ -8,6 +8,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.Exceptions;
+using Serilog;
 
 namespace Reqtificator.Transformers.LeveledItems
 {
@@ -41,6 +42,7 @@ namespace Reqtificator.Transformers.LeveledItems
                 temperingData.GetItemHealthValues().ForEach(healthData =>
                     record.Entries.Add(new LeveledItemEntry
                     { Data = itemData, ExtraData = new ExtraData { ItemCondition = healthData } }));
+                Log.Debug("generated tempered versions of this item");
             });
         }
 
