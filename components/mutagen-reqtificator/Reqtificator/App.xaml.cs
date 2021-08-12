@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Threading;
+using Reqtificator.Events;
 using Reqtificator.Gui;
 using Serilog;
 
@@ -32,7 +33,7 @@ namespace Reqtificator
             }
             catch (Exception ex)
             {
-                HandlePatchingFinished(null, ReqtificatorOutcome.GeneralError(ex));
+                HandlePatchingFinished(null, ReqtificatorFailure.CausedBy(ex));
                 throw;
             }
         }
@@ -53,10 +54,10 @@ namespace Reqtificator
                 window?.Close();
             };
 
-            if (outcome.CausedByException())
+            if (outcome is ReqtificatorFailure exOutcome)
             {
-                Log.Error(outcome.Cause!.Message);
-                Log.Error(outcome.Cause.StackTrace);
+                Log.Error(exOutcome.Exception.Message);
+                Log.Error(exOutcome.Exception.StackTrace);
             }
             _ = pfWindow.ShowDialog();
         }

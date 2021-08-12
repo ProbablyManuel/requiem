@@ -6,7 +6,7 @@ using Reqtificator.Configuration;
 using Reqtificator.Exceptions;
 using Reqtificator.Transformers;
 
-namespace Reqtificator
+namespace Reqtificator.Events
 {
     internal interface IInternalEvents
     {

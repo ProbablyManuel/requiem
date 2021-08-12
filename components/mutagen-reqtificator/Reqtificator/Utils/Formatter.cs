@@ -18,7 +18,6 @@ namespace Reqtificator.Utils
                                     .Count();
 
             string indentationStr = new(' ', indentationSize);
-            Console.WriteLine("indentation string is '{0}'", indentationStr);
             return string.Format(CultureInfo.InvariantCulture, multiLineString.TrimStart().Replace($"\r\n{indentationStr}", "\r\n", StringComparison.InvariantCulture), args);
         }
     }

@@ -5,6 +5,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
+using Reqtificator.Events;
 using Reqtificator.Export;
 using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
