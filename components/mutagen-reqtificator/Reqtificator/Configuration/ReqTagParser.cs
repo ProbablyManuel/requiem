@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
+using Reqtificator.Events;
 using Reqtificator.Exceptions;
 using Serilog;
 

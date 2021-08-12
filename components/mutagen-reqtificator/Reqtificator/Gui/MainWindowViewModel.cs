@@ -8,6 +8,7 @@ using System.Windows.Input;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Reqtificator.Configuration;
+using Reqtificator.Events;
 
 namespace Reqtificator.Gui
 {

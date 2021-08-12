@@ -8,6 +8,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
+using Reqtificator.Events;
 using Serilog;
 using Serilog.Events;
 
@@ -98,7 +99,7 @@ namespace Reqtificator
             catch (Exception ex)
             {
                 Log.Error(ex, "things did not go according to plan");
-                _events.PublishFinished(ReqtificatorOutcome.GeneralError(ex));
+                _events.PublishFinished(ReqtificatorFailure.CausedBy(ex));
                 throw;
             }
         }

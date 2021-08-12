@@ -6,7 +6,7 @@ using MdXaml;
 
 namespace Reqtificator.Gui
 {
-    public static class MessageFactory
+    internal static class MessageFactory
     {
         private static readonly Action<object?> openHyperlinkExternally = (ea) =>
         {
@@ -22,8 +22,7 @@ namespace Reqtificator.Gui
         {
             HyperlinkCommand = new DelegateCommand(openHyperlinkExternally)
         };
-
-        internal static FlowDocument BuildMessage(string message)
+        public static FlowDocument BuildMessage(string message)
         {
             var document = mdFdConverter.Transform(message);
             document.IsEnabled = true;
