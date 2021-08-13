@@ -2,10 +2,8 @@
 using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
-using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
-using Reqtificator.StaticReferences;
 using Serilog;
 
 namespace Reqtificator.Transformers.Actors

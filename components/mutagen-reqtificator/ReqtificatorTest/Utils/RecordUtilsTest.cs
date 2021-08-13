@@ -5,13 +5,14 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
-using Reqtificator;
+using Reqtificator.Utils;
+using ReqtificatorTest;
 using Xunit;
 using Xunit.Sdk;
 
-namespace ReqtificatorTest
+namespace ReqtificatorTest.Utils
 {
-    public class UtilsTest
+    public class RecordUtilsTest
     {
         [Fact]
         public void Should_read_and_merge_the_records_from_all_formlist_versions()
@@ -42,7 +43,7 @@ namespace ReqtificatorTest
             linkCache.Setup(c => c.TryResolve<IPerkGetter>(perk2.FormKey, out perkDummy2, ResolveTarget.Winner))
                 .Returns(true);
 
-            var output = Utils.GetRecordsFromAllImports<IPerkGetter>(formlist, linkCache.Object);
+            var output = RecordUtils.GetRecordsFromAllImports<IPerkGetter>(formlist, linkCache.Object);
 
             output.Map(data => data.Should().BeEquivalentTo(new HashSet<FormLink<IPerkGetter>> { perk1, perk2 }));
             output.Recover(_ => throw new XunitException("expected a Success<>"));
