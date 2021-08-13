@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Windows;
 using System.Windows.Threading;
+using Reqtificator.Events;
 using Reqtificator.Gui;
 using Serilog;
 
@@ -10,7 +9,6 @@ namespace Reqtificator
 {
     public partial class App : Application
     {
-
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
@@ -26,7 +24,6 @@ namespace Reqtificator
                 MainWindowViewModel mainWindowViewModel = new(eventQueue);
                 MainWindow window = new() { DataContext = mainWindowViewModel };
 
-                eventQueue.ExceptionOccured += (_, ex) => { OnUiThread(dispatcher, () => HandleError(ex, window)); };
                 eventQueue.PatchingFinished += (_, patchStatus) => { OnUiThread(dispatcher, () => HandlePatchingFinished(window, patchStatus)); };
 
                 window.Show();
@@ -36,9 +33,7 @@ namespace Reqtificator
             }
             catch (Exception ex)
             {
-                Log.Error(ex.Message);
-                Log.Error(ex.StackTrace);
-                HandlePatchingFinished(null, new PatchingFinished(PatchStatus.GeneralError, new List<string>() { ex.Message }.ToImmutableList()));
+                HandlePatchingFinished(null, ReqtificatorFailure.CausedBy(ex));
                 throw;
             }
         }
@@ -48,24 +43,23 @@ namespace Reqtificator
             d.Invoke(a);
         }
 
-        private static void HandlePatchingFinished(MainWindow? window, PatchingFinished patchStatus)
+        private static void HandlePatchingFinished(MainWindow? window, ReqtificatorOutcome outcome)
         {
-            PatchingFinishedViewModel patchingFinishedViewModel = new(patchStatus);
+            PatchingFinishedViewModel patchingFinishedViewModel = new(outcome);
             PatchingFinishedWindow pfWindow = new() { DataContext = patchingFinishedViewModel };
             patchingFinishedViewModel.CloseRequested += () =>
             {
+
                 pfWindow.Close();
                 window?.Close();
             };
-            _ = pfWindow.ShowDialog();
-        }
 
-        private static void HandleError(Exception ex, MainWindow window)
-        {
-            var messageText = "Unfortunately an error occurred:\r\n" + ex.Message;
-            _ = MessageBox.Show(messageText, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            Log.Error(ex.ToString());
-            window.Close();
+            if (outcome is ReqtificatorFailure exOutcome)
+            {
+                Log.Error(exOutcome.Exception.Message);
+                Log.Error(exOutcome.Exception.StackTrace);
+            }
+            _ = pfWindow.ShowDialog();
         }
 
         private void App_SessionEnding(object _, SessionEndingCancelEventArgs ea)

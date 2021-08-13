@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Globalization;
 using System.Windows.Documents;
 using System.Windows.Input;
+using Reqtificator.Events;
 
 namespace Reqtificator.Gui
 {
@@ -10,13 +12,20 @@ namespace Reqtificator.Gui
 
         public Action CloseRequested = delegate { };
 
-        public PatchingFinishedViewModel(Reqtificator.PatchingFinished patchStatus)
+        public PatchingFinishedViewModel(ReqtificatorOutcome outcome)
         {
-            Message = MessageFactory.BuildMessage(patchStatus);
+            Title = outcome.Title;
+            Message = MessageFactory.BuildMessage(outcome.Message);
+            var imageName = outcome.Status.ToString().ToLower(CultureInfo.CurrentCulture);
+            Image = $"../Resources/Images/{imageName}.png";
         }
 
         private void RequestClose(object? sender) { CloseRequested.Invoke(); }
 
         public FlowDocument Message { get; private set; }
+
+        public string Title { get; private set; }
+
+        public string Image { get; private set; }
     }
 }

@@ -10,6 +10,12 @@ namespace Reqtificator.Gui
             DependencyProperty.Register("Message", typeof(FlowDocument), typeof(DynamicRichTextBox),
                 new PropertyMetadata(new PropertyChangedCallback(OnMessageChanged)));
 
+
+        public DynamicRichTextBox()
+        {
+
+        }
+
         public FlowDocument Message
         {
             get => (FlowDocument)GetValue(MessageProperty);

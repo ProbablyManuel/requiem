@@ -5,10 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Reqtificator.Gui"
         mc:Ignorable="d"
-        Title="Patching Finished" Width="400" ResizeMode="NoResize" SizeToContent="Height">
+        Title="{Binding Title}" Width="640" ResizeMode="NoResize" SizeToContent="Height">
+    <Window.Resources>
+        <Style TargetType="local:DynamicRichTextBox">
+            <Setter Property="Margin" Value="16" />
+            <Setter Property="Padding" Value="16" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Margin" Value="16" />
+        </Style>
+    </Window.Resources>
 
     <StackPanel>
-        <local:DynamicRichTextBox Message="{Binding Message}" IsReadOnly="True" IsDocumentEnabled="True"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding Image}" Width="128" Height="128" Grid.Column="0"/>
+            <local:DynamicRichTextBox Message="{Binding Message}" IsReadOnly="True" IsDocumentEnabled="True" Grid.Column="1"/>
+        </Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Command="{Binding CloseCommand}">Close</Button>
         </StackPanel>

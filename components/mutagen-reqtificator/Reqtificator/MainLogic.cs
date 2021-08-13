@@ -5,6 +5,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Configuration;
+using Reqtificator.Events;
 using Reqtificator.Export;
 using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
@@ -15,6 +16,7 @@ using Reqtificator.Transformers.LeveledCharacters;
 using Reqtificator.Transformers.LeveledItems;
 using Reqtificator.Transformers.Rules;
 using Reqtificator.Transformers.Weapons;
+using Reqtificator.Utils;
 
 namespace Reqtificator
 {
@@ -63,7 +65,7 @@ namespace Reqtificator
                 new CompactLeveledCharacterUnrolling(modsWithCompactLeveledItems).ProcessCollection(leveledCharacters);
 
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
-            var armorRules = Utils.LoadModConfigFiles(context, "ArmorKeywordAssignments")
+            var armorRules = RecordUtils.LoadModConfigFiles(context, "ArmorKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(x.Item2, x.Item1))
                     .Aggregate(ImmutableList<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty.AsSuccess(),
@@ -78,7 +80,7 @@ namespace Reqtificator
             );
 
             var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
-            var weaponRules = Utils.LoadModConfigFiles(context, "WeaponKeywordAssignments")
+            var weaponRules = RecordUtils.LoadModConfigFiles(context, "WeaponKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadKeywordRules<IWeaponGetter>(x.Item2, x.Item1))
                     .Aggregate(ImmutableList<AssignmentRule<IWeaponGetter, IKeywordGetter>>.Empty.AsSuccess(),
@@ -92,13 +94,13 @@ namespace Reqtificator
                     .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(events))
                     .ProcessCollection(weapons));
 
-            var actorPerkRules = Utils.LoadModConfigFiles(context, "ActorAssignmentRules")
+            var actorPerkRules = RecordUtils.LoadModConfigFiles(context, "ActorAssignmentRules")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadPerkRules(x.Item2, x.Item1, importedModsLinkCache))
                     .Aggregate(ImmutableList<AssignmentRule<INpcGetter, IPerkGetter>>.Empty.AsSuccess(),
                         (acc, elem) => acc.FlatMap(list => elem.Map(list.AddRange)))
                 );
-            var actorSpellRules = Utils.LoadModConfigFiles(context, "ActorAssignmentRules")
+            var actorSpellRules = RecordUtils.LoadModConfigFiles(context, "ActorAssignmentRules")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadSpellRules(x.Item2, x.Item1, importedModsLinkCache))
                     .Aggregate(ImmutableList<AssignmentRule<INpcGetter, ISpellGetter>>.Empty.AsSuccess(),
@@ -107,7 +109,7 @@ namespace Reqtificator
             var actorRules = actorPerkRules.FlatMap(perks => actorSpellRules.Map(spells => (perks, spells)));
 
             var actors = loadOrder.PriorityOrder.Npc().WinningOverrides();
-            var globalPerks = Utils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
+            var globalPerks = RecordUtils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
             var actorsPatched = globalPerks.FlatMap(perks => actorRules.Map(rules =>
                 new ActorCommonScripts(importedModsLinkCache)
                     .AndThen(new ActorGlobalPerks(perks))

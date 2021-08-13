@@ -1,4 +1,5 @@
 ﻿using Mutagen.Bethesda.Plugins.Records;
+using Reqtificator.Events;
 
 namespace Reqtificator.Transformers
 {
