@@ -8,7 +8,7 @@ using Mutagen.Bethesda.Plugins.Order;
 
 namespace Reqtificator
 {
-    public record GameContext(ImmutableList<IModListingGetter> ActiveMods, string DataFolder)
+    public record GameContext(ImmutableList<IModListingGetter> ActiveMods, string DataFolder, GameRelease Release)
     {
         public static GameContext GetRequiemContext(GameRelease release, ModKey patchToBeGenerated)
         {
@@ -27,7 +27,7 @@ namespace Reqtificator
             var activeMods = loadOrderEntries.OnlyEnabled().TakeWhile(it => it.ModKey != patchToBeGenerated)
                 .ToImmutableList();
 
-            return new GameContext(activeMods, dataFolder);
+            return new GameContext(activeMods, dataFolder, release);
         }
     }
 }
