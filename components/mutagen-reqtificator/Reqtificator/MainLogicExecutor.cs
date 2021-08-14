@@ -17,18 +17,30 @@ using Reqtificator.Transformers.LeveledItems;
 using Reqtificator.Transformers.Rules;
 using Reqtificator.Transformers.Weapons;
 using Reqtificator.Utils;
+using Serilog;
 
 namespace Reqtificator
 {
-    internal static class MainLogic
+    internal class MainLogicExecutor
     {
-        public static ErrorOr<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userConfig, InternalEvents events, ReqtificatorConfig reqtificatorConfig, GameContext context,
-            ModKey outputModKey)
+        private readonly InternalEvents _events;
+        private readonly GameContext _context;
+        private readonly ReqtificatorConfig _reqtificatorConfig;
+
+
+        public MainLogicExecutor(InternalEvents events, GameContext context, ReqtificatorConfig reqtificatorConfig)
+        {
+            _events = events;
+            _context = context;
+            _reqtificatorConfig = reqtificatorConfig;
+        }
+
+        public ErrorOr<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
+            UserSettings userSettings, ModKey outputModKey)
         {
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
             var importedModsLinkCache = loadOrder.ToImmutableLinkCache();
-            var reqTags = new ReqTagParser(events).ParseTagsFromModHeaders(loadOrder);
+            var reqTags = new ReqTagParser(_events).ParseTagsFromModHeaders(loadOrder);
             var modsWithCompactLeveledItems = reqTags
                 .Where(kv => kv.Value.Contains(ReqTags.CompactLeveledLists))
                 .Select(kv => kv.Key).ToImmutableHashSet().Add(requiemModKey);
@@ -38,14 +50,14 @@ namespace Reqtificator
 
             var numberOfRecords = loadOrder.PriorityOrder.Armor().WinningOverrides().Count() +
                                   loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
-            events.PublishPatchStarted(numberOfRecords);
+            _events.PublishPatchStarted(numberOfRecords);
 
             var ammoRecords = loadOrder.PriorityOrder.Ammunition().WinningOverrides();
             var ammoPatched = new AmmunitionTransformer().ProcessCollection(ammoRecords);
 
             var encounterZones = loadOrder.PriorityOrder.EncounterZone().WinningOverrides();
             var encounterZonesPatched =
-                new OpenCombatBoundaries(loadOrder, userConfig).ProcessCollection(encounterZones);
+                new OpenCombatBoundaries(loadOrder, userSettings).ProcessCollection(encounterZones);
 
             var doors = loadOrder.PriorityOrder.Door().WinningOverrides();
             var doorsPatched = new CustomLockpicking<Door, IDoor, IDoorGetter>().ProcessCollection(doors);
@@ -65,7 +77,7 @@ namespace Reqtificator
                 new CompactLeveledCharacterUnrolling(modsWithCompactLeveledItems).ProcessCollection(leveledCharacters);
 
             var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
-            var armorRules = RecordUtils.LoadModConfigFiles(context, "ArmorKeywordAssignments")
+            var armorRules = RecordUtils.LoadModConfigFiles(_context, "ArmorKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(x.Item2, x.Item1))
                     .Aggregate(ImmutableList<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty.AsSuccess(),
@@ -73,14 +85,14 @@ namespace Reqtificator
                 );
             var armorsPatched = armorRules.Map(rules =>
                 new ArmorTypeKeyword()
-                    .AndThen(new ArmorRatingScaling(reqtificatorConfig.ArmorSettings))
+                    .AndThen(new ArmorRatingScaling(_reqtificatorConfig.ArmorSettings))
                     .AndThen(new ArmorKeywordsFromRules(rules))
-                    .AndThen(new ProgressReporter<Armor, IArmorGetter>(events))
+                    .AndThen(new ProgressReporter<Armor, IArmorGetter>(_events))
                     .ProcessCollection(armors)
             );
 
             var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
-            var weaponRules = RecordUtils.LoadModConfigFiles(context, "WeaponKeywordAssignments")
+            var weaponRules = RecordUtils.LoadModConfigFiles(_context, "WeaponKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadKeywordRules<IWeaponGetter>(x.Item2, x.Item1))
                     .Aggregate(ImmutableList<AssignmentRule<IWeaponGetter, IKeywordGetter>>.Empty.AsSuccess(),
@@ -91,16 +103,16 @@ namespace Reqtificator
                     .AndThen(new WeaponNpcAmmunitionUsage())
                     .AndThen(new WeaponRangedSpeedScaling())
                     .AndThen(new WeaponKeywordsFromRules(rules))
-                    .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(events))
+                    .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(_events))
                     .ProcessCollection(weapons));
 
-            var actorPerkRules = RecordUtils.LoadModConfigFiles(context, "ActorAssignmentRules")
+            var actorPerkRules = RecordUtils.LoadModConfigFiles(_context, "ActorAssignmentRules")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadPerkRules(x.Item2, x.Item1, importedModsLinkCache))
                     .Aggregate(ImmutableList<AssignmentRule<INpcGetter, IPerkGetter>>.Empty.AsSuccess(),
                         (acc, elem) => acc.FlatMap(list => elem.Map(list.AddRange)))
                 );
-            var actorSpellRules = RecordUtils.LoadModConfigFiles(context, "ActorAssignmentRules")
+            var actorSpellRules = RecordUtils.LoadModConfigFiles(_context, "ActorAssignmentRules")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadSpellRules(x.Item2, x.Item1, importedModsLinkCache))
                     .Aggregate(ImmutableList<AssignmentRule<INpcGetter, ISpellGetter>>.Empty.AsSuccess(),
@@ -109,14 +121,17 @@ namespace Reqtificator
             var actorRules = actorPerkRules.FlatMap(perks => actorSpellRules.Map(spells => (perks, spells)));
 
             var actors = loadOrder.PriorityOrder.Npc().WinningOverrides();
-            var globalPerks = RecordUtils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
+            var globalPerks =
+                RecordUtils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
             var actorsPatched = globalPerks.FlatMap(perks => actorRules.Map(rules =>
                 new ActorCommonScripts(importedModsLinkCache)
                     .AndThen(new ActorGlobalPerks(perks))
                     .AndThen(new ActorPerksFromRules(rules.perks))
                     .AndThen(new ActorSpellsFromRules(rules.spells))
-                    .AndThen(new PlayerChanges(reqtificatorConfig.PlayerConfig))
+                    .AndThen(new PlayerChanges(_reqtificatorConfig.PlayerConfig))
                     .ProcessCollection(actors)));
+
+            Log.Information("adding patched records to output mod");
 
             var outputMod = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE).AsSuccess()
                 .Map(m => m.WithRecords(encounterZonesPatched))
@@ -139,12 +154,6 @@ namespace Reqtificator
             });
 
             return outputMod;
-        }
-
-
-        public static void WritePatchToDisk(SkyrimMod generatedPatch, string outputDirectory)
-        {
-            generatedPatch.WriteToBinaryParallel(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName));
         }
     }
 }
