@@ -48,9 +48,9 @@ namespace Reqtificator.Configuration
         }
 
         public static ReqtificatorConfig LoadFromConfigs(string baseFolder,
-            ILoadOrder<IModListing<ISkyrimModGetter>> activeMods)
+            ImmutableList<IModListingGetter> activeMods)
         {
-            var rawConfigs = activeMods.PriorityOrder
+            var rawConfigs = activeMods
                 .Select(m => Path.Combine(baseFolder, m.ModKey.FileName.NameWithoutExtension, "Reqtificator.conf"))
                 .Where(File.Exists)
                 .WithIndex()

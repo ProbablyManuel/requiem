@@ -33,7 +33,9 @@ namespace Reqtificator
         private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
 
         private readonly InternalEvents _events;
+        private readonly MainLogicExecutor _executor;
         private readonly ReqtificatorLogContext _logs;
+        private readonly GameContext _context;
 
         public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext)
         {
@@ -41,20 +43,25 @@ namespace Reqtificator
             _logs = logContext;
             WarmupSkyrim.Init();
 
-            var context = GameContext.GetRequiemContext(Release, PatchModKey);
-            var userConfig = LoadAndVerifyUserSettings(context);
+            _context = GameContext.GetRequiemContext(Release, PatchModKey);
+            //TODO: update base folder for configurations if needed
+            var configFolder = Path.Combine(_context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
+            var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods);
+            _executor = new MainLogicExecutor(_events, _context, reqtificatorConfig);
 
-            _events.PublishReadyToPatch(userConfig, context.ActiveMods.Select(x => x.ModKey));
+            var userConfig = LoadAndVerifyUserSettings(_context);
+
+            _events.PublishReadyToPatch(userConfig, _context.ActiveMods.Select(x => x.ModKey));
             Log.Information("Ready to patch: userConfig detected\r\n{userConfig}", userConfig);
 
             _events.PatchRequested += (_, updatedSettings) =>
             {
                 var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
                 _logs.LogLevel.MinimumLevel = logLevel;
-                updatedSettings.WriteToFile(Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json"));
-                var generatedPatch = GeneratePatch(context, updatedSettings, Release, PatchModKey);
+                updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
+                var generatedPatch = GeneratePatch(updatedSettings, PatchModKey);
                 Log.Information("done patching, now exporting to disk");
-                MainLogic.WritePatchToDisk(generatedPatch, context.DataFolder);
+                WritePatchToDisk(generatedPatch, _context.DataFolder);
                 Log.Information("done exporting");
                 _events.PublishFinished(ReqtificatorOutcome.Success);
             };
@@ -76,20 +83,15 @@ namespace Reqtificator
         }
 
 
-        public SkyrimMod GeneratePatch(GameContext context, UserSettings userConfig, GameRelease release,
-            ModKey patchModKey)
+        public SkyrimMod GeneratePatch(UserSettings userConfig, ModKey patchModKey)
         {
             try
             {
-                var loadOrder = LoadOrder.Import<ISkyrimModGetter>(context.DataFolder, context.ActiveMods, release);
-                //TODO: update base folder for configurations if needed
-                var configFolder = Path.Combine(context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
-                var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, loadOrder);
+                var loadOrder = LoadOrder.Import<ISkyrimModGetter>(_context.DataFolder, _context.ActiveMods, _context.Release);
 
                 Log.Information("start patching");
 
-                return MainLogic.GeneratePatch(loadOrder, userConfig, _events, reqtificatorConfig, context,
-                        patchModKey) switch
+                return _executor.GeneratePatch(loadOrder, userConfig, patchModKey) switch
                 {
                     Success<SkyrimMod> s => s.Value,
                     Failed<SkyrimMod> f => throw f.Error,
@@ -102,6 +104,11 @@ namespace Reqtificator
                 _events.PublishFinished(ReqtificatorFailure.CausedBy(ex));
                 throw;
             }
+        }
+
+        public static void WritePatchToDisk(SkyrimMod generatedPatch, string outputDirectory)
+        {
+            generatedPatch.WriteToBinaryParallel(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName));
         }
     }
 }
