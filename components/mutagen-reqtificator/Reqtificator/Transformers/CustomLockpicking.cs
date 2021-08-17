@@ -7,9 +7,8 @@ using Serilog;
 
 namespace Reqtificator.Transformers
 {
-    internal class CustomLockpicking<T, TI, TGetter> : Transformer<T, TI, TGetter>
-        where T : MajorRecord, TI, IScriptedGetter
-        where TI : IMajorRecord, TGetter, IScripted
+    internal class CustomLockpicking<T, TGetter> : TransformerV2<T, TGetter>
+        where T : MajorRecord, TGetter, IScripted
         where TGetter : IMajorRecordGetter, IScriptedGetter
     {
         private readonly ScriptEntry _lockPickingScript;
@@ -34,16 +33,19 @@ namespace Reqtificator.Transformers
             _lockPickingScript = lockPickingControScript;
         }
 
-        public override bool ShouldProcess(TGetter record)
+        public override TransformationResult<T, TGetter> Process(
+            TransformationResult<T, TGetter> input)
         {
-            return record.VirtualMachineAdapter?.Scripts.All(s => s.Name != _lockPickingScript.Name) ?? true;
-        }
+            var lockpickingScriptBound = input.Record().VirtualMachineAdapter?.Scripts.Any(s => s.Name == _lockPickingScript.Name) ?? false;
+            if (lockpickingScriptBound) { return input; }
 
-        public override void Process(TI record)
-        {
-            record.VirtualMachineAdapter ??= new VirtualMachineAdapter();
-            record.VirtualMachineAdapter.Scripts.Add(_lockPickingScript);
+            var result = input.Modify(record =>
+            {
+                record.VirtualMachineAdapter ??= new VirtualMachineAdapter();
+                record.VirtualMachineAdapter.Scripts.Add(_lockPickingScript);
+            });
             Log.Debug("added script for lockpicking implementation");
+            return result;
         }
     }
 }
