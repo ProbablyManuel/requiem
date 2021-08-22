@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Immutable;
 using System.Linq;
 using Mutagen.Bethesda;
@@ -55,6 +54,11 @@ namespace Reqtificator
                                   loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
             _events.PublishPatchStarted(numberOfRecords);
 
+            var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
+            //TODO: proper version handling injected by the build tool
+            var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
+            var generatedPatch = CreateEmptyPatchMod(outputModKey, version, requiem.Mod!);
+
             var ammoPatched = PatchAmmunition(loadOrder);
             var encounterZonesPatched = PatchEncounterZones(loadOrder, userSettings);
             var doorsPatched = PatchDoors(loadOrder);
@@ -64,16 +68,15 @@ namespace Reqtificator
             var armorsPatched = PatchArmors(loadOrder);
             var weaponsPatched = PatchWeapons(loadOrder);
             var actorsPatched = PatchActors(loadOrder, importedModsLinkCache);
+
+            // unfortunately, we must add the new records directly to the plugin to avoid broken formId links :)
             var actorVariationsPatched =
-                actorsPatched.Map(actors => PatchActorVariations(loadOrder, importedModsLinkCache));
+                actorsPatched.Map(actors => PatchActorVariations(loadOrder, actors, generatedPatch));
 
             Log.Information("adding patched records to output mod");
 
-            var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
-            //TODO: proper version handling injected by the build tool
-            var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
 
-            return CreateEmptyPatchMod(outputModKey, version, requiem.Mod!).AsSuccess()
+            return actorVariationsPatched.Map(_ => generatedPatch)
                 .Map(m => m.WithRecords(encounterZonesPatched))
                 .Map(m => m.WithRecords(doorsPatched))
                 .Map(m => m.WithRecords(containersPatched))
@@ -222,12 +225,26 @@ namespace Reqtificator
 
         private static (ImmutableList<Npc>, ImmutableList<LeveledNpc>) PatchActorVariations(
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> importedModsLinkCache)
+            IImmutableList<Npc> patchedActors,
+            ISkyrimMod targetMod)
         {
-            var variationsToGenerate = new ActorVariationsGenerator().FindAllActorVariations(loadOrder.PriorityOrder.LeveledNpc()
-                .WinningOverrides(), importedModsLinkCache);
+            var patchedActorsPseudoMod =
+                new SkyrimMod(new ModKey("RTFI_patchedActors", ModType.Plugin), SkyrimRelease.SkyrimSE);
+            var pseudoModListing = new ModListing<ISkyrimModGetter>(patchedActorsPseudoMod);
+            patchedActors.ForEach(r => patchedActorsPseudoMod.Npcs.Add(r));
+            var linkCacheWithPatchedActors = loadOrder.ListedOrder.Append(pseudoModListing)
+                .ToImmutableLinkCache<ISkyrimMod, ISkyrimModGetter>();
 
-            throw new NotImplementedException();
+            var variationsToGenerate = ActorVariationsGenerator.FindAllActorVariations(loadOrder.PriorityOrder
+                .LeveledNpc()
+                .WinningOverrides(), linkCacheWithPatchedActors);
+
+            var generatedVariations =
+                ActorVariationsGenerator.BuildActorVariationContent(variationsToGenerate.ToImmutableList(),
+                    linkCacheWithPatchedActors, targetMod);
+
+            pseudoModListing.Dispose();
+            return (generatedVariations.Item1, generatedVariations.Item2.Values.ToImmutableList());
         }
     }
 }
