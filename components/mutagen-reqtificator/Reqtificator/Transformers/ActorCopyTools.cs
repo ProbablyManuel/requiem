@@ -50,9 +50,12 @@ namespace Reqtificator.Transformers
         public static Npc MergeVisualAndSkillTemplates(ISkyrimMod targetMod, string editorId, INpcGetter skillTemplate,
             INpcGetter lookTemplate)
         {
+            //FIXME: this doesn't properly copy inherited data from the original actor
             var newActor = targetMod.Npcs.AddNew(editorId);
             newActor.DeepCopyIn(skillTemplate, GenerateMask(true));
-            newActor.DeepCopyIn(lookTemplate, GenerateMask(false));
+            newActor.Template = lookTemplate.AsNullableLink();
+            newActor.Configuration.TemplateFlags =
+                NpcConfiguration.TemplateFlag.Traits | NpcConfiguration.TemplateFlag.AttackData;
             return newActor;
         }
     }

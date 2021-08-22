@@ -76,7 +76,7 @@ namespace Reqtificator
             Log.Information("adding patched records to output mod");
 
 
-            return actorVariationsPatched.Map(_ => generatedPatch)
+            return generatedPatch.AsSuccess()
                 .Map(m => m.WithRecords(encounterZonesPatched))
                 .Map(m => m.WithRecords(doorsPatched))
                 .Map(m => m.WithRecords(containersPatched))
@@ -85,7 +85,8 @@ namespace Reqtificator
                 .FlatMap(m => armorsPatched.Map(m.WithRecords))
                 .Map(m => m.WithRecords(ammoPatched))
                 .FlatMap(m => weaponsPatched.Map(m.WithRecords))
-                .FlatMap(m => actorsPatched.Map(m.WithRecords));
+                .FlatMap(m => actorsPatched.Map(m.WithRecords))
+                .FlatMap(m => actorVariationsPatched.Map(m.WithRecords));
         }
 
         private static SkyrimMod CreateEmptyPatchMod(ModKey outputModKey, RequiemVersion version,
@@ -223,7 +224,7 @@ namespace Reqtificator
                     .ProcessCollection(actors)));
         }
 
-        private static (ImmutableList<Npc>, ImmutableList<LeveledNpc>) PatchActorVariations(
+        private static ImmutableList<LeveledNpc> PatchActorVariations(
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             IImmutableList<Npc> patchedActors,
             ISkyrimMod targetMod)
@@ -235,16 +236,19 @@ namespace Reqtificator
             var linkCacheWithPatchedActors = loadOrder.ListedOrder.Append(pseudoModListing)
                 .ToImmutableLinkCache<ISkyrimMod, ISkyrimModGetter>();
 
-            var variationsToGenerate = ActorVariationsGenerator.FindAllActorVariations(loadOrder.PriorityOrder
-                .LeveledNpc()
-                .WinningOverrides(), linkCacheWithPatchedActors);
+            var variationsToGenerate = ActorVariationsGenerator.FindAllActorVariations(
+                loadOrder.PriorityOrder.LeveledNpc().WinningOverrides(), linkCacheWithPatchedActors);
 
             var generatedVariations =
                 ActorVariationsGenerator.BuildActorVariationContent(variationsToGenerate.ToImmutableList(),
                     linkCacheWithPatchedActors, targetMod);
 
+            var updatedActorVariations = ActorVariationsGenerator.UpdateActorVariationLists(
+                loadOrder.PriorityOrder.LeveledNpc().WinningOverrides(), generatedVariations.Item2,
+                linkCacheWithPatchedActors);
+
             pseudoModListing.Dispose();
-            return (generatedVariations.Item1, generatedVariations.Item2.Values.ToImmutableList());
+            return updatedActorVariations;
         }
     }
 }
