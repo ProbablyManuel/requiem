@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -7,6 +6,7 @@ using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
+using Noggog;
 
 namespace Reqtificator.Transformers.ActorVariations
 {
@@ -20,27 +20,8 @@ namespace Reqtificator.Transformers.ActorVariations
         public static IImmutableSet<VariationKey> FindAllActorVariations(IEnumerable<ILeveledNpcGetter> records,
             ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
         {
-            ImmutableHashSet<VariationKey> ExtractVariations(ILeveledNpcGetter record)
-            {
-                if (record.Entries is null) return ImmutableHashSet<VariationKey>.Empty;
-
-                var skillsTemplates = record.Entries
-                    .Select(r => r.Data!.Reference.TryResolve(linkCache))
-                    .Where(r => r is not null && r is INpcGetter)
-                    .Select(r => ((INpcGetter)r!).AsLinkGetter())
-                    .ToList();
-                var lookTemplates = record.Entries
-                    .Select(r => r.Data!.Reference.TryResolve(linkCache))
-                    .Where(r => r is not null && r is ILeveledNpcGetter)
-                    .Select(r => ((ILeveledNpcGetter)r!).AsLinkGetter())
-                    .ToList();
-
-                return skillsTemplates.SelectMany(s => lookTemplates.Select(l => new VariationKey(s, l)))
-                    .ToImmutableHashSet();
-            }
-
             return records.Where(r => ActorVariationsPattern.IsMatch(r.EditorID ?? ""))
-                .Select(ExtractVariations)
+                .Select(r => ExtractVariations(r, linkCache).Keys.ToImmutableHashSet())
                 .Aggregate((a, b) => a.Union(b));
         }
 
@@ -88,9 +69,52 @@ namespace Reqtificator.Transformers.ActorVariations
         }
 
         public static ImmutableList<LeveledNpc> UpdateActorVariationLists(
-            ImmutableDictionary<VariationKey, LeveledNpc> variations)
+            IEnumerable<ILeveledNpcGetter> records,
+            ImmutableDictionary<VariationKey, LeveledNpc> variations,
+            ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
         {
-            throw new NotImplementedException();
+            return records.Where(r => ActorVariationsPattern.IsMatch(r.EditorID ?? ""))
+                .Select(r =>
+                {
+                    var updated = r.DeepCopy();
+                    var variationsToAdd = ExtractVariations(r, linkCache);
+                    updated.Entries!.Clear();
+                    variationsToAdd.ForEach(v =>
+                    {
+                        var newEntry = new LeveledNpcEntry()
+                        {
+                            Data = new LeveledNpcEntryData()
+                            {
+                                Count = 1,
+                                Level = 1,
+                                Reference = variations[v.Key].AsLink()
+                            }
+                        };
+                        updated.Entries.AddRange(Enumerable.Repeat(newEntry, v.Value));
+                    });
+                    return updated;
+                }).ToImmutableList();
+        }
+
+        private static ImmutableDictionary<VariationKey, int> ExtractVariations(ILeveledNpcGetter record,
+            ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
+        {
+            if (record.Entries is null) return ImmutableDictionary<VariationKey, int>.Empty;
+
+            var skillsTemplates = record.Entries
+                .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))
+                .Where(r => r.Item2 is not null && r.Item2 is INpcGetter)
+                .Select(r => (((INpcGetter)r.Item2!).AsLinkGetter(), r.r.Data!.Level))
+                .ToList();
+            var lookTemplates = record.Entries
+                .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))
+                .Where(r => r.Item2 is not null && r.Item2 is ILeveledNpcGetter)
+                .Select(r => (((ILeveledNpcGetter)r.Item2!).AsLinkGetter(), r.r.Data!.Count))
+                .ToList();
+
+            return skillsTemplates.SelectMany(s => lookTemplates.Select(l =>
+                    KeyValuePair.Create(new VariationKey(s.Item1, l.Item1), s.Level * l.Count)))
+                .ToImmutableDictionary();
         }
     }
 }
