@@ -7,6 +7,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
+using Reqtificator.Transformers.Rules;
 
 namespace Reqtificator.Transformers.ActorVariations
 {
@@ -32,6 +33,8 @@ namespace Reqtificator.Transformers.ActorVariations
             ISkyrimMod targetMod
         )
         {
+            var inheritanceGraph = new ActorInheritanceGraphParser(linkCacheWithPatchedActors);
+
             (ImmutableHashSet<Npc>, LeveledNpc) GenerateVariations(VariationKey key)
             {
                 var skillTemplate = key.SkillTemplate.Resolve(linkCacheWithPatchedActors);
@@ -40,7 +43,8 @@ namespace Reqtificator.Transformers.ActorVariations
                 var newActors = lookList.Entries!
                     .Select(e => e.Data!.Reference.Resolve<INpcGetter>(linkCacheWithPatchedActors))
                     .Select(lt => ActorCopyTools.MergeVisualAndSkillTemplates(targetMod,
-                        $"RTFI_Actor_Variations_{skillTemplate.FormKey}_{lt.FormKey}", skillTemplate, lt))
+                        $"RTFI_Actor_Variations_{skillTemplate.FormKey}_{lt.FormKey}", skillTemplate, lt,
+                        inheritanceGraph))
                     .ToImmutableList();
 
                 var newLeveledList =
