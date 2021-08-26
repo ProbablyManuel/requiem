@@ -1,58 +1,195 @@
-﻿using Mutagen.Bethesda;
+﻿using System;
+using System.Linq;
+using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
+using Noggog;
+using Reqtificator.Transformers.Rules;
 
 namespace Reqtificator.Transformers
 
 {
     internal static class ActorCopyTools
     {
-        private static Npc.TranslationMask GenerateMask(bool overallEqualityMode)
+        private static Npc.TranslationMask _inheritAiDataMask = new Npc.TranslationMask(defaultOn: false)
         {
-            var maskFilter = !overallEqualityMode;
-            return new Npc.TranslationMask(defaultOn: overallEqualityMode)
+            AIData = true,
+            CombatStyle = true,
+            GiftFilter = true
+        };
+
+        private static Npc.TranslationMask _inheritAiPackagesMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            Packages = true
+        };
+
+        private static Npc.TranslationMask _inheritAttackDataMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            AttackRace = true,
+            Attacks = true
+        };
+
+        private static Npc.TranslationMask _inheritBaseDataMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            Name = true,
+        };
+
+        private static Npc.TranslationMask _inheritDefaultPackageListMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            DefaultPackageList = true,
+            SpectatorOverridePackageList = true,
+            ObserveDeadBodyOverridePackageList = true,
+            GuardWarnOverridePackageList = true,
+            CombatOverridePackageList = true
+        };
+
+        private static Npc.TranslationMask _inheritFactionsMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            Factions = true,
+            CrimeFaction = true
+        };
+
+        private static Npc.TranslationMask _inheritInventoryMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            DefaultOutfit = true,
+            SleepingOutfit = true,
+            Items = true,
+            // PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
+            // {
+            //     GearedUpWeapons = true
+            // }
+        };
+
+        private static Npc.TranslationMask _inheritKeywordsMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            Keywords = true
+        };
+
+        private static Npc.TranslationMask _inheritScriptsMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            VirtualMachineAdapter = true
+        };
+
+        private static Npc.TranslationMask _inheritSpellListMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            ActorEffect = true,
+            Perks = true
+        };
+
+        private static Npc.TranslationMask _inheritStatsMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            Configuration = new NpcConfiguration.TranslationMask(false)
             {
-                EditorID = false, //never compare/copy the editorID
-                //"inherit traits" data from the traits tab
-                Race = maskFilter,
-                // Configuration = new NpcConfiguration.TranslationMask(defaultOn: overallEqualityMode)
-                // {
-                //     Flags = false // TODO: needs to be handled more delicately for the female flag
-                // },
-                WornArmor = maskFilter, // "armor" used as skin, not default worn outfit
-                Height = maskFilter,
-                Weight = maskFilter,
-                FarAwayModel = maskFilter,
-                // PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: overallEqualityMode)
-                // {
-                //     FarAwayModelDistance = maskFilter
-                // },
-                Voice = maskFilter,
-                // DeathItem = ??? //let's skip this one for the comparison
-                // "inherit traits" data from the sound tab
-                SoundLevel = maskFilter,
-                Sound = maskFilter,
-                // "inherit traits" data from the character gen parts tab
-                HeadTexture = maskFilter,
-                HeadParts = maskFilter,
-                HairColor = maskFilter,
-                TintLayers = maskFilter,
-                TextureLighting = maskFilter,
-                // "inherit traits" data from the character gen morphs tab
-                FaceParts = maskFilter,
-                FaceMorph = maskFilter,
-                //"inherit attack data" related fields
-                AttackRace = maskFilter,
-                Attacks = maskFilter
+                Level = true,
+                CalcMinLevel = true,
+                CalcMaxLevel = true,
+                SpeedMultiplier = true,
+                BleedoutOverride = true,
+                HealthOffset = true,
+                MagickaOffset = true,
+                StaminaOffset = true
+            },
+            PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
+            {
+                Health = true,
+                Magicka = true,
+                Stamina = true,
+                SkillOffsets = true,
+                SkillValues = true
+            },
+            Class = true
+        };
+
+        private static Npc.TranslationMask _inheritTraitsMask = new Npc.TranslationMask(defaultOn: false)
+        {
+            //traits tab
+            Race = true,
+            WornArmor = true,
+            Height = true,
+            Weight = true,
+            FarAwayModel = true,
+            Voice = true,
+            DeathItem = true,
+            // PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
+            // {
+            //     FarAwayModelDistance = true
+            // },
+            Configuration = new NpcConfiguration.TranslationMask(defaultOn: false)
+            {
+                DispositionBase = true
+            },
+            //sounds tab
+            SoundLevel = true,
+            Sound = true,
+            //character generation parts tab
+            HeadParts = true,
+            HairColor = true,
+            TintLayers = true,
+            HeadTexture = true,
+            FaceMorph = true,
+            FaceParts = true,
+            TextureLighting = true,
+        };
+
+        // IsCharGenFacePreset = 4,
+        // Unique = 32, // 0x00000020
+        // UseTemplate = 256, // 0x00000100
+        // DoesNotBleed = 65536, // 0x00010000
+        // LoopedScript = 2097152, // 0x00200000
+        // LoopedAudio = 268435456, // 0x10000000
+        // IsGhost = 536870912, // 0x20000000
+        // Invulnerable = 2147483648, // 0x80000000
+
+        // private static NpcConfiguration.Flag _inheritBaseDataFlags = NpcConfiguration.Flag.Essential |
+        //                                                              NpcConfiguration.Flag.Protected |
+        //                                                              NpcConfiguration.Flag.Respawn |
+        //                                                              NpcConfiguration.Flag.Summonable |
+        //                                                              NpcConfiguration.Flag.SimpleActor |
+        //                                                              NpcConfiguration.Flag.DoesntAffectStealthMeter;
+        //
+        // private static NpcConfiguration.Flag _inheritStatsFlags = NpcConfiguration.Flag.AutoCalcStats |
+        //                                                           NpcConfiguration.Flag.BleedoutOverride;
+        //
+        // private static NpcConfiguration.Flag _inheritTraitsFlags = NpcConfiguration.Flag.Female |
+        //                                                            NpcConfiguration.Flag.OppositeGenderAnims;
+
+        public static void CopyDataForTemplateFlag(Npc target, INpcGetter source, NpcConfiguration.TemplateFlag flag)
+        {
+            var mask = flag switch
+            {
+                NpcConfiguration.TemplateFlag.AIData => _inheritAiDataMask,
+                NpcConfiguration.TemplateFlag.AIPackages => _inheritAiPackagesMask,
+                NpcConfiguration.TemplateFlag.AttackData => _inheritAttackDataMask,
+                NpcConfiguration.TemplateFlag.BaseData => _inheritBaseDataMask,
+                NpcConfiguration.TemplateFlag.DefPackList => _inheritDefaultPackageListMask,
+                NpcConfiguration.TemplateFlag.Factions => _inheritFactionsMask,
+                NpcConfiguration.TemplateFlag.Inventory => _inheritInventoryMask,
+                NpcConfiguration.TemplateFlag.Keywords => _inheritKeywordsMask,
+                // NpcConfiguration.TemplateFlag.ModelAnimation => expr,
+                NpcConfiguration.TemplateFlag.Script => _inheritScriptsMask,
+                NpcConfiguration.TemplateFlag.SpellList => _inheritSpellListMask,
+                NpcConfiguration.TemplateFlag.Stats => _inheritStatsMask,
+                NpcConfiguration.TemplateFlag.Traits => _inheritTraitsMask,
+                _ => throw new ArgumentOutOfRangeException(nameof(flag), flag, null)
             };
+            target.DeepCopyIn(source, mask);
+            target.Configuration.TemplateFlags &= ~flag;
+            //special handling for the shared flags enum
+            //TODO: add logic here
         }
 
         public static Npc MergeVisualAndSkillTemplates(ISkyrimMod targetMod, string editorId, INpcGetter skillTemplate,
-            INpcGetter lookTemplate)
+            INpcGetter lookTemplate, ActorInheritanceGraphParser inheritanceGraph)
         {
-            //FIXME: this doesn't properly copy inherited data from the original actor
             var newActor = targetMod.Npcs.AddNew(editorId);
-            newActor.DeepCopyIn(skillTemplate, GenerateMask(true));
+            Enum.GetValues<NpcConfiguration.TemplateFlag>().Where(x =>
+                    x != NpcConfiguration.TemplateFlag.Traits && x != NpcConfiguration.TemplateFlag.AttackData 
+                                                              && x != NpcConfiguration.TemplateFlag.ModelAnimation)
+                .ForEach(f =>
+                {
+                    var source = inheritanceGraph.FindAllTemplates(skillTemplate, f).First()[f];
+                    CopyDataForTemplateFlag(newActor, source, f);
+                });
             newActor.Template = lookTemplate.AsNullableLink();
             newActor.Configuration.TemplateFlags =
                 NpcConfiguration.TemplateFlag.Traits | NpcConfiguration.TemplateFlag.AttackData;
