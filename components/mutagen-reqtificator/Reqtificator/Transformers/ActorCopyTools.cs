@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Immutable;
 using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins.Records;
@@ -140,21 +141,39 @@ namespace Reqtificator.Transformers
         // IsGhost = 536870912, // 0x20000000
         // Invulnerable = 2147483648, // 0x80000000
 
-        // private static NpcConfiguration.Flag _inheritBaseDataFlags = NpcConfiguration.Flag.Essential |
-        //                                                              NpcConfiguration.Flag.Protected |
-        //                                                              NpcConfiguration.Flag.Respawn |
-        //                                                              NpcConfiguration.Flag.Summonable |
-        //                                                              NpcConfiguration.Flag.SimpleActor |
-        //                                                              NpcConfiguration.Flag.DoesntAffectStealthMeter;
-        //
-        // private static NpcConfiguration.Flag _inheritStatsFlags = NpcConfiguration.Flag.AutoCalcStats |
-        //                                                           NpcConfiguration.Flag.BleedoutOverride;
-        //
-        // private static NpcConfiguration.Flag _inheritTraitsFlags = NpcConfiguration.Flag.Female |
-        //                                                            NpcConfiguration.Flag.OppositeGenderAnims;
+        private static readonly ImmutableList<NpcConfiguration.Flag> InheritBaseDataFlags = ImmutableList<NpcConfiguration.Flag>
+            .Empty
+            .Add(NpcConfiguration.Flag.Essential)
+            .Add(NpcConfiguration.Flag.Protected)
+            .Add(NpcConfiguration.Flag.Respawn)
+            .Add(NpcConfiguration.Flag.Summonable)
+            .Add(NpcConfiguration.Flag.SimpleActor)
+            .Add(NpcConfiguration.Flag.DoesntAffectStealthMeter);
+
+        private static readonly ImmutableList<NpcConfiguration.Flag> InheritStatsFlags = ImmutableList<NpcConfiguration.Flag>
+            .Empty
+            .Add(NpcConfiguration.Flag.AutoCalcStats)
+            .Add(NpcConfiguration.Flag.BleedoutOverride);
+
+        private static readonly ImmutableList<NpcConfiguration.Flag> InheritTraitsFlags = ImmutableList<NpcConfiguration.Flag>
+            .Empty
+            .Add(NpcConfiguration.Flag.Female)
+            .Add(NpcConfiguration.Flag.OppositeGenderAnims);
 
         public static void CopyDataForTemplateFlag(Npc target, INpcGetter source, NpcConfiguration.TemplateFlag flag)
         {
+            void CopyFlagValue(NpcConfiguration.Flag flagToCopy)
+            {
+                if (source.Configuration.Flags.HasFlag(flagToCopy))
+                {
+                    target.Configuration.Flags |= flagToCopy;
+                }
+                else
+                {
+                    target.Configuration.Flags &= ~flagToCopy;
+                }
+            }
+
             var mask = flag switch
             {
                 NpcConfiguration.TemplateFlag.AIData => _inheritAiDataMask,
@@ -175,7 +194,14 @@ namespace Reqtificator.Transformers
             target.DeepCopyIn(source, mask);
             target.Configuration.TemplateFlags &= ~flag;
             //special handling for the shared flags enum
-            //TODO: add logic here
+            var flagsToCopy = flag switch
+            {
+                NpcConfiguration.TemplateFlag.BaseData => InheritBaseDataFlags,
+                NpcConfiguration.TemplateFlag.Stats => InheritStatsFlags,
+                NpcConfiguration.TemplateFlag.Traits => InheritTraitsFlags,
+                _ => ImmutableList<NpcConfiguration.Flag>.Empty
+            };
+            flagsToCopy.ForEach(CopyFlagValue);
         }
 
         public static Npc MergeVisualAndSkillTemplates(ISkyrimMod targetMod, string editorId, INpcGetter skillTemplate,
@@ -183,7 +209,7 @@ namespace Reqtificator.Transformers
         {
             var newActor = targetMod.Npcs.AddNew(editorId);
             Enum.GetValues<NpcConfiguration.TemplateFlag>().Where(x =>
-                    x != NpcConfiguration.TemplateFlag.Traits && x != NpcConfiguration.TemplateFlag.AttackData 
+                    x != NpcConfiguration.TemplateFlag.Traits && x != NpcConfiguration.TemplateFlag.AttackData
                                                               && x != NpcConfiguration.TemplateFlag.ModelAnimation)
                 .ForEach(f =>
                 {
