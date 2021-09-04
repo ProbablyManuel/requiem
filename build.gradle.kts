@@ -107,7 +107,8 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
         "meshes",
         "SkyProc Patchers",
         "sound",
-        "textures"
+        "textures",
+        "BashTags"
     )
     excludePatterns = listOf("REQ_Debug.+\\.pex")
 }
