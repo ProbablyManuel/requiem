@@ -219,6 +219,7 @@ namespace Reqtificator.Transformers
             newActor.Template = lookTemplate.AsNullableLink();
             newActor.Configuration.TemplateFlags =
                 NpcConfiguration.TemplateFlag.Traits | NpcConfiguration.TemplateFlag.AttackData;
+            newActor.Race = lookTemplate.Race.AsSetter();
             return newActor;
         }
     }
