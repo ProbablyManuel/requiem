@@ -28,5 +28,15 @@
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
     </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Reqtificator.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resources\Reqtificator.ico">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
 	
 </Project>

@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Reqtificator"
         xmlns:gui="clr-namespace:Reqtificator.Gui"
         mc:Ignorable="d"
-        Title="Reqtificator" SizeToContent="WidthAndHeight">
+        Title="Reqtificator" SizeToContent="WidthAndHeight"
+        Icon="../Resources/Reqtificator.ico">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="VisibleIfTrueConverter" />
         <gui:InverseBooleanConverter x:Key="InverseConverter" />
