@@ -12,7 +12,28 @@ namespace ReqtificatorTest.Transformers.EncounterZones
     public class OpenCombatBoundariesTest
     {
         [Fact]
-        public void Should_Add_The_Open_Combat_Boundary_Flag()
+        public void Should_Add_The_Open_Combat_Boundary_Flag_To_Existing_Flags()
+        {
+            var formKey = FormKey.Factory("123456:Requiem.esp");
+            var transformer = new OpenCombatBoundaries(ImmutableHashSet<ZoneRef>.Empty, true);
+
+            var input = new EncounterZone(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                Flags = EncounterZone.Flag.NeverResets
+            };
+            var reference = input.DeepCopy();
+
+            var result = transformer.Process(new UnChanged<EncounterZone, IEncounterZoneGetter>(input));
+
+            var mask = new EncounterZone.TranslationMask(defaultOn: true) { Flags = false };
+            reference.Equals(result.Record(), mask).Should().BeTrue();
+
+            result.Record().Flags.Should().BeEquivalentTo(EncounterZone.Flag.NeverResets | EncounterZone.Flag.DisableCombatBoundary);
+            result.IsModified().Should().BeTrue();
+        }
+
+        [Fact]
+        public void Should_Add_The_Open_Combat_Boundary_Flag_Where_None_Exist()
         {
             var formKey = FormKey.Factory("123456:Requiem.esp");
             var transformer = new OpenCombatBoundaries(ImmutableHashSet<ZoneRef>.Empty, true);
@@ -23,24 +44,6 @@ namespace ReqtificatorTest.Transformers.EncounterZones
             result.Record().Flags.Should().BeEquivalentTo(EncounterZone.Flag.DisableCombatBoundary);
             result.IsModified().Should().BeTrue();
         }
-
-        [Fact]
-        public void Should_Add_The_Open_Combat_Boundary_Flag_To_Existing_Flags()
-        {
-            var formKey = FormKey.Factory("123456:Requiem.esp");
-            var transformer = new OpenCombatBoundaries(ImmutableHashSet<ZoneRef>.Empty, true);
-
-            var input = new EncounterZone(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
-            {
-                Flags = EncounterZone.Flag.NeverResets
-            };
-
-            var result = transformer.Process(new UnChanged<EncounterZone, IEncounterZoneGetter>(input));
-            result.Record().Flags.Should().BeEquivalentTo(EncounterZone.Flag.NeverResets | EncounterZone.Flag.DisableCombatBoundary);
-            result.IsModified().Should().BeTrue();
-        }
-
-
 
         [Fact]
         public void Should_Skip_Records_In_The_ExclusionList()
