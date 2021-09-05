@@ -101,13 +101,15 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
     plugin = file("Requiem.esp")
     coreMod = files(
         "Reqtificator.bat",
+        "Requiem.modgroups",
         releaseDocsDir,
         "Scripts",
         "interface",
         "meshes",
         "SkyProc Patchers",
         "sound",
-        "textures"
+        "textures",
+        "BashTags"
     )
     excludePatterns = listOf("REQ_Debug.+\\.pex")
 }
