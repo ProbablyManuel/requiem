@@ -131,13 +131,13 @@ namespace Reqtificator
         private static ImmutableList<Door> PatchDoors(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
             var doors = loadOrder.PriorityOrder.Door().WinningOverrides();
-            return new CustomLockpicking<Door, IDoor, IDoorGetter>().ProcessCollection(doors);
+            return new CustomLockpicking<Door, IDoorGetter>().ProcessCollection(doors);
         }
 
         private static ImmutableList<Container> PatchContainers(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
             var containers = loadOrder.PriorityOrder.Container().WinningOverrides();
-            return new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
+            return new CustomLockpicking<Container, IContainerGetter>().ProcessCollection(containers);
         }
 
         private static ImmutableList<LeveledItem> PatchLeveledItems(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,

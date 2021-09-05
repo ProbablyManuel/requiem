@@ -10,7 +10,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.EncounterZones
 {
-    internal class OpenCombatBoundaries : Transformer<EncounterZone, IEncounterZone, IEncounterZoneGetter>
+    internal class OpenCombatBoundaries : TransformerV2<EncounterZone, IEncounterZoneGetter>
     {
         private readonly IReadOnlySet<IFormLink<IEncounterZoneGetter>> _alwaysClosedZones;
         private readonly bool _openCombatZones;
@@ -45,15 +45,13 @@ namespace Reqtificator.Transformers.EncounterZones
             _openCombatZones = userConfig.OpenEncounterZones;
         }
 
-        public override bool ShouldProcess(IEncounterZoneGetter record)
+        public override TransformationResult<EncounterZone, IEncounterZoneGetter> Process(TransformationResult<EncounterZone, IEncounterZoneGetter> input)
         {
-            return _openCombatZones && !_alwaysClosedZones.Contains(new FormLink<IEncounterZoneGetter>(record));
-        }
+            if (!_openCombatZones || _alwaysClosedZones.Contains(new FormLink<IEncounterZoneGetter>(input.Record()))) { return input; }
 
-        public override void Process(IEncounterZone record)
-        {
-            record.Flags |= EncounterZone.Flag.DisableCombatBoundary;
+            var result = input.Modify(record => record.Flags |= EncounterZone.Flag.DisableCombatBoundary);
             Log.Debug("opened combat boundaries of encounter zone");
+            return result;
         }
     }
 }
