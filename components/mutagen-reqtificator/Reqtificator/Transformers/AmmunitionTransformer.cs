@@ -5,19 +5,19 @@ using Serilog;
 
 namespace Reqtificator.Transformers
 {
-    internal class AmmunitionTransformer : Transformer<Ammunition, IAmmunition, IAmmunitionGetter>
+    internal class AmmunitionTransformer : TransformerV2<Ammunition, IAmmunitionGetter>
     {
-        public override bool ShouldProcess(IAmmunitionGetter record)
+        public override TransformationResult<Ammunition, IAmmunitionGetter> Process(
+            TransformationResult<Ammunition, IAmmunitionGetter> input)
         {
-            var keywordCheck = (!record.Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? true) &&
-                               (!record.Keywords?.Contains(Keywords.NoDamageRescaling.FormKey) ?? true);
-            return keywordCheck && record.Damage > 0.0f;
-        }
+            var record = input.Record();
+            var exceptionKeywordsFound = (record.Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? false) ||
+                   (record.Keywords?.Contains(Keywords.NoDamageRescaling.FormKey) ?? false);
+            if (exceptionKeywordsFound || record.Damage <= 0.0f) { return input; }
 
-        public override void Process(IAmmunition record)
-        {
-            record.Damage *= 4;
+            var result = input.Modify(record => record.Damage *= 4);
             Log.Debug("scaled damage by 4");
+            return result;
         }
     }
 }
