@@ -20,24 +20,30 @@ namespace Reqtificator.Transformers.LeveledItems
 
         private record Change(Operation Type, ILeveledItemEntryGetter Reference, int Count);
 
+        private record EntryKey(IFormLinkGetter<IItemGetter> Reference, int Level, int Count);
+
+        private readonly bool _mergeEnabled;
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _cache;
         private readonly IImmutableSet<ModKey> _modsEligibleForMerging;
+        private readonly CompactLeveledItemUnrolling _unroller;
         private static readonly ModKey Requiem = new ModKey("Requiem", ModType.Plugin);
 
         private static readonly LeveledItem.TranslationMask CopyMask = new(defaultOn: false) { Entries = true };
 
-        public LeveledItemMerging(ILinkCache<ISkyrimMod, ISkyrimModGetter> cache,
-            IImmutableSet<ModKey> modsWithRequiemAsMaster)
+        public LeveledItemMerging(bool mergeEnabled, ILinkCache<ISkyrimMod, ISkyrimModGetter> cache,
+            IImmutableSet<ModKey> modsWithRequiemAsMaster, CompactLeveledItemUnrolling compactLeveledItemUnrolling)
         {
+            _mergeEnabled = mergeEnabled;
             _cache = cache;
             _modsEligibleForMerging = modsWithRequiemAsMaster.Add(Requiem);
+            _unroller = compactLeveledItemUnrolling;
         }
 
         public override TransformationResult<LeveledItem, ILeveledItemGetter> Process(
             TransformationResult<LeveledItem, ILeveledItemGetter> input)
         {
-            //TODO: check if merge can be done
             //TODO: special overwrite rules
+            if (!_mergeEnabled) return input;
 
             var toMerge = _cache.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(input.Record().FormKey)
                 .Where(x => _modsEligibleForMerging.Contains(x.ModKey)).ToList();
@@ -45,12 +51,20 @@ namespace Reqtificator.Transformers.LeveledItems
 
             if (baseVersion == null || toMerge.Count < 3) return input;
 
+            var unrolledBaseVersion = _unroller.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(baseVersion))
+                .Record();
+
             var updates = toMerge.Where(x => x.ModKey != Requiem)
-                .Select(x => GetDifferences(baseVersion, x.Record)).ToImmutableList();
+                .Select(x =>
+                {
+                    var unrolledList = _unroller.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(x.Record))
+                        .Record();
+                    return GetDifferences(unrolledBaseVersion, unrolledList);
+                }).ToImmutableList();
 
             return input.Modify(record =>
             {
-                record.DeepCopyIn(baseVersion, out _, CopyMask);
+                record.DeepCopyIn(unrolledBaseVersion, out _, CopyMask);
                 record.Entries ??= new ExtendedList<LeveledItemEntry>();
 
                 updates.SelectMany(cs => cs.Where(c => c.Type == Operation.Addition))
@@ -81,17 +95,17 @@ namespace Reqtificator.Transformers.LeveledItems
         private static IImmutableList<Change> GetDifferences(ILeveledItemGetter baseVersion,
             ILeveledItemGetter newVersion)
         {
-            var baseEntries = baseVersion.Entries!
+            var baseEntries = (baseVersion.Entries ?? ImmutableList<ILeveledItemEntryGetter>.Empty)
                 .Where(x => x.Data != null)
-                .GroupBy(x => x.Data!, x => x, (_, xs) =>
+                .GroupBy(x => new EntryKey(x.Data!.Reference, x.Data.Level, x.Data.Count), x => x, (_, xs) =>
                 {
                     var leveledItemEntryGetters = xs as ILeveledItemEntryGetter[] ?? xs.ToArray();
                     return KeyValuePair.Create(leveledItemEntryGetters.First(), leveledItemEntryGetters.Length);
                 }).ToImmutableDictionary();
 
-            var otherEntries = newVersion.Entries!
+            var otherEntries = (newVersion.Entries ?? ImmutableList<ILeveledItemEntryGetter>.Empty)
                 .Where(x => x.Data != null)
-                .GroupBy(x => x.Data!, x => x, (_, xs) =>
+                .GroupBy(x => new EntryKey(x.Data!.Reference, x.Data.Level, x.Data.Count), x => x, (_, xs) =>
                 {
                     var leveledItemEntryGetters = xs as ILeveledItemEntryGetter[] ?? xs.ToArray();
                     return KeyValuePair.Create(leveledItemEntryGetters.First(), leveledItemEntryGetters.Length);
