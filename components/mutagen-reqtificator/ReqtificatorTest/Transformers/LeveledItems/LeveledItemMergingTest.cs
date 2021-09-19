@@ -32,6 +32,8 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             public readonly ILeveledItemGetter BaseVersion;
             public readonly ILeveledItemGetter UpdateVersion1;
             public readonly ILeveledItemGetter UpdateVersion2;
+            public readonly Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>> Cache = new(MockBehavior.Strict);
+            public readonly LeveledItemMerging Transformer;
 
             public Fixture(LeveledItem version2)
             {
@@ -58,11 +60,13 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                     }
                 };
                 UpdateVersion2 = version2;
+                Transformer = new LeveledItemMerging(true, Cache.Object, ModsWithRequiemAsMaster,
+                    new CompactLeveledItemUnrolling(ImmutableHashSet<ModKey>.Empty));
             }
 
-            public void SetupCacheMock(Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>> cache)
+            public void SetupStandardBehaviorCacheMock()
             {
-                cache.Setup(c =>
+                Cache.Setup(c =>
                         c.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(UpdateVersion2.FormKey,
                             ResolveTarget.Winner))
                     .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>>
@@ -94,12 +98,9 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             };
 
             var f = new Fixture(updateVersion2);
-            var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            f.SetupCacheMock(cache);
+            f.SetupStandardBehaviorCacheMock();
 
-            var transformer = new LeveledItemMerging(cache.Object, ModsWithRequiemAsMaster);
-
-            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
             result.Record().Equals(f.UpdateVersion2, _mask).Should().BeTrue();
             var expectedItems = new List<LeveledItemEntry>
@@ -131,12 +132,9 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             };
 
             var f = new Fixture(updateVersion2);
-            var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            f.SetupCacheMock(cache);
+            f.SetupStandardBehaviorCacheMock();
 
-            var transformer = new LeveledItemMerging(cache.Object, ModsWithRequiemAsMaster);
-
-            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
             result.Record().Equals(f.UpdateVersion2, _mask).Should().BeTrue();
             var expectedItems = new List<LeveledItemEntry>
@@ -167,12 +165,9 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             };
 
             var f = new Fixture(updateVersion2);
-            var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            f.SetupCacheMock(cache);
+            f.SetupStandardBehaviorCacheMock();
 
-            var transformer = new LeveledItemMerging(cache.Object, ModsWithRequiemAsMaster);
-
-            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
             result.Record().Equals(f.UpdateVersion2, _mask).Should().BeTrue();
             var expectedItems = new List<LeveledItemEntry>
@@ -199,12 +194,9 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             };
 
             var f = new Fixture(updateVersion2);
-            var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
-            f.SetupCacheMock(cache);
+            f.SetupStandardBehaviorCacheMock();
 
-            var transformer = new LeveledItemMerging(cache.Object, ModsWithRequiemAsMaster);
-
-            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
             result.Record().Equals(f.UpdateVersion2, _mask).Should().BeTrue();
             var expectedItems = new List<LeveledItemEntry>
@@ -215,6 +207,167 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                 new() { Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 } }
             };
             result.Record().Entries.Should().BeEquivalentTo(expectedItems);
+        }
+
+        [Fact]
+        public void Should_merge_compact_leveled_lists_correctly()
+        {
+            var baseVersion = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                EditorID = "REQ_CLI_LeveledListForMerging",
+                Entries = new ExtendedList<LeveledItemEntry>
+                {
+                    new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
+                    new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } }
+                }
+            };
+            var updateVersion1 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                EditorID = "REQ_CLI_LeveledListForMerging",
+                Entries = new ExtendedList<LeveledItemEntry>
+                {
+                    new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef1 } },
+                    new() { Data = new LeveledItemEntryData { Count = 1, Level = 1, Reference = ItemRef3 } }
+                }
+            };
+            var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                EditorID = "REQ_CLI_LeveledListForMerging",
+                Entries = new ExtendedList<LeveledItemEntry>
+                {
+                    new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } }
+                }
+            };
+
+            var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
+            cache.Setup(c =>
+                    c.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(updateVersion2.FormKey,
+                        ResolveTarget.Winner))
+                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>>
+                {
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch2,
+                        updateVersion2, null!, null!),
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch1,
+                        updateVersion1, null!, null!),
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Requiem,
+                        baseVersion, null!, null!)
+                });
+
+            var transformer = new LeveledItemMerging(true, cache.Object, ModsWithRequiemAsMaster,
+                new CompactLeveledItemUnrolling(ImmutableHashSet<ModKey>.Empty.Add(Requiem)));
+
+            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(updateVersion2));
+            result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
+            result.Record().Equals(updateVersion2, _mask).Should().BeTrue();
+            var expectedItems = new List<LeveledItemEntry>
+            {
+                new() { Data = new LeveledItemEntryData { Count = 1, Level = 1, Reference = ItemRef1 } },
+                new() { Data = new LeveledItemEntryData { Count = 1, Level = 1, Reference = ItemRef1 } },
+                new() { Data = new LeveledItemEntryData { Count = 1, Level = 1, Reference = ItemRef1 } },
+                new() { Data = new LeveledItemEntryData { Count = 1, Level = 1, Reference = ItemRef3 } }
+            };
+            result.Record().Entries.Should().BeEquivalentTo(expectedItems);
+        }
+
+        [Fact]
+        public void Should_not_merge_modifications_and_deletions_if_not_all_merge_candidates_apply_them()
+        {
+            var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                EditorID = "REQ_LeveledListForMerging",
+                Entries = new ExtendedList<LeveledItemEntry>
+                {
+                    new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
+                    new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
+                    new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
+                    new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } },
+                    new() { Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 } }
+                }
+            };
+
+            var f = new Fixture(updateVersion2);
+            f.SetupStandardBehaviorCacheMock();
+
+            var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
+            result.Record().Equals(f.UpdateVersion2, _mask).Should().BeTrue();
+            var expectedItems = new List<LeveledItemEntry>
+            {
+                new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
+                new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
+                new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
+                new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } },
+                new() { Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 } },
+                new() { Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 } }
+            };
+            result.Record().Entries.Should().BeEquivalentTo(expectedItems);
+        }
+
+        [Fact]
+        public void Should_not_change_a_record_if_requiem_does_not_change_it()
+        {
+            var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                EditorID = "REQ_LeveledListForMerging",
+                Entries = new ExtendedList<LeveledItemEntry>
+                {
+                    new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } }
+                }
+            };
+
+            var f = new Fixture(updateVersion2);
+            f.Cache.Setup(c =>
+                    c.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(f.UpdateVersion2.FormKey,
+                        ResolveTarget.Winner))
+                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>>
+                {
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch2,
+                        f.UpdateVersion2, null!, null!),
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch1,
+                        f.UpdateVersion1, null!, null!)
+                });
+
+            var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
+            result.Record().Equals(f.UpdateVersion2).Should().BeTrue();
+        }
+
+        [Fact]
+        public void Should_not_change_a_record_if_there_are_not_enough_merge_candidates()
+        {
+            var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE);
+
+            var f = new Fixture(updateVersion2);
+            f.Cache.Setup(c =>
+                    c.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(f.UpdateVersion2.FormKey,
+                        ResolveTarget.Winner))
+                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>>
+                {
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch2,
+                        f.UpdateVersion2, null!, null!),
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Requiem,
+                        f.BaseVersion, null!, null!)
+                });
+
+            var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
+            result.Record().Equals(f.UpdateVersion2).Should().BeTrue();
+        }
+
+        [Fact]
+        public void Should_not_change_a_record_if_merging_has_been_disabled_by_the_user()
+        {
+            var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE);
+
+            var f = new Fixture(updateVersion2);
+            f.SetupStandardBehaviorCacheMock();
+
+            var transformer = new LeveledItemMerging(false, f.Cache.Object, ModsWithRequiemAsMaster,
+                new CompactLeveledItemUnrolling(ImmutableHashSet<ModKey>.Empty));
+
+            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
+            result.Record().Equals(f.UpdateVersion2).Should().BeTrue();
         }
     }
 }
