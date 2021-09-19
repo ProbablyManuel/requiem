@@ -6,6 +6,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
+using Serilog;
 
 namespace Reqtificator.Transformers.LeveledItems
 {
@@ -89,6 +90,7 @@ namespace Reqtificator.Transformers.LeveledItems
                 deletions.SelectMany(cs => cs).Distinct()
                     .Where(c => deletions.All(m => m.Contains(c)))
                     .ForEach(c => record.Entries.RemoveAll(x => x.Equals(c.Reference.DeepCopy())));
+                Log.Information($"merged leveled lists from {updates.Count} patches");
             });
         }
 
