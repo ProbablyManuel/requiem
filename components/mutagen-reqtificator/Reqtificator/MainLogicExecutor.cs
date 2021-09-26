@@ -152,7 +152,8 @@ namespace Reqtificator
             IImmutableSet<ModKey> modsWithRequiemAsMaster)
         {
             var leveledItems = loadOrder.PriorityOrder.LeveledItem().WinningOverrides();
-            return new CompactLeveledListUnrolling<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(new CompactLeveledItemUnroller(modsWithCompactLeveledLists))
+            return new CompactLeveledListUnrolling<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(
+                    new CompactLeveledItemUnroller(modsWithCompactLeveledLists))
                 .AndThen(new LeveledItemMerging(settings.MergeLeveledLists, cache, modsWithRequiemAsMaster,
                     new CompactLeveledItemUnroller(modsWithCompactLeveledLists)))
                 .AndThen(new TemperedItemGeneration(modsWithTemperedItems))
@@ -164,8 +165,9 @@ namespace Reqtificator
             IImmutableSet<ModKey> modsWithCompactLeveledLists)
         {
             var leveledCharacters = loadOrder.PriorityOrder.LeveledNpc().WinningOverrides();
-            return new CompactLeveledCharacterUnrolling(modsWithCompactLeveledLists).ProcessCollection(
-                leveledCharacters);
+            return new CompactLeveledListUnrolling<LeveledNpc, ILeveledNpcGetter, ILeveledNpcEntryGetter>(
+                    new CompactLeveledCharacterUnroller(modsWithCompactLeveledLists))
+                .ProcessCollection(leveledCharacters);
         }
 
         private ErrorOr<ImmutableList<Armor>> PatchArmors(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
