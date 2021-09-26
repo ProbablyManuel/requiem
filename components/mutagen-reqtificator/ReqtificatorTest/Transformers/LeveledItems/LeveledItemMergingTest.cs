@@ -61,7 +61,7 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                 };
                 UpdateVersion2 = version2;
                 Transformer = new LeveledItemMerging(true, Cache.Object, ModsWithRequiemAsMaster,
-                    new CompactLeveledItemUnrolling(ImmutableHashSet<ModKey>.Empty));
+                    new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty));
             }
 
             public void SetupStandardBehaviorCacheMock()
@@ -254,7 +254,7 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                 });
 
             var transformer = new LeveledItemMerging(true, cache.Object, ModsWithRequiemAsMaster,
-                new CompactLeveledItemUnrolling(ImmutableHashSet<ModKey>.Empty.Add(Requiem)));
+                new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty.Add(Requiem)));
 
             var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(updateVersion2));
             result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
@@ -363,7 +363,7 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             f.SetupStandardBehaviorCacheMock();
 
             var transformer = new LeveledItemMerging(false, f.Cache.Object, ModsWithRequiemAsMaster,
-                new CompactLeveledItemUnrolling(ImmutableHashSet<ModKey>.Empty));
+                new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty));
 
             var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();

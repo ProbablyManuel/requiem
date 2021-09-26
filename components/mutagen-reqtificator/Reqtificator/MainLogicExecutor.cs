@@ -16,6 +16,7 @@ using Reqtificator.Transformers.Armors;
 using Reqtificator.Transformers.EncounterZones;
 using Reqtificator.Transformers.LeveledCharacters;
 using Reqtificator.Transformers.LeveledItems;
+using Reqtificator.Transformers.LeveledLists;
 using Reqtificator.Transformers.Rules;
 using Reqtificator.Transformers.Weapons;
 using Reqtificator.Utils;
@@ -151,9 +152,9 @@ namespace Reqtificator
             IImmutableSet<ModKey> modsWithRequiemAsMaster)
         {
             var leveledItems = loadOrder.PriorityOrder.LeveledItem().WinningOverrides();
-            return new CompactLeveledItemUnrolling(modsWithCompactLeveledLists)
+            return new CompactLeveledListUnrolling<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(new CompactLeveledItemUnroller(modsWithCompactLeveledLists))
                 .AndThen(new LeveledItemMerging(settings.MergeLeveledLists, cache, modsWithRequiemAsMaster,
-                    new CompactLeveledItemUnrolling(modsWithCompactLeveledLists)))
+                    new CompactLeveledItemUnroller(modsWithCompactLeveledLists)))
                 .AndThen(new TemperedItemGeneration(modsWithTemperedItems))
                 .ProcessCollection(leveledItems);
         }

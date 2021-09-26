@@ -6,6 +6,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
+using Reqtificator.Transformers.LeveledLists;
 using Serilog;
 
 namespace Reqtificator.Transformers.LeveledItems
@@ -26,24 +27,23 @@ namespace Reqtificator.Transformers.LeveledItems
         private readonly bool _mergeEnabled;
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _cache;
         private readonly IImmutableSet<ModKey> _modsEligibleForMerging;
-        private readonly CompactLeveledItemUnrolling _unroller;
+        private readonly ICompactLeveledListUnroller<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter> _unroller;
         private static readonly ModKey Requiem = new ModKey("Requiem", ModType.Plugin);
 
         private static readonly LeveledItem.TranslationMask CopyMask = new(defaultOn: false) { Entries = true };
 
         public LeveledItemMerging(bool mergeEnabled, ILinkCache<ISkyrimMod, ISkyrimModGetter> cache,
-            IImmutableSet<ModKey> modsWithRequiemAsMaster, CompactLeveledItemUnrolling compactLeveledItemUnrolling)
+            IImmutableSet<ModKey> modsWithRequiemAsMaster, ICompactLeveledListUnroller<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter> compactLeveledItemUnroller)
         {
             _mergeEnabled = mergeEnabled;
             _cache = cache;
             _modsEligibleForMerging = modsWithRequiemAsMaster.Add(Requiem);
-            _unroller = compactLeveledItemUnrolling;
+            _unroller = compactLeveledItemUnroller;
         }
 
         public override TransformationResult<LeveledItem, ILeveledItemGetter> Process(
             TransformationResult<LeveledItem, ILeveledItemGetter> input)
         {
-            //TODO: special overwrite rules
             if (!_mergeEnabled) return input;
 
             var toMerge = _cache.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(input.Record().FormKey)
@@ -52,21 +52,17 @@ namespace Reqtificator.Transformers.LeveledItems
 
             if (baseVersion == null || toMerge.Count < 3) return input;
 
-            var unrolledBaseVersion = _unroller.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(baseVersion))
-                .Record();
+            var unrolledBaseEntries = _unroller.GetUnrolledEntries(baseVersion);
 
             var updates = toMerge.Where(x => x.ModKey != Requiem)
                 .Select(x =>
-                {
-                    var unrolledList = _unroller.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(x.Record))
-                        .Record();
-                    return GetDifferences(unrolledBaseVersion, unrolledList);
-                }).ToImmutableList();
+                    GetDifferences(unrolledBaseEntries, _unroller.GetUnrolledEntries(x.Record))
+                ).ToImmutableList();
 
             return input.Modify(record =>
             {
-                record.DeepCopyIn(unrolledBaseVersion, out _, CopyMask);
-                record.Entries ??= new ExtendedList<LeveledItemEntry>();
+                record.DeepCopyIn(baseVersion, out _, CopyMask);
+                record.Entries = unrolledBaseEntries.Select(r => r.DeepCopy()).ToExtendedList();
 
                 updates.SelectMany(cs => cs.Where(c => c.Type == Operation.Addition))
                     .ForEach(c =>
@@ -94,10 +90,10 @@ namespace Reqtificator.Transformers.LeveledItems
             });
         }
 
-        private static IImmutableList<Change> GetDifferences(ILeveledItemGetter baseVersion,
-            ILeveledItemGetter newVersion)
+        private static IImmutableList<Change> GetDifferences(IReadOnlyList<ILeveledItemEntryGetter> baseVersion,
+            IReadOnlyList<ILeveledItemEntryGetter> newVersion)
         {
-            var baseEntries = (baseVersion.Entries ?? ImmutableList<ILeveledItemEntryGetter>.Empty)
+            var baseEntries = (baseVersion)
                 .Where(x => x.Data != null)
                 .GroupBy(x => new EntryKey(x.Data!.Reference, x.Data.Level, x.Data.Count), x => x, (_, xs) =>
                 {
@@ -105,7 +101,7 @@ namespace Reqtificator.Transformers.LeveledItems
                     return KeyValuePair.Create(leveledItemEntryGetters.First(), leveledItemEntryGetters.Length);
                 }).ToImmutableDictionary();
 
-            var otherEntries = (newVersion.Entries ?? ImmutableList<ILeveledItemEntryGetter>.Empty)
+            var otherEntries = (newVersion)
                 .Where(x => x.Data != null)
                 .GroupBy(x => new EntryKey(x.Data!.Reference, x.Data.Level, x.Data.Count), x => x, (_, xs) =>
                 {
