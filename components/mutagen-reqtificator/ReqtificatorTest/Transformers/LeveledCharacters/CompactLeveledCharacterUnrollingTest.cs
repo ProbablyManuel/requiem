@@ -4,13 +4,12 @@ using FluentAssertions;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
-using Reqtificator.Transformers;
 using Reqtificator.Transformers.LeveledCharacters;
 using Xunit;
 
 namespace ReqtificatorTest.Transformers.LeveledCharacters
 {
-    public class CompactLeveledCharacterUnrollingTest
+    public class CompactLeveledCharacterUnrollerTest
     {
         private readonly LeveledNpc.TranslationMask _mask = new(defaultOn: true) { Entries = false };
 
@@ -30,11 +29,11 @@ namespace ReqtificatorTest.Transformers.LeveledCharacters
                 }
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
-            var transformer = new CompactLeveledCharacterUnrolling(ImmutableHashSet.Create(modKey));
+            var transformer = new CompactLeveledCharacterUnroller(ImmutableHashSet.Create(modKey));
+            var reference = input.DeepCopy();
 
-            var result = transformer.Process(new UnChanged<LeveledNpc, ILeveledNpcGetter>(input));
-            result.Should().BeOfType<Modified<LeveledNpc, ILeveledNpcGetter>>();
-            result.Record().Equals(input, _mask).Should().BeTrue();
+            transformer.UnrollLeveledList(input);
+            input.Equals(reference, _mask).Should().BeTrue();
             var expectedItems = new List<LeveledNpcEntry>
             {
                 new() {Data = new LeveledNpcEntryData {Count = 1, Level = 1, Reference = itemRef1}},
@@ -43,7 +42,7 @@ namespace ReqtificatorTest.Transformers.LeveledCharacters
                 new() {Data = new LeveledNpcEntryData {Count = 1, Level = 1, Reference = itemRef2}},
                 new() {Data = new LeveledNpcEntryData {Count = 1, Level = 1, Reference = itemRef2}}
             };
-            result.Record().Entries.Should().BeEquivalentTo(expectedItems);
+            input.Entries.Should().BeEquivalentTo(expectedItems);
         }
 
         [Fact]
@@ -61,11 +60,9 @@ namespace ReqtificatorTest.Transformers.LeveledCharacters
                 }
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
-            var transformer = new CompactLeveledCharacterUnrolling(ImmutableHashSet.Create(modKey));
+            var unroller = new CompactLeveledCharacterUnroller(ImmutableHashSet.Create(modKey));
 
-            var result = transformer.Process(new UnChanged<LeveledNpc, ILeveledNpcGetter>(input));
-            result.Should().BeOfType<UnChanged<LeveledNpc, ILeveledNpcGetter>>();
-            result.Record().Equals(input).Should().BeTrue();
+            unroller.IsCompactLeveledList(input).Should().BeFalse();
         }
 
         [Fact]
@@ -83,11 +80,9 @@ namespace ReqtificatorTest.Transformers.LeveledCharacters
                 }
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
-            var transformer = new CompactLeveledCharacterUnrolling(ImmutableHashSet.Create(modKey));
+            var unroller = new CompactLeveledCharacterUnroller(ImmutableHashSet.Create(modKey));
 
-            var result = transformer.Process(new UnChanged<LeveledNpc, ILeveledNpcGetter>(input));
-            result.Should().BeOfType<UnChanged<LeveledNpc, ILeveledNpcGetter>>();
-            result.Record().Equals(input).Should().BeTrue();
+            unroller.IsCompactLeveledList(input).Should().BeFalse();
         }
     }
 }
