@@ -70,7 +70,8 @@ namespace Reqtificator
             var containersPatched = PatchContainers(loadOrder);
             var leveledItemsPatched = PatchLeveledItems(loadOrder, modsWithCompactLeveledLists, modsWithTemperedItems,
                 importedModsLinkCache, userSettings, modsWithRequiemAsMaster);
-            var leveledCharactersPatched = PatchLeveledCharacters(loadOrder, modsWithCompactLeveledLists);
+            var leveledCharactersPatched = PatchLeveledCharacters(loadOrder, modsWithCompactLeveledLists,
+                importedModsLinkCache, userSettings, modsWithRequiemAsMaster);
             var armorsPatched = PatchArmors(loadOrder);
             var weaponsPatched = PatchWeapons(loadOrder);
             var actorsPatched = PatchActors(loadOrder, importedModsLinkCache);
@@ -154,19 +155,25 @@ namespace Reqtificator
             var leveledItems = loadOrder.PriorityOrder.LeveledItem().WinningOverrides();
             return new CompactLeveledListUnrolling<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(
                     new CompactLeveledItemUnroller(modsWithCompactLeveledLists))
-                .AndThen(new LeveledItemMerging(settings.MergeLeveledLists, cache, modsWithRequiemAsMaster,
-                    new CompactLeveledItemUnroller(modsWithCompactLeveledLists)))
+                .AndThen(new LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(
+                    settings.MergeLeveledLists, cache, modsWithRequiemAsMaster,
+                    new CompactLeveledItemUnroller(modsWithCompactLeveledLists), new LeveledItemMerger()))
                 .AndThen(new TemperedItemGeneration(modsWithTemperedItems))
                 .ProcessCollection(leveledItems);
         }
 
         private static ImmutableList<LeveledNpc> PatchLeveledCharacters(
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            IImmutableSet<ModKey> modsWithCompactLeveledLists)
+            IImmutableSet<ModKey> modsWithCompactLeveledLists,
+            ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> cache, UserSettings settings,
+            IImmutableSet<ModKey> modsWithRequiemAsMaster)
         {
             var leveledCharacters = loadOrder.PriorityOrder.LeveledNpc().WinningOverrides();
             return new CompactLeveledListUnrolling<LeveledNpc, ILeveledNpcGetter, ILeveledNpcEntryGetter>(
                     new CompactLeveledCharacterUnroller(modsWithCompactLeveledLists))
+                .AndThen(new LeveledListMerging<LeveledNpc, ILeveledNpcGetter, ILeveledNpcEntryGetter>(
+                    settings.MergeLeveledLists, cache, modsWithRequiemAsMaster,
+                    new CompactLeveledCharacterUnroller(modsWithCompactLeveledLists), new LeveledCharacterMerger()))
                 .ProcessCollection(leveledCharacters);
         }
 

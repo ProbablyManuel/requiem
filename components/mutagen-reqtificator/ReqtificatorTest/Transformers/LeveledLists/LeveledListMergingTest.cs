@@ -8,11 +8,12 @@ using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.LeveledItems;
+using Reqtificator.Transformers.LeveledLists;
 using Xunit;
 
-namespace ReqtificatorTest.Transformers.LeveledItems
+namespace ReqtificatorTest.Transformers.LeveledLists
 {
-    public class LeveledItemMergingTest
+    public class LeveledListMergingTest
     {
         private readonly LeveledItem.TranslationMask _mask = new(defaultOn: true) { Entries = false };
         public static readonly FormLink<Armor> ItemRef1 = new FormLink<Armor>(FormKey.Factory("ABC123:Skyrim.esm"));
@@ -33,7 +34,7 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             public readonly ILeveledItemGetter UpdateVersion1;
             public readonly ILeveledItemGetter UpdateVersion2;
             public readonly Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>> Cache = new(MockBehavior.Strict);
-            public readonly LeveledItemMerging Transformer;
+            public readonly LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter> Transformer;
 
             public Fixture(LeveledItem version2)
             {
@@ -60,22 +61,24 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                     }
                 };
                 UpdateVersion2 = version2;
-                Transformer = new LeveledItemMerging(true, Cache.Object, ModsWithRequiemAsMaster,
-                    new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty));
+                Transformer = new LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(true,
+                    Cache.Object, ModsWithRequiemAsMaster,
+                    new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty),
+                    new LeveledItemMerger());
             }
 
             public void SetupStandardBehaviorCacheMock()
             {
                 Cache.Setup(c =>
-                        c.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(UpdateVersion2.FormKey,
+                        c.ResolveAllContexts<LeveledItem, ILeveledItemGetter>(UpdateVersion2.FormKey,
                             ResolveTarget.Winner))
-                    .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>>
+                    .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>>
                     {
-                        new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch2,
+                        new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch2,
                             UpdateVersion2, null!, null!),
-                        new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch1,
+                        new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch1,
                             UpdateVersion1, null!, null!),
-                        new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Requiem,
+                        new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Requiem,
                             BaseVersion, null!, null!)
                     });
             }
@@ -241,20 +244,21 @@ namespace ReqtificatorTest.Transformers.LeveledItems
 
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
             cache.Setup(c =>
-                    c.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(updateVersion2.FormKey,
+                    c.ResolveAllContexts<LeveledItem, ILeveledItemGetter>(updateVersion2.FormKey,
                         ResolveTarget.Winner))
-                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>>
+                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>>
                 {
-                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch2,
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch2,
                         updateVersion2, null!, null!),
-                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch1,
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch1,
                         updateVersion1, null!, null!),
-                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Requiem,
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Requiem,
                         baseVersion, null!, null!)
                 });
 
-            var transformer = new LeveledItemMerging(true, cache.Object, ModsWithRequiemAsMaster,
-                new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty.Add(Requiem)));
+            var transformer = new LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(true,
+                cache.Object, ModsWithRequiemAsMaster,
+                new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty.Add(Requiem)), new LeveledItemMerger());
 
             var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(updateVersion2));
             result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
@@ -317,13 +321,13 @@ namespace ReqtificatorTest.Transformers.LeveledItems
 
             var f = new Fixture(updateVersion2);
             f.Cache.Setup(c =>
-                    c.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(f.UpdateVersion2.FormKey,
+                    c.ResolveAllContexts<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2.FormKey,
                         ResolveTarget.Winner))
-                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>>
+                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>>
                 {
-                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch2,
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch2,
                         f.UpdateVersion2, null!, null!),
-                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch1,
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch1,
                         f.UpdateVersion1, null!, null!)
                 });
 
@@ -339,13 +343,13 @@ namespace ReqtificatorTest.Transformers.LeveledItems
 
             var f = new Fixture(updateVersion2);
             f.Cache.Setup(c =>
-                    c.ResolveAllContexts<ILeveledItem, ILeveledItemGetter>(f.UpdateVersion2.FormKey,
+                    c.ResolveAllContexts<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2.FormKey,
                         ResolveTarget.Winner))
-                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>>
+                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>>
                 {
-                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Patch2,
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch2,
                         f.UpdateVersion2, null!, null!),
-                    new ModContext<ISkyrimMod, ISkyrimModGetter, ILeveledItem, ILeveledItemGetter>(Requiem,
+                    new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Requiem,
                         f.BaseVersion, null!, null!)
                 });
 
@@ -362,8 +366,9 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var f = new Fixture(updateVersion2);
             f.SetupStandardBehaviorCacheMock();
 
-            var transformer = new LeveledItemMerging(false, f.Cache.Object, ModsWithRequiemAsMaster,
-                new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty));
+            var transformer = new LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(false,
+                f.Cache.Object, ModsWithRequiemAsMaster,
+                new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty), new LeveledItemMerger());
 
             var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
