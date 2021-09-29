@@ -10,7 +10,7 @@ using Xunit;
 
 namespace ReqtificatorTest.Transformers.LeveledItems
 {
-    public class CompactLeveledItemUnrollingTest
+    public class CompactLeveledItemUnrollerTest
     {
         private readonly LeveledItem.TranslationMask _mask = new(defaultOn: true) { Entries = false };
 
@@ -30,11 +30,11 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                 }
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
-            var transformer = new CompactLeveledItemUnrolling(ImmutableHashSet.Create(modKey));
+            var transformer = new CompactLeveledItemUnroller(ImmutableHashSet.Create(modKey));
+            var reference = input.DeepCopy();
 
-            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(input));
-            result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
-            result.Record().Equals(input, _mask).Should().BeTrue();
+            transformer.UnrollLeveledList(input);
+            input.Equals(reference, _mask).Should().BeTrue();
             var expectedItems = new List<LeveledItemEntry>
             {
                 new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
@@ -43,7 +43,7 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                 new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef2}},
                 new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef2}}
             };
-            result.Record().Entries.Should().BeEquivalentTo(expectedItems);
+            input.Entries.Should().BeEquivalentTo(expectedItems);
         }
 
         [Fact]
@@ -61,11 +61,9 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                 }
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
-            var transformer = new CompactLeveledItemUnrolling(ImmutableHashSet.Create(modKey));
+            var unroller = new CompactLeveledItemUnroller(ImmutableHashSet.Create(modKey));
 
-            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(input));
-            result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
-            result.Record().Equals(input).Should().BeTrue();
+            unroller.IsCompactLeveledList(input).Should().BeFalse();
         }
 
         [Fact]
@@ -83,11 +81,9 @@ namespace ReqtificatorTest.Transformers.LeveledItems
                 }
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
-            var transformer = new CompactLeveledItemUnrolling(ImmutableHashSet.Create(modKey));
+            var unroller = new CompactLeveledItemUnroller(ImmutableHashSet.Create(modKey));
 
-            var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(input));
-            result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
-            result.Record().Equals(input).Should().BeTrue();
+            unroller.IsCompactLeveledList(input).Should().BeFalse();
         }
     }
 }
