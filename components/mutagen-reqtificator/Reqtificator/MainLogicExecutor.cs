@@ -32,7 +32,7 @@ namespace Reqtificator
         private readonly GameContext _context;
         private readonly ReqtificatorConfig _reqtificatorConfig;
         private static readonly string PersistenceFileLocation = Environment.GetFolderPath(Environment.SpecialFolder.Personal) +
-            "/My Games/Skyrim - Requiem/FormPersistence.txt";
+            "/My Games/Skyrim/Requiem/FormPersistence.txt";
 
         public MainLogicExecutor(InternalEvents events, GameContext context, ReqtificatorConfig reqtificatorConfig)
         {
