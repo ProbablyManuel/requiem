@@ -59,10 +59,9 @@ namespace Reqtificator
                                   loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
             _events.PublishPatchStarted(numberOfRecords);
 
-            var requiem = loadOrder.PriorityOrder.First(x => x.ModKey == requiemModKey);
             //TODO: proper version handling injected by the build tool
             var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
-            var generatedPatch = CreateEmptyPatchMod(outputModKey, version, requiem.Mod!);
+            var generatedPatch = CreatePatchBaseMod(outputModKey, version, importedModsLinkCache);
 
             var ammoPatched = PatchAmmunition(loadOrder);
             var encounterZonesPatched = PatchEncounterZones(loadOrder, userSettings);
@@ -96,8 +95,8 @@ namespace Reqtificator
                 .FlatMap(m => actorVariationsPatched.Map(m.WithRecords));
         }
 
-        private static SkyrimMod CreateEmptyPatchMod(ModKey outputModKey, RequiemVersion version,
-            ISkyrimModGetter requiem)
+        private static SkyrimMod CreatePatchBaseMod(ModKey outputModKey, RequiemVersion version,
+            ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> cache)
         {
             var patch = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE)
             {
@@ -111,12 +110,22 @@ namespace Reqtificator
             };
 
             //TODO: error handling...
-            if (requiem.Globals.RecordCache.TryGetValue(GlobalVariables.VersionStamp.FormKey,
+            if (cache.TryResolve<IGlobalGetter>(GlobalVariables.VersionStamp.FormKey,
                 out var original))
             {
                 var record = patch.Globals.GetOrAddAsOverride(original);
                 record.RawFloat = version.AsNumeric();
             }
+
+            var requiemHelp = cache.Resolve<IFormListGetter>(FormLists.HelpMenuRequiem.FormKey);
+            var helpMenuPc = cache.Resolve<IFormListGetter>(FormLists.HelpMenuPc.FormKey);
+            var helpMenuXbox = cache.Resolve<IFormListGetter>(FormLists.HelpMenuXbox.FormKey);
+
+            var patchedHelpMenuPc = patch.FormLists.GetOrAddAsOverride(helpMenuPc);
+            var patchedHelpMenuXbox = patch.FormLists.GetOrAddAsOverride(helpMenuXbox);
+
+            patchedHelpMenuPc.Items.AddRange(requiemHelp.Items);
+            patchedHelpMenuXbox.Items.AddRange(requiemHelp.Items);
 
             return patch;
         }
