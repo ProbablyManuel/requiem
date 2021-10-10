@@ -62,6 +62,15 @@ namespace Reqtificator.StaticReferences
 
         public static readonly IFormLinkGetter<IFormListGetter> GlobalPerks =
             new FormLink<IFormListGetter>(FormKey.Factory("8F57EA:Requiem.esp"));
+
+        public static readonly IFormLinkGetter<IFormListGetter> HelpMenuRequiem =
+            new FormLink<IFormListGetter>(FormKey.Factory("AD3A1A:Requiem.esp"));
+
+        public static readonly IFormLinkGetter<IFormListGetter> HelpMenuPc =
+            new FormLink<IFormListGetter>(FormKey.Factory("000163:Skyrim.esm"));
+
+        public static readonly IFormLinkGetter<IFormListGetter> HelpMenuXbox =
+            new FormLink<IFormListGetter>(FormKey.Factory("000165:Skyrim.esm"));
     }
 
     public static class Quests
