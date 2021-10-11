@@ -22,6 +22,8 @@ namespace ReqtificatorTest.Transformers
             var reference = door.DeepCopy();
 
             var result = transformer.Process(new UnChanged<Door, IDoorGetter>(door));
+            result.IsModified().Should().BeTrue();
+
             var mask = new Door.TranslationMask(defaultOn: true) { VirtualMachineAdapter = false };
 
             reference.Equals(result.Record(), mask).Should().BeTrue();
@@ -32,7 +34,7 @@ namespace ReqtificatorTest.Transformers
         }
 
         [Fact]
-        public void Should_patch_records_without_defined_VirtualMachineAdapter()
+        public void Should_create_a_VM_for_custom_lockpicking_script_if_VM_is_null()
         {
             var transformer = new CustomLockpicking<Door, IDoorGetter>();
             var door = new Door(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
@@ -42,6 +44,10 @@ namespace ReqtificatorTest.Transformers
 
             var result = transformer.Process(new UnChanged<Door, IDoorGetter>(door));
             result.IsModified().Should().BeTrue();
+
+            var resultScripts = result.Record().VirtualMachineAdapter.Scripts;
+            resultScripts.Count.Should().Be(1);
+            resultScripts[0].Equals(expectedScript()).Should().BeTrue();
         }
 
         [Fact]
@@ -52,9 +58,18 @@ namespace ReqtificatorTest.Transformers
             {
                 VirtualMachineAdapter = new VirtualMachineAdapter()
             };
+            var reference = door.DeepCopy();
 
             var result = transformer.Process(new UnChanged<Door, IDoorGetter>(door));
             result.IsModified().Should().BeTrue();
+
+            var mask = new Door.TranslationMask(defaultOn: true) { VirtualMachineAdapter = false };
+
+            reference.Equals(result.Record(), mask).Should().BeTrue();
+
+            var expectedVirtualMachineAdapter = reference.VirtualMachineAdapter!.DeepCopy();
+            expectedVirtualMachineAdapter.Scripts.Add(expectedScript());
+            expectedVirtualMachineAdapter.Equals(result.Record().VirtualMachineAdapter).Should().BeTrue();
         }
 
         [Fact]
@@ -71,6 +86,7 @@ namespace ReqtificatorTest.Transformers
 
             var result = transformer.Process(new UnChanged<Door, IDoorGetter>(door));
             result.IsModified().Should().BeFalse();
+            result.Record().Equals(door).Should().BeTrue();
         }
         private static ScriptEntry expectedScript()
         {

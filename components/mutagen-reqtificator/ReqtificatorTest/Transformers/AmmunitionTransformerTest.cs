@@ -43,6 +43,7 @@ namespace ReqtificatorTest.Transformers
 
             var result = transformer.Process(new UnChanged<Ammunition, IAmmunitionGetter>(arrow));
             result.IsModified().Should().BeTrue();
+            result.Record().Damage.Should().BeInRange(167.9f, 168.1f);
         }
 
         [Fact]
