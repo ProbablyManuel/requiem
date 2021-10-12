@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Immutable;
 using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Cache.Implementations;
 using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Allocators;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -29,7 +31,8 @@ namespace Reqtificator
         private readonly InternalEvents _events;
         private readonly GameContext _context;
         private readonly ReqtificatorConfig _reqtificatorConfig;
-
+        private static readonly string PersistenceFileLocation = Environment.GetFolderPath(Environment.SpecialFolder.Personal) +
+            "/My Games/Skyrim/Requiem/FormPersistence.txt";
 
         public MainLogicExecutor(InternalEvents events, GameContext context, ReqtificatorConfig reqtificatorConfig)
         {
@@ -61,7 +64,7 @@ namespace Reqtificator
 
             //TODO: proper version handling injected by the build tool
             var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
-            var generatedPatch = CreatePatchBaseMod(outputModKey, version, importedModsLinkCache);
+            var (generatedPatch, formAllocator) = CreatePatchBaseMod(outputModKey, version, importedModsLinkCache);
 
             var ammoPatched = PatchAmmunition(loadOrder);
             var encounterZonesPatched = PatchEncounterZones(loadOrder, userSettings);
@@ -82,7 +85,7 @@ namespace Reqtificator
             Log.Information("adding patched records to output mod");
 
 
-            return generatedPatch.AsSuccess()
+            var fullPatch = generatedPatch.AsSuccess()
                 .Map(m => m.WithRecords(encounterZonesPatched))
                 .Map(m => m.WithRecords(doorsPatched))
                 .Map(m => m.WithRecords(containersPatched))
@@ -93,9 +96,12 @@ namespace Reqtificator
                 .FlatMap(m => weaponsPatched.Map(m.WithRecords))
                 .FlatMap(m => actorsPatched.Map(m.WithRecords))
                 .FlatMap(m => actorVariationsPatched.Map(m.WithRecords));
+
+            formAllocator.Commit();
+            return fullPatch;
         }
 
-        private static SkyrimMod CreatePatchBaseMod(ModKey outputModKey, RequiemVersion version,
+        private static (SkyrimMod, TextFileFormKeyAllocator) CreatePatchBaseMod(ModKey outputModKey, RequiemVersion version,
             ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> cache)
         {
             var patch = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE)
@@ -108,6 +114,9 @@ namespace Reqtificator
                         $"Generated for Requiem version: {version.ShortVersion()} -- build with Mutagen"
                 }
             };
+            System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(PersistenceFileLocation)!);
+            var allocator = new TextFileFormKeyAllocator(patch, PersistenceFileLocation);
+            patch.SetAllocator(allocator);
 
             //TODO: error handling...
             if (cache.TryResolve<IGlobalGetter>(GlobalVariables.VersionStamp.FormKey,
@@ -127,7 +136,7 @@ namespace Reqtificator
             patchedHelpMenuPc.Items.AddRange(requiemHelp.Items);
             patchedHelpMenuXbox.Items.AddRange(requiemHelp.Items);
 
-            return patch;
+            return (patch, allocator);
         }
 
         private static ImmutableList<Ammunition> PatchAmmunition(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
