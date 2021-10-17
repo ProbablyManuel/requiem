@@ -85,6 +85,13 @@ namespace Reqtificator
 
         public SkyrimMod GeneratePatch(UserSettings userConfig, ModKey patchModKey)
         {
+            var checkResult = SetupValidation.VerifySetup();
+            if (checkResult is not null)
+            {
+                _events.PublishFinished(checkResult);
+                throw checkResult.Exception;
+            }
+
             try
             {
                 var loadOrder = LoadOrder.Import<ISkyrimModGetter>(_context.DataFolder, _context.ActiveMods, _context.Release);
