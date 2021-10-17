@@ -47,6 +47,14 @@ val testCompile by tasks.registering(CompileCSharpTask::class) {
     dependsOn(restoreTools)
 }
 
+val copyConfigFiles by tasks.registering(Copy::class) {
+    description = "copy external Reqtificator configuration files to their target location"
+    group = "build"
+
+    from ("configuration")
+    into (outputDir)
+}
+
 val publish by tasks.registering(PublishCSharpTask::class) {
     description = "Compiles the C# code for the SSE Reqtificator"
     group = "build"
@@ -56,8 +64,7 @@ val publish by tasks.registering(PublishCSharpTask::class) {
     targetDirectory = file("$outputDir/app")
     warningsAsErrors = csharpWarningsAsErrors
 
-    dependsOn(restoreTools)
-    dependsOn(createVersionFile)
+    dependsOn(restoreTools, createVersionFile, copyConfigFiles)
 }
 
 val test by tasks.registering(TestCSharpTask::class) {
