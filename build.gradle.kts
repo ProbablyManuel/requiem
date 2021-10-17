@@ -43,7 +43,7 @@ val reqtificatorDir = file("$skyProcDir/Requiem")
 val mutagenDir = file("Reqtificator")
 val interfaceDir = file("Interface")
 val scriptsDir = file("Scripts")
-val sourceDir = file("Requiem/Source")
+val sourceDir = file("Source")
 val scriptsSourcesDir = file(sourceDir.resolve("Scripts"))
 val bsaFilesDir = file("BsaFiles")
 val bsaFile = file("Requiem.bsa")
@@ -76,6 +76,10 @@ val copyScriptSources by tasks.registering(Copy::class) {
     from(outputDir.resolve("source"))
     into(scriptsSourcesDir)
     exclude("**/*.pex")
+    eachFile {
+        path = name
+    }
+    includeEmptyDirs = false
 }
 
 val copyInterfaceFiles by tasks.registering(Copy::class) {
@@ -92,6 +96,7 @@ val copyBsaFiles by tasks.registering(Copy::class) {
     include("Interface/**", "meshes/**", "Sound/**", "textures/**", "Scripts/**")
     into(bsaFilesDir)
     exclude("**/REQ_Debug*.pex", "**/REQ_Debug*.psc")
+    includeEmptyDirs = false
 }
 
 val createBsa by tasks.registering(BsaPackingTask::class) {
@@ -144,7 +149,7 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
         "Requiem.modgroups",
         releaseDocsDir,
         "Requiem.bsa",
-        "Requiem",
+        "Source",
         "BashTags"
     )
     excludePatterns = listOf()
