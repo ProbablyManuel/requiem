@@ -87,4 +87,17 @@ namespace Reqtificator.StaticReferences
         public static readonly IFormLinkGetter<INpcGetter> Player =
             new FormLink<INpcGetter>(FormKey.Factory("000007:Skyrim.esm"));
     }
+
+    public static class Spells
+    {
+        public static readonly IFormLinkGetter<ISpellGetter> MassEffectBase =
+            new FormLink<ISpellGetter>(FormKey.Factory("7E76F4:Requiem.esp"));
+
+        public static readonly IFormLinkGetter<ISpellGetter> MassEffectNpc =
+            new FormLink<ISpellGetter>(FormKey.Factory("82CC14:Requiem.esp"));
+
+        public static readonly IFormLinkGetter<ISpellGetter> NoNaturalHealthRegeneration =
+                new FormLink<ISpellGetter>(FormKey.Factory("609AF0:Requiem.esp"));
+
+    }
 }
