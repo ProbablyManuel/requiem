@@ -19,7 +19,7 @@ val compilePapyrus by tasks.registering(PapyrusCompileTask::class) {
     compilerFlags = papyrusCompilerFlags
     failFast = papyrusFailFast
     includeFolders = papyrusIncludeFolders
-    sourceFolder = file("src/requiem")
+    sourceFolder = file("src")
     targetDir = file("$outputDir")
     compilerLogs = file("$buildDir/logs")
 }
