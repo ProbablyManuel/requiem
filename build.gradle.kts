@@ -43,6 +43,8 @@ val reqtificatorDir = file("$skyProcDir/Requiem")
 val mutagenDir = file("Reqtificator")
 val interfaceDir = file("Interface")
 val scriptsDir = file("Scripts")
+val sourceDir = file("Requiem/Source")
+val scriptsSourcesDir = file(sourceDir.resolve("Scripts"))
 val bsaFilesDir = file("BsaFiles")
 val bsaFile = file("Requiem.bsa")
 
@@ -65,6 +67,15 @@ val copyScripts by tasks.registering(Copy::class) {
     val outputDir: File by project("components:papyrus-scripts").extra
     from(outputDir)
     into(scriptsDir)
+    exclude("**/*.psc")
+}
+
+val copyScriptSources by tasks.registering(Copy::class) {
+    dependsOn("components:papyrus-scripts:assemble")
+    val outputDir: File by project("components:papyrus-scripts").extra
+    from(outputDir.resolve("source"))
+    into(scriptsSourcesDir)
+    exclude("**/*.pex")
 }
 
 val copyInterfaceFiles by tasks.registering(Copy::class) {
@@ -99,6 +110,7 @@ tasks.assemble {
     dependsOn(copyMutagenReqtificator)
     dependsOn(copyInterfaceFiles)
     dependsOn(copyScripts)
+    dependsOn(copyScriptSources)
 }
 
 tasks.clean {
@@ -132,6 +144,7 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
         "Requiem.modgroups",
         releaseDocsDir,
         "Requiem.bsa",
+        "Requiem",
         "BashTags"
     )
     excludePatterns = listOf()
