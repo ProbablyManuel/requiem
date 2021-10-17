@@ -38,7 +38,6 @@ This mod is published on NexusMods:
             )
             papyrusFailFast = false
             csharpWarningsAsErrors = true
-            reqtificatorBuildDir = file("S:\\MO-Skyrim\\mods\\SkyProcBuild")
             bsArch = file("S:\\bsarch.exe")
         }
 
@@ -64,9 +63,6 @@ This mod is published on NexusMods:
         * If set to false, code analysis warnings will be emitted on the console, but the build will still succeed.
         This setting only applies to the `assemble` task, `checkFormat` will always fail if a code-analyser warning is
         present.
-    * `reqtificatorBuildDir` - external directory for the intermediate build files of the Reqtificator
-        * This build directory must not be linked by Mod Organizer into your Skyrim installation.
-        Some build intermediate files can have very long file names that can cause Skyrim to crash when starting
     * `bsArch` - the full path to the executable from BSArch
 
 4. Open a (power)shell, go to the repository's directory and execute `gradlew.bat installDevVersion`. This may take
