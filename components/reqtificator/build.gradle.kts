@@ -1,4 +1,4 @@
-import skyrim.requiem.build.VersionFileTask
+import skyrim.requiem.build.SkyProcVersionFileTask
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -41,7 +41,7 @@ dependencies {
     testImplementation("io.mockk:mockk:1.10.2")
 }
 
-val createVersionFile by tasks.registering(VersionFileTask::class) {
+val createVersionFile by tasks.registering(SkyProcVersionFileTask::class) {
     val gitRevision: String by rootProject.extra
     val gitBranch: String by rootProject.extra
 

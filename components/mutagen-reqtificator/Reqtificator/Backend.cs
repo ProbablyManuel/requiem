@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Runtime.CompilerServices;
+using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
@@ -49,8 +50,13 @@ namespace Reqtificator
             var configFolder = Path.Combine(_context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
             var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods);
 
-            //TODO: proper version handling injected by the build tool
-            _version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
+            var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
+            _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
+
+            Log.Information($"working directory: {System.IO.Directory.GetCurrentDirectory()}");
+            Log.Information($"patcher version: {_version}");
+            Log.Information($"build git branch: {buildInfo.GetString("gitBranch")}");
+            Log.Information($"build git revision: {buildInfo.GetString("gitRevision")}");
 
             _executor = new MainLogicExecutor(_events, _context, reqtificatorConfig, _version);
 
