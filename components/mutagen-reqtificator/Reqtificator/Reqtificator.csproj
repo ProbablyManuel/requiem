@@ -24,6 +24,9 @@
         <EmbeddedResource Include="Resources/DefaultUserConfig.json">
             <LogicalName>DefaultUserConfig</LogicalName>
         </EmbeddedResource>
+        <EmbeddedResource Include="GeneratedResources/VersionInfo.json">
+            <LogicalName>VersionInfo</LogicalName>
+        </EmbeddedResource>
 		<Content Include="Resources/Images/*.*">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>

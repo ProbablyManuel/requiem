@@ -12,7 +12,19 @@ val compileDirs = files(projectDirs.map { "$it/bin" })
 val csharpWarningsAsErrors: Boolean = rootProject.findProperty("csharpWarningsAsErrors") as Boolean? ?: false
 
 val outputDir by project.extra(file("$buildDir/Reqtificator-SSE"))
+val generatedResources = file("Reqtificator/GeneratedResources")
 
+val createVersionFile by tasks.registering(VersionFileTask::class) {
+    val gitRevision: String by rootProject.extra
+    val gitBranch: String by rootProject.extra
+
+    group = "build"
+    description = "store git revision information in a config file"
+
+    revision = gitRevision
+    branch = gitBranch
+    versionFile = file("$generatedResources/VersionInfo.json")
+}
 
 val compile by tasks.registering(CompileCSharpTask::class) {
     description = "Compiles the C# code for the SSE Reqtificator"
@@ -22,6 +34,7 @@ val compile by tasks.registering(CompileCSharpTask::class) {
     projectName = "Reqtificator"
 
     dependsOn(restoreTools)
+    dependsOn(createVersionFile)
 }
 
 val testCompile by tasks.registering(CompileCSharpTask::class) {
@@ -44,6 +57,7 @@ val publish by tasks.registering(PublishCSharpTask::class) {
     warningsAsErrors = csharpWarningsAsErrors
 
     dependsOn(restoreTools)
+    dependsOn(createVersionFile)
 }
 
 val test by tasks.registering(TestCSharpTask::class) {
@@ -86,5 +100,5 @@ tasks.assemble {
 }
 
 tasks.clean {
-    delete(compileDirs, objectDirs)
+    delete(compileDirs, objectDirs, generatedResources)
 }

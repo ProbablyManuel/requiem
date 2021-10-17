@@ -7,6 +7,11 @@
 
         }
 
+        public RequiemVersion(int version, string name) : this(version / 10000, version % 10000 / 100, version % 100, name)
+        {
+
+        }
+
         public override string ToString()
         {
             return $"Requiem {Major}.{Minor}.{Patch} - \"{Title}\"";
