@@ -19,6 +19,7 @@ using Reqtificator.Transformers.EncounterZones;
 using Reqtificator.Transformers.LeveledCharacters;
 using Reqtificator.Transformers.LeveledItems;
 using Reqtificator.Transformers.LeveledLists;
+using Reqtificator.Transformers.Races;
 using Reqtificator.Transformers.Rules;
 using Reqtificator.Transformers.Weapons;
 using Reqtificator.Utils;
@@ -77,6 +78,7 @@ namespace Reqtificator
             var armorsPatched = PatchArmors(loadOrder);
             var weaponsPatched = PatchWeapons(loadOrder);
             var actorsPatched = PatchActors(loadOrder, importedModsLinkCache);
+            var racesPatched = PatchRaces(loadOrder);
 
             // unfortunately, we must add the new records directly to the plugin to avoid broken formId links :)
             var actorVariationsPatched =
@@ -95,7 +97,8 @@ namespace Reqtificator
                 .Map(m => m.WithRecords(ammoPatched))
                 .FlatMap(m => weaponsPatched.Map(m.WithRecords))
                 .FlatMap(m => actorsPatched.Map(m.WithRecords))
-                .FlatMap(m => actorVariationsPatched.Map(m.WithRecords));
+                .FlatMap(m => actorVariationsPatched.Map(m.WithRecords))
+                .Map(m => m.WithRecords(racesPatched));
 
             formAllocator.Commit();
             return fullPatch;
@@ -286,6 +289,12 @@ namespace Reqtificator
 
             pseudoModListing.Dispose();
             return updatedActorVariations;
+        }
+
+        private static ImmutableList<Race> PatchRaces(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+        {
+            var races = loadOrder.PriorityOrder.Race().WinningOverrides();
+            return new CustomRacePatching().ProcessCollection(races);
         }
     }
 }
