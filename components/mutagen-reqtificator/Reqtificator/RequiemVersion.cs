@@ -2,6 +2,11 @@
 {
     public record RequiemVersion(int Major, int Minor, int Patch, string Title)
     {
+        public RequiemVersion(int version) : this(version / 10000, version % 10000 / 100, version % 100, "")
+        {
+
+        }
+
         public override string ToString()
         {
             return $"Requiem {Major}.{Minor}.{Patch} - \"{Title}\"";
