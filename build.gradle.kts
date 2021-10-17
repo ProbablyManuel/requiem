@@ -1,4 +1,5 @@
 import skyrim.requiem.build.ReleaseArchiveTask
+import skyrim.requiem.build.BsaPackingTask
 import skyrim.requiem.build.RequiemVersion
 import java.io.BufferedReader
 import java.io.InputStreamReader
@@ -35,11 +36,17 @@ fun runCommand(command: List<String>): String = try {
 val gitRevision by extra { runCommand(listOf("git", "rev-parse", "HEAD")) }
 val gitBranch by extra { runCommand(listOf("git", "symbolic-ref", "--short", "-q", "HEAD")) }
 
+val bsArch: File by extra
+
 val skyProcDir = file("SkyProc Patchers")
 val reqtificatorDir = file("$skyProcDir/Requiem")
 val mutagenDir = file("Reqtificator")
 val interfaceDir = file("Interface")
 val scriptsDir = file("Scripts")
+val sourceDir = file("Source")
+val scriptsSourcesDir = file(sourceDir.resolve("Scripts"))
+val bsaFilesDir = file("BsaFiles")
+val bsaFile = file("Requiem.bsa")
 
 val copyReqtificator by tasks.registering(Copy::class) {
     dependsOn("components:reqtificator:assemble")
@@ -60,6 +67,19 @@ val copyScripts by tasks.registering(Copy::class) {
     val outputDir: File by project("components:papyrus-scripts").extra
     from(outputDir)
     into(scriptsDir)
+    exclude("**/*.psc")
+}
+
+val copyScriptSources by tasks.registering(Copy::class) {
+    dependsOn("components:papyrus-scripts:assemble")
+    val outputDir: File by project("components:papyrus-scripts").extra
+    from(outputDir.resolve("source"))
+    into(scriptsSourcesDir)
+    exclude("**/*.pex")
+    eachFile {
+        path = name
+    }
+    includeEmptyDirs = false
 }
 
 val copyInterfaceFiles by tasks.registering(Copy::class) {
@@ -69,11 +89,33 @@ val copyInterfaceFiles by tasks.registering(Copy::class) {
     into(interfaceDir)
 }
 
+val copyBsaFiles by tasks.registering(Copy::class) {
+    dependsOn("assemble")
+
+    from(".")
+    include("Interface/**", "meshes/**", "Sound/**", "textures/**", "Scripts/**")
+    into(bsaFilesDir)
+    exclude("**/REQ_Debug*.pex", "**/REQ_Debug*.psc")
+    includeEmptyDirs = false
+}
+
+val createBsa by tasks.registering(BsaPackingTask::class) {
+    description = "create a BSA archive for Requiem's core assets"
+    group = "distribution"
+    dependsOn(copyBsaFiles)
+
+    folder = bsaFilesDir
+    archiveFile = bsaFile
+    logFile = file("distribution/bsaLog.txt")
+    archiveTool = bsArch
+}
+
 tasks.assemble {
     dependsOn(copyReqtificator)
     dependsOn(copyMutagenReqtificator)
     dependsOn(copyInterfaceFiles)
     dependsOn(copyScripts)
+    dependsOn(copyScriptSources)
 }
 
 tasks.clean {
@@ -82,6 +124,8 @@ tasks.clean {
     delete(mutagenDir)
     delete(scriptsDir)
     delete(skyProcDir)
+    delete(bsaFilesDir)
+    delete(bsaFile)
 }
 
 val packRelease by tasks.registering(ReleaseArchiveTask::class) {
@@ -89,6 +133,7 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
     group = "distribution"
 
     dependsOn(tasks.assemble)
+    dependsOn(createBsa)
     dependsOn("components:fomod-installer:assemble")
     dependsOn("components:documentation:assemble")
 
@@ -103,13 +148,9 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
         "Reqtificator.bat",
         "Requiem.modgroups",
         releaseDocsDir,
-        "Scripts",
-        "interface",
-        "meshes",
-        "SkyProc Patchers",
-        "sound",
-        "textures",
+        "Requiem.bsa",
+        "Source",
         "BashTags"
     )
-    excludePatterns = listOf("REQ_Debug.+\\.pex")
+    excludePatterns = listOf()
 }
