@@ -65,4 +65,16 @@ namespace Reqtificator.Exceptions
 
         public override string Message => $"record '{SourceRecord.FormKey}' contains invalid tempering data";
     }
+
+    public class MissingDependencyException : ReqtificatorException
+    {
+        public MissingDependencyException(string missingDependency)
+        {
+            MissingDependency = missingDependency;
+        }
+
+        public override string Message => $"dependency '{MissingDependency}' was not found in the setup";
+
+        public string MissingDependency { get; }
+    }
 }
