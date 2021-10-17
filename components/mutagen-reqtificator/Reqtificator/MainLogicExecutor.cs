@@ -32,14 +32,17 @@ namespace Reqtificator
         private readonly InternalEvents _events;
         private readonly GameContext _context;
         private readonly ReqtificatorConfig _reqtificatorConfig;
-        private static readonly string PersistenceFileLocation = Environment.GetFolderPath(Environment.SpecialFolder.Personal) +
-            "/My Games/Skyrim Special Edition/Requiem/FormPersistence.txt";
+        private readonly RequiemVersion _version;
 
-        public MainLogicExecutor(InternalEvents events, GameContext context, ReqtificatorConfig reqtificatorConfig)
+        private static readonly string PersistenceFileLocation = Environment.GetFolderPath(Environment.SpecialFolder.Personal) +
+                                                                 "/My Games/Skyrim Special Edition/Requiem/FormPersistence.txt";
+
+        public MainLogicExecutor(InternalEvents events, GameContext context, ReqtificatorConfig reqtificatorConfig, RequiemVersion version)
         {
             _events = events;
             _context = context;
             _reqtificatorConfig = reqtificatorConfig;
+            _version = version;
         }
 
         public ErrorOr<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
@@ -63,9 +66,7 @@ namespace Reqtificator
                                   loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
             _events.PublishPatchStarted(numberOfRecords);
 
-            //TODO: proper version handling injected by the build tool
-            var version = new RequiemVersion(5, 0, 0, "a Phoenix perhaps?");
-            var (generatedPatch, formAllocator) = CreatePatchBaseMod(outputModKey, version, importedModsLinkCache);
+            var (generatedPatch, formAllocator) = CreatePatchBaseMod(outputModKey, _version, importedModsLinkCache);
 
             var ammoPatched = PatchAmmunition(loadOrder);
             var encounterZonesPatched = PatchEncounterZones(loadOrder, userSettings);
@@ -122,7 +123,7 @@ namespace Reqtificator
             patch.SetAllocator(allocator);
 
             //TODO: error handling...
-            if (cache.TryResolve<IGlobalGetter>(GlobalVariables.VersionStamp.FormKey,
+            if (cache.TryResolve<IGlobalGetter>(GlobalVariables.VersionStampPatch.FormKey,
                 out var original))
             {
                 var record = patch.Globals.GetOrAddAsOverride(original);

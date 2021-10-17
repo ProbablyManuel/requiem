@@ -77,4 +77,18 @@ namespace Reqtificator.Exceptions
 
         public string MissingDependency { get; }
     }
+
+    public class VersionMismatchException : ReqtificatorException
+    {
+        public VersionMismatchException(RequiemVersion pluginVersion, RequiemVersion patcherVersion)
+        {
+            PluginVersion = pluginVersion;
+            PatcherVersion = patcherVersion;
+        }
+
+        public override string Message => $"version mismatch detected! patcher version {PatcherVersion.ShortVersion()}, plugin version {PluginVersion.ShortVersion()}";
+
+        public RequiemVersion PluginVersion { get; }
+        public RequiemVersion PatcherVersion { get; }
+    }
 }
