@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Runtime.CompilerServices;
+using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
@@ -36,6 +37,7 @@ namespace Reqtificator
         private readonly MainLogicExecutor _executor;
         private readonly ReqtificatorLogContext _logs;
         private readonly GameContext _context;
+        private readonly RequiemVersion _version;
 
         public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext)
         {
@@ -47,7 +49,16 @@ namespace Reqtificator
             //TODO: update base folder for configurations if needed
             var configFolder = Path.Combine(_context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
             var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods);
-            _executor = new MainLogicExecutor(_events, _context, reqtificatorConfig);
+
+            var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
+            _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
+
+            Log.Information($"working directory: {System.IO.Directory.GetCurrentDirectory()}");
+            Log.Information($"patcher version: {_version}");
+            Log.Information($"build git branch: {buildInfo.GetString("gitBranch")}");
+            Log.Information($"build git revision: {buildInfo.GetString("gitRevision")}");
+
+            _executor = new MainLogicExecutor(_events, _context, reqtificatorConfig, _version);
 
             var userConfig = LoadAndVerifyUserSettings(_context);
 
@@ -88,6 +99,13 @@ namespace Reqtificator
             try
             {
                 var loadOrder = LoadOrder.Import<ISkyrimModGetter>(_context.DataFolder, _context.ActiveMods, _context.Release);
+
+                var checkResult = SetupValidation.VerifySetup(loadOrder, _version);
+                if (checkResult is not null)
+                {
+                    _events.PublishFinished(checkResult);
+                    throw checkResult.Exception;
+                }
 
                 Log.Information("start patching");
 

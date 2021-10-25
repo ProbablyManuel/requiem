@@ -6,7 +6,7 @@ import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-open class VersionFileTask: DefaultTask() {
+open class SkyProcVersionFileTask() : DefaultTask() {
 
     @Input
     lateinit var revision: String
@@ -20,12 +20,9 @@ open class VersionFileTask: DefaultTask() {
     @TaskAction
     fun writeVersionInfo(): Unit {
         versionFile.writeText(
-            """{
-                |  "versionNumber": ${version.toIntegerRepresenation()},
-                |  "versionName": "${version.name}",
-                |  "gitRevision": "$revision",
-                |  "gitBranch": "$branch"
-                |}
+            """|revision=$revision
+                |branch=$branch
+                |version=${version.toIntegerRepresenation()}
             """.trimMargin("|")
         )
     }
