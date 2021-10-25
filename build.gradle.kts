@@ -38,28 +38,19 @@ val gitBranch by extra { runCommand(listOf("git", "symbolic-ref", "--short", "-q
 
 val bsArch: File by extra
 
-val skyProcDir = file("SkyProc Patchers")
-val reqtificatorDir = file("$skyProcDir/Requiem")
-val mutagenDir = file("Reqtificator")
 val interfaceDir = file("Interface")
 val scriptsDir = file("Scripts")
 val sourceDir = file("Source")
+val reqtificatorDir = file("Reqtificator")
 val scriptsSourcesDir = file(sourceDir.resolve("Scripts"))
 val bsaFilesDir = file("BsaFiles")
 val bsaFile = file("Requiem.bsa")
 
 val copyReqtificator by tasks.registering(Copy::class) {
-    dependsOn("components:reqtificator:assemble")
-    val outputDir: File by project("components:reqtificator").extra
-    from(outputDir)
-    into(reqtificatorDir)
-}
-
-val copyMutagenReqtificator by tasks.registering(Copy::class) {
     dependsOn("components:mutagen-reqtificator:assemble")
     val outputDir: File by project("components:mutagen-reqtificator").extra
     from(outputDir)
-    into(mutagenDir)
+    into(reqtificatorDir)
 }
 
 val copyScripts by tasks.registering(Copy::class) {
@@ -112,18 +103,16 @@ val createBsa by tasks.registering(BsaPackingTask::class) {
 
 tasks.assemble {
     dependsOn(copyReqtificator)
-    dependsOn(copyMutagenReqtificator)
     dependsOn(copyInterfaceFiles)
     dependsOn(copyScripts)
     dependsOn(copyScriptSources)
 }
 
 tasks.clean {
+    delete(sourceDir)
     delete(reqtificatorDir)
     delete(interfaceDir)
-    delete(mutagenDir)
     delete(scriptsDir)
-    delete(skyProcDir)
     delete(bsaFilesDir)
     delete(bsaFile)
 }
@@ -150,6 +139,7 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
         releaseDocsDir,
         "Requiem.bsa",
         "Source",
+        "Reqtificator",
         "BashTags"
     )
     excludePatterns = listOf()

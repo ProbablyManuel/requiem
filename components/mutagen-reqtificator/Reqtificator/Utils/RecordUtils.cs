@@ -39,9 +39,9 @@ namespace Reqtificator.Utils
         public static ErrorOr<IImmutableList<(string, Config)>> LoadModConfigFiles(GameContext context, string filePrefix)
         {
             //TODO: graceful error handling for not parseable configuration files
-            var armorConfigPath = Path.Combine(context.DataFolder, "SkyProc Patchers", "Requiem", "Data");
+            var configPath = Path.Combine(context.DataFolder, "Reqtificator", "Data");
             IImmutableList<(string, Config)> configs = context.ActiveMods
-                .Select(m => Path.Combine(armorConfigPath, $"{filePrefix}_{m.ModKey.FileName}.conf"))
+                .Select(m => Path.Combine(configPath, $"{filePrefix}_{m.ModKey.FileName}.conf"))
                 .Where(f => File.Exists(f))
                 .Select(f => (f, HoconConfigurationFactory.FromFile(f)))
                 .ToImmutableList();
