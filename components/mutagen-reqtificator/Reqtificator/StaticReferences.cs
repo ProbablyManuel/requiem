@@ -51,7 +51,10 @@ namespace Reqtificator.StaticReferences
 
     public static class GlobalVariables
     {
-        public static readonly IFormLinkGetter<IGlobalGetter> VersionStamp =
+        public static readonly IFormLinkGetter<IGlobalGetter> VersionStampPlugin =
+            new FormLink<IGlobalGetter>(FormKey.Factory("2F389F:Requiem.esp"));
+
+        public static readonly IFormLinkGetter<IGlobalGetter> VersionStampPatch =
             new FormLink<IGlobalGetter>(FormKey.Factory("973D69:Requiem.esp"));
     }
 
