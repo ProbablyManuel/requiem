@@ -47,7 +47,7 @@ namespace Reqtificator
 
             _context = GameContext.GetRequiemContext(Release, PatchModKey);
             //TODO: update base folder for configurations if needed
-            var configFolder = Path.Combine(_context.DataFolder, "SkyProc Patchers", "Requiem", "Config");
+            var configFolder = Path.Combine(_context.DataFolder, "Reqtificator", "Config");
             var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods);
 
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
