@@ -1,13 +1,15 @@
-﻿<Window x:Class="Reqtificator.Gui.PatchingFinishedWindow"
+﻿<Window x:Class="Reqtificator.Gui.PatchStatusWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Reqtificator.Gui"
+        xmlns:gui="clr-namespace:Reqtificator.Gui"
         mc:Ignorable="d"
         Title="{Binding Title}" Width="640" ResizeMode="NoResize" SizeToContent="Height">
     <Window.Resources>
-        <Style TargetType="local:DynamicRichTextBox">
+        <BooleanToVisibilityConverter x:Key="VisibleIfTrueConverter" />
+        <gui:BooleanToInvisibilityConverter x:Key="VisibleIfFalseConverter" />
+        <Style TargetType="gui:DynamicRichTextBox">
             <Setter Property="Margin" Value="16" />
             <Setter Property="Padding" Value="16" />
             <Setter Property="BorderThickness" Value="1" />
@@ -24,10 +26,12 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Image Source="{Binding Image}" Width="128" Height="128" Grid.Column="0"/>
-            <local:DynamicRichTextBox Message="{Binding Message}" IsReadOnly="True" IsDocumentEnabled="True" Grid.Column="1"/>
+            <gui:DynamicRichTextBox Message="{Binding Message}" IsReadOnly="True" IsDocumentEnabled="True" Grid.Column="1"/>
         </Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Command="{Binding CloseCommand}">Close</Button>
+            <Button Command="{Binding ReturnCommand}" Visibility="{Binding IsWarning, Converter={StaticResource VisibleIfTrueConverter}}">Return</Button>
+            <Button Command="{Binding CloseCommand}" Visibility="{Binding IsWarning, Converter={StaticResource VisibleIfTrueConverter}}">Close All</Button>
+            <Button Command="{Binding CloseCommand}" Visibility="{Binding IsWarning, Converter={StaticResource VisibleIfFalseConverter}}">Close</Button>
         </StackPanel>
     </StackPanel>
 </Window>

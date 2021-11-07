@@ -6,26 +6,33 @@ using Reqtificator.Events;
 
 namespace Reqtificator.Gui
 {
-    internal class PatchingFinishedViewModel
+    internal class PatchStatusViewModel
     {
         public ICommand CloseCommand => new DelegateCommand(RequestClose);
+        public ICommand ReturnCommand => new DelegateCommand(RequestReturn);
 
         public Action CloseRequested = delegate { };
 
-        public PatchingFinishedViewModel(ReqtificatorOutcome outcome)
+        public Action ReturnRequested = delegate { };
+
+        public PatchStatusViewModel(ReqtificatorOutcome outcome)
         {
             Title = outcome.Title;
             Message = MessageFactory.BuildMessage(outcome.Message);
             var imageName = outcome.Status.ToString().ToLower(CultureInfo.CurrentCulture);
             Image = $"../Resources/Images/{imageName}.png";
+            IsWarning = outcome.Status == PatchStatus.WARNING;
         }
 
         private void RequestClose(object? sender) { CloseRequested.Invoke(); }
+        private void RequestReturn(object? sender) { ReturnRequested.Invoke(); }
 
         public FlowDocument Message { get; private set; }
 
         public string Title { get; private set; }
 
         public string Image { get; private set; }
+
+        public bool IsWarning { get; private set; }
     }
 }
