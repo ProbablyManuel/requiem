@@ -13,7 +13,7 @@ namespace Reqtificator.Events
         public void PublishReadyToPatch(UserSettings userConfig, IEnumerable<ModKey> activeMods);
         public void RequestPatch(UserSettings userSettings);
         public void PublishPatchStarted(int numberOfRecords);
-        public void PublishFinished(ReqtificatorOutcome outcome);
+        public void PublishPatchStatus(ReqtificatorOutcome outcome);
         public void ReportDeprecationWarning(IDeprecationWarning warning);
 
         public void PublishRecordProcessed<T, TGetter>(TransformationResult<T, TGetter> result)
@@ -25,7 +25,7 @@ namespace Reqtificator.Events
         public event EventHandler<PatchContext> ReadyToPatch = delegate { };
         public event EventHandler<UserSettings> PatchRequested = delegate { };
         public event EventHandler<PatchStarted> PatchStarted = delegate { };
-        public event EventHandler<ReqtificatorOutcome> PatchingFinished = delegate { };
+        public event EventHandler<ReqtificatorOutcome> PatchingResult = delegate { };
         public event EventHandler<Exception> ExceptionOccured = delegate { };
         public event EventHandler<IDeprecationWarning> DeprecationWarningOccured = delegate { };
 
@@ -46,9 +46,9 @@ namespace Reqtificator.Events
             PatchStarted.Invoke(this, new PatchStarted(numberOfRecords));
         }
 
-        public void PublishFinished(ReqtificatorOutcome outcome)
+        public void PublishPatchStatus(ReqtificatorOutcome outcome)
         {
-            PatchingFinished.Invoke(this, outcome);
+            PatchingResult.Invoke(this, outcome);
         }
 
         public void ReportDeprecationWarning(IDeprecationWarning warning)

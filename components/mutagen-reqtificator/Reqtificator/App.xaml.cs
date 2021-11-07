@@ -24,7 +24,7 @@ namespace Reqtificator
                 MainWindowViewModel mainWindowViewModel = new(eventQueue);
                 MainWindow window = new() { DataContext = mainWindowViewModel };
 
-                eventQueue.PatchingFinished += (_, patchStatus) => { OnUiThread(dispatcher, () => HandlePatchingFinished(window, patchStatus)); };
+                eventQueue.PatchingResult += (_, patchStatus) => { OnUiThread(dispatcher, () => HandlePatchingResult(window, patchStatus)); };
 
                 window.Show();
 
@@ -33,7 +33,7 @@ namespace Reqtificator
             }
             catch (Exception ex)
             {
-                HandlePatchingFinished(null, ReqtificatorFailure.CausedBy(ex));
+                HandlePatchingResult(null, ReqtificatorFailure.CausedBy(ex));
                 throw;
             }
         }
@@ -43,23 +43,37 @@ namespace Reqtificator
             d.Invoke(a);
         }
 
-        private static void HandlePatchingFinished(MainWindow? window, ReqtificatorOutcome outcome)
+        private static void HandlePatchingResult(MainWindow? window, ReqtificatorOutcome outcome)
         {
-            PatchingFinishedViewModel patchingFinishedViewModel = new(outcome);
-            PatchingFinishedWindow pfWindow = new() { DataContext = patchingFinishedViewModel };
-            patchingFinishedViewModel.CloseRequested += () =>
+            Log.Information("Patching Result: " + outcome.Status.ToString());
+            try
             {
+                PatchStatusViewModel patchingFinishedViewModel = new(outcome);
+                PatchStatusWindow pfWindow = new() { DataContext = patchingFinishedViewModel };
+                patchingFinishedViewModel.CloseRequested += () =>
+                {
 
-                pfWindow.Close();
-                window?.Close();
-            };
+                    pfWindow.Close();
+                    window?.Close();
+                };
+                patchingFinishedViewModel.ReturnRequested += () =>
+                {
 
-            if (outcome is ReqtificatorFailure exOutcome)
-            {
-                Log.Error(exOutcome.Exception.Message);
-                Log.Error(exOutcome.Exception.StackTrace);
+                    pfWindow.Close();
+                };
+
+                if (outcome is ReqtificatorFailure exOutcome)
+                {
+                    throw exOutcome.Exception;
+                }
+                _ = pfWindow.ShowDialog();
             }
-            _ = pfWindow.ShowDialog();
+            catch (Exception e)
+            {
+                Log.Error(e.Message);
+                Log.Error(e.StackTrace);
+                throw;
+            }
         }
 
         private void App_SessionEnding(object _, SessionEndingCancelEventArgs ea)
