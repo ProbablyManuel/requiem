@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator.Events;
 using Reqtificator.StaticReferences;
-using Serilog;
 
 namespace Reqtificator
 {
@@ -17,7 +15,7 @@ namespace Reqtificator
             public static readonly Uri ScrambledBugs = new("https://www.nexusmods.com/skyrimspecialedition/mods/43532");
         }
 
-        public static ReqtificatorFailure? VerifySetup(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, RequiemVersion patcherVersion)
+        public static ReqtificatorOutcome? VerifySetup(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, RequiemVersion patcherVersion)
         {
             if (!System.IO.File.Exists("SKSE/Plugins/EngineFixes.dll"))
             {

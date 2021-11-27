@@ -44,7 +44,7 @@ namespace Reqtificator.Gui
 
             _events.ReadyToPatch += (_, patchContext) => { mainThreadContext?.Post(_ => HandlePatchReady(patchContext), null); };
             _events.PatchStarted += (_, patchStarted) => { mainThreadContext?.Post(_ => HandlePatchStarted(patchStarted), null); };
-            _events.PatchingFinished += (_, _1) => { mainThreadContext?.Post(_ => HandlePatchingFinished(), null); };
+            _events.PatchingResult += (_, result) => { mainThreadContext?.Post(_ => HandlePatchingResult(result), null); };
             _events.RecordProcessed += (_, result) => { mainThreadContext?.Post(_ => HandlePatchProgress(result), null); };
 
             _patchRequestThread = new BackgroundWorker();
@@ -75,11 +75,13 @@ namespace Reqtificator.Gui
             NotifyChanged(nameof(ProgramStatus), nameof(Progress));
         }
 
-        private void HandlePatchingFinished()
+        private void HandlePatchingResult(ReqtificatorOutcome result)
         {
-            ProgramStatus = "Done!";
+            //////////    TODO - this gets called even for warnings now
+
+            ProgramStatus = result.Status.ToString();
             recordsProcessed++;
-            IsPatching = false;
+            IsPatching = !result.Status.Equals(PatchStatus.WARNING);
             NotifyChanged(nameof(ProgramStatus), nameof(Progress), nameof(IsPatching));
         }
 

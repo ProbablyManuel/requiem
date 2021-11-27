@@ -1,5 +1,4 @@
 ﻿using Mutagen.Bethesda.Plugins.Records;
-using Mutagen.Bethesda.Skyrim;
 
 namespace Reqtificator.Transformers.LeveledLists
 {
