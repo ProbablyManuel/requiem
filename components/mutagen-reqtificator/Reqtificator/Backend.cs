@@ -65,16 +65,25 @@ namespace Reqtificator
             _events.PublishReadyToPatch(userConfig, _context.ActiveMods.Select(x => x.ModKey));
             Log.Information("Ready to patch: userConfig detected\r\n{userConfig}", userConfig);
 
+            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(_context.DataFolder, _context.ActiveMods, _context.Release);
+
+            var checkResult = SetupValidation.VerifySetup(loadOrder, _version);
+            if (checkResult is not null)
+            {
+                _events.PublishPatchStatus(checkResult);
+                if (checkResult.Status != PatchStatus.WARNING && checkResult is ReqtificatorFailure failure) { throw failure.Exception; }
+            }
+
             _events.PatchRequested += (_, updatedSettings) =>
             {
                 var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
                 _logs.LogLevel.MinimumLevel = logLevel;
                 updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
-                var generatedPatch = GeneratePatch(updatedSettings, PatchModKey);
+                var generatedPatch = GeneratePatch(loadOrder, updatedSettings, PatchModKey);
                 Log.Information("done patching, now exporting to disk");
                 WritePatchToDisk(generatedPatch, _context.DataFolder);
                 Log.Information("done exporting");
-                _events.PublishFinished(ReqtificatorOutcome.Success);
+                _events.PublishPatchStatus(ReqtificatorOutcome.Success);
             };
         }
 
@@ -87,25 +96,17 @@ namespace Reqtificator
             if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
             {
                 Log.Error("oops, where's your Requiem.esp?");
-                _events.PublishFinished(ReqtificatorOutcome.MissingRequiem);
+                _events.PublishPatchStatus(ReqtificatorOutcome.MissingRequiem);
             }
 
             return userConfig;
         }
 
 
-        public SkyrimMod GeneratePatch(UserSettings userConfig, ModKey patchModKey)
+        public SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, UserSettings userConfig, ModKey patchModKey)
         {
             try
             {
-                var loadOrder = LoadOrder.Import<ISkyrimModGetter>(_context.DataFolder, _context.ActiveMods, _context.Release);
-
-                var checkResult = SetupValidation.VerifySetup(loadOrder, _version);
-                if (checkResult is not null)
-                {
-                    _events.PublishFinished(checkResult);
-                    throw checkResult.Exception;
-                }
 
                 Log.Information("start patching");
 
@@ -119,7 +120,7 @@ namespace Reqtificator
             catch (Exception ex)
             {
                 Log.Error(ex, "things did not go according to plan");
-                _events.PublishFinished(ReqtificatorFailure.CausedBy(ex));
+                _events.PublishPatchStatus(ReqtificatorFailure.CausedBy(ex));
                 throw;
             }
         }

@@ -8,7 +8,7 @@ namespace Reqtificator.Gui
     /// <summary>
     /// Interaction logic for PatchingFinishedWindow.xaml
     /// </summary>
-    public partial class PatchingFinishedWindow : Window
+    public partial class PatchStatusWindow : Window
     {
         // https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowlongptra
 
@@ -23,7 +23,7 @@ namespace Reqtificator.Gui
         [DllImport("user32.dll")]
         private static extern int SetWindowLongPtr(IntPtr hWnd, int nIndex, int dwNewLong);
 
-        public PatchingFinishedWindow()
+        public PatchStatusWindow()
         {
             InitializeComponent();
             SourceInitialized += HideWindowMenu;
