@@ -12,19 +12,24 @@ namespace Reqtificator
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            MainWindow? window = null;
             try
             {
                 var logContext = new ReqtificatorLogContext(LogUtils.DefaultLogFileName);
-                Log.Information("starting the Reqtificator");
+                Log.Information("Starting the Reqtificator");
 
                 var eventQueue = new InternalEvents();
                 var dispatcher = Dispatcher.CurrentDispatcher;
 
-                Log.Debug("Starting Gui");
+                Log.Debug("Starting Reqtificator Gui");
                 MainWindowViewModel mainWindowViewModel = new(eventQueue);
-                MainWindow window = new() { DataContext = mainWindowViewModel };
+                window = new() { DataContext = mainWindowViewModel };
 
-                eventQueue.PatchingResult += (_, patchStatus) => { OnUiThread(dispatcher, () => HandlePatchingResult(window, patchStatus)); };
+                eventQueue.StateChanged += (_, state) =>
+                {
+                    Log.Information("Reqtificator state: " + state.Readable);
+                    if (state is StoppedState stoppedState) { OnUiThread(dispatcher, () => HandlePatchingResult(window, stoppedState)); }
+                };
 
                 window.Show();
 
@@ -33,7 +38,10 @@ namespace Reqtificator
             }
             catch (Exception ex)
             {
-                HandlePatchingResult(null, ReqtificatorFailure.CausedBy(ex));
+                Log.Error(ex.Message);
+                Log.Error(ex.StackTrace);
+                HandlePatchingResult(window, ReqtificatorState.Stopped(ReqtificatorFailure.CausedBy(ex)));
+                window?.Close();
                 throw;
             }
         }
@@ -43,29 +51,27 @@ namespace Reqtificator
             d.Invoke(a);
         }
 
-        private static void HandlePatchingResult(MainWindow? window, ReqtificatorOutcome outcome)
+        private static void HandlePatchingResult(MainWindow? window, StoppedState state)
         {
+            var outcome = state.Outcome;
+
             Log.Information("Patching Result: " + outcome.Status.ToString());
             try
             {
+                Log.Debug("Opening message dialog");
                 PatchStatusViewModel patchingFinishedViewModel = new(outcome);
                 PatchStatusWindow pfWindow = new() { DataContext = patchingFinishedViewModel };
                 patchingFinishedViewModel.CloseRequested += () =>
                 {
-
+                    Log.Debug("Closing all windows");
                     pfWindow.Close();
                     window?.Close();
                 };
                 patchingFinishedViewModel.ReturnRequested += () =>
                 {
-
+                    Log.Debug("Returning to main window");
                     pfWindow.Close();
                 };
-
-                if (outcome is ReqtificatorFailure exOutcome)
-                {
-                    throw exOutcome.Exception;
-                }
                 _ = pfWindow.ShowDialog();
             }
             catch (Exception e)

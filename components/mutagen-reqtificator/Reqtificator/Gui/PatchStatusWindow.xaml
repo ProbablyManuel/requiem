@@ -29,8 +29,8 @@
             <gui:DynamicRichTextBox Message="{Binding Message}" IsReadOnly="True" IsDocumentEnabled="True" Grid.Column="1"/>
         </Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Command="{Binding ReturnCommand}" Visibility="{Binding IsWarning, Converter={StaticResource VisibleIfTrueConverter}}">Return</Button>
-            <Button Command="{Binding CloseCommand}" Visibility="{Binding IsWarning, Converter={StaticResource VisibleIfTrueConverter}}">Close All</Button>
+            <Button Command="{Binding ReturnCommand}" Visibility="{Binding IsWarning, Converter={StaticResource VisibleIfTrueConverter}}">Ignore Warning</Button>
+            <Button Command="{Binding CloseCommand}" Visibility="{Binding IsWarning, Converter={StaticResource VisibleIfTrueConverter}}">Close Reqtificator</Button>
             <Button Command="{Binding CloseCommand}" Visibility="{Binding IsWarning, Converter={StaticResource VisibleIfFalseConverter}}">Close</Button>
         </StackPanel>
     </StackPanel>

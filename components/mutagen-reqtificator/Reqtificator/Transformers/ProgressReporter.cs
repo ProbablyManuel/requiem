@@ -14,7 +14,6 @@ namespace Reqtificator.Transformers
 
         public override TransformationResult<T, TGetter> Process(TransformationResult<T, TGetter> input)
         {
-            _eventQueue.PublishRecordProcessed(input);
             return input;
         }
     }

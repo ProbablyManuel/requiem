@@ -6,7 +6,6 @@ using System.Linq;
 using System.Threading;
 using System.Windows.Input;
 using Mutagen.Bethesda.Plugins;
-using Mutagen.Bethesda.Plugins.Records;
 using Reqtificator.Configuration;
 using Reqtificator.Events;
 
@@ -16,12 +15,6 @@ namespace Reqtificator.Gui
     {
         private readonly InternalEvents _events;
         private readonly BackgroundWorker _patchRequestThread;
-        private int recordsProcessed;
-
-        public bool IsPatching { get; private set; }
-
-        private int maxRecords;
-
         public event PropertyChangedEventHandler? PropertyChanged;
 
         public ObservableCollection<ModViewModel> Mods { get; }
@@ -31,7 +24,8 @@ namespace Reqtificator.Gui
         public bool MergeLeveledCharacters { get; set; }
         public bool OpenEncounterZones { get; set; }
         public string ProgramStatus { get; private set; }
-        public double Progress => maxRecords == 0 ? 0 : recordsProcessed * 100 / maxRecords;
+        public double Progress { get; private set; }
+        public bool IsPatching { get; private set; }
         public ICommand PatchCommand { get; private set; }
 
         public MainWindowViewModel(InternalEvents eventsQueue)
@@ -42,15 +36,23 @@ namespace Reqtificator.Gui
             var mainThreadContext = SynchronizationContext.Current;
             _events = eventsQueue;
 
-            _events.ReadyToPatch += (_, patchContext) => { mainThreadContext?.Post(_ => HandlePatchReady(patchContext), null); };
-            _events.PatchStarted += (_, patchStarted) => { mainThreadContext?.Post(_ => HandlePatchStarted(patchStarted), null); };
-            _events.PatchingResult += (_, result) => { mainThreadContext?.Post(_ => HandlePatchingResult(result), null); };
-            _events.RecordProcessed += (_, result) => { mainThreadContext?.Post(_ => HandlePatchProgress(result), null); };
+            _events.StateChanged += (_, state) => { mainThreadContext?.Post(_ => HandleStateChanged(state), null); };
 
             _patchRequestThread = new BackgroundWorker();
             _patchRequestThread.DoWork += (_, _1) => { _events.RequestPatch(GetUpdatedUserSettings()); };
 
             PatchCommand = new DelegateCommand(RequestPatch);
+        }
+
+        private void HandleStateChanged(ReqtificatorState state)
+        {
+            ProgramStatus = state.Readable;
+            IsPatching = state.IsPatching;
+            Progress = state.PercentageProgress;
+
+            if (state is ReadyToPatchState readyToPatchState) { DisplayUserSettings(readyToPatchState); }
+
+            NotifyChanged(nameof(ProgramStatus), nameof(Progress), nameof(IsPatching));
         }
 
         private UserSettings GetUpdatedUserSettings()
@@ -62,56 +64,22 @@ namespace Reqtificator.Gui
 
         private void RequestPatch(object? _)
         {
-            ProgramStatus = "Patching";
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ProgramStatus)));
-
             _patchRequestThread.RunWorkerAsync();
         }
 
-        private void HandlePatchProgress(RecordProcessedResult<IMajorRecordGetter> result)
+        private void DisplayUserSettings(ReadyToPatchState patchContext)
         {
-            ProgramStatus = "Processed " + result.Record.GetType() + " " + result.Record.FormKey.ToString();
-            recordsProcessed++;
-            NotifyChanged(nameof(ProgramStatus), nameof(Progress));
-        }
-
-        private void HandlePatchingResult(ReqtificatorOutcome result)
-        {
-            //////////    TODO - this gets called even for warnings now
-
-            ProgramStatus = result.Status.ToString();
-            recordsProcessed++;
-            IsPatching = !result.Status.Equals(PatchStatus.WARNING);
-            NotifyChanged(nameof(ProgramStatus), nameof(Progress), nameof(IsPatching));
-        }
-
-        private void HandlePatchStarted(PatchStarted patchStarted)
-        {
-            maxRecords = patchStarted.NumberOfRecords;
-            recordsProcessed = 0;
-            IsPatching = true;
-            NotifyChanged(nameof(ProgramStatus), nameof(Progress), nameof(IsPatching));
-        }
-
-        private void HandlePatchReady(PatchContext patchContext)
-        {
-            DisplayUserSettings(patchContext);
-            ResetPatchingStatus();
-        }
-
-        private void DisplayUserSettings(PatchContext patchContext)
-        {
-            var loadedUserConfig = patchContext.UserSettings;
-            VerboseLogging = loadedUserConfig.VerboseLogging;
-            MergeLeveledLists = loadedUserConfig.MergeLeveledLists;
-            MergeLeveledCharacters = loadedUserConfig.MergeLeveledCharacters;
-            OpenEncounterZones = loadedUserConfig.OpenEncounterZones;
+            var userSettings = patchContext.UserSettings;
+            VerboseLogging = userSettings.VerboseLogging;
+            MergeLeveledLists = userSettings.MergeLeveledLists;
+            MergeLeveledCharacters = userSettings.MergeLeveledCharacters;
+            OpenEncounterZones = userSettings.OpenEncounterZones;
 
             Mods.Clear();
             foreach (ModKey mod in patchContext.ActiveMods)
             {
-                var npcVisuals = loadedUserConfig.NpcVisualTemplateMods.Contains(mod);
-                var raceVisuals = loadedUserConfig.RaceVisualTemplateMods.Contains(mod);
+                var npcVisuals = userSettings.NpcVisualTemplateMods.Contains(mod);
+                var raceVisuals = userSettings.RaceVisualTemplateMods.Contains(mod);
                 Mods.Add(new ModViewModel(mod, npcVisuals, raceVisuals));
             }
 
@@ -120,18 +88,6 @@ namespace Reqtificator.Gui
                 nameof(MergeLeveledLists),
                 nameof(MergeLeveledCharacters),
                 nameof(OpenEncounterZones));
-        }
-
-        private void ResetPatchingStatus()
-        {
-            ProgramStatus = "Ready to patch...";
-            maxRecords = 0;
-            recordsProcessed = 0;
-            IsPatching = false;
-            NotifyChanged(
-                nameof(ProgramStatus),
-                nameof(Progress),
-                nameof(IsPatching));
         }
 
         private void NotifyChanged(params string[] propertyNames)
