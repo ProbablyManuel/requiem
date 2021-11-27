@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
@@ -17,23 +18,18 @@ namespace Reqtificator
 
         public static ReqtificatorOutcome? VerifySetup(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, RequiemVersion patcherVersion)
         {
-            if (!System.IO.File.Exists("SKSE/Plugins/EngineFixes.dll"))
+            var missingDependencies = new List<BugfixDependency>()
             {
-                return new MissingBugfixDependency("SSE Engine Fixes", "NexusMods", Uris.EngineFixes);
-            }
-            if (!System.IO.File.Exists("DLLPlugins/ScrambledBugs.dll"))
-            {
-                return new MissingBugfixDependency("Scrambled Bugs", "NexusMods", Uris.ScrambledBugs);
-            }
+                new BugfixDependency("SSE Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
+                new BugfixDependency("Scrambled Bugs", "DLLPlugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs)
+            }.FindAll(d => !System.IO.File.Exists(d.ExpectedLocation));
+
+            if (missingDependencies.Count > 0) { return new MissingBugfixDependency(missingDependencies); }
 
             int pluginVersion = (int)((IGlobalIntGetter)loadOrder.ToImmutableLinkCache()
                 .Resolve<IGlobalGetter>(GlobalVariables.VersionStampPlugin.FormKey)).Data!;
-            if (patcherVersion.AsNumeric() != pluginVersion)
-            {
-                return new VersionMismatch(new RequiemVersion(pluginVersion), patcherVersion);
-            }
 
-            return null;
+            return patcherVersion.AsNumeric() != pluginVersion ? new VersionMismatch(new RequiemVersion(pluginVersion), patcherVersion) : null;
         }
     }
 }

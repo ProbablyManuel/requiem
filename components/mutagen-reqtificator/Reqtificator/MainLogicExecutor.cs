@@ -46,8 +46,10 @@ namespace Reqtificator
         }
 
         public ErrorOr<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userSettings, ModKey outputModKey)
+            UserSettings userSettings, ModKey outputModKey, InternalEvents _events)
         {
+            _events.PublishState(ReqtificatorState.Patching(0.0, ""));
+
             var requiemModKey = new ModKey("Requiem", ModType.Plugin);
             var importedModsLinkCache = loadOrder.ToImmutableLinkCache();
             var reqTags = new ReqTagParser(_events).ParseTagsFromModHeaders(loadOrder);
@@ -62,32 +64,49 @@ namespace Reqtificator
                 .Select(ml => ml.ModKey)
                 .ToImmutableHashSet();
 
-            var numberOfRecords = loadOrder.PriorityOrder.Armor().WinningOverrides().Count() +
-                                  loadOrder.PriorityOrder.Weapon().WinningOverrides().Count();
-            _events.PublishPatchStarted(numberOfRecords);
-
             var (generatedPatch, formAllocator) = CreatePatchBaseMod(outputModKey, _version, importedModsLinkCache);
 
+            _events.PublishState(ReqtificatorState.Patching(5, "Ammo"));
             var ammoPatched = PatchAmmunition(loadOrder);
+
+            _events.PublishState(ReqtificatorState.Patching(10, "Encounter Zones"));
             var encounterZonesPatched = PatchEncounterZones(loadOrder, userSettings);
+
+            _events.PublishState(ReqtificatorState.Patching(15, "Doors"));
             var doorsPatched = PatchDoors(loadOrder);
+
+            _events.PublishState(ReqtificatorState.Patching(20, "Containers"));
             var containersPatched = PatchContainers(loadOrder);
+
+            _events.PublishState(ReqtificatorState.Patching(25, "Leveled Items"));
             var leveledItemsPatched = PatchLeveledItems(loadOrder, modsWithCompactLeveledLists, modsWithTemperedItems,
                 importedModsLinkCache, userSettings, modsWithRequiemAsMaster);
+
+            _events.PublishState(ReqtificatorState.Patching(30, "Leveled Characters"));
             var leveledCharactersPatched = PatchLeveledCharacters(loadOrder, modsWithCompactLeveledLists,
                 importedModsLinkCache, userSettings, modsWithRequiemAsMaster);
+
+            _events.PublishState(ReqtificatorState.Patching(35, "Armors"));
             var armorsPatched = PatchArmors(loadOrder);
+
+            _events.PublishState(ReqtificatorState.Patching(40, "Weapons"));
             var weaponsPatched = PatchWeapons(loadOrder);
+
+            _events.PublishState(ReqtificatorState.Patching(45, "Actors"));
             var actorsPatched = PatchActors(loadOrder, importedModsLinkCache);
+
+            _events.PublishState(ReqtificatorState.Patching(50, "Races"));
             var racesPatched = PatchRaces(loadOrder);
 
             // unfortunately, we must add the new records directly to the plugin to avoid broken formId links :)
+
+            _events.PublishState(ReqtificatorState.Patching(55, "Actor Variations"));
             var actorVariationsPatched =
                 actorsPatched.Map(actors => PatchActorVariations(loadOrder, actors, generatedPatch));
 
             Log.Information("adding patched records to output mod");
 
-
+            _events.PublishState(ReqtificatorState.Patching(75, "Generating Patch"));
             var fullPatch = generatedPatch.AsSuccess()
                 .Map(m => m.WithRecords(encounterZonesPatched))
                 .Map(m => m.WithRecords(doorsPatched))
