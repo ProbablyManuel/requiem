@@ -48,5 +48,13 @@ namespace Reqtificator.Events
             PatchStatus.ERROR, "Could not find Requiem.esp", @"
             We couldn't find Requiem.esp. Please check that you're running the Reqtificator in the 
             **Skyrim/Data** folder where Mod Organizer or Vortex unpacked Requiem.");
+
+        internal static readonly ReqtificatorOutcome MissingRequiemConfig = new ReqtificatorOutcomeBase(
+            PatchStatus.ERROR, "Could not find Requiem's configuration", @"
+            We couldn't find any configuration for Requiem; even Requiem's own. Please check that you have
+            unpacked the download correctly. The file we are looking for should be in your **Skyrim/Data**
+            folder, where Mod Organizer or Vortex unpacked Requiem, at:
+
+            **Data/Reqtificator/Config/Requiem/Reqtificator.conf**");
     }
 }
