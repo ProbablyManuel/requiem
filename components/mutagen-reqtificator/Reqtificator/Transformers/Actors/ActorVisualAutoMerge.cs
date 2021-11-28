@@ -14,16 +14,18 @@ namespace Reqtificator.Transformers.Actors
 {
     internal class ActorVisualAutoMerge : TransformerV2<Npc, INpcGetter>
     {
+        private readonly bool _featureActive;
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _linkCache;
         private readonly ILoadOrder<IModListing<ISkyrimModGetter>> _loadOrder;
         private readonly ModKey _requiem = new ModKey("Requiem", ModType.Plugin);
         private readonly ImmutableDictionary<ModKey, ImmutableList<ModKey>> _masters;
 
         public ActorVisualAutoMerge(ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache,
-            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, bool featureActive)
         {
             _linkCache = linkCache;
             _loadOrder = loadOrder;
+            _featureActive = featureActive;
             _masters = loadOrder.PriorityOrder
                 .Select(x =>
                     KeyValuePair.Create(x.ModKey, x.Mod!.MasterReferences.Select(y => y.Master).ToImmutableList()))
@@ -65,6 +67,7 @@ namespace Reqtificator.Transformers.Actors
         {
             if (input is not UnChanged<Npc, INpcGetter>)
                 throw new ArgumentException("input should not be transformed yet");
+            if (!_featureActive) return input;
 
             var lastOverride = _linkCache.ResolveContext<Npc, INpcGetter>(input.Record().FormKey);
             var otherVersions = _linkCache.ResolveAllContexts<Npc, INpcGetter>(input.Record().FormKey).Skip(1)

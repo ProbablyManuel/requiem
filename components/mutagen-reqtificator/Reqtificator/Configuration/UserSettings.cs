@@ -11,6 +11,7 @@ namespace Reqtificator.Configuration
         bool MergeLeveledLists,
         bool MergeLeveledCharacters,
         bool OpenEncounterZones,
+        bool ActorVisualAutoMerge,
         ImmutableList<ModKey> NpcVisualTemplateMods,
         ImmutableList<ModKey> RaceVisualTemplateMods)
     {
@@ -18,6 +19,7 @@ namespace Reqtificator.Configuration
         private const string KeyMergeLeveledLists = "mergeLeveledLists";
         private const string KeyMergeLeveledCharacters = "mergeLeveledCharacters";
         private const string KeyOpenEncounterZones = "openEncounterZones";
+        private const string KeyActorVisualAutoMerge = "actorVisualAutoMerge";
         private const string KeyNpcVisualTemplateMods = "npcVisualTemplateMods";
         private const string KeyRaceVisualTemplateMods = "raceVisualTemplateMods";
 
@@ -36,6 +38,7 @@ namespace Reqtificator.Configuration
                 MergeLeveledLists: config.GetBoolean(KeyMergeLeveledLists),
                 MergeLeveledCharacters: config.GetBoolean(KeyMergeLeveledCharacters),
                 OpenEncounterZones: config.GetBoolean(KeyOpenEncounterZones),
+                ActorVisualAutoMerge: config.GetBoolean(KeyActorVisualAutoMerge),
                 NpcVisualTemplateMods: config.GetStringList(KeyNpcVisualTemplateMods)
                     .Select(it => ModKey.FromNameAndExtension(it)).ToImmutableList(),
                 RaceVisualTemplateMods: config.GetStringList(KeyRaceVisualTemplateMods)
@@ -47,12 +50,13 @@ namespace Reqtificator.Configuration
         {
             string FmtArray(string acc, string elem) => acc.Length > 0 ? $"{acc}, \"{elem}\"" : $"\"{elem}\"";
             var configToWrite = $@"{{
-    ""verboseLogging"": {VerboseLogging.ToString().ToLowerInvariant()},
-    ""mergeLeveledLists"": {MergeLeveledLists.ToString().ToLowerInvariant()},
-    ""mergeLeveledCharacters"": {MergeLeveledCharacters.ToString().ToLowerInvariant()},
-    ""openEncounterZones"": {OpenEncounterZones.ToString().ToLowerInvariant()},
-    ""npcVisualTemplateMods"": [{NpcVisualTemplateMods.Select(it => it.FileName.String).Aggregate("", FmtArray)}],
-    ""raceVisualTemplateMods"": [{RaceVisualTemplateMods.Select(it => it.FileName.String).Aggregate("", FmtArray)}]
+    ""{KeyVerboseLogging}"": {VerboseLogging.ToString().ToLowerInvariant()},
+    ""{KeyMergeLeveledLists}"": {MergeLeveledLists.ToString().ToLowerInvariant()},
+    ""{KeyMergeLeveledCharacters}"": {MergeLeveledCharacters.ToString().ToLowerInvariant()},
+    ""{KeyMergeLeveledLists}"": {OpenEncounterZones.ToString().ToLowerInvariant()},
+    ""{KeyActorVisualAutoMerge}"": {ActorVisualAutoMerge.ToString().ToLowerInvariant()},
+    ""{KeyNpcVisualTemplateMods}"": [{NpcVisualTemplateMods.Select(it => it.FileName.String).Aggregate("", FmtArray)}],
+    ""{KeyRaceVisualTemplateMods}"": [{RaceVisualTemplateMods.Select(it => it.FileName.String).Aggregate("", FmtArray)}]
 }}";
             File.WriteAllText(targetFile, configToWrite);
         }
