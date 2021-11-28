@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Linq;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Cache;
+using Mutagen.Bethesda.Plugins.Order;
+using Mutagen.Bethesda.Plugins.Records;
+using Mutagen.Bethesda.Skyrim;
+using Noggog;
+using Serilog;
+
+namespace Reqtificator.Transformers.Actors
+{
+    internal class ActorVisualAutoMerge : TransformerV2<Npc, INpcGetter>
+    {
+        private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _linkCache;
+        private readonly ILoadOrder<IModListing<ISkyrimModGetter>> _loadOrder;
+        private readonly ModKey _requiem = new ModKey("Requiem", ModType.Plugin);
+        private readonly ImmutableDictionary<ModKey, ImmutableList<ModKey>> _masters;
+
+        public ActorVisualAutoMerge(ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache,
+            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+        {
+            _linkCache = linkCache;
+            _loadOrder = loadOrder;
+            _masters = loadOrder.PriorityOrder
+                .Select(x =>
+                    KeyValuePair.Create(x.ModKey, x.Mod!.MasterReferences.Select(y => y.Master).ToImmutableList()))
+                .ToImmutableDictionary();
+        }
+
+        private ISkyrimModGetter GetMod(ModKey modKey)
+        {
+            return _loadOrder.PriorityOrder.First(x => x.ModKey == modKey).Mod!;
+        }
+
+        private bool IsFromRequiem(ModKey modKey)
+        {
+            return modKey == _requiem || _masters[modKey].Contains(_requiem);
+        }
+
+        private bool IsVisualTemplate(IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter> thisVersion,
+            ImmutableList<IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>> otherVersions)
+        {
+            var maybePreviousVersion =
+                otherVersions.FirstOrDefault(x => _masters[thisVersion.ModKey].Contains(x.ModKey));
+
+            if (maybePreviousVersion == null) return false;
+
+            return !(maybePreviousVersion.Record.Equals(thisVersion.Record, ActorCopyTools.InheritTraitsMask()) &&
+                     maybePreviousVersion.Record.Equals(thisVersion.Record, ActorCopyTools.InheritAttackDataMask()));
+        }
+
+        private static TransformationResult<Npc, INpcGetter> MergeTemplates(INpcGetter dataTemplate,
+            INpcGetter visualTemplate)
+        {
+            var mutable = dataTemplate.DeepCopy();
+            ActorCopyTools.CopyDataForTemplateFlag(mutable, visualTemplate, NpcConfiguration.TemplateFlag.Traits);
+            ActorCopyTools.CopyDataForTemplateFlag(mutable, visualTemplate, NpcConfiguration.TemplateFlag.AttackData);
+            return new Modified<Npc, INpcGetter>(mutable);
+        }
+
+        public override TransformationResult<Npc, INpcGetter> Process(TransformationResult<Npc, INpcGetter> input)
+        {
+            if (input is not UnChanged<Npc, INpcGetter>)
+                throw new ArgumentException("input should not be transformed yet");
+
+            var lastOverride = _linkCache.ResolveContext<Npc, INpcGetter>(input.Record().FormKey);
+            var otherVersions = _linkCache.ResolveAllContexts<Npc, INpcGetter>(input.Record().FormKey).Skip(1)
+                .ToImmutableList();
+
+            if (IsFromRequiem(lastOverride.ModKey))
+            {
+                var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
+                if (visualTemplate != null)
+                {
+                    Log.Information(
+                        $"(A) found visual automerge match: {visualTemplate.ModKey} (visual) & {lastOverride.ModKey} (data)");
+                    return MergeTemplates(lastOverride.Record, visualTemplate.Record);
+                }
+            }
+            else if (IsVisualTemplate(lastOverride, otherVersions))
+            {
+                var dataTemplate = otherVersions.FirstOrDefault(x => IsFromRequiem(x.ModKey));
+                if (dataTemplate != null)
+                {
+                    Log.Information(
+                        $"(B) found visual automerge match: {lastOverride.ModKey} (visual) & {dataTemplate.ModKey} (data)");
+                    return MergeTemplates(dataTemplate.Record, lastOverride.Record);
+                }
+            }
+
+            return input;
+        }
+    }
+}

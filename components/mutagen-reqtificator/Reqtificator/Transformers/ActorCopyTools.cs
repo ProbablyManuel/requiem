@@ -12,30 +12,30 @@ namespace Reqtificator.Transformers
 {
     internal static class ActorCopyTools
     {
-        private static Npc.TranslationMask _inheritAiDataMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritAiDataMask() => new Npc.TranslationMask(defaultOn: false)
         {
             AIData = true,
             CombatStyle = true,
             GiftFilter = true
         };
 
-        private static Npc.TranslationMask _inheritAiPackagesMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritAiPackagesMask() => new Npc.TranslationMask(defaultOn: false)
         {
             Packages = true
         };
 
-        private static Npc.TranslationMask _inheritAttackDataMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritAttackDataMask() => new Npc.TranslationMask(defaultOn: false)
         {
             AttackRace = true,
             Attacks = true
         };
 
-        private static Npc.TranslationMask _inheritBaseDataMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritBaseDataMask() => new Npc.TranslationMask(defaultOn: false)
         {
             Name = true,
         };
 
-        private static Npc.TranslationMask _inheritDefaultPackageListMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritDefaultPackageListMask() => new Npc.TranslationMask(defaultOn: false)
         {
             DefaultPackageList = true,
             SpectatorOverridePackageList = true,
@@ -44,13 +44,13 @@ namespace Reqtificator.Transformers
             CombatOverridePackageList = true
         };
 
-        private static Npc.TranslationMask _inheritFactionsMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritFactionsMask() => new Npc.TranslationMask(defaultOn: false)
         {
             Factions = true,
             CrimeFaction = true
         };
 
-        private static Npc.TranslationMask _inheritInventoryMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritInventoryMask() => new Npc.TranslationMask(defaultOn: false)
         {
             DefaultOutfit = true,
             SleepingOutfit = true,
@@ -61,23 +61,23 @@ namespace Reqtificator.Transformers
             // }
         };
 
-        private static Npc.TranslationMask _inheritKeywordsMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritKeywordsMask() => new Npc.TranslationMask(defaultOn: false)
         {
             Keywords = true
         };
 
-        private static Npc.TranslationMask _inheritScriptsMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritScriptsMask() => new Npc.TranslationMask(defaultOn: false)
         {
             VirtualMachineAdapter = true
         };
 
-        private static Npc.TranslationMask _inheritSpellListMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritSpellListMask() => new Npc.TranslationMask(defaultOn: false)
         {
             ActorEffect = true,
             Perks = true
         };
 
-        private static Npc.TranslationMask _inheritStatsMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritStatsMask() => new Npc.TranslationMask(defaultOn: false)
         {
             Configuration = new NpcConfiguration.TranslationMask(false)
             {
@@ -101,7 +101,7 @@ namespace Reqtificator.Transformers
             Class = true
         };
 
-        private static Npc.TranslationMask _inheritTraitsMask = new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritTraitsMask() => new Npc.TranslationMask(defaultOn: false)
         {
             //traits tab
             Race = true,
@@ -115,10 +115,10 @@ namespace Reqtificator.Transformers
             // {
             //     FarAwayModelDistance = true
             // },
-            Configuration = new NpcConfiguration.TranslationMask(defaultOn: false)
-            {
-                DispositionBase = true
-            },
+            // Configuration = new NpcConfiguration.TranslationMask(defaultOn: false)
+            // {
+            //     DispositionBase = true
+            // },
             //sounds tab
             SoundLevel = true,
             Sound = true,
@@ -141,7 +141,7 @@ namespace Reqtificator.Transformers
         // IsGhost = 536870912, // 0x20000000
         // Invulnerable = 2147483648, // 0x80000000
 
-        private static readonly ImmutableList<NpcConfiguration.Flag> InheritBaseDataFlags = ImmutableList<NpcConfiguration.Flag>
+        public static readonly ImmutableList<NpcConfiguration.Flag> InheritBaseDataFlags = ImmutableList<NpcConfiguration.Flag>
             .Empty
             .Add(NpcConfiguration.Flag.Essential)
             .Add(NpcConfiguration.Flag.Protected)
@@ -150,12 +150,12 @@ namespace Reqtificator.Transformers
             .Add(NpcConfiguration.Flag.SimpleActor)
             .Add(NpcConfiguration.Flag.DoesntAffectStealthMeter);
 
-        private static readonly ImmutableList<NpcConfiguration.Flag> InheritStatsFlags = ImmutableList<NpcConfiguration.Flag>
+        public static readonly ImmutableList<NpcConfiguration.Flag> InheritStatsFlags = ImmutableList<NpcConfiguration.Flag>
             .Empty
             .Add(NpcConfiguration.Flag.AutoCalcStats)
             .Add(NpcConfiguration.Flag.BleedoutOverride);
 
-        private static readonly ImmutableList<NpcConfiguration.Flag> InheritTraitsFlags = ImmutableList<NpcConfiguration.Flag>
+        public static readonly ImmutableList<NpcConfiguration.Flag> InheritTraitsFlags = ImmutableList<NpcConfiguration.Flag>
             .Empty
             .Add(NpcConfiguration.Flag.Female)
             .Add(NpcConfiguration.Flag.OppositeGenderAnims);
@@ -176,19 +176,19 @@ namespace Reqtificator.Transformers
 
             var mask = flag switch
             {
-                NpcConfiguration.TemplateFlag.AIData => _inheritAiDataMask,
-                NpcConfiguration.TemplateFlag.AIPackages => _inheritAiPackagesMask,
-                NpcConfiguration.TemplateFlag.AttackData => _inheritAttackDataMask,
-                NpcConfiguration.TemplateFlag.BaseData => _inheritBaseDataMask,
-                NpcConfiguration.TemplateFlag.DefPackList => _inheritDefaultPackageListMask,
-                NpcConfiguration.TemplateFlag.Factions => _inheritFactionsMask,
-                NpcConfiguration.TemplateFlag.Inventory => _inheritInventoryMask,
-                NpcConfiguration.TemplateFlag.Keywords => _inheritKeywordsMask,
+                NpcConfiguration.TemplateFlag.AIData => InheritAiDataMask(),
+                NpcConfiguration.TemplateFlag.AIPackages => InheritAiPackagesMask(),
+                NpcConfiguration.TemplateFlag.AttackData => InheritAttackDataMask(),
+                NpcConfiguration.TemplateFlag.BaseData => InheritBaseDataMask(),
+                NpcConfiguration.TemplateFlag.DefPackList => InheritDefaultPackageListMask(),
+                NpcConfiguration.TemplateFlag.Factions => InheritFactionsMask(),
+                NpcConfiguration.TemplateFlag.Inventory => InheritInventoryMask(),
+                NpcConfiguration.TemplateFlag.Keywords => InheritKeywordsMask(),
                 // NpcConfiguration.TemplateFlag.ModelAnimation => expr,
-                NpcConfiguration.TemplateFlag.Script => _inheritScriptsMask,
-                NpcConfiguration.TemplateFlag.SpellList => _inheritSpellListMask,
-                NpcConfiguration.TemplateFlag.Stats => _inheritStatsMask,
-                NpcConfiguration.TemplateFlag.Traits => _inheritTraitsMask,
+                NpcConfiguration.TemplateFlag.Script => InheritScriptsMask(),
+                NpcConfiguration.TemplateFlag.SpellList => InheritSpellListMask(),
+                NpcConfiguration.TemplateFlag.Stats => InheritStatsMask(),
+                NpcConfiguration.TemplateFlag.Traits => InheritTraitsMask(),
                 _ => throw new ArgumentOutOfRangeException(nameof(flag), flag, null)
             };
             target.DeepCopyIn(source, mask);
