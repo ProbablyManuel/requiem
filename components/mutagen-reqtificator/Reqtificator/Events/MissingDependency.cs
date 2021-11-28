@@ -1,26 +1,40 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Reqtificator.Utils;
 
 namespace Reqtificator.Events
 {
     internal class MissingBugfixDependency : ReqtificatorOutcome
     {
-        public MissingBugfixDependency(string name, string downloadLocation, Uri downloadUrl)
+        private readonly string nl = Environment.NewLine;
+
+        public MissingBugfixDependency(List<BugfixDependency> dependencies)
         {
             Status = PatchStatus.WARNING;
             Title = "Missing Requirements!";
+
+            
+            var messageString = string.Join(nl + nl,
+                dependencies.Select(d =>
+                $"**{d.Name}** (download at [{d.DownloadLocation}]({d.DownloadUrl}))"
+            ));
+
             Message = Formatter.FormatMultiline(@"
-                You are missing one of the required dependencies for Requiem!
+                You are missing required dependencies for Requiem!
+                
+                These are important fixes for Skyrim bugs that significantly
+                affect Requiem gameplay. You can still choose to run the 
+                Reqtificator if you want.
 
-                Requiem could not find '{0}' in your setup.
-                This is highly recommended for Requiem to work correctly. However,
-                you can still choose to run the Reqtificator if you want.
+                Missing dependencies are:
 
-                You can download '{0}' at [{1}]({2})", name, downloadLocation, downloadUrl.ToString());
+                " + messageString);
         }
 
         public override PatchStatus Status { get; }
         public override string Title { get; }
         public override string Message { get; }
     }
+    public record BugfixDependency(string Name, string ExpectedLocation, string DownloadLocation, Uri DownloadUrl);
 }
