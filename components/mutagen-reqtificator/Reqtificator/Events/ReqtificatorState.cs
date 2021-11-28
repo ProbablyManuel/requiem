@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Mutagen.Bethesda.Plugins;
 using Reqtificator.Configuration;
 
@@ -36,7 +35,7 @@ namespace Reqtificator.Events
     internal class StoppedState : ReqtificatorState
     {
         public StoppedState(ReqtificatorOutcome outcome)
-            : base(outcome == null ? throw new ArgumentNullException(nameof(outcome)) : outcome.Title, false)
+            : base(outcome.Title, false)
         {
             Outcome = outcome;
         }
