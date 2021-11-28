@@ -57,7 +57,7 @@ namespace Reqtificator.Gui
 
         private UserSettings GetUpdatedUserSettings()
         {
-            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones,
+            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones, true,
                                 Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods
                                     .Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
         }
