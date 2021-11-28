@@ -76,10 +76,9 @@ namespace Reqtificator
 
         private void ValidateRequiemFound()
         {
-            //TODO: refactor this into a nice verification function & better error handling
             if (_context.ActiveMods.All(x => x.ModKey != RequiemModKey))
             {
-                Log.Error("oops, where's your Requiem.esp?");
+                Log.Error("Could not find Requiem.esp in active mods");
                 _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.MissingRequiem));
             }
         }
