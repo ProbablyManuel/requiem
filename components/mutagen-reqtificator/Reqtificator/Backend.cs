@@ -53,7 +53,7 @@ namespace Reqtificator
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
 
-            Log.Information($"working directory: {System.IO.Directory.GetCurrentDirectory()}");
+            Log.Information($"working directory: {Directory.GetCurrentDirectory()}");
             Log.Information($"patcher version: {_version}");
             Log.Information($"build git branch: {buildInfo.GetString("gitBranch")}");
             Log.Information($"build git revision: {buildInfo.GetString("gitRevision")}");
@@ -62,29 +62,41 @@ namespace Reqtificator
 
             var userConfig = LoadAndVerifyUserSettings(_context);
 
-            _events.PublishReadyToPatch(userConfig, _context.ActiveMods.Select(x => x.ModKey));
+            var readyToPatchState = ReqtificatorState.ReadyToPatch(userConfig, _context.ActiveMods.Select(x => x.ModKey));
+            _events.PublishState(readyToPatchState);
             Log.Information("Ready to patch: userConfig detected\r\n{userConfig}", userConfig);
 
-            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(_context.DataFolder, _context.ActiveMods, _context.Release);
+            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder = LoadAndVerifyLoadOrder(readyToPatchState);
 
+            _events.PatchRequested += (_, updatedSettings) => { HandlePatchRequest(updatedSettings, loadOrder); };
+        }
+
+        private void HandlePatchRequest(UserSettings updatedSettings, ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+        {
+            var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
+            _logs.LogLevel.MinimumLevel = logLevel;
+            updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
+            var generatedPatch = GeneratePatch(loadOrder, updatedSettings, PatchModKey);
+            Log.Information("done patching, now exporting to disk");
+
+            _events.PublishState(ReqtificatorState.Patching(90, "Saving Patch"));
+            WritePatchToDisk(generatedPatch, _context.DataFolder);
+            Log.Information("done exporting");
+
+            _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
+        }
+
+        private ILoadOrder<IModListing<ISkyrimModGetter>> LoadAndVerifyLoadOrder(ReqtificatorState stateToReturnTo)
+        {
+            var loadOrder = LoadOrder.Import<ISkyrimModGetter>(_context.DataFolder, _context.ActiveMods, _context.Release);
             var checkResult = SetupValidation.VerifySetup(loadOrder, _version);
             if (checkResult is not null)
             {
-                _events.PublishPatchStatus(checkResult);
+                _events.PublishState(ReqtificatorState.Stopped(checkResult));
                 if (checkResult.Status != PatchStatus.WARNING && checkResult is ReqtificatorFailure failure) { throw failure.Exception; }
+                _events.PublishState(stateToReturnTo);
             }
-
-            _events.PatchRequested += (_, updatedSettings) =>
-            {
-                var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
-                _logs.LogLevel.MinimumLevel = logLevel;
-                updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
-                var generatedPatch = GeneratePatch(loadOrder, updatedSettings, PatchModKey);
-                Log.Information("done patching, now exporting to disk");
-                WritePatchToDisk(generatedPatch, _context.DataFolder);
-                Log.Information("done exporting");
-                _events.PublishPatchStatus(ReqtificatorOutcome.Success);
-            };
+            return loadOrder;
         }
 
         public UserSettings LoadAndVerifyUserSettings(GameContext context)
@@ -96,7 +108,7 @@ namespace Reqtificator
             if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
             {
                 Log.Error("oops, where's your Requiem.esp?");
-                _events.PublishPatchStatus(ReqtificatorOutcome.MissingRequiem);
+                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.MissingRequiem));
             }
 
             return userConfig;
@@ -110,7 +122,7 @@ namespace Reqtificator
 
                 Log.Information("start patching");
 
-                return _executor.GeneratePatch(loadOrder, userConfig, patchModKey) switch
+                return _executor.GeneratePatch(loadOrder, userConfig, patchModKey, _events) switch
                 {
                     Success<SkyrimMod> s => s.Value,
                     Failed<SkyrimMod> f => throw f.Error,
@@ -120,7 +132,7 @@ namespace Reqtificator
             catch (Exception ex)
             {
                 Log.Error(ex, "things did not go according to plan");
-                _events.PublishPatchStatus(ReqtificatorFailure.CausedBy(ex));
+                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorFailure.CausedBy(ex)));
                 throw;
             }
         }
