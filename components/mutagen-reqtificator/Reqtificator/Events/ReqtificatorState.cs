@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Mutagen.Bethesda.Plugins;
 using Reqtificator.Configuration;
 
 namespace Reqtificator.Events
 {
-    public abstract class ReqtificatorState
+    internal abstract class ReqtificatorState
     {
         protected ReqtificatorState(string readable, bool isPatching, double percentageProgress = 0.0)
         {
@@ -33,10 +32,10 @@ namespace Reqtificator.Events
         public bool IsPatching { get; private set; }
         public double PercentageProgress { get; private set; }
     }
-    public class StoppedState : ReqtificatorState
+    internal class StoppedState : ReqtificatorState
     {
         public StoppedState(ReqtificatorOutcome outcome)
-            : base(outcome == null ? throw new ArgumentNullException(nameof(outcome)) : outcome.Title, false)
+            : base(outcome.Title, false)
         {
             Outcome = outcome;
         }
@@ -44,7 +43,7 @@ namespace Reqtificator.Events
         public ReqtificatorOutcome Outcome { get; private set; }
     }
 
-    public class ReadyToPatchState : ReqtificatorState
+    internal class ReadyToPatchState : ReqtificatorState
     {
         public ReadyToPatchState(UserSettings userSettings, IEnumerable<ModKey> activeMods) : base("Ready to Patch...", false)
         {
@@ -56,7 +55,7 @@ namespace Reqtificator.Events
         public IEnumerable<ModKey> ActiveMods { get; private set; }
     }
 
-    public class PatchingState : ReqtificatorState
+    internal class PatchingState : ReqtificatorState
     {
         public PatchingState(double percentageProgress, string progressMessage) : base("Patching... " + progressMessage, true, percentageProgress) { }
     }

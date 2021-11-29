@@ -7,6 +7,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
+using Reqtificator.Events;
 using Serilog;
 
 namespace Reqtificator.Configuration
@@ -48,7 +49,8 @@ namespace Reqtificator.Configuration
         }
 
         public static ReqtificatorConfig LoadFromConfigs(string baseFolder,
-            ImmutableList<IModListingGetter> activeMods)
+            ImmutableList<IModListingGetter> activeMods,
+            InternalEvents _events)
         {
             var rawConfigs = activeMods
                 .Select(m => Path.Combine(baseFolder, m.ModKey.FileName.NameWithoutExtension, "Reqtificator.conf"))
@@ -57,6 +59,8 @@ namespace Reqtificator.Configuration
                 .Tap(f => Log.Information($"loading Reqtificator config (priority {f.Index + 1}) from '{f.Item}'"))
                 .Select(f => HoconConfigurationFactory.FromFile(f.Item))
                 .ToImmutableList();
+
+            if (rawConfigs.Count == 0) { _events.PublishState(ReqtificatorState.Stopped(ReqtificatorFailure.MissingRequiemConfig)); }
 
             return ParseConfig(rawConfigs);
         }

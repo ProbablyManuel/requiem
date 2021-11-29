@@ -14,10 +14,10 @@ namespace Reqtificator.Events
             Status = PatchStatus.WARNING;
             Title = "Missing Requirements!";
 
-            
+
             var messageString = string.Join(nl + nl,
                 dependencies.Select(d =>
-                $"**{d.Name}** (download at [{d.DownloadLocation}]({d.DownloadUrl}))"
+                $" - **{d.Name}** (download at [{d.DownloadLocation}]({d.DownloadUrl}))"
             ));
 
             Message = Formatter.FormatMultiline(@"
