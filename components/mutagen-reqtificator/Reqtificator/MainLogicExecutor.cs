@@ -232,7 +232,6 @@ namespace Reqtificator
                 new ArmorTypeKeyword()
                     .AndThen(new ArmorRatingScaling(_reqtificatorConfig.ArmorSettings))
                     .AndThen(new ArmorKeywordsFromRules(rules))
-                    .AndThen(new ProgressReporter<Armor, IArmorGetter>(_events))
                     .ProcessCollection(armors)
             );
         }
@@ -251,7 +250,6 @@ namespace Reqtificator
                     .AndThen(new WeaponNpcAmmunitionUsage())
                     .AndThen(new WeaponRangedSpeedScaling())
                     .AndThen(new WeaponKeywordsFromRules(rules))
-                    .AndThen(new ProgressReporter<Weapon, IWeaponGetter>(_events))
                     .ProcessCollection(weapons));
         }
 

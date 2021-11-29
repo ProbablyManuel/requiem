@@ -46,9 +46,12 @@ namespace Reqtificator
             WarmupSkyrim.Init();
 
             _context = GameContext.GetRequiemContext(Release, PatchModKey);
+            ValidateRequiemFound();
+
             //TODO: update base folder for configurations if needed
             var configFolder = Path.Combine(_context.DataFolder, "Reqtificator", "Config");
-            var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods);
+
+            var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods, _events);
 
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
@@ -69,6 +72,15 @@ namespace Reqtificator
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder = LoadAndVerifyLoadOrder(readyToPatchState);
 
             _events.PatchRequested += (_, updatedSettings) => { HandlePatchRequest(updatedSettings, loadOrder); };
+        }
+
+        private void ValidateRequiemFound()
+        {
+            if (_context.ActiveMods.All(x => x.ModKey != RequiemModKey))
+            {
+                Log.Error("Could not find Requiem.esp in active mods");
+                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.MissingRequiem));
+            }
         }
 
         private void HandlePatchRequest(UserSettings updatedSettings, ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
@@ -99,17 +111,10 @@ namespace Reqtificator
             return loadOrder;
         }
 
-        public UserSettings LoadAndVerifyUserSettings(GameContext context)
+        public static UserSettings LoadAndVerifyUserSettings(GameContext context)
         {
             var userConfigFile = Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json");
             var userConfig = UserSettings.LoadUserSettings(userConfigFile);
-
-            //TODO: refactor this into a nice verification function & better error handling
-            if (context.ActiveMods.All(x => x.ModKey != RequiemModKey))
-            {
-                Log.Error("oops, where's your Requiem.esp?");
-                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.MissingRequiem));
-            }
 
             return userConfig;
         }
