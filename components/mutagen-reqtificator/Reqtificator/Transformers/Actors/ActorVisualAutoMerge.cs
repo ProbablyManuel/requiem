@@ -17,7 +17,6 @@ namespace Reqtificator.Transformers.Actors
         private readonly bool _featureActive;
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _linkCache;
         private readonly ILoadOrder<IModListing<ISkyrimModGetter>> _loadOrder;
-        private readonly ModKey _requiem = new ModKey("Requiem", ModType.Plugin);
         private readonly ImmutableDictionary<ModKey, ImmutableList<ModKey>> _masters;
 
         public ActorVisualAutoMerge(ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache,
@@ -30,16 +29,6 @@ namespace Reqtificator.Transformers.Actors
                 .Select(x =>
                     KeyValuePair.Create(x.ModKey, x.Mod!.MasterReferences.Select(y => y.Master).ToImmutableList()))
                 .ToImmutableDictionary();
-        }
-
-        private ISkyrimModGetter GetMod(ModKey modKey)
-        {
-            return _loadOrder.PriorityOrder.First(x => x.ModKey == modKey).Mod!;
-        }
-
-        private bool IsFromRequiem(ModKey modKey)
-        {
-            return modKey == _requiem || _masters[modKey].Contains(_requiem);
         }
 
         private bool IsVisualTemplate(IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter> thisVersion,
@@ -73,25 +62,12 @@ namespace Reqtificator.Transformers.Actors
             var otherVersions = _linkCache.ResolveAllContexts<Npc, INpcGetter>(input.Record().FormKey).Skip(1)
                 .ToImmutableList();
 
-            if (IsFromRequiem(lastOverride.ModKey))
+            var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
+            if (visualTemplate != null)
             {
-                var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
-                if (visualTemplate != null)
-                {
-                    Log.Information(
-                        $"(A) found visual automerge match: {visualTemplate.ModKey} (visual) & {lastOverride.ModKey} (data)");
-                    return MergeTemplates(lastOverride.Record, visualTemplate.Record);
-                }
-            }
-            else if (IsVisualTemplate(lastOverride, otherVersions))
-            {
-                var dataTemplate = otherVersions.FirstOrDefault(x => IsFromRequiem(x.ModKey));
-                if (dataTemplate != null)
-                {
-                    Log.Information(
-                        $"(B) found visual automerge match: {lastOverride.ModKey} (visual) & {dataTemplate.ModKey} (data)");
-                    return MergeTemplates(dataTemplate.Record, lastOverride.Record);
-                }
+                Log.Information(
+                    $"applying visual automerge: {visualTemplate.ModKey} (visual) & {lastOverride.ModKey} (data)");
+                return MergeTemplates(lastOverride.Record, visualTemplate.Record);
             }
 
             return input;
