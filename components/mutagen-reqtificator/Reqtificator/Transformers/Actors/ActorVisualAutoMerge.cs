@@ -62,6 +62,8 @@ namespace Reqtificator.Transformers.Actors
             var otherVersions = _linkCache.ResolveAllContexts<Npc, INpcGetter>(input.Record().FormKey).Skip(1)
                 .ToImmutableList();
 
+            if (IsVisualTemplate(lastOverride, otherVersions)) return input;
+
             var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
             if (visualTemplate != null)
             {
