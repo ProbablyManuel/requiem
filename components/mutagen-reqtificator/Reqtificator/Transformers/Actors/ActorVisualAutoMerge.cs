@@ -18,6 +18,8 @@ namespace Reqtificator.Transformers.Actors
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _linkCache;
         private readonly ILoadOrder<IModListing<ISkyrimModGetter>> _loadOrder;
         private readonly ImmutableDictionary<ModKey, ImmutableList<ModKey>> _masters;
+        private readonly Npc.TranslationMask _compareTraitsMask;
+        private readonly Npc.TranslationMask _compareAttackDataMask;
 
         public ActorVisualAutoMerge(ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache,
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, bool featureActive)
@@ -29,6 +31,9 @@ namespace Reqtificator.Transformers.Actors
                 .Select(x =>
                     KeyValuePair.Create(x.ModKey, x.Mod!.MasterReferences.Select(y => y.Master).ToImmutableList()))
                 .ToImmutableDictionary();
+            _compareTraitsMask = ActorCopyTools.InheritTraitsMask();
+            _compareTraitsMask.TintLayers = false;
+            _compareAttackDataMask = ActorCopyTools.InheritAttackDataMask();
         }
 
         private bool IsVisualTemplate(IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter> thisVersion,
@@ -39,8 +44,8 @@ namespace Reqtificator.Transformers.Actors
 
             if (maybePreviousVersion == null) return false;
 
-            return !(maybePreviousVersion.Record.Equals(thisVersion.Record, ActorCopyTools.InheritTraitsMask()) &&
-                     maybePreviousVersion.Record.Equals(thisVersion.Record, ActorCopyTools.InheritAttackDataMask()));
+            return !(maybePreviousVersion.Record.Equals(thisVersion.Record, _compareTraitsMask) &&
+                     maybePreviousVersion.Record.Equals(thisVersion.Record, _compareAttackDataMask));
         }
 
         private static TransformationResult<Npc, INpcGetter> MergeTemplates(INpcGetter dataTemplate,
@@ -65,7 +70,8 @@ namespace Reqtificator.Transformers.Actors
             if (IsVisualTemplate(lastOverride, otherVersions)) return input;
 
             var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
-            if (visualTemplate != null)
+            if (visualTemplate != null && !(lastOverride.Record.Equals(visualTemplate.Record, ActorCopyTools.InheritTraitsMask()) &&
+                                            lastOverride.Record.Equals(visualTemplate.Record, ActorCopyTools.InheritAttackDataMask())))
             {
                 Log.Information(
                     $"applying visual automerge: {visualTemplate.ModKey} (visual) & {lastOverride.ModKey} (data)");
