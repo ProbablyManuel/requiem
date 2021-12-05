@@ -32,7 +32,8 @@ namespace Reqtificator.Transformers.Actors
                     KeyValuePair.Create(x.ModKey, x.Mod!.MasterReferences.Select(y => y.Master).ToImmutableList()))
                 .ToImmutableDictionary();
             _compareTraitsMask = ActorCopyTools.InheritTraitsMask();
-            _compareTraitsMask.TintLayers = false;
+            _compareTraitsMask.TintLayers = false; // random tint layer changes in Requiem aren't visual templates
+            _compareTraitsMask.HeadParts = false; // custom comparison needed, as order of elements is irrelevant
             _compareAttackDataMask = ActorCopyTools.InheritAttackDataMask();
         }
 
@@ -44,7 +45,11 @@ namespace Reqtificator.Transformers.Actors
 
             if (maybePreviousVersion == null) return false;
 
-            return !(maybePreviousVersion.Record.Equals(thisVersion.Record, _compareTraitsMask) &&
+            var commonHeadParts = maybePreviousVersion.Record.HeadParts.Intersect(thisVersion.Record.HeadParts);
+            var sameHeadParts = commonHeadParts.Count() == thisVersion.Record.HeadParts.Count &&
+                                thisVersion.Record.HeadParts.Count == maybePreviousVersion.Record.HeadParts.Count;
+
+            return !(sameHeadParts && maybePreviousVersion.Record.Equals(thisVersion.Record, _compareTraitsMask) &&
                      maybePreviousVersion.Record.Equals(thisVersion.Record, _compareAttackDataMask));
         }
 
@@ -70,8 +75,9 @@ namespace Reqtificator.Transformers.Actors
             if (IsVisualTemplate(lastOverride, otherVersions)) return input;
 
             var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
-            if (visualTemplate != null && !(lastOverride.Record.Equals(visualTemplate.Record, ActorCopyTools.InheritTraitsMask()) &&
-                                            lastOverride.Record.Equals(visualTemplate.Record, ActorCopyTools.InheritAttackDataMask())))
+            if (visualTemplate != null &&
+                !(lastOverride.Record.Equals(visualTemplate.Record, ActorCopyTools.InheritTraitsMask()) &&
+                  lastOverride.Record.Equals(visualTemplate.Record, ActorCopyTools.InheritAttackDataMask())))
             {
                 Log.Information(
                     $"applying visual automerge: {visualTemplate.ModKey} (visual) & {lastOverride.ModKey} (data)");
