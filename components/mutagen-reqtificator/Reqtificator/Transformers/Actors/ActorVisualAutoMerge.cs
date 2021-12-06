@@ -5,9 +5,7 @@ using System.Linq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Plugins.Order;
-using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Serilog;
 
 namespace Reqtificator.Transformers.Actors
@@ -34,6 +32,7 @@ namespace Reqtificator.Transformers.Actors
             _compareTraitsMask = ActorCopyTools.InheritTraitsMask();
             _compareTraitsMask.TintLayers = false; // random tint layer changes in Requiem aren't visual templates
             _compareTraitsMask.HeadParts = false; // custom comparison needed, as order of elements is irrelevant
+            _compareTraitsMask.FaceMorph = false; // can contain small numeric differences that are irrelevant
             _compareAttackDataMask = ActorCopyTools.InheritAttackDataMask();
         }
 
@@ -45,12 +44,51 @@ namespace Reqtificator.Transformers.Actors
 
             if (maybePreviousVersion == null) return false;
 
-            var commonHeadParts = maybePreviousVersion.Record.HeadParts.Intersect(thisVersion.Record.HeadParts);
-            var sameHeadParts = commonHeadParts.Count() == thisVersion.Record.HeadParts.Count &&
-                                thisVersion.Record.HeadParts.Count == maybePreviousVersion.Record.HeadParts.Count;
+            return !EqualsVisualData(thisVersion.Record, maybePreviousVersion.Record);
+        }
 
-            return !(sameHeadParts && maybePreviousVersion.Record.Equals(thisVersion.Record, _compareTraitsMask) &&
-                     maybePreviousVersion.Record.Equals(thisVersion.Record, _compareAttackDataMask));
+        private bool EqualsVisualData(INpcGetter reference, INpcGetter other)
+        {
+            return reference.Equals(other, _compareTraitsMask) &&
+                   reference.Equals(other, _compareAttackDataMask) &&
+                   CompareHeadParts(other, reference) &&
+                   CompareFaceMorphs(other, reference);
+        }
+
+        private static bool CompareHeadParts(INpcGetter reference, INpcGetter other)
+        {
+            var commonHeadParts = reference.HeadParts.Intersect(other.HeadParts);
+            return commonHeadParts.Count() == reference.HeadParts.Count &&
+                   reference.HeadParts.Count == other.HeadParts.Count;
+        }
+
+        private static bool CompareFaceMorphs(INpcGetter reference, INpcGetter other)
+        {
+            var refMorph = reference.FaceMorph;
+            var otherMorph = other.FaceMorph;
+            var tolerance = 0.0001f;
+
+            if (refMorph == null && otherMorph == null) return true;
+            if (refMorph == null || otherMorph == null) return false;
+
+            return Math.Abs(refMorph.BrowsForwardVsBack - otherMorph.BrowsForwardVsBack) < tolerance &&
+                   Math.Abs(refMorph.BrowsInVsOut - otherMorph.BrowsInVsOut) < tolerance &&
+                   Math.Abs(refMorph.BrowsUpVsDown - otherMorph.BrowsUpVsDown) < tolerance &&
+                   Math.Abs(refMorph.CheeksForwardVsBack - otherMorph.CheeksForwardVsBack) < tolerance &&
+                   Math.Abs(refMorph.CheeksUpVsDown - otherMorph.CheeksUpVsDown) < tolerance &&
+                   Math.Abs(refMorph.ChinNarrowVsWide - otherMorph.ChinNarrowVsWide) < tolerance &&
+                   Math.Abs(refMorph.ChinUnderbiteVsOverbite - otherMorph.ChinUnderbiteVsOverbite) < tolerance &&
+                   Math.Abs(refMorph.ChinUpVsDown - otherMorph.ChinUpVsDown) < tolerance &&
+                   Math.Abs(refMorph.EyesForwardVsBack - otherMorph.EyesForwardVsBack) < tolerance &&
+                   Math.Abs(refMorph.EyesInVsOut - otherMorph.EyesInVsOut) < tolerance &&
+                   Math.Abs(refMorph.EyesUpVsDown - otherMorph.EyesUpVsDown) < tolerance &&
+                   Math.Abs(refMorph.JawForwardVsBack - otherMorph.JawForwardVsBack) < tolerance &&
+                   Math.Abs(refMorph.JawNarrowVsWide - otherMorph.JawNarrowVsWide) < tolerance &&
+                   Math.Abs(refMorph.JawUpVsDown - otherMorph.JawUpVsDown) < tolerance &&
+                   Math.Abs(refMorph.LipsInVsOut - otherMorph.LipsInVsOut) < tolerance &&
+                   Math.Abs(refMorph.LipsUpVsDown - otherMorph.LipsUpVsDown) < tolerance &&
+                   Math.Abs(refMorph.NoseLongVsShort - otherMorph.NoseLongVsShort) < tolerance &&
+                   Math.Abs(refMorph.NoseUpVsDown - otherMorph.NoseUpVsDown) < tolerance;
         }
 
         private static TransformationResult<Npc, INpcGetter> MergeTemplates(INpcGetter dataTemplate,
@@ -75,9 +113,7 @@ namespace Reqtificator.Transformers.Actors
             if (IsVisualTemplate(lastOverride, otherVersions)) return input;
 
             var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
-            if (visualTemplate != null &&
-                !(lastOverride.Record.Equals(visualTemplate.Record, ActorCopyTools.InheritTraitsMask()) &&
-                  lastOverride.Record.Equals(visualTemplate.Record, ActorCopyTools.InheritAttackDataMask())))
+            if (visualTemplate != null && !EqualsVisualData(lastOverride.Record, visualTemplate.Record))
             {
                 Log.Information(
                     $"applying visual automerge: {visualTemplate.ModKey} (visual) & {lastOverride.ModKey} (data)");
