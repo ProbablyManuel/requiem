@@ -14,31 +14,30 @@ namespace Reqtificator.Transformers.Actors
     {
         private readonly bool _featureActive;
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _linkCache;
-        private readonly ILoadOrder<IModListing<ISkyrimModGetter>> _loadOrder;
         private readonly ImmutableDictionary<ModKey, ImmutableList<ModKey>> _masters;
         private readonly Npc.TranslationMask _compareTraitsMask;
-        private readonly Npc.TranslationMask _compareAttackDataMask;
 
         public ActorVisualAutoMerge(ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache,
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, bool featureActive)
         {
             _linkCache = linkCache;
-            _loadOrder = loadOrder;
             _featureActive = featureActive;
             _masters = loadOrder.PriorityOrder
                 .Select(x =>
                     KeyValuePair.Create(x.ModKey, x.Mod!.MasterReferences.Select(y => y.Master).ToImmutableList()))
                 .ToImmutableDictionary();
             _compareTraitsMask = ActorCopyTools.InheritTraitsMask();
-            _compareTraitsMask.TintLayers = false; // random tint layer changes in Requiem aren't visual templates
+            _compareTraitsMask.TintLayers = false; // changes here are usually Creation Kit artifacts
+            _compareTraitsMask.TextureLighting = false; // changes here are usually Creation Kit artifacts
             _compareTraitsMask.HeadParts = false; // custom comparison needed, as order of elements is irrelevant
             _compareTraitsMask.FaceMorph = false; // can contain small numeric differences that are irrelevant
-            _compareAttackDataMask = ActorCopyTools.InheritAttackDataMask();
         }
 
         private bool IsVisualTemplate(IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter> thisVersion,
             ImmutableList<IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>> otherVersions)
         {
+            if ((thisVersion.Record.Configuration.TemplateFlags & NpcConfiguration.TemplateFlag.Traits) != 0)
+                return false;
             var maybePreviousVersion =
                 otherVersions.FirstOrDefault(x => _masters[thisVersion.ModKey].Contains(x.ModKey));
 
@@ -50,16 +49,15 @@ namespace Reqtificator.Transformers.Actors
         private bool EqualsVisualData(INpcGetter reference, INpcGetter other)
         {
             return reference.Equals(other, _compareTraitsMask) &&
-                   reference.Equals(other, _compareAttackDataMask) &&
                    CompareHeadParts(other, reference) &&
                    CompareFaceMorphs(other, reference);
         }
 
         private static bool CompareHeadParts(INpcGetter reference, INpcGetter other)
         {
-            var commonHeadParts = reference.HeadParts.Intersect(other.HeadParts);
-            return commonHeadParts.Count() == reference.HeadParts.Count &&
-                   reference.HeadParts.Count == other.HeadParts.Count;
+            var thisParts = reference.HeadParts.Select(x => x.FormKey).ToImmutableHashSet();
+            var otherParts = other.HeadParts.Select(x => x.FormKey).ToImmutableHashSet();
+            return thisParts.SetEquals(otherParts);
         }
 
         private static bool CompareFaceMorphs(INpcGetter reference, INpcGetter other)
@@ -110,7 +108,12 @@ namespace Reqtificator.Transformers.Actors
             var otherVersions = _linkCache.ResolveAllContexts<Npc, INpcGetter>(input.Record().FormKey).Skip(1)
                 .ToImmutableList();
 
-            if (IsVisualTemplate(lastOverride, otherVersions)) return input;
+            if (IsVisualTemplate(lastOverride, otherVersions))
+            {
+                if (lastOverride.ModKey == new ModKey("Requiem", ModType.Plugin))
+                    Log.Warning("found visual template in Requiem");
+                return input;
+            }
 
             var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
             if (visualTemplate != null && !EqualsVisualData(lastOverride.Record, visualTemplate.Record))
