@@ -13,7 +13,7 @@ namespace Reqtificator
         private static class Uris
         {
             public static readonly Uri EngineFixes = new("https://www.nexusmods.com/skyrimspecialedition/mods/17230");
-            public static readonly Uri ScrambledBugs = new("https://www.nexusmods.com/skyrimspecialedition/mods/43532");
+            // public static readonly Uri ScrambledBugs = new("https://www.nexusmods.com/skyrimspecialedition/mods/43532");
         }
 
         public static ReqtificatorOutcome? VerifySetup(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, RequiemVersion patcherVersion)
@@ -21,7 +21,7 @@ namespace Reqtificator
             var missingDependencies = new List<BugfixDependency>()
             {
                 new BugfixDependency("SSE Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
-                new BugfixDependency("Scrambled Bugs", "DLLPlugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs)
+                // new BugfixDependency("Scrambled Bugs", "DLLPlugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs)
             }.FindAll(d => !System.IO.File.Exists(d.ExpectedLocation));
 
             if (missingDependencies.Count > 0) { return new MissingBugfixDependency(missingDependencies); }
