@@ -57,9 +57,7 @@ namespace Reqtificator.Gui
 
         private UserSettings GetUpdatedUserSettings()
         {
-            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones, true,
-                                Mods.Where(m => m.NpcVisuals).Select(m => m.ModKey).ToList().ToImmutableList(), Mods
-                                    .Where(m => m.RaceVisuals).Select(m => m.ModKey).ToImmutableList());
+            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones, true, true);
         }
 
         private void RequestPatch(object? _)
@@ -78,9 +76,7 @@ namespace Reqtificator.Gui
             Mods.Clear();
             foreach (ModKey mod in patchContext.ActiveMods)
             {
-                var npcVisuals = userSettings.NpcVisualTemplateMods.Contains(mod);
-                var raceVisuals = userSettings.RaceVisualTemplateMods.Contains(mod);
-                Mods.Add(new ModViewModel(mod, npcVisuals, raceVisuals));
+                Mods.Add(new ModViewModel(mod, false, false));
             }
 
             NotifyChanged(
