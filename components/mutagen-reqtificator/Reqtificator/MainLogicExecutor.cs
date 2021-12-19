@@ -34,10 +34,12 @@ namespace Reqtificator
         private readonly ReqtificatorConfig _reqtificatorConfig;
         private readonly RequiemVersion _version;
 
-        private static readonly string PersistenceFileLocation = Environment.GetFolderPath(Environment.SpecialFolder.Personal) +
-                                                                 "/My Games/Skyrim Special Edition/Requiem/FormPersistence.txt";
+        private static readonly string PersistenceFileLocation =
+            Environment.GetFolderPath(Environment.SpecialFolder.Personal) +
+            "/My Games/Skyrim Special Edition/Requiem/FormPersistence.txt";
 
-        public MainLogicExecutor(InternalEvents events, GameContext context, ReqtificatorConfig reqtificatorConfig, RequiemVersion version)
+        public MainLogicExecutor(InternalEvents events, GameContext context, ReqtificatorConfig reqtificatorConfig,
+            RequiemVersion version)
         {
             _events = events;
             _context = context;
@@ -93,7 +95,7 @@ namespace Reqtificator
             var weaponsPatched = PatchWeapons(loadOrder);
 
             _events.PublishState(ReqtificatorState.Patching(45, "Actors"));
-            var actorsPatched = PatchActors(loadOrder, importedModsLinkCache);
+            var actorsPatched = PatchActors(loadOrder, importedModsLinkCache, userSettings.ActorVisualAutoMerge);
 
             _events.PublishState(ReqtificatorState.Patching(50, "Races"));
             var racesPatched = PatchRaces(loadOrder);
@@ -124,7 +126,8 @@ namespace Reqtificator
             return fullPatch;
         }
 
-        private static (SkyrimMod, TextFileFormKeyAllocator) CreatePatchBaseMod(ModKey outputModKey, RequiemVersion version,
+        private static (SkyrimMod, TextFileFormKeyAllocator) CreatePatchBaseMod(ModKey outputModKey,
+            RequiemVersion version,
             ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> cache)
         {
             var patch = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE)
@@ -254,7 +257,7 @@ namespace Reqtificator
         }
 
         private ErrorOr<ImmutableList<Npc>> PatchActors(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> importedModsLinkCache)
+            ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> importedModsLinkCache, bool enableVisualAutoMerge)
         {
             var actorPerkRules = RecordUtils.LoadModConfigFiles(_context, "ActorAssignmentRules")
                 .FlatMap(configs => configs.Select(x =>
@@ -274,7 +277,8 @@ namespace Reqtificator
             var globalPerks =
                 RecordUtils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
             return globalPerks.FlatMap(perks => actorRules.Map(rules =>
-                new ActorCommonScripts(importedModsLinkCache)
+                new ActorVisualAutoMerge(importedModsLinkCache, loadOrder, enableVisualAutoMerge)
+                    .AndThen(new ActorCommonScripts(importedModsLinkCache))
                     .AndThen(new ActorGlobalPerks(perks))
                     .AndThen(new ActorPerksFromRules(rules.perks))
                     .AndThen(new ActorSpellsFromRules(rules.spells))
