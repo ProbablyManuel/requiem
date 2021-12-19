@@ -108,12 +108,7 @@ namespace Reqtificator.Transformers.Actors
             var otherVersions = _linkCache.ResolveAllContexts<Npc, INpcGetter>(input.Record().FormKey).Skip(1)
                 .ToImmutableList();
 
-            if (IsVisualTemplate(lastOverride, otherVersions))
-            {
-                if (lastOverride.ModKey == new ModKey("Requiem", ModType.Plugin))
-                    Log.Warning("found visual template in Requiem");
-                return input;
-            }
+            if (IsVisualTemplate(lastOverride, otherVersions)) return input;
 
             var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
             if (visualTemplate != null && !EqualsVisualData(lastOverride.Record, visualTemplate.Record))
