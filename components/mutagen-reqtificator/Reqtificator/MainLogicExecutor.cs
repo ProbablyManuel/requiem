@@ -48,7 +48,7 @@ namespace Reqtificator
         }
 
         public ErrorOr<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userSettings, ModKey outputModKey, InternalEvents _events)
+            UserSettings userSettings, ModKey outputModKey)
         {
             _events.PublishState(ReqtificatorState.Patching(0.0, ""));
 
@@ -277,7 +277,8 @@ namespace Reqtificator
             var globalPerks =
                 RecordUtils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
             return globalPerks.FlatMap(perks => actorRules.Map(rules =>
-                new ActorVisualAutoMerge(importedModsLinkCache, loadOrder, enableVisualAutoMerge)
+                new ForwardDataFromTemplate<Npc, INpcGetter>(importedModsLinkCache, loadOrder,
+                        new ActorVisualAutoMerge(), enableVisualAutoMerge)
                     .AndThen(new ActorCommonScripts(importedModsLinkCache))
                     .AndThen(new ActorGlobalPerks(perks))
                     .AndThen(new ActorPerksFromRules(rules.perks))
