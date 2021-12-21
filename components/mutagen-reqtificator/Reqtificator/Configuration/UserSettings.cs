@@ -12,16 +12,14 @@ namespace Reqtificator.Configuration
         bool MergeLeveledCharacters,
         bool OpenEncounterZones,
         bool ActorVisualAutoMerge,
-        ImmutableList<ModKey> NpcVisualTemplateMods,
-        ImmutableList<ModKey> RaceVisualTemplateMods)
+        bool RaceVisualAutoMerge)
     {
         private const string KeyVerboseLogging = "verboseLogging";
         private const string KeyMergeLeveledLists = "mergeLeveledLists";
         private const string KeyMergeLeveledCharacters = "mergeLeveledCharacters";
         private const string KeyOpenEncounterZones = "openEncounterZones";
         private const string KeyActorVisualAutoMerge = "actorVisualAutoMerge";
-        private const string KeyNpcVisualTemplateMods = "npcVisualTemplateMods";
-        private const string KeyRaceVisualTemplateMods = "raceVisualTemplateMods";
+        private const string KeyRaceVisualAutoMerge = "raceVisualAutoMerge";
 
         public static UserSettings LoadUserSettings(string sourceFile)
         {
@@ -39,24 +37,19 @@ namespace Reqtificator.Configuration
                 MergeLeveledCharacters: config.GetBoolean(KeyMergeLeveledCharacters),
                 OpenEncounterZones: config.GetBoolean(KeyOpenEncounterZones),
                 ActorVisualAutoMerge: config.GetBoolean(KeyActorVisualAutoMerge),
-                NpcVisualTemplateMods: config.GetStringList(KeyNpcVisualTemplateMods)
-                    .Select(it => ModKey.FromNameAndExtension(it)).ToImmutableList(),
-                RaceVisualTemplateMods: config.GetStringList(KeyRaceVisualTemplateMods)
-                    .Select(it => ModKey.FromNameAndExtension(it)).ToImmutableList()
+                RaceVisualAutoMerge: config.GetBoolean(KeyRaceVisualAutoMerge)
             );
         }
 
         public void WriteToFile(string targetFile)
         {
-            string FmtArray(string acc, string elem) => acc.Length > 0 ? $"{acc}, \"{elem}\"" : $"\"{elem}\"";
             var configToWrite = $@"{{
     ""{KeyVerboseLogging}"": {VerboseLogging.ToString().ToLowerInvariant()},
     ""{KeyMergeLeveledLists}"": {MergeLeveledLists.ToString().ToLowerInvariant()},
     ""{KeyMergeLeveledCharacters}"": {MergeLeveledCharacters.ToString().ToLowerInvariant()},
     ""{KeyMergeLeveledLists}"": {OpenEncounterZones.ToString().ToLowerInvariant()},
     ""{KeyActorVisualAutoMerge}"": {ActorVisualAutoMerge.ToString().ToLowerInvariant()},
-    ""{KeyNpcVisualTemplateMods}"": [{NpcVisualTemplateMods.Select(it => it.FileName.String).Aggregate("", FmtArray)}],
-    ""{KeyRaceVisualTemplateMods}"": [{RaceVisualTemplateMods.Select(it => it.FileName.String).Aggregate("", FmtArray)}]
+    ""{KeyRaceVisualAutoMerge}"": {RaceVisualAutoMerge.ToString().ToLowerInvariant()}
 }}";
             File.WriteAllText(targetFile, configToWrite);
         }
