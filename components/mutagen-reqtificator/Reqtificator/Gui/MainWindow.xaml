@@ -12,47 +12,22 @@
         <BooleanToVisibilityConverter x:Key="VisibleIfTrueConverter" />
         <gui:InverseBooleanConverter x:Key="InverseConverter" />
     </Window.Resources>
-    <StackPanel>
-        <CheckBox IsChecked="{Binding VerboseLogging}">Verbose logging</CheckBox>
-        <CheckBox IsChecked="{Binding MergeLeveledCharacters}">Merge leveled characters</CheckBox>
-        <CheckBox IsChecked="{Binding MergeLeveledLists}">Merge leveled lists</CheckBox>
-        <CheckBox IsChecked="{Binding OpenEncounterZones}">Open encounter zones</CheckBox>
-        <StackPanel />
-        <ListView ItemsSource="{Binding Mods}" Width="590" HorizontalAlignment="Left" Height="200">
-            <ListView.Resources>
-                <Style TargetType="{x:Type ScrollBar}"
-                   BasedOn="{StaticResource {x:Type ScrollBar}}">
-                    <Style.Triggers>
-                        <Trigger Property="Name" Value="PART_VerticalScrollBar">
-                            <Setter Property="Margin" Value="0,20,0,0"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </ListView.Resources>
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Mod" DisplayMemberBinding="{Binding Path=Name}" Width="400"/>
-                    <GridViewColumn Header="NPC Visuals" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox x:Name="npcVisuals" IsChecked="{Binding Path=NpcVisuals}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn Header="Race Visuals"  Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid HorizontalAlignment="Stretch">
-                                    <CheckBox  x:Name="raceVisuals" IsChecked="{Binding Path=RaceVisuals}"/>
-                                </Grid>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Label Content="{Binding ProgramStatus}" Margin="12,0,0,0" />
-        <ProgressBar Height="10" Value="{Binding Progress, Mode=OneWay}" Visibility="{Binding IsPatching, Converter={StaticResource VisibleIfTrueConverter}}" Margin="16,0,20,0" />
-        <Button Command="{Binding PatchCommand}" Width="80" HorizontalAlignment="Left" IsEnabled="{Binding IsPatching, Converter={StaticResource InverseConverter}}">Patch</Button>
+    <StackPanel Orientation="Horizontal">
+        <StackPanel VerticalAlignment="Center">
+            <Image Source="../Resources/Reqtificator.ico" Width="160" Height="160" Margin="16, 0, 16, 0"/>
+        </StackPanel>
+        <StackPanel>
+            <StackPanel Height="48"/>
+            <CheckBox IsChecked="{Binding VerboseLogging}">Verbose logging</CheckBox>
+            <CheckBox IsChecked="{Binding MergeLeveledCharacters}">Merge leveled characters</CheckBox>
+            <CheckBox IsChecked="{Binding MergeLeveledLists}">Merge leveled lists</CheckBox>
+            <CheckBox IsChecked="{Binding OpenEncounterZones}">Open encounter zones</CheckBox>
+            <CheckBox IsChecked="{Binding RaceVisualAutoMerge}">Automatically merge race visuals</CheckBox>
+            <CheckBox IsChecked="{Binding ActorVisualAutoMerge}">Automatically merge actor visuals</CheckBox>
+            <StackPanel />
+            <Label Content="{Binding ProgramStatus}" Margin="12,0,0,0" />
+            <ProgressBar Height="10" Value="{Binding Progress, Mode=OneWay}" Visibility="{Binding IsPatching, Converter={StaticResource VisibleIfTrueConverter}}" Margin="16,0,20,0" />
+            <Button Command="{Binding PatchCommand}" Width="80" HorizontalAlignment="Left" IsEnabled="{Binding IsPatching, Converter={StaticResource InverseConverter}}">Patch</Button>
+        </StackPanel>
     </StackPanel>
 </Window>

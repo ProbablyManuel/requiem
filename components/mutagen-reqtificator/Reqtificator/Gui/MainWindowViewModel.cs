@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Immutable;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Threading;
 using System.Windows.Input;
-using Mutagen.Bethesda.Plugins;
 using Reqtificator.Configuration;
 using Reqtificator.Events;
 
@@ -17,12 +13,12 @@ namespace Reqtificator.Gui
         private readonly BackgroundWorker _patchRequestThread;
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public ObservableCollection<ModViewModel> Mods { get; }
-
         public bool VerboseLogging { get; set; }
         public bool MergeLeveledLists { get; set; }
         public bool MergeLeveledCharacters { get; set; }
         public bool OpenEncounterZones { get; set; }
+        public bool RaceVisualAutoMerge { get; set; }
+        public bool ActorVisualAutoMerge { get; set; }
         public string ProgramStatus { get; private set; }
         public double Progress { get; private set; }
         public bool IsPatching { get; private set; }
@@ -30,7 +26,6 @@ namespace Reqtificator.Gui
 
         public MainWindowViewModel(InternalEvents eventsQueue)
         {
-            Mods = new ObservableCollection<ModViewModel>();
             ProgramStatus = "";
 
             var mainThreadContext = SynchronizationContext.Current;
@@ -57,7 +52,7 @@ namespace Reqtificator.Gui
 
         private UserSettings GetUpdatedUserSettings()
         {
-            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones, true, true);
+            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones, RaceVisualAutoMerge, ActorVisualAutoMerge);
         }
 
         private void RequestPatch(object? _)
@@ -72,18 +67,17 @@ namespace Reqtificator.Gui
             MergeLeveledLists = userSettings.MergeLeveledLists;
             MergeLeveledCharacters = userSettings.MergeLeveledCharacters;
             OpenEncounterZones = userSettings.OpenEncounterZones;
+            RaceVisualAutoMerge = userSettings.RaceVisualAutoMerge;
+            ActorVisualAutoMerge = userSettings.ActorVisualAutoMerge;
 
-            Mods.Clear();
-            foreach (ModKey mod in patchContext.ActiveMods)
-            {
-                Mods.Add(new ModViewModel(mod, false, false));
-            }
 
             NotifyChanged(
                 nameof(VerboseLogging),
                 nameof(MergeLeveledLists),
                 nameof(MergeLeveledCharacters),
-                nameof(OpenEncounterZones));
+                nameof(OpenEncounterZones),
+                nameof(RaceVisualAutoMerge),
+                nameof(ActorVisualAutoMerge));
         }
 
         private void NotifyChanged(params string[] propertyNames)
