@@ -9,7 +9,7 @@ namespace Reqtificator.Transformers.Races
 {
     internal class RaceVisualAutoMerge : IDataForwardingLogic<Race, IRaceGetter>
     {
-        private const float tolerance = 0.0001f;
+        private const float Tolerance = 0.0001f;
 
         private readonly Race.TranslationMask _comparisonMask = new Race.TranslationMask(defaultOn: false)
         {
@@ -32,10 +32,14 @@ namespace Reqtificator.Transformers.Races
 
         private readonly HeadData.TranslationMask _headDataComparisonMask = new HeadData.TranslationMask(defaultOn: true)
         {
+            // need custom comparison because sorting does not matter
             AvailableHairColors = false,
             FaceDetails = false,
             HeadParts = false,
-            RacePresets = false
+            RacePresets = false,
+            // skip over these as they should not be the only changes and are hard to compare
+            AvailableMorphs = false,
+            TintMasks = false
         };
 
         private readonly Race.TranslationMask _copyMask = new Race.TranslationMask(defaultOn: false)
@@ -77,10 +81,10 @@ namespace Reqtificator.Transformers.Races
             }
 
             return reference.Equals(other, _comparisonMask) &&
-                   CheckGenderedField(r => r.Height, (x, y) => Math.Abs(x - y) <= tolerance) &&
-                   CheckGenderedField(r => r.Weight, (x, y) => Math.Abs(x - y) <= tolerance) &&
-                   Math.Abs(reference.FacegenFaceClamp - other.FacegenFaceClamp) <= tolerance &&
-                   Math.Abs(reference.FacegenMainClamp - other.FacegenMainClamp) <= tolerance &&
+                   CheckGenderedField(r => r.Height, (x, y) => Math.Abs(x - y) <= Tolerance) &&
+                   CheckGenderedField(r => r.Weight, (x, y) => Math.Abs(x - y) <= Tolerance) &&
+                   Math.Abs(reference.FacegenFaceClamp - other.FacegenFaceClamp) <= Tolerance &&
+                   Math.Abs(reference.FacegenMainClamp - other.FacegenMainClamp) <= Tolerance &&
                    CheckGenderedField(r => r.SkeletalModel, (x, y) => x.Equals(y)) &&
                    CheckGenderedField(r => r.DefaultHairColors, (x, y) => x.Equals(y)) &&
                    CheckGenderedField(r => r.BodyData, (x, y) => x.Equals(y)) &&
@@ -98,7 +102,6 @@ namespace Reqtificator.Transformers.Races
                 return thisParts.SetEquals(otherParts);
             }
 
-
             return reference.Equals(other, _headDataComparisonMask) &&
                    CompareSetData(r => r.AvailableHairColors.Select(x => x.FormKey)) &&
                    CompareSetData(r => r.FaceDetails.Select(x => x.FormKey)) &&
@@ -113,49 +116,49 @@ namespace Reqtificator.Transformers.Races
                 if (refEntry is null && otherEntry is null) return true;
                 if (refEntry is null || otherEntry is null) return false;
 
-                return Math.Abs(refEntry.B - otherEntry.B) < tolerance &&
-                       Math.Abs(refEntry.D - otherEntry.D) < tolerance &&
-                       Math.Abs(refEntry.F - otherEntry.F) < tolerance &&
-                       Math.Abs(refEntry.G - otherEntry.G) < tolerance &&
-                       Math.Abs(refEntry.K - otherEntry.K) < tolerance &&
-                       Math.Abs(refEntry.L - otherEntry.L) < tolerance &&
-                       Math.Abs(refEntry.M - otherEntry.M) < tolerance &&
-                       Math.Abs(refEntry.N - otherEntry.N) < tolerance &&
-                       Math.Abs(refEntry.P - otherEntry.P) < tolerance &&
-                       Math.Abs(refEntry.R - otherEntry.R) < tolerance &&
-                       Math.Abs(refEntry.S - otherEntry.S) < tolerance &&
-                       Math.Abs(refEntry.T - otherEntry.T) < tolerance &&
-                       Math.Abs(refEntry.V - otherEntry.V) < tolerance &&
-                       Math.Abs(refEntry.W - otherEntry.W) < tolerance &&
-                       Math.Abs(refEntry.Y - otherEntry.Y) < tolerance &&
-                       Math.Abs(refEntry.Z - otherEntry.Z) < tolerance &&
-                       Math.Abs(refEntry.AA - otherEntry.AA) < tolerance &&
-                       Math.Abs(refEntry.AE - otherEntry.AE) < tolerance &&
-                       Math.Abs(refEntry.AH - otherEntry.AH) < tolerance &&
-                       Math.Abs(refEntry.AO - otherEntry.AO) < tolerance &&
-                       Math.Abs(refEntry.AW - otherEntry.AW) < tolerance &&
-                       Math.Abs(refEntry.AX - otherEntry.AX) < tolerance &&
-                       Math.Abs(refEntry.AY - otherEntry.AY) < tolerance &&
-                       Math.Abs(refEntry.CH - otherEntry.CH) < tolerance &&
-                       Math.Abs(refEntry.DH - otherEntry.DH) < tolerance &&
-                       Math.Abs(refEntry.EH - otherEntry.EH) < tolerance &&
-                       Math.Abs(refEntry.ER - otherEntry.ER) < tolerance &&
-                       Math.Abs(refEntry.EY - otherEntry.EY) < tolerance &&
-                       Math.Abs(refEntry.HH - otherEntry.HH) < tolerance &&
-                       Math.Abs(refEntry.IH - otherEntry.IH) < tolerance &&
-                       Math.Abs(refEntry.IY - otherEntry.IY) < tolerance &&
-                       Math.Abs(refEntry.JH - otherEntry.JH) < tolerance &&
-                       Math.Abs(refEntry.NG - otherEntry.NG) < tolerance &&
-                       Math.Abs(refEntry.OW - otherEntry.OW) < tolerance &&
-                       Math.Abs(refEntry.OY - otherEntry.OY) < tolerance &&
-                       Math.Abs(refEntry.SH - otherEntry.SH) < tolerance &&
-                       Math.Abs(refEntry.TH - otherEntry.TH) < tolerance &&
-                       Math.Abs(refEntry.UH - otherEntry.UH) < tolerance &&
-                       Math.Abs(refEntry.UW - otherEntry.UW) < tolerance &&
-                       Math.Abs(refEntry.ZH - otherEntry.ZH) < tolerance &&
-                       Math.Abs(refEntry.SIL - otherEntry.SIL) < tolerance &&
-                       Math.Abs(refEntry.FLAP - otherEntry.FLAP) < tolerance &&
-                       Math.Abs(refEntry.SHOTSIL - otherEntry.SHOTSIL) < tolerance;
+                return Math.Abs(refEntry.B - otherEntry.B) < Tolerance &&
+                       Math.Abs(refEntry.D - otherEntry.D) < Tolerance &&
+                       Math.Abs(refEntry.F - otherEntry.F) < Tolerance &&
+                       Math.Abs(refEntry.G - otherEntry.G) < Tolerance &&
+                       Math.Abs(refEntry.K - otherEntry.K) < Tolerance &&
+                       Math.Abs(refEntry.L - otherEntry.L) < Tolerance &&
+                       Math.Abs(refEntry.M - otherEntry.M) < Tolerance &&
+                       Math.Abs(refEntry.N - otherEntry.N) < Tolerance &&
+                       Math.Abs(refEntry.P - otherEntry.P) < Tolerance &&
+                       Math.Abs(refEntry.R - otherEntry.R) < Tolerance &&
+                       Math.Abs(refEntry.S - otherEntry.S) < Tolerance &&
+                       Math.Abs(refEntry.T - otherEntry.T) < Tolerance &&
+                       Math.Abs(refEntry.V - otherEntry.V) < Tolerance &&
+                       Math.Abs(refEntry.W - otherEntry.W) < Tolerance &&
+                       Math.Abs(refEntry.Y - otherEntry.Y) < Tolerance &&
+                       Math.Abs(refEntry.Z - otherEntry.Z) < Tolerance &&
+                       Math.Abs(refEntry.AA - otherEntry.AA) < Tolerance &&
+                       Math.Abs(refEntry.AE - otherEntry.AE) < Tolerance &&
+                       Math.Abs(refEntry.AH - otherEntry.AH) < Tolerance &&
+                       Math.Abs(refEntry.AO - otherEntry.AO) < Tolerance &&
+                       Math.Abs(refEntry.AW - otherEntry.AW) < Tolerance &&
+                       Math.Abs(refEntry.AX - otherEntry.AX) < Tolerance &&
+                       Math.Abs(refEntry.AY - otherEntry.AY) < Tolerance &&
+                       Math.Abs(refEntry.CH - otherEntry.CH) < Tolerance &&
+                       Math.Abs(refEntry.DH - otherEntry.DH) < Tolerance &&
+                       Math.Abs(refEntry.EH - otherEntry.EH) < Tolerance &&
+                       Math.Abs(refEntry.ER - otherEntry.ER) < Tolerance &&
+                       Math.Abs(refEntry.EY - otherEntry.EY) < Tolerance &&
+                       Math.Abs(refEntry.HH - otherEntry.HH) < Tolerance &&
+                       Math.Abs(refEntry.IH - otherEntry.IH) < Tolerance &&
+                       Math.Abs(refEntry.IY - otherEntry.IY) < Tolerance &&
+                       Math.Abs(refEntry.JH - otherEntry.JH) < Tolerance &&
+                       Math.Abs(refEntry.NG - otherEntry.NG) < Tolerance &&
+                       Math.Abs(refEntry.OW - otherEntry.OW) < Tolerance &&
+                       Math.Abs(refEntry.OY - otherEntry.OY) < Tolerance &&
+                       Math.Abs(refEntry.SH - otherEntry.SH) < Tolerance &&
+                       Math.Abs(refEntry.TH - otherEntry.TH) < Tolerance &&
+                       Math.Abs(refEntry.UH - otherEntry.UH) < Tolerance &&
+                       Math.Abs(refEntry.UW - otherEntry.UW) < Tolerance &&
+                       Math.Abs(refEntry.ZH - otherEntry.ZH) < Tolerance &&
+                       Math.Abs(refEntry.SIL - otherEntry.SIL) < Tolerance &&
+                       Math.Abs(refEntry.FLAP - otherEntry.FLAP) < Tolerance &&
+                       Math.Abs(refEntry.SHOTSIL - otherEntry.SHOTSIL) < Tolerance;
             }
 
             return CompareEntry(reference.I, other.I) &&

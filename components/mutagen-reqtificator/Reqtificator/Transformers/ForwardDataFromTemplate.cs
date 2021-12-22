@@ -39,13 +39,17 @@ namespace Reqtificator.Transformers
             var otherVersions = _linkCache.ResolveAllContexts<T, TGetter>(input.Record().FormKey).Skip(1)
                 .ToImmutableList();
 
-            if (IsTemplate(lastOverride, otherVersions)) return input;
+            if (IsTemplate(lastOverride, otherVersions))
+            {
+                Log.Debug($"last override \"{lastOverride.ModKey}\" is a visual template");
+                return input;
+            }
 
             var template = otherVersions.FirstOrDefault(x => IsTemplate(x, otherVersions));
             if (template != null && !_logic.CheckRecordEquality(lastOverride.Record, template.Record))
             {
                 //TODO: refine this log message if the code is used for other features in the future 
-                Log.Information($"applying visual auto-merge: {template.ModKey} (visual) & {lastOverride.ModKey} (data)");
+                Log.Information($"applying visual auto-merge: \"{template.ModKey}\" (visual) & \"{lastOverride.ModKey}\" (data)");
                 return input.Modify(record => _logic.ForwardDataFromTemplate(record, template.Record));
             }
 
