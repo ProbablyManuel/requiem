@@ -98,7 +98,7 @@ namespace Reqtificator
             var actorsPatched = PatchActors(loadOrder, importedModsLinkCache, userSettings.ActorVisualAutoMerge);
 
             _events.PublishState(ReqtificatorState.Patching(50, "Races"));
-            var racesPatched = PatchRaces(loadOrder);
+            var racesPatched = PatchRaces(loadOrder, importedModsLinkCache, userSettings.RaceVisualAutoMerge);
 
             // unfortunately, we must add the new records directly to the plugin to avoid broken formId links :)
 
@@ -314,10 +314,13 @@ namespace Reqtificator
             return updatedActorVariations;
         }
 
-        private static ImmutableList<Race> PatchRaces(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+        private static ImmutableList<Race> PatchRaces(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
+            ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> importedModsLinkCache, bool enableVisualAutoMerge)
         {
             var races = loadOrder.PriorityOrder.Race().WinningOverrides();
-            return new CustomRacePatching().ProcessCollection(races);
+            return new ForwardDataFromTemplate<Race, IRaceGetter>(importedModsLinkCache, loadOrder,
+                new RaceVisualAutoMerge(), enableVisualAutoMerge)
+                .AndThen(new CustomRacePatching()).ProcessCollection(races);
         }
     }
 }
