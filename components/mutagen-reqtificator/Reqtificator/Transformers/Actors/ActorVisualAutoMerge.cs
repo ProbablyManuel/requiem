@@ -1,31 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using Mutagen.Bethesda.Plugins;
-using Mutagen.Bethesda.Plugins.Cache;
-using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
-using Serilog;
 
 namespace Reqtificator.Transformers.Actors
 {
-    internal class ActorVisualAutoMerge : TransformerV2<Npc, INpcGetter>
+    internal class ActorVisualAutoMerge : IDataForwardingLogic<Npc, INpcGetter>
     {
-        private readonly bool _featureActive;
-        private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _linkCache;
-        private readonly ImmutableDictionary<ModKey, ImmutableList<ModKey>> _masters;
         private readonly Npc.TranslationMask _compareTraitsMask;
 
-        public ActorVisualAutoMerge(ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache,
-            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, bool featureActive)
+        public ActorVisualAutoMerge()
         {
-            _linkCache = linkCache;
-            _featureActive = featureActive;
-            _masters = loadOrder.PriorityOrder
-                .Select(x =>
-                    KeyValuePair.Create(x.ModKey, x.Mod!.MasterReferences.Select(y => y.Master).ToImmutableList()))
-                .ToImmutableDictionary();
             _compareTraitsMask = ActorCopyTools.InheritTraitsMask();
             _compareTraitsMask.TintLayers = false; // changes here are usually Creation Kit artifacts
             _compareTraitsMask.TextureLighting = false; // changes here are usually Creation Kit artifacts
@@ -33,24 +18,17 @@ namespace Reqtificator.Transformers.Actors
             _compareTraitsMask.FaceMorph = false; // can contain small numeric differences that are irrelevant
         }
 
-        private bool IsVisualTemplate(IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter> thisVersion,
-            ImmutableList<IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>> otherVersions)
-        {
-            if ((thisVersion.Record.Configuration.TemplateFlags & NpcConfiguration.TemplateFlag.Traits) != 0)
-                return false;
-            var maybePreviousVersion =
-                otherVersions.FirstOrDefault(x => _masters[thisVersion.ModKey].Contains(x.ModKey));
-
-            if (maybePreviousVersion == null) return false;
-
-            return !EqualsVisualData(thisVersion.Record, maybePreviousVersion.Record);
-        }
-
-        private bool EqualsVisualData(INpcGetter reference, INpcGetter other)
+        public bool CheckRecordEquality(INpcGetter reference, INpcGetter other)
         {
             return reference.Equals(other, _compareTraitsMask) &&
                    CompareHeadParts(other, reference) &&
                    CompareFaceMorphs(other, reference);
+        }
+
+        public void ForwardDataFromTemplate(Npc record, INpcGetter templateRecord)
+        {
+            ActorCopyTools.CopyDataForTemplateFlag(record, templateRecord, NpcConfiguration.TemplateFlag.Traits);
+            ActorCopyTools.CopyDataForTemplateFlag(record, templateRecord, NpcConfiguration.TemplateFlag.AttackData);
         }
 
         private static bool CompareHeadParts(INpcGetter reference, INpcGetter other)
@@ -64,7 +42,7 @@ namespace Reqtificator.Transformers.Actors
         {
             var refMorph = reference.FaceMorph;
             var otherMorph = other.FaceMorph;
-            var tolerance = 0.0001f;
+            const float tolerance = 0.0001f;
 
             if (refMorph == null && otherMorph == null) return true;
             if (refMorph == null || otherMorph == null) return false;
@@ -87,38 +65,6 @@ namespace Reqtificator.Transformers.Actors
                    Math.Abs(refMorph.LipsUpVsDown - otherMorph.LipsUpVsDown) < tolerance &&
                    Math.Abs(refMorph.NoseLongVsShort - otherMorph.NoseLongVsShort) < tolerance &&
                    Math.Abs(refMorph.NoseUpVsDown - otherMorph.NoseUpVsDown) < tolerance;
-        }
-
-        private static TransformationResult<Npc, INpcGetter> MergeTemplates(INpcGetter dataTemplate,
-            INpcGetter visualTemplate)
-        {
-            var mutable = dataTemplate.DeepCopy();
-            ActorCopyTools.CopyDataForTemplateFlag(mutable, visualTemplate, NpcConfiguration.TemplateFlag.Traits);
-            ActorCopyTools.CopyDataForTemplateFlag(mutable, visualTemplate, NpcConfiguration.TemplateFlag.AttackData);
-            return new Modified<Npc, INpcGetter>(mutable);
-        }
-
-        public override TransformationResult<Npc, INpcGetter> Process(TransformationResult<Npc, INpcGetter> input)
-        {
-            if (input is not UnChanged<Npc, INpcGetter>)
-                throw new ArgumentException("input should not be transformed yet");
-            if (!_featureActive) return input;
-
-            var lastOverride = _linkCache.ResolveContext<Npc, INpcGetter>(input.Record().FormKey);
-            var otherVersions = _linkCache.ResolveAllContexts<Npc, INpcGetter>(input.Record().FormKey).Skip(1)
-                .ToImmutableList();
-
-            if (IsVisualTemplate(lastOverride, otherVersions)) return input;
-
-            var visualTemplate = otherVersions.FirstOrDefault(x => IsVisualTemplate(x, otherVersions));
-            if (visualTemplate != null && !EqualsVisualData(lastOverride.Record, visualTemplate.Record))
-            {
-                Log.Information(
-                    $"applying visual automerge: {visualTemplate.ModKey} (visual) & {lastOverride.ModKey} (data)");
-                return MergeTemplates(lastOverride.Record, visualTemplate.Record);
-            }
-
-            return input;
         }
     }
 }

@@ -127,7 +127,7 @@ namespace Reqtificator
 
                 Log.Information("start patching");
 
-                return _executor.GeneratePatch(loadOrder, userConfig, patchModKey, _events) switch
+                return _executor.GeneratePatch(loadOrder, userConfig, patchModKey) switch
                 {
                     Success<SkyrimMod> s => s.Value,
                     Failed<SkyrimMod> f => throw f.Error,
