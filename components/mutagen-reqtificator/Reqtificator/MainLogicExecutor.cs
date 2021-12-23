@@ -48,7 +48,7 @@ namespace Reqtificator
         }
 
         public ErrorOr<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userSettings, ModKey outputModKey, InternalEvents _events)
+            UserSettings userSettings, ModKey outputModKey)
         {
             _events.PublishState(ReqtificatorState.Patching(0.0, ""));
 
@@ -98,7 +98,7 @@ namespace Reqtificator
             var actorsPatched = PatchActors(loadOrder, importedModsLinkCache, userSettings.ActorVisualAutoMerge);
 
             _events.PublishState(ReqtificatorState.Patching(50, "Races"));
-            var racesPatched = PatchRaces(loadOrder);
+            var racesPatched = PatchRaces(loadOrder, importedModsLinkCache, userSettings.RaceVisualAutoMerge);
 
             // unfortunately, we must add the new records directly to the plugin to avoid broken formId links :)
 
@@ -277,7 +277,8 @@ namespace Reqtificator
             var globalPerks =
                 RecordUtils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
             return globalPerks.FlatMap(perks => actorRules.Map(rules =>
-                new ActorVisualAutoMerge(importedModsLinkCache, loadOrder, enableVisualAutoMerge)
+                new ForwardDataFromTemplate<Npc, INpcGetter>(importedModsLinkCache, loadOrder,
+                        new ActorVisualAutoMerge(), enableVisualAutoMerge)
                     .AndThen(new ActorCommonScripts(importedModsLinkCache))
                     .AndThen(new ActorGlobalPerks(perks))
                     .AndThen(new ActorPerksFromRules(rules.perks))
@@ -313,10 +314,13 @@ namespace Reqtificator
             return updatedActorVariations;
         }
 
-        private static ImmutableList<Race> PatchRaces(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+        private static ImmutableList<Race> PatchRaces(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
+            ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> importedModsLinkCache, bool enableVisualAutoMerge)
         {
             var races = loadOrder.PriorityOrder.Race().WinningOverrides();
-            return new CustomRacePatching().ProcessCollection(races);
+            return new ForwardDataFromTemplate<Race, IRaceGetter>(importedModsLinkCache, loadOrder,
+                new RaceVisualAutoMerge(), enableVisualAutoMerge)
+                .AndThen(new CustomRacePatching()).ProcessCollection(races);
         }
     }
 }

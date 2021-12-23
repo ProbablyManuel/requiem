@@ -52,7 +52,7 @@ namespace Reqtificator.Gui
 
         private UserSettings GetUpdatedUserSettings()
         {
-            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones, RaceVisualAutoMerge, ActorVisualAutoMerge);
+            return new UserSettings(VerboseLogging, MergeLeveledLists, MergeLeveledCharacters, OpenEncounterZones, ActorVisualAutoMerge, RaceVisualAutoMerge);
         }
 
         private void RequestPatch(object? _)
