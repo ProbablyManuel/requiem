@@ -43,6 +43,7 @@ val scriptsDir = file("Scripts")
 val sourceDir = file("Source")
 val reqtificatorDir = file("Reqtificator")
 val scriptsSourcesDir = file(sourceDir.resolve("Scripts"))
+val reqtificatorSourcesDir = file(sourceDir.resolve("Reqtificator"))
 val bsaFilesDir = file("BsaFiles")
 val bsaFile = file("Requiem.bsa")
 
@@ -51,6 +52,8 @@ val copyReqtificator by tasks.registering(Copy::class) {
     val outputDir: File by project("components:mutagen-reqtificator").extra
     from(outputDir)
     into(reqtificatorDir)
+
+    exclude("sources")
 }
 
 val copyScripts by tasks.registering(Copy::class) {
@@ -63,6 +66,7 @@ val copyScripts by tasks.registering(Copy::class) {
 
 val copyScriptSources by tasks.registering(Copy::class) {
     dependsOn("components:papyrus-scripts:assemble")
+
     val outputDir: File by project("components:papyrus-scripts").extra
     from(outputDir.resolve("source"))
     into(scriptsSourcesDir)
@@ -70,6 +74,17 @@ val copyScriptSources by tasks.registering(Copy::class) {
     eachFile {
         path = name
     }
+    includeEmptyDirs = false
+}
+
+val copyReqtificatorSources by tasks.registering(Copy::class) {
+    description = "copy Reqtificator source code for inclusion in release archive"
+    group = "build"
+    dependsOn("components:mutagen-reqtificator:assemble")
+
+    val outputDir: File by project("components:mutagen-reqtificator").extra
+    from(outputDir.resolve("sources"))
+    into(reqtificatorSourcesDir)
     includeEmptyDirs = false
 }
 
@@ -106,6 +121,7 @@ tasks.assemble {
     dependsOn(copyInterfaceFiles)
     dependsOn(copyScripts)
     dependsOn(copyScriptSources)
+    dependsOn(copyReqtificatorSources)
 }
 
 tasks.clean {
