@@ -55,6 +55,27 @@ val copyConfigFiles by tasks.registering(Copy::class) {
     into (outputDir)
 }
 
+val copySources by tasks.registering(Copy::class) {
+    description = "copy Reqtificator source code for inclusion in release archive"
+    group = "build"
+    dependsOn(createVersionFile)
+
+    from ("Reqtificator")
+    into (outputDir.resolve("sources/Reqtificator"))
+
+    exclude("**/bin/**", "**/obj/**")
+}
+
+val copyTestSources by tasks.registering(Copy::class) {
+    description = "copy Reqtificator source code for inclusion in release archive"
+    group = "build"
+
+    from ("ReqtificatorTest")
+    into (outputDir.resolve("sources/ReqtificatorTest"))
+
+    exclude("**/bin/**", "**/obj/**")
+}
+
 val publish by tasks.registering(PublishCSharpTask::class) {
     description = "Compiles the C# code for the SSE Reqtificator"
     group = "build"
@@ -64,7 +85,7 @@ val publish by tasks.registering(PublishCSharpTask::class) {
     targetDirectory = file("$outputDir/app")
     warningsAsErrors = csharpWarningsAsErrors
 
-    dependsOn(restoreTools, createVersionFile, copyConfigFiles)
+    dependsOn(restoreTools, createVersionFile, copyConfigFiles, copySources, copyTestSources)
 }
 
 val test by tasks.registering(TestCSharpTask::class) {
