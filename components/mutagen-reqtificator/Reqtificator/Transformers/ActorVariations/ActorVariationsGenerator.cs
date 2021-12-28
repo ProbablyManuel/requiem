@@ -35,41 +35,50 @@ namespace Reqtificator.Transformers.ActorVariations
         {
             var inheritanceGraph = new ActorInheritanceGraphParser(linkCacheWithPatchedActors);
 
-            (ImmutableHashSet<Npc>, LeveledNpc) GenerateVariations(VariationKey key)
+            var uniqueActorsToBuild = variationsToBuild.SelectMany(v =>
             {
-                var skillTemplate = key.SkillTemplate.Resolve(linkCacheWithPatchedActors);
+                var lookList = v.LookTemplate.Resolve(linkCacheWithPatchedActors);
+                return lookList.Entries!.Select(e => (v.SkillTemplate, e.Data!.Reference));
+            }).ToHashSet();
+
+            var newActors = uniqueActorsToBuild
+                .Select(e =>
+                {
+                    var skillTemplate = e.SkillTemplate.Resolve<INpcGetter>(linkCacheWithPatchedActors);
+                    var lookTemplate = e.Reference.Resolve<INpcGetter>(linkCacheWithPatchedActors);
+                    var newActor = ActorCopyTools.MergeVisualAndSkillTemplates(targetMod,
+                        $"RTFI_Actor_Variations_{skillTemplate.FormKey}_{lookTemplate.FormKey}", skillTemplate,
+                        lookTemplate,
+                        inheritanceGraph);
+                    return KeyValuePair.Create((e.SkillTemplate.FormKey, e.Reference.FormKey), newActor);
+                })
+                .ToImmutableDictionary();
+
+
+            LeveledNpc GenerateVariations(VariationKey key)
+            {
                 var lookList = key.LookTemplate.Resolve(linkCacheWithPatchedActors);
 
-                var newActors = lookList.Entries!
-                    .Select(e => e.Data!.Reference.Resolve<INpcGetter>(linkCacheWithPatchedActors))
-                    .Select(lt => ActorCopyTools.MergeVisualAndSkillTemplates(targetMod,
-                        $"RTFI_Actor_Variations_{skillTemplate.FormKey}_{lt.FormKey}", skillTemplate, lt,
-                        inheritanceGraph))
-                    .ToImmutableList();
-
                 var newLeveledList =
-                    targetMod.LeveledNpcs.AddNew($"RTFI_LChar_Variations_{skillTemplate.FormKey}_{lookList.FormKey}");
+                    targetMod.LeveledNpcs.AddNew($"RTFI_LChar_Variations_{key.SkillTemplate.FormKey}_{lookList.FormKey}");
                 newLeveledList.DeepCopyIn(lookList, null, null);
-                newLeveledList.EditorID = $"RTFI_LChar_Variations_{skillTemplate.FormKey}_{lookList.FormKey}";
+                newLeveledList.EditorID = $"RTFI_LChar_Variations_{key.SkillTemplate.FormKey}_{lookList.FormKey}";
                 newLeveledList.Entries!.Clear();
-                newActors.ForEach(a => newLeveledList.Entries.Add(new LeveledNpcEntry()
-                {
-                    Data = new LeveledNpcEntryData()
+                lookList.Entries!
+                    .Select(e => newActors[(key.SkillTemplate.FormKey, e.Data!.Reference.FormKey)])
+                    .ForEach(a => newLeveledList.Entries.Add(new LeveledNpcEntry()
                     {
-                        Count = 1,
-                        Level = 1,
-                        Reference = a.AsLink()
-                    }
-                }));
-                return (newActors.ToImmutableHashSet(), newLeveledList);
+                        Data = new LeveledNpcEntryData()
+                        {
+                            Count = 1,
+                            Level = 1,
+                            Reference = a.AsLink()
+                        }
+                    }));
+                return newLeveledList;
             }
 
-            var (actors, variations) = variationsToBuild.Select(v => (v, GenerateVariations(v)))
-                .Aggregate((ImmutableHashSet<Npc>.Empty, ImmutableDictionary<VariationKey, LeveledNpc>.Empty),
-                    (agg, elem) =>
-                        (agg.Item1.Union(elem.Item2.Item1), agg.Item2.Add(elem.v, elem.Item2.Item2)));
-
-            return (actors.ToImmutableList(), variations);
+            return (newActors.Values.ToImmutableList(), variationsToBuild.Select(v => KeyValuePair.Create(v, GenerateVariations(v))).ToImmutableDictionary());
         }
 
         public static ImmutableList<LeveledNpc> UpdateActorVariationLists(
