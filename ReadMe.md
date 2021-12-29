@@ -9,7 +9,7 @@ versions can be found at https://bitbucket.org/ogerboss/requiem-1.9.4/.
 This mod is published on NexusMods:
 
 * [Skyrim Legendary Edition](https://www.nexusmods.com/skyrim/mods/19281) (releases before 5.0.0)
-* Skyrim Special Edition (future releases from 5.0.0 onwards)
+* [Skyrim Special Edition](https://www.nexusmods.com/skyrimspecialedition/mods/60888) (releases from 5.0.0 onwards)
 
 ## Requirements
 
