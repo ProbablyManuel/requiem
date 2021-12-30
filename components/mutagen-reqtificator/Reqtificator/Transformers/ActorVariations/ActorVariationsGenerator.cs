@@ -7,6 +7,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
+using Reqtificator.Exceptions;
 using Reqtificator.Transformers.Rules;
 
 namespace Reqtificator.Transformers.ActorVariations
@@ -91,6 +92,8 @@ namespace Reqtificator.Transformers.ActorVariations
                 {
                     var updated = r.DeepCopy();
                     var variationsToAdd = ExtractVariations(r, linkCache);
+                    if (variationsToAdd.Values.Sum() > 255)
+                        throw new OversizedLeveledListException(r.FormKey, r.EditorID);
                     updated.Entries!.Clear();
                     variationsToAdd.ForEach(v =>
                     {
