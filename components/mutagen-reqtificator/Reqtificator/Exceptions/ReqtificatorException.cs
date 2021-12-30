@@ -91,4 +91,25 @@ namespace Reqtificator.Exceptions
         public RequiemVersion PluginVersion { get; }
         public RequiemVersion PatcherVersion { get; }
     }
+
+    public class OversizedLeveledListException : ReqtificatorException
+    {
+        public FormKey FormID { get; }
+        public string? EditorID { get; }
+
+        public OversizedLeveledListException(FormKey formId, string? editorId)
+        {
+            FormID = formId;
+            EditorID = editorId;
+        }
+
+        public override string Message
+        {
+            get
+            {
+                var name = (EditorID is null) ? $"'{FormID}'" : $"'{FormID}' ({EditorID})";
+                return $"Leveled List '{name}' contains more than 255 entries after processing. Skyrim only supports up to 255 entries in a leveled list.";
+            }
+        }
+    }
 }
