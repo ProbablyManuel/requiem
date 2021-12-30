@@ -8,6 +8,7 @@ using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
+using Noggog;
 using Reqtificator.Configuration;
 using Reqtificator.Events;
 using Serilog;
@@ -45,21 +46,26 @@ namespace Reqtificator
             _logs = logContext;
             WarmupSkyrim.Init();
 
-            _context = GameContext.GetRequiemContext(Release, PatchModKey);
-            ValidateRequiemFound();
-
-            //TODO: update base folder for configurations if needed
-            var configFolder = Path.Combine(_context.DataFolder, "Reqtificator", "Config");
-
-            var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods, _events);
-
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
-
             Log.Information($"working directory: {Directory.GetCurrentDirectory()}");
             Log.Information($"patcher version: {_version}");
             Log.Information($"build git branch: {buildInfo.GetString("gitBranch")}");
             Log.Information($"build git revision: {buildInfo.GetString("gitRevision")}");
+
+            _context = GameContext.GetRequiemContext(Release, PatchModKey);
+
+            Log.Information("load order:");
+            _context.ActiveMods.WithIndex().ForEach(m => Log.Information($"  {m.Index} - {m.Item.ModKey}"));
+
+            ValidateRequiemFound();
+
+            //TODO: update base folder for configurations if needed
+            var configFolder = Path.Combine(_context.DataFolder, "Reqtificator", "Config");
+            Log.Information($"configuration folder: {configFolder}");
+
+            var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods, _events);
+
 
             _executor = new MainLogicExecutor(_events, _context, reqtificatorConfig, _version);
 
