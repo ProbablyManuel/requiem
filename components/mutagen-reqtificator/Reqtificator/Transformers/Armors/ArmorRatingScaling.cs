@@ -9,7 +9,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Armors
 {
-    internal class ArmorRatingScaling : TransformerV2<Armor, IArmorGetter>
+    internal class ArmorRatingScaling : Transformer<Armor, IArmor, IArmorGetter>
     {
         private readonly Dictionary<IFormLinkGetter<IKeywordGetter>, float> _lightArmorThresholds;
         private readonly Dictionary<IFormLinkGetter<IKeywordGetter>, float> _heavyArmorThresholds;

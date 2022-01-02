@@ -167,7 +167,7 @@ namespace Reqtificator
 
         private static ImmutableList<Ammunition> PatchAmmunition(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var ammoRecords = loadOrder.PriorityOrder.Ammunition().WinningOverrides();
+            var ammoRecords = loadOrder.PriorityOrder.Ammunition().WinningContextOverrides();
             return new AmmunitionTransformer().ProcessCollection(ammoRecords);
         }
 
@@ -223,7 +223,7 @@ namespace Reqtificator
 
         private ErrorOr<ImmutableList<Armor>> PatchArmors(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
+            var armors = loadOrder.PriorityOrder.Armor().WinningContextOverrides();
             var armorRules = RecordUtils.LoadModConfigFiles(_context, "ArmorKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(x.Item2, x.Item1))
@@ -241,7 +241,7 @@ namespace Reqtificator
 
         private ErrorOr<ImmutableList<Weapon>> PatchWeapons(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
+            var weapons = loadOrder.PriorityOrder.Weapon().WinningContextOverrides();
             var weaponRules = RecordUtils.LoadModConfigFiles(_context, "WeaponKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadKeywordRules<IWeaponGetter>(x.Item2, x.Item1))

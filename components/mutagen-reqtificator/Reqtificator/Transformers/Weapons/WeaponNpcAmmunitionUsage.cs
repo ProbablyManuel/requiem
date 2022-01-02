@@ -3,7 +3,7 @@ using Reqtificator.StaticReferences;
 
 namespace Reqtificator.Transformers.Weapons
 {
-    internal class WeaponNpcAmmunitionUsage : TransformerV2<Weapon, IWeaponGetter>
+    internal class WeaponNpcAmmunitionUsage : Transformer<Weapon, IWeapon, IWeaponGetter>
     {
         private static readonly WeaponAnimationType[] RangedWeaponTypes =
         {
