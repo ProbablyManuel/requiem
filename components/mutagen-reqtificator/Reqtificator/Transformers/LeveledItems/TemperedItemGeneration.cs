@@ -12,7 +12,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.LeveledItems
 {
-    internal class TemperedItemGeneration : TransformerV2<LeveledItem, ILeveledItemGetter>
+    internal class TemperedItemGeneration : Transformer<LeveledItem, ILeveledItem, ILeveledItemGetter>
     {
         private readonly IImmutableSet<ModKey> _registeredMods;
 
