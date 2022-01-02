@@ -4,7 +4,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Weapons
 {
-    internal class WeaponMeleeRangeScaling : TransformerV2<Weapon, IWeaponGetter>
+    internal class WeaponMeleeRangeScaling : Transformer<Weapon, IWeapon, IWeaponGetter>
     {
         private static readonly WeaponAnimationType[] MeleeWeaponTypes =
         {

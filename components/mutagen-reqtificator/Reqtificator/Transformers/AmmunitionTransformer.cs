@@ -5,7 +5,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers
 {
-    internal class AmmunitionTransformer : TransformerV2<Ammunition, IAmmunitionGetter>
+    internal class AmmunitionTransformer : Transformer<Ammunition, IAmmunition, IAmmunitionGetter>
     {
         public override TransformationResult<Ammunition, IAmmunitionGetter> Process(
             TransformationResult<Ammunition, IAmmunitionGetter> input)
