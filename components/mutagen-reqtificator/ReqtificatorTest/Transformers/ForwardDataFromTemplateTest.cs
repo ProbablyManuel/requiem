@@ -28,7 +28,7 @@ namespace ReqtificatorTest.Transformers
             public readonly Npc UnrelatedRecord = new Npc(Record, SkyrimRelease.SkyrimSE) { EditorID = "Unrelated" };
             public readonly Npc DataRecord = new Npc(Record, SkyrimRelease.SkyrimSE) { EditorID = "Data" };
             public readonly Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>> Cache = new(MockBehavior.Strict);
-            public readonly ForwardDataFromTemplate<Npc, INpcGetter> Transformer;
+            public readonly ForwardDataFromTemplate<Npc, INpc, INpcGetter> Transformer;
 
             public Fixture(bool active)
             {
@@ -44,7 +44,7 @@ namespace ReqtificatorTest.Transformers
                     new ModListing<ISkyrimModGetter>(x));
                 var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>(modListing);
                 Transformer =
-                    new ForwardDataFromTemplate<Npc, INpcGetter>(Cache.Object, loadOrder, Logic.Object,
+                    new ForwardDataFromTemplate<Npc, INpc, INpcGetter>(Cache.Object, loadOrder, Logic.Object,
                         active);
 
                 Cache.Setup(c => c.ResolveAllContexts<Npc, INpcGetter>(Record, ResolveTarget.Winner))

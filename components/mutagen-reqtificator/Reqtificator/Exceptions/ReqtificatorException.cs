@@ -16,6 +16,28 @@ namespace Reqtificator.Exceptions
         }
     }
 
+    public class RecordProcessingException<T> : ReqtificatorException where T : class, IMajorRecordGetter
+    {
+        public T ProcessedRecord { get; }
+        public ModKey LastOverwrite { get; }
+        public RecordProcessingException(Exception inner, T processedRecord, ModKey lastOverwrite) : base(inner)
+        {
+            ProcessedRecord = processedRecord;
+            LastOverwrite = lastOverwrite;
+        }
+        public override string Message
+        {
+            get
+            {
+                var name = (ProcessedRecord.EditorID is null)
+                    ? $"'{ProcessedRecord.FormKey}'"
+                    : $"'{ProcessedRecord.FormKey}' ({ProcessedRecord.EditorID})";
+                return
+                    $"A problem was encountered while processing {name}, last modified by '{LastOverwrite}': {InnerException!.Message}";
+            }
+        }
+    }
+
     public class InvalidRecordReferenceException<T> : ReqtificatorException where T : class, IMajorRecordGetter
     {
         public IFormLinkGetter<T> Unresolved { get; }

@@ -6,7 +6,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Actors
 {
-    internal class ActorCommonScripts : TransformerV2<Npc, INpcGetter>
+    internal class ActorCommonScripts : Transformer<Npc, INpc, INpcGetter>
     {
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _linkCache;
         private static readonly IReadOnlyList<ScriptEntry> Scripts = new[] { new ScriptEntry { Name = "REQ_NPCData" } };
