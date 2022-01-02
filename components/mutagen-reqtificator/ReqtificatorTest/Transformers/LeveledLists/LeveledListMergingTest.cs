@@ -34,7 +34,9 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             public readonly ILeveledItemGetter UpdateVersion1;
             public readonly ILeveledItemGetter UpdateVersion2;
             public readonly Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>> Cache = new(MockBehavior.Strict);
-            public readonly LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter> Transformer;
+
+            public readonly LeveledListMerging<LeveledItem, ILeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>
+                Transformer;
 
             public Fixture(LeveledItem version2)
             {
@@ -61,10 +63,11 @@ namespace ReqtificatorTest.Transformers.LeveledLists
                     }
                 };
                 UpdateVersion2 = version2;
-                Transformer = new LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(true,
-                    Cache.Object, ModsWithRequiemAsMaster,
-                    new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty),
-                    new LeveledItemMerger());
+                Transformer =
+                    new LeveledListMerging<LeveledItem, ILeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(true,
+                        Cache.Object, ModsWithRequiemAsMaster,
+                        new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty),
+                        new LeveledItemMerger());
             }
 
             public void SetupStandardBehaviorCacheMock()
@@ -256,9 +259,11 @@ namespace ReqtificatorTest.Transformers.LeveledLists
                         baseVersion, null!, null!)
                 });
 
-            var transformer = new LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(true,
-                cache.Object, ModsWithRequiemAsMaster,
-                new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty.Add(Requiem)), new LeveledItemMerger());
+            var transformer =
+                new LeveledListMerging<LeveledItem, ILeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(true,
+                    cache.Object, ModsWithRequiemAsMaster,
+                    new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty.Add(Requiem)),
+                    new LeveledItemMerger());
 
             var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(updateVersion2));
             result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
@@ -366,9 +371,10 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var f = new Fixture(updateVersion2);
             f.SetupStandardBehaviorCacheMock();
 
-            var transformer = new LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(false,
-                f.Cache.Object, ModsWithRequiemAsMaster,
-                new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty), new LeveledItemMerger());
+            var transformer =
+                new LeveledListMerging<LeveledItem, ILeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(false,
+                    f.Cache.Object, ModsWithRequiemAsMaster,
+                    new CompactLeveledItemUnroller(ImmutableHashSet<ModKey>.Empty), new LeveledItemMerger());
 
             var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();

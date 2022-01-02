@@ -2,7 +2,7 @@
 
 namespace Reqtificator.Transformers.LeveledLists
 {
-    internal class CompactLeveledListUnrolling<T, TGetter, TEntry> : TransformerV2<T, TGetter> where T : MajorRecord, TGetter where TGetter : IMajorRecordGetter
+    internal class CompactLeveledListUnrolling<T, TI, TGetter, TEntry> : Transformer<T, TI, TGetter> where T : MajorRecord, TI where TI : class, IMajorRecord, TGetter where TGetter : class, IMajorRecordGetter
     {
         private readonly ICompactLeveledListUnroller<T, TGetter, TEntry> _unroller;
 
