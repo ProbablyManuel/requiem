@@ -175,20 +175,20 @@ namespace Reqtificator
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             UserSettings userSettings)
         {
-            var encounterZones = loadOrder.PriorityOrder.EncounterZone().WinningOverrides();
+            var encounterZones = loadOrder.PriorityOrder.EncounterZone().WinningContextOverrides();
             return new OpenCombatBoundaries(loadOrder, userSettings).ProcessCollection(encounterZones);
         }
 
         private static ImmutableList<Door> PatchDoors(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var doors = loadOrder.PriorityOrder.Door().WinningOverrides();
-            return new CustomLockpicking<Door, IDoorGetter>().ProcessCollection(doors);
+            var doors = loadOrder.PriorityOrder.Door().WinningContextOverrides();
+            return new CustomLockpicking<Door, IDoor, IDoorGetter>().ProcessCollection(doors);
         }
 
         private static ImmutableList<Container> PatchContainers(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var containers = loadOrder.PriorityOrder.Container().WinningOverrides();
-            return new CustomLockpicking<Container, IContainerGetter>().ProcessCollection(containers);
+            var containers = loadOrder.PriorityOrder.Container().WinningContextOverrides();
+            return new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
         }
 
         private static ImmutableList<LeveledItem> PatchLeveledItems(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
