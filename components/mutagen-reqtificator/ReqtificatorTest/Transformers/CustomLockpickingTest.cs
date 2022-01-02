@@ -13,7 +13,7 @@ namespace ReqtificatorTest.Transformers
         [Fact]
         public void Should_add_the_custom_lockpicking_script_binding_to_existing_scripts()
         {
-            var transformer = new CustomLockpicking<Door, IDoorGetter>();
+            var transformer = new CustomLockpicking<Door, IDoor, IDoorGetter>();
             var otherScript = new ScriptEntry() { Name = "SomeOtherScript" };
             var door = new Door(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
             {
@@ -36,7 +36,7 @@ namespace ReqtificatorTest.Transformers
         [Fact]
         public void Should_create_a_VM_for_custom_lockpicking_script_if_VM_is_null()
         {
-            var transformer = new CustomLockpicking<Door, IDoorGetter>();
+            var transformer = new CustomLockpicking<Door, IDoor, IDoorGetter>();
             var door = new Door(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
             {
                 VirtualMachineAdapter = null
@@ -53,7 +53,7 @@ namespace ReqtificatorTest.Transformers
         [Fact]
         public void Should_modify_records_with_no_scripts_in_VirtualMachineAdapter()
         {
-            var transformer = new CustomLockpicking<Door, IDoorGetter>();
+            var transformer = new CustomLockpicking<Door, IDoor, IDoorGetter>();
             var door = new Door(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
             {
                 VirtualMachineAdapter = new VirtualMachineAdapter()
@@ -75,7 +75,7 @@ namespace ReqtificatorTest.Transformers
         [Fact]
         public void Should_not_modify_records_that_already_have_a_binding_for_the_lockpicking_script()
         {
-            var transformer = new CustomLockpicking<Door, IDoorGetter>();
+            var transformer = new CustomLockpicking<Door, IDoor, IDoorGetter>();
             var door = new Door(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
             {
                 VirtualMachineAdapter = new VirtualMachineAdapter()
