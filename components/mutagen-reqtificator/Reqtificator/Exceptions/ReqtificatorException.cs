@@ -9,23 +9,36 @@ namespace Reqtificator.Exceptions
     {
         protected ReqtificatorException()
         {
-
         }
 
         protected ReqtificatorException(Exception inner) : base("", inner)
         {
-
         }
-
     }
 
     public class InvalidRecordReferenceException<T> : ReqtificatorException where T : class, IMajorRecordGetter
     {
         public IFormLinkGetter<T> Unresolved { get; }
+        public IMajorRecordGetter ParentRecord { get; }
+        public ModKey ProblematicMod { get; }
 
-        public InvalidRecordReferenceException(IFormLinkGetter<T> unresolved)
+        public InvalidRecordReferenceException(IFormLinkGetter<T> unresolved, ModKey problematicMod,
+            IMajorRecordGetter parentRecord)
         {
             Unresolved = unresolved;
+            ProblematicMod = problematicMod;
+            ParentRecord = parentRecord;
+        }
+
+        public override string Message
+        {
+            get
+            {
+                var name = (ParentRecord.EditorID is null)
+                    ? $"'{ParentRecord.FormKey}'"
+                    : $"'{ParentRecord.FormKey}' ({ParentRecord.EditorID})";
+                return $"record {name} contains unresolved reference {Unresolved.FormKey} in overwrite '{ProblematicMod}'";
+            }
         }
     }
 
@@ -40,7 +53,8 @@ namespace Reqtificator.Exceptions
             FailingPath = failingPath;
         }
 
-        public RuleConfigurationParsingException(string sourceFile, string failingPath, Exception innerException) : base(innerException)
+        public RuleConfigurationParsingException(string sourceFile, string failingPath, Exception innerException) :
+            base(innerException)
         {
             SourceFile = sourceFile;
             FailingPath = failingPath;
@@ -58,7 +72,8 @@ namespace Reqtificator.Exceptions
             SourceRecord = sourceRecord;
         }
 
-        public InvalidTemperingDataException(IFormLinkGetter<ILeveledItemGetter> sourceRecord, Exception innerException) : base(innerException)
+        public InvalidTemperingDataException(IFormLinkGetter<ILeveledItemGetter> sourceRecord, Exception innerException)
+            : base(innerException)
         {
             SourceRecord = sourceRecord;
         }
@@ -86,7 +101,8 @@ namespace Reqtificator.Exceptions
             PatcherVersion = patcherVersion;
         }
 
-        public override string Message => $"version mismatch detected! patcher version {PatcherVersion.ShortVersion()}, plugin version {PluginVersion.ShortVersion()}";
+        public override string Message =>
+            $"version mismatch detected! patcher version {PatcherVersion.ShortVersion()}, plugin version {PluginVersion.ShortVersion()}";
 
         public RequiemVersion PluginVersion { get; }
         public RequiemVersion PatcherVersion { get; }
@@ -108,7 +124,8 @@ namespace Reqtificator.Exceptions
             get
             {
                 var name = (EditorID is null) ? $"'{FormID}'" : $"'{FormID}' ({EditorID})";
-                return $"Leveled List '{name}' contains more than 255 entries after processing. Skyrim only supports up to 255 entries in a leveled list.";
+                return
+                    $"Leveled List '{name}' contains more than 255 entries after processing. Skyrim only supports up to 255 entries in a leveled list.";
             }
         }
     }
