@@ -10,8 +10,8 @@ using Serilog;
 
 namespace Reqtificator.Transformers
 {
-    internal class ForwardDataFromTemplate<T, TGetter> : TransformerV2<T, TGetter>
-        where T : MajorRecord, TGetter where TGetter : class, IMajorRecordGetter
+    internal class ForwardDataFromTemplate<T, TI, TGetter> : Transformer<T, TI, TGetter>
+        where T : MajorRecord, TI where TI : class, IMajorRecord, TGetter where TGetter : class, IMajorRecordGetter
     {
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _linkCache;
         private readonly ImmutableDictionary<ModKey, ImmutableList<ModKey>> _masters;

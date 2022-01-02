@@ -9,7 +9,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Actors
 {
-    internal class ActorPerksFromRules : TransformerV2<Npc, INpcGetter>
+    internal class ActorPerksFromRules : Transformer<Npc, INpc, INpcGetter>
     {
         private readonly IImmutableList<AssignmentRule<INpcGetter, IPerkGetter>> _rules;
 

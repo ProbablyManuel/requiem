@@ -273,12 +273,12 @@ namespace Reqtificator
                 );
             var actorRules = actorPerkRules.FlatMap(perks => actorSpellRules.Map(spells => (perks, spells)));
 
-            var actors = loadOrder.PriorityOrder.Npc().WinningOverrides();
+            var actors = loadOrder.PriorityOrder.Npc().WinningContextOverrides();
             var globalPerks =
                 RecordUtils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
             return globalPerks.FlatMap(perks => actorRules.Map(rules =>
-                new ForwardDataFromTemplate<Npc, INpcGetter>(importedModsLinkCache, loadOrder,
-                        new ActorVisualAutoMerge(), enableVisualAutoMerge)
+                new ForwardDataFromTemplate<Npc, INpc, INpcGetter>(importedModsLinkCache, loadOrder,
+                new ActorVisualAutoMerge(), enableVisualAutoMerge)
                     .AndThen(new ActorCommonScripts(importedModsLinkCache))
                     .AndThen(new ActorGlobalPerks(perks))
                     .AndThen(new ActorPerksFromRules(rules.perks))
@@ -317,8 +317,8 @@ namespace Reqtificator
         private static ImmutableList<Race> PatchRaces(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> importedModsLinkCache, bool enableVisualAutoMerge)
         {
-            var races = loadOrder.PriorityOrder.Race().WinningOverrides();
-            return new ForwardDataFromTemplate<Race, IRaceGetter>(importedModsLinkCache, loadOrder,
+            var races = loadOrder.PriorityOrder.Race().WinningContextOverrides();
+            return new ForwardDataFromTemplate<Race, IRace, IRaceGetter>(importedModsLinkCache, loadOrder,
                 new RaceVisualAutoMerge(), enableVisualAutoMerge)
                 .AndThen(new CustomRacePatching()).ProcessCollection(races);
         }

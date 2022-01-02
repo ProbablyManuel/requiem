@@ -7,7 +7,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Races
 {
-    internal class CustomRacePatching : TransformerV2<Race, IRaceGetter>
+    internal class CustomRacePatching : Transformer<Race, IRace, IRaceGetter>
     {
         public override TransformationResult<Race, IRaceGetter> Process(TransformationResult<Race, IRaceGetter> input)
         {
