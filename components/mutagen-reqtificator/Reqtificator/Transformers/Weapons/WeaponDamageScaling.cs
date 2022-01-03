@@ -4,7 +4,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Weapons
 {
-    internal class WeaponDamageScaling : TransformerV2<Weapon, IWeaponGetter>
+    internal class WeaponDamageScaling : Transformer<Weapon, IWeapon, IWeaponGetter>
     {
         public override TransformationResult<Weapon, IWeaponGetter> Process(
             TransformationResult<Weapon, IWeaponGetter> input)

@@ -167,7 +167,7 @@ namespace Reqtificator
 
         private static ImmutableList<Ammunition> PatchAmmunition(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var ammoRecords = loadOrder.PriorityOrder.Ammunition().WinningOverrides();
+            var ammoRecords = loadOrder.PriorityOrder.Ammunition().WinningContextOverrides();
             return new AmmunitionTransformer().ProcessCollection(ammoRecords);
         }
 
@@ -175,20 +175,20 @@ namespace Reqtificator
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             UserSettings userSettings)
         {
-            var encounterZones = loadOrder.PriorityOrder.EncounterZone().WinningOverrides();
+            var encounterZones = loadOrder.PriorityOrder.EncounterZone().WinningContextOverrides();
             return new OpenCombatBoundaries(loadOrder, userSettings).ProcessCollection(encounterZones);
         }
 
         private static ImmutableList<Door> PatchDoors(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var doors = loadOrder.PriorityOrder.Door().WinningOverrides();
-            return new CustomLockpicking<Door, IDoorGetter>().ProcessCollection(doors);
+            var doors = loadOrder.PriorityOrder.Door().WinningContextOverrides();
+            return new CustomLockpicking<Door, IDoor, IDoorGetter>().ProcessCollection(doors);
         }
 
         private static ImmutableList<Container> PatchContainers(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var containers = loadOrder.PriorityOrder.Container().WinningOverrides();
-            return new CustomLockpicking<Container, IContainerGetter>().ProcessCollection(containers);
+            var containers = loadOrder.PriorityOrder.Container().WinningContextOverrides();
+            return new CustomLockpicking<Container, IContainer, IContainerGetter>().ProcessCollection(containers);
         }
 
         private static ImmutableList<LeveledItem> PatchLeveledItems(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
@@ -196,10 +196,10 @@ namespace Reqtificator
             ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> cache, UserSettings settings,
             IImmutableSet<ModKey> modsWithRequiemAsMaster)
         {
-            var leveledItems = loadOrder.PriorityOrder.LeveledItem().WinningOverrides();
-            return new CompactLeveledListUnrolling<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(
+            var leveledItems = loadOrder.PriorityOrder.LeveledItem().WinningContextOverrides();
+            return new CompactLeveledListUnrolling<LeveledItem, ILeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(
                     new CompactLeveledItemUnroller(modsWithCompactLeveledLists))
-                .AndThen(new LeveledListMerging<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(
+                .AndThen(new LeveledListMerging<LeveledItem, ILeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(
                     settings.MergeLeveledLists, cache, modsWithRequiemAsMaster,
                     new CompactLeveledItemUnroller(modsWithCompactLeveledLists), new LeveledItemMerger()))
                 .AndThen(new TemperedItemGeneration(modsWithTemperedItems))
@@ -212,10 +212,10 @@ namespace Reqtificator
             ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> cache, UserSettings settings,
             IImmutableSet<ModKey> modsWithRequiemAsMaster)
         {
-            var leveledCharacters = loadOrder.PriorityOrder.LeveledNpc().WinningOverrides();
-            return new CompactLeveledListUnrolling<LeveledNpc, ILeveledNpcGetter, ILeveledNpcEntryGetter>(
+            var leveledCharacters = loadOrder.PriorityOrder.LeveledNpc().WinningContextOverrides();
+            return new CompactLeveledListUnrolling<LeveledNpc, ILeveledNpc, ILeveledNpcGetter, ILeveledNpcEntryGetter>(
                     new CompactLeveledCharacterUnroller(modsWithCompactLeveledLists))
-                .AndThen(new LeveledListMerging<LeveledNpc, ILeveledNpcGetter, ILeveledNpcEntryGetter>(
+                .AndThen(new LeveledListMerging<LeveledNpc, ILeveledNpc, ILeveledNpcGetter, ILeveledNpcEntryGetter>(
                     settings.MergeLeveledLists, cache, modsWithRequiemAsMaster,
                     new CompactLeveledCharacterUnroller(modsWithCompactLeveledLists), new LeveledCharacterMerger()))
                 .ProcessCollection(leveledCharacters);
@@ -223,7 +223,7 @@ namespace Reqtificator
 
         private ErrorOr<ImmutableList<Armor>> PatchArmors(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var armors = loadOrder.PriorityOrder.Armor().WinningOverrides();
+            var armors = loadOrder.PriorityOrder.Armor().WinningContextOverrides();
             var armorRules = RecordUtils.LoadModConfigFiles(_context, "ArmorKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadKeywordRules<IArmorGetter>(x.Item2, x.Item1))
@@ -241,7 +241,7 @@ namespace Reqtificator
 
         private ErrorOr<ImmutableList<Weapon>> PatchWeapons(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var weapons = loadOrder.PriorityOrder.Weapon().WinningOverrides();
+            var weapons = loadOrder.PriorityOrder.Weapon().WinningContextOverrides();
             var weaponRules = RecordUtils.LoadModConfigFiles(_context, "WeaponKeywordAssignments")
                 .FlatMap(configs => configs.Select(x =>
                         AssignmentsFromRules.LoadKeywordRules<IWeaponGetter>(x.Item2, x.Item1))
@@ -273,12 +273,12 @@ namespace Reqtificator
                 );
             var actorRules = actorPerkRules.FlatMap(perks => actorSpellRules.Map(spells => (perks, spells)));
 
-            var actors = loadOrder.PriorityOrder.Npc().WinningOverrides();
+            var actors = loadOrder.PriorityOrder.Npc().WinningContextOverrides();
             var globalPerks =
                 RecordUtils.GetRecordsFromAllImports<IPerkGetter>(FormLists.GlobalPerks, importedModsLinkCache);
             return globalPerks.FlatMap(perks => actorRules.Map(rules =>
-                new ForwardDataFromTemplate<Npc, INpcGetter>(importedModsLinkCache, loadOrder,
-                        new ActorVisualAutoMerge(), enableVisualAutoMerge)
+                new ForwardDataFromTemplate<Npc, INpc, INpcGetter>(importedModsLinkCache, loadOrder,
+                new ActorVisualAutoMerge(), enableVisualAutoMerge)
                     .AndThen(new ActorCommonScripts(importedModsLinkCache))
                     .AndThen(new ActorGlobalPerks(perks))
                     .AndThen(new ActorPerksFromRules(rules.perks))
@@ -317,8 +317,8 @@ namespace Reqtificator
         private static ImmutableList<Race> PatchRaces(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> importedModsLinkCache, bool enableVisualAutoMerge)
         {
-            var races = loadOrder.PriorityOrder.Race().WinningOverrides();
-            return new ForwardDataFromTemplate<Race, IRaceGetter>(importedModsLinkCache, loadOrder,
+            var races = loadOrder.PriorityOrder.Race().WinningContextOverrides();
+            return new ForwardDataFromTemplate<Race, IRace, IRaceGetter>(importedModsLinkCache, loadOrder,
                 new RaceVisualAutoMerge(), enableVisualAutoMerge)
                 .AndThen(new CustomRacePatching()).ProcessCollection(races);
         }

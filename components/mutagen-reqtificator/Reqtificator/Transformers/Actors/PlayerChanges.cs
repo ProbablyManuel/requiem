@@ -6,7 +6,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Actors
 {
-    internal class PlayerChanges : TransformerV2<Npc, INpcGetter>
+    internal class PlayerChanges : Transformer<Npc, INpc, INpcGetter>
     {
         private readonly PlayerConfig _config;
 

@@ -7,9 +7,9 @@ using Xunit;
 
 namespace ReqtificatorTest.Transformers
 {
-    public static class ChainedTransformerV2Test
+    public static class ChainedTransformerTest
     {
-        private class DummyTransformer : TransformerV2<Keyword, IKeywordGetter>
+        private class DummyTransformer : Transformer<Keyword, IKeyword, IKeywordGetter>
         {
             private readonly string _checkPrefix;
             private readonly string _addPrefix;
