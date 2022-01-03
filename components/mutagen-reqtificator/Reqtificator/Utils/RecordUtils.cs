@@ -17,9 +17,10 @@ namespace Reqtificator.Utils
             ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache) where TGetter : class, ISkyrimMajorRecordGetter
         {
             IImmutableSet<IFormLinkGetter<TGetter>> records = ImmutableHashSet<IFormLinkGetter<TGetter>>.Empty;
-            foreach (var recordVersion in formListLink.ResolveAll(linkCache))
+            foreach (var recordVersion in formListLink
+                .ResolveAllContexts<ISkyrimMod, ISkyrimModGetter, FormList, IFormListGetter>(linkCache))
             {
-                foreach (var entry in recordVersion.Items)
+                foreach (var entry in recordVersion.Record.Items)
                 {
                     if (entry.TryResolve<TGetter>(linkCache, out var resolved))
                     {
@@ -27,7 +28,8 @@ namespace Reqtificator.Utils
                     }
                     else
                     {
-                        var error = new InvalidRecordReferenceException<TGetter>(new FormLink<TGetter>(entry.FormKey));
+                        var error = new InvalidRecordReferenceException<TGetter>(new FormLink<TGetter>(entry.FormKey),
+                            recordVersion.ModKey, recordVersion.Record);
                         return new Failed<IImmutableSet<IFormLinkGetter<TGetter>>>(error);
                     }
                 }
@@ -36,7 +38,8 @@ namespace Reqtificator.Utils
             return records.AsSuccess();
         }
 
-        public static ErrorOr<IImmutableList<(string, Config)>> LoadModConfigFiles(GameContext context, string filePrefix)
+        public static ErrorOr<IImmutableList<(string, Config)>> LoadModConfigFiles(GameContext context,
+            string filePrefix)
         {
             //TODO: graceful error handling for not parseable configuration files
             var configPath = Path.Combine(context.DataFolder, "Reqtificator", "Data");
