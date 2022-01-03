@@ -12,11 +12,6 @@ namespace Reqtificator
     {
         public static GameContext GetRequiemContext(GameRelease release, ModKey patchToBeGenerated)
         {
-            if (!GameLocations.TryGetGameFolder(release, out var gameFolder))
-            {
-                throw new DirectoryNotFoundException("Could not locate game folder automatically.");
-            }
-
             var dataFolder = Directory.GetCurrentDirectory();
             if (!PluginListings.TryGetListingsFile(release, out var path))
             {
