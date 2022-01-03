@@ -10,7 +10,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.EncounterZones
 {
-    internal class OpenCombatBoundaries : TransformerV2<EncounterZone, IEncounterZoneGetter>
+    internal class OpenCombatBoundaries : Transformer<EncounterZone, IEncounterZone, IEncounterZoneGetter>
     {
         private readonly IReadOnlySet<IFormLink<IEncounterZoneGetter>> _alwaysClosedZones;
         private readonly bool _openCombatZones;

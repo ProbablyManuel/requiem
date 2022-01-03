@@ -6,7 +6,7 @@ using Reqtificator.StaticReferences;
 
 namespace Reqtificator.Transformers.Weapons
 {
-    internal class WeaponRangedSpeedScaling : TransformerV2<Weapon, IWeaponGetter>
+    internal class WeaponRangedSpeedScaling : Transformer<Weapon, IWeapon, IWeaponGetter>
     {
         public override TransformationResult<Weapon, IWeaponGetter> Process(
             TransformationResult<Weapon, IWeaponGetter> input)

@@ -8,7 +8,7 @@ using ArmorTransformationResult = Reqtificator.Transformers.TransformationResult
 
 namespace Reqtificator.Transformers.Armors
 {
-    internal class ArmorTypeKeyword : TransformerV2<Armor, IArmorGetter>
+    internal class ArmorTypeKeyword : Transformer<Armor, IArmor, IArmorGetter>
     {
         public override ArmorTransformationResult Process(ArmorTransformationResult input)
         {

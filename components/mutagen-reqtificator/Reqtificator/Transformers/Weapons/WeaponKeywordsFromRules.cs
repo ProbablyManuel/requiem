@@ -9,7 +9,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Weapons
 {
-    internal class WeaponKeywordsFromRules : TransformerV2<Weapon, IWeaponGetter>
+    internal class WeaponKeywordsFromRules : Transformer<Weapon, IWeapon, IWeaponGetter>
     {
         private readonly IImmutableList<AssignmentRule<IWeaponGetter, IKeywordGetter>> _rules;
 

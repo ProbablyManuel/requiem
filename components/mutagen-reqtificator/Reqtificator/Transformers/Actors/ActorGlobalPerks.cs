@@ -8,7 +8,7 @@ using Serilog;
 
 namespace Reqtificator.Transformers.Actors
 {
-    internal class ActorGlobalPerks : TransformerV2<Npc, INpcGetter>
+    internal class ActorGlobalPerks : Transformer<Npc, INpc, INpcGetter>
     {
         private readonly IImmutableSet<IFormLinkGetter<IPerkGetter>> _globalPerks;
 

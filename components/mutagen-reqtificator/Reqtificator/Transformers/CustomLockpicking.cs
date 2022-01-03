@@ -7,9 +7,10 @@ using Serilog;
 
 namespace Reqtificator.Transformers
 {
-    internal class CustomLockpicking<T, TGetter> : TransformerV2<T, TGetter>
-        where T : MajorRecord, TGetter, IScripted
-        where TGetter : IMajorRecordGetter, IScriptedGetter
+    internal class CustomLockpicking<T, TI, TGetter> : Transformer<T, TI, TGetter>
+        where T : MajorRecord, TI, IScripted
+        where TI : class, IMajorRecord, IScripted, TGetter
+        where TGetter : class, IMajorRecordGetter, IScriptedGetter
     {
         private readonly ScriptEntry _lockPickingScript;
 
