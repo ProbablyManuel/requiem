@@ -57,10 +57,19 @@ namespace Reqtificator
             var reqTags = new ReqTagParser(_events).ParseTagsFromModHeaders(loadOrder);
             var modsWithCompactLeveledLists = reqTags
                 .Where(kv => kv.Value.Contains(ReqTags.CompactLeveledLists))
-                .Select(kv => kv.Key).ToImmutableHashSet().Add(requiemModKey);
+                .Select(kv => kv.Key)
+                .ToImmutableHashSet()
+                .Add(requiemModKey);
             var modsWithTemperedItems = reqTags
                 .Where(kv => kv.Value.Contains(ReqTags.TemperedItems))
-                .Select(kv => kv.Key).ToImmutableHashSet().Add(requiemModKey);
+                .Select(kv => kv.Key)
+                .ToImmutableHashSet()
+                .Add(requiemModKey);
+            var modsWithActorVariations = reqTags
+                .Where(kv => kv.Value.Contains(ReqTags.ActorVariations))
+                .Select(kv => kv.Key)
+                .ToImmutableHashSet()
+                .Add(requiemModKey);
             var modsWithRequiemAsMaster = loadOrder.ListedOrder
                 .Where(ml => ml.Mod!.ModHeader.MasterReferences.Select(x => x.Master).Contains(requiemModKey))
                 .Select(ml => ml.ModKey)
@@ -104,7 +113,7 @@ namespace Reqtificator
 
             _events.PublishState(ReqtificatorState.Patching(55, "Actor Variations"));
             var actorVariationsPatched =
-                actorsPatched.Map(actors => PatchActorVariations(loadOrder, actors, generatedPatch));
+                actorsPatched.Map(actors => PatchActorVariations(loadOrder, actors, modsWithActorVariations, generatedPatch));
 
             Log.Information("adding patched records to output mod");
 
@@ -290,6 +299,7 @@ namespace Reqtificator
         private static ImmutableList<LeveledNpc> PatchActorVariations(
             ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             IImmutableList<Npc> patchedActors,
+            IImmutableSet<ModKey> modsWithActorVariations,
             ISkyrimMod targetMod)
         {
             var patchedActorsPseudoMod =
@@ -300,7 +310,7 @@ namespace Reqtificator
                 .ToImmutableLinkCache<ISkyrimMod, ISkyrimModGetter>();
 
             var variationsToGenerate = ActorVariationsGenerator.FindAllActorVariations(
-                loadOrder.PriorityOrder.LeveledNpc().WinningOverrides(), linkCacheWithPatchedActors);
+                loadOrder.PriorityOrder.LeveledNpc().WinningOverrides(), linkCacheWithPatchedActors, modsWithActorVariations);
 
             var generatedVariations =
                 ActorVariationsGenerator.BuildActorVariationContent(variationsToGenerate.ToImmutableList(),
@@ -308,7 +318,7 @@ namespace Reqtificator
 
             var updatedActorVariations = ActorVariationsGenerator.UpdateActorVariationLists(
                 loadOrder.PriorityOrder.LeveledNpc().WinningOverrides(), generatedVariations.Item2,
-                linkCacheWithPatchedActors);
+                linkCacheWithPatchedActors, modsWithActorVariations);
 
             pseudoModListing.Dispose();
             return updatedActorVariations;

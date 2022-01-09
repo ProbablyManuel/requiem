@@ -19,21 +19,30 @@ namespace ReqtificatorTest.Configuration
         {
             var mod1 = new SkyrimMod("Epic.esm", SkyrimRelease.SkyrimSE)
             {
-                ModHeader = { Description = "an epic adventure <<REQ:UNROLL; REQ:TEMPER>>" }
+                ModHeader = { Description = "an epic adventure <<REQ:UNROLL>>" }
             };
             var mod2 = new SkyrimMod("Mutations.esm", SkyrimRelease.SkyrimSE)
             {
                 ModHeader = { Description = "a mutated adventure <<REQ:MUTATE; REQ:TEMPER>>" }
             };
+            var mod3 = new SkyrimMod("Everything.esm", SkyrimRelease.SkyrimSE)
+            {
+                ModHeader = { Description = "a huge mod <<REQ:MUTATE; REQ:TEMPER;REQ:UNROLL>>" }
+            };
             var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>
-                {new ModListing<ISkyrimModGetter>(mod1), new ModListing<ISkyrimModGetter>(mod2)};
+            {
+                new ModListing<ISkyrimModGetter>(mod1),
+                new ModListing<ISkyrimModGetter>(mod2),
+                new ModListing<ISkyrimModGetter>(mod3)
+            };
             var internalEvents = new Mock<IInternalEvents>(MockBehavior.Strict);
 
             var tags = new ReqTagParser(internalEvents.Object).ParseTagsFromModHeaders(loadOrder);
             tags.Should().BeEquivalentTo(new Dictionary<ModKey, IImmutableSet<ReqTags>>
             {
-                {mod1.ModKey, ImmutableHashSet.Create(ReqTags.TemperedItems).Add(ReqTags.CompactLeveledLists)},
-                {mod2.ModKey, ImmutableHashSet.Create(ReqTags.ActorVariations).Add(ReqTags.TemperedItems)}
+                {mod1.ModKey, ImmutableHashSet.Create(ReqTags.CompactLeveledLists)},
+                {mod2.ModKey, ImmutableHashSet.Create(ReqTags.ActorVariations).Add(ReqTags.TemperedItems)},
+                {mod3.ModKey, ImmutableHashSet.Create(ReqTags.ActorVariations).Add(ReqTags.TemperedItems).Add(ReqTags.CompactLeveledLists)}
             });
         }
 
