@@ -19,10 +19,17 @@ namespace Reqtificator.Transformers.ActorVariations
     {
         private static readonly Regex ActorVariationsPattern = new Regex("^[^_]+_LChar_(?:Variations|VoiceSpawns)_");
 
-        public static IImmutableSet<VariationKey> FindAllActorVariations(IEnumerable<ILeveledNpcGetter> records,
-            ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
+        private static bool IsActorVariation(ILeveledNpcGetter record, IImmutableSet<ModKey> modsWithActorVariations)
         {
-            return records.Where(r => ActorVariationsPattern.IsMatch(r.EditorID ?? ""))
+            return modsWithActorVariations.Contains(record.FormKey.ModKey) &&
+                   ActorVariationsPattern.IsMatch(record.EditorID ?? "");
+        }
+
+        public static IImmutableSet<VariationKey> FindAllActorVariations(IEnumerable<ILeveledNpcGetter> records,
+            ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache,
+            IImmutableSet<ModKey> modsWithActorVariations)
+        {
+            return records.Where(r => IsActorVariation(r, modsWithActorVariations))
                 .Select(r => ExtractVariations(r, linkCache).Keys.ToImmutableHashSet())
                 .Aggregate((a, b) => a.Union(b));
         }
@@ -85,9 +92,10 @@ namespace Reqtificator.Transformers.ActorVariations
         public static ImmutableList<LeveledNpc> UpdateActorVariationLists(
             IEnumerable<ILeveledNpcGetter> records,
             ImmutableDictionary<VariationKey, LeveledNpc> variations,
-            ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
+            ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache,
+            IImmutableSet<ModKey> modsWithActorVariations)
         {
-            return records.Where(r => ActorVariationsPattern.IsMatch(r.EditorID ?? ""))
+            return records.Where(r => IsActorVariation(r, modsWithActorVariations))
                 .Select(r =>
                 {
                     var updated = r.DeepCopy();
