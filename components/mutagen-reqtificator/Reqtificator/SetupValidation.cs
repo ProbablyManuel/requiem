@@ -1,9 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Linq;
 using Mutagen.Bethesda;
+using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
+using Noggog;
 using Reqtificator.Events;
+using Reqtificator.Exceptions;
 using Reqtificator.StaticReferences;
 
 namespace Reqtificator
@@ -16,7 +21,8 @@ namespace Reqtificator
             // public static readonly Uri ScrambledBugs = new("https://www.nexusmods.com/skyrimspecialedition/mods/43532");
         }
 
-        public static ReqtificatorOutcome? VerifySetup(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, RequiemVersion patcherVersion)
+        public static ReqtificatorOutcome? VerifySetup(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
+            RequiemVersion patcherVersion)
         {
             var missingDependencies = new List<BugfixDependency>()
             {
@@ -24,12 +30,37 @@ namespace Reqtificator
                 // new BugfixDependency("Scrambled Bugs", "DLLPlugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs)
             }.FindAll(d => !System.IO.File.Exists(d.ExpectedLocation));
 
-            if (missingDependencies.Count > 0) { return new MissingBugfixDependency(missingDependencies); }
+            if (missingDependencies.Count > 0)
+            {
+                return new MissingBugfixDependency(missingDependencies);
+            }
 
             int pluginVersion = (int)((IGlobalIntGetter)loadOrder.ToImmutableLinkCache()
                 .Resolve<IGlobalGetter>(GlobalVariables.VersionStampPlugin.FormKey)).Data!;
 
-            return patcherVersion.AsNumeric() != pluginVersion ? new VersionMismatch(new RequiemVersion(pluginVersion), patcherVersion) : null;
+            if (patcherVersion.AsNumeric() != pluginVersion)
+                return new VersionMismatch(new RequiemVersion(pluginVersion), patcherVersion);
+
+            return ValidateLoadOrder(loadOrder);
+        }
+
+        private static ReqtificatorOutcome? ValidateLoadOrder(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+        {
+            var modList = loadOrder.Select(e => e.Key).ToImmutableList();
+            return loadOrder
+                .SelectMany((elem, index) =>
+                    {
+                        var missingMasters = elem.Value.Mod!.MasterReferences
+                            .Where(e => modList.Take(index).ContainsNot(e.Master))
+                            .Select(e => e.Master)
+                            .ToImmutableList();
+                        return missingMasters.IsEmpty
+                            ? ImmutableList.Create<ReqtificatorFailure>()
+                            : ReqtificatorFailure.CausedBy(new MissingMastersException(elem.Key, missingMasters))
+                                .AsEnumerable();
+                    }
+                )
+                .FirstOrDefault();
         }
     }
 }
