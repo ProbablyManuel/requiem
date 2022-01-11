@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
@@ -20,11 +22,13 @@ namespace Reqtificator.Exceptions
     {
         public T ProcessedRecord { get; }
         public ModKey LastOverwrite { get; }
+
         public RecordProcessingException(Exception inner, T processedRecord, ModKey lastOverwrite) : base(inner)
         {
             ProcessedRecord = processedRecord;
             LastOverwrite = lastOverwrite;
         }
+
         public override string Message
         {
             get
@@ -59,7 +63,8 @@ namespace Reqtificator.Exceptions
                 var name = (ParentRecord.EditorID is null)
                     ? $"'{ParentRecord.FormKey}'"
                     : $"'{ParentRecord.FormKey}' ({ParentRecord.EditorID})";
-                return $"record {name} contains unresolved reference {Unresolved.FormKey} in overwrite '{ProblematicMod}'";
+                return
+                    $"record {name} contains unresolved reference {Unresolved.FormKey} in overwrite '{ProblematicMod}'";
             }
         }
     }
@@ -128,6 +133,27 @@ namespace Reqtificator.Exceptions
 
         public RequiemVersion PluginVersion { get; }
         public RequiemVersion PatcherVersion { get; }
+    }
+
+    public class MissingMastersException : ReqtificatorException
+    {
+        public ModKey AffectedMod { get; }
+        public IReadOnlyList<ModKey> MissingMasters { get; }
+
+        public MissingMastersException(ModKey affectedMod, IReadOnlyList<ModKey> missingMasters)
+        {
+            AffectedMod = affectedMod;
+            MissingMasters = missingMasters;
+        }
+
+        public override string Message
+        {
+            get
+            {
+                var missingMasters = MissingMasters.Skip(1).Aggregate($"\"{MissingMasters.First()}\"", (a, b) => $"{a}, \"{b}\"");
+                return $"The mod \"{AffectedMod}\" is missing the following masters: {missingMasters}";
+            }
+        }
     }
 
     public class OversizedLeveledListException : ReqtificatorException
