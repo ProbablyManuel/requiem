@@ -91,17 +91,26 @@ namespace Reqtificator
 
         private void HandlePatchRequest(UserSettings updatedSettings, ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
-            _logs.LogLevel.MinimumLevel = logLevel;
-            updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
-            var generatedPatch = GeneratePatch(loadOrder, updatedSettings, PatchModKey);
-            Log.Information("done patching, now exporting to disk");
+            try
+            {
+                var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
+                _logs.LogLevel.MinimumLevel = logLevel;
+                updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
+                var generatedPatch = GeneratePatch(loadOrder, updatedSettings, PatchModKey);
+                Log.Information("done patching, now exporting to disk");
 
-            _events.PublishState(ReqtificatorState.Patching(90, "Saving Patch"));
-            WritePatchToDisk(generatedPatch, _context.DataFolder);
-            Log.Information("done exporting");
+                _events.PublishState(ReqtificatorState.Patching(90, "Saving Patch"));
+                WritePatchToDisk(generatedPatch, _context.DataFolder);
+                Log.Information("done exporting");
 
-            _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
+                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Patching process failed!");
+                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorFailure.CausedBy(ex)));
+                throw;
+            }
         }
 
         private ILoadOrder<IModListing<ISkyrimModGetter>> LoadAndVerifyLoadOrder(ReqtificatorState stateToReturnTo)
