@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
+using Noggog;
+using Reqtificator.Exceptions;
 
 namespace Reqtificator.Transformers.Rules
 {
@@ -29,29 +32,38 @@ namespace Reqtificator.Transformers.Rules
             NpcConfiguration.TemplateFlag flagToFollow, params NpcConfiguration.TemplateFlag[] additionalFlagsToFollow)
         {
             var allFlags = additionalFlagsToFollow.ToImmutableHashSet().Add(flagToFollow);
-            return RecurseThroughTemplates(record, allFlags.ToImmutableList(),
-                ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty);
+            return RecurseThroughTemplates(Cache.ResolveContext<INpcSpawn, INpcSpawnGetter>(record.FormKey),
+                allFlags.ToImmutableList(),
+                ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty,
+                ImmutableList<(ModKey, INpcSpawnGetter)>.Empty);
         }
 
         private IEnumerable<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>> RecurseThroughTemplates(
-            INpcSpawnGetter record,
+            IModContext<ISkyrimMod, ISkyrimModGetter, INpcSpawn, INpcSpawnGetter> contextRecord,
             IImmutableList<NpcConfiguration.TemplateFlag> flagsToFollow,
-            IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter> dataProvidedByParents)
+            IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter> dataProvidedByParents,
+            IImmutableList<(ModKey, INpcSpawnGetter)> inheritanceChain)
         {
-            if (record is ILeveledNpcGetter lChar)
+            if (inheritanceChain.Any(e => e.Item2.FormKey == contextRecord.Record.FormKey))
+            {
+                throw new CircularInheritanceException(contextRecord.Record, inheritanceChain);
+            }
+
+            if (contextRecord.Record is ILeveledNpcGetter lChar)
             {
                 //TODO: define a null-handling strategy for such essentially broken records
                 foreach (var entry in lChar.Entries!)
                 {
                     foreach (var result in RecurseThroughTemplates(
-                        Cache.Resolve<INpcSpawnGetter>(entry.Data!.Reference.FormKey), flagsToFollow,
-                        dataProvidedByParents))
+                        Cache.ResolveContext<INpcSpawn, INpcSpawnGetter>(entry.Data!.Reference.FormKey), flagsToFollow,
+                        dataProvidedByParents,
+                        inheritanceChain.Add((contextRecord.ModKey, contextRecord.Record))))
                     {
                         yield return result;
                     }
                 }
             }
-            else if (record is INpcGetter actor)
+            else if (contextRecord.Record is INpcGetter actor)
             {
                 if (actor.Template.IsNull)
                 {
@@ -64,9 +76,10 @@ namespace Reqtificator.Transformers.Rules
                         .ToImmutableList();
                     var fromThisRecord = flagsToFollow.Where(f => flagsToResolve.ContainsNot(f)).ToImmutableDictionary(
                         f => f, f => actor).AddRange(dataProvidedByParents);
+
                     foreach (var result in RecurseThroughTemplates(
-                        Cache.Resolve<INpcSpawnGetter>(actor.Template.FormKey),
-                        flagsToResolve, fromThisRecord))
+                        Cache.ResolveContext<INpcSpawn, INpcSpawnGetter>(actor.Template.FormKey), flagsToResolve, fromThisRecord,
+                        inheritanceChain.Add((contextRecord.ModKey, contextRecord.Record))))
                     {
                         yield return result;
                     }
