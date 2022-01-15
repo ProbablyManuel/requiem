@@ -42,6 +42,33 @@ namespace Reqtificator.Exceptions
         }
     }
 
+    public class CircularInheritanceException : ReqtificatorException
+    {
+        public IReadOnlyList<(ModKey, INpcSpawnGetter)> TemplateChain { get; }
+        public INpcSpawnGetter Duplicate { get; }
+
+        public CircularInheritanceException(INpcSpawnGetter duplicate,
+            IReadOnlyList<(ModKey, INpcSpawnGetter)> templateChain)
+        {
+            TemplateChain = templateChain;
+            Duplicate = duplicate;
+        }
+
+        public override string Message
+        {
+            get
+            {
+                string Fmt(ModKey m, INpcSpawnGetter r) => $"* \"{r.FormKey}\" (last modified by \"{m}\")";
+                var inheritanceStack = TemplateChain.Select(e => Fmt(e.Item1, e.Item2))
+                    .Aggregate((s1, s2) => $"{s1}\n{s2}");
+
+                return
+                    $"A circular actor inheritance has been detected! The record \"{Duplicate.FormKey}\" was already " +
+                    $"encountered in the inheritance graph before. Templates parsed before:\n{inheritanceStack}";
+            }
+        }
+    }
+
     public class InvalidRecordReferenceException<T> : ReqtificatorException where T : class, IMajorRecordGetter
     {
         public IFormLinkGetter<T> Unresolved { get; }
@@ -150,7 +177,8 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                var missingMasters = MissingMasters.Skip(1).Aggregate($"\"{MissingMasters.First()}\"", (a, b) => $"{a}, \"{b}\"");
+                var missingMasters = MissingMasters.Skip(1)
+                    .Aggregate($"\"{MissingMasters.First()}\"", (a, b) => $"{a}, \"{b}\"");
                 return $"The mod \"{AffectedMod}\" is missing the following masters: {missingMasters}";
             }
         }

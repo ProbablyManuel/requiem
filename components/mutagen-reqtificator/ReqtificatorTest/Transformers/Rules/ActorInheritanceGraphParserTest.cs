@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Linq;
 using FluentAssertions;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Cache.Implementations;
@@ -7,6 +9,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
+using Reqtificator.Exceptions;
 using Reqtificator.Transformers.Rules;
 using Xunit;
 
@@ -20,6 +23,7 @@ namespace ReqtificatorTest.Transformers.Rules
             internal Npc Template2 { get; }
             internal Npc Template3 { get; }
             internal LeveledNpc LeveledCharWithMultipleActors { get; }
+            internal ModKey testModKey = new ModKey("testplugin", ModType.Master);
 
             public Fixture()
             {
@@ -54,7 +58,7 @@ namespace ReqtificatorTest.Transformers.Rules
 
             public ImmutableModLinkCache<ISkyrimMod, ISkyrimModGetter> getCache(params Npc[] npcsToAdd)
             {
-                var myMod = new SkyrimMod("testplugin.esm", SkyrimRelease.SkyrimSE);
+                var myMod = new SkyrimMod(testModKey, SkyrimRelease.SkyrimSE);
                 myMod.Npcs.Add(Template1);
                 myMod.Npcs.Add(Template2);
                 myMod.Npcs.Add(Template3);
@@ -236,6 +240,55 @@ namespace ReqtificatorTest.Transformers.Rules
                     { NpcConfiguration.TemplateFlag.Script, actorWithLeveledCharTemplate }
                 }
             );
+        }
+
+        [Fact]
+        public void Should_throw_an_exception_if_the_inheritance_graph_contains_a_circular_dependency()
+        {
+            var fixture = new Fixture();
+            var modKey1 = new ModKey("Npc", ModType.Master);
+            var modKey2 = new ModKey("More Npcs", ModType.Plugin);
+            var otherFormId = new FormKey(modKey1, 0x123FFF);
+            var circularDependentActor1 = new Npc(new FormKey(modKey1, 0x123EEE), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(otherFormId),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
+                }
+            };
+            var circularDependentActor2 = new Npc(otherFormId, SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(circularDependentActor1),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
+                }
+            };
+            var actorWithCircularTemplates = new Npc(new FormKey(modKey2, 0x123AAA), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(circularDependentActor2),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
+                }
+            };
+            var resolver = new ActorInheritanceGraphParser(fixture.getCache(circularDependentActor1,
+                circularDependentActor2, actorWithCircularTemplates));
+
+            Func<IImmutableList<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>> results = () =>
+                resolver.FindAllTemplates(actorWithCircularTemplates,
+                    NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits,
+                    NpcConfiguration.TemplateFlag.Script).ToImmutableList();
+
+            var exception = results.Should().Throw<CircularInheritanceException>().Which;
+            exception.Duplicate.FormKey.Should().Be(circularDependentActor2.FormKey);
+            exception.TemplateChain.Should().ContainInOrder(new List<(ModKey, INpcSpawnGetter)>
+            {
+                (fixture.testModKey, actorWithCircularTemplates),
+                (fixture.testModKey, circularDependentActor2),
+                (fixture.testModKey, circularDependentActor1)
+            });
         }
     }
 }
