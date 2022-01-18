@@ -52,9 +52,7 @@ Event OnEffectStart(Actor akTarget, Actor akCaster)
 		String name = akTarget.GetDisplayName()
 		
 		Float currenthealth = akTarget.GetActorValue("Health")
-		akTarget.RestoreActorValue("Health", 99999)
-		Float maxhealth = akTarget.GetActorValue("Health")
-		akTarget.DamageActorValue("Health", maxhealth - currenthealth)
+		Float maxhealth = akTarget.GetActorValueMax("Health")
 		Float healthpercent = currenthealth / maxhealth
 
 		String healthreport
