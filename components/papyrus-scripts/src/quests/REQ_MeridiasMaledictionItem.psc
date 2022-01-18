@@ -11,7 +11,7 @@ Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldCo
         oldRef.removeSpell(malediction)
     EndIf
     Actor newRef = akNewContainer as Actor
-    If (newRef && newRef.HasSpell(vampirism))
+    If (newRef && newRef.HasKeywordString("ActorTypeUndead"))
         newRef.addSpell(malediction, false)
     EndIf
 EndEvent
