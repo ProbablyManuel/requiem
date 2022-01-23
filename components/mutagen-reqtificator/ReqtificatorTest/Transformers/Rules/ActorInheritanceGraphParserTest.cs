@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Linq;
 using FluentAssertions;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Cache.Implementations;
@@ -7,6 +9,7 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
+using Reqtificator.Exceptions;
 using Reqtificator.Transformers.Rules;
 using Xunit;
 
@@ -20,13 +23,7 @@ namespace ReqtificatorTest.Transformers.Rules
             internal Npc Template2 { get; }
             internal Npc Template3 { get; }
             internal LeveledNpc LeveledCharWithMultipleActors { get; }
-            internal Npc ActorWithNoInheritance { get; }
-            internal Npc ActorWithSimpleActorTemplate { get; }
-            internal Npc ActorWithUnrelatedTemplateFlags { get; }
-            internal Npc ActorWithPartialInheritance { get; }
-            internal Npc ActorWithLeveledCharTemplate { get; }
-            internal Npc ActorWithPartialInheritanceAndNestedLeveledCharTemplate { get; }
-            public ImmutableModLinkCache<ISkyrimMod, ISkyrimModGetter> LinkCache { get; }
+            internal ModKey testModKey = new ModKey("testplugin", ModType.Master);
 
             public Fixture()
             {
@@ -49,75 +46,25 @@ namespace ReqtificatorTest.Transformers.Rules
                         {
                             new()
                             {
-                                Data = new LeveledNpcEntryData {Count = 1, Level = 1, Reference = Template2.AsLink()}
+                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template2.AsLink() }
                             },
                             new()
                             {
-                                Data = new LeveledNpcEntryData {Count = 1, Level = 1, Reference = Template3.AsLink()}
+                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template3.AsLink() }
                             }
                         }
                     };
+            }
 
-                ActorWithNoInheritance = new Npc(FormKey.Factory("123AAA:Npc.esm"), SkyrimRelease.SkyrimSE)
-                {
-                    Template = new FormLinkNullable<INpcSpawnGetter>()
-                };
-                ActorWithSimpleActorTemplate = new Npc(FormKey.Factory("123BBB:Npc.esm"), SkyrimRelease.SkyrimSE)
-                {
-                    Template = new FormLinkNullable<INpcSpawnGetter>(Template1),
-                    Configuration = new NpcConfiguration()
-                    {
-                        TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
-                    }
-                };
-                ActorWithUnrelatedTemplateFlags = new Npc(FormKey.Factory("123CCC:Npc.esm"), SkyrimRelease.SkyrimSE)
-                {
-                    Template = new FormLinkNullable<INpcSpawnGetter>(Template1),
-                    Configuration = new NpcConfiguration()
-                    {
-                        TemplateFlags = NpcConfiguration.TemplateFlag.Script | NpcConfiguration.TemplateFlag.Factions
-                    }
-                };
-                ActorWithPartialInheritance = new Npc(FormKey.Factory("123DDD:Npc.esm"), SkyrimRelease.SkyrimSE)
-                {
-                    Template = new FormLinkNullable<INpcSpawnGetter>(Template1),
-                    Configuration = new NpcConfiguration()
-                    {
-                        TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
-                    }
-                };
-                ActorWithLeveledCharTemplate = new Npc(FormKey.Factory("123EEE:Npc.esm"), SkyrimRelease.SkyrimSE)
-                {
-                    Template = new FormLinkNullable<INpcSpawnGetter>(LeveledCharWithMultipleActors),
-                    Configuration = new NpcConfiguration()
-                    {
-                        TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
-                    }
-                };
-                ActorWithPartialInheritanceAndNestedLeveledCharTemplate =
-                    new Npc(FormKey.Factory("123FFF:Npc.esm"), SkyrimRelease.SkyrimSE)
-                    {
-                        Template = new FormLinkNullable<INpcSpawnGetter>(ActorWithLeveledCharTemplate),
-                        Configuration = new NpcConfiguration()
-                        {
-                            TemplateFlags = NpcConfiguration.TemplateFlag.Keywords |
-                                            NpcConfiguration.TemplateFlag.Script
-                        }
-                    };
-
-                var myMod = new SkyrimMod("testplugin.esm", SkyrimRelease.SkyrimSE);
+            public ImmutableModLinkCache<ISkyrimMod, ISkyrimModGetter> getCache(params Npc[] npcsToAdd)
+            {
+                var myMod = new SkyrimMod(testModKey, SkyrimRelease.SkyrimSE);
                 myMod.Npcs.Add(Template1);
                 myMod.Npcs.Add(Template2);
                 myMod.Npcs.Add(Template3);
                 myMod.LeveledNpcs.Add(LeveledCharWithMultipleActors);
-                myMod.Npcs.Add(ActorWithNoInheritance);
-                myMod.Npcs.Add(ActorWithSimpleActorTemplate);
-                myMod.Npcs.Add(ActorWithUnrelatedTemplateFlags);
-                myMod.Npcs.Add(ActorWithPartialInheritance);
-                myMod.Npcs.Add(ActorWithLeveledCharTemplate);
-                myMod.Npcs.Add(ActorWithPartialInheritanceAndNestedLeveledCharTemplate);
-
-                LinkCache = new ImmutableModLinkCache<ISkyrimMod, ISkyrimModGetter>(myMod,
+                npcsToAdd.ForEach(myMod.Npcs.Add);
+                return new ImmutableModLinkCache<ISkyrimMod, ISkyrimModGetter>(myMod,
                     LinkCachePreferences.Default);
             }
         }
@@ -126,15 +73,19 @@ namespace ReqtificatorTest.Transformers.Rules
         public void Should_return_the_correct_inheritance_information_for_an_actor_with_no_template()
         {
             var fixture = new Fixture();
-            var resolver = new ActorInheritanceGraphParser(fixture.LinkCache);
+            var actorWithNoInheritance = new Npc(FormKey.Factory("123AAA:Npc.esm"), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>()
+            };
+            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithNoInheritance));
 
-            var results = resolver.FindAllTemplates(fixture.ActorWithNoInheritance,
+            var results = resolver.FindAllTemplates(actorWithNoInheritance,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
             results.Should().HaveCount(1);
             results.Should().ContainEquivalentOf(new Dictionary<NpcConfiguration.TemplateFlag, INpcGetter>
                 {
-                    {NpcConfiguration.TemplateFlag.Keywords, fixture.ActorWithNoInheritance},
-                    {NpcConfiguration.TemplateFlag.Traits, fixture.ActorWithNoInheritance}
+                    { NpcConfiguration.TemplateFlag.Keywords, actorWithNoInheritance },
+                    { NpcConfiguration.TemplateFlag.Traits, actorWithNoInheritance }
                 }
             );
         }
@@ -143,15 +94,23 @@ namespace ReqtificatorTest.Transformers.Rules
         public void Should_return_the_correct_inheritance_information_for_an_actor_with_no_relevant_inheritance_flags()
         {
             var fixture = new Fixture();
-            var resolver = new ActorInheritanceGraphParser(fixture.LinkCache);
+            var actorWithUnrelatedTemplateFlags = new Npc(FormKey.Factory("123CCC:Npc.esm"), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(fixture.Template1),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Script | NpcConfiguration.TemplateFlag.Factions
+                }
+            };
+            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithUnrelatedTemplateFlags));
 
-            var results = resolver.FindAllTemplates(fixture.ActorWithUnrelatedTemplateFlags,
+            var results = resolver.FindAllTemplates(actorWithUnrelatedTemplateFlags,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
             results.Should().HaveCount(1);
             results.Should().ContainEquivalentOf(new Dictionary<NpcConfiguration.TemplateFlag, INpcGetter>
                 {
-                    {NpcConfiguration.TemplateFlag.Keywords, fixture.ActorWithUnrelatedTemplateFlags},
-                    {NpcConfiguration.TemplateFlag.Traits, fixture.ActorWithUnrelatedTemplateFlags}
+                    { NpcConfiguration.TemplateFlag.Keywords, actorWithUnrelatedTemplateFlags },
+                    { NpcConfiguration.TemplateFlag.Traits, actorWithUnrelatedTemplateFlags }
                 }
             );
         }
@@ -160,15 +119,24 @@ namespace ReqtificatorTest.Transformers.Rules
         public void Should_return_the_correct_inheritance_information_for_an_actor_with_a_simple_direct_template()
         {
             var fixture = new Fixture();
-            var resolver = new ActorInheritanceGraphParser(fixture.LinkCache);
+            var actorWithSimpleActorTemplate = new Npc(FormKey.Factory("123BBB:Npc.esm"), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(fixture.Template1),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
+                }
+            };
 
-            var results = resolver.FindAllTemplates(fixture.ActorWithSimpleActorTemplate,
+            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithSimpleActorTemplate));
+
+            var results = resolver.FindAllTemplates(actorWithSimpleActorTemplate,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
             results.Should().HaveCount(1);
             results.Should().ContainEquivalentOf(new Dictionary<NpcConfiguration.TemplateFlag, INpcGetter>
                 {
-                    {NpcConfiguration.TemplateFlag.Keywords, fixture.Template1},
-                    {NpcConfiguration.TemplateFlag.Traits, fixture.Template1}
+                    { NpcConfiguration.TemplateFlag.Keywords, fixture.Template1 },
+                    { NpcConfiguration.TemplateFlag.Traits, fixture.Template1 }
                 }
             );
         }
@@ -177,15 +145,23 @@ namespace ReqtificatorTest.Transformers.Rules
         public void Should_return_the_correct_inheritance_information_for_an_actor_with_partial_inheritance()
         {
             var fixture = new Fixture();
-            var resolver = new ActorInheritanceGraphParser(fixture.LinkCache);
+            var actorWithPartialInheritance = new Npc(FormKey.Factory("123DDD:Npc.esm"), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(fixture.Template1),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
+                }
+            };
+            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithPartialInheritance));
 
-            var results = resolver.FindAllTemplates(fixture.ActorWithPartialInheritance,
+            var results = resolver.FindAllTemplates(actorWithPartialInheritance,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
             results.Should().HaveCount(1);
             results.Should().ContainEquivalentOf(new Dictionary<NpcConfiguration.TemplateFlag, INpcGetter>
                 {
-                    {NpcConfiguration.TemplateFlag.Keywords, fixture.Template1},
-                    {NpcConfiguration.TemplateFlag.Traits, fixture.ActorWithPartialInheritance}
+                    { NpcConfiguration.TemplateFlag.Keywords, fixture.Template1 },
+                    { NpcConfiguration.TemplateFlag.Traits, actorWithPartialInheritance }
                 }
             );
         }
@@ -194,20 +170,28 @@ namespace ReqtificatorTest.Transformers.Rules
         public void Should_return_the_correct_inheritance_information_for_an_actor_inheriting_from_a_leveled_character()
         {
             var fixture = new Fixture();
-            var resolver = new ActorInheritanceGraphParser(fixture.LinkCache);
+            var actorWithLeveledCharTemplate = new Npc(FormKey.Factory("123EEE:Npc.esm"), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(fixture.LeveledCharWithMultipleActors),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
+                }
+            };
+            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithLeveledCharTemplate));
 
-            var results = resolver.FindAllTemplates(fixture.ActorWithLeveledCharTemplate,
+            var results = resolver.FindAllTemplates(actorWithLeveledCharTemplate,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
             results.Should().HaveCount(2);
             results.Should().ContainEquivalentOf(new Dictionary<NpcConfiguration.TemplateFlag, INpcGetter>
             {
-                {NpcConfiguration.TemplateFlag.Keywords, fixture.Template2},
-                {NpcConfiguration.TemplateFlag.Traits, fixture.Template2}
+                { NpcConfiguration.TemplateFlag.Keywords, fixture.Template2 },
+                { NpcConfiguration.TemplateFlag.Traits, fixture.Template2 }
             });
             results.Should().ContainEquivalentOf(new Dictionary<NpcConfiguration.TemplateFlag, INpcGetter>
             {
-                {NpcConfiguration.TemplateFlag.Keywords, fixture.Template3},
-                {NpcConfiguration.TemplateFlag.Traits, fixture.Template3}
+                { NpcConfiguration.TemplateFlag.Keywords, fixture.Template3 },
+                { NpcConfiguration.TemplateFlag.Traits, fixture.Template3 }
             });
         }
 
@@ -215,26 +199,96 @@ namespace ReqtificatorTest.Transformers.Rules
         public void Should_return_the_correct_inheritance_information_for_an_actor_with_partial_lchar_inheritance()
         {
             var fixture = new Fixture();
-            var resolver = new ActorInheritanceGraphParser(fixture.LinkCache);
+            var actorWithLeveledCharTemplate = new Npc(FormKey.Factory("123EEE:Npc.esm"), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(fixture.LeveledCharWithMultipleActors),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
+                }
+            };
+            var actorWithPartialInheritanceAndNestedLeveledCharTemplate =
+                new Npc(FormKey.Factory("123FFF:Npc.esm"), SkyrimRelease.SkyrimSE)
+                {
+                    Template = new FormLinkNullable<INpcSpawnGetter>(actorWithLeveledCharTemplate),
+                    Configuration = new NpcConfiguration()
+                    {
+                        TemplateFlags = NpcConfiguration.TemplateFlag.Keywords |
+                                        NpcConfiguration.TemplateFlag.Script
+                    }
+                };
 
-            var results = resolver.FindAllTemplates(fixture.ActorWithPartialInheritanceAndNestedLeveledCharTemplate,
+            var resolver =
+                new ActorInheritanceGraphParser(fixture.getCache(actorWithLeveledCharTemplate,
+                    actorWithPartialInheritanceAndNestedLeveledCharTemplate));
+
+            var results = resolver.FindAllTemplates(actorWithPartialInheritanceAndNestedLeveledCharTemplate,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits,
                 NpcConfiguration.TemplateFlag.Script).ToImmutableList();
             results.Should().HaveCount(2);
             results.Should().ContainEquivalentOf(new Dictionary<NpcConfiguration.TemplateFlag, INpcSpawnGetter>()
                 {
-                    {NpcConfiguration.TemplateFlag.Keywords, fixture.Template2},
-                    {NpcConfiguration.TemplateFlag.Traits, fixture.ActorWithPartialInheritanceAndNestedLeveledCharTemplate},
-                    {NpcConfiguration.TemplateFlag.Script, fixture.ActorWithLeveledCharTemplate}
+                    { NpcConfiguration.TemplateFlag.Keywords, fixture.Template2 },
+                    { NpcConfiguration.TemplateFlag.Traits, actorWithPartialInheritanceAndNestedLeveledCharTemplate },
+                    { NpcConfiguration.TemplateFlag.Script, actorWithLeveledCharTemplate }
                 }
             );
             results.Should().ContainEquivalentOf(new Dictionary<NpcConfiguration.TemplateFlag, INpcSpawnGetter>()
                 {
-                    {NpcConfiguration.TemplateFlag.Keywords, fixture.Template3},
-                    {NpcConfiguration.TemplateFlag.Traits, fixture.ActorWithPartialInheritanceAndNestedLeveledCharTemplate},
-                    {NpcConfiguration.TemplateFlag.Script, fixture.ActorWithLeveledCharTemplate}
+                    { NpcConfiguration.TemplateFlag.Keywords, fixture.Template3 },
+                    { NpcConfiguration.TemplateFlag.Traits, actorWithPartialInheritanceAndNestedLeveledCharTemplate },
+                    { NpcConfiguration.TemplateFlag.Script, actorWithLeveledCharTemplate }
                 }
             );
+        }
+
+        [Fact]
+        public void Should_throw_an_exception_if_the_inheritance_graph_contains_a_circular_dependency()
+        {
+            var fixture = new Fixture();
+            var modKey1 = new ModKey("Npc", ModType.Master);
+            var modKey2 = new ModKey("More Npcs", ModType.Plugin);
+            var otherFormId = new FormKey(modKey1, 0x123FFF);
+            var circularDependentActor1 = new Npc(new FormKey(modKey1, 0x123EEE), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(otherFormId),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
+                }
+            };
+            var circularDependentActor2 = new Npc(otherFormId, SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(circularDependentActor1),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
+                }
+            };
+            var actorWithCircularTemplates = new Npc(new FormKey(modKey2, 0x123AAA), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(circularDependentActor2),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
+                }
+            };
+            var resolver = new ActorInheritanceGraphParser(fixture.getCache(circularDependentActor1,
+                circularDependentActor2, actorWithCircularTemplates));
+
+            Func<IImmutableList<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>> results = () =>
+                resolver.FindAllTemplates(actorWithCircularTemplates,
+                    NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits,
+                    NpcConfiguration.TemplateFlag.Script).ToImmutableList();
+
+            var exception = results.Should().Throw<CircularInheritanceException>().Which;
+            exception.Duplicate.FormKey.Should().Be(circularDependentActor2.FormKey);
+            exception.TemplateChain.Should().ContainInOrder(new List<(ModKey, INpcSpawnGetter)>
+            {
+                (fixture.testModKey, actorWithCircularTemplates),
+                (fixture.testModKey, circularDependentActor2),
+                (fixture.testModKey, circularDependentActor1)
+            });
         }
     }
 }
