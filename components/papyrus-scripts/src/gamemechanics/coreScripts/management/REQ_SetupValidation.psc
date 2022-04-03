@@ -52,6 +52,8 @@ Bool Function validateSetup(Int versionPlugin, Int versionSkyProcPatch)
 	Int[] subVersionsPlugin = getSubversions(versionPlugin)
     Int[] subVersionsSkyProc = getSubversions(versionSkyProcPatch)
 
+    BashedPatch_TestList.Revert()
+
 	If (version_script < 48)
 		SKSE_missing.Show()
 	ElseIf (version_skse != version_script || version_script == 0)
