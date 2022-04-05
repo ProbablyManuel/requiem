@@ -290,5 +290,42 @@ namespace ReqtificatorTest.Transformers.Rules
                 (fixture.testModKey, circularDependentActor1)
             });
         }
+
+        [Fact]
+        public void Should_throw_an_exception_if_the_inheritance_graph_contains_an_unresolved_reference()
+        {
+            var fixture = new Fixture();
+            var unresolvedReference = new FormLinkNullable<INpcSpawnGetter>(FormKey.Factory("000001:Void.esm"));
+            var actorWithUnresolvedTemplate = new Npc(FormKey.Factory("123EEE:Npc.esm"), SkyrimRelease.SkyrimSE)
+            {
+                Template = unresolvedReference,
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
+                }
+            };
+            var otherActor = new Npc(FormKey.Factory("123FFF:Npc.esm"), SkyrimRelease.SkyrimSE)
+            {
+                Template = new FormLinkNullable<INpcSpawnGetter>(actorWithUnresolvedTemplate),
+                Configuration = new NpcConfiguration()
+                {
+                    TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
+                }
+            };
+            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithUnresolvedTemplate, otherActor));
+
+            Func<IImmutableList<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>> results = () =>
+                resolver.FindAllTemplates(otherActor,
+                    NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits,
+                    NpcConfiguration.TemplateFlag.Script).ToImmutableList();
+
+            var exception = results.Should().Throw<MissingTemplateException>().Which;
+            exception.MissingTemplate.FormKey.Should().Be(unresolvedReference.FormKey);
+            exception.TemplateChain.Should().ContainInOrder(new List<(ModKey, INpcSpawnGetter)>
+            {
+                (fixture.testModKey, otherActor),
+                (fixture.testModKey, actorWithUnresolvedTemplate)
+            });
+        }
     }
 }

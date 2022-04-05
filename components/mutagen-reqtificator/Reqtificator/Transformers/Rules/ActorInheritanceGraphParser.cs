@@ -3,6 +3,7 @@ using System.Collections.Immutable;
 using System.Linq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
+using Mutagen.Bethesda.Plugins.Exceptions;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.Exceptions;
@@ -49,15 +50,16 @@ namespace Reqtificator.Transformers.Rules
                 throw new CircularInheritanceException(contextRecord.Record, inheritanceChain);
             }
 
+            var updatedInheritanceChain = inheritanceChain.Add((contextRecord.ModKey, contextRecord.Record));
+
             if (contextRecord.Record is ILeveledNpcGetter lChar)
             {
                 //TODO: define a null-handling strategy for such essentially broken records
                 foreach (var entry in lChar.Entries!)
                 {
                     foreach (var result in RecurseThroughTemplates(
-                        Cache.ResolveContext<INpcSpawn, INpcSpawnGetter>(entry.Data!.Reference.FormKey), flagsToFollow,
-                        dataProvidedByParents,
-                        inheritanceChain.Add((contextRecord.ModKey, contextRecord.Record))))
+                        GetContext(entry.Data!.Reference.FormKey, updatedInheritanceChain), flagsToFollow,
+                        dataProvidedByParents, updatedInheritanceChain))
                     {
                         yield return result;
                     }
@@ -78,12 +80,25 @@ namespace Reqtificator.Transformers.Rules
                         f => f, f => actor).AddRange(dataProvidedByParents);
 
                     foreach (var result in RecurseThroughTemplates(
-                        Cache.ResolveContext<INpcSpawn, INpcSpawnGetter>(actor.Template.FormKey), flagsToResolve, fromThisRecord,
-                        inheritanceChain.Add((contextRecord.ModKey, contextRecord.Record))))
+                        GetContext(actor.Template.FormKey, updatedInheritanceChain), flagsToResolve, fromThisRecord,
+                        updatedInheritanceChain))
                     {
                         yield return result;
                     }
                 }
+            }
+        }
+
+        private IModContext<ISkyrimMod, ISkyrimModGetter, INpcSpawn, INpcSpawnGetter> GetContext(FormKey formKey,
+            IImmutableList<(ModKey, INpcSpawnGetter)> inheritanceChain)
+        {
+            try
+            {
+                return Cache.ResolveContext<INpcSpawn, INpcSpawnGetter>(formKey);
+            }
+            catch (MissingRecordException)
+            {
+                throw new MissingTemplateException(new FormLinkNullable<INpcSpawnGetter>(formKey), inheritanceChain);
             }
         }
     }
