@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.IO;
 using System.Linq;
-using Mutagen.Bethesda;
-using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -28,7 +27,7 @@ namespace Reqtificator
             {
                 new BugfixDependency("SSE Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
                 // new BugfixDependency("Scrambled Bugs", "DLLPlugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs)
-            }.FindAll(d => !System.IO.File.Exists(d.ExpectedLocation));
+            }.FindAll(d => !File.Exists(d.ExpectedLocation));
 
             if (missingDependencies.Count > 0)
             {
@@ -50,6 +49,10 @@ namespace Reqtificator
             return loadOrder
                 .SelectMany((elem, index) =>
                     {
+                        if (elem.Value.Mod is null)
+                            return ReqtificatorFailure.CausedBy(new ModFromLoadOrderNotFoundException(elem.Key))
+                                .AsEnumerable();
+
                         var missingMasters = elem.Value.Mod!.MasterReferences
                             .Where(e => modList.Take(index).ContainsNot(e.Master))
                             .Select(e => e.Master)
