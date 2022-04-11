@@ -212,6 +212,18 @@ namespace Reqtificator.Exceptions
         }
     }
 
+    public class ModFromLoadOrderNotFoundException : ReqtificatorException
+    {
+        public ModKey AffectedMod { get; }
+
+        public ModFromLoadOrderNotFoundException(ModKey affectedMod)
+        {
+            AffectedMod = affectedMod;
+        }
+
+        public override string Message => $"The mod \"{AffectedMod}\" is specified in your load order, but could not be imported.";
+    }
+
     public class OversizedLeveledListException : ReqtificatorException
     {
         public FormKey FormID { get; }
