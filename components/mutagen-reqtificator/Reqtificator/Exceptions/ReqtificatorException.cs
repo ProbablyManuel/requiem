@@ -221,7 +221,7 @@ namespace Reqtificator.Exceptions
             AffectedMod = affectedMod;
         }
 
-        public override string Message => $"The mod \"{AffectedMod}\" is specified in your load order, but could not be imported.";
+        public override string Message => $"The mod \"{AffectedMod}\" is specified in your load order, but could not be found.";
     }
 
     public class OversizedLeveledListException : ReqtificatorException
