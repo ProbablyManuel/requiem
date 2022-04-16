@@ -8,6 +8,7 @@ using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.Events;
+using Reqtificator.Events.Outcomes;
 using Reqtificator.Exceptions;
 using Reqtificator.StaticReferences;
 
