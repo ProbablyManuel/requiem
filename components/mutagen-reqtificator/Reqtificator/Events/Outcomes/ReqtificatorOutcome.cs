@@ -1,6 +1,6 @@
 ﻿using Reqtificator.Utils;
 
-namespace Reqtificator.Events
+namespace Reqtificator.Events.Outcomes
 {
     public enum PatchStatus
     {

@@ -1,4 +1,5 @@
 ﻿using System;
+using Reqtificator.Events.Outcomes;
 using Reqtificator.Utils;
 
 namespace Reqtificator.Events
