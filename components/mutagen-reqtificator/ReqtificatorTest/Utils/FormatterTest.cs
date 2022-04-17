@@ -32,5 +32,21 @@ namespace ReqtificatorTest.Utils
             Action act = () => Formatter.FormatMultiline(message);
             _ = act.Should().Throw<FormatException>();
         }
+
+        [Fact]
+        public void Should_remove_the_indent_Up_to_the_indentation_character_from_multiline_strings()
+        {
+            string message = @"|This is a message
+                |which has been indented.
+            |It should appear
+                |as a single line without the indent.";
+
+            string expectedMessage = "This is a message\r\nwhich has been indented.\r\n" +
+                                     "It should appear\r\nas a single line without the indent.";
+
+            string result = Formatter.FormatMultiline(message, '|');
+
+            _ = result.Should().Be(expectedMessage);
+        }
     }
 }
