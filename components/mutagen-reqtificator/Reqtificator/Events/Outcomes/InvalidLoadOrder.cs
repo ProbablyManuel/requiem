@@ -37,7 +37,7 @@ namespace Reqtificator.Events.Outcomes
                 return $"Your load order could not be verified. The mod '{Mod.FileName}' has missing masters:\r\n"
                     + FormatModList("**Missing Mods** (no file found)", MissingMasters)
                     + FormatModList("**Disabled Mods** (file found, but not activated)", DeactivatedMasters)
-                    + FormatModList("**Unsorted Masters** (plugin loaded after depending mod)", OutOfOrderMasters);
+                    + FormatModList("**Unsorted Masters** (plugin loaded after dependent mod)", OutOfOrderMasters);
             }
         }
 
