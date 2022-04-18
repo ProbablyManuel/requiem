@@ -11,6 +11,7 @@ using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.Configuration;
 using Reqtificator.Events;
+using Reqtificator.Events.Outcomes;
 using Serilog;
 using Serilog.Events;
 
