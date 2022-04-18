@@ -101,10 +101,17 @@ namespace Reqtificator
                 Log.Information("done patching, now exporting to disk");
 
                 _events.PublishState(ReqtificatorState.Patching(90, "Saving Patch"));
-                WritePatchToDisk(generatedPatch, _context.DataFolder);
-                Log.Information("done exporting");
-
-                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
+                var outcome = WritePatchToDisk(generatedPatch, _context.DataFolder);
+                if (outcome is null)
+                {
+                    Log.Information("done exporting");
+                    _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
+                }
+                else
+                {
+                    Log.Information("exporting failed");
+                    _events.PublishState(ReqtificatorState.Stopped(outcome));
+                }
             }
             catch (Exception ex)
             {
@@ -158,9 +165,18 @@ namespace Reqtificator
             }
         }
 
-        public static void WritePatchToDisk(SkyrimMod generatedPatch, string outputDirectory)
+        public static ReqtificatorOutcome? WritePatchToDisk(SkyrimMod generatedPatch, string outputDirectory)
         {
-            generatedPatch.WriteToBinaryParallel(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName));
+            try
+            {
+                generatedPatch.WriteToBinaryParallel(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName));
+                return null;
+            }
+            catch (ArgumentException e)
+            {
+                if (e.Message.Contains("too many masters", StringComparison.InvariantCulture)) return new TooManyMasters();
+                throw;
+            }
         }
     }
 }
