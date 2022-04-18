@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Reqtificator.Events.Outcomes;
 using Reqtificator.Utils;
 
 namespace Reqtificator.Events

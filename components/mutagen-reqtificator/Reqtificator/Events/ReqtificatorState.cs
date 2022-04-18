@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Mutagen.Bethesda.Plugins;
 using Reqtificator.Configuration;
+using Reqtificator.Events.Outcomes;
 
 namespace Reqtificator.Events
 {
