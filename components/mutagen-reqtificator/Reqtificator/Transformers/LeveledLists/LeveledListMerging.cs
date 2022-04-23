@@ -30,6 +30,7 @@ namespace Reqtificator.Transformers.LeveledLists
         private readonly bool _mergeEnabled;
         private readonly ILinkCache<ISkyrimMod, ISkyrimModGetter> _cache;
         private readonly IImmutableSet<ModKey> _modsEligibleForMerging;
+        private readonly IImmutableDictionary<ModKey, ImmutableHashSet<ModKey>> _invertedMasterMap;
         private readonly ICompactLeveledListUnroller<T, TGetter, TEntry> _unroller;
         private readonly ILeveledListMerger<T, TGetter, TEntry> _merger;
         private static readonly ModKey Requiem = new ModKey("Requiem", ModType.Plugin);
@@ -44,6 +45,16 @@ namespace Reqtificator.Transformers.LeveledLists
             _modsEligibleForMerging = modsWithRequiemAsMaster.Add(Requiem);
             _unroller = compactLeveledItemUnroller;
             _merger = merger;
+            var masterMap = cache.ListedOrder.Where(m => modsWithRequiemAsMaster.Contains(m.ModKey))
+                .Select(m => KeyValuePair.Create(m.ModKey,
+                    m.MasterReferences.Where(master => modsWithRequiemAsMaster.Contains(master.Master))
+                        .Select(r => r.Master)
+                        .ToImmutableSortedSet()))
+                .ToImmutableDictionary();
+            _invertedMasterMap = masterMap.Keys.Select(mod => KeyValuePair.Create(mod,
+                masterMap.Where(e => e.Value.Contains(mod))
+                    .Select(e => e.Key).ToImmutableHashSet()
+            )).ToImmutableDictionary();
         }
 
         public override TransformationResult<T, TGetter> Process(
@@ -51,8 +62,11 @@ namespace Reqtificator.Transformers.LeveledLists
         {
             if (!_mergeEnabled) return input;
 
-            var toMerge = _cache.ResolveAllContexts<T, TGetter>(input.Record().FormKey)
+            var mergeCandidates = _cache.ResolveAllContexts<T, TGetter>(input.Record().FormKey)
                 .Where(x => _modsEligibleForMerging.Contains(x.ModKey)).ToList();
+            var toMerge = mergeCandidates.Where(c => c.ModKey == Requiem ||
+                mergeCandidates.All(other => _invertedMasterMap[c.ModKey].ContainsNot(other.ModKey))
+                ).ToList();
             var baseVersion = toMerge.Find(x => x.ModKey == Requiem)?.Record;
 
             if (baseVersion == null || toMerge.Count < 3) return input;
