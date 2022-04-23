@@ -4,6 +4,8 @@ using FluentAssertions;
 using Moq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
+using Mutagen.Bethesda.Plugins.Order;
+using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.Transformers;
@@ -24,9 +26,14 @@ namespace ReqtificatorTest.Transformers.LeveledLists
         public static readonly ModKey Patch1 = new ModKey("Epic Loot", ModType.Plugin);
         public static readonly ModKey Patch2 = new ModKey("Serious Loot", ModType.LightMaster);
 
+        public static readonly SkyrimMod ModRequiem = new SkyrimMod(Requiem, SkyrimRelease.SkyrimSE);
+        public static readonly SkyrimMod ModPatch1 = new SkyrimMod(Patch1, SkyrimRelease.SkyrimSE);
+        public static readonly SkyrimMod ModPatch2 = new SkyrimMod(Patch2, SkyrimRelease.SkyrimSE);
+
         public static readonly IImmutableSet<ModKey> ModsWithRequiemAsMaster =
             ImmutableHashSet<ModKey>.Empty.Add(Patch1).Add(Patch2);
 
+        //TODO: rewrite the entire test suite using a proper load order object instead of mocking library classes
 
         private class Fixture
         {
@@ -63,6 +70,7 @@ namespace ReqtificatorTest.Transformers.LeveledLists
                     }
                 };
                 UpdateVersion2 = version2;
+                Cache.SetupGet(c => c.ListedOrder).Returns(ImmutableList.Create(ModRequiem, ModPatch1, ModPatch2));
                 Transformer =
                     new LeveledListMerging<LeveledItem, ILeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(true,
                         Cache.Object, ModsWithRequiemAsMaster,
@@ -259,6 +267,7 @@ namespace ReqtificatorTest.Transformers.LeveledLists
                         baseVersion, null!, null!)
                 });
 
+            cache.SetupGet(c => c.ListedOrder).Returns(ImmutableList.Create(ModRequiem, ModPatch1, ModPatch2));
             var transformer =
                 new LeveledListMerging<LeveledItem, ILeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>(true,
                     cache.Object, ModsWithRequiemAsMaster,
