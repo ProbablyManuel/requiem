@@ -49,7 +49,7 @@ namespace Reqtificator.Transformers.LeveledLists
                 .Select(m => KeyValuePair.Create(m.ModKey,
                     m.MasterReferences.Where(master => modsWithRequiemAsMaster.Contains(master.Master))
                         .Select(r => r.Master)
-                        .ToImmutableSortedSet()))
+                        .ToImmutableHashSet()))
                 .ToImmutableDictionary();
             _invertedMasterMap = masterMap.Keys.Select(mod => KeyValuePair.Create(mod,
                 masterMap.Where(e => e.Value.Contains(mod))
