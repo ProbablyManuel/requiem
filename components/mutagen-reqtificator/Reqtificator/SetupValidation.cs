@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -48,7 +49,7 @@ namespace Reqtificator
         {
             var modList = loadOrder.Select(e => e.Key).ToImmutableList();
             return loadOrder
-                .SelectMany((elem, index) =>
+                .SelectMany<IKeyValue<IModListing<ISkyrimModGetter>, ModKey>, ReqtificatorOutcome>((elem, index) =>
                     {
                         if (elem.Value.Mod is null)
                             return ReqtificatorFailure.CausedBy(new ModFromLoadOrderNotFoundException(elem.Key))
