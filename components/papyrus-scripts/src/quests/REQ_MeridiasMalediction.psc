@@ -17,7 +17,7 @@ EndEvent
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
     Utility.Wait(1.0)
-    If (!akTarget.HasSpell(vampirism))
+    If (!akTarget.HasKeywordString("ActorTypeUndead"))
         akTarget.removeSpell(malediction)
     EndIf
 EndEvent
