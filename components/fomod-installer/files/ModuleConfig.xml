@@ -8,7 +8,7 @@
 					<plugins order="Explicit">
 						<plugin name="Core Mod">
 							<description>
-								Welcome! You are about to install Requiem - The Roleplaying Overhaul. After selecting your preferences on the following pages, you still have to create the SkyProc patch "Requiem for the Indifferent" as it was explained in the installation guide in our wiki.
+								Welcome! You are about to install Requiem - The Roleplaying Overhaul. After selecting your preferences on the following pages, you still have to create the patch plugin "Requiem for the Indifferent" as it was explained in the installation guide in our wiki.
 							</description>
 							<image path="fomod\images\Requiem.jpg"/>
 							<files>
@@ -23,8 +23,8 @@
 				</group>
 			</optionalFileGroups>
 		</installStep>
-		<!--Visual Options: Fonts and Activate Buttons-->
-		<installStep name="Visual Options">
+		<!--Font Options-->
+		<installStep name="Font">
 			<optionalFileGroups order="Explicit">
 				<group name="Font" type="SelectExactlyOne">
 					<plugins order="Explicit">
@@ -50,22 +50,6 @@ Does not support non-latin languages.
 							<conditionFlags>
 								<flag name="ThisDoesNothing">On</flag>
 							</conditionFlags>
-							<typeDescriptor>
-								<type name="Optional"/>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-				<group name="Activate Button" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Hide Activate Button">
-							<description>
-								Hide the button icon next to interaction tooltips like "talk to".
-							</description>
-							<image path="fomod\images\Activate Button.jpg"/>
-							<files>
-							<folder source="fomod\options\invisiblebuttons" destination="." priority="0"/>
-							</files>
 							<typeDescriptor>
 								<type name="Optional"/>
 							</typeDescriptor>
