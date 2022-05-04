@@ -88,14 +88,14 @@ function buildArmorOffsetValues() {
 	map.set("Heavy_Guard_Body_Winterhold", new ArmorValues(-50, -5, -100));
 	map.set("Heavy_Iron_Body_Pauldrons", new ArmorValues(30, 2.5, 75));
 	map.set("Heavy_Iron_Shield_Banded", new ArmorValues(10, 2, 40));
-	map.set("Light_Chitin_Shield", new ArmorValues(5, 2, 0));
 	map.set("Light_Fur_Body_Kilt", new ArmorValues(-50, -2, -20));
 	map.set("Light_Fur_Body_KiltWithMantle", new ArmorValues(-50, -2, -20));
 	map.set("Light_Hide_Body_Studded", new ArmorValues(25, 1, 25));
 	map.set("Light_Imperial_Body_Studded", new ArmorValues(25, 1, 25));
-	map.set("Light_Imperial_Body_Tullius", new ArmorValues(50, 0, 3000));
-	map.set("Light_Vampire_Body_Royal", new ArmorValues(60, 3, 500));
-	map.set("Light_Vampire_Body_Valerica", new ArmorValues(60, 3, 500));
+	map.set("Light_Imperial_Body_Tullius", new ArmorValues(0, 0, 3000));
+	map.set("Light_Vampire_Body_Harkon", new ArmorValues(50, 3, 500));
+	map.set("Light_Vampire_Body_Royal", new ArmorValues(50, 3, 500));
+	map.set("Light_Vampire_Body_Valerica", new ArmorValues(50, 3, 500));
 	return map;
 }
 
@@ -107,7 +107,7 @@ function buildArmorOffsetValues() {
 function buildArmorSetValues() {
 	const map = new Map();
 	buildArmorSetValuesBase(map);
-	buildArmorSetValuesVariants(map);
+	buildArmorSetValuesBaseVariants(map);
 	return map;
 }
 
@@ -118,50 +118,57 @@ function buildArmorSetValues() {
  */
 function buildArmorSetValuesBase(map) {
 	map.set("Heavy_Aetherium", new ArmorValues(900, 75, 50000));
+	map.set("Heavy_Ahzidal", new ArmorValues(600, 50, 5000));
 	map.set("Heavy_AncientNord", new ArmorValues(550, 40, 300));
-	map.set("Heavy_Blades", new ArmorValues(700, 50, 2500));
-	map.set("Heavy_Chitin", new ArmorValues(600, 35, 1000));
+	map.set("Heavy_Blades", new ArmorValues(700, 60, 2500));
+	map.set("Heavy_Bonemold", new ArmorValues(600, 40, 1000));
 	map.set("Heavy_Daedric", new ArmorValues(1200, 100, 50000));
-	map.set("Heavy_Dawnguard", new ArmorValues(700, 55, 1000));
+	map.set("Heavy_Dawnguard", new ArmorValues(700, 60, 1000));
 	map.set("Heavy_Dragonplate", new ArmorValues(900, 65, 20000));
-	map.set("Heavy_Dwarven", new ArmorValues(780, 70, 2000));
+	map.set("Heavy_Dwarven", new ArmorValues(700, 70, 2000));
 	map.set("Heavy_Ebony", new ArmorValues(900, 75, 10000));
-	map.set("Heavy_Falmer", new ArmorValues(600, 40, 100));
-	map.set("Heavy_FalmerHardened", new ArmorValues(720, 60, 400));
-	map.set("Heavy_FalmerHeavy", new ArmorValues(720, 60, 400));
+	map.set("Heavy_FalmerHardened", new ArmorValues(600, 50, 400));
+	map.set("Heavy_FalmerHeavy", new ArmorValues(600, 50, 400));
 	map.set("Heavy_Guard", new ArmorValues(600, 50, 500));
 	map.set("Heavy_Imperial", new ArmorValues(600, 50, 500));
-	map.set("Heavy_Iron", new ArmorValues(510, 40, 250));
-	map.set("Heavy_Nordic", new ArmorValues(720, 60, 1000));
-	map.set("Heavy_Orcish", new ArmorValues(720, 60, 1500));
+	map.set("Heavy_ImprovedBonemold", new ArmorValues(700, 50, 1500));
+	map.set("Heavy_Iron", new ArmorValues(500, 40, 250));
+	map.set("Heavy_NordicCarved", new ArmorValues(700, 60, 1000));
+	map.set("Heavy_Orcish", new ArmorValues(700, 60, 1500));
+	map.set("Heavy_Stalhrim", new ArmorValues(900, 75, 10000));
 	map.set("Heavy_Steel", new ArmorValues(600, 50, 500));
 	map.set("Heavy_StormcloakOfficer", new ArmorValues(600, 50, 500));
-	map.set("Heavy_SteelPlate", new ArmorValues(720, 60, 1000));
-	map.set("Heavy_Ulfric", new ArmorValues(720, 60, 5000));
-	map.set("Heavy_Vigilant", new ArmorValues(720, 60, 1000));
-	map.set("Heavy_Wolf", new ArmorValues(720, 50, 1000));
-	map.set("Light_Alikr", new ArmorValues(300, 10, 300));
-	map.set("Light_AncientShrouded", new ArmorValues(360, 12, 400));
-	map.set("Light_Chitin", new ArmorValues(360, 15, 800));
-	map.set("Light_Dawnguard", new ArmorValues(360, 15, 600));
-	map.set("Light_Dragonscale", new ArmorValues(480, 20, 16000));
-	map.set("Light_Elven", new ArmorValues(360, 15, 800));
-	map.set("Light_Forsworn", new ArmorValues(250, 8, 100));
-	map.set("Light_Fur", new ArmorValues(250, 8, 100));
-	map.set("Light_Glass", new ArmorValues(480, 15, 6000));
+	map.set("Heavy_SteelPlate", new ArmorValues(700, 60, 1000));
+	map.set("Heavy_Vigilant", new ArmorValues(700, 60, 1000));
+	map.set("Heavy_Wolf", new ArmorValues(700, 50, 5000));
+	map.set("Light_Alikr", new ArmorValues(300, 15, 300));
+	map.set("Light_AncientShrouded", new ArmorValues(300, 15, 400));
+	map.set("Light_Chitin", new ArmorValues(300, 25, 800));
+	map.set("Light_Dawnguard", new ArmorValues(400, 30, 600));
+	map.set("Light_Dragonscale", new ArmorValues(500, 35, 16000));
+	map.set("Light_Elven", new ArmorValues(400, 30, 800));
+	map.set("Light_Falmer", new ArmorValues(250, 15, 100));
+	map.set("Light_Forsworn", new ArmorValues(250, 10, 100));
+	map.set("Light_Fur", new ArmorValues(250, 10, 100));
+	map.set("Light_Glass", new ArmorValues(500, 40, 6000));
 	map.set("Light_Guard", new ArmorValues(300, 15, 400));
-	map.set("Light_Hide", new ArmorValues(250, 8, 100));
-	map.set("Light_Imperial", new ArmorValues(300, 10, 200));
-	map.set("Light_Leather", new ArmorValues(300, 10, 200));
-	map.set("Light_Linwe", new ArmorValues(300, 10, 200));
-	map.set("Light_Nightingale", new ArmorValues(360, 12, 10000));
-	map.set("Light_PenitusOculatus", new ArmorValues(360, 12, 600));
-	map.set("Light_Scaled", new ArmorValues(360, 15, 400));
-	map.set("Light_Shrouded", new ArmorValues(300, 10, 200));
-	map.set("Light_SnowElf", new ArmorValues(480, 15, 8000));
-	map.set("Light_ThievesGuild", new ArmorValues(300, 10, 200));
-	map.set("Light_ThievesGuildMaster", new ArmorValues(360, 12, 1000));
-	map.set("Light_Vampire", new ArmorValues(300, 10, 200));
+	map.set("Light_Hide", new ArmorValues(250, 10, 100));
+	map.set("Light_Imperial", new ArmorValues(300, 15, 200));
+	map.set("Light_Leather", new ArmorValues(300, 15, 200));
+	map.set("Light_Linwe", new ArmorValues(300, 15, 200));
+	map.set("Light_MoragTong", new ArmorValues(400, 30, 5000));
+	map.set("Light_Nightingale", new ArmorValues(300, 15, 10000));
+	map.set("Light_PenitusOculatus", new ArmorValues(400, 30, 600));
+	map.set("Light_ReinforcedChitin", new ArmorValues(350, 35, 1000));
+	map.set("Light_Scaled", new ArmorValues(400, 30, 400));
+	map.set("Light_Shrouded", new ArmorValues(300, 15, 200));
+	map.set("Light_Skaal", new ArmorValues(300, 15, 400));
+	map.set("Light_SnowElf", new ArmorValues(500, 30, 8000));
+	map.set("Light_Stalhrim", new ArmorValues(500, 40, 6000));
+	map.set("Light_ThievesGuild", new ArmorValues(300, 15, 200));
+	map.set("Light_ThievesGuildMaster", new ArmorValues(300, 15, 1000));
+	map.set("Light_Ulfric", new ArmorValues(300, 15, 5000));
+	map.set("Light_Vampire", new ArmorValues(300, 15, 200));
 }
 
 
@@ -169,13 +176,14 @@ function buildArmorSetValuesBase(map) {
  * Builds armor values for all variants of sets in base Requiem (e.g. Worn Shrouded Armor).
  * @param {Map<String, ArmorValues>} map - The keys are type + set separated by '_'.
  */
-function buildArmorSetValuesVariants(map) {
+function buildArmorSetValuesBaseVariants(map) {
 	map.set("Heavy_Dremora", map.get("Heavy_Daedric"));
 	map.set("Heavy_Shellbug", map.get("Heavy_FalmerHeavy"));
 	map.set("Light_Stormcloak", map.get("Light_Guard"));
 	map.set("Light_SummersetShadows", map.get("Light_ThievesGuild"));
 	map.set("Light_ThievesGuildKarliah", map.get("Light_ThievesGuild"));
 	map.set("Light_WornShrouded", map.get("Light_Shrouded"));
+	map.set("Light_Blackguard", map.get("Light_ThievesGuild"));
 }
 
 
@@ -291,6 +299,11 @@ function getArtifactValues(artifact) {
 	if (artifact === "TargeOfTheBlooded") {
 		const armorValues = getArmorValues("Heavy", "Steel", "Shield");
 		armorValues.gold = 300;
+		return armorValues;
+	}
+	if (artifact === "VisageOfMzund") {
+		const armorValues = getArmorValues("Heavy", "Dwarven", "Head");
+		armorValues.gold = 5000;
 		return armorValues;
 	}
 	return null;
