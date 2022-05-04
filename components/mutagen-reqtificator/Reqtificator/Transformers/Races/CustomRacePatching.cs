@@ -12,7 +12,7 @@ namespace Reqtificator.Transformers.Races
         public override TransformationResult<Race, IRaceGetter> Process(TransformationResult<Race, IRaceGetter> input)
         {
             if ((input.Record().Flags & Race.Flag.Playable) == 0) return input;
-            if (input.Record().Starting.Values.Aggregate(0f, (x, y) => x + y) > 150f) return input;
+            if (input.Record().Starting.Values.Aggregate(0f, (x, y) => x + y) > 200f) return input;
 
             return input.Modify(record =>
             {
