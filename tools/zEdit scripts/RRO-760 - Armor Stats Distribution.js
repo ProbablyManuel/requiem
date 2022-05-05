@@ -119,7 +119,7 @@ function buildArmorSetValues() {
 function buildArmorSetValuesBase(map) {
 	map.set("Heavy_Aetherium", new ArmorValues(900, 75, 50000));
 	map.set("Heavy_Ahzidal", new ArmorValues(600, 50, 5000));
-	map.set("Heavy_AncientNord", new ArmorValues(550, 40, 300));
+	map.set("Heavy_AncientNord", new ArmorValues(600, 50, 300));
 	map.set("Heavy_Blades", new ArmorValues(700, 60, 2500));
 	map.set("Heavy_Bonemold", new ArmorValues(600, 40, 1000));
 	map.set("Heavy_Daedric", new ArmorValues(1200, 100, 50000));
