@@ -22,8 +22,6 @@ if(NOT DEFINED Skyrim64Path)
 	message(FATAL_ERROR "Skyrim64Path is not set")
 endif()
 
-option(COPY_OUTPUT "copy the output of build operations to the game directory" OFF)
-
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
 add_subdirectory(src)

@@ -99,12 +99,10 @@ install(
 	COMPONENT "pdbs"
 )
 
-if("${COPY_OUTPUT}")
-	add_custom_command(
-		TARGET "${PROJECT_NAME}"
-		POST_BUILD
-		COMMAND "${CMAKE_COMMAND}" -E copy_if_different "$<TARGET_FILE:${PROJECT_NAME}>" "${Skyrim64Path}/Data/SKSE/Plugins/"
-		COMMAND "${CMAKE_COMMAND}" -E copy_if_different "$<TARGET_PDB_FILE:${PROJECT_NAME}>" "${Skyrim64Path}/Data/SKSE/Plugins/"
-		VERBATIM
-	)
-endif()
+add_custom_command(
+	TARGET "${PROJECT_NAME}"
+	POST_BUILD
+	COMMAND "${CMAKE_COMMAND}" -E copy_if_different "$<TARGET_FILE:${PROJECT_NAME}>" "${ROOT_DIR}/../../SKSE/Plugins/"
+	COMMAND "${CMAKE_COMMAND}" -E copy_if_different "$<TARGET_PDB_FILE:${PROJECT_NAME}>" "${ROOT_DIR}/../../SKSE/Plugins/"
+	VERBATIM
+)
