@@ -1,3 +1,12 @@
+#include "ArmorAdjuster.h"
+
+void MessageHandler(SKSE::MessagingInterface::Message* a_message)
+{
+	if (a_message->type == SKSE::MessagingInterface::kDataLoaded) {
+		REQ::AdjustArmorRating();
+	}
+}
+
 namespace
 {
 	void InitializeLog()
@@ -47,6 +56,9 @@ extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Load(const SKSE::LoadInterface* a_s
 	logger::info("{} v{}"sv, Plugin::NAME, Plugin::VERSION.string());
 
 	SKSE::Init(a_skse);
+
+	auto messaging = SKSE::GetMessagingInterface();
+	messaging->RegisterListener(MessageHandler);
 
 	return true;
 }
