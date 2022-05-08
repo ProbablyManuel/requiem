@@ -19,7 +19,7 @@ namespace Reqtificator.Events
 
                 Check the **Reqtificator.log** in your **data**
                 folder. If you cannot make any sense out of it, you can upload it to
-                [Requiem Service Central]({0}) and ask for help there.
+                [Requiem Bug Tracker]({0}) and ask for help there.
 
                 Exception message was: {1}", Uris.ServiceCentral, e.Message);
                 Exception = e;

@@ -14,7 +14,7 @@ namespace Reqtificator.Events.Outcomes
     {
         internal static class Uris
         {
-            public const string ServiceCentral = "https://requiem.atlassian.net/servicedesk/customer/portal/1";
+            public const string ServiceCentral = "https://www.nexusmods.com/skyrimspecialedition/mods/60888?tab=bugs";
         }
         public abstract PatchStatus Status { get; }
         public abstract string Title { get; }
