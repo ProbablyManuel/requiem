@@ -131,6 +131,7 @@ function buildArmorSetValuesBase(map) {
 	map.set("Heavy_FalmerHeavy", new ArmorValues(600, 50, 400));
 	map.set("Heavy_Guard", new ArmorValues(600, 50, 500));
 	map.set("Heavy_Imperial", new ArmorValues(600, 50, 500));
+	map.set("Heavy_ImperialLegate", new ArmorValues(700, 60, 1000));
 	map.set("Heavy_ImprovedBonemold", new ArmorValues(700, 50, 1500));
 	map.set("Heavy_Iron", new ArmorValues(500, 40, 250));
 	map.set("Heavy_NordicCarved", new ArmorValues(700, 60, 1000));
