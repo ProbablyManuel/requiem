@@ -117,16 +117,16 @@ function buildArmorSetValues() {
  * @param {Map<String, ArmorValues>} map - The keys are type + set separated by '_'.
  */
 function buildArmorSetValuesBase(map) {
-	map.set("Heavy_Aetherium", new ArmorValues(900, 75, 50000));
+	map.set("Heavy_Aetherium", new ArmorValues(1000, 75, 50000));
 	map.set("Heavy_Ahzidal", new ArmorValues(600, 50, 5000));
 	map.set("Heavy_AncientNord", new ArmorValues(600, 50, 300));
 	map.set("Heavy_Blades", new ArmorValues(700, 60, 2500));
 	map.set("Heavy_Bonemold", new ArmorValues(600, 40, 1000));
 	map.set("Heavy_Daedric", new ArmorValues(1200, 100, 50000));
 	map.set("Heavy_Dawnguard", new ArmorValues(700, 60, 1000));
-	map.set("Heavy_Dragonplate", new ArmorValues(900, 65, 20000));
-	map.set("Heavy_Dwarven", new ArmorValues(700, 70, 2000));
-	map.set("Heavy_Ebony", new ArmorValues(900, 75, 10000));
+	map.set("Heavy_Dragonplate", new ArmorValues(1000, 65, 20000));
+	map.set("Heavy_Dwarven", new ArmorValues(900, 70, 2000));
+	map.set("Heavy_Ebony", new ArmorValues(1000, 75, 10000));
 	map.set("Heavy_FalmerHardened", new ArmorValues(600, 50, 400));
 	map.set("Heavy_FalmerHeavy", new ArmorValues(600, 50, 400));
 	map.set("Heavy_Guard", new ArmorValues(600, 50, 500));
@@ -134,14 +134,14 @@ function buildArmorSetValuesBase(map) {
 	map.set("Heavy_ImperialLegate", new ArmorValues(700, 60, 1000));
 	map.set("Heavy_ImprovedBonemold", new ArmorValues(700, 50, 1500));
 	map.set("Heavy_Iron", new ArmorValues(500, 40, 250));
-	map.set("Heavy_NordicCarved", new ArmorValues(700, 60, 1000));
-	map.set("Heavy_Orcish", new ArmorValues(700, 60, 1500));
-	map.set("Heavy_Stalhrim", new ArmorValues(900, 75, 10000));
+	map.set("Heavy_NordicCarved", new ArmorValues(800, 60, 1000));
+	map.set("Heavy_Orcish", new ArmorValues(800, 60, 1500));
+	map.set("Heavy_Stalhrim", new ArmorValues(1000, 75, 10000));
 	map.set("Heavy_Steel", new ArmorValues(600, 50, 500));
 	map.set("Heavy_StormcloakOfficer", new ArmorValues(600, 50, 500));
-	map.set("Heavy_SteelPlate", new ArmorValues(700, 60, 1000));
-	map.set("Heavy_Vigilant", new ArmorValues(700, 60, 1000));
-	map.set("Heavy_Wolf", new ArmorValues(700, 50, 5000));
+	map.set("Heavy_SteelPlate", new ArmorValues(800, 60, 1000));
+	map.set("Heavy_Vigilant", new ArmorValues(800, 60, 1000));
+	map.set("Heavy_Wolf", new ArmorValues(800, 50, 5000));
 	map.set("Light_Alikr", new ArmorValues(300, 10, 300));
 	map.set("Light_AncientShrouded", new ArmorValues(300, 12, 400));
 	map.set("Light_Chitin", new ArmorValues(300, 25, 800));
