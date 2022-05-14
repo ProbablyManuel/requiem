@@ -318,24 +318,20 @@ function getArtifactValues(artifact) {
  * @returns {Number} armorRating - Armor rating of the part or -1 if the part cannot be determined.
  */
 function GetArmorRatingForBodyPart(setArmorRating, part) {
-	const headArmorRating = Math.round(setArmorRating * 0.2);
 	if (part === "Head") {
-		return headArmorRating;
+		return setArmorRating * 0.2;
 	}
-	const feetArmorRating = Math.round(setArmorRating * 0.15);
 	if (part === "Feet") {
-		return feetArmorRating;
+		return setArmorRating * 0.15;
 	}
-	const handArmorRating = Math.round(setArmorRating * 0.15);
 	if (part === "Hands") {
-		return handArmorRating;
+		return setArmorRating * 0.15;
 	}
-	const bodyArmorRating = setArmorRating - headArmorRating - feetArmorRating - handArmorRating;
 	if (part === "Body") {
-		return bodyArmorRating;
+		return setArmorRating * 0.5;
 	}
 	if (part === "Shield") {
-		return Math.round(setArmorRating * 0.3);
+		return setArmorRating * 0.3;
 	}
 	return -1;
 }
