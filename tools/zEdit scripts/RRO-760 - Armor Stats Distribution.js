@@ -138,8 +138,8 @@ function buildArmorSetValuesBase(map) {
 	map.set("Heavy_Orcish", new ArmorValues(800, 60, 1500));
 	map.set("Heavy_Stalhrim", new ArmorValues(1000, 80, 10000));
 	map.set("Heavy_Steel", new ArmorValues(600, 50, 500));
-	map.set("Heavy_StormcloakOfficer", new ArmorValues(600, 50, 500));
 	map.set("Heavy_SteelPlate", new ArmorValues(800, 60, 1000));
+	map.set("Heavy_StormcloakOfficer", new ArmorValues(600, 50, 500));
 	map.set("Heavy_Vigilant", new ArmorValues(800, 60, 1000));
 	map.set("Heavy_Wolf", new ArmorValues(800, 50, 5000));
 	map.set("Light_Alikr", new ArmorValues(300, 10, 300));
