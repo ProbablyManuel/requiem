@@ -142,34 +142,34 @@ function buildArmorSetValuesBase(map) {
 	map.set("Heavy_SteelPlate", new ArmorValues(700, 60, 1000));
 	map.set("Heavy_Vigilant", new ArmorValues(700, 60, 1000));
 	map.set("Heavy_Wolf", new ArmorValues(700, 50, 5000));
-	map.set("Light_Alikr", new ArmorValues(300, 15, 300));
-	map.set("Light_AncientShrouded", new ArmorValues(300, 15, 400));
+	map.set("Light_Alikr", new ArmorValues(300, 10, 300));
+	map.set("Light_AncientShrouded", new ArmorValues(300, 12, 400));
 	map.set("Light_Chitin", new ArmorValues(300, 25, 800));
 	map.set("Light_Dawnguard", new ArmorValues(400, 30, 600));
 	map.set("Light_Dragonscale", new ArmorValues(500, 35, 16000));
 	map.set("Light_Elven", new ArmorValues(400, 30, 800));
 	map.set("Light_Falmer", new ArmorValues(250, 15, 100));
-	map.set("Light_Forsworn", new ArmorValues(250, 10, 100));
-	map.set("Light_Fur", new ArmorValues(250, 10, 100));
+	map.set("Light_Forsworn", new ArmorValues(250, 8, 100));
+	map.set("Light_Fur", new ArmorValues(250, 8, 100));
 	map.set("Light_Glass", new ArmorValues(500, 40, 6000));
 	map.set("Light_Guard", new ArmorValues(300, 15, 400));
-	map.set("Light_Hide", new ArmorValues(250, 10, 100));
-	map.set("Light_Imperial", new ArmorValues(300, 15, 200));
-	map.set("Light_Leather", new ArmorValues(300, 15, 200));
-	map.set("Light_Linwe", new ArmorValues(300, 15, 200));
+	map.set("Light_Hide", new ArmorValues(250, 8, 100));
+	map.set("Light_Imperial", new ArmorValues(300, 10, 200));
+	map.set("Light_Leather", new ArmorValues(300, 10, 200));
+	map.set("Light_Linwe", new ArmorValues(300, 10, 200));
 	map.set("Light_MoragTong", new ArmorValues(400, 30, 5000));
-	map.set("Light_Nightingale", new ArmorValues(300, 15, 10000));
+	map.set("Light_Nightingale", new ArmorValues(300, 12, 10000));
 	map.set("Light_PenitusOculatus", new ArmorValues(400, 30, 600));
 	map.set("Light_ReinforcedChitin", new ArmorValues(350, 35, 1000));
 	map.set("Light_Scaled", new ArmorValues(400, 30, 400));
-	map.set("Light_Shrouded", new ArmorValues(300, 15, 200));
-	map.set("Light_Skaal", new ArmorValues(300, 15, 400));
+	map.set("Light_Shrouded", new ArmorValues(300, 10, 200));
+	map.set("Light_Skaal", new ArmorValues(300, 10, 400));
 	map.set("Light_SnowElf", new ArmorValues(500, 30, 8000));
 	map.set("Light_Stalhrim", new ArmorValues(500, 40, 6000));
-	map.set("Light_ThievesGuild", new ArmorValues(300, 15, 200));
-	map.set("Light_ThievesGuildMaster", new ArmorValues(300, 15, 1000));
+	map.set("Light_ThievesGuild", new ArmorValues(300, 10, 200));
+	map.set("Light_ThievesGuildMaster", new ArmorValues(300, 12, 1000));
 	map.set("Light_Ulfric", new ArmorValues(300, 15, 5000));
-	map.set("Light_Vampire", new ArmorValues(300, 15, 200));
+	map.set("Light_Vampire", new ArmorValues(300, 10, 200));
 }
 
 
