@@ -148,6 +148,7 @@ function buildArmorSetValuesBase(map) {
 	map.set("Light_Dawnguard", new ArmorValues(500, 30, 600));
 	map.set("Light_Dragonscale", new ArmorValues(600, 30, 16000));
 	map.set("Light_Elven", new ArmorValues(400, 15, 800));
+	map.set("Light_Executioner", new ArmorValues(300, 10, 200));
 	map.set("Light_Falmer", new ArmorValues(250, 15, 100));
 	map.set("Light_Forsworn", new ArmorValues(250, 8, 100));
 	map.set("Light_Fur", new ArmorValues(250, 8, 100));
