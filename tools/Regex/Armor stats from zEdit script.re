@@ -1,0 +1,1 @@
+\tmap\.set\("(?:Heavy|Light)_(\l+)", new ArmorValues\((\d+), (\d+), \d+\)\);
