@@ -87,7 +87,6 @@ function buildArmorOffsetValues() {
 	map.set("Heavy_Guard_Body_TheRift", new ArmorValues(-50, -5, -100));
 	map.set("Heavy_Guard_Body_Winterhold", new ArmorValues(-50, -5, -100));
 	map.set("Heavy_Iron_Body_Pauldrons", new ArmorValues(30, 2.5, 75));
-	map.set("Heavy_Iron_Shield_Banded", new ArmorValues(10, 2, 40));
 	map.set("Light_Fur_Body_Kilt", new ArmorValues(-50, -2, -20));
 	map.set("Light_Fur_Body_KiltWithMantle", new ArmorValues(-50, -2, -20));
 	map.set("Light_Hide_Body_Studded", new ArmorValues(25, 1, 25));
