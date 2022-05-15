@@ -1,0 +1,1 @@
+(\l+) {\n    keywords_all = \[\${armorSets.(\l+)}\]\n    keywords_assign = \[\n      \${bluntResistance\.(none|tier\d)}\n      \${pierceResistance\.(none|tier\d)}\n      \${rangedResistance\.(none|tier\d)}\n      \${slashResistance\.(none|tier\d)}\n    \]\n  }
