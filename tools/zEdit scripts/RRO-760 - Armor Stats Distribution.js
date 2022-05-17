@@ -86,10 +86,6 @@ function buildArmorOffsetValues() {
 	map.set("Heavy_Guard_Body_ThePale", new ArmorValues(-50, -5, -100));
 	map.set("Heavy_Guard_Body_TheRift", new ArmorValues(-50, -5, -100));
 	map.set("Heavy_Guard_Body_Winterhold", new ArmorValues(-50, -5, -100));
-	map.set("Heavy_Iron_Body_Pauldrons", new ArmorValues(30, 2.5, 75));
-	map.set("Light_Fur_Body_Kilt", new ArmorValues(-50, -2, -20));
-	map.set("Light_Fur_Body_KiltWithMantle", new ArmorValues(-50, -2, -20));
-	map.set("Light_Hide_Body_Studded", new ArmorValues(25, 1, 25));
 	map.set("Light_Imperial_Body_Studded", new ArmorValues(25, 1, 25));
 	map.set("Light_Imperial_Body_Tullius", new ArmorValues(50, 2, 3000));
 	map.set("Light_Vampire_Body_Harkon", new ArmorValues(50, 2, 500));
@@ -161,7 +157,7 @@ function buildArmorSetValuesBase(map) {
 	map.set("Light_Nightingale", new ArmorValues(350, 12, 10000));
 	map.set("Light_PenitusOculatus", new ArmorValues(500, 12, 600));
 	map.set("Light_ReinforcedChitin", new ArmorValues(450, 35, 1000));
-	map.set("Light_Scaled", new ArmorValues(500, 20, 400));
+	map.set("Light_Scale", new ArmorValues(500, 20, 400));
 	map.set("Light_Shrouded", new ArmorValues(300, 10, 200));
 	map.set("Light_Skaal", new ArmorValues(300, 10, 400));
 	map.set("Light_SnowElf", new ArmorValues(500, 15, 8000));
@@ -276,7 +272,7 @@ function getArtifactValues(artifact) {
 		return armorValues;
 	}
 	if (artifact === "SaviorsHide") {
-		const armorValues = getArmorValues("Light", "Scaled", "Body");
+		const armorValues = getArmorValues("Light", "Scale", "Body");
 		armorValues.gold = 100000;
 		return armorValues;
 	}
