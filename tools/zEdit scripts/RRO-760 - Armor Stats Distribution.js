@@ -314,14 +314,17 @@ function getArtifactValues(artifact) {
  * @returns {Number} armorRating - Armor rating of the part or -1 if the part cannot be determined.
  */
 function GetArmorRatingForBodyPart(setArmorRating, part) {
+	if (setArmorRating % 50 !== 0) {
+		xelib.logMessage(`${setArmorRating} is not a multiple of 50`)
+	}
 	if (part === "Head") {
 		return setArmorRating * 0.2;
 	}
 	if (part === "Feet") {
-		return setArmorRating * 0.15;
+		return Math.ceil(setArmorRating * 0.15);
 	}
 	if (part === "Hands") {
-		return setArmorRating * 0.15;
+		return Math.floor(setArmorRating * 0.15);
 	}
 	if (part === "Body") {
 		return setArmorRating * 0.5;
