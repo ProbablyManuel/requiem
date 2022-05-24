@@ -175,7 +175,6 @@ function buildArmorSetValuesBase(map) {
  */
 function buildArmorSetValuesBaseVariants(map) {
 	map.set("Heavy_Dremora", map.get("Heavy_Daedric"));
-	map.set("Heavy_Shellbug", map.get("Heavy_FalmerHeavy"));
 	map.set("Light_Stormcloak", map.get("Light_Guard"));
 	map.set("Light_SummersetShadows", map.get("Light_ThievesGuild"));
 	map.set("Light_ThievesGuildKarliah", map.get("Light_ThievesGuild"));
@@ -275,6 +274,9 @@ function getArtifactValues(artifact) {
 		const armorValues = getArmorValues("Light", "Scale", "Body");
 		armorValues.gold = 100000;
 		return armorValues;
+	}
+	if (artifact === "ShellbugHelmet") {
+		return new ArmorValues(400, 40, 5000);
 	}
 	if (artifact === "ShieldOfSolitude") {
 		const armorValues = getArmorValues("Light", "Guard", "Shield");
