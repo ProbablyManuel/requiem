@@ -327,8 +327,8 @@ Int Function ShowOptionsEasyForPlayer(Actor bestMinion, \
     Actor player = Game.GetPlayer()
     Int expertiseBestMinion = GetExpertise(bestMinion)
     Int nMinionLockpicks = bestMinion.GetItemCount(dataStorage.lockpick)
-    Int choice = 0;
-    Int nLockpicks = 0;
+    Int choice = 0
+    Int nLockpicks = 0
 
     If (nMinions == 0 || player.GetItemCount(dataStorage.lockpick) > 0 || \
             player.GetItemCount(dataStorage.skeletonKey) > 0)
@@ -366,11 +366,11 @@ Int Function ShowOptionsChallengingForPlayer(Actor bestMinion, \
 
     Int expertiseBestMinion = GetExpertise(bestMinion)
     Int nMinionLockpicks = bestMinion.GetItemCount(dataStorage.lockpick)
-    Int choice = 0;
-    Int nLockpicks = 0;
+    Int choice = 0
+    Int nLockpicks = 0
 
     If (nMinions == 0)
-        choice = dataStorage.challengingLock_Solo.Show(optimal, expertisePlayer)
+        choice = 0
     ElseIf (expertiseBestMinion >= optimal)
         nLockpicks = GetFollowerLockpickUsage(True)
         If (nMinionLockpicks >= nLockpicks)
@@ -404,8 +404,8 @@ Int Function ShowOptionsImpossibleForPlayer(Actor bestMinion, \
 
     Int expertiseBestMinion = GetExpertise(bestMinion)
     Int nMinionLockpicks = bestMinion.GetItemCount(dataStorage.lockpick)
-    Int choice = 0;
-    Int nLockpicks = 0;
+    Int choice = 0
+    Int nLockpicks = 0
 
     If (expertiseBestMinion >= optimal)
         nLockpicks = GetFollowerLockpickUsage(True)
