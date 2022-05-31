@@ -119,7 +119,7 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 	If ( spelltype >= 4 || abBashAttack)
 		GotoState("")
 		return
-	ElseIf ( equipped != None && akAggressor != None )
+	ElseIf ( equipped != None && akAggressor != None && (abPowerAttack && akSource != unarmed || (akAggressor As Actor).GetActorValue("Mass") >= 2.0) )
 		If ( Player.GetEquippedItemType(1) == 7 && equipped.HasKeyword(BreakableBow))
 			Player.UnequipItem(equipped, False, True)
 			Player.RemoveItem(equipped, 1, True)
