@@ -4,10 +4,15 @@ Scriptname REQ_RetroActiveFixes extends REQ_CoreScript
 Perk Property HeavyArmorMaterialBonus Auto
 Perk Property LightArmorMaterialBonus Auto
 
+Spell Property PlayerWerewolfAbility Auto
+
 Function initScript(Int currentVersion, Int nevVersion)
     If currentVersion > 0
         If currentVersion <= 50100 && nevVersion >= 50101
             Apply_5_1_0_to_5_1_1_fixes()
+        EndIf
+        If currentVersion <= 50101 && nevVersion >= 50200
+            Apply_5_1_1_to_5_2_0_fixes()
         EndIf
     EndIf
 EndFunction
@@ -23,5 +28,12 @@ Function Apply_5_1_0_to_5_1_1_fixes()
     If Player.HasPerk(LightArmorMaterialBonus)
         Player.RemovePerk(LightArmorMaterialBonus)
         Player.AddPerk(LightArmorMaterialBonus)
+    EndIf
+EndFunction
+
+Function Apply_5_1_1_to_5_2_0_fixes()
+    If Player.HasSpell(PlayerWerewolfAbility)
+        Player.RemoveSpell(PlayerWerewolfAbility)
+        Player.AddSpell(PlayerWerewolfAbility)
     EndIf
 EndFunction
