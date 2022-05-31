@@ -34,14 +34,13 @@ function SetActiveHouseLocation(ObjectReference workbench, int newRoomID, string
 	;debug.trace(self + "SetActiveHouseLocation: workbench=" + workbench + ", newRoomID=" + newRoomID + ", newVariantID=" + newVariantID)
 	;debug.trace(self + "workbench location=" + workbench.GetCurrentLocation())
 ;	activeHouseLocation = newHouseLocation
-	activeWorkbench = workbench
 	activeRoomID = newRoomID
 	activeVariantID = newVariantID
 
 	; get current location
 	int locIndex = 0
 	while locIndex < HouseLocations.Length
-		if activeWorkbench.GetCurrentLocation().IsSameLocation(HouseLocations[locIndex], BYOHHouseLocationKeyword)
+		if workbench.GetCurrentLocation().IsSameLocation(HouseLocations[locIndex], BYOHHouseLocationKeyword)
 			;debug.trace(self + "SetActiveHouseLocation: current location = " + houselocations[locIndex])
 			activeHouseLocation = locIndex
 			locIndex = HouseLocations.Length
@@ -80,8 +79,6 @@ endfunction
 
 ; called when "trophy" is crafted by player from trophy base workbench (trophy = posed stuffed animal for Trophy Room)
 function BuildTrophy(int partID)
-	PassTimeBegin(TimeTrophy)  ; Added by Requiem
-
 	; get index of this part from trophy master list
 	int newHousePartIndex = GetFormListIndex(BYOHHouseBuildingTrophyMasterList, partID)
 	if newHousePartIndex > -1
@@ -103,14 +100,11 @@ function BuildTrophy(int partID)
 	endif
 	; in case logs were used (inventory events don't fire when items are removed but not dropped into the world)
 	UpdateLogCount()
-
-	PassTimeFinish(False)  ; Added by Requiem
 endFunction
 
 ; this function is for building stuff in the exterior, not the house itself (stable, animal pens, etc.)
 function BuildHouseExteriorPart(int partHouseLocation, int partID, form part)
 	;debug.trace(self + "BuildHousExteriorPart " + partID + " " + part)
-	PassTimeBegin(TimeExterior)  ; Added by Requiem
 
 	FormList foundList
 ;	if activeHouseLocation >=0 && activeHouseLocation <=2
@@ -125,16 +119,12 @@ function BuildHouseExteriorPart(int partHouseLocation, int partID, form part)
 ;	endif
 	; in case logs were used (inventory events don't fire when items are removed but not dropped into the world)
 	UpdateLogCount()
-
-	PassTimeFinish(True)  ; Added by Requiem
 endFunction
 
 
 function BuildHouseInteriorPart(int partHouseLocation, int partID, form part, int roomID)
 	;debug.trace(self + "BuildHouseInteriorPart roomID=" + roomID + ", partID=" + partID)
 	; what is it right now?
-	PassTimeBegin(TimeInterior)  ; Added by Requiem
-
 	string currentVariantID = activeVariantID
 
 	FormList foundList
@@ -165,8 +155,6 @@ function BuildHouseInteriorPart(int partHouseLocation, int partID, form part, in
 	endif
 	; in case logs were used (inventory events don't fire when items are removed but not dropped into the world)
 	UpdateLogCount()
-
-	PassTimeFinish(True)  ; Added by Requiem
 endFunction
 
 function UpdateCompletionStatus (BYOHHouseScript houseQuest, int roomID, int partID)
@@ -277,7 +265,6 @@ bool bBuildHousePart ; blocking variable for BuildHousePart function
 ; called when a "house part" is added to player's inventory (pieces of the house itself - floor, walls, roof, etc.)
 ; (pass in houseLocation rather than using "activeHouseLocation" because this might change before the function finishes)
 function BuildHousePart(int partHouseLocation, int newHousePartID, form newHousePart, int finishRoomID, int startRoomID, bool bDisableAdditionLayouts)
-	Bool PassTime = !bBuildHousePart  ; Added by Requiem. Don't pass time inside recursive calls
 	; is someone else using this function?
 	while bBuildHousePart
 		utility.wait(1.0)
@@ -285,11 +272,6 @@ function BuildHousePart(int partHouseLocation, int newHousePartID, form newHouse
 
 	; set blocking variable
 	bBuildHousePart = true
-
-	; Added by Requiem
-	If PassTime
-		PassTimeBegin(TimeHouse)
-	EndIf
 
 	;debug.trace(self + "BuildHousePart " + newHousePartID + " START")
 	BYOHHouseScript myHouse = (HouseQuests[partHouseLocation] as BYOHHouseScript)
@@ -401,13 +383,8 @@ function BuildHousePart(int partHouseLocation, int newHousePartID, form newHouse
 	; in case logs were used (inventory events don't fire when items are removed but not dropped into the world)
 	UpdateLogCount()
 
-	; Added by Requiem
-	If PassTime
-		PassTimeFinish(True)
-	EndIf
-
+	; clear blocking variable
 	bBuildHousePart = false
-
 endFunction
 
 ; function checks if 3 additions have been built at the specified house - used to check for awarding achievements
@@ -450,6 +427,7 @@ function InitializeDLC()
 
 
 	; Disabled by Requiem
+
 	; 
 	; ; if player is rank 2 with any of the 3 jarls, send the "friend letter" (allowed to purchase a house)
 	; if JarlFalkreath.GetActorRef().GetRelationshipRank(player) >= 2 ;&& JarlFalkreath.GetActorRef().GetCrimeFaction().GetCrimeGold() == 0
@@ -1118,39 +1096,6 @@ function PlayerChangeLocation(Location akOldLoc, Location akNewLoc)
 
 endFunction
 
-; Added by Requiem. Passes time by the specifed amount
-Function PassTimeBegin(Float PassedTime)
-	If (!ActiveWorkbench || ActiveWorkbench.GetBaseObject().HasKeyword(BYOHBuildingDrafting))
-		Return  ; Don't pass time on the drafting table
-	EndIf
-	If (ActiveWorkbench.IsFurnitureInUse())
-		; Kick the player out of the crafting menu
-		ActiveWorkbench.Activate(Game.GetPlayer()) 
-	EndIf
-	Fadeout.ApplyCrossFade()
-	Game.DisablePlayerControls()
-	GameHour.SetValue(GameHour.GetValue() + PassedTime)
-	Utility.Wait(1.5)
-EndFunction
-
-; Added by Requiem. Finishes passing time
-Function PassTimeFinish(Bool PlaySound)
-	If (!ActiveWorkbench || ActiveWorkbench.GetBaseObject().HasKeyword(BYOHBuildingDrafting))
-		Return  ; Don't pass time on the drafting table
-	EndIf
-	If (PlaySound)
-		Int InstanceID = CraftingSoundEffect.Play(ActiveWorkbench)
-		Utility.Wait(4.0)
-		Sound.StopInstance(InstanceID)
-	Else
-		Utility.Wait(1.0)
-	EndIf
-	Utility.Wait(0.5)
-	ImageSpaceModifier.RemoveCrossFade()
-	Game.EnablePlayerControls()
-EndFunction
-
-
 Quest[] Property HouseQuests  Auto  
 {array of house quests}
 
@@ -1398,20 +1343,3 @@ bool Property bCraftingTriggerBusy Auto
 Keyword Property WIDragonsToggle  Auto  
 
 Faction Property CurrentHireling Auto ;Added by UHFP 1.0.3
-
-; Properties added by Requiem
-ObjectReference Property ActiveWorkbench Auto Hidden
-{ Current workbench - used to leave the crafting menu }
-Keyword Property BYOHBuildingDrafting Auto
-{ Drafting table keyword }
-GlobalVariable Property GameHour Auto
-{ Current time }
-ImageSpaceModifier Property Fadeout Auto
-{ The blackout effect during building }
-Sound Property CraftingSoundEffect Auto
-{ The sound effect played during building }
-
-Float Property TimeHouse Auto
-Float Property TimeExterior Auto
-Float Property TimeInterior Auto
-Float Property TimeTrophy Auto
