@@ -57,7 +57,7 @@ open class ReleaseArchiveTask : DefaultTask() {
             logger.quiet("skipping ignored file: $source")
         } else {
             logger.debug("archiving file: $source  -> $pathInArchive")
-            val entry = archive.createArchiveEntry(source, pathInArchive.toString())
+            val entry = archive.createArchiveEntry(source, pathInArchive.toString().replace("\\", "/"))
             archive.putArchiveEntry(entry)
             archive.write(Files.readAllBytes(source.toPath()))
             archive.closeArchiveEntry()
