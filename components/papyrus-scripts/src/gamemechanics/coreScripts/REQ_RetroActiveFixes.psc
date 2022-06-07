@@ -34,6 +34,6 @@ EndFunction
 Function Apply_5_1_1_to_5_2_0_fixes()
     If Player.HasSpell(PlayerWerewolfAbility)
         Player.RemoveSpell(PlayerWerewolfAbility)
-        Player.AddSpell(PlayerWerewolfAbility)
+        Player.AddSpell(PlayerWerewolfAbility, False)
     EndIf
 EndFunction
