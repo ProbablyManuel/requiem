@@ -1,7 +1,6 @@
 scriptname REQ_MCM_Skills extends SKI_ConfigBase
 
 REQ_AttributeSystem Property data Auto
-REQ_MassEffect_PC Property masseffect Auto
 Actor Property Player Auto
 
 String Function format_float(Float value, int after_decimal)
@@ -94,14 +93,6 @@ Event OnPageReset(String page)
 		statename = "MassPenalty"
 		text = "$REQ_MassPenalty"
 		display = format_float(player.getAV("Infamy"), 2)
-		AddTextOptionST(statename, text, display)
-		statename = "MassEffect"
-		text = "$REQ_MassEffect"
-		display = format_float(masseffect.mod_mass, 2)
-		AddTextOptionST(statename, text, display)
-		statename = "MassEffectPenalty"
-		text = "$REQ_MassEffectPenalty"
-		display = format_float(masseffect.mod_penalty, 2)
 		AddTextOptionST(statename, text, display)
 		
     ElseIf page == "$REQ_cat_skill1" 
@@ -262,18 +253,6 @@ EndState
 State MassPenalty
 	Event OnHighlightST()
         SetInfoText("$REQ_MassPenalty_highlight")
-    EndEvent
-EndState
-
-State MassEffect
-	Event OnHighlightST()
-        SetInfoText("$REQ_MassEffect_highlight")
-    EndEvent
-EndState
-
-State MassEffectPenalty
-	Event OnHighlightST()
-        SetInfoText("$REQ_MassEffectPenalty_highlight")
     EndEvent
 EndState
 

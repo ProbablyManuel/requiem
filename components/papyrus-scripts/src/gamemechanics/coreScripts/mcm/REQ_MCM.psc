@@ -1,7 +1,6 @@
 scriptname REQ_MCM extends SKI_ConfigBase
 
 REQ_MCM_DataStorage Property data Auto
-REQ_MassEffect_PC Property masseffect Auto
 
 State iHoursToRespawnCell
 
@@ -554,36 +553,6 @@ State REQ_Debug_ExhaustionReset
 
 EndState
 
-State REQ_Debug_MassEffectReset
-
-    Event OnSelectST()
-        data.REQ_Debug_MassEffectReset.SetValueInt((!(data.REQ_Debug_MassEffectReset.GetValueInt() as Bool)) as Int )
-        SetToggleOptionValueST(data.REQ_Debug_MassEffectReset.GetValueInt() as Bool)
-        ShowMessage("$REQ_Debug_MassEffectReset_popup", False)
-        While Utility.IsInMenuMode()
-            Utility.Wait(1)
-        EndWhile
-        masseffect.Full_Evaluation()
-        data.REQ_Debug_MassEffectReset.SetValueInt(0)
-    EndEvent
-
-    Event OnDefaultST()
-        data.REQ_Debug_MassEffectReset.SetValueInt( 0.0 as Int)
-        SetToggleOptionValueST(data.REQ_Debug_MassEffectReset.GetValueInt() as Bool)
-    ShowMessage("$REQ_Debug_MassEffectReset_popup", False)
-    While Utility.IsInMenuMode()
-        Utility.Wait(1)
-    EndWhile
-    masseffect.Full_Evaluation()
-    data.REQ_Debug_MassEffectReset.SetValueInt(0)
-    EndEvent
-
-    Event OnHighlightST()
-        SetInfoText("$REQ_REQ_Debug_MassEffectReset_highlight")
-    EndEvent
-
-EndState
-
 State REQ_Atmosphere_VampireRandomCarnage
 
     Event OnSelectST()
@@ -665,6 +634,5 @@ Event OnPageReset(String page)
         AddToggleOptionST("REQ_Compatibility_AttackSpeed","$REQ_REQ_Compatibility_AttackSpeed",data.REQ_Compatibility_AttackSpeed.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Debug_OnHit","$REQ_REQ_Debug_OnHit",data.REQ_Debug_OnHit.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Debug_ExhaustionReset","$REQ_REQ_Debug_ExhaustionReset",data.REQ_Debug_ExhaustionReset.GetValueInt() as Bool)
-        AddToggleOptionST("REQ_Debug_MassEffectReset","$REQ_REQ_Debug_MassEffectReset",data.REQ_Debug_MassEffectReset.GetValueInt() as Bool)
     EndIf
 EndEvent
