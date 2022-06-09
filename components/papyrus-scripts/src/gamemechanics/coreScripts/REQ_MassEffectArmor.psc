@@ -126,8 +126,6 @@ Function UpdatePenalty(Float NewPenalty)
 		Target.ModActorValue("infamy", DiffPenalty)
 		Target.ModActorValue("movementnoisemult", DiffPenalty)
 		Target.ModActorValue("speedmult", -50.0 * DiffPenalty)
-		Target.ModActorValue("carryweight", 0.01)
-		Target.ModActorValue("carryweight", -0.01)
 		ActivePenalty = NewPenalty
 	EndIf
 EndFunction
