@@ -3,7 +3,12 @@ Scriptname REQ_RetroActiveFixes extends REQ_CoreScript
 
 Perk Property HeavyArmorMaterialBonus Auto
 Perk Property LightArmorMaterialBonus Auto
+
 Perk Property WindWalker Auto
+
+Perk Property AlchemicalIntellect Auto
+Perk Property FortifiedMuscles Auto
+Perk Property Regeneration Auto
 
 Spell Property PlayerWerewolfAbility Auto
 
@@ -40,5 +45,17 @@ Function Apply_5_1_1_to_5_2_0_fixes()
     If Player.HasPerk(WindWalker)
         Player.RemovePerk(WindWalker)
         Player.AddPerk(WindWalker)
+    EndIf
+    If Player.HasPerk(AlchemicalIntellect)
+        Player.RemovePerk(AlchemicalIntellect)
+        Player.AddPerk(AlchemicalIntellect)
+    EndIf
+    If Player.HasPerk(FortifiedMuscles)
+        Player.RemovePerk(FortifiedMuscles)
+        Player.AddPerk(FortifiedMuscles)
+    EndIf
+    If Player.HasPerk(Regeneration)
+        Player.RemovePerk(Regeneration)
+        Player.AddPerk(Regeneration)
     EndIf
 EndFunction
