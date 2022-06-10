@@ -18,7 +18,7 @@ namespace Reqtificator
     {
         private static class Uris
         {
-			public static readonly Uri BugFixes = new("https://www.nexusmods.com/skyrimspecialedition/mods/33261");
+            public static readonly Uri BugFixes = new("https://www.nexusmods.com/skyrimspecialedition/mods/33261");
             public static readonly Uri EngineFixes = new("https://www.nexusmods.com/skyrimspecialedition/mods/17230");
             // public static readonly Uri ScrambledBugs = new("https://www.nexusmods.com/skyrimspecialedition/mods/43532");
         }
@@ -28,7 +28,7 @@ namespace Reqtificator
         {
             var missingDependencies = new List<BugfixDependency>()
             {
-				new BugfixDependency("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
+                new BugfixDependency("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
                 new BugfixDependency("Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
                 // new BugfixDependency("Scrambled Bugs", "DLLPlugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs)
             }.FindAll(d => !File.Exists(d.ExpectedLocation));
