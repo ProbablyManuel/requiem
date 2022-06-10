@@ -3,6 +3,7 @@ Scriptname REQ_RetroActiveFixes extends REQ_CoreScript
 
 Perk Property HeavyArmorMaterialBonus Auto
 Perk Property LightArmorMaterialBonus Auto
+Perk Property WindWalker Auto
 
 Spell Property PlayerWerewolfAbility Auto
 
@@ -35,5 +36,9 @@ Function Apply_5_1_1_to_5_2_0_fixes()
     If Player.HasSpell(PlayerWerewolfAbility)
         Player.RemoveSpell(PlayerWerewolfAbility)
         Player.AddSpell(PlayerWerewolfAbility, False)
+    EndIf
+    If Player.HasPerk(WindWalker)
+        Player.RemovePerk(WindWalker)
+        Player.AddPerk(WindWalker)
     EndIf
 EndFunction
