@@ -23,7 +23,7 @@ try {
 }
 
 allprojects {
-    version = RequiemVersion(5, 2, 0, "Tooth and Claw")
+    version = RequiemVersion(5, 2, 0, "The Gathering Storm")
 }
 
 fun runCommand(command: List<String>): String = try {
