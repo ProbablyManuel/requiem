@@ -55,6 +55,8 @@ bool Property FakeFight = true auto
 bool __observerWeaponWasBow = false
 Race __observerOriginalRace = None ; should always be Nord, but we don't know for sure
 
+Weapon __observerWeapon
+
 Function Init()
 	Actor selectedObserver = (CentralQuest as CompanionsHousekeepingScript).GetFavoriteQuestgiver()
 	
@@ -206,9 +208,9 @@ EndFunction
 
 Function ObserverDropWeapon()
 	Actor obs = Observer.GetActorReference()
-	Weapon observerWeapon = obs.GetEquippedWeapon()
-	ObjectReference obsWeapRef = obs.DropObject(observerWeapon)
-	if (obsWeapRef.HasKeyword(WeapTypeBow))
+	__observerWeapon = obs.GetEquippedWeapon()
+	obs.UnequipItem(__observerWeapon)
+	if (__observerWeapon.HasKeyword(WeapTypeBow))
 		__observerWeaponWasBow = true
 	endif
 EndFunction
@@ -255,23 +257,13 @@ Function ObserverTurnBack()
 		ObserverLycanStorage.GetReference().RemoveAllItems(Observer.GetActorReference())
 		if     (obs == Aela)
 			obs.SetOutfit(AelaOutfit)
-			if (__observerWeaponWasBow)
-				obs.AddItem(AelaBaseRangedWeapon, 1)
-				obs.EquipItem(AelaBaseRangedWeapon)
-			else
-				obs.AddItem(AelaBaseMeleeWeapon, 1)
-				obs.EquipItem(AelaBaseMeleeWeapon)
-			endif
 		elseif (obs == Farkas)
 			obs.SetOutfit(FarkasOutfit)
-			if (__observerWeaponWasBow)
-				obs.AddItem(FarkasBaseRangedWeapon, 1)
-				obs.EquipItem(FarkasBaseRangedWeapon)
-			else
-				obs.AddItem(FarkasBaseMeleeWeapon, 1)
-				obs.EquipItem(FarkasBaseMeleeWeapon)
-			endif
 		endif
+		; By the grace of Todd Howard the observer appears naked unless any newly created item is added to his or her inventory
+		obs.AddItem(WolfSkinFXArmor)
+		obs.RemoveItem(WolfSkinFXArmor)
+		obs.EquipItem(__observerWeapon)
 	endif
 
 	Observer.GetActorReference().SetPlayerTeammate(true)
