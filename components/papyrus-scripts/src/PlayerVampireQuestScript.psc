@@ -185,7 +185,11 @@ Function VampireChange(Actor Target)
 	Target.RemoveSpell(TrapDiseasePorphyricHemophelia)
 	Target.RemoveSpell(TrapDiseaseAtaxia)
 
-	;Make player Vampire Stage 1 ; start on 4 instead!
+	;USSEP 4.2.7 - Bug #32361: Calling on the Cure Disease spell removes ALL diseases no matter their origin, which is what the Werewolf system is doing and it works perfectly even with DLC or mod added disease sources.
+	;We're leaving the preceeding list of calls intact on the off chance there's something daft going on in the engine that Cure Disease isn't accounting for.
+	VampireCureDisease.Cast(Target)
+
+	;Make player Vampire Stage 1
 	VampireStatus = 4 ; edited by Xarrian - So you start as a weak vampire
 	VampireProgression(Game.GetPlayer(), 4) ; edited by Xarrian - So you start as a weak vampire
 	
@@ -479,7 +483,7 @@ Function VampireCure(Actor Player)
 	Player.RemoveSpell(VampireCharm)
 	Player.RemoveSpell(VampireCloak)	; RRO-121 Since we're using these abilities, we have to remove them too
 	Player.RemoveSpell(VampireInvisibilityPC)	
-	
+
 	;Change player's race, defaults to Nord
 	if (Player.GetRace() == ArgonianRaceVampire)
 		Player.SetRace(ArgonianRace)
