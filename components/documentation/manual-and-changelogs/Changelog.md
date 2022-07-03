@@ -16,7 +16,7 @@ Bugfixes
 
 * Farkas doesn't drop his weapon in Dustman's Cairn.
 * Werewolf abilities in human form don't apply in beast form.
-* Companions quests forward the improved quest objectives from Even Better Quest Descriptions.
+* Companions quests forward the improved quest descriptions from Even Better Quest Objectives.
 * Powerful Healing Aura doesn't have a persistent visual effect.
 * Enchanted variants of Reinforced Chitin Bracers are renamed to Reinforced Chitin Gauntlets.
 
