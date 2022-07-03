@@ -1,8 +1,6 @@
 Requiem 5.2.2 - "The Gathering Storm" Bugfix Pack #2
 ====================================================
 
-A small bugfix release to fix a high-priority bug that was spotted in 5.2.0 and can significantly affect the game balance.
-
 Bugfixes
 --------
 
@@ -12,8 +10,6 @@ Bugfixes
 
 Requiem 5.2.1 - "The Gathering Storm" Bugfix Pack #1
 ====================================================
-
-A small collection of bug fixes to address some issues reported in 5.2.0.
 
 Bugfixes
 --------
@@ -27,8 +23,6 @@ Bugfixes
 
 Requiem 5.2.0 - "The Gathering Storm"
 =====================================
-
-Numerous simple and effective gameplay tweaks to alleviate longstanding issues.
 
 New Features
 ------------
@@ -119,8 +113,6 @@ Internal Quality Improvements (only relevant for modders)
 Requiem 5.1.1 - "From Past to Present" Bugfix Pack #1
 =====================================================
 
-This small release addresses some issues reported in 5.1.0. Most notably, glass and stalhrim armors are restored to be slightly less protective and lighter than dragonscale, and falmer armor increases poison resistance as material bonus.
-
 Tweaks
 ------
 
@@ -151,8 +143,6 @@ Bugfixes
 
 Requiem 5.1.0 - "From Past to Present"
 ======================================
-
-Extra armor rating against slash, blunt, and pierce attacks is removed. In its place high-quality armor materials provide unique bonuses. Stats and presentation of armors are tweaked to support and complement these changes.
 
 New Features
 ------------
@@ -270,8 +260,6 @@ Internal Quality Improvements (only relevant for modders)
 Requiem 5.0.3 - "From the Ashes" Bugfix Pack #3
 ===============================================
 
-This small release addresses more common installation problems and improves compatibility with some mods.
-
 Bugfixes
 --------
 
@@ -301,8 +289,6 @@ Compatibility and Modding Support
 Requiem 5.0.2 - "From the Ashes" Bugfix Pack #2
 ===============================================
 
-A small collection of bug fixes to address more common installation problems we have seen. Most notably, the Reqtificator now terminates with a proper error message instead of hanging on the save export if a problem is encountered.
-
 Tweaks
 ------
 
@@ -324,8 +310,6 @@ Compatibility and Modding Support
 
 Requiem 5.0.1 - "From the Ashes" Bugfix Pack #1
 ===============================================
-
-This release includes some improvements in the Reqtificator that address common installation issues and make it easier to pinpoint problems in your load order.
 
 Installation
 ------------
@@ -392,8 +376,6 @@ Internal Quality Improvements (only relevant for modders)
 Requiem 4.0.2 - "Threshold" Bugfix Pack #2
 ==========================================
 
-This small release makes some improvements to the severely outdated logic for bashed patch interoperability.
-
 Installation
 ------------
 
@@ -410,8 +392,6 @@ Compatibility and Modding Support
 Requiem 4.0.1 - "Threshold" Bugfix Pack #1
 ==========================================
 
-This small bugfix release fixes two high-priority bugs that were spotted in 4.0.0 and can significantly affect the game balance.
-
 Bugfixes
 --------
 
@@ -423,8 +403,6 @@ Bugfixes
 
 Requiem 4.0.0 - "Threshold"
 ===========================
-
-The presentation of core game concepts like armor rating and armor penetration has been polished to present themselves in a more intuitive way to the player. A variety of no longer used assets has been removed or replaced with new assets. Guards have new armors that don't outclass the military and the Vigilants also have new armors. The Halvar Brothers now have a small background story and more unique items to loot. This update also contains several major quality of life improvements for mod authors like the possibility to assign final armor ratings in plugins and way better organized bandit records.
 
 New Features
 ------------
@@ -607,8 +585,6 @@ Internal Quality Improvements (only relevant for modders)
 Requiem 3.4.0 - "The Shadow Theory"
 ===================================
 
-Invisible Entities have been reworked from scratch and are now known as the _Slighted_. They feature proper visualization and also have a backstory that connects the various places where they appear.
-
 New Features
 ------------
 
@@ -685,8 +661,6 @@ Internal Quality Improvements (only relevant for modders)
 Requiem 3.3.0 - "The Quantum Enigma"
 ====================================
 
-The Reqtificator has been repackaged into a self-contained application. You thus no longer need to install any Java version on your system. Some endgame enemies that were reported as too weak in recent versions have been made tougher.
-
 New Features
 ------------
 
@@ -715,8 +689,6 @@ Installation
 
 Requiem 3.2.0 - "Design Your Universe"
 ======================================
-
-The core concepts of gold and ammunition weight are now transparent in the inventory interface and explained in the help menu. Gold weight has been reduced considerably and quest rewards that previously yieled gold and gems have been reverted to pure gold rewards. Various smaller tweaks have been made to weapon stats to make their overall progression more consistent. Potions of Cure Disease and Cure Poison are now available in addition to the powerful Potion of Cleansing.
 
 New Features
 ------------
@@ -782,8 +754,6 @@ Internal Quality Improvements (only relevant for modders)
 Requiem 3.1.1 - "Steel meets Steel" Bugfix Pack #1
 ==================================================
 
-The Reqtificator handles plugins with incorrect inheritance data for actors more gracefully. Potion names have been changed to restore the natural inventory order. A few minor edits to quests have been removed to improve compatibility with other mods.
-
 Tweaks
 ------
 
@@ -812,8 +782,6 @@ Compatibility and Modding Support
 
 Requiem 3.1.0 - "Steel meets Steel"
 ===================================
-
-The armor penetration system works more like the one from the 1.9.x versions, but keeps the new features like improved transparency and more distinct damage types for different weapons. Worn gear can now be swapped freely during combat. Various unused or rarely used assets have been removed from the distribution.
 
 New Features
 ------------
@@ -895,8 +863,6 @@ Internal Quality Improvements (only relevant for modders)
 Requiem 3.0.2 - "Consign To Oblivion" Bugfix Pack #2
 ====================================================
 
-This update address a variety of bugs found in 3.0.0. Most importantly, it fixes the display of derived attributes features in the MCM menu and gives more meaningful protection to Dragonpriests.
-
 Tweaks
 ------
 
@@ -959,8 +925,6 @@ Internal Quality Improvements (only relevant for modders)
 Requiem 3.0.1 - "Consign To Oblivion" Bugfix Pack #1
 ====================================================
 
-A small hotfix patch which fixes the derived attributes system interfering with expertise. After applying this patch and updating your savegame, your expertise values will be restored and the derived attributes system affects weapon damage as it should.
-
 Tweaks
 ------
 
@@ -977,8 +941,6 @@ Bugfixes
 
 Requiem 3.0.0 - "Consign To Oblivion"
 =====================================
-
-The key feature of this version is a completely reworked armor penetration and arrow resistance system. All armor rating, damage reduction and armor penetration aspects of the game are now transparent and easy to understand. Armor penetration is now a viable tool for all weapons throughout the entire game and the differences between weapon damage types are emphasized further. In addition, this update contains a multitude of smaller improvements and bugfixes.
 
 New Features
 ------------
