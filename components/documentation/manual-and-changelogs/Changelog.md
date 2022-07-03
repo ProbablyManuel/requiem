@@ -110,7 +110,7 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Armor weight penalty reduction is stored in the actorvalues `heavyarmormod` and `lightarmormod`.
-* All Mass Effect calculations are performed inside the script `REQ_MassEffectArmor` attached to `xx82CC14 <\REQ\_Ability\_MassEffect\>`.
+* All Mass Effect calculations are performed inside the script `REQ_MassEffectArmor` attached to `xx82CC14 <REQ_Ability_MassEffect>`.
 * The workaround to force movement speed updates by modifying inventory weight is removed in favor of Bug Fixes SSE.
 * A hidden, constant effect, self-targeted value modifier MGEF is offered for every (relevant) actorvalue, as well as a variant with a visible description. These are generic magic effects for use by abilities.
 * Astrid has the Mutagen perks instead of the abilities. 
@@ -126,12 +126,12 @@ Tweaks
 
 * Light armor tweaks:
     * Chitin: -5 weight.
-        * Falmer: Same armor rating and weight as chitin.
-        * Glass: -50 armor rating, -15 weight.
-        * Hide: Same armor rating, weight, and price as leather.
-        * Penitus Oculatus: +3 weight.
-        * Stalhrim: -50 armor rating, -15 weight.
-    * Falmer armor increases poison resistance as material bonus.
+    * Falmer: Same armor rating and weight as chitin.
+    * Glass: -50 armor rating, -15 weight.
+    * Hide: Same armor rating, weight, and price as leather.
+    * Penitus Oculatus: +3 weight.
+    * Stalhrim: -50 armor rating, -15 weight.
+* Falmer armor increases poison resistance as material bonus.
 * Falmer armor includes the armor type in its name.
 * Falmer hardened armor is removed because it's identical to heavy falmer armor in all aspects but name.
 * Enchanted ancient nord and Blades armor doesn't replace the base items.
@@ -371,7 +371,7 @@ Compatibility and Modding Support
 * Arrays in the rule configuration files only support elements of the same type, it is no longer possible to e.g. mix object and string elements in the same array.
 * Playable custom races are patched with the basic changes required to be compliant with Requiem mechanics. For more advanced custom races, you should still consider using a handmade compatibility patch. Vampire variants of custom races are not patched.
 * Requiem's assets are shipped as a BSA instead of loose files.
-* The Reqtificator no longer allows priority-overrides in leveled list merges. The corresponding formlists `RFTI_List_LLMerge_HighPriority` (`xxAD36E7`) and `RFTI_List_LLMerge_MediumPriority` (`xxAD36E6`) have been deleted.
+* The Reqtificator no longer allows priority-overrides in leveled list merges. The corresponding formlists `RFTI_List_LLMerge_HighPriority` and `RFTI_List_LLMerge_MediumPriority` have been deleted.
 * Configuration files for the Reqtificator moved to the folders `Reqtificator/Config` and `Reqtificator/Data` inside the `Data` folder of the Skyrim installation.
 
 Internal Quality Improvements (only relevant for modders)
@@ -532,7 +532,6 @@ Bugfixes
 * Vampire Lord Ornament isn't considered light armor.
 * Movement speed of the horse carrying the cart in the Helgen opening scene is reduced by 1%. Apparently this solves the random physics incidents in the opening scene.
 * The Reqtificator doesn't include ITPO armor and race records in the generated patch.
-
 * Several typos are corrected.
 * Armor penetration bonus from ammunition references Ranged Combat Training instead of Precise Aim.
 
@@ -588,7 +587,7 @@ Internal Quality Improvements (only relevant for modders)
 * EditorID of all bandits are renamed to clarify their usages.
 * EditorID of all armors are renamed to clarify their usages.
 * EditorID of version stamp global variables are renamed to clarify their usages.
-* `KW` prefix is removed from all keywords.
+* KW prefix is removed from all keywords.
 * EditorID of all records that are used or distributed by the Reqtificator start with "RFTI_".
 * Variable names in `ActorAssignmentRules_Requiem.esp.conf` are renamed to match the EditorID of the corresponding perk or spell.
 * Various now unused assets are removed from the distribution:
@@ -1001,7 +1000,7 @@ New Features
 Tweaks
 ------
 
-* All hidden armor rating is removed; instead cuirasses get +55 armor rating and all other armor items get +15 armor rating. Note to mod authors: Armors with the REQ\_KW\_AlreadyReqtified keyword need to be manually updated to this change.
+* All hidden armor rating is removed; instead cuirasses get +55 armor rating and all other armor items get +15 armor rating. Note to mod authors: Armors with the `REQ_KW_AlreadyReqtified` keyword need to be manually updated to this change.
 * Daedric weapons no longer have any hidden armor penetration bonuses.
 * Draconic Blacksmithing requires either Ebony or Glass Smithing as a prerequisite. Ebony Smithing is required to crafting Dragonplate armor, Glass Smithing is a prerequisite for Dragonscale armor. Dragonbone Weapons can be crafted with either prerequisite perk. Daedric smithing is now an optional perk which can be taken after Ebony Smithing.
 * Requiem's plugin description now contains the Smash.ForceAll tag to work better with Mator Smash.
