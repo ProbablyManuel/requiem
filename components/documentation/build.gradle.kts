@@ -6,7 +6,7 @@ val outputDir by project.extra(file("$buildDir/output"))
 val releaseDocsDir by project.extra(file("$outputDir/documentation"))
 
 val copyDocsForDistribution by tasks.registering(Copy::class) {
-    from("manual-and-changelogs")
+    from("src")
     into(releaseDocsDir)
 }
 
