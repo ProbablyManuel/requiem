@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Requiem Developer Diary #11: Tidal Development"
+author: Ogerboss
+---
+Hi guys and gals,
+
+It’s been a while since the last Requiem update. I’d like to use this opportunity to shed some light on the current state and share some insights on my own contributions to this project.
+
+Real life has again kept me very busy for the last weeks. (See a pattern here? I’ll discuss that below.) At the beginning of February, the company I work for finally got a new CEO. The newly appointed CEO definitely seems promising and I have high expectations towards her, but any top-level leadership change naturally brings some initial unrest into the organization. February has therefore been a very busy month for us, providing the new CEO with the necessary information and trying to understand what her plan is for the company and its individual parts. This has been a very intense but also interesting phase that kept us busy for the better part of February. As soon as the first dust stirred up by this leadership change was settling again, Putin decided to declare war on Ukraine.
+
+My team is quite international and among my colleagues and friends are people from Ukraine, Poland, Belarus and Russia. It has been heart-breaking to see the suffering and distress this madness has caused to my Ukrainian friends and colleagues. One of my colleagues is working remotely from western Ukraine; every time we read about bombings in the area, we’re concerned if he’s still alright. But the psychological effects reach much further than this: my Polish friends and colleagues wonder who will be next, while those from Russia feel ashamed for their nation.
+
+What does this mean for the development work Requiem? As you probably guessed already, I didn’t do anything for Requiem since this war started. In such a crisis situation, providing all the necessary support for the people you know and care about (and also those you don’t know) obviously takes precedence over a hobby project. However, looking at the last weeks and also the months before it, I realized something important about my own work on Requiem. The recurring pattern of short bursts of productivity followed by longer periods of low productivity or even radio silence should be obvious by now. After some self-reflection on this topic, I realized the cause of this behavior. Whenever I have one of these productivity surges, e.g. around the end of last year when finally pushing Requiem to SSE, I invest a large share of my free time into this project. Then something else happens that demands a shift of my attention, like the CEO change, war in Ukraine, reasons mentioned in previous blog posts and other, more private reasons I didn’t disclose. In these moments Requiem suddenly feels like a very daunting and colossal responsibility because I invested so much time in it the days and weeks before. Not being able to maintain the development at such a pace and deal with the other aspects in parallel, I then usually decide to ignore Requiem for a while because I feel like I cannot commit this amount of time to it right now. Then eventually I start feeling bad about it and the next productivity surge occurs to make up for it before the cycle repeats itself.
+
+So what’s the bottom line here? It’s time I start applying the same strategies I use at work and preach to our interns also to my hobby project. I need to rearrange my involvement in this project in such a way that this burst-based development transforms into a slower, but steady and sustainable mode of delivery. The other Requiem Dungeon Masters are eager to support me on this journey.
+
+\- Ogerboss on behalf of the Requiem Dungeon Masters
