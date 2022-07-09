@@ -15,7 +15,7 @@ I want to use this opportunity to sincerely thank all my fellow Requiem Dungeon 
 
 How many of you remember this?
 
-![Disrespect the sticky post, and you disrespect me!]({{site.baseurl}}/assets/images/sticky_post_guard.png)
+![Disrespect the sticky post, and you disrespect me!]({{ "/assets/images/sticky_post_guard.png" | relative_url }})
 
 Sovngarde awaits!
 
