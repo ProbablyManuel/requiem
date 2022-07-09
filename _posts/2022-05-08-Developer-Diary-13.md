@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Requiem Developer Diary #13: A NEW HAND TOUCHES THE BEACON"
+title: "A NEW HAND TOUCHES THE BEACON"
 author: ProbablyManuel
 ---
 Hi Requiem enthusiasts,

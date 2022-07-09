@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Requiem Developer Diary #12: Sovngarde Awaits"
+title: "Sovngarde Awaits"
 author: Ogerboss
 ---
 Hi guys and gals,

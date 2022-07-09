@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Requiem Developer Diary #11: Tidal Development"
+title: "Tidal Development"
 author: Ogerboss
 ---
 Hi guys and gals,

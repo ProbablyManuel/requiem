@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Requiem Developer Diary #14: Roadmap to Requiem 6.0.0"
+title: "Roadmap to Requiem 6.0.0"
 author: ProbablyManuel
 ---
 Hi Requiem enthusiasts,
