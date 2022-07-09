@@ -20,9 +20,12 @@ external:                  # shows a footer with social links - for available ic
   - {title: Github, icon: github, url: "https://github.com/ProbablyManuel/requiem"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
+paginate: 5
+
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
 
 plugins:
  - jekyll-feed
+ - jekyll-paginate
