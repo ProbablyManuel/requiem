@@ -1,3 +1,23 @@
+Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
+====================================================
+
+Tweaks
+------
+
+* The spectral weapons from Labyrinthian are playable.
+* Falmer melee weapons do not have their reach adjusted by the Reqtificator because it interferes with their AI. As a result, Falmer weapons have a niche as the longest one-handed weapons.
+
+Bugfixes
+--------
+
+* Material bonus of dragonplate and dragonscale armor does not reduce magnitude of self-targeted shouts.
+* The invulnerable wisps in the Soul Cairn are not attacked by other encounters.
+* Skill-ups from skill books, quests, and others grant a full skill-up in most cases. The underlying cause of this bug remains unfixable.
+* Destruction cloak spells are correctly resisted when using Scrambled Bugs. It is still recommended to disable the "Magic Effect Flags" fix from Scrambled Bugs because it reinterprets the meaning of magic effect flags in a manner that is not supported by Requiem (or even vanilla Skyrim).
+* Loading screens and tooltips do not use an unsupported ellipsis character.
+* The new game check is more robust in large load orders.
+
+
 Requiem 5.2.2 - "The Gathering Storm" Bugfix Pack #2
 ====================================================
 

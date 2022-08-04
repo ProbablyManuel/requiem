@@ -9,19 +9,21 @@ REQ_VersionController Property coreScripts Auto
 
 Spell[] Property startingSpells Auto
 
-Quest Property NewGameCheck Auto
-{Update.esm quest 1.4 is used for new game check; if Requiem has just started but this quest was stopped, it means this isn't a new game}
+DLC1_QF_Patch1_6_UpdateQuest_0100097F Property NewGameCheck Auto
+{Requiem modifies this script to set a new property IsNewGame to True. Since the script only runs when starting a new game, the absence of this variable implies Requiem was installed on an existing savegame.}
 
 Event OnInit()
     If VersionSavegame.Value == -1
-        If !NewGameCheck.IsStopped()
-            ; it's a new game
+        Float timeout = 30.0
+        While !NewGameCheck.IsStopped() && timeout > 0.0
+            Utility.Wait(0.5)
+            timeout -= 0.5
+        EndWhile
+        If NewGameCheck.IsNewGame
             VersionSavegame.SetValue(0)
         Else
-            ; it's not a new game and the follow-up validation will fail
             VersionSavegame.SetValue(-2)
         EndIf
-
         RegisterforMenu("InventoryMenu")
         RegisterforMenu("MagicMenu")
     EndIf
