@@ -14,6 +14,7 @@ Bugfixes
 --------
 
 * Material bonus of dragonplate and dragonscale armor does not reduce magnitude of self-targeted shouts.
+* Material bonus of Dawnguard armor affects all variants of Vampiric Drain.
 * The invulnerable wisps in the Soul Cairn are not attacked by other encounters.
 * Skill-ups from skill books, quests, and others grant a full skill-up in most cases. The underlying cause of this bug remains unfixable.
 * Destruction cloak spells are correctly resisted when using Scrambled Bugs. It is still recommended to disable the "Magic Effect Flags" fix from Scrambled Bugs because it reinterprets the meaning of magic effect flags in a manner that is not supported by Requiem (or even vanilla Skyrim).
