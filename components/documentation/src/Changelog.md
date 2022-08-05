@@ -20,6 +20,7 @@ Internal Quality Improvements (only relevant for modders)
 
 * `REQ_SunDamage` is assigned to all sun magic effects.
 * `REQ_NoLifeDrainAllowed` is only assigned to magic effects.
+* All deprecated record have the prefix DEPRECATED instead of LEGACY in their EditorID.
 * Several unused absorb effects are nullified.
 
 
