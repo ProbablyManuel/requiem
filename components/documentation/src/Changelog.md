@@ -4,7 +4,8 @@ Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
 Tweaks
 ------
 
-* Fortify Magicka II reduces damage from all absorb spells by 35% but no longer prevents magicka loss on hit.
+* Fortify Magicka II reduces damage from all absorb spells by 35% but no longer negates magicka loss on hit.
+* The Gauldur Amulet negates magicka loss on hit.
 * Stendarr's blessing reduces damage from all absorb spells by 75% (was 100%).
 * Sunfire Cloak reduces damage from Vampiric Drain by 50%.
 * The spectral weapons from Labyrinthian are playable.
