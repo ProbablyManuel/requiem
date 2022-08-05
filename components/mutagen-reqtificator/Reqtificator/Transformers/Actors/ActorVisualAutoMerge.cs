@@ -16,6 +16,9 @@ namespace Reqtificator.Transformers.Actors
             _compareTraitsMask.TextureLighting = false; // changes here are usually Creation Kit artifacts
             _compareTraitsMask.HeadParts = false; // custom comparison needed, as order of elements is irrelevant
             _compareTraitsMask.FaceMorph = false; // can contain small numeric differences that are irrelevant
+			_compareTraitsMask.Height = false;
+			_compareTraitsMask.Weight = false;
+			_compareTraitsMask.DeathItem = false;
         }
 
         public bool CheckRecordEquality(INpcGetter reference, INpcGetter other)
