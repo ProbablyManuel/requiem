@@ -4,6 +4,9 @@ Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
 Tweaks
 ------
 
+* Fortify Magicka II reduces damage from all absorb spells by 35% but no longer prevents magicka loss on hit.
+* Stendarr's blessing reduces damage from all absorb spells by 75% (was 100%).
+* Sunfire Cloak reduces damage from Vampiric Drain by 50%.
 * The spectral weapons from Labyrinthian are playable.
 * Falmer melee weapons do not have their reach adjusted by the Reqtificator because it interferes with their AI. As a result, Falmer weapons have a niche as the longest one-handed weapons.
 
@@ -16,6 +19,17 @@ Bugfixes
 * Destruction cloak spells are correctly resisted when using Scrambled Bugs. It is still recommended to disable the "Magic Effect Flags" fix from Scrambled Bugs because it reinterprets the meaning of magic effect flags in a manner that is not supported by Requiem (or even vanilla Skyrim).
 * Loading screens and tooltips do not use an unsupported ellipsis character.
 * The new game check is more robust in large load orders.
+* All absorb effects are affected by absorb resistance.
+* Undead are not immune to some of Harkon's absorb spells.
+* Dwarven automatons are immune to all absorb effects.
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* `REQ_SunDamage` is assigned to all sun magic effects.
+* `REQ_NoLifeDrainAllowed` is only assigned to magic effects.
+* All deprecated record have the prefix DEPRECATED instead of LEGACY in their EditorID.
+* Several unused absorb effects are nullified.
 
 
 Requiem 5.2.2 - "The Gathering Storm" Bugfix Pack #2
