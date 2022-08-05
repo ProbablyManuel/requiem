@@ -10,6 +10,7 @@ Tweaks
 * Sunfire Cloak reduces damage from Vampiric Drain by 50%.
 * The spectral weapons from Labyrinthian are playable.
 * Falmer melee weapons do not have their reach adjusted by the Reqtificator because it interferes with their AI. As a result, Falmer weapons have a niche as the longest one-handed weapons.
+* Weight, height, and death item changes do not suffice to classify a record as a visual template during visual automerging.
 
 Bugfixes
 --------
