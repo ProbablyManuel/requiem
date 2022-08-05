@@ -1,3 +1,27 @@
+Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
+====================================================
+
+Tweaks
+------
+
+* Fortify Magicka II reduces damage from all absorb spells by 35% but no longer prevents magicka loss on hit.
+* Stendarr's blessing reduces damage from all absorb spells by 75% (was 100%).
+* Sunfire Cloak reduces damage from Vampiric Drain by 50%.
+
+Bugfixes
+--------
+
+* All absorb effects are affected by absorb resistance.
+* Undead are not immune to some of Harkon's absorb spells.
+* Dwarven automatons are immune to all absorb effects.
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* `REQ_NoLifeDrainAllowed` is only assigned to magic effects.
+* Several unused absorb effects are nullified.
+
+
 Requiem 5.2.2 - "The Gathering Storm" Bugfix Pack #2
 ====================================================
 
