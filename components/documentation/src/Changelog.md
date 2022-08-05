@@ -7,10 +7,19 @@ Tweaks
 * Fortify Magicka II reduces damage from all absorb spells by 35% but no longer prevents magicka loss on hit.
 * Stendarr's blessing reduces damage from all absorb spells by 75% (was 100%).
 * Sunfire Cloak reduces damage from Vampiric Drain by 50%.
+* The spectral weapons from Labyrinthian are playable.
+* Falmer melee weapons do not have their reach adjusted by the Reqtificator because it interferes with their AI. As a result, Falmer weapons have a niche as the longest one-handed weapons.
 
 Bugfixes
 --------
 
+* Material bonus of dragonplate and dragonscale armor does not reduce magnitude of self-targeted shouts.
+* Material bonus of Dawnguard armor affects all variants of Vampiric Drain.
+* The invulnerable wisps in the Soul Cairn are not attacked by other encounters.
+* Skill-ups from skill books, quests, and others grant a full skill-up in most cases. The underlying cause of this bug remains unfixable.
+* Destruction cloak spells are correctly resisted when using Scrambled Bugs. It is still recommended to disable the "Magic Effect Flags" fix from Scrambled Bugs because it reinterprets the meaning of magic effect flags in a manner that is not supported by Requiem (or even vanilla Skyrim).
+* Loading screens and tooltips do not use an unsupported ellipsis character.
+* The new game check is more robust in large load orders.
 * All absorb effects are affected by absorb resistance.
 * Undead are not immune to some of Harkon's absorb spells.
 * Dwarven automatons are immune to all absorb effects.
