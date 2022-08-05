@@ -18,6 +18,7 @@ Bugfixes
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
+* `REQ_SunDamage` is assigned to all sun magic effects.
 * `REQ_NoLifeDrainAllowed` is only assigned to magic effects.
 * Several unused absorb effects are nullified.
 
