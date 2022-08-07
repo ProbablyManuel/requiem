@@ -59,7 +59,7 @@ This mod is published on NexusMods:
 
 4. Open a (power)shell, go to the repository's directory and execute `gradlew.bat assemble`. This may take some time when you execute it the first time because the wrapper needs to download the Gradle distribution and other dependencies first.
 5. Enable this repository as a mod in Mod Organizer and disable any other Requiem version you may have installed.
-6. Follow the regular [installation instructions](../wiki#installing-requiem) to set
+6. Follow the regular [installation instructions](../../wiki#installing-requiem) to set
 up the Reqtificator in Mod Organizer.
 
 ## Important Gradle tasks
