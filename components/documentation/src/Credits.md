@@ -50,6 +50,7 @@ Mods included in Requiem
 * [Horse Armors for Skyrim](https://www.nexusmods.com/skyrim/mods/13348) by [mystikhybrid](https://www.nexusmods.com/skyrim/users/294935)
 * [Insanitys Dragonbane](https://www.nexusmods.com/skyrim/mods/19180) by [InsanitySorrow](https://www.nexusmods.com/skyrim/users/258945)
 * [Insanitys Red Eagles Bane](https://www.nexusmods.com/skyrim/mods/32930) by [InsanitySorrow](https://www.nexusmods.com/skyrim/users/258945)
+* [Katana Crafting](https://www.nexusmods.com/skyrimspecialedition/mods/5306) by [lautasantenni](https://www.nexusmods.com/skyrimspecialedition/users/983976)
 * [Low-Tier Wooden Crossbow](https://www.nexusmods.com/skyrim/mods/54134) by [Jokerine](https://www.nexusmods.com/skyrim/users/2543917)
 * [Mage's Plate Armor](https://www.nexusmods.com/skyrim/mods/92916) by [QwibQwibMods](https://www.nexusmods.com/skyrim/users/57153782)
 * [Modern Brawl Bug Fix](https://www.nexusmods.com/skyrim/mods/77465) by [EnaiSiaion](https://www.nexusmods.com/skyrim/users/3959191)
@@ -66,7 +67,7 @@ Assets taken from other mods
 * Heroic Imperial Armor from [Lore Friendly Armor Pack](https://www.nexusmods.com/skyrim/mods/6684) by [rahman530](https://www.nexusmods.com/skyrim/users/3052977)
 * Imperial Dagger, Mace and Shortsword from [Heavy Armory - New Weapons](https://www.nexusmods.com/skyrim/mods/21120) by [PrivateEye](https://www.nexusmods.com/skyrim/users/887024)
 * Open Faced Guard Helmets from [Teh-Husky Mod Compilation](https://www.nexusmods.com/skyrim/mods/32226) by [THusky](https://www.nexusmods.com/skyrim/users/5226693)
-* Battletaves from [Weapons of the Third Era](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/3871) by [747823](https://www.nexusmods.com/skyrim/users/3186836)
+* Battlestaves from [Weapons of the Third Era](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/3871) by [747823](https://www.nexusmods.com/skyrim/users/3186836)
 
 Non-Skyrim assets
 =================
