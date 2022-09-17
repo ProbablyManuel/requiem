@@ -1,12 +1,25 @@
 Requiem 5.3.0 - "Around the Fire"
 =================================
 
+New Features
+------------
+
+* New weapon types are available: Tanto, Wakizashi, Katana, Dai-Katana.
+
 Tweaks
 ------
 
 * Battlestaves have a consistent stats progression.
 * Weapon prices are always rounded to the nearest multiple of 5.
 * Artifacts of divine origin have a standardized price of 50000.
+* Several encounters have proper stats, perk set, and equipment.
+    * The band of Thirsk Hall
+    * Butcher
+    * Champion of Boethiah
+    * Ghunzul
+    * Linwe
+    * Unmid Snow-Shod
+    * Velehk Sain
 
 Bugfixes
 --------
