@@ -1,3 +1,33 @@
+Requiem 5.3.0 - "Around the Fire"
+=================================
+
+Tweaks
+------
+
+* Battlestaves have a consistent stats progression.
+* Weapon prices are always rounded to the nearest multiple of 5.
+* Artifacts of divine origin have a standardized price of 50000.
+
+Bugfixes
+--------
+
+* Critical weapon damage is always half the base damage.
+* Enchanted weapons have the correct price.
+* Ebony Blade, Keening, and the Rueful Axe have the correct stagger value.
+* Eduj and Okin have the same weight and price as a Nord Hero weapon.
+* Kahvozein's Fang has the same damage and weight as a dragonbone dagger.
+* Red Eagle's Fury has the same stats except lower damage as Red Eagle's Bane.
+* The longhammer has the same damage and price as an Orcish warhammer.
+* Wuuthrad has the same weight as an ebony battleaxe.
+
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* Enchanted weapons have a proper EditorID.
+* Several unused weapons are nullified.
+
+
 Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
 ====================================================
 
