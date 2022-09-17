@@ -20,6 +20,7 @@ Tweaks
     * Linwe
     * Unmid Snow-Shod
     * Velehk Sain
+* Names of base enchantments are reverted to the more concise vanilla names.
 
 Bugfixes
 --------
@@ -41,8 +42,9 @@ Reqtificator
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
-* Enchanted weapons have a proper EditorID.
+* Enchanted weapons and weapon enchantments have a proper EditorID.
 * Several unused weapons are nullified.
+* Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted crossbows are currently unused.)
 
 
 Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
