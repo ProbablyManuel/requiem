@@ -20,6 +20,10 @@ Bugfixes
 * The longhammer has the same damage and price as an Orcish warhammer.
 * Wuuthrad has the same weight as an ebony battleaxe.
 
+Reqtificator
+------------
+
+* Critical damage is increased by the same factor as weapon damage.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
