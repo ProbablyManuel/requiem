@@ -37,6 +37,7 @@ namespace Reqtificator.Transformers.Weapons
             return input.Modify(r =>
             {
                 r.BasicStats!.Damage = (ushort)(r.BasicStats.Damage * factor);
+                r.Critical!.Damage = (ushort)(r.Critical.Damage * factor);
                 Log.Debug("adjusted weapon damage");
             });
         }
