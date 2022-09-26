@@ -32,7 +32,7 @@ try {
 }
 
 allprojects {
-    version = RequiemVersion(4, 0, 2, "Threshold")
+    version = RequiemVersion(4, 0, 3, "Threshold")
 }
 
 val gitRevision by extra {
