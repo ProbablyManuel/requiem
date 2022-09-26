@@ -1,4 +1,5 @@
 module skyrim.requiem {
+    requires jdk.accessibility;
     requires skyproc;
     requires org.apache.logging.log4j;
     requires kotlin.stdlib;
