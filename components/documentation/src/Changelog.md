@@ -43,7 +43,7 @@ Reqtificator
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
-* Ammo, enchanted weapons, and weapon enchantments have a proper EditorID.
+* Ammo, animal hides, crafting recipes, enchanted weapons, and weapon enchantments have a proper EditorID.
 * Standard weapons have a common prefix "Weapon" in their EditorID.
 * EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
