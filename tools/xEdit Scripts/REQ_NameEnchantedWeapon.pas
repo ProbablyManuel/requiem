@@ -10,20 +10,19 @@ begin
   slWeapons := TStringList.Create;
 
   re_weapon := TPerlRegEx.Create;
-  re_weapon.RegEx := '^[^_]+_([^_]+)_([^_]+)$';
+  re_weapon.RegEx := '^([^_]+)_([^_]+)_([^_]+)$';
 
   re_enchantment := TPerlRegEx.Create;
-  re_enchantment.RegEx := '^REQ_Ench_Weapon_(.+)$';
+  re_enchantment.RegEx := '[^_]+_Ench_Weapon_(.+)$';
 
 end;
 
 function Process(e: IInterface): Integer;
 var
   enchantment, template: IInterface;
-  enchantmentName, weaponSet, weaponType, weaponEditorID: String;
+  enchantmentName, prefix, weaponSet, weaponType, weaponEditorID: String;
 begin
-  if Signature(e) <> 'WEAP' then
-    Exit;
+  if Signature(e) <> 'WEAP' then Exit;
 
   enchantment := WinningOverride(LinksTo(ElementByPath(e, 'EITM - Object Effect')));
   if not Assigned(enchantment) then begin
@@ -47,10 +46,11 @@ begin
     AddMessage(Name(e) + ' has unrecognized template');
     Exit;
   end;
-  weaponSet := re_weapon.Groups[1];
-  weaponType := re_weapon.Groups[2];
+  prefix := re_weapon.Groups[1];
+  weaponSet := re_weapon.Groups[2];
+  weaponType := re_weapon.Groups[3];
 
-  weaponEditorID := Format('REQ_Ench_%s_%s_%s', [weaponSet, weaponType, enchantmentName]);
+  weaponEditorID := Format('%s_Ench_%s_%s_%s', [prefix, weaponSet, weaponType, enchantmentName]);
   if EditorID(e) <> weaponEditorID then
     SetEditorID(e, weaponEditorID);
   slWeapons.Add(weaponEditorID);
