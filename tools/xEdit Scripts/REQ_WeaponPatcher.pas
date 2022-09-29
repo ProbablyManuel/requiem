@@ -13,7 +13,7 @@ begin
   slStats := TStringList.Create;
 
   re_weapon := TPerlRegEx.Create;
-  re_weapon.RegEx := '^[^_]+(?:_(?:Ench|NP|Var))?_([^_]+)_([^_]+)(?:_(.+))?$';
+  re_weapon.RegEx := '^[^_]+_(?:Weapon|Ench|NP|Var)_([^_]+)_([^_]+)(?:_(.+))?$';
 
   re_ignore := TPerlRegEx.Create;
   re_ignore.RegEx := '^[^_]+_(Creature|DEPRECATED|NULL|Special|Staff)_(.+)$';
@@ -23,11 +23,10 @@ function Process(e: IInterface): Integer;
 var
   weaponSet, weaponType, weaponModifier: String;
 begin
-  if Signature(e) <> 'WEAP' then
-    Exit;
+  if Signature(e) <> 'WEAP' then Exit;
   re_ignore.Subject := EditorID(e);
-  if re_ignore.Match then
-    Exit;
+  if re_ignore.Match then Exit;
+
   re_weapon.Subject := EditorID(e);
   if not re_weapon.Match then begin
     AddMessage('EditorID ' + EditorID(e) + ' is invalid');
