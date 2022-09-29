@@ -10,7 +10,7 @@ begin
   slWeapons := TStringList.Create;
 
   re_weapon := TPerlRegEx.Create;
-  re_weapon.RegEx := '^([^_]+)_([^_]+)_([^_]+)$';
+  re_weapon.RegEx := '^([^_]+)_Weapon_([^_]+)_([^_]+)$';
 
   re_enchantment := TPerlRegEx.Create;
   re_enchantment.RegEx := '[^_]+_Ench_Weapon_(.+)$';

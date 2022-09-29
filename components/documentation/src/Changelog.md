@@ -43,6 +43,8 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Enchanted weapons and weapon enchantments have a proper EditorID.
+* Standard weapons have a common prefix "Weapon" in their EditorID.
+* EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
 * Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted crossbows are currently unused.)
 
