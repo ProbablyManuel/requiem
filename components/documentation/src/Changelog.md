@@ -21,6 +21,7 @@ Tweaks
     * Unmid Snow-Shod
     * Velehk Sain
 * Names of base enchantments are reverted to the more concise vanilla names.
+* The summoned Dremora archer uses normal daedric arrows instead of a heavily nerfed variant.
 
 Bugfixes
 --------
@@ -42,7 +43,7 @@ Reqtificator
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
-* Enchanted weapons and weapon enchantments have a proper EditorID.
+* Ammo, enchanted weapons, and weapon enchantments have a proper EditorID.
 * Standard weapons have a common prefix "Weapon" in their EditorID.
 * EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
