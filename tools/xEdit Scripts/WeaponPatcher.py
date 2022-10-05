@@ -101,153 +101,153 @@ for weapon_set, set_stats in weapon_sets.items():
             stats.gold *= set_stats.gold_mult
             stats.gold = round(stats.gold / 5) * 5
 
-        weapon_stats[f"{weapon_set}_{weapon_type}"] = stats
+        weapon_stats[f'Weapon_{weapon_set}_{weapon_type}'] = stats
 
 
-stats = copy.copy(weapon_stats["Daedric_Battleaxe"])
+stats = copy.copy(weapon_stats["Weapon_Daedric_Battleaxe"])
 stats.gold = 50000
 stats.weight -= 5.0
-weapon_stats["Artifact_Battleaxe_RuefulAxe"] = stats
+weapon_stats["Artifact_RuefulAxe"] = stats
 
-stats = copy.copy(weapon_stats["Ebony_Battleaxe"])
+stats = copy.copy(weapon_stats["Weapon_Ebony_Battleaxe"])
 stats.damage += 2
 stats.gold = 50000
-weapon_stats["Artifact_Battleaxe_Wuuthrad"] = stats
+weapon_stats["Artifact_Wuuthrad"] = stats
 
-stats = copy.copy(weapon_stats["Ebony_Dagger"])
-weapon_stats["Artifact_Dagger_BladeOfSacrifice"] = stats
+stats = copy.copy(weapon_stats["Weapon_Ebony_Dagger"])
+weapon_stats["Artifact_BladeOfSacrifice"] = stats
 
-stats = copy.copy(weapon_stats["Ebony_Dagger"])
-weapon_stats["Artifact_Dagger_BladeOfWoeAstrid"] = stats
+stats = copy.copy(weapon_stats["Weapon_Ebony_Dagger"])
+weapon_stats["Artifact_BladeOfWoe"] = stats
 
-stats = copy.copy(weapon_stats["Ebony_Dagger"])
-weapon_stats["Artifact_Dagger_BladeOfWoeAwakened"] = stats
+stats = copy.copy(weapon_stats["Weapon_Ebony_Dagger"])
+weapon_stats["Artifact_AwakenedBladeOfWoe"] = stats
 
-stats = copy.copy(weapon_stats["Dragonbone_Dagger"])
+stats = copy.copy(weapon_stats["Weapon_Dragonbone_Dagger"])
 stats.gold = 5000
-weapon_stats["Artifact_Dagger_KahvozeinsFang"] = stats
+weapon_stats["Artifact_KahvozeinsFang"] = stats
 
-stats = copy.copy(weapon_stats["Daedric_Dagger"])
+stats = copy.copy(weapon_stats["Weapon_Daedric_Dagger"])
 stats.damage += 2
 stats.weight += 1.0
 stats.gold = 50000
-weapon_stats["Artifact_Dagger_Keening"] = stats
+weapon_stats["Artifact_Keening"] = stats
 
-stats = copy.copy(weapon_stats["Daedric_Dagger"])
+stats = copy.copy(weapon_stats["Weapon_Daedric_Dagger"])
 stats.gold = 50000
-weapon_stats["Artifact_Dagger_MehrunesRazor"] = stats
+weapon_stats["Artifact_MehrunesRazor"] = stats
 
-stats = copy.copy(weapon_stats["Ebony_Dagger"])
+stats = copy.copy(weapon_stats["Weapon_Ebony_Dagger"])
 stats.gold = 5000
-weapon_stats["Artifact_Dagger_Nettlebane"] = stats
+weapon_stats["Artifact_Nettlebane"] = stats
 
-# stats = copy.copy(weapon_stats["Silver_Greatsword"])
+# stats = copy.copy(weapon_stats["Weapon_Silver_Greatsword"])
 # stats.gold = 5000
-# weapon_stats["Artifact_Greatsword_BloodskalBlade"] = stats
+# weapon_stats["Artifact_BloodskalBlade"] = stats
 
-stats = copy.copy(weapon_stats["Ebony_Greatsword"])
+stats = copy.copy(weapon_stats["Weapon_Ebony_Greatsword"])
 stats.gold = 50000
 stats.weight -= 3.0
-weapon_stats["Artifact_Greatsword_EbonyBlade"] = stats
+weapon_stats["Artifact_EbonyBlade"] = stats
 
-# stats = copy.copy(weapon_stats["Steel_Mace"])
-# weapon_stats["Artifact_Mace_Horksbane"] = stats
+# stats = copy.copy(weapon_stats["Weapon_Steel_Mace"])
+# weapon_stats["Artifact_Horksbane"] = stats
 
-stats = copy.copy(weapon_stats["Daedric_Mace"])
+stats = copy.copy(weapon_stats["Weapon_Daedric_Mace"])
 stats.weight += 2.0
 stats.gold = 50000
-weapon_stats["Artifact_Mace_MolagBal"] = stats
+weapon_stats["Artifact_MaceOfMolagBal"] = stats
 
-# stats = copy.copy(weapon_stats[""])
-# weapon_stats["Artifact_Mace_RustyMace"] = stats
+# stats = copy.copy(weapon_stats["Weapon_"])
+# weapon_stats["Artifact_RustyMace"] = stats
 
-stats = copy.copy(weapon_stats["Glass_Sword"])
+stats = copy.copy(weapon_stats["Weapon_Glass_Sword"])
 stats.damage += 1
 stats.weight -= 1.0
 stats.gold = 5000
-weapon_stats["Artifact_Sword_Chillrend"] = stats
+weapon_stats["Artifact_Chillrend"] = stats
 
-# stats = copy.copy(weapon_stats["Redguard_Sword"])
-# weapon_stats["Artifact_Sword_Amren"] = stats
+# stats = copy.copy(weapon_stats["Weapon_Redguard_Sword"])
+# weapon_stats["Artifact_Amren"] = stats
 
-# stats = copy.copy(weapon_stats["Blades_Sword"])
+# stats = copy.copy(weapon_stats["Weapon_Blades_Sword"])
 # stats.gold = 5000
-# weapon_stats["Artifact_Sword_BolarsOathblade"] = stats
+# weapon_stats["Artifact_BolarsOathblade"] = stats
 
-stats = copy.copy(weapon_stats["Silver_Sword"])
+stats = copy.copy(weapon_stats["Weapon_Silver_Sword"])
 stats.damage += 5
 stats.gold = 50000
-weapon_stats["Artifact_Sword_Dawnbreaker"] = stats
+weapon_stats["Artifact_Dawnbreaker"] = stats
 
-stats = copy.copy(weapon_stats["Blades_Sword"])
+stats = copy.copy(weapon_stats["Weapon_Blades_Sword"])
 stats.weight += 4.0
 stats.damage += 3
 stats.gold = 5000
-weapon_stats["Artifact_Sword_Dragonbane"] = stats
+weapon_stats["Artifact_Dragonbane"] = stats
 
-stats = copy.copy(weapon_stats["Spectral_Sword"])
+stats = copy.copy(weapon_stats["Weapon_Spectral_Sword"])
 stats.gold = 5000
-weapon_stats["Artifact_Sword_Ghostblade"] = stats
+weapon_stats["Artifact_Ghostblade"] = stats
 
-stats = copy.copy(weapon_stats["Forsworn_Sword"])
-weapon_stats["Artifact_Sword_Gorak"] = stats
+stats = copy.copy(weapon_stats["Weapon_Forsworn_Sword"])
+weapon_stats["Artifact_GoraksTrollGuttingKnife"] = stats
 
-stats = copy.copy(weapon_stats["Daedric_Sword"])
+stats = copy.copy(weapon_stats["Weapon_Daedric_Sword"])
 stats.gold = 5000
-weapon_stats["Artifact_Sword_Harkon"] = stats
+weapon_stats["Artifact_HarkonsSword"] = stats
 
-stats = copy.copy(weapon_stats["Ebony_Sword"])
+stats = copy.copy(weapon_stats["Weapon_Ebony_Sword"])
 stats.damage += 1
 stats.weight -= 4.0
 stats.gold = 5000
-weapon_stats["Artifact_Sword_Nightingale"] = stats
+weapon_stats["Artifact_NightingaleBlade"] = stats
 
-stats = copy.copy(weapon_stats["NordHero_Sword"])
+stats = copy.copy(weapon_stats["Weapon_NordHero_Sword"])
 stats.gold = 5000
 stats.speed += 0.075
 stats.reach += 0.075
-weapon_stats["Artifact_Sword_RedEaglesBane"] = stats
+weapon_stats["Artifact_RedEaglesBane"] = stats
 
-stats = copy.copy(weapon_stats["NordHero_Sword"])
+stats = copy.copy(weapon_stats["Weapon_NordHero_Sword"])
 stats.damage -= 3
 stats.speed += 0.075
 stats.reach += 0.075
-weapon_stats["Artifact_Sword_RedEaglesFury"] = stats
+weapon_stats["Artifact_RedEaglesFury"] = stats
 
-stats = copy.copy(weapon_stats["Redguard_Sword"])
-weapon_stats["Artifact_Sword_Windshear"] = stats
+stats = copy.copy(weapon_stats["Weapon_Redguard_Sword"])
+weapon_stats["Artifact_Windshear"] = stats
 
-stats = copy.copy(weapon_stats["Dawnguard_WarAxe"])
+stats = copy.copy(weapon_stats["Weapon_Dawnguard_WarAxe"])
 stats.damage += 2
 stats.gold = 5000
-weapon_stats["Artifact_WarAxe_AncientDawnguard"] = stats
+weapon_stats["Artifact_AncientDawnguardWarAxe"] = stats
 
-# stats = copy.copy(weapon_stats["Iron_Warhammer"])
-# weapon_stats["Artifact_Warhammer_Aegisbane"] = stats
+# stats = copy.copy(weapon_stats["Weapon_Iron_Warhammer"])
+# weapon_stats["Artifact_Aegisbane"] = stats
 
-stats = copy.copy(weapon_stats["Orcish_Warhammer"])
+stats = copy.copy(weapon_stats["Weapon_Orcish_Warhammer"])
 stats.weight -= 9.0
 stats.speed += 0.2
-weapon_stats["Artifact_Warhammer_Longhammer"] = stats
+weapon_stats["Artifact_TheLonghammer"] = stats
 
-stats = copy.copy(weapon_stats["Dawnguard_Warhammer"])
+stats = copy.copy(weapon_stats["Weapon_Dawnguard_Warhammer"])
 stats.damage += 2
 stats.gold = 5000
-weapon_stats["Artifact_Warhammer_AncientDawnguard"] = stats
+weapon_stats["Artifact_AncientDawnguardWarhammer"] = stats
 
-stats = copy.copy(weapon_stats["Daedric_Warhammer"])
+stats = copy.copy(weapon_stats["Weapon_Daedric_Warhammer"])
 stats.weight += 5.0
 stats.gold = 50000
-weapon_stats["Artifact_Warhammer_Volendrung"] = stats
+weapon_stats["Artifact_Volendrung"] = stats
 
 
 with open("REQ_WeaponPatcher.txt", "w") as fh:
     for weapon, stats in sorted(weapon_stats.items()):
-        fh.write(f"{weapon}=")
-        fh.write(f"{stats.damage:d} ")
-        fh.write(f"{stats.weight:.6f} ")
-        fh.write(f"{stats.gold:d} ")
-        fh.write(f"{stats.speed:.6f} ")
-        fh.write(f"{stats.reach:.6f} ")
-        fh.write(f"{stats.stagger:.6f} ")
-        fh.write(f"{stats.critical_damage:d}\n")
+        fh.write(f'{weapon}=')
+        fh.write(f'{stats.damage:d} ')
+        fh.write(f'{stats.weight:.6f} ')
+        fh.write(f'{stats.gold:d} ')
+        fh.write(f'{stats.speed:.6f} ')
+        fh.write(f'{stats.reach:.6f} ')
+        fh.write(f'{stats.stagger:.6f} ')
+        fh.write(f'{stats.critical_damage:d}\n')
