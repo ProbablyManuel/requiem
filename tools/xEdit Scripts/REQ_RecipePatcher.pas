@@ -4,13 +4,13 @@ uses REQ_Lookup;
 
 var
   re_ignore, re_recipe, re_recipe_artifact: TPerlRegEx;
-  recipes: TStringList;
+  recipes_ingredients: TStringList;
 
 
 function Initialize: Integer;
 begin
-  recipes := TStringList.Create;
-  recipes.LoadFromFile('Edit Scripts\REQ_RecipePatcher.txt');
+  recipes_ingredients := TStringList.Create;
+  recipes_ingredients.LoadFromFile('Edit Scripts\REQ_RecipePatcherIngredients.txt');
 
   re_ignore := TPerlRegEx.Create;
   re_ignore.RegEx := '^[^_]+_(DEPRECATED|LEGACY|NULL|AetheriumForge|Oven|Cook|Ench|Mill|Rack|Smelter|Skyforge_Arrow|Forge_(?:Amulet|Arrow|Bolt|Circlet|Ench|Ring|Staff))_.+$';
@@ -24,10 +24,7 @@ end;
 
 function Process(e: IInterface): integer;
 var
-  items, entry: IInterface;
-  i: Integer;
   key: String;
-  ingredients: TStringList;
 begin
   if Signature(e) <> 'COBJ' then Exit;
   re_ignore.Subject := EditorID(e);
@@ -47,13 +44,29 @@ begin
     AddMessage('EditorID ' + EditorID(e) + ' is invalid');
     Exit;
   end;
-
-  ingredients := TStringList.Create;
-  ingredients.DelimitedText := recipes.Values[key];
-  if ingredients.Count = 0 then begin
+  if recipes_ingredients.IndexOfName(key) = -1 then begin
     AddMessage('EditorID ' + EditorID(e) + ' is not recognized');
     Exit;
   end;
+  SetIngredients(e, key);
+end;
+
+function Finalize: Integer;
+begin
+  recipes_ingredients.Free;
+  re_ignore.Free;
+  re_recipe.Free;
+  re_recipe_artifact.Free;
+end;
+
+procedure SetIngredients(e: IInterface; recipe: String);
+var
+  items, entry: IInterface;
+  i: Integer;
+  ingredients: TStringList;
+begin
+  ingredients := TStringList.Create;
+  ingredients.DelimitedText := recipes_ingredients.Values[recipe];
   for i := 0 to Pred(ingredients.Count div 2) do begin
     ingredients[i * 2] := IntToHex(PairToLoadOrderFormID(ingredients[2 * i]), 8);
   end;
@@ -70,14 +83,6 @@ begin
     end;
   end;
   ingredients.Free;
-end;
-
-function Finalize: Integer;
-begin
-  recipes.Free;
-  re_ignore.Free;
-  re_recipe.Free;
-  re_recipe_artifact.Free;
 end;
 
 function SerializeItems(items: IInterface): String;

@@ -77,7 +77,7 @@ weapon_materials["Temper"].mask(weapon_materials["Temper"] == "", weapon_materia
 weapon_quantities = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="CraftingQuantities", index_col=0)
 weapon_artifacts = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Artifacts", index_col=0).dropna()
 
-recipes = {}
+recipes_ingredients = {}
 for weapon_set, materials in weapon_materials.iterrows():
     for weapon_type, quantities in weapon_quantities.iterrows():
         if materials["Primary"]:
@@ -96,9 +96,9 @@ for weapon_set, materials in weapon_materials.iterrows():
                 ]
             ingredients.append(f'{name_to_form["Leather Strips"]} {quantities["Leather"]}')
             ingredients.sort(key=pair_to_load_order_form_id)
-            recipes[editor_id] = " ".join(ingredients)
+            recipes_ingredients[editor_id] = " ".join(ingredients)
         editor_id = f'Temper_Weapon_{weapon_set}_{weapon_type}'
-        recipes[editor_id] = f'{name_to_form[materials["Temper"]]} 1'
+        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]} 1'
     for weapon_type in weapon_quantities.index:
         editor_id = f'Forge_Weapon_Daedric_{weapon_type}'
         ingredients = [
@@ -107,10 +107,10 @@ for weapon_set, materials in weapon_materials.iterrows():
             f'{name_to_form["Black Soul Gem"]} 1',
         ]
         ingredients.sort(key=pair_to_load_order_form_id)
-        recipes[editor_id] = " ".join(ingredients)
+        recipes_ingredients[editor_id] = " ".join(ingredients)
 for artifact, rows in weapon_artifacts.iterrows():
     editor_id = f'Temper_Artifact_{artifact}'
-    recipes[editor_id] = recipes[f'Temper_Weapon_{rows["Base"]}']
+    recipes_ingredients[editor_id] = recipes_ingredients[f'Temper_Weapon_{rows["Base"]}']
 
 
 armor_materials = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="CraftingMaterials", index_col=0, keep_default_na=False)
@@ -140,9 +140,9 @@ for armor_set, materials in armor_materials.iterrows():
                 ingredients.append(f'{name_to_form["Void Salts"]} 1')
             ingredients.append(f'{name_to_form[materials["Leather"]]} {quantities["Leather"]}')
             ingredients.sort(key=pair_to_load_order_form_id)
-            recipes[editor_id] = " ".join(ingredients)
+            recipes_ingredients[editor_id] = " ".join(ingredients)
         editor_id = f'Temper_{armor_set}_{armor_type}'
-        recipes[editor_id] = f'{name_to_form[materials["Temper"]]} 1'
+        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]} 1'
     for armor_type in armor_quantities.index:
         editor_id = f'Forge_Heavy_Daedric_{armor_type}'
         ingredients = [
@@ -151,11 +151,11 @@ for armor_set, materials in armor_materials.iterrows():
             f'{name_to_form["Black Soul Gem"]} 1',
         ]
         ingredients.sort(key=pair_to_load_order_form_id)
-        recipes[editor_id] = " ".join(ingredients)
+        recipes_ingredients[editor_id] = " ".join(ingredients)
 for artifact, rows in armor_artifacts.iterrows():
     editor_id = f'Temper_Artifact_{artifact}'
-    recipes[editor_id] = recipes[f'Temper_{rows["Base"]}']
+    recipes_ingredients[editor_id] = recipes_ingredients[f'Temper_{rows["Base"]}']
 
-with open("REQ_RecipePatcher.txt", "w") as fh:
-    for editor_id, ingredients in sorted(recipes.items()):
+with open("REQ_RecipePatcherIngredients.txt", "w") as fh:
+    for editor_id, ingredients in sorted(recipes_ingredients.items()):
         fh.write(f'{editor_id}={ingredients}\n')
