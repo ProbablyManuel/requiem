@@ -78,6 +78,11 @@ Tweaks
     * Stormcloak officer armor requires steel instead of leather.
     * Studded hide armor requires leather instead of iron.
     * Ulfric's armor requires steel instead of corundum.
+* Tempering Nightingale armor and weapons and Harkon's sword requires Legendary Blacksmithing.
+* Tempering dragonplate armor requires Ebony Smithing and tempering dragonscale armor requires Glass Smithing to match the crafting requirements.
+* Tempering Thieves Guild and Dark Brotherhood armors does not require joining the guilds.
+* Crafting and tempering bonemold and chitin armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
+* Nordic weapons can be crafted with Advanced Blacksmithing.
 
 Bugfixes
 --------

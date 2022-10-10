@@ -4,13 +4,16 @@ uses REQ_Lookup;
 
 var
   re_ignore, re_recipe, re_recipe_artifact: TPerlRegEx;
-  recipes_ingredients: TStringList;
+  recipes_ingredients, recipes_conditions: TStringList;
 
 
 function Initialize: Integer;
 begin
   recipes_ingredients := TStringList.Create;
   recipes_ingredients.LoadFromFile('Edit Scripts\REQ_RecipePatcherIngredients.txt');
+
+  recipes_conditions := TStringList.Create;
+  recipes_conditions.LoadFromFile('Edit Scripts\REQ_RecipePatcherConditions.txt');
 
   re_ignore := TPerlRegEx.Create;
   re_ignore.RegEx := '^[^_]+_(DEPRECATED|LEGACY|NULL|AetheriumForge|Oven|Cook|Ench|Mill|Rack|Smelter|Skyforge_Arrow|Forge_(?:Amulet|Arrow|Bolt|Circlet|Ench|Ring|Staff))_.+$';
@@ -44,11 +47,16 @@ begin
     AddMessage('EditorID ' + EditorID(e) + ' is invalid');
     Exit;
   end;
-  if recipes_ingredients.IndexOfName(key) = -1 then begin
+  if (recipes_ingredients.IndexOfName(key) = -1) then begin
+    AddMessage('EditorID ' + EditorID(e) + ' is not recognized');
+    Exit;
+  end;
+  if (recipes_conditions.IndexOfName(key) = -1) then begin
     AddMessage('EditorID ' + EditorID(e) + ' is not recognized');
     Exit;
   end;
   SetIngredients(e, key);
+  SetConditions(e, key);
 end;
 
 function Finalize: Integer;
@@ -85,6 +93,38 @@ begin
   ingredients.Free;
 end;
 
+procedure SetConditions(e: IInterface; recipe: String);
+var
+  items, entry: IInterface;
+  i: Integer;
+  conditions: TStringList;
+begin
+  conditions := TStringList.Create;
+  conditions.StrictDelimiter := True;
+  conditions.DelimitedText := recipes_conditions.Values[recipe];
+  for i := 0 to Pred(conditions.Count div 6) do begin
+    if conditions[6 * i + 3] <> '00 00 00 00' then
+      conditions[6 * i + 3] := IntToHex(PairToLoadOrderFormID(conditions[6 * i + 3]), 8);
+  end;
+
+  items := ElementByPath(e, 'Conditions');
+  if SerializeConditions(items) <> conditions.DelimitedText then begin
+    RemoveElement(e, items);
+    items := Add(e, 'Conditions', True);
+    RemoveElement(items, 0);
+    for i := 0 to Pred(conditions.Count div 6) do begin
+      entry := ElementAssign(items, HighInteger, nil, False);
+      SetElementEditValues(entry, 'CTDA\Type', conditions[6 * i]);
+      SetElementEditValues(entry, 'CTDA\Comparison Value', conditions[6 * i + 1]);
+      SetElementEditValues(entry, 'CTDA\Function', conditions[6 * i + 2]);
+      SetElementEditValues(entry, 'CTDA\Parameter #1', conditions[6 * i + 3]);
+      SetElementEditValues(entry, 'CTDA\Parameter #2', conditions[6 * i + 4]);
+      SetElementEditValues(entry, 'CTDA\Run On', conditions[6 * i + 5]);
+    end;
+  end;
+  conditions.Free;
+end;
+
 function SerializeItems(items: IInterface): String;
 var
   entry: IInterface;
@@ -96,6 +136,30 @@ begin
     Result := Result + ',' + GetElementEditValues(entry, 'CNTO - Item\Count');
     if ElementExists(entry, 'COED - Extra Data') then
       Result := 'COED';
+  end;
+  Result := Delete(Result, 1, 1);
+end;
+
+function SerializeConditions(conditions: IInterface): String;
+var
+  c: IInterface;
+  i, nativeFormID: Integer;
+begin
+  for i := 0 to Pred(ElementCount(conditions)) do begin
+    c := ElementByIndex(conditions, i);
+    Result := Result + ',' + GetElementEditValues(c, 'CTDA\Type');
+    Result := Result + ',' + GetElementEditValues(c, 'CTDA\Comparison Value');
+    Result := Result + ',' + GetElementEditValues(c, 'CTDA\Function');
+    if Assigned(LinksTo(ElementByPath(c, 'CTDA\Parameter #1'))) then
+      Result := Result + ',' + IntToHex(FileFormIDtoLoadOrderFormID(GetFile(conditions), GetElementNativeValues(c, 'CTDA\Parameter #1')), 8)
+    else
+      Result := Result + ',' + GetElementEditValues(c, 'CTDA\Parameter #1');
+    // The edit value of a quest stage is preceded by its log entry which is not the expected behavior
+    if GetElementEditValues(c, 'CTDA\Parameter #2') <> '00 00 00 00' then
+      Result := Result + ',' + IntToStr(GetElementNativeValues(c, 'CTDA\Parameter #2'))
+    else
+      Result := Result + ',' + GetElementEditValues(c, 'CTDA\Parameter #2');
+    Result := Result + ',' + GetElementEditValues(c, 'CTDA\Run On');
   end;
   Result := Delete(Result, 1, 1);
 end;
