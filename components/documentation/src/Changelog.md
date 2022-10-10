@@ -90,6 +90,7 @@ Bugfixes
 * Red Eagle's Fury has the same stats except lower damage as Red Eagle's Bane.
 * The longhammer has the same damage and price as an Orcish warhammer.
 * Wuuthrad has the same weight as an ebony battleaxe.
+* Duplicate tempering recipe for Headman's Axe and Pickaxe is removed.
 
 Reqtificator
 ------------
