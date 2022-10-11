@@ -85,6 +85,7 @@ Tweaks
 * Tempering Thieves Guild and Dark Brotherhood armors does not require joining the guilds.
 * Crafting and tempering bonemold and chitin armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
 * Nordic weapons can be crafted with Advanced Blacksmithing.
+* Base damage and weight of Nordic weapons is reduced by 2 and 1 points respectively.
 
 Bugfixes
 --------

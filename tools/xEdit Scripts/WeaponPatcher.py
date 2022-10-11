@@ -37,7 +37,7 @@ weapon_sets = {
     "Imperial": WeaponSet(damage_offset=0, weight_offset=0, gold_mult=4 / 3),
     "Iron": WeaponSet(damage_offset=-1, weight_offset=-1, gold_mult=0.55),
     "NordHero": WeaponSet(damage_offset=3, weight_offset=-1, gold_mult=6.0),
-    "Nordic": WeaponSet(damage_offset=3, weight_offset=2, gold_mult=6.0),
+    "Nordic": WeaponSet(damage_offset=1, weight_offset=1, gold_mult=2.0),
     "Orcish": WeaponSet(damage_offset=2, weight_offset=2, gold_mult=4.0),
     "Redguard": WeaponSet(damage_offset=3, weight_offset=0, gold_mult=2.0),
     "Silver": WeaponSet(damage_offset=0, weight_offset=0, gold_mult=2.0),
