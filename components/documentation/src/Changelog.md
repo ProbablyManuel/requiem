@@ -63,6 +63,7 @@ Tweaks
     * Ancient Nord armor requires steel instead of iron.
     * Blade of Woe require ebony instead of steel.
     * Dawnguard crossbow requires silver instead of steel.
+    * Dragon Priest Dagger requires iron instead of Dwarven metal.
     * Dragonbane requires steel instead of quicksilver.
     * Forsworn weapons require leather instead of steel.
     * General Tullius' armor requires leather instead of steel.
@@ -72,6 +73,7 @@ Tweaks
     * Ironhand Gauntlets requires steel instead of iron.
     * Kahvozein's Fang requires dragon bone instead of dwarven metal.
     * Nightingale armor requires leather instead of void salts.
+    * Poacher's Axe requires requires iron instead of steel.
     * Rueful Axe requires silver instead of ebony.
     * Savior's Hide requires steel instead of leather.
     * Scale armor requires steel instead of corundum.
