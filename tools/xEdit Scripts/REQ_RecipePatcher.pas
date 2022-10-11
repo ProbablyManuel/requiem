@@ -16,7 +16,7 @@ begin
   recipes_conditions.LoadFromFile('Edit Scripts\REQ_RecipePatcherConditions.txt');
 
   re_ignore := TPerlRegEx.Create;
-  re_ignore.RegEx := '^[^_]+_(DEPRECATED|LEGACY|NULL|AetheriumForge|Oven|Cook|Ench|Mill|Rack|Smelter|Skyforge_Arrow|Forge_(?:Amulet|Arrow|Bolt|Circlet|Ench|Ring|Staff))_.+$';
+  re_ignore.RegEx := '^[^_]+_(DEPRECATED|LEGACY|NULL|AetheriumForge|Cook|Ench|Forge_(?:Amulet|Arrow|Bolt|Circlet|Ench|Ring|Special|Staff)|Mill|Oven|Rack|Skyforge_Arrow|Smelter|Temper_Special)_.+$';
 
   re_recipe := TPerlRegEx.Create;
   re_recipe.RegEx := '^[^_]+_((?:Forge|Skyforge|Temper(?:_Var)?)_(?:Heavy|Light|Weapon)_([^_]+)_([^_]+))(?:_(.+))?$';
