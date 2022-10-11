@@ -74,6 +74,7 @@ var
   ingredients: TStringList;
 begin
   ingredients := TStringList.Create;
+  ingredients.StrictDelimiter := True;
   ingredients.DelimitedText := recipes_ingredients.Values[recipe];
   for i := 0 to Pred(ingredients.Count div 2) do begin
     ingredients[i * 2] := IntToHex(PairToLoadOrderFormID(ingredients[2 * i]), 8);

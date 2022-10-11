@@ -179,29 +179,29 @@ for weapon_set, materials in weapon_materials.iterrows():
             else:
                 editor_id = f'Forge_Weapon_{weapon_set}_{weapon_type}'
             ingredients = [
-                f'{name_to_form[materials["Primary"]]} {quantities["Primary"]}',
-                f'{name_to_form["Leather Strips"]} {quantities["Leather"]}',
+                f'{name_to_form[materials["Primary"]]},{quantities["Primary"]}',
+                f'{name_to_form["Leather Strips"]},{quantities["Leather"]}',
             ]
             if materials["Secondary"]:
-                ingredients.append(f'{name_to_form[materials["Secondary"]]} {quantities["Secondary"]}')
+                ingredients.append(f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
             ingredients.sort(key=pair_to_load_order_form_id)
             conditions = get_conditions(materials["Perk"], editor_id)
-            recipes_ingredients[editor_id] = " ".join(ingredients)
+            recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
         editor_id = f'Temper_Weapon_{weapon_set}_{weapon_type}'
         conditions = get_conditions(materials["Perk"], editor_id)
-        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]} 1'
+        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]},1'
         recipes_conditions[editor_id] = conditions
     for weapon_type in weapon_quantities.index:
         editor_id = f'Forge_Weapon_Daedric_{weapon_type}'
         ingredients = [
-            f'{name_to_form["Ebony " + weapon_type]} 1',
-            f'{name_to_form["Daedra Heart"]} 1',
-            f'{name_to_form["Black Soul Gem"]} 1',
+            f'{name_to_form["Ebony " + weapon_type]},1',
+            f'{name_to_form["Daedra Heart"]},1',
+            f'{name_to_form["Black Soul Gem"]},1',
         ]
         ingredients.sort(key=pair_to_load_order_form_id)
         conditions = get_conditions("Daedric Smithing", editor_id)
-        recipes_ingredients[editor_id] = " ".join(ingredients)
+        recipes_ingredients[editor_id] = ",".join(ingredients)
         recipes_conditions[editor_id] = conditions
 for artifact, rows in weapon_artifacts.iterrows():
     editor_id = f'Temper_Artifact_{artifact}'
@@ -227,33 +227,33 @@ for armor_set, materials in armor_materials.iterrows():
             else:
                 editor_id = f'Forge_{armor_set}_{armor_type}'
             ingredients = [
-                f'{name_to_form[materials["Primary"]]} {quantities["Primary"]}',
-                f'{name_to_form[materials["Leather"]]} {quantities["Leather"]}',
+                f'{name_to_form[materials["Primary"]]},{quantities["Primary"]}',
+                f'{name_to_form[materials["Leather"]]},{quantities["Leather"]}',
             ]
             if materials["Secondary"]:
-                ingredients.append(f'{name_to_form[materials["Secondary"]]} {quantities["Secondary"]}')
+                ingredients.append(f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
             if armor_set == "Heavy_ImprovedBonemold":
-                ingredients.append(f'{name_to_form["Netch Jelly"]} 1')
-                ingredients.append(f'{name_to_form["Stalhrim"]} 1')
-                ingredients.append(f'{name_to_form["Void Salts"]} 1')
+                ingredients.append(f'{name_to_form["Netch Jelly"]},1')
+                ingredients.append(f'{name_to_form["Stalhrim"]},1')
+                ingredients.append(f'{name_to_form["Void Salts"]},1')
             ingredients.sort(key=pair_to_load_order_form_id)
             conditions = get_conditions(materials["Perk"], editor_id)
-            recipes_ingredients[editor_id] = " ".join(ingredients)
+            recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
         editor_id = f'Temper_{armor_set}_{armor_type}'
         conditions = get_conditions(materials["Perk"], editor_id)
-        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]} 1'
+        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]},1'
         recipes_conditions[editor_id] = conditions
     for armor_type in armor_quantities.index:
         editor_id = f'Forge_Heavy_Daedric_{armor_type}'
         ingredients = [
-            f'{name_to_form["Ebony " + armor_type]} 1',
-            f'{name_to_form["Daedra Heart"]} 1',
-            f'{name_to_form["Black Soul Gem"]} 1',
+            f'{name_to_form["Ebony " + armor_type]},1',
+            f'{name_to_form["Daedra Heart"]},1',
+            f'{name_to_form["Black Soul Gem"]},1',
         ]
         ingredients.sort(key=pair_to_load_order_form_id)
         conditions = get_conditions("Daedric Smithing", editor_id)
-        recipes_ingredients[editor_id] = " ".join(ingredients)
+        recipes_ingredients[editor_id] = ",".join(ingredients)
         recipes_conditions[editor_id] = conditions
 for artifact, rows in armor_artifacts.iterrows():
     editor_id = f'Temper_Artifact_{artifact}'
