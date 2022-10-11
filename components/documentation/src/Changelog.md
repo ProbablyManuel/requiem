@@ -22,6 +22,70 @@ Tweaks
     * Velehk Sain
 * Names of base enchantments are reverted to the more concise vanilla names.
 * The summoned Dremora archer uses normal daedric arrows instead of a heavily nerfed variant.
+* Artifact name changes:
+    * Dawnguard Rune Axe -> Ancient Dawnguard War Axe
+    * Dawnguard Rune Hammer -> Ancient Dawnguard Warhammer
+    * Dawnguard Rune Shield -> Ancient Dawnguard Shield
+    * Dragon Priest Staff -> Rahgot's Staff
+    * The Gauldur Amulet -> Gauldur Amulet
+    * The Rueful Axe -> Rueful Axe
+* All crafting recipes are standardized according to the following formulas.
+    * Gauntlets: 2 primary, 1 secondary, 2 leather strips
+    * Boots: 3 primary, 1 secondary, 2 leather strips
+    * Helmet: 3 primary, 1 secondary, 1 leather strip
+    * Cuirass: 5 primary, 2 secondary, 4 leather strips
+    * Shield: 4 primary, 1 secondary, 2 leather strips
+    * Dagger: 1 primary, 1 secondary, 1 leather strip
+    * Sword: 2 primary, 1 secondary, 1 leather strip
+    * War Axe: 2 primary, 1 secondary, 2 leather strips
+    * Mace: 3 primary, 1 secondary, 2 leather strips
+    * Greatsword: 4 primary, 1 secondary, 2 leather strips
+    * Battleaxe: 4 primary, 1 secondary, 3 leather strips
+    * Warhammer: 4 primary, 2 secondary, 3 leather strips
+    * Bow: 3 primary, 1 secondary, 2 leather strips
+    * Crossbow: 3 primary, 1 secondary, 2 leather strips
+    * Arrows (30): 1 primary, 1 leather strip
+* Crafting components changes:
+    * Ancient Nord armor does not require leather.
+    * Dragonscale armor requires iron instead of corundum.
+    * Dwarven armor does not require steel.
+    * Glass armor does not require leather.
+    * Hide and Leather armor requires iron.
+    * Imperial heavy armor requires iron instead of leather.
+    * Improved crossbows require the same material as normal crossbows.
+    * Nord hero weapons require corundum instead of an ancient Nord weapon.
+    * Scale armor does not require leather.
+    * Stalhrim heavy armor requires leather instead of quicksilver.
+    * Stalhrim light armor requires leather instead of steel.
+    * No items require firewood.
+* Tempering components changes:
+    * Aetherium armor requires dwarven metal instead of gold.
+    * Ancient Nord armor requires steel instead of iron.
+    * Blade of Woe require ebony instead of steel.
+    * Dawnguard crossbow requires silver instead of steel.
+    * Dragon Priest Dagger requires iron instead of Dwarven metal.
+    * Dragonbane requires steel instead of quicksilver.
+    * Forsworn weapons require leather instead of steel.
+    * General Tullius' armor requires leather instead of steel.
+    * Guard armor requires leather instead of iron.
+    * Harkon's sword requires ebony instead of steel.
+    * Iron armor with pauldrons requires iron instead of corrundum.
+    * Ironhand Gauntlets requires steel instead of iron.
+    * Kahvozein's Fang requires dragon bone instead of dwarven metal.
+    * Nightingale armor requires leather instead of void salts.
+    * Poacher's Axe requires requires iron instead of steel.
+    * Rueful Axe requires silver instead of ebony.
+    * Savior's Hide requires steel instead of leather.
+    * Scale armor requires steel instead of corundum.
+    * Stormcloak officer armor requires steel instead of leather.
+    * Studded hide armor requires leather instead of iron.
+    * Ulfric's armor requires steel instead of corundum.
+* Tempering Nightingale armor and weapons and Harkon's sword requires Legendary Blacksmithing.
+* Tempering dragonplate armor requires Ebony Smithing and tempering dragonscale armor requires Glass Smithing to match the crafting requirements.
+* Tempering Thieves Guild and Dark Brotherhood armors does not require joining the guilds.
+* Crafting and tempering bonemold and chitin armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
+* Nordic weapons can be crafted with Advanced Blacksmithing.
+* Base damage and weight of Nordic weapons is reduced by 2 and 1 points respectively.
 
 Bugfixes
 --------
@@ -34,6 +98,7 @@ Bugfixes
 * Red Eagle's Fury has the same stats except lower damage as Red Eagle's Bane.
 * The longhammer has the same damage and price as an Orcish warhammer.
 * Wuuthrad has the same weight as an ebony battleaxe.
+* Duplicate tempering recipe for Headman's Axe and Pickaxe is removed.
 
 Reqtificator
 ------------
@@ -43,8 +108,10 @@ Reqtificator
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
+* Ammo crafting recipes use vanilla records where they already exist.
 * Ammo, animal hides, crafting recipes, enchanted weapons, and weapon enchantments have a proper EditorID.
 * Standard weapons have a common prefix "Weapon" in their EditorID.
+* Weapon artifacts do not have the weapon type in their EditorID.
 * EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
 * Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted crossbows are currently unused.)

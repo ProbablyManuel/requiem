@@ -50,7 +50,7 @@ begin
   weaponSet := re_weapon.Groups[2];
   weaponType := re_weapon.Groups[3];
 
-  weaponEditorID := Format('%s_Ench_%s_%s_%s', [prefix, weaponSet, weaponType, enchantmentName]);
+  weaponEditorID := Format('%s_Ench_Weapon_%s_%s_%s', [prefix, weaponSet, weaponType, enchantmentName]);
   if EditorID(e) <> weaponEditorID then
     SetEditorID(e, weaponEditorID);
   slWeapons.Add(weaponEditorID);

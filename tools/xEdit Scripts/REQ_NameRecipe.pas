@@ -2,22 +2,38 @@ unit NameRecipe;
 
 var
   prefix: String;
+  slWorkbench: TStringList;
 
 
 function Initialize: Integer;
 begin
   if not InputQuery('Enter', 'Prefix', prefix) then
     Result := -1;
+
+  slWorkbench := TStringList.Create;
+  slWorkbench.Add('BYOHCraftingOven=Oven');
+  slWorkbench.Add('CraftingCookpot=Cook');
+  slWorkbench.Add('CraftingSmelter=Smelter');
+  slWorkbench.Add('CraftingSmithingArmorTable=Temper');
+  slWorkbench.Add('CraftingSmithingForge=Forge');
+  slWorkbench.Add('CraftingSmithingSharpeningWheel=Temper');
+  slWorkbench.Add('CraftingSmithingSkyforge=Skyforge');
+  slWorkbench.Add('CraftingTanningRack=Rack');
+  slWorkbench.Add('DLC1LD_CraftingForgeAetherium=AetheriumForge');
+  slWorkbench.Add('DLC2StaffEnchanter=Ench');
+  slWorkbench.Add('isGrainMill=Mill');
+  slWorkbench.Add('REQ_DisableRecipe=NULL');
 end;
 
 function Process(e: IInterface): integer;
 var
   createdObject: IInterface;
-  sig, newEditorID, workbench: String;
+  sig, newEditorID, workbench, workbenchKeyword: String;
 begin
   if Signature(e) <> 'COBJ' then Exit;
 
-  workbench := GetWorkbench(e);
+  workbenchKeyword := EditorID(LinksTo(ElementByPath(e, 'BNAM - Workbench Keyword')));
+  workbench := slWorkbench.Values[workbenchKeyword];
   if workbench = 'NULL' then
     newEditorID := prefix + '_NULL_' + EditorID(MasterOrSelf(e))
   else begin
@@ -36,31 +52,7 @@ end;
 
 function Finalize: Integer;
 begin
-
-end;
-
-
-function GetWorkbench(e: IInterface): String;
-var
-  keyword: Integer;
-begin
-  keyword := GetElementNativeValues(e, 'BNAM - Workbench Keyword');
-  case keyword of
-    $00088105: Result := 'Forge';
-    $000F46CE: Result := 'Skyforge';
-    $000ADB78: Result := 'Temper';  // Armor Table
-    $00088108: Result := 'Temper';  // Sharpening Wheel
-    $000A5CCE: Result := 'Smelter';
-    $0007866A: Result := 'Rack';
-    $000A5CB3: Result := 'Cook';
-    $0009C6DE: Result := 'Mill';
-    $02005756: Result := 'AetheriumForge';
-    $030117F7: Result := 'Oven';
-    $04017738: Result := 'Ench';  // Staff Enchanter
-    $0AAD3B01: Result := 'NULL';
-  else
-    Result := '';
-  end;
+  slWorkbench.Free;
 end;
 
 end.
