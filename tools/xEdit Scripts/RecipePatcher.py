@@ -178,16 +178,12 @@ for weapon_set, materials in weapon_materials.iterrows():
                 editor_id = f'Skyforge_Weapon_{weapon_set}_{weapon_type}'
             else:
                 editor_id = f'Forge_Weapon_{weapon_set}_{weapon_type}'
+            ingredients = [
+                f'{name_to_form[materials["Primary"]]} {quantities["Primary"]}',
+                f'{name_to_form["Leather Strips"]} {quantities["Leather"]}',
+            ]
             if materials["Secondary"]:
-                ingredients = [
-                    f'{name_to_form[materials["Primary"]]} {quantities["Primary"]}',
-                    f'{name_to_form[materials["Secondary"]]} {quantities["Secondary"]}'
-                ]
-            else:
-                ingredients = [
-                    f'{name_to_form[materials["Primary"]]} {quantities["Primary"] + quantities["Secondary"]}'
-                ]
-            ingredients.append(f'{name_to_form["Leather Strips"]} {quantities["Leather"]}')
+                ingredients.append(f'{name_to_form[materials["Secondary"]]} {quantities["Secondary"]}')
             ingredients.sort(key=pair_to_load_order_form_id)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = " ".join(ingredients)
@@ -230,20 +226,16 @@ for armor_set, materials in armor_materials.iterrows():
                 editor_id = f'Skyforge_{armor_set}_{armor_type}'
             else:
                 editor_id = f'Forge_{armor_set}_{armor_type}'
+            ingredients = [
+                f'{name_to_form[materials["Primary"]]} {quantities["Primary"]}',
+                f'{name_to_form[materials["Leather"]]} {quantities["Leather"]}',
+            ]
             if materials["Secondary"]:
-                ingredients = [
-                    f'{name_to_form[materials["Primary"]]} {quantities["Primary"]}',
-                    f'{name_to_form[materials["Secondary"]]} {quantities["Secondary"]}'
-                ]
-            else:
-                ingredients = [
-                    f'{name_to_form[materials["Primary"]]} {quantities["Primary"] + quantities["Secondary"]}'
-                ]
+                ingredients.append(f'{name_to_form[materials["Secondary"]]} {quantities["Secondary"]}')
             if armor_set == "Heavy_ImprovedBonemold":
                 ingredients.append(f'{name_to_form["Netch Jelly"]} 1')
                 ingredients.append(f'{name_to_form["Stalhrim"]} 1')
                 ingredients.append(f'{name_to_form["Void Salts"]} 1')
-            ingredients.append(f'{name_to_form[materials["Leather"]]} {quantities["Leather"]}')
             ingredients.sort(key=pair_to_load_order_form_id)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = " ".join(ingredients)
