@@ -83,10 +83,10 @@ def pair_to_load_order_form_id(pair: str):
     return load_order_index[plugin] + form_id
 
 
-weapon_materials = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="CraftingMaterials", index_col=0, keep_default_na=False)
-weapon_materials["Temper"].mask(weapon_materials["Temper"] == "", weapon_materials["Primary"], inplace=True)
-weapon_quantities = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="CraftingQuantities", index_col=0)
-weapon_artifacts = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Artifacts", index_col=0).dropna()
+weapon_materials = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="CraftingMaterials", index_col=0).convert_dtypes()
+weapon_materials["Temper"].mask(weapon_materials["Temper"].isna(), weapon_materials["Primary"], inplace=True)
+weapon_quantities = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="CraftingQuantities", index_col=0).convert_dtypes()
+weapon_artifacts = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Artifacts", index_col=0).convert_dtypes().dropna()
 
 
 def get_conditions(perk: str, editor_id: str) -> str:
@@ -173,7 +173,7 @@ recipes_ingredients = {}
 recipes_conditions = {}
 for weapon_set, materials in weapon_materials.iterrows():
     for weapon_type, quantities in weapon_quantities.iterrows():
-        if materials["Primary"]:
+        if pd.notna(materials["Primary"]):
             if materials["Perk"] == "Skyforge Smithing":
                 editor_id = f'Skyforge_Weapon_{weapon_set}_{weapon_type}'
             else:
@@ -182,7 +182,7 @@ for weapon_set, materials in weapon_materials.iterrows():
                 f'{name_to_form[materials["Primary"]]},{quantities["Primary"]}',
                 f'{name_to_form["Leather Strips"]},{quantities["Leather"]}',
             ]
-            if materials["Secondary"]:
+            if pd.notna(materials["Secondary"]):
                 ingredients.append(f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
             ingredients.sort(key=pair_to_load_order_form_id)
             conditions = get_conditions(materials["Perk"], editor_id)
@@ -214,14 +214,14 @@ for artifact, rows in weapon_artifacts.iterrows():
     recipes_conditions[editor_id] = conditions
 
 
-armor_materials = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="CraftingMaterials", index_col=0, keep_default_na=False)
-armor_materials["Temper"].mask(armor_materials["Temper"] == "", armor_materials["Primary"], inplace=True)
-armor_quantities = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="CraftingQuantities", index_col=0)
-armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0).dropna()
+armor_materials = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="CraftingMaterials", index_col=0).convert_dtypes()
+armor_materials["Temper"].mask(armor_materials["Temper"].isna(), armor_materials["Primary"], inplace=True)
+armor_quantities = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="CraftingQuantities", index_col=0).convert_dtypes()
+armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0).convert_dtypes().dropna()
 
 for armor_set, materials in armor_materials.iterrows():
     for armor_type, quantities in armor_quantities.iterrows():
-        if materials["Primary"]:
+        if pd.notna(materials["Primary"]):
             if materials["Perk"] == "Skyforge Smithing":
                 editor_id = f'Skyforge_{armor_set}_{armor_type}'
             else:
@@ -230,7 +230,7 @@ for armor_set, materials in armor_materials.iterrows():
                 f'{name_to_form[materials["Primary"]]},{quantities["Primary"]}',
                 f'{name_to_form[materials["Leather"]]},{quantities["Leather"]}',
             ]
-            if materials["Secondary"]:
+            if pd.notna(materials["Secondary"]):
                 ingredients.append(f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
             if armor_set == "Heavy_ImprovedBonemold":
                 ingredients.append(f'{name_to_form["Netch Jelly"]},1')
