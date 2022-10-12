@@ -16,7 +16,6 @@ for weapon_set, set_stats in weapon.iterrows():
             stats["Damage"] = 0
         else:
             stats["Damage"] += set_stats["Damage"]
-        stats["Critical Damage"] = stats["Damage"] // 2
 
         if pd.isna(set_stats["Weight"]):
             stats["Weight"] = 0.0
@@ -61,4 +60,4 @@ with open("REQ_WeaponPatcher.txt", "w") as fh:
         fh.write(f'{stats["Speed"]:.6f} ')
         fh.write(f'{stats["Reach"]:.6f} ')
         fh.write(f'{stats["Stagger"]:.6f} ')
-        fh.write(f'{stats["Critical Damage"]:d}\n')
+        fh.write(f'{stats["Damage"] // 2:d}\n')
