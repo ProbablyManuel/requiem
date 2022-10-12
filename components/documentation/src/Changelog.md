@@ -92,7 +92,7 @@ Bugfixes
 
 * Critical weapon damage is always half the base damage.
 * Enchanted weapons have the correct price.
-* Ebony Blade, Keening, and the Rueful Axe have the correct stagger value.
+* Blade of Woe, Ebony Blade, Keening, and the Rueful Axe have the correct stagger value.
 * Eduj and Okin have the same weight and price as a Nord Hero weapon.
 * Kahvozein's Fang has the same damage and weight as a dragonbone dagger.
 * Red Eagle's Fury has the same stats except lower damage as Red Eagle's Bane.
