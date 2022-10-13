@@ -2,9 +2,9 @@ import math
 import pandas as pd
 
 
-armor = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Armors", index_col=0, usecols=[0, 1, 2, 3]).convert_dtypes()
-armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0).convert_dtypes().dropna(how="all")
-armor_extras = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Extras", index_col=0).convert_dtypes()
+armor = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Armors", index_col=0, usecols=["Unnamed: 0", "Armor Rating", "Weight", "Gold"]).convert_dtypes()
+armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0, usecols=["Unnamed: 0", "Base", "Armor Rating", "Weight", "Gold"]).convert_dtypes().dropna(how="all")
+armor_extras = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Extras", index_col=0, usecols=["Unnamed: 0", "Armor Rating", "Weight", "Gold"]).convert_dtypes()
 
 
 def get_armor_rating(set_armor_rating: int, part: str) -> float:
