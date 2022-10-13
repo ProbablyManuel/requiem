@@ -46,20 +46,16 @@ def get_gold(set_gold, part):
 
 
 def get_weight(set_weight, part):
-    headWeight = round_js(set_weight * 0.2 * 2) / 2
     if part == "Head":
-        return headWeight
-    feetWeight = round_js(set_weight * 0.15 * 2) / 2
+        return set_weight * 0.2
     if part == "Feet":
-        return feetWeight
-    handWeight = round_js(set_weight * 0.15 * 2) / 2
+        return set_weight * 0.15
     if part == "Hands":
-        return handWeight
-    bodyWeight = set_weight - headWeight - feetWeight - handWeight
+        return set_weight * 0.15
     if part == "Body":
-        return bodyWeight
+        return set_weight * 0.5
     if part == "Shield":
-        return round_js(set_weight * 0.25 * 2) / 2
+        return set_weight * 0.25
     raise ValueError(f'Unknown body part: {part}')
 
 
