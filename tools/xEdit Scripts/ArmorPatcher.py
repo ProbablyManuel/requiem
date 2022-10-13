@@ -2,9 +2,34 @@ import math
 import pandas as pd
 
 
-armor = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Armors", index_col=0, usecols=["Unnamed: 0", "Armor Rating", "Weight", "Gold"]).convert_dtypes()
-armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0, usecols=["Unnamed: 0", "Base", "Armor Rating", "Weight", "Gold"]).convert_dtypes().dropna(how="all")
-armor_extras = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Extras", index_col=0, usecols=["Unnamed: 0", "Armor Rating", "Weight", "Gold"]).convert_dtypes()
+armor = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="Armors",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Armor Rating",
+        "Weight",
+        "Gold"]).convert_dtypes()
+armor_artifacts = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="Artifacts",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Base",
+        "Armor Rating",
+        "Weight",
+        "Gold"]).convert_dtypes().dropna(how="all")
+armor_extras = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="Extras",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Armor Rating",
+        "Weight",
+        "Gold"]).convert_dtypes()
 
 
 def get_armor_rating(set_armor_rating: int, part: str) -> float:
@@ -58,7 +83,8 @@ for armor_set, set_stats in armor.iterrows():
     for armor_part in ("Head", "Feet", "Hands", "Body", "Shield"):
         editor_id = f'{armor_set}_{armor_part}'
         stats = {}
-        stats["Armor Rating"] = get_armor_rating(set_stats["Armor Rating"], armor_part)
+        stats["Armor Rating"] = get_armor_rating(
+            set_stats["Armor Rating"], armor_part)
         stats["Weight"] = get_weight(set_stats["Weight"], armor_part)
         stats["Gold"] = get_gold(set_stats["Gold"], armor_part)
         armor_stats[editor_id] = stats

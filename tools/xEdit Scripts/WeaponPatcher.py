@@ -1,9 +1,32 @@
 import pandas as pd
 
 
-weapon = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Weapons", index_col=0, usecols=["Unnamed: 0", "Damage", "Weight", "Gold"]).convert_dtypes()
-weapon_types = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Stats", index_col=0).convert_dtypes().dropna()
-weapon_artifacts = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Artifacts", index_col=0, usecols=["Unnamed: 0", "Base", "Damage", "Weight", "Gold", "Speed", "Reach", "Stagger"]).convert_dtypes().dropna(how="all")
+weapon = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="Weapons",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Damage",
+        "Weight",
+        "Gold"]).convert_dtypes()
+weapon_types = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="Stats",
+    index_col=0).convert_dtypes().dropna()
+weapon_artifacts = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="Artifacts",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Base",
+        "Damage",
+        "Weight",
+        "Gold",
+        "Speed",
+        "Reach",
+        "Stagger"]).convert_dtypes().dropna(how="all")
 
 
 weapon_stats = {}
