@@ -3,7 +3,6 @@ import pandas as pd
 
 
 armor = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Armors", index_col=0, usecols=[0, 1, 2, 3]).convert_dtypes()
-armor_parts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Stats", index_col=0).convert_dtypes()
 armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0).convert_dtypes().dropna(how="all")
 armor_extras = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Extras", index_col=0).convert_dtypes()
 
@@ -56,7 +55,7 @@ def get_weight(set_weight: int, part: str) -> float:
 
 armor_stats = {}
 for armor_set, set_stats in armor.iterrows():
-    for armor_part, part_stats in armor_parts.iterrows():
+    for armor_part in ("Head", "Feet", "Hands", "Body", "Shield"):
         editor_id = f'{armor_set}_{armor_part}'
         stats = {}
         stats["Armor Rating"] = get_armor_rating(set_stats["Armor Rating"], armor_part)

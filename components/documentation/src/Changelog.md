@@ -11,7 +11,7 @@ Tweaks
 
 * Battlestaves have a consistent stats progression.
 * Weapon prices are always rounded to the nearest multiple of 5.
-* Artifacts of divine origin have a standardized price of 50000.
+* Artifacts of divine origin have a standardized price of 80000.
 * Several encounters have proper stats, perk set, and equipment.
     * The band of Thirsk Hall
     * Butcher
