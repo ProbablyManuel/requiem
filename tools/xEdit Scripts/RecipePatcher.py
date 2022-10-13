@@ -86,7 +86,7 @@ def pair_to_load_order_form_id(pair: str):
 weapon_materials = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Weapons", index_col=0, usecols=[0, 4, 5, 6, 7]).convert_dtypes().dropna(how="all")
 weapon_materials["Temper"].mask(weapon_materials["Temper"].isna(), weapon_materials["Primary"], inplace=True)
 weapon_quantities = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="CraftingQuantities", index_col=0).convert_dtypes()
-weapon_artifacts = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Artifacts", index_col=0).convert_dtypes().dropna()
+weapon_artifacts = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Artifacts", index_col=0, usecols=[0, 1, 8]).convert_dtypes().dropna()
 
 
 def get_conditions(perk: str, editor_id: str) -> str:
@@ -214,10 +214,10 @@ for artifact, rows in weapon_artifacts.iterrows():
     recipes_conditions[editor_id] = conditions
 
 
-armor_materials = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Armors", index_col=0).convert_dtypes()
+armor_materials = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Armors", index_col=0, usecols=[0, 4, 5, 6, 7, 8]).convert_dtypes().dropna(how="all")
 armor_materials["Temper"].mask(armor_materials["Temper"].isna(), armor_materials["Primary"], inplace=True)
 armor_quantities = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="CraftingQuantities", index_col=0).convert_dtypes()
-armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0).convert_dtypes().dropna()
+armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0, usecols=[0, 1, 5]).convert_dtypes().dropna()
 
 for armor_set, materials in armor_materials.iterrows():
     for armor_type, quantities in armor_quantities.iterrows():
