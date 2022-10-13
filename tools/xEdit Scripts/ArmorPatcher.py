@@ -8,14 +8,7 @@ armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifac
 armor_extras = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Extras", index_col=0).convert_dtypes()
 
 
-def round_js(x: float):
-    if x - math.floor(x) < 0.5:
-        return math.floor(x)
-    else:
-        return math.ceil(x)
-
-
-def get_armor_rating(set_armor_rating: int, part: str):
+def get_armor_rating(set_armor_rating: int, part: str) -> float:
     if set_armor_rating % 50 != 0:
         raise ValueError(f'{set_armor_rating} is not a multiple of 50')
     if part == "Head":
@@ -31,21 +24,23 @@ def get_armor_rating(set_armor_rating: int, part: str):
     raise ValueError(f'Unknown body part: {part}')
 
 
-def get_gold(set_gold, part):
+def get_gold(set_gold: int, part: str) -> int:
+    if set_gold % 50 != 0:
+        raise ValueError(f'{set_gold} is not a multiple of 50')
     if part == "Head":
-        return round_js(set_gold * 0.2)
+        return int(set_gold * 0.2)
     if part == "Feet":
-        return round_js(set_gold * 0.15)
+        return int(math.ceil(set_gold * 0.15))
     if part == "Hands":
-        return round_js(set_gold * 0.15)
+        return int(math.floor(set_gold * 0.15))
     if part == "Body":
-        return round_js(set_gold * 0.5)
+        return int(set_gold * 0.5)
     if part == "Shield":
-        return round_js(set_gold * 0.25)
+        return int(set_gold * 0.25)
     raise ValueError(f'Unknown body part: {part}')
 
 
-def get_weight(set_weight, part):
+def get_weight(set_weight: int, part: str) -> float:
     if part == "Head":
         return set_weight * 0.2
     if part == "Feet":
@@ -95,4 +90,4 @@ with open("REQ_ArmorPatcher.txt", "w") as fh:
         fh.write(f'{armor}=')
         fh.write(f'{stats["Armor Rating"]:6f} ')
         fh.write(f'{stats["Weight"]:.6f} ')
-        fh.write(f'{stats["Gold"]:.0f}\n')
+        fh.write(f'{stats["Gold"]:d}\n')
