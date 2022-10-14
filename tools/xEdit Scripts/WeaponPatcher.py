@@ -1,6 +1,8 @@
 import pandas as pd
 import sys
 
+from strict_dict import strict_dict
+
 
 weapon = pd.read_excel(
     "../Spreadsheet/Weapon.xlsx",
@@ -37,7 +39,7 @@ else:
     weapon_variants = pd.Series(dtype=str)
 
 
-weapon_stats = {}
+weapon_stats = strict_dict()
 for weapon_set, set_stats in weapon.iterrows():
     for weapon_type, type_stats in weapon_types.iterrows():
         editor_id = f'Weapon_{weapon_set}_{weapon_type}'

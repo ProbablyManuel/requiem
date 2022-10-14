@@ -1,6 +1,8 @@
 import pandas as pd
 import sys
 
+from strict_dict import strict_dict
+
 
 name_to_form = {
     "Advanced Blacksmithing": "Skyrim.esm:05218E",
@@ -245,8 +247,8 @@ else:
     weapon_variants = pd.Series(dtype=str)
 
 
-recipes_ingredients = {}
-recipes_conditions = {}
+recipes_ingredients = strict_dict()
+recipes_conditions = strict_dict()
 
 for armor_set, materials in armor_materials.iterrows():
     for armor_part, quantities in armor_quantities.iterrows():
@@ -274,17 +276,17 @@ for armor_set, materials in armor_materials.iterrows():
         conditions = get_conditions(materials["Perk"], editor_id)
         recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]},1'
         recipes_conditions[editor_id] = conditions
-    for armor_part in armor_quantities.index:
-        editor_id = f'Forge_Heavy_Daedric_{armor_part}'
-        ingredients = [
-            f'{name_to_form["Ebony " + armor_part]},1',
-            f'{name_to_form["Daedra Heart"]},1',
-            f'{name_to_form["Black Soul Gem"]},1',
-        ]
-        ingredients.sort(key=pair_to_load_order_form_id)
-        conditions = get_conditions("Daedric Smithing", editor_id)
-        recipes_ingredients[editor_id] = ",".join(ingredients)
-        recipes_conditions[editor_id] = conditions
+for armor_part in armor_quantities.index:
+    editor_id = f'Forge_Heavy_Daedric_{armor_part}'
+    ingredients = [
+        f'{name_to_form["Ebony " + armor_part]},1',
+        f'{name_to_form["Daedra Heart"]},1',
+        f'{name_to_form["Black Soul Gem"]},1',
+    ]
+    ingredients.sort(key=pair_to_load_order_form_id)
+    conditions = get_conditions("Daedric Smithing", editor_id)
+    recipes_ingredients[editor_id] = ",".join(ingredients)
+    recipes_conditions[editor_id] = conditions
 for artifact, rows in armor_artifacts.iterrows():
     editor_id = f'Temper_Artifact_{artifact}'
     ingredients = recipes_ingredients[f'Temper_{rows["Base"]}']
@@ -324,17 +326,17 @@ for weapon_set, materials in weapon_materials.iterrows():
         conditions = get_conditions(materials["Perk"], editor_id)
         recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]},1'
         recipes_conditions[editor_id] = conditions
-    for weapon_type in weapon_quantities.index:
-        editor_id = f'Forge_Weapon_Daedric_{weapon_type}'
-        ingredients = [
-            f'{name_to_form["Ebony " + weapon_type]},1',
-            f'{name_to_form["Daedra Heart"]},1',
-            f'{name_to_form["Black Soul Gem"]},1',
-        ]
-        ingredients.sort(key=pair_to_load_order_form_id)
-        conditions = get_conditions("Daedric Smithing", editor_id)
-        recipes_ingredients[editor_id] = ",".join(ingredients)
-        recipes_conditions[editor_id] = conditions
+for weapon_type in weapon_quantities.index:
+    editor_id = f'Forge_Weapon_Daedric_{weapon_type}'
+    ingredients = [
+        f'{name_to_form["Ebony " + weapon_type]},1',
+        f'{name_to_form["Daedra Heart"]},1',
+        f'{name_to_form["Black Soul Gem"]},1',
+    ]
+    ingredients.sort(key=pair_to_load_order_form_id)
+    conditions = get_conditions("Daedric Smithing", editor_id)
+    recipes_ingredients[editor_id] = ",".join(ingredients)
+    recipes_conditions[editor_id] = conditions
 for artifact, rows in weapon_artifacts.iterrows():
     editor_id = f'Temper_Artifact_{artifact}'
     ingredients = recipes_ingredients[f'Temper_Weapon_{rows["Base"]}']

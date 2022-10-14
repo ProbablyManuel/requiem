@@ -2,6 +2,8 @@ import math
 import pandas as pd
 import sys
 
+from strict_dict import strict_dict
+
 
 armor = pd.read_excel(
     "../Spreadsheet/Armor.xlsx",
@@ -86,7 +88,7 @@ def get_weight(set_weight: int, part: str) -> float:
     raise ValueError(f'Unknown body part: {part}')
 
 
-armor_stats = {}
+armor_stats = strict_dict()
 for armor_set, set_stats in armor.iterrows():
     for armor_part in ("Head", "Feet", "Hands", "Body", "Shield"):
         editor_id = f'{armor_set}_{armor_part}'
