@@ -84,42 +84,6 @@ def pair_to_load_order_form_id(pair: str):
     return load_order_index[plugin] + form_id
 
 
-weapon_materials = pd.read_excel(
-    "../Spreadsheet/Weapon.xlsx",
-    sheet_name="Weapons",
-    index_col=0,
-    usecols=[
-        "Unnamed: 0",
-        "Primary",
-        "Secondary",
-        "Temper",
-        "Perk"]).convert_dtypes().dropna(
-            how="all")
-weapon_materials["Temper"].mask(
-    weapon_materials["Temper"].isna(),
-    weapon_materials["Primary"],
-    inplace=True)
-weapon_quantities = pd.read_excel(
-    "../Spreadsheet/Weapon.xlsx",
-    sheet_name="CraftingQuantities",
-    index_col=0).convert_dtypes()
-weapon_artifacts = pd.read_excel(
-    "../Spreadsheet/Weapon.xlsx",
-    sheet_name="Artifacts",
-    index_col=0,
-    usecols=[
-        "Unnamed: 0",
-        "Base",
-        "Divine"]).convert_dtypes().dropna()
-if len(sys.argv) == 3:
-    weapon_variants = pd.read_csv(
-        sys.argv[2],
-        header=None,
-        index_col=0).convert_dtypes().squeeze()
-else:
-    weapon_variants = pd.Series(dtype=str)
-
-
 def get_conditions(perk: str, editor_id: str) -> str:
     if perk == "Amber Smithing":
         conditions = [
@@ -210,8 +174,134 @@ def get_conditions(perk: str, editor_id: str) -> str:
     return ",".join(conditions)
 
 
+armor_materials = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="Armors",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Primary",
+        "Secondary",
+        "Leather",
+        "Temper",
+        "Perk"]).convert_dtypes().dropna(how="all")
+armor_materials["Temper"].mask(
+    armor_materials["Temper"].isna(),
+    armor_materials["Primary"],
+    inplace=True)
+armor_quantities = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="CraftingQuantities",
+    index_col=0).convert_dtypes()
+armor_artifacts = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="Artifacts",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Base",
+        "Divine"]).convert_dtypes().dropna()
+if len(sys.argv) == 3:
+    armor_variants = pd.read_csv(
+        sys.argv[1],
+        header=None,
+        index_col=0).convert_dtypes().squeeze()
+else:
+    armor_variants = pd.Series(dtype=str)
+
+weapon_materials = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="Weapons",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Primary",
+        "Secondary",
+        "Temper",
+        "Perk"]).convert_dtypes().dropna(
+            how="all")
+weapon_materials["Temper"].mask(
+    weapon_materials["Temper"].isna(),
+    weapon_materials["Primary"],
+    inplace=True)
+weapon_quantities = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="CraftingQuantities",
+    index_col=0).convert_dtypes()
+weapon_artifacts = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="Artifacts",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Base",
+        "Divine"]).convert_dtypes().dropna()
+if len(sys.argv) == 3:
+    weapon_variants = pd.read_csv(
+        sys.argv[2],
+        header=None,
+        index_col=0).convert_dtypes().squeeze()
+else:
+    weapon_variants = pd.Series(dtype=str)
+
+
 recipes_ingredients = {}
 recipes_conditions = {}
+
+for armor_set, materials in armor_materials.iterrows():
+    for armor_part, quantities in armor_quantities.iterrows():
+        if pd.notna(materials["Primary"]):
+            if materials["Perk"] == "Skyforge Smithing":
+                editor_id = f'Skyforge_{armor_set}_{armor_part}'
+            else:
+                editor_id = f'Forge_{armor_set}_{armor_part}'
+            ingredients = [
+                f'{name_to_form[materials["Primary"]]},{quantities["Primary"]}',
+                f'{name_to_form[materials["Leather"]]},{quantities["Leather"]}',
+            ]
+            if pd.notna(materials["Secondary"]):
+                ingredients.append(
+                    f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
+            if armor_set == "Heavy_ImprovedBonemold":
+                ingredients.append(f'{name_to_form["Netch Jelly"]},1')
+                ingredients.append(f'{name_to_form["Stalhrim"]},1')
+                ingredients.append(f'{name_to_form["Void Salts"]},1')
+            ingredients.sort(key=pair_to_load_order_form_id)
+            conditions = get_conditions(materials["Perk"], editor_id)
+            recipes_ingredients[editor_id] = ",".join(ingredients)
+            recipes_conditions[editor_id] = conditions
+        editor_id = f'Temper_{armor_set}_{armor_part}'
+        conditions = get_conditions(materials["Perk"], editor_id)
+        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]},1'
+        recipes_conditions[editor_id] = conditions
+    for armor_part in armor_quantities.index:
+        editor_id = f'Forge_Heavy_Daedric_{armor_part}'
+        ingredients = [
+            f'{name_to_form["Ebony " + armor_part]},1',
+            f'{name_to_form["Daedra Heart"]},1',
+            f'{name_to_form["Black Soul Gem"]},1',
+        ]
+        ingredients.sort(key=pair_to_load_order_form_id)
+        conditions = get_conditions("Daedric Smithing", editor_id)
+        recipes_ingredients[editor_id] = ",".join(ingredients)
+        recipes_conditions[editor_id] = conditions
+for artifact, rows in armor_artifacts.iterrows():
+    editor_id = f'Temper_Artifact_{artifact}'
+    ingredients = recipes_ingredients[f'Temper_{rows["Base"]}']
+    if rows["Divine"]:
+        conditions = get_conditions("Legendary Blacksmithing", editor_id)
+    else:
+        conditions = recipes_conditions[f'Temper_{rows["Base"]}']
+    recipes_ingredients[editor_id] = ingredients
+    recipes_conditions[editor_id] = conditions
+for variant, template in armor_variants.items():
+    for armor_part in armor_quantities.index:
+        for crafting_type in ("Forge", "Temper"):
+            editor_id = f'{crafting_type}_{variant}_{armor_part}'
+            template_key = f'{crafting_type}_{template}_{armor_part}'
+            recipes_ingredients[editor_id] = recipes_ingredients[template_key]
+            recipes_conditions[editor_id] = recipes_conditions[template_key]
+
 for weapon_set, materials in weapon_materials.iterrows():
     for weapon_type, quantities in weapon_quantities.iterrows():
         if pd.notna(materials["Primary"]):
@@ -255,100 +345,10 @@ for artifact, rows in weapon_artifacts.iterrows():
     recipes_ingredients[editor_id] = ingredients
     recipes_conditions[editor_id] = conditions
 for variant, template in weapon_variants.items():
-    for armor_type in weapon_quantities.index:
+    for armor_part in weapon_quantities.index:
         for crafting_type in ("Forge", "Temper"):
-            editor_id = f'{crafting_type}_Weapon_{variant}_{armor_type}'
-            template_key = f'{crafting_type}_Weapon_{template}_{armor_type}'
-            recipes_ingredients[editor_id] = recipes_ingredients[template_key]
-            recipes_conditions[editor_id] = recipes_conditions[template_key]
-
-
-armor_materials = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
-    sheet_name="Armors",
-    index_col=0,
-    usecols=[
-        "Unnamed: 0",
-        "Primary",
-        "Secondary",
-        "Leather",
-        "Temper",
-        "Perk"]).convert_dtypes().dropna(how="all")
-armor_materials["Temper"].mask(
-    armor_materials["Temper"].isna(),
-    armor_materials["Primary"],
-    inplace=True)
-armor_quantities = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
-    sheet_name="CraftingQuantities",
-    index_col=0).convert_dtypes()
-armor_artifacts = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
-    sheet_name="Artifacts",
-    index_col=0,
-    usecols=[
-        "Unnamed: 0",
-        "Base",
-        "Divine"]).convert_dtypes().dropna()
-if len(sys.argv) == 3:
-    armor_variants = pd.read_csv(
-        sys.argv[1],
-        header=None,
-        index_col=0).convert_dtypes().squeeze()
-else:
-    armor_variants = pd.Series(dtype=str)
-
-for armor_set, materials in armor_materials.iterrows():
-    for armor_type, quantities in armor_quantities.iterrows():
-        if pd.notna(materials["Primary"]):
-            if materials["Perk"] == "Skyforge Smithing":
-                editor_id = f'Skyforge_{armor_set}_{armor_type}'
-            else:
-                editor_id = f'Forge_{armor_set}_{armor_type}'
-            ingredients = [
-                f'{name_to_form[materials["Primary"]]},{quantities["Primary"]}',
-                f'{name_to_form[materials["Leather"]]},{quantities["Leather"]}',
-            ]
-            if pd.notna(materials["Secondary"]):
-                ingredients.append(
-                    f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
-            if armor_set == "Heavy_ImprovedBonemold":
-                ingredients.append(f'{name_to_form["Netch Jelly"]},1')
-                ingredients.append(f'{name_to_form["Stalhrim"]},1')
-                ingredients.append(f'{name_to_form["Void Salts"]},1')
-            ingredients.sort(key=pair_to_load_order_form_id)
-            conditions = get_conditions(materials["Perk"], editor_id)
-            recipes_ingredients[editor_id] = ",".join(ingredients)
-            recipes_conditions[editor_id] = conditions
-        editor_id = f'Temper_{armor_set}_{armor_type}'
-        conditions = get_conditions(materials["Perk"], editor_id)
-        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]},1'
-        recipes_conditions[editor_id] = conditions
-    for armor_type in armor_quantities.index:
-        editor_id = f'Forge_Heavy_Daedric_{armor_type}'
-        ingredients = [
-            f'{name_to_form["Ebony " + armor_type]},1',
-            f'{name_to_form["Daedra Heart"]},1',
-            f'{name_to_form["Black Soul Gem"]},1',
-        ]
-        ingredients.sort(key=pair_to_load_order_form_id)
-        conditions = get_conditions("Daedric Smithing", editor_id)
-        recipes_ingredients[editor_id] = ",".join(ingredients)
-        recipes_conditions[editor_id] = conditions
-for artifact, rows in armor_artifacts.iterrows():
-    editor_id = f'Temper_Artifact_{artifact}'
-    ingredients = recipes_ingredients[f'Temper_{rows["Base"]}']
-    if rows["Divine"]:
-        conditions = get_conditions("Legendary Blacksmithing", editor_id)
-    else:
-        conditions = recipes_conditions[f'Temper_{rows["Base"]}']
-    recipes_ingredients[editor_id] = ingredients
-    recipes_conditions[editor_id] = conditions
-for variant, template in armor_variants.items():
-    for armor_part in armor_quantities.index:
-        for crafting_type in ("Forge", "Temper"):
-            editor_id = f'{crafting_type}_{variant}_{armor_part}'
-            template_key = f'{crafting_type}_{template}_{armor_part}'
+            editor_id = f'{crafting_type}_Weapon_{variant}_{armor_part}'
+            template_key = f'{crafting_type}_Weapon_{template}_{armor_part}'
             recipes_ingredients[editor_id] = recipes_ingredients[template_key]
             recipes_conditions[editor_id] = recipes_conditions[template_key]
 
