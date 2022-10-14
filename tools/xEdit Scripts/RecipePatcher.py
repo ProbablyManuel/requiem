@@ -83,10 +83,33 @@ def pair_to_load_order_form_id(pair: str):
     return load_order_index[plugin] + form_id
 
 
-weapon_materials = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Weapons", index_col=0, usecols=[0, 4, 5, 6, 7]).convert_dtypes().dropna(how="all")
-weapon_materials["Temper"].mask(weapon_materials["Temper"].isna(), weapon_materials["Primary"], inplace=True)
-weapon_quantities = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="CraftingQuantities", index_col=0).convert_dtypes()
-weapon_artifacts = pd.read_excel("../Spreadsheet/Weapon.xlsx", sheet_name="Artifacts", index_col=0).convert_dtypes().dropna()
+weapon_materials = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="Weapons",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Primary",
+        "Secondary",
+        "Temper",
+        "Perk"]).convert_dtypes().dropna(
+            how="all")
+weapon_materials["Temper"].mask(
+    weapon_materials["Temper"].isna(),
+    weapon_materials["Primary"],
+    inplace=True)
+weapon_quantities = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="CraftingQuantities",
+    index_col=0).convert_dtypes()
+weapon_artifacts = pd.read_excel(
+    "../Spreadsheet/Weapon.xlsx",
+    sheet_name="Artifacts",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Base",
+        "Divine"]).convert_dtypes().dropna()
 
 
 def get_conditions(perk: str, editor_id: str) -> str:
@@ -122,7 +145,9 @@ def get_conditions(perk: str, editor_id: str) -> str:
                 f'10000000,1.000000,HasPerk,{name_to_form["Dwarven Smithing"]},0,Subject',
             ]
         else:
-            conditions = [f'10000000,1.000000,HasPerk,{name_to_form["Dwarven Smithing"]},0,Subject']
+            conditions = [
+                f'10000000,1.000000,HasPerk,{name_to_form["Dwarven Smithing"]},0,Subject'
+            ]
     elif perk == "Golden Smithing":
         conditions = [
             f'10000000,1.000000,HasPerk,{name_to_form["Daedric Smithing"]},0,Subject',
@@ -150,22 +175,30 @@ def get_conditions(perk: str, editor_id: str) -> str:
                 f'10000000,1.000000,HasPerk,{name_to_form["Craftsmanship"]},0,Subject',
             ]
         else:
-            conditions = [f'10000000,1.000000,HasPerk,{name_to_form["Craftsmanship"]},0,Subject']
+            conditions = [
+                f'10000000,1.000000,HasPerk,{name_to_form["Craftsmanship"]},0,Subject'
+            ]
     elif perk == "Stalhrim Smithing":
         conditions = [
             "10000000,1.000000,GetStageDone,Dragonborn.esm:01CAF1,200,Subject",
             f'10000000,1.000000,HasPerk,{name_to_form["Ebony Smithing"]},0,Subject',
         ]
     else:
-        conditions = [f'10000000,1.000000,HasPerk,{name_to_form[perk]},0,Subject']
+        conditions = [
+            f'10000000,1.000000,HasPerk,{name_to_form[perk]},0,Subject'
+        ]
     if editor_id.endswith("Weapon_Dawnguard_Crossbow"):
-        conditions.append("10000000,0.000000,GetGlobalValue,Dawnguard.esm:00398A,00 00 00 00,Subject")
+        conditions.append(
+            "10000000,0.000000,GetGlobalValue,Dawnguard.esm:00398A,00 00 00 00,Subject")
     elif editor_id.endswith("Weapon_DawnguardImproved_Crossbow"):
-        conditions.append("10000000,0.000000,GetGlobalValue,Dawnguard.esm:00F19C,00 00 00 00,Subject")
+        conditions.append(
+            "10000000,0.000000,GetGlobalValue,Dawnguard.esm:00F19C,00 00 00 00,Subject")
     elif editor_id.endswith("Weapon_DwemerImproved_Crossbow"):
-        conditions.append("10000000,0.000000,GetGlobalValue,Dawnguard.esm:00F19D,00 00 00 00,Subject")
+        conditions.append(
+            "10000000,0.000000,GetGlobalValue,Dawnguard.esm:00F19D,00 00 00 00,Subject")
     elif editor_id.endswith("Weapon_Dwemer_Crossbow"):
-        conditions.append("10000000,0.000000,GetGlobalValue,Dawnguard.esm:00F19A,00 00 00 00,Subject")
+        conditions.append(
+            "10000000,0.000000,GetGlobalValue,Dawnguard.esm:00F19A,00 00 00 00,Subject")
     return ",".join(conditions)
 
 
@@ -183,7 +216,8 @@ for weapon_set, materials in weapon_materials.iterrows():
                 f'{name_to_form["Leather Strips"]},{quantities["Leather"]}',
             ]
             if pd.notna(materials["Secondary"]):
-                ingredients.append(f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
+                ingredients.append(
+                    f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
             ingredients.sort(key=pair_to_load_order_form_id)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
@@ -214,10 +248,33 @@ for artifact, rows in weapon_artifacts.iterrows():
     recipes_conditions[editor_id] = conditions
 
 
-armor_materials = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Armors", index_col=0).convert_dtypes()
-armor_materials["Temper"].mask(armor_materials["Temper"].isna(), armor_materials["Primary"], inplace=True)
-armor_quantities = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="CraftingQuantities", index_col=0).convert_dtypes()
-armor_artifacts = pd.read_excel("../Spreadsheet/Armor.xlsx", sheet_name="Artifacts", index_col=0).convert_dtypes().dropna()
+armor_materials = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="Armors",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Primary",
+        "Secondary",
+        "Leather",
+        "Temper",
+        "Perk"]).convert_dtypes().dropna(how="all")
+armor_materials["Temper"].mask(
+    armor_materials["Temper"].isna(),
+    armor_materials["Primary"],
+    inplace=True)
+armor_quantities = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="CraftingQuantities",
+    index_col=0).convert_dtypes()
+armor_artifacts = pd.read_excel(
+    "../Spreadsheet/Armor.xlsx",
+    sheet_name="Artifacts",
+    index_col=0,
+    usecols=[
+        "Unnamed: 0",
+        "Base",
+        "Divine"]).convert_dtypes().dropna()
 
 for armor_set, materials in armor_materials.iterrows():
     for armor_type, quantities in armor_quantities.iterrows():
@@ -231,7 +288,8 @@ for armor_set, materials in armor_materials.iterrows():
                 f'{name_to_form[materials["Leather"]]},{quantities["Leather"]}',
             ]
             if pd.notna(materials["Secondary"]):
-                ingredients.append(f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
+                ingredients.append(
+                    f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
             if armor_set == "Heavy_ImprovedBonemold":
                 ingredients.append(f'{name_to_form["Netch Jelly"]},1')
                 ingredients.append(f'{name_to_form["Stalhrim"]},1')

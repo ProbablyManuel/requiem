@@ -11,7 +11,7 @@ Tweaks
 
 * Battlestaves have a consistent stats progression.
 * Weapon prices are always rounded to the nearest multiple of 5.
-* Artifacts of divine origin have a standardized price of 50000.
+* Artifacts of divine origin have a standardized price of 80000.
 * Several encounters have proper stats, perk set, and equipment.
     * The band of Thirsk Hall
     * Butcher
@@ -86,12 +86,14 @@ Tweaks
 * Crafting and tempering bonemold and chitin armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
 * Nordic weapons can be crafted with Advanced Blacksmithing.
 * Base damage and weight of Nordic weapons is reduced by 2 and 1 points respectively.
+* Armor weight is not rounded.
 
 Bugfixes
 --------
 
 * Critical weapon damage is always half the base damage.
 * Enchanted weapons have the correct price.
+* Aela's Shield has the same weight as a hide shield.
 * Blade of Woe, Ebony Blade, Keening, and the Rueful Axe have the correct stagger value.
 * Eduj and Okin have the same weight and price as a Nord Hero weapon.
 * Kahvozein's Fang has the same damage and weight as a dragonbone dagger.
