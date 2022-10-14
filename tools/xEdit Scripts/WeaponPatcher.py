@@ -1,4 +1,5 @@
 import pandas as pd
+import sys
 
 
 weapon = pd.read_excel(
@@ -27,6 +28,13 @@ weapon_artifacts = pd.read_excel(
         "Speed",
         "Reach",
         "Stagger"]).convert_dtypes().dropna(how="all")
+if len(sys.argv) == 2:
+    weapon_variants = pd.read_csv(
+        sys.argv[1],
+        header=None,
+        index_col=0).convert_dtypes().squeeze()
+else:
+    weapon_variants = pd.Series(dtype=str)
 
 
 weapon_stats = {}
@@ -72,6 +80,11 @@ for artifact, rows in weapon_artifacts.iterrows():
     if pd.notna(rows["Stagger"]):
         stats["Stagger"] += rows["Stagger"]
     weapon_stats[editor_id] = stats
+for variant, template in weapon_variants.items():
+    for weapon_type in weapon_types.index:
+        editor_id = f'Weapon_{variant}_{weapon_type}'
+        template_key = f'Weapon_{template}_{weapon_type}'
+        weapon_stats[editor_id] = weapon_stats[template_key]
 
 
 with open("REQ_WeaponPatcher.txt", "w") as fh:
