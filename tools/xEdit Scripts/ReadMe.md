@@ -68,7 +68,7 @@ The scripts reading from Excel files may require running `pip install pandas ope
 armor_patcher.py
 ----------------
 
-Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](../Spreadsheet/Armor.xlsx).
+Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](../Spreadsheet#armor).
 
 
 link_scripts.py
@@ -82,7 +82,7 @@ If xEdit is installed in a location other than `C:\Skyrim Tools\SSEEdit`, the sc
 recipe_patcher.py
 -----------------
 
-Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](../Spreadsheet/Armor.xlsx) and [Weapon.xlsx](../Spreadsheet/Weapon.xlsx).
+Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](../Spreadsheet#armor) and [Weapon.xlsx](../Spreadsheet#weapon).
 
 
 strict_dict.py
@@ -94,4 +94,4 @@ Implements a dictionary that raises an exception when assigning a value to an ex
 weapon_patcher.py
 -----------------
 
-Generates `REQ_WeaponPatcher.txt` based on the data in [Weapon.xlsx](../Spreadsheet/Weapon.xlsx).
+Generates `REQ_WeaponPatcher.txt` based on the data in [Weapon.xlsx](../Spreadsheet#weapon).
