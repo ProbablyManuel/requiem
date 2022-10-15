@@ -127,6 +127,6 @@ for variant, template in armor_variants.items():
 with open("REQ_ArmorPatcher.txt", "w") as fh:
     for armor, stats in sorted(armor_stats.items()):
         fh.write(f'{armor}=')
-        fh.write(f'{stats["Armor Rating"]:6f} ')
-        fh.write(f'{stats["Weight"]:.6f} ')
+        fh.write(f'{stats["Armor Rating"]:6f},')
+        fh.write(f'{stats["Weight"]:.6f},')
         fh.write(f'{stats["Gold"]:d}\n')

@@ -92,10 +92,10 @@ for variant, template in weapon_variants.items():
 with open("REQ_WeaponPatcher.txt", "w") as fh:
     for weapon, stats in sorted(weapon_stats.items()):
         fh.write(f'{weapon}=')
-        fh.write(f'{stats["Damage"]:d} ')
-        fh.write(f'{stats["Weight"]:.6f} ')
-        fh.write(f'{stats["Gold"]:d} ')
-        fh.write(f'{stats["Speed"]:.6f} ')
-        fh.write(f'{stats["Reach"]:.6f} ')
-        fh.write(f'{stats["Stagger"]:.6f} ')
+        fh.write(f'{stats["Damage"]:d},')
+        fh.write(f'{stats["Weight"]:.6f},')
+        fh.write(f'{stats["Gold"]:d},')
+        fh.write(f'{stats["Speed"]:.6f},')
+        fh.write(f'{stats["Reach"]:.6f},')
+        fh.write(f'{stats["Stagger"]:.6f},')
         fh.write(f'{stats["Damage"] // 2:d}\n')

@@ -44,6 +44,7 @@ begin
   end;
 
   stats := TStringList.Create;
+  stats.StrictDelimiter := True;
   stats.DelimitedText := weapons.Values[key];
   if stats.Count = 0 then begin
     if (weaponType <> 'Bow') and (weaponType <> 'Crossbow') then
