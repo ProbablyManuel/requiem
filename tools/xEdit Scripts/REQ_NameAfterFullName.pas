@@ -25,6 +25,7 @@ begin
     word := UpperCase(word[1]) + Copy(word, 2, Length(word));
     newEditorID := newEditorID + word;
   end;
+  words.Free;
   if newEditorID <> EditorID(e) then
     SetEditorID(e, newEditorID);
 end;
