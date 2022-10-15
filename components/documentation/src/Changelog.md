@@ -381,20 +381,20 @@ Tweaks
 * Stormcloak armor always has sleeves.
 * Summerset Shadows armor can be looted.
 * Apparel name changes:
-    * Nordic armor → Nordic Carved armor
-    * Scaled armor → Scale armor
+    * Nordic armor -> Nordic Carved armor
+    * Scaled armor -> Scale armor
     * Dawnguard and Imperial armor include the armor type in their name.
     * Names don't use a possessive apostrophe unless they belong to a specific character.
-    * Chitin, Imperial Heavy, Morag Tong, Stalhrim, Stormcloak Officer, Ulfric's: Bracers → Gauntlets
-    * Aetherium, Alain's, Ancient Falmer, Stormcloak: Cuirass → Armor
-    * Studded Imperial Armor → Imperial Studded Armor
-    * Gold Jeweled Necklace → Gold Amethyst Necklace
-    * Silver Jeweled Necklace → Silver Garnet Necklace
-    * Shoes → Chef's Shoes
-    * Shoes → Child's Shoes
-    * Robes → Plain Robes
-    * Hooded Monk Robes → Hooded Plain Robes
-    * Monk Boots → Plain Boots
+    * Chitin, Imperial Heavy, Morag Tong, Stalhrim, Stormcloak Officer, Ulfric's: Bracers -> Gauntlets
+    * Aetherium, Alain's, Ancient Falmer, Stormcloak: Cuirass -> Armor
+    * Studded Imperial Armor -> Imperial Studded Armor
+    * Gold Jeweled Necklace -> Gold Amethyst Necklace
+    * Silver Jeweled Necklace -> Silver Garnet Necklace
+    * Shoes -> Chef's Shoes
+    * Shoes -> Child's Shoes
+    * Robes -> Plain Robes
+    * Hooded Monk Robes -> Hooded Plain Robes
+    * Monk Boots -> Plain Boots
 * Armor variants with small aesthetic differences have the same stats and name.
 * Steel Shin Boots and Steel Imperial Gauntlets are removed because they are identical to standard Imperial armor in all aspects but name.
 * Elven light armor is removed because it is identical to standard elven armor in all aspects but name.
@@ -983,11 +983,11 @@ Tweaks
 * Stamina threshold below which physical attacks no longer stagger opponents is raised to 10 to match other exhaustion penalties. This feature now applies to NPCs too.
 * Various unused or rarely used third party assets have been removed to make the distribution leaner (all changes are backwards compatible, i.e. you will not suddenly be naked after updating).
     * All unused assets from Immersive Armors
-    * Vagabond Armor from Immersive Armors – Alain Dufont wears an enchanted scaled armor instead of a unique Vagabond armor.
-    * Stormlord Armor – Ulfric got back his original, unique gear from the base game as heavy armor set and some additional heavy armor perks.
-    * Ebony Plate armor with hold insigina emblazoned tunic – Irileth wears an enchanted set of ebony armor instead of an ebony plate armor.
-    * Orichalcum Plate armor with hold insigina emblazoned tunic – Commander Caius wears a standard Whiterun guard plate armor instead of an Orichalcum plate armor.
-    * Golden Elven Armor and Weapons – Elenwen has been reverted to hear Vanilla gear, a Thalmor robe and an elven dagger.
+    * Vagabond Armor from Immersive Armors - Alain Dufont wears an enchanted scaled armor instead of a unique Vagabond armor.
+    * Stormlord Armor - Ulfric got back his original, unique gear from the base game as heavy armor set and some additional heavy armor perks.
+    * Ebony Plate armor with hold insigina emblazoned tunic - Irileth wears an enchanted set of ebony armor instead of an ebony plate armor.
+    * Orichalcum Plate armor with hold insigina emblazoned tunic - Commander Caius wears a standard Whiterun guard plate armor instead of an Orichalcum plate armor.
+    * Golden Elven Armor and Weapons - Elenwen has been reverted to hear Vanilla gear, a Thalmor robe and an elven dagger.
     
 Bugfixes
 --------

@@ -73,6 +73,8 @@ begin
     dlgSave.Free;
   end;
   slWeapons.Free;
+  re_weapon.Free;
+  re_enchantment.Free;
 end;
 
 end.
