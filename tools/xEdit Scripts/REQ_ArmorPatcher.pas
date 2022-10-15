@@ -48,6 +48,7 @@ begin
   end;
 
   stats := TStringList.Create;
+  stats.StrictDelimiter := True;
   stats.DelimitedText := armors.Values[key];
   if stats.Count = 0 then begin
     AddMessage('EditorID ' + EditorID(e) + ' is not recognized');

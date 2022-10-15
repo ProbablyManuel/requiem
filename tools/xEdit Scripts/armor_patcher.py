@@ -1,5 +1,8 @@
 import math
 import pandas as pd
+import sys
+
+from strict_dict import strict_dict
 
 
 armor = pd.read_excel(
@@ -30,6 +33,13 @@ armor_extras = pd.read_excel(
         "Armor Rating",
         "Weight",
         "Gold"]).convert_dtypes()
+if len(sys.argv) == 2:
+    armor_variants = pd.read_csv(
+        sys.argv[1],
+        header=None,
+        index_col=0).convert_dtypes().squeeze()
+else:
+    armor_variants = pd.Series(dtype=str)
 
 
 def get_armor_rating(set_armor_rating: int, part: str) -> float:
@@ -78,7 +88,7 @@ def get_weight(set_weight: int, part: str) -> float:
     raise ValueError(f'Unknown body part: {part}')
 
 
-armor_stats = {}
+armor_stats = strict_dict()
 for armor_set, set_stats in armor.iterrows():
     for armor_part in ("Head", "Feet", "Hands", "Body", "Shield"):
         editor_id = f'{armor_set}_{armor_part}'
@@ -108,11 +118,15 @@ for artifact, rows in armor_artifacts.iterrows():
     if pd.notna(rows["Gold"]):
         stats["Gold"] = rows["Gold"]
     armor_stats[editor_id] = stats
+for variant, template in armor_variants.items():
+    for armor_part in ("Head", "Feet", "Hands", "Body", "Shield"):
+        editor_id = f'{variant}_{armor_part}'
+        armor_stats[editor_id] = armor_stats[f'{template}_{armor_part}']
 
 
 with open("REQ_ArmorPatcher.txt", "w") as fh:
     for armor, stats in sorted(armor_stats.items()):
         fh.write(f'{armor}=')
-        fh.write(f'{stats["Armor Rating"]:6f} ')
-        fh.write(f'{stats["Weight"]:.6f} ')
+        fh.write(f'{stats["Armor Rating"]:6f},')
+        fh.write(f'{stats["Weight"]:.6f},')
         fh.write(f'{stats["Gold"]:d}\n')

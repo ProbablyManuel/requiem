@@ -1,4 +1,7 @@
 import pandas as pd
+import sys
+
+from strict_dict import strict_dict
 
 
 weapon = pd.read_excel(
@@ -27,9 +30,16 @@ weapon_artifacts = pd.read_excel(
         "Speed",
         "Reach",
         "Stagger"]).convert_dtypes().dropna(how="all")
+if len(sys.argv) == 2:
+    weapon_variants = pd.read_csv(
+        sys.argv[1],
+        header=None,
+        index_col=0).convert_dtypes().squeeze()
+else:
+    weapon_variants = pd.Series(dtype=str)
 
 
-weapon_stats = {}
+weapon_stats = strict_dict()
 for weapon_set, set_stats in weapon.iterrows():
     for weapon_type, type_stats in weapon_types.iterrows():
         editor_id = f'Weapon_{weapon_set}_{weapon_type}'
@@ -72,15 +82,20 @@ for artifact, rows in weapon_artifacts.iterrows():
     if pd.notna(rows["Stagger"]):
         stats["Stagger"] += rows["Stagger"]
     weapon_stats[editor_id] = stats
+for variant, template in weapon_variants.items():
+    for weapon_type in weapon_types.index:
+        editor_id = f'Weapon_{variant}_{weapon_type}'
+        template_key = f'Weapon_{template}_{weapon_type}'
+        weapon_stats[editor_id] = weapon_stats[template_key]
 
 
 with open("REQ_WeaponPatcher.txt", "w") as fh:
     for weapon, stats in sorted(weapon_stats.items()):
         fh.write(f'{weapon}=')
-        fh.write(f'{stats["Damage"]:d} ')
-        fh.write(f'{stats["Weight"]:.6f} ')
-        fh.write(f'{stats["Gold"]:d} ')
-        fh.write(f'{stats["Speed"]:.6f} ')
-        fh.write(f'{stats["Reach"]:.6f} ')
-        fh.write(f'{stats["Stagger"]:.6f} ')
+        fh.write(f'{stats["Damage"]:d},')
+        fh.write(f'{stats["Weight"]:.6f},')
+        fh.write(f'{stats["Gold"]:d},')
+        fh.write(f'{stats["Speed"]:.6f},')
+        fh.write(f'{stats["Reach"]:.6f},')
+        fh.write(f'{stats["Stagger"]:.6f},')
         fh.write(f'{stats["Damage"] // 2:d}\n')
