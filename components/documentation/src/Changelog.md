@@ -4,7 +4,18 @@ Requiem 5.3.0 - "Around the Fire"
 New Features
 ------------
 
-* New weapon types are available: Tanto, Wakizashi, Katana, Dai-Katana.
+* New weapon types are available.
+    * Tanto
+    * Wakizashi
+    * Katana
+    * Dai-Katana
+    * Shortsword
+    * Quarterstaff
+    * Club (Wood, Iron, Steel)
+* New weapons are available.
+    * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
+    * Dawnguard: Mace, Battleaxe
+    * Forsworn: Dagger
 
 Tweaks
 ------
@@ -121,6 +132,7 @@ Internal Quality Improvements (only relevant for modders)
 * Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted improved crossbows are currently unused.)
 * LootDwarvenWeapon15 does not contain enchanted weapons.
 * LItemDawnguardWarAxe is reverted to its vanilla functionality.
+* Imperial meshes are moved from `Requiem\weapons\imperial\` to `PrvtI\imperial\`.
 
 
 Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
