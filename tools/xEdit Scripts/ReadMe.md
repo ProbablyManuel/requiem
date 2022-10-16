@@ -1,6 +1,14 @@
 xEdit Scripts
 =============
 
+REQ_AddItemsToLeveledList.pas
+-----------------------------
+
+Create a new leveled item and add the selected items to it.
+
+The script prompts the user to enter the EditorID of the new leveled item. The leveled item is created in the file of the first selected item.
+
+
 REQ_ArmorPatcher.pas
 --------------------
 
