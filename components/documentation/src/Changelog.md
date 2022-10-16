@@ -101,6 +101,8 @@ Bugfixes
 * The longhammer has the same damage and price as an Orcish warhammer.
 * Wuuthrad has the same weight as an ebony battleaxe.
 * Duplicate tempering recipe for Headman's Axe and Pickaxe is removed.
+* Forsworn do not wield Orcish war axes.
+* Various fixes to leveled lists containing enchanted weapons.
 
 Reqtificator
 ------------
@@ -111,12 +113,14 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Ammo crafting recipes use vanilla records where they already exist.
-* Ammo, animal hides, crafting recipes, enchanted weapons, and weapon enchantments have a proper EditorID.
+* Ammo, animal hides, crafting recipes, enchanted weapons, first person weapon models, and weapon enchantments have a proper EditorID.
 * Standard weapons have a common prefix "Weapon" in their EditorID.
 * Weapon artifacts do not have the weapon type in their EditorID.
 * EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
-* Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted crossbows are currently unused.)
+* Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted improved crossbows are currently unused.)
+* LootDwarvenWeapon15 does not contain enchanted weapons.
+* LItemDawnguardWarAxe is reverted to its vanilla functionality.
 
 
 Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
