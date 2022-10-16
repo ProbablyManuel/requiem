@@ -16,6 +16,10 @@ New Features
     * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
     * Dawnguard: Mace, Battleaxe
     * Forsworn: Dagger
+* New perks are available.
+    * Quarterstaff Focus 1: +10% attack speed, +7% armor penetration
+    * Quarterstaff Focus 2: +20% attack speed, +14% armor penetration
+    * Quarterstaff Focus 3: +30% attack speed, +21% armor penetration
 
 Tweaks
 ------
