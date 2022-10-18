@@ -118,6 +118,7 @@ Bugfixes
 * Duplicate tempering recipe for Headman's Axe and Pickaxe is removed.
 * Forsworn do not wield Orcish war axes.
 * Various fixes to leveled lists containing enchanted weapons.
+* A missing look template of Thalmor archers is restored.
 
 Reqtificator
 ------------
@@ -134,6 +135,7 @@ Internal Quality Improvements (only relevant for modders)
 * EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
 * Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted improved crossbows are currently unused.)
+* Thalmor archers inherit their inventory from the template.
 * LootDwarvenWeapon15 does not contain enchanted weapons.
 * LItemDawnguardWarAxe is reverted to its vanilla functionality.
 * Imperial meshes are moved from `Requiem\weapons\imperial\` to `PrvtI\imperial\`.
