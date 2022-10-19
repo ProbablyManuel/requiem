@@ -138,6 +138,7 @@ Internal Quality Improvements (only relevant for modders)
 * Thalmor archers inherit their inventory from the template.
 * LootDwarvenWeapon15 does not contain enchanted weapons.
 * LItemDawnguardWarAxe is reverted to its vanilla functionality.
+* csDraugrMissile is removed from the plugin because it's effectively an ITM.
 * Imperial meshes are moved from `Requiem\weapons\imperial\` to `PrvtI\imperial\`.
 
 
