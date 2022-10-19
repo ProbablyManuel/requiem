@@ -35,6 +35,7 @@ Tweaks
     * Linwe
     * Unmid Snow-Shod
     * Velehk Sain
+* Gunmar sells Dawnguard weapons.
 * Names of base enchantments are reverted to the more concise vanilla names.
 * The summoned Dremora archer uses normal daedric arrows instead of a heavily nerfed variant.
 * Artifact name changes:
