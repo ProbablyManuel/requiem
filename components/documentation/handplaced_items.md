@@ -36,6 +36,11 @@ Tanto
 
 * Soul Cairn, carried by Valerica
 
+Shortsword
+----------
+
+* Silent City Catacombs, under water
+
 Wakizashi
 ---------
 
@@ -80,6 +85,11 @@ Warhammer
 ---------
 
 * Forelhost Refectory, in Rahgot's sarcophagus
+
+Quarterstaff
+----------
+
+* Debate Hall, next to a skeleton
 
 Battlestaff
 -----------
@@ -147,6 +157,11 @@ Tanto
 
 * Dimhollow Crypt, carried by Serana
 
+Shortsword
+----------
+
+* Stony Creek Cave, next to a lantern in the exit from Kagrenzel
+
 Wakizashi
 ---------
 
@@ -206,11 +221,15 @@ Warhammer
 * Dead Men's Respite, carried by King Olaf One-Eye
 * Falkreath, carried by Dengeir of Stuhn
 
+Quarterstaff
+----------
+
+* Tolvald's Crossing, next to the dead caravan
+
 Battlestaff
 -----------
 
 * Azura's Star Interior, carried by Malyn Varen
-* Debate Hall, next to a skeleton
 
 Bow
 ---
@@ -277,6 +296,11 @@ Tanto
 
 * Kynesgrove, carried by Dravynea the Stoneweaver
 
+Shortsword
+----------
+
+* Lost Echo Cave, in a falmer tent
+
 Wakizashi
 ---------
 
@@ -327,6 +351,11 @@ Warhammer
 
 * Darkshade, guarded by Ulik and his trolls
 * Ruins of Rkund, next to a Dwemer chest
+
+Quarterstaff
+----------
+
+* Duskglow Crevice, on a shelf in the same room as Halvar the Other
 
 Battlestaff
 -----------
