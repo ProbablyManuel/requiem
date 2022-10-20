@@ -39,6 +39,7 @@ Tweaks
 * Names of base enchantments are reverted to the more concise vanilla names.
 * The summoned Dremora archer uses normal daedric arrows instead of a heavily nerfed variant.
 * Artifact name changes:
+    * Blades Sword -> Blades Katana
     * Dawnguard Rune Axe -> Ancient Dawnguard War Axe
     * Dawnguard Rune Hammer -> Ancient Dawnguard Warhammer
     * Dawnguard Rune Shield -> Ancient Dawnguard Shield
@@ -137,6 +138,7 @@ Internal Quality Improvements (only relevant for modders)
 * Several unused weapons are nullified.
 * Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted improved crossbows are currently unused.)
 * Thalmor archers inherit their inventory from the template.
+* Redundant edits to Skyhaven Temple are removed.
 * LootDwarvenWeapon15 does not contain enchanted weapons.
 * LItemDawnguardWarAxe is reverted to its vanilla functionality.
 * csDraugrMissile is removed from the plugin because it's effectively an ITM.
