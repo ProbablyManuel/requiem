@@ -16,7 +16,7 @@ Armors
 * _Temper_ denotes the ingredient of the tempering recipe. If unavailable, the primary ingredient is used as tempering ingredient.
 * _Perk_ denotes the perk of the crafting and tempering recipe. If unavailable, the set cannot be crafted or tempered.
 
-How the armor rating, weight, and price of a full set are distributed across the armor parts is defined in [armor_patcher.py](../xEdit%20Scripts/armor_patcher.py).
+How the armor rating, weight, and price of a full set are distributed across the armor parts is defined in [armor_patcher.py](../armor_patcher.py).
 
 The coloring of some fields is a just visual cue to group armors with identical stats.
 

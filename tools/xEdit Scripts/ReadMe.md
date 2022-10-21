@@ -85,7 +85,7 @@ The scripts reading from Excel files may require running `pip install pandas ope
 armor_patcher.py
 ----------------
 
-Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](../Spreadsheet#armor).
+Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](patcher_data#armor).
 
 The script can be invoked by dragging a custom text file onto it to provide easy integration of third-party armors. The file must contain lines of the form "Heavy_Runic,Heavy_Steel" where the first value is a new armor set and the second value is an existing armor set. This ensures armors with EditorID `<prefix>_Heavy_Runic_<part>` will be treated as steel armor. Due to a library limitation the file must contain at least two lines.
 
@@ -101,7 +101,7 @@ If xEdit is installed in a location other than `C:\Skyrim Tools\SSEEdit`, the sc
 recipe_patcher.py
 -----------------
 
-Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](../Spreadsheet#armor) and [Weapon.xlsx](../Spreadsheet#weapon).
+Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](patcher_data#armor) and [Weapon.xlsx](patcher_data#weapon).
 
 The script can be invoked by dragging two custom text files onto it to provide easy integration of third-party armors and weapons. The files should be equal to the ones used to extend the armor and weapon patcher.
 
@@ -115,6 +115,6 @@ Implements a dictionary that raises an exception when assigning a value to an ex
 weapon_patcher.py
 -----------------
 
-Generates `REQ_WeaponPatcher.txt` based on the data in [Weapon.xlsx](../Spreadsheet#weapon).
+Generates `REQ_WeaponPatcher.txt` based on the data in [Weapon.xlsx](patcher_data#weapon).
 
 The script can be invoked by dragging a custom text file onto it to provide easy integration of third-party weapons. The file must contain lines of the form "Weapon_Runic,Weapon_Steel" where the first value is a new weapon set and the second value is an existing weapon set. This ensures weapons with EditorID `<prefix>_Weapon_Runic_<type>` will be treated as steel weapons. Due to a library limitation the file must contain at least two lines.
