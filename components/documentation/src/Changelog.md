@@ -11,7 +11,6 @@ Tweaks
 
 * Battlestaves have a consistent stats progression.
 * Weapon prices are always rounded to the nearest multiple of 5.
-* Artifacts of divine origin have a standardized price of 80000.
 * Several encounters have proper stats, perk set, and equipment.
     * The band of Thirsk Hall
     * Butcher
@@ -29,7 +28,11 @@ Tweaks
     * Dragon Priest Staff -> Rahgot's Staff
     * The Gauldur Amulet -> Gauldur Amulet
     * The Rueful Axe -> Rueful Axe
-* All crafting recipes are standardized according to the following formulas.
+* Artifact gold values are standardized according to the following guidelines.
+    * Divine artifacts have a value of 80000.
+    * Legendary historic artifacts have a value of 50000.
+    * Mundane artifacts have a value of 5000 or less.
+* All crafting recipes are standardized according to the following guidelines.
     * Gauntlets: 2 primary, 1 secondary, 2 leather strips
     * Boots: 3 primary, 1 secondary, 2 leather strips
     * Helmet: 3 primary, 1 secondary, 1 leather strip
