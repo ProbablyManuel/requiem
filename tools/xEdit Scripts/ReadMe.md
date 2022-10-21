@@ -1,3 +1,17 @@
+Installation
+============
+
+It just works
+-------------
+
+Copy all files in this folder to the folder `Edit Scripts` of your xEdit installation.
+
+Advanced
+--------
+
+See [link_scripts.py](#link_scriptspy).
+
+
 xEdit Scripts
 =============
 
