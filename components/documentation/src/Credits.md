@@ -47,6 +47,7 @@ Mods included in Requiem
 * [D13 Faster GET UP STAND UP animation vanilla friendly](https://www.nexusmods.com/skyrim/mods/17491) by [Darkangel13](https://www.nexusmods.com/users/771437)
 * [Crossbows Basic Collection](https://www.nexusmods.com/skyrim/mods/23876) by [DJjojo](https://www.nexusmods.com/users/2977948)
 * [Crossbows](https://www.nexusmods.com/skyrim/mods/22207) by [scot](https://www.nexusmods.com/users/392488)
+* [Heavy Armory - New Weapons](https://www.nexusmods.com/skyrim/mods/21120) by [PrivateEye](https://www.nexusmods.com/users/887024)
 * [Horse Armors for Skyrim](https://www.nexusmods.com/skyrim/mods/13348) by [mystikhybrid](https://www.nexusmods.com/users/294935)
 * [Insanitys Dragonbane](https://www.nexusmods.com/skyrim/mods/19180) by [InsanitySorrow](https://www.nexusmods.com/users/258945)
 * [Insanitys Red Eagles Bane](https://www.nexusmods.com/skyrim/mods/32930) by [InsanitySorrow](https://www.nexusmods.com/users/258945)
@@ -65,7 +66,6 @@ Assets taken from other mods
 
 * Dawnguard Crossbow from [Faction Crossbows](https://www.nexusmods.com/skyrim/mods/58704/) by [nsk13](https://www.nexusmods.com/users/3373573)
 * Heroic Imperial Armor from [Lore Friendly Armor Pack](https://www.nexusmods.com/skyrim/mods/6684) by [rahman530](https://www.nexusmods.com/users/3052977)
-* Imperial Dagger, Mace and Shortsword from [Heavy Armory - New Weapons](https://www.nexusmods.com/skyrim/mods/21120) by [PrivateEye](https://www.nexusmods.com/users/887024)
 * Open Faced Guard Helmets from [Teh-Husky Mod Compilation](https://www.nexusmods.com/skyrim/mods/32226) by [THusky](https://www.nexusmods.com/users/5226693)
 * Battlestaves from [Weapons of the Third Era](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
 

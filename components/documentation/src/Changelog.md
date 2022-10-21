@@ -4,7 +4,22 @@ Requiem 5.3.0 - "Around the Fire"
 New Features
 ------------
 
-* New weapon types are available: Tanto, Wakizashi, Katana, Dai-Katana.
+* New weapon types are available.
+    * Tanto
+    * Wakizashi
+    * Katana
+    * Dai-Katana
+    * Shortsword
+    * Quarterstaff
+    * Club (Wood, Iron, Steel)
+* New weapons are available.
+    * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
+    * Dawnguard: Mace, Battleaxe
+    * Forsworn: Dagger
+* New perks are available.
+    * Quarterstaff Focus 1: +10% attack speed, +7% armor penetration
+    * Quarterstaff Focus 2: +20% attack speed, +14% armor penetration
+    * Quarterstaff Focus 3: +30% attack speed, +21% armor penetration
 
 Tweaks
 ------
@@ -19,9 +34,11 @@ Tweaks
     * Linwe
     * Unmid Snow-Shod
     * Velehk Sain
+* Gunmar sells Dawnguard weapons.
 * Names of base enchantments are reverted to the more concise vanilla names.
 * The summoned Dremora archer uses normal daedric arrows instead of a heavily nerfed variant.
 * Artifact name changes:
+    * Blades Sword -> Blades Katana
     * Dawnguard Rune Axe -> Ancient Dawnguard War Axe
     * Dawnguard Rune Hammer -> Ancient Dawnguard Warhammer
     * Dawnguard Rune Shield -> Ancient Dawnguard Shield
@@ -104,6 +121,9 @@ Bugfixes
 * The longhammer has the same damage and price as an Orcish warhammer.
 * Wuuthrad has the same weight as an ebony battleaxe.
 * Duplicate tempering recipe for Headman's Axe and Pickaxe is removed.
+* Forsworn do not wield Orcish war axes.
+* Various fixes to leveled lists containing enchanted weapons.
+* A missing look template of Thalmor archers is restored.
 
 Reqtificator
 ------------
@@ -114,12 +134,18 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Ammo crafting recipes use vanilla records where they already exist.
-* Ammo, animal hides, crafting recipes, enchanted weapons, and weapon enchantments have a proper EditorID.
+* Ammo, animal hides, crafting recipes, enchanted weapons, first person weapon models, and weapon enchantments have a proper EditorID.
 * Standard weapons have a common prefix "Weapon" in their EditorID.
 * Weapon artifacts do not have the weapon type in their EditorID.
 * EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
-* Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted crossbows are currently unused.)
+* Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted improved crossbows are currently unused.)
+* Thalmor archers inherit their inventory from the template.
+* Redundant edits to Skyhaven Temple are removed.
+* LootDwarvenWeapon15 does not contain enchanted weapons.
+* LItemDawnguardWarAxe is reverted to its vanilla functionality.
+* csDraugrMissile is removed from the plugin because it's effectively an ITM.
+* Imperial meshes are moved from `Requiem\weapons\imperial\` to `PrvtI\imperial\`.
 
 
 Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
