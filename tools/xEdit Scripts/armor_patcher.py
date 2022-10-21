@@ -6,7 +6,7 @@ from strict_dict import strict_dict
 
 
 armor = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
+    "patcher_data/Armor.xlsx",
     sheet_name="Armors",
     index_col=0,
     usecols=[
@@ -15,7 +15,7 @@ armor = pd.read_excel(
         "Weight",
         "Gold"]).convert_dtypes()
 armor_artifacts = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
+    "patcher_data/Armor.xlsx",
     sheet_name="Artifacts",
     index_col=0,
     usecols=[
@@ -25,7 +25,7 @@ armor_artifacts = pd.read_excel(
         "Weight",
         "Gold"]).convert_dtypes().dropna(how="all")
 armor_extras = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
+    "patcher_data/Armor.xlsx",
     sheet_name="Extras",
     index_col=0,
     usecols=[

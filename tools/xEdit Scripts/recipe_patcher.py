@@ -177,7 +177,7 @@ def get_conditions(perk: str, editor_id: str) -> str:
 
 
 armor_materials = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
+    "patcher_data/Armor.xlsx",
     sheet_name="Armors",
     index_col=0,
     usecols=[
@@ -192,11 +192,11 @@ armor_materials["Temper"].mask(
     armor_materials["Primary"],
     inplace=True)
 armor_quantities = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
+    "patcher_data/Armor.xlsx",
     sheet_name="CraftingQuantities",
     index_col=0).convert_dtypes()
 armor_artifacts = pd.read_excel(
-    "../Spreadsheet/Armor.xlsx",
+    "patcher_data/Armor.xlsx",
     sheet_name="Artifacts",
     index_col=0,
     usecols=[
@@ -212,7 +212,7 @@ else:
     armor_variants = pd.Series(dtype=str)
 
 weapon_materials = pd.read_excel(
-    "../Spreadsheet/Weapon.xlsx",
+    "patcher_data/Weapon.xlsx",
     sheet_name="Weapons",
     index_col=0,
     usecols=[
@@ -227,11 +227,11 @@ weapon_materials["Temper"].mask(
     weapon_materials["Primary"],
     inplace=True)
 weapon_quantities = pd.read_excel(
-    "../Spreadsheet/Weapon.xlsx",
+    "patcher_data/Weapon.xlsx",
     sheet_name="CraftingQuantities",
     index_col=0).convert_dtypes()
 weapon_artifacts = pd.read_excel(
-    "../Spreadsheet/Weapon.xlsx",
+    "patcher_data/Weapon.xlsx",
     sheet_name="Artifacts",
     index_col=0,
     usecols=[
