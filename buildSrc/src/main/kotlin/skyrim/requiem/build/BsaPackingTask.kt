@@ -14,10 +14,16 @@ open class BsaPackingTask : DefaultTask() {
     lateinit var folder: File
     @InputFile
     lateinit var archiveTool: File
+    @Internal
+    var compress: Boolean = false
 
     @TaskAction
     fun buildBsaArchive() {
-        val myArgs = listOf(archiveTool.absolutePath, "pack", folder.absolutePath, archiveFile.absolutePath, "-sse")
+        val myArgs = if (compress) {
+            listOf(archiveTool.absolutePath, "pack", folder.absolutePath, archiveFile.absolutePath, "-sse", "-z")
+        } else {
+            listOf(archiveTool.absolutePath, "pack", folder.absolutePath, archiveFile.absolutePath, "-sse")
+        }
         val archiveTask = ProcessBuilder(myArgs)
             .redirectOutput(ProcessBuilder.Redirect.to(logFile))
             .redirectErrorStream(true)

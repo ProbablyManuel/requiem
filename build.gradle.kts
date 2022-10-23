@@ -45,7 +45,9 @@ val reqtificatorDir = file("Reqtificator")
 val scriptsSourcesDir = file(sourceDir.resolve("Scripts"))
 val reqtificatorSourcesDir = file(sourceDir.resolve("Reqtificator"))
 val bsaFilesDir = file("BsaFiles")
+val bsaFilesTexturesDir = file("BsaFilesTextures")
 val bsaFile = file("Requiem.bsa")
+val bsaFileTextures = file("Requiem - Textures.bsa")
 
 val copyReqtificator by tasks.registering(Copy::class) {
     dependsOn("components:mutagen-reqtificator:assemble")
@@ -99,9 +101,18 @@ val copyBsaFiles by tasks.registering(Copy::class) {
     dependsOn("assemble")
 
     from(".")
-    include("Interface/**", "meshes/**", "Sound/**", "textures/**", "Scripts/**")
+    include("Interface/**", "meshes/**", "Sound/**", "Scripts/**")
     into(bsaFilesDir)
     exclude("**/REQ_Debug*.pex", "**/REQ_Debug*.psc")
+    includeEmptyDirs = false
+}
+
+val copyBsaFilesTextures by tasks.registering(Copy::class) {
+    dependsOn("assemble")
+
+    from(".")
+    include("textures/**")
+    into(bsaFilesTexturesDir)
     includeEmptyDirs = false
 }
 
@@ -111,9 +122,21 @@ val createBsa by tasks.registering(BsaPackingTask::class) {
     dependsOn(copyBsaFiles)
 
     folder = bsaFilesDir
-    archiveFile = bsaFile
+    archiveFile = bsaFileTextures
     logFile = file("distribution/bsaLog.txt")
     archiveTool = bsArch
+}
+
+val createBsaTextures by tasks.registering(BsaPackingTask::class) {
+    description = "create a BSA archive for Requiem's textures"
+    group = "distribution"
+    dependsOn(copyBsaFilesTextures)
+
+    folder = bsaFilesTexturesDir
+    archiveFile = bsaFile
+    logFile = file("distribution/bsaTexturesLog.txt")
+    archiveTool = bsArch
+    compress = true
 }
 
 tasks.assemble {
@@ -130,7 +153,9 @@ tasks.clean {
     delete(interfaceDir)
     delete(scriptsDir)
     delete(bsaFilesDir)
+    delete(bsaFilesTexturesDir)
     delete(bsaFile)
+    delete(bsaFileTextures)
 }
 
 val packRelease by tasks.registering(ReleaseArchiveTask::class) {
@@ -139,6 +164,7 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
 
     dependsOn(tasks.assemble)
     dependsOn(createBsa)
+    dependsOn(createBsaTextures)
     dependsOn("components:fomod-installer:assemble")
     dependsOn("components:documentation:assemble")
 
@@ -154,6 +180,7 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
         "Requiem.modgroups",
         releaseDocsDir,
         "Requiem.bsa",
+        "Requiem - Textures.bsa",
         "Source",
         "Reqtificator",
         "BashTags"
