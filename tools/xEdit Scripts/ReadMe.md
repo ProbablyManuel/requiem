@@ -50,6 +50,14 @@ Set the EditorID of the selected records based on their full names.
 The script prompts the user to enter a prefix that will be prepended to all EditorIDs. Then, the name (subrecord 'FULL - Names') is processed by concatenating all words in upper camel case and removing apostrophes. For example, choosing the prefix "REQ\_Artifact\_" for "Gadnor's Staff of Charming" results in the EditorID `REQ_Artifact_GadnorsStaffOfCharming`.
 
 
+REQ_NameArmor.pas
+-------------------------
+
+Set the EditorID of the selected armors based on their type, material/set, and equip slot.
+
+The script prompts the user to enter the name of the armor set. Then, the EditorID is assembled so that it adheres to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#armor-clothing-and-jewelry-armo-records).
+
+
 REQ_NameEnchantedWeapon.pas
 ---------------------------
 
