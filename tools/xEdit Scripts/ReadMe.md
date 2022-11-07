@@ -23,6 +23,14 @@ Create a new leveled item and add the selected items to it.
 The script prompts the user to enter the EditorID of the new leveled item. The leveled item is created in the file of the first selected item.
 
 
+REQ_AddItemsToOutfit.pas
+-----------------------------
+
+Create a new outfit and add the selected items to it.
+
+The script prompts the user to enter the EditorID of the new outfit. The outfit is created in the file of the first selected item.
+
+
 REQ_ArmorPatcher.pas
 --------------------
 
