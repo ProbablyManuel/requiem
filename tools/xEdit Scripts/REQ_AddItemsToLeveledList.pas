@@ -27,9 +27,9 @@ begin
     entryArray := ElementByPath(leveledItem, 'Leveled List Entries');
     entry := ElementAssign(entryArray, HighInteger, nil, False);
   end;
-  SetElementNativeValues(entry, 'LVLO - Base Data\Level', 1);
-  SetElementNativeValues(entry, 'LVLO - Base Data\Reference', LoadOrderFormIDtoFileFormID(GetFile(e), GetLoadOrderFormID(e)));
-  SetElementNativeValues(entry, 'LVLO - Base Data\Count', 1);
+  SetElementEditValues(entry, 'LVLO - Base Data\Level', '1');
+  SetElementEditValues(entry, 'LVLO - Base Data\Reference', IntToHex(GetLoadOrderFormID(e), 8));
+  SetElementEditValues(entry, 'LVLO - Base Data\Count', '1');
 end;
 
 
