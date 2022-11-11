@@ -192,7 +192,14 @@ namespace Reqtificator.Transformers
                 _ => throw new ArgumentOutOfRangeException(nameof(flag), flag, null)
             };
             target.DeepCopyIn(source, mask);
-            target.Configuration.TemplateFlags &= ~flag;
+            if (source.Configuration.TemplateFlags.HasFlag(flag))
+            {
+                target.Configuration.TemplateFlags |= flag;
+            }
+            else
+            {
+                target.Configuration.TemplateFlags &= ~flag;
+            }
             //special handling for the shared flags enum
             var flagsToCopy = flag switch
             {

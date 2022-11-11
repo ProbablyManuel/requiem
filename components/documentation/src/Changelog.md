@@ -129,6 +129,8 @@ Reqtificator
 ------------
 
 * Critical damage is increased by the same factor as weapon damage.
+* Visual automerging takes template flags into account and correctly copies them into the generated patch.
+
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
