@@ -20,10 +20,57 @@ New Features
     * Quarterstaff Focus 1: +10% attack speed, +7% armor penetration
     * Quarterstaff Focus 2: +20% attack speed, +14% armor penetration
     * Quarterstaff Focus 3: +30% attack speed, +21% armor penetration
+* An optional patch that integrates the following Creation Club DLCs is added.
+    * Alternative Armors - Daedric Mail
+    * Alternative Armors - Daedric Plate
+    * Alternative Armors - Dragon Plate
+    * Alternative Armors - Dragonscale
+    * Alternative Armors - Dwarven Mail
+    * Alternative Armors - Dwarven Plate
+    * Alternative Armors - Ebony Plate
+    * Alternative Armors - Elven Hunter
+    * Alternative Armors - Iron
+    * Alternative Armors - Leather
+    * Alternative Armors - Orcish Plate
+    * Alternative Armors - Orcish Scaled
+    * Alternative Armors - Silver
+    * Alternative Armors - Stalhrim Fur
+    * Alternative Armors - Steel Soldier
+    * Netch Leather Armor
+    * Redguard Elite Armaments
+    * Spell Knight Armor
+    * Vigil Enforcer Armor Set
+* Various NPCs have new armors. If you do not use the Creation Club patch, the armors may share their appearance with another vanilla model.
+    * Ulfric wears an unique stalhrim stormcloak armor.
+    * Kematu and his entourage wear an unique Alik'r armor and weapon.
+    * Jarl Korir wears an ancient dragonscale armor. He is missing his helmet though...
+    * The Summerset Shadows wear an unique leather armor.
+    * Galmar wears an ancient dragonplate armor.
+    * Alain wears an unique Elven armor.
+    * Vigilant of Stendarr wear an unique iron armor. The Mage's Plate Armor assets are removed.
+    * Irileth wears an unique Vvardenfell ebony armor.
+    * Aicantar wear an unique Dwarven armor.
+    * Velehk Sain wears an unique daedric armor.
+    * The Silver Hand wear an unique steel armor.
+    * Vigilant Tyranus wear an unique silver armor.
+    * Orcish chieftains wear an unique Orcish armor.
+    * The Halvar brothers wear an unique steel armor.
+    * The Dreamora Merchant wears an unique Daedric armor.
+    * Ancient Helmet of the Unburned has a unique stalhrim model.
+New light armors are available.
+    * Dwarven
+    * Orcish
+    * Netch Leather
 
 Tweaks
 ------
 
+
+* Atherium armor is removed. In its place Dwarven armor with the same enchantments can be found.
+* Redguard clothes are reverted to clothing.
+* Ulfric's clothes are reverted to clothing.
+* The steel scimitar has the same damage as a steel sword.
+* Kematu's scimitar increases one-handed armor penetration by 10.
 * Battlestaves have a consistent stats progression.
 * Weapon prices are always rounded to the nearest multiple of 5.
 * Several encounters have proper stats, perk set, and equipment.
@@ -35,6 +82,7 @@ Tweaks
     * Unmid Snow-Shod
     * Velehk Sain
 * Gunmar sells Dawnguard weapons.
+* Torkild wears a full set of fur armor.
 * Names of base enchantments are reverted to the more concise vanilla names.
 * The summoned Dremora archer uses normal daedric arrows instead of a heavily nerfed variant.
 * Artifact name changes:
@@ -79,7 +127,6 @@ Tweaks
     * Stalhrim light armor requires leather instead of steel.
     * No items require firewood.
 * Tempering components changes:
-    * Aetherium armor requires dwarven metal instead of gold.
     * Ancient Nord armor requires steel instead of iron.
     * Blade of Woe require ebony instead of steel.
     * Dawnguard crossbow requires silver instead of steel.
@@ -103,7 +150,7 @@ Tweaks
 * Tempering Nightingale armor and weapons and Harkon's sword requires Legendary Blacksmithing.
 * Tempering dragonplate armor requires Ebony Smithing and tempering dragonscale armor requires Glass Smithing to match the crafting requirements.
 * Tempering Thieves Guild and Dark Brotherhood armors does not require joining the guilds.
-* Crafting and tempering bonemold and chitin armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
+* Crafting and tempering bonemold, chitin, and netch leather armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
 * Nordic weapons can be crafted with Advanced Blacksmithing.
 * Base damage and weight of Nordic weapons is reduced by 2 and 1 points respectively.
 * Armor weight is not rounded.
@@ -139,6 +186,7 @@ Internal Quality Improvements (only relevant for modders)
 * Weapon artifacts do not have the weapon type in their EditorID.
 * EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
+* Duplicate Orc stronghold outfits are nullified.
 * Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted improved crossbows are currently unused.)
 * Thalmor archers inherit their inventory from the template.
 * Redundant edits to Skyhaven Temple are removed.
