@@ -20,6 +20,9 @@ Function initScript(Int currentVersion, Int nevVersion)
         If currentVersion <= 50101 && nevVersion >= 50200
             Apply_5_1_1_to_5_2_0_fixes()
         EndIf
+        If currentVersion <= 50203 && nevVersion >= 50300
+            Apply_5_2_3_to_5_3_0_fixes()
+        EndIf
     EndIf
 EndFunction
 
@@ -57,5 +60,16 @@ Function Apply_5_1_1_to_5_2_0_fixes()
     If Player.HasPerk(Regeneration)
         Player.RemovePerk(Regeneration)
         Player.AddPerk(Regeneration)
+    EndIf
+EndFunction
+
+Function Apply_5_2_3_to_5_3_0_fixes()
+    If Player.HasPerk(HeavyArmorMaterialBonus)
+        Player.RemovePerk(HeavyArmorMaterialBonus)
+        Player.AddPerk(HeavyArmorMaterialBonus)
+    EndIf
+    If Player.HasPerk(LightArmorMaterialBonus)
+        Player.RemovePerk(LightArmorMaterialBonus)
+        Player.AddPerk(LightArmorMaterialBonus)
     EndIf
 EndFunction

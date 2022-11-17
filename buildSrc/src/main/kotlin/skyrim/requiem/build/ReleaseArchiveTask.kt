@@ -19,6 +19,8 @@ open class ReleaseArchiveTask : DefaultTask() {
     lateinit var fomod: File
     @InputFile
     lateinit var plugin: File
+    @InputFile
+    lateinit var pluginCreationClub: File
     @Input
     lateinit var excludePatterns: List<String>
 
@@ -33,6 +35,7 @@ open class ReleaseArchiveTask : DefaultTask() {
                 else copyFile(entry, File("core").resolve(entry.name), patterns, archive)
             }
             copyFile(plugin, File("plugin").resolve(plugin.name), patterns, archive)
+            copyFile(pluginCreationClub, File("plugin").resolve(pluginCreationClub.name), patterns, archive)
             copyFileTree(fomod, File(fomod.name), patterns, archive)
         }
     }

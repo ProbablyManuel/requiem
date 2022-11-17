@@ -21,6 +21,105 @@
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Creation Club" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Creation Club">
+							<description>
+								Install an integration patch for the Creation Club DLCs. You must own all 74 Creation Club DLCs to install this patch.
+							</description>
+							<image path="fomod\images\Requiem.jpg"/>
+							<files>
+							<file source="plugin\Requiem - Creation Club.esp" destination="Requiem - Creation Club.esp" priority="0"/>
+							</files>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="ccASVSSE001-ALMSIVI.esm" state="Active"/>
+												<fileDependency file="ccBGSSSE001-Fish.esm" state="Active"/>
+												<fileDependency file="ccBGSSSE002-ExoticArrows.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE003-Zombies.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE004-RuinsEdge.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE005-Goldbrand.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE006-StendarsHammer.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE007-Chrysamere.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE010-PetDwarvenArmoredMudcrab.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE011-HrsArmrElvn.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE012-HrsArmrStl.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE014-SpellPack01.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE019-StaffofSheogorath.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE020-GrayCowl.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE021-LordsMail.esl" state="Active"/>
+												<fileDependency file="ccMTYSSE001-KnightsoftheNine.esl" state="Active"/>
+												<fileDependency file="ccQDRSSE001-SurvivalMode.esl" state="Active"/>
+												<fileDependency file="ccTWBSSE001-PuzzleDungeon.esm" state="Active"/>
+												<fileDependency file="ccEEJSSE001-Hstead.esm" state="Active"/>
+												<fileDependency file="ccQDRSSE002-Firewood.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE018-Shadowrend.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE035-PetNHound.esl" state="Active"/>
+												<fileDependency file="ccFSVSSE001-Backpacks.esl" state="Active"/>
+												<fileDependency file="ccEEJSSE002-Tower.esl" state="Active"/>
+												<fileDependency file="ccEDHSSE001-NorJewel.esl" state="Active"/>
+												<fileDependency file="ccVSVSSE002-Pets.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE037-Curios.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE034-MntUni.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE045-Hasedoki.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE008-Wraithguard.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE036-PetBWolf.esl" state="Active"/>
+												<fileDependency file="ccFFBSSE001-ImperialDragon.esl" state="Active"/>
+												<fileDependency file="ccMTYSSE002-VE.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE043-CrossElv.esl" state="Active"/>
+												<fileDependency file="ccVSVSSE001-Winter.esl" state="Active"/>
+												<fileDependency file="ccEEJSSE003-Hollow.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE016-Umbra.esm" state="Active"/>
+												<fileDependency file="ccBGSSSE031-AdvCyrus.esm" state="Active"/>
+												<fileDependency file="ccBGSSSE038-BowofShadows.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE040-AdvObGobs.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE050-BA_Daedric.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE052-BA_Iron.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE054-BA_Orcish.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE058-BA_Steel.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE059-BA_Dragonplate.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE061-BA_Dwarven.esl" state="Active"/>
+												<fileDependency file="ccPEWSSE002-ArmsOfChaos.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE041-NetchLeather.esl" state="Active"/>
+												<fileDependency file="ccEDHSSE002-SplKntSet.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE064-BA_Elven.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE063-BA_Ebony.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE062-BA_DwarvenMail.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE060-BA_Dragonscale.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE056-BA_Silver.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE055-BA_OrcishScaled.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE053-BA_Leather.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE051-BA_DaedricMail.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE057-BA_Stalhrim.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE066-Staves.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE067-DaedInv.esm" state="Active"/>
+												<fileDependency file="ccBGSSSE068-Bloodfall.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE069-Contest.esl" state="Active"/>
+												<fileDependency file="ccVSVSSE003-NecroArts.esl" state="Active"/>
+												<fileDependency file="ccVSVSSE004-BeAFarmer.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE025-AdvDSGS.esm" state="Active"/>
+												<fileDependency file="ccFFBSSE002-CrossbowPack.esl" state="Active"/>
+												<fileDependency file="ccBGSSSE013-Dawnfang.esl" state="Active"/>
+												<fileDependency file="ccRMSSSE001-NecroHouse.esl" state="Active"/>
+												<fileDependency file="ccEDHSSE003-Redguard.esl" state="Active"/>
+												<fileDependency file="ccEEJSSE004-Hall.esl" state="Active"/>
+												<fileDependency file="ccEEJSSE005-Cave.esm" state="Active"/>
+												<fileDependency file="ccKRTSSE001_Altar.esl" state="Active"/>
+												<fileDependency file="ccCBHSSE001-Gaunt.esl" state="Active"/>
+												<fileDependency file="ccAFDSSE001-DweSanctuary.esm" state="Active"/>
+																							</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 			</optionalFileGroups>
 		</installStep>
 		<!--Font Options-->

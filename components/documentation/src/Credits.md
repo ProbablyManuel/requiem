@@ -43,7 +43,6 @@ Assets made for Requiem
 Mods included in Requiem
 ========================
 
-* [Aetherium Armor and Weapons Compilation](https://www.nexusmods.com/skyrim/mods/23530) by [lautasantenni](https://www.nexusmods.com/users/983976)
 * [D13 Faster GET UP STAND UP animation vanilla friendly](https://www.nexusmods.com/skyrim/mods/17491) by [Darkangel13](https://www.nexusmods.com/users/771437)
 * [Crossbows Basic Collection](https://www.nexusmods.com/skyrim/mods/23876) by [DJjojo](https://www.nexusmods.com/users/2977948)
 * [Crossbows](https://www.nexusmods.com/skyrim/mods/22207) by [scot](https://www.nexusmods.com/users/392488)
@@ -53,7 +52,6 @@ Mods included in Requiem
 * [Insanitys Red Eagles Bane](https://www.nexusmods.com/skyrim/mods/32930) by [InsanitySorrow](https://www.nexusmods.com/users/258945)
 * [Katana Crafting](https://www.nexusmods.com/skyrimspecialedition/mods/5306) by [lautasantenni](https://www.nexusmods.com/users/983976)
 * [Low-Tier Wooden Crossbow](https://www.nexusmods.com/skyrim/mods/54134) by [Jokerine](https://www.nexusmods.com/users/2543917)
-* [Mage's Plate Armor](https://www.nexusmods.com/skyrim/mods/92916) by [QwibQwibMods](https://www.nexusmods.com/users/57153782)
 * [Modern Brawl Bug Fix](https://www.nexusmods.com/skyrim/mods/77465) by [EnaiSiaion](https://www.nexusmods.com/users/3959191)
 * [Shields Block Poisons](https://www.nexusmods.com/skyrim/mods/79280) by [Paulicus](https://www.nexusmods.com/users/23313089)
 * [Smaller Ice Spike and Ice Spear](https://www.nexusmods.com/skyrim/mods/31899) by [odin_ml](https://www.nexusmods.com/users/50001)
@@ -78,6 +76,7 @@ Assets used in former versions of Requiem
 =========================================
 
 * [3rd Person Dual Wield Animation Fix](https://www.nexusmods.com/skyrim/mods/248) by [imeltfaces](https://www.nexusmods.com/users/1073116)
+* [Aetherium Armor and Weapons Compilation](https://www.nexusmods.com/skyrim/mods/23530) by [lautasantenni](https://www.nexusmods.com/users/983976)
 * [Brawl Bugs Patch - Plugins - Modder Resource](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/24020) by [jonwd7](https://www.nexusmods.com/users/2492841)
 * [CAT Hohenzollern](http://www.peter-wiegel.de/CATHohenzollern.html) by Peter Wiegel
 * [Dragon Knight Armor](https://www.nexusmods.com/skyrim/mods/28287) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
@@ -87,6 +86,7 @@ Assets used in former versions of Requiem
 * Less Ruined Books by Ichibu
 * [Lockpicking interface retex](https://www.nexusmods.com/skyrim/mods/2845) by [quazaque](https://www.nexusmods.com/users/2401225)
 * [Lockpick Inventory Remodel](https://www.nexusmods.com/skyrim/mods/13901) by [born2bkilled](https://www.nexusmods.com/users/255383)
+* [Mage's Plate Armor](https://www.nexusmods.com/skyrim/mods/92916) by [QwibQwibMods](https://www.nexusmods.com/users/57153782)
 * [No bethesda Intro](https://www.nexusmods.com/skyrim/mods/20020) by [agonbar](https://www.nexusmods.com/users/1898333)
 * [Redguard Knight Armor](https://www.nexusmods.com/skyrim/mods/13500) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
 * RequiemPlugin.dll by [Meh321](https://www.nexusmods.com/users/2964753) (SKSE plugin made specifically for Requiem)
