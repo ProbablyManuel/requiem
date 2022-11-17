@@ -149,6 +149,7 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
 
     fomod = installerDir
     plugin = file("Requiem.esp")
+    pluginCreationClub = file("Requiem - Creation Club.esp")
     coreMod = files(
         "Reqtificator.bat",
         "Requiem.modgroups",
