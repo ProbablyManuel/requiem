@@ -99,3 +99,8 @@ Artifacts
 * _Reach_ denotes the reach offset to the template.
 * _Stagger_ denotes the stagger offset to the template.
 * _Divine_ denotes whether tempering the artifact requires Legendary Blacksmithing.
+
+Leveled Lists
+=============
+
+Each object designates a leveled list pattern. The name denotes the EditorId of the leveled list where `{item_slot}` is a placeholder for the armor part or weapon type. The value is another object that maps an armor/weapon set to its number of entries in the leveled list.

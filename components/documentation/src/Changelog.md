@@ -4,22 +4,6 @@ Requiem 5.3.0 - "Around the Fire"
 New Features
 ------------
 
-* New weapon types are available.
-    * Tanto
-    * Wakizashi
-    * Katana
-    * Dai-Katana
-    * Shortsword
-    * Quarterstaff
-    * Club (Wood, Iron, Steel)
-* New weapons are available.
-    * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
-    * Dawnguard: Mace, Battleaxe
-    * Forsworn: Dagger
-* New perks are available.
-    * Quarterstaff Focus 1: +10% attack speed, +7% armor penetration
-    * Quarterstaff Focus 2: +20% attack speed, +14% armor penetration
-    * Quarterstaff Focus 3: +30% attack speed, +21% armor penetration
 * An optional patch that integrates the following Creation Club DLCs is added.
     * Alternative Armors - Daedric Mail
     * Alternative Armors - Daedric Plate
@@ -40,37 +24,54 @@ New Features
     * Redguard Elite Armaments
     * Spell Knight Armor
     * Vigil Enforcer Armor Set
-* Various NPCs have new armors. If you do not use the Creation Club patch, the armors may share their appearance with another vanilla model.
-    * Ulfric wears an unique stalhrim stormcloak armor.
-    * Kematu and his entourage wear an unique Alik'r armor and weapon.
-    * Jarl Korir wears an ancient dragonscale armor. He is missing his helmet though...
-    * The Summerset Shadows wear an unique leather armor.
-    * Galmar wears an ancient dragonplate armor.
-    * Alain wears an unique Elven armor.
-    * Vigilant of Stendarr wear an unique iron armor. The Mage's Plate Armor assets are removed.
-    * Irileth wears an unique Vvardenfell ebony armor.
-    * Aicantar wear an unique Dwarven armor.
-    * Velehk Sain wears an unique daedric armor.
-    * The Silver Hand wear an unique steel armor.
-    * Vigilant Tyranus wear an unique silver armor.
-    * Orcish chieftains wear an unique Orcish armor.
-    * The Halvar brothers wear an unique steel armor.
-    * The Dreamora Merchant wears an unique Daedric armor.
-    * Ancient Helmet of the Unburned has a unique stalhrim model.
-New light armors are available.
-    * Dwarven
-    * Orcish
+* New weapon types are available. They can be crafted with the respective material perk, and they are integrated into the world through one unique placement each.
+    * Tanto
+    * Wakizashi
+    * Katana
+    * Dai-Katana
+    * Shortsword
+    * Quarterstaff
+    * Club (Wood, Iron, Steel)
+* New weapons are available. They are distributed like other weapons from the same set.
+    * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
+    * Dawnguard: Mace, Battleaxe
+    * Forsworn: Dagger
+* New armor sets are available. They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants. If you do not use the Creation Club patch, the armors will share their appearance with the respective vanilla model.
+    * Dwarven Light
+    * Orcish Light
     * Netch Leather
+* Various NPCs have new armors. If you do not use the Creation Club patch, the armors will share their appearance with a similar vanilla model.
+    * Ulfric wears a unique stalhrim stormcloak armor.
+    * Kematu and his entourage wear a unique Alik'r armor and weapon.
+    * Jarl Korir wears an ancient dragonscale armor.
+    * The Summerset Shadows wear a unique leather armor.
+    * Galmar wears an ancient dragonplate armor.
+    * Alain wears a unique Elven armor.
+    * Vigilant of Stendarr wear a unique iron armor. The Mage's Plate Armor assets are removed.
+    * Irileth wears a unique Vvardenfell ebony armor.
+    * Aicantar wear a unique Dwarven armor.
+    * Velehk Sain wears a unique daedric armor.
+    * The Silver Hand wear a unique steel armor.
+    * Vigilant Tyranus wear a unique silver armor.
+    * Orcish chieftains wear a unique Orcish armor.
+    * The Halvar brothers wear a unique steel armor.
+    * The Dreamora Merchant wears a unique Daedric armor.
+    * Ancient Helmet of the Unburned has a unique stalhrim model.
+    * Helm of Winterhold has a unique dragonscale model.
+* New perks are available.
+    * Quarterstaff Focus 1: +10% attack speed, +7% armor penetration
+    * Quarterstaff Focus 2: +20% attack speed, +14% armor penetration
+    * Quarterstaff Focus 3: +30% attack speed, +21% armor penetration
 
 Tweaks
 ------
-
 
 * Atherium armor is removed. In its place Dwarven armor with the same enchantments can be found.
 * Redguard clothes are reverted to clothing.
 * Ulfric's clothes are reverted to clothing.
 * The steel scimitar has the same damage as a steel sword.
 * Kematu's scimitar increases one-handed armor penetration by 10.
+* The reward for retrieving Hrolfdir's Shield is an enchanted set of Dwarven armor.
 * Battlestaves have a consistent stats progression.
 * Weapon prices are always rounded to the nearest multiple of 5.
 * Several encounters have proper stats, perk set, and equipment.
@@ -83,6 +84,7 @@ Tweaks
     * Velehk Sain
 * Gunmar sells Dawnguard weapons.
 * Torkild wears a full set of fur armor.
+* Falmer only use Falmer arrows.
 * Names of base enchantments are reverted to the more concise vanilla names.
 * The summoned Dremora archer uses normal daedric arrows instead of a heavily nerfed variant.
 * Artifact name changes:
@@ -151,7 +153,7 @@ Tweaks
 * Tempering dragonplate armor requires Ebony Smithing and tempering dragonscale armor requires Glass Smithing to match the crafting requirements.
 * Tempering Thieves Guild and Dark Brotherhood armors does not require joining the guilds.
 * Crafting and tempering bonemold, chitin, and netch leather armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
-* Nordic weapons can be crafted with Advanced Blacksmithing.
+* Nordic weapons can be crafted with Advanced Blacksmithing and are found in the world.
 * Base damage and weight of Nordic weapons is reduced by 2 and 1 points respectively.
 * Armor weight is not rounded.
 
@@ -170,6 +172,8 @@ Bugfixes
 * Duplicate tempering recipe for Headman's Axe and Pickaxe is removed.
 * Forsworn do not wield Orcish war axes.
 * Various fixes to leveled lists containing enchanted weapons.
+* A rarely used leveled list containing Dwarven armors is deleveled.
+* Leveled lists containing common weapons and armors are consistently weighted.
 * A missing look template of Thalmor archers is restored.
 
 Reqtificator
