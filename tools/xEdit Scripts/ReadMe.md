@@ -49,6 +49,13 @@ Create tempering recipes for the selected armors and weapons.
 The recipes are created in the file of the first selected item. The created recipes do not have an EditorID or ingredients and conditions. Use [REQ_NameRecipe.pas](#REQ_NameRecipepas) and [REQ_RecipePatcher.pas](#REQ_RecipePatcherpas) to generate them.
 
 
+REQ_LeveledItemPatcher.pas
+--------------------------
+
+Set content of the selected leveled items based on `REQ_LeveledItemPatcher.txt`.
+
+`REQ_LeveledItemPatcher.txt` maps leveled list identifiers to triplets of level, reference, and count. Leveled lists are identified by EditorID and must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#leveled-item-lvli-records). The identifier is automatically extracted from a leveled list's full EditorID which may include any mod prefix (not just "REQ"). Values in the triplet should be exactly as displayed in xEdit's GUI with the exception of formids which must be of the form `Skyrim.esm:034CDD`.
+
 REQ_Name1stPersonWeapon.pas
 ---------------------------
 
@@ -126,6 +133,12 @@ armor_patcher.py
 Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](patcher_data#armor).
 
 The script can be invoked by dragging a custom text file onto it to provide easy integration of third-party armors. The file must contain lines of the form "Heavy_Runic,Heavy_Steel" where the first value is a new armor set and the second value is an existing armor set. This ensures armors with EditorID `<prefix>_Heavy_Runic_<part>` will be treated as steel armor. Due to a library limitation the file must contain at least two lines.
+
+
+leveled_item_patcher.py
+----------------
+
+Generates `REQ_LeveledItemPatcher.txt` based on the data in [leveled_armor.json](patcher_data#leveled_armor) and [leveled_weapon.json](patcher_data#leveled_weapon). Available armor parts and weapon types are read from [Armor.xlsx](patcher_data#armor) and [Weapon.xlsx](patcher_data#weapon).
 
 
 link_scripts.py
