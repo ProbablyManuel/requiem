@@ -44,6 +44,7 @@ Mods included in Requiem
 ========================
 
 * [D13 Faster GET UP STAND UP animation vanilla friendly](https://www.nexusmods.com/skyrim/mods/17491) by [Darkangel13](https://www.nexusmods.com/users/771437)
+* [Chainmail Armor](https://www.nexusmods.com/skyrimspecialedition/mods/27340) by [NordWarUA](https://www.nexusmods.com/users/53732701)
 * [Crossbows Basic Collection](https://www.nexusmods.com/skyrim/mods/23876) by [DJjojo](https://www.nexusmods.com/users/2977948)
 * [Crossbows](https://www.nexusmods.com/skyrim/mods/22207) by [scot](https://www.nexusmods.com/users/392488)
 * [Heavy Armory - New Weapons](https://www.nexusmods.com/skyrim/mods/21120) by [PrivateEye](https://www.nexusmods.com/users/887024)
