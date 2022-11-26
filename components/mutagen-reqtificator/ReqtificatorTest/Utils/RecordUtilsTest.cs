@@ -106,8 +106,8 @@ namespace ReqtificatorTest.Utils
                 e.Should().BeOfType<InvalidRecordReferenceException<IPerkGetter>>();
                 var error = e as InvalidRecordReferenceException<IPerkGetter>;
                 error.Should().NotBeNull();
-                error.ParentRecord.Should().Be(version2);
-                error.ProblematicMod.Should().Be(mod2);
+                error!.ParentRecord.Should().Be(version2);
+                error!.ProblematicMod.Should().Be(mod2);
             });
         }
     }

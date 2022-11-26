@@ -88,11 +88,19 @@ namespace ReqtificatorTest.Transformers.Actors
         }
 
         [Fact]
-        public void Should_consider_two_actors_different_if_visual_data_is_different()
+        public void Should_consider_two_actors_different_if_weight_is_different()
         {
             var f = new Fixture();
             f.Actor2.Weight += 0.1f;
-            f.Logic.CheckRecordEquality(f.Actor1, f.Actor2).Should().BeFalse();
+            f.Logic.CheckRecordEquality(f.Actor1, f.Actor2).Should().BeTrue();
+        }
+
+        [Fact]
+        public void Should_consider_two_actors_different_if_height_is_different()
+        {
+            var f = new Fixture();
+            f.Actor2.Height += 0.1f;
+            f.Logic.CheckRecordEquality(f.Actor1, f.Actor2).Should().BeTrue();
         }
 
         [Fact]
