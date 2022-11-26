@@ -37,6 +37,7 @@ New Features
     * Dawnguard: Mace, Battleaxe
     * Forsworn: Dagger
 * New armor sets are available. They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants. If you do not use the Creation Club patch, the armors will share their appearance with the respective vanilla model.
+    * Chainmail
     * Dwarven Light
     * Orcish Light
     * Netch Leather
