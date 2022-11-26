@@ -45,7 +45,7 @@ namespace ReqtificatorTest.Transformers
             var result = transformer.Process(new UnChanged<Door, IDoorGetter>(door));
             result.IsModified().Should().BeTrue();
 
-            var resultScripts = result.Record().VirtualMachineAdapter.Scripts;
+            var resultScripts = result.Record().VirtualMachineAdapter!.Scripts;
             resultScripts.Count.Should().Be(1);
             resultScripts[0].Equals(expectedScript()).Should().BeTrue();
         }
