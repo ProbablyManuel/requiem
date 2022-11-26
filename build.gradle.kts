@@ -122,7 +122,7 @@ val createBsa by tasks.registering(BsaPackingTask::class) {
     dependsOn(copyBsaFiles)
 
     folder = bsaFilesDir
-    archiveFile = bsaFileTextures
+    archiveFile = bsaFile
     logFile = file("distribution/bsaLog.txt")
     archiveTool = bsArch
 }
@@ -133,7 +133,7 @@ val createBsaTextures by tasks.registering(BsaPackingTask::class) {
     dependsOn(copyBsaFilesTextures)
 
     folder = bsaFilesTexturesDir
-    archiveFile = bsaFile
+    archiveFile = bsaFileTextures
     logFile = file("distribution/bsaTexturesLog.txt")
     archiveTool = bsArch
     compress = true
@@ -180,8 +180,8 @@ val packRelease by tasks.registering(ReleaseArchiveTask::class) {
         "Reqtificator.bat",
         "Requiem.modgroups",
         releaseDocsDir,
-        "Requiem.bsa",
-        "Requiem - Textures.bsa",
+        bsaFile,
+        bsaFileTextures,
         "Source",
         "Reqtificator",
         "BashTags"
