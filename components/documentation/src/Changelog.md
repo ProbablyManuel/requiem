@@ -36,6 +36,7 @@ New Features
     * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
     * Dawnguard: Mace, Battleaxe
     * Forsworn: Dagger
+* Nordic weapons (from the Dragonborn DLC) can be crafted with Advanced Blacksmithing, and they are integrated into Skyrim through loot and merchants.
 * New armor sets are available. They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants. If you do not use the Creation Club patch, the armors will share their appearance with the respective vanilla model.
     * Chainmail
     * Dwarven Light
@@ -72,6 +73,7 @@ Tweaks
 * Ulfric's clothes are reverted to clothing.
 * Reinforced chitin armor is reverted to heavy armor.
 * Nordic Carved items are renamed to Quicksilver.
+* Weapon progression is rearranged so that Quicksilver < Dwarven < Orcish.
 * The steel scimitar has the same damage as a steel sword.
 * Kematu's scimitar increases one-handed armor penetration by 10.
 * The reward for retrieving Hrolfdir's Shield is an enchanted set of Dwarven armor.
@@ -156,8 +158,6 @@ Tweaks
 * Tempering dragonplate armor requires Ebony Smithing and tempering dragonscale armor requires Glass Smithing to match the crafting requirements.
 * Tempering Thieves Guild and Dark Brotherhood armors does not require joining the guilds.
 * Crafting and tempering bonemold, chitin, and netch leather armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
-* Nordic weapons can be crafted with Advanced Blacksmithing and are found in the world.
-* Base damage and weight of Nordic weapons is reduced by 2 and 1 points respectively.
 * Armor weight is not rounded.
 
 Bugfixes
