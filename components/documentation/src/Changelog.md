@@ -74,6 +74,10 @@ Tweaks
 * Reinforced chitin armor is reverted to heavy armor.
 * Nordic Carved items are renamed to Quicksilver.
 * Weapon progression is rearranged so that Quicksilver < Dwarven < Orcish.
+* Heavy armor progression is rearranged so that Dwarven < Orcish, but Orcish armor no longer provides a unique material bonus.
+* Light armor progression is rearranged so that Scale < Elven.
+* Penitus Oculatus armor has less inflated armor rating and weight but gains the same extra protection against ranged attacks as faction leader light armors.
+* Morag Tong armor has the same armor rating and weight as chitin light armor.
 * The steel scimitar has the same damage as a steel sword.
 * Kematu's scimitar increases one-handed armor penetration by 10.
 * The reward for retrieving Hrolfdir's Shield is an enchanted set of Dwarven armor.
@@ -129,7 +133,7 @@ Tweaks
     * Imperial heavy armor requires iron instead of leather.
     * Improved crossbows require the same material as normal crossbows.
     * Nord hero weapons require corundum instead of an ancient Nord weapon.
-    * Scale armor does not require leather.
+    * Scale armor does not require corundum.
     * Stalhrim heavy armor requires leather instead of quicksilver.
     * Stalhrim light armor requires leather instead of steel.
     * No items require firewood.
