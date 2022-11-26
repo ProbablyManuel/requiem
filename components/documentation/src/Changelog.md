@@ -70,6 +70,8 @@ Tweaks
 * Atherium armor is removed. In its place Dwarven armor with the same enchantments can be found.
 * Redguard clothes are reverted to clothing.
 * Ulfric's clothes are reverted to clothing.
+* Reinforced chitin armor is reverted to heavy armor.
+* Nordic Carved items are renamed to Quicksilver.
 * The steel scimitar has the same damage as a steel sword.
 * Kematu's scimitar increases one-handed armor penetration by 10.
 * The reward for retrieving Hrolfdir's Shield is an enchanted set of Dwarven armor.
@@ -194,6 +196,7 @@ Internal Quality Improvements (only relevant for modders)
 * EditorID of ancient Nord weapons matches their name.
 * Several unused weapons are nullified.
 * Duplicate Orc stronghold outfits are nullified.
+* REQ_ArmorUnion_Chitin is deprecated. Morag Tong armor shares its armor set keyword with chitin light armor.
 * Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted improved crossbows are currently unused.)
 * Thalmor archers inherit their inventory from the template.
 * Redundant edits to Skyhaven Temple are removed.
