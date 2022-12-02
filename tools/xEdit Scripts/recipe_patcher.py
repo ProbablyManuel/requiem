@@ -12,6 +12,7 @@ name_to_form = {
     "Arcane Craftsmanship": "Requiem.esp:309D25",
     "Black Soul Gem": "Skyrim.esm:02E500",
     "Bone Meal": "Skyrim.esm:034CDD",
+    "Charcoal": "Skyrim.esm:033760",
     "Chaurus Chitin": "Skyrim.esm:03AD57",
     "Chitin Plate": "Dragonborn.esm:02B04E",
     "Corundum": "Skyrim.esm:05AD93",
