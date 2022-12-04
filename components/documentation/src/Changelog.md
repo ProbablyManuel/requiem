@@ -24,7 +24,7 @@ New Features
     * Redguard Elite Armaments
     * Spell Knight Armor
     * Vigil Enforcer Armor Set
-* New weapon types are available. They can be crafted with the respective material perk, and they are integrated into the world through one unique placement each.
+* New weapon types are available. They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants.
     * Tanto
     * Wakizashi
     * Katana
@@ -32,19 +32,19 @@ New Features
     * Shortsword
     * Quarterstaff
     * Club (Wood, Iron, Steel)
-* New weapons are available. They are distributed like other weapons from the same set.
+* New weapons are available. They are integrated in the same manner as the other weapons from the same set.
     * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
     * Dawnguard: Mace, Battleaxe
     * Forsworn: Dagger
-* Nordic weapons (from the Dragonborn DLC) can be crafted with Advanced Blacksmithing, and they are integrated into Skyrim through loot and merchants.
-* New armor sets are available. They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants. If you do not use the Creation Club patch, the armors will share their appearance with the respective vanilla model.
+* Nordic weapons (from the Dragonborn DLC) can be crafted with Advanced Blacksmithing, and they are integrated into the mainland through loot and merchants.
+* New armor sets are available using assets from the Creation Club and [Chainmail Armor](https://www.nexusmods.com/skyrimspecialedition/mods/27340). They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants. If you do not use the Creation Club patch, the armors will still be present but share their appearance with a similar vanilla model.
     * Chainmail
     * Dwarven Light
     * Orcish Light
     * Netch Leather
-* Various NPCs have new armors. If you do not use the Creation Club patch, the armors will share their appearance with a similar vanilla model.
+* Various NPCs have new armors using assets from the Creation Club. If you do not use the Creation Club patch, the armors will still be present but share their appearance with a similar vanilla model.
     * Ulfric wears a unique stalhrim stormcloak armor.
-    * Kematu and his entourage wear a unique Alik'r armor and weapon.
+    * Kematu and his entourage wear a unique Alik'r armor and wield unique Alik'r weapons.
     * Jarl Korir wears an ancient dragonscale armor.
     * The Summerset Shadows wear a unique leather armor.
     * Galmar wears an ancient dragonplate armor.
@@ -57,7 +57,7 @@ New Features
     * Vigilant Tyranus wear a unique silver armor.
     * Orcish chieftains wear a unique Orcish armor.
     * The Halvar brothers wear a unique steel armor.
-    * The Dreamora Merchant wears a unique Daedric armor.
+    * The Dreamora Merchant wears a unique daedric armor.
     * Ancient Helmet of the Unburned has a unique stalhrim model.
     * Helm of Winterhold has a unique dragonscale model.
 * New perks are available.
@@ -72,7 +72,7 @@ Tweaks
 * Redguard clothes are reverted to clothing.
 * Ulfric's clothes are reverted to clothing.
 * Reinforced chitin armor is reverted to heavy armor.
-* Nordic Carved items are renamed to Quicksilver.
+* Nordic items (from the Dragonborn DLC) are renamed to Quicksilver.
 * Weapon progression is rearranged so that Quicksilver < Dwarven < Orcish.
 * Heavy armor progression is rearranged so that Dwarven < Orcish, but Orcish armor no longer provides a unique material bonus.
 * Light armor progression is rearranged so that Scale < Elven.
@@ -81,9 +81,7 @@ Tweaks
 * The steel scimitar has the same damage as a steel sword.
 * Kematu's scimitar increases one-handed armor penetration by 10.
 * The reward for retrieving Hrolfdir's Shield is an enchanted set of Dwarven armor.
-* Battlestaves have a consistent stats progression.
-* Weapon prices are always rounded to the nearest multiple of 5.
-* Several encounters have proper stats, perk set, and equipment.
+* Several encounters have proper stats, perks, and equipment.
     * The band of Thirsk Hall
     * Butcher
     * Champion of Boethiah
@@ -97,33 +95,32 @@ Tweaks
 * Names of base enchantments are reverted to the more concise vanilla names.
 * The summoned Dremora archer uses normal daedric arrows instead of a heavily nerfed variant.
 * Artifact name changes:
-    * Blades Sword -> Blades Katana
     * Dawnguard Rune Axe -> Ancient Dawnguard War Axe
     * Dawnguard Rune Hammer -> Ancient Dawnguard Warhammer
     * Dawnguard Rune Shield -> Ancient Dawnguard Shield
     * Dragon Priest Staff -> Rahgot's Staff
     * The Gauldur Amulet -> Gauldur Amulet
     * The Rueful Axe -> Rueful Axe
-* Artifact gold values are standardized according to the following guidelines.
+* Artifact gold values are standardized according to the following formula.
     * Divine artifacts have a value of 80000.
     * Legendary historic artifacts have a value of 50000.
     * Mundane artifacts have a value of 5000 or less.
-* All crafting recipes are standardized according to the following guidelines.
-    * Gauntlets: 2 primary, 1 secondary, 2 leather strips
-    * Boots: 3 primary, 1 secondary, 2 leather strips
-    * Helmet: 3 primary, 1 secondary, 1 leather strip
-    * Cuirass: 5 primary, 2 secondary, 4 leather strips
-    * Shield: 4 primary, 1 secondary, 2 leather strips
-    * Dagger: 1 primary, 1 secondary, 1 leather strip
-    * Sword: 2 primary, 1 secondary, 1 leather strip
-    * War Axe: 2 primary, 1 secondary, 2 leather strips
-    * Mace: 3 primary, 1 secondary, 2 leather strips
-    * Greatsword: 4 primary, 1 secondary, 2 leather strips
-    * Battleaxe: 4 primary, 1 secondary, 3 leather strips
-    * Warhammer: 4 primary, 2 secondary, 3 leather strips
-    * Bow: 3 primary, 1 secondary, 2 leather strips
-    * Crossbow: 3 primary, 1 secondary, 2 leather strips
-    * Arrows (30): 1 primary, 1 leather strip
+* All crafting recipes are standardized according to the following formula.
+    * Gauntlets: 2 primary components, 1 secondary components, 2 leather strips
+    * Boots: 3 primary components, 1 secondary components, 2 leather strips
+    * Helmet: 3 primary components, 1 secondary components, 1 leather strip
+    * Cuirass: 5 primary components, 2 secondary components, 4 leather strips
+    * Shield: 4 primary components, 1 secondary components, 2 leather strips
+    * Dagger: 1 primary components, 1 secondary components, 1 leather strip
+    * Sword: 2 primary components, 1 secondary components, 1 leather strip
+    * War Axe: 2 primary components, 1 secondary components, 2 leather strips
+    * Mace: 3 primary components, 1 secondary components, 2 leather strips
+    * Greatsword: 4 primary components, 1 secondary components, 2 leather strips
+    * Battleaxe: 4 primary components, 1 secondary components, 3 leather strips
+    * Warhammer: 4 primary components, 2 secondary components, 3 leather strips
+    * Bow: 3 primary components, 1 secondary components, 2 leather strips
+    * Crossbow: 3 primary components, 1 secondary components, 2 leather strips
+    * Arrows (30): 1 primary components, 1 leather strip
 * Crafting components changes:
     * Ancient Nord armor does not require leather.
     * Dragonscale armor requires iron instead of corundum.
@@ -162,6 +159,8 @@ Tweaks
 * Tempering dragonplate armor requires Ebony Smithing and tempering dragonscale armor requires Glass Smithing to match the crafting requirements.
 * Tempering Thieves Guild and Dark Brotherhood armors does not require joining the guilds.
 * Crafting and tempering bonemold, chitin, and netch leather armor requires Craftsmanship and visiting Solstheim after being attacked by Miraak's cultists.
+* Battlestaves have a consistent stats progression.
+* Weapon prices are always rounded to the nearest multiple of 5.
 * Armor weight is not rounded.
 
 Bugfixes
