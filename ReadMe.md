@@ -53,8 +53,7 @@ This mod is published on NexusMods:
         * If set to false, the compilation continues after the first error to accumulate all error messages.
     * `csharpWarningsAsErrors` - handling of compile time warnings in the C# Reqtificator.
         * If set to true, code analysis warnings will cause the Reqtificator build task to fail
-        * If set to false, code analysis warnings will be emitted on the console, but the build will still succeed. This setting only applies to the `assemble` task, `checkFormat` will always fail if a code-analyser warning is
-        present.
+        * If set to false, code analysis warnings will be emitted on the console, but the build will still succeed. This setting only applies to the `assemble` task, `checkFormat` will always fail if a code-analyser warning is present.
     * `bsArch` - the full path to the executable from BSArch
 
 4. Open a (power)shell, go to the repository's directory and execute `gradlew.bat assemble`. This may take some time when you execute it the first time because the wrapper needs to download the Gradle distribution and other dependencies first.
