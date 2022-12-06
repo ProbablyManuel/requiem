@@ -79,6 +79,7 @@ Tweaks
 * Penitus Oculatus armor has less inflated armor rating and weight but gains the same extra protection against ranged attacks as faction leader light armors.
 * Morag Tong armor has the same armor rating and weight as chitin light armor.
 * The steel scimitar has the same damage as a steel sword.
+* Dawnguard weapons deal 25% more damage to vampires (on top of the extra damage from silver) but they have the same base damage and weight as normal silver weapons.
 * Kematu's scimitar increases one-handed armor penetration by 10.
 * The reward for retrieving Hrolfdir's Shield is an enchanted set of Dwarven armor.
 * Several encounters have proper stats, perks, and equipment.
