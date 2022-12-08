@@ -68,6 +68,21 @@ New Features
 Tweaks
 ------
 
+* Armor material bonuses are rebalanced. (Magnitude is denoted per piece of light/heavy armor.)
+    * Ancient Falmer, Daedric: +6/9% magic resistance
+    * Chaurus Chitin: +10/15% poison resistance
+    * Chitin: 6/9% less damage from ranged weapons
+    * Corundum: 8/12% less damage from slashing weapons
+    * Dawnguard: 12/18% less damage from Vampiric Drain and physical attacks by vampires
+    * Dragonscale, Dragonplate: 6/9% shorter shout cooldown, 6/9% less damage from the voice, immunity to Unrelenting Force at three pieces
+    * Dwarven Metal: 4/6% less damage from blunt weapons
+    * Glass, Ebony: 6/9% fire resistance
+    * Imperial Legate: Nearby Imperial soldiers deal +4% damage
+    * Netch Leather: +2% movement speed
+    * Quicksilver: 2/3% more spellpower
+    * Stalhrim: +6/9% frost resistance
+    * Stormcloak Officer: Nearby Stormcloak soldiers deal +4% damage
+    * Volkihar Leather: +20% more damage from Vampiric Drain
 * Atherium armor is removed. In its place Dwarven armor with the same enchantments can be found.
 * Redguard clothes are reverted to clothing.
 * Ulfric's clothes are reverted to clothing.
