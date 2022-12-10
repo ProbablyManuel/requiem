@@ -1,4 +1,4 @@
-unit REQ_Lookup;
+unit REQ_Util;
 
 
 function LookupFormByEditorID(asSignatures: String): THashedStringList;
@@ -64,6 +64,17 @@ begin
   e := RecordByFormID(f, nativeFormID, True);
   Result := GetLoadOrderFormID(e);
   formIDPair.Free;
+end;
+
+function AddRecordToFile(aeFile: IwbFile; asSignature: String): IInterface;
+var
+  group: IInterface;
+begin
+  if HasGroup(aeFile, asSignature) then
+    group := GroupBySignature(aeFile, asSignature)
+  else
+    group := Add(aeFile, asSignature, True);
+  Result := Add(group, asSignature, True);
 end;
 
 end.

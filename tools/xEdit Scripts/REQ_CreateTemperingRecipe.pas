@@ -1,5 +1,7 @@
 unit CreateTemperingRecipe;
 
+uses REQ_Util;
+
 
 function Initialize: Integer;
 begin
@@ -29,17 +31,6 @@ end;
 function Finalize: Integer;
 begin
 
-end;
-
-function AddRecordToFile(aeFile: IwbFile; asSignature: String): IInterface;
-var
-  group: IInterface;
-begin
-  if HasGroup(aeFile, asSignature) then
-    group := GroupBySignature(aeFile, asSignature)
-  else
-    group := Add(aeFile, asSignature, True);
-  Result := Add(group, asSignature, True);
 end;
 
 end.
