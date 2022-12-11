@@ -4,7 +4,7 @@ Requiem 5.3.0 - "Around the Fire"
 New Features
 ------------
 
-* An optional patch that integrates the following Creation Club DLCs is added.
+* An optional patch that integrates the following Creation Club DLCs is added. The vanilla integration is completely disabled.
     * Alternative Armors - Daedric Mail
     * Alternative Armors - Daedric Plate
     * Alternative Armors - Dragon Plate
@@ -43,23 +43,25 @@ New Features
     * Orcish Light
     * Netch Leather
 * Various NPCs have new armors using assets from the Creation Club. If you do not use the Creation Club patch, the armors will still be present but share their appearance with a similar vanilla model.
-    * Ulfric wears a unique stalhrim stormcloak armor.
-    * Kematu and his entourage wear a unique Alik'r armor and wield unique Alik'r weapons.
-    * Jarl Korir wears an ancient dragonscale armor.
-    * The Summerset Shadows wear a unique leather armor.
-    * Galmar wears an ancient dragonplate armor.
-    * Alain wears a unique Elven armor.
-    * Vigilant of Stendarr wear a unique iron armor. The Mage's Plate Armor assets are removed.
-    * Irileth wears a unique Vvardenfell ebony armor.
-    * Aicantar wear a unique Dwarven armor.
-    * Velehk Sain wears a unique daedric armor.
     * The Silver Hand wear a unique steel armor.
-    * Vigilant Tyranus wear a unique silver armor.
-    * Orcish chieftains wear a unique Orcish armor.
+    * Vigilants of Stendarr wear a unique iron armor. The Mage's Plate Armor assets are removed.
+    * Vigilant Tyranus wears a unique gilded armor.
+    * Keeper Carcette wears a unique steel armor.
+    * Ulfric wears a unique stalhrim stormcloak armor.
+    * The Ancient Helmet of the Unburned has a unique stalhrim model.
+    * Velehk Sain wears a unique daedric armor.
+    * Jarl Korir wears an ancient dragonscale armor and the Helm of Winterhold has a unique dragonscale model.
+    * Alain wears a unique Elven armor.
+    * Irileth wears a unique ebony armor.
     * The Halvar brothers wear a unique steel armor.
-    * The Dreamora Merchant wears a unique daedric armor.
-    * Ancient Helmet of the Unburned has a unique stalhrim model.
-    * Helm of Winterhold has a unique dragonscale model.
+    * The Dremora Merchant wears a unique daedric armor.
+    * Galmar wears an ancient dragonplate armor.
+    * Aicantar wears a unique Dwarven armor.
+    * Blood Horkers wear a unique iron armor.
+    * Summerset Shadows wear a unique leather armor.
+    * Orcish chieftains wear a unique Orcish armor.
+    * Haldyn wears a unique quicksilver armor.
+    * Kematu and his entourage wear a unique Alik'r armor and wield unique Alik'r weapons.
 * New perks are available.
     * Quarterstaff Focus 1: +10% attack speed, +7% armor penetration
     * Quarterstaff Focus 2: +20% attack speed, +14% armor penetration
@@ -100,11 +102,13 @@ Tweaks
 * The reward for retrieving Hrolfdir's Shield is an enchanted set of Dwarven armor.
 * Vigilants of Stendarr use iron weapons and shields to match their new iron armor.
 * Several encounters have proper stats, perks, and equipment.
-    * The band of Thirsk Hall
+    * Blood Horkers
     * Butcher
     * Champion of Boethiah
     * Ghunzul
+    * Haldyn
     * Linwe
+    * The band of Thirsk Hall
     * Unmid Snow-Shod
     * Velehk Sain
 * Gunmar sells Dawnguard weapons.
