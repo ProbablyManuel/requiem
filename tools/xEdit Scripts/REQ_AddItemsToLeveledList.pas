@@ -1,5 +1,7 @@
 unit AddItemsToLeveledList;
 
+uses REQ_Util;
+
 var
   newEditorID: String;
   leveledItem: IInterface;
@@ -9,7 +11,6 @@ function Initialize: Integer;
 begin
   if not InputQuery('Enter', 'EditorID', newEditorID) then
     Result := -1;
-  leveledItem := nil;
 end;
 
 
@@ -36,17 +37,6 @@ end;
 function Finalize: Integer;
 begin
 
-end;
-
-function AddRecordToFile(aeFile: IwbFile; asSignature: String): IInterface;
-var
-  group: IInterface;
-begin
-  if HasGroup(aeFile, asSignature) then
-    group := GroupBySignature(aeFile, asSignature)
-  else
-    group := Add(aeFile, asSignature, True);
-  Result := Add(group, asSignature, True);
 end;
 
 end.

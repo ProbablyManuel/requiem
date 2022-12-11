@@ -1,6 +1,6 @@
 unit RecipePatcher;
 
-uses REQ_Lookup;
+uses REQ_Util;
 
 var
   re_ignore, re_recipe, re_recipe_artifact: TPerlRegEx;

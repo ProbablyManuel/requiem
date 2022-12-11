@@ -1,6 +1,6 @@
 unit LeveledItemPatcher;
 
-uses REQ_Lookup;
+uses REQ_Util;
 
 var
   leveled_items: TStringList;

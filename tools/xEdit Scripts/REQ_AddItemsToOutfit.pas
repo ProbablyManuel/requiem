@@ -1,5 +1,7 @@
 unit AddItemsToOutfit;
 
+uses REQ_Util;
+
 var
   newEditorID: String;
   outfit: IInterface;
@@ -32,17 +34,6 @@ end;
 function Finalize: Integer;
 begin
 
-end;
-
-function AddRecordToFile(aeFile: IwbFile; asSignature: String): IInterface;
-var
-  group: IInterface;
-begin
-  if HasGroup(aeFile, asSignature) then
-    group := GroupBySignature(aeFile, asSignature)
-  else
-    group := Add(aeFile, asSignature, True);
-  Result := Add(group, asSignature, True);
 end;
 
 end.
