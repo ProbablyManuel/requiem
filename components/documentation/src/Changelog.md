@@ -4,7 +4,7 @@ Requiem 5.3.0 - "Around the Fire"
 New Features
 ------------
 
-* An optional patch that integrates the following Creation Club DLCs is added. The vanilla integration is completely disabled.
+* An optional patch that integrates the following Creation Club DLCs is added. The vanilla integration quests are fully disabled.
     * Alternative Armors - Daedric Mail
     * Alternative Armors - Daedric Plate
     * Alternative Armors - Dragon Plate
@@ -44,7 +44,7 @@ New Features
     * Netch Leather
 * Various NPCs have new armors using assets from the Creation Club. If you do not use the Creation Club patch, the armors will still be present but share their appearance with a similar vanilla model.
     * The Silver Hand wear a unique steel armor.
-    * Vigilants of Stendarr wear a unique iron armor. The Mage's Plate Armor assets are removed.
+    * Vigilants of Stendarr wear a unique iron armor. The previous Vigilant assets (Mage's Plate Armor) are removed.
     * Vigilant Tyranus wears a unique gilded armor.
     * Keeper Carcette wears a unique steel armor.
     * Ulfric wears a unique stalhrim stormcloak armor.
@@ -86,7 +86,7 @@ Tweaks
     * Stormcloak Officer: Nearby Stormcloak soldiers deal +4% damage
     * Vigilant: 12% less damage from daedra
     * Volkihar Leather: +20% more damage from Vampiric Drain
-* Atherium armor is removed. In its place Dwarven armor with the same enchantments can be found.
+* Aetherium armor is removed. In its place Dwarven armor with the same enchantments can be found.
 * Redguard clothes are reverted to clothing.
 * Ulfric's clothes are reverted to clothing.
 * Reinforced chitin armor is reverted to heavy armor.
@@ -228,7 +228,7 @@ Internal Quality Improvements (only relevant for modders)
 * LootDwarvenWeapon15 does not contain enchanted weapons.
 * LItemDawnguardWarAxe is reverted to its vanilla functionality.
 * csDraugrMissile is removed from the plugin because it's effectively an ITM.
-* Imperial meshes are moved from `Requiem\weapons\imperial\` to `PrvtI\imperial\`.
+* Imperial weapon meshes are moved from `Requiem\weapons\imperial\` to `PrvtI\imperial\`.
 
 
 Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
