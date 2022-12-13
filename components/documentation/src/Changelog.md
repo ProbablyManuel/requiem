@@ -24,7 +24,7 @@ New Features
     * Redguard Elite Armaments
     * Spell Knight Armor
     * Vigil Enforcer Armor Set
-* New weapon types are available. They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants.
+* New weapon types are available using assets from [Heavy Armory](https://www.nexusmods.com/skyrimspecialedition/mods/6308) and [Katana Crafting](https://www.nexusmods.com/skyrimspecialedition/mods/5306). They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants.
     * Tanto
     * Wakizashi
     * Katana
@@ -32,7 +32,7 @@ New Features
     * Shortsword
     * Quarterstaff
     * Club (Wood, Iron, Steel)
-* New weapons are available. They are integrated in the same manner as the other weapons from the same set.
+* New weapons are available using assets from [Heavy Armory](https://www.nexusmods.com/skyrimspecialedition/mods/6308). They are integrated in the same manner as the other weapons from the same set.
     * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
     * Dawnguard: Mace, Battleaxe
     * Forsworn: Dagger
