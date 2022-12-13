@@ -43,24 +43,24 @@ New Features
     * Orcish Light
     * Netch Leather
 * Various NPCs have new armors using assets from the Creation Club. If you do not use the Creation Club patch, the armors will still be present but share their appearance with a similar vanilla model.
-    * The Silver Hand
-    * The Vigilants of Stendarr (The previous Vigilant assets from [Mage's Plate Armor](https://www.nexusmods.com/skyrim/mods/92916) are removed)
-    * Vigilant Tyranus
+    * Aicantar
+    * Alain Dufont
+    * Galmar Stone-Fist
+    * Haldyn
+    * Irileth
+    * Jarl Korir
     * Keeper Carcette
+    * Kematu and his entourage
+    * Orcish chieftains
+    * The Blood Horkers
+    * The Dremora Merchant
+    * The Halvar brothers
+    * The Silver Hand
+    * The Summerset Shadows
+    * The Vigilants of Stendarr (The previous Vigilant assets from [Mage's Plate Armor](https://www.nexusmods.com/skyrim/mods/92916) are removed)
     * Ulfric
     * Velehk Sain
-    * Jarl Korir
-    * Alain Dufont
-    * Irileth
-    * The Halvar brothers
-    * The Dremora Merchant
-    * Galmar Stone-Fist
-    * Aicantar
-    * The Blood Horkers
-    * The Summerset Shadows
-    * Orcish chieftains
-    * Haldyn
-    * Kematu and his entourage
+    * Vigilant Tyranus
 * New perks are available.
     * Quarterstaff Focus 1: +10% attack speed, +7% armor penetration
     * Quarterstaff Focus 2: +20% attack speed, +14% armor penetration
