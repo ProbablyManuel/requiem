@@ -34,7 +34,7 @@ New Features
     * Club (Wood, Iron, Steel)
 * New weapons are available using assets from [Heavy Armory](https://www.nexusmods.com/skyrimspecialedition/mods/6308). They are integrated in the same manner as the other weapons from the same set.
     * Silver: Dagger, War Axe, Mace, Battleaxe, Warhammer
-    * Dawnguard: Mace, Battleaxe
+    * Dawnguard: Mace, Battleaxe, Quarterstaff
     * Forsworn: Dagger
 * Nordic weapons (from the Dragonborn DLC) can be crafted with Advanced Blacksmithing, and they are integrated into the mainland through loot and merchants.
 * New armor sets are available using assets from the Creation Club and [Chainmail Armor](https://www.nexusmods.com/skyrimspecialedition/mods/27340). They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants. If you do not use the Creation Club patch, the armors will still be present but share their appearance with a similar vanilla model.
