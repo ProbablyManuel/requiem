@@ -43,25 +43,24 @@ New Features
     * Orcish Light
     * Netch Leather
 * Various NPCs have new armors using assets from the Creation Club. If you do not use the Creation Club patch, the armors will still be present but share their appearance with a similar vanilla model.
-    * The Silver Hand wear a unique steel armor.
-    * Vigilants of Stendarr wear a unique iron armor. The previous Vigilant assets (Mage's Plate Armor) are removed.
-    * Vigilant Tyranus wears a unique gilded armor.
-    * Keeper Carcette wears a unique steel armor.
-    * Ulfric wears a unique stalhrim stormcloak armor.
-    * The Ancient Helmet of the Unburned has a unique stalhrim model.
-    * Velehk Sain wears a unique daedric armor.
-    * Jarl Korir wears an ancient dragonscale armor and the Helm of Winterhold has a unique dragonscale model.
-    * Alain wears a unique Elven armor.
-    * Irileth wears a unique ebony armor.
-    * The Halvar brothers wear a unique steel armor.
-    * The Dremora Merchant wears a unique daedric armor.
-    * Galmar wears an ancient dragonplate armor.
-    * Aicantar wears a unique Dwarven armor.
-    * Blood Horkers wear a unique iron armor.
-    * Summerset Shadows wear a unique leather armor.
-    * Orcish chieftains wear a unique Orcish armor.
-    * Haldyn wears a unique quicksilver armor.
-    * Kematu and his entourage wear a unique Alik'r armor and wield unique Alik'r weapons.
+    * The Silver Hand
+    * The Vigilants of Stendarr (The previous Vigilant assets from [Mage's Plate Armor](https://www.nexusmods.com/skyrim/mods/92916) are removed)
+    * Vigilant Tyranus
+    * Keeper Carcette
+    * Ulfric
+    * Velehk Sain
+    * Jarl Korir
+    * Alain Dufont
+    * Irileth
+    * The Halvar brothers
+    * The Dremora Merchant
+    * Galmar Stone-Fist
+    * Aicantar
+    * The Blood Horkers
+    * The Summerset Shadows
+    * Orcish chieftains
+    * Haldyn
+    * Kematu and his entourage
 * New perks are available.
     * Quarterstaff Focus 1: +10% attack speed, +7% armor penetration
     * Quarterstaff Focus 2: +20% attack speed, +14% armor penetration
