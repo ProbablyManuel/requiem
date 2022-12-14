@@ -79,7 +79,7 @@ Tweaks
     * Dwarven Metal: 4/6% less damage from blunt weapons
     * Glass, Ebony: 6/9% fire resistance
     * Imperial Legate: Nearby Imperial soldiers deal +4% damage
-    * Netch Leather: +2% movement speed
+    * Netch Leather, Akaviri: +2/3% movement speed
     * Quicksilver: 2/3% more spellpower
     * Stalhrim: +6/9% frost resistance
     * Stormcloak Officer: Nearby Stormcloak soldiers deal +4% damage
@@ -89,6 +89,7 @@ Tweaks
 * Redguard clothes are reverted to clothing.
 * Ulfric's clothes are reverted to clothing.
 * Reinforced chitin armor is reverted to heavy armor.
+* Blades items are renamed to Akaviri.
 * Nordic items (from the Dragonborn DLC) are renamed to Quicksilver.
 * Weapon progression is rearranged so that Quicksilver < Dwarven < Orcish.
 * Heavy armor progression is rearranged so that Dwarven < Orcish, but Orcish armor no longer provides a unique material bonus.
@@ -110,6 +111,9 @@ Tweaks
     * The band of Thirsk Hall
     * Unmid Snow-Shod
     * Velehk Sain
+* The armory chest in Sky Haven Temple contains three sets of unenchanted Blades armor and weapons and no further loot.
+* The enchanted set of Akaviri armor in Sky Haven Temple is enabled only after completing The Throat of the World.
+* Non-Akaviri armors and weapons are removed from Sky Haven Temple.
 * Gunmar sells Dawnguard weapons.
 * Torkild wears a full set of fur armor.
 * Falmer only use Falmer arrows.
