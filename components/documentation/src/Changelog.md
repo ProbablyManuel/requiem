@@ -74,7 +74,7 @@ Tweaks
     * Chaurus Chitin: +10/15% poison resistance
     * Chitin: 6/9% less damage from ranged weapons
     * Corundum: 8/12% less damage from slashing weapons
-    * Dawnguard: 12/18% less damage from Vampiric Drain and physical attacks by vampires
+    * Dawnguard: 14/21% less damage from Vampiric Drain, 7/10.5% less damage from physical attacks by vampires
     * Dragonscale, Dragonplate: 6/9% shorter shout cooldown, 6/9% less damage from the voice, immunity to Unrelenting Force at three pieces
     * Dwarven Metal: 4/6% less damage from blunt weapons
     * Glass, Ebony: 6/9% fire resistance
@@ -155,9 +155,10 @@ Tweaks
     * Imperial heavy armor requires iron instead of leather.
     * Improved crossbows require the same material as normal crossbows.
     * Nord hero weapons require corundum instead of an ancient Nord weapon.
+    * Quicksilver items require quicksilver as primary component and iron as secondary component.
     * Scale armor does not require corundum.
-    * Stalhrim heavy armor requires leather instead of quicksilver.
-    * Stalhrim light armor requires leather instead of steel.
+    * Stalhrim heavy armor does not require quicksilver.
+    * Stalhrim light armor does not require steel.
     * No items require firewood.
 * Tempering components changes:
     * Ancient Nord armor requires steel instead of iron.
@@ -192,6 +193,7 @@ Bugfixes
 --------
 
 * Critical weapon damage is always half the base damage.
+* Maces wielded by the Vigilants of Stendarr have the intended tempering bonus.
 * Enchanted weapons have the correct price.
 * Aela's Shield has the same weight as a hide shield.
 * Blade of Woe, Ebony Blade, Keening, and the Rueful Axe have the correct stagger value.
@@ -210,7 +212,7 @@ Bugfixes
 Reqtificator
 ------------
 
-* Critical damage is increased by the same factor as weapon damage.
+* Critical damage is increased by the same factor as weapon damage. Consequently, the critical damage bonus from Powerful Charge and Devastating Charge is removed.
 * Visual automerging takes template flags into account and correctly copies them into the generated patch.
 
 
