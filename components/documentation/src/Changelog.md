@@ -24,6 +24,7 @@ New Features
     * Redguard Elite Armaments
     * Spell Knight Armor
     * Vigil Enforcer Armor Set
+* All items from Rare Curios are removed.
 * New weapon types are available using assets from [Heavy Armory](https://www.nexusmods.com/skyrimspecialedition/mods/6308) and [Katana Crafting](https://www.nexusmods.com/skyrimspecialedition/mods/5306). They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants.
     * Tanto
     * Wakizashi
