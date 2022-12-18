@@ -15,6 +15,7 @@ This mod is published on NexusMods:
 * Creation Kit (you're not required to use it for modding, but you need its Papyrus Script Compiler)
 * [SSE CreationKit Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/20061) (you're not required to use it for modding, but without it you cannot save a plugin that has a regular plugin as master file)
 * [BSArch](https://www.nexusmods.com/newvegas/mods/64745)
+* [Champollion](https://www.nexusmods.com/skyrim/mods/35307) (you're not required to use it for modding, but you need it to decompile the Papyrus script source files from the Creation CLub DLCs)
 * Mod Organizer 2.x
 
 ## Setup
@@ -44,10 +45,11 @@ This mod is published on NexusMods:
         * The scripts from the include folders will not be compiled themselves, but used by the compiler to verify that the function calls and other external references in the scripts to be compiled are valid.
         * The scripts are taken from the first folder that contains the given file. The order is therefore important to select updated versions the unofficial patch over the vanilla scripts.
         * Script folders should point to the .psc script source files. They are:
-            1. USSEP base-scripts, from the `Scripts\Source` directory in the download
-            2. SKY-UI base scripts, from the `Scripts\Source` directory in the download
+            1. USSEP scripts, from the `Scripts\Source` directory in the download
+            2. SkyUI SDK scripts, from the `Scripts\Source` directory in the download on [GitHub](https://github.com/schlangster/skyui/wiki)
             3. SKSE scripts, from the `Data\Scripts\Source` directory in the download
-            4. Skyrim base scripts, all from the `Source\Scripts` directory inside `Data\scripts.zip` which comes with Skyrim.
+            4. Fishing scripts, from the `Scripts` directory inside `Data\ccBGSSSE001-Fish.bsa` which comes with Skyrim (you need to decompile the scripts yourself using Champollion)
+            5. Skyrim base scripts, from the `Source\Scripts` directory inside `Data\scripts.zip` which comes with Skyrim
     * `papyrusFailFast` - failure handling mode for the Papyrus compilation step
         * If set to true, the compilation fails upon encountering the first error.
         * If set to false, the compilation continues after the first error to accumulate all error messages.

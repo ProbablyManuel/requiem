@@ -218,63 +218,6 @@ function RunSetupBaseGame()
 
 	RiftenFisheryLockList.AddForm(ccBGSSSE001_SwimsInDeepWaters as form)
 	RiftenFisheryLockList.AddForm(ccBGSSSE001_Viriya as form)
-	LItemFoodFishList.AddForm(ccBGSSSE001_LItemFoodFishBucketFish25 as form, 1, 1)
-	LItemFoodFishList.AddForm(ccBGSSSE001_LItemFoodFishCarp25 as form, 1, 1)
-	DeathItemMudCrab01.AddForm(ccBGSSSE001_FoodCrabMeat as form, 1, 1)
-	DeathItemMudCrab02.AddForm(ccBGSSSE001_FoodCrabMeat as form, 1, 1)
-	DeathItemMudCrab03.AddForm(ccBGSSSE001_FoodCrabMeat as form, 1, 2)
-	LItemFoodInnCommon.AddForm(ccBGSSSE001_FoodBucketFishCooked as form, 1, 1)
-	LItemFoodInnCommon.AddForm(ccBGSSSE001_FoodTunaSalmonCooked as form, 1, 1)
-	LItemFoodInnCommon.AddForm(ccBGSSSE001_FoodCuckooCatfishCooked as form, 1, 1)
-	LItemFoodInnCommon10.AddForm(ccBGSSSE001_FoodBucketFishCooked as form, 1, 1)
-	LItemFoodInnCommon10.AddForm(ccBGSSSE001_FoodTunaSalmonCooked as form, 1, 1)
-	LItemFoodInnCommon10.AddForm(ccBGSSSE001_FoodCuckooCatfishCooked as form, 1, 1)
-	LItemClothesWork.AddForm(ccBGSSSE001_ClothesFishingBoots as form, 1, 1)
-	LItemClothesWork.AddForm(ccBGSSSE001_ClothesFishingClothes as form, 1, 1)
-	LItemClothesWork.AddForm(ccBGSSSE001_ClothesFishingHat as form, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesFishingBoots as form, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesFishingClothes as form, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesFishingHat as form, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_MudcrabAmuletUnenchanted as form, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesCollegeBootsVagrant as form, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesCollegeHoodVagrant as form, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrant as form, 1, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration01 as form, 1, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration02 as form, 10, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration03 as form, 20, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration04 as form, 30, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration05 as form, 40, 1)
-	LootToolRandom05.AddForm(ccBGSSSE001_FishingRodImperialWeap as form, 1, 1)
-	LItemMiscVendorMiscItems75.AddForm(ccBGSSSE001_FishingRodImperialWeap as form, 1, 1)
-	BYOHLItemKhajiitCaravans.AddForm(ccBGSSSE001_FishingMapsAll as form, 1, 3)
-	LItemBook0All.AddForm(ccBGSSSE001_LineAndLure as form, 1, 1)
-	LItemBookClutter.AddForm(ccBGSSSE001_LineAndLure as form, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMace as form, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMace as form, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMace as form, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMace as form, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 12, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 13, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 14, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 15, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 15, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 21, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 22, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 23, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned as form, 24, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammer as form, 1, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammer as form, 1, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammer as form, 1, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammer as form, 1, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 12, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 13, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 14, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 15, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 15, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 21, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 22, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 23, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned as form, 24, 1)
 	Int upgradeListLength = ccBGSSSE001_BYOHAllFishingSpecificUpgradeMiscItems.GetSize()
 	Int i = 0
 	while i < upgradeListLength
@@ -310,14 +253,4 @@ endFunction
 
 function RunDetectDLC()
 
-	formlist survivalRawMeatList = game.GetFormFromFile(2224, "ccQDRSSE001-SurvivalMode.esl") as formlist
-	if survivalRawMeatList
-		Int i = 0
-		while i < rawFish.length
-			if !survivalRawMeatList.HasForm(rawFish[i] as form)
-				survivalRawMeatList.AddForm(rawFish[i] as form)
-			endIf
-			i += 1
-		endWhile
-	endIf
 endFunction
