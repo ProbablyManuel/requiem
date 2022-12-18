@@ -57,6 +57,14 @@ Create tempering recipes for the selected armors and weapons.
 The recipes are created in the same file as the selected items. The created recipes do not have an EditorID or ingredients and conditions. Use [REQ_NameRecipe.pas](#REQ_NameRecipepas) and [REQ_RecipePatcher.pas](#REQ_RecipePatcherpas) to generate them.
 
 
+REQ_ExportIngredients.pas
+-------------------------
+
+Export the effects of the selected ingredient to a csv file.
+
+The comma-separated values are effect/mangitude/duration/ingredient and the lines are lexicographically sorted.
+
+
 REQ_LeveledItemPatcher.pas
 --------------------------
 
