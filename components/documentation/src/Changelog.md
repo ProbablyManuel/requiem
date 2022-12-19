@@ -92,6 +92,7 @@ Tweaks
 * Redguard clothes are reverted to clothing.
 * Ulfric's clothes are reverted to clothing.
 * Reinforced chitin armor is reverted to heavy armor.
+* Armor chest pieces are called cuirass instead of armor.
 * Blades items are renamed to Akaviri.
 * Nordic items (from the Dragonborn DLC) are renamed to Quicksilver.
 * Weapon progression is rearranged so that Quicksilver < Dwarven < Orcish.

@@ -72,13 +72,21 @@ Set content of the selected leveled items based on `REQ_LeveledItemPatcher.txt`.
 
 `REQ_LeveledItemPatcher.txt` maps leveled list identifiers to triplets of level, reference, and count. Leveled lists are identified by EditorID and must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#leveled-item-lvli-records). The identifier is automatically extracted from a leveled list's full EditorID which may include any mod prefix (not just "REQ"). Values in the triplet should be exactly as displayed in xEdit's GUI with the exception of formids which must be of the form `Skyrim.esm:034CDD`.
 
+
+REQ_ListArmorVariants.pas
+-------------------------
+
+List all armor variants among the select armors.
+
+Armors are identified by EditorID and must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#armor-clothing-and-jewelry-armo-records). An armor variant is defined as an armor whose EditorID is specialized with a suffix, e.g. `Light_Imperial_Body_Studded`.
+
+
 REQ_Name1stPersonWeapon.pas
 ---------------------------
 
 Set the EditorID of the selected 1st person weapon models based on the referencing weapon.
 
 The referencing weapon must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#weapon-weap-records).
-
 
 
 REQ_NameAfterFullName.pas
