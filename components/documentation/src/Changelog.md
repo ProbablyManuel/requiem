@@ -25,6 +25,7 @@ New Features
     * Spell Knight Armor
     * Vigil Enforcer Armor Set
 * Basic support for Survival Mode is added. Food poisoning, advanced diseases, and the initial health and carry weight penalties are disabled in favor of Requiem's existing systems. All other Survival Mode features work as designed. However, Survival Mode has not been rebalanced and should only be enabled at the user's discretion.
+* Fishing is integrated.
 * All items from Rare Curios are removed.
 * New weapon types are available using assets from [Heavy Armory](https://www.nexusmods.com/skyrimspecialedition/mods/6308) and [Katana Crafting](https://www.nexusmods.com/skyrimspecialedition/mods/5306). They can be crafted with the respective material perk, and they are integrated into the world through loot and merchants.
     * Tanto
