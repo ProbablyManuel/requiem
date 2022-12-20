@@ -52,7 +52,7 @@ open class PublishCSharpTask : DefaultTask() {
 
     @TaskAction
     fun taskAction() {
-        val args = (listOf("dotnet", "publish", projectName, "-r", "win-x64", "-o", "$targetDirectory", "-c", "release")
+        val args = (listOf("dotnet", "publish", projectName, "-r", "win-x64", "--self-contained", "-o", "$targetDirectory", "-c", "release")
             + if (warningsAsErrors) listOf("-warnaserror") else listOf())
         if (!runProcess(args, solutionFolder)) throw GradleException("C# project '$projectName' failed to publish!")
     }
