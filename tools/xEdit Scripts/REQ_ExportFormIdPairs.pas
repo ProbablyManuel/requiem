@@ -1,4 +1,4 @@
-unit SaveFormIdPair;
+unit ExportFormIdPairs;
 
 var
   formIdPairs: TStringList;
@@ -7,24 +7,25 @@ var
 function Initialize: Integer;
 begin
   formIdPairs := TStringList.Create;
+  formIdPairs.Sorted := True;
+  formIdPairs.Duplicates := dupIgnore;
 end;
 
 function Process(e: IInterface): integer;
 var
-  identifier, fixedFormId, plugin: String;
+  fixedFormId: Integer;
+  plugin, s: String;
 begin
-  // identifier := GetElementNativeValues(e, 'FULL');
-  identifier := EditorID(e);
-  fixedFormId := IntToHex(GetLoadOrderFormID(e) mod $1000000, 6);
+  if EditorID(e) = '' then Exit;
+  fixedFormId := GetLoadOrderFormID(e) mod $1000000;
   plugin := GetFileName(GetFile(MasterOrSelf(e)));
-  formIdPairs.Add(Format('%s=%s:%s', [identifier, fixedFormId, plugin]));
+  formIdPairs.Add(Format('%s=%s:%.6x', [EditorID(e), plugin, fixedFormId]));
 end;
 
 function Finalize: Integer;
 var
   dlgSave: TSaveDialog;
 begin
-  formIdPairs.Sort;
   if formIdPairs.Count > 0 then begin
     dlgSave := TSaveDialog.Create(nil);
     dlgSave.Options := dlgSave.Options + [ofOverwritePrompt];
