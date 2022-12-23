@@ -1,7 +1,7 @@
 unit ExportFormIdPairs;
 
 var
-  formIdPairs: TStringList;
+  formIdPairs, signatures: TStringList;
 
 
 function Initialize: Integer;
@@ -9,6 +9,14 @@ begin
   formIdPairs := TStringList.Create;
   formIdPairs.Sorted := True;
   formIdPairs.Duplicates := dupIgnore;
+
+  signatures := TStringList.Create;
+  signatures.Add('ARMO');
+  signatures.Add('INGR');
+  signatures.Add('MISC');
+  signatures.Add('PERK');
+  signatures.Add('SLGM');
+  signatures.Add('WEAP');
 end;
 
 function Process(e: IInterface): integer;
@@ -16,7 +24,7 @@ var
   fixedFormId: Integer;
   plugin, s: String;
 begin
-  if EditorID(e) = '' then Exit;
+  if signatures.IndexOf(Signature(e)) = -1 then Exit;
   fixedFormId := GetLoadOrderFormID(e) mod $1000000;
   plugin := GetFileName(GetFile(MasterOrSelf(e)));
   formIdPairs.Add(Format('%s=%s:%.6x', [EditorID(e), plugin, fixedFormId]));
