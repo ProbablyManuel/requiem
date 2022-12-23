@@ -7,42 +7,14 @@ from strict_dict import strict_dict
 
 name_to_form = {
     "Amber": "ccBGSSSE025-AdvDSGS.esm:000BC7",
-    "Black Soul Gem": "Skyrim.esm:02E500",
     "Bone Meal": "Skyrim.esm:034CDD",
     "Charcoal": "Skyrim.esm:033760",
     "Chaurus Chitin": "Skyrim.esm:03AD57",
     "Chitin Plate": "Dragonborn.esm:02B04E",
     "Corundum": "Skyrim.esm:05AD93",
-    "Daedra Heart": "Skyrim.esm:03AD5B",
     "Dragon Bone": "Skyrim.esm:03ADA4",
     "Dragon Scale": "Skyrim.esm:03ADA3",
     "Dwarven": "Skyrim.esm:0DB8A2",
-    "Ebony Battleaxe": "Skyrim.esm:0139AC",
-    "Ebony Battlestaff": "Requiem.esp:06B47E",
-    "Ebony Body": "Skyrim.esm:013961",
-    "Ebony Bow": "Skyrim.esm:0139AD",
-    "Ebony Club": "Skyrim.esm:000000",
-    "Ebony Crossbow": "Requiem.esp:8F7F90",
-    "Ebony Dagger": "Skyrim.esm:0139AE",
-    "Ebony DaiKatana": "Requiem.esp:ADDE11",
-    "Ebony Feet": "Skyrim.esm:013960",
-    "Ebony Greatsword": "Skyrim.esm:0139AF",
-    "Ebony Hands": "Skyrim.esm:013962",
-    "Ebony Hatchet": "Skyrim.esm:000000",
-    "Ebony Head": "Skyrim.esm:013963",
-    "Ebony Katana": "Requiem.esp:ADDE0E",
-    "Ebony LongMace": "Skyrim.esm:000000",
-    "Ebony Mace": "Skyrim.esm:0139B0",
-    "Ebony Maul": "Skyrim.esm:000000",
-    "Ebony Quarterstaff": "Requiem.esp:ADDF28",
-    "Ebony Shield": "Skyrim.esm:013964",
-    "Ebony Shortsword": "Requiem.esp:ADDEF6",
-    "Ebony Smithing": "Skyrim.esm:0CB412",
-    "Ebony Sword": "Skyrim.esm:0139B1",
-    "Ebony Tanto": "Requiem.esp:ADDE10",
-    "Ebony Wakizashi": "Requiem.esp:ADDE0F",
-    "Ebony WarAxe": "Skyrim.esm:0139AB",
-    "Ebony Warhammer": "Skyrim.esm:0139B2",
     "Ebony": "Skyrim.esm:05AD9D",
     "Ectoplasm": "Skyrim.esm:03AD63",
     "Gold": "Skyrim.esm:05AD9E",
@@ -267,9 +239,9 @@ for armor_set, materials in armor_materials.iterrows():
 for armor_part in armor_quantities.index:
     editor_id = f'Forge_Heavy_Daedric_{armor_part}'
     ingredients = [
-        f'{name_to_form["Ebony " + armor_part]},1',
-        f'{name_to_form["Daedra Heart"]},1',
-        f'{name_to_form["Black Soul Gem"]},1',
+        f'{form_id_pair_by_editor_id("REQ_Heavy_Ebony_" + armor_part)},1',
+        f'{form_id_pair_by_editor_id("DaedraHeart")},1',
+        f'{form_id_pair_by_editor_id("SoulGemBlack")},1',
     ]
     ingredients.sort(key=ingredients_sort_key)
     conditions = get_conditions("Daedric Smithing", editor_id)
@@ -316,10 +288,14 @@ for weapon_set, materials in weapon_materials.iterrows():
         recipes_conditions[editor_id] = conditions
 for weapon_type in weapon_quantities.index:
     editor_id = f'Forge_Weapon_Daedric_{weapon_type}'
+    try:
+        ebony_item = form_id_pair_by_editor_id(f'REQ_Weapon_Ebony_{weapon_type}')
+    except KeyError:
+        ebony_item = "Skyrim.esm:000000"
     ingredients = [
-        f'{name_to_form["Ebony " + weapon_type]},1',
-        f'{name_to_form["Daedra Heart"]},1',
-        f'{name_to_form["Black Soul Gem"]},1',
+        f'{ebony_item},1',
+        f'{form_id_pair_by_editor_id("DaedraHeart")},1',
+        f'{form_id_pair_by_editor_id("SoulGemBlack")},1',
     ]
     ingredients.sort(key=ingredients_sort_key)
     conditions = get_conditions("Daedric Smithing", editor_id)
