@@ -193,6 +193,7 @@ Tweaks
 * Battlestaves have a consistent stats progression.
 * Weapon prices are always rounded to the nearest multiple of 5.
 * Armor weight is not rounded.
+* Textures are distributed in a compressed BSA to reduce storage size.
 
 Bugfixes
 --------
