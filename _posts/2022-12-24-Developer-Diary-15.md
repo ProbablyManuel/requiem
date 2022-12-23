@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Creation Club, GitHub, and New Year’s Eve"
+author: ProbablyManuel
+---
+Hi Requiem enthusiasts,
+
+It’s been a while since the last Requiem update and you are probably wondering where Requiem 5.3.0 is. The good news is that the release is almost finished and will be published before New Year’s Eve barring the code base spontaneously bursting into flames. The longer development time is, besides some personal turbulences this summer, primarily the result of expanding the release scope in two areas. (The announced release scope was to repopulate Requiem with suitable assets as replacement for the armors and weapons that were removed prior to the SSE port due to quality and lore concerns.)
+
+First, after thoughtful consideration I decided to begin integrating Creation Club DLCs into Requiem. In particular, the new armors in this release use assets from the Creation Club instead of mods from the Nexus. I will discuss this in more detail below, but to get this out of the way now: **Requiem will not require any paid Creation Club DLCs**. Integration of the Creation Club DLCs is offered in an optional patch that can be selected in the fomod installer.
+
+Second, when drafting the integration of the new armors and weapons I faced an obstacle in defining what materials crafting and tempering recipes should use, and how the items should be added to leveled lists because even existing items do not follow any consistent rules. What’s more, many of the tasks required to implement new items and tweak existing ones are tedious and error prone. Therefore, I realized it is worth taking the time to automate some of these workflows by writing handy xEdit scripts.
+
+# Creation Club
+
+You may be wondering about my reasons to integrate Creation Club DLCs into Requiem after I announced in the [Roadmap to Requiem 6.0.0]({{ site.baseurl }}{% post_url 2022-05-12-Developer-Diary-14 %}) that I do not plan to provide official support. 
+
+Despite skepticism towards the Creation Club from some parts of the community (including me), the Anniversary Edition upgrade is quite successfully. Based on the load orders I see from support requests, which is the closest I have to empirical data on Requiem users, the majority of players who are using the latest version of Skyrim also have all Creation Club DLCs installed, i.e., all 74 DLCs and not just the 4 freebies. The Creation Club offers more than 20 armor DLCs and while the integration and balance of the new armors is often questionable, the quality of the assets themselves matches or exceeds the base game. This aligns very well with the specification that new assets should not include custom textures to ensure Requiem is agnostic towards the user’s graphical setup and to keep the download size small. Therefore, I decided the best course of action is to seize the opportunity and commit to the Creation Club with this release.
+
+To achieve a seamless integration of the Creation Club content I will not shy away from making sweeping changes to the default integration and repurpose the assets for Requiem’s purposes. For the armor DLCs covered by this release this entailed fully disabling the vanilla integration quests because most of them are ridiculously unbalanced (e.g., dragonscale armor guarded by a lousy skeleton). While some of the quests are alright, they are all part of a larger narrative and partial edits require significantly more effort than outright removal and offer little return.
+
+As mentioned in the beginning, Creation Club support is offered in an optional patch that can be selected in the fomod installer. Having said this, the optional patch will be considered the default installation. If the technical limitations of maintaining a modular installation require a suboptimal outcome for one of the versions, the Creation Club version will be favored. More specifically, the best solution to keep the armor implementation maintainable was to define and distribute all new armors in `Requiem.esp` and then the optional patch only redirects the armor models to the Creation Club file paths. This means without the optional patch you will still encounter all new armors in the game, but they share their appearance with the most closely related vanilla model.
+
+# GitHub
+
+Alongside this blog post, the repository has been published on [GitHub]({{site.github.repository_url}}) and the documentation has been moved to the [GitHub Wiki]({{site.github.repository_url}}/wiki). (The blog post you are reading right now is hosted via GitHub too.) The old Confluence pages and the JIRA issue tracker will be discontinued.
+
+I am now using the issue tracker on GitHub for development. However, I’d prefer if you continue reporting bugs on the Nexus or Discord and let me add the bug to an appropriate place in the issue tracker. Having a separate issue/pull request for every minor bug represents a lot of overhead because plugins are not text files and therefore do not play well with a version control system. And to those who are about to peruse the issue tracker: Please do not equate the issue tracker with a priority list. A lot of it is just backlog that is not scheduled to be worked on soon and the described expected outcome may undergo revisions before being added to an upcoming release.
+
+You can also find my [xEdit scripts on GitHub]({{site.github.repository_url}}/tree/main/tools/xEdit%20Scripts#readme). I added basic usage instructions for each script as they may be of value to other mod authors too. The most interesting innovation is that all armor and weapon stats and recipes and the most commonly used leveled lists are automatically generated instead of relying on manual edits. This enabled a swift integration of the novel items afterwards and greatly reduces future development efforts. But the arguably most valuable result is that this automated workflow eliminates human error inherent to repetitive manual tasks.
