@@ -1,6 +1,7 @@
 import pandas as pd
 import sys
 
+from lookup import form_id_pair_to_load_order_form_id
 from strict_dict import strict_dict
 
 
@@ -74,17 +75,10 @@ name_to_form = {
     "Wood": "Skyrim.esm:06F993",
 }
 
-load_order_index = {
-    "Skyrim.esm": "00",
-    "Dragonborn.esm": "04",
-    "ccBGSSSE025-AdvDSGS.esm": "0C",
-    "Requiem.esp": "11",
-}
 
-
-def pair_to_load_order_form_id(pair: str):
-    plugin, form_id = pair.split(":")
-    return load_order_index[plugin] + form_id
+def ingredients_sort_key(s: str) -> str:
+    form_id_pair, quantity = s.split(",")
+    return f'{form_id_pair_to_load_order_form_id(form_id_pair)},{quantity}'
 
 
 def get_conditions(perk: str, editor_id: str) -> str:
@@ -269,7 +263,7 @@ for armor_set, materials in armor_materials.iterrows():
                 ingredients.append(f'{name_to_form["Netch Jelly"]},1')
                 ingredients.append(f'{name_to_form["Stalhrim"]},1')
                 ingredients.append(f'{name_to_form["Void Salts"]},1')
-            ingredients.sort(key=pair_to_load_order_form_id)
+            ingredients.sort(key=ingredients_sort_key)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
@@ -284,7 +278,7 @@ for armor_part in armor_quantities.index:
         f'{name_to_form["Daedra Heart"]},1',
         f'{name_to_form["Black Soul Gem"]},1',
     ]
-    ingredients.sort(key=pair_to_load_order_form_id)
+    ingredients.sort(key=ingredients_sort_key)
     conditions = get_conditions("Daedric Smithing", editor_id)
     recipes_ingredients[editor_id] = ",".join(ingredients)
     recipes_conditions[editor_id] = conditions
@@ -319,7 +313,7 @@ for weapon_set, materials in weapon_materials.iterrows():
             if pd.notna(materials["Secondary"]):
                 ingredients.append(
                     f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
-            ingredients.sort(key=pair_to_load_order_form_id)
+            ingredients.sort(key=ingredients_sort_key)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
@@ -334,7 +328,7 @@ for weapon_type in weapon_quantities.index:
         f'{name_to_form["Daedra Heart"]},1',
         f'{name_to_form["Black Soul Gem"]},1',
     ]
-    ingredients.sort(key=pair_to_load_order_form_id)
+    ingredients.sort(key=ingredients_sort_key)
     conditions = get_conditions("Daedric Smithing", editor_id)
     recipes_ingredients[editor_id] = ",".join(ingredients)
     recipes_conditions[editor_id] = conditions

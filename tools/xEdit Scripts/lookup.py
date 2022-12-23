@@ -732,6 +732,6 @@ load_order = [
 ]
 
 
-def form_id_pair_to_load_order_form_id(form_id_pair: str) -> int:
+def form_id_pair_to_load_order_form_id(form_id_pair: str) -> str:
     plugin, fixed_form_id = form_id_pair.split(":")
-    return load_order.index(plugin) * 0x1000000 + int(fixed_form_id, 16)
+    return f'{load_order.index(plugin):02x}{fixed_form_id}'
