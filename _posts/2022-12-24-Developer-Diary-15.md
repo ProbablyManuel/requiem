@@ -5,7 +5,7 @@ author: ProbablyManuel
 ---
 Hi Requiem enthusiasts,
 
-It’s been a while since the last Requiem update, and you are probably wondering where Requiem 5.3.0 is. The good news is that the release is almost finished and will be published before New Year’s Eve barring the code base spontaneously bursting into flames. The longer development time is, besides some personal turbulences this summer, primarily the result of expanding the release scope in two areas. (The announced release scope was to repopulate Requiem with suitable assets as replacement for the armors and weapons that were removed prior to the SSE port due to quality and lore concerns.)
+It’s been a while since the last Requiem update, and you are probably wondering where Requiem 5.3.0 is. The good news is that the release is almost finished and will be published before New Year’s Eve barring the code base spontaneously bursting into flames. The longer development time is, besides some personal distractions this summer, primarily the result of expanding the release scope in two areas. (The announced release scope was to repopulate Requiem with suitable assets as replacement for the armors and weapons that were removed prior to the SSE port due to quality and lore concerns.)
 
 First, after thoughtful consideration I decided to begin integrating Creation Club DLCs into Requiem. In particular, the new armors in this release use assets from the Creation Club instead of mods from the Nexus. I will discuss this in more detail below, but to get this out of the way now: **Requiem will not require any paid Creation Club DLCs**. Integration of the Creation Club DLCs is offered in an optional patch that can be selected in the fomod installer.
 
