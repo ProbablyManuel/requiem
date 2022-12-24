@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creation Club, GitHub, and New Year’s Eve"
+title: "Creation Club, GitHub, and Requiem 5.3.0"
 author: ProbablyManuel
 ---
 Hi Requiem enthusiasts,
