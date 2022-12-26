@@ -2,8 +2,8 @@ import itertools
 import json
 import pandas as pd
 
+import lookup
 from strict_dict import strict_dict
-from lookup import editor_id_to_form, form_id_pair_to_load_order_form_id
 
 
 armor_parts = pd.read_excel(
@@ -22,17 +22,20 @@ with open("patcher_data/leveled_weapon.json") as fh:
 leveled_items = strict_dict()
 
 
-def generate_leveled_items(editor_id: str, quantities: dict[str: int], item_slots: list[str]):
+def generate_leveled_items(editor_id: str,
+                           quantities: dict[str: int],
+                           item_slots: list[str]):
     for item_slot in item_slots:
         items = []
         for item_type_and_set, count in quantities.items():
+            item_editor_id = f'REQ_{item_type_and_set}_{item_slot}'
             try:
-                form = editor_id_to_form[f'{item_type_and_set}_{item_slot}']
+                form = lookup.form_by_editor_id(item_editor_id)
             except KeyError:
                 continue
             data = ["1", form, "1"]
             items += [data.copy() for _ in range(count)]
-        items.sort(key=lambda x: form_id_pair_to_load_order_form_id(x[1]))
+        items.sort(key=lambda x: lookup.form_to_load_order_form_id(x[1]))
         key = editor_id.replace("{item_slot}", item_slot)
         value = ",".join(itertools.chain.from_iterable(items))
         leveled_items[key] = value
