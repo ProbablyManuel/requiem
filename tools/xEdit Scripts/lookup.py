@@ -10,7 +10,7 @@ def _read_form_id_pairs(path: str) -> dict[str, str]:
     return editor_id_to_form
 
 
-_form_id_pair_by_editor_id = _read_form_id_pairs("patcher_data\\FormIdPairs.txt")
+_form_id_pair_by_editor_id = _read_form_id_pairs("patcher_data\\FormsByEditorID.txt")
 
 _load_order = [
     "Skyrim.esm",
