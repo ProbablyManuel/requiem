@@ -12,6 +12,9 @@ Perk Property Regeneration Auto
 
 Spell Property PlayerWerewolfAbility Auto
 
+Spell Property AetheriumMaterialBonus Auto
+Spell Property OrcishMaterialBonus Auto
+
 Function initScript(Int currentVersion, Int nevVersion)
     If currentVersion > 0
         If currentVersion <= 50100 && nevVersion >= 50101
@@ -65,6 +68,8 @@ EndFunction
 
 Function Apply_5_2_3_to_5_3_0_fixes()
     If Player.HasPerk(HeavyArmorMaterialBonus)
+        Player.RemoveSpell(AetheriumMaterialBonus)
+        Player.RemoveSpell(OrcishMaterialBonus)
         Player.RemovePerk(HeavyArmorMaterialBonus)
         Player.AddPerk(HeavyArmorMaterialBonus)
     EndIf
