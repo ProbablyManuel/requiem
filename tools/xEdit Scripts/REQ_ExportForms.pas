@@ -31,10 +31,13 @@ begin
   if signatures.IndexOf(Signature(e)) = -1 then Exit;
   fixedFormId := GetLoadOrderFormID(e) mod $1000000;
   plugin := GetFileName(GetFile(MasterOrSelf(e)));
-  byEditorID.Add(Format('%s=%s:%.6x', [EditorID(e), plugin, fixedFormId]));
+  byEditorID.Add(Format('%s,%s:%.6x', [EditorID(e), plugin, fixedFormId]));
   fullName := GetElementNativeValues(e, 'FULL - Name');
   if fullName <> '' then
-    byFullName.Add(Format('%s=%s:%.6x', [fullName, plugin, fixedFormId]));
+    if pos(',', fullName) <> 0 then
+      byFullName.Add(Format('"%s",%s:%.6x', [fullName, plugin, fixedFormId]))
+    else
+      byFullName.Add(Format('%s,%s:%.6x', [fullName, plugin, fixedFormId]));
 end;
 
 function Finalize: Integer;
@@ -42,8 +45,8 @@ var
   targetDir: String;
 begin
   targetDir := DataPath + '\tools\xEdit Scripts\patcher_data\';
-  byEditorID.SaveToFile(targetDir + 'FormsByEditorID.txt');
-  byFullName.SaveToFile(targetDir + 'FormsByFullName.txt');
+  byEditorID.SaveToFile(targetDir + 'FormsByEditorID.csv');
+  byFullName.SaveToFile(targetDir + 'FormsByFullName.csv');
   byEditorID.Free;
   byFullName.Free;
 end;

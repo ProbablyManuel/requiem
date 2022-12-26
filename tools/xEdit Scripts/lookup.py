@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def _read_form_by_editor_id(path: str) -> dict[str, str]:
-    s = pd.read_csv(path, sep="=", header=None, index_col=0).squeeze()
+    s = pd.read_csv(path, header=None, index_col=0).squeeze()
     s.set_flags(allows_duplicate_labels=False)
     return s
 
@@ -13,14 +13,14 @@ def _read_form_by_full_name(path: str) -> dict[str, str]:
         "Skyrim.esm:043E27",  # Wylandriah's Orichalcum Ingot
         "Skyrim.esm:0BFB09",  # Alternate Charcoal
     ]
-    s = pd.read_csv(path, sep="=", header=None, index_col=0).squeeze()
+    s = pd.read_csv(path, header=None, index_col=0).squeeze()
     s = s[~s.isin(ignore)]
     s = s[~s.index.duplicated(keep=False)]
     return s
 
 
-_form_by_editor_id = _read_form_by_editor_id("patcher_data\\FormsByEditorID.txt")
-_form_by_full_name = _read_form_by_full_name("patcher_data\\FormsByFullName.txt")
+_form_by_editor_id = _read_form_by_editor_id("patcher_data\\FormsByEditorID.csv")
+_form_by_full_name = _read_form_by_full_name("patcher_data\\FormsByFullName.csv")
 
 _load_order = [
     "Skyrim.esm",
