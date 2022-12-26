@@ -1,13 +1,10 @@
-from strict_dict import strict_dict
+import pandas as pd
 
 
 def _read_form_id_pairs(path: str) -> dict[str, str]:
-    with open(path) as fh:
-        editor_id_to_form = strict_dict()
-        for line in fh:
-            key, value = line.rstrip().split("=")
-            editor_id_to_form[key] = value
-    return editor_id_to_form
+    s = pd.read_csv(path, sep="=", header=None, index_col=0).squeeze()
+    s.set_flags(allows_duplicate_labels=False)
+    return s
 
 
 _form_id_pair_by_editor_id = _read_form_id_pairs("patcher_data\\FormsByEditorID.txt")
