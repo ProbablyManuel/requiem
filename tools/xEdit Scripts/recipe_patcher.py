@@ -1,39 +1,8 @@
 import pandas as pd
 import sys
 
-from lookup import form_by_editor_id, form_to_load_order_form_id
+from lookup import form_by_editor_id, form_by_full_name, form_to_load_order_form_id
 from strict_dict import strict_dict
-
-
-name_to_form = {
-    "Amber": form_by_editor_id("ccBGSSSE025_IngotAmber"),
-    "Bone Meal": form_by_editor_id("BoneMeal"),
-    "Charcoal": form_by_editor_id("Charcoal"),
-    "Chaurus Chitin": form_by_editor_id("ChaurusChitin"),
-    "Chitin Plate": form_by_editor_id("DLC2ChitinPlate"),
-    "Corundum": form_by_editor_id("IngotCorundum"),
-    "Dragon Bone": form_by_editor_id("DragonBone"),
-    "Dragon Scale": form_by_editor_id("DragonScales"),
-    "Dwarven": form_by_editor_id("IngotDwarven"),
-    "Ebony": form_by_editor_id("IngotEbony"),
-    "Ectoplasm": form_by_editor_id("Ectoplasm"),
-    "Gold": form_by_editor_id("IngotGold"),
-    "Iron": form_by_editor_id("IngotIron"),
-    "Leather Strips": form_by_editor_id("LeatherStrips"),
-    "Leather": form_by_editor_id("Leather01"),
-    "Madness": form_by_editor_id("ccBGSSSE025_IngotMadness"),
-    "Malachite": form_by_editor_id("IngotMalachite"),
-    "Moonstone": form_by_editor_id("IngotIMoonstone"),
-    "Netch Jelly": form_by_editor_id("DLC2NetchJelly"),
-    "Netch Leather": form_by_editor_id("DLC2NetchLeather"),
-    "Orichalcum": form_by_editor_id("IngotOrichalcum"),
-    "Quicksilver": form_by_editor_id("IngotQuicksilver"),
-    "Silver": form_by_editor_id("ingotSilver"),
-    "Stalhrim": form_by_editor_id("DLC2OreStalhrim"),
-    "Steel": form_by_editor_id("IngotSteel"),
-    "Void Salts": form_by_editor_id("VoidSalts"),
-    "Wood": form_by_editor_id("Firewood01"),
-}
 
 
 def ingredients_sort_key(s: str) -> str:
@@ -218,23 +187,23 @@ for armor_set, materials in armor_materials.iterrows():
             else:
                 editor_id = f'Forge_{armor_set}_{armor_part}'
             ingredients = [
-                f'{name_to_form[materials["Primary"]]},{quantities["Primary"]}',
-                f'{name_to_form[materials["Leather"]]},{quantities["Leather"]}',
+                f'{form_by_full_name(materials["Primary"])},{quantities["Primary"]}',
+                f'{form_by_full_name(materials["Leather"])},{quantities["Leather"]}',
             ]
             if pd.notna(materials["Secondary"]):
                 ingredients.append(
-                    f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
+                    f'{form_by_full_name(materials["Secondary"])},{quantities["Secondary"]}')
             if armor_set == "Heavy_ImprovedBonemold":
-                ingredients.append(f'{name_to_form["Netch Jelly"]},1')
-                ingredients.append(f'{name_to_form["Stalhrim"]},1')
-                ingredients.append(f'{name_to_form["Void Salts"]},1')
+                ingredients.append(f'{form_by_editor_id("DLC2NetchJelly")},1')
+                ingredients.append(f'{form_by_editor_id("DLC2OreStalhrim")},1')
+                ingredients.append(f'{form_by_editor_id("VoidSalts")},1')
             ingredients.sort(key=ingredients_sort_key)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
         editor_id = f'Temper_{armor_set}_{armor_part}'
         conditions = get_conditions(materials["Perk"], editor_id)
-        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]},1'
+        recipes_ingredients[editor_id] = f'{form_by_full_name(materials["Temper"])},1'
         recipes_conditions[editor_id] = conditions
 for armor_part in armor_quantities.index:
     editor_id = f'Forge_Heavy_Daedric_{armor_part}'
@@ -272,19 +241,19 @@ for weapon_set, materials in weapon_materials.iterrows():
             else:
                 editor_id = f'Forge_Weapon_{weapon_set}_{weapon_type}'
             ingredients = [
-                f'{name_to_form[materials["Primary"]]},{quantities["Primary"]}',
-                f'{name_to_form["Leather Strips"]},{quantities["Leather"]}',
+                f'{form_by_full_name(materials["Primary"])},{quantities["Primary"]}',
+                f'{form_by_full_name("Leather Strips")},{quantities["Leather"]}',
             ]
             if pd.notna(materials["Secondary"]):
                 ingredients.append(
-                    f'{name_to_form[materials["Secondary"]]},{quantities["Secondary"]}')
+                    f'{form_by_full_name(materials["Secondary"])},{quantities["Secondary"]}')
             ingredients.sort(key=ingredients_sort_key)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
         editor_id = f'Temper_Weapon_{weapon_set}_{weapon_type}'
         conditions = get_conditions(materials["Perk"], editor_id)
-        recipes_ingredients[editor_id] = f'{name_to_form[materials["Temper"]]},1'
+        recipes_ingredients[editor_id] = f'{form_by_full_name(materials["Temper"])},1'
         recipes_conditions[editor_id] = conditions
 for weapon_type in weapon_quantities.index:
     editor_id = f'Forge_Weapon_Daedric_{weapon_type}'

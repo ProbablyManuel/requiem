@@ -7,7 +7,20 @@ def _read_form_by_editor_id(path: str) -> dict[str, str]:
     return s
 
 
+def _read_form_by_full_name(path: str) -> dict[str, str]:
+    ignore = [
+        "Dragonborn.esm:03CF16",  # Non-playable firewood
+        "Skyrim.esm:043E27",  # Wylandriah's Orichalcum Ingot
+        "Skyrim.esm:0BFB09",  # Alternate Charcoal
+    ]
+    s = pd.read_csv(path, sep="=", header=None, index_col=0).squeeze()
+    s = s[~s.isin(ignore)]
+    s = s[~s.index.duplicated(keep=False)]
+    return s
+
+
 _form_by_editor_id = _read_form_by_editor_id("patcher_data\\FormsByEditorID.txt")
+_form_by_full_name = _read_form_by_full_name("patcher_data\\FormsByFullName.txt")
 
 _load_order = [
     "Skyrim.esm",
@@ -98,6 +111,10 @@ _load_order = [
 
 def form_by_editor_id(editor_id: str) -> str:
     return _form_by_editor_id[editor_id]
+
+
+def form_by_full_name(full_name: str) -> str:
+    return _form_by_full_name[full_name]
 
 
 def form_to_load_order_form_id(form: str) -> str:
