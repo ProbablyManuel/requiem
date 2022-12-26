@@ -57,12 +57,20 @@ Create tempering recipes for the selected armors and weapons.
 The recipes are created in the same file as the selected items. The created recipes do not have an EditorID or ingredients and conditions. Use [REQ_NameRecipe.pas](#REQ_NameRecipepas) and [REQ_RecipePatcher.pas](#REQ_RecipePatcherpas) to generate them.
 
 
+REQ_ExportForms.pas
+-------------------------
+
+Export the EditorID and full name of the selected forms to two csv files.
+
+The comma-separated values are EditorID,formid and name,formid respectively. Formids are represented in the form `Skyrim.esm:034CDD`. All versions of a record are exported, i.e., if the EditorID/name of a record is changed by an overriding plugin, both the old and new version are exported for this record.
+
+
 REQ_ExportIngredients.pas
 -------------------------
 
 Export the effects of the selected ingredient to a csv file.
 
-The comma-separated values are effect/mangitude/duration/ingredient and the lines are lexicographically sorted.
+The comma-separated values are effect,mangitude,duration,ingredient and the lines are lexicographically sorted.
 
 
 REQ_LeveledItemPatcher.pas
