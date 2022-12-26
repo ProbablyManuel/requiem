@@ -1,18 +1,18 @@
 import pandas as pd
 import sys
 
-from lookup import form_by_editor_id, form_by_full_name, form_to_load_order_form_id
+import lookup
 from strict_dict import strict_dict
 
 
 def ingredients_sort_key(s: str) -> str:
     form, quantity = s.split(",")
-    return f'{form_to_load_order_form_id(form)},{quantity}'
+    return f'{lookup.form_to_load_order_form_id(form)},{quantity}'
 
 
 def get_smithing_perk(smithing_perk: str):
     editor_id = f'REQ_Smithing_{smithing_perk.replace(" ", "")}'
-    return form_by_editor_id(editor_id)
+    return lookup.form_by_editor_id(editor_id)
 
 
 def get_conditions(perk: str, editor_id: str) -> str:
@@ -44,7 +44,7 @@ def get_conditions(perk: str, editor_id: str) -> str:
     elif perk == "Dwarven Smithing":
         if editor_id.startswith("Temper"):
             conditions = [
-                f'10010000,1.000000,HasPerk,{form_by_editor_id("REQ_Reward_AncientKnowledge_Perk")},0,Subject',
+                f'10010000,1.000000,HasPerk,{lookup.form_by_editor_id("REQ_Reward_AncientKnowledge_Perk")},0,Subject',
                 f'10000000,1.000000,HasPerk,{get_smithing_perk("Dwarven Smithing")},0,Subject',
             ]
         else:
@@ -187,30 +187,30 @@ for armor_set, materials in armor_materials.iterrows():
             else:
                 editor_id = f'Forge_{armor_set}_{armor_part}'
             ingredients = [
-                f'{form_by_full_name(materials["Primary"])},{quantities["Primary"]}',
-                f'{form_by_full_name(materials["Leather"])},{quantities["Leather"]}',
+                f'{lookup.form_by_full_name(materials["Primary"])},{quantities["Primary"]}',
+                f'{lookup.form_by_full_name(materials["Leather"])},{quantities["Leather"]}',
             ]
             if pd.notna(materials["Secondary"]):
                 ingredients.append(
-                    f'{form_by_full_name(materials["Secondary"])},{quantities["Secondary"]}')
+                    f'{lookup.form_by_full_name(materials["Secondary"])},{quantities["Secondary"]}')
             if armor_set == "Heavy_ImprovedBonemold":
-                ingredients.append(f'{form_by_editor_id("DLC2NetchJelly")},1')
-                ingredients.append(f'{form_by_editor_id("DLC2OreStalhrim")},1')
-                ingredients.append(f'{form_by_editor_id("VoidSalts")},1')
+                ingredients.append(f'{lookup.form_by_editor_id("DLC2NetchJelly")},1')
+                ingredients.append(f'{lookup.form_by_editor_id("DLC2OreStalhrim")},1')
+                ingredients.append(f'{lookup.form_by_editor_id("VoidSalts")},1')
             ingredients.sort(key=ingredients_sort_key)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
         editor_id = f'Temper_{armor_set}_{armor_part}'
         conditions = get_conditions(materials["Perk"], editor_id)
-        recipes_ingredients[editor_id] = f'{form_by_full_name(materials["Temper"])},1'
+        recipes_ingredients[editor_id] = f'{lookup.form_by_full_name(materials["Temper"])},1'
         recipes_conditions[editor_id] = conditions
 for armor_part in armor_quantities.index:
     editor_id = f'Forge_Heavy_Daedric_{armor_part}'
     ingredients = [
-        f'{form_by_editor_id("REQ_Heavy_Ebony_" + armor_part)},1',
-        f'{form_by_editor_id("DaedraHeart")},1',
-        f'{form_by_editor_id("SoulGemBlack")},1',
+        f'{lookup.form_by_editor_id("REQ_Heavy_Ebony_" + armor_part)},1',
+        f'{lookup.form_by_editor_id("DaedraHeart")},1',
+        f'{lookup.form_by_editor_id("SoulGemBlack")},1',
     ]
     ingredients.sort(key=ingredients_sort_key)
     conditions = get_conditions("Daedric Smithing", editor_id)
@@ -241,30 +241,30 @@ for weapon_set, materials in weapon_materials.iterrows():
             else:
                 editor_id = f'Forge_Weapon_{weapon_set}_{weapon_type}'
             ingredients = [
-                f'{form_by_full_name(materials["Primary"])},{quantities["Primary"]}',
-                f'{form_by_full_name("Leather Strips")},{quantities["Leather"]}',
+                f'{lookup.form_by_full_name(materials["Primary"])},{quantities["Primary"]}',
+                f'{lookup.form_by_full_name("Leather Strips")},{quantities["Leather"]}',
             ]
             if pd.notna(materials["Secondary"]):
                 ingredients.append(
-                    f'{form_by_full_name(materials["Secondary"])},{quantities["Secondary"]}')
+                    f'{lookup.form_by_full_name(materials["Secondary"])},{quantities["Secondary"]}')
             ingredients.sort(key=ingredients_sort_key)
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
         editor_id = f'Temper_Weapon_{weapon_set}_{weapon_type}'
         conditions = get_conditions(materials["Perk"], editor_id)
-        recipes_ingredients[editor_id] = f'{form_by_full_name(materials["Temper"])},1'
+        recipes_ingredients[editor_id] = f'{lookup.form_by_full_name(materials["Temper"])},1'
         recipes_conditions[editor_id] = conditions
 for weapon_type in weapon_quantities.index:
     editor_id = f'Forge_Weapon_Daedric_{weapon_type}'
     try:
-        ebony_item = form_by_editor_id(f'REQ_Weapon_Ebony_{weapon_type}')
+        ebony_item = lookup.form_by_editor_id(f'REQ_Weapon_Ebony_{weapon_type}')
     except KeyError:
         ebony_item = "Skyrim.esm:000000"
     ingredients = [
         f'{ebony_item},1',
-        f'{form_by_editor_id("DaedraHeart")},1',
-        f'{form_by_editor_id("SoulGemBlack")},1',
+        f'{lookup.form_by_editor_id("DaedraHeart")},1',
+        f'{lookup.form_by_editor_id("SoulGemBlack")},1',
     ]
     ingredients.sort(key=ingredients_sort_key)
     conditions = get_conditions("Daedric Smithing", editor_id)
