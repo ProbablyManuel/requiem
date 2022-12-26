@@ -1,49 +1,49 @@
 import pandas as pd
 import sys
 
-from lookup import form_id_pair_by_editor_id, form_id_pair_to_load_order_form_id
+from lookup import form_by_editor_id, form_to_load_order_form_id
 from strict_dict import strict_dict
 
 
 name_to_form = {
-    "Amber": form_id_pair_by_editor_id("ccBGSSSE025_IngotAmber"),
-    "Bone Meal": form_id_pair_by_editor_id("BoneMeal"),
-    "Charcoal": form_id_pair_by_editor_id("Charcoal"),
-    "Chaurus Chitin": form_id_pair_by_editor_id("ChaurusChitin"),
-    "Chitin Plate": form_id_pair_by_editor_id("DLC2ChitinPlate"),
-    "Corundum": form_id_pair_by_editor_id("IngotCorundum"),
-    "Dragon Bone": form_id_pair_by_editor_id("DragonBone"),
-    "Dragon Scale": form_id_pair_by_editor_id("DragonScales"),
-    "Dwarven": form_id_pair_by_editor_id("IngotDwarven"),
-    "Ebony": form_id_pair_by_editor_id("IngotEbony"),
-    "Ectoplasm": form_id_pair_by_editor_id("Ectoplasm"),
-    "Gold": form_id_pair_by_editor_id("IngotGold"),
-    "Iron": form_id_pair_by_editor_id("IngotIron"),
-    "Leather Strips": form_id_pair_by_editor_id("LeatherStrips"),
-    "Leather": form_id_pair_by_editor_id("Leather01"),
-    "Madness": form_id_pair_by_editor_id("ccBGSSSE025_IngotMadness"),
-    "Malachite": form_id_pair_by_editor_id("IngotMalachite"),
-    "Moonstone": form_id_pair_by_editor_id("IngotIMoonstone"),
-    "Netch Jelly": form_id_pair_by_editor_id("DLC2NetchJelly"),
-    "Netch Leather": form_id_pair_by_editor_id("DLC2NetchLeather"),
-    "Orichalcum": form_id_pair_by_editor_id("IngotOrichalcum"),
-    "Quicksilver": form_id_pair_by_editor_id("IngotQuicksilver"),
-    "Silver": form_id_pair_by_editor_id("ingotSilver"),
-    "Stalhrim": form_id_pair_by_editor_id("DLC2OreStalhrim"),
-    "Steel": form_id_pair_by_editor_id("IngotSteel"),
-    "Void Salts": form_id_pair_by_editor_id("VoidSalts"),
-    "Wood": form_id_pair_by_editor_id("Firewood01"),
+    "Amber": form_by_editor_id("ccBGSSSE025_IngotAmber"),
+    "Bone Meal": form_by_editor_id("BoneMeal"),
+    "Charcoal": form_by_editor_id("Charcoal"),
+    "Chaurus Chitin": form_by_editor_id("ChaurusChitin"),
+    "Chitin Plate": form_by_editor_id("DLC2ChitinPlate"),
+    "Corundum": form_by_editor_id("IngotCorundum"),
+    "Dragon Bone": form_by_editor_id("DragonBone"),
+    "Dragon Scale": form_by_editor_id("DragonScales"),
+    "Dwarven": form_by_editor_id("IngotDwarven"),
+    "Ebony": form_by_editor_id("IngotEbony"),
+    "Ectoplasm": form_by_editor_id("Ectoplasm"),
+    "Gold": form_by_editor_id("IngotGold"),
+    "Iron": form_by_editor_id("IngotIron"),
+    "Leather Strips": form_by_editor_id("LeatherStrips"),
+    "Leather": form_by_editor_id("Leather01"),
+    "Madness": form_by_editor_id("ccBGSSSE025_IngotMadness"),
+    "Malachite": form_by_editor_id("IngotMalachite"),
+    "Moonstone": form_by_editor_id("IngotIMoonstone"),
+    "Netch Jelly": form_by_editor_id("DLC2NetchJelly"),
+    "Netch Leather": form_by_editor_id("DLC2NetchLeather"),
+    "Orichalcum": form_by_editor_id("IngotOrichalcum"),
+    "Quicksilver": form_by_editor_id("IngotQuicksilver"),
+    "Silver": form_by_editor_id("ingotSilver"),
+    "Stalhrim": form_by_editor_id("DLC2OreStalhrim"),
+    "Steel": form_by_editor_id("IngotSteel"),
+    "Void Salts": form_by_editor_id("VoidSalts"),
+    "Wood": form_by_editor_id("Firewood01"),
 }
 
 
 def ingredients_sort_key(s: str) -> str:
-    form_id_pair, quantity = s.split(",")
-    return f'{form_id_pair_to_load_order_form_id(form_id_pair)},{quantity}'
+    form, quantity = s.split(",")
+    return f'{form_to_load_order_form_id(form)},{quantity}'
 
 
 def get_smithing_perk(smithing_perk: str):
     editor_id = f'REQ_Smithing_{smithing_perk.replace(" ", "")}'
-    return form_id_pair_by_editor_id(editor_id)
+    return form_by_editor_id(editor_id)
 
 
 def get_conditions(perk: str, editor_id: str) -> str:
@@ -75,7 +75,7 @@ def get_conditions(perk: str, editor_id: str) -> str:
     elif perk == "Dwarven Smithing":
         if editor_id.startswith("Temper"):
             conditions = [
-                f'10010000,1.000000,HasPerk,{form_id_pair_by_editor_id("REQ_Reward_AncientKnowledge_Perk")},0,Subject',
+                f'10010000,1.000000,HasPerk,{form_by_editor_id("REQ_Reward_AncientKnowledge_Perk")},0,Subject',
                 f'10000000,1.000000,HasPerk,{get_smithing_perk("Dwarven Smithing")},0,Subject',
             ]
         else:
@@ -239,9 +239,9 @@ for armor_set, materials in armor_materials.iterrows():
 for armor_part in armor_quantities.index:
     editor_id = f'Forge_Heavy_Daedric_{armor_part}'
     ingredients = [
-        f'{form_id_pair_by_editor_id("REQ_Heavy_Ebony_" + armor_part)},1',
-        f'{form_id_pair_by_editor_id("DaedraHeart")},1',
-        f'{form_id_pair_by_editor_id("SoulGemBlack")},1',
+        f'{form_by_editor_id("REQ_Heavy_Ebony_" + armor_part)},1',
+        f'{form_by_editor_id("DaedraHeart")},1',
+        f'{form_by_editor_id("SoulGemBlack")},1',
     ]
     ingredients.sort(key=ingredients_sort_key)
     conditions = get_conditions("Daedric Smithing", editor_id)
@@ -289,13 +289,13 @@ for weapon_set, materials in weapon_materials.iterrows():
 for weapon_type in weapon_quantities.index:
     editor_id = f'Forge_Weapon_Daedric_{weapon_type}'
     try:
-        ebony_item = form_id_pair_by_editor_id(f'REQ_Weapon_Ebony_{weapon_type}')
+        ebony_item = form_by_editor_id(f'REQ_Weapon_Ebony_{weapon_type}')
     except KeyError:
         ebony_item = "Skyrim.esm:000000"
     ingredients = [
         f'{ebony_item},1',
-        f'{form_id_pair_by_editor_id("DaedraHeart")},1',
-        f'{form_id_pair_by_editor_id("SoulGemBlack")},1',
+        f'{form_by_editor_id("DaedraHeart")},1',
+        f'{form_by_editor_id("SoulGemBlack")},1',
     ]
     ingredients.sort(key=ingredients_sort_key)
     conditions = get_conditions("Daedric Smithing", editor_id)

@@ -1,13 +1,13 @@
 import pandas as pd
 
 
-def _read_form_id_pairs(path: str) -> dict[str, str]:
+def _read_form_by_editor_id(path: str) -> dict[str, str]:
     s = pd.read_csv(path, sep="=", header=None, index_col=0).squeeze()
     s.set_flags(allows_duplicate_labels=False)
     return s
 
 
-_form_id_pair_by_editor_id = _read_form_id_pairs("patcher_data\\FormsByEditorID.txt")
+_form_by_editor_id = _read_form_by_editor_id("patcher_data\\FormsByEditorID.txt")
 
 _load_order = [
     "Skyrim.esm",
@@ -96,10 +96,10 @@ _load_order = [
 ]
 
 
-def form_id_pair_by_editor_id(editor_id: str) -> str:
-    return _form_id_pair_by_editor_id[editor_id]
+def form_by_editor_id(editor_id: str) -> str:
+    return _form_by_editor_id[editor_id]
 
 
-def form_id_pair_to_load_order_form_id(form_id_pair: str) -> str:
-    plugin, fixed_form_id = form_id_pair.split(":")
+def form_to_load_order_form_id(form: str) -> str:
+    plugin, fixed_form_id = form.split(":")
     return f'{_load_order.index(plugin):02x}{fixed_form_id}'
