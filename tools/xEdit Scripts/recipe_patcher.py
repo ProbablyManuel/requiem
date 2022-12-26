@@ -10,85 +10,80 @@ def ingredients_sort_key(s: str) -> str:
     return f'{lookup.form_to_load_order_form_id(form)},{quantity}'
 
 
-def get_smithing_perk(smithing_perk: str):
-    editor_id = f'REQ_Smithing_{smithing_perk.replace(" ", "")}'
-    return lookup.form_by_editor_id(editor_id)
-
-
 def get_conditions(perk: str, editor_id: str) -> str:
     if perk == "Amber Smithing":
         conditions = [
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Glass Smithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Glass Smithing")},0,Subject',
             "10000000,1.000000,GetGlobalValue,ccBGSSSE025-AdvDSGS.esm:000C02,00 00 00 00,Subject",
         ]
     elif perk == "Daedric Smithing":
         conditions = [
             "01000000,23.000000,GetCurrentTime,00 00 00 00,00 00 00 00,Subject",
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Daedric Smithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Daedric Smithing")},0,Subject',
         ]
     elif perk == "Dark Smithing":
         conditions = [
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Daedric Smithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Daedric Smithing")},0,Subject',
             "10000000,1.000000,GetGlobalValue,ccBGSSSE025-AdvDSGS.esm:00086C,00 00 00 00,Subject",
         ]
     elif perk == "Dragonbone Smithing":
         conditions = [
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Ebony Smithing")},0,Subject',
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Draconic Blacksmithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Ebony Smithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Draconic Blacksmithing")},0,Subject',
         ]
     elif perk == "Dragonscale Smithing":
         conditions = [
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Glass Smithing")},0,Subject',
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Draconic Blacksmithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Glass Smithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Draconic Blacksmithing")},0,Subject',
         ]
     elif perk == "Dwarven Smithing":
         if editor_id.startswith("Temper"):
             conditions = [
                 f'10010000,1.000000,HasPerk,{lookup.form_by_editor_id("REQ_Reward_AncientKnowledge_Perk")},0,Subject',
-                f'10000000,1.000000,HasPerk,{get_smithing_perk("Dwarven Smithing")},0,Subject',
+                f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Dwarven Smithing")},0,Subject',
             ]
         else:
             conditions = [
-                f'10000000,1.000000,HasPerk,{get_smithing_perk("Dwarven Smithing")},0,Subject'
+                f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Dwarven Smithing")},0,Subject'
             ]
     elif perk == "Golden Smithing":
         conditions = [
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Daedric Smithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Daedric Smithing")},0,Subject',
             "10000000,1.000000,GetGlobalValue,ccBGSSSE025-AdvDSGS.esm:00086B,00 00 00 00,Subject",
         ]
     elif perk == "Improved Bonemold Smithing":
         conditions = [
             "10000000,1.000000,GetGlobalValue,Dragonborn.esm:03AB27,00 00 00 00,Subject",
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Craftsmanship")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Craftsmanship")},0,Subject',
         ]
     elif perk == "Madness Smithing":
         conditions = [
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Ebony Smithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Ebony Smithing")},0,Subject',
             "10000000,1.000000,GetGlobalValue,ccBGSSSE025-AdvDSGS.esm:000C03,00 00 00 00,Subject",
         ]
     elif perk == "Morrowind Smithing":
         conditions = [
             "10000000,1.000000,GetStageDone,Dragonborn.esm:017F8E,20,Subject",
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Craftsmanship")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Craftsmanship")},0,Subject',
         ]
     elif perk == "Skyforge Smithing":
         if not editor_id.startswith("Temper"):
             conditions = [
                 "10000000,1.000000,GetGlobalValue,Skyrim.esm:0F46D1,00 00 00 00,Subject",
-                f'10000000,1.000000,HasPerk,{get_smithing_perk("Craftsmanship")},0,Subject',
+                f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Craftsmanship")},0,Subject',
             ]
         else:
             conditions = [
-                f'10000000,1.000000,HasPerk,{get_smithing_perk("Craftsmanship")},0,Subject'
+                f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Craftsmanship")},0,Subject'
             ]
     elif perk == "Stalhrim Smithing":
         conditions = [
             "10000000,1.000000,GetStageDone,Dragonborn.esm:01CAF1,200,Subject",
-            f'10000000,1.000000,HasPerk,{get_smithing_perk("Ebony Smithing")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Ebony Smithing")},0,Subject',
         ]
     else:
         conditions = [
-            f'10000000,1.000000,HasPerk,{get_smithing_perk(perk)},0,Subject'
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name(perk)},0,Subject'
         ]
     if editor_id.endswith("Weapon_Dawnguard_Crossbow"):
         conditions.append(
