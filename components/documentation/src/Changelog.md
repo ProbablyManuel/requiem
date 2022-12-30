@@ -115,7 +115,7 @@ Tweaks
     * The band of Thirsk Hall
     * Unmid Snow-Shod
     * Velehk Sain
-* The armory chest in Sky Haven Temple contains three sets of unenchanted Blades armor and weapons and no further loot.
+* The armory chest in Sky Haven Temple contains three sets of unenchanted Akaviri armor and weapons and no further loot.
 * The enchanted set of Akaviri armor in Sky Haven Temple is enabled only after completing The Throat of the World.
 * Non-Akaviri armors and weapons are removed from Sky Haven Temple.
 * Gunmar sells Dawnguard weapons.
@@ -230,7 +230,7 @@ Internal Quality Improvements (only relevant for modders)
 * Standard weapons have a common prefix "Weapon" in their EditorID.
 * Weapon artifacts do not have the weapon type in their EditorID.
 * EditorID of ancient Nord weapons matches their name.
-* Several unused weapons are nullified.
+* Various unused records are nullified.
 * Duplicate Orc stronghold outfits are nullified.
 * REQ_ArmorUnion_Chitin is deprecated. Morag Tong armor shares its armor set keyword with chitin light armor.
 * Enchanted Dawnguard crossbows do not use the improved crossbow as base weapon. (The enchanted improved crossbows are currently unused.)
