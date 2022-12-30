@@ -7,7 +7,7 @@ Hi Requiem enthusiasts,
 
 This release features new armors and weapons as replacement for the assets that were removed prior to the SSE port due to quality and lore concerns. Additionally, it marks the first step at integrating the Creation Club DLCs into Requiem. For the full list of changes, please refer to the [changelog]({{site.github.repository_url}}/blob/main/components/documentation/src/Changelog.md#requiem-530---around-the-fire).
 
-For the motivation behind the Creation Club integration, please read the previous blog post [Creation Club, GitHub, and Requiem 5.3.0]({{ site.baseurl }}{% post_url 2022-12-24-Developer-Diary-15 %}).
+**Requiem can still be used without any paid Creation Club DLCs**. Integration of the Creation Club DLCs is offered in an optional patch that can be selected in the fomod installer. Thus far, 19 armor DLCs are supported. For the motivation behind the Creation Club integration, please read the previous blog post [Creation Club, GitHub, and Requiem 5.3.0]({{ site.baseurl }}{% post_url 2022-12-24-Developer-Diary-15 %}).
 
 # New armors
 
@@ -18,9 +18,9 @@ Four new light armors are added to the game using assets from the Creation Club 
 * Orcish Light
 * Netch Leather
 
-They each have a unique material bonus and therefore greatly increase the variety of mid-level light armors. The armors can be crafted with the respective material perk, and they are integrated into the world through loot and merchants.
+They each have a unique material bonus and therefore greatly increase the variety of mid-level light armors to provide a similar range of choices as heavy armors. The armors can be crafted with the respective material perk, and they are integrated into the world through loot and merchants.
 
-The remaining armors from the Creation Club are used to enhance visual storytelling. All NPCs who used to wear a custom armor in older versions of Requiem and many others who represent a prominent position or faction now boast a unique armor.
+The remaining armors from the Creation Club (15 heavy and 5 light) are used to enhance visual storytelling. All NPCs who used to wear a custom armor in older versions of Requiem and many others who represent a prominent position or faction now boast a unique armor.
 
 Alongside the new armors, the unique material bonuses first introduced in Requiem 5.1.0 have been rebalanced to address current shortcomings. [This document]({{site.github.repository_url}}/blob/main/tools/Notes/Creation%20Club.pdf) describes the integration and most related armor tweaks in more detail.
 
@@ -54,5 +54,3 @@ The main concern with the Aetherium armor is that its existence would have a maj
 > **Forge something? With what?** “*There isn’t any Aetherium here, is there? Damn it! Wait!... Yes, yes there is. The shards we collected... they’re pure Aetherium, remember? It’s not much, but it’ll do. With them, and the materials in this room, we should have everything we need.*”
 >
 > **Do you think there’s more Aetherium somewhere?** “*I don’t know. I honestly don’t know. After all these years, it’s a miracle even this much survived. Make it count. This may be the only chance we ever get to use the Forge.*”
-
-Another concern is that the visual design of the armor embodies the power armor from the Fallout franchise. (Originally, the armor mod was called “Dwarven Dwemer Power Armor”.) While the mod does a good job of presenting the armor as Dwarven-made, it was still perceived as awkward by some players, and I personally do not care about such explicit references to other franchises either.
