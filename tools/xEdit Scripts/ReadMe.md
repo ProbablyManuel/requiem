@@ -102,7 +102,7 @@ REQ_NameAfterFullName.pas
 
 Set the EditorID of the selected records based on their full names.
 
-The script prompts the user to enter a prefix that will be prepended to all EditorIDs. Then, the name (subrecord 'FULL - Names') is processed by concatenating all words in upper camel case and removing apostrophes. For example, choosing the prefix "REQ\_Artifact\_" for "Gadnor's Staff of Charming" results in the EditorID `REQ_Artifact_GadnorsStaffOfCharming`.
+The script prompts the user to enter a prefix that will be prepended to all EditorIDs. Then, the name (subrecord 'FULL - Names') is processed by concatenating all words in upper camel case and removing apostrophes and hyphens. For example, choosing the prefix "REQ\_Artifact\_" for "Gadnor's Staff of Charming" results in the EditorID `REQ_Artifact_GadnorsStaffOfCharming`.
 
 
 REQ_NameArmor.pas
