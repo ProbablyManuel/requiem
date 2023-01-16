@@ -22,6 +22,7 @@ begin
   for i := 0 to Pred(words.Count) do begin
     word := words[i];
     word := StringReplace(word, '''', '', [rfReplaceAll]);
+    word := StringReplace(word, '-', '', [rfReplaceAll]);
     word := UpperCase(word[1]) + Copy(word, 2, Length(word));
     newEditorID := newEditorID + word;
   end;

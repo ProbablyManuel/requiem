@@ -44,7 +44,7 @@ function Finalize: Integer;
 var
   targetDir: String;
 begin
-  targetDir := DataPath + '\tools\xEdit Scripts\patcher_data\';
+  targetDir := DataPath + 'tools\xEdit Scripts\patcher_data\';
   byEditorID.SaveToFile(targetDir + 'FormsByEditorID.csv');
   byFullName.SaveToFile(targetDir + 'FormsByFullName.csv');
   byEditorID.Free;
