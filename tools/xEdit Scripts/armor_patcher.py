@@ -1,6 +1,5 @@
 import math
 import pandas as pd
-import sys
 
 from strict_dict import strict_dict
 
@@ -33,13 +32,10 @@ armor_extras = pd.read_excel(
         "Armor Rating",
         "Weight",
         "Gold"]).convert_dtypes()
-if len(sys.argv) == 2:
-    armor_variants = pd.read_csv(
-        sys.argv[1],
-        header=None,
-        index_col=0).convert_dtypes().squeeze()
-else:
-    armor_variants = pd.Series(dtype=str)
+armor_variants = pd.read_excel(
+    "patcher_data/Armor.xlsx",
+    sheet_name="Patches",
+    index_col=0).convert_dtypes().dropna(how="all")
 
 
 def get_armor_rating(set_armor_rating: int, part: str) -> float:
@@ -118,10 +114,18 @@ for artifact, rows in armor_artifacts.iterrows():
     if pd.notna(rows["Gold"]):
         stats["Gold"] = rows["Gold"]
     armor_stats[editor_id] = stats
-for variant, template in armor_variants.items():
+for variant, rows in armor_variants.iterrows():
     for armor_part in ("Head", "Feet", "Hands", "Body", "Shield"):
         editor_id = f'{variant}_{armor_part}'
-        armor_stats[editor_id] = armor_stats[f'{template}_{armor_part}']
+        stats = armor_stats[f'{rows["Base"]}_{armor_part}'].copy()
+        if pd.notna(rows["Armor Rating"]):
+            stats["Armor Rating"] += get_armor_rating(
+                rows["Armor Rating"], armor_part)
+        if pd.notna(rows["Weight"]):
+            stats["Weight"] += get_weight(rows["Weight"], armor_part)
+        if pd.notna(rows["Gold"]):
+            stats["Gold"] += get_gold(rows["Gold"], armor_part)
+        armor_stats[editor_id] = stats
 
 
 with open("REQ_ArmorPatcher.txt", "w") as fh:

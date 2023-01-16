@@ -164,8 +164,6 @@ armor_patcher.py
 
 Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](patcher_data#armor).
 
-The script can be invoked by dragging a custom text file onto it to provide easy integration of third-party armors. The file must contain lines of the form "Heavy_Runic,Heavy_Steel" where the first value is a new armor set and the second value is an existing armor set. This ensures armors with EditorID `<prefix>_Heavy_Runic_<part>` will be treated as steel armor. Due to a library limitation the file must contain at least two lines.
-
 
 leveled_item_patcher.py
 ----------------
@@ -199,5 +197,3 @@ weapon_patcher.py
 -----------------
 
 Generates `REQ_WeaponPatcher.txt` based on the data in [Weapon.xlsx](patcher_data#weapon).
-
-The script can be invoked by dragging a custom text file onto it to provide easy integration of third-party weapons. The file must contain lines of the form "Weapon_Runic,Weapon_Steel" where the first value is a new weapon set and the second value is an existing weapon set. This ensures weapons with EditorID `<prefix>_Weapon_Runic_<type>` will be treated as steel weapons. Due to a library limitation the file must contain at least two lines.

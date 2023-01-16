@@ -1,5 +1,4 @@
 import pandas as pd
-import sys
 
 import lookup
 from strict_dict import strict_dict
@@ -123,17 +122,12 @@ armor_artifacts = pd.read_excel(
     "patcher_data/Armor.xlsx",
     sheet_name="Artifacts",
     index_col=0,
-    usecols=[
-        "Unnamed: 0",
-        "Base",
-        "Divine"]).convert_dtypes().dropna()
-if len(sys.argv) == 3:
-    armor_variants = pd.read_csv(
-        sys.argv[1],
-        header=None,
-        index_col=0).convert_dtypes().squeeze()
-else:
-    armor_variants = pd.Series(dtype=str)
+    usecols=["Unnamed: 0", "Base", "Divine"]).convert_dtypes().dropna()
+armor_variants = pd.read_excel(
+    "patcher_data/Armor.xlsx",
+    sheet_name="Patches",
+    index_col=0,
+    usecols=["Unnamed: 0", "Base"]).convert_dtypes().dropna().squeeze()
 
 weapon_materials = pd.read_excel(
     "patcher_data/Weapon.xlsx",
@@ -158,17 +152,12 @@ weapon_artifacts = pd.read_excel(
     "patcher_data/Weapon.xlsx",
     sheet_name="Artifacts",
     index_col=0,
-    usecols=[
-        "Unnamed: 0",
-        "Base",
-        "Divine"]).convert_dtypes().dropna()
-if len(sys.argv) == 3:
-    weapon_variants = pd.read_csv(
-        sys.argv[2],
-        header=None,
-        index_col=0).convert_dtypes().squeeze()
-else:
-    weapon_variants = pd.Series(dtype=str)
+    usecols=["Unnamed: 0", "Base", "Divine"]).convert_dtypes().dropna()
+weapon_variants = pd.read_excel(
+    "patcher_data/Weapon.xlsx",
+    sheet_name="Patches",
+    index_col=0,
+    usecols=["Unnamed: 0", "Base"]).convert_dtypes().dropna().squeeze()
 
 
 recipes_ingredients = strict_dict()
@@ -222,11 +211,17 @@ for artifact, rows in armor_artifacts.iterrows():
     recipes_conditions[editor_id] = conditions
 for variant, template in armor_variants.items():
     for armor_part in armor_quantities.index:
-        for crafting_type in ("Forge", "Temper"):
-            editor_id = f'{crafting_type}_{variant}_{armor_part}'
-            template_key = f'{crafting_type}_{template}_{armor_part}'
+        try:
+            editor_id = f'Forge_{variant}_{armor_part}'
+            template_key = f'Forge_{template}_{armor_part}'
             recipes_ingredients[editor_id] = recipes_ingredients[template_key]
             recipes_conditions[editor_id] = recipes_conditions[template_key]
+        except KeyError:
+            pass
+        editor_id = f'Temper_{variant}_{armor_part}'
+        template_key = f'Temper_{template}_{armor_part}'
+        recipes_ingredients[editor_id] = recipes_ingredients[template_key]
+        recipes_conditions[editor_id] = recipes_conditions[template_key]
 
 for weapon_set, materials in weapon_materials.iterrows():
     for weapon_type, quantities in weapon_quantities.iterrows():
@@ -276,11 +271,18 @@ for artifact, rows in weapon_artifacts.iterrows():
     recipes_conditions[editor_id] = conditions
 for variant, template in weapon_variants.items():
     for armor_part in weapon_quantities.index:
-        for crafting_type in ("Forge", "Temper"):
-            editor_id = f'{crafting_type}_Weapon_{variant}_{armor_part}'
-            template_key = f'{crafting_type}_Weapon_{template}_{armor_part}'
+        try:
+            editor_id = f'Forge_Weapon_{variant}_{armor_part}'
+            template_key = f'Forge_Weapon_{template}_{armor_part}'
             recipes_ingredients[editor_id] = recipes_ingredients[template_key]
             recipes_conditions[editor_id] = recipes_conditions[template_key]
+        except KeyError:
+            pass
+        editor_id = f'Temper_Weapon_{variant}_{armor_part}'
+        template_key = f'Temper_Weapon_{template}_{armor_part}'
+        recipes_ingredients[editor_id] = recipes_ingredients[template_key]
+        recipes_conditions[editor_id] = recipes_conditions[template_key]
+
 
 with open("REQ_RecipePatcherIngredients.txt", "w") as fh:
     for editor_id, ingredients in sorted(recipes_ingredients.items()):

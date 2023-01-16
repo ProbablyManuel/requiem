@@ -50,6 +50,15 @@ Artifacts
 * _Gold_ denotes the price of the artifact.
 * _Divine_ denotes whether tempering the artifact requires Legendary Blacksmithing.
 
+Patches
+-------
+
+* The first column denotes the armor type and set of the third-party armor.
+* _Base_ denotes the template (`<type>_<set>`) of the third-party armor.
+* _Armor Rating_ denotes the armor rating offset to the template.
+* _Weight_ denotes the weight offset to the template.
+* _Gold_ denotes the price offset to the artifact.
+
 Weapon
 ======
 
@@ -92,6 +101,7 @@ Artifacts
 ---------
 
 * The first column denotes the name of the artifact.
+* _Base_ denotes the template (`<set>_<type>`) of the artifact.
 * _Damage_ denotes the damage offset to the template.
 * _Weight_ denotes the weight offset to the template.
 * _Gold_ denotes the price of the artifact.
@@ -99,6 +109,18 @@ Artifacts
 * _Reach_ denotes the reach offset to the template.
 * _Stagger_ denotes the stagger offset to the template.
 * _Divine_ denotes whether tempering the artifact requires Legendary Blacksmithing.
+
+Patches
+-------
+
+* The first column denotes the name of the third-party weapon.
+* _Base_ denotes the template (`<set>_<type>`) of the third-party weapon.
+* _Damage_ denotes the damage offset to the template.
+* _Weight_ denotes the weight offset to the template.
+* _Gold_ denotes the price multiplier to the template.
+* _Speed_ denotes the speed offset to the template.
+* _Reach_ denotes the reach offset to the template.
+* _Stagger_ denotes the stagger offset to the template.
 
 Leveled Lists
 =============

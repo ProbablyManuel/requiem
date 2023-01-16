@@ -1,5 +1,4 @@
 import pandas as pd
-import sys
 
 from strict_dict import strict_dict
 
@@ -30,13 +29,10 @@ weapon_artifacts = pd.read_excel(
         "Speed",
         "Reach",
         "Stagger"]).convert_dtypes().dropna(how="all")
-if len(sys.argv) == 2:
-    weapon_variants = pd.read_csv(
-        sys.argv[1],
-        header=None,
-        index_col=0).convert_dtypes().squeeze()
-else:
-    weapon_variants = pd.Series(dtype=str)
+weapon_variants = pd.read_excel(
+    "patcher_data/Weapon.xlsx",
+    sheet_name="Patches",
+    index_col=0).convert_dtypes().dropna(how="all")
 
 
 weapon_stats = strict_dict()
@@ -82,11 +78,25 @@ for artifact, rows in weapon_artifacts.iterrows():
     if pd.notna(rows["Stagger"]):
         stats["Stagger"] += rows["Stagger"]
     weapon_stats[editor_id] = stats
-for variant, template in weapon_variants.items():
+for variant, rows in weapon_variants.iterrows():
+    if rows["Base"].endswith("Bow"):
+        continue
     for weapon_type in weapon_types.index:
         editor_id = f'Weapon_{variant}_{weapon_type}'
-        template_key = f'Weapon_{template}_{weapon_type}'
-        weapon_stats[editor_id] = weapon_stats[template_key]
+        stats = weapon_stats[f'Weapon_{rows["Base"]}_{weapon_type}'].copy()
+        if pd.notna(rows["Damage"]):
+            stats["Damage"] += rows["Damage"]
+        if pd.notna(rows["Weight"]):
+            stats["Weight"] += rows["Weight"]
+        if pd.notna(rows["Gold"]):
+            stats["Gold"] *= rows["Gold"]
+        if pd.notna(rows["Speed"]):
+            stats["Speed"] += rows["Speed"]
+        if pd.notna(rows["Reach"]):
+            stats["Reach"] += rows["Reach"]
+        if pd.notna(rows["Stagger"]):
+            stats["Stagger"] += rows["Stagger"]
+        weapon_stats[editor_id] = stats
 
 
 with open("REQ_WeaponPatcher.txt", "w") as fh:
