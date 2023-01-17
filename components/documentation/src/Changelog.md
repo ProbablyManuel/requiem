@@ -1,3 +1,24 @@
+Requiem 5.3.0 - "Around the Fire" - Bugfix Pack #1
+==================================================
+
+Bugfixes
+--------
+
+* Ulfric's armor has its enchantments back.
+* Battlestaffs are affected by Quarterstaff Focus instead of Warhammer Focus.
+* The abilities distributed by the Reqtificator to all NPCs are not dispeled on death. Among other things, this fixes reanimated NPCs sometimes having very low attack speed.
+* War Axe Focus 1 and Battleaxe Focus 1 increase damage by 10% (was 5%) to match the next two ranks.
+* Devastating Strike increases power attack damage by 20% (was 25%) to match its one-handed counterpart.
+* Sword Focus 2 does not increase armor penetration by more than intended.
+* Telekinetic Nova always knocks down vulnerable targets.
+* Halvar's Boots have the correct model.
+* Skaal armor forwards Survival_ArmorWarm.
+* Ancient Nord Armor of the Tongue cannot be disenchanted.
+* Material bonus of chainmail armor is correctly named "Slash Protection".
+* Enchanted Imperial armors have proper names.
+* Power of the Combatant matches the perk description.
+
+
 Requiem 5.3.0 - "Around the Fire"
 =================================
 
