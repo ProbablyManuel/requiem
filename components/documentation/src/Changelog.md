@@ -7,6 +7,9 @@ Tweaks
 * Unique rings are removed from (one-off) fishing junk drops and placed in different locations guarded by an appropriately challenging encounter. The vacant drops are replaced with other interesting items.
 * Ring of the Khajiit increases movement speed by 15% while sneaking (was 10% at all times).
 * Ring of the Wind increases movement speed by 10% (was 15%).
+* Quarterstaff Focus increases AP by 8% per rank (was 7%).
+* Damage of quarterstaffs is increased by 3 and stagger by 0.15.
+* Weight of battlestaffs is decreased by 5.
 
 Bugfixes
 --------
@@ -16,8 +19,13 @@ Bugfixes
 * The abilities distributed by the Reqtificator to all NPCs are not dispeled on death. Among other things, this fixes reanimated NPCs sometimes having very low attack speed.
 * Strong boxes respawn when the cell resets.
 * War Axe Focus 1 and Battleaxe Focus 1 increase damage by 10% (was 5%) to match the next two ranks.
+* Greatsword Focus increases attack speed by 8% per rank (was 10%) to match its one-handed counterpart.
 * Devastating Strike increases power attack damage by 20% (was 25%) to match its one-handed counterpart.
 * Sword Focus 2 does not increase armor penetration by more than intended.
+* Quarterstaffs are not affected by Warhammer Focus.
+* Battlestaffs are affected by Quarterstaff Focus instead of Warhammer Focus.
+* Tantos have the same weight as daggers.
+* All weapons have a critical damage multiplier of 1.
 * Telekinetic Nova always knocks down vulnerable targets.
 * Halvar's Boots have the correct model.
 * Skaal armor forwards Survival_ArmorWarm.
