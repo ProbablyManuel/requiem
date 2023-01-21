@@ -1,12 +1,20 @@
 Requiem 5.3.0 - "Around the Fire" - Bugfix Pack #1
 ==================================================
 
+Tweaks
+------
+
+* Unique rings are removed from (one-off) fishing junk drops and placed in different locations guarded by an appropriately challenging encounter. The vacant drops are replaced with other interesting items.
+* Ring of the Khajiit increases movement speed by 15% while sneaking (was 10% at all times).
+* Ring of the Wind increases movement speed by 10% (was 15%).
+
 Bugfixes
 --------
 
 * Ulfric's armor has its enchantments back.
 * Battlestaffs are affected by Quarterstaff Focus instead of Warhammer Focus.
 * The abilities distributed by the Reqtificator to all NPCs are not dispeled on death. Among other things, this fixes reanimated NPCs sometimes having very low attack speed.
+* Strong boxes respawn when the cell resets.
 * War Axe Focus 1 and Battleaxe Focus 1 increase damage by 10% (was 5%) to match the next two ranks.
 * Devastating Strike increases power attack damage by 20% (was 25%) to match its one-handed counterpart.
 * Sword Focus 2 does not increase armor penetration by more than intended.
