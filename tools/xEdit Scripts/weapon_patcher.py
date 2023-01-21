@@ -48,7 +48,7 @@ for weapon_set, set_stats in weapon.iterrows():
 
         if pd.isna(set_stats["Weight"]):
             stats["Weight"] = 0.0
-        elif weapon_type == "Dagger":
+        elif stats["Dagger"]:
             stats["Weight"] += set_stats["Weight"] / 2
         else:
             stats["Weight"] += set_stats["Weight"]
