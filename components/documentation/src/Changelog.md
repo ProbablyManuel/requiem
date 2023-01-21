@@ -1,4 +1,4 @@
-Requiem 5.3.1 - "Around the Fire" - Bugfix Pack #1
+Requiem 5.3.1 - "Around the Fire" Bugfix Pack #1
 ==================================================
 
 Tweaks
