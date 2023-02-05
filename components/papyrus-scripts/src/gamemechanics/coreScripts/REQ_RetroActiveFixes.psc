@@ -1,6 +1,10 @@
 Scriptname REQ_RetroActiveFixes extends REQ_CoreScript
 {this script applies one-time changes after an update to fix bugs from prior versions}
 
+Enchantment Property FortifyLockpickingBase1 Auto
+Enchantment Property FortifyLockpickingBase2 Auto
+Enchantment Property FortifyLockpickingBase3 Auto
+
 Perk Property HeavyArmorMaterialBonus Auto
 Perk Property LightArmorMaterialBonus Auto
 
@@ -25,6 +29,9 @@ Function initScript(Int currentVersion, Int nevVersion)
         EndIf
         If currentVersion <= 50203 && nevVersion >= 50300
             Apply_5_2_3_to_5_3_0_fixes()
+        EndIf
+        If currentVersion <= 50301 && nevVersion >= 50400
+            Apply_5_3_1_to_5_4_0_fixes()
         EndIf
     EndIf
 EndFunction
@@ -77,4 +84,10 @@ Function Apply_5_2_3_to_5_3_0_fixes()
         Player.RemovePerk(LightArmorMaterialBonus)
         Player.AddPerk(LightArmorMaterialBonus)
     EndIf
+EndFunction
+
+Function Apply_5_3_1_to_5_4_0_fixes()
+    FortifyLockpickingBase1.SetPlayerKnows(False)
+    FortifyLockpickingBase2.SetPlayerKnows(False)
+    FortifyLockpickingBase3.SetPlayerKnows(False)
 EndFunction
