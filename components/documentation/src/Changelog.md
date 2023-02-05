@@ -1,3 +1,13 @@
+Requiem 5.4.0 - "Towers and Shadows"
+====================================
+
+Tweaks
+------
+
+* Lockpicking enchantments increase lockpick durability instead of skill and expertise.
+* Lockpick durability does not scale with Lockpicking skill.
+
+
 Requiem 5.3.1 - "Around the Fire" Bugfix Pack #1
 ==================================================
 
