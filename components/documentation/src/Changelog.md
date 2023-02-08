@@ -4,8 +4,19 @@ Requiem 5.4.0 - "Towers and Shadows"
 Tweaks
 ------
 
-* Lockpicking enchantments increase lockpick durability instead of skill and expertise.
-* Lockpick durability does not scale with Lockpicking skill.
+* Lockpicking Expertise is rescaled to range from 0 to 10.
+    * The odd values 1/3/5/7/9 unlock Novice/Apprentice/Adept/Expert/Master locks.
+    * The even values 2/4/6/8/10 make the sweetspot of Novice/Apprentice/Adept/Expert/Master locks 8 times larger. This bonus stacks additively, e.g., 4 Lockpicking Expertise makes the sweetspot of Novice locks 16 times larger.
+* Locksmithing Lore is split into two new perks unlocked at skill 30 and 60 respectively.
+* Lockpicking enchantments increase lockpick durability instead of Lockpicking Expertise.
+* Lockpicking skill does not increase the sweetspot or lockpick durability. All skill buffs are removed.
+* Khajiit can pick Novice locks without perks, but they do not start with additional Lockpicking Expertise.
+
+Bug Fixes
+---------
+
+* Ataxia contracted from traps has the same effect as normal Ataxia.
+* The Tower Stone does not allow you to pick Apprentice locks unnoticed in plain sight if you do not have the required Lockpicking Expertise to unlock Apprentice locks.
 
 
 Requiem 5.3.1 - "Around the Fire" Bugfix Pack #1

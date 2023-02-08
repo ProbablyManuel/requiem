@@ -14,10 +14,19 @@ Perk Property AlchemicalIntellect Auto
 Perk Property FortifiedMuscles Auto
 Perk Property Regeneration Auto
 
+Perk Property CheapTricks Auto
+Perk Property LocksmithingLore Auto
+Perk Property MasterlyLockpicking Auto
+Perk Property SkeletonKey Auto
+
 Spell Property PlayerWerewolfAbility Auto
 
 Spell Property AetheriumMaterialBonus Auto
 Spell Property OrcishMaterialBonus Auto
+
+Spell Property ThiefStone Auto
+Spell Property TowerStone Auto
+Spell Property KhajiitLockpicking Auto
 
 Function initScript(Int currentVersion, Int nevVersion)
     If currentVersion > 0
@@ -90,4 +99,23 @@ Function Apply_5_3_1_to_5_4_0_fixes()
     FortifyLockpickingBase1.SetPlayerKnows(False)
     FortifyLockpickingBase2.SetPlayerKnows(False)
     FortifyLockpickingBase3.SetPlayerKnows(False)
+    If Player.HasPerk(CheapTricks)
+        Player.RemovePerk(CheapTricks)
+        Player.AddPerk(CheapTricks)
+    EndIf
+    If Player.HasPerk(LocksmithingLore)
+        Player.RemovePerk(LocksmithingLore)
+        Player.AddPerk(LocksmithingLore)
+    EndIf
+    If Player.HasPerk(MasterlyLockpicking)
+        Player.RemovePerk(MasterlyLockpicking)
+        Player.AddPerk(MasterlyLockpicking)
+    EndIf
+    If Player.HasPerk(SkeletonKey)
+        Player.RemovePerk(SkeletonKey)
+        Player.AddPerk(SkeletonKey)
+    EndIf
+    If Player.HasSpell(KhajiitLockpicking)
+        Player.RemoveSpell(KhajiitLockpicking)
+    EndIf
 EndFunction

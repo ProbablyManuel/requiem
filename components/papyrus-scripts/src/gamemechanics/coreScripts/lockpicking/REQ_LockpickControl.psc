@@ -172,7 +172,11 @@ EndFunction
 
 ; obtain the highest lockpick expertise of this actor
 Int Function GetExpertise(Actor subject)
-    return subject.GetActorValue("lockpickingmod") as Int
+    Int expertise = subject.GetActorValue("lockpickingmod") As Int
+    If subject.HasKeyword(datastorage.LockpickUnperked) && expertise == 0
+        expertise = 1
+    EndIf
+    return expertise
 EndFunction
 
 ; determine the complexity (1=novice, 2=apprentice, ...) of this lock, 6 means

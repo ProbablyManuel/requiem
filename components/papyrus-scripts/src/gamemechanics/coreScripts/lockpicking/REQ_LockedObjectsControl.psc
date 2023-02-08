@@ -71,6 +71,8 @@ EffectShader Property unlockShader Auto
 MiscObject Property lockpick Auto
 MiscObject Property skeletonKey Auto
 
+Keyword Property LockpickUnperked Auto
+
 FormList Property unlocking_level1 Auto
 FormList Property unlocking_level2 Auto
 FormList Property unlocking_level3 Auto
