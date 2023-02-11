@@ -11,6 +11,7 @@ Tweaks
 * Lockpicking enchantments increase lockpick durability instead of Lockpicking Expertise.
 * Lockpicking skill does not increase the sweetspot or lockpick durability. All skill buffs are removed.
 * Khajiit can pick Novice locks without perks, but they do not start with additional Lockpicking Expertise.
+* Khajiit caravans and Thieves Guild fences always stock a decent supply of thief potions.
 
 Bug Fixes
 ---------
