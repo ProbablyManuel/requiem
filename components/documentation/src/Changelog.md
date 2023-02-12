@@ -18,6 +18,7 @@ Bug Fixes
 
 * Ataxia contracted from traps has the same effect as normal Ataxia.
 * The Tower Stone does not allow you to pick Apprentice locks unnoticed in plain sight if you do not have the required Lockpicking Expertise to unlock Apprentice locks.
+* Papyrus error when picking a lock without followers is fixed.
 
 
 Requiem 5.3.1 - "Around the Fire" Bugfix Pack #1

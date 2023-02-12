@@ -44,7 +44,6 @@ GlobalVariable Property REQ_GV_Lockpick_NumLockPicks_OptScale Auto
 
 Message Property insufficientExpertise_Solo Auto
 Message Property insufficientExpertise_WithFollower Auto
-Message Property insufficientExpertise_WithParty Auto
 
 Message Property followerHasRequiredSkill_NoLockpicks Auto
 Message Property followerHasRequiredSkill_Confirmation Auto
