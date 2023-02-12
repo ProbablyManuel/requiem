@@ -40,9 +40,7 @@ Event OnLockStateChanged()
     UpdateStatus()
 EndEvent
 
-Event OnHit(ObjectReference akAggressor, Form akSource, \
-        Projectile akProjectile, bool abPowerAttack, bool abSneakAttack, \
-        bool abBashAttack, bool abHitBlocked)
+Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile, bool abPowerAttack, bool abSneakAttack, bool abBashAttack, bool abHitBlocked)
     ; if we get hit by a magic unlocking pseudo projectile (these are invisible
     ; and mimic touch-range spells) unlock the object if the spell is
     ; sufficiently powerful
@@ -98,11 +96,7 @@ EndFunction
 
 Event OnActivate(ObjectReference akActionRef)
     Actor player = Game.GetPlayer()
-    If (akActionRef as Actor == player && \
-            player.getItemCount(dataStorage.lockpick) == 0 && \
-            player.getItemCount(dataStorage.skeletonKey) == 0 && \
-            IsLocked() && \
-            !IsActivationBlocked())
+    If (akActionRef as Actor == player && player.getItemCount(dataStorage.lockpick) == 0 && player.getItemCount(dataStorage.skeletonKey) == 0 && IsLocked() && !IsActivationBlocked())
         Utility.WaitMenuMode(0.5)
         Bool isLockpicking = UI.IsMenuOpen("Lockpicking Menu")
         Utility.Wait(0.1)
@@ -150,14 +144,11 @@ Function PickLock(Bool externalTrigger)
     followerControl.lockpickCrimeGold = GetCrimeGold(player.GetActorBase())
 
     If (expertisePlayer >= optimal)
-        choice = ShowOptionsEasyForPlayer(bestMinion, expertisePlayer, \
-                required, optimal, nMinions)
+        choice = ShowOptionsEasyForPlayer(bestMinion, expertisePlayer, required, optimal, nMinions)
     ElseIf (expertisePlayer >= required)
-        choice = ShowOptionsChallengingForPlayer(bestMinion, expertisePlayer, \
-                required, optimal, nMinions)
+        choice = ShowOptionsChallengingForPlayer(bestMinion, expertisePlayer, required, optimal, nMinions)
     Else
-        choice = ShowOptionsImpossibleForPlayer(bestMinion, expertisePlayer, \
-                required, optimal, nMinions)
+        choice = ShowOptionsImpossibleForPlayer(bestMinion, expertisePlayer, required, optimal, nMinions)
     EndIf
 
     Int nLockpicks = GetFollowerLockpickUsage(expertiseBestMinion >= optimal)
@@ -325,8 +316,7 @@ Int Function GetCrimeGold(ActorBase player)
 EndFunction
 
 ; the lock is easy for the player, present him the available options
-Int Function ShowOptionsEasyForPlayer(Actor bestMinion, \
-        Int expertisePlayer, Int required, Int optimal, Int nMinions)
+Int Function ShowOptionsEasyForPlayer(Actor bestMinion, Int expertisePlayer, Int required, Int optimal, Int nMinions)
 
     Actor player = Game.GetPlayer()
     Int expertiseBestMinion = GetExpertise(bestMinion)
@@ -334,30 +324,24 @@ Int Function ShowOptionsEasyForPlayer(Actor bestMinion, \
     Int choice = 0
     Int nLockpicks = 0
 
-    If (nMinions == 0 || player.GetItemCount(dataStorage.lockpick) > 0 || \
-            player.GetItemCount(dataStorage.skeletonKey) > 0)
+    If (nMinions == 0 || player.GetItemCount(dataStorage.lockpick) > 0 || player.GetItemCount(dataStorage.skeletonKey) > 0)
         choice = 0
     ElseIf (expertiseBestMinion >= optimal)
         nLockpicks = GetFollowerLockpickUsage(True)
         If (nMinionLockpicks >= nLockpicks)
-            choice = dataStorage.easyLock_FollowerCanPickOptimal.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.easyLock_FollowerCanPickOptimal.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         Else
-            choice = dataStorage.easyLock_FollowerNoLockpicksOptimal.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.easyLock_FollowerNoLockpicksOptimal.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         EndIf
     ElseIf (expertiseBestMinion >= required)
         nLockpicks = GetFollowerLockpickUsage(False)
         If (nMinionLockpicks >= nLockpicks)
-            choice = dataStorage.easyLock_FollowerCanPickRequired.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.easyLock_FollowerCanPickRequired.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         Else
-            choice = dataStorage.easyLock_FollowerNoLockpicksRequired.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.easyLock_FollowerNoLockpicksRequired.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         EndIf
     ElseIf (expertiseBestMinion < required)
-        choice = dataStorage.easyLock_FollowerTooDumb.Show(optimal, \
-                expertisePlayer, expertiseBestMinion)
+        choice = dataStorage.easyLock_FollowerTooDumb.Show(optimal, expertisePlayer, expertiseBestMinion)
     EndIf
 
     return choice
@@ -365,8 +349,7 @@ Int Function ShowOptionsEasyForPlayer(Actor bestMinion, \
 EndFunction
 
 ; the lock is challenging for the player, present him the available options
-Int Function ShowOptionsChallengingForPlayer(Actor bestMinion, \
-        Int expertisePlayer, Int required, Int optimal, Int nMinions)
+Int Function ShowOptionsChallengingForPlayer(Actor bestMinion, Int expertisePlayer, Int required, Int optimal, Int nMinions)
 
     Int expertiseBestMinion = GetExpertise(bestMinion)
     Int nMinionLockpicks = bestMinion.GetItemCount(dataStorage.lockpick)
@@ -378,24 +361,19 @@ Int Function ShowOptionsChallengingForPlayer(Actor bestMinion, \
     ElseIf (expertiseBestMinion >= optimal)
         nLockpicks = GetFollowerLockpickUsage(True)
         If (nMinionLockpicks >= nLockpicks)
-            choice = dataStorage.challengingLock_FollowerCanPickOptimal.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.challengingLock_FollowerCanPickOptimal.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         Else
-            choice = dataStorage.challengingLock_FollowerNoLockpicksOptimal.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.challengingLock_FollowerNoLockpicksOptimal.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         EndIf
     ElseIf (expertiseBestMinion >= required)
         nLockpicks = GetFollowerLockpickUsage(False)
         If (nMinionLockpicks >= nLockpicks)
-            choice = dataStorage.challengingLock_FollowerCanPickRequired.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.challengingLock_FollowerCanPickRequired.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         Else
-            choice = dataStorage.challengingLock_FollowerNoLockpicksRequired.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.challengingLock_FollowerNoLockpicksRequired.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         EndIf
     ElseIf (expertiseBestMinion < required)
-        choice = dataStorage.challengingLock_FollowerTooDumb.Show(optimal, \
-                expertisePlayer, expertiseBestMinion)
+        choice = dataStorage.challengingLock_FollowerTooDumb.Show(optimal, expertisePlayer, expertiseBestMinion)
     EndIf
 
     return choice
@@ -403,8 +381,7 @@ Int Function ShowOptionsChallengingForPlayer(Actor bestMinion, \
 EndFunction
 
 ; the lock is impossible for the player, present him the available options
-Int Function ShowOptionsImpossibleForPlayer(Actor bestMinion, \
-        Int expertisePlayer, Int required, Int optimal, Int nMinions)
+Int Function ShowOptionsImpossibleForPlayer(Actor bestMinion, Int expertisePlayer, Int required, Int optimal, Int nMinions)
 
     Int expertiseBestMinion = GetExpertise(bestMinion)
     Int nMinionLockpicks = bestMinion.GetItemCount(dataStorage.lockpick)
@@ -414,38 +391,30 @@ Int Function ShowOptionsImpossibleForPlayer(Actor bestMinion, \
     If (expertiseBestMinion >= optimal)
         nLockpicks = GetFollowerLockpickUsage(True)
         If (nMinionLockpicks >= nLockpicks)
-            choice = dataStorage.followerHasOptimalSkill_Confirmation.Show( \
-                    nLockpicks, required, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.followerHasOptimalSkill_Confirmation.Show(nLockpicks, required, expertisePlayer, expertiseBestMinion)
         Else
-            choice = dataStorage.followerHasOptimalSkill_NoLockpicks.Show( \
-                    nLockpicks, required, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.followerHasOptimalSkill_NoLockpicks.Show(nLockpicks, required, expertisePlayer, expertiseBestMinion)
         EndIf
     ElseIf (expertiseBestMinion >= required)
         nLockpicks = GetFollowerLockpickUsage(False)
         If (nMinionLockpicks >= nLockpicks)
-            choice = dataStorage.followerHasRequiredSkill_Confirmation.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.followerHasRequiredSkill_Confirmation.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         Else
-            choice = dataStorage.followerHasRequiredSkill_NoLockpicks.Show( \
-                    nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
+            choice = dataStorage.followerHasRequiredSkill_NoLockpicks.Show(nLockpicks, optimal, expertisePlayer, expertiseBestMinion)
         EndIf
     ElseIf (nMinions > 1)
-        choice = dataStorage.insufficientExpertise_WithParty.Show(\
-                required, expertisePlayer, expertiseBestMinion)
+        choice = dataStorage.insufficientExpertise_WithParty.Show(required, expertisePlayer, expertiseBestMinion)
     ElseIf (nMinions == 1)
-        choice = dataStorage.insufficientExpertise_WithFollower.Show(\
-                required, expertisePlayer, expertiseBestMinion)
+        choice = dataStorage.insufficientExpertise_WithFollower.Show(required, expertisePlayer, expertiseBestMinion)
     Else
-        choice = dataStorage.insufficientExpertise_Solo.Show(\
-                required, expertisePlayer, expertiseBestMinion)
+        choice = dataStorage.insufficientExpertise_Solo.Show(required, expertisePlayer, expertiseBestMinion)
     EndIf
 
     return choice
 
 EndFunction
 
-Function ProcessPlayerChoice(Int choice, Int nLockpicks, Actor bestMinion, \
-        Bool notAllowed)
+Function ProcessPlayerChoice(Int choice, Int nLockpicks, Actor bestMinion, Bool notAllowed)
     If ((choice == 1 || notAllowed) && UI.IsMenuOpen("Lockpicking Menu"))
         Int closeButton = Input.GetMappedKey("Tween Menu")
         Input.TapKey(closeButton)
