@@ -18,6 +18,11 @@ Retired Dungeon Masters
 * [Heckur](https://www.nexusmods.com/users/134549) - Betatester (October 2013 - May 2021)
 * [Ogerboss](https://www.nexusmods.com/users/847294) - Developer and Project Leader (January 2013 - May 2022)
 
+Individual Contributions
+========================
+
+* [Pamposzek](https://www.nexusmods.com/skyrimspecialedition/users/14780709) - Numerous text improvements to magic effects
+
 We want to use this chance to thank all those who helped (and still help) us creating this mod:
 ===============================================================================================
 

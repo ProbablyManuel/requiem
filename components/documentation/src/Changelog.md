@@ -13,6 +13,8 @@ Tweaks
 * Khajiit can pick Novice locks without perks, but they do not start with additional Lockpicking Expertise.
 * Khajiit caravans and Thieves Guild fences always stock a decent supply of thief potions.
 * Lockpicking expertise is explained in the help menu.
+* Most text improvements from [Requiem - Alternative Descriptions](https://www.nexusmods.com/skyrimspecialedition/mods/33663) are forwarded (but not the consolidated descriptions).
+* Descriptions of food, potions, enchantments, and abilities are reworded to full sentences that provide a bit more variance and flavor then "Increases A by X".
 
 Bug Fixes
 ---------
