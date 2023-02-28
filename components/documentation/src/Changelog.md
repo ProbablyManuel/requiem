@@ -15,6 +15,8 @@ Tweaks
 * Lockpicking expertise is explained in the help menu.
 * Most text improvements from [Requiem - Alternative Descriptions](https://www.nexusmods.com/skyrimspecialedition/mods/33663) are forwarded (but not the consolidated descriptions).
 * Descriptions of food, potions, enchantments, and abilities are reworded to full sentences that provide a bit more variance and flavor then "Increases A by X".
+* Quicksilver crossbow is available using assets from [Carved Nordic Crossbow](https://www.nexusmods.com/skyrim/mods/48847).
+* Wooden Crossbow is renamed to Imperial Crossbow.
 
 Bug Fixes
 ---------
