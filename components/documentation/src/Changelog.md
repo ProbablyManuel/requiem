@@ -5,8 +5,9 @@ Requiem 5.4.0 - "Towers and Shadows"
 New Features
 ------------
 
-* Quicksilver crossbow is available using assets from [Carved Nordic Crossbow](https://www.nexusmods.com/skyrim/mods/48847).
-* All crossbows use the models from Elite Crossbows and Expanded Crossbow Pack if the Creation Club DLCs patch is installed.
+* Quicksilver crossbow is available using assets from [Carved Nordic Crossbow](https://www.nexusmods.com/skyrim/mods/48847). It can be crafted with the respective material perk, and it is integrated into the world through loot and merchants.
+* Skyforge Steel Mace, Warhammer, Bow, and Arrow are available. They are integrated in the same manner as the other Skyforge Steel weapons.
+* All crossbows use the models from Elite Crossbows and Expanded Crossbow Pack DLCs if the Creation Club patch is installed.
 
 Tweaks
 ------
