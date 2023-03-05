@@ -8,6 +8,10 @@ New Features
 * Quicksilver crossbow is available using assets from [Carved Nordic Crossbow](https://www.nexusmods.com/skyrim/mods/48847). It can be crafted with the respective material perk, and it is integrated into the world through loot and merchants.
 * Skyforge Steel Mace, Warhammer, Bow, and Arrow are available. They are integrated in the same manner as the other Skyforge Steel weapons.
 * All crossbows use the models from Elite Crossbows and Expanded Crossbow Pack DLCs if the Creation Club patch is installed.
+* The Horse Armor DLCs are integrated.
+    * Elven horse armor has 400 armor rating, weighs 20 units, and increases health by 400.
+    * Steel horse armor has 800 armor rating, weighs 40 units, and increases health by 800.
+    * Horse armor does not make the horse essential.
 
 Tweaks
 ------
@@ -21,6 +25,7 @@ Tweaks
 * Khajiit can pick Novice locks without perks, but they do not start with additional Lockpicking Expertise.
 * Khajiit caravans and Thieves Guild fences always stock a decent supply of thief potions.
 * Lockpicking expertise is explained in the help menu.
+* All edits to horse NPCs including the armors are removed, leaving this area of the game to other mods. Movement speed changes are reimplemented as movement types.
 * Most text improvements from [Requiem - Alternative Descriptions](https://www.nexusmods.com/skyrimspecialedition/mods/33663) are forwarded (but not the consolidated descriptions).
 * Descriptions of food, potions, enchantments, and abilities are reworded to full sentences that provide a bit more variance and flavor then "Increases A by X".
 * Wooden Crossbow is renamed to Imperial Crossbow.
@@ -28,6 +33,7 @@ Tweaks
 Bug Fixes
 ---------
 
+* Horses have manes again.
 * Ataxia contracted from traps has the same effect as normal Ataxia.
 * The Tower Stone does not allow you to pick Apprentice locks unnoticed in plain sight if you do not have the required Lockpicking Expertise to unlock Apprentice locks.
 * Papyrus error when picking a lock without followers is fixed.
