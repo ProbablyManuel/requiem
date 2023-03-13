@@ -5,7 +5,7 @@ author: ProbablyManuel
 ---
 Hi Requiem enthusiasts,
 
-The focus of this release is redefining lockpicking expertise to be more intuitive. Additionally, four more Creation Club DLCs are integrated. For the full list of changes, please refer to the [changelog]({{site.github.repository_url}}/blob/main/components/documentation/src/Changelog.md#requiem-540---towers-and-shadows).
+The focus of this release is redefining lockpicking expertise to be more intuitive. Additionally, four more Creation Club DLCs are integrated and most text improvements from [Requiem - Alternative Descriptions](https://www.nexusmods.com/skyrimspecialedition/mods/33663) by Pamposzek are forwarded (but not the consolidated descriptions). For the full list of changes, please refer to the [changelog]({{site.github.repository_url}}/blob/main/components/documentation/src/Changelog.md#requiem-540---towers-and-shadows).
 
 # Lockpicking
 
@@ -19,7 +19,7 @@ Sources of lockpicking expertise are rebalanced accordingly. The main difference
 * The second perk is split into two new perks unlocked at skill 30 and 60 respectively.
 * Enchantments increase lockpick durability instead of expertise.
 
-This addresses the issue that lockpicking expertise was too readily available with almost no investment. This incited all characters, regardless of their background, to pick up lockpicking because it yields more perk points than it costs (this is still true but to a less problematic extent). Furthermore, while being able to unlock Adept locks with just the first perk is a nice quality of life feature, it is a design flaw because it removes any functional difference between Novice and Apprentice locks. To ensure Adept locks do not become an inconvenience with this change Khajiit caravans and Thieves Guild fences always stock a decent supply of Fortify Lockpick potions and the second lockpicking perk can already be unlocked at skill 30.
+This addresses the issue that lockpicking expertise was too readily available with very little investment. This incited all characters, regardless of their background, to pick up lockpicking because it yields more perk points than it costs (this is still true but to a less problematic extent). Furthermore, while being able to unlock Adept locks with just the first perk is a nice quality of life feature, it is a design flaw because it removes any functional difference between Novice and Apprentice locks. To ensure Adept locks do not become an inconvenience with this change Khajiit caravans and Thieves Guild fences always stock a decent supply of Fortify Lockpick potions and the second lockpicking perk can already be unlocked at skill 30.
 
 # Creation Club
 
