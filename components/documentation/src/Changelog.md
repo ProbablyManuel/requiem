@@ -1,6 +1,23 @@
+Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
+===================================================
+
+Tweaks
+------
+
+* Spirit Steed does not wear a saddle.
+
+Bug Fixes
+---------
+
+* Helgen horses move at a slower pace so that they arrive in Helgen at the expected point in time.
+* NULL references in the Creation Club patch are resolved.
+* Quicksilver bow and arrow have proper stats.
+* Enchanted variants of quicksilver and skyforge steel arrows can be crafted.
+* Skyforge steel arrows are correctly named.
+
+
 Requiem 5.4.0 - "Towers and Shadows"
 ====================================
-
 
 New Features
 ------------
