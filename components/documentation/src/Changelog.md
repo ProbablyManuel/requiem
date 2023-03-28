@@ -7,6 +7,7 @@ Tweaks
 * Telekinetic Execution can kill Dwarven Centurions.
 * Silver arrows do not have a special description that points out that they are made of silver.
 * Stalhrim armors and weapons require steel as secondary component.
+* Description of enchanted ammo states the magnitude without appending "points of damage".
 
 Bug Fixes
 ---------
