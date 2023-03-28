@@ -1,3 +1,17 @@
+Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
+===================================================
+
+Tweaks
+------
+
+* Telekinetic Execution can kill Dwarven Centurions.
+
+Bug Fixes
+---------
+
+* Telekinetic Execution cannot kill ghosts and the skeletal dragon.
+
+
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
 ===================================================
 
