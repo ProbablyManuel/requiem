@@ -13,6 +13,7 @@ Bug Fixes
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon.
 * Elemental silver arrows use the correct model.
 * The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
+* Horse saddles provide the expected armor rating.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
