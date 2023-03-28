@@ -16,6 +16,7 @@ Bug Fixes
 * The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
 * Horse saddles provide the expected armor rating.
 * Various typos in magic effect descriptions are fixed.
+* Ranged Combat Training and Marksman's Focus do not reference inexistent weapon weight penalty reduction.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
