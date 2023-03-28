@@ -5,11 +5,13 @@ Tweaks
 ------
 
 * Telekinetic Execution can kill Dwarven Centurions.
+* Silver arrows do not have a special description that points out that they are made of silver.
 
 Bug Fixes
 ---------
 
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon.
+* Elemental silver arrows use the correct model.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
