@@ -14,6 +14,7 @@ Bug Fixes
 * Elemental silver arrows use the correct model.
 * The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
 * Horse saddles provide the expected armor rating.
+* Various typos in magic effect descriptions are fixed.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
