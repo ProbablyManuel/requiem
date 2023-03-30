@@ -9,6 +9,7 @@ Tweaks
 * Stalhrim armors and weapons require steel as secondary component.
 * Description of enchanted ammo states the magnitude without appending "points of damage".
 * Power attacks cost 25% of the weapon's weight more stamina.
+* Quicksilver weapons have the same damage as Dwarven weapons.
 
 Bug Fixes
 ---------
