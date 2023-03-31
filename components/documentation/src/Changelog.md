@@ -21,6 +21,7 @@ Bug Fixes
 * Various typos in magic effect descriptions are fixed.
 * Ranged Combat Training and Marksman's Focus do not reference inexistent weapon weight penalty reduction.
 * Elsi the Spiker has Quarterstaff Focus instead Warhammer Focus.
+* Stalhrim bow and arrow have proper stats.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
