@@ -10,6 +10,7 @@ Tweaks
 * Description of enchanted ammo states the magnitude without appending "points of damage".
 * Power attacks cost 25% of the weapon's weight more stamina.
 * Quicksilver weapons have the same damage as Dwarven weapons.
+* Updated to Even Better Quest Objectives 1.9.2.
 
 Bug Fixes
 ---------
