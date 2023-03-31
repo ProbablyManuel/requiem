@@ -23,6 +23,7 @@ Bug Fixes
 * Elsi the Spiker has Quarterstaff Focus instead Warhammer Focus.
 * Stalhrim bow and arrow have proper stats.
 * Quicksilver quarterstaff and shortsword are sold by blacksmiths.
+* Forsworn and hagravens have a chance to drop black soul gems regardless of the player's level.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
