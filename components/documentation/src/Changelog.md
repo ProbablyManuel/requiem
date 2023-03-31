@@ -24,6 +24,7 @@ Bug Fixes
 * Stalhrim bow and arrow have proper stats.
 * Quicksilver quarterstaff and shortsword are sold by blacksmiths.
 * Forsworn and hagravens have a chance to drop black soul gems regardless of the player's level.
+* Arcane Ward spells do not reference spell reflection (no such feature exists).
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
