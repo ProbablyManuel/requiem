@@ -36,6 +36,7 @@ Bug Fixes
 * Cremation does not affect dragons.
 * General Tullius' Sword states the correct magnitude.
 * Hidden Illusion spells cannot be absorbed.
+* Invisible foxes in Labyrinthian are restored as skeletons.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
