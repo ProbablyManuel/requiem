@@ -30,6 +30,7 @@ Bug Fixes
 * Damage from firewalls on the ground is applied each second.
 * Mistress of the Dark can be resisted.
 * Dualcasting Featherfalling increases duration.
+* Imperial Luck is properly disabled.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
