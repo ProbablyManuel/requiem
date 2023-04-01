@@ -37,6 +37,7 @@ Bug Fixes
 * General Tullius' Sword states the correct magnitude.
 * Hidden Illusion spells cannot be absorbed.
 * Invisible foxes in Labyrinthian are restored as skeletons.
+* Description of Mark & Recall is rephrased to make its behavior clearer.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
