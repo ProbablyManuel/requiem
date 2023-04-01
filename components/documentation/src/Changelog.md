@@ -29,6 +29,7 @@ Bug Fixes
 * Dark Vision can be casted with one hand.
 * Damage from firewalls on the ground is applied each second.
 * Mistress of the Dark can be resisted.
+* Dualcasting Featherfalling increases duration.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
