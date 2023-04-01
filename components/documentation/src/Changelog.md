@@ -32,6 +32,7 @@ Bug Fixes
 * Dualcasting Featherfalling increases duration.
 * Imperial Luck is properly disabled.
 * Trainers are correctly labelled (Common, Expert, Master).
+* Dualcasting Arcane Resonance increases duration instead of magnitude because it did not work.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
