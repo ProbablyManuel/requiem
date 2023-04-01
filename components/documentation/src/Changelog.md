@@ -27,6 +27,7 @@ Bug Fixes
 * Forsworn and hagravens have a chance to drop black soul gems regardless of the player's level.
 * Arcane Ward spells do not reference spell reflection (no such feature exists).
 * Dark Vision can be casted with one hand.
+* Damage from firewalls on the ground is applied each second.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
