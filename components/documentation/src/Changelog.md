@@ -40,6 +40,7 @@ Bug Fixes
 * Invisible foxes in Labyrinthian are restored as skeletons.
 * Description of Mark & Recall is rephrased to make its behavior clearer.
 * Leadership fortifies Illusion instead of Conjuration a second time.
+* Hibernation Spray can be resisted.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
