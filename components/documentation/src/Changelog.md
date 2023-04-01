@@ -35,6 +35,7 @@ Bug Fixes
 * Dualcasting Arcane Resonance increases duration instead of magnitude because it did not work.
 * Cremation does not affect dragons.
 * General Tullius' Sword states the correct magnitude.
+* Hidden Illusion spells cannot be absorbed.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
