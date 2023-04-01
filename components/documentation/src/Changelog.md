@@ -28,6 +28,7 @@ Bug Fixes
 * Arcane Ward spells do not reference spell reflection (no such feature exists).
 * Dark Vision can be casted with one hand.
 * Damage from firewalls on the ground is applied each second.
+* Mistress of the Dark can be resisted.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
