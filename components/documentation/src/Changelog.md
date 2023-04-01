@@ -41,6 +41,8 @@ Bug Fixes
 * Description of Mark & Recall is rephrased to make its behavior clearer.
 * Leadership fortifies Illusion instead of Conjuration a second time.
 * Hibernation Spray can be resisted.
+* Bandits are neutral towards prey.
+* Forsworn are friendly towards chickens.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
