@@ -31,6 +31,7 @@ Bug Fixes
 * Mistress of the Dark can be resisted.
 * Dualcasting Featherfalling increases duration.
 * Imperial Luck is properly disabled.
+* Trainers are correctly labelled (Common, Expert, Master).
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
