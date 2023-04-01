@@ -43,6 +43,7 @@ Bug Fixes
 * Hibernation Spray can be resisted.
 * Bandits are neutral towards prey.
 * Forsworn are friendly towards chickens.
+* Charmed Necklace has a less immersive but correctly spelled description.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
