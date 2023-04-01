@@ -15,6 +15,7 @@ Tweaks
 Bug Fixes
 ---------
 
+* Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon.
 * Elemental silver arrows use the correct model.
 * The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
