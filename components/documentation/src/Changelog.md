@@ -54,6 +54,7 @@ Bug Fixes
 * Power attack stamina cost penalty when wearing heavy armor without Combat Training includes heavy shields.
 * Wabbajack has no effect when holding a shield.
 * Nightingale Sentinels drop ectoplasm instead of arrows.
+* Froki's Bow has the stats of a long bow.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
