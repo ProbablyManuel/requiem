@@ -26,11 +26,8 @@ GlobalVariable Property REQ_Atmosphere_NoPoisonISM Auto
 GlobalVariable Property REQ_Skills_HideClutterRecipes Auto
 GlobalVariable Property REQ_Atmosphere_SlowerHorses Auto
 GlobalVariable Property REQ_Skills_NoSmithingBooks Auto
-GlobalVariable Property REQ_Debug_ExhaustionReset Auto
-Perk Property REQ_MechanicsPerk_Stress_Exhaustion Auto
 GlobalVariable Property REQ_Atmosphere_VampireRandomCarnage Auto
 GlobalVariable Property REQ_Combat_NoDeathHandling Auto
-GlobalVariable Property REQ_Debug_MassEffectReset Auto
 GlobalVariable Property REQ_Atmosphere_KillmoveHealthThreshold Auto
 
 Bool Property initdone = False Auto
