@@ -57,6 +57,7 @@ Bug Fixes
 * Froki's Bow has proper stats.
 * Firiniel's End has proper stats.
 * A leveled list related to bandits does not unexpectedly spawn Nordic arrows.
+* Transmute Muscles grants XP.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
