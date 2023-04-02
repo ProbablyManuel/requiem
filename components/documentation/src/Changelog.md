@@ -53,6 +53,7 @@ Bug Fixes
 * Pickpocket and Sneak perks that have no effect when wearing heavy armor include heavy shields.
 * Power attack stamina cost penalty when wearing heavy armor without Combat Training includes heavy shields.
 * Wabbajack has no effect when holding a shield.
+* Nightingale Sentinels drop ectoplasm instead of arrows.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
