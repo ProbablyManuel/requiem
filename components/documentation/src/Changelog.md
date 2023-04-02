@@ -45,6 +45,7 @@ Bug Fixes
 * Forsworn are friendly towards chickens.
 * Charmed Necklace has a less immersive but correctly spelled description.
 * Dagger Focus I states the correct sneak attack bonus.
+* Mistress of the Dark and Shadow Simulacrum do not increase health and Illusion of nearby summons.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
