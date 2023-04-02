@@ -46,6 +46,7 @@ Bug Fixes
 * Charmed Necklace has a less immersive but correctly spelled description.
 * Dagger Focus I states the correct sneak attack bonus.
 * Mistress of the Dark and Shadow Simulacrum do not increase health and Illusion of nearby summons.
+* Dunmer receive 3% more Alteration, Evasion, Illusion, and Sneak XP instead of Destruction and One-Handed a second time.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
