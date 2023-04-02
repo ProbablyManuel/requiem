@@ -49,6 +49,10 @@ Bug Fixes
 * Dunmer receive 3% more Alteration, Evasion, Illusion, and Sneak XP instead of Destruction and One-Handed a second time.
 * Inoperative Stamina Drain Reset is removed from the MCM.
 * Rapidly activating shrines does not grant the blessing multiple times.
+* Perfected Art has no effect when wearing heavy armor.
+* Pickpocket and Sneak perks that have no effect when wearing heavy armor include heavy shields.
+* Power attack stamina cost penalty when wearing heavy armor without Combat Training includes heavy shields.
+* Wabbajack has no effect when holding a shield.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
