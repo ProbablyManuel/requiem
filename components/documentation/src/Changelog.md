@@ -69,6 +69,7 @@ Bug Fixes
 * Leftover faction edit from Minor Arcana pertaining Valdr is removed.  
 * The easter egg in Helgen has the correct inventory model.
 * All notes have no weight and price.
+* All notes use a handwritten font.
 * Disarm shout of dragons can be resisted.
 
 
