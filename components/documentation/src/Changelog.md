@@ -63,6 +63,7 @@ Bug Fixes
 * Dremora Warlocks do not known Summon Dremora Archer because they cannot cast the spell.
 * Summon Skeletal Hero can be selected when taking Apprentice Conjuration.
 * Summon Spectral Warrior can be selected when taking Adept Conjuration.
+* Ore veins in Redbelly Mine and Northwind Mine are reverted to their original type. The ore sample from the related quest is updated accordingly.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
