@@ -11,6 +11,7 @@ Tweaks
 * Power attacks cost 25% of the weapon's weight more stamina.
 * Quicksilver weapons have the same damage as Dwarven weapons.
 * Updated to Even Better Quest Objectives 1.9.2.
+* Notes have a proper EditorID.
 
 Bug Fixes
 ---------
@@ -66,6 +67,7 @@ Bug Fixes
 * Ore veins in Redbelly Mine and Northwind Mine are reverted to their original type. The ore sample from the related quest is updated accordingly.
 * Leftover faction edit from Minor Arcana pertaining Valdr is removed.  
 * The easter egg in Helgen has the correct inventory model.
+* All notes have no weight and price.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
