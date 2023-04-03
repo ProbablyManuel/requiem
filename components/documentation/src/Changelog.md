@@ -61,6 +61,8 @@ Bug Fixes
 * Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
 * Destruction Mastery perks only affect Destruction spells.
 * Dremora Warlocks do not known Summon Dremora Archer because they cannot cast the spell.
+* Summon Skeletal Hero can be selected when taking Apprentice Conjuration.
+* Summon Spectral Warrior can be selected when taking Adept Conjuration.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
