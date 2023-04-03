@@ -5,6 +5,7 @@ Tweaks
 ------
 
 * Telekinetic Execution can kill Dwarven Centurions.
+* Dremora can be disarmed by the voice.
 * Silver arrows do not have a special description that points out that they are made of silver.
 * Stalhrim armors and weapons require steel as secondary component.
 * Description of enchanted ammo states the magnitude without appending "points of damage".
@@ -68,6 +69,7 @@ Bug Fixes
 * Leftover faction edit from Minor Arcana pertaining Valdr is removed.  
 * The easter egg in Helgen has the correct inventory model.
 * All notes have no weight and price.
+* Disarm shout of dragons can be resisted.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
