@@ -59,6 +59,7 @@ Bug Fixes
 * A leveled list related to bandits does not unexpectedly spawn Nordic arrows.
 * Transmute Muscles grants XP.
 * Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
+* Destruction Mastery perks only affect Destruction spells.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
