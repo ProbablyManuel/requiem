@@ -71,6 +71,7 @@ Bug Fixes
 * All notes have no weight and price.
 * All notes use a handwritten font.
 * Disarm shout of dragons can be resisted.
+* Pickpocking Brand-Shei during A Chance Arrangement uses the standard pickpocketing formula.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
