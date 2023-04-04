@@ -75,6 +75,8 @@ Bug Fixes
 * The merchant chest in Understone Keep does not block a bed roll.
 * Bolgeir Bearclaw does not carry a duplicate sword.
 * Vigilant Tyranus does not carry a duplicate amulet.
+* Ulfric always carries his shield.
+* Rockjoint reduces damage instead of armor penetration.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
