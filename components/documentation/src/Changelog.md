@@ -79,6 +79,7 @@ Bug Fixes
 * Rockjoint reduces damage instead of armor penetration.
 * Vampire armor cannot be sold as clothing.
 * Targe of the Blooded cannot be enchanted.
+* Targe of the Blooded has a more logical description.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
