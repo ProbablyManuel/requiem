@@ -74,6 +74,7 @@ Bug Fixes
 * Pickpocking Brand-Shei during A Chance Arrangement uses the standard pickpocketing formula.
 * The merchant chest in Understone Keep does not block a bed roll.
 * Bolgeir Bearclaw does not carry a duplicate sword.
+* Vigilant Tyranus does not carry a duplicate amulet.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
