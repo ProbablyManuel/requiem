@@ -78,6 +78,7 @@ Bug Fixes
 * Ulfric always carries his shield.
 * Rockjoint reduces damage instead of armor penetration.
 * Vampire armor cannot be sold as clothing.
+* Targe of the Blooded cannot be enchanted.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
