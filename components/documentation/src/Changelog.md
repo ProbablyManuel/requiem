@@ -72,6 +72,7 @@ Bug Fixes
 * All notes use a handwritten font.
 * Disarm shout of dragons can be resisted.
 * Pickpocking Brand-Shei during A Chance Arrangement uses the standard pickpocketing formula.
+* The merchant chest in Understone Keep does not block a bed roll.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
