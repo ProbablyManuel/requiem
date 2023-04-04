@@ -77,6 +77,7 @@ Bug Fixes
 * Vigilant Tyranus does not carry a duplicate amulet.
 * Ulfric always carries his shield.
 * Rockjoint reduces damage instead of armor penetration.
+* Vampire armor cannot be sold as clothing.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
