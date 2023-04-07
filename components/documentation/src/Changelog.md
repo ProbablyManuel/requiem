@@ -93,6 +93,7 @@ Bug Fixes
 * Level 10 axe-wielding bandits do not have Experienced Blocking because it exceeds both their perk count and Block skill.
 * Level 12 and higher mace-wielding bandits have Powerful Bashes.
 * Soul Trap has no rank.
+* The random encounter where a thief attempts to pick a locked door and is discovered by guards is not tied to the player's level and Thieves Guild membership.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
