@@ -5,6 +5,7 @@ Tweaks
 ------
 
 * Telekinetic Execution can kill Dwarven Centurions.
+* Transmute Corpus can kill targets with more than 1200 health.
 * Dremora can be disarmed by the voice.
 * Silver arrows do not have a special description that points out that they are made of silver.
 * Stalhrim armors and weapons require steel as secondary component.
@@ -83,6 +84,9 @@ Bug Fixes
 * Aetherial Crown is considered jewelry.
 * Frost breath used by high-level dragons slows the player by the intended amount.
 * Telekinetic Execution, Teleport Vitals, Phantasmal Killer, and feeding as a vampire cannot kill essential actors if the MCM option to make Essential Actors invincible is enabled.
+* Transmute Corpus can kill unique or essentials actors.
+* Transmute Corpus cannot kill summons.
+* Transmute Corpus does not damage immune targets.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
