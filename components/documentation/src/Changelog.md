@@ -89,6 +89,7 @@ Bug Fixes
 * Summons are immune to Transmute Corpus.
 * Ghosts are immune to Teleport Vitals.
 * Clairvoyance (Rank II) is renamed to Vision of the Tenth Eye because the journal refers to its as such.
+* Several hidden ITMs are cleaned.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
