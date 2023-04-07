@@ -104,6 +104,7 @@ Bug Fixes
 * Amored trolls have the same stamina as unarmored trolls.
 * All power attacks of trolls use the correct damage modifier.
 * Frost trolls have correctly flagged power attacks.
+* Spectral draugr have correctly flagged power attacks.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
