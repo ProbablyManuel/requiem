@@ -90,6 +90,7 @@ Bug Fixes
 * Ghosts are immune to Teleport Vitals.
 * Clairvoyance (Rank II) is renamed to Vision of the Tenth Eye because the journal refers to its as such.
 * Several hidden ITMs are cleaned.
+* Level 10 axe-wielding bandits do not have Experienced Blocking because it exceeds both their perk count and Block skill.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
