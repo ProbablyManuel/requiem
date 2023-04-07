@@ -82,6 +82,7 @@ Bug Fixes
 * Targe of the Blooded has a more logical description.
 * Aetherial Crown is considered jewelry.
 * Frost breath used by high-level dragons slows the player by the intended amount.
+* Telekinetic Execution, Teleport Vitals, Phantasmal Killer, and feeding as a vampire cannot kill essential actors if the MCM option to make Essential Actors invincible is enabled.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1

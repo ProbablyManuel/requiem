@@ -1,30 +1,26 @@
-Scriptname Req_FeedPenaltyScript extends activemagiceffect  
+ScriptName REQ_FeedPenaltyScript Extends ActiveMagicEffect
 
-SPELL Property Penalty01  Auto  
-SPELL Property Penalty02  Auto  
 
-MagicEffect Property Req_FeedPenaltyEffect01  Auto  
+GlobalVariable Property EssentialNPCs Auto
 
-Event OnEffectStart(actor aktarget, actor akcaster)
+MagicEffect Property Req_FeedPenaltyEffect01 Auto
 
-	If aktarget.hasMagicEffect(Req_FeedPenaltyEffect01) == False
-		Utility.Wait(3)
+Spell Property Penalty01 Auto
+Spell Property Penalty02 Auto
 
-			If aktarget.GetActorValue("Health") <= 125
-				aktarget.KillEssential()
-			EndIf
 
-		Penalty01.cast(aktarget, aktarget)
-
-	ElseIf aktarget.hasMagicEffect(Req_FeedPenaltyEffect01) == True
-		Utility.Wait(3)
-
-			If aktarget.GetActorValue("Health") <= 125
-				aktarget.KillEssential()
-			EndIf
-
-		Penalty02.cast(aktarget, aktarget)
+Event OnEffectStart(Actor akTarget, Actor akCaster)
+	Utility.Wait(3.0)
+	If akTarget.GetActorValue("Health") <= 125.0
+		If EssentialNPCs.GetValue()
+			akTarget.Kill(akCaster)
+		Else
+			akTarget.KillEssential(akCaster)
+		EndIf
+	EndIf
+	If !akTarget.HasMagicEffect(Req_FeedPenaltyEffect01)
+		Penalty01.Cast(akTarget, akTarget)
+	Else
+		Penalty02.Cast(akTarget, akTarget)
 	Endif
-
 EndEvent
-
