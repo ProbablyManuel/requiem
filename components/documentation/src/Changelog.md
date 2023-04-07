@@ -101,6 +101,9 @@ Bug Fixes
 * Keys have proper names.
 * Duplicate key to House Battle-Born is removed.
 * Gallow's Rock Key, Key to Shriekwind Bastion's Safe, and Labyrinthian Chasm Key use a standard model.
+* Amored trolls have the same stamina as unarmored trolls.
+* All power attacks of trolls use the correct damage modifier.
+* Frost trolls have correctly flagged power attacks.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
