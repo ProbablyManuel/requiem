@@ -92,6 +92,7 @@ Bug Fixes
 * Several hidden ITMs are cleaned.
 * Level 10 axe-wielding bandits do not have Experienced Blocking because it exceeds both their perk count and Block skill.
 * Level 12 and higher mace-wielding bandits have Powerful Bashes.
+* Soul Trap has no rank.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
