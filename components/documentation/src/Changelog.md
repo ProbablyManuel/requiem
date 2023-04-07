@@ -18,6 +18,7 @@ Tweaks
 Bug Fixes
 ---------
 
+* A New Order does not fail to start if too many locations have been cleared. (This is an old Skyrim bug and was not caused by Requiem.)
 * Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon.
 * Elemental silver arrows use the correct model.
