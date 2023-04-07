@@ -96,6 +96,11 @@ Bug Fixes
 * Soul Trap has no rank.
 * The random encounter where a thief attempts to pick a locked door and is discovered by guards is not tied to the player's level and Thieves Guild membership.
 * Mzulft Storeroom Key unlocks the gate in the Dwarven Storeroom.
+* Keys have no weight and price.
+* Keys have pick up and put down sounds.
+* Keys have proper names.
+* Duplicate key to House Battle-Born is removed.
+* Gallow's Rock Key, Key to Shriekwind Bastion's Safe, and Labyrinthian Chasm Key use a standard model.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
