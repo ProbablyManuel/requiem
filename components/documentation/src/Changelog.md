@@ -138,6 +138,7 @@ Bug Fixes
 * Nahkriin's Staff has a unique name.
 * Blade of Markarth is renamed to Blade of the Reach.
 * Notched Pickaxe is not a war axe.
+* Talsgar the Wanderer carries a quicksilver crossbow instead of an improved Dawnguard crossbow.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
