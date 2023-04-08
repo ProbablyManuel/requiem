@@ -135,6 +135,7 @@ Bug Fixes
 * Auriel's Bow and Shield are not considered Daedric artifacts.
 * Auriel's Bow and Shield can be sold to merchants who deal in weapons and armors.
 * Giant Clubs are marked as warhammer instead of swords.
+* Nahkriin's Staff has a unique name.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
