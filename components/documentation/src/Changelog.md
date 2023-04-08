@@ -157,6 +157,8 @@ Bug Fixes
 * Falion and Enthir (prior to becoming a fence) do not have a black soul gem in their merchant inventory because they cannot sell it.
 * Lucan does not deal in black market goods.
 * Restore missing property in PaprQF_DA16_000242AF.
+* Mistress of the Dark has a functional casting animation.
+* Mistress of the Dark is not considered a spirit summon.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
