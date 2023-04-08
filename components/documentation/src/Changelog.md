@@ -246,6 +246,7 @@ Bugfixes
 * Power of the Combatant matches the perk description.
 * Soulreaping only deals magic damage.
 * The effects of Fortitude are not displayed in the active magic effects menu.
+* Soul gem fragments cannot be sold as gems.
 
 
 Requiem 5.3.0 - "Around the Fire"
