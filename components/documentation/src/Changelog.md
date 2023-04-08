@@ -247,6 +247,7 @@ Bugfixes
 * Soulreaping only deals magic damage.
 * The effects of Fortitude are not displayed in the active magic effects menu.
 * Soul gem fragments cannot be sold as gems.
+* Falion and Enthir (prior to becoming a fence) do not have a black soul gem in their merchant inventory because they cannot sell it.
 
 
 Requiem 5.3.0 - "Around the Fire"
