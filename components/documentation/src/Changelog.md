@@ -21,6 +21,7 @@ Bug Fixes
 
 * A New Order does not fail to start if too many locations have been cleared. (This is an old Skyrim bug and was not caused by Requiem.)
 * Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
+* Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon.
 * Elemental silver arrows use the correct model.
 * The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
