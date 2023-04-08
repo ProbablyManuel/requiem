@@ -126,6 +126,7 @@ Bug Fixes
 * Astrid, elders, elder vampires, and the Afflicted do not cause stagger with bashes.
 * Astrid, elders, elder vampires, and the Afflicted can make use of power bashes perks.
 * Rusty Mace retains its original damage to ensure the associated scene plays out as expected.
+* Draugr do not carry duplicate shields.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
