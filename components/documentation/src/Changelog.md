@@ -137,6 +137,7 @@ Bug Fixes
 * Giant Clubs are marked as warhammer instead of swords.
 * Nahkriin's Staff has a unique name.
 * Blade of Markarth is renamed to Blade of the Reach.
+* Notched Pickaxe is not a war axe.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
