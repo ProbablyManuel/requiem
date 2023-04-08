@@ -22,13 +22,13 @@ with open("patcher_data/leveled_weapon.json") as fh:
 leveled_items = strict_dict()
 
 
-def generate_leveled_items(editor_id: str,
+def generate_leveled_items(editor_id_template: str,
                            quantities: dict[str: int],
-                           item_slots: list[str]):
-    for item_slot in item_slots:
+                           specifier_list: list[str]):
+    for specifier in specifier_list:
         items = []
-        for item_type_and_set, count in quantities.items():
-            item_editor_id = f'REQ_{item_type_and_set}_{item_slot}'
+        for item_template, count in quantities.items():
+            item_editor_id = "REQ_" + item_template.format(specifier)
             try:
                 form = lookup.form_by_editor_id(item_editor_id)
             except KeyError:
@@ -36,7 +36,7 @@ def generate_leveled_items(editor_id: str,
             data = ["1", form, "1"]
             items += [data.copy() for _ in range(count)]
         items.sort(key=lambda x: lookup.form_to_load_order_form_id(x[1]))
-        key = editor_id.replace("{item_slot}", item_slot)
+        key = editor_id_template.format(specifier)
         value = ",".join(itertools.chain.from_iterable(items))
         leveled_items[key] = value
 
