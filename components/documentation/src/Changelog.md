@@ -141,6 +141,7 @@ Bug Fixes
 * Talsgar the Wanderer carries a quicksilver crossbow instead of an improved Dawnguard crossbow.
 * Leftover navmesh edit from Minor Arcana in Volunruud is removed.
 * Alchemical Intellect does not fortify spells that are not supposed to scale in magnitude or duration.
+* Health bar of werewolves correctly updates when they lose health.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
