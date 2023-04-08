@@ -22,6 +22,7 @@ Bug Fixes
 * A New Order does not fail to start if too many locations have been cleared. (This is an old Skyrim bug and was not caused by Requiem.)
 * Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
 * Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
+* Dispel Soul Gems works are advertised.
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon.
 * Elemental silver arrows use the correct model.
 * The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
@@ -150,6 +151,11 @@ Bug Fixes
 * Boethiah's Embrace states the correct magnitude.
 * Spriggans drop both Taproot and Spriggan Sap at the same time.
 * Magelight is not disabled by Stability.
+* Soulreaping only deals magic damage.
+* The effects of Fortitude are not displayed in the active magic effects menu.
+* Soul gem fragments cannot be sold as gems.
+* Falion and Enthir (prior to becoming a fence) do not have a black soul gem in their merchant inventory because they cannot sell it.
+* Lucan does not deal in black market goods.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
@@ -244,11 +250,6 @@ Bugfixes
 * Material bonus of chainmail armor is correctly named "Slash Protection".
 * Enchanted Imperial armors have proper names.
 * Power of the Combatant matches the perk description.
-* Soulreaping only deals magic damage.
-* The effects of Fortitude are not displayed in the active magic effects menu.
-* Soul gem fragments cannot be sold as gems.
-* Falion and Enthir (prior to becoming a fence) do not have a black soul gem in their merchant inventory because they cannot sell it.
-* Lucan does not deal in black market goods.
 
 
 Requiem 5.3.0 - "Around the Fire"
