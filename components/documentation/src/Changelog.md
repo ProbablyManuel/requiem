@@ -149,6 +149,7 @@ Bug Fixes
 * Spectral Warrior has auto-calculated stats.
 * Boethiah's Embrace states the correct magnitude.
 * Spriggans drop both Taproot and Spriggan Sap at the same time.
+* Magelight is not disabled by Stability.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
