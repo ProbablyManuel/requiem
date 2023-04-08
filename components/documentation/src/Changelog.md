@@ -125,6 +125,7 @@ Bug Fixes
 * Astrid, elders, elder vampires, and the Afflicted have damage multiplier 1.5, stagger 1.0, and stamina multiplier 0.5 for attackPowerStartDualWield (was 1.0, 0.0, and 1.0).
 * Astrid, elders, elder vampires, and the Afflicted do not cause stagger with bashes.
 * Astrid, elders, elder vampires, and the Afflicted can make use of power bashes perks.
+* Rusty Mace retains its original damage to ensure the associated scene plays out as expected.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
