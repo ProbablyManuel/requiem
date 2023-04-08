@@ -102,13 +102,28 @@ Bug Fixes
 * Duplicate key to House Battle-Born is removed.
 * Gallow's Rock Key, Key to Shriekwind Bastion's Safe, and Labyrinthian Chasm Key use a standard model.
 * Amored trolls have the same stamina as unarmored trolls.
-* Power attacks of trolls use the correct damage modifier.
 * Frost trolls have correctly flagged power attacks.
 * Spectral draugr have correctly flagged power attacks.
-* Power attacks of elder vampires use the correct damage modifier.
-* Power attacks of elder vampires cause stagger.
-* Elder vampires use the backwards power attack at the usual frequency.
-* Power attacks of the Afflicted use the correct damage modifier.
+* Trolls have damage multiplier 1.5 for power attacks (was 1.0).
+* Elder vampires have damage multiplier 2.0 for power attacks (was 2.5 or 1.0).
+* Elder vampires cause stagger with all power attacks.
+* Elder vampires have attack chance 0.2 for attackPowerStartBackward (was 0.1).
+* The Afflicted have damage multiplier 2.0 for power attacks (was 1.5).
+* Bretons and Imperial vampires have stagger 1.0 for attackPowerStartDualWield (was 0).
+* Dunmer, Dunmer vampires, Bosmer vampires, and the Afflicted have strike angle 50 for attackStart (was 35).
+* Bosmer have stagger 1.0 for attackPowerStartForwardLeftHand (was 0.5).
+* Bosmer, Breton vampires, and Bosmer vampires have attack chance 0.2 for attackPowerStartInPlace (was 0.5).
+* Bosmer have stagger 1.0 for attackPowerStart_SprintLeftHand (was 0).
+* Nord vampires have stagger 0.5 and no recovery time for attackPowerStartForwardH2HLeftHand (was 0.2)
+* Argonian vampires have damage multiplier 2 for attackPowerStartForwardH2HRightHand (was 5).
+* Dunmer vampires and the Afflicted have stagger 1.0 for attackPowerStartForwardLeftHand (was 2.0).
+* Imperial vampires have no recovery time for attackPowerStartDualWield.
+* Bosmer vampires have stagger 1.0 for attackPowerStartInPlaceLeftHand, attackPowerStartLeftLeftHand, and attackPowerStartRightLeftHand (was 0.5).
+* Bosmer vampires have strike angle 35 for attackPowerStartLeft (was 50).
+* Astrid has stagger 1.0 for attackPowerStartBackLeftHand (was 0).
+* Astrid has damage multiplier 2.0 and stagger 1.0 for attackPowerStartForwardLeftHand (was 1.0 and 0.0)
+* Astrid, elders, elder vampires, and the Afflicted have damage multiplier 1.5, stagger 1.0, and stamina multiplier 0.5 for attackPowerStartDualWield (was 1.0, 0.0, and 1.0).
+* Astrid, elders, elder vampires, and the Afflicted have no stagger for bashStart and bashPowerStart.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
