@@ -142,6 +142,7 @@ Bug Fixes
 * Leftover navmesh edit from Minor Arcana in Volunruud is removed.
 * Alchemical Intellect does not fortify spells that are not supposed to scale in magnitude or duration.
 * Health bar of werewolves correctly updates when they lose health.
+* Price of gourd is not auto-calculated.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
