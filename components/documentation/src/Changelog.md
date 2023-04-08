@@ -134,6 +134,7 @@ Bug Fixes
 * The Longhammer cannot be enchanted.
 * Auriel's Bow and Shield are not considered Daedric artifacts.
 * Auriel's Bow and Shield can be sold to merchants who deal in weapons and armors.
+* Giant Clubs are marked as warhammer instead of swords.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
