@@ -144,6 +144,8 @@ Bug Fixes
 * Health bar of werewolves correctly updates when they lose health.
 * Price of gourd is not auto-calculated.
 * Wuuthrad displays the correct damage when used by an elf.
+* Spectral summons have the same audio template as spectral draugr.
+* Spectral Warrior has auto-calculated stats.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
