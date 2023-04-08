@@ -132,6 +132,8 @@ Bug Fixes
 * Duplicate loading screen regarding heavy armor is disabled.
 * Enchanted items of Fire Abatement increase fire resistance by 40% (was 45%).
 * The Longhammer cannot be enchanted.
+* Auriel's Bow and Shield are not considered Daedric artifacts.
+* Auriel's Bow and Shield can be sold to merchants who deal in weapons and armors.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
