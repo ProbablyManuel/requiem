@@ -244,6 +244,7 @@ Bugfixes
 * Material bonus of chainmail armor is correctly named "Slash Protection".
 * Enchanted Imperial armors have proper names.
 * Power of the Combatant matches the perk description.
+* Soulreaping only deals magic damage.
 
 
 Requiem 5.3.0 - "Around the Fire"
@@ -488,6 +489,7 @@ Internal Quality Improvements (only relevant for modders)
 * LItemDawnguardWarAxe is reverted to its vanilla functionality.
 * csDraugrMissile is removed from the plugin because it's effectively an ITM.
 * Imperial weapon meshes are moved from `Requiem\weapons\imperial\` to `PrvtI\imperial\`.
+* Description of Soulreaping clarifies that the enchantment only works when wielded by a denizen of the Soul Cairn.
 
 
 Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
