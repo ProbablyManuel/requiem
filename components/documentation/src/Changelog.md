@@ -108,6 +108,7 @@ Bug Fixes
 * Power attacks of elder vampires use the correct damage modifier.
 * Power attacks of elder vampires cause stagger.
 * Elder vampires use the backwards power attack at the usual frequency.
+* Power attacks of the Afflicted use the correct damage modifier.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
