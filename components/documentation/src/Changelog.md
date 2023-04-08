@@ -131,6 +131,7 @@ Bug Fixes
 * Kyne's Peace is not affected by Improved Healing.
 * Duplicate loading screen regarding heavy armor is disabled.
 * Enchanted items of Fire Abatement increase fire resistance by 40% (was 45%).
+* The Longhammer cannot be enchanted.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
