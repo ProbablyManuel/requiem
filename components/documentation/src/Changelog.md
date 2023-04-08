@@ -156,6 +156,7 @@ Bug Fixes
 * Soul gem fragments cannot be sold as gems.
 * Falion and Enthir (prior to becoming a fence) do not have a black soul gem in their merchant inventory because they cannot sell it.
 * Lucan does not deal in black market goods.
+* Restore missing property in PaprQF_DA16_000242AF.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
