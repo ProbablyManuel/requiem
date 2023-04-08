@@ -128,6 +128,7 @@ Bug Fixes
 * Rusty Mace retains its original damage to ensure the associated scene plays out as expected.
 * Draugr do not carry duplicate shields.
 * Kyne's Peace is not affected by Improved Healing.
+* Duplicate loading screen regarding heavy armor is disabled.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
