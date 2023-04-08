@@ -146,6 +146,7 @@ Bug Fixes
 * Wuuthrad displays the correct damage when used by an elf.
 * Spectral summons have the same audio template as spectral draugr.
 * Spectral Warrior has auto-calculated stats.
+* Boethiah's Embrace states the correct magnitude.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
