@@ -123,7 +123,8 @@ Bug Fixes
 * Astrid has stagger 1.0 for attackPowerStartBackLeftHand (was 0).
 * Astrid has damage multiplier 2.0 and stagger 1.0 for attackPowerStartForwardLeftHand (was 1.0 and 0.0)
 * Astrid, elders, elder vampires, and the Afflicted have damage multiplier 1.5, stagger 1.0, and stamina multiplier 0.5 for attackPowerStartDualWield (was 1.0, 0.0, and 1.0).
-* Astrid, elders, elder vampires, and the Afflicted have no stagger for bashStart and bashPowerStart.
+* Astrid, elders, elder vampires, and the Afflicted do not cause stagger with bashes.
+* Astrid, elders, elder vampires, and the Afflicted can make use of power bashes perks.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
