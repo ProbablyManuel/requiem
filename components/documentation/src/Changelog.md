@@ -245,6 +245,7 @@ Bugfixes
 * Enchanted Imperial armors have proper names.
 * Power of the Combatant matches the perk description.
 * Soulreaping only deals magic damage.
+* The effects of Fortitude are not displayed in the active magic effects menu.
 
 
 Requiem 5.3.0 - "Around the Fire"
