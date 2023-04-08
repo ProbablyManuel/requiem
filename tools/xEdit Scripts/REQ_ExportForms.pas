@@ -15,6 +15,7 @@ begin
   byFullName.Duplicates := dupIgnore;
 
   signatures := TStringList.Create;
+  signatures.Add('ALCH');
   signatures.Add('ARMO');
   signatures.Add('INGR');
   signatures.Add('MISC');

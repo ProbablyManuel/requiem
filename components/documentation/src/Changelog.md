@@ -14,6 +14,7 @@ Tweaks
 * Quicksilver weapons have the same damage as Dwarven weapons.
 * Updated to Even Better Quest Objectives 1.9.2.
 * Notes have a proper EditorID.
+* Potions and poison do not have a redundant 0 in their EditorID.
 
 Bug Fixes
 ---------
