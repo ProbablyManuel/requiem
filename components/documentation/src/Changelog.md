@@ -102,9 +102,12 @@ Bug Fixes
 * Duplicate key to House Battle-Born is removed.
 * Gallow's Rock Key, Key to Shriekwind Bastion's Safe, and Labyrinthian Chasm Key use a standard model.
 * Amored trolls have the same stamina as unarmored trolls.
-* All power attacks of trolls use the correct damage modifier.
+* Power attacks of trolls use the correct damage modifier.
 * Frost trolls have correctly flagged power attacks.
 * Spectral draugr have correctly flagged power attacks.
+* Power attacks of elder vampires use the correct damage modifier.
+* Power attacks of elder vampires cause stagger.
+* Elder vampires use the backwards power attack at the usual frequency.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
