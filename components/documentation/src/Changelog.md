@@ -147,6 +147,7 @@ Bug Fixes
 * Spectral summons have the same audio template as spectral draugr.
 * Spectral Warrior has auto-calculated stats.
 * Boethiah's Embrace states the correct magnitude.
+* Spriggans drop both Taproot and Spriggan Sap at the same time.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
