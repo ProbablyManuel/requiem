@@ -15,6 +15,7 @@ Tweaks
 * Updated to Even Better Quest Objectives 1.9.2.
 * Notes have a proper EditorID.
 * Potions and poison do not have a redundant 0 in their EditorID.
+* Illumination lasts for 5 minutes (was 10).
 
 Bug Fixes
 ---------
@@ -159,6 +160,7 @@ Bug Fixes
 * Restore missing property in PaprQF_DA16_000242AF.
 * Mistress of the Dark has a functional casting animation.
 * Mistress of the Dark is not considered a spirit summon.
+* Dispeling Candlelight costs no magicka.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
