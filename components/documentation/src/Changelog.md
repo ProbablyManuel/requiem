@@ -161,6 +161,7 @@ Bug Fixes
 * Mistress of the Dark has a functional casting animation.
 * Mistress of the Dark is not considered a spirit summon.
 * Dispeling Candlelight costs no magicka.
+* Akaviri-styled weapons can be crafted at the Atronach Forge.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
