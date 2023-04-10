@@ -163,6 +163,7 @@ Bug Fixes
 * Mistress of the Dark is not considered a spirit summon.
 * Dispeling Candlelight costs no magicka.
 * Akaviri-styled weapons can be crafted at the Atronach Forge.
+* Magical Absorption is not affected by perks that increase the magnitude of Alteration spells.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1

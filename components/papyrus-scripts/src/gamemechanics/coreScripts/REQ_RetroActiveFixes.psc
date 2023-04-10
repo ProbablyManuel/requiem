@@ -19,6 +19,8 @@ Perk Property LocksmithingLore Auto
 Perk Property MasterlyLockpicking Auto
 Perk Property SkeletonKey Auto
 
+Perk Property MagicalAbsorption Auto
+
 Spell Property PlayerWerewolfAbility Auto
 
 Spell Property AetheriumMaterialBonus Auto
@@ -128,5 +130,9 @@ EndFunction
 Function Apply_5_4_1_to_5_4_2_fixes()
     If Player.HasSpell(AncientKnowledge)
         Game.AdvanceSkill("Smithing", 3000.0)
+    EndIf
+    If Player.HasPerk(MagicalAbsorption)
+        Player.RemovePerk(MagicalAbsorption)
+        Player.AddPerk(MagicalAbsorption)
     EndIf
 EndFunction
