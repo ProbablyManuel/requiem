@@ -166,6 +166,7 @@ Bug Fixes
 * Magical Absorption is not affected by perks that increase the magnitude of Alteration spells.
 * Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Elgrim's Elixirs stocks the usual amount of potions and poisons.
+* NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
