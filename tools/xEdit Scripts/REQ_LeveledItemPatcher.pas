@@ -4,7 +4,7 @@ uses REQ_Util;
 
 var
   leveled_items: TStringList;
-  re_ignore, re_leveled_list: TPerlRegEx;
+  re_ignore, re_leveled_equipment, re_leveled_potion: TPerlRegEx;
 
 
 function Initialize: Integer;
@@ -15,8 +15,11 @@ begin
   re_ignore := TPerlRegEx.Create;
   re_ignore.RegEx := '^[^_]+_(?:DEPRECATED|LEGACY|NULL)_.+$';
 
-  re_leveled_list := TPerlRegEx.Create;
-  re_leveled_list.RegEx := '^[^_]+_LI_([^_]+_(?:Heavy|Light|Weapon)_(?:\D+))\d*$';
+  re_leveled_equipment := TPerlRegEx.Create;
+  re_leveled_equipment.RegEx := '^[^_]+_LI_([^_]+_(?:Heavy|Light|Weapon)_(?:\D+))\d*$';
+
+  re_leveled_potion := TPerlRegEx.Create;
+  re_leveled_potion.RegEx := '^[^_]+_LI_(VendorApothecary_\D+)\d*$';
 end;
 
 function Process(e: IInterface): integer;
@@ -27,13 +30,17 @@ begin
   re_ignore.Subject := EditorID(e);
   if re_ignore.Match then Exit;
 
-  re_leveled_list.Subject := EditorID(e);
-  if not re_leveled_list.Match then begin
+  re_leveled_equipment.Subject := EditorID(e);
+  re_leveled_potion.Subject := EditorID(e);
+  if re_leveled_equipment.Match then
+    key := re_leveled_equipment.Groups[1]
+  else if re_leveled_potion.Match then
+    key := re_leveled_potion.Groups[1]
+  else begin
     AddMessage('EditorID ' + EditorID(e) + ' is invalid');
     Exit;
   end;
 
-  key := re_leveled_list.Groups[1];
   if leveled_items.IndexOfName(key) = -1 then begin
     AddMessage('EditorID ' + EditorID(e) + ' is not recognized');
     Exit;
@@ -45,7 +52,7 @@ function Finalize: Integer;
 begin
   leveled_items.Free;
   re_ignore.Free;
-  re_leveled_list.Free;
+  re_leveled_equipment.Free;
 end;
 
 procedure SetItems(e: IInterface; leveled_item: String);

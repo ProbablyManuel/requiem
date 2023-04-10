@@ -164,6 +164,7 @@ Bug Fixes
 * Dispeling Candlelight costs no magicka.
 * Akaviri-styled weapons can be crafted at the Atronach Forge.
 * Magical Absorption is not affected by perks that increase the magnitude of Alteration spells.
+* Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
