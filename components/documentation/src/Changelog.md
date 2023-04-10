@@ -22,6 +22,7 @@ Bug Fixes
 
 * A New Order does not fail to start if too many locations have been cleared. (This is an old Skyrim bug and was not caused by Requiem.)
 * Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
+* Ancient Knowledge grants 3000 Smithing XP to work around an engine limitation that disables tempering with a Smithing skill below 14.
 * Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
 * Dispel Soul Gems works are advertised.
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon.

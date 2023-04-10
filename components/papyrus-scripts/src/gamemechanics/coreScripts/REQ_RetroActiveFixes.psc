@@ -28,6 +28,8 @@ Spell Property ThiefStone Auto
 Spell Property TowerStone Auto
 Spell Property KhajiitLockpicking Auto
 
+Spell Property AncientKnowledge Auto
+
 Function initScript(Int currentVersion, Int nevVersion)
     If currentVersion > 0
         If currentVersion <= 50100 && nevVersion >= 50101
@@ -41,6 +43,9 @@ Function initScript(Int currentVersion, Int nevVersion)
         EndIf
         If currentVersion <= 50301 && nevVersion >= 50400
             Apply_5_3_1_to_5_4_0_fixes()
+        EndIf
+        If currentVersion <= 50401 && nevVersion >= 50402
+            Apply_5_4_1_to_5_4_2_fixes()
         EndIf
     EndIf
 EndFunction
@@ -117,5 +122,11 @@ Function Apply_5_3_1_to_5_4_0_fixes()
     EndIf
     If Player.HasSpell(KhajiitLockpicking)
         Player.RemoveSpell(KhajiitLockpicking)
+    EndIf
+EndFunction
+
+Function Apply_5_4_1_to_5_4_2_fixes()
+    If Player.HasSpell(AncientKnowledge)
+        Game.AdvanceSkill("Smithing", 3000.0)
     EndIf
 EndFunction
