@@ -168,6 +168,7 @@ Bug Fixes
 * Elgrim's Elixirs stocks the usual amount of potions and poisons.
 * NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
 * The Aetherium Forge does not grant Smithing XP.
+* Lunar weapons cannot be disenchanted.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
