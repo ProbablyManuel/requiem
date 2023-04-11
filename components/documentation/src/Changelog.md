@@ -167,6 +167,7 @@ Bug Fixes
 * Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Elgrim's Elixirs stocks the usual amount of potions and poisons.
 * NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
+* The Aetherium Forge does not grant Smithing XP.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
