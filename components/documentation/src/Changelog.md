@@ -170,6 +170,7 @@ Bug Fixes
 * The Aetherium Forge does not grant Smithing XP.
 * Lunar weapons cannot be disenchanted.
 * Troublesome Papyrus script swapping outfits of Imperial guards is removed.
+* Herbalist's Guide to Skyrim is revised to take the removal of Fortify Enchanting into account.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
