@@ -158,7 +158,7 @@ Bug Fixes
 * Soul gem fragments cannot be sold as gems.
 * Falion and Enthir (prior to becoming a fence) do not have a black soul gem in their merchant inventory because they cannot sell it.
 * Lucan does not deal in black market goods.
-* Restore missing property in PaprQF_DA16_000242AF.
+* Restore missing property in QF_DA16_000242AF.
 * Mistress of the Dark has a functional casting animation.
 * Mistress of the Dark is not considered a spirit summon.
 * Dispeling Candlelight costs no magicka.
@@ -169,6 +169,7 @@ Bug Fixes
 * NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
 * The Aetherium Forge does not grant Smithing XP.
 * Lunar weapons cannot be disenchanted.
+* Troublesome Papyrus script swapping outfits of Imperial guards is removed.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
