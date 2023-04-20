@@ -171,6 +171,7 @@ Bug Fixes
 * Lunar weapons cannot be disenchanted.
 * Troublesome Papyrus script swapping outfits of Imperial guards is removed.
 * Herbalist's Guide to Skyrim is revised to take the removal of Fortify Enchanting into account.
+* Bonemold Cuirass of the Squire is renamed to Bonemold Cuirass of the Knight to match its armor type.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
