@@ -16,6 +16,7 @@ Tweaks
 * Notes have a proper EditorID.
 * Potions and poison do not have a redundant 0 in their EditorID.
 * Illumination lasts for 5 minutes (was 10).
+* Dispeling active magic effects with Spellbreaking has a 10 seconds cooldown.
 
 Bug Fixes
 ---------
