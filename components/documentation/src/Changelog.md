@@ -175,6 +175,7 @@ Bug Fixes
 * Description of Fireshock and Iceshock is reworded to clarify the spell applies instantaneously without firing a projectile.
 * Spriggan Matron has more magicka to account for her much higher spell cost.
 * Spriggan Earth Mother has better stats than the Spriggan Matron.
+* Dispel on Target does not dispel active magic effects from the caster.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
