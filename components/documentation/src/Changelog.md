@@ -25,6 +25,7 @@ Bug Fixes
 * Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
 * Dispel Soul Gems works are advertised.
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon, but it can kill Dwarven Centurions.
+* Absorb spells grant XP.
 * Transmute Muscles grants XP.
 * Dremora can be disarmed by the voice.
 * Horse saddles provide the expected armor rating.
