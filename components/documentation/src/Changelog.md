@@ -5,7 +5,7 @@ Tweaks
 ------
 
 * Dispeling active magic effects with Spellbreaking has a 10 seconds cooldown.
-* Power attacks cost 25% of the weapon's weight more stamina.
+* Power attack stamina cost is increased by 25% of the weapon's weight.
 * Quicksilver weapons have the same damage as Dwarven weapons.
 * Stalhrim armors and weapons require steel as secondary component.
 * Transmute Corpus can kill targets with more than 1200 health.
@@ -20,7 +20,7 @@ Bug Fixes
 
 * A New Order does not fail to start if too many locations have been cleared. (This is an old Skyrim bug and was not caused by Requiem.)
 * Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
-* Ancient Knowledge grants 3000 Smithing XP (enough to reach Smithing 14) to work around an engine limitation that disables tempering with a Smithing skill below 14.
+* Ancient Knowledge grants enough XP to reach Smithing skill 14 to work around an engine limitation that disables tempering with Smithing below 14.
 * Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
 * Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
 * Dispel Soul Gems works are advertised.
