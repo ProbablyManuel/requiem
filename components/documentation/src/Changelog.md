@@ -4,38 +4,41 @@ Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
 Tweaks
 ------
 
-* Telekinetic Execution can kill Dwarven Centurions.
-* Transmute Corpus can kill targets with more than 1200 health.
-* Dremora can be disarmed by the voice.
-* Silver arrows do not have a special description that points out that they are made of silver.
-* Stalhrim armors and weapons require steel as secondary component.
-* Description of enchanted ammo states the magnitude without appending "points of damage".
+* Dispeling active magic effects with Spellbreaking has a 10 seconds cooldown.
 * Power attacks cost 25% of the weapon's weight more stamina.
 * Quicksilver weapons have the same damage as Dwarven weapons.
+* Stalhrim armors and weapons require steel as secondary component.
+* Transmute Corpus can kill targets with more than 1200 health.
+* Illumination lasts for 5 minutes (was 10).
+* Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Updated to Even Better Quest Objectives 1.9.2.
 * Notes have a proper EditorID.
 * Potions and poison do not have a redundant 0 in their EditorID.
-* Illumination lasts for 5 minutes (was 10).
-* Dispeling active magic effects with Spellbreaking has a 10 seconds cooldown.
 
 Bug Fixes
 ---------
 
 * A New Order does not fail to start if too many locations have been cleared. (This is an old Skyrim bug and was not caused by Requiem.)
 * Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
-* Ancient Knowledge grants 3000 Smithing XP to work around an engine limitation that disables tempering with a Smithing skill below 14.
+* Ancient Knowledge grants 3000 Smithing XP (enough to reach Smithing 14) to work around an engine limitation that disables tempering with a Smithing skill below 14.
+* Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
 * Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
 * Dispel Soul Gems works are advertised.
-* Telekinetic Execution cannot kill ghosts and the skeletal dragon.
-* Elemental silver arrows use the correct model.
-* The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
+* Telekinetic Execution cannot kill ghosts and the skeletal dragon, but it can kill Dwarven Centurions.
+* Transmute Muscles grants XP.
+* Dremora can be disarmed by the voice.
 * Horse saddles provide the expected armor rating.
+* Invisible foxes in Labyrinthian are restored as skeletons.
+* The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
+* Elemental silver arrows use the correct model.
+* Description of enchanted ammo states the magnitude without appending "points of damage".
+* Silver arrows do not have a special description that points out that they are made of silver.
 * Various typos in magic effect descriptions are fixed.
-* Ranged Combat Training and Marksman's Focus do not reference inexistent weapon weight penalty reduction.
 * Elsi the Spiker has Quarterstaff Focus instead Warhammer Focus.
 * Stalhrim bow and arrow have proper stats.
 * Quicksilver quarterstaff and shortsword are sold by blacksmiths.
 * Forsworn and hagravens have a chance to drop black soul gems regardless of the player's level.
+* Ranged Combat Training and Marksman's Focus do not reference weight penalty reduction (no such feature exists anymore).
 * Arcane Ward spells do not reference spell reflection (no such feature exists).
 * Dark Vision can be casted with one hand.
 * Damage from firewalls on the ground is applied each second.
@@ -43,13 +46,12 @@ Bug Fixes
 * Dualcasting Featherfalling increases duration.
 * Imperial Luck is properly disabled.
 * Trainers are correctly labelled (Common, Expert, Master).
-* Dualcasting Arcane Resonance increases duration instead of magnitude because it did not work.
+* Dualcasting Arcane Resonance increases duration instead of magnitude because this actually works.
 * Cremation does not affect dragons.
 * General Tullius' Sword states the correct magnitude.
 * Hidden Illusion spells cannot be absorbed.
-* Invisible foxes in Labyrinthian are restored as skeletons.
 * Description of Mark & Recall is rephrased to make its behavior clearer.
-* Leadership fortifies Illusion instead of Conjuration a second time.
+* Leadership fortifies Illusion instead of Conjuration twice.
 * Hibernation Spray can be resisted.
 * Bandits are neutral towards prey.
 * Forsworn are friendly towards chickens.
@@ -62,19 +64,17 @@ Bug Fixes
 * Perfected Art has no effect when wearing heavy armor.
 * Pickpocket and Sneak perks that have no effect when wearing heavy armor include heavy shields.
 * Power attack stamina cost penalty when wearing heavy armor without Combat Training includes heavy shields.
-* Wabbajack has no effect when holding a shield.
+* Sanguine's Rose has no effect when holding a shield.
 * Nightingale Sentinels drop ectoplasm instead of arrows.
 * Froki's Bow has proper stats.
 * Firiniel's End has proper stats.
 * A leveled list related to bandits does not unexpectedly spawn Nordic arrows.
-* Transmute Muscles grants XP.
-* Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
 * Destruction Mastery perks only affect Destruction spells.
 * Dremora Warlocks do not known Summon Dremora Archer because they cannot cast the spell.
 * Summon Skeletal Hero can be selected when taking Apprentice Conjuration.
 * Summon Spectral Warrior can be selected when taking Adept Conjuration.
 * Ore veins in Redbelly Mine and Northwind Mine are reverted to their original type. The ore sample from the related quest is updated accordingly.
-* Leftover faction edit from Minor Arcana pertaining Valdr is removed.  
+* Leftover faction edit from Minor Arcana to Valdr is removed.  
 * The easter egg in Helgen has the correct inventory model.
 * All notes have no weight and price.
 * All notes use a handwritten font.
@@ -165,7 +165,6 @@ Bug Fixes
 * Dispeling Candlelight costs no magicka.
 * Akaviri-styled weapons can be crafted at the Atronach Forge.
 * Magical Absorption is not affected by perks that increase the magnitude of Alteration spells.
-* Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Elgrim's Elixirs stocks the usual amount of potions and poisons.
 * NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
 * The Aetherium Forge does not grant Smithing XP.
@@ -173,7 +172,8 @@ Bug Fixes
 * Troublesome Papyrus script swapping outfits of Imperial guards is removed.
 * Herbalist's Guide to Skyrim is revised to take the removal of Fortify Enchanting into account.
 * Bonemold Cuirass of the Squire is renamed to Bonemold Cuirass of the Knight to match its armor type.
-* Description of Fireshock and Iceshock is reworded to clarify the spell applies instantaneously without firing a projectile.
+* Description of Fireshock and Iceshock is rephrased to clarify the spell applies instantaneously without firing a projectile.
+* Description of Soulreaping is rephrased to clarify that the enchantment only works when wielded by a denizen of the Soul Cairn.
 * Spriggan Matron has more magicka to account for her much higher spell cost.
 * Spriggan Earth Mother has better stats than the Spriggan Matron.
 * Dispel on Target does not dispel active magic effects from the caster.
@@ -515,7 +515,6 @@ Internal Quality Improvements (only relevant for modders)
 * LItemDawnguardWarAxe is reverted to its vanilla functionality.
 * csDraugrMissile is removed from the plugin because it's effectively an ITM.
 * Imperial weapon meshes are moved from `Requiem\weapons\imperial\` to `PrvtI\imperial\`.
-* Description of Soulreaping clarifies that the enchantment only works when wielded by a denizen of the Soul Cairn.
 
 
 Requiem 5.2.3 - "The Gathering Storm" Bugfix Pack #3
