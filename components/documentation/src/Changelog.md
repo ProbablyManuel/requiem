@@ -5,6 +5,7 @@ Tweaks
 ------
 
 * Quarterstaff Focus increases armor penetration by 12% per rank (was 8%).
+* Strength of lockpicking enchantments is doubled.
 * Dispelling active magic effects with Spellbreaking has a 10 second cooldown.
 * Power attack stamina cost is increased by 25% of the weapon's weight to compensate for the previous removal of weapon weight from the Mass Effect.
 * Quicksilver weapons have the same damage as Dwarven weapons.
