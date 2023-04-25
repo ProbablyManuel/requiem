@@ -521,38 +521,6 @@ State REQ_Skills_NoSmithingBooks
 
 EndState
 
-State REQ_Debug_ExhaustionReset
-
-    Event OnSelectST()
-        data.REQ_Debug_ExhaustionReset.SetValueInt((!(data.REQ_Debug_ExhaustionReset.GetValueInt() as Bool)) as Int )
-        SetToggleOptionValueST(data.REQ_Debug_ExhaustionReset.GetValueInt() as Bool)
-    Game.GetPlayer().RemovePerk(data.REQ_MechanicsPerk_Stress_Exhaustion)
-    ShowMessage("$REQ_Debug_ExhaustionReset_popup", False)
-    While Utility.IsInMenuMode()
-        Utility.Wait(1)
-    EndWhile
-    Game.GetPlayer().AddPerk(data.REQ_MechanicsPerk_Stress_Exhaustion)
-    data.REQ_Debug_ExhaustionReset.SetValueInt(0)
-    EndEvent
-
-    Event OnDefaultST()
-        data.REQ_Debug_ExhaustionReset.SetValueInt( 0.0 as Int)
-        SetToggleOptionValueST(data.REQ_Debug_ExhaustionReset.GetValueInt() as Bool)
-    Game.GetPlayer().RemovePerk(data.REQ_MechanicsPerk_Stress_Exhaustion)
-    ShowMessage("$REQ_Debug_ExhaustionReset_popup", False)
-    While Utility.IsInMenuMode()
-        Utility.Wait(1)
-    EndWhile
-    Game.GetPlayer().AddPerk(data.REQ_MechanicsPerk_Stress_Exhaustion)
-    data.REQ_Debug_ExhaustionReset.SetValueInt(0)
-    EndEvent
-
-    Event OnHighlightST()
-        SetInfoText("$REQ_REQ_Debug_ExhaustionReset_highlight")
-    EndEvent
-
-EndState
-
 State REQ_Atmosphere_VampireRandomCarnage
 
     Event OnSelectST()
@@ -633,6 +601,5 @@ Event OnPageReset(String page)
         AddToggleOptionST("REQ_Debug_ArmorTraining","$REQ_REQ_Debug_ArmorTraining",data.REQ_Debug_ArmorTraining.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Compatibility_AttackSpeed","$REQ_REQ_Compatibility_AttackSpeed",data.REQ_Compatibility_AttackSpeed.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Debug_OnHit","$REQ_REQ_Debug_OnHit",data.REQ_Debug_OnHit.GetValueInt() as Bool)
-        AddToggleOptionST("REQ_Debug_ExhaustionReset","$REQ_REQ_Debug_ExhaustionReset",data.REQ_Debug_ExhaustionReset.GetValueInt() as Bool)
     EndIf
 EndEvent

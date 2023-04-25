@@ -1,3 +1,186 @@
+Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
+===================================================
+
+Tweaks
+------
+
+* Dispelling active magic effects with Spellbreaking has a 10 second cooldown.
+* Power attack stamina cost is increased by 25% of the weapon's weight to compensate for the previous removal of weapon weight from the Mass Effect.
+* Quicksilver weapons have the same damage as Dwarven weapons.
+* Stalhrim armors and weapons require steel as secondary component.
+* Transmute Corpus can kill targets with more than 1200 health.
+* Illumination lasts for 5 minutes (was 10).
+* Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
+* Updated to Even Better Quest Objectives 1.9.2.
+* Notes have a proper EditorID.
+* Potions and poison do not have a redundant 0 in their EditorID.
+
+Bug Fixes
+---------
+
+* A New Order does not fail to start if too many locations have been cleared. (This is an old Skyrim bug and was not caused by Requiem.)
+* Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
+* Ancient Knowledge grants enough XP to reach Smithing skill 14 to work around an engine limitation that disables tempering with Smithing below 14.
+* Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
+* Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
+* Dispel Soul Gems works are advertised.
+* Telekinetic Execution cannot kill ghosts and the skeletal dragon.
+* Telekinetic Execution can kill Dwarven Centurions.
+* Absorb spells grant XP.
+* Transmute Muscles grants XP.
+* Dremora can be disarmed by the voice.
+* Horse saddles provide the expected armor rating.
+* Invisible foxes in Labyrinthian are restored as skeletons.
+* The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
+* Elemental silver arrows use the correct model.
+* Description of enchanted ammo states the magnitude without appending "points of damage".
+* Silver arrows do not have a special description that points out that they are made of silver.
+* Various typos in magic effect descriptions are fixed.
+* Elsi the Spiker has Quarterstaff Focus instead Warhammer Focus.
+* Stalhrim bow and arrow have proper stats.
+* Quicksilver quarterstaff and shortsword are sold by blacksmiths.
+* Forsworn and hagravens have a chance to drop black soul gems regardless of the player's level.
+* Ranged Combat Training and Marksman's Focus do not reference weight penalty reduction (no such feature exists anymore).
+* Arcane Ward spells do not reference spell reflection (no such feature exists).
+* Dark Vision can be cast with one hand.
+* Damage from firewalls on the ground is applied each second.
+* Mistress of the Dark can be resisted.
+* Dualcasting Featherfalling increases duration.
+* Imperial Luck is properly disabled.
+* Trainers are correctly labelled (Common, Expert, Master).
+* Dualcasting Arcane Resonance increases duration instead of magnitude because this actually works.
+* Cremation does not affect dragons.
+* General Tullius' Sword states the correct magnitude.
+* Hidden Illusion spells cannot be absorbed.
+* Description of Mark & Recall is rephrased to make its behavior clearer.
+* Leadership fortifies Illusion instead of Conjuration twice.
+* Hibernation Spray can be resisted.
+* Bandits are neutral towards prey.
+* Forsworn are friendly towards chickens.
+* Charmed Necklace has a less immersive but correctly spelled description.
+* Dagger Focus I states the correct sneak attack bonus.
+* Mistress of the Dark and Shadow Simulacrum do not increase health and Illusion of nearby summons.
+* Dunmer receive 3% more Alteration, Evasion, Illusion, and Sneak XP instead of Destruction and One-Handed a second time.
+* Inoperative Stamina Drain Reset is removed from the MCM.
+* Rapidly activating shrines does not grant the blessing multiple times.
+* Perfected Art has no effect when wearing heavy armor.
+* Pickpocket and Sneak perks that have no effect when wearing heavy armor include heavy shields.
+* Power attack stamina cost penalty when wearing heavy armor without Combat Training includes heavy shields.
+* Sanguine's Rose has no effect when holding a shield.
+* Nightingale Sentinels drop ectoplasm instead of arrows.
+* Froki's Bow has proper stats.
+* Firiniel's End has proper stats.
+* A leveled list related to bandits does not unexpectedly spawn Nordic arrows.
+* Destruction Mastery perks only affect Destruction spells.
+* Dremora Warlocks do not known Summon Dremora Archer because they cannot cast the spell.
+* Summon Skeletal Hero can be selected when taking Apprentice Conjuration.
+* Summon Spectral Warrior can be selected when taking Adept Conjuration.
+* Ore veins in Redbelly Mine and Northwind Mine are reverted to their original type. The ore sample from the related quest is updated accordingly.
+* Leftover faction edit from Minor Arcana to Valdr is removed.
+* The easter egg in Helgen has the correct inventory model.
+* All notes have no weight and price.
+* All notes use a handwritten font.
+* Disarm shout of dragons can be resisted.
+* Pickpocketing Brand-Shei during A Chance Arrangement uses the standard pickpocketing formula.
+* The merchant chest in Understone Keep does not block a bed roll.
+* Bolgeir Bearclaw does not carry a duplicate sword.
+* Vigilant Tyranus does not carry a duplicate amulet.
+* Ulfric always carries his shield.
+* Rockjoint reduces damage instead of armor penetration.
+* Vampire armor cannot be sold as clothing.
+* Targe of the Blooded cannot be enchanted.
+* Targe of the Blooded has a more logical description.
+* Aetherial Crown is considered jewelry.
+* Frost breath used by high-level dragons slows the player by the intended amount.
+* Telekinetic Execution, Teleport Vitals, Phantasmal Killer, and feeding as a vampire cannot kill essential actors if the MCM option to make Essential Actors invincible is enabled.
+* Transmute Corpus can kill unique or essentials actors.
+* Transmute Corpus does not damage immune targets.
+* Summons are immune to Transmute Corpus.
+* Ghosts are immune to Teleport Vitals.
+* Clairvoyance (Rank II) is renamed to Vision of the Tenth Eye because the journal refers to it as such.
+* Several hidden ITMs are cleaned.
+* Level 10 axe-wielding bandits do not have Experienced Blocking because it exceeds both their perk count and Block skill.
+* Level 12 and higher mace-wielding bandits have Powerful Bashes.
+* Soul Trap has no rank.
+* The random encounter where a thief attempts to pick a locked door and is discovered by guards is not tied to the player's level and Thieves Guild membership.
+* Mzulft Storeroom Key unlocks the gate in the Dwarven Storeroom.
+* Keys have no weight and price.
+* Keys have pick up and put down sounds.
+* Keys have proper names.
+* Duplicate key to House Battle-Born is removed.
+* Gallow's Rock Key, Key to Shriekwind Bastion's Safe, and Labyrinthian Chasm Key use a standard model.
+* Armored trolls have the same stamina as unarmored trolls.
+* Frost trolls have correctly flagged power attacks.
+* Spectral draugr have correctly flagged power attacks.
+* Trolls have damage multiplier 1.5 for power attacks (was 1.0).
+* Elder vampires have damage multiplier 2.0 for power attacks (was 2.5 or 1.0).
+* Elder vampires cause stagger with all power attacks.
+* Elder vampires have attack chance 0.2 for attackPowerStartBackward (was 0.1).
+* The Afflicted have damage multiplier 2.0 for power attacks (was 1.5).
+* Bretons and Imperial vampires have stagger 1.0 for attackPowerStartDualWield (was 0).
+* Dunmer, Dunmer vampires, Bosmer vampires, and the Afflicted have strike angle 50 for attackStart (was 35).
+* Bosmer have stagger 1.0 for attackPowerStartForwardLeftHand (was 0.5).
+* Bosmer, Breton vampires, and Bosmer vampires have attack chance 0.2 for attackPowerStartInPlace (was 0.5).
+* Bosmer have stagger 1.0 for attackPowerStart_SprintLeftHand (was 0).
+* Nord vampires have stagger 0.5 and no recovery time for attackPowerStartForwardH2HLeftHand (was 0.2)
+* Argonian vampires have damage multiplier 2 for attackPowerStartForwardH2HRightHand (was 5).
+* Dunmer vampires and the Afflicted have stagger 1.0 for attackPowerStartForwardLeftHand (was 2.0).
+* Imperial vampires have no recovery time for attackPowerStartDualWield.
+* Bosmer vampires have stagger 1.0 for attackPowerStartInPlaceLeftHand, attackPowerStartLeftLeftHand, and attackPowerStartRightLeftHand (was 0.5).
+* Bosmer vampires have strike angle 35 for attackPowerStartLeft (was 50).
+* Astrid has stagger 1.0 for attackPowerStartBackLeftHand (was 0).
+* Astrid has damage multiplier 2.0 and stagger 1.0 for attackPowerStartForwardLeftHand (was 1.0 and 0.0)
+* Astrid, elders, elder vampires, and the Afflicted have damage multiplier 1.5, stagger 1.0, and stamina multiplier 0.5 for attackPowerStartDualWield (was 1.0, 0.0, and 1.0).
+* Astrid, elders, elder vampires, and the Afflicted do not cause stagger with bashes.
+* Astrid, elders, elder vampires, and the Afflicted can make use of power bashes perks.
+* Rusty Mace retains its original damage to ensure the associated scene plays out as expected.
+* Draugr do not carry duplicate shields.
+* Kyne's Peace is not affected by Improved Healing.
+* Duplicate loading screen regarding heavy armor is disabled.
+* Enchanted items of Fire Abatement increase fire resistance by 40% (was 45%).
+* The Longhammer cannot be enchanted.
+* Auriel's Bow and Shield are not considered Daedric artifacts.
+* Auriel's Bow and Shield can be sold to merchants who deal in weapons and armors.
+* Giant Clubs are marked as warhammer instead of swords.
+* Nahkriin's Staff has a unique name.
+* Blade of Markarth is renamed to Blade of the Reach.
+* Notched Pickaxe is not a war axe.
+* Talsgar the Wanderer carries a quicksilver crossbow instead of an improved Dawnguard crossbow.
+* Leftover navmesh edit from Minor Arcana in Volunruud is removed.
+* Alchemical Intellect does not fortify spells that are not supposed to scale in magnitude or duration.
+* Health bar of werewolves correctly updates when they lose health.
+* Price of gourd is not auto-calculated.
+* Wuuthrad displays the correct damage when used by an elf.
+* Spectral summons have the same audio template as spectral draugr.
+* Spectral Warrior has auto-calculated stats.
+* Boethiah's Embrace states the correct magnitude.
+* Spriggans drop both Taproot and Spriggan Sap at the same time.
+* Magelight is not disabled by Stability.
+* Soulreaping only deals magic damage.
+* The effects of Fortitude are not displayed in the active magic effects menu.
+* Soul gem fragments cannot be sold as gems.
+* Falion and Enthir (prior to becoming a fence) do not have a black soul gem in their merchant inventory because they cannot sell it.
+* Lucan does not deal in black market goods.
+* Restore missing property in QF_DA16_000242AF.
+* Mistress of the Dark has a functional casting animation.
+* Mistress of the Dark is not considered a spirit summon.
+* Dispeling Candlelight costs no magicka.
+* Akaviri-styled weapons can be crafted at the Atronach Forge.
+* Magical Absorption is not affected by perks that increase the magnitude of Alteration spells.
+* Elgrim's Elixirs stocks the normal amount of potions and poisons.
+* NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
+* The Aetherium Forge does not grant Smithing XP.
+* Lunar weapons cannot be disenchanted.
+* Troublesome Papyrus script swapping outfits of Imperial guards is removed.
+* Herbalist's Guide to Skyrim is revised to take the removal of Fortify Enchanting into account.
+* Bonemold Cuirass of the Squire is renamed to Bonemold Cuirass of the Knight to match its armor type.
+* Description of Fireshock and Iceshock is rephrased to clarify the spell applies instantaneously without firing a projectile.
+* Description of Soulreaping is rephrased to clarify that the enchantment only works when wielded by a denizen of the Soul Cairn.
+* Spriggan Matron has more magicka to account for her much higher spell cost.
+* Spriggan Earth Mother has better stats than the Spriggan Matron.
+* Dispel on Target does not dispel active magic effects from the caster.
+
+
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
 ===================================================
 

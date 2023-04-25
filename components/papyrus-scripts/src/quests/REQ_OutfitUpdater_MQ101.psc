@@ -13,23 +13,13 @@ Armor Property PrisonerBoots Auto
 Armor Property PlayerRobe Auto
 Armor Property PlayerBoots Auto
 
-Spell Property TemperingAbility Auto
-
 Event OnDeath(Actor akKiller)
 	Actor Player = Game.GetPlayer()
-	Player.RemoveItem(PrisonerClothes, 1, true)
-	Player.RemoveItem(PrisonerBoots, 1, true)
-	Player.EquipItem(PlayerRobe, false, true)
-	Player.EquipItem(PlayerBoots, false, true)
+	Player.RemoveItem(PrisonerClothes, 1, True)
+	Player.RemoveItem(PrisonerBoots, 1, True)
+	Player.EquipItem(PlayerRobe, False, True)
+	Player.EquipItem(PlayerBoots, False, True)
 	Hadvar.SetOutfit(Outfit_Hadvar)
-	(Hadvar as REQ_NPCData).TE_already_tempered = false
-	Hadvar.RemoveSpell(TemperingAbility)
-	Utility.Wait(1)
-	Hadvar.AddSpell(TemperingAbility)
-	Utility.Wait(30)
+	Utility.Wait(30.0)
 	Ralof.SetOutfit(Outfit_Ralof)
-	(Ralof as REQ_NPCData).TE_already_tempered = false
-	Ralof.RemoveSpell(TemperingAbility)
-	Utility.Wait(1)
-	Ralof.AddSpell(TemperingAbility)
 EndEvent
