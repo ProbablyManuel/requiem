@@ -4,6 +4,7 @@ Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
 Tweaks
 ------
 
+* Quarterstaff Focus increases armor penetration by 12% per rank (was 8%).
 * Dispelling active magic effects with Spellbreaking has a 10 second cooldown.
 * Power attack stamina cost is increased by 25% of the weapon's weight to compensate for the previous removal of weapon weight from the Mass Effect.
 * Quicksilver weapons have the same damage as Dwarven weapons.
@@ -248,7 +249,7 @@ Tweaks
 * Unique rings are removed from (one-off) fishing junk drops and placed in different locations guarded by an appropriately challenging encounter. The vacant drops are replaced with other interesting items.
 * Ring of the Khajiit increases movement speed by 15% while sneaking (was 10% at all times).
 * Ring of the Wind increases movement speed by 10% (was 15%).
-* Quarterstaff Focus increases AP by 8% per rank (was 7%).
+* Quarterstaff Focus increases armor penetration by 8% per rank (was 7%).
 * Damage of quarterstaffs is increased by 3 and stagger by 0.15.
 * Weight of battlestaffs is decreased by 5.
 

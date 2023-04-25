@@ -21,6 +21,10 @@ Perk Property SkeletonKey Auto
 
 Perk Property MagicalAbsorption Auto
 
+Perk Property QuarterstaffFocus1 Auto
+Perk Property QuarterstaffFocus2 Auto
+Perk Property QuarterstaffFocus3 Auto
+
 Spell Property PlayerWerewolfAbility Auto
 
 Spell Property AetheriumMaterialBonus Auto
@@ -134,5 +138,17 @@ Function Apply_5_4_1_to_5_4_2_fixes()
     If Player.HasPerk(MagicalAbsorption)
         Player.RemovePerk(MagicalAbsorption)
         Player.AddPerk(MagicalAbsorption)
+    EndIf
+    If Player.HasPerk(QuarterstaffFocus1)
+        Player.RemovePerk(QuarterstaffFocus1)
+        Player.AddPerk(QuarterstaffFocus1)
+    EndIf
+    If Player.HasPerk(QuarterstaffFocus2)
+        Player.RemovePerk(QuarterstaffFocus2)
+        Player.AddPerk(QuarterstaffFocus2)
+    EndIf
+    If Player.HasPerk(QuarterstaffFocus3)
+        Player.RemovePerk(QuarterstaffFocus3)
+        Player.AddPerk(QuarterstaffFocus3)
     EndIf
 EndFunction
