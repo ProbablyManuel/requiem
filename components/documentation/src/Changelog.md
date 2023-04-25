@@ -32,6 +32,7 @@ Bug Fixes
 * Dremora can be disarmed by the voice.
 * Horse saddles provide the expected armor rating.
 * Invisible foxes in Labyrinthian are restored as skeletons.
+* The hood of skeleton mages does not stretch upon death.
 * The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
 * Elemental silver arrows use the correct model.
 * Description of enchanted ammo states the magnitude without appending "points of damage".
