@@ -4,8 +4,8 @@ Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
 Tweaks
 ------
 
-* Dispeling active magic effects with Spellbreaking has a 10 seconds cooldown.
-* Power attack stamina cost is increased by 25% of the weapon's weight.
+* Dispelling active magic effects with Spellbreaking has a 10 second cooldown.
+* Power attack stamina cost is increased by 25% of the weapon's weight to compensate for the previous removal of weapon weight from the Mass Effect.
 * Quicksilver weapons have the same damage as Dwarven weapons.
 * Stalhrim armors and weapons require steel as secondary component.
 * Transmute Corpus can kill targets with more than 1200 health.
@@ -24,7 +24,8 @@ Bug Fixes
 * Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
 * Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
 * Dispel Soul Gems works are advertised.
-* Telekinetic Execution cannot kill ghosts and the skeletal dragon, but it can kill Dwarven Centurions.
+* Telekinetic Execution cannot kill ghosts and the skeletal dragon.
+* Telekinetic Execution can kill Dwarven Centurions.
 * Absorb spells grant XP.
 * Transmute Muscles grants XP.
 * Dremora can be disarmed by the voice.
@@ -41,7 +42,7 @@ Bug Fixes
 * Forsworn and hagravens have a chance to drop black soul gems regardless of the player's level.
 * Ranged Combat Training and Marksman's Focus do not reference weight penalty reduction (no such feature exists anymore).
 * Arcane Ward spells do not reference spell reflection (no such feature exists).
-* Dark Vision can be casted with one hand.
+* Dark Vision can be cast with one hand.
 * Damage from firewalls on the ground is applied each second.
 * Mistress of the Dark can be resisted.
 * Dualcasting Featherfalling increases duration.
@@ -75,12 +76,12 @@ Bug Fixes
 * Summon Skeletal Hero can be selected when taking Apprentice Conjuration.
 * Summon Spectral Warrior can be selected when taking Adept Conjuration.
 * Ore veins in Redbelly Mine and Northwind Mine are reverted to their original type. The ore sample from the related quest is updated accordingly.
-* Leftover faction edit from Minor Arcana to Valdr is removed.  
+* Leftover faction edit from Minor Arcana to Valdr is removed.
 * The easter egg in Helgen has the correct inventory model.
 * All notes have no weight and price.
 * All notes use a handwritten font.
 * Disarm shout of dragons can be resisted.
-* Pickpocking Brand-Shei during A Chance Arrangement uses the standard pickpocketing formula.
+* Pickpocketing Brand-Shei during A Chance Arrangement uses the standard pickpocketing formula.
 * The merchant chest in Understone Keep does not block a bed roll.
 * Bolgeir Bearclaw does not carry a duplicate sword.
 * Vigilant Tyranus does not carry a duplicate amulet.
@@ -96,7 +97,7 @@ Bug Fixes
 * Transmute Corpus does not damage immune targets.
 * Summons are immune to Transmute Corpus.
 * Ghosts are immune to Teleport Vitals.
-* Clairvoyance (Rank II) is renamed to Vision of the Tenth Eye because the journal refers to its as such.
+* Clairvoyance (Rank II) is renamed to Vision of the Tenth Eye because the journal refers to it as such.
 * Several hidden ITMs are cleaned.
 * Level 10 axe-wielding bandits do not have Experienced Blocking because it exceeds both their perk count and Block skill.
 * Level 12 and higher mace-wielding bandits have Powerful Bashes.
@@ -108,7 +109,7 @@ Bug Fixes
 * Keys have proper names.
 * Duplicate key to House Battle-Born is removed.
 * Gallow's Rock Key, Key to Shriekwind Bastion's Safe, and Labyrinthian Chasm Key use a standard model.
-* Amored trolls have the same stamina as unarmored trolls.
+* Armored trolls have the same stamina as unarmored trolls.
 * Frost trolls have correctly flagged power attacks.
 * Spectral draugr have correctly flagged power attacks.
 * Trolls have damage multiplier 1.5 for power attacks (was 1.0).
@@ -166,7 +167,7 @@ Bug Fixes
 * Dispeling Candlelight costs no magicka.
 * Akaviri-styled weapons can be crafted at the Atronach Forge.
 * Magical Absorption is not affected by perks that increase the magnitude of Alteration spells.
-* Elgrim's Elixirs stocks the usual amount of potions and poisons.
+* Elgrim's Elixirs stocks the normal amount of potions and poisons.
 * NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
 * The Aetherium Forge does not grant Smithing XP.
 * Lunar weapons cannot be disenchanted.
