@@ -49,6 +49,31 @@ begin
   Result := nil;
 end;
 
+function CreateOrGetFile(asFile: String): IwbFile;
+var
+  i: Integer;
+begin
+  for i := 0 to Pred(FileCount) do begin
+    if GetFileName(FileByIndex(i)) = asFile then begin
+      Result := FileByIndex(i);
+      Exit;
+    end;
+  end;
+  Result := AddNewFileName(asFile);
+end;
+
+procedure AddAllMastersToFile(aeFile: IwbFile);
+var
+  i: Integer;
+begin
+  for i := 0 to Pred(FileCount) do begin
+    if Equals(aeFile, FileByIndex(i)) then
+      Exit;
+    if i <> 1 then
+      AddMasterIfMissing(aeFile, GetFileName(FileByIndex(i)));
+  end;
+end;
+
 function PairToLoadOrderFormID(asFormIDPair: String): Integer;
 var
   formIDPair: TStringList;
