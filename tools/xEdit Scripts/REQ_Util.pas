@@ -118,4 +118,28 @@ begin
   end;
 end;
 
+function StrToEditorID(s: String): String;
+var
+  i: Integer;
+  word: String;
+  words: TStringList;
+  re: TPerlRegEx;
+begin
+  re := TPerlRegEx.Create;
+  re.RegEx := '[^a-zA-Z0-9_ ]';
+  re.Subject := s;
+  re.Replacement := '';
+  re.ReplaceAll;
+  words := TStringList.Create;
+  words.DelimitedText := re.Subject;
+  Result := '';
+  for i := 0 to Pred(words.Count) do begin
+    word := words[i];
+    word := UpperCase(word[1]) + Copy(word, 2, Length(word));
+    Result := Result + word;
+  end;
+  words.Free;
+  re.Free;
+end;
+
 end.
