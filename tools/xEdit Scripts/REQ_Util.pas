@@ -77,4 +77,45 @@ begin
   Result := Add(group, asSignature, True);
 end;
 
+function GetSingleReferencedBy(e: IInterface; s: String): IInterface;
+var
+  r: IInterface;
+  i: Integer;
+begin
+  Result := nil;
+  for i := 0 to Pred(ReferencedByCount(e)) do begin
+    r := ReferencedByIndex(e, i);
+    if (Signature(r) <> s) or not IsWinningOverride(r) then
+      Continue;
+    if Assigned(Result) then begin
+      Result := nil;
+      Exit;
+    end
+    else
+      Result := r;
+  end;
+end;
+
+function GetSingleReferencedByRegex(e: IInterface; s: String; re: TPerlRegEx): IInterface;
+var
+  r: IInterface;
+  i: Integer;
+begin
+  Result := nil;
+  for i := 0 to Pred(ReferencedByCount(e)) do begin
+    r := ReferencedByIndex(e, i);
+    if (Signature(r) <> s) or not IsWinningOverride(r) then
+      Continue;
+    re.Subject := EditorID(r);
+    if not re.Match then
+      Continue;
+    if Assigned(Result) then begin
+      Result := nil;
+      Exit;
+    end
+    else
+      Result := r;
+  end;
+end;
+
 end.

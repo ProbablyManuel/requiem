@@ -111,6 +111,14 @@ The EditorID of the template weapon and enchantment must adhere to the [EditorID
 
 At the end, the user is given the option to save all generated EditorIDs in a file, which can be used to provide an overview over all enchanted variants.
 
+REQ_NameMagicEffect.pas
+-----------------------
+
+Set the EditorID of the selected magic effects based on the referencing spells.
+
+The EditorID of the spells must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#spells-spel-records). The spells may have an arbitrary mod prefix (not just "REQ").
+
+
 REQ_NameRecipe.pas
 ------------------
 
