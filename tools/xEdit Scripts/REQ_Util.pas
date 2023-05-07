@@ -49,6 +49,31 @@ begin
   Result := nil;
 end;
 
+function CreateOrGetFile(asFile: String): IwbFile;
+var
+  i: Integer;
+begin
+  for i := 0 to Pred(FileCount) do begin
+    if GetFileName(FileByIndex(i)) = asFile then begin
+      Result := FileByIndex(i);
+      Exit;
+    end;
+  end;
+  Result := AddNewFileName(asFile);
+end;
+
+procedure AddAllMastersToFile(aeFile: IwbFile);
+var
+  i: Integer;
+begin
+  for i := 0 to Pred(FileCount) do begin
+    if Equals(aeFile, FileByIndex(i)) then
+      Exit;
+    if i <> 1 then
+      AddMasterIfMissing(aeFile, GetFileName(FileByIndex(i)));
+  end;
+end;
+
 function PairToLoadOrderFormID(asFormIDPair: String): Integer;
 var
   formIDPair: TStringList;
@@ -75,6 +100,71 @@ begin
   else
     group := Add(aeFile, asSignature, True);
   Result := Add(group, asSignature, True);
+end;
+
+function GetSingleReferencedBy(e: IInterface; s: String): IInterface;
+var
+  r: IInterface;
+  i: Integer;
+begin
+  Result := nil;
+  for i := 0 to Pred(ReferencedByCount(e)) do begin
+    r := ReferencedByIndex(e, i);
+    if (Signature(r) <> s) or not IsWinningOverride(r) then
+      Continue;
+    if Assigned(Result) then begin
+      Result := nil;
+      Exit;
+    end
+    else
+      Result := r;
+  end;
+end;
+
+function GetSingleReferencedByRegex(e: IInterface; s: String; re: TPerlRegEx): IInterface;
+var
+  r: IInterface;
+  i: Integer;
+begin
+  Result := nil;
+  for i := 0 to Pred(ReferencedByCount(e)) do begin
+    r := ReferencedByIndex(e, i);
+    if (Signature(r) <> s) or not IsWinningOverride(r) then
+      Continue;
+    re.Subject := EditorID(r);
+    if not re.Match then
+      Continue;
+    if Assigned(Result) then begin
+      Result := nil;
+      Exit;
+    end
+    else
+      Result := r;
+  end;
+end;
+
+function StrToEditorID(s: String): String;
+var
+  i: Integer;
+  word: String;
+  words: TStringList;
+  re: TPerlRegEx;
+begin
+  re := TPerlRegEx.Create;
+  re.RegEx := '[^a-zA-Z0-9_ ]';
+  re.Subject := s;
+  re.Replacement := '';
+  re.ReplaceAll;
+  words := TStringList.Create;
+  words.DelimitedText := re.Subject;
+  Result := '';
+  for i := 0 to Pred(words.Count) do begin
+    word := words[i];
+    word := UpperCase(word[1]) + Copy(word, 2, Length(word));
+    Result := Result + word;
+  end;
+  words.Free;
+  re.Free;
 end;
 
 end.
