@@ -14,8 +14,9 @@ Tweaks
 * Illumination lasts for 5 minutes (was 10).
 * Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Updated to Even Better Quest Objectives 1.9.2.
+* Magic effects used by standard spells have improved names and EditorIDs.
 * Spells have improved EditorIDs.
-* Notes have a proper EditorID.
+* Notes have improved EditorIDs.
 * Potions and poison do not have a redundant 0 in their EditorID.
 
 Bug Fixes
@@ -183,6 +184,8 @@ Bug Fixes
 * Spriggan Matron has more magicka to account for her much higher spell cost.
 * Spriggan Earth Mother has better stats than the Spriggan Matron.
 * Dispel on Target does not dispel active magic effects from the caster.
+* Secondary magic effects are assigned their respective school of magic.
+* NPC-exclusive wards have the correct name.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
