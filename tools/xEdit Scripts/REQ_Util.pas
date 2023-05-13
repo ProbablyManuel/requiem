@@ -74,11 +74,11 @@ begin
   end;
 end;
 
-function PairToLoadOrderFormID(asFormIDPair: String): Integer;
+function PairToLoadOrderFormID(asFormIDPair: String): Cardinal;
 var
   formIDPair: TStringList;
   e, f: IInterface;
-  nativeFormID: Integer;
+  nativeFormID: Cardinal;
 begin
   formIDPair := TStringList.Create;
   formIDPair.Delimiter := ':';
@@ -165,6 +165,85 @@ begin
   end;
   words.Free;
   re.Free;
+end;
+
+function KeywordToLoadOrderFormID(asKeyword: String): Cardinal;
+var
+  i, j: Integer;
+  e, f, g: IInterface;
+begin
+  for i := 0 to Pred(FileCount) do begin
+    f := FileByIndex(i);
+    g := GroupBySignature(f, 'KYWD');
+    for j := 0 to Pred(ElementCount(g)) do begin
+      e := ElementByIndex(g, j);
+      if EditorID(e) = asKeyword then begin
+        Result := GetLoadOrderFormID(e);
+        Exit;
+      end;
+    end;
+  end;
+  Result := 0;
+end;
+
+function HasKeyword(aeElement: IwbElement; asKeyword: String): Boolean;
+var
+  kwda: IwbElement;
+  i: Integer;
+begin
+  kwda := ElementByPath(aeElement, 'KWDA');
+  for i := 0 to Pred(ElementCount(kwda)) do
+    if EditorID(LinksTo(ElementByIndex(kwda, i))) = asKeyword then begin
+      Result := True;
+      Exit;
+    end;
+  Result := False;
+end;
+
+procedure AddKeyword(aeElement: IwbElement; asKeyword: String);
+var
+  keyword: Cardinal;
+  kwda: IwbElement;
+  i: Integer;
+begin
+  keyword := KeywordToLoadOrderFormID(asKeyword);
+  kwda := ElementByPath(aeElement, 'KWDA');
+  if Assigned(kwda) then begin
+    for i := 0 to Pred(ElementCount(kwda)) do
+      if GetLoadOrderFormID(LinksTo(ElementByIndex(kwda, i))) = keyword then
+        Exit;
+    SetEditValue(ElementAssign(kwda, HighInteger, nil, False), IntToHex(keyword, 8));
+  end
+  else begin
+    kwda := Add(aeElement, 'KWDA', True);
+    SetEditValue(ElementByIndex(kwda, 0), IntToHex(keyword, 8));
+  end;
+end;
+
+procedure RemoveKeyword(aeElement: IwbElement; asKeyword: String);
+var
+  keyword: Cardinal;
+  i: Integer;
+  kwda: IwbElement;
+begin
+  keyword := KeywordToLoadOrderFormID(asKeyword);
+  kwda := ElementByPath(aeElement, 'KWDA');
+  if ElementCount(kwda) = 1 then begin
+    if GetLoadOrderFormID(LinksTo(ElementByIndex(kwda, 0))) = keyword then
+      RemoveElement(aeElement, kwda);
+  end
+  else
+    for i := 0 to Pred(ElementCount(kwda)) do
+      if GetLoadOrderFormID(LinksTo(ElementByIndex(kwda, i))) = keyword then
+        RemoveByIndex(kwda, i, True);
+end;
+
+function BoolToInt(abValue: Boolean): Integer;
+begin
+  if abValue then
+    Result := 1
+  else
+    Result := 0;
 end;
 
 end.
