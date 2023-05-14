@@ -126,3 +126,17 @@ Leveled Lists
 =============
 
 Each object designates a leveled list pattern. The name denotes the EditorId of the leveled list where `{item_slot}` is a placeholder for the armor part or weapon type. The value is another object that maps an armor/weapon set to its number of entries in the leveled list.
+
+Spell Scaling
+=============
+
+* The first column denotes the spell.
+* _Power Affects Magnitude_ denotes the value of the eponymous magic effect flag.
+* _Power Affects Duration_ denotes the value of the eponymous magic effect flag.
+* _No Magnitude_ denotes the value of the eponymous magic effect flag.
+* _No Duration_ denotes the value of the eponymous magic effect flag.
+* _No Magnitude Scaling_ denotes the presence of the REQ_NoMagnitudeScaling keyword.
+* _No Duration Scaling_ denotes the presence of the REQ_NoDurationScaling keyword.
+* _No Dual Cast Modification_ denotes the value of the eponymous spell flag.
+
+The other three columns are sanity checks.
