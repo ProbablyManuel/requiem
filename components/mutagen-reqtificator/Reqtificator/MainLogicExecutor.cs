@@ -288,7 +288,6 @@ namespace Reqtificator
             return globalPerks.FlatMap(perks => actorRules.Map(rules =>
                 new ForwardDataFromTemplate<Npc, INpc, INpcGetter>(importedModsLinkCache, loadOrder,
                 new ActorVisualAutoMerge(), enableVisualAutoMerge)
-                    .AndThen(new ActorCommonScripts(importedModsLinkCache))
                     .AndThen(new ActorGlobalPerks(perks))
                     .AndThen(new ActorPerksFromRules(rules.perks))
                     .AndThen(new ActorSpellsFromRules(rules.spells))
