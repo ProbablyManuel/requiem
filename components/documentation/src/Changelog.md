@@ -28,6 +28,7 @@ Bug Fixes
 * Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
 * Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
 * Dispel Soul Gems works are advertised.
+* Mage Armor on Self (Rank V) increases armor rating by the intended amount.
 * Telekinetic Execution cannot kill ghosts and the skeletal dragon.
 * Telekinetic Execution can kill Dwarven Centurions.
 * Absorb spells grant XP.
@@ -50,6 +51,8 @@ Bug Fixes
 * Dark Vision can be cast with one hand.
 * Damage from firewalls on the ground is applied each second.
 * Mistress of the Dark can be resisted.
+* Duration of Sunfire Cloak is increased by Restoration perks.
+* Dualcasting Detect Aura outside increases duration.
 * Dualcasting Featherfalling increases duration.
 * Imperial Luck is properly disabled.
 * Trainers are correctly labelled (Common, Expert, Master).
@@ -152,7 +155,12 @@ Bug Fixes
 * Notched Pickaxe is not a war axe.
 * Talsgar the Wanderer carries a quicksilver crossbow instead of an improved Dawnguard crossbow.
 * Leftover navmesh edit from Minor Arcana in Volunruud is removed.
-* Alchemical Intellect does not fortify spells that are not supposed to scale in magnitude or duration.
+* Alchemical Intellect does not affect spells that are not supposed to have their magnitude or duration increased.
+* Spells with a constant duration are not affected by perks that increase duration.
+* Duration of Summon Swarm is not increased by Conjuration perks.
+* Duration of Summon Spectral Arrow is not increased by Conjuration perks.
+* Duration of Teleport Vitals is not increased by Conjuration perks.
+* Dualcasting Circle of Protection does not increase magnitude.
 * Health bar of werewolves correctly updates when they lose health.
 * Price of gourd is not auto-calculated.
 * Wuuthrad displays the correct damage when used by an elf.
@@ -186,6 +194,9 @@ Bug Fixes
 * Dispel on Target does not dispel active magic effects from the caster.
 * Secondary magic effects are assigned their respective school of magic.
 * NPC-exclusive wards have the correct name.
+* All spells are explicitly set to either increase in magnitude or duration when dualcast.
+* Summon Flaming Familiar can be dualcast.
+* Spells that would not benefit from dualcasting cannot be dualcasted.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
@@ -642,7 +653,7 @@ Tweaks
 * Mage Armor V has base magnitude 240 (was 0) and reduces all incoming physical damage by 50% (was 98%).
 * Ancestor Guardian reduces all incoming physical damage by 90% (was 98%).
 * Protection from Poison has base magnitude 15 (was 20) and cost 200 (was 150).
-* Transmute Muscles has base magnitude 30 (was 20), but dual casting doesn't affect magnitude. This was the only spell in the game that scaled both in magnitude and duration when dual cast.
+* Transmute Muscles has base magnitude 30 (was 20), but dualcasting doesn't affect magnitude. This was the only spell in the game that scaled both in magnitude and duration when dualcast.
 * Extra damage of banish enchantments is doubled.
 * Powerful Healing Aura doesn't grant immunity to absorb effects.
 * Healing aura spells don't have a persistent visual effect.
