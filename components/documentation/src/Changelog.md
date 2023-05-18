@@ -206,6 +206,7 @@ Bug Fixes
 * J'zargo's Flame Cloak has the same behavior as a flame cloak except for its twist.
 * Transcendence has a finite duration.
 * Spectral Arrow is irresistible.
+* Agent of Dibella only affects people.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
