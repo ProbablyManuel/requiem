@@ -36,6 +36,8 @@ Spell Property KhajiitLockpicking Auto
 
 Spell Property AncientKnowledge Auto
 
+Spell Property FortitudeDuplicateAbility Auto
+
 Function initScript(Int currentVersion, Int nevVersion)
     If currentVersion > 0
         If currentVersion <= 50100 && nevVersion >= 50101
@@ -150,5 +152,8 @@ Function Apply_5_4_1_to_5_4_2_fixes()
     If Player.HasPerk(QuarterstaffFocus3)
         Player.RemovePerk(QuarterstaffFocus3)
         Player.AddPerk(QuarterstaffFocus3)
+    EndIf
+    If Player.HasSpell(FortitudeDuplicateAbility)
+        Player.RemoveSpell(FortitudeDuplicateAbility)
     EndIf
 EndFunction
