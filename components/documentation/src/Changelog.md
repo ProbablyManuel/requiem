@@ -11,6 +11,7 @@ Tweaks
 * Quicksilver weapons have the same damage as Dwarven weapons.
 * Stalhrim armors and weapons require steel as secondary component.
 * Transmute Corpus can kill targets with more than 1200 health.
+* Transcendence has a finite duration.
 * Illumination lasts for 5 minutes (was 10).
 * Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Updated to Even Better Quest Objectives 1.9.2.
@@ -200,6 +201,12 @@ Bug Fixes
 * Spells that would not benefit from dualcasting cannot be dualcasted.
 * Ammo projectiles have the same name as the ammo.
 * Silver ammo has its weight explicitly defined.
+* Silver battleaxe, dagger, mace, quarterstaff, shortsword, war axe, and warhammer can be crafted.
+* Treasure Hunter does not require Sophisticated Lockpicking.
+* Aela does not fire exploding arrows at training dummies.
+* J'zargo's Flame Cloak has the same behavior as a flame cloak except for its twist.
+* Spectral Arrow is irresistible.
+* Agent of Dibella only affects people.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1

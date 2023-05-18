@@ -98,4 +98,12 @@ Event OnEffectStart(Actor akTarget, Actor akCaster)
 	akCaster.AddItem(SoulTomatoBlack, CountTomatoBlack + CountTomatoBlackFilled, True)
 	akCaster.AddItem(AzurasStar, CountAzurasStar, True)
 	akCaster.AddItem(BlackStar, CountBlackStar, True)
+
+	Int SoulSizeSum = 0
+	SoulSizeSum += (CountPettyFilled + CountTomatoPettyFilled) * 250
+	SoulSizeSum += (CountLesserFilled + CountTomatoLesserFilled) * 500
+	SoulSizeSum += (CountCommonFilled + CountTomatoCommonFilled) * 1000
+	SoulSizeSum += (CountGreaterFilled + CountTomatoGreaterFilled) * 2000
+	SoulSizeSum += (CountGrandFilled + CountTomatoGrandFilled) * 3000
+	Game.AdvanceSkill("Restoration", SoulSizeSum * 0.2)
 EndEvent
