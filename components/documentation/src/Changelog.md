@@ -204,6 +204,7 @@ Bug Fixes
 * Treasure Hunter does not require Sophisticated Lockpicking.
 * Aela does not fire exploding arrows at training dummies.
 * J'zargo's Flame Cloak has the same behavior as a flame cloak except for its twist.
+* Transcendence has a finite duration.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
