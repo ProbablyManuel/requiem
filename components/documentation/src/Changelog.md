@@ -202,6 +202,7 @@ Bug Fixes
 * Silver ammo has its weight explicitly defined.
 * Silver battleaxe, dagger, mace, quarterstaff, shortsword, war axe, and warhammer can be crafted.
 * Treasure Hunter does not require Sophisticated Lockpicking.
+* Aela does not fire exploding arrows at training dummies.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
