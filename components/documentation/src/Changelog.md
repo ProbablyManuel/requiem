@@ -17,6 +17,7 @@ Tweaks
 * Magic effects used by standard spells have improved names and EditorIDs.
 * Spells have improved EditorIDs.
 * Notes have improved EditorIDs.
+* Ammo projectiles have improved EditorIDs.
 * Potions and poison do not have a redundant 0 in their EditorID.
 
 Bug Fixes
@@ -197,6 +198,8 @@ Bug Fixes
 * All spells are explicitly set to either increase in magnitude or duration when dualcast.
 * Summon Flaming Familiar can be dualcast.
 * Spells that would not benefit from dualcasting cannot be dualcasted.
+* Ammo projectiles have the same name as the ammo.
+* Silver ammo has its weight explicitly defined.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
