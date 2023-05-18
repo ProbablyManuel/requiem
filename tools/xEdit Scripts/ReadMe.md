@@ -81,6 +81,13 @@ Export magnitude/duration scaling data of the selected spell effects to a csv fi
 
 The first line is a header with the column names and the remaining comma-separated values are unsorted. Spell effects are identified by EditorID and must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#magic-effect-mgef-records).
 
+REQ_GravityPullPatcher.pas
+----------------------
+
+Set the gravity of the selected ammo projectiles based on the ammo weight keyword of the referencing ammo.
+
+The EditorID of the ammo must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#ammunition-ammo-records). The ammo may have an arbitrary mod prefix (not just "REQ").
+
 REQ_LeveledItemPatcher.pas
 --------------------------
 
