@@ -200,6 +200,7 @@ Bug Fixes
 * Spells that would not benefit from dualcasting cannot be dualcasted.
 * Ammo projectiles have the same name as the ammo.
 * Silver ammo has its weight explicitly defined.
+* Silver battleaxe, dagger, mace, quarterstaff, shortsword, war axe, and warhammer can be crafted.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
