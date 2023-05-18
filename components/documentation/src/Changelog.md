@@ -11,6 +11,7 @@ Tweaks
 * Quicksilver weapons have the same damage as Dwarven weapons.
 * Stalhrim armors and weapons require steel as secondary component.
 * Transmute Corpus can kill targets with more than 1200 health.
+* Transcendence has a finite duration.
 * Illumination lasts for 5 minutes (was 10).
 * Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Updated to Even Better Quest Objectives 1.9.2.
@@ -204,7 +205,6 @@ Bug Fixes
 * Treasure Hunter does not require Sophisticated Lockpicking.
 * Aela does not fire exploding arrows at training dummies.
 * J'zargo's Flame Cloak has the same behavior as a flame cloak except for its twist.
-* Transcendence has a finite duration.
 * Spectral Arrow is irresistible.
 * Agent of Dibella only affects people.
 
