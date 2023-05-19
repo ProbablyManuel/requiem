@@ -8,12 +8,14 @@ Tweaks
 * Strength of lockpicking enchantments is doubled.
 * Dispelling active magic effects with Spellbreaking has a 10 second cooldown.
 * Power attack stamina cost is increased by 25% of the weapon's weight to compensate for the previous removal of weapon weight from the Mass Effect.
+* Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Quicksilver weapons have the same damage as Dwarven weapons.
 * Stalhrim armors and weapons require steel as secondary component.
 * Transmute Corpus can kill targets with more than 1200 health.
+* Telekinetic Execution can kill Dwarven Centurions.
 * Transcendence has a finite duration.
+* Dispeling Candlelight costs no magicka.
 * Illumination lasts for 5 minutes (was 10).
-* Alchemists sell potions of fortify health/magicka/stamina and fortify health/magicka/stamina regeneration.
 * Updated to Even Better Quest Objectives 1.9.2.
 * Magic effects used by standard spells have improved names and EditorIDs.
 * Spells have improved EditorIDs.
@@ -28,18 +30,26 @@ Bug Fixes
 * Essential and protected NPCs are excluded from the yield system to work around an engine limitation that could automatically restore them to full health.
 * Ancient Knowledge grants enough XP to reach Smithing skill 14 to work around an engine limitation that disables tempering with Smithing below 14.
 * Cold effects modify lockpick durability instead of lockpicking expertise. This fix is not retroactive unless you disable Survival Mode _before_ updating.
+* Treasure Hunter does not require Sophisticated Lockpicking.
 * Khajiit caravans, Enthir and Mallus still sell their normal wares after they become fences.
 * Dispel Soul Gems works are advertised.
 * Mage Armor on Self (Rank V) increases armor rating by the intended amount.
-* Telekinetic Execution cannot kill ghosts and the skeletal dragon.
-* Telekinetic Execution can kill Dwarven Centurions.
+* Spectral Arrow is irresistible.
+* Dispel on Target does not dispel active magic effects from the caster.
 * Absorb spells grant XP.
 * Transmute Muscles grants XP.
-* Dremora can be disarmed by the voice.
+* Dunmer receive 3% more Alteration, Evasion, Illusion, and Sneak XP instead of Destruction and One-Handed a second time.
 * Horse saddles provide the expected armor rating.
+* Health bar of werewolves correctly updates when they lose health.
 * Invisible foxes in Labyrinthian are restored as skeletons.
 * The hood of skeleton mages does not stretch upon death.
 * The original template structure of random dragon priests is restored due to unexpected interactions with other mods.
+* Ore veins in Redbelly Mine and Northwind Mine are reverted to their original type. The ore sample from the related quest is updated accordingly.
+* Spriggans drop both Taproot and Spriggan Sap at the same time.
+* Silver battleaxe, dagger, mace, quarterstaff, shortsword, war axe, and warhammer can be crafted.
+* Akaviri-styled weapons can be crafted at the Atronach Forge.
+* NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
+* Agent of Dibella only affects people.
 * Elemental silver arrows use the correct model.
 * Description of enchanted ammo states the magnitude without appending "points of damage".
 * Silver arrows do not have a special description that points out that they are made of silver.
@@ -63,14 +73,16 @@ Bug Fixes
 * General Tullius' Sword states the correct magnitude.
 * Hidden Illusion spells cannot be absorbed.
 * Description of Mark & Recall is rephrased to make its behavior clearer.
+* Description of Fireshock and Iceshock is rephrased to clarify the spell applies instantaneously without firing a projectile.
+* Description of Soulreaping is rephrased to clarify that the enchantment only works when wielded by a denizen of the Soul Cairn.
 * Leadership fortifies Illusion instead of Conjuration twice.
 * Hibernation Spray can be resisted.
+* Dremora can be disarmed by the voice.
 * Bandits are neutral towards prey.
 * Forsworn are friendly towards chickens.
 * Charmed Necklace has a less immersive but correctly spelled description.
 * Dagger Focus I states the correct sneak attack bonus.
 * Mistress of the Dark and Shadow Simulacrum do not increase health and Illusion of nearby summons.
-* Dunmer receive 3% more Alteration, Evasion, Illusion, and Sneak XP instead of Destruction and One-Handed a second time.
 * Inoperative Stamina Drain Reset is removed from the MCM.
 * Rapidly activating shrines does not grant the blessing multiple times.
 * Perfected Art has no effect when wearing heavy armor.
@@ -85,8 +97,8 @@ Bug Fixes
 * Dremora Warlocks do not known Summon Dremora Archer because they cannot cast the spell.
 * Summon Skeletal Hero can be selected when taking Apprentice Conjuration.
 * Summon Spectral Warrior can be selected when taking Adept Conjuration.
-* Ore veins in Redbelly Mine and Northwind Mine are reverted to their original type. The ore sample from the related quest is updated accordingly.
 * Leftover faction edit from Minor Arcana to Valdr is removed.
+* Leftover navmesh edit from Minor Arcana in Volunruud is removed.
 * The easter egg in Helgen has the correct inventory model.
 * All notes have no weight and price.
 * All notes use a handwritten font.
@@ -102,6 +114,7 @@ Bug Fixes
 * Targe of the Blooded has a more logical description.
 * Aetherial Crown is considered jewelry.
 * Frost breath used by high-level dragons slows the player by the intended amount.
+* Telekinetic Execution cannot kill ghosts and the skeletal dragon.
 * Telekinetic Execution, Teleport Vitals, Phantasmal Killer, and feeding as a vampire cannot kill essential actors if the MCM option to make Essential Actors invincible is enabled.
 * Transmute Corpus can kill unique or essentials actors.
 * Transmute Corpus does not damage immune targets.
@@ -142,7 +155,7 @@ Bug Fixes
 * Astrid has damage multiplier 2.0 and stagger 1.0 for attackPowerStartForwardLeftHand (was 1.0 and 0.0)
 * Astrid, elders, elder vampires, and the Afflicted have damage multiplier 1.5, stagger 1.0, and stamina multiplier 0.5 for attackPowerStartDualWield (was 1.0, 0.0, and 1.0).
 * Astrid, elders, elder vampires, and the Afflicted do not cause stagger with bashes.
-* Astrid, elders, elder vampires, and the Afflicted can make use of power bashes perks.
+* Astrid, elders, elder vampires, and the Afflicted can make use of power bash perks.
 * Rusty Mace retains its original damage to ensure the associated scene plays out as expected.
 * Draugr do not carry duplicate shields.
 * Kyne's Peace is not affected by Improved Healing.
@@ -156,20 +169,17 @@ Bug Fixes
 * Blade of Markarth is renamed to Blade of the Reach.
 * Notched Pickaxe is not a war axe.
 * Talsgar the Wanderer carries a quicksilver crossbow instead of an improved Dawnguard crossbow.
-* Leftover navmesh edit from Minor Arcana in Volunruud is removed.
 * Alchemical Intellect does not affect spells that are not supposed to have their magnitude or duration increased.
 * Spells with a constant duration are not affected by perks that increase duration.
 * Duration of Summon Swarm is not increased by Conjuration perks.
 * Duration of Summon Spectral Arrow is not increased by Conjuration perks.
 * Duration of Teleport Vitals is not increased by Conjuration perks.
 * Dualcasting Circle of Protection does not increase magnitude.
-* Health bar of werewolves correctly updates when they lose health.
 * Price of gourd is not auto-calculated.
 * Wuuthrad displays the correct damage when used by an elf.
 * Spectral summons have the same audio template as spectral draugr.
 * Spectral Warrior has auto-calculated stats.
 * Boethiah's Embrace states the correct magnitude.
-* Spriggans drop both Taproot and Spriggan Sap at the same time.
 * Magelight is not disabled by Stability.
 * Soulreaping only deals magic damage.
 * The effects of Fortitude are not displayed in the active magic effects menu.
@@ -179,34 +189,24 @@ Bug Fixes
 * Restore missing property in QF_DA16_000242AF.
 * Mistress of the Dark has a functional casting animation.
 * Mistress of the Dark is not considered a spirit summon.
-* Dispeling Candlelight costs no magicka.
-* Akaviri-styled weapons can be crafted at the Atronach Forge.
 * Magical Absorption is not affected by perks that increase the magnitude of Alteration spells.
 * Elgrim's Elixirs stocks the normal amount of potions and poisons.
-* NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
 * The Aetherium Forge does not grant Smithing XP.
 * Lunar weapons cannot be disenchanted.
 * Troublesome Papyrus script swapping outfits of Imperial guards is removed.
 * Herbalist's Guide to Skyrim is revised to take the removal of Fortify Enchanting into account.
 * Bonemold Cuirass of the Squire is renamed to Bonemold Cuirass of the Knight to match its armor type.
-* Description of Fireshock and Iceshock is rephrased to clarify the spell applies instantaneously without firing a projectile.
-* Description of Soulreaping is rephrased to clarify that the enchantment only works when wielded by a denizen of the Soul Cairn.
 * Spriggan Matron has more magicka to account for her much higher spell cost.
 * Spriggan Earth Mother has better stats than the Spriggan Matron.
-* Dispel on Target does not dispel active magic effects from the caster.
-* Secondary magic effects are assigned their respective school of magic.
-* NPC-exclusive wards have the correct name.
-* All spells are explicitly set to either increase in magnitude or duration when dualcast.
-* Summon Flaming Familiar can be dualcast.
-* Spells that would not benefit from dualcasting cannot be dualcasted.
 * Ammo projectiles have the same name as the ammo.
 * Silver ammo has its weight explicitly defined.
-* Silver battleaxe, dagger, mace, quarterstaff, shortsword, war axe, and warhammer can be crafted.
-* Treasure Hunter does not require Sophisticated Lockpicking.
 * Aela does not fire exploding arrows at training dummies.
 * J'zargo's Flame Cloak has the same behavior as a flame cloak except for its twist.
-* Spectral Arrow is irresistible.
-* Agent of Dibella only affects people.
+* NPC-exclusive wards have the correct name.
+* Summon Flaming Familiar can be dualcast.
+* Spells that would not benefit from dualcasting cannot be dualcasted.
+* Secondary magic effects are assigned their respective school of magic.
+* All spells are explicitly set to either increase in magnitude or duration when dualcast.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
