@@ -13,27 +13,18 @@ GlobalVariable Property Version_Active Auto
 {the global containing the version stamp of the savegame}
 
 Event OnEffectStart(Actor akTarget, Actor akCaster)
-	REQ_NPCData npcdata = akTarget as REQ_NPCData
-	If npcdata == None
-		Debug.Trace("[REQ] ERROR: Actor " + akTarget + " has a tempered equipment script, but no NPC_Data container!")
-	Else
-		int timeout = 10
-		While !akTarget.Is3DLoaded()
-			Utility.Wait(0.5)
-			timeout -= 1
-			If timeout == 0
-				return
-			EndIf
-		EndWhile
-		While (Version_Active.GetValueInt() != Version_Installed.GetValueInt() )
-			Utility.Wait(0.5)
-		EndWhile
-		REQ_ClassSpecificEquipment scriptdata = akTarget as REQ_ClassSpecificEquipment
-		While ( scriptdata != None && !npcdata.TE_outfit_added )
-			Utility.Wait(0.5)
-		EndWhile
-		ProcessItems(akTarget)
-	EndIf
+	int timeout = 10
+	While !akTarget.Is3DLoaded()
+		Utility.Wait(0.5)
+		timeout -= 1
+		If timeout == 0
+			return
+		EndIf
+	EndWhile
+	While (Version_Active.GetValueInt() != Version_Installed.GetValueInt() )
+		Utility.Wait(0.5)
+	EndWhile
+	ProcessItems(akTarget)
 EndEvent
 
 Function ProcessItems(Actor npc)
