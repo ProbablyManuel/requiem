@@ -49,7 +49,7 @@ namespace Reqtificator.Configuration
         }
 
         public static ReqtificatorConfig LoadFromConfigs(string baseFolder,
-            ImmutableList<IModListingGetter> activeMods,
+            ImmutableList<ILoadOrderListingGetter> activeMods,
             InternalEvents _events)
         {
             var rawConfigs = activeMods
