@@ -49,7 +49,7 @@ namespace ReqtificatorTest.Transformers.EncounterZones
         public void Should_Skip_Records_In_The_ExclusionList()
         {
             var formKey = FormKey.Factory("123456:Requiem.esp");
-            var exceptions = ImmutableHashSet.Create<ZoneRef>(formKey.AsLink<IEncounterZoneGetter>());
+            var exceptions = ImmutableHashSet.Create<ZoneRef>(formKey.ToLink<IEncounterZoneGetter>());
             var transformer = new OpenCombatBoundaries(exceptions, true);
 
             var input = new EncounterZone(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE);

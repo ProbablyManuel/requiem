@@ -46,11 +46,11 @@ namespace ReqtificatorTest.Transformers.Rules
                         {
                             new()
                             {
-                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template2.AsLink() }
+                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template2.ToLink() }
                             },
                             new()
                             {
-                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template3.AsLink() }
+                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template3.ToLink() }
                             }
                         }
                     };
