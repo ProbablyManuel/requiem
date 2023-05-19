@@ -45,7 +45,6 @@ namespace Reqtificator
         {
             _events = eventsQueue;
             _logs = logContext;
-            WarmupSkyrim.Init();
 
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
