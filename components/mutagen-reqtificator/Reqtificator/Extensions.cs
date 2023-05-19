@@ -59,7 +59,7 @@ namespace Reqtificator
         {
             var newMod = new SkyrimMod(mod.ModKey, mod.SkyrimRelease);
             newMod.DeepCopyIn(mod); //see https://github.com/Mutagen-Modding/Mutagen/issues/192
-            var cache = newMod.GetGroup<TMajor>();
+            var cache = newMod.GetTopLevelGroup<TMajor>();
             records.ForEach(cache.Add);
             return newMod;
         }
