@@ -33,7 +33,7 @@ namespace Reqtificator.Transformers.LeveledItems
             if (temperingData is null || _registeredMods.ContainsNot(input.Record().FormKey.ModKey)) return input;
 
             if ((input.Record().Entries?.Count ?? 0) != 1)
-                throw new InvalidTemperingDataException(input.Record().AsLinkGetter());
+                throw new InvalidTemperingDataException(input.Record().ToLinkGetter());
 
             return input.Modify(record =>
             {
@@ -99,14 +99,14 @@ namespace Reqtificator.Transformers.LeveledItems
                 "H" => Size.Half,
                 "N" => Size.Normal,
                 "D" => Size.Double,
-                _ => throw new InvalidTemperingDataException(record.AsLinkGetter())
+                _ => throw new InvalidTemperingDataException(record.ToLinkGetter())
             };
             var distribution = match.Groups["distribution"].Value switch
             {
                 "fall" => DistributionFunction.Fall,
                 "const" => DistributionFunction.Constant,
                 "rise" => DistributionFunction.Rise,
-                _ => throw new InvalidTemperingDataException(record.AsLinkGetter())
+                _ => throw new InvalidTemperingDataException(record.ToLinkGetter())
             };
 
             return new QualityData(tier, size, distribution);

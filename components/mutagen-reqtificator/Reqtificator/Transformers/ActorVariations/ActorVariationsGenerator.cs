@@ -80,7 +80,7 @@ namespace Reqtificator.Transformers.ActorVariations
                         {
                             Count = 1,
                             Level = 1,
-                            Reference = a.AsLink()
+                            Reference = a.ToLink()
                         }
                     }));
                 return newLeveledList;
@@ -111,7 +111,7 @@ namespace Reqtificator.Transformers.ActorVariations
                             {
                                 Count = 1,
                                 Level = 1,
-                                Reference = variations[v.Key].AsLink()
+                                Reference = variations[v.Key].ToLink()
                             }
                         };
                         updated.Entries.AddRange(Enumerable.Repeat(newEntry, v.Value));
@@ -128,12 +128,12 @@ namespace Reqtificator.Transformers.ActorVariations
             var skillsTemplates = record.Entries
                 .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))
                 .Where(r => r.Item2 is not null && r.Item2 is INpcGetter)
-                .Select(r => (((INpcGetter)r.Item2!).AsLinkGetter(), r.r.Data!.Level))
+                .Select(r => (((INpcGetter)r.Item2!).ToLinkGetter(), r.r.Data!.Level))
                 .ToList();
             var lookTemplates = record.Entries
                 .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))
                 .Where(r => r.Item2 is not null && r.Item2 is ILeveledNpcGetter)
-                .Select(r => (((ILeveledNpcGetter)r.Item2!).AsLinkGetter(), r.r.Data!.Count))
+                .Select(r => (((ILeveledNpcGetter)r.Item2!).ToLinkGetter(), r.r.Data!.Count))
                 .ToList();
 
             return skillsTemplates.SelectMany(s => lookTemplates.Select(l =>

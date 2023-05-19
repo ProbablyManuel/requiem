@@ -23,7 +23,7 @@ namespace Reqtificator.Transformers.LeveledItems
             input.Entries = entries.Select(e => new LeveledItemEntry()
             {
                 Data = new LeveledItemEntryData()
-                { Count = (short)e.Count, Level = (short)e.Level, Reference = e.Reference.AsLink<IItemGetter>() }
+                { Count = (short)e.Count, Level = (short)e.Level, Reference = e.Reference.ToLink<IItemGetter>() }
             }).ToExtendedList();
         }
     }

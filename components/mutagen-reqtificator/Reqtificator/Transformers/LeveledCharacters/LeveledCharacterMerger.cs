@@ -26,7 +26,7 @@ namespace Reqtificator.Transformers.LeveledCharacters
                 {
                     Count = (short)e.Count,
                     Level = (short)e.Level,
-                    Reference = e.Reference.AsLink<INpcSpawnGetter>()
+                    Reference = e.Reference.ToLink<INpcSpawnGetter>()
                 }
             }).ToExtendedList();
         }
