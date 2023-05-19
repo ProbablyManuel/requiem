@@ -14,7 +14,7 @@ Tweaks
 * Transmute Corpus can kill targets with more than 1200 health.
 * Telekinetic Execution can kill Dwarven Centurions.
 * Transcendence has a finite duration.
-* Dispeling Candlelight costs no magicka.
+* Dispelling Candlelight costs no magicka.
 * Illumination lasts for 5 minutes (was 10).
 * Updated to Even Better Quest Objectives 1.9.2.
 * Magic effects used by standard spells have improved names and EditorIDs.
@@ -51,8 +51,6 @@ Bug Fixes
 * NPCs who spawn with tempered armors have the tempering bonuses recalculated on every cell load to account for outfit changes.
 * Agent of Dibella only affects people.
 * Elemental silver arrows use the correct model.
-* Description of enchanted ammo states the magnitude without appending "points of damage".
-* Silver arrows do not have a special description that points out that they are made of silver.
 * Various typos in magic effect descriptions are fixed.
 * Elsi the Spiker has Quarterstaff Focus instead Warhammer Focus.
 * Stalhrim bow and arrow have proper stats.
@@ -199,6 +197,8 @@ Bug Fixes
 * Spriggan Matron has more magicka to account for her much higher spell cost.
 * Spriggan Earth Mother has better stats than the Spriggan Matron.
 * Ammo projectiles have the same name as the ammo.
+* Description of enchanted ammo states the magnitude without appending "points of damage".
+* Silver arrows do not have a special description that points out that they are made of silver.
 * Silver ammo has its weight explicitly defined.
 * Aela does not fire exploding arrows at training dummies.
 * J'zargo's Flame Cloak has the same behavior as a flame cloak except for its twist.
