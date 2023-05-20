@@ -9,6 +9,7 @@ dotnet_sort_system_directives_first = true
 dotnet_analyzer_diagnostic.severity = warning
 
 dotnet_style_prefer_conditional_expression_over_return = false
+dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
 
 # global suppression rules
 dotnet_diagnostic.CA1303.severity = none # we're not supporting any localization in the initial release

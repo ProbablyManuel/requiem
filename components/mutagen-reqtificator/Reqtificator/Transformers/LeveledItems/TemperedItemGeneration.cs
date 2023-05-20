@@ -85,7 +85,7 @@ namespace Reqtificator.Transformers.LeveledItems
                     {
                         for (int dist = 0; dist < distributionMultiplier; dist++)
                         {
-                            yield return 1.0f + (offset + (segment * (int)SegmentSize) + index) / 10f;
+                            yield return 1.0f + (offset + segment * (int)SegmentSize + index) / 10f;
                         }
                     }
                 }
