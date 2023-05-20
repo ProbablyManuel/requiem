@@ -58,7 +58,7 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                string Fmt(ModKey m, INpcSpawnGetter r)
+                static string Fmt(ModKey m, INpcSpawnGetter r)
                 {
                     return $"* \"{r.FormKey}\" (last modified by \"{m}\")";
                 }
@@ -89,7 +89,7 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                string Fmt(ModKey m, INpcSpawnGetter r)
+                static string Fmt(ModKey m, INpcSpawnGetter r)
                 {
                     return $"* \"{r.FormKey}\" (last modified by \"{m}\")";
                 }

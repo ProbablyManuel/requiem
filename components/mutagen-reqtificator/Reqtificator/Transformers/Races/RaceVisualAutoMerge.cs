@@ -126,7 +126,7 @@ namespace Reqtificator.Transformers.Races
 
         private static bool ComparePhonemes(IFaceFxPhonemesGetter reference, IFaceFxPhonemesGetter other)
         {
-            bool CompareEntry(IPhonemeGetter? refEntry, IPhonemeGetter? otherEntry)
+            static bool CompareEntry(IPhonemeGetter? refEntry, IPhonemeGetter? otherEntry)
             {
                 if (refEntry is null && otherEntry is null)
                 {

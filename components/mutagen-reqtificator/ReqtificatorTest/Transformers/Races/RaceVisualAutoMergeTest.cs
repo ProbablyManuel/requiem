@@ -26,7 +26,7 @@ namespace ReqtificatorTest.Transformers.Races
 
         private static Race GenerateTemplateRace(string editorId)
         {
-            HeadData GenerateHeadData()
+            static HeadData GenerateHeadData()
             {
                 return new HeadData()
                 {
