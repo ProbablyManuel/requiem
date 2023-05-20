@@ -16,7 +16,7 @@ namespace ReqtificatorTest
             var dummyMod = new SkyrimMod(new ModKey("export", ModType.Plugin), SkyrimRelease.SkyrimSE);
             for (var i = 1; i < 10; i++)
             {
-                var record = new Armor(dummyMod, $"item{i}");
+                _ = new Armor(dummyMod, $"item{i}");
             }
             var tempDir = Path.GetTempPath();
 
