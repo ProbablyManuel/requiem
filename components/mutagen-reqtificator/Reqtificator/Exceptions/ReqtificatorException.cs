@@ -58,7 +58,11 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                string Fmt(ModKey m, INpcSpawnGetter r) => $"* \"{r.FormKey}\" (last modified by \"{m}\")";
+                string Fmt(ModKey m, INpcSpawnGetter r)
+                {
+                    return $"* \"{r.FormKey}\" (last modified by \"{m}\")";
+                }
+
                 var inheritanceStack = TemplateChain.Select(e => Fmt(e.Item1, e.Item2))
                     .Aggregate((s1, s2) => $"{s1}\n{s2}");
 
@@ -85,7 +89,11 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                string Fmt(ModKey m, INpcSpawnGetter r) => $"* \"{r.FormKey}\" (last modified by \"{m}\")";
+                string Fmt(ModKey m, INpcSpawnGetter r)
+                {
+                    return $"* \"{r.FormKey}\" (last modified by \"{m}\")";
+                }
+
                 var inheritanceStack = TemplateChain.Select(e => Fmt(e.Item1, e.Item2))
                     .Aggregate((s1, s2) => $"{s1}\n{s2}");
 
