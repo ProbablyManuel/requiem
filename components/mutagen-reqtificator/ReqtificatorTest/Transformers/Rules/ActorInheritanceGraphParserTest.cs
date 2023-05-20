@@ -16,7 +16,7 @@ namespace ReqtificatorTest.Transformers.Rules
 {
     public class ActorInheritanceGraphParserTest
     {
-        class Fixture
+        private class Fixture
         {
             internal Npc Template1 { get; }
             internal Npc Template2 { get; }
