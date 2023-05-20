@@ -17,10 +17,11 @@ dotnet_diagnostic.IDE0008.severity = none # I don't see a point in not using typ
 dotnet_diagnostic.CA1003.severity = none # seems to trigger false positives when I try to use relaxed non-"EventArgs" extending types for events
 dotnet_diagnostic.CA1826.severity = none # our collections shouldn't be large enough to suffer any noteworthy performance impacts 
 dotnet_diagnostic.CA1032.severity = none # our exceptions aren't used externally, so we don't need to add constructors we don't use
-dotnet_diagnostic.CA1305.severity = none # no idea how to fix this
 dotnet_diagnostic.IDE0130.severity = none # https://github.com/dotnet/format/issues/1623
 dotnet_diagnostic.IDE0072.severity = none # too many false positives
 
 [UserSettings.cs]
-# only used to write booleans to json
-dotnet_diagnostic.CA1308.severity = none
+dotnet_diagnostic.CA1308.severity = none # only used to write booleans to json
+
+[LogUtils.cs]
+dotnet_diagnostic.CA1305.severity = none # no idea how to fix this
