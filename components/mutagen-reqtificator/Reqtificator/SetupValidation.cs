@@ -63,7 +63,7 @@ namespace Reqtificator
                             .ToImmutableList();
                         if (missingMasters.IsEmpty) return ImmutableList.Create<InvalidLoadOrder>();
 
-                        var missingMods = missingMasters.Where(e => !System.IO.File.Exists(e.FileName)).ToImmutableHashSet();
+                        var missingMods = missingMasters.Where(e => !File.Exists(e.FileName)).ToImmutableHashSet();
                         var outOfOrder = missingMasters.Where(e => modList.Contains(e)).ToImmutableHashSet();
                         var disabledMods = missingMasters.Where(e => missingMods.ContainsNot(e) && outOfOrder.ContainsNot(e)).ToImmutableHashSet();
 
