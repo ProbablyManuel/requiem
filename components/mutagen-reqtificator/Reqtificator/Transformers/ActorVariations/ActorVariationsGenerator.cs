@@ -133,12 +133,12 @@ namespace Reqtificator.Transformers.ActorVariations
 
             var skillsTemplates = record.Entries
                 .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))
-                .Where(r => r.Item2 is not null && r.Item2 is INpcGetter)
+                .Where(r => r.Item2 is not null and INpcGetter)
                 .Select(r => (((INpcGetter)r.Item2!).ToLinkGetter(), r.r.Data!.Level))
                 .ToList();
             var lookTemplates = record.Entries
                 .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))
-                .Where(r => r.Item2 is not null && r.Item2 is ILeveledNpcGetter)
+                .Where(r => r.Item2 is not null and ILeveledNpcGetter)
                 .Select(r => (((ILeveledNpcGetter)r.Item2!).ToLinkGetter(), r.r.Data!.Count))
                 .ToList();
 

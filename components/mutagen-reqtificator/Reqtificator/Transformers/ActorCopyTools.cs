@@ -251,8 +251,8 @@ namespace Reqtificator.Transformers
         {
             var newActor = targetMod.Npcs.AddNew(editorId);
             Enum.GetValues<NpcConfiguration.TemplateFlag>().Where(x =>
-                    x != NpcConfiguration.TemplateFlag.Traits && x != NpcConfiguration.TemplateFlag.AttackData
-                                                              && x != NpcConfiguration.TemplateFlag.ModelAnimation)
+                    x is not NpcConfiguration.TemplateFlag.Traits and not NpcConfiguration.TemplateFlag.AttackData
+                                                              and not NpcConfiguration.TemplateFlag.ModelAnimation)
                 .ForEach(f =>
                 {
                     var source = inheritanceGraph.FindAllTemplates(skillTemplate, f).First()[f];
