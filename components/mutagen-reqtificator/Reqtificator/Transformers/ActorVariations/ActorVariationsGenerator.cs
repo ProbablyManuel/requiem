@@ -52,7 +52,7 @@ namespace Reqtificator.Transformers.ActorVariations
             var newActors = uniqueActorsToBuild
                 .Select(e =>
                 {
-                    var skillTemplate = e.SkillTemplate.Resolve<INpcGetter>(linkCacheWithPatchedActors);
+                    var skillTemplate = e.SkillTemplate.Resolve(linkCacheWithPatchedActors);
                     var lookTemplate = e.Reference.Resolve<INpcGetter>(linkCacheWithPatchedActors);
                     var newActor = ActorCopyTools.MergeVisualAndSkillTemplates(targetMod,
                         $"RTFI_Actor_Variations_{skillTemplate.FormKey}_{lookTemplate.FormKey}", skillTemplate,
