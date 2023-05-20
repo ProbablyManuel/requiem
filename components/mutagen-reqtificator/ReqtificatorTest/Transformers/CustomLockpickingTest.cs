@@ -29,7 +29,7 @@ namespace ReqtificatorTest.Transformers
             reference.Equals(result.Record(), mask).Should().BeTrue();
 
             var expectedVirtualMachineAdapter = reference.VirtualMachineAdapter!.DeepCopy();
-            expectedVirtualMachineAdapter.Scripts.Add(expectedScript());
+            expectedVirtualMachineAdapter.Scripts.Add(ExpectedScript());
             expectedVirtualMachineAdapter.Equals(result.Record().VirtualMachineAdapter).Should().BeTrue();
         }
 
@@ -47,7 +47,7 @@ namespace ReqtificatorTest.Transformers
 
             var resultScripts = result.Record().VirtualMachineAdapter!.Scripts;
             resultScripts.Count.Should().Be(1);
-            resultScripts[0].Equals(expectedScript()).Should().BeTrue();
+            resultScripts[0].Equals(ExpectedScript()).Should().BeTrue();
         }
 
         [Fact]
@@ -68,7 +68,7 @@ namespace ReqtificatorTest.Transformers
             reference.Equals(result.Record(), mask).Should().BeTrue();
 
             var expectedVirtualMachineAdapter = reference.VirtualMachineAdapter!.DeepCopy();
-            expectedVirtualMachineAdapter.Scripts.Add(expectedScript());
+            expectedVirtualMachineAdapter.Scripts.Add(ExpectedScript());
             expectedVirtualMachineAdapter.Equals(result.Record().VirtualMachineAdapter).Should().BeTrue();
         }
 
@@ -88,7 +88,7 @@ namespace ReqtificatorTest.Transformers
             result.IsModified().Should().BeFalse();
             result.Record().Equals(door).Should().BeTrue();
         }
-        private static ScriptEntry expectedScript()
+        private static ScriptEntry ExpectedScript()
         {
             var lockPickingControScript = new ScriptEntry
             {
