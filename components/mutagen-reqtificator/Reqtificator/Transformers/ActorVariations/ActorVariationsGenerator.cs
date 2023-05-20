@@ -17,7 +17,7 @@ namespace Reqtificator.Transformers.ActorVariations
 
     internal static class ActorVariationsGenerator
     {
-        private static readonly Regex ActorVariationsPattern = new Regex("^[^_]+_LChar_(?:Variations|VoiceSpawns)_");
+        private static readonly Regex ActorVariationsPattern = new("^[^_]+_LChar_(?:Variations|VoiceSpawns)_");
 
         private static bool IsActorVariation(ILeveledNpcGetter record, IImmutableSet<ModKey> modsWithActorVariations)
         {

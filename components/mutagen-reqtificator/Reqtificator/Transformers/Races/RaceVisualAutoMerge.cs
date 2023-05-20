@@ -11,7 +11,7 @@ namespace Reqtificator.Transformers.Races
     {
         private const float Tolerance = 0.0001f;
 
-        private readonly Race.TranslationMask _comparisonMask = new Race.TranslationMask(defaultOn: false)
+        private readonly Race.TranslationMask _comparisonMask = new(defaultOn: false)
         {
             //comparison for gendered items doesn't work, need to do a workaround
             Skin = true,
@@ -30,7 +30,7 @@ namespace Reqtificator.Transformers.Races
             // FaceFxPhonemes = true
         };
 
-        private readonly HeadData.TranslationMask _headDataComparisonMask = new HeadData.TranslationMask(defaultOn: true)
+        private readonly HeadData.TranslationMask _headDataComparisonMask = new(defaultOn: true)
         {
             // need custom comparison because sorting does not matter
             AvailableHairColors = false,
@@ -42,7 +42,7 @@ namespace Reqtificator.Transformers.Races
             TintMasks = false
         };
 
-        private readonly Race.TranslationMask _copyMask = new Race.TranslationMask(defaultOn: false)
+        private readonly Race.TranslationMask _copyMask = new(defaultOn: false)
         {
             Skin = true,
             Height = new GenderedItem<bool>(true, true),

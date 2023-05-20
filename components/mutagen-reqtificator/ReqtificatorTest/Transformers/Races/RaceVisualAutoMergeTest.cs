@@ -80,7 +80,7 @@ namespace ReqtificatorTest.Transformers.Races
         {
             public readonly Race Race1 = GenerateTemplateRace("Race1");
             public readonly Race Race2 = GenerateTemplateRace("Race2");
-            public readonly RaceVisualAutoMerge Logic = new RaceVisualAutoMerge();
+            public readonly RaceVisualAutoMerge Logic = new();
         }
 
         [Fact]

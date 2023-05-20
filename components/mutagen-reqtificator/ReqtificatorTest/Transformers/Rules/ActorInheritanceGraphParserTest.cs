@@ -22,7 +22,7 @@ namespace ReqtificatorTest.Transformers.Rules
             internal Npc Template2 { get; }
             internal Npc Template3 { get; }
             internal LeveledNpc LeveledCharWithMultipleActors { get; }
-            internal ModKey testModKey = new ModKey("testplugin", ModType.Master);
+            internal ModKey testModKey = new("testplugin", ModType.Master);
 
             public Fixture()
             {

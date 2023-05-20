@@ -13,7 +13,7 @@ namespace Reqtificator.Transformers.LeveledCharacters
     {
         private readonly IImmutableSet<ModKey> _registeredMods;
 
-        private static readonly Regex Pattern = new Regex("^[a-zA-Z0-9]+_CLChar_", RegexOptions.IgnoreCase);
+        private static readonly Regex Pattern = new("^[a-zA-Z0-9]+_CLChar_", RegexOptions.IgnoreCase);
 
         public CompactLeveledCharacterUnroller(IImmutableSet<ModKey> modsRegisteredForFeature)
         {

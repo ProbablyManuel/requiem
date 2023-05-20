@@ -14,19 +14,19 @@ namespace ReqtificatorTest.Transformers
 {
     public class ForwardDataFromTemplateTest
     {
-        public static readonly ModKey Skyrim = new ModKey("Skyrim", ModType.Master);
-        public static readonly ModKey VisualMod = new ModKey("Amazing Actors", ModType.Plugin);
-        public static readonly ModKey UnrelatedMod = new ModKey("Serious Loot", ModType.LightMaster);
-        public static readonly ModKey DataMod = new ModKey("Skilled Actors", ModType.Plugin);
+        public static readonly ModKey Skyrim = new("Skyrim", ModType.Master);
+        public static readonly ModKey VisualMod = new("Amazing Actors", ModType.Plugin);
+        public static readonly ModKey UnrelatedMod = new("Serious Loot", ModType.LightMaster);
+        public static readonly ModKey DataMod = new("Skilled Actors", ModType.Plugin);
 
         private class Fixture
         {
             public static readonly FormKey Record = FormKey.Factory("123456:Skyrim.esm");
             public readonly Mock<IDataForwardingLogic<Npc, INpcGetter>> Logic = new(MockBehavior.Strict);
-            public readonly Npc SkyrimRecord = new Npc(Record, SkyrimRelease.SkyrimSE) { EditorID = "Skyrim" };
-            public readonly Npc VisualRecord = new Npc(Record, SkyrimRelease.SkyrimSE) { EditorID = "Visual" };
-            public readonly Npc UnrelatedRecord = new Npc(Record, SkyrimRelease.SkyrimSE) { EditorID = "Unrelated" };
-            public readonly Npc DataRecord = new Npc(Record, SkyrimRelease.SkyrimSE) { EditorID = "Data" };
+            public readonly Npc SkyrimRecord = new(Record, SkyrimRelease.SkyrimSE) { EditorID = "Skyrim" };
+            public readonly Npc VisualRecord = new(Record, SkyrimRelease.SkyrimSE) { EditorID = "Visual" };
+            public readonly Npc UnrelatedRecord = new(Record, SkyrimRelease.SkyrimSE) { EditorID = "Unrelated" };
+            public readonly Npc DataRecord = new(Record, SkyrimRelease.SkyrimSE) { EditorID = "Data" };
             public readonly Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>> Cache = new(MockBehavior.Strict);
             public readonly ForwardDataFromTemplate<Npc, INpc, INpcGetter> Transformer;
 

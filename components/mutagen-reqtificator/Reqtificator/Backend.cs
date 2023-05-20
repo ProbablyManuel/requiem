@@ -34,7 +34,7 @@ namespace Reqtificator
     {
         private const GameRelease Release = GameRelease.SkyrimSE;
         private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Indifferent.esp");
-        private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
+        private static readonly ModKey RequiemModKey = new("Requiem", ModType.Plugin);
 
         private readonly InternalEvents _events;
         private readonly MainLogicExecutor _executor;

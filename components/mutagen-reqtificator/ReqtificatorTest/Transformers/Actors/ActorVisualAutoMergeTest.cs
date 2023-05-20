@@ -43,7 +43,7 @@ namespace ReqtificatorTest.Transformers.Actors
         {
             public readonly Npc Actor1 = GenerateTemplateActor("Actor1");
             public readonly Npc Actor2 = GenerateTemplateActor("Actor2");
-            public readonly ActorVisualAutoMerge Logic = new ActorVisualAutoMerge();
+            public readonly ActorVisualAutoMerge Logic = new();
         }
 
 

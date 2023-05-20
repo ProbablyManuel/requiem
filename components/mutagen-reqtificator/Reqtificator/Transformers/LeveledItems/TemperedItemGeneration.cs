@@ -17,7 +17,7 @@ namespace Reqtificator.Transformers.LeveledItems
         private readonly IImmutableSet<ModKey> _registeredMods;
 
         private static readonly Regex Pattern =
-            new Regex("^[^_]+_.+_Quality(?<tier>[0-9]+)_(?<size>[A-z])_(?<distribution>[A-z]+)$",
+            new("^[^_]+_.+_Quality(?<tier>[0-9]+)_(?<size>[A-z])_(?<distribution>[A-z]+)$",
                 RegexOptions.IgnoreCase);
 
         public TemperedItemGeneration(IImmutableSet<ModKey> modsRegisteredForFeature)

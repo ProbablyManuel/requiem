@@ -40,7 +40,7 @@ namespace ReqtificatorTest.Configuration
                 }
             }";
 
-        private static readonly ReqtificatorConfig ExpectedBase = new ReqtificatorConfig(
+        private static readonly ReqtificatorConfig ExpectedBase = new(
             PlayerConfig: new PlayerConfig(
                 HealthOffset: 0,
                 MagickaOffset: 1,

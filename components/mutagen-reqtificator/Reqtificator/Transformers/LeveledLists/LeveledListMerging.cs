@@ -33,7 +33,7 @@ namespace Reqtificator.Transformers.LeveledLists
         private readonly IImmutableDictionary<ModKey, ImmutableHashSet<ModKey>> _invertedMasterMap;
         private readonly ICompactLeveledListUnroller<T, TGetter, TEntry> _unroller;
         private readonly ILeveledListMerger<T, TGetter, TEntry> _merger;
-        private static readonly ModKey Requiem = new ModKey("Requiem", ModType.Plugin);
+        private static readonly ModKey Requiem = new("Requiem", ModType.Plugin);
 
         public LeveledListMerging(bool mergeEnabled, ILinkCache<ISkyrimMod, ISkyrimModGetter> cache,
             IImmutableSet<ModKey> modsWithRequiemAsMaster,
