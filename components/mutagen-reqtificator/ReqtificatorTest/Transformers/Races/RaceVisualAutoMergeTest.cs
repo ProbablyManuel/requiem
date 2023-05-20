@@ -10,19 +10,19 @@ namespace ReqtificatorTest.Transformers.Races
 {
     public class RaceVisualAutoMergeTest
     {
-        private static FormKey Skin = FormKey.Factory("0000AB:Skyrim.esm");
+        private static readonly FormKey Skin = FormKey.Factory("0000AB:Skyrim.esm");
 
-        private static IFormLinkGetter<IColorRecordGetter> Color1 =
+        private static readonly IFormLinkGetter<IColorRecordGetter> Color1 =
             FormKey.Factory("0000CD:Skyrim.esm").ToLinkGetter<IColorRecordGetter>();
 
-        private static IFormLinkGetter<IColorRecordGetter> Color2 =
+        private static readonly IFormLinkGetter<IColorRecordGetter> Color2 =
             FormKey.Factory("0000EF:Skyrim.esm").ToLinkGetter<IColorRecordGetter>();
 
-        private static FormKey BodyParts = FormKey.Factory("0010AB:Skyrim.esm");
-        private static FormKey ArmorRace = FormKey.Factory("0010CD:Skyrim.esm");
+        private static readonly FormKey BodyParts = FormKey.Factory("0010AB:Skyrim.esm");
+        private static readonly FormKey ArmorRace = FormKey.Factory("0010CD:Skyrim.esm");
 
-        private static FormKey HeadPartDummy1 = FormKey.Factory("0020AB:Skyrim.esm");
-        private static FormKey HeadPartDummy2 = FormKey.Factory("0020CD:Skyrim.esm");
+        private static readonly FormKey HeadPartDummy1 = FormKey.Factory("0020AB:Skyrim.esm");
+        private static readonly FormKey HeadPartDummy2 = FormKey.Factory("0020CD:Skyrim.esm");
 
         private static Race GenerateTemplateRace(string editorId)
         {
