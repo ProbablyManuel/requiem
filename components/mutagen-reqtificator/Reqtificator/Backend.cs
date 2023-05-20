@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Exceptions;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -171,10 +172,9 @@ namespace Reqtificator
                 generatedPatch.WriteToBinaryParallel(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName));
                 return null;
             }
-            catch (ArgumentException e)
+            catch (TooManyMastersException)
             {
-                if (e.Message.Contains("too many masters", StringComparison.InvariantCulture)) return new TooManyMasters();
-                throw;
+                return new TooManyMasters();
             }
         }
     }

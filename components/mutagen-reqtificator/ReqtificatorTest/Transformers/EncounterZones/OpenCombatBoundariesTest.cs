@@ -28,7 +28,7 @@ namespace ReqtificatorTest.Transformers.EncounterZones
             var mask = new EncounterZone.TranslationMask(defaultOn: true) { Flags = false };
             reference.Equals(result.Record(), mask).Should().BeTrue();
 
-            result.Record().Flags.Should().BeEquivalentTo(EncounterZone.Flag.NeverResets | EncounterZone.Flag.DisableCombatBoundary);
+            result.Record().Flags.Should().Be(EncounterZone.Flag.NeverResets | EncounterZone.Flag.DisableCombatBoundary);
             result.IsModified().Should().BeTrue();
         }
 
@@ -41,7 +41,7 @@ namespace ReqtificatorTest.Transformers.EncounterZones
             var input = new EncounterZone(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE);
 
             var result = transformer.Process(new UnChanged<EncounterZone, IEncounterZoneGetter>(input));
-            result.Record().Flags.Should().BeEquivalentTo(EncounterZone.Flag.DisableCombatBoundary);
+            result.Record().Flags.Should().Be(EncounterZone.Flag.DisableCombatBoundary);
             result.IsModified().Should().BeTrue();
         }
 

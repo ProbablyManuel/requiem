@@ -18,10 +18,7 @@ namespace ReqtificatorTest
     internal class ErrorOrAssertions<T> :
         ReferenceTypeAssertions<ErrorOr<T>, ErrorOrAssertions<T>>
     {
-        public ErrorOrAssertions(ErrorOr<T> instance)
-        {
-            Subject = instance;
-        }
+        public ErrorOrAssertions(ErrorOr<T> instance) : base(instance) { }
 
         protected override string Identifier => "directory";
 
