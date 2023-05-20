@@ -13,10 +13,10 @@ namespace ReqtificatorTest.Transformers.Races
         private static FormKey Skin = FormKey.Factory("0000AB:Skyrim.esm");
 
         private static IFormLinkGetter<IColorRecordGetter> Color1 =
-            FormKey.Factory("0000CD:Skyrim.esm").AsLinkGetter<IColorRecordGetter>();
+            FormKey.Factory("0000CD:Skyrim.esm").ToLinkGetter<IColorRecordGetter>();
 
         private static IFormLinkGetter<IColorRecordGetter> Color2 =
-            FormKey.Factory("0000EF:Skyrim.esm").AsLinkGetter<IColorRecordGetter>();
+            FormKey.Factory("0000EF:Skyrim.esm").ToLinkGetter<IColorRecordGetter>();
 
         private static FormKey BodyParts = FormKey.Factory("0010AB:Skyrim.esm");
         private static FormKey ArmorRace = FormKey.Factory("0010CD:Skyrim.esm");

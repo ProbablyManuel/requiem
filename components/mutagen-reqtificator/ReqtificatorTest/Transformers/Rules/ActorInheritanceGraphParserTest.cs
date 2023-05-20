@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 using System.Linq;
 using FluentAssertions;
 using Mutagen.Bethesda;
-using Mutagen.Bethesda.Cache.Implementations;
+using Mutagen.Bethesda.Plugins.Cache.Internals.Implementations;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
@@ -46,11 +46,11 @@ namespace ReqtificatorTest.Transformers.Rules
                         {
                             new()
                             {
-                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template2.AsLink() }
+                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template2.ToLink() }
                             },
                             new()
                             {
-                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template3.AsLink() }
+                                Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template3.ToLink() }
                             }
                         }
                     };

@@ -51,7 +51,7 @@ namespace Reqtificator
         {
             var modList = loadOrder.Select(e => e.Key).ToImmutableList();
             return loadOrder
-                .SelectMany<IKeyValue<IModListing<ISkyrimModGetter>, ModKey>, ReqtificatorOutcome>((elem, index) =>
+                .SelectMany<IKeyValue<ModKey, IModListing<ISkyrimModGetter>>, ReqtificatorOutcome>((elem, index) =>
                     {
                         if (elem.Value.Mod is null)
                             return ReqtificatorFailure.CausedBy(new ModFromLoadOrderNotFoundException(elem.Key))

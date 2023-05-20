@@ -24,7 +24,7 @@ namespace Reqtificator.Utils
                 {
                     if (entry.TryResolve<TGetter>(linkCache, out var resolved))
                     {
-                        records = records.Add(resolved.AsLink());
+                        records = records.Add(resolved.ToLink());
                     }
                     else
                     {

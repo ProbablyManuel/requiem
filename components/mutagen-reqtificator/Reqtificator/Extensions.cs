@@ -28,7 +28,7 @@ namespace Reqtificator
 
         public static bool ContainsNot<TMajor>(this IReadOnlyList<IFormLinkGetter<TMajor>> list,
             FormKey formKey)
-            where TMajor : class, IMajorRecordCommonGetter
+            where TMajor : class, IMajorRecordGetter
         {
             return !list.Contains(formKey);
         }
@@ -37,7 +37,7 @@ namespace Reqtificator
     internal static class FormLinkExtensions
     {
         public static bool IsNotNull<TMajor>(this IFormLinkNullableGetter<TMajor> link)
-            where TMajor : class, IMajorRecordCommonGetter
+            where TMajor : class, IMajorRecordGetter
         {
             return !link.IsNull;
         }
@@ -59,7 +59,7 @@ namespace Reqtificator
         {
             var newMod = new SkyrimMod(mod.ModKey, mod.SkyrimRelease);
             newMod.DeepCopyIn(mod); //see https://github.com/Mutagen-Modding/Mutagen/issues/192
-            var cache = newMod.GetGroup<TMajor>();
+            var cache = newMod.GetTopLevelGroup<TMajor>();
             records.ForEach(cache.Add);
             return newMod;
         }

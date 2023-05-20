@@ -223,7 +223,7 @@ namespace Reqtificator.Transformers
                     var source = inheritanceGraph.FindAllTemplates(skillTemplate, f).First()[f];
                     CopyDataForTemplateFlag(newActor, source, f);
                 });
-            newActor.Template = lookTemplate.AsNullableLink();
+            newActor.Template = lookTemplate.ToNullableLink();
             newActor.Configuration.TemplateFlags =
                 NpcConfiguration.TemplateFlag.Traits | NpcConfiguration.TemplateFlag.AttackData;
             newActor.Race = lookTemplate.Race.AsSetter();

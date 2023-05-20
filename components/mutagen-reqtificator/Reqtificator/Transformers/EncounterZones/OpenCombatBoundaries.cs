@@ -32,7 +32,7 @@ namespace Reqtificator.Transformers.EncounterZones
                 {
                     if (entry.TryResolve<IEncounterZoneGetter>(linkCache, out var zone))
                     {
-                        exclusions = exclusions.Add(zone.AsLink());
+                        exclusions = exclusions.Add(zone.ToLink());
                     }
                     else
                     {

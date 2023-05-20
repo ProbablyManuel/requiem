@@ -29,9 +29,8 @@ namespace ReqtificatorTest.Transformers.Armors
             var mask = new Armor.TranslationMask(defaultOn: true) { Keywords = false };
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
             result.Record().Equals(input, mask).Should().BeTrue();
-            result.Record().Keywords!.Select(k => k.FormKey).Should().Contain(
-                new ArrayList { Keywords.ArmorLight.FormKey, keyword }
-            );
+            result.Record().Keywords!.Select(k => k.FormKey).Should().Contain(Keywords.ArmorLight.FormKey);
+            result.Record().Keywords!.Select(k => k.FormKey).Should().Contain(keyword);
         }
 
         [Fact]
@@ -49,9 +48,8 @@ namespace ReqtificatorTest.Transformers.Armors
             var mask = new Armor.TranslationMask(defaultOn: true) { Keywords = false };
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
             result.Record().Equals(input, mask).Should().BeTrue();
-            result.Record().Keywords!.Select(k => k.FormKey).Should().Contain(
-                new ArrayList { Keywords.ArmorHeavy.FormKey, keyword }
-            );
+            result.Record().Keywords!.Select(k => k.FormKey).Should().Contain(Keywords.ArmorHeavy.FormKey);
+            result.Record().Keywords!.Select(k => k.FormKey).Should().Contain(keyword);
         }
 
         [Fact]
