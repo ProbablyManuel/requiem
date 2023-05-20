@@ -39,7 +39,10 @@ namespace Reqtificator
             catch (Exception ex)
             {
                 Log.Error(ex.Message);
-                Log.Error(ex.StackTrace);
+                if (ex.StackTrace != null)
+                {
+                    Log.Error(ex.StackTrace);
+                }
                 HandlePatchingResult(window, ReqtificatorState.Stopped(ReqtificatorFailure.CausedBy(ex)));
                 window?.Close();
                 throw;
@@ -77,7 +80,10 @@ namespace Reqtificator
             catch (Exception e)
             {
                 Log.Error(e.Message);
-                Log.Error(e.StackTrace);
+                if (e.StackTrace != null)
+                {
+                    Log.Error(e.StackTrace);
+                }
                 throw;
             }
         }
