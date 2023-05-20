@@ -22,8 +22,15 @@ namespace Reqtificator.Transformers
             return new Modified<T, TGetter>(mutable);
         }
 
-        internal override TGetter Record() => Underlying;
-        internal override bool IsModified() => false;
+        internal override TGetter Record()
+        {
+            return Underlying;
+        }
+
+        internal override bool IsModified()
+        {
+            return false;
+        }
     }
 
     record Modified<T, TGetter>(T Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
@@ -35,8 +42,14 @@ namespace Reqtificator.Transformers
             return new Modified<T, TGetter>(Underlying);
         }
 
-        internal override TGetter Record() => Underlying;
+        internal override TGetter Record()
+        {
+            return Underlying;
+        }
 
-        internal override bool IsModified() => true;
+        internal override bool IsModified()
+        {
+            return true;
+        }
     }
 }

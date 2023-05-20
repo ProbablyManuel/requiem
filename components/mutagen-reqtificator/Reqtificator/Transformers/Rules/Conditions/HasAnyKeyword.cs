@@ -23,7 +23,10 @@ namespace Reqtificator.Transformers.Rules.Conditions
 
         public IImmutableSet<IFormLinkGetter<IKeywordGetter>> Keywords { get; }
 
-        public bool CheckRecord(TMajor record) => Keywords.Any(k => record.Keywords?.Contains(k) ?? false);
+        public bool CheckRecord(TMajor record)
+        {
+            return Keywords.Any(k => record.Keywords?.Contains(k) ?? false);
+        }
 
         public override bool Equals(object? obj)
         {
