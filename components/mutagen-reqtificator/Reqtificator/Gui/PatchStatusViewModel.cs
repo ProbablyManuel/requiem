@@ -2,7 +2,6 @@
 using System.Globalization;
 using System.Windows.Documents;
 using System.Windows.Input;
-using Reqtificator.Events;
 using Reqtificator.Events.Outcomes;
 
 namespace Reqtificator.Gui

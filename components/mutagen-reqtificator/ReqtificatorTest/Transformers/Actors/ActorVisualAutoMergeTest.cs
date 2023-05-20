@@ -1,6 +1,5 @@
 ﻿using System.Drawing;
 using FluentAssertions;
-using Moq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
