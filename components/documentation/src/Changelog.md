@@ -1,3 +1,12 @@
+Requiem 5.4.3 - "Towers and Shadows" Bugfix Pack #3
+===================================================
+
+New Features
+------------
+
+* The GOG release is supported.
+
+
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
 ===================================================
 
