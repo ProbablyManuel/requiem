@@ -30,10 +30,15 @@ namespace Reqtificator.Transformers.LeveledItems
         {
             var temperingData = ExtractQualityData(input.Record());
 
-            if (temperingData is null || _registeredMods.ContainsNot(input.Record().FormKey.ModKey)) return input;
+            if (temperingData is null || _registeredMods.ContainsNot(input.Record().FormKey.ModKey))
+            {
+                return input;
+            }
 
             if ((input.Record().Entries?.Count ?? 0) != 1)
+            {
                 throw new InvalidTemperingDataException(input.Record().ToLinkGetter());
+            }
 
             return input.Modify(record =>
             {
@@ -91,7 +96,10 @@ namespace Reqtificator.Transformers.LeveledItems
         {
             var match = Pattern.Match(record.EditorID ?? "");
 
-            if (!match.Success) return null;
+            if (!match.Success)
+            {
+                return null;
+            }
 
             var tier = int.Parse(match.Groups["tier"].Value, CultureInfo.InvariantCulture);
             var size = match.Groups["size"].Value switch

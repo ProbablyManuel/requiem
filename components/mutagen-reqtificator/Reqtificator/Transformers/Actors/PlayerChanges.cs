@@ -17,7 +17,10 @@ namespace Reqtificator.Transformers.Actors
 
         public override TransformationResult<Npc, INpcGetter> Process(TransformationResult<Npc, INpcGetter> input)
         {
-            if (input.Record().FormKey != Npcs.Player.FormKey) return input;
+            if (input.Record().FormKey != Npcs.Player.FormKey)
+            {
+                return input;
+            }
 
             return input.Modify(record =>
             {

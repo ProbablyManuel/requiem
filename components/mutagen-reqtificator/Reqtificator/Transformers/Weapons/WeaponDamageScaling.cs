@@ -32,7 +32,10 @@ namespace Reqtificator.Transformers.Weapons
                 _ => null
             };
 
-            if (factor is null) return input;
+            if (factor is null)
+            {
+                return input;
+            }
 
             return input.Modify(r =>
             {

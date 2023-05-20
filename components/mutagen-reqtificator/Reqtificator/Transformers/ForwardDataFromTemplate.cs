@@ -33,7 +33,10 @@ namespace Reqtificator.Transformers
 
         public override TransformationResult<T, TGetter> Process(TransformationResult<T, TGetter> input)
         {
-            if (!_featureActive) return input;
+            if (!_featureActive)
+            {
+                return input;
+            }
 
             var lastOverride = _linkCache.ResolveContext<T, TGetter>(input.Record().FormKey);
             var otherVersions = _linkCache.ResolveAllContexts<T, TGetter>(input.Record().FormKey).Skip(1)
@@ -62,7 +65,10 @@ namespace Reqtificator.Transformers
             var maybePreviousVersion =
                 otherVersions.FirstOrDefault(x => _masters[thisVersion.ModKey].Contains(x.ModKey));
 
-            if (maybePreviousVersion == null) return false;
+            if (maybePreviousVersion == null)
+            {
+                return false;
+            }
 
             return !_logic.CheckRecordEquality(thisVersion.Record, maybePreviousVersion.Record);
         }

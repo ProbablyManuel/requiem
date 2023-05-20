@@ -22,7 +22,9 @@ namespace Reqtificator.Transformers.Actors
         public override TransformationResult<Npc, INpcGetter> Process(TransformationResult<Npc, INpcGetter> input)
         {
             if (input.Record().Configuration.TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.SpellList))
+            {
                 return input;
+            }
 
             var assignments = _rules.SelectMany(r => r.GetAssignments(input.Record())).ToList();
             if (assignments.Count > 0)

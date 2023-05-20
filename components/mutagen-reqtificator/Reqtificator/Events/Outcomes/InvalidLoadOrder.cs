@@ -20,7 +20,11 @@ namespace Reqtificator.Events.Outcomes
             {
                 string FormatModList(string title, IImmutableSet<ModKey> mods)
                 {
-                    if (mods.Count == 0) return "";
+                    if (mods.Count == 0)
+                    {
+                        return "";
+                    }
+
                     {
                         var text = $@"|
                         |

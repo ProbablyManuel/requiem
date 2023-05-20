@@ -40,7 +40,10 @@ namespace Reqtificator.Transformers.Armors
             if ((input.Record().Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? false) ||
                 (input.Record().Keywords?.Contains(Keywords.NoArmorRatingRescaling.FormKey) ?? false) ||
                 !input.Record().TemplateArmor.IsNull
-                ) return input;
+                )
+            {
+                return input;
+            }
 
             var armorType = input.Record().BodyTemplate?.ArmorType;
             var partKeyword = GetArmorPartKeyword(input.Record());

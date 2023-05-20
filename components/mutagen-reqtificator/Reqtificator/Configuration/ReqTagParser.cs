@@ -30,7 +30,10 @@ namespace Reqtificator.Configuration
             IImmutableSet<ReqTags> ExtractTags(ISkyrimModGetter mod)
             {
                 var match = regex.Match(mod.ModHeader.Description ?? "");
-                if (!match.Success) return ImmutableHashSet<ReqTags>.Empty;
+                if (!match.Success)
+                {
+                    return ImmutableHashSet<ReqTags>.Empty;
+                }
 
                 if (match.Groups["legacy"].Success)
                 {

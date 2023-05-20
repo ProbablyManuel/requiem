@@ -21,7 +21,10 @@ namespace Reqtificator.Transformers.Armors
         public override TransformationResult<Armor, IArmorGetter> Process(
             TransformationResult<Armor, IArmorGetter> input)
         {
-            if (input.Record().TemplateArmor.IsNotNull()) return input;
+            if (input.Record().TemplateArmor.IsNotNull())
+            {
+                return input;
+            }
 
             var assignments = _rules.SelectMany(r => r.GetAssignments(input.Record())).ToList();
             if (assignments.Count > 0)

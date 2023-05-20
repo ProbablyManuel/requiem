@@ -101,7 +101,10 @@ namespace Reqtificator.Transformers.ActorVariations
                     var updated = r.DeepCopy();
                     var variationsToAdd = ExtractVariations(r, linkCache);
                     if (variationsToAdd.Values.Sum() > 255)
+                    {
                         throw new OversizedLeveledListException(r.FormKey, r.EditorID);
+                    }
+
                     updated.Entries!.Clear();
                     variationsToAdd.ForEach(v =>
                     {
@@ -123,7 +126,10 @@ namespace Reqtificator.Transformers.ActorVariations
         private static ImmutableDictionary<VariationKey, int> ExtractVariations(ILeveledNpcGetter record,
             ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
         {
-            if (record.Entries is null) return ImmutableDictionary<VariationKey, int>.Empty;
+            if (record.Entries is null)
+            {
+                return ImmutableDictionary<VariationKey, int>.Empty;
+            }
 
             var skillsTemplates = record.Entries
                 .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))

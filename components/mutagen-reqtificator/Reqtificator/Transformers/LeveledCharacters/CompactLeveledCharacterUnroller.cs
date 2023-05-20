@@ -29,8 +29,15 @@ namespace Reqtificator.Transformers.LeveledCharacters
 
         public IReadOnlyList<ILeveledNpcEntryGetter> GetUnrolledEntries(ILeveledNpcGetter input)
         {
-            if (input.Entries is null) return ImmutableList<ILeveledNpcEntryGetter>.Empty;
-            if (!IsCompactLeveledList(input)) return input.Entries;
+            if (input.Entries is null)
+            {
+                return ImmutableList<ILeveledNpcEntryGetter>.Empty;
+            }
+
+            if (!IsCompactLeveledList(input))
+            {
+                return input.Entries;
+            }
 
             return input.Entries!
                 .Where(e => e.Data is not null)

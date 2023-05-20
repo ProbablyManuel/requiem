@@ -25,8 +25,16 @@ namespace Reqtificator.Transformers.Actors
         {
             var thisFlag = reference.Configuration.TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.Traits);
             var otherFlag = reference.Configuration.TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.Traits);
-            if (thisFlag && otherFlag) return true;
-            if (thisFlag != otherFlag) return false;
+            if (thisFlag && otherFlag)
+            {
+                return true;
+            }
+
+            if (thisFlag != otherFlag)
+            {
+                return false;
+            }
+
             return reference.Equals(other, _compareTraitsMask) &&
                    CompareHeadParts(other, reference) &&
                    CompareFaceMorphs(other, reference);
@@ -51,8 +59,15 @@ namespace Reqtificator.Transformers.Actors
             var otherMorph = other.FaceMorph;
             const float tolerance = 0.0001f;
 
-            if (refMorph == null && otherMorph == null) return true;
-            if (refMorph == null || otherMorph == null) return false;
+            if (refMorph == null && otherMorph == null)
+            {
+                return true;
+            }
+
+            if (refMorph == null || otherMorph == null)
+            {
+                return false;
+            }
 
             return Math.Abs(refMorph.BrowsForwardVsBack - otherMorph.BrowsForwardVsBack) < tolerance &&
                    Math.Abs(refMorph.BrowsInVsOut - otherMorph.BrowsInVsOut) < tolerance &&

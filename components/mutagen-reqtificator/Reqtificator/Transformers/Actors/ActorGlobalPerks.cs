@@ -22,7 +22,9 @@ namespace Reqtificator.Transformers.Actors
             if (_globalPerks.Count == 0 ||
                 (input.Record().Template.IsNotNull() && input.Record().Configuration
                 .TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.SpellList)))
+            {
                 return input;
+            }
 
             return input.Modify(record =>
             {

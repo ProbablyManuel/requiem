@@ -34,7 +34,10 @@ namespace Reqtificator.Transformers.Weapons
             {
                 record.Data!.Speed = speed;
                 record.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
-                if (record.Keywords.ContainsNot(keyword)) record.Keywords.Add(keyword);
+                if (record.Keywords.ContainsNot(keyword))
+                {
+                    record.Keywords.Add(keyword);
+                }
             };
         }
     }
