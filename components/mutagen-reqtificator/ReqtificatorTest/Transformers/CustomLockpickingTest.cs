@@ -90,8 +90,10 @@ namespace ReqtificatorTest.Transformers
         }
         private static ScriptEntry expectedScript()
         {
-            var lockPickingControScript = new ScriptEntry();
-            lockPickingControScript.Name = "REQ_LockpickControl";
+            var lockPickingControScript = new ScriptEntry
+            {
+                Name = "REQ_LockpickControl"
+            };
             lockPickingControScript.Properties.Add(new ScriptObjectProperty()
             {
                 Name = "dataStorage",
