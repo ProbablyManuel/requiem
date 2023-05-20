@@ -149,9 +149,9 @@ namespace Reqtificator
                         $"Generated for Requiem version: {version.ShortVersion()} -- build with Mutagen"
                 }
             };
-            System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(PersistenceFileLocation)!);
+            _ = System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(PersistenceFileLocation)!);
             var allocator = new TextFileFormKeyAllocator(patch, PersistenceFileLocation);
-            patch.SetAllocator(allocator);
+            _ = patch.SetAllocator(allocator);
 
             //TODO: error handling...
             if (cache.TryResolve<IGlobalGetter>(GlobalVariables.VersionStampPatch.FormKey,
