@@ -220,12 +220,11 @@ namespace Reqtificator.Transformers
                 NpcConfiguration.TemplateFlag.Factions => InheritFactionsMask(),
                 NpcConfiguration.TemplateFlag.Inventory => InheritInventoryMask(),
                 NpcConfiguration.TemplateFlag.Keywords => InheritKeywordsMask(),
-                // NpcConfiguration.TemplateFlag.ModelAnimation => expr,
                 NpcConfiguration.TemplateFlag.Script => InheritScriptsMask(),
                 NpcConfiguration.TemplateFlag.SpellList => InheritSpellListMask(),
                 NpcConfiguration.TemplateFlag.Stats => InheritStatsMask(),
                 NpcConfiguration.TemplateFlag.Traits => InheritTraitsMask(),
-                _ => throw new ArgumentOutOfRangeException(nameof(flag), flag, null)
+                _ => throw new NotImplementedException()
             };
             target.DeepCopyIn(source, mask);
             if (source.Configuration.TemplateFlags.HasFlag(flag))

@@ -19,6 +19,7 @@ dotnet_diagnostic.CA1826.severity = none # our collections shouldn't be large en
 dotnet_diagnostic.CA1032.severity = none # our exceptions aren't used externally, so we don't need to add constructors we don't use
 dotnet_diagnostic.CA1305.severity = none # no idea how to fix this
 dotnet_diagnostic.IDE0130.severity = none # https://github.com/dotnet/format/issues/1623
+dotnet_diagnostic.IDE0072.severity = none # too many false positives
 
 [UserSettings.cs]
 # only used to write booleans to json
