@@ -34,7 +34,7 @@ namespace Reqtificator
     {
         private const GameRelease Release = GameRelease.SkyrimSE;
         private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Indifferent.esp");
-        private static readonly ModKey RequiemModKey = new ModKey("Requiem", ModType.Plugin);
+        private static readonly ModKey RequiemModKey = new("Requiem", ModType.Plugin);
 
         private readonly InternalEvents _events;
         private readonly MainLogicExecutor _executor;
@@ -62,7 +62,7 @@ namespace Reqtificator
             ValidateRequiemFound();
 
             //TODO: update base folder for configurations if needed
-            var configFolder = Path.Combine(_context.DataFolder, "Reqtificator", "Config");
+            string configFolder = Path.Combine(_context.DataFolder, "Reqtificator", "Config");
             Log.Information($"configuration folder: {configFolder}");
 
             var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods, _events);
@@ -76,7 +76,7 @@ namespace Reqtificator
             _events.PublishState(readyToPatchState);
             Log.Information("Ready to patch: userConfig detected\r\n{userConfig}", userConfig);
 
-            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder = LoadAndVerifyLoadOrder(readyToPatchState);
+            var loadOrder = LoadAndVerifyLoadOrder(readyToPatchState);
 
             _events.PatchRequested += (_, updatedSettings) => { HandlePatchRequest(updatedSettings, loadOrder); };
         }
@@ -136,7 +136,7 @@ namespace Reqtificator
 
         public static UserSettings LoadAndVerifyUserSettings(GameContext context)
         {
-            var userConfigFile = Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json");
+            string userConfigFile = Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json");
             var userConfig = UserSettings.LoadUserSettings(userConfigFile);
 
             return userConfig;

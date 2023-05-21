@@ -17,7 +17,7 @@ namespace ReqtificatorTest.Transformers.EncounterZones
             var formKey = FormKey.Factory("123456:Requiem.esp");
             var transformer = new OpenCombatBoundaries(ImmutableHashSet<ZoneRef>.Empty, true);
 
-            var input = new EncounterZone(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            var input = new EncounterZone(formKey, SkyrimRelease.SkyrimSE)
             {
                 Flags = EncounterZone.Flag.NeverResets
             };
@@ -38,7 +38,7 @@ namespace ReqtificatorTest.Transformers.EncounterZones
             var formKey = FormKey.Factory("123456:Requiem.esp");
             var transformer = new OpenCombatBoundaries(ImmutableHashSet<ZoneRef>.Empty, true);
 
-            var input = new EncounterZone(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE);
+            var input = new EncounterZone(formKey, SkyrimRelease.SkyrimSE);
 
             var result = transformer.Process(new UnChanged<EncounterZone, IEncounterZoneGetter>(input));
             result.Record().Flags.Should().Be(EncounterZone.Flag.DisableCombatBoundary);
@@ -52,7 +52,7 @@ namespace ReqtificatorTest.Transformers.EncounterZones
             var exceptions = ImmutableHashSet.Create<ZoneRef>(formKey.ToLink<IEncounterZoneGetter>());
             var transformer = new OpenCombatBoundaries(exceptions, true);
 
-            var input = new EncounterZone(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE);
+            var input = new EncounterZone(formKey, SkyrimRelease.SkyrimSE);
 
             var result = transformer.Process(new UnChanged<EncounterZone, IEncounterZoneGetter>(input));
             result.IsModified().Should().BeFalse();
@@ -64,7 +64,7 @@ namespace ReqtificatorTest.Transformers.EncounterZones
             var formKey = FormKey.Factory("123456:Requiem.esp");
             var transformer = new OpenCombatBoundaries(ImmutableHashSet<ZoneRef>.Empty, false);
 
-            var input = new EncounterZone(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE);
+            var input = new EncounterZone(formKey, SkyrimRelease.SkyrimSE);
 
             var result = transformer.Process(new UnChanged<EncounterZone, IEncounterZoneGetter>(input));
             result.IsModified().Should().BeFalse();

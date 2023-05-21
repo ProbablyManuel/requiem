@@ -11,7 +11,7 @@ namespace Reqtificator.Transformers
             TransformationResult<Ammunition, IAmmunitionGetter> input)
         {
             var record = input.Record();
-            var exceptionKeywordsFound = (record.Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? false) ||
+            bool exceptionKeywordsFound = (record.Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? false) ||
                    (record.Keywords?.Contains(Keywords.NoDamageRescaling.FormKey) ?? false);
             if (exceptionKeywordsFound || record.Damage <= 0.0f) { return input; }
 

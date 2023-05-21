@@ -4,7 +4,6 @@ using FluentAssertions;
 using Moq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
-using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -18,17 +17,17 @@ namespace ReqtificatorTest.Transformers.LeveledLists
     public class LeveledListMergingTest
     {
         private readonly LeveledItem.TranslationMask _mask = new(defaultOn: true) { Entries = false };
-        public static readonly FormLink<Armor> ItemRef1 = new FormLink<Armor>(FormKey.Factory("ABC123:Skyrim.esm"));
-        public static readonly FormLink<Armor> ItemRef2 = new FormLink<Armor>(FormKey.Factory("ABC456:Skyrim.esm"));
-        public static readonly FormLink<Armor> ItemRef3 = new FormLink<Armor>(FormKey.Factory("ABC789:Skyrim.esm"));
+        public static readonly FormLink<Armor> ItemRef1 = new(FormKey.Factory("ABC123:Skyrim.esm"));
+        public static readonly FormLink<Armor> ItemRef2 = new(FormKey.Factory("ABC456:Skyrim.esm"));
+        public static readonly FormLink<Armor> ItemRef3 = new(FormKey.Factory("ABC789:Skyrim.esm"));
 
-        public static readonly ModKey Requiem = new ModKey("Requiem", ModType.Plugin);
-        public static readonly ModKey Patch1 = new ModKey("Epic Loot", ModType.Plugin);
-        public static readonly ModKey Patch2 = new ModKey("Serious Loot", ModType.LightMaster);
+        public static readonly ModKey Requiem = new("Requiem", ModType.Plugin);
+        public static readonly ModKey Patch1 = new("Epic Loot", ModType.Plugin);
+        public static readonly ModKey Patch2 = new("Serious Loot", ModType.LightMaster);
 
-        public static readonly SkyrimMod ModRequiem = new SkyrimMod(Requiem, SkyrimRelease.SkyrimSE);
-        public static readonly SkyrimMod ModPatch1 = new SkyrimMod(Patch1, SkyrimRelease.SkyrimSE);
-        public static readonly SkyrimMod ModPatch2 = new SkyrimMod(Patch2, SkyrimRelease.SkyrimSE);
+        public static readonly SkyrimMod ModRequiem = new(Requiem, SkyrimRelease.SkyrimSE);
+        public static readonly SkyrimMod ModPatch1 = new(Patch1, SkyrimRelease.SkyrimSE);
+        public static readonly SkyrimMod ModPatch2 = new(Patch2, SkyrimRelease.SkyrimSE);
 
         public static readonly IImmutableSet<ModKey> ModsWithRequiemAsMaster =
             ImmutableHashSet<ModKey>.Empty.Add(Patch1).Add(Patch2);

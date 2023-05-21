@@ -24,8 +24,8 @@ namespace Reqtificator.Utils
 
         public static string FormatMultiline(string multiLineString, char indentationSymbol, params string[] args)
         {
-            var trimmedText = Regex.Replace(multiLineString, $"\r\n *{Regex.Escape(indentationSymbol.ToString())}", "\r\n");
-            var finalText = Regex.Replace(trimmedText, $"^ *{Regex.Escape(indentationSymbol.ToString())}", "");
+            string trimmedText = Regex.Replace(multiLineString, $"\r\n *{Regex.Escape(indentationSymbol.ToString())}", "\r\n");
+            string finalText = Regex.Replace(trimmedText, $"^ *{Regex.Escape(indentationSymbol.ToString())}", "");
             return string.Format(CultureInfo.InvariantCulture, finalText, args);
         }
     }

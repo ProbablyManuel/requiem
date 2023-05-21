@@ -13,13 +13,20 @@ namespace Reqtificator.Transformers.Rules.Conditions
     {
         public HasNoneOfKeywords(IImmutableSet<IFormLinkGetter<IKeywordGetter>> keywords)
         {
-            if (keywords.Count == 0) throw new ArgumentException("keywords must be non-empty", nameof(keywords));
+            if (keywords.Count == 0)
+            {
+                throw new ArgumentException("keywords must be non-empty", nameof(keywords));
+            }
+
             Keywords = keywords;
         }
 
         public IImmutableSet<IFormLinkGetter<IKeywordGetter>> Keywords { get; }
 
-        public bool CheckRecord(TMajor record) => Keywords.All(k => record.Keywords?.ContainsNot(k) ?? true);
+        public bool CheckRecord(TMajor record)
+        {
+            return Keywords.All(k => record.Keywords?.ContainsNot(k) ?? true);
+        }
 
         public override bool Equals(object? obj)
         {
@@ -35,7 +42,10 @@ namespace Reqtificator.Transformers.Rules.Conditions
             unchecked
             {
                 int sum = 0;
-                foreach (IFormLinkGetter<IKeywordGetter> x in Keywords) sum += x.GetHashCode();
+                foreach (var x in Keywords)
+                {
+                    sum += x.GetHashCode();
+                }
 
                 return 3 + sum;
             }

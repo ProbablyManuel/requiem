@@ -11,15 +11,33 @@ namespace Reqtificator.Transformers.Races
     {
         public override TransformationResult<Race, IRaceGetter> Process(TransformationResult<Race, IRaceGetter> input)
         {
-            if ((input.Record().Flags & Race.Flag.Playable) == 0) return input;
-            if (input.Record().Starting.Values.Aggregate(0f, (x, y) => x + y) > 200f) return input;
+            if ((input.Record().Flags & Race.Flag.Playable) == 0)
+            {
+                return input;
+            }
+
+            if (input.Record().Starting.Values.Aggregate(0f, (x, y) => x + y) > 200f)
+            {
+                return input;
+            }
 
             return input.Modify(record =>
             {
                 record.ActorEffect ??= new ExtendedList<IFormLinkGetter<ISpellRecordGetter>>();
-                if (record.ActorEffect.ContainsNot(Spells.MassEffectBase)) record.ActorEffect.Add(Spells.MassEffectBase);
-                if (record.ActorEffect.ContainsNot(Spells.MassEffectNpc)) record.ActorEffect.Add(Spells.MassEffectNpc);
-                if (record.ActorEffect.ContainsNot(Spells.NoNaturalHealthRegeneration)) record.ActorEffect.Add(Spells.NoNaturalHealthRegeneration);
+                if (record.ActorEffect.ContainsNot(Spells.MassEffectBase))
+                {
+                    record.ActorEffect.Add(Spells.MassEffectBase);
+                }
+
+                if (record.ActorEffect.ContainsNot(Spells.MassEffectNpc))
+                {
+                    record.ActorEffect.Add(Spells.MassEffectNpc);
+                }
+
+                if (record.ActorEffect.ContainsNot(Spells.NoNaturalHealthRegeneration))
+                {
+                    record.ActorEffect.Add(Spells.NoNaturalHealthRegeneration);
+                }
 
                 record.Starting[BasicStat.Health] += 50f;
                 record.Starting[BasicStat.Magicka] += 50f;

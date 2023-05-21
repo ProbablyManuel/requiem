@@ -11,7 +11,7 @@ namespace Reqtificator
     {
         public static GameContext GetRequiemContext(GameRelease release, ModKey patchToBeGenerated)
         {
-            var dataFolder = Directory.GetCurrentDirectory();
+            string dataFolder = Directory.GetCurrentDirectory();
             if (!PluginListings.TryGetListingsFile(release, out var path))
             {
                 throw new FileNotFoundException("Could not locate load order automatically.");

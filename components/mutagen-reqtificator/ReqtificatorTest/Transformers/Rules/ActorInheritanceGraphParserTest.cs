@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
 using FluentAssertions;
 using Mutagen.Bethesda;
-using Mutagen.Bethesda.Plugins.Cache.Internals.Implementations;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
+using Mutagen.Bethesda.Plugins.Cache.Internals.Implementations;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
 using Reqtificator.Exceptions;
@@ -17,13 +16,13 @@ namespace ReqtificatorTest.Transformers.Rules
 {
     public class ActorInheritanceGraphParserTest
     {
-        class Fixture
+        private class Fixture
         {
             internal Npc Template1 { get; }
             internal Npc Template2 { get; }
             internal Npc Template3 { get; }
             internal LeveledNpc LeveledCharWithMultipleActors { get; }
-            internal ModKey testModKey = new ModKey("testplugin", ModType.Master);
+            internal ModKey testModKey = new("testplugin", ModType.Master);
 
             public Fixture()
             {
@@ -56,7 +55,7 @@ namespace ReqtificatorTest.Transformers.Rules
                     };
             }
 
-            public ImmutableModLinkCache<ISkyrimMod, ISkyrimModGetter> getCache(params Npc[] npcsToAdd)
+            public ImmutableModLinkCache<ISkyrimMod, ISkyrimModGetter> GetCache(params Npc[] npcsToAdd)
             {
                 var myMod = new SkyrimMod(testModKey, SkyrimRelease.SkyrimSE);
                 myMod.Npcs.Add(Template1);
@@ -77,7 +76,7 @@ namespace ReqtificatorTest.Transformers.Rules
             {
                 Template = new FormLinkNullable<INpcSpawnGetter>()
             };
-            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithNoInheritance));
+            var resolver = new ActorInheritanceGraphParser(fixture.GetCache(actorWithNoInheritance));
 
             var results = resolver.FindAllTemplates(actorWithNoInheritance,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
@@ -102,7 +101,7 @@ namespace ReqtificatorTest.Transformers.Rules
                     TemplateFlags = NpcConfiguration.TemplateFlag.Script | NpcConfiguration.TemplateFlag.Factions
                 }
             };
-            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithUnrelatedTemplateFlags));
+            var resolver = new ActorInheritanceGraphParser(fixture.GetCache(actorWithUnrelatedTemplateFlags));
 
             var results = resolver.FindAllTemplates(actorWithUnrelatedTemplateFlags,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
@@ -128,7 +127,7 @@ namespace ReqtificatorTest.Transformers.Rules
                 }
             };
 
-            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithSimpleActorTemplate));
+            var resolver = new ActorInheritanceGraphParser(fixture.GetCache(actorWithSimpleActorTemplate));
 
             var results = resolver.FindAllTemplates(actorWithSimpleActorTemplate,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
@@ -153,7 +152,7 @@ namespace ReqtificatorTest.Transformers.Rules
                     TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
                 }
             };
-            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithPartialInheritance));
+            var resolver = new ActorInheritanceGraphParser(fixture.GetCache(actorWithPartialInheritance));
 
             var results = resolver.FindAllTemplates(actorWithPartialInheritance,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
@@ -178,7 +177,7 @@ namespace ReqtificatorTest.Transformers.Rules
                     TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Traits
                 }
             };
-            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithLeveledCharTemplate));
+            var resolver = new ActorInheritanceGraphParser(fixture.GetCache(actorWithLeveledCharTemplate));
 
             var results = resolver.FindAllTemplates(actorWithLeveledCharTemplate,
                 NpcConfiguration.TemplateFlag.Keywords, NpcConfiguration.TemplateFlag.Traits).ToImmutableList();
@@ -219,7 +218,7 @@ namespace ReqtificatorTest.Transformers.Rules
                 };
 
             var resolver =
-                new ActorInheritanceGraphParser(fixture.getCache(actorWithLeveledCharTemplate,
+                new ActorInheritanceGraphParser(fixture.GetCache(actorWithLeveledCharTemplate,
                     actorWithPartialInheritanceAndNestedLeveledCharTemplate));
 
             var results = resolver.FindAllTemplates(actorWithPartialInheritanceAndNestedLeveledCharTemplate,
@@ -273,7 +272,7 @@ namespace ReqtificatorTest.Transformers.Rules
                     TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
                 }
             };
-            var resolver = new ActorInheritanceGraphParser(fixture.getCache(circularDependentActor1,
+            var resolver = new ActorInheritanceGraphParser(fixture.GetCache(circularDependentActor1,
                 circularDependentActor2, actorWithCircularTemplates));
 
             Func<IImmutableList<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>> results = () =>
@@ -312,7 +311,7 @@ namespace ReqtificatorTest.Transformers.Rules
                     TemplateFlags = NpcConfiguration.TemplateFlag.Keywords | NpcConfiguration.TemplateFlag.Script
                 }
             };
-            var resolver = new ActorInheritanceGraphParser(fixture.getCache(actorWithUnresolvedTemplate, otherActor));
+            var resolver = new ActorInheritanceGraphParser(fixture.GetCache(actorWithUnresolvedTemplate, otherActor));
 
             Func<IImmutableList<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>> results = () =>
                 resolver.FindAllTemplates(otherActor,

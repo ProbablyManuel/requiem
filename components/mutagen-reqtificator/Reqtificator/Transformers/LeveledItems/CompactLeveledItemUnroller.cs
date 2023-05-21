@@ -13,7 +13,7 @@ namespace Reqtificator.Transformers.LeveledItems
     {
         private readonly IImmutableSet<ModKey> _registeredMods;
 
-        private static readonly Regex Pattern = new Regex("^[a-zA-Z0-9]+_CLI_", RegexOptions.IgnoreCase);
+        private static readonly Regex Pattern = new("^[a-zA-Z0-9]+_CLI_", RegexOptions.IgnoreCase);
 
         public CompactLeveledItemUnroller(IImmutableSet<ModKey> modsRegisteredForFeature)
         {
@@ -28,8 +28,15 @@ namespace Reqtificator.Transformers.LeveledItems
 
         public IReadOnlyList<ILeveledItemEntryGetter> GetUnrolledEntries(ILeveledItemGetter input)
         {
-            if (input.Entries is null) return ImmutableList<LeveledItemEntry>.Empty;
-            if (!IsCompactLeveledList(input)) return input.Entries;
+            if (input.Entries is null)
+            {
+                return ImmutableList<LeveledItemEntry>.Empty;
+            }
+
+            if (!IsCompactLeveledList(input))
+            {
+                return input.Entries;
+            }
 
             return input.Entries!
                 .Where(e => e.Data is not null)

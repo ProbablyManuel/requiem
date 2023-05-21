@@ -40,7 +40,10 @@ namespace Reqtificator.Transformers.Armors
             if ((input.Record().Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? false) ||
                 (input.Record().Keywords?.Contains(Keywords.NoArmorRatingRescaling.FormKey) ?? false) ||
                 !input.Record().TemplateArmor.IsNull
-                ) return input;
+                )
+            {
+                return input;
+            }
 
             var armorType = input.Record().BodyTemplate?.ArmorType;
             var partKeyword = GetArmorPartKeyword(input.Record());
@@ -56,8 +59,8 @@ namespace Reqtificator.Transformers.Armors
 
             if (threshold is not null && input.Record().ArmorRating < threshold)
             {
-                var offset = Equals(partKeyword, Keywords.ArmorBody) ? 66.0f : 18.0f;
-                var factor = Equals(armorType, ArmorType.HeavyArmor) ? 6.6f : 3.3f;
+                float offset = Equals(partKeyword, Keywords.ArmorBody) ? 66.0f : 18.0f;
+                float factor = Equals(armorType, ArmorType.HeavyArmor) ? 6.6f : 3.3f;
                 return input.Modify(record =>
                 {
                     record.ArmorRating = record.ArmorRating * factor + offset;

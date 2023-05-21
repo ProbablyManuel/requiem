@@ -3,7 +3,7 @@ using Mutagen.Bethesda.Plugins.Records;
 
 namespace Reqtificator.Transformers
 {
-    abstract record TransformationResult<T, TGetter>
+    internal abstract record TransformationResult<T, TGetter>
         where T : MajorRecord, TGetter where TGetter : IMajorRecordGetter
     {
         internal abstract TransformationResult<T, TGetter> Modify(Action<T> func);
@@ -12,7 +12,7 @@ namespace Reqtificator.Transformers
         internal abstract bool IsModified();
     }
 
-    record UnChanged<T, TGetter>(TGetter Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
+    internal record UnChanged<T, TGetter>(TGetter Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
         where TGetter : IMajorRecordGetter
     {
         internal override TransformationResult<T, TGetter> Modify(Action<T> func)
@@ -22,11 +22,18 @@ namespace Reqtificator.Transformers
             return new Modified<T, TGetter>(mutable);
         }
 
-        internal override TGetter Record() => Underlying;
-        internal override bool IsModified() => false;
+        internal override TGetter Record()
+        {
+            return Underlying;
+        }
+
+        internal override bool IsModified()
+        {
+            return false;
+        }
     }
 
-    record Modified<T, TGetter>(T Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
+    internal record Modified<T, TGetter>(T Underlying) : TransformationResult<T, TGetter> where T : MajorRecord, TGetter
         where TGetter : IMajorRecordGetter
     {
         internal override TransformationResult<T, TGetter> Modify(Action<T> func)
@@ -35,8 +42,14 @@ namespace Reqtificator.Transformers
             return new Modified<T, TGetter>(Underlying);
         }
 
-        internal override TGetter Record() => Underlying;
+        internal override TGetter Record()
+        {
+            return Underlying;
+        }
 
-        internal override bool IsModified() => true;
+        internal override bool IsModified()
+        {
+            return true;
+        }
     }
 }

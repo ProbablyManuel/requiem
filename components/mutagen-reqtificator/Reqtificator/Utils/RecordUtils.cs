@@ -42,7 +42,7 @@ namespace Reqtificator.Utils
             string filePrefix)
         {
             //TODO: graceful error handling for not parseable configuration files
-            var configPath = Path.Combine(context.DataFolder, "Reqtificator", "Data");
+            string configPath = Path.Combine(context.DataFolder, "Reqtificator", "Data");
             IImmutableList<(string, Config)> configs = context.ActiveMods
                 .Select(m => Path.Combine(configPath, $"{filePrefix}_{m.ModKey.FileName}.conf"))
                 .Where(f => File.Exists(f))

@@ -17,7 +17,7 @@ namespace Reqtificator.Transformers.LeveledItems
         private readonly IImmutableSet<ModKey> _registeredMods;
 
         private static readonly Regex Pattern =
-            new Regex("^[^_]+_.+_Quality(?<tier>[0-9]+)_(?<size>[A-z])_(?<distribution>[A-z]+)$",
+            new("^[^_]+_.+_Quality(?<tier>[0-9]+)_(?<size>[A-z])_(?<distribution>[A-z]+)$",
                 RegexOptions.IgnoreCase);
 
         public TemperedItemGeneration(IImmutableSet<ModKey> modsRegisteredForFeature)
@@ -30,10 +30,15 @@ namespace Reqtificator.Transformers.LeveledItems
         {
             var temperingData = ExtractQualityData(input.Record());
 
-            if (temperingData is null || _registeredMods.ContainsNot(input.Record().FormKey.ModKey)) return input;
+            if (temperingData is null || _registeredMods.ContainsNot(input.Record().FormKey.ModKey))
+            {
+                return input;
+            }
 
             if ((input.Record().Entries?.Count ?? 0) != 1)
+            {
                 throw new InvalidTemperingDataException(input.Record().ToLinkGetter());
+            }
 
             return input.Modify(record =>
             {
@@ -64,11 +69,11 @@ namespace Reqtificator.Transformers.LeveledItems
         {
             internal IEnumerable<float> GetItemHealthValues()
             {
-                var offset = (Tier - 1) * 3 * (int)SegmentSize;
+                int offset = (Tier - 1) * 3 * (int)SegmentSize;
 
                 for (int segment = 0; segment < 3; segment++)
                 {
-                    var distributionMultiplier = (Distribution, segment) switch
+                    int distributionMultiplier = (Distribution, segment) switch
                     {
                         (DistributionFunction.Constant, _) => 1,
                         (DistributionFunction.Fall, var x) => 3 - x,
@@ -80,7 +85,7 @@ namespace Reqtificator.Transformers.LeveledItems
                     {
                         for (int dist = 0; dist < distributionMultiplier; dist++)
                         {
-                            yield return 1.0f + (offset + (segment * (int)SegmentSize) + index) / 10f;
+                            yield return 1.0f + (offset + segment * (int)SegmentSize + index) / 10f;
                         }
                     }
                 }
@@ -91,9 +96,12 @@ namespace Reqtificator.Transformers.LeveledItems
         {
             var match = Pattern.Match(record.EditorID ?? "");
 
-            if (!match.Success) return null;
+            if (!match.Success)
+            {
+                return null;
+            }
 
-            var tier = int.Parse(match.Groups["tier"].Value, CultureInfo.InvariantCulture);
+            int tier = int.Parse(match.Groups["tier"].Value, CultureInfo.InvariantCulture);
             var size = match.Groups["size"].Value switch
             {
                 "H" => Size.Half,

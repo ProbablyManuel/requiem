@@ -60,7 +60,7 @@ namespace Reqtificator.Configuration
                 .Select(f => HoconConfigurationFactory.FromFile(f.Item))
                 .ToImmutableList();
 
-            if (rawConfigs.Count == 0) { _events.PublishState(ReqtificatorState.Stopped(ReqtificatorFailure.MissingRequiemConfig)); }
+            if (rawConfigs.Count == 0) { _events.PublishState(ReqtificatorState.Stopped(Events.Outcomes.ReqtificatorOutcome.MissingRequiemConfig)); }
 
             return ParseConfig(rawConfigs);
         }

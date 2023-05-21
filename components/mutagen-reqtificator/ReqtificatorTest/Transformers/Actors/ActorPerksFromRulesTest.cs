@@ -16,8 +16,7 @@ namespace ReqtificatorTest.Transformers.Actors
     public class ActorPerksFromRulesTest
     {
         private readonly Npc.TranslationMask _mask = new(defaultOn: true) { Perks = false };
-
-        PerkPlacement dummyPerk = new()
+        private readonly PerkPlacement dummyPerk = new()
         {
             Perk = new FormLink<IPerkGetter>(FormKey.Factory("ABCDEF:Perks.esm")),
             Rank = 1

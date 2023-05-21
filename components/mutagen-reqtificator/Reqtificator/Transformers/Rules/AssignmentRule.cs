@@ -49,7 +49,7 @@ namespace Reqtificator.Transformers.Rules
         {
             if (Conditions.All(c => c.CheckRecord(record)))
             {
-                var fullNodeName = string.IsNullOrEmpty(parentRule) ? NodeName : $"{parentRule}.{NodeName}";
+                string fullNodeName = string.IsNullOrEmpty(parentRule) ? NodeName : $"{parentRule}.{NodeName}";
                 var assignments = Assignments.Select(a => new Assignment<TAssign>(a, fullNodeName));
                 var subAssignments = SubNodes.SelectMany(n => n.GetAssignmentsWithSource(record, fullNodeName));
                 return assignments.ToImmutableList().AddRange(subAssignments);
@@ -75,13 +75,22 @@ namespace Reqtificator.Transformers.Rules
             unchecked
             {
                 int sum = 0;
-                foreach (IAssignmentCondition<TMajorGetter> x in Conditions) sum += x.GetHashCode();
+                foreach (var x in Conditions)
+                {
+                    sum += x.GetHashCode();
+                }
 
                 int sum1 = 0;
-                foreach (IFormLinkGetter<TAssign> x in Assignments) sum1 += x.GetHashCode();
+                foreach (var x in Assignments)
+                {
+                    sum1 += x.GetHashCode();
+                }
 
                 int sum2 = 0;
-                foreach (AssignmentRule<TMajorGetter, TAssign> x in SubNodes) sum2 += x.GetHashCode();
+                foreach (var x in SubNodes)
+                {
+                    sum2 += x.GetHashCode();
+                }
 
                 return HashCode.Combine(sum,
                     sum1, sum2, NodeName);
@@ -104,11 +113,17 @@ namespace Reqtificator.Transformers.Rules
                 content.GetObject().ForEach(e =>
                 {
                     if (assignmentExtractor(e.Value) is var maybeAssignment && maybeAssignment is not null)
+                    {
                         assignments = maybeAssignment;
+                    }
                     else if (conditionExtractor(e.Value) is var maybeCondition && maybeCondition is not null)
+                    {
                         conditions = conditions.Add(maybeCondition);
+                    }
                     else if (!ignoredFieldChecker(e.Value))
+                    {
                         subNodes = subNodes.Add(NodeExtractor(e.Value));
+                    }
                 });
                 return new AssignmentRule<TMajorGetter, TAssign>(
                     assignments: assignments ?? ImmutableHashSet<IFormLinkGetter<TAssign>>.Empty,

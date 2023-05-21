@@ -17,7 +17,7 @@ namespace Reqtificator.Transformers.ActorVariations
 
     internal static class ActorVariationsGenerator
     {
-        private static readonly Regex ActorVariationsPattern = new Regex("^[^_]+_LChar_(?:Variations|VoiceSpawns)_");
+        private static readonly Regex ActorVariationsPattern = new("^[^_]+_LChar_(?:Variations|VoiceSpawns)_");
 
         private static bool IsActorVariation(ILeveledNpcGetter record, IImmutableSet<ModKey> modsWithActorVariations)
         {
@@ -52,7 +52,7 @@ namespace Reqtificator.Transformers.ActorVariations
             var newActors = uniqueActorsToBuild
                 .Select(e =>
                 {
-                    var skillTemplate = e.SkillTemplate.Resolve<INpcGetter>(linkCacheWithPatchedActors);
+                    var skillTemplate = e.SkillTemplate.Resolve(linkCacheWithPatchedActors);
                     var lookTemplate = e.Reference.Resolve<INpcGetter>(linkCacheWithPatchedActors);
                     var newActor = ActorCopyTools.MergeVisualAndSkillTemplates(targetMod,
                         $"RTFI_Actor_Variations_{skillTemplate.FormKey}_{lookTemplate.FormKey}", skillTemplate,
@@ -101,7 +101,10 @@ namespace Reqtificator.Transformers.ActorVariations
                     var updated = r.DeepCopy();
                     var variationsToAdd = ExtractVariations(r, linkCache);
                     if (variationsToAdd.Values.Sum() > 255)
+                    {
                         throw new OversizedLeveledListException(r.FormKey, r.EditorID);
+                    }
+
                     updated.Entries!.Clear();
                     variationsToAdd.ForEach(v =>
                     {
@@ -123,16 +126,19 @@ namespace Reqtificator.Transformers.ActorVariations
         private static ImmutableDictionary<VariationKey, int> ExtractVariations(ILeveledNpcGetter record,
             ILinkCache<ISkyrimMod, ISkyrimModGetter> linkCache)
         {
-            if (record.Entries is null) return ImmutableDictionary<VariationKey, int>.Empty;
+            if (record.Entries is null)
+            {
+                return ImmutableDictionary<VariationKey, int>.Empty;
+            }
 
             var skillsTemplates = record.Entries
                 .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))
-                .Where(r => r.Item2 is not null && r.Item2 is INpcGetter)
+                .Where(r => r.Item2 is not null and INpcGetter)
                 .Select(r => (((INpcGetter)r.Item2!).ToLinkGetter(), r.r.Data!.Level))
                 .ToList();
             var lookTemplates = record.Entries
                 .Select(r => (r, r.Data!.Reference.TryResolve(linkCache)))
-                .Where(r => r.Item2 is not null && r.Item2 is ILeveledNpcGetter)
+                .Where(r => r.Item2 is not null and ILeveledNpcGetter)
                 .Select(r => (((ILeveledNpcGetter)r.Item2!).ToLinkGetter(), r.r.Data!.Count))
                 .ToList();
 

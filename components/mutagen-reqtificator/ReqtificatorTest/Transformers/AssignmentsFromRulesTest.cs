@@ -15,7 +15,7 @@ namespace ReqtificatorTest.Transformers
 {
     public class AssignmentsFromRulesTest
     {
-        static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node1 = new(
+        private static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node1 = new(
             assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
                 .Add(new FormLink<IKeywordGetter>(FormKey.Factory("ABC123:Assign.esp"))),
             conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty.Add(
@@ -26,8 +26,7 @@ namespace ReqtificatorTest.Transformers
             nodeName: "some_node",
             subNodes: ImmutableHashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty
         );
-
-        static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node2 = new(
+        private static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Node2 = new(
             assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
                 .Add(new FormLink<IKeywordGetter>(FormKey.Factory("DEF123:Assign.esp"))),
             conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty
@@ -38,8 +37,7 @@ namespace ReqtificatorTest.Transformers
             nodeName: "other_node",
             subNodes: ImmutableHashSet<AssignmentRule<IArmorGetter, IKeywordGetter>>.Empty
         );
-
-        static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Expected = new(
+        private static readonly AssignmentRule<IArmorGetter, IKeywordGetter> Expected = new(
             assignments: ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty,
             conditions: ImmutableHashSet<IAssignmentCondition<IArmorGetter>>.Empty
                 .Add(new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty

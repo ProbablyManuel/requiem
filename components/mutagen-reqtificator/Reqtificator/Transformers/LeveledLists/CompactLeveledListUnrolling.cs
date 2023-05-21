@@ -13,7 +13,10 @@ namespace Reqtificator.Transformers.LeveledLists
 
         public override TransformationResult<T, TGetter> Process(TransformationResult<T, TGetter> input)
         {
-            if (!_unroller.IsCompactLeveledList(input.Record())) return input;
+            if (!_unroller.IsCompactLeveledList(input.Record()))
+            {
+                return input;
+            }
 
             return input.Modify(record => _unroller.UnrollLeveledList(record));
         }

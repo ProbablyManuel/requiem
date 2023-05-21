@@ -12,125 +12,161 @@ namespace Reqtificator.Transformers
 {
     internal static class ActorCopyTools
     {
-        public static Npc.TranslationMask InheritAiDataMask() => new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritAiDataMask()
         {
-            AIData = true,
-            CombatStyle = true,
-            GiftFilter = true
-        };
-
-        public static Npc.TranslationMask InheritAiPackagesMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            Packages = true
-        };
-
-        public static Npc.TranslationMask InheritAttackDataMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            AttackRace = true,
-            Attacks = true
-        };
-
-        public static Npc.TranslationMask InheritBaseDataMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            Name = true,
-        };
-
-        public static Npc.TranslationMask InheritDefaultPackageListMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            DefaultPackageList = true,
-            SpectatorOverridePackageList = true,
-            ObserveDeadBodyOverridePackageList = true,
-            GuardWarnOverridePackageList = true,
-            CombatOverridePackageList = true
-        };
-
-        public static Npc.TranslationMask InheritFactionsMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            Factions = true,
-            CrimeFaction = true
-        };
-
-        public static Npc.TranslationMask InheritInventoryMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            DefaultOutfit = true,
-            SleepingOutfit = true,
-            Items = true,
-            // PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
-            // {
-            //     GearedUpWeapons = true
-            // }
-        };
-
-        public static Npc.TranslationMask InheritKeywordsMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            Keywords = true
-        };
-
-        public static Npc.TranslationMask InheritScriptsMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            VirtualMachineAdapter = true
-        };
-
-        public static Npc.TranslationMask InheritSpellListMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            ActorEffect = true,
-            Perks = true
-        };
-
-        public static Npc.TranslationMask InheritStatsMask() => new Npc.TranslationMask(defaultOn: false)
-        {
-            Configuration = new NpcConfiguration.TranslationMask(false)
+            return new Npc.TranslationMask(defaultOn: false)
             {
-                Level = true,
-                CalcMinLevel = true,
-                CalcMaxLevel = true,
-                SpeedMultiplier = true,
-                BleedoutOverride = true,
-                HealthOffset = true,
-                MagickaOffset = true,
-                StaminaOffset = true
-            },
-            PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
-            {
-                Health = true,
-                Magicka = true,
-                Stamina = true,
-                SkillOffsets = true,
-                SkillValues = true
-            },
-            Class = true
-        };
+                AIData = true,
+                CombatStyle = true,
+                GiftFilter = true
+            };
+        }
 
-        public static Npc.TranslationMask InheritTraitsMask() => new Npc.TranslationMask(defaultOn: false)
+        public static Npc.TranslationMask InheritAiPackagesMask()
         {
-            //traits tab
-            Race = true,
-            WornArmor = true,
-            Height = true,
-            Weight = true,
-            FarAwayModel = true,
-            Voice = true,
-            DeathItem = true,
-            // PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
-            // {
-            //     FarAwayModelDistance = true
-            // },
-            // Configuration = new NpcConfiguration.TranslationMask(defaultOn: false)
-            // {
-            //     DispositionBase = true
-            // },
-            //sounds tab
-            SoundLevel = true,
-            Sound = true,
-            //character generation parts tab
-            HeadParts = true,
-            HairColor = true,
-            TintLayers = true,
-            HeadTexture = true,
-            FaceMorph = true,
-            FaceParts = true,
-            TextureLighting = true,
-        };
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                Packages = true
+            };
+        }
+
+        public static Npc.TranslationMask InheritAttackDataMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                AttackRace = true,
+                Attacks = true
+            };
+        }
+
+        public static Npc.TranslationMask InheritBaseDataMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                Name = true,
+            };
+        }
+
+        public static Npc.TranslationMask InheritDefaultPackageListMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                DefaultPackageList = true,
+                SpectatorOverridePackageList = true,
+                ObserveDeadBodyOverridePackageList = true,
+                GuardWarnOverridePackageList = true,
+                CombatOverridePackageList = true
+            };
+        }
+
+        public static Npc.TranslationMask InheritFactionsMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                Factions = true,
+                CrimeFaction = true
+            };
+        }
+
+        public static Npc.TranslationMask InheritInventoryMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                DefaultOutfit = true,
+                SleepingOutfit = true,
+                Items = true,
+                // PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
+                // {
+                //     GearedUpWeapons = true
+                // }
+            };
+        }
+
+        public static Npc.TranslationMask InheritKeywordsMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                Keywords = true
+            };
+        }
+
+        public static Npc.TranslationMask InheritScriptsMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                VirtualMachineAdapter = true
+            };
+        }
+
+        public static Npc.TranslationMask InheritSpellListMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                ActorEffect = true,
+                Perks = true
+            };
+        }
+
+        public static Npc.TranslationMask InheritStatsMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                Configuration = new NpcConfiguration.TranslationMask(false)
+                {
+                    Level = true,
+                    CalcMinLevel = true,
+                    CalcMaxLevel = true,
+                    SpeedMultiplier = true,
+                    BleedoutOverride = true,
+                    HealthOffset = true,
+                    MagickaOffset = true,
+                    StaminaOffset = true
+                },
+                PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
+                {
+                    Health = true,
+                    Magicka = true,
+                    Stamina = true,
+                    SkillOffsets = true,
+                    SkillValues = true
+                },
+                Class = true
+            };
+        }
+
+        public static Npc.TranslationMask InheritTraitsMask()
+        {
+            return new Npc.TranslationMask(defaultOn: false)
+            {
+                //traits tab
+                Race = true,
+                WornArmor = true,
+                Height = true,
+                Weight = true,
+                FarAwayModel = true,
+                Voice = true,
+                DeathItem = true,
+                // PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
+                // {
+                //     FarAwayModelDistance = true
+                // },
+                // Configuration = new NpcConfiguration.TranslationMask(defaultOn: false)
+                // {
+                //     DispositionBase = true
+                // },
+                //sounds tab
+                SoundLevel = true,
+                Sound = true,
+                //character generation parts tab
+                HeadParts = true,
+                HairColor = true,
+                TintLayers = true,
+                HeadTexture = true,
+                FaceMorph = true,
+                FaceParts = true,
+                TextureLighting = true,
+            };
+        }
 
         // IsCharGenFacePreset = 4,
         // Unique = 32, // 0x00000020
@@ -184,12 +220,11 @@ namespace Reqtificator.Transformers
                 NpcConfiguration.TemplateFlag.Factions => InheritFactionsMask(),
                 NpcConfiguration.TemplateFlag.Inventory => InheritInventoryMask(),
                 NpcConfiguration.TemplateFlag.Keywords => InheritKeywordsMask(),
-                // NpcConfiguration.TemplateFlag.ModelAnimation => expr,
                 NpcConfiguration.TemplateFlag.Script => InheritScriptsMask(),
                 NpcConfiguration.TemplateFlag.SpellList => InheritSpellListMask(),
                 NpcConfiguration.TemplateFlag.Stats => InheritStatsMask(),
                 NpcConfiguration.TemplateFlag.Traits => InheritTraitsMask(),
-                _ => throw new ArgumentOutOfRangeException(nameof(flag), flag, null)
+                _ => throw new NotImplementedException()
             };
             target.DeepCopyIn(source, mask);
             if (source.Configuration.TemplateFlags.HasFlag(flag))
@@ -216,8 +251,8 @@ namespace Reqtificator.Transformers
         {
             var newActor = targetMod.Npcs.AddNew(editorId);
             Enum.GetValues<NpcConfiguration.TemplateFlag>().Where(x =>
-                    x != NpcConfiguration.TemplateFlag.Traits && x != NpcConfiguration.TemplateFlag.AttackData
-                                                              && x != NpcConfiguration.TemplateFlag.ModelAnimation)
+                    x is not NpcConfiguration.TemplateFlag.Traits and not NpcConfiguration.TemplateFlag.AttackData
+                                                              and not NpcConfiguration.TemplateFlag.ModelAnimation)
                 .ForEach(f =>
                 {
                     var source = inheritanceGraph.FindAllTemplates(skillTemplate, f).First()[f];

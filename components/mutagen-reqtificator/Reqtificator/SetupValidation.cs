@@ -42,7 +42,9 @@ namespace Reqtificator
                 .Resolve<IGlobalGetter>(GlobalVariables.VersionStampPlugin.FormKey)).Data!;
 
             if (patcherVersion.AsNumeric() != pluginVersion)
+            {
                 return new VersionMismatch(new RequiemVersion(pluginVersion), patcherVersion);
+            }
 
             return ValidateLoadOrder(loadOrder);
         }
@@ -54,16 +56,21 @@ namespace Reqtificator
                 .SelectMany<IKeyValue<ModKey, IModListing<ISkyrimModGetter>>, ReqtificatorOutcome>((elem, index) =>
                     {
                         if (elem.Value.Mod is null)
+                        {
                             return ReqtificatorFailure.CausedBy(new ModFromLoadOrderNotFoundException(elem.Key))
                                 .AsEnumerable();
+                        }
 
                         var missingMasters = elem.Value.Mod!.MasterReferences
                             .Where(e => modList.Take(index).ContainsNot(e.Master))
                             .Select(e => e.Master)
                             .ToImmutableList();
-                        if (missingMasters.IsEmpty) return ImmutableList.Create<InvalidLoadOrder>();
+                        if (missingMasters.IsEmpty)
+                        {
+                            return ImmutableList.Create<InvalidLoadOrder>();
+                        }
 
-                        var missingMods = missingMasters.Where(e => !System.IO.File.Exists(e.FileName)).ToImmutableHashSet();
+                        var missingMods = missingMasters.Where(e => !File.Exists(e.FileName)).ToImmutableHashSet();
                         var outOfOrder = missingMasters.Where(e => modList.Contains(e)).ToImmutableHashSet();
                         var disabledMods = missingMasters.Where(e => missingMods.ContainsNot(e) && outOfOrder.ContainsNot(e)).ToImmutableHashSet();
 

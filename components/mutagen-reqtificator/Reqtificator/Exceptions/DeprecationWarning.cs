@@ -2,10 +2,10 @@
 
 namespace Reqtificator.Exceptions
 {
-    interface IDeprecationWarning
+    internal interface IDeprecationWarning
     {
 
     }
 
-    record ReqTagPrefixDeprecationWarning(ModKey Origin) : IDeprecationWarning;
+    internal record ReqTagPrefixDeprecationWarning(ModKey Origin) : IDeprecationWarning;
 }

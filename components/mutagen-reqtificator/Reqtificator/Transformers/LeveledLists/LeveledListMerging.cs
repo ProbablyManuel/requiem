@@ -33,7 +33,7 @@ namespace Reqtificator.Transformers.LeveledLists
         private readonly IImmutableDictionary<ModKey, ImmutableHashSet<ModKey>> _invertedMasterMap;
         private readonly ICompactLeveledListUnroller<T, TGetter, TEntry> _unroller;
         private readonly ILeveledListMerger<T, TGetter, TEntry> _merger;
-        private static readonly ModKey Requiem = new ModKey("Requiem", ModType.Plugin);
+        private static readonly ModKey Requiem = new("Requiem", ModType.Plugin);
 
         public LeveledListMerging(bool mergeEnabled, ILinkCache<ISkyrimMod, ISkyrimModGetter> cache,
             IImmutableSet<ModKey> modsWithRequiemAsMaster,
@@ -60,7 +60,10 @@ namespace Reqtificator.Transformers.LeveledLists
         public override TransformationResult<T, TGetter> Process(
             TransformationResult<T, TGetter> input)
         {
-            if (!_mergeEnabled) return input;
+            if (!_mergeEnabled)
+            {
+                return input;
+            }
 
             var mergeCandidates = _cache.ResolveAllContexts<T, TGetter>(input.Record().FormKey)
                 .Where(x => _modsEligibleForMerging.Contains(x.ModKey)).ToList();
@@ -69,7 +72,10 @@ namespace Reqtificator.Transformers.LeveledLists
                 ).ToList();
             var baseVersion = toMerge.Find(x => x.ModKey == Requiem)?.Record;
 
-            if (baseVersion == null || toMerge.Count < 3) return input;
+            if (baseVersion == null || toMerge.Count < 3)
+            {
+                return input;
+            }
 
             var unrolledBaseEntries = _merger.GetEntries(_unroller.GetUnrolledEntries(baseVersion));
 

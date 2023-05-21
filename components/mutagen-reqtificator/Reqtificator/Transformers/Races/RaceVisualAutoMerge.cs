@@ -11,7 +11,7 @@ namespace Reqtificator.Transformers.Races
     {
         private const float Tolerance = 0.0001f;
 
-        private readonly Race.TranslationMask _comparisonMask = new Race.TranslationMask(defaultOn: false)
+        private readonly Race.TranslationMask _comparisonMask = new(defaultOn: false)
         {
             //comparison for gendered items doesn't work, need to do a workaround
             Skin = true,
@@ -30,7 +30,7 @@ namespace Reqtificator.Transformers.Races
             // FaceFxPhonemes = true
         };
 
-        private readonly HeadData.TranslationMask _headDataComparisonMask = new HeadData.TranslationMask(defaultOn: true)
+        private readonly HeadData.TranslationMask _headDataComparisonMask = new(defaultOn: true)
         {
             // need custom comparison because sorting does not matter
             AvailableHairColors = false,
@@ -42,7 +42,7 @@ namespace Reqtificator.Transformers.Races
             TintMasks = false
         };
 
-        private readonly Race.TranslationMask _copyMask = new Race.TranslationMask(defaultOn: false)
+        private readonly Race.TranslationMask _copyMask = new(defaultOn: false)
         {
             Skin = true,
             Height = new GenderedItem<bool>(true, true),
@@ -66,13 +66,28 @@ namespace Reqtificator.Transformers.Races
                 var referenceData = extractor(reference);
                 var otherData = extractor(other);
 
-                if (referenceData is null && otherData is null) return true;
-                if (referenceData is null || otherData is null) return false;
+                if (referenceData is null && otherData is null)
+                {
+                    return true;
+                }
+
+                if (referenceData is null || otherData is null)
+                {
+                    return false;
+                }
 
                 bool EqualityWithNullCheck(T? value1, T? value2)
                 {
-                    if (value1 is null && value2 is null) return true;
-                    if (value1 is null || value2 is null) return false;
+                    if (value1 is null && value2 is null)
+                    {
+                        return true;
+                    }
+
+                    if (value1 is null || value2 is null)
+                    {
+                        return false;
+                    }
+
                     return equality(value1, value2);
                 }
 
@@ -111,10 +126,17 @@ namespace Reqtificator.Transformers.Races
 
         private static bool ComparePhonemes(IFaceFxPhonemesGetter reference, IFaceFxPhonemesGetter other)
         {
-            bool CompareEntry(IPhonemeGetter? refEntry, IPhonemeGetter? otherEntry)
+            static bool CompareEntry(IPhonemeGetter? refEntry, IPhonemeGetter? otherEntry)
             {
-                if (refEntry is null && otherEntry is null) return true;
-                if (refEntry is null || otherEntry is null) return false;
+                if (refEntry is null && otherEntry is null)
+                {
+                    return true;
+                }
+
+                if (refEntry is null || otherEntry is null)
+                {
+                    return false;
+                }
 
                 return Math.Abs(refEntry.B - otherEntry.B) < Tolerance &&
                        Math.Abs(refEntry.D - otherEntry.D) < Tolerance &&

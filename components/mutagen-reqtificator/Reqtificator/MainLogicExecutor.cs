@@ -2,9 +2,9 @@ using System;
 using System.Collections.Immutable;
 using System.Linq;
 using Mutagen.Bethesda;
-using Mutagen.Bethesda.Plugins.Cache.Internals.Implementations;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Allocators;
+using Mutagen.Bethesda.Plugins.Cache.Internals.Implementations;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -149,9 +149,9 @@ namespace Reqtificator
                         $"Generated for Requiem version: {version.ShortVersion()} -- build with Mutagen"
                 }
             };
-            System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(PersistenceFileLocation)!);
+            _ = System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(PersistenceFileLocation)!);
             var allocator = new TextFileFormKeyAllocator(patch, PersistenceFileLocation);
-            patch.SetAllocator(allocator);
+            _ = patch.SetAllocator(allocator);
 
             //TODO: error handling...
             if (cache.TryResolve<IGlobalGetter>(GlobalVariables.VersionStampPatch.FormKey,
