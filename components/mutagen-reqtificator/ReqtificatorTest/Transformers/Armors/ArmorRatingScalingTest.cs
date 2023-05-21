@@ -35,7 +35,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var mask = new Armor.TranslationMask(defaultOn: true) { ArmorRating = false };
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
             result.Record().Equals(input, mask).Should().BeTrue();
-            var expectedValue = input.ArmorRating * 3.3f + 66f;
+            float expectedValue = input.ArmorRating * 3.3f + 66f;
             result.Record().ArmorRating.Should().BeInRange(expectedValue * 0.99f, expectedValue * 1.01f);
         }
 
@@ -56,7 +56,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var mask = new Armor.TranslationMask(defaultOn: true) { ArmorRating = false };
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
             result.Record().Equals(input, mask).Should().BeTrue();
-            var expectedValue = input.ArmorRating * 3.3f + 18f;
+            float expectedValue = input.ArmorRating * 3.3f + 18f;
             result.Record().ArmorRating.Should().BeInRange(expectedValue * 0.99f, expectedValue * 1.01f);
         }
 
@@ -96,7 +96,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var mask = new Armor.TranslationMask(defaultOn: true) { ArmorRating = false };
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
             result.Record().Equals(input, mask).Should().BeTrue();
-            var expectedValue = input.ArmorRating * 6.6f + 66f;
+            float expectedValue = input.ArmorRating * 6.6f + 66f;
             result.Record().ArmorRating.Should().BeInRange(expectedValue * 0.99f, expectedValue * 1.01f);
         }
 
@@ -117,7 +117,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var mask = new Armor.TranslationMask(defaultOn: true) { ArmorRating = false };
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
             result.Record().Equals(input, mask).Should().BeTrue();
-            var expectedValue = input.ArmorRating * 6.6f + 18f;
+            float expectedValue = input.ArmorRating * 6.6f + 18f;
             result.Record().ArmorRating.Should().BeInRange(expectedValue * 0.99f, expectedValue * 1.01f);
         }
 

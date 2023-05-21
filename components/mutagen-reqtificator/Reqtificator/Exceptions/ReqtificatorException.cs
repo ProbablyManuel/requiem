@@ -33,7 +33,7 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                var name = (ProcessedRecord.EditorID is null)
+                string name = (ProcessedRecord.EditorID is null)
                     ? $"'{ProcessedRecord.FormKey}'"
                     : $"'{ProcessedRecord.FormKey}' ({ProcessedRecord.EditorID})";
                 return
@@ -63,7 +63,7 @@ namespace Reqtificator.Exceptions
                     return $"* \"{r.FormKey}\" (last modified by \"{m}\")";
                 }
 
-                var inheritanceStack = TemplateChain.Select(e => Fmt(e.Item1, e.Item2))
+                string inheritanceStack = TemplateChain.Select(e => Fmt(e.Item1, e.Item2))
                     .Aggregate((s1, s2) => $"{s1}\n{s2}");
 
                 return
@@ -94,7 +94,7 @@ namespace Reqtificator.Exceptions
                     return $"* \"{r.FormKey}\" (last modified by \"{m}\")";
                 }
 
-                var inheritanceStack = TemplateChain.Select(e => Fmt(e.Item1, e.Item2))
+                string inheritanceStack = TemplateChain.Select(e => Fmt(e.Item1, e.Item2))
                     .Aggregate((s1, s2) => $"{s1}\n{s2}");
 
                 return
@@ -123,7 +123,7 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                var name = (ParentRecord.EditorID is null)
+                string name = (ParentRecord.EditorID is null)
                     ? $"'{ParentRecord.FormKey}'"
                     : $"'{ParentRecord.FormKey}' ({ParentRecord.EditorID})";
                 return
@@ -213,7 +213,7 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                var missingMasters = MissingMasters.Skip(1)
+                string missingMasters = MissingMasters.Skip(1)
                     .Aggregate($"\"{MissingMasters.First()}\"", (a, b) => $"{a}, \"{b}\"");
                 return $"The mod \"{AffectedMod}\" is missing the following masters: {missingMasters}";
             }
@@ -247,7 +247,7 @@ namespace Reqtificator.Exceptions
         {
             get
             {
-                var name = (EditorID is null) ? $"'{FormID}'" : $"'{FormID}' ({EditorID})";
+                string name = (EditorID is null) ? $"'{FormID}'" : $"'{FormID}' ({EditorID})";
                 return
                     $"Leveled List '{name}' contains more than 255 entries after processing. Skyrim only supports up to 255 entries in a leveled list.";
             }

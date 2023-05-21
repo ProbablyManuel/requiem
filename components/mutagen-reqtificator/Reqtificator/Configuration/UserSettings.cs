@@ -40,7 +40,7 @@ namespace Reqtificator.Configuration
 
         public void WriteToFile(string targetFile)
         {
-            var configToWrite = $@"{{
+            string configToWrite = $@"{{
     ""{KeyVerboseLogging}"": {VerboseLogging.ToString().ToLowerInvariant()},
     ""{KeyMergeLeveledLists}"": {MergeLeveledLists.ToString().ToLowerInvariant()},
     ""{KeyMergeLeveledCharacters}"": {MergeLeveledCharacters.ToString().ToLowerInvariant()},

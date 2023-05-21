@@ -49,7 +49,7 @@ namespace Reqtificator.Transformers.Rules
         {
             if (Conditions.All(c => c.CheckRecord(record)))
             {
-                var fullNodeName = string.IsNullOrEmpty(parentRule) ? NodeName : $"{parentRule}.{NodeName}";
+                string fullNodeName = string.IsNullOrEmpty(parentRule) ? NodeName : $"{parentRule}.{NodeName}";
                 var assignments = Assignments.Select(a => new Assignment<TAssign>(a, fullNodeName));
                 var subAssignments = SubNodes.SelectMany(n => n.GetAssignmentsWithSource(record, fullNodeName));
                 return assignments.ToImmutableList().AddRange(subAssignments);

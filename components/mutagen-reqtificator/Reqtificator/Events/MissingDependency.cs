@@ -16,7 +16,7 @@ namespace Reqtificator.Events
             Title = "Missing Requirements!";
 
 
-            var messageString = string.Join(nl + nl,
+            string messageString = string.Join(nl + nl,
                 dependencies.Select(d =>
                 $" - **{d.Name}** (download at [{d.DownloadLocation}]({d.DownloadUrl}))"
             ));

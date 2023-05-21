@@ -69,11 +69,11 @@ namespace Reqtificator.Transformers.LeveledItems
         {
             internal IEnumerable<float> GetItemHealthValues()
             {
-                var offset = (Tier - 1) * 3 * (int)SegmentSize;
+                int offset = (Tier - 1) * 3 * (int)SegmentSize;
 
                 for (int segment = 0; segment < 3; segment++)
                 {
-                    var distributionMultiplier = (Distribution, segment) switch
+                    int distributionMultiplier = (Distribution, segment) switch
                     {
                         (DistributionFunction.Constant, _) => 1,
                         (DistributionFunction.Fall, var x) => 3 - x,
@@ -101,7 +101,7 @@ namespace Reqtificator.Transformers.LeveledItems
                 return null;
             }
 
-            var tier = int.Parse(match.Groups["tier"].Value, CultureInfo.InvariantCulture);
+            int tier = int.Parse(match.Groups["tier"].Value, CultureInfo.InvariantCulture);
             var size = match.Groups["size"].Value switch
             {
                 "H" => Size.Half,

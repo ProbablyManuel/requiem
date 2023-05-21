@@ -39,7 +39,7 @@ namespace Reqtificator.Transformers
         public override TransformationResult<T, TGetter> Process(
             TransformationResult<T, TGetter> input)
         {
-            var lockpickingScriptBound = input.Record().VirtualMachineAdapter?.Scripts.Any(s => s.Name == _lockPickingScript.Name) ?? false;
+            bool lockpickingScriptBound = input.Record().VirtualMachineAdapter?.Scripts.Any(s => s.Name == _lockPickingScript.Name) ?? false;
             if (lockpickingScriptBound) { return input; }
 
             var result = input.Modify(record =>

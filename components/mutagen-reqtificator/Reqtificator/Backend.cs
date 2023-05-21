@@ -62,7 +62,7 @@ namespace Reqtificator
             ValidateRequiemFound();
 
             //TODO: update base folder for configurations if needed
-            var configFolder = Path.Combine(_context.DataFolder, "Reqtificator", "Config");
+            string configFolder = Path.Combine(_context.DataFolder, "Reqtificator", "Config");
             Log.Information($"configuration folder: {configFolder}");
 
             var reqtificatorConfig = ReqtificatorConfig.LoadFromConfigs(configFolder, _context.ActiveMods, _events);
@@ -136,7 +136,7 @@ namespace Reqtificator
 
         public static UserSettings LoadAndVerifyUserSettings(GameContext context)
         {
-            var userConfigFile = Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json");
+            string userConfigFile = Path.Combine(context.DataFolder, "Reqtificator", "UserSettings.json");
             var userConfig = UserSettings.LoadUserSettings(userConfigFile);
 
             return userConfig;

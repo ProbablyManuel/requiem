@@ -26,7 +26,7 @@ namespace Reqtificator.Events.Outcomes
                     }
 
                     {
-                        var text = $@"|
+                        string text = $@"|
                         |
                         |{title}
                         |

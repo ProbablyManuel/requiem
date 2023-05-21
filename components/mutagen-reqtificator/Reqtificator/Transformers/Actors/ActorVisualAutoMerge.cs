@@ -23,8 +23,8 @@ namespace Reqtificator.Transformers.Actors
 
         public bool CheckRecordEquality(INpcGetter reference, INpcGetter other)
         {
-            var thisFlag = reference.Configuration.TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.Traits);
-            var otherFlag = reference.Configuration.TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.Traits);
+            bool thisFlag = reference.Configuration.TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.Traits);
+            bool otherFlag = reference.Configuration.TemplateFlags.HasFlag(NpcConfiguration.TemplateFlag.Traits);
             if (thisFlag && otherFlag)
             {
                 return true;

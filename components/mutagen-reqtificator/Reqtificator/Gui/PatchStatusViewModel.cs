@@ -19,7 +19,7 @@ namespace Reqtificator.Gui
         {
             Title = outcome.Title;
             Message = MessageFactory.BuildMessage(outcome.Message);
-            var imageName = outcome.Status.ToString().ToLower(CultureInfo.CurrentCulture);
+            string imageName = outcome.Status.ToString().ToLower(CultureInfo.CurrentCulture);
             Image = $"../Resources/Images/{imageName}.png";
             IsWarning = outcome.Status == PatchStatus.WARNING;
         }

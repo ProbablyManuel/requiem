@@ -18,7 +18,6 @@ dotnet_diagnostic.CA1003.severity = none # seems to trigger false positives when
 dotnet_diagnostic.CA1032.severity = none # our exceptions aren't used externally, so we don't need to add constructors we don't use
 dotnet_diagnostic.CA1303.severity = none # we're not supporting any localization in the initial release
 dotnet_diagnostic.CA1826.severity = none # our collections shouldn't be large enough to suffer any noteworthy performance impacts 
-dotnet_diagnostic.IDE0008.severity = none # I don't see a point in not using type-inference :)
 dotnet_diagnostic.IDE0072.severity = none # too many false positives
 dotnet_diagnostic.IDE0130.severity = none # https://github.com/dotnet/format/issues/1623
 

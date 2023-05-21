@@ -10,7 +10,7 @@ namespace Reqtificator.Gui
     {
         private static readonly Action<object?> openHyperlinkExternally = (ea) =>
         {
-            var link = (ea as string) ?? throw new ArgumentNullException("Null hyperlink");
+            string link = (ea as string) ?? throw new ArgumentNullException("Null hyperlink");
             _ = Process.Start(new ProcessStartInfo()
             {
                 FileName = new Uri(link).AbsoluteUri,
