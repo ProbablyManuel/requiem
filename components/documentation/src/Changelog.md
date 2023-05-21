@@ -6,6 +6,11 @@ New Features
 
 * The GOG release is supported.
 
+Bug Fixes
+---------
+
+* Master files of `Requiem for the Indifferent.esp` are sorted with respect to the load order. Among other things, this fixes an infinite loading screen if the mod "Finding Helgi... and Laelette" is installed.
+
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
 ===================================================
@@ -863,7 +868,7 @@ Requiem 5.0.3 - "From the Ashes" Bugfix Pack #3
 Bugfixes
 --------
 
-* Avoid division by zero when disabling the innate running speed penalty. This resolves the camera spinning around very quickly when using the mod True Directional Movement and similar unexpected bugs.
+* Avoid division by zero when disabling the innate running speed penalty. This resolves the camera spinning around very quickly when using the mod "True Directional Movement" and similar unexpected bugs.
 * Examine doesn't stagger wounded dragons.
 
 Installation
