@@ -76,7 +76,7 @@ namespace Reqtificator
             _events.PublishState(readyToPatchState);
             Log.Information("Ready to patch: userConfig detected\r\n{userConfig}", userConfig);
 
-            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder = LoadAndVerifyLoadOrder(readyToPatchState);
+            var loadOrder = LoadAndVerifyLoadOrder(readyToPatchState);
 
             _events.PatchRequested += (_, updatedSettings) => { HandlePatchRequest(updatedSettings, loadOrder); };
         }

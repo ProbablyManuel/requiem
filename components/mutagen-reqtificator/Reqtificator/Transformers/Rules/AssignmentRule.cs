@@ -75,19 +75,19 @@ namespace Reqtificator.Transformers.Rules
             unchecked
             {
                 int sum = 0;
-                foreach (IAssignmentCondition<TMajorGetter> x in Conditions)
+                foreach (var x in Conditions)
                 {
                     sum += x.GetHashCode();
                 }
 
                 int sum1 = 0;
-                foreach (IFormLinkGetter<TAssign> x in Assignments)
+                foreach (var x in Assignments)
                 {
                     sum1 += x.GetHashCode();
                 }
 
                 int sum2 = 0;
-                foreach (AssignmentRule<TMajorGetter, TAssign> x in SubNodes)
+                foreach (var x in SubNodes)
                 {
                     sum2 += x.GetHashCode();
                 }

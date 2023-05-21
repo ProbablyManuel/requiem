@@ -52,7 +52,7 @@ namespace Reqtificator.Transformers.Rules.Conditions
             unchecked
             {
                 int sum = 0;
-                foreach (IFormLinkGetter<IKeywordGetter> x in Keywords)
+                foreach (var x in Keywords)
                 {
                     sum += x.GetHashCode();
                 }
