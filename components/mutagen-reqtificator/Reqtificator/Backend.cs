@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Binary.Parameters;
 using Mutagen.Bethesda.Plugins.Exceptions;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
@@ -101,7 +102,7 @@ namespace Reqtificator
                 Log.Information("done patching, now exporting to disk");
 
                 _events.PublishState(ReqtificatorState.Patching(90, "Saving Patch"));
-                var outcome = WritePatchToDisk(generatedPatch, _context.DataFolder);
+                var outcome = WritePatchToDisk(generatedPatch, _context.DataFolder, loadOrder);
                 if (outcome is null)
                 {
                     Log.Information("done exporting");
@@ -165,11 +166,14 @@ namespace Reqtificator
             }
         }
 
-        public static ReqtificatorOutcome? WritePatchToDisk(SkyrimMod generatedPatch, string outputDirectory)
+        public static ReqtificatorOutcome? WritePatchToDisk(SkyrimMod generatedPatch, string outputDirectory, ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
             try
             {
-                generatedPatch.WriteToBinaryParallel(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName));
+                generatedPatch.WriteToBinaryParallel(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName), new BinaryWriteParameters
+                {
+                    MastersListOrdering = new MastersListOrderingByLoadOrder(loadOrder)
+                });
                 return null;
             }
             catch (TooManyMastersException)
