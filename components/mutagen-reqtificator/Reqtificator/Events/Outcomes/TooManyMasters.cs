@@ -8,15 +8,15 @@ namespace Reqtificator.Events.Outcomes
         public override string Title => "Patch export failed!";
 
         public override string Message => Formatter.FormatMultiline(@"
-            The generated patch could not be exported because it references too many masters.
-            Although Skyrim Special Edition can load more than 256 mods at runtime, the internal size
-            limitation on the masterlist of a plugin still exists. A mod can contain references
-            to at most 255 other mods.
+            The generated patch could not be exported because it references more than 254 masters.
             You will need to either remove some mods from your load order or merge plugins.
 
-            Note that the generated patch will only reference those mods from your load order that need
-            to be referenced. The masterlist size limit is therefore not equivalent to a hard limit on
-            the number of plugins you can use.
+            Note that the masterlist size limit is unrelated to how many plugins Skyrim Special
+            Edition can load at runtime and does not differentiate between normal and light plugins.
+
+            The generated patch will only reference those plugins from your load order that need to
+            be referenced. Therefore, the number of plugins that can be installed before exceeding
+            the masterlist size limit is different for each load order.
             ");
     }
 }
