@@ -13,6 +13,7 @@ Bug Fixes
 * The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
 * Container ownership data is preserved by the Reqtificator.
 * The Reqtificator does not generate HITME records.
+* The Reqtificator verifies the current working directory and displays a clear error message instead of failing with a cryptic "Object reference not set to an instance of an object" error message.
 
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2

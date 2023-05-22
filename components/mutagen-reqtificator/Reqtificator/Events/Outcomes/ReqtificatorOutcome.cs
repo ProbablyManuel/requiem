@@ -44,6 +44,14 @@ namespace Reqtificator.Events.Outcomes
             
             Enjoy your Requiem!");
 
+        internal static readonly ReqtificatorOutcome MissingSkyrim = new ReqtificatorOutcomeBase(
+            PatchStatus.ERROR, "Could not find Skyrim.esm", @"
+            We couldn't find Skyrim.esm.
+
+            Please check that you correctly configured the Reqtificator in your mod manager. If you
+            use Vortex, you must select the **Reqtificator.bat** in Skyrim's data folder and not
+            in the folder where Vortex unpacked Requiem.");
+
         internal static readonly ReqtificatorOutcome MissingRequiem = new ReqtificatorOutcomeBase(
             PatchStatus.ERROR, "Could not find Requiem.esp", @"
             We couldn't find Requiem.esp. Please check that you're running the Reqtificator in the 
