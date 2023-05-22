@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Linq;
 using FluentAssertions;
 using Moq;
 using Mutagen.Bethesda.Plugins;
@@ -387,6 +388,27 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var result = transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
             result.Record().Equals(f.UpdateVersion2).Should().BeTrue();
+        }
+
+        [Fact]
+        public void Should_truncate_more_than_255_entries()
+        {
+            var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
+            {
+                EditorID = "REQ_LeveledListForMerging",
+                Entries = new ExtendedList<LeveledItemEntry>(Enumerable.Repeat(
+                    new LeveledItemEntry()
+                    {
+                        Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 }
+                    }, 260).ToImmutableList())
+            };
+
+            var f = new Fixture(updateVersion2);
+            f.SetupStandardBehaviorCacheMock();
+
+            var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
+            result.Should().BeOfType<Modified<LeveledItem, ILeveledItemGetter>>();
+            result.Record().Entries!.Count.Should().Be(255);
         }
     }
 }
