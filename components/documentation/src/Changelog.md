@@ -15,6 +15,7 @@ Bug Fixes
 * The Reqtificator does not generate HITME records.
 * The Reqtificator verifies the current working directory and displays a clear error message instead of failing with a cryptic "Object reference not set to an instance of an object" error message.
 * The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
+* The Reqtificator truncates merged leveled list at 255 entries to avoid the "Arithmetic operation resulted in an overflow" error.
 
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2

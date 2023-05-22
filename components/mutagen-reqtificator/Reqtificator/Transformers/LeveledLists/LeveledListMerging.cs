@@ -108,6 +108,11 @@ namespace Reqtificator.Transformers.LeveledLists
 
                 var newEntries = unrolledBaseEntries.Concat(additions).Concat(modificationsAdd).ToImmutableList()
                     .RemoveRange(modificationsRemove.Concat(deletions));
+                if (newEntries.Count > 255)
+                {
+                    newEntries = newEntries.GetRange(0, 255);
+                    Log.Warning($"Too many entries: \"{record.FormKey}\"");
+                }
 
                 _merger.SetEntries(record, newEntries);
                 Log.Information($"merged leveled lists from {updates.Count} patches");
