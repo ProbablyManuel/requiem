@@ -176,8 +176,10 @@ namespace Reqtificator
                 });
                 return null;
             }
-            catch (TooManyMastersException)
+            catch (TooManyMastersException e)
             {
+                Log.Information("master files:");
+                e.Masters.ForEach(m => Log.Information($"  {m.FileName}"));
                 return new TooManyMasters();
             }
         }

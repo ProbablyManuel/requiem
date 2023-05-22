@@ -9,7 +9,8 @@ New Features
 Bug Fixes
 ---------
 
-* Master files of `Requiem for the Indifferent.esp` are sorted with respect to the load order. Among other things, this fixes an infinite loading screen if the mod "Finding Helgi... and Laelette" is installed.
+* Masterlist of `Requiem for the Indifferent.esp` is sorted with respect to the load order. Among other things, this fixes an infinite loading screen if the mod "Finding Helgi... and Laelette" is installed.
+* The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
 
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
