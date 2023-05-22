@@ -60,6 +60,7 @@ namespace Reqtificator
             Log.Information("load order:");
             _context.ActiveMods.WithIndex().ForEach(m => Log.Information($"  {m.Index} - {m.Item.ModKey}"));
 
+            ValidateSkyrimFound();
             ValidateRequiemFound();
 
             //TODO: update base folder for configurations if needed
@@ -80,6 +81,15 @@ namespace Reqtificator
             var loadOrder = LoadAndVerifyLoadOrder(readyToPatchState);
 
             _events.PatchRequested += (_, updatedSettings) => { HandlePatchRequest(updatedSettings, loadOrder); };
+        }
+
+        private void ValidateSkyrimFound()
+        {
+            if (!File.Exists("Skyrim.esm"))
+            {
+                Log.Error("Could not find Skyrim.esm in working directory");
+                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.MissingSkyrim));
+            }
         }
 
         private void ValidateRequiemFound()
