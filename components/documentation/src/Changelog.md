@@ -9,13 +9,13 @@ New Features
 Bug Fixes
 ---------
 
-* Masterlist of `Requiem for the Indifferent.esp` is sorted with respect to the load order. Among other things, this fixes an infinite loading screen if the mod "Finding Helgi... and Laelette" is installed.
-* The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
-* Container ownership data is preserved by the Reqtificator.
+* The Reqtificator generates the masterlist sorted with respect to the load order. Among other things, this fixes an infinite loading screen if the mod "Finding Helgi... and Laelette" is installed.
+* The Reqtificator preserves container ownership data.
 * The Reqtificator does not generate HITME records.
-* The Reqtificator verifies the current working directory and displays a clear error message instead of failing with a cryptic "Object reference not set to an instance of an object" error message.
-* The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
 * The Reqtificator truncates merged leveled list at 255 entries to avoid the "Arithmetic operation resulted in an overflow" error.
+* The Reqtificator verifies the current working directory and displays a clear error message instead of failing with a cryptic "Object reference not set to an instance of an object" error message.
+* The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
+* The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
 
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
