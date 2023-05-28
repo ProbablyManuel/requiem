@@ -63,9 +63,9 @@ Function Fragment_0()
 ;Quest Startup - Listening for variables from all FFRiftHold and FFRiftenQuests
 ;To be eligible for this, player has to complete 5 FF Quests + the Skooma Clear (any order)
 if Alias_FFRiftenThaneLailaJarlAlias.GetActorReference().IsInFaction(pJobJarlFaction)
-Alias_FFRiftenThaneLailaJarlAlias.GetActorReference().SetRelationshipRank(Game.GetPlayer(), 2)
+Alias_FFRiftenThaneLailaJarlAlias.GetActorReference().SetRelationshipRank(Game.GetPlayer(), 3) ; USSEP 4.2.9 Bug #31736
 elseif Alias_FFRiftenThaneMavenJarlAlias.GetActorReference().IsInFaction(pJobJarlFaction)
-Alias_FFRiftenThaneMavenJarlAlias.GetActorReference().SetRelationshipRank(Game.GetPlayer(), 2)
+Alias_FFRiftenThaneMavenJarlAlias.GetActorReference().SetRelationshipRank(Game.GetPlayer(), 3) ; USSEP 4.2.9 Bug #31736
 endif
 SetObjectiveDisplayed(10,1)
 ;END CODE
