@@ -30,6 +30,7 @@ Bug Fixes
 * Frost enchantments slow the player.
 * Description of Banish Daedra is rephrased to clarify the additional damage is reduced by magic resistance.
 * Description of Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
+* Successful power attacks still deal full damage when stamina is low because of the power attack stamina cost.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
