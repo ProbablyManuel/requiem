@@ -10,6 +10,9 @@ Tweaks
 ------
 
 * Dwarven Helmet of Arkngthamz does not grant Nightvision.
+* Shock enchantments are consolidated into a single rank that deals triple damage to constructs.
+* Damage of Elemental Fury is increased by 20%.
+* Fire and frost enchantments apply damage spread over a second.
 
 Bug Fixes
 ---------
@@ -24,12 +27,17 @@ Bug Fixes
 * Synchronized with Unofficial Skyrim Special Edition Patch v4.2.9a.
 * All enchantments are explicitly set to either increase in magnitude or duration.
 * All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
+* Frost enchantments slow the player.
+* Description of Banish Daedra is rephrased to clarify the additional damage is reduced by magic resistance.
+* Description of Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
+* Enchantments with multiple effects are refactored to support Scrambled Bugs.
 * Ring of the Erudite uses common magic effects.
 * Various unused records are nullified.
+* Fire enchantments apply lingering damage through tapering.
 
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
