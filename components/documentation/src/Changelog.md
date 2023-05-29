@@ -25,12 +25,18 @@ Bug Fixes
 * The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
 * The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
 * Synchronized with Unofficial Skyrim Special Edition Patch v4.2.9a.
+* Scrambled Bugs is added as a highly recommended mod. Among other things, this fixes the following bugs:
+    * Poison applied by weapon attacks can be blocked with a shield or ward.
+    * Creating custom enchantments with multiple effects improves the strength of each effect.
+    * Worn armor weight reduction only applies to the armor you are wearing instead of all similar armors.
+    * Characters can only perform power attacks and bashes with the required stamina.
+    * White souls cannot be trapped in black soul gems.
 * All enchantments are explicitly set to either increase in magnitude or duration.
 * All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
 * Frost enchantments slow the player.
-* Description of Banish Daedra is rephrased to clarify the additional damage is reduced by magic resistance.
-* Description of Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
-* Successful power attacks still deal full damage when stamina is low because of the power attack stamina cost.
+* The slow effect from frost enchantments depends on the magnitude of the enchantment.
+* Description of Banish Daedra and Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
+* Power attacks still deal full damage when stamina is low as a result of the current power attack.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
