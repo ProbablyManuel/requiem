@@ -6,6 +6,11 @@ New Features
 
 * The GOG release is supported.
 
+Tweaks
+------
+
+* Dwarven Helmet of Arkngthamz does not grant Nightvision.
+
 Bug Fixes
 ---------
 
@@ -17,6 +22,14 @@ Bug Fixes
 * The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
 * The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
 * Synchronized with Unofficial Skyrim Special Edition Patch v4.2.9a.
+* All enchantments are explicitly set to either increase in magnitude or duration.
+* All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* Ring of the Erudite uses common magic effects.
+* Various unused records are nullified.
 
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
