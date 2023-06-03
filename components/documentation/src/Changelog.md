@@ -6,6 +6,14 @@ New Features
 
 * The GOG release is supported.
 
+Tweaks
+------
+
+* Dwarven Helmet of Arkngthamz does not grant Nightvision.
+* Shock enchantments are consolidated into a single rank that deals triple damage to constructs.
+* Damage of Elemental Fury is increased by 20%.
+* Fire and frost enchantments apply damage spread over a second.
+
 Bug Fixes
 ---------
 
@@ -17,6 +25,35 @@ Bug Fixes
 * The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
 * The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
 * Synchronized with Unofficial Skyrim Special Edition Patch v4.2.9a.
+* Scrambled Bugs is added as a highly recommended mod. Among other things, this fixes the following bugs:
+    * Poison applied by weapon attacks can be blocked with a shield or ward.
+    * Creating custom enchantments with multiple effects improves the strength of each effect.
+    * Worn armor weight reduction only applies to the armor you are wearing instead of all similar armors.
+    * Characters can only perform power attacks and bashes with the required stamina.
+    * White souls cannot be trapped in black soul gems.
+* All enchantments are explicitly set to either increase in magnitude or duration.
+* All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
+* Frost enchantments slow the player.
+* The slow effect from frost enchantments depends on the magnitude of the enchantment.
+* Description of Banish Daedra and Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
+* Power attacks still deal full damage when stamina is low as a result of the current power attack.
+
+Reqtificator
+------------
+
+* The Reqtificator displays a warning if the following patches from Scrambled Bugs are disabled:
+    * Perk Entry Points: Apply Multiple Spells
+    * Power Attack Stamina
+    * Soul Gems: Black
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* Enchantments with multiple effects are refactored to support Scrambled Bugs.
+* Apply spell perk entry points are refactored to support Scrambled Bugs.
+* Ring of the Erudite uses common magic effects.
+* Various unused records are nullified.
+* Fire enchantments apply lingering damage through tapering.
 
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2

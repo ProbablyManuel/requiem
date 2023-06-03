@@ -5,6 +5,8 @@ Enchantment Property FortifyLockpickingBase1 Auto
 Enchantment Property FortifyLockpickingBase2 Auto
 Enchantment Property FortifyLockpickingBase3 Auto
 
+Enchantment Property EnchWeaponShockDamageBase Auto
+
 Perk Property HeavyArmorMaterialBonus Auto
 Perk Property LightArmorMaterialBonus Auto
 
@@ -54,6 +56,9 @@ Function initScript(Int currentVersion, Int nevVersion)
         EndIf
         If currentVersion <= 50401 && nevVersion >= 50402
             Apply_5_4_1_to_5_4_2_fixes()
+        EndIf
+        If currentVersion <= 50402 && nevVersion >= 50403
+            Apply_5_4_2_to_5_4_3_fixes()
         EndIf
     EndIf
 EndFunction
@@ -156,4 +161,8 @@ Function Apply_5_4_1_to_5_4_2_fixes()
     If Player.HasSpell(FortitudeDuplicateAbility)
         Player.RemoveSpell(FortitudeDuplicateAbility)
     EndIf
+EndFunction
+
+Function Apply_5_4_2_to_5_4_3_fixes()
+    EnchWeaponShockDamageBase.SetPlayerKnows(False)
 EndFunction

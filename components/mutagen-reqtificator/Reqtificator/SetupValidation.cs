@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
+using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
@@ -20,7 +22,7 @@ namespace Reqtificator
         {
             public static readonly Uri BugFixes = new("https://www.nexusmods.com/skyrimspecialedition/mods/33261");
             public static readonly Uri EngineFixes = new("https://www.nexusmods.com/skyrimspecialedition/mods/17230");
-            // public static readonly Uri ScrambledBugs = new("https://www.nexusmods.com/skyrimspecialedition/mods/43532");
+            public static readonly Uri ScrambledBugs = new("https://www.nexusmods.com/skyrimspecialedition/mods/43532");
         }
 
         public static ReqtificatorOutcome? VerifySetup(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
@@ -30,12 +32,27 @@ namespace Reqtificator
             {
                 new BugfixDependency("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
                 new BugfixDependency("Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
-                // new BugfixDependency("Scrambled Bugs", "DLLPlugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs)
+                new BugfixDependency("Scrambled Bugs", "SKSE/Plugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs),
+                new BugfixDependency("Script Effect Archetype Crash Fix (Scrambled Bugs)", "SKSE/Plugins/ScriptEffectArchetypeCrashFix.dll", "NexusMods", Uris.ScrambledBugs),
+                new BugfixDependency("Vendor Respawn Fix (Scrambled Bugs)", "SKSE/Plugins/VendorRespawnFix.dll", "NexusMods", Uris.ScrambledBugs)
             }.FindAll(d => !File.Exists(d.ExpectedLocation));
 
             if (missingDependencies.Count > 0)
             {
                 return new MissingBugfixDependency(missingDependencies);
+            }
+
+            var config = ReadJsonWithCommentsAsHocon("SKSE/Plugins/ScrambledBugs.json");
+            var missingScrambledBugsPatches = new List<ScrambledBugsPatch>()
+            {
+                new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
+                new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina"),
+                new ScrambledBugsPatch("Soul Gems: Black", "patches.soulGems.black")
+            }.FindAll(d => !config.GetBoolean(d.Key));
+
+            if (missingScrambledBugsPatches.Count > 0)
+            {
+                return new MissingScrambledBugsPatch(missingScrambledBugsPatches);
             }
 
             int pluginVersion = (int)((IGlobalIntGetter)loadOrder.ToImmutableLinkCache()
@@ -47,6 +64,17 @@ namespace Reqtificator
             }
 
             return ValidateLoadOrder(loadOrder);
+        }
+
+        private static Config ReadJsonWithCommentsAsHocon(string filename)
+        {
+            string jsonString = File.ReadAllText(filename);
+            var options = new JsonSerializerOptions
+            {
+                ReadCommentHandling = JsonCommentHandling.Skip,
+            };
+            string jsonStringMinified = JsonSerializer.Serialize(JsonSerializer.Deserialize<JsonDocument>(jsonString, options));
+            return HoconConfigurationFactory.ParseString(jsonStringMinified);
         }
 
         private static ReqtificatorOutcome? ValidateLoadOrder(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
