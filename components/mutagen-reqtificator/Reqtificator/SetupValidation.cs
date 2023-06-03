@@ -32,7 +32,9 @@ namespace Reqtificator
             {
                 new BugfixDependency("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
                 new BugfixDependency("Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
-                new BugfixDependency("Scrambled Bugs", "SKSE/Plugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs)
+                new BugfixDependency("Scrambled Bugs", "SKSE/Plugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs),
+                new BugfixDependency("Script Effect Archetype Crash Fix (Scrambled Bugs)", "SKSE/Plugins/ScriptEffectArchetypeCrashFix.dll", "NexusMods", Uris.ScrambledBugs),
+                new BugfixDependency("Vendor Respawn Fix (Scrambled Bugs)", "SKSE/Plugins/VendorRespawnFix.dll", "NexusMods", Uris.ScrambledBugs)
             }.FindAll(d => !File.Exists(d.ExpectedLocation));
 
             if (missingDependencies.Count > 0)
