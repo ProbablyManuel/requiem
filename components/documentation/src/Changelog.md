@@ -42,6 +42,7 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Enchantments with multiple effects are refactored to support Scrambled Bugs.
+* Apply spell perk entry points are refactored to support Scrambled Bugs.
 * Ring of the Erudite uses common magic effects.
 * Various unused records are nullified.
 * Fire enchantments apply lingering damage through tapering.
