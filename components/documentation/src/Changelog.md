@@ -38,6 +38,14 @@ Bug Fixes
 * Description of Banish Daedra and Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
 * Power attacks still deal full damage when stamina is low as a result of the current power attack.
 
+Reqtificator
+------------
+
+* The Reqtificator displays a warning if the following patches from Scrambled Bugs are disabled:
+    * Perk Entry Points: Apply Multiple Spells
+    * Power Attack Stamina
+    * Soul Gems: Black
+
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
+using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
@@ -38,6 +40,19 @@ namespace Reqtificator
                 return new MissingBugfixDependency(missingDependencies);
             }
 
+            var config = ReadJsonWithCommentsAsHocon("SKSE/Plugins/ScrambledBugs.json");
+            var missingScrambledBugsPatches = new List<ScrambledBugsPatch>()
+            {
+                new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
+                new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina"),
+                new ScrambledBugsPatch("Soul Gems: Black", "patches.soulGems.black")
+            }.FindAll(d => !config.GetBoolean(d.Key));
+
+            if (missingScrambledBugsPatches.Count > 0)
+            {
+                return new MissingScrambledBugsPatch(missingScrambledBugsPatches);
+            }
+
             int pluginVersion = (int)((IGlobalIntGetter)loadOrder.ToImmutableLinkCache()
                 .Resolve<IGlobalGetter>(GlobalVariables.VersionStampPlugin.FormKey)).Data!;
 
@@ -47,6 +62,17 @@ namespace Reqtificator
             }
 
             return ValidateLoadOrder(loadOrder);
+        }
+
+        private static Config ReadJsonWithCommentsAsHocon(string filename)
+        {
+            string jsonString = File.ReadAllText(filename);
+            var options = new JsonSerializerOptions
+            {
+                ReadCommentHandling = JsonCommentHandling.Skip,
+            };
+            string jsonStringMinified = JsonSerializer.Serialize(JsonSerializer.Deserialize<JsonDocument>(jsonString, options));
+            return HoconConfigurationFactory.ParseString(jsonStringMinified);
         }
 
         private static ReqtificatorOutcome? ValidateLoadOrder(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
