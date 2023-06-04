@@ -17,31 +17,35 @@ Tweaks
 Bug Fixes
 ---------
 
-* The Reqtificator generates the masterlist sorted with respect to the load order. Among other things, this fixes an infinite loading screen if the mod "Finding Helgi... and Laelette" is installed.
-* The Reqtificator preserves container ownership data.
-* The Reqtificator does not generate HITME records.
-* The Reqtificator truncates merged leveled list at 255 entries to avoid the "Arithmetic operation resulted in an overflow" error.
-* The Reqtificator verifies the current working directory and displays a clear error message instead of failing with a cryptic "Object reference not set to an instance of an object" error message.
-* The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
-* The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
-* Synchronized with Unofficial Skyrim Special Edition Patch v4.2.9a.
+* Synchronize with Unofficial Skyrim Special Edition Patch v4.2.9a.
 * Scrambled Bugs is added as a highly recommended mod. Among other things, this fixes the following bugs:
     * Poison applied by weapon attacks can be blocked with a shield or ward.
     * Creating custom enchantments with multiple effects improves the strength of each effect.
     * Worn armor weight reduction only applies to the armor you are wearing instead of all similar armors.
     * Characters can only perform power attacks and bashes with the required stamina.
     * White souls cannot be trapped in black soul gems.
+* Power attacks still deal full damage when stamina is low as a result of the current power attack.
 * All enchantments are explicitly set to either increase in magnitude or duration.
 * All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
-* Frost enchantments slow the player.
-* The slow effect from frost enchantments depends on the magnitude of the enchantment.
+* Frost enchantments always slow the player.
+* The speed reduction from frost enchantments depends on the magnitude of the enchantment.
 * Description of Banish Daedra and Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
-* Power attacks still deal full damage when stamina is low as a result of the current power attack.
 
 Reqtificator
 ------------
 
-* The Reqtificator displays a warning if the following patches from Scrambled Bugs are disabled:
+* The masterlist is sorted with respect to the load order. Among other things, this fixes an infinite loading screen if the mod "Finding Helgi... and Laelette" is installed.
+* Container ownership data is preserved. Among other things, this fixes a rare error with DynDOLOD.
+* Merged leveled lists are truncated at 255 entries to avoid the "Arithmetic operation resulted in an overflow" error.
+* No HITME records are generated.
+* An explicit error message is displayed when the current working directory is incorrect.
+* The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
+* The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
+* A warning is displayed if the following SKSE plugins are missing:
+    * Scrambled Bugs
+    * Script Effect Archetype Crash Fix (Scrambled Bugs)
+    * Vendor Respawn Fix (Scrambled Bugs)
+* A warning is displayed if the following patches from Scrambled Bugs are disabled:
     * Perk Entry Points: Apply Multiple Spells
     * Power Attack Stamina
     * Soul Gems: Black
@@ -51,9 +55,9 @@ Internal Quality Improvements (only relevant for modders)
 
 * Enchantments with multiple effects are refactored to support Scrambled Bugs.
 * Apply spell perk entry points are refactored to support Scrambled Bugs.
+* Fire enchantments apply lingering damage through tapering.
 * Ring of the Erudite uses common magic effects.
 * Various unused records are nullified.
-* Fire enchantments apply lingering damage through tapering.
 
 
 Requiem 5.4.2 - "Towers and Shadows" Bugfix Pack #2
@@ -74,7 +78,7 @@ Tweaks
 * Transcendence has a finite duration.
 * Dispelling Candlelight costs no magicka.
 * Illumination lasts for 5 minutes (was 10).
-* Updated to Even Better Quest Objectives 1.9.2.
+* Synchronize with Even Better Quest Objectives 1.9.2.
 * Magic effects used by standard spells have improved names and EditorIDs.
 * Spells have improved EditorIDs.
 * Notes have improved EditorIDs.
@@ -654,7 +658,7 @@ Bugfixes
 --------
 
 * Armor weight penalty reduction from perks does not reduce damage taken.
-* Updated to Unofficial Skyrim Special Edition Patch v4.2.7. Earlier versions of the Unofficial Patch should remain compatible and the free Creation Club DLCs were not added as a dependency to `Requiem.esp`.
+* Synchronize with Unofficial Skyrim Special Edition Patch v4.2.7. Earlier versions of the Unofficial Patch should remain compatible and the free Creation Club DLCs were not added as a dependency to `Requiem.esp`.
 
 
 Requiem 5.2.1 - "The Gathering Storm" Bugfix Pack #1
