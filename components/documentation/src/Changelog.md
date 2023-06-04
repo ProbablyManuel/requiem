@@ -79,11 +79,6 @@ Tweaks
 * Dispelling Candlelight costs no magicka.
 * Illumination lasts for 5 minutes (was 10).
 * Synchronize with Even Better Quest Objectives 1.9.2.
-* Magic effects used by standard spells have improved names and EditorIDs.
-* Spells have improved EditorIDs.
-* Notes have improved EditorIDs.
-* Ammo projectiles have improved EditorIDs.
-* Potions and poison do not have a redundant 0 in their EditorID.
 
 Bug Fixes
 ---------
@@ -181,7 +176,6 @@ Bug Fixes
 * Summons are immune to Transmute Corpus.
 * Ghosts are immune to Teleport Vitals.
 * Clairvoyance (Rank II) is renamed to Vision of the Tenth Eye because the journal refers to it as such.
-* Several hidden ITMs are cleaned.
 * Level 10 axe-wielding bandits do not have Experienced Blocking because it exceeds both their perk count and Block skill.
 * Level 12 and higher mace-wielding bandits have Powerful Bashes.
 * Soul Trap has no rank.
@@ -269,6 +263,16 @@ Bug Fixes
 * Spells that would not benefit from dualcasting cannot be dualcasted.
 * Secondary magic effects are assigned their respective school of magic.
 * All spells are explicitly set to either increase in magnitude or duration when dualcast.
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* Magic effects used by standard spells have improved names and EditorIDs.
+* Spells have improved EditorIDs.
+* Notes have improved EditorIDs.
+* Ammo projectiles have improved EditorIDs.
+* Potions and poison do not have a redundant 0 in their EditorID.
+* Several hidden ITMs are cleaned.
 
 
 Requiem 5.4.1 - "Towers and Shadows" Bugfix Pack #1
