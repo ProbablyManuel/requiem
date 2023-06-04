@@ -13,7 +13,7 @@ namespace Reqtificator.Events
         public MissingBugfixDependency(List<BugfixDependency> dependencies)
         {
             Status = PatchStatus.WARNING;
-            Title = "Missing Requirements!";
+            Title = "Missing SKSE Plugins!";
 
 
             string messageString = string.Join(nl + nl,
@@ -22,7 +22,7 @@ namespace Reqtificator.Events
             ));
 
             Message = Formatter.FormatMultiline(@"
-                You are missing required dependencies for Requiem!
+                Recommended SKSE plugins are missing!
                 
                 These are important fixes for Skyrim bugs that significantly
                 affect Requiem gameplay. You can still choose to run the 

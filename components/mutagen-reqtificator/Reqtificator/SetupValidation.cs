@@ -21,6 +21,7 @@ namespace Reqtificator
         private static class Uris
         {
             public static readonly Uri BugFixes = new("https://www.nexusmods.com/skyrimspecialedition/mods/33261");
+            public static readonly Uri DualCastingFix = new("https://www.nexusmods.com/skyrimspecialedition/mods/92454");
             public static readonly Uri EngineFixes = new("https://www.nexusmods.com/skyrimspecialedition/mods/17230");
             public static readonly Uri ScrambledBugs = new("https://www.nexusmods.com/skyrimspecialedition/mods/43532");
         }
@@ -31,6 +32,7 @@ namespace Reqtificator
             var missingDependencies = new List<BugfixDependency>()
             {
                 new BugfixDependency("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
+                new BugfixDependency("Dual Casting Fix", "SKSE/Plugins/po3_DualCastingFix.dll", "NexusMods", Uris.EngineFixes),
                 new BugfixDependency("Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
                 new BugfixDependency("Scrambled Bugs", "SKSE/Plugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs),
                 new BugfixDependency("Script Effect Archetype Crash Fix (Scrambled Bugs)", "SKSE/Plugins/ScriptEffectArchetypeCrashFix.dll", "NexusMods", Uris.ScrambledBugs),
