@@ -9,6 +9,7 @@ New Features
 Tweaks
 ------
 
+* Angarvunde and Hillgrund's Tomb have more balanced loot. The stalhrim armors are moved to two more difficult locations instead.
 * Dwarven Helmet of Arkngthamz does not grant Nightvision.
 * Shock enchantments are consolidated into a single rank that deals triple damage to constructs.
 * Damage of Elemental Fury is increased by 20%.
