@@ -27,6 +27,8 @@ Bug Fixes
     * White souls cannot be trapped in black soul gems.
 * Power attacks still deal full damage when stamina is low as a result of the current power attack.
 * Fire/Frost/Shock Mastery affect Destruction spells instead of all other spells.
+* Arcane Experimentation and Artificer's Insight requires at least three soul gems in your inventory.
+* Creating enchantments through Arcane Experimentation and Artificer's Insight grants XP.
 * All enchantments are explicitly set to either increase in magnitude or duration.
 * All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
 * Frost enchantments always slow the player.
