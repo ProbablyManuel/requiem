@@ -29,6 +29,7 @@ Bug Fixes
 * Fire/Frost/Shock Mastery affect Destruction spells instead of all other spells.
 * Spells can paralyze again.
 * Calm has non-zero magnitude.
+* Fire breath is always resisted by fire resistance.
 * Arcane Experimentation and Artificer's Insight requires at least three soul gems in your inventory.
 * Creating enchantments through Arcane Experimentation and Artificer's Insight grants XP.
 * Exploding stalhrim arrows can be crafted.
