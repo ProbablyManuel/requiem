@@ -10,6 +10,7 @@ Tweaks
 ------
 
 * Angarvunde and Hillgrund's Tomb have more balanced loot. The stalhrim armors are moved to two more difficult locations instead.
+* Training cost thresholds are at skill 25/50/75 (was unintentionally changed to 50/75/90, used to be 35/65/90). Due to an engine limitation Expert and Master trainers are both labeled "Rigorous" as a result.
 * Dwarven Helmet of Arkngthamz does not grant Nightvision.
 * Shock enchantments are consolidated into a single rank that deals triple damage to constructs.
 * Damage of Elemental Fury is increased by 20%.
