@@ -30,6 +30,8 @@ Bug Fixes
 * Spells can paralyze again.
 * Arcane Experimentation and Artificer's Insight requires at least three soul gems in your inventory.
 * Creating enchantments through Arcane Experimentation and Artificer's Insight grants XP.
+* Exploding stalhrim arrows can be crafted.
+* Common arrow leveled lists consistently have a 30% chance to spawn enchanted arrows.
 * All enchantments are explicitly set to either increase in magnitude or duration.
 * All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
 * Frost enchantments always slow the player.
@@ -294,7 +296,7 @@ Bug Fixes
 * Helgen horses move at a slower pace so that they arrive in Helgen at the expected point in time.
 * NULL references in the Creation Club patch are resolved.
 * Quicksilver bow and arrow have proper stats.
-* Enchanted variants of quicksilver and skyforge steel arrows can be crafted.
+* Exploding quicksilver and skyforge steel arrows can be crafted.
 * Skyforge steel arrows are correctly named.
 
 
