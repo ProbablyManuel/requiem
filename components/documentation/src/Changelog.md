@@ -28,6 +28,7 @@ Bug Fixes
 * Power attacks still deal full damage when stamina is low as a result of the current power attack.
 * Fire/Frost/Shock Mastery affect Destruction spells instead of all other spells.
 * Spells can paralyze again.
+* Calm has non-zero magnitude.
 * Arcane Experimentation and Artificer's Insight requires at least three soul gems in your inventory.
 * Creating enchantments through Arcane Experimentation and Artificer's Insight grants XP.
 * Exploding stalhrim arrows can be crafted.
