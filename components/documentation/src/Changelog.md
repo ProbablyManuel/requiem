@@ -37,12 +37,12 @@ Bug Fixes
 * Common arrow leveled lists consistently have a 30% chance to spawn enchanted arrows.
 * Haldyn's Quicksilver Helmet has the correct ground model.
 * Blacksmiths do not sell chaos enchantments.
+* Enchanted chitin shields do not have the armor type in their name.
 * All enchantments are explicitly set to either increase in magnitude or duration.
 * All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
 * Frost enchantments always slow the player.
 * The speed reduction from frost enchantments depends on the magnitude of the enchantment.
 * Description of Banish Daedra and Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
-* Chitin shield do have the armor type in its name.
 * The "Script initialization failed" error message mentions the possibility of outdated Requiem addons or patches.
 
 Reqtificator
