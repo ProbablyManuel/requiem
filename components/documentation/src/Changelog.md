@@ -19,6 +19,7 @@ Tweaks
 Bug Fixes
 ---------
 
+* NPCs added by Requiem have a persistent location. Among other things, this should fix NPCs randomly disappearing until restarting the game.
 * Synchronize with Unofficial Skyrim Special Edition Patch v4.2.9a.
 * Scrambled Bugs is added as a highly recommended mod. Among other things, this fixes the following bugs:
     * Poison applied by weapon attacks can be blocked with a shield or ward.
