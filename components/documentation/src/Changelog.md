@@ -10,6 +10,7 @@ Tweaks
 ------
 
 * Angarvunde and Hillgrund's Tomb have more balanced loot. The stalhrim armors are moved to two more difficult locations instead.
+* Training cost thresholds are at skill 25/50/75 (was unintentionally changed to 50/75/90, used to be 35/65/90). Due to an engine limitation Expert and Master trainers are both labeled "Rigorous" as a result.
 * Dwarven Helmet of Arkngthamz does not grant Nightvision.
 * Shock enchantments are consolidated into a single rank that deals triple damage to constructs.
 * Damage of Elemental Fury is increased by 20%.
@@ -26,11 +27,23 @@ Bug Fixes
     * Characters can only perform power attacks and bashes with the required stamina.
     * White souls cannot be trapped in black soul gems.
 * Power attacks still deal full damage when stamina is low as a result of the current power attack.
+* Fire/Frost/Shock Mastery affect Destruction spells instead of all other spells.
+* Spells can paralyze again.
+* Calm has non-zero magnitude.
+* Fire breath is always resisted by fire resistance.
+* Arcane Experimentation and Artificer's Insight requires at least three soul gems in your inventory.
+* Creating enchantments through Arcane Experimentation and Artificer's Insight grants XP.
+* Exploding stalhrim arrows can be crafted.
+* Common arrow leveled lists consistently have a 30% chance to spawn enchanted arrows.
+* Haldyn's Quicksilver Helmet has the correct ground model.
+* Blacksmiths do not sell chaos enchantments.
+* Enchanted chitin shields do not have the armor type in their name.
 * All enchantments are explicitly set to either increase in magnitude or duration.
 * All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
 * Frost enchantments always slow the player.
 * The speed reduction from frost enchantments depends on the magnitude of the enchantment.
 * Description of Banish Daedra and Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
+* The "Script initialization failed" error message mentions the possibility of outdated Requiem addons or patches.
 
 Reqtificator
 ------------
@@ -290,7 +303,7 @@ Bug Fixes
 * Helgen horses move at a slower pace so that they arrive in Helgen at the expected point in time.
 * NULL references in the Creation Club patch are resolved.
 * Quicksilver bow and arrow have proper stats.
-* Enchanted variants of quicksilver and skyforge steel arrows can be crafted.
+* Exploding quicksilver and skyforge steel arrows can be crafted.
 * Skyforge steel arrows are correctly named.
 
 

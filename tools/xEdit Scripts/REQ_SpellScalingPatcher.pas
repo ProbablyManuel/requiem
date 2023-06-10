@@ -54,6 +54,12 @@ begin
     AddMessage(Name(e) + ' is not recognized');
     Exit;
   end;
+  if GetElementEditValues(e, 'Magic Effect Data\DATA - Data\Archtype') = 'Paralysis' then begin
+    flags[0] := '0';
+    flags[1] := '1';
+    flags[2] := '1';
+    flags[3] := '0';
+  end;
 
   if GetElementEditValues(e, 'Magic Effect Data\DATA - Data\Flags\Power Affects Magnitude') <> flags[0] then
     SetElementEditValues(e, 'Magic Effect Data\DATA - Data\Flags\Power Affects Magnitude', flags[0]);
