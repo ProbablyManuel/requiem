@@ -42,6 +42,7 @@ Bug Fixes
 * The speed reduction from frost enchantments depends on the magnitude of the enchantment.
 * Description of Banish Daedra and Turn Undead is rephrased to clarify the additional damage is reduced by magic resistance.
 * Chitin shield do have the armor type in its name.
+* The "Script initialization failed" error message mentions the possibility of outdated Requiem addons or patches.
 
 Reqtificator
 ------------
