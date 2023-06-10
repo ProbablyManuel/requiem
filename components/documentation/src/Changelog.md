@@ -36,6 +36,7 @@ Bug Fixes
 * Exploding stalhrim arrows can be crafted.
 * Common arrow leveled lists consistently have a 30% chance to spawn enchanted arrows.
 * Haldyn's Quicksilver Helmet has the correct ground model.
+* Blacksmiths do not sell chaos enchantments.
 * All enchantments are explicitly set to either increase in magnitude or duration.
 * All detrimental magic effects are explicitly set to be resisted in either magnitude or duration.
 * Frost enchantments always slow the player.
