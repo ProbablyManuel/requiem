@@ -11,6 +11,7 @@ Tweaks
 
 * Angarvunde and Hillgrund's Tomb have more balanced loot. The stalhrim armors are moved to two more difficult locations instead.
 * Training cost thresholds are at skill 25/50/75 (was unintentionally changed to 50/75/90, used to be 35/65/90). Due to an engine limitation Expert and Master trainers are both labeled "Rigorous" as a result.
+* Crafting arrows and bolts requires firewood again. While many arrows appear to have a metal shaft, this raises serious questions regarding their functionality and this is inconsistent with bolts who all have wooden shafts (except glass bolts). Therefore, it is more prudent to treat the models as a visual extravagance and assume all shafts are made of wood.
 * Dwarven Helmet of Arkngthamz does not grant Nightvision.
 * Shock enchantments are consolidated into a single rank that deals triple damage to constructs.
 * Damage of Elemental Fury is increased by 20%.
