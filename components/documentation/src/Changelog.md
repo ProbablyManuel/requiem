@@ -11,7 +11,7 @@ Tweaks
 
 * Angarvunde and Hillgrund's Tomb have more balanced loot. The stalhrim armors are moved to two more difficult locations instead.
 * Training cost thresholds are at skill 25/50/75 (was unintentionally changed to 50/75/90, used to be 35/65/90). Due to an engine limitation Expert and Master trainers are both labeled "Rigorous" as a result.
-* Crafting arrows and bolts requires firewood again. While many arrows appear to have a metal shaft, this raises serious questions regarding their functionality and this is inconsistent with bolts who all have wooden shafts (except glass bolts). Therefore, it is more prudent to treat the models as a visual extravagance and assume all shafts are made of wood.
+* Crafting arrows and bolts requires firewood again. While many arrows appear to have a metal shaft, this raises serious questions regarding their functionality, and this is inconsistent with bolts which all have wooden shafts (except glass bolts). Therefore, it is more prudent to treat the models as a visual eccentricity and assume all shafts are made of wood.
 * Dwarven Helmet of Arkngthamz does not grant Nightvision.
 * Shock enchantments are consolidated into a single rank that deals triple damage to constructs.
 * Damage of Elemental Fury is increased by 20%.
@@ -33,7 +33,7 @@ Bug Fixes
 * Arcane Experimentation and Artificer's Insight requires at least three soul gems in your inventory.
 * Creating enchantments through Arcane Experimentation and Artificer's Insight grants XP.
 * Exploding stalhrim arrows can be crafted.
-* Common arrow leveled lists consistently have a 30% chance to spawn enchanted arrows.
+* Generic arrow leveled lists consistently have a 30% chance to spawn enchanted arrows.
 * Haldyn's Quicksilver Helmet has the correct ground model.
 * Blacksmiths do not sell chaos enchantments.
 * Enchanted chitin shields do not have the armor type in their name.
@@ -52,7 +52,7 @@ Reqtificator
 * Merged leveled lists are truncated at 255 entries to avoid the "Arithmetic operation resulted in an overflow" error.
 * No HITME records are generated.
 * An explicit error message is displayed when the current working directory is incorrect.
-* The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
+* The "Too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
 * The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
 * A warning is displayed if the following SKSE plugins are missing:
     * Dual Casting Fix
