@@ -10,7 +10,7 @@ Weapon Property IronDagger Auto
 SoulGem Property SoulGemGrandFilled Auto
 
 Event OnEffectStart(Actor akTarget, Actor akCaster)
-	If akTarget == Game.GetPlayer() && akTarget.GetItemCount(IronDagger) >= 5 && akTarget.GetItemCount(SoulGemGrandFilled) > 3
+	If akTarget == Game.GetPlayer() && akTarget.GetItemCount(IronDagger) >= 5 && akTarget.GetItemCount(SoulGemGrandFilled) >= 3
 		akTarget.RemoveItem(IronDagger, 5)
 		akTarget.RemoveItem(SoulGemGrandFilled, 3)
 		akTarget.AddItem(CreatedWeapon1)
