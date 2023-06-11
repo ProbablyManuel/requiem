@@ -22,13 +22,10 @@ Bug Fixes
 
 * NPCs added by Requiem have a persistent location. Among other things, this should fix NPCs randomly disappearing until restarting the game.
 * Synchronize with Unofficial Skyrim Special Edition Patch v4.2.9a.
-* Scrambled Bugs is added as a highly recommended mod. Among other things, this fixes the following bugs:
+* Scrambled Bugs is added as a highly recommended mod. Among other things, this fixes the following Requiem bugs:
     * Poison applied by weapon attacks can be blocked with a shield or ward.
-    * Creating custom enchantments with multiple effects improves the strength of each effect.
     * Worn armor weight reduction only applies to the armor you are wearing instead of all similar armors.
-    * Characters can only perform power attacks and bashes with the required stamina.
-    * White souls cannot be trapped in black soul gems.
-* Power attacks still deal full damage when stamina is low as a result of the current power attack.
+    * Power attacks still deal full damage when stamina is low as a result of the current power attack.
 * Fire/Frost/Shock Mastery affect Destruction spells instead of all other spells.
 * Spells can paralyze again.
 * Calm has non-zero magnitude.
@@ -58,6 +55,7 @@ Reqtificator
 * The "too many masters" error message is rephrased to make its implications clearer, and all required masters are written to the log file.
 * The "Could not find Requiem.esp" error message is rephrased to make its cause clearer.
 * A warning is displayed if the following SKSE plugins are missing:
+    * Dual Casting Fix
     * Scrambled Bugs
     * Script Effect Archetype Crash Fix (Scrambled Bugs)
     * Vendor Respawn Fix (Scrambled Bugs)
@@ -70,7 +68,7 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Enchantments with multiple effects are refactored to support Scrambled Bugs.
-* Apply spell perk entry points are refactored to support Scrambled Bugs.
+* Apply spell perk entry points are refactored to take advantage of Scrambled Bugs.
 * Fire enchantments apply lingering damage through tapering.
 * Ring of the Erudite uses common magic effects.
 * Various unused records are nullified.
