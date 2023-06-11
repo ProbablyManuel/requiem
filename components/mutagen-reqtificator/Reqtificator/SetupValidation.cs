@@ -32,7 +32,7 @@ namespace Reqtificator
             var missingDependencies = new List<BugfixDependency>()
             {
                 new BugfixDependency("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
-                new BugfixDependency("Dual Casting Fix", "SKSE/Plugins/po3_DualCastingFix.dll", "NexusMods", Uris.EngineFixes),
+                new BugfixDependency("Dual Casting Fix", "SKSE/Plugins/po3_DualCastingFix.dll", "NexusMods", Uris.DualCastingFix),
                 new BugfixDependency("Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
                 new BugfixDependency("Scrambled Bugs", "SKSE/Plugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs),
                 new BugfixDependency("Script Effect Archetype Crash Fix (Scrambled Bugs)", "SKSE/Plugins/ScriptEffectArchetypeCrashFix.dll", "NexusMods", Uris.ScrambledBugs),

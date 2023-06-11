@@ -1,3 +1,12 @@
+Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
+===================================================
+
+Reqtificator
+------------
+
+* The displayed link to Dual Casting Fix is correct.
+
+
 Requiem 5.4.3 - "Towers and Shadows" Bugfix Pack #3
 ===================================================
 
