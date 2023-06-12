@@ -4,10 +4,10 @@ Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
 Reqtificator
 ------------
 
-* The displayed link to Dual Casting Fix is correct.
 * A ignorable warning is displayed if the settings file from Scrambled Bugs could not be verified.
 * No warning is displayed if the "Soul Gems: Black" patch from Scrambled Bugs is disabled because it is not a significant patch.
 * Load order and SKSE plugins are verified independently.
+* The displayed link to Dual Casting Fix is correct.
 
 
 Requiem 5.4.3 - "Towers and Shadows" Bugfix Pack #3
