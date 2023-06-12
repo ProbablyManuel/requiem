@@ -29,10 +29,60 @@ namespace Reqtificator
         public static ReqtificatorOutcome? VerifySetup(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
             RequiemVersion patcherVersion)
         {
+            int pluginVersion = (int)((IGlobalIntGetter)loadOrder.ToImmutableLinkCache()
+                .Resolve<IGlobalGetter>(GlobalVariables.VersionStampPlugin.FormKey)).Data!;
+
+            if (patcherVersion.AsNumeric() != pluginVersion)
+            {
+                return new VersionMismatch(new RequiemVersion(pluginVersion), patcherVersion);
+            }
+
+            var outcome = ValidateLoadOrder(loadOrder);
+            if (outcome != null)
+            {
+                return outcome;
+            }
+
+            return ValidateSksePlugins();
+        }
+
+        private static ReqtificatorOutcome? ValidateLoadOrder(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+        {
+            var modList = loadOrder.Select(e => e.Key).ToImmutableList();
+            return loadOrder
+                .SelectMany<IKeyValue<ModKey, IModListing<ISkyrimModGetter>>, ReqtificatorOutcome>((elem, index) =>
+                {
+                    if (elem.Value.Mod is null)
+                    {
+                        return ReqtificatorFailure.CausedBy(new ModFromLoadOrderNotFoundException(elem.Key))
+                            .AsEnumerable();
+                    }
+
+                    var missingMasters = elem.Value.Mod!.MasterReferences
+                        .Where(e => modList.Take(index).ContainsNot(e.Master))
+                        .Select(e => e.Master)
+                        .ToImmutableList();
+                    if (missingMasters.IsEmpty)
+                    {
+                        return ImmutableList.Create<InvalidLoadOrder>();
+                    }
+
+                    var missingMods = missingMasters.Where(e => !File.Exists(e.FileName)).ToImmutableHashSet();
+                    var outOfOrder = missingMasters.Where(e => modList.Contains(e)).ToImmutableHashSet();
+                    var disabledMods = missingMasters.Where(e => missingMods.ContainsNot(e) && outOfOrder.ContainsNot(e)).ToImmutableHashSet();
+
+                    return new InvalidLoadOrder(elem.Key, outOfOrder, missingMods, disabledMods).AsEnumerable();
+                }
+                )
+                .FirstOrDefault();
+        }
+
+        private static ReqtificatorOutcome? ValidateSksePlugins()
+        {
             var missingDependencies = new List<BugfixDependency>()
             {
                 new BugfixDependency("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
-                new BugfixDependency("Dual Casting Fix", "SKSE/Plugins/po3_DualCastingFix.dll", "NexusMods", Uris.EngineFixes),
+                new BugfixDependency("Dual Casting Fix", "SKSE/Plugins/po3_DualCastingFix.dll", "NexusMods", Uris.DualCastingFix),
                 new BugfixDependency("Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
                 new BugfixDependency("Scrambled Bugs", "SKSE/Plugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs),
                 new BugfixDependency("Script Effect Archetype Crash Fix (Scrambled Bugs)", "SKSE/Plugins/ScriptEffectArchetypeCrashFix.dll", "NexusMods", Uris.ScrambledBugs),
@@ -45,27 +95,23 @@ namespace Reqtificator
             }
 
             var config = ReadJsonWithCommentsAsHocon("SKSE/Plugins/ScrambledBugs.json");
-            var missingScrambledBugsPatches = new List<ScrambledBugsPatch>()
+            try
             {
-                new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
-                new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina"),
-                new ScrambledBugsPatch("Soul Gems: Black", "patches.soulGems.black")
-            }.FindAll(d => !config.GetBoolean(d.Key));
-
-            if (missingScrambledBugsPatches.Count > 0)
-            {
-                return new MissingScrambledBugsPatch(missingScrambledBugsPatches);
+                var disabledScrambledBugsPatches = new List<ScrambledBugsPatch>()
+                {
+                    new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
+                    new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina")
+                }.FindAll(d => !config.GetBoolean(d.Key));
+                if (disabledScrambledBugsPatches.Count > 0)
+                {
+                    return new DisabledScrambledBugsPatch(disabledScrambledBugsPatches);
+                }
             }
-
-            int pluginVersion = (int)((IGlobalIntGetter)loadOrder.ToImmutableLinkCache()
-                .Resolve<IGlobalGetter>(GlobalVariables.VersionStampPlugin.FormKey)).Data!;
-
-            if (patcherVersion.AsNumeric() != pluginVersion)
+            catch (HoconException)
             {
-                return new VersionMismatch(new RequiemVersion(pluginVersion), patcherVersion);
+                return new InvalidScrambledBugsSettings();
             }
-
-            return ValidateLoadOrder(loadOrder);
+            return null;
         }
 
         private static Config ReadJsonWithCommentsAsHocon(string filename)
@@ -77,37 +123,6 @@ namespace Reqtificator
             };
             string jsonStringMinified = JsonSerializer.Serialize(JsonSerializer.Deserialize<JsonDocument>(jsonString, options));
             return HoconConfigurationFactory.ParseString(jsonStringMinified);
-        }
-
-        private static ReqtificatorOutcome? ValidateLoadOrder(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
-        {
-            var modList = loadOrder.Select(e => e.Key).ToImmutableList();
-            return loadOrder
-                .SelectMany<IKeyValue<ModKey, IModListing<ISkyrimModGetter>>, ReqtificatorOutcome>((elem, index) =>
-                    {
-                        if (elem.Value.Mod is null)
-                        {
-                            return ReqtificatorFailure.CausedBy(new ModFromLoadOrderNotFoundException(elem.Key))
-                                .AsEnumerable();
-                        }
-
-                        var missingMasters = elem.Value.Mod!.MasterReferences
-                            .Where(e => modList.Take(index).ContainsNot(e.Master))
-                            .Select(e => e.Master)
-                            .ToImmutableList();
-                        if (missingMasters.IsEmpty)
-                        {
-                            return ImmutableList.Create<InvalidLoadOrder>();
-                        }
-
-                        var missingMods = missingMasters.Where(e => !File.Exists(e.FileName)).ToImmutableHashSet();
-                        var outOfOrder = missingMasters.Where(e => modList.Contains(e)).ToImmutableHashSet();
-                        var disabledMods = missingMasters.Where(e => missingMods.ContainsNot(e) && outOfOrder.ContainsNot(e)).ToImmutableHashSet();
-
-                        return new InvalidLoadOrder(elem.Key, outOfOrder, missingMods, disabledMods).AsEnumerable();
-                    }
-                )
-                .FirstOrDefault();
         }
     }
 }
