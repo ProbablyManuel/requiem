@@ -6,11 +6,11 @@ using Reqtificator.Utils;
 
 namespace Reqtificator.Events
 {
-    internal class MissingScrambledBugsPatch : ReqtificatorOutcome
+    internal class DisabledScrambledBugsPatch : ReqtificatorOutcome
     {
         private readonly string nl = Environment.NewLine;
 
-        public MissingScrambledBugsPatch(List<ScrambledBugsPatch> dependencies)
+        public DisabledScrambledBugsPatch(List<ScrambledBugsPatch> dependencies)
         {
             Status = PatchStatus.WARNING;
             Title = "Disabled Scrambled Bugs Patches!";

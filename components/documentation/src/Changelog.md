@@ -5,6 +5,7 @@ Reqtificator
 ------------
 
 * The displayed link to Dual Casting Fix is correct.
+* A ignorable warning is displayed if the settings file from Scrambled Bugs could not be verified.
 
 
 Requiem 5.4.3 - "Towers and Shadows" Bugfix Pack #3

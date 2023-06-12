@@ -45,16 +45,22 @@ namespace Reqtificator
             }
 
             var config = ReadJsonWithCommentsAsHocon("SKSE/Plugins/ScrambledBugs.json");
-            var missingScrambledBugsPatches = new List<ScrambledBugsPatch>()
+            try
             {
-                new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
-                new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina"),
-                new ScrambledBugsPatch("Soul Gems: Black", "patches.soulGems.black")
-            }.FindAll(d => !config.GetBoolean(d.Key));
-
-            if (missingScrambledBugsPatches.Count > 0)
+                var disabledScrambledBugsPatches = new List<ScrambledBugsPatch>()
+                {
+                    new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
+                    new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina"),
+                    new ScrambledBugsPatch("Soul Gems: Black", "patches.soulGems.black")
+                }.FindAll(d => !config.GetBoolean(d.Key));
+                if (disabledScrambledBugsPatches.Count > 0)
+                {
+                    return new DisabledScrambledBugsPatch(disabledScrambledBugsPatches);
+                }
+            }
+            catch (HoconException)
             {
-                return new MissingScrambledBugsPatch(missingScrambledBugsPatches);
+                return new InvalidScrambledBugsSettings();
             }
 
             int pluginVersion = (int)((IGlobalIntGetter)loadOrder.ToImmutableLinkCache()
