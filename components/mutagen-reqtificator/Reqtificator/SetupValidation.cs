@@ -50,8 +50,7 @@ namespace Reqtificator
                 var disabledScrambledBugsPatches = new List<ScrambledBugsPatch>()
                 {
                     new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
-                    new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina"),
-                    new ScrambledBugsPatch("Soul Gems: Black", "patches.soulGems.black")
+                    new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina")
                 }.FindAll(d => !config.GetBoolean(d.Key));
                 if (disabledScrambledBugsPatches.Count > 0)
                 {
