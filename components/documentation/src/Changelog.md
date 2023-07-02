@@ -1,3 +1,12 @@
+Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
+===================================================
+
+Bug Fixes
+---------
+
+* Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
+
+
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
 ===================================================
 
