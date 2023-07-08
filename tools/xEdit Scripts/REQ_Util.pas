@@ -91,6 +91,11 @@ begin
   formIDPair.Free;
 end;
 
+function GetElementLoadOrderFormID(aeContainer: IwbContainer; asPath: String): Cardinal;
+begin
+  Result := FileFormIDtoLoadOrderFormID(GetFile(aeContainer), GetElementNativeValues(aeContainer, asPath))
+end;
+
 function AddRecordToFile(aeFile: IwbFile; asSignature: String): IInterface;
 var
   group: IInterface;
