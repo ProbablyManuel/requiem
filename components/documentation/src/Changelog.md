@@ -1,6 +1,11 @@
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
 ===================================================
 
+Tweaks
+------
+
+* All breakdown recipes are standardized to yield half of the item's main component. Silver weapons are exempt from this and yield silver instead of steel.
+
 Bug Fixes
 ---------
 
