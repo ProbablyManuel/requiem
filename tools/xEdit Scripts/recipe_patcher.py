@@ -102,7 +102,7 @@ def get_conditions(perk: str, editor_id: str) -> str:
 def get_breakdown_conditions() -> str:
     conditions = [
         "10000000,0.000000,GetGlobalValue,Requiem.esp:3BA1F3,00 00 00 00,Subject",
-        "01000000,0.000000,GetItemCount,Items\\Item\\CNTO - Item\\Item,00 00 00 00,Subject",
+        "01000000,0.000000,GetItemCount,GetBreakdownItem(),00 00 00 00,Subject",
     ]
     return ",".join(conditions)
 

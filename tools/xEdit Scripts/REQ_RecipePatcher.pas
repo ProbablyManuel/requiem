@@ -101,8 +101,8 @@ begin
   conditions.StrictDelimiter := True;
   conditions.DelimitedText := recipes_conditions.Values[recipe];
   for i := 0 to Pred(conditions.Count div 6) do begin
-    if conditions[6 * i + 3] = 'Items\Item\CNTO - Item\Item' then
-      conditions[6 * i + 3] := IntToHex(GetElementLoadOrderFormID(e, conditions[6 * i + 3]), 8)
+    if conditions[6 * i + 3] = 'GetBreakdownItem()' then
+      conditions[6 * i + 3] := IntToHex(GetLoadOrderFormID(GetBreakdownItem(e)), 8)
     else if conditions[6 * i + 3] <> '00 00 00 00' then
       conditions[6 * i + 3] := IntToHex(PairToLoadOrderFormID(conditions[6 * i + 3]), 8);
   end;
@@ -181,6 +181,21 @@ begin
     Result := Result + ',' + GetElementEditValues(c, 'CTDA\Run On');
   end;
   Result := Delete(Result, 1, 1);
+end;
+
+function GetBreakdownItem(e: IInterface): IInterface;
+var
+  i: Integer;
+  item, items: IInterface;
+begin
+  items := ElementByPath(e, 'Items');
+  for i := 0 to Pred(ElementCount(items)) do begin
+    item := LinksTo(ElementByPath(ElementByIndex(items, i), 'CNTO - Item\Item'));
+    if GetLoadOrderFormID(item) <> PairToLoadOrderFormID('Requiem.esp:43D07D') then begin
+      Result := item;
+      Exit;
+    end;
+  end;
 end;
 
 end.
