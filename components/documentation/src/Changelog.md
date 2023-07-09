@@ -1,3 +1,23 @@
+Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
+===================================================
+
+Tweaks
+------
+
+* All breakdown recipes are standardized to yield half of the item's main component. Silver weapons are exempt from this and yield silver instead of steel.
+
+Bug Fixes
+---------
+
+* Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
+* Imperial Dagger, Mace, and Shortsword can be tempered.
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* Existing tempering recipes from the Unofficial Patch are prefered over Requiem's where applicable.
+
+
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
 ===================================================
 
