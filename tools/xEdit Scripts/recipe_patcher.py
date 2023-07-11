@@ -107,6 +107,12 @@ def get_breakdown_conditions() -> str:
     return ",".join(conditions)
 
 
+def get_breakdown_workbench(material: str) -> str:
+    if material == "Leather" or material == "Netch Leather":
+        return "Rack"
+    return "Smelter"
+
+
 armor_materials = pd.read_excel(
     "patcher_data/Armor.xlsx",
     sheet_name="Armors",
@@ -197,7 +203,7 @@ for armor_set, materials in armor_materials.iterrows():
             recipes_conditions[editor_id] = conditions
 
         if pd.notna(materials["Breakdown"]):
-            workbench = "Rack" if materials["Breakdown"] == "Leather" else "Smelter"
+            workbench = get_breakdown_workbench(materials["Breakdown"])
             editor_id = f'{workbench}_{armor_set}_{armor_part}'
             recipes_ingredients[editor_id] = f'{lookup.form_by_full_name(materials["Breakdown"])},{quantities["Breakdown"]}'
             recipes_conditions[editor_id] = get_breakdown_conditions()
