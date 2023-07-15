@@ -33,7 +33,11 @@ namespace Reqtificator
 
                 window.Show();
 
-                var backend = new Backend(eventQueue, logContext);
+                if (e is null)
+                {
+                    throw new ArgumentNullException(nameof(e));
+                }
+                var backend = new Backend(eventQueue, logContext, e);
                 Log.Debug("Gui Started");
             }
             catch (Exception ex)

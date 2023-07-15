@@ -18,7 +18,7 @@ namespace Reqtificator.Events.Outcomes
         {
             get
             {
-                string FormatModList(string title, IImmutableSet<ModKey> mods)
+                static string FormatModList(string title, IImmutableSet<ModKey> mods)
                 {
                     if (mods.Count == 0)
                     {

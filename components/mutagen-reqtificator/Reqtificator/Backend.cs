@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
@@ -33,20 +34,32 @@ namespace Reqtificator
 {
     internal class Backend
     {
-        private const GameRelease Release = GameRelease.SkyrimSE;
         private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Indifferent.esp");
         private static readonly ModKey RequiemModKey = new("Requiem", ModType.Plugin);
 
+        private readonly GameRelease _release;
         private readonly InternalEvents _events;
         private readonly MainLogicExecutor _executor;
         private readonly ReqtificatorLogContext _logs;
         private readonly GameContext _context;
         private readonly RequiemVersion _version;
 
-        public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext)
+        public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext, StartupEventArgs startupEventArgs)
         {
             _events = eventsQueue;
             _logs = logContext;
+            if (startupEventArgs.Args.Any("--game=SkyrimSEGog".Contains))
+            {
+                _release = GameRelease.SkyrimSEGog;
+            }
+            else if (startupEventArgs.Args.Any("--game=SkyrimSE".Contains))
+            {
+                _release = GameRelease.SkyrimSE;
+            }
+            else
+            {
+                _release = GameContext.IsAvailable(GameRelease.SkyrimSEGog) ? GameRelease.SkyrimSEGog : GameRelease.SkyrimSE;
+            }
 
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
@@ -55,7 +68,7 @@ namespace Reqtificator
             Log.Information($"build git branch: {buildInfo.GetString("gitBranch")}");
             Log.Information($"build git revision: {buildInfo.GetString("gitRevision")}");
 
-            _context = GameContext.GetRequiemContext(Release, PatchModKey);
+            _context = GameContext.GetRequiemContext(_release, PatchModKey);
 
             Log.Information("load order:");
             _context.ActiveMods.WithIndex().ForEach(m => Log.Information($"  {m.Index} - {m.Item.ModKey}"));
