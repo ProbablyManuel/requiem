@@ -1,6 +1,13 @@
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
 ===================================================
 
+Tweaks
+------
+
+* All breakdown recipes are standardized to yield half of the item's main component.
+* Most armors and weapons can be broken down at a tanning rack or smelter.
+* Tempering Forsworn weapons requires leather strips.
+
 Bug Fixes
 ---------
 

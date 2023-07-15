@@ -99,6 +99,20 @@ def get_conditions(perk: str, editor_id: str) -> str:
     return ",".join(conditions)
 
 
+def get_breakdown_conditions() -> str:
+    conditions = [
+        "10000000,0.000000,GetGlobalValue,Requiem.esp:3BA1F3,00 00 00 00,Subject",
+        "01000000,0.000000,GetItemCount,GetBreakdownItem(),00 00 00 00,Subject",
+    ]
+    return ",".join(conditions)
+
+
+def get_breakdown_workbench(material: str) -> str:
+    if material == "Leather" or material == "Netch Leather":
+        return "Rack"
+    return "Smelter"
+
+
 armor_materials = pd.read_excel(
     "patcher_data/Armor.xlsx",
     sheet_name="Armors",
@@ -109,6 +123,7 @@ armor_materials = pd.read_excel(
         "Secondary",
         "Leather",
         "Temper",
+        "Breakdown",
         "Perk"]).convert_dtypes().dropna(how="all")
 armor_materials["Temper"].mask(
     armor_materials["Temper"].isna(),
@@ -138,6 +153,7 @@ weapon_materials = pd.read_excel(
         "Primary",
         "Secondary",
         "Temper",
+        "Breakdown",
         "Perk"]).convert_dtypes().dropna(
             how="all")
 weapon_materials["Temper"].mask(
@@ -185,6 +201,13 @@ for armor_set, materials in armor_materials.iterrows():
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
+
+        if pd.notna(materials["Breakdown"]):
+            workbench = get_breakdown_workbench(materials["Breakdown"])
+            editor_id = f'{workbench}_{armor_set}_{armor_part}'
+            recipes_ingredients[editor_id] = f'{lookup.form_by_full_name(materials["Breakdown"])},{quantities["Breakdown"]}'
+            recipes_conditions[editor_id] = get_breakdown_conditions()
+
         editor_id = f'Temper_{armor_set}_{armor_part}'
         conditions = get_conditions(materials["Perk"], editor_id)
         recipes_ingredients[editor_id] = f'{lookup.form_by_full_name(materials["Temper"])},1'
@@ -241,6 +264,12 @@ for weapon_set, materials in weapon_materials.iterrows():
             conditions = get_conditions(materials["Perk"], editor_id)
             recipes_ingredients[editor_id] = ",".join(ingredients)
             recipes_conditions[editor_id] = conditions
+
+        if pd.notna(materials["Breakdown"]):
+            editor_id = f'Smelter_Weapon_{weapon_set}_{weapon_type}'
+            recipes_ingredients[editor_id] = f'{lookup.form_by_full_name(materials["Breakdown"])},{quantities["Breakdown"]}'
+            recipes_conditions[editor_id] = get_breakdown_conditions()
+
         editor_id = f'Temper_Weapon_{weapon_set}_{weapon_type}'
         conditions = get_conditions(materials["Perk"], editor_id)
         recipes_ingredients[editor_id] = f'{lookup.form_by_full_name(materials["Temper"])},1'

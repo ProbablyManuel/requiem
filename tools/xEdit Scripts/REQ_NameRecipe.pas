@@ -1,5 +1,7 @@
 unit NameRecipe;
 
+uses REQ_Util;
+
 var
   prefix: String;
   slWorkbench: TStringList;
@@ -41,7 +43,7 @@ begin
     sig := Signature(createdObject);
     if (workbench = 'Smelter') or (workbench = 'Rack') then
       if (sig <> 'ALCH') and (sig <> 'SCRL') and (sig <> 'SLGM') then
-        createdObject := WinningOverride(LinksTo(ElementByPath(e, 'Items\Item\CNTO - Item\Item')));
+        createdObject := WinningOverride(GetBreakdownItem(e));
     newEditorID := EditorID(createdObject);
     if pos(prefix + '_', newEditorID) = 1 then
       Delete(newEditorID, 1, Length(prefix) + 1);
@@ -53,6 +55,21 @@ end;
 function Finalize: Integer;
 begin
   slWorkbench.Free;
+end;
+
+function GetBreakdownItem(e: IInterface): IInterface;
+var
+  i: Integer;
+  item, items: IInterface;
+begin
+  items := ElementByPath(e, 'Items');
+  for i := 0 to Pred(ElementCount(items)) do begin
+    item := LinksTo(ElementByPath(ElementByIndex(items, i), 'CNTO - Item\Item'));
+    if GetLoadOrderFormID(item) <> PairToLoadOrderFormID('Requiem.esp:43D07D') then begin
+      Result := item;
+      Exit;
+    end;
+  end;
 end;
 
 end.
