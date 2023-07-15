@@ -15,6 +15,11 @@ Bug Fixes
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
 
+Reqtificator
+------------
+
+* Load order for GOG is automatically located. If both the Steam and GOG release are installed, GOG is prefered by default. This behavior can be overriden by the command line argument `--game=SkyrimSE` or `--game=SkyrimSEGog` respectively.
+
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
