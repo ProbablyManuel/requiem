@@ -14,6 +14,7 @@ Armors
 * _Secondary_ denotes the secondary ingredient of the crafting recipe. If unavailable, this set has no secondary ingredient.
 * _Leather_ denotes the leather ingredient of the crafting recipe. If unavailable, this set cannot be crafted.
 * _Temper_ denotes the ingredient of the tempering recipe. If unavailable, the primary ingredient is used as tempering ingredient.
+* _Breakdown_ denotes the ingredient of the breakdown recipe. If unavailable, this set cannot be broken down.
 * _Perk_ denotes the perk of the crafting and tempering recipe. If unavailable, the set cannot be crafted or tempered.
 
 How the armor rating, weight, and price of a full set are distributed across the armor parts is defined in [armor_patcher.py](../armor_patcher.py).
@@ -74,6 +75,7 @@ Weapons
 * _Primary_ denotes the primary ingredient of the crafting recipe. If unavailable, this set cannot be crafted.
 * _Secondary_ denotes the secondary ingredient of the crafting recipe. If unavailable, this set has no secondary ingredient.
 * _Temper_ denotes the ingredient of the tempering recipe. If unavailable, the primary ingredient is used as tempering ingredient.
+* _Breakdown_ denotes the ingredient of the breakdown recipe. If unavailable, this set cannot be broken down.
 * _Perk_ denotes the perk of the crafting and tempering recipe. If unavailable, the set cannot be crafted or tempered.
 
 Stats
