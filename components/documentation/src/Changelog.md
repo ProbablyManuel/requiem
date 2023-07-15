@@ -7,6 +7,7 @@ Tweaks
 * All breakdown recipes are standardized to yield half of the item's main component.
 * Most armors and weapons can be broken down at a tanning rack or smelter.
 * Tempering Forsworn weapons requires leather strips.
+* Guards may comment on the armors and weapons added by Requiem.
 
 Bug Fixes
 ---------
