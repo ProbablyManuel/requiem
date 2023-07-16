@@ -240,7 +240,8 @@ begin
   else
     for i := 0 to Pred(ElementCount(kwda)) do
       if GetLoadOrderFormID(LinksTo(ElementByIndex(kwda, i))) = keyword then
-        RemoveByIndex(kwda, i, True);
+        if not Assigned(RemoveByIndex(kwda, i, True)) then
+          AddMessage('Failed to remove ' + asKeyword + ' from ' + Name(aeElement));
 end;
 
 function BoolToInt(abValue: Boolean): Integer;
