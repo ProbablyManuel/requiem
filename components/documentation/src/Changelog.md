@@ -23,6 +23,7 @@ Bug Fixes
 * Stamina Damage enchantment is not considered a Destruction effect.
 * Tantos have the correct equip sound.
 * Elven Greatsword has the correct Block Bash Impact Data Set.
+* Description of Scroll of Soul Gem Evocation ends with a period.
 
 Reqtificator
 ------------
