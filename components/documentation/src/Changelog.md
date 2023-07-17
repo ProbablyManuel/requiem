@@ -21,6 +21,7 @@ Bug Fixes
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
 * Stamina Damage enchantment is not considered a Destruction effect.
+* Tantos have the correct equip sound.
 * Elven Greatsword has the correct Block Bash Impact Data Set.
 
 Reqtificator
