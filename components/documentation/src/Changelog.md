@@ -16,6 +16,7 @@ Tweaks
 Bug Fixes
 ---------
 
+* Non-power attacks do not break wooden bows.
 * Extra shock damage to construct is resisted shock resistance. 
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
