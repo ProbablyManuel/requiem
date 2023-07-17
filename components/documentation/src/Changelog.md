@@ -11,6 +11,7 @@ Tweaks
 * All armors added by Requiem have proper warmth keywords.
 * Warmth rating of armors is forwarded from [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
 * Wolf armor has a more reasonable price.
+* Generic arrow leveled lists do not spawn enchanted iron and steel arrows.
 
 Bug Fixes
 ---------
