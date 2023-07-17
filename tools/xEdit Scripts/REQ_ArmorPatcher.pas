@@ -1,5 +1,7 @@
 unit ArmorPatcher;
 
+uses REQ_Util;
+
 var
   armors: TStringList;
   re_ignore, re_armor, re_armor_artifact: TPerlRegEx;
@@ -57,6 +59,20 @@ begin
   SetElementEditValues(e, 'DNAM - Armor Rating', stats[0]);
   SetElementEditValues(e, 'DATA - Data\Weight', stats[1]);
   SetElementEditValues(e, 'DATA - Data\Value', stats[2]);
+  if stats[3] = 'Cold' then begin
+    AddKeyword(e, 'Survival_ArmorCold');
+    RemoveKeyword(e, 'Survival_ArmorWarm');
+  end
+  else if stats[3] = 'None' then begin
+    RemoveKeyword(e, 'Survival_ArmorCold');
+    RemoveKeyword(e, 'Survival_ArmorWarm');
+  end
+  else if stats[3] = 'Warm' then begin
+    AddKeyword(e, 'Survival_ArmorWarm');
+    RemoveKeyword(e, 'Survival_ArmorCold');
+  end
+  else
+    AddMessage('Unknown Survival keyword ' + stats[3]);
   stats.Free;
 end;
 

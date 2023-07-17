@@ -8,6 +8,8 @@ Tweaks
 * Most armors and weapons can be broken down at a tanning rack or smelter.
 * Tempering Forsworn weapons requires leather strips.
 * Guards may comment on the armors and weapons added by Requiem.
+* All armors added by Requiem have proper warmth keywords.
+* Warmth rating of armors is forwarded from [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
 
 Bug Fixes
 ---------

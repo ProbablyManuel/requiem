@@ -22,6 +22,7 @@ Individual Contributions
 ========================
 
 * [Pamposzek](https://www.nexusmods.com/skyrimspecialedition/users/14780709) - Numerous text improvements to magic effects
+* [JazzKiwifruit](https://www.nexusmods.com/skyrimspecialedition/users/16518979) - Numerous fixes related to armors, weapons, and smithing recipes
 
 We want to use this chance to thank all those who helped (and still help) us creating this mod:
 ===============================================================================================
