@@ -37,6 +37,7 @@ Internal Quality Improvements (only relevant for modders)
 * Enchanted steel weapons have a proper EditorID.
 * Heavy Falmer armor does not have a redundant "Heavy" in its EditorID.
 * Ingredients do not have the VendorItemAnimalPart keyword.
+* Unused keyword REQ_Ench_RestoreHealthKeyword is deprecated.
 
 
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
