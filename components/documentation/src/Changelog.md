@@ -26,6 +26,7 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Existing tempering recipes from the Unofficial Patch are prefered over Requiem's where applicable.
+* Enchanted steel weapons have a proper EditorID.
 
 
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
