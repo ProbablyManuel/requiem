@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Runtime.CompilerServices;
-using System.Windows;
 using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
@@ -32,34 +33,45 @@ namespace System.Runtime.CompilerServices
 
 namespace Reqtificator
 {
+    public enum Plugins { Main, Actors, Levelled, Equipment }
+    public struct ModKeyStruct
+    {
+        private static readonly string PatchModKey = "Requiem for the Indifferent";
+        private static readonly string PatchModExtension = ".esp";
+
+        public Plugins Plugin { get; private set; }
+        public ModKey PluginKey { get; private set; }
+
+        public ModKeyStruct(Plugins plugin)
+        {
+            Plugin = plugin;
+            string pluginName = PatchModKey + " "
+                + plugin.ToString() + PatchModExtension;
+            PluginKey = ModKey.FromNameAndExtension(pluginName);
+        }
+    }
+
     internal class Backend
     {
-        private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Indifferent.esp");
+
+        private const GameRelease Release = GameRelease.SkyrimSE;
         private static readonly ModKey RequiemModKey = new("Requiem", ModType.Plugin);
 
-        private readonly GameRelease _release;
         private readonly InternalEvents _events;
         private readonly MainLogicExecutor _executor;
         private readonly ReqtificatorLogContext _logs;
         private readonly GameContext _context;
         private readonly RequiemVersion _version;
 
-        public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext, StartupEventArgs startupEventArgs)
+        private static readonly Collection<ModKeyStruct> ModKeys = new();
+
+        public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext)
         {
             _events = eventsQueue;
             _logs = logContext;
-            if (startupEventArgs.Args.Any("--game=SkyrimSEGog".Contains))
-            {
-                _release = GameRelease.SkyrimSEGog;
-            }
-            else if (startupEventArgs.Args.Any("--game=SkyrimSE".Contains))
-            {
-                _release = GameRelease.SkyrimSE;
-            }
-            else
-            {
-                _release = GameContext.IsAvailable(GameRelease.SkyrimSEGog) ? GameRelease.SkyrimSEGog : GameRelease.SkyrimSE;
-            }
+
+            foreach (Plugins value in Enum.GetValues(typeof(Plugins))) 
+                ModKeys.Add(new ModKeyStruct(value));
 
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
@@ -68,7 +80,7 @@ namespace Reqtificator
             Log.Information($"build git branch: {buildInfo.GetString("gitBranch")}");
             Log.Information($"build git revision: {buildInfo.GetString("gitRevision")}");
 
-            _context = GameContext.GetRequiemContext(_release, PatchModKey);
+            _context = GameContext.GetRequiemContext(Release, ModKeys);
 
             Log.Information("load order:");
             _context.ActiveMods.WithIndex().ForEach(m => Log.Information($"  {m.Index} - {m.Item.ModKey}"));
@@ -121,20 +133,30 @@ namespace Reqtificator
                 var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
                 _logs.LogLevel.MinimumLevel = logLevel;
                 updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
-                var generatedPatch = GeneratePatch(loadOrder, updatedSettings, PatchModKey);
+                var generatedPatches = GeneratePatch(loadOrder, updatedSettings);
                 Log.Information("done patching, now exporting to disk");
 
                 _events.PublishState(ReqtificatorState.Patching(90, "Saving Patch"));
-                var outcome = WritePatchToDisk(generatedPatch, _context.DataFolder, loadOrder);
-                if (outcome is null)
+                for (int i = 0; i < generatedPatches.Count; i++)
                 {
-                    Log.Information("done exporting");
-                    _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
-                }
-                else
-                {
-                    Log.Information("exporting failed");
-                    _events.PublishState(ReqtificatorState.Stopped(outcome));
+                    var mod = generatedPatches[i];
+                    var outcome = WritePatchToDisk(mod, _context.DataFolder, loadOrder);
+                    if (outcome is null)
+                    {
+                        Log.Information("Exporting patch " + mod.ModKey.Name);
+                        if (i + 1 == generatedPatches.Count)
+                        {
+                            Log.Information("done exporting");
+                            _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
+                            break;
+                        }
+                        continue;
+                    }
+                    else
+                    {
+                        Log.Information("exporting failed");
+                        _events.PublishState(ReqtificatorState.Stopped(outcome));
+                    }
                 }
             }
             catch (Exception ex)
@@ -167,14 +189,25 @@ namespace Reqtificator
         }
 
 
-        public SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, UserSettings userConfig, ModKey patchModKey)
+        public List<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, UserSettings userConfig)
+        {
+            var result = new List<SkyrimMod>();
+            var plugins = _executor.GeneratePatch(loadOrder, userConfig, ModKeys);
+
+            foreach (var plugin in plugins)
+                result.Add(ErrorCheck(plugin));
+
+            return result;
+        }
+
+        private SkyrimMod ErrorCheck(ErrorOr<SkyrimMod> error)
         {
             try
             {
 
                 Log.Information("start patching");
 
-                return _executor.GeneratePatch(loadOrder, userConfig, patchModKey) switch
+                return error switch
                 {
                     Success<SkyrimMod> s => s.Value,
                     Failed<SkyrimMod> f => throw f.Error,

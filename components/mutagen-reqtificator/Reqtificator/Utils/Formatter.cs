@@ -9,9 +9,13 @@ namespace Reqtificator.Utils
     {
         public static string FormatMultiline(string multiLineString, params string[] args)
         {
-            if (string.IsNullOrEmpty(multiLineString) || !multiLineString.StartsWith(Environment.NewLine, StringComparison.InvariantCulture))
+            if (string.IsNullOrEmpty(multiLineString))
             {
                 throw new FormatException("String must not be empty and must start with a NewLine character.");
+            }
+            if (!multiLineString.StartsWith(Environment.NewLine, StringComparison.InvariantCulture))
+            {
+                multiLineString = Environment.NewLine + multiLineString;
             }
 
             int indentationSize = multiLineString.Skip(Environment.NewLine.Length)

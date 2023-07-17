@@ -1,6 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Collections.ObjectModel;
 using System.Linq;
+using DynamicData;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Allocators;
@@ -47,8 +50,8 @@ namespace Reqtificator
             _version = version;
         }
 
-        public ErrorOr<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
-            UserSettings userSettings, ModKey outputModKey)
+        public List<ErrorOr<SkyrimMod>> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder,
+            UserSettings userSettings, Collection<ModKeyStruct> outputModKeys)
         {
             _events.PublishState(ReqtificatorState.Patching(0.0, ""));
 
@@ -75,7 +78,10 @@ namespace Reqtificator
                 .Select(ml => ml.ModKey)
                 .ToImmutableHashSet();
 
-            var (generatedPatch, formAllocator) = CreatePatchBaseMod(outputModKey, _version, importedModsLinkCache);
+            var (generatedPatch, formAllocator) = CreatePatchBaseMod(Plugins.Main, outputModKeys, _version, importedModsLinkCache);
+            var (generatedPatchActors, formAllocatorActors) = CreatePatchBaseMod(Plugins.Actors, outputModKeys, _version, importedModsLinkCache);
+            var (generatedPatchLevelled, formAllocatorLevelled) = CreatePatchBaseMod(Plugins.Levelled, outputModKeys, _version, importedModsLinkCache);
+            var (generatedPatchEquipment, formAllocatorEquipment) = CreatePatchBaseMod(Plugins.Equipment, outputModKeys, _version, importedModsLinkCache);
 
             _events.PublishState(ReqtificatorState.Patching(5, "Ammo"));
             var ammoPatched = PatchAmmunition(loadOrder);
@@ -113,37 +119,59 @@ namespace Reqtificator
 
             _events.PublishState(ReqtificatorState.Patching(55, "Actor Variations"));
             var actorVariationsPatched =
-                actorsPatched.Map(actors => PatchActorVariations(loadOrder, actors, modsWithActorVariations, generatedPatch));
+                actorsPatched.Map(actors => PatchActorVariations(loadOrder, actors, modsWithActorVariations, generatedPatchActors));
 
             Log.Information("adding patched records to output mod");
 
             _events.PublishState(ReqtificatorState.Patching(75, "Generating Patch"));
-            var fullPatch = generatedPatch.AsSuccess()
-                .Map(m => m.WithRecords(encounterZonesPatched))
+
+            var mainPatch = generatedPatch.AsSuccess()
                 .Map(m => m.WithRecords(doorsPatched))
-                .Map(m => m.WithRecords(containersPatched))
-                .Map(m => m.WithRecords(leveledItemsPatched))
-                .Map(m => m.WithRecords(leveledCharactersPatched))
-                .FlatMap(m => armorsPatched.Map(m.WithRecords))
-                .Map(m => m.WithRecords(ammoPatched))
-                .FlatMap(m => weaponsPatched.Map(m.WithRecords))
+                .Map(m => m.WithRecords(containersPatched));
+
+            var actorPatch = generatedPatchActors.AsSuccess()
                 .FlatMap(m => actorsPatched.Map(m.WithRecords))
                 .FlatMap(m => actorVariationsPatched.Map(m.WithRecords))
                 .Map(m => m.WithRecords(racesPatched));
 
+            var levelledPatch = generatedPatchLevelled.AsSuccess()
+                .Map(m => m.WithRecords(encounterZonesPatched))
+                .Map(m => m.WithRecords(leveledItemsPatched))
+                .Map(m => m.WithRecords(leveledCharactersPatched));
+
+            var equipmentPatch = generatedPatchEquipment.AsSuccess()
+                .FlatMap(m => armorsPatched.Map(m.WithRecords))
+                .Map(m => m.WithRecords(ammoPatched))
+                .FlatMap(m => weaponsPatched.Map(m.WithRecords));
+
             formAllocator.Commit();
-            return fullPatch;
+            formAllocatorActors.Commit();
+            formAllocatorLevelled.Commit();
+            formAllocatorEquipment.Commit();
+
+            return new List<ErrorOr<SkyrimMod>>
+            {
+                mainPatch,
+                actorPatch,
+                levelledPatch,
+                equipmentPatch
+            }; ;
         }
 
-        private static (SkyrimMod, TextFileFormKeyAllocator) CreatePatchBaseMod(ModKey outputModKey,
+        private static (SkyrimMod, TextFileFormKeyAllocator) CreatePatchBaseMod(Plugins pluginReference, Collection<ModKeyStruct> outputModKeys,
             RequiemVersion version,
             ImmutableLoadOrderLinkCache<ISkyrimMod, ISkyrimModGetter> cache)
         {
+            ModKey outputModKey = ModKey.FromNameAndExtension("If you're seeing this ERROR.esp");
+            foreach (ModKeyStruct modKey in outputModKeys)
+                if (modKey.Plugin == pluginReference)
+                    outputModKey = modKey.PluginKey;
+
             var patch = new SkyrimMod(outputModKey, SkyrimRelease.SkyrimSE)
             {
                 ModHeader =
                 {
-                    Author = "The Requiem Dungeon Masters",
+                    Author = "The Requiem Dungeon Masters + EXIT",
                     Description =
                         "This is an autogenerated patch for the mod \"Requiem - The Role-Playing Overhaul\". " +
                         $"Generated for Requiem version: {version.ShortVersion()} -- build with Mutagen"
