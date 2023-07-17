@@ -18,6 +18,7 @@ Bug Fixes
 * Extra shock damage to construct is resisted shock resistance. 
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
+* Stamina Damage enchantment is not considered a Destruction effect.
 
 Reqtificator
 ------------
