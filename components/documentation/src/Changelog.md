@@ -18,6 +18,7 @@ Bug Fixes
 
 * Non-power attacks do not break wooden bows.
 * Health bonus in werewolf form is restored.
+* Arrows damage stamina and magicka on hit.
 * Perfected Art has no effect when the player rather than the target is wearing heavy armor.
 * Extra shock damage to construct is resisted shock resistance. 
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.

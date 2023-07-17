@@ -70,16 +70,18 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 			spelltype = 4 * aksource.HasKeyword(RangedWeapons[count]) as Int
 			count += 1
 		EndWhile
-		count = 0
-		If (akProjectile == None && spelltype == 0)
-			While (count < Twohanded.Length && spelltype == 0)
-				spelltype = aksource.HasKeyword(Twohanded[count]) as Int
-				count += 1
-			EndWhile
-			spelltype += 2 * ((abPowerAttack && !abBashAttack) as Int)
-		Else
-			GotoState("")
-			return
+		If (spelltype == 0)
+			count = 0
+			If (akProjectile == None)
+				While (count < Twohanded.Length)
+					spelltype = aksource.HasKeyword(Twohanded[count]) as Int
+					count += 1
+				EndWhile
+				spelltype += 2 * ((abPowerAttack && !abBashAttack) as Int)
+			Else
+				GotoState("")
+				return
+			EndIf
 		EndIf
 	ElseIf (akSource as Spell && !absorbed)
 		If ( akSource.HasKeyword(Concentration) )
