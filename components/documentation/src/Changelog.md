@@ -27,6 +27,7 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Existing tempering recipes from the Unofficial Patch are prefered over Requiem's where applicable.
+* All shields have the armor type keyword assigned in the plugin.
 
 
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
