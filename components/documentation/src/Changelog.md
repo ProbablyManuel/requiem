@@ -16,6 +16,7 @@ Bug Fixes
 
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
+* Bonemold, Chitin, and Stalhrim shield have the correct Bash Impact Data Set.
 
 Reqtificator
 ------------
