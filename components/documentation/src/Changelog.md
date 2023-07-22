@@ -27,6 +27,7 @@ Bug Fixes
 * Stalhrim Light Gauntlets do not receive extra unarmed damage from Combat Training.
 * Tantos have the correct equip sound.
 * Elven Greatsword has the correct Block Bash Impact Data Set.
+* Bonemold, Chitin, and Stalhrim shield have the correct Bash Impact Data Set.
 * Description of Scroll of Soul Gem Evocation ends with a period.
 
 Reqtificator
@@ -38,6 +39,7 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * Existing tempering recipes from the Unofficial Patch are prefered over Requiem's where applicable.
+* All shields have the armor type keyword assigned in the plugin.
 * Enchanted steel weapons have a proper EditorID.
 * Heavy Falmer armor does not have a redundant "Heavy" in its EditorID.
 * Ingredients do not have the VendorItemAnimalPart keyword.
