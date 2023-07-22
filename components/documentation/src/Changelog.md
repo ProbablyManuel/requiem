@@ -4,6 +4,7 @@ Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
 Tweaks
 ------
 
+* Training cost thresholds are reverted to skill 35/65/90 because the previous rebalance attempt run afoul of engine limitations.
 * All breakdown recipes are standardized to yield half of the item's main component.
 * Most armors and weapons can be broken down at a tanning rack or smelter.
 * Tempering Forsworn weapons requires leather strips.
