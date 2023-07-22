@@ -28,6 +28,7 @@ Bug Fixes
 * Tantos have the correct equip sound.
 * Elven Greatsword has the correct Block Bash Impact Data Set.
 * Bonemold, Chitin, and Stalhrim shield have the correct Bash Impact Data Set.
+* A leveled list containing hunter loot is deleveled.
 * Description of Scroll of Soul Gem Evocation ends with a period.
 
 Reqtificator
