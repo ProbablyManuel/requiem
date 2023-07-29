@@ -38,7 +38,6 @@ namespace ReqtificatorTest.Transformers.Weapons
         private readonly Weapon.TranslationMask _verificationMask = new(defaultOn: true)
         {
             BasicStats = new WeaponBasicStats.TranslationMask(defaultOn: true) { Damage = false },
-            Critical = new CriticalData.TranslationMask(defaultOn: true) { Damage = false }
         };
 
         [Fact]
@@ -57,14 +56,12 @@ namespace ReqtificatorTest.Transformers.Weapons
                     },
                     Keywords = new KeywordList { otherKeyword },
                     BasicStats = new WeaponBasicStats { Damage = 5 },
-                    Critical = new CriticalData { Damage = 2 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
                 result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
                 result.Record().Equals(input, _verificationMask).Should().BeTrue();
                 result.Record().BasicStats!.Damage.Should().Be((ushort)(input.BasicStats.Damage * 6));
-                result.Record().Critical!.Damage.Should().Be((ushort)(input.Critical.Damage * 6));
             }
         }
 
@@ -84,14 +81,12 @@ namespace ReqtificatorTest.Transformers.Weapons
                     },
                     Keywords = new KeywordList { otherKeyword },
                     BasicStats = new WeaponBasicStats { Damage = 5 },
-                    Critical = new CriticalData { Damage = 2 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
                 result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
                 result.Record().Equals(input, _verificationMask).Should().BeTrue();
                 result.Record().BasicStats!.Damage.Should().Be((ushort)(input.BasicStats.Damage * 4));
-                result.Record().Critical!.Damage.Should().Be((ushort)(input.Critical.Damage * 4));
             }
         }
 

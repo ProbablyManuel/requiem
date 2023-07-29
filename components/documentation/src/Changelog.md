@@ -13,6 +13,8 @@ Tweaks
 * Warmth rating of armors is forwarded from [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
 * Wolf armor has a more reasonable price.
 * Generic arrow leveled lists do not spawn enchanted iron and steel arrows.
+* Critical damage of Dragonslayer's Blessing and Valdr's Dagger is doubled.
+* Powerful Charge and Devastating Charge do not cause critical damage.
 
 Bug Fixes
 ---------
@@ -37,6 +39,7 @@ Reqtificator
 ------------
 
 * Load order for GOG is automatically located. If both the Steam and GOG release are installed, GOG is prefered by default. This behavior can be overriden by the command line argument `--game=SkyrimSE` or `--game=SkyrimSEGog` respectively.
+* Critical damage is set to the weapon's final base damage to work around rounding errors. This computation cannot be opted out. From now on, it is the responsibility of each perk that uses **Calculate My Critical Hit Chance** to additionally set the desired critical damage through **Calculate My Critical Hit Damage**.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------

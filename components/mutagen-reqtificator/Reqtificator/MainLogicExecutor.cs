@@ -259,6 +259,7 @@ namespace Reqtificator
                 );
             return weaponRules.Map(rules =>
                 new WeaponDamageScaling().AndThen(new WeaponMeleeRangeScaling())
+                    .AndThen(new WeaponCriticalDamageScaling())
                     .AndThen(new WeaponNpcAmmunitionUsage())
                     .AndThen(new WeaponRangedSpeedScaling())
                     .AndThen(new WeaponKeywordsFromRules(rules))
