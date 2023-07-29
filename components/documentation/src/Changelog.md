@@ -21,7 +21,8 @@ Bug Fixes
 * Health bonus in werewolf form is restored.
 * Arrows damage stamina and magicka on hit.
 * Perfected Art has no effect when the player rather than the target is wearing heavy armor.
-* Extra shock damage to construct is resisted shock resistance. 
+* Extra shock damage to construct is resisted shock resistance.
+* The Challenger is a mage rather than a trickster.
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
 * Stamina Damage enchantment is not considered a Destruction effect.
