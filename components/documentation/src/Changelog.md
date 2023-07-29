@@ -4,19 +4,34 @@ Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
 Tweaks
 ------
 
+* Training cost thresholds are reverted to skill 35/65/90 because the previous rebalance attempt run afoul of engine limitations.
 * All breakdown recipes are standardized to yield half of the item's main component.
 * Most armors and weapons can be broken down at a tanning rack or smelter.
 * Tempering Forsworn weapons requires leather strips.
 * Guards may comment on the armors and weapons added by Requiem.
 * All armors added by Requiem have proper warmth keywords.
 * Warmth rating of armors is forwarded from [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
+* Wolf armor has a more reasonable price.
+* Generic arrow leveled lists do not spawn enchanted iron and steel arrows.
 
 Bug Fixes
 ---------
 
+* Non-power attacks do not break wooden bows.
+* Health bonus in werewolf form is restored.
+* Arrows damage stamina and magicka on hit.
+* Perfected Art has no effect when the player rather than the target is wearing heavy armor.
+* Extra shock damage to construct is resisted shock resistance.
+* The Challenger is a mage rather than a trickster.
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
+* Stamina Damage enchantment is not considered a Destruction effect.
+* Stalhrim Light Gauntlets do not receive extra unarmed damage from Combat Training.
+* Tantos have the correct equip sound.
+* Elven Greatsword has the correct Block Bash Impact Data Set.
 * Bonemold, Chitin, and Stalhrim shield have the correct Bash Impact Data Set.
+* A leveled list containing hunter loot is deleveled.
+* Description of Scroll of Soul Gem Evocation ends with a period.
 
 Reqtificator
 ------------
@@ -28,6 +43,12 @@ Internal Quality Improvements (only relevant for modders)
 
 * Existing tempering recipes from the Unofficial Patch are prefered over Requiem's where applicable.
 * All shields have the armor type keyword assigned in the plugin.
+* Impact effects are determined by weapon skill type instead of keywords.
+* Enchanted steel weapons have a proper EditorID.
+* Heavy Falmer armor does not have a redundant "Heavy" in its EditorID.
+* Ingredients do not have the VendorItemAnimalPart keyword.
+* Unused keyword REQ_Ench_RestoreHealthKeyword is deprecated.
+* Redundant leveled list REQ_LI_Vigilant_Books is deprecated.
 
 
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4

@@ -11,10 +11,6 @@ Spell[] Property Stagger Auto
 {stagger spell, applied randomly depending on various things}
 Spell[] Property Disarm Auto
 {disarm effect, applied randomly, if player is out of stamina}
-Keyword[] Property Twohanded Auto
-{keywords for weapons to be considered as 2H weapons}
-Keyword[] Property RangedWeapons Auto
-{weapon types which are considered ranged weapons}
 Keyword Property BreakableBow Auto
 {bows with this keyword break on hit}
 Keyword Property Concentration Auto
@@ -66,20 +62,18 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 		GotoState("")
 		Return
 	ElseIf (akSource as Weapon)
-		While (count < RangedWeapons.Length && spelltype == 0)
-			spelltype = 4 * aksource.HasKeyword(RangedWeapons[count]) as Int
-			count += 1
-		EndWhile
-		count = 0
-		If (akProjectile == None && spelltype == 0)
-			While (count < Twohanded.Length && spelltype == 0)
-				spelltype = aksource.HasKeyword(Twohanded[count]) as Int
-				count += 1
-			EndWhile
-			spelltype += 2 * ((abPowerAttack && !abBashAttack) as Int)
+		If (akSource as Weapon).GetSkill() == "Marksman"
+			spelltype = 4
+		ElseIf (akSource as Weapon).GetSkill() == "OneHanded"
+			spelltype = 0
+		ElseIf (akSource as Weapon).GetSkill() == "TwoHanded"
+			spelltype = 1
 		Else
 			GotoState("")
-			return
+			Return
+		EndIf
+		If abPowerAttack && !abBashAttack
+			spelltype += 2
 		EndIf
 	ElseIf (akSource as Spell && !absorbed)
 		If ( akSource.HasKeyword(Concentration) )
