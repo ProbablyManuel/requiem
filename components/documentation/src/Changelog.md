@@ -43,6 +43,7 @@ Internal Quality Improvements (only relevant for modders)
 
 * Existing tempering recipes from the Unofficial Patch are prefered over Requiem's where applicable.
 * All shields have the armor type keyword assigned in the plugin.
+* Impact effects are determined by weapon skill type instead of keywords.
 * Enchanted steel weapons have a proper EditorID.
 * Heavy Falmer armor does not have a redundant "Heavy" in its EditorID.
 * Ingredients do not have the VendorItemAnimalPart keyword.
