@@ -11,17 +11,16 @@ Tweaks
     * Draugr boss chests are capped at Expert.
     * Dwarven chests are capped at Adept.
     * Dwarven boss chests are capped at Expert.
-* Training cost thresholds are reverted to skill 35/65/90 because the previous rebalance attempt run afoul of engine limitations.
-* All breakdown recipes are standardized to yield half of the item's main component.
+* Training cost thresholds are reverted to skill 35/65/90 because the previous rebalance attempt failed due to engine limitations.
+* Breakdown recipes are standardized to yield half of the item's main component.
 * Most armors and weapons can be broken down at a tanning rack or smelter.
 * Tempering Forsworn weapons requires leather strips.
 * Guards may comment on the armors and weapons added by Requiem.
-* All armors added by Requiem have proper warmth keywords.
-* Warmth rating of armors is forwarded from [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
+* Warmth rating of armors is adjusted based on [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
 * Wolf armor has a more reasonable price.
-* Generic arrow leveled lists do not spawn enchanted iron and steel arrows.
-* Critical damage of Dragonslayer's Blessing and Valdr's Dagger is doubled.
+* Generic arrow leveled lists do not spawn enchanted iron or steel arrows.
 * Powerful Charge and Devastating Charge do not cause critical damage.
+* Critical damage of Dragonslayer's Blessing and Valdr's Dagger is doubled.
 
 Bug Fixes
 ---------
@@ -31,7 +30,7 @@ Bug Fixes
 * Arrows damage stamina and magicka on hit.
 * Perfected Art has no effect when the player rather than the target is wearing heavy armor.
 * Extra shock damage to construct is resisted shock resistance.
-* The Challenger is a mage rather than a trickster.
+* The Challenger is a mage.
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
 * Stamina Damage enchantment is not considered a Destruction effect.
@@ -45,15 +44,15 @@ Bug Fixes
 Reqtificator
 ------------
 
-* Load order for GOG is automatically located. If both the Steam and GOG release are installed, GOG is prefered by default. This behavior can be overriden by the command line argument `--game=SkyrimSE` or `--game=SkyrimSEGog` respectively.
+* Load order for GOG is automatically located. If both the Steam and GOG release are installed, GOG is preferred by default. This behavior can be overridden by the command line argument `--game=SkyrimSE` or `--game=SkyrimSEGog` respectively.
 * Critical damage is set to the weapon's final base damage to work around rounding errors. This computation cannot be opted out. From now on, it is the responsibility of each perk that uses **Calculate My Critical Hit Chance** to additionally set the desired critical damage through **Calculate My Critical Hit Damage**.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
-* Existing tempering recipes from the Unofficial Patch are prefered over Requiem's where applicable.
+* Existing tempering recipes from the Unofficial Patch are preferred over Requiem's where applicable.
 * All shields have the armor type keyword assigned in the plugin.
-* Impact effects are determined by weapon skill type instead of keywords.
+* Player impact effects are determined by weapon skill type instead of keywords.
 * Enchanted steel weapons have a proper EditorID.
 * Heavy Falmer armor does not have a redundant "Heavy" in its EditorID.
 * Ingredients do not have the VendorItemAnimalPart keyword.
