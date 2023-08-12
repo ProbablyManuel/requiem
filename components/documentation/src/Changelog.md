@@ -29,6 +29,7 @@ Bug Fixes
 * Health bonus in werewolf form is restored.
 * Arrows damage stamina and magicka on hit.
 * Perfected Art has no effect when the player rather than the target is wearing heavy armor.
+* Rune traps are resisted by elemental resistances.
 * Extra shock damage to construct is resisted shock resistance.
 * The hood of randomly spawned skeleton mages does not stretch upon death.
 * The Challenger is a mage.
