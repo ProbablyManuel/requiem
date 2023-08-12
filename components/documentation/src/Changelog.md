@@ -62,7 +62,7 @@ Internal Quality Improvements (only relevant for modders)
 * Heavy Falmer armor does not have a redundant "Heavy" in its EditorID.
 * Ingredients do not have the VendorItemAnimalPart keyword.
 * Unused keyword REQ_Ench_RestoreHealthKeyword is deprecated.
-* Redundant leveled list REQ_LI_Vigilant_Books is deprecated.
+* Several unused leveled lists are deprecated.
 
 
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
