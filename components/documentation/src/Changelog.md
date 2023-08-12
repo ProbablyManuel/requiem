@@ -17,6 +17,7 @@ Tweaks
 * Tempering Forsworn weapons requires leather strips.
 * Guards may comment on the armors and weapons added by Requiem.
 * Warmth rating of armors is adjusted based on [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
+* Ancient Helmet of the Unburned is restored to its vanilla model. Instead a new Ancient Helmet of the Unfrozen is added to the world.
 * Wolf armor has a more reasonable price.
 * Generic arrow leveled lists do not spawn enchanted iron or steel arrows.
 * Powerful Charge and Devastating Charge do not cause critical damage.
