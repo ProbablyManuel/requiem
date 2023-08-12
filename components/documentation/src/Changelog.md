@@ -29,6 +29,7 @@ Bug Fixes
 * Non-power attacks do not break wooden bows.
 * Health bonus in werewolf form is restored.
 * Arrows damage stamina and magicka on hit.
+* Wards block stamina damage on hit and reduce the probability of being staggered.
 * Perfected Art has no effect when the player rather than the target is wearing heavy armor.
 * Rune traps are resisted by elemental resistances.
 * Extra shock damage to construct is resisted shock resistance.
