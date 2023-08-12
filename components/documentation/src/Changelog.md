@@ -30,6 +30,7 @@ Bug Fixes
 * Arrows damage stamina and magicka on hit.
 * Perfected Art has no effect when the player rather than the target is wearing heavy armor.
 * Extra shock damage to construct is resisted shock resistance.
+* The hood of randomly spawned skeleton mages does not stretch upon death.
 * The Challenger is a mage.
 * Aicantar has heavy armor casting perks.
 * A rarely used draugr boss template has proper perks.
