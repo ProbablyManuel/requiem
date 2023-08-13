@@ -15,6 +15,8 @@ Keyword Property BreakableBow Auto
 {bows with this keyword break on hit}
 Keyword Property Concentration Auto
 {keyword for spell with concentration effects}
+Keyword Property MagicWard Auto
+{keyword for ward spells}
 Keyword Property IgnoredAttack Auto
 {if the attacks "source" (weapon, spell etc) has this keyword, it will not trigger any impact effects}
 Float[] Property ArmorTresholds Auto
@@ -92,7 +94,8 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 		GotoState("")
 		return
 	EndIf
-	Float chance = Staggerchance(spelltype, abPowerAttack, abBashAttack, abHitBlocked)
+	Bool ward = Player.HasMagicEffectWithKeyword(MagicWard)
+	Float chance = Staggerchance(spelltype, abPowerAttack, abBashAttack, abHitBlocked || ward)
 	float random = Utility.RandomFloat()
 	If (OnHitDebug.GetValue() == 1)
 		Debug.MessageBox("Hit Event type: "+spelltype+" ("+aksource+")\nSource-Ench: "+(akSource as Enchantment) +"\nSourceweapon: "+(akSource as Weapon)+"\npower: "+abPowerAttack +"\nblock: " + abhitblocked+ "\nstagger: "+random+"/"+chance+"\nbash: "+abBashAttack+"\nProjectile: "+akProjectile+"\nBad Guy: " + akAggressor)
@@ -106,7 +109,7 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 	EndIf
 	If ( abHitBlocked )
 		StaminaGain[spelltype].cast(Player, Player)
-	Else
+	ElseIf (!ward)
 		StaminaDamage[spelltype].cast(Player, Player)
 	EndIf
 	

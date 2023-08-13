@@ -17,6 +17,7 @@ Tweaks
 * Tempering Forsworn weapons requires leather strips.
 * Guards may comment on the armors and weapons added by Requiem.
 * Warmth rating of armors is adjusted based on [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
+* Ancient Helmet of the Unburned is restored to its vanilla model. Instead a new Ancient Helmet of the Unfrozen is added to the world.
 * Wolf armor has a more reasonable price.
 * Generic arrow leveled lists do not spawn enchanted iron or steel arrows.
 * Powerful Charge and Devastating Charge do not cause critical damage.
@@ -28,9 +29,17 @@ Bug Fixes
 * Non-power attacks do not break wooden bows.
 * Health bonus in werewolf form is restored.
 * Arrows damage stamina and magicka on hit.
+* Wards block stamina damage on hit and reduce the probability of being staggered.
 * Perfected Art has no effect when the player rather than the target is wearing heavy armor.
+* Rune traps are resisted by elemental resistances.
 * Extra shock damage to construct is resisted shock resistance.
+* The hood of randomly spawned skeleton mages does not stretch upon death.
 * The Challenger is a mage.
+* Aicantar has heavy armor casting perks.
+* A rarely used draugr boss template has proper perks.
+* Lock bashing only works with melee weapon attacks.
+* Polymorph does not affect dead targets.
+* Polymorph affects unique or essentials actors.
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
 * Imperial Dagger, Mace, and Shortsword can be tempered.
 * Stamina Damage enchantment is not considered a Destruction effect.
@@ -57,7 +66,7 @@ Internal Quality Improvements (only relevant for modders)
 * Heavy Falmer armor does not have a redundant "Heavy" in its EditorID.
 * Ingredients do not have the VendorItemAnimalPart keyword.
 * Unused keyword REQ_Ench_RestoreHealthKeyword is deprecated.
-* Redundant leveled list REQ_LI_Vigilant_Books is deprecated.
+* Several unused leveled lists are deprecated.
 
 
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4
