@@ -11,15 +11,15 @@ Tweaks
     * Draugr boss chests are capped at Expert.
     * Dwarven chests are capped at Adept.
     * Dwarven boss chests are capped at Expert.
-* A new book and note are added that provide context for Galmar's dragonplate armor.
+* A new book and note are added to provide context for Galmar's dragonplate armor.
 * An official lore book is added to provide context for werewolves' weakness to poison.
 * Training cost thresholds are reverted to skill 35/65/90 because the previous rebalance attempt failed due to engine limitations.
 * Breakdown recipes are standardized to yield half of the item's main component.
 * Most armors and weapons can be broken down at a tanning rack or smelter.
 * Tempering Forsworn weapons requires leather strips.
 * Guards may comment on the armors and weapons added by Requiem.
-* Warmth rating of armors is adjusted based on [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758)
-* Ancient Helmet of the Unburned is restored to its vanilla model. Instead a new Ancient Helmet of the Unfrozen is added to the world.
+* Warmth rating of armors is adjusted based on [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758).
+* Ancient Helmet of the Unburned is restored to its vanilla model. Instead, a new Ancient Helmet of the Unfrozen is added to the world.
 * Wolf armor has a more reasonable price.
 * Generic arrow leveled lists do not spawn enchanted iron or steel arrows.
 * Powerful Charge and Devastating Charge do not cause critical damage.
@@ -32,14 +32,14 @@ Bug Fixes
 * Health bonus in werewolf form is restored.
 * Arrows damage stamina and magicka on hit.
 * Wards block stamina damage on hit and reduce the probability of being staggered.
-* Perfected Art has no effect when the player rather than the target is wearing heavy armor.
-* Rune traps are resisted by elemental resistances.
+* Rune traps are resisted by elemental resistance.
 * Extra shock damage to construct is resisted shock resistance.
 * The hood of randomly spawned skeleton mages does not stretch upon death.
 * The Challenger is a mage.
 * Aicantar has heavy armor casting perks.
 * A rarely used draugr boss template has proper perks.
 * Lock bashing only works with melee weapon attacks.
+* Perfected Art has no effect when the player rather than the target is wearing heavy armor.
 * Polymorph does not affect dead targets.
 * Polymorph affects unique or essentials actors.
 * Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
