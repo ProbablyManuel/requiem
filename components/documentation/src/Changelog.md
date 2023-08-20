@@ -11,6 +11,7 @@ Tweaks
     * Draugr boss chests are capped at Expert.
     * Dwarven chests are capped at Adept.
     * Dwarven boss chests are capped at Expert.
+* A new book and note are added that provide context for Galmar's dragonplate armor.
 * Training cost thresholds are reverted to skill 35/65/90 because the previous rebalance attempt failed due to engine limitations.
 * Breakdown recipes are standardized to yield half of the item's main component.
 * Most armors and weapons can be broken down at a tanning rack or smelter.
