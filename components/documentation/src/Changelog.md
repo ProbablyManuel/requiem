@@ -1,3 +1,12 @@
+Requiem 6.0.0 - "Unbroken Road"
+===================================================
+
+Bug Fixes
+---------
+
+* The Creation Club patch forwards all keywords from the main plugin.
+
+
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
 ===================================================
 
