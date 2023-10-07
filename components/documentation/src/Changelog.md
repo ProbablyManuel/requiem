@@ -1,10 +1,44 @@
 Requiem 6.0.0 - "Unbroken Road"
 ===================================================
 
+New Features
+------------
+
+* Most food provides one or more long lasting effect that is determined by the nutrition of the food. Different effects stack with each other. The magnitude is the same for each effect so that there are no useless items. The duration depends on the meal type (e.g. a stew lasts longer than a single vegetable) and is generally more long-lasting than before. The nutritions and their effects are as follows:
+    * Vegan: +40% disease resistance
+    * Meat: +15 carry weight
+    * Flour: Recovers 1 stamina per second
+    * Dairy: Recovers 1 magicka per second
+    * Sweets: Restores 50 magicka and stamina
+* Beast races each have a special affinity to food:
+    * Argonian: Eating fish ingredients has 5 times higher magnitude.
+    * Bosmer: Raw Meat has double magnitude.
+    * Khajiit: Elswyr Fondue has double magnitude.
+    * Orc: Can eat Wrothgar Tartare (formerly known as Bestial Stew) which increases health by 25.
+* Alcohol does not dispel food but causes you to tumble after your alcohol level exceeds your base health.
+
+Tweaks
+------
+
+* Innkeepers offer a greater variety of food so that each nutrition is available everywhere.
+* Innkeepers sell meat only as stews.
+* Buying prices at innkeepers are always set to the base price.
+* The Atronach Stone does not penalize food.
+* Buffs from special alcoholic beverages stack with potions.
+* Strength of some alcoholic beverages is adjusted.
+* Eating raw meat or mammoth cheese applies the disease Food Poisoning which drains magicka and stamina by 50.
+* The magicka and stamina penalty from running is doubled when not under the effect of any food.
+* Bottled Water is removed.
+* Alchemists do not buy food.
+* The first effect of fish ingredients is always beneficial to support the Argonian affinity.
+* Eating meals with multiple servings (bread and cheese wheels/slices) adds the leftover portions.
+* Food recipes and price are rebalanced to be more consistent.
+
 Bug Fixes
 ---------
 
 * The Creation Club patch forwards all keywords from the main plugin.
+* Salmon Roe is in line with other ingredients.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
