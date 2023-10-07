@@ -6,6 +6,13 @@ Bug Fixes
 
 * The Creation Club patch forwards all keywords from the main plugin.
 
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* Deprecated records are deleted.
+* Fortify Lockpicking magic effects are mapped to their vanilla formids.
+* Teleport script is modernized.
+
 
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
 ===================================================
