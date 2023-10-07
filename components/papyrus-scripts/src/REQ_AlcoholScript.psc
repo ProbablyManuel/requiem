@@ -1,35 +1,19 @@
-Scriptname REQ_AlcoholScript extends ActiveMagicEffect  
-{Keeps track of the current drunk level and applies the visual drunk effect to the player.}
+ScriptName REQ_AlcoholScript Extends ActiveMagicEffect  
 
-REQ_AlcoholEffectsPlayer Property controller Auto
-Faction Property Storage Auto
-Int mag
+REQ_AlcoholEffectsPlayer Property Controller Auto
+
+GlobalVariable Property AlcoholLevelStorage Auto
 
 Event OnEffectStart(Actor akTarget, Actor akCaster)
-	mag = self.GetMagnitude() as Int
-	If mag <= 0
-		mag = 1
+	If akTarget == Game.GetPlayer()
+		AlcoholLevelStorage.Mod(GetMagnitude())
+		Controller.UpdatePlayerAlcoholPenalties()
 	EndIf
-	akTarget.AddToFaction(Storage)
-	If akTarget.GetFactionRank(Storage) + mag < 127
-		akTarget.ModFactionRank(Storage, mag)
-	Else
-		akTarget.SetFactionRank(Storage, 127)
-	EndIf
-
-	If (akTarget == Game.GetPlayer())
-	    controller.UpdatePlayerAlcoholVisionPenalties()
-    EndIf
 EndEvent
 
-
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
-	akTarget.ModFactionRank(Storage, -mag)
-	If (akTarget.GetFactionRank(Storage) <= 0)
-		akTarget.RemoveFromFaction(Storage)
+	If akTarget == Game.GetPlayer()
+		AlcoholLevelStorage.Mod(-GetMagnitude())
+		Controller.UpdatePlayerAlcoholPenalties()
 	EndIf
-
-    If (akTarget == Game.GetPlayer())
-        controller.UpdatePlayerAlcoholVisionPenalties()
-    EndIf
 EndEvent

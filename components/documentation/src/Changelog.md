@@ -15,6 +15,7 @@ New Features
     * Bosmer: Raw Meat has double magnitude.
     * Khajiit: Elswyr Fondue has double magnitude.
     * Orc: Can eat Wrothgar Tartare (formerly known as Bestial Stew) which increases health by 25.
+* Alcohol does not dispel food but causes you to tumble after your alcohol level exceeds your base health.
 
 Tweaks
 ------
@@ -23,6 +24,8 @@ Tweaks
 * Innkeepers sell meat only as stews.
 * Buying prices at innkeepers are always set to the base price.
 * The Atronach Stone does not penalize food.
+* Buffs from special alcoholic beverages stack with potions.
+* Strength of some alcoholic beverages is adjusted.
 * Eating raw meat or mammoth cheese applies the disease Food Poisoning which drains magicka and stamina by 50.
 * The magicka and stamina penalty from running is doubled when not under the effect of any food.
 * Bottled Water is removed.
