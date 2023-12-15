@@ -37,6 +37,7 @@ Tweaks
 Bug Fixes
 ---------
 
+* Synchronize with Unofficial Skyrim Special Edition Patch v4.3.0a.
 * The Creation Club patch forwards all keywords from the main plugin.
 * Salmon Roe is in line with other ingredients.
 
