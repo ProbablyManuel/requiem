@@ -15,12 +15,6 @@ Spell Property HorseChargeCone Auto
 
 Spell Cone = None
 
-Int attack_right
-Int attack_left
-Int jump
-Int sprint
-Int[] move
-
 ; bull rush/trample related internal variables
 Actor sprinter
 Float horsemass = 0.0
@@ -28,26 +22,19 @@ Float horsemass = 0.0
 Function RegisterKeys(Bool reregister)
 	UnregisterForAllKeys()
 	UnregisterForAllMenus()
-	attack_right = GetMappedKey("Right Attack/Block")
-	attack_left = GetMappedKey("Left Attack/Block")
-	jump = GetMappedKey("Jump")
-	sprint = GetMappedKey("Sprint")
-	move[0] = GetMappedKey("Strafe Left")
-	move[1] = GetMappedKey("Strafe Right")
-	move[2] = GetMappedKey("Back")
-	move[3] = GetMappedKey("Forward")
 	If (reregister)
-		RegisterForKey(attack_right)
-		RegisterForKey(attack_left)
-		RegisterForKey(jump)
-		RegisterForKey(sprint)
+		RegisterForControl("Right Attack/Block")
+		RegisterForControl("Left Attack/Block")
+		RegisterForControl("Jump")
+		RegisterForControl("Sprint")
 		RegisterForMenu("Cursor Menu")
 	EndIf
 EndFunction
 
-Event OnKeyDown(Int KeyCode)
+Event OnControlDown(String Control)
+
 	If (!Utility.IsInMenuMode())
-		If (KeyCode == sprint) ;Dodge moves and charge attacks
+		If (Control == "sprint" ) ;Dodge moves and charge attacks
 			GotoState("Working")
 			If (Player.IsSprinting() || Player.IsOnMount())
 				UnregisterForUpdate()
@@ -62,21 +49,22 @@ Event OnKeyDown(Int KeyCode)
 			ElseIf (!Player.HasMagicEffect(DodgeBoost) && Player.GetAV("Stamina") >= 15.0)
 				Dodge.Cast(Player,Player)
 			EndIf
+			
 			GotoState("")
-		ElseIf (KeyCode == Jump)
+		ElseIf (Control == "Jump")
 			If (!Player.IsSwimming() && !Player.IsOnMount())
 				Player.AddSpell(Jumpcost, False)
 			EndIf
-		ElseIf (KeyCode == attack_right && player.GetEquippedItemType(1) == 7)
+		ElseIf Control == "Right Attack/Block" && player.GetEquippedItemType(1) == 7
 			Player.AddSpell(AttackCost, False)
-		ElseIf KeyCode == attack_left  && player.GetAnimationVariableBool("Isblocking") ; RRO-207
+		ElseIf Control == "Left Attack/Block" && player.GetAnimationVariableBool("Isblocking") ; RRO-207
 			Player.AddSpell(BlockCost, False)
 		EndIf
 	EndIf
 EndEvent
 
 State Working
-	Event OnKeyDown(Int KeyCode)
+	Event OnControlDown(String Control)
 	EndEvent
 EndState
 
@@ -104,6 +92,5 @@ Function shutdownScript(Int currentVersion, Int nevVersion)
 EndFunction
 
 Function initScript(Int currentVersion, Int nevVersion)
-	move = new Int[4]
 	RegisterKeys(True)
 EndFunction
