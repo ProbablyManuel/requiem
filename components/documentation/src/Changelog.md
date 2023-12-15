@@ -42,6 +42,11 @@ Bug Fixes
 * The Creation Club patch forwards all keywords from the main plugin.
 * Salmon Roe is in line with other ingredients.
 
+Reqtificator
+------------
+
+* The game release (Steam or GOG) is written to the log file.
+
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
