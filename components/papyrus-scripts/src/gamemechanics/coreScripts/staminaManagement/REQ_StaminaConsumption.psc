@@ -1,14 +1,10 @@
 Scriptname REQ_StaminaConsumption extends REQ_CoreScript
 {wait for keypress events signaling player actions like jumping or attacking and emulate stamina usage}
 
-import Input
-
 Spell Property AttackCost Auto
 Spell Property BlockCost Auto
 Spell Property JumpCost Auto
 Spell Property Dodge Auto
-MagicEffect Property StaminaDrain Auto
-MagicEffect Property DodgeBoost Auto
 
 Spell Property BullRushCone Auto
 Spell Property HorseChargeCone Auto
@@ -17,7 +13,6 @@ Spell Cone = None
 
 ; bull rush/trample related internal variables
 Actor sprinter
-Float horsemass = 0.0
 
 Function RegisterKeys(Bool reregister)
 	UnregisterForAllKeys()
@@ -46,7 +41,7 @@ Event OnControlDown(String Control)
 					sprinter = Player
 				EndIf
 				RegisterForSingleUpdate(2)
-			ElseIf (!Player.HasMagicEffect(DodgeBoost) && Player.GetAV("Stamina") >= 15.0)
+			ElseIf (!Player.HasMagicEffect(Dodge.GetNthEffectMagicEffect(0)) && Player.GetAV("Stamina") >= 15.0)
 				Dodge.Cast(Player,Player)
 			EndIf
 			
