@@ -134,11 +134,6 @@ Function EquipHorseArmor(Actor akPlayerHorseRef, Armor akArmorToEquip)
 	akPlayerHorseRef.EquipItem(akArmorToEquip, 1) ;force equip the armor
 	CCHorseArmorMessageArmorChanged.Show()
 
-	If(!akPlayerHorseRef.IsEssential()) ;Set horse to essential and flag them with a spell so we know to undo it on unequip
-		akPlayerHorseRef.GetActorBase().SetEssential(True)
-		akPlayerHorseRef.AddSpell(CCHorseArmorAbEssentialFlag)
-	EndIf
-
 EndFunction
 
 Bool Function SwapArmorForMiscObject(Actor PlayerHorse)

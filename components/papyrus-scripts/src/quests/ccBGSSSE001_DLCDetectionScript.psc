@@ -124,85 +124,6 @@ function RunSetupBaseGame()
 	RiftenFisheryLockList.AddForm(ccBGSSSE001_SwimsInDeepWaters)
 	RiftenFisheryLockList.AddForm(ccBGSSSE001_Viriya)
 
-	; Add fish to lists (for Fish Barrels, etc)
-	LItemFoodFishList.AddForm(ccBGSSSE001_LItemFoodFishBucketFish25, 1, 1)
-	LItemFoodFishList.AddForm(ccBGSSSE001_LItemFoodFishCarp25, 1, 1)
-
-	; Add crab meat to leveled lists
-	DeathItemMudCrab01.AddForm(ccBGSSSE001_FoodCrabMeat, 1, 1)
-	DeathItemMudCrab02.AddForm(ccBGSSSE001_FoodCrabMeat, 1, 1)
-	DeathItemMudCrab03.AddForm(ccBGSSSE001_FoodCrabMeat, 1, 2)
-
-	; Add cooked fish to leveled lists
-	LItemFoodInnCommon.AddForm(ccBGSSSE001_FoodBucketFishCooked, 1, 1)
-	LItemFoodInnCommon.AddForm(ccBGSSSE001_FoodTunaSalmonCooked, 1, 1)
-	LItemFoodInnCommon.AddForm(ccBGSSSE001_FoodCuckooCatfishCooked, 1, 1)
-	LItemFoodInnCommon10.AddForm(ccBGSSSE001_FoodBucketFishCooked, 1, 1)
-	LItemFoodInnCommon10.AddForm(ccBGSSSE001_FoodTunaSalmonCooked, 1, 1)
-	LItemFoodInnCommon10.AddForm(ccBGSSSE001_FoodCuckooCatfishCooked, 1, 1)
-
-	; Add Fishing Clothes to leveled lists
-	LItemClothesWork.AddForm(ccBGSSSE001_ClothesFishingBoots, 1, 1)
-	LItemClothesWork.AddForm(ccBGSSSE001_ClothesFishingClothes, 1, 1)
-	LItemClothesWork.AddForm(ccBGSSSE001_ClothesFishingHat, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesFishingBoots, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesFishingClothes, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesFishingHat, 1, 1)
-
-	; Add Crabber's Charm to leveled lists
-	LItemClothesAll.AddForm(ccBGSSSE001_MudcrabAmuletUnenchanted, 1, 1)
-
-	; Add Vagrant Robes to leveled lists
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesCollegeBootsVagrant, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesCollegeHoodVagrant, 1, 1)
-	LItemClothesAll.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrant, 1, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration01, 1, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration02, 10, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration03, 20, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration04, 30, 1)
-	LItemRobesConjuration.AddForm(ccBGSSSE001_ClothesCollegeRobesVagrantConjuration05, 40, 1)
-
-	; Add Fishing Rods to leveled lists
-	LootToolRandom05.AddForm(ccBGSSSE001_FishingRodImperialWeap, 1, 1)
-	LItemMiscVendorMiscItems75.AddForm(ccBGSSSE001_FishingRodImperialWeap, 1, 1)
-
-	; Add fishing maps to leveled lists and vendors
-	BYOHLItemKhajiitCaravans.AddForm(ccBGSSSE001_FishingMapsAll, 1, 3)
-
-	; Add books to leveled lists
-	LItemBook0All.AddForm(ccBGSSSE001_LineAndLure, 1, 1)
-	LItemBookClutter.AddForm(ccBGSSSE001_LineAndLure, 1, 1)
-
-	; Mace
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMace, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMace, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMace, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMace, 1, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 12, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 13, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 14, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 15, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 15, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 21, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 22, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 23, 1)
-	LItemDraugr02Weapon1H.AddForm(ccBGSSSE001_DraugrMaceHoned, 24, 1)
-
-	; Warhammer
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammer, 1, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammer, 1, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammer, 1, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammer, 1, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 12, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 13, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 14, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 15, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 15, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 21, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 22, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 23, 1)
-	LItemDraugr02Weapon2H.AddForm(ccBGSSSE001_DraugrWarhammerHoned, 24, 1)
-
 	; ===== Base Game (Hearthfire)
 	; Add our new upgrade Misc Items to the master list
 	int upgradeListLength = ccBGSSSE001_BYOHAllFishingSpecificUpgradeMiscItems.GetSize()
@@ -254,19 +175,6 @@ function AddHelpArticles()
 endFunction
 
 function RunDetectDLC()
-	; Survival Mode - Add raw fish to the Raw Meat list
-	FormList survivalRawMeatList = Game.GetFormFromFile(0x0008B0, "ccQDRSSE001-SurvivalMode.esl") as FormList
-
-	if survivalRawMeatList
-		int i = 0
-
-		while i < rawFish.length
-			if !survivalRawMeatList.HasForm(rawFish[i])
-				survivalRawMeatList.AddForm(rawFish[i])
-			endif
-			i += 1
-		endWhile
-	endif
 endFunction
 
 ObjectReference function GetCellarHoldingChestForLocation(Location akLocation)
