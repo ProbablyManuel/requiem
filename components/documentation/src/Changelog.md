@@ -20,6 +20,7 @@ New Features
 Tweaks
 ------
 
+* SKSE functions that manipulate input keys are avoided. Among other things, this fixes camera sensitivity goes down to almost zero after interacting with locks if the mod "Auto Input Switch" is installed.
 * Innkeepers offer a greater variety of food so that each nutrition is available everywhere.
 * Innkeepers sell meat only as stews.
 * Buying prices at innkeepers are always set to the base price.
