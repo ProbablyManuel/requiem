@@ -44,6 +44,7 @@ Bug Fixes
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
+* Creation Club scripts modified by Requiem use the official sources as baseline.
 * Deprecated records are deleted.
 * Fortify Lockpicking magic effects are mapped to their vanilla formids.
 * Teleport script is modernized.
