@@ -63,6 +63,7 @@ namespace Reqtificator
 
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
+            Log.Information($"game release: {_release}");
             Log.Information($"working directory: {Directory.GetCurrentDirectory()}");
             Log.Information($"patcher version: {_version}");
             Log.Information($"build git branch: {buildInfo.GetString("gitBranch")}");
