@@ -50,6 +50,7 @@ Mods included in Requiem
 ========================
 
 * [D13 Faster GET UP STAND UP animation vanilla friendly](https://www.nexusmods.com/skyrim/mods/17491) by [Darkangel13](https://www.nexusmods.com/users/771437)
+* [ArteFakes - Unique Artifacts Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/41254) by [Registrant](https://www.nexusmods.com/users/2422162)
 * [Carved Nordic Crossbow](https://www.nexusmods.com/skyrim/mods/48847) by [DJjojo](https://www.nexusmods.com/users/2977948)
 * [Chainmail Armor](https://www.nexusmods.com/skyrimspecialedition/mods/27340) by [NordWarUA](https://www.nexusmods.com/users/53732701)
 * [Crossbows Basic Collection](https://www.nexusmods.com/skyrim/mods/23876) by [DJjojo](https://www.nexusmods.com/users/2977948)
