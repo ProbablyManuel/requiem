@@ -16,6 +16,7 @@ New Features
     * Khajiit: Elswyr Fondue has double magnitude.
     * Orc: Can eat Wrothgar Tartare (formerly known as Bestial Stew) which increases health by 25.
 * Alcohol does not dispel food but causes you to tumble after your alcohol level exceeds your base health.
+* Most unique items have a unique model using assets from [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254)
 
 Tweaks
 ------
