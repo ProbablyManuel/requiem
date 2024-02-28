@@ -407,7 +407,6 @@ EndFunction
 
 Function ProcessPlayerChoice(Int choice, Int nLockpicks, Actor bestMinion, Bool notAllowed)
     If ((choice == 1 || notAllowed) && UI.IsMenuOpen("Lockpicking Menu"))
-        Int closeButton = Input.GetMappedKey("Tween Menu")
         UI.InvokeString("Lockpicking Menu", "_global.skse.CloseMenu", "Lockpicking Menu")
     EndIf
     If (choice == 1)

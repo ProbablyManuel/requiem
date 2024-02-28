@@ -21,9 +21,6 @@ Event OnEffectStart(actor Target, actor Caster)
 	
 	charging = charging * AttackerMass* Math.sqrt(AttackerMass) + 1
 	TargetMass += 0.5* (Target.HasPerk(Evasion) && !Target.WornHasKeyword(HeavyArmor)) as Float
-	If Caster == Game.GetPlayer()
-		Input.ReleaseKey(Input.GetMappedKey("Sprint"))
-	EndIf
 	If Impact != None
 		Impact.Cast(Caster, Target)
 	EndIf
