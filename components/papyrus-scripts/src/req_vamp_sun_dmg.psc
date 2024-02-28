@@ -64,5 +64,5 @@ Function updateWeatherParams()
 	target.DamageActorValue("HealRateMult", dmg * 10)
 	target.DamageActorValue("StaminaRateMult", dmg * 10)
 	target.DamageActorValue("MagickaRateMult", dmg * 10)
-	ConsoleUtil.PrintMessage("Sun Damage: " + sundmg + " Glare: " + sunstrength + " fog: " + fog + " mag: " + magnitude + " dmg: " + dmg)
+	Debug.Notification("Sun Damage: " + sundmg + " Glare: " + sunstrength + " fog: " + fog + " mag: " + magnitude + " dmg: " + dmg)
 EndFunction
