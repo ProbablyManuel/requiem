@@ -1,4 +1,4 @@
-scriptName req_vamp_sun_dmg extends ActiveMagicEffect
+scriptName REQ_SearingSun extends ActiveMagicEffect
 
 Actor target
 Weather currentw
