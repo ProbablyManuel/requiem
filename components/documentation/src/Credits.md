@@ -21,8 +21,9 @@ Retired Dungeon Masters
 Individual Contributions
 ========================
 
-* [Pamposzek](https://www.nexusmods.com/skyrimspecialedition/users/14780709) - Numerous text improvements to magic effects
-* [JazzKiwifruit](https://www.nexusmods.com/skyrimspecialedition/users/16518979) - Numerous fixes related to armors, weapons, and smithing recipes
+* [Pamposzek](https://www.nexusmods.com/users/14780709) - Numerous text improvements to magic effects
+* [JazzKiwifruit](https://www.nexusmods.com/users/16518979) - Numerous fixes related to armors, weapons, and smithing recipes
+* [IamPrettyUgly](https://www.nexusmods.com/users/191297574) - Initial draft of the continuous sun damage for vampires during the day
 
 We want to use this chance to thank all those who helped (and still help) us creating this mod:
 ===============================================================================================
