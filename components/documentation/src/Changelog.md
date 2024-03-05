@@ -53,6 +53,7 @@ Reqtificator
 ------------
 
 * The game release (Steam or GOG) is written to the log file.
+* A custom error message is display if parsing the settings file from ScrambledBugs failed. 
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------

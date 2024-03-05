@@ -94,22 +94,29 @@ namespace Reqtificator
                 return new MissingBugfixDependency(missingDependencies);
             }
 
-            var config = ReadJsonWithCommentsAsHocon("SKSE/Plugins/ScrambledBugs.json");
             try
             {
-                var disabledScrambledBugsPatches = new List<ScrambledBugsPatch>()
+                var config = ReadJsonWithCommentsAsHocon("SKSE/Plugins/ScrambledBugs.json");
+                try
                 {
-                    new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
-                    new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina")
-                }.FindAll(d => !config.GetBoolean(d.Key));
-                if (disabledScrambledBugsPatches.Count > 0)
+                    var disabledScrambledBugsPatches = new List<ScrambledBugsPatch>()
+                    {
+                        new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
+                        new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina")
+                    }.FindAll(d => !config.GetBoolean(d.Key));
+                    if (disabledScrambledBugsPatches.Count > 0)
+                    {
+                        return new DisabledScrambledBugsPatch(disabledScrambledBugsPatches);
+                    }
+                }
+                catch (HoconException)
                 {
-                    return new DisabledScrambledBugsPatch(disabledScrambledBugsPatches);
+                    return new UnexpectedScrambledBugsSettings();
                 }
             }
-            catch (HoconException)
+            catch (JsonException)
             {
-                return new UnexpectedScrambledBugsSettings();
+                return new InvalidScrambledBugsSettings();
             }
             return null;
         }
