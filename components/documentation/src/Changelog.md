@@ -26,6 +26,7 @@ Tweaks
 * Vampires lose their powers inside temples, and the holy ground damages attributes by 4 per second. The health damage stops when health drops below 30.
 * The visual distortion of vampires during the day is lessened when well-feed. 
 * No message is displayed when vampires enter sunlight.
+* The trajectory of ammo is less affected by gravity and scales with ammo weight.
 * SKSE functions that manipulate input keys are avoided. Among other things, this fixes camera sensitivity goes down to almost zero after interacting with locks if the mod "Auto Input Switch" is installed.
 * Innkeepers offer a greater variety of food so that each nutrition is available everywhere.
 * Innkeepers sell meat only as stews.
