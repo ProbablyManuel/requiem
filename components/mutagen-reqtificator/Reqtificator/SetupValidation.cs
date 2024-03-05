@@ -109,7 +109,7 @@ namespace Reqtificator
             }
             catch (HoconException)
             {
-                return new InvalidScrambledBugsSettings();
+                return new UnexpectedScrambledBugsSettings();
             }
             return null;
         }
