@@ -21,6 +21,11 @@ New Features
 Tweaks
 ------
 
+* Instead of instantly reducing the attributes of vampires by up to 400 during the day, the sun damages attributes by up to 12 per second. The condition is mitigated when the sun is low or covered by clouds. The health damage stops when health drops below 30 in accordance with the Sanguinare Vampiris lore, which has no record of direct deaths from sunlight.
+* Vampires are not penalized for entering Sovngarde or a Hall of the Dead.
+* Vampires lose their powers inside temples, and the holy ground damages attributes by 4 per second. The health damage stops when health drops below 30.
+* The visual distortion of vampires during the day is lessened when well-feed. 
+* No message is displayed when vampires enter sunlight.
 * SKSE functions that manipulate input keys are avoided. Among other things, this fixes camera sensitivity goes down to almost zero after interacting with locks if the mod "Auto Input Switch" is installed.
 * Innkeepers offer a greater variety of food so that each nutrition is available everywhere.
 * Innkeepers sell meat only as stews.
