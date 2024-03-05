@@ -26,6 +26,9 @@ namespace Reqtificator.StaticReferences
         public static readonly IFormLinkGetter<IKeywordGetter> ArmorShield =
             new FormLink<IKeywordGetter>(FormKey.Factory("0965B2:Skyrim.esm"));
 
+        public static readonly IFormLinkGetter<IKeywordGetter> NoArmorTypeKeyword =
+            new FormLink<IKeywordGetter>(FormKey.Factory("AE35A8:Requiem.esp"));
+
         public static readonly IFormLinkGetter<IKeywordGetter> NoArmorRatingRescaling =
             new FormLink<IKeywordGetter>(FormKey.Factory("AD3B2B:Requiem.esp"));
 
@@ -43,7 +46,6 @@ namespace Reqtificator.StaticReferences
 
         public static readonly IFormLinkGetter<IKeywordGetter> WeaponBowHeavy =
             new FormLink<IKeywordGetter>(FormKey.Factory("9F9914:Requiem.esp"));
-
 
         public static readonly IFormLinkGetter<IKeywordGetter> WeaponCrossbowHeavy =
             new FormLink<IKeywordGetter>(FormKey.Factory("899DBE:Requiem.esp"));
