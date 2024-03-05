@@ -12,10 +12,17 @@ namespace Reqtificator.Transformers.Armors
     {
         public override ArmorTransformationResult Process(ArmorTransformationResult input)
         {
-            return (input.Record().TemplateArmor.IsNull, input.Record().BodyTemplate?.ArmorType) switch
+            if ((input.Record().Keywords?.Contains(Keywords.AlreadyReqtified.FormKey) ?? false) ||
+                (input.Record().Keywords?.Contains(Keywords.NoArmorTypeKeyword.FormKey) ?? false) ||
+                !input.Record().TemplateArmor.IsNull
+            )
             {
-                (true, ArmorType.HeavyArmor) => AddKeywordIfMissing(input, Keywords.ArmorHeavy.FormKey),
-                (true, ArmorType.LightArmor) => AddKeywordIfMissing(input, Keywords.ArmorLight.FormKey),
+                return input;
+            }
+            return input.Record().BodyTemplate?.ArmorType switch
+            {
+                ArmorType.HeavyArmor => AddKeywordIfMissing(input, Keywords.ArmorHeavy.FormKey),
+                ArmorType.LightArmor => AddKeywordIfMissing(input, Keywords.ArmorLight.FormKey),
                 _ => input
             };
         }
