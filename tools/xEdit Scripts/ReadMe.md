@@ -53,7 +53,7 @@ Copy magic effects from the selected spells into a plugin.
 
 The script prompts the user to enter the name of the target plugin. If the plugin does not exist, it will be created.
 
-CopyReferencedBy.pas
+REQ_CopyReferencedBy.pas
 ------------------------
 
 Copy records that reference the selected records into a plugin.
@@ -74,6 +74,14 @@ Create tempering recipes for the selected armors and weapons.
 
 The recipes are created in the same file as the selected items. The created recipes do not have an EditorID or ingredients and conditions. Use [REQ_NameRecipe.pas](#REQ_NameRecipepas) and [REQ_RecipePatcher.pas](#REQ_RecipePatcherpas) to generate them.
 
+REQ_ExportArtifactDescriptions.pas
+----------------------------------
+
+Export enchantment descriptions of the selected armors and weapons to a csv file.
+
+The comma-separated values are EditorId,slot,name,description. The description field is a semicolon-separated list of all enchantment effects, including equip abilities and spells applied by scripts. If the enchantment contains the visible effects, the description on the item is used instead. "\<mag\>" and "\<dur\>" are substituted by the actual numbers while retaining the tag (e.g. "\<12\>").
+
+
 REQ_ExportForms.pas
 -------------------
 
@@ -86,7 +94,7 @@ REQ_ExportIngredients.pas
 
 Export the effects of the selected ingredient to a csv file.
 
-The comma-separated values are effect,mangitude,duration,ingredient and the lines are lexicographically sorted.
+The comma-separated values are effect,magnitude,duration,ingredient and the lines are lexicographically sorted.
 
 REQ_ExportSpellScaling.pas
 -------------------------
@@ -94,6 +102,11 @@ REQ_ExportSpellScaling.pas
 Export magnitude/duration scaling data of the selected spell effects to a csv file.
 
 The first line is a header with the column names and the remaining comma-separated values are unsorted. Spell effects are identified by EditorID and must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#magic-effect-mgef-records).
+
+REQ_FilterNoCharges.pas
+-----------------------
+
+Apply a filter to show all weapons with an enchantment but no charges.
 
 REQ_GravityPullPatcher.pas
 --------------------------
@@ -212,6 +225,11 @@ armor_patcher.py
 ----------------
 
 Generates `REQ_ArmorPatcher.txt` based on the data in [Armor.xlsx](patcher_data#armor).
+
+artifacts_description.py
+------------------------
+
+Generates `Artifacts.md` based on the data in [ArtifactDescriptions.txt](export/ArtifactDescriptions.txt).
 
 leveled_item_patcher.py
 -----------------------

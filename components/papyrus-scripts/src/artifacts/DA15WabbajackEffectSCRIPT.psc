@@ -1,16 +1,14 @@
 Scriptname DA15WabbajackEffectSCRIPT extends ActiveMagicEffect  
 
-; Xarrian's additions
-Potion property cheese02 auto
-Potion property cheese auto
-ActorBase property RealDOG auto
-ActorBase property RealGoat auto
-SPELL property Wabbajacka02 auto
-SPELL property Wabbajacka03 auto
-SPELL property Wabbajacka04 auto
-SPELL property Wabbajacka05 auto
-SPELL property Wabbajacka06 auto
-SPELL property wabbajacka07 auto
+ActorBase Property Dog Auto
+ActorBase Property Goat Auto
+
+Spell Property FearSpell Auto
+Spell Property IceForm Auto
+
+Potion Property CheeseSlice Auto
+Potion Property CheeseWheel Auto
+Potion Property CheeseWedge Auto
 
 
 ; the gold
@@ -101,146 +99,68 @@ EVENT onEffectStart(Actor akTarget, Actor akCaster)
 
 	IF(akCaster == game.getPlayer())
 	
-		randEffect = utility.randomInt(1, 100)
+		randEffect = utility.randomInt(0, 99)
 		explosionMarker.moveTo(akTarget)
 		
-		IF(akTarget.isEssential())
+		IF(akTarget.hasKeyword(keyWabbajackExcluded))
 			randEffect = 1
-		ELSEIF(akTarget.hasKeyword(keyWabbajackExcluded))
-			randEffect = 1
-		; Xarrian removed
-		; ELSEIF(akTarget.hasKeyword(keyGiant))
-		;	randEffect = 1
 		ELSEIF(akTarget.hasKeyword(keyDragon))
 			randEffect = 1
 		ELSEIF(akTarget.isCommandedActor())
 			randEffect = 1
 		ELSEIF(akTarget.getBaseObject() == madwoman)
-			; Xarrian left this to 60 but the madwoman must be polymorphed into a rabbit
-			; randEffect = 60
-			randEffect = 70
-		
-		; Xarrian adds the following explicit settings to random effects on guards ?	
-		elseIf akTarget.isGuard() && randEffect <= 33
-			randEffect = 1
-		elseIf akTarget.isGuard() && randEffect > 33 && randEffect < 50
-			randEffect = 40
-		elseIf akTarget.isGuard() && randEffect > 49 && randEffect < 66
-			randEffect = 99
-		elseIf akTarget.isGuard() && randEffect > 65 && randEffect < 90
-			randEffect = 35
-		elseIf akTarget.isGuard() && randEffect > 89
-			randEffect = 98
-		; end Xarrian addition
-			
+			randEffect = 60
 		ENDIF
 
-		; Xarrian replaces the following effects with his own randomness
 		; /////////////
 		; //CHOOSE WHAT WE'RE RANDOMLY DOING
-		; IF(randEffect >= 1 && randEffect < 51)
-		; 	elementalEffect(akTarget)
-		; 
-		; ELSEIF(randEffect >= 51 && randEffect < 58)
-		; 	randomCreatureChicken(akTarget)			
-		; 	
-		; ELSEIF(randEffect >= 58 && randEffect < 65)
-		; 	randomCreatureRabbit(akTarget)	
-		; 	
-		; ELSEIF(randEffect >= 65 && randEffect < 72)
-		; 	randomCreatureMudcrab(akTarget)	
-		; 
-		; ELSEIF(randEffect >= 72 && randEffect < 77)
-		; 	castInvis(akTarget)
-		; 
-		; ELSEIF(randEffect >= 77 && randEffect < 82)
-		;	hsmTransfer(akTarget)
-		;	
-		; ELSEIF(randEffect >= 82 && randEffect < 89)
-		;	randomCreatureDremora(akTarget)
-		;
-		;ELSEIF(randEffect >= 89 && randEffect < 94)
-		;	healSpell.cast(akTarget, akTarget)
-		;	
-		;ELSEIF(randEffect >= 94 && randEffect < 96)
-		;	spawnGold(akTarget)
-		;		
-		;ELSEIF(randEffect >= 96 && randEffect < 98)
-		;	spawnSweetRoll(akTarget)
-		;	
-		;ELSEIF(randEffect >= 98)
-		;	akTarget.kill(game.getPlayer())
-		;
-		;ENDIF
-		
-		; Xarrian additions
-		if randEffect >= 1 && randEffect < 30
+		IF(randEffect < 30)
 			elementalEffect(akTarget)
-		elseIf randEffect >= 30 && randEffect < 33
-			akTarget.placeAtMe(frostSpell)
-			wabbajacka07.cast(akTarget, akTarget)
-		elseIf randEffect >= 33 && randEffect < 34
-			akTarget.placeAtMe(frostSpell)
-			wabbajacka07.cast(akTarget, akTarget)
-		elseIf randEffect >= 34 && randEffect < 35 && weather.GetSkyMode() != 0 && weather.GetSkyMode() != 1 && weather.GetSkyMode() != 2
-			Wabbajacka06.cast(akTarget, akTarget)
-			akTarget.UnEquipAll()
-			explosionMarker.setPosition(akTarget.x, akTarget.y, (akTarget.z + 800))
-			explosionMarker.placeAtMe(cheese)
-			explosionMarker.placeAtMe(cheese02)
-			explosionMarker.placeAtMe(sweetRoll)
-			explosionMarker.placeAtMe(forceExplosion)
-		elseIf randEffect >= 34 && randEffect < 35 && weather.GetSkyMode() != 3
-			Wabbajacka06.cast(akTarget, akTarget)
-			akTarget.UnEquipAll()
-		elseIf randEffect >= 35 && randEffect < 37
-			akTarget.placeAtMe(fireSpell)
-			akTarget.placeAtMe(RealDOG)
-			akTarget.placeAtMe(RealDOG)
-			akTarget.placeAtMe(RealDOG)
-		elseIf randEffect >= 37 && randEffect < 38
-			akTarget.placeAtMe(fireSpell)
-			akTarget.placeAtMe(RealGoat)
-			akTarget.placeAtMe(RealGoat)
-			akTarget.placeAtMe(RealGoat)
-			akTarget.placeAtMe(RealGoat)
-			akTarget.placeAtMe(RealGoat)
-		elseIf randEffect >= 38 && randEffect < 43
-			Wabbajacka06.cast(akTarget, akTarget)
-			akTarget.UnEquipAll()
-		elseIf randEffect >= 43 && randEffect < 48
-			Wabbajacka05.cast(akTarget, akTarget)
-		elseIf randEffect >= 48 && randEffect < 53
-			akTarget.placeAtMe(fireSpell)
-			Wabbajacka04.cast(akTarget, akTarget)
-		elseIf randEffect >= 53 && randEffect < 58
-			Wabbajacka02.cast(akTarget, akTarget)
-		elseIf randEffect >= 58 && randEffect < 63
-			Wabbajacka03.cast(akTarget, akTarget)
-		elseIf randEffect >= 63 && randEffect < 68
-			randomCreatureChicken(akTarget)
-		elseIf randEffect >= 68 && randEffect < 73
-			randomCreatureRabbit(akTarget)
-		elseIf randEffect >= 73 && randEffect < 78
-			randomCreatureMudcrab(akTarget)
-		elseIf randEffect >= 78 && randEffect < 83
-			castInvis(akTarget)
-		elseIf randEffect >= 83 && randEffect < 88
-			hsmTransfer(akTarget)
-		elseIf randEffect >= 88 && randEffect < 93
-			randomCreatureDremora(akTarget)
-		elseIf randEffect >= 93 && randEffect < 98
-			healSpell.cast(akTarget, akTarget)
-		elseIf randEffect >= 98 && randEffect < 99
-			spawnGold(akTarget)
-		elseIf randEffect >= 99 && randEffect < 100
-			spawnSweetRoll(akTarget)
-		elseIf randEffect >= 100
-			akTarget.kill(game.getPlayer())
-		endIf
-		; Xarrian additions end
 
-		
+		ELSEIF(randEffect < 35)
+			hsmTransfer(akTarget)
+
+		ELSEIF(randEffect < 40)
+			akTarget.placeAtMe(fireSpell)
+			akTarget.placeAtMe(Dog, 3)
+
+		ELSEIF(randEffect < 45)
+			akTarget.placeAtMe(fireSpell)
+			akTarget.placeAtMe(Goat, 5)
+		ELSEIF(randEffect < 50)
+			randomCreatureChicken(akTarget)
+
+		ELSEIF(randEffect < 55)
+			randomCreatureDremora(akTarget)
+
+		ELSEIF(randEffect < 60)
+			randomCreatureMudcrab(akTarget)
+
+		ELSEIF(randEffect < 65)
+			randomCreatureRabbit(akTarget)
+
+		ELSEIF(randEffect < 70)
+			akTarget.UnequipAll()
+			FearSpell.Cast(akTarget, akTarget)
+			
+		ELSEIF(randEffect < 75)
+			invis.cast(akTarget, akTarget)
+
+		ELSEIF(randEffect < 80)
+			healSpell.cast(akTarget, akTarget)
+
+		ELSEIF(randEffect < 85)
+			IceForm.Cast(akCaster, akTarget)
+
+		ELSEIF(randEffect < 90)
+			spawnGold(akTarget)
+
+		ELSEIF(randEffect < 95)
+			spawnSweetRoll(akTarget)
+
+		ELSE
+			spawnCheese(akTarget)
+		ENDIF
 		
 		
 	ENDIF
@@ -335,21 +255,15 @@ FUNCTION elementalEffect(ACTOR targ)
 		
 	IF(rand == 1)
 		targ.placeAtMe(fireSpell)
-		; Xarrian changes damage health to 120
-		;targ.damageAV("Health", 60)
-		targ.damageAV("Health", 120)
+		targ.damageAV("Health", 60)
 	
 	ELSEIF(rand == 2)
 		targ.placeAtMe(frostSpell)
-		; Xarrian changes damage health to 120
-		;targ.damageAV("Health", 60)
-		targ.damageAV("Health", 120)
+		targ.damageAV("Health", 60)
 	
 	ELSEIF(rand == 3)
 		targ.placeAtMe(stormSpell)
-		; Xarrian changes damage health to 120
-		;targ.damageAV("Health", 60)
-		targ.damageAV("Health", 120)
+		targ.damageAV("Health", 60)
 	
 	ENDIF
 
@@ -390,34 +304,36 @@ FUNCTION hsmTransfer(ACTOR targ)
 
 ENDFUNCTION
 
-FUNCTION spawnGold(ACTOR targ)
-	; Xarrian removed
-	; targ.placeAtMe(visualExplosion)
-	
-	createAshPile()	
+FUNCTION spawnCheese(ACTOR targ)
+	targ.placeAtMe(visualExplosion)
 	explosionMarker.setPosition(targ.x, targ.y, (targ.z + 100))
-
-	utility.wait(0.1)
-	
-	; Xarrian set gold to 150
-	; explosionMarker.placeAtMe(gold, 50)
-	explosionMarker.placeAtMe(gold, 150)
-	
+	explosionMarker.placeAtMe(CheeseWheel, Utility.RandomInt(1, 2))
+	explosionMarker.placeAtMe(CheeseWedge, Utility.RandomInt(2, 4))
+	explosionMarker.placeAtMe(CheeseSlice, Utility.RandomInt(4, 8))
 	explosionMarker.placeAtMe(forceExplosion)
+ENDFUNCTION
 
+FUNCTION spawnGold(ACTOR targ)
+	If targ.GetActorValue("Health") > 300
+		Game.GetPlayer().PushActorAway(targ, 20)
+	Else
+		createAshPile()
+		Utility.Wait(0.1)
+		explosionMarker.setPosition(targ.x, targ.y, (targ.z + 100))
+		explosionMarker.placeAtMe(gold, 150)
+		explosionMarker.placeAtMe(forceExplosion)
+	EndIf
 ENDFUNCTION
 
 FUNCTION spawnSweetRoll(ACTOR targ)
-	; Xarrian removed
-	; targ.placeAtMe(visualExplosion)
-	
-	utility.wait(0.7)
-	explosionMarker.setPosition(targ.x, targ.y, (targ.z + 10))
-	utility.wait(0.1)
-	createAshPile()
-	explosionMarker.placeAtMe(sweetRoll)
-
-
+	If targ.GetActorValue("Health") > 300
+		Game.GetPlayer().PushActorAway(targ, 20)
+	Else
+		createAshPile()
+		Utility.Wait(0.1)
+		explosionMarker.setPosition(targ.x, targ.y, (targ.z + 10))
+		explosionMarker.placeAtMe(sweetRoll)
+	EndIf
 ENDFUNCTION
 
 FUNCTION createAshPile()
