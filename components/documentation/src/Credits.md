@@ -66,16 +66,19 @@ Mods included in Requiem
 * [Shields Block Poisons](https://www.nexusmods.com/skyrim/mods/79280) by [Paulicus](https://www.nexusmods.com/users/23313089)
 * [Smaller Ice Spike and Ice Spear](https://www.nexusmods.com/skyrim/mods/31899) by [odin_ml](https://www.nexusmods.com/users/50001)
 * [Smaller Kingthings Petrock fonts](https://www.nexusmods.com/skyrim/mods/20773) by[Eckhart](https://www.nexusmods.com/users/2412528) with font improvements (umlauts, parantheses and accents) by myzticrice
+* [Sun Rune](https://www.nexusmods.com/skyrim/mods/67891) by [Elianora](https://next.nexusmods.com/profile/Elianora), this mod uses assets from [Arcane Runes II](https://www.obsidiandawn.com/arcane-runes-ii-photoshop-gimp-brushes)
 * [True Yield](https://www.nexusmods.com/skyrim/mods/7252) by [sushisquid](https://www.nexusmods.com/users/851501)
 * [Varied Guard Armor](https://www.nexusmods.com/skyrim/mods/96744) by [QwibQwibMods](https://www.nexusmods.com/users/57153782)
+* [Vastly More Unique Visage of Mzund](https://www.nexusmods.com/skyrimspecialedition/mods/3125) by [Trainwiz](https://next.nexusmods.com/profile/trainwiz)
 
 Assets taken from other mods
 ============================
 
+* Battlestaves from [Weapons of the Third Era](https://www.nexusmods.com/skyrim/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
 * Dawnguard Crossbow from [Faction Crossbows](https://www.nexusmods.com/skyrim/mods/58704/) by [nsk13](https://www.nexusmods.com/users/3373573)
 * Heroic Imperial Armor from [Lore Friendly Armor Pack](https://www.nexusmods.com/skyrim/mods/6684) by [rahman530](https://www.nexusmods.com/users/3052977)
 * Open Faced Guard Helmets from [Teh-Husky Mod Compilation](https://www.nexusmods.com/skyrim/mods/32226) by [THusky](https://www.nexusmods.com/users/5226693)
-* Battlestaves from [Weapons of the Third Era](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
+* Rikvard from [Royal Armory - New Artifacts](https://www.nexusmods.com/skyrimspecialedition/mods/6994) by [PrivateEye](https://www.nexusmods.com/users/887024)
 
 Non-Skyrim assets
 =================
@@ -87,7 +90,7 @@ Assets used in former versions of Requiem
 
 * [3rd Person Dual Wield Animation Fix](https://www.nexusmods.com/skyrim/mods/248) by [imeltfaces](https://www.nexusmods.com/users/1073116)
 * [Aetherium Armor and Weapons Compilation](https://www.nexusmods.com/skyrim/mods/23530) by [lautasantenni](https://www.nexusmods.com/users/983976)
-* [Brawl Bugs Patch - Plugins - Modder Resource](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/24020) by [jonwd7](https://www.nexusmods.com/users/2492841)
+* [Brawl Bugs Patch - Plugins - Modder Resource](https://www.nexusmods.com/skyrim/mods/24020) by [jonwd7](https://www.nexusmods.com/users/2492841)
 * [CAT Hohenzollern](http://www.peter-wiegel.de/CATHohenzollern.html) by Peter Wiegel
 * [Dragon Knight Armor](https://www.nexusmods.com/skyrim/mods/28287) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
 * [Golden Elven Armour and Weapons](https://www.nexusmods.com/skyrim/mods/31638) by [starz82](https://www.nexusmods.com/users/601350)
@@ -108,7 +111,7 @@ Assets used in former versions of Requiem
 * [Vagabond Armor](https://www.nexusmods.com/skyrim/mods/13230) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
 * [Vanguard Armor](https://www.nexusmods.com/skyrim/mods/16238/) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
 * [Warchief Armor](https://www.nexusmods.com/skyrim/mods/13366) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
-* [Weapons of the Third Era](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
+* [Weapons of the Third Era](https://www.nexusmods.com/skyrim/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
 
 Donators
 ========

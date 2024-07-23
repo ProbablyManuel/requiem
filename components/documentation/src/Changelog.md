@@ -16,11 +16,89 @@ New Features
     * Khajiit: Elswyr Fondue has double magnitude.
     * Orc: Can eat Wrothgar Tartare (formerly known as Bestial Stew) which increases health by 25.
 * Alcohol does not dispel food but causes you to tumble after your alcohol level exceeds your base health.
-* Most unique items have a unique model using assets from [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254)
+* Most unique items have a unique model using assets from [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254) and [Vastly More Unique Visage of Mzund](https://www.nexusmods.com/skyrimspecialedition/mods/3125).
 
 Tweaks
 ------
 
+* Artifacts are completely overhauled. A full list of changes to armors and weapons is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Artifacts.md).
+* Sunhallowed Elven Arrow explodes for 60 sun damage (was 20). Undead take triple damage (was double). Base damage is decreased to match an Elven Arrow.
+* Bloodcursed Elven Arrow has the same armor penetration as an Elven arrow.
+* The White Phial refills every 15 minutes (real time) or when going to sleep. It has one of the following effects:
+    * Increases magic resistance by 25% for 300 seconds.
+    * Increases stamina by 100 and stamina regeneration by 100% for 300 seconds.
+    * Improves sneaking by 25% and grants invisibility for 300 seconds.
+    * Increases magicka by 100 and magicka regeneration by 100% for 300 seconds.
+    * Increases one-handed, two-handed, and marksman damage by 25% for 300 seconds.
+    * Completely restores health.
+* Oghma Infinium does not increase attributes.
+* The three rewards from each Black Book are adjusted:
+    * Epistolary Acumen
+        * Killing an enemy with Fire Breath spawns an allied fire wyrm from their corpse for 60 seconds.
+        * Unrelenting Force does more damage and using all three words may disintegrate enemies.
+        * Frost Breath encases foes in ice for 15 seconds.
+    * The Winds of Change
+        * Followers deal 20% more damage and their spells are 20% stronger and last 20% longer.
+        * Benefits of food are 50% stronger.
+        * Attacks deal 10% more damage to people of the opposite sex. Spells are 10% stronger and last 10% longer when cast on people of the opposite sex.
+    * The Hidden Twilight
+        * Restores 2 health per second.
+        * Restores 2 magicka per second.
+        * Restores 2 stamina per second.
+    * Filament and Filigree
+        * Increases health by 30.
+        * Increases magicka by 30.
+        * Increases stamina by 30.
+    * The Sallow Regent
+        * Increases damage with one-handed, two-handed, and ranged weapons by 10%. Increases the amount of blockable damage by 10%. Increases armor rating by 50.
+        * Increases lockpick durability by 20%. Pickpocketing is 10% easier. Improves sneaking by 10%. Increases sneak attack damage by 50% against all targets.
+        * Spells are 10% stronger and last 10% longer.
+    * Untold Legends
+        * Summons a drum-shaped daedra to play for you, increasing speech skill by 20 for 15 seconds.
+        * Summons a Dremora butler for 15 seconds to carry excess items.
+        * Summons a Dremora merchant for 15 seconds.
+* The fonts in Apocrypha increase magicka or stamina regeneration by 10%.
+* The runes created by the Ancient Dawnguard Warhammer have custom visual effects using assets from [Sun Rune](https://www.nexusmods.com/skyrim/mods/67891).
+* A unique war axe using assets from [Royal Armory - New Artifacts](https://www.nexusmods.com/skyrimspecialedition/mods/6994) can be found at the Throat of the World.
+* Harbinger armor set can be found in Kodlak's end table during Glory of the Dead.
+* Dragon priest masks armor type can be changed on the workbench in Bromjunaar Sanctuary. Their armor rating and weight matches a dragonscale or dragonplate helmet respectively. Tempering requires Legendary Blacksmithing.
+* Kyne's Token grants the Blessing of Kyne to Nords who completed Kyne's Sacred Trials. They must not kill Paarthurnax, equip a dragon priest mask, have the blessing of another divine, join the Dark Brotherhood or Thieves Guild, or be a vampire or werewolf.
+    * Animals become friendly.
+    * Completing Climb the Steps increases stamina by 50 (Rank II).
+    * Completing The Blessings of Nature by returning a sapling increases health by 50 (Rank II).
+    * Completing Glory of the Dead up to Kodlak's funeral increases one-handed, two-handed, and ranged damage by 20%.
+    * Joining the Stormcloaks and earning the rank Ice-Veins/Bone-Breaker/Snow-Hammer/Stormblade increases one-handed, two-handed and ranged damage by 5/10/15/20%.
+    * Completing A Blade in the Dark reduces shout cooldown by 10%.
+    * Completing Throat of the World reduces shout cooldown by 10%.
+    * Completing Alduin's Bane reduces shout cooldown by 10%.
+    * Completing Sovngarde reduces shout cooldown by 10%.
+    * Completing Dragonslayer increases health, magicka and stamina by 100.
+* Kyne's Peace requires the blessing of Kyne.
+* Agent of Mara increases the effectiveness of healing spells by 10%.
+* Sailor's Repose increases magic resistance by 5%.
+* Blessing of the Blades (fka Dragonslayer's Blessing) increases physical damage dealt to dragons by 15%.
+* Neloth's Experimental Spell increases health by 50. After swimming or being in the rain it decreases health by 50 instead.
+* Prowler's Profit increases movement speed by 10%. The previous effect, more gems in loot, has been merged into the Treasure Hunter perk.
+* Shrine blessings of Azura, Boethiah, Mephala, and Nocturnal only apply cleansing.
+* Sinderion's Serendipity increases the effectivess of potions and poisons by 50% if they contain nirnroot as an ingredient.
+* The Gift of Gab is removed.
+* Voice of the Sky reduces shout cooldown by 10% for 1 day.
+* The rewards for promotions in the Imperial Legion and Stormcloaks follow a logical progression.
+* Sahloknir is always a fire dragon.
+* Spriggan Earth Mother is a unique boss encounter in Clearspring Cave.
+* Velehk Sain's Locker contains a random set of enchanted glass armor.
+* Gunmar sells enchanted Dawnguard armor.
+* Important Dawnguard members wear enchanted Dawnguard armor.
+* Harkon wears a Necklace of Nullification and a Ring of Peerless Destruction.
+* Ancano wears a Necklace of Warmth and a Ring of Peerless Alteration.
+* Galmar wears a Necklace of Magic Supression and a Ring of Eminent Sure Grip.
+* Legate Rikke wears a Ring of Necklace of Eminent Blocking and a Ring of Eminent Wielding.
+* Ulfric wears a Necklace of Grounding and a Ring of the Peerless Knight.
+* General Tullius wears a Necklace of Peerless Health and a Ring of Peerless Stamina.
+* Vampires can touch Dawnbreaker with impunity to prevent silly pickpocket interactions. However, wielding Dawnbreaker as a vampire remains a suicidal endeavour due to the nature of the enchantment.
+* Paralysis enchantment has a 5% chance to apply (was 3%). It can affect targets regardless of their magic resistance but is blocked by Fortify Health (Rank II) enchantments.
+* Amren carries an iron sword so that he equips his family sword once returned by the player.
+* Feeding on corpses has a cooldown of 8 hours and the body must have been dead for less than an hour.
 * Instead of instantly reducing the attributes of vampires by up to 400 during the day, the sun damages attributes by up to 12 per second. The condition is mitigated when the sun is low or covered by clouds. The health damage stops when health drops below 30 in accordance with the Sanguinare Vampiris lore, which has no record of direct deaths from sunlight.
 * Vampires are not penalized for entering Sovngarde or a Hall of the Dead.
 * Vampires lose their powers inside temples, and the holy ground damages attributes by 4 per second. The health damage stops when health drops below 30.
@@ -51,6 +129,10 @@ Bug Fixes
 * Synchronize with Unofficial Skyrim Special Edition Patch v4.3.0a.
 * The Creation Club patch forwards all keywords from the main plugin.
 * Salmon Roe is in line with other ingredients.
+* Black Book dungeons never respawn.
+* Fortify Shouts magic effects display the magnitude of the effect.
+* Muffle enchantments reduce movement noise by a variable percentage instead of always reducing it by 100%.
+* Killing reanimated NPCs does not empower the Ebony Blade.
 
 Reqtificator
 ------------
@@ -67,6 +149,7 @@ Internal Quality Improvements (only relevant for modders)
 * Fortify Lockpicking magic effects are mapped to their vanilla formids.
 * Teleport script is modernized.
 * Unused properties are removed from the stamina consumption script.
+* The \<Magic\>PowerMod actor values increase both spell magnitude and duration and they respect the REQ_NoMagnitudeScaling/REQ_NoDurationScaling keywords.
 
 
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
