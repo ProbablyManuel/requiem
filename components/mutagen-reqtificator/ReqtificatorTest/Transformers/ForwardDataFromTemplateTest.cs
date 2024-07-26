@@ -16,7 +16,7 @@ namespace ReqtificatorTest.Transformers
     {
         public static readonly ModKey Skyrim = new("Skyrim", ModType.Master);
         public static readonly ModKey VisualMod = new("Amazing Actors", ModType.Plugin);
-        public static readonly ModKey UnrelatedMod = new("Serious Loot", ModType.LightMaster);
+        public static readonly ModKey UnrelatedMod = new("Serious Loot", ModType.Light);
         public static readonly ModKey DataMod = new("Skilled Actors", ModType.Plugin);
 
         private class Fixture

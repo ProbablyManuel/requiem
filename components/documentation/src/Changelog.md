@@ -141,6 +141,7 @@ Reqtificator
 * Armors with the keyword RFTI_Exclusions_NoArmorTypeKeyword do not receive an armor type keyword.
 * The game release (Steam or GOG) is written to the log file.
 * A custom error message is display if parsing the settings file from ScrambledBugs failed.
+* The generated plugin uses header version 1.71.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
