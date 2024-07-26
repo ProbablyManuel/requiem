@@ -142,6 +142,7 @@ Reqtificator
 * The game release (Steam or GOG) is written to the log file.
 * A custom error message is display if parsing the settings file from ScrambledBugs failed.
 * The generated plugin uses header version 1.71.
+* Inner exceptions are written to the log file.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------

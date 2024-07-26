@@ -42,11 +42,7 @@ namespace Reqtificator
             }
             catch (Exception ex)
             {
-                Log.Error(ex.Message);
-                if (ex.StackTrace != null)
-                {
-                    Log.Error(ex.StackTrace);
-                }
+                Log.Error(ex.ToString());
                 HandlePatchingResult(window, ReqtificatorState.Stopped(ReqtificatorFailure.CausedBy(ex)));
                 window?.Close();
                 throw;
