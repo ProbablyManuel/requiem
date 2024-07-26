@@ -24,7 +24,7 @@ namespace ReqtificatorTest.Transformers.LeveledLists
 
         public static readonly ModKey Requiem = new("Requiem", ModType.Plugin);
         public static readonly ModKey Patch1 = new("Epic Loot", ModType.Plugin);
-        public static readonly ModKey Patch2 = new("Serious Loot", ModType.LightMaster);
+        public static readonly ModKey Patch2 = new("Serious Loot", ModType.Light);
 
         public static readonly SkyrimMod ModRequiem = new(Requiem, SkyrimRelease.SkyrimSE);
         public static readonly SkyrimMod ModPatch1 = new(Patch1, SkyrimRelease.SkyrimSE);
