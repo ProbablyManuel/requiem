@@ -99,6 +99,7 @@ Tweaks
 * Paralysis enchantment has a 5% chance to apply (was 3%). It can affect targets regardless of their magic resistance but is blocked by Fortify Health (Rank II) enchantments.
 * Amren carries an iron sword so that he equips his family sword once returned by the player.
 * Feeding on corpses has a cooldown of 8 hours and the body must have been dead for less than an hour.
+* Vigilant armor looks like robes with a hood and steel boots and gauntlets if not using the Creation Club patch.
 * Instead of instantly reducing the attributes of vampires by up to 400 during the day, the sun damages attributes by up to 12 per second. The condition is mitigated when the sun is low or covered by clouds. The health damage stops when health drops below 30 in accordance with the Sanguinare Vampiris lore, which has no record of direct deaths from sunlight.
 * Vampires are not penalized for entering Sovngarde or a Hall of the Dead.
 * Vampires lose their powers inside temples, and the holy ground damages attributes by 4 per second. The health damage stops when health drops below 30.
