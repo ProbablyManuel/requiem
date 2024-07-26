@@ -151,6 +151,7 @@ Internal Quality Improvements (only relevant for modders)
 * Teleport script is modernized.
 * Unused properties are removed from the stamina consumption script.
 * The \<Magic\>PowerMod actor values increase both spell magnitude and duration and they respect the REQ_NoMagnitudeScaling/REQ_NoDurationScaling keywords.
+* Unused keyword REQ_RaceHuman is deprecated. As a result, Requiem no longer edits child races.
 
 
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
