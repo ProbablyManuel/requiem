@@ -194,7 +194,7 @@ namespace Reqtificator
         {
             try
             {
-                generatedPatch.WriteToBinaryParallel(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName), new BinaryWriteParameters
+                generatedPatch.WriteToBinary(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName), new BinaryWriteParameters
                 {
                     MastersListOrdering = new MastersListOrderingByLoadOrder(loadOrder)
                 });
