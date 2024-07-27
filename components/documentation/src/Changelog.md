@@ -143,6 +143,7 @@ Reqtificator
 * A custom error message is display if parsing the settings file from ScrambledBugs failed.
 * The generated plugin uses header version 1.71.
 * Inner exceptions are written to the log file.
+* The command line argument `--game=SkyrimSE` works as expected.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------

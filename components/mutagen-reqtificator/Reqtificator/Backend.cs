@@ -48,11 +48,11 @@ namespace Reqtificator
         {
             _events = eventsQueue;
             _logs = logContext;
-            if (startupEventArgs.Args.Any("--game=SkyrimSEGog".Contains))
+            if (startupEventArgs.Args.Contains("--game=SkyrimSEGog"))
             {
                 _release = GameRelease.SkyrimSEGog;
             }
-            else if (startupEventArgs.Args.Any("--game=SkyrimSE".Contains))
+            else if (startupEventArgs.Args.Contains("--game=SkyrimSE"))
             {
                 _release = GameRelease.SkyrimSE;
             }
