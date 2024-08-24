@@ -1,10 +1,10 @@
-unit AddItemsToLeveledList;
+unit AddNpcsToLeveledList;
 
 uses REQ_Util;
 
 var
   target: String;
-  leveledItem: IInterface;
+  leveledNpc: IInterface;
 
 
 function Initialize: Integer;
@@ -17,23 +17,23 @@ function Process(e: IInterface): Integer;
 var
   entryArray, entry: IInterface;
 begin
-  if not Assigned(leveledItem) then begin
+  if not Assigned(leveledNpc) then begin
     if Pos('$', target) = 1 then
-      leveledItem := WinningOverride(RecordByLoadOrderFormID(StrToInt(target)))
+      leveledNpc := WinningOverride(RecordByLoadOrderFormID(StrToInt(target)))
     else begin
-      leveledItem := AddRecordToFile(GetFile(e), 'LVLI');
-      SetEditorID(leveledItem, target);
+      leveledNpc := AddRecordToFile(GetFile(e), 'LVLN');
+      SetEditorID(leveledNpc, target);
     end;
-    entryArray := ElementByPath(leveledItem, 'Leveled List Entries');
+    entryArray := ElementByPath(leveledNpc, 'Leveled List Entries');
     if not Assigned(entryArray) then begin
-      entryArray := Add(leveledItem, 'Leveled List Entries', True);
+      entryArray := Add(leveledNpc, 'Leveled List Entries', True);
       entry := ElementByIndex(entryArray, 0);
     end
     else
       entry := ElementAssign(entryArray, HighInteger, nil, False);
   end
   else begin
-    entryArray := ElementByPath(leveledItem, 'Leveled List Entries');
+    entryArray := ElementByPath(leveledNpc, 'Leveled List Entries');
     entry := ElementAssign(entryArray, HighInteger, nil, False);
   end;
   SetElementEditValues(entry, 'LVLO - Base Data\Level', '1');
