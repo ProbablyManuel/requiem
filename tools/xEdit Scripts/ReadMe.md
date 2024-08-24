@@ -19,9 +19,9 @@ xEdit Scripts
 REQ_AddItemsToLeveledList.pas
 -----------------------------
 
-Create a new leveled item and add the selected items to it.
+Add the selected items to a new or existing leveled item.
 
-The script prompts the user to enter the EditorID of the new leveled item. The leveled item is created in the file of the first selected item.
+The script prompts the user to enter the EditorID of the new leveled item or the $-prefixed FormID of the existing item (e.g. `$0842E2A8`). The leveled item is created in the file of the first selected item.
 
 REQ_AddItemsToOutfit.pas
 ------------------------
@@ -29,6 +29,13 @@ REQ_AddItemsToOutfit.pas
 Create a new outfit and add the selected items to it.
 
 The script prompts the user to enter the EditorID of the new outfit. The outfit is created in the file of the first selected item.
+
+REQ_AddNpcsToLeveledList.pas
+----------------------------
+
+Add the selected NPCs to a new or existing leveled NPC.
+
+The script prompts the user to enter the EditorID of the new leveled NPC or the $-prefixed FormID of the existing NPC (e.g. `$0842E2A8`). The leveled NPC is created in the file of the first selected item.
 
 REQ_ArmorPatcher.pas
 --------------------

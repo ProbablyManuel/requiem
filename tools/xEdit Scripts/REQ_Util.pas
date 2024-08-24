@@ -36,6 +36,40 @@ begin
   table.Free;
 end;
 
+function RecordByLoadOrderFormID(aiFormID: Cardinal): IwbMainRecord;
+var
+  loadOrderIndex: Cardinal;
+  i: Integer;
+  f: IwbFile;
+begin
+  loadOrderIndex := 0;
+  for i := 0 to Pred(FileCount) do begin
+    f := FileByIndex(i);
+    if IsHeavyPlugin(f) then begin
+      if loadOrderIndex = aiFormID shr 24 then
+        Break;
+      loadOrderIndex := loadOrderIndex + 1;
+    end;
+  end;
+  Result := RecordByFormID(f, LoadOrderFormIDToFileFormID(f, aiFormID), False);
+end;
+
+function IsHeavyPlugin(aeFile: IwbFile): Boolean;
+var
+  fileExt: String;
+begin
+  fileExt := ExtractFileExt(GetFileName(aeFile));
+  Result := (GetElementNativeValues(ElementByIndex(aeFile, 0), 'Record Header\Record Flags\ESL') = 0) and (SameText(fileExt, '.esp') or SameText(fileExt, '.esm'));
+end;
+
+function IsLightPlugin(aeFile: IwbFile): Boolean;
+var
+  fileExt: String;
+begin
+  fileExt := ExtractFileExt(GetFileName(aeFile));
+  Result := (GetElementNativeValues(ElementByIndex(f, 0), 'Record Header\Record Flags\ESL') = 1) or SameText(fileExt, '.esl');
+end;
+
 function FileByName(asFile: string): IwbFile;
 var
   i: integer;

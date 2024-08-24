@@ -4,6 +4,16 @@ Requiem 6.0.0 - "Unbroken Road"
 New Features
 ------------
 
+* Dragonborn DLC is fully integrated based on [Fozar's Dragoborn Patch](https://www.nexusmods.com/skyrimspecialedition/mods/34829). Notable changes compared to the patch:
+    * There are no additional smithing perks. Chitin, netch leater, and bonemold armors are crafted and tempered with the Advanced Light Armors perk.
+    * The Acolyte Priests are on a similar power level as normal dragon priests. Vahlok the Jailor is significantly stronger.
+    * Ash Hoppers have more plausible stats for a moderate sized insect. In return, their bite can paralyze in the style of scribs from Morrowind.
+    * Rieklings deal less damage.
+    * The All-Maker's Stones grant stacking boons that last while remaining in Solstheim.
+    * Merchant inventories better represent the local economy.
+    * Reavers are exclusively Dunmer and they are more likely to wear Morrowind armors.
+    * Miraak's cultists don't seek out the player in Skyrim until the main quest is completed. However, the Dragonborn questline can still be started earlier by traveling to Solstheim.
+    * The Ebony Warrior can be encountered after defeating Alduin, Harkon, or Miraak, or reaching level 50.
 * Most food provides one or more long lasting effect that is determined by the nutrition of the food. Different effects stack with each other. The magnitude is the same for each effect so that there are no useless items. The duration depends on the meal type (e.g. a stew lasts longer than a single vegetable) and is generally more long-lasting than before. The nutritions and their effects are as follows:
     * Vegan: +40% disease resistance
     * Meat: +15 carry weight

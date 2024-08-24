@@ -53,17 +53,12 @@ def get_conditions(perk: str, editor_id: str) -> str:
     elif perk == "Improved Bonemold Smithing":
         conditions = [
             "10000000,1.000000,GetGlobalValue,Dragonborn.esm:03AB27,00 00 00 00,Subject",
-            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Craftsmanship")},0,Subject',
+            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Advanced Light Armors")},0,Subject',
         ]
     elif perk == "Madness Smithing":
         conditions = [
             f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Ebony Smithing")},0,Subject',
             "10000000,1.000000,GetGlobalValue,ccBGSSSE025-AdvDSGS.esm:000C03,00 00 00 00,Subject",
-        ]
-    elif perk == "Morrowind Smithing":
-        conditions = [
-            "10000000,1.000000,GetStageDone,Dragonborn.esm:017F8E,20,Subject",
-            f'10000000,1.000000,HasPerk,{lookup.form_by_full_name("Craftsmanship")},0,Subject',
         ]
     elif perk == "Skyforge Smithing":
         if not editor_id.startswith("Temper"):

@@ -4,7 +4,7 @@ uses REQ_Util;
 
 var
   leveled_items: TStringList;
-  re_ignore, re_leveled_equipment, re_leveled_potion: TPerlRegEx;
+  re_ignore, re_leveled_equipment, re_leveled_equipset, re_leveled_potion: TPerlRegEx;
 
 
 function Initialize: Integer;
@@ -16,7 +16,10 @@ begin
   re_ignore.RegEx := '^[^_]+_(?:DEPRECATED|LEGACY|NULL)_.+$';
 
   re_leveled_equipment := TPerlRegEx.Create;
-  re_leveled_equipment.RegEx := '^[^_]+_LI_([^_]+_(?:Heavy|Light|Weapon)_(?:\D+))\d*$';
+  re_leveled_equipment.RegEx := '^[^_]+_LI_([^_]+_(?:Heavy|Light|Weapon)_\D+)\d*$';
+
+  re_leveled_equipset := TPerlRegEx.Create;
+  re_leveled_equipset.RegEx := '^[^_]+_LI_(EquipSet_[^_]+_\d{2}_.+)$';
 
   re_leveled_potion := TPerlRegEx.Create;
   re_leveled_potion.RegEx := '^[^_]+_LI_(VendorApothecary_\D+)\d*$';
@@ -31,9 +34,12 @@ begin
   if re_ignore.Match then Exit;
 
   re_leveled_equipment.Subject := EditorID(e);
+  re_leveled_equipset.Subject := EditorID(e);
   re_leveled_potion.Subject := EditorID(e);
   if re_leveled_equipment.Match then
     key := re_leveled_equipment.Groups[1]
+  else if re_leveled_equipset.Match then
+    key := re_leveled_equipset.Groups[1]
   else if re_leveled_potion.Match then
     key := re_leveled_potion.Groups[1]
   else begin
