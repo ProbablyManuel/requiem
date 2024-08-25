@@ -9,6 +9,7 @@ New Features
     * The Acolyte Priests are on a similar power level as normal dragon priests. Vahlok the Jailor is significantly stronger.
     * Ash Hoppers have more plausible stats for a moderate sized insect. In return, their bite can paralyze in the style of scribs from Morrowind.
     * Rieklings deal less damage.
+    * Armor penetration of lurkers, werebears, and serpentine dragons is reduced.
     * The All-Maker's Stones grant stacking boons that last while remaining in Solstheim.
     * Merchant inventories better represent the local economy.
     * Reavers are exclusively Dunmer and they are more likely to wear Morrowind armors.
@@ -115,6 +116,7 @@ Tweaks
 * Vampires lose their powers inside temples, and the holy ground damages attributes by 4 per second. The health damage stops when health drops below 30.
 * The visual distortion of vampires during the day is lessened when well-feed. 
 * No message is displayed when vampires enter sunlight.
+* Armor penetration of enchanted spheres, giant frostbite spiders, and great beasts is reduced to 50% (was 75%).
 * Spell cost reduction is capped at 80%.
 * Potions reduce spell cost by at most 25%.
 * Strength of self-made spell cost reduction enchantments is increased by 50%.
