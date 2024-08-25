@@ -66,7 +66,7 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 	ElseIf (akSource as Weapon)
 		If (akSource as Weapon).GetSkill() == "Marksman"
 			spelltype = 4
-		ElseIf (akSource as Weapon).GetSkill() == "OneHanded"
+		ElseIf (akSource as Weapon).GetSkill() == "OneHanded" || akSource == Unarmed
 			spelltype = 0
 		ElseIf (akSource as Weapon).GetSkill() == "TwoHanded"
 			spelltype = 1

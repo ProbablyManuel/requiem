@@ -135,6 +135,19 @@ Tweaks
 * The first effect of fish ingredients is always beneficial to support the Argonian affinity.
 * Eating meals with multiple servings (bread and cheese wheels/slices) adds the leftover portions.
 * Food recipes and price are rebalanced to be more consistent.
+* Dremora Lord wields a greatsword.
+* The second rank of Battle Axe Focus and War Axe Focus increases damage by 20% (was 15%).
+* Imperial crossbow deals 15% more damage to better match its role as an Imperial weapon.
+* Elder Scrolls have distinct names.
+* Ice Wraith Bane is replaced by common healing potions.
+* Armor set bonus for Nightingale and shrouded armor is removed.
+* Wisp mothers are immune to poison and frost.
+* Corrupted shades are immune to poison and strongly resistant to frost.
+* Death hounds are immune to poison and resistant to frost.
+* All divine amulets cost 200 gold.
+* Ulfric only knows the shouts Unrelenting Force, Disarm, and Ice Form to better match the lore.
+* The Nordic Ebony Vampire knows Marked for Death instead of Ice Form.
+* Predator's Might is reverted to its original name Animal Allegiance to match the words of power.
 
 Bug Fixes
 ---------
@@ -146,6 +159,43 @@ Bug Fixes
 * Fortify Shouts magic effects display the magnitude of the effect.
 * Muffle enchantments reduce movement noise by a variable percentage instead of always reducing it by 100%.
 * Killing reanimated NPCs does not empower the Ebony Blade.
+* Skeletons do not unequip weapons and shields when dying.
+* Breaking down battlestaffs and quarterstaffs yields one item.
+* The frost rune explosion doesn't have an enchantment.
+* Ebony Mace of Fire and Ebony Mace of the Blaze are obtainable.
+* Dead Silver Hands have the standard inventory of a Silver Hand.
+* Lesser soul gems can be found in loot.
+* Fire and frost enchantments have the correct enchantment cost.
+* Fire Breath only spawns one fire wyrm.
+* The boss chest in Tolvald's Crossing has an expert lock (was master).
+* Simulacra, golden saints, and dark seducers have correct attack data.
+* Snow Elves and a cured Serana don't stagger foes with normal shield bashes.
+* Disarming Bash works reliably.
+* Dremora Lord cannot be disarmed.
+* Dremora are never affected by cursed daedric armor.
+* All bandits in Robber's Gorge become aggresive if the player initiates combat.
+* Elven Dai-Katana has the correct block bash impact data.
+* Steel Katana, Steel Wakizashi, Silver Katana, and Silver Wakizashi have the correct alternate block material.
+* Silver weapons have silver ingots as primary component to match all other weapon materials and avoid strange situations like that smelting down a silver greatsword yields more silver than is required to craft it.
+* A rarely used leveled list containing enchanted maces includes elven maces.
+* The additional damage from turn undead enchantments works.
+* Unarmed attacks apply impact effects to the player.
+* Dawnguard fighters have mace and battleaxe perks.
+* Raise Dead spells don't have a secondary effect that fortifies health regeneration because the effect can't work as designed.
+* Alchemical powders don't share the vendor keyword with potions. Among other things, this fixes an incompatibility with Zxlice's Ultimate Potion Animation.
+* Dawnguard weapons have proper material keywords.
+* Lockbashing is a crime.
+* Mentor's Ring doesn't respawn.
+* The description of Banish Daedra and Command Daedra clarifies that the spell only affects daedra.
+* Turn Undead can affect the skeletal dragon.
+* Enchanted robes found in boss chests have the correct spawn probability.
+* The cost of created paralysis and fear enchantments matches existing enchantments.
+* Banish only applies its visual effect to summons.
+* Penetrating Strikes and Barbaric Might clarify that the power attack cost reduction is multiplicative.
+* Scroll of Courage doesn't mention that it increases health and stamina because it has no such effect.
+* Imperial crossbow is flagged as an Imperial weapon.
+* The lock level of Heartwood Mill is reverted to avoid a conflict with Skyrim Landscape and Water Fixes.
+* A number of typos in descriptions and editor ids are fixed.
 
 Reqtificator
 ------------
@@ -166,7 +216,13 @@ Internal Quality Improvements (only relevant for modders)
 * Teleport script is modernized.
 * Unused properties are removed from the stamina consumption script.
 * The \<Magic\>PowerMod actor values increase both spell magnitude and duration and they respect the REQ_NoMagnitudeScaling/REQ_NoDurationScaling keywords.
+* The common Fortify Shouts magic effects reduce shout cooldown instead of increasing it.
+* The common Fortify Lockpicking magic effects immediately increase lockpick durability.
+* The common Muffle magic effects are called Muffle instead of Fortify Muffle.
 * Unused keyword REQ_RaceHuman is deprecated. As a result, Requiem no longer edits child races.
+* Orcish Light Armor uses the armor keyword from Update.esm.
+* Thane weapons don't have a display name.
+* Stagger from power bashes is applied by attack data rather than a bash spell.
 
 
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
