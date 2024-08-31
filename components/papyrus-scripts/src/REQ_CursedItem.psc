@@ -9,13 +9,21 @@ Spell Property CurseOfAgony Auto
 
 
 Event OnEquipped(Actor akActor)
+	Int i = 0
+	While !akActor.Is3DLoaded()
+		Utility.Wait(0.5)
+		If i == 10
+			Return
+		EndIf
+		i += 1
+	EndWhile
 	If (!akActor.HasKeyword(ActorTypeDaedra))
 		akActor.AddSpell(CurseOfAgony, False)
 		If (akActor != Game.GetPlayer())
-			Int Timeout = 10
-			While (Timeout && akActor.GetActorValue("Health") > 50)
+			i = 0
+			While i < 10 && akActor.GetActorValue("Health") > 50
 				Utility.Wait(0.5)
-				Timeout = Timeout - 1
+				i += 1
 			EndWhile
 			If (!akActor.IsDead())
 				; The NPC realizes he's wearing a cursed item and unequips it

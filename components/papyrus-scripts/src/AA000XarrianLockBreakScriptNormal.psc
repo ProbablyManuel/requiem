@@ -11,6 +11,7 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 		Float power = 2 * player.GetActorValue("Health") + player.GetActorValue("Stamina")
 		If (lock <= 1 && power >= 350.0) || (lock <= 25 && power >= 450.0) || (lock <= 50 && power >= 550.0)
 			Lock(False)
+			((Self As ObjectReference) As REQ_LockpickControl).MagicCrimeAlarm(player)
 		EndIf
 	EndIf
 EndEvent
