@@ -148,6 +148,15 @@ Tweaks
 * Ulfric only knows the shouts Unrelenting Force, Disarm, and Ice Form to better match the lore.
 * The Nordic Ebony Vampire knows Marked for Death instead of Ice Form.
 * Predator's Might is reverted to its original name Animal Allegiance to match the words of power.
+* Death hounds deal 10 frost damage to enemies within melee range.
+* White frostbite spiders and ice wolves don't deal more damage than their counterparts.
+* Whispmothers don't regenerate health.
+* Kru'ul, Gigantic Mudcrab, Giant Slaughterfish, and Ulik don't have poison resistance.
+* The hostages in the Abandoned Shack don't have poison resistance.
+* Katria doesn't have a weakness to fire.
+* Shadowmere recovers 25 health per second.
+* Crossbows don't have innate stagger when wielded by the player.
+* Abilities added by perk don't show as active magic effects.
 
 Bug Fixes
 ---------
@@ -196,6 +205,17 @@ Bug Fixes
 * Imperial crossbow is flagged as an Imperial weapon.
 * The lock level of Heartwood Mill is reverted to avoid a conflict with Skyrim Landscape and Water Fixes.
 * A number of typos in descriptions and editor ids are fixed.
+* Death hound companions have the same stats and abilities as hostile death hounds.
+* Armored and rigid skeleton have the same resistances as standard skeletons.
+* Coffins added by Dawnguard and Hearthfire provide the same magic resistance bonus to vampires.
+* Jyrik Gauldurson's elemental cloaks have a normal range.
+* Loyal and strange dogs have the same racial traits.
+* Wild and domesticated goats have the same racial traits.
+* Durnehviir doesn't level with the player.
+* The allied soliders during Compelling Tribute don't level with the player.
+* The combatants in Kindred Judgment don't have inflated magic resistance and other stats.
+* Big trolls don't deal increased damage twice.
+* Armored trolls don't have increased armor rating twice.
 
 Reqtificator
 ------------
@@ -223,6 +243,12 @@ Internal Quality Improvements (only relevant for modders)
 * Orcish Light Armor uses the armor keyword from Update.esm.
 * Thane weapons don't have a display name.
 * Stagger from power bashes is applied by attack data rather than a bash spell.
+* Extra damage of wolves is applied by racial data rather than magic effects.
+* Carry weight bonus of werewolves is applied by racial data rather than magic effects. 
+* The Aetherium Wars is added to leveled lists by hand rather than script.
+* All perk abilities and racial traits use the common AbShow/AbHide effects.
+* Racial traits should be split into separate spells for FX, natural healing, armor, magical resistances, and other abilities.
+* Magic effects of abilities are sorted by actor values.
 
 
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
