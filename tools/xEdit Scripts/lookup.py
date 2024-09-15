@@ -106,7 +106,6 @@ _load_order = [
     "Unofficial Skyrim Creation Club Content Patch.esl",
     "SkyUI_SE.esp",
     "Requiem.esp",
-    "Requiem - Dragonborn.esp"
 ]
 
 
