@@ -28,17 +28,17 @@ endEvent
 ;******************************************************
 
 Event OnEffectFinish(Actor Target, Actor Caster)
-	;UDBP 2.0.2 - Perhaps a 3D check is needed?
-	if( myBard.Is3DLoaded() )
-		(myBard as Actor).PlaySubGraphAnimation("stopeffect")
-	EndIf
-	if(OutroSoundFX)
-		OutroSoundFX.play((target as objectReference))
-	endif
-	wait(0.5)
-	myBard.MoveTo(myMarker)
-	(myBard as actor).StopCombat()
-	myQuest.setStage(600)
+		;UDBP 2.0.2 - Perhaps a 3D check is needed?
+		if( myBard.Is3DLoaded() )
+			(myBard as Actor).PlaySubGraphAnimation("stopeffect")
+		EndIf
+		if(OutroSoundFX)
+			OutroSoundFX.play((target as objectReference))
+		endif
+		wait(0.5)
+		myBard.MoveTo(myMarker)
+		(myBard as actor).StopCombat()
+		myQuest.setStage(600)
 endEvent
 	
 ;******************************************************

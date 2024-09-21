@@ -41,7 +41,7 @@ int atronachHealth
 			AtronachFlameTrail.Stop(selfRef)
 			AtronachUnsummonDeathFXS.Play(selfRef)
 		elseIf atronachHealth <= 0
-			wait(1.0) ; Xarrian changed to 0.1 from: wait(3.0)
+			wait(1.0)
 ; 			debug.trace("flame health  <= 0")
 			AtronachFlameDeathFXS.Play(selfRef)
 			wait(0.5)

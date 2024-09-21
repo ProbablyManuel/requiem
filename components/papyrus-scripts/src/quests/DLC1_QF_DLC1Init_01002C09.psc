@@ -23,14 +23,8 @@ kmyQuest.AddWerewolfCrimeFactions()
 ; Set up Serana factions
 kmyQuest.SetupSerana()
 
-;Push the DLC1LD quest book into relevant formlists.
-; LItemBookClutter.AddForm(DLC1LD_AetheriumWars, 1, 1)
-
 ;Do any Trap changes needed.
 kmyQuest.SetUpTraps()
-
-;Crossbow stagger bonus
-; Game.GetPlayer().AddSpell(DLC1abCrossbowStagger, false)
 
 ;Worldspaces where sun damage shouldn't apply
 SunDamageExceptionWorldSpaces.AddForm(DLC1SoulCairn)
@@ -49,9 +43,6 @@ PreventDurnehviirSummoning.AddForm(DLC1AncestorsGlade)
 
 ;Worldspaces Auriel's Bow shouldn't work
 PreventAurielsBow.AddForm(DLC1SoulCairn)
-
-;Perk fixes, add dawnguard armor & falmer armor
-; Game.GetPlayer().AddPerk(DLC1DawnguardItemPerk)
 
 ; SHUT IT DOWN
 Debug.Trace("DLC1: DLC1 Initialization quest done.")
