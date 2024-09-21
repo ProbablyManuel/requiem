@@ -426,31 +426,6 @@ function InitializeDLC()
 	endWhile
 
 
-	; Disabled by Requiem
-
-	; 
-	; ; if player is rank 2 with any of the 3 jarls, send the "friend letter" (allowed to purchase a house)
-	; if JarlFalkreath.GetActorRef().GetRelationshipRank(player) >= 2 ;&& JarlFalkreath.GetActorRef().GetCrimeFaction().GetCrimeGold() == 0
-	; 	; call courier function on Falkreath quest
-	; 	bSentFriendLetter = true
-	; 	HouseQuests[0].SetStage(iFriendLetterStage)
-	; elseif JarlHjaalmarch.GetActorRef().GetRelationshipRank(player) >= 2 ;&& JarlHjaalmarch.GetActorRef().GetCrimeFaction().GetCrimeGold() == 0
-	; 	; call courier function on Hjaalmarch quest
-	; 	bSentFriendLetter = true
-	; 	HouseQuests[1].SetStage(iFriendLetterStage)
-	; elseif JarlPale.GetActorRef().GetRelationshipRank(player) >= 2 ;&& JarlPale.GetActorRef().GetCrimeFaction().GetCrimeGold() == 0
-	; 	; call courier function on Pale quest
-	; 	bSentFriendLetter = true
-	; 	HouseQuests[2].SetStage(iFriendLetterStage)
-	; else
-	; 	; if player isn't friends with any Jarl, if player is high enough level, send a courier with an intro letter
-	; 	if player.GetLevel() >= iMinIntroLetterLevel ;&& JarlFalkreath.GetActorRef().GetCrimeFaction().GetCrimeGold() == 0
-	; 		; only works for Falkreath
-	; 		bSentIntroLetter = true
-	; 		HouseQuests[0].SetStage(iIntroLetterStage)
-	; 	endif
-	; endif
-
 	; enable housecarls if appropriate
 	; NOTE: Housecarls are granted at Thane level (rank 3)
 	; House can be bought at rank 2
@@ -573,17 +548,6 @@ function ClearLumbermillOperator()
 	LumbermillOperator.Clear()
 	LumbermillLocation.Clear()
 endFunction
-
-; Disabled by Requiem
-; 
-; watch for animation events
-; Event OnAnimationEvent(ObjectReference akSource, string asEventName)
-; 	; lumber mill cut
-; 	if akSource == LumbermillMarker.GetRef() && (asEventName=="MillLogIdleReset")
-; 		; give player lumber
-; 		Game.GetPlayer().AddItem(BYOHMaterialLog, iLumbermillSawnLogCount)
-; 	endif
-; endEvent
 
 
 ; ************
@@ -1070,7 +1034,6 @@ function PlayerChangeLocation(Location akOldLoc, Location akNewLoc)
 
 	endif
 
-	; Requiem changed requirement to killed people
 	if bSentIntroLetter == false && Game.QueryStat("People Killed") >= iMinIntroLetterLevel
 		Actor player = Game.GetPlayer()
 		; if player is not friends with any of the jarls AND has zero crimegold, send intro letter

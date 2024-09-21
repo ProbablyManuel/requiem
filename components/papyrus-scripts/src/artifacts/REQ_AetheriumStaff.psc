@@ -1,5 +1,4 @@
-Scriptname DLC1LD_AetherialStaffEffectScript extends ObjectReference
-{Script on the marker 'summoned' by the Aetherial Staff. Determines what is actually summoned for each use.}
+ScriptName REQ_AetheriumStaff Extends ObjectReference
 
 Faction Property DLC1LD_AetherialStaffBusyFaction Auto
 

@@ -161,7 +161,7 @@ Tweaks
 Bug Fixes
 ---------
 
-* Synchronize with Unofficial Skyrim Special Edition Patch v4.3.0a.
+* Synchronize with Unofficial Skyrim Special Edition Patch v4.3.2.
 * The Creation Club patch forwards all keywords from the main plugin.
 * Salmon Roe is in line with other ingredients.
 * Black Book dungeons never respawn.
@@ -249,6 +249,7 @@ Internal Quality Improvements (only relevant for modders)
 * All perk abilities and racial traits use the common AbShow/AbHide effects.
 * Racial traits should be split into separate spells for FX, natural healing, armor, magical resistances, and other abilities.
 * Magic effects of abilities are sorted by actor values.
+* Bounties rewards are paid out directly instead of being nested inside a leveled list. As a result, Requiem no longer edits the BQScript script.
 
 
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5

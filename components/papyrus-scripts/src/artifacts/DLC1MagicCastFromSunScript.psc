@@ -6,39 +6,41 @@ Import Utility
 Import Weather
 
 Float Property fHeightFudge = 80.0 Auto
-{Fudge the height because the camera is not the same as the player.}
+								{Fudge the height because the camera is not the same as the player.}
 Float Property fSunVectorScale = 18.0 Auto
-{We need to scale the vector considerably to account for the sun actually being much closer to us then it looks.}
+								{We need to scale the vector considerably to account for the sun actually being much closer to us then it looks.}
 Float Property fBeamDurationDelay = 1.0 Auto
-{How long do we have to keep the xMarker to prevent the beams from moving to the world origin?}
+								{How long do we have to keep the xMarker to prevent the beams from moving to the world origin?}
 Float Property fWaitDelay = 1.1 Auto
-{This is the delay for the begining to the spell, to give the arrow time to hit the sun.}
-Static Property PlacedXMarker Auto
-{This is the marker the spell is cast from. Use the XMarker please}
+								{This is the delay for the begining to the spell, to give the arrow time to hit the sun.}
+Static Property PlacedXMarker auto
+								{This is the marker the spell is cast from. Use the XMarker please}
 Float Property fExplosionVectorScale = 7.0 Auto
-{This scale is for the explosion ref position, to keep it in draw range.}
-Spell property SpellRef Auto
-{The name of the Spell the Sky will cast. (REQUIRED!)}
+								{This scale is for the explosion ref position, to keep it in draw range.}
+Spell property SpellRef auto
+								{The name of the Spell the Sky will cast. (REQUIRED!)}
 Activator Property ActivatorRef Auto
-{This is the art that will be used for the sun burst visual effect}
+								{This is the art that will be used for the sun burst visual effect}
 Explosion Property ExplosionRef Auto
-{This is an invisible explosion used to deliver Imod and Sound effects from the correct location.}
+								{This is an invisible explosion used to deliver Imod and Sound effects from the correct location.}
 Float Property fActivatorDeleteDelay = 15.0 Auto
-{This delay holds the effect art in the sky so that it can animate to completion.}
-Weather property WeatherForm Auto
-{The name of the Weather we will seeing instantly, if we have one.}
-bool Property bHoldWeatherUntilEnd = False Auto
-{Check this if you want the new weather to stay active until the spell wears off}
-Bool Property bUseLocalNiceWeather = False Auto
-{Instead of defining a weather here, should we use a local clear weather?}
+								{This delay holds the effect art in the sky so that it can animate to completion.}
+Weather property WeatherForm auto
+								{The name of the Weather we will seeing instantly, if we have one.}
+bool Property bHoldWeatherUntilEnd = False auto
+								{Check this if you want the new weather to stay active until the spell wears off}
+Bool Property bUseLocalNiceWeather = False auto
+								{Instead of defining a weather here, should we use a local clear weather?}
 Float Property fXYBaseRandom = 1024.0 Auto
-{This is the random offset from the player that random shots will fire at.}
-Float Property fRecast = 1.0 Auto
-{How long before we recast the spell?  (Default = 1.0)}
-Float Property fRecastRand = 0.0 Auto
-{Add Some random time to the recast! (Default = 0.0)}
-MusicType Property myMusic Auto
-{this music gets played when the eclipse explosion happens}
+								{This is the random offset from the player that random shots will fire at.}
+Float Property fRecast = 1.0 auto
+								{How long before we recast the spell?  (Default = 1.0)}
+Float Property fRecastRand = 0.0 auto
+								{Add Some random time to the recast! (Default = 0.0)}
+;globalVariable Property GameHour auto
+
+MusicType property myMusic auto
+								{this music gets played when the eclipse explosion happens}
 MagicEffect Property PlayerEffect Auto
 {As long as the player has this effect, continue shooting beams}
 Spell Property SunAttackNPC Auto
@@ -65,6 +67,7 @@ EndEvent
 
 
 Event OnEffectStart(Actor Target, Actor Caster)
+	
 	; Since the y position of the sun appears to be fixed, lets only get it once instead of on update.
 	fSunYPosition = GetSunPositionY()
 	
@@ -100,13 +103,13 @@ EndEvent
 
 
 Event OnUpdate()
-	If (bContinueRunning)
-		If (TargetActor == Player)
+	If bContinueRunning
+		If TargetActor == Player
 			; We're attached to the player
 			SunAttackNPC.Cast(Player, Player)  ; Cast area spell to update all targets
 			RegisterForSingleUpdate(RandomFloat(fRecast, fRecastRand))
 			CastSpellFromSun(True)
-		ElseIf (Player.HasMagicEffect(PlayerEffect))
+		ElseIf Player.HasMagicEffect(PlayerEffect)
 			; We're attached to an enemy and the main effect is still running
 			RegisterForSingleUpdate(RandomFloat(fRecast, fRecastRand))
 			CastSpellFromSun(False)
@@ -154,6 +157,7 @@ Event OnEffectFinish(Actor Target, Actor Caster)
 
 EndEvent
 
+;;;;
 
 Function CastSpellFromSun(Bool bWeWantToMiss)
 	bFunctionRunningSunSpell = true

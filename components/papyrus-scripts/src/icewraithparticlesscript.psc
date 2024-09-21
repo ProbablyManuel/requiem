@@ -27,9 +27,8 @@ Bool isSummoned = False
 	EVENT OnEffectStart(Actor Target, Actor Caster)
 		selfRef = caster
 
-		; Requiem: figure out if the actor is a summon to prevent ice pile creation later
-		If (selfRef.IsCommandedActor())
-		    isSummoned = True
+		If selfRef.IsCommandedActor()
+			isSummoned = True
 		EndIf
 		
 		;Added by USKP to prevent this effect from appearing on the player.
@@ -69,15 +68,14 @@ Bool isSummoned = False
 	endEVENT
 	
 	EVENT onDying(actor myKiller)
-	
 		
 		IceWraithParticles01.Stop(selfRef)
 		FXIceWraith2ndFormEffect.stop(selfRef)
-		selfRef.unEquipItem(SkinIceWraithSmokeFins)
+		selfRef.unEquipItem(SkinIceWraithSmokeFins)	
 
-		;Requiem: Ice Spirit Summons should not drop lootable ice piles
-		If (isSummoned)
-			return
+		; Summoned ice wraiths should not drop lootable ice piles
+		If isSummoned
+			Return
 		EndIf
 
 		selfRef.placeAtMe(deathExplosion)
