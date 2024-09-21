@@ -216,6 +216,7 @@ Bug Fixes
 * The combatants in Kindred Judgment don't have inflated magic resistance and other stats.
 * Big trolls don't deal increased damage twice.
 * Armored trolls don't have increased armor rating twice.
+* Improved Healing doesn't improve mage armor spells.
 
 Reqtificator
 ------------
