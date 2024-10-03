@@ -110,6 +110,13 @@ Export magnitude/duration scaling data of the selected spell effects to a csv fi
 
 The first line is a header with the column names and the remaining comma-separated values are unsorted. Spell effects are identified by EditorID and must adhere to the [EditorID Convention](https://github.com/ProbablyManuel/requiem/wiki/EditorID-Convention#magic-effect-mgef-records).
 
+REQ_FilterActorValue.pas
+------------------------
+
+Apply a filter to show all records referencing a given actor value. This covers hardcoded references such perk entry functions or condition parameters.
+
+The script prompts the user to enter an actor value.
+
 REQ_FilterNoCharges.pas
 -----------------------
 

@@ -231,6 +231,7 @@ Reqtificator
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
+* The actor value infamy (used to store effective mass) starts at 0.0 instead of 1.0. This allows for more expressive perk entry point functions.
 * Creation Club scripts modified by Requiem use the official sources as baseline.
 * Deprecated records are deleted.
 * Fortify Lockpicking magic effects are mapped to their vanilla formids.

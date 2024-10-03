@@ -92,7 +92,7 @@ Event OnPageReset(String page)
 		AddTextOptionST(statename, text, display)
 		statename = "MassPenalty"
 		text = "$REQ_MassPenalty"
-		display = format_float(player.getAV("Infamy"), 2)
+		display = format_float(1.0 + player.getAV("Infamy"), 2)
 		AddTextOptionST(statename, text, display)
 		
     ElseIf page == "$REQ_cat_skill1" 
