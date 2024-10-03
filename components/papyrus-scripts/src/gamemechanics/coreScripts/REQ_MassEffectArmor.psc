@@ -116,6 +116,7 @@ Function UpdateMass(Float NewMass)
 	If NewMass != ActiveMass
 		Float DiffMass = NewMass - ActiveMass
 		Target.ModActorValue("mass", DiffMass)
+		Target.ModActorValue("ignorecrippledlimbs", 100 * DiffMass)
 		ActiveMass = NewMass
 	EndIf
 EndFunction

@@ -101,6 +101,13 @@ REQ_ExportIngredients.pas
 
 Export the effects of the selected ingredient to a csv file.
 
+The comma-separated values are race,health,magicka,stamina,carry_weight,unarmed_damage,magicka_rate,stamina_rate,blood,physique,heritage,power,unperked,skill and the lines are lexicographically sorted.
+
+REQ_ExportRaceDescriptions.pas
+-----------------------
+
+Export the stats and abilities of the selected race to a csv file.
+
 The comma-separated values are effect,magnitude,duration,ingredient and the lines are lexicographically sorted.
 
 REQ_ExportSpellScaling.pas
@@ -244,6 +251,11 @@ artifacts_description.py
 ------------------------
 
 Generates `Artifacts.md` based on the data in [ArtifactDescriptions.txt](export/ArtifactDescriptions.txt).
+
+document_races.py
+------------------------
+
+Generates `Races.md` based on the data in [ArtifactDescriptions.txt](export/ArtifactDescriptions.txt).
 
 leveled_item_patcher.py
 -----------------------
