@@ -4,16 +4,19 @@ REQ_AlcoholEffectsPlayer Property Controller Auto
 
 GlobalVariable Property AlcoholLevelStorage Auto
 
+Int mag
+
 Event OnEffectStart(Actor akTarget, Actor akCaster)
 	If akTarget == Game.GetPlayer()
-		AlcoholLevelStorage.Mod(GetMagnitude())
+        mag = self.GetMagnitude() as Int
+		AlcoholLevelStorage.Mod(mag)
 		Controller.UpdatePlayerAlcoholPenalties()
 	EndIf
 EndEvent
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
 	If akTarget == Game.GetPlayer()
-		AlcoholLevelStorage.Mod(-GetMagnitude())
+		AlcoholLevelStorage.Mod(-mag)
 		Controller.UpdatePlayerAlcoholPenalties()
 	EndIf
 EndEvent
