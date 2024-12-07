@@ -19,7 +19,6 @@ Altmer
     * Spells cost 20% less magicka.
     * Worn enchantments are 10% stronger.
     * Imbibed potions are 15% stronger.
-* **Active Power**: You consume half your stamina to restore 1 magicka. The amount of restored magicka equals the consumed stamina.
 * **Unperked Skills**:
     * You can create potions and poisons without perks.
     * You can recharge enchantments without perks.
@@ -54,7 +53,6 @@ Argonian
     * Spells cost 30% less magicka at full magicka.
     * Ingesting Sleeping Tree Sap increases duration of potions and spells by 35%.
 * **Argonian Cuisine**: Fish ingredients are five times more nourishing.
-* **Active Power**: You consume half your stamina to restore 1 health. The amount of restored health equals the consumed stamina.
 * **Unperked Skills**:
     * You can sneak without perks.
     * You can create potions and poisons without perks.
@@ -83,7 +81,6 @@ Bosmer
     * Movement speed is increased by 10%.
     * Ranged weapons fire 20% faster.
 * **Bosmer Cuisine**: Raw Meat is twice as nourishing.
-* **Active Power**: You consume half your magicka to turn nearby animals into allies for 60 seconds and increase their damage by 1. The amount of additional damage equals the consumed magicka.
 * **Unperked Skills**:
     * You can sneak without perks.
     * You can create potions and poisons without perks.
@@ -111,7 +108,6 @@ Breton
 * **Breton Heritage**:
     * Spell cost penalty from worn armor is 35% lower.
     * Weapon enchantments consume 20% less charges.
-* **Active Power**: You consume half your magicka to reduce damage taken from magic by 0% and increase armor rating by 1 for 60 seconds. The damage reduction equals a fifth of the consumed magicka and the armor rating increase equals the consumed magicka.
 * **Unperked Skills**:
     * You can create potions and poisons without perks.
     * You can recharge enchantments without perks.
@@ -140,7 +136,6 @@ Dunmer
     * Movement speed is increased by 5%.
     * You can pray at a shrine of Azura, Boethiah or Mephala to receive their blessing.
     * These blessings stack with all other blessings.
-* **Active Power**: You consume half your magicka to halve damage taken for 1 seconds. The duration equals a tenth of the consumed magicka.
 * **Unperked Skills**:
     * You can sneak without perks.
     * You can create potions and poisons without perks.
@@ -167,7 +162,6 @@ Imperial
 * **Imperial Heritage**:
     * You restore 1 magicka and stamina each second.
     * You haggle 15% better prices.
-* **Active Power**: You consume half your stamina to calm nearby people up to level 0, increasing their health and stamina by 0 for 60 seconds. The maximum level equals a quarter of the consumed stamina, and the health and stamina increase is ten times as large.
 * **Skill Boosts**:
     * +10 Restoration
     * +10 Speech
@@ -196,7 +190,6 @@ Khajiit
     * Attacks deal up to 20% more damage when your freedom of movement is unrestricted (0.5% per point of worn armor weight below 40).
     * Detrimental effects of skooma are greatly reduced.
 * **Khajiit Cuisine**: Elswyr Fondue is twice as nourishing.
-* **Active Power**: You consume half your stamina to become invisible for 1 seconds. The duration equals a quarter of the consumed stamina.
 * **Unperked Skills**:
     * You can sneak without perks.
     * You can pick pockets without perks.
@@ -226,7 +219,6 @@ Nord
 * **Nord Heritage**:
     * Shouts are 20% stronger and last 20% longer.
     * Armors provide 10% more armor rating.
-* **Active Power**: You consume half your stamina to fear nearby people up to level 0, reducing their armor rating by 0 for 60 seconds. The maximum level equals a quarter of the consumed stamina, and the armor rating reduction is ten times as large.
 * **Skill Boosts**:
     * +10 Smithing
     * +10 Two-Handed
@@ -252,7 +244,6 @@ Orc
     * You cannot be knocked down.
     * Melee weapons deal up to 25% more damage the stronger the momentum of the attack (0.25% per point of worn armor weight).
 * **Orc Cuisine**: Your stomach is strong enough to digest the infamous Wrothgar Tartare, which increases health by 25.
-* **Active Power**: You consume half your stamina to increase damage by 0% for 60 seconds. The amount of additional damage equals a quarter of the consumed stamina.
 * **Skill Boosts**:
     * +10 Heavy Armor
     * +10 Smithing
@@ -278,7 +269,6 @@ Redguard
 * **Redguard Heritage**:
     * Armor penetration is increased by 10.
     * Attack speed is increased by 20%.
-* **Active Power**: You consume half your magicka to restore 1 stamina. The amount of restored stamina equals the consumed magicka.
 * **Skill Boosts**:
     * +15 One-Handed
     * +5 Archery

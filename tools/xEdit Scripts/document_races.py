@@ -56,8 +56,6 @@ with open("../../components/documentation/src/Races.md", "w") as fh:
         # Cuisine
         if row.race in cuisine:
             fh.write(f'* **{row.race} Cuisine**: {cuisine[row.race]}\n')
-        # Power
-        fh.write(f'* **Active Power**: {row.power}\n')
         # Unperked
         if not pd.isna(row.unperked):
             fh.write(f'* **Unperked Skills**:\n')

@@ -4,7 +4,7 @@ uses REQ_Util;
 
 var
   output: TStringList;
-  re_blood, re_heritage, re_physique, re_power, re_unperked: TPerlRegEx;
+  re_blood, re_heritage, re_physique, re_unperked: TPerlRegEx;
 
 
 function Initialize: Integer;
@@ -20,16 +20,13 @@ begin
   re_physique := TPerlRegEx.Create;
   re_physique.RegEx := '^[^_]+_Trait_Physique_';
 
-  re_power := TPerlRegEx.Create;
-  re_power.RegEx := '^[^_]+_Power_Race_';
-
   re_unperked := TPerlRegEx.Create;
   re_unperked.RegEx := '^[^_]+_RacialSkills_(.+)';
 end;
 
 function Process(e: IInterface): Integer;
 var
-  blood, heritage, physique, power, unperked, skill: String;
+  blood, heritage, physique, unperked, skill: String;
   health, magicka, stamina, carryWeight, unarmedDamage, magickaRate, staminaRate: Float;
   fullName: IInterface;
 begin
@@ -47,25 +44,23 @@ begin
   blood := GetSpellDescription(e, re_blood);
   physique := GetSpellDescription(e, re_physique);
   heritage := GetSpellDescription(e, re_heritage);
-  power := GetSpellDescription(e, re_power);
   unperked := GetKeywords(e, re_unperked);
   skill := GetSkillBoosts(e);
   fullName := GetElementNativeValues(e, 'FULL - Name');
 
-  output.Add(Format('%s,%.0f,%.0f,%.0f,%.0f,%g,%g,%g,"%s","%s","%s","%s",%s,%s', [fullName, health, magicka, stamina, carryWeight, unarmedDamage, magickaRate, staminaRate, blood, physique, heritage, power, unperked, skill]));
+  output.Add(Format('%s,%.0f,%.0f,%.0f,%.0f,%g,%g,%g,"%s","%s","%s",%s,%s', [fullName, health, magicka, stamina, carryWeight, unarmedDamage, magickaRate, staminaRate, blood, physique, heritage, unperked, skill]));
 end;
 
 function Finalize: Integer;
 begin
   output.Sort;
-  output.Insert(0, 'race,health,magicka,stamina,carry_weight,unarmed_damage,magicka_rate,stamina_rate,blood,physique,heritage,power,unperked,skill');
+  output.Insert(0, 'race,health,magicka,stamina,carry_weight,unarmed_damage,magicka_rate,stamina_rate,blood,physique,heritage,unperked,skill');
   // output.SaveToFile(DataPath + 'tools\xEdit Scripts\export\RaceDescriptions.csv');
   output.SaveToFile('C:\Skyrim Tools\Mod Organizer SSE\mods\requiem\tools\xEdit Scripts\export\RaceDescriptions.csv');
   output.Free;
   re_blood.Free;
   re_heritage.Free;
   re_physique.Free;
-  re_power.Free;
   re_unperked.Free;
 end;
 
