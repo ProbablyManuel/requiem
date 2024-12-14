@@ -30,7 +30,7 @@ Tweaks
 * Artifacts are completely overhauled. A full list of changes to armors and weapons is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Artifacts.md).
 * Playable races are completely overhauled. A full list of changes to races is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Races.md).
 * Magicka and stamina regenerates at the same rate in and out of combat.
-* Skooma is reworked to more closely implement to euphoria and subsequent lethargy desribed in the lore.
+* Skooma is reworked to more closely implement the euphoria and subsequent lethargy described in the lore.
 * Sleeping Tree Sap has no beneficial effects for non-Argonians.
 * The Sap Spigot yields multiple bottles of Sleeping Tree Sap and it can be used more often.
 * Shrines of Azura, Boethiah, and Mephala are available in the mainland.
