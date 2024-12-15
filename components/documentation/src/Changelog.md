@@ -21,11 +21,6 @@ New Features
     * Flour: Recovers 1 stamina per second
     * Dairy: Recovers 1 magicka per second
     * Sweets: Restores 50 magicka and stamina
-* Beast races each have a special affinity to food:
-    * Argonian: Eating fish ingredients has 5 times higher magnitude.
-    * Bosmer: Raw Meat has double magnitude.
-    * Khajiit: Elswyr Fondue has double magnitude.
-    * Orc: Can eat Wrothgar Tartare (formerly known as Bestial Stew) which increases health by 25.
 * Alcohol does not dispel food but causes you to tumble after your alcohol level exceeds your base health.
 * Most unique items have a unique model using assets from [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254) and [Vastly More Unique Visage of Mzund](https://www.nexusmods.com/skyrimspecialedition/mods/3125).
 
@@ -33,6 +28,12 @@ Tweaks
 ------
 
 * Artifacts are completely overhauled. A full list of changes to armors and weapons is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Artifacts.md).
+* Playable races are completely overhauled. A full list of changes to races is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Races.md).
+* Magicka and stamina regenerates at the same rate in and out of combat.
+* Skooma is reworked to more closely implement the euphoria and subsequent lethargy described in the lore.
+* Sleeping Tree Sap has no beneficial effects for non-Argonians.
+* The Sap Spigot yields multiple bottles of Sleeping Tree Sap and it can be used more often.
+* Shrines of Azura, Boethiah, and Mephala are available in the mainland.
 * Sunhallowed Elven Arrow explodes for 60 sun damage (was 20). Undead take triple damage (was double). Base damage is decreased to match an Elven Arrow.
 * Bloodcursed Elven Arrow has the same armor penetration as an Elven arrow.
 * The White Phial refills every 15 minutes (real time) or when going to sleep. It has one of the following effects:
@@ -90,7 +91,7 @@ Tweaks
 * Blessing of the Blades (fka Dragonslayer's Blessing) increases physical damage dealt to dragons by 15%.
 * Neloth's Experimental Spell increases health by 50. After swimming or being in the rain it decreases health by 50 instead.
 * Prowler's Profit increases movement speed by 10%. The previous effect, more gems in loot, has been merged into the Treasure Hunter perk.
-* Shrine blessings of Azura, Boethiah, Mephala, and Nocturnal only apply cleansing.
+* The Shrine of Nocturnal only applies cleansing.
 * Sinderion's Serendipity increases the effectivess of potions and poisons by 50% if they contain nirnroot as an ingredient.
 * The Gift of Gab is removed.
 * Voice of the Sky reduces shout cooldown by 10% for 1 day.
@@ -217,6 +218,8 @@ Bug Fixes
 * Big trolls don't deal increased damage twice.
 * Armored trolls don't have increased armor rating twice.
 * Improved Healing doesn't improve mage armor spells.
+* The Dealer in Redwater Den trades black market goods.
+* Stamina cost of jumping increases with effective mass.
 
 Reqtificator
 ------------
@@ -231,7 +234,8 @@ Reqtificator
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
-* The actor value infamy (used to store effective mass) starts at 0.0 instead of 1.0. This allows for more expressive perk entry point functions.
+* The actor value "Infamy" (used to store effective mass) starts at 0.0 instead of 1.0. This allows for more expressive perk entry point functions.
+* The unused actor value "IgnoreCrippledLimbs" is repurposed to store worn armor weight.
 * Creation Club scripts modified by Requiem use the official sources as baseline.
 * Deprecated records are deleted.
 * Fortify Lockpicking magic effects are mapped to their vanilla formids.
