@@ -13,7 +13,7 @@ unperked_description = {
 
 cuisine = {
     "Argonian": "Fish ingredients are five times more nourishing.",
-    "Bosmer": "Raw Meat is twice as nourishing.",
+    "Bosmer": "Meat is twice as nourishing.",
     "Khajiit": "Elswyr Fondue is twice as nourishing.",
     "Orc": "Your stomach is strong enough to digest the infamous Wrothgar Tartare, which increases health by 25.",
 }

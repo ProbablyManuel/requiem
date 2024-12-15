@@ -80,7 +80,7 @@ Bosmer
 * **Bosmer Heritage**:
     * Movement speed is increased by 10%.
     * Ranged weapons fire 20% faster.
-* **Bosmer Cuisine**: Raw Meat is twice as nourishing.
+* **Bosmer Cuisine**: Meat is twice as nourishing.
 * **Unperked Skills**:
     * You can sneak without perks.
     * You can create potions and poisons without perks.
