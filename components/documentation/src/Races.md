@@ -80,6 +80,7 @@ Bosmer
 * **Bosmer Heritage**:
     * Movement speed is increased by 10%.
     * Ranged weapons fire 20% faster.
+    * You may choose to worship Y'ffre instead of the Nine Divines by upholding the archaic Green Pact.
 * **Bosmer Cuisine**: Meat is twice as nourishing.
 * **Unperked Skills**:
     * You can sneak without perks.
