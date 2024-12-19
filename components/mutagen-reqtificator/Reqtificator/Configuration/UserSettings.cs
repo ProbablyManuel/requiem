@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using Hocon;
 
 namespace Reqtificator.Configuration
@@ -44,7 +44,7 @@ namespace Reqtificator.Configuration
     ""{KeyVerboseLogging}"": {VerboseLogging.ToString().ToLowerInvariant()},
     ""{KeyMergeLeveledLists}"": {MergeLeveledLists.ToString().ToLowerInvariant()},
     ""{KeyMergeLeveledCharacters}"": {MergeLeveledCharacters.ToString().ToLowerInvariant()},
-    ""{KeyMergeLeveledLists}"": {OpenEncounterZones.ToString().ToLowerInvariant()},
+    ""{KeyOpenEncounterZones}"": {OpenEncounterZones.ToString().ToLowerInvariant()},
     ""{KeyActorVisualAutoMerge}"": {ActorVisualAutoMerge.ToString().ToLowerInvariant()},
     ""{KeyRaceVisualAutoMerge}"": {RaceVisualAutoMerge.ToString().ToLowerInvariant()}
 }}";
