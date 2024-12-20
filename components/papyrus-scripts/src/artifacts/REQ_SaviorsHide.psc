@@ -23,7 +23,7 @@ EndEvent
 
 
 Function RescaleEnchantment()
-	Int GreatBeastsSlain = 2
+	Int GreatBeastsSlain = 0
 	If GiantSlaughterfish.GetDeadCount() >= 1
 		GreatBeastsSlain += 1
 	EndIf
@@ -48,7 +48,10 @@ Function RescaleEnchantment()
 	If Ulik.GetDeadCount() >= 1
 		GreatBeastsSlain += 1
 	EndIf
-	EnchAbility.SetNthEffectMagnitude(0, GreatBeastsSlain * 3)
-	EnchAbility.SetNthEffectMagnitude(1, GreatBeastsSlain * 10)
-	EnchAbility.SetNthEffectMagnitude(2, GreatBeastsSlain * 10)
+	Float MagicResist = 10.0 + GreatBeastsSlain * 3.0
+	Float PosionResist = 30.0 + GreatBeastsSlain * 9.0
+	Float DiseaseResist = 30.0 + GreatBeastsSlain * 9.0
+	EnchAbility.SetNthEffectMagnitude(0, MagicResist)
+	EnchAbility.SetNthEffectMagnitude(1, PosionResist)
+	EnchAbility.SetNthEffectMagnitude(2, DiseaseResist)
 EndFunction

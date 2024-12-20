@@ -16,5 +16,14 @@ EndEvent
 
 
 Function RescaleEnchantment()
-	EnchAbility.SetNthEffectMagnitude(0, CorpsesEaten.GetValue() * 5.0)
+	Float ReflectDamage = Min(CorpsesEaten.GetValue() * 5.0, 500.0)
+	EnchAbility.SetNthEffectMagnitude(0, ReflectDamage)
+EndFunction
+
+Float Function Min(Float a, Float b)
+	If a < b
+		Return a
+	Else
+		Return b
+	EndIf
 EndFunction

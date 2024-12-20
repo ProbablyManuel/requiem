@@ -21,7 +21,17 @@ Function RescaleEnchantment()
 		EnchAbility.SetNthEffectMagnitude(1, 60)
 	Else
 		Int Murders = Game.QueryStat("Murders")
-		EnchAbility.SetNthEffectMagnitude(0, Murders * 0.25)
-		EnchAbility.SetNthEffectMagnitude(1, Murders * 0.75)
+		Float MagicResist = Min(10.0 + Murders * 0.25, 30.0)
+		Float FireResist = Min(30.0 + Murders * 0.75, 90.0)
+		EnchAbility.SetNthEffectMagnitude(0, MagicResist)
+		EnchAbility.SetNthEffectMagnitude(1, FireResist)
+	EndIf
+EndFunction
+
+Float Function Min(Float a, Float b)
+	If a < b
+		Return a
+	Else
+		Return b
 	EndIf
 EndFunction

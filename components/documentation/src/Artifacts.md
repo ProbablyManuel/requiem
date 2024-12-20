@@ -76,6 +76,10 @@ Light Armor
 * **Linwe's Cuirass**: Stamina increases by 40.
 * **Linwe's Gloves**: One-handed weapons deal 15% more damage.
 * **Linwe's Hood**: Ranged weapons deal 15% more damage.
+* **Morag Tong Boots**: Stamina increases by 70. Most slowing effects don't adversely affect you.
+* **Morag Tong Cuirass**: Poison deals 100% less damage to you.
+* **Morag Tong Gauntlets**: One-handed weapons deal 30% more damage.
+* **Morag Tong Hood**: Ranged weapons deal 30% more damage.
 * **Nightingale Boots**: Movement noise is 100% quieter. Stamina regenerates 50% faster. Magic deals 5% less damage to you.
 * **Nightingale Cuirass**: Stamina increases by 125. Poison deals 100% less damage to you. Magic deals 15% less damage to you.
 * **Nightingale Gloves**: One-handed weapons deal 25% more damage. Ranged weapons deal 25% more damage. You are 25% harder to detect.
@@ -92,6 +96,10 @@ Light Armor
 * **Thieves Guild Cuirass**: Carry weight increases by 20.
 * **Thieves Guild Gloves**: Lockpicks are 15% more durable.
 * **Thieves Guild Hood**: Prices are 10% more favorable.
+* **Ulen Ancestral Boots**: Movement noise is 50% quieter. Stamina increases by 75. Most slowing effects don't adversely affect you.
+* **Ulen Ancestral Cuirass**: Poison deals 75% less damage to you. Health increases by 75. Most paralysis effects don't adversely affect you.
+* **Ulen Ancestral Gauntlets**: One-handed weapons deal 30% more damage. Armor penetration with one-handed weapons is increased by 10.
+* **Ulen Ancestral Helmet**: Ranged weapons deal 30% more damage. Armor penetration with ranged weapons is increased by 5.
 * **Ulfric's Boots**: Mass increases by the equivalent of worn equipment weighting 200.
 * **Ulfric's Cuirass**: Magic deals 20% less damage to you.
 * **Ulfric's Gauntlets**: One-handed weapons deal 30% more damage.
@@ -108,13 +116,13 @@ Clothing
 * **Arch-Mage Hood**: Spells are 10% stronger and last 10% longer. Magicka increases by 75. Absorb spells deal 35% less damage to you. Magic deals 5% less damage to you.
 * **Arch-Mage Robes**: Spells cost 20% less to cast. Magicka regenerates 300% faster. Magic deals 15% less damage to you. Poison deals 100% less damage to you.
 * **Cicero's Boots**: Movement noise is 100% quieter.
-* **Cicero's Clothes**: Illusions spells cost 20% less. Magicka regenerates 250% faster.
+* **Cicero's Clothes**: Illusion spells cost 20% less. Magicka regenerates 250% faster.
 * **Cicero's Gloves**: Armor penetration with one-handed weapons is increased by 10.
 * **Cicero's Hat**: You are 40% harder to detect.
 * **Greybeard Boots**: The Voice can be used 10% more often.
 * **Greybeard Hood**: The Voice can be used 10% more often.
 * **Greybeard Robes**: The Voice can be used 10% more often.
-* **Miraak's Boots**: Increases chance to absorb the magicka from hostile spells by 50%.
+* **Miraak's Boots**: You have a 50% chance to absorb the magicka from hostile spells.
 * **Miraak's Gloves**: Magicka increases by 200. Absorb spells deal 35% less damage to you.
 * **Miraak's Robes**: Spells cost 25% less to cast. Magicka regenerates 300% faster. Poison deals 100% less damage to you. Tentacles reach out to those who dare to hit Hermaeus Mora's champion, dealing 400 irresistible damage.
 * **Nazir's Boots**: Frost deals 50% less damage to you.
@@ -122,8 +130,10 @@ Clothing
 * **Nazir's Hood**: One-handed weapons deal 30% more damage.
 * **Shrouded Hand Wraps**: Armor penetration with one-handed weapons is increased by 5.
 * **Shrouded Hood**: You are 25% harder to detect.
-* **Shrouded Robes**: Illusions spells cost 15% less. Magicka regenerates 100% faster.
+* **Shrouded Robes**: Illusion spells cost 15% less. Magicka regenerates 100% faster.
 * **Shrouded Shoes**: Movement noise is 50% quieter.
+* **Telvanni Robes**: Magicka regenerates 300% faster.
+* **Telvanni Shoes**: Shock deals 50% less damage to you.
 
 Head
 ====
@@ -152,8 +162,8 @@ Head
 Body
 ====
 
-* **Ebony Mail**: Magic deals 0% less damage to you (0.25% per murder). Fire deals 0% less damage to you (0.75% per murder).
-* **Savior's Hide**: Magic deals 0% less damage to you (3% per great beast slain). Poison deals 0% less damage to you (10% per great beast slain). You are 0% less likely to contract diseases (10% per great beast slain).
+* **Ebony Mail**: Magic deals 0% less damage to you (10% plus another 0.25% per murder). Fire deals 0% less damage to you (30% plus another 0.75% per murder).
+* **Savior's Hide**: Magic deals 0% less damage to you (10% plus another 3% per great beast slain). Poison deals 0% less damage to you (30% plus another 9% per great beast slain). You are 0% less likely to contract diseases (30% plus another 9% per great beast slain).
 * **Vampire Royal Cuirass**: Alteration spells cost 20% less to cast. Magicka regenerates 300% faster.
 * **Vampire Royal Cuirass**: Illusion spells cost 20% less to cast. Magicka regenerates 300% faster.
 
@@ -179,7 +189,7 @@ Shield
 * **Herebane's Fortress**: Frost deals 35% less damage to you.
 * **Shield of Solitude**: Magic deals 30% less damage to you. Blocking absorbs 35% more damage.
 * **Shield of Ysgramor**: Magic deals 20% less damage to you. Health increases by 70. Most paralysis effects don't adversely affect you.
-* **Spellbreaker**: Blocking creates a spellbreaking field that increases the chance to absorb the magicka from hostile spells by 0% (5% per disease contracted). You are 100% more likely to contract diseases.
+* **Spellbreaker**: While blocking, creates a ward that protects against spells for up to 275 points.
 * **Targe of the Blooded**: When bashing, does 12 points of bleeding damage for 5 seconds.
 
 Circlet
@@ -198,7 +208,7 @@ Amulet
 * **Gauldur Amulet**: You do not lose magicka when hit. Magicka increases by 0 (80% of your base magicka). Spells are 0% stronger and last 0% longer (5% of your base magicka).
 * **Gauldur Amulet Fragment**: Magicka increases by 30.
 * **Locket of Saint Jiub**: Carry weight increases by 150.
-* **Necromancer's Amulet**: Conjuration spells cost 25% less. Health increases by 50. Most paralysis effects don't adversely affect you. Magicka increases by 50. Absorb spells deal 35% less damage to you. Stamina increases by 50. Most slowing effects don't adversely affect you. Health regenerates 75% slower. At least 150 base health is required to curb the dark powers of the Necromancer's Amulet. Magicka regenerates 75% slower. At least 150 base magicka is required to curb the dark powers of the Necromancer's Amulet. Stamina regenerates 75% slower. At least 150 base stamina is required to curb the dark powers of the Necromancer's Amulet. Black soul gems can crafted with the perk Soul Gem Mastery.
+* **Necromancer's Amulet**: Conjuration spells cost 25% less. Health increases by 50. Most paralysis effects don't adversely affect you. Magicka increases by 50. Absorb spells deal 35% less damage to you. Stamina increases by 50. Most slowing effects don't adversely affect you. Health regenerates 75% slower. At least 130 base health is required to curb the dark powers of the Necromancer's Amulet. Magicka regenerates 75% slower. At least 130 base magicka is required to curb the dark powers of the Necromancer's Amulet. Stamina regenerates 75% slower. At least 130 base stamina is required to curb the dark powers of the Necromancer's Amulet. Black soul gems can crafted with the perk Soul Gem Mastery.
 * **Saarthal Amulet**: Spells cost 10% less to cast.
 * **Savos Aren's Amulet**: Magic deals 20% less damage to you.
 
@@ -210,13 +220,18 @@ Ring
 * **Cursed Ring of Hircine**: Causes the wearer to randomly become a werewolf.
 * **Denstagmer's Ring**: Fire deals 20% less damage to you. Frost deals 20% less damage to you. Shock deals 20% less damage to you.
 * **Mentor's Ring**: Magicka increases by 20. Magic deals 8% less damage to you.
+* **Nightweaver's Band**: You are 10% harder to detect. Destruction spells cost 10% less.
+* **Ring of Bloodlust**: While in Beast Form, your attacks do 50% more damage, but you also take 50% more damage.
 * **Ring of Hircine**: Health increases by 75. Most paralysis effects don't adversely affect you. Provides unlimited transformations for werewolves.
 * **Ring of Inebriation**: This peculiar enchanted ring is fueled by your drunkenness. While sober, it will grant you 4% of magic resistance. On your quest to become dead drunk this bonus will gradually increase to up to 20%.
+* **Ring of Instinct**: When you enter Beast Form, the world around you seems to slow for 20 seconds.
 * **Ring of Khajiit**: You move 15% faster while sneaking.
 * **Ring of Namira**: Attackers take 0% of the inflicted melee damage (5% per corpse eaten). You are invisible when sneaking out of combat while wearing nothing but a beggar's rags. Additionally, you are inaudible while afflicted by disease. Feeding on corpses grants Namira's blessing: Health increases by 50 for 7200 seconds. Health regenerates 50% faster for 7200 seconds.
 * **Ring of Phynaster**: Poison deals 20% less damage to you. Shock deals 20% less damage to you. Magic deals 20% less damage to you.
-* **Ring of the Beast**: While wearing this ring, you will receive 100 extra Health and your claw attacks will do an additional 20 damage.
-* **Ring of the Erudite**: While wearing this ring, you will receive 100 extra magicka as well as regenerate magicka 150% faster.
+* **Ring of the Beast**: Unarmed strikes do 20 additional damage. Health increases by 100.
+* **Ring of the Erudite**: Magicka increases by 100. Magicka regenerates 150% faster.
+* **Ring of the Hunt**: While in Beast Form, your health regenerates.
+* **Ring of the Moon**: Increases the duration of your Howls by 25%.
 * **Ring of the Wind**: Movement is 10% faster.
 * **Silver-Blood Family Ring**: Smithing skill is 6 higher.
 * **Warlock's Ring**: While blocking, creates a ward that protects against spells for up to 25 points. Health regenerates 30% faster. Movement is 5% faster.
@@ -229,7 +244,7 @@ Dagger
 * **Bloodthorn**: Makes the target vulnerable to soul gems for 3 seconds. Absorbs 10 health, but doesn't affect constructs.
 * **Fang of Haynekhtnamet**: Deals 30 shock damage and half as much magicka damage. Does triple damage to constructs.
 * **Keening**: The wielder can summon the Shade of Arniel Gane.
-* **Mehrunes' Razor**: Mehrunes' Razor has a 0% chance to deal 600 irresistible damage (1% for killing at least 100 people, animals, creatures, undead, daedra, and dwarven constructs, each type counting separately).
+* **Mehrunes' Razor**: Mehrunes' Razor has a 0% chance to deal 600 irresistible damage (1% plus another 1% for killing at least 100 people, animals, creatures, undead, daedra, and dwarven constructs, each type counting separately and only once).
 * **Nettlebane**: Burns spriggans for 10 fire damage per second for 5 seconds, and staggers them. Nettlebane draws energy from the animus of sacrificed spriggans.
 * **Valdr's Lucky Dagger**: 5% chance to paralyze the target for 1 seconds.
 
@@ -243,8 +258,9 @@ Sword
 * **Bolar's Oathblade**: Thalmor up to level 35 flee from combat for 30 seconds. Deals 30 magic damage to Thalmor. Killing Thalmor renews the Blades' oath.
 * **Boneshaver**: Increases one-handed armor penetration by 10.
 * **Chillrend**: Deals 30 frost damage and twice as much stamina damage. 25% chance to paralyze the target for 2 seconds.
-* **Dawnbreaker**: Dawnbreaker deals 0 sun damage to undead (0.25 per undead killed) and turns undead up to level 0 (0.1 per undead killed). Killing an undead causes an explosion that turns nearby undead up to level 50 and deals 300 sun damage.
+* **Dawnbreaker**: Dawnbreaker deals 0 sun damage to undead (20 plus another 0.25 per undead killed) and turns undead up to level 0 (8 plus another 0.1 per undead killed). Killing an undead causes an explosion that turns nearby undead up to level 50 and deals 300 sun damage.
 * **Dragonbane**: The katana is enchanted to tear the dragons' flesh apart and deals 200 magic damage to them.
+* **Ebony Warrior's Sword**: Deals 75 fire damage. Undead up to level 100 flee for 5 seconds. Additionally, deals 100 magic damage to undead.
 * **Eduj**: Deals 30 frost damage and twice as much stamina damage. You feel Okin and Eduj almost swinging on their own will, swinging 15% faster as long as they are wielded together.
 * **Gauldur Blackblade**: Absorbs 25 health, but doesn't affect constructs.
 * **General Tullius' Sword**: General Tulllius must have spent a fortune on this piece - it's perfectly balanced and emanates an overwhelming elemental power. This sword combines fire, frost, and shock into an elemental strike that deals 90 total damage.
@@ -283,7 +299,7 @@ Mace
 * **Horksbane**: Staggers horkers and deals 8 magic damage for 15 seconds.
 * **Lunar Iron Mace**: Absorbs 20 health while the moons are out, but doesn't affect constructs.
 * **Lunar Steel Mace**: Absorbs 20 health while the moons are out, but doesn't affect constructs.
-* **Mace of Molag Bal**: The Mace of Molag Bal absorbs 0 magicka and stamina (0.1 per soul trapped) and makes the target vulnerable to soul gems for 0 seconds (0.01 per soul trapped).
+* **Mace of Molag Bal**: The Mace of Molag Bal absorbs 0 magicka and stamina (10 plus another 0.1 per soul trapped) and makes the target vulnerable to soul gems for 0 seconds (4 plus another 0.04 per soul trapped).
 
 Greatsword
 ==========
@@ -291,11 +307,11 @@ Greatsword
 * **Blade of Falkreath**: Deals 25 shock damage and half as much magicka damage. Does triple damage to constructs.
 * **Blade of the Pale**: Deals 25 fire damage.
 * **Bloodskal Blade**: Power attacks release an energy blast that deals 30 magic damage.
-* **Ebony Blade**: The Ebony Blade absorbs 0 health (6 per confidant, ally, or lover murdered with the blade). Attacks are silent and victims do not become hostile.
+* **Ebony Blade**: The Ebony Blade absorbs 0 health (4 per confidant, ally, or lover murdered with the blade). Attacks are silent and victims do not become hostile.
 * **Grimsever**: Deals 30 frost damage and twice as much stamina damage.
 * **Jon's Twohander**: Best sever the limbs of others, before they will sever your own!
 * **Stormfang**: Deals 30 shock damage and half as much magicka damage. Does triple damage to constructs.
-* **Tyranus' Greatsword**: Summoned Daedra up to level 30 are sent back to Oblivion. If the target is not banished, it will be dealt 120 magic damage.
+* **Tyranus' Greatsword**: Summoned daedra up to level 30 are sent back to Oblivion. If the target is not banished, it will be dealt 120 magic damage.
 
 Battleaxe
 =========
@@ -317,7 +333,7 @@ Warhammer
 * **Longhammer**: The Longhammer swings 33% faster.
 * **The Warhammer of Inebriation**: No one knows what inspired the enchanter to create a weapon fueled by drunkenness. While you're tipsy, it absorbs 15 stamina per hit. As you strive to become dead drunk, this effect increases to up to 60 points.
 * **Trollsbane**: Burns trolls for 5 fire damage per second for 5 seconds. Slaying trolls recharges the enchantment.
-* **Volendrung**: Volendrung absorbs 0 stamina (0.3 per point of base health above 100), has a 5% chance to paralyze the target for 6 seconds, and reduces the target's damage and the amount of blockable damage by 0% for 10 seconds (0.3% per point of base health above 100).
+* **Volendrung**: Volendrung absorbs 0 stamina (10 plus another 0.5 per point of base health above 100), has a 5% chance to paralyze the target for 6 seconds, and reduces the target's damage and the amount of blockable damage by 0% for 10 seconds (10% plus another 0.5% per point of base health above 100).
 
 Bow
 ===
@@ -325,11 +341,11 @@ Bow
 * **Auriel's Bow**: Deals 30 sun damage. Undead take triple damage. Firing a Sunhallowed Elven Arrow at the sun causes a sunburst that targets random enemies for 60 seconds: Deals 150 sun damage. Undead take triple damage.
 * **Bow of the Hawk**: Bow of the Hawk deals 10 shock damage for each of Kyne's blessings.
 * **Dravin's Bow**: Deals 10 stamina damage.
-* **Dwarven Black Bow of Fate**: 50% chance for each attribute to absorb 25 points of Health, Stamina and/or Magicka.
+* **Dwarven Black Bow of Fate**: 50% chance to absorb 25 health. 50% chance to absorb 25 magicka. 50% chance to absorb 25 stamina.
 * **Firiniel's End**: Deals 20 shock damage and half as much magicka damage. Targets turn into an ash pile upon death.
 * **Froki's Bow**: Deals 20 magic damage to animals.
 * **Gauldur Blackbow**: Absorbs 30 stamina, but doesn't affect constructs.
-* **Glass Bow of the Stag Prince**: Wielder receives an increasingly powerful blessing for every 20 animals killed by the bow. 0 animals killed.
+* **Glass Bow of the Stag Prince**: The Glass Bow of the Stag Prince deals 0 magic damage (10 per great beast slain).
 * **Nightingale Bow**: Deals 15 frost damage and twice as much stamina damage. Deals 15 shock damage and half as much magicka damage.
 * **Spectral Bow**: Absorbs 50 magicka if wielded by a spectral draugr, but doesn't affect constructs.
 * **Zephyr**: Fires 30% faster than a normal Dwarven bow.
