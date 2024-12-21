@@ -43,7 +43,6 @@ Tweaks
     * Increases magicka by 100 and magicka regeneration by 100% for 300 seconds.
     * Increases one-handed, two-handed, and marksman damage by 25% for 300 seconds.
     * Completely restores health.
-* Oghma Infinium does not increase attributes.
 * The three rewards from each Black Book are adjusted:
     * Epistolary Acumen
         * Killing an enemy with Fire Breath spawns an allied fire wyrm from their corpse for 60 seconds.
