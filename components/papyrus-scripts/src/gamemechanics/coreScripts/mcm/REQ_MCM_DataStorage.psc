@@ -29,6 +29,7 @@ GlobalVariable Property REQ_Skills_NoSmithingBooks Auto
 GlobalVariable Property REQ_Atmosphere_VampireRandomCarnage Auto
 GlobalVariable Property REQ_Combat_NoDeathHandling Auto
 GlobalVariable Property REQ_Atmosphere_KillmoveHealthThreshold Auto
+GlobalVariable Property REQ_Atmosphere_FasterOutOfCombatRegen Auto
 
 Bool Property initdone = False Auto
 

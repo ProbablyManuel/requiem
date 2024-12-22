@@ -564,6 +564,24 @@ State REQ_Atmosphere_KillmoveHealthThreshold
 
 EndState
 
+State REQ_Atmosphere_FasterOutOfCombatRegen
+
+    Event OnSelectST()
+        data.REQ_Atmosphere_FasterOutOfCombatRegen.SetValueInt((!(data.REQ_Atmosphere_FasterOutOfCombatRegen.GetValueInt() as Bool)) as Int )
+        SetToggleOptionValueST(data.REQ_Atmosphere_FasterOutOfCombatRegen.GetValueInt() as Bool)
+    EndEvent
+
+    Event OnDefaultST()
+        data.REQ_Atmosphere_FasterOutOfCombatRegen.SetValueInt( 0.0 as Int)
+        SetToggleOptionValueST(data.REQ_Atmosphere_FasterOutOfCombatRegen.GetValueInt() as Bool)
+    EndEvent
+
+    Event OnHighlightST()
+        SetInfoText("$REQ_Atmosphere_FasterOutOfCombatRegen_highlight")
+    EndEvent
+
+EndState
+
 Event OnPageReset(String page)
     UnloadCustomContent()
     If page == ""
@@ -597,6 +615,7 @@ Event OnPageReset(String page)
         AddToggleOptionST("REQ_Atmosphere_NoPoisonISM","$REQ_REQ_Atmosphere_NoPoisonISM",data.REQ_Atmosphere_NoPoisonISM.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Atmosphere_SlowerHorses","$REQ_REQ_Atmosphere_SlowerHorses",data.REQ_Atmosphere_SlowerHorses.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Atmosphere_VampireRandomCarnage","$REQ_REQ_Atmosphere_VampireRandomCarnage",data.REQ_Atmosphere_VampireRandomCarnage.GetValueInt() as Bool)
+        AddToggleOptionST("REQ_Atmosphere_FasterOutOfCombatRegen","$REQ_Atmosphere_FasterOutOfCombatRegen",data.REQ_Atmosphere_FasterOutOfCombatRegen.GetValueInt() as Bool)
     ElseIf page == "$REQ_cat_3"
         AddToggleOptionST("REQ_Debug_ArmorTraining","$REQ_REQ_Debug_ArmorTraining",data.REQ_Debug_ArmorTraining.GetValueInt() as Bool)
         AddToggleOptionST("REQ_Compatibility_AttackSpeed","$REQ_REQ_Compatibility_AttackSpeed",data.REQ_Compatibility_AttackSpeed.GetValueInt() as Bool)

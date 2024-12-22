@@ -29,7 +29,7 @@ Tweaks
 
 * Artifacts are completely overhauled. A full list of changes to armors and weapons is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Artifacts.md).
 * Playable races are completely overhauled. A full list of changes to races is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Races.md).
-* Magicka and stamina regenerates at the same rate in and out of combat.
+* Health, magicka, and stamina regenerate at the same rate in and out of combat. A MCM option is available that increases magicka and stamina out of combat by 100%.
 * Skooma is reworked to more closely implement the euphoria and subsequent lethargy described in the lore.
 * Sleeping Tree Sap has no beneficial effects for non-Argonians.
 * The Sap Spigot yields multiple bottles of Sleeping Tree Sap and it can be used more often.
@@ -84,7 +84,7 @@ Tweaks
     * Completing Alduin's Bane reduces shout cooldown by 10%.
     * Completing Sovngarde reduces shout cooldown by 10%.
     * Completing Dragonslayer increases health, magicka and stamina by 100.
-* Kyne's Peace requires the blessing of Kyne.
+* Kyne's Peace doesn't make animals friendly but only restores attributes. Magnitude is reduced to 30/60/120 (was 100/250/500) and increases by 10/20/50 for each of Kyne's blessings.
 * Agent of Mara increases the effectiveness of healing spells by 10%.
 * Sailor's Repose increases magic resistance by 5%.
 * Blessing of the Blades (fka Dragonslayer's Blessing) increases physical damage dealt to dragons by 15%.
@@ -92,7 +92,7 @@ Tweaks
 * Prowler's Profit increases movement speed by 10%. The previous effect, more gems in loot, has been merged into the Treasure Hunter perk.
 * The Shrine of Nocturnal only applies cleansing.
 * Sinderion's Serendipity increases the effectivess of potions and poisons by 50% if they contain nirnroot as an ingredient.
-* The Gift of Gab is removed.
+* The Gift of Gab is removed. Instead completing Tending the Flames unlocks Dibella's greater blessing.
 * Voice of the Sky reduces shout cooldown by 10% for 1 day.
 * The rewards for promotions in the Imperial Legion and Stormcloaks follow a logical progression.
 * Sahloknir is always a fire dragon.
@@ -106,6 +106,8 @@ Tweaks
 * Legate Rikke wears a Ring of Necklace of Eminent Blocking and a Ring of Eminent Wielding.
 * Ulfric wears a Necklace of Grounding and a Ring of the Peerless Knight.
 * General Tullius wears a Necklace of Peerless Health and a Ring of Peerless Stamina.
+* Belethor carries a Ring of Major Health.
+* Treasure Map I and IV lead to a cuirass of Major Health.
 * Vampires can touch Dawnbreaker with impunity to prevent silly pickpocket interactions. However, wielding Dawnbreaker as a vampire remains a suicidal endeavour due to the nature of the enchantment.
 * Paralysis enchantment has a 5% chance to apply (was 3%). It can affect targets regardless of their magic resistance but is blocked by Fortify Health (Rank II) enchantments.
 * Amren carries an iron sword so that he equips his family sword once returned by the player.
@@ -129,10 +131,11 @@ Tweaks
 * Buffs from special alcoholic beverages stack with potions.
 * Strength of some alcoholic beverages is adjusted.
 * Eating raw meat or mammoth cheese applies the disease Food Poisoning which drains magicka and stamina by 50.
-* The magicka and stamina penalty from running is doubled when not under the effect of any food.
 * Bottled Water is removed.
 * Alchemists do not buy food.
 * The first effect of fish ingredients is always beneficial to support the Argonian affinity.
+* Healing poultices increase health regeneratio by 100% (was 50%).
+* Healing poultices have four servings.
 * Eating meals with multiple servings (bread and cheese wheels/slices) adds the leftover portions.
 * Food recipes and price are rebalanced to be more consistent.
 * Dremora Lord wields a greatsword.
@@ -155,7 +158,6 @@ Tweaks
 * The hostages in the Abandoned Shack don't have poison resistance.
 * Katria doesn't have a weakness to fire.
 * Shadowmere recovers 25 health per second.
-* Crossbows don't have innate stagger when wielded by the player.
 * Abilities added by perk don't show as active magic effects.
 
 Bug Fixes
@@ -163,6 +165,7 @@ Bug Fixes
 
 * Synchronize with Unofficial Skyrim Special Edition Patch v4.3.2.
 * The Creation Club patch forwards all keywords from the main plugin.
+* Crossbows have innate stagger when wielded by NPCs.
 * Salmon Roe is in line with other ingredients.
 * Black Book dungeons never respawn.
 * Fortify Shouts magic effects display the magnitude of the effect.

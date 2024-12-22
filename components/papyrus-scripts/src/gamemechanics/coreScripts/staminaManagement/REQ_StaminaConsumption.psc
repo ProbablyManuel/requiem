@@ -15,7 +15,7 @@ Spell Cone = None
 Actor sprinter
 
 Function RegisterKeys(Bool reregister)
-	UnregisterForAllKeys()
+	UnregisterForAllControls()
 	UnregisterForAllMenus()
 	If (reregister)
 		RegisterForControl("Right Attack/Block")
