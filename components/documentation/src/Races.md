@@ -38,7 +38,7 @@ Argonian
     * 120 Magicka
     * 100 Stamina
     * 105 Carry Weight
-    * 6 Unarmed Damage
+    * 10 Unarmed Damage
     * 0.38 Magicka Rate
     * 0.8 Stamina Rate
 * **Argonian Blood**:
@@ -105,7 +105,7 @@ Breton
     * 0.39 Magicka Rate
     * 0.78 Stamina Rate
 * **Breton Blood**:
-    * You have a 20% chance to absorb the magicka from hostile spells.
+    * Magic deals 20% less damage to you.
 * **Breton Heritage**:
     * Spell cost penalty from worn armor is 35% lower.
     * Weapon enchantments consume 20% less charges.

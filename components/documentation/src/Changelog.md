@@ -31,7 +31,6 @@ Tweaks
 * Playable races are completely overhauled. A full list of changes to races is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Races.md).
 * Health, magicka, and stamina regenerate at the same rate in and out of combat. A MCM option is available that increases magicka and stamina out of combat by 100%.
 * Skooma is reworked to more closely implement the euphoria and subsequent lethargy described in the lore.
-* Sleeping Tree Sap has no beneficial effects for non-Argonians.
 * The Sap Spigot yields multiple bottles of Sleeping Tree Sap and it can be used more often.
 * Shrines of Azura, Boethiah, and Mephala are available in the mainland.
 * Sunhallowed Elven Arrow explodes for 60 sun damage (was 20). Undead take triple damage (was double). Base damage is decreased to match an Elven Arrow.
