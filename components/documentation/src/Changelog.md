@@ -258,6 +258,7 @@ Internal Quality Improvements (only relevant for modders)
 * Magic effects of abilities are sorted by actor values.
 * Bounties rewards are paid out directly instead of being nested inside a leveled list. As a result, Requiem no longer edits the BQScript script.
 * Spells that model natural armor are directly assigned to the race in the plugin instead of being distributed by the Reqtificator.
+* Creation Club patch is a light plugin.
 
 
 Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
