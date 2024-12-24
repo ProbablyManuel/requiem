@@ -107,6 +107,7 @@ categories = {
     "Bow": "Bow",
     "Crossbow": "Crossbow",
     "Staff": "Staff",
+    "BlackBook": "Black Book",
 }
 
 armor_regex = re.compile(r'^[^_]+(_Var)?_(?P<type>Cloth|Heavy|Light)_(?P<set>[^_]+)_(?P<slot>[^_]+)(?:_(?P<mod>.+))?')

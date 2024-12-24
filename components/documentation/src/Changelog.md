@@ -74,31 +74,6 @@ Tweaks
 * The Shrine of Nocturnal only applies cleansing. The Nightingale armor and weapons function as Nocturnal's blessing.
 * Dragon priest masks armor type can be changed on the workbench in Bromjunaar Sanctuary. Their armor rating and weight matches a dragonscale or dragonplate helmet respectively. Tempering requires Legendary Blacksmithing.
 * Kyne's Peace doesn't make animals friendly but only restores attributes. Magnitude is reduced to 30/60/120 (was 100/250/500) and increases by 10/20/50 for each of Kyne's blessings.
-* The three rewards from each Black Book are adjusted:
-    * Epistolary Acumen
-        * Killing an enemy with Fire Breath spawns an allied fire wyrm from their corpse for 60 seconds.
-        * Unrelenting Force does more damage and using all three words may disintegrate enemies.
-        * Frost Breath encases foes in ice for 15 seconds.
-    * The Winds of Change
-        * Followers deal 20% more damage and their spells are 20% stronger and last 20% longer.
-        * Benefits of food are 50% stronger.
-        * Attacks deal 10% more damage to people of the opposite sex. Spells are 10% stronger and last 10% longer when cast on people of the opposite sex.
-    * The Hidden Twilight
-        * Restores 2 health per second.
-        * Restores 2 magicka per second.
-        * Restores 2 stamina per second.
-    * Filament and Filigree
-        * Increases health by 30.
-        * Increases magicka by 30.
-        * Increases stamina by 30.
-    * The Sallow Regent
-        * Increases damage with one-handed, two-handed, and ranged weapons by 10%. Increases the amount of blockable damage by 10%. Increases armor rating by 50.
-        * Increases lockpick durability by 20%. Pickpocketing is 10% easier. Improves sneaking by 10%. Increases sneak attack damage by 50% against all targets.
-        * Spells are 10% stronger and last 10% longer.
-    * Untold Legends
-        * Summons a drum-shaped daedra to play for you, increasing speech skill by 20 for 15 seconds.
-        * Summons a Dremora butler for 15 seconds to carry excess items.
-        * Summons a Dremora merchant for 15 seconds.
 * The fonts in Apocrypha increase magicka or stamina regeneration by 10%.
 * Agent of Mara increases the effectiveness of healing spells by 10%.
 * Sailor's Repose increases magic resistance by 5%.

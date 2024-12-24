@@ -164,8 +164,8 @@ Body
 
 * **Ebony Mail**: Magic deals 0% less damage to you (10% plus another 0.25% per murder). Fire deals 0% less damage to you (30% plus another 0.75% per murder).
 * **Savior's Hide**: Magic deals 0% less damage to you (10% plus another 3% per great beast slain). Poison deals 0% less damage to you (30% plus another 9% per great beast slain). You are 0% less likely to contract diseases (30% plus another 9% per great beast slain).
-* **Vampire Royal Cuirass**: Alteration spells cost 20% less to cast. Magicka regenerates 300% faster.
 * **Vampire Royal Cuirass**: Illusion spells cost 20% less to cast. Magicka regenerates 300% faster.
+* **Vampire Royal Cuirass**: Alteration spells cost 20% less to cast. Magicka regenerates 300% faster.
 
 Hands
 =====
@@ -393,4 +393,26 @@ Staff
     *  5% chance: The target explodes into 150 septims. If the target has more than 300 health, it is knocked back instead.
     *  5% chance: The target turns into a sweet roll. If the target has more than 300 health, it is knocked back instead.
     *  5% chance: The target is covered in cheese.
+
+Black Book
+==========
+
+* **Epistolary Acumen**: When your Fire Breath shout kills an enemy, a fire wyrm emerges from their corpse to fight for you for 60 seconds.
+* **Epistolary Acumen**: Your Unrelenting Force shout does more damage and using all three words may disintegrate enemies.
+* **Epistolary Acumen**: Your Frost Breath shout encases foes in ice for 15 seconds.
+* **Filament and Filigree**: Magicka increases by 30.
+* **Filament and Filigree**: Stamina increases by 30.
+* **Filament and Filigree**: Health increases by 30.
+* **The Hidden Twilight**: Stamina recovers by 2 per second.
+* **The Hidden Twilight**: Health recovers by 2 per second.
+* **The Hidden Twilight**: Magicka recovers by 2 per second.
+* **The Sallow Regent**: Lockpicks are 20% more durable. Pickpocketing is 10% more likely to succeed. You are 10% harder to detect. Sneak attacks deal 50% more damage to all targets.
+* **The Sallow Regent**: Spells are 10% stronger and last 10% longer.
+* **The Sallow Regent**: One-handed, two-handed, and ranged weapons deal 10% more damage. Blocking absorbs 10% more damage. Armor rating increases by 50.
+* **The Winds of Change**: Benefits of food are 50% stronger.
+* **The Winds of Change**: Attacks deal 10% more damage to people of the opposite sex. Spells are 10% stronger and last 10% longer when cast on people of the opposite sex.
+* **The Winds of Change**: Followers deal 20% more damage and their spells are 20% stronger and last 20% longer.
+* **Untold Legends**: Summons a Dremora merchant for 15 seconds.
+* **Untold Legends**: Summons a drum-shaped daedra to play for you, increasing your speech skill by 20 for 15 seconds.
+* **Untold Legends**: Summons a Dremora butler for 15 seconds to carry your excess items.
 
