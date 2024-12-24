@@ -4,7 +4,7 @@ uses REQ_Util;
 
 var
   output: TStringList;
-  re_artifact, re_jewelry, re_armor, re_weapon, re_ench_apply, re_ench_equip_ability, re_number: TPerlRegEx;
+  re_artifact, re_jewelry, re_armor, re_weapon, re_ench_apply, re_ench_equip_ability, re_black_bock, re_number: TPerlRegEx;
 
 
 function Initialize: Integer;
@@ -29,6 +29,9 @@ begin
   re_ench_equip_ability := TPerlRegEx.Create;
   re_ench_equip_ability.RegEx := '^([^_]+_Ench_[^_]+)_EquipAbility$';
 
+  re_black_bock := TPerlRegEx.Create;
+  re_black_bock.RegEx := '^[^_]+_BlackBook_[^_]+$';
+
   re_number := TPerlRegEx.Create;
   re_number.RegEx := '<[0-9]+>';
 end;
@@ -37,12 +40,13 @@ function Process(e: IInterface): Integer;
 var
   slot, description, fullName: String;
 begin
-  if (Signature(e) <> 'WEAP') and (Signature(e) <> 'ARMO') then Exit;
+  if (Signature(e) <> 'WEAP') and (Signature(e) <> 'ARMO') and (Signature(e) <> 'SPEL') then Exit;
 
   re_artifact.Subject := EditorID(e);
   re_jewelry.Subject := EditorID(e);
   re_armor.Subject := EditorID(e);
   re_weapon.Subject := EditorID(e);
+  re_black_bock.Subject := EditorID(e);
   if re_artifact.Match then
     slot := GetSlot(e)
   else if re_jewelry.Match then
@@ -51,10 +55,15 @@ begin
     slot := re_armor.Groups[3]
   else if re_weapon.Match then
     slot := re_weapon.Groups[2]
+  else if re_black_bock.Match then
+    slot := 'BlackBook'
   else
     Exit;
   fullName := GetElementNativeValues(e, 'FULL - Name');
-  description := GetItemDescription(e);
+  if re_black_bock.Match then
+    description := GetEffectsDescription(e)
+  else
+    description := GetItemDescription(e);
 
   output.Add(Format('%s,%s,%s,"%s"', [EditorID(e), slot, fullName, description]));
 end;
@@ -62,7 +71,8 @@ end;
 function Finalize: Integer;
 begin
   output.Sort;
-  output.SaveToFile(DataPath + 'tools\xEdit Scripts\export\ArtifactDescriptions.csv');
+  // output.SaveToFile(DataPath + 'tools\xEdit Scripts\export\ArtifactDescriptions.csv');
+  output.SaveToFile('C:\Skyrim Tools\Mod Organizer SSE\mods\requiem\tools\xEdit Scripts\export\ArtifactDescriptions.csv');
   output.Free;
   re_artifact.Free;
   re_jewelry.Free;
