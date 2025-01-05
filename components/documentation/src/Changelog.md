@@ -1,5 +1,37 @@
+Requiem 6.0.1 - "Unbroken Road"  Bugfix Pack #1
+===============================================
+
+Tweaks
+------
+
+* Argonian spell cost reduction at full magicka allows a grace margin of up to 5% missing magicka.
+* The Dunmer blessings are renamed to "Teachings of ..." to emphasize that they stack with normal blessings.
+* Salmon is converted into two portions of salmon meat at a cooking pot.
+
+Bug Fixes
+---------
+
+* Facial appearance issues for playable races have been fixed.
+* The distorted vision from alcohol disappears when the effect wears off.
+* Food doesn't restore magicka while under the Stone of the Atronach.
+* Perks correctly increase attack speed.
+* Muffle enchantments reduce movement noise.
+* Enchanted spheres don't have extremely high armor rating.
+* Lock bashing attempts are only considered a crime if the container or door is locked.
+* Harbinger armor can be tempered.
+* Kyne's Peace has proper visual and sound effects.
+* Kyne's Peace is marked as a shout.
+* Faster regeneration out of combat MCM option increases Stamina/MagickaRate instead of Stamina/MagickaRateMult.
+* Cyrodilic Brandy and Aged Flin apply the side effects of alcohol.
+* Argonians webs only affect swimming speed.
+* Argonian Physique mentions reduced stamina cost of swimming.
+* Racial food bonuses are described ingame.
+* A number of errors in descriptions and editor ids are fixed.
+* The Creation Club patch doesn't have a dependency on `_ResourcePack.esl`.
+
+
 Requiem 6.0.0 - "Unbroken Road"
-===================================================
+===============================
 
 Tweaks
 ------
@@ -180,7 +212,7 @@ Bug Fixes
 * Raise Dead spells don't have a secondary effect that fortifies health regeneration because the effect can't work as designed.
 * Alchemical powders don't share the vendor keyword with potions. Among other things, this fixes an incompatibility with Zxlice's Ultimate Potion Animation.
 * Dawnguard weapons have proper material keywords.
-* Lockbashing is a crime.
+* Lock bashing is a crime.
 * Mentor's Ring doesn't respawn.
 * The description of Banish Daedra and Command Daedra clarifies that the spell only affects daedra.
 * Turn Undead can affect the skeletal dragon.

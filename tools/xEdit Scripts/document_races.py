@@ -11,14 +11,6 @@ unperked_description = {
     "SneakUnperked": "You can sneak without perks.",
 }
 
-cuisine = {
-    "Argonian": "Fish ingredients are five times more nourishing.",
-    "Bosmer": "Meat is twice as nourishing.",
-    "Khajiit": "Elswyr Fondue is twice as nourishing.",
-    "Orc": "Your stomach is strong enough to digest the infamous Wrothgar Tartare, which increases health by 25.",
-}
-
-
 df = pd.read_csv("export/RaceDescriptions.csv")
 df = df.convert_dtypes()
 df = df.replace(r'<(\d+)>(?:<0>)*', r'\1', regex=True)
@@ -54,8 +46,9 @@ with open("../../components/documentation/src/Races.md", "w") as fh:
         for effect in re.split(r'(?<=\.)\s+', row.heritage):
             fh.write(f'    * {effect}\n')
         # Cuisine
-        if row.race in cuisine:
-            fh.write(f'* **{row.race} Cuisine**: {cuisine[row.race]}\n')
+        if not pd.isna(row.cuisine):
+            for effect in re.split(r'(?<=\.)\s+', row.cuisine):
+                fh.write(f'* **{row.race} Cuisine**: {row.cuisine}\n')
         # Unperked
         if not pd.isna(row.unperked):
             fh.write(f'* **Unperked Skills**:\n')

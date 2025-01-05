@@ -48,6 +48,7 @@ Argonian
     * Argonian scales increase armor rating by 80.
     * Argonian gills allow breathing underwater.
     * Argonian webs increase swimming speed by 25% while not wearing boots.
+    * Swimming consumes 75% less stamina.
 * **Argonian Heritage**:
     * Poison spells and mixtures are 25% stronger.
     * Spells cost 30% less magicka at full magicka.
@@ -135,8 +136,7 @@ Dunmer
     * Fire deals 60% less damage to you.
 * **Dunmer Heritage**:
     * Movement speed is increased by 5%.
-    * You can pray at a shrine of Azura, Boethiah or Mephala to receive their blessing.
-    * These blessings stack with all other blessings.
+    * You can pray at a shrine of Azura, Boethiah or Mephala to follow their teachings.
 * **Unperked Skills**:
     * You can sneak without perks.
     * You can create potions and poisons without perks.
