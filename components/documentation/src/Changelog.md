@@ -4,6 +4,7 @@ Requiem 6.0.1 - "Unbroken Road"  Bugfix Pack #1
 Tweaks
 ------
 
+* Healing poultices are crafted in batches of three and have a lower price instead of having multiple servings.
 * Argonian spell cost reduction at full magicka allows a grace margin of up to 5% missing magicka.
 * The Dunmer blessings are renamed to "Teachings of ..." to emphasize that they stack with normal blessings.
 * Salmon is converted into two portions of salmon meat at a cooking pot.
@@ -13,6 +14,7 @@ Bug Fixes
 
 * Facial appearance issues for playable races have been fixed.
 * The distorted vision from alcohol disappears when the effect wears off.
+* Healing poultices aren't continously added to the player's inventory.
 * Food doesn't restore magicka while under the Stone of the Atronach.
 * Perks correctly increase attack speed.
 * Muffle enchantments reduce movement noise.
