@@ -5,6 +5,8 @@ GlobalVariable Property AlcoholLevelStorage Auto
 
 Spell Property OutOfCombatRegeneration Auto
 
+Spell Property MassEffect Auto
+
 Function initScript(Int currentVersion, Int nevVersion)
 	If currentVersion > 0
 		If currentVersion <= 60000 && nevVersion >= 60001
@@ -18,5 +20,10 @@ EndFunction
 
 Function Apply_6_0_0_to_6_0_1_fixes()
 	AlcoholLevelStorage.SetValue(0.0)
+
 	Player.RemoveSpell(OutOfCombatRegeneration)
+	
+	Player.RemoveSpell(MassEffect)
+	Player.AddSpell(MassEffect, False)
+	Player.ForceActorValue("IgnoreCrippledLimbs", 0.0)
 EndFunction

@@ -74,8 +74,8 @@ EndFunction
 
 Float[] Function GetWeightClassFactors()
 	Float[] WeightClassFactors = New Float[3]
-	Float HeavyArmorMod = ClampTo(Target.GetActorValue("heavyarmormod"), 0.0, 100.0)
-	Float LightArmorMod = ClampTo(Target.GetActorValue("lightarmormod"), 0.0, 100.0)
+	Float HeavyArmorMod = ClampTo(Target.GetActorValue("HeavyArmorMod"), 0.0, 100.0)
+	Float LightArmorMod = ClampTo(Target.GetActorValue("LightArmorMod"), 0.0, 100.0)
 	WeightClassFactors[0] = 1.0 - LightArmorMod * 0.01
 	WeightClassFactors[1] = 1.0 - HeavyArmorMod * 0.01
 	WeightClassFactors[2] = 1.0 - LightArmorMod * 0.01
@@ -115,8 +115,8 @@ EndFunction
 Function UpdateMass(Float NewMass)
 	If NewMass != ActiveMass
 		Float DiffMass = NewMass - ActiveMass
-		Target.ModActorValue("mass", DiffMass)
-		Target.ModActorValue("ignorecrippledlimbs", 100 * DiffMass)
+		Target.ModActorValue("Mass", DiffMass)
+		Target.SetActorValue("AlterationSkillAdvance", 100.0 * NewMass)
 		ActiveMass = NewMass
 	EndIf
 EndFunction
@@ -124,9 +124,9 @@ EndFunction
 Function UpdatePenalty(Float NewPenalty)
 	If NewPenalty != ActivePenalty
 		Float DiffPenalty = NewPenalty - ActivePenalty
-		Target.ModActorValue("infamy", DiffPenalty)
-		Target.ModActorValue("movementnoisemult", DiffPenalty)
-		Target.ModActorValue("speedmult", -50.0 * DiffPenalty)
+		Target.ModActorValue("Infamy", DiffPenalty)
+		Target.ModActorValue("MovementNoiseMult", DiffPenalty)
+		Target.ModActorValue("SpeedMult", -50.0 * DiffPenalty)
 		ActivePenalty = NewPenalty
 	EndIf
 EndFunction
