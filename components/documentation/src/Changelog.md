@@ -4,6 +4,7 @@ Requiem 6.0.1 - "Unbroken Road"  Bugfix Pack #1
 Tweaks
 ------
 
+* Worn armor weight is stored in the unused actor value AlterationSkillAdvance instead of IgnoreCrippledLimbs to avoid a conflict with the mod "Dismembering Framework".
 * Healing poultices are crafted in batches of three and have a lower price instead of having multiple servings.
 * Argonian spell cost reduction at full magicka allows a grace margin of up to 5% missing magicka.
 * The Dunmer blessings are renamed to "Teachings of ..." to emphasize that they stack with normal blessings.
