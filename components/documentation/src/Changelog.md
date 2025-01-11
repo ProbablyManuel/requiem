@@ -29,6 +29,7 @@ Bug Fixes
 * Argonians webs only affect swimming speed.
 * Argonian Physique mentions reduced stamina cost of swimming.
 * Racial food bonuses are described ingame.
+* Recently added NPCs have a persistent location set.
 * A number of errors in descriptions and editor ids are fixed.
 * The Creation Club patch doesn't have a dependency on `_ResourcePack.esl`.
 
