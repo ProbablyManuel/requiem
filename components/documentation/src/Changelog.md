@@ -9,30 +9,30 @@ Tweaks
 * Simple meat has a shorter duration to make stews more useful.
 * Mammoth Snout is a third more nourishing than other meat (was double).
 * Argonian spell cost reduction at full magicka allows a grace margin of up to 5% missing magicka.
-* The Dunmer blessings are renamed to "Teachings of ..." to emphasize that they stack with normal blessings.
+* Dunmer blessings are renamed to "Teachings of ..." to emphasize that they stack with normal blessings.
 
 Bug Fixes
 ---------
 
 * Facial appearance issues for playable races have been fixed.
 * The distorted vision from alcohol disappears when the effect wears off.
-* Healing poultices aren't continously added to the player's inventory.
+* Healing poultices aren't continuously added to the player's inventory.
 * Food doesn't restore magicka while under the Stone of the Atronach.
 * Perks correctly increase attack speed.
 * Muffle enchantments reduce movement noise.
 * Enchanted spheres don't have extremely high armor rating.
-* Food from the Fishing DLC is integrated.
+* Food from the Fishing DLC is updated to match other food.
 * Fish ingredients from the Fishing DLC support the Argonian affinity.
-* Argonians webs only affect swimming speed.
+* Argonian webs only affect swimming speed.
 * Lock bashing attempts are only considered a crime if the container or door is locked.
 * Harbinger armor can be tempered.
 * Kyne's Peace has proper visual and sound effects.
 * Kyne's Peace is marked as a shout.
-* Faster regeneration out of combat MCM option increases Stamina/MagickaRate instead of Stamina/MagickaRateMult.
+* The "Faster regeneration out of combat" MCM option increases Stamina/MagickaRate instead of Stamina/MagickaRateMult.
 * Cyrodilic Brandy and Aged Flin apply the side effects of alcohol.
 * Argonian Physique mentions reduced stamina cost of swimming.
 * Racial food bonuses are described ingame.
-* Recently added NPCs have a persistent location set.
+* Newly added NPCs have a persistent location set.
 * A number of errors in descriptions and editor ids are fixed.
 * The Creation Club patch doesn't have a dependency on `_ResourcePack.esl`.
 
