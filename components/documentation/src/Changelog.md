@@ -1,3 +1,12 @@
+Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
+===============================================
+
+Bug Fixes
+---------
+
+* The distorted vision from alcohol disappears when multiple effects wear off.
+
+
 Requiem 6.0.1 - "Unbroken Road"  Bugfix Pack #1
 ===============================================
 
