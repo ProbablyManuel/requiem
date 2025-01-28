@@ -1,10 +1,44 @@
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
 ===============================================
 
+Tweaks
+------
+
+* `_ResourcePack.esl` is added as a dependency to patch the Aloe Vera Leaves sold by Khajiit caravans.
+* Kyne's Token reduces damage taken from animals by 15% instead of making them friendly.
+* Enchanted weapons rewarded by the Thieves Guild are either Dwarven, Elven, Orcish, or Glass materials.
+* Effects that reduce the cost of all spells are called Fortify Spells.
+* Effects that increase the strength of all spells are called Fortify Spell Power.
+* Fortify Unarmed Damage is renamed to Fortify Unarmed.
+
 Bug Fixes
 ---------
 
 * The distorted vision from alcohol disappears when multiple effects wear off.
+* Blessings don't stack when Survival Mode is enabled.
+* The Reclamations don't require an offering when Survival Mode is enabled.
+* Waterbreathing is flagged as No Magnitude as the effect doesn't apply otherwise.
+* Ashen Grass Pod has a normal magnitude for the Fortify Lockpicking effect.
+* The Dodge perk doesn't activate while standing still.
+* Healing Hands (Rank II) works correctly.
+* The Beast Stone works correctly.
+* Perks correctly increase attack speed even on existing save games.
+* Harbinger's armor can't be disenchanted.
+* Venomous dragons are resistant to elemental damage.
+* Lurkers and Seekers are weak to daedric weapons.
+* Frozen chaurus are resistant to poison.
+* Whisp shades and wisps are immune to poison and frost.
+* Creatures who fly or levitate are immune to fall damage.
+* Night eye lasts indefinitely.
+* Stability enchantment can only be applied to a cuirass, shield, boots, necklace, or ring.
+* Chaos damage has the same properties as elemental enchantments.
+* Nahkriin is flagged as unique.
+* Boots of Muffling are removed from leveled lists rather than replaced by boots enchanted with Fortify Sneaking.
+* Ebony and Glass quarterstaves and shortswords can be bought from blacksmiths who sell high-quality materials.
+* Crafting fishing rods requires Craftsmanship.
+* Stone of the Mage doesn't state that it negates the reduced magicka regeneration while running.
+* A number of errors in names and editor ids are fixed.
+* A number of dirty edits are removed.
 
 
 Requiem 6.0.1 - "Unbroken Road"  Bugfix Pack #1
