@@ -71,8 +71,7 @@ end;
 function Finalize: Integer;
 begin
   output.Sort;
-  // output.SaveToFile(DataPath + 'tools\xEdit Scripts\export\ArtifactDescriptions.csv');
-  output.SaveToFile('C:\Skyrim Tools\Mod Organizer SSE\mods\requiem\tools\xEdit Scripts\export\ArtifactDescriptions.csv');
+  output.SaveToFile(DataPath + 'tools\xEdit Scripts\export\ArtifactDescriptions.csv');
   output.Free;
   re_artifact.Free;
   re_jewelry.Free;

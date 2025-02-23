@@ -59,8 +59,7 @@ function Finalize: Integer;
 begin
   output.Sort;
   output.Insert(0, 'race,health,magicka,stamina,carry_weight,unarmed_damage,magicka_rate,stamina_rate,blood,physique,heritage,cuisine,unperked,skill');
-  // output.SaveToFile(DataPath + 'tools\xEdit Scripts\export\RaceDescriptions.csv');
-  output.SaveToFile('C:\Skyrim Tools\Mod Organizer SSE\mods\requiem\tools\xEdit Scripts\export\RaceDescriptions.csv');
+  output.SaveToFile(DataPath + 'tools\xEdit Scripts\export\RaceDescriptions.csv');
   output.Free;
   re_blood.Free;
   re_cuisine.Free;
