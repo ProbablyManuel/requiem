@@ -18,14 +18,14 @@ namespace ReqtificatorTest
     internal class ErrorOrAssertions<T> :
         ReferenceTypeAssertions<ErrorOr<T>, ErrorOrAssertions<T>>
     {
-        public ErrorOrAssertions(ErrorOr<T> instance) : base(instance) { }
+        public ErrorOrAssertions(ErrorOr<T> instance) : base(instance, AssertionChain.GetOrCreate()) { }
 
         protected override string Identifier => "directory";
 
         public AndConstraint<ErrorOrAssertions<T>> BeASuccess(Action<T> assertions, string because = "",
             params object[] becauseArgs)
         {
-            Execute.Assertion
+            CurrentAssertionChain
                 .BecauseOf(because, becauseArgs)
                 .ForCondition(Subject is Success<T>)
                 .FailWith("Expected a 'Success', but got a 'Failed'")
@@ -40,7 +40,7 @@ namespace ReqtificatorTest
         public AndConstraint<ErrorOrAssertions<T>> BeAFailed(Action<ReqtificatorException> assertions, string because = "",
             params object[] becauseArgs)
         {
-            Execute.Assertion
+            CurrentAssertionChain
                 .BecauseOf(because, becauseArgs)
                 .ForCondition(Subject is Failed<T>)
                 .FailWith("Expected a 'Failed', but got a 'Success'")

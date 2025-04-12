@@ -127,7 +127,7 @@ namespace Reqtificator.Transformers.Races
 
         private static bool CompareSimpleModel(ISimpleModelGetter reference, ISimpleModelGetter other)
         {
-            return reference.File.DataRelativePath.Equals(other.File.DataRelativePath, StringComparison.Ordinal);
+            return reference.File.DataRelativePath.Path.Equals(other.File.DataRelativePath.Path, StringComparison.Ordinal);
         }
 
         private bool CompareHeadparts(IHeadDataGetter reference, IHeadDataGetter other)
