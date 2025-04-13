@@ -121,6 +121,7 @@ namespace Reqtificator
             return null;
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1869:Cache and reuse 'JsonSerializerOptions' instances", Justification = "This function executes only once")]
         private static Config ReadJsonWithCommentsAsHocon(string filename)
         {
             string jsonString = File.ReadAllText(filename);
