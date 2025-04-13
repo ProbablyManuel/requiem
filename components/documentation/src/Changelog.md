@@ -1,3 +1,12 @@
+Requiem 6.0.3 - "Unbroken Road"  Bugfix Pack #3
+===============================================
+
+Reqtificator
+------------
+
+* All dependencies of the Reqtificator are updated to the latest version.
+
+
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
 ===============================================
 
