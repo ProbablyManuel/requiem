@@ -81,12 +81,12 @@ namespace Reqtificator
         {
             var missingDependencies = new List<BugfixDependency>()
             {
-                new BugfixDependency("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
-                new BugfixDependency("Dual Casting Fix", "SKSE/Plugins/po3_DualCastingFix.dll", "NexusMods", Uris.DualCastingFix),
-                new BugfixDependency("Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
-                new BugfixDependency("Scrambled Bugs", "SKSE/Plugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs),
-                new BugfixDependency("Script Effect Archetype Crash Fix (Scrambled Bugs)", "SKSE/Plugins/ScriptEffectArchetypeCrashFix.dll", "NexusMods", Uris.ScrambledBugs),
-                new BugfixDependency("Vendor Respawn Fix (Scrambled Bugs)", "SKSE/Plugins/VendorRespawnFix.dll", "NexusMods", Uris.ScrambledBugs)
+                new("Bug Fixes", "SKSE/Plugins/BugFixesSSE.dll", "NexusMods", Uris.BugFixes),
+                new("Dual Casting Fix", "SKSE/Plugins/po3_DualCastingFix.dll", "NexusMods", Uris.DualCastingFix),
+                new("Engine Fixes", "SKSE/Plugins/EngineFixes.dll", "NexusMods", Uris.EngineFixes),
+                new("Scrambled Bugs", "SKSE/Plugins/ScrambledBugs.dll", "NexusMods", Uris.ScrambledBugs),
+                new("Script Effect Archetype Crash Fix (Scrambled Bugs)", "SKSE/Plugins/ScriptEffectArchetypeCrashFix.dll", "NexusMods", Uris.ScrambledBugs),
+                new("Vendor Respawn Fix (Scrambled Bugs)", "SKSE/Plugins/VendorRespawnFix.dll", "NexusMods", Uris.ScrambledBugs)
             }.FindAll(d => !File.Exists(d.ExpectedLocation));
 
             if (missingDependencies.Count > 0)
@@ -101,8 +101,8 @@ namespace Reqtificator
                 {
                     var disabledScrambledBugsPatches = new List<ScrambledBugsPatch>()
                     {
-                        new ScrambledBugsPatch("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
-                        new ScrambledBugsPatch("Power Attack Stamina", "patches.powerAttackStamina")
+                        new("Perk Entry Points: Apply Multiple Spells", "patches.perkEntryPoints.applyMultipleSpells"),
+                        new("Power Attack Stamina", "patches.powerAttackStamina")
                     }.FindAll(d => !config.GetBoolean(d.Key));
                     if (disabledScrambledBugsPatches.Count > 0)
                     {
