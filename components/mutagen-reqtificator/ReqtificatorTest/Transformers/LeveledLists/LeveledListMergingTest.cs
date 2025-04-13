@@ -17,19 +17,19 @@ namespace ReqtificatorTest.Transformers.LeveledLists
     public class LeveledListMergingTest
     {
         private readonly LeveledItem.TranslationMask _mask = new(defaultOn: true) { Entries = false };
-        public static readonly FormLink<Armor> ItemRef1 = new(FormKey.Factory("ABC123:Skyrim.esm"));
-        public static readonly FormLink<Armor> ItemRef2 = new(FormKey.Factory("ABC456:Skyrim.esm"));
-        public static readonly FormLink<Armor> ItemRef3 = new(FormKey.Factory("ABC789:Skyrim.esm"));
+        private static readonly FormLink<Armor> ItemRef1 = new(FormKey.Factory("ABC123:Skyrim.esm"));
+        private static readonly FormLink<Armor> ItemRef2 = new(FormKey.Factory("ABC456:Skyrim.esm"));
+        private static readonly FormLink<Armor> ItemRef3 = new(FormKey.Factory("ABC789:Skyrim.esm"));
 
-        public static readonly ModKey Requiem = new("Requiem", ModType.Plugin);
-        public static readonly ModKey Patch1 = new("Epic Loot", ModType.Plugin);
-        public static readonly ModKey Patch2 = new("Serious Loot", ModType.Light);
+        private static readonly ModKey Requiem = new("Requiem", ModType.Plugin);
+        private static readonly ModKey Patch1 = new("Epic Loot", ModType.Plugin);
+        private static readonly ModKey Patch2 = new("Serious Loot", ModType.Light);
 
-        public static readonly SkyrimMod ModRequiem = new(Requiem, SkyrimRelease.SkyrimSE);
-        public static readonly SkyrimMod ModPatch1 = new(Patch1, SkyrimRelease.SkyrimSE);
-        public static readonly SkyrimMod ModPatch2 = new(Patch2, SkyrimRelease.SkyrimSE);
+        private static readonly SkyrimMod ModRequiem = new(Requiem, SkyrimRelease.SkyrimSE);
+        private static readonly SkyrimMod ModPatch1 = new(Patch1, SkyrimRelease.SkyrimSE);
+        private static readonly SkyrimMod ModPatch2 = new(Patch2, SkyrimRelease.SkyrimSE);
 
-        public static readonly IImmutableSet<ModKey> ModsWithRequiemAsMaster =
+        private static readonly IImmutableSet<ModKey> ModsWithRequiemAsMaster =
             ImmutableHashSet<ModKey>.Empty.Add(Patch1).Add(Patch2);
 
         //TODO: rewrite the entire test suite using a proper load order object instead of mocking library classes
