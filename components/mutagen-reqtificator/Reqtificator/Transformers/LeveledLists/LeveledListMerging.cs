@@ -141,7 +141,7 @@ namespace Reqtificator.Transformers.LeveledLists
             var deletions = baseEntries.Where(e => !otherEntries.ContainsKey(e.Key))
                 .Select(e => new Change(Operation.Deletion, e.Key, -e.Value));
 
-            return additions.Concat(modifications).Concat(deletions).ToImmutableList();
+            return [.. additions, .. modifications, .. deletions];
         }
     }
 }
