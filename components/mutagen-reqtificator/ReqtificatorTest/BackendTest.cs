@@ -20,7 +20,7 @@ namespace ReqtificatorTest
                 _ = new Armor(dummyMod, $"item{i}");
             }
             string tempDir = Path.GetTempPath();
-            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>();
+            var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>();
 
             var outcome = Backend.WritePatchToDisk(dummyMod, tempDir, loadOrder);
             outcome.Should().BeNull();
@@ -31,7 +31,7 @@ namespace ReqtificatorTest
         public void Should_return_a_failed_outcome_if_there_are_too_many_masters()
         {
             var dummyMod = new SkyrimMod(new ModKey("export", ModType.Plugin), SkyrimRelease.SkyrimSE);
-            ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>();
+            var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>();
             for (int i = 1; i < 260; i++)
             {
                 var modKey = new ModKey($"dependency{i}", ModType.Plugin);
