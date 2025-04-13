@@ -305,7 +305,7 @@ namespace Reqtificator
             var patchedActorsPseudoMod =
                 new SkyrimMod(new ModKey("RTFI_patchedActors", ModType.Plugin), SkyrimRelease.SkyrimSE);
             var pseudoModListing = new ModListing<ISkyrimModGetter>(patchedActorsPseudoMod);
-            patchedActors.ForEach(r => patchedActorsPseudoMod.Npcs.Add(r));
+            patchedActors.ForEach(patchedActorsPseudoMod.Npcs.Add);
             var linkCacheWithPatchedActors = loadOrder.ListedOrder.Append(pseudoModListing)
                 .ToImmutableLinkCache<ISkyrimMod, ISkyrimModGetter>();
 

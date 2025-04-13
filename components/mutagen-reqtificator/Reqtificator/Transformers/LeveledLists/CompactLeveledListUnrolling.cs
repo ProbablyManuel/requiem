@@ -18,7 +18,7 @@ namespace Reqtificator.Transformers.LeveledLists
                 return input;
             }
 
-            return input.Modify(record => _unroller.UnrollLeveledList(record));
+            return input.Modify(_unroller.UnrollLeveledList);
         }
     }
 }
