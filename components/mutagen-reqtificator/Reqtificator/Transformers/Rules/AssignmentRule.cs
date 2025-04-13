@@ -55,7 +55,7 @@ namespace Reqtificator.Transformers.Rules
                 return assignments.ToImmutableList().AddRange(subAssignments);
             }
 
-            return ImmutableList<Assignment<TAssign>>.Empty;
+            return [];
         }
 
         public override bool Equals(object? obj)

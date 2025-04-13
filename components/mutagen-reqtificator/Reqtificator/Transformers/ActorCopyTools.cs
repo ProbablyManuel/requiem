@@ -241,7 +241,7 @@ namespace Reqtificator.Transformers
                 NpcConfiguration.TemplateFlag.BaseData => InheritBaseDataFlags,
                 NpcConfiguration.TemplateFlag.Stats => InheritStatsFlags,
                 NpcConfiguration.TemplateFlag.Traits => InheritTraitsFlags,
-                _ => ImmutableList<NpcConfiguration.Flag>.Empty
+                _ => []
             };
             flagsToCopy.ForEach(CopyFlagValue);
         }
