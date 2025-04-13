@@ -1,5 +1,6 @@
 ﻿[*.cs]
 dotnet_diagnostic.CA1707.severity = none # allow _ in function names to improve test case readability
 dotnet_diagnostic.CA1034.severity = none # allow nested public types to have grouped tests inside a single test suite
+dotnet_diagnostic.CA1515.severity = none # test classes must be public
 dotnet_diagnostic.CA2000.severity = none # don't enforce explicit disposing of disposable objects in test code
 dotnet_diagnostic.IDE0058.severity = none # allow to ignore th return value of Fluent Assertions

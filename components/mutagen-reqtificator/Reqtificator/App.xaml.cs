@@ -7,6 +7,7 @@ using Serilog;
 
 namespace Reqtificator
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Maintainability", "CA1515:Consider making public types internal", Justification = "Accessibility modifiers are defined by the generated class")]
     public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)

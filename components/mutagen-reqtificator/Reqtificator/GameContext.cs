@@ -7,7 +7,7 @@ using Mutagen.Bethesda.Plugins.Order;
 
 namespace Reqtificator
 {
-    public record GameContext(ImmutableList<ILoadOrderListingGetter> ActiveMods, string DataFolder, GameRelease Release)
+    internal record GameContext(ImmutableList<ILoadOrderListingGetter> ActiveMods, string DataFolder, GameRelease Release)
     {
         public static bool IsAvailable(GameRelease release)
         {

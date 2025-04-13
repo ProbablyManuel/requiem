@@ -10,10 +10,10 @@ using Reqtificator.Exceptions;
 
 namespace Reqtificator.Transformers.Rules
 {
-    public record Assignment<TAssign>(IFormLinkGetter<TAssign> ToAssign, string SourceRule)
+    internal record Assignment<TAssign>(IFormLinkGetter<TAssign> ToAssign, string SourceRule)
         where TAssign : class, IMajorRecordGetter;
 
-    public interface IAssignmentCondition<TMajorGetter> where TMajorGetter : IMajorRecordGetter
+    internal interface IAssignmentCondition<TMajorGetter> where TMajorGetter : IMajorRecordGetter
     {
         public bool CheckRecord(TMajorGetter record);
     }

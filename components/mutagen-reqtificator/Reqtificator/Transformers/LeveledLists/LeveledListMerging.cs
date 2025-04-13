@@ -11,7 +11,7 @@ namespace Reqtificator.Transformers.LeveledLists
 {
     internal static class LeveledListMerging
     {
-        public record LeveledListEntry(FormKey Reference, int Level, int Count);
+        internal record LeveledListEntry(FormKey Reference, int Level, int Count);
     }
 
     internal class LeveledListMerging<T, TI, TGetter, TEntry> : Transformer<T, TI, TGetter> where T : MajorRecord, TI

@@ -7,7 +7,7 @@ using Mutagen.Bethesda.Skyrim;
 
 namespace Reqtificator.Exceptions
 {
-    public abstract class ReqtificatorException : Exception
+    internal abstract class ReqtificatorException : Exception
     {
         protected ReqtificatorException()
         {
@@ -18,7 +18,7 @@ namespace Reqtificator.Exceptions
         }
     }
 
-    public class RecordProcessingException<T> : ReqtificatorException where T : class, IMajorRecordGetter
+    internal class RecordProcessingException<T> : ReqtificatorException where T : class, IMajorRecordGetter
     {
         public T ProcessedRecord { get; }
         public ModKey LastOverwrite { get; }
@@ -42,7 +42,7 @@ namespace Reqtificator.Exceptions
         }
     }
 
-    public class CircularInheritanceException : ReqtificatorException
+    internal class CircularInheritanceException : ReqtificatorException
     {
         public IReadOnlyList<(ModKey, INpcSpawnGetter)> TemplateChain { get; }
         public INpcSpawnGetter Duplicate { get; }
@@ -73,7 +73,7 @@ namespace Reqtificator.Exceptions
         }
     }
 
-    public class MissingTemplateException : ReqtificatorException
+    internal class MissingTemplateException : ReqtificatorException
     {
         public IReadOnlyList<(ModKey, INpcSpawnGetter)> TemplateChain { get; }
         public IFormLinkGetter<INpcSpawnGetter> MissingTemplate { get; }
@@ -105,7 +105,7 @@ namespace Reqtificator.Exceptions
         }
     }
 
-    public class InvalidRecordReferenceException<T> : ReqtificatorException where T : class, IMajorRecordGetter
+    internal class InvalidRecordReferenceException<T> : ReqtificatorException where T : class, IMajorRecordGetter
     {
         public IFormLinkGetter<T> Unresolved { get; }
         public IMajorRecordGetter ParentRecord { get; }
@@ -132,7 +132,7 @@ namespace Reqtificator.Exceptions
         }
     }
 
-    public class RuleConfigurationParsingException : ReqtificatorException
+    internal class RuleConfigurationParsingException : ReqtificatorException
     {
         public string SourceFile { get; }
         public string FailingPath { get; }
@@ -153,7 +153,7 @@ namespace Reqtificator.Exceptions
         public override string Message => $"failed to parse path '{FailingPath}' in file '{SourceFile}'";
     }
 
-    public class InvalidTemperingDataException : ReqtificatorException
+    internal class InvalidTemperingDataException : ReqtificatorException
     {
         public IFormLinkGetter<ILeveledItemGetter> SourceRecord { get; }
 
@@ -171,7 +171,7 @@ namespace Reqtificator.Exceptions
         public override string Message => $"record '{SourceRecord.FormKey}' contains invalid tempering data";
     }
 
-    public class MissingDependencyException : ReqtificatorException
+    internal class MissingDependencyException : ReqtificatorException
     {
         public MissingDependencyException(string missingDependency)
         {
@@ -183,7 +183,7 @@ namespace Reqtificator.Exceptions
         public string MissingDependency { get; }
     }
 
-    public class VersionMismatchException : ReqtificatorException
+    internal class VersionMismatchException : ReqtificatorException
     {
         public VersionMismatchException(RequiemVersion pluginVersion, RequiemVersion patcherVersion)
         {
@@ -198,7 +198,7 @@ namespace Reqtificator.Exceptions
         public RequiemVersion PatcherVersion { get; }
     }
 
-    public class MissingMastersException : ReqtificatorException
+    internal class MissingMastersException : ReqtificatorException
     {
         public ModKey AffectedMod { get; }
         public IReadOnlyList<ModKey> MissingMasters { get; }
@@ -220,7 +220,7 @@ namespace Reqtificator.Exceptions
         }
     }
 
-    public class ModFromLoadOrderNotFoundException : ReqtificatorException
+    internal class ModFromLoadOrderNotFoundException : ReqtificatorException
     {
         public ModKey AffectedMod { get; }
 
@@ -232,7 +232,7 @@ namespace Reqtificator.Exceptions
         public override string Message => $"The mod \"{AffectedMod}\" is specified in your load order, but could not be found.";
     }
 
-    public class OversizedLeveledListException : ReqtificatorException
+    internal class OversizedLeveledListException : ReqtificatorException
     {
         public FormKey FormID { get; }
         public string? EditorID { get; }

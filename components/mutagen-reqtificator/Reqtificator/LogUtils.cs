@@ -26,7 +26,7 @@ namespace Reqtificator
         }
     }
 
-    public static class LogUtils
+    internal static class LogUtils
     {
         public const string DefaultLogFileName = "Reqtificator.log";
 

@@ -27,7 +27,7 @@ using Serilog.Events;
 //TODO: figure out why I need to do this when adding Mutagen as a dependency
 namespace System.Runtime.CompilerServices
 {
-    public record IsExternalInit;
+    internal record IsExternalInit;
 }
 
 namespace Reqtificator

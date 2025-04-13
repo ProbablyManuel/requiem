@@ -4,7 +4,7 @@ using Reqtificator.Utils;
 
 namespace Reqtificator.Events
 {
-    public abstract class ReqtificatorFailure : ReqtificatorOutcome
+    internal abstract class ReqtificatorFailure : ReqtificatorOutcome
     {
         public abstract Exception Exception { get; }
 

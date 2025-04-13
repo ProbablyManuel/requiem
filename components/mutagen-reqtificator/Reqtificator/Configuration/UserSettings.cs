@@ -3,7 +3,7 @@ using Hocon;
 
 namespace Reqtificator.Configuration
 {
-    public record UserSettings(
+    internal record UserSettings(
         bool VerboseLogging,
         bool MergeLeveledLists,
         bool MergeLeveledCharacters,

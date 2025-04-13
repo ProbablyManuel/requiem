@@ -66,15 +66,15 @@ namespace Reqtificator.Configuration
         }
     }
 
-    public record PlayerConfig(int HealthOffset, int MagickaOffset, int StaminaOffset,
+    internal record PlayerConfig(int HealthOffset, int MagickaOffset, int StaminaOffset,
         IReadOnlyList<IFormLinkGetter<ISpellGetter>> SpellsToRemove);
 
-    public record ArmorPatchingConfiguration(
+    internal record ArmorPatchingConfiguration(
         ArmorRatingThresholds HeavyArmorRatingThresholds,
         ArmorRatingThresholds LightArmorRatingThresholds
     );
 
-    public record ArmorRatingThresholds(
+    internal record ArmorRatingThresholds(
         float Body,
         float Feet,
         float Hands,

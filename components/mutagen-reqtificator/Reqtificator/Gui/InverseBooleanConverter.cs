@@ -5,7 +5,7 @@ using System.Windows.Data;
 namespace Reqtificator.Gui
 {
     [ValueConversion(typeof(bool), typeof(bool))]
-    public class InverseBooleanConverter : IValueConverter
+    internal class InverseBooleanConverter : IValueConverter
     {
         #region IValueConverter Members
 
