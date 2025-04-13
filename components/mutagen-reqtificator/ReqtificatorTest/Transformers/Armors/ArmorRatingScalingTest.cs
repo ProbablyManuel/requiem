@@ -166,7 +166,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keywords.ArmorBody },
+                Keywords = [Keywords.ArmorBody],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
                 ArmorRating = 42.0f
             };
@@ -185,8 +185,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
-                    {Keywords.ArmorBody, Keywords.AlreadyReqtified},
+                Keywords = [Keywords.ArmorBody, Keywords.AlreadyReqtified],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
                 ArmorRating = 42.0f
             };
@@ -205,8 +204,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
-                    {Keywords.ArmorBody, Keywords.NoArmorRatingRescaling},
+                Keywords = [Keywords.ArmorBody, Keywords.NoArmorRatingRescaling],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
                 ArmorRating = 42.0f
             };

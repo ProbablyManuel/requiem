@@ -24,7 +24,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
         {
             var armor = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, Keyword2, OtherKeyword }
+                Keywords = [Keyword1, Keyword2, OtherKeyword]
             };
 
             var condition = new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
@@ -37,7 +37,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
         {
             var armor = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, OtherKeyword }
+                Keywords = [Keyword1, OtherKeyword]
             };
 
             var condition = new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty
@@ -50,7 +50,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
         {
             var armor = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword }
+                Keywords = [OtherKeyword]
             };
 
             var condition = new HasAllKeywords<IArmorGetter>(ImmutableHashSet<IFormLinkGetter<IKeywordGetter>>.Empty

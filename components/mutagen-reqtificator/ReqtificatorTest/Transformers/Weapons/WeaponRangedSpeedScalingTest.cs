@@ -49,14 +49,14 @@ namespace ReqtificatorTest.Transformers.Weapons
                     AnimationType = WeaponAnimationType.Bow,
                     Speed = 0.75f
                 },
-                Keywords = new KeywordList { otherKeyword }
+                Keywords = [otherKeyword]
             };
             var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
             result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
             result.Record().Equals(input, _verificationMask).Should().BeTrue();
             result.Record().Data!.Speed.Should().BeApproximately(0.3704f, 0.01f);
-            result.Record().Keywords!.Should().Contain(new KeywordList { Keywords.WeaponBowHeavy, otherKeyword });
+            result.Record().Keywords!.Should().Contain([Keywords.WeaponBowHeavy, otherKeyword]);
         }
 
         [Fact]
@@ -72,14 +72,14 @@ namespace ReqtificatorTest.Transformers.Weapons
                     AnimationType = WeaponAnimationType.Crossbow,
                     Speed = 0.75f
                 },
-                Keywords = new KeywordList { otherKeyword }
+                Keywords = [otherKeyword]
             };
             var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
             result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
             result.Record().Equals(input, _verificationMask).Should().BeTrue();
             result.Record().Data!.Speed.Should().BeApproximately(0.4445f, 0.01f);
-            result.Record().Keywords!.Should().Contain(new KeywordList { Keywords.WeaponCrossbowHeavy, otherKeyword });
+            result.Record().Keywords!.Should().Contain([Keywords.WeaponCrossbowHeavy, otherKeyword]);
         }
 
         [Fact]
@@ -97,7 +97,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Speed = 1.0f
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -121,7 +121,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Speed = 1.0f
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.AlreadyReqtified }
+                    Keywords = [otherKeyword, Keywords.AlreadyReqtified]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -146,7 +146,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Speed = 1.0f
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.NoWeaponSpeedRescaling }
+                    Keywords = [otherKeyword, Keywords.NoWeaponSpeedRescaling]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -171,7 +171,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         Speed = 1.0f,
                         Flags = WeaponData.Flag.NonPlayable
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -195,7 +195,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Speed = 1.0f
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     Template = new FormLinkNullable<IWeaponGetter>(FormKey.Factory("ABCDEF:Requiem.esp"))
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));

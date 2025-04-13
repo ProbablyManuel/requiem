@@ -21,12 +21,11 @@ namespace ReqtificatorTest.Transformers.Weapons
         {
             var input = new Weapon(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { CheckKeywordNode1, CheckKeywordRoot },
+                Keywords = [CheckKeywordNode1, CheckKeywordRoot],
                 Template = new FormLinkNullable<IWeaponGetter>(FormKey.Null)
             };
 
-            var transformer = new WeaponKeywordsFromRules(new List<AssignmentRule<IWeaponGetter, IKeywordGetter>>
-                {TestRule});
+            var transformer = new WeaponKeywordsFromRules([TestRule]);
 
             var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
             result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
@@ -40,13 +39,11 @@ namespace ReqtificatorTest.Transformers.Weapons
         {
             var input = new Weapon(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
-                    {CheckKeywordNode1, CheckKeywordNode2, CheckKeywordRoot},
+                Keywords = [CheckKeywordNode1, CheckKeywordNode2, CheckKeywordRoot],
                 Template = new FormLinkNullable<IWeaponGetter>(FormKey.Null)
             };
 
-            var transformer = new WeaponKeywordsFromRules(new List<AssignmentRule<IWeaponGetter, IKeywordGetter>>
-                {TestRule});
+            var transformer = new WeaponKeywordsFromRules([TestRule]);
 
             var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
             result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
@@ -60,12 +57,11 @@ namespace ReqtificatorTest.Transformers.Weapons
         {
             var input = new Weapon(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { CheckKeywordNode1, CheckKeywordNode2 },
+                Keywords = [CheckKeywordNode1, CheckKeywordNode2],
                 Template = new FormLinkNullable<IWeaponGetter>(FormKey.Null)
             };
 
-            var transformer = new WeaponKeywordsFromRules(new List<AssignmentRule<IWeaponGetter, IKeywordGetter>>
-                {TestRule});
+            var transformer = new WeaponKeywordsFromRules([TestRule]);
 
             var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
             result.Should().BeOfType<UnChanged<Weapon, IWeaponGetter>>();
@@ -77,12 +73,11 @@ namespace ReqtificatorTest.Transformers.Weapons
         {
             var input = new Weapon(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { CheckKeywordNode1, CheckKeywordRoot },
+                Keywords = [CheckKeywordNode1, CheckKeywordRoot],
                 Template = new FormLinkNullable<IWeaponGetter>(FormKey.Factory("ABCDEF:Template.esm"))
             };
 
-            var transformer = new WeaponKeywordsFromRules(new List<AssignmentRule<IWeaponGetter, IKeywordGetter>>
-                {TestRule});
+            var transformer = new WeaponKeywordsFromRules([TestRule]);
 
             var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
             result.Should().BeOfType<UnChanged<Weapon, IWeaponGetter>>();

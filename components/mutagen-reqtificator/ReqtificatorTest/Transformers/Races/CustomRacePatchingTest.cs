@@ -24,7 +24,7 @@ namespace ReqtificatorTest.Transformers.Races
             var record = new Race(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Flags = Race.Flag.Playable,
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>> { otherSpell },
+                ActorEffect = [otherSpell],
                 Starting = { { BasicStat.Health, 60f }, { BasicStat.Magicka, 40f }, { BasicStat.Stamina, 50f } },
                 Regen = { { BasicStat.Health, 2.0f }, { BasicStat.Magicka, 0.5f }, { BasicStat.Stamina, 2.0f } },
                 UnarmedDamage = 42f,
@@ -63,7 +63,7 @@ namespace ReqtificatorTest.Transformers.Races
             var record = new Race(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Flags = Race.Flag.Swims,
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>>(),
+                ActorEffect = [],
                 Starting =
                 {
                     { BasicStat.Health, 50f },
@@ -84,8 +84,7 @@ namespace ReqtificatorTest.Transformers.Races
             var record = new Race(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Flags = Race.Flag.Playable,
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>>()
-                    { Spells.MassEffectBase, Spells.MassEffectNpc },
+                ActorEffect = [Spells.MassEffectBase, Spells.MassEffectNpc],
                 Starting =
                 {
                     { BasicStat.Health, 100f },

@@ -22,11 +22,11 @@ namespace ReqtificatorTest.Transformers.LeveledCharacters
             var input = new LeveledNpc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_CLChar_BossMonsters",
-                Entries = new ExtendedList<LeveledNpcEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledNpcEntryData {Count = 3, Level = 1, Reference = itemRef1}},
                     new() {Data = new LeveledNpcEntryData {Count = 2, Level = 1, Reference = itemRef2}}
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new CompactLeveledCharacterUnroller(ImmutableHashSet.Create(modKey));
@@ -53,11 +53,11 @@ namespace ReqtificatorTest.Transformers.LeveledCharacters
             var input = new LeveledNpc(FormKey.Factory("123456:UnregisteredMod.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_CLChar_BossMonsters",
-                Entries = new ExtendedList<LeveledNpcEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledNpcEntryData {Count = 3, Level = 1, Reference = itemRef1}},
                     new() {Data = new LeveledNpcEntryData {Count = 2, Level = 1, Reference = itemRef2}}
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var unroller = new CompactLeveledCharacterUnroller(ImmutableHashSet.Create(modKey));
@@ -73,11 +73,11 @@ namespace ReqtificatorTest.Transformers.LeveledCharacters
             var input = new LeveledNpc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "Does_not_start_with_the_expected_'<ModPrefix>_CLChar'_pattern",
-                Entries = new ExtendedList<LeveledNpcEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledNpcEntryData {Count = 3, Level = 1, Reference = itemRef1}},
                     new() {Data = new LeveledNpcEntryData {Count = 2, Level = 1, Reference = itemRef2}}
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var unroller = new CompactLeveledCharacterUnroller(ImmutableHashSet.Create(modKey));

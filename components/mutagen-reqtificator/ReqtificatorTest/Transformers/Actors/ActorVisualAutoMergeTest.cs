@@ -16,23 +16,23 @@ namespace ReqtificatorTest.Transformers.Actors
             return new Npc(FormKey.Factory("123456:Skyrim.esm"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = editorId,
-                HeadParts = new ExtendedList<IFormLinkGetter<IHeadPartGetter>>
-                {
+                HeadParts =
+                [
                     new FormLink<IHeadPartGetter>(FormKey.Factory("0000AB:Skyrim.esm")),
                     new FormLink<IHeadPartGetter>(FormKey.Factory("0000CD:Skyrim.esm")),
                     new FormLink<IHeadPartGetter>(FormKey.Factory("0000EF:Skyrim.esm"))
-                },
+                ],
                 TextureLighting = Color.DarkBlue,
                 FaceMorph = new NpcFaceMorph
                 {
                     BrowsForwardVsBack = 0.4f,
                     BrowsInVsOut = 0.5f
                 },
-                TintLayers = new ExtendedList<TintLayer>
-                {
+                TintLayers =
+                [
                     new TintLayer() { Color = Color.Black, Index = 0, InterpolationValue = 0.5f, Preset = 0 },
                     new TintLayer() { Color = Color.GreenYellow, Index = 1, InterpolationValue = 0.4f, Preset = 1 },
-                },
+                ],
                 Height = 1.1f,
                 HairColor = new FormLinkNullable<IColorRecordGetter>(FormKey.Factory("1111AB:Skyrim.esm")),
                 Weight = 0.5f

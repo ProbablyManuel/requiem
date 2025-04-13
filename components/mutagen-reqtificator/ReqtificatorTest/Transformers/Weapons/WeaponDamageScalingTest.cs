@@ -54,7 +54,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 },
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -79,7 +79,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 },
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -104,7 +104,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -127,7 +127,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.AlreadyReqtified },
+                    Keywords = [otherKeyword, Keywords.AlreadyReqtified],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -150,7 +150,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.NoDamageRescaling },
+                    Keywords = [otherKeyword, Keywords.NoDamageRescaling],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));

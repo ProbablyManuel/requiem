@@ -51,7 +51,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.MinorCrime
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -76,7 +76,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.MinorCrime
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -100,7 +100,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.MinorCrime
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.AlreadyReqtified }
+                    Keywords = [otherKeyword, Keywords.AlreadyReqtified]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -124,7 +124,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.NonPlayable
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -148,7 +148,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.NPCsUseAmmo
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -172,7 +172,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.MinorCrime
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     Template = new FormLinkNullable<IWeaponGetter>(FormKey.Factory("ABCDEF:Requiem.esp"))
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));

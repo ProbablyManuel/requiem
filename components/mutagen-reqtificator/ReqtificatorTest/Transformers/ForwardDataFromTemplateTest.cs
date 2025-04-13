@@ -48,8 +48,8 @@ namespace ReqtificatorTest.Transformers
                         active);
 
                 Cache.Setup(c => c.ResolveAllContexts<Npc, INpcGetter>(Record, ResolveTarget.Winner))
-                    .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>>
-                    {
+                    .Returns(
+                    [
                         new ModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>(DataMod,
                             DataRecord, null!, null!),
                         new ModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>(UnrelatedMod,
@@ -58,7 +58,7 @@ namespace ReqtificatorTest.Transformers
                             VisualRecord, null!, null!),
                         new ModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>(Skyrim,
                             SkyrimRecord, null!, null!)
-                    });
+                    ]);
                 Cache.Setup(c => c.ResolveContext<Npc, INpcGetter>(Record, ResolveTarget.Winner)).Returns(
                     new ModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>(DataMod, DataRecord, null!, null!));
             }

@@ -30,24 +30,24 @@ namespace ReqtificatorTest.Transformers.Races
             {
                 return new HeadData()
                 {
-                    AvailableHairColors = new ExtendedList<IFormLinkGetter<IColorRecordGetter>>
-                    {
+                    AvailableHairColors =
+                    [
                         new FormLink<IColorRecordGetter>(HeadPartDummy1),
                         new FormLink<IColorRecordGetter>(HeadPartDummy2)
-                    },
-                    FaceDetails = new ExtendedList<IFormLinkGetter<ITextureSetGetter>>
-                    {
+                    ],
+                    FaceDetails =
+                    [
                         new FormLink<ITextureSetGetter>(HeadPartDummy1), new FormLink<ITextureSetGetter>(HeadPartDummy2)
-                    },
-                    HeadParts = new ExtendedList<HeadPartReference>
-                    {
+                    ],
+                    HeadParts =
+                    [
                         new HeadPartReference{Head = new FormLinkNullable<IHeadPartGetter>(HeadPartDummy1)},
                         new HeadPartReference{Head = new FormLinkNullable<IHeadPartGetter>(HeadPartDummy2)}
-                    },
-                    RacePresets = new ExtendedList<IFormLinkGetter<INpcGetter>>
-                    {
+                    ],
+                    RacePresets =
+                    [
                         new FormLink<INpcGetter>(HeadPartDummy1), new FormLink<INpcGetter>(HeadPartDummy2)
-                    }
+                    ]
                 };
             }
 

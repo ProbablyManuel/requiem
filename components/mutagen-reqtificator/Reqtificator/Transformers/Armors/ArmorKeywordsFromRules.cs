@@ -31,7 +31,7 @@ namespace Reqtificator.Transformers.Armors
             {
                 return input.Modify(record =>
                 {
-                    record.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
+                    record.Keywords ??= [];
                     assignments.Where(a => record.Keywords.ContainsNot(a.ToAssign))
                         .ForEach(a =>
                         {

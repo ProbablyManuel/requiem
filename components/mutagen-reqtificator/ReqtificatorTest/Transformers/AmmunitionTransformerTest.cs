@@ -20,7 +20,7 @@ namespace ReqtificatorTest.Transformers
             var unrelatedKeyword = Keywords.NoWeaponReachRescaling;
             var arrow = new Ammunition(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new KeywordList { unrelatedKeyword },
+                Keywords = [unrelatedKeyword],
                 Damage = 25.0f
             };
             var reference = arrow.DeepCopy();
@@ -52,7 +52,7 @@ namespace ReqtificatorTest.Transformers
             var transformer = new AmmunitionTransformer();
             var arrow = new Ammunition(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new KeywordList { Keywords.AlreadyReqtified },
+                Keywords = [Keywords.AlreadyReqtified],
                 Damage = 42f
             };
 
@@ -66,7 +66,7 @@ namespace ReqtificatorTest.Transformers
             var transformer = new AmmunitionTransformer();
             var arrow = new Ammunition(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new KeywordList { Keywords.NoDamageRescaling },
+                Keywords = [Keywords.NoDamageRescaling],
                 Damage = 42f
             };
 
@@ -80,7 +80,7 @@ namespace ReqtificatorTest.Transformers
             var transformer = new AmmunitionTransformer();
             var arrow = new Ammunition(FormKey.Factory("123456:Foo.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new KeywordList(),
+                Keywords = [],
                 Damage = 0f
             };
 

@@ -34,7 +34,7 @@ namespace ReqtificatorTest.Transformers.Actors
             var input = new Npc(FormKey.Factory("000007:Skyrim.esm"), SkyrimRelease.SkyrimSE)
             {
                 Configuration = new NpcConfiguration { HealthOffset = 0, StaminaOffset = 0, MagickaOffset = 0 },
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>> { spellToRemove, otherSpell }
+                ActorEffect = [spellToRemove, otherSpell]
             };
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -56,7 +56,7 @@ namespace ReqtificatorTest.Transformers.Actors
             var input = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 Configuration = new NpcConfiguration { HealthOffset = 0, StaminaOffset = 0, MagickaOffset = 0 },
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>> { spellToRemove, otherSpell }
+                ActorEffect = [spellToRemove, otherSpell]
             };
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<UnChanged<Npc, INpcGetter>>();

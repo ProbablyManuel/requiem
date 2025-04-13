@@ -28,18 +28,18 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Configuration = new NpcConfiguration { TemplateFlags = NpcConfiguration.TemplateFlag.Script },
                 // inheritance resolution is mocked by the supplied ActorInheritanceGraphParser
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>> { _dummySpell },
+                ActorEffect = [_dummySpell],
                 Race = f.CheckRaceNode2.AsSetter()
             };
 
             var transformer =
                 new ActorSpellsFromRules(ImmutableList<AssignmentRule<INpcGetter, ISpellGetter>>.Empty.Add(f.TestRule));
             f.InheritanceGraph.Setup(g => g.FindAllTemplates(input, NpcConfiguration.TemplateFlag.Traits))
-                .Returns(new List<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>
-                {
+                .Returns(
+                [
                     ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty.Add(
                         NpcConfiguration.TemplateFlag.Traits, input)
-                });
+                ]);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -56,18 +56,18 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Configuration = new NpcConfiguration { TemplateFlags = NpcConfiguration.TemplateFlag.Script },
                 // inheritance resolution is mocked by the supplied ActorInheritanceGraphParser
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>> { _dummySpell },
+                ActorEffect = [_dummySpell],
                 Race = new FormLink<IRaceGetter>(FormKey.Factory("123456:OtherRaces.esm"))
             };
 
             var transformer =
                 new ActorSpellsFromRules(ImmutableList<AssignmentRule<INpcGetter, ISpellGetter>>.Empty.Add(f.TestRule));
             f.InheritanceGraph.Setup(g => g.FindAllTemplates(input, NpcConfiguration.TemplateFlag.Traits))
-                .Returns(new List<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>
-                {
+                .Returns(
+                [
                     ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty.Add(
                         NpcConfiguration.TemplateFlag.Traits, input)
-                });
+                ]);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -84,18 +84,18 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Configuration = new NpcConfiguration { TemplateFlags = NpcConfiguration.TemplateFlag.Script },
                 // inheritance resolution is mocked by the supplied ActorInheritanceGraphParser
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>> { _dummySpell },
+                ActorEffect = [_dummySpell],
                 Race = f.CheckRaceRoot.AsSetter()
             };
 
             var transformer =
                 new ActorSpellsFromRules(ImmutableList<AssignmentRule<INpcGetter, ISpellGetter>>.Empty.Add(f.TestRule));
             f.InheritanceGraph.Setup(g => g.FindAllTemplates(input, NpcConfiguration.TemplateFlag.Traits))
-                .Returns(new List<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>
-                {
+                .Returns(
+                [
                     ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty.Add(
                         NpcConfiguration.TemplateFlag.Traits, input)
-                });
+                ]);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<UnChanged<Npc, INpcGetter>>();
@@ -110,18 +110,18 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Configuration = new NpcConfiguration { TemplateFlags = NpcConfiguration.TemplateFlag.SpellList },
                 // inheritance resolution is mocked by the supplied ActorInheritanceGraphParser
-                ActorEffect = new ExtendedList<IFormLinkGetter<ISpellRecordGetter>> { _dummySpell },
+                ActorEffect = [_dummySpell],
                 Race = f.CheckRaceNode2.AsSetter()
             };
 
             var transformer =
                 new ActorSpellsFromRules(ImmutableList<AssignmentRule<INpcGetter, ISpellGetter>>.Empty.Add(f.TestRule));
             f.InheritanceGraph.Setup(g => g.FindAllTemplates(input, NpcConfiguration.TemplateFlag.Traits))
-                .Returns(new List<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>
-                {
+                .Returns(
+                [
                     ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty.Add(
                         NpcConfiguration.TemplateFlag.Traits, input)
-                });
+                ]);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<UnChanged<Npc, INpcGetter>>();

@@ -16,7 +16,7 @@ namespace ReqtificatorTest.Transformers.Rules
         {
             var armor = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { CheckKeywordNode1, CheckKeywordRoot }
+                Keywords = [CheckKeywordNode1, CheckKeywordRoot]
             };
 
             var results = TestRule.GetAssignments(armor);
@@ -31,8 +31,7 @@ namespace ReqtificatorTest.Transformers.Rules
         {
             var armor = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
-                    {CheckKeywordNode1, CheckKeywordNode2, CheckKeywordRoot}
+                Keywords = [CheckKeywordNode1, CheckKeywordNode2, CheckKeywordRoot]
             };
 
             var results = TestRule.GetAssignments(armor);
@@ -48,7 +47,7 @@ namespace ReqtificatorTest.Transformers.Rules
         {
             var armor = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { CheckKeywordNode1, CheckKeywordNode2 }
+                Keywords = [CheckKeywordNode1, CheckKeywordNode2]
             };
 
             var results = TestRule.GetAssignments(armor);

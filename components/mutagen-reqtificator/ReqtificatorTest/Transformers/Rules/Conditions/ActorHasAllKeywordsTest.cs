@@ -32,12 +32,12 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
             IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, OtherKeyword }
+                Keywords = [Keyword1, OtherKeyword]
             };
             var actor = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 //inheritance resolution is mocked, the relevant data therefore doesn't need to be defined here
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword2, OtherKeyword },
+                Keywords = [Keyword2, OtherKeyword],
                 Race = new FormLink<IRaceGetter>(race)
             };
             var resolved = ImmutableDictionary<Flags, INpcGetter>.Empty
@@ -60,12 +60,12 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
             IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword }
+                Keywords = [OtherKeyword]
             };
             var actor = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 //inheritance resolution is mocked, the relevant data therefore doesn't need to be defined here
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, Keyword2 },
+                Keywords = [Keyword1, Keyword2],
                 Race = new FormLink<IRaceGetter>(race)
             };
             var resolved = ImmutableDictionary<Flags, INpcGetter>.Empty
@@ -88,12 +88,12 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
             IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, Keyword2 }
+                Keywords = [Keyword1, Keyword2]
             };
             var actor = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 //inheritance resolution is mocked, the relevant data therefore doesn't need to be defined here
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword },
+                Keywords = [OtherKeyword],
                 Race = new FormLink<IRaceGetter>(race)
             };
             var resolved = ImmutableDictionary<Flags, INpcGetter>.Empty
@@ -116,7 +116,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
             IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, OtherKeyword }
+                Keywords = [Keyword1, OtherKeyword]
             };
             var actor = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
@@ -125,11 +125,11 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             };
             var actorTemplate1 = new Npc(FormKey.Factory("123ABC:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword2, OtherKeyword },
+                Keywords = [Keyword2, OtherKeyword],
             };
             var actorTemplate2 = new Npc(FormKey.Factory("123DEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword2, OtherKeyword }
+                Keywords = [Keyword2, OtherKeyword]
             };
             var resolved1 = ImmutableDictionary<Flags, INpcGetter>.Empty
                 .Add(Flags.Keywords, actorTemplate1)
@@ -154,12 +154,12 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
             IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, OtherKeyword }
+                Keywords = [Keyword1, OtherKeyword]
             };
             var actor = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 //inheritance resolution is mocked, the relevant data therefore doesn't need to be defined here
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword },
+                Keywords = [OtherKeyword],
                 Race = new FormLink<IRaceGetter>(race)
             };
             var resolved = ImmutableDictionary<Flags, INpcGetter>.Empty
@@ -183,7 +183,7 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
             IRaceGetter? race = new Race(FormKey.Factory("ABCDEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword1, OtherKeyword }
+                Keywords = [Keyword1, OtherKeyword]
             };
             var actor = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
@@ -192,11 +192,11 @@ namespace ReqtificatorTest.Transformers.Rules.Conditions
             };
             var actorTemplate1 = new Npc(FormKey.Factory("123ABC:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keyword2, OtherKeyword },
+                Keywords = [Keyword2, OtherKeyword],
             };
             var actorTemplate2 = new Npc(FormKey.Factory("123DEF:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { OtherKeyword }
+                Keywords = [OtherKeyword]
             };
             var resolved1 = ImmutableDictionary<Flags, INpcGetter>.Empty
                 .Add(Flags.Keywords, actorTemplate1)

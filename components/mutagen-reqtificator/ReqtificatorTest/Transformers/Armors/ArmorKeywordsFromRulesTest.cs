@@ -21,12 +21,11 @@ namespace ReqtificatorTest.Transformers.Armors
         {
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { CheckKeywordNode1, CheckKeywordRoot },
+                Keywords = [CheckKeywordNode1, CheckKeywordRoot],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(FormKey.Null)
             };
 
-            var transformer = new ArmorKeywordsFromRules(new List<AssignmentRule<IArmorGetter, IKeywordGetter>>
-                {TestRule});
+            var transformer = new ArmorKeywordsFromRules([TestRule]);
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
@@ -40,13 +39,11 @@ namespace ReqtificatorTest.Transformers.Armors
         {
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
-                    {CheckKeywordNode1, CheckKeywordNode2, CheckKeywordRoot},
+                Keywords = [CheckKeywordNode1, CheckKeywordNode2, CheckKeywordRoot],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(FormKey.Null)
             };
 
-            var transformer = new ArmorKeywordsFromRules(new List<AssignmentRule<IArmorGetter, IKeywordGetter>>
-                {TestRule});
+            var transformer = new ArmorKeywordsFromRules([TestRule]);
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
@@ -60,12 +57,11 @@ namespace ReqtificatorTest.Transformers.Armors
         {
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { CheckKeywordNode1, CheckKeywordNode2 },
+                Keywords = [CheckKeywordNode1, CheckKeywordNode2],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(FormKey.Null)
             };
 
-            var transformer = new ArmorKeywordsFromRules(new List<AssignmentRule<IArmorGetter, IKeywordGetter>>
-                {TestRule});
+            var transformer = new ArmorKeywordsFromRules([TestRule]);
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
             result.Should().BeOfType<UnChanged<Armor, IArmorGetter>>();
@@ -77,12 +73,11 @@ namespace ReqtificatorTest.Transformers.Armors
         {
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { CheckKeywordNode1, CheckKeywordRoot },
+                Keywords = [CheckKeywordNode1, CheckKeywordRoot],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(FormKey.Factory("ABCDEF:Template.esm"))
             };
 
-            var transformer = new ArmorKeywordsFromRules(new List<AssignmentRule<IArmorGetter, IKeywordGetter>>
-                {TestRule});
+            var transformer = new ArmorKeywordsFromRules([TestRule]);
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
             result.Should().BeOfType<UnChanged<Armor, IArmorGetter>>();

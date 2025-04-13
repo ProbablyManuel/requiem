@@ -27,9 +27,9 @@ namespace Reqtificator.Transformers.Rules.Conditions
             return possibleTemplates.All(template =>
             {
                 var actorKeywords = template[NpcConfiguration.TemplateFlag.Keywords].Keywords ??
-                                    new List<IFormLinkGetter<IKeywordGetter>>();
+                                    [];
                 var race = template[NpcConfiguration.TemplateFlag.Traits].Race.Resolve(_inheritanceGraphParser.Cache);
-                var raceKeywords = race.Keywords ?? new List<IFormLinkGetter<IKeywordGetter>>();
+                var raceKeywords = race.Keywords ?? [];
 
                 var allKeywords = raceKeywords.Union(actorKeywords).ToImmutableHashSet();
                 return _keywords.Any(k => allKeywords.Contains(k));

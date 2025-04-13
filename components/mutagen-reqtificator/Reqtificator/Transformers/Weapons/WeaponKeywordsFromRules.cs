@@ -30,7 +30,7 @@ namespace Reqtificator.Transformers.Weapons
             {
                 return input.Modify(record =>
                 {
-                    record.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
+                    record.Keywords ??= [];
                     assignments.Where(a => record.Keywords.ContainsNot(a.ToAssign))
                         .ForEach(a =>
                         {
