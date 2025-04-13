@@ -15,7 +15,7 @@ namespace ReqtificatorTest
         }
     }
 
-    internal class ErrorOrAssertions<T> :
+    internal sealed class ErrorOrAssertions<T> :
         ReferenceTypeAssertions<ErrorOr<T>, ErrorOrAssertions<T>>
     {
         public ErrorOrAssertions(ErrorOr<T> instance) : base(instance, AssertionChain.GetOrCreate()) { }

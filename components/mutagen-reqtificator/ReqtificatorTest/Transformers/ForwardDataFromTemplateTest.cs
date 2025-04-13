@@ -19,7 +19,7 @@ namespace ReqtificatorTest.Transformers
         public static readonly ModKey UnrelatedMod = new("Serious Loot", ModType.Light);
         public static readonly ModKey DataMod = new("Skilled Actors", ModType.Plugin);
 
-        private class Fixture
+        private sealed class Fixture
         {
             public static readonly FormKey Record = FormKey.Factory("123456:Skyrim.esm");
             public readonly Mock<IDataForwardingLogic<Npc, INpcGetter>> Logic = new(MockBehavior.Strict);

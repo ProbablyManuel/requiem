@@ -39,7 +39,7 @@ namespace ReqtificatorTest.Transformers.Actors
             };
         }
 
-        private class Fixture
+        private sealed class Fixture
         {
             public readonly Npc Actor1 = GenerateTemplateActor("Actor1");
             public readonly Npc Actor2 = GenerateTemplateActor("Actor2");

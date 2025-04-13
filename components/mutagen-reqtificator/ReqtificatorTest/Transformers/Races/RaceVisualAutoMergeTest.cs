@@ -76,7 +76,7 @@ namespace ReqtificatorTest.Transformers.Races
             };
         }
 
-        private class Fixture
+        private sealed class Fixture
         {
             public readonly Race Race1 = GenerateTemplateRace("Race1");
             public readonly Race Race2 = GenerateTemplateRace("Race2");

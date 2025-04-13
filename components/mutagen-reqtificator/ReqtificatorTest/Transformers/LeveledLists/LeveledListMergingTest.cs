@@ -35,7 +35,7 @@ namespace ReqtificatorTest.Transformers.LeveledLists
 
         //TODO: rewrite the entire test suite using a proper load order object instead of mocking library classes
 
-        private class Fixture
+        private sealed class Fixture
         {
             public readonly ILeveledItemGetter BaseVersion;
             public readonly ILeveledItemGetter UpdateVersion1;
