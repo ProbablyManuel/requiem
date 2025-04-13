@@ -2,7 +2,6 @@
 using FluentAssertions;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Configuration;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Actors;

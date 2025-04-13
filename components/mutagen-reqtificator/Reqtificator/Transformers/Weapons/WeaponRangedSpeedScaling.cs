@@ -1,7 +1,6 @@
 ﻿using System;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.StaticReferences;
 
 namespace Reqtificator.Transformers.Weapons

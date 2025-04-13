@@ -2,7 +2,6 @@
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Transformers.Races;
 using Xunit;
 

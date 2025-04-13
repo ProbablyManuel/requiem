@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using FluentAssertions;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Armors;
-using Reqtificator.Transformers.Rules;
 using Xunit;
 using static ReqtificatorTest.Transformers.Rules.AssignmentRuleFixture<Mutagen.Bethesda.Skyrim.IArmorGetter>;
 

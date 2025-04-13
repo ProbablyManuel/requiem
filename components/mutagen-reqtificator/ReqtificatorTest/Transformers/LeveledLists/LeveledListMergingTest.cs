@@ -7,7 +7,6 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.LeveledItems;
 using Reqtificator.Transformers.LeveledLists;

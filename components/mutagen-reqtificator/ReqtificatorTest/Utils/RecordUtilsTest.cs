@@ -4,7 +4,6 @@ using Moq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Exceptions;
 using Reqtificator.Utils;
 using Xunit;

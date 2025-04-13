@@ -1,7 +1,5 @@
 ﻿using System.Linq;
-using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.StaticReferences;
 using Serilog;
 

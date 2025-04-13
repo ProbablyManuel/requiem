@@ -5,7 +5,6 @@ using Mutagen.Bethesda.Skyrim;
 using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
 using Xunit;
-using KeywordList = Noggog.ExtendedList<Mutagen.Bethesda.Plugins.IFormLinkGetter<Mutagen.Bethesda.Skyrim.IKeywordGetter>>;
 
 [assembly: CLSCompliant(false)]
 

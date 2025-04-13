@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.Immutable;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Hocon;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
