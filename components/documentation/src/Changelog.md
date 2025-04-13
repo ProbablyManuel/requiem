@@ -5,6 +5,7 @@ Reqtificator
 ------------
 
 * All dependencies of the Reqtificator are updated to the latest version.
+* The "Open encounter zones" setting is correctly saved between consecutive runs.
 
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2

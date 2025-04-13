@@ -44,7 +44,7 @@ namespace Reqtificator.Configuration
     ""{KeyVerboseLogging}"": {(VerboseLogging ? "true" : "false")},
     ""{KeyMergeLeveledLists}"": {(MergeLeveledLists ? "true" : "false")},
     ""{KeyMergeLeveledCharacters}"": {(MergeLeveledCharacters ? "true" : "false")},
-    ""{KeyMergeLeveledLists}"": {(OpenEncounterZones ? "true" : "false")},
+    ""{KeyOpenEncounterZones}"": {(OpenEncounterZones ? "true" : "false")},
     ""{KeyActorVisualAutoMerge}"": {(ActorVisualAutoMerge ? "true" : "false")},
     ""{KeyRaceVisualAutoMerge}"": {(RaceVisualAutoMerge ? "true" : "false")}
 }}";
