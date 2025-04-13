@@ -1,7 +1,5 @@
 ﻿using System.Linq;
-using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.StaticReferences;
 using Serilog;
 
@@ -23,7 +21,7 @@ namespace Reqtificator.Transformers.Races
 
             return input.Modify(record =>
             {
-                record.ActorEffect ??= new ExtendedList<IFormLinkGetter<ISpellRecordGetter>>();
+                record.ActorEffect ??= [];
                 if (record.ActorEffect.ContainsNot(Spells.MassEffectBase))
                 {
                     record.ActorEffect.Add(Spells.MassEffectBase);

@@ -5,21 +5,19 @@ using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Weapons;
 using Xunit;
-using KeywordList =
-    Noggog.ExtendedList<Mutagen.Bethesda.Plugins.IFormLinkGetter<Mutagen.Bethesda.Skyrim.IKeywordGetter>>;
 
 namespace ReqtificatorTest.Transformers.Weapons
 {
     public class WeaponNpcAmmunitionUsageTest
     {
         private readonly WeaponAnimationType[] _rangedTypes =
-        {
+        [
             WeaponAnimationType.Bow,
             WeaponAnimationType.Crossbow
-        };
+        ];
 
         private readonly WeaponAnimationType[] _ignoredTypes =
-        {
+        [
             WeaponAnimationType.HandToHand,
             WeaponAnimationType.OneHandAxe,
             WeaponAnimationType.OneHandDagger,
@@ -28,7 +26,7 @@ namespace ReqtificatorTest.Transformers.Weapons
             WeaponAnimationType.TwoHandAxe,
             WeaponAnimationType.TwoHandSword,
             WeaponAnimationType.Staff
-        };
+        ];
 
 
         private readonly Weapon.TranslationMask _verificationMask = new(defaultOn: true)
@@ -51,7 +49,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.MinorCrime
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -76,7 +74,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.MinorCrime
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -100,7 +98,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.MinorCrime
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.AlreadyReqtified }
+                    Keywords = [otherKeyword, Keywords.AlreadyReqtified]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -124,7 +122,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.NonPlayable
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -148,7 +146,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.NPCsUseAmmo
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -172,7 +170,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Flags = WeaponData.Flag.MinorCrime
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     Template = new FormLinkNullable<IWeaponGetter>(FormKey.Factory("ABCDEF:Requiem.esp"))
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));

@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace Reqtificator.Gui
 {
-    public class DelegateCommand : ICommand
+    internal class DelegateCommand : ICommand
     {
         private readonly Action<object?> action;
         public event EventHandler? CanExecuteChanged = delegate { };

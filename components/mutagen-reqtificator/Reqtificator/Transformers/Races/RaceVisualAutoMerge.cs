@@ -100,10 +100,10 @@ namespace Reqtificator.Transformers.Races
                    CheckGenderedField(r => r.Weight, (x, y) => Math.Abs(x - y) <= Tolerance) &&
                    Math.Abs(reference.FacegenFaceClamp - other.FacegenFaceClamp) <= Tolerance &&
                    Math.Abs(reference.FacegenMainClamp - other.FacegenMainClamp) <= Tolerance &&
-                   CheckGenderedField(r => r.SkeletalModel, (x, y) => CompareSimpleModel(x, y)) &&
+                   CheckGenderedField(r => r.SkeletalModel, CompareSimpleModel) &&
                    CheckGenderedField(r => r.DefaultHairColors, (x, y) => x.Equals(y)) &&
-                   CheckGenderedField(r => r.BodyData, (x, y) => CompareBodyData(x, y)) &&
-                   CheckGenderedField(r => r.BehaviorGraph, (x, y) => CompareSimpleModel(x, y)) &&
+                   CheckGenderedField(r => r.BodyData, CompareBodyData) &&
+                   CheckGenderedField(r => r.BehaviorGraph, CompareSimpleModel) &&
                    CheckGenderedField(r => r.HeadData, CompareHeadparts) &&
                    ComparePhonemes(reference.FaceFxPhonemes, other.FaceFxPhonemes);
         }
@@ -127,7 +127,7 @@ namespace Reqtificator.Transformers.Races
 
         private static bool CompareSimpleModel(ISimpleModelGetter reference, ISimpleModelGetter other)
         {
-            return reference.File.DataRelativePath.Equals(other.File.DataRelativePath, StringComparison.Ordinal);
+            return reference.File.DataRelativePath.Path.Equals(other.File.DataRelativePath.Path, StringComparison.Ordinal);
         }
 
         private bool CompareHeadparts(IHeadDataGetter reference, IHeadDataGetter other)

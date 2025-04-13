@@ -86,9 +86,10 @@ namespace Reqtificator.Transformers.ActorVariations
                 return newLeveledList;
             }
 
-            return (newActors.Values.ToImmutableList(), variationsToBuild.Select(v => KeyValuePair.Create(v, GenerateVariations(v))).ToImmutableDictionary());
+            return ([.. newActors.Values], variationsToBuild.Select(v => KeyValuePair.Create(v, GenerateVariations(v))).ToImmutableDictionary());
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0305:Simplify collection initialization", Justification = "Not simpler")]
         public static ImmutableList<LeveledNpc> UpdateActorVariationLists(
             IEnumerable<ILeveledNpcGetter> records,
             ImmutableDictionary<VariationKey, LeveledNpc> variations,

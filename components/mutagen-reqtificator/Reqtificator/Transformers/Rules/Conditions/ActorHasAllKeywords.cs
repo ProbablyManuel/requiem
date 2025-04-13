@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
@@ -27,9 +26,9 @@ namespace Reqtificator.Transformers.Rules.Conditions
             return possibleTemplates.All(template =>
             {
                 var actorKeywords = template[NpcConfiguration.TemplateFlag.Keywords].Keywords ??
-                                    new List<IFormLinkGetter<IKeywordGetter>>();
+                                    [];
                 var race = template[NpcConfiguration.TemplateFlag.Traits].Race.Resolve(_inheritanceGraphParser.Cache);
-                var raceKeywords = race.Keywords ?? new List<IFormLinkGetter<IKeywordGetter>>();
+                var raceKeywords = race.Keywords ?? [];
 
                 return _keywords.IsSubsetOf(raceKeywords.Union(actorKeywords));
             });

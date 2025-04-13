@@ -22,11 +22,11 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_CLI_SweetRolls",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 3, Level = 1, Reference = itemRef1}},
                     new() {Data = new LeveledItemEntryData {Count = 2, Level = 1, Reference = itemRef2}}
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new CompactLeveledItemUnroller(ImmutableHashSet.Create(modKey));
@@ -53,11 +53,11 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:UnregisteredMod.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_CLI_SweetRolls",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 3, Level = 1, Reference = itemRef1}},
                     new() {Data = new LeveledItemEntryData {Count = 2, Level = 1, Reference = itemRef2}}
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var unroller = new CompactLeveledItemUnroller(ImmutableHashSet.Create(modKey));
@@ -73,11 +73,11 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "Does_not_start_with_the_expected_'<ModPrefix>_CLI'_pattern",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 3, Level = 1, Reference = itemRef1}},
                     new() {Data = new LeveledItemEntryData {Count = 2, Level = 1, Reference = itemRef2}}
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var unroller = new CompactLeveledItemUnroller(ImmutableHashSet.Create(modKey));

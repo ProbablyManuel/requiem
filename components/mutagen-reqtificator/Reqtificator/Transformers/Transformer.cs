@@ -15,6 +15,7 @@ namespace Reqtificator.Transformers
     {
         public abstract TransformationResult<T, TGetter> Process(TransformationResult<T, TGetter> input);
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0305:Simplify collection initialization", Justification = "Not simpler")]
         public ImmutableList<T> ProcessCollection(IEnumerable<IModContext<ISkyrimMod, ISkyrimModGetter, TI, TGetter>> records)
         {
             return records.Select(PatchRecord)

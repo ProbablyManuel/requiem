@@ -45,7 +45,7 @@ namespace Reqtificator.Utils
             string configPath = Path.Combine(context.DataFolder, "Reqtificator", "Data");
             IImmutableList<(string, Config)> configs = context.ActiveMods
                 .Select(m => Path.Combine(configPath, $"{filePrefix}_{m.ModKey.FileName}.conf"))
-                .Where(f => File.Exists(f))
+                .Where(File.Exists)
                 .Select(f => (f, HoconConfigurationFactory.FromFile(f)))
                 .ToImmutableList();
             return configs.AsSuccess();

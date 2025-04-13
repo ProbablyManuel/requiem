@@ -3,7 +3,7 @@ using Hocon;
 
 namespace Reqtificator.Configuration
 {
-    public record UserSettings(
+    internal record UserSettings(
         bool VerboseLogging,
         bool MergeLeveledLists,
         bool MergeLeveledCharacters,
@@ -41,12 +41,12 @@ namespace Reqtificator.Configuration
         public void WriteToFile(string targetFile)
         {
             string configToWrite = $@"{{
-    ""{KeyVerboseLogging}"": {VerboseLogging.ToString().ToLowerInvariant()},
-    ""{KeyMergeLeveledLists}"": {MergeLeveledLists.ToString().ToLowerInvariant()},
-    ""{KeyMergeLeveledCharacters}"": {MergeLeveledCharacters.ToString().ToLowerInvariant()},
-    ""{KeyMergeLeveledLists}"": {OpenEncounterZones.ToString().ToLowerInvariant()},
-    ""{KeyActorVisualAutoMerge}"": {ActorVisualAutoMerge.ToString().ToLowerInvariant()},
-    ""{KeyRaceVisualAutoMerge}"": {RaceVisualAutoMerge.ToString().ToLowerInvariant()}
+    ""{KeyVerboseLogging}"": {(VerboseLogging ? "true" : "false")},
+    ""{KeyMergeLeveledLists}"": {(MergeLeveledLists ? "true" : "false")},
+    ""{KeyMergeLeveledCharacters}"": {(MergeLeveledCharacters ? "true" : "false")},
+    ""{KeyMergeLeveledLists}"": {(OpenEncounterZones ? "true" : "false")},
+    ""{KeyActorVisualAutoMerge}"": {(ActorVisualAutoMerge ? "true" : "false")},
+    ""{KeyRaceVisualAutoMerge}"": {(RaceVisualAutoMerge ? "true" : "false")}
 }}";
             File.WriteAllText(targetFile, configToWrite);
         }

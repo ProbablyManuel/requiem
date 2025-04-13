@@ -2,7 +2,6 @@
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Transformers.Races;
 using Xunit;
 
@@ -30,24 +29,24 @@ namespace ReqtificatorTest.Transformers.Races
             {
                 return new HeadData()
                 {
-                    AvailableHairColors = new ExtendedList<IFormLinkGetter<IColorRecordGetter>>
-                    {
+                    AvailableHairColors =
+                    [
                         new FormLink<IColorRecordGetter>(HeadPartDummy1),
                         new FormLink<IColorRecordGetter>(HeadPartDummy2)
-                    },
-                    FaceDetails = new ExtendedList<IFormLinkGetter<ITextureSetGetter>>
-                    {
+                    ],
+                    FaceDetails =
+                    [
                         new FormLink<ITextureSetGetter>(HeadPartDummy1), new FormLink<ITextureSetGetter>(HeadPartDummy2)
-                    },
-                    HeadParts = new ExtendedList<HeadPartReference>
-                    {
+                    ],
+                    HeadParts =
+                    [
                         new HeadPartReference{Head = new FormLinkNullable<IHeadPartGetter>(HeadPartDummy1)},
                         new HeadPartReference{Head = new FormLinkNullable<IHeadPartGetter>(HeadPartDummy2)}
-                    },
-                    RacePresets = new ExtendedList<IFormLinkGetter<INpcGetter>>
-                    {
+                    ],
+                    RacePresets =
+                    [
                         new FormLink<INpcGetter>(HeadPartDummy1), new FormLink<INpcGetter>(HeadPartDummy2)
-                    }
+                    ]
                 };
             }
 
@@ -76,7 +75,7 @@ namespace ReqtificatorTest.Transformers.Races
             };
         }
 
-        private class Fixture
+        private sealed class Fixture
         {
             public readonly Race Race1 = GenerateTemplateRace("Race1");
             public readonly Race Race2 = GenerateTemplateRace("Race2");

@@ -73,7 +73,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keywords.AlreadyReqtified }
+                Keywords = [Keywords.AlreadyReqtified]
             };
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
@@ -87,7 +87,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keywords.NoArmorTypeKeyword }
+                Keywords = [Keywords.NoArmorTypeKeyword]
             };
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
@@ -114,7 +114,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.LightArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keywords.ArmorLight }
+                Keywords = [Keywords.ArmorLight]
             };
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
@@ -128,7 +128,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keywords.ArmorHeavy }
+                Keywords = [Keywords.ArmorHeavy]
             };
 
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));

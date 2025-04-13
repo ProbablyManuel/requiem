@@ -37,5 +37,5 @@ namespace Reqtificator.Events
         public override string Title { get; }
         public override string Message { get; }
     }
-    public record ScrambledBugsPatch(string Name, string Key);
+    internal record ScrambledBugsPatch(string Name, string Key);
 }

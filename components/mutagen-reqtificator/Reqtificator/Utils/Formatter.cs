@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Reqtificator.Utils
 {
-    public static class Formatter
+    internal static class Formatter
     {
         public static string FormatMultiline(string multiLineString, params string[] args)
         {

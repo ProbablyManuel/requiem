@@ -7,7 +7,6 @@ using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Plugins.Records;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.LeveledItems;
 using Reqtificator.Transformers.LeveledLists;
@@ -35,7 +34,7 @@ namespace ReqtificatorTest.Transformers.LeveledLists
 
         //TODO: rewrite the entire test suite using a proper load order object instead of mocking library classes
 
-        private class Fixture
+        private sealed class Fixture
         {
             public readonly ILeveledItemGetter BaseVersion;
             public readonly ILeveledItemGetter UpdateVersion1;
@@ -50,24 +49,24 @@ namespace ReqtificatorTest.Transformers.LeveledLists
                 BaseVersion = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
                 {
                     EditorID = "REQ_LeveledListForMerging",
-                    Entries = new ExtendedList<LeveledItemEntry>
-                    {
+                    Entries =
+                    [
                         new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                         new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                         new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                         new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } }
-                    }
+                    ]
                 };
                 UpdateVersion1 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
                 {
                     EditorID = "REQ_LeveledListForMerging",
-                    Entries = new ExtendedList<LeveledItemEntry>
-                    {
+                    Entries =
+                    [
                         new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                         new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                         new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                         new() { Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 } }
-                    }
+                    ]
                 };
                 UpdateVersion2 = version2;
                 Cache.SetupGet(c => c.ListedOrder).Returns(ImmutableList.Create(ModRequiem, ModPatch1, ModPatch2));
@@ -83,15 +82,15 @@ namespace ReqtificatorTest.Transformers.LeveledLists
                 Cache.Setup(c =>
                         c.ResolveAllContexts<LeveledItem, ILeveledItemGetter>(UpdateVersion2.FormKey,
                             ResolveTarget.Winner))
-                    .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>>
-                    {
+                    .Returns(
+                    [
                         new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch2,
                             UpdateVersion2, null!, null!),
                         new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch1,
                             UpdateVersion1, null!, null!),
                         new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Requiem,
                             BaseVersion, null!, null!)
-                    });
+                    ]);
             }
         }
 
@@ -101,14 +100,14 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } },
                     new() { Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 } }
-                }
+                ]
             };
 
             var f = new Fixture(updateVersion2);
@@ -135,14 +134,14 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } }
-                }
+                ]
             };
 
             var f = new Fixture(updateVersion2);
@@ -169,13 +168,13 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } }
-                }
+                ]
             };
 
             var f = new Fixture(updateVersion2);
@@ -201,10 +200,10 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } }
-                }
+                ]
             };
 
             var f = new Fixture(updateVersion2);
@@ -229,43 +228,43 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var baseVersion = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_CLI_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } }
-                }
+                ]
             };
             var updateVersion1 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_CLI_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 1, Level = 1, Reference = ItemRef3 } }
-                }
+                ]
             };
             var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_CLI_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } }
-                }
+                ]
             };
 
             var cache = new Mock<ILinkCache<ISkyrimMod, ISkyrimModGetter>>(MockBehavior.Strict);
             cache.Setup(c =>
                     c.ResolveAllContexts<LeveledItem, ILeveledItemGetter>(updateVersion2.FormKey,
                         ResolveTarget.Winner))
-                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>>
-                {
+                .Returns(
+                [
                     new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch2,
                         updateVersion2, null!, null!),
                     new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch1,
                         updateVersion1, null!, null!),
                     new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Requiem,
                         baseVersion, null!, null!)
-                });
+                ]);
 
             cache.SetupGet(c => c.ListedOrder).Returns(ImmutableList.Create(ModRequiem, ModPatch1, ModPatch2));
             var transformer =
@@ -293,14 +292,14 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 20, Level = 1, Reference = ItemRef1 } },
                     new() { Data = new LeveledItemEntryData { Count = 2, Level = 1, Reference = ItemRef2 } },
                     new() { Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 } }
-                }
+                ]
             };
 
             var f = new Fixture(updateVersion2);
@@ -327,23 +326,23 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() { Data = new LeveledItemEntryData { Count = 3, Level = 1, Reference = ItemRef1 } }
-                }
+                ]
             };
 
             var f = new Fixture(updateVersion2);
             f.Cache.Setup(c =>
                     c.ResolveAllContexts<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2.FormKey,
                         ResolveTarget.Winner))
-                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>>
-                {
+                .Returns(
+                [
                     new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch2,
                         f.UpdateVersion2, null!, null!),
                     new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch1,
                         f.UpdateVersion1, null!, null!)
-                });
+                ]);
 
             var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
@@ -359,13 +358,13 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             f.Cache.Setup(c =>
                     c.ResolveAllContexts<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2.FormKey,
                         ResolveTarget.Winner))
-                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>>
-                {
+                .Returns(
+                [
                     new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Patch2,
                         f.UpdateVersion2, null!, null!),
                     new ModContext<ISkyrimMod, ISkyrimModGetter, LeveledItem, ILeveledItemGetter>(Requiem,
                         f.BaseVersion, null!, null!)
-                });
+                ]);
 
             var result = f.Transformer.Process(new UnChanged<LeveledItem, ILeveledItemGetter>(f.UpdateVersion2));
             result.Should().BeOfType<UnChanged<LeveledItem, ILeveledItemGetter>>();
@@ -396,11 +395,11 @@ namespace ReqtificatorTest.Transformers.LeveledLists
             var updateVersion2 = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_LeveledListForMerging",
-                Entries = new ExtendedList<LeveledItemEntry>(Enumerable.Repeat(
+                Entries = [.. Enumerable.Repeat(
                     new LeveledItemEntry()
                     {
                         Data = new LeveledItemEntryData { Count = 4, Level = 1, Reference = ItemRef3 }
-                    }, 260).ToImmutableList())
+                    }, 260).ToImmutableList()]
             };
 
             var f = new Fixture(updateVersion2);

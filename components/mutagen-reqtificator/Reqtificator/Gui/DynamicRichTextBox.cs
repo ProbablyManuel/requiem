@@ -4,7 +4,7 @@ using System.Windows.Documents;
 
 namespace Reqtificator.Gui
 {
-    public class DynamicRichTextBox : RichTextBox
+    internal class DynamicRichTextBox : RichTextBox
     {
         public static readonly DependencyProperty MessageProperty =
             DependencyProperty.Register("Message", typeof(FlowDocument), typeof(DynamicRichTextBox),

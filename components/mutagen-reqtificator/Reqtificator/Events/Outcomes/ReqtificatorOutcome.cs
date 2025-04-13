@@ -2,7 +2,7 @@
 
 namespace Reqtificator.Events.Outcomes
 {
-    public enum PatchStatus
+    internal enum PatchStatus
     {
         SUCCESS,
         WARNING,
@@ -10,7 +10,7 @@ namespace Reqtificator.Events.Outcomes
         MESSAGE
     }
 
-    public abstract class ReqtificatorOutcome
+    internal abstract class ReqtificatorOutcome
     {
         internal static class Uris
         {

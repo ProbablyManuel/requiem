@@ -6,15 +6,13 @@ using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Weapons;
 using Xunit;
-using KeywordList =
-    Noggog.ExtendedList<Mutagen.Bethesda.Plugins.IFormLinkGetter<Mutagen.Bethesda.Skyrim.IKeywordGetter>>;
 
 namespace ReqtificatorTest.Transformers.Weapons
 {
     public class WeaponDamageScalingTest
     {
         private readonly WeaponAnimationType[] _meleeTypes =
-        {
+        [
             WeaponAnimationType.HandToHand,
             WeaponAnimationType.OneHandAxe,
             WeaponAnimationType.OneHandDagger,
@@ -22,18 +20,18 @@ namespace ReqtificatorTest.Transformers.Weapons
             WeaponAnimationType.OneHandSword,
             WeaponAnimationType.TwoHandAxe,
             WeaponAnimationType.TwoHandSword
-        };
+        ];
 
         private readonly WeaponAnimationType[] _rangedTypes =
-        {
+        [
             WeaponAnimationType.Bow,
             WeaponAnimationType.Crossbow
-        };
+        ];
 
         private readonly WeaponAnimationType[] _ignoredTypes =
-        {
+        [
             WeaponAnimationType.Staff
-        };
+        ];
 
         private readonly Weapon.TranslationMask _verificationMask = new(defaultOn: true)
         {
@@ -54,7 +52,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 },
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -79,7 +77,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 },
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -104,7 +102,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -127,7 +125,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.AlreadyReqtified },
+                    Keywords = [otherKeyword, Keywords.AlreadyReqtified],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -150,7 +148,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.NoDamageRescaling },
+                    Keywords = [otherKeyword, Keywords.NoDamageRescaling],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));

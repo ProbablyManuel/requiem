@@ -33,7 +33,7 @@ namespace Reqtificator.Transformers.Armors
             {
                 return input.Modify(armor =>
                 {
-                    armor.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
+                    armor.Keywords ??= [];
                     armor.Keywords.Add(keyword);
                     Log.Debug("added missing armor type keyword");
                 });

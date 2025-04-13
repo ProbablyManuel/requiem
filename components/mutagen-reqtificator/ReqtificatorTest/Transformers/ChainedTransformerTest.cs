@@ -9,7 +9,7 @@ namespace ReqtificatorTest.Transformers
 {
     public static class ChainedTransformerTest
     {
-        private class DummyTransformer : Transformer<Keyword, IKeyword, IKeywordGetter>
+        private sealed class DummyTransformer : Transformer<Keyword, IKeyword, IKeywordGetter>
         {
             private readonly string _checkPrefix;
             private readonly string _addPrefix;
