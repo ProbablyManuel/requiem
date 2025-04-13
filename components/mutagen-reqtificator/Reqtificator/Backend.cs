@@ -24,12 +24,6 @@ using Serilog.Events;
 [assembly: NeutralResourcesLanguage("en-US")]
 
 
-//TODO: figure out why I need to do this when adding Mutagen as a dependency
-namespace System.Runtime.CompilerServices
-{
-    internal record IsExternalInit;
-}
-
 namespace Reqtificator
 {
     internal class Backend
