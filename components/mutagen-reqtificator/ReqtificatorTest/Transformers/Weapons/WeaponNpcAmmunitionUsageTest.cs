@@ -13,13 +13,13 @@ namespace ReqtificatorTest.Transformers.Weapons
     public class WeaponNpcAmmunitionUsageTest
     {
         private readonly WeaponAnimationType[] _rangedTypes =
-        {
+        [
             WeaponAnimationType.Bow,
             WeaponAnimationType.Crossbow
-        };
+        ];
 
         private readonly WeaponAnimationType[] _ignoredTypes =
-        {
+        [
             WeaponAnimationType.HandToHand,
             WeaponAnimationType.OneHandAxe,
             WeaponAnimationType.OneHandDagger,
@@ -28,7 +28,7 @@ namespace ReqtificatorTest.Transformers.Weapons
             WeaponAnimationType.TwoHandAxe,
             WeaponAnimationType.TwoHandSword,
             WeaponAnimationType.Staff
-        };
+        ];
 
 
         private readonly Weapon.TranslationMask _verificationMask = new(defaultOn: true)

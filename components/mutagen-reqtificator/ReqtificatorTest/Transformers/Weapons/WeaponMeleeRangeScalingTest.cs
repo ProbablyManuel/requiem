@@ -12,7 +12,7 @@ namespace ReqtificatorTest.Transformers.Weapons
     public class WeaponMeleeRangeScalingTest
     {
         private readonly WeaponAnimationType[] _meleeTypes =
-        {
+        [
             WeaponAnimationType.HandToHand,
             WeaponAnimationType.OneHandAxe,
             WeaponAnimationType.OneHandDagger,
@@ -20,14 +20,14 @@ namespace ReqtificatorTest.Transformers.Weapons
             WeaponAnimationType.OneHandSword,
             WeaponAnimationType.TwoHandAxe,
             WeaponAnimationType.TwoHandSword
-        };
+        ];
 
         private readonly WeaponAnimationType[] _ignoredTypes =
-        {
+        [
             WeaponAnimationType.Bow,
             WeaponAnimationType.Crossbow,
             WeaponAnimationType.Staff
-        };
+        ];
 
         private readonly Weapon.TranslationMask _verificationMask = new(defaultOn: true)
         {

@@ -28,7 +28,7 @@ namespace ReqtificatorTest.Transformers.Actors
         {
             var spellToRemove = new FormLink<ISpellGetter>(FormKey.Factory("ABC123:Skyrim.esm"));
             var otherSpell = new FormLink<ISpellGetter>(FormKey.Factory("ABC456:Skyrim.esm"));
-            var config = new PlayerConfig(13, -42, 7, new[] { spellToRemove });
+            var config = new PlayerConfig(13, -42, 7, [spellToRemove]);
             var transformer = new PlayerChanges(config);
 
             var input = new Npc(FormKey.Factory("000007:Skyrim.esm"), SkyrimRelease.SkyrimSE)
@@ -50,7 +50,7 @@ namespace ReqtificatorTest.Transformers.Actors
         {
             var spellToRemove = new FormLink<ISpellGetter>(FormKey.Factory("ABC123:Skyrim.esm"));
             var otherSpell = new FormLink<ISpellGetter>(FormKey.Factory("ABC456:Skyrim.esm"));
-            var config = new PlayerConfig(13, -42, 7, new[] { spellToRemove });
+            var config = new PlayerConfig(13, -42, 7, [spellToRemove]);
             var transformer = new PlayerChanges(config);
 
             var input = new Npc(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)

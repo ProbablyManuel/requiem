@@ -74,7 +74,7 @@ namespace ReqtificatorTest.Configuration
         [Fact]
         public void Should_parse_the_default_config_successfully()
         {
-            var parsedConfig = ReqtificatorConfig.ParseConfig(new[] { BaseConfig });
+            var parsedConfig = ReqtificatorConfig.ParseConfig([BaseConfig]);
             parsedConfig.ArmorSettings.Should().Be(ExpectedBase.ArmorSettings);
             parsedConfig.PlayerConfig.SpellsToRemove.Should().Contain(ExpectedBase.PlayerConfig.SpellsToRemove);
             parsedConfig.PlayerConfig.HealthOffset.Should().Be(ExpectedBase.PlayerConfig.HealthOffset);
@@ -86,7 +86,7 @@ namespace ReqtificatorTest.Configuration
         public void Should_correctly_apply_partial_overrides_from_extra_config_files()
         {
             var extraConfig = HoconConfigurationFactory.ParseString("{playerRecord.healthOffset = 42}");
-            var parsedConfig = ReqtificatorConfig.ParseConfig(new[] { extraConfig, BaseConfig });
+            var parsedConfig = ReqtificatorConfig.ParseConfig([extraConfig, BaseConfig]);
             parsedConfig.PlayerConfig.HealthOffset.Should().Be(42);
             parsedConfig.PlayerConfig.MagickaOffset.Should().Be(ExpectedBase.PlayerConfig.MagickaOffset);
             parsedConfig.PlayerConfig.StaminaOffset.Should().Be(ExpectedBase.PlayerConfig.StaminaOffset);
@@ -98,7 +98,7 @@ namespace ReqtificatorTest.Configuration
             var lastConfig = HoconConfigurationFactory.ParseString("{playerRecord.healthOffset = 42}");
             var intermediateConfig = HoconConfigurationFactory.ParseString(
                 "{playerRecord.healthOffset = 13, playerRecord.magickaOffset = -25}");
-            var parsedConfig = ReqtificatorConfig.ParseConfig(new[] { lastConfig, intermediateConfig, BaseConfig });
+            var parsedConfig = ReqtificatorConfig.ParseConfig([lastConfig, intermediateConfig, BaseConfig]);
             parsedConfig.PlayerConfig.HealthOffset.Should().Be(42);
             parsedConfig.PlayerConfig.MagickaOffset.Should().Be(-25);
             parsedConfig.PlayerConfig.StaminaOffset.Should().Be(ExpectedBase.PlayerConfig.StaminaOffset);
@@ -109,7 +109,7 @@ namespace ReqtificatorTest.Configuration
         {
             var extraConfig = HoconConfigurationFactory.ParseString(
                 @"{playerRecord.spellsToRemove = [""012FCD Skyrim.esm"",""012FCC Skyrim.esm""]}");
-            var parsedConfig = ReqtificatorConfig.ParseConfig(new[] { extraConfig, BaseConfig });
+            var parsedConfig = ReqtificatorConfig.ParseConfig([extraConfig, BaseConfig]);
             parsedConfig.PlayerConfig.SpellsToRemove.Should().Contain(ExpectedBase.PlayerConfig.SpellsToRemove);
         }
     }
