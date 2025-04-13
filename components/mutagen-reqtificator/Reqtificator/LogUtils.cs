@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 using Mutagen.Bethesda.Plugins.Records;
 using Serilog;
@@ -21,7 +22,7 @@ namespace Reqtificator
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 .Enrich.FromLogContext()
-                .WriteTo.File(logName, levelSwitch: LogLevel, outputTemplate: format)
+                .WriteTo.File(logName, levelSwitch: LogLevel, outputTemplate: format, formatProvider: CultureInfo.InvariantCulture)
                 .CreateLogger();
         }
     }
