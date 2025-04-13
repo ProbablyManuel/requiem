@@ -13,6 +13,7 @@ dotnet_style_prefer_conditional_expression_over_assignment = false
 dotnet_style_prefer_conditional_expression_over_return = false
 csharp_style_var_when_type_is_apparent = true
 csharp_style_var_elsewhere = true
+dotnet_style_require_accessibility_modifiers = always
 
 # global suppression rules
 dotnet_diagnostic.CA1003.severity = none # seems to trigger false positives when I try to use relaxed non-"EventArgs" extending types for events
