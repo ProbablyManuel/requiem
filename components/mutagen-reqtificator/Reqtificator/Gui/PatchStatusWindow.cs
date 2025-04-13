@@ -32,7 +32,7 @@ namespace Reqtificator.Gui
 
         private void HideWindowMenu(object? _, EventArgs e)
         {
-            var hwnd = new WindowInteropHelper(this).Handle;
+            nint hwnd = new WindowInteropHelper(this).Handle;
             int styleWithoutWindowMenu = GetWindowLongPtr(hwnd, GWL_STYLE) & ~WS_SYSMENU;
             _ = SetWindowLongPtr(hwnd, GWL_STYLE, styleWithoutWindowMenu);
         }
