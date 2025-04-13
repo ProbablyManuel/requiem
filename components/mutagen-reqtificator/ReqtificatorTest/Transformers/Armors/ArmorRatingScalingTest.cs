@@ -13,10 +13,10 @@ namespace ReqtificatorTest.Transformers.Armors
 {
     public class ArmorRatingScalingTest
     {
-        public static readonly ArmorRatingThresholds LightArmorThresholds = new(10, 20, 30, 40, 50);
-        public static readonly ArmorRatingThresholds HeavyArmorThresholds = new(60, 70, 80, 90, 100);
+        private static readonly ArmorRatingThresholds LightArmorThresholds = new(10, 20, 30, 40, 50);
+        private static readonly ArmorRatingThresholds HeavyArmorThresholds = new(60, 70, 80, 90, 100);
 
-        public static readonly ArmorPatchingConfiguration Config = new(HeavyArmorThresholds, LightArmorThresholds);
+        private static readonly ArmorPatchingConfiguration Config = new(HeavyArmorThresholds, LightArmorThresholds);
 
         [Fact]
         public void Should_scale_up_light_body_armor_ratings_if_below_the_corresponding_threshold()

@@ -13,10 +13,10 @@ namespace ReqtificatorTest.Transformers
 {
     public class ForwardDataFromTemplateTest
     {
-        public static readonly ModKey Skyrim = new("Skyrim", ModType.Master);
-        public static readonly ModKey VisualMod = new("Amazing Actors", ModType.Plugin);
-        public static readonly ModKey UnrelatedMod = new("Serious Loot", ModType.Light);
-        public static readonly ModKey DataMod = new("Skilled Actors", ModType.Plugin);
+        private static readonly ModKey Skyrim = new("Skyrim", ModType.Master);
+        private static readonly ModKey VisualMod = new("Amazing Actors", ModType.Plugin);
+        private static readonly ModKey UnrelatedMod = new("Serious Loot", ModType.Light);
+        private static readonly ModKey DataMod = new("Skilled Actors", ModType.Plugin);
 
         private sealed class Fixture
         {
