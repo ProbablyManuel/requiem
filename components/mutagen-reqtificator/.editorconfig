@@ -25,6 +25,7 @@ dotnet_diagnostic.CA1859.severity = none # our collections don't receive enough 
 dotnet_diagnostic.IDE0072.severity = none # too many false positives
 dotnet_diagnostic.IDE0130.severity = none # https://github.com/dotnet/format/issues/1623
 dotnet_diagnostic.SYSLIB1045.severity = none # Unnecessarily cumbersome for negligible performance improvements
+dotnet_diagnostic.SYSLIB1054.severity = none # no idea how to get this working
 
 [UserSettings.cs]
 dotnet_diagnostic.CA1308.severity = none # only used to write booleans to json
