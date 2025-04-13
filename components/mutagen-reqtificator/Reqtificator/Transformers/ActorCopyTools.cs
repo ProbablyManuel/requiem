@@ -177,24 +177,19 @@ namespace Reqtificator.Transformers
         // IsGhost = 536870912, // 0x20000000
         // Invulnerable = 2147483648, // 0x80000000
 
-        public static readonly ImmutableList<NpcConfiguration.Flag> InheritBaseDataFlags = ImmutableList<NpcConfiguration.Flag>
-            .Empty
-            .Add(NpcConfiguration.Flag.Essential)
-            .Add(NpcConfiguration.Flag.Protected)
-            .Add(NpcConfiguration.Flag.Respawn)
-            .Add(NpcConfiguration.Flag.Summonable)
-            .Add(NpcConfiguration.Flag.SimpleActor)
-            .Add(NpcConfiguration.Flag.DoesntAffectStealthMeter);
+        public static readonly ImmutableList<NpcConfiguration.Flag> InheritBaseDataFlags =
+        [
+            NpcConfiguration.Flag.Essential,
+            NpcConfiguration.Flag.Protected,
+            NpcConfiguration.Flag.Respawn,
+            NpcConfiguration.Flag.Summonable,
+            NpcConfiguration.Flag.SimpleActor,
+            NpcConfiguration.Flag.DoesntAffectStealthMeter,
+        ];
 
-        public static readonly ImmutableList<NpcConfiguration.Flag> InheritStatsFlags = ImmutableList<NpcConfiguration.Flag>
-            .Empty
-            .Add(NpcConfiguration.Flag.AutoCalcStats)
-            .Add(NpcConfiguration.Flag.BleedoutOverride);
+        public static readonly ImmutableList<NpcConfiguration.Flag> InheritStatsFlags = [NpcConfiguration.Flag.AutoCalcStats, NpcConfiguration.Flag.BleedoutOverride];
 
-        public static readonly ImmutableList<NpcConfiguration.Flag> InheritTraitsFlags = ImmutableList<NpcConfiguration.Flag>
-            .Empty
-            .Add(NpcConfiguration.Flag.Female)
-            .Add(NpcConfiguration.Flag.OppositeGenderAnims);
+        public static readonly ImmutableList<NpcConfiguration.Flag> InheritTraitsFlags = [NpcConfiguration.Flag.Female, NpcConfiguration.Flag.OppositeGenderAnims];
 
         public static void CopyDataForTemplateFlag(Npc target, INpcGetter source, NpcConfiguration.TemplateFlag flag)
         {

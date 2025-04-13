@@ -45,11 +45,11 @@ namespace ReqtificatorTest.Configuration
                 HealthOffset: 0,
                 MagickaOffset: 1,
                 StaminaOffset: 2,
-                SpellsToRemove: new List<IFormLinkGetter<ISpellGetter>>
-                {
+                SpellsToRemove:
+                [
                     new FormLink<ISpellGetter>(FormKey.Factory("012FCD:Skyrim.esm")),
                     new FormLink<ISpellGetter>(FormKey.Factory("012FCC:Skyrim.esm"))
-                }.ToImmutableList()
+                ]
             ),
             ArmorSettings: new ArmorPatchingConfiguration(
                 HeavyArmorRatingThresholds: new ArmorRatingThresholds(

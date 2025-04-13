@@ -313,7 +313,7 @@ namespace Reqtificator
                 loadOrder.PriorityOrder.LeveledNpc().WinningOverrides(), linkCacheWithPatchedActors, modsWithActorVariations);
 
             var generatedVariations =
-                ActorVariationsGenerator.BuildActorVariationContent(variationsToGenerate.ToImmutableList(),
+                ActorVariationsGenerator.BuildActorVariationContent([.. variationsToGenerate],
                     linkCacheWithPatchedActors, targetMod);
 
             var updatedActorVariations = ActorVariationsGenerator.UpdateActorVariationLists(

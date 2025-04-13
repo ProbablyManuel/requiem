@@ -9,6 +9,7 @@ namespace Reqtificator.Transformers.LeveledCharacters
 {
     internal class LeveledCharacterMerger : ILeveledListMerger<LeveledNpc, ILeveledNpcGetter, ILeveledNpcEntryGetter>
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0305:Simplify collection initialization", Justification = "Not simpler")]
         public IReadOnlyList<LeveledListMerging.LeveledListEntry> GetEntries(
             IReadOnlyList<ILeveledNpcEntryGetter> input)
         {
