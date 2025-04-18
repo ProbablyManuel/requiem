@@ -4,6 +4,7 @@ Requiem 6.0.3 - "Unbroken Road"  Bugfix Pack #3
 Reqtificator
 ------------
 
+* The keywords ArmorHeavy and ArmorLight are only added to shields. This prevents the armor type keywords from being added to hidden creature items such as draugr beards.
 * All dependencies of the Reqtificator are updated to the latest version.
 * The "Open encounter zones" setting is correctly saved between consecutive runs.
 
