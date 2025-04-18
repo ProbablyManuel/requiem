@@ -1,0 +1,21 @@
+FormKey: AE38B5:Requiem.esp
+EditorID: REQ_EquipAbility_Eduj
+Name:
+  TargetLanguage: English
+  Value: Okin & Eduj
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: AE38B6:Requiem.esp
+  Data:
+    Magnitude: 0.15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedConditionData
+      RunOnTypeIndex: 0
+      ItemOrList: 08FFDE:Skyrim.esm
+    ComparisonValue: 1

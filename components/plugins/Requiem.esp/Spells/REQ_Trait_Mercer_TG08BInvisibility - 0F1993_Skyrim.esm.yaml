@@ -1,0 +1,40 @@
+FormKey: 0F1993:Skyrim.esm
+EditorID: REQ_Trait_Mercer_TG08BInvisibility
+Name:
+  TargetLanguage: English
+  Value: Nightingale's Shadow
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 0FDBBF:Skyrim.esm
+  Data:
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Variable07
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetVMQuestVariableConditionData
+      Quest: 021554:Skyrim.esm
+      SecondUnusedIntParameter: -286126976
+      VariableName: ::pTG08BBrynjolfIsCharmed_var
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetStageConditionData
+      Quest: 021554:Skyrim.esm
+    ComparisonValue: 40
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetStageConditionData
+      Quest: 021554:Skyrim.esm
+    ComparisonValue: 45

@@ -1,0 +1,51 @@
+FormKey: 0E57F0:Skyrim.esm
+EditorID: REQ_Special_Staff_SpiderControlRod
+ObjectBounds:
+  First: -5, -38, -5
+  Second: 5, 66, 5
+Name:
+  TargetLanguage: English
+  Value: Spider Control Rod
+Model:
+  File: Weapons\Dwarven\DwarvenStaffGem.nif
+  Data: 0x020000000400000000000000EA053E1964647300364E8FC213FBD24364647300364E8FC2188FFC7C64647300262C333BA9AADBDA64647300364E8FC2
+ObjectEffect: 0E57F1:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E716:Skyrim.esm
+- 0937A4:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+FirstPersonModel: 0C6925:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03DE2C:Skyrim.esm
+UnequipSound: 03DE2D:Skyrim.esm
+BasicStats:
+  Value: 25
+  Weight: 8
+  Damage: 1
+Data:
+  AnimationType: Staff
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Conjuration
+Critical:
+  Damage: 1
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

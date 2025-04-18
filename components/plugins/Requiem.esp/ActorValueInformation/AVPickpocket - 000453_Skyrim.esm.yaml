@@ -1,0 +1,80 @@
+FormKey: 000453:Skyrim.esm
+EditorID: AVPickpocket
+Name:
+  TargetLanguage: English
+  Value: Pickpocket
+Description:
+  TargetLanguage: English
+  Value: "The stealthy art of picking an unsuspecting target's pockets. "
+CNAM: 0x03000000
+Skill:
+  UseMult: 6.48
+  ImproveMult: 0.25
+  ImproveOffset: 250
+PerkTree:
+- FNAM: 0x00000000
+  PerkGridX: 14824284
+  PerkGridY: 15
+  HorizontalPosition: 0
+  VerticalPosition: 0
+  AssociatedSkill: 000453:Skyrim.esm
+  ConnectionLineToIndices:
+  - 8
+  Index: 0
+- Perk: 0BE124:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 2
+  PerkGridY: 0
+  HorizontalPosition: -0.013333
+  VerticalPosition: 0
+  AssociatedSkill: 000453:Skyrim.esm
+  ConnectionLineToIndices:
+  - 4
+  Index: 8
+- Perk: 058202:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 2
+  PerkGridY: 1
+  HorizontalPosition: -0.56
+  VerticalPosition: -0.1
+  AssociatedSkill: 000453:Skyrim.esm
+  ConnectionLineToIndices:
+  - 3
+  - 1
+  Index: 4
+- Perk: 058204:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 1
+  PerkGridY: 1
+  HorizontalPosition: -0.153333
+  VerticalPosition: 1.12
+  AssociatedSkill: 000453:Skyrim.esm
+  ConnectionLineToIndices:
+  - 6
+  Index: 3
+- Perk: 058201:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 1
+  PerkGridY: 2
+  HorizontalPosition: -0.56
+  VerticalPosition: 1.72
+  AssociatedSkill: 000453:Skyrim.esm
+  ConnectionLineToIndices:
+  - 7
+  Index: 6
+- Perk: 058205:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 0
+  PerkGridY: 4
+  HorizontalPosition: -0.28
+  VerticalPosition: 0
+  AssociatedSkill: 000453:Skyrim.esm
+  Index: 7
+- Perk: 096590:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 0
+  PerkGridY: 0
+  HorizontalPosition: 0.04
+  VerticalPosition: 0.6
+  AssociatedSkill: 000453:Skyrim.esm
+  Index: 1

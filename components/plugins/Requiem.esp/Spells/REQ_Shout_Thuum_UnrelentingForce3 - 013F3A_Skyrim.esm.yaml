@@ -1,0 +1,99 @@
+FormKey: 013F3A:Skyrim.esm
+EditorID: REQ_Shout_Thuum_UnrelentingForce3
+Name:
+  TargetLanguage: English
+  Value: Unrelenting Force - Fus Ro Da
+MenuDisplayObject: 0A59AC:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 6
+Type: Voice
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 07F82F:Skyrim.esm
+  Data:
+    Magnitude: 1.5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: ResistMagic
+    ComparisonValue: 50
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Health
+    ComparisonValue: 600
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0172AC:Skyrim.esm
+- BaseEffect: 0EA075:Skyrim.esm
+  Data:
+    Magnitude: 60
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: ResistMagic
+    ComparisonValue: 50
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Health
+    ComparisonValue: 600
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0172AC:Skyrim.esm
+- BaseEffect: 07F82E:Skyrim.esm
+  Data:
+    Magnitude: 1.5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: ResistMagic
+    ComparisonValue: 50
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Health
+    ComparisonValue: 600
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0172AC:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 01FF2B:Dragonborn.esm
+  Data:
+    Magnitude: 50
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Health
+    ComparisonValue: 600
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0172AC:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: ResistMagic
+    ComparisonValue: 50

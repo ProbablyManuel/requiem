@@ -1,0 +1,40 @@
+FormKey: 10CAAA:Skyrim.esm
+EditorID: werewolfKnockbackEffect
+Name:
+  TargetLanguage: English
+  Value: Knockdown attacks
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+CastType: FireAndForget
+TargetType: Touch
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 357085:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0172AC:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 5F367F:Requiem.esp

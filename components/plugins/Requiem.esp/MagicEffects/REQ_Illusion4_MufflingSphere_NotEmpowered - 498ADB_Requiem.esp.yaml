@@ -1,0 +1,25 @@
+FormKey: 498ADB:Requiem.esp
+EditorID: REQ_Illusion4_MufflingSphere_NotEmpowered
+Name:
+  TargetLanguage: English
+  Value: Not Empowered
+Flags:
+- NoArea
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If not empowered, the spell breaks if the caster attempts to move swiftly.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData

@@ -1,0 +1,56 @@
+FormKey: 013985:Skyrim.esm
+EditorID: REQ_Weapon_Steel_Bow
+ObjectBounds:
+  First: -17, -57, -2
+  Second: 4, 57, 2
+Name:
+  TargetLanguage: English
+  Value: Hunting Bow
+Model:
+  File: Weapons\Steel\SteelBow.nif
+  Data: 0x0200000004000000000000009DC0B4256464730014F240E6971EA2C86464730014F240E6B8EC307B64647300262C333B2D4FAB516464730014F240E6
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E719:Skyrim.esm
+- 01E715:Skyrim.esm
+- 08F958:Skyrim.esm
+- 2E232E:Requiem.esp
+- AD3B2F:Requiem.esp
+- 9F9915:Requiem.esp
+- AD3B2D:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 023B5A:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03D78C:Skyrim.esm
+UnequipSound: 03D882:Skyrim.esm
+BasicStats:
+  Value: 50
+  Weight: 5
+  Damage: 20
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 0.4167
+  Reach: 1
+  Flags:
+  - NPCsUseAmmo
+  BaseVATStoHitChance: 5
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1084227584
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  Damage: 3
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

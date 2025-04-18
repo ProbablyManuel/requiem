@@ -1,0 +1,383 @@
+FormKey: 0CDD84:Skyrim.esm
+EditorID: WerewolfBeastRace
+Name:
+  TargetLanguage: English
+  Value: Werewolf
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 06B10E:Skyrim.esm
+- 0A1A3E:Skyrim.esm
+- AE3B0C:Requiem.esp
+- AE3B0D:Requiem.esp
+- AE3B0E:Requiem.esp
+Skin: 0CDD86:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 0D61D1:Skyrim.esm
+- 0F23C5:Skyrim.esm
+- 586728:Requiem.esp
+- 5F367F:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: Alchemy
+Height:
+  Male: 1.13
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Swims
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- RegenHpInCombat
+- AllowPcDialog
+- OverrideHeadPartList
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 1000
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 300
+BaseCarryWeight: 2000
+BaseMass: 2.5
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+HeadBipedObject: Head
+HairBipedObject: Hair
+ShieldBipedObject: Shield
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 5
+- Key: Stamina
+  Value: 20
+UnarmedDamage: 20
+UnarmedReach: 150
+BodyBipedObject: Body
+AimAngleTolerance: 45
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\WerewolfBeast\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\WerewolfBeast\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F2E6:Skyrim.esm
+  Female: 013ADD:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 50
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    RecoveryTime: 10
+    StaminaMult: 1
+  AttackEvent: AttackStartLeftPower
+- AttackData:
+    DamageMult: 1
+    StrikeAngle: 50
+    RecoveryTime: 10
+    StaminaMult: 1
+  AttackEvent: AttackStartDualSprinting
+- AttackData:
+    DamageMult: 2
+    StrikeAngle: 50
+    Knockdown: 1
+    StaminaMult: 1
+  AttackEvent: AttackStartRightSprinting
+- AttackData:
+    DamageMult: 2
+    StrikeAngle: 50
+    Knockdown: 1
+    StaminaMult: 1
+  AttackEvent: AttackStartLeftSprinting
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 50
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    RecoveryTime: 10
+    StaminaMult: 1
+  AttackEvent: attackStartRightPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 50
+    RecoveryTime: 20
+    StaminaMult: 1
+  AttackEvent: AttackStartDualRunning
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 50
+    RecoveryTime: 15
+    StaminaMult: 1
+  AttackEvent: AttackStartHowlExplode
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 50
+    RecoveryTime: 1.3
+    StaminaMult: 1
+  AttackEvent: attackStartLeft
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 50
+    RecoveryTime: 1.3
+    StaminaMult: 1
+  AttackEvent: attackStartRight
+- AttackData:
+    DamageMult: 1.3
+    Chance: 1
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 50
+    Stagger: 1.25
+    AttackType: 0914E6:Skyrim.esm
+    RecoveryTime: 15
+    StaminaMult: 1
+  AttackEvent: AttackStartLeftRunningPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    AttackAngle: 45
+    StrikeAngle: 45
+    RecoveryTime: 10
+    StaminaMult: 1
+  AttackEvent: AttackStartRightSide
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    AttackAngle: -45
+    StrikeAngle: 45
+    RecoveryTime: 10
+    StaminaMult: 1
+  AttackEvent: AttackStartLeftSide
+- AttackData:
+    DamageMult: 1.3
+    Chance: 1
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 50
+    Stagger: 1.25
+    AttackType: 0914E6:Skyrim.esm
+    RecoveryTime: 15
+    StaminaMult: 1
+  AttackEvent: AttackStartRightRunningPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 50
+    Stagger: 0.2
+    RecoveryTime: 15
+    StaminaMult: 1
+  AttackEvent: AttackStartDual
+- AttackData:
+    DamageMult: 0.3
+    Chance: 1
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 50
+    Stagger: 0.5
+    AttackType: 0914E5:Skyrim.esm
+    RecoveryTime: 20
+    StaminaMult: 3
+  AttackEvent: AttackStartBackHand
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 0CDD85:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\WerewolfBeast\WerewolfBeastProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\WerewolfBeast\WerewolfBeastProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0F23C4:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Hair
+  Value: Hair
+- Key: Body
+  Value: BODY
+- Key: Hands
+  Value: Hands
+- Key: Forearms
+  Value: Forearms
+- Key: Amulet
+  Value: Amulet
+- Key: Ring
+  Value: Ring
+- Key: Feet
+  Value: Feet
+- Key: Calves
+  Value: Calves
+- Key: Shield
+  Value: SHIELD
+- Key: Tail
+  Value: TAIL
+EquipmentFlags:
+- HandToHand
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+- 025BEE:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+FaceFxPhonemes:
+  ForceNames: True
+  Aah_LipBigAah:
+    Name: Aah
+    EY: 0.6
+    AE: 0.8
+    AA: 1
+    AW: 0.2
+    AH: 0.8
+    AO: 0.1
+    Y: 0.2
+    HH: 0.6
+    G: 0.4
+  BigAah_LipDST:
+    Name: BigAah
+    OW: 0.8
+    UH: 0.5
+    AX: 0.8
+  BMP_LipEee:
+    Name: BMP
+    M: 1
+    B: 1
+    P: 0.9
+  ChJSh_LipFV:
+    Name: ChJSh
+    SH: 0.8
+    ZH: 0.7
+    JH: 1
+    G: 0.3
+    CH: 1
+  DST_LipK:
+    Name: DST
+    S: 0.9
+    Z: 0.8
+    DH: 0.2
+    D: 1
+    T: 0.8
+  Eee_LipL:
+    Name: Eee
+    IY: 1
+    IH: 0.2
+    EY: 0.3
+    AY: 0.2
+    OY: 0.3
+    Y: 0.4
+  Eh_LipR:
+    Name: Eh
+    IH: 0.7
+    EH: 1
+  FV_LipTh:
+    Name: FV
+    F: 0.8
+    V: 1
+  I:
+    Name: I
+    AY: 0.8
+    ER: 0.5
+    Y: 0.4
+  K:
+    Name: K
+    K: 1
+  N:
+    Name: N
+    N: 1
+    NG: 0.9
+    L: 0.6
+  Oh:
+    Name: Oh
+    AW: 0.6
+    AH: 0.2
+    AO: 0.5
+    OY: 0.6
+    OW: 0.2
+    UH: 0.2
+  OohQ:
+    Name: OohQ
+    UW: 1
+  R:
+    Name: R
+    ER: 0.3
+    R: 1
+  Th:
+    Name: Th
+    TH: 1
+    DH: 0.8
+    L: 0.2
+  W:
+    Name: W
+    AO: 0.2
+    W: 1

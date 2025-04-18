@@ -1,0 +1,45 @@
+FormKey: AD3999:Requiem.esp
+EditorID: REQ_OneHanded_DaggerFocus2
+Name:
+  TargetLanguage: English
+  Value: Dagger Focus
+Description:
+  TargetLanguage: English
+  Value: A dagger in your hand turns into a deadly weapon.<br>[55% irresistible sneak attack damage, +20% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: AD399A:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+NextPerk: AD3998:Requiem.esp
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 5
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: AD3998:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E713:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.55
+- MutagenObjectType: PerkAbilityEffect
+  Ability: AD399C:Requiem.esp

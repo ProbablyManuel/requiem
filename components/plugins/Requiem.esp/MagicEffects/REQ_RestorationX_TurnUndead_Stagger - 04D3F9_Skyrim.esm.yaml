@@ -1,0 +1,45 @@
+FormKey: 04D3F9:Skyrim.esm
+EditorID: REQ_RestorationX_TurnUndead_Stagger
+Name:
+  TargetLanguage: English
+  Value: Stagger
+MenuDisplayObject: 1097CA:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- PowerAffectsMagnitude
+BaseCost: 0.001
+MagicSkill: Restoration
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 1052A3:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

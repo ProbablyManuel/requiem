@@ -1,0 +1,35 @@
+FormKey: 01CAB5:Dragonborn.esm
+EditorID: REQ_Trait_Spider_FlameCloak
+Name:
+  TargetLanguage: English
+  Value: Flame Cloak
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+ResistValue: ResistFire
+TaperWeight: 0.2
+HitShader: 01E115:Dragonborn.esm
+EnchantShader: 01E115:Dragonborn.esm
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 01CAB6:Dragonborn.esm
+DualCastScale: 1
+Sounds:
+- Sound: 027EA3:Dragonborn.esm
+- Type: Charge
+  Sound: 027EA0:Dragonborn.esm
+- Type: Ready
+  Sound: 027EA1:Dragonborn.esm
+- Type: Release
+  Sound: 027EA2:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: For <dur> seconds, opponents in melee range take <mag> points fire damage per second. Targets on fire take extra damage.

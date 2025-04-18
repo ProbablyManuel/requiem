@@ -1,0 +1,50 @@
+FormKey: 372441:Requiem.esp
+EditorID: REQ_Var_Weapon_Quicksilver_Warhammer_Inebriation
+Name:
+  TargetLanguage: English
+  Value: The Warhammer of Inebriation
+Model:
+  File: DLC02\Weapons\Nordic\NordicWarhammer.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 372442:Requiem.esp
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 06D930:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 026230:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: No one knows what inspired the enchanter to create a weapon fueled by drunkenness. While you're tipsy, it absorbs <15> stamina per hit. As you strive to become dead drunk, this effect increases to up to <60> points.
+ImpactDataSet: 0E4CB0:Skyrim.esm
+FirstPersonModel: 03C355:Dragonborn.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 0E4F10:Skyrim.esm
+UnequipSound: 0E4F11:Skyrim.esm
+BasicStats:
+  Value: 220
+  Weight: 26
+  Damage: 22
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.6
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1069547520
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.25
+Critical:
+  Damage: 11
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud

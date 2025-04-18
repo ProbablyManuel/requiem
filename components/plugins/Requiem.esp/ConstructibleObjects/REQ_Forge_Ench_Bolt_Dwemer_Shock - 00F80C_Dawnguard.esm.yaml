@@ -1,0 +1,27 @@
+FormKey: 00F80C:Dawnguard.esm
+EditorID: REQ_Forge_Ench_Bolt_Dwemer_Shock
+Items:
+- Item:
+    Item: 03AD60:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 00D099:Dawnguard.esm
+    Count: 30
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00F1BE:Dawnguard.esm
+CreatedObject: 00F1B9:Dawnguard.esm
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 30

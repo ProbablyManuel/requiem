@@ -1,0 +1,19 @@
+FormKey: 0B62E0:Skyrim.esm
+EditorID: StaffEnchFear
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: Fear
+EnchantmentCost: 289
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 50
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 01EA77:Skyrim.esm
+  Data:
+    Magnitude: 15
+    Duration: 5

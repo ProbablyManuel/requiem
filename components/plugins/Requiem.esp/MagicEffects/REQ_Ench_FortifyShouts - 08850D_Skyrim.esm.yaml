@@ -1,0 +1,24 @@
+FormKey: 08850D:Skyrim.esm
+EditorID: REQ_Ench_FortifyShouts
+Name:
+  TargetLanguage: English
+  Value: Fortify Shouts
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+EnchantShader: 092DE8:Skyrim.esm
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: ShoutRecoveryMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The Voice can be used <mag>% more often.

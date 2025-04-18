@@ -1,0 +1,124 @@
+FormKey: 01A50A:Dragonborn.esm
+EditorID: REQ_NULL_DLC2ThirskRieklingRace
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 03CFED:Dragonborn.esm
+Skin: 017F46:Dragonborn.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- AllowPcDialog
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 50
+- Key: Magicka
+  Value: 50
+- Key: Stamina
+  Value: 50
+BaseCarryWeight: 200
+BaseMass: 1
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 0
+UnarmedDamage: 1
+UnarmedReach: 64
+BodyBipedObject: Body
+AimAngleTolerance: 20
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\Riekling\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\Riekling\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 0208DC:Dragonborn.esm
+  Female: 00002E:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
+BodyData:
+  Male:
+    Index: BodyTexture
+  Female:
+    Index: BodyTexture
+BodyPartData: 017F53:Dragonborn.esm
+BehaviorGraph:
+  Male:
+    File: Actors\DLC02\Riekling\RieklingProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\DLC02\Riekling\RieklingProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0C190F:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+- TwoHandSword
+- Bow
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+MorphRace: 017F44:Dragonborn.esm
+ArmorRace: 017F44:Dragonborn.esm

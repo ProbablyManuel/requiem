@@ -1,0 +1,31 @@
+FormKey: 028E84:Dragonborn.esm
+EditorID: REQ_Creature_Seeker_Absorb
+Name:
+  TargetLanguage: English
+  Value: Seeker Drain
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 30
+Flags:
+- ManualCostCalc
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 024FC1:Dragonborn.esm
+  Data:
+    Magnitude: 20
+    Duration: 10
+- BaseEffect: 02857C:Dragonborn.esm
+  Data:
+    Magnitude: 20
+    Duration: 10
+- BaseEffect: 02857D:Dragonborn.esm
+  Data:
+    Magnitude: 20
+    Duration: 10
+- BaseEffect: 024FC6:Dragonborn.esm
+  Data:
+    Magnitude: 30
+    Duration: 10

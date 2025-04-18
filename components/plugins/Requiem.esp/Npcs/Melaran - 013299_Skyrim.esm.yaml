@@ -1,0 +1,207 @@
+FormKey: 013299:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Melaran
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 08636C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 15
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+Factions:
+- Faction: 02817C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 029DB0:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05091E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 0B2036:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0C13D0:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0C13DF:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AF0:Skyrim.esm
+Race: 013743:Skyrim.esm
+ActorEffect:
+- 072316:Skyrim.esm
+- 07231B:Skyrim.esm
+- 0BB967:Skyrim.esm
+- 0BB969:Skyrim.esm
+- 0BB96B:Skyrim.esm
+- 0CAB65:Skyrim.esm
+- 0F95EB:Skyrim.esm
+Items:
+- Item:
+    Item: 0C13E1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D3:Skyrim.esm
+    Count: 1
+- Item:
+    Item: ADDE7C:Requiem.esp
+    Count: 1
+AIData:
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 034BDE:Skyrim.esm
+- 034BE7:Skyrim.esm
+- 01B210:Skyrim.esm
+- 01B217:Skyrim.esm
+Class: 01317A:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Melaran
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 30
+  - Key: Conjuration
+    Value: 30
+  - Key: Destruction
+    Value: 46
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 41
+  - Key: Enchanting
+    Value: 10
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 114
+  Magicka: 186
+  Stamina: 80
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 040190:Skyrim.esm
+- 05107D:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C3CC8:Skyrim.esm
+- 0C7170:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 10FE69:Skyrim.esm
+SleepingOutfit: 01697D:Skyrim.esm
+CrimeFaction: 029DB0:Skyrim.esm
+TextureLighting: '#00998D55'
+FaceMorph:
+  NoseLongVsShort: 0.7
+  JawUpVsDown: -1
+  JawNarrowVsWide: -0.2
+  CheeksUpVsDown: 0.5
+  CheeksForwardVsBack: 0.1
+  EyesUpVsDown: 0.1
+  EyesInVsOut: -0.3
+  BrowsUpVsDown: 1
+  BrowsInVsOut: 0.3
+  BrowsForwardVsBack: -1
+  LipsUpVsDown: -0.1
+  ChinNarrowVsWide: -0.7
+  ChinUpVsDown: -0.1
+  EyesForwardVsBack: 0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 8
+  Unknown: 4294967295
+  Eyes: 26
+  Mouth: 4
+TintLayers:
+- Index: 1
+  Color: '#00998D55'
+  InterpolationValue: 1
+  Preset: 56
+- Index: 23
+  Color: '#002F2013'
+  InterpolationValue: 0
+  Preset: 360
+MajorFlags:
+- 0x40000

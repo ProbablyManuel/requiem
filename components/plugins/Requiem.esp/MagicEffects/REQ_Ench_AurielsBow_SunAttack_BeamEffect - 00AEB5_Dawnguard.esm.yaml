@@ -1,0 +1,44 @@
+FormKey: 00AEB5:Dawnguard.esm
+EditorID: REQ_Ench_AurielsBow_SunAttack_BeamEffect
+Name:
+  TargetLanguage: English
+  Value: Auriels Bow Beam Effects
+MenuDisplayObject: 018F02:Dawnguard.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+HitShader: 00AEB3:Dawnguard.esm
+SpellmakingArea: 8
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 00C610:Dawnguard.esm
+Explosion: 018EFF:Dawnguard.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 0AD38F:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetShouldAttackConditionData
+    TargetNpc: 000014:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+    TargetNpc: 000014:Skyrim.esm
+  ComparisonValue: 1

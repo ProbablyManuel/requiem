@@ -1,0 +1,30 @@
+FormKey: 033A28:Dragonborn.esm
+EditorID: REQ_Ench_BloodskalBlade_BlastVertical_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistMagic
+TaperWeight: 1
+HitShader: 074799:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 033A26:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+HitEffectArt: 074795:Skyrim.esm
+ImpactData: 074798:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

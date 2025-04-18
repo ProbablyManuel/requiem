@@ -1,0 +1,45 @@
+FormKey: 18A66F:Requiem.esp
+EditorID: REQ_Evasion_AgileSpellcasting
+Name:
+  TargetLanguage: English
+  Value: Agile Spellcasting
+Description:
+  TargetLanguage: English
+  Value: You learned how to avoid the limitations light armors bestow upon somatic spell components.<br>[No spell cost penalty for casting spells in light armor]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: LightArmor
+  ComparisonValue: 30
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE123:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 50
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        RunOnTypeIndex: 0
+        ActorValue: LightArmor
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.25

@@ -1,0 +1,23 @@
+FormKey: 0008A5:ccbgssse001-fish.esm
+EditorID: REQ_Food_Fish_Cooked_Angler
+Name:
+  TargetLanguage: English
+  Value: Cooked Angler
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishAngler\FishAngler01Cooked.nif
+  Data: 0x020000000000000000000000
+Weight: 2
+Value: 40
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE4:Update.esm
+  Data: {}

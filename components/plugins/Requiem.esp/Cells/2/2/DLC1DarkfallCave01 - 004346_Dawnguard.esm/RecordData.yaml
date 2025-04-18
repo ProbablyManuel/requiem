@@ -1,0 +1,69 @@
+FormKey: 004346:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1DarkfallCave01
+Version2: 11
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Darkfall Cave
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00345048'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  DirectionalRotationZ: 90
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#00030507'
+    DirectionalXMinus: '#00020506'
+    DirectionalYPlus: '#00030507'
+    DirectionalYMinus: '#00030407'
+    DirectionalZPlus: '#00010203'
+    DirectionalZMinus: '#0004070A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 006AEA:Dawnguard.esm
+WaterHeight: 0
+Location: 00A87A:Dawnguard.esm
+Water: 00C7C2:Dawnguard.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+SkyAndWeatherFromRegion: 0C5856:Skyrim.esm
+AcousticSpace: 006B0D:Dawnguard.esm
+EncounterZone: 00A879:Dawnguard.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 019964:Dawnguard.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 00A987:Dawnguard.esm
+  Version2: 3
+  Base: 0EF052:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 00A87A:Dawnguard.esm
+  Placement:
+    Position: 9743.532, 5452.518, -2754.2666
+    Rotation: 0.13144484, 0.18928601, 2.955693
+MajorFlags:
+- 0x40000

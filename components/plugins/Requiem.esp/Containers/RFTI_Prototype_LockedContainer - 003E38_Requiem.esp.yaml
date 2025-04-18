@@ -1,0 +1,24 @@
+FormKey: 003E38:Requiem.esp
+EditorID: RFTI_Prototype_LockedContainer
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_LockpickControl
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerControl
+      Object: 82F3AF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: datastorage
+      Object: AD3B22:Requiem.esp
+      Alias: 18
+ObjectBounds:
+  First: -105, -40, 0
+  Second: 89, 39, 40
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Prototype Container for limitless Reqtification Magic'
+Model:
+  File: Clutter\Common\CommonCoffin01.nif
+  Data: 0x020000000000000000000000
+OpenSound: 1039C0:Skyrim.esm
+CloseSound: 1039C1:Skyrim.esm

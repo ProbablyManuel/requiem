@@ -1,0 +1,207 @@
+FormKey: 0131F6:Skyrim.esm
+EditorID: AtronachFrostRace
+Name:
+  TargetLanguage: English
+  Value: Frost Atronach
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 02F3B6:Skyrim.esm
+- 104D4B:Skyrim.esm
+- AD39D7:Requiem.esp
+- AE3AE2:Requiem.esp
+Skin: 05B2E7:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013797:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 0F23C5:Skyrim.esm
+- 0FFEA0:Skyrim.esm
+- 44BE5E:Requiem.esp
+- 4F6D1E:Requiem.esp
+- 5F367F:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: Destruction
+  Boost: 10
+SkillBoost6:
+  Skill: Illusion
+  Boost: 95
+Height:
+  Male: 1.3
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- DontShowBloodDecal
+- NoKnockdowns
+- DontShowWeaponBlood
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 350
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10000
+BaseCarryWeight: 200
+BaseMass: 5
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Large
+ShieldBipedObject: Shield
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 1000
+UnarmedDamage: 60
+UnarmedReach: 196
+BodyBipedObject: Head
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\AtronachFrost\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\AtronachFrost\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F1D4:Skyrim.esm
+  Female: 01F1D4:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.25
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack_R1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.1
+    Spell: 078099:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_PowerAttack_L1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    RecoveryTime: 1.5
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_ForwardPowerAttack_R1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.05
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack_L1
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.5
+    StaminaMult: 1
+  AttackEvent: bashPowerStart
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 05B2E9:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\AtronachFrost\AtronachFrostProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\AtronachFrost\AtronachFrostProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F47:Skyrim.esm
+ImpactDataSet: 0AF666:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: BODY
+- Key: Shield
+  Value: SHIELD
+MovementTypes:
+- MovementType: 059661:Skyrim.esm
+  Overrides:
+    LeftWalk: 70.88
+    LeftRun: 70.88
+    RightWalk: 70.88
+    RightRun: 70.88
+    ForwardWalk: 70.88
+    ForwardRun: 70.88
+    BackWalk: 70.88
+    BackRun: 70.88
+    RotateWalk: 3.1415927
+    RotateRun: 3.1415927
+    Unknown: 3.1415927
+EquipmentFlags:
+- HandToHand
+- Shield
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm

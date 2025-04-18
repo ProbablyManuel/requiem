@@ -1,0 +1,41 @@
+FormKey: 01707C:Dragonborn.esm
+EditorID: REQ_Spider_ExplodingPoison_Effect
+Name:
+  TargetLanguage: English
+  Value: Exploding Poison Spider
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 2.3
+MagicSkill: Destruction
+TaperWeight: 0.3
+MinimumSkillLevel: 50
+SpellmakingArea: 5
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 01707A:Dragonborn.esm
+Explosion: 01707D:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 0145D1:Dragonborn.esm
+ImpactData: 03D5DE:Dragonborn.esm
+SkillUsageMultiplier: 0.5
+DualCastScale: 1.1
+Sounds:
+- Sound: 03B567:Dragonborn.esm
+- Type: Charge
+  Sound: 027EA0:Dragonborn.esm
+- Type: Ready
+  Sound: 027EA1:Dragonborn.esm
+- Type: Release
+  Sound: 027EA2:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: Tosses a dead spider on the ground that explodes for <90> poison damage when an enemy gets too close. Additionally, deals <3> poison damage per second for <30> seconds.

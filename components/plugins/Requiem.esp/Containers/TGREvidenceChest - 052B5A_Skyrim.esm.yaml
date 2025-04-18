@@ -1,0 +1,33 @@
+FormKey: 052B5A:Skyrim.esm
+MajorRecordFlagsRaw: 134217728
+EditorID: TGREvidenceChest
+SkyrimMajorRecordFlags:
+- 0x8000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: AA000XarrianLockBreakScriptNormal
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Unarmed
+      Object: 0001F4:Skyrim.esm
+ObjectBounds:
+  First: -48, -25, 0
+  Second: 48, 24, 48
+Name:
+  TargetLanguage: English
+  Value: Chest
+Model:
+  File: Clutter\Containers\Chest01\Chest01.nif
+  Data: 0x02000000020000000000000045DAC1AB64647300B3B824948F26217C64647300B3B82494
+Items:
+- Item:
+    Item: 0424EB:Skyrim.esm
+    Count: 5
+- Item:
+    Item: 0AA02C:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0FFF52:Skyrim.esm
+    Count: 1
+MajorFlags:
+- NavMeshGenerationBoundingBox

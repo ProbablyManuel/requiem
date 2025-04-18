@@ -1,0 +1,37 @@
+FormKey: 10FC23:Skyrim.esm
+EditorID: dunHonningbrewSkeeverBite
+Name:
+  TargetLanguage: English
+  Value: Venomfang Poison
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+ResistValue: PoisonResist
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 04600A:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+CastingArt: 046006:Skyrim.esm
+ImpactData: 046008:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Inflicts <mag> poison damage per second for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: PoisonResist
+  ComparisonValue: 25

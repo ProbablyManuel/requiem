@@ -1,0 +1,37 @@
+FormKey: 03AD60:Skyrim.esm
+EditorID: VoidSalts
+Version2: 5
+ObjectBounds:
+  First: -5, -5, 0
+  Second: 5, 5, 5
+Name:
+  TargetLanguage: English
+  Value: Void Salts
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\VoidSalts.nif
+  Data: 0x0200000002000000000000007BE843F964647300604DDD5CF03E33F564647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 500
+Weight: 0.2
+IngredientValue: 500
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2F:Skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 30
+- BaseEffect: 039E51:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 300
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 1
+- BaseEffect: 03EAF8:Skyrim.esm
+  Data:
+    Magnitude: 8
+    Duration: 300

@@ -1,0 +1,95 @@
+FormKey: 013A73:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FalkreathLodsHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Lod's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0200C3:Skyrim.esm
+Owner: 013650:Skyrim.esm
+SkyAndWeatherFromRegion: 10474D:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 06D546:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 072787:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 072786:Skyrim.esm
+  Scale: 1.4
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0200C3:Skyrim.esm
+  Placement:
+    Position: 864.8183, 70.28187, 0
+    Rotation: 0, -0, 1.4168181
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0823A7:Skyrim.esm
+  Base: 0185B2:Skyrim.esm
+  LocationReference: 0200C3:Skyrim.esm
+  Placement:
+    Position: 690.6958, 54.597538, 1.0589256
+    Rotation: 0, -0, 1.5997924
+- MutagenObjectType: PlacedObject
+  FormKey: 0823A8:Skyrim.esm
+  Base: 0185B6:Skyrim.esm
+  LocationReference: 0200C3:Skyrim.esm
+  Placement:
+    Position: 1009.2424, 236.27882, 1.0589256
+    Rotation: 0, -0, 3.8416047
+- MutagenObjectType: PlacedObject
+  FormKey: 0823BC:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 071061:Skyrim.esm
+  LocationReference: 0200C3:Skyrim.esm
+  Placement:
+    Position: 1774.0271, 78.09137, 240
+    Rotation: 0, 0, 3.1500018
+- MutagenObjectType: PlacedObject
+  FormKey: 0710D3:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1190.0765, 131.92436, 62.248314
+MajorFlags:
+- 0x40000

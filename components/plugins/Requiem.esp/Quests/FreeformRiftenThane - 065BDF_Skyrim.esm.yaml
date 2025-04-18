@@ -1,0 +1,182 @@
+FormKey: 065BDF:Skyrim.esm
+EditorID: FreeformRiftenThane
+VirtualMachineAdapter:
+  Scripts:
+  - Name: FFRiftenThaneQuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pThaneQLDone
+      Object: 0FE1DA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFRiftenThaneQuest
+      Object: 065BDF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pThaneCount
+      Object: 065BE0:Skyrim.esm
+  - Name: QF_FreeformRiftenThane_00065BDF
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneMavenJarlAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorJarlsMakeFriends
+      Object: 087E24:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneJarlWeaponAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneHemmingStewardAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pJobJarlFaction
+      Object: 050920:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneLailaJarlAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GuestBedroom
+      Object: 0C7F1A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneAnurielStewardAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HouseCarl
+      Object: 0A2C93:Skyrim.esm
+  FileName: QF_FreeformRiftenThane_00065BDF
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_FreeformRiftenThane_00065BDF
+    FragmentName: Fragment_11
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_FreeformRiftenThane_00065BDF
+    FragmentName: Fragment_9
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_FreeformRiftenThane_00065BDF
+    FragmentName: Fragment_0
+  - Stage: 15
+    Unknown2: 1
+    ScriptName: QF_FreeformRiftenThane_00065BDF
+    FragmentName: Fragment_13
+Name:
+  TargetLanguage: English
+  Value: I Done Got Thaned!
+Flags:
+- StartGameEnabled
+- 0x10
+Priority: 30
+QuestFormVersion: 65
+Type: Misc
+Filter: Dialogue\The Rift\Riften\
+Stages:
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 15
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Speak to the Jarl of Riften
+  Targets:
+  - AliasID: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 050920:Skyrim.esm
+      ComparisonValue: 1
+  - AliasID: 5
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 050920:Skyrim.esm
+      ComparisonValue: 1
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Purchase Honeyside from Riften's Steward
+  Targets:
+  - AliasID: 3
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 050922:Skyrim.esm
+      ComparisonValue: 1
+  - AliasID: 6
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 050922:Skyrim.esm
+      ComparisonValue: 1
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to the Jarl of Riften
+  Targets:
+  - AliasID: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 050920:Skyrim.esm
+      ComparisonValue: 1
+  - AliasID: 5
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 050920:Skyrim.esm
+      ComparisonValue: 1
+NextAliasID: 7
+Aliases:
+- ID: 2
+  Name: FFRiftenThaneLailaJarlAlias
+  Flags: []
+  UniqueActor: 013366:Skyrim.esm
+  VoiceTypes: Null
+- ID: 5
+  Name: FFRiftenThaneMavenJarlAlias
+  Flags: []
+  UniqueActor: 01336A:Skyrim.esm
+  VoiceTypes: Null
+- ID: 3
+  Name: FFRiftenThaneAnurielStewardAlias
+  Flags: []
+  UniqueActor: 013349:Skyrim.esm
+  VoiceTypes: Null
+- ID: 6
+  Name: FFRiftenThaneHemmingStewardAlias
+  Flags: []
+  UniqueActor: 013362:Skyrim.esm
+  VoiceTypes: Null
+- ID: 4
+  Name: FFRiftenThaneJarlWeaponAlias
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 1AA261:Requiem.esp
+    AliasID: 2
+  VoiceTypes: Null

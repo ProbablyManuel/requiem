@@ -1,0 +1,38 @@
+FormKey: 0185FB:Dawnguard.esm
+EditorID: DLC01PoisonBloom
+Version2: 5
+ObjectBounds:
+  First: -7, -8, -5
+  Second: 7, 8, 6
+Name:
+  TargetLanguage: English
+  Value: Poisonous Bloom
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: DLC01\Plants\PoisonBloomIngredient.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 00EF9F:Dawnguard.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 5
+Weight: 0.25
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 1
+- BaseEffect: 073F25:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 300
+- BaseEffect: 073F20:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30

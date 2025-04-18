@@ -1,0 +1,23 @@
+FormKey: 0F5FF9:Skyrim.esm
+EditorID: REQ_Ability_DragonInfusion_ReduceDamage
+Name:
+  TargetLanguage: English
+  Value: Dragon Infusion
+Description:
+  TargetLanguage: English
+  Value: Take 25% less damage from dragons.
+NumRanks: 1
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 035D59:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.75

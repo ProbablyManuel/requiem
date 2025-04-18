@@ -1,0 +1,66 @@
+FormKey: 0165AD:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunHeimskrsHouse
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Heimskr's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 1500
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000F0D0C'
+    DirectionalXMinus: '#000C0D0B'
+    DirectionalYPlus: '#000E0D0C'
+    DirectionalYMinus: '#000E0C0C'
+    DirectionalZPlus: '#00060605'
+    DirectionalZMinus: '#00151312'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F873:Skyrim.esm
+Owner: 093B1A:Skyrim.esm
+LockList: 093AFB:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 016659:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 024E26:Skyrim.esm
+  TeleportDestination:
+    Door: 01A6FD:Skyrim.esm
+    Position: 25596.807, -4840.843, -2998.5254
+    Rotation: 0, -0, -0.6471837
+  NavigationDoorLink:
+    NavMesh: 0883F5:Skyrim.esm
+    TeleportMarkerTriangle: 50
+  Owner: 093B1A:Skyrim.esm
+  LocationReference: 01F873:Skyrim.esm
+  Placement:
+    Position: -183.43152, -301.431, 148.078
+    Rotation: 0, -0, 1.5707964
+MajorFlags:
+- 0x40000

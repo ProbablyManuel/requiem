@@ -1,0 +1,61 @@
+FormKey: 079F9F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: KnifepointRidge01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Knifepoint Mine
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00474536'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#0011110B'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#004E4538'
+    DirectionalXMinus: '#003F4533'
+    DirectionalYPlus: '#00474836'
+    DirectionalYMinus: '#00474136'
+    DirectionalZPlus: '#00212018'
+    DirectionalZMinus: '#006C6953'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#0011110B'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 091937:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 08E1B7:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+EncounterZone: 08E1B8:Skyrim.esm
+Music: 05615B:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A6455:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 08E1B7:Skyrim.esm
+  Placement:
+    Position: 2442.257, 8766.995, 6442.769
+    Rotation: 0.14834078, 0.022333233, 4.6640487
+MajorFlags:
+- 0x40000

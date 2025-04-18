@@ -1,0 +1,20 @@
+FormKey: ADDEB7:Requiem.esp
+EditorID: REQ_Temper_Weapon_Madness_DaiKatana
+Items:
+- Item:
+    Item: 000BC8:ccbgssse025-advdsgs.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB412:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000C03:ccbgssse025-advdsgs.esm
+  ComparisonValue: 1
+CreatedObject: ADDEB1:Requiem.esp
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

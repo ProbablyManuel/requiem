@@ -1,0 +1,35 @@
+FormKey: 0F4314:Skyrim.esm
+EditorID: REQ_Food_MeatVegan_Beef
+ObjectBounds:
+  First: -6, -6, -3
+  Second: 6, 6, 2
+Name:
+  TargetLanguage: English
+  Value: Beef Stew
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Stew.nif
+  Data: 0x0200000004000000000000008E5603C464647300604DDD5CC38821B064647300604DDD5C4D763A52646473008EAEA792BFBA986B646473008EAEA792
+  AlternateTextures:
+  - Name: Stew:10
+    NewTexture: 00354B:HearthFires.esm
+    Index: 1
+PickUpSound: 0FC21F:Skyrim.esm
+Weight: 1
+Value: 20
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 10E2EA:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 3600
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 3600
+- BaseEffect: 002EE4:Update.esm
+  Data: {}

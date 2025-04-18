@@ -1,0 +1,30 @@
+FormKey: 06D22D:Skyrim.esm
+EditorID: REQ_ConjurationX_BanishDaedra_Stagger
+Name:
+  TargetLanguage: English
+  Value: Stagger
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- PowerAffectsMagnitude
+BaseCost: 0.001
+MagicSkill: Conjuration
+TaperWeight: 1
+HitShader: 054223:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+  ComparisonValue: 1

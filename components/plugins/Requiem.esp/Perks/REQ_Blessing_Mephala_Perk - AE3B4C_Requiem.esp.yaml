@@ -1,0 +1,43 @@
+FormKey: AE3B4C:Requiem.esp
+EditorID: REQ_Blessing_Mephala_Perk
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 103
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: Archery
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.9
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 102
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: OneHanded
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.1

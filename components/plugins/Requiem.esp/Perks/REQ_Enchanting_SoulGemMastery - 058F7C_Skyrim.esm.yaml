@@ -1,0 +1,28 @@
+FormKey: 058F7C:Skyrim.esm
+EditorID: REQ_Enchanting_SoulGemMastery
+Name:
+  TargetLanguage: English
+  Value: Soul Gem Mastery
+Description:
+  TargetLanguage: English
+  Value: You've learned how to draw more energy from soul gems and are now able to <br> craft them at a smelter by transmuting and melting certain minerals.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BEE97:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Enchanting
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModSoulGemRecharge
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.25

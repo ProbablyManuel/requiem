@@ -1,0 +1,22 @@
+FormKey: 10FCF3:Skyrim.esm
+EditorID: StaffEnchIncinerate
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Incinerate
+EnchantmentCost: 523
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 100
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 10F7F1:Skyrim.esm
+  Data:
+    Magnitude: 100
+- BaseEffect: 36307D:Requiem.esp
+  Data:
+    Magnitude: 3
+    Duration: 5

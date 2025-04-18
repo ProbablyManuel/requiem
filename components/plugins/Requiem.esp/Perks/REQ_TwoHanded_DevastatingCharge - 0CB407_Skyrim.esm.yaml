@@ -1,0 +1,22 @@
+FormKey: 0CB407:Skyrim.esm
+EditorID: REQ_TwoHanded_DevastatingCharge
+Name:
+  TargetLanguage: English
+  Value: Devastating Charge
+Description:
+  TargetLanguage: English
+  Value: You've learned to perform a leaping power attack while sprinting.<br>[Able to do sprinting power attack]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 052D51:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: TwoHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True

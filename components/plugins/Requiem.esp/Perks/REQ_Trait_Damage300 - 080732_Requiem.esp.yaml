@@ -1,0 +1,13 @@
+FormKey: 080732:Requiem.esp
+EditorID: REQ_Trait_Damage300
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 3

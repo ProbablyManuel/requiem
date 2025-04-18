@@ -1,0 +1,1400 @@
+FormKey: 000800:ccedhsse002-splkntset.esl
+EditorID: ccEDHSSE002_Quest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccEDHSSE002_QuestCounterScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: DeathThreshold
+      Data: 3
+    - MutagenObjectType: ScriptIntProperty
+      Name: ArmorThreshold
+      Data: 4
+    - MutagenObjectType: ScriptIntProperty
+      Name: DeathStageToSet
+      Data: 50
+    - MutagenObjectType: ScriptIntProperty
+      Name: ArmorStageToSet
+      Data: 1000
+  - Name: SSE_QF_ccEDHSSE002_Quest_05000800
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Forsworn01
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF00
+      Object: 0008AA:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_KnightMarkerREF
+      Object: 000830:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SimonMarkerREF
+      Object: 00087E:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DaenellaReal
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TeleportLocationREF
+      Object: 000852:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Forsworn03
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGTeleportOutEffect
+      Object: 102731:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF01
+      Object: 00088A:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF02
+      Object: 00088F:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGTeleportInEffect
+      Object: 102730:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_HagNote
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_CorruptedKMarkerREF02
+      Object: 0008A7:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor01
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Coffin
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor04W
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 33
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor03
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 21
+    - MutagenObjectType: ScriptIntProperty
+      Name: FadeTime
+      Data: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_MagicTeleportEffect
+      Object: 0008BF:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_LItem_QuestArmorSet02
+      Object: 000875:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor01W
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BEKnight
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CoffinActivate
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Knapsack
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_ArmorSplKntEliteBootsWHITE
+      Object: 00089C:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_Activator04REF
+      Object: 0008AF:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GEKnight
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BeldamaWitch000000
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 29
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ghost3
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_ArmorSplKntEliteHelmetWHITE
+      Object: 00089F:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Shrine
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BeldamaWitch000
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TeleportSoundOUT
+      Object: 00082F:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ForswornNote
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 8
+    - MutagenObjectType: ScriptIntProperty
+      Name: HuggingTime
+      Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ghost
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_Activator02REF
+      Object: 0008AD:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_Activator03REF
+      Object: 0008AE:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Heart
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_DaenellaMarkerREF
+      Object: 000869:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ForswornEnableMarker
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_HumanHeart
+      Object: 00085D:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ghost2
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 26
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Forsworn02
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BeldamaWitch
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor04
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 22
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor02W
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 31
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ghost4
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 28
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor02
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_Activator01REF
+      Object: 00084F:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_HagSwitch
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_CorruptedKMarkerREF
+      Object: 00083F:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TeleportSoundIN
+      Object: 03B56B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF03
+      Object: 000891:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_LItem_QuestArmorSet01
+      Object: 000874:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_ArmorSplKntEliteCuirassWHITE
+      Object: 00089D:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QuestFadeInEffect
+      Object: 102730:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor03W
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 32
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF04
+      Object: 000892:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_ArmorSplKntEliteGauntletsWHITE
+      Object: 00089E:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Daenella
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_CorruptedKMarkerREF03
+      Object: 0008A8:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Pureheart
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 16
+  FileName: SSE_QF_ccEDHSSE002_Quest_05000800
+  Fragments:
+  - Stage: 600
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_18
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_12
+  - Stage: 38
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_5
+  - Stage: 1300
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_35
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_0
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_23
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_17
+  - Stage: 39
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_6
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_1
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_2
+  - Stage: 1500
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_28
+  - Stage: 2
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_24
+  - Stage: 37
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_4
+  - Stage: 1200
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_34
+  - Stage: 1000
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_11
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_7
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_14
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_3
+  - Stage: 25
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_22
+  - Stage: 1100
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_33
+  - Stage: 95
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_15
+  - Stage: 900
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_21
+  - Stage: 1400
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_36
+  - Stage: 4
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_26
+  - Stage: 65
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_16
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_10
+  - Stage: 55
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_9
+  - Stage: 800
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_20
+  - Stage: 2000
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_27
+  - Stage: 3
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_25
+  - Stage: 700
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_19
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: SSE_QF_ccEDHSSE002_Quest_05000800
+    FragmentName: Fragment_13
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 2
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 25
+      - MutagenObjectType: ScriptIntProperty
+        Name: preReqStage
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 3
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 5
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 37
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 40
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 6
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 38
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 40
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 7
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 39
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 40
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 8
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 60
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000800:ccedhsse002-splkntset.esl
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 55
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 12
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 70
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 13
+    Scripts:
+    - Name: nealiassetstageonactivatescript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 65
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToLookFor
+        Data: 70
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 14
+    Scripts:
+    - Name: nealiassetstageonactivatescript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 80
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToLookFor
+        Data: 70
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 15
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 95
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 19
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 600
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 30
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 600
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 20
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 700
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 31
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 700
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 21
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 800
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 32
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 800
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 22
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 900
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+  - Property:
+      Name: ''
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 33
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 900
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000800:ccedhsse002-splkntset.esl
+Name:
+  TargetLanguage: English
+  Value: Crypt of the Heart
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Stages:
+- Index: 1
+  LogEntries:
+  - Flags: []
+- Index: 2
+  LogEntries:
+  - Flags: []
+- Index: 3
+  LogEntries:
+  - Flags: []
+- Index: 4
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Flags:
+  - StartUpStage
+  Unknown: 95
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 2221
+    Entry:
+      TargetLanguage: English
+      Value: The inns of Skyrim are a good place to look for rumors. Being on the western border, Markarth is one of the busiest holds in Skyrim. I should head to the inn there and see what I can find.
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a book at the Silver-Blood Inn that mentions the ghost of a Breton knight named Simon Rodayne. According to the book, he haunts the river below his tomb, south of Markarth. I should investigate the area and see what I can find.
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a book at the Silver-Blood Inn that mentions the ghost of a Breton knight named Simon Rodayne. According to the book, he haunts the river below his tomb, south of Markarth. At the river, I found the presence of a ghost who wandered off further south.
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a book at the Silver-Blood Inn that mentions the ghost of a Breton knight named Simon Rodayne. According to the book, he haunts the river below his tomb, south of Markarth. At the river, I found the presence of a ghost who wandered off further south. I followed the ghost up the hill when it vanished. The knight's tomb must be somewhere in the surrounding area.
+- Index: 37
+  Unknown: 164
+  LogEntries:
+  - Flags: []
+- Index: 38
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 39
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 40
+  Unknown: 197
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a book at the Silver-Blood Inn that mentions the ghost of a Breton knight named Simon Rodayne. According to the book, he haunts the river below his tomb, south of Markarth. After following the ghost and climbing up to the top of the mountain, I found a tomb surrounded by three Forsworn.
+- Index: 50
+  Unknown: 164
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a book at the Silver-Blood Inn that mentions the ghost of a Breton knight named Simon Rodayne. According to the book, he haunts the river below his tomb, south of Markarth. After following the ghost and climbing up to the top of the mountain, I found a tomb surrounded by three Forsworn, and defeated them in battle.
+- Index: 55
+  Unknown: 172
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I investigated the area south of Markarth and was confronted by a ghost. After following the ghost and climbing up to the top of the mountain, I found a tomb surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that may provide additional clues.
+- Index: 60
+  Unknown: 172
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I investigated the area south of Markarth and was confronted by a ghost. After following the ghost and climbing up to the top of the mountain, I found a tomb surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire.
+- Index: 65
+  LogEntries:
+  - Flags: []
+- Index: 70
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I investigated the area south of Markarth and was confronted by a ghost. After following the ghost and climbing up to the top of the mountain, I found a tomb surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire. At Karthspire, I found two hagravens conducting a ritual with the heart at its center. I retrieved the heart and can now return it to the knight's tomb.
+- Index: 80
+  Unknown: 189
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I investigated the area south of Markarth and was confronted by a ghost. After following the ghost and climbing up to the top of the mountain, I found a tomb surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire. At Karthspire, I found two hagravens conducting a ritual with the heart at its center. I retrieved the heart and returned it to the knight's tomb.
+- Index: 90
+  Unknown: 173
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a knight's tomb in Markarth surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire. At Karthspire, I found two hagravens conducting a ritual with the heart at its center. I retrieved the heart and returned it to the knight's tomb. The heart was still corrupted, however, and the knight's ghost turned hostile as a result.
+- Index: 95
+  Unknown: 189
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a knight's tomb in Markarth surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire. At Karthspire, I found two hagravens conducting a ritual with the heart at its center. I retrieved the heart and returned it to the knight's tomb. The heart was still corrupted, however, and the knight's ghost turned hostile as a result. I defeated the knight and can now retrieve his armor from the tomb.
+- Index: 100
+  Unknown: 189
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: "I found a knight's tomb in Markarth surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire. At Karthspire, I found two hagravens conducting a ritual with the heart at its center. I retrieved the heart and returned it to the knight's tomb. "
+- Index: 600
+  Unknown: 189
+  LogEntries:
+  - Flags: []
+- Index: 700
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 800
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 900
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 1000
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: "I found a knight's tomb in Markarth surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire. At Karthspire, I found two hagravens conducting a ritual with the heart at its center. I retrieved the heart and returned it to the knight's tomb. "
+- Index: 1100
+  Unknown: 50
+  LogEntries:
+  - Flags: []
+- Index: 1200
+  LogEntries:
+  - Flags: []
+- Index: 1300
+  LogEntries:
+  - Flags: []
+- Index: 1400
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+- Index: 1500
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: I found a knight's tomb in Markarth surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire. At Karthspire, I found two hagravens conducting a ritual with the heart at its center. I retrieved the heart and returned it to the knight's tomb. The heart was still corrupted, however, and the knight's ghost turned hostile as a result. I defeated the knight and took his armor for myself.
+- Index: 2000
+  Unknown: 69
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: "I found a knight's tomb in Markarth surrounded by three Forsworn, and defeated them in battle. On the shaman I found a note that implied they defiled the tomb and took the knight's heart to Karthspire. At Karthspire, I found two hagravens conducting a ritual with the heart at its center. I retrieved the heart and returned it to the knight's tomb. After purifying the heart, I saw a visage of the knight and the witch reunited once more. "
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Investigate the Silver-Blood Inn
+  Targets:
+  - AliasID: 3
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Look for the knight's ghost in the area south of Markarth
+  Targets:
+  - AliasID: 2
+- Index: 25
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Follow the ghost
+  Targets:
+  - AliasID: 1
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search the hills for the knight's tomb
+  Targets:
+  - {}
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Defeat the Forsworn
+  Targets:
+  - AliasID: 5
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000800:ccedhsse002-splkntset.esl
+        Stage: 37
+  - AliasID: 6
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000800:ccedhsse002-splkntset.esl
+        Stage: 38
+  - AliasID: 7
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000800:ccedhsse002-splkntset.esl
+        Stage: 39
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search the Forsworn Shaman
+  Targets:
+  - AliasID: 6
+- Index: 55
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the Forsworn Shaman's note
+  Targets:
+  - AliasID: 8
+- Index: 60
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search Karthspire for the stolen heart
+  Targets:
+  - AliasID: 12
+- Index: 70
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return the heart to the knight's tomb
+  Targets:
+  - {}
+- Index: 80
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Purify the heart at the altar
+  Targets:
+  - AliasID: 13
+- Index: 90
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Defeat the Corrupted Knight
+  Targets:
+  - AliasID: 15
+- Index: 1000
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve the knight's armor
+  Targets:
+  - {}
+- Index: 2000
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve the knight's armor
+  Targets:
+  - AliasID: 30
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000800:ccedhsse002-splkntset.esl
+        Stage: 1400
+  - AliasID: 31
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000800:ccedhsse002-splkntset.esl
+        Stage: 1200
+  - AliasID: 32
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000800:ccedhsse002-splkntset.esl
+        Stage: 1300
+  - AliasID: 33
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000800:ccedhsse002-splkntset.esl
+        Stage: 1100
+NextAliasID: 34
+Aliases:
+- Name: Coffin
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000812:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 1
+  Name: Ghost
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000836:ccedhsse002-splkntset.esl
+  SpectatorOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  ObserveDeadBodyOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  GuardWarnOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  CombatOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  PackageData:
+  - 000844:ccedhsse002-splkntset.esl
+  - 02AC7B:Skyrim.esm
+  VoiceTypes: Null
+- ID: 26
+  Name: Ghost2
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000810:ccedhsse002-splkntset.esl
+  SpectatorOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  ObserveDeadBodyOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  GuardWarnOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  CombatOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  PackageData:
+  - 000844:ccedhsse002-splkntset.esl
+  - 02AC7B:Skyrim.esm
+  VoiceTypes: Null
+- ID: 27
+  Name: Ghost3
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00080F:ccedhsse002-splkntset.esl
+  SpectatorOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  ObserveDeadBodyOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  GuardWarnOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  CombatOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  PackageData:
+  - 000844:ccedhsse002-splkntset.esl
+  - 02AC7B:Skyrim.esm
+  VoiceTypes: Null
+- ID: 28
+  Name: Ghost4
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000814:ccedhsse002-splkntset.esl
+  SpectatorOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  ObserveDeadBodyOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  GuardWarnOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  CombatOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  PackageData:
+  - 000844:ccedhsse002-splkntset.esl
+  - 02AC7B:Skyrim.esm
+  VoiceTypes: Null
+- ID: 2
+  Name: Knapsack
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0008AB:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 4
+  Name: ForswornEnableMarker
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00080D:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 3
+  Name: Note
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00083D:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 5
+  Name: Forsworn01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 0008A6:ccedhsse002-splkntset.esl
+  Factions:
+  - 0D25A6:Skyrim.esm
+  - 0D263E:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 6
+  Name: Forsworn02
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 000846:ccedhsse002-splkntset.esl
+  Factions:
+  - 0D25A6:Skyrim.esm
+  - 0D263E:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 7
+  Name: Forsworn03
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 0008A5:ccedhsse002-splkntset.esl
+  Factions:
+  - 0D25A6:Skyrim.esm
+  - 0D263E:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: Daenella
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 000816:ccedhsse002-splkntset.esl
+  DisplayName: 000858:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 18
+  Name: DaenellaReal
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 000879:ccedhsse002-splkntset.esl
+  SpectatorOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  ObserveDeadBodyOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  GuardWarnOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  CombatOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  DisplayName: 000858:ccedhsse002-splkntset.esl
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 11
+  Name: BeldamaWitch
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 000815:ccedhsse002-splkntset.esl
+  DisplayName: 000859:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 24
+  Name: BeldamaWitch000
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 000884:ccedhsse002-splkntset.esl
+  DisplayName: 000831:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 29
+  Name: BeldamaWitch000000
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 000813:ccedhsse002-splkntset.esl
+  DisplayName: 000859:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 10
+  Name: HagSwitch
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000856:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 8
+  Name: ForswornNote
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000855:ccedhsse002-splkntset.esl
+    AliasID: 6
+    Create: In
+  VoiceTypes: Null
+- ID: 12
+  Name: Heart
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00085F:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 16
+  Name: Pureheart
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  DisplayName: 000864:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 13
+  Name: Shrine
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000854:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 14
+  Name: CoffinActivate
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 000887:ccedhsse002-splkntset.esl
+  DisplayName: 000880:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 15
+  Name: BEKnight
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00087C:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 17
+  Name: GEKnight
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000868:ccedhsse002-splkntset.esl
+  SpectatorOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  ObserveDeadBodyOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  GuardWarnOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  CombatOverridePackageList: 000849:ccedhsse002-splkntset.esl
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 19
+  Name: Armor01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 0008A0:ccedhsse002-splkntset.esl
+    Create: In
+  VoiceTypes: Null
+- ID: 30
+  Name: Armor01W
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0008B1:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 20
+  Name: Armor02
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 0008A2:ccedhsse002-splkntset.esl
+    Create: In
+  VoiceTypes: Null
+- ID: 31
+  Name: Armor02W
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0008B2:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 21
+  Name: Armor03
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 0008A1:ccedhsse002-splkntset.esl
+    Create: In
+  VoiceTypes: Null
+- ID: 32
+  Name: Armor03W
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0008B3:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 22
+  Name: Armor04
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 0008A3:ccedhsse002-splkntset.esl
+    Create: In
+  VoiceTypes: Null
+- ID: 33
+  Name: Armor04W
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00084D:ccedhsse002-splkntset.esl
+  VoiceTypes: Null
+- ID: 25
+  Name: HagNote
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000889:ccedhsse002-splkntset.esl
+    AliasID: 11
+    Create: In
+  VoiceTypes: Null
+- ID: 23
+  Name: Trigger
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00086F:ccedhsse002-splkntset.esl
+  VoiceTypes: Null

@@ -1,0 +1,37 @@
+FormKey: 0A9191:Skyrim.esm
+EditorID: BeeHiveHusk
+Version2: 9
+ObjectBounds:
+  First: -13, -13, -10
+  Second: 13, 10, 7
+Name:
+  TargetLanguage: English
+  Value: Beehive Husk
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Critters\Bee\BeeHiveHusk.nif
+  Data: 0x020000000200000000000000F72D27B86464730038973CEAEC9E0B896464730038973CEA
+PickUpSound: 10FD51:Skyrim.esm
+Value: 5
+Weight: 1
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 090041:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 4.8
+    Duration: 60
+- BaseEffect: 03EB22:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EB26:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60

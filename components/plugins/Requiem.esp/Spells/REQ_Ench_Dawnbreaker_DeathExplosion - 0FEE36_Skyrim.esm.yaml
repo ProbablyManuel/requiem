@@ -1,0 +1,26 @@
+FormKey: 0FEE36:Skyrim.esm
+EditorID: REQ_Ench_Dawnbreaker_DeathExplosion
+Name:
+  TargetLanguage: English
+  Value: Dawnbreaker - Death Explosion
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0FEE35:Skyrim.esm
+  Data:
+    Magnitude: 0.05
+    Area: 80
+- BaseEffect: 0FEE37:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Area: 80
+    Duration: 30
+- BaseEffect: 0FEE39:Skyrim.esm
+  Data:
+    Magnitude: 300
+    Area: 80

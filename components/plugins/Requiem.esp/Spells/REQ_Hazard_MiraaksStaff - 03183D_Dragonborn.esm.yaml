@@ -1,0 +1,22 @@
+FormKey: 03183D:Dragonborn.esm
+EditorID: REQ_Hazard_MiraaksStaff
+Name:
+  TargetLanguage: English
+  Value: Miraak's Staff
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 03183C:Dragonborn.esm
+  Data:
+    Magnitude: 300
+    Duration: 3
+- BaseEffect: 07809B:Skyrim.esm
+  Data:
+    Magnitude: 1.75

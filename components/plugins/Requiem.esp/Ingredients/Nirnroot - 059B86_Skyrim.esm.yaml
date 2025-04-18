@@ -1,0 +1,36 @@
+FormKey: 059B86:Skyrim.esm
+EditorID: Nirnroot
+Version2: 4
+ObjectBounds:
+  First: -13, -21, -31
+  Second: 13, 5, 21
+Name:
+  TargetLanguage: English
+  Value: Nirnroot
+Keywords:
+- 08CDEB:Skyrim.esm
+- 1010B1:Skyrim.esm
+Model:
+  File: Plants\Nirnroot01.nif
+  Data: 0x020000000300000000000000C229FB5F64647300134C1EFA9F7F572C64647300134C1EFA3BC78B5564647300134C1EFA
+PickUpSound: 03C7BA:Skyrim.esm
+PutDownSound: 03C7B9:Skyrim.esm
+Value: 100
+Weight: 0.2
+IngredientValue: 100
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 15
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 15
+- BaseEffect: 03EB3D:Skyrim.esm
+  Data:
+    Duration: 16
+- BaseEffect: 039E51:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

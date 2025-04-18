@@ -1,0 +1,32 @@
+FormKey: 000817:ccbgssse057-ba_stalhrim.esl
+EditorID: REQ_NULL_ccBGSSSE057_DLC2RecipeArmorStalhrimHeavyBoots
+Items:
+- Item:
+    Item: 05ADA0:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 02B06B:Dragonborn.esm
+    Count: 4
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 00081A:ccbgssse057-ba_stalhrim.esl
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 01CAF1:Dragonborn.esm
+    Stage: 200
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB412:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 000800:ccbgssse057-ba_stalhrim.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

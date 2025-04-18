@@ -1,0 +1,37 @@
+FormKey: 0D8E3F:Skyrim.esm
+EditorID: MoonSugar
+Version2: 14
+ObjectBounds:
+  First: -8, -9, -3
+  Second: 8, 9, 4
+Name:
+  TargetLanguage: English
+  Value: Moon Sugar
+Keywords:
+- 444D86:Requiem.esp
+Model:
+  File: Clutter\Ingredients\Moonsugar01.nif
+  Data: 0x020000000600000000000000369F1D0A64647300604DDD5C7918857E64647300604DDD5C4A28DF7564647300262C333B2D6EF47D646473007F66A5C0D4C2358864647300604DDD5C7626170764647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 50
+Weight: 0.25
+IngredientValue: 45
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2D:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 2.5
+    Duration: 20
+- BaseEffect: 03EB07:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300

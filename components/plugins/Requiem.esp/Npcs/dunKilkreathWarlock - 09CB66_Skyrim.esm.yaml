@@ -1,0 +1,281 @@
+FormKey: 09CB66:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: dunKilkreathWarlock
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: FXChangeToNecroPriestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EncSkeletonNecroPriest
+      Object: 0EBE2E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkeletonNecroBirthFXS
+      Object: 0EBEC0:Skyrim.esm
+  - Name: REQ_NPCpower_phaseshift
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PhaseOptics
+      Object: 7D8956:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: allowedtypes
+      Object: 7D61BA:Requiem.esp
+Configuration:
+  MagickaOffset: 1200
+  StaminaOffset: 270
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 65
+  SpeedMultiplier: 115
+  TemplateFlags:
+  - Traits
+  - AIData
+  - ModelAnimation
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 360
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02430D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 09CB65:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 08601A:Skyrim.esm
+Voice: 013AF0:Skyrim.esm
+Template: 1091C2:Skyrim.esm
+Race: 013743:Skyrim.esm
+ActorEffect:
+- 045F9C:Skyrim.esm
+- 07231B:Skyrim.esm
+- 0F95EB:Skyrim.esm
+- 101064:Skyrim.esm
+- 101065:Skyrim.esm
+- 10F7F7:Skyrim.esm
+- 047294:Requiem.esp
+- 054FE1:Requiem.esp
+- 05F1B3:Requiem.esp
+- 10E159:Requiem.esp
+- 3888DF:Requiem.esp
+Perks:
+- Perk: 0153CF:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0153D2:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581DD:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581DE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581FC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 068BCC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D5F1C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3933:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 179123:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 185736:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 185737:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 039BE5:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0EDDD2:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 100DFE:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FACD:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FAD3:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 06B479:Requiem.esp
+    Count: 1
+- Item:
+    Item: 094B41:Requiem.esp
+    Count: 2
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 10FE5B:Skyrim.esm
+Keywords:
+- 0172AC:Skyrim.esm
+- 0F23C5:Skyrim.esm
+Class: 01CE14:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Malkoran
+ShortName:
+  TargetLanguage: English
+  Value: Malkoran
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 50
+  - Key: Alchemy
+    Value: 10
+  - Key: Speech
+    Value: 10
+  - Key: Alteration
+    Value: 91
+  - Key: Conjuration
+    Value: 100
+  - Key: Destruction
+    Value: 86
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 100
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 9
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 14
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 258
+  Magicka: 275
+  Stamina: 92
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 0C7170:Skyrim.esm
+- 040190:Skyrim.esm
+- 08555F:Skyrim.esm
+- 017508:Skyrim.esm
+- 05107D:Skyrim.esm
+HairColor: 0A042D:Skyrim.esm
+CombatStyle: 044CD0:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 40
+SoundLevel: Normal
+DefaultOutfit: 09EF86:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 0F2049:Skyrim.esm
+TextureLighting: '#007D7046'
+FaceMorph:
+  NoseUpVsDown: -0.9
+  JawNarrowVsWide: 0.8
+  EyesUpVsDown: -0.3
+  EyesInVsOut: -0.5
+  BrowsUpVsDown: -0.1
+  LipsUpVsDown: -0.9
+  ChinNarrowVsWide: 0.8
+  ChinUpVsDown: -0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 13
+  Unknown: 4294967295
+  Eyes: 25
+  Mouth: 7
+TintLayers:
+- Index: 1
+  Color: '#007D7046'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 2
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 3
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 23
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: -1
+MajorFlags:
+- 0x40000

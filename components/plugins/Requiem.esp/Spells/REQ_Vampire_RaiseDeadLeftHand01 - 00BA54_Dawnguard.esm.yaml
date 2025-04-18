@@ -1,0 +1,25 @@
+FormKey: 00BA54:Dawnguard.esm
+EditorID: REQ_Vampire_RaiseDeadLeftHand01
+Name:
+  TargetLanguage: English
+  Value: Raise Dead
+MenuDisplayObject: 1097CC:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 50
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 00D3C1:Dawnguard.esm
+  Data:
+    Magnitude: 20
+    Duration: 60
+- BaseEffect: 0F52AB:Skyrim.esm
+  Data:
+    Duration: 60

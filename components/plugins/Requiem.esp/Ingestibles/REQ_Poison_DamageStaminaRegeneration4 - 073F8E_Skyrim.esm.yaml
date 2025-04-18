@@ -1,0 +1,25 @@
+FormKey: 073F8E:Skyrim.esm
+EditorID: REQ_Poison_DamageStaminaRegeneration4
+ObjectBounds:
+  First: -5, -6, 0
+  Second: 4, 6, 16
+Name:
+  TargetLanguage: English
+  Value: Poison of Damage Stamina Regeneration (Good)
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Potions\PoisonDamageStaminaRate04.nif
+  Data: 0x02000000090000000000000063DF5C0164647300BFFA25DAB9FB95CF64647300BFFA25DAFAE0BBA4646473007F66A5C0CE353C0964647300262C333BFD5A856264647300BFFA25DAF9BE93CC64647300BFFA25DA28058E7E64647300BFFA25DAF63890AC64647300262C333BD1E23CE564647300BFFA25DA
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 341
+Flags:
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 073F2C:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 60

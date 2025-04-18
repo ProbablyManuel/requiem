@@ -1,0 +1,54 @@
+FormKey: 0ACB97:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Dwarven_Battleaxe_AbsorbMagicka2
+ObjectBounds:
+  First: -19, -41, -2
+  Second: 11, 55, 2
+Name:
+  TargetLanguage: English
+  Value: Dwarven Battleaxe of Siphoning
+Model:
+  File: Weapons\Dwarven\DwarvenBattleAxe.nif
+  Data: 0x02000000070000000000000033168C0764647300A0B8630503D8C24064647300A0B863054FE0756464647300A0B863052071DCBB64647300364E8FC210D3AF2564647300364E8FC2188FFC7C64647300262C333BAA82A6BC64647300364E8FC2
+ObjectEffect: 0AA158:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E71A:Skyrim.esm
+- 06D932:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 036A5B:Skyrim.esm
+FirstPersonModel: 036BE1:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 06036A:Skyrim.esm
+UnequipSound: 0605D3:Skyrim.esm
+BasicStats:
+  Value: 400
+  Weight: 23
+  Damage: 20
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.7
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1068708659
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.15
+Critical:
+  Damage: 10
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud
+Template: 013994:Skyrim.esm

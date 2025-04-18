@@ -1,0 +1,36 @@
+FormKey: AE3867:Requiem.esp
+EditorID: REQ_Ench_EbonyBlade_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_EbonyBlade
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: description
+      Object: AE3873:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EbonyBladeTracker
+      Object: 10FAEC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EbonyBladeEnch
+      Object: 10FAF0:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Apply Ebony Blade Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

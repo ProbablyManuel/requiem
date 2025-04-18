@@ -1,0 +1,41 @@
+FormKey: 0F82E2:Skyrim.esm
+EditorID: REQ_Alteration0_TransmuteBlood_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Keywords:
+- 01CEB0:Skyrim.esm
+- 2FFEAD:Requiem.esp
+Flags:
+- Detrimental
+- DispelWithKeywords
+- NoDuration
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 1
+MagicSkill: Alteration
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: Concentration
+CastingArt: 0ABF02:Skyrim.esm
+SkillUsageMultiplier: 0.01
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA53:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 07D013:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Converts <mag> health per second into magicka. Caster can be killed by this effect.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValuePercentConditionData
+    ActorValue: Magicka
+  ComparisonValue: 1

@@ -1,0 +1,28 @@
+FormKey: 058F6F:Skyrim.esm
+EditorID: REQ_HeavyArmor_CombatTraining
+Name:
+  TargetLanguage: English
+  Value: Combat Training
+Description:
+  TargetLanguage: English
+  Value: You are less hindered by your armor and can attack with ease.<br>[No power attack stamina cost penalty, increased unarmed damage with heavy gauntlets, -10% armor weight penalty]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BCD2A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: HeavyArmor
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: ADDDED:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 0424E9:Skyrim.esm

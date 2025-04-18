@@ -1,0 +1,77 @@
+FormKey: 01520A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SleepingTreeCamp01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Sleeping Tree Cave
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192AD:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC72:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C76C7:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0774BF:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 0192AD:Skyrim.esm
+  Placement:
+    Position: 293.31552, 705.22565, -126.59592
+    Rotation: 0.028026933, -0.12183297, 6.0564766
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 127416:Requiem.esp
+  Base: 03053F:Skyrim.esm
+  LevelModifier: Easy
+  PersistentLocation: 0192AD:Skyrim.esm
+  Placement:
+    Position: -195.68846, 382.37927, -154.42902
+    Rotation: 0, 0, 2.0168152
+MajorFlags:
+- 0x40000

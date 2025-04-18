@@ -1,0 +1,70 @@
+FormKey: 013A5D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: NightgateInn
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Nightgate Inn
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020054:Skyrim.esm
+Owner: 013627:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 0622AB:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0710EE:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 950.1529, -303.27728, 77.99953
+    Rotation: 0, -0, 0.30000082
+- MutagenObjectType: PlacedObject
+  FormKey: 0710ED:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 950.1, -283.45096, 77.99953
+    Rotation: 0, -0, 1.5000008
+- MutagenObjectType: PlacedObject
+  FormKey: 027A9B:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 020054:Skyrim.esm
+  Placement:
+    Position: 1377.992, -873.7759, 0
+    Rotation: 0, -0, 6.270588
+MajorFlags:
+- 0x40000

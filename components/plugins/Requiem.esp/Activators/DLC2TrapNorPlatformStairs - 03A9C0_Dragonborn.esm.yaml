@@ -1,0 +1,52 @@
+FormKey: 03A9C0:Dragonborn.esm
+EditorID: DLC2TrapNorPlatformStairs
+VirtualMachineAdapter:
+  Scripts:
+  - Name: HazardBase
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 30
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 15
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 25
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 10
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 20
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 5000
+  - Name: TrapNorPlatform
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WindupSound
+      Object: 039BB3:Dragonborn.esm
+ObjectBounds:
+  First: -268, -273, -1085
+  Second: 272, 271, 8
+Model:
+  File: Traps\NorPlatformTrap\TrapNorPlatformStairs01.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

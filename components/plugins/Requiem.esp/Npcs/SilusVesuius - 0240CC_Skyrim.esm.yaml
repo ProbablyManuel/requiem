@@ -1,0 +1,214 @@
+FormKey: 0240CC:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SilusVesuius
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  CalcMinLevel: 20
+  CalcMaxLevel: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 01365B:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02816E:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 09E0E5:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD9:Skyrim.esm
+Race: 013744:Skyrim.esm
+ActorEffect:
+- 012FCC:Skyrim.esm
+- 012FCD:Skyrim.esm
+- 012FD0:Skyrim.esm
+- 013018:Skyrim.esm
+- 02B96B:Skyrim.esm
+- 02B96C:Skyrim.esm
+- 02DD29:Skyrim.esm
+- 02DD2A:Skyrim.esm
+- 05AD5C:Skyrim.esm
+- 0640B6:Skyrim.esm
+- 0C96A0:Skyrim.esm
+Items:
+- Item:
+    Item: 044CD6:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D3:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 0BA1CD:Skyrim.esm
+- 031730:Skyrim.esm
+Class: 01E7D0:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Silus Vesuius
+ShortName:
+  TargetLanguage: English
+  Value: Silus
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 47
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 47
+  - Key: Conjuration
+    Value: 26
+  - Key: Destruction
+    Value: 73
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 79
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 153
+  Magicka: 202
+  Stamina: 105
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 024259:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C716D:Skyrim.esm
+- 0DFC00:Skyrim.esm
+- 0F5009:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 20
+SoundLevel: Normal
+DefaultOutfit: 0B146C:Skyrim.esm
+CrimeFaction: 02816E:Skyrim.esm
+TextureLighting: '#00615349'
+FaceMorph:
+  NoseUpVsDown: 0.8
+  JawUpVsDown: -0.7
+  JawNarrowVsWide: -0.9
+  JawForwardVsBack: -0.7
+  CheeksUpVsDown: -1
+  CheeksForwardVsBack: -1
+  EyesUpVsDown: -0.24
+  EyesInVsOut: -0.4
+  BrowsUpVsDown: 0.46
+  BrowsInVsOut: -0.6
+  BrowsForwardVsBack: -0.78
+  LipsUpVsDown: 0.08
+  LipsInVsOut: -0.7
+  ChinNarrowVsWide: 0.3
+  ChinUpVsDown: -0.6
+  ChinUnderbiteVsOverbite: -0.44
+  EyesForwardVsBack: -0.24
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 16
+  Unknown: 4294967295
+  Eyes: 15
+  Mouth: 12
+TintLayers:
+- Index: 1
+  Color: '#00615349'
+  InterpolationValue: 1
+  Preset: 66
+- Index: 2
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 71
+- Index: 6
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 99
+- Index: 11
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 127
+MajorFlags:
+- 0x40000

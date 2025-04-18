@@ -1,0 +1,28 @@
+FormKey: 0EBA03:Skyrim.esm
+EditorID: REQ_Food_Meat_Raw_Clam
+ObjectBounds:
+  First: -4, -4, -1
+  Second: 4, 4, 1
+Name:
+  TargetLanguage: English
+  Value: Clam Meat
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\Clam\ClamMeat.nif
+  Data: 0x0200000004000000000000001C27A61C64647300F64C4BB954F954D464647300F64C4BB96BBB96D164647300262C333BEEA85D4D64647300F64C4BB9
+Weight: 0.2
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 600
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

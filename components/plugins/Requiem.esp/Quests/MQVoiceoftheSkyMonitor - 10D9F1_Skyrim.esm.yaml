@@ -1,0 +1,26 @@
+FormKey: 10D9F1:Skyrim.esm
+EditorID: MQVoiceoftheSkyMonitor
+FormVersion: 39
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_MQVoiceoftheSkyMonitor_0010D9F1
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VoiceoftheSkySpell
+      Object: 01DFA4:Dragonborn.esm
+  FileName: QF_MQVoiceoftheSkyMonitor_0010D9F1
+  Fragments:
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_MQVoiceoftheSkyMonitor_0010D9F1
+    FragmentName: Fragment_0
+QuestFormVersion: 0
+Event: KILL
+Filter: Main Quest\
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+NextAliasID: 0

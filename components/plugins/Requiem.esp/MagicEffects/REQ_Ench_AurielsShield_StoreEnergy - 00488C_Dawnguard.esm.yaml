@@ -1,0 +1,55 @@
+FormKey: 00488C:Dawnguard.esm
+EditorID: REQ_Ench_AurielsShield_StoreEnergy
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1_ReflectShieldSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChargeIMod
+      Object: 00D95A:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TimesHit
+      Object: 00E8F7:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChargeSpell3
+      Object: 00D958:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChargSound
+      Object: 0225AA:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: HitsUntilSecondCharge
+      Data: 2
+    - MutagenObjectType: ScriptIntProperty
+      Name: HitsUntilFirstCharge
+      Data: 1
+    - MutagenObjectType: ScriptIntProperty
+      Name: HitsUntilThirdCharge
+      Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurrentStage
+      Object: 00E8F6:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChargeSpell2
+      Object: 00D954:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlastIMod
+      Object: 00D95B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChargeSpell1
+      Object: 00D951:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Store Energy
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The shield stores the energy of up to three blocked attacks. Performing a power bash will release the energy, restoring all attributes by 100 per blocked attack.

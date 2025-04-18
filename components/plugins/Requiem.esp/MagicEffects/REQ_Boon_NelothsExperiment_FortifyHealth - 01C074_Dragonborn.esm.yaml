@@ -1,0 +1,19 @@
+FormKey: 01C074:Dragonborn.esm
+EditorID: REQ_Boon_NelothsExperiment_FortifyHealth
+Name:
+  TargetLanguage: English
+  Value: Fortify Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Neloth's experimental spell seems to increase health by <mag>.

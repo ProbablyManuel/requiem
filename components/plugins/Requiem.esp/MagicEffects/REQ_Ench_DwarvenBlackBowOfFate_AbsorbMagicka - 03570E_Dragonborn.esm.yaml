@@ -1,0 +1,62 @@
+FormKey: 03570E:Dragonborn.esm
+EditorID: REQ_Ench_DwarvenBlackBowOfFate_AbsorbMagicka
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fEffectDurationMax
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABF13:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF18:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0ABF14:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Absorb Magicka
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- ADDDF7:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistMagic
+TaperWeight: 1
+HitShader: 0ABF08:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+  Type: Absorb
+Projectile: 0ABF03:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 0ABF0B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: <50>% chance to absorb <mag> magicka.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp

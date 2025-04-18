@@ -1,0 +1,67 @@
+FormKey: 56DAA9:Requiem.esp
+EditorID: REQ_Trait_MistressOfTheDark
+Name:
+  TargetLanguage: English
+  Value: Mistress of the Dark Perks
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 6
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 54AFE6:Requiem.esp
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.2
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 5
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 54AFE6:Requiem.esp
+      ComparisonValue: 1
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.05
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 4
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 54AFE6:Requiem.esp
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.04
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 3
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 54AFE6:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.16
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModArmorRating
+  PerkConditionTabCount: 2
+  Value: 0

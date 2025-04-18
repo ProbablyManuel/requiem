@@ -1,0 +1,26 @@
+FormKey: AD3B18:Requiem.esp
+EditorID: REQ_CoreScripts_StaminaConsumptionAttacks
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B18:Requiem.esp
+      Alias: 12
+    Scripts:
+    - Name: REQ_StaminaConsumption_Attacks
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: StaminaDrain
+        Object: 6AA964:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Stamina Drain for Attacks'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 12
+  Name: StaminaDrain_Attacks
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

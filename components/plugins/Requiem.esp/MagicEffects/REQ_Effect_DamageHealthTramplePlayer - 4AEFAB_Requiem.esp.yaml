@@ -1,0 +1,40 @@
+FormKey: 4AEFAB:Requiem.esp
+EditorID: REQ_Effect_DamageHealthTramplePlayer
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 5
+ResistValue: DamageResist
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsRidingMountConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetDistanceConditionData
+    Target: 000014:Skyrim.esm
+  ComparisonValue: 1000

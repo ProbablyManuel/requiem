@@ -1,0 +1,20 @@
+FormKey: ADDEC5:Requiem.esp
+EditorID: REQ_Temper_Weapon_Amber_Wakizashi
+Items:
+- Item:
+    Item: 000BC7:ccbgssse025-advdsgs.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB411:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000C02:ccbgssse025-advdsgs.esm
+  ComparisonValue: 1
+CreatedObject: ADDEC2:Requiem.esp
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

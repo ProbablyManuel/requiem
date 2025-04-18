@@ -1,0 +1,29 @@
+FormKey: 3C89EE:Requiem.esp
+EditorID: REQ_Illusion1_Lionheart_FortifyMagickaAndStamina
+Name:
+  TargetLanguage: English
+  Value: Fortify Magicka And Stamina
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+TaperWeight: 1
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: TargetActor
+SecondActorValue: Magicka
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: gains <mag> extra stamina and magicka for up to <dur> seconds.

@@ -1,0 +1,47 @@
+FormKey: 003002:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__01003002
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CostLogs
+      Object: 009569:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Lumber
+      Object: 00300E:HearthFires.esm
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__01003002
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__01003002
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+ResponseData: 009B83:HearthFires.esm
+Conditions:
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Target
+    ItemOrList: 00000F:Skyrim.esm
+  ComparisonValue: 009569:HearthFires.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 009BA5:HearthFires.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 005E57:HearthFires.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 013AEA:Skyrim.esm

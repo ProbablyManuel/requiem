@@ -1,0 +1,21 @@
+FormKey: 0265A0:Dragonborn.esm
+EditorID: REQ_NULL_dlc2DBConjureSpectralDragon
+Name:
+  TargetLanguage: English
+  Value: Conjure Spectral Dragon
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 50
+Flags:
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetLocation
+HalfCostPerk: 0C44BD:Skyrim.esm
+Effects:
+- BaseEffect: 0265A1:Dragonborn.esm
+  Data:
+    Duration: 30

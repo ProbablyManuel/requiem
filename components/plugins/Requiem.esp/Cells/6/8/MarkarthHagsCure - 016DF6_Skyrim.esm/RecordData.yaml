@@ -1,0 +1,89 @@
+FormKey: 016DF6:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthHagsCure
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Hag's Cure
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - LightFadeDistances
+LightingTemplate: 09F281:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F30F:Skyrim.esm
+Owner: 065677:Skyrim.esm
+LockList: 094379:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 094381:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 09E0D7:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01F30F:Skyrim.esm
+  Placement:
+    Position: -90.11906, 708.62854, -111.75001
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 077549:Skyrim.esm
+  Version2: 1
+  Base: 012FEB:Skyrim.esm
+  LocationReference: 01F30F:Skyrim.esm
+  Placement:
+    Position: -14.278002, 704.85077, -111.6614
+    Rotation: -0.0005970606, 0.00066836533, 1.5868568
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA72D:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 01F30F:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7320:Skyrim.esm
+  Placement:
+    Position: 1033.8535, 1016.06464, 125.99999
+    Rotation: 0, -0, 3.1415927
+MajorFlags:
+- 0x40000

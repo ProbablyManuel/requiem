@@ -1,0 +1,36 @@
+FormKey: 0050C5:Dawnguard.esm
+EditorID: REQ_NULL_DLC1ArmorHunterBoots
+ObjectBounds:
+  First: -13, -12, -19
+  Second: 13, 12, 19
+Name:
+  TargetLanguage: English
+  Value: Dawnguard Boots
+WorldModel:
+  Male:
+    Model:
+      File: Armor\Draugr\DraugrBootsMale_GO.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: Armor\Draugr\DraugrBootsFemale_GO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06C0ED:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0050C4:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 027DE4:Skyrim.esm
+Value: 25
+Weight: 5
+ArmorRating: 10

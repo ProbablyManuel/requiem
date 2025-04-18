@@ -1,0 +1,32 @@
+FormKey: AE378A:Requiem.esp
+EditorID: CraftingDragonPriestMasksWorkbench
+ObjectBounds:
+  First: -71, -72, -34
+  Second: 26, 72, 69
+Name:
+  TargetLanguage: English
+  Value: Ancient Workbench
+Model:
+  File: Furniture\BlacksmithWorkbench01.nif
+  Data: 0x020000000000000000000000
+Keywords:
+- 06E9C7:Skyrim.esm
+- 0A56D8:Skyrim.esm
+- 0D932E:Skyrim.esm
+- 0FD0E1:Skyrim.esm
+- AE378B:Requiem.esp
+PNAM: 0x00000000
+Flags:
+- IgnoredBySandbox
+- 0x40000000
+InteractionKeyword: 013794:Skyrim.esm
+WorkbenchData:
+  BenchType: CreateObject
+  UsesSkill: 255
+Markers:
+- Enabled: True
+  EntryPoints:
+    Type:
+    - Sit
+    Points:
+    - Behind

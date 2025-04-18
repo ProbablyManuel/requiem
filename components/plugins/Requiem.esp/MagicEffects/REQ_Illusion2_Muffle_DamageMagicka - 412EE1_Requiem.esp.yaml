@@ -1,0 +1,26 @@
+FormKey: 412EE1:Requiem.esp
+EditorID: REQ_Illusion2_Muffle_DamageMagicka
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka
+Flags:
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+BaseCost: 60
+MagicSkill: Illusion
+TaperWeight: 1
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 'Upkeep cost: <mag>.'

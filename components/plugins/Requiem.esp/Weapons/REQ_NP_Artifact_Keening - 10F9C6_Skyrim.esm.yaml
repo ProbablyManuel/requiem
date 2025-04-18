@@ -1,0 +1,62 @@
+FormKey: 10F9C6:Skyrim.esm
+EditorID: REQ_NP_Artifact_Keening
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MGRKeeningScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGRArniel04
+      Object: 06A119:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AbMortalWound
+      Object: 0FFCDE:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Keening
+Model:
+  File: Weapons\Keening\Keening.nif
+  Data: 0x020000000700000000000000F8AE224D6464730068EFBA75BCA5227A6464730068EFBA7586BC0D34646473008A56C418A3F92738646473008A56C418188FFC7C64647300262C333B19A82EA1646473008A56C4180053B1F364647300262C333B
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E713:Skyrim.esm
+- 01E71A:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 0E49B8:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 50000
+  Weight: 6
+  Damage: 13
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  Flags:
+  - CantDrop
+  - NonPlayable
+  - NotUsedInNormalCombat
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

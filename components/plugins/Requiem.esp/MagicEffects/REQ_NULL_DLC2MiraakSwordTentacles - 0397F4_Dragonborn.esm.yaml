@@ -1,0 +1,56 @@
+FormKey: 0397F4:Dragonborn.esm
+EditorID: REQ_NULL_DLC2MiraakSwordTentacles
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fEffectDurationMax
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABF15:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF19:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0ABF16:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Absorb Stamina
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.2
+MagicSkill: Destruction
+ResistValue: ResistMagic
+TaperWeight: 0.2
+EnchantShader: 0397F7:Dragonborn.esm
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: Absorb
+Projectile: 0ABF04:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 0ABF0C:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EnchantArt: 0397F5:Dragonborn.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Absorb <mag> points of stamina.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm

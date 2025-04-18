@@ -1,0 +1,19 @@
+FormKey: 000975:Requiem.esp
+EditorID: REQ_AbShow_WeaknessDisease
+Name:
+  TargetLanguage: English
+  Value: Weakness to Disease
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistDisease
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You are <mag>% more likely to contract diseases.

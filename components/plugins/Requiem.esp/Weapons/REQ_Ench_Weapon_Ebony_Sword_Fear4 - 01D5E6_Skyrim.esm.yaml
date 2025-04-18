@@ -1,0 +1,54 @@
+FormKey: 01D5E6:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Ebony_Sword_Fear4
+ObjectBounds:
+  First: -2, -13, -2
+  Second: 4, 70, 2
+Name:
+  TargetLanguage: English
+  Value: Ebony Sword of Despair
+Model:
+  File: Weapons\Ebony\EbonySword.nif
+  Data: 0x020000000A000000000000005C59DE346464730083202CFF12C290936464730083202CFFA83708C164647300262C333BA893990A6464730083202CFF4FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305A28FF3E76464730083202CFFEDAA1F766464730083202CFF57FB16EF6464730083202CFF
+ObjectEffect: 05B468:Skyrim.esm
+EnchantmentAmount: 2000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E71E:Skyrim.esm
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 036BDF:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 1800
+  Weight: 15
+  Damage: 13
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 0139B1:Skyrim.esm

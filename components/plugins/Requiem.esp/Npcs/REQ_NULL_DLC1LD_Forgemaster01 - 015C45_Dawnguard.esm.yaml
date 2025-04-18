@@ -1,0 +1,146 @@
+FormKey: 015C45:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_NULL_DLC1LD_Forgemaster01
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -63, -64, 0
+  Second: 63, 64, 224
+Configuration:
+  Flags:
+  - Respawn
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 120
+  CalcMinLevel: 36
+  CalcMaxLevel: 60
+  SpeedMultiplier: 130
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Factions:
+- Faction: 043598:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD81:Skyrim.esm
+Voice: 01F1CF:Skyrim.esm
+Template: 015C48:Dawnguard.esm
+Race: 015C34:Dawnguard.esm
+ActorEffect:
+- 015C4C:Dawnguard.esm
+AttackRace: 0131F1:Skyrim.esm
+Perks:
+- Perk: 03DFD0:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Class: 090356:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 28
+  - Key: TwoHanded
+    Value: 28
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 100
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 41
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 100
+  - Key: Illusion
+    Value: 100
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 6000
+  Magicka: 300
+  Stamina: 10000
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x415AEF
+CombatStyle: 09035B:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 08CF6D:Skyrim.esm
+DefaultOutfit: 0F906E:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

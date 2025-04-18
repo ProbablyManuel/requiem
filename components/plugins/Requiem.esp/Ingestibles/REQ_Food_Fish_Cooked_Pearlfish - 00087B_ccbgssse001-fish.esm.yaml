@@ -1,0 +1,26 @@
+FormKey: 00087B:ccbgssse001-fish.esm
+EditorID: REQ_Food_Fish_Cooked_Pearlfish
+Name:
+  TargetLanguage: English
+  Value: Cooked Pearlfish
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishAustrolebias\FishAustrolebias01Inv.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: FishAustrolebias01Inv:0
+    NewTexture: 000802:ccbgssse001-fish.esm
+Weight: 0.2
+Value: 18
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

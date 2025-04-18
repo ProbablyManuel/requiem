@@ -1,0 +1,29 @@
+FormKey: 035D7F:Skyrim.esm
+EditorID: REQ_Destruction4_WallOfFlames
+Name:
+  TargetLanguage: English
+  Value: Firewall
+MenuDisplayObject: 04E264:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster calls forth a gust of flames that temporarily creates a wall of fire where it hits.
+BaseCost: 145
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+HalfCostPerk: 0C44C1:Skyrim.esm
+Effects:
+- BaseEffect: 08F3ED:Skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 1
+- BaseEffect: 0F392F:Skyrim.esm
+  Data:
+    Magnitude: 99
+    Duration: 120
+- BaseEffect: 017714:Requiem.esp
+  Data:
+    Magnitude: 4
+    Duration: 10

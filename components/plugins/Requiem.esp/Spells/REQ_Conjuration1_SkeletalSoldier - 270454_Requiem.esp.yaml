@@ -1,0 +1,23 @@
+FormKey: 270454:Requiem.esp
+EditorID: REQ_Conjuration1_SkeletalSoldier
+Name:
+  TargetLanguage: English
+  Value: Summon Skeletal Soldier
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 125
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 24
+HalfCostPerk: 0F2CA7:Skyrim.esm
+Effects:
+- BaseEffect: 270451:Requiem.esp
+  Data:
+    Duration: 12

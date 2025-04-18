@@ -1,0 +1,36 @@
+FormKey: 014485:Dragonborn.esm
+EditorID: REQ_Creature_Spider_JumpingFlame_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MagicImodOnPlayerHitScript
+Name:
+  TargetLanguage: English
+  Value: Jumping Flame Spider
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 0.5
+ResistValue: PoisonResist
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 014486:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+SecondActorValue: Health
+CastingArt: 046006:Skyrim.esm
+ImpactData: 046008:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

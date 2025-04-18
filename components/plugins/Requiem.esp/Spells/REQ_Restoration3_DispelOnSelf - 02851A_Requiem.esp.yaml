@@ -1,0 +1,23 @@
+FormKey: 02851A:Requiem.esp
+EditorID: REQ_Restoration3_DispelOnSelf
+Name:
+  TargetLanguage: English
+  Value: Dispel on Self
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 480
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+- NoDualCastModification
+ChargeTime: 0.3
+CastType: FireAndForget
+HalfCostPerk: 0C44C8:Skyrim.esm
+Effects:
+- BaseEffect: 028518:Requiem.esp
+  Data:
+    Magnitude: 100

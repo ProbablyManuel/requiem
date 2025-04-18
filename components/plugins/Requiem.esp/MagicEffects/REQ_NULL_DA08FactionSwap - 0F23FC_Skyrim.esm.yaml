@@ -1,0 +1,23 @@
+FormKey: 0F23FC:Skyrim.esm
+EditorID: REQ_NULL_DA08FactionSwap
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA08FriendshipEffect
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FriendshipFaction
+      Object: 0F23FB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Ebony Bladed Friendship
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

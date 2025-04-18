@@ -1,0 +1,56 @@
+FormKey: 039FB4:Dragonborn.esm
+EditorID: REQ_Artifact_MiraaksSword
+ObjectBounds:
+  First: -9, -18, -4
+  Second: 6, 65, 3
+Name:
+  TargetLanguage: English
+  Value: Miraak's Sword
+Model:
+  File: DLC02\Weapons\Miraak\MiraakSword.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 039FB3:Dragonborn.esm
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 01E71F:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0917E8:Skyrim.esm
+- 0A8668:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- DA0153:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 01E296:Dragonborn.esm
+FirstPersonModel: 0397F1:Dragonborn.esm
+AttackFailSound: 01E293:Dragonborn.esm
+EquipSound: 01E29D:Dragonborn.esm
+UnequipSound: 01E29E:Dragonborn.esm
+BasicStats:
+  Value: 15000
+  Weight: 17
+  Damage: 16
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1.2
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 8
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

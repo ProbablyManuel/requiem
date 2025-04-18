@@ -1,0 +1,27 @@
+FormKey: AE380C:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyStamina2
+Name:
+  TargetLanguage: English
+  Value: Fortify Stamina (Rank II)
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- ADDDF2:Requiem.esp
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Climbing up the 7000 steps to High Hrothgar and delivering supplies to the Greybeards pleases Kyne. Stamina increases by <mag>. Most slowing effects don't adversely affect you.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 0D9B66:Skyrim.esm
+    SecondUnusedIntParameter: 105
+  ComparisonValue: 1

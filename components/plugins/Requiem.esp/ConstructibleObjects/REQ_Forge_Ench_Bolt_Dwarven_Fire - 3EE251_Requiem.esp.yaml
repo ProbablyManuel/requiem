@@ -1,0 +1,23 @@
+FormKey: 3EE251:Requiem.esp
+EditorID: REQ_Forge_Ench_Bolt_Dwarven_Fire
+Items:
+- Item:
+    Item: 03AD5E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 00D099:Dawnguard.esm
+    Count: 30
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: AD373B:Requiem.esp
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 30

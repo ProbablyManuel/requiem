@@ -1,0 +1,23 @@
+FormKey: AE377A:Requiem.esp
+EditorID: REQ_Vampire_SearingSun_DamageStamina
+Name:
+  TargetLanguage: English
+  Value: Damage Stamina
+MenuDisplayObject: 018F02:Dawnguard.esm
+Keywords:
+- AE377B:Requiem.esp
+Flags:
+- Detrimental
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Stamina
+  Association: AE377B:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

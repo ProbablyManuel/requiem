@@ -1,0 +1,33 @@
+FormKey: 0008EB:ccbgssse001-fish.esm
+EditorID: ccBGSSSE001_AngelfishIng
+ObjectBounds:
+  First: -5, -8, -2
+  Second: 5, 8, 2
+Name:
+  TargetLanguage: English
+  Value: Angelfish
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishFlameAngelfish\FishFlameAngelfish01Inv.nif
+  Data: 0x020000000000000000000000
+Value: 30
+Weight: 0.25
+IngredientValue: 32
+Effects:
+- BaseEffect: 03EB06:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EB1B:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03AC2D:Skyrim.esm
+  Data:
+    Duration: 5

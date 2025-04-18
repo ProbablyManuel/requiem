@@ -1,0 +1,168 @@
+FormKey: 0165AF:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunHouseBattleBorn
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: House of Clan Battle-Born
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000F0D0C'
+    DirectionalXMinus: '#000C0D0B'
+    DirectionalYPlus: '#000E0D0C'
+    DirectionalYMinus: '#000E0C0C'
+    DirectionalZPlus: '#00060605'
+    DirectionalZMinus: '#00151312'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F875:Skyrim.esm
+Owner: 093B1B:Skyrim.esm
+LockList: 093AFC:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 016647:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 6
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0252C7:Skyrim.esm
+  TeleportDestination:
+    Door: 056F99:Skyrim.esm
+    Position: 21599.414, -3110.5432, -2712.0208
+    Rotation: 0, -0, 2.745232
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 093B0C:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0CB8B7:Skyrim.esm
+    TeleportMarkerTriangle: 28
+  Owner: 093B1B:Skyrim.esm
+  LocationReference: 01F875:Skyrim.esm
+  Placement:
+    Position: -3.3570344E-05, -640, 120.19987
+    Rotation: 0, 0, 1.5707964
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0CB86B:Skyrim.esm
+  Version2: 3
+  Base: 064B2F:Skyrim.esm
+  LocationReference: 01F875:Skyrim.esm
+  Placement:
+    Position: -500.15875, -90.206276, 129.63689
+    Rotation: -0.03819571, 0.015035009, 1.1696434
+- MutagenObjectType: PlacedObject
+  FormKey: 32CF02:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0D8E80:Skyrim.esm
+  Scale: 0.7
+  Placement:
+    Position: -684.5339, 311.46204, 70.37934
+- MutagenObjectType: PlacedObject
+  FormKey: 0CB6CA:Skyrim.esm
+  Base: 094192:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 093B0C:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01F875:Skyrim.esm
+  Placement:
+    Position: -768, -128, 64
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 0CB7CE:Skyrim.esm
+  MajorRecordFlagsRaw: 1073741824
+  Version2: 5
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 01AFDC:Skyrim.esm
+  RagdollData: 0x00002217000000000000000000000000DD99C9BFA8D42B3F30E1484000C514DB40B4374000007A3A00008038AD618F36076EB037A32DCC3F
+  LocationReference: 01F875:Skyrim.esm
+  Placement:
+    Position: -532.14606, -99.791176, 131.35614
+    Rotation: 0, -0, 0.8
+- MutagenObjectType: PlacedObject
+  FormKey: 0CB7C5:Skyrim.esm
+  Base: 044E70:Skyrim.esm
+  LocationReference: 01F875:Skyrim.esm
+  Placement:
+    Position: -541.1341, -90.0695, 172.05254
+    Rotation: -0.0049364655, 0.0026562351, 5.3829646
+- MutagenObjectType: PlacedObject
+  FormKey: 32CF05:Requiem.esp
+  Base: 0877B1:Skyrim.esm
+  Placement:
+    Position: -692.39636, 303.16446, 70.74307
+    Rotation: 0, -0, 5.1831884
+- MutagenObjectType: PlacedObject
+  FormKey: 32CF03:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0D8E80:Skyrim.esm
+  Scale: 0.6
+  Placement:
+    Position: -685.65314, 297.16934, 70.37934
+    Rotation: 0, -0, 3.0000038
+- MutagenObjectType: PlacedObject
+  FormKey: 2BD07F:Requiem.esp
+  Base: 093B0C:Skyrim.esm
+  Placement:
+    Position: -534.64246, -92.26784, 84.87054
+    Rotation: 4.7372093, 5.9426417, 1.556996
+- MutagenObjectType: PlacedObject
+  FormKey: 32CF04:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0D8E80:Skyrim.esm
+  Scale: 0.6
+  Placement:
+    Position: -673.4626, 300.94403, 70.37934
+    Rotation: 0, -0, 0.31681854
+- MutagenObjectType: PlacedObject
+  FormKey: 0CB7CA:Skyrim.esm
+  Base: 067180:Skyrim.esm
+  LocationReference: 01F875:Skyrim.esm
+  Placement:
+    Position: -506.11734, -88.33754, 99.421814
+    Rotation: 0.014154765, -0.0022802926, 0.9286206
+- MutagenObjectType: PlacedObject
+  FormKey: 0CB7CB:Skyrim.esm
+  Version2: 4
+  Base: 0ED603:Skyrim.esm
+  RagdollData: 0x0003E90000000000000000000000000017A5D0BFCEC18C3E39E4434000B5EC2BA00416400000C43A0000C03A2EE59238389EB33618F8C93F
+  LocationReference: 01F875:Skyrim.esm
+  Placement:
+    Position: -536.40674, -96.94772, 86.76579
+    Rotation: 0, -0, 1.6000028
+MajorFlags:
+- 0x40000

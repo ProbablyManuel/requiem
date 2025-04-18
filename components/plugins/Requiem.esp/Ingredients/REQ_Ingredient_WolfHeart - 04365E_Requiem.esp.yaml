@@ -1,0 +1,30 @@
+FormKey: 04365E:Requiem.esp
+EditorID: REQ_Ingredient_WolfHeart
+Name:
+  TargetLanguage: English
+  Value: Wolf Heart
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\HumanHeart.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21E:Skyrim.esm
+Value: 25
+Weight: 0.75
+IngredientValue: 39
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 1
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 5
+- BaseEffect: 073F29:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 20

@@ -1,0 +1,42 @@
+FormKey: 029B06:Requiem.esp
+EditorID: REQ_Destruction3_SteamCloud_Steam
+Name:
+  TargetLanguage: English
+  Value: Steam
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 5
+MagicSkill: Destruction
+ResistValue: ResistFire
+TaperWeight: 1
+HitShader: 10FDF9:Skyrim.esm
+MinimumSkillLevel: 50
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 0F905E:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+ImpactData: 10FDF7:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 0FFA0B:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster evokes a burst of hot steam that cooks targets alive, dealing <mag> damage and staggering less durable foes.

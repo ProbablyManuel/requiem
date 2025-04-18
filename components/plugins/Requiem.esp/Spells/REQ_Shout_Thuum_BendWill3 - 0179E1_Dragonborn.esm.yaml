@@ -1,0 +1,79 @@
+FormKey: 0179E1:Dragonborn.esm
+EditorID: REQ_Shout_Thuum_BendWill3
+Name:
+  TargetLanguage: English
+  Value: Bend Will
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 22
+Type: Voice
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 0179E0:Dragonborn.esm
+  Data:
+    Duration: 2
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 035D59:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 028347:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 03F9EE:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 0200E7:Dragonborn.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 07A0DF:Skyrim.esm
+- BaseEffect: 01FF1F:Dragonborn.esm
+  Data:
+    Magnitude: 99
+    Duration: 30
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsCommandedActorConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013796:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013797:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 035D59:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 01397A:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsUndeadConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 0200E7:Dragonborn.esm
+- BaseEffect: 01F138:Dragonborn.esm
+  Data:
+    Magnitude: 0.75
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 028347:Skyrim.esm

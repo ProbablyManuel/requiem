@@ -1,0 +1,23 @@
+FormKey: 000C05:ccbgssse001-fish.esm
+EditorID: REQ_Ench_WarlocksRing
+Name:
+  TargetLanguage: English
+  Value: Warlock's Ring
+EnchantmentCost: 867
+EnchantmentAmount: 867
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 07DCDB:Skyrim.esm
+  Data:
+    Magnitude: 25
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1
+- BaseEffect: 07A0F8:Skyrim.esm
+  Data:
+    Magnitude: 30
+- BaseEffect: ADE451:Requiem.esp
+  Data:
+    Magnitude: 5

@@ -1,0 +1,23 @@
+FormKey: 106AEB:Skyrim.esm
+EditorID: REQ_NULL_PerkArgonianFortifyHealRateNonCombat
+Name:
+  TargetLanguage: English
+  Value: Fortified Healing
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 5
+HitShader: 10F4A9:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: HealRate
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

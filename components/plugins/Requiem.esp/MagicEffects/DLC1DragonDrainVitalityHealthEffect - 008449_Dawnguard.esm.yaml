@@ -1,0 +1,33 @@
+FormKey: 008449:Dawnguard.esm
+EditorID: DLC1DragonDrainVitalityHealthEffect
+Name:
+  TargetLanguage: English
+  Value: Drain Vitality - Health
+MenuDisplayObject: 10F0FF:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 3
+TaperWeight: 1
+HitShader: 05D607:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 0028DF:Dawnguard.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 015C7B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 0028E4:Dawnguard.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 00D94E:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: Drains <mag> health per second for <dur> seconds.

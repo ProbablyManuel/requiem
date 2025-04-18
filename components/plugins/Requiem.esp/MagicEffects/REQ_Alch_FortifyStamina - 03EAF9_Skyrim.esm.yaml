@@ -1,0 +1,25 @@
+FormKey: 03EAF9:Skyrim.esm
+EditorID: REQ_Alch_FortifyStamina
+Name:
+  TargetLanguage: English
+  Value: Fortify Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A32:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.15
+HitShader: 0ABF07:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Stamina
+  Association: 065A32:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina increases by <mag> for <dur> seconds.

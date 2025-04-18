@@ -1,0 +1,37 @@
+FormKey: 03AD5E:Skyrim.esm
+EditorID: FireSalts
+Version2: 6
+ObjectBounds:
+  First: -5, -4, -4
+  Second: 6, 6, 3
+Name:
+  TargetLanguage: English
+  Value: Fire Salts
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\FireSaltPile.nif
+  Data: 0x0200000003000000000000002A854CE964647300604DDD5C0F5F906564647300604DDD5CABE74C1C64647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 250
+Weight: 0.25
+IngredientValue: 250
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2E:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 300
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 2.5
+    Duration: 45
+- BaseEffect: 03EB07:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300

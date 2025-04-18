@@ -1,0 +1,19 @@
+FormKey: AE37E1:Requiem.esp
+EditorID: REQ_Ench_Wuuthrad
+Name:
+  TargetLanguage: English
+  Value: Wuuthrad Enchantment
+EnchantmentCost: 80
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 80
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 80
+    Duration: 1
+- BaseEffect: AE37FB:Requiem.esp
+  Data: {}

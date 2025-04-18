@@ -1,0 +1,27 @@
+FormKey: 5D3377:Requiem.esp
+EditorID: REQ_Illusion5_PhantasmalMiasma_DamageMagicka
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka
+Flags:
+- Detrimental
+- NoHitEvent
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 'Upkeep cost: <mag>.'
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5BCEF3:Requiem.esp

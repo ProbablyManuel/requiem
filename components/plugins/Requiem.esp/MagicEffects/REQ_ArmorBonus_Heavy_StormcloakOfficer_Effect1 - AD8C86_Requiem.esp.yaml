@@ -1,0 +1,36 @@
+FormKey: AD8C86:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_StormcloakOfficer_Effect1
+Name:
+  TargetLanguage: English
+  Value: Strengthen Moral
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: AD8CA0:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Nearby Stormcloak soldiers deal <4>% more damage (4% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 05C84E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornApparelHasKeywordCountConditionData
+    Keyword: 0009BE:Update.esm
+  ComparisonValue: 1

@@ -1,0 +1,49 @@
+FormKey: 029B00:Requiem.esp
+EditorID: REQ_Destruction4_FrostShock_FrostDamage
+Name:
+  TargetLanguage: English
+  Value: Frost Damage
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.7
+MagicSkill: Destruction
+ResistValue: ResistFrost
+CastingLight: 032DAA:Skyrim.esm
+TaperWeight: 1
+HitShader: 01F03A:Skyrim.esm
+MinimumSkillLevel: 75
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+CastType: Concentration
+TargetType: TargetActor
+SecondActorValue: Stamina
+CastingArt: 020BF5:Skyrim.esm
+ImpactData: 018A2E:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5CB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster instantaneously freezes the target from afar, dealing <mag> damage per second to health and stamina.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 029B00:Requiem.esp

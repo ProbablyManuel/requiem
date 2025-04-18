@@ -1,0 +1,75 @@
+FormKey: 107E2F:Skyrim.esm
+EditorID: REQ_Ench_KynesToken_ApplyBlessing
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ConditionalSubEffect
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: SubSpells
+      Objects:
+      - Name: ''
+        Object: AE380D:Requiem.esp
+      - Name: ''
+        Object: AE3810:Requiem.esp
+      - Name: ''
+        Object: AE380E:Requiem.esp
+      - Name: ''
+        Object: AE380F:Requiem.esp
+      - Name: ''
+        Object: AE38C7:Requiem.esp
+      - Name: ''
+        Object: AE38CC:Requiem.esp
+      - Name: ''
+        Object: AE38CD:Requiem.esp
+      - Name: ''
+        Object: AE38CE:Requiem.esp
+      - Name: ''
+        Object: AE3814:Requiem.esp
+      - Name: ''
+        Object: AE38C3:Requiem.esp
+      - Name: ''
+        Object: AE3817:Requiem.esp
+      - Name: ''
+        Object: AE38C4:Requiem.esp
+      - Name: ''
+        Object: AE3818:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Apply Kyne's Token Blessing
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013746:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 088794:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 018601:Skyrim.esm
+  ComparisonValue: 1

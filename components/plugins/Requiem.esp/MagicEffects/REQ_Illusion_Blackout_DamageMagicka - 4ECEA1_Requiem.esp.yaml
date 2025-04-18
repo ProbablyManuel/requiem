@@ -1,0 +1,26 @@
+FormKey: 4ECEA1:Requiem.esp
+EditorID: REQ_Illusion_Blackout_DamageMagicka
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoHitEvent
+- NoArea
+- PowerAffectsMagnitude
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: This orb causes a mental blackout on impact, draining <mag> magicka per second and

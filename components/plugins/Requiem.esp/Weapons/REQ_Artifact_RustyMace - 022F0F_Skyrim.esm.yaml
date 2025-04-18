@@ -1,0 +1,55 @@
+FormKey: 022F0F:Skyrim.esm
+EditorID: REQ_Artifact_RustyMace
+ObjectBounds:
+  First: -8, -20, -8
+  Second: 11, 59, 11
+Name:
+  TargetLanguage: English
+  Value: Rusty Mace
+Model:
+  File: Weapons\MaceOfMolagBal\RustyMaceOfMolagBal.nif
+  Data: 0x0200000008000000000000000872DDB66464730014F240E60121FBE16464730014F240E6B8EC307B64647300262C333BBB70F2786464730014F240E6E19513CC646473009FA832DF5ABA4CF6646473009FA832DFBF8E4DFA64647300262C333BE0EB456F646473009FA832DF
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0774C1:Skyrim.esm
+Keywords:
+- 01E714:Skyrim.esm
+- 01E71F:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- AD3B2D:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B7:Skyrim.esm
+FirstPersonModel: 055772:Skyrim.esm
+AttackFailSound: 105D43:Skyrim.esm
+EquipSound: 03DE2A:Skyrim.esm
+UnequipSound: 03DE2B:Skyrim.esm
+BasicStats:
+  Value: 5
+  Weight: 23
+  Damage: 7
+Data:
+  AnimationType: OneHandMace
+  Unused: 0x000000
+  Speed: 0.8
+  Reach: 1
+  Flags:
+  - CantDrop
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 1
+Critical:
+  Damage: 3
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

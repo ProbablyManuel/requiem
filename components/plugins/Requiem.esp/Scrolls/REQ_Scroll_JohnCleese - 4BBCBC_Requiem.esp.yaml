@@ -1,0 +1,35 @@
+FormKey: 4BBCBC:Requiem.esp
+EditorID: REQ_Scroll_JohnCleese
+ObjectBounds:
+  First: -13, -6, -3
+  Second: 13, 6, 3
+Name:
+  TargetLanguage: English
+  Value: Curse of Silly Walking
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The writings appear to be pretty... weird. You are not even sure if the spell will work as intended...
+Model:
+  File: Clutter\Common\Scroll06.nif
+  Data: 0x020000000000000000000000
+Value: 200
+Weight: 0.5
+BaseCost: 1039
+Flags:
+- ManualCostCalc
+ChargeTime: 4.5
+CastType: 3
+Effects:
+- BaseEffect: 07A82A:Skyrim.esm
+  Data:
+    Magnitude: 1000
+- BaseEffect: 082A33:Skyrim.esm
+  Data:
+    Magnitude: 100
+- BaseEffect: 082A32:Skyrim.esm
+  Data:
+    Magnitude: 100

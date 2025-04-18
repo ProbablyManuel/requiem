@@ -1,0 +1,14 @@
+FormKey: AE3594:Requiem.esp
+EditorID: RFTI_Trait_ChaurusHunter
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 20
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
+  Value: 0

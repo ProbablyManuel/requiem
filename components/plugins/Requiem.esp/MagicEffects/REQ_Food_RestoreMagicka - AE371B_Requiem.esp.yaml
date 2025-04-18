@@ -1,0 +1,29 @@
+FormKey: AE371B:Requiem.esp
+EditorID: REQ_Food_RestoreMagicka
+Name:
+  TargetLanguage: English
+  Value: Restore Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 68F5BE:Requiem.esp
+Flags:
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Magicka
+  Association: 68F5BE:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka recovers by <mag> per second for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    Spell: 0E5F51:Skyrim.esm

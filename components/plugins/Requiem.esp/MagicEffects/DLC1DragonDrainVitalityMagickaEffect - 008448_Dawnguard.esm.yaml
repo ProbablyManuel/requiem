@@ -1,0 +1,33 @@
+FormKey: 008448:Dawnguard.esm
+EditorID: DLC1DragonDrainVitalityMagickaEffect
+Name:
+  TargetLanguage: English
+  Value: Drain Vitality - Magicka
+MenuDisplayObject: 10F0FF:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 2
+TaperWeight: 1
+HitShader: 05D607:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+Projectile: 0028D7:Dawnguard.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 015C7B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 0028E5:Dawnguard.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 00D94D:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: Drains <mag> magicka per second for <dur> seconds.

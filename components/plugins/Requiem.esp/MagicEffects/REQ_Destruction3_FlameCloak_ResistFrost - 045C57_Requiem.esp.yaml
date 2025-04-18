@@ -1,0 +1,25 @@
+FormKey: 045C57:Requiem.esp
+EditorID: REQ_Destruction3_FlameCloak_ResistFrost
+Name:
+  TargetLanguage: English
+  Value: Resist Frost
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0B62E4:Skyrim.esm
+- 3FCA4C:Requiem.esp
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 0.5
+MagicSkill: Destruction
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistFrost
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Increases frost resistance by <mag>%.

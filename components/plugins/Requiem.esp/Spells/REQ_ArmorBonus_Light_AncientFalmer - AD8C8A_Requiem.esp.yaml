@@ -1,0 +1,48 @@
+FormKey: AD8C8A:Requiem.esp
+EditorID: REQ_ArmorBonus_Light_AncientFalmer
+Name:
+  TargetLanguage: English
+  Value: Ancient Falmer Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: AD8C71:Requiem.esp
+  Data:
+    Magnitude: 6
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD39BF:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AD8C71:Requiem.esp
+  Data:
+    Magnitude: 12
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD39BF:Requiem.esp
+    ComparisonValue: 2
+- BaseEffect: AD8C71:Requiem.esp
+  Data:
+    Magnitude: 18
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD39BF:Requiem.esp
+    ComparisonValue: 3
+- BaseEffect: AD8C71:Requiem.esp
+  Data:
+    Magnitude: 24
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD39BF:Requiem.esp
+    ComparisonValue: 4

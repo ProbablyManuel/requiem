@@ -1,0 +1,48 @@
+FormKey: 01BD0A:Dragonborn.esm
+EditorID: REQ_Boon_NelothsExperiment
+Name:
+  TargetLanguage: English
+  Value: Neloth's Experimental Spell
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 01C074:Dragonborn.esm
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Variable05
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsRainingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData
+- BaseEffect: 01BD0B:Dragonborn.esm
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Variable05
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsRainingConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSwimmingConditionData
+    ComparisonValue: 1

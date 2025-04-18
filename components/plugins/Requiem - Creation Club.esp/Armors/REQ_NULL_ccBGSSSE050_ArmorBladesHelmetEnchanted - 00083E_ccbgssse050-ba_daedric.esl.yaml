@@ -1,0 +1,47 @@
+FormKey: 00083E:ccbgssse050-ba_daedric.esl
+EditorID: REQ_NULL_ccBGSSSE050_ArmorBladesHelmetEnchanted
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 90
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000822:ccbgssse050-ba_daedric.esl
+ObjectBounds:
+  First: -11, -14, 0
+  Second: 11, 15, 29
+Name:
+  TargetLanguage: English
+  Value: Daedric Plate Helmet of Eminent Health
+ObjectEffect: 0BDFFC:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE050\Armor\DaedricPlate\DaedricPlateHelmetGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Hair
+  - Circlet
+  - Ears
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 088845:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBD4:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080B:ccbgssse050-ba_daedric.esl
+Value: 1600
+Weight: 15
+ArmorRating: 25

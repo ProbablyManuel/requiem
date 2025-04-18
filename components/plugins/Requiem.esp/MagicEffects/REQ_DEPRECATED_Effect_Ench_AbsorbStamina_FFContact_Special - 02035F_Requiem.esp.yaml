@@ -1,0 +1,32 @@
+FormKey: 02035F:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_Ench_AbsorbStamina_FFContact_Special
+Name:
+  TargetLanguage: English
+  Value: Absorb Stamina
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 22
+ResistValue: ResistMagic
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: Absorb
+CastType: FireAndForget
+TargetType: Touch
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Absorbs <mag> stamina, but doesn't affect constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm

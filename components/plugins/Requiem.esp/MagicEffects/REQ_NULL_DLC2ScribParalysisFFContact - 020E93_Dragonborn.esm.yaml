@@ -1,0 +1,49 @@
+FormKey: 020E93:Dragonborn.esm
+EditorID: REQ_NULL_DLC2ScribParalysisFFContact
+Name:
+  TargetLanguage: English
+  Value: Paralyze
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 200
+MagicSkill: Alteration
+ResistValue: PoisonResist
+HitShader: 06DE84:Skyrim.esm
+EnchantShader: 05D606:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+Projectile: 06EBC8:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+HitEffectArt: 06DE86:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Target is paralyzed for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 15
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData

@@ -1,0 +1,115 @@
+FormKey: 129547:Requiem.esp
+EditorID: REQ_Restoration1_DispelSoulGems_DispelSoulGems
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_DispelSoulGems
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoGrand
+      Object: AD3878:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemGrand
+      Object: 02E4FC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoGreater
+      Object: AD3877:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoLesserFilled
+      Object: AD3870:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemGreater
+      Object: 02E4F4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlackStar
+      Object: 063B29:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemBlackFilled
+      Object: 02E504:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoPettyFilled
+      Object: AD386F:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemCommonFilled
+      Object: 02E4F3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoLesser
+      Object: AD3875:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemGreaterFilled
+      Object: 02E4FB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoPetty
+      Object: 34F9A5:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoCommon
+      Object: AD3876:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoBlack
+      Object: 34F9AA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoCommonFilled
+      Object: AD3874:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemGrandFilled
+      Object: 02E4FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AzurasStar
+      Object: 063B27:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemLesserFilled
+      Object: 02E4E5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoGreaterFilled
+      Object: AD3871:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemLesser
+      Object: 02E4E4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemCommon
+      Object: 02E4E6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoBlackFilled
+      Object: AD3873:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemPetty
+      Object: 02E4E2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemPettyFilled
+      Object: 02E4E3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTomatoGrandFilled
+      Object: AD3872:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemBlack
+      Object: 02E500:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Dispel Soul Gems
+Keywords:
+- 0806E1:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- PowerAffectsMagnitude
+MagicSkill: Restoration
+CastingLight: 03F1B5:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+CastingArt: 01C859:Skyrim.esm
+SkillUsageMultiplier: 0.01
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster sets free all souls currently captured in carried soul gems.

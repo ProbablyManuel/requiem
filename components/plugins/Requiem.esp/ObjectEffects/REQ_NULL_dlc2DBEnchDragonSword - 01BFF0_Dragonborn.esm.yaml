@@ -1,0 +1,23 @@
+FormKey: 01BFF0:Dragonborn.esm
+EditorID: REQ_NULL_dlc2DBEnchDragonSword
+Name:
+  TargetLanguage: English
+  Value: Rage Of The Ancients
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+BaseEnchantment: 01BFF0:Dragonborn.esm
+Effects:
+- BaseEffect: 01BFF3:Dragonborn.esm
+  Data:
+    Magnitude: 180
+    Duration: 2
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Global: 01BFF1:Dragonborn.esm
+    ComparisonValue: 1

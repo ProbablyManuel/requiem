@@ -1,0 +1,45 @@
+FormKey: 0C1E96:Skyrim.esm
+EditorID: REQ_TwoHanded_WarhammerFocus2
+Name:
+  TargetLanguage: English
+  Value: Warhammer Focus
+Description:
+  TargetLanguage: English
+  Value: You've become an advanced warhammer fighter and know how to find weak spots in enemy armor.<br>[10% more power attack damage, +30% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 03AF84:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: TwoHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+NextPerk: 0C1E97:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD39AD:Requiem.esp
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C1E97:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 06D930:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPowerAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.1

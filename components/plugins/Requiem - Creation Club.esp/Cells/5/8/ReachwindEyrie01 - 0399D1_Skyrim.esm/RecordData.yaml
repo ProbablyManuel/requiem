@@ -1,0 +1,270 @@
+FormKey: 0399D1:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ReachwindEyrie01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Reachwind Eyrie
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#001E1E1E'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#0011110B'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#0011110B'
+    Scale: 1
+  FogFarColor: '#0011110B'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0C684A:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0B23A5:Skyrim.esm
+AcousticSpace: 0F993E:Skyrim.esm
+EncounterZone: 0B23A6:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 012FD8:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 00081F:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 536873984
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 000800:ccbgssse061-ba_dwarven.esl
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -10.558122, -221.14708, 368.4403
+    Rotation: 0, 0, 0.3000029
+- MutagenObjectType: PlacedNpc
+  FormKey: 000820:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 536874496
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - 0x400
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+  Base: 00081C:ccbgssse061-ba_dwarven.esl
+  RagdollData: 0x02524D41000000000000000000000000C309173FAAF9B0BE56AD1CC008006363F030D4C000F0F13D0038BA3D5F963BC0BAB05F3FEC9C3CC00900424F000089BB0000473CF067FA419E143BBFADD982BC39B603BC0A4D0C0000BC063E00048FBED067DA410F87D63F629B80BE59D5DE3D0E6C61644023D440002065BD00E80E3EB233244020FF273EF8BF3D400F0C00020080713C00C0C3BC0C03FA41E38893BD002104BA11C9193C106164650000293B009CA7BE1826DB41244BDA3FFB19833E178CD3BD020C00020038073DC082A9C0401B5D4095640A3E152F9ABBEA80BB3C036164650040093D0000E03990BB0641169F97BDFE04683D20F4693D046E6966000000370000443B00521A41D1F19F3EBDC6CF3DA6BAA4BE0041726D00A01E3C0000B03B6031B04101471C3E41FD263ADAD0333D0141726D0000133A000002BBC0D30C416FF5863EA3FC90BE31A0313E0B00000000E0413D0000DCBB60476141D1CE323F7E5A4EBFBAB13BBE0C00413700C01E3C00C0EDBC8021A241505ED73E569999BD55FC75BC0D4C040000C061BC0020043DC015804148C3E13CAA8256BE109DBEBF054F444C005089BD00389F3DC01B6141D59A273F3632643F3B12213E06004D4F0088CCBC000026BCA0A3A241FF24C63EFCD7913DCD15CF3C078808000000063A004036BDF08A80415EF8FE3BF9ED193E8935C03F00009487000000000000884100002041000000800000008000000080
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 56.718105, -198.8198, 409.21512
+    Rotation: 0, 0, 5.292126
+  MajorFlags:
+  - StartsDead
+  - Persistent
+  - InitiallyDisabled
+  - DoNotHavokSettle
+- MutagenObjectType: PlacedNpc
+  FormKey: 000825:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000803:ccbgssse061-ba_dwarven.esl
+  LevelModifier: Easy
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 189.25656, -30.519989, 367.97156
+    Rotation: 0, 0, 4.583191
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedObject
+  FormKey: 00082C:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 3072
+  EditorID: ccBGSSSE061_EnableMarkerREF
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 00003B:Skyrim.esm
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -98.59745, -80.53144, 544.9968
+- MutagenObjectType: PlacedObject
+  FormKey: 00083A:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 018EDE:Skyrim.esm
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -43.445084, -177.58237, 544.9968
+    Rotation: 6.1627784, 5.09478, 1.9160277
+- MutagenObjectType: PlacedObject
+  FormKey: 00083B:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 536873984
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 000801:ccbgssse061-ba_dwarven.esl
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -46.678864, -233.80164, 377.30856
+    Rotation: 0.40000328, 0, 0
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 000822:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 04C3C6:Skyrim.esm
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 44.18918, -248.94286, -30000
+- MutagenObjectType: PlacedObject
+  FormKey: 000826:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultsetStageTrigSCRIPT
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: disableWhenDone
+        Data: True
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000829:ccbgssse061-ba_dwarven.esl
+      - MutagenObjectType: ScriptBoolProperty
+        Name: doOnce
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 30
+      - MutagenObjectType: ScriptIntProperty
+        Name: prereqStageOPT
+        Data: 20
+  Base: 099312:Skyrim.esm
+  Primitive:
+    Bounds: 448.2114, 225.3715, 176.5565
+    Color: '#00CC4C33'
+    Unknown: 0.15
+    Type: Box
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 1.3405, -143.97687, -30000
+    Rotation: 0, 0, 0.3000029
+- MutagenObjectType: PlacedObject
+  FormKey: 000827:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 04C3C8:Skyrim.esm
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 43.633118, -250.65602, -30000
+- MutagenObjectType: PlacedObject
+  FormKey: 000828:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 000819:ccbgssse061-ba_dwarven.esl
+  LocationReference: 0B23A5:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 62.24908, -239.98611, -30000
+MajorFlags:
+- 0x40000

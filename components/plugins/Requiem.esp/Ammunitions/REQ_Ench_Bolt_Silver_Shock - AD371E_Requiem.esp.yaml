@@ -1,0 +1,49 @@
+FormKey: AD371E:Requiem.esp
+EditorID: REQ_Ench_Bolt_Silver_Shock
+ObjectBounds:
+  First: -122, -1, -26
+  Second: 0, 1, 0
+Name:
+  TargetLanguage: English
+  Value: Silver Bolt of Shock
+Model:
+  File: Requiem\ammo\steel\steel_bolt_magic.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Arrow1
+    NewTexture: AD383A:Requiem.esp
+    Index: 3
+  - Name: Arrow2
+    NewTexture: AD383A:Requiem.esp
+    Index: 5
+  - Name: Arrow3
+    NewTexture: AD383A:Requiem.esp
+    Index: 4
+  - Name: Arrow4
+    NewTexture: AD383A:Requiem.esp
+    Index: 2
+  - Name: Arrow:0
+    NewTexture: AD383A:Requiem.esp
+  - Name: ArrowQuiver:1
+    NewTexture: AD383A:Requiem.esp
+    Index: 6
+  - Name: charge
+    NewTexture: AD3834:Requiem.esp
+    Index: 1
+PickUpSound: 00D219:Dawnguard.esm
+PutDownSound: 00D21A:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: Explodes for <25> shock damage. Does triple damage to constructs.
+Keywords:
+- 01E719:Skyrim.esm
+- 0917E7:Skyrim.esm
+- 10AA1A:Skyrim.esm
+- 0FAB11:Requiem.esp
+- 9D1F4A:Requiem.esp
+- AD3981:Requiem.esp
+- AD3B2D:Requiem.esp
+- ADDDD2:Requiem.esp
+Projectile: AD3703:Requiem.esp
+Damage: 70
+Value: 15

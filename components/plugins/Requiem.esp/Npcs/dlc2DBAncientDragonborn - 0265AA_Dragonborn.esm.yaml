@@ -1,0 +1,202 @@
+FormKey: 0265AA:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: dlc2DBAncientDragonborn
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2DBAncientDragonbornSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: timer
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonArmsFX
+      Object: 021733:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DragonArmor
+      Object: 021739:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dbAncientMarker
+      Object: 01DC0D:Dragonborn.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Summonable
+  - IsGhost
+  - Invulnerable
+  MagickaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 05A1A4:Skyrim.esm
+  Fluff: 0x000000
+Voice: 098239:Skyrim.esm
+Race: 071E6A:Skyrim.esm
+ActorEffect:
+- 0265AB:Dragonborn.esm
+- 03F9EA:Skyrim.esm
+- 05D16B:Skyrim.esm
+CombatOverridePackageList: 018C95:Skyrim.esm
+Perks:
+- Perk: 03AF9E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03AFA7:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D51:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D52:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079346:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C05:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C06:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C07:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB407:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 182F9B:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 068C79:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 04B040:Skyrim.esm
+Class: 0265AF:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Ancient Dragonborn
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 41
+  - Key: TwoHanded
+    Value: 36
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 34
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 41
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 13
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 72
+  - Key: Destruction
+    Value: 10
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 10
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 103
+  Magicka: 177
+  Stamina: 90
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x435AEF
+CombatStyle: 0265B0:Dragonborn.esm
+NAM5: 255
+Height: 1
+Weight: 15
+SoundLevel: Normal
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00808080'
+FaceMorph:
+  JawUpVsDown: 0.1
+  JawNarrowVsWide: -1
+  JawForwardVsBack: 1
+  CheeksUpVsDown: 0.9
+  CheeksForwardVsBack: -0.7
+  EyesUpVsDown: -0.7
+  EyesInVsOut: 0.2
+  BrowsUpVsDown: 1
+  BrowsInVsOut: 0.4
+  LipsUpVsDown: 0.6
+  LipsInVsOut: -0.4
+  ChinNarrowVsWide: -1
+  ChinUpVsDown: -0.5
+  EyesForwardVsBack: 0.5
+  Unknown: 3.4028235E+38
+MajorFlags:
+- 0x40000

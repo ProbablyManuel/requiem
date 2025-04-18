@@ -1,0 +1,67 @@
+FormKey: 0F1D01:Skyrim.esm
+EditorID: AbsorbStaminaConcAimed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABF15:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF19:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0ABF16:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Absorb Stamina
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- ADDDF7:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+MagicSkill: Destruction
+ResistValue: ResistMagic
+CastingLight: 01E013:Skyrim.esm
+TaperWeight: 1
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: Absorb
+Projectile: 0ABF04:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 0ABF11:Skyrim.esm
+ImpactData: 0ABF0C:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F208:Skyrim.esm
+- Type: Release
+  Sound: 03F206:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03F205:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Absorbs <mag> magicka from the target, but doesn't affect constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 0F1D01:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp

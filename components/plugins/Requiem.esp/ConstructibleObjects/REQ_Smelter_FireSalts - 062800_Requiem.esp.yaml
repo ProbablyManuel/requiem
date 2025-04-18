@@ -1,0 +1,21 @@
+FormKey: 062800:Requiem.esp
+EditorID: REQ_Smelter_FireSalts
+Items:
+- Item:
+    Item: 03AD5E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05AD9E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0F11C0:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 43D07D:Requiem.esp
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 15

@@ -1,0 +1,16 @@
+FormKey: 9715CA:Requiem.esp
+EditorID: REQ_Setup_NewGameRequired
+Description:
+  TargetLanguage: English
+  Value: >-
+    It seems that you have added Requiem to an existing save game. This will cause serious problems because Requiem is a major overhaul and can only work properly when started with a new game.
+
+
+    Since your current game would become unplayable, we will send you back to the main menu. Please relaunch Skyrim and start a fresh new Requiem-based game!
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: New game required

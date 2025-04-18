@@ -1,0 +1,24 @@
+FormKey: AE3730:Requiem.esp
+EditorID: REQ_Alcohol_FortifyHealthRegeneration
+Name:
+  TargetLanguage: English
+  Value: Fortify Health Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: HealRateMult
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health regenerates <mag>% faster for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

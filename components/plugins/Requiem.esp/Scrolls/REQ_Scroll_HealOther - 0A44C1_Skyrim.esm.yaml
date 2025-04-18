@@ -1,0 +1,29 @@
+FormKey: 0A44C1:Skyrim.esm
+EditorID: REQ_Scroll_HealOther
+Version2: 12
+ObjectBounds:
+  First: -15, -4, -3
+  Second: 15, 4, 3
+Name:
+  TargetLanguage: English
+  Value: Scroll of Heal Other
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Clutter\Common\Scroll03.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 100
+Weight: 0.5
+BaseCost: 237
+ChargeTime: 0.5
+CastType: 3
+TargetType: TargetActor
+Effects:
+- BaseEffect: 01CEA7:Skyrim.esm
+  Data:
+    Magnitude: 200

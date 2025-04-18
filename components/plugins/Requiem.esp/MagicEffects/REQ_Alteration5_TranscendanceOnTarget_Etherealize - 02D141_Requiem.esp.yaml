@@ -1,0 +1,48 @@
+FormKey: 02D141:Requiem.esp
+EditorID: REQ_Alteration5_TranscendanceOnTarget_Etherealize
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.33
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FadeToAlpha
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Etherealize
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0806E1:Skyrim.esm
+Flags:
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 99000
+MagicSkill: Alteration
+CastingLight: 06B110:Skyrim.esm
+HitShader: 064D67:Skyrim.esm
+MinimumSkillLevel: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Etherealize
+Projectile: 025458:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 06B10F:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA53:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+- Type: Release
+  Sound: 09CE58:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The target's body is dematerialized, becoming practically invulnerable for as long as the caster doesn't interact with the environment.

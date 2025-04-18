@@ -1,0 +1,19 @@
+FormKey: AE36E9:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Stalhrim_Katana
+Items:
+- Item:
+    Item: ADDE4B:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDE4B:Requiem.esp
+CreatedObject: 02B06B:Dragonborn.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

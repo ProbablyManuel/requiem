@@ -1,0 +1,25 @@
+FormKey: 011A15:Dawnguard.esm
+EditorID: DLC1CreatureTrollArmored
+Description:
+  TargetLanguage: English
+  Value: The Dawnguard uses armored battle trolls in their fight against the vampires.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 2
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 002F65:Dawnguard.esm
+    Stage: 200
+  ComparisonValue: 1
+LoadingScreenNif: 006870:Dawnguard.esm
+InitialScale: 1
+InitialRotation: 10, 0, 10
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -30
+CameraPath: Cameras\LSCameraPanLFTZoomINBig.nif

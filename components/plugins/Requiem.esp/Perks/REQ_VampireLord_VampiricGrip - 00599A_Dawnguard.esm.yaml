@@ -1,0 +1,69 @@
+FormKey: 00599A:Dawnguard.esm
+EditorID: REQ_VampireLord_VampiricGrip
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1_PRKF_DLC1VampiricGrip_0100599A
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLCPlayerVampireFeedMsg
+      Object: 0071D4:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireTransformDecreaseISMD
+      Object: 0FD816:Skyrim.esm
+  ScriptFragments:
+    FileName: DLC1_PRKF_DLC1VampiricGrip_0100599A
+    Fragments:
+    - Unknown2: 1
+      ScriptName: DLC1_PRKF_DLC1VampiricGrip_0100599A
+      FragmentName: Fragment_1
+Name:
+  TargetLanguage: English
+  Value: Vampiric Grip
+Description:
+  TargetLanguage: English
+  Value: Your Blood Magic now allows you to grab a target from afar, choking it to death when it is close.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 005998:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 01964A:Dawnguard.esm
+  Stage: 10
+  Unknown: 0x000000
+- MutagenObjectType: PerkEntryPointAddActivateChoice
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 007EBD:Dawnguard.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 00283A:Dawnguard.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013796:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013794:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsUndeadConditionData
+  ButtonLabel:
+    TargetLanguage: English
+    Value: Drain Blood
+  EntryPoint: Activate
+  PerkConditionTabCount: 2

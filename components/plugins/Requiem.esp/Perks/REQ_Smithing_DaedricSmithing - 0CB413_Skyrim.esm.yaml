@@ -1,0 +1,63 @@
+FormKey: 0CB413:Skyrim.esm
+EditorID: REQ_Smithing_DaedricSmithing
+Name:
+  TargetLanguage: English
+  Value: Daedric Smithing
+Description:
+  TargetLanguage: English
+  Value: The creation of daedric weapons and armor is a secret few mortals know - still, <br> somehow you managed to acquire this knowledge...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB413:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 05CBDE:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 6F9CB9:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB412:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Smithing
+  ComparisonValue: 100
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3AF4:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E71F:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModTemperingHealth
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 2

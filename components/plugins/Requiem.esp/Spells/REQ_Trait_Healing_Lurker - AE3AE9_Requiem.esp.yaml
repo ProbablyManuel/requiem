@@ -1,0 +1,22 @@
+FormKey: AE3AE9:Requiem.esp
+EditorID: REQ_Trait_Healing_Lurker
+Name:
+  TargetLanguage: English
+  Value: 'Natural Healing: Lurker'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 40
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 01CEAD:Skyrim.esm
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 20

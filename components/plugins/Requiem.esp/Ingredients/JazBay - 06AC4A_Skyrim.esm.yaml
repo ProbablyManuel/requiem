@@ -1,0 +1,36 @@
+FormKey: 06AC4A:Skyrim.esm
+EditorID: JazBay
+Version2: 4
+ObjectBounds:
+  First: -2, -4, -3
+  Second: 4, 4, 4
+Name:
+  TargetLanguage: English
+  Value: Jazbay Grapes
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\JazBay01.nif
+  Data: 0x0200000002000000000000006E82458A64647300134C1EFAA423E16F64647300134C1EFA
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F51:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 30
+- BaseEffect: 03EAF8:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EB07:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 300
+- BaseEffect: 073F26:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10

@@ -1,0 +1,46 @@
+FormKey: AE3776:Requiem.esp
+EditorID: REQ_Vampire_SearingSun_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_SearingSun
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SearingSunDamage
+      Object: AE3777:Requiem.esp
+  - Name: VampireSunISMDEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireSunlightISMD03
+      Object: 0FD808:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireSunlightISMD02
+      Object: 0FD807:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerVampireQuest
+      Object: 0EAFD5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireSunlightISMD01
+      Object: 0FD805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGVampireSunlight
+      Object: 0FF9EB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireSunlightISMD04
+      Object: 0FD809:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Searing Sun
+MenuDisplayObject: 018F02:Dawnguard.esm
+Flags:
+- Detrimental
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Your vampire skin burns on mere contact with sunlight. Prolonged exposure will severely weaken your body but stop short of killing you. The condition is mitigated when the sun is low or covered by clouds.

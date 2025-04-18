@@ -1,0 +1,75 @@
+FormKey: 0198DD:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SoljundsSinkholeMinersHouse
+Version2: 11
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Miner's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00000000'
+    DirectionalXMinus: '#00000000'
+    DirectionalYPlus: '#00000000'
+    DirectionalYMinus: '#00000000'
+    DirectionalZPlus: '#00000000'
+    DirectionalZMinus: '#00000000'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 030597:Skyrim.esm
+Owner: 0284B5:Skyrim.esm
+LockList: 0F18F4:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5856:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E5DB1:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 071061:Skyrim.esm
+  LocationReference: 030597:Skyrim.esm
+  Placement:
+    Position: -730.02057, -161.99759, 0
+    Rotation: 0, -0, 3.1581926
+- MutagenObjectType: PlacedObject
+  FormKey: 0E5DC1:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.87
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 030597:Skyrim.esm
+  Placement:
+    Position: -1339.1753, -236.47699, 0.0010240078
+    Rotation: 0, -0, 1.5931954
+MajorFlags:
+- 0x40000

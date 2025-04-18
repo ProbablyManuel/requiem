@@ -1,0 +1,30 @@
+FormKey: 03CECE:Dragonborn.esm
+EditorID: REQ_Shout_Thuum_ElementalFury_FortifyAttackSpeed
+Name:
+  TargetLanguage: English
+  Value: Fortify Attack Speed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+EnchantShader: 0510D3:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: WeaponSpeedMult
+  Type: DualValueModifier
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: LeftWeaponSpeedMultiply
+DualCastScale: 1
+EnchantArt: 0510D4:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Equipped weapon of all allies swing faster for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetShouldAttackConditionData
+    TargetNpc: 000014:Skyrim.esm

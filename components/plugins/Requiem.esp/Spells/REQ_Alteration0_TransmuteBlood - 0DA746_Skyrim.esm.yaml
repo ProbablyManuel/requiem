@@ -1,0 +1,36 @@
+FormKey: 0DA746:Skyrim.esm
+EditorID: REQ_Alteration0_TransmuteBlood
+Name:
+  TargetLanguage: English
+  Value: 'Transmute: Blood'
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster transmutes his own health into magicka. Caution is advised, for the spell can kill the caster if used to transmute all remaining life force.
+BaseCost: 1
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: Concentration
+Effects:
+- BaseEffect: 0F82E2:Skyrim.esm
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetActorValuePercentConditionData
+      ActorValue: Magicka
+    ComparisonValue: 1
+- BaseEffect: 10E834:Skyrim.esm
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetActorValuePercentConditionData
+      ActorValue: Magicka
+    ComparisonValue: 1

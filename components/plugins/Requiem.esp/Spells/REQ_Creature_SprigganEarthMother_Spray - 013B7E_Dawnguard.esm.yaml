@@ -1,0 +1,20 @@
+FormKey: 013B7E:Dawnguard.esm
+EditorID: REQ_Creature_SprigganEarthMother_Spray
+Name:
+  TargetLanguage: English
+  Value: Spriggan Spray
+MenuDisplayObject: 0A0E7F:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 124
+Flags:
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 013B7F:Dawnguard.esm
+  Data:
+    Magnitude: 70
+    Duration: 1

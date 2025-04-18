@@ -1,0 +1,51 @@
+FormKey: 000E44:ccbgssse001-fish.esm
+EditorID: REQ_Weapon_AncientNord_Dagger
+ObjectBounds:
+  First: -4, -8, -1
+  Second: 4, 29, 1
+Name:
+  TargetLanguage: English
+  Value: Ancient Nord Dagger
+Model:
+  File: CreationClub\BGSSSE001\Weapons\Draugr\DraugrDagger.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E713:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C5C01:Skyrim.esm
+- DA0159:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 000DE4:ccbgssse001-fish.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03CED9:Skyrim.esm
+UnequipSound: 03CEDB:Skyrim.esm
+BasicStats:
+  Value: 5
+  Weight: 3
+  Damage: 5
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 2
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

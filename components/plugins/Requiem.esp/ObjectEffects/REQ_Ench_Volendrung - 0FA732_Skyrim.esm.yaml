@@ -1,0 +1,22 @@
+FormKey: 0FA732:Skyrim.esm
+EditorID: REQ_Ench_Volendrung
+Name:
+  TargetLanguage: English
+  Value: Volendrung Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE37FF:Requiem.esp
+  Data:
+    Duration: 1
+- BaseEffect: AE391C:Requiem.esp
+  Data:
+    Duration: 6
+- BaseEffect: AE3877:Requiem.esp
+  Data:
+    Duration: 10
+- BaseEffect: AE37F0:Requiem.esp
+  Data: {}

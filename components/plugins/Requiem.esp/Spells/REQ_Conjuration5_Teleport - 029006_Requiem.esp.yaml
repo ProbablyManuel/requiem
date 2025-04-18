@@ -1,0 +1,25 @@
+FormKey: 029006:Requiem.esp
+EditorID: REQ_Conjuration5_Teleport
+Name:
+  TargetLanguage: English
+  Value: Teleport
+MenuDisplayObject: 1097CD:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 600
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+- NoDualCastModification
+ChargeTime: 0.1
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 3000
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 02900E:Requiem.esp
+  Data:
+    Duration: 1

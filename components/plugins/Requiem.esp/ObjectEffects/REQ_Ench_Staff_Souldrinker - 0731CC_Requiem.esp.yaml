@@ -1,0 +1,47 @@
+FormKey: 0731CC:Requiem.esp
+EditorID: REQ_Ench_Staff_Souldrinker
+Name:
+  TargetLanguage: English
+  Value: Souldrinker
+EnchantmentCost: 237
+CastType: Concentration
+EnchantmentAmount: 237
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.2
+Effects:
+- BaseEffect: 027F96:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1
+- BaseEffect: 027F99:Requiem.esp
+  Data:
+    Duration: 1
+- BaseEffect: 027F98:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Magicka
+    ComparisonValue: 50
+- BaseEffect: 027F9A:Requiem.esp
+  Data:
+    Duration: 1
+- BaseEffect: 027F97:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Stamina
+    ComparisonValue: 50
+- BaseEffect: 027F9B:Requiem.esp
+  Data:
+    Duration: 1

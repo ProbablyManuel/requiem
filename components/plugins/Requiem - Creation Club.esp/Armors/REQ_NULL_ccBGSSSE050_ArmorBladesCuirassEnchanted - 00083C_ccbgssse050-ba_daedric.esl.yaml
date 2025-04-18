@@ -1,0 +1,44 @@
+FormKey: 00083C:ccbgssse050-ba_daedric.esl
+EditorID: REQ_NULL_ccBGSSSE050_ArmorBladesCuirassEnchanted
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000822:ccbgssse050-ba_daedric.esl
+ObjectBounds:
+  First: -28, -44, -1
+  Second: 25, 51, 26
+Name:
+  TargetLanguage: English
+  Value: Daedric Plate Armor of Eminent Illusion
+ObjectEffect: 0BE002:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE050\Armor\DaedricPlate\DaedricPlateBodyGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBD4:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080D:ccbgssse050-ba_daedric.esl
+Value: 3200
+Weight: 50
+ArmorRating: 51

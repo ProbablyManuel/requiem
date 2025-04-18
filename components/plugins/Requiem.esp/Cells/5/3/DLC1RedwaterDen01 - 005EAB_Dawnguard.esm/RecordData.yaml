@@ -1,0 +1,57 @@
+FormKey: 005EAB:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1RedwaterDen01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Redwater Den
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#00221F20'
+    DirectionalXMinus: '#001B1F1D'
+    DirectionalYPlus: '#001F201F'
+    DirectionalYMinus: '#001F1D1F'
+    DirectionalZPlus: '#000E0E0E'
+    DirectionalZMinus: '#002F2F2F'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0E7C5E:Skyrim.esm
+WaterHeight: 0
+Location: 004D6F:Dawnguard.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 007779:Dawnguard.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 013B32:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 00A583:Dawnguard.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004D6F:Dawnguard.esm
+  Placement:
+    Position: -1613.0431, 242.13965, 6294.9683
+    Rotation: 0, 0, 0.10000213
+MajorFlags:
+- 0x40000

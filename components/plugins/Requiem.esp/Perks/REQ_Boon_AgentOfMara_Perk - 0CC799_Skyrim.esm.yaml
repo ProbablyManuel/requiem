@@ -1,0 +1,31 @@
+FormKey: 0CC799:Skyrim.esm
+EditorID: REQ_Boon_AgentOfMara_Perk
+Name:
+  TargetLanguage: English
+  Value: Agent of Mara
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01CEB0:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 3FCA4C:Requiem.esp
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.1
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 0CC79A:Skyrim.esm

@@ -1,0 +1,37 @@
+FormKey: 03AD5B:Skyrim.esm
+EditorID: DaedraHeart
+Version2: 3
+ObjectBounds:
+  First: -4, -10, 0
+  Second: 3, 3, 6
+Name:
+  TargetLanguage: English
+  Value: Daedra Heart
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\DaedraHeart.nif
+  Data: 0x02000000030000000000000058C9EC8264647300604DDD5C6022F30764647300604DDD5CC49A2F7E64647300604DDD5C
+PickUpSound: 0FC21E:Skyrim.esm
+Value: 1500
+Weight: 1
+IngredientValue: 1500
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 120
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 120
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 120
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 120

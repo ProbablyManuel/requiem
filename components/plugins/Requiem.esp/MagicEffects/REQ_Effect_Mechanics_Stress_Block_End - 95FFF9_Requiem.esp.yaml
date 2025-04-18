@@ -1,0 +1,36 @@
+FormKey: 95FFF9:Requiem.esp
+EditorID: REQ_Effect_Mechanics_Stress_Block_End
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_DispelSpellsOnStart
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: ToRemove
+      Objects:
+      - Name: ''
+        Object: 2C6F32:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: ToDispel
+      Objects:
+      - Name: ''
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Block Stamina Drain - End'
+Keywords:
+- 8CDE08:Requiem.esp
+Flags:
+- NoDuration
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsBlockingConditionData

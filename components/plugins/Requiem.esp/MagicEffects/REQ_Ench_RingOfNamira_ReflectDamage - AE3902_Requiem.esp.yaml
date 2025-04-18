@@ -1,0 +1,19 @@
+FormKey: AE3902:Requiem.esp
+EditorID: REQ_Ench_RingOfNamira_ReflectDamage
+Name:
+  TargetLanguage: English
+  Value: Reflect Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ReflectDamage
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Attackers take <mag>% of the inflicted melee damage (5% per corpse eaten).

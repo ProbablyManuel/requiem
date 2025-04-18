@@ -1,0 +1,30 @@
+FormKey: 0F257E:Skyrim.esm
+EditorID: REQ_Drink3_WineAltoMS14
+ObjectBounds:
+  First: -8, -8, 0
+  Second: 8, 8, 27
+Name:
+  TargetLanguage: English
+  Value: Jessica's Wine
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Wine\WineBottle01A.nif
+  Data: 0x0200000004000000000000002883CF3C646473002659B6B43B4DC5BE646473002659B6B4164E0459646473002659B6B4B8EC307B64647300262C333B
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 12
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 45
+    Duration: 600
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 30
+    Duration: 900

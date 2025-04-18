@@ -1,0 +1,34 @@
+FormKey: 2E9A0E:Requiem.esp
+EditorID: REQ_Effect_OnHitStagger
+Name:
+  TargetLanguage: English
+  Value: Crippling Pain
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 98F1F7:Requiem.esp
+Flags:
+- Detrimental
+- NoHitEvent
+- NoArea
+- FXPersist
+- HideInUI
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+Projectile: 025458:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 482639:Requiem.esp

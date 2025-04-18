@@ -1,0 +1,41 @@
+FormKey: 00BF7D:Dawnguard.esm
+EditorID: REQ_NULL_DLC1CrystalSlowConcAimed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1CrystalDrainHealthCheckScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HuskEffect
+      Object: 014DC5:Dawnguard.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: healthStop
+      Data: True
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bleedOutStop
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Slow Effect
+Keywords:
+- 0B729E:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeedMult
+CastType: Concentration
+TargetType: Aimed
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 'Slows Target '

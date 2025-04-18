@@ -1,0 +1,84 @@
+FormKey: 04761B:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: TrevasWatch02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Treva's Watch Escape Tunnel
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#003C3C3C'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000064'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000064'
+    Scale: 1
+  FogFarColor: '#00000064'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192BD:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC81:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 04D4D9:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192BD:Skyrim.esm
+  Placement:
+    Position: 6083.983, 1962.4277, 1068.066
+    Rotation: 0, 0, 1.5831969
+- MutagenObjectType: PlacedObject
+  FormKey: 0FF722:Skyrim.esm
+  Base: 04B0BA:Skyrim.esm
+  LocationReference: 0192BD:Skyrim.esm
+  Placement:
+    Position: 7106.606, 1608.009, 1146.2804
+    Rotation: 1.4032122, -0.21657655, 0.3558925
+- MutagenObjectType: PlacedObject
+  FormKey: 0710E1:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 7110.626, 1576.5052, 1147.2548
+- MutagenObjectType: PlacedObject
+  FormKey: 0710E0:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 7093.084, 1597.4694, 1147.2548
+- MutagenObjectType: PlacedObject
+  FormKey: 0710DF:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 7093.331, 1578.6562, 1147.2548
+MajorFlags:
+- 0x40000

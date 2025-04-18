@@ -1,0 +1,267 @@
+FormKey: 028AD0:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DA01Aranea
+Version2: 5
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - Unique
+  - Protected
+  MagickaOffset: 300
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  CalcMinLevel: 6
+  CalcMaxLevel: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 150
+Factions:
+- Faction: 02816F:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028181:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 092F2C:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AF3:Skyrim.esm
+Race: 013742:Skyrim.esm
+ActorEffect:
+- 072316:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231C:Skyrim.esm
+- 0ABDF3:Skyrim.esm
+- 0BB967:Skyrim.esm
+- 0BB96A:Skyrim.esm
+- 0BB96B:Skyrim.esm
+- 0C969C:Skyrim.esm
+- 0C96A2:Skyrim.esm
+- 0F95EB:Skyrim.esm
+- 10F7F7:Skyrim.esm
+- 10F7F8:Skyrim.esm
+AttackRace: 013742:Skyrim.esm
+Perks:
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058200:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3933:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3F0E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B76:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B77:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01397E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 04DEE1:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Packages:
+- 04C44B:Skyrim.esm
+- 04C443:Skyrim.esm
+- 024677:Skyrim.esm
+Class: 01317A:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Aranea Ienith
+ShortName:
+  TargetLanguage: English
+  Value: Aranea
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 31
+  - Key: Alchemy
+    Value: 10
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 52
+  - Key: Conjuration
+    Value: 47
+  - Key: Destruction
+    Value: 78
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 69
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 442
+  Magicka: 543
+  Stamina: 50
+  Unused: 16743
+  Unused2: 0x425AEF
+HeadParts:
+- 0E4D92:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+- 0EC3C8:Skyrim.esm
+HairColor: 0A0430:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 30
+SoundLevel: Normal
+DefaultOutfit: 10FE69:Skyrim.esm
+CrimeFaction: 02816F:Skyrim.esm
+HeadTexture: 019390:Skyrim.esm
+TextureLighting: '#00557688'
+FaceMorph:
+  NoseLongVsShort: 0.2
+  NoseUpVsDown: -0.3
+  JawUpVsDown: -0.3
+  JawNarrowVsWide: -0.5
+  JawForwardVsBack: 0.2
+  CheeksUpVsDown: 0.4
+  CheeksForwardVsBack: 0.4
+  EyesUpVsDown: -0.4
+  EyesInVsOut: -0.3
+  BrowsUpVsDown: -0.5
+  LipsUpVsDown: -0.2
+  LipsInVsOut: 0.2
+  ChinUpVsDown: -0.5
+  ChinUnderbiteVsOverbite: 0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 2
+  Unknown: 4294967295
+  Eyes: 22
+  Mouth: 10
+TintLayers:
+- Index: 24
+  Color: '#00557688'
+  InterpolationValue: 1
+  Preset: 543
+- Index: 25
+  Color: '#00212B52'
+  InterpolationValue: 0.34
+  Preset: 549
+- Index: 26
+  Color: '#00364E21'
+  InterpolationValue: 0.75
+  Preset: 563
+- Index: 28
+  Color: '#00212B52'
+  InterpolationValue: 0.83
+  Preset: 573
+- Index: 30
+  Color: '#00070C3D'
+  InterpolationValue: 0.56
+  Preset: 582
+- Index: 33
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 602
+- Index: 35
+  Color: '#000F0440'
+  InterpolationValue: 0.41
+  Preset: 1018
+- Index: 46
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1024
+MajorFlags:
+- 0x40000

@@ -1,0 +1,40 @@
+FormKey: 0218F2:Skyrim.esm
+EditorID: REQ_Scroll_BaneOfTheUndead
+Version2: 6
+ObjectBounds:
+  First: -15, -4, -3
+  Second: 15, 4, 3
+Name:
+  TargetLanguage: English
+  Value: Scroll of Bane of the Undead
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Clutter\Common\Scroll02.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 500
+Weight: 0.5
+BaseCost: 1732
+Flags:
+- ManualCostCalc
+ChargeTime: 4.5
+CastType: 3
+Effects:
+- BaseEffect: 08C1AA:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Area: 80
+    Duration: 30
+- BaseEffect: 0C5C0A:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Area: 80
+- BaseEffect: 0C5C0B:Skyrim.esm
+  Data:
+    Magnitude: 0.05
+    Area: 80

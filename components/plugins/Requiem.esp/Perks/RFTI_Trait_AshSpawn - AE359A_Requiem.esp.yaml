@@ -1,0 +1,81 @@
+FormKey: AE359A:Requiem.esp
+EditorID: RFTI_Trait_AshSpawn
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 20
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.01
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 15
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 10AA1A:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3955:Requiem.esp
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.5
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 14
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 0FAB11:Requiem.esp
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3955:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 11
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3956:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.2
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 10
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3957:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.5

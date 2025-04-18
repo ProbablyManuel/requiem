@@ -1,0 +1,274 @@
+FormKey: 0BCC58:Requiem.esp
+EditorID: RFTI_Player_Lockpicking
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Control Center for lock picking'
+Description:
+  TargetLanguage: English
+  Value: >-
+    The "expertise" is stored in the "lockpickingmod" actor value. This perk is complemented by a Reqtificator-distributed script which blocks default activation for the player and his followers on all chests and doors. If the object is locked, the script checks the expertise of the player and his buddies and then offers the appropriate options.
+
+
+    functionality of this perk:
+
+    255 - set sweetspot width to 0 for all locks
+
+    3x - set basic sweetspot width if expertise exceeds minimum threshold
+
+    2x - add extra sweetspot width if expertise exceeds optimum threshold
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 255
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 35
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38B0:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 75
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 100
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 34
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A8:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 50
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 75
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 33
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A5:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 25
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 50
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 32
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A6:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 25
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 31
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3A3E:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A7:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 1
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 25
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A9:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 100
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 8
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 24
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38AC:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 75
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 8
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 23
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38AF:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 50
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 8
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 22
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A4:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 25
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 8
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 21
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38B1:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 1
+  EntryPoint: ModLockpickSweetSpot
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 7

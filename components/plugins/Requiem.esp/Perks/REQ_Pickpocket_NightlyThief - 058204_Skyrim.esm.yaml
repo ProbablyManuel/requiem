@@ -1,0 +1,40 @@
+FormKey: 058204:Skyrim.esm
+EditorID: REQ_Pickpocket_NightlyThief
+Name:
+  TargetLanguage: English
+  Value: Nightly Thief
+Description:
+  TargetLanguage: English
+  Value: You have learned how to avoid waking up targets during your "nightly visits", <br> so you can free them from their worldly burdens with ease.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058202:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Pickpocket
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 20
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: NotEqualTo
+      Data:
+        MutagenObjectType: GetSleepingConditionData
+  EntryPoint: ModPickpocketChance
+  PerkConditionTabCount: 3
+  Value: 100

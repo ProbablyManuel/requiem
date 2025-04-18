@@ -1,0 +1,17 @@
+FormKey: 95FFFA:Requiem.esp
+EditorID: REQ_Stress_Blocking_End
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: end stamina drain after block ended'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 95FFF9:Requiem.esp
+  Data: {}

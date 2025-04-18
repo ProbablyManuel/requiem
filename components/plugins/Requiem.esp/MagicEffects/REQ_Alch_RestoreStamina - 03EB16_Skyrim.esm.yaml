@@ -1,0 +1,26 @@
+FormKey: 03EB16:Skyrim.esm
+EditorID: REQ_Alch_RestoreStamina
+Name:
+  TargetLanguage: English
+  Value: Restore Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 042504:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+- 66CB3B:Requiem.esp
+Flags:
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.3
+HitShader: 0ABF07:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Stamina
+  Association: 66CB3B:Requiem.esp
+CastType: FireAndForget
+HitEffectArt: 04E223:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina recovers by <mag> per second for <dur> seconds.

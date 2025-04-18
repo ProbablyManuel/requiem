@@ -1,0 +1,70 @@
+FormKey: 01DDFB:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Daedric_Battleaxe_Fire6
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_CursedItem
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeDaedra
+      Object: 013797:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: REQ_KW_CursedItem
+      Object: 6D7249:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurseOfAgony
+      Object: 09E9C3:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myItem
+      Object: 01DDFB:Skyrim.esm
+ObjectBounds:
+  First: -23, -41, 4
+  Second: 15, 76, 10
+Name:
+  TargetLanguage: English
+  Value: Daedric Battleaxe of the Inferno
+Model:
+  File: Weapons\Daedric\DaedricBattleAxe.nif
+  Data: 0x020000000900000000000000D63BC1866464730038973CEAFBC7861364647300582C55334FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305E1D1961C646473005E9AFF42BD319821646473005E9AFF42F63890AC64647300262C333B076091B8646473005E9AFF42
+ObjectEffect: 045C35:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E71F:Skyrim.esm
+- 06D932:Skyrim.esm
+- 08F958:Skyrim.esm
+- 6D7249:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 036A5B:Skyrim.esm
+FirstPersonModel: 0C8C7B:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 06036A:Skyrim.esm
+UnequipSound: 0605D3:Skyrim.esm
+BasicStats:
+  Value: 10000
+  Weight: 28
+  Damage: 25
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.7
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1068708659
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.15
+Critical:
+  Damage: 12
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

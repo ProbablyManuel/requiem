@@ -1,0 +1,23 @@
+FormKey: 04CCFA:Skyrim.esm
+EditorID: REQ_Creature_FrostbiteSpider_Spit3
+Name:
+  TargetLanguage: English
+  Value: Frostbite Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 3
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Poison
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 047293:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 150

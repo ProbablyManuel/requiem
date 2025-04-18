@@ -1,0 +1,50 @@
+FormKey: 0C1E98:Skyrim.esm
+EditorID: REQ_NULL_PerkGrandmaster1HParalysisFFSelf
+Name:
+  TargetLanguage: English
+  Value: Paralyze
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 25
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData

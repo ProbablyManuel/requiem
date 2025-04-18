@@ -1,0 +1,46 @@
+FormKey: 0D2328:Skyrim.esm
+EditorID: REQ_Artifact_StrangeAmulet
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ms11cluescript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MS11ButcherFlyer
+      Object: 021683:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MS11InnocuousAmulet
+      Object: 0D2328:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MS11
+      Object: 01F7A3:Skyrim.esm
+ObjectBounds:
+  First: -2, -8, 0
+  Second: 3, 14, 1
+Name:
+  TargetLanguage: English
+  Value: Strange Amulet
+WorldModel:
+  Male:
+    Model:
+      File: Armor\AmuletsandRings\Necromancer\NecromancerGO.nif
+      Data: 0x0200000002000000000000005F4D479E646473003B87BA0A35EF67A2646473003B87BA0A
+BodyTemplate:
+  FirstPersonFlags:
+  - Amulet
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 013740:Skyrim.esm
+Keywords:
+- 06BBE9:Skyrim.esm
+- 08F95A:Skyrim.esm
+- 0A8664:Skyrim.esm
+- 10CD0A:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 0C891C:Skyrim.esm
+Value: 1000
+Weight: 0.5

@@ -1,0 +1,39 @@
+FormKey: 0549B4:Skyrim.esm
+EditorID: VoiceDragonFrostBreathEffect1
+Version2: 11
+Name:
+  TargetLanguage: English
+  Value: Dragon breath
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+- 2FFEAD:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- GoryVisuals
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistFrost
+HitShader: 01F03A:Skyrim.esm
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 016CD1:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: Stamina
+ImpactData: 0D7863:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 0DAB87:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: There are few things a Dragon's freezing breath cannot freeze to death in a mere blink of an eye.

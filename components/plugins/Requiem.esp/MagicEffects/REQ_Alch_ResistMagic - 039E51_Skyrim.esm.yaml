@@ -1,0 +1,26 @@
+FormKey: 039E51:Skyrim.esm
+EditorID: REQ_Alch_ResistMagic
+Name:
+  TargetLanguage: English
+  Value: Resist Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A3A:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.5
+HitShader: 10BEAB:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistMagic
+  Association: 065A3A:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magic deals <mag>% less damage to you for <dur> seconds.

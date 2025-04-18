@@ -1,0 +1,22 @@
+FormKey: ADE425:Requiem.esp
+EditorID: REQ_ArmorBonus_Light_Vampire_Effect
+Name:
+  TargetLanguage: English
+  Value: Blood Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Volkihar vampires infuse leather with vile blood magic to enhance their vampiric powers. Thus, Vampiric Drain is <mag>% stronger (20% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

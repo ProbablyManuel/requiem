@@ -1,0 +1,72 @@
+FormKey: 058F68:Skyrim.esm
+EditorID: REQ_Block_StrongGrip
+Name:
+  TargetLanguage: English
+  Value: Strong Grip
+Description:
+  TargetLanguage: English
+  Value: You hold on to your shield like you would hold on to your life.<br>[75% less shield weight, 10% more armor rating, block 40% more damage, arrows that hit the shield do no damage]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BCCAE:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Block
+  ComparisonValue: 15
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 3
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 0965B2:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsBlockingConditionData
+      ComparisonValue: 1
+  EntryPoint: ModShieldDefectArrowChance
+  PerkConditionTabCount: 1
+  Value: 100
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0965B2:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModArmorWeight
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.25
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  EntryPoint: ModPercentBlocked
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.4
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0965B2:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModArmorRating
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.1

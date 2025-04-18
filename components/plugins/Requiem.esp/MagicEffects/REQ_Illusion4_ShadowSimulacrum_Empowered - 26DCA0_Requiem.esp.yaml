@@ -1,0 +1,34 @@
+FormKey: 26DCA0:Requiem.esp
+EditorID: REQ_Illusion4_ShadowSimulacrum_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoHitEvent
+- NoArea
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 539A91:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Empowering the spell allows the shadow weave to quickly restore itself after being severed.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 4EA705:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

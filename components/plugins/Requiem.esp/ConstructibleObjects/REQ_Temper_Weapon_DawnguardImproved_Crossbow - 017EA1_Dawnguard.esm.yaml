@@ -1,0 +1,19 @@
+FormKey: 017EA1:Dawnguard.esm
+EditorID: REQ_Temper_Weapon_DawnguardImproved_Crossbow
+Items:
+- Item:
+    Item: 05ACE3:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00F19C:Dawnguard.esm
+CreatedObject: 00F19E:Dawnguard.esm
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

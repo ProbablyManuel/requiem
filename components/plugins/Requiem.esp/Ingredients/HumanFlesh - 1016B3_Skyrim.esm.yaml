@@ -1,0 +1,33 @@
+FormKey: 1016B3:Skyrim.esm
+EditorID: HumanFlesh
+Version2: 11
+ObjectBounds:
+  First: -11, -12, -1
+  Second: 14, 10, 9
+Name:
+  TargetLanguage: English
+  Value: Human Flesh
+Model:
+  File: Clutter\Ingredients\BeefMeat.nif
+  Data: 0x0200000002000000000000005611D5A964647300604DDD5C317E781164647300604DDD5C
+Value: 1
+Weight: 0.25
+IngredientValue: 25
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 1
+- BaseEffect: 073F30:Skyrim.esm
+  Data:
+    Duration: 1
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 03EB22:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

@@ -1,0 +1,74 @@
+FormKey: 03D23E:Dragonborn.esm
+EditorID: REQ_NULL_DLC2FrostDamageHazardArea40
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicPlaceActivatorScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedActivator
+      Object: 0B79FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ExplosionRef
+      Object: 0B7A05:Skyrim.esm
+  - Name: shaderparticlegeometryscript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FadeOutTime
+      Data: 2
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FadeInTime
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PSGD
+      Object: 0B79FB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActivatorRef
+      Object: 0B79FF:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bUseDistanceCheck
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDistnceCheck
+      Data: 1000
+Name:
+  TargetLanguage: English
+  Value: Blizzard
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+Flags:
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 41
+MagicSkill: Destruction
+ResistValue: ResistFrost
+CastingLight: 032DAA:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectSpawnHazardArchetype
+  Association: 0B7A04:Skyrim.esm
+Projectile: 049B61:Skyrim.esm
+Explosion: 0B7A05:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 0B92CF:Skyrim.esm
+ImpactData: 049B64:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 0B92CE:Skyrim.esm
+ImageSpaceModifier: 04408A:Skyrim.esm
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Charge
+  Sound: 0FDBB4:Skyrim.esm
+- Type: Ready
+  Sound: 03F1F0:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Targets take <mag> points of frost damage for <dur> seconds. Single use, then must be reacquired at the Wind Stone.

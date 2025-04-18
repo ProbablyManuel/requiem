@@ -1,0 +1,57 @@
+FormKey: 0322A8:Dragonborn.esm
+EditorID: REQ_Ench_Explosion_Spider_Frost
+Name:
+  TargetLanguage: English
+  Value: Frost
+EnchantmentCost: 2430
+CastType: FireAndForget
+EnchantmentAmount: 2430
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 0322A9:Dragonborn.esm
+  Data:
+    Magnitude: 90
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+- BaseEffect: 0322A9:Dragonborn.esm
+  Data:
+    Magnitude: 180
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 0B72A0:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 3
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+- BaseEffect: 0B72A0:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 3
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+    ComparisonValue: 1

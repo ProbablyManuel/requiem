@@ -1,0 +1,24 @@
+FormKey: 5BA757:Requiem.esp
+EditorID: REQ_Illusion_PhantasmalMiasma
+Name:
+  TargetLanguage: English
+  Value: Phantasmal Miasma
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44C6:Skyrim.esm
+Effects:
+- BaseEffect: 5B7FB4:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 15
+- BaseEffect: 5B7FB7:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 15

@@ -1,0 +1,21 @@
+FormKey: ADDE57:Requiem.esp
+EditorID: REQ_Temper_Weapon_Stalhrim_DaiKatana
+Items:
+- Item:
+    Item: 02B06B:Dragonborn.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 01CAF1:Dragonborn.esm
+    Stage: 200
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB412:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: ADDE51:Requiem.esp
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

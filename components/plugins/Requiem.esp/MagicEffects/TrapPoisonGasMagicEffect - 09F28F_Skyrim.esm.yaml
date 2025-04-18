@@ -1,0 +1,53 @@
+FormKey: 09F28F:Skyrim.esm
+EditorID: TrapPoisonGasMagicEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ISM_strengthoffset
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_hit
+      Object: 10E3D2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 19151A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_fade
+      Object: 10E3D3:Skyrim.esm
+  - Name: TrapPoisonGasCough
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tempSound
+      Object: 05B37D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DialogueGenericPoisonCoughBranchTopic
+      Object: 021405:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Poison Gas
+Keywords:
+- 09F28E:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoHitEffect
+ResistValue: PoisonResist
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

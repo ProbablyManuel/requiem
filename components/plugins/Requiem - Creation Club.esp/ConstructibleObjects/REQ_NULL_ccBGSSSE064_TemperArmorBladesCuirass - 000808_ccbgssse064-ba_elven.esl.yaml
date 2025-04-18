@@ -1,0 +1,22 @@
+FormKey: 000808:ccbgssse064-ba_elven.esl
+EditorID: REQ_NULL_ccBGSSSE064_TemperArmorBladesCuirass
+Items:
+- Item:
+    Item: 05AD9F:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 000801:ccbgssse064-ba_elven.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

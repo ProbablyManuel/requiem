@@ -1,0 +1,42 @@
+FormKey: 029F01:Dragonborn.esm
+EditorID: REQ_BlackBook_UntoldLegends_BoundDrum
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2FXInsturmentsSummonSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 029EFF:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03B56B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myMarker
+      Object: 029F11:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myBard
+      Object: 029F10:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroSoundFX
+      Object: 03B56B:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Bound Drum
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Speech
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Summons a drum-shaped daedra to play for you, increasing your speech skill by <mag> for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 029F01:Dragonborn.esm

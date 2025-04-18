@@ -1,0 +1,49 @@
+FormKey: AE37FC:Requiem.esp
+EditorID: REQ_Ench_Wuuthrad_WeakShock_HalfElves
+Name:
+  TargetLanguage: English
+  Value: Weakness to Shock
+MenuDisplayObject: 09FA64:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+HitShader: 057C67:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistShock
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Descendants of Elves who dare to wield Wuuthrad take <mag>% more damage from shock.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013741:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 08883C:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013747:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 0A82B9:Skyrim.esm
+  ComparisonValue: 1

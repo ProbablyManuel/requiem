@@ -1,0 +1,18 @@
+FormKey: 000A19:ccqdrsse001-survivalmode.esl
+EditorID: Survival_RecipeFoodStewAppleCabbage
+Items:
+- Item:
+    Item: 03AD5E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0EBA01:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000826:ccqdrsse001-survivalmode.esl
+  ComparisonValue: 1
+CreatedObject: 0009E6:ccqdrsse001-survivalmode.esl
+WorkbenchKeyword: 0A5CB3:Skyrim.esm
+CreatedObjectCount: 1

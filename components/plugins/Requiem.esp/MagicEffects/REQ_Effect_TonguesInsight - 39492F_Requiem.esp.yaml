@@ -1,0 +1,31 @@
+FormKey: 39492F:Requiem.esp
+EditorID: REQ_Effect_TonguesInsight
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Req_DraconicKNowledgeEffect
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DraconicKnowledgeProperty
+      Object: 394931:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DraconicKnowledgePerk
+      Object: 38F9F8:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Tongue's Insight
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 5
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

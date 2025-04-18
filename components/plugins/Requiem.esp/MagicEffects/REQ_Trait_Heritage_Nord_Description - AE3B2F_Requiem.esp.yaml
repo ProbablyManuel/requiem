@@ -1,0 +1,25 @@
+FormKey: AE3B2F:Requiem.esp
+EditorID: REQ_Trait_Heritage_Nord_Description
+Name:
+  TargetLanguage: English
+  Value: Children of the Sky
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Shouts are <20>% stronger and last <20>% longer. Armors provide <10>% more armor rating.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

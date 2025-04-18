@@ -1,0 +1,196 @@
+FormKey: 03A1D3:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EtienneRarnis
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MQEtienneScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SteelSword
+      Object: 013989:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ThievesGuildStandardOutfit
+      Object: 036582:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ201
+      Object: 035D5F:Skyrim.esm
+  - Name: TGAssaultScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TGBan
+      Object: 0B03A2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ThievesGuildFaction
+      Object: 029DA9:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Unique
+  StaminaOffset: 360
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 42
+  CalcMinLevel: 10
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  HealthOffset: 170
+Factions:
+- Faction: 029DA9:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 09E0E5:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0A2527:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 10A794:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD3:Skyrim.esm
+Race: 013741:Skyrim.esm
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079345:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 013989:Skyrim.esm
+    Count: 1
+AIData:
+  EnergyLevel: 50
+  Mood: Angry
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 0E40DA:Skyrim.esm
+- 0B780F:Skyrim.esm
+Class: 013180:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Etienne Rarnis
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 94
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 35
+  - Key: Block
+    Value: 65
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 65
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 94
+  - Key: Alchemy
+    Value: 10
+  - Key: Speech
+    Value: 10
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 20
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 10
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 450
+  Magicka: 70
+  Stamina: 245
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 023DCE:Skyrim.esm
+- 024259:Skyrim.esm
+- 051507:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C716D:Skyrim.esm
+HairColor: 0A042C:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 0E49B5:Skyrim.esm
+SleepingOutfit: 01697D:Skyrim.esm
+CrimeFaction: 10A794:Skyrim.esm
+TextureLighting: '#00B79C91'
+FaceMorph:
+  NoseLongVsShort: -1
+  NoseUpVsDown: 0.68
+  EyesUpVsDown: -0.7
+  EyesInVsOut: -0.46
+  BrowsUpVsDown: -0.7
+  BrowsInVsOut: 0.2
+  BrowsForwardVsBack: 0.74
+  LipsUpVsDown: 0.72
+  LipsInVsOut: -1
+  ChinNarrowVsWide: 0.24
+  ChinUpVsDown: -0.54
+  ChinUnderbiteVsOverbite: -0.82
+  EyesForwardVsBack: 0.42
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 5
+  Unknown: 4294967295
+  Eyes: 18
+  Mouth: 4
+TintLayers:
+- Index: 2
+  Color: '#00B79C91'
+  InterpolationValue: 1
+  Preset: 76
+MajorFlags:
+- 0x40000

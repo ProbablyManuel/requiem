@@ -1,0 +1,281 @@
+FormKey: 003364:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 537133056
+EditorID: DLC1GaranMarethi
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+- 0x20000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1VLCrimeScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireFaction
+      Object: 003376:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireBeastRace
+      Object: 00283A:Dawnguard.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Essential
+  - AutoCalcStats
+  - Unique
+  - BleedoutOverride
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 40
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - SpellList
+  - AIData
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Factions:
+- Faction: 003376:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 00C3CC:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 017F71:Dawnguard.esm
+  Fluff: 0x000000
+DeathItem: 03ADA0:Skyrim.esm
+Voice: 007C47:Dawnguard.esm
+Template: 003372:Dawnguard.esm
+Race: 08883D:Skyrim.esm
+ActorEffect:
+- 033976:Skyrim.esm
+- 0F5B5C:Skyrim.esm
+- 0F5B5D:Skyrim.esm
+- 107AA1:Skyrim.esm
+- 10FB30:Skyrim.esm
+- 039D3F:Skyrim.esm
+- 039D40:Skyrim.esm
+- 100E74:Skyrim.esm
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03AFA6:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D52:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 053129:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581DD:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581DE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F62:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F64:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079345:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E90:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E91:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3678:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3679:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3933:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 16F2B0:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 037C1B:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 04F78D:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10E0DD:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Keywords:
+- 013796:Skyrim.esm
+- 0A82BB:Skyrim.esm
+Class: 0E3A5C:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Garan Marethi
+ShortName:
+  TargetLanguage: English
+  Value: Garan
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 67
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 67
+  - Key: Conjuration
+    Value: 33
+  - Key: Destruction
+    Value: 100
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 90
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 165
+  Magicka: 230
+  Stamina: 100
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x663FEF
+HeadParts:
+- 01750B:Skyrim.esm
+- 05107C:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C716E:Skyrim.esm
+HairColor: 0A0431:Skyrim.esm
+CombatStyle: 02DFB3:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 00677D:Dawnguard.esm
+DefaultPackageList: 003424:Dawnguard.esm
+CrimeFaction: 017F71:Dawnguard.esm
+HeadTexture: 006F83:Dawnguard.esm
+TextureLighting: '#00314956'
+FaceMorph:
+  NoseLongVsShort: -1
+  NoseUpVsDown: -0.82
+  LipsUpVsDown: -0.45999998
+  ChinUpVsDown: -1
+FaceParts:
+  Nose: 24
+  Eyes: 22
+  Mouth: 16
+TintLayers:
+- Index: 1
+  Color: '#00324A56'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 3
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 15
+- Index: 4
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 458
+- Index: 6
+  Color: '#000F0440'
+  InterpolationValue: 0.33
+  Preset: 24
+- Index: 7
+  Color: '#00A95452'
+  InterpolationValue: 0.22
+  Preset: 27
+- Index: 8
+  Color: '#003D2C10'
+  InterpolationValue: 0.77
+  Preset: 34
+MajorFlags:
+- 0x40000
+- BleedoutOverride

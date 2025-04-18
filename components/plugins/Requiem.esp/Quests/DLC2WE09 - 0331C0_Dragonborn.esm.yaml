@@ -1,0 +1,387 @@
+FormKey: 0331C0:Dragonborn.esm
+EditorID: DLC2WE09
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2_QF_DLC2WE09_020331C0
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 0331C0:Dragonborn.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 0331C0:Dragonborn.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Actor1
+      Object: 0331C0:Dragonborn.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2WE09Chance
+      Object: 033C24:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Actor2
+      Object: 0331C0:Dragonborn.esm
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MQ01AliasForObjective
+      Object: 017F8E:Dragonborn.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 0331C0:Dragonborn.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 0331C0:Dragonborn.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEPlayerFriend
+      Object: 01DD09:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MQ01
+      Object: 017F8E:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_NoteInitial
+      Object: 0331C0:Dragonborn.esm
+      Alias: 37
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 0331C0:Dragonborn.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Actor3
+      Object: 0331C0:Dragonborn.esm
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TravelMarker2
+      Object: 0331C0:Dragonborn.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunPrisonerFaction
+      Object: 0AA784:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEPlayerEnemy
+      Object: 01DD0F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TravelMarker1
+      Object: 0331C0:Dragonborn.esm
+      Alias: 9
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
+  FileName: DLC2_QF_DLC2WE09_020331C0
+  Fragments:
+  - Unknown2: 1
+    ScriptName: DLC2_QF_DLC2WE09_020331C0
+    FragmentName: Fragment_4
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: DLC2_QF_DLC2WE09_020331C0
+    FragmentName: Fragment_3
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: DLC2_QF_DLC2WE09_020331C0
+    FragmentName: Fragment_5
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: DLC2_QF_DLC2WE09_020331C0
+    FragmentName: Fragment_11
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0331C0:Dragonborn.esm
+      Alias: 17
+    Scripts:
+    - Name: DLC2WE09ActorScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DLC2MQ01
+        Object: 017F8E:Dragonborn.esm
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StopRegisteringUnloadingIfStageHasBeenSet
+        Data: 10
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+  - Property:
+      Name: ''
+      Object: 0331C0:Dragonborn.esm
+      Alias: 25
+    Scripts:
+    - Name: DLC2WE09ActorScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DLC2MQ01
+        Object: 017F8E:Dragonborn.esm
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+  - Property:
+      Name: ''
+      Object: 0331C0:Dragonborn.esm
+      Alias: 30
+    Scripts:
+    - Name: DLC2WE09ActorScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DLC2MQ01
+        Object: 017F8E:Dragonborn.esm
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+Name:
+  TargetLanguage: English
+  Value: Cultists vs Player
+Flags:
+- 0x4
+Priority: 50
+QuestFormVersion: 65
+Type: Misc
+Event: SCPT
+Filter: DLC2\Wilderness Encounters\
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 034E61:Dragonborn.esm
+  ComparisonValue: 1
+EventConditions:
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 033C24:Dragonborn.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 0242BA:Skyrim.esm
+  ComparisonValue: 160
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 0179D7:Dragonborn.esm
+  ComparisonValue: 550
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Location: 016E2A:Dragonborn.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 046EF2:Skyrim.esm
+  ComparisonValue: 1
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 1
+  Flags:
+  - KeepInstanceDataFromHereOn
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Flags:
+  - KeepInstanceDataFromHereOn
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search the <Alias=Actor1>
+  Targets:
+  - AliasID: 17
+NextAliasID: 38
+Aliases:
+- ID: 1
+  Name: TRIGGER
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: myHoldLocation
+  Flags:
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 6
+  Type: Location
+  Name: myHoldContested
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A605:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A606:Skyrim.esm
+    ComparisonValue: 1
+- ID: 7
+  Type: Location
+  Name: myHoldImperial
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A603:Skyrim.esm
+    ComparisonValue: 1
+- ID: 8
+  Type: Location
+  Name: myHoldSons
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A604:Skyrim.esm
+    ComparisonValue: 1
+- ID: 9
+  Name: TravelMarker1
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F5:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 10
+  Name: TravelMarker2
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F5:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 17
+  Name: Actor1
+  Flags:
+  - StoresText
+  CreateReferenceToObject:
+    Object: 0365F6:Dragonborn.esm
+    AliasID: 9
+  PackageData:
+  - 035476:Dragonborn.esm
+  - 0331BF:Dragonborn.esm
+  VoiceTypes: Null
+- ID: 25
+  Name: Actor2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 035475:Dragonborn.esm
+    AliasID: 9
+  PackageData:
+  - 035477:Dragonborn.esm
+  - 0331BF:Dragonborn.esm
+  VoiceTypes: Null
+- ID: 30
+  Name: Actor3
+  Flags: []
+  CreateReferenceToObject:
+    Object: 035475:Dragonborn.esm
+    AliasID: 9
+  PackageData:
+  - 035477:Dragonborn.esm
+  - 0331BF:Dragonborn.esm
+  VoiceTypes: Null
+- ID: 37
+  Name: NoteInitial
+  Flags:
+  - Optional
+  - StoresText
+  - UsesStoredText
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0331C2:Dragonborn.esm
+    AliasID: 9
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetStageConditionData
+      Quest: 017F8E:Dragonborn.esm
+    ComparisonValue: 5
+  VoiceTypes: Null

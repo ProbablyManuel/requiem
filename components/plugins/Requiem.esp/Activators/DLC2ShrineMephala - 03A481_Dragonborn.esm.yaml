@@ -1,0 +1,35 @@
+FormKey: 03A481:Dragonborn.esm
+EditorID: DLC2ShrineMephala
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_TheReclamations
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: blessing
+      Object: AE3B46:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessageNotDunmer
+      Object: AE3B52:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DunmerVampireRace
+      Object: 08883D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DunmerRace
+      Object: 013742:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessageBlessingAdded
+      Object: 03BD00:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingSFX
+      Object: AE3B53:Requiem.esp
+ObjectBounds:
+  First: -49, -29, 0
+  Second: 48, 53, 147
+Name:
+  TargetLanguage: English
+  Value: Shrine of Mephala
+Model:
+  File: DLC02\Clutter\DLC02GodPlinth2.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

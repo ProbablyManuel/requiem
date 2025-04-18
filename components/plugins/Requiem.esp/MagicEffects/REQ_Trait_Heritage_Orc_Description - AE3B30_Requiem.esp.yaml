@@ -1,0 +1,25 @@
+FormKey: AE3B30:Requiem.esp
+EditorID: REQ_Trait_Heritage_Orc_Description
+Name:
+  TargetLanguage: English
+  Value: Pariah Folk
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You cannot be knocked down. Melee weapons deal up to <25>% more damage the stronger the momentum of the attack (0.25% per point of worn armor weight).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

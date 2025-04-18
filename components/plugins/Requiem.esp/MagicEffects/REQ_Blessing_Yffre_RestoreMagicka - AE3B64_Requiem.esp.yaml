@@ -1,0 +1,20 @@
+FormKey: AE3B64:Requiem.esp
+EditorID: REQ_Blessing_Yffre_RestoreMagicka
+Name:
+  TargetLanguage: English
+  Value: Restore Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B66:Requiem.esp
+Flags:
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Magicka
+  Association: AE3B66:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka recovers by <mag> per second.

@@ -1,0 +1,80 @@
+FormKey: 5B7FB2:Requiem.esp
+EditorID: REQ_Illusion_PhantasmalMiasma_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_IllusionBreak
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindEffect
+      Object: 5BA757:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Skill_ScalingPerks
+      Objects:
+      - Name: ''
+        Object: 0F2CA9:Skyrim.esm
+      - Name: ''
+        Object: 0C44C3:Skyrim.esm
+      - Name: ''
+        Object: 0C44C4:Skyrim.esm
+      - Name: ''
+        Object: 0C44C5:Skyrim.esm
+      - Name: ''
+        Object: 0C44C6:Skyrim.esm
+      - Name: ''
+        Object: 059B76:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 5BA755:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPRate
+      Data: 5
+Name:
+  TargetLanguage: English
+  Value: Apply
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Keywords:
+- 0A9B1F:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoHitEvent
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 2
+MagicSkill: Illusion
+TaperWeight: 1
+HitShader: 07D450:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: Concentration
+TargetType: TargetActor
+HitEffectArt: 074795:Skyrim.esm
+ImpactData: 074798:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The target believes to have suffered a grievous wound, reducing health by <mag> for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5BA752:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1

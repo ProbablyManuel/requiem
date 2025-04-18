@@ -1,0 +1,244 @@
+FormKey: 01C23E:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SergiusTurrianus
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrainerGoldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrainerType
+      Data: 2
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - Protected
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 4
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 01F259:Skyrim.esm
+  Rank: 4
+  Fluff: 0x000000
+- Faction: 02816F:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 051599:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A5B:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD7:Skyrim.esm
+Race: 013744:Skyrim.esm
+ActorEffect:
+- 012FCC:Skyrim.esm
+- 012FCD:Skyrim.esm
+- 012FD0:Skyrim.esm
+- 013018:Skyrim.esm
+- 01C789:Skyrim.esm
+- 0211F0:Skyrim.esm
+- 0211F1:Skyrim.esm
+- 02B96B:Skyrim.esm
+- 02B96C:Skyrim.esm
+- 02DD29:Skyrim.esm
+- 02DD2A:Skyrim.esm
+- 034C58:Skyrim.esm
+- 03AE9F:Skyrim.esm
+- 03AEA2:Skyrim.esm
+- 03AEA3:Skyrim.esm
+- 040000:Skyrim.esm
+- 040001:Skyrim.esm
+- 0400AB:Skyrim.esm
+- 072317:Skyrim.esm
+- 072319:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231B:Skyrim.esm
+- 07D98F:Skyrim.esm
+- 07D996:Skyrim.esm
+- 07D997:Skyrim.esm
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+Packages:
+- 05DD75:Skyrim.esm
+- 05DD74:Skyrim.esm
+- 05DD73:Skyrim.esm
+- 036EA4:Skyrim.esm
+- 05DD76:Skyrim.esm
+- 01B217:Skyrim.esm
+Class: 0E3A76:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Sergius Turrianus
+ShortName:
+  TargetLanguage: English
+  Value: Sergius
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 8
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 18
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 12
+  - Key: Illusion
+    Value: 8
+  - Key: Restoration
+    Value: 17
+  - Key: Enchanting
+    Value: 11
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 110
+  Magicka: 110
+  Stamina: 110
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 024259:Skyrim.esm
+- 08555F:Skyrim.esm
+- 099D7D:Skyrim.esm
+- 0C7122:Skyrim.esm
+- 0F5009:Skyrim.esm
+HairColor: 0A0438:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+DefaultOutfit: 0D3E02:Skyrim.esm
+CrimeFaction: 02816F:Skyrim.esm
+HeadTexture: 09F0CD:Skyrim.esm
+TextureLighting: '#00C6B0A8'
+FaceMorph:
+  NoseLongVsShort: -1
+  JawUpVsDown: -0.5
+  JawNarrowVsWide: -1
+  JawForwardVsBack: -0.5
+  CheeksUpVsDown: -1
+  CheeksForwardVsBack: -0.4
+  EyesUpVsDown: 0.5
+  EyesInVsOut: -0.2
+  BrowsUpVsDown: -0.9
+  BrowsInVsOut: 0.1
+  BrowsForwardVsBack: -0.78
+  LipsUpVsDown: 0.38
+  ChinNarrowVsWide: -0.2
+  ChinUpVsDown: -0.6
+  ChinUnderbiteVsOverbite: -0.54
+  EyesForwardVsBack: -0.44
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 20
+  Unknown: 4294967295
+  Eyes: 16
+  Mouth: 13
+TintLayers:
+- Index: 1
+  Color: '#00C6B0A8'
+  InterpolationValue: 1
+  Preset: 61
+- Index: 2
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 71
+- Index: 8
+  Color: '#00A95452'
+  InterpolationValue: 0.19
+  Preset: 106
+- Index: 24
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 478
+- Index: 57
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 481
+- Index: 58
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 486
+MajorFlags:
+- 0x40000

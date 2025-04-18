@@ -1,0 +1,88 @@
+FormKey: 0133C6:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiverwoodSleepingGiantInn
+Version2: 8
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Sleeping Giant Inn
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#002D3030'
+  DirectionalColor: '#00232832'
+  FogNearColor: '#001F342E'
+  FogFar: 4000
+  DirectionalRotationZ: 150
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#001F342E'
+    Scale: 1
+  FogFarColor: '#001F342E'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01CB8C:Skyrim.esm
+Owner: 035D44:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 0622AB:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 246A1F:Requiem.esp
+  Base: 03EAEF:Skyrim.esm
+  Placement:
+    Position: 541.8557, 800.3166, -239.02695
+    Rotation: 0, -0, 5.7831864
+- MutagenObjectType: PlacedObject
+  FormKey: 246A1E:Requiem.esp
+  Base: 03EAEF:Skyrim.esm
+  Placement:
+    Position: 539.94885, 732.08167, -239.02695
+- MutagenObjectType: PlacedObject
+  FormKey: 246A1D:Requiem.esp
+  Base: 03EAF0:Skyrim.esm
+  Placement:
+    Position: 554.70966, 800.2742, -239.02695
+- MutagenObjectType: PlacedObject
+  FormKey: 246A1C:Requiem.esp
+  Base: 039E55:Skyrim.esm
+  Placement:
+    Position: 546.2019, 712.7433, -239.02695
+- MutagenObjectType: PlacedObject
+  FormKey: 246A1B:Requiem.esp
+  Base: 03EAF0:Skyrim.esm
+  Placement:
+    Position: 547.2861, 812.03546, -239.02695
+    Rotation: 0, -0, 5.9831862
+- MutagenObjectType: PlacedObject
+  FormKey: 093F97:Skyrim.esm
+  Base: 09AF19:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01CB8C:Skyrim.esm
+  Placement:
+    Position: -1021.76245, 687.7144, 6.0856342E-05
+    Rotation: 0, -0, 3.1500003
+MajorFlags:
+- 0x40000

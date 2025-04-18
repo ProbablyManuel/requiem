@@ -1,0 +1,65 @@
+FormKey: AD3B40:Requiem.esp
+EditorID: RFTI_DEPRECATED_Player_AlcoholUI
+Name:
+  TargetLanguage: English
+  Value: Alcohol
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: AD3B41:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: AD382D:Requiem.esp
+    ComparisonValue: 25
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: AD382D:Requiem.esp
+    ComparisonValue: 50
+- BaseEffect: AD3B42:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: AD382D:Requiem.esp
+    ComparisonValue: 50
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: AD382D:Requiem.esp
+    ComparisonValue: 75
+- BaseEffect: AD3B43:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: AD382D:Requiem.esp
+    ComparisonValue: 75
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: AD382D:Requiem.esp
+    ComparisonValue: 100
+- BaseEffect: AD3B44:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: AD382D:Requiem.esp
+    ComparisonValue: 100

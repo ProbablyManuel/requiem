@@ -1,0 +1,36 @@
+FormKey: 0705B7:Skyrim.esm
+EditorID: FavorThadgeirAshes
+Version2: 10
+ObjectBounds:
+  First: -6, -6, -4
+  Second: 6, 6, 1
+Name:
+  TargetLanguage: English
+  Value: Berit's Ashes
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Bonemeal01.nif
+  Data: 0x0200000004000000000000008E5603C464647300604DDD5CC38821B064647300604DDD5C5D5CAE3364647300604DDD5CAC00E1FA64647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 5
+Weight: 0.2
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EB25:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 073F23:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10

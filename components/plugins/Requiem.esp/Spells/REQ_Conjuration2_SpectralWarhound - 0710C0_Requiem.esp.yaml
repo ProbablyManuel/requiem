@@ -1,0 +1,23 @@
+FormKey: 0710C0:Requiem.esp
+EditorID: REQ_Conjuration2_SpectralWarhound
+Name:
+  TargetLanguage: English
+  Value: Summon Spectral Warhound
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 200
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.4
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 24
+HalfCostPerk: 0C44BB:Skyrim.esm
+Effects:
+- BaseEffect: 0710BF:Requiem.esp
+  Data:
+    Duration: 10

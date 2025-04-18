@@ -1,0 +1,22 @@
+FormKey: 0153D2:Skyrim.esm
+EditorID: REQ_Destruction_Impact
+Name:
+  TargetLanguage: English
+  Value: Impact
+Description:
+  TargetLanguage: English
+  Value: By intensifying the force of most of your overcharged Destruction spells,<br>you're now capable of staggering your foes.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Destruction
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0153CF:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True

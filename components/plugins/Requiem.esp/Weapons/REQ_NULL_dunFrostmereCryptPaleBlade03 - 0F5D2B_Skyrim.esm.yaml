@@ -1,0 +1,54 @@
+FormKey: 0F5D2B:Skyrim.esm
+EditorID: REQ_NULL_dunFrostmereCryptPaleBlade03
+ObjectBounds:
+  First: -9, -11, -1
+  Second: 11, 68, 1
+Name:
+  TargetLanguage: English
+  Value: The Pale Blade
+Model:
+  File: Weapons\Draugr\DraugrSword.nif
+  Data: 0x0200000008000000000000004FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305DA8E929164647300262C333BBF5425E964647300F0AE14457BC3729864647300F0AE1445F63890AC64647300262C333BC1927B0164647300F0AE1445
+ObjectEffect: 0F5D27:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 0C5C01:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Target takes <15> points of frost damage and <30> points of Stamina damage. Weaker creatures and people flee for <30> seconds.
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 02C66E:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 25
+  Weight: 12
+  Damage: 8
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 4
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

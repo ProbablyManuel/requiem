@@ -1,0 +1,20 @@
+FormKey: 07217D:Requiem.esp
+EditorID: REQ_Ench_Staff_Paralyze
+Name:
+  TargetLanguage: English
+  Value: Paralysis
+EnchantmentCost: 450
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 450
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 07217A:Requiem.esp
+  Data:
+    Duration: 2
+- BaseEffect: 0A44C0:Skyrim.esm
+  Data:
+    Magnitude: 100

@@ -1,0 +1,27 @@
+FormKey: 0722BB:Skyrim.esm
+EditorID: REQ_Food_Meat_Cooked_MammothSnout
+ObjectBounds:
+  First: -6, -10, -7
+  Second: 6, 10, 7
+Name:
+  TargetLanguage: English
+  Value: Cooked Mammoth Snout
+Keywords:
+- 08CDEA:Skyrim.esm
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\MammothMeatCooked.nif
+  Data: 0x0200000002000000000000006399A64164647300604DDD5CE82BD47D64647300604DDD5C
+Weight: 1
+Value: 24
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 20
+    Duration: 1800
+- BaseEffect: 002EE4:Update.esm
+  Data: {}

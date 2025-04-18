@@ -1,0 +1,43 @@
+FormKey: 031856:Dragonborn.esm
+EditorID: REQ_NULL_dlc2DBConjureAncientsCastBodyEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dlc2DBConjureAncientsSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ancientExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ancientGuy
+      Object: 0265AA:Dragonborn.esm
+  - Name: dlc2DBDragonsBreathEffectSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonArmsFX
+      Object: 021735:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonArms
+      Object: 02172F:Dragonborn.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bSPAWNDRAGONS
+    - MutagenObjectType: ScriptObjectProperty
+      Name: specDragon
+      Object: 0265B1:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: ConjureAncientsBodyArtHolder
+Flags:
+- NoDuration
+- FXPersist
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

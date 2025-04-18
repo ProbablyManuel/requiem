@@ -1,0 +1,42 @@
+FormKey: 5372F3:Requiem.esp
+EditorID: REQ_Illusion_ShadowSimulacrum_FortifyHealthAndIllusion
+Name:
+  TargetLanguage: English
+  Value: Fortify Health and Illusion
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Recover
+- HideInUI
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 025458:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: Illusion
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: passive health and damage boni for summoned Simulacrum
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 26DC98:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5372F3:Requiem.esp

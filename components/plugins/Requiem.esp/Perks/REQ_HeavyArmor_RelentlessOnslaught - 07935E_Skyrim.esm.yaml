@@ -1,0 +1,54 @@
+FormKey: 07935E:Skyrim.esm
+EditorID: REQ_HeavyArmor_RelentlessOnslaught
+Name:
+  TargetLanguage: English
+  Value: Relentless Onslaught
+Description:
+  TargetLanguage: English
+  Value: After extensive training you now can sprint in heavy armor without problems.<br>[no sprinting stamina cost penalty, take 80% less melee damage when bullrushing, -10% armor weight penalty]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: HeavyArmor
+  ComparisonValue: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BCD2A:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: ADDDF1:Requiem.esp
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: WornApparelHasKeywordCountConditionData
+        Keyword: 06BBD2:Skyrim.esm
+      ComparisonValue: 4
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsSprintingConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsAttackingConditionData
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetEquippedItemTypeConditionData
+        ItemSource: Right
+      ComparisonValue: 6
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.2

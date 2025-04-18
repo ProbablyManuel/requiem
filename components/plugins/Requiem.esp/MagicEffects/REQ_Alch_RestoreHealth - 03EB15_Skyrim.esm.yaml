@@ -1,0 +1,36 @@
+FormKey: 03EB15:Skyrim.esm
+EditorID: REQ_Alch_RestoreHealth
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+Keywords:
+- 042503:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+- 66CB38:Requiem.esp
+Flags:
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 012FD9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+  Association: 66CB38:Requiem.esp
+CastType: FireAndForget
+HitEffectArt: 03F1B4:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Type: OnHit
+  Sound: 0CD671:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Health recovers by <mag> per second for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

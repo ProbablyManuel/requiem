@@ -1,0 +1,44 @@
+FormKey: 10A273:Skyrim.esm
+EditorID: TrapExplGasEnchFireDamageFFContact06
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- HideInUI
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.2
+MagicSkill: Destruction
+ResistValue: ResistFire
+TaperWeight: 0.2
+HitShader: 01B212:Skyrim.esm
+EnchantShader: 04E810:Skyrim.esm
+MinimumSkillLevel: 25
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Burns the target for <mag> fire damage. Targets on fire take extra damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 22

@@ -1,0 +1,48 @@
+FormKey: 03AD61:Skyrim.esm
+EditorID: BriarHeart
+Version2: 3
+VirtualMachineAdapter:
+  Scripts:
+  - Name: briarheartIngredientScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ArmorBriarHeart
+      Object: 05D008:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunReanimateSelf
+      Object: 0E1529:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ArmorBriarHeartEmpty
+      Object: 05D009:Skyrim.esm
+ObjectBounds:
+  First: -2, -2, 0
+  Second: 2, 2, 7
+Name:
+  TargetLanguage: English
+  Value: Briar Heart
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\BriarHeart.nif
+  Data: 0x020000000200000000000000EE5B060964647300F46962B8DC526DAB64647300F46962B8
+Value: 100
+Weight: 0.5
+IngredientValue: 100
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EB1C:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 120
+- BaseEffect: 073F30:Skyrim.esm
+  Data:
+    Duration: 1
+- BaseEffect: 03EAF8:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 120

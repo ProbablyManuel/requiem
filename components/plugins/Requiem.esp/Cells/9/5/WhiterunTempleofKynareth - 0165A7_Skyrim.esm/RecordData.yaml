@@ -1,0 +1,127 @@
+FormKey: 0165A7:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunTempleofKynareth
+Version2: 10
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Temple of Kynareth
+Flags:
+- IsInteriorCell
+- HasWater
+- NoLodWater
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#00554B3E'
+  DirectionalColor: '#00535C66'
+  FogNearColor: '#00000000'
+  FogFar: 2700
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#005D4B40'
+    DirectionalXMinus: '#004C4B3B'
+    DirectionalYPlus: '#00554E3E'
+    DirectionalYMinus: '#0055473E'
+    DirectionalZPlus: '#00473F32'
+    DirectionalZMinus: '#0081725F'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - FogColor
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: 0
+Location: 01F87D:Skyrim.esm
+Water: 074EEA:Skyrim.esm
+Owner: 0ECC44:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\WRTemple_e.dds
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 10F90D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0D485E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 275AB8:Requiem.esp
+  Base: 273318:Requiem.esp
+  Placement:
+    Position: 75.32124, -87.03847, 64.24428
+    Rotation: 0.0027106768, -0.002097137, 2.4638145
+- MutagenObjectType: PlacedObject
+  FormKey: 275AB7:Requiem.esp
+  Base: 273318:Requiem.esp
+  Placement:
+    Position: 120.345146, -106.99386, 68.54828
+    Rotation: 1.5707691, -0.17085128, 4.0099316
+- MutagenObjectType: PlacedObject
+  FormKey: 0D486D:Skyrim.esm
+  Version2: 1
+  Base: 03EAF4:Skyrim.esm
+  LocationReference: 01F87D:Skyrim.esm
+  Placement:
+    Position: 110.80038, -101.93314, 64.34584
+    Rotation: -0.0032896278, -0.0049410397, 0.029122824
+- MutagenObjectType: PlacedObject
+  FormKey: 0D4869:Skyrim.esm
+  Version2: 1
+  Base: 098623:Skyrim.esm
+  LocationReference: 01F87D:Skyrim.esm
+  Placement:
+    Position: -123.66093, 150.9686, 116.39245
+    Rotation: 0.016287852, -0.0061580855, 3.7171896
+- MutagenObjectType: PlacedObject
+  FormKey: 275ABB:Requiem.esp
+  Base: 273318:Requiem.esp
+  Placement:
+    Position: 114.15326, -89.47867, 64.26433
+    Rotation: 0.0141854985, -0.0060893544, 4.1649942
+- MutagenObjectType: PlacedObject
+  FormKey: 275AB6:Requiem.esp
+  Base: 273318:Requiem.esp
+  Placement:
+    Position: 109.68466, -77.70133, 69.378784
+    Rotation: -1.9244189, -1.3173487, 3.4222052
+- MutagenObjectType: PlacedObject
+  FormKey: 275ABA:Requiem.esp
+  Base: 273318:Requiem.esp
+  Placement:
+    Position: 75.770645, -78.19198, 64.24147
+    Rotation: 0.0008132857, -0.005225003, 3.9239285
+- MutagenObjectType: PlacedObject
+  FormKey: 0D4871:Skyrim.esm
+  Version2: 1
+  Base: 045C28:Skyrim.esm
+  Scale: 0.62
+  LocationReference: 01F87D:Skyrim.esm
+  Placement:
+    Position: 94.26251, -87.14422, 117.86976
+    Rotation: 0.33430034, -0.0011663979, 0.14658085
+- MutagenObjectType: PlacedObject
+  FormKey: 0D486E:Skyrim.esm
+  Version2: 1
+  Base: 03EAF5:Skyrim.esm
+  LocationReference: 01F87D:Skyrim.esm
+  Placement:
+    Position: 74.79744, -100.67712, 64.36038
+    Rotation: -0.0062850807, 0.00011367324, 0.016729435
+- MutagenObjectType: PlacedObject
+  FormKey: 0D486C:Skyrim.esm
+  Version2: 1
+  Base: 098624:Skyrim.esm
+  LocationReference: 01F87D:Skyrim.esm
+  Placement:
+    Position: 94.39789, -90.11853, 110.99994
+    Rotation: 0.0037092806, -0.006070002, 6.222254
+- MutagenObjectType: PlacedObject
+  FormKey: 0D4868:Skyrim.esm
+  Base: 098624:Skyrim.esm
+  LocationReference: 01F87D:Skyrim.esm
+  Placement:
+    Position: -124.0362, 148.66064, 110.85107
+    Rotation: 0.00027240138, 0.0006371905, 0.026408942
+MajorFlags:
+- 0x40000

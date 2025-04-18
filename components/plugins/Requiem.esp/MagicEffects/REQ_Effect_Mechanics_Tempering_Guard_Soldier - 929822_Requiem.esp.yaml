@@ -1,0 +1,40 @@
+FormKey: 929822:Requiem.esp
+EditorID: REQ_Effect_Mechanics_Tempering_Guard_Soldier
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_TemperedEquipment
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Version_Active
+      Object: 2F38A0:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Keywords
+      Objects:
+      - Name: ''
+        Object: 06BBD2:Skyrim.esm
+      - Name: ''
+        Object: 06BBD3:Skyrim.esm
+    - MutagenObjectType: ScriptStringListProperty
+      Name: quality
+      Data:
+      - tier1_N_rise
+      - tier1_N_rise
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Version_Installed
+      Object: 2F389F:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: datastorage
+      Object: AD3B26:Requiem.esp
+      Alias: 14
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Tempering - Guard Soldier'
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: tempering data for normal hold guards

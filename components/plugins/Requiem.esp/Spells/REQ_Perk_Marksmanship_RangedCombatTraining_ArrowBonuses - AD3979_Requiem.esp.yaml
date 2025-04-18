@@ -1,0 +1,74 @@
+FormKey: AD3979:Requiem.esp
+EditorID: REQ_Perk_Marksmanship_RangedCombatTraining_ArrowBonuses
+Name:
+  TargetLanguage: English
+  Value: 'Ranged Combat Training: Armor-Piercing Arrows'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000862:Requiem.esp
+  Data:
+    Magnitude: 6
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 0FD2AF:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000862:Requiem.esp
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 0FD2B2:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000862:Requiem.esp
+  Data:
+    Magnitude: 14
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 0FD2B1:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000862:Requiem.esp
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 0FD2B0:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000862:Requiem.esp
+  Data:
+    Magnitude: 24
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 0FD2AE:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000862:Requiem.esp
+  Data:
+    Magnitude: 28
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: AD3A38:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000862:Requiem.esp
+  Data:
+    Magnitude: 30
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: AD3982:Requiem.esp
+    ComparisonValue: 1

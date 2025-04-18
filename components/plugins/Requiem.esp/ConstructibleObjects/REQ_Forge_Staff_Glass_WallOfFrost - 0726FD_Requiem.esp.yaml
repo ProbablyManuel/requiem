@@ -1,0 +1,24 @@
+FormKey: 0726FD:Requiem.esp
+EditorID: REQ_Forge_Staff_Glass_WallOfFrost
+Items:
+- Item:
+    Item: 02E4FF:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 06B479:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F7E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Enchanting
+  ComparisonValue: 50
+CreatedObject: 072169:Requiem.esp
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,37 @@
+FormKey: AE387C:Requiem.esp
+EditorID: REQ_Ench_MiraaksRobes_Tentacles
+VirtualMachineAdapter:
+  Scripts:
+  - Name: voicepusheffectscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 7
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- Hostile
+- Detrimental
+- PowerAffectsMagnitude
+- NoDeathDispel
+HitShader: 06DE84:Skyrim.esm
+SpellmakingArea: 12
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Explosion: 039D1B:Dragonborn.esm
+CastType: FireAndForget
+HitEffectArt: 06DE86:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Tentacles reach out to those who dare to hit Hermaeus Mora's champion, dealing <mag> irresistible damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+    TargetNpc: 000014:Skyrim.esm
+  ComparisonValue: 1

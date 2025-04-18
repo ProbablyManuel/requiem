@@ -1,0 +1,26 @@
+FormKey: AE3719:Requiem.esp
+EditorID: REQ_Food_FortifyCarryWeight
+Name:
+  TargetLanguage: English
+  Value: Fortify Carry Weight
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 68F5C2:Requiem.esp
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: CarryWeight
+  Association: 68F5C2:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Carry weight increases by <mag> for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

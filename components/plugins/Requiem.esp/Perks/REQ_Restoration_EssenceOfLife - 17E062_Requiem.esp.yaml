@@ -1,0 +1,28 @@
+FormKey: 17E062:Requiem.esp
+EditorID: REQ_Restoration_EssenceOfLife
+Name:
+  TargetLanguage: English
+  Value: Essence of Life
+Description:
+  TargetLanguage: English
+  Value: Your understanding of healing and how magic and life are intertwined <br>allows you to call upon your newfound power more often.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0A3F64:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Restoration
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: 17E061:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 17E064:Requiem.esp

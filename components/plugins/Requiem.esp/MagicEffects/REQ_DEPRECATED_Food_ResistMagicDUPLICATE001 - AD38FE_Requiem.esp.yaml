@@ -1,0 +1,35 @@
+FormKey: AD38FE:Requiem.esp
+EditorID: REQ_DEPRECATED_Food_ResistMagicDUPLICATE001
+Name:
+  TargetLanguage: English
+  Value: Resist Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD38F2:Requiem.esp
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistMagic
+  Association: AD38F2:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magic deals <mag>% less damage to you for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInCombatConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: AD382D:Requiem.esp
+  ComparisonValue: 25

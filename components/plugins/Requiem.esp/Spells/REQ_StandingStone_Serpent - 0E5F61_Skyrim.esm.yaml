@@ -1,0 +1,24 @@
+FormKey: 0E5F61:Skyrim.esm
+EditorID: REQ_StandingStone_Serpent
+Name:
+  TargetLanguage: English
+  Value: Stone of the Serpent
+MenuDisplayObject: 10A046:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The Bite of the Serpent will paralyze and poison a target for a moderate duration.
+Flags:
+- ManualCostCalc
+Type: Power
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 0E5F5B:Skyrim.esm
+  Data:
+    Duration: 5
+- BaseEffect: 025F28:Requiem.esp
+  Data:
+    Magnitude: 25
+    Duration: 30

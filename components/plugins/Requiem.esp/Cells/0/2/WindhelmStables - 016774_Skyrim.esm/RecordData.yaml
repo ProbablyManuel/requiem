@@ -1,0 +1,74 @@
+FormKey: 016774:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WindhelmStables
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Windhelm Stables
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0C3D39:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0209F5:Skyrim.esm
+Owner: 047CB3:Skyrim.esm
+LockList: 09C871:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 08690F:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0832B9:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 230.62732, -121.11611, 142.24725
+    Rotation: 0.002020021, 0.0021726256, 3.08992
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA72A:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 0209F5:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C731D:Skyrim.esm
+  Placement:
+    Position: -228.95828, 76.46484, 96.97301
+    Rotation: 0, -0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 0832BB:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 238.72722, -104.35797, 142.93304
+    Rotation: 0, -0, 4.6000004
+MajorFlags:
+- 0x40000

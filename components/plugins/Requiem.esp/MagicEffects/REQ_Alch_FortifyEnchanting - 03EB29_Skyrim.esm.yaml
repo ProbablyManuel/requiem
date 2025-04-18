@@ -1,0 +1,25 @@
+FormKey: 03EB29:Skyrim.esm
+EditorID: REQ_Alch_FortifyEnchanting
+Name:
+  TargetLanguage: English
+  Value: Fortify Enchanting
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A2E:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: EnchantingPowerModifier
+  Association: 065A2E:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Enchanting items is <mag>% more effective for <dur> seconds.

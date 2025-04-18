@@ -1,0 +1,33 @@
+FormKey: 04605A:Skyrim.esm
+EditorID: EnchFireDamageFFContact
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 14
+ResistValue: ResistFire
+TaperWeight: 0.2
+HitShader: 01B212:Skyrim.esm
+EnchantShader: 04E810:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> fire damage.

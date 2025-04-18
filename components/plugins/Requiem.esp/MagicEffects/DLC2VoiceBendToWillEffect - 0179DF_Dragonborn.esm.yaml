@@ -1,0 +1,35 @@
+FormKey: 0179DF:Dragonborn.esm
+EditorID: DLC2VoiceBendToWillEffect
+Name:
+  TargetLanguage: English
+  Value: Bend To Will Effect - Stagger
+Flags:
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+TaperWeight: 1
+HitShader: 01FD01:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+Projectile: 01F139:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+HitEffectArt: 055C0A:Skyrim.esm
+ImpactData: 015C7B:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 039E44:Dragonborn.esm
+CastingSoundLevel: VeryLoud
+ScriptEffectAIScore: 9999
+Sounds:
+- Type: Release
+  Sound: 07EA37:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+  ComparisonValue: 1

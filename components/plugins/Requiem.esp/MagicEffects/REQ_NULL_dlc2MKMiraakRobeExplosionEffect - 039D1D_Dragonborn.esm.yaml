@@ -1,0 +1,59 @@
+FormKey: 039D1D:Dragonborn.esm
+EditorID: REQ_NULL_dlc2MKMiraakRobeExplosionEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: voicepusheffectscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 7
+Name:
+  TargetLanguage: English
+  Value: Tentacle Damage
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+TaperWeight: 0.2
+HitShader: 0ABF07:Skyrim.esm
+EnchantShader: 0ABF07:Skyrim.esm
+MinimumSkillLevel: 25
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+    TargetNpc: 000014:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 05A1A4:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 000DB1:Skyrim.esm
+  ComparisonValue: 1

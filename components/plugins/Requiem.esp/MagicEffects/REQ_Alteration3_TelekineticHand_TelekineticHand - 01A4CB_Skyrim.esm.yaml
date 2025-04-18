@@ -1,0 +1,35 @@
+FormKey: 01A4CB:Skyrim.esm
+EditorID: REQ_Alteration3_TelekineticHand_TelekineticHand
+Name:
+  TargetLanguage: English
+  Value: Telekinetic Hand
+MenuDisplayObject: 1097CB:Skyrim.esm
+Keywords:
+- 07F404:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 170
+MagicSkill: Alteration
+CastingLight: 02016B:Skyrim.esm
+MinimumSkillLevel: 50
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Telekinesis
+CastType: Concentration
+CastingArt: 02016C:Skyrim.esm
+SkillUsageMultiplier: 0.25
+DualCastScale: 1
+EquipAbility: 01A4CA:Skyrim.esm
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Release
+  Sound: 07D014:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 07D013:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Can pull an object to you from a distance, add it to your inventory, or throw it.

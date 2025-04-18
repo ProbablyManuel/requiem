@@ -1,0 +1,38 @@
+FormKey: 07E8B7:Skyrim.esm
+EditorID: SwampFungalPod01
+Version2: 2
+ObjectBounds:
+  First: -9, -9, -4
+  Second: 8, 8, 10
+Name:
+  TargetLanguage: English
+  Value: Swamp Fungal Pod
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\SwampFungalPod01.nif
+  Data: 0x020000000200000000000000ECC7EDFC64647300134C1EFADA1AE26064647300134C1EFA
+PickUpSound: 0BAD13:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 5
+Weight: 0.25
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EAEC:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 10DE5F:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 1
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20

@@ -1,0 +1,20 @@
+FormKey: 017120:Skyrim.esm
+EditorID: REQ_DEPRECATED_Ability_FortifyArmorRating
+Name:
+  TargetLanguage: English
+  Value: Fortify Armor Rating
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 14
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: DamageResist
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor rating increases by <mag>.

@@ -1,0 +1,86 @@
+FormKey: 016352:Dawnguard.esm
+EditorID: DLC1SoulCairnHuskMerchant
+Version2: 10
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1_QF_DLC1SoulCairnHuskMerc_01016352
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: soulHusk
+      Object: 014DC4:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MorvenAlias
+      Object: 016352:Dawnguard.esm
+      Alias: 40
+  - Name: DLC1SCHMQuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pLItemEnchArmorLightAllSpecial
+      Object: 0FDA18:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pLItemEnchArmorHeavyAllSpecial
+      Object: 0FDA19:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pLItemEnchWeaponBattleAxeSpecial
+      Object: 0F8A4B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pLItemEnchWeaponBowSpecial
+      Object: 00E903:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pLItemSpellTomesSpecial
+      Object: 10FCF0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pLItemEnchWeaponSwordSpecial
+      Object: 04B586:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDLC1FoodSoulHusk
+      Object: 014DC4:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDLC1SCMerch
+      Object: 01A33F:Dawnguard.esm
+  FileName: DLC1_QF_DLC1SoulCairnHuskMerc_01016352
+  Fragments:
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1SoulCairnHuskMerc_01016352
+    FragmentName: Fragment_0
+Name:
+  TargetLanguage: English
+  Value: Soul Cairn Husk Merchant
+Flags:
+- StartGameEnabled
+- 0x4
+- 0x10
+Priority: 50
+QuestFormVersion: 65
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetCurrentTimeConditionData
+  ComparisonValue: 22
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetCurrentTimeConditionData
+  ComparisonValue: 5.5
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+NextAliasID: 49
+Aliases:
+- ID: 40
+  Name: MorvenAlias
+  Flags: []
+  UniqueActor: 0071F1:Dawnguard.esm
+  VoiceTypes: Null

@@ -1,0 +1,46 @@
+FormKey: 000804:ccbgssse058-ba_steel.esl
+MajorRecordFlagsRaw: 64
+EditorID: REQ_NULL_ccBGSSSE058_ArmorBladesShield
+SkyrimMajorRecordFlags:
+- 0x40
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 300
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000823:ccbgssse058-ba_steel.esl
+Name:
+  TargetLanguage: English
+  Value: Blades Steel Shield
+WorldModel:
+  Male:
+    Model:
+      File: Weapons\Blades\BladesShield.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Shield
+  ArmorType: HeavyArmor
+  ActsLike44: True
+EquipmentType: 0141E8:Skyrim.esm
+BashImpactDataSet: 0183FE:Skyrim.esm
+AlternateBlockMaterial: 016979:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE6:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0965B2:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 000812:ccbgssse058-ba_steel.esl
+Value: 150
+Weight: 12
+ArmorRating: 26
+MajorFlags:
+- Shield

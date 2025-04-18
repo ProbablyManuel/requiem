@@ -1,0 +1,61 @@
+FormKey: 0373D5:Dragonborn.esm
+EditorID: REQ_Ench_Hoarfrost_IceForm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magiceffectshadersonendscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX01
+      Object: 0EA519:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX02
+      Object: 0EA51A:Skyrim.esm
+  - Name: VoiceIceFormScript
+Name:
+  TargetLanguage: English
+  Value: Ice Form
+MenuDisplayObject: 09DB72:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 25
+HitShader: 0DC20E:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 049B64:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 0DEDCB:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 10% chance to freeze the target solid for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 10
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistFrost
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData

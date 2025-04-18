@@ -1,0 +1,67 @@
+FormKey: 036ED6:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunGuardHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Guard Barracks
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000F0D0C'
+    DirectionalXMinus: '#000C0D0B'
+    DirectionalYPlus: '#000E0D0C'
+    DirectionalYMinus: '#000E0C0C'
+    DirectionalZPlus: '#00060605'
+    DirectionalZMinus: '#00151312'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 08B5EC:Skyrim.esm
+Owner: 02BE39:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 00081E:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 00081A:ccbgssse054-ba_orcish.esl
+  Owner: 000007:Skyrim.esm
+  LocationReference: 08B5EC:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -97.420715, 58.033417, 125.963234
+    Rotation: 0, 0, 5.4831877
+MajorFlags:
+- 0x40000

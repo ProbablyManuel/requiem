@@ -1,0 +1,35 @@
+FormKey: 10F9DB:Skyrim.esm
+EditorID: REQ_Ability_ArchMage_FortifyBarterInCollege
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 01F259:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModBuyPrices
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.9
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 01F259:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSellPrices
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.1

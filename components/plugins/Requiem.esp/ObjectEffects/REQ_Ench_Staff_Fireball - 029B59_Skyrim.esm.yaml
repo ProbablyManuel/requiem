@@ -1,0 +1,24 @@
+FormKey: 029B59:Skyrim.esm
+EditorID: REQ_Ench_Staff_Fireball
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: Fireball
+EnchantmentCost: 285
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 200
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 01CEA1:Skyrim.esm
+  Data:
+    Magnitude: 80
+    Area: 15
+- BaseEffect: 36307E:Requiem.esp
+  Data:
+    Magnitude: 3
+    Area: 15
+    Duration: 5

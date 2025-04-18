@@ -1,0 +1,298 @@
+FormKey: 0AEBFE:Skyrim.esm
+EditorID: C03Rampage
+VirtualMachineAdapter:
+  Scripts:
+  - Name: C03RampageQuest
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpecialFeeding
+      Object: 0D23B7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Njada
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BeastForm
+      Object: 092C48:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Kodlak
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Immunity
+      Object: 0F5BA0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurrentHowlWord1
+      Object: 0CF78E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurrentHowl
+      Object: 0CF790:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PostRampageScene
+      Object: 0AEC02:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Farkas
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NordRace
+      Object: 013746:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HoldBlack
+      Object: 0F756E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurrentHowlWord3
+      Object: 0CF795:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BleedOutIdle
+      Object: 09BB6F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerVampireQuest
+      Object: 0EAFD5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LycanStash
+      Object: 02BA18:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WerewolfRace
+      Object: 0CDD84:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FadeSeconds
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CrimeFactions
+      Object: 026953:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlack
+      Object: 0F756D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurrentHowlWord2
+      Object: 0CF794:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AelaOutfit
+      Object: ADDDE9:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WerewolfFaction
+      Object: 043594:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RampageStartMarker
+      Object: 0AEBFD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerWerewolfFaction
+      Object: 091822:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatMusic
+      Object: 03418E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Athis
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Vilkas
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Torvar
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerWerewolfCureQuest
+      Object: 0F6090:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ria
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Aela
+      Object: 01CEF4:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeFromBlack
+      Object: 0F756F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireKeyword
+      Object: 0A82BB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WerewolfChange
+      Object: 048428:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RampageMinutesGameTime
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DiseaseSanguinareVampiris
+      Object: 0B8780:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AelaLycanStash
+      Object: 0A6F8C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WerewolfCureDisease
+      Object: 0F5BA1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FeedBloodVFX
+      Object: 0F3A8B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FeedBoost
+      Object: 0EC357:Skyrim.esm
+  - Name: QF_C03Rampage_000AEBFE
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlockVamp
+      Object: 00E8D9:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UnderforgeDoor
+      Object: 01A701:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Njada
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RampageEndTrigger
+      Object: 0AEC04:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Farkas
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ria
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Aela
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vilkas
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Athis
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunMainDoor
+      Object: 01B1F3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Torvar
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Kodlak
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 1
+  FileName: QF_C03Rampage_000AEBFE
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_C03Rampage_000AEBFE
+    FragmentName: Fragment_4
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_C03Rampage_000AEBFE
+    FragmentName: Fragment_5
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0AEBFE:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: C03RampagePlayerScript
+Priority: 71
+QuestFormVersion: 65
+Filter: Faction\Companions\Story\
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 100
+  LogEntries:
+  - Flags: []
+NextAliasID: 10
+Aliases:
+- Name: Player
+  Flags:
+  - Essential
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null
+- ID: 1
+  Name: Kodlak
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowReserved
+  UniqueActor: 01A68E:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 2
+  Name: Farkas
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowReserved
+  UniqueActor: 01A692:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 3
+  Name: Vilkas
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowReserved
+  UniqueActor: 01A694:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 4
+  Name: Athis
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowReserved
+  UniqueActor: 01A6D5:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 5
+  Name: Njada
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowReserved
+  UniqueActor: 01A6D9:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 6
+  Name: Ria
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowReserved
+  UniqueActor: 01A6D7:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 7
+  Name: Torvar
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowReserved
+  UniqueActor: 01A6DB:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: Aela
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowReserved
+  UniqueActor: 01A696:Skyrim.esm
+  PackageData:
+  - 025BFC:Skyrim.esm
+  VoiceTypes: Null

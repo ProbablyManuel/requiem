@@ -1,0 +1,18 @@
+FormKey: AE37ED:Requiem.esp
+EditorID: REQ_Ench_EbonyMail_ResistMagic
+Name:
+  TargetLanguage: English
+  Value: Resist Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistMagic
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magic deals <mag>% less damage to you (10% plus another 0.25% per murder).

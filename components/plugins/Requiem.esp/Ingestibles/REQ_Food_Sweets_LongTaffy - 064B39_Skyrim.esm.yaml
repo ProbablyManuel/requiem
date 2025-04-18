@@ -1,0 +1,26 @@
+FormKey: 064B39:Skyrim.esm
+EditorID: REQ_Food_Sweets_LongTaffy
+ObjectBounds:
+  First: -9, -10, 0
+  Second: 9, 15, 0
+Name:
+  TargetLanguage: English
+  Value: Long Taffy Treat
+Keywords:
+- 08CDEA:Skyrim.esm
+- 0A248C:Skyrim.esm
+Model:
+  File: Clutter\Food\LongTaffy01.nif
+  Data: 0x020000000300000000000000531701A764647300B914823695216C8564647300B9148236B93AED84646473007F66A5C0
+Weight: 0.1
+Value: 4
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3720:Requiem.esp
+  Data:
+    Magnitude: 50
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

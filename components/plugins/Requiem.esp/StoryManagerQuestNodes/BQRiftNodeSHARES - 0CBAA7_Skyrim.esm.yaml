@@ -1,0 +1,33 @@
+FormKey: 0CBAA7:Skyrim.esm
+EditorID: BQRiftNodeSHARES
+Version2: 2
+Parent: 0CBA9F:Skyrim.esm
+PreviousSibling: 0CBAA2:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Function: HasKeyword
+    Member: NewLocation
+    Record: 039793:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 01676C:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetKeywordDataForLocationConditionData
+    Location: 01676C:Skyrim.esm
+    Keyword: 0CBA99:Skyrim.esm
+Flags:
+- Random
+QuestFlags:
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 095125:Skyrim.esm
+- Quest: 0BD77F:Skyrim.esm
+- Quest: 0BD78C:Skyrim.esm
+- Quest: 0CBA9A:Skyrim.esm

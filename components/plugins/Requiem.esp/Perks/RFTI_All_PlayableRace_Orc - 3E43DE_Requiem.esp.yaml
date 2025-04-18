@@ -1,0 +1,134 @@
+FormKey: 3E43DE:Requiem.esp
+EditorID: RFTI_All_PlayableRace_Orc
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 013747:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0A82B9:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: OneHanded
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  ActorValue: AlterationSkillAdvance
+  Value: 0.0025
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 013747:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0A82B9:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: HeavyArmor
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Smithing
+      ComparisonValue: 1
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 013747:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0A82B9:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Block
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: LightArmor
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: OneHanded
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.05

@@ -1,0 +1,59 @@
+FormKey: 0154AC:Dawnguard.esm
+EditorID: DLC1CrystalAbsorbHealthConcAimedVisualFX
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1CrystalDrainHealthCheckScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HuskEffect
+      Object: 014DC5:Dawnguard.esm
+  - Name: DLC1CrystalDrainScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoundLoop
+      Object: 056AC4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 01159C:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: crystalLight
+      Object: 01542A:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeIMOD
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 00818D:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 01159C:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Crystal Drain Visual
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 2FFEAD:Requiem.esp
+Flags:
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+CastingLight: 07479A:Skyrim.esm
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 0ABF03:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 0ABF0F:Skyrim.esm
+ImpactData: 0ABF0B:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Type: ConcentrationCastLoop
+  Sound: 056AC3:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: 'Absorbs <mag> health per second from the target. '

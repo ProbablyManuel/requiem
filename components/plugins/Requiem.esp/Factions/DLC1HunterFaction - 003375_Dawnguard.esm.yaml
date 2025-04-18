@@ -1,0 +1,19 @@
+FormKey: 003375:Dawnguard.esm
+EditorID: DLC1HunterFaction
+Version2: 4
+Relations:
+- Target: 027242:Skyrim.esm
+  Reaction: Enemy
+- Target: 0C4DE0:Skyrim.esm
+  Reaction: Enemy
+- Target: 003375:Dawnguard.esm
+  Reaction: Ally
+- Target: 003376:Dawnguard.esm
+  Reaction: Enemy
+Flags:
+- HiddenFromPC
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

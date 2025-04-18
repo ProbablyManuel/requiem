@@ -1,0 +1,51 @@
+FormKey: 008A5D:Dawnguard.esm
+EditorID: REQ_Restoration_SunfireCloak_SunDamage
+Name:
+  TargetLanguage: English
+  Value: Sun Damage
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 3FCA4C:Requiem.esp
+- 412EDF:Requiem.esp
+- ADDDF6:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1
+MagicSkill: Restoration
+HitShader: 00A3BB:Dawnguard.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FCF:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+ImpactData: 026113:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1

@@ -1,0 +1,27 @@
+FormKey: 00F832:Dawnguard.esm
+EditorID: DLC1WerewolfPerkTree
+Version2: 8
+Description:
+  TargetLanguage: English
+  Value: Werewolves have been roaming Skyrim for centuries, but their number seems to have been growing over the last years... drastically.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 04B2D9:Skyrim.esm
+    SecondUnusedIntParameter: -285087712
+    VariableName: ::PlayerHasBeastBlood_var
+  ComparisonValue: 1
+LoadingScreenNif: 10A17C:Skyrim.esm
+InitialScale: 1.1
+InitialRotation: 0, 0, 135
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -110
+CameraPath: Cameras\LSCameraPanLFTZoomINBig.nif

@@ -1,0 +1,37 @@
+FormKey: AD8C84:Requiem.esp
+EditorID: REQ_ArmorBonus_Light_Stalhrim_Effect
+Name:
+  TargetLanguage: English
+  Value: Resist Frost
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistFrost
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stalhrim gives off a distinct chill that far surpasses mundane ice. Thus, frost deals <mag>% less damage to you (6% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 05C84E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    Keyword: 024107:Dragonborn.esm
+  ComparisonValue: 1

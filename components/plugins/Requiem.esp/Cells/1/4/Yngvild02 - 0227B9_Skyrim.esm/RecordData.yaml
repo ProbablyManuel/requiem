@@ -1,0 +1,68 @@
+FormKey: 0227B9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Yngvild02
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Yngvild Throne Room
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00282828'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0195D3:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192CA:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5852:Skyrim.esm
+EncounterZone: 03EC90:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 089D4E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0735C4:Skyrim.esm
+  Version2: 3
+  Base: 02065D:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Key: 0835CA:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 0192CA:Skyrim.esm
+  Placement:
+    Position: -4928.3184, 1256.6294, 5009.5166
+    Rotation: 0, -0, 5.5676003
+MajorFlags:
+- 0x40000

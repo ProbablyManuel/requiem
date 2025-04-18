@@ -1,0 +1,50 @@
+FormKey: 000973:ccbgssse041-netchleather.esl
+EditorID: REQ_Light_ShadowedNetchLeather_Head_Boiled
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 1040
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00094A:ccbgssse041-netchleather.esl
+Name:
+  TargetLanguage: English
+  Value: Shadowed Boiled Netch Leather Helmet
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE041\Armor\NetchLeather\NetchLeatherHelmetBoiled_GO.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: NetchLeatherHelmetBoiled_GO:10
+        NewTexture: 000977:ccbgssse041-netchleather.esl
+        Index: 1
+      - Name: NetchLeatherHelmetBoiled_GO:5
+        NewTexture: 000977:ccbgssse041-netchleather.esl
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Hair
+  - Circlet
+  - Ears
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- ADDD70:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 000971:ccbgssse041-netchleather.esl
+- 000970:ccbgssse041-netchleather.esl
+- 00096F:ccbgssse041-netchleather.esl
+- 00096E:ccbgssse041-netchleather.esl
+Value: 80
+Weight: 2
+ArmorRating: 60

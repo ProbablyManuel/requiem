@@ -1,0 +1,19 @@
+FormKey: 029B5C:Skyrim.esm
+EditorID: REQ_Ench_Staff_LightningShackles
+Version2: 6
+Name:
+  TargetLanguage: English
+  Value: Lightning Shackles
+EnchantmentCost: 334
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 200
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 05DBAE:Skyrim.esm
+  Data:
+    Magnitude: 80
+    Area: 20

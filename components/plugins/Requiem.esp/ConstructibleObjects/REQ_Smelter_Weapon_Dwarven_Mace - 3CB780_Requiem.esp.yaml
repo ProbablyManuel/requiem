@@ -1,0 +1,22 @@
+FormKey: 3CB780:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Dwarven_Mace
+Items:
+- Item:
+    Item: 013998:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 43D07D:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 013998:Skyrim.esm
+CreatedObject: 0DB8A2:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

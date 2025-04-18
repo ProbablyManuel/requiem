@@ -1,0 +1,24 @@
+FormKey: 0F11A9:Skyrim.esm
+EditorID: REQ_Player_AllowShouting
+Name:
+  TargetLanguage: English
+  Value: Allow Shouting
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 02610C:Skyrim.esm
+    Stage: 90
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModShoutOk
+  PerkConditionTabCount: 1
+  Modification: Add
+  Value: 1

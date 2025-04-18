@@ -1,0 +1,44 @@
+FormKey: 062303:Skyrim.esm
+EditorID: REQ_Cloth_Ulfric_Body
+ObjectBounds:
+  First: -23, -21, -1
+  Second: 23, 21, 14
+Name:
+  TargetLanguage: English
+  Value: Ulfric's Clothes
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\YarlClothes02\OutfitGO.nif
+      Data: 0x020000000200000000000000161F580B6464730086C4F163BEBEB9066464730086C4F163
+      AlternateTextures:
+      - Name: ClothesGO:0
+        NewTexture: 02F6A6:unofficial skyrim special edition patch.esp
+  Female:
+    Model:
+      File: Clothes\YarlClothes02\OutfitGO.nif
+      Data: 0x020000000200000000000000161F580B6464730086C4F163BEBEB9066464730086C4F163
+      AlternateTextures:
+      - Name: ClothesGO:0
+        NewTexture: 02F6A6:unofficial skyrim special edition patch.esp
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0A8657:Skyrim.esm
+- 0A865D:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 062302:Skyrim.esm
+Value: 100
+Weight: 1

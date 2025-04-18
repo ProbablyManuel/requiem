@@ -1,0 +1,43 @@
+FormKey: 00086B:ccbgssse063-ba_ebony.esl
+EditorID: REQ_NULL_ccBGSSSE063_ArmorBladesCuirassEnchanted
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 80
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000840:ccbgssse063-ba_ebony.esl
+ObjectBounds:
+  First: -26, -23, -1
+  Second: 26, 27, 17
+Name:
+  TargetLanguage: English
+  Value: Ebony Plate Armor
+ObjectEffect: 0BDFFC:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE063\Armor\Ebony\EbonyBodyGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBD8:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080D:ccbgssse063-ba_ebony.esl
+Value: 1600
+Weight: 38
+ArmorRating: 44

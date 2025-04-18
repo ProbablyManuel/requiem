@@ -1,0 +1,30 @@
+FormKey: 01895F:Skyrim.esm
+EditorID: REQ_Drink4_FirebrandWine
+ObjectBounds:
+  First: -7, -6, 0
+  Second: 7, 6, 27
+Name:
+  TargetLanguage: English
+  Value: Firebrand Wine
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Quest\FirebrandWine01.nif
+  Data: 0x0200000006000000000000002883CF3C646473002659B6B43B4DC5BE646473002659B6B4164E0459646473002659B6B4B8EC307B64647300262C333B510B4812646473002659B6B411AA5BA3646473002659B6B4
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 100
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 60
+    Duration: 600
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 900

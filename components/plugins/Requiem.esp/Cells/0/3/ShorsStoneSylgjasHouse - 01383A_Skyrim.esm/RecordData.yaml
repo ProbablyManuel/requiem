@@ -1,0 +1,75 @@
+FormKey: 01383A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ShorsStoneSylgjasHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Sylgja's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0226B0:Skyrim.esm
+Owner: 0F18F8:Skyrim.esm
+LockList: 0C3A3F:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D546:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0832BD:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1277.8735, 832.6747, 62.770367
+    Rotation: 0, -0, 3.4000003
+- MutagenObjectType: PlacedObject
+  FormKey: 0832BC:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1451.0483, 633.1859, 62.770367
+- MutagenObjectType: PlacedObject
+  FormKey: 0832BE:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1441.3602, 650.5532, 62.770367
+    Rotation: 0, -0, 6.0000005
+- MutagenObjectType: PlacedObject
+  FormKey: 09F5E1:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0226B0:Skyrim.esm
+  Placement:
+    Position: 1456.6738, -1.0612297, 0
+    Rotation: 0, -0, 4.694936
+MajorFlags:
+- 0x40000

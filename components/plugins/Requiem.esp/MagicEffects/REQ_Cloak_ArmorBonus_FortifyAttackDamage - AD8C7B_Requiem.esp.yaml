@@ -1,0 +1,24 @@
+FormKey: AD8C7B:Requiem.esp
+EditorID: REQ_Cloak_ArmorBonus_FortifyAttackDamage
+Name:
+  TargetLanguage: English
+  Value: Fortify Attack Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD8CB1:Requiem.esp
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: AttackDamageMult
+  Association: AD8CB1:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

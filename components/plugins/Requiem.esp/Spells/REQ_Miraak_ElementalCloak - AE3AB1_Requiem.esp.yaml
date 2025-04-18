@@ -1,0 +1,28 @@
+FormKey: AE3AB1:Requiem.esp
+EditorID: REQ_Miraak_ElementalCloak
+Name:
+  TargetLanguage: English
+  Value: Elemental Cloak
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 250
+Flags:
+- ManualCostCalc
+CastType: FireAndForget
+HalfCostPerk: 0C44C0:Skyrim.esm
+Effects:
+- BaseEffect: AE3AAB:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 40
+- BaseEffect: AE3AA9:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 40
+- BaseEffect: AE3AAA:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 40

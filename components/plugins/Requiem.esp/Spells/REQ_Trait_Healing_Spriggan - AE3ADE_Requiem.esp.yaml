@@ -1,0 +1,19 @@
+FormKey: AE3ADE:Requiem.esp
+EditorID: REQ_Trait_Healing_Spriggan
+Name:
+  TargetLanguage: English
+  Value: 'Natural Healing: Spriggan'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 01CEAD:Skyrim.esm

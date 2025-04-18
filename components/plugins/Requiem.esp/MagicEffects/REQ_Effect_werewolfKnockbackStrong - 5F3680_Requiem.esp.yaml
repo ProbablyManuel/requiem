@@ -1,0 +1,42 @@
+FormKey: 5F3680:Requiem.esp
+EditorID: REQ_Effect_werewolfKnockbackStrong
+VirtualMachineAdapter:
+  Scripts:
+  - Name: voicepusheffectscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 3
+Name:
+  TargetLanguage: English
+  Value: Werewolf Knockback Effect
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+CastType: FireAndForget
+TargetType: Touch
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsBlockingConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 01EA69:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 105F23:Skyrim.esm

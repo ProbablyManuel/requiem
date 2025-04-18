@@ -1,0 +1,93 @@
+FormKey: 016DF5:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthSmelterOverseersHouse
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Smelter Overseer's House
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - LightFadeDistances
+LightingTemplate: 09F281:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F312:Skyrim.esm
+Owner: 0133A9:Skyrim.esm
+LockList: 0133A9:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 016F18:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 5
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 064092:Skyrim.esm
+  TeleportDestination:
+    Door: 016E40:Skyrim.esm
+    Position: -173169.31, 1739.0326, -3453.6653
+    Rotation: 0, -0, -0.6141579
+  Scale: 0.85
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 0656E8:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 016F09:Skyrim.esm
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  Owner: 0133A9:Skyrim.esm
+  LocationReference: 01F312:Skyrim.esm
+  Placement:
+    Position: -1936, -816, 65.87838
+    Rotation: 0, -0, 3.1415927
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 09CF4F:Skyrim.esm
+  Version2: 3
+  Base: 052B5A:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 060FD4:Skyrim.esm
+  LocationReference: 01F312:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0EA609:Skyrim.esm
+  Placement:
+    Position: -1669.853, 844.6247, 64.00009
+    Rotation: 0, -0, 2.3146026
+MajorFlags:
+- 0x40000

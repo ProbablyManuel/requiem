@@ -1,0 +1,143 @@
+FormKey: 028580:Dragonborn.esm
+EditorID: DLC2NetchCalfRace
+Name:
+  TargetLanguage: English
+  Value: Netch
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- AE35A0:Requiem.esp
+- AE3AF9:Requiem.esp
+Skin: 028581:Dragonborn.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013798:Skyrim.esm
+- 0F23C5:Skyrim.esm
+- 03A157:Dragonborn.esm
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+Starting:
+- Key: Health
+  Value: 250
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 2000
+BaseCarryWeight: 200
+BaseMass: 15
+AccelerationRate: 5
+DecelerationRate: 5
+Size: Large
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 185
+UnarmedReach: 256
+AngularAccelerationRate: 5
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\Netch\CharacterAssets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\Netch\CharacterAssets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 024C31:Dragonborn.esm
+  Female: 00002E:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 028582:Dragonborn.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartLeft
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.5
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackStartPowerStanding
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 028582:Dragonborn.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRight
+BodyData:
+  Male:
+    Index: BodyTexture
+  Female:
+    Index: BodyTexture
+BodyPartData: 01FEB9:Dragonborn.esm
+BehaviorGraph:
+  Male:
+    File: Actors\DLC02\Netch\NetchProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\DLC02\Netch\NetchProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0AF666:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+BaseMovementDefaultWalk: 0209A3:Dragonborn.esm
+BaseMovementDefaultRun: 0209A3:Dragonborn.esm
+BaseMovementDefaultSprint: 0209AD:Dragonborn.esm

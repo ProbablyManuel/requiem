@@ -1,0 +1,33 @@
+FormKey: AE3B6D:Requiem.esp
+EditorID: REQ_SleepingTreeSap_Slow
+Name:
+  TargetLanguage: English
+  Value: Slow
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B36:Requiem.esp
+Flags:
+- Recover
+- Detrimental
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeedMult
+  Association: AE3B36:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013740:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 08883A:Skyrim.esm

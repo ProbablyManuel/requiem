@@ -1,0 +1,37 @@
+FormKey: 0134AA:Skyrim.esm
+EditorID: Thistle01
+Version2: 8
+ObjectBounds:
+  First: -10, -2, -1
+  Second: 11, 26, 11
+Name:
+  TargetLanguage: English
+  Value: Thistle Branch
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\Thistle01.nif
+  Data: 0x020000000200000000000000386EFF8064647300134C1EFA9F7DBC2A64647300134C1EFA
+PickUpSound: 0519D5:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 073F23:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+- BaseEffect: 090041:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 60

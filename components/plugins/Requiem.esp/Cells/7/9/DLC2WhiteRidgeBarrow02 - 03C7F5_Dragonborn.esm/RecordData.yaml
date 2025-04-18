@@ -1,0 +1,57 @@
+FormKey: 03C7F5:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2WhiteRidgeBarrow02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: White Ridge Sanctum
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#003A3021'
+    DirectionalXMinus: '#002F301E'
+    DirectionalYPlus: '#00353220'
+    DirectionalYMinus: '#00352D20'
+    DirectionalZPlus: '#0019160E'
+    DirectionalZMinus: '#005C5438'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 05EAE8:Skyrim.esm
+WaterHeight: 0
+Location: 0142BC:Dragonborn.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 0142BF:Dragonborn.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 089770:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedTrap
+  FormKey: AE3A85:Requiem.esp
+  Placement:
+    Position: 10803.143, -8526.501, -697.13385
+    Rotation: 0, 0, 6.083188
+  Projectile: 07326E:Skyrim.esm
+MajorFlags:
+- 0x40000

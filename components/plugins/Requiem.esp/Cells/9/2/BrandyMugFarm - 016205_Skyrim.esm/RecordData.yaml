@@ -1,0 +1,58 @@
+FormKey: 016205:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BrandyMugFarm
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Brandy-Mug Farm
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0BEDEE:Skyrim.esm
+Owner: 105A5D:Skyrim.esm
+LockList: 014126:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0710E3:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1068.6561, 68.46229, 334.86032
+    Rotation: 0, -0, 3
+- MutagenObjectType: PlacedObject
+  FormKey: 0710E2:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1105.9227, 47.932625, 334.86032
+MajorFlags:
+- 0x40000

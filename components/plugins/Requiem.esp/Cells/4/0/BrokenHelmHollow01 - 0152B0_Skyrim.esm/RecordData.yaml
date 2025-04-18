@@ -1,0 +1,70 @@
+FormKey: 0152B0:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BrokenHelmHollow01
+Version2: 11
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Broken Helm Hollow
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0033291D'
+    DirectionalXMinus: '#002A291A'
+    DirectionalYPlus: '#002F2A1C'
+    DirectionalYMinus: '#002F271C'
+    DirectionalZPlus: '#0016130C'
+    DirectionalZMinus: '#005C5138'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 034566:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01914E:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EBF6:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0211C6:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 02064F:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 01914E:Skyrim.esm
+  Placement:
+    Position: 664.8817, 445.69907, 665.3169
+    Rotation: -0.06023174, -0.0512262, 2.7706785
+MajorFlags:
+- 0x40000

@@ -1,0 +1,54 @@
+FormKey: 76932A:Requiem.esp
+EditorID: REQ_Effect_Attacks_BullRushImpact_shield
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_KnockDownDamage
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: BaseDamage
+      Data: 15
+    - MutagenObjectType: ScriptIntProperty
+      Name: MassPower
+      Data: 2
+Name:
+  TargetLanguage: English
+  Value: Bull Rush Impact - Shield Damage
+Flags:
+- Hostile
+- Detrimental
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    RunOnType: Target
+  ComparisonValue: 10
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsBlockingConditionData
+    RunOnType: Target
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    RunOnType: Target
+    Perk: 058F6A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsRidingMountConditionData
+    RunOnType: Target
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 76932A:Requiem.esp

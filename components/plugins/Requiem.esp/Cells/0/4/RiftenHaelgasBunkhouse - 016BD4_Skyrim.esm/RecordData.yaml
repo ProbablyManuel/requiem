@@ -1,0 +1,71 @@
+FormKey: 016BD4:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenHaelgasBunkhouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Haelga's Bunkhouse
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#0053422D'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00A9A796'
+  FogNear: 240
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#005B422F'
+    DirectionalXMinus: '#004A422A'
+    DirectionalYPlus: '#0053452D'
+    DirectionalYMinus: '#00533E2D'
+    DirectionalZPlus: '#00271F14'
+    DirectionalZMinus: '#007E6445'
+    Specular: '#009F998A'
+    Scale: 1
+  FogFarColor: '#00A9A796'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0B2157:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 02263D:Skyrim.esm
+Owner: 0A2519:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0832BF:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -557.7684, 117.33546, 127.00659
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA73F:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 02263D:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C733E:Skyrim.esm
+  Placement:
+    Position: -581.63824, 537.1536, 189.31543
+    Rotation: 0, -0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 0832C1:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -558.9597, 157.9637, 127.00659
+    Rotation: 0, -0, 3.6000001
+MajorFlags:
+- 0x40000

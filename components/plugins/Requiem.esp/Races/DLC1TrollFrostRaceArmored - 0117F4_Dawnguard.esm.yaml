@@ -1,0 +1,253 @@
+FormKey: 0117F4:Dawnguard.esm
+EditorID: DLC1TrollFrostRaceArmored
+Name:
+  TargetLanguage: English
+  Value: Armored Frost Troll
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 0B556A:Skyrim.esm
+- AD39E5:Requiem.esp
+- AE3AEE:Requiem.esp
+Skin: 016EE4:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013798:Skyrim.esm
+- 0F5D16:Skyrim.esm
+- 586728:Requiem.esp
+- 5F367F:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- RegenHpInCombat
+- AllowPcDialog
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 250
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 500
+BaseCarryWeight: 200
+BaseMass: 3.5
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 1
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 65
+UnarmedReach: 164
+AimAngleTolerance: 23.45
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Troll\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Troll\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- BLDO
+- RUN1
+- SNEK
+- SWIM
+- WALK
+Voices:
+  Male: 01F289:Skyrim.esm
+  Female: 01F289:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartBackwardPower
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.3
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.25
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartForwardPower
+- AttackData:
+    DamageMult: 1.5
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartForwardPowerRush
+- AttackData:
+    DamageMult: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartLeftA
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartLeftB
+- AttackData:
+    DamageMult: 1
+    Chance: 0.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartLeftC
+- AttackData:
+    DamageMult: 1
+    Chance: 0.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartLeftD
+- AttackData:
+    DamageMult: 1
+    Chance: 0.7
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartPowerComboA
+- AttackData:
+    DamageMult: 1
+    Chance: 0.7
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartPowerComboB
+- AttackData:
+    DamageMult: 1
+    Chance: 0.7
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartPowerComboC
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.2
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartPowerX2
+- AttackData:
+    DamageMult: 1
+    Chance: 0.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRightA
+- AttackData:
+    DamageMult: 1
+    Chance: 0.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRightB
+- AttackData:
+    DamageMult: 1.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRightC
+- AttackData:
+    DamageMult: 1.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRightD
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartRightPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashStart
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 092C93:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Troll\TrollProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Troll\TrollProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0AF640:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+BaseMovementDefaultWalk: 05F5C9:Skyrim.esm
+BaseMovementDefaultRun: 05F5C9:Skyrim.esm

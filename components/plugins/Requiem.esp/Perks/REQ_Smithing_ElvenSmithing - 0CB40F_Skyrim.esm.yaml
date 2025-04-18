@@ -1,0 +1,65 @@
+FormKey: 0CB40F:Skyrim.esm
+EditorID: REQ_Smithing_ElvenSmithing
+Name:
+  TargetLanguage: English
+  Value: Elven Smithing
+Description:
+  TargetLanguage: English
+  Value: You've gained enough finesse to create and improve Elven armor and weapons <br> by studying the Elven craftmanship carefully.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40F:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 05CBD7:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 6F9CB9:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB414:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Smithing
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3AEF:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E71B:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModTemperingHealth
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.7

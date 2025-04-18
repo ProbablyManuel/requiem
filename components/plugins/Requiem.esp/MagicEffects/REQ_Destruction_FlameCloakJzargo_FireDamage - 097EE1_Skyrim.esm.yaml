@@ -1,0 +1,60 @@
+FormKey: 097EE1:Skyrim.esm
+EditorID: REQ_Destruction_FlameCloakJzargo_FireDamage
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MGRJzargoFlameEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TestCast
+      Object: 097EE5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FireballExplosion
+      Object: 097EE4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Jzargo01
+      Object: 0958B3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UndeadKeyword
+      Object: 013796:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 3FCA4C:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- GoryVisuals
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 2
+MagicSkill: Destruction
+ResistValue: ResistFire
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 1
+HitShader: 01B212:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FCF:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 026113:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 3
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Release
+  Sound: 03F2EA:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5E4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Burns the target <mag> points per second. Targets on fire take extra damage.

@@ -1,0 +1,21 @@
+FormKey: AE3B62:Requiem.esp
+EditorID: REQ_Blessing_Yffre_FortifyMarksmanPowerModifier
+Name:
+  TargetLanguage: English
+  Value: Fortify Marksman
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B66:Requiem.esp
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MarksmanPowerModifier
+  Association: AE3B66:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Ranged weapons deal <mag>% more damage.

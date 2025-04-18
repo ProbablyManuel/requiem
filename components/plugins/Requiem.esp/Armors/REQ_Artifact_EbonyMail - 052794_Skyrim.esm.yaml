@@ -1,0 +1,46 @@
+FormKey: 052794:Skyrim.esm
+EditorID: REQ_Artifact_EbonyMail
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA02CuirassScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA02
+      Object: 04D8D6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA02ArmorAbility
+      Object: 081183:Skyrim.esm
+ObjectBounds:
+  First: -24, -21, 0
+  Second: 24, 27, 20
+Name:
+  TargetLanguage: English
+  Value: Ebony Mail
+ObjectEffect: 0F23C9:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: Armor\EbonyMail\CuirassGND.nif
+      Data: 0x0200000003000000000000005B110BE66464730072DDDF04A24FD6A46464730072DDDF04181EDF3D6464730072DDDF04
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- AD3AF7:Requiem.esp
+- 06C0EC:Skyrim.esm
+- 0917E8:Skyrim.esm
+- 0A8668:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 08F959:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Boethiah's sphere is deceit and conspiracy, and the secret plots of murder, assassination, treason, and unlawful overthrow of authority. The Ebony Mail grows in power as Boethiah's champion commits murderous acts.
+Armature:
+- 085645:Skyrim.esm
+Value: 80000
+Weight: 40
+ArmorRating: 500

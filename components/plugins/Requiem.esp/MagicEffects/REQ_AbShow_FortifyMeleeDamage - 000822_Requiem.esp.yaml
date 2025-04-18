@@ -1,0 +1,18 @@
+FormKey: 000822:Requiem.esp
+EditorID: REQ_AbShow_FortifyMeleeDamage
+Name:
+  TargetLanguage: English
+  Value: Fortify Melee Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MeleeDamage
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Increases melee damage by <mag>.

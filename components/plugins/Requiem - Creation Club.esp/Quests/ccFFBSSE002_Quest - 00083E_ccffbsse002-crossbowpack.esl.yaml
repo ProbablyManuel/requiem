@@ -1,0 +1,41 @@
+FormKey: 00083E:ccffbsse002-crossbowpack.esl
+EditorID: ccFFBSSE002_Quest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccFFBSSE002_Quest_0500083E
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemWeaponBlacksmithBow75
+      Object: 0FF7E1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccFFBSSE002_LItemCrossbows
+      Object: 003055:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VendorGadgetsSorineJurardCrossBow
+      Object: 00F1A8:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccFFBSSE002_DLC2LItemWeaponBow
+      Object: 00081C:ccffbsse002-crossbowpack.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccFFBSSE002_DLC2LItemWeaponBowNoBolts
+      Object: 00084A:ccffbsse002-crossbowpack.esl
+  FileName: SSE_QF_ccFFBSSE002_Quest_0500083E
+  Fragments:
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccFFBSSE002_Quest_0500083E
+    FragmentName: Fragment_0
+Name:
+  TargetLanguage: English
+  Value: Seeding Quest
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+NextAliasID: 0

@@ -1,0 +1,37 @@
+FormKey: 057F91:Skyrim.esm
+EditorID: HangingMoss
+Version2: 1
+ObjectBounds:
+  First: -9, -7, -18
+  Second: 12, 7, 18
+Name:
+  TargetLanguage: English
+  Value: Hanging Moss
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\HangingMoss01.nif
+  Data: 0x020000000200000000000000D46F83A364647300134C1EFA95D270AF64647300134C1EFA
+PickUpSound: 0FB974:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 1
+Weight: 0.25
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EAF3:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 03EB19:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

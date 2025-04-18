@@ -1,0 +1,24 @@
+FormKey: AD3988:Requiem.esp
+EditorID: REQ_Ench_FortifyArmorPenetration_TwoHanded
+Name:
+  TargetLanguage: English
+  Value: Fortify Two-Handed Armor Penetration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F73:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 22
+EnchantShader: 092DEC:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: TwoHandedModifier
+  Association: 074F73:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor penetration with two-handed weapons is increased by <mag>.

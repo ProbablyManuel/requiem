@@ -1,0 +1,56 @@
+FormKey: 078B9D:Skyrim.esm
+EditorID: VoiceClearSkies1Self
+VirtualMachineAdapter:
+  Scripts:
+  - Name: clearskieseffectscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGProjectileStormVar
+      Object: 101DAB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQClearSkyFogSpell
+      Object: 10387F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherExceptionList
+      Object: 000998:Update.esm
+  - Name: magicCastAnotherSpellScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CastSpellName
+      Object: 03F50B:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Clear Skies
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+- 079B0F:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 03F50E:Skyrim.esm
+CastType: FireAndForget
+HitEffectArt: 07534B:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 0A0F54:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInInteriorConditionData
+    RunOnType: Target

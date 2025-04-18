@@ -1,0 +1,27 @@
+FormKey: 015719:Dawnguard.esm
+EditorID: REQ_Ench_AurielsBow_SunDamage_All
+Name:
+  TargetLanguage: English
+  Value: Sun Damage
+MenuDisplayObject: 018F02:Dawnguard.esm
+Keywords:
+- ADDDF6:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+HitShader: 00A3BB:Dawnguard.esm
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> sun damage.

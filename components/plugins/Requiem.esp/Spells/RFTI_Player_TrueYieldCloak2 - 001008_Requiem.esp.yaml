@@ -1,0 +1,39 @@
+FormKey: 001008:Requiem.esp
+EditorID: RFTI_Player_TrueYieldCloak2
+Name:
+  TargetLanguage: English
+  Value: True Yield Cloak 2
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 00100C:Requiem.esp
+  Data:
+    Magnitude: 1000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      RunOnTypeIndex: 0
+      Global: 71C730:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+      RunOnTypeIndex: 0
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsEssentialConditionData
+      RunOnTypeIndex: 0
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: GetStageConditionData
+      RunOnTypeIndex: 0
+      Quest: 0A3EBC:Skyrim.esm
+    ComparisonValue: 10

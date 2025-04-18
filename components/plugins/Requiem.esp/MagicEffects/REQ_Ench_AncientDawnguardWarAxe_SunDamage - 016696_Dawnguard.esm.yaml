@@ -1,0 +1,53 @@
+FormKey: 016696:Dawnguard.esm
+EditorID: REQ_Ench_AncientDawnguardWarAxe_SunDamage
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magiceffectshaderapply
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bUseDuration
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX
+      Object: 019C9E:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Sun Damage
+MenuDisplayObject: 018F02:Dawnguard.esm
+Keywords:
+- ADDDF6:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+HitShader: 019C9D:Dawnguard.esm
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: This sanctified war axe is enchanted to devastate the undead and grows in power with each undead creature it puts to rest until the charge abates at dawn. Currently deals <mag> sun damage (10 per undead killed).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 016691:Dawnguard.esm

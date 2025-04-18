@@ -1,0 +1,38 @@
+FormKey: AE388C:Requiem.esp
+EditorID: REQ_Ench_JonsCrossbow_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> magic damage to those who carry fruits with them.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 064B2E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 064B2F:Skyrim.esm
+  ComparisonValue: 1

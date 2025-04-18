@@ -1,0 +1,43 @@
+FormKey: 020EA1:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BlackBookFireDmgCloak
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03D25B:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Flames
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+ResistValue: ResistFire
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 01B212:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FCF:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 026113:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

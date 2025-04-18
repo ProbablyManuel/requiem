@@ -1,0 +1,31 @@
+FormKey: 0B18CD:Skyrim.esm
+EditorID: HumanHeart
+Version2: 14
+ObjectBounds:
+  First: -3, -6, -3
+  Second: 3, 6, 3
+Name:
+  TargetLanguage: English
+  Value: Heart
+Model:
+  File: Clutter\Ingredients\HumanHeart.nif
+  Data: 0x020000000300000000000000F46A1B8A64647300604DDD5C202B9E4A64647300604DDD5CC49A2F7E64647300604DDD5C
+PickUpSound: 0FC21E:Skyrim.esm
+Weight: 1
+IngredientValue: 77
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 1
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 5
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 073F29:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 20

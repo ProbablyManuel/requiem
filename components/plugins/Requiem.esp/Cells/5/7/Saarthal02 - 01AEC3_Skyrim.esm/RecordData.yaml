@@ -1,0 +1,77 @@
+FormKey: 01AEC3:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Saarthal02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Saarthal
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00505A50'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00AEF9A6'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00AEF9A6'
+    Scale: 1
+  FogFarColor: '#00AEF9A6'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0E7C5E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019299:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC61:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 10E758:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019299:Skyrim.esm
+  Placement:
+    Position: 2502.2144, -2630.2312, 512.5233
+    Rotation: 0, -0, 4.0331917
+- MutagenObjectType: PlacedObject
+  FormKey: 049C75:Skyrim.esm
+  Version2: 4
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019299:Skyrim.esm
+  Placement:
+    Position: 7138, -4014, 544
+    Rotation: 0, -0, 6.2373304
+MajorFlags:
+- 0x40000

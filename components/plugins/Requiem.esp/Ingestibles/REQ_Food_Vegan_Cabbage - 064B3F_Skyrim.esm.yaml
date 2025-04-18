@@ -1,0 +1,26 @@
+FormKey: 064B3F:Skyrim.esm
+EditorID: REQ_Food_Vegan_Cabbage
+ObjectBounds:
+  First: -12, -10, -10
+  Second: 11, 12, 10
+Name:
+  TargetLanguage: English
+  Value: Cabbage
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Plants\Cabbage01.nif
+  Data: 0x0200000002000000000000009C409DE264647300134C1EFADF6B013C64647300134C1EFA
+Weight: 0.1
+Value: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1200
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

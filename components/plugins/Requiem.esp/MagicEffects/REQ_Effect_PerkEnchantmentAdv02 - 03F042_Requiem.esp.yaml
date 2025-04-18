@@ -1,0 +1,44 @@
+FormKey: 03F042:Requiem.esp
+EditorID: REQ_Effect_PerkEnchantmentAdv02
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ArcaneExperimentation
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemGrandFilled
+      Object: 02E4FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon3
+      Object: 03EACE:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon1
+      Object: 03EACB:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon5
+      Object: 03EAD3:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IronDagger
+      Object: 01397E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon4
+      Object: 03EAD1:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon2
+      Object: 03EACC:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Artificer's Insight
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The caster experiments with even more exotic energies to create new enchanted objects that can be disenchanted afterwards. Three grand filled soul gems and five iron daggers are needed for that.

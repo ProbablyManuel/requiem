@@ -1,0 +1,34 @@
+FormKey: 105F23:Skyrim.esm
+EditorID: REQ_Sneak_Acrobatics
+Name:
+  TargetLanguage: English
+  Value: Acrobatics
+Description:
+  TargetLanguage: English
+  Value: Your improved balance allows you to silently roll forward,<br>avoid getting knocked down except through magic and move even more quietly.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05820C:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Sneak
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  EntryPoint: ModDetectionSneakSkill
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 10

@@ -1,0 +1,39 @@
+FormKey: 019834:Dawnguard.esm
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- Emotion: Anger
+  EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: I don't converse with my prey.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 0176F7:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Target
+    RunOnTypeIndex: 0
+    Spell: 0ED0A8:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Target
+    RunOnTypeIndex: 0
+    Spell: 00283B:Dawnguard.esm
+  ComparisonValue: 1

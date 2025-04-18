@@ -1,0 +1,28 @@
+FormKey: 065C99:Skyrim.esm
+EditorID: REQ_Food_Meat_Raw_Beef
+ObjectBounds:
+  First: -11, -12, -1
+  Second: 14, 10, 9
+Name:
+  TargetLanguage: English
+  Value: Raw Beef
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\BeefMeat.nif
+  Data: 0x0200000002000000000000005611D5A964647300604DDD5C317E781164647300604DDD5C
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

@@ -1,0 +1,19 @@
+FormKey: 034B57:Dragonborn.esm
+EditorID: REQ_Creature_Karstaag_SummonIceWraith_Player
+Name:
+  TargetLanguage: English
+  Value: Conjure Ice Wraith
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 35
+Flags:
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+Effects:
+- BaseEffect: 034B58:Dragonborn.esm
+  Data:
+    Duration: 30

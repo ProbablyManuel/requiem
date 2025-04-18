@@ -1,0 +1,58 @@
+FormKey: 10FDE6:Skyrim.esm
+MajorRecordFlagsRaw: 134217728
+EditorID: REQ_VendorChest_Blacksmith_Skyforge
+Version2: 7
+SkyrimMajorRecordFlags:
+- 0x8000000
+ObjectBounds:
+  First: -48, -25, 0
+  Second: 48, 24, 48
+Name:
+  TargetLanguage: English
+  Value: Chest
+Model:
+  File: Clutter\Containers\Chest01\Chest01.nif
+  Data: 0x020000000000000000000000
+Items:
+- Item:
+    Item: 0173D3:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 072AE9:Skyrim.esm
+    Count: 5
+- Item:
+    Item: 09BC2E:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 09BC2F:Skyrim.esm
+    Count: 5
+- Item:
+    Item: 09BC30:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 09BC33:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10C1CC:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FDE9:Skyrim.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: NpcOwner
+      Npc: 013B9D:Skyrim.esm
+    ItemCondition: 1
+- Item:
+    Item: 10FDEB:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05C657:Requiem.esp
+    Count: 1
+- Item:
+    Item: AD3902:Requiem.esp
+    Count: 1
+Flags:
+- Respawns
+MajorFlags:
+- NavMeshGenerationBoundingBox

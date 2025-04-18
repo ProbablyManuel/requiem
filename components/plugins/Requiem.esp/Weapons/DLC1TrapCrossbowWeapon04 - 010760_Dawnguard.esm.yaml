@@ -1,0 +1,54 @@
+FormKey: 010760:Dawnguard.esm
+EditorID: DLC1TrapCrossbowWeapon04
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Hunting Bow
+Model:
+  File: Weapons\Steel\SteelBow.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E719:Skyrim.esm
+- 01E715:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Unused: 0x426F6C744E6F6465303100
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 023B5A:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 017EC9:Dawnguard.esm
+UnequipSound: 017ECA:Dawnguard.esm
+BasicStats:
+  Value: 5
+  Weight: 4
+  Damage: 35
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  Flags:
+  - CantDrop
+  - NonPlayable
+  SightFOV: 0.4
+  BaseVATStoHitChance: 5
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1084227584
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

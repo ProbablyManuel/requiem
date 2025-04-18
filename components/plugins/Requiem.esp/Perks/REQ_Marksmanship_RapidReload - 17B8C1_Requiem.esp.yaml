@@ -1,0 +1,25 @@
+FormKey: 17B8C1:Requiem.esp
+EditorID: REQ_Marksmanship_RapidReload
+Name:
+  TargetLanguage: English
+  Value: Rapid Reload
+Description:
+  TargetLanguage: English
+  Value: Your have familiarized yourself with the mechanics of your crossbow.<br>[+50% reload speed with crossbows]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Archery
+  ComparisonValue: 60
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F61:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 17B8C0:Requiem.esp

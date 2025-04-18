@@ -1,0 +1,200 @@
+FormKey: 003B8B:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1Valerica
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - Essential
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: PcLevelMult
+    LevelMult: 1
+  CalcMinLevel: 10
+  CalcMaxLevel: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 100
+Factions:
+- Faction: 0083A2:Dawnguard.esm
+  Fluff: 0x000000
+DeathItem: 03ADA0:Skyrim.esm
+Voice: 007A32:Dawnguard.esm
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 033976:Skyrim.esm
+- 040000:Skyrim.esm
+- 0C969E:Skyrim.esm
+- 0F5B59:Skyrim.esm
+- 0F5B5C:Skyrim.esm
+- 0F5B5D:Skyrim.esm
+Perks:
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 051B1B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: ADDE0C:Requiem.esp
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Mood: Disgusted
+  Assistance: HelpsAllies
+Packages:
+- 003B8C:Dawnguard.esm
+Keywords:
+- 013796:Skyrim.esm
+- 0A82BB:Skyrim.esm
+Class: 02E00F:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Valerica
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 23
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 23
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 24
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 12
+  - Key: Conjuration
+    Value: 18
+  - Key: Destruction
+    Value: 12
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 238
+  Magicka: 98
+  Stamina: 109
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x663FEF
+HeadParts:
+- 0E4DA1:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+- 0029A9:Dawnguard.esm
+- 00D6D3:Dawnguard.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03BE1B:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 40
+SoundLevel: Normal
+DefaultOutfit: 016904:Dawnguard.esm
+HeadTexture: 0645DB:Skyrim.esm
+TextureLighting: '#00DDDDDD'
+FaceMorph:
+  NoseUpVsDown: 0.1
+  JawNarrowVsWide: 0.8
+  CheeksUpVsDown: 0.3
+  CheeksForwardVsBack: 0.2
+  EyesUpVsDown: 0.1
+  BrowsUpVsDown: -0.3
+  BrowsInVsOut: -0.2
+  LipsUpVsDown: -0.1
+  ChinNarrowVsWide: 1
+  ChinUpVsDown: 0.4
+  EyesForwardVsBack: -0.4
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 2
+  Unknown: 4294967295
+  Eyes: 4
+  Mouth: 17
+TintLayers:
+- Index: 24
+  Color: '#00DDDDDD'
+  InterpolationValue: 1
+  Preset: 601
+- Index: 27
+  Color: '#00212B52'
+  InterpolationValue: 0.34
+  Preset: 625
+- Index: 29
+  Color: '#00212B52'
+  InterpolationValue: 0.19
+  Preset: 643
+- Index: 31
+  Color: '#00070C3D'
+  InterpolationValue: 0.56
+  Preset: 660
+MajorFlags:
+- 0x40000

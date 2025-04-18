@@ -1,0 +1,71 @@
+FormKey: 03016A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortHraggstad02
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Hraggstad Prison
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0B6BC7:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019181:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC1F:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0832C9:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -139.10857, -2113.9766, 142.00334
+    Rotation: 0, -0, 3.0000012
+- MutagenObjectType: PlacedObject
+  FormKey: 0832C8:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -109.51666, -2099.463, 142.00334
+    Rotation: 0, -0, 3.0000012
+- MutagenObjectType: PlacedObject
+  FormKey: 0832CA:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -118.75523, -2117.1917, 142.00334
+    Rotation: 0, -0, 3.0000012
+MajorFlags:
+- 0x40000

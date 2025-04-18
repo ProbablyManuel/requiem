@@ -1,0 +1,29 @@
+FormKey: 2E9A0D:Requiem.esp
+EditorID: REQ_Effect_OnHitGainStamina
+Name:
+  TargetLanguage: English
+  Value: Adrenalin Rush
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 1.8
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+Projectile: 025458:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 079355:Skyrim.esm
+  ComparisonValue: 1

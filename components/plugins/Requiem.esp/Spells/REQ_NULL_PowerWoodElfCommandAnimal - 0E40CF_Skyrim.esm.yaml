@@ -1,0 +1,20 @@
+FormKey: 0E40CF:Skyrim.esm
+EditorID: REQ_NULL_PowerWoodElfCommandAnimal
+Name:
+  TargetLanguage: English
+  Value: Command Animal
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- AreaEffectIgnoresLOS
+Type: Power
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0E40D0:Skyrim.esm
+  Data:
+    Magnitude: 99
+    Area: 75
+    Duration: 60

@@ -1,0 +1,27 @@
+FormKey: 5C1E36:Requiem.esp
+EditorID: REQ_Illusion_MindMaelstrom_Charm
+Name:
+  TargetLanguage: English
+  Value: Mind Maelstrom - Charm
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44C6:Skyrim.esm
+Effects:
+- BaseEffect: 421C8F:Requiem.esp
+  Data:
+    Magnitude: 500
+    Duration: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 5C1E2E:Requiem.esp
+    ComparisonValue: 1

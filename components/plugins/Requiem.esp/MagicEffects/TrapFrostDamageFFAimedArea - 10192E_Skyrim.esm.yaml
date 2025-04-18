@@ -1,0 +1,47 @@
+FormKey: 10192E:Skyrim.esm
+EditorID: TrapFrostDamageFFAimedArea
+Name:
+  TargetLanguage: English
+  Value: Ice Storm
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 3.7
+MagicSkill: Destruction
+ResistValue: ResistFrost
+CastingLight: 032DAA:Skyrim.esm
+HitShader: 01F03A:Skyrim.esm
+MinimumSkillLevel: 50
+SpellmakingArea: 15
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 1.3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 049B61:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+SecondActorValue: Stamina
+CastingArt: 0334B9:Skyrim.esm
+ImpactData: 049B64:Skyrim.esm
+SkillUsageMultiplier: 0.5
+DualCastArt: 0201F3:Skyrim.esm
+DualCastScale: 1.8
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Charge
+  Sound: 03EDD5:Skyrim.esm
+- Type: Ready
+  Sound: 03F1F0:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: A freezing whirlwind that deals <mag> frost and twice as much stamina damage per second.

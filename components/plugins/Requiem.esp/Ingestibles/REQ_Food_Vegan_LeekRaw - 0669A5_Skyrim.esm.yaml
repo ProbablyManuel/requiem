@@ -1,0 +1,26 @@
+FormKey: 0669A5:Skyrim.esm
+EditorID: REQ_Food_Vegan_LeekRaw
+ObjectBounds:
+  First: -8, -6, -18
+  Second: 5, 6, 12
+Name:
+  TargetLanguage: English
+  Value: Leek
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Plants\Leek01.nif
+  Data: 0x020000000200000000000000252206E864647300134C1EFAC174BAAA64647300134C1EFA
+Weight: 0.1
+Value: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1200
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

@@ -1,0 +1,38 @@
+FormKey: 04DA20:Skyrim.esm
+EditorID: Mushroom02
+Version2: 1
+ObjectBounds:
+  First: -9, -7, -17
+  Second: 9, 7, 17
+Name:
+  TargetLanguage: English
+  Value: Bleeding Crown
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\Mushroom02.nif
+  Data: 0x0200000004000000000000001258F1F4646473004E28BE1220506D8A646473004E28BE12A809F86D646473004E28BE1279EE2B88646473004E28BE12
+PickUpSound: 0BAD13:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 10
+Weight: 0.3
+IngredientValue: 10
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2D:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 03EB1C:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 090042:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 039E51:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 60

@@ -1,0 +1,26 @@
+FormKey: 00F835:Dawnguard.esm
+EditorID: DLC1VampireLordPerks
+Version2: 12
+Description:
+  TargetLanguage: English
+  Value: Vampire Lords are the most dangerous of all vampires, being capable of unleashing terrible havoc on anything that dares to oppose them.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 002F65:Dawnguard.esm
+    Stage: 200
+  ComparisonValue: 1
+LoadingScreenNif: 005057:Dawnguard.esm
+InitialScale: 1
+InitialRotation: 0, 0, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -30
+CameraPath: Cameras\LSCameraPanLFTZoomINBig.nif

@@ -1,0 +1,40 @@
+FormKey: 058F61:Skyrim.esm
+EditorID: REQ_Marksmanship_EagleEye
+Name:
+  TargetLanguage: English
+  Value: Eagle Eye
+Description:
+  TargetLanguage: English
+  Value: By concentrating only on your target and holding your breath, you can now aim much more precisely.<br>[Zoom in by holding right mouse button]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BABED:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Archery
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 15
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPowerAttackStamina
+  PerkConditionTabCount: 2
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModBowZoom
+  PerkConditionTabCount: 2
+  Value: 0.8

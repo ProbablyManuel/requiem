@@ -1,0 +1,36 @@
+FormKey: 03AD6F:Skyrim.esm
+EditorID: SkeeverTail
+Version2: 3
+ObjectBounds:
+  First: -4, -9, -4
+  Second: 4, 9, 4
+Name:
+  TargetLanguage: English
+  Value: Skeever Tail
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SkeeverTail01.nif
+  Data: 0x0200000002000000000000005702D8C964647300604DDD5CA36EDD8C64647300604DDD5C
+Value: 3
+Weight: 0.2
+IngredientValue: 3
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2C:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 073F26:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 1
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 60

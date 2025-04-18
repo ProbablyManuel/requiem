@@ -1,0 +1,19 @@
+FormKey: 000974:Requiem.esp
+EditorID: REQ_AbShow_WeaknessMagic
+Name:
+  TargetLanguage: English
+  Value: Weakness to Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistMagic
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magic deals <mag>% more damage to you.

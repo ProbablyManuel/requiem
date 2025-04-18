@@ -1,0 +1,27 @@
+FormKey: 10D656:Skyrim.esm
+EditorID: CreatureWerewolf2
+Version2: 5
+Description:
+  TargetLanguage: English
+  Value: Ancient legends have it that unholy creatures like the undead and werewolves are quite vulnerable to weapons made out of silver...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 04B2D9:Skyrim.esm
+    SecondUnusedIntParameter: -285087744
+    VariableName: ::PlayerHasBeastBlood_var
+  ComparisonValue: 1
+LoadingScreenNif: 10A17C:Skyrim.esm
+InitialScale: 1.1
+InitialRotation: 0, 0, 135
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -110
+CameraPath: Cameras\LSCameraPanLFTZoomINBig.nif

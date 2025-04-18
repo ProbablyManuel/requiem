@@ -1,0 +1,29 @@
+FormKey: 185736:Requiem.esp
+EditorID: REQ_Conjuration_CognitiveFlexibility1
+Name:
+  TargetLanguage: English
+  Value: Cognitive Flexibility
+Description:
+  TargetLanguage: English
+  Value: You have practiced the mental ability of maintaining two summons at the same time. This power extends to<br>controlling any type of conjured or conceived entity, even outside the school of Conjuration.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0153CE:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+NextPerk: 185737:Requiem.esp
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModCommandedActorLimit
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 1

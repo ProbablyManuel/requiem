@@ -1,0 +1,51 @@
+FormKey: AE3B5B:Requiem.esp
+EditorID: REQ_DEPRECATED_Alch_HealingPoultice4
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AddItemsOnEffectStart
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: ItemsToAdd
+      Objects:
+      - Name: ''
+        Object: AE3B5A:Requiem.esp
+    - MutagenObjectType: ScriptIntListProperty
+      Name: Amount
+      Data:
+      - 1
+Name:
+  TargetLanguage: English
+  Value: Healing Poultice
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+Keywords:
+- 0F8A4E:Skyrim.esm
+- 66CB39:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.5
+SpellmakingArea: 15
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: HealRateMult
+  Association: 66CB39:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: A herbal medicine which is rubbed on the skin, forming a crust that enhances natural regeneration. Stress suppresses its effect, so it's often applied before sleep. It contains enough amount for nearby companions and three additional servings.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

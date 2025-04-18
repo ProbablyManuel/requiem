@@ -1,0 +1,26 @@
+FormKey: 0F46C9:Skyrim.esm
+EditorID: REQ_Skyforge_Weapon_NordHero_Greatsword
+Items:
+- Item:
+    Item: 05ACE5:Skyrim.esm
+    Count: 4
+- Item:
+    Item: 05AD93:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0F46D1:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 0A3115:Skyrim.esm
+WorkbenchKeyword: 0F46CE:Skyrim.esm
+CreatedObjectCount: 1

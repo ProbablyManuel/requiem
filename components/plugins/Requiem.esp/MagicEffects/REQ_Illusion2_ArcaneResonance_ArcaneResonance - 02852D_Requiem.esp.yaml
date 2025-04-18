@@ -1,0 +1,36 @@
+FormKey: 02852D:Requiem.esp
+EditorID: REQ_Illusion2_ArcaneResonance_ArcaneResonance
+Name:
+  TargetLanguage: English
+  Value: Arcane Resonance
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoHitEvent
+- NoMagnitude
+- PowerAffectsDuration
+MagicSkill: Illusion
+CastingLight: 06B110:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingArea: 5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 7B0FB1:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 06B10F:Skyrim.esm
+DualCastArt: 5323B8:Requiem.esp
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 000F8B:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster creates a loud noise at the target location, distracting nearby enemies. If empowered, the noise binds the attention of nearby targets to its origin, decreasing their ability to spot distant targets by <40>% for <dur> seconds.

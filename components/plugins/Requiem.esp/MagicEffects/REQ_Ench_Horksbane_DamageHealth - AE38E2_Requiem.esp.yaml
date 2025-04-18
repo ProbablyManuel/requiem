@@ -1,0 +1,28 @@
+FormKey: AE38E2:Requiem.esp
+EditorID: REQ_Ench_Horksbane_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Staggers horkers and deals <mag> magic damage for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 0131FC:Skyrim.esm
+  ComparisonValue: 1

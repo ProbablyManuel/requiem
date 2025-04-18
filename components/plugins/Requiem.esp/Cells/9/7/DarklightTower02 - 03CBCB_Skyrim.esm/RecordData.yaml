@@ -1,0 +1,65 @@
+FormKey: 03CBCB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DarklightTower02
+Version2: 14
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Darklight Chambers
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00121A1E'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00222D2C'
+  FogNear: 340
+  FogFar: 12000
+  DirectionalFade: 1
+  FogClipDistance: 12000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00222D2C'
+    Scale: 1
+  FogFarColor: '#00222D2C'
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01915D:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC07:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 04F47B:Skyrim.esm
+  Base: 020665:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01915D:Skyrim.esm
+  Placement:
+    Position: 3957, 1126.8444, 6345.8896
+    Rotation: -0.050000053, -0, 4.783188
+MajorFlags:
+- 0x40000

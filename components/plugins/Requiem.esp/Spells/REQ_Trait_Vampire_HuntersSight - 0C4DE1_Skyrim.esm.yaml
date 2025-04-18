@@ -1,0 +1,17 @@
+FormKey: 0C4DE1:Skyrim.esm
+EditorID: REQ_Trait_Vampire_HuntersSight
+Name:
+  TargetLanguage: English
+  Value: Vampire's Sight
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Your vampiric blood allows you to improve your vision at will, revealing all secrets the dark tries to hold from you...
+Type: LesserPower
+ChargeTime: 0.5
+CastType: FireAndForget
+Effects:
+- BaseEffect: 06B10C:Skyrim.esm
+  Data:
+    Duration: 86400

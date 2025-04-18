@@ -1,0 +1,23 @@
+FormKey: 0273B1:unofficial skyrim special edition patch.esp
+EditorID: REQ_Skyforge_Arrow_NordHero
+Items:
+- Item:
+    Item: 034182:Skyrim.esm
+    Count: 24
+- Item:
+    Item: 05ACE5:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0F46D1:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 0EAFDF:Skyrim.esm
+WorkbenchKeyword: 0F46CE:Skyrim.esm
+CreatedObjectCount: 24

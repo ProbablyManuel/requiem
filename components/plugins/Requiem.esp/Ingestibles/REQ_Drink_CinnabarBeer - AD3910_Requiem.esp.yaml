@@ -1,0 +1,27 @@
+FormKey: AD3910:Requiem.esp
+EditorID: REQ_Drink_CinnabarBeer
+Name:
+  TargetLanguage: English
+  Value: Cinnabar Beer
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Mead01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 10
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: AD390E:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 300
+- BaseEffect: AD390D:Requiem.esp
+  Data:
+    Magnitude: 0.1
+    Duration: 450

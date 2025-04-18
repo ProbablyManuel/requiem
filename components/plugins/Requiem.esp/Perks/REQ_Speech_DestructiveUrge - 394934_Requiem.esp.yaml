@@ -1,0 +1,39 @@
+FormKey: 394934:Requiem.esp
+EditorID: REQ_Speech_DestructiveUrge
+Name:
+  TargetLanguage: English
+  Value: Destructive Urge
+Description:
+  TargetLanguage: English
+  Value: The horrors that the Thu'um can inflict are etched into your mind just as you have seen them etched into stone.<br>Your Thu'um will wreak even greater havoc among your unfortunate foes.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0D02C5:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 036192:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 046B99:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 3FCA4C:Requiem.esp
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.15

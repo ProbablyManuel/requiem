@@ -1,0 +1,28 @@
+FormKey: 0C07C6:Skyrim.esm
+EditorID: REQ_Sneak_Stealth2
+Name:
+  TargetLanguage: English
+  Value: Stealth
+Description:
+  TargetLanguage: English
+  Value: You are even harder to detect when sneaking while not wearing any heavy armor.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE126:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 5
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  EntryPoint: ModDetectionSneakSkill
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 35

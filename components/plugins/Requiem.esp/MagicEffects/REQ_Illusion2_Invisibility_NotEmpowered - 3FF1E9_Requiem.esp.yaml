@@ -1,0 +1,25 @@
+FormKey: 3FF1E9:Requiem.esp
+EditorID: REQ_Illusion2_Invisibility_NotEmpowered
+Name:
+  TargetLanguage: English
+  Value: Not Empowered
+Flags:
+- NoArea
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If not empowered, the spell breaks if the caster runs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData

@@ -1,0 +1,18 @@
+FormKey: 7E76F4:Requiem.esp
+EditorID: REQ_DEPRECATED_Trait_MassEffect_BasePenalty
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Mass Effect base penalty'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 7E76F3:Requiem.esp
+  Data:
+    Magnitude: 1

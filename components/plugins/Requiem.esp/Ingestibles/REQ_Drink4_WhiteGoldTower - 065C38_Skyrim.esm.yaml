@@ -1,0 +1,34 @@
+FormKey: 065C38:Skyrim.esm
+EditorID: REQ_Drink4_WhiteGoldTower
+ObjectBounds:
+  First: -5, -7, 0
+  Second: 5, 6, 21
+Name:
+  TargetLanguage: English
+  Value: White-Gold Tower
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Common\Flagon01.nif
+  Data: 0x020000000400000000000000FF000204646473008EAEA792B4F40D04646473008EAEA792BF8E4DFA64647300262C333BFF245F18646473007F66A5C0
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 100
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 60
+    Duration: 600
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 900
+- BaseEffect: AE372C:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 600

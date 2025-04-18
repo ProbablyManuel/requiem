@@ -1,0 +1,48 @@
+FormKey: 035369:Skyrim.esm
+EditorID: REQ_Artifact_StaffOfMagnus
+ObjectBounds:
+  First: -7, -46, -8
+  Second: 7, 66, 5
+Name:
+  TargetLanguage: English
+  Value: Staff of Magnus
+Model:
+  File: Weapons\StaffofMagnus\StaffofMagnus.nif
+  Data: 0x0200000006000000000000003462C1CC64647300396375E38632BF8F64647300396375E3228A63F664647300396375E39E4462BC0000000000000000188FFC7C64647300262C333B3C63B61664647300396375E3
+ObjectEffect: 0239A0:Skyrim.esm
+EnchantmentAmount: 50000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E716:Skyrim.esm
+- 0937A4:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The Eye of Magnus has charged the staff with almost god-like power. It absorbs <100> points of health and <500> points of magicka per second. When the target has no magicka left, health is absorbed instead.
+FirstPersonModel: 0E2FC9:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03DE2C:Skyrim.esm
+UnequipSound: 03DE2D:Skyrim.esm
+BasicStats:
+  Value: 70000
+  Weight: 8
+Data:
+  AnimationType: Staff
+  Unused: 0x000000
+  Speed: 2
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+Critical:
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

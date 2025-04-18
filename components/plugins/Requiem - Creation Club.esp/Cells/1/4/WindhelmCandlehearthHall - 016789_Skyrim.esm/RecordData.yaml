@@ -1,0 +1,60 @@
+FormKey: 016789:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WindhelmCandlehearthHall
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Candlehearth Hall
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#007C7C7C'
+  DirectionalColor: '#004A4A4A'
+  FogNearColor: '#00FAECC0'
+  FogFar: 5000
+  DirectionalRotationZ: 90
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00887C81'
+    DirectionalXMinus: '#000C0E0D'
+    DirectionalYPlus: '#007C817C'
+    DirectionalYMinus: '#007C767C'
+    DirectionalZPlus: '#00170E04'
+    DirectionalZMinus: '#00DEB88D'
+    Specular: '#003E4A59'
+    Scale: 1
+  FogFarColor: '#003E4A59'
+  FogMax: 1
+LightingTemplate: 0C0C76:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0209EA:Skyrim.esm
+Owner: 045F5E:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 017035:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 00081C:ccbgssse060-ba_dragonscale.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 000819:ccbgssse060-ba_dragonscale.esl
+  RagdollData: 0x00F90443B03905410000803A80D295BFDD0FC9BF000000B1C976484000301EC3BA9E1740060072B900E8542C00000080000000806AA5C93F
+  Owner: 000DB1:Skyrim.esm
+  LocationReference: 0209EA:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 14.377893, -3689.5718, 123.74316
+MajorFlags:
+- 0x40000

@@ -1,0 +1,3142 @@
+FormKey: 00377D:Dawnguard.esm
+EditorID: SnowElfRace
+Name:
+  TargetLanguage: English
+  Value: Snow Elf
+Description:
+  TargetLanguage: English
+  Value: ''
+Skin: 015C1C:Dawnguard.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Hands
+  - Forearms
+  - Ring
+  - Shield
+  - FX01
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013794:Skyrim.esm
+- 586728:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: Alteration
+  Boost: 5
+SkillBoost2:
+  Skill: Conjuration
+  Boost: 5
+SkillBoost3:
+  Skill: Destruction
+  Boost: 5
+SkillBoost4:
+  Skill: Illusion
+  Boost: 10
+SkillBoost5:
+  Skill: Restoration
+  Boost: 5
+SkillBoost6:
+  Skill: Enchanting
+  Boost: 5
+Height:
+  Male: 1.08
+  Female: 1.08
+Weight:
+  Male: 0.5
+  Female: 0.5
+Flags:
+- FaceGenHead
+- Swims
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- AllowPcDialog
+- AllowPickpocket
+- CanPickupItems
+- CanDualWield
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 30
+- Key: Magicka
+  Value: 70
+- Key: Stamina
+  Value: 40
+BaseCarryWeight: 80
+BaseMass: 1
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+HeadBipedObject: Head
+HairBipedObject: Hair
+ShieldBipedObject: Shield
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 2
+- Key: Stamina
+  Value: 1.5
+UnarmedDamage: 4
+UnarmedReach: 78
+BodyBipedObject: Body
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Character\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: actors\Character\Character Assets Female\skeleton_female.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 013AF0:Skyrim.esm
+  Female: 013AF1:Skyrim.esm
+DecapitateArmors:
+  Male: 0DB5D0:Skyrim.esm
+  Female: 0DB5D0:Skyrim.esm
+DefaultHairColors:
+  Male: 00378E:Dawnguard.esm
+  Female: 0A042E:Skyrim.esm
+NumberOfTintsInList: 809
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartSprintLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartH2HCombo
+- AttackData:
+    DamageMult: 2
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartInPlace
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_SprintLeftHand
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_Sprint
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 0.5
+  AttackEvent: attackPowerStartDualWield
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E8:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartBackLeftHand
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_2HWSprint
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartDualWield
+- AttackData:
+    DamageMult: 2
+    Chance: 0.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForward
+- AttackData:
+    DamageMult: 0.5
+    Chance: 0.5
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HRight
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_2HMSprint
+- AttackData:
+    DamageMult: 2
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartRight
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartRightLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartLeftLeftHand
+- AttackData:
+    DamageMult: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartSprint
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardH2HRightHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartInPlaceLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 0.1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E8:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartBackward
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HLeft
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardH2HLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartLeft
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.33
+    Flags:
+    - BashAttack
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    AttackType: 000F54:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: bashPowerStart
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 00001D:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Character\DefaultMale.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Character\DefaultFemale.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0C190F:Skyrim.esm
+DecapitationFX: 0A6EF5:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Hair
+  Value: Hair
+- Key: Body
+  Value: BODY
+- Key: Hands
+  Value: Hands
+- Key: Forearms
+  Value: Forearms
+- Key: Amulet
+  Value: Amulet
+- Key: Ring
+  Value: Ring
+- Key: Feet
+  Value: Feet
+- Key: Calves
+  Value: Calves
+- Key: Shield
+  Value: SHIELD
+- Key: Tail
+  Value: Unnamed
+- Key: LongHair
+  Value: LongHair
+- Key: Circlet
+  Value: Circlet
+- Key: Ears
+  Value: Ears
+- Key: DecapitateHead
+  Value: DecapitateHead
+- Key: Decapitate
+  Value: Decapitate
+- Key: FX01
+  Value: FX01
+EquipmentFlags:
+- HandToHand
+- OneHandSword
+- OneHandDagger
+- OneHandAxe
+- OneHandMace
+- TwoHandSword
+- TwoHandAxe
+- Bow
+- Staff
+- Spell
+- Shield
+- Torch
+- Crossbow
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+- 025BEE:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+FaceFxPhonemes:
+  Aah_LipBigAah:
+    Name: Aah
+    EY: 0.6
+    AE: 0.8
+    AA: 1
+    AW: 0.2
+    AH: 0.8
+    AO: 0.1
+    Y: 0.2
+    HH: 0.6
+    G: 0.4
+  BigAah_LipDST:
+    Name: BigAah
+    OW: 0.8
+    UH: 0.5
+    AX: 0.8
+  BMP_LipEee:
+    Name: BMP
+    M: 1
+    B: 1
+    P: 0.9
+  ChJSh_LipFV:
+    Name: ChJSh
+    SH: 0.8
+    ZH: 0.7
+    JH: 1
+    G: 0.3
+    CH: 1
+  DST_LipK:
+    Name: DST
+    S: 0.9
+    Z: 0.8
+    DH: 0.2
+    D: 1
+    T: 0.8
+  Eee_LipL:
+    Name: Eee
+    IY: 1
+    IH: 0.2
+    EY: 0.3
+    AY: 0.2
+    OY: 0.3
+    Y: 0.4
+  Eh_LipR:
+    Name: Eh
+    IH: 0.7
+    EH: 1
+  FV_LipTh:
+    Name: FV
+    F: 0.8
+    V: 1
+  I:
+    Name: I
+    AY: 0.8
+    ER: 0.5
+    Y: 0.4
+  K:
+    Name: K
+    K: 1
+  N:
+    Name: N
+    N: 1
+    NG: 0.9
+    L: 0.6
+  Oh:
+    Name: Oh
+    AW: 0.6
+    AH: 0.2
+    AO: 0.5
+    OY: 0.6
+    OW: 0.2
+    UH: 0.2
+  OohQ:
+    Name: OohQ
+    UW: 1
+  R:
+    Name: R
+    ER: 0.3
+    R: 1
+  Th:
+    Name: Th
+    TH: 1
+    DH: 0.8
+    L: 0.2
+  W:
+    Name: W
+    AO: 0.2
+    W: 1
+HeadData:
+  Male:
+    HeadParts:
+    - Number: 0
+      Head: 051631:Skyrim.esm
+    - Number: 1
+      Head: 003784:Dawnguard.esm
+    - Number: 2
+      Head: 003789:Dawnguard.esm
+    - Number: 3
+      Head: 00378C:Dawnguard.esm
+    - Number: 4
+      Head: 003786:Dawnguard.esm
+    AvailableMorphs:
+      Nose:
+        Data: 0x3EFF1F00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Brow:
+        Data: 0xFFFF1F00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Eye:
+        Data: 0xC001E69E3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Lip:
+        Data: 0x3EFF1F00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    RacePresets:
+    - 05EF9C:Skyrim.esm
+    - 079BEE:Skyrim.esm
+    - 079C54:Skyrim.esm
+    - 079C96:Skyrim.esm
+    - 099D5D:Skyrim.esm
+    - 10AB7B:Skyrim.esm
+    - 10AB7C:Skyrim.esm
+    - 10AB7D:Skyrim.esm
+    - 10AB7E:Skyrim.esm
+    - 10AB7F:Skyrim.esm
+    AvailableHairColors:
+    - 0A042C:Skyrim.esm
+    - 0A042D:Skyrim.esm
+    - 0A042E:Skyrim.esm
+    - 0A042F:Skyrim.esm
+    - 0A0430:Skyrim.esm
+    - 0A0431:Skyrim.esm
+    - 0A0432:Skyrim.esm
+    - 0A0433:Skyrim.esm
+    - 0A0434:Skyrim.esm
+    - 0A0435:Skyrim.esm
+    - 0A0436:Skyrim.esm
+    - 0A0437:Skyrim.esm
+    - 0A0438:Skyrim.esm
+    - 0A0439:Skyrim.esm
+    - 0F7565:Skyrim.esm
+    - 00378E:Dawnguard.esm
+    FaceDetails:
+    - 038A60:Skyrim.esm
+    - 0F2047:Skyrim.esm
+    - 0F2048:Skyrim.esm
+    - 0F2049:Skyrim.esm
+    - 0F204A:Skyrim.esm
+    - 0F204B:Skyrim.esm
+    DefaultFaceTexture: 038A60:Skyrim.esm
+    TintMasks:
+    - Index: 1
+      FileName: Actors\Character\Character Assets\TintMasks\SkinTone.dds
+      MaskType: SkinTone
+      Presets:
+      - Color: 046787:Skyrim.esm
+        DefaultValue: 1
+        Index: 55
+      - Color: 046788:Skyrim.esm
+        DefaultValue: 1
+        Index: 56
+      - Color: 04678C:Skyrim.esm
+        DefaultValue: 1
+        Index: 57
+      - Color: 0467A0:Skyrim.esm
+        DefaultValue: 1
+        Index: 58
+      - Color: 0B998A:Skyrim.esm
+        DefaultValue: 1
+        Index: 59
+    - Index: 2
+      FileName: Actors\Character\Character Assets\TintMasks\MaleUpperEyeSocket.dds
+      MaskType: EyeSocketUpper
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 60
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 61
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 62
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 63
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 64
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 65
+    - Index: 3
+      FileName: Actors\Character\Character Assets\TintMasks\MaleLowerEyeSocket.dds
+      MaskType: EyeSocketLower
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 66
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 67
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 68
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 69
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 70
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 71
+    - Index: 5
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHead_Cheeks.dds
+      MaskType: CheekColor
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 72
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 73
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 74
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 75
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 76
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 77
+    - Index: 6
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHead_Cheeks2.dds
+      MaskType: CheekColorLower
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 78
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 79
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 80
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 81
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 82
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 83
+    - Index: 7
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHead_FrownLines.dds
+      MaskType: LaughLines
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 84
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 85
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 86
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 87
+    - Index: 8
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadNord_Lips.dds
+      MaskType: LipColor
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 88
+      - Color: 0B9B77:Skyrim.esm
+        DefaultValue: 1
+        Index: 89
+      - Color: 0B9B78:Skyrim.esm
+        DefaultValue: 1
+        Index: 90
+      - Color: 0B9B79:Skyrim.esm
+        DefaultValue: 1
+        Index: 91
+      - Color: 0B9B7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 92
+      - Color: 0B9B7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 93
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 94
+    - Index: 9
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHead_Nose.dds
+      MaskType: Nose
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 95
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 96
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 97
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 98
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 99
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 100
+    - Index: 10
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadHuman_ForeHead.dds
+      MaskType: Forehead
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 101
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 102
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 103
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 104
+    - Index: 11
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadHuman_Chin.dds
+      MaskType: Chin
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 105
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 106
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 107
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 108
+    - Index: 12
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadHuman_Neck.dds
+      MaskType: Neck
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 109
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 110
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 111
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 112
+    - Index: 4
+      FileName: Actors\Character\Character Assets\TintMasks\RedGuardMaleEyeLinerStyle_01.dds
+      MaskType: Eyeliner
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 113
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.58
+        Index: 114
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.75
+        Index: 115
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 116
+    - Index: 13
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_01.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 117
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 118
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 119
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 120
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 121
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 122
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 123
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 124
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 125
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 126
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 127
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 128
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 129
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 130
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 131
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 132
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 133
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 134
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 135
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 136
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 137
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 138
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 139
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 140
+    - Index: 14
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_02.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 141
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 142
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 143
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 144
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 145
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 146
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 147
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 148
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 149
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 150
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 151
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 152
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 153
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 154
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 155
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 156
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 157
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 158
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 159
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 160
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 161
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 162
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 163
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 164
+    - Index: 15
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_03.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 165
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 166
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 167
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 168
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 169
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 170
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 171
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 172
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 173
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 174
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 175
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 176
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 177
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 178
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 179
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 180
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 181
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 182
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 183
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 184
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 185
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 186
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 187
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 188
+    - Index: 16
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_04.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 189
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 190
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 191
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 192
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 193
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 194
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 195
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 196
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 197
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 198
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 199
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 200
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 201
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 202
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 203
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 204
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 205
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 206
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 207
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 208
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 209
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 210
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 211
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 212
+    - Index: 17
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_05.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 213
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 214
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 215
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 216
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 217
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 218
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 219
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 220
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 221
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 222
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 223
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 224
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 225
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 226
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 227
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 228
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 229
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 230
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 231
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 232
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 233
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 234
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 235
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 236
+    - Index: 18
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_06.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 237
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 238
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 239
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 240
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 241
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 242
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 243
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 244
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 245
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 246
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 247
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 248
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 249
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 250
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 251
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 252
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 253
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 254
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 255
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 256
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 257
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 258
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 259
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 260
+    - Index: 19
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_07.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 261
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 262
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 263
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 264
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 265
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 266
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 267
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 268
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 269
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 270
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 271
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 272
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 273
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 274
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 275
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 276
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 277
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 278
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 279
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 280
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 281
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 282
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 283
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 284
+    - Index: 20
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_08.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 285
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 286
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 287
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 288
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 289
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 290
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 291
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 292
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 293
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 294
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 295
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 296
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 297
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 298
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 299
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 300
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 301
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 302
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 303
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 304
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 305
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 306
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 307
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 308
+    - Index: 21
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_09.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 309
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 310
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 311
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 312
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 313
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 314
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 315
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 316
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 317
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 318
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 319
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 320
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 321
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 322
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 323
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 324
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 325
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 326
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 327
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 328
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 329
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 330
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 331
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 332
+    - Index: 22
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadWarPaint_10.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 333
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 334
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 335
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 336
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 337
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 338
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 339
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 340
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 341
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 342
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 343
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 344
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 345
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 346
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 347
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 348
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 349
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 350
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 351
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 352
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 353
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 354
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 355
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 356
+    - Index: 23
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadDirt_01.dds
+      MaskType: Dirt
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 357
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.43
+        Index: 358
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 1
+        Index: 359
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 360
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 361
+    - Index: 49
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadDirt_02.dds
+      MaskType: Dirt
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 362
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 363
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 1
+        Index: 364
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 365
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 366
+    - Index: 50
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadDirt_03.dds
+      MaskType: Dirt
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 367
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 368
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 1
+        Index: 369
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 370
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 371
+  Female:
+    HeadParts:
+    - Number: 0
+      Head: 05161E:Skyrim.esm
+    - Number: 1
+      Head: 05150F:Skyrim.esm
+    - Number: 2
+      Head: 05153F:Skyrim.esm
+    - Number: 3
+      Head: 0E4D7C:Skyrim.esm
+    - Number: 4
+      Head: 08CA6F:Skyrim.esm
+    AvailableMorphs:
+      Nose:
+        Data: 0x3EFF1F00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Brow:
+        Data: 0xFFFF1F00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Eye:
+        Data: 0xC001E01F00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Lip:
+        Data: 0x3EFE1F00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    RacePresets:
+    - 079BE6:Skyrim.esm
+    - 079BEB:Skyrim.esm
+    - 079BEC:Skyrim.esm
+    - 079BED:Skyrim.esm
+    - 099D5E:Skyrim.esm
+    - 10AB76:Skyrim.esm
+    - 10AB77:Skyrim.esm
+    - 10AB78:Skyrim.esm
+    - 10AB79:Skyrim.esm
+    - 10AB7A:Skyrim.esm
+    AvailableHairColors:
+    - 0A042C:Skyrim.esm
+    - 0A042D:Skyrim.esm
+    - 0A042E:Skyrim.esm
+    - 0A042F:Skyrim.esm
+    - 0A0430:Skyrim.esm
+    - 0A0431:Skyrim.esm
+    - 0A0432:Skyrim.esm
+    - 0A0433:Skyrim.esm
+    - 0A0434:Skyrim.esm
+    - 0A0435:Skyrim.esm
+    - 0A0436:Skyrim.esm
+    - 0A0437:Skyrim.esm
+    - 0A0438:Skyrim.esm
+    - 0A0439:Skyrim.esm
+    - 0F7565:Skyrim.esm
+    FaceDetails:
+    - 038A5F:Skyrim.esm
+    - 0F205F:Skyrim.esm
+    - 0F2060:Skyrim.esm
+    - 0F2061:Skyrim.esm
+    - 0F2062:Skyrim.esm
+    DefaultFaceTexture: 038A5F:Skyrim.esm
+    TintMasks:
+    - Index: 24
+      FileName: Actors\Character\Character Assets\TintMasks\SkinTone.dds
+      MaskType: SkinTone
+      PresetDefault: 10AB53:Skyrim.esm
+      Presets:
+      - Color: 10AB53:Skyrim.esm
+        DefaultValue: 1
+        Index: 805
+      - Color: 10AB54:Skyrim.esm
+        DefaultValue: 1
+        Index: 806
+      - Color: 10AB55:Skyrim.esm
+        DefaultValue: 1
+        Index: 807
+      - Color: 10AB56:Skyrim.esm
+        DefaultValue: 1
+        Index: 808
+      - Color: 10AB57:Skyrim.esm
+        DefaultValue: 1
+        Index: 809
+    - Index: 25
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleUpperEyeSocket.dds
+      MaskType: EyeSocketUpper
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 377
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.26
+        Index: 378
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 379
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 380
+      - Color: 0E6E05:Skyrim.esm
+        DefaultValue: 0.19
+        Index: 381
+      - Color: 0E6E0E:Skyrim.esm
+        DefaultValue: 0.23
+        Index: 382
+      - Color: 0E6E04:Skyrim.esm
+        DefaultValue: 0.51
+        Index: 383
+      - Color: 0E6E06:Skyrim.esm
+        DefaultValue: 0
+        Index: 384
+      - Color: 0E6E03:Skyrim.esm
+        DefaultValue: 0.63
+        Index: 385
+      - Color: 0E6E02:Skyrim.esm
+        DefaultValue: 0.75
+        Index: 386
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 387
+      - Color: 026A9C:Skyrim.esm
+        DefaultValue: 1
+        Index: 388
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 1
+        Index: 389
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 390
+    - Index: 26
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleLowerEyeSocket.dds
+      MaskType: EyeSocketLower
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 391
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.45
+        Index: 392
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 393
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.83
+        Index: 394
+      - Color: 0E6E05:Skyrim.esm
+        DefaultValue: 0.34
+        Index: 395
+      - Color: 0E6E0E:Skyrim.esm
+        DefaultValue: 0.53
+        Index: 396
+      - Color: 0E6E04:Skyrim.esm
+        DefaultValue: 0.71
+        Index: 397
+      - Color: 0E6E03:Skyrim.esm
+        DefaultValue: 0.63
+        Index: 398
+      - Color: 0E6E02:Skyrim.esm
+        DefaultValue: 0.75
+        Index: 399
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 400
+    - Index: 27
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHead_Cheeks.dds
+      MaskType: CheekColor
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 401
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.45
+        Index: 402
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 403
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.83
+        Index: 404
+      - Color: 0E6E05:Skyrim.esm
+        DefaultValue: 0.34
+        Index: 405
+      - Color: 0E6E0E:Skyrim.esm
+        DefaultValue: 0.53
+        Index: 406
+      - Color: 0E6E04:Skyrim.esm
+        DefaultValue: 0.71
+        Index: 407
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 408
+    - Index: 28
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHead_Cheeks2.dds
+      MaskType: CheekColorLower
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 409
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.45
+        Index: 410
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 411
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.83
+        Index: 412
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 413
+    - Index: 29
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHead_FrownLines.dds
+      MaskType: LaughLines
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 414
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.47
+        Index: 415
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 416
+    - Index: 30
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHighElf_Lips.dds
+      MaskType: LipColor
+      PresetDefault: 0E6E12:Skyrim.esm
+      Presets:
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.38
+        Index: 417
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 418
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.78
+        Index: 419
+      - Color: 0E6E0E:Skyrim.esm
+        DefaultValue: 0.35
+        Index: 420
+      - Color: 0E6E04:Skyrim.esm
+        DefaultValue: 0.56
+        Index: 421
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 0.61
+        Index: 422
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 423
+    - Index: 31
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHuman_Nose.dds
+      MaskType: Nose
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 424
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 425
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 426
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.89
+        Index: 427
+      - Color: 026A9C:Skyrim.esm
+        DefaultValue: 1
+        Index: 428
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 429
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 430
+    - Index: 32
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHuman_ForeHead.dds
+      MaskType: Forehead
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 431
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.47
+        Index: 432
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.55
+        Index: 433
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 434
+    - Index: 33
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHuman_Chin.dds
+      MaskType: Chin
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 435
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 436
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 437
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.89
+        Index: 438
+      - Color: 026A9C:Skyrim.esm
+        DefaultValue: 1
+        Index: 439
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 440
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 441
+    - Index: 34
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHuman_Neck.dds
+      MaskType: Neck
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 442
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.61
+        Index: 443
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 1
+        Index: 444
+    - Index: 36
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_01.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 445
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 446
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 447
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 448
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 449
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 450
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 451
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 452
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 453
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 454
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 455
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 456
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 457
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 458
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 459
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 460
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 461
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 462
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 463
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 464
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 465
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 466
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 467
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 468
+    - Index: 37
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_02.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 469
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 470
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 471
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 472
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 473
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 474
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 475
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 476
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 477
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 478
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 479
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 480
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 481
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 482
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 483
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 484
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 485
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 486
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 487
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 488
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 489
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 490
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 491
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 492
+    - Index: 38
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_03.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 493
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 494
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 495
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 496
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 497
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 498
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 499
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 500
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 501
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 502
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 503
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 504
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 505
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 506
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 507
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 508
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 509
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 510
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 511
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 512
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 513
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 514
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 515
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 516
+    - Index: 39
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_04.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 517
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 518
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 519
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 520
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 521
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 522
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 523
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 524
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 525
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 526
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 527
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 528
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 529
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 530
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 531
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 532
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 533
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 534
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 535
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 536
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 537
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 538
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 539
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 540
+    - Index: 40
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_05.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 541
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 542
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 543
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 544
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 545
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 546
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 547
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 548
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 549
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 550
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 551
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 552
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 553
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 554
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 555
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 556
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 557
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 558
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 559
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 560
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 561
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 562
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 563
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 564
+    - Index: 41
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_06.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 565
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 566
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 567
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 568
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 569
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 570
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 571
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 572
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 573
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 574
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 575
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 576
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 577
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 578
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 579
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 580
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 581
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 582
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 583
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 584
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 585
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 586
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 587
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 588
+    - Index: 42
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_07.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 589
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 590
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 591
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 592
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 593
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 594
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 595
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 596
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 597
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 598
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 599
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 600
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 601
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 602
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 603
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 604
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 605
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 606
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 607
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 608
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 609
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 610
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 611
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 612
+    - Index: 43
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_08.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 613
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 614
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 615
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 616
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 617
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 618
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 619
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 620
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 621
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 622
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 623
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 624
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 625
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 626
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 627
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 628
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 629
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 630
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 631
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 632
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 633
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 634
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 635
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 636
+    - Index: 44
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_09.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 637
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 638
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 639
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 640
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 641
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 642
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 643
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 644
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 645
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 646
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 647
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 648
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 649
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 650
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 651
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 652
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 653
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 654
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 655
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 656
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 657
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 658
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 659
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 660
+    - Index: 45
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadWarPaint_10.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 661
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 662
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 663
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 664
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 665
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 666
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 667
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 668
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 669
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 670
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 671
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 672
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 673
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 674
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 675
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 676
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 677
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 678
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 679
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 680
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 681
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 682
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 683
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 684
+    - Index: 51
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHighElfWarPaint_01.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 685
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 686
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 687
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 688
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 689
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 690
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 691
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 692
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 693
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 694
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 695
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 696
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 697
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 698
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 699
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 700
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 701
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 702
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 703
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 704
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 705
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 706
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 707
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 708
+    - Index: 52
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHighElfWarPaint_02.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 709
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 710
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 711
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 712
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 713
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 714
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 715
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 716
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 717
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 718
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 719
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 720
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 721
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 722
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 723
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 724
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 725
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 726
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 727
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 728
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 729
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 730
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 731
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 732
+    - Index: 53
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHighElfWarPaint_03.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 733
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 734
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 735
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 736
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 737
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 738
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 739
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 740
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 741
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 742
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 743
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 744
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 745
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 746
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 747
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 748
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 749
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 750
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 751
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 752
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 753
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 754
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 755
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 756
+    - Index: 54
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadHighElfWarPaint_04.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 757
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 758
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 759
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 760
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.44
+        Index: 761
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.28
+        Index: 762
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 1
+        Index: 763
+      - Color: 099D61:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 764
+      - Color: 099D62:Skyrim.esm
+        DefaultValue: 1
+        Index: 765
+      - Color: 099D63:Skyrim.esm
+        DefaultValue: 1
+        Index: 766
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 1
+        Index: 767
+      - Color: 099D6B:Skyrim.esm
+        DefaultValue: 0.7
+        Index: 768
+      - Color: 099D70:Skyrim.esm
+        DefaultValue: 1
+        Index: 769
+      - Color: 099D71:Skyrim.esm
+        DefaultValue: 1
+        Index: 770
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 1
+        Index: 771
+      - Color: 099D73:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 772
+      - Color: 099D74:Skyrim.esm
+        DefaultValue: 1
+        Index: 773
+      - Color: 099D75:Skyrim.esm
+        DefaultValue: 1
+        Index: 774
+      - Color: 099D76:Skyrim.esm
+        DefaultValue: 1
+        Index: 775
+      - Color: 099D77:Skyrim.esm
+        DefaultValue: 1
+        Index: 776
+      - Color: 099D78:Skyrim.esm
+        DefaultValue: 1
+        Index: 777
+      - Color: 099D79:Skyrim.esm
+        DefaultValue: 1
+        Index: 778
+      - Color: 099D7A:Skyrim.esm
+        DefaultValue: 1
+        Index: 779
+      - Color: 099D7B:Skyrim.esm
+        DefaultValue: 1
+        Index: 780
+    - Index: 35
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleNordEyeLinerStyle_01.dds
+      MaskType: Eyeliner
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 781
+      - Color: 0E6E12:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 782
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.52
+        Index: 783
+      - Color: 0E6E11:Skyrim.esm
+        DefaultValue: 0.76
+        Index: 784
+      - Color: 0E6E0E:Skyrim.esm
+        DefaultValue: 0.41
+        Index: 785
+      - Color: 0E6E04:Skyrim.esm
+        DefaultValue: 0.69
+        Index: 786
+      - Color: 0E6E03:Skyrim.esm
+        DefaultValue: 0.63
+        Index: 787
+      - Color: 0E6E02:Skyrim.esm
+        DefaultValue: 0.75
+        Index: 788
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 789
+    - Index: 46
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadDirt_01.dds
+      MaskType: Dirt
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 790
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.43
+        Index: 791
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 1
+        Index: 792
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 793
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 794
+    - Index: 47
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadDirt_02.dds
+      MaskType: Dirt
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 795
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 796
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 1
+        Index: 797
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 798
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 799
+    - Index: 48
+      FileName: Actors\Character\Character Assets\TintMasks\FemaleHeadDirt_03.dds
+      MaskType: Dirt
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 800
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.42
+        Index: 801
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 1
+        Index: 802
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 803
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 804
+MorphRace: 013743:Skyrim.esm

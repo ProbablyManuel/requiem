@@ -1,0 +1,21 @@
+FormKey: 0059A9:Dawnguard.esm
+EditorID: REQ_Werewolf_TotemOfThePredator
+Name:
+  TargetLanguage: English
+  Value: Totem of the Predator
+Description:
+  TargetLanguage: English
+  Value: Your Totem of the Hunt Howl receives an extended range,<br> and shows whether the targets are not in combat, searching, or actively in combat.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0059A4:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 90
+  Unknown: 0x000000

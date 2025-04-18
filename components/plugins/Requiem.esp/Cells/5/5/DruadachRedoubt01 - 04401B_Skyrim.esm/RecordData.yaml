@@ -1,0 +1,66 @@
+FormKey: 04401B:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DruadachRedoubt01
+Version2: 11
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Druadach Redoubt Cave
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#004A6275'
+  FogNearColor: '#00172116'
+  FogNear: 750
+  FogFar: 4500
+  DirectionalRotationZ: 270
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#001E1D25'
+    DirectionalXMinus: '#00191D22'
+    DirectionalYPlus: '#001C1E24'
+    DirectionalYMinus: '#001C1B24'
+    DirectionalZPlus: '#000D0D10'
+    DirectionalZMinus: '#002A2C37'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128C:Skyrim.esm
+WaterHeight: 0
+Location: 01916F:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5856:Skyrim.esm
+AcousticSpace: 02B961:Skyrim.esm
+EncounterZone: 03EC0F:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 083D91:Skyrim.esm
+  Version2: 1
+  Base: 020654:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01916F:Skyrim.esm
+  Placement:
+    Position: 538.8344, 2634.367, 7744.221
+    Rotation: -0.025196431, -0.124960326, 0.80314136
+MajorFlags:
+- 0x40000

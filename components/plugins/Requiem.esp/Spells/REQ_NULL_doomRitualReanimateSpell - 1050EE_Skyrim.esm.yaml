@@ -1,0 +1,20 @@
+FormKey: 1050EE:Skyrim.esm
+EditorID: REQ_NULL_doomRitualReanimateSpell
+Name:
+  TargetLanguage: English
+  Value: reanimate spell
+MenuDisplayObject: 1097CC:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 371
+Flags:
+- ManualCostCalc
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0E152A:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Area: 75
+    Duration: 180

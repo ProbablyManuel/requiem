@@ -1,0 +1,27 @@
+FormKey: 07224C:Skyrim.esm
+EditorID: REQ_Food_Meat_Cooked_Goat
+ObjectBounds:
+  First: -7, -14, -8
+  Second: 7, 14, 8
+Name:
+  TargetLanguage: English
+  Value: Roasted Goat Leg
+Keywords:
+- 08CDEA:Skyrim.esm
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\GoatMeatCooked.nif
+  Data: 0x020000000200000000000000FD9A02CA64647300604DDD5C6C22E12664647300604DDD5C
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

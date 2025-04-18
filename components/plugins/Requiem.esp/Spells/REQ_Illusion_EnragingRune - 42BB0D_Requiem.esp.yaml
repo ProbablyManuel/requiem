@@ -1,0 +1,31 @@
+FormKey: 42BB0D:Requiem.esp
+EditorID: REQ_Illusion_EnragingRune
+Name:
+  TargetLanguage: English
+  Value: Enraging Rune
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetActor
+Range: 100000
+HalfCostPerk: 0C44C4:Skyrim.esm
+Effects:
+- BaseEffect: 86FA85:Requiem.esp
+  Data:
+    Magnitude: 500
+    Duration: 30
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 42BB0B:Requiem.esp
+    ComparisonValue: 1

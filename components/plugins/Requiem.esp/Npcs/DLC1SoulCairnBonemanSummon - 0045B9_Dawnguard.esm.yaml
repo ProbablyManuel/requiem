@@ -1,0 +1,140 @@
+FormKey: 0045B9:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1SoulCairnBonemanSummon
+Version2: 6
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Summonable
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 6
+  SpeedMultiplier: 100
+  TemplateFlags:
+  - AIData
+  - AIPackages
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 70
+Voice: 0BFB2B:Skyrim.esm
+Template: 0071AA:Dawnguard.esm
+Race: 019FD3:Dawnguard.esm
+ActorEffect:
+- 011BD2:Dawnguard.esm
+WornArmor: 0071CE:Dawnguard.esm
+Items:
+- Item:
+    Item: 2E233B:Requiem.esp
+    Count: 24
+- Item:
+    Item: 45352E:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Class: 023C0D:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Boneman
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 20
+  - Key: TwoHanded
+    Value: 16
+  - Key: Archery
+    Value: 20
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 12
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 12
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 40
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 102
+  Stamina: 193
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x415AEF
+CombatStyle: 038A23:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0BFB2A:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

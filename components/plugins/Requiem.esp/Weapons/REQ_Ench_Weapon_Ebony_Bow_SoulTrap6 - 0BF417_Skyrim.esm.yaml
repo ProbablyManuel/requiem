@@ -1,0 +1,60 @@
+FormKey: 0BF417:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Ebony_Bow_SoulTrap6
+ObjectBounds:
+  First: -14, -57, -2
+  Second: 6, 57, 3
+Name:
+  TargetLanguage: English
+  Value: Ebony Bow of Damnation
+Model:
+  File: Weapons\Ebony\EbonyBowSkinned.nif
+  Data: 0x0200000004000000000000001FE4E22A6464730083202CFFD90F14FD6464730083202CFFA83708C164647300262C333B635E1D646464730083202CFF
+ObjectEffect: 05B464:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E71E:Skyrim.esm
+- 01E715:Skyrim.esm
+- 08F958:Skyrim.esm
+- AD3B2D:Requiem.esp
+- 9F9914:Requiem.esp
+- AD3B2F:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 0596E4:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03D78C:Skyrim.esm
+UnequipSound: 03D882:Skyrim.esm
+BasicStats:
+  Value: 2950
+  Weight: 16
+  Damage: 75
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 0.3704
+  Reach: 1
+  Flags:
+  - NPCsUseAmmo
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1084227584
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  Damage: 8
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+Template: 0139AD:Skyrim.esm

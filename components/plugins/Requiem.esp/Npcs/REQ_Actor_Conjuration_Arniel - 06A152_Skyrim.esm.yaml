@@ -1,0 +1,183 @@
+FormKey: 06A152:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_Conjuration_Arniel
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Unique
+  - Summonable
+  - IsGhost
+  MagickaOffset: 1000
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 40
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Inventory
+Voice: 013ADB:Skyrim.esm
+Template: 01C19D:Skyrim.esm
+Race: 013741:Skyrim.esm
+ActorEffect:
+- 012FD2:Skyrim.esm
+- 01C789:Skyrim.esm
+- 02DD29:Skyrim.esm
+- 02DD2A:Skyrim.esm
+- 045F9D:Skyrim.esm
+- 06A157:Skyrim.esm
+- 06D22C:Skyrim.esm
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Class: 013179:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Shade of Arniel Gane
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 97
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 97
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 20
+  - Key: Speech
+    Value: 20
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 25
+  - Key: Destruction
+    Value: 100
+  - Key: Illusion
+    Value: 100
+  - Key: Restoration
+    Value: 66
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 100
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 375
+  Magicka: 245
+  Stamina: 115
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 02425C:Skyrim.esm
+- 08555F:Skyrim.esm
+- 099D7D:Skyrim.esm
+- 0F203C:Skyrim.esm
+HairColor: 0A0430:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 0D3E02:Skyrim.esm
+HeadTexture: 0D0721:Skyrim.esm
+TextureLighting: '#00B79C91'
+FaceMorph:
+  NoseLongVsShort: 0.2
+  NoseUpVsDown: -1
+  JawUpVsDown: 0.1
+  JawNarrowVsWide: -1
+  CheeksUpVsDown: -0.2
+  CheeksForwardVsBack: -1
+  EyesUpVsDown: -1
+  BrowsUpVsDown: -1
+  BrowsInVsOut: -0.5
+  BrowsForwardVsBack: -1
+  ChinNarrowVsWide: -1
+  ChinUpVsDown: -0.4
+  ChinUnderbiteVsOverbite: -0.88
+  EyesForwardVsBack: -0.5
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 8
+  Unknown: 4294967295
+  Eyes: 14
+  Mouth: 2
+TintLayers:
+- Index: 2
+  Color: '#00B79C91'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 4
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 0.75
+  Preset: -1
+- Index: 6
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: -1
+- Index: 13
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: -1
+MajorFlags:
+- 0x40000

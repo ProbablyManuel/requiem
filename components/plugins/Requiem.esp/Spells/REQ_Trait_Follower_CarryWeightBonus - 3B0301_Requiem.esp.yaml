@@ -1,0 +1,19 @@
+FormKey: 3B0301:Requiem.esp
+EditorID: REQ_Trait_Follower_CarryWeightBonus
+Name:
+  TargetLanguage: English
+  Value: Follower Carry Weight
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 0008C4:Requiem.esp
+  Data:
+    Magnitude: 75

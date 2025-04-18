@@ -1,0 +1,49 @@
+FormKey: 10D9F0:Skyrim.esm
+EditorID: VoiceoftheSkyNode
+Parent: 013010:Skyrim.esm
+PreviousSibling: 04D918:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12882
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12882
+    Spell: 01DFA4:Dragonborn.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12626
+    Keyword: 013798:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12626
+    Faction: 02E893:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12626
+    Faction: 02E894:Skyrim.esm
+  ComparisonValue: 1
+QuestFlags:
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 10D9F1:Skyrim.esm

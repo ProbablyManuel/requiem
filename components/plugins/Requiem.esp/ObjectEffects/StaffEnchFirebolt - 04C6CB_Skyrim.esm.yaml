@@ -1,0 +1,23 @@
+FormKey: 04C6CB:Skyrim.esm
+EditorID: StaffEnchFirebolt
+Version2: 6
+Name:
+  TargetLanguage: English
+  Value: Firebolt
+EnchantmentCost: 70
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 50
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 012F03:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 1
+- BaseEffect: 36307D:Requiem.esp
+  Data:
+    Magnitude: 3
+    Duration: 5

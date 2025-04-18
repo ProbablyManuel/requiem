@@ -1,0 +1,21 @@
+FormKey: 079349:Skyrim.esm
+EditorID: REQ_Trait_Damage150_TwoHanded
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.5

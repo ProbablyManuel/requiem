@@ -1,0 +1,21 @@
+FormKey: 0059AB:Dawnguard.esm
+EditorID: REQ_Werewolf_TotemOfTheMoon
+Name:
+  TargetLanguage: English
+  Value: Totem of the Moon
+Description:
+  TargetLanguage: English
+  Value: Your Totem of Brotherhood Howl can now call your werewolf brethren to your aid.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0059AA:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 110
+  Unknown: 0x000000

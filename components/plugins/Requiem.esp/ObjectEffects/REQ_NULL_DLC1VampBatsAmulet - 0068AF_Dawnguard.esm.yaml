@@ -1,0 +1,16 @@
+FormKey: 0068AF:Dawnguard.esm
+EditorID: REQ_NULL_DLC1VampBatsAmulet
+Name:
+  TargetLanguage: English
+  Value: Sprint Hammer
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 10CAAB:Skyrim.esm
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Variable07
+    ComparisonValue: 1

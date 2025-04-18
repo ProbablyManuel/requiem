@@ -1,0 +1,58 @@
+FormKey: 016DF4:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthGuardTower
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Guard Tower
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#002F2C1C'
+  DirectionalColor: '#0096ADA6'
+  FogNearColor: '#005F737A'
+  FogFar: 7500
+  DirectionalRotationXY: 200
+  DirectionalRotationZ: 90
+  DirectionalFade: 1
+  FogClipDistance: 7500
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2518'
+    DirectionalXMinus: '#00232515'
+    DirectionalYPlus: '#00282617'
+    DirectionalYMinus: '#00282317'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3823'
+    Specular: '#00686551'
+    Scale: 1
+  FogFarColor: '#00686551'
+  FogMax: 1
+  Inherits:
+  - DirectionalFade
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0D7B14:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F311:Skyrim.esm
+Owner: 018AAC:Skyrim.esm
+SkyAndWeatherFromRegion: 07042F:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 069EAE:Requiem.esp
+  Base: 069947:Requiem.esp
+  RagdollData: 0x00391F150000000000000000000000007AE5C8BF657934B95AB548C000D875158008164000000000000080B808B3EFB5CFC5823794F8C93F
+  Placement:
+    Position: -1134.2275, 80.589096, 121.101006
+    Rotation: 0, -0, 0.5
+MajorFlags:
+- 0x40000

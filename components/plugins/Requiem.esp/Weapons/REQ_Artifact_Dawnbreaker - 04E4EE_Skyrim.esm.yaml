@@ -1,0 +1,56 @@
+FormKey: 04E4EE:Skyrim.esm
+EditorID: REQ_Artifact_Dawnbreaker
+ObjectBounds:
+  First: -28, -12, -28
+  Second: 28, 63, 28
+Name:
+  TargetLanguage: English
+  Value: Dawnbreaker
+Model:
+  File: Weapons\Dawnbreaker\Dawnbreaker.nif
+  Data: 0x020000000E0000000000000033168C0764647300A0B8630503D8C24064647300A0B863054FE0756464647300A0B86305ABEF3F336464730038973CEAAC2F66B164647300582C553362F091FC6464730038973CEA35FC8B236464730038973CEA6C6AC81F6464730038973CEA618DDE0C64647300582C5533F8AE224D6464730068EFBA75BCA5227A6464730068EFBA750FA403E564647300254E4023F9930AC164647300254E40235D2BD6B864647300254E4023
+ObjectEffect: 0FEE34:Skyrim.esm
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0917E8:Skyrim.esm
+- 0A8668:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 10AA1A:Skyrim.esm
+- AD3AF7:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: Meridia's sphere is the energies of living things. Dawnbreaker grows in power as Meridia's champion eliminates undead.
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 07C664:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 80000
+  Weight: 10
+  Damage: 13
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

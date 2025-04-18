@@ -1,0 +1,80 @@
+FormKey: 015229:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RannveigsFast01
+Version2: 3
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Rannveig's Fast
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00323232'
+  DirectionalColor: '#00405355'
+  FogNearColor: '#00807C4F'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#0083A8C2'
+    Scale: 1
+  FogFarColor: '#0083A8C2'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0E2016:Skyrim.esm
+WaterHeight: 0
+Location: 019290:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC58:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0E2017:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0AA65A:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019290:Skyrim.esm
+  Placement:
+    Position: 1702.1597, 7817.604, -886.21375
+    Rotation: 0.08213373, 0.16681091, 4.238332
+- MutagenObjectType: PlacedObject
+  FormKey: 10419B:Skyrim.esm
+  Base: 020670:Skyrim.esm
+  Scale: 0.87
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019290:Skyrim.esm
+  Placement:
+    Position: 3297.8767, 6321.55, -961.54126
+    Rotation: 0, -0, 5.323187
+MajorFlags:
+- 0x40000

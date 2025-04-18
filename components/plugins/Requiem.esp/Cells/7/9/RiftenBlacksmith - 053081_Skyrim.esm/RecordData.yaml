@@ -1,0 +1,100 @@
+FormKey: 053081:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenBlacksmith
+Version2: 10
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Scorched Hammer
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0B2157:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 056621:Skyrim.esm
+Owner: 0A2514:Skyrim.esm
+LockList: 0A2513:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A31BD:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 3
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0A31AF:Skyrim.esm
+  Scale: 1.2
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 0A2514:Skyrim.esm
+  LocationReference: 056621:Skyrim.esm
+  Placement:
+    Position: -48.858826, 214.30344, -191
+    Rotation: 0, -0, 4.8000026
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA740:Skyrim.esm
+  Version2: 2
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 056621:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7345:Skyrim.esm
+  Placement:
+    Position: -35.06879, 560.3912, -128.79344
+    Rotation: 0, -0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 05FA59:Skyrim.esm
+  Version2: 1
+  Base: 012FEA:Skyrim.esm
+  LocationReference: 056621:Skyrim.esm
+  Placement:
+    Position: -44.856472, 112.221146, -191.72768
+    Rotation: -0.00047511345, -7.9855694E-05, 6.256385
+- MutagenObjectType: PlacedObject
+  FormKey: 05C93C:Skyrim.esm
+  Version2: 2
+  Base: 0800E0:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 056621:Skyrim.esm
+  Placement:
+    Position: 224, 432, 63.792587
+    Rotation: 0, -0, 4.712389
+MajorFlags:
+- 0x40000

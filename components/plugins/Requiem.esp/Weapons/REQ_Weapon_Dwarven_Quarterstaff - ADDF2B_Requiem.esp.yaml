@@ -1,0 +1,51 @@
+FormKey: ADDF2B:Requiem.esp
+EditorID: REQ_Weapon_Dwarven_Quarterstaff
+ObjectBounds:
+  First: -2, -18, -2
+  Second: 2, 68, 2
+Name:
+  TargetLanguage: English
+  Value: Dwarven Quarterstaff
+Model:
+  File: PrvtI\dwarven\dwarvenstaff.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E71A:Skyrim.esm
+- 08F958:Skyrim.esm
+- ADDF81:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0E4CB0:Skyrim.esm
+FirstPersonModel: ADDF26:Requiem.esp
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 0E4F10:Skyrim.esm
+UnequipSound: 0E4F11:Skyrim.esm
+BasicStats:
+  Value: 320
+  Weight: 17
+  Damage: 17
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.8
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1069547520
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.2
+Critical:
+  Damage: 8
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

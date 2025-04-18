@@ -1,0 +1,35 @@
+FormKey: AE3598:Requiem.esp
+EditorID: RFTI_DEPRECATED_Player_OutOfCombatRegeneration
+Name:
+  TargetLanguage: English
+  Value: Out of Combat Regeneration
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000940:Requiem.esp
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE3B5E:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+- BaseEffect: 000941:Requiem.esp
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE3B5E:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInCombatConditionData

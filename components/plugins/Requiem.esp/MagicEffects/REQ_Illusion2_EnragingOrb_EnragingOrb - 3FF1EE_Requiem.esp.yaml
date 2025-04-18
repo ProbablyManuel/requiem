@@ -1,0 +1,80 @@
+FormKey: 3FF1EE:Requiem.esp
+EditorID: REQ_Illusion2_EnragingOrb_EnragingOrb
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_IllusionBreak
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindEffect
+      Object: 42442F:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Skill_ScalingPerks
+      Objects:
+      - Name: ''
+        Object: 0F2CA9:Skyrim.esm
+      - Name: ''
+        Object: 0C44C3:Skyrim.esm
+      - Name: ''
+        Object: 0581E2:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 04DEEB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPRate
+      Data: 2
+Name:
+  TargetLanguage: English
+  Value: Enraging Orb
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+- 0C44B6:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoHitEvent
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 0.07
+MagicSkill: Illusion
+CastingLight: 07479A:Skyrim.esm
+TaperWeight: 1
+HitShader: 074799:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 074796:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 074794:Skyrim.esm
+HitEffectArt: 074795:Skyrim.esm
+ImpactData: 074798:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The target hit by this orb will attack anything nearby for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData

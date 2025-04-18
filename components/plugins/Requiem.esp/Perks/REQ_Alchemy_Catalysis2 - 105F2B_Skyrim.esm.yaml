@@ -1,0 +1,28 @@
+FormKey: 105F2B:Skyrim.esm
+EditorID: REQ_Alchemy_Catalysis2
+Name:
+  TargetLanguage: English
+  Value: Catalysis
+Description:
+  TargetLanguage: English
+  Value: You've perfected the catalyst. Thereby, you can craft double the amount of <br> mixtures with the same amount of ingredients.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058218:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Alchemy
+  ComparisonValue: 100
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModPotionsCreated
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 2

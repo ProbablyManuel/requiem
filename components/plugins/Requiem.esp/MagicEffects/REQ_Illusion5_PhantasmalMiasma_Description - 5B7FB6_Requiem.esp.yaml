@@ -1,0 +1,28 @@
+FormKey: 5B7FB6:Requiem.esp
+EditorID: REQ_Illusion5_PhantasmalMiasma_Description
+Name:
+  TargetLanguage: English
+  Value: Phantasmal Miasma
+Flags:
+- Recover
+- NoHitEvent
+- FXPersist
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Targets who do not resist the spell have their health reduced by <mag> as long they stay within the bounds of the aura.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5BCEF3:Requiem.esp

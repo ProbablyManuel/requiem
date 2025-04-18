@@ -1,0 +1,26 @@
+FormKey: 0CD086:Skyrim.esm
+EditorID: REQ_Attack_CombatHit_StunningPrecision
+Name:
+  TargetLanguage: English
+  Value: Paralyze
+MenuDisplayObject: 10A046:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: A0D5ED:Requiem.esp
+  Data:
+    Duration: 3
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsStaggeredConditionData
+      RunOnTypeIndex: 0
+    ComparisonValue: 1

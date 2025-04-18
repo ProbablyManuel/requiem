@@ -1,0 +1,31 @@
+FormKey: 41F4F3:Requiem.esp
+EditorID: REQ_Illusion_HibernationTouch_Paralysis
+Name:
+  TargetLanguage: English
+  Value: Paralysis
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- HideInUI
+- PowerAffectsDuration
+- Painless
+BaseCost: 0.07
+MagicSkill: Illusion
+TaperWeight: 1
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The touched target will fall into a deep slumber for up to <dur> seconds.

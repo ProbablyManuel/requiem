@@ -1,0 +1,41 @@
+FormKey: 058F64:Skyrim.esm
+EditorID: REQ_Marksmanship_StunningPrecision
+Name:
+  TargetLanguage: English
+  Value: Stunning Precision
+Description:
+  TargetLanguage: English
+  Value: Any successful staggering shot will almost always stun the target momentarily.<br>[Staggering hits will also stun the target]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Archery
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 105F1E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F62:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 50
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ApplyCombatHitSpell
+  PerkConditionTabCount: 3
+  Spell: 0CD086:Skyrim.esm

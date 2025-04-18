@@ -1,0 +1,14 @@
+FormKey: 0138C3:Dawnguard.esm
+EditorID: REQ_Trait_Vyrthur
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 4
+  EntryPoint: ModArmorRating
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 2

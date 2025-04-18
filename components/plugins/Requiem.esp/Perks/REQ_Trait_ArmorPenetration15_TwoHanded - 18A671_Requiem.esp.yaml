@@ -1,0 +1,21 @@
+FormKey: 18A671:Requiem.esp
+EditorID: REQ_Trait_ArmorPenetration15_TwoHanded
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ModTargetDamageResistance
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.85

@@ -1,0 +1,25 @@
+FormKey: 003538:HearthFires.esm
+EditorID: REQ_Food_Flour
+ObjectBounds:
+  First: -17, -12, 0
+  Second: 16, 12, 9
+Name:
+  TargetLanguage: English
+  Value: Sack of Flour
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: _BYOH\Clutter\Food\FlourSack01.nif
+  Data: 0x020000000000000000000000
+Weight: 0.5
+Value: 4
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3720:Requiem.esp
+  Data:
+    Magnitude: 1
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

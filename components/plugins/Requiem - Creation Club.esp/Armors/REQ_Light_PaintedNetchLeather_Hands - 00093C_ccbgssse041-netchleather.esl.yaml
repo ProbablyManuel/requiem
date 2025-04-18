@@ -1,0 +1,41 @@
+FormKey: 00093C:ccbgssse041-netchleather.esl
+EditorID: REQ_Light_PaintedNetchLeather_Hands
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00081C:ccbgssse041-netchleather.esl
+Name:
+  TargetLanguage: English
+  Value: Painted Netch Leather Bracers
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE041\Armor\NetchLeather\NetchLeatherGauntlets_GO.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: NetchLeatherGauntlets_GO:2
+        NewTexture: 00093B:ccbgssse041-netchleather.esl
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EF:Skyrim.esm
+- 08F959:Skyrim.esm
+- ADDD70:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00093E:ccbgssse041-netchleather.esl
+Value: 60
+Weight: 1.5
+ArmorRating: 45

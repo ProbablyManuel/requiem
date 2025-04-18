@@ -1,0 +1,19 @@
+FormKey: 3CB79A:Requiem.esp
+EditorID: REQ_Smelter_Light_Elven_Body_Pauldrons
+Items:
+- Item:
+    Item: 01392A:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 01392A:Skyrim.esm
+CreatedObject: 05AD9F:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 2

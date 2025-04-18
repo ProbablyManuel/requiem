@@ -1,0 +1,72 @@
+FormKey: AE38F2:Requiem.esp
+EditorID: REQ_Ench_HarkonsKatana_Soultrap
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoultrapfxscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetFXS
+      Object: 054223:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0531B1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterFXS
+      Object: 054224:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 054225:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapSoundFX
+      Object: 056AC6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0531AF:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bIsEnchantmentEffect
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Soul Trap
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+HitShader: 0506D7:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 04BE35:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+HitEffectArt: 0506D6:Skyrim.esm
+ImpactData: 04C6DA:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Makes the target vulnerable to soul gems for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 586728:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 103AD2:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

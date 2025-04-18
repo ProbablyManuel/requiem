@@ -1,0 +1,239 @@
+FormKey: 0A5601:Skyrim.esm
+EditorID: ChaurusReaperRace
+Name:
+  TargetLanguage: English
+  Value: Chaurus
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 0C5A9F:Skyrim.esm
+- 1093B2:Skyrim.esm
+- AD39E7:Requiem.esp
+- AE3AF5:Requiem.esp
+Skin: 058E2A:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013798:Skyrim.esm
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- TiltLeftRight
+- Walks
+- NoCombatInWater
+- DontShowBloodDecal
+- SpellsAlignWithMagicNode
+- CantOpenDoors
+- DontShowWeaponBlood
+Starting:
+- Key: Health
+  Value: 150
+- Key: Magicka
+  Value: 4
+- Key: Stamina
+  Value: 200
+BaseCarryWeight: 200
+BaseMass: 3.5
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+InjuredHealthPercent: 0.75
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 25
+UnarmedReach: 96.08
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Chaurus\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Chaurus\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F152:Skyrim.esm
+  Female: 01F152:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Bite1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 1093B1:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: AttackStartLungeBite
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B8781:Skyrim.esm
+    Flags:
+    - RotatingAttack
+    AttackAngle: 90
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_RightSide
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B8781:Skyrim.esm
+    AttackAngle: 45
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_RightChop
+- AttackData:
+    DamageMult: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Bite2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 1093B1:Skyrim.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_LBite4
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B8781:Skyrim.esm
+    AttackAngle: 45
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_LeftChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    AttackAngle: 45
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: AttackStart_LHeadBash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B8781:Skyrim.esm
+    Flags:
+    - RotatingAttack
+    AttackAngle: -90
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_LeftSide
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    AttackAngle: 45
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: AttackStart_RHeadBash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 1093B1:Skyrim.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_RBite3
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    AttackAngle: 35
+    StrikeAngle: 35
+    Stagger: 0.5
+    RecoveryTime: 1.5
+    StaminaMult: 1
+  AttackEvent: AttackStart_ComboChop
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Chaurus\Character Assets\skeleton.nif
+      Data: 0x020000000000000000000000
+BodyPartData: 059060:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Chaurus\ChaurusProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Chaurus\ChaurusProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 10D5CC:Skyrim.esm
+ImpactDataSet: 024066:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Body
+  Value: BODY
+- Key: Tail
+  Value: Spit
+EquipmentFlags:
+- HandToHand
+- Spell
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 064113:Skyrim.esm
+BaseMovementDefaultRun: 064113:Skyrim.esm

@@ -1,0 +1,54 @@
+FormKey: 0BE232:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Elven_WarAxe_SoulTrap5
+ObjectBounds:
+  First: -21, -13, -2
+  Second: 7, 47, 2
+Name:
+  TargetLanguage: English
+  Value: Elven War Axe of Malediction
+Model:
+  File: Weapons\Elven\ElvenWarAxe.nif
+  Data: 0x020000000A000000000000007318373764647300E1CA22649088578064647300E1CA2264B65D9E1F64647300262C333B2AD95E1964647300E1CA2264D09B0BBB64647300A0B86305B221CCA164647300A0B863054FE0756464647300A0B863053BB09C7A64647300C912DDDCEC2BFA6064647300C912DDDC567AF3F964647300C912DDDC
+ObjectEffect: 05B463:Skyrim.esm
+EnchantmentAmount: 2500
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C8:Skyrim.esm
+AlternateBlockMaterial: 0774C0:Skyrim.esm
+Keywords:
+- 01E71B:Skyrim.esm
+- 01E712:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B8:Skyrim.esm
+FirstPersonModel: 036BCC:Skyrim.esm
+AttackFailSound: 03F209:Skyrim.esm
+EquipSound: 03DDB7:Skyrim.esm
+UnequipSound: 03DDB8:Skyrim.esm
+BasicStats:
+  Value: 165
+  Weight: 10
+  Damage: 10
+Data:
+  AnimationType: OneHandAxe
+  Unused: 0x000000
+  Speed: 0.9
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1063675494
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.85
+Critical:
+  Damage: 5
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 01399B:Skyrim.esm

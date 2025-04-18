@@ -1,0 +1,22 @@
+FormKey: AE3ABD:Requiem.esp
+EditorID: REQ_Trait_Healing_DwarvenFollower
+Name:
+  TargetLanguage: English
+  Value: 'Natural Healing: Dwarven Follower'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 01CEAF:Skyrim.esm
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 10

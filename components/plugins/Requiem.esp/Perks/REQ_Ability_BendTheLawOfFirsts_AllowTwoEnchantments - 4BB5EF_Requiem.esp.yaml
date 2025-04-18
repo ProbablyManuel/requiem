@@ -1,0 +1,18 @@
+FormKey: 4BB5EF:Requiem.esp
+EditorID: REQ_Ability_BendTheLawOfFirsts_AllowTwoEnchantments
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  EntryPoint: ModEnchantmentPower
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.75
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModNumAppliedEnchantmentsAllowed
+  PerkConditionTabCount: 1
+  Value: 2

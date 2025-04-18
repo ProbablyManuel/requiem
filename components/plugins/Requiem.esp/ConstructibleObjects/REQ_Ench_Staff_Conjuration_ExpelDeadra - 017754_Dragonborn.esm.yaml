@@ -1,0 +1,20 @@
+FormKey: 017754:Dragonborn.esm
+EditorID: REQ_Ench_Staff_Conjuration_ExpelDeadra
+Items:
+- Item:
+    Item: 07E647:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 017749:Dragonborn.esm
+    Count: 4
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Spell: 06F952:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 029B7E:Skyrim.esm
+WorkbenchKeyword: 017738:Dragonborn.esm
+CreatedObjectCount: 1

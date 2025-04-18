@@ -1,0 +1,56 @@
+FormKey: 021A6D:Skyrim.esm
+Flags:
+  Flags:
+  - InvisibleContinue
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 021A65:Skyrim.esm
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: That's what this lesson is for. Perfect time to try it out.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01C19E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Target
+    Spell: 0211F0:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Target
+    Spell: 013018:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Target
+    Spell: 0211F1:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Target
+    Spell: 225F3B:Requiem.esp
+  ComparisonValue: 1

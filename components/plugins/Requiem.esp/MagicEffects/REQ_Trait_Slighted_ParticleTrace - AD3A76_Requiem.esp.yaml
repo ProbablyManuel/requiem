@@ -1,0 +1,36 @@
+FormKey: AD3A76:Requiem.esp
+EditorID: REQ_Trait_Slighted_ParticleTrace
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Slighted_ParticleTrace
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AshPileObject
+      Object: AD3A7C:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: deathExplosion
+      Object: 04046D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: aggressionModeOutline
+      Object: 6BBEA4:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Slighted - Particle Trace
+MenuDisplayObject: 1097CD:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: After taking any aggressive action, the Slight's position is temporarily revealed by a particle trace; attached script also handles death effects

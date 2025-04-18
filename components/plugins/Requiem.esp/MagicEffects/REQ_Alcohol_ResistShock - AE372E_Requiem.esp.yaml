@@ -1,0 +1,24 @@
+FormKey: AE372E:Requiem.esp
+EditorID: REQ_Alcohol_ResistShock
+Name:
+  TargetLanguage: English
+  Value: Resist Shock
+MenuDisplayObject: 09FA64:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistShock
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Shock deals <mag>% less damage to you for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

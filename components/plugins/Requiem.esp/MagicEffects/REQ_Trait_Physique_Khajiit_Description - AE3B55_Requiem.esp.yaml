@@ -1,0 +1,25 @@
+FormKey: AE3B55:Requiem.esp
+EditorID: REQ_Trait_Physique_Khajiit_Description
+Name:
+  TargetLanguage: English
+  Value: Cat-Men
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Khajiit claws increase unarmed armor penetration by <25>. Khajiit legs reduce falling damage by <65>%. Khajiit paws reduce movement noise by <50>% while not wearing boots.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

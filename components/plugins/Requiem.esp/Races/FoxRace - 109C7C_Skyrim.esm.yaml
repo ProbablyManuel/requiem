@@ -1,0 +1,237 @@
+FormKey: 109C7C:Skyrim.esm
+MajorRecordFlagsRaw: 524288
+EditorID: FoxRace
+Version2: 5
+SkyrimMajorRecordFlags:
+- CantWait
+Name:
+  TargetLanguage: English
+  Value: Fox
+Description:
+  TargetLanguage: English
+  Value: ''
+Skin: 04E886:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013798:Skyrim.esm
+- 013795:Skyrim.esm
+- 092A6C:Skyrim.esm
+- 586728:Requiem.esp
+SkillBoost0:
+  Skill: Sneak
+  Boost: 15
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1.2
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- CantOpenDoors
+- NonHostile
+Starting:
+- Key: Health
+  Value: 12
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 200
+BaseCarryWeight: 200
+BaseMass: 0.4
+AccelerationRate: 0.6
+DecelerationRate: 2
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 5
+UnarmedDamage: 5
+UnarmedReach: 64
+AngularAccelerationRate: 0.3
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Canine\Character Assets Wolf\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Canine\Character Assets Wolf\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 10F677:Skyrim.esm
+  Female: 10F677:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Spell: 0B8782:Skyrim.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeMedium
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 2
+    Chance: 0.75
+    Spell: 0B8782:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPowerShort
+- AttackData:
+    DamageMult: 2
+    Chance: 0.75
+    Spell: 0B8782:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight2
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 2
+    Spell: 0B8782:Skyrim.esm
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeLong
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft2
+- AttackData:
+    DamageMult: 2
+    Spell: 0B8782:Skyrim.esm
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeShort
+- AttackData:
+    DamageMult: 2
+    Chance: 0.25
+    Spell: 0B8782:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_StandingPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 04FBF5:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Canine\WolfProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Canine\WolfProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 05A28F:Skyrim.esm
+ImpactDataSet: 0A956F:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x2000000
+- 0x4000000
+- 0x8000000
+- 0x10000000
+- 0x20000000
+- 0x40000000
+EquipmentSlots:
+- 013F42:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+MajorFlags:
+- Critter

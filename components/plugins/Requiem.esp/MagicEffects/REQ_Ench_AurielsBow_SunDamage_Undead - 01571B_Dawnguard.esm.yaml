@@ -1,0 +1,49 @@
+FormKey: 01571B:Dawnguard.esm
+EditorID: REQ_Ench_AurielsBow_SunDamage_Undead
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magiceffectshaderapply
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bUseDuration
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX
+      Object: 019C9E:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Sun Damage
+MenuDisplayObject: 018F02:Dawnguard.esm
+Keywords:
+- ADDDF6:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+HitShader: 019C9D:Dawnguard.esm
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Undead take triple damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

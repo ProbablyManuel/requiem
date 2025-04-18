@@ -1,0 +1,258 @@
+FormKey: 09F813:Skyrim.esm
+EditorID: WE20
+Version2: 7
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_WE20_0009F813
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 09F813:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bandit2
+      Object: 09F813:Skyrim.esm
+      Alias: 72
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 09F813:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TravelMarker1
+      Object: 09F813:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bandit1
+      Object: 09F813:Skyrim.esm
+      Alias: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 09F813:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bandit3
+      Object: 09F813:Skyrim.esm
+      Alias: 75
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_WarlockSummoner
+      Object: 09F813:Skyrim.esm
+      Alias: 73
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TravelMarker2
+      Object: 09F813:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 09F813:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 09F813:Skyrim.esm
+      Alias: 6
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
+  FileName: QF_WE20_0009F813
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_WE20_0009F813
+    FragmentName: Fragment_1
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WE20_0009F813
+    FragmentName: Fragment_5
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 09F813:Skyrim.esm
+      Alias: 70
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: MakeAggressiveAndAttackPlayerIfAttacked
+        Data: True
+  - Property:
+      Name: ''
+      Object: 09F813:Skyrim.esm
+      Alias: 72
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: MakeAggressiveAndAttackPlayerIfAttacked
+        Data: True
+  - Property:
+      Name: ''
+      Object: 09F813:Skyrim.esm
+      Alias: 75
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: MakeAggressiveAndAttackPlayerIfAttacked
+        Data: True
+  - Property:
+      Name: ''
+      Object: 09F813:Skyrim.esm
+      Alias: 73
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: MakeAggressiveAndAttackPlayerIfAttacked
+        Data: True
+Name:
+  TargetLanguage: English
+  Value: Warlock fighting off bandits
+Flags:
+- 0x4
+Priority: 50
+QuestFormVersion: 65
+Event: SCPT
+Filter: Wilderness Encounters\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 15
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+NextAliasID: 77
+Aliases:
+- ID: 1
+  Name: TRIGGER
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: myHoldLocation
+  Flags:
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 6
+  Type: Location
+  Name: myHoldContested
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 7
+  Type: Location
+  Name: myHoldImperial
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 8
+  Type: Location
+  Name: myHoldSons
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 9
+  Name: TravelMarker1
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F5:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 10
+  Name: TravelMarker2
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F5:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 70
+  Name: Bandit1
+  Flags: []
+  CreateReferenceToObject:
+    Object: 09F80D:Skyrim.esm
+    AliasID: 9
+    Level: Medium
+  Factions:
+  - 09F817:Skyrim.esm
+  PackageData:
+  - 09F814:Skyrim.esm
+  VoiceTypes: Null
+- ID: 72
+  Name: Bandit2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 09F80F:Skyrim.esm
+    AliasID: 9
+    Level: Medium
+  Factions:
+  - 09F817:Skyrim.esm
+  PackageData:
+  - 09F814:Skyrim.esm
+  VoiceTypes: Null
+- ID: 75
+  Name: Bandit3
+  Flags: []
+  CreateReferenceToObject:
+    Object: 09F80F:Skyrim.esm
+    AliasID: 9
+  Factions:
+  - 09F817:Skyrim.esm
+  PackageData:
+  - 09F814:Skyrim.esm
+  VoiceTypes: Null
+- ID: 73
+  Name: WarlockSummoner
+  Flags: []
+  CreateReferenceToObject:
+    Object: 01E7C9:Skyrim.esm
+    AliasID: 10
+    Level: Hard
+  Factions:
+  - 09F816:Skyrim.esm
+  PackageData:
+  - 09F815:Skyrim.esm
+  VoiceTypes: Null

@@ -1,0 +1,53 @@
+FormKey: 0068BA:Dawnguard.esm
+EditorID: REQ_NULL_DLC1testPhilSlowCloakEffectDMG
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.3
+Name:
+  TargetLanguage: English
+  Value: Slow Cloak Effect
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+TaperWeight: 0.3
+HitShader: 0FE68C:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 0.1
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeedMult
+Projectile: 0ABEFD:Skyrim.esm
+Explosion: 10F802:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+ImpactData: 015C7B:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 10E984:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+  ComparisonValue: 1

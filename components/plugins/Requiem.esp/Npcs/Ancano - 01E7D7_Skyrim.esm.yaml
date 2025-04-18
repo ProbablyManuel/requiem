@@ -1,0 +1,256 @@
+FormKey: 01E7D7:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Ancano
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: DaysBeforeCleanUp
+      Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Essential
+  - AutoCalcStats
+  - Unique
+  MagickaOffset: 1500
+  StaminaOffset: 370
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 80
+  CalcMinLevel: 15
+  CalcMaxLevel: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 1500
+Factions:
+- Faction: 0135A0:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 094393:Skyrim.esm
+  Fluff: 0x000000
+Voice: 03924F:Skyrim.esm
+Race: 013743:Skyrim.esm
+ActorEffect:
+- 0400AD:Skyrim.esm
+- 072318:Skyrim.esm
+- 07231B:Skyrim.esm
+- 101064:Skyrim.esm
+- 10F7F8:Skyrim.esm
+- 0CDB29:Requiem.esp
+- ADDDC7:Requiem.esp
+Perks:
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 053129:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05312A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581FC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058200:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 068BCC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB419:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB41A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3F0E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F30:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 179124:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 185736:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 185737:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 21792A:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 21792B:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 21792C:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 039BE5:Skyrim.esm
+    Count: 3
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 0FBFD7:Skyrim.esm
+- 01B217:Skyrim.esm
+Class: 01317A:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Ancano
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 100
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 100
+  - Key: Conjuration
+    Value: 100
+  - Key: Destruction
+    Value: 100
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 100
+  - Key: Enchanting
+    Value: 10
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 1722
+  Magicka: 1903
+  Stamina: 450
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 04020F:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C710A:Skyrim.esm
+- 0F5009:Skyrim.esm
+HairColor: 0A0438:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 43FE4B:Requiem.esp
+TextureLighting: '#00B3A66A'
+FaceMorph:
+  NoseLongVsShort: 0.5
+  NoseUpVsDown: -0.6
+  JawUpVsDown: -0.3
+  JawNarrowVsWide: -0.7
+  JawForwardVsBack: 0.4
+  CheeksUpVsDown: -1
+  CheeksForwardVsBack: -1
+  EyesUpVsDown: 0.7
+  EyesInVsOut: -0.9
+  BrowsUpVsDown: 0.6
+  BrowsInVsOut: -1
+  BrowsForwardVsBack: -0.9
+  LipsUpVsDown: 0.5
+  LipsInVsOut: -0.7
+  ChinNarrowVsWide: 1
+  ChinUpVsDown: -1
+  ChinUnderbiteVsOverbite: -1
+  EyesForwardVsBack: 1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 13
+  Unknown: 4294967295
+  Eyes: 17
+  Mouth: 3
+TintLayers:
+- Index: 8
+  Color: '#007D7346'
+  InterpolationValue: 1
+  Preset: 89
+MajorFlags:
+- 0x40000

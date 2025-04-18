@@ -1,0 +1,55 @@
+FormKey: ADDF5F:Requiem.esp
+EditorID: REQ_Weapon_Dawnguard_Battleaxe
+ObjectBounds:
+  First: -13, -40, -1
+  Second: 14, 50, 1
+Name:
+  TargetLanguage: English
+  Value: Dawnguard Battleaxe
+Model:
+  File: PrvtI\Dawnguard\dawnguardbattleaxe.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 05B46F:Skyrim.esm
+EnchantmentAmount: 2000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 06D932:Skyrim.esm
+- 08F958:Skyrim.esm
+- 00D839:Dawnguard.esm
+- 10AA1A:Skyrim.esm
+- 01E719:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 036A5B:Skyrim.esm
+FirstPersonModel: ADDF5A:Requiem.esp
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 06036A:Skyrim.esm
+UnequipSound: 0605D3:Skyrim.esm
+BasicStats:
+  Value: 600
+  Weight: 21
+  Damage: 18
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.7
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1068708659
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.15
+Critical:
+  Damage: 9
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud

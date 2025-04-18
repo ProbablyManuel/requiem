@@ -1,0 +1,39 @@
+FormKey: 05F594:Skyrim.esm
+EditorID: REQ_Block_OverpoweringBashes
+Name:
+  TargetLanguage: English
+  Value: Overpowering Bashes
+Description:
+  TargetLanguage: English
+  Value: When you put all of your power into your shield bashes, you will often overpower your foes.<br>[Power bashing with a shield can knock down]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F67:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Block
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 20
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsAttackTypeConditionData
+        Keyword: 000F54:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsShieldOutConditionData
+      ComparisonValue: 1
+  EntryPoint: ApplyBashingSpell
+  PerkConditionTabCount: 2
+  Spell: 81679C:Requiem.esp

@@ -1,0 +1,19 @@
+FormKey: 000972:Requiem.esp
+EditorID: REQ_AbShow_WeaknessShock
+Name:
+  TargetLanguage: English
+  Value: Weakness to Shock
+MenuDisplayObject: 09FA64:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistShock
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Shock deals <mag>% more damage to you.

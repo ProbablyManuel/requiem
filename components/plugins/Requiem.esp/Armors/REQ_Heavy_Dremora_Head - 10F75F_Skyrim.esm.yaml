@@ -1,0 +1,52 @@
+FormKey: 10F75F:Skyrim.esm
+EditorID: REQ_Heavy_Dremora_Head
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_CursedItem
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeDaedra
+      Object: 013797:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: REQ_KW_CursedItem
+      Object: 6D7249:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurseOfAgony
+      Object: 09E9C3:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myItem
+      Object: 10F75F:Skyrim.esm
+ObjectBounds:
+  First: -11, -13, 0
+  Second: 11, 15, 31
+Name:
+  TargetLanguage: English
+  Value: Daedric Helmet
+WorldModel:
+  Male:
+    Model:
+      File: Armor\Daedric\DaedricHelmetGO.nif
+      Data: 0x0200000004000000000000006147F5E4646473000252BD4CE4677703646473000252BD4CF63890AC64647300262C333B5E367E9A646473000252BD4C
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Hair
+  - Circlet
+  - Ears
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBD4:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- 6D7249:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ' '
+Armature:
+- 098BB2:Skyrim.esm
+Value: 10000
+Weight: 20
+ArmorRating: 240

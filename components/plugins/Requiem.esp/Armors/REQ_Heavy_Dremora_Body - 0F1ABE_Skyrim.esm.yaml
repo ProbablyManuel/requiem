@@ -1,0 +1,46 @@
+FormKey: 0F1ABE:Skyrim.esm
+EditorID: REQ_Heavy_Dremora_Body
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_CursedItem
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeDaedra
+      Object: 013797:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: REQ_KW_CursedItem
+      Object: 6D7249:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurseOfAgony
+      Object: 09E9C3:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myItem
+      Object: 0F1ABE:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Daedric Cuirass
+WorldModel:
+  Male:
+    Model:
+      File: Armor\Daedric\DaedricCuirassGO.nif
+      Data: 0x020000000400000000000000DDEA718B646473000252BD4C813660E3646473000252BD4CF63890AC64647300262C333B3B67697A646473000252BD4C
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBD4:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- 6D7249:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ' '
+Armature:
+- 098BB3:Skyrim.esm
+Value: 25000
+Weight: 50
+ArmorRating: 600

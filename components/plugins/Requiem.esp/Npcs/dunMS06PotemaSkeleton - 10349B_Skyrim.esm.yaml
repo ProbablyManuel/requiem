@@ -1,0 +1,205 @@
+FormKey: 10349B:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: dunMS06PotemaSkeleton
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultGhostScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostWeaponFlickerList
+      Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostLeveledList
+      Object: 10F805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostCorpse
+      Object: 0C674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bdefaultLoot
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Protected
+  MagickaOffset: 300
+  StaminaOffset: 10
+  Level:
+    MutagenObjectType: PcLevelMult
+    LevelMult: 1
+  CalcMinLevel: 7
+  CalcMaxLevel: 50
+  SpeedMultiplier: 100
+  TemplateFlags:
+  - Factions
+  - AIData
+  HealthOffset: 300
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02430D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02D1DF:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 0D7FBC:Skyrim.esm
+Voice: 0BFB2B:Skyrim.esm
+Template: 09362B:Skyrim.esm
+Race: 0B7998:Skyrim.esm
+ActorEffect:
+- 040001:Skyrim.esm
+- 0400AB:Skyrim.esm
+- 0400AD:Skyrim.esm
+- 072319:Skyrim.esm
+- 0BB968:Skyrim.esm
+- 0CAB65:Skyrim.esm
+- 1034CC:Skyrim.esm
+- 0FAB09:Requiem.esp
+WornArmor: 0B799A:Skyrim.esm
+Perks:
+- Perk: 05312A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581DD:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 10782F:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 09448B:Skyrim.esm
+- 088978:Skyrim.esm
+- 09BCBD:Skyrim.esm
+Keywords:
+- 000EDF:Skyrim.esm
+Class: 023C0E:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Potema's Remains
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 18
+  - Key: TwoHanded
+    Value: 10
+  - Key: Archery
+    Value: 10
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 13
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 21
+  - Key: Destruction
+    Value: 21
+  - Key: Illusion
+    Value: 40
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 335
+  Magicka: 315
+  Stamina: 90
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0BFB2A:Skyrim.esm
+DefaultOutfit: 10349A:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

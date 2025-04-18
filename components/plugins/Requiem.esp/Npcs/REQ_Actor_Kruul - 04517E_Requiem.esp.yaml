@@ -1,0 +1,171 @@
+FormKey: 04517E:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_Kruul
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -39, -36, 0
+  Second: 39, 36, 128
+Configuration:
+  StaminaOffset: 2000
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 41
+  SpeedMultiplier: 120
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - AIData
+  - AIPackages
+  - Script
+  - DefPackList
+  - Keywords
+  HealthOffset: 2500
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0435A1:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03ADA6:Skyrim.esm
+Voice: 01F289:Skyrim.esm
+Template: 023ABB:Skyrim.esm
+Race: 013206:Skyrim.esm
+ActorEffect:
+- 022921:Requiem.esp
+WornArmor: 016EE4:Skyrim.esm
+AttackRace: 013206:Skyrim.esm
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Spell: 5F3681:Requiem.esp
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartForwardPowerRush
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.3
+    Spell: 5F3681:Requiem.esp
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    Stagger: 1.25
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartForwardPower
+Perks:
+- Perk: 0FAB0B:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 04FEC0:Requiem.esp
+    Count: 2
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Packages:
+- 01A733:Skyrim.esm
+- 01B217:Skyrim.esm
+Class: 0131E6:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Kru'ul
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 39
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 39
+  - Key: Block
+    Value: 55
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 55
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 460
+  Stamina: 480
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+CombatStyle: 03F1B6:Skyrim.esm
+NAM5: 255
+Height: 2
+Weight: 100
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 038A31:Skyrim.esm
+DefaultPackageList: 02AC7A:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

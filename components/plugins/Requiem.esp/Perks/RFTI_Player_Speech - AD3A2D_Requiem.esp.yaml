@@ -1,0 +1,81 @@
+FormKey: AD3A2D:Requiem.esp
+EditorID: RFTI_Player_Speech
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 200
+  EntryPoint: ModSellPrices
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: -0.1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 13
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 05091B:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 0DEE93:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModBuyPrices
+  PerkConditionTabCount: 2
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 12
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 0A8657:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06C0EC:Skyrim.esm
+  EntryPoint: ModPlayerIntimidation
+  PerkConditionTabCount: 2
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 11
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 0A8657:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06C0EC:Skyrim.esm
+  EntryPoint: ModBuyPrices
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 10
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06C0EC:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 0A8657:Skyrim.esm
+  EntryPoint: ModSellPrices
+  PerkConditionTabCount: 2
+  Value: 0

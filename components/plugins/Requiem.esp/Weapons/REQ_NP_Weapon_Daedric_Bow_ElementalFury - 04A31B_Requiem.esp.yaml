@@ -1,0 +1,62 @@
+FormKey: 04A31B:Requiem.esp
+MajorRecordFlagsRaw: 4
+EditorID: REQ_NP_Weapon_Daedric_Bow_ElementalFury
+SkyrimMajorRecordFlags:
+- NotPlayable
+Name:
+  TargetLanguage: English
+  Value: Daedric Bow of the Inferno
+Model:
+  File: Weapons\Daedric\DaedricBowSkinned.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 04A31C:Requiem.esp
+EnchantmentAmount: 3000
+EquipmentType: 013F45:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E715:Skyrim.esm
+- 01E71F:Skyrim.esm
+- 08F958:Skyrim.esm
+- 9F9914:Requiem.esp
+- AD3B2D:Requiem.esp
+- AD3B2F:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 0D7533:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03D78C:Skyrim.esm
+UnequipSound: 03D882:Skyrim.esm
+BasicStats:
+  Value: 2500
+  Weight: 21
+  Damage: 100
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 0.3704
+  Reach: 1
+  Flags:
+  - CantDrop
+  - NonPlayable
+  - NPCsUseAmmo
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  Damage: 9
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+MajorFlags:
+- NonPlayable

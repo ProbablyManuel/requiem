@@ -1,0 +1,138 @@
+FormKey: 000855:ccbgssse063-ba_ebony.esl
+EditorID: ccBGSSSE063_MiscQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccBGSSSE063_MiscQuest_05000855
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorBootsHeavyTown
+      Object: 016749:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorGauntletsHeavyTown
+      Object: 01674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavy
+      Object: 016740:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE063_ArmorBladesHelmet
+      Object: 000803:ccbgssse063-ba_ebony.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavy
+      Object: 0166F8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LCharBanditBoss
+      Object: 03DF16:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavySpecial
+      Object: 1031C8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorGauntletsHeavy
+      Object: 01673D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavyTown
+      Object: 016747:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorBootsHeavy
+      Object: 01673A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavySpecial
+      Object: 1031C4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavyBlacksmith
+      Object: 09BC3A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE063_ArmorBladesBoots
+      Object: 000800:ccbgssse063-ba_ebony.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavyTown
+      Object: 016750:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 000855:ccbgssse063-ba_ebony.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorGauntletsHeavyBlacksmith
+      Object: 09BC38:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE063_ArmorBladesGauntlets
+      Object: 000802:ccbgssse063-ba_ebony.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE063_SubCharBandit06Boss
+      Object: 00085E:ccbgssse063-ba_ebony.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavyBlacksmith
+      Object: 09BC36:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorBootsHeavyBlacksmith
+      Object: 09BC34:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorBootsHeavySpecial
+      Object: 1031C2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE063_ArmorBladesCuirass
+      Object: 000801:ccbgssse063-ba_ebony.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICourier
+      Object: 039F82:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorGauntletsHeavySpecial
+      Object: 1031C6:Skyrim.esm
+  FileName: SSE_QF_ccBGSSSE063_MiscQuest_05000855
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE063_MiscQuest_05000855
+    FragmentName: Fragment_1
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE063_MiscQuest_05000855
+    FragmentName: Fragment_0
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000855:ccbgssse063-ba_ebony.esl
+      Alias: 0
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000855:ccbgssse063-ba_ebony.esl
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Type: Misc
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  Unknown: 97
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Await news from a courier
+NextAliasID: 1
+Aliases:
+- Name: Note
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 000826:ccbgssse063-ba_ebony.esl
+  VoiceTypes: Null

@@ -1,0 +1,25 @@
+FormKey: AE3B74:Requiem.esp
+EditorID: REQ_Trait_Cuisine_Argonian_Description
+Name:
+  TargetLanguage: English
+  Value: 'Piscivore '
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Fish ingredients are five times more nourishing.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

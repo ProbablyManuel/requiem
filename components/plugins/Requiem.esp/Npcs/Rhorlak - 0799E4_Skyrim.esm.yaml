@@ -1,0 +1,184 @@
+FormKey: 0799E4:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 537133056
+EditorID: Rhorlak
+SkyrimMajorRecordFlags:
+- Compressed
+- 0x20000000
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 3
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+Factions:
+- Faction: 028170:Skyrim.esm
+  Fluff: 0x000000
+Voice: 0EA267:Skyrim.esm
+Template: 01BCD8:Skyrim.esm
+Race: 013746:Skyrim.esm
+Items:
+- Item:
+    Item: 037C1A:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 037C2B:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Mood: Angry
+Packages:
+- 01E61A:Skyrim.esm
+- 01E619:Skyrim.esm
+- 01E61F:Skyrim.esm
+- 01CB1A:Skyrim.esm
+- 0317C8:Skyrim.esm
+Class: 85BCE3:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Rhorlak
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 16
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 124
+  Magicka: 80
+  Stamina: 106
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 051403:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C7123:Skyrim.esm
+- 0CDCBE:Skyrim.esm
+- 0F81D2:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03BE1B:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 40
+SoundLevel: Normal
+DefaultOutfit: 01DC10:Skyrim.esm
+CrimeFaction: 028170:Skyrim.esm
+HeadTexture: 0D071D:Skyrim.esm
+TextureLighting: '#00826D5B'
+FaceMorph:
+  NoseUpVsDown: 0.4
+  JawUpVsDown: -0.72
+  JawNarrowVsWide: 0.48
+  CheeksUpVsDown: 0.66
+  CheeksForwardVsBack: 0.5
+  EyesUpVsDown: -0.1
+  EyesInVsOut: 0.18
+  BrowsUpVsDown: -1
+  BrowsInVsOut: 0.4
+  LipsUpVsDown: -0.04
+  LipsInVsOut: 1
+  ChinNarrowVsWide: 1
+  ChinUpVsDown: 1
+  ChinUnderbiteVsOverbite: 0.14
+  EyesForwardVsBack: -0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 12
+  Unknown: 4294967295
+  Eyes: 17
+  Mouth: 14
+TintLayers:
+- Index: 1
+  Color: '#00826D5B'
+  InterpolationValue: 1
+  Preset: 78
+- Index: 5
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 103
+- Index: 11
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 138
+MajorFlags:
+- 0x40000
+- BleedoutOverride

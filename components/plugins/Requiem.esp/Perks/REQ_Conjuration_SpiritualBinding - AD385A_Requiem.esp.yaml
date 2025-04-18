@@ -1,0 +1,22 @@
+FormKey: AD385A:Requiem.esp
+EditorID: REQ_Conjuration_SpiritualBinding
+Name:
+  TargetLanguage: English
+  Value: Spiritual Binding
+Description:
+  TargetLanguage: English
+  Value: Your knowledge of Oblivion's spiritual aspects increases the strength of all your summoned spirits.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 105F30:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 35
+NumRanks: 1
+Playable: True

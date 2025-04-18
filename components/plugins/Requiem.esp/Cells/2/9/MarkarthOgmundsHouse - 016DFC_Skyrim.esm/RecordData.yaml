@@ -1,0 +1,110 @@
+FormKey: 016DFC:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthOgmundsHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ogmund's House
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00282517'
+  DirectionalColor: '#005C574B'
+  FogNearColor: '#004B5C63'
+  FogNear: 750
+  FogFar: 3000
+  FogClipDistance: 3000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#004A5E64'
+    Scale: 1
+  FogFarColor: '#004A5E64'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - LightFadeDistances
+LightingTemplate: 0D7B14:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F30A:Skyrim.esm
+Owner: 0133AD:Skyrim.esm
+LockList: 0133AD:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 04E7A7:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 6
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 09AF19:Skyrim.esm
+  Scale: 0.91
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 071061:Skyrim.esm
+  LocationReference: 01F30A:Skyrim.esm
+  Placement:
+    Position: 1803.6307, 46.632122, 159.37833
+    Rotation: 0, 0, 3.403392
+- MutagenObjectType: PlacedObject
+  FormKey: 075F0C:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 14
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 064092:Skyrim.esm
+  TeleportDestination:
+    Door: 016E43:Skyrim.esm
+    Position: -174921.5, 6358.0454, -2766.3953
+    Rotation: 0, 0, 3.0019662
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 065674:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 016E99:Skyrim.esm
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  LocationReference: 01F30A:Skyrim.esm
+  Placement:
+    Position: 1682.1008, -898.51483, 0.70000994
+    Rotation: 0, 0, 3.1415927
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 09CF4D:Skyrim.esm
+  Base: 052B5A:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 060FD4:Skyrim.esm
+  Owner: 0133AD:Skyrim.esm
+  LocationReference: 01F30A:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0EA607:Skyrim.esm
+  Placement:
+    Position: 2051.273, -229.70427, 47.620914
+    Rotation: 0, -0, 3.1415927
+MajorFlags:
+- 0x40000

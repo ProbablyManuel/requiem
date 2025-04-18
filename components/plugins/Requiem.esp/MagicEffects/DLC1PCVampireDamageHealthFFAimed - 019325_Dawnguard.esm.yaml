@@ -1,0 +1,54 @@
+FormKey: 019325:Dawnguard.esm
+EditorID: DLC1PCVampireDamageHealthFFAimed
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 101BDE:Skyrim.esm
+- ADDDF7:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 3
+ResistValue: ResistMagic
+CastingLight: 07479A:Skyrim.esm
+TaperWeight: 1
+SpellmakingArea: 10
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 01A30C:Dawnguard.esm
+Explosion: 012FED:Dawnguard.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 0ABF02:Skyrim.esm
+ImpactData: 01A3FB:Dawnguard.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F208:Skyrim.esm
+- Type: Release
+  Sound: 010E05:Dawnguard.esm
+- Type: OnHit
+  Sound: 010E06:Dawnguard.esm
+- Type: Charge
+  Sound: 0FDA53:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp

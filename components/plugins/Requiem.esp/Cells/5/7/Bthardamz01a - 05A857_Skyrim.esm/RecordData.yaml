@@ -1,0 +1,75 @@
+FormKey: 05A857:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Bthardamz01a
+Version2: 9
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bthardamz Dwelling
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019152:Skyrim.esm
+AcousticSpace: 0F993E:Skyrim.esm
+EncounterZone: 03EBFA:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 089770:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 08EAB4:Skyrim.esm
+  Version2: 1
+  Base: 08EA5E:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019152:Skyrim.esm
+  Placement:
+    Position: 610.8381, 1536.2192, 70.11379
+    Rotation: 0, -0, 1.5699986
+- MutagenObjectType: PlacedObject
+  FormKey: 08EAB8:Skyrim.esm
+  Version2: 2
+  Base: 020650:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019152:Skyrim.esm
+  Placement:
+    Position: -403.84805, 945.8054, 60.060055
+    Rotation: 0, -0, 0.80319756
+MajorFlags:
+- 0x40000

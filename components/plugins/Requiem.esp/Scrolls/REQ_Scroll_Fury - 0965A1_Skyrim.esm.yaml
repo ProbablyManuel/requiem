@@ -1,0 +1,33 @@
+FormKey: 0965A1:Skyrim.esm
+EditorID: REQ_Scroll_Fury
+Version2: 14
+ObjectBounds:
+  First: -16, -4, -4
+  Second: 16, 4, 4
+Name:
+  TargetLanguage: English
+  Value: Scroll of Fury
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Clutter\Common\Scroll01.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 25
+Weight: 0.5
+BaseCost: 43
+CastType: 3
+TargetType: Aimed
+Effects:
+- BaseEffect: 04DEE6:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 30
+- BaseEffect: 026D7E:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 30

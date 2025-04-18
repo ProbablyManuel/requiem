@@ -1,0 +1,968 @@
+FormKey: 00088C:ccedhsse003-redguard.esl
+EditorID: ccEDHSSE003_Quest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccEDHSSE003_CourierScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NoteGiver
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NoteFormBrawl
+      Object: 000815:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CourierScript
+      Object: 039F82:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DidBrawl
+      Object: 000801:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NoteFormPersuasion
+      Object: 000814:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Note
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 6
+    - MutagenObjectType: ScriptFloatProperty
+      Name: TimeUntilCourier
+      Data: 24
+  - Name: ccstartafterchargenscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: MyQuestStageToSet
+      Data: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ101
+      Object: 03372B:Skyrim.esm
+  - Name: QF_ccEDHSSE003_Quest_0200088C
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CaravanGuard3
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 33
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRecruitedRedguardEliteGlobal
+      Object: 000E4B:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RewardAmount
+      Object: 0008B7:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Brawler
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 26
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CaravanGuard1
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 31
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HostageStandMarker
+      Object: 000822:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SpyLeaderCourierNote
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy1Note
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CaravanGuard4
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 32
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spy1Note
+      Object: 000812:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SpyLeader
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SupplyChestKey
+      Object: 0008A7:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CaravanGuard2
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy4Woods
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpeakToSpyLeaderTrig
+      Object: 0008B8:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BrawlerNote
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RedguardEliteFaction
+      Object: 0008B9:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Hostage
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy2
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SpyLeaderInstructions
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy3Woods
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spy2Note
+      Object: 000813:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy1
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Chest
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 28
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ScoutsMeetMarker
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFaction
+      Object: 000DB1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FijehInstructions
+      Object: 000816:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SupplyChestRef
+      Object: 0008A8:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Noble
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Invisibility
+      Object: 027EB6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy2Note
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RedguardEliteHostageFaction
+      Object: 000E32:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_NobleEncounterMarker
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy5Woods
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 22
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ChestKey
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 29
+  FileName: QF_ccEDHSSE003_Quest_0200088C
+  Fragments:
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_13
+  - Stage: 22
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_4
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_0
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_17
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_1
+  - Stage: 82
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_14
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_10
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_8
+  - Stage: 21
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_7
+  - Stage: 85
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_15
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_9
+  - Stage: 62
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_23
+  - Stage: 120
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_19
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_3
+  - Stage: 25
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_6
+  - Stage: 25
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_5
+  - Stage: 55
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_11
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_12
+  - Stage: 87
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_16
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_25
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_24
+  - Stage: 200
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_2
+  - Stage: 140
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_20
+  - Stage: 110
+    Unknown2: 1
+    ScriptName: QF_ccEDHSSE003_Quest_0200088C
+    FragmentName: Fragment_21
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 26
+    Scripts:
+    - Name: ccEDHSSE003_BrawlerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DGIntimidateQuest
+        Object: 047AE6:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 5
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 30
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 6
+    Scripts:
+    - Name: ccEDHSSE003_SetStageOnPickup
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 40
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 50
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 7
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 62
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 24
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 82
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 23
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 87
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 28
+    Scripts:
+    - Name: ccEDHSSE003_SupplyChestScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CraftingMessage
+        Object: 000896:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CraftingGlobal
+        Object: 000809:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: ObjectiveID
+        Data: 110
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 20
+    Scripts:
+    - Name: ccEDHSSE003_RedguardEliteInvisScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: InvisibilityEffect
+        Object: 01EA6A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Invisibility
+        Object: 027EB6:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 19
+    Scripts:
+    - Name: ccEDHSSE003_RedguardEliteInvisScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: InvisibilityEffect
+        Object: 01EA6A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Invisibility
+        Object: 027EB6:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 22
+    Scripts:
+    - Name: ccEDHSSE003_RedguardEliteInvisScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: InvisibilityEffect
+        Object: 01EA6A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Invisibility
+        Object: 027EB6:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 30
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 110
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 31
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 110
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 34
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 110
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 33
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 110
+  - Property:
+      Name: ''
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 32
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 110
+Name:
+  TargetLanguage: English
+  Value: Interception
+Flags:
+- AllowRepeatedStages
+- RunOnce
+QuestFormVersion: 65
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 26
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 1
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 3
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 25
+  ComparisonValue: 1
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 112
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 331
+    Entry:
+      TargetLanguage: English
+      Value: A fighter in Shor's Stone has been rumored to have been causing trouble by trying to start fights with anyone who passes by. I should see if there's a way to get him to stop being such a nuisance.
+- Index: 20
+  Unknown: 119
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I accepted Azadi's challenge in Shor's Stone, and must now defeat him in an unarmed brawl. Perhaps if I beat some sense into him, he will go someplace else.
+- Index: 21
+  LogEntries:
+  - Flags: []
+- Index: 22
+  Unknown: 97
+  LogEntries:
+  - Flags: []
+- Index: 25
+  Unknown: 119
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 000801:ccedhsse003-redguard.esl
+    Entry:
+      TargetLanguage: English
+      Value: I convinced Azadi to stop bothering the residents of Shor's Stone without a fight. He handed me a note, and then vanished into thin air. I should read what the note has to say.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 000801:ccedhsse003-redguard.esl
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: I defeated Azadi in an unarmed brawl. After the fight, he handed me a note, and then vanished into thin air. I should read what the note has to say.
+- Index: 30
+  Unknown: 56
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Azadi's note was mysterious, only saying that "they" would somehow contact me. I should expect to receive a letter from a courier soon.
+- Index: 40
+  Unknown: 56
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a letter from someone named Fijeh by courier. I should read what it has to say.
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I received a letter from Fijeh, who seemed to know about my encounter with Azadi. Fijeh and Azadi are members of a secretive group of spies and warriors from Hammerfell called the Remnants. Fijeh is trying to rescue a fellow Remnant that was captured by the Thalmor, aided by a Thalmor sympathizer. Fijeh would like my assistance in helping track down his brother in arms. He asked to meet in Purewater Run, in the hills near Markarth.
+- Index: 55
+  LogEntries:
+  - Flags: []
+- Index: 57
+- Index: 60
+  Unknown: 97
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I met Fijeh in Purewater Run. He handed me a set of instructions detailing the next step of the mission to rescue Rakeed.
+- Index: 62
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'Fijeh has requested that I gather intelligence about the whereabouts of the captured Remnant from two spies, in Karthwasten and Ivarstead, by speaking a special phrase to them: "The ravens take flight once more."'
+- Index: 80
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I spoke the secret phrase to Josla, a Remnant spy in Karthwasten. She handed me a note that should contain information about the whereabouts of the captured Remnant.
+- Index: 82
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: After speaking to a Remnant spy, I learned that Rakeed will be transported through Skyrim very soon under heavy Thalmor guard by caravan, along with the Hammerfell noble that aided in his capture. Their destination is the city of Blacklight in Morrowind. I should seek out the spy in Ivarstead to learn more.
+- Index: 85
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I spoke the secret phrase to Sirayar, a Remnant spy in Ivarstead. He handed me a note that should contain information about the whereabouts of the captured Remnant.
+- Index: 87
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: After speaking to a Remnant spy, I learned that Rakeed will be transported to Morrowind through Skyrim by crossing the border to the southwest from Hammerfell, and should be traveling the road near Sunderstone Gorge. I should seek out the spy in Karthwasten to learn more.
+- Index: 90
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I have gathered information from both of the Remnant spies that reside in Skyrim. It seems that the Thalmor will be transporting Rakeed to Morrowind very soon, crossing the border into Skyrim from the southwest and traveling the road near Sunderstone Gorge. I should return to Purewater Run and discuss the next step with Fijeh.
+- Index: 100
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Fijeh has handed me a key to the Remnant supply chest. We plan to attack Ismal's caravan as soon as everyone is gathered at the attack location. Alternatively, I can approach the caravan and get the job done myself.
+- Index: 110
+  Unknown: 97
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I've begun my assault on Ismal's caravan in my attempt to free Rakeed.
+- Index: 120
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I met the Remnant warriors near Ismal's caravan. We now need to find Rakeed and free him from the Thalmor.
+- Index: 140
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Rakeed has been rescued from the Thalmor caravan. I should speak to Fijeh one last time now that the mission is complete.
+- Index: 200
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 000809:ccedhsse003-redguard.esl
+    Entry:
+      TargetLanguage: English
+      Value: Fijeh thanked me and paid me for my efforts. And with that, Fijeh cast an invisibility spell and disappeared along with Rakeed. I should investigate the Remnant supply chest that Fijeh gave me a key to unlock.
+  - Flags:
+    - CompleteQuest
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 000809:ccedhsse003-redguard.esl
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: Fijeh thanked me and paid me for my efforts. And with that, Fijeh cast an invisibility spell and disappeared along with Rakeed. I searched the supply chest that Fijeh gave me a key to unlock, and discovered a set of Remnant weapons and armor.
+- Index: 250
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: Fijeh thanked me and paid me for my efforts. And with that, Fijeh cast an invisibility spell and disappeared along with Rakeed. I searched the supply chest that Fijeh gave me a key to unlock, and discovered a set of Remnant weapons and armor.
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Speak to the fighter in Shor's Stone
+  Targets:
+  - AliasID: 26
+- Index: 15
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Defeat Azadi in an unarmed brawl
+  Targets:
+  - AliasID: 26
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read Azadi's note
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Wait to be contacted by courier
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read Fijeh's letter
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Travel to Purewater Run
+  Targets:
+  - {}
+- Index: 55
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Fijeh
+  Targets:
+  - {}
+- Index: 60
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read Fijeh's instructions
+- Index: 70
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find the Remnant spy behind the Miner's Barracks in Karthwasten
+  Targets:
+  - AliasID: 1
+- Index: 75
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read Josla's note
+- Index: 80
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find the Remnant spy in front of Vilemyr Inn in Ivarstead
+  Targets:
+  - AliasID: 3
+- Index: 85
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read Sirayar's note
+- Index: 100
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to Fijeh
+  Targets:
+  - {}
+- Index: 110
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Obtain the Remnant equipment from the supply chest
+  Targets:
+  - AliasID: 28
+- Index: 120
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Join the Remnant warriors to begin the assault
+  Targets:
+  - AliasID: 27
+- Index: 125
+  Flags:
+  - OrWithPrevious
+  DisplayText:
+    TargetLanguage: English
+    Value: Approach the caravan alone
+  Targets:
+  - AliasID: 17
+- Index: 130
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Free the hostage
+  Targets:
+  - AliasID: 25
+- Index: 160
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to Fijeh
+  Targets:
+  - {}
+NextAliasID: 35
+Aliases:
+- ID: 26
+  Name: Brawler
+  Flags:
+  - Essential
+  - AllowDisabled
+  ForcedReference: 000837:ccedhsse003-redguard.esl
+  PackageData:
+  - 00088D:ccedhsse003-redguard.esl
+  - 00088E:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 5
+  Name: BrawlerNote
+  Flags:
+  - Optional
+  - QuestObject
+  VoiceTypes: Null
+- Name: SpyLeader
+  Flags:
+  - Essential
+  - AllowDisabled
+  ForcedReference: 000826:ccedhsse003-redguard.esl
+  PackageData:
+  - 00088F:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 6
+  Name: SpyLeaderCourierNote
+  Flags:
+  - Optional
+  - QuestObject
+  - UsesStoredText
+  VoiceTypes: Null
+- ID: 7
+  Name: SpyLeaderInstructions
+  Flags:
+  - Optional
+  - QuestObject
+  VoiceTypes: Null
+- ID: 1
+  Name: Spy1
+  Flags:
+  - Essential
+  - AllowDisabled
+  ForcedReference: 000835:ccedhsse003-redguard.esl
+  PackageData:
+  - 0008BC:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 24
+  Name: Spy1Note
+  Flags:
+  - Optional
+  - QuestObject
+  VoiceTypes: Null
+- ID: 3
+  Name: Spy2
+  Flags:
+  - Essential
+  - AllowDisabled
+  ForcedReference: 000828:ccedhsse003-redguard.esl
+  PackageData:
+  - 0008BD:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 23
+  Name: Spy2Note
+  Flags:
+  - Optional
+  - QuestObject
+  VoiceTypes: Null
+- ID: 28
+  Name: Chest
+  Flags:
+  - Optional
+  - UsesStoredText
+  DisplayName: 000E45:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 29
+  Name: ChestKey
+  Flags:
+  - Optional
+  - QuestObject
+  VoiceTypes: Null
+- ID: 27
+  Name: ScoutsMeetMarker
+  Flags: []
+  ForcedReference: 000830:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 20
+  Name: Spy3Woods
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 000833:ccedhsse003-redguard.esl
+  PackageData:
+  - 0008CA:ccedhsse003-redguard.esl
+  - 000831:ccedhsse003-redguard.esl
+  - 000E33:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 19
+  Name: Spy4Woods
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 000829:ccedhsse003-redguard.esl
+  PackageData:
+  - 0008CA:ccedhsse003-redguard.esl
+  - 000831:ccedhsse003-redguard.esl
+  - 000E33:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 22
+  Name: Spy5Woods
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 000827:ccedhsse003-redguard.esl
+  PackageData:
+  - 0008CA:ccedhsse003-redguard.esl
+  - 000831:ccedhsse003-redguard.esl
+  - 000E33:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 30
+  Name: Noble
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 00082C:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 17
+  Name: NobleEncounterMarker
+  Flags:
+  - AllowDisabled
+  ForcedReference: 00082A:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 25
+  Name: Hostage
+  Flags:
+  - Essential
+  - AllowDisabled
+  ForcedReference: 000854:ccedhsse003-redguard.esl
+  PackageData:
+  - 0008BE:ccedhsse003-redguard.esl
+  - 00089D:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 31
+  Name: CaravanGuard1
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 000832:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 34
+  Name: CaravanGuard2
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 00082D:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 33
+  Name: CaravanGuard3
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 00082B:ccedhsse003-redguard.esl
+  VoiceTypes: Null
+- ID: 32
+  Name: CaravanGuard4
+  Flags:
+  - AllowDead
+  - AllowDisabled
+  ForcedReference: 00082E:ccedhsse003-redguard.esl
+  VoiceTypes: Null

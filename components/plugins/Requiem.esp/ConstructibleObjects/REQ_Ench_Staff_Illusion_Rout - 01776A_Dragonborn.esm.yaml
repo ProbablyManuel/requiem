@@ -1,0 +1,20 @@
+FormKey: 01776A:Dragonborn.esm
+EditorID: REQ_Ench_Staff_Illusion_Rout
+Items:
+- Item:
+    Item: 07A91B:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 017749:Dragonborn.esm
+    Count: 4
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Spell: 04DEEF:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 029B92:Skyrim.esm
+WorkbenchKeyword: 017738:Dragonborn.esm
+CreatedObjectCount: 1

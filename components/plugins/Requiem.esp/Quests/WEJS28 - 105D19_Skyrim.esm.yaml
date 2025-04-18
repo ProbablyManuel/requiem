@@ -1,0 +1,294 @@
+FormKey: 105D19:Skyrim.esm
+EditorID: WEJS28
+Version2: 4
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
+  - Name: QF_WEJS28_00105D19
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 105D19:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CenterMarker
+      Object: 105D19:Skyrim.esm
+      Alias: 63
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 105D19:Skyrim.esm
+      Alias: 67
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 105D19:Skyrim.esm
+      Alias: 68
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Scene_Marker2
+      Object: 105D19:Skyrim.esm
+      Alias: 53
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MarkerInCurrentHold
+      Object: 105D19:Skyrim.esm
+      Alias: 64
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_InnCenterMarker
+      Object: 105D19:Skyrim.esm
+      Alias: 65
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Scene_Marker1
+      Object: 105D19:Skyrim.esm
+      Alias: 54
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 105D19:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Assassin
+      Object: 105D19:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 105D19:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 105D19:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 105D19:Skyrim.esm
+      Alias: 6
+  FileName: QF_WEJS28_00105D19
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_WEJS28_00105D19
+    FragmentName: Fragment_19
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WEJS28_00105D19
+    FragmentName: Fragment_12
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 105D19:Skyrim.esm
+      Alias: 39
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+Name:
+  TargetLanguage: English
+  Value: Dark Brotherhood Assassin Sent to Kill the Player
+Flags:
+- 0x4
+Priority: 50
+QuestFormVersion: 65
+Type: Misc
+Event: SCPT
+Filter: Wilderness Encounters\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 035D5F:Skyrim.esm
+  ComparisonValue: 210
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 01EA50:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 40
+Stages:
+- Flags:
+  - StartUpStage
+  - KeepInstanceDataFromHereOn
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+- Index: 95
+  LogEntries:
+  - Flags: []
+- Index: 100
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+NextAliasID: 69
+Aliases:
+- ID: 1
+  Name: TRIGGER
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: myHoldLocation
+  Flags:
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 6
+  Type: Location
+  Name: myHoldContested
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 7
+  Type: Location
+  Name: myHoldImperial
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 8
+  Type: Location
+  Name: myHoldSons
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 64
+  Name: MarkerInCurrentHold
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 01BDF1:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 65
+  Name: InnCenterMarker
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 01BDF1:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 01CB87:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSameEditorLocAsRefAliasConditionData
+      ReferenceAliasIndex: 64
+      Keyword: 016771:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 53
+  Name: Scene Marker2
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F9:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 54
+  Name: Scene Marker1
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F9:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 63
+  Name: CenterMarker
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5FE:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 39
+  Name: Assassin
+  Flags: []
+  CreateReferenceToObject:
+    Object: 1051FC:Skyrim.esm
+    AliasID: 63
+    Level: Medium
+  Factions:
+  - 105D13:Skyrim.esm
+  PackageData:
+  - 105D1A:Skyrim.esm
+  VoiceTypes: Null
+- ID: 68
+  Name: Player
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null
+- ID: 67
+  Name: Note
+  Flags:
+  - StoresText
+  - UsesStoredText
+  CreateReferenceToObject:
+    Object: 10596A:Skyrim.esm
+    AliasID: 63
+    Level: Medium
+  Factions:
+  - 105D14:Skyrim.esm
+  VoiceTypes: Null

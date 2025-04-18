@@ -1,0 +1,36 @@
+FormKey: 17911B:Requiem.esp
+EditorID: REQ_Conjuration_Ritualism
+Name:
+  TargetLanguage: English
+  Value: Ritualism
+Description:
+  TargetLanguage: English
+  Value: Your knowledge of the realms of the dead surpasses that of many and decreases <br> the effort needed to raise or summon the dead and ghosts.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0581DD:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 02482B:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.75

@@ -1,0 +1,16 @@
+FormKey: 9715CE:Requiem.esp
+EditorID: REQ_Setup_ScriptInitializationFailed
+Description:
+  TargetLanguage: English
+  Value: >-
+    Requiem was unable to initialize all of its core scripts. This is usually caused by outdated Requiem addons or patches that modify these scripts but can also be due to harmful INI settings, modifications of Requiem's requirements, or when you start a new game without restarting Skyrim.
+
+
+    Since your current game would become unplayable, we will send you back to the main menu. Please quit and relaunch Skyrim once this issue is resolved.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Script initialization failed

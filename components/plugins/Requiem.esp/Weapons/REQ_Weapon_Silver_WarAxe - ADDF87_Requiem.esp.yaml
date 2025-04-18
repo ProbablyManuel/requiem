@@ -1,0 +1,51 @@
+FormKey: ADDF87:Requiem.esp
+EditorID: REQ_Weapon_Silver_WarAxe
+ObjectBounds:
+  First: -13, -11, -2
+  Second: 10, 43, 2
+Name:
+  TargetLanguage: English
+  Value: Silver War Axe
+Model:
+  File: prvti\silver\silverwaraxe.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C9:Skyrim.esm
+AlternateBlockMaterial: 0774C0:Skyrim.esm
+Keywords:
+- 01E712:Skyrim.esm
+- 08F958:Skyrim.esm
+- 10AA1A:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B8:Skyrim.esm
+FirstPersonModel: ADDF86:Requiem.esp
+AttackFailSound: 03F209:Skyrim.esm
+EquipSound: 03DDB7:Skyrim.esm
+UnequipSound: 03DDB8:Skyrim.esm
+BasicStats:
+  Value: 110
+  Weight: 12
+  Damage: 9
+Data:
+  AnimationType: OneHandAxe
+  Unused: 0x000000
+  Speed: 0.9
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1063675494
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.85
+Critical:
+  Damage: 4
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

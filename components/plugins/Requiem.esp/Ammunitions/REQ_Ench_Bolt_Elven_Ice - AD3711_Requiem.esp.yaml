@@ -1,0 +1,30 @@
+FormKey: AD3711:Requiem.esp
+EditorID: REQ_Ench_Bolt_Elven_Ice
+ObjectBounds:
+  First: -121, -1, -26
+  Second: 0, 1, 0
+Name:
+  TargetLanguage: English
+  Value: Elven Bolt of Ice
+Model:
+  File: Requiem\ammo\elven\elven_bolt_magic.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: charge
+    NewTexture: AD3833:Requiem.esp
+    Index: 1
+PickUpSound: 00D219:Dawnguard.esm
+PutDownSound: 00D21A:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: Explodes for <25> frost damage.
+Keywords:
+- 01E71B:Skyrim.esm
+- 0917E7:Skyrim.esm
+- 9D1F49:Requiem.esp
+- AD3980:Requiem.esp
+- AD3B2D:Requiem.esp
+- ADDDD2:Requiem.esp
+Projectile: AD36F3:Requiem.esp
+Damage: 77
+Value: 15

@@ -1,0 +1,206 @@
+FormKey: 106117:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 786432
+EditorID: WEAdventurerMageShieldStaffHighElfF
+SkyrimMajorRecordFlags:
+- Compressed
+- CantWait
+Configuration:
+  Flags:
+  - Female
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 270
+  StaminaOffset: 210
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  CalcMinLevel: 6
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 100
+Voice: 013ADD:Skyrim.esm
+Template: 106113:Skyrim.esm
+Race: 013743:Skyrim.esm
+AttackRace: 013746:Skyrim.esm
+Items:
+- Item:
+    Item: 068525:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0638B4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0638B3:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 037C2B:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 035320:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0165C2:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 013179:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: High Elf
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 45
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 45
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 57
+  - Key: Illusion
+    Value: 57
+  - Key: Restoration
+    Value: 23
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 82
+  Magicka: 205
+  Stamina: 58
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 040209:Skyrim.esm
+- 08CA85:Skyrim.esm
+- 0E4D9F:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0430:Skyrim.esm
+CombatStyle: 10611C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 19.999998
+SoundLevel: Normal
+DefaultOutfit: 106114:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 0F2060:Skyrim.esm
+TextureLighting: '#00695727'
+FaceMorph:
+  NoseLongVsShort: 0.4
+  NoseUpVsDown: -0.8
+  JawUpVsDown: -0.8
+  JawNarrowVsWide: -0.6
+  JawForwardVsBack: 0.6
+  CheeksUpVsDown: -0.7
+  CheeksForwardVsBack: -0.8
+  EyesUpVsDown: -0.4
+  EyesInVsOut: 0.7
+  BrowsUpVsDown: -0.8
+  BrowsInVsOut: 0.7
+  BrowsForwardVsBack: 0.6
+  LipsUpVsDown: 0.2
+  ChinNarrowVsWide: 0.1
+  EyesForwardVsBack: -0.8
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 18
+  Unknown: 4294967295
+  Eyes: 25
+  Mouth: 18
+TintLayers:
+- Index: 24
+  Color: '#00695727'
+  InterpolationValue: 1
+  Preset: 373
+- Index: 26
+  Color: '#00430401'
+  InterpolationValue: 0.69
+  Preset: 393
+- Index: 30
+  Color: '#00070C3D'
+  InterpolationValue: 0.56
+  Preset: 421
+- Index: 34
+  Color: '#00430401'
+  InterpolationValue: 1
+  Preset: 444
+- Index: 35
+  Color: '#00500901'
+  InterpolationValue: 0.76
+  Preset: 784
+MajorFlags:
+- 0x40000
+- 0x80000

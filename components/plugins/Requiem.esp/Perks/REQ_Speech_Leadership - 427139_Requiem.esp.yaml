@@ -1,0 +1,22 @@
+FormKey: 427139:Requiem.esp
+EditorID: REQ_Speech_Leadership
+Name:
+  TargetLanguage: English
+  Value: Leadership
+Description:
+  TargetLanguage: English
+  Value: Your rhetorical skill makes you the perfect leader. By inspiring all those who fight by your side,<br>you encourage your followers to always push their abilities to their very limits.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Speech
+  ComparisonValue: 75
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F72:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True

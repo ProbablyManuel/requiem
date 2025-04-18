@@ -1,0 +1,21 @@
+FormKey: 00089A:Requiem.esp
+EditorID: REQ_AbShow_FortifyAttackDamage
+Name:
+  TargetLanguage: English
+  Value: Fortify Attack Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: AttackDamageMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Attacks deal <mag>% more damage.

@@ -1,0 +1,56 @@
+FormKey: 00306B:HearthFires.esm
+EditorID: BYOHMineStone01
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MineOreScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ore
+      Object: 00306C:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AchievementsQuest
+      Object: 0FC85D:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: ResourceCount
+      Data: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DialogueCidhnaMine
+      Object: 0362AC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DrScOreOpen
+      Object: 0195AE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: mineOreToolsList
+      Object: 10ACC4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MS02
+      Object: 040A5E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FailureMessage
+      Object: 0DDDAA:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: ResourceCountTotal
+      Data: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CidhnaMineLocation
+      Object: 018C91:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CidhnaMinePlayerBedREF
+      Object: 0D923E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DepletedMessage
+      Object: 00D17D:HearthFires.esm
+ObjectBounds:
+  First: -42, -129, -24
+  Second: 235, 245, 157
+Name:
+  TargetLanguage: English
+  Value: Stone Quarry
+Model:
+  File: _BYOH\Clutter\Resources\StoneResrouce01.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+ActivateTextOverride:
+  TargetLanguage: English
+  Value: Mine
+Flags: []

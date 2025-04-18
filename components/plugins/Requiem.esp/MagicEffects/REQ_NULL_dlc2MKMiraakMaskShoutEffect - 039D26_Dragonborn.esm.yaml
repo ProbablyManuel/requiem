@@ -1,0 +1,49 @@
+FormKey: 039D26:Dragonborn.esm
+EditorID: REQ_NULL_dlc2MKMiraakMaskShoutEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dlc2MKMiraakMaskShoutSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: plague
+      Object: 03B546:Dragonborn.esm
+  - Name: voicepusheffectscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 15
+Name:
+  TargetLanguage: English
+  Value: Miraak Mask Shout
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- FXPersist
+BaseCost: 2
+MagicSkill: Destruction
+TaperWeight: 1
+HitShader: 039E46:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+Projectile: 039E45:Dragonborn.esm
+Explosion: 039E48:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 015C7B:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 0A0F54:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0172AC:Skyrim.esm

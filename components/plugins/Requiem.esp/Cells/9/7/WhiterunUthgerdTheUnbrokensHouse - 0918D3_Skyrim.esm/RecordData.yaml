@@ -1,0 +1,90 @@
+FormKey: 0918D3:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunUthgerdTheUnbrokensHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Uthgerd's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00808080'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#FFFFFF'
+    DirectionalXMinus: '#FFFFFF'
+    DirectionalYPlus: '#FFFFFF'
+    DirectionalYMinus: '#FFFFFF'
+    DirectionalZPlus: '#FFFFFF'
+    DirectionalZMinus: '#FFFFFF'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 09B9D2:Skyrim.esm
+Owner: 093B21:Skyrim.esm
+LockList: 093B01:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0918E6:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 11
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 024E26:Skyrim.esm
+  TeleportDestination:
+    Door: 036F00:Skyrim.esm
+    Position: 21416.322, -4548.6904, -2910.1409
+    Rotation: 0, -0, -1.297783
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 093B11:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0CD314:Skyrim.esm
+    TeleportMarkerTriangle: 8
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  Owner: 093B21:Skyrim.esm
+  LocationReference: 09B9D2:Skyrim.esm
+  Placement:
+    Position: 2225.1714, 1599.9808, 397.44785
+    Rotation: 0, -0, 1.5707964
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 09CF5E:Skyrim.esm
+  Version2: 5
+  Base: 081DD9:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 060FD4:Skyrim.esm
+  LocationReference: 09B9D2:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0EA618:Skyrim.esm
+  Placement:
+    Position: 2241.0908, 2288.0051, 570.0152
+    Rotation: 0, -0, 3.1415927
+MajorFlags:
+- 0x40000

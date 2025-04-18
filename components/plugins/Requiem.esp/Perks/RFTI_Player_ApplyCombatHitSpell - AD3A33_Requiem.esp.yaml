@@ -1,0 +1,25 @@
+FormKey: AD3A33:Requiem.esp
+EditorID: RFTI_Player_ApplyCombatHitSpell
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 250
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsPowerAttackingConditionData
+      ComparisonValue: 1
+  EntryPoint: ApplyCombatHitSpell
+  PerkConditionTabCount: 3
+  Spell: 0642ED:Requiem.esp
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 249
+  EntryPoint: ApplyCombatHitSpell
+  PerkConditionTabCount: 3
+  Spell: ADDDC5:Requiem.esp

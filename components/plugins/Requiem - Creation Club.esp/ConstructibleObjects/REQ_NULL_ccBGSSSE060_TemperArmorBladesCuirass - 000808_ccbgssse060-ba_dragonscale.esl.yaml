@@ -1,0 +1,22 @@
+FormKey: 000808:ccbgssse060-ba_dragonscale.esl
+EditorID: REQ_NULL_ccBGSSSE060_TemperArmorBladesCuirass
+Items:
+- Item:
+    Item: 03ADA3:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 000801:ccbgssse060-ba_dragonscale.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

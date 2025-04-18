@@ -1,0 +1,83 @@
+FormKey: 0A18AB:Requiem.esp
+EditorID: REQ_Effect_TrueYieldFear04Beast
+Name:
+  TargetLanguage: English
+  Value: True Yield Feara
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: Demoralize
+Projectile: 012FDC:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUniqueConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Health
+  ComparisonValue: 75
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+    RunOnTypeIndex: 0
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 013798:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 0F5D16:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 0D205E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    RunOnTypeIndex: 0
+    Race: 0BA545:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    RunOnTypeIndex: 0
+    Race: 04E507:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    RunOnTypeIndex: 0
+    Race: 053477:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+    RunOnTypeIndex: 0

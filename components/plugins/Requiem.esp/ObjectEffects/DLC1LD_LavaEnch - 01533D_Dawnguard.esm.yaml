@@ -1,0 +1,18 @@
+FormKey: 01533D:Dawnguard.esm
+EditorID: DLC1LD_LavaEnch
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: Lava Damage
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 01533C:Dawnguard.esm
+  Data:
+    Magnitude: 300
+    Duration: 1
+- BaseEffect: 015339:Dawnguard.esm
+  Data:
+    Magnitude: 50
+    Duration: 30

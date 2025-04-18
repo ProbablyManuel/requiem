@@ -1,0 +1,154 @@
+FormKey: 015253:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: LostEchoCave01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Lost Echo Cave
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00282828'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0B9EF5:Skyrim.esm
+WaterHeight: 0
+Location: 019266:Skyrim.esm
+SkyAndWeatherFromRegion: 04D7FD:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC44:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0B9E1E:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 000820:ccbgssse053-ba_leather.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 00081D:ccbgssse053-ba_leather.esl
+  LocationReference: 019266:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -439.14755, 2023.3953, -352
+    Rotation: 0, 0, 4.583189
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 000821:ccbgssse053-ba_leather.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 00081E:ccbgssse053-ba_leather.esl
+  LocationReference: 019266:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -515.6513, 2012.5422, -352
+    Rotation: 0, 0, 4.583191
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 000822:ccbgssse053-ba_leather.esl
+  MajorRecordFlagsRaw: 3584
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - 0x400
+  - InitiallyDisabled
+  Base: 00081F:ccbgssse053-ba_leather.esl
+  RagdollData: 0x02524D410000000000000000000000007751E73F73C139BFC6DB063E0800636300A0D3C0000081BB000070BCBCBD47C0A0D9463F975140400900424F0000A33C00601E3D0099FA414B1F1ABE01BB43BA9DE093BC0A4D0C00000000B9009498BE0095DB410E127E3FB2EBF7BDB8B0783E0E6C6164C090D34000C0303C00000EBCC4D436400F76823DAD053E400F0C000200301A3D00009C3DC0AEFA412F5D8DBE338D423BA6AE393C1061646500C051BC008894BE009ADB414B477D3FBD5C073EE50973BE020C0002008032BCA0ACA6C00072744061E9A5BC78C030BDA7D3E8BD03616465000096BB00002A3C00580C411E0A4CBEE85A903D086B6E3D046E69660000003B0080DDBC00FA1D41C5188D3EFD01B13DBEF087BE0041726D00000F3C0000EB3B4033B04122D4D1BC56324F3DEF3111BE0141726D000084BC0000AEBD00C80C4127C6C63EFBF6EE3D5F0C39BF0B000000000028BD00C06F3D10FB5F415FB2083F0AE45F3ECA3D50BE0C004137000066BC00C0CC3C2209A241540AD03E28819EBDE0241DBC0D4C04000000743C004086BD0C4180413E7F2E3D4E0ECEBED356BFBF054F444C0000E03C0080623DC0F55F411C2C1C3FF7DDCFBEC590133E06004D4F00005C3C000020BBA01CA2412562D33E60AB903DD93AE93C07880800000090BA0048B9BD80418041E298993BB87DD73D8E2DC03F00009487000000000000884100002041000000800000008000000080
+  LocationReference: 019266:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -491.453, 1906.6869, -332.09924
+    Rotation: 0, 0, 5.0831876
+  MajorFlags:
+  - StartsDead
+  - Persistent
+  - InitiallyDisabled
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 000827:ccbgssse053-ba_leather.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultsetStageTrigSCRIPT
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: disableWhenDone
+        Data: True
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000826:ccbgssse053-ba_leather.esl
+      - MutagenObjectType: ScriptBoolProperty
+        Name: doOnce
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 40
+      - MutagenObjectType: ScriptIntProperty
+        Name: prereqStageOPT
+        Data: 20
+  Base: 099312:Skyrim.esm
+  Primitive:
+    Bounds: 1224.0002, 1224, 128
+    Color: '#00CC4C33'
+    Unknown: 0.15
+    Type: Box
+  LocationReference: 019266:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -515.6513, 2012.5424, -30000
+    Rotation: 0, 0, 4.583191
+MajorFlags:
+- 0x40000

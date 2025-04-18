@@ -1,0 +1,32 @@
+FormKey: AE393B:Requiem.esp
+EditorID: REQ_Trait_EbonyWarrior
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1E-06
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 000007:Skyrim.esm
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.33
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModIncomingStagger
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0

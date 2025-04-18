@@ -1,0 +1,61 @@
+FormKey: 0339A4:Dragonborn.esm
+MajorRecordFlagsRaw: 4
+EditorID: REQ_Creature_DwarvenBallista3
+SkyrimMajorRecordFlags:
+- NotPlayable
+Name:
+  TargetLanguage: English
+  Value: Dwarven Ballista
+Model:
+  File: Weapons\Dwarven\DwarvenSphereBowDummyObject.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 0339A6:Dragonborn.esm
+EnchantmentAmount: 100
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E715:Skyrim.esm
+- 01E71A:Skyrim.esm
+- 08F958:Skyrim.esm
+- 899DBE:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 036BAC:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03D78C:Skyrim.esm
+UnequipSound: 03D882:Skyrim.esm
+BasicStats:
+  Value: 5
+  Weight: 5
+  Damage: 32
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 0.875
+  Reach: 1
+  Flags:
+  - CantDrop
+  - NonPlayable
+  SightFOV: 0.4
+  BaseVATStoHitChance: 5
+  NumProjectiles: 1
+  RangeMin: 256
+  RangeMax: 2500
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+MajorFlags:
+- NonPlayable

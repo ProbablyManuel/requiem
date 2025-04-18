@@ -1,0 +1,19 @@
+FormKey: AE36FE:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Wood_Quarterstaff
+Items:
+- Item:
+    Item: ADDF7C:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDF7C:Requiem.esp
+CreatedObject: 033760:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

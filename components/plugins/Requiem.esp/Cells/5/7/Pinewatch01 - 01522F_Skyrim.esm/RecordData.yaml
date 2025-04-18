@@ -1,0 +1,75 @@
+FormKey: 01522F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Pinewatch01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Pinewatch
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00101D25'
+  DirectionalColor: '#004D566C'
+  FogNearColor: '#003D4672'
+  FogNear: 340
+  FogFar: 6500
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#003D4672'
+    Scale: 1
+  FogFarColor: '#003D4672'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0B7DB8:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01928A:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC52:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 045ADA:Skyrim.esm
+  Version2: 2
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01928A:Skyrim.esm
+  Placement:
+    Position: -3163.737, 5437.1533, -278.41354
+    Rotation: -0.47148937, -0.82024324, 3.2587776
+- MutagenObjectType: PlacedObject
+  FormKey: 076995:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01928A:Skyrim.esm
+  Placement:
+    Position: 1028.4313, 2363.9773, -672.8804
+    Rotation: 0, 0, 0.60000056
+MajorFlags:
+- 0x40000

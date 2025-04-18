@@ -1,0 +1,65 @@
+FormKey: AE3822:Requiem.esp
+EditorID: REQ_Ench_AhzidalsHelmet
+Name:
+  TargetLanguage: English
+  Value: Ahzidal's Helmet Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE3825:Requiem.esp
+  Data: {}
+- BaseEffect: AE3910:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4
+- BaseEffect: 000937:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4
+- BaseEffect: 000938:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4
+- BaseEffect: 000939:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4
+- BaseEffect: 00093A:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4
+- BaseEffect: 00093B:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4

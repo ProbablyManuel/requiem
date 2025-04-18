@@ -1,0 +1,43 @@
+FormKey: 0285D2:Dragonborn.esm
+EditorID: REQ_Spider_JumpingFlame_NPC
+Name:
+  TargetLanguage: English
+  Value: Jumping Flame Spider
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 2.3
+MagicSkill: Destruction
+TaperWeight: 0.3
+MinimumSkillLevel: 50
+SpellmakingArea: 5
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 0285D0:Dragonborn.esm
+Explosion: 0285D3:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 0195E4:Dragonborn.esm
+ImpactData: 03D5DE:Dragonborn.esm
+SkillUsageMultiplier: 0.5
+DualCastScale: 1.1
+Sounds:
+- Sound: 027EA3:Dragonborn.esm
+- Type: Charge
+  Sound: 027EA0:Dragonborn.esm
+- Type: Ready
+  Sound: 027EA1:Dragonborn.esm
+- Type: Release
+  Sound: 027EA2:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: Tosses a spider on the ground that will launch itself at nearby enemies and explode for <90> fire damage.

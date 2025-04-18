@@ -1,0 +1,22 @@
+FormKey: 29F52C:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_FortifySpeechcraftFFSelfImperial
+Name:
+  TargetLanguage: English
+  Value: Fortify Barter
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeechcraftModifier
+CastType: FireAndForget
+DualCastScale: 1
+Sounds:
+- Type: OnHit
+  Sound: 01702C:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Prices are <mag>% more favorable for <dur> seconds.

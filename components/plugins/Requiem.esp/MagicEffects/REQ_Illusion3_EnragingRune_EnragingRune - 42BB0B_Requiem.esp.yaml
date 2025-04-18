@@ -1,0 +1,83 @@
+FormKey: 42BB0B:Requiem.esp
+EditorID: REQ_Illusion3_EnragingRune_EnragingRune
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_IllusionBreak
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindEffect
+      Object: 42BB0D:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Skill_ScalingPerks
+      Objects:
+      - Name: ''
+        Object: 0F2CA9:Skyrim.esm
+      - Name: ''
+        Object: 0C44C3:Skyrim.esm
+      - Name: ''
+        Object: 0C44C4:Skyrim.esm
+      - Name: ''
+        Object: 0581E2:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 04DEEE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPRate
+      Data: 3
+Name:
+  TargetLanguage: English
+  Value: Enraging Rune
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+- 0C44B6:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- SnapToNavmesh
+- NoHitEvent
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 0.07
+MagicSkill: Illusion
+CastingLight: 07479A:Skyrim.esm
+TaperWeight: 1
+HitShader: 074799:Skyrim.esm
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 42BB0A:Requiem.esp
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 074794:Skyrim.esm
+HitEffectArt: 074795:Skyrim.esm
+ImpactData: 01E0BF:Dragonborn.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The targets crossing this rune will attack anything nearby for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData

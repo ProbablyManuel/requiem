@@ -1,0 +1,31 @@
+FormKey: 099F39:Skyrim.esm
+EditorID: REQ_Conjuration5_UnboundDremora
+Name:
+  TargetLanguage: English
+  Value: Summon Unbound Dremora
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 100
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 50
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 099F35:Skyrim.esm
+  Data:
+    Duration: 999
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetVMQuestVariableConditionData
+      Quest: 099F27:Skyrim.esm
+      SecondUnusedIntParameter: -286127008
+      VariableName: ::InTrigger_var
+    ComparisonValue: 1

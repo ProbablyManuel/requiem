@@ -1,0 +1,40 @@
+FormKey: 0E3CBB:Skyrim.esm
+EditorID: REQ_NULL_dunSleepingTreeDruggedAlch
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dunSleepingTreeSapDruggedEffect
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunSleepingTreeCampISMD
+      Object: 0E3CBC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Drugged
+MenuDisplayObject: 09DB72:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoMagnitude
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+TaperWeight: 1
+TaperDuration: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5CB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

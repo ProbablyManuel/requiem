@@ -1,0 +1,44 @@
+FormKey: 03D4F5:Requiem.esp
+EditorID: REQ_Effect_EnchantmentAdvFrostBurst
+VirtualMachineAdapter:
+  Scripts:
+  - Name: AA000XarrianEnchantAdvExplosionSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NewProperty
+      Object: 03F03A:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Frostburst
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.9
+ResistValue: ResistFrost
+TaperWeight: 0.2
+HitShader: 01F03A:Skyrim.esm
+EnchantShader: 04FA1D:Skyrim.esm
+SpellmakingArea: 25
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Explosion: 044089:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Causes an icy explosion when hitting a target, dealing <mag> frost damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm

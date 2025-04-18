@@ -1,0 +1,18 @@
+FormKey: 10C249:Skyrim.esm
+EditorID: REQ_NULL_CharacterAttributeMovement2
+Description:
+  TargetLanguage: English
+  Value: You move more slowly with your weapon drawn.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0216A9:Skyrim.esm
+LoadingScreenNif: 092505:Skyrim.esm
+InitialScale: 1
+InitialRotation: 0, 0, -45
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -55
+CameraPath: Cameras\LSCameraPanZoomInSmall.nif

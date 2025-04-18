@@ -1,0 +1,32 @@
+FormKey: AD397A:Requiem.esp
+EditorID: REQ_GM_PersistentSpellRescaling_NPCs_script
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PersistentSpellRescaling
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Version_Active
+      Object: 2F38A0:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellsToReapply
+      Object: AD3983:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Version_Installed
+      Object: 2F389F:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ability
+      Object: AD3977:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Persistent Spell Rescaling for NPCs
+Flags:
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

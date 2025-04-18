@@ -1,0 +1,21 @@
+FormKey: AD390F:Requiem.esp
+EditorID: REQ_Cook_Drink_CinnabarBeer
+Items:
+- Item:
+    Item: 034C5E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 06AC4A:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0B2183:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: AD383D:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: AD3910:Requiem.esp
+WorkbenchKeyword: 0A5CB3:Skyrim.esm
+CreatedObjectCount: 1

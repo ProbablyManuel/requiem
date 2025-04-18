@@ -1,0 +1,76 @@
+FormKey: 0FCEEE:Skyrim.esm
+EditorID: CrimeJailTime
+Version2: 9
+Description:
+  TargetLanguage: English
+  Value: Rumors have it that the most vile of imprisoned criminals are dragged into secret torture rooms where they face a truly painful justice...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A57:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A56:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A58:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A5A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A59:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A50:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A53:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A49:Skyrim.esm
+  ComparisonValue: 1
+LoadingScreenNif: 10DDCC:Skyrim.esm
+InitialScale: 0.4
+InitialRotation: 0, 0, 135
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -15
+CameraPath: Cameras\LSCameraPanZoomInSmall.nif

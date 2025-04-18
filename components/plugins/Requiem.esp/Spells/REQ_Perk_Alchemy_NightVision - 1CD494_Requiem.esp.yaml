@@ -1,0 +1,19 @@
+FormKey: 1CD494:Requiem.esp
+EditorID: REQ_Perk_Alchemy_NightVision
+Name:
+  TargetLanguage: English
+  Value: Night Vision
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Your alchemically improved eyes can become extremely sensitive to light at will, allowing you to see in the dark.
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: LesserPower
+CastType: FireAndForget
+Effects:
+- BaseEffect: 06B10C:Skyrim.esm
+  Data:
+    Duration: 86400

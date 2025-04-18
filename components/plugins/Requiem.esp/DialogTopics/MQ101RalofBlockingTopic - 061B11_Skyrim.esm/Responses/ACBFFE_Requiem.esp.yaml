@@ -1,0 +1,14 @@
+FormKey: ACBFFE:Requiem.esp
+Flags:
+  Flags:
+  - Goodbye
+  - Random
+PreviousDialog: ACBFFD:Requiem.esp
+FavorLevel: None
+ResponseData: 0648FE:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 12
+  ComparisonValue: 1

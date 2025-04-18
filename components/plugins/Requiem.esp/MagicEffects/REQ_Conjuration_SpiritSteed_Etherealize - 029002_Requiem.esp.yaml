@@ -1,0 +1,50 @@
+FormKey: 029002:Requiem.esp
+EditorID: REQ_Conjuration_SpiritSteed_Etherealize
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.33
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FadeToAlpha
+      Data: True
+  - Name: magicImodScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 064D69:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 064D69:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStaticDelay
+      Data: 0.15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StaticFX
+      Object: 05E93D:Skyrim.esm
+  - Name: magicimodbeginloopend
+Name:
+  TargetLanguage: English
+  Value: Etherealize
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- FXPersist
+- HideInUI
+MagicSkill: Conjuration
+HitShader: 064D67:Skyrim.esm
+MinimumSkillLevel: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Etherealize
+DualCastScale: 1
+ImageSpaceModifier: 0440D4:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

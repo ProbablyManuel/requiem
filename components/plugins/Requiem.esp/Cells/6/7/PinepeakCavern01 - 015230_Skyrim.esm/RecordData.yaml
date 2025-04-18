@@ -1,0 +1,67 @@
+FormKey: 015230:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PinepeakCavern01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Pinepeak Cavern
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00434F52'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0033291D'
+    DirectionalXMinus: '#002A291A'
+    DirectionalYPlus: '#002F2A1C'
+    DirectionalYMinus: '#002F271C'
+    DirectionalZPlus: '#0016130C'
+    DirectionalZMinus: '#005C5138'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 034566:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019289:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC51:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C4A17:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.89
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019289:Skyrim.esm
+  Placement:
+    Position: 1149.6868, 1920.6741, 21.322365
+    Rotation: 6.2207704, 0.23560199, 2.8800359
+MajorFlags:
+- 0x40000

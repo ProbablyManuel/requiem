@@ -1,0 +1,65 @@
+FormKey: 05015D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: NarzulburBasement
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mauhulakh's Cellar
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 2000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020A00:Skyrim.esm
+Owner: 02C006:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+Music: 0B9DCB:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B0F8A:Skyrim.esm
+  Version2: 3
+  Base: 0774C8:Skyrim.esm
+  Scale: 0.64
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: 2615.9312, 1768.7751, 102.15839
+    Rotation: 0, -0, 5.7131853
+MajorFlags:
+- 0x40000

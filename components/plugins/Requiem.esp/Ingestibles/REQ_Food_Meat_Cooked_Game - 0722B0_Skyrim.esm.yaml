@@ -1,0 +1,27 @@
+FormKey: 0722B0:Skyrim.esm
+EditorID: REQ_Food_Meat_Cooked_Game
+ObjectBounds:
+  First: -11, -8, 0
+  Second: 19, 8, 7
+Name:
+  TargetLanguage: English
+  Value: Cooked Game Meat
+Keywords:
+- 08CDEA:Skyrim.esm
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\HorseMeatCooked.nif
+  Data: 0x02000000020000000000000063691A2964647300604DDD5C46C597ED64647300604DDD5C
+Weight: 1
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1200
+- BaseEffect: 002EE4:Update.esm
+  Data: {}

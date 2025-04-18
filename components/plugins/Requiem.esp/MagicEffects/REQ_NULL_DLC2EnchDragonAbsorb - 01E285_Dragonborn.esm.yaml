@@ -1,0 +1,19 @@
+FormKey: 01E285:Dragonborn.esm
+EditorID: REQ_NULL_DLC2EnchDragonAbsorb
+Name:
+  TargetLanguage: English
+  Value: Absorb Spells
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Recover
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: AbsorbChance
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Type: Release
+  Sound: 0F4A1F:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Absorb <mag>% of the magicka from dragon breath and spells.  Chance on hit to spawn a tentacle explosion.

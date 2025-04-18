@@ -1,0 +1,44 @@
+FormKey: 02C46D:Dragonborn.esm
+EditorID: DLC2EnchFrostDamageFFContact50
+Name:
+  TargetLanguage: English
+  Value: Frost Damage
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+BaseCost: 7
+ResistValue: ResistFrost
+HitShader: 0435A3:Skyrim.esm
+EnchantShader: 04FA1D:Skyrim.esm
+SecondActorValueWeight: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 02F774:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Stamina
+ImpactData: 032DA7:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+    RunOnType: Target
+  ComparisonValue: 1

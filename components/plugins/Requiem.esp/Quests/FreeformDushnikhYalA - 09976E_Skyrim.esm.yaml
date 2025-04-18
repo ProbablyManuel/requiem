@@ -1,0 +1,101 @@
+FormKey: 09976E:Skyrim.esm
+EditorID: FreeformDushnikhYalA
+VirtualMachineAdapter:
+  Scripts:
+  - Name: FreeformMarkarthFScript
+  - Name: QF_FreeformShugurzburA_0009976E
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KarthwastenMapMarker
+      Object: 01779A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Lash
+      Object: 09976E:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestGiver
+      Object: 09976E:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardGoldSmall
+      Object: 0494DF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Sword
+      Object: 09976E:Skyrim.esm
+      Alias: 8
+  FileName: QF_FreeformShugurzburA_0009976E
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_FreeformShugurzburA_0009976E
+    FragmentName: Fragment_2
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_FreeformShugurzburA_0009976E
+    FragmentName: Fragment_12
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_FreeformShugurzburA_0009976E
+    FragmentName: Fragment_1
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 09976E:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: favornpcdeathscript
+  - Property:
+      Name: ''
+      Object: 09976E:Skyrim.esm
+      Alias: 7
+    Scripts:
+    - Name: favornpcdeathscript
+Name:
+  TargetLanguage: English
+  Value: Gharol's Message
+Priority: 45
+QuestFormVersion: 65
+Type: Misc
+Filter: Dialogue\The Reach\Dushnikh Yal\
+Stages:
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Deliver Gharol's sword to Lash in Karthwasten, a small mining town to the northeast of Markarth
+  Targets:
+  - AliasID: 7
+NextAliasID: 9
+Aliases:
+- Name: QuestGiver
+  Flags:
+  - StoresText
+  UniqueActor: 013B7C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 7
+  Name: Lash
+  Flags:
+  - StoresText
+  UniqueActor: 013B6E:Skyrim.esm
+  VoiceTypes: Null
+- ID: 8
+  Name: Sword
+  Flags:
+  - QuestObject
+  CreateReferenceToObject:
+    Object: AE3741:Requiem.esp
+    Create: In
+  VoiceTypes: Null

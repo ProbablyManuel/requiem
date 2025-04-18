@@ -1,0 +1,16 @@
+FormKey: AE3795:Requiem.esp
+EditorID: REQ_Crafting_Zahkriisos
+Items:
+- Item:
+    Item: AE3935:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: AE3935:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: 024037:Dragonborn.esm
+WorkbenchKeyword: AE378B:Requiem.esp
+CreatedObjectCount: 1

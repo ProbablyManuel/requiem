@@ -1,0 +1,32 @@
+FormKey: 000E8A:Skyrim.esm
+EditorID: ChargenLoadScreen
+Description:
+  TargetLanguage: English
+  Value: >-
+    And the Scrolls have foretold,
+
+    of black wings in the cold,
+
+    That when brothers wage war come unfurled!
+
+    Alduin, Bane of Kings,
+
+    ancient shadow unbound,
+
+    With a hunger to swallow the world!
+
+    -- Song of the Dragonborn
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 03372B:Skyrim.esm
+  ComparisonValue: 10
+LoadingScreenNif: 10A963:Skyrim.esm
+InitialScale: 0.2
+InitialRotation: 0, 0, 120
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: -25, 0, -115
+CameraPath: Cameras\LSCameraPanRGTZoomINBig.nif

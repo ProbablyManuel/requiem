@@ -1,0 +1,66 @@
+FormKey: 018F49:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2SVBaldorIronShapersHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Baldor Iron-Shaper's House
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 035560:Dragonborn.esm
+WaterHeight: -2.1474836E+09
+Location: 01D92E:Dragonborn.esm
+Owner: 018FB6:Dragonborn.esm
+LockList: 018FB3:Dragonborn.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 033917:Dragonborn.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 01F898:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 01F897:Dragonborn.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 01F899:Dragonborn.esm
+  LocationReference: 01D92E:Dragonborn.esm
+  Placement:
+    Position: -624.6993, 422.40652, 241.92409
+    Rotation: 0, 0, 1.6000009
+MajorFlags:
+- 0x40000

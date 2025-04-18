@@ -1,0 +1,35 @@
+FormKey: 0153CF:Skyrim.esm
+EditorID: REQ_Destruction_EmpoweredElements
+Name:
+  TargetLanguage: English
+  Value: Empowered Elements
+Description:
+  TargetLanguage: English
+  Value: You learned how to empower Destruction spells. Thus, <br> you're able to overcharge their effects.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Destruction
+  ComparisonValue: 25
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0F2CA8:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Destruction
+      ComparisonValue: 1
+  EntryPoint: CanDualCastSpell
+  PerkConditionTabCount: 2
+  Value: 1

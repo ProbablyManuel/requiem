@@ -1,0 +1,18 @@
+FormKey: 10A250:Skyrim.esm
+EditorID: REQ_Disease_Trap_Witbane
+Name:
+  TargetLanguage: English
+  Value: Witbane
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Witbane is a serious disease which leads to terrible headaches and weariness.
+BaseCost: 5
+Flags:
+- NoAbsorbOrReflect
+Type: Disease
+TargetType: Touch
+Effects:
+- BaseEffect: 10A252:Skyrim.esm
+  Data:
+    Magnitude: 0.75

@@ -1,0 +1,79 @@
+FormKey: 0151F2:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SteepfallBurrow01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Steepfall Burrow
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00000000'
+    DirectionalXMinus: '#00000000'
+    DirectionalYPlus: '#00000000'
+    DirectionalYMinus: '#00000000'
+    DirectionalZPlus: '#00000000'
+    DirectionalZMinus: '#00000000'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0195D2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192B5:Skyrim.esm
+SkyAndWeatherFromRegion: 106631:Skyrim.esm
+AcousticSpace: 02B3AE:Skyrim.esm
+EncounterZone: 03EC79:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 089D4E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0F4D10:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 0192B5:Skyrim.esm
+  Placement:
+    Position: 554.0594, -491.1749, -6503.2866
+    Rotation: 0.06981317, 6.1784654, 0.20634155
+- MutagenObjectType: PlacedObject
+  FormKey: 0F4D20:Skyrim.esm
+  Base: 0F1F66:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 0192B5:Skyrim.esm
+  Placement:
+    Position: 629.10944, -3956.221, -4606.038
+    Rotation: 6.1340103, 5.865741, 3.9020553
+MajorFlags:
+- 0x40000

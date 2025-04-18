@@ -1,0 +1,44 @@
+FormKey: 56DAAA:Requiem.esp
+EditorID: REQ_Illusion5_MistressOfTheDark
+Name:
+  TargetLanguage: English
+  Value: Mistress of the Dark
+MenuDisplayObject: 1097CD:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 500
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+- NoAbsorbOrReflect
+ChargeTime: 0.1
+CastType: FireAndForget
+HalfCostPerk: 0C44C6:Skyrim.esm
+Effects:
+- BaseEffect: 56DAA7:Requiem.esp
+  Data:
+    Duration: 2
+- BaseEffect: 56DA9F:Requiem.esp
+  Data:
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Magicka
+    ComparisonValue: 1
+- BaseEffect: 56DAA4:Requiem.esp
+  Data:
+    Magnitude: 20
+    Duration: 1
+- BaseEffect: 56DAA3:Requiem.esp
+  Data:
+    Magnitude: 5
+    Duration: 86400
+- BaseEffect: 56DAA0:Requiem.esp
+  Data:
+    Magnitude: 20
+    Duration: 1

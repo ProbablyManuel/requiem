@@ -1,0 +1,18 @@
+FormKey: 092C48:Skyrim.esm
+EditorID: REQ_Werewolf_Change
+Name:
+  TargetLanguage: English
+  Value: Beast Form
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Let the beast inside you take over, and transform yourself into a ferocious werewolf.
+Flags:
+- ManualCostCalc
+Type: Power
+CastType: FireAndForget
+Effects:
+- BaseEffect: 092C45:Skyrim.esm
+  Data:
+    Duration: 10

@@ -1,0 +1,70 @@
+FormKey: 000C31:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__01000C31
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__01000C31
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__01000C31
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - SayOnce
+PreviousDialog: 000C30:HearthFires.esm
+FavorLevel: None
+LinkTo:
+- 017708:HearthFires.esm
+- 017707:HearthFires.esm
+- 017706:HearthFires.esm
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: No, I'm sorry. But there is land, available to you for purchase.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 010BEE:HearthFires.esm
+    SecondUnusedIntParameter: -285090464
+    VariableName: ::bOwnProperty_var
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A50:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01A6B7:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 050920:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 087E21:Skyrim.esm
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 010BEE:HearthFires.esm
+    Stage: 30
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 010BEE:HearthFires.esm
+    Stage: 50

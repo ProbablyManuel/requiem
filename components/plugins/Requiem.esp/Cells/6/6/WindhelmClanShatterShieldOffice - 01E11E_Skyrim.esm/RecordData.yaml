@@ -1,0 +1,65 @@
+FormKey: 01E11E:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WindhelmClanShatterShieldOffice
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Clan Shatter-Shield Office
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00434950'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+LightingTemplate: 07BA87:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0209EB:Skyrim.esm
+Owner: 045F5F:Skyrim.esm
+LockList: 09C868:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA729:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 0209EB:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C731C:Skyrim.esm
+  Placement:
+    Position: 1588.3644, -598.5128, 127.26862
+    Rotation: 0, -0, 1.5707964
+MajorFlags:
+- 0x40000

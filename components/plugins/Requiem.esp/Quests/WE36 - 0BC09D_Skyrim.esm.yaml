@@ -1,0 +1,295 @@
+FormKey: 0BC09D:Skyrim.esm
+EditorID: WE36
+Version2: 5
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
+  - Name: QF_WE36_000BC09D
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 0BC09D:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Jarl
+      Object: 0BC09D:Skyrim.esm
+      Alias: 41
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BountyHunter3
+      Object: 0BC09D:Skyrim.esm
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TravelMarker1
+      Object: 0BC09D:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 0BC09D:Skyrim.esm
+      Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BountyHunter1
+      Object: 0BC09D:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Steward
+      Object: 0BC09D:Skyrim.esm
+      Alias: 42
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 0BC09D:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter
+      Object: 0BC09D:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 0BC09D:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TravelMarker2
+      Object: 0BC09D:Skyrim.esm
+      Alias: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BountyHunter2
+      Object: 0BC09D:Skyrim.esm
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 0BC09D:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 0BC09D:Skyrim.esm
+      Alias: 6
+  FileName: QF_WE36_000BC09D
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_WE36_000BC09D
+    FragmentName: Fragment_1
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WE36_000BC09D
+    FragmentName: Fragment_5
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0BC09D:Skyrim.esm
+      Alias: 16
+    Scripts:
+    - Name: wealiasscript
+  - Property:
+      Name: ''
+      Object: 0BC09D:Skyrim.esm
+      Alias: 34
+    Scripts:
+    - Name: wealiasscript
+  - Property:
+      Name: ''
+      Object: 0BC09D:Skyrim.esm
+      Alias: 35
+    Scripts:
+    - Name: wealiasscript
+Name:
+  TargetLanguage: English
+  Value: Bounty hunters vs Player
+Flags:
+- 0x4
+Priority: 50
+QuestFormVersion: 65
+Event: SCPT
+Filter: Wilderness Encounters\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 25
+Stages:
+- Flags:
+  - StartUpStage
+  - KeepInstanceDataFromHereOn
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+NextAliasID: 43
+Aliases:
+- ID: 1
+  Name: TRIGGER
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: myHoldLocation
+  Flags:
+  - AllowReuseInQuest
+  - StoresText
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 6
+  Type: Location
+  Name: myHoldContested
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 7
+  Type: Location
+  Name: myHoldImperial
+  Flags:
+  - AllowReuseInQuest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A603:Skyrim.esm
+    ComparisonValue: 1
+- ID: 8
+  Type: Location
+  Name: myHoldSons
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 9
+  Name: TravelMarker1
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F5:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 40
+  Name: TravelMarker2
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F5:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 16
+  Name: BountyHunter1
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0BC09F:Skyrim.esm
+    AliasID: 9
+    Level: VeryHard
+  Factions:
+  - 0BA0B8:Skyrim.esm
+  VoiceTypes: Null
+- ID: 34
+  Name: BountyHunter2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0BC0A0:Skyrim.esm
+    AliasID: 9
+    Level: Medium
+  Factions:
+  - 0BA0B8:Skyrim.esm
+  VoiceTypes: Null
+- ID: 35
+  Name: BountyHunter3
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0BC0A1:Skyrim.esm
+    AliasID: 9
+    Level: Medium
+  Factions:
+  - 0BA0B8:Skyrim.esm
+  VoiceTypes: Null
+- ID: 41
+  Name: Jarl
+  Flags:
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050920:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+    ComparisonValue: 1000
+  VoiceTypes: Null
+- ID: 42
+  Name: Steward
+  Flags:
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050922:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 38
+  Name: Player
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  Factions:
+  - 0BA0B9:Skyrim.esm
+  VoiceTypes: Null
+- ID: 39
+  Name: Letter
+  Flags:
+  - StoresText
+  - UsesStoredText
+  CreateReferenceToObject:
+    Object: 0BC0A2:Skyrim.esm
+    AliasID: 9
+  VoiceTypes: Null

@@ -1,0 +1,55 @@
+FormKey: 021730:Dragonborn.esm
+EditorID: REQ_Shout_Thuum_DragonAspect2_Arms
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dlc2DBSummonAncientSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: WaitTimer
+      Data: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ancientDBMarker
+      Object: 01DC0D:Dragonborn.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: healthPCT
+      Data: 0.5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ancientDB
+      Object: 01DC33:Dragonborn.esm
+  - Name: DLC2DragonbornAspectArtSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2DragonbornAspectArmor01
+      Object: 021738:Dragonborn.esm
+  - Name: MagicPlayEffectShaderOnHitScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicEffectShader
+      Object: 10DEAB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Dragon Aspect - Arms
+MenuDisplayObject: 03D58F:Dragonborn.esm
+Keywords:
+- 046B99:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+HitShader: 021734:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: DamageResist
+CastType: FireAndForget
+CastingArt: 056AC7:Skyrim.esm
+HitEffectArt: 03D58E:Dragonborn.esm
+DualCastScale: 1
+PerkToApply: 01DF8F:Dragonborn.esm
+Sounds:
+- Type: Release
+  Sound: 000F89:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Power attacks deal <25>% more damage for <dur> seconds. Armor rating increases by <mag> for <dur> seconds. An Ancient Dragonborn comes to your aid while below 50% of your total health.

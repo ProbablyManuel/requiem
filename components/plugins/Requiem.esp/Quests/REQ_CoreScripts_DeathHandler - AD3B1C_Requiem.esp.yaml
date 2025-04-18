@@ -1,0 +1,32 @@
+FormKey: AD3B1C:Requiem.esp
+EditorID: REQ_CoreScripts_DeathHandler
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B1C:Requiem.esp
+      Alias: 16
+    Scripts:
+    - Name: REQ_DeathHandler
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Fadeout
+        Object: AA4637:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DeathNote
+        Object: AA4638:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Disabled
+        Object: AA1E9C:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Death Handler'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 16
+  Name: DeathHandler
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

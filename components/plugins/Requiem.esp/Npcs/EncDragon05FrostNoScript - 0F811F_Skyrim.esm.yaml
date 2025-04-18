@@ -1,0 +1,162 @@
+FormKey: 0F811F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 537133056
+EditorID: EncDragon05FrostNoScript
+SkyrimMajorRecordFlags:
+- Compressed
+- 0x20000000
+ObjectBounds:
+  First: -320, -352, 0
+  Second: 320, 352, 384
+Configuration:
+  Flags:
+  - Respawn
+  - BleedoutOverride
+  MagickaOffset: 4850
+  StaminaOffset: 19900
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 50
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - ModelAnimation
+  - BaseData
+  - Inventory
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 600
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 032D9C:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03ADA5:Skyrim.esm
+Voice: 02992B:Skyrim.esm
+Template: 0F811E:Skyrim.esm
+Race: 012E82:Skyrim.esm
+ActorEffect:
+- 0F77F9:Skyrim.esm
+- 10C4E5:Skyrim.esm
+- 016C40:Skyrim.esm
+- 016CF0:Skyrim.esm
+- 10C4E1:Skyrim.esm
+- 10C4E2:Skyrim.esm
+FarAwayModel: 040731:Skyrim.esm
+AttackRace: 012E82:Skyrim.esm
+Perks:
+- Perk: 033869:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Class: 02F201:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 100
+  - Key: Block
+    Value: 100
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 100
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 3071
+  Magicka: 150
+  Stamina: 264
+  Unused: 16743
+  FarAwayModelDistance: 20000
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+CombatStyle: 048C83:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 02F2F0:Skyrim.esm
+DefaultOutfit: 10E3C6:Skyrim.esm
+SleepingOutfit: 10E3C6:Skyrim.esm
+DefaultPackageList: 09C21B:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000
+- BleedoutOverride

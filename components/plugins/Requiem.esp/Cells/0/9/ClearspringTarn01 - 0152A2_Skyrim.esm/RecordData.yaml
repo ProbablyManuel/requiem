@@ -1,0 +1,86 @@
+FormKey: 0152A2:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ClearspringTarn01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Clearspring Cave
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#003A3F52'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#003F3F55'
+    DirectionalXMinus: '#00343F4E'
+    DirectionalYPlus: '#003A4152'
+    DirectionalYMinus: '#003A3C52'
+    DirectionalZPlus: '#001B1E25'
+    DirectionalZMinus: '#00585F7E'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 08CDDA:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019157:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC00:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0F334E:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019157:Skyrim.esm
+  Placement:
+    Position: 4160.6826, 4406.1836, -2.4820075
+    Rotation: 0.14532828, -0.1357041, 3.7877772
+- MutagenObjectType: PlacedNpc
+  FormKey: AE38E0:Requiem.esp
+  Base: 013B74:Dawnguard.esm
+  PersistentLocation: 019157:Skyrim.esm
+  Placement:
+    Position: 3949.4863, 4266.191, 0.765808
+    Rotation: 0, 0, 2.5999994
+- MutagenObjectType: PlacedObject
+  FormKey: 0F3248:Skyrim.esm
+  MajorRecordFlagsRaw: 1610612736
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  - 0x40000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+  Base: 0AB705:Skyrim.esm
+  RagdollData: 0x0070E932AE36A73FC2F3CB408000A2BCACC31FB40F001C33DB0FC93F
+  LocationReference: 019157:Skyrim.esm
+  Placement:
+    Position: 3897.6782, 4374.9595, 48.652573
+    Rotation: 4.712389, 5.862388, 1.5707964
+MajorFlags:
+- 0x40000

@@ -1,0 +1,19 @@
+FormKey: ABF9ED:Requiem.esp
+EditorID: REQ_Smelter_BasicFork01
+Items:
+- Item:
+    Item: 104B3F:Skyrim.esm
+    Count: 10
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 104B3F:Skyrim.esm
+CreatedObject: 05ACE4:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

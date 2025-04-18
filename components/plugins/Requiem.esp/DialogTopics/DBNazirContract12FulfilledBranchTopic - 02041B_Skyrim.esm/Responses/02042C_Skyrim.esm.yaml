@@ -1,0 +1,109 @@
+FormKey: 02042C:Skyrim.esm
+Version2: 1
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__0002042C
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGold
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDBSideContract12
+      Object: 01EA68:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DarkBrotherhoodQuest
+      Object: 01EA5C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorReward
+      Object: 035217:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LvlQuestReward01Small
+      Object: 0C0406:Skyrim.esm
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__0002042C
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__0002042C
+      FragmentName: Fragment_1
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__0002042C
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- Emotion: Surprise
+  EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: By Sithis, now I am truly impressed!
+  ScriptNotes: ''
+  Edits: ''
+- Emotion: Happy
+  EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: To kill a pirate captain, on her own ship no less? Simply masterful!
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: You've not only earned your payment, but my respect as well. And believe me, friend - that does not come easily.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 4
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: I'm afraid that concludes our business. You have exhausted all available additional contracts.
+  ScriptNotes: ''
+  Edits: ''
+- Emotion: Happy
+  EmotionValue: 100
+  ResponseNumber: 5
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: But I'm sure you've got plenty to keep you busy right about now, hmm?
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 0B5E20:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 01EA68:Skyrim.esm
+  ComparisonValue: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01C3AB:Skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Safia is dead.

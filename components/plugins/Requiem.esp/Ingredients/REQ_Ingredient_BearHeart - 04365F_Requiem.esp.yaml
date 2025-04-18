@@ -1,0 +1,33 @@
+FormKey: 04365F:Requiem.esp
+EditorID: REQ_Ingredient_BearHeart
+Name:
+  TargetLanguage: English
+  Value: Bear Heart
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\HumanHeart.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21E:Skyrim.esm
+Value: 40
+Weight: 1.75
+IngredientValue: 40
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EAF3:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 073F29:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 20
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 5
+- BaseEffect: 03EB26:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 60

@@ -1,0 +1,96 @@
+FormKey: 04DEDF:Skyrim.esm
+EditorID: InfluenceAggDownFFAimedArea
+Version2: 6
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB884:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatTopicToSay
+      Object: 0E0C9B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Pacify
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+- 0424EE:Skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 1.5
+MagicSkill: Illusion
+CastingLight: 07331B:Skyrim.esm
+TaperWeight: 1
+HitShader: 073321:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingArea: 15
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Calm
+Projectile: 07331D:Skyrim.esm
+Explosion: 0562F0:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 07331A:Skyrim.esm
+ImpactData: 073320:Skyrim.esm
+SkillUsageMultiplier: 0.25
+DualCastScale: 1
+Sounds:
+- Type: Release
+  Sound: 08196D:Skyrim.esm
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 06F6D3:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Targets up to level <mag> won't fight for <dur> seconds and will stop any hostile actions, as the spell negates their ability to feel pain or hate.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 03BC26:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 50

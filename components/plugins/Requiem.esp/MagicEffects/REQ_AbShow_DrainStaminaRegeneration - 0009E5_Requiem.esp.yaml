@@ -1,0 +1,19 @@
+FormKey: 0009E5:Requiem.esp
+EditorID: REQ_AbShow_DrainStaminaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Drain Stamina Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: StaminaRateMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina regenerates <mag>% slower.

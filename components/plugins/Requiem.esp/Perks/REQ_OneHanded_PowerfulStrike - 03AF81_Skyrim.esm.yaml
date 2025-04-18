@@ -1,0 +1,38 @@
+FormKey: 03AF81:Skyrim.esm
+EditorID: REQ_OneHanded_PowerfulStrike
+Name:
+  TargetLanguage: English
+  Value: Powerful Strike
+Description:
+  TargetLanguage: English
+  Value: You know how to put the maximum force into your power attacks.<br>[20% more power attack damage]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 052D50:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: OneHanded
+      ComparisonValue: 1
+  EntryPoint: ModPowerAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.2

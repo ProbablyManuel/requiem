@@ -1,0 +1,54 @@
+FormKey: 0240D2:Skyrim.esm
+EditorID: REQ_Artifact_MehrunesRazor
+ObjectBounds:
+  First: -7, -8, -1
+  Second: 7, 33, 2
+Name:
+  TargetLanguage: English
+  Value: Mehrunes' Razor
+Model:
+  File: Weapons\MehrunesRazor\MehrunesRazor.nif
+  Data: 0x020000000800000000000000E90268CF64647300E403DCE025EB9BF664647300E403DCE0B807509764647300262C333B9FBA926F64647300E403DCE04FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305DA8E929164647300262C333B
+ObjectEffect: 091AE7:Skyrim.esm
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0189FD:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E713:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0917E8:Skyrim.esm
+- 0A8668:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- AD3AF7:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: Mehrunes Dagons' sphere is destruction, change, revolution, energy, and ambition. His razor has no purpose other than to kill and grows in power as Mehrunes Dagons' champion indiscriminately slays their adversaries.
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 088CB2:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03CED9:Skyrim.esm
+UnequipSound: 03CEDB:Skyrim.esm
+BasicStats:
+  Value: 80000
+  Weight: 5
+  Damage: 10
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 5
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

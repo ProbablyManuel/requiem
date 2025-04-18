@@ -1,0 +1,39 @@
+FormKey: 058217:Skyrim.esm
+EditorID: REQ_Alchemy_ImprovedPoisons
+Name:
+  TargetLanguage: English
+  Value: Improved Poisons
+Description:
+  TargetLanguage: English
+  Value: By adding small amounts of truly horrifying ingredients, <br> you are able to make your poisons more potent.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 105F2F:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Alchemy
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPAlchemyEffectHasKeywordConditionData
+        Keyword: 042509:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPAlchemyGetMakingPoisonConditionData
+      ComparisonValue: 1
+  EntryPoint: ModAlchemyEffectiveness
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.25

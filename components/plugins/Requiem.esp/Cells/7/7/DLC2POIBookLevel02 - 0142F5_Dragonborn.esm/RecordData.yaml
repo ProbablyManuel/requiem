@@ -1,0 +1,78 @@
+FormKey: 0142F5:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2POIBookLevel02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Apocrypha
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#000D0803'
+  DirectionalColor: '#001B2426'
+  FogNearColor: '#0038372C'
+  FogFar: 6000
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#000E0803'
+    DirectionalXMinus: '#000B0802'
+    DirectionalYPlus: '#000D0803'
+    DirectionalYMinus: '#000D0703'
+    DirectionalZPlus: '#00060301'
+    DirectionalZMinus: '#00130C04'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#001E1D17'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - LightFadeDistances
+LightingTemplate: 068EC8:Skyrim.esm
+WaterHeight: 0
+Location: 0142AC:Dragonborn.esm
+Water: 01DFF1:Dragonborn.esm
+WaterEnvironmentMap: data\Textures\Cubemaps\Apocrypha.dds
+AcousticSpace: 039E50:Dragonborn.esm
+EncounterZone: 0142AD:Dragonborn.esm
+Music: 034281:Dragonborn.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A88:Requiem.esp
+  Base: AE3ABF:Requiem.esp
+  LevelModifier: VeryHard
+  PersistentLocation: 0142AC:Dragonborn.esm
+  Placement:
+    Position: 1152, 4480, -640
+    Rotation: 0, 0, 5.6809106
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A87:Requiem.esp
+  Base: AE3AC0:Requiem.esp
+  PersistentLocation: 0142AC:Dragonborn.esm
+  Placement:
+    Position: -1146.261, -9457.72, 2680.1848
+- MutagenObjectType: PlacedObject
+  FormKey: 03CB99:Dragonborn.esm
+  Base: 078AA7:Requiem.esp
+  RagdollData: 0x00050401000000000000000000000000BDF1C8BF062CD43AC6D6484000000000BA9E1740060072B900E8542C000000800000008060A5C93F
+  LocationReference: 0142AC:Dragonborn.esm
+  Placement:
+    Position: -1149.3011, -9458.6875, 2401.5544
+    Rotation: 0, 0, 4.123192
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A86:Requiem.esp
+  Base: AE3ABE:Requiem.esp
+  PersistentLocation: 0142AC:Dragonborn.esm
+  Placement:
+    Position: -1141.2103, -9396.962, 2407.3918
+MajorFlags:
+- 0x40000

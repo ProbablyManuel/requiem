@@ -1,0 +1,41 @@
+FormKey: 0153D3:Skyrim.esm
+EditorID: REQ_DestructionX_Impact_Stagger
+Name:
+  TargetLanguage: English
+  Value: Stagger
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 0.001
+MagicSkill: Destruction
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 75
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    RunOnType: Target
+    Perk: 0153D2:Skyrim.esm
+  ComparisonValue: 1

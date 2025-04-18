@@ -1,0 +1,41 @@
+FormKey: 108A3F:Skyrim.esm
+EditorID: REQ_Perk_OneHanded_Flurry1
+Name:
+  TargetLanguage: English
+  Value: Flurry (Rank 1)
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 0008F9:Requiem.esp
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+    ComparisonValue: 4
+- BaseEffect: 000928:Requiem.esp
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+    ComparisonValue: 4

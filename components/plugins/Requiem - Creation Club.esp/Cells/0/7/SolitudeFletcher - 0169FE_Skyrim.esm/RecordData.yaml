@@ -1,0 +1,220 @@
+FormKey: 0169FE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeFletcher
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fletcher
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002A394C'
+    DirectionalXMinus: '#00233945'
+    DirectionalYPlus: '#00273B49'
+    DirectionalYMinus: '#00273649'
+    DirectionalZPlus: '#00121B21'
+    DirectionalZMinus: '#003B5670'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 06AB01:Skyrim.esm
+WaterHeight: 0
+Location: 020094:Skyrim.esm
+Owner: 0C13E5:Skyrim.esm
+LockList: 0C13E6:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 04E666:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0636AF:Skyrim.esm
+  Base: 06A0BC:Skyrim.esm
+  LeveledItemBaseObject: 016579:Skyrim.esm
+  Owner: 0B2037:Skyrim.esm
+  LocationReference: 020094:Skyrim.esm
+  Placement:
+    Position: -527.0658, -577.12067, 67.4607
+    Rotation: 0.0048118727, 0.09629505, 4.773329
+- MutagenObjectType: PlacedObject
+  FormKey: 0636B1:Skyrim.esm
+  Base: 06A0BD:Skyrim.esm
+  RagdollData: 0x007296110000000000000000000000006DD5C5B91547223BFDE0CF3F
+  LeveledItemBaseObject: 01703D:Skyrim.esm
+  Owner: 0B2037:Skyrim.esm
+  LocationReference: 020094:Skyrim.esm
+  Placement:
+    Position: -651.75507, -690.42413, 64.2363
+    Rotation: 0, 0, 0.07080277
+- MutagenObjectType: PlacedObject
+  FormKey: 0636B9:Skyrim.esm
+  Base: 06A0BF:Skyrim.esm
+  LeveledItemBaseObject: 068839:Skyrim.esm
+  Owner: 0B2037:Skyrim.esm
+  LocationReference: 020094:Skyrim.esm
+  Placement:
+    Position: -568.33057, -570.79785, 22.343761
+    Rotation: 0, 0, 4.650646
+- MutagenObjectType: PlacedObject
+  FormKey: 0636C9:Skyrim.esm
+  Base: 01397F:Skyrim.esm
+  Owner: 0B2037:Skyrim.esm
+  ItemCount: 12
+  LocationReference: 020094:Skyrim.esm
+  Placement:
+    Position: -264.44394, -281.40915, 66.68138
+    Rotation: 6.1141434, 6.1268387, 1.5620155
+- MutagenObjectType: PlacedObject
+  FormKey: 0D6CDB:Skyrim.esm
+  Base: 06A0BD:Skyrim.esm
+  LeveledItemBaseObject: 017024:Skyrim.esm
+  Owner: 0B2037:Skyrim.esm
+  LocationReference: 020094:Skyrim.esm
+  Placement:
+    Position: -1.711782, -45.439632, 65.27132
+    Rotation: 0, 0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 000839:ccffbsse002-crossbowpack.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 000808:ccffbsse002-crossbowpack.esl
+  RagdollData: 0x000000000000000000000000000000006EF3AFBD9D83B8BEB4E82E3A
+  Scale: 0.9
+  IsIgnoredBySandbox: True
+  LocationReference: 020094:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 23.584555, -51.303562, -30000
+    Rotation: 0, 0, 1.283201
+- MutagenObjectType: PlacedObject
+  FormKey: 00083A:ccffbsse002-crossbowpack.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 00080A:ccffbsse002-crossbowpack.esl
+  RagdollData: 0x009782B0000000000000000000000000FFB829BD2E440BBCD56284BE
+  IsIgnoredBySandbox: True
+  LocationReference: 020094:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -287.2653, -281.19562, -30000
+    Rotation: 0, 0, 1.4000001
+- MutagenObjectType: PlacedObject
+  FormKey: 00083B:ccffbsse002-crossbowpack.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 00080C:ccffbsse002-crossbowpack.esl
+  RagdollData: 0x000000000000000000000000000000003894013CA901823E3F7B413C
+  Scale: 0.9
+  IsIgnoredBySandbox: True
+  LocationReference: 020094:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -23.473274, -44.996117, -30000
+    Rotation: 0, 0, 4.4482894
+- MutagenObjectType: PlacedObject
+  FormKey: 00083C:ccffbsse002-crossbowpack.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 00080B:ccffbsse002-crossbowpack.esl
+  RagdollData: 0x00FF7F7F000000000000000000000000D97C18BD44937A3B3CE0B9BA
+  LocationReference: 020094:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -656.73267, -657.5974, -30000
+    Rotation: 0, 0, 5.783192
+- MutagenObjectType: PlacedObject
+  FormKey: 00083D:ccffbsse002-crossbowpack.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 00080E:ccffbsse002-crossbowpack.esl
+  RagdollData: 0x003B51B2000080B8000080B8000000000000008000000080496FA2B5
+  LocationReference: 020094:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -660.2103, -714.6424, -30000
+    Rotation: 0, 0, 2.583199
+MajorFlags:
+- 0x40000

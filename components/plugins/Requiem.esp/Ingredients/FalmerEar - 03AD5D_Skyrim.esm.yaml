@@ -1,0 +1,37 @@
+FormKey: 03AD5D:Skyrim.esm
+EditorID: FalmerEar
+ObjectBounds:
+  First: -10, -5, -2
+  Second: 8, 2, 1
+Name:
+  TargetLanguage: English
+  Value: Falmer Ear
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\FalmerEar.nif
+  Data: 0x02000000020000000000000009B151D764647300604DDD5CC6E28DFA64647300604DDD5C
+PickUpSound: 0517C9:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 10
+Weight: 0.2
+IngredientValue: 10
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 1
+- BaseEffect: 073F29:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 20
+- BaseEffect: 090041:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 03EB21:Skyrim.esm
+  Data:
+    Magnitude: 0.2
+    Duration: 30

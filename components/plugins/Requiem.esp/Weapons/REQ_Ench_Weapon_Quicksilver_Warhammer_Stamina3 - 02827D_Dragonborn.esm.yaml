@@ -1,0 +1,51 @@
+FormKey: 02827D:Dragonborn.esm
+EditorID: REQ_Ench_Weapon_Quicksilver_Warhammer_Stamina3
+Name:
+  TargetLanguage: English
+  Value: Quicksilver Warhammer of Torpor
+Model:
+  File: DLC02\Weapons\Nordic\NordicWarhammer.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 05B45B:Skyrim.esm
+EnchantmentAmount: 1500
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 06D930:Skyrim.esm
+- 08F958:Skyrim.esm
+- 026230:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0E4CB0:Skyrim.esm
+FirstPersonModel: 03C355:Dragonborn.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 0E4F10:Skyrim.esm
+UnequipSound: 0E4F11:Skyrim.esm
+BasicStats:
+  Value: 220
+  Weight: 26
+  Damage: 22
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.6
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1069547520
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.25
+Critical:
+  Damage: 11
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud
+Template: 01CDB3:Dragonborn.esm

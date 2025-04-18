@@ -1,0 +1,24 @@
+FormKey: AE37CD:Requiem.esp
+EditorID: REQ_Ench_HevnoraaksStaff
+Name:
+  TargetLanguage: English
+  Value: Hevnoraak's Staff Enchantment
+EnchantmentCost: 150
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 150
+TargetType: Aimed
+EnchantType: StaffEnchantment
+Effects:
+- BaseEffect: 025F28:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 2
+- BaseEffect: 025F28:Requiem.esp
+  Data:
+    Magnitude: 2
+    Duration: 300
+- BaseEffect: 0153D3:Skyrim.esm
+  Data:
+    Magnitude: 0.25

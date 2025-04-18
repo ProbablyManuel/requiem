@@ -1,0 +1,76 @@
+FormKey: 058663:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Mzinchaleft03
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mzinchaleft Gatehouse
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#0036321F'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#004B6361'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#003B3220'
+    DirectionalXMinus: '#0030321D'
+    DirectionalYPlus: '#0036341F'
+    DirectionalYMinus: '#00362F1F'
+    DirectionalZPlus: '#0019170E'
+    DirectionalZMinus: '#00524C2F'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00638381'
+  FogMax: 0.9
+  Inherits:
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - LightFadeDistances
+LightingTemplate: 08810A:Skyrim.esm
+WaterHeight: 0
+Location: 019280:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 0E3247:Skyrim.esm
+EncounterZone: 03EC49:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 089770:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0F7548:Skyrim.esm
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 01396D:Skyrim.esm
+  LocationReference: 019280:Skyrim.esm
+  Placement:
+    Position: -1826.6174, 4666.8604, -626.6014
+    Rotation: 6.269734, 0.016406095, 6.276078
+- MutagenObjectType: PlacedObject
+  FormKey: 0A2CF9:Skyrim.esm
+  Version2: 3
+  Base: 020652:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019280:Skyrim.esm
+  Placement:
+    Position: -2622.8606, 6981.6216, -1084.7622
+MajorFlags:
+- 0x40000

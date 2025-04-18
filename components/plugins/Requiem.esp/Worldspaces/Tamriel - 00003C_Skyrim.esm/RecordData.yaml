@@ -1,0 +1,779 @@
+FormKey: 00003C:Skyrim.esm
+EditorID: Tamriel
+Name:
+  TargetLanguage: English
+  Value: Skyrim
+Climate: 000812:Skyrim.esm
+Water: 000018:Skyrim.esm
+LodWater: 000018:Skyrim.esm
+LodWaterHeight: -14000
+LandDefaults:
+  DefaultLandHeight: -27000
+  DefaultWaterHeight: -14000
+MapData:
+  NorthwestCellCoords: -30, 15
+  SoutheastCellCoords: 40, -40
+  CameraMinHeight: 50000
+  CameraMaxHeight: 80000
+  CameraInitialPitch: 50
+WorldMapOffsetScale: 1
+DistantLodMultiplier: 1
+ObjectBoundsMin: -57, -43
+ObjectBoundsMax: 62, 51
+Music: 01BA72:Skyrim.esm
+HdLodDiffuseTexture: Data\Textures\Landscape\Mountains\MountainSlab02.dds
+HdLodNormalTexture: Data\Textures\Landscape\Mountains\MountainSlab02_N.dds
+TopCell:
+  FormKey: 000D74:Skyrim.esm
+  IsCompressed: True
+  MajorRecordFlagsRaw: 263168
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - Compressed
+  Flags:
+  - HasWater
+  Grid:
+    Flags: -754082816
+  OcclusionData: 0x03000000000000000000000000000000000000000000000000000000000000000000000000000000000080010000000000000001880000000000000000000000040000C102370020AEFFAF01D83B0009FC3FF60B0C100000000000000000000004000041010300000000000000000000000000000000000000000000000000001E73F9FFFE3F001BACBFFEFBFA030000FCEB6F0000F09FF9EDFF7F0000101C00FE63C70024F055F02E3000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  WaterHeight: -2.1474836E+09
+  Regions:
+  - 041449:Skyrim.esm
+  - 08EED7:Skyrim.esm
+  - 0C5858:Skyrim.esm
+  - 0C5859:Skyrim.esm
+  - 0CAD0A:Skyrim.esm
+  Persistent:
+  - MutagenObjectType: PlacedNpc
+    FormKey: 0D9651:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: dunPOISummoning
+        Properties:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Actor2
+          Object: 0D9653:Skyrim.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Actor1
+          Object: 0D9652:Skyrim.esm
+    Base: 099544:Skyrim.esm
+    LevelModifier: Medium
+    LinkedReferences:
+    - Reference: 0D9656:Skyrim.esm
+    PersistentLocation: 0D567A:Skyrim.esm
+    LocationReference: 0D567A:Skyrim.esm
+    Placement:
+      Position: 50713.188, -5354.501, -1404.8
+      Rotation: 0, 0, 1.2499995
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 0828AE:Skyrim.esm
+    MajorRecordFlagsRaw: 3072
+    EditorID: TestResetChest
+    Version2: 1
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 03AC21:Skyrim.esm
+    Lock:
+      Level: Novice
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    LocationReference: 018A56:Skyrim.esm
+    Placement:
+      Position: 24963.787, -14210.129, -4692.609
+      Rotation: 0.09157247, -0.06835131, 4.596139
+  - MutagenObjectType: PlacedObject
+    FormKey: 0DC3C4:Skyrim.esm
+    MajorRecordFlagsRaw: 3072
+    Version2: 2
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: WETriggerScript
+        Flags: Inherited
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: TriggerOnLoad
+          Data: True
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myHoldLocation
+          Object: 016772:Skyrim.esm
+    Base: 04A5EE:Skyrim.esm
+    Primitive:
+      Bounds: 1437.23, 1034.5459, 407.66016
+      Color: '#00FF00FF'
+      Unknown: 0.15
+      Type: Box
+    CollisionLayer: 22
+    Placement:
+      Position: 41691.605, -8714.101, -3626.3518
+      Rotation: 0.00767954, -0.03522667, 0.026386423
+  - MutagenObjectType: PlacedNpc
+    FormKey: 085B00:Skyrim.esm
+    MajorRecordFlagsRaw: 3584
+    Version2: 2
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    Base: 01E7A0:Skyrim.esm
+    LevelModifier: Easy
+    LinkedReferences:
+    - Reference: 0FA350:Skyrim.esm
+    Placement:
+      Position: 158315.6, -65180.36, 9093.102
+      Rotation: 0, -0, 2.1300008
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 085CCB:Skyrim.esm
+    MajorRecordFlagsRaw: 3584
+    Version2: 5
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    Base: 01E7A0:Skyrim.esm
+    LevelModifier: Easy
+    LinkedReferences:
+    - Reference: 0FA326:Skyrim.esm
+    - KeywordOrReference: 0B9506:Skyrim.esm
+      Reference: 08F99A:Skyrim.esm
+    Placement:
+      Position: 178600.36, -88141.414, 11053.045
+      Rotation: 0, -0, 3.3831885
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 083EA8:Skyrim.esm
+    MajorRecordFlagsRaw: 3072
+    Version2: 2
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0422B5:Skyrim.esm
+    LevelModifier: Easy
+    LinkedReferences:
+    - Reference: 10F657:Skyrim.esm
+    Placement:
+      Position: 141469.12, 153694.77, -13681.819
+      Rotation: 0, -0, 6.0031886
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 0DC5AA:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 2
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 01E7A1:Skyrim.esm
+    LevelModifier: Easy
+    LinkedReferences:
+    - Reference: 0FB358:Skyrim.esm
+    Placement:
+      Position: -4660.767, 16563.416, -5971.467
+      Rotation: 0, -0, 5.983186
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 094B3D:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0F0155:Skyrim.esm
+    Placement:
+      Position: 64949.992, -53253.598, 24745.258
+      Rotation: 1.5707964, 0, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: 10F657:Skyrim.esm
+    MajorRecordFlagsRaw: 3072
+    Version2: 1
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000034:Skyrim.esm
+    LinkedReferences:
+    - Reference: 10F658:Skyrim.esm
+    Placement:
+      Position: 141269.38, 154164.53, -13694.448
+      Rotation: 0, -0, 6.2431912
+  - MutagenObjectType: PlacedObject
+    FormKey: 03F709:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 4
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 03AC21:Skyrim.esm
+    Lock:
+      Level: Novice
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    LocationRefTypes:
+    - 0130FD:Skyrim.esm
+    LocationReference: 0192C1:Skyrim.esm
+    Placement:
+      Position: 74516.914, -2683.541, -4416
+      Rotation: 0, -0, 4.6831903
+  - MutagenObjectType: PlacedObject
+    FormKey: 07843F:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 1
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 06FBEF:Skyrim.esm
+    LocationReference: 01919D:Skyrim.esm
+    Placement:
+      Position: 78904.125, 25619.73, -7517.7188
+      Rotation: 0, 0, 2.2854
+  - MutagenObjectType: PlacedObject
+    FormKey: 0177E7:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 11
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 029CB0:Skyrim.esm
+    TeleportDestination:
+      Door: 017532:Skyrim.esm
+      Position: -1222.8816, -375.5119, -7.6293945E-06
+      Rotation: 0, -0, 0.008407601
+    Lock:
+      Level: Apprentice
+      Unused: 0x000000
+      Key: 09E2A2:Skyrim.esm
+      Unused2: 0x0000000000000000000000
+    NavigationDoorLink:
+      NavMesh: 0D6010:Skyrim.esm
+      TeleportMarkerTriangle: 285
+    Owner: 09E29C:Skyrim.esm
+    LocationReference: 018A52:Skyrim.esm
+    Placement:
+      Position: -6144.9766, 63372.844, -11157.118
+      Rotation: 0, -0, 2.8543262
+  - MutagenObjectType: PlacedNpc
+    FormKey: 0527F1:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    EditorID: MQ101ElenwenHorse
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0654E5:Skyrim.esm
+    LocationReference: 018A4A:Skyrim.esm
+    Owner: 039F26:Skyrim.esm
+    Placement:
+      Position: 19008, -77827, 8456
+      Rotation: 0, 0, 2.511801
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedNpc
+    FormKey: 0D9653:Skyrim.esm
+    MajorRecordFlagsRaw: 536874496
+    Version2: 3
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    - 0x20000000
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultFakeRezSpell
+        Properties:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: dunReanimateSelf
+          Object: 0E1529:Skyrim.esm
+    Base: 07503C:Skyrim.esm
+    RagdollData: 0x020001000000403C000080BB00000000FE59A9BF2B806EBE9533F7BD080007000080F0C0000062BF00008AC08A593140C9A31A3F7EAB32C009000B000000403B0000403B00DC004298281CBE5504E4BCB264C1BB0A000A000000C03C00000BBD005C1B42229DAE3E77BC9ABC1D63663D0E0011000080F04000408CBF00C08DC050C130406051E63E1A092E400F0015000000E13B000014BC00380242F40A32BEE855B93DD4F31F3B100019000000C33D00000B3E002C1A4298C38E3E1D5C92BDAF86593E02001D000000003C00309EC000C0604036DB92BB8826813DEF7AB6BD03002400000000BC000014BD0020FE40E0A7D43D7FD5B93CB6C8C1BD04002900000040BC000080BC00D00341B34E8D3E8EBFAD3C0A7CBBBD00002C000000003B00001BC000E8B1411E711F3E8683CF3A4F01243C010030000000003B000000000000204147107BBEF7B383BB4DC2F3390B0033000000003B00000000009835411992E23E5C5530BF1AD934BF0C003500000000BC000000BB0094CC4180BAFB3E0090373834C210B90D0037000000803B000080BA00C8B241C70A37BDD95E56BB9569ABBF05003A00000080BA00000000009035411592E23E6155303F17D9343F060045000000403A000000BB0088CC4188BAFB3E00EB37B82AF2103907003B000000403A0000000000D0B241ED0937BD815E563B9D69AB3F00003A004F5E583601D00142931FD042000000800000008000000080
+    LocationReference: 0D567A:Skyrim.esm
+    Placement:
+      Position: 51034.195, -5628.1377, -1413.399
+      Rotation: 0, -0, 5.5500097
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+    - DoNotHavokSettle
+  - MutagenObjectType: PlacedObject
+    FormKey: 1068F9:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 1
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0EF052:Skyrim.esm
+    Lock:
+      Level: Apprentice
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    Placement:
+      Position: 152450.16, -60617.33, 12001.885
+      Rotation: 0.19521223, 0.087483585, 3.6782207
+  - MutagenObjectType: PlacedNpc
+    FormKey: 0D9652:Skyrim.esm
+    MajorRecordFlagsRaw: 3584
+    Version2: 3
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultFakeRezSpell
+        Properties:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: dunReanimateSelf
+          Object: 0E1529:Skyrim.esm
+    Base: 0F90BC:Skyrim.esm
+    RagdollData: 0x0200803F000000000000000000000000C9D3D2BFD386913DA136763F081FE03E0020ECC0000079BF00208DC011323FC0DF21DABD3FA73B400900803F0000183D0000083D0008014222CB05C0009099BC16ED143D0A00803F00009F3E000038BD00E01A42F831AA3FA0C4CCBD9764343D0E00803F0030E74000006CBF00408EC04BDC3340EE009DBE381128400F00000000009CBC0000803C007C0242C51FDABF62A21D3C7EDEBDBD1000803F00001FBD0000203D00741A424FF1923EA5E08EBDFD7D5B3E0200803F0000103D00009DC000406340077594BA2529623D0297BDBD0300803F0000003C000000BC00600041EBFA9F3D45F75D3D5085D1BD04BF473F000040BC000080BB00500441F6307E3E23B5973D3337BCBD0000803F000040BC00601BC000F8B141C46E1F3EB0C7CF3A9AF3233C0100803F0000B03C0000A03C00B01F41BF0D7BBE83B683BBE4A2EF390B00803F000080BB0000003C00903541E393E23E895430BFD7DB34BF0C524B3F0000003B0000003C0098CC41FBB9FB3E43A01D38A6B405B90D00803F000080390000003A00B0B2419B0137BD039056BBBC69ABBF0500803F0000203C00000000009635415497E23E6E54303F58DA343F0600803F000080BB0000803C00B4CC419CB9FB3E2A4F45B8B48B1239070000000000403C0000C0BA00D0B241A6FB36BDADA1563BEF69AB3F0000803F4F5E583601D00142931FD042000000800000008000000080
+    LocationReference: 0D567A:Skyrim.esm
+    Placement:
+      Position: 50704.547, -5143.493, -1397.9866
+      Rotation: 0, -0, 0.9499996
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedObject
+    FormKey: 0BCCB4:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 14
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 04D6ED:Skyrim.esm
+    TeleportDestination:
+      Door: 0BCCB3:Skyrim.esm
+      Position: 192, 544, 580
+      Rotation: 0, -0, -3.1415927
+    Lock:
+      Level: Apprentice
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    NavigationDoorLink:
+      NavMesh: 0F33B7:Skyrim.esm
+      TeleportMarkerTriangle: 57
+    LocationReference: 018E32:Skyrim.esm
+    Placement:
+      Position: 157380.55, -94426.73, 11042.689
+      Rotation: 0, 0, 0.96079445
+  - MutagenObjectType: PlacedObject
+    FormKey: 054CAD:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 5
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 03AC21:Skyrim.esm
+    Lock:
+      Level: Novice
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    LocationRefTypes:
+    - 0130FD:Skyrim.esm
+    LocationReference: 019193:Skyrim.esm
+    Placement:
+      Position: 15264.642, 19298.22, -4587.1855
+      Rotation: 0, -0, 2.7832015
+  - MutagenObjectType: PlacedObject
+    FormKey: 0D6AD6:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 1
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0D6AA4:Skyrim.esm
+    Scale: 1.4
+    Lock:
+      Level: Master
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    Owner: 0D6AC5:Skyrim.esm
+    LocationReference: 0358B9:Skyrim.esm
+    Placement:
+      Position: -66148.15, 97511.23, -13891.649
+      Rotation: 0, -0, 5.700009
+  - MutagenObjectType: PlacedObject
+    FormKey: 09E12D:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 3
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 09E128:Skyrim.esm
+    Scale: 1.3
+    Lock:
+      Level: Master
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    Owner: 0284B1:Skyrim.esm
+    LocationReference: 019171:Skyrim.esm
+    Placement:
+      Position: -145748.94, -23992.562, -840
+      Rotation: 0, -0, 3.100001
+  - MutagenObjectType: PlacedNpc
+    FormKey: 080B20:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    EditorID: HajvarrBossRef
+    Version2: 6
+    SkyrimMajorRecordFlags:
+    - 0x400
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: masterambushscript
+        Flags: Inherited
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: ambushOnTrigger
+          Data: True
+      - Name: defaultOnResetTestAndDisable
+        Properties:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myQuest
+          Object: 01C3FB:Skyrim.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myAlias
+          Object: 0D8E56:Skyrim.esm
+          Alias: 9
+        - MutagenObjectType: ScriptIntProperty
+          Name: myStage
+          Data: 255
+    Base: 0E1F81:Skyrim.esm
+    LevelModifier: Hard
+    LinkedReferences:
+    - Reference: 02E2A7:Skyrim.esm
+    - KeywordOrReference: 05D5E6:Skyrim.esm
+      Reference: 02E2A7:Skyrim.esm
+    - KeywordOrReference: 05D5E7:Skyrim.esm
+      Reference: 0F1873:Skyrim.esm
+    ActivateParents:
+      Parents:
+      - Reference: 0E1F82:Skyrim.esm
+    PersistentLocation: 0192C5:Skyrim.esm
+    LocationReference: 0192C5:Skyrim.esm
+    LocationRefTypes:
+    - 0130F7:Skyrim.esm
+    Placement:
+      Position: 42726.785, -17982.81, 2192.3674
+      Rotation: 0, -0, 4.712389
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 24425D:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 06FBEF:Skyrim.esm
+    Placement:
+      Position: 78837.05, 25674.633, -7517.7188
+      Rotation: 0, 0, 2.2854
+  - MutagenObjectType: PlacedNpc
+    FormKey: 085D0C:Skyrim.esm
+    MajorRecordFlagsRaw: 3584
+    Version2: 4
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    Base: 01E7A0:Skyrim.esm
+    LevelModifier: Easy
+    LinkedReferences:
+    - Reference: 0FA33A:Skyrim.esm
+    - KeywordOrReference: 0B9506:Skyrim.esm
+      Reference: 052ECC:Skyrim.esm
+    Placement:
+      Position: 168813.56, -66830.055, 7896.3345
+      Rotation: 0, -0, 0.83000237
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedObject
+    FormKey: 078C10:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 2
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 078C0D:Skyrim.esm
+    Lock:
+      Level: Master
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    Owner: 035D3F:Skyrim.esm
+    LocationReference: 013163:Skyrim.esm
+    Placement:
+      Position: 20521.947, -44961.676, -82.26425
+      Rotation: 0, -0, 2.516819
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3840:Requiem.esp
+    MajorRecordFlagsRaw: 1610613760
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - 0x20000000
+    - 0x40000000
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultDisableHavokOnLoad
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnHit
+    Base: AD3848:Requiem.esp
+    RagdollData: 0x003F464F00800541000080BB008096BFDB0FC9BF0000A0B5D476484000008001BA9E1740060072B900E8542C000000800000008060A5C93F
+    Placement:
+      Position: -48101.695, 76464.92, -13783.562
+      Rotation: 1.3962634, 0.5476459, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: 0ACB70:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 2
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0ACB6F:Skyrim.esm
+    Scale: 1.2
+    Lock:
+      Level: Master
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    LocationReference: 019263:Skyrim.esm
+    Placement:
+      Position: 135010.7, -112369.72, 11004.993
+      Rotation: 0, -0, 3.8168292
+  - MutagenObjectType: PlacedObject
+    FormKey: AD38CF:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0C1D83:Skyrim.esm
+    Placement:
+      Position: 2318.3994, -59664.273, 1411.993
+      Rotation: 1.5707964, 0, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3935:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0E2BC7:Skyrim.esm
+    Placement:
+      Position: -8401.941, -68667.13, 2361.4219
+      Rotation: 0, 0, 2.4000337
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3934:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0E2BC7:Skyrim.esm
+    Placement:
+      Position: 29816.746, 35317.96, -6707.444
+      Rotation: 0, 0, 4.983189
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3933:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0E2BC7:Skyrim.esm
+    Placement:
+      Position: 34167.37, 39114.605, -7295.698
+      Rotation: 0, 0, 2.800002
+  - MutagenObjectType: PlacedObject
+    FormKey: AD38D0:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0C1D83:Skyrim.esm
+    Placement:
+      Position: 2264.7688, -59637.645, 1399.6631
+      Rotation: 1.5707964, 0, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: 4B94E0:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0180D8:Skyrim.esm
+    TeleportDestination:
+      Door: 4B94DF:Requiem.esp
+      Position: 78.84166, -1852.6145, 58.235107
+      Rotation: 0, -0, -0.09999628
+    Placement:
+      Position: 64868.297, -53574.05, 24822.588
+      Rotation: 0, -0, 0.8000051
+  - MutagenObjectType: PlacedObject
+    FormKey: 0AEBFD:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    EditorID: C03PlayerRampageStartMARKER
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 000034:Skyrim.esm
+    LocationReference: 018A56:Skyrim.esm
+    Placement:
+      Position: 32761.62, -2026.01, -3862.02
+      Rotation: 5.7484164, 0, 1.0812315
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3936:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0613A7:Skyrim.esm
+    Placement:
+      Position: -8504.79, -70341.17, 2335.2244
+      Rotation: 0, 0, 2.00002
+  - MutagenObjectType: PlacedObject
+    FormKey: 24425E:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 06FBEF:Skyrim.esm
+    Placement:
+      Position: 78969.29, 25562.883, -7517.7188
+      Rotation: 0, 0, 2.2854
+  - MutagenObjectType: PlacedObject
+    FormKey: 09DA40:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 1
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 09DA3F:Skyrim.esm
+    Scale: 1.2
+    Lock:
+      Level: Master
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    LocationReference: 018A50:Skyrim.esm
+    Placement:
+      Position: 30833.133, 103976.766, -13770.516
+      Rotation: 0, -0, 4.4000034
+  - MutagenObjectType: PlacedObject
+    FormKey: 0C3C83:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 03AC21:Skyrim.esm
+    Lock:
+      Level: Novice
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    LocationReference: 019183:Skyrim.esm
+    Placement:
+      Position: 33470.46, -93793.38, 14389.755
+      Rotation: 0.047328092, 0.047757443, 3.8461647
+  - MutagenObjectType: PlacedNpc
+    FormKey: 0DC550:Skyrim.esm
+    MajorRecordFlagsRaw: 3584
+    Version2: 4
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    Base: 01E7A1:Skyrim.esm
+    LevelModifier: Easy
+    LinkedReferences:
+    - Reference: 0FB3A6:Skyrim.esm
+    - KeywordOrReference: 0B9506:Skyrim.esm
+      Reference: 045855:Skyrim.esm
+    Placement:
+      Position: 13968.92, -20118.947, -3770.796
+      Rotation: 0, -0, 0.6000016
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 0DC583:Skyrim.esm
+    MajorRecordFlagsRaw: 3072
+    Version2: 4
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 01E7A1:Skyrim.esm
+    LevelModifier: Easy
+    LinkedReferences:
+    - Reference: 0FB39A:Skyrim.esm
+    Placement:
+      Position: 44093.906, 1981.5698, -4184
+      Rotation: 0, -0, 3.3500001
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 085D11:Skyrim.esm
+    MajorRecordFlagsRaw: 3584
+    Version2: 3
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    Base: 01E7A0:Skyrim.esm
+    LevelModifier: Easy
+    LinkedReferences:
+    - Reference: 0FA361:Skyrim.esm
+    - KeywordOrReference: 0B9506:Skyrim.esm
+      Reference: 052ECC:Skyrim.esm
+    Placement:
+      Position: 162074.19, -68321.29, 8278.016
+      Rotation: 0, -0, 0.5000005
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedObject
+    FormKey: 0D9789:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 03AC21:Skyrim.esm
+    Scale: 0.98
+    Lock:
+      Level: Novice
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    Placement:
+      Position: 22237.564, 3670.3684, -4394.1064
+      Rotation: 6.0794287, 6.104825, 5.3892627
+  - MutagenObjectType: PlacedObject
+    FormKey: 0DD9CC:Skyrim.esm
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: WETriggerScript
+        Flags: Inherited
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: TriggerOnLoad
+          Data: True
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myHoldLocation
+          Object: 016772:Skyrim.esm
+    Base: 04A5EE:Skyrim.esm
+    Primitive:
+      Bounds: 1437.23, 1034.5459, 407.66016
+      Color: '#00FF00FF'
+      Unknown: 0.15
+      Type: Box
+    CollisionLayer: 22
+    Placement:
+      Position: 22591.664, 10791.503, -4312.592
+      Rotation: -0.0030781168, -0.035922077, 5.659763
+  - MutagenObjectType: PlacedObject
+    FormKey: 03F70F:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 02064F:Skyrim.esm
+    Scale: 0.8
+    Lock:
+      Level: Apprentice
+      Unused: 0x000000
+      Unused2: 0x0000000000000000000000
+    LocationRefTypes:
+    - 0130F8:Skyrim.esm
+    LocationReference: 0192C1:Skyrim.esm
+    Placement:
+      Position: 74324.36, 1062.1047, -2752.0002
+      Rotation: 0, 0, 2.921388
+  MajorFlags:
+  - Persistent
+  - 0x40000

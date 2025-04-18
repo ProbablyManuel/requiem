@@ -1,0 +1,21 @@
+FormKey: 030D1A:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_Ability_NaturalHealing
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+BaseCost: 1
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Heals the caster for <mag> per second.

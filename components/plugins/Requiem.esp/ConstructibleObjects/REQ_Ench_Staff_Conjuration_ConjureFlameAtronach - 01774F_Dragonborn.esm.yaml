@@ -1,0 +1,20 @@
+FormKey: 01774F:Dragonborn.esm
+EditorID: REQ_Ench_Staff_Conjuration_ConjureFlameAtronach
+Items:
+- Item:
+    Item: 07E647:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 017749:Dragonborn.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Spell: 0204C3:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 029B78:Skyrim.esm
+WorkbenchKeyword: 017738:Dragonborn.esm
+CreatedObjectCount: 1

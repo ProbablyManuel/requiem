@@ -1,0 +1,33 @@
+FormKey: 105F1B:Skyrim.esm
+EditorID: PerkTrickShotDisarm
+Name:
+  TargetLanguage: English
+  Value: Trick Shot Disarm
+MenuDisplayObject: 0A59AC:Skyrim.esm
+Flags:
+- Hostile
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Disarm
+CastType: FireAndForget
+TargetType: Touch
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 25
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm

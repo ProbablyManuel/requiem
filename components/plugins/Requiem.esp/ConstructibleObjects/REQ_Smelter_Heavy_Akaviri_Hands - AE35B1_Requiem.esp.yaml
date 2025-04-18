@@ -1,0 +1,19 @@
+FormKey: AE35B1:Requiem.esp
+EditorID: REQ_Smelter_Heavy_Akaviri_Hands
+Items:
+- Item:
+    Item: 04B28D:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 04B28D:Skyrim.esm
+CreatedObject: 05ACE5:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

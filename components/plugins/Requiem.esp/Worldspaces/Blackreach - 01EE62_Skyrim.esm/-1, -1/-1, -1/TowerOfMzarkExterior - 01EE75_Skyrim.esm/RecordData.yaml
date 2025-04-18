@@ -1,0 +1,41 @@
+FormKey: 01EE75:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: TowerOfMzarkExterior
+Version2: 5
+SkyrimMajorRecordFlags:
+- Compressed
+Flags:
+- HasWater
+Grid:
+  Point: -1, -1
+  Flags: -754486272
+WaterHeight: 1000
+Regions:
+- 048C2E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0F3B3B:Skyrim.esm
+  Version2: 1
+  Base: 020653:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018EE8:Skyrim.esm
+  Placement:
+    Position: -814.03174, -3839.4746, 1194.8346
+    Rotation: -0.029173665, -0.17414188, 5.668566
+- MutagenObjectType: PlacedNpc
+  FormKey: 586725:Requiem.esp
+  Base: 063230:Skyrim.esm
+  Placement:
+    Position: -1711.0779, -1949.4375, 1742.5032
+- MutagenObjectType: PlacedNpc
+  FormKey: 586726:Requiem.esp
+  Base: 06322B:Skyrim.esm
+  Placement:
+    Position: -1838.022, -1724.3936, 1742.5032
+    Rotation: 0, -0, 2.2
+MajorFlags:
+- 0x40000

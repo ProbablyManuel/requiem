@@ -1,0 +1,36 @@
+FormKey: 06BC00:Skyrim.esm
+EditorID: MudcrabChitin
+ObjectBounds:
+  First: -21, -13, -9
+  Second: 21, 13, 9
+Name:
+  TargetLanguage: English
+  Value: Mudcrab Chitin
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\MudcrabChitin.nif
+  Data: 0x0200000004000000000000007BA517DD64647300840728B089275EFD64647300840728B00053B1F364647300262C333BFC8CFEFD64647300840728B0
+PickUpSound: 100526:Skyrim.esm
+Value: 7
+Weight: 0.5
+IngredientValue: 7
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 0.5
+    Duration: 20
+- BaseEffect: 090041:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 03EAEC:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60

@@ -1,0 +1,173 @@
+FormKey: 04E785:Skyrim.esm
+MajorRecordFlagsRaw: 524288
+EditorID: CowRace
+SkyrimMajorRecordFlags:
+- CantWait
+Name:
+  TargetLanguage: English
+  Value: Cow
+Description:
+  TargetLanguage: English
+  Value: ''
+Skin: 04E784:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013798:Skyrim.esm
+- 586728:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- CantOpenDoors
+- NonHostile
+Starting:
+- Key: Health
+  Value: 15
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 25
+BaseCarryWeight: 200
+BaseMass: 3.5
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 10
+UnarmedReach: 32
+BodyBipedObject: Body
+AngularAccelerationRate: 0.25
+AngularTolerance: 50
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Cow\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Cow\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- BLDO
+- RUN1
+- SNEK
+- SWIM
+- WALK
+Voices:
+  Male: 01F15F:Skyrim.esm
+  Female: 013ADD:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.35
+    StrikeAngle: 35
+    Stagger: 10
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.35
+    StrikeAngle: 35
+    Stagger: 10
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.45
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 7
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPower
+- AttackData:
+    DamageMult: 2
+    Chance: 0.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: attackStart_StandingPower
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 04E782:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Cow\HighlandCowProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Cow\HighlandCowProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 01F272:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+MovementTypes:
+- MovementType: 059655:Skyrim.esm
+  Overrides:
+    ForwardWalk: 65
+    ForwardRun: 525.45
+    BackWalk: 77.84
+    BackRun: 77.84
+    RotateWalk: 1.4727088
+    RotateRun: 1.4727088
+    Unknown: 1.4727088
+EquipmentFlags:
+- HandToHand
+EquipmentSlots:
+- 013F42:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 059655:Skyrim.esm
+BaseMovementDefaultRun: 059655:Skyrim.esm
+BaseMovementDefaultSwim: 0C9EDB:Skyrim.esm
+MajorFlags:
+- Critter

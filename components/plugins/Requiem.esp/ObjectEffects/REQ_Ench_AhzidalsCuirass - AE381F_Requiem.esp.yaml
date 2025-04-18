@@ -1,0 +1,21 @@
+FormKey: AE381F:Requiem.esp
+EditorID: REQ_Ench_AhzidalsCuirass
+Name:
+  TargetLanguage: English
+  Value: Ahzidal's Cuirass Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE3823:Requiem.esp
+  Data:
+    Magnitude: 10
+- BaseEffect: AE390E:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4

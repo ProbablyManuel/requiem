@@ -1,0 +1,32 @@
+FormKey: 10E7ED:Skyrim.esm
+Flags: {}
+PreviousDialog: 0C4403:Skyrim.esm
+FavorLevel: None
+ResponseData: 0E3554:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 07E7A3:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 027242:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Target
+    RunOnTypeIndex: 0
+    Spell: 0ED0A8:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Target
+    RunOnTypeIndex: 0
+    Spell: 00283B:Dawnguard.esm
+  ComparisonValue: 1

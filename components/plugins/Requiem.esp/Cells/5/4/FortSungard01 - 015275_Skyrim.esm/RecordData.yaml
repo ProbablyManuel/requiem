@@ -1,0 +1,82 @@
+FormKey: 015275:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortSungard01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Sungard Annex
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0B6BC7:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019185:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC23:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 03C704:Skyrim.esm
+  Version2: 3
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019185:Skyrim.esm
+  EnableParent:
+    Reference: 04658A:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -586.4112, -369.3521, -449.03488
+    Rotation: 0, -0, 1.5960687
+- MutagenObjectType: PlacedObject
+  FormKey: 03C707:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.87
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019185:Skyrim.esm
+  EnableParent:
+    Reference: 04658A:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -893.8568, -533.63434, -447.9457
+    Rotation: 0, 0, 1.5788091
+MajorFlags:
+- 0x40000

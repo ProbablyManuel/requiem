@@ -1,0 +1,36 @@
+FormKey: 01CD6E:Dragonborn.esm
+EditorID: DLC2BurntSprigganWood
+ObjectBounds:
+  First: -8, -16, -4
+  Second: 11, 14, 8
+Name:
+  TargetLanguage: English
+  Value: Burnt Spriggan Wood
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: DLC02\Clutter\DLC2BurntSprigganWood.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FB975:Skyrim.esm
+Value: 20
+Weight: 0.5
+IngredientValue: 24
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2D:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 03EB24:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 073F25:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5

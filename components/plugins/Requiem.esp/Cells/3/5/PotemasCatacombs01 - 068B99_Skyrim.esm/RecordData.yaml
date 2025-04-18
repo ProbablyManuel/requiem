@@ -1,0 +1,86 @@
+FormKey: 068B99:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PotemasCatacombs01
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Potema's Catacombs
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00423A27'
+  DirectionalColor: '#002C2F30'
+  FogNearColor: '#004B6361'
+  FogFar: 3000
+  DirectionalRotationXY: 270
+  DirectionalRotationZ: 240
+  FogClipDistance: 13000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#0030271C'
+    DirectionalXMinus: '#00272719'
+    DirectionalYPlus: '#002C281B'
+    DirectionalYMinus: '#002C251B'
+    DirectionalZPlus: '#0014120C'
+    DirectionalZMinus: '#002E291D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#004B6361'
+  FogMax: 1
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+LightingTemplate: 03128B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01928C:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\WRTemple_e.dds
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC54:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 02EDEB:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 1006D1:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01928C:Skyrim.esm
+  Placement:
+    Position: 3123.7458, -3240.375, -3527.9214
+    Rotation: 0, -0, 4.274782
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 068CF8:Skyrim.esm
+  Version2: 2
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01928C:Skyrim.esm
+  Placement:
+    Position: -6325.966, 4326.0933, -2438.012
+    Rotation: 0, -0, 2.206195
+- MutagenObjectType: PlacedObject
+  FormKey: 069040:Skyrim.esm
+  Version2: 3
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.54
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01928C:Skyrim.esm
+  Placement:
+    Position: -5823.3726, 4155.356, -2438.0117
+    Rotation: 0, -0, 5.8331866
+MajorFlags:
+- 0x40000

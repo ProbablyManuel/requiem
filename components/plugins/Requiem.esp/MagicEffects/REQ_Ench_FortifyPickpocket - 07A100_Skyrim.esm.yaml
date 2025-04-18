@@ -1,0 +1,23 @@
+FormKey: 07A100:Skyrim.esm
+EditorID: REQ_Ench_FortifyPickpocket
+Name:
+  TargetLanguage: English
+  Value: Fortify Pickpocket
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F6C:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 11
+EnchantShader: 092DEE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: PickpocketModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Pickpocketing is <mag>% more likely to succeed.

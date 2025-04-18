@@ -1,0 +1,35 @@
+FormKey: 106E19:Skyrim.esm
+EditorID: CritterPondFish04Ingredient
+ObjectBounds:
+  First: -3, -10, 0
+  Second: 4, 9, 2
+Name:
+  TargetLanguage: English
+  Value: Cyrodilic Spadetail
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\DeadPondFish04.nif
+  Data: 0x020000000300000000000000CA4B523464647300D2A84AD14A9E324764647300D2A84AD1CE353C0964647300262C333B
+Value: 15
+Weight: 0.25
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB28:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 073F20:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 073F26:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10

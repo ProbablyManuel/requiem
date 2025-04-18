@@ -1,0 +1,87 @@
+FormKey: 00285B:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1VampireCastleDungeon01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Volkihar Undercroft
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 7000
+  FogPower: 0.8
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - ClipDistance
+  - LightFadeDistances
+LightingTemplate: 017776:Dawnguard.esm
+WaterHeight: 0
+Location: 00357E:Dawnguard.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 003580:Dawnguard.esm
+Music: 00EEB9:Dawnguard.esm
+ImageSpace: 019964:Dawnguard.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 00C94D:Dawnguard.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 00357E:Dawnguard.esm
+  Placement:
+    Position: -1581.2122, 524.3223, 6687
+    Rotation: 0, -0, 3.391593
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 00CA80:Dawnguard.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 00357E:Dawnguard.esm
+  Placement:
+    Position: -4450.71, -120.52619, 6902.6875
+    Rotation: 0, 0, 4.35819
+- MutagenObjectType: PlacedObject
+  FormKey: 00C8DA:Dawnguard.esm
+  Version2: 2
+  Base: 020664:Skyrim.esm
+  Scale: 0.85
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 00357E:Dawnguard.esm
+  Placement:
+    Position: -6567.9697, 178.27454, 6842.996
+    Rotation: 0, -0, 3.1855524
+MajorFlags:
+- 0x40000

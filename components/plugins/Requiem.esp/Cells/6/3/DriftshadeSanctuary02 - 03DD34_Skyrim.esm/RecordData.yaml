@@ -1,0 +1,78 @@
+FormKey: 03DD34:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DriftshadeSanctuary02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Driftshade Cellar
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00302E34'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#0011150D'
+  FogNear: 1000
+  FogFar: 14000
+  DirectionalFade: 1
+  FogClipDistance: 14000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#0011150D'
+    Scale: 1
+  FogFarColor: '#0011150D'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01916E:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\Ore_Iron_e.dds
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC0D:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0510D7:Skyrim.esm
+  Version2: 1
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01916E:Skyrim.esm
+  Placement:
+    Position: 1892.3956, 1741.1267, 7741.0024
+    Rotation: 0, -0, 0.24999999
+- MutagenObjectType: PlacedObject
+  FormKey: 05968D:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01916E:Skyrim.esm
+  Placement:
+    Position: 1723.3508, 3474.6428, 7755.849
+    Rotation: 6.188639, 6.168088, 1.683302
+MajorFlags:
+- 0x40000

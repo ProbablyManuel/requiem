@@ -1,0 +1,22 @@
+FormKey: 33951A:Requiem.esp
+EditorID: REQ_DEPRECATED_Ability_FortifyHealth
+Name:
+  TargetLanguage: English
+  Value: Fortify Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 7.5
+EnchantShader: 092DEC:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health increases by <mag>.

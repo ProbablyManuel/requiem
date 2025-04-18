@@ -1,0 +1,219 @@
+FormKey: 015273:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: GallowsRock01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Gallows Rock
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#003F615F'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00A7C5C1'
+    Scale: 1
+  FogFarColor: '#00A7C5C1'
+  FogMax: 1
+  LightFadeBegin: 3000
+  LightFadeEnd: 4000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019187:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC25:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A9CDF:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 5559.686, -3853.534, 2.168406
+    Rotation: 0, 0, 4.606381
+- MutagenObjectType: PlacedObject
+  FormKey: 36D50C:Requiem.esp
+  Base: 36D50B:Requiem.esp
+  EnableParent:
+    Reference: 0AA0A1:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 6177.644, 619.90375, 113.45021
+    Rotation: 0.86475223, -1.1953253, 5.396324
+- MutagenObjectType: PlacedObject
+  FormKey: 0A953B:Skyrim.esm
+  Version2: 2
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: dunPrisonerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Prisoner
+        Object: 0A9544:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: prisonerFaction
+        Object: 043594:Skyrim.esm
+  Base: 0AA785:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0A9544:Skyrim.esm
+  Placement:
+    Position: 6152.2236, -4916.0576, 519.8404
+    Rotation: 0, 0, 1.5707963
+- MutagenObjectType: PlacedObject
+  FormKey: 0ECB18:Skyrim.esm
+  Version2: 1
+  Base: 02064F:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 5448.7397, -4135.851, 7.01484
+    Rotation: 0, -0, 2.933189
+- MutagenObjectType: PlacedObject
+  FormKey: 0A9533:Skyrim.esm
+  Version2: 2
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: dunPrisonerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Prisoner
+        Object: 0A9543:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: prisonerFaction
+        Object: 043594:Skyrim.esm
+  Base: 040BB2:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0A9543:Skyrim.esm
+  Placement:
+    Position: 7168, -4621.277, 520.502
+    Rotation: 0, 0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 0A9C49:Skyrim.esm
+  Version2: 1
+  Base: 042035:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 3712.001, -2335.9995, 320
+    Rotation: 0, 0, 2.3841858E-07
+- MutagenObjectType: PlacedObject
+  FormKey: 0A9C5C:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 3847.9568, -1887.1522, 369.33258
+    Rotation: 0, -0, 3.0331903
+- MutagenObjectType: PlacedObject
+  FormKey: 0420B4:Skyrim.esm
+  Version2: 2
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 5859.7075, 16.212564, 0.45990658
+    Rotation: 0, -0, 5.7331905
+- MutagenObjectType: PlacedObject
+  FormKey: 0A9538:Skyrim.esm
+  Version2: 1
+  Base: 040BB2:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 6151.733, -3895.9048, 519.8404
+    Rotation: 0, 0, 1.5707963
+- MutagenObjectType: PlacedObject
+  FormKey: 0A9535:Skyrim.esm
+  Version2: 1
+  Base: 040BB2:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 7168, -5141.591, 519.50793
+    Rotation: 0, 0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 0ECB27:Skyrim.esm
+  Base: 02064F:Skyrim.esm
+  Scale: 0.87
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 1855.8755, 398.01614, 133.44849
+    Rotation: 0, 0, 5.676994
+MajorFlags:
+- 0x40000

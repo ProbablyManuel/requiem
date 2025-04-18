@@ -1,0 +1,36 @@
+FormKey: 0F5BCF:Requiem.esp
+EditorID: REQ_Effect_AlchDamageStaminaOnHitGain
+Name:
+  TargetLanguage: English
+  Value: Damage Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 1.8
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsBlockingConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 0F5BCF:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 079355:Skyrim.esm
+  ComparisonValue: 1

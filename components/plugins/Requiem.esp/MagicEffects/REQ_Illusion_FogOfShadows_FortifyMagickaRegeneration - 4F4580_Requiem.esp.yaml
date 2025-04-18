@@ -1,0 +1,37 @@
+FormKey: 4F4580:Requiem.esp
+EditorID: REQ_Illusion_FogOfShadows_FortifyMagickaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Fortify Magicka Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 3C130A:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoHitEvent
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 4.1
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MagickaRateMult
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 4F4581:Requiem.esp
+  ComparisonValue: 1

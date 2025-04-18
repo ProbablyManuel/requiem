@@ -1,0 +1,211 @@
+FormKey: 0D1985:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: GuardWhiterunImperialGate
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AddItems
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Items
+      Objects:
+      - Name: ''
+        Object: 0D8F0C:Skyrim.esm
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - Respawn
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - SpellList
+  - AIData
+  - ModelAnimation
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+Factions:
+- Faction: 01C9FC:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0267EA:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028172:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028848:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02BE39:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02BE3B:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02BF9A:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 086EEE:Skyrim.esm
+  Fluff: 0x000000
+Voice: 0AA8D3:Skyrim.esm
+Template: 0EA0A2:Skyrim.esm
+Race: 013744:Skyrim.esm
+AttackRace: 109C7C:Skyrim.esm
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 0D198B:Skyrim.esm
+- 0D198A:Skyrim.esm
+Class: 017008:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 51
+  Magicka: 39
+  Stamina: 25
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 024259:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C3CD8:Skyrim.esm
+- 0C710A:Skyrim.esm
+HairColor: 0A0434:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 35
+SoundLevel: Normal
+CrimeFaction: 0267EA:Skyrim.esm
+HeadTexture: 0D0723:Skyrim.esm
+TextureLighting: '#00615349'
+FaceMorph:
+  NoseLongVsShort: -0.74
+  NoseUpVsDown: 0.18
+  JawUpVsDown: -0.84
+  JawNarrowVsWide: -0.6
+  JawForwardVsBack: 0.52
+  CheeksUpVsDown: 0.6
+  CheeksForwardVsBack: 0.24
+  EyesUpVsDown: 0.2
+  EyesInVsOut: 0.58
+  BrowsUpVsDown: -0.1
+  BrowsInVsOut: 0.24
+  BrowsForwardVsBack: 0.4
+  LipsUpVsDown: 0.1
+  LipsInVsOut: -1
+  ChinNarrowVsWide: 0.8
+  ChinUpVsDown: 0.66
+  ChinUnderbiteVsOverbite: 0.38
+  EyesForwardVsBack: -0.48
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 18
+  Unknown: 4294967295
+  Eyes: 4
+  Mouth: 18
+TintLayers:
+- Index: 1
+  Color: '#00615349'
+  InterpolationValue: 1
+  Preset: 66
+- Index: 2
+  Color: '#00212B52'
+  InterpolationValue: 0.34
+  Preset: 75
+- Index: 3
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 81
+- Index: 5
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 89
+- Index: 8
+  Color: '#000F0440'
+  InterpolationValue: 0.35
+  Preset: 109
+- Index: 24
+  Color: '#00000000'
+  InterpolationValue: 0.43
+  Preset: 476
+MajorFlags:
+- 0x40000

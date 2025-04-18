@@ -1,0 +1,86 @@
+FormKey: 07614C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Irkngthand02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Irkngthand Grand Cavern
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00203936'
+  DirectionalColor: '#00338A9F'
+  FogNearColor: '#004B6361'
+  FogFar: 10000
+  DirectionalRotationZ: 270
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00232021'
+    DirectionalXMinus: '#001C201E'
+    DirectionalYPlus: '#00202120'
+    DirectionalYMinus: '#00201E20'
+    DirectionalZPlus: '#000F0F0E'
+    DirectionalZMinus: '#00303031'
+    Specular: '#00275F63'
+    Scale: 1
+  FogFarColor: '#00497E8F'
+  FogMax: 0.9
+  Inherits:
+  - AmbientColor
+  - FogNear
+  - FogFar
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 08810B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01919D:Skyrim.esm
+Water: 033DA7:Skyrim.esm
+AcousticSpace: 0F993E:Skyrim.esm
+EncounterZone: 03EC3E:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0C1302:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C7451:Skyrim.esm
+  Version2: 2
+  Base: 020650:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01919D:Skyrim.esm
+  Placement:
+    Position: 6355.2153, 2493.8997, 13230.11
+    Rotation: 0, 0, 1.8707962
+- MutagenObjectType: PlacedObject
+  FormKey: 102FBB:Skyrim.esm
+  Base: 02069A:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01919D:Skyrim.esm
+  Placement:
+    Position: 7131.44, -14.005791, 13322.549
+    Rotation: 1.4500003, 5.3081903, 6.008186
+- MutagenObjectType: PlacedObject
+  FormKey: 102F60:Skyrim.esm
+  Version2: 1
+  Base: 020653:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01919D:Skyrim.esm
+  Placement:
+    Position: 10387.635, 6589.548, 14054.068
+    Rotation: 0, 0, 1.8707964
+MajorFlags:
+- 0x40000

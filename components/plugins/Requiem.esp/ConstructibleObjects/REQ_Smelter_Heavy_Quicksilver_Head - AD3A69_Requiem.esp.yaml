@@ -1,0 +1,19 @@
+FormKey: AD3A69:Requiem.esp
+EditorID: REQ_Smelter_Heavy_Quicksilver_Head
+Items:
+- Item:
+    Item: 01CD99:Dragonborn.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 01CD99:Dragonborn.esm
+CreatedObject: 05ADA0:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

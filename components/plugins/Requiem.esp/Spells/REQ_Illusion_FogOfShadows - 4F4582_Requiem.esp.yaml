@@ -1,0 +1,24 @@
+FormKey: 4F4582:Requiem.esp
+EditorID: REQ_Illusion_FogOfShadows
+Name:
+  TargetLanguage: English
+  Value: Fog of Shadows
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44C5:Skyrim.esm
+Effects:
+- BaseEffect: 4F457F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 30
+- BaseEffect: 4F4580:Requiem.esp
+  Data:
+    Magnitude: 80
+    Duration: 30

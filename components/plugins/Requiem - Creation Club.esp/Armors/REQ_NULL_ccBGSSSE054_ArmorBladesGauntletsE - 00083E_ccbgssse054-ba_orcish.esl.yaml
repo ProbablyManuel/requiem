@@ -1,0 +1,42 @@
+FormKey: 00083E:ccbgssse054-ba_orcish.esl
+EditorID: REQ_NULL_ccBGSSSE054_ArmorBladesGauntletsE
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000822:ccbgssse054-ba_orcish.esl
+Name:
+  TargetLanguage: English
+  Value: Orcish Plate Gauntlets
+ObjectEffect: 0BE01A:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE054\Armor\OrcishPlate\OrcishPlateGlovesGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 02C177:Skyrim.esm
+- 06BBD2:Skyrim.esm
+- 06BBE5:Skyrim.esm
+- 06C0EF:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080C:ccbgssse054-ba_orcish.esl
+Value: 225
+Weight: 7
+ArmorRating: 16

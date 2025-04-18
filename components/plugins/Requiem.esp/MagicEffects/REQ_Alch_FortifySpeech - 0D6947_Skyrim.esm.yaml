@@ -1,0 +1,25 @@
+FormKey: 0D6947:Skyrim.esm
+EditorID: REQ_Alch_FortifySpeech
+Name:
+  TargetLanguage: English
+  Value: Fortify Speech
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A29:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Speech
+  Association: 065A29:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Speech skill is <mag> higher for <dur> seconds.

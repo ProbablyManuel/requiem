@@ -1,0 +1,77 @@
+FormKey: 0361F9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Bthardamz02
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bthardamz Lower District
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2518'
+    DirectionalXMinus: '#00232515'
+    DirectionalYPlus: '#00282617'
+    DirectionalYMinus: '#00282317'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3823'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+LightingTemplate: 087999:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019152:Skyrim.esm
+AcousticSpace: 0F993E:Skyrim.esm
+EncounterZone: 03EBFA:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 089770:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0840DB:Skyrim.esm
+  Version2: 1
+  Base: 020653:Skyrim.esm
+  Scale: 0.61
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019152:Skyrim.esm
+  Placement:
+    Position: 5710.704, 8128.915, -4165.6284
+    Rotation: 0, -0, 4.833188
+- MutagenObjectType: PlacedObject
+  FormKey: 08EA8E:Skyrim.esm
+  Version2: 3
+  Base: 08EA5E:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019152:Skyrim.esm
+  Placement:
+    Position: 7428.768, 6744.1, -4581.994
+    Rotation: 0, -0, 3.2331903
+MajorFlags:
+- 0x40000

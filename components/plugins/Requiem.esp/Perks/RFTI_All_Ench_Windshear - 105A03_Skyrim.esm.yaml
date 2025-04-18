@@ -1,0 +1,25 @@
+FormKey: 105A03:Skyrim.esm
+EditorID: RFTI_All_Ench_Windshear
+Name:
+  TargetLanguage: English
+  Value: Windshear Bash Perk
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetEquippedConditionData
+        ItemOrList: 06EA8B:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsShieldOutConditionData
+  EntryPoint: ApplyBashingSpell
+  PerkConditionTabCount: 2
+  Spell: 105A04:Skyrim.esm

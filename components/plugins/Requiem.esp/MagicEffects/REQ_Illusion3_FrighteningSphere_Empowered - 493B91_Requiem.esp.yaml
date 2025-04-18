@@ -1,0 +1,33 @@
+FormKey: 493B91:Requiem.esp
+EditorID: REQ_Illusion3_FrighteningSphere_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+MagicSkill: Illusion
+TaperWeight: 1
+MinimumSkillLevel: 50
+SpellmakingArea: 15
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: DamageResist
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If empowered, the targets are so terrified that they totally neglect their defenses and loose <mag> armor rating.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

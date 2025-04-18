@@ -1,0 +1,74 @@
+FormKey: 0C9DAB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FellglowKeep03
+Version2: 8
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fellglow Keep Ritual Chamber
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#001F1F1F'
+  DirectionalColor: '#003F4749'
+  FogNearColor: '#00767A54'
+  FogNear: 750
+  FogFar: 12000
+  DirectionalRotationZ: 90
+  FogClipDistance: 12000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00221F20'
+    DirectionalXMinus: '#001B1F1D'
+    DirectionalYPlus: '#001F201F'
+    DirectionalYMinus: '#001F1D1F'
+    DirectionalZPlus: '#000E0E0E'
+    DirectionalZMinus: '#002F2F2F'
+    Specular: '#00877747'
+    Scale: 1
+  FogFarColor: '#00877747'
+  FogMax: 1
+  LightFadeBegin: 4000
+  LightFadeEnd: 5000
+  Inherits:
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogMax
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019177:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC15:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C9E1D:Skyrim.esm
+  Base: 02065D:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019177:Skyrim.esm
+  Placement:
+    Position: 188.34427, 1032.069, -0.98157847
+    Rotation: 0, -0, 1.4524095
+- MutagenObjectType: PlacedObject
+  FormKey: AD3AC9:Requiem.esp
+  Base: 0E0CD6:Skyrim.esm
+  Placement:
+    Position: 152.29388, 1121.6108, 64.62292
+- MutagenObjectType: PlacedObject
+  FormKey: 076F91:Requiem.esp
+  Base: 076F90:Requiem.esp
+  Placement:
+    Position: 124.83175, 1126.263, 62.06307
+    Rotation: 1.5732619, 0.11259882, 1.5690892
+MajorFlags:
+- 0x40000

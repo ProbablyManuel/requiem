@@ -1,0 +1,59 @@
+FormKey: 0AA155:Skyrim.esm
+EditorID: EnchAbsorbHealthFFContact
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fEffectDurationMax
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABEFC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF17:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0ABEFB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Absorb Health
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- ADDDF7:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 40
+ResistValue: ResistMagic
+TaperWeight: 1
+HitShader: 0ABEFF:Skyrim.esm
+EnchantShader: 0D7661:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: Absorb
+Projectile: 0ABEFD:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 0ABF01:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Absorbs <mag> health, but doesn't affect constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp

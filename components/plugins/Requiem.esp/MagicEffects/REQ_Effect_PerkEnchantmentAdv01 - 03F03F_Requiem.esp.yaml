@@ -1,0 +1,44 @@
+FormKey: 03F03F:Requiem.esp
+EditorID: REQ_Effect_PerkEnchantmentAdv01
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ArcaneExperimentation
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulGemGrandFilled
+      Object: 02E4FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon3
+      Object: 03EACF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon1
+      Object: 03EAC9:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon5
+      Object: 03EAD2:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IronDagger
+      Object: 01397E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon4
+      Object: 03EAD0:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon2
+      Object: 03EACD:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Arcane Experimentation
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The caster experiments with arcane energies to create new enchanted objects that can be disenchanted afterwards. Three grand filled soul gems and five iron daggers are needed for that.

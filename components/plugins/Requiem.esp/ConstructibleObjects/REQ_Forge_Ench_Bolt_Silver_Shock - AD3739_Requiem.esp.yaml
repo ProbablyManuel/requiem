@@ -1,0 +1,23 @@
+FormKey: AD3739:Requiem.esp
+EditorID: REQ_Forge_Ench_Bolt_Silver_Shock
+Items:
+- Item:
+    Item: 03AD60:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0FAB12:Requiem.esp
+    Count: 30
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: AD371E:Requiem.esp
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 30

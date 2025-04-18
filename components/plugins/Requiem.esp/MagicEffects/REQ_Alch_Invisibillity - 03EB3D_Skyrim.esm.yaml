@@ -1,0 +1,31 @@
+FormKey: 03EB3D:Skyrim.esm
+EditorID: REQ_Alch_Invisibillity
+Name:
+  TargetLanguage: English
+  Value: Invisibility
+MenuDisplayObject: 109AC3:Skyrim.esm
+Keywords:
+- 01EA6F:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+- 0F8A4F:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 50
+HitShader: 02DF92:Skyrim.esm
+MinimumSkillLevel: 75
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Invisibility
+  Type: Invisibility
+CastType: FireAndForget
+HitEffectArt: 0339C8:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You become invisibile for <dur> seconds.

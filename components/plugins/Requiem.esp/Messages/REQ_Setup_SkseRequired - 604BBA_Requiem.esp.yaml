@@ -1,0 +1,16 @@
+FormKey: 604BBA:Requiem.esp
+EditorID: REQ_Setup_SkseRequired
+Description:
+  TargetLanguage: English
+  Value: >-
+    The Skyrim Script Extender is missing, or it's not installed correctly. Requiem requires a proper installation of the latest SKSE version to run.
+
+
+    Since your current game would become unplayable, we will send you back to the main menu. Please exit, install SKSE and restart Skyrim.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: SKSE is required

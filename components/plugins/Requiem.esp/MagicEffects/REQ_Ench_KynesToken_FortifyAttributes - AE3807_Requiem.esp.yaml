@@ -1,0 +1,25 @@
+FormKey: AE3807:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyAttributes
+Name:
+  TargetLanguage: English
+  Value: Fortify Attributes
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Defeating Alduin in Sovngarde pleases Kyne. Health, magicka, and stamina increases by <mag>.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 046EF2:Skyrim.esm
+    SecondUnusedIntParameter: 150
+  ComparisonValue: 1

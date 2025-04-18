@@ -1,0 +1,35 @@
+FormKey: 339517:Requiem.esp
+EditorID: REQ_DEPRECATED_Ability_RestoreHealth
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 1
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Restores <mag> health per second.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    Spell: 00283B:Dawnguard.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    Spell: 0ED0A8:Skyrim.esm

@@ -1,0 +1,190 @@
+FormKey: 02B014:Dragonborn.esm
+EditorID: DLC2DwarvenBallistaRace
+Name:
+  TargetLanguage: English
+  Value: Dwarven Ballista
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- AE359D:Requiem.esp
+- AE3AFD:Requiem.esp
+Skin: 02B017:Dragonborn.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 01397A:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 0F23C5:Skyrim.esm
+- 103AD2:Skyrim.esm
+- 2EA062:Requiem.esp
+- 4F6D1E:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: Illusion
+  Boost: 95
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- DontShowBloodDecal
+- NoKnockdowns
+- DontShowWeaponBlood
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 400
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10000
+BaseCarryWeight: 200
+BaseMass: 4
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 1
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 50
+UnarmedReach: 128
+BodyBipedObject: Body
+AimAngleTolerance: 23.45
+AngularAccelerationRate: 0.12
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\DwarvenBallistaCenturion\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\DwarvenSphereCenturion\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F1D0:Skyrim.esm
+  Female: 01F1D0:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.75
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 1
+    RecoveryTime: 1.5
+    StaminaMult: 0.01
+  AttackEvent: attackStartForwardPowerChop
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartChop
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartStab
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartBackSlash
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.75
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 0.75
+    RecoveryTime: 1.5
+    StaminaMult: 0.01
+  AttackEvent: attackStartForwardPowerStab
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartSlash
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 02B018:Dragonborn.esm
+BehaviorGraph:
+  Male:
+    File: Actors\DLC02\DwarvenBallistaCenturion\BallistaCenturion.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\DwarvenSphereCenturion\SphereCenturion.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 09644C:Skyrim.esm
+ImpactDataSet: 092C92:Skyrim.esm
+OpenLootSound: 0F69C6:Skyrim.esm
+CloseLootSound: 0F69C7:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+- Key: Shield
+  Value: FX
+EquipmentFlags:
+- Bow
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+BaseMovementDefaultWalk: 02B015:Dragonborn.esm
+BaseMovementDefaultRun: 02B015:Dragonborn.esm

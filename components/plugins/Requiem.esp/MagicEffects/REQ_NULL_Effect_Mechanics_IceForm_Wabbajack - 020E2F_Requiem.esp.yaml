@@ -1,0 +1,59 @@
+FormKey: 020E2F:Requiem.esp
+EditorID: REQ_NULL_Effect_Mechanics_IceForm_Wabbajack
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MagicDispelSpellOnHitScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spell02
+      Object: 09CAF1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spell03
+      Object: 09CAF2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spell01
+      Object: 09CAF0:Skyrim.esm
+  - Name: magiceffectshadersonendscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX01
+      Object: 0EA519:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX02
+      Object: 0EA51A:Skyrim.esm
+  - Name: VoiceIceFormScript
+Name:
+  TargetLanguage: English
+  Value: Ice Form
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- FXPersist
+BaseCost: 1
+HitShader: 0DC20E:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+Projectile: 0DEDCA:Skyrim.esm
+CastType: FireAndForget
+ImpactData: 049B64:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 0DEDCB:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 07F8E7:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm

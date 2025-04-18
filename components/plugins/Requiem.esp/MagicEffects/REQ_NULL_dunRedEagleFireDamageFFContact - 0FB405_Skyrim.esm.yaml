@@ -1,0 +1,33 @@
+FormKey: 0FB405:Skyrim.esm
+EditorID: REQ_NULL_dunRedEagleFireDamageFFContact
+Name:
+  TargetLanguage: English
+  Value: Red Eagle Fire Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.2
+ResistValue: ResistFire
+TaperWeight: 0.2
+HitShader: 01B212:Skyrim.esm
+EnchantShader: 05D608:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> fire damage upon hit.

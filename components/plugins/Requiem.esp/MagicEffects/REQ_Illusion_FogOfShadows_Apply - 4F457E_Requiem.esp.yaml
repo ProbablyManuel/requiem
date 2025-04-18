@@ -1,0 +1,58 @@
+FormKey: 4F457E:Requiem.esp
+EditorID: REQ_Illusion_FogOfShadows_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_IllusionBreak
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindEffect
+      Object: 4F4582:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Skill_ScalingPerks
+      Objects:
+      - Name: ''
+        Object: 0F2CA9:Skyrim.esm
+      - Name: ''
+        Object: 0C44C3:Skyrim.esm
+      - Name: ''
+        Object: 0C44C4:Skyrim.esm
+      - Name: ''
+        Object: 0C44C5:Skyrim.esm
+      - Name: ''
+        Object: 0581FD:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 52D477:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPRate
+      Data: 4
+Name:
+  TargetLanguage: English
+  Value: Apply
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- NoHitEvent
+- PowerAffectsMagnitude
+BaseCost: 4.1
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

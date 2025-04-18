@@ -1,0 +1,38 @@
+FormKey: 036A46:Skyrim.esm
+EditorID: REQ_Cloth_Greybeard_Feet
+ObjectBounds:
+  First: -9, -7, 0
+  Second: 13, 13, 16
+Name:
+  TargetLanguage: English
+  Value: Greybeard Boots
+ObjectEffect: AD3AE0:Requiem.esp
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\GraybeardRobe\GreybeardBootsGO.nif
+      Data: 0x0200000002000000000000008A76EDD2646473008A60CBBDE17B23EF646473008A60CBBD
+  Female:
+    Model:
+      File: Clothes\GraybeardRobe\GreybeardBootsGO.nif
+      Data: 0x0200000002000000000000008A76EDD2646473008A60CBBDE17B23EF646473008A60CBBD
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 10CD12:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 035F79:Skyrim.esm
+Value: 200
+Weight: 1

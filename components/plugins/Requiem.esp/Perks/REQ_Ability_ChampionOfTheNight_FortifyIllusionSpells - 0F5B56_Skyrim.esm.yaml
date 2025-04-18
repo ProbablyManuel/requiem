@@ -1,0 +1,20 @@
+FormKey: 0F5B56:Skyrim.esm
+EditorID: REQ_Ability_ChampionOfTheNight_FortifyIllusionSpells
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Illusion
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.25

@@ -1,0 +1,170 @@
+FormKey: 427138:Requiem.esp
+EditorID: REQ_Trait_Follower_CharismaBonus
+Name:
+  TargetLanguage: English
+  Value: Leadership
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 0008C4:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000907:Requiem.esp
+  Data:
+    Magnitude: 75
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000906:Requiem.esp
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000904:Requiem.esp
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000905:Requiem.esp
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000910:Requiem.esp
+  Data:
+    Magnitude: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000911:Requiem.esp
+  Data:
+    Magnitude: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000912:Requiem.esp
+  Data:
+    Magnitude: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000913:Requiem.esp
+  Data:
+    Magnitude: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000914:Requiem.esp
+  Data:
+    Magnitude: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 0008BD:Requiem.esp
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 0008BE:Requiem.esp
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000940:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 000941:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Perk: 427139:Requiem.esp
+    ComparisonValue: 1

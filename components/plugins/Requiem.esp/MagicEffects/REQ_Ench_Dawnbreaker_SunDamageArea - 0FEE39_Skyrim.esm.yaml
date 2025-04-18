@@ -1,0 +1,46 @@
+FormKey: 0FEE39:Skyrim.esm
+EditorID: REQ_Ench_Dawnbreaker_SunDamageArea
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magiceffectshaderapply
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bUseDuration
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX
+      Object: 019C9E:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Sun Damage
+MenuDisplayObject: 018F02:Dawnguard.esm
+Keywords:
+- ADDDF6:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+HitShader: 019C9D:Dawnguard.esm
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Burns for undead for <mag> sun damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

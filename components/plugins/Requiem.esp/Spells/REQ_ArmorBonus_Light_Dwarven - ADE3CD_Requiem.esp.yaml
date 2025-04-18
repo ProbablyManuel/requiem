@@ -1,0 +1,48 @@
+FormKey: ADE3CD:Requiem.esp
+EditorID: REQ_ArmorBonus_Light_Dwarven
+Name:
+  TargetLanguage: English
+  Value: Dwarven Light Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: ADE3CE:Requiem.esp
+  Data:
+    Magnitude: 4
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: ADDD6F:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: ADE3CE:Requiem.esp
+  Data:
+    Magnitude: 8
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: ADDD6F:Requiem.esp
+    ComparisonValue: 2
+- BaseEffect: ADE3CE:Requiem.esp
+  Data:
+    Magnitude: 12
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: ADDD6F:Requiem.esp
+    ComparisonValue: 3
+- BaseEffect: ADE3CE:Requiem.esp
+  Data:
+    Magnitude: 16
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: ADDD6F:Requiem.esp
+    ComparisonValue: 4

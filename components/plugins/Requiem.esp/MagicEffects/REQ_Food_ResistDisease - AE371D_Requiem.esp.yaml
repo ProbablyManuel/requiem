@@ -1,0 +1,26 @@
+FormKey: AE371D:Requiem.esp
+EditorID: REQ_Food_ResistDisease
+Name:
+  TargetLanguage: English
+  Value: Resist Disease
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD38ED:Requiem.esp
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistDisease
+  Association: AD38ED:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You are <mag>% less likely to contract diseases for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

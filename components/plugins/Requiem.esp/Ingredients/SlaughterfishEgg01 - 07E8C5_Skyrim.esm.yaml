@@ -1,0 +1,38 @@
+FormKey: 07E8C5:Skyrim.esm
+EditorID: SlaughterfishEgg01
+ObjectBounds:
+  First: -2, -3, -2
+  Second: 2, 3, 2
+Name:
+  TargetLanguage: English
+  Value: Slaughterfish Egg
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: Plants\SlaughterfishEgg01.nif
+  Data: 0x020000000200000000000000AE94D5C064647300134C1EFA2B0BCF5064647300134C1EFA
+PickUpSound: 0BFB1F:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 3
+Weight: 0.2
+IngredientValue: 3
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB20:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 090041:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 03EAF9:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

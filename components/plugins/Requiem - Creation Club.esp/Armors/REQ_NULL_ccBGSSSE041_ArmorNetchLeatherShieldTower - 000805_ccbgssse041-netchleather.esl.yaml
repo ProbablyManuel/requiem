@@ -1,0 +1,45 @@
+FormKey: 000805:ccbgssse041-netchleather.esl
+MajorRecordFlagsRaw: 64
+EditorID: REQ_NULL_ccBGSSSE041_ArmorNetchLeatherShieldTower
+SkyrimMajorRecordFlags:
+- 0x40
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 1010
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00094A:ccbgssse041-netchleather.esl
+Name:
+  TargetLanguage: English
+  Value: Netch Leather Tower Shield
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE041\Armor\NetchLeather\NetchLeatherTowerShield.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Shield
+  ActsLike44: True
+EquipmentType: 0141E8:Skyrim.esm
+BashImpactDataSet: 0183FE:Skyrim.esm
+AlternateBlockMaterial: 016978:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBDB:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0965B2:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00082B:ccbgssse041-netchleather.esl
+Value: 200
+Weight: 8
+ArmorRating: 24
+MajorFlags:
+- Shield

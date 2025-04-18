@@ -1,0 +1,83 @@
+FormKey: 020430:Skyrim.esm
+Version2: 12
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__00020430
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGold
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDBSideContract07
+      Object: 01EA63:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DarkBrotherhoodQuest
+      Object: 01EA5C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LvlQuestReward01Small
+      Object: 0C0405:Skyrim.esm
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__00020430
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__00020430
+      FragmentName: Fragment_1
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__00020430
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- Emotion: Surprise
+  EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Ah! Well done! Well done!
+  ScriptNotes: ''
+  Edits: ''
+- Emotion: Happy
+  EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Those caravaners can be an elusive bunch. Takes a fair bit of stalking to take one down. But then, that's half the fun, isn't it?
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 3
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Here's your payment. Well earned, indeed.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 0B5E20:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 01EA63:Skyrim.esm
+  ComparisonValue: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01C3AB:Skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Ma'randru-jo is dead.

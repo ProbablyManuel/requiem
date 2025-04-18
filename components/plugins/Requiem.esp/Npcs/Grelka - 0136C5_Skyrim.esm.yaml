@@ -1,0 +1,216 @@
+FormKey: 0136C5:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Grelka
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrainerGoldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrainerType
+      Data: 2
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 102E0C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 10
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 019809:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02816B:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028186:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 07F6BE:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0A2519:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0A31C9:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A52:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AE4:Skyrim.esm
+Race: 013746:Skyrim.esm
+Items:
+- Item:
+    Item: 017177:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0B8F35:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D1:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 04E0B4:Skyrim.esm
+- 068B3C:Skyrim.esm
+- 068B42:Skyrim.esm
+- 02E115:Skyrim.esm
+Class: 0E3A61:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Grelka
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 19
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 14
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 28
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 23
+  - Key: Pickpocket
+    Value: 14
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 10
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 19
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 138
+  Magicka: 98
+  Stamina: 109
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 051172:Skyrim.esm
+- 07291B:Skyrim.esm
+- 0E4DA2:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0433:Skyrim.esm
+CombatStyle: 068848:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 057A2D:Skyrim.esm
+CrimeFaction: 02816B:Skyrim.esm
+HeadTexture: 0EAFA5:Skyrim.esm
+TextureLighting: '#00CDCDCC'
+FaceMorph:
+  NoseLongVsShort: -0.1
+  NoseUpVsDown: -0.4
+  JawUpVsDown: 0.5
+  JawNarrowVsWide: 1
+  CheeksUpVsDown: 0.8
+  CheeksForwardVsBack: 0.6
+  EyesUpVsDown: -1
+  EyesInVsOut: -0.7
+  BrowsUpVsDown: -0.1
+  BrowsInVsOut: -1
+  LipsUpVsDown: -0.4
+  LipsInVsOut: -0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 4
+  Unknown: 4294967295
+  Eyes: 14
+  Mouth: 15
+TintLayers:
+- Index: 24
+  Color: '#00CECDCC'
+  InterpolationValue: 1
+  Preset: 602
+- Index: 26
+  Color: '#000F0440'
+  InterpolationValue: 0.52
+  Preset: 616
+- Index: 27
+  Color: '#00212B52'
+  InterpolationValue: 0.34
+  Preset: 625
+- Index: 31
+  Color: '#00070C3D'
+  InterpolationValue: 0.56
+  Preset: 660
+MajorFlags:
+- 0x40000

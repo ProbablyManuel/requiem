@@ -1,0 +1,335 @@
+FormKey: 041F91:Skyrim.esm
+EditorID: FreeformRiften11
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_FreeformRiften11_00041F91
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11MarkAlias01
+      Object: 041F91:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pHReward
+      Object: 0A44CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11MarkAlias02
+      Object: 041F91:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11MarkAlias03
+      Object: 041F91:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pSReward
+      Object: 049313:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pMarkCount
+      Object: 041F96:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pThaneCount
+      Object: 065BE0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11IndarynAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11HaelgaAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_USKPMarksContainer
+      Object: 041F91:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11SvanaAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFRTQS
+      Object: 065BDF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11BolliAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11HofgrirAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 4
+  FileName: QF_FreeformRiften11_00041F91
+  Fragments:
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_4
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_12
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_0
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_1
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_8
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_5
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_3
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_10
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften11_00041F91
+    FragmentName: Fragment_6
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 041F91:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+  - Property:
+      Name: ''
+      Object: 041F91:Skyrim.esm
+      Alias: 1
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+  - Property:
+      Name: ''
+      Object: 041F91:Skyrim.esm
+      Alias: 2
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+  - Property:
+      Name: ''
+      Object: 041F91:Skyrim.esm
+      Alias: 3
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+  - Property:
+      Name: ''
+      Object: 041F91:Skyrim.esm
+      Alias: 4
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+  - Property:
+      Name: ''
+      Object: 041F91:Skyrim.esm
+      Alias: 5
+    Scripts:
+    - Name: FFRiften11MarkScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: pStage
+        Data: 30
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pFFRiften11Quest
+        Object: 041F91:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 041F91:Skyrim.esm
+      Alias: 6
+    Scripts:
+    - Name: FFRiften11MarkScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: pStage
+        Data: 40
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pFFRiften11Quest
+        Object: 041F91:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 041F91:Skyrim.esm
+      Alias: 7
+    Scripts:
+    - Name: FFRiften11MarkScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: pStage
+        Data: 50
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pFFRiften11Quest
+        Object: 041F91:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Caught Red Handed
+Flags:
+- StartGameEnabled
+- 0x10
+Priority: 40
+QuestFormVersion: 65
+Type: Misc
+Filter: Dialogue\The Rift\Riften\
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 30
+  LogEntries:
+  - Flags: []
+- Index: 40
+  LogEntries:
+  - Flags: []
+- Index: 50
+  LogEntries:
+  - Flags: []
+- Index: 60
+  LogEntries:
+  - Flags: []
+- Index: 70
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags: []
+- Index: 250
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Obtain a Mark of Dibella from Bolli, a Riften fisherman
+  Targets:
+  - AliasID: 2
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Obtain a Mark of Dibella from Hofgrir, owner of the Riften Stables
+  Targets:
+  - AliasID: 4
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Obtain a Mark of Dibella from Indaryn, who runs the operations of Black-Briar Meadery
+  Targets:
+  - AliasID: 3
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Confront Haelga with the Marks of Dibella you've collected around Riften
+  Targets:
+  - AliasID: 1
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Speak to Svana
+  Targets:
+  - {}
+NextAliasID: 11
+Aliases:
+- Name: FFRiften11SvanaAlias
+  Flags:
+  - ReservesLocationOrReference
+  UniqueActor: 01337C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 1
+  Name: FFRiften11HaelgaAlias
+  Flags: []
+  UniqueActor: 01335F:Skyrim.esm
+  VoiceTypes: Null
+- ID: 2
+  Name: FFRiften11BolliAlias
+  Flags: []
+  UniqueActor: 01334E:Skyrim.esm
+  VoiceTypes: Null
+- ID: 3
+  Name: FFRiften11IndarynAlias
+  Flags: []
+  UniqueActor: 013370:Skyrim.esm
+  VoiceTypes: Null
+- ID: 4
+  Name: FFRiften11HofgrirAlias
+  Flags: []
+  UniqueActor: 013351:Skyrim.esm
+  VoiceTypes: Null
+- ID: 10
+  Name: USKPMarksContainer
+  Flags: []
+  ForcedReference: 008B6F:unofficial skyrim special edition patch.esp
+  VoiceTypes: Null
+- ID: 5
+  Name: FFRiften11MarkAlias01
+  Flags:
+  - QuestObject
+  CreateReferenceToObject:
+    Object: 041F95:Skyrim.esm
+    AliasID: 10
+    Create: In
+  VoiceTypes: Null
+- ID: 6
+  Name: FFRiften11MarkAlias02
+  Flags:
+  - QuestObject
+  CreateReferenceToObject:
+    Object: 041F95:Skyrim.esm
+    AliasID: 10
+    Create: In
+  VoiceTypes: Null
+- ID: 7
+  Name: FFRiften11MarkAlias03
+  Flags:
+  - QuestObject
+  CreateReferenceToObject:
+    Object: 041F95:Skyrim.esm
+    AliasID: 10
+    Create: In
+  VoiceTypes: Null

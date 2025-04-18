@@ -1,0 +1,60 @@
+FormKey: 015231:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PinemoonCave01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Pinemoon Cave
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00162729'
+  DirectionalColor: '#001C7079'
+  FogNearColor: '#0046C2FF'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0018272A'
+    DirectionalXMinus: '#00132727'
+    DirectionalYPlus: '#00162829'
+    DirectionalYMinus: '#00162529'
+    DirectionalZPlus: '#000A1212'
+    DirectionalZMinus: '#00213B3F'
+    Specular: '#001A86B5'
+    Scale: 1
+  FogFarColor: '#001A86B5'
+  FogMax: 0.8
+  Inherits:
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - LightFadeDistances
+LightingTemplate: 01952F:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019288:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC50:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A28E6:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C89C5:Skyrim.esm
+  Version2: 1
+  Base: 020662:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019288:Skyrim.esm
+  Placement:
+    Position: 1163.7325, 3094.1897, -361.51855
+    Rotation: -0.050758507, 0.023420405, 5.6082177
+MajorFlags:
+- 0x40000

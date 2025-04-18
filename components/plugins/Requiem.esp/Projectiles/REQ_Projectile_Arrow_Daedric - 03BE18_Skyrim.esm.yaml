@@ -1,0 +1,24 @@
+FormKey: 03BE18:Skyrim.esm
+EditorID: REQ_Projectile_Arrow_Daedric
+ObjectBounds:
+  First: -4, -299, -9
+  Second: 4, 0, 9
+Name:
+  TargetLanguage: English
+  Value: Daedric Arrow
+Model:
+  File: Weapons\Daedric\DaedricArrowProjectile.nif
+  Data: 0x0200000002000000010000001FFA61EC646473005E9AFF4239F41B07646473005E9AFF4263000000
+Flags:
+- CanBePickedUp
+Type: Arrow
+Gravity: 0.65
+Speed: 3600
+Range: 60000
+Sound: 03F2B4:Skyrim.esm
+FadeDuration: 5
+ImpactForce: 1
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

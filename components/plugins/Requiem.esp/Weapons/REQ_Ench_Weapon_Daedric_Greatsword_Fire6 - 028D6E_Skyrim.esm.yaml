@@ -1,0 +1,70 @@
+FormKey: 028D6E:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Daedric_Greatsword_Fire6
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_CursedItem
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeDaedra
+      Object: 013797:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: REQ_KW_CursedItem
+      Object: 6D7249:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurseOfAgony
+      Object: 09E9C3:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myItem
+      Object: 028D6E:Skyrim.esm
+ObjectBounds:
+  First: -8, -24, -2
+  Second: 10, 94, 2
+Name:
+  TargetLanguage: English
+  Value: Daedric Greatsword of the Inferno
+Model:
+  File: Weapons\Daedric\DaedricGreatSword.nif
+  Data: 0x02000000090000000000000033168C0764647300A0B8630503D8C24064647300A0B86305D63BC1866464730038973CEAFBC7861364647300582C55334FE0756464647300A0B863052ED3B3AE646473005E9AFF423529F483646473005E9AFF42F63890AC64647300262C333B8F78FD1A646473005E9AFF42
+ObjectEffect: 045C35:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 097786:Skyrim.esm
+Keywords:
+- 01E71F:Skyrim.esm
+- 06D931:Skyrim.esm
+- 08F958:Skyrim.esm
+- 6D7249:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0949D5:Skyrim.esm
+FirstPersonModel: 092505:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 03C8A9:Skyrim.esm
+UnequipSound: 03C8AA:Skyrim.esm
+BasicStats:
+  Value: 9000
+  Weight: 24
+  Damage: 24
+Data:
+  AnimationType: TwoHandSword
+  Unused: 0x000000
+  Speed: 0.75
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1067869798
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.1
+Critical:
+  Damage: 12
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud

@@ -1,0 +1,39 @@
+FormKey: AD3998:Requiem.esp
+EditorID: REQ_OneHanded_DaggerFocus3
+Name:
+  TargetLanguage: English
+  Value: Dagger Focus
+Description:
+  TargetLanguage: English
+  Value: You have mastered the deadly art of the dagger.<br>[100% irresistible sneak attack damage, +30% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: AD3999:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 5
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E713:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 2
+- MutagenObjectType: PerkAbilityEffect
+  Ability: AD399B:Requiem.esp

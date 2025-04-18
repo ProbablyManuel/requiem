@@ -1,0 +1,52 @@
+FormKey: 051B17:Skyrim.esm
+EditorID: REQ_Evasion_CombatReflexes
+Name:
+  TargetLanguage: English
+  Value: Combat Reflexes
+Description:
+  TargetLanguage: English
+  Value: "You've gained the ability to act faster in combat, though doing so will quickly exhaust you.<br>[Lesser power: Slow time by 50% for 30 seconds, drains 5 stamina per second]"
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 051B1B:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 18F5A8:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: LightArmor
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 50
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        RunOnTypeIndex: 0
+        ActorValue: LightArmor
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.25
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 07CB8A:Requiem.esp

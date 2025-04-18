@@ -1,0 +1,29 @@
+FormKey: AD3A59:Requiem.esp
+EditorID: REQ_HelpMenu_AmmoWeight
+Description:
+  TargetLanguage: English
+  Value: >-
+    Arrows and bolts have a weight in Requiem, although it is not shown on the item card in the inventory. Instead the total weight of your ammunition items is shown as the weight of the misc item "quiver" in your inventory.
+
+
+    Ammunition is separated into four weight tiers based on the material:
+
+    Light (0.05 weight units): Elven, Glass
+
+    Medium (0.1 weight units): Iron, Steel
+
+    Heavy (0.2 weight units): Dwarven, Orcish
+
+    Massive (0.3 weight units): Ebony, Daedric, Dragonbone
+
+
+    Ammunition types added by third party mods are treated as medium weight ammo in the absence of a dedicated compatibility patch. Some special ammunition types like bound arrows are weightless.
+
+
+    See also: Gold Weight
+Name:
+  TargetLanguage: English
+  Value: '[Requiem] Ammunition Weight'
+INAM: 0x00000000
+Flags:
+- MessageBox

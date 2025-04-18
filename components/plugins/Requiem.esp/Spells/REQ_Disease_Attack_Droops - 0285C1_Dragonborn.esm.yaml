@@ -1,0 +1,19 @@
+FormKey: 0285C1:Dragonborn.esm
+EditorID: REQ_Disease_Attack_Droops
+Name:
+  TargetLanguage: English
+  Value: Droops
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Droops is a serious common disease that affects a victim's strength and ability to use a weapon. Symptoms include weak and flaccid muscle tissues.
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+Type: Disease
+ChargeTime: 0.5
+TargetType: Touch
+Effects:
+- BaseEffect: 0285C0:Dragonborn.esm
+  Data:
+    Magnitude: 40

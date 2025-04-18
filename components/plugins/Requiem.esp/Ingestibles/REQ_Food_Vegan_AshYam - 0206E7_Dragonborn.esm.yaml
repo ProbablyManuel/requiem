@@ -1,0 +1,26 @@
+FormKey: 0206E7:Dragonborn.esm
+EditorID: REQ_Food_Vegan_AshYam
+ObjectBounds:
+  First: -12, -12, -11
+  Second: 12, 12, 11
+Name:
+  TargetLanguage: English
+  Value: Ash Yam
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: DLC02\Plants\DLC2AshYam01.nif
+  Data: 0x020000000000000000000000
+Weight: 0.1
+Value: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1200
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

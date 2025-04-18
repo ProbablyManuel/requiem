@@ -1,0 +1,129 @@
+FormKey: 09F106:Requiem.esp
+EditorID: REQ_Effect_TrueYieldFear04
+Name:
+  TargetLanguage: English
+  Value: True Yield Feara
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: Demoralize
+Projectile: 012FDC:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsGuardConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 039F26:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 043599:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 043AB7:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 0215D3:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 058B3E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 02584B:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 0B3292:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 0AA0A4:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 04359E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 02B0E5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: 014217:Dawnguard.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013747:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013746:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUniqueConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Health
+  ComparisonValue: 60
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+    RunOnTypeIndex: 0
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 013794:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 0D205E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+    RunOnTypeIndex: 0

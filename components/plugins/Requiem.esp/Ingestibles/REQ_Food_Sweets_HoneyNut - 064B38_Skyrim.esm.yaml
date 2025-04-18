@@ -1,0 +1,26 @@
+FormKey: 064B38:Skyrim.esm
+EditorID: REQ_Food_Sweets_HoneyNut
+ObjectBounds:
+  First: -5, -17, -4
+  Second: 4, 14, 5
+Name:
+  TargetLanguage: English
+  Value: Honey Nut Treat
+Keywords:
+- 08CDEA:Skyrim.esm
+- 0A248C:Skyrim.esm
+Model:
+  File: Clutter\Food\NuttyBread01.nif
+  Data: 0x020000000300000000000000C52706D064647300B9148236A24BAE8464647300B9148236FAE0BBA4646473007F66A5C0
+Weight: 0.1
+Value: 4
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3720:Requiem.esp
+  Data:
+    Magnitude: 50
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

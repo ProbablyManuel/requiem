@@ -1,0 +1,84 @@
+FormKey: 013A7C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DragonBridgeFourShieldsTavern
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Four Shields Tavern
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020008:Skyrim.esm
+Owner: 0F49BC:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5856:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 0622AB:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 000826:ccbgssse058-ba_steel.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 00081B:ccbgssse058-ba_steel.esl
+  Owner: 000007:Skyrim.esm
+  LocationReference: 020008:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 1360.4924, 0.291397, 78.9995
+- MutagenObjectType: PlacedObject
+  FormKey: 00082D:ccbgssse058-ba_steel.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 000825:ccbgssse058-ba_steel.esl
+  Owner: 000007:Skyrim.esm
+  LocationReference: 020008:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 2493.312, 233.4333, 63.700554
+MajorFlags:
+- 0x40000

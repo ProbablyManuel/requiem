@@ -1,0 +1,13 @@
+FormKey: 0D5F1C:Skyrim.esm
+EditorID: REQ_Trait_SummonBonus
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModCommandedActorLimit
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 2

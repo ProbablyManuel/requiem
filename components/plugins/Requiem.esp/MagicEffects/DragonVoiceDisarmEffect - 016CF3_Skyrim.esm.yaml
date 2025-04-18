@@ -1,0 +1,44 @@
+FormKey: 016CF3:Skyrim.esm
+EditorID: DragonVoiceDisarmEffect
+Name:
+  TargetLanguage: English
+  Value: Disarm 3
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- FXPersist
+- PowerAffectsMagnitude
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Disarm
+Projectile: 016CF9:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+HitEffectArt: 0829EF:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Stamina
+  ComparisonValue: 600
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 50

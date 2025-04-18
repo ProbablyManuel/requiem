@@ -1,0 +1,54 @@
+FormKey: 0B62F2:Skyrim.esm
+EditorID: REQ_Restoration4_HealingHands_RestoreStaminaArea
+Name:
+  TargetLanguage: English
+  Value: Restore Stamina Area
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+MagicSkill: Restoration
+HitShader: 012FD9:Skyrim.esm
+SpellmakingArea: 15
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+Projectile: 012FDC:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 01C859:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 44BE5E:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    RunOnType: Target
+    Perk: 0581F9:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetShouldAttackConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData

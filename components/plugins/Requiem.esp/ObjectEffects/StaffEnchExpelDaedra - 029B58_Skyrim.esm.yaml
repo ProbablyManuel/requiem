@@ -1,0 +1,24 @@
+FormKey: 029B58:Skyrim.esm
+EditorID: StaffEnchExpelDaedra
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Expel Daedra
+EnchantmentCost: 200
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 200
+TargetType: TargetActor
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 06F951:Skyrim.esm
+  Data:
+    Magnitude: 35
+- BaseEffect: 06D22D:Skyrim.esm
+  Data:
+    Magnitude: 100
+- BaseEffect: 0173DC:Skyrim.esm
+  Data:
+    Magnitude: 35

@@ -1,0 +1,26 @@
+FormKey: 064B3D:Skyrim.esm
+EditorID: REQ_Food_Sweets_SweetRoll
+ObjectBounds:
+  First: -9, -9, 0
+  Second: 9, 9, 15
+Name:
+  TargetLanguage: English
+  Value: Sweet Roll
+Keywords:
+- 08CDEA:Skyrim.esm
+- 0A248C:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SweetRoll01.nif
+  Data: 0x0200000002000000000000007F34A00664647300604DDD5CE89A3A1E64647300604DDD5C
+Weight: 0.1
+Value: 4
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3720:Requiem.esp
+  Data:
+    Magnitude: 50
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

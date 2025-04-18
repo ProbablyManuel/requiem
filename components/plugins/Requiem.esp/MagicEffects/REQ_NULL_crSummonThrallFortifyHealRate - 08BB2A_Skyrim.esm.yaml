@@ -1,0 +1,26 @@
+FormKey: 08BB2A:Skyrim.esm
+EditorID: REQ_NULL_crSummonThrallFortifyHealRate
+Name:
+  TargetLanguage: English
+  Value: Fortified Healing
+Keywords:
+- 0C5C11:Skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+MagicSkill: Conjuration
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: HealRate
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

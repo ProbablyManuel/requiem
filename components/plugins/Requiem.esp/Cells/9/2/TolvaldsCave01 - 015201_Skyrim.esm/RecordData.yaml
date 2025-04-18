@@ -1,0 +1,85 @@
+FormKey: 015201:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: TolvaldsCave01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Tolvald's Cave
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#002F281C'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#002F3C75'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0033281D'
+    DirectionalXMinus: '#002A281A'
+    DirectionalYPlus: '#002F291C'
+    DirectionalYMinus: '#002F261C'
+    DirectionalZPlus: '#0016130C'
+    DirectionalZMinus: '#00473C2B'
+    Specular: '#002F3C75'
+    Scale: 1
+  FogFarColor: '#002F3C75'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 034566:Skyrim.esm
+WaterHeight: 0
+Location: 0192BC:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC80:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 041138:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192BC:Skyrim.esm
+  Placement:
+    Position: -2339.3145, 2656.3108, 94.57081
+    Rotation: 0.17987014, 0.0068731066, 3.1038098
+- MutagenObjectType: PlacedNpc
+  FormKey: 473ECC:Requiem.esp
+  Base: 37244A:Requiem.esp
+  PersistentLocation: 0192BC:Skyrim.esm
+  Placement:
+    Position: -1529.8851, -3396.435, -7.992836
+    Rotation: 0, 0, 3.3168411
+- MutagenObjectType: PlacedNpc
+  FormKey: 473ECE:Requiem.esp
+  Base: 37244A:Requiem.esp
+  PersistentLocation: 0192BC:Skyrim.esm
+  Placement:
+    Position: -1349.4633, -3513.6482, -15.966122
+    Rotation: 0, 0, 3.3168378
+- MutagenObjectType: PlacedNpc
+  FormKey: 473ECD:Requiem.esp
+  Base: 37244A:Requiem.esp
+  PersistentLocation: 0192BC:Skyrim.esm
+  Placement:
+    Position: -1557.5503, -3479.6147, -3.967323
+    Rotation: 0, 0, 3.3168378
+MajorFlags:
+- 0x40000

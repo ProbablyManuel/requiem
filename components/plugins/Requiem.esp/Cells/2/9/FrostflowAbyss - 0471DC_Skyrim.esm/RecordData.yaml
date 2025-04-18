@@ -1,0 +1,63 @@
+FormKey: 0471DC:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FrostflowAbyss
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Frostflow Abyss
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00020202'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#003A94BE'
+  FogNear: 700
+  FogFar: 7000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00314F56'
+    DirectionalXMinus: '#00284F4F'
+    DirectionalYPlus: '#002D5253'
+    DirectionalYMinus: '#002D4B53'
+    DirectionalZPlus: '#00152525'
+    DirectionalZMinus: '#00447880'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#0014282E'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 01952F:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019186:Skyrim.esm
+Water: 0CC7B7:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveIceCubeMap_e.dds
+AcousticSpace: 02B3AE:Skyrim.esm
+EncounterZone: 03EC24:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 089D4E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AD3824:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139A7:Skyrim.esm
+  Placement:
+    Position: -4137.546, 2012.2559, -1680.5306
+    Rotation: 0.1994859, 5.7134347, 5.9245915
+MajorFlags:
+- 0x40000

@@ -1,0 +1,35 @@
+FormKey: 00590B:HearthFires.esm
+EditorID: REQ_Effect_Sleep_MothersLove
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOHRestedAdoptionEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pAbilityToRemove1
+      Object: 004292:HearthFires.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: pHoursToWait
+      Data: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pAbilityToRemove2
+      Object: 002F54:HearthFires.esm
+Name:
+  TargetLanguage: English
+  Value: Mother's Love
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+DualCastScale: 1
+PerkToApply: 004295:HearthFires.esm
+CastingSoundLevel: Silent
+Sounds:
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

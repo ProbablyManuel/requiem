@@ -1,0 +1,44 @@
+FormKey: 028586:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BarrierFrostFFLocation
+Name:
+  TargetLanguage: English
+  Value: Frost Barrier
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- SnapToNavmesh
+- NoArea
+- FXPersist
+- NoDeathDispel
+BaseCost: 1.4
+MagicSkill: Destruction
+ResistValue: ResistFrost
+CastingLight: 032DAA:Skyrim.esm
+TaperWeight: 1
+HitShader: 01F03A:Skyrim.esm
+MinimumSkillLevel: 75
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 04BB46:Skyrim.esm
+CastType: FireAndForget
+TargetType: TargetLocation
+SecondActorValue: Stamina
+CastingArt: 020BF5:Skyrim.esm
+ImpactData: 08F3F6:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5E3:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Cast on the ground, it creates an area of frost that does <50> points of frost damage per second.

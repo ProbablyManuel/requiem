@@ -1,0 +1,74 @@
+FormKey: 01529F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DarklightTower01
+Version2: 1
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Darklight Tower
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#000A0A0A'
+  DirectionalColor: '#00415154'
+  FogNearColor: '#00877747'
+  FogNear: 500
+  FogFar: 4000
+  DirectionalRotationZ: 90
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000B0A0A'
+    DirectionalXMinus: '#00080A09'
+    DirectionalYPlus: '#000A0A0A'
+    DirectionalYMinus: '#000A090A'
+    DirectionalZPlus: '#00040404'
+    DirectionalZMinus: '#000F0F0F'
+    Specular: '#0014120C'
+    Scale: 0.8
+  FogFarColor: '#00877747'
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01915D:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC07:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: AD3843:Requiem.esp
+  MajorRecordFlagsRaw: 1073742848
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - 0x40000000
+  Base: AD3849:Requiem.esp
+  Placement:
+    Position: 101.30563, -92.21962, -991.92035
+    Rotation: 6.2364855, 0.0023230333, 3.4351728
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0747A4:Skyrim.esm
+  Version2: 2
+  Base: 020665:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01915D:Skyrim.esm
+  Placement:
+    Position: -1709.9131, -3719.0342, 848.8983
+    Rotation: 0, -0, 1.5831853
+MajorFlags:
+- 0x40000

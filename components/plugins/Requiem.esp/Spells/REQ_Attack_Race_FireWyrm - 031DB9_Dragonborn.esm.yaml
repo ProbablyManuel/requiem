@@ -1,0 +1,23 @@
+FormKey: 031DB9:Dragonborn.esm
+EditorID: REQ_Attack_Race_FireWyrm
+Name:
+  TargetLanguage: English
+  Value: Fire Wyrm Attack
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- 0x400000
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 050CF6:Skyrim.esm
+  Data:
+    Magnitude: 20
+- BaseEffect: 050CF6:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30

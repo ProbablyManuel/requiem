@@ -1,0 +1,26 @@
+FormKey: 10D666:Skyrim.esm
+EditorID: REQ_Food_Vegan_Gourd
+ObjectBounds:
+  First: -9, -20, -19
+  Second: 18, 20, 7
+Name:
+  TargetLanguage: English
+  Value: Gourd
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Plants\Gourd01.nif
+  Data: 0x020000000200000000000000799DF18664647300134C1EFA73A66AE764647300134C1EFA
+Weight: 0.1
+Value: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1200
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

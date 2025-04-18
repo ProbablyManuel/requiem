@@ -1,0 +1,253 @@
+FormKey: 0BA0BC:Skyrim.esm
+EditorID: WE34
+Version2: 8
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
+  - Name: QF_WE34_000BA0BC
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Thalmor3
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Thalmor1
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TravelMarker2
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TravelMarker1
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Thalmor2
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 6
+  FileName: QF_WE34_000BA0BC
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_WE34_000BA0BC
+    FragmentName: Fragment_1
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WE34_000BA0BC
+    FragmentName: Fragment_5
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 16
+    Scripts:
+    - Name: wealiasscript
+  - Property:
+      Name: ''
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 34
+    Scripts:
+    - Name: wealiasscript
+  - Property:
+      Name: ''
+      Object: 0BA0BC:Skyrim.esm
+      Alias: 35
+    Scripts:
+    - Name: wealiasscript
+Name:
+  TargetLanguage: English
+  Value: Thalmor vs Player
+Flags:
+- 0x4
+Priority: 50
+QuestFormVersion: 65
+Event: SCPT
+Filter: Wilderness Encounters\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 035D5F:Skyrim.esm
+  ComparisonValue: 190
+Stages:
+- Flags:
+  - StartUpStage
+  - KeepInstanceDataFromHereOn
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+NextAliasID: 41
+Aliases:
+- ID: 1
+  Name: TRIGGER
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: myHoldLocation
+  Flags:
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 6
+  Type: Location
+  Name: myHoldContested
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 7
+  Type: Location
+  Name: myHoldImperial
+  Flags:
+  - AllowReuseInQuest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A603:Skyrim.esm
+    ComparisonValue: 1
+- ID: 8
+  Type: Location
+  Name: myHoldSons
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 9
+  Name: TravelMarker1
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F5:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 40
+  Name: TravelMarker2
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F5:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 16
+  Name: Thalmor1
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0B5E11:Skyrim.esm
+    AliasID: 9
+    Level: VeryHard
+  Factions:
+  - 0BA0B8:Skyrim.esm
+  PackageData:
+  - 0BA0BF:Skyrim.esm
+  VoiceTypes: Null
+- ID: 34
+  Name: Thalmor2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 10516F:Skyrim.esm
+    AliasID: 9
+  Factions:
+  - 0BA0B8:Skyrim.esm
+  PackageData:
+  - 0BA0BF:Skyrim.esm
+  VoiceTypes: Null
+- ID: 35
+  Name: Thalmor3
+  Flags: []
+  CreateReferenceToObject:
+    Object: 10516E:Skyrim.esm
+    AliasID: 9
+  Factions:
+  - 0BA0B8:Skyrim.esm
+  PackageData:
+  - 0BA0BF:Skyrim.esm
+  VoiceTypes: Null
+- ID: 38
+  Name: Player
+  Flags:
+  - StoresText
+  ForcedReference: 000014:Skyrim.esm
+  Factions:
+  - 0BA0B9:Skyrim.esm
+  VoiceTypes: Null
+- ID: 39
+  Name: Letter
+  Flags:
+  - StoresText
+  - UsesStoredText
+  CreateReferenceToObject:
+    Object: 0BA0BE:Skyrim.esm
+    AliasID: 9
+  VoiceTypes: Null

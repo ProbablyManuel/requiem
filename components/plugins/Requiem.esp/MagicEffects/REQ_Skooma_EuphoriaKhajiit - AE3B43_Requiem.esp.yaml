@@ -1,0 +1,46 @@
+FormKey: AE3B43:Requiem.esp
+EditorID: REQ_Skooma_EuphoriaKhajiit
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ISM_strengthoffset
+      Data: -0.5
+    - MutagenObjectType: ScriptStringProperty
+      Name: Resistvalue
+      Data: None
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 008DA2:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Euphoria
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B41:Requiem.esp
+Flags:
+- DispelWithKeywords
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Causes progressive states of hallucinatory euphoria, lethargy and self-loathing.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013745:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 088845:Skyrim.esm
+  ComparisonValue: 1

@@ -1,0 +1,54 @@
+FormKey: 0213A0:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeCastleDour
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Castle Dour
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+Lighting:
+  AmbientColor: '#00333322'
+  DirectionalColor: '#00544841'
+  FogNearColor: '#003F5E81'
+  FogFar: 5000
+  FogClipDistance: 4200
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00383323'
+    DirectionalXMinus: '#002D3320'
+    DirectionalYPlus: '#00333522'
+    DirectionalYMinus: '#00333022'
+    DirectionalZPlus: '#0018180F'
+    DirectionalZMinus: '#004D4D34'
+    Specular: '#00325F65'
+    Scale: 1
+  FogFarColor: '#00325F65'
+  FogMax: 0.8
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+LightingTemplate: 06AB01:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 02008A:Skyrim.esm
+Owner: 0C13D6:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 0E461F:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AE3706:Requiem.esp
+  Base: AE3704:Requiem.esp
+  Placement:
+    Position: -510.1526, 722.5079, 68.1935
+    Rotation: 0, 0, 1.1999993
+- MutagenObjectType: PlacedObject
+  FormKey: AE3705:Requiem.esp
+  Base: AE3702:Requiem.esp
+  Placement:
+    Position: -510.57965, 724.01746, 65.5195
+MajorFlags:
+- 0x40000

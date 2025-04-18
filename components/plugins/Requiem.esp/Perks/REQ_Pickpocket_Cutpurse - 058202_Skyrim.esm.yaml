@@ -1,0 +1,72 @@
+FormKey: 058202:Skyrim.esm
+EditorID: REQ_Pickpocket_Cutpurse
+Name:
+  TargetLanguage: English
+  Value: Cutpurse
+Description:
+  TargetLanguage: English
+  Value: People shouldn't burden themselves with purses and keys.<br>Luckily, you now can free them of these burdens more easily.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE124:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Pickpocket
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 100
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDetectedConditionData
+        TargetNpc: 000014:Skyrim.esm
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 00000F:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPickpocketChance
+  PerkConditionTabCount: 3
+  Modification: Add
+  Value: 40
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 20
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDetectedConditionData
+        TargetNpc: 000014:Skyrim.esm
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0914EF:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPickpocketChance
+  PerkConditionTabCount: 3
+  Value: 100

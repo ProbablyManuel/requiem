@@ -1,0 +1,66 @@
+FormKey: 025F28:Requiem.esp
+EditorID: REQ_Destruction4_VenomousBlast_PoisonDamage
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ISM_strengthoffset
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_hit
+      Object: 10E3D2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 19151A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_fade
+      Object: 10E3D3:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Poison Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD3904:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.2
+MagicSkill: Destruction
+ResistValue: PoisonResist
+CastingLight: 045D7B:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 10CC64:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 029581:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 031048:Skyrim.esm
+ImpactData: 0FFF4B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> poison damage for <dur> seconds.

@@ -1,0 +1,24 @@
+FormKey: 0D8846:Skyrim.esm
+EditorID: ServicesThievesGuildMallus
+Flags:
+- Vendor
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorBuySellList: 444D87:Requiem.esp
+MerchantContainer: 0D8839:Skyrim.esm
+VendorValues:
+  EndHour: 24
+  OnlyBuysStolenItems: True
+  NotSellBuy: True
+VendorLocation:
+  Target:
+    MutagenObjectType: LocationFallback
+    Type: NearSelf
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 0D8828:Skyrim.esm
+    Stage: 20
+  ComparisonValue: 1

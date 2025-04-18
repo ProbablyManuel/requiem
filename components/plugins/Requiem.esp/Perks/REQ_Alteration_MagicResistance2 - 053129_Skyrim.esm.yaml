@@ -1,0 +1,26 @@
+FormKey: 053129:Skyrim.esm
+EditorID: REQ_Alteration_MagicResistance2
+Name:
+  TargetLanguage: English
+  Value: Magic Resistance
+Description:
+  TargetLanguage: English
+  Value: You are able to block more of a dangerous spell's effect.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 053128:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Alteration
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+NextPerk: 05312A:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 053126:Skyrim.esm

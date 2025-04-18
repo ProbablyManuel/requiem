@@ -1,0 +1,22 @@
+FormKey: 0250E5:Dragonborn.esm
+EditorID: REQ_NULL_DLC2TemperArmorAcolyteMaskFrost
+Items:
+- Item:
+    Item: 05AD9D:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 0240FF:Dragonborn.esm
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

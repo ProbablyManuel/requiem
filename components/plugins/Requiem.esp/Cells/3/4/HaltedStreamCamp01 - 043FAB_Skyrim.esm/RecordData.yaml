@@ -1,0 +1,66 @@
+FormKey: 043FAB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HaltedStreamCamp01
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Halted Stream Camp
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#003A2F29'
+  DirectionalColor: '#004D403C'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 400
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#003F2F2A'
+    DirectionalXMinus: '#00342F27'
+    DirectionalYPlus: '#003A3129'
+    DirectionalYMinus: '#003A2C29'
+    DirectionalZPlus: '#001B1612'
+    DirectionalZMinus: '#0058473F'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 091937:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019193:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+EncounterZone: 03EC32:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 05CBF2:Requiem.esp
+  Base: 05CBD4:Requiem.esp
+  RagdollData: 0x00EA5B2C2045254100000000003DA1BFDB0FC9BF4896043428AE4840006D43614A2039400000A0B60000C028000000800000008074FCCA3F
+  Placement:
+    Position: 1418.9028, 824.8451, -458.49704
+    Rotation: 0, -0, 4.4
+- MutagenObjectType: PlacedObject
+  FormKey: 0A408F:Skyrim.esm
+  Base: 01ACB9:Skyrim.esm
+  RagdollData: 0x007B6D230000000000008038000000B874E2C8BF729D193D9D5782BC00CC1500BA9E1740060072B900E8542C00000080000000806AA5C93F
+  LocationReference: 019193:Skyrim.esm
+  Placement:
+    Position: 1396.0604, 851.73773, -458.4375
+    Rotation: 0, -0, 5.8931856
+MajorFlags:
+- 0x40000

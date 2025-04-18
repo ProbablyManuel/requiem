@@ -1,0 +1,50 @@
+FormKey: AE3B10:Requiem.esp
+EditorID: REQ_Ench_SaviorsHide_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_SaviorsHide
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Snow
+      Object: 3A8C1F:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EnchAbility
+      Object: AE37EF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GiantSlaughterfish
+      Object: 077A64:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ulik
+      Object: 04517A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GiganticMudcrab
+      Object: 046761:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ragnok
+      Object: 35214E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EarthMother
+      Object: 013B74:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Kruul
+      Object: 04517E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gorak
+      Object: 044BF2:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Apply Savior's Hide Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

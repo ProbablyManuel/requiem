@@ -1,0 +1,63 @@
+FormKey: 016BDB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenFishery
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Riften Fishery
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#0046466E'
+  FogNearColor: '#00000000'
+  DirectionalRotationZ: 90
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0B2157:Skyrim.esm
+WaterHeight: 0
+Location: 02263B:Skyrim.esm
+Owner: 016C30:Skyrim.esm
+LockList: 016C32:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 06D546:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA73C:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 02263B:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7339:Skyrim.esm
+  Placement:
+    Position: -703.11633, 161.05159, 127.006546
+    Rotation: 0, -0, 1.5707964
+MajorFlags:
+- 0x40000

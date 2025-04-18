@@ -1,0 +1,181 @@
+FormKey: 0CAE13:Skyrim.esm
+EditorID: C00GiantOutsideWhiterunRace
+Name:
+  TargetLanguage: English
+  Value: Giant
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 0F2595:Skyrim.esm
+- AD39E9:Requiem.esp
+Skin: 048D94:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 586728:Requiem.esp
+- 5F367F:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- CantOpenDoors
+- AvoidsRoads
+Starting:
+- Key: Health
+  Value: 1000
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 0
+BaseCarryWeight: 9999
+BaseMass: 10
+AccelerationRate: 3
+DecelerationRate: 3
+Size: ExtraLarge
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 2
+UnarmedReach: 512
+BodyBipedObject: Body
+AimAngleTolerance: 20
+AngularAccelerationRate: 1
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Giant\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Giant\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F225:Skyrim.esm
+  Female: 01F225:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 0.1
+    Chance: 0.5
+    StrikeAngle: 65
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackStart_ClubAttack1
+- AttackData:
+    DamageMult: 0.1
+    Chance: 0.5
+    StrikeAngle: 65
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackStart_ClubAttack2
+- AttackData:
+    DamageMult: 0.2
+    Chance: 1
+    StrikeAngle: 65
+    StaminaMult: 1
+  AttackEvent: attackStart_HandSwipeAttack
+- AttackData:
+    DamageMult: 0.2
+    Chance: 0.3
+    Spell: 02FFD2:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 180
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_Stomp
+- AttackData:
+    DamageMult: 0.2
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 65
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 0.2
+    Chance: 1
+    AttackAngle: 180
+    StrikeAngle: 65
+    StaminaMult: 1
+  AttackEvent: attackStart_BackAttack
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 0517AB:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Giant\GiantProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Giant\GiantProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0AF666:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Body
+  Value: BODY
+- Key: Hands
+  Value: Arms
+- Key: Calves
+  Value: SHIELD
+EquipmentFlags:
+- TwoHandSword
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+- 025BEE:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F44:Skyrim.esm

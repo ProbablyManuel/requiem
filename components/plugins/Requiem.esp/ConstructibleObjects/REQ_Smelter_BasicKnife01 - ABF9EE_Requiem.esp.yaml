@@ -1,0 +1,19 @@
+FormKey: ABF9EE:Requiem.esp
+EditorID: REQ_Smelter_BasicKnife01
+Items:
+- Item:
+    Item: 104B40:Skyrim.esm
+    Count: 10
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 104B40:Skyrim.esm
+CreatedObject: 05ACE4:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,28 @@
+FormKey: 064B33:Skyrim.esm
+EditorID: REQ_Food_Dairy_GoatWheel
+ObjectBounds:
+  First: -15, -15, 0
+  Second: 15, 15, 15
+Name:
+  TargetLanguage: English
+  Value: Goat Cheese Wheel
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\CheeseWheel01A.nif
+  Data: 0x0200000002000000000000007EF3D85664647300B9148236C2AC210264647300B9148236
+Weight: 2
+Value: 16
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371B:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 1200
+- BaseEffect: AE3718:Requiem.esp
+  Data: {}
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

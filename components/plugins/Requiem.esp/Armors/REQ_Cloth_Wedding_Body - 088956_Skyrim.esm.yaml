@@ -1,0 +1,41 @@
+FormKey: 088956:Skyrim.esm
+EditorID: REQ_Cloth_Wedding_Body
+ObjectBounds:
+  First: -64, -21, 2
+  Second: -22, 22, 13
+Name:
+  TargetLanguage: English
+  Value: Wedding Dress
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\FineClothes01\OutfitGO.nif
+      Data: 0x020000000200000000000000161F580B64647300EBED7A37BEBEB90664647300EBED7A37
+      AlternateTextures:
+      - Name: Clothes01GO:0
+        NewTexture: 0FE6AF:Skyrim.esm
+  Female:
+    Model:
+      File: Clothes\WeddingDress\DressGO.nif
+      Data: 0x020000000200000000000000E2BA862E64647300DB13B565BEE8D5D064647300DB13B565
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0A865D:Skyrim.esm
+- 0A8657:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 088955:Skyrim.esm
+Value: 150
+Weight: 1

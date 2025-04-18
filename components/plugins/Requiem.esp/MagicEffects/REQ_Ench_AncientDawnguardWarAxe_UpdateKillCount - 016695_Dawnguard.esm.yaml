@@ -1,0 +1,51 @@
+FormKey: 016695:Dawnguard.esm
+EditorID: REQ_Ench_AncientDawnguardWarAxe_UpdateKillCount
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AncientDawnguardWarAxe_KillCounter
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ResetQuest
+      Object: AE3914:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: undeadKilled
+      Object: 016691:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
+Name:
+  TargetLanguage: English
+  Value: Update Kill Count
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoMagnitude
+- NoArea
+- HideInUI
+- NoDeathDispel
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 016695:Dawnguard.esm

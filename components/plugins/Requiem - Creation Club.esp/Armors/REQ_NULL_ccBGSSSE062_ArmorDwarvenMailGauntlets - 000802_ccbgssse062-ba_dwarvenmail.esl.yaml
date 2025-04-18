@@ -1,0 +1,39 @@
+FormKey: 000802:ccbgssse062-ba_dwarvenmail.esl
+EditorID: REQ_NULL_ccBGSSSE062_ArmorDwarvenMailGauntlets
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00081A:ccbgssse062-ba_dwarvenmail.esl
+Name:
+  TargetLanguage: English
+  Value: Dwarven Mail Gauntlets
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE062\Armor\DwarvenMail\GauntletsGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 02C17D:Skyrim.esm
+- 06BBD3:Skyrim.esm
+- 06BBD7:Skyrim.esm
+- 06C0EF:Skyrim.esm
+- 08F959:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080C:ccbgssse062-ba_dwarvenmail.esl
+Value: 85
+Weight: 4
+ArmorRating: 10

@@ -1,0 +1,28 @@
+FormKey: 0C4DE2:Skyrim.esm
+EditorID: REQ_Vampire_Charm
+Name:
+  TargetLanguage: English
+  Value: Vampire's Seduction
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: You feel the hunger, the thirst, the very need for blood. Drawing power from the urge to find someone to feast upon, you can render a target calmed for a short while and make it bow to you...
+Flags:
+- ManualCostCalc
+Type: Power
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 04DEE7:Skyrim.esm
+  Data:
+    Magnitude: 999
+    Duration: 30
+- BaseEffect: 00F3CE:Dawnguard.esm
+  Data:
+    Magnitude: 999
+    Duration: 30
+- BaseEffect: 00BF72:Dawnguard.esm
+  Data:
+    Magnitude: 1
+    Duration: 30

@@ -1,0 +1,29 @@
+FormKey: 000815:ccbgssse060-ba_dragonscale.esl
+EditorID: REQ_NULL_ccBGSSSE060_RecipeArmorDragonscaleHelmet
+Items:
+- Item:
+    Item: 03ADA3:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 05ACE4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0DB5D2:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 00081B:ccbgssse060-ba_dragonscale.esl
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 052190:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 000803:ccbgssse060-ba_dragonscale.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

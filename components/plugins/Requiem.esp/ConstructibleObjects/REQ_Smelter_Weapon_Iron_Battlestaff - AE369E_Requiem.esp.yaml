@@ -1,0 +1,19 @@
+FormKey: AE369E:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Iron_Battlestaff
+Items:
+- Item:
+    Item: 06B466:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 06B466:Requiem.esp
+CreatedObject: 05ACE4:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

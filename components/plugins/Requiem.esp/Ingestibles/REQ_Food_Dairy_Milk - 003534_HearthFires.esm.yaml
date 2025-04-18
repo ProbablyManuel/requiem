@@ -1,0 +1,27 @@
+FormKey: 003534:HearthFires.esm
+EditorID: REQ_Food_Dairy_Milk
+ObjectBounds:
+  First: -10, -10, 0
+  Second: 10, 10, 42
+Name:
+  TargetLanguage: English
+  Value: Jug of Milk
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: _BYOH\Clutter\Food\MilkJug01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21F:Skyrim.esm
+Weight: 1
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 10E2EA:Skyrim.esm
+Effects:
+- BaseEffect: AE371B:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 1800
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

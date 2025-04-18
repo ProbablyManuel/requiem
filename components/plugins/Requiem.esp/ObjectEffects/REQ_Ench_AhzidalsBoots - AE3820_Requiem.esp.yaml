@@ -1,0 +1,20 @@
+FormKey: AE3820:Requiem.esp
+EditorID: REQ_Ench_AhzidalsBoots
+Name:
+  TargetLanguage: English
+  Value: Ahzidal's Boots Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE3800:Requiem.esp
+  Data: {}
+- BaseEffect: AE390D:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4

@@ -1,0 +1,1063 @@
+FormKey: 02610C:Skyrim.esm
+EditorID: MQ104
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultquestrespawnscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: respawnTimeMax
+      Data: 30
+    - MutagenObjectType: ScriptIntProperty
+      Name: doneStage
+      Data: 80
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RespawnMarker2
+      Object: 0A9265:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: debugFlag
+      Object: 05B43F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RespawnMarker1
+      Object: 05C9DF:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: respawnTimeMin
+      Data: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RespawnMarkerFailsafe
+      Object: 05C9E0:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: respawnPool
+      Data: 3
+  - Name: mq104script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQDebug
+      Object: 05B43F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortLocation
+      Object: 0D9079:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HQLocation
+      Object: 018A56:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HighHrothgarLocation
+      Object: 018E34:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dragon
+      Object: 02610C:Skyrim.esm
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQKillDragonFaction
+      Object: 035D62:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionLeaderAlias
+      Object: 02610C:Skyrim.esm
+      Alias: 5
+  - Name: QF_MQ104B_0002610C
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LearnShoutMsg
+      Object: 022987:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Messenger
+      Object: 02610C:Skyrim.esm
+      Alias: 36
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CastleCourtyardMarker4
+      Object: 02610C:Skyrim.esm
+      Alias: 49
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Farengar
+      Object: 02610C:Skyrim.esm
+      Alias: 52
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HousecarlEnableMarker
+      Object: 0E4ECA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackIntroScene
+      Object: 0A3F58:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SifnarCourtyardScene
+      Object: 05A6BC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortMoveToMarker
+      Object: 0A1928:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Balgruuf
+      Object: 02610C:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ103a
+      Object: 02D75C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AllowPlayerShout
+      Object: 0AFB80:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroTrigger
+      Object: 0DD04E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WordFus
+      Object: 013E22:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FortTarget
+      Object: 02610C:Skyrim.esm
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Survivor
+      Object: 02610C:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Irileth
+      Object: 02610C:Skyrim.esm
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorJarlsMakeFriends
+      Object: 087E24:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 02610C:Skyrim.esm
+      Alias: 41
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CastleCourtyardMarker2
+      Object: 02610C:Skyrim.esm
+      Alias: 47
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroScene
+      Object: 05A6BE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier4
+      Object: 02610C:Skyrim.esm
+      Alias: 42
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier1
+      Object: 02610C:Skyrim.esm
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dagny
+      Object: 02610C:Skyrim.esm
+      Alias: 57
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Hrongar
+      Object: 02610C:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier2
+      Object: 02610C:Skyrim.esm
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier3
+      Object: 02610C:Skyrim.esm
+      Alias: 31
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunDragonMoundQST
+      Object: 0FDBA2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunPlayerHousePackageHouseCarl
+      Object: 0E4ECA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CW03
+      Object: 0D661C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortMapMarker
+      Object: 0DB889:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Proventus
+      Object: 02610C:Skyrim.esm
+      Alias: 54
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CastleCourtyardMarker1
+      Object: 02610C:Skyrim.esm
+      Alias: 37
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier5
+      Object: 02610C:Skyrim.esm
+      Alias: 43
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ105
+      Object: 0242BA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ103
+      Object: 0D0800:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_JarlWeapon
+      Object: 02610C:Skyrim.esm
+      Alias: 59
+    - MutagenObjectType: ScriptObjectProperty
+      Name: introScene
+      Object: 058F93:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CastleCourtyardMarker6
+      Object: 02610C:Skyrim.esm
+      Alias: 51
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortSoldiersEnableMarker
+      Object: 0D9076:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackFXEnableMarker
+      Object: 0D3FB3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CW
+      Object: 019E53:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardEnchArmorLight
+      Object: 246A1A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunDragonsReachMapMarker
+      Object: 0C44AD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQGreybeardCallKeyword
+      Object: 10EC62:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PlayerHousecarl
+      Object: 02610C:Skyrim.esm
+      Alias: 58
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dragon
+      Object: 02610C:Skyrim.esm
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Frothar
+      Object: 02610C:Skyrim.esm
+      Alias: 55
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ104DragonFaction
+      Object: 054D00:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DragonBattleScene
+      Object: 0D8C40:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFaction
+      Object: 000DB1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CastleCourtyardMarker3
+      Object: 02610C:Skyrim.esm
+      Alias: 48
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackNearbySpawnsMarker
+      Object: 0B8314:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ103B
+      Object: 02610B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CaptainStartMarker
+      Object: 05A6C3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CastleCourtyardMarker5
+      Object: 02610C:Skyrim.esm
+      Alias: 50
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ104Shout
+      Object: 10B2F4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackEnableMarker
+      Object: 0D3FB2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DragonLandingMarker
+      Object: 05A6D1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackScene
+      Object: 05C9DE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GreybeardSummonsSound
+      Object: 0C3CAC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Nelkir
+      Object: 02610C:Skyrim.esm
+      Alias: 56
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Hold
+      Object: 02610C:Skyrim.esm
+      Alias: 61
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier6
+      Object: 02610C:Skyrim.esm
+      Alias: 44
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FortCenterMarker
+      Object: 02610C:Skyrim.esm
+      Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardEnchArmor
+      Object: 246A1A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SurvivorMarker
+      Object: 02610C:Skyrim.esm
+      Alias: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MessengerStartMarker
+      Object: 02610C:Skyrim.esm
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DragonDeathScene
+      Object: 05A6BD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Delphine
+      Object: 02610C:Skyrim.esm
+      Alias: 53
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DragonCrashDisableMarker
+      Object: 0D8B8F:Skyrim.esm
+  FileName: QF_MQ104B_0002610C
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_4
+  - Stage: 160
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_45
+  - Stage: 160
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_77
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_35
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_0
+  - Stage: 105
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_53
+  - Stage: 46
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_55
+  - Stage: 85
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_33
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_17
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_37
+  - Stage: 15
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_13
+  - Stage: 55
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_23
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_25
+  - Stage: 92
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_72
+  - Stage: 13
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_70
+  - Stage: 48
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_74
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_31
+  - Stage: 45
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_19
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_9
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_6
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_47
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_21
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_15
+  - Stage: 110
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_39
+  - Stage: 120
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_41
+  - Stage: 95
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_58
+  - Stage: 52
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_67
+  - Stage: 150
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_43
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_60
+  - Stage: 180
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_50
+  - Stage: 108
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_62
+  - Stage: 130
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_57
+  - Stage: 65
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_28
+  - Stage: 12
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_11
+  - Stage: 170
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_69
+  - Stage: 170
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: QF_MQ104B_0002610C
+    FragmentName: Fragment_75
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 02610C:Skyrim.esm
+      Alias: 25
+    Scripts:
+    - Name: defaultaliasrespawnscript
+  - Property:
+      Name: ''
+      Object: 02610C:Skyrim.esm
+      Alias: 30
+    Scripts:
+    - Name: defaultaliasrespawnscript
+  - Property:
+      Name: ''
+      Object: 02610C:Skyrim.esm
+      Alias: 31
+    Scripts:
+    - Name: defaultaliasrespawnscript
+  - Property:
+      Name: ''
+      Object: 02610C:Skyrim.esm
+      Alias: 42
+    Scripts:
+    - Name: defaultaliasrespawnscript
+  - Property:
+      Name: ''
+      Object: 02610C:Skyrim.esm
+      Alias: 43
+    Scripts:
+    - Name: defaultaliasrespawnscript
+  - Property:
+      Name: ''
+      Object: 02610C:Skyrim.esm
+      Alias: 44
+    Scripts:
+    - Name: defaultaliasrespawnscript
+  - Property:
+      Name: ''
+      Object: 02610C:Skyrim.esm
+      Alias: 24
+    Scripts:
+    - Name: mq104dragonscript
+  - Property:
+      Name: ''
+      Object: 02610C:Skyrim.esm
+      Alias: 41
+    Scripts:
+    - Name: MQ104PlayerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: UnrelentingForceShout
+        Object: 013E07:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ForcePushSpell
+        Object: 013E09:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Dragon Rising
+Flags:
+- RunOnce
+Priority: 83
+QuestFormVersion: 65
+Type: MainQuest
+Filter: Main Quest\
+Stages:
+- LogEntries:
+  - Flags: []
+- Index: 1
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I recovered the Dragonstone from Bleak Falls Barrow, as the Jarl of Whiterun requested. I should speak to him about my reward.
+- Index: 12
+  Unknown: 4
+  LogEntries:
+  - Flags: []
+- Index: 13
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A dragon has been sighted near Whiterun. Irileth, the Jarl's housecarl, asked me to come with her to discuss the situation with Jarl Balgruuf.
+- Index: 15
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 30
+  LogEntries:
+  - Flags: []
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A dragon has been sighted at a watchtower near Whiterun. Jarl Balgruuf has sent me along with his housecarl Irileth with reinforcements.
+- Index: 45
+  LogEntries:
+  - Flags: []
+- Index: 46
+  LogEntries:
+  - Flags: []
+- Index: 48
+  LogEntries:
+  - Flags: []
+- Index: 50
+  LogEntries:
+  - Flags: []
+- Index: 52
+  LogEntries:
+  - Flags: []
+- Index: 55
+  Unknown: 99
+  LogEntries:
+  - Flags: []
+- Index: 60
+  LogEntries:
+  - Flags: []
+- Index: 65
+  LogEntries:
+  - Flags: []
+- Index: 70
+  LogEntries:
+  - Flags: []
+- Index: 80
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A dragon was sighted at a watchtower near Whiterun. Jarl Balgruuf sent me along with his housecarl Irileth with reinforcements. The dragon attacked us and we killed it. We should investigate its corpse to see if we can learn anything about where it came from.
+- Index: 85
+  LogEntries:
+  - Flags: []
+- Index: 90
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A dragon was sighted at a watchtower near Whiterun. Jarl Balgruuf sent me along with his housecarl Irileth with reinforcements. The dragon attacked us and we killed it. When I approached the dragon's corpse, I absorbed some kind of power from it. I should return to Whiterun and tell the Jarl what happened.
+- Index: 92
+  LogEntries:
+  - Flags: []
+- Index: 95
+  LogEntries:
+  - Flags: []
+- Index: 100
+  Unknown: 83
+  LogEntries:
+  - Flags: []
+- Index: 105
+  LogEntries:
+  - Flags: []
+- Index: 108
+  LogEntries:
+  - Flags: []
+- Index: 110
+  LogEntries:
+  - Flags: []
+- Index: 120
+  LogEntries:
+  - Flags: []
+- Index: 130
+  LogEntries:
+  - Flags: []
+- Index: 150
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+- Index: 160
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: A dragon was sighted at a watchtower near Whiterun. Jarl Balgruuf sent me along with his housecarl Irileth with reinforcements. The dragon attacked us and we killed it. When I approached the dragon's corpse, I absorbed some kind of power from it. When I returned to Whiterun, the Jarl rewarded me for my services. I am now a Thane of Whiterun with my own personal housecarl.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 02610C:Skyrim.esm
+        Stage: 170
+      ComparisonValue: 1
+- Index: 170
+  LogEntries:
+  - Flags: []
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 02610C:Skyrim.esm
+        Stage: 160
+      ComparisonValue: 1
+- Index: 180
+  LogEntries:
+  - Flags: []
+    NextQuest: 0242BA:Skyrim.esm
+- Index: 200
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 5
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Jarl Balgruuf
+  Targets:
+  - AliasID: 5
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetStageConditionData
+        Quest: 02610C:Skyrim.esm
+      ComparisonValue: 13
+- Index: 15
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Meet Irileth near the Western Watchtower
+  Targets:
+  - AliasID: 34
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 02610C:Skyrim.esm
+        Stage: 50
+  - AliasID: 23
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetStageConditionData
+        Quest: 02610C:Skyrim.esm
+      ComparisonValue: 52
+  - AliasID: 38
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetStageConditionData
+        Quest: 02610C:Skyrim.esm
+      ComparisonValue: 52
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetDistanceConditionData
+        RunOnType: QuestAlias
+        RunOnTypeIndex: 41
+        UseAliases: True
+        Target: 38
+      ComparisonValue: 800
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Kill the dragon
+  Targets:
+  - AliasID: 24
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Investigate the dragon
+  Targets:
+  - AliasID: 24
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Report back to Jarl Balgruuf
+  Targets:
+  - AliasID: 5
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Use your new Shout power
+NextAliasID: 62
+Aliases:
+- ID: 5
+  Name: Balgruuf
+  Flags:
+  - ReservesLocationOrReference
+  - AllowReserved
+  UniqueActor: 013BBD:Skyrim.esm
+  PackageData:
+  - 05A6DA:Skyrim.esm
+  - 10076E:Skyrim.esm
+  VoiceTypes: Null
+- ID: 10
+  Name: Hrongar
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  - AllowReserved
+  UniqueActor: 013BBC:Skyrim.esm
+  PackageData:
+  - 05EAB7:Skyrim.esm
+  - 0E0EC4:Skyrim.esm
+  - 0E0EC3:Skyrim.esm
+  VoiceTypes: Null
+- ID: 34
+  Name: Irileth
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  - AllowDisabled
+  - AllowReserved
+  UniqueActor: 013BB8:Skyrim.esm
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  Factions:
+  - 054AEC:Skyrim.esm
+  - 04E1E1:Skyrim.esm
+  PackageData:
+  - 023583:Skyrim.esm
+  - 05C9F7:Skyrim.esm
+  - 05C9F5:Skyrim.esm
+  - 05C9E7:Skyrim.esm
+  - 05C9EB:Skyrim.esm
+  - 05A6D6:Skyrim.esm
+  - 05A6D4:Skyrim.esm
+  VoiceTypes: Null
+- ID: 52
+  Name: Farengar
+  Flags:
+  - AllowReserved
+  - Protected
+  UniqueActor: 013BBB:Skyrim.esm
+  VoiceTypes: Null
+- ID: 53
+  Name: Delphine
+  Flags:
+  - AllowReserved
+  UniqueActor: 013478:Skyrim.esm
+  VoiceTypes: Null
+- ID: 54
+  Name: Proventus
+  Flags:
+  - AllowReserved
+  UniqueActor: 013BBA:Skyrim.esm
+  PackageData:
+  - 0DD04D:Skyrim.esm
+  VoiceTypes: Null
+- ID: 35
+  Name: MessengerStartMarker
+  Flags: []
+  ForcedReference: 05A6C5:Skyrim.esm
+  VoiceTypes: Null
+- ID: 36
+  Name: Messenger
+  Flags:
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0BD05C:Skyrim.esm
+    AliasID: 35
+  PackageData:
+  - 05A6C6:Skyrim.esm
+  - 0C0C46:Skyrim.esm
+  VoiceTypes: 0BD05C:Skyrim.esm
+- ID: 37
+  Name: CastleCourtyardMarker1
+  Flags: []
+  ForcedReference: 05C9EC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 47
+  Name: CastleCourtyardMarker2
+  Flags: []
+  ForcedReference: 05C9ED:Skyrim.esm
+  VoiceTypes: Null
+- ID: 48
+  Name: CastleCourtyardMarker3
+  Flags: []
+  ForcedReference: 05C9EE:Skyrim.esm
+  VoiceTypes: Null
+- ID: 49
+  Name: CastleCourtyardMarker4
+  Flags: []
+  ForcedReference: 0A202A:Skyrim.esm
+  VoiceTypes: Null
+- ID: 50
+  Name: CastleCourtyardMarker5
+  Flags: []
+  ForcedReference: 0A202B:Skyrim.esm
+  VoiceTypes: Null
+- ID: 51
+  Name: CastleCourtyardMarker6
+  Flags: []
+  ForcedReference: 0A202C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 25
+  Name: Soldier1
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0A27CC:Skyrim.esm
+    AliasID: 37
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  PackageData:
+  - 0BCFBE:Skyrim.esm
+  - 05C9F8:Skyrim.esm
+  - 05C9F5:Skyrim.esm
+  - 0A2030:Skyrim.esm
+  - 05A6CB:Skyrim.esm
+  VoiceTypes: 0A27CC:Skyrim.esm
+- ID: 30
+  Name: Soldier2
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0A4A3B:Skyrim.esm
+    AliasID: 47
+    Level: Medium
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  PackageData:
+  - 0BD053:Skyrim.esm
+  - 05C9F8:Skyrim.esm
+  - 025FA7:Skyrim.esm
+  - 0A2030:Skyrim.esm
+  - 05C9E5:Skyrim.esm
+  VoiceTypes: 0A27CC:Skyrim.esm
+- ID: 31
+  Name: Soldier3
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 101996:Skyrim.esm
+    AliasID: 48
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  PackageData:
+  - 0BD05B:Skyrim.esm
+  - 025FA6:Skyrim.esm
+  - 05C9F5:Skyrim.esm
+  - 0FFF3D:Skyrim.esm
+  - 05C9E6:Skyrim.esm
+  VoiceTypes: 0A4A3B:Skyrim.esm
+- ID: 42
+  Name: Soldier4
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 101997:Skyrim.esm
+    AliasID: 49
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  PackageData:
+  - 0BCFBD:Skyrim.esm
+  - 025FA6:Skyrim.esm
+  - 025FA7:Skyrim.esm
+  - 05C9F5:Skyrim.esm
+  - 0FFF3D:Skyrim.esm
+  - 0A202D:Skyrim.esm
+  VoiceTypes: 0A27CC:Skyrim.esm
+- ID: 43
+  Name: Soldier5
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0A4A3B:Skyrim.esm
+    AliasID: 50
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  PackageData:
+  - 0BCF73:Skyrim.esm
+  - 05C9F8:Skyrim.esm
+  - 05C9F5:Skyrim.esm
+  - 0A4A37:Skyrim.esm
+  - 0A202E:Skyrim.esm
+  VoiceTypes: 0A4A3B:Skyrim.esm
+- ID: 44
+  Name: Soldier6
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0A27CC:Skyrim.esm
+    AliasID: 51
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  PackageData:
+  - 0BCFBE:Skyrim.esm
+  - 05C9F8:Skyrim.esm
+  - 05C9F5:Skyrim.esm
+  - 0A4A37:Skyrim.esm
+  - 0A202F:Skyrim.esm
+  VoiceTypes: 0A27CC:Skyrim.esm
+- ID: 23
+  Name: FortTarget
+  Flags:
+  - ReservesLocationOrReference
+  ForcedReference: 05A6D2:Skyrim.esm
+  VoiceTypes: Null
+- ID: 24
+  Name: dragon
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  ForcedReference: 05A6CA:Skyrim.esm
+  Items:
+  - Item:
+      Item: 02150D:Skyrim.esm
+      Count: 1
+  - Item:
+      Item: 021615:Skyrim.esm
+      Count: 1
+  - Item:
+      Item: 0A6D7F:Skyrim.esm
+      Count: 1
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  PackageData:
+  - 03F515:Skyrim.esm
+  - 0AF1D9:Skyrim.esm
+  VoiceTypes: Null
+- ID: 38
+  Name: FortCenterMarker
+  Flags: []
+  ForcedReference: 0D907C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 40
+  Name: SurvivorMarker
+  Flags: []
+  ForcedReference: 0A27C7:Skyrim.esm
+  VoiceTypes: Null
+- ID: 39
+  Name: Survivor
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0B799D:Skyrim.esm
+    AliasID: 40
+  CombatOverridePackageList: 0A1934:Skyrim.esm
+  PackageData:
+  - 0A27C6:Skyrim.esm
+  - 05C9F8:Skyrim.esm
+  - 05C9F5:Skyrim.esm
+  - 0A27C8:Skyrim.esm
+  VoiceTypes: 0B799D:Skyrim.esm
+- ID: 41
+  Name: Player
+  Flags:
+  - AllowReserved
+  ForcedReference: 000014:Skyrim.esm
+  Factions:
+  - 04E1E1:Skyrim.esm
+  VoiceTypes: Null
+- ID: 55
+  Name: Frothar
+  Flags:
+  - AllowReserved
+  - Protected
+  UniqueActor: 01434C:Skyrim.esm
+  PackageData:
+  - 0E0EC2:Skyrim.esm
+  VoiceTypes: Null
+- ID: 56
+  Name: Nelkir
+  Flags:
+  - AllowReserved
+  - Protected
+  UniqueActor: 01434D:Skyrim.esm
+  PackageData:
+  - 0E0EC2:Skyrim.esm
+  VoiceTypes: Null
+- ID: 57
+  Name: Dagny
+  Flags:
+  - AllowReserved
+  - Protected
+  UniqueActor: 01434B:Skyrim.esm
+  PackageData:
+  - 0E0EC2:Skyrim.esm
+  VoiceTypes: Null
+- ID: 58
+  Name: PlayerHousecarl
+  Flags:
+  - AllowDisabled
+  - AllowReserved
+  UniqueActor: 0A2C8E:Skyrim.esm
+  VoiceTypes: Null
+- ID: 59
+  Name: JarlWeapon
+  Flags:
+  - Optional
+  CreateReferenceToObject:
+    Object: 0801CC:Requiem.esp
+    AliasID: 5
+    Create: In
+    Level: VeryHard
+  VoiceTypes: Null
+- ID: 61
+  Type: Location
+  Name: Hold
+  Flags:
+  - StoresText
+  SpecificLocation: 016772:Skyrim.esm

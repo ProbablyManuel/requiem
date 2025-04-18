@@ -1,0 +1,28 @@
+FormKey: AD36F4:Requiem.esp
+EditorID: REQ_Projectile_Ench_Bolt_Elven_Shock
+ObjectBounds:
+  First: -1, 0, -1
+  Second: 1, 61, 1
+Name:
+  TargetLanguage: English
+  Value: Elven Bolt of Shock
+Model:
+  File: Requiem\Projectiles\elven\elven_bolt_magic_shock.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+- Supersonic
+Type: Arrow
+Gravity: 0.2
+Speed: 5600
+Range: 60000
+MuzzleFlash: 0E2172:Skyrim.esm
+Explosion: 010D92:Dawnguard.esm
+Sound: 03F2B4:Skyrim.esm
+MuzzleFlashDuration: 0.5
+FadeDuration: 5
+ImpactForce: 0.5
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

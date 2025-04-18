@@ -1,0 +1,23 @@
+FormKey: 011F30:Dawnguard.esm
+EditorID: REQ_NULL_DLC1SeranaDrain04
+Name:
+  TargetLanguage: English
+  Value: Drain Life
+MenuDisplayObject: 10FEF4:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 011F2B:Dawnguard.esm
+  Data:
+    Magnitude: 25
+    Duration: 1
+- BaseEffect: 011F2E:Dawnguard.esm
+  Data:
+    Magnitude: 25
+    Duration: 1

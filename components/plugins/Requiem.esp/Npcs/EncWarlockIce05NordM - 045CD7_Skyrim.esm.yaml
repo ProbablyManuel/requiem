@@ -1,0 +1,205 @@
+FormKey: 045CD7:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EncWarlockIce05NordM
+Version2: 14
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Respawn
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 500
+  StaminaOffset: -25
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 37
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 80
+Factions:
+- Faction: 026724:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 08601A:Skyrim.esm
+Voice: 013AE6:Skyrim.esm
+Template: 045CBC:Skyrim.esm
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 02B96C:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231C:Skyrim.esm
+- 0F95EB:Skyrim.esm
+- 0BB96A:Skyrim.esm
+- 0400AC:Skyrim.esm
+- 072317:Skyrim.esm
+Perks:
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 053129:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 044CD6:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10F8B5:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10F8B4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FACD:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FAD1:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 01317A:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 24
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 43
+  - Key: Conjuration
+    Value: 43
+  - Key: Destruction
+    Value: 61
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 62
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 387
+  Magicka: 303
+  Stamina: 45
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+CombatStyle: 044CD0:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 044CD5:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00C6B0A8'
+TintLayers:
+- Index: 1
+  Color: '#00C6B0A8'
+  InterpolationValue: 1
+  Preset: 75
+- Index: 3
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: 98
+- Index: 5
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 103
+- Index: 10
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 135
+- Index: 11
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 138
+- Index: 12
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 143
+MajorFlags:
+- 0x40000

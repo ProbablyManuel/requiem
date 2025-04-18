@@ -1,0 +1,31 @@
+FormKey: 029B98:Skyrim.esm
+EditorID: REQ_Ench_Staff_RepelUndead
+Name:
+  TargetLanguage: English
+  Value: Repel Undead
+EnchantmentCost: 230
+CastType: FireAndForget
+EnchantmentAmount: 230
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 1
+Effects:
+- BaseEffect: 05DD5F:Skyrim.esm
+  Data:
+    Magnitude: 15
+    Duration: 30
+- BaseEffect: 04D3F9:Skyrim.esm
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsUndeadConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013796:Skyrim.esm
+    ComparisonValue: 1

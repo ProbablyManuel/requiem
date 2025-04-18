@@ -1,0 +1,16 @@
+FormKey: 0A30CB:Skyrim.esm
+EditorID: REQ_Smelter_OreCorundum
+Items:
+- Item:
+    Item: 05ACDB:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 05ACDB:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 05AD93:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,23 @@
+FormKey: 352147:Requiem.esp
+EditorID: REQ_Smelting_SoulGem_Black
+Items:
+- Item:
+    Item: 02E4FC:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0AF5FD:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F7C:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetEquippedConditionData
+    ItemOrList: 0C891D:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 02E500:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

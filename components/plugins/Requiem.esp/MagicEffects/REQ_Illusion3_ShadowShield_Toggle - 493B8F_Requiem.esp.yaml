@@ -1,0 +1,46 @@
+FormKey: 493B8F:Requiem.esp
+EditorID: REQ_Illusion3_ShadowShield_Toggle
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_Toggle
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: ToDispel
+      Objects:
+      - Name: ''
+        Object: 48263E:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Toggle
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- HideInUI
+- PowerAffectsDuration
+MagicSkill: Illusion
+CastingLight: 028530:Skyrim.esm
+MinimumSkillLevel: 50
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+CastingArt: 0225B0:Skyrim.esm
+HitEffectArt: 0339C8:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 48263B:Requiem.esp
+  ComparisonValue: 1

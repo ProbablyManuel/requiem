@@ -1,0 +1,22 @@
+FormKey: AD8C81:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_Quicksilver_Effect
+Name:
+  TargetLanguage: English
+  Value: Fortify Spell Power
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Quicksilver is an excellent magical conductor. Thus, spells are <mag>% more effective (3% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

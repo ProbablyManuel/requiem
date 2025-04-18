@@ -1,0 +1,144 @@
+FormKey: 025F9A:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2LvlBoar
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -40, -99, 0
+  Second: 40, 99, 141
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - LoopedAudio
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 7
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 50
+Factions:
+- Faction: 01D9C9:Dragonborn.esm
+  Fluff: 0x000000
+DeathItem: 032C7B:Dragonborn.esm
+Voice: 024C3E:Dragonborn.esm
+Template: 02403B:Dragonborn.esm
+Race: 024038:Dragonborn.esm
+WornArmor: 024039:Dragonborn.esm
+AttackRace: 024038:Dragonborn.esm
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  AggroRadiusBehavior: True
+  Warn: 2048
+  WarnOrAttack: 1024
+  Attack: 512
+Class: 106AED:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 19
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 19
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 265
+  Stamina: 165
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 0559F5:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 03ABCF:Dragonborn.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

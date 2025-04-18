@@ -1,0 +1,29 @@
+FormKey: 05B450:Skyrim.esm
+EditorID: EnchStaminaDamageFFContact
+Name:
+  TargetLanguage: English
+  Value: Stamina Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+ResistValue: ResistMagic
+HitShader: 10ECCE:Skyrim.esm
+EnchantShader: 05D606:Skyrim.esm
+MinimumSkillLevel: 25
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> stamina damage.

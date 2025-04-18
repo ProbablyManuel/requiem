@@ -1,0 +1,22 @@
+FormKey: 000834:ccffbsse002-crossbowpack.esl
+EditorID: REQ_NULL_ccFFBSSE002_DLC1TemperWeaponSilverCrossbowEnhanced
+Items:
+- Item:
+    Item: 05ACE3:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 00081A:ccffbsse002-crossbowpack.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

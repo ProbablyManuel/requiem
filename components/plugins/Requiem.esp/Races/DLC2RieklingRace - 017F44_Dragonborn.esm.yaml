@@ -1,0 +1,209 @@
+FormKey: 017F44:Dragonborn.esm
+EditorID: DLC2RieklingRace
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 03CFED:Dragonborn.esm
+- AE359E:Requiem.esp
+Skin: 0354E2:Dragonborn.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 03A158:Dragonborn.esm
+- 586728:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- AllowPcDialog
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 100
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 100
+BaseCarryWeight: 200
+BaseMass: 1
+AccelerationRate: 2
+DecelerationRate: 1
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 0
+UnarmedDamage: 35
+UnarmedReach: 73
+BodyBipedObject: Body
+AimAngleTolerance: 20
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\Riekling\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\Riekling\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 0208DC:Dragonborn.esm
+  Female: 00002E:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_ForwardSpear
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_StandingSpear
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Spear_Attack1
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_MT_Attack1
+BodyData:
+  Male:
+    Index: BodyTexture
+  Female:
+    Index: BodyTexture
+BodyPartData: 017F53:Dragonborn.esm
+BehaviorGraph:
+  Male:
+    File: Actors\DLC02\Riekling\RieklingProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\DLC02\Riekling\RieklingProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0C190F:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+- TwoHandSword
+- Bow
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+FaceFxPhonemes:
+  ForceNames: True
+  Aah_LipBigAah:
+    Name: LipAA
+    EH: 0.5
+    AA: 1
+    AW: 0.5
+    AH: 0.5
+    AO: 0.5
+    OW: 0.5
+    UH: 0.5
+    UW: 0.5
+    HH: 0.5
+    FLAP: 0.5
+  BigAah_LipDST:
+    Name: LipDST
+    S: 1
+    Z: 0.5
+    ZH: 0.5
+    DH: 1
+    M: 0.5
+    N: 0.5
+    B: 0.5
+    D: 1
+    JH: 0.5
+    P: 0.5
+    T: 1
+    CH: 0.5
+    SIL: 0.5
+  BMP_LipEee:
+    Name: LipEE
+    IY: 0.5
+    IH: 1
+    EY: 0.5
+    AE: 0.5
+    AY: 1
+    OY: 1
+    NG: 0.5
+    Y: 0.5
+    SHOTSIL: 0.5
+  ChJSh_LipFV:
+    Name: LipFF
+    F: 1
+    V: 1
+  DST_LipK:
+    Name: LipK
+    AX: 1
+    G: 0.5
+    K: 1
+  Eee_LipL:
+    Name: LipL
+    L: 1
+  Eh_LipR:
+    Name: LipR
+    UW: 1
+    ER: 1
+    SH: 0.5
+    R: 1
+    W: 0.5
+  FV_LipTh:
+    Name: LipTh
+    TH: 1

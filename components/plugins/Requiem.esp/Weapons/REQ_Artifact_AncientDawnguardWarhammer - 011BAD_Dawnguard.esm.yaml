@@ -1,0 +1,55 @@
+FormKey: 011BAD:Dawnguard.esm
+EditorID: REQ_Artifact_AncientDawnguardWarhammer
+ObjectBounds:
+  First: -11, -41, -5
+  Second: 11, 47, 5
+Name:
+  TargetLanguage: English
+  Value: Ancient Dawnguard Warhammer
+Model:
+  File: ArteFake\Hunter_Rune_Hammer\Hunter_Rune_Hammer_2h.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 014556:Dawnguard.esm
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E719:Skyrim.esm
+- 06D930:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 10AA1A:Skyrim.esm
+- 00D839:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: This sanctified warhammer is enchanted to devastate the undead and bypasses their resistance to blunt damage. Striking the ground creates a magical rune that explodes for <120> sun damage when undead enemies come near.
+ImpactDataSet: 0E4CB0:Skyrim.esm
+FirstPersonModel: AE3760:Requiem.esp
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 0E4F10:Skyrim.esm
+UnequipSound: 0E4F11:Skyrim.esm
+BasicStats:
+  Value: 5000
+  Weight: 25
+  Damage: 22
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.6
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1069547520
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.25
+Critical:
+  Damage: 11
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud

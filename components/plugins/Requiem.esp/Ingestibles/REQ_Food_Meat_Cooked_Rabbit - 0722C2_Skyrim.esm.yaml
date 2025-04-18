@@ -1,0 +1,27 @@
+FormKey: 0722C2:Skyrim.esm
+EditorID: REQ_Food_Meat_Cooked_Rabbit
+ObjectBounds:
+  First: -7, -6, 0
+  Second: 7, 6, 3
+Name:
+  TargetLanguage: English
+  Value: Rabbit Haunch
+Keywords:
+- 08CDEA:Skyrim.esm
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\RabbitMeatCooked01.nif
+  Data: 0x0200000002000000000000006120048D64647300484A40BF2422398B64647300484A40BF
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

@@ -1,0 +1,140 @@
+FormKey: 0A17B4:Skyrim.esm
+EditorID: WE100ObjB
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_WE100ObjB_000A17B4
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Item
+      Object: 0A17B4:Skyrim.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter
+      Object: 0A17B4:Skyrim.esm
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Boss
+      Object: 0A17B4:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BossContainer
+      Object: 0A17B4:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dungeon
+      Object: 0A17B4:Skyrim.esm
+      Alias: 0
+  - Name: WE100ObjScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WE100ReadLetter
+      Object: 10F850:Skyrim.esm
+  FileName: QF_WE100ObjB_000A17B4
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_WE100ObjB_000A17B4
+    FragmentName: Fragment_0
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_WE100ObjB_000A17B4
+    FragmentName: Fragment_1
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: QF_WE100ObjB_000A17B4
+    FragmentName: Fragment_2
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0A17B4:Skyrim.esm
+      Alias: 15
+    Scripts:
+    - Name: WE100ObjItemScript
+  - Property:
+      Name: ''
+      Object: 0A17B4:Skyrim.esm
+      Alias: 18
+    Scripts:
+    - Name: WE100ObjLetter
+Name:
+  TargetLanguage: English
+  Value: Treasure Hunter Objectives
+Priority: 50
+QuestFormVersion: 65
+Type: Misc
+Event: SCPT
+Filter: Wilderness Encounters\Treasure Hunter\
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 4
+  LogEntries:
+  - Flags: []
+- Index: 1
+  LogEntries:
+  - Flags: []
+- Index: 100
+  Unknown: 4
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 4
+Objectives:
+- Index: 1
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Explore <Alias=Dungeon> and recover the <Alias=Item>
+  Targets:
+  - AliasID: 15
+NextAliasID: 19
+Aliases:
+- Type: Location
+  Name: Dungeon
+  Flags:
+  - ReservesLocationOrReference
+  - StoresText
+  - AllowReserved
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 15
+  Name: Item
+  Flags:
+  - ReservesLocationOrReference
+  - StoresText
+  - AllowReserved
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 18
+  Name: Letter
+  Flags:
+  - AllowReserved
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52320000
+  VoiceTypes: Null
+- ID: 14
+  Name: BossContainer
+  Flags:
+  - ReservesLocationOrReference
+  - StoresText
+  - AllowReserved
+  Location:
+    AliasID: 0
+    RefType: 0130F8:Skyrim.esm
+  VoiceTypes: Null
+- ID: 16
+  Name: Boss
+  Flags:
+  - ReservesLocationOrReference
+  - StoresText
+  - AllowReserved
+  Location:
+    AliasID: 0
+    RefType: 0130F7:Skyrim.esm
+  VoiceTypes: Null

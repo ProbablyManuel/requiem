@@ -1,0 +1,39 @@
+FormKey: 2E9A0B:Requiem.esp
+EditorID: REQ_Effect_OnHitLossMagicka
+Name:
+  TargetLanguage: English
+  Value: Pain
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 98F1F7:Requiem.esp
+Flags:
+- Detrimental
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 1.8
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+Projectile: 025458:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 72659B:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 482639:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0581F4:Skyrim.esm

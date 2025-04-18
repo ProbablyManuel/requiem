@@ -1,0 +1,12 @@
+FormKey: 01A33C:Dawnguard.esm
+EditorID: REQ_Trait_Durnehviir
+Description:
+  TargetLanguage: English
+  Value: Ability to have multiple summons
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModCommandedActorLimit
+  PerkConditionTabCount: 2
+  Value: 5

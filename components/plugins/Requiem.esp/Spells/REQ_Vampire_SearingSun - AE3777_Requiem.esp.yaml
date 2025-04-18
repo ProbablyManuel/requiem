@@ -1,0 +1,29 @@
+FormKey: AE3777:Requiem.esp
+EditorID: REQ_Vampire_SearingSun
+Name:
+  TargetLanguage: English
+  Value: Searing Sun
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- NoAbsorbOrReflect
+CastType: FireAndForget
+Effects:
+- BaseEffect: AE3778:Requiem.esp
+  Data:
+    Duration: 90
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Health
+    ComparisonValue: 30
+- BaseEffect: AE3779:Requiem.esp
+  Data:
+    Duration: 90
+- BaseEffect: AE377A:Requiem.esp
+  Data:
+    Duration: 90

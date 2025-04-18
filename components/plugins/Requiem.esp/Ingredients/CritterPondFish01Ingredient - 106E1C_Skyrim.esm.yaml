@@ -1,0 +1,36 @@
+FormKey: 106E1C:Skyrim.esm
+EditorID: CritterPondFish01Ingredient
+ObjectBounds:
+  First: -3, -10, 0
+  Second: 4, 9, 2
+Name:
+  TargetLanguage: English
+  Value: Silverside Perch
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\DeadPondFish01.nif
+  Data: 0x020000000300000000000000CA4B523464647300D2A84AD14A9E324764647300D2A84AD1CE353C0964647300262C333B
+Value: 15
+Weight: 0.25
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 073F2C:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 073F26:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60

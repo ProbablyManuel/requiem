@@ -1,0 +1,30 @@
+FormKey: 003536:HearthFires.esm
+EditorID: REQ_Drink3_SurilieBrothersWine
+ObjectBounds:
+  First: -5, -5, 0
+  Second: 5, 5, 37
+Name:
+  TargetLanguage: English
+  Value: Surilie Brothers Wine
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: _BYOH\Clutter\Wine\WineBottle03.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 40
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 45
+    Duration: 600
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 30
+    Duration: 900

@@ -1,0 +1,59 @@
+FormKey: 06F5BD:Requiem.esp
+MajorRecordFlagsRaw: 4
+EditorID: REQ_NP_Weapon_Spectral_Battleaxe
+SkyrimMajorRecordFlags:
+- NotPlayable
+ObjectBounds:
+  First: -18, -49, -2
+  Second: 21, 45, 2
+Name:
+  TargetLanguage: English
+  Value: Spectral Battleaxe
+Model:
+  File: Weapons\Draugr\DraugrMagicBattleAxe.nif
+  Data: 0x020000000000000000000000
+EnchantmentAmount: 25
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C8:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 06D932:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C5C02:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 036A5B:Skyrim.esm
+FirstPersonModel: 10E735:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 06036A:Skyrim.esm
+UnequipSound: 0605D3:Skyrim.esm
+BasicStats:
+  Value: 100
+  Damage: 21
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.7
+  Reach: 1.3
+  Flags:
+  - CantDrop
+  - NonPlayable
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1068708659
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.15
+Critical:
+  Damage: 10
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+MajorFlags:
+- NonPlayable

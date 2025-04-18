@@ -1,0 +1,23 @@
+FormKey: 665466:Requiem.esp
+EditorID: REQ_Trait_Slaughterfish_DamageOutsideWater
+Name:
+  TargetLanguage: English
+  Value: Slaughterfish Abilities
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 665465:Requiem.esp
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData

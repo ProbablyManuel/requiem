@@ -1,0 +1,56 @@
+FormKey: 01770E:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__0101770E
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__0101770E
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__0101770E
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 01770D:HearthFires.esm
+FavorLevel: None
+LinkTo:
+- 017708:HearthFires.esm
+- 017707:HearthFires.esm
+- 017706:HearthFires.esm
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Yes, it is. It's in the southern part of The Pale, right on the border with Whiterun Hold. All the room in the world to build your own house.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 010BEE:HearthFires.esm
+    SecondUnusedIntParameter: -285379968
+    VariableName: ::bOwnProperty_var
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A50:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 1
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 087E21:Skyrim.esm
+  ComparisonValue: 3
+Prompt:
+  TargetLanguage: English
+  Value: Is that land you mentioned still available?

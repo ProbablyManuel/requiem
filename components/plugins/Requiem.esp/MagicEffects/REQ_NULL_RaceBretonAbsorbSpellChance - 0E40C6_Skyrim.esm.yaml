@@ -1,0 +1,23 @@
+FormKey: 0E40C6:Skyrim.esm
+EditorID: REQ_NULL_RaceBretonAbsorbSpellChance
+Name:
+  TargetLanguage: English
+  Value: Spell Absorption
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Recover
+HitShader: 10F566:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: AbsorbChance
+CastType: FireAndForget
+HitEffectArt: 0EA518:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 0B7A06:Skyrim.esm
+CastingSoundLevel: Normal
+Sounds:
+- Type: Release
+  Sound: 0F4A1F:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Absorb <mag>% of the magicka from hostile spells for <dur> seconds.

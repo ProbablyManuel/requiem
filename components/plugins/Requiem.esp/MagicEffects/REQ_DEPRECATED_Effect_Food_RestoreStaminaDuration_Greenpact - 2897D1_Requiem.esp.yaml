@@ -1,0 +1,22 @@
+FormKey: 2897D1:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_Food_RestoreStaminaDuration_Greenpact
+Name:
+  TargetLanguage: English
+  Value: Greenpact Feast
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 682FB6:Requiem.esp
+- 68F5BD:Requiem.esp
+Flags:
+- NoArea
+BaseCost: 0.75
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Stamina
+  Association: 68F5BD:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Restores <mag> stamina and magicka per second for <dur> seconds - there's just nothing more motivating than the sweet taste of a slain enemy's flesh.

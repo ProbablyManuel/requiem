@@ -1,0 +1,25 @@
+FormKey: AE3B2E:Requiem.esp
+EditorID: REQ_Trait_Heritage_Khajiit_Description
+Name:
+  TargetLanguage: English
+  Value: Claw-Dances
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Attacking, blocking, running, and jumping consumes <20>% less stamina. Attacks deal up to <20>% more damage when your freedom of movement is unrestricted (0.5% per point of worn armor weight below 40). Detrimental effects of skooma are greatly reduced.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

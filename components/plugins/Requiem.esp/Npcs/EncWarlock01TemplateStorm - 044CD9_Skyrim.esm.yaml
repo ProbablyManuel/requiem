@@ -1,0 +1,179 @@
+FormKey: 044CD9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EncWarlock01TemplateStorm
+Version2: 7
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Respawn
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 450
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - AIData
+  - AIPackages
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 100
+Factions:
+- Faction: 026724:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 08601A:Skyrim.esm
+Voice: 09843A:Skyrim.esm
+Template: 044CCC:Skyrim.esm
+Race: 013743:Skyrim.esm
+ActorEffect:
+- 02DD2A:Skyrim.esm
+- 072319:Skyrim.esm
+Items:
+- Item:
+    Item: 10FAD1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FACD:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10F8B4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10F8B5:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 044CD6:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 01CE17:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Storm Mage
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 10
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 10
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 30
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 50
+  Magicka: 100
+  Stamina: 25
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 05107F:Skyrim.esm
+- 08555F:Skyrim.esm
+- 040219:Skyrim.esm
+- 017505:Skyrim.esm
+HairColor: 0A0437:Skyrim.esm
+CombatStyle: 044CD0:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+DefaultOutfit: 044CD5:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 0F2049:Skyrim.esm
+TextureLighting: '#00B3A66A'
+FaceMorph:
+  NoseLongVsShort: 0.8
+  NoseUpVsDown: -0.4
+  EyesUpVsDown: 0.5
+  LipsUpVsDown: -0.9
+  ChinUpVsDown: 0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 12
+  Unknown: 4294967295
+  Eyes: 6
+  Mouth: 7
+TintLayers:
+- Index: 1
+  Color: '#00B3A66A'
+  InterpolationValue: 1
+  Preset: 55
+MajorFlags:
+- 0x40000

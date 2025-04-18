@@ -1,0 +1,1460 @@
+FormKey: 00081C:ccbgssse041-netchleather.esl
+EditorID: ccBGSSSE041_Quest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccBGSSSE041_DeathCounterScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: DeathThreshold
+      Data: 4
+    - MutagenObjectType: ScriptIntProperty
+      Name: ArmorThreshold
+      Data: 5
+    - MutagenObjectType: ScriptIntProperty
+      Name: DeathStageToSet
+      Data: 70
+    - MutagenObjectType: ScriptIntProperty
+      Name: ArmorStageToSet
+      Data: 15
+  - Name: SSE_QF_ccBGSSSE041_Quest_0500081C
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherShieldRandom
+      Object: 00081A:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingH01
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 21
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Key
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorCuirassLight
+      Object: 02BC1C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PaintedArmor01
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 37
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingH03
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingChief
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LitemArmorBootsLightTown
+      Object: 0374ED:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingH04
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Journal
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BettyLeather
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 26
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WIPlayerEnemyFaction
+      Object: 06E02D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_TableREF
+      Object: 0008E0:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BootsBlindingSpeed
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 36
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Riekling02
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorShieldLightTown
+      Object: 0374F5:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_RieklingSketch
+      Object: 00083E:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherCuirassRandom
+      Object: 000819:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Netch01
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingH02
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 22
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CraftGuide
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_NetchLeather
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorGauntletsLightTown
+      Object: 0374F2:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gauntlets
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PaintedArmor02
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2BlacksmithArmorExtra75
+      Object: 0374FF:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Riekling03
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Barrel
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorShieldLight
+      Object: 02BC22:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_QuestRieklingCheer
+      Object: 0008FD:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_NetchChest
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 29
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Riekling01
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_PlayerAllyFaction02
+      Object: 0008A8:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Netch03
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Sack
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_DialogueQuest
+      Object: 000835:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Cuirass
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 33
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorHelmetLight
+      Object: 02BC20:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Netch02
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PaintedArmor03
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_PlayerAllyFaction01
+      Object: 0008A7:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Corpse
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemBanditArmor
+      Object: 026B4F:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Sketch
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 41
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_BootsQuest
+      Object: 000934:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Charcoal
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PurpleDye
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_MiscQuest
+      Object: 00094A:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherBoot
+      Object: 0008CA:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorGauntletsLight
+      Object: 02BC1E:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherHelmetRandom
+      Object: 000818:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorHelmetLightTown
+      Object: 0374F4:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorBootsLight
+      Object: 02BC1A:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_RieklingKey
+      Object: 000882:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PaintedArmor04
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spit
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorCuirassLightTown
+      Object: 0374F0:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Helmet
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 32
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RearGuard
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 28
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Chest
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Riekling04
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherGauntlet
+      Object: 0008CB:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_boots
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Shield
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 31
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherSet
+      Object: 00081B:ccbgssse041-netchleather.esl
+  FileName: SSE_QF_ccBGSSSE041_Quest_0500081C
+  Fragments:
+  - Stage: 1030
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_69
+  - Stage: 11
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_74
+  - Stage: 1040
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_70
+  - Stage: 1020
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_68
+  - Stage: 500
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_65
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_51
+  - Stage: 9
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_44
+  - Stage: 2
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_38
+  - Stage: 46
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_56
+  - Stage: 1000
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_66
+  - Stage: 35
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_53
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_54
+  - Stage: 15
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_50
+  - Stage: 4
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_40
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_60
+  - Stage: 6
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_42
+  - Stage: 13
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_48
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_61
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_62
+  - Stage: 45
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_55
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_45
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_37
+  - Stage: 1050
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_71
+  - Stage: 47
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_57
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_64
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_59
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_52
+  - Stage: 3
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_39
+  - Stage: 5
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_41
+  - Stage: 14
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_49
+  - Stage: 1010
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_67
+  - Stage: 12
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_47
+  - Stage: 7
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_43
+  - Stage: 75
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_63
+  - Stage: 2000
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_73
+  - Stage: 1100
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_72
+  - Stage: 48
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_Quest_0500081C
+    FragmentName: Fragment_58
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 0
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 5
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 1
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 5
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 2
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 5
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 3
+    Scripts:
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 5
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 4
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 2
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 5
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 15
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 1100
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 1000
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 8
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 30
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 18
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 60
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 4
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 17
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 80
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 19
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 6
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 4
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 21
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 45
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 3
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 22
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 46
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 3
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 23
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 47
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 3
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 24
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 48
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: playerOnly
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 3
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 26
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 75
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 00081C:ccbgssse041-netchleather.esl
+  - Property:
+      Name: ''
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 29
+    Scripts:
+    - Name: nealiassetstageonactivatescript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 1200
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToLookFor
+        Data: 1100
+Name:
+  TargetLanguage: English
+  Value: More than you can Chew
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Stages:
+- Index: 1
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. After meeting with the tribe leader, I decided to craft some imitation netch leather. It may be enough to fool the Riekling tribe.
+- Index: 2
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. After arriving on the island I fought the tribe of Rieklings and killed the tribe leader.
+- Index: 3
+  LogEntries:
+  - Flags: []
+- Index: 4
+  LogEntries:
+  - Flags: []
+- Index: 5
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+- Index: 6
+  Unknown: 172
+  LogEntries:
+  - Flags: []
+- Index: 7
+  LogEntries:
+  - Flags: []
+- Index: 8
+  Unknown: 168
+- Index: 9
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 3331
+    Entry:
+      TargetLanguage: English
+      Value: I've heard the islands around Solstheim are worth exploring. If I head to the coastal areas, I might find something worth investigating.
+- Index: 11
+  LogEntries:
+  - Flags: []
+- Index: 12
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 13
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 14
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+- Index: 15
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. After interacting with the Rieklings I managed to obtain the crafting guide mentioned by the peddler and a full set of netch leather armor.
+- Index: 20
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. I've picked up a journal off his corpse which may provide more information on what he was doing here.
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. I should visit the island and investigate.
+- Index: 35
+  LogEntries:
+  - Flags: []
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. On the island I spoke to the tribe leader who handed me a map.
+- Index: 45
+  Unknown: 124
+  LogEntries:
+  - Flags: []
+- Index: 46
+  LogEntries:
+  - Flags: []
+- Index: 47
+  LogEntries:
+  - Flags: []
+- Index: 48
+  LogEntries:
+  - Flags: []
+- Index: 50
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. On the island I spoke to the tribe leader who handed me a map. Apparently there is a hunting party searching for a netch to the south.
+- Index: 60
+  Unknown: 124
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. On the island I spoke to the tribe leader who handed me a map. The map led me south, where a hunting party has engaged a Giant Bull Netch.
+- Index: 70
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. On the island I spoke to the tribe leader who handed me a map. The map led me south, where a hunting party has engaged a Giant Bull Netch.
+- Index: 75
+  LogEntries:
+  - Flags: []
+- Index: 80
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. On the island I spoke to the tribe leader who handed me a map. The map led me south, where a hunting party was fighting a Giant Bull Netch. I managed to pick up a piece of leather from the corpse of one of the netches.
+- Index: 200
+  Unknown: 124
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. After arriving on the island, I was able to obtain the key to a nearby chest. Inside should be the crafting guide mentioned by the peddler. '
+- Index: 500
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. After interacting with the Rieklings I managed to convince the tribe leader to give me a key to a nearby chest. Inside should be the crafting guide mentioned by the peddler. '
+- Index: 1000
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. After interacting with the Rieklings I managed to obtain the crafting guide mentioned by the peddler. '
+- Index: 1010
+  LogEntries:
+  - Flags: []
+- Index: 1020
+  LogEntries:
+  - Flags: []
+- Index: 1030
+  LogEntries:
+  - Flags: []
+- Index: 1040
+  LogEntries:
+  - Flags: []
+- Index: 1050
+  LogEntries:
+  - Flags: []
+- Index: 1100
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. After interacting with the Rieklings I managed to obtain the crafting guide mentioned by the peddler. The guide has tips on how to craft the armor, as well as the location of a full set in Fort Hraggstad.
+- Index: 1200
+  Unknown: 172
+- Index: 2000
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: On the northern coast of Solstheim, I found a camp belonging to a peddler. According to his journal, he was selling leather to a tribe of Rieklings on an island to the west. After interacting with the Rieklings I managed to obtain the crafting guide mentioned by the peddler. Using the guide, I was able to acquire a full set of netch leather armor.
+Objectives:
+- Index: 2
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Examine the tribe leader's corpse
+  Targets:
+  - AliasID: 16
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Investigate the camp in Solstheim
+  Targets:
+  - AliasID: 5
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the peddler's journal
+  Targets:
+  - AliasID: 8
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Meet with the Riekling tribe leader
+  Targets:
+  - AliasID: 4
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Inspect the Riekling sketch
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Help the Riekling hunting party kill the Netch
+  Targets:
+  - AliasID: 18
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 00081C:ccbgssse041-netchleather.esl
+        Stage: 60
+- Index: 60
+  Flags:
+  - OrWithPrevious
+  DisplayText:
+    TargetLanguage: English
+    Value: Save the Netch from the Riekling hunting party
+- Index: 65
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Craft imitation netch leather at a tanning rack
+- Index: 66
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Give the Riekling tribe leader the imitation leather
+  Targets:
+  - AliasID: 4
+- Index: 70
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve a piece of netch leather
+  Targets:
+  - AliasID: 17
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 00081C:ccbgssse041-netchleather.esl
+        Stage: 60
+      ComparisonValue: 1
+  - AliasID: 26
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 00081C:ccbgssse041-netchleather.esl
+        Stage: 47
+      ComparisonValue: 1
+- Index: 80
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to the tribe leader
+  Targets:
+  - AliasID: 4
+- Index: 91
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the crafting guide
+  Targets:
+  - AliasID: 15
+- Index: 200
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Obtain the crafting guide and painted netch armor
+  Targets:
+  - AliasID: 14
+- Index: 1000
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Tan a piece of netch leather at a tanning rack
+- Index: 1011
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Craft a set of netch leather armor
+- Index: 2001
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Search Fort Hraggstad for the netch leather armor set
+  Targets:
+  - AliasID: 29
+NextAliasID: 42
+Aliases:
+- Name: Riekling01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 000852:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 1
+  Name: Riekling02
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 000851:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 2
+  Name: Riekling03
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 00084F:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 3
+  Name: Riekling04
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 000850:ccbgssse041-netchleather.esl
+  PackageData:
+  - 000883:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 4
+  Name: RieklingChief
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 00082C:ccbgssse041-netchleather.esl
+  DisplayName: 000853:ccbgssse041-netchleather.esl
+  PackageData:
+  - 000933:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 5
+  Name: Corpse
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000860:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 6
+  Name: Barrel
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 039F03:Dragonborn.esm
+  Items:
+  - Item:
+      Item: 0800E4:Skyrim.esm
+      Count: 1
+  - Item:
+      Item: 0DB5D2:Skyrim.esm
+      Count: 1
+  VoiceTypes: Null
+- ID: 14
+  Name: Chest
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 039F00:Dragonborn.esm
+  Items:
+  - Item:
+      Item: 0800E4:Skyrim.esm
+      Count: 1
+  - Item:
+      Item: 0DB5D2:Skyrim.esm
+      Count: 1
+  VoiceTypes: Null
+- ID: 37
+  Name: PaintedArmor01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000941:ccbgssse041-netchleather.esl
+    AliasID: 14
+    Create: In
+  VoiceTypes: Null
+- ID: 38
+  Name: PaintedArmor02
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000911:ccbgssse041-netchleather.esl
+    AliasID: 14
+    Create: In
+  VoiceTypes: Null
+- ID: 39
+  Name: PaintedArmor03
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 00093C:ccbgssse041-netchleather.esl
+    AliasID: 14
+    Create: In
+  VoiceTypes: Null
+- ID: 40
+  Name: PaintedArmor04
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000938:ccbgssse041-netchleather.esl
+    AliasID: 14
+    Create: In
+  VoiceTypes: Null
+- ID: 12
+  Name: Sack
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 039F08:Dragonborn.esm
+  Items:
+  - Item:
+      Item: 0800E4:Skyrim.esm
+      Count: 1
+  - Item:
+      Item: 0DB5D2:Skyrim.esm
+      Count: 1
+  VoiceTypes: Null
+- ID: 9
+  Name: Spit
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000856:ccbgssse041-netchleather.esl
+  Items:
+  - Item:
+      Item: 0800E4:Skyrim.esm
+      Count: 5
+  - Item:
+      Item: 0DB5D2:Skyrim.esm
+      Count: 3
+  VoiceTypes: Null
+- ID: 16
+  Name: Key
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000882:ccbgssse041-netchleather.esl
+    AliasID: 4
+    Create: In
+  VoiceTypes: Null
+- ID: 15
+  Name: CraftGuide
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 0008C4:ccbgssse041-netchleather.esl
+    AliasID: 14
+    Create: In
+  VoiceTypes: Null
+- ID: 8
+  Name: Journal
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000863:ccbgssse041-netchleather.esl
+    AliasID: 5
+    Create: In
+  VoiceTypes: Null
+- ID: 18
+  Name: Netch01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000889:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 17
+  Name: NetchLeather
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000892:ccbgssse041-netchleather.esl
+    AliasID: 18
+    Create: In
+  VoiceTypes: Null
+- ID: 19
+  Name: Netch02
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00088D:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 35
+  Name: Netch03
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 00088F:ccbgssse041-netchleather.esl
+  DisplayName: 0008CD:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 21
+  Name: RieklingH01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 000891:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 22
+  Name: RieklingH02
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 000894:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 23
+  Name: RieklingH03
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 00089E:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 24
+  Name: RieklingH04
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  ForcedReference: 0008A6:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 25
+  Name: PurpleDye
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 077E1E:Skyrim.esm
+    AliasID: 5
+    Create: In
+  VoiceTypes: Null
+- ID: 27
+  Name: Charcoal
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 033760:Skyrim.esm
+    AliasID: 5
+    Create: In
+  VoiceTypes: Null
+- ID: 26
+  Name: BettyLeather
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000893:ccbgssse041-netchleather.esl
+    AliasID: 23
+    Create: In
+  VoiceTypes: Null
+- ID: 29
+  Name: NetchChest
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0008C7:ccbgssse041-netchleather.esl
+  VoiceTypes: Null
+- ID: 30
+  Name: Gauntlets
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  VoiceTypes: Null
+- ID: 31
+  Name: Shield
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  VoiceTypes: Null
+- ID: 32
+  Name: Helmet
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  VoiceTypes: Null
+- ID: 33
+  Name: Cuirass
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  VoiceTypes: Null
+- ID: 34
+  Name: Boots
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  VoiceTypes: Null
+- ID: 36
+  Name: BootsBlindingSpeed
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - Protected
+  - AllowDestroyed
+  VoiceTypes: Null
+- ID: 28
+  Name: RearGuard
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  VoiceTypes: Null
+- ID: 41
+  Name: Sketch
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  VoiceTypes: Null

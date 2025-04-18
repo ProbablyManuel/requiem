@@ -1,0 +1,19 @@
+FormKey: 036A69:Dragonborn.esm
+EditorID: DLC2CreatureDwarvenBallista
+Description:
+  TargetLanguage: English
+  Value: One of the most dangerous steam animunculi is the Dwarven ballista, which fires a bolt that can penetrate even the thickest armor.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 016E2A:Dragonborn.esm
+  ComparisonValue: 1
+LoadingScreenNif: 03D2D3:Dragonborn.esm
+InitialScale: 1
+InitialRotation: 0, 0, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, 0
+CameraPath: Cameras\LSCameraPanLFTZoomINBig.nif

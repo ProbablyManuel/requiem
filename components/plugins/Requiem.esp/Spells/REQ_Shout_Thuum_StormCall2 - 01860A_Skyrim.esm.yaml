@@ -1,0 +1,28 @@
+FormKey: 01860A:Skyrim.esm
+EditorID: REQ_Shout_Thuum_StormCall2
+Name:
+  TargetLanguage: English
+  Value: Storm Call - Bah
+MenuDisplayObject: 0A59AC:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- AreaEffectIgnoresLOS
+Type: Voice
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0A1A5C:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Area: 100
+    Duration: 120
+- BaseEffect: 0E3F09:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 120
+- BaseEffect: 0ECEB5:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 120

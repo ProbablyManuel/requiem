@@ -1,0 +1,54 @@
+FormKey: 0ACBF4:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Dwarven_Greatsword_Frost2
+ObjectBounds:
+  First: 48, -32, -2
+  Second: 70, 79, 2
+Name:
+  TargetLanguage: English
+  Value: Dwarven Greatsword of Frost
+Model:
+  File: Weapons\Dwarven\DwarvenGreatSword.nif
+  Data: 0x0200000005000000000000004FE0756464647300A0B8630520B524EE64647300364E8FC24180A6B964647300364E8FC2188FFC7C64647300262C333BFBD1AF2064647300364E8FC2
+ObjectEffect: 045C37:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 097786:Skyrim.esm
+Keywords:
+- 06D931:Skyrim.esm
+- 01E71A:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0949D5:Skyrim.esm
+FirstPersonModel: 036BC8:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 03C8A9:Skyrim.esm
+UnequipSound: 03C8AA:Skyrim.esm
+BasicStats:
+  Value: 360
+  Weight: 19
+  Damage: 19
+Data:
+  AnimationType: TwoHandSword
+  Unused: 0x000000
+  Speed: 0.75
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1067869798
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.1
+Critical:
+  Damage: 9
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud
+Template: 013997:Skyrim.esm

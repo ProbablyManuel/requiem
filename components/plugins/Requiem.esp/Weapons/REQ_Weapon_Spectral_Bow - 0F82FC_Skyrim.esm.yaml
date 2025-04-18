@@ -1,0 +1,56 @@
+FormKey: 0F82FC:Skyrim.esm
+EditorID: REQ_Weapon_Spectral_Bow
+Name:
+  TargetLanguage: English
+  Value: Spectral Bow
+Model:
+  File: Weapons\Draugr\DraugrMagicBowSkinned.nif
+  Data: 0x020000000200000000000000C4D4C2F364647300F0AE144560C4AF8664647300582C5533
+ObjectEffect: 10F223:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E715:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C5C02:Skyrim.esm
+- AD3B2D:Requiem.esp
+- 9F9914:Requiem.esp
+- AD3B2F:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 10E734:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03D78C:Skyrim.esm
+UnequipSound: 03D882:Skyrim.esm
+BasicStats:
+  Value: 50
+  Damage: 60
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 0.3704
+  Reach: 1
+  Flags:
+  - NPCsUseAmmo
+  BaseVATStoHitChance: 5
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1084227584
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  Damage: 7
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

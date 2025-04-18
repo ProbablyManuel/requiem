@@ -1,0 +1,161 @@
+FormKey: 00081A:ccbgssse051-ba_daedricmail.esl
+EditorID: ccBGSSSE051_MiscQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccBGSSSE051_MiscQuest_0300081A
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE051_MiscQuestAliasFillers
+      Object: 00083F:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 00081A:ccbgssse051-ba_daedricmail.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Nils
+      Object: 00081A:ccbgssse051-ba_daedricmail.esl
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Steward
+      Object: 00081A:ccbgssse051-ba_daedricmail.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Elda
+      Object: 00081A:ccbgssse051-ba_daedricmail.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MyNote
+      Object: 00083F:ccbgssse051-ba_daedricmail.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Jarl
+      Object: 00081A:ccbgssse051-ba_daedricmail.esl
+      Alias: 1
+  FileName: SSE_QF_ccBGSSSE051_MiscQuest_0300081A
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_MiscQuest_0300081A
+    FragmentName: Fragment_0
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE051_MiscQuest_0300081A
+    FragmentName: Fragment_1
+Flags:
+- RunOnce
+Priority: 35
+QuestFormVersion: 65
+Type: Misc
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 213
+- Index: 20
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask an innkeeper for work
+  Targets:
+  - AliasID: 3
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDeadCountConditionData
+        Npc: 01412A:Skyrim.esm
+  - AliasID: 4
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDeadCountConditionData
+        Npc: 01414B:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDeadCountConditionData
+        Npc: 01412A:Skyrim.esm
+      ComparisonValue: 1
+NextAliasID: 5
+Aliases:
+- ID: 1
+  Name: Jarl
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 028173:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050920:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 2
+  Name: Steward
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 028173:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050922:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- Name: Note
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  - InitiallyDisabled
+  VoiceTypes: Null
+- ID: 3
+  Name: Elda
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 01B118:Skyrim.esm
+  VoiceTypes: Null
+- ID: 4
+  Name: Nils
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 01B11A:Skyrim.esm
+  VoiceTypes: Null

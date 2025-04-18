@@ -1,0 +1,28 @@
+FormKey: 05B44F:Skyrim.esm
+EditorID: EnchMagickaDamageFFContact
+Name:
+  TargetLanguage: English
+  Value: Magicka Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 0.8
+ResistValue: ResistMagic
+HitShader: 10ECCF:Skyrim.esm
+EnchantShader: 05D608:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> magicka damage.

@@ -1,0 +1,197 @@
+FormKey: 027168:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_NULL_DLC2NB01CorpseFall2
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - Unique
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 75
+  StaminaOffset: 25
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 9
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 100
+Factions:
+- Faction: 01BCC0:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 0C3C9E:Skyrim.esm
+Voice: 09843B:Skyrim.esm
+Template: 039D4E:Skyrim.esm
+Race: 013742:Skyrim.esm
+ActorEffect:
+- 072316:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231C:Skyrim.esm
+- 103A97:Skyrim.esm
+- 039D40:Skyrim.esm
+Perks:
+- Perk: 0581E7:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058200:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 013986:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 04F78D:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10E0E5:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 039D30:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Castor the Puzzlemaker's Corpse
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 21
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 16
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 21
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 22
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 32
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 17
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 216
+  Magicka: 199
+  Stamina: 125
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 053929:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C3CE4:Skyrim.esm
+- 0C710A:Skyrim.esm
+- 0EC3B1:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 40
+SoundLevel: Normal
+DefaultOutfit: 06E26F:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 0F204E:Skyrim.esm
+TextureLighting: '#0062777B'
+FaceMorph:
+  NoseLongVsShort: 0.6
+  NoseUpVsDown: -0.7
+  CheeksUpVsDown: -0.1
+  CheeksForwardVsBack: -0.3
+  EyesUpVsDown: -0.4
+  EyesInVsOut: -0.3
+  BrowsUpVsDown: 0.6
+  BrowsInVsOut: 0.3
+  BrowsForwardVsBack: -0.2
+  LipsUpVsDown: -0.9
+  ChinNarrowVsWide: 0.3
+  ChinUpVsDown: -0.3
+  EyesForwardVsBack: 1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 13
+  Unknown: 4294967295
+  Eyes: 9
+  Mouth: 10
+TintLayers:
+- Index: 1
+  Color: '#0062777B'
+  InterpolationValue: 1
+  Preset: 67
+- Index: 8
+  Color: '#003D2C10'
+  InterpolationValue: 0.77
+  Preset: 98
+MajorFlags:
+- 0x40000

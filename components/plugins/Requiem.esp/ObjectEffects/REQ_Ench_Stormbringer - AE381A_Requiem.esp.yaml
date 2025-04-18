@@ -1,0 +1,147 @@
+FormKey: AE381A:Requiem.esp
+EditorID: REQ_Ench_Stormbringer
+Name:
+  TargetLanguage: English
+  Value: Stormbringer Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE380D:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE3810:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE380E:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE380F:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE38C7:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE38CC:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE38CD:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE38CE:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE3814:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE38C3:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE3817:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE3818:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      RunOnType: Target
+      MagicItem: AE38C4:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE3891:Requiem.esp
+  Data: {}

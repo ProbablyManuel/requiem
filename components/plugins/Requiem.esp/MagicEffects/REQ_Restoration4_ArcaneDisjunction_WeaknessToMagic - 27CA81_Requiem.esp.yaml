@@ -1,0 +1,49 @@
+FormKey: 27CA81:Requiem.esp
+EditorID: REQ_Restoration4_ArcaneDisjunction_WeaknessToMagic
+Name:
+  TargetLanguage: English
+  Value: Weakness to Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.5
+MagicSkill: Restoration
+CastingLight: 06B110:Skyrim.esm
+HitShader: 04E220:Skyrim.esm
+MinimumSkillLevel: 75
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistMagic
+CastType: Concentration
+TargetType: TargetActor
+CastingArt: 06B10F:Skyrim.esm
+HitEffectArt: 04E221:Skyrim.esm
+SkillUsageMultiplier: 0.5
+DualCastScale: 1
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 06F6D3:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 0AC037:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster evokes a mystic energy that decreases the target's magic resistance by <mag>% for as long as the spell is channeled.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 27CA7F:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 27CA81:Requiem.esp

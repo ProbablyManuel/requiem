@@ -1,0 +1,21 @@
+FormKey: 00085C:Requiem.esp
+EditorID: REQ_AbShow_Muffle
+Name:
+  TargetLanguage: English
+  Value: Muffle
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: MovementNoiseMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Movement noise is <mag>% quieter.

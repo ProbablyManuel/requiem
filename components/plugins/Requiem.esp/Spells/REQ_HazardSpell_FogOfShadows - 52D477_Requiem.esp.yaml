@@ -1,0 +1,19 @@
+FormKey: 52D477:Requiem.esp
+EditorID: REQ_HazardSpell_FogOfShadows
+Name:
+  TargetLanguage: English
+  Value: Fog of Shadows
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+HalfCostPerk: 0C44C5:Skyrim.esm
+Effects:
+- BaseEffect: 4F457E:Requiem.esp
+  Data:
+    Duration: 30

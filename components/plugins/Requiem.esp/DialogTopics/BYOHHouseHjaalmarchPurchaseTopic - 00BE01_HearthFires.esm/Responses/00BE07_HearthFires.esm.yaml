@@ -1,0 +1,60 @@
+FormKey: 00BE07:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__0100BE07
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__0100BE07
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__0100BE07
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - SayOnce
+PreviousDialog: 00BE06:HearthFires.esm
+FavorLevel: None
+LinkTo:
+- 00BE00:HearthFires.esm
+- 00BDFF:HearthFires.esm
+- 00BDFE:HearthFires.esm
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: There aren't any houses for sale in Morthal. But if you're interested, I could sell you land in the hold where you could build your own house.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 00BE09:HearthFires.esm
+    SecondUnusedIntParameter: -285090656
+    VariableName: ::bOwnProperty_var
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 1
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 087E20:Skyrim.esm
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00BE09:HearthFires.esm
+    Stage: 30
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00BE09:HearthFires.esm
+    Stage: 50

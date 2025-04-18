@@ -1,0 +1,291 @@
+FormKey: 9473D3:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_GuardImperial_TheReach_Sword
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - LoopedScript
+  - LoopedAudio
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  CalcMinLevel: 1
+  CalcMaxLevel: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Factions:
+- Faction: 01C9FC:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 028848:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 02BF9A:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 06B18C:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 086EEE:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 0AB7B9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Voice: 0AA8D3:Skyrim.esm
+Template: 0AA8D8:Skyrim.esm
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 929824:Requiem.esp
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F67:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F69:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F594:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079343:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079355:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E90:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB406:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 5C950B:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 94246F:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  Responsibility: NoCrime
+  Mood: Angry
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 0587E1:Skyrim.esm
+Class: 7F6492:Requiem.esp
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 74
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 74
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 74
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 180
+  Magicka: 80
+  Stamina: 160
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+HeadParts:
+- 0510B5:Skyrim.esm
+- 051405:Skyrim.esm
+- 051632:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C7123:Skyrim.esm
+HairColor: 0A042F:Skyrim.esm
+CombatStyle: 91AA67:Requiem.esp
+NAM5: 255
+Height: 1
+Weight: 60
+SoundLevel: Normal
+DefaultOutfit: 84583F:Requiem.esp
+SleepingOutfit: 0F122A:Skyrim.esm
+DefaultPackageList: 017040:Skyrim.esm
+CrimeFaction: 028848:Skyrim.esm
+HeadTexture: 0D071D:Skyrim.esm
+TextureLighting: '#00A7867A'
+FaceMorph:
+  NoseLongVsShort: -0.1
+  NoseUpVsDown: -0.4
+  JawUpVsDown: -0.6
+  JawNarrowVsWide: -1
+  JawForwardVsBack: -0.4
+  CheeksUpVsDown: -0.4
+  CheeksForwardVsBack: -0.2
+  EyesUpVsDown: 0.2
+  EyesInVsOut: 0.7
+  BrowsUpVsDown: -0.5
+  BrowsInVsOut: 0.3
+  BrowsForwardVsBack: 0.2
+  LipsUpVsDown: -0.04
+  LipsInVsOut: -1
+  ChinNarrowVsWide: 0.54
+  ChinUpVsDown: 1
+  ChinUnderbiteVsOverbite: -0.3
+  EyesForwardVsBack: 0.3
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 8
+  Unknown: 4294967295
+  Eyes: 3
+  Mouth: 10
+TintLayers:
+- Index: 1
+  Color: '#00A7867A'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 3
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: -1
+- Index: 5
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 7
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: -1
+- Index: 8
+  Color: '#00A95452'
+  InterpolationValue: 0.19
+  Preset: -1
+- Index: 9
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 10
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 11
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 21
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 22
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: -1
+MajorFlags:
+- 0x40000

@@ -1,0 +1,83 @@
+FormKey: 07B7AB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DaintySload01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dainty Sload
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#003D3723'
+  DirectionalColor: '#004F595B'
+  FogNearColor: '#0011110B'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0051432D'
+    DirectionalXMinus: '#00424328'
+    DirectionalYPlus: '#004A462B'
+    DirectionalYMinus: '#004A3F2B'
+    DirectionalZPlus: '#00231F13'
+    DirectionalZMinus: '#00706642'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#0011110B'
+  FogMax: 1
+  LightFadeBegin: 4000
+  LightFadeEnd: 5000
+  Inherits:
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: 0
+Location: 07B91A:Skyrim.esm
+AcousticSpace: 0D78B3:Skyrim.esm
+EncounterZone: 07B919:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E5E45:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 07B91A:Skyrim.esm
+  Placement:
+    Position: 2807.8052, 5509.1387, 7095.243
+    Rotation: 0, 0, 3.1831908
+- MutagenObjectType: PlacedObject
+  FormKey: 0E5EA5:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 07B91A:Skyrim.esm
+  Placement:
+    Position: 2987.7456, 3117.0088, 6835.9043
+    Rotation: 0, 0, 0.60000056
+- MutagenObjectType: PlacedObject
+  FormKey: 0F73D7:Skyrim.esm
+  Version2: 1
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 07B91A:Skyrim.esm
+  Placement:
+    Position: 2741.059, 3767.4524, 7266.454
+    Rotation: 0, -0, 1.9000001
+MajorFlags:
+- 0x40000

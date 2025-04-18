@@ -1,0 +1,16 @@
+FormKey: 03BD06:Dragonborn.esm
+EditorID: REQ_NULL_DLC2CriticalHit
+Name:
+  TargetLanguage: English
+  Value: Critical Hit
+Description:
+  TargetLanguage: English
+  Value: 10% chance of a critical hit that does extra damage.
+NumRanks: 1
+Playable: True
+NextPerk: 105F1E:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: CalculateMyCriticalHitChance
+  PerkConditionTabCount: 3
+  Value: 10

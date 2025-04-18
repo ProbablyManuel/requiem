@@ -1,0 +1,19 @@
+FormKey: AE369A:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Glass_Wakizashi
+Items:
+- Item:
+    Item: ADDE61:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDE61:Requiem.esp
+CreatedObject: 05ADA1:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

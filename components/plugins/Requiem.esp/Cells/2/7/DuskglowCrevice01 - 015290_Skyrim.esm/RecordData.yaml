@@ -1,0 +1,84 @@
+FormKey: 015290:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DuskglowCrevice01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Duskglow Crevice
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00000000'
+    DirectionalXMinus: '#00000000'
+    DirectionalYPlus: '#00000000'
+    DirectionalYMinus: '#00000000'
+    DirectionalZPlus: '#00000000'
+    DirectionalZMinus: '#00000000'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 01952F:Skyrim.esm
+WaterHeight: 0
+Location: 019172:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\ShinyDull_e.dds
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC10:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 089D4E:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 0A639D:Skyrim.esm
+  MajorRecordFlagsRaw: 3072
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 0A63A1:Skyrim.esm
+  LevelModifier: VeryHard
+  PersistentLocation: 019172:Skyrim.esm
+  LocationReference: 019172:Skyrim.esm
+  Scale: 1.1
+  Placement:
+    Position: 695.35254, 6320.716, -411.19504
+    Rotation: 0, -0, 5.233189
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: ADDFFC:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: ADDF1F:Requiem.esp
+  Placement:
+    Position: -328.6566, 7163.274, -376.4161
+    Rotation: 0, 0, 1.7000014
+MajorFlags:
+- 0x40000

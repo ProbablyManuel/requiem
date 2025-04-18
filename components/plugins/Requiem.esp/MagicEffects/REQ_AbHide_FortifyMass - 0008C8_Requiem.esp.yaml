@@ -1,0 +1,22 @@
+FormKey: 0008C8:Requiem.esp
+EditorID: REQ_AbHide_FortifyMass
+Name:
+  TargetLanguage: English
+  Value: Fortify Mass
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: Mass
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

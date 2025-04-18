@@ -1,0 +1,29 @@
+FormKey: AE3714:Requiem.esp
+EditorID: REQ_Food_AddLeftOver_Bread
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AddItemsOnEffectStart
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: ItemsToAdd
+      Objects:
+      - Name: ''
+        Object: 065C98:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Leftover Food - Bread
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
