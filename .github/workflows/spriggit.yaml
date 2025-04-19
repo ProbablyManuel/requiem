@@ -18,7 +18,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - run: gh release download -O .github/spriggit.zip -p "SpriggitLinuxCLI.zip" -R Mutagen-Modding/Spriggit
+      - run: gh release download -O .github/spriggit.zip -p "SpriggitLinuxCLI.zip" -R Mutagen-Modding/Spriggit 0.36.14
         env:
           GH_TOKEN: ${{ github.token }}
 
