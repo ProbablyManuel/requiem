@@ -7,8 +7,6 @@ on:
 jobs:
   spriggit:
     runs-on: ubuntu-latest
-    container:
-      image: mcr.microsoft.com/dotnet/sdk:9.0
 
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
@@ -20,10 +18,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - run: dotnet --list-sdks
-      - run: dotnet --version
-
-      - run: wget -O .github/spriggit.zip https://github.com/Mutagen-Modding/Spriggit/releases/latest/download/SpriggitLinuxCLI.zip
+      - run: gh release download -O .github/spriggit.zip -p "SpriggitLinuxCLI.zip" -R Mutagen-Modding/Spriggit
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - run: 7z x .github/spriggit.zip -o.github/spriggit
 
