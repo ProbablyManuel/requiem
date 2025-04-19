@@ -15,7 +15,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - run: gh release download -O .github/spriggit.zip -p "SpriggitLinuxCLI.zip" -R Mutagen-Modding/Spriggit 0.36.14
+      - run: gh release download -O .github/spriggit.zip -p "SpriggitLinuxCLI.zip" -R Mutagen-Modding/Spriggit
         env:
           GH_TOKEN: ${{ github.token }}
 
@@ -23,10 +23,8 @@ jobs:
 
       - run: chmod +x .github/spriggit/Spriggit.CLI
 
-      - run: dotnet nuget locals all --clear  
-      
-      - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml --PackageVersion 0.36.14
+      - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
 
-      - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml --PackageVersion 0.36.14
+      - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
 
       - uses: stefanzweifel/git-auto-commit-action@v5
