@@ -23,9 +23,7 @@ jobs:
 
       - run: chmod +x .github/spriggit/Spriggit.CLI
 
-      - run: dotnet nuget locals all --clear
-      - run: dotnet tool install Spriggit.Yaml.Skyrim --version 0.37.1
-      - run: ls "/tmp/Spriggit/Translations/Spriggit.Yaml.Skyrim/0.37.1"
+      - run: dotnet nuget locals all --clear  
       
       - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml --PackageVersion 0.36.14
 
