@@ -1,0 +1,238 @@
+FormKey: 00089E:ccbgssse043-crosselv.esl
+EditorID: ccBGSSSE043_VampireHunterQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_ccBGSSSE043_VampireHunter_0300089E
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Journal
+      Object: 00089E:ccbgssse043-crosselv.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_KragrashBodyContainer
+      Object: 00089E:ccbgssse043-crosselv.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_KragrashBodyTrigger
+      Object: 00089E:ccbgssse043-crosselv.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CellarDoor
+      Object: 00089E:ccbgssse043-crosselv.esl
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CellarKey
+      Object: 00089E:ccbgssse043-crosselv.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: canCraftEbonyCrossbow
+      Object: 000807:ccbgssse043-crosselv.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: canCraftElvenCrossbow
+      Object: 000806:ccbgssse043-crosselv.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE043_PlayerFoundLetter
+      Object: 0008B5:ccbgssse043-crosselv.esl
+  FileName: QF_ccBGSSSE043_VampireHunter_0300089E
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE043_VampireHunter_0300089E
+    FragmentName: Fragment_1
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE043_VampireHunter_0300089E
+    FragmentName: Fragment_3
+  - Stage: 40
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE043_VampireHunter_0300089E
+    FragmentName: Fragment_7
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE043_VampireHunter_0300089E
+    FragmentName: Fragment_0
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE043_VampireHunter_0300089E
+    FragmentName: Fragment_2
+  - Stage: 30
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE043_VampireHunter_0300089E
+    FragmentName: Fragment_6
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE043_VampireHunter_0300089E
+    FragmentName: Fragment_4
+  - Stage: 200
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: QF_ccBGSSSE043_VampireHunter_0300089E
+    FragmentName: Fragment_5
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 00089E:ccbgssse043-crosselv.esl
+      Alias: 5
+    Scripts:
+    - Name: ccBGSSSE043_OnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: ignoreOnOrAfterStage
+        Data: 30
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00089E:ccbgssse043-crosselv.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+Name:
+  TargetLanguage: English
+  Value: Night Hunter
+Flags:
+- RunOnce
+QuestFormVersion: 65
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 136
+- Index: 10
+  Unknown: 136
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I've heard rumors of a vampire hunter that patrols the mountains west of Solitude near Ironback Hideout. I should keep an eye out if I find myself in the area.
+- Index: 20
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a letter penned by Kragrash, the vampire hunter. While out on a hunt, he was wounded and contracted vampirism. On the day he would become a vampire, he went into the mountains to watch a final sunrise. He left his equipment in his cellar, which remains locked. The letter promised a key to his cellar should be among his remains.
+- Index: 30
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 0008B5:ccbgssse043-crosselv.esl
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: I've found what appears to be Kragrash's remains. I should search for the cellar key mentioned in his letter.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 0008B5:ccbgssse043-crosselv.esl
+    Entry:
+      TargetLanguage: English
+      Value: "I've stumbled upon a strange set of remains: a crossbow, dwarven oil, and a burnt corpse. Juding by the crossbow, this may have been the vampire hunter I've heard rumors about. I should search the area."
+- Index: 40
+  Unknown: 136
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 0008B5:ccbgssse043-crosselv.esl
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: I've found the key to Kragrash's cellar. I should return to Ironback Hideout and investigate.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 0008B5:ccbgssse043-crosselv.esl
+    Entry:
+      TargetLanguage: English
+      Value: I've found what appears to be the key to a cellar in Ironback Hideout on the vampire hunter's remains. I should go there and investigate.
+- Index: 200
+  Unknown: 40
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 0008B5:ccbgssse043-crosselv.esl
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: I've gained access to Kragrash's cellar, which contains all of his former vampire hunting equipment.
+  - Flags:
+    - CompleteQuest
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 0008B5:ccbgssse043-crosselv.esl
+    Entry:
+      TargetLanguage: English
+      Value: I've gained access to the vampire hunter's cellar, which contains all of his former equipment.
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Investigate rumors of a lone vampire hunter
+  Targets:
+  - AliasID: 5
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find the vampire hunter's final resting place
+  Targets:
+  - AliasID: 2
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search the remains
+  Targets:
+  - {}
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Enter Ironback Hideout Cellar
+  Targets:
+  - AliasID: 4
+NextAliasID: 6
+Aliases:
+- ID: 5
+  Name: Journal
+  Flags: []
+  ForcedReference: 00089A:ccbgssse043-crosselv.esl
+  VoiceTypes: Null
+- ID: 4
+  Name: CellarDoor
+  Flags: []
+  ForcedReference: 002FC4:Update.esm
+  VoiceTypes: Null
+- ID: 2
+  Name: KragrashBodyTrigger
+  Flags: []
+  ForcedReference: 000897:ccbgssse043-crosselv.esl
+  VoiceTypes: Null
+- Name: KragrashBodyContainer
+  Flags: []
+  ForcedReference: 000896:ccbgssse043-crosselv.esl
+  VoiceTypes: Null
+- ID: 1
+  Name: CellarKey
+  Flags: []
+  CreateReferenceToObject:
+    Object: 00080A:ccbgssse043-crosselv.esl
+    Create: In
+  VoiceTypes: Null

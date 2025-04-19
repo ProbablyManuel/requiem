@@ -1,0 +1,29 @@
+FormKey: 0C1E90:Skyrim.esm
+EditorID: REQ_OneHanded_SwordFocus2
+Name:
+  TargetLanguage: English
+  Value: Sword Focus
+Description:
+  TargetLanguage: English
+  Value: You've acquired the advanced techniques of sword combat.<br>[+16% attack speed, +14% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05F56F:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+NextPerk: 0C1E91:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD39A5:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 03E559:Requiem.esp

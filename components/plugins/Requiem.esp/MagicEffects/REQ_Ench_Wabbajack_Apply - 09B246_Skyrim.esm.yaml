@@ -1,0 +1,171 @@
+FormKey: 09B246:Skyrim.esm
+EditorID: REQ_Ench_Wabbajack_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA15WabbajackEffectSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: atronach
+      Object: 04247A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: forceExplosion
+      Object: 07EA04:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFaction
+      Object: 000DB1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: wolf
+      Object: 023ABE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FALMER
+      Object: 01E7B4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonPriest
+      Object: 023A93:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: chicken
+      Object: 10929F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CheeseWedge
+      Object: 064B31:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: mudcrab
+      Object: 000EB2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: visualExplosion
+      Object: 04046D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: explosionMarker
+      Object: 09B24D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dremora
+      Object: 000EB4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: stormSpell
+      Object: 0665BB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IceForm
+      Object: AE3858:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Goat
+      Object: 026F63:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Dog
+      Object: 023EBE:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: madWoman
+      Object: 0BA1E5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: wabbaHitEffect
+      Object: 074799:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: frostSpell
+      Object: 044089:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CheeseWheel
+      Object: 064B33:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: keyDragon
+      Object: 035D59:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: keyGiant
+      Object: 10E984:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: sweetRoll
+      Object: 064B3D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: rabbit
+      Object: 000EB3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: keyWabbajackExcluded
+      Object: 000997:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FearSpell
+      Object: AE3856:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ghostSpell
+      Object: 05030B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CheeseSlice
+      Object: 064B35:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: fireSpell
+      Object: 06051F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DRAUGR
+      Object: 0B7988:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: invis
+      Object: AE3855:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HealSpell
+      Object: AE3857:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: bandit
+      Object: 03DF17:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: skeever
+      Object: 023AB7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: plate
+      Object: 031941:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Wabbajack
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1000
+MagicSkill: Destruction
+ResistValue: ResistMagic
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 1
+HitShader: 074799:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 09B247:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 074794:Skyrim.esm
+ImpactData: 074798:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The only thing certain when Wabbajack is involved is uncertainty. Sometimes, even that is uncertain...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetDeadConditionData
+    RunOnTypeIndex: 0
+  ComparisonValue: 1

@@ -1,0 +1,23 @@
+FormKey: 0045B3:Dawnguard.esm
+EditorID: REQ_Conjuration4_Soulcairn
+Name:
+  TargetLanguage: English
+  Value: Soulcairn Summoning (Rank III)
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 600
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.2
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 24
+HalfCostPerk: 0C44BD:Skyrim.esm
+Effects:
+- BaseEffect: 0045B5:Dawnguard.esm
+  Data:
+    Duration: 6

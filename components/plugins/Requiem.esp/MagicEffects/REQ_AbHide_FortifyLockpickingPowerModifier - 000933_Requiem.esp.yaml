@@ -1,0 +1,27 @@
+FormKey: 000933:Requiem.esp
+EditorID: REQ_AbHide_FortifyLockpickingPowerModifier
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_UpdateLockpickHealth
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LockpickHealth
+      Object: ADE459:Requiem.esp
+      Alias: 1
+Name:
+  TargetLanguage: English
+  Value: Fortify Lockpicking
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: LockpickingPowerModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

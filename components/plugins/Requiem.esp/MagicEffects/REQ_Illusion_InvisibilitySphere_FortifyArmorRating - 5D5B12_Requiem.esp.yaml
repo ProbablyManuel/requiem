@@ -1,0 +1,42 @@
+FormKey: 5D5B12:Requiem.esp
+EditorID: REQ_Illusion_InvisibilitySphere_FortifyArmorRating
+Name:
+  TargetLanguage: English
+  Value: Fortify Armor Rating
+MenuDisplayObject: 109AC3:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingArea: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: DamageResist
+CastType: Concentration
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: All inside the sphere also gain <mag> armor rating and they cannot be aimed at precisely.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetPlayerTeammateConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 496333:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5D5B12:Requiem.esp
+  ComparisonValue: 1

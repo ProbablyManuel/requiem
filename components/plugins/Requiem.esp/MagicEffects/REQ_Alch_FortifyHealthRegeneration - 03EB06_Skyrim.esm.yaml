@@ -1,0 +1,25 @@
+FormKey: 03EB06:Skyrim.esm
+EditorID: REQ_Alch_FortifyHealthRegeneration
+Name:
+  TargetLanguage: English
+  Value: Fortify Health Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A30:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.05
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: HealRateMult
+  Association: 065A30:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health regenerates <mag>% faster for <dur> seconds.

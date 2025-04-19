@@ -1,0 +1,24 @@
+FormKey: AE372C:Requiem.esp
+EditorID: REQ_Alcohol_ResistFire
+Name:
+  TargetLanguage: English
+  Value: Resist Fire
+MenuDisplayObject: 04E264:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistFire
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Fire deals <mag>% less damage to you for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

@@ -1,0 +1,28 @@
+FormKey: 107832:Skyrim.esm
+EditorID: REQ_HeavyArmor_PowerOfTheCombatant
+Name:
+  TargetLanguage: English
+  Value: Power of the Combatant
+Description:
+  TargetLanguage: English
+  Value: 'Once a day, you can now push yourself to continue fighting.<br>[Daily power: Restore 25 stamina per second for 30 seconds, -10% armor weight penalty]'
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F6C:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: HeavyArmor
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: ADDDF0:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 009F55:Requiem.esp

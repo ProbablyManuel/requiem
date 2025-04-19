@@ -1,0 +1,27 @@
+FormKey: 029B4A:Skyrim.esm
+EditorID: StaffEnchParalyze
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Paralysis
+EnchantmentCost: 400
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 400
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 01EA6E:Skyrim.esm
+  Data:
+    Duration: 2
+- BaseEffect: 0A44C0:Skyrim.esm
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 035D59:Skyrim.esm
+    ComparisonValue: 1

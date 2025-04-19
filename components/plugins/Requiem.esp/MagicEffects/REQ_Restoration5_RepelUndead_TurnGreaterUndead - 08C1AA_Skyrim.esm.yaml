@@ -1,0 +1,78 @@
+FormKey: 08C1AA:Skyrim.esm
+EditorID: REQ_Restoration5_RepelUndead_TurnGreaterUndead
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicAttachAshPileOnDeath
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicEffectShader
+      Object: 08C1A9:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ShaderDuration
+      Data: 4
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB884:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Turn Greater Undead
+Keywords:
+- 0806E1:Skyrim.esm
+- 0BD83F:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- FXPersist
+- PowerAffectsDuration
+- NoDeathDispel
+BaseCost: 7
+MagicSkill: Restoration
+CastingLight: 04C6DC:Skyrim.esm
+HitShader: 04C6D8:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingArea: 80
+SpellmakingCastingTime: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: TurnUndead
+Explosion: 08C1AC:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 0E755B:Skyrim.esm
+ImpactData: 04C6DA:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 0E755C:Skyrim.esm
+ImageSpaceModifier: 04780A:Skyrim.esm
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 0960E9:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 057C65:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster sets undead up to level <mag> on fire and makes them flee for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

@@ -1,0 +1,22 @@
+FormKey: 061D0B:Requiem.esp
+EditorID: REQ_Effect_Alchemy_NightVision_Ingredients
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AlchemyPerkIngredients
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RemoveWhenDone
+      Object: 0F836E:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: INGREDIENTS
+      Objects:
+      - Name: ''
+        Object: 06BC07:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

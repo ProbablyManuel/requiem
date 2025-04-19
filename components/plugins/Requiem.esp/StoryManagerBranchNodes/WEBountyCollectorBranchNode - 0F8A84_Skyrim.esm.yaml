@@ -1,0 +1,20 @@
+FormKey: 0F8A84:Skyrim.esm
+EditorID: WEBountyCollectorBranchNode
+Version2: 2
+Parent: 0896A8:Skyrim.esm
+PreviousSibling: 0896A9:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 10FDC9:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 25
+Flags: []
+MaxConcurrentQuests: 0

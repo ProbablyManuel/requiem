@@ -1,0 +1,46 @@
+FormKey: 0E40C9:Skyrim.esm
+EditorID: REQ_NULL_RaceImperialPacify
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VoiceCharmFactionScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CharmFaction
+      Object: 08F3E8:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bMakePlayerTeammate
+Name:
+  TargetLanguage: English
+  Value: Pacify
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- DispelWithKeywords
+- FXPersist
+- NoRecast
+- PowerAffectsDuration
+- Painless
+TaperWeight: 1
+HitShader: 084B39:Skyrim.esm
+SpellmakingArea: 75
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Calm
+Explosion: 0F5076:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+ImageSpaceModifier: 084B38:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Calms nearby people for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013794:Skyrim.esm
+  ComparisonValue: 1

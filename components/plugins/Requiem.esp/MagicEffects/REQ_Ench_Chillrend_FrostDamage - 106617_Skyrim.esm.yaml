@@ -1,0 +1,32 @@
+FormKey: 106617:Skyrim.esm
+EditorID: REQ_Ench_Chillrend_FrostDamage
+Name:
+  TargetLanguage: English
+  Value: Frost Damage
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 1
+ResistValue: ResistFrost
+HitShader: 10A044:Skyrim.esm
+EnchantShader: 10A043:Skyrim.esm
+SecondActorValueWeight: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Stamina
+DualCastScale: 1
+EnchantArt: 10A045:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> frost damage and twice as much stamina damage.

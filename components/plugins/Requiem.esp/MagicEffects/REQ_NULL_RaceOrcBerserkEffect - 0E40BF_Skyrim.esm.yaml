@@ -1,0 +1,41 @@
+FormKey: 0E40BF:Skyrim.esm
+EditorID: REQ_NULL_RaceOrcBerserkEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicimodbeginloopend
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 0FD7DA:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 1.75
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 0FD7DC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LoopFX
+      Object: 0FD7DB:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bPlayerOnly
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Berserk
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+HitShader: 0FD7D9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+PerkToApply: 0E40C0:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You take half damage and do double damage for <dur> seconds.

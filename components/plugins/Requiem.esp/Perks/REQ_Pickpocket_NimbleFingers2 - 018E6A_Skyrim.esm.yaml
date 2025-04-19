@@ -1,0 +1,47 @@
+FormKey: 018E6A:Skyrim.esm
+EditorID: REQ_Pickpocket_NimbleFingers2
+Name:
+  TargetLanguage: English
+  Value: Nimble Fingers
+Description:
+  TargetLanguage: English
+  Value: Your fingers have become very nimble, and besides other advantages, they allow you to <br> pickpocket even better and to apply poisons on your victims. Why fight if a vial of deadly venom can also do the trick?
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE124:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 5
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 100
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDetectedConditionData
+        TargetNpc: 000014:Skyrim.esm
+  EntryPoint: ModPickpocketChance
+  PerkConditionTabCount: 3
+  Modification: Add
+  Value: 40
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDetectedConditionData
+        TargetNpc: 000014:Skyrim.esm
+  EntryPoint: ShouldApplyPlacedItem
+  PerkConditionTabCount: 3
+  Value: 1

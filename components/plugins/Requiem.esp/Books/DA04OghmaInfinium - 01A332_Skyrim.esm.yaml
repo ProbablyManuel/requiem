@@ -1,0 +1,47 @@
+FormKey: 01A332:Skyrim.esm
+EditorID: DA04OghmaInfinium
+VirtualMachineAdapter:
+  Scripts:
+  - Name: OghmaInfiniumScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChoiceMessage
+      Object: 0F6010:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: HasBeenRead
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA04
+      Object: 02D512:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MySelf
+      Object: 01A332:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: Advancement
+      Data: 5
+ObjectBounds:
+  First: -12, -16, -5
+  Second: 11, 16, 4
+Name:
+  TargetLanguage: English
+  Value: Oghma Infinium
+Model:
+  File: Clutter\Books\Book02OhgmaLowPoly.nif
+  Data: 0x020000000400000000000000FA20859A64647300B5139F09BEBE144264647300B5139F09CD6472C964647300B5139F09F4C8A2A364647300B5139F09
+BookText:
+  TargetLanguage: English
+  Value: >-
+    <img src='img://Textures/Interface/Books/Daedric Artifact book/Daedric Artifac00.png' height='471' width='296'>
+
+    <img src='img://Textures/Interface/Books/Daedric Artifact book/Daedric Artifact01.png' height='471' width='296'>
+Keywords:
+- 0917E8:Skyrim.esm
+- 0A8668:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Teaches:
+  MutagenObjectType: BookTeachesNothing
+Value: 80000
+Weight: 1
+InventoryArt: 08ADB2:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

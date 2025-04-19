@@ -1,0 +1,35 @@
+FormKey: 0E1FEF:Skyrim.esm
+EditorID: MGR2DrainMagickaEffect
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: Drain Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoArea
+- HideInUI
+MagicSkill: Restoration
+CastingLight: 06EBCC:Skyrim.esm
+HitShader: 06DE84:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Magicka
+Projectile: 012E84:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 06DE85:Skyrim.esm
+HitEffectArt: 06DE86:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,48 @@
+FormKey: AD3709:Requiem.esp
+EditorID: REQ_Ench_Bolt_Daedric_Shock
+ObjectBounds:
+  First: -11, -1, -4
+  Second: 9, 1, 0
+Name:
+  TargetLanguage: English
+  Value: Daedric Bolt of Shock
+Model:
+  File: Requiem\ammo\steel\steel_bolt_magic.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Arrow1
+    NewTexture: AD3835:Requiem.esp
+    Index: 3
+  - Name: Arrow2
+    NewTexture: AD3835:Requiem.esp
+    Index: 5
+  - Name: Arrow3
+    NewTexture: AD3835:Requiem.esp
+    Index: 4
+  - Name: Arrow4
+    NewTexture: AD3835:Requiem.esp
+    Index: 2
+  - Name: Arrow:0
+    NewTexture: AD3835:Requiem.esp
+  - Name: ArrowQuiver:1
+    NewTexture: AD3835:Requiem.esp
+    Index: 6
+  - Name: charge
+    NewTexture: AD3834:Requiem.esp
+    Index: 1
+PickUpSound: 00D219:Dawnguard.esm
+PutDownSound: 00D21A:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: Explodes for <100> shock damage. Does triple damage to constructs.
+Keywords:
+- 01E71F:Skyrim.esm
+- 0917E7:Skyrim.esm
+- 9D1F4C:Requiem.esp
+- AD397C:Requiem.esp
+- AD3A4E:Requiem.esp
+- AD3B2D:Requiem.esp
+- ADDDD2:Requiem.esp
+Projectile: AD36EB:Requiem.esp
+Damage: 140
+Value: 90

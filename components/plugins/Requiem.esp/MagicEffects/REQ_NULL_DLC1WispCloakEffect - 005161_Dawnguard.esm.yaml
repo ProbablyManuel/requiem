@@ -1,0 +1,51 @@
+FormKey: 005161:Dawnguard.esm
+EditorID: REQ_NULL_DLC1WispCloakEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1WispShieldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDLC1SCKeeperEffect
+      Object: 00686A:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1SunDamageFFAimedArea
+      Object: 00844B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1SunDamageFFAimed
+      Object: 003F50:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1PCVampireAbsorbHealthConcAimed
+      Object: 00A26B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1PCVampireAbsorbHealthFFAimed
+      Object: 019321:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1AbKeeperWispCloak
+      Object: 005160:Dawnguard.esm
+  - Name: MagicPlayEffectShaderOnHitScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicEffectShader
+      Object: 10DEAB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Armor - Wisp Cloak
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01EA72:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 0.3
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

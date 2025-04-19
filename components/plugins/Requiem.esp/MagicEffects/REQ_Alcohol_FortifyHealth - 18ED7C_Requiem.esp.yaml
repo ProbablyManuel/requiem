@@ -1,0 +1,50 @@
+FormKey: 18ED7C:Requiem.esp
+EditorID: REQ_Alcohol_FortifyHealth
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magiceffectshaderapply
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDuration
+      Data: 1
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bUseDuration
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX
+      Object: AD3927:Requiem.esp
+  - Name: REQ_AlcoholScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AlcoholLevelStorage
+      Object: AE372A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: controller
+      Object: AD3B46:Requiem.esp
+      Alias: 2
+Name:
+  TargetLanguage: English
+  Value: Fortify Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Type: OnHit
+  Sound: AD3A5E:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: Numbs your sense of pain, making you feel healthier by <mag> for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

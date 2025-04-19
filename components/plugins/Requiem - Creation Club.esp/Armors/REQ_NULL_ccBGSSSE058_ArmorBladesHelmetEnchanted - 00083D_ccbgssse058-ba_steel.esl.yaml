@@ -1,0 +1,46 @@
+FormKey: 00083D:ccbgssse058-ba_steel.esl
+EditorID: REQ_NULL_ccBGSSSE058_ArmorBladesHelmetEnchanted
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 200
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000823:ccbgssse058-ba_steel.esl
+Name:
+  TargetLanguage: English
+  Value: Steel Soldier Helmet
+ObjectEffect: 0AD484:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE058\Armor\Steel\SteelHelmetGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Hair
+  - Circlet
+  - Ears
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBE6:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080A:ccbgssse058-ba_steel.esl
+- 00080F:ccbgssse058-ba_steel.esl
+- 00080B:ccbgssse058-ba_steel.esl
+Value: 150
+Weight: 5
+ArmorRating: 18

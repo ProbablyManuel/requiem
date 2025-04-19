@@ -1,0 +1,35 @@
+FormKey: 06BC0A:Skyrim.esm
+EditorID: AntlersLarge
+ObjectBounds:
+  First: -29, -35, -17
+  Second: 36, 34, 12
+Name:
+  TargetLanguage: English
+  Value: Large Antlers
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\BigAntlers.nif
+  Data: 0x020000000200000000000000F61584F8646473000C54DE96905712B8646473000C54DE96
+Value: 25
+Weight: 2
+IngredientValue: 25
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1.5
+    Duration: 20
+- BaseEffect: 03EAF9:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 120
+- BaseEffect: 073F25:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5
+- BaseEffect: 073F2C:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5

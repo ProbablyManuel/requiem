@@ -1,0 +1,20 @@
+FormKey: 017763:Dragonborn.esm
+EditorID: REQ_Ench_Staff_Alteration_Paralyze
+Items:
+- Item:
+    Item: 07E646:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 017749:Dragonborn.esm
+    Count: 4
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Spell: 05AD5F:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 029B73:Skyrim.esm
+WorkbenchKeyword: 017738:Dragonborn.esm
+CreatedObjectCount: 1

@@ -1,0 +1,43 @@
+FormKey: AE38C2:Requiem.esp
+EditorID: REQ_Ench_MiraaksSword_Paralyze
+Name:
+  TargetLanguage: English
+  Value: Paralyze
+MenuDisplayObject: 038305:Dragonborn.esm
+Keywords:
+- 01EA70:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+HitShader: 06DE84:Skyrim.esm
+EnchantShader: 0397F7:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+CastType: FireAndForget
+TargetType: Touch
+HitEffectArt: 06DE86:Skyrim.esm
+DualCastScale: 1
+EnchantArt: 0397F5:Dragonborn.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Paralyzes the target for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 357085:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData

@@ -1,0 +1,302 @@
+FormKey: 0B5D41:Skyrim.esm
+EditorID: WEJS02
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_WEJS02_000B5D41
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 0B5D41:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AppropriateLocation
+      Object: 0B5D41:Skyrim.esm
+      Alias: 52
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BalbusFork
+      Object: 0B5D41:Skyrim.esm
+      Alias: 50
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SpiderEgg
+      Object: 0B5D41:Skyrim.esm
+      Alias: 48
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Balbus
+      Object: 0B5D41:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 0B5D41:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 0B5D41:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Heart
+      Object: 0B5D41:Skyrim.esm
+      Alias: 47
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_trollFat
+      Object: 0B5D41:Skyrim.esm
+      Alias: 49
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 0B5D41:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: USLEEPWEJS02IsDone
+      Object: 0A28A4:unofficial skyrim special edition patch.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CenterMarker
+      Object: 0B5D41:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 0B5D41:Skyrim.esm
+      Alias: 6
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
+  FileName: QF_WEJS02_000B5D41
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_WEJS02_000B5D41
+    FragmentName: Fragment_1
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WEJS02_000B5D41
+    FragmentName: Fragment_5
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_WEJS02_000B5D41
+    FragmentName: Fragment_7
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0B5D41:Skyrim.esm
+      Alias: 39
+    Scripts:
+    - Name: wealiasscript
+    - Name: WECrimeFactionAliasScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionEastmarch
+        Object: 0267E3:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionFalkreath
+        Object: 028170:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ReachHoldLocation
+        Object: 016769:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionReach
+        Object: 02816C:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: WinterholdHoldLocation
+        Object: 01676B:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myHoldLocation
+        Object: 0B5D41:Skyrim.esm
+        Alias: 4
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PaleHoldLocation
+        Object: 01676D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionHjaalmarch
+        Object: 02816D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionPale
+        Object: 02816E:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionWhiterun
+        Object: 0267EA:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: RiftHoldLocation
+        Object: 01676C:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FalkreathHoldLocation
+        Object: 01676F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: WhiterunHoldLocation
+        Object: 016772:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionHaafingar
+        Object: 029DB0:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EastmarchHoldLocation
+        Object: 01676A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionRift
+        Object: 02816B:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HaafingarHoldLocation
+        Object: 016770:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HjaalmarchHoldLocation
+        Object: 01676E:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionWinterhold
+        Object: 02816F:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: DB08- Finding the Gourmet
+Flags:
+- 0x4
+Priority: 50
+QuestFormVersion: 65
+Type: Misc
+Event: SCPT
+Filter: Wilderness Encounters\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadCountConditionData
+    Npc: 0B5D42:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0A28A4:unofficial skyrim special edition patch.esp
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+- Index: 50
+- Index: 60
+- Index: 100
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+NextAliasID: 53
+Aliases:
+- ID: 1
+  Name: TRIGGER
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: myHoldLocation
+  Flags:
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 52
+  Type: Location
+  Name: AppropriateLocation
+  Flags:
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocAliasIsLocationConditionData
+      LocationAliasIndex: 4
+      Location: 01676D:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocAliasIsLocationConditionData
+      LocationAliasIndex: 4
+      Location: 01676B:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocAliasIsLocationConditionData
+      LocationAliasIndex: 4
+      Location: 016770:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocAliasIsLocationConditionData
+      LocationAliasIndex: 4
+      Location: 01676E:Skyrim.esm
+- ID: 6
+  Type: Location
+  Name: myHoldContested
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 7
+  Type: Location
+  Name: myHoldImperial
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 8
+  Type: Location
+  Name: myHoldSons
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 9
+  Name: CenterMarker
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5FE:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 39
+  Name: Balbus
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0B5D42:Skyrim.esm
+    AliasID: 9
+    Level: Medium
+  PackageData:
+  - 0BFB6B:Skyrim.esm
+  VoiceTypes: Null
+- ID: 47
+  Name: Heart
+  Flags: []
+  CreateReferenceToObject:
+    Object: 04365E:Requiem.esp
+    AliasID: 9
+  VoiceTypes: Null
+- ID: 48
+  Name: SpiderEgg
+  Flags: []
+  CreateReferenceToObject:
+    Object: 09151B:Skyrim.esm
+    AliasID: 9
+  VoiceTypes: Null
+- ID: 49
+  Name: TrollFat
+  Flags: []
+  CreateReferenceToObject:
+    Object: 03AD72:Skyrim.esm
+    AliasID: 9
+  VoiceTypes: Null
+- ID: 50
+  Name: BalbusFork
+  Flags: []
+  CreateReferenceToObject:
+    Object: 1058AA:Skyrim.esm
+    AliasID: 9
+  VoiceTypes: Null

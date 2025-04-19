@@ -1,0 +1,17 @@
+FormKey: 4068CA:Requiem.esp
+EditorID: REQ_HazardSpell_RuneOfDampeningSound
+Name:
+  TargetLanguage: English
+  Value: Rune Of Dampening - Reduced Casting Sound
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 4068C6:Requiem.esp
+  Data:
+    Duration: 2

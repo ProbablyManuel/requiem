@@ -1,0 +1,76 @@
+FormKey: 10DE5F:Skyrim.esm
+EditorID: REQ_Alch_LingeringDamageMagicka
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MagicImodOnPlayerHitScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OnStartImodFX
+      Object: 10E3D2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OnFinishImodFX
+      Object: 10E3D3:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Lingering Damage Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 042509:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+ResistValue: PoisonResist
+HitShader: 10CC64:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Drains the target's magicka by <mag> per second for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsBlockingConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetRelativeAngleConditionData
+    Axis: Z
+  ComparisonValue: 145
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRelativeAngleConditionData
+    Axis: Z
+  ComparisonValue: 215
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 01EA69:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetRelativeAngleConditionData
+    Axis: Z
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRelativeAngleConditionData
+    Axis: Z
+  ComparisonValue: 260

@@ -1,0 +1,31 @@
+FormKey: 03A9D6:Skyrim.esm
+EditorID: EldergleamSanctuaryWorld
+Version2: 10
+Name:
+  TargetLanguage: English
+  Value: Eldergleam Sanctuary
+FixedDimensionsCenterCell: 29, -5
+InteriorLighting: 04C9B1:Skyrim.esm
+EncounterZone: 03EC12:Skyrim.esm
+Location: 0192AC:Skyrim.esm
+Parent:
+  Worldspace: 00003C:Skyrim.esm
+  Flags:
+  - UseMapData
+  - UseClimateData
+Water: 000018:Skyrim.esm
+LodWater: 000018:Skyrim.esm
+LodWaterHeight: 0
+LandDefaults:
+  DefaultLandHeight: -2048
+  DefaultWaterHeight: -5000
+WorldMapOffsetScale: 1
+WorldMapCellOffset: 0, 0, -12288
+DistantLodMultiplier: 1
+Flags:
+- SmallWorld
+- CannotFastTravel
+- FixedDimensions
+ObjectBoundsMin: -1, -8
+ObjectBoundsMax: 32, 1
+Music: 094BDD:Skyrim.esm

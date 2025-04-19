@@ -1,0 +1,66 @@
+FormKey: 0A87C5:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RavenscarHollow01
+Version2: 6
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ravenscar Hollow
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#001B1E23'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  DirectionalFade: 1
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#001D1E24'
+    DirectionalXMinus: '#00181E21'
+    DirectionalYPlus: '#001B1F23'
+    DirectionalYMinus: '#001B1C23'
+    DirectionalZPlus: '#000C0E0F'
+    DirectionalZMinus: '#00292D36'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019291:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC59:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 03D4D7:Skyrim.esm
+  Version2: 4
+  Base: 020667:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019291:Skyrim.esm
+  Placement:
+    Position: 871.5245, 781.63257, 8278.728
+    Rotation: 0, -0, 1.913191
+MajorFlags:
+- 0x40000

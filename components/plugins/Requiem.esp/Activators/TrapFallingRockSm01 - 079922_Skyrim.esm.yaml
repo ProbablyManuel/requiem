@@ -1,0 +1,83 @@
+FormKey: 079922:Skyrim.esm
+EditorID: TrapFallingRockSm01
+Version2: 7
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PhysicsTrap
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 22
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 14
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 10
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 6
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 18
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 1000
+  - Name: PhysicsTrapHit
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseAtaxia
+      Object: 10A24A:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: cameraShakeAmount
+      Data: 0.2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseWitbane
+      Object: 10A250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBoneBreakFever
+      Object: 10A24C:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: cameraShake
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRattles
+      Object: 10A24E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBrainRot
+      Object: 10A24D:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: staggerAmount
+      Data: 0.1
+    - MutagenObjectType: ScriptBoolProperty
+      Name: trapCausesStagger
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostAbility
+      Object: 05030B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRockjoint
+      Object: 10A24F:Skyrim.esm
+ObjectBounds:
+  First: -26, -36, -27
+  Second: 21, 26, 27
+Model:
+  File: Traps\FallingRocks\TrapFallingRockSm01.nif
+  Data: 0x020000000200000000000000A140CC16646473005805E45A30D7E956646473005805E45A
+MarkerColor: '#00CC4C33'
+Flags: []

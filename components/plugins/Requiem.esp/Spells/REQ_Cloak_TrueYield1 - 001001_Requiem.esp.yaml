@@ -1,0 +1,54 @@
+FormKey: 001001:Requiem.esp
+EditorID: REQ_Cloak_TrueYield1
+Name:
+  TargetLanguage: English
+  Value: True Yield Aura 1
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 001005:Requiem.esp
+  Data:
+    Magnitude: 99
+    Duration: 86400000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsProtectedConditionData
+      RunOnTypeIndex: 0
+      FirstUnusedIntParameter: 175228720
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsEssentialConditionData
+- BaseEffect: 001006:Requiem.esp
+  Data:
+    Duration: 13
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsProtectedConditionData
+      RunOnTypeIndex: 0
+      FirstUnusedIntParameter: 175228720
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsEssentialConditionData
+- BaseEffect: 00100E:Requiem.esp
+  Data:
+    Magnitude: 99
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsProtectedConditionData
+      RunOnTypeIndex: 0
+      FirstUnusedIntParameter: 175228720
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsEssentialConditionData

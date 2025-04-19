@@ -1,0 +1,71 @@
+FormKey: 02042D:Skyrim.esm
+Version2: 12
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__0002042D
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGold
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDBSideContract01
+      Object: 01EA5B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DarkBrotherhoodQuest
+      Object: 01EA5C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LvlQuestReward01Small
+      Object: 0C0404:Skyrim.esm
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__0002042D
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__0002042D
+      FragmentName: Fragment_1
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__0002042D
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- Emotion: Happy
+  EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: 'Congratulations. You slaughtered an emaciated beggar in cold blood. You are truly an opponent to be feared. '
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Here's your payment.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 0B5E20:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 01EA5B:Skyrim.esm
+  ComparisonValue: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01C3AB:Skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Narfi is dead.

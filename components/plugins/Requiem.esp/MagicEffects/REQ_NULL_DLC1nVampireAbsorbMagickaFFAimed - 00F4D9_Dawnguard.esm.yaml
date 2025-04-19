@@ -1,0 +1,29 @@
+FormKey: 00F4D9:Dawnguard.esm
+EditorID: REQ_NULL_DLC1nVampireAbsorbMagickaFFAimed
+Name:
+  TargetLanguage: English
+  Value: Amulet Drain Magicka
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistMagic
+TaperWeight: 1
+HitShader: 0ABF08:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+  Type: Absorb
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,21 @@
+FormKey: 03B563:Dragonborn.esm
+EditorID: REQ_NULL_DLC2dunHaknirSetAbility
+Name:
+  TargetLanguage: English
+  Value: Deathbrand Instinct
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 2218
+Type: Ability
+Effects:
+- BaseEffect: 017120:Skyrim.esm
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 024022:Dragonborn.esm
+    ComparisonValue: 4

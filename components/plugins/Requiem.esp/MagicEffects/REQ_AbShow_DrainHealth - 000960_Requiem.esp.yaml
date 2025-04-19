@@ -1,0 +1,19 @@
+FormKey: 000960:Requiem.esp
+EditorID: REQ_AbShow_DrainHealth
+Name:
+  TargetLanguage: English
+  Value: Drain Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health decreases by <mag>.

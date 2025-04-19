@@ -1,0 +1,29 @@
+FormKey: 079355:Skyrim.esm
+EditorID: REQ_Block_ExperiencedBlocking
+Name:
+  TargetLanguage: English
+  Value: Experienced Blocking
+Description:
+  TargetLanguage: English
+  Value: With weapon or shield you can block almost any blow with rock-solid confidence.<br>[Block 50% more damage, recover some stamina when blocking a hit]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Block
+  ComparisonValue: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BCCAE:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  EntryPoint: ModPercentBlocked
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.5

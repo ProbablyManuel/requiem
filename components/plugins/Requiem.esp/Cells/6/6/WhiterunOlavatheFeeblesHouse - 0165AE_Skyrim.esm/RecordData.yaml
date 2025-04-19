@@ -1,0 +1,68 @@
+FormKey: 0165AE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunOlavatheFeeblesHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Olava the Feeble's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 1200
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#003E3533'
+    DirectionalXMinus: '#0033352E'
+    DirectionalYPlus: '#00393731'
+    DirectionalYMinus: '#00393231'
+    DirectionalZPlus: '#001B1916'
+    DirectionalZMinus: '#0056504B'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F879:Skyrim.esm
+Owner: 093B1E:Skyrim.esm
+LockList: 093AFE:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 016649:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 024E26:Skyrim.esm
+  TeleportDestination:
+    Door: 01A6F8:Skyrim.esm
+    Position: 22156.785, -9275.494, -3615.0605
+    Rotation: 0, 0, 6.2596164
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 093B0E:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0C8301:Skyrim.esm
+  Owner: 093B1E:Skyrim.esm
+  LocationReference: 01F879:Skyrim.esm
+  Placement:
+    Position: 8.498585, -372.74313, 148.32544
+    Rotation: 0, 0, 1.5707964
+MajorFlags:
+- 0x40000

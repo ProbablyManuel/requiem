@@ -1,0 +1,39 @@
+FormKey: 10E834:Skyrim.esm
+EditorID: REQ_Alteration0_TransmuteBlood_RestoreMagicka
+Name:
+  TargetLanguage: English
+  Value: Restore Magicka
+Keywords:
+- 01CEB0:Skyrim.esm
+Flags:
+- DispelWithKeywords
+- NoDuration
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 1
+MagicSkill: Alteration
+CastingLight: 0ABF06:Skyrim.esm
+TaperWeight: 1
+HitShader: 092DEC:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: Concentration
+CastingArt: 0ABF0F:Skyrim.esm
+HitEffectArt: 04E223:Skyrim.esm
+SkillUsageMultiplier: 0.1
+DualCastScale: 1
+ImageSpaceModifier: 0ABF17:Skyrim.esm
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValuePercentConditionData
+    ActorValue: Magicka
+  ComparisonValue: 1

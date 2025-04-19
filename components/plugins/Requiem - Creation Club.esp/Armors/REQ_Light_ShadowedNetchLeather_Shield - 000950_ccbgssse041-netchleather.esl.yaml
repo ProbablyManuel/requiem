@@ -1,0 +1,52 @@
+FormKey: 000950:ccbgssse041-netchleather.esl
+MajorRecordFlagsRaw: 64
+EditorID: REQ_Light_ShadowedNetchLeather_Shield
+SkyrimMajorRecordFlags:
+- 0x40
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 1010
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00094A:ccbgssse041-netchleather.esl
+Name:
+  TargetLanguage: English
+  Value: Shadowed Netch Leather Shield
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE041\Armor\NetchLeather\NetchLeatherShield.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: NetchLeatherShield:0
+        NewTexture: 000948:ccbgssse041-netchleather.esl
+      - Name: NetchLeatherShield:1
+        NewTexture: 000948:ccbgssse041-netchleather.esl
+        Index: 1
+BodyTemplate:
+  FirstPersonFlags:
+  - Shield
+  ActsLike44: True
+EquipmentType: 0141E8:Skyrim.esm
+BashImpactDataSet: 0183FE:Skyrim.esm
+AlternateBlockMaterial: 016979:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 08F959:Skyrim.esm
+- 0965B2:Skyrim.esm
+- 06BBD3:Skyrim.esm
+- ADDD70:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 000960:ccbgssse041-netchleather.esl
+Value: 100
+Weight: 2.5
+ArmorRating: 90
+MajorFlags:
+- Shield

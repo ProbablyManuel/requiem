@@ -1,0 +1,200 @@
+FormKey: 0A34D7:Skyrim.esm
+EditorID: Favor257
+VirtualMachineAdapter:
+  Scripts:
+  - Name: FavorChangeLocationQuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorTimeLeft
+      Object: 05CDC8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorLocation
+      Object: 0A34D7:Skyrim.esm
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bDisplayObjective
+  - Name: QF_Favor257_000A34D7
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor256QuestGiverFaction
+      Object: 0A34D6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorReward
+      Object: 035217:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor253QuestGiverFaction
+      Object: 0A2CA2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor254QuestGiverFaction
+      Object: 0A2CA7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor255QuestGiverFaction
+      Object: 0A34CF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_JarlWeapon
+      Object: 0A34D7:Skyrim.esm
+      Alias: 31
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor257QuestGiverFaction
+      Object: 0A34DA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HousePurchase
+      Object: 0A7B33:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Location
+      Object: 0A34D7:Skyrim.esm
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardArmor
+      Object: 04930B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardGold
+      Object: 0494DF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorJarlsMakeFriends
+      Object: 087E24:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor250QuestGiverFaction
+      Object: 0A2C87:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorJarlsMakeFriends
+      Object: 087E24:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Hold
+      Object: 0A34D7:Skyrim.esm
+      Alias: 28
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestGiver
+      Object: 0A34D7:Skyrim.esm
+      Alias: 17
+  FileName: QF_Favor257_000A34D7
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_Favor257_000A34D7
+    FragmentName: Fragment_5
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_Favor257_000A34D7
+    FragmentName: Fragment_4
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_Favor257_000A34D7
+    FragmentName: Fragment_0
+  - Stage: 25
+    Unknown2: 1
+    ScriptName: QF_Favor257_000A34D7
+    FragmentName: Fragment_12
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_Favor257_000A34D7
+    FragmentName: Fragment_13
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0A34D7:Skyrim.esm
+      Alias: 17
+    Scripts:
+    - Name: favornpcdeathscript
+    - Name: SwapJobAliasScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: JobFaction
+        Object: 050920:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: ObjectiveToRedisplay
+        Data: 10
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MasterJobAlias
+        Object: 02430E:Skyrim.esm
+        Alias: 0
+Name:
+  TargetLanguage: English
+  Value: Thane of Winterhold
+Priority: 45
+QuestFormVersion: 65
+Type: Misc
+Event: CLOC
+Filter: Favor\
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 14
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 20
+  Unknown: 27
+  LogEntries:
+  - Flags: []
+- Index: 25
+  LogEntries:
+  - Flags: []
+- Index: 200
+  Unknown: 110
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 15
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to <Alias.ShortName=QuestGiver>
+  Targets:
+  - AliasID: 17
+NextAliasID: 32
+Aliases:
+- ID: 27
+  Type: Location
+  Name: Location
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: CLOC
+    EventData: 0x4C320000
+- ID: 17
+  Name: QuestGiver
+  Flags:
+  - ReservesLocationOrReference
+  - StoresText
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 27
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050920:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 0A34DA:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 28
+  Type: Location
+  Name: Hold
+  Flags:
+  - StoresText
+  Location:
+    AliasID: 17
+    Keyword: 016771:Skyrim.esm
+- ID: 31
+  Name: JarlWeapon
+  Flags:
+  - QuestObject
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 1AA25A:Requiem.esp
+    AliasID: 17
+  VoiceTypes: Null

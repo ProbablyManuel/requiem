@@ -1,0 +1,18 @@
+FormKey: 0008A3:Requiem.esp
+EditorID: REQ_AbShow_ReflectDamage
+Name:
+  TargetLanguage: English
+  Value: Reflect Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ReflectDamage
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Attackers take <mag>% of the inflicted melee damage.

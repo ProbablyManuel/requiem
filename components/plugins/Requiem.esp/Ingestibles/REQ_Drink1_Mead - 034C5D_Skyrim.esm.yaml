@@ -1,0 +1,30 @@
+FormKey: 034C5D:Skyrim.esm
+EditorID: REQ_Drink1_Mead
+ObjectBounds:
+  First: -3, -2, 2
+  Second: 3, 3, 24
+Name:
+  TargetLanguage: English
+  Value: Nord Mead
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Mead01.nif
+  Data: 0x02000000080000000000000063DF5C0164647300BFFA25DAB9FB95CF64647300BFFA25DAFAE0BBA4646473007F66A5C0CE353C0964647300262C333BFD5A856264647300BFFA25DAEA2164A764647300604DDD5C98A1D17F64647300604DDD5CF90E5C2E64647300604DDD5C
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 5
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 300
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 450

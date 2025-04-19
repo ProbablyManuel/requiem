@@ -1,0 +1,28 @@
+FormKey: 0EDB2E:Skyrim.esm
+EditorID: REQ_Food_Meat_Raw_Dog
+ObjectBounds:
+  First: -14, -5, 0
+  Second: 14, 20, 9
+Name:
+  TargetLanguage: English
+  Value: Dog Meat
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\DogMeat.nif
+  Data: 0x020000000200000000000000F2B7970164647300604DDD5C43A9A6E464647300604DDD5C
+Weight: 1
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1200
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

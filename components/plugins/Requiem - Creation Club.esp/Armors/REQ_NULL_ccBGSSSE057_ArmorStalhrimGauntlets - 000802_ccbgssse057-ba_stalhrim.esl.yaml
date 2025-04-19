@@ -1,0 +1,44 @@
+FormKey: 000802:ccbgssse057-ba_stalhrim.esl
+EditorID: REQ_NULL_ccBGSSSE057_ArmorStalhrimGauntlets
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00081A:ccbgssse057-ba_stalhrim.esl
+ObjectBounds:
+  First: -12, -18, 0
+  Second: 12, 18, 13
+Name:
+  TargetLanguage: English
+  Value: Stalhrim Fur Gauntlets
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE057\Armor\StalhrimArmor\GauntletsGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 02C178:Skyrim.esm
+- 06BBD2:Skyrim.esm
+- 06C0EF:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+- 024106:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080C:ccbgssse057-ba_stalhrim.esl
+Value: 450
+Weight: 7
+ArmorRating: 19

@@ -1,0 +1,78 @@
+FormKey: 01F358:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Ansilvund02
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ansilvund Burial Chambers
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#001F1F1F'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00423672'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00221F20'
+    DirectionalXMinus: '#001B1F1D'
+    DirectionalYPlus: '#001F201F'
+    DirectionalYMinus: '#001F1D1F'
+    DirectionalZPlus: '#000E0E0E'
+    DirectionalZMinus: '#002F2F2F'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00423672'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01BDFD:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EBE9:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 094A7A:Skyrim.esm
+  Version2: 4
+  Base: 02065D:Skyrim.esm
+  Scale: 0.92
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 01BDFD:Skyrim.esm
+  Placement:
+    Position: 4801.9126, 437.61032, 8189.1934
+    Rotation: 0, -0, 2.415002
+- MutagenObjectType: PlacedObject
+  FormKey: 52ACD9:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0F4997:Skyrim.esm
+  RagdollData: 0x0011FB000000000000000000000000009CFAC8BF514BAEBD22F648C00000000000101640000000BA000000BA173CF0B589D5833736F9C93F
+  Placement:
+    Position: 6609.296, 2042.5111, 8001.137
+    Rotation: 0, -0, 0.9
+MajorFlags:
+- 0x40000

@@ -1,0 +1,31 @@
+FormKey: 01533A:Dawnguard.esm
+EditorID: DLC1LD_SteamEffectLingering
+Name:
+  TargetLanguage: English
+  Value: Lingering Steam Damage
+Keywords:
+- 015333:Dawnguard.esm
+Flags:
+- Hostile
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+ResistValue: ResistFire
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm

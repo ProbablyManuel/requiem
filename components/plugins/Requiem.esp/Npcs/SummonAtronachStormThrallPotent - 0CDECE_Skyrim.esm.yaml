@@ -1,0 +1,160 @@
+FormKey: 0CDECE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 537133056
+EditorID: SummonAtronachStormThrallPotent
+Version2: 7
+SkyrimMajorRecordFlags:
+- Compressed
+- 0x20000000
+ObjectBounds:
+  First: -31, -31, 0
+  Second: 31, 31, 176
+Configuration:
+  Flags:
+  - Respawn
+  - Summonable
+  - BleedoutOverride
+  MagickaOffset: 300
+  StaminaOffset: 50
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 999
+  SpeedMultiplier: 150
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Factions
+  - AIData
+  - AIPackages
+  - ModelAnimation
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 750
+Factions:
+- Faction: 02B0E5:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD87:Skyrim.esm
+Voice: 01F1D5:Skyrim.esm
+Template: 023AA8:Skyrim.esm
+Race: 0131F7:Skyrim.esm
+ActorEffect:
+- 02FB88:Skyrim.esm
+- 07E880:Skyrim.esm
+WornArmor: 06881E:Skyrim.esm
+AttackRace: 0131F7:Skyrim.esm
+Perks:
+- Perk: 0F3F0E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Class: 0AD237:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Potent Storm Thrall
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 77
+  - Key: TwoHanded
+    Value: 46
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 46
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 77
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 100
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 483
+  Magicka: 213
+  Stamina: 264
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 075D28:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0ABF38:Skyrim.esm
+DefaultOutfit: 10C1E0:Skyrim.esm
+SleepingOutfit: 10C1E0:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000
+- BleedoutOverride

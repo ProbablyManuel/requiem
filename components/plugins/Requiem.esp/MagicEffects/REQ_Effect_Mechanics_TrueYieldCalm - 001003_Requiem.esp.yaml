@@ -1,0 +1,46 @@
+FormKey: 001003:Requiem.esp
+EditorID: REQ_Effect_Mechanics_TrueYieldCalm
+Version2: 9
+Name:
+  TargetLanguage: English
+  Value: True Yield Calm
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- Painless
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Calm
+Projectile: 012FDC:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 001006:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    RunOnTypeIndex: 0
+    MagicEffect: 001005:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    RunOnTypeIndex: 0
+    MagicEffect: 001007:Requiem.esp

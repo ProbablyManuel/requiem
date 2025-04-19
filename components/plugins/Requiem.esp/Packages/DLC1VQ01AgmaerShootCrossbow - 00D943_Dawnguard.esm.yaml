@@ -1,0 +1,183 @@
+FormKey: 00D943:Dawnguard.esm
+EditorID: DLC1VQ01AgmaerShootCrossbow
+Type: Package
+PreferredSpeed: Run
+Unknown: 81
+ScheduleMonth: -1
+ScheduleDayOfWeek: 255
+ScheduleHour: -1
+ScheduleMinute: -1
+Unknown3: 0x000000
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00D06C:Dawnguard.esm
+    Stage: 130
+  ComparisonValue: 1
+PackageTemplate: 10357F:Skyrim.esm
+DataInputVersion: 15
+Data:
+- Key: 0
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationFallback
+        Type: NearSelf
+- Key: 1
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Target:
+      MutagenObjectType: PackageTargetObjectID
+      Reference: AD3746:Requiem.esp
+- Key: 2
+  Value:
+    MutagenObjectType: PackageDataObjectList
+    Data: 0
+- Key: 3
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationTarget
+        Link: 00D93E:Dawnguard.esm
+      Radius: 50
+- Key: 4
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D926:Dawnguard.esm
+- Key: 28
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D941:Dawnguard.esm
+- Key: 30
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 800
+- Key: 37
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D941:Dawnguard.esm
+- Key: 39
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D941:Dawnguard.esm
+- Key: 38
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 800
+- Key: 40
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D942:Dawnguard.esm
+- Key: 41
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D941:Dawnguard.esm
+- Key: 42
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 800
+- Key: 34
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 5
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 6
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 32
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 7
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 8
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 9
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 10
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 11
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 3
+- Key: 12
+  Value:
+    MutagenObjectType: PackageDataFloat
+    Data: 3
+- Key: 13
+  Value:
+    MutagenObjectType: PackageDataFloat
+    Data: 8
+- Key: 14
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 1
+- Key: 15
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 5
+- Key: 16
+  Value:
+    MutagenObjectType: PackageDataFloat
+- Key: 17
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 19
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 21
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 23
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 1
+- Key: 25
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 35
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 36
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+XnamMarker: 0x2B
+OnBegin:
+  Topics:
+  - MutagenObjectType: TopicReference
+OnEnd:
+  Topics:
+  - MutagenObjectType: TopicReference
+OnChange:
+  Topics:
+  - MutagenObjectType: TopicReference

@@ -1,0 +1,37 @@
+FormKey: 034D22:Skyrim.esm
+EditorID: Garlic
+ObjectBounds:
+  First: -4, -4, -2
+  Second: 4, 4, 4
+Name:
+  TargetLanguage: English
+  Value: Garlic
+Keywords:
+- 08CDEB:Skyrim.esm
+- 08CDEA:Skyrim.esm
+Model:
+  File: Plants\Garlic01.nif
+  Data: 0x0200000002000000000000004C23E06F64647300134C1EFA5F13826964647300134C1EFA
+PutDownSound: 0519D1:Skyrim.esm
+Value: 3
+Weight: 0.25
+IngredientValue: 3
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 090041:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 300
+- BaseEffect: 03EAF9:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 60
+- BaseEffect: 03EB07:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 03EB06:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60

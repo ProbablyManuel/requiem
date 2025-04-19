@@ -1,0 +1,190 @@
+FormKey: 014495:Dragonborn.esm
+EditorID: DLC2LurkerRace
+Name:
+  TargetLanguage: English
+  Value: Lurker
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 03CA72:Dragonborn.esm
+- AE359C:Requiem.esp
+- AE3AE9:Requiem.esp
+Skin: 014497:Dragonborn.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013797:Skyrim.esm
+- 0172AC:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 5F367F:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: Conjuration
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- RegenHpInCombat
+- CantOpenDoors
+- AvoidsRoads
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 1000
+- Key: Magicka
+  Value: 15
+- Key: Stamina
+  Value: 1000
+BaseCarryWeight: 9999
+BaseMass: 10
+AccelerationRate: 2
+DecelerationRate: 2
+Size: ExtraLarge
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 150
+UnarmedReach: 300
+BodyBipedObject: Body
+AimAngleTolerance: 20
+AngularAccelerationRate: 1
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\BenthicLurker\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Giant\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 020767:Dragonborn.esm
+  Female: 01F225:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 65
+    Stagger: 1
+    RecoveryTime: 1.5
+    StaminaMult: 1
+  AttackEvent: attackStart_ClubAttack1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.65
+    Flags:
+    - PowerAttack
+    StrikeAngle: 65
+    Stagger: 1.5
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_ForwardPowerAttack
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 65
+    StaminaMult: 1
+  AttackEvent: attackStart_HandSwipeAttack
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 03CEF5:Dragonborn.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 180
+    Stagger: 0.5
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_Stomp
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 65
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    AttackAngle: 180
+    StrikeAngle: 65
+    StaminaMult: 1
+  AttackEvent: attackStart_BackAttack
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 028537:Dragonborn.esm
+BehaviorGraph:
+  Male:
+    File: Actors\DLC02\BenthicLurker\BenthicLurkerProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Giant\GiantProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0AF666:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Body
+  Value: BODY
+- Key: Hands
+  Value: Arms
+- Key: Calves
+  Value: SHIELD
+EquipmentFlags:
+- HandToHand
+- Spell
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 0248B5:Dragonborn.esm

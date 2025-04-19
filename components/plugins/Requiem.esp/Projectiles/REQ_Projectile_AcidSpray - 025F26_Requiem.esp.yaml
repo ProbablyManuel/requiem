@@ -1,0 +1,24 @@
+FormKey: 025F26:Requiem.esp
+EditorID: REQ_Projectile_AcidSpray
+Name:
+  TargetLanguage: English
+  Value: Acid Spray
+Model:
+  File: Magic\PoisonSprayProjectile01.nif
+  Data: 0x020000000000000000000000
+Flags:
+- PassThroughSmallTransparent
+Type: Flame
+Speed: 1000
+Range: 728
+Light: 0FFF49:Skyrim.esm
+Explosion: 0247BE:Skyrim.esm
+MuzzleFlashDuration: 3
+FadeDuration: 2
+ImpactForce: 5
+ConeSpread: 10
+CollisionRadius: 10
+RelaunchInterval: 0.175
+MuzzleFlashModel: Effects\BlueMagicWisps.nif
+TextureFilesHashes: 0x020000000000000000000000
+SoundLevel: 1

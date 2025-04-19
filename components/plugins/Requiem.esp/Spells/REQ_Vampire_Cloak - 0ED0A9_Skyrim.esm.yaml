@@ -1,0 +1,24 @@
+FormKey: 0ED0A9:Skyrim.esm
+EditorID: REQ_Vampire_Cloak
+Name:
+  TargetLanguage: English
+  Value: Dread Cloak
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Power
+ChargeTime: 0.5
+CastType: FireAndForget
+Effects:
+- BaseEffect: 03AEA0:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 60
+- BaseEffect: 045C58:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 60

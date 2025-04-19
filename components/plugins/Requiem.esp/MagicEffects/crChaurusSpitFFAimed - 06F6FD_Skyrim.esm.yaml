@@ -1,0 +1,68 @@
+FormKey: 06F6FD:Skyrim.esm
+EditorID: crChaurusSpitFFAimed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ISM_strengthoffset
+      Data: -0.33
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_hit
+      Object: 10E3D2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 19151A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_fade
+      Object: 10E3D3:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Chaurus Spit
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 962797:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 0.5
+HitShader: 10CC64:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 07A522:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 046006:Skyrim.esm
+ImpactData: 046008:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: A vile poison that harms the victim, inflicting <mag> damage per second for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 0131EB:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 0A5601:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 015136:Dawnguard.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 0051FB:Dawnguard.esm

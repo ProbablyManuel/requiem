@@ -1,0 +1,32 @@
+FormKey: 03A484:Dragonborn.esm
+EditorID: DLC2ShrineAzura
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_TheReclamations
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: blessing
+      Object: AE3B44:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessageNotDunmer
+      Object: AE3B52:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DunmerVampireRace
+      Object: 08883D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DunmerRace
+      Object: 013742:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessageBlessingAdded
+      Object: 03BCFE:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlessingSFX
+      Object: AE3B53:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Shrine of Azura
+Model:
+  File: DLC02\Clutter\DLC02GodPlinth3.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

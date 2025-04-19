@@ -1,0 +1,48 @@
+FormKey: AD8C8C:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_Daedric
+Name:
+  TargetLanguage: English
+  Value: Daedric Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: AD8C73:Requiem.esp
+  Data:
+    Magnitude: 9
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBD4:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: AD8C73:Requiem.esp
+  Data:
+    Magnitude: 18
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBD4:Skyrim.esm
+    ComparisonValue: 2
+- BaseEffect: AD8C73:Requiem.esp
+  Data:
+    Magnitude: 27
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBD4:Skyrim.esm
+    ComparisonValue: 3
+- BaseEffect: AD8C73:Requiem.esp
+  Data:
+    Magnitude: 36
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBD4:Skyrim.esm
+    ComparisonValue: 4

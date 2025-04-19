@@ -1,0 +1,189 @@
+FormKey: 0524E5:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EncSkeleton01AmbushMelee1H
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: masterambushscript
+ObjectBounds:
+  First: -29, -34, 0
+  Second: 29, 34, 144
+Configuration:
+  Flags:
+  - Respawn
+  - DoesNotBleed
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - SpellList
+  - BaseData
+  - Inventory
+  - DefPackList
+  - AttackData
+  HealthOffset: 150
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02D1DF:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 0D7FBC:Skyrim.esm
+Voice: 0BFB2B:Skyrim.esm
+Template: 02D1DE:Skyrim.esm
+Race: 0B7998:Skyrim.esm
+WornArmor: 0B799A:Skyrim.esm
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03AF83:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03AF84:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D51:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D52:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F592:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079345:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079349:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079354:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C05:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 10FAC4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0559F8:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 09448B:Skyrim.esm
+- 088978:Skyrim.esm
+- 09BCBD:Skyrim.esm
+Class: 023C0C:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 10
+  - Key: Archery
+    Value: 10
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 20
+  Stamina: 80
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+CombatStyle: 000D0D:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0BFB2A:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

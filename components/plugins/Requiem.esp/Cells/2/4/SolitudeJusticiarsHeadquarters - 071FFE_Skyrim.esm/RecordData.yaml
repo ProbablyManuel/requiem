@@ -1,0 +1,117 @@
+FormKey: 071FFE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeJusticiarsHeadquarters
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Thalmor Headquarters
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00514B39'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00595F66'
+  FogFar: 5000
+  FogClipDistance: 5000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00594B3B'
+    DirectionalXMinus: '#00484B36'
+    DirectionalYPlus: '#00514E39'
+    DirectionalYMinus: '#00514739'
+    DirectionalZPlus: '#00262319'
+    DirectionalZMinus: '#007B7258'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#003E4246'
+  FogMax: 0.2
+  LightFadeBegin: 4000
+  LightFadeEnd: 5000
+  Inherits:
+  - DirectionalColor
+LightingTemplate: 06AB01:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020086:Skyrim.esm
+Owner: 039F26:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 04E666:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E64D7:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+  Base: 06A0B8:Skyrim.esm
+  LeveledItemBaseObject: 01657A:Skyrim.esm
+  LocationReference: 020086:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1912.2096, 1227.1401, -30000
+    Rotation: 0, 0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: AD3B39:Requiem.esp
+  Base: 00C86B:Dawnguard.esm
+  Scale: 0.9
+  Placement:
+    Position: -1907.1111, 1183.0867, 227.1095
+    Rotation: 0, 0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 0E64D6:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+  Base: 020163:Skyrim.esm
+  LeveledItemBaseObject: 017178:Skyrim.esm
+  LocationReference: 020086:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1893.7067, 1196.2114, -30000
+    Rotation: 0, 0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 0E64D5:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 0C5891:Skyrim.esm
+  LocationReference: 020086:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1899.0072, 1189.1697, -30000
+    Rotation: 0, 0, 1.5707964
+MajorFlags:
+- 0x40000

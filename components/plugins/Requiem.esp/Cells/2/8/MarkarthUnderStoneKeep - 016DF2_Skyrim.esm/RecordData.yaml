@@ -1,0 +1,128 @@
+FormKey: 016DF2:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthUnderStoneKeep
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Understone Keep
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#007A898D'
+  FogFar: 8500
+  FogClipDistance: 8500
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002A2728'
+    DirectionalXMinus: '#00232725'
+    DirectionalYPlus: '#00272827'
+    DirectionalYMinus: '#00272527'
+    DirectionalZPlus: '#00121211'
+    DirectionalZMinus: '#003B3B3C'
+    Specular: '#00504B43'
+    Scale: 1
+  FogFarColor: '#00474A54'
+  FogMax: 6000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0D7B14:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F316:Skyrim.esm
+Owner: 0656EB:Skyrim.esm
+AcousticSpace: 0F993E:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0647A0:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: MarkarthCastleBlacksmithMerchantChestREF
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 06479F:Skyrim.esm
+  Scale: 1.2
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01F316:Skyrim.esm
+  Placement:
+    Position: 124.11115, 2404.056, 6898.624
+    Rotation: 0, 0, 2.8336346
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0CF4EC:Skyrim.esm
+  Version2: 3
+  Base: 0747FE:Skyrim.esm
+  Owner: 0F9AB3:Skyrim.esm
+  LocationReference: 01F316:Skyrim.esm
+  Placement:
+    Position: 416.33167, 2916.439, 6896.2944
+    Rotation: 8.816654E-05, -0.0005337682, 3.5604718
+- MutagenObjectType: PlacedObject
+  FormKey: 05CBE7:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 05CBC7:Requiem.esp
+  RagdollData: 0x0058F629803A0541000000BA00D095BFDD0FC9BF46931D34D376484000657253BA9E1740060072B900E8542C000000800000008060A5C93F
+  Owner: 09438B:Skyrim.esm
+  Placement:
+    Position: -4980.2314, 60.598503, 6704.452
+    Rotation: 0, -0, 1.3000001
+- MutagenObjectType: PlacedObject
+  FormKey: 0CF580:Skyrim.esm
+  Base: 01F24A:Skyrim.esm
+  LocationReference: 01F316:Skyrim.esm
+  Placement:
+    Position: 360.49054, 2840.5566, 6967.76
+    Rotation: 0, -0, 0.6854062
+- MutagenObjectType: PlacedObject
+  FormKey: 0CF4EF:Skyrim.esm
+  Version2: 1
+  Base: 0C2C15:Skyrim.esm
+  Scale: 0.99
+  LocationReference: 01F316:Skyrim.esm
+  Placement:
+    Position: 408.52655, 2863.0352, 6932.3945
+    Rotation: -1.5707964, 0.70899934, 6.2831855
+- MutagenObjectType: PlacedObject
+  FormKey: 0CF4D7:Skyrim.esm
+  Version2: 4
+  Base: 0F5D0A:Skyrim.esm
+  Owner: 0F9AB3:Skyrim.esm
+  LocationReference: 01F316:Skyrim.esm
+  Placement:
+    Position: 415.26874, 2912.429, 6916.673
+    Rotation: -1.3436304, 0.46466747, 4.367976
+- MutagenObjectType: PlacedObject
+  FormKey: 07FB67:Skyrim.esm
+  Version2: 4
+  Base: 000845:Skyrim.esm
+  Scale: 0.92
+  Owner: 0F9AB3:Skyrim.esm
+  LocationReference: 01F316:Skyrim.esm
+  Placement:
+    Position: 355.9053, 2839.3047, 6896
+    Rotation: 0, -0, 6.021386
+- MutagenObjectType: PlacedObject
+  FormKey: 0CF56E:Skyrim.esm
+  Version2: 3
+  Base: 0261C1:Skyrim.esm
+  Owner: 0F9AB3:Skyrim.esm
+  LocationReference: 01F316:Skyrim.esm
+  Placement:
+    Position: 421.65103, 2861.9421, 6971.573
+    Rotation: -0.053496964, 0.068653286, 0.88541746
+MajorFlags:
+- 0x40000

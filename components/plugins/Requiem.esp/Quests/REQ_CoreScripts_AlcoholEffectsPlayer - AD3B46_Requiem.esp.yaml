@@ -1,0 +1,32 @@
+FormKey: AD3B46:Requiem.esp
+EditorID: REQ_CoreScripts_AlcoholEffectsPlayer
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B46:Requiem.esp
+      Alias: 2
+    Scripts:
+    - Name: REQ_AlcoholEffectsPlayer
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DrunkISM
+        Object: 000D64:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: AlcoholLevelStorage
+        Object: AE372A:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: resistAlcoholBlur
+        Object: AD3B45:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Alcohol Effects for Player'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 2
+  Name: AlcoholEffects
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

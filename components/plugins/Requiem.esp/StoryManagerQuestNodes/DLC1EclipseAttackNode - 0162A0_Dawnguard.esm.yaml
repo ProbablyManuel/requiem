@@ -1,0 +1,58 @@
+FormKey: 0162A0:Dawnguard.esm
+EditorID: DLC1EclipseAttackNode
+Version2: 4
+Parent: 01320E:Skyrim.esm
+PreviousSibling: 004210:Dawnguard.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 2E9A23:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00A26E:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0162A3:Dawnguard.esm
+  ComparisonValue: 000039:Skyrim.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 01764D:Dawnguard.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 01764E:Dawnguard.esm
+  ComparisonValue: 000039:Skyrim.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 01764E:Dawnguard.esm
+  ComparisonValue: 000039:Skyrim.esm
+Flags:
+- Random
+QuestFlags:
+- DoAllBeforeRepeating
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 01629F:Dawnguard.esm
+- Quest: 017648:Dawnguard.esm
+- Quest: 017649:Dawnguard.esm
+- Quest: 01764A:Dawnguard.esm
+- Quest: 01764B:Dawnguard.esm
+- Quest: 01764C:Dawnguard.esm

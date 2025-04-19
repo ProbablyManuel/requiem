@@ -1,0 +1,46 @@
+FormKey: 10D6A6:Skyrim.esm
+EditorID: REQ_NULL_ClothesCollegeHoodVariant1
+Name:
+  TargetLanguage: English
+  Value: Mage Hood
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\MageApprentice\MageAppHoodGND.nif
+      Data: 0x020000000200000000000000D881A315646473008544CA93C6E47744646473008544CA93
+      AlternateTextures:
+      - Name: hoodGND:0
+        NewTexture: 10D698:Skyrim.esm
+  Female:
+    Model:
+      File: Clothes\MageApprentice\MageAppHood_F_GND.nif
+      Data: 0x020000000200000000000000D881A315646473000D9D1804C6E47744646473000D9D1804
+      AlternateTextures:
+      - Name: hoodGND:0
+        NewTexture: 10D696:Skyrim.esm
+      - Name: hoodGND:1
+        NewTexture: 10D696:Skyrim.esm
+        Index: 1
+BodyTemplate:
+  FirstPersonFlags:
+  - Hair
+  - Circlet
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 10CD11:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 10D6A0:Skyrim.esm
+- 10D69C:Skyrim.esm
+- 10D69E:Skyrim.esm
+Value: 1
+Weight: 1

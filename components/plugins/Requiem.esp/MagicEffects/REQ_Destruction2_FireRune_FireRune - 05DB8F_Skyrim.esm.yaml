@@ -1,0 +1,48 @@
+FormKey: 05DB8F:Skyrim.esm
+EditorID: REQ_Destruction2_FireRune_FireRune
+Name:
+  TargetLanguage: English
+  Value: Fire Rune
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 109D79:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 40
+MagicSkill: Destruction
+ResistValue: ResistFire
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 01B212:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 05DB91:Skyrim.esm
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 06051E:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 0639A4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster creates a magical rune that explodes when enemies come near, dealing <mag> fire damage.

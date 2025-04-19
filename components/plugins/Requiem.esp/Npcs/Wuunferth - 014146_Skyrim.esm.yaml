@@ -1,0 +1,227 @@
+FormKey: 014146:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Wuunferth
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrainerGoldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrainerType
+      Data: 1
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 900010:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 40
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 0267E3:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028173:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 03662A:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 036634:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05091E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 0A3F1E:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A4A:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E8261:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0FF0AB:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD7:Skyrim.esm
+Race: 067CD8:Skyrim.esm
+ActorEffect:
+- 0211F0:Skyrim.esm
+- 0640B6:Skyrim.esm
+- 072316:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231C:Skyrim.esm
+- 0BB967:Skyrim.esm
+- 0C969B:Skyrim.esm
+- 0C96A2:Skyrim.esm
+- 0CAB65:Skyrim.esm
+- 10F7F7:Skyrim.esm
+- 054FE1:Requiem.esp
+Perks:
+- Perk: 05312A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581E7:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F392E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01397E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D3:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 02F6AA:unofficial skyrim special edition patch.esp
+- 035EA6:Skyrim.esm
+Class: 0E2FCD:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Wuunferth the Unliving
+ShortName:
+  TargetLanguage: English
+  Value: Wuunferth
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 36
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 36
+  - Key: Conjuration
+    Value: 36
+  - Key: Destruction
+    Value: 99
+  - Key: Illusion
+    Value: 99
+  - Key: Restoration
+    Value: 36
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 106
+  Magicka: 161
+  Stamina: 78
+  Unused: 16743
+  Unused2: 0x425AEF
+HeadParts:
+- 02425B:Skyrim.esm
+- 051403:Skyrim.esm
+- 0C716E:Skyrim.esm
+- 0D0564:Skyrim.esm
+HairColor: 0A0438:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 10FE69:Skyrim.esm
+CrimeFaction: 0267E3:Skyrim.esm
+TextureLighting: '#00B79C91'
+FaceMorph:
+  NoseLongVsShort: 1
+  JawNarrowVsWide: -1
+  ChinNarrowVsWide: 0.82
+  ChinUpVsDown: 1
+  ChinUnderbiteVsOverbite: 1
+FaceParts:
+  Nose: 13
+TintLayers:
+- Index: 1
+  Color: '#00B79C91'
+  InterpolationValue: 1
+  Preset: 3
+MajorFlags:
+- 0x40000

@@ -1,0 +1,20 @@
+FormKey: 0E40CA:Skyrim.esm
+EditorID: REQ_NULL_PowerImperialPacify
+Name:
+  TargetLanguage: English
+  Value: Voice of the Emperor
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- AreaEffectIgnoresLOS
+Type: Power
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0E40C9:Skyrim.esm
+  Data:
+    Magnitude: 99
+    Area: 75
+    Duration: 60

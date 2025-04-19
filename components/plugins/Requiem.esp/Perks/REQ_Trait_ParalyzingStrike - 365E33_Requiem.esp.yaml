@@ -1,0 +1,13 @@
+FormKey: 365E33:Requiem.esp
+EditorID: REQ_Trait_ParalyzingStrike
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 50
+  EntryPoint: ApplyCombatHitSpell
+  PerkConditionTabCount: 3
+  Spell: 053476:Skyrim.esm

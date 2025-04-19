@@ -1,0 +1,41 @@
+FormKey: 10E2CE:Skyrim.esm
+EditorID: REQ_Cloth_Mage_Feet_Master
+ObjectBounds:
+  First: -12, -12, 0
+  Second: 11, 13, 23
+Name:
+  TargetLanguage: English
+  Value: College Boots
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\Archmage\M\ArchmageBootsGND.nif
+      Data: 0x02000000020000000000000011D363416464730020BBE1F8D9EC2ADB6464730020BBE1F8
+      AlternateTextures:
+      - Name: boots_GND:0
+        NewTexture: 10E2CB:Skyrim.esm
+  Female:
+    Model:
+      File: Clothes\Archmage\F\ArchmageBootsF_GND.nif
+      Data: 0x02000000020000000000000011D3634164647300A862336FD9EC2ADB64647300A862336F
+      AlternateTextures:
+      - Name: boots_GND:0
+        NewTexture: 10E2CC:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 10CD12:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 10E2CD:Skyrim.esm
+Value: 2
+Weight: 1

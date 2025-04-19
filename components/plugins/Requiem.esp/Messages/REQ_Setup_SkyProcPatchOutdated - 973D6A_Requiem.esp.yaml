@@ -1,0 +1,21 @@
+FormKey: 973D6A:Requiem.esp
+EditorID: REQ_Setup_SkyProcPatchOutdated
+Description:
+  TargetLanguage: English
+  Value: >-
+    It seems that you have installed a new release of Requiem without rebuilding the Requiem for the Indifferent. This step is a mandatory part of the upgrade process because the content of this plugin is tightly coupled to the Requiem version.
+
+
+    Since your current game would become unplayable, we will send you back to the main menu. Please exit Skyrim, run the Reqtificator again and then reload this savegame.
+
+
+    Requiem version: %.0f.%.0f.%.0f
+
+    Requiem for the Indifferent version: %.0f.%.0f.%.0f
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Requiem for the Indifferent is outdated

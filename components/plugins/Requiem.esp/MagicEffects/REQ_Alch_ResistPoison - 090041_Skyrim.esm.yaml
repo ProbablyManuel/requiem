@@ -1,0 +1,24 @@
+FormKey: 090041:Skyrim.esm
+EditorID: REQ_Alch_ResistPoison
+Name:
+  TargetLanguage: English
+  Value: Resist Poison
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 0F8A4E:Skyrim.esm
+- 10EB5F:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.25
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: PoisonResist
+  Association: 10EB5F:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Poison deals <mag>% less damage to you for <dur> seconds.

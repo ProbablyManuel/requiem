@@ -1,0 +1,29 @@
+FormKey: 03A327:Dragonborn.esm
+EditorID: DLC2SacredStoneTip
+Description:
+  TargetLanguage: English
+  Value: Each of Solstheim's sacred stones grants a gift of the All-Marker. The gifts vanish when leaving Solstheim and have to reacquired at the sacred stones.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 016E2A:Dragonborn.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 035440:Dragonborn.esm
+    Stage: 200
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 5
+LoadingScreenNif: 03CF09:Dragonborn.esm
+InitialScale: 0.2
+InitialRotation: -10, 0, 25
+RotationOffsetConstraints:
+  Min: -25
+  Max: 25
+InitialTranslationOffset: 0, 0, -60

@@ -1,0 +1,128 @@
+FormKey: 0133C9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiverwoodRiverwoodTrader
+Version2: 8
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Riverwood Trader
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#002D3030'
+  DirectionalColor: '#00232832'
+  FogNearColor: '#001F342E'
+  FogFar: 4000
+  DirectionalRotationZ: 150
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#001F342E'
+    Scale: 1
+  FogFarColor: '#001F342E'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01CB8D:Skyrim.esm
+Owner: 035D42:Skyrim.esm
+LockList: 09380F:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 06D546:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 078C0B:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: RiverwoodTraderMerchantContainer
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 078C0C:Skyrim.esm
+  Scale: 1.29
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 035D42:Skyrim.esm
+  LocationReference: 01CB8D:Skyrim.esm
+  Placement:
+    Position: 83.06632, 21.027796, 0.6046238
+    Rotation: 0, -0, 3.1396084
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 038BCC:Skyrim.esm
+  Version2: 3
+  Base: 09AF14:Skyrim.esm
+  Scale: 0.89
+  Owner: 01347A:Skyrim.esm
+  LocationReference: 01CB8D:Skyrim.esm
+  Placement:
+    Position: 129.87608, -413.9589, 2.861023E-05
+    Rotation: 0, -0, 6.222794
+- MutagenObjectType: PlacedObject
+  FormKey: 038BEE:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 012FEB:Skyrim.esm
+  Scale: 0.5
+  LocationReference: 01CB8D:Skyrim.esm
+  Placement:
+    Position: 165.64062, -7.575307, 0.3488071
+    Rotation: 0.0015680852, 0.0015902831, 5.7067294
+- MutagenObjectType: PlacedObject
+  FormKey: 038BED:Skyrim.esm
+  Version2: 2
+  Base: 012FE9:Skyrim.esm
+  LocationReference: 01CB8D:Skyrim.esm
+  Placement:
+    Position: 211.8653, -4.067855, 0.35786983
+    Rotation: -0.00068670214, -0.00032013224, 5.8213367
+- MutagenObjectType: PlacedObject
+  FormKey: 503322:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 2B59A9:Requiem.esp
+  Owner: 05A665:Skyrim.esm
+  Placement:
+    Position: -16.050064, -172.90704, 78.46573
+    Rotation: -0.017638555, 0.016518727, 3.7995155
+- MutagenObjectType: PlacedObject
+  FormKey: 069EB0:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 069947:Requiem.esp
+  RagdollData: 0x0025D52B000080360000A0B50000000057FAC8BFB5F159B902F348C0005C536B70FF154000007838000018B8DE83B7B582B4823731F9C93F
+  Owner: 05A665:Skyrim.esm
+  Placement:
+    Position: -37.25814, -31.057245, 56.499683
+    Rotation: 0, -0, 2.3999999
+- MutagenObjectType: PlacedObject
+  FormKey: 05ABE8:Skyrim.esm
+  Version2: 6
+  Base: 012EB7:Skyrim.esm
+  Owner: 05A665:Skyrim.esm
+  LocationReference: 01CB8D:Skyrim.esm
+  Placement:
+    Position: -50.558468, -162.80632, 80.105125
+    Rotation: -0.0149447275, -0.01939596, 2.1243165
+MajorFlags:
+- 0x40000

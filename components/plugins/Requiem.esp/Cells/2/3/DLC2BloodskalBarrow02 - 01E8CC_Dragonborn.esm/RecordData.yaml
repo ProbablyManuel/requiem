@@ -1,0 +1,90 @@
+FormKey: 01E8CC:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2BloodskalBarrow02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bloodskal Barrow
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 03A07F:Dragonborn.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03A080:Dragonborn.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A76:Requiem.esp
+  Base: 01AA2E:Dragonborn.esm
+  LevelModifier: Easy
+  PersistentLocation: 03A07F:Dragonborn.esm
+  Placement:
+    Position: 1430.9758, 4050.3772, 6413.3184
+    Rotation: 0, 0, 2.283196
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A79:Requiem.esp
+  Base: 01AA2F:Dragonborn.esm
+  LevelModifier: Easy
+  PersistentLocation: 03A07F:Dragonborn.esm
+  Placement:
+    Position: 1874.8958, 5872.6733, 6170.878
+    Rotation: 0, 0, 1.2000011
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A78:Requiem.esp
+  Base: 01AA2D:Dragonborn.esm
+  LevelModifier: Easy
+  PersistentLocation: 03A07F:Dragonborn.esm
+  Placement:
+    Position: 1901.1193, 6015.5566, 6168.472
+    Rotation: 0, 0, 2.0000024
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A77:Requiem.esp
+  Base: 01AA2D:Dragonborn.esm
+  LevelModifier: Easy
+  PersistentLocation: 03A07F:Dragonborn.esm
+  Placement:
+    Position: 2022.8468, 4049.271, 6387.6553
+    Rotation: 0, 0, 4.683188
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A75:Requiem.esp
+  Base: 01B3AA:Dragonborn.esm
+  LevelModifier: Easy
+  PersistentLocation: 03A07F:Dragonborn.esm
+  Placement:
+    Position: 1426.8849, 2882.2915, 6409.5405
+    Rotation: 0, 0, 3.4000008
+MajorFlags:
+- 0x40000

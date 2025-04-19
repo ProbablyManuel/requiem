@@ -1,0 +1,63 @@
+FormKey: 41073E:Requiem.esp
+EditorID: REQ_Illusion2_Blur_Blur
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_XPGain
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Interval
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPGain
+      Data: 0.2
+    - MutagenObjectType: ScriptStringProperty
+      Name: skill
+      Data: ILLUSION
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.5
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 410740:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Blur
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+CastingLight: 03BA90:Skyrim.esm
+HitShader: 02DF92:Skyrim.esm
+MinimumSkillLevel: 25
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: DamageResist
+CastType: FireAndForget
+CastingArt: 06F79A:Skyrim.esm
+HitEffectArt: 0339C8:Skyrim.esm
+DualCastScale: 1
+PerkToApply: 410741:Requiem.esp
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster becomes blurry, takes randomly decreased damage from ranged attacks and gains <mag> armor rating.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 415680:Requiem.esp

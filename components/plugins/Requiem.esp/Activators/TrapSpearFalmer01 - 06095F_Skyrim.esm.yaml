@@ -1,0 +1,91 @@
+FormKey: 06095F:Skyrim.esm
+MajorRecordFlagsRaw: 512
+EditorID: TrapSpearFalmer01
+Version2: 10
+SkyrimMajorRecordFlags:
+- 0x200
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrapHitBase
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseAtaxia
+      Object: 10A24A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBrainRot
+      Object: 10A24D:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: canDisease
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseWitbane
+      Object: 10A250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRockjoint
+      Object: 10A24F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRattles
+      Object: 10A24E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFX
+      Object: 01A141:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBoneBreakFever
+      Object: 10A24C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFXAmmo
+      Object: 03BDF7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostAbility
+      Object: 05030B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapHitSound
+      Object: 018E7F:Skyrim.esm
+  - Name: SpearTrap
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 35
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 100
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 100
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WindupSound
+      Object: 02951C:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 100
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 100
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 30
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 20
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 15
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 25
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 100
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 100
+ObjectBounds:
+  First: -2, -7, -390
+  Second: 6, 8, 385
+Model:
+  File: Traps\SpikeTrap\SpikeTrapFalmer.nif
+  Data: 0x0200000004000000000000008B1E6F7C64647300CEAF4F6C480D51B564647300CEAF4F6CA83708C164647300262C333BF25C582C64647300CEAF4F6C
+MarkerColor: '#00CC4C33'
+Flags: []
+MajorFlags:
+- HiddenFromLocalMap

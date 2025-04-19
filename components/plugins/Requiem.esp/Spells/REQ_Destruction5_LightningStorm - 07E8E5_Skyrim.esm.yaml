@@ -1,0 +1,26 @@
+FormKey: 07E8E5:Skyrim.esm
+EditorID: REQ_Destruction5_LightningStorm
+Name:
+  TargetLanguage: English
+  Value: Lightning Vortex
+MenuDisplayObject: 09FA64:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 100
+Flags:
+- ManualCostCalc
+- NoDualCastModification
+CastType: Concentration
+TargetType: Aimed
+HalfCostPerk: 0C44C2:Skyrim.esm
+Effects:
+- BaseEffect: 0D22FA:Skyrim.esm
+  Data:
+    Magnitude: 75
+    Duration: 1
+- BaseEffect: 045C54:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 1

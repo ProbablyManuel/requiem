@@ -1,0 +1,66 @@
+FormKey: 05D010:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MorthalGuardhouseJail
+Version2: 7
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Morthal Jail
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01EB98:Skyrim.esm
+Owner: 0F17E6:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 03EF0A:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0267E7:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 10480C:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  Owner: 02816D:Skyrim.esm
+  LocationReference: 01EB98:Skyrim.esm
+  Placement:
+    Position: 1257.054, -57.84669, 0
+    Rotation: 0, -0, 6.2657323
+MajorFlags:
+- 0x40000

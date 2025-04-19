@@ -1,0 +1,60 @@
+FormKey: 058F72:Skyrim.esm
+EditorID: REQ_Speech_SilverTongue
+Name:
+  TargetLanguage: English
+  Value: Silver Tongue
+Description:
+  TargetLanguage: English
+  Value: You've spent quite some time improving your rhetorical skills and are now able to greatly influence<br>any conversation and to fascinate the opposite gender. You also get better offers at respective vendors.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE128:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Speech
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 103
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: SameSexAsPCConditionData
+        FirstUnusedIntParameter: 1
+  EntryPoint: ModBuyPrices
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.9
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 102
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: SameSexAsPCConditionData
+        FirstUnusedIntParameter: 1
+  EntryPoint: ModSellPrices
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 100
+  EntryPoint: ModPlayerIntimidation
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 3
+- MutagenObjectType: PerkQuestEffect
+  Priority: 1
+  Quest: 05F596:Skyrim.esm
+  Stage: 60
+  Unknown: 0x000000

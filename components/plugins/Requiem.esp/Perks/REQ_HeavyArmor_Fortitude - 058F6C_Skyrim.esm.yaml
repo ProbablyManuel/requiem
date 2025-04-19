@@ -1,0 +1,25 @@
+FormKey: 058F6C:Skyrim.esm
+EditorID: REQ_HeavyArmor_Fortitude
+Name:
+  TargetLanguage: English
+  Value: Fortitude
+Description:
+  TargetLanguage: English
+  Value: Your training made you stronger and you are now less burdened by the rigidity of your armor.<br>[+40 stamina, +20 carry weight, -10% armor weight penalty]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F6F:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: HeavyArmor
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: ADDDEF:Requiem.esp

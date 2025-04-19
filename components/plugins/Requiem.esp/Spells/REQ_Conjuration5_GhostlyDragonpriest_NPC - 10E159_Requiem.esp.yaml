@@ -1,0 +1,23 @@
+FormKey: 10E159:Requiem.esp
+EditorID: REQ_Conjuration5_GhostlyDragonpriest_NPC
+Name:
+  TargetLanguage: English
+  Value: Summon Ghostly Dragonpriest
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 100
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 100
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 06F5CB:Requiem.esp
+  Data:
+    Duration: 300

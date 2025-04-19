@@ -1,0 +1,60 @@
+FormKey: 016A0C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeBardsCollege
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bards College
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00575751'
+  DirectionalColor: '#00A8C1BD'
+  FogNearColor: '#003F5E81'
+  FogFar: 5000
+  FogClipDistance: 5200
+  FogPower: 0.9
+  AmbientColors:
+    DirectionalXPlus: '#005F5754'
+    DirectionalXMinus: '#004E574D'
+    DirectionalYPlus: '#00575B51'
+    DirectionalYMinus: '#00575251'
+    DirectionalZPlus: '#00292924'
+    DirectionalZMinus: '#0084847D'
+    Specular: '#00325F65'
+    Scale: 1
+  FogFarColor: '#00325F65'
+  FogMax: 0.8
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogFar
+LightingTemplate: 06256A:Skyrim.esm
+WaterHeight: 0
+Location: 020082:Skyrim.esm
+Owner: 0C13C7:Skyrim.esm
+LockList: 0C13C8:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0E461F:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: AD3844:Requiem.esp
+  MajorRecordFlagsRaw: 1610613760
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - 0x20000000
+  - 0x40000000
+  Base: AD3845:Requiem.esp
+  Owner: 000007:Skyrim.esm
+  Placement:
+    Position: -1940.5686, 534.89075, 354.6474
+    Rotation: 6.0075107, 0.029958576, 0.20622286
+MajorFlags:
+- 0x40000

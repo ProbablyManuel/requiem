@@ -1,0 +1,69 @@
+FormKey: 016A06:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeProudspireManor
+Version2: 9
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Proudspire Manor
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00808080'
+  DirectionalColor: '#00292818'
+  FogNearColor: '#004D4D4D'
+  FogFar: 5000
+  DirectionalRotationZ: 90
+  FogClipDistance: 5000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00594B3B'
+    DirectionalXMinus: '#00484B36'
+    DirectionalYPlus: '#00514E39'
+    DirectionalYMinus: '#00514739'
+    DirectionalZPlus: '#00262319'
+    DirectionalZMinus: '#007B7258'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#0052523F'
+  FogMax: 0.8
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+LightingTemplate: 06AB01:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020098:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+EncounterZone: 0F90B1:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0E461F:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E2CD2:Skyrim.esm
+  Version2: 2
+  Base: 077773:Skyrim.esm
+  Scale: 0.58
+  LocationReference: 020098:Skyrim.esm
+  Placement:
+    Position: 890.7529, -2366.248, 52.59837
+- MutagenObjectType: PlacedObject
+  FormKey: 0D8B17:Skyrim.esm
+  Version2: 1
+  Base: 03F7F8:Skyrim.esm
+  LocationReference: 020098:Skyrim.esm
+  EnableParent:
+    Reference: 0E25D2:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -270.35638, -1292.7416, -126.94828
+    Rotation: 1.5708421, 0.08239604, 0.47529045
+MajorFlags:
+- 0x40000

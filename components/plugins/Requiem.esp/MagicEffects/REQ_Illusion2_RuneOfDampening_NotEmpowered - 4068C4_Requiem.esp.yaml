@@ -1,0 +1,39 @@
+FormKey: 4068C4:Requiem.esp
+EditorID: REQ_Illusion2_RuneOfDampening_NotEmpowered
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_PlaceHazard
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HazardType
+      Object: 4068C2:Requiem.esp
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Exclusive
+      Object: 409068:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Not Empowered
+Flags:
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If not empowered, the rune also drains the spell's essence, increasing casting costs by <20>%
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target

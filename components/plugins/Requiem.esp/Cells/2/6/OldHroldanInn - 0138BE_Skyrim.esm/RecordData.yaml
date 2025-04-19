@@ -1,0 +1,69 @@
+FormKey: 0138BE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: OldHroldanInn
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Old Hroldan Inn
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F7CB:Skyrim.esm
+Owner: 0695C6:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5856:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 0622AB:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 07110F:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 907.3642, -247.54094, 77.97265
+    Rotation: 0, -0, 5.3
+- MutagenObjectType: PlacedObject
+  FormKey: 07110E:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 899.4039, -274.30148, 77.97265
+- MutagenObjectType: PlacedObject
+  FormKey: 07110B:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1789.9263, 273.9751, 63.006577
+    Rotation: 0, -0, 0.3
+- MutagenObjectType: PlacedObject
+  FormKey: 071110:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 916.97943, -266.39224, 77.97265
+    Rotation: 0, -0, 2.3168147
+MajorFlags:
+- 0x40000

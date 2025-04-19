@@ -1,0 +1,132 @@
+FormKey: 017787:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2TelMithryn
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Tel Mithryn
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#0050482E'
+  DirectionalColor: '#004D5B5E'
+  FogNearColor: '#00877747'
+  FogFar: 5500
+  DirectionalRotationZ: 180
+  FogClipDistance: 7000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#007A7154'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - DirectionalFade
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 034F4B:Dragonborn.esm
+WaterHeight: -2.1474836E+09
+Location: 01CDEA:Dragonborn.esm
+Owner: 017775:Dragonborn.esm
+AcousticSpace: 03974D:Dragonborn.esm
+EncounterZone: 01D751:Dragonborn.esm
+Music: 033917:Dragonborn.esm
+ImageSpace: 000167:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0177C4:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0177C0:Dragonborn.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 017777:Dragonborn.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  Placement:
+    Position: 755.3787, 1828.2644, 9.088646
+    Rotation: 0, 0, 5.6831865
+- MutagenObjectType: PlacedObject
+  FormKey: 0177C3:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0177C1:Dragonborn.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 01773A:Dragonborn.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  Placement:
+    Position: 516.308, 182.49196, 9.57419
+    Rotation: 0, 0, 4.4000063
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 033DBD:Dragonborn.esm
+  Base: 03EAE4:Skyrim.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  Placement:
+    Position: 268.84735, -80.84348, 74.72951
+    Rotation: 0, 0, 0.2000025
+- MutagenObjectType: PlacedObject
+  FormKey: 033DBB:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 02D847:Skyrim.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 530.5758, 215.75755, -30000
+    Rotation: 0, 0, 1.8000034
+- MutagenObjectType: PlacedObject
+  FormKey: 033DBF:Dragonborn.esm
+  Base: 03EAE7:Skyrim.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  Placement:
+    Position: 263.64658, -60.585533, 75.99979
+    Rotation: 0, 0, 0.2000025
+- MutagenObjectType: PlacedObject
+  FormKey: 033DBE:Dragonborn.esm
+  Base: 039D0A:Skyrim.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  Placement:
+    Position: 278.80466, -67.8972, 74.63702
+    Rotation: 0, 0, 0.2000025
+- MutagenObjectType: PlacedObject
+  FormKey: 033DBC:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 07A609:Skyrim.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 531.7462, 197.54825, -30000
+    Rotation: 0, 0, 2.8817654
+MajorFlags:
+- 0x40000

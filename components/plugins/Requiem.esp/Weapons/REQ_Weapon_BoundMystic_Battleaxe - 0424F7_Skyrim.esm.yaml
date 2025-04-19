@@ -1,0 +1,56 @@
+FormKey: 0424F7:Skyrim.esm
+MajorRecordFlagsRaw: 4
+EditorID: REQ_Weapon_BoundMystic_Battleaxe
+SkyrimMajorRecordFlags:
+- NotPlayable
+ObjectBounds:
+  First: -19, -39, -2
+  Second: 22, 57, 2
+Name:
+  TargetLanguage: English
+  Value: Bound Battleaxe
+Model:
+  File: Weapons\BoundWeapons\BoundAxeHolder.nif
+  Data: 0x02000000020000000000000035FC8B236464730038973CEA777C517064647300582C5533
+ObjectEffect: 0C5BE2:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 06D932:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 036A5B:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+IdleSound: 0960E6:Skyrim.esm
+BasicStats:
+  Damage: 24
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.7
+  Reach: 1.3
+  Flags:
+  - CantDrop
+  - NonPlayable
+  - BoundWeapon
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1068708659
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.15
+Critical:
+  Damage: 12
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud
+MajorFlags:
+- NonPlayable

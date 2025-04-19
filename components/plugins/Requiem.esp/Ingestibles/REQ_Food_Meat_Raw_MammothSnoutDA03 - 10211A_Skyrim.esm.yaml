@@ -1,0 +1,28 @@
+FormKey: 10211A:Skyrim.esm
+EditorID: REQ_Food_Meat_Raw_MammothSnoutDA03
+ObjectBounds:
+  First: -24, -22, 0
+  Second: 24, 22, 15
+Name:
+  TargetLanguage: English
+  Value: Mammoth Snout
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\MammothMeat.nif
+  Data: 0x020000000200000000000000381AAD6364647300604DDD5CE82BD47D64647300604DDD5C
+Weight: 1
+Value: 24
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 20
+    Duration: 1800
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

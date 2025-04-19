@@ -1,0 +1,25 @@
+FormKey: 0AE722:Skyrim.esm
+EditorID: REQ_Alch_CureDisease
+Name:
+  TargetLanguage: English
+  Value: Cure Disease
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0F8A4E:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: CureDisease
+CastType: FireAndForget
+HitEffectArt: 04E221:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Common diseases are cured.

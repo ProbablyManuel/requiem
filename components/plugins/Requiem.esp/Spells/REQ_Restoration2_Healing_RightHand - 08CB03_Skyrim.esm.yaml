@@ -1,0 +1,30 @@
+FormKey: 08CB03:Skyrim.esm
+EditorID: REQ_Restoration2_Healing_RightHand
+Name:
+  TargetLanguage: English
+  Value: Healing
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+EquipmentType: 013F42:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 20
+Flags:
+- ManualCostCalc
+CastType: Concentration
+HalfCostPerk: 0C44C7:Skyrim.esm
+Effects:
+- BaseEffect: 01CEA4:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 1
+- BaseEffect: 04250D:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0581F9:Skyrim.esm
+    ComparisonValue: 1

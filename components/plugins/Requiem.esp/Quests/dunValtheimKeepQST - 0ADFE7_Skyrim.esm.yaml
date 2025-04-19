@@ -1,0 +1,240 @@
+FormKey: 0ADFE7:Skyrim.esm
+EditorID: dunValtheimKeepQST
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_dunValtheimKeepQST_000ADFE7
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AttackTriggerTower03
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ShakeDownBandit
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GenericBandit05
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GenericBandit02
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AttackTriggerTower01
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ValtheimKeepLocation
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AttackTriggerTower02
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Boss
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GenericBandit04
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GenericBandit01
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GenericBandit03
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 8
+  FileName: QF_dunValtheimKeepQST_000ADFE7
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_dunValtheimKeepQST_000ADFE7
+    FragmentName: Fragment_0
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: QF_dunValtheimKeepQST_000ADFE7
+    FragmentName: Fragment_3
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_dunValtheimKeepQST_000ADFE7
+    FragmentName: Fragment_2
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_dunValtheimKeepQST_000ADFE7
+    FragmentName: Fragment_4
+  - Stage: 15
+    Unknown2: 1
+    ScriptName: QF_dunValtheimKeepQST_000ADFE7
+    FragmentName: Fragment_5
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_dunValtheimKeepQST_000ADFE7
+    FragmentName: Fragment_1
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: dunValtheimKeepSetAggrScript
+  - Property:
+      Name: ''
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 1
+    Scripts:
+    - Name: dunValtheimKeepSetAggrScript
+  - Property:
+      Name: ''
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 3
+    Scripts:
+    - Name: dunValtheimKeepSetAggrScript
+  - Property:
+      Name: ''
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 9
+    Scripts:
+    - Name: dunValtheimKeepSetAggrScript
+  - Property:
+      Name: ''
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 8
+    Scripts:
+    - Name: dunValtheimKeepSetAggrScript
+  - Property:
+      Name: ''
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 7
+    Scripts:
+    - Name: dunValtheimKeepSetAggrScript
+  - Property:
+      Name: ''
+      Object: 0ADFE7:Skyrim.esm
+      Alias: 6
+    Scripts:
+    - Name: dunValtheimKeepSetAggrScript
+Priority: 30
+QuestFormVersion: 65
+Event: CLOC
+Filter: Dungeons\
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 15
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 50
+  LogEntries:
+  - Flags: []
+- Index: 100
+  LogEntries:
+  - Flags: []
+NextAliasID: 17
+Aliases:
+- ID: 2
+  Type: Location
+  Name: ValtheimKeepLocation
+  Flags:
+  - AllowReserved
+  SpecificLocation: 0192C1:Skyrim.esm
+- Name: ShakeDownBandit
+  Flags: []
+  Location:
+    AliasID: 2
+    RefType: 0AE309:Skyrim.esm
+  Factions:
+  - 0AE026:Skyrim.esm
+  PackageData:
+  - 0ADFF3:Skyrim.esm
+  - 0AE4D6:Skyrim.esm
+  VoiceTypes: 01AFBD:Skyrim.esm
+- ID: 1
+  Name: Boss
+  Flags:
+  - Optional
+  Location:
+    AliasID: 2
+    RefType: 0AE06B:Skyrim.esm
+  CombatOverridePackageList: 0296AF:Skyrim.esm
+  Factions:
+  - 0AE026:Skyrim.esm
+  VoiceTypes: Null
+- ID: 3
+  Name: GenericBandit01
+  Flags:
+  - Optional
+  Location:
+    AliasID: 2
+    RefType: 0AE06B:Skyrim.esm
+  Factions:
+  - 0AE026:Skyrim.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: GenericBandit02
+  Flags:
+  - Optional
+  Location:
+    AliasID: 2
+    RefType: 0AE06B:Skyrim.esm
+  Factions:
+  - 0AE026:Skyrim.esm
+  VoiceTypes: Null
+- ID: 8
+  Name: GenericBandit03
+  Flags:
+  - Optional
+  Location:
+    AliasID: 2
+    RefType: 0AE06B:Skyrim.esm
+  Factions:
+  - 0AE026:Skyrim.esm
+  VoiceTypes: Null
+- ID: 7
+  Name: GenericBandit04
+  Flags:
+  - Optional
+  Location:
+    AliasID: 2
+    RefType: 0AE06B:Skyrim.esm
+  Factions:
+  - 0AE026:Skyrim.esm
+  VoiceTypes: Null
+- ID: 6
+  Name: GenericBandit05
+  Flags:
+  - Optional
+  Location:
+    AliasID: 2
+    RefType: 0AE06B:Skyrim.esm
+  Factions:
+  - 0AE026:Skyrim.esm
+  VoiceTypes: Null
+- ID: 14
+  Name: AttackTriggerTower01
+  Flags: []
+  ForcedReference: 0AE4C7:Skyrim.esm
+  VoiceTypes: Null
+- ID: 15
+  Name: AttackTriggerTower02
+  Flags: []
+  ForcedReference: 0AE4CA:Skyrim.esm
+  VoiceTypes: Null
+- ID: 16
+  Name: AttackTriggerTower03
+  Flags: []
+  ForcedReference: 0AE4D2:Skyrim.esm
+  VoiceTypes: Null

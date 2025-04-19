@@ -1,0 +1,30 @@
+FormKey: 01961B:Dragonborn.esm
+EditorID: REQ_Ench_NelothsRingOfTracking_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2DetectAshSourceScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2SolstheimWorld
+      Object: 000800:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2TT2
+      Object: 0195A1:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2DetectAshSourceSpell
+      Object: 01961A:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Detect Ash Source
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoMagnitude
+MagicSkill: Alteration
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: When close enough, identifies the source of the ash spawn attacks on Tel Mithryn.

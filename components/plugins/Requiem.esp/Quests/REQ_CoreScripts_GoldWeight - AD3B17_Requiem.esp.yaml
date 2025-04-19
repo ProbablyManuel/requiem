@@ -1,0 +1,41 @@
+FormKey: AD3B17:Requiem.esp
+EditorID: REQ_CoreScripts_GoldWeight
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B17:Requiem.esp
+      Alias: 22
+    Scripts:
+    - Name: REQ_GoldWeight
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: hidePursePlace
+        Object: AD3A5A:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: displayPurse
+        Object: AD3A5B:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Gold
+        Object: 00000F:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Gold Weight'
+Type: SideQuest
+NextAliasID: 25
+Aliases:
+- ID: 22
+  Name: GoldWeight
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null
+- ID: 24
+  Name: GoldWeightDisplay
+  Flags:
+  - QuestObject
+  CreateReferenceToObject:
+    Object: AD3A5B:Requiem.esp
+    AliasID: 22
+    Create: In
+  VoiceTypes: Null

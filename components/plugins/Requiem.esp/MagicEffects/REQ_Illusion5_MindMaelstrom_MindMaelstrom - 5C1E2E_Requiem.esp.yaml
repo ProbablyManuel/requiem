@@ -1,0 +1,86 @@
+FormKey: 5C1E2E:Requiem.esp
+EditorID: REQ_Illusion5_MindMaelstrom_MindMaelstrom
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_IllusionBreak
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindEffect
+      Object: 5C1E32:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Skill_ScalingPerks
+      Objects:
+      - Name: ''
+        Object: 0F2CA9:Skyrim.esm
+      - Name: ''
+        Object: 0C44C3:Skyrim.esm
+      - Name: ''
+        Object: 0C44C4:Skyrim.esm
+      - Name: ''
+        Object: 0C44C5:Skyrim.esm
+      - Name: ''
+        Object: 0C44C6:Skyrim.esm
+      - Name: ''
+        Object: 059B76:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 5C1E31:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPRate
+      Data: 5
+Name:
+  TargetLanguage: English
+  Value: Mind Maelstrom
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+- 0806E1:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoHitEvent
+- DispelWithKeywords
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 3.5
+MagicSkill: Illusion
+CastingLight: 07479A:Skyrim.esm
+TaperWeight: 1
+MinimumSkillLevel: 100
+SpellmakingArea: 250
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 07331D:Skyrim.esm
+Explosion: 0225AF:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 0223CA:Skyrim.esm
+ImpactData: 073320:Skyrim.esm
+DualCastArt: 5C45D6:Requiem.esp
+DualCastScale: 1
+EquipAbility: 0225AE:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster unleashes an orb which will release a huge mind maelstrom upon impact. Its victims may be affected randomly by fear or charm effects.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

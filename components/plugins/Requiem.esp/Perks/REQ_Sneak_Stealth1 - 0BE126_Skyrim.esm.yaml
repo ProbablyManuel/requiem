@@ -1,0 +1,27 @@
+FormKey: 0BE126:Skyrim.esm
+EditorID: REQ_Sneak_Stealth1
+Name:
+  TargetLanguage: English
+  Value: Stealth
+Description:
+  TargetLanguage: English
+  Value: You know the basics of moving silently and are harder to detect when sneaking <br> while not wearing any heavy armor.
+NumRanks: 5
+Playable: True
+NextPerk: 0C07C6:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C07C6:Skyrim.esm
+  EntryPoint: ModDetectionSneakSkill
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 15

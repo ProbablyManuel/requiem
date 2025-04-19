@@ -1,0 +1,72 @@
+FormKey: 0165AB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunAmrensHouse
+Version2: 3
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Amren's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000F0D0C'
+    DirectionalXMinus: '#000C0D0B'
+    DirectionalYPlus: '#000E0D0C'
+    DirectionalYMinus: '#000E0C0C'
+    DirectionalZPlus: '#00060605'
+    DirectionalZMinus: '#00151312'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F86B:Skyrim.esm
+Owner: 093B15:Skyrim.esm
+LockList: 093AF7:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 016687:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 024E26:Skyrim.esm
+  TeleportDestination:
+    Door: 01A6F2:Skyrim.esm
+    Position: 21897.627, -3891.45, -2893.6038
+    Rotation: 0, -0, -0.78758544
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 093B06:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0B9C95:Skyrim.esm
+    TeleportMarkerTriangle: 14
+  Owner: 093B15:Skyrim.esm
+  LocationReference: 01F86B:Skyrim.esm
+  Placement:
+    Position: -118.975845, -392.01947, 147.95654
+    Rotation: 0, -0, 1.5707964
+MajorFlags:
+- 0x40000

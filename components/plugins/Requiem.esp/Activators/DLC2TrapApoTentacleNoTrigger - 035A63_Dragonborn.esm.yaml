@@ -1,0 +1,96 @@
+FormKey: 035A63:Dragonborn.esm
+EditorID: DLC2TrapApoTentacleNoTrigger
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2TrapApoTentacle
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 62
+    - MutagenObjectType: ScriptBoolProperty
+      Name: selfTrigger
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 38
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 46
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 30
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 54
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 500
+  - Name: TrapHitBase
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseAtaxia
+      Object: 10A24A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBrainRot
+      Object: 10A24D:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: canDisease
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseWitbane
+      Object: 10A250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBoneBreakFever
+      Object: 10A24C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRockjoint
+      Object: 10A24F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: noHitFaction
+      Object: 0397E3:Dragonborn.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: rumbleAmount
+      Data: 0.7
+    - MutagenObjectType: ScriptBoolProperty
+      Name: rumble
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRattles
+      Object: 10A24E:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: cameraShake
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFX
+      Object: 01A141:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: trapCausesStagger
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostAbility
+      Object: 05030B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFXAmmo
+      Object: 03BDF7:Skyrim.esm
+ObjectBounds:
+  First: -32, -320, -109
+  Second: 32, 41, 321
+Model:
+  File: DLC02\Traps\ApoTentacleTrap\ApoTentacleTrap02.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

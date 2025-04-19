@@ -1,0 +1,22 @@
+FormKey: 0BCD2B:Skyrim.esm
+EditorID: REQ_HeavyArmor_CombatTrance
+Name:
+  TargetLanguage: English
+  Value: Combat Trance
+Description:
+  TargetLanguage: English
+  Value: Your heavy armor distracts you even less.<br>[No spell cost penalty for casting Adept spells in heavy armor]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F6E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: HeavyArmor
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True

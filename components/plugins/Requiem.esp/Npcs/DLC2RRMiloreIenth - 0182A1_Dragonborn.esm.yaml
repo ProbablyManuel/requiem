@@ -1,0 +1,227 @@
+FormKey: 0182A1:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2RRMiloreIenth
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2PillarBuilderActorScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2Pillar
+      Object: 01C4E4:Dragonborn.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Unique
+  - Protected
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 10
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 05091C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A56:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 018279:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 018426:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 01C4E5:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 02501A:Dragonborn.esm
+  Fluff: 0x000000
+Voice: 013ADD:Skyrim.esm
+Race: 013742:Skyrim.esm
+Items:
+- Item:
+    Item: 013986:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D2:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 018457:Dragonborn.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 0362B5:Dragonborn.esm
+- 025002:Dragonborn.esm
+- 035E4D:Dragonborn.esm
+- 01CB4F:Dragonborn.esm
+- 0184DD:Dragonborn.esm
+Class: 0E3A6E:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Milore Ienth
+ShortName:
+  TargetLanguage: English
+  Value: Milore
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 17
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 22
+  - Key: Alchemy
+    Value: 29
+  - Key: Speech
+    Value: 23
+  - Key: Alteration
+    Value: 16
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 115
+  Magicka: 115
+  Stamina: 115
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 05392A:Skyrim.esm
+- 08CA86:Skyrim.esm
+- 0E4DA4:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03BE1B:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 70
+SoundLevel: Normal
+DefaultOutfit: 03CEE9:Dragonborn.esm
+CrimeFaction: 018279:Dragonborn.esm
+HeadTexture: 0F205E:Skyrim.esm
+TextureLighting: '#0077969D'
+FaceMorph:
+  NoseUpVsDown: -1
+  JawUpVsDown: -0.3
+  JawNarrowVsWide: 0.3
+  JawForwardVsBack: -0.3
+  CheeksUpVsDown: -0.7
+  CheeksForwardVsBack: 0.3
+  EyesUpVsDown: -0.9
+  EyesInVsOut: 0.6
+  BrowsUpVsDown: -1
+  LipsUpVsDown: -0.4
+  LipsInVsOut: 0.4
+  ChinNarrowVsWide: -0.1
+  ChinUpVsDown: -0.3
+  ChinUnderbiteVsOverbite: -0.7
+  EyesForwardVsBack: 1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 5
+  Unknown: 4294967295
+  Eyes: 23
+  Mouth: 11
+TintLayers:
+- Index: 24
+  Color: '#0077969D'
+  InterpolationValue: 1
+  Preset: 542
+- Index: 26
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 564
+- Index: 28
+  Color: '#00A95452'
+  InterpolationValue: 0.11
+  Preset: 571
+- Index: 30
+  Color: '#00500901'
+  InterpolationValue: 0.78
+  Preset: 580
+- Index: 31
+  Color: '#00430401'
+  InterpolationValue: 0.72
+  Preset: 587
+- Index: 32
+  Color: '#00A95452'
+  InterpolationValue: 0.47
+  Preset: 593
+- Index: 34
+  Color: '#00430401'
+  InterpolationValue: 1
+  Preset: 605
+- Index: 35
+  Color: '#00364E21'
+  InterpolationValue: 0.75
+  Preset: 1021
+MajorFlags:
+- 0x40000

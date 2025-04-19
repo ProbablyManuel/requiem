@@ -1,0 +1,185 @@
+FormKey: 0030D8:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1Durnehviir
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultAllowPCDialogueScript
+  - Name: UDGPDurnehviirDragonScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonTakeoffImpactSet
+      Object: 019A01:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonLandingImpactSet
+      Object: 02BD39:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: knockBackExplosion
+      Object: 078C57:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TundraDragonSkin
+      Object: 087556:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SnowDragonSkin
+      Object: 085808:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonFOVfx
+      Object: 06C0DA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NPCDragonFlyby
+      Object: 018B58:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonTailstompImpactSet
+      Object: 03F819:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: forestDragonSkin
+      Object: 087557:Skyrim.esm
+ObjectBounds:
+  First: -320, -352, 0
+  Second: 320, 352, 384
+Configuration:
+  Flags:
+  - Essential
+  - Summonable
+  MagickaOffset: 6000
+  StaminaOffset: 19900
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 100
+  CalcMinLevel: 10
+  CalcMaxLevel: 70
+  SpeedMultiplier: 100
+  HealthOffset: 19000
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 032D9C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 07A0DF:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 007A66:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 0083A6:Dawnguard.esm
+  Fluff: 0x000000
+DeathItem: 0F2E10:Skyrim.esm
+Voice: 02992B:Skyrim.esm
+Race: 0117DE:Dawnguard.esm
+ActorEffect:
+- 00C5FC:Dawnguard.esm
+- 00C5F9:Dawnguard.esm
+- 00C5FB:Dawnguard.esm
+WornArmor: 011A6E:Dawnguard.esm
+FarAwayModel: 011A6E:Dawnguard.esm
+AttackRace: 012E82:Skyrim.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 10
+  Responsibility: NoCrime
+  Mood: Angry
+  Assistance: HelpsAllies
+Class: 017008:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Durnehviir
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 100
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 100
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 100
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 100
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 1989
+  Magicka: 150
+  Stamina: 546
+  Unused: 16743
+  FarAwayModelDistance: 10000
+  GearedUpWeapons: 1
+  Unused2: 0x663FEF
+CombatStyle: 00BFEC:Dawnguard.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 02F2F0:Skyrim.esm
+DefaultOutfit: 011A73:Dawnguard.esm
+SleepingOutfit: 011A73:Dawnguard.esm
+DefaultPackageList: 09C21B:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

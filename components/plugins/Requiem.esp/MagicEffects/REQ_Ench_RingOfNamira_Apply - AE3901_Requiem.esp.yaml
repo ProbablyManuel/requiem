@@ -1,0 +1,29 @@
+FormKey: AE3901:Requiem.esp
+EditorID: REQ_Ench_RingOfNamira_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_RingOfNamira
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EnchAbility
+      Object: AE3903:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CorpsesEaten
+      Object: AE3904:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Apply Ring of Namira Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

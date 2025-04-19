@@ -1,0 +1,18 @@
+FormKey: 000801:ccedhsse002-splkntset.esl
+EditorID: REQ_NULL_ccEDHSSE002_RecipeArmorIronBoots
+Items:
+- Item:
+    Item: 05ACE4:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 000800:ccedhsse002-splkntset.esl
+  ComparisonValue: 1
+CreatedObject: 000D77:ccedhsse002-splkntset.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

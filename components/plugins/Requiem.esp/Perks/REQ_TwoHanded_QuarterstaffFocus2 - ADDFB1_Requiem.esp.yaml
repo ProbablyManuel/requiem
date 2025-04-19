@@ -1,0 +1,29 @@
+FormKey: ADDFB1:Requiem.esp
+EditorID: REQ_TwoHanded_QuarterstaffFocus2
+Name:
+  TargetLanguage: English
+  Value: Quarterstaff Focus
+Description:
+  TargetLanguage: English
+  Value: You've acquired the advanced techniques of quarterstaff combat.<br>[+20% attack speed with quarterstaves, +24% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: ADDFB0:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: TwoHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+NextPerk: ADDFB2:Requiem.esp
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: ADDFB5:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: ADDFB6:Requiem.esp

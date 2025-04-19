@@ -1,0 +1,197 @@
+FormKey: 10FEEC:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 537133056
+EditorID: dunSkuldafnDragonDraugrUnaggressiveFrost
+SkyrimMajorRecordFlags:
+- Compressed
+- 0x20000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dragonactorscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonTakeoffImpactSet
+      Object: 019A01:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonLandingImpactSet
+      Object: 02BD39:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: knockBackExplosion
+      Object: 078C57:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TundraDragonSkin
+      Object: 087556:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQkillDragon
+      Object: 035D56:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonFOVfx
+      Object: 06C0DA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SnowDragonSkin
+      Object: 085808:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NPCDragonFlyby
+      Object: 018B58:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: forestDragonSkin
+      Object: 087557:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonTailstompImpactSet
+      Object: 03F819:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: deathFXrange
+      Data: 1024
+ObjectBounds:
+  First: -320, -352, 0
+  Second: 320, 352, 384
+Configuration:
+  Flags:
+  - Respawn
+  - BleedoutOverride
+  MagickaOffset: 4850
+  StaminaOffset: 19900
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 79
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  TemplateFlags:
+  - Traits
+  - Stats
+  - SpellList
+  - BaseData
+  - Inventory
+  - AttackData
+  - Keywords
+  HealthOffset: 350
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 032D9C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 096E47:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03ADA5:Skyrim.esm
+Voice: 02992B:Skyrim.esm
+Template: 0351C3:Skyrim.esm
+Race: 012E82:Skyrim.esm
+ActorEffect:
+- 0F77F9:Skyrim.esm
+- 10C4E3:Skyrim.esm
+- 016C40:Skyrim.esm
+- 016CF0:Skyrim.esm
+- 0F8100:Skyrim.esm
+FarAwayModel: 040731:Skyrim.esm
+AttackRace: 012E82:Skyrim.esm
+Perks:
+- Perk: 033869:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 055BEC:Skyrim.esm
+Class: 02F201:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 55
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 55
+  - Key: Block
+    Value: 55
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 87
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 1860
+  Magicka: 150
+  Stamina: 197
+  Unused: 16743
+  FarAwayModelDistance: 20000
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 048C83:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 02F2F0:Skyrim.esm
+DefaultOutfit: 08BC7D:Skyrim.esm
+SleepingOutfit: 08BC7D:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000
+- BleedoutOverride

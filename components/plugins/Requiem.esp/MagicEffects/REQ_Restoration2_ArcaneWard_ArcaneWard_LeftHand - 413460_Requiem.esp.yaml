@@ -1,0 +1,37 @@
+FormKey: 413460:Requiem.esp
+EditorID: REQ_Restoration2_ArcaneWard_ArcaneWard_LeftHand
+Name:
+  TargetLanguage: English
+  Value: Arcane Ward
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01EA69:Skyrim.esm
+- 0A9B1E:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- FXPersist
+- PowerAffectsMagnitude
+- 0x40000000
+BaseCost: 0.6
+MagicSkill: Restoration
+CastingLight: 02F3EF:Skyrim.esm
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: WardPower
+  Type: AccumulateMagnitude
+CastType: Concentration
+CastingArt: 0253F1:Skyrim.esm
+HitEffectArt: 018124:Skyrim.esm
+SkillUsageMultiplier: 0.4
+DualCastScale: 1
+Sounds:
+- Sound: 03D116:Skyrim.esm
+- Type: Release
+  Sound: 03D118:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 04E210:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster creates a protective shield that negates a great amount of physical damage and up to <mag> spell damage.

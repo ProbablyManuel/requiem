@@ -1,0 +1,43 @@
+FormKey: 3888E4:Requiem.esp
+EditorID: REQ_Effect_NPCDetectionSpell
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_DisguiseDetectionAura
+Name:
+  TargetLanguage: English
+  Value: Detection
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- Painless
+- NoHitEffect
+- NoDeathDispel
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 012FDC:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 2F38A6:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

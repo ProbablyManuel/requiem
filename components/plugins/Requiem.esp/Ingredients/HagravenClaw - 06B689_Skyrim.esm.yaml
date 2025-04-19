@@ -1,0 +1,35 @@
+FormKey: 06B689:Skyrim.esm
+EditorID: HagravenClaw
+Version2: 4
+ObjectBounds:
+  First: -3, -5, 0
+  Second: 3, 5, 1
+Name:
+  TargetLanguage: English
+  Value: Hagraven Claw
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\HagClaw.nif
+  Data: 0x020000000200000000000000F0A13A8A64647300604DDD5C3DF5442264647300604DDD5C
+Value: 20
+Weight: 0.25
+IngredientValue: 20
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 039E51:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 120
+- BaseEffect: 10DE5F:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 03EB27:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 20B30F:Requiem.esp
+  Data:
+    Duration: 4

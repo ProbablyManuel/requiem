@@ -1,0 +1,183 @@
+FormKey: 0D7939:Skyrim.esm
+EditorID: DA03Start
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_DA03Start_000D7939
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ImperialGateGuard1
+      Object: 0D7939:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA03
+      Object: 01BFC4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ImperialGateGuard2
+      Object: 0D7939:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Lod
+      Object: 0D7939:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SonsGateGuard2
+      Object: 0D7939:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SonsGateGuard1
+      Object: 0D7939:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DA03Meat
+      Object: 0D7939:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DA03StartBarbasMeetMarker
+      Object: 0D7939:Skyrim.esm
+      Alias: 12
+  FileName: QF_DA03Start_000D7939
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_DA03Start_000D7939
+    FragmentName: Fragment_29
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_DA03Start_000D7939
+    FragmentName: Fragment_31
+  - Stage: 5
+    Unknown2: 1
+    ScriptName: QF_DA03Start_000D7939
+    FragmentName: Fragment_30
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_DA03Start_000D7939
+    FragmentName: Fragment_27
+  - Stage: 15
+    Unknown2: 1
+    ScriptName: QF_DA03Start_000D7939
+    FragmentName: Fragment_33
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0D7939:Skyrim.esm
+      Alias: 6
+    Scripts:
+    - Name: USKP_DA03StartLodScript
+Flags:
+- StartGameEnabled
+- 0x10
+- RunOnce
+Priority: 60
+QuestFormVersion: 65
+Type: Misc
+Filter: Daedric\
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    RunOnTypeIndex: 0
+  ComparisonValue: 25
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    RunOnTypeIndex: 0
+  ComparisonValue: 25
+Stages:
+- LogEntries:
+  - Flags: []
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'A guard outside Falkreath mentioned the Blacksmith Lod is looking for a Dog and offering a reward. '
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 15
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+- Index: 200
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 5
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Speak to Lod, Falkreath's blacksmith, about a dog he's looking for
+  Targets:
+  - AliasID: 6
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Look around on the road outside Falkreath for Lod's dog
+  Targets:
+  - AliasID: 12
+NextAliasID: 13
+Aliases:
+- ID: 7
+  Name: ImperialGateGuard1
+  Flags: []
+  ForcedReference: 055649:Skyrim.esm
+  PackageData:
+  - 0E0D53:Skyrim.esm
+  VoiceTypes: Null
+- ID: 8
+  Name: ImperialGateGuard2
+  Flags: []
+  ForcedReference: 05564A:Skyrim.esm
+  PackageData:
+  - 0E0D53:Skyrim.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: SonsGateGuard1
+  Flags: []
+  ForcedReference: 055653:Skyrim.esm
+  PackageData:
+  - 0E0D53:Skyrim.esm
+  VoiceTypes: Null
+- ID: 10
+  Name: SonsGateGuard2
+  Flags: []
+  ForcedReference: 055654:Skyrim.esm
+  PackageData:
+  - 0E0D53:Skyrim.esm
+  VoiceTypes: Null
+- ID: 6
+  Name: Lod
+  Flags:
+  - ReservesLocationOrReference
+  UniqueActor: 013650:Skyrim.esm
+  VoiceTypes: Null
+- ID: 11
+  Name: DA03Meat
+  Flags:
+  - UsesStoredText
+  CreateReferenceToObject:
+    Object: 10211A:Skyrim.esm
+    AliasID: 6
+    Create: In
+  DisplayName: 0E0D52:Skyrim.esm
+  VoiceTypes: Null
+- ID: 12
+  Name: DA03StartBarbasMeetMarker
+  Flags: []
+  ForcedReference: 0E0D54:Skyrim.esm
+  VoiceTypes: Null

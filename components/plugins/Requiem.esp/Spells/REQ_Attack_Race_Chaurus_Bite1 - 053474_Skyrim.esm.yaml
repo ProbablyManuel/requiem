@@ -1,0 +1,22 @@
+FormKey: 053474:Skyrim.esm
+EditorID: REQ_Attack_Race_Chaurus_Bite1
+Name:
+  TargetLanguage: English
+  Value: Chaurus Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Poison
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 06F6FC:Skyrim.esm
+  Data:
+    Magnitude: 0.3
+    Duration: 240

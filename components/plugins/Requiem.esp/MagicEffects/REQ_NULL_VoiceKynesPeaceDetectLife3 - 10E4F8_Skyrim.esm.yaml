@@ -1,0 +1,49 @@
+FormKey: 10E4F8:Skyrim.esm
+EditorID: REQ_NULL_VoiceKynesPeaceDetectLife3
+Name:
+  TargetLanguage: English
+  Value: Kyne's Peace
+MenuDisplayObject: 104F70:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+MagicSkill: Alteration
+HitShader: 000146:Skyrim.esm
+MinimumSkillLevel: 50
+SpellmakingArea: 250
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: DetectLife
+CastType: FireAndForget
+SkillUsageMultiplier: 0.25
+DualCastScale: 1
+ImageSpaceModifier: 02FB1E:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 081189:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Nearby animals will not attack, and their life forces are visible for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013798:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F82F4:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

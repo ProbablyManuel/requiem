@@ -1,0 +1,29 @@
+FormKey: 421C8F:Requiem.esp
+EditorID: REQ_Illusion_CharmingTouch_Calm
+Name:
+  TargetLanguage: English
+  Value: Calm
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 0.035
+MagicSkill: Illusion
+TaperWeight: 1
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Calm
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The touched target considers the caster a good friend and stops all hostilities for up to <dur> seconds.

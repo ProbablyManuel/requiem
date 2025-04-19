@@ -1,0 +1,63 @@
+FormKey: 0161EE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PelagiaFarm
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Pelagia Farm
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#003E3533'
+    DirectionalXMinus: '#0033352E'
+    DirectionalYPlus: '#00393731'
+    DirectionalYMinus: '#00393231'
+    DirectionalZPlus: '#001B1916'
+    DirectionalZMinus: '#0056504B'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 03AFE9:Skyrim.esm
+Owner: 10DE9C:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5858:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 0B9DCB:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0710FF:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -276.4679, -133.54202, 130.66411
+    Rotation: 0, -0, 4.083191
+- MutagenObjectType: PlacedObject
+  FormKey: 071100:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -299.89383, -76.64029, 130.66411
+    Rotation: 0, -0, 6.083191
+- MutagenObjectType: PlacedObject
+  FormKey: 0710FE:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -309.25555, -93.36886, 130.66411
+MajorFlags:
+- 0x40000

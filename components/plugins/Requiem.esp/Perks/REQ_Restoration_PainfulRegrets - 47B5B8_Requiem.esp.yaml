@@ -1,0 +1,100 @@
+FormKey: 47B5B8:Requiem.esp
+EditorID: REQ_Restoration_PainfulRegrets
+Name:
+  TargetLanguage: English
+  Value: Painful Regrets
+Description:
+  TargetLanguage: English
+  Value: You've honestly reflected your sins, and you truly regret what pain you have inflicted upon others. <br>Therefore, the gods show at least a bit of mercy, but the torment of your deeds will haunt you for the rest of your days...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetPCMiscStatConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    MiscStat: -1715763496
+  ComparisonValue: 6000
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetPCMiscStatConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    MiscStat: -2098097982
+  ComparisonValue: 20
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetPCMiscStatConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    MiscStat: -746821367
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetPCMiscStatConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    MiscStat: -1715763496
+  ComparisonValue: 3000
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetPCMiscStatConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    MiscStat: -2098097982
+  ComparisonValue: 10
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetPCMiscStatConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    MiscStat: -746821367
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 4
+  EntryPoint: ModPowerAttackStamina
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 15
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 3
+  EntryPoint: ModSellPrices
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.8
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.85
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.15
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModBuyPrices
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.2

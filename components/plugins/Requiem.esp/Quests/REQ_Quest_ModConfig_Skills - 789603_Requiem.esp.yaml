@@ -1,0 +1,34 @@
+FormKey: 789603:Requiem.esp
+EditorID: REQ_Quest_ModConfig_Skills
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_MCM_Skills
+    Properties:
+    - MutagenObjectType: ScriptStringProperty
+      Name: ModName
+      Data: Requiem - Skills Menu
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DATA
+      Object: AD3B24:Requiem.esp
+      Alias: 11
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 789603:Requiem.esp
+      Alias: 0
+    Scripts:
+    - Name: SKI_PlayerLoadGameAlias
+Name:
+  TargetLanguage: English
+  Value: Requiem Secondary Skills Menu
+Flags:
+- StartGameEnabled
+- 0x10
+- RunOnce
+NextAliasID: 1
+Aliases:
+- Name: PlayerAlias
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null

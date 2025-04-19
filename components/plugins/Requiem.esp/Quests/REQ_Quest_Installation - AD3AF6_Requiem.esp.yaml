@@ -1,0 +1,68 @@
+FormKey: AD3AF6:Requiem.esp
+EditorID: REQ_Quest_Installation
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_REQ_Quest_Installation
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: kmyquest
+      Object: AD3AF6:Requiem.esp
+  - Name: REQ_Installation
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: coreScripts
+      Object: 2F389E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VersionSavegame
+      Object: 2F38A0:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: validator
+      Object: 2F389E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NewGameCheck
+      Object: 00097F:Update.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: startingSpells
+      Objects:
+      - Name: ''
+        Object: 012FCD:Skyrim.esm
+      - Name: ''
+        Object: 012FCC:Skyrim.esm
+      - Name: ''
+        Object: 0640B6:Skyrim.esm
+      - Name: ''
+        Object: 04DEEB:Skyrim.esm
+      - Name: ''
+        Object: 02DD2A:Skyrim.esm
+  FileName: QF_REQ_Quest_Installation
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_REQ_Quest_Installation
+    FragmentName: Fragment_0
+  - Stage: 10
+    ScriptName: QF_REQ_Quest_Installation
+    FragmentName: Fragment_10
+Name:
+  TargetLanguage: English
+  Value: A Requiem of better times
+Flags:
+- StartGameEnabled
+- 0x10
+- RunOnce
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The twisted turns of fate have brought you into your current situation. It seems there is no easy way out. Better you prepare yourself to face your destiny with steel or magic!
+- Index: 10
+  LogEntries:
+  - Flags: []
+Objectives:
+- Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Open and close the magic or inventory menu to install Requiem
+NextAliasID: 0

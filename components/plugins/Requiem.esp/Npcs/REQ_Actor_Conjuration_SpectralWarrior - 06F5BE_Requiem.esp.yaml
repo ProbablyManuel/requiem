@@ -1,0 +1,138 @@
+FormKey: 06F5BE:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_Conjuration_SpectralWarrior
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Female
+  - Respawn
+  - AutoCalcStats
+  - Summonable
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 32
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: -100
+Voice: 01F1CD:Skyrim.esm
+Race: 0F71DC:Skyrim.esm
+WornArmor: 0F71DB:Skyrim.esm
+AttackRace: 0F71DC:Skyrim.esm
+Perks:
+- Perk: 052D51:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C05:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C06:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 031284:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 06F5BD:Requiem.esp
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Class: 017008:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Spectral Warrior
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 72
+  - Key: TwoHanded
+    Value: 73
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 50
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 50
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 28
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 10
+  - Key: Illusion
+    Value: 40
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 593
+  Stamina: 10062
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0BF452:Skyrim.esm
+DefaultOutfit: 0F82F9:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

@@ -1,0 +1,20 @@
+FormKey: 000814:ccbgssse058-ba_steel.esl
+EditorID: REQ_NULL_ccBGSSSE058_RecipeArmorSteelShield
+Items:
+- Item:
+    Item: 05ACE4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05ACE5:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

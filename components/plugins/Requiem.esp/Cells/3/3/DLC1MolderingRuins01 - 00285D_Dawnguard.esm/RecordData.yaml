@@ -1,0 +1,67 @@
+FormKey: 00285D:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1MolderingRuins01
+Version2: 9
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Moldering Ruins
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 003CFD:Dawnguard.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 003CFC:Dawnguard.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 013B32:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AD38BB:Requiem.esp
+  Base: AD38BD:Requiem.esp
+  RagdollData: 0x005FFC00C03A05410000000000A095BFDB0FC9BFC9092AB5C776484000FF7FFFBA9E1740060072B900E8542C00000080000000806AA5C93F
+  Placement:
+    Position: 2902.5564, 3877.2637, 6894.197
+    Rotation: 4.24115, 4.049164, 0.4712389
+- MutagenObjectType: PlacedObject
+  FormKey: 0035CE:Dawnguard.esm
+  Version2: 4
+  Base: 020664:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 003CFD:Dawnguard.esm
+  Placement:
+    Position: 3393.629, 2807.2168, 6736.0396
+    Rotation: 0.5868829, -0.11449883, 4.404089
+MajorFlags:
+- 0x40000

@@ -1,0 +1,21 @@
+FormKey: AD3947:Requiem.esp
+EditorID: REQ_Setup_DowngradeNotAllowed
+Description:
+  TargetLanguage: English
+  Value: >-
+    It seems that you have installed an older release of Requiem. Unfortunately, mid-game downgrades cannot be supported by us. You must either a start a new game or reload a savegame that was made before installing the newer version.
+
+
+    Since your current game would become unplayable, we will send you back to the main menu. We recommend to relaunch Skyrim before starting a new game.
+
+
+    Requiem version: %.0f.%.0f.%.0f
+
+    Savegame version: %.0f.%.0f.%.0f
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Downgrades are not allowed

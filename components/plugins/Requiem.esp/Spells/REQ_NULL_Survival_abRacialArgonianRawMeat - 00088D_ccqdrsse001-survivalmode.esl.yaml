@@ -1,0 +1,27 @@
+FormKey: 00088D:ccqdrsse001-survivalmode.esl
+EditorID: REQ_NULL_Survival_abRacialArgonianRawMeat
+Name:
+  TargetLanguage: English
+  Value: Raw Diet
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Your Argonian blood allows you to eat raw meat without risk of disease.
+Type: Ability
+Effects:
+- BaseEffect: 000850:ccqdrsse001-survivalmode.esl
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013740:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 08883A:Skyrim.esm
+    ComparisonValue: 1

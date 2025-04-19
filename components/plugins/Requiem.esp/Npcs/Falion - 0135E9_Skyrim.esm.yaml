@@ -1,0 +1,270 @@
+FormKey: 0135E9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Falion
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrainerGoldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrainerType
+      Data: 3
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Essential
+  - AutoCalcStats
+  - Unique
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 40
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 02816D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02817D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 050921:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 09DA58:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 09E295:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A58:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD5:Skyrim.esm
+Race: 013748:Skyrim.esm
+ActorEffect:
+- 072318:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231C:Skyrim.esm
+- 0C96A0:Skyrim.esm
+- AD38C0:Requiem.esp
+Perks:
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 053129:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05312A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581E4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0640B3:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 068BCC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB419:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB41A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F30:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 17911A:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 185736:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 185737:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01397E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 09E298:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D3:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 04438B:Skyrim.esm
+- 04438A:Skyrim.esm
+- 044385:Skyrim.esm
+- 04438C:Skyrim.esm
+- 01B217:Skyrim.esm
+Keywords:
+- 0361BA:Skyrim.esm
+Class: 0E3A6A:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Falion
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 20
+  - Key: TwoHanded
+    Value: 10
+  - Key: Archery
+    Value: 10
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 32
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 86
+  - Key: Conjuration
+    Value: 100
+  - Key: Destruction
+    Value: 32
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 86
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 195
+  Magicka: 290
+  Stamina: 120
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 02424F:Skyrim.esm
+- 05107F:Skyrim.esm
+- 0510B5:Skyrim.esm
+- 0513F7:Skyrim.esm
+- 08555F:Skyrim.esm
+HairColor: 0A0432:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 10FE69:Skyrim.esm
+CrimeFaction: 02816D:Skyrim.esm
+HeadTexture: 0D072A:Skyrim.esm
+TextureLighting: '#002F2116'
+FaceMorph:
+  NoseLongVsShort: -0.6
+  NoseUpVsDown: -0.6
+  JawUpVsDown: -0.34
+  JawNarrowVsWide: -1
+  JawForwardVsBack: 0.3
+  CheeksUpVsDown: 1
+  EyesUpVsDown: -1
+  EyesInVsOut: 0.64
+  BrowsUpVsDown: 1
+  BrowsInVsOut: -0.02
+  BrowsForwardVsBack: -0.9
+  LipsUpVsDown: -0.3
+  LipsInVsOut: -0.5
+  ChinNarrowVsWide: -0.2
+  ChinUpVsDown: 0.5
+  ChinUnderbiteVsOverbite: 0.56
+  EyesForwardVsBack: -0.24
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 17
+  Unknown: 4294967295
+  Eyes: 2
+  Mouth: 11
+TintLayers:
+- Index: 1
+  Color: '#00302116'
+  InterpolationValue: 1
+  Preset: 80
+- Index: 11
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 84
+- Index: 12
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 96
+- Index: 33
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 532
+MajorFlags:
+- 0x40000

@@ -1,0 +1,58 @@
+FormKey: 016A07:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeVittoriaVicisHouse
+Version2: 6
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Vittoria Vici's House
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#0047869E'
+  DirectionalColor: '#00192628'
+  FogNearColor: '#004D4D4D'
+  FogFar: 3500
+  FogClipDistance: 5000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00345B70'
+    DirectionalXMinus: '#002B5B65'
+    DirectionalYPlus: '#00305F6B'
+    DirectionalYMinus: '#0030566B'
+    DirectionalZPlus: '#00162B30'
+    DirectionalZMinus: '#00498AA5'
+    Specular: '#0032322C'
+    Scale: 1
+  FogFarColor: '#0032322C'
+  FogMax: 0.8
+  LightFadeBegin: 4000
+  LightFadeEnd: 5000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+LightingTemplate: 06AB01:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020096:Skyrim.esm
+Owner: 01327A:Skyrim.esm
+LockList: 01327A:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 04E666:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0D9B47:Skyrim.esm
+  Base: 0800E0:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 020096:Skyrim.esm
+  Placement:
+    Position: -528.65326, -1226.3654, 287.99994
+    Rotation: 0, -0, 4.6831927
+MajorFlags:
+- 0x40000

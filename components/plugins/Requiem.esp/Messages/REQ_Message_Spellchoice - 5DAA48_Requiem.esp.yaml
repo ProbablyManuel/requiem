@@ -1,0 +1,106 @@
+FormKey: 5DAA48:Requiem.esp
+EditorID: REQ_Message_Spellchoice
+Description:
+  TargetLanguage: English
+  Value: 'Your own research has yielded new arcane formulae! Choose up to %.0f you wish to study: <Alias=Name1><Alias=Toggle1><Alias=Name2><Alias=Toggle2><Alias=Name3><Alias=Toggle3><Alias=Name4><Alias=Toggle4><Alias=Name5><Alias=Toggle5><Alias=Name6><Alias=Toggle6><Alias=Name7><Alias=Toggle7><Alias=Name8><Alias=Toggle8><Alias=Name9><Alias=Toggle9>'
+Name:
+  TargetLanguage: English
+  Value: Requiem - Spell Choices
+INAM: 0x00000000
+Quest: 5DAA49:Requiem.esp
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: 1)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 1
+- Text:
+    TargetLanguage: English
+    Value: 2)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 2
+- Text:
+    TargetLanguage: English
+    Value: 3)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 3
+- Text:
+    TargetLanguage: English
+    Value: 4)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 4
+- Text:
+    TargetLanguage: English
+    Value: 5)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 5
+- Text:
+    TargetLanguage: English
+    Value: 6)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 6
+- Text:
+    TargetLanguage: English
+    Value: 7)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 7
+- Text:
+    TargetLanguage: English
+    Value: 8)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 8
+- Text:
+    TargetLanguage: English
+    Value: 9)
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 5E48C7:Requiem.esp
+    ComparisonValue: 9
+- Text:
+    TargetLanguage: English
+    Value: Finish

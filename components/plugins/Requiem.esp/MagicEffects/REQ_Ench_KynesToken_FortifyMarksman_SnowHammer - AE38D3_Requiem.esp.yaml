@@ -1,0 +1,41 @@
+FormKey: AE38D3:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyMarksman_SnowHammer
+Name:
+  TargetLanguage: English
+  Value: Fortify Marksman
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MarksmanPowerModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285213568
+    VariableName: ::playerInvolved_var
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285213536
+    VariableName: ::PlayerRank_var
+  ComparisonValue: 3
+- MutagenObjectType: ConditionGlobal
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285213504
+    VariableName: ::playerAllegiance_var
+  ComparisonValue: 073F11:Skyrim.esm

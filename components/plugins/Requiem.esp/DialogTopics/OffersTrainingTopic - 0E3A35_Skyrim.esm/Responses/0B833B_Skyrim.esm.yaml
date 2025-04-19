@@ -1,0 +1,53 @@
+FormKey: 0B833B:Skyrim.esm
+Version2: 8
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__000B833B
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__000B833B
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__000B833B
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 0ADA3C:Skyrim.esm
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: You'll be able to run circles around those big, slow brutes in Heavy Armor.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    RunOnType: Target
+    ActorValue: LightArmor
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01412E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 0E3A49:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 0E3A52:Skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I need training in Evasion.

@@ -1,0 +1,53 @@
+FormKey: 0BF441:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Ebony_Dagger_Stamina6
+ObjectBounds:
+  First: -4, -10, -1
+  Second: 1, 32, 1
+Name:
+  TargetLanguage: English
+  Value: Ebony Dagger of Exhaustion
+Model:
+  File: Weapons\Ebony\EbonyDagger.nif
+  Data: 0x020000000A000000000000005C59DE346464730083202CFF12C290936464730083202CFFA83708C164647300262C333BA893990A6464730083202CFF4FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B863056F0905B16464730083202CFF0D73900C6464730083202CFFB72299956464730083202CFF
+ObjectEffect: 05B45E:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E713:Skyrim.esm
+- 01E71E:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 036BDC:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03CED9:Skyrim.esm
+UnequipSound: 03CEDB:Skyrim.esm
+BasicStats:
+  Value: 720
+  Weight: 5
+  Damage: 10
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 5
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+Template: 0139AE:Skyrim.esm

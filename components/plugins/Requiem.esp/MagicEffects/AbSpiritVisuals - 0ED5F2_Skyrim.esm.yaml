@@ -1,0 +1,40 @@
+FormKey: 0ED5F2:Skyrim.esm
+EditorID: AbSpiritVisuals
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magiceffectshadersonendscript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDuration
+      Data: 0.1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX01
+      Object: 0EA8FF:Skyrim.esm
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.85
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FadeToAlpha
+      Data: True
+    - MutagenObjectType: ScriptBoolProperty
+      Name: DontFadeBack
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Spirit Visuals
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- FXPersist
+HitShader: 03B6CB:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

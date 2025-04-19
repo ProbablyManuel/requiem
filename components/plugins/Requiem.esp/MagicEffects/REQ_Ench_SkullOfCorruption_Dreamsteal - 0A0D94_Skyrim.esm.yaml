@@ -1,0 +1,53 @@
+FormKey: 0A0D94:Skyrim.esm
+EditorID: REQ_Ench_SkullOfCorruption_Dreamsteal
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA16SkullMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDA16SHQS
+      Object: 1093CF:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Dreamsteal
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- HideInUI
+- PowerAffectsMagnitude
+- Painless
+CastingLight: 0F650D:Skyrim.esm
+SpellmakingArea: 5
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 0F650F:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 0F650C:Skyrim.esm
+HitEffectArt: 10950B:Skyrim.esm
+ImpactData: 0ABF0B:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 02FB1D:Skyrim.esm
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetSleepingConditionData
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 0A0D94:Skyrim.esm

@@ -1,0 +1,19 @@
+FormKey: 0E40D5:Skyrim.esm
+EditorID: REQ_NULL_PowerArgonianHistskin
+Name:
+  TargetLanguage: English
+  Value: Histskin
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Invoke the power of the Hist to recover health ten times faster for <60> seconds.
+Flags:
+- ManualCostCalc
+Type: Power
+CastType: FireAndForget
+Effects:
+- BaseEffect: 106AEB:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 60

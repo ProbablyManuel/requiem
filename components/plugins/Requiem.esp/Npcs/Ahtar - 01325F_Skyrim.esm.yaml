@@ -1,0 +1,246 @@
+FormKey: 01325F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Ahtar
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 08634E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: PcLevelMult
+    LevelMult: 1
+  CalcMinLevel: 6
+  CalcMaxLevel: 30
+  SpeedMultiplier: 100
+Factions:
+- Faction: 02817C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 029DB0:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 06FD64:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0C13E8:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013ADA:Skyrim.esm
+Race: 013748:Skyrim.esm
+AttackRace: 013748:Skyrim.esm
+Perks:
+- Perk: 270B76:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B77:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 013991:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 07E019:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0C13EA:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D1:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Mood: Disgusted
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 0A3BE0:Skyrim.esm
+- 101D9B:Skyrim.esm
+- 0B243D:Skyrim.esm
+- 034BEC:Skyrim.esm
+- 01B210:Skyrim.esm
+- 0C97B8:Skyrim.esm
+Keywords:
+- 070C0A:Skyrim.esm
+Class: 01CE15:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Ahtar
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 24
+  - Key: TwoHanded
+    Value: 21
+  - Key: Archery
+    Value: 17
+  - Key: Block
+    Value: 17
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 21
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 147
+  Magicka: 60
+  Stamina: 128
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 0510B4:Skyrim.esm
+- 0513FB:Skyrim.esm
+- 09F0A2:Skyrim.esm
+- 0C7123:Skyrim.esm
+- 0E7AEC:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03DECF:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 85
+SoundLevel: Normal
+DefaultOutfit: 09B7CB:Skyrim.esm
+SleepingOutfit: 01697D:Skyrim.esm
+CrimeFaction: 029DB0:Skyrim.esm
+HeadTexture: 0D072A:Skyrim.esm
+TextureLighting: '#00513D35'
+FaceMorph:
+  NoseLongVsShort: -0.74
+  NoseUpVsDown: 0.08
+  JawNarrowVsWide: 0.7
+  CheeksForwardVsBack: 0.7
+  EyesUpVsDown: 0.5
+  EyesInVsOut: 0.66
+  BrowsUpVsDown: -1
+  BrowsForwardVsBack: 1
+  LipsUpVsDown: 0.3
+  LipsInVsOut: 0.26
+  ChinNarrowVsWide: 0.6
+  ChinUpVsDown: 1
+  ChinUnderbiteVsOverbite: 0.8
+  EyesForwardVsBack: -0.38
+FaceParts:
+  Nose: 14
+  Unknown: 4294967295
+  Eyes: 17
+  Mouth: 4
+TintLayers:
+- Index: 1
+  Color: '#00513D35'
+  InterpolationValue: 1
+  Preset: 76
+- Index: 12
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 92
+- Index: 16
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 116
+- Index: 17
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: -1
+- Index: 20
+  Color: '#00430401'
+  InterpolationValue: 0.26
+  Preset: 135
+- Index: 21
+  Color: '#00500901'
+  InterpolationValue: 0.45
+  Preset: 140
+- Index: 22
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 168
+- Index: 24
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 144
+- Index: 32
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 359
+- Index: 33
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 532
+MajorFlags:
+- 0x40000

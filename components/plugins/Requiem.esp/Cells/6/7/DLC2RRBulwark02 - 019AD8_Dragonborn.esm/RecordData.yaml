@@ -1,0 +1,59 @@
+FormKey: 019AD8:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2RRBulwark02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Bulwark Jail
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00221F20'
+    DirectionalXMinus: '#001B1F1D'
+    DirectionalYPlus: '#001F201F'
+    DirectionalYMinus: '#001F1D1F'
+    DirectionalZPlus: '#000E0E0E'
+    DirectionalZMinus: '#002F2F2F'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0E7C5E:Skyrim.esm
+WaterHeight: 0
+Location: 019A26:Dragonborn.esm
+Owner: 01841F:Dragonborn.esm
+SkyAndWeatherFromRegion: 0374BC:Dragonborn.esm
+AcousticSpace: 01989F:Skyrim.esm
+Music: 01BA72:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 037B52:Dragonborn.esm
+  Base: 052695:Skyrim.esm
+  Owner: 000007:Skyrim.esm
+  LocationReference: 019A26:Dragonborn.esm
+  Placement:
+    Position: 1510.4165, 1913.0521, 546.0118
+    Rotation: 6.28255, 0.0014695672, 6.2746453
+MajorFlags:
+- 0x40000

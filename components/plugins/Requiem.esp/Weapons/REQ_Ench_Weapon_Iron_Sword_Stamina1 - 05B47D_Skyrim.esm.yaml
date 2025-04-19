@@ -1,0 +1,54 @@
+FormKey: 05B47D:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Iron_Sword_Stamina1
+ObjectBounds:
+  First: -6, -11, -1
+  Second: 6, 63, 1
+Name:
+  TargetLanguage: English
+  Value: Iron Sword of Fatigue
+Model:
+  File: Weapons\Iron\LongSword.nif
+  Data: 0x020000000A00000000000000F8AE224D6464730068EFBA75BCA5227A6464730068EFBA7533168C0764647300A0B8630503D8C24064647300A0B86305DA8E929164647300262C333B4FE0756464647300A0B863050F61366C6464730068EFBA75F32C042A6464730068EFBA75B8EC307B64647300262C333BA46369F46464730068EFBA75
+ObjectEffect: 05B459:Skyrim.esm
+EnchantmentAmount: 500
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E718:Skyrim.esm
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 036BB0:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 25
+  Weight: 9
+  Damage: 7
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 3
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 012EB7:Skyrim.esm

@@ -1,0 +1,62 @@
+FormKey: 033779:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Gloomreach02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Gloomreach Hive
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00323232'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000B0A0A'
+    DirectionalXMinus: '#00080A09'
+    DirectionalYPlus: '#000A0A0A'
+    DirectionalYMinus: '#000A090A'
+    DirectionalZPlus: '#00040404'
+    DirectionalZMinus: '#000F0F0F'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0C1300:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01918A:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\QuickSky_e.dds
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC2A:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0B9E1E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 31E0C3:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 06B479:Requiem.esp
+  Placement:
+    Position: -118.69399, 2090.9028, -1824.0292
+    Rotation: 0.241671, -0.3842335, 5.0611386
+MajorFlags:
+- 0x40000

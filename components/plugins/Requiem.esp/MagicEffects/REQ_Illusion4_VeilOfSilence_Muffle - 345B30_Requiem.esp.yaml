@@ -1,0 +1,61 @@
+FormKey: 345B30:Requiem.esp
+EditorID: REQ_Illusion4_VeilOfSilence_Muffle
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Exclusive
+      Object: 3FA2AF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 345B2F:Requiem.esp
+  - Name: REQ_Magic_XPGain
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPGain
+      Data: 0.4
+    - MutagenObjectType: ScriptStringProperty
+      Name: skill
+      Data: ILLUSION
+Name:
+  TargetLanguage: English
+  Value: Muffle
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Keywords:
+- 3FA2AF:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+CastingLight: 07479A:Skyrim.esm
+MinimumSkillLevel: 75
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: MovementNoiseMult
+CastingArt: 0223CA:Skyrim.esm
+HitEffectArt: 0BAD3E:Skyrim.esm
+ImpactData: 073320:Skyrim.esm
+DualCastScale: 1
+EquipAbility: 0225AE:Skyrim.esm
+PerkToApply: 34338D:Requiem.esp
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster enshrouds himself in a veil of silencing shadows that absorbs whatever sound is caused by his illusion spells and <mag>% of the noises caused by his movement.

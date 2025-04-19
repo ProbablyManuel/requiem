@@ -1,0 +1,1060 @@
+FormKey: 04E1E2:Skyrim.esm
+EditorID: MQ101KeepIntroSceneB
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SF_MQ101KeepIntroSceneB_0004E1E2
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IdleStop
+      Object: 0E4242:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PA_OffsetCut
+      Object: 04C291:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ralof
+      Object: 03372B:Skyrim.esm
+      Alias: 12
+  ScriptFragments:
+    FileName: SF_MQ101KeepIntroSceneB_0004E1E2
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_8
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_9
+    PhaseFragments:
+    - Flags:
+      - OnCompletion
+      Index: 20
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_0
+    - Flags:
+      - OnStart
+      Index: 11
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_18
+    - Flags:
+      - OnCompletion
+      Index: 26
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_30
+    - Flags:
+      - OnStart
+      Index: 10
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_31
+    - Flags:
+      - OnCompletion
+      Index: 10
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_10
+    - Flags:
+      - OnCompletion
+      Index: 33
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_5
+    - Flags:
+      - OnCompletion
+      Index: 31
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_28
+    - Flags:
+      - OnStart
+      Index: 24
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_15
+Flags:
+- 0x4
+Phases:
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCellConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      Cell: 05DE24:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCellConditionData
+      RunOnType: QuestAlias
+      RunOnTypeIndex: 12
+      Cell: 05DE24:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasLoaded3DConditionData
+      RunOnType: QuestAlias
+      RunOnTypeIndex: 12
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 297
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 04E1E2:Skyrim.esm
+      SceneActionIndex: 80
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetDistanceConditionData
+      RunOnType: QuestAlias
+      RunOnTypeIndex: 12
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 100
+  Unused2: {}
+  EditorWidth: 200
+- Name: Wait for player to get close
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Data:
+      MutagenObjectType: GetDistanceConditionData
+      RunOnType: QuestAlias
+      RunOnTypeIndex: 12
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 100
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetDistanceConditionData
+      RunOnType: QuestAlias
+      RunOnTypeIndex: 12
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 100
+  Unused2: {}
+  EditorWidth: 200
+- Name: Setstage 240 - enable all player controls
+  Unused2: {}
+  EditorWidth: 200
+- Name: Stage 255
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 04E1E2:Skyrim.esm
+      SceneActionIndex: 67
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 257
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 257
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 376
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: Open gates on completion
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 04E1E2:Skyrim.esm
+      SceneActionIndex: 42
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 04E1E2:Skyrim.esm
+      SceneActionIndex: 53
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 270
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 270
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 270
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetVMScriptVariableConditionData
+      Target: 0B35AF:Skyrim.esm
+      SecondUnusedIntParameter: -285084288
+      VariableName: ::isOpen_var
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 270
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 280
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 04E1E2:Skyrim.esm
+      SceneActionIndex: 86
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 280
+  Unused2: {}
+  EditorWidth: 200
+- Name: Wait for battle to be over
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 280
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: Only if player doesn't have key
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 260
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 260
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 260
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 04E1E2:Skyrim.esm
+      SceneActionIndex: 40
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: Ralof goes to get key
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 260
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 04E1E2:Skyrim.esm
+      SceneActionIndex: 68
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 260
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 285
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: Open door - setstage 300
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 260
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 285
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: OR - wait for player to open door if he got key first
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 285
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 300
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 304
+- Name: ''
+  Unused2: {}
+  EditorWidth: 344
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 292
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 292
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: Wait around corner for player to exit room
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03372B:Skyrim.esm
+      Stage: 305
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 304
+Actors:
+- ID: 12
+  Flags: []
+  BehaviorFlags:
+  - DialoguePause
+- ID: 173
+  Flags: []
+  BehaviorFlags:
+  - DialoguePause
+- ID: 174
+  Flags: []
+  BehaviorFlags:
+  - DialoguePause
+Actions:
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 1
+  StartPhase: 0
+  EndPhase: 0
+  Packages:
+  - 0B4052:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 2
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 1
+  EndPhase: 1
+  Topic: Null
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 3
+  StartPhase: 1
+  EndPhase: 1
+  Packages:
+  - 0EDD38:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 4
+  StartPhase: 3
+  EndPhase: 3
+  Topic: 04E192:Skyrim.esm
+  HeadtrackActorID: 113
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 5
+  StartPhase: 2
+  EndPhase: 2
+  TimerSeconds: 1
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 6
+  StartPhase: 4
+  EndPhase: 4
+  TimerSeconds: 1
+- Name: ''
+  ActorID: 12
+  Index: 8
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 7
+  EndPhase: 7
+  Topic: 04E18B:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 12
+  Index: 13
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 11
+  EndPhase: 11
+  Topic: 04E180:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 14
+  StartPhase: 12
+  EndPhase: 13
+  Packages:
+  - 04D364:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 15
+  StartPhase: 15
+  EndPhase: 15
+  Topic: 04E150:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 12
+  Index: 18
+  StartPhase: 19
+  EndPhase: 19
+  Topic: 04E14E:Skyrim.esm
+  HeadtrackActorID: 29
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 22
+  StartPhase: 23
+  EndPhase: 26
+  Packages:
+  - 0B8A9B:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 173
+  Index: 23
+  StartPhase: 27
+  EndPhase: 38
+  Packages:
+  - 0B35B4:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 174
+  Index: 24
+  StartPhase: 27
+  EndPhase: 38
+  Packages:
+  - 0B35B5:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 25
+  StartPhase: 29
+  EndPhase: 29
+  Topic: 04E14C:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 26
+  StartPhase: 27
+  EndPhase: 29
+  Packages:
+  - 04E1E3:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 27
+  StartPhase: 32
+  EndPhase: 33
+  Packages:
+  - 026357:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 28
+  StartPhase: 32
+  EndPhase: 32
+  Topic: 04E14B:Skyrim.esm
+  HeadtrackActorID: 58
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 29
+  StartPhase: 35
+  EndPhase: 36
+  Packages:
+  - 0B7765:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 30
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 35
+  EndPhase: 36
+  Topic: 04E12E:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 31
+  StartPhase: 34
+  EndPhase: 34
+  Packages:
+  - 0B35B5:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 32
+  StartPhase: 38
+  EndPhase: 38
+  Packages:
+  - 0B517D:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 33
+  Flags:
+  - FaceTarget
+  - HeadtrackPlayer
+  StartPhase: 5
+  EndPhase: 5
+  Topic: 04E12D:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 34
+  StartPhase: 14
+  EndPhase: 15
+  Packages:
+  - 026357:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 35
+  StartPhase: 17
+  EndPhase: 18
+  Packages:
+  - 0B8A98:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 37
+  StartPhase: 16
+  EndPhase: 17
+  Topic: 04E12B:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 39
+  StartPhase: 19
+  EndPhase: 21
+  Packages:
+  - 0B8A98:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 40
+  StartPhase: 30
+  EndPhase: 30
+  Packages:
+  - 08C816:Skyrim.esm
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 42
+  StartPhase: 21
+  EndPhase: 21
+  TimerSeconds: 0.5
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 43
+  StartPhase: 4
+  EndPhase: 11
+  Packages:
+  - 0B4052:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 174
+  Index: 44
+  StartPhase: 20
+  EndPhase: 25
+  Packages:
+  - 047CC1:Skyrim.esm
+  - 05CEBD:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 46
+  StartPhase: 16
+  EndPhase: 16
+  Packages:
+  - 026357:Skyrim.esm
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 47
+  StartPhase: 16
+  EndPhase: 16
+  TimerSeconds: 1.5
+- Name: ''
+  ActorID: 12
+  Index: 49
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 6
+  EndPhase: 6
+  Topic: 05B1D6:Skyrim.esm
+  HeadtrackActorID: 12
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 50
+  StartPhase: 22
+  EndPhase: 22
+  Packages:
+  - 06E21E:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 51
+  Flags:
+  - Looping
+  - HeadtrackPlayer
+  StartPhase: 34
+  EndPhase: 34
+  Topic: 0B6B9D:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 15
+  LoopingMin: 8
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 12
+  Index: 53
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 22
+  EndPhase: 22
+  Topic: 05CE8B:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 12
+  Index: 54
+  StartPhase: 26
+  EndPhase: 26
+  Topic: Null
+  HeadtrackActorID: 36
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 173
+  Index: 56
+  StartPhase: 24
+  EndPhase: 25
+  Topic: 05CE8A:Skyrim.esm
+  HeadtrackActorID: 29
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: CLEAR
+  ActorID: 173
+  Index: 58
+  StartPhase: 26
+  EndPhase: 26
+  Topic: Null
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 12
+  Index: 59
+  StartPhase: 23
+  EndPhase: 23
+  Topic: Null
+  HeadtrackActorID: 36
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 173
+  Index: 60
+  StartPhase: 24
+  EndPhase: 25
+  Packages:
+  - 06E21D:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 173
+  Index: 63
+  StartPhase: 26
+  EndPhase: 26
+  Packages:
+  - 0BF466:Skyrim.esm
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 64
+  StartPhase: 2
+  EndPhase: 3
+  Packages:
+  - 0EDD38:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 65
+  Flags:
+  - Looping
+  - HeadtrackPlayer
+  StartPhase: 13
+  EndPhase: 13
+  Topic: 0F838D:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 11
+  LoopingMin: 7
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 67
+  StartPhase: 12
+  EndPhase: 12
+  TimerSeconds: 3
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 68
+  StartPhase: 31
+  EndPhase: 31
+  TimerSeconds: 5
+- Type: Package
+  Name: ''
+  ActorID: 173
+  Index: 71
+  StartPhase: 20
+  EndPhase: 23
+  Packages:
+  - 06E21D:Skyrim.esm
+- Name: ''
+  ActorID: 173
+  Index: 72
+  StartPhase: 21
+  EndPhase: 22
+  Topic: 1041A3:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 12
+  Index: 74
+  StartPhase: 31
+  EndPhase: 31
+  Topic: 1041A2:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 75
+  StartPhase: 31
+  EndPhase: 31
+  Packages:
+  - 10E205:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 76
+  StartPhase: 14
+  EndPhase: 14
+  Topic: 1041EC:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 174
+  Index: 78
+  StartPhase: 26
+  EndPhase: 26
+  Packages:
+  - 0BF466:Skyrim.esm
+- Name: ''
+  ActorID: 12
+  Index: 79
+  Flags:
+  - FaceTarget
+  StartPhase: 30
+  EndPhase: 30
+  Topic: Null
+  HeadtrackActorID: 173
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 80
+  StartPhase: 8
+  EndPhase: 8
+  TimerSeconds: 3
+- Name: ''
+  ActorID: 12
+  Index: 81
+  Flags:
+  - Looping
+  - HeadtrackPlayer
+  StartPhase: 9
+  EndPhase: 9
+  Topic: 107D88:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 6
+  LoopingMin: 3
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 12
+  Index: 82
+  Flags:
+  - FaceTarget
+  - HeadtrackPlayer
+  StartPhase: 10
+  EndPhase: 10
+  Topic: Null
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 83
+  StartPhase: 10
+  EndPhase: 10
+  TimerSeconds: 1
+- Name: ''
+  ActorID: 12
+  Index: 84
+  Flags:
+  - Looping
+  - HeadtrackPlayer
+  StartPhase: 37
+  EndPhase: 37
+  Topic: 10C4FC:Skyrim.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 3
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 12
+  Index: 85
+  StartPhase: 37
+  EndPhase: 37
+  Packages:
+  - 0B7765:Skyrim.esm
+- Type: Timer
+  Name: ''
+  ActorID: 12
+  Index: 86
+  StartPhase: 26
+  EndPhase: 26
+  TimerSeconds: 2
+Unused2: {}
+Quest: 03372B:Skyrim.esm
+LastActionIndex: 86
+VNAM: 0x03000000030000000300000003000000

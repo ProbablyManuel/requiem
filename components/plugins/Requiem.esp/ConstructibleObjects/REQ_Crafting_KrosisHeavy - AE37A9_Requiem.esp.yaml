@@ -1,0 +1,16 @@
+FormKey: AE37A9:Requiem.esp
+EditorID: REQ_Crafting_KrosisHeavy
+Items:
+- Item:
+    Item: AE3923:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: AE3923:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: AE392F:Requiem.esp
+WorkbenchKeyword: AE378B:Requiem.esp
+CreatedObjectCount: 1

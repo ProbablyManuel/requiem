@@ -1,0 +1,213 @@
+FormKey: 09F7F1:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Loc_WE17_Missile
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 12
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - SpellList
+Factions:
+- Faction: 01BCC0:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013ADE:Skyrim.esm
+Template: 89ED3E:Requiem.esp
+Race: 013741:Skyrim.esm
+ActorEffect:
+- 93AD86:Requiem.esp
+Perks:
+- Perk: 051B1B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F61:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F63:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079343:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07934A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079376:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABED:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BE123:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01397F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 013986:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03B562:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 879915:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Soldier
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 12
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 38
+  - Key: Block
+    Value: 12
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 32
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 19
+  - Key: Alchemy
+    Value: 10
+  - Key: Speech
+    Value: 10
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 20
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 10
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 112
+  Magicka: 130
+  Stamina: 113
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 051148:Skyrim.esm
+- 0E4D92:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 70
+SoundLevel: Normal
+DefaultOutfit: 09F7EF:Skyrim.esm
+TextureLighting: '#00AC9F97'
+FaceMorph:
+  NoseLongVsShort: 0.5
+  NoseUpVsDown: 0.2
+  JawUpVsDown: -0.9
+  JawForwardVsBack: -0.8
+  CheeksUpVsDown: 0.8
+  CheeksForwardVsBack: -0.7
+  EyesUpVsDown: -1
+  EyesInVsOut: -0.6
+  BrowsUpVsDown: -0.8
+  BrowsInVsOut: -0.9
+  BrowsForwardVsBack: 0.3
+  LipsUpVsDown: 0.4
+  LipsInVsOut: 0.3
+  ChinNarrowVsWide: -0.3
+  ChinUpVsDown: -0.2
+  ChinUnderbiteVsOverbite: -0.18
+  EyesForwardVsBack: -0.3
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 8
+  Unknown: 4294967295
+  Eyes: 13
+  Mouth: 12
+TintLayers:
+- Index: 16
+  Color: '#00AC9F97'
+  InterpolationValue: 1
+  Preset: 652
+- Index: 17
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 659
+- Index: 18
+  Color: '#00430401'
+  InterpolationValue: 0.69
+  Preset: 671
+- Index: 50
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1222
+- Index: 56
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 1229
+MajorFlags:
+- 0x40000

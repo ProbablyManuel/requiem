@@ -1,0 +1,68 @@
+FormKey: 047817:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SkyboundPass01
+Version2: 10
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Skybound Watch Pass
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#0049412C'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#005C7A78'
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0050412E'
+    DirectionalXMinus: '#00414129'
+    DirectionalYPlus: '#0049442C'
+    DirectionalYMinus: '#00493D2C'
+    DirectionalZPlus: '#00221E13'
+    DirectionalZMinus: '#006F6344'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00608A87'
+  FogMax: 1
+  LightFadeBegin: 13000
+  LightFadeEnd: 14000
+  Inherits:
+  - DirectionalColor
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 03128C:Skyrim.esm
+WaterHeight: 0
+Location: 04B679:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\WRTemple_e.dds
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 04B677:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 061AE4:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EF079:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0EF052:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 04B679:Skyrim.esm
+  Placement:
+    Position: -1370.0048, -9183.662, -1800.831
+    Rotation: 0, -0, 4.6831913
+MajorFlags:
+- 0x40000

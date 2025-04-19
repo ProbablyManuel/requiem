@@ -1,0 +1,76 @@
+FormKey: 016DFB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthNepossHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Nepos' House
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - LightFadeDistances
+LightingTemplate: 09F281:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F315:Skyrim.esm
+Owner: 065675:Skyrim.esm
+LockList: 0133AA:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0775DF:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 3
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 064092:Skyrim.esm
+  TeleportDestination:
+    Door: 07BDBC:Skyrim.esm
+    Position: -175664.47, 6988.584, -1904.8881
+    Rotation: 0, 0, 2.8099802
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 065676:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0D94ED:Skyrim.esm
+    TeleportMarkerTriangle: 68
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  Owner: 065675:Skyrim.esm
+  LocationReference: 01F315:Skyrim.esm
+  Placement:
+    Position: -1824, -408.83344, 67.768875
+    Rotation: 0, -0, 3.1415927
+MajorFlags:
+- 0x40000

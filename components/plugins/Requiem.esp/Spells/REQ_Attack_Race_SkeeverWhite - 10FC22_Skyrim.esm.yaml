@@ -1,0 +1,21 @@
+FormKey: 10FC22:Skyrim.esm
+EditorID: REQ_Attack_Race_SkeeverWhite
+Name:
+  TargetLanguage: English
+  Value: Venomfang Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+Type: Poison
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 10FC23:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 5

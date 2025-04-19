@@ -1,0 +1,27 @@
+FormKey: 000890:ccbgssse001-fish.esm
+EditorID: REQ_Food_Fish_Raw_Angler
+ObjectBounds:
+  First: -15, -26, -11
+  Second: 15, 26, 11
+Name:
+  TargetLanguage: English
+  Value: Angler
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishAngler\FishAngler01Inv.nif
+  Data: 0x020000000000000000000000
+Weight: 2
+Value: 30
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

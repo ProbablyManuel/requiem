@@ -1,0 +1,19 @@
+FormKey: 10CAAE:Skyrim.esm
+EditorID: REQ_NULL_shieldChargeEnchant
+Name:
+  TargetLanguage: English
+  Value: Sprint Hammer
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 10CAAB:Skyrim.esm
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSprintingConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1

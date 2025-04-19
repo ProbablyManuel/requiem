@@ -1,0 +1,18 @@
+FormKey: AD387A:Requiem.esp
+EditorID: REQ_Cook_SoulGem_Tomato_Lesser
+Items:
+- Item:
+    Item: 02E4E2:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 064B42:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetEquippedConditionData
+    ItemOrList: 02AC6F:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: AD3875:Requiem.esp
+WorkbenchKeyword: 0A5CB3:Skyrim.esm
+CreatedObjectCount: 1

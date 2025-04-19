@@ -1,0 +1,147 @@
+FormKey: 0131EF:Skyrim.esm
+EditorID: DragonPriestRace
+Name:
+  TargetLanguage: English
+  Value: Dragon Priest
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 09BCCA:Skyrim.esm
+- 0173C2:Dragonborn.esm
+- AD3A64:Requiem.esp
+- AE3AD1:Requiem.esp
+- AE3ADD:Requiem.esp
+- AE3AE4:Requiem.esp
+Skin: 03B5AB:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013796:Skyrim.esm
+- 0172AC:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 0F23C5:Skyrim.esm
+- 4F6D1E:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: Sneak
+  Boost: 40
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- NoKnockdowns
+- DontShowWeaponBlood
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 1500
+- Key: Magicka
+  Value: 5000
+- Key: Stamina
+  Value: 10000
+BaseCarryWeight: 200
+BaseMass: 2.2
+AccelerationRate: 4
+DecelerationRate: 4
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 1
+UnarmedReach: 73
+AimAngleTolerance: 15
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\DragonPriest\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\DragonPriest\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F1CD:Skyrim.esm
+  Female: 01F1CD:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 043592:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\DragonPriest\Dragon_Priest.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\DragonPriest\Dragon_Priest.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 0F0EA8:Skyrim.esm
+ImpactDataSet: 034930:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: Mask
+- Key: Hair
+  Value: Mask2
+- Key: Body
+  Value: BODY
+- Key: Hands
+  Value: BodyToo
+- Key: Tail
+  Value: FXmist
+- Key: LongHair
+  Value: FXParticles
+EquipmentFlags:
+- Staff
+- Spell
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+- 025BEE:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm

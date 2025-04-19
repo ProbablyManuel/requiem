@@ -1,0 +1,247 @@
+FormKey: 0DE517:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DunYsgramorsTomb_LvlGhostMelee1HFemale
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultGhostScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostWeaponFlickerList
+      Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostLeveledList
+      Object: 10F805:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bFade
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostCorpse
+      Object: 0C674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bdefaultLoot
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
+  - Name: masterambushscript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ambushOnTrigger
+      Data: True
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - Female
+  - DoesNotBleed
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - ModelAnimation
+  - DefPackList
+  - AttackData
+Factions:
+- Faction: 0BC033:Skyrim.esm
+  Fluff: 0x000000
+Voice: 0854EC:Skyrim.esm
+Template: 0D93A2:Skyrim.esm
+Race: 013746:Skyrim.esm
+Perks:
+- Perk: 031284:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 02D290:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 09448B:Skyrim.esm
+- 088978:Skyrim.esm
+- 09BCBD:Skyrim.esm
+Keywords:
+- 000EDF:Skyrim.esm
+- 013796:Skyrim.esm
+- 0CE198:Skyrim.esm
+- 0D205E:Skyrim.esm
+- 0F23C5:Skyrim.esm
+Class: 017008:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Companion Ghost
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 55
+  Magicka: 37
+  Stamina: 49
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 04018F:Skyrim.esm
+- 051148:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+- 0F203D:Skyrim.esm
+HairColor: 0A0438:Skyrim.esm
+CombatStyle: 068849:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 40
+SoundLevel: Normal
+DefaultOutfit: 0C7B18:Skyrim.esm
+TextureLighting: '#00DDDDDD'
+FaceMorph:
+  NoseUpVsDown: -1
+  JawUpVsDown: -0.4
+  CheeksUpVsDown: 0.9
+  CheeksForwardVsBack: 0.7
+  EyesUpVsDown: 0.3
+  EyesInVsOut: 1
+  BrowsUpVsDown: 0.7
+  BrowsInVsOut: -0.2
+  BrowsForwardVsBack: 0.5
+  LipsUpVsDown: -0.3
+  LipsInVsOut: -0.4
+  ChinNarrowVsWide: -0.2
+  ChinUpVsDown: 0.5
+  EyesForwardVsBack: 0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 4
+  Unknown: 4294967295
+  Eyes: 15
+  Mouth: 9
+TintLayers:
+- Index: 26
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 27
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 36
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 44
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 45
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 53
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: -1
+MajorFlags:
+- 0x40000

@@ -1,0 +1,35 @@
+FormKey: 0EF07A:Skyrim.esm
+EditorID: dunTreasMapRiverwood
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dunTreasMapScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myTreasChest
+      Object: AE3B60:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myKeyword
+      Object: 0F49FF:Skyrim.esm
+ObjectBounds:
+  First: -8, -5, 0
+  Second: 8, 5, 0
+Name:
+  TargetLanguage: English
+  Value: Treasure Map I
+Model:
+  File: Clutter\Books\Note01.nif
+  Data: 0x0200000002000000000000007F86450D64647300B5139F09AD43553B64647300B5139F09
+BookText:
+  TargetLanguage: English
+  Value: >2-
+
+        <img src='img://Textures/Interface/Books/dunRiverwoodTreasMap.png' width='290' height='389'>
+PickUpSound: 0C7A54:Skyrim.esm
+Keywords:
+- 0937A2:Skyrim.esm
+Teaches:
+  MutagenObjectType: BookTeachesNothing
+InventoryArt: 097788:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

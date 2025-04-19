@@ -1,0 +1,94 @@
+FormKey: 016BD2:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenMistveilKeep
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mistveil Keep
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00635A3A'
+  DirectionalColor: '#00464646'
+  FogNearColor: '#00757782'
+  FogFar: 3500
+  DirectionalRotationZ: 90
+  FogClipDistance: 4000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#006D5A3C'
+    DirectionalXMinus: '#00585A37'
+    DirectionalYPlus: '#00635E3A'
+    DirectionalYMinus: '#0063553A'
+    DirectionalZPlus: '#002F2A1A'
+    DirectionalZMinus: '#00968959'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00A8A9B0'
+  FogMax: 1
+  Inherits:
+  - FogNear
+LightingTemplate: 0B2157:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 022646:Skyrim.esm
+Owner: 0A251F:Skyrim.esm
+LockList: 0C6FBD:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A31C1:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 3
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0A2988:Skyrim.esm
+  Scale: 1.2
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 022646:Skyrim.esm
+  Placement:
+    Position: -2248.073, 486.0943, 64.91052
+    Rotation: 0, -0, 1.6000106
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E619D:Skyrim.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+  Base: 0136D4:Skyrim.esm
+  Scale: 0.87
+  LocationReference: 022646:Skyrim.esm
+  Placement:
+    Position: -1601.8796, 2033.8882, 184.52393
+    Rotation: 6.204241, 0.2126928, 5.049222
+- MutagenObjectType: PlacedObject
+  FormKey: 0E6210:Skyrim.esm
+  Base: 012FDF:Skyrim.esm
+  LocationReference: 022646:Skyrim.esm
+  Placement:
+    Position: -1958.7808, -335.55597, 64.35624
+    Rotation: 0.0007073026, -0.001139748, 5.9965487
+- MutagenObjectType: PlacedObject
+  FormKey: 0E6211:Skyrim.esm
+  Version2: 1
+  Base: 021363:Skyrim.esm
+  LocationReference: 022646:Skyrim.esm
+  Placement:
+    Position: -2238.0706, 725.52405, 64
+    Rotation: 0, -0, 1.5707964
+MajorFlags:
+- 0x40000

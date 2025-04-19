@@ -1,0 +1,38 @@
+FormKey: 570253:Requiem.esp
+EditorID: REQ_Illusion5_VeilOfShadows_Muffle
+Name:
+  TargetLanguage: English
+  Value: Muffle
+MenuDisplayObject: 109AC3:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Illusion
+CastingLight: 028530:Skyrim.esm
+HitShader: 0BCF25:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: MovementNoiseMult
+CastingArt: 0510CF:Skyrim.esm
+HitEffectArt: 0BAD3E:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 058E0E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The sphere also reduces the noise caused by movement by <mag>%

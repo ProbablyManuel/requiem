@@ -1,0 +1,26 @@
+FormKey: AD3B1F:Requiem.esp
+EditorID: REQ_CoreScripts_PersistentSpellRescaling_PC
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B1F:Requiem.esp
+      Alias: 20
+    Scripts:
+    - Name: REQ_PersistentSpellRescaling_PC
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: SpellsToReapply
+        Object: AD3983:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Persistent Spell Rescaling for Player'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 20
+  Name: PersistentSpellRefresher
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

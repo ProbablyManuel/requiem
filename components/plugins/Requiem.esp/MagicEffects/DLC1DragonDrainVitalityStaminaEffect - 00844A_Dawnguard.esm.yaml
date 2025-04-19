@@ -1,0 +1,34 @@
+FormKey: 00844A:Dawnguard.esm
+EditorID: DLC1DragonDrainVitalityStaminaEffect
+Name:
+  TargetLanguage: English
+  Value: Drain Vitality - Stamina
+MenuDisplayObject: 10F0FF:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+BaseCost: 1
+TaperWeight: 1
+HitShader: 00CBC1:Dawnguard.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+Projectile: 0028D6:Dawnguard.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 015C7B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 0028E3:Dawnguard.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 00D94C:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: Drains <mag> stamina per second for <dur> seconds.

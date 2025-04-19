@@ -1,0 +1,23 @@
+FormKey: 035B16:Dragonborn.esm
+EditorID: REQ_Ench_RingOfTheMoon_Perk
+Name:
+  TargetLanguage: English
+  Value: Frostmoon Howl
+Description:
+  TargetLanguage: English
+  Value: Increases the duration of your Howls by <25>%.
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0CDD84:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.25

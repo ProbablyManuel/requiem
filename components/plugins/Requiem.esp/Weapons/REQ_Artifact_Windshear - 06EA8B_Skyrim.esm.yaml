@@ -1,0 +1,52 @@
+FormKey: 06EA8B:Skyrim.esm
+EditorID: REQ_Artifact_Windshear
+ObjectBounds:
+  First: -5, -8, -5
+  Second: 21, 62, 5
+Name:
+  TargetLanguage: English
+  Value: Windshear
+Model:
+  File: ArteFake\Scimitar_Kataria\Scimitar_Kataria_1h_.nif
+  Data: 0x0200000008000000000000004FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305DA8E929164647300262C333BF8AE224D6464730068EFBA75BCA5227A6464730068EFBA75961FE30164647300579A79084E2C3A3D64647300579A7908
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 01E719:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Bash attacks made with this weapon have a chance of knocking enemies down.
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: AE375D:Requiem.esp
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 45
+  Weight: 10
+  Damage: 8
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 4
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

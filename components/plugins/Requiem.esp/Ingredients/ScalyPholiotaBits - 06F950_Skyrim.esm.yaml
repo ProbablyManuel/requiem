@@ -1,0 +1,37 @@
+FormKey: 06F950:Skyrim.esm
+EditorID: ScalyPholiotaBits
+Version2: 3
+ObjectBounds:
+  First: -6, -7, -3
+  Second: 5, 4, 1
+Name:
+  TargetLanguage: English
+  Value: Scaly Pholiota
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\ScalyPholiotaBits01.nif
+  Data: 0x0200000002000000000000000EA5D33464647300604DDD5CFE4316AF64647300604DDD5C
+PickUpSound: 0BAD13:Skyrim.esm
+Value: 4
+Weight: 0.25
+IngredientValue: 4
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F51:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EB27:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 300

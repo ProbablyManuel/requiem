@@ -1,0 +1,48 @@
+FormKey: 0211EF:Skyrim.esm
+EditorID: REQ_Alteration4_DetectDeath
+Name:
+  TargetLanguage: English
+  Value: Detect Death
+MenuDisplayObject: 104F70:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster detects all nearby dead and can sense them even through walls.
+BaseCost: 75
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+- NoDualCastModification
+CastType: Concentration
+HalfCostPerk: 0C44B9:Skyrim.esm
+Effects:
+- BaseEffect: 01EA75:Skyrim.esm
+  Data:
+    Area: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+- BaseEffect: 0B79E8:Skyrim.esm
+  Data:
+    Area: 200
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+- BaseEffect: 0E8269:Skyrim.esm
+  Data:
+    Area: 200
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+- BaseEffect: 0E826A:Skyrim.esm
+  Data:
+    Area: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData

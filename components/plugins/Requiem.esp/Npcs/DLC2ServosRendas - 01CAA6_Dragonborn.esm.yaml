@@ -1,0 +1,172 @@
+FormKey: 01CAA6:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2ServosRendas
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 50
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  CalcMinLevel: 6
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: -15
+Factions:
+- Faction: 01BCC0:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 0C3C9E:Skyrim.esm
+Voice: 09843B:Skyrim.esm
+Race: 013742:Skyrim.esm
+ActorEffect:
+- 012FCC:Skyrim.esm
+- 013018:Skyrim.esm
+- 05AD5C:Skyrim.esm
+- 039D3F:Skyrim.esm
+Items:
+- Item:
+    Item: 0280C1:Dragonborn.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Class: 039D30:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Servos Rendas
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 10
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 85
+  Magicka: 150
+  Stamina: 100
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 02425E:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C710A:Skyrim.esm
+- 0EB7F7:Skyrim.esm
+- 0F5009:Skyrim.esm
+HairColor: 0A0433:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+DefaultOutfit: 10FB22:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 0F204F:Skyrim.esm
+TextureLighting: '#00859AA3'
+FaceMorph:
+  NoseLongVsShort: 1
+  NoseUpVsDown: -1
+  CheeksUpVsDown: 0.5
+  CheeksForwardVsBack: 0.5
+  EyesUpVsDown: -0.5
+  EyesInVsOut: -0.3
+  BrowsUpVsDown: 0.6
+  BrowsInVsOut: 0.3
+  BrowsForwardVsBack: -0.2
+  LipsUpVsDown: -0.9
+  ChinNarrowVsWide: 0.3
+  ChinUpVsDown: -0.3
+  EyesForwardVsBack: 1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 14
+  Unknown: 4294967295
+  Eyes: 7
+  Mouth: 10
+TintLayers:
+- Index: 8
+  Color: '#003D2C10'
+  InterpolationValue: 0.77
+  Preset: 98
+MajorFlags:
+- 0x40000

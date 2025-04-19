@@ -1,0 +1,24 @@
+FormKey: 092A57:Skyrim.esm
+EditorID: REQ_Ench_Muffle
+Name:
+  TargetLanguage: English
+  Value: Muffle
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 10
+EnchantShader: 092DED:Skyrim.esm
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: MovementNoiseMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Movement noise is <mag>% quieter.

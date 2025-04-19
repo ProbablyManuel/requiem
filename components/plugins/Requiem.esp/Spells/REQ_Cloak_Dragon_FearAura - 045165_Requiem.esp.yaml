@@ -1,0 +1,19 @@
+FormKey: 045165:Requiem.esp
+EditorID: REQ_Cloak_Dragon_FearAura
+Name:
+  TargetLanguage: English
+  Value: Fear
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 045164:Requiem.esp
+  Data:
+    Magnitude: 30
+    Duration: 60

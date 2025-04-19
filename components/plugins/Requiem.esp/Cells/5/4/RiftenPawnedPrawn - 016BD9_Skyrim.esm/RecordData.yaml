@@ -1,0 +1,108 @@
+FormKey: 016BD9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenPawnedPrawn
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Pawned Prawn
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#003C3724'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00757782'
+  FogClipDistance: 4000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0050432E'
+    DirectionalXMinus: '#00414329'
+    DirectionalYPlus: '#0049462C'
+    DirectionalYMinus: '#00493F2C'
+    DirectionalZPlus: '#00221F13'
+    DirectionalZMinus: '#006F6644'
+    Specular: '#00727481'
+    Scale: 1
+  FogFarColor: '#00727481'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogNear
+  - FogFar
+LightingTemplate: 0B2157:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 022648:Skyrim.esm
+Owner: 0A2521:Skyrim.esm
+LockList: 0A2520:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A31BF:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0A29AD:Skyrim.esm
+  Scale: 1.2
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 022648:Skyrim.esm
+  Placement:
+    Position: 150.33247, -86.54656, -191
+    Rotation: 0, -0, 3.6000054
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 06A380:Skyrim.esm
+  Base: 05B198:Skyrim.esm
+  Scale: 0.82
+  LocationReference: 022648:Skyrim.esm
+  Placement:
+    Position: 168.30809, 80.74314, -122.55226
+    Rotation: 0, -0, 3.440006
+- MutagenObjectType: PlacedObject
+  FormKey: 06A37A:Skyrim.esm
+  Base: 05B198:Skyrim.esm
+  Scale: 0.95
+  LocationReference: 022648:Skyrim.esm
+  Placement:
+    Position: 197.59338, 74.44241, -191.8
+    Rotation: 0, -0, 0.14000398
+- MutagenObjectType: PlacedObject
+  FormKey: 06A37C:Skyrim.esm
+  Base: 0185B6:Skyrim.esm
+  LocationReference: 022648:Skyrim.esm
+  Placement:
+    Position: 350.99622, -48.819366, -190.83891
+    Rotation: 0, -0, 0.13681553
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA73D:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 022648:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C733B:Skyrim.esm
+  Placement:
+    Position: -456.18954, -261.31357, -130.00002
+    Rotation: 0, -0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 06A3A7:Skyrim.esm
+  Version2: 1
+  Base: 012FE7:Skyrim.esm
+  LocationReference: 022648:Skyrim.esm
+  Placement:
+    Position: 156.4295, -201.60109, -191.58371
+    Rotation: -0.0012258848, -0.0011055581, 0.0010427998
+MajorFlags:
+- 0x40000

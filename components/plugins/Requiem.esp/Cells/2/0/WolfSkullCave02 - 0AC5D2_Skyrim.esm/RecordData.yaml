@@ -1,0 +1,175 @@
+FormKey: 0AC5D2:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WolfSkullCave02
+Version2: 9
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Wolfskull Ruins
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E1E'
+  DirectionalColor: '#0034495C'
+  FogNearColor: '#00294B85'
+  FogFar: 12000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#0011110B'
+    Scale: 1
+  FogFarColor: '#0099A7A8'
+  FogMax: 1
+  LightFadeBegin: 11000
+  LightFadeEnd: 11000
+  Inherits:
+  - AmbientColor
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - LightFadeDistances
+LightingTemplate: 01F932:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192C8:Skyrim.esm
+SkyAndWeatherFromRegion: 04D7FD:Skyrim.esm
+AcousticSpace: 02B961:Skyrim.esm
+EncounterZone: 03EC8E:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 0AC6F2:Skyrim.esm
+  MajorRecordFlagsRaw: 3584
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - 0x400
+  - InitiallyDisabled
+  Base: 01E7AD:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 0AC6E6:Skyrim.esm
+  - KeywordOrReference: 0AA90E:Skyrim.esm
+    Reference: 0AC6F3:Skyrim.esm
+  PersistentLocation: 0192C8:Skyrim.esm
+  LocationReference: 0192C8:Skyrim.esm
+  Placement:
+    Position: 493.32812, 1995.375, 1195.1664
+    Rotation: 0, -0, 0.43320072
+  MajorFlags:
+  - StartsDead
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 0AC7B5:Skyrim.esm
+  MajorRecordFlagsRaw: 3584
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - 0x400
+  - InitiallyDisabled
+  Base: 0A6851:Skyrim.esm
+  LevelModifier: Hard
+  LinkedReferences:
+  - Reference: 0AC7A2:Skyrim.esm
+  - KeywordOrReference: 0AA90E:Skyrim.esm
+    Reference: 0AC7B8:Skyrim.esm
+  PersistentLocation: 0192C8:Skyrim.esm
+  LocationReference: 0192C8:Skyrim.esm
+  Placement:
+    Position: 3471.6484, 1760.3516, 289.21472
+    Rotation: 0, -0, 2.283198
+  MajorFlags:
+  - StartsDead
+  - Persistent
+  - InitiallyDisabled
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 0AC65C:Skyrim.esm
+  MajorRecordFlagsRaw: 2560
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - InitiallyDisabled
+  Base: 01E7AD:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 0AC6E8:Skyrim.esm
+  PersistentLocation: 0192C8:Skyrim.esm
+  LocationReference: 0192C8:Skyrim.esm
+  Placement:
+    Position: 76.40625, 1314.4297, 1218.6769
+    Rotation: 0, -0, 2.7831998
+  MajorFlags:
+  - StartsDead
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 0AC775:Skyrim.esm
+  MajorRecordFlagsRaw: 2560
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - InitiallyDisabled
+  Base: 028F52:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 0AC7A6:Skyrim.esm
+  PersistentLocation: 0192C8:Skyrim.esm
+  LocationReference: 0192C8:Skyrim.esm
+  Placement:
+    Position: 2031.9297, 897.64844, 1112.8911
+    Rotation: 0, -0, 3.5832
+  MajorFlags:
+  - StartsDead
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 0AC774:Skyrim.esm
+  MajorRecordFlagsRaw: 2560
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - InitiallyDisabled
+  Base: 01E7AD:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 0AC7A4:Skyrim.esm
+  PersistentLocation: 0192C8:Skyrim.esm
+  LocationReference: 0192C8:Skyrim.esm
+  Placement:
+    Position: 2169.9531, -687.71875, -454.97876
+    Rotation: 0, -0, 3.983193
+  MajorFlags:
+  - StartsDead
+  - InitiallyDisabled
+- MutagenObjectType: PlacedObject
+  FormKey: 085C69:Skyrim.esm
+  Version2: 2
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_AddItems
+      Properties:
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Items
+        Objects:
+        - Name: ''
+          Object: 02D145:Requiem.esp
+  Base: 02065D:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192C8:Skyrim.esm
+  Placement:
+    Position: 3859.5566, -244.96393, 1863.241
+    Rotation: 0, -0, 2.4331903
+MajorFlags:
+- 0x40000

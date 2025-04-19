@@ -1,0 +1,61 @@
+FormKey: 02D5D1:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: CronvangrHall02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Cronvangr Broodlair
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00241E1C'
+  FogNearColor: '#004B4838'
+  FogNear: 340
+  FogFar: 5000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#008F8A6B'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 091937:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01915B:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC04:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 063E95:Skyrim.esm
+  Version2: 4
+  Base: 020662:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01915B:Skyrim.esm
+  Placement:
+    Position: 1642.1345, -501.01776, -788.3198
+    Rotation: 0, -0, 0.003198424
+MajorFlags:
+- 0x40000

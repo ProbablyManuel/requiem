@@ -1,0 +1,23 @@
+FormKey: 0177B7:Dragonborn.esm
+EditorID: REQ_NULL_DLC2FrenzyRune
+Name:
+  TargetLanguage: English
+  Value: Frenzy Rune
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 278
+Flags:
+- AreaEffectIgnoresLOS
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 20
+HalfCostPerk: 0C44C4:Skyrim.esm
+Effects:
+- BaseEffect: 0177B8:Dragonborn.esm
+  Data:
+    Magnitude: 1
+    Duration: 1

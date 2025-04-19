@@ -1,0 +1,40 @@
+FormKey: 0FB408:Skyrim.esm
+EditorID: dunRedEagleTurnUndeadFFContact
+Name:
+  TargetLanguage: English
+  Value: Red Eagle Turn Undead
+Keywords:
+- 0BD83F:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 1
+MagicSkill: Restoration
+HitShader: 04C6D8:Skyrim.esm
+EnchantShader: 05D608:Skyrim.esm
+MinimumSkillLevel: 25
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: TurnUndead
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 04C6DA:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <35> fire damage and makes the undead up to level <mag> flee for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

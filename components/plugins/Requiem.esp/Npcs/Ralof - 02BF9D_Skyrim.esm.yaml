@@ -1,0 +1,296 @@
+FormKey: 02BF9D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Ralof
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_CW02_RalofWarhammer
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CW02B
+      Object: 02610B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RalofWarhammer
+      Object: 013981:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CW02A
+      Object: 02D75C:Skyrim.esm
+Configuration:
+  Flags:
+  - Essential
+  - AutoCalcStats
+  - Unique
+  - LoopedScript
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  CalcMinLevel: 1
+  CalcMaxLevel: 50
+  SpeedMultiplier: 100
+Factions:
+- Faction: 01C9FD:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028849:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02BF9B:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 06B18C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0F1AC9:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 10A195:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AE6:Skyrim.esm
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 929825:Requiem.esp
+- AD3A6B:Requiem.esp
+AttackRace: 013746:Skyrim.esm
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F66:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F67:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F69:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F594:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079343:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079355:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3678:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3679:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB406:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 106253:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 107832:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01397D:Skyrim.esm
+    Count: 12
+- Item:
+    Item: 03B562:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03EADF:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 885F5B:Requiem.esp
+    Count: 1
+- Item:
+    Item: 892620:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 105948:Skyrim.esm
+- 05799A:Skyrim.esm
+- 0956B8:Skyrim.esm
+Class: 7F6492:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Ralof
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 87
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 87
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 88
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 192
+  Magicka: 80
+  Stamina: 173
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 017508:Skyrim.esm
+- 024244:Skyrim.esm
+- 0514D5:Skyrim.esm
+- 051508:Skyrim.esm
+- 08555F:Skyrim.esm
+HairColor: 0A042F:Skyrim.esm
+CombatStyle: 109627:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 75
+SoundLevel: Normal
+DefaultOutfit: 0FE535:Skyrim.esm
+SleepingOutfit: 01697D:Skyrim.esm
+CrimeFaction: 028849:Skyrim.esm
+HeadTexture: 07325A:Skyrim.esm
+TextureLighting: '#00C6B0A8'
+FaceMorph:
+  NoseLongVsShort: 0.76
+  NoseUpVsDown: 0.4
+  JawUpVsDown: -0.7
+  JawNarrowVsWide: -0.46
+  JawForwardVsBack: 0.04
+  CheeksUpVsDown: 0.8
+  CheeksForwardVsBack: 0.9
+  EyesUpVsDown: -0.28
+  EyesInVsOut: -0.56
+  BrowsUpVsDown: -1
+  BrowsInVsOut: -0.4
+  BrowsForwardVsBack: 0.7
+  LipsUpVsDown: 0.7
+  LipsInVsOut: -0.84
+  ChinNarrowVsWide: -0.16
+  ChinUpVsDown: -0.3
+  ChinUnderbiteVsOverbite: 0.3
+  EyesForwardVsBack: 0.6
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 1
+  Unknown: 4294967295
+  Eyes: 1
+  Mouth: 11
+TintLayers:
+- Index: 1
+  Color: '#00C6B0A8'
+  InterpolationValue: 1
+  Preset: 75
+- Index: 2
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 88
+- Index: 3
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 96
+- Index: 5
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 103
+- Index: 8
+  Color: '#00A95452'
+  InterpolationValue: 0.19
+  Preset: 120
+- Index: 19
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 583
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0.42
+  Preset: 587
+MajorFlags:
+- 0x40000

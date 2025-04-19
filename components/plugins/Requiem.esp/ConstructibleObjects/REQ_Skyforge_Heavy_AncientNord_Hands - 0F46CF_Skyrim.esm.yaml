@@ -1,0 +1,26 @@
+FormKey: 0F46CF:Skyrim.esm
+EditorID: REQ_Skyforge_Heavy_AncientNord_Hands
+Items:
+- Item:
+    Item: 05ACE4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05ACE5:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0F46D1:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 056B17:Skyrim.esm
+WorkbenchKeyword: 0F46CE:Skyrim.esm
+CreatedObjectCount: 1

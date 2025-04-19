@@ -1,0 +1,71 @@
+FormKey: 0165B2:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunHouseGrayMane
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: House Gray-Mane
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#003C3C50'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000F0D0C'
+    DirectionalXMinus: '#000C0D0B'
+    DirectionalYPlus: '#000E0D0C'
+    DirectionalYMinus: '#000E0C0C'
+    DirectionalZPlus: '#00060605'
+    DirectionalZMinus: '#00151312'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F874:Skyrim.esm
+Owner: 093B1C:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 016617:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 6
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0252C7:Skyrim.esm
+  TeleportDestination:
+    Door: 01A6FF:Skyrim.esm
+    Position: 23787.996, -4512.5005, -2967.2117
+    Rotation: 0, -0, 1.1853995
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 093B0B:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0CB66A:Skyrim.esm
+    TeleportMarkerTriangle: 15
+  Owner: 093B1C:Skyrim.esm
+  LocationReference: 01F874:Skyrim.esm
+  Placement:
+    Position: -259.66876, 449.5979, 121.19986
+    Rotation: 0, -0, 4.712389
+MajorFlags:
+- 0x40000

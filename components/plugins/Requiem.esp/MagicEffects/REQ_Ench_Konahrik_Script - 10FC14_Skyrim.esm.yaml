@@ -1,0 +1,36 @@
+FormKey: 10FC14:Skyrim.esm
+EditorID: REQ_Ench_Konahrik_Script
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Konahrik
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Healing
+      Object: 01F330:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SummonDragonPriest
+      Object: 10FC16:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FrostCloak
+      Object: AE37D3:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LightningCloak
+      Object: AE37D4:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: flameCloak
+      Object: 10FC17:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Konahrik's Privilege
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Each hit has a 50% chance to restore <100> health for <3> seconds. Each hit has a 25% chance to cast a fire, frost, and shock cloak for <10> seconds. Each hit has a 5% chance to summon a dragon priest for <60> seconds.

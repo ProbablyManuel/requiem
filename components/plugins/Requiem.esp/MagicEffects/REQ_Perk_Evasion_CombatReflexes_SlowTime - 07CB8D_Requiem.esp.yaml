@@ -1,0 +1,51 @@
+FormKey: 07CB8D:Requiem.esp
+EditorID: REQ_Perk_Evasion_CombatReflexes_SlowTime
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicimodbeginloopend
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 0FD7DA:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 1.75
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 0FD7DC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LoopFX
+      Object: 0FD7DB:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bPlayerOnly
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Slow Time Effect
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoArea
+- NoRecast
+BaseCost: 500
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: SlowTime
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The fighter enters a battletrance that allows much faster reactions in combat for <dur> seconds. This ability cannot be used while wearing heavy armor or being exhausted.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    Keyword: 06BBD2:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Stamina
+  ComparisonValue: 90

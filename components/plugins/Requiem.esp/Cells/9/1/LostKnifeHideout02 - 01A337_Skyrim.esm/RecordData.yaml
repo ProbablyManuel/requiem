@@ -1,0 +1,141 @@
+FormKey: 01A337:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: LostKnifeHideout02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Lost Knife Hideout
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00282E29'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#005F6552'
+  FogNear: 340
+  FogFar: 12000
+  DirectionalFade: 1
+  FogClipDistance: 12000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#004B5F6A'
+    Scale: 1
+  FogFarColor: '#004D5243'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 094E50:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019267:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC45:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 01C165:Skyrim.esm
+  Version2: 4
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.88
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 019267:Skyrim.esm
+  Placement:
+    Position: -1435.5482, 608.5753, 190.91127
+    Rotation: -0.047889374, -0.014378794, 6.03491
+- MutagenObjectType: PlacedObject
+  FormKey: 0EB213:Skyrim.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_AddItems
+      Properties:
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Items
+        Objects:
+        - Name: ''
+          Object: 0508CA:Skyrim.esm
+      - MutagenObjectType: ScriptIntListProperty
+        Name: Amount
+        Data:
+        - 21
+  Base: 02064F:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019267:Skyrim.esm
+  Placement:
+    Position: -837.4786, 297.14124, -76.91779
+    Rotation: 0.14264053, 6.1009817, 2.6120546
+- MutagenObjectType: PlacedObject
+  FormKey: 01BDF6:Skyrim.esm
+  Base: 02064F:Skyrim.esm
+  Scale: 0.72
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019267:Skyrim.esm
+  Placement:
+    Position: 1179.3336, -1196.5087, -0.554108
+    Rotation: 0, 0, 2.1731968
+- MutagenObjectType: PlacedObject
+  FormKey: 059382:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019267:Skyrim.esm
+  Placement:
+    Position: -5744.887, 647.3644, -510.76825
+    Rotation: 6.0460753, 0.046424013, 2.1824381
+- MutagenObjectType: PlacedObject
+  FormKey: 049F25:Skyrim.esm
+  Version2: 2
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019267:Skyrim.esm
+  Placement:
+    Position: -2754.2766, -269.18954, -124.80264
+    Rotation: 0.17972344, 0.34755272, 1.6996797
+- MutagenObjectType: PlacedObject
+  FormKey: 0CEEB0:Skyrim.esm
+  Version2: 2
+  Base: 0CE0AB:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 034C91:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019267:Skyrim.esm
+  Placement:
+    Position: 1500.0643, -916.72327, -118.19744
+    Rotation: -0.020000108, 0.01999968, 0.9999998
+MajorFlags:
+- 0x40000

@@ -1,0 +1,522 @@
+FormKey: 025251:Skyrim.esm
+EditorID: CR08
+VirtualMachineAdapter:
+  Scripts:
+  - Name: CR08QuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ProtectedVictim
+      Object: 025251:Skyrim.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ParentQuest
+      Object: 04B2D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Victim
+      Object: 025251:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MapMarker
+      Object: 025251:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CRSkjor
+      Object: 025253:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Skjor
+      Object: 04B2D9:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptIntProperty
+      Name: RewardAmount
+      Data: 500
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CRVilkas
+      Object: 025254:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Vilkas
+      Object: 04B2D9:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VictimHome
+      Object: 025251:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VictimMarker
+      Object: 025251:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QuestGiver
+      Object: 025251:Skyrim.esm
+      Alias: 0
+  - Name: QF_CR08_00025251
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_VictimHomeMapMarker
+      Object: 025251:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Victim
+      Object: 025251:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_VictimMarker
+      Object: 025251:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ProtectedVictim
+      Object: 025251:Skyrim.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Lair
+      Object: 025251:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_VictimHome
+      Object: 025251:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Boss
+      Object: 025251:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestGiver
+      Object: 025251:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_VictimHomeCenter
+      Object: 025251:Skyrim.esm
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_LairMapMarker
+      Object: 025251:Skyrim.esm
+      Alias: 17
+  FileName: QF_CR08_00025251
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_2
+  - Stage: 22
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_9
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_4
+  - Stage: 25
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_10
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_7
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_12
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_13
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_6
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_11
+  - Stage: 21
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_8
+  - Stage: 150
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_20
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_21
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 025251:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: CompanionsRadiantQuestgiverAlias
+  - Property:
+      Name: ''
+      Object: 025251:Skyrim.esm
+      Alias: 1
+    Scripts:
+    - Name: CR08VictimScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ProtectedVictim
+        Object: 025251:Skyrim.esm
+        Alias: 15
+  - Property:
+      Name: ''
+      Object: 025251:Skyrim.esm
+      Alias: 15
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 025251:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 50
+  - Property:
+      Name: ''
+      Object: 025251:Skyrim.esm
+      Alias: 8
+    Scripts:
+    - Name: CR08BossScript
+Name:
+  TargetLanguage: English
+  Value: Rescue Mission
+Priority: 70
+QuestFormVersion: 65
+Type: CompanionQuests
+Event: SCPT
+Filter: Faction\Companions\Radiant\
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Faction: 048362:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 025251:Skyrim.esm
+    SecondUnusedIntParameter: -285350528
+    VariableName: ::IsActive_var
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 04B2D9:Skyrim.esm
+    SecondUnusedIntParameter: -285350496
+    VariableName: ::StoryQuestIsRunning_var
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 18
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+- Index: 1
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: <Alias=Victim> has been kidnapped and taken to <Alias=Lair>. I need to get <Alias.PronounObj=Victim> back to <Alias=VictimHome>.
+- Index: 20
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+- Index: 21
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+- Index: 22
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+- Index: 25
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I rescued <Alias=Victim> from <Alias=Lair> and escorted <Alias.PronounObj=Victim> back to <Alias=VictimHome>.
+- Index: 50
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found <Alias=Victim> in <Alias=Lair> but <Alias.Pronoun=Victim> died.
+- Index: 100
+  Unknown: 3
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+- Index: 150
+  Unknown: 171
+  LogEntries:
+  - Flags:
+    - FailQuest
+- Index: 200
+  Unknown: 3
+  LogEntries:
+  - Flags: []
+- Index: 250
+  LogEntries:
+  - Flags:
+    - FailQuest
+- Index: 255
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Rescue <Alias=Victim> from <Alias=Lair>
+  Targets:
+  - AliasID: 1
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to <Alias=Victim>
+  Targets:
+  - AliasID: 1
+- Index: 21
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Escort <Alias=Victim> back to <Alias=VictimHome>
+  Targets:
+  - AliasID: 13
+- Index: 22
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Take your leave of <Alias=Victim>
+  Targets:
+  - AliasID: 1
+- Index: 25
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to <Alias.ShortName=Questgiver>
+  Targets:
+  - {}
+NextAliasID: 18
+Aliases:
+- Name: QuestGiver
+  Flags:
+  - Optional
+  - StoresText
+  VoiceTypes: 0D8702:Skyrim.esm
+- ID: 1
+  Name: Victim
+  Flags:
+  - ReservesLocationOrReference
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocFormListConditionData
+      FormList: 0F9073:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 039793:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsVoiceTypeConditionData
+      VoiceTypeOrList: 0400B6:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 0A2C8D:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050920:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 0BD738:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 05C84E:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 048362:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 000944:Update.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsUniqueConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsEssentialConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsProtectedConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDeadConditionData
+  PackageData:
+  - 05478B:Skyrim.esm
+  - 05478A:Skyrim.esm
+  VoiceTypes: Null
+- ID: 15
+  Name: ProtectedVictim
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - Protected
+  VoiceTypes: Null
+- ID: 6
+  Type: Location
+  Name: Lair
+  Flags:
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocFormListConditionData
+      FormList: 0F9073:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 0130F7:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 0130FA:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DF:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E4:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E6:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EC:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EB:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DF:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetLevelConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      RunOnTypeIndex: 0
+    ComparisonValue: 24
+- ID: 8
+  Name: Boss
+  Flags: []
+  Location:
+    AliasID: 6
+    RefType: 0130F7:Skyrim.esm
+  VoiceTypes: Null
+- ID: 7
+  Name: VictimMarker
+  Flags: []
+  Location:
+    AliasID: 6
+    RefType: 0130FA:Skyrim.esm
+  VoiceTypes: Null
+- ID: 12
+  Type: Location
+  Name: VictimHome
+  Flags:
+  - StoresText
+  Location:
+    AliasID: 1
+    Keyword: 039793:Skyrim.esm
+- ID: 13
+  Name: VictimHomeCenter
+  Flags: []
+  Location:
+    AliasID: 12
+    RefType: 01BDF1:Skyrim.esm
+  VoiceTypes: Null
+- ID: 16
+  Name: VictimHomeMapMarker
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000010:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 12
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 17
+  Name: LairMapMarker
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000010:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 6
+    ComparisonValue: 1
+  VoiceTypes: Null

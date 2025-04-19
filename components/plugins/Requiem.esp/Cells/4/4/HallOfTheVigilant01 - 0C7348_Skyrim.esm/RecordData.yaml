@@ -1,0 +1,86 @@
+FormKey: 0C7348:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HallOfTheVigilant01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hall of the Vigilant
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#002D3030'
+  DirectionalColor: '#00534B3E'
+  FogNearColor: '#00416578'
+  FogFar: 4000
+  DirectionalRotationZ: 150
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#002C4452'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0C342D:Skyrim.esm
+Owner: 0B3292:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+EncounterZone: 0C3442:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AD384E:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 4CAABF:Requiem.esp
+  Placement:
+    Position: -1208.5, -1124, -427
+    Rotation: 0, 0, 0.34906584
+- MutagenObjectType: PlacedObject
+  FormKey: 0C789E:Skyrim.esm
+  MajorRecordFlagsRaw: 1610614784
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  - 0x40000000
+  Base: 03AD5B:Skyrim.esm
+  LocationReference: 0C342D:Skyrim.esm
+  Placement:
+    Position: -1310.2251, 115.41536, 67.53546
+    Rotation: 6.2826824, 6.2697515, 0.5090584
+- MutagenObjectType: PlacedObject
+  FormKey: AD374D:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: AD374B:Requiem.esp
+  Placement:
+    Position: -1208.5, -1124, -423
+    Rotation: 0, 0, 0.34906584
+- MutagenObjectType: PlacedObject
+  FormKey: 0C789B:Skyrim.esm
+  Base: ADE449:Requiem.esp
+  LocationReference: 0C342D:Skyrim.esm
+  Placement:
+    Position: -1312.4272, -12.478971, 69.90745
+    Rotation: 6.1581864, 0, 0
+MajorFlags:
+- 0x40000

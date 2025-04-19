@@ -1,0 +1,87 @@
+FormKey: 015288:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DriftshadeSanctuary01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Driftshade Refuge
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00282317'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#0011150D'
+  FogNear: 1000
+  FogFar: 14000
+  DirectionalFade: 1
+  FogClipDistance: 14000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#0011150D'
+    Scale: 1
+  FogFarColor: '#0011150D'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01916E:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC0D:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA780:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01916E:Skyrim.esm
+  Placement:
+    Position: -3688.4895, 3223.774, -27.8073
+    Rotation: 0.15707964, 0, 1.8935635
+- MutagenObjectType: PlacedObject
+  FormKey: 03E472:Skyrim.esm
+  Version2: 6
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 01916E:Skyrim.esm
+  Placement:
+    Position: -3461.0088, 4829.5874, -241.6544
+- MutagenObjectType: PlacedObject
+  FormKey: 0C88F1:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01916E:Skyrim.esm
+  Placement:
+    Position: -1054.0651, 6628.4526, -193.0036
+    Rotation: 0, 0, 4.74779
+MajorFlags:
+- 0x40000

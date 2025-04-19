@@ -1,0 +1,35 @@
+FormKey: AE37DB:Requiem.esp
+EditorID: REQ_Ench_AetheriumStaff_EnchantedSphere_Effect
+Name:
+  TargetLanguage: English
+  Value: Summon Enchanted Sphere
+MenuDisplayObject: 0A6459:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: AE3782:Requiem.esp
+CastType: FireAndForget
+TargetType: TargetLocation
+HitEffectArt: 010D67:Dawnguard.esm
+ImpactData: 03A1E9:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 06F79B:Skyrim.esm
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Summons an Enchanted Sphere for <dur> seconds.

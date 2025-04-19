@@ -1,0 +1,45 @@
+FormKey: 0C3678:Skyrim.esm
+EditorID: REQ_OneHanded_WarAxeFocus2
+Name:
+  TargetLanguage: English
+  Value: War Axe Focus
+Description:
+  TargetLanguage: English
+  Value: You've become an advanced war axe fighter.<br>[20% more damage, +20% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 03FFFA:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+NextPerk: 0C3679:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C3679:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E712:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.2
+- MutagenObjectType: PerkAbilityEffect
+  Ability: AD399F:Requiem.esp

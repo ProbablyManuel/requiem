@@ -1,0 +1,66 @@
+FormKey: 01527C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortGreymoor01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Greymoor
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00222F39'
+  DirectionalColor: '#00553717'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 4000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00252F3B'
+    DirectionalXMinus: '#001E2F36'
+    DirectionalYPlus: '#00223139'
+    DirectionalYMinus: '#00222C39'
+    DirectionalZPlus: '#00101619'
+    DirectionalZMinus: '#00334758'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  LightFadeBegin: 4000
+  LightFadeEnd: 5000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 06909B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01917D:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC1B:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0ECD4C:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917D:Skyrim.esm
+  EnableParent:
+    Reference: 0E5F82:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: 1592.3871, 627.6571, -261.20215
+MajorFlags:
+- 0x40000

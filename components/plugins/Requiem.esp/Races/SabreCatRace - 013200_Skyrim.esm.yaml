@@ -1,0 +1,202 @@
+FormKey: 013200:Skyrim.esm
+EditorID: SabreCatRace
+Name:
+  TargetLanguage: English
+  Value: Sabre Cat
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- AD39E3:Requiem.esp
+Skin: 016EE6:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013798:Skyrim.esm
+- 586728:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: OneHanded
+  Boost: 10
+SkillBoost6:
+  Skill: Sneak
+  Boost: 20
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+Starting:
+- Key: Health
+  Value: 250
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 100
+BaseCarryWeight: 200
+BaseMass: 3.5
+AccelerationRate: 1.5
+DecelerationRate: 4
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 5
+UnarmedDamage: 55
+UnarmedReach: 85
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\SabreCat\Character Assets\Skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\SabreCat\Character Assets\Skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01920C:Skyrim.esm
+  Female: 01920C:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPowerShort
+- AttackData:
+    DamageMult: 1
+    Chance: 0.4
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - RotatingAttack
+    AttackAngle: 90
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.2
+    Spell: 0B8783:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 45
+    Stagger: 0.75
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1
+    Chance: 0.55
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight2
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - RotatingAttack
+    AttackAngle: -90
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.2
+    Spell: 0B8783:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 45
+    Stagger: 0.75
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 020E26:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\SabreCat\SabreCatProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\SabreCat\SabreCatProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 01F272:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+EquipmentSlots:
+- 013F42:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 059657:Skyrim.esm
+BaseMovementDefaultRun: 059657:Skyrim.esm
+BaseMovementDefaultSwim: 059657:Skyrim.esm
+BaseMovementDefaultSneak: 059657:Skyrim.esm

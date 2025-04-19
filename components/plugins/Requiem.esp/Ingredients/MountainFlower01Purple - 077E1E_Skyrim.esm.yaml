@@ -1,0 +1,37 @@
+FormKey: 077E1E:Skyrim.esm
+EditorID: MountainFlower01Purple
+Version2: 4
+ObjectBounds:
+  First: -3, -3, -7
+  Second: 3, 3, 7
+Name:
+  TargetLanguage: English
+  Value: Purple Mountain Flower
+Keywords:
+- 08CDEB:Skyrim.esm
+- 0A0E54:Skyrim.esm
+Model:
+  File: Plants\MountainFlower01Purple.nif
+  Data: 0x0200000002000000000000000F2B3A4F64647300134C1EFA71A70DBC64647300134C1EFA
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 0.25
+    Duration: 20
+- BaseEffect: 03EB22:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 10DE5F:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 5
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 60

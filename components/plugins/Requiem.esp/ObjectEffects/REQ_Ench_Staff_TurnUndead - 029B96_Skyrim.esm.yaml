@@ -1,0 +1,34 @@
+FormKey: 029B96:Skyrim.esm
+EditorID: REQ_Ench_Staff_TurnUndead
+Version2: 2
+Name:
+  TargetLanguage: English
+  Value: Turn Undead
+EnchantmentCost: 183
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 183
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 1
+Effects:
+- BaseEffect: 05DD5B:Skyrim.esm
+  Data:
+    Magnitude: 17
+    Duration: 5
+- BaseEffect: 04D3F9:Skyrim.esm
+  Data:
+    Magnitude: 75
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsUndeadConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013796:Skyrim.esm
+    ComparisonValue: 1

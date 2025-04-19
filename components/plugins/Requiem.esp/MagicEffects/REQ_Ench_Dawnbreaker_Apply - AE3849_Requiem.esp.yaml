@@ -1,0 +1,36 @@
+FormKey: AE3849:Requiem.esp
+EditorID: REQ_Ench_Dawnbreaker_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Dawnbreaker
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DawnbreakerEnch
+      Object: 0FEE34:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TurnUndeadMagnitude
+      Object: AE38EB:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: description
+      Object: AE3871:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Apply Dawnbreaker Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

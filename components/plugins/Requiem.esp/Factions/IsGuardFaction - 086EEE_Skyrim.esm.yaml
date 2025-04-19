@@ -1,0 +1,15 @@
+FormKey: 086EEE:Skyrim.esm
+EditorID: IsGuardFaction
+Version2: 8
+Name:
+  TargetLanguage: English
+  Value: GuardFaction (makes an actor a guard)
+Relations:
+- Target: 023EEC:Skyrim.esm
+Flags:
+- HiddenFromPC
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

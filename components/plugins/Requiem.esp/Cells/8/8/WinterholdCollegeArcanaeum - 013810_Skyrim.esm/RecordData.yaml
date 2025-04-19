@@ -1,0 +1,63 @@
+FormKey: 013810:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WinterholdCollegeArcanaeum
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Arcanaeum
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01EB79:Skyrim.esm
+Owner: 01C193:Skyrim.esm
+AcousticSpace: 0FF495:Skyrim.esm
+Music: 01BA72:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 069EAD:Requiem.esp
+  Base: 069947:Requiem.esp
+  RagdollData: 0x001344520000000000000000000000003B1AC9BFB0D96F3843FE48C000005549BA9E1740060072B900E8542C000000800000008065A5C93F
+  Placement:
+    Position: 66.80321, 402.46094, 79.83585
+    Rotation: 0, -0, 1.4623606
+- MutagenObjectType: PlacedObject
+  FormKey: 05CBE6:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 05CBD7:Requiem.esp
+  RagdollData: 0x0035392C805C0541008019BC004B64BF5E18C9BF14D5713965FC48C0006F6C6CBA9E1740060072B900E8542C00000080000000805BA5C93F
+  Placement:
+    Position: -82.9398, 501.0382, 56.997047
+    Rotation: 0, -0, 4.1000004
+MajorFlags:
+- 0x40000

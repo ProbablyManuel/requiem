@@ -1,0 +1,657 @@
+FormKey: 04E4E1:Skyrim.esm
+EditorID: DA09
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA09Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09FloatMarker2
+      Object: 075365:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09FloatMarker1
+      Object: 075364:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09TemporaryDragonFriendFaction
+      Object: 10E0BD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QSTBeamMeridiaStatueLPRef
+      Object: 0FA21D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Follower
+      Object: 0750BA:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AnimalFollower
+      Object: 0750BA:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyPlaneCollision
+      Object: 04E4D7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09BloomIMOD
+      Object: 109BA7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09PedestalRef
+      Object: 07F829:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: beamTarget
+      Object: 0C5824:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09GemScene
+      Object: 04E4F5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09MeridiaRef
+      Object: 04E4E0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WINextDragon
+      Object: 0E518E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09StatueGemMarker
+      Object: 0785D5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09CaveInScene
+      Object: 085202:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: xMarkerVoice
+      Object: 04E4E1:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyMarker
+      Object: 04E4D8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09PedestalEmptyRef
+      Object: 0170F0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DungeonBlockerToggle
+      Object: 0AF38C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyBeam2
+      Object: 075369:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09Vision
+      Object: 085200:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: beamSpell
+      Object: 0994DB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXNecroTendrilRingRef
+      Object: 0EBEBF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09FXBeamSkyRef
+      Object: 0851FE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09StatueMarker
+      Object: 04E4EA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyMarkerB
+      Object: 04E4F4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09StatueBeamTarget2
+      Object: 078B18:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09MeridiaStatueFXRef
+      Object: 094166:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09MeridiaStartMarker
+      Object: 04E4DD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyFadeInOut
+      Object: 075367:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09WhiteIMOD
+      Object: 109BA6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09ChangeLocChance
+      Object: 081C58:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09DawnbreakerList
+      Object: 04E4F3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyScene
+      Object: 04E4E2:Skyrim.esm
+  - Name: QF_DA09_0004E4E1
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GemContainer
+      Object: 04E4E1:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_xMarkerVoice
+      Object: 04E4E1:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BossTrigger
+      Object: 04E4E1:Skyrim.esm
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Statue
+      Object: 04E4E1:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FalkreathMapMarker
+      Object: 04E4E1:Skyrim.esm
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gem
+      Object: 04E4E1:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TempleExteriorTrigger
+      Object: 04E4E1:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GemContainerLocation
+      Object: 04E4E1:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SkySceneStartMarker
+      Object: 04E4E1:Skyrim.esm
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Pedestal
+      Object: 04E4E1:Skyrim.esm
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Meridia
+      Object: 04E4E1:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FrontDoor
+      Object: 04E4E1:Skyrim.esm
+      Alias: 22
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GemMapMarker
+      Object: 04E4E1:Skyrim.esm
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Cell1Exit
+      Object: 04E4E1:Skyrim.esm
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BeamSky
+      Object: 04E4E1:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GemStatic
+      Object: 04E4E1:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DragonPriest
+      Object: 04E4E1:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_StatueTrigger
+      Object: 04E4E1:Skyrim.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dawnsbreaker
+      Object: 04E4E1:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestTargetHelperTrigger
+      Object: 04E4E1:Skyrim.esm
+      Alias: 21
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AchievementsQuest
+      Object: 0FC85D:Skyrim.esm
+  FileName: QF_DA09_0004E4E1
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_5
+  - Stage: 300
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_2
+  - Stage: 400
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_7
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_0
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_13
+  - Stage: 350
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_19
+  - Stage: 410
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_17
+  - Stage: 150
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_11
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_1
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_12
+  - Stage: 450
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_15
+  - Stage: 500
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_8
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 9
+    Scripts:
+    - Name: DA09GemContainerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA09ChangeLocChance
+        Object: 081C58:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 1
+    Scripts:
+    - Name: DA09GemScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA09GemScene
+        Object: 04E4F5:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: xMarkerVoice
+        Object: 04E4E1:Skyrim.esm
+        Alias: 12
+      - MutagenObjectType: ScriptObjectProperty
+        Name: KilkreathMapMarker
+        Object: 04E4E1:Skyrim.esm
+        Alias: 13
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 3
+    Scripts:
+    - Name: DA09StatueScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA09Gem
+        Object: 04E4E6:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 5
+    Scripts:
+    - Name: DA09DragonPriestScript
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 14
+    Scripts:
+    - Name: DA09TempleExteriorTriggerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA09ExteriorTempleScene
+        Object: 081C5D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: xMarkerVoice
+        Object: 04E4E1:Skyrim.esm
+        Alias: 12
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Gem
+        Object: 04E4E1:Skyrim.esm
+        Alias: 1
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 15
+    Scripts:
+    - Name: DA09StatueTriggerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA09ExteriorTempleScene
+        Object: 081C5D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: xMarkerVoice
+        Object: 04E4E1:Skyrim.esm
+        Alias: 12
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA09StatueSceneA
+        Object: 081C5F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Gem
+        Object: 04E4E1:Skyrim.esm
+        Alias: 1
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA09StatueSceneB
+        Object: 081C60:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 17
+    Scripts:
+    - Name: DA09DawnbreakerAliasScript
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 18
+    Scripts:
+    - Name: DA09PedestalScript
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 21
+    Scripts:
+    - Name: DA09QuestTargetHelperTriggerScript
+  - Property:
+      Name: ''
+      Object: 04E4E1:Skyrim.esm
+      Alias: 20
+    Scripts:
+    - Name: DA09BossTriggerScript
+Name:
+  TargetLanguage: English
+  Value: The Break of Dawn
+Flags:
+- RunOnce
+Priority: 60
+QuestFormVersion: 65
+Type: Daedric
+Event: LEVL
+Filter: Daedric\
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 1
+  Unknown: 39
+  LogEntries:
+  - Flags: []
+- Index: 50
+  Unknown: 35
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: An otherworldly voice coming from Mount Kilkreath is commanding me to find a beacon and return it. It should be located in <Alias=GemContainerLocation>.
+- Index: 100
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I've found a strange gem. An otherworldly voice is commanding me to bring it to Mount Kilkreath.
+- Index: 150
+  Unknown: 35
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags: []
+- Index: 300
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Meridia has commanded me to enter Kilkreath Ruins, destroy Malkoran, and retrieve the artifact Dawnbreaker. I will need to guide a beam of light through the ruins which will open the way for me.
+- Index: 350
+  LogEntries:
+  - Flags: []
+- Index: 400
+  LogEntries:
+  - Flags: []
+- Index: 410
+  Unknown: 35
+  LogEntries:
+  - Flags: []
+- Index: 450
+  Unknown: 35
+  LogEntries:
+  - Flags: []
+- Index: 500
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: I have entered Kilkreath Ruins, destroyed Malkoran, and retrieved the artifact Dawnbreaker, which Meridia has bestowed upon me for my service.
+Objectives:
+- Index: 5
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find Meridia's beacon
+  Targets:
+  - AliasID: 1
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring Meridia's beacon to Mount Kilkreath
+  Targets:
+  - AliasID: 3
+- Index: 15
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Replace the beacon
+  Targets:
+  - AliasID: 3
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Guide Meridia's Light through the temple
+  Targets:
+  - AliasID: 5
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInCellConditionData
+        RunOnType: Reference
+        Reference: 000014:Skyrim.esm
+        Cell: 015255:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: IsInInteriorConditionData
+        RunOnType: Reference
+        Reference: 000014:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetVMQuestVariableConditionData
+        Quest: 04E4E1:Skyrim.esm
+        SecondUnusedIntParameter: -285341792
+        VariableName: ::PlayerInQTHelperTrigger_var
+      ComparisonValue: 1
+  - AliasID: 22
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsInInteriorConditionData
+        RunOnType: Reference
+        Reference: 000014:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetVMQuestVariableConditionData
+        Quest: 04E4E1:Skyrim.esm
+        SecondUnusedIntParameter: -285341824
+        VariableName: ::PlayerInQTHelperTrigger_var
+  - AliasID: 24
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInCellConditionData
+        RunOnType: Reference
+        Reference: 000014:Skyrim.esm
+        Cell: 015255:Skyrim.esm
+      ComparisonValue: 1
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Destroy Malkoran
+  Targets:
+  - AliasID: 5
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve Dawnbreaker
+  Targets:
+  - AliasID: 18
+NextAliasID: 27
+Aliases:
+- Name: Meridia
+  Flags:
+  - ReservesLocationOrReference
+  - Essential
+  - AllowDisabled
+  UniqueActor: 04E4DF:Skyrim.esm
+  PackageData:
+  - 04E4EC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 10
+  Type: Location
+  Name: GemContainerLocation
+  Flags:
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 0130F8:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DB:Skyrim.esm
+    ComparisonValue: 1
+- ID: 9
+  Name: GemContainer
+  Flags:
+  - ReservesLocationOrReference
+  Location:
+    AliasID: 10
+    RefType: 0130F8:Skyrim.esm
+  VoiceTypes: Null
+- ID: 25
+  Name: GemMapMarker
+  Flags:
+  - Optional
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000010:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsEditorLocAliasConditionData
+      LocationAliasIndex: 10
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 12
+  Name: xMarkerVoice
+  Flags:
+  - StoresText
+  CreateReferenceToObject:
+    Object: 00003B:Skyrim.esm
+    AliasID: 9
+  DisplayName: 081C57:Skyrim.esm
+  VoiceTypes: Null
+- ID: 1
+  Name: Gem
+  Flags: []
+  CreateReferenceToObject:
+    Object: 04E4E6:Skyrim.esm
+    AliasID: 9
+    Create: In
+  VoiceTypes: Null
+- ID: 4
+  Name: GemStatic
+  Flags:
+  - Optional
+  VoiceTypes: Null
+- ID: 3
+  Name: Statue
+  Flags: []
+  ForcedReference: 108575:Skyrim.esm
+  VoiceTypes: Null
+- ID: 5
+  Name: dragonPriest
+  Flags:
+  - StoresText
+  ForcedReference: 029D87:Skyrim.esm
+  DisplayName: 04E4EB:Skyrim.esm
+  VoiceTypes: Null
+- ID: 13
+  Name: FalkreathMapMarker
+  Flags: []
+  ForcedReference: 01626D:Skyrim.esm
+  VoiceTypes: Null
+- ID: 14
+  Name: TempleExteriorTrigger
+  Flags: []
+  ForcedReference: 081C5C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 15
+  Name: StatueTrigger
+  Flags: []
+  ForcedReference: 081C5E:Skyrim.esm
+  VoiceTypes: Null
+- ID: 16
+  Name: BeamSky
+  Flags: []
+  ForcedReference: 0851FE:Skyrim.esm
+  VoiceTypes: Null
+- ID: 17
+  Name: Dawnsbreaker
+  Flags:
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 04E4EE:Skyrim.esm
+    AliasID: 5
+  VoiceTypes: Null
+- ID: 18
+  Name: Pedestal
+  Flags: []
+  ForcedReference: 07F829:Skyrim.esm
+  VoiceTypes: Null
+- ID: 19
+  Name: SkySceneStartMarker
+  Flags: []
+  ForcedReference: 04E4DD:Skyrim.esm
+  VoiceTypes: Null
+- ID: 22
+  Name: FrontDoor
+  Flags: []
+  ForcedReference: 027EEF:Skyrim.esm
+  VoiceTypes: Null
+- ID: 24
+  Name: Cell1Exit
+  Flags: []
+  ForcedReference: 026CF7:Skyrim.esm
+  VoiceTypes: Null
+- ID: 21
+  Name: QuestTargetHelperTrigger
+  Flags: []
+  ForcedReference: 03EA54:Skyrim.esm
+  VoiceTypes: Null
+- ID: 20
+  Name: BossTrigger
+  Flags: []
+  ForcedReference: 0B7AA8:Skyrim.esm
+  VoiceTypes: Null

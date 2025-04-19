@@ -1,0 +1,48 @@
+FormKey: AD8C9A:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_SteelPlate
+Name:
+  TargetLanguage: English
+  Value: Steel Plate Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: AD8C85:Requiem.esp
+  Data:
+    Magnitude: 12
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBE7:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: AD8C85:Requiem.esp
+  Data:
+    Magnitude: 24
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBE7:Skyrim.esm
+    ComparisonValue: 2
+- BaseEffect: AD8C85:Requiem.esp
+  Data:
+    Magnitude: 36
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBE7:Skyrim.esm
+    ComparisonValue: 3
+- BaseEffect: AD8C85:Requiem.esp
+  Data:
+    Magnitude: 48
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBE7:Skyrim.esm
+    ComparisonValue: 4

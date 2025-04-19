@@ -1,0 +1,19 @@
+FormKey: 0EB24A:Skyrim.esm
+EditorID: REQ_Trait_NoIncomingDamage
+Name:
+  TargetLanguage: English
+  Value: Immunity to damage
+Description:
+  TargetLanguage: English
+  Value: Make actor immune to incoming damage to block skill uses being added
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModIncomingSpellMagnitude
+  PerkConditionTabCount: 2
+  Value: 0

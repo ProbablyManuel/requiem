@@ -1,0 +1,161 @@
+FormKey: 01B64E:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2EncRiekling02Melee
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -13, 0
+  Second: 22, 22, 94
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - LoopedAudio
+  StaminaOffset: 150
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 21
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - AIData
+  - AIPackages
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 80
+Factions:
+- Faction: 01D9C9:Dragonborn.esm
+  Fluff: 0x000000
+DeathItem: 032C78:Dragonborn.esm
+Voice: 0208DC:Dragonborn.esm
+Template: 017F47:Dragonborn.esm
+Race: 017F44:Dragonborn.esm
+WornArmor: 0354E5:Dragonborn.esm
+AttackRace: 017F44:Dragonborn.esm
+Perks:
+- Perk: 052D51:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079346:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0FAB0A:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01B935:Dragonborn.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+  AggroRadiusBehavior: True
+  Warn: 1024
+  WarnOrAttack: 512
+  Attack: 256
+Class: 03BD08:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Riekling
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 53
+  - Key: Archery
+    Value: 53
+  - Key: Block
+    Value: 21
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 37
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 21
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 240
+  Stamina: 290
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 01D9C7:Dragonborn.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 03D588:Dragonborn.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007E7E7E'
+MajorFlags:
+- 0x40000

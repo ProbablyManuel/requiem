@@ -1,0 +1,53 @@
+FormKey: 059326:Skyrim.esm
+EditorID: DA13AfflictedSpray
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ISM_strengthoffset
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_hit
+      Object: 10E3D2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 19151A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_fade
+      Object: 10E3D3:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Poisonous Breath
+Flags:
+- Hostile
+- Detrimental
+- GoryVisuals
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1
+ResistValue: PoisonResist
+TaperWeight: 0.3
+HitShader: 10CC64:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 4
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 059325:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+HitEffectArt: 1046CD:Skyrim.esm
+ImpactData: 0FFF4B:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Type: Release
+  Sound: 0571B2:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03F2EB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: This brutally painful poison inflicts <mag> poison damage per second for <dur> seconds.

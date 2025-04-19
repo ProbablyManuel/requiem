@@ -1,0 +1,34 @@
+FormKey: 0435A1:Skyrim.esm
+EditorID: TrollFaction
+Version2: 4
+Name:
+  TargetLanguage: English
+  Value: Troll Faction
+Relations:
+- Target: 02997F:Skyrim.esm
+  Reaction: Enemy
+- Target: 0330B1:Skyrim.esm
+  Reaction: Enemy
+- Target: 03E691:Skyrim.esm
+  Reaction: Enemy
+- Target: 04359E:Skyrim.esm
+  Reaction: Ally
+- Target: 0435A1:Skyrim.esm
+  Reaction: Ally
+- Target: 0435A2:Skyrim.esm
+  Reaction: Enemy
+- Target: 0AA784:Skyrim.esm
+  Reaction: Friend
+- Target: 0FBBF3:Skyrim.esm
+  Reaction: Enemy
+Flags:
+- IgnoreMurder
+- IgnoreAssault
+- IgnoreStealing
+- IgnoreTrespass
+- IgnorePickpocket
+- IgnoreWerewolf
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

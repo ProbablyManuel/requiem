@@ -1,0 +1,643 @@
+FormKey: 036191:Skyrim.esm
+EditorID: MQ202
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MQ202QuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DialogueFavorGeneric
+      Object: 05A6DC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TG01
+      Object: 01F326:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dirge
+      Object: 036191:Skyrim.esm
+      Alias: 55
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gissur
+      Object: 036191:Skyrim.esm
+      Alias: 61
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FlagonBartender
+      Object: 036191:Skyrim.esm
+      Alias: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vekel
+      Object: 036191:Skyrim.esm
+      Alias: 54
+  - Name: QF_MQ202_00036191
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EsbernVaultMoveMarker
+      Object: 0A8461:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ShavariNote
+      Object: 036191:Skyrim.esm
+      Alias: 72
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EsbernExplainScene
+      Object: 031900:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MainAmbush3
+      Object: 036191:Skyrim.esm
+      Alias: 68
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FinalAmbush1
+      Object: 036191:Skyrim.esm
+      Alias: 73
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RaggedFlagonMarker
+      Object: 044A62:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dirge
+      Object: 036191:Skyrim.esm
+      Alias: 55
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_EsbernsDoor
+      Object: 036191:Skyrim.esm
+      Alias: 60
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ThalmorAmbushEnableMarker
+      Object: 022420:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MainAmbush4
+      Object: 036191:Skyrim.esm
+      Alias: 69
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GissurNote
+      Object: 036191:Skyrim.esm
+      Alias: 71
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vekel
+      Object: 036191:Skyrim.esm
+      Alias: 54
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FinalAmbush2
+      Object: 036191:Skyrim.esm
+      Alias: 74
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Brynjolf
+      Object: 036191:Skyrim.esm
+      Alias: 52
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Shavari
+      Object: 036191:Skyrim.esm
+      Alias: 62
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MainAmbush1
+      Object: 036191:Skyrim.esm
+      Alias: 66
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FinalAmbushEnableMarker
+      Object: 06CCF5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GissurSummonThalmorScene
+      Object: 06C871:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FlagonAmbush2
+      Object: 036191:Skyrim.esm
+      Alias: 64
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gissur
+      Object: 036191:Skyrim.esm
+      Alias: 61
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FlagonAmbush3
+      Object: 036191:Skyrim.esm
+      Alias: 65
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FlagonBartender
+      Object: 036191:Skyrim.esm
+      Alias: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ201
+      Object: 035D5F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ203
+      Object: 036192:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ00
+      Object: 01C5D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ratway02EnableMarker
+      Object: 0E49AF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GissurSummonThalmorStartScene
+      Object: 10C1FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EnemyofPlayerFaction
+      Object: 06C86F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ202ShavariTrigger
+      Object: 098FF0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Delphine
+      Object: 036191:Skyrim.esm
+      Alias: 44
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FlagonAmbush1
+      Object: 036191:Skyrim.esm
+      Alias: 63
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FlagonAmbushMarker
+      Object: 06C874:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EsbernOpenDoorScene
+      Object: 03BCA9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Esbern
+      Object: 036191:Skyrim.esm
+      Alias: 51
+  FileName: QF_MQ202_00036191
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_34
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_47
+  - Stage: 140
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_25
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_36
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_0
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_6
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_21
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_8
+  - Stage: 180
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_19
+  - Stage: 56
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_52
+  - Stage: 130
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_56
+  - Stage: 300
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_49
+  - Stage: 5
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_10
+  - Stage: 175
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_54
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_45
+  - Stage: 150
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_12
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_41
+  - Stage: 145
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_17
+  - Stage: 55
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_32
+  - Stage: 65
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_43
+  - Stage: 160
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_29
+  - Stage: 170
+    Unknown2: 1
+    ScriptName: QF_MQ202_00036191
+    FragmentName: Fragment_15
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 036191:Skyrim.esm
+      Alias: 61
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 70
+      - MutagenObjectType: ScriptIntProperty
+        Name: prereqStageOPT
+        Data: 65
+  - Property:
+      Name: ''
+      Object: 036191:Skyrim.esm
+      Alias: 62
+    Scripts:
+    - Name: MQ202MakeAggressiveInLocation
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: AggressionLocation2
+        Object: 02264A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MQ202ShavariTrigger
+        Object: 098FF0:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: AggressionLocation3
+        Object: 022639:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: AggressionLocation
+        Object: 03B871:Skyrim.esm
+  - Property:
+      Name: ''
+      Object: 036191:Skyrim.esm
+      Alias: 63
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 70
+  - Property:
+      Name: ''
+      Object: 036191:Skyrim.esm
+      Alias: 64
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 70
+  - Property:
+      Name: ''
+      Object: 036191:Skyrim.esm
+      Alias: 65
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 70
+Name:
+  TargetLanguage: English
+  Value: A Cornered Rat
+Flags:
+- RunOnce
+Priority: 82
+QuestFormVersion: 65
+Type: MainQuest
+Filter: Main Quest\
+Stages:
+- Unknown: 101
+  LogEntries:
+  - Flags: []
+- Index: 1
+  LogEntries:
+  - Flags: []
+- Index: 5
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Thalmor are just as puzzled as we are about why dragons are returning. I learned that they are looking for a Blade named Esbern, who Delphine says is an expert on ancient dragon lore. We need to find him before the Thalmor do.
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Thalmor are just as puzzled as we are about why dragons are returning. I learned that they are looking for a Blade named Esbern, who is supposed to be an expert on ancient dragon lore. I've learned that he's hiding out in the Ratway Warrens in Riften.
+- Index: 55
+  LogEntries:
+  - Flags: []
+- Index: 56
+  Unknown: 116
+  LogEntries:
+  - Flags: []
+- Index: 60
+  Unknown: 116
+  LogEntries:
+  - Flags: []
+- Index: 65
+  Unknown: 51
+  LogEntries:
+  - Flags: []
+- Index: 70
+  Unknown: 44
+  LogEntries:
+  - Flags: []
+- Index: 100
+  Unknown: 44
+  LogEntries:
+  - Flags: []
+- Index: 130
+  Unknown: 30
+  LogEntries:
+  - Flags: []
+- Index: 140
+  LogEntries:
+  - Flags: []
+- Index: 145
+  LogEntries:
+  - Flags: []
+- Index: 150
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: The Thalmor are just as puzzled as we are about why dragons are returning. I learned that they are looking for a Blade named Esbern, who is supposed to be an expert on ancient dragon lore. I found Esbern hiding in the Ratway in Riften, and convinced him to let me in to explain myself.
+- Index: 160
+  LogEntries:
+  - Flags: []
+- Index: 170
+  LogEntries:
+  - Flags: []
+- Index: 175
+  LogEntries:
+  - Flags: []
+- Index: 180
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: The Thalmor are just as puzzled as we are about why dragons are returning. I learned that they are looking for a Blade named Esbern, who is supposed to be an expert on ancient dragon lore. I found Esbern hiding in the Ratway in Riften, and convinced him to let me in to explain myself.
+- Index: 200
+  LogEntries:
+  - Flags: []
+- Index: 300
+  Unknown: 44
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Ask in Riften about Esbern
+  Targets:
+  - AliasID: 75
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search the Ratway for Esbern's hideout
+  Targets:
+  - AliasID: 54
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find Esbern in the Ratway Warrens
+  Targets:
+  - AliasID: 51
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to Esbern
+  Targets:
+  - AliasID: 51
+NextAliasID: 76
+Aliases:
+- ID: 44
+  Name: Delphine
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  - AllowReserved
+  UniqueActor: 013478:Skyrim.esm
+  VoiceTypes: Null
+- ID: 51
+  Name: Esbern
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  - AllowReserved
+  UniqueActor: 013358:Skyrim.esm
+  PackageData:
+  - 031907:Skyrim.esm
+  VoiceTypes: Null
+- ID: 52
+  Name: Brynjolf
+  Flags:
+  - QuestObject
+  - AllowDisabled
+  - AllowReserved
+  UniqueActor: 01B07D:Skyrim.esm
+  VoiceTypes: Null
+- ID: 54
+  Name: Vekel
+  Flags:
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  UniqueActor: 013380:Skyrim.esm
+  VoiceTypes: Null
+- ID: 55
+  Name: Dirge
+  Flags:
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  UniqueActor: 01336D:Skyrim.esm
+  VoiceTypes: Null
+- ID: 70
+  Name: FlagonBartender
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowReuseInQuest
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 013380:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 01336D:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 61
+  Name: Gissur
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - QuestObject
+  - AllowDisabled
+  - AllowReserved
+  UniqueActor: 039F23:Skyrim.esm
+  PackageData:
+  - 06CCFD:Skyrim.esm
+  - 06C867:Skyrim.esm
+  VoiceTypes: Null
+- ID: 60
+  Name: EsbernsDoor
+  Flags: []
+  ForcedReference: 03B8B6:Skyrim.esm
+  VoiceTypes: Null
+- ID: 62
+  Name: Shavari
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  - AllowDisabled
+  UniqueActor: 06C868:Skyrim.esm
+  Factions:
+  - 06C86F:Skyrim.esm
+  VoiceTypes: Null
+- ID: 63
+  Name: FlagonAmbush1
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  - AllowDisabled
+  ForcedReference: 06C878:Skyrim.esm
+  CombatOverridePackageList: 06CCF8:Skyrim.esm
+  Factions:
+  - 06C86F:Skyrim.esm
+  PackageData:
+  - 06CCF7:Skyrim.esm
+  VoiceTypes: Null
+- ID: 64
+  Name: FlagonAmbush2
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  - AllowDisabled
+  ForcedReference: 06C87A:Skyrim.esm
+  CombatOverridePackageList: 06CCF8:Skyrim.esm
+  Factions:
+  - 06C86F:Skyrim.esm
+  PackageData:
+  - 06CCF7:Skyrim.esm
+  VoiceTypes: Null
+- ID: 65
+  Name: FlagonAmbush3
+  Flags:
+  - ReservesLocationOrReference
+  - QuestObject
+  - AllowDisabled
+  ForcedReference: 0A3E23:Skyrim.esm
+  CombatOverridePackageList: 06CCF8:Skyrim.esm
+  Factions:
+  - 06C86F:Skyrim.esm
+  PackageData:
+  - 06CCF7:Skyrim.esm
+  VoiceTypes: Null
+- ID: 66
+  Name: MainAmbush1
+  Flags:
+  - AllowDisabled
+  ForcedReference: 02241F:Skyrim.esm
+  CombatOverridePackageList: 06CCEC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 68
+  Name: MainAmbush3
+  Flags:
+  - AllowDisabled
+  ForcedReference: 02241E:Skyrim.esm
+  Items:
+  - Item:
+      Item: 01D4EC:Skyrim.esm
+      Count: 3
+  CombatOverridePackageList: 06CCEC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 69
+  Name: MainAmbush4
+  Flags:
+  - AllowDisabled
+  ForcedReference: 022416:Skyrim.esm
+  CombatOverridePackageList: 06CCEC:Skyrim.esm
+  VoiceTypes: Null
+- ID: 73
+  Name: FinalAmbush1
+  Flags:
+  - AllowDisabled
+  ForcedReference: 04BCD2:Skyrim.esm
+  CombatOverridePackageList: 06CCEC:Skyrim.esm
+  PackageData:
+  - 054B14:Skyrim.esm
+  VoiceTypes: Null
+- ID: 74
+  Name: FinalAmbush2
+  Flags:
+  - AllowDisabled
+  ForcedReference: 04BCD3:Skyrim.esm
+  CombatOverridePackageList: 06CCEC:Skyrim.esm
+  PackageData:
+  - 054B14:Skyrim.esm
+  VoiceTypes: Null
+- ID: 71
+  Name: GissurNote
+  Flags:
+  - Optional
+  - UsesStoredText
+  CreateReferenceToObject:
+    Object: 06DEB6:Skyrim.esm
+    AliasID: 61
+    Create: In
+  VoiceTypes: Null
+- ID: 72
+  Name: ShavariNote
+  Flags: []
+  CreateReferenceToObject:
+    Object: 06DEB5:Skyrim.esm
+    AliasID: 62
+    Create: In
+  VoiceTypes: Null
+- ID: 75
+  Name: Keerava
+  Flags:
+  - Optional
+  UniqueActor: 013365:Skyrim.esm
+  VoiceTypes: Null

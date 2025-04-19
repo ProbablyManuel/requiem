@@ -1,0 +1,53 @@
+FormKey: 98F1F8:Requiem.esp
+EditorID: RFTI_Player_ImpactEffects
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Armor-based rescaling of impacts'
+Description:
+  TargetLanguage: English
+  Value: this perk rescales the impact effects (stamina & magicka drain, stagger) as a function of the armor rating. Each 10 points of AR will reduce the impact's magnitude by 1%, up to a maximum of 80% at 800 AR.
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 1
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: DamageResist
+      ComparisonValue: 800
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 98F1F7:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingSpellMagnitude
+  PerkConditionTabCount: 2
+  ActorValue: DamageResist
+  Value: -0.001
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: DamageResist
+      ComparisonValue: 800
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 98F1F7:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingSpellMagnitude
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.2

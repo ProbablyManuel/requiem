@@ -1,0 +1,35 @@
+FormKey: 0A3F62:Skyrim.esm
+EditorID: REQ_NULL_PerkAvoidDeath
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PerkAvoidDeathScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PerkAvoidDeathTimer
+      Object: 04B6ED:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HealSpell
+      Object: 0A3F63:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Avoid Death
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+MagicSkill: Restoration
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

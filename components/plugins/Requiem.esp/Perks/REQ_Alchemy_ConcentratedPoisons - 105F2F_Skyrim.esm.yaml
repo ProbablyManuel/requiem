@@ -1,0 +1,55 @@
+FormKey: 105F2F:Skyrim.esm
+EditorID: REQ_Alchemy_ConcentratedPoisons
+Name:
+  TargetLanguage: English
+  Value: Concentrated Poisons
+Description:
+  TargetLanguage: English
+  Value: Your experience in the obscure alchemical arts allows you to concentrate your poisons.<br> Thus, you can make most of them last longer before they need to be reapplied.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058216:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Alchemy
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01EA70:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 078098:Skyrim.esm
+  EntryPoint: ModPoisonDoseCount
+  PerkConditionTabCount: 3
+  ActorValue: Alchemy
+  Value: 0.05
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 078098:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPoisonDoseCount
+  PerkConditionTabCount: 3
+  ActorValue: Alchemy
+  Value: 0.02
+  Modification: MultiplyOnePlusAVMult

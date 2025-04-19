@@ -1,0 +1,33 @@
+FormKey: 0142AC:Dawnguard.esm
+EditorID: REQ_Ench_AetheriumShield_Perk
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 220
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 2C6F32:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Add
+  Value: 6
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetEquippedConditionData
+        ItemOrList: 005759:Dawnguard.esm
+      ComparisonValue: 1
+  EntryPoint: ApplyBashingSpell
+  PerkConditionTabCount: 2
+  Spell: 0142AD:Dawnguard.esm

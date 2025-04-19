@@ -1,0 +1,23 @@
+FormKey: AE38C1:Requiem.esp
+EditorID: REQ_Ench_AurielsShield_Sound3
+Name:
+  TargetLanguage: English
+  Value: Auriel's Shield - Sound 3
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: OnHit
+  Sound: 013300:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: ''

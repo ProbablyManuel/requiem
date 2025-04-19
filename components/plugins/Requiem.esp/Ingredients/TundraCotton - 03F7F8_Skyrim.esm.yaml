@@ -1,0 +1,38 @@
+FormKey: 03F7F8:Skyrim.esm
+EditorID: TundraCotton
+Version2: 5
+ObjectBounds:
+  First: -10, -10, -20
+  Second: 10, 10, 20
+Name:
+  TargetLanguage: English
+  Value: Tundra Cotton
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\TundraCotton01.nif
+  Data: 0x0200000002000000000000001DCC3DDC64647300134C1EFA7E3397FA64647300134C1EFA
+PickUpSound: 0517C9:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 039E51:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 60
+- BaseEffect: 03EAF8:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EB1C:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EB23:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30

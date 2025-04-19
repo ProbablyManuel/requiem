@@ -1,0 +1,37 @@
+FormKey: AE37DE:Requiem.esp
+EditorID: REQ_Ench_Dawnbreaker_TurnUndead
+Name:
+  TargetLanguage: English
+  Value: Turn Undead
+MenuDisplayObject: 1097CA:Skyrim.esm
+Keywords:
+- 0BD83F:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+HitShader: 019C9D:Dawnguard.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: TurnUndead
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Undead up to level <mag> flee for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

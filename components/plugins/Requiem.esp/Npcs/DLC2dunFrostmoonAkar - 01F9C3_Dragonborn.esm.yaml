@@ -1,0 +1,283 @@
+FormKey: 01F9C3:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2dunFrostmoonAkar
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2dunFrostmoonTransformScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunFrostmoonWerewolfChangeFX
+      Object: 01F9C1:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NordRace
+      Object: 013746:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunFrostmoonQST
+      Object: 01F9E6:Dragonborn.esm
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - LoopedScript
+  - LoopedAudio
+  StaminaOffset: 400
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 32
+  CalcMinLevel: 10
+  CalcMaxLevel: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 250
+Factions:
+- Faction: 01DC61:Dragonborn.esm
+  Fluff: 0x000000
+Voice: 013ADA:Skyrim.esm
+Race: 013746:Skyrim.esm
+AttackRace: 013746:Skyrim.esm
+CombatOverridePackageList: 03B564:Dragonborn.esm
+Perks:
+- Perk: 03AF84:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03AF9E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03AFA7:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 051B17:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 051B1B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 051B1C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D51:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079346:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079355:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079376:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BE123:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E96:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E97:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB407:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F22:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 107831:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0AD7A3:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 18A671:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 18F5A8:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 037C1F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 037C2B:Skyrim.esm
+    Count: 2
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 03B3F2:Dragonborn.esm
+- 035E22:Dragonborn.esm
+Keywords:
+- 013797:Skyrim.esm
+Class: AE3982:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Akar
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 100
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 64
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 100
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 447
+  Magicka: 80
+  Stamina: 578
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 01750B:Skyrim.esm
+- 02424F:Skyrim.esm
+- 051410:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C7123:Skyrim.esm
+HairColor: 0A0430:Skyrim.esm
+CombatStyle: 0A199D:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 70
+SoundLevel: Normal
+DefaultOutfit: 01F9C8:Dragonborn.esm
+DefaultPackageList: 021E81:Skyrim.esm
+CrimeFaction: 01DC61:Dragonborn.esm
+HeadTexture: 0D071E:Skyrim.esm
+TextureLighting: '#00B79C91'
+FaceMorph:
+  NoseUpVsDown: 0.1
+  JawUpVsDown: 0.2
+  JawNarrowVsWide: -0.3
+  JawForwardVsBack: -0.66
+  CheeksUpVsDown: 0.3
+  CheeksForwardVsBack: 0.8
+  EyesUpVsDown: -0.3
+  EyesInVsOut: -0.06
+  BrowsUpVsDown: -0.7
+  BrowsInVsOut: -0.2
+  BrowsForwardVsBack: 0.1
+  LipsUpVsDown: -0.3
+  LipsInVsOut: 0.06
+  ChinNarrowVsWide: -0.34
+  ChinUpVsDown: 0.8
+  ChinUnderbiteVsOverbite: -0.4
+  EyesForwardVsBack: -0.4
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 18
+  Unknown: 4294967295
+  Eyes: 5
+  Mouth: 14
+TintLayers:
+- Index: 1
+  Color: '#00B79C91'
+  InterpolationValue: 1
+  Preset: 76
+- Index: 2
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 87
+- Index: 3
+  Color: '#00212B52'
+  InterpolationValue: 0.35
+  Preset: 97
+- Index: 8
+  Color: '#000F0440'
+  InterpolationValue: 0.35
+  Preset: 123
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 587
+- Index: 67
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 592
+- Index: 68
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 597
+MajorFlags:
+- 0x40000

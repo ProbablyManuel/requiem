@@ -1,0 +1,27 @@
+FormKey: 065C9F:Skyrim.esm
+EditorID: REQ_Food_Fish_Raw_SalmonMeat
+ObjectBounds:
+  First: -4, -4, 0
+  Second: 4, 4, 2
+Name:
+  TargetLanguage: English
+  Value: Salmon Meat
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\SalmonMeat01.nif
+  Data: 0x020000000200000000000000C49F79CD64647300484A40BF225C0F5864647300484A40BF
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

@@ -1,0 +1,34 @@
+FormKey: 0B62E3:Skyrim.esm
+EditorID: StaffEnchTurnLesserUndead
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: Turn Lesser Undead
+EnchantmentCost: 106
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 106
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 1
+Effects:
+- BaseEffect: 04B145:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 5
+- BaseEffect: 04D3F9:Skyrim.esm
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsUndeadConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013796:Skyrim.esm
+    ComparisonValue: 1

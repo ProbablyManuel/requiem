@@ -1,0 +1,22 @@
+FormKey: 10582A:Skyrim.esm
+EditorID: RFTI_All_Ench_TargeOfTheBlooded
+Name:
+  TargetLanguage: English
+  Value: Targe Bashing Bleeding
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetEquippedConditionData
+        ItemOrList: 0FC5BF:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ApplyBashingSpell
+  PerkConditionTabCount: 2
+  Spell: 10582B:Skyrim.esm

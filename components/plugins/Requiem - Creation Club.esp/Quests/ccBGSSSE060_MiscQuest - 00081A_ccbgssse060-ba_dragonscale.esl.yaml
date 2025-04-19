@@ -1,0 +1,76 @@
+FormKey: 00081A:ccbgssse060-ba_dragonscale.esl
+EditorID: ccBGSSSE060_MiscQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccBGSSSE060_MiscQuest_0500081A
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Book
+      Object: 00081A:ccbgssse060-ba_dragonscale.esl
+      Alias: 0
+  FileName: SSE_QF_ccBGSSSE060_MiscQuest_0500081A
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE060_MiscQuest_0500081A
+    FragmentName: Fragment_1
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE060_MiscQuest_0500081A
+    FragmentName: Fragment_0
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 00081A:ccbgssse060-ba_dragonscale.esl
+      Alias: 0
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00081A:ccbgssse060-ba_dragonscale.esl
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Type: Misc
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  Unknown: 132
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 33331
+- Index: 20
+  Unknown: 200
+  LogEntries:
+  - Flags: []
+    NextQuest: 00081B:ccbgssse060-ba_dragonscale.esl
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the book at Candlehearth Hall
+  Targets:
+  - {}
+NextAliasID: 1
+Aliases:
+- Name: Book
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00081C:ccbgssse060-ba_dragonscale.esl
+  VoiceTypes: Null

@@ -1,0 +1,40 @@
+FormKey: 058218:Skyrim.esm
+EditorID: REQ_Alchemy_Catalysis1
+Name:
+  TargetLanguage: English
+  Value: Catalysis
+Description:
+  TargetLanguage: English
+  Value: You've started experimenting with a catalyst that increases the yield of the brewing process.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058216:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Alchemy
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+NextPerk: 105F2B:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 67
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 105F2B:Skyrim.esm
+  EntryPoint: ModPotionsCreated
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 2

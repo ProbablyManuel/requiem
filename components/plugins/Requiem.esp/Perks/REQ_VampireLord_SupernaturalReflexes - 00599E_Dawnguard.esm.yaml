@@ -1,0 +1,21 @@
+FormKey: 00599E:Dawnguard.esm
+EditorID: REQ_VampireLord_SupernaturalReflexes
+Name:
+  TargetLanguage: English
+  Value: Supernatural Reflexes
+Description:
+  TargetLanguage: English
+  Value: You've gained the power to move incredibly fast,<br> thereby also slowing down enemies.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 00599C:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 01964A:Dawnguard.esm
+  Stage: 60
+  Unknown: 0x000000

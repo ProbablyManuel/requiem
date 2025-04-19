@@ -1,0 +1,21 @@
+FormKey: AE3AF2:Requiem.esp
+EditorID: REQ_Trait_WispMother_SpeedBurst
+Name:
+  TargetLanguage: English
+  Value: Speed Burst
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 00081E:Requiem.esp
+  Data:
+    Magnitude: 200
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetActorValuePercentConditionData
+      ActorValue: Magicka
+    ComparisonValue: 0.2

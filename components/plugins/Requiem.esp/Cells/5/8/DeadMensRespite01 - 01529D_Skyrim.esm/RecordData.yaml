@@ -1,0 +1,101 @@
+FormKey: 01529D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DeadMensRespite01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dead Men's Respite
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#0035373C'
+  DirectionalColor: '#00526165'
+  FogNearColor: '#009C9B7C'
+  FogNear: 400
+  FogFar: 4500
+  DirectionalRotationZ: 90
+  FogClipDistance: 5000
+  FogPower: 0.9
+  AmbientColors:
+    DirectionalXPlus: '#003A373E'
+    DirectionalXMinus: '#002F3739'
+    DirectionalYPlus: '#0035393C'
+    DirectionalYMinus: '#0035343C'
+    DirectionalZPlus: '#00191A1B'
+    DirectionalZMinus: '#0050535C'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00485968'
+  FogMax: 1
+  LightFadeBegin: 12000
+  LightFadeEnd: 13000
+  Inherits:
+  - FogNear
+  - FogFar
+  - ClipDistance
+  - FogMax
+LightingTemplate: 08CDDA:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019161:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\ShinyDullDS_e.dds
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC0B:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 062864:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: dunDeadMensKingOlaf
+  SkyrimMajorRecordFlags:
+  - 0x400
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultActivateLinkedRefOnceOnDeath
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: linkedRefKeyword
+        Object: 05D5FF:Skyrim.esm
+    - Name: defaultClearLocationOnDeath
+    - Name: masterambushscript
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ambushOnTrigger
+        Data: True
+  Base: AD38BF:Requiem.esp
+  LevelModifier: VeryHard
+  LinkedReferences:
+  - Reference: 0E3661:Skyrim.esm
+  - KeywordOrReference: 05D5FF:Skyrim.esm
+    Reference: 0F7765:Skyrim.esm
+  PersistentLocation: 019161:Skyrim.esm
+  LocationReference: 019161:Skyrim.esm
+  LocationRefTypes:
+  - 0130F7:Skyrim.esm
+  EnableParent:
+    Reference: 0E3C3C:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -54.400322, 5094.682, -336
+    Rotation: 0, 0, 3.2061942
+  MajorFlags:
+  - Persistent
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 061C5C:Skyrim.esm
+  Base: 020671:Skyrim.esm
+  Scale: 0.93
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019161:Skyrim.esm
+  Placement:
+    Position: -2801.1577, -2564.665, -1369.3959
+    Rotation: 0.085123196, 6.048407, 3.0949888
+MajorFlags:
+- 0x40000

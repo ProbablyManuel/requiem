@@ -1,0 +1,22 @@
+FormKey: 20B310:Requiem.esp
+EditorID: REQ_Poison_SoulTrap
+Name:
+  TargetLanguage: English
+  Value: Poison of Soulreaping
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Potions\PoisonDamageHealth01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 250
+Flags:
+- NoAutoCalc
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 20B30F:Requiem.esp
+  Data:
+    Duration: 300

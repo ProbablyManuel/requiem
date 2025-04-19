@@ -1,0 +1,64 @@
+FormKey: 018460:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HunterShack
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Froki's Shack
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#00443D26'
+  DirectionalColor: '#003E5268'
+  FogNearColor: '#001E2827'
+  DirectionalRotationZ: 270
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#005C4B32'
+    DirectionalXMinus: '#004B4B2D'
+    DirectionalYPlus: '#00544E30'
+    DirectionalYMinus: '#00544730'
+    DirectionalZPlus: '#00282315'
+    DirectionalZMinus: '#007F724A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00171E1E'
+  FogMax: 1
+  Inherits:
+  - FogNear
+  - FogFar
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0D5663:Skyrim.esm
+Owner: 0185F6:Skyrim.esm
+SkyAndWeatherFromRegion: 04D7FD:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+EncounterZone: 0D5664:Skyrim.esm
+Music: 06D546:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0185E4:Skyrim.esm
+  Version2: 3
+  Base: 09AF19:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0D5663:Skyrim.esm
+  Placement:
+    Position: 169.7767, -105.92057, 102.545235
+    Rotation: 0, -0, 0.70000064
+MajorFlags:
+- 0x40000

@@ -1,0 +1,24 @@
+FormKey: 40DF9F:Requiem.esp
+EditorID: REQ_Illusion_ArcaneResonance_Blindness
+Name:
+  TargetLanguage: English
+  Value: Blindness
+Flags:
+- Hostile
+- Recover
+- NoHitEvent
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+MagicSkill: Illusion
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Blindness
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The arcane resonance distracts the target, focusing the the target's attention on nearby things and decreasing its visual detection skill by <mag>%.

@@ -1,0 +1,76 @@
+FormKey: 08B84D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SunderstoneGorge01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Sunderstone Gorge
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#003C3C3C'
+  DirectionalColor: '#005B7A99'
+  FogNearColor: '#005F6B74'
+  FogFar: 5500
+  DirectionalRotationZ: 270
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00423C3E'
+    DirectionalXMinus: '#00353C39'
+    DirectionalYPlus: '#003C3E3C'
+    DirectionalYMinus: '#003C393C'
+    DirectionalZPlus: '#001C1C1B'
+    DirectionalZMinus: '#005B5B5C'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#005F6B74'
+  FogMax: 0.8
+  Inherits:
+  - AmbientColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - LightFadeDistances
+LightingTemplate: 094E50:Skyrim.esm
+WaterHeight: 0
+Location: 061AE3:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 061ADA:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0C8210:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0F84CD:Skyrim.esm
+  Version2: 1
+  Base: 02065D:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 061AE3:Skyrim.esm
+  Placement:
+    Position: 2496, 2224, 448
+    Rotation: 0, -0, 6.0331864
+- MutagenObjectType: PlacedObject
+  FormKey: 08B965:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 061AE3:Skyrim.esm
+  Placement:
+    Position: 451.40167, 3179.2122, 66.2313
+    Rotation: 0, 0.29999942, 3.4331918
+MajorFlags:
+- 0x40000

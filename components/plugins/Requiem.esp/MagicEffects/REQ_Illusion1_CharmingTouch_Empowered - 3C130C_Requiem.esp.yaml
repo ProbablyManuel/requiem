@@ -1,0 +1,35 @@
+FormKey: 3C130C:Requiem.esp
+EditorID: REQ_Illusion1_CharmingTouch_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+Flags:
+- Detrimental
+- NoHitEvent
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+MagicSkill: Illusion
+TaperWeight: 1
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: TargetActor
+SecondActorValue: Stamina
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If empowered, the strain drains <mag> magicka and stamina per second.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

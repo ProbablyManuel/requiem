@@ -1,0 +1,227 @@
+FormKey: 03546D:Dragonborn.esm
+EditorID: DLC2CultistAmbush
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2_QF_DLC2CultistAmbush_0203546D
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Cultist2
+      Object: 03546D:Dragonborn.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CenterMarker
+      Object: 03546D:Dragonborn.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Location
+      Object: 03546D:Dragonborn.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MQ01
+      Object: 017F8E:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2WE09Chance
+      Object: 033C24:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEPlayerEnemy
+      Object: 01DD0F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 03546D:Dragonborn.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Cultist1
+      Object: 03546D:Dragonborn.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunPrisonerFaction
+      Object: 0AA784:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEPlayerFriend
+      Object: 01DD09:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MQ01AliasForObjective
+      Object: 017F8E:Dragonborn.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 03546D:Dragonborn.esm
+      Alias: 10
+  FileName: DLC2_QF_DLC2CultistAmbush_0203546D
+  Fragments:
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: DLC2_QF_DLC2CultistAmbush_0203546D
+    FragmentName: Fragment_3
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: DLC2_QF_DLC2CultistAmbush_0203546D
+    FragmentName: Fragment_0
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: DLC2_QF_DLC2CultistAmbush_0203546D
+    FragmentName: Fragment_7
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 03546D:Dragonborn.esm
+      Alias: 0
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 10
+    - Name: DLC2WE09ActorScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DLC2MQ01
+        Object: 017F8E:Dragonborn.esm
+  - Property:
+      Name: ''
+      Object: 03546D:Dragonborn.esm
+      Alias: 7
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 10
+    - Name: DLC2WE09ActorScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DLC2MQ01
+        Object: 017F8E:Dragonborn.esm
+  - Property:
+      Name: ''
+      Object: 03546D:Dragonborn.esm
+      Alias: 10
+    Scripts:
+    - Name: DLC2WECultistAmbushPlayerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Cultist2
+        Object: 03546D:Dragonborn.esm
+        Alias: 7
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pLocation
+        Object: 03546D:Dragonborn.esm
+        Alias: 5
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Cultist1
+        Object: 03546D:Dragonborn.esm
+        Alias: 0
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToStopPollingPlayerLocation
+        Data: 1
+Priority: 50
+QuestFormVersion: 65
+Type: Misc
+Event: CLOC
+Filter: DLC2\Radiant\
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 034FBC:Dragonborn.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 034E61:Dragonborn.esm
+  ComparisonValue: 1
+Stages:
+- Index: 1
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Flags:
+  - KeepInstanceDataFromHereOn
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  LogEntries:
+  - Flags: []
+NextAliasID: 11
+Aliases:
+- ID: 5
+  Type: Location
+  Name: Location
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: CLOC
+    EventData: 0x4C320000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 039793:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 013168:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 013166:Skyrim.esm
+    ComparisonValue: 1
+- ID: 6
+  Name: CenterMarker
+  Flags: []
+  Location:
+    AliasID: 5
+    RefType: 01BDF1:Skyrim.esm
+  VoiceTypes: Null
+- Name: Cultist1
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0365F6:Dragonborn.esm
+    AliasID: 6
+  Factions:
+  - 0AA784:Skyrim.esm
+  PackageData:
+  - 03546E:Dragonborn.esm
+  VoiceTypes: Null
+- ID: 7
+  Name: Cultist2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 035475:Dragonborn.esm
+    AliasID: 6
+  Factions:
+  - 0AA784:Skyrim.esm
+  PackageData:
+  - 03546F:Dragonborn.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: Note
+  Flags:
+  - StoresText
+  - UsesStoredText
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0331C2:Dragonborn.esm
+    AliasID: 6
+  VoiceTypes: Null
+- ID: 10
+  Name: Player
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null

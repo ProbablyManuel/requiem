@@ -1,0 +1,112 @@
+FormKey: 005EAA:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1RedwaterDen02
+Version2: 9
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Redwater Spring
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#0042302F'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#00221F20'
+    DirectionalXMinus: '#001B1F1D'
+    DirectionalYPlus: '#001F201F'
+    DirectionalYMinus: '#001F1D1F'
+    DirectionalZPlus: '#000E0E0E'
+    DirectionalZMinus: '#002F2F2F'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00111E1D'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0E7C5E:Skyrim.esm
+WaterHeight: 0
+Location: 004D6F:Dawnguard.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 007779:Dawnguard.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 013B32:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0099CD:Dawnguard.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004D6F:Dawnguard.esm
+  Placement:
+    Position: 4220.7124, -6532.1396, 4972.789
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 00778B:Dawnguard.esm
+  Version2: 5
+  Base: 020664:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 004D6F:Dawnguard.esm
+  Placement:
+    Position: 3577.6785, 1999.5898, 6707.371
+    Rotation: 0, -0, 3.3500001
+- MutagenObjectType: PlacedObject
+  FormKey: 008CCB:Dawnguard.esm
+  Version2: 2
+  Base: 020662:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004D6F:Dawnguard.esm
+  Placement:
+    Position: 5126.857, -5329.9575, 6126.6333
+    Rotation: 0, -0, 4.71239
+- MutagenObjectType: PlacedObject
+  FormKey: 006293:Dawnguard.esm
+  Version2: 3
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004D6F:Dawnguard.esm
+  Placement:
+    Position: 2122.319, -5699.124, 6140.8555
+    Rotation: 0, -0, 1.6207969
+- MutagenObjectType: PlacedObject
+  FormKey: 0148BD:Dawnguard.esm
+  Version2: 2
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004D6F:Dawnguard.esm
+  Placement:
+    Position: 5975.7026, 904.3558, 6574.6333
+    Rotation: 0, -0, 4.7663865
+MajorFlags:
+- 0x40000

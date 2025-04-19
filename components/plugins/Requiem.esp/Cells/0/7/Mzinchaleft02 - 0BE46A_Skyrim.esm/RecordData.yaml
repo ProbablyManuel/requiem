@@ -1,0 +1,70 @@
+FormKey: 0BE46A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Mzinchaleft02
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mzinchaleft Depths
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00161D1F'
+  DirectionalColor: '#00305763'
+  FogNearColor: '#00445A73'
+  FogFar: 25000
+  DirectionalRotationZ: 270
+  FogClipDistance: 22000
+  FogPower: 0.4
+  AmbientColors:
+    DirectionalXPlus: '#00181D20'
+    DirectionalXMinus: '#00131D1D'
+    DirectionalYPlus: '#00161E1F'
+    DirectionalYMinus: '#00161B1F'
+    DirectionalZPlus: '#000A0D0E'
+    DirectionalZMinus: '#00212C2F'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#005B8DA8'
+  FogMax: 0.5
+  Inherits:
+  - FogNear
+  - DirectionalFade
+  - LightFadeDistances
+LightingTemplate: 091930:Skyrim.esm
+WaterHeight: 0
+Location: 019280:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+AcousticSpace: 0E3247:Skyrim.esm
+EncounterZone: 03EC49:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0F14AE:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0BFD19:Skyrim.esm
+  Base: 02069A:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019280:Skyrim.esm
+  Placement:
+    Position: -7.7629538, 11896.614, -3563.6694
+    Rotation: 3.0092623E-36, -2.82119E-36, 4.962389
+- MutagenObjectType: PlacedObject
+  FormKey: 0BE933:Skyrim.esm
+  Version2: 3
+  Base: 020650:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019280:Skyrim.esm
+  Placement:
+    Position: -1181.6116, 4288.472, -5090.621
+    Rotation: 0, -0, 1.5831888
+MajorFlags:
+- 0x40000

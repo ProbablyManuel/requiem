@@ -1,0 +1,63 @@
+FormKey: 0152AF:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BrokenTowerRedoubt01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Broken Tower Redoubt
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#000F0F0F'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#005CBC62'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00100F0F'
+    DirectionalXMinus: '#000D0F0E'
+    DirectionalYPlus: '#000F0F0F'
+    DirectionalYMinus: '#000F0E0F'
+    DirectionalZPlus: '#00070706'
+    DirectionalZMinus: '#00161617'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#0088E3DA'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01914F:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EBF7:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 072B7A:Skyrim.esm
+  Version2: 1
+  Base: 020654:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01914F:Skyrim.esm
+  Placement:
+    Position: 1610.7764, -2546.8123, 41.380947
+    Rotation: 0, -0, 5.6831884
+MajorFlags:
+- 0x40000

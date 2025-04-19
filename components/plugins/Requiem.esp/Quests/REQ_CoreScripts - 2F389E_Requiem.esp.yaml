@@ -1,0 +1,138 @@
+FormKey: 2F389E:Requiem.esp
+EditorID: REQ_CoreScripts
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_SetupValidation
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkyProcMissing
+      Object: 9715CC:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SKSE_missing
+      Object: 604BBA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NoNewGame
+      Object: 9715CA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkyProcOutdated
+      Object: 973D6A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UpgradeForbidden
+      Object: 9715CB:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BashedPatch_TestList
+      Object: 10E4F4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BashedPatchFailed
+      Object: 999063:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SKSE_broken
+      Object: 604BBB:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DowngradeForbidden
+      Object: AD3947:Requiem.esp
+  - Name: REQ_VersionController
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: validator
+      Object: 2F389E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VersionSkyProcPatch
+      Object: 973D69:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InstallationBegins
+      Object: 31DA58:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UpdateDone
+      Object: 2F38A3:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Fadeout
+      Object: 0B6301:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VersionPlugin
+      Object: 2F389F:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VersionSavegame
+      Object: 2F38A0:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UpdateBegins
+      Object: 2F38A2:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AutoUpdater
+      Object: 2F389E:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InstallationDone
+      Object: 2A93A0:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UpdateFailed
+      Object: 9715CE:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InstallationSoundEffect
+      Object: AD381E:Requiem.esp
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 2F389E:Requiem.esp
+      Alias: 0
+    Scripts:
+    - Name: REQ_AutoUpdater
+      Properties:
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: coreScripts
+        Objects:
+        - Name: ''
+          Object: AD3B13:Requiem.esp
+        - Name: ''
+          Object: AD3B18:Requiem.esp
+        - Name: ''
+          Object: AD3B24:Requiem.esp
+        - Name: ''
+          Object: AD3B1C:Requiem.esp
+        - Name: ''
+          Object: AD3B1B:Requiem.esp
+        - Name: ''
+          Object: AD3B14:Requiem.esp
+        - Name: ''
+          Object: AD3B17:Requiem.esp
+        - Name: ''
+          Object: AD3B21:Requiem.esp
+        - Name: ''
+          Object: AD3B1E:Requiem.esp
+        - Name: ''
+          Object: AD3B23:Requiem.esp
+        - Name: ''
+          Object: AD3B22:Requiem.esp
+        - Name: ''
+          Object: AD3B1D:Requiem.esp
+        - Name: ''
+          Object: AD3B16:Requiem.esp
+        - Name: ''
+          Object: AD3B1F:Requiem.esp
+        - Name: ''
+          Object: AD3B19:Requiem.esp
+        - Name: ''
+          Object: AD3B20:Requiem.esp
+        - Name: ''
+          Object: AD3B26:Requiem.esp
+        - Name: ''
+          Object: AD3B25:Requiem.esp
+        - Name: ''
+          Object: AD3B15:Requiem.esp
+        - Name: ''
+          Object: AD3B46:Requiem.esp
+        - Name: ''
+          Object: ADE459:Requiem.esp
+        - Name: ''
+          Object: AE3723:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts Suite'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- Name: AutoUpdater
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

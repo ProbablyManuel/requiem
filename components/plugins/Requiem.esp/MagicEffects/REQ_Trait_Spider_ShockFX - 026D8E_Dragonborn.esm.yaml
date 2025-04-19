@@ -1,0 +1,22 @@
+FormKey: 026D8E:Dragonborn.esm
+EditorID: REQ_Trait_Spider_ShockFX
+Name:
+  TargetLanguage: English
+  Value: Spider Visuals Shock
+Flags:
+- NoDuration
+- FXPersist
+HitShader: 020968:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm

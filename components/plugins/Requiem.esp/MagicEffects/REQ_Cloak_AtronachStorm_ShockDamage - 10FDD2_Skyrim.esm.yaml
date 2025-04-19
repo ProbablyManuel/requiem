@@ -1,0 +1,49 @@
+FormKey: 10FDD2:Skyrim.esm
+EditorID: REQ_Cloak_AtronachStorm_ShockDamage
+Name:
+  TargetLanguage: English
+  Value: Sparks
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+- 2FFEAD:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.95
+MagicSkill: Destruction
+ResistValue: ResistShock
+CastingLight: 057C68:Skyrim.esm
+TaperWeight: 1
+HitShader: 057C67:Skyrim.esm
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 034190:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: Magicka
+CastingArt: 058E9B:Skyrim.esm
+ImpactData: 038B05:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 1
+Sounds:
+- Sound: 03F208:Skyrim.esm
+- Type: Release
+  Sound: 03F206:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03F205:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Lightning that deals <mag> shock and magicka per second.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1

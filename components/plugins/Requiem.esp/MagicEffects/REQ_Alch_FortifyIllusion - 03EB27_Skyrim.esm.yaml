@@ -1,0 +1,25 @@
+FormKey: 03EB27:Skyrim.esm
+EditorID: REQ_Alch_FortifyIllusion
+Name:
+  TargetLanguage: English
+  Value: Fortify Illusion
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A2C:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: IllusionModifier
+  Association: 065A2C:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Illusion spells cost <mag>% less for <dur> seconds.

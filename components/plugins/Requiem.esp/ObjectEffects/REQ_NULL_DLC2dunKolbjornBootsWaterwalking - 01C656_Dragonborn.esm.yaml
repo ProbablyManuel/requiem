@@ -1,0 +1,17 @@
+FormKey: 01C656:Dragonborn.esm
+EditorID: REQ_NULL_DLC2dunKolbjornBootsWaterwalking
+Name:
+  TargetLanguage: English
+  Value: Waterwalking
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 08CAC9:Skyrim.esm
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData
+- BaseEffect: 03D58B:Dragonborn.esm
+  Data: {}

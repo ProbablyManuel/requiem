@@ -1,0 +1,121 @@
+FormKey: 0B6BE6:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EmbershardMine01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Embershard Mine
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0030271C'
+    DirectionalXMinus: '#00272719'
+    DirectionalYPlus: '#002C281B'
+    DirectionalYMinus: '#002C251B'
+    DirectionalZPlus: '#0014120C'
+    DirectionalZMinus: '#005C5238'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0E7C5E:Skyrim.esm
+WaterHeight: 0
+Location: 0B712C:Skyrim.esm
+Water: 033DA7:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\MineCube_e.dds
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+EncounterZone: 0D9545:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B6D3F:Skyrim.esm
+  MajorRecordFlagsRaw: 536871936
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - 0x20000000
+  Base: 022F54:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: 2830.554, 3517.9104, 8612.339
+    Rotation: -0.04848063, 0.02344666, 0.06993165
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 05CBF0:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 05CBD4:Requiem.esp
+  RagdollData: 0x0021FB0080452541000000000040A1BFDC0FC9BFA9DD55B42FAE484000FF7FFF4A2039400000A0B60000C028000000800000008054FCCA3F
+  Placement:
+    Position: -1793.0266, 1901.5317, 8176.1367
+    Rotation: 0, -0, 1.6831946
+- MutagenObjectType: PlacedObject
+  FormKey: 0B6F5A:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: -4160.36, 2798.3586, 8371.155
+    Rotation: 0.06847974, 6.1041336, 3.6192143
+- MutagenObjectType: PlacedObject
+  FormKey: 0B6F96:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.78
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: -3511.529, 764.21704, 8621.441
+    Rotation: 0.0066287606, 6.169842, 1.2747396
+- MutagenObjectType: PlacedObject
+  FormKey: 0B6DAE:Skyrim.esm
+  Base: 02064F:Skyrim.esm
+  Scale: 0.87
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 0B6FE5:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: 496.53668, 1798.1586, 8279.901
+    Rotation: 6.2256174, 0.024373524, 5.3408155
+MajorFlags:
+- 0x40000

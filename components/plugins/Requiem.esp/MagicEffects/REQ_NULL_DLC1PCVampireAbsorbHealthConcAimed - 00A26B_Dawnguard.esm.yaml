@@ -1,0 +1,62 @@
+FormKey: 00A26B:Dawnguard.esm
+EditorID: REQ_NULL_DLC1PCVampireAbsorbHealthConcAimed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1MagicVampDrainFXRangeScript
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABEFC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF17:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 014B8B:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Drain Health
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 101BDE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 3
+ResistValue: ResistMagic
+CastingLight: 07479A:Skyrim.esm
+TaperWeight: 1
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: Absorb
+Projectile: 014D71:Dawnguard.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 0ABF02:Skyrim.esm
+ImpactData: 0ABF01:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 03F208:Skyrim.esm
+- Type: Release
+  Sound: 03F206:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03F205:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Absorb <mag> points of health, magicka, and stamina per second from the target.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm

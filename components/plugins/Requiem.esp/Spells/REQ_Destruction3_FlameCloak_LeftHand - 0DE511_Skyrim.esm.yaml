@@ -1,0 +1,29 @@
+FormKey: 0DE511:Skyrim.esm
+EditorID: REQ_Destruction3_FlameCloak_LeftHand
+Name:
+  TargetLanguage: English
+  Value: Flame Cloak
+MenuDisplayObject: 04E264:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 334
+CastType: FireAndForget
+HalfCostPerk: 0C44C0:Skyrim.esm
+Effects:
+- BaseEffect: 03AE9E:Skyrim.esm
+  Data:
+    Magnitude: 12
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+- BaseEffect: 045C57:Requiem.esp
+  Data:
+    Magnitude: 30
+    Duration: 60
+- BaseEffect: AD387E:Requiem.esp
+  Data: {}

@@ -1,0 +1,21 @@
+FormKey: 586729:Requiem.esp
+EditorID: REQ_Effect_DLC1BloodPotion02
+Name:
+  TargetLanguage: English
+  Value: Blood Ingestion
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: There's still some warm blood that could sate your thirst in this corpse. With a blood-conserving phial, you could even save this welcome feast for later instead of being forced to consume it immediately...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0A82BB:Skyrim.esm
+  ComparisonValue: 1

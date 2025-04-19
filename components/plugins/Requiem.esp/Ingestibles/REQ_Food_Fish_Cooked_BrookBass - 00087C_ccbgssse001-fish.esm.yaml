@@ -1,0 +1,32 @@
+FormKey: 00087C:ccbgssse001-fish.esm
+EditorID: REQ_Food_Fish_Cooked_BrookBass
+ObjectBounds:
+  First: -5, -20, -3
+  Second: 5, 20, 3
+Name:
+  TargetLanguage: English
+  Value: Cooked Brook Bass
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishBucket\FishBucket01Inv.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: FishBucket01Inv:0
+    NewTexture: 000803:ccbgssse001-fish.esm
+  - Name: FishBucket01Inv:1
+    NewTexture: 000803:ccbgssse001-fish.esm
+    Index: 1
+Weight: 0.5
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

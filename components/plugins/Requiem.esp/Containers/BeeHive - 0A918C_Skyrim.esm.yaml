@@ -1,0 +1,55 @@
+FormKey: 0A918C:Skyrim.esm
+EditorID: BeeHive
+Version2: 10
+VirtualMachineAdapter:
+  Scripts:
+  - Name: critterspawn
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fEndSpawnTime
+      Data: 18
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fSlowSpawnInterval
+      Data: 5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fFastSpawnInterval
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CritterTypes
+      Object: 0A914D:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fMaxPlayerDistance
+      Data: 4000
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameHour
+      Object: 000038:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: iMaxCritterCount
+      Data: 4
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fLeashLength
+      Data: 1000
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStartSpawnTime
+      Data: 6
+  - Name: BeeHiveHavokOnHit
+ObjectBounds:
+  First: -20, -18, -46
+  Second: 19, 21, 6
+Name:
+  TargetLanguage: English
+  Value: Beehive
+Model:
+  File: Critters\Bee\CritterBeeHive.nif
+  Data: 0x020000000200000000000000F72D27B86464730038973CEAEC9E0B896464730038973CEA
+Items:
+- Item:
+    Item: 0A9191:Skyrim.esm
+    Count: 7
+- Item:
+    Item: 0A9195:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 0B08C5:Skyrim.esm
+    Count: 5
+OpenSound: 100F88:Skyrim.esm

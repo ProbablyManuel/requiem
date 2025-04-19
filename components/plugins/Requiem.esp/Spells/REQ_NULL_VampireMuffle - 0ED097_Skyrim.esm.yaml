@@ -1,0 +1,23 @@
+FormKey: 0ED097:Skyrim.esm
+EditorID: REQ_NULL_VampireMuffle
+Name:
+  TargetLanguage: English
+  Value: Nightstalker's Footsteps
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Your vampiric powers make you practically a shadow when sneaking.
+BaseCost: 5
+Type: Ability
+Effects:
+- BaseEffect: 0ED098:Skyrim.esm
+  Data:
+    Magnitude: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 0C1E8B:Skyrim.esm
+    ComparisonValue: 1

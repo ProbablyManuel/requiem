@@ -1,0 +1,83 @@
+FormKey: 1092A0:Skyrim.esm
+EditorID: REQ_Alteration4_Polymorph_Transmogrify
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dunTransmogrifySCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: chicken
+      Object: 10929F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: rabbit
+      Object: 06DC9D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: mudcrab
+      Object: 0E4010:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Transmogrify
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- NoMagnitude
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+BaseCost: 1.2
+MagicSkill: Alteration
+ResistValue: ResistMagic
+CastingLight: 03BA90:Skyrim.esm
+TaperWeight: 1
+HitShader: 074799:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 1092A1:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 074794:Skyrim.esm
+HitEffectArt: 074795:Skyrim.esm
+ImpactData: 074798:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 08196D:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster attempts to turn the target into a harmless animal for <30> seconds. Although potent, the spell is rumored to be very unstable, and various side-effects have been reknown to be the consequence of its casting...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 33
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

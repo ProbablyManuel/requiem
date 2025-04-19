@@ -1,0 +1,23 @@
+FormKey: 08B65C:Skyrim.esm
+EditorID: REQ_Ench_FortifyAlchemy
+Name:
+  TargetLanguage: English
+  Value: Fortify Alchemy
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F5A:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 17
+EnchantShader: 092DED:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: AlchemyModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Mixing potions and poisons is <mag>% more effective.

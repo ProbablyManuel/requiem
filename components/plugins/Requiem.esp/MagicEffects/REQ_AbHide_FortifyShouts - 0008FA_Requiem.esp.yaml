@@ -1,0 +1,22 @@
+FormKey: 0008FA:Requiem.esp
+EditorID: REQ_AbHide_FortifyShouts
+Name:
+  TargetLanguage: English
+  Value: Fortify Shouts
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: ShoutRecoveryMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

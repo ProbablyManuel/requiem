@@ -1,0 +1,29 @@
+FormKey: AE3889:Requiem.esp
+EditorID: REQ_Ench_MehrunesRazor_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_MehrunesRazor
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HitChance
+      Object: AE391A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: description
+      Object: AE388B:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Apply Mehrunes' Razor Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,34 @@
+FormKey: 6E5FE6:Requiem.esp
+EditorID: REQ_Quest_ModConfig
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_MCM
+    Properties:
+    - MutagenObjectType: ScriptStringProperty
+      Name: ModName
+      Data: Requiem
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DATA
+      Object: AD3B1D:Requiem.esp
+      Alias: 10
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 6E5FE6:Requiem.esp
+      Alias: 0
+    Scripts:
+    - Name: SKI_PlayerLoadGameAlias
+Name:
+  TargetLanguage: English
+  Value: Requiem ModConfig
+Flags:
+- StartGameEnabled
+- 0x10
+- RunOnce
+NextAliasID: 1
+Aliases:
+- Name: PlayerAlias
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null

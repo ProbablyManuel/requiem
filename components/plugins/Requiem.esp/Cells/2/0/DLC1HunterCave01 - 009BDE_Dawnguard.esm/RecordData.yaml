@@ -1,0 +1,54 @@
+FormKey: 009BDE:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1HunterCave01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dead Drop Falls
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#002E3D3C'
+  FogFar: 4000
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#004B5F5C'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - ClipDistance
+LightingTemplate: 10ACD3:Skyrim.esm
+WaterHeight: 0
+Location: 019C8E:Dawnguard.esm
+AcousticSpace: 02B961:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0113DA:Dawnguard.esm
+  Base: 02064F:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019C8E:Dawnguard.esm
+  Placement:
+    Position: -386.9353, 950.824, 8493.019
+    Rotation: 0, 0, 4.181711
+MajorFlags:
+- 0x40000

@@ -1,0 +1,81 @@
+FormKey: 0151F9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiteRiverWatch01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: White River Watch
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#005A5A5A'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 3000
+  FogClipDistance: 12000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: 0
+Location: 0192C5:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5858:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC8B:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 01C401:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 12
+  SkyrimMajorRecordFlags:
+  - 0x400
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultOnResetTestAndDisable
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 01C3FB:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+  Base: 0812FC:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 081303:Skyrim.esm
+  PersistentLocation: 0192C5:Skyrim.esm
+  LocationReference: 0192C5:Skyrim.esm
+  Placement:
+    Position: 2516.935, -1407.1141, -242.67955
+    Rotation: 0, -0, 3.9269907
+  MajorFlags:
+  - Persistent
+MajorFlags:
+- 0x40000

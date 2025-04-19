@@ -1,0 +1,22 @@
+FormKey: ADE3CE:Requiem.esp
+EditorID: REQ_ArmorBonus_Light_Dwarven_Effect
+Name:
+  TargetLanguage: English
+  Value: Blunt Protection
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Dwarven metal has distinct impact-absorbing qualities. Thus, blunt attacks deal <mag>% less damage to you (4% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

@@ -1,0 +1,251 @@
+FormKey: 0D4FD8:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: CynricEndell
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TGAssaultScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TGBan
+      Object: 0B03A2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ThievesGuildFaction
+      Object: 029DA9:Skyrim.esm
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - Protected
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  CalcMinLevel: 10
+  CalcMaxLevel: 25
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 028186:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 029DA9:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 094393:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0A2527:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 10A794:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD5:Skyrim.esm
+Race: 013741:Skyrim.esm
+Perks:
+- Perk: 07934A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079354:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABED:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F1C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F1E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 00000A:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 01397F:Skyrim.esm
+    Count: 12
+- Item:
+    Item: 013985:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 013986:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 037C2B:Skyrim.esm
+    Count: 2
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 70
+  Responsibility: NoCrime
+  Mood: Disgusted
+  Assistance: HelpsAllies
+Packages:
+- 1032A3:Skyrim.esm
+- 103299:Skyrim.esm
+- 103289:Skyrim.esm
+- 1032B7:Skyrim.esm
+- 0B780F:Skyrim.esm
+Class: 01317E:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Cynric Endell
+ShortName:
+  TargetLanguage: English
+  Value: Cynric
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 40
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 40
+  - Key: Block
+    Value: 23
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 57
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 57
+  - Key: Alchemy
+    Value: 10
+  - Key: Speech
+    Value: 10
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 20
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 10
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 130
+  Magicka: 130
+  Stamina: 160
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 024244:Skyrim.esm
+- 05107F:Skyrim.esm
+- 0510B4:Skyrim.esm
+- 09F0A2:Skyrim.esm
+- 0DFC01:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 10357E:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 30
+SoundLevel: Normal
+DefaultOutfit: 0D4FD9:Skyrim.esm
+CrimeFaction: 10A794:Skyrim.esm
+TextureLighting: '#00C6B0A8'
+FaceMorph:
+  NoseLongVsShort: -0.5
+  NoseUpVsDown: -0.22
+  JawUpVsDown: -0.54
+  JawNarrowVsWide: -0.2
+  JawForwardVsBack: -0.7
+  EyesUpVsDown: 0.02
+  EyesInVsOut: -0.48
+  BrowsUpVsDown: -0.8
+  BrowsInVsOut: 0.4
+  LipsUpVsDown: 0.26
+  ChinNarrowVsWide: 0.04
+  ChinUpVsDown: 0.1
+  ChinUnderbiteVsOverbite: 0.2
+  EyesForwardVsBack: -0.28
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 13
+  Unknown: 4294967295
+  Eyes: 17
+  Mouth: 7
+TintLayers:
+- Index: 2
+  Color: '#00C6B0A8'
+  InterpolationValue: 1
+  Preset: 75
+- Index: 3
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 86
+- Index: 4
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 94
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 631
+- Index: 6
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 102
+- Index: 8
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 116
+- Index: 9
+  Color: '#00A95452'
+  InterpolationValue: 0.19
+  Preset: 120
+MajorFlags:
+- 0x40000

@@ -1,0 +1,196 @@
+FormKey: 0131E8:Skyrim.esm
+EditorID: BearBlackRace
+Name:
+  TargetLanguage: English
+  Value: Cave Bear
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 0B877E:Skyrim.esm
+- AD39E4:Requiem.esp
+Skin: 0187FE:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013798:Skyrim.esm
+- 586728:Requiem.esp
+- 5F367F:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+Starting:
+- Key: Health
+  Value: 350
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 300
+BaseCarryWeight: 200
+BaseMass: 3.5
+AccelerationRate: 3
+DecelerationRate: 1
+Size: Large
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 60
+UnarmedReach: 124
+BodyBipedObject: Head
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Bear\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Bear\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F14E:Skyrim.esm
+  Female: 01F14E:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.65
+    Spell: 75CD1F:Requiem.esp
+    StrikeAngle: 45
+    Stagger: 1.1
+    AttackType: 0914E5:Skyrim.esm
+    RecoveryTime: 1.75
+    StaminaMult: 1
+  AttackEvent: attackStart_StandingPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B877E:Skyrim.esm
+    Flags:
+    - RotatingAttack
+    AttackAngle: 90
+    StrikeAngle: 60
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: 0B877E:Skyrim.esm
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.65
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.25
+    AttackType: 0914E6:Skyrim.esm
+    RecoveryTime: 1.75
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPowerShort
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.65
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.25
+    AttackType: 0914E6:Skyrim.esm
+    RecoveryTime: 1.75
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B877E:Skyrim.esm
+    Flags:
+    - RotatingAttack
+    AttackAngle: -90
+    StrikeAngle: 60
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: 0B877E:Skyrim.esm
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 0868FC:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Bear\BearProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Bear\BearProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 01F272:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+EquipmentSlots:
+- 013F42:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 059656:Skyrim.esm
+BaseMovementDefaultRun: 059656:Skyrim.esm
+BaseMovementDefaultSwim: 054B36:Skyrim.esm

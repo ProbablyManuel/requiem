@@ -1,0 +1,308 @@
+FormKey: 03DEE9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_LookTemplate_EncBandit03Boss1HNordF
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Female
+  - Respawn
+  - AutoCalcStats
+  - LoopedScript
+  - LoopedAudio
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 10
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Factions:
+- Faction: 01BCC0:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 0C3C9B:Skyrim.esm
+Voice: 013AE7:Skyrim.esm
+Template: 01BCDA:Skyrim.esm
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 93369D:Requiem.esp
+Perks:
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F67:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079343:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079355:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07935E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0AD7A3:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 8B2A63:Requiem.esp
+    Count: 1
+- Item:
+    Item: 8B2A5F:Requiem.esp
+    Count: 2
+- Item:
+    Item: 8B2A5E:Requiem.esp
+    Count: 2
+- Item:
+    Item: 8B2A5C:Requiem.esp
+    Count: 2
+- Item:
+    Item: 8B02C0:Requiem.esp
+    Count: 3
+- Item:
+    Item: 8B02BD:Requiem.esp
+    Count: 5
+- Item:
+    Item: 868379:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 85BCE3:Requiem.esp
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 34
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 34
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 34
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 138
+  Magicka: 80
+  Stamina: 127
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 04018F:Skyrim.esm
+- 051146:Skyrim.esm
+- 0E4D88:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0437:Skyrim.esm
+CombatStyle: 03BE1B:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 100
+SoundLevel: Normal
+DefaultOutfit: 9336AE:Requiem.esp
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 03B522:Skyrim.esm
+TextureLighting: '#00DDDDDD'
+FaceMorph:
+  NoseUpVsDown: 0.5
+  JawUpVsDown: -0.6
+  JawNarrowVsWide: 0.7
+  CheeksUpVsDown: 0.8
+  CheeksForwardVsBack: 0.4
+  EyesUpVsDown: -0.2
+  EyesInVsOut: -0.2
+  BrowsUpVsDown: -0.8
+  LipsUpVsDown: -0.1
+  LipsInVsOut: -1
+  ChinNarrowVsWide: 0.9
+  ChinUpVsDown: 0.2
+  ChinUnderbiteVsOverbite: 0.7
+  EyesForwardVsBack: 0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 14
+  Unknown: 4294967295
+  Eyes: 9
+  Mouth: 4
+TintLayers:
+- Index: 24
+  Color: '#00DDDDDD'
+  InterpolationValue: 1
+  Preset: 601
+- Index: 26
+  Color: '#00500901'
+  InterpolationValue: 0.83
+  Preset: 614
+- Index: 27
+  Color: '#00500901'
+  InterpolationValue: 0.83
+  Preset: 624
+- Index: 31
+  Color: '#002F2013'
+  InterpolationValue: 0.61
+  Preset: 661
+- Index: 36
+  Color: '#00430401'
+  InterpolationValue: 0.52
+  Preset: 1118
+- Index: 44
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 685
+- Index: 45
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 709
+- Index: 46
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 733
+- Index: 47
+  Color: '#00510000'
+  InterpolationValue: 0
+  Preset: 762
+- Index: 48
+  Color: '#00510000'
+  InterpolationValue: 0
+  Preset: 786
+- Index: 49
+  Color: '#00510000'
+  InterpolationValue: 0
+  Preset: 810
+- Index: 50
+  Color: '#00510000'
+  InterpolationValue: 0
+  Preset: 834
+- Index: 51
+  Color: '#007D5200'
+  InterpolationValue: 0
+  Preset: 871
+- Index: 52
+  Color: '#007D5200'
+  InterpolationValue: 0
+  Preset: 895
+- Index: 53
+  Color: '#007D5200'
+  InterpolationValue: 0
+  Preset: 919
+- Index: 54
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1126
+- Index: 55
+  Color: '#00334E32'
+  InterpolationValue: 0
+  Preset: 941
+- Index: 56
+  Color: '#00240000'
+  InterpolationValue: 1
+  Preset: 957
+- Index: 57
+  Color: '#00334E32'
+  InterpolationValue: 0
+  Preset: 989
+- Index: 58
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 997
+- Index: 59
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1021
+MajorFlags:
+- 0x40000

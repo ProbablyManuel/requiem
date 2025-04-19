@@ -1,0 +1,23 @@
+FormKey: 0BCCAE:Skyrim.esm
+EditorID: REQ_Block_ImprovedBlocking
+Name:
+  TargetLanguage: English
+  Value: Improved Blocking
+Description:
+  TargetLanguage: English
+  Value: You strengthened your shield arm and trained to parry blows a little.<br>[Block 25% more damage]
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 079355:Skyrim.esm
+  EntryPoint: ModPercentBlocked
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.25

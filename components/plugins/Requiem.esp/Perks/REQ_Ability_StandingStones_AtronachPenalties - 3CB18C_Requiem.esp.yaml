@@ -1,0 +1,37 @@
+FormKey: 3CB18C:Requiem.esp
+EditorID: REQ_Ability_StandingStones_AtronachPenalties
+Name:
+  TargetLanguage: English
+  Value: Stone of the Atronach Penalties
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD380E:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModSecondaryValueWeight
+  PerkConditionTabCount: 3
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 042508:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.66

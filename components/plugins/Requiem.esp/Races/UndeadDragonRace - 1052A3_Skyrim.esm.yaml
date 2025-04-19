@@ -1,0 +1,281 @@
+FormKey: 1052A3:Skyrim.esm
+EditorID: UndeadDragonRace
+Name:
+  TargetLanguage: English
+  Value: Skeletal Dragon
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 0D7D56:Skyrim.esm
+- AE3AEC:Requiem.esp
+Skin: 086810:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 035D59:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 0F23C5:Skyrim.esm
+- 103AD2:Skyrim.esm
+- 4F6D1E:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Flies
+- Walks
+- NotPunishable
+- NoCombatInWater
+- UsesHeadTrackAnims
+- SpellsAlignWithMagicNode
+- AllowRagdollCollision
+- CantOpenDoors
+- AlwaysUseProxyController
+Starting:
+- Key: Health
+  Value: 500
+- Key: Magicka
+  Value: 150
+- Key: Stamina
+  Value: 10000
+BaseCarryWeight: 200
+BaseMass: 10
+AccelerationRate: 0.01
+DecelerationRate: 0.01
+Size: ExtraLarge
+InjuredHealthPercent: 0.35
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 350
+UnarmedReach: 256
+BodyBipedObject: Body
+AimAngleTolerance: 41.75
+FlightRadius: 400
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -113.867, 195.154, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Dragon\Character Assets\Skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 02992B:Skyrim.esm
+  Female: 013ADD:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    AttackAngle: 25
+    StrikeAngle: 25
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackStartBiteRight
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 039D42:Skyrim.esm
+    AttackAngle: 180
+    StrikeAngle: 30
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStartTail
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    AttackAngle: 90
+    StrikeAngle: 35
+    Stagger: 0.75
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartWingRight
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 039D42:Skyrim.esm
+    AttackAngle: 135
+    StrikeAngle: 30
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStartTailRight
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    AttackAngle: -25
+    StrikeAngle: 25
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackStartBiteLeft
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    AttackAngle: -90
+    StrikeAngle: 35
+    Stagger: 0.75
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartWingLeft
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    StrikeAngle: 25
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackStartBite
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 039D42:Skyrim.esm
+    AttackAngle: -135
+    StrikeAngle: 30
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStartTailLeft
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 01BC4A:Dragonborn.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Dragon\DragonProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Character\DefaultMale.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 0F0EA8:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Hair
+  Value: Far
+- Key: Body
+  Value: BODY
+- Key: Tail
+  Value: Skeleton01
+- Key: LongHair
+  Value: Skeleton02
+- Key: Circlet
+  Value: MouthFireEffect
+- Key: 14
+  Value: BloodHead
+- Key: 15
+  Value: BloodWingL
+- Key: 16
+  Value: BloodWingR
+- Key: 17
+  Value: BloodTail
+EquipmentFlags:
+- HandToHand
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 025BEE:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+FaceFxPhonemes:
+  ForceNames: True
+  Aah_LipBigAah:
+    Name: LipBigAah
+    EH: 0.5
+    AA: 1
+    AW: 0.5
+    AH: 1
+    AO: 0.5
+    OW: 0.5
+    UH: 0.5
+    UW: 0.5
+    HH: 0.5
+    FLAP: 0.5
+  BigAah_LipDST:
+    Name: LipDST
+    S: 1
+    Z: 0.5
+    ZH: 0.5
+    DH: 1
+    M: 0.5
+    N: 0.5
+    B: 0.5
+    D: 1
+    JH: 0.5
+    P: 0.5
+    T: 1
+    CH: 0.5
+    SIL: 0.5
+  BMP_LipEee:
+    Name: LipEee
+    IY: 0.5
+    IH: 1
+    EY: 0.5
+    AE: 0.5
+    AY: 1
+    OY: 1
+    NG: 0.5
+    Y: 0.5
+    SHOTSIL: 0.5
+  ChJSh_LipFV:
+    Name: LipFV
+    F: 1
+    V: 1
+  DST_LipK:
+    Name: LipK
+    AX: 1
+    G: 0.5
+    K: 1
+  Eee_LipL:
+    Name: LipL
+    L: 1
+  Eh_LipR:
+    Name: LipR
+    ER: 1
+    SH: 0.5
+    R: 1
+    W: 0.5
+  FV_LipTh:
+    Name: LipTh
+    TH: 1
+BaseMovementDefaultWalk: 01BCF9:Skyrim.esm
+BaseMovementDefaultRun: 01BCF9:Skyrim.esm
+BaseMovementDefaultSwim: 01BCF9:Skyrim.esm
+BaseMovementDefaultFly: 01BCFA:Skyrim.esm
+BaseMovementDefaultSneak: 01BCF9:Skyrim.esm

@@ -1,0 +1,45 @@
+FormKey: 018ED7:Dragonborn.esm
+EditorID: REQ_NULL_dlc2MerchBowOfTheStagPrinceIncEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dlc2MerchBowOfStagPrinceIncSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: animalType
+      Object: 013798:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: animalsKilled
+      Object: 01BFEB:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Stag Prince Increment Effect
+MenuDisplayObject: 09FA64:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+EnchantShader: 0ABF07:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Wielder receives an increasingly powerful blessing for every <20> animals killed by the bow. <Global=dlc2MerchAnimalsKilled> animals killed.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013798:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData

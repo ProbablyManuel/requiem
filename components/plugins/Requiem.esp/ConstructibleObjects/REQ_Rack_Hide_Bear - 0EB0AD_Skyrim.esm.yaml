@@ -1,0 +1,23 @@
+FormKey: 0EB0AD:Skyrim.esm
+EditorID: REQ_Rack_Hide_Bear
+Items:
+- Item:
+    Item: 03AD52:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    ItemOrList: 03AD52:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 0DB5D2:Skyrim.esm
+WorkbenchKeyword: 07866A:Skyrim.esm
+CreatedObjectCount: 4

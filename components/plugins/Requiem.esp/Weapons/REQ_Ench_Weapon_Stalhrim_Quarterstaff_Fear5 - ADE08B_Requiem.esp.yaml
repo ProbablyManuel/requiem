@@ -1,0 +1,54 @@
+FormKey: ADE08B:Requiem.esp
+EditorID: REQ_Ench_Weapon_Stalhrim_Quarterstaff_Fear5
+ObjectBounds:
+  First: -2, -36, -2
+  Second: 1, 52, 2
+Name:
+  TargetLanguage: English
+  Value: Stalhrim Quarterstaff of Dread
+Model:
+  File: PrvtI\Stalhrim\stahlrimstaff.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 05B469:Skyrim.esm
+EnchantmentAmount: 2500
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 08F958:Skyrim.esm
+- 02622F:Dragonborn.esm
+- ADDF81:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0E4CB0:Skyrim.esm
+FirstPersonModel: ADDF59:Requiem.esp
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 0E4F10:Skyrim.esm
+UnequipSound: 0E4F11:Skyrim.esm
+BasicStats:
+  Value: 3200
+  Weight: 19
+  Damage: 20
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.8
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1069547520
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.2
+Critical:
+  Damage: 10
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: ADDF4D:Requiem.esp

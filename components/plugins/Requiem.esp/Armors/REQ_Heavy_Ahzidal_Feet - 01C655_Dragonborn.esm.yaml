@@ -1,0 +1,37 @@
+FormKey: 01C655:Dragonborn.esm
+EditorID: REQ_Heavy_Ahzidal_Feet
+Name:
+  TargetLanguage: English
+  Value: Ahzidal's Boots of Waterwalking
+ObjectEffect: AE3820:Requiem.esp
+WorldModel:
+  Male:
+    Model:
+      File: Armor\Draugr\DraugrBootsMale_GO.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: Armor\Draugr\DraugrBootsFemale_GO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06C0ED:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 0270E7:Dragonborn.esm
+- 002ED8:Update.esm
+- AD39BE:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: The enchantment emanates an alien aura that reaches out to the other relics of Ahzidal and supercharges in the hands of a master enchanter.
+Armature:
+- 027DE4:Skyrim.esm
+Value: 750
+Weight: 7.5
+ArmorRating: 105

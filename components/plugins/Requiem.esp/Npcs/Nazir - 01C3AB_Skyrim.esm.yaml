@@ -1,0 +1,267 @@
+FormKey: 01C3AB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Nazir
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrainerGoldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrainerType
+      Data: 3
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Essential
+  - Unique
+  MagickaOffset: 80
+  StaminaOffset: 440
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 45
+  CalcMinLevel: 5
+  CalcMaxLevel: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 180
+Factions:
+- Faction: 01BDB3:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 094393:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A52:Skyrim.esm
+  Fluff: 0x000000
+Voice: 01C3AC:Skyrim.esm
+Race: 013748:Skyrim.esm
+Perks:
+- Perk: 079345:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 07A91A:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 0956B8:Skyrim.esm
+Class: 0E3A68:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Nazir
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 66
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 10
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 100
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 89
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 38
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 10
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 527
+  Magicka: 173
+  Stamina: 290
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 0513FE:Skyrim.esm
+- 0C7122:Skyrim.esm
+- 0CDD71:Skyrim.esm
+- 0E4E19:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 40
+SoundLevel: Normal
+DefaultOutfit: 0E0DD5:Skyrim.esm
+CrimeFaction: 01BDB3:Skyrim.esm
+HeadTexture: 0D072A:Skyrim.esm
+TextureLighting: '#002D211C'
+FaceMorph:
+  NoseLongVsShort: 0.2
+  NoseUpVsDown: 0.2
+  JawUpVsDown: -1
+  JawNarrowVsWide: 1
+  JawForwardVsBack: 0.1
+  CheeksUpVsDown: 1
+  CheeksForwardVsBack: 1
+  EyesUpVsDown: -0.1
+  EyesInVsOut: 0.74
+  BrowsUpVsDown: -1
+  BrowsInVsOut: 1
+  BrowsForwardVsBack: 0.66
+  LipsUpVsDown: 1
+  LipsInVsOut: -0.2
+  ChinNarrowVsWide: -0.8
+  ChinUpVsDown: -0.9
+  ChinUnderbiteVsOverbite: 0.5
+  EyesForwardVsBack: -0.4
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 4
+  Unknown: 4294967295
+  Eyes: 17
+  Mouth: 18
+TintLayers:
+- Index: 1
+  Color: '#002D211E'
+  InterpolationValue: 1
+  Preset: 81
+- Index: 11
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 88
+- Index: 13
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 528
+- Index: 17
+  Color: '#001A1331'
+  InterpolationValue: 0.26
+  Preset: 123
+- Index: 22
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 168
+- Index: 24
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 144
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 192
+- Index: 26
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 216
+- Index: 27
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 240
+- Index: 28
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 264
+- Index: 29
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 288
+- Index: 30
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 336
+- Index: 31
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 312
+- Index: 32
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 360
+- Index: 33
+  Color: '#00000000'
+  InterpolationValue: 0.43
+  Preset: 532
+- Index: 65
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 384
+- Index: 66
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 408
+- Index: 67
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 432
+- Index: 68
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 456
+- Index: 69
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 480
+MajorFlags:
+- 0x40000

@@ -1,0 +1,25 @@
+FormKey: 073F33:Skyrim.esm
+EditorID: REQ_Poison_DamageHealth4
+ObjectBounds:
+  First: -6, -6, 0
+  Second: 4, 6, 16
+Name:
+  TargetLanguage: English
+  Value: Poison of Damage Health (Good)
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Potions\PoisonDamageHealth04.nif
+  Data: 0x020000000400000000000000F9BE93CC64647300BFFA25DA28058E7E64647300BFFA25DAF63890AC64647300262C333BD1E23CE564647300BFFA25DA
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 221
+Flags:
+- NoAutoCalc
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 100

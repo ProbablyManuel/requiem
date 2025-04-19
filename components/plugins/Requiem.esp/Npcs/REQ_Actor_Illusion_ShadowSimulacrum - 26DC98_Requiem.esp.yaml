@@ -1,0 +1,204 @@
+FormKey: 26DC98:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 537133056
+EditorID: REQ_Actor_Illusion_ShadowSimulacrum
+SkyrimMajorRecordFlags:
+- Compressed
+- 0x20000000
+Configuration:
+  Flags:
+  - Summonable
+  - DoesNotBleed
+  - BleedoutOverride
+  MagickaOffset: -25
+  StaminaOffset: 2000
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 75
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: -55
+Voice: 01F1CE:Skyrim.esm
+Race: 534B53:Requiem.esp
+ActorEffect:
+- AE3AF1:Requiem.esp
+AttackRace: 534B53:Requiem.esp
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03AF83:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D51:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D52:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E90:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E91:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E94:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E95:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3678:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3679:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C05:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C06:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C5C07:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03DFD0:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0AD7A3:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 534B55:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 54AFE4:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: NoCrime
+  Mood: Angry
+  AggroRadiusBehavior: True
+  Attack: 100
+Packages:
+- 04E4BB:Skyrim.esm
+Class: 023C0C:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Shadow Simulacrum
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 20
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 20
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 20
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 20
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 25
+  - Key: Enchanting
+    Value: 20
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 85
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 55
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 70
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 35
+  Magicka: 25
+  Stamina: 70
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: AD38C1:Requiem.esp
+DefaultPackageList: 08BCE6:Skyrim.esm
+TextureLighting: '#00000000'
+TintLayers:
+- Index: 1
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 6
+- Index: 8
+  Color: '#007E2E2E'
+  InterpolationValue: 0.28
+  Preset: 31
+MajorFlags:
+- 0x40000
+- BleedoutOverride

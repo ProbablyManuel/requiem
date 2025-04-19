@@ -1,0 +1,175 @@
+FormKey: 0131F5:Skyrim.esm
+EditorID: AtronachFlameRace
+Name:
+  TargetLanguage: English
+  Value: Flame Atronach
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 02F3B5:Skyrim.esm
+- 0173C2:Dragonborn.esm
+- AD39D8:Requiem.esp
+- AE3ACB:Requiem.esp
+- AE3AE1:Requiem.esp
+Skin: 08691B:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013797:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 0F23C5:Skyrim.esm
+- 0FFEA0:Skyrim.esm
+- 44BE5E:Requiem.esp
+- 4F6D1E:Requiem.esp
+- 5F367F:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: Destruction
+  Boost: 10
+SkillBoost6:
+  Skill: Illusion
+  Boost: 95
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- DontShowBloodDecal
+- UsesHeadTrackAnims
+- NoKnockdowns
+- DontShowWeaponBlood
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 75
+- Key: Magicka
+  Value: 100
+- Key: Stamina
+  Value: 10000
+BaseCarryWeight: 200
+BaseMass: 2.2
+AccelerationRate: 4
+DecelerationRate: 4
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 15
+- Key: Stamina
+  Value: 1000
+UnarmedDamage: 25
+UnarmedReach: 100
+BodyBipedObject: Head
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\AtronachFlame\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\AtronachFlame\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F1D3:Skyrim.esm
+  Female: 01F1D3:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: 050CF7:Skyrim.esm
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_R1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.25
+    Spell: 050CF8:Skyrim.esm
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart_PowerAttackForward1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: 050CF7:Skyrim.esm
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_L1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.25
+    Spell: 050CF8:Skyrim.esm
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart_PowerAttackForward2
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 08691C:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\AtronachFlame\AtronachFlame.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\AtronachFlame\AtronachFlame.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 0624B4:Skyrim.esm
+ImpactDataSet: 0AF63C:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+- Spell
+EquipmentSlots:
+- 013F43:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F43:Skyrim.esm

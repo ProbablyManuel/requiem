@@ -1,0 +1,72 @@
+FormKey: 070469:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeStables
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Solitude Stables
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#004E4F35'
+  DirectionalColor: '#001C2326'
+  FogNearColor: '#00D2C69B'
+  FogNear: 600
+  FogFar: 3000
+  DirectionalFade: 1
+  FogClipDistance: 3000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00554F37'
+    DirectionalXMinus: '#00464F32'
+    DirectionalYPlus: '#004E5235'
+    DirectionalYMinus: '#004E4B35'
+    DirectionalZPlus: '#00252518'
+    DirectionalZMinus: '#00767851'
+    Specular: '#001A2623'
+    Scale: 1
+  FogFarColor: '#001A2623'
+  FogMax: 8
+  LightFadeBegin: 100
+  LightFadeEnd: 5000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0B37B0:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 07046A:Skyrim.esm
+Owner: 0C13F7:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 0B9DCB:Skyrim.esm
+ImageSpace: 0ABDB4:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA734:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 07046A:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7327:Skyrim.esm
+  Placement:
+    Position: 249.68071, -594.3306, 350.00656
+    Rotation: 0, -0, 3.1415927
+MajorFlags:
+- 0x40000

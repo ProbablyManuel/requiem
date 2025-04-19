@@ -1,0 +1,60 @@
+FormKey: 01CAB9:Dragonborn.esm
+EditorID: REQ_Cloak_Spider_Poison
+Name:
+  TargetLanguage: English
+  Value: Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 354
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 0200CE:Dragonborn.esm
+  Data:
+    Magnitude: 40
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+- BaseEffect: 0200CE:Dragonborn.esm
+  Data:
+    Magnitude: 80
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 0200CE:Dragonborn.esm
+  Data:
+    Magnitude: 2
+    Duration: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+- BaseEffect: 0200CE:Dragonborn.esm
+  Data:
+    Magnitude: 4
+    Duration: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+    ComparisonValue: 1

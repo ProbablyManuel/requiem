@@ -1,0 +1,36 @@
+FormKey: AE38E5:Requiem.esp
+EditorID: REQ_Ench_BolarsOathlade_Fear
+Name:
+  TargetLanguage: English
+  Value: Fear
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.4
+HitShader: 04C6D8:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: Demoralize
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 04C6DA:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Thalmor up to level <mag> flee from combat for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 039F26:Skyrim.esm
+  ComparisonValue: 1

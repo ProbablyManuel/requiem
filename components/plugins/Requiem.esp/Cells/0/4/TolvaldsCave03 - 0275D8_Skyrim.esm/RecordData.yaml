@@ -1,0 +1,93 @@
+FormKey: 0275D8:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: TolvaldsCave03
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Tolvald's Crossing
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#005C4EC0'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#004A3681'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00654EC9'
+    DirectionalXMinus: '#00524EB7'
+    DirectionalYPlus: '#005C51C0'
+    DirectionalYMinus: '#005C4AC0'
+    DirectionalZPlus: '#002B2557'
+    DirectionalZMinus: '#008C7629'
+    Specular: '#004A3681'
+    Scale: 1
+  FogFarColor: '#004A3681'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0B9E23:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192BC:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC80:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0B9E1E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 084D32:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192BC:Skyrim.esm
+  Placement:
+    Position: -1799.8773, 1669.8743, -931.836
+    Rotation: 0.3588816, 6.005591, 3.7725205
+- MutagenObjectType: PlacedObject
+  FormKey: 0F560F:Skyrim.esm
+  Base: 0B1176:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192BC:Skyrim.esm
+  Placement:
+    Position: -2422.5747, 234.89728, -155.31847
+    Rotation: -0.10394464, -0.110909745, 0.8880697
+- MutagenObjectType: PlacedObject
+  FormKey: 0F5449:Skyrim.esm
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: ADDF28:Requiem.esp
+  LocationReference: 0192BC:Skyrim.esm
+  Placement:
+    Position: -2103.2957, 1718.9547, -927.3074
+    Rotation: 0.05000019, 0, 3.3581898
+- MutagenObjectType: PlacedObject
+  FormKey: 1EB02B:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139B0:Skyrim.esm
+  Placement:
+    Position: -2411.9521, 733.29755, -673.0801
+    Rotation: 2.8041756, 0.15131027, 3.439071
+MajorFlags:
+- 0x40000

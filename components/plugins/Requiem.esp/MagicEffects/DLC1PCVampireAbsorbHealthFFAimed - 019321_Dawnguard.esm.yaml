@@ -1,0 +1,94 @@
+FormKey: 019321:Dawnguard.esm
+EditorID: DLC1PCVampireAbsorbHealthFFAimed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1MagicVampDrainFXRangeScript
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABEFC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF17:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 014B8B:Dawnguard.esm
+  - Name: DLC1DrainBloodPointScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireBloodPoints
+      Object: 00693B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireNextPerk
+      Object: 00693A:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampirePerkEarned
+      Object: 01571C:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireTotalPerksEarned
+      Object: 017E90:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1BloodPointsMsg
+      Object: 00A26D:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ProhibitedCreatures
+      Object: 013ECD:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReanimateSecondaryFFAimed
+      Object: 0F52AB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampirePerkPoints
+      Object: 006938:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireMaxPerks
+      Object: 017E8E:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Absorb Health
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 101BDE:Skyrim.esm
+- ADDDF7:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Alteration
+ResistValue: ResistMagic
+TaperWeight: 1
+SpellmakingArea: 10
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: Absorb
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+Sounds:
+- Sound: 03F208:Skyrim.esm
+- Type: Release
+  Sound: 03F206:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03F205:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Absorbs <mag> health, magicka, and stamina per second from the target, but doesn't affect constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp

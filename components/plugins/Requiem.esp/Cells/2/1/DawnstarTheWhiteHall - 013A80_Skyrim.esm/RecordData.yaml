@@ -1,0 +1,112 @@
+FormKey: 013A80:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DawnstarTheWhiteHall
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The White Hall
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020062:Skyrim.esm
+Owner: 09DA45:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5852:Skyrim.esm
+AcousticSpace: 0FF495:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0AC9BD:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 3
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0A2987:Skyrim.esm
+  Scale: 1.2
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 01361D:Skyrim.esm
+  LocationReference: 020062:Skyrim.esm
+  Placement:
+    Position: -1099.3684, 1341.0135, 9.536743E-05
+    Rotation: 0, -0, 1.9000026
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0F6343:Skyrim.esm
+  Version2: 1
+  Base: 09AF19:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 01361D:Skyrim.esm
+  LocationReference: 020062:Skyrim.esm
+  Placement:
+    Position: -884.6009, 860.7472, 0
+    Rotation: 0, -0, 0.06682331
+- MutagenObjectType: PlacedObject
+  FormKey: 32A726:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 03AD60:Skyrim.esm
+  Owner: 01361D:Skyrim.esm
+  Placement:
+    Position: -865.04376, 921.9434, 326.24847
+    Rotation: 0, -0, 0.6
+- MutagenObjectType: PlacedObject
+  FormKey: 0F640A:Skyrim.esm
+  Base: AD3AFC:Requiem.esp
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 103AE6:Skyrim.esm
+  LocationReference: 020062:Skyrim.esm
+  Placement:
+    Position: 642.8821, 804.75775, -0.247589
+    Rotation: 0, 0, 3.1250103
+- MutagenObjectType: PlacedObject
+  FormKey: 0F640B:Skyrim.esm
+  MajorRecordFlagsRaw: 1073741824
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 098620:Skyrim.esm
+  Owner: 103AE6:Skyrim.esm
+  LocationReference: 020062:Skyrim.esm
+  Placement:
+    Position: 660.69794, 1441.8754, 63.01724
+    Rotation: -0.0015476035, -0.00057084113, 6.134016
+MajorFlags:
+- 0x40000

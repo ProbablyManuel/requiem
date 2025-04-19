@@ -1,0 +1,137 @@
+FormKey: 017EC0:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2RRTheRetchingNetch
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Retching Netch
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00232626'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#00262627'
+    DirectionalXMinus: '#001F2624'
+    DirectionalYPlus: '#00232726'
+    DirectionalYMinus: '#00232426'
+    DirectionalZPlus: '#00101211'
+    DirectionalZMinus: '#0035393A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019A24:Dragonborn.esm
+Owner: 018421:Dragonborn.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 017035:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 025029:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 02501E:Dragonborn.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 018290:Dragonborn.esm
+  LocationReference: 019A24:Dragonborn.esm
+  Placement:
+    Position: -28.070065, -382.94693, 0
+    Rotation: 0, 0, 4.6832
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0358C8:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 10C0E3:Skyrim.esm
+  Scale: 1.29
+  LocationReference: 019A24:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -20.37308, -442.273, -30000
+- MutagenObjectType: PlacedObject
+  FormKey: 035927:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 012FDF:Skyrim.esm
+  LocationReference: 019A24:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -14.674975, -328.9609, -30000
+- MutagenObjectType: PlacedObject
+  FormKey: 0358E0:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 0319E3:Skyrim.esm
+  LocationReference: 019A24:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -20.580393, -434.2717, -30000
+    Rotation: 6.2698855, 0.0023876103, 6.1524878
+- MutagenObjectType: PlacedObject
+  FormKey: 0358E1:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 0319E3:Skyrim.esm
+  LocationReference: 019A24:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -23.20879, -384.06943, -30000
+    Rotation: 2.8437538, 1.1498281, 3.6941812
+- MutagenObjectType: PlacedObject
+  FormKey: 0358D7:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 019B13:Skyrim.esm
+  LocationReference: 019A24:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 9.158648, -393.7834, -30000
+    Rotation: 0, 0, 1.0000038
+MajorFlags:
+- 0x40000

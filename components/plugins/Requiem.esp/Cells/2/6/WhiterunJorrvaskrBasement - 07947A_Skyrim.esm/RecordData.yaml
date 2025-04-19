@@ -1,0 +1,91 @@
+FormKey: 07947A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunJorrvaskrBasement
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Jorrvaskr Living Quarters
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#001E1D25'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 3500
+  FogClipDistance: 4000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00352F2D'
+    DirectionalXMinus: '#002C2F28'
+    DirectionalYPlus: '#0031312B'
+    DirectionalYMinus: '#00312C2B'
+    DirectionalZPlus: '#00171613'
+    DirectionalZMinus: '#004A4742'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - DirectionalRotation
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 023E5D:Skyrim.esm
+Owner: 048362:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0CEF13:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_AddQuestItems
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 01CEF6:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 10
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Items
+        Objects:
+        - Name: ''
+          Object: AE37E2:Requiem.esp
+        - Name: ''
+          Object: AE37E3:Requiem.esp
+        - Name: ''
+          Object: AE37E4:Requiem.esp
+        - Name: ''
+          Object: AE37E5:Requiem.esp
+  Base: 021366:Skyrim.esm
+  Owner: 1070DD:Skyrim.esm
+  LocationReference: 023E5D:Skyrim.esm
+  Placement:
+    Position: 2484.5386, -908.8158, 0
+    Rotation: 0, 0, 4.712389
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0CEF74:Skyrim.esm
+  MajorRecordFlagsRaw: 1073743872
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x40000000
+  Base: 03AD5B:Skyrim.esm
+  Owner: 1070DD:Skyrim.esm
+  LocationReference: 023E5D:Skyrim.esm
+  Placement:
+    Position: 2675.3464, -333.70132, 67.23227
+    Rotation: 0.003468444, 0.02815573, 5.780403
+MajorFlags:
+- 0x40000

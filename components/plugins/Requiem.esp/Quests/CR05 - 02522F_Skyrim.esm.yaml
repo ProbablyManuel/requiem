@@ -1,0 +1,417 @@
+FormKey: 02522F:Skyrim.esm
+EditorID: CR05
+VirtualMachineAdapter:
+  Scripts:
+  - Name: CR05QuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ParentQuest
+      Object: 04B2D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MapMarker
+      Object: 02522F:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Boss
+      Object: 02522F:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QuestGiver
+      Object: 02522F:Skyrim.esm
+      Alias: 0
+  - Name: QF_CR05_0002522F
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Location
+      Object: 02522F:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Boss
+      Object: 02522F:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestGiver
+      Object: 02522F:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_LocationHold
+      Object: 02522F:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MapMarker
+      Object: 02522F:Skyrim.esm
+      Alias: 16
+  FileName: QF_CR05_0002522F
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_9
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_11
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_21
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_3
+  - Stage: 10
+    StageIndex: 5
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_17
+  - Stage: 10
+    StageIndex: 1
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_13
+  - Stage: 10
+    StageIndex: 4
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_16
+  - Stage: 10
+    StageIndex: 7
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_19
+  - Stage: 10
+    StageIndex: 2
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_14
+  - Stage: 10
+    StageIndex: 6
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_18
+  - Stage: 10
+    StageIndex: 3
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_15
+  - Stage: 10
+    StageIndex: 8
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_20
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_5
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_8
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 02522F:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: CompanionsRadiantQuestgiverAlias
+  - Property:
+      Name: ''
+      Object: 02522F:Skyrim.esm
+      Alias: 9
+    Scripts:
+    - Name: CR05BossScript
+Name:
+  TargetLanguage: English
+  Value: Trouble in Skyrim
+Priority: 70
+QuestFormVersion: 65
+Type: CompanionQuests
+Event: SCPT
+Filter: Faction\Companions\Radiant\
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Faction: 048362:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 02522F:Skyrim.esm
+    SecondUnusedIntParameter: -285350912
+    VariableName: ::IsActive_var
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 04B2D9:Skyrim.esm
+    SecondUnusedIntParameter: -285350880
+    VariableName: ::StoryQuestIsRunning_var
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 1
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130DF:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of bandits has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130E2:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of draugr has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130E4:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of Falmer has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130EE:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of the Forsworn has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130E5:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of giants has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130E6:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of hagravens has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130EA:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of spriggans has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130EB:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of vampires has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: LocAliasHasKeywordConditionData
+        LocationAliasIndex: 4
+        Keyword: 0130EC:Skyrim.esm
+      ComparisonValue: 1
+    Entry:
+      TargetLanguage: English
+      Value: A group of warlocks has been causing trouble in <Alias=LocationHold>. I've been asked to clear out <Alias=Location>.
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I cleared out <Alias=Location>, so <Alias=LocationHold> is now a bit safer.
+- Index: 100
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+- Index: 250
+  LogEntries:
+  - Flags: []
+- Index: 255
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Kill the leader of <Alias=Location>
+  Targets:
+  - AliasID: 9
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to <Alias=Questgiver>
+  Targets:
+  - {}
+NextAliasID: 19
+Aliases:
+- Name: QuestGiver
+  Flags:
+  - StoresText
+  UniqueActor: 01A692:Skyrim.esm
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: Location
+  Flags:
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocFormListConditionData
+      FormList: 0F9073:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 0130F7:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DF:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E2:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E4:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EE:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E6:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EA:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EB:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EC:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DF:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetLevelConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      RunOnTypeIndex: 0
+    ComparisonValue: 18
+- ID: 9
+  Name: Boss
+  Flags: []
+  Location:
+    AliasID: 4
+    RefType: 0130F7:Skyrim.esm
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDeadConditionData
+  VoiceTypes: Null
+- ID: 16
+  Name: MapMarker
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000010:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 17
+  Type: Location
+  Name: LocationHold
+  Flags:
+  - StoresText
+  Location:
+    AliasID: 9
+    Keyword: 016771:Skyrim.esm

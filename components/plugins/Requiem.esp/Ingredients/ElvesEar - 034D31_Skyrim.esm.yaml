@@ -1,0 +1,38 @@
+FormKey: 034D31:Skyrim.esm
+EditorID: ElvesEar
+Version2: 5
+ObjectBounds:
+  First: -7, -10, -13
+  Second: 7, 10, 13
+Name:
+  TargetLanguage: English
+  Value: Elves Ear
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\ElvesEar01.nif
+  Data: 0x02000000020000000000000036A17BB364647300134C1EFAB4BCE4BF64647300134C1EFA
+PickUpSound: 0519D5:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 10
+Weight: 0.1
+IngredientValue: 10
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 03EB1B:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 073F2E:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30

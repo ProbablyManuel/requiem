@@ -1,0 +1,28 @@
+FormKey: AD36F3:Requiem.esp
+EditorID: REQ_Projectile_Ench_Bolt_Elven_Ice
+ObjectBounds:
+  First: -24, -16, -1
+  Second: 24, 61, 1
+Name:
+  TargetLanguage: English
+  Value: Elven Bolt of Ice
+Model:
+  File: Requiem\Projectiles\elven\elven_bolt_magic_ice.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+- Supersonic
+Type: Arrow
+Gravity: 0.2
+Speed: 5600
+Range: 60000
+MuzzleFlash: 0E2172:Skyrim.esm
+Explosion: 010D91:Dawnguard.esm
+Sound: 03F2B4:Skyrim.esm
+MuzzleFlashDuration: 0.5
+FadeDuration: 5
+ImpactForce: 0.5
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

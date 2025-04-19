@@ -1,0 +1,18 @@
+FormKey: 0D205D:Skyrim.esm
+EditorID: REQ_NULL_ghostHalfDamageAbility
+Name:
+  TargetLanguage: English
+  Value: Half damage
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1
+Flags:
+- IgnoreResistance
+- NoDualCastModification
+Type: Ability
+Effects:
+- BaseEffect: 0D205C:Skyrim.esm
+  Data:
+    Magnitude: 1

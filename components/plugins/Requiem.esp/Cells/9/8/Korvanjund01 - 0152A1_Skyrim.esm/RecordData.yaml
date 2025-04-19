@@ -1,0 +1,77 @@
+FormKey: 0152A1:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Korvanjund01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Korvanjund Temple
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#002F343C'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#004B6361'
+  FogNear: 1000
+  FogFar: 6000
+  DirectionalFade: 1
+  FogClipDistance: 6000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#0033343E'
+    DirectionalXMinus: '#002A3439'
+    DirectionalYPlus: '#002F363C'
+    DirectionalYMinus: '#002F313C'
+    DirectionalZPlus: '#0016181B'
+    DirectionalZMinus: '#00474F5C'
+    Specular: '#00607575'
+    Scale: 1
+  FogFarColor: '#00658583'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128C:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019261:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC40:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A45D4:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019261:Skyrim.esm
+  Placement:
+    Position: -653.2824, -5441.779, 608
+    Rotation: 0, 0, 2.623188
+- MutagenObjectType: PlacedObject
+  FormKey: 0A46A3:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019261:Skyrim.esm
+  Placement:
+    Position: -1043.9631, 5911.299, -411.10168
+    Rotation: -0.05180914, -0.08555985, 0.54341185
+MajorFlags:
+- 0x40000

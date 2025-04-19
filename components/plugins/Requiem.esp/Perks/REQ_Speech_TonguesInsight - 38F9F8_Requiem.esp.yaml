@@ -1,0 +1,25 @@
+FormKey: 38F9F8:Requiem.esp
+EditorID: REQ_Speech_TonguesInsight
+Name:
+  TargetLanguage: English
+  Value: Tongue's Insight
+Description:
+  TargetLanguage: English
+  Value: You've spent time meditating on the Way of the Voice, unearthing more knowledge and gaining <br> valuable insights. Thus, you can harness the might of yet another word of power.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 0242BA:Skyrim.esm
+  ComparisonValue: 160
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0D02C5:Requiem.esp
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 394931:Requiem.esp

@@ -1,0 +1,90 @@
+FormKey: 015286:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FaldarsTooth01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Faldar's Tooth
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00282417'
+  DirectionalColor: '#004B5658'
+  FogNearColor: '#00476765'
+  FogNear: 340
+  FogFar: 6000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#005E9EA6'
+    Scale: 1
+  FogFarColor: '#005E9EA6'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 01FB68:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019175:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC14:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 09108D:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 019175:Skyrim.esm
+  Placement:
+    Position: 4120.959, 3406.384, -554.8098
+    Rotation: 0.18481934, 0.20563039, 5.4817224
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 091454:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019175:Skyrim.esm
+  Placement:
+    Position: 4312.911, -1193.1139, -999.7014
+    Rotation: 0, 0, 0.8431947
+- MutagenObjectType: PlacedObject
+  FormKey: 091213:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019175:Skyrim.esm
+  Placement:
+    Position: 1831.4128, -635.2033, -756.3868
+    Rotation: 6.2708683, 6.133689, 0.3041149
+MajorFlags:
+- 0x40000

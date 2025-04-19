@@ -1,0 +1,19 @@
+FormKey: AE35E0:Requiem.esp
+EditorID: REQ_Smelter_Heavy_Stalhrim_Feet
+Items:
+- Item:
+    Item: 01CD9E:Dragonborn.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 01CD9E:Dragonborn.esm
+CreatedObject: 02B06B:Dragonborn.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

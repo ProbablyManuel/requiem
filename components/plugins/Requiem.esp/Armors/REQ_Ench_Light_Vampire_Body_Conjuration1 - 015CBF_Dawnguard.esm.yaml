@@ -1,0 +1,39 @@
+FormKey: 015CBF:Dawnguard.esm
+EditorID: REQ_Ench_Light_Vampire_Body_Conjuration1
+ObjectBounds:
+  First: -22, -34, 6
+  Second: 22, 21, 19
+Name:
+  TargetLanguage: English
+  Value: Vampire Cuirass of Minor Conjuration
+ObjectEffect: 104D6C:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: DLC01\Clothes\Vampire\VampireRobes_altGND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: DLC01\Clothes\Vampire\VampireRobesF_altGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- 01463E:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 0142C6:Dawnguard.esm
+Value: 100
+Weight: 5
+ArmorRating: 150
+TemplateArmor: 0142C7:Dawnguard.esm

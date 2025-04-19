@@ -1,0 +1,1731 @@
+FormKey: 088845:Skyrim.esm
+EditorID: KhajiitRaceVampire
+Name:
+  TargetLanguage: English
+  Value: Khajiit
+Description:
+  TargetLanguage: English
+  Value: The Khajiit of Elsweyr can vary in appearance from nearly Elven to the Cathay-raht "jaguar men" to the great Senche-Tiger. The most common breed found in Skyrim, the Cathay, is strong, quick, and agile. Khajiit of all breeds have a weakness for sweets, especially the drug known as skooma. Many Khajiit disdain weapons in favor of their natural claws.
+ActorEffect:
+- 0AA01D:Skyrim.esm
+- 0ED0A8:Skyrim.esm
+- 10FB30:Skyrim.esm
+- 82CC14:Requiem.esp
+- AD3A10:Requiem.esp
+- AE3780:Requiem.esp
+- AE3B09:Requiem.esp
+- AE3B0A:Requiem.esp
+- AE3B0B:Requiem.esp
+- AE3B1D:Requiem.esp
+- AE3B24:Requiem.esp
+- AE3B72:Requiem.esp
+Skin: 069CE3:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  - Hands
+  - Forearms
+  - Ring
+  - Shield
+  - FX01
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013794:Skyrim.esm
+- 013796:Skyrim.esm
+- 0A82BB:Skyrim.esm
+- 0D61D1:Skyrim.esm
+- 5F367F:Requiem.esp
+- AD3A3A:Requiem.esp
+- AD3A3D:Requiem.esp
+- AD3A3E:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: OneHanded
+  Boost: 5
+SkillBoost2:
+  Skill: Archery
+  Boost: 5
+SkillBoost3:
+  Skill: Pickpocket
+  Boost: 5
+SkillBoost4:
+  Skill: Lockpicking
+  Boost: 5
+SkillBoost5:
+  Skill: Sneak
+  Boost: 15
+SkillBoost6:
+  Skill: Alchemy
+  Boost: 5
+Height:
+  Male: 1
+  Female: 0.95
+Weight:
+  Male: 0.5
+  Female: 1
+Flags:
+- FaceGenHead
+- Swims
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- AllowPcDialog
+- AllowPickpocket
+- OverlayHeadPartList
+- CanPickupItems
+- CanDualWield
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 110
+- Key: Magicka
+  Value: 70
+- Key: Stamina
+  Value: 140
+BaseCarryWeight: 105
+BaseMass: 1
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+HeadBipedObject: Head
+HairBipedObject: Hair
+ShieldBipedObject: Shield
+Regen:
+- Key: Health
+  Value: 0.2
+- Key: Magicka
+  Value: 0.33
+- Key: Stamina
+  Value: 0.84
+UnarmedDamage: 15
+UnarmedReach: 73
+BodyBipedObject: Body
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Character\Character Assets\skeletonBeast.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Character\Character Assets Female\skeletonBeast_female.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 013AEC:Skyrim.esm
+  Female: 013AED:Skyrim.esm
+DecapitateArmors:
+  Male: 0DB5D0:Skyrim.esm
+  Female: 0DB5D0:Skyrim.esm
+NumberOfTintsInList: 294
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartSprintLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartH2HCombo
+- AttackData:
+    DamageMult: 2
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartInPlace
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_SprintLeftHand
+- AttackData:
+    DamageMult: 0.5
+    Chance: 0.5
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_Sprint
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 0.5
+  AttackEvent: attackPowerStartDualWield
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E8:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartBackLeftHand
+- AttackData:
+    DamageMult: 2.2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    AttackAngle: -90
+    StrikeAngle: 85
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_MC_1HMLeft
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_2HWSprint
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_MC
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartRightLeftHand
+- AttackData:
+    DamageMult: 2.2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    AttackAngle: 90
+    StrikeAngle: 85
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_MC_1HMRight
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartDualWield
+- AttackData:
+    DamageMult: 2
+    Chance: 0.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForward
+- AttackData:
+    DamageMult: 1.2
+    Chance: 1
+    AttackAngle: 90
+    StrikeAngle: 85
+    StaminaMult: 1
+  AttackEvent: attackStart_MC_1HMRight
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HRight
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_2HMSprint
+- AttackData:
+    DamageMult: 2
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartRight
+- AttackData:
+    DamageMult: 1.2
+    Chance: 1
+    AttackAngle: -90
+    StrikeAngle: 85
+    StaminaMult: 1
+  AttackEvent: attackStart_MC_1HMLeft
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartLeftLeftHand
+- AttackData:
+    DamageMult: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartSprint
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardH2HRightHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartInPlaceLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 0.1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E8:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartBackward
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HLeft
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardH2HLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartLeft
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.33
+    Flags:
+    - BashAttack
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    AttackType: 000F54:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: bashPowerStart
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 00001D:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Character\DefaultMale.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Character\DefaultFemale.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 0C190F:Skyrim.esm
+DecapitationFX: 0A6EF5:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Hair
+  Value: Hair
+- Key: Body
+  Value: BODY
+- Key: Hands
+  Value: Hands
+- Key: Forearms
+  Value: Forearms
+- Key: Amulet
+  Value: Amulet
+- Key: Ring
+  Value: Ring
+- Key: Feet
+  Value: Feet
+- Key: Calves
+  Value: Calves
+- Key: Shield
+  Value: SHIELD
+- Key: Tail
+  Value: TAIL
+- Key: LongHair
+  Value: LongHair
+- Key: Circlet
+  Value: Circlet
+- Key: Ears
+  Value: Ears
+- Key: DecapitateHead
+  Value: DecapitateHead
+- Key: Decapitate
+  Value: Decapitate
+- Key: FX01
+  Value: FX01
+EquipmentFlags:
+- HandToHand
+- OneHandSword
+- OneHandDagger
+- OneHandAxe
+- OneHandMace
+- TwoHandSword
+- TwoHandAxe
+- Bow
+- Staff
+- Spell
+- Shield
+- Torch
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+- 025BEE:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+FaceFxPhonemes:
+  Aah_LipBigAah:
+    Name: Aah
+    EY: 0.6
+    AE: 0.8
+    AA: 1
+    AW: 0.2
+    AH: 0.8
+    AO: 0.1
+    Y: 0.2
+    HH: 0.6
+    G: 0.4
+  BigAah_LipDST:
+    Name: BigAah
+    OW: 0.8
+    UH: 0.5
+    AX: 0.8
+  BMP_LipEee:
+    Name: BMP
+    M: 1
+    B: 1
+    P: 0.9
+  ChJSh_LipFV:
+    Name: ChJSh
+    SH: 0.8
+    ZH: 0.7
+    JH: 1
+    G: 0.3
+    CH: 1
+  DST_LipK:
+    Name: DST
+    S: 0.9
+    Z: 0.8
+    DH: 0.2
+    D: 1
+    T: 0.8
+  Eee_LipL:
+    Name: Eee
+    IY: 1
+    IH: 0.2
+    EY: 0.3
+    AY: 0.2
+    OY: 0.3
+    Y: 0.4
+  Eh_LipR:
+    Name: Eh
+    IH: 0.7
+    EH: 1
+  FV_LipTh:
+    Name: FV
+    F: 0.8
+    V: 1
+  I:
+    Name: I
+    AY: 0.8
+    ER: 0.5
+    Y: 0.4
+  K:
+    Name: K
+    K: 1
+  N:
+    Name: N
+    N: 1
+    NG: 0.9
+    L: 0.6
+  Oh:
+    Name: Oh
+    AW: 0.6
+    AH: 0.2
+    AO: 0.5
+    OY: 0.6
+    OW: 0.2
+    UH: 0.2
+  OohQ:
+    Name: OohQ
+    UW: 1
+  R:
+    Name: R
+    ER: 0.3
+    R: 1
+  Th:
+    Name: Th
+    TH: 1
+    DH: 0.8
+    L: 0.2
+  W:
+    Name: W
+    AO: 0.2
+    W: 1
+HeadData:
+  Male:
+    HeadParts:
+    - Number: 0
+      Head: 051616:Skyrim.esm
+    - Number: 1
+      Head: 05150D:Skyrim.esm
+    - Number: 2
+      Head: 0EE875:Skyrim.esm
+    AvailableMorphs:
+      Nose:
+        Data: 0x3F000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Brow:
+        Data: 0x00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Eye:
+        Data: 0x3F00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Lip:
+        Data: 0x3F000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    AvailableHairColors:
+    - 0A0431:Skyrim.esm
+    - 0A0432:Skyrim.esm
+    - 0A0433:Skyrim.esm
+    - 0A0434:Skyrim.esm
+    - 0A0435:Skyrim.esm
+    - 0A0436:Skyrim.esm
+    - 0A0437:Skyrim.esm
+    - 0A0438:Skyrim.esm
+    - 0F7565:Skyrim.esm
+    FaceDetails:
+    - 081BA1:Skyrim.esm
+    - 0F123A:Skyrim.esm
+    DefaultFaceTexture: 0F123A:Skyrim.esm
+    TintMasks:
+    - Index: 1
+      FileName: Actors\Character\Character Assets\TintMasks\SkinTone.dds
+      MaskType: SkinTone
+      PresetDefault: 099D86:Skyrim.esm
+      Presets:
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 1
+        Index: 45
+      - Color: 0EE852:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 44
+      - Color: 0E6E09:Skyrim.esm
+        DefaultValue: 1
+        Index: 52
+      - Color: 0EE851:Skyrim.esm
+        DefaultValue: 0.31
+        Index: 53
+      - Color: 0EE850:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 51
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 50
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 43
+      - Color: 0E6E04:Skyrim.esm
+        DefaultValue: 0.16
+        Index: 54
+      - Color: 026A9C:Skyrim.esm
+        DefaultValue: 0.66
+        Index: 49
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 0.64
+        Index: 47
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 0.74
+        Index: 48
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 46
+    - Index: 3
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitEyeSocketUpper.dds
+      MaskType: EyeSocketUpper
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 55
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 1
+        Index: 56
+    - Index: 10
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitEyeliner.dds
+      MaskType: Eyeliner
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 62
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 57
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 58
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 59
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 60
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 61
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 63
+    - Index: 13
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitEyeSocketLower.dds
+      MaskType: EyeSocketLower
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 69
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 64
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 65
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 66
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 67
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 68
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 70
+    - Index: 7
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitCheekColor.dds
+      MaskType: CheekColor
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 76
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 71
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 72
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 73
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 74
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 75
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 77
+    - Index: 2
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitCheekColorLower.dds
+      MaskType: CheekColorLower
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 83
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 78
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 79
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 80
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 81
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 82
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 84
+    - Index: 8
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitForehead.dds
+      MaskType: Forehead
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 90
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 85
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 86
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 87
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 88
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 89
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 91
+    - Index: 9
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitChin.dds
+      MaskType: Chin
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 97
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 92
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 93
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 94
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 95
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 96
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 98
+    - Index: 11
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitLipColor.dds
+      MaskType: LipColor
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 104
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 99
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 100
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 101
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 102
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 103
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 105
+    - Index: 12
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitLaughlines.dds
+      MaskType: LaughLines
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 111
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 106
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 107
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 108
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 109
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 110
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 112
+    - Index: 21
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitNeck.dds
+      MaskType: Neck
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 118
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 113
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 114
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 115
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 116
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 117
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 119
+    - Index: 23
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitStripes01.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 125
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 120
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 121
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 122
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 123
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 124
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 126
+    - Index: 24
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitStripes02.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 132
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 127
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 128
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 129
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 130
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 131
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 133
+    - Index: 25
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitStripes03.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 139
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 134
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 135
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 136
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 137
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 138
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 140
+    - Index: 26
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitStripes04.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 146
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 141
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 142
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 143
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 144
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 145
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 147
+    - Index: 27
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitPaint01.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 153
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 148
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 149
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 150
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 151
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 152
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 154
+    - Index: 28
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitPaint02.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 160
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 155
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 156
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 157
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 158
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 159
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 161
+    - Index: 29
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitPaint03.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 167
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 162
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 163
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 164
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 165
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 166
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 168
+    - Index: 30
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitPaint04.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 174
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 169
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 170
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 171
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 172
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 173
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 175
+    - Index: 22
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitNose01.dds
+      MaskType: Nose
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 181
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 176
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 177
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 178
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 179
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 180
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 182
+    - Index: 42
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadDirt_01.dds
+      MaskType: Dirt
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 188
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 183
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 184
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 185
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 186
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 187
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 189
+  Female:
+    HeadParts:
+    - Number: 0
+      Head: 051612:Skyrim.esm
+    - Number: 1
+      Head: 0511A8:Skyrim.esm
+    - Number: 2
+      Head: 0EE87F:Skyrim.esm
+    AvailableMorphs:
+      Nose:
+        Data: 0x3F000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Brow:
+        Data: 0x00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Eye:
+        Data: 0x3F00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Lip:
+        Data: 0x3F000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    AvailableHairColors:
+    - 0A0431:Skyrim.esm
+    - 0A0432:Skyrim.esm
+    - 0A0433:Skyrim.esm
+    - 0A0434:Skyrim.esm
+    - 0A0435:Skyrim.esm
+    - 0A0436:Skyrim.esm
+    - 0A0437:Skyrim.esm
+    - 0A0438:Skyrim.esm
+    - 0F7565:Skyrim.esm
+    FaceDetails:
+    - 0B79B6:Skyrim.esm
+    - 0F1239:Skyrim.esm
+    DefaultFaceTexture: 0F1239:Skyrim.esm
+    TintMasks:
+    - Index: 4
+      FileName: Actors\Character\Character Assets\TintMasks\SkinTone.dds
+      MaskType: SkinTone
+      PresetDefault: 0EE852:Skyrim.esm
+      Presets:
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 1
+        Index: 192
+      - Color: 0EE852:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 191
+      - Color: 0E6E09:Skyrim.esm
+        DefaultValue: 1
+        Index: 199
+      - Color: 0EE851:Skyrim.esm
+        DefaultValue: 0.31
+        Index: 200
+      - Color: 0EE850:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 198
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 197
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 190
+      - Color: 0E6E04:Skyrim.esm
+        DefaultValue: 0.16
+        Index: 201
+      - Color: 026A9C:Skyrim.esm
+        DefaultValue: 0.66
+        Index: 196
+      - Color: 0E6E0F:Skyrim.esm
+        DefaultValue: 0.64
+        Index: 194
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 0.74
+        Index: 195
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 0.5
+        Index: 193
+    - Index: 5
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitEyeSocketUpper.dds
+      MaskType: EyeSocketUpper
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 202
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 203
+    - Index: 6
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitEyeliner.dds
+      MaskType: Eyeliner
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 209
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 204
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 205
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 206
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 207
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 208
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 210
+    - Index: 17
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitEyeSocketLower.dds
+      MaskType: EyeSocketLower
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 216
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 211
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 212
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 213
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 214
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 215
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 217
+    - Index: 18
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitCheekColor.dds
+      MaskType: CheekColor
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 223
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 218
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 219
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 220
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 221
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 222
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 224
+    - Index: 14
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitCheekColorLower.dds
+      MaskType: CheekColorLower
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 230
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 225
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 226
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 227
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 228
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 229
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 231
+    - Index: 15
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitForehead.dds
+      MaskType: Forehead
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 237
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 232
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 233
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 234
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 235
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 236
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 238
+    - Index: 16
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitChin.dds
+      MaskType: Chin
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 244
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 239
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 240
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 241
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 242
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 243
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 245
+    - Index: 19
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitLipColor.dds
+      MaskType: LipColor
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 251
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 246
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 247
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 248
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 249
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 250
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 252
+    - Index: 20
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitLaughlines.dds
+      MaskType: LaughLines
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 258
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 253
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 254
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 255
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 256
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 257
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 259
+    - Index: 31
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitNeck.dds
+      MaskType: Neck
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 265
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 260
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 261
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 262
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 263
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 264
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 266
+    - Index: 32
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitStripes01.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 272
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 267
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 268
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 269
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 270
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 271
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 273
+    - Index: 33
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitStripes02.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 279
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 274
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 275
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 276
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 277
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 278
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 280
+    - Index: 34
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitStripes03.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 286
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 281
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 282
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 283
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 284
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 285
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 287
+    - Index: 35
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitStripes04.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 293
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 288
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 289
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 290
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 291
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 292
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 294
+    - Index: 36
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitPaint01.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 300
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 295
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 296
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 297
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 298
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 299
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 301
+    - Index: 37
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitPaint02.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 307
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 302
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 303
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 304
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 305
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 306
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 308
+    - Index: 38
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitPaint03.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 314
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 309
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 310
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 311
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 312
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 313
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 315
+    - Index: 39
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitPaint04.dds
+      MaskType: Paint
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 321
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 316
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 317
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 318
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 319
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 320
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 322
+    - Index: 40
+      FileName: Actors\Character\Character Assets\TintMasks\KhajiitNose01.dds
+      MaskType: Nose
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 328
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 323
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 324
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 325
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 326
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 327
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 329
+    - Index: 41
+      FileName: Actors\Character\Character Assets\TintMasks\MaleHeadDirt_01.dds
+      MaskType: Dirt
+      PresetDefault: 0E6E0B:Skyrim.esm
+      Presets:
+      - Color: 0E6E0B:Skyrim.esm
+        DefaultValue: 0
+        Index: 335
+      - Color: 0E6E16:Skyrim.esm
+        DefaultValue: 1
+        Index: 330
+      - Color: 064B2D:Skyrim.esm
+        DefaultValue: 1
+        Index: 331
+      - Color: 026ADA:Skyrim.esm
+        DefaultValue: 1
+        Index: 332
+      - Color: 0EE84F:Skyrim.esm
+        DefaultValue: 0.79
+        Index: 333
+      - Color: 0E6E0D:Skyrim.esm
+        DefaultValue: 0.72
+        Index: 334
+      - Color: 099D86:Skyrim.esm
+        DefaultValue: 0.81
+        Index: 336
+MorphRace: 013745:Skyrim.esm

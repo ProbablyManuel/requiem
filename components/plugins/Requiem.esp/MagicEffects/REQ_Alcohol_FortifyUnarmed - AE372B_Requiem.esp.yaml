@@ -1,0 +1,24 @@
+FormKey: AE372B:Requiem.esp
+EditorID: REQ_Alcohol_FortifyUnarmed
+Name:
+  TargetLanguage: English
+  Value: Fortify Unarmed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: UnarmedDamage
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Has a kick like a guar - very strong, and just as stupid.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

@@ -1,0 +1,101 @@
+FormKey: 07144D:Skyrim.esm
+EditorID: BearTrap01
+Version2: 15
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrapBear
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 22
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 75
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LightFootTriggerPercent
+      Object: 067194:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 75
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LightFoot
+      Object: 05820C:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 75
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 14
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 10
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 75
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 6
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 75
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 75
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 18
+  - Name: TrapHitBase
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseAtaxia
+      Object: 10A24A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBrainRot
+      Object: 10A24D:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: canDisease
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseWitbane
+      Object: 10A250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBoneBreakFever
+      Object: 10A24C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRockjoint
+      Object: 10A24F:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: rumbleAmount
+      Data: 0.2
+    - MutagenObjectType: ScriptBoolProperty
+      Name: rumble
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRattles
+      Object: 10A24E:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: hitOnlyOnce
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: staggerAmount
+      Data: 0.5
+    - MutagenObjectType: ScriptBoolProperty
+      Name: trapCausesStagger
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: rumbleDuration
+      Data: 0.5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostAbility
+      Object: 05030B:Skyrim.esm
+ObjectBounds:
+  First: -40, -24, 0
+  Second: 40, 26, 27
+Name:
+  TargetLanguage: English
+  Value: Bear Trap
+Model:
+  File: Traps\BearTrap\BearTrap01.nif
+  Data: 0x020000000200000000000000FB0B319464647300E115AE130B78B3F764647300E115AE13
+MarkerColor: '#00CC4C33'
+Flags: []

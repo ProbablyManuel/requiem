@@ -1,0 +1,54 @@
+FormKey: 07E8E0:Skyrim.esm
+EditorID: REQ_Conjuration5_RaiseDead_Reanimate
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB884:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Reanimate
+MenuDisplayObject: 1097CD:Skyrim.esm
+Keywords:
+- 02482B:Skyrim.esm
+- 0806E1:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+- 068391:Requiem.esp
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 0.045
+MagicSkill: Conjuration
+CastingLight: 03BA90:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 4.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Reanimate
+Projectile: 025458:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 044F56:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 044F59:Skyrim.esm
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster reanimates a dead body for a long time. The spell is powerful enough to raise about anything, though sometimes, weird side effects might be the result of invoking this spell.

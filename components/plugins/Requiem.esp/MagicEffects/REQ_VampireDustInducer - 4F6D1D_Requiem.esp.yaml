@@ -1,0 +1,47 @@
+FormKey: 4F6D1D:Requiem.esp
+EditorID: REQ_VampireDustInducer
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Req_VampireDustScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DiseaseSanguinareVampiris
+      Object: 0B8780:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Sanguinare Vampiris
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Flags:
+- Detrimental
+- NoArea
+TaperWeight: 0.2
+SpellmakingCastingTime: 0.5
+TaperCurve: 5
+TaperDuration: 297
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: This vile miasma has possessed your blood, rotting away your health for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+    RunOnTypeIndex: 0
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    Spell: 0F5BA0:Skyrim.esm
+  ComparisonValue: 1

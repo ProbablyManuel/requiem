@@ -1,0 +1,109 @@
+FormKey: 0142F1:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2Nchardak01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Nchardak Great Chamber
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 0.9
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  - LightFadeDistances
+LightingTemplate: 031D29:Dragonborn.esm
+WaterHeight: 0
+Location: 0142B4:Dragonborn.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+AcousticSpace: 0F993E:Skyrim.esm
+EncounterZone: 0142B5:Dragonborn.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 01C790:Dragonborn.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: DLC2dunNchardakWaterRegisteredScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LinkCustom10
+        Object: 0B9506:Skyrim.esm
+    - Name: masterambushscript
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ambushOnTrigger
+        Data: True
+  Base: 38AA95:Requiem.esp
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 01C78B:Dragonborn.esm
+  - KeywordOrReference: 05D5E6:Skyrim.esm
+    Reference: 017701:Dragonborn.esm
+  - KeywordOrReference: 0B9506:Skyrim.esm
+    Reference: 017706:Dragonborn.esm
+  ActivateParents:
+    Parents:
+    - Reference: 01D4C3:Dragonborn.esm
+      Delay: 1.763652
+  PersistentLocation: 0142B4:Dragonborn.esm
+  LocationReference: 0142B4:Dragonborn.esm
+  Placement:
+    Position: -16, -5152, 592.1
+- MutagenObjectType: PlacedNpc
+  FormKey: 01C785:Dragonborn.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: DLC2dunNchardakWaterRegisteredScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LinkCustom10
+        Object: 0B9506:Skyrim.esm
+    - Name: masterambushscript
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ambushOnTrigger
+        Data: True
+  Base: 38AA95:Requiem.esp
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 01C784:Dragonborn.esm
+  - KeywordOrReference: 05D5E6:Skyrim.esm
+    Reference: 017701:Dragonborn.esm
+  - KeywordOrReference: 0B9506:Skyrim.esm
+    Reference: 017706:Dragonborn.esm
+  ActivateParents:
+    Parents:
+    - Reference: 01D4C3:Dragonborn.esm
+  PersistentLocation: 0142B4:Dragonborn.esm
+  LocationReference: 0142B4:Dragonborn.esm
+  Placement:
+    Position: 192, -5152, 592.1
+MajorFlags:
+- 0x40000

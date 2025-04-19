@@ -1,0 +1,37 @@
+FormKey: 1A2B6B:Requiem.esp
+EditorID: REQ_Effect_EnchSpellbreakingFFContact
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Spellbreaking
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CooldownSpell
+      Object: ADE48B:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CooldownEffect
+      Object: ADE48C:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Spellbreaking
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 0.8
+HitShader: 04E220:Skyrim.esm
+EnchantShader: 05D608:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+TargetType: Touch
+HitEffectArt: 04E221:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Damages magicka by <mag> and dispels all active magic effects from the target.

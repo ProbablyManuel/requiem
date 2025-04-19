@@ -1,0 +1,267 @@
+FormKey: 0A3504:Skyrim.esm
+EditorID: Favor157
+VirtualMachineAdapter:
+  Scripts:
+  - Name: FavorChangeLocationQuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorTimeLeft
+      Object: 05CDC8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorLocation
+      Object: 0A3504:Skyrim.esm
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bDisplayObjective
+      Data: True
+  - Name: QF_Favor157_000A3504
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestItem
+      Object: 0A3504:Skyrim.esm
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardGoldLarge
+      Object: ADE415:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorCompletedFaction
+      Object: 071860:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BossContainer
+      Object: 0A3504:Skyrim.esm
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorCost
+      Object: 035219:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Location
+      Object: 0A3504:Skyrim.esm
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dungeon
+      Object: 0A3504:Skyrim.esm
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestGiver
+      Object: 0A3504:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor157QuestGiverFaction
+      Object: 04B766:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_House
+      Object: 0A3504:Skyrim.esm
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor204QuestGiverFaction
+      Object: 04D6C9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorReward
+      Object: 035216:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MapMarker
+      Object: 0A3504:Skyrim.esm
+      Alias: 26
+  FileName: QF_Favor157_000A3504
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_Favor157_000A3504
+    FragmentName: Fragment_3
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_Favor157_000A3504
+    FragmentName: Fragment_2
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_Favor157_000A3504
+    FragmentName: Fragment_4
+  - Stage: 15
+    Unknown2: 1
+    ScriptName: QF_Favor157_000A3504
+    FragmentName: Fragment_0
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_Favor157_000A3504
+    FragmentName: Fragment_1
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0A3504:Skyrim.esm
+      Alias: 17
+    Scripts:
+    - Name: favornpcdeathscript
+  - Property:
+      Name: ''
+      Object: 0A3504:Skyrim.esm
+      Alias: 18
+    Scripts:
+    - Name: DefaultAddItemAliasScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 15
+      - MutagenObjectType: ScriptIntProperty
+        Name: MinStageToCheck
+        Data: 10
+      - MutagenObjectType: ScriptBoolProperty
+        Name: CheckPlayerInventory
+        Data: True
+Name:
+  TargetLanguage: English
+  Value: Dungeon Delving (Jarl - Hagravens)
+Priority: 45
+QuestFormVersion: 65
+Type: Misc
+Event: CLOC
+Filter: Favor\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 20
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 49
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Unknown: 65
+  LogEntries:
+  - Flags: []
+- Index: 15
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+- Index: 200
+  Unknown: 116
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find <Alias=QuestItem> for <Alias.ShortName=QuestGiver>
+  Targets:
+  - AliasID: 18
+- Index: 15
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring <Alias=QuestItem> to <Alias.ShortName=QuestGiver> in the Understone Keep
+  Targets:
+  - AliasID: 17
+NextAliasID: 27
+Aliases:
+- ID: 23
+  Type: Location
+  Name: Location
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: CLOC
+    EventData: 0x4C320000
+- ID: 17
+  Name: QuestGiver
+  Flags:
+  - ReservesLocationOrReference
+  - StoresText
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050920:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 04B766:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 23
+    ComparisonValue: 1
+  VoiceTypes: 020FA6:Skyrim.esm
+- ID: 19
+  Type: Location
+  Name: Dungeon
+  Flags:
+  - ReservesLocationOrReference
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSameEditorLocAsRefAliasConditionData
+      ReferenceAliasIndex: 17
+      Keyword: 016771:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DB:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E6:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 0130F8:Skyrim.esm
+    ComparisonValue: 1
+- ID: 20
+  Name: BossContainer
+  Flags: []
+  Location:
+    AliasID: 19
+    RefType: 0130F8:Skyrim.esm
+  VoiceTypes: Null
+- ID: 25
+  Type: Location
+  Name: house
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DC:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSameEditorLocAsRefAliasConditionData
+      ReferenceAliasIndex: 17
+      Keyword: 0130DC:Skyrim.esm
+    ComparisonValue: 1
+- ID: 18
+  Name: QuestItem
+  Flags:
+  - QuestObject
+  - AllowDisabled
+  - StoresText
+  - UsesStoredText
+  Location:
+    AliasID: 25
+    RefType: 03F491:Skyrim.esm
+  VoiceTypes: Null
+- ID: 26
+  Name: MapMarker
+  Flags: []
+  Location:
+    AliasID: 19
+    RefType: 10F63C:Skyrim.esm
+  VoiceTypes: Null

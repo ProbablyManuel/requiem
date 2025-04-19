@@ -1,0 +1,61 @@
+FormKey: 036ED6:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunGuardHouse
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Guard Barracks
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000F0D0C'
+    DirectionalXMinus: '#000C0D0B'
+    DirectionalYPlus: '#000E0D0C'
+    DirectionalYMinus: '#000E0C0C'
+    DirectionalZPlus: '#00060605'
+    DirectionalZMinus: '#00151312'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 08B5EC:Skyrim.esm
+Owner: 02BE39:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 32CF06:Requiem.esp
+  Base: 0D8E80:Skyrim.esm
+  Placement:
+    Position: 92.839836, -485.4936, 123.69798
+    Rotation: 0, -0, 1.3759591E-06
+- MutagenObjectType: PlacedObject
+  FormKey: 069EB1:Requiem.esp
+  Base: 069947:Requiem.esp
+  RagdollData: 0x0037D52B000000000000000000000000700DC9BF7C2CFBBAB8C448C0005C536BC0091640000070390000ACB84A2315B633D9803757F8C93F
+  Placement:
+    Position: -66.00999, 49.816845, 217.16118
+    Rotation: 0, -0, 0.3
+MajorFlags:
+- 0x40000

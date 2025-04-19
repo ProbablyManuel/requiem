@@ -1,0 +1,141 @@
+FormKey: 043E1A:Skyrim.esm
+EditorID: FreeformRiften13
+Version2: 15
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_FreeformRiften13_00043E1A
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pReward
+      Object: 22FDA6:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften13DaggerAlias
+      Object: 043E1A:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften13Andurs
+      Object: 043E1A:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFRTQS
+      Object: 065BDF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften13AlessandraAlias
+      Object: 043E1A:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pThaneCount
+      Object: 065BE0:Skyrim.esm
+  FileName: QF_FreeformRiften13_00043E1A
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften13_00043E1A
+    FragmentName: Fragment_2
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften13_00043E1A
+    FragmentName: Fragment_3
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften13_00043E1A
+    FragmentName: Fragment_8
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften13_00043E1A
+    FragmentName: Fragment_0
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften13_00043E1A
+    FragmentName: Fragment_7
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 043E1A:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+  - Property:
+      Name: ''
+      Object: 043E1A:Skyrim.esm
+      Alias: 7
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+Name:
+  TargetLanguage: English
+  Value: Pilgrimage
+Flags:
+- StartGameEnabled
+- 0x10
+Priority: 40
+QuestFormVersion: 65
+Type: Misc
+Filter: Dialogue\The Rift\Riften\
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 30
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags: []
+- Index: 250
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring Alessandra's Dagger to Andurs in Whiterun
+  Targets:
+  - AliasID: 7
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to Alessandra, an attendant of Riften's Hall of the Dead
+  Targets:
+  - {}
+NextAliasID: 8
+Aliases:
+- Name: FFRiften13AlessandraAlias
+  Flags:
+  - ReservesLocationOrReference
+  UniqueActor: 013347:Skyrim.esm
+  VoiceTypes: Null
+- ID: 6
+  Name: FFRiften13DaggerAlias
+  Flags:
+  - QuestObject
+  CreateReferenceToObject:
+    Object: 043E1E:Skyrim.esm
+    Create: In
+  VoiceTypes: Null
+- ID: 7
+  Name: FFRiften13Andurs
+  Flags:
+  - ReservesLocationOrReference
+  UniqueActor: 013BA8:Skyrim.esm
+  VoiceTypes: Null

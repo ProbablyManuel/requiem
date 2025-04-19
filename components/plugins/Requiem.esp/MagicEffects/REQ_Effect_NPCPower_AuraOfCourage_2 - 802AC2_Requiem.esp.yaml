@@ -1,0 +1,28 @@
+FormKey: 802AC2:Requiem.esp
+EditorID: REQ_Effect_NPCPower_AuraOfCourage_2
+Name:
+  TargetLanguage: English
+  Value: Aura of Courage
+Flags:
+- Recover
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: AttackDamageMult
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 802AC1:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 802AC2:Requiem.esp

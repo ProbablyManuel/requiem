@@ -1,0 +1,54 @@
+FormKey: 0832CB:Requiem.esp
+EditorID: REQ_Effect_Examine
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ExaminePower
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrueYieldFearEffect02
+      Object: 09F106:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RaiseDeadBonus01
+      Object: 0CAB5C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RaiseDeadBonus02
+      Object: 162476:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrueYieldFearEffect
+      Object: 001005:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeNPC
+      Object: 013794:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessagePerfectHealth
+      Object: AD3811:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SaddleKeyword
+      Object: 3AFD3C:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessageBadHealth
+      Object: AD3814:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessageTerribleHealth
+      Object: AD3815:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessageAverageHealth
+      Object: AD3813:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MessageGoodHealth
+      Object: AD3812:Requiem.esp
+Flags:
+- NoHitEvent
+- HideInUI
+- Painless
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

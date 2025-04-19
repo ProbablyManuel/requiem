@@ -1,0 +1,77 @@
+FormKey: 01EA75:Skyrim.esm
+EditorID: REQ_Alteration4_DetectDeath_EnemyInterior
+Name:
+  TargetLanguage: English
+  Value: Enemy Interior
+MenuDisplayObject: 104F70:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+BaseCost: 37
+MagicSkill: Alteration
+CastingLight: 03BA90:Skyrim.esm
+TaperWeight: 1
+HitShader: 016439:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingArea: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: DetectLife
+CastType: Concentration
+CastingArt: 02FB1C:Skyrim.esm
+SkillUsageMultiplier: 0.1
+DualCastScale: 1
+ImageSpaceModifier: 02FB1E:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 081189:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Nearby dead and undead can be seen through walls.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInInteriorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F82F4:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetDeadConditionData
+  ComparisonValue: 1

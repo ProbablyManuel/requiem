@@ -1,0 +1,30 @@
+FormKey: 000C2D:ccbgssse001-fish.esm
+EditorID: REQ_Drink6_AgedFlin
+ObjectBounds:
+  First: -6, -6, 0
+  Second: 6, 6, 25
+Name:
+  TargetLanguage: English
+  Value: Aged Flin
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: DLC02\Clutter\DLC02CyrodilacWine.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 180
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 90
+    Duration: 1200
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 60
+    Duration: 1800

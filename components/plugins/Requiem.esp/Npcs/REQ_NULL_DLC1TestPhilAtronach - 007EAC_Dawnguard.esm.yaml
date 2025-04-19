@@ -1,0 +1,144 @@
+FormKey: 007EAC:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_NULL_DLC1TestPhilAtronach
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1TestPhilAtronach
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: newEffect
+      Object: 007EAD:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: defaultEffect
+      Object: 02F3B7:Skyrim.esm
+ObjectBounds:
+  First: -31, -31, 0
+  Second: 31, 31, 176
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  StaminaOffset: 50
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 02B0E5:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD87:Skyrim.esm
+Voice: 01F1D5:Skyrim.esm
+Race: 0131F7:Skyrim.esm
+ActorEffect:
+- 02FB88:Skyrim.esm
+- 090353:Skyrim.esm
+WornArmor: 06881E:Skyrim.esm
+AttackRace: 0131F7:Skyrim.esm
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Class: 0AD237:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Storm Atronach
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 56
+  - Key: TwoHanded
+    Value: 31
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 31
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 57
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 82
+  - Key: Illusion
+    Value: 100
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 248
+  Magicka: 148
+  Stamina: 10099
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x415AEF
+CombatStyle: 075D28:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0ABF38:Skyrim.esm
+DefaultOutfit: 10C1E0:Skyrim.esm
+SleepingOutfit: 10C1E0:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

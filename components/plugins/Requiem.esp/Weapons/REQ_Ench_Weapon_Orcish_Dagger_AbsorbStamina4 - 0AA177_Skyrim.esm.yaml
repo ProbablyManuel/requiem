@@ -1,0 +1,53 @@
+FormKey: 0AA177:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Orcish_Dagger_AbsorbStamina4
+ObjectBounds:
+  First: 0, -18, -3
+  Second: 9, 21, 2
+Name:
+  TargetLanguage: English
+  Value: Orcish Dagger of Harvesting
+Model:
+  File: Weapons\Orcish\OrcishDagger.nif
+  Data: 0x02000000070000000000000033168C0764647300A0B8630503D8C24064647300A0B86305F156B2BE6464730083E22A434B9786186464730083E22A434FE0756464647300A0B863056A8AC1D66464730083E22A43163256056464730083E22A43
+ObjectEffect: 0AA163:Skyrim.esm
+EnchantmentAmount: 2000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E71C:Skyrim.esm
+- 01E713:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 029720:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03CED9:Skyrim.esm
+UnequipSound: 03CEDB:Skyrim.esm
+BasicStats:
+  Value: 90
+  Weight: 4
+  Damage: 8
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 4
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+Template: 01398E:Skyrim.esm

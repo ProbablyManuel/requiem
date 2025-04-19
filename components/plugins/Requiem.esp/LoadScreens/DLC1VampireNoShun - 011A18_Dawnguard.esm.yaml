@@ -1,0 +1,27 @@
+FormKey: 011A18:Dawnguard.esm
+EditorID: DLC1VampireNoShun
+Version2: 13
+Description:
+  TargetLanguage: English
+  Value: Not every vampire can be recognized with ease, as many are able to disguise themselves and walk among the living as if they were one of them...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 0A82BB:Skyrim.esm
+  ComparisonValue: 1
+LoadingScreenNif: 10E859:Skyrim.esm
+InitialScale: 1
+InitialRotation: 0, 0, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -30
+CameraPath: Cameras\LSCameraPanLFTZoomINBig.nif

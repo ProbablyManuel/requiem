@@ -1,0 +1,23 @@
+FormKey: AD3B38:Requiem.esp
+EditorID: REQ_DEPRECATED_Ench_AmuletOfTalos_Effect
+Name:
+  TargetLanguage: English
+  Value: Fortify Melee Armor Penetration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+EnchantShader: 092DEC:Skyrim.esm
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: OneHandedModifier
+  Type: DualValueModifier
+SecondActorValue: TwoHandedModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor penetration with one-handed and two-handed weapons is increased by <mag>.

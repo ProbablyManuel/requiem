@@ -1,0 +1,42 @@
+FormKey: 08F3EA:Skyrim.esm
+EditorID: MuffleFFSelf
+Version2: 15
+Name:
+  TargetLanguage: English
+  Value: Muffle
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+BaseCost: 6
+MagicSkill: Illusion
+CastingLight: 06B110:Skyrim.esm
+TaperWeight: 1
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MovementNoiseMult
+Projectile: 07331D:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 06B10F:Skyrim.esm
+HitEffectArt: 0BAD3E:Skyrim.esm
+ImpactData: 073320:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 06F6D3:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster dampens all sounds around him or her, making movement practically inaudible for <dur> seconds and prevents the detection of the caster by detection spells.

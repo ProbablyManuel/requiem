@@ -1,0 +1,34 @@
+FormKey: 0A26F5:Skyrim.esm
+EditorID: crIceWraithBiteFFContact
+Version2: 8
+Name:
+  TargetLanguage: English
+  Value: Ice Wraith Bite
+MenuDisplayObject: 09DB72:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+ResistValue: ResistFrost
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 04600A:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Stamina
+CastingArt: 046006:Skyrim.esm
+ImpactData: 046008:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The bite of an ice wraith is both cold as the grave and exhausting as Skyrim's most fearsome blizzards...

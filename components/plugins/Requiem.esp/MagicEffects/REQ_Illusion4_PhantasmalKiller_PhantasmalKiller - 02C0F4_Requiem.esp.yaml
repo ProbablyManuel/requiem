@@ -1,0 +1,108 @@
+FormKey: 02C0F4:Requiem.esp
+EditorID: REQ_Illusion4_PhantasmalKiller_PhantasmalKiller
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_IllusionBreak
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindEffect
+      Object: 56B304:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Skill_ScalingPerks
+      Objects:
+      - Name: ''
+        Object: 0F2CA9:Skyrim.esm
+      - Name: ''
+        Object: 0C44C3:Skyrim.esm
+      - Name: ''
+        Object: 0C44C4:Skyrim.esm
+      - Name: ''
+        Object: 0C44C5:Skyrim.esm
+      - Name: ''
+        Object: 0581FD:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 02C0F3:Requiem.esp
+    - MutagenObjectType: ScriptBoolProperty
+      Name: SingleResist
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPRate
+      Data: 20
+Name:
+  TargetLanguage: English
+  Value: Phantasmal Killer
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoHitEvent
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 2.8
+MagicSkill: Illusion
+CastingLight: 03BA90:Skyrim.esm
+TaperWeight: 1
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: TargetActor
+CastingArt: 0510CF:Skyrim.esm
+SkillUsageMultiplier: 0.3
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: OnHit
+  Sound: AD3816:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: The caster commands a weak-minded target to commit suicide but slicing their wrist.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 02C0F4:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013794:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 586728:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnTypeIndex: 0
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+    RunOnTypeIndex: 0
+  ComparisonValue: 1

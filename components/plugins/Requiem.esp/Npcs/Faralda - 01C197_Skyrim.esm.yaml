@@ -1,0 +1,269 @@
+FormKey: 01C197:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Faralda
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrainerGoldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrainerType
+      Data: 3
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - Essential
+  - Unique
+  MagickaOffset: 900
+  StaminaOffset: 120
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 49
+  CalcMinLevel: 15
+  CalcMaxLevel: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 160
+Factions:
+- Faction: 01F259:Skyrim.esm
+  Rank: 4
+  Fluff: 0x000000
+- Faction: 02816F:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 050921:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 098BA9:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A4A:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AE0:Skyrim.esm
+Race: 013743:Skyrim.esm
+ActorEffect:
+- 02DD29:Skyrim.esm
+- 03AE9F:Skyrim.esm
+- 0400AD:Skyrim.esm
+- 072316:Skyrim.esm
+- 07231A:Skyrim.esm
+- 0BB96B:Skyrim.esm
+- 0F95EB:Skyrim.esm
+- 10F7ED:Skyrim.esm
+- 10F7F8:Skyrim.esm
+- 025F22:Requiem.esp
+- 025F29:Requiem.esp
+- 028529:Requiem.esp
+- 02958A:Requiem.esp
+- 02958D:Requiem.esp
+- 029AF5:Requiem.esp
+- 029AF9:Requiem.esp
+- 029AFF:Requiem.esp
+Perks:
+- Perk: 0153CF:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581E7:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F5:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058200:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F392E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3F0E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Packages:
+- 036EA1:Skyrim.esm
+- 036EA2:Skyrim.esm
+Keywords:
+- 0361BA:Skyrim.esm
+- 31DA4D:Requiem.esp
+Class: 0E3A73:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Faralda
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 80
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 80
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 50
+  - Key: Conjuration
+    Value: 10
+  - Key: Destruction
+    Value: 100
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 100
+  - Key: Enchanting
+    Value: 10
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 620
+  Magicka: 520
+  Stamina: 30
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 08CA84:Skyrim.esm
+- 0E4DA5:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0430:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+DefaultOutfit: 0D3E05:Skyrim.esm
+CrimeFaction: 02816F:Skyrim.esm
+TextureLighting: '#00948F58'
+FaceMorph:
+  JawUpVsDown: -0.3
+  JawNarrowVsWide: -0.6
+  JawForwardVsBack: 0.8
+  CheeksUpVsDown: 0.2
+  CheeksForwardVsBack: -0.3
+  EyesUpVsDown: -0.7
+  EyesInVsOut: -0.2
+  LipsUpVsDown: 0.1
+  LipsInVsOut: -1
+  ChinNarrowVsWide: 0.5
+  ChinUpVsDown: -0.3
+  ChinUnderbiteVsOverbite: 0.2
+  EyesForwardVsBack: -0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 7
+  Unknown: 4294967295
+  Eyes: 23
+  Mouth: 2
+TintLayers:
+- Index: 24
+  Color: '#00948F58'
+  InterpolationValue: 1
+  Preset: 808
+- Index: 25
+  Color: '#00070C3D'
+  InterpolationValue: 0.51
+  Preset: 383
+- Index: 26
+  Color: '#000F0440'
+  InterpolationValue: 0.53
+  Preset: 396
+- Index: 27
+  Color: '#000F0440'
+  InterpolationValue: 0.53
+  Preset: 406
+- Index: 30
+  Color: '#00070C3D'
+  InterpolationValue: 0.56
+  Preset: 421
+- Index: 33
+  Color: '#00764F32'
+  InterpolationValue: 1
+  Preset: 439
+- Index: 34
+  Color: '#00430401'
+  InterpolationValue: 1
+  Preset: 444
+- Index: 35
+  Color: '#003F6220'
+  InterpolationValue: 0.63
+  Preset: 787
+MajorFlags:
+- 0x40000

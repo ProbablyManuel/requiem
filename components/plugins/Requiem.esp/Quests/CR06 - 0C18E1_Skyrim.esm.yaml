@@ -1,0 +1,329 @@
+FormKey: 0C18E1:Skyrim.esm
+EditorID: CR06
+VirtualMachineAdapter:
+  Scripts:
+  - Name: CR06QuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ParentQuest
+      Object: 04B2D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpawnChest
+      Object: 0C18E1:Skyrim.esm
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MapMarker
+      Object: 0C18E1:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CRSkjor
+      Object: 025253:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Skjor
+      Object: 04B2D9:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BossChest
+      Object: 0C18E1:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Vilkas
+      Object: 04B2D9:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CRVilkas
+      Object: 025254:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gewgaw
+      Object: 0C18E1:Skyrim.esm
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QuestGiver
+      Object: 0C18E1:Skyrim.esm
+      Alias: 0
+  - Name: QF_CR06_000C18E1
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_LocationHold
+      Object: 0C18E1:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BossChest
+      Object: 0C18E1:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gewgaw
+      Object: 0C18E1:Skyrim.esm
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Location
+      Object: 0C18E1:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestGiver
+      Object: 0C18E1:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SpawnChest
+      Object: 0C18E1:Skyrim.esm
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MapMarker
+      Object: 0C18E1:Skyrim.esm
+      Alias: 16
+  FileName: QF_CR06_000C18E1
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_CR06_000C18E1
+    FragmentName: Fragment_9
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_CR06_000C18E1
+    FragmentName: Fragment_11
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_CR06_000C18E1
+    FragmentName: Fragment_13
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_CR06_000C18E1
+    FragmentName: Fragment_3
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_CR06_000C18E1
+    FragmentName: Fragment_5
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_CR06_000C18E1
+    FragmentName: Fragment_8
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_CR06_000C18E1
+    FragmentName: Fragment_14
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0C18E1:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: CompanionsRadiantQuestgiverAlias
+  - Property:
+      Name: ''
+      Object: 0C18E1:Skyrim.esm
+      Alias: 19
+    Scripts:
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 0C18E1:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: preReqStage
+        Data: 10
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 20
+Name:
+  TargetLanguage: English
+  Value: Family Heirloom
+Priority: 70
+QuestFormVersion: 65
+Type: CompanionQuests
+Event: SCPT
+Filter: Faction\Companions\Radiant\
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Faction: 048362:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 0C18E1:Skyrim.esm
+    SecondUnusedIntParameter: -285333184
+    VariableName: ::IsActive_var
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 04B2D9:Skyrim.esm
+    SecondUnusedIntParameter: -285333152
+    VariableName: ::StoryQuestIsRunning_var
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 1
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A family in <Alias=LocationHold> had a valuable stolen. They believe the culprits took it to <Alias=Location>, and I'm to retrieve it for them.
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I recovered a stolen <Alias=Gewgaw> from <Alias=Location> for a noble family in <Alias=LocationHold>.
+- Index: 100
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+- Index: 250
+  LogEntries:
+  - Flags:
+    - FailQuest
+- Index: 255
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Retrieve the <Alias=Gewgaw> from <Alias=Location>
+  Targets:
+  - AliasID: 19
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to <Alias=Questgiver>
+  Targets:
+  - {}
+NextAliasID: 25
+Aliases:
+- Name: QuestGiver
+  Flags:
+  - Optional
+  - StoresText
+  VoiceTypes: 0D8702:Skyrim.esm
+- ID: 20
+  Name: SpawnChest
+  Flags: []
+  ForcedReference: 0E3136:Skyrim.esm
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: Location
+  Flags:
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocFormListConditionData
+      FormList: 0F9073:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 0130F8:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DF:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E4:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EE:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130E5:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EB:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EC:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DF:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetLevelConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      RunOnTypeIndex: 0
+    ComparisonValue: 18
+- ID: 9
+  Name: BossChest
+  Flags:
+  - StoresText
+  - UsesStoredText
+  Location:
+    AliasID: 4
+    RefType: 0130F8:Skyrim.esm
+  VoiceTypes: Null
+- ID: 19
+  Name: Gewgaw
+  Flags:
+  - QuestObject
+  - StoresText
+  - UsesStoredText
+  CreateReferenceToObject:
+    Object: 0E3134:Skyrim.esm
+    AliasID: 20
+    Create: In
+  VoiceTypes: Null
+- ID: 16
+  Name: MapMarker
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000010:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 17
+  Type: Location
+  Name: LocationHold
+  Flags:
+  - StoresText
+  Location:
+    AliasID: 9
+    Keyword: 016771:Skyrim.esm

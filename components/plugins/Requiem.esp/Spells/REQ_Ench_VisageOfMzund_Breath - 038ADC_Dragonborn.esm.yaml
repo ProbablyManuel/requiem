@@ -1,0 +1,19 @@
+FormKey: 038ADC:Dragonborn.esm
+EditorID: REQ_Ench_VisageOfMzund_Breath
+Name:
+  TargetLanguage: English
+  Value: Breath of Nchuak
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 038ADE:Dragonborn.esm
+  Data:
+    Magnitude: 150
+    Duration: 1

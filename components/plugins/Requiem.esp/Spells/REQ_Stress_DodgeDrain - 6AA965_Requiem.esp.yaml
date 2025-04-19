@@ -1,0 +1,35 @@
+FormKey: 6AA965:Requiem.esp
+EditorID: REQ_Stress_DodgeDrain
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: stamina drain for dodging'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+CastType: FireAndForget
+Effects:
+- BaseEffect: 86D2E4:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD2:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 079376:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: GetMovementDirectionConditionData
+- BaseEffect: 6C3574:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1

@@ -1,0 +1,287 @@
+FormKey: 013B9D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EorlundGrayMane
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrainerGoldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrainerType
+      Data: 3
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0E42DE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Unique
+  StaminaOffset: 500
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 55
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  HealthOffset: 400
+Factions:
+- Faction: 028172:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 048362:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05091D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 08F3FF:Skyrim.esm
+  Rank: 2
+  Fluff: 0x000000
+- Faction: 093B1C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 0E3A50:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 103AFE:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 10FDE8:Skyrim.esm
+  Fluff: 0x000000
+Voice: 0E5003:Skyrim.esm
+Race: 013746:Skyrim.esm
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D52:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079345:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079349:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 093B0B:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 09F25C:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D3:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 02BE29:Skyrim.esm
+- 01CB15:Skyrim.esm
+- 096104:Skyrim.esm
+Class: 042DC1:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Eorlund Gray-Mane
+ShortName:
+  TargetLanguage: English
+  Value: Eorlund
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 100
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 99
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 62
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 100
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 546
+  Magicka: 246
+  Stamina: 178
+  Unused: 16743
+  Unused2: 0x425AEF
+HeadParts:
+- 024244:Skyrim.esm
+- 051080:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0D2EA2:Skyrim.esm
+- 0DFC04:Skyrim.esm
+HairColor: 0A0438:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 65
+SoundLevel: Normal
+DefaultOutfit: 037C4F:Skyrim.esm
+CrimeFaction: 048362:Skyrim.esm
+HeadTexture: 0D071E:Skyrim.esm
+TextureLighting: '#00C6B0A8'
+FaceMorph:
+  NoseLongVsShort: -1
+  NoseUpVsDown: 1
+  JawUpVsDown: 0.08
+  JawNarrowVsWide: -0.6
+  JawForwardVsBack: 0.04
+  CheeksUpVsDown: 0.02
+  CheeksForwardVsBack: 0.5
+  EyesUpVsDown: 0.8
+  EyesInVsOut: -0.06
+  BrowsUpVsDown: -1
+  BrowsForwardVsBack: -0.24
+  LipsUpVsDown: 1
+  LipsInVsOut: 0.7
+  ChinNarrowVsWide: -0.5
+  ChinUpVsDown: 0.8
+  ChinUnderbiteVsOverbite: -1
+  EyesForwardVsBack: -0.64
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 19
+  Unknown: 4294967295
+  Eyes: 16
+  Mouth: 5
+TintLayers:
+- Index: 1
+  Color: '#00C6B0A8'
+  InterpolationValue: 1
+  Preset: 75
+- Index: 2
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 88
+- Index: 3
+  Color: '#000F0440'
+  InterpolationValue: 0.39
+  Preset: 98
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 106
+- Index: 6
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 114
+- Index: 7
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 118
+- Index: 8
+  Color: '#00A95452'
+  InterpolationValue: 0.19
+  Preset: 120
+- Index: 9
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 130
+- Index: 10
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 135
+- Index: 11
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 139
+- Index: 12
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 144
+- Index: 19
+  Color: '#00000000'
+  InterpolationValue: 0.75
+  Preset: 583
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 587
+- Index: 67
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 592
+- Index: 68
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 599
+MajorFlags:
+- 0x40000

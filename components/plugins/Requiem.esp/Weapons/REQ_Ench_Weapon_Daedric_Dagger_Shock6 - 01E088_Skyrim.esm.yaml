@@ -1,0 +1,53 @@
+FormKey: 01E088:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Daedric_Dagger_Shock6
+ObjectBounds:
+  First: -5, -15, -1
+  Second: 2, 33, 1
+Name:
+  TargetLanguage: English
+  Value: Daedric Dagger of Storms
+Model:
+  File: Weapons\Daedric\DaedricDagger.nif
+  Data: 0x020000000B0000000000000033168C0764647300A0B8630503D8C24064647300A0B863054FE0756464647300A0B86305D63BC1866464730038973CEAFBC7861364647300582C55335C59DE346464730083202CFF12C290936464730083202CFF2ED3B3AE646473005E9AFF423529F483646473005E9AFF42F63890AC64647300262C333B8F78FD1A646473005E9AFF42
+ObjectEffect: 045F9E:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E71F:Skyrim.esm
+- 01E713:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 084D0B:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03CED9:Skyrim.esm
+UnequipSound: 03CEDB:Skyrim.esm
+BasicStats:
+  Value: 1800
+  Weight: 6
+  Damage: 12
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+Template: 0139B6:Skyrim.esm

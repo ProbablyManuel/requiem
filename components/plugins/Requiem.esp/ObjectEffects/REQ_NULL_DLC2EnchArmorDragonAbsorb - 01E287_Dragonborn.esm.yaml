@@ -1,0 +1,28 @@
+FormKey: 01E287:Dragonborn.esm
+EditorID: REQ_NULL_DLC2EnchArmorDragonAbsorb
+Name:
+  TargetLanguage: English
+  Value: Absorb Spells
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 01E285:Dragonborn.esm
+  Data:
+    Magnitude: 15
+- BaseEffect: 01E28A:Dragonborn.esm
+  Data:
+    Magnitude: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedConditionData
+      ItemOrList: 03D2AF:Dragonborn.esm
+    ComparisonValue: 1
+- BaseEffect: 01E28A:Dragonborn.esm
+  Data:
+    Magnitude: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedConditionData
+      ItemOrList: 02B0F9:Dragonborn.esm
+    ComparisonValue: 1

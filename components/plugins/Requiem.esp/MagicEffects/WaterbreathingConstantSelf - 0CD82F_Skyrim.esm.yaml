@@ -1,0 +1,32 @@
+FormKey: 0CD82F:Skyrim.esm
+EditorID: WaterbreathingConstantSelf
+Version2: 6
+Name:
+  TargetLanguage: English
+  Value: Waterbreathing
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 10
+MagicSkill: Alteration
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: WaterBreathing
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03F37A:Skyrim.esm
+- Type: Ready
+  Sound: 03F37A:Skyrim.esm
+- Type: Release
+  Sound: 0571B2:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Allows to breath underwater.

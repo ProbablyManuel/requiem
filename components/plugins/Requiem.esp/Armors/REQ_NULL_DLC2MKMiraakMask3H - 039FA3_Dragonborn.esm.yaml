@@ -1,0 +1,51 @@
+FormKey: 039FA3:Dragonborn.esm
+EditorID: REQ_NULL_DLC2MKMiraakMask3H
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_SwapTo
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Remove
+      Object: 039FA3:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Add
+      Objects:
+      - Name: ''
+        Object: 039D2F:Dragonborn.esm
+ObjectBounds:
+  First: -10, -13, -11
+  Second: 10, 3, 14
+Name:
+  TargetLanguage: English
+  Value: Miraak
+ObjectEffect: AE3788:Requiem.esp
+WorldModel:
+  Male:
+    Model:
+      File: DLC02\Clothes\MiraakRobes\MiraakHelm_GND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: DLC02\Clothes\MiraakRobes\MiraakHelm_GND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Circlet
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 10CD11:Skyrim.esm
+- AE380A:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: Miraak is Loyal Guidance in the dragon language. While its namesake eventually became renegade, the mask remains loyal to its purpose and grants its wearer deep insights into the voice and arcane arts.
+Armature:
+- 0248E7:Dragonborn.esm
+- 02B0FA:Dragonborn.esm
+Value: 25000
+Weight: 2

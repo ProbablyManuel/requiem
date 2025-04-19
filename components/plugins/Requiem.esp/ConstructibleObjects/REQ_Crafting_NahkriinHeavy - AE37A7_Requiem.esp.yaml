@@ -1,0 +1,16 @@
+FormKey: AE37A7:Requiem.esp
+EditorID: REQ_Crafting_NahkriinHeavy
+Items:
+- Item:
+    Item: AE3921:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: AE3921:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: AE392D:Requiem.esp
+WorkbenchKeyword: AE378B:Requiem.esp
+CreatedObjectCount: 1

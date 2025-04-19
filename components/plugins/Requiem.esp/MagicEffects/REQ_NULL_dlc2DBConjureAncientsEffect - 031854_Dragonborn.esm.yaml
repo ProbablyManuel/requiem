@@ -1,0 +1,40 @@
+FormKey: 031854:Dragonborn.esm
+EditorID: REQ_NULL_dlc2DBConjureAncientsEffect
+Name:
+  TargetLanguage: English
+  Value: Summon Ancients
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 0806E1:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: ResistFire
+SpellmakingArea: 25
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+CastingArt: 10F7A1:Skyrim.esm
+DualCastScale: 1.4
+EquipAbility: 031855:Dragonborn.esm
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 073FD9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2EA:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Summons Dragonborn from the past to fight by the caster's side for a limited time.  Each additional 5 souls summons another warrior.

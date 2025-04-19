@@ -1,0 +1,27 @@
+FormKey: 000800:ccedhsse003-redguard.esl
+EditorID: REQ_NULL_ccEDHSSE003_TemperArmorRedguardEliteHoodAgent
+Items:
+- Item:
+    Item: 05AD93:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000809:ccedhsse003-redguard.esl
+  ComparisonValue: 1
+CreatedObject: 0008A5:ccedhsse003-redguard.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

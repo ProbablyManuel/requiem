@@ -1,0 +1,30 @@
+FormKey: 0028C7:unofficial skyrim special edition patch.esp
+EditorID: REQ_NULL_USKPMS05RewardEffectNoDisplay
+Name:
+  TargetLanguage: English
+  Value: The Gift of Gab
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsDuration
+BaseCost: 5
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastingArt: 01C859:Skyrim.esm
+DualCastScale: 1
+PerkToApply: 02029E:unofficial skyrim special edition patch.esp
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 0571B2:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

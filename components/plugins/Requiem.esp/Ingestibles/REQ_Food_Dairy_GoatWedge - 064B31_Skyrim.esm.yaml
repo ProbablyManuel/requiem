@@ -1,0 +1,26 @@
+FormKey: 064B31:Skyrim.esm
+EditorID: REQ_Food_Dairy_GoatWedge
+ObjectBounds:
+  First: -7, -7, 0
+  Second: 7, 7, 7
+Name:
+  TargetLanguage: English
+  Value: Goat Cheese Wedge
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\CheeseWedge01.nif
+  Data: 0x0200000002000000000000007EF3D85664647300B9148236C2AC210264647300B9148236
+Weight: 0.25
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371B:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 1200
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

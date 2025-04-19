@@ -1,0 +1,84 @@
+FormKey: 015261:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HillgrundsTomb01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hillgrund's Tomb
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00253E4B'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00577371'
+  FogFar: 4000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0030271C'
+    DirectionalXMinus: '#00272719'
+    DirectionalYPlus: '#002C281B'
+    DirectionalYMinus: '#002C251B'
+    DirectionalZPlus: '#0014120C'
+    DirectionalZMinus: '#005C5238'
+    Specular: '#00374847'
+    Scale: 1
+  FogFarColor: '#00374847'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019196:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC36:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 019D01:Skyrim.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_AddItems
+      Properties:
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Items
+        Objects:
+        - Name: ''
+          Object: 02BA7A:Dragonborn.esm
+        - Name: ''
+          Object: 02BA80:Dragonborn.esm
+        - Name: ''
+          Object: 02BA86:Dragonborn.esm
+        - Name: ''
+          Object: 02BA8C:Dragonborn.esm
+        - Name: ''
+          Object: 02BA90:Dragonborn.esm
+  Base: 02065D:Skyrim.esm
+  Scale: 0.83
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 0BC6FE:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019196:Skyrim.esm
+  Placement:
+    Position: -4231.0347, 1210.254, -1091.5282
+    Rotation: 0, 0, 3.1353984
+MajorFlags:
+- 0x40000

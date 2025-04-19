@@ -1,0 +1,318 @@
+FormKey: 01A511:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2Bujold
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2PillarBuilderActorScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2Pillar
+      Object: 01C4E4:Dragonborn.esm
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Unique
+  - Protected
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 24
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - SpellList
+Factions:
+- Faction: 01A514:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 01C4E5:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 0200E7:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 03D126:Dragonborn.esm
+  Fluff: 0x000000
+Voice: 013AE7:Skyrim.esm
+Template: 899DD3:Requiem.esp
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 9336A3:Requiem.esp
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F67:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079343:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079355:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07935E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3678:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3679:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB406:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 107832:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0AD7A3:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01CDB2:Dragonborn.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 02412E:Dragonborn.esm
+- 01A534:Dragonborn.esm
+- 02412D:Dragonborn.esm
+- 01A533:Dragonborn.esm
+- 01A52D:Dragonborn.esm
+- 01A520:Dragonborn.esm
+Class: 85BCE2:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Bujold the Intrepid
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 86
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 41
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 87
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 177
+  Magicka: 80
+  Stamina: 158
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 0510B2:Skyrim.esm
+- 07291B:Skyrim.esm
+- 0E4DA1:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 80
+SoundLevel: Normal
+DefaultOutfit: AE3945:Requiem.esp
+TextureLighting: '#00CECDCC'
+FaceMorph:
+  NoseLongVsShort: -0.2
+  NoseUpVsDown: -0.4
+  JawUpVsDown: 0.1
+  JawNarrowVsWide: -0.1
+  JawForwardVsBack: -0.5
+  CheeksUpVsDown: 0.6
+  CheeksForwardVsBack: 0.1
+  EyesUpVsDown: -0.7
+  EyesInVsOut: -0.6
+  BrowsUpVsDown: 0.2
+  LipsUpVsDown: 0.2
+  LipsInVsOut: 0.2
+  ChinNarrowVsWide: 0.5
+  ChinUnderbiteVsOverbite: -0.5
+  EyesForwardVsBack: -0.5
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 4
+  Unknown: 4294967295
+  Eyes: 17
+  Mouth: 15
+TintLayers:
+- Index: 24
+  Color: '#00CECDCC'
+  InterpolationValue: 1
+  Preset: 602
+- Index: 28
+  Color: '#00A95452'
+  InterpolationValue: 0.45
+  Preset: 632
+- Index: 29
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 641
+- Index: 31
+  Color: '#00A95452'
+  InterpolationValue: 0.37
+  Preset: 656
+- Index: 32
+  Color: '#00A95452'
+  InterpolationValue: 0.72
+  Preset: 664
+- Index: 33
+  Color: '#00A95452'
+  InterpolationValue: 0.47
+  Preset: 671
+- Index: 44
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 685
+- Index: 45
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 709
+- Index: 46
+  Color: '#001A4957'
+  InterpolationValue: 0.69
+  Preset: 746
+- Index: 47
+  Color: '#00573400'
+  InterpolationValue: 0
+  Preset: 776
+- Index: 48
+  Color: '#00573400'
+  InterpolationValue: 0
+  Preset: 800
+- Index: 49
+  Color: '#00573400'
+  InterpolationValue: 0
+  Preset: 824
+- Index: 50
+  Color: '#00573400'
+  InterpolationValue: 0
+  Preset: 848
+- Index: 51
+  Color: '#00573400'
+  InterpolationValue: 0
+  Preset: 872
+- Index: 52
+  Color: '#00573400'
+  InterpolationValue: 0
+  Preset: 896
+- Index: 53
+  Color: '#00573400'
+  InterpolationValue: 0
+  Preset: 920
+- Index: 55
+  Color: '#00573400'
+  InterpolationValue: 0
+  Preset: 944
+- Index: 56
+  Color: '#001A4957'
+  InterpolationValue: 0
+  Preset: 962
+- Index: 57
+  Color: '#001A4957'
+  InterpolationValue: 0
+  Preset: 986
+- Index: 58
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 997
+- Index: 59
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1021
+MajorFlags:
+- 0x40000

@@ -1,0 +1,41 @@
+FormKey: 01EA6A:Skyrim.esm
+EditorID: InvisibillityFFSelf
+Name:
+  TargetLanguage: English
+  Value: Invisibility
+MenuDisplayObject: 109AC3:Skyrim.esm
+Keywords:
+- 01EA6F:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 100
+MagicSkill: Illusion
+TaperWeight: 1
+HitShader: 02DF92:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Invisibility
+  Type: Invisibility
+Projectile: 012E84:Skyrim.esm
+CastType: FireAndForget
+HitEffectArt: 0339C8:Skyrim.esm
+SkillUsageMultiplier: 0.25
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 058E0E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster becomes invisible for <dur> seconds. Activating an object or attacking will break the spell, however.

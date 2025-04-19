@@ -1,0 +1,38 @@
+FormKey: 000802:ccbgssse064-ba_elven.esl
+EditorID: REQ_NULL_ccBGSSSE064_ArmorElvenMailGauntlets
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000819:ccbgssse064-ba_elven.esl
+Name:
+  TargetLanguage: English
+  Value: Elven Hunter Gauntlets
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE064\Armor\ElvenMail\GauntletsGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06BBD9:Skyrim.esm
+- 06C0EF:Skyrim.esm
+- 08F959:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080C:ccbgssse064-ba_elven.esl
+Value: 45
+Weight: 1
+ArmorRating: 10

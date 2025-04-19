@@ -1,0 +1,30 @@
+FormKey: AD3B14:Requiem.esp
+EditorID: REQ_CoreScripts_FastTravelBlock
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B14:Requiem.esp
+      Alias: 2
+    Scripts:
+    - Name: REQ_FastTravelBlock
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FastTravelAllowed
+        Object: 067E2E:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DLC2TameDragon
+        Object: 0179E2:Dragonborn.esm
+        Alias: 0
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Fast Travel Block'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 2
+  Name: FastTravelBlock
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

@@ -1,0 +1,86 @@
+FormKey: 01CE8A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortNeugrad02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Neugrad Prison
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0033291D'
+    DirectionalXMinus: '#002A291A'
+    DirectionalYPlus: '#002F2A1C'
+    DirectionalYMinus: '#002F271C'
+    DirectionalZPlus: '#0016130C'
+    DirectionalZMinus: '#005C5138'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 06909B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019183:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC21:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C6AE4:Requiem.esp
+  Base: 0C6ADC:Requiem.esp
+  RagdollData: 0x00FFB734000000000000000000000000360CC9BF9640D73D07F048400000003F80FE154000008039000000B827AB3735639282371EF9C93F
+  Placement:
+    Position: -866.6283, -64.25401, -323.2835
+- MutagenObjectType: PlacedObject
+  FormKey: 0C905D:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019183:Skyrim.esm
+  EnableParent:
+    Reference: 0C867A:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -774.60925, -479.54117, -897.13684
+    Rotation: 0, 0, 2.899999
+- MutagenObjectType: PlacedObject
+  FormKey: 05844F:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019183:Skyrim.esm
+  EnableParent:
+    Reference: 0C867A:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -3467.727, -1702.592, -1689
+    Rotation: 0.3929888, 0.20089787, 2.5830872
+MajorFlags:
+- 0x40000

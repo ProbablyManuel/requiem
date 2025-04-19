@@ -1,0 +1,33 @@
+FormKey: 011CFB:Dawnguard.esm
+EditorID: REQ_Werewolf_BestialStrength4
+Name:
+  TargetLanguage: English
+  Value: Bestial Strength
+Description:
+  TargetLanguage: English
+  Value: There remains not much that is not torn to pieces by your brute strength in werewolf form.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 011CFA:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 40
+  Unknown: 0x000000
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0CDD84:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 2

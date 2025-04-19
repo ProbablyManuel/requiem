@@ -1,0 +1,62 @@
+FormKey: 016BDF:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenBeeandBarb
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Bee and Barb
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#004F4131'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00A9A796'
+  FogClipDistance: 4000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00574133'
+    DirectionalXMinus: '#0046412E'
+    DirectionalYPlus: '#004F4431'
+    DirectionalYMinus: '#004F3D31'
+    DirectionalZPlus: '#00251E16'
+    DirectionalZMinus: '#0055556F'
+    Specular: '#009F998A'
+    Scale: 1
+  FogFarColor: '#009F998A'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogNear
+  - FogFar
+LightingTemplate: 0B2157:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 02247E:Skyrim.esm
+Owner: 0A2528:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 017035:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 000820:ccbgssse055-ba_orcishscaled.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 00081E:ccbgssse055-ba_orcishscaled.esl
+  LevelModifier: Easy
+  LocationReference: 02247E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 166.7329, 15.187708, 64
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+MajorFlags:
+- 0x40000

@@ -1,0 +1,41 @@
+FormKey: 065315:Requiem.esp
+EditorID: REQ_Poison_ChaursVenom
+ObjectBounds:
+  First: -4, -4, 0
+  Second: 4, 4, 21
+Name:
+  TargetLanguage: English
+  Value: Venom of a Chaurus
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\FrostbiteVenom01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 50
+Flags:
+- NoAutoCalc
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0131EB:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0A5601:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: PoisonResist
+    ComparisonValue: 75

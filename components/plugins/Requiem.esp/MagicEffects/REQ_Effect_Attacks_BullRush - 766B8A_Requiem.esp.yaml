@@ -1,0 +1,76 @@
+FormKey: 766B8A:Requiem.esp
+EditorID: REQ_Effect_Attacks_BullRush
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_KnockdownAttacks
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Evasion
+      Object: 105F23:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Impact
+      Object: 769328:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HeavyArmor
+      Object: 06BBD2:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: MassOffset
+Name:
+  TargetLanguage: English
+  Value: Bull Rush
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 766B89:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 10E984:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 766B8A:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 71012A:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1

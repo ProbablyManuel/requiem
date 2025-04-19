@@ -1,0 +1,85 @@
+FormKey: 00F3C0:Dawnguard.esm
+EditorID: DLC1TrapPoisonBloomGas
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrapPoisonGas
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: voicelv03
+      Object: 03F50D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapPoisonGasExplosion01
+      Object: 00F3C6:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrapLevel
+      Data: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapPoisonGasExplosion03
+      Object: 00F3C6:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 1
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: gasKeyword
+      Object: 09F28E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapPoisonGasExplosion06
+      Object: 00F3C6:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: voicelv02
+      Object: 03F50C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapPoisonGasExplosion05
+      Object: 00F3C6:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapPoisonGasExplosion04
+      Object: 00F3C6:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 25
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapPoisonGasExplosion02
+      Object: 00F3C6:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: gasMagicEffect01
+      Object: 09F28F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: voicelv01
+      Object: 03F50B:Skyrim.esm
+ObjectBounds:
+  First: -155, -146, -170
+  Second: 137, 146, 30
+Model:
+  File: Effects\FXPoisonGaswithONOFF.nif
+  Data: 0x020000000000000000000000
+Destructible:
+  Data:
+    Health: 1
+    DESTCount: 3
+  Stages:
+  - Data:
+      HealthPercent: 100
+  - Data:
+      HealthPercent: 99
+      Index: 1
+      ModelDamageStage: 1
+      Flags:
+      - CapDamage
+      SelfDamagePerSecond: 50
+  - Data:
+      Index: 2
+      ModelDamageStage: 2
+      Flags:
+      - Disable
+      Explosion: 06051F:Skyrim.esm
+MarkerColor: '#00CC4C33'
+Flags: []

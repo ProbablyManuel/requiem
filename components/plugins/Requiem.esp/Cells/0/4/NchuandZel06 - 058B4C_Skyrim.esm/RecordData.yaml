@@ -1,0 +1,129 @@
+FormKey: 058B4C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: NchuandZel06
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Nchuand-Zel Control
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2518'
+    DirectionalXMinus: '#00232515'
+    DirectionalYPlus: '#00282617'
+    DirectionalYMinus: '#00282317'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3823'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 01FB68:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019283:Skyrim.esm
+AcousticSpace: 0F993E:Skyrim.esm
+EncounterZone: 03EC4D:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 05002A:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 06FBEF:Skyrim.esm
+  LocationReference: 019283:Skyrim.esm
+  Placement:
+    Position: -1073.5236, 6654.2305, -134.24773
+- MutagenObjectType: PlacedObject
+  FormKey: 1EB021:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 08B1F6:Skyrim.esm
+  Placement:
+    Position: 1414.2565, 2504.7546, 205.47954
+    Rotation: 1.3613569, 0, 0
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 1EB01F:Requiem.esp
+  MajorRecordFlagsRaw: 512
+  SkyrimMajorRecordFlags:
+  - 0x200
+  Base: 03DEFE:Skyrim.esm
+  RagdollData: 0x02000000000000000000000000000000699411BFDF7EB23F8F82CE3F08000000A047D4C00000CE3C0000C8BB0EC245C0CA7ABD3EB0D53E40090100000000B33C0000343D008EFA410414E6BF4BA9C6BC566AFCBA0A00000000F06E3E00A09CBE403CDA41FBD4D73F450184BEAE27D43D0E000300C02FD44000C020BD000080B9C6AB3940ED78B63B0C263B400F000000000004BA0000493C0072FA41A41C34BFC17AC33B341E253C10FFFFFF00C015BD002097BE80A7DB41BB2A803FFF53073E261873BE0200000000D0073D0005A8C000B87340CFACA7BC697142BCB2B715BE03C6FC0000C08A3C0000DA3B004D0C41FDCB0DBE94A4F2BC7B36503D04CAC83D0080793C0040C03C00FD1D411778A03EF501913D32B4B1BE00947EBF0080AF3C00005BBD0026B041FF322ABDF00AA9BC02B404BE01901542000000390080B6BC00050D4199FA20BF108A60BE216E0D3F0B38673F00804DBD0000DA3DC0005E411E093D3F0799D8BE1C0DE8BE0C7814BD0000B8BC0080B5BD0039A24167BACF3E9DB899BD0EBA83BC0D000000000016BC0040FFBC805C804186523B3B745F393D69B4BEBF05000000000082BC00007A3C70C46041772D1A3F6B3C733F6A31B63D06000000000059BC000096BD002AA241E0E1C83E2A26953DB651C53C07000000000044BB00C0F8BC80558041F9F343BCB693CA3EAE58BF3F0084233D000000000000884100002041000000800000008000000080
+  PersistentLocation: 019283:Skyrim.esm
+  Placement:
+    Position: 1409.4015, 2538.6428, 139.45251
+    Rotation: 0, 0, 5.1000004
+  MajorFlags:
+  - StartsDead
+- MutagenObjectType: PlacedObject
+  FormKey: 1EB022:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139B0:Skyrim.esm
+  Placement:
+    Position: 1363.1925, 2540.482, 132.09695
+    Rotation: -2.3772945, -0.21993808, 5.0624127
+- MutagenObjectType: PlacedObject
+  FormKey: 08E8FB:Skyrim.esm
+  Base: 020650:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019283:Skyrim.esm
+  Placement:
+    Position: -1979.6517, 6359.441, -127.99997
+    Rotation: 0, 0, 1.7031988
+- MutagenObjectType: PlacedObject
+  FormKey: 08E8F8:Skyrim.esm
+  Version2: 2
+  Base: 020652:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019283:Skyrim.esm
+  Placement:
+    Position: -1914.9031, 3817.1365, 408.4418
+- MutagenObjectType: PlacedObject
+  FormKey: 08C087:Skyrim.esm
+  Version2: 2
+  Base: 02069A:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019283:Skyrim.esm
+  Placement:
+    Position: 1408, 2306.6326, 193.93657
+MajorFlags:
+- 0x40000

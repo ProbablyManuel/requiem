@@ -1,0 +1,29 @@
+FormKey: 000886:ccqdrsse001-survivalmode.esl
+EditorID: Survival_HungerStage4
+Name:
+  TargetLanguage: English
+  Value: Famished
+MenuDisplayObject: 10FEF4:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Total Stamina is reduced. Attacks with weapons are <30>% slower. You are <70>% less effective with using shields and sneaking.
+BaseCost: 1085
+Type: Ability
+Effects:
+- BaseEffect: 00095C:ccqdrsse001-survivalmode.esl
+  Data: {}
+- BaseEffect: 000848:ccqdrsse001-survivalmode.esl
+  Data:
+    Magnitude: 70
+- BaseEffect: 000849:ccqdrsse001-survivalmode.esl
+  Data:
+    Magnitude: 70
+- BaseEffect: 0008EC:ccqdrsse001-survivalmode.esl
+  Data: {}
+- BaseEffect: 000A41:Requiem.esp
+  Data:
+    Magnitude: 30
+- BaseEffect: 000A70:Requiem.esp
+  Data:
+    Magnitude: 30

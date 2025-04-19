@@ -1,0 +1,39 @@
+FormKey: 018EF3:Dawnguard.esm
+EditorID: DLC1BloodPotion
+ObjectBounds:
+  First: -13, -13, 0
+  Second: 13, 13, 20
+Name:
+  TargetLanguage: English
+  Value: Elixir of Blood
+Model:
+  File: DLC01\Clutter\DLC01BloodPotion.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 75
+Flags:
+- NoAutoCalc
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 018EF4:Dawnguard.esm
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0A82BB:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 013812:Dawnguard.esm
+  Data:
+    Magnitude: 5
+    Duration: 120
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0A82BB:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 000831:ccqdrsse001-survivalmode.esl
+  Data: {}

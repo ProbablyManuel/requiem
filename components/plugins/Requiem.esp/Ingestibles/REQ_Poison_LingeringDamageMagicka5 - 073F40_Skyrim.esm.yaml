@@ -1,0 +1,25 @@
+FormKey: 073F40:Skyrim.esm
+EditorID: REQ_Poison_LingeringDamageMagicka5
+ObjectBounds:
+  First: -4, -6, 0
+  Second: 5, 6, 19
+Name:
+  TargetLanguage: English
+  Value: Poison of Lingering Damage Magicka (Remarkable)
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Potions\PoisonDamageMagickaLinger05.nif
+  Data: 0x020000000400000000000000F9BE93CC64647300BFFA25DA28058E7E64647300BFFA25DAF63890AC64647300262C333BD1E23CE564647300BFFA25DA
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 35
+Flags:
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 10DE5F:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 20

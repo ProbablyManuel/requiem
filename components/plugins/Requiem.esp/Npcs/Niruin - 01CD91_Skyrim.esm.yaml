@@ -1,0 +1,224 @@
+FormKey: 01CD91:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Niruin
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TGAssaultScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TGBan
+      Object: 0B03A2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ThievesGuildFaction
+      Object: 029DA9:Skyrim.esm
+  - Name: TrainerGoldScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TrainerType
+      Data: 3
+Configuration:
+  Flags:
+  - Unique
+  - Protected
+  StaminaOffset: 330
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 40
+  CalcMinLevel: 10
+  CalcMaxLevel: 25
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 160
+Factions:
+- Faction: 028186:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 029DA9:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 094393:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0A2527:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A4E:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 10A794:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD9:Skyrim.esm
+Race: 013749:Skyrim.esm
+Perks:
+- Perk: 058F62:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F64:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079354:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F1F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 00000A:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 013986:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 01703D:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 037C2B:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 068839:Skyrim.esm
+    Count: 12
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 90
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 10384C:Skyrim.esm
+- 103289:Skyrim.esm
+- 1032B4:Skyrim.esm
+- 0B780F:Skyrim.esm
+Class: 0E3A66:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Niruin
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 47
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 100
+  - Key: Block
+    Value: 26
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 73
+  - Key: Pickpocket
+    Value: 10
+  - Key: Lockpicking
+    Value: 10
+  - Key: Sneak
+    Value: 73
+  - Key: Alchemy
+    Value: 10
+  - Key: Speech
+    Value: 47
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 365
+  Magicka: 60
+  Stamina: 330
+  Unused: 16743
+  Unused2: 0x405AEF
+HeadParts:
+- 08555F:Skyrim.esm
+- 0C7170:Skyrim.esm
+- 0EC3B2:Skyrim.esm
+- 0F5009:Skyrim.esm
+HairColor: 0A0431:Skyrim.esm
+CombatStyle: 03BE1D:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 0E49B3:Skyrim.esm
+SleepingOutfit: 01697D:Skyrim.esm
+CrimeFaction: 10A794:Skyrim.esm
+TextureLighting: '#0095816F'
+FaceMorph:
+  NoseLongVsShort: 0.7
+  NoseUpVsDown: -0.8
+  JawUpVsDown: -0.5
+  JawNarrowVsWide: -1
+  CheeksUpVsDown: 0.3
+  CheeksForwardVsBack: 1
+  EyesUpVsDown: -0.1
+  EyesInVsOut: -1
+  BrowsUpVsDown: -1
+  BrowsInVsOut: -1
+  LipsInVsOut: 0.6
+  ChinNarrowVsWide: 0.5
+  ChinUpVsDown: -1
+  ChinUnderbiteVsOverbite: -0.8
+  EyesForwardVsBack: 0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 2
+  Unknown: 4294967295
+  Eyes: 7
+  Mouth: 19
+TintLayers:
+- Index: 1
+  Color: '#0095816F'
+  InterpolationValue: 1
+  Preset: 61
+- Index: 8
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 94
+MajorFlags:
+- 0x40000

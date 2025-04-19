@@ -1,0 +1,23 @@
+FormKey: 02901A:Requiem.esp
+EditorID: REQ_Effect_RestorationDispelOther02
+Name:
+  TargetLanguage: English
+  Value: Dispel Other
+Flags:
+- HideInUI
+- Painless
+MagicSkill: Restoration
+MinimumSkillLevel: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 025458:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+SkillUsageMultiplier: 0.25
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

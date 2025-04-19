@@ -1,0 +1,25 @@
+FormKey: AE380B:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyWeapons_Skyforge
+Name:
+  TargetLanguage: English
+  Value: Fortify Weapons
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Restoring the Skyforge to full power and reforging Wuuthrad pleases Kyne. One-handed, two-handed, and ranged weapons deal <mag>% more damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 01CEF6:Skyrim.esm
+    Stage: 30
+  ComparisonValue: 1

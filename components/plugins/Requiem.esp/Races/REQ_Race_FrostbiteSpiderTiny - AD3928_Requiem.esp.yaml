@@ -1,0 +1,183 @@
+FormKey: AD3928:Requiem.esp
+EditorID: REQ_Race_FrostbiteSpiderTiny
+Name:
+  TargetLanguage: English
+  Value: Frostbite Spider
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- AE3AF8:Requiem.esp
+Skin: 03636F:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013798:Skyrim.esm
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 0.35
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- TiltLeftRight
+- Walks
+- NoCombatInWater
+- DontShowBloodDecal
+- SpellsAlignWithMagicNode
+- CantOpenDoors
+- DontShowWeaponBlood
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 15
+- Key: Magicka
+  Value: 4
+- Key: Stamina
+  Value: 250
+BaseCarryWeight: 200
+BaseMass: 0.05
+AccelerationRate: 1
+DecelerationRate: 1
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 17.5
+UnarmedReach: 96
+AimAngleTolerance: 10
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\FrostbiteSpider\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\FrostbiteSpider\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F21D:Skyrim.esm
+  Female: 01F21D:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.3
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Bite1
+- AttackData:
+    DamageMult: 0.4
+    Chance: 0.75
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_LeftChop
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.35
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: AttackStartLungeBite
+- AttackData:
+    DamageMult: 1
+    Chance: 0.3
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Bite2
+- AttackData:
+    DamageMult: 0.4
+    Chance: 0.75
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_RightChop
+- AttackData:
+    DamageMult: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 0.6
+    Chance: 0.3
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.1
+    StaminaMult: 1
+  AttackEvent: AttackStart_ComboChop
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 017929:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\FrostbiteSpider\FrostbiteSpiderProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\FrostbiteSpider\FrostbiteSpiderProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 10D5CC:Skyrim.esm
+ImpactDataSet: 02A60D:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Body
+  Value: BODY
+- Key: Tail
+  Value: Spit
+EquipmentFlags:
+- HandToHand
+- Spell
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 045C4E:Skyrim.esm
+BaseMovementDefaultRun: 045C4E:Skyrim.esm

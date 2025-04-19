@@ -1,0 +1,55 @@
+FormKey: 0EF325:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FalkreathBarracks
+Version2: 5
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Falkreath Barracks
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 1033AE:Skyrim.esm
+Owner: 02EBEC:Skyrim.esm
+SkyAndWeatherFromRegion: 10474D:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 06D546:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 069EAC:Requiem.esp
+  Base: 069947:Requiem.esp
+  RagdollData: 0x0038C529000000000000000000000000CEC6C8BFAA2F473CED2145C000727261BA9E1740060072B900E8542C000000800000008060A5C93F
+  Placement:
+    Position: 1272.3365, 56.939133, 63.0756
+    Rotation: 0, -0, 5.8831887
+MajorFlags:
+- 0x40000

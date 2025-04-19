@@ -1,0 +1,49 @@
+FormKey: 1F46D5:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_NightEyeKhajiit
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicNightEyeScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 06B10A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NightEyeTransitionGlobal
+      Object: 0EFC75:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 06B10B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MainFX
+      Object: 06B108:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroSoundFX
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 0.96
+Name:
+  TargetLanguage: English
+  Value: Night Eye
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0AD7C6:Skyrim.esm
+Flags:
+- DispelWithKeywords
+- NoArea
+- NoRecast
+- NoHitEffect
+CastingLight: 06B110:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+CastingArt: 06B10F:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Improved night vision for <dur> seconds.

@@ -1,0 +1,97 @@
+FormKey: 0D5E81:Skyrim.esm
+EditorID: VoiceStormCallEffect3Self
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicSetWeatherScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LocalWeatherB
+      Data: 3
+    - MutagenObjectType: ScriptIntProperty
+      Name: LocalWeatherA
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherAfterForm
+      Object: 0C8220:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherExceptionList
+      Object: 000998:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherForm
+      Object: 0D4886:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bHoldWeatherUntilEnd
+      Data: True
+  - Name: magicProjectileStormScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoundFX
+      Object: 0EB382:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStartDelayRand
+      Data: 3
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 3
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fHeight
+      Data: 4096
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CastingImod
+      Object: 0A9D93:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGProjectileStormVar
+      Object: 101DAB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedActivator
+      Object: 0B79FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellRef
+      Object: 0E4CB7:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecastRand
+      Data: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedTargetActivator
+      Object: 0B79FF:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecast
+      Data: 0.25
+Name:
+  TargetLanguage: English
+  Value: Call Storm
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 079B0F:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+- NoDeathDispel
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectSpawnHazardArchetype
+  Association: 0E4CB3:Skyrim.esm
+Projectile: 0E4CB5:Skyrim.esm
+CastType: FireAndForget
+ImpactData: 025DAB:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 0A0F54:Skyrim.esm
+- Type: Charge
+  Sound: 044F5D:Skyrim.esm
+- Type: Ready
+  Sound: 044F5C:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Calls a storm for <dur> seconds with lightning that strikes friend and foe alike.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInInteriorConditionData
+    RunOnType: Target

@@ -1,0 +1,57 @@
+FormKey: 028237:Dragonborn.esm
+EditorID: DLC2dunKarstaagFrostCloakEffect
+Name:
+  TargetLanguage: English
+  Value: Frost Cloak Freeze
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+- 2FFEAD:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 2
+MagicSkill: Destruction
+ResistValue: ResistFrost
+CastingLight: 032DAA:Skyrim.esm
+TaperWeight: 1
+HitShader: 01F03A:Skyrim.esm
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 018123:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: Stamina
+CastingArt: 020BF5:Skyrim.esm
+ImpactData: 018A2E:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: A blast of cold that does <mag> points of damage per second to Health and Stamina.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistFrost
+  ComparisonValue: 80
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 50

@@ -1,0 +1,28 @@
+FormKey: 012B86:Requiem.esp
+EditorID: REQ_PerkRangerEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_RangerPerk
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LightBow
+      Object: 9F9915:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LightXBow
+      Object: 9F7179:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Ranger
+Flags:
+- Recover
+- NoArea
+- HideInUI
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

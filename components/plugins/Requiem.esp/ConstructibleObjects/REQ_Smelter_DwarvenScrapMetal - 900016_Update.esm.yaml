@@ -1,0 +1,22 @@
+FormKey: 900016:Update.esm
+EditorID: REQ_Smelter_DwarvenScrapMetal
+Items:
+- Item:
+    Item: 0C886A:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 43D07D:Requiem.esp
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 0C886A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+CreatedObject: 0DB8A2:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 2

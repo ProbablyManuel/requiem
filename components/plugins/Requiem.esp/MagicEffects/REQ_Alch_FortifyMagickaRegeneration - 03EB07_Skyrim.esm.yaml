@@ -1,0 +1,25 @@
+FormKey: 03EB07:Skyrim.esm
+EditorID: REQ_Alch_FortifyMagickaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Fortify Magicka Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A34:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.1
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MagickaRateMult
+  Association: 065A34:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka regenerates <mag>% faster for <dur> seconds.

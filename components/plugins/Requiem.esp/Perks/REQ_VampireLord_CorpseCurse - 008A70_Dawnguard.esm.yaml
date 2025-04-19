@@ -1,0 +1,21 @@
+FormKey: 008A70:Dawnguard.esm
+EditorID: REQ_VampireLord_CorpseCurse
+Name:
+  TargetLanguage: English
+  Value: Corpse Curse
+Description:
+  TargetLanguage: English
+  Value: Your deep insights in Blood Magic now allow you to evoke a magical blast that paralyses hit targets.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 016908:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 01964A:Dawnguard.esm
+  Stage: 30
+  Unknown: 0x000000

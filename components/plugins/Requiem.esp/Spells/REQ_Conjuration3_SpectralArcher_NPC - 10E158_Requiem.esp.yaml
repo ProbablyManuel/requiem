@@ -1,0 +1,23 @@
+FormKey: 10E158:Requiem.esp
+EditorID: REQ_Conjuration3_SpectralArcher_NPC
+Name:
+  TargetLanguage: English
+  Value: Summon Spectral Archer
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 50
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 20
+HalfCostPerk: 0C44BC:Skyrim.esm
+Effects:
+- BaseEffect: 06F5B8:Requiem.esp
+  Data:
+    Duration: 60

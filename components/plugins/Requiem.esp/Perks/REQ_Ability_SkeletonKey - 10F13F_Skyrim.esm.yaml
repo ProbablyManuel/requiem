@@ -1,0 +1,28 @@
+FormKey: 10F13F:Skyrim.esm
+EditorID: REQ_Ability_SkeletonKey
+Name:
+  TargetLanguage: English
+  Value: Skeleton Key Perk
+Description:
+  TargetLanguage: English
+  Value: Lockpicks never break.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    ItemOrList: 03A070:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD3889:Requiem.esp
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: MakeLockpicksUnbreakable
+  PerkConditionTabCount: 1
+  Value: 1

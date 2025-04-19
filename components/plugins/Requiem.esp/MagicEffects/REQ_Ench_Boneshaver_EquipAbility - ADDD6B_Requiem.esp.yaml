@@ -1,0 +1,26 @@
+FormKey: ADDD6B:Requiem.esp
+EditorID: REQ_Ench_Boneshaver_EquipAbility
+Name:
+  TargetLanguage: English
+  Value: Boneshaver Equip Ability
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+EquipAbility: ADDD6A:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0216A9:Skyrim.esm

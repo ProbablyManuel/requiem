@@ -1,0 +1,21 @@
+FormKey: 0FEE34:Skyrim.esm
+EditorID: REQ_Ench_Dawnbreaker
+Name:
+  TargetLanguage: English
+  Value: Dawnbreaker Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 0FEE38:Skyrim.esm
+  Data:
+    Duration: 5
+- BaseEffect: 0FEFBC:Skyrim.esm
+  Data: {}
+- BaseEffect: AE37DE:Requiem.esp
+  Data:
+    Duration: 3
+- BaseEffect: AE384A:Requiem.esp
+  Data: {}

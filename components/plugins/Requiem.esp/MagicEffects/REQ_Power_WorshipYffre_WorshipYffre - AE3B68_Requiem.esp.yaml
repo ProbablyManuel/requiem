@@ -1,0 +1,29 @@
+FormKey: AE3B68:Requiem.esp
+EditorID: REQ_Power_WorshipYffre_WorshipYffre
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_WorshipYffre
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WorshipPrompt
+      Object: AE3B69:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowsGreenPact
+      Object: AE3B6A:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Worship Y'ffre
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,55 @@
+FormKey: 09E0CB:Skyrim.esm
+EditorID: VoiceAnimalAllegianceEffect3
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VoiceCharmFactionScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CharmFaction
+      Object: 09E0C9:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bMakePlayerTeammate
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Animal Allegiance 3
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+- 046B99:Skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- FXPersist
+- PowerAffectsDuration
+TaperWeight: 1
+HitShader: 084B3A:Skyrim.esm
+SpellmakingArea: 250
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Explosion: 04CBB8:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+ImageSpaceModifier: 084B37:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013798:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

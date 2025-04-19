@@ -1,0 +1,96 @@
+FormKey: 02BCD7:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WinterholdCollegeMidden01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Midden
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 2500
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 01952F:Skyrim.esm
+WaterHeight: 0
+Location: 02BCEB:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 10D415:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3ACA:Requiem.esp
+  Base: AD3AC4:Requiem.esp
+  PersistentLocation: 02BCEB:Skyrim.esm
+  Placement:
+    Position: 3171.2698, -350.55267, -558.6746
+- MutagenObjectType: PlacedObject
+  FormKey: 0EB129:Skyrim.esm
+  Version2: 1
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: FXCameraAttachScript
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CameraAttachFX
+        Object: 0B96CA:Skyrim.esm
+  Base: 02F245:Skyrim.esm
+  Primitive:
+    Bounds: 1214.2441, 1138.4983, 550.86707
+    Color: '#00CC4C33'
+    Unknown: 0.15
+    Type: Box
+  LocationReference: 02BCEB:Skyrim.esm
+  Placement:
+    Position: 3076.461, -721.32996, -381
+    Rotation: 0, -0, 2.4043148
+- MutagenObjectType: PlacedObject
+  FormKey: 0D7BD4:Skyrim.esm
+  Version2: 1
+  Base: 077773:Skyrim.esm
+  Emittance: 0B9E29:Skyrim.esm
+  LocationReference: 02BCEB:Skyrim.esm
+  Placement:
+    Position: 3045.6135, -617.7625, -504.19492
+    Rotation: 0, 0, 2.3232358
+- MutagenObjectType: PlacedObject
+  FormKey: 0D7BD3:Skyrim.esm
+  Base: 077773:Skyrim.esm
+  Emittance: 0B9E29:Skyrim.esm
+  LocationReference: 02BCEB:Skyrim.esm
+  Placement:
+    Position: 3042.96, -632.0445, -245.30325
+    Rotation: 0, 0, 2.3232358
+MajorFlags:
+- 0x40000

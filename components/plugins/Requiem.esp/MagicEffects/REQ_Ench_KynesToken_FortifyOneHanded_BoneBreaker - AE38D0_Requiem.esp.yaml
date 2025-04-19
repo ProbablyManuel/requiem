@@ -1,0 +1,41 @@
+FormKey: AE38D0:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyOneHanded_BoneBreaker
+Name:
+  TargetLanguage: English
+  Value: Fortify One-Handed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: OneHandedPowerModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285213856
+    VariableName: ::playerInvolved_var
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285213824
+    VariableName: ::PlayerRank_var
+  ComparisonValue: 2
+- MutagenObjectType: ConditionGlobal
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285213792
+    VariableName: ::playerAllegiance_var
+  ComparisonValue: 073F11:Skyrim.esm

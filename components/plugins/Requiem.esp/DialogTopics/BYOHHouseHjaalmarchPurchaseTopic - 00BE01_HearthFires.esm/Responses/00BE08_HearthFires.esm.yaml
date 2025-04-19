@@ -1,0 +1,51 @@
+FormKey: 00BE08:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__0100BE08
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__0100BE08
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__0100BE08
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 00BE07:HearthFires.esm
+FavorLevel: None
+LinkTo:
+- 00BE00:HearthFires.esm
+- 00BDFF:HearthFires.esm
+- 00BDFE:HearthFires.esm
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Yes. It's on the north coast of Hjaalmarch, with a magnificent view of Solitude on its crag. Just the place for a new manor house.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 00BE09:HearthFires.esm
+    SecondUnusedIntParameter: -285090560
+    VariableName: ::bOwnProperty_var
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 1
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 087E20:Skyrim.esm
+  ComparisonValue: 3
+Prompt:
+  TargetLanguage: English
+  Value: Is that land you mentioned still available?

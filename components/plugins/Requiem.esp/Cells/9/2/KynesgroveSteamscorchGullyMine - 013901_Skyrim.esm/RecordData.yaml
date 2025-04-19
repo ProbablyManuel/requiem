@@ -1,0 +1,79 @@
+FormKey: 013901:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: KynesgroveSteamscorchGullyMine
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Steamscorch Mine
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 9000
+  FogClipDistance: 9000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 0.8
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - FogPower
+  - LightFadeDistances
+LightingTemplate: 091937:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020A07:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 3839A1:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 05CBDC:Requiem.esp
+  RagdollData: 0x0031DE30003905410000C03900D295BFD90FC9BF766897B4C4764840006F6B73BA9E1740060072B900E8542C00000080000000806FA5C93F
+  Placement:
+    Position: 1935.5582, 2926.5073, -882.1949
+    Rotation: 0, -0, 1.9
+- MutagenObjectType: PlacedObject
+  FormKey: 108A55:Skyrim.esm
+  MajorRecordFlagsRaw: 1610612736
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  - 0x40000000
+  Base: 02F83B:Skyrim.esm
+  RagdollData: 0x0004F3000000000000000000000000006CBFC8BF018C82BA6F0E49C000FF7FFF00B337400000803A0000000008580CB6005CB937CE2DCC3F
+  LocationReference: 020A07:Skyrim.esm
+  Placement:
+    Position: 1931.3279, 2955.2573, -881.8992
+    Rotation: 0, -0, 1.29
+- MutagenObjectType: PlacedObject
+  FormKey: 0EEF06:Skyrim.esm
+  Base: 03133C:Skyrim.esm
+  LocationReference: 020A07:Skyrim.esm
+  Placement:
+    Position: 1901.1046, 2988.386, -883.9019
+    Rotation: 0.0026363335, 0.0011229621, 3.054594
+MajorFlags:
+- 0x40000

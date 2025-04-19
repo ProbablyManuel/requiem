@@ -1,0 +1,41 @@
+FormKey: 0E826D:Skyrim.esm
+EditorID: PerkTurnUndeadFFContact
+Name:
+  TargetLanguage: English
+  Value: Turn Raised Undead
+MenuDisplayObject: 1097CA:Skyrim.esm
+Keywords:
+- 0BD83F:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+MagicSkill: Conjuration
+CastingLight: 04C6DC:Skyrim.esm
+HitShader: 04C6D8:Skyrim.esm
+EnchantShader: 05D608:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: TurnUndead
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 04C6DA:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Undead up to level <mag> flee for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

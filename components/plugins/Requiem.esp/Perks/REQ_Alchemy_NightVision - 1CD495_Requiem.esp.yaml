@@ -1,0 +1,41 @@
+FormKey: 1CD495:Requiem.esp
+EditorID: REQ_Alchemy_NightVision
+Name:
+  TargetLanguage: English
+  Value: Night Vision
+Description:
+  TargetLanguage: English
+  Value: Having altered your body with extracts from a sabrecat eye, <br> you can now make your eyes see in the dark at will.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 1CD495:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 06BC07:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058216:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Alchemy
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 100
+  Ability: 0F836E:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 1CD494:Requiem.esp

@@ -1,0 +1,31 @@
+FormKey: AE3723:Requiem.esp
+EditorID: REQ_CoreScripts_FoodPoisoning
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AE3723:Requiem.esp
+      Alias: 0
+    Scripts:
+    - Name: REQ_FoodPoisoning
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MessageFoodPoisoning
+        Object: AE3725:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FoodPoisoning
+        Object: AE3724:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: ContaminatedFood
+        Object: AE3726:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Food Poisoning'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- Name: FoodPoisoning
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

@@ -1,0 +1,30 @@
+FormKey: 409069:Requiem.esp
+EditorID: REQ_Illusion2_RuneOfDampening_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+Keywords:
+- 409068:Requiem.esp
+Flags:
+- NoArea
+- HideInUI
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

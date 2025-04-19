@@ -1,0 +1,79 @@
+FormKey: 00384F:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1FalmerTemple01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Inner Sanctum
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#002D304A'
+  DirectionalColor: '#00304463'
+  FogNearColor: '#001B2347'
+  FogFar: 3400
+  DirectionalRotationZ: 90
+  DirectionalFade: 0.5
+  FogClipDistance: 13000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#0031304D'
+    DirectionalXMinus: '#00283046'
+    DirectionalYPlus: '#002D324A'
+    DirectionalYMinus: '#002D2D4A'
+    DirectionalZPlus: '#00151621'
+    DirectionalZMinus: '#00444972'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#001B2D46'
+  FogMax: 1
+  Inherits:
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01379F:Dawnguard.esm
+SkyAndWeatherFromRegion: 0029E5:Dawnguard.esm
+AcousticSpace: 02B3AE:Skyrim.esm
+EncounterZone: 01379D:Dawnguard.esm
+Music: 00EF94:Dawnguard.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 018D17:Dawnguard.esm
+  Version2: 2
+  Base: 015FDD:Dawnguard.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01379F:Dawnguard.esm
+  Placement:
+    Position: 6547.197, -1997.7606, 6861.022
+    Rotation: 0, -0, 2.9915924
+- MutagenObjectType: PlacedObject
+  FormKey: 018D1D:Dawnguard.esm
+  Version2: 1
+  Base: 015FDD:Dawnguard.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01379F:Dawnguard.esm
+  Placement:
+    Position: 6584.1274, -1906.956, 6783.942
+    Rotation: 0, -0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 018D21:Dawnguard.esm
+  Base: 0896A3:Skyrim.esm
+  LocationReference: 01379F:Dawnguard.esm
+  Placement:
+    Position: 6505.937, -1919.4224, 6786.742
+    Rotation: 0.12886988, 6.2408032, 5.846539
+MajorFlags:
+- 0x40000

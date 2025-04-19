@@ -1,0 +1,156 @@
+FormKey: 00081A:ccbgssse064-ba_elven.esl
+EditorID: ccBGSSSE064_MiscQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccBGSSSE064_MiscQuest_0200081A
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 00081A:ccbgssse064-ba_elven.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bounty
+      Object: 00081A:ccbgssse064-ba_elven.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Steward
+      Object: 00081A:ccbgssse064-ba_elven.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Jarl
+      Object: 00081A:ccbgssse064-ba_elven.esl
+      Alias: 3
+  FileName: SSE_QF_ccBGSSSE064_MiscQuest_0200081A
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE064_MiscQuest_0200081A
+    FragmentName: Fragment_1
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE064_MiscQuest_0200081A
+    FragmentName: Fragment_0
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 00081A:ccbgssse064-ba_elven.esl
+      Alias: 0
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00081A:ccbgssse064-ba_elven.esl
+  - Property:
+      Name: ''
+      Object: 00081A:ccbgssse064-ba_elven.esl
+      Alias: 1
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00081A:ccbgssse064-ba_elven.esl
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Type: Misc
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 1111
+- Index: 20
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Look for bounty information at the Falkreath Barracks
+  Targets:
+  - {}
+  - AliasID: 1
+NextAliasID: 4
+Aliases:
+- Name: Note
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00081D:ccbgssse064-ba_elven.esl
+  VoiceTypes: Null
+- ID: 2
+  Name: Steward
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050922:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocConditionData
+      Location: 018A49:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 3
+  Name: Jarl
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050920:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocConditionData
+      Location: 018A49:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 1
+  Name: Bounty
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - StoresText
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 00081F:ccbgssse064-ba_elven.esl
+  VoiceTypes: Null

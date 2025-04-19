@@ -1,0 +1,26 @@
+FormKey: 10319D:Skyrim.esm
+EditorID: VoiceMarkedForDeathArmorEffect01
+Name:
+  TargetLanguage: English
+  Value: Marked for Death
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- PowerAffectsMagnitude
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: DamageResist
+CastType: FireAndForget
+TargetType: Aimed
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: VeryLoud
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The Thu'um brings overwhelming doom, and decreases the target's armor rating by <mag> for <dur> seconds.

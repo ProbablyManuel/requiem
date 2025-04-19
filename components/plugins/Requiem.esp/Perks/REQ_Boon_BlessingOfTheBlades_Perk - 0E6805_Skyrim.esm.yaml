@@ -1,0 +1,20 @@
+FormKey: 0E6805:Skyrim.esm
+EditorID: REQ_Boon_BlessingOfTheBlades_Perk
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 035D59:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.15

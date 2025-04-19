@@ -1,0 +1,19 @@
+FormKey: 000970:Requiem.esp
+EditorID: REQ_AbShow_WeaknessPoison
+Name:
+  TargetLanguage: English
+  Value: Weakness to Poison
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: PoisonResist
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Poison deals <mag>% more damage to you.

@@ -1,0 +1,24 @@
+FormKey: 05D6C5:Requiem.esp
+EditorID: REQ_Effect_Alchemy_AlchemicalIntellect_Ingredients
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AlchemyPerkIngredients
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RemoveWhenDone
+      Object: 05D6C2:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: INGREDIENTS
+      Objects:
+      - Name: ''
+        Object: 03AD5B:Skyrim.esm
+      - Name: ''
+        Object: 03AD63:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

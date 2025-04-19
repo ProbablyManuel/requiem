@@ -1,0 +1,218 @@
+FormKey: 0131F2:Skyrim.esm
+EditorID: DwarvenSphereRace
+Name:
+  TargetLanguage: English
+  Value: Dwarven Sphere
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 04BB4D:Skyrim.esm
+- AD39DD:Requiem.esp
+- AE3AFA:Requiem.esp
+Skin: 07874B:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 01397A:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 0F23C5:Skyrim.esm
+- 103AD2:Skyrim.esm
+- 4F6D1E:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: Illusion
+  Boost: 95
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- DontShowBloodDecal
+- NoKnockdowns
+- DontShowWeaponBlood
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 400
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10000
+BaseCarryWeight: 200
+BaseMass: 4
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 1
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 50
+UnarmedReach: 128
+BodyBipedObject: Body
+AimAngleTolerance: 23.45
+AngularAccelerationRate: 0.12
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\DwarvenSphereCenturion\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\DwarvenSphereCenturion\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F1D0:Skyrim.esm
+  Female: 01F1D0:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.75
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 1
+    RecoveryTime: 1.5
+    StaminaMult: 0.01
+  AttackEvent: attackStartForwardPowerChop
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartChop
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartStab
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartBackSlash
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.75
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 0.75
+    RecoveryTime: 1.5
+    StaminaMult: 0.01
+  AttackEvent: attackStartForwardPowerStab
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartSlash
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 07874D:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\DwarvenSphereCenturion\SphereCenturion.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\DwarvenSphereCenturion\SphereCenturion.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 09644C:Skyrim.esm
+ImpactDataSet: 092C92:Skyrim.esm
+OpenLootSound: 0F69C6:Skyrim.esm
+CloseLootSound: 0F69C7:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+- Key: Shield
+  Value: FX
+MovementTypes:
+- MovementType: 07874F:Skyrim.esm
+  Overrides:
+    LeftWalk: 192
+    LeftRun: 384
+    RightWalk: 192
+    RightRun: 384
+    ForwardWalk: 192
+    ForwardRun: 384
+    BackWalk: 192
+    BackRun: 384
+    RotateWalk: 1.570796
+    RotateRun: 3.141593
+    Unknown: 3.141593
+- MovementType: 078750:Skyrim.esm
+  Overrides:
+    LeftWalk: 192
+    LeftRun: 192
+    RightWalk: 192
+    RightRun: 192
+    ForwardWalk: 192
+    ForwardRun: 192
+    BackWalk: 192
+    BackRun: 192
+    RotateWalk: 1.570796
+    RotateRun: 1.570796
+    Unknown: 1.570796
+EquipmentFlags:
+- HandToHand
+- Bow
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+BaseMovementDefaultWalk: 07874E:Skyrim.esm
+BaseMovementDefaultRun: 078750:Skyrim.esm

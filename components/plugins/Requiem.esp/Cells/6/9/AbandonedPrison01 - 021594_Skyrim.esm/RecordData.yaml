@@ -1,0 +1,85 @@
+FormKey: 021594:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: AbandonedPrison01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Abandoned Prison
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#001E384F'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00213852'
+    DirectionalXMinus: '#001A384B'
+    DirectionalYPlus: '#001E3A4F'
+    DirectionalYMinus: '#001E354F'
+    DirectionalZPlus: '#000E1A23'
+    DirectionalZMinus: '#002D557A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 08CDDA:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0ECF4C:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\DunCaveRuinGreen_e.dds
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 0ECF4B:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 02EDEB:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0FEBAE:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.94
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0ECF4C:Skyrim.esm
+  Placement:
+    Position: 2044.5098, 2668.5747, 744.52515
+    Rotation: 0, 0, 1.0471976
+- MutagenObjectType: PlacedObject
+  FormKey: 08429C:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.82
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0ECF4C:Skyrim.esm
+  Placement:
+    Position: 7242.632, 616.07605, 348.72656
+    Rotation: 0.10000038, 0.05000019, 6.2581906
+- MutagenObjectType: PlacedObject
+  FormKey: 0FEB3D:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.93
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0ECF4C:Skyrim.esm
+  Placement:
+    Position: 1559.7032, -535.5384, 1425.437
+    Rotation: 0, 0, 3.4931927
+MajorFlags:
+- 0x40000

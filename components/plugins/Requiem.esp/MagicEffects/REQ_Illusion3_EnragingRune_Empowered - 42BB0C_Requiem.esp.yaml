@@ -1,0 +1,40 @@
+FormKey: 42BB0C:Requiem.esp
+EditorID: REQ_Illusion3_EnragingRune_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+Flags:
+- Hostile
+- Recover
+- SnapToNavmesh
+- NoHitEvent
+- NoArea
+- PowerAffectsMagnitude
+- Painless
+MagicSkill: Illusion
+TaperWeight: 1
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: StaminaRateMult
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: TargetLocation
+SecondActorValue: AttackDamageMult
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Empowering the spell causes a tireless rage, increasing damage and stamina regeneration by <mag>%.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData

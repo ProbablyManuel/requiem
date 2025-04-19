@@ -1,0 +1,26 @@
+FormKey: 000816:ccbgssse051-ba_daedricmail.esl
+EditorID: REQ_NULL_ccBGSSSE051_RecipeArmorDaedricGauntlets
+Items:
+- Item:
+    Item: 03AD5B:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05AD9D:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 000819:ccbgssse051-ba_daedricmail.esl
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB413:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 000802:ccbgssse051-ba_daedricmail.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

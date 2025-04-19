@@ -1,0 +1,25 @@
+FormKey: 03EAEA:Skyrim.esm
+EditorID: REQ_Alch_ResistFire
+Name:
+  TargetLanguage: English
+  Value: Resist Fire
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 065A37:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 10BEA9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistFire
+  Association: 065A37:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Fire deals <mag>% less damage to you for <dur> seconds.

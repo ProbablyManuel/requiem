@@ -1,0 +1,31 @@
+FormKey: 01391E:Dawnguard.esm
+EditorID: REQ_Skooma_Redwater
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1dunRedwaterSkoomaEffectScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: timeDelay
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1dunRedwaterDenQST
+      Object: 007C4F:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1dunRedwaterDenLocation
+      Object: 004D6F:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: DLC1RedwaterSkoomaScriptEffect
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,63 @@
+FormKey: 0B62E5:Skyrim.esm
+EditorID: REQ_Alteration5_Paralyze_Paralyze
+Name:
+  TargetLanguage: English
+  Value: Paralyze
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+- 0806E1:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+- 3FCA4C:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 600
+MagicSkill: Alteration
+CastingLight: 06EBCC:Skyrim.esm
+HitShader: 06DE84:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingArea: 40
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+Projectile: 06EBC8:Skyrim.esm
+Explosion: 031047:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 031048:Skyrim.esm
+HitEffectArt: 06DE86:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 03104A:Skyrim.esm
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster tries to paralyze all nearby beings for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData

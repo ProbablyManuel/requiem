@@ -1,0 +1,887 @@
+FormKey: 000926:ccmtysse002-ve.esl
+EditorID: ccMTYSSE002_Quest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ccMTYSSE002_VampireDeathCount
+  - Name: SSE_QF_ccMTYSSE002_Quest_05000926
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_HaraldAggro
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HaraldDestination
+      Object: 00092E:ccmtysse002-ve.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter01
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter03
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vereth
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MineDoor
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Irine
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DawnstarQuicksilverMinerFaction
+      Object: 0877AE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Harald
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DawnstarLocation
+      Object: 018A50:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ElvenDagger
+      Object: 01399E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DawnstarQuicksilverMine
+      Object: 02C779:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vampire03
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Azir
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CrimeFactionPale
+      Object: 02816E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccMTYSSE002_HaraldSpawnREF
+      Object: 000946:ccmtysse002-ve.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter04
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter02
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Miner02
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Miner01
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vampire02
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TownDawnstarFaction
+      Object: 02817F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccMTYSSE002_QuestItem
+      Object: 0009F9:ccmtysse002-ve.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Button
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dagger
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vampire01
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Button01
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Fenrik
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: weapPickaxe
+      Object: 0E3C16:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Miner03
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 17
+  FileName: SSE_QF_ccMTYSSE002_Quest_05000926
+  Fragments:
+  - Stage: 70
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_9
+  - Stage: 80
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_10
+  - Stage: 45
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_16
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_2
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_12
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_1
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_3
+  - Stage: 56
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_8
+  - Stage: 35
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_5
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_4
+  - Stage: 95
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_13
+  - Stage: 15
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_0
+  - Stage: 4
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_26
+  - Stage: 55
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_7
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_6
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_14
+  - Stage: 85
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_11
+  - Stage: 48
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_21
+  - Stage: 3
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_25
+  - Stage: 49
+    Unknown2: 1
+    ScriptName: SSE_QF_ccMTYSSE002_Quest_05000926
+    FragmentName: Fragment_22
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 0
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 15
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 1
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 8
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 55
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000926:ccmtysse002-ve.esl
+    - Name: defaultsetStageOnHitAliasScript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 44
+      - MutagenObjectType: ScriptIntProperty
+        Name: prereqStageOPT
+        Data: 50
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 11
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 80
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 12
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 85
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 13
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 90
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 10
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 95
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 6
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 3
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 7
+    Scripts:
+    - Name: defaultsetstageondeathrefalias
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 4
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 3
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 30
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000926:ccmtysse002-ve.esl
+  - Property:
+      Name: ''
+      Object: 000926:ccmtysse002-ve.esl
+      Alias: 4
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 40
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000926:ccmtysse002-ve.esl
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 35
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000926:ccmtysse002-ve.esl
+Name:
+  TargetLanguage: English
+  Value: Unholy Vigil
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Stages:
+- Index: 3
+  LogEntries:
+  - Flags: []
+- Index: 4
+  LogEntries:
+  - Flags: []
+- Index: 5
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Unknown: 170
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 3331
+    Entry:
+      TargetLanguage: English
+      Value: The Vigil of Stendarr is an order founded after the Oblivion Crisis. Their main hall is situated in the Pale, south of Dawnstar. I should see if they have anything that needs investigating.
+- Index: 15
+  Unknown: 97
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: At the Hall of the Vigilant I found a note regarding missing patrols near Dawnstar. I should head to the Windpeak Inn and see what else I can uncover.
+- Index: 20
+  Unknown: 108
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: At the Hall of the Vigilant I found a note regarding missing patrols near Dawnstar. I should head to the Windpeak Inn and see what else I can uncover.
+- Index: 30
+  Unknown: 69
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members. During his investigation, he was given a note to meet at the Windward Ruins. Further clues might be found there.
+- Index: 35
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members. During his investigation, he was given a note to meet at the Windward Ruins. Unfortunately, he was murdered at the site. His journal, however, may offer more clues on what happened to him.
+- Index: 40
+  Unknown: 101
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members. During his investigation, he was given a note to meet at the Windward Ruins. Unfortunately, he was murdered at the site. His journal, however, provides clues on three potential suspects. Following them may lead me to the location of this cult.
+- Index: 44
+- Index: 45
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members. During his investigation, he was given a note to meet at the Windward Ruins. Unfortunately, he was murdered at the site. His journal, however, provides clues on three potential suspects. Following them may lead me to the location of this cult.
+- Index: 47
+- Index: 48
+  LogEntries:
+  - Flags: []
+- Index: 49
+  LogEntries:
+  - Flags: []
+- Index: 50
+  Unknown: 175
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members. During his investigation, he was given a note to meet at the Windward Ruins. Unfortunately, he was murdered at the site. His journal, however, provides clues on three potential suspects. Following them may lead me to the location of this cult.
+- Index: 55
+  Unknown: 180
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. I tracked one down and killed him. While he can no longer lead me to their place of worship, his body may offer some clues as to where that might be.
+- Index: 56
+  Unknown: 180
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. I tracked one down and killed him. While he can no longer lead me to their place of worship, on his body was a note that may offer more information.
+- Index: 60
+  Unknown: 175
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. I tracked one down and killed him. While he can no longer lead me to their place of worship, on his body was a note that mentioned a secret door in the Quicksilver Mine.
+- Index: 70
+  Unknown: 175
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. After some investigation, I found the location of their place of worship, behind a secret door in the Quicksilver Mine. I should dispatch the cult members before they cause more trouble.
+- Index: 80
+  Unknown: 175
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. After some investigation, I found the location of their place of worship, behind a secret door in the Quicksilver Mine. '
+- Index: 85
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. After some investigation, I found the location of their place of worship, behind a secret door in the Quicksilver Mine. '
+- Index: 90
+  Unknown: 175
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. After some investigation, I found the location of their place of worship, behind a secret door in the Quicksilver Mine.
+- Index: 95
+  Unknown: 40
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: 'A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. After some investigation, I found the location of their place of worship, behind a secret door in the Quicksilver Mine. '
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: A Vigilant of Stendarr has been investigating the disappearance of his fellow members, and identified three potential suspects that may be involved. After some research, I found the location of their place of worship, behind a secret door in the Quicksilver Mine. I cleared the mine of all cult members, bringing an end to the investigation.
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Investigate the Hall of the Vigilant
+  Targets:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 00D06C:Dawnguard.esm
+        Stage: 5
+  - AliasID: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 00D06C:Dawnguard.esm
+        Stage: 5
+      ComparisonValue: 1
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search for the Vigilant at the Windpeak Inn
+  Targets:
+  - AliasID: 3
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Investigate the Windward Ruins
+  Targets:
+  - AliasID: 4
+- Index: 35
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read Azarain's Journal
+  Targets:
+  - AliasID: 4
+- Index: 40
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Check the suspects' pockets for suspicious items
+- Index: 47
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Escape Harald's detection
+  Targets:
+  - AliasID: 8
+- Index: 48
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Escape Irine's detection
+  Targets:
+  - AliasID: 7
+- Index: 49
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Escape Vereth's detection
+  Targets:
+  - AliasID: 6
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Trail Harald at night
+  Targets:
+  - AliasID: 8
+- Index: 51
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Trail Irine at night
+  Targets:
+  - AliasID: 7
+- Index: 52
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: (Optional) Trail Vereth at night
+  Targets:
+  - AliasID: 6
+- Index: 55
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search Harald's body for clues
+  Targets:
+  - AliasID: 8
+- Index: 56
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the Miner's Note
+- Index: 60
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find the cult of Daedra worshippers
+  Targets:
+  - AliasID: 10
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000926:ccmtysse002-ve.esl
+        Stage: 56
+      ComparisonValue: 1
+- Index: 70
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Destroy the Daedric cult
+  Targets:
+  - AliasID: 8
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000926:ccmtysse002-ve.esl
+        Stage: 55
+  - AliasID: 11
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000926:ccmtysse002-ve.esl
+        Stage: 80
+  - AliasID: 12
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000926:ccmtysse002-ve.esl
+        Stage: 85
+  - AliasID: 13
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000926:ccmtysse002-ve.esl
+        Stage: 90
+  - AliasID: 10
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 000926:ccmtysse002-ve.esl
+        Stage: 95
+NextAliasID: 20
+Aliases:
+- Name: Letter01
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000816:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 1
+  Name: Letter02
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000925:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 2
+  Name: Azir
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000930:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 5
+  Name: Harald
+  Flags:
+  - Optional
+  - AllowDead
+  - Essential
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000934:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 9
+  Name: MineDoor
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0009CA:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 8
+  Name: HaraldAggro
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000940:ccmtysse002-ve.esl
+  Factions:
+  - 09E0E5:Skyrim.esm
+  PackageData:
+  - 000985:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 11
+  Name: Vampire01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000851:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 12
+  Name: Vampire02
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000841:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 13
+  Name: Vampire03
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000915:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 10
+  Name: Fenrik
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0008E4:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 6
+  Name: Vereth
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000936:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 7
+  Name: Irine
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000979:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 3
+  Name: Letter03
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00092F:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 4
+  Name: Letter04
+  Flags:
+  - Optional
+  - QuestObject
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000927:ccmtysse002-ve.esl
+    AliasID: 2
+    Create: In
+  VoiceTypes: Null
+- ID: 14
+  Name: Dagger
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 0CC84D:Skyrim.esm
+    AliasID: 8
+    Create: In
+  VoiceTypes: Null
+- ID: 15
+  Name: Miner01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0877B3:Skyrim.esm
+  PackageData:
+  - 00097A:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 16
+  Name: Miner02
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 0877B0:Skyrim.esm
+  PackageData:
+  - 00097A:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 17
+  Name: Miner03
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 01A6C6:Skyrim.esm
+  PackageData:
+  - 00097A:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 18
+  Name: Button
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00099F:ccmtysse002-ve.esl
+  PackageData:
+  - 00097A:ccmtysse002-ve.esl
+  VoiceTypes: Null
+- ID: 19
+  Name: Button01
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00098A:ccmtysse002-ve.esl
+  PackageData:
+  - 00097A:ccmtysse002-ve.esl
+  VoiceTypes: Null

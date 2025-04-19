@@ -1,0 +1,54 @@
+FormKey: 008E52:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1HunterValleyCave01
+Version2: 6
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mossy Glen Cave
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00251C14'
+  DirectionalColor: '#0033393A'
+  FogNearColor: '#003F615F'
+  FogFar: 6000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00281C14'
+    DirectionalXMinus: '#00211C13'
+    DirectionalYPlus: '#00251D14'
+    DirectionalYMinus: '#00251A14'
+    DirectionalZPlus: '#00110D09'
+    DirectionalZMinus: '#00382A1E'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#0097D5CE'
+  FogMax: 1
+  Inherits:
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 034566:Skyrim.esm
+WaterHeight: -2.1474836E+09
+SkyAndWeatherFromRegion: 1046CC:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+Music: 05615B:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0131FA:Dawnguard.esm
+  Version2: 1
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Placement:
+    Position: 1207.7594, -2310.5017, -2.267517
+    Rotation: 0, -0, 4.7081895
+MajorFlags:
+- 0x40000

@@ -1,0 +1,25 @@
+FormKey: AD398D:Requiem.esp
+EditorID: REQ_Alch_FortifyArmorPenetration_Marksman
+Name:
+  TargetLanguage: English
+  Value: Fortify Marksman Armor Penetration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A21:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MarksmanModifier
+  Association: 065A21:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor penetration with ranged weapons is increased by <mag> for <dur> seconds.

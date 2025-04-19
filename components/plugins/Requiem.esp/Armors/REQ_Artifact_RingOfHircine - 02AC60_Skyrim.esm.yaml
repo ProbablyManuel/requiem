@@ -1,0 +1,44 @@
+FormKey: 02AC60:Skyrim.esm
+EditorID: REQ_Artifact_RingOfHircine
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA05HircinesRingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HircinesRingPower
+      Object: 092C48:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CompanionsCentralQuest
+      Object: 04B2D9:Skyrim.esm
+ObjectBounds:
+  First: -1, -1, 0
+  Second: 1, 1, 0
+Name:
+  TargetLanguage: English
+  Value: Ring of Hircine
+ObjectEffect: 0F8301:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: Armor\AmuletsandRings\ringofhircineGO.nif
+      Data: 0x0200000004000000000000003302E89064647300D8C674AF2DEB3D7064647300D8C674AF6BBB96D164647300262C333B97BA34E964647300D8C674AF
+BodyTemplate:
+  FirstPersonFlags:
+  - Ring
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 013740:Skyrim.esm
+Keywords:
+- 06BBE9:Skyrim.esm
+- 0917E8:Skyrim.esm
+- 0A8668:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 10CD09:Skyrim.esm
+- 08F95A:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Hircine's sphere is the hunt. His ring extends the wearer's life and allows werewolves to transform at will.
+Armature:
+- 06B513:Skyrim.esm
+Value: 80000
+Weight: 0.25

@@ -1,0 +1,195 @@
+FormKey: 01DFEC:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Spider_JumpingFrost
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2EncExplodingSpiderSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFire
+      Object: 01CEAD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion2
+      Object: 0285D9:Dragonborn.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bShouldHandleOnHit
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderCrumbleExplosion
+      Object: 0206C9:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion6
+      Object: 0285DD:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFrost
+      Object: 01CEAE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion4
+      Object: 0285DC:Dragonborn.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: iElementalResist
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageShock
+      Object: 01CEAF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion5
+      Object: 0285DB:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion3
+      Object: 0285DA:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion1
+      Object: 026D52:Dragonborn.esm
+  - Name: DLC2EncExpSpiderGenericControlSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderCrumbleExplosion
+      Object: 0206C9:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderQuest
+      Object: 017962:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderFriendFaction
+      Object: 017964:Dragonborn.esm
+ObjectBounds:
+  First: -47, -67, 0
+  Second: 47, 67, 89
+Configuration:
+  Flags:
+  - AutoCalcStats
+  MagickaOffset: 235
+  StaminaOffset: 235
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 12
+  SpeedMultiplier: 150
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - AIPackages
+  - Inventory
+  - DefPackList
+  - AttackData
+  HealthOffset: 235
+Factions:
+- Faction: 02997F:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 017960:Dragonborn.esm
+  Fluff: 0x000000
+Voice: 01F21D:Skyrim.esm
+Template: 014490:Dragonborn.esm
+Race: 014449:Dragonborn.esm
+ActorEffect:
+- 026D53:Dragonborn.esm
+- 032793:Dragonborn.esm
+WornArmor: 01DFEA:Dragonborn.esm
+AttackRace: 014449:Dragonborn.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Keywords:
+- 000EDF:Skyrim.esm
+Class: 044CCB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Jumping Frost Spider
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 29
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 29
+  - Key: Block
+    Value: 21
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 29
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 263
+  Magicka: 239
+  Stamina: 288
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 014448:Dragonborn.esm
+NAM5: 255
+Height: 0.8
+Weight: 20
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 038A33:Skyrim.esm
+DefaultOutfit: 053900:Skyrim.esm
+DefaultPackageList: 0EB249:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

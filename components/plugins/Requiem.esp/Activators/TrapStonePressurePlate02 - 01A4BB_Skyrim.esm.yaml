@@ -1,0 +1,44 @@
+FormKey: 01A4BB:Skyrim.esm
+MajorRecordFlagsRaw: 134217728
+EditorID: TrapStonePressurePlate02
+Version2: 13
+SkyrimMajorRecordFlags:
+- 0x8000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PressurePlate
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pressEffectAmmo
+      Object: 03BDF7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TriggerSound
+      Object: 055780:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: checkForLightFootPerk
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: lightFootPerk
+      Object: 05820C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LightFootGlobalVar
+      Object: 067194:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: isTriggerVolume
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pressEffect
+      Object: 01A141:Skyrim.esm
+ObjectBounds:
+  First: -46, -45, -5
+  Second: 46, 47, 9
+Model:
+  File: Traps\PressurePlate\TrapStonePressurePlate02.nif
+  Data: 0x0200000002000000000000002BB077F664647300E115AE1356B5382A64647300E115AE13
+  AlternateTextures:
+  - Name: PressurePlate01:1
+    NewTexture: 000028:Skyrim.esm
+MarkerColor: '#00CC4C33'
+Flags: []
+MajorFlags:
+- NavMeshGenerationBoundingBox

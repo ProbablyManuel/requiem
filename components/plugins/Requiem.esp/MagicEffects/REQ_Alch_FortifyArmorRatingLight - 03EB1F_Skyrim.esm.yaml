@@ -1,0 +1,25 @@
+FormKey: 03EB1F:Skyrim.esm
+EditorID: REQ_Alch_FortifyArmorRatingLight
+Name:
+  TargetLanguage: English
+  Value: Fortify Armor Rating
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A23:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: DamageResist
+  Association: 065A23:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor rating increases by <mag> for <dur> seconds.

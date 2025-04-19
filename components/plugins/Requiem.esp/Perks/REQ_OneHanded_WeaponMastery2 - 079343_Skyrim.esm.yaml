@@ -1,0 +1,32 @@
+FormKey: 079343:Skyrim.esm
+EditorID: REQ_OneHanded_WeaponMastery2
+Name:
+  TargetLanguage: English
+  Value: Weapon Mastery
+Description:
+  TargetLanguage: English
+  Value: Your improved fighting techniques increase your damage dealt with one-handed weapons greatly.<br>[40% more damage]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BABE4:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: OneHanded
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.4

@@ -1,0 +1,313 @@
+FormKey: 0B6BE6:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EmbershardMine01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Embershard Mine
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0030271C'
+    DirectionalXMinus: '#00272719'
+    DirectionalYPlus: '#002C281B'
+    DirectionalYMinus: '#002C251B'
+    DirectionalZPlus: '#0014120C'
+    DirectionalZMinus: '#005C5238'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0E7C5E:Skyrim.esm
+WaterHeight: 0
+Location: 0B712C:Skyrim.esm
+Water: 033DA7:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\MineCube_e.dds
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+EncounterZone: 0D9545:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 000814:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000805:ccbgssse054-ba_orcish.esl
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 000837:ccbgssse054-ba_orcish.esl
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -2214.4934, 1674.2981, 8112.926
+    Rotation: 0, 0, 0.18319325
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedObject
+  FormKey: 00081F:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 00081B:ccbgssse054-ba_orcish.esl
+  Lock:
+    Level: 255
+    Unused: 0x000000
+    Key: 00081D:ccbgssse054-ba_orcish.esl
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1802.6458, 1820.9827, 8106.841
+    Rotation: 0, 0, 5.3009944
+- MutagenObjectType: PlacedNpc
+  FormKey: 000820:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 00081C:ccbgssse054-ba_orcish.esl
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -2245.2698, 2242.2864, 8115.084
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 000821:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000812:ccbgssse054-ba_orcish.esl
+  LevelModifier: Easy
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 613.19073, 1689.0768, 8282.875
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 000831:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000804:ccbgssse054-ba_orcish.esl
+  LevelModifier: Easy
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -3659.7856, 1644.7915, 8584.918
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 000832:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000812:ccbgssse054-ba_orcish.esl
+  LevelModifier: Easy
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1141.6123, 1940.6422, 8431.25
+    Rotation: 0, 0, 2.6831925
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedObject
+  FormKey: 000837:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 052FF5:Skyrim.esm
+  Owner: 000805:ccbgssse054-ba_orcish.esl
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -2222.1543, 1622.9017, 8099.1934
+    Rotation: 0, 0, 0.20000252
+- MutagenObjectType: PlacedObject
+  FormKey: 000838:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 00003B:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -3928.3694, 1330.1257, 8611.367
+- MutagenObjectType: PlacedNpc
+  FormKey: 00083A:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000804:ccbgssse054-ba_orcish.esl
+  LevelModifier: Easy
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 1027.1576, 5171.305, 8237.819
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B6E25:Skyrim.esm
+  Base: 012FDF:Skyrim.esm
+  Scale: 1.2
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: -1813.4662, 1954.3448, 8112.89
+    Rotation: 0.016112879, 6.141882, 2.800592
+- MutagenObjectType: PlacedObject
+  FormKey: 0B6E29:Skyrim.esm
+  Base: 03DE44:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: -1797.7286, 1925.932, 8110.242
+    Rotation: 0, 0, 1.7178001
+- MutagenObjectType: PlacedObject
+  FormKey: 0FF891:Skyrim.esm
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 01AFD0:Skyrim.esm
+  RagdollData: 0x0000803300390541000080B900E095BFE00FC9BF00009D35C2764840006D7269BA9E1740060072B900E8542C00000080000000806FA5C93F
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: -1814.1156, 1868.0111, 8175.2554
+    Rotation: 0, 0, 1.4500003
+- MutagenObjectType: PlacedObject
+  FormKey: 10981F:Skyrim.esm
+  Base: 071CF3:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: -1781.1525, 1979.5969, 8177.4873
+    Rotation: 0.0024783676, 0.0022985986, 4.9032583
+- MutagenObjectType: PlacedObject
+  FormKey: 109820:Skyrim.esm
+  Base: 071CF3:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  Placement:
+    Position: -1803.2041, 1993.5944, 8177.4873
+    Rotation: 0.004886922, 6.2810035, 6.0032554
+- MutagenObjectType: PlacedObject
+  FormKey: 000833:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 034CD6:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1756.2239, 1954.6675, -30000
+    Rotation: 6.254216, 0.28664765, 6.274743
+- MutagenObjectType: PlacedObject
+  FormKey: 000834:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 05CAE0:Skyrim.esm
+  RagdollData: 0x0000000000000000000000000000000018071C3BACCB0C3A70276239010000000000000000008039000098BC9191FEB98932CCBA5CF1973B
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1797.0797, 1961.6488, -30000
+    Rotation: 0, 0, 1.7831976
+- MutagenObjectType: PlacedObject
+  FormKey: 000835:ccbgssse054-ba_orcish.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 05CAE1:Skyrim.esm
+  LocationReference: 0B712C:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1779.6106, 1935.864, -30000
+    Rotation: 4.735567, 5.982512, 3.1316338
+MajorFlags:
+- 0x40000

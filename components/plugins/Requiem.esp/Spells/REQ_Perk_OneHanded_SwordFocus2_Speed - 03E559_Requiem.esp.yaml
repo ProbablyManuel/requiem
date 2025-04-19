@@ -1,0 +1,28 @@
+FormKey: 03E559:Requiem.esp
+EditorID: REQ_Perk_OneHanded_SwordFocus2_Speed
+Name:
+  TargetLanguage: English
+  Value: Sword Focus (Rank 2)
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 0008F9:Requiem.esp
+  Data:
+    Magnitude: 8
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+    ComparisonValue: 1
+- BaseEffect: 000928:Requiem.esp
+  Data:
+    Magnitude: 8
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+    ComparisonValue: 1

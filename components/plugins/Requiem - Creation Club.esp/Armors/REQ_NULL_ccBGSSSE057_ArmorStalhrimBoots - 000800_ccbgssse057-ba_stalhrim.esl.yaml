@@ -1,0 +1,43 @@
+FormKey: 000800:ccbgssse057-ba_stalhrim.esl
+EditorID: REQ_NULL_ccBGSSSE057_ArmorStalhrimBoots
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 90
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00081A:ccbgssse057-ba_stalhrim.esl
+ObjectBounds:
+  First: -16, -14, 0
+  Second: 16, 14, 35
+Name:
+  TargetLanguage: English
+  Value: Stalhrim Fur Boots
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE057\Armor\StalhrimArmor\BootsGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06C0ED:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+- 024106:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080E:ccbgssse057-ba_stalhrim.esl
+Value: 450
+Weight: 7
+ArmorRating: 19

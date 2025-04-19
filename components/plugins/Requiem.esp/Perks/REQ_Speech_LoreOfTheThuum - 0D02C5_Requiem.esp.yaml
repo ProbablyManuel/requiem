@@ -1,0 +1,19 @@
+FormKey: 0D02C5:Requiem.esp
+EditorID: REQ_Speech_LoreOfTheThuum
+Name:
+  TargetLanguage: English
+  Value: Lore of the Thu'um
+Description:
+  TargetLanguage: English
+  Value: You've been studying the lore and ancient script of dragons and the Thu'um.<br>Thus, you can shout more often.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 0242BA:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 0D02C4:Requiem.esp

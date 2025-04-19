@@ -1,0 +1,27 @@
+FormKey: 0206D9:Dragonborn.esm
+EditorID: REQ_Scroll_Spider_CloakFrost
+Name:
+  TargetLanguage: English
+  Value: Frost Cloaked Spider
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 086922:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Actors\DLC02\Spider_poison\CharacterAssets\ExpSpiderFrostCloakInv.nif
+  Data: 0x020000000000000000000000
+Value: 100
+Weight: 0.5
+BaseCost: 2
+Flags:
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: 3
+TargetType: Aimed
+Effects:
+- BaseEffect: 0206D7:Dragonborn.esm
+  Data:
+    Area: 5

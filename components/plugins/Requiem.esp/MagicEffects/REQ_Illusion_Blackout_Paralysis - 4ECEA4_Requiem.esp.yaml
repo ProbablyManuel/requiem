@@ -1,0 +1,35 @@
+FormKey: 4ECEA4:Requiem.esp
+EditorID: REQ_Illusion_Blackout_Paralysis
+Name:
+  TargetLanguage: English
+  Value: Paralysis
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If empowered, the spell also freezes the victim's mind, making him unconscious for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 4ECEA3:Requiem.esp
+  ComparisonValue: 1

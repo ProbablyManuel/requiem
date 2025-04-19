@@ -1,0 +1,103 @@
+FormKey: 022F53:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Forelhost02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Forelhost Crypt
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#0016150E'
+  DirectionalColor: '#00444D4F'
+  FogNearColor: '#00484F66'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00493A28'
+    DirectionalXMinus: '#003C3A25'
+    DirectionalYPlus: '#00433C27'
+    DirectionalYMinus: '#00433727'
+    DirectionalZPlus: '#001F1B11'
+    DirectionalZMinus: '#0066583C'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00495664'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: 0
+Location: 01917A:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\DunCaveRuinGreen_e.dds
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC18:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 03A497:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917A:Skyrim.esm
+  Placement:
+    Position: 2655.9995, 1056, -1440
+    Rotation: 0, -0, 5.3593845
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 08B4DB:Skyrim.esm
+  Base: 020670:Skyrim.esm
+  Scale: 0.95
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917A:Skyrim.esm
+  Placement:
+    Position: 625.53925, -50.808434, -1163.1625
+    Rotation: 0.34299386, 6.265732, 0.2261842
+- MutagenObjectType: PlacedObject
+  FormKey: 03A577:Skyrim.esm
+  Version2: 4
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917A:Skyrim.esm
+  Placement:
+    Position: -317.56436, -511.51108, -1149.0282
+    Rotation: 0, -0, 4.676387
+- MutagenObjectType: PlacedObject
+  FormKey: 082D3D:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917A:Skyrim.esm
+  Placement:
+    Position: 1923.3097, 892.7464, -1161.4558
+MajorFlags:
+- 0x40000

@@ -1,0 +1,231 @@
+FormKey: 1091B9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EncWarlockFire07BretonF
+Version2: 6
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Female
+  - Respawn
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 200
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 46
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 100
+Factions:
+- Faction: 026724:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 08601A:Skyrim.esm
+Voice: 013AE4:Skyrim.esm
+Template: 1091A9:Skyrim.esm
+Race: 013741:Skyrim.esm
+ActorEffect:
+- 01C789:Skyrim.esm
+- 072317:Skyrim.esm
+- 07231B:Skyrim.esm
+- 0DE511:Skyrim.esm
+- 0F95EB:Skyrim.esm
+- 101064:Skyrim.esm
+- 10F7F6:Skyrim.esm
+- 3888DF:Requiem.esp
+Perks:
+- Perk: 05312A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581E7:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581FC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 068BCC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 10FACD:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0E0FE1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 044CD6:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 01317A:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 43
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 76
+  - Key: Conjuration
+    Value: 71
+  - Key: Destruction
+    Value: 100
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 100
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 565
+  Magicka: 520
+  Stamina: 40
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HairColor: 0F7565:Skyrim.esm
+CombatStyle: 044CD0:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 044CD5:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 051647:Skyrim.esm
+TextureLighting: '#00B9B3AA'
+FaceMorph:
+  JawUpVsDown: -0.04000002
+  JawNarrowVsWide: -0.8
+  EyesUpVsDown: 0.65999997
+  BrowsUpVsDown: -0.65999997
+  LipsUpVsDown: 0.17999995
+  ChinNarrowVsWide: -0.8
+FaceParts:
+  Eyes: 3
+  Mouth: 20
+TintLayers:
+- Index: 17
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: 664
+- Index: 18
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: 674
+- Index: 19
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: 684
+- Index: 20
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: 692
+- Index: 22
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: -1
+- Index: 23
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: 707
+- Index: 24
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: -1
+- Index: 25
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: -1
+- Index: 26
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: -1
+- Index: 27
+  Color: '#000F0440'
+  InterpolationValue: 0.22
+  Preset: -1
+MajorFlags:
+- 0x40000

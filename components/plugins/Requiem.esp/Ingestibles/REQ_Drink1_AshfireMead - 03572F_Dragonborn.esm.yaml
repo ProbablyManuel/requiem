@@ -1,0 +1,27 @@
+FormKey: 03572F:Dragonborn.esm
+EditorID: REQ_Drink1_AshfireMead
+Name:
+  TargetLanguage: English
+  Value: Ashfire Mead
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Mead01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 5
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 300
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 450

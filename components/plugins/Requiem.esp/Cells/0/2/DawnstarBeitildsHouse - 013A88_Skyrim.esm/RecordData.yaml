@@ -1,0 +1,87 @@
+FormKey: 013A88:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DawnstarBeitildsHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Beitild's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 02005D:Skyrim.esm
+Owner: 013612:Skyrim.esm
+LockList: 013612:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5852:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 013C11:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 029CB0:Skyrim.esm
+  TeleportDestination:
+    Door: 017744:Skyrim.esm
+    Position: 31940.104, 107334.26, -13803.18
+    Rotation: 0, -0, -2.5583746
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 09DA2D:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0E030F:Skyrim.esm
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  Owner: 013612:Skyrim.esm
+  LocationReference: 02005D:Skyrim.esm
+  Placement:
+    Position: 1024.4348, -894.7303, 272
+    Rotation: 0, -0, 3.1415927
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 04D7BE:Skyrim.esm
+  Version2: 5
+  Base: 09AF19:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 071061:Skyrim.esm
+  LocationReference: 02005D:Skyrim.esm
+  Placement:
+    Position: 862.6349, -647.41254, 272.34967
+    Rotation: 0, -0, 1.5500036
+MajorFlags:
+- 0x40000

@@ -1,0 +1,43 @@
+FormKey: 000801:ccbgssse057-ba_stalhrim.esl
+EditorID: REQ_NULL_ccBGSSSE057_ArmorStalhrimCuirass
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 80
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00081A:ccbgssse057-ba_stalhrim.esl
+ObjectBounds:
+  First: -31, -38, 0
+  Second: 31, 38, 29
+Name:
+  TargetLanguage: English
+  Value: Stalhrim Fur Armor
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE057\Armor\StalhrimArmor\ArmorGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+- 024106:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080D:ccbgssse057-ba_stalhrim.esl
+Value: 2200
+Weight: 38
+ArmorRating: 48

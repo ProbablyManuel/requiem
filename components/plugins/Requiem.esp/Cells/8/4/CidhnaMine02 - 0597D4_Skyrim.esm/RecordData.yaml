@@ -1,0 +1,89 @@
+FormKey: 0597D4:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: CidhnaMine02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Markarth Ruins
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#004B4B4B'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 8000
+  FogClipDistance: 8000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 0.9
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - FogPower
+  - LightFadeDistances
+LightingTemplate: 091937:Skyrim.esm
+WaterHeight: 0
+Location: 0E2502:Skyrim.esm
+SkyAndWeatherFromRegion: 07042F:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AB0C3C:Requiem.esp
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_CidhnaMine_Redemption
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CidhnaMineEscape
+        Object: 040A5E:Skyrim.esm
+  Base: 000F55:Skyrim.esm
+  Primitive:
+    Bounds: 128, 325.2807, 394.3814
+    Color: '#00000080'
+    Unknown: 0.15
+    Type: Box
+  Placement:
+    Position: -10467.778, 464.0127, -372.034
+- MutagenObjectType: PlacedNpc
+  FormKey: 473EDD:Requiem.esp
+  Base: 37244A:Requiem.esp
+  PersistentLocation: 0E2502:Skyrim.esm
+  Placement:
+    Position: -7227.399, 1747.3588, -718.2219
+    Rotation: 0, 0, 2.267284
+- MutagenObjectType: PlacedNpc
+  FormKey: 473EDC:Requiem.esp
+  Base: 37244A:Requiem.esp
+  PersistentLocation: 0E2502:Skyrim.esm
+  Placement:
+    Position: -7357.2896, 1394.6608, -718.2219
+    Rotation: 0, 0, 3.0672817
+- MutagenObjectType: PlacedNpc
+  FormKey: 473EDB:Requiem.esp
+  Base: 37244A:Requiem.esp
+  PersistentLocation: 0E2502:Skyrim.esm
+  Placement:
+    Position: -7344.4224, 1111.467, -718.2219
+    Rotation: 0, 0, 0.36728185
+MajorFlags:
+- 0x40000

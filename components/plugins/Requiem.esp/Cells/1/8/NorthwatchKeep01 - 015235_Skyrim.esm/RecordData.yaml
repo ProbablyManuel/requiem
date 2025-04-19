@@ -1,0 +1,74 @@
+FormKey: 015235:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: NorthwatchKeep01
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Northwatch Keep
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 01952F:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019285:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC4F:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AD3823:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0D5383:Skyrim.esm
+  Placement:
+    Position: 175, -3255, -471
+    Rotation: 0, 0, 1.3962634
+- MutagenObjectType: PlacedObject
+  FormKey: 0C6AEA:Requiem.esp
+  Base: 0C6ADC:Requiem.esp
+  RagdollData: 0x0009FB00000000000000000000000000C5D4C8BF1BE643BEC92C97BC00700D00805915400000003A000000001F7D3D34C663E13771D9C93F
+  Placement:
+    Position: 196.22276, -7031.8584, -411.1526
+- MutagenObjectType: PlacedObject
+  FormKey: AD3822:Requiem.esp
+  Base: 03103A:Skyrim.esm
+  Placement:
+    Position: 175.26086, -3269.0405, -466.80164
+    Rotation: 1.7453292E-06, 0.08726646, 1.5707964
+MajorFlags:
+- 0x40000

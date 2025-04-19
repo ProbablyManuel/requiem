@@ -1,0 +1,65 @@
+FormKey: 03FC8F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: IlinaltasDeep02
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ilinalta's Deluge
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00191B29'
+    DirectionalXMinus: '#00141B26'
+    DirectionalYPlus: '#00171C28'
+    DirectionalYMinus: '#00171928'
+    DirectionalZPlus: '#000A0C12'
+    DirectionalZMinus: '#0023293D'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+LightingTemplate: 08CDDA:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01919C:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\BleakFallsCube_e.dds
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC3C:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A0328:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 089D3F:Skyrim.esm
+  Version2: 2
+  Base: 02065D:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01919C:Skyrim.esm
+  Placement:
+    Position: 1156.2247, 3801.5654, 574.5374
+    Rotation: 0, -0, 1.6000013
+MajorFlags:
+- 0x40000

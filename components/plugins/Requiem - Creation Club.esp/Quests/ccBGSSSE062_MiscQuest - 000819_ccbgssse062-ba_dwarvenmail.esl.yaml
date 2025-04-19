@@ -1,0 +1,141 @@
+FormKey: 000819:ccbgssse062-ba_dwarvenmail.esl
+EditorID: ccBGSSSE062_MiscQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccBGSSSE062_MiscQuest_02000819
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Book
+      Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Corpse
+      Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Orc
+      Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+      Alias: 5
+  FileName: SSE_QF_ccBGSSSE062_MiscQuest_02000819
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_MiscQuest_02000819
+    FragmentName: Fragment_1
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_MiscQuest_02000819
+    FragmentName: Fragment_2
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE062_MiscQuest_02000819
+    FragmentName: Fragment_0
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+      Alias: 1
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 30
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+    - Name: defaultsetstageonplayeracquire
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQST
+        Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Type: Misc
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  Unknown: 20
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 3331
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 30
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Investigate the camp south of Ivarstead
+  Targets:
+  - AliasID: 1
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the Arena Fan's Note
+  Targets:
+  - AliasID: 1
+NextAliasID: 6
+Aliases:
+- Name: Corpse
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00081D:ccbgssse062-ba_dwarvenmail.esl
+  VoiceTypes: Null
+- ID: 1
+  Name: Note
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 00081B:ccbgssse062-ba_dwarvenmail.esl
+    Create: In
+  VoiceTypes: Null
+- ID: 3
+  Name: Book
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  CreateReferenceToObject:
+    Object: 000821:ccbgssse062-ba_dwarvenmail.esl
+    Create: In
+  VoiceTypes: Null
+- ID: 5
+  Name: Orc
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 000820:ccbgssse062-ba_dwarvenmail.esl
+  VoiceTypes: Null

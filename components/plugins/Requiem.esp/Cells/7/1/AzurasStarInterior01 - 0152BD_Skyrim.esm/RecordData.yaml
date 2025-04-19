@@ -1,0 +1,84 @@
+FormKey: 0152BD:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: AzurasStarInterior01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Azura's Star Interior
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00355554'
+  DirectionalColor: '#00156073'
+  FogNearColor: '#00317D7D'
+  FogNear: 750
+  FogFar: 12000
+  DirectionalRotationZ: 90
+  DirectionalFade: 1
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#003A5557'
+    DirectionalXMinus: '#002F5550'
+    DirectionalYPlus: '#00355854'
+    DirectionalYMinus: '#00355154'
+    DirectionalZPlus: '#00192826'
+    DirectionalZMinus: '#00508181'
+    Specular: '#0006A89C'
+    Scale: 1
+  FogFarColor: '#0006A89C'
+  FogMax: 1
+  LightFadeBegin: 15000
+  LightFadeEnd: 16000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0E2167:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 018EE6:Skyrim.esm
+AcousticSpace: 0FD92B:Skyrim.esm
+EncounterZone: 03EBEC:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0D7B02:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 0A2459:Skyrim.esm
+  Base: AD3A93:Requiem.esp
+  LinkedReferences:
+  - Reference: 0A245A:Skyrim.esm
+  PersistentLocation: 018EE6:Skyrim.esm
+  LocationReference: 018EE6:Skyrim.esm
+  Placement:
+    Position: -3530.9573, -5963.2754, 174.15997
+    Rotation: 0, 0, 3.500003
+- MutagenObjectType: PlacedNpc
+  FormKey: 0A244F:Skyrim.esm
+  Base: AD3A94:Requiem.esp
+  LinkedReferences:
+  - Reference: 0A2454:Skyrim.esm
+  PersistentLocation: 018EE6:Skyrim.esm
+  LocationReference: 018EE6:Skyrim.esm
+  Placement:
+    Position: -3293.1638, -7845.7554, 475.04816
+    Rotation: 0, 0, 1.8750002
+- MutagenObjectType: PlacedNpc
+  FormKey: 04C43B:Skyrim.esm
+  Base: AD3A95:Requiem.esp
+  PersistentLocation: 018EE6:Skyrim.esm
+  LocationReference: 018EE6:Skyrim.esm
+  Placement:
+    Position: -4720.6626, -7158.647, -247.10458
+    Rotation: 0, 0, 0.39181593
+MajorFlags:
+- 0x40000

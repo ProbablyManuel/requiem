@@ -1,0 +1,41 @@
+FormKey: AD3912:Requiem.esp
+EditorID: REQ_Effect_MeridiasMaledictionVampirismTrigger
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_MeridiasMalediction
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Beacon
+      Object: 04E4E6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: vampirism
+      Object: 0ED0A8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeUndead
+      Object: 013796:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: malediction
+      Object: AD3911:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Meridia's Malediction (Vampirism Trigger)
+MenuDisplayObject: 0A0E7F:Skyrim.esm
+Flags:
+- NoHitEvent
+- NoDuration
+- NoMagnitude
+- NoArea
+- FXPersist
+- HideInUI
+- NoHitEffect
+- NoDeathDispel
+HitShader: 00A3BB:Dawnguard.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastingArt: 01C859:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

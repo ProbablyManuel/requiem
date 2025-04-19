@@ -1,0 +1,49 @@
+FormKey: 036DA8:Dragonborn.esm
+EditorID: REQ_NULL_DLC2ExpSpiderPoisonEnemyEFFdmgShow
+Name:
+  TargetLanguage: English
+  Value: Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+MagicSkill: Destruction
+ResistValue: PoisonResist
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 0200CD:Dragonborn.esm
+TaperCurve: 2
+TaperDuration: 0.1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FCF:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 0FFF4B:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 027EA3:Dragonborn.esm
+- Type: Charge
+  Sound: 027EA0:Dragonborn.esm
+- Type: Ready
+  Sound: 027EA1:Dragonborn.esm
+- Type: Release
+  Sound: 027EA2:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: Ongoing poison damage of <mag> points per second.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1

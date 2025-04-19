@@ -1,0 +1,53 @@
+FormKey: 0A6A14:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Steel_Dagger_Stamina3
+ObjectBounds:
+  First: -3, -15, -1
+  Second: 3, 32, 0
+Name:
+  TargetLanguage: English
+  Value: Steel Dagger of Torpor
+Model:
+  File: Weapons\Steel\SteelDagger.nif
+  Data: 0x020000000B000000000000004FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305DA8E929164647300262C333B0872DDB66464730014F240E60121FBE16464730014F240E6B8EC307B64647300262C333BBB70F2786464730014F240E6E9D354206464730014F240E65BE64F076464730014F240E6E1B7469E6464730014F240E6
+ObjectEffect: 05B45B:Skyrim.esm
+EnchantmentAmount: 1500
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E719:Skyrim.esm
+- 01E713:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 013EB7:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03CED9:Skyrim.esm
+UnequipSound: 03CEDB:Skyrim.esm
+BasicStats:
+  Value: 20
+  Weight: 2.5
+  Damage: 5
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 2
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+Template: 013986:Skyrim.esm

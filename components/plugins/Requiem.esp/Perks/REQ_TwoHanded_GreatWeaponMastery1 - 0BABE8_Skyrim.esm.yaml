@@ -1,0 +1,30 @@
+FormKey: 0BABE8:Skyrim.esm
+EditorID: REQ_TwoHanded_GreatWeaponMastery1
+Name:
+  TargetLanguage: English
+  Value: Great Weapon Mastery
+Description:
+  TargetLanguage: English
+  Value: Your improved fighting techniques increase your damage dealt with two-handed weapons.<br>[20% more damage]
+NumRanks: 1
+Playable: True
+NextPerk: 079346:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 079346:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.2

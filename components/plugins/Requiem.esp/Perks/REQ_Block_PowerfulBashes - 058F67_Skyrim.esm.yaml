@@ -1,0 +1,22 @@
+FormKey: 058F67:Skyrim.esm
+EditorID: REQ_Block_PowerfulBashes
+Name:
+  TargetLanguage: English
+  Value: Powerful Bashes
+Description:
+  TargetLanguage: English
+  Value: By gathering your strength for a short while, you can perform a much more powerful bash.<br>[Able to do a power bash]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BCCAE:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Block
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True

@@ -1,0 +1,44 @@
+FormKey: 000804:ccbgssse041-netchleather.esl
+EditorID: REQ_NULL_ccBGSSSE041_ArmorNetchLeatherHelmetBoiled
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 1040
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00094A:ccbgssse041-netchleather.esl
+Name:
+  TargetLanguage: English
+  Value: Boiled Netch Leather Helmet
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE041\Armor\NetchLeather\NetchLeatherHelmetBoiled_GO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Hair
+  - Circlet
+  - Ears
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06BBDB:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00081D:ccbgssse041-netchleather.esl
+- 000822:ccbgssse041-netchleather.esl
+- 00081E:ccbgssse041-netchleather.esl
+- 000820:ccbgssse041-netchleather.esl
+Value: 150
+Weight: 2
+ArmorRating: 20

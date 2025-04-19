@@ -1,0 +1,158 @@
+FormKey: 09E07C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MQ306DragonC
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -192, -352, 0
+  Second: 192, 352, 384
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - BleedoutOverride
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 10
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - SpellList
+  - AIPackages
+  - ModelAnimation
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 300
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 032D9C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E870F:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0200E7:Dragonborn.esm
+  Fluff: 0x000000
+DeathItem: 03ADA5:Skyrim.esm
+Voice: 02992B:Skyrim.esm
+Template: 08BC7E:Skyrim.esm
+Race: 012E82:Skyrim.esm
+ActorEffect:
+- 057B4B:Skyrim.esm
+- 04DBA5:Skyrim.esm
+- 0252C0:Skyrim.esm
+FarAwayModel: 0CC84C:Skyrim.esm
+AttackRace: 012E82:Skyrim.esm
+Perks:
+- Perk: 1046BD:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Class: 02F201:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 20
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 20
+  - Key: Block
+    Value: 21
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 31
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 7330
+  Magicka: 150
+  Stamina: 1015
+  Unused: 16743
+  FarAwayModelDistance: 10000
+  GearedUpWeapons: 1
+  Unused2: 0x775AEF
+CombatStyle: 048C83:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 02F2F0:Skyrim.esm
+DefaultOutfit: 08BC7C:Skyrim.esm
+SleepingOutfit: 05A0B7:Skyrim.esm
+DefaultPackageList: 09C21B:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

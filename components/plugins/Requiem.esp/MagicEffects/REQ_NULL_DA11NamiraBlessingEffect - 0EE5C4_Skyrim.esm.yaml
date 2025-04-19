@@ -1,0 +1,23 @@
+FormKey: 0EE5C4:Skyrim.esm
+EditorID: REQ_NULL_DA11NamiraBlessingEffect
+Name:
+  TargetLanguage: English
+  Value: Fortify Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+MagicSkill: Restoration
+EnchantShader: 092DEE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Stamina
+  Association: 074F71:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina is increased by <mag> points. Feeding on corpses grants you increased Health and Health regeneration.

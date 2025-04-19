@@ -1,0 +1,31 @@
+FormKey: 027490:Dragonborn.esm
+EditorID: REQ_NULL_DLC2ExpSpiderGlowingScroll
+Name:
+  TargetLanguage: English
+  Value: Glowing Spider
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 086922:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Actors\DLC02\Spider_poison\CharacterAssets\ExpSpiderZombieInv.nif
+  Data: 0x020000000000000000000000
+Value: 100
+Weight: 0.5
+BaseCost: 2
+CastType: 3
+TargetType: Aimed
+Effects:
+- BaseEffect: 027491:Dragonborn.esm
+  Data:
+    Area: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetVMQuestVariableConditionData
+      Quest: 017962:Dragonborn.esm
+      SecondUnusedIntParameter: -285210624
+      VariableName: ::bLightSpiderSpawned_var

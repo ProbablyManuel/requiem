@@ -1,0 +1,21 @@
+FormKey: 98CA5B:Requiem.esp
+EditorID: REQ_Ench_FortifyMass
+Name:
+  TargetLanguage: English
+  Value: Fortify Mass
+Flags:
+- Recover
+- PowerAffectsMagnitude
+BaseCost: 5
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: Mass
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Mass increases by the equivalent of worn equipment weighting <mag>.

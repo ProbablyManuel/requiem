@@ -1,0 +1,21 @@
+FormKey: 682FB4:Requiem.esp
+EditorID: REQ_Spell_FeatherFalling_NoFallingDamage
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 027F93:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0

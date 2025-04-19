@@ -1,0 +1,31 @@
+FormKey: 024E0B:Dragonborn.esm
+EditorID: REQ_Drink3_SadrisSujamma
+Name:
+  TargetLanguage: English
+  Value: Sadri's Sujamma
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: DLC02\Clutter\DLC02LocalLiquor.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 10
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 45
+    Duration: 600
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 30
+    Duration: 900
+- BaseEffect: AE372B:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 300

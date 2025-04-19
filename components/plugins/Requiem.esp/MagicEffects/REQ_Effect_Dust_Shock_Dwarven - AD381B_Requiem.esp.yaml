@@ -1,0 +1,38 @@
+FormKey: AD381B:Requiem.esp
+EditorID: REQ_Effect_Dust_Shock_Dwarven
+Name:
+  TargetLanguage: English
+  Value: Shock Powder
+MenuDisplayObject: 09FA64:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistShock
+TaperWeight: 0.3
+HitShader: 057C67:Skyrim.esm
+TaperCurve: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 51BF36:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+ImageSpaceModifier: 04046F:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Does double damage to constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+  ComparisonValue: 1

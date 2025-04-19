@@ -1,0 +1,62 @@
+FormKey: 029AFE:Requiem.esp
+EditorID: REQ_Destruction2_LightningJolt_ShockDamage
+Name:
+  TargetLanguage: English
+  Value: Shock Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+MagicSkill: Destruction
+ResistValue: ResistShock
+CastingLight: 057C68:Skyrim.esm
+TaperWeight: 0.01
+HitShader: 057C67:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+TaperDuration: 0.1
+SecondActorValueWeight: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 025458:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+SecondActorValue: Magicka
+CastingArt: 058E9B:Skyrim.esm
+ImpactData: 059ED9:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F208:Skyrim.esm
+- Type: Charge
+  Sound: 03F20C:Skyrim.esm
+- Type: Ready
+  Sound: 03F1F0:Skyrim.esm
+- Type: Release
+  Sound: 03F206:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster surrounds the target with crackling lightning, dealing <mag> shock damage per second to health and twice the amount to magicka for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 40
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistShock
+  ComparisonValue: 40

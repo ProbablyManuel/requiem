@@ -1,0 +1,37 @@
+FormKey: 0EC870:Skyrim.esm
+EditorID: MoraTapinellaBits
+Version2: 14
+ObjectBounds:
+  First: -21, -22, -2
+  Second: 7, 7, 5
+Name:
+  TargetLanguage: English
+  Value: Mora Tapinella
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\MoraTapinellaBits01.nif
+  Data: 0x0200000002000000000000006D419D3064647300604DDD5CB559A14664647300604DDD5C
+PickUpSound: 0BAD13:Skyrim.esm
+Value: 4
+Weight: 0.25
+IngredientValue: 4
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 03EB27:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

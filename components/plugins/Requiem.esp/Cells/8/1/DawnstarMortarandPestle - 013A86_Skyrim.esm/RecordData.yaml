@@ -1,0 +1,92 @@
+FormKey: 013A86:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DawnstarMortarandPestle
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Mortar and Pestle
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 02005B:Skyrim.esm
+Owner: 013614:Skyrim.esm
+LockList: 013614:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5852:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 09DA30:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 09E0DA:Skyrim.esm
+  Scale: 1.2
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 02005B:Skyrim.esm
+  Placement:
+    Position: 1306.3071, 83.95879, 1.2349358
+    Rotation: 0, -0, 3.2000008
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E0323:Skyrim.esm
+  Base: 012FEB:Skyrim.esm
+  LocationReference: 02005B:Skyrim.esm
+  Placement:
+    Position: 1390.4774, 55.259766, 0.42043495
+    Rotation: -0.0010927583, 0.0007854723, 5.8431954
+- MutagenObjectType: PlacedObject
+  FormKey: 04DBA9:Skyrim.esm
+  Version2: 4
+  Base: 09AF19:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 071061:Skyrim.esm
+  LocationReference: 02005B:Skyrim.esm
+  Placement:
+    Position: 1274.1285, -348.98853, 240
+    Rotation: 0, -0, 2.9970022E-06
+- MutagenObjectType: PlacedObject
+  FormKey: 0E0324:Skyrim.esm
+  Base: 012FE9:Skyrim.esm
+  LocationReference: 02005B:Skyrim.esm
+  Placement:
+    Position: 1225.6039, 69.850044, 0.021240234
+    Rotation: -0.0012533271, 0.0009057237, 5.8195424
+MajorFlags:
+- 0x40000

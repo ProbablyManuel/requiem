@@ -1,0 +1,40 @@
+FormKey: AE38DA:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyWeapons_Stormblade
+Name:
+  TargetLanguage: English
+  Value: Fortify Weapons
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Fighting for Skyrim's independence and earning the title Stormblade in the ranks of the Stormcloaks pleases Kyne. One-handed, two-handed, and ranged weapons deal <mag>% more damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285212896
+    VariableName: ::playerInvolved_var
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285212864
+    VariableName: ::PlayerRank_var
+  ComparisonValue: 4
+- MutagenObjectType: ConditionGlobal
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 019E53:Skyrim.esm
+    SecondUnusedIntParameter: -285212832
+    VariableName: ::playerAllegiance_var
+  ComparisonValue: 073F11:Skyrim.esm

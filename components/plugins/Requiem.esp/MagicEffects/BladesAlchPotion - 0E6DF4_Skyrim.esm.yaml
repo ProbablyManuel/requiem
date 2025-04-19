@@ -1,0 +1,37 @@
+FormKey: 0E6DF4:Skyrim.esm
+EditorID: BladesAlchPotion
+Version2: 9
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BladesAlchPotionScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQBladesDragonResearch
+      Object: 0E6DF0:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Esbern's Potion
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsDuration
+BaseCost: 1
+HitShader: 012FD9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+CastingArt: 01C859:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Renders the imbiber somewhat blurry in the eyes of a dragon, hampering its physical attacks.

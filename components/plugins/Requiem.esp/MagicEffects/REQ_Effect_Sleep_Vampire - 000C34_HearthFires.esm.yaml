@@ -1,0 +1,33 @@
+FormKey: 000C34:HearthFires.esm
+EditorID: REQ_Effect_Sleep_Vampire
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TimedAbilityScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pAbilityToRemove
+      Object: 000C35:HearthFires.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: pHoursToWait
+      Data: 24
+Name:
+  TargetLanguage: English
+  Value: Vampiric Blood Rested
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+DualCastScale: 1
+PerkToApply: 10D969:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds:
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

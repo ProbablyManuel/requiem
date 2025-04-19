@@ -1,0 +1,24 @@
+FormKey: AE372D:Requiem.esp
+EditorID: REQ_Alcohol_ResistFrost
+Name:
+  TargetLanguage: English
+  Value: Resist Frost
+MenuDisplayObject: 09DB72:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistFrost
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Frost deals <mag>% less damage to you for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

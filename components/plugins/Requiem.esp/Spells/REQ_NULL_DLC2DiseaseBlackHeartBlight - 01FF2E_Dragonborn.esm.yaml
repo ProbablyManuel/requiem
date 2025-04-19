@@ -1,0 +1,19 @@
+FormKey: 01FF2E:Dragonborn.esm
+EditorID: REQ_NULL_DLC2DiseaseBlackHeartBlight
+Name:
+  TargetLanguage: English
+  Value: Black Heart Blight
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+Type: Disease
+ChargeTime: 0.5
+TargetType: Touch
+Effects:
+- BaseEffect: 01FF2C:Dragonborn.esm
+  Data:
+    Magnitude: 10

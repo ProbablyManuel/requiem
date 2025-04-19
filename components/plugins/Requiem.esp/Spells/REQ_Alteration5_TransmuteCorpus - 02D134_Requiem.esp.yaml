@@ -1,0 +1,22 @@
+FormKey: 02D134:Requiem.esp
+EditorID: REQ_Alteration5_TransmuteCorpus
+Name:
+  TargetLanguage: English
+  Value: 'Transmute: Corpus'
+MenuDisplayObject: 109AC2:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1000
+Flags:
+- ManualCostCalc
+- NoDualCastModification
+ChargeTime: 0.1
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44BA:Skyrim.esm
+Effects:
+- BaseEffect: 02D133:Requiem.esp
+  Data:
+    Duration: 1

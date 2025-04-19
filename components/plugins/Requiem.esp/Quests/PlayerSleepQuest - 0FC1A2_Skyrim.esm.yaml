@@ -1,0 +1,81 @@
+FormKey: 0FC1A2:Skyrim.esm
+EditorID: PlayerSleepQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PlayerSleepQuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BYOHAdoptionSleepAbilityFemale
+      Object: 004292:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RestedMessage
+      Object: 0FD80D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MarriageRestedMessage
+      Object: 0FD80F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BeastBloodMessage
+      Object: 10E7E2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDoomLoverAbility
+      Object: 00B4E0:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BYOHAdoptionRestedMessageMale
+      Object: 002F55:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WellRested
+      Object: 0FB984:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MarriageSleepAbility
+      Object: 0CDA1D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BYOHAdoptionSleepAbilityMale
+      Object: 002F54:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BYOHAdoptionRestedMessageFemale
+      Object: 004293:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BYOHRelationshipAdoption
+      Object: 0042B4:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LocTypeInn
+      Object: 01CB87:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LoveInterest
+      Object: 021382:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WellRestedMessage
+      Object: 0FD80E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurrentHomeLocation
+      Object: 0042B4:HearthFires.esm
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CHScript
+      Object: 04B2D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RelationshipMarriageFIN
+      Object: 021382:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LocTypePlayerHouse
+      Object: 0FC1A3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Rested
+      Object: 0FB981:Skyrim.esm
+  - Name: QF_PlayerSleepQuest_000FC1A2
+  FileName: QF_PlayerSleepQuest_000FC1A2
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_PlayerSleepQuest_000FC1A2
+    FragmentName: Fragment_0
+Flags:
+- StartGameEnabled
+- 0x10
+QuestFormVersion: 65
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+NextAliasID: 0

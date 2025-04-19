@@ -1,0 +1,36 @@
+FormKey: 09151B:Skyrim.esm
+EditorID: SpiderEgg
+ObjectBounds:
+  First: -4, -4, -5
+  Second: 4, 4, 5
+Name:
+  TargetLanguage: English
+  Value: Spider Egg
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SpiderEgg01.nif
+  Data: 0x020000000300000000000000B73BAF9E64647300604DDD5C3042A68D64647300604DDD5C6BBB96D164647300262C333B
+PickUpSound: 0BFB1F:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 5
+Weight: 0.2
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 03EB21:Skyrim.esm
+  Data:
+    Magnitude: 0.2
+    Duration: 30
+- BaseEffect: 03EB1B:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

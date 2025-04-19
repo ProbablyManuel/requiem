@@ -1,0 +1,35 @@
+FormKey: 043663:Requiem.esp
+EditorID: REQ_Ingredient_Claws
+ObjectBounds:
+  First: -6, -5, -6
+  Second: 6, 5, 6
+Name:
+  TargetLanguage: English
+  Value: Claws
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\BearClaws.nif
+  Data: 0x020000000000000000000000
+Value: 2
+Weight: 0.1
+IngredientValue: 2
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 4.8
+    Duration: 60
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 60
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5

@@ -1,0 +1,103 @@
+FormKey: 01EDA5:Dragonborn.esm
+EditorID: REQ_Activator_AllMakerStone_Beast
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2StandingStoneFX
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StandingStoneCorruptedFXS
+      Object: 02ADEE:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RingTop
+      Object: 027E6F:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StandingStoneFXLink
+      Object: 031C3C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OBJSTandingStoneExplode
+      Object: 03C0D9:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OBJSTandingStoneExplode2D
+      Object: 03C0D8:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StandingStoneCracksFXS
+      Object: 02ADED:Dragonborn.esm
+  - Name: dlc2standingstonescript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2Pillar
+      Object: 01C4E4:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2VoicePushProjectile03
+      Object: 02174F:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlackHoldImod
+      Object: 0F756E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2SpellLearned
+      Object: 01DFA4:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2PillarBlockingTopic
+      Object: 01DE98:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StoneActivateSound
+      Object: 03D594:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2PillarFollowerScene
+      Object: 03D04C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2VoicePushProjectile01
+      Object: 01F139:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlackImod
+      Object: 0F756D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerAtPillar
+      Object: 01C4E4:Dragonborn.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2PillarMiraakVoice
+      Object: 03544B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlackBackImod
+      Object: 0F756F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StandingStoneNotReadyMsg
+      Object: 03C338:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGStandingStoneActivateB
+      Object: 03D3C6:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGStandingStoneActivateA
+      Object: 03D3C5:Dragonborn.esm
+ObjectBounds:
+  First: -86, -78, -85
+  Second: 82, 106, 629
+Name:
+  TargetLanguage: English
+  Value: Beast Stone
+Model:
+  File: DLC02\Landscape\StandingStone\DLC2StandingStoneBeast.nif
+  Data: 0x020000000000000000000000
+Destructible:
+  Data:
+    Health: 100
+    DESTCount: 1
+  Stages:
+  - Data:
+      HealthPercent: 50
+      Flags:
+      - CapDamage
+      - IgnoreExternalDamage
+    Model:
+      File: Dungeons\Mines\Ore\MineOreDepleted03.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: MineOreDepleted03:3
+        NewTexture: 000C0F:Skyrim.esm
+        Index: 1
+MarkerColor: '#00CC4C33'
+Flags: []

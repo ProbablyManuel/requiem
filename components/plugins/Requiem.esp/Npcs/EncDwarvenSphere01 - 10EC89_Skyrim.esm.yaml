@@ -1,0 +1,145 @@
+FormKey: 10EC89:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EncDwarvenSphere01
+Version2: 8
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -31, -40, 0
+  Second: 32, 39, 128
+Configuration:
+  Flags:
+  - Respawn
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  SpeedMultiplier: 135
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Factions
+  - AIData
+  - AIPackages
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 250
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 043598:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD82:Skyrim.esm
+Voice: 01F1D0:Skyrim.esm
+Template: 023A97:Skyrim.esm
+Race: 0131F2:Skyrim.esm
+WornArmor: 07874B:Skyrim.esm
+AttackRace: 0131F2:Skyrim.esm
+Perks:
+- Perk: 0FAB0A:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+Class: 090358:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Dwarven Sphere
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 37
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 38
+  - Key: Block
+    Value: 27
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 27
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 16
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 315
+  Stamina: 170
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+CombatStyle: 07EA48:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 06CE2F:Skyrim.esm
+DefaultOutfit: 0F9071:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

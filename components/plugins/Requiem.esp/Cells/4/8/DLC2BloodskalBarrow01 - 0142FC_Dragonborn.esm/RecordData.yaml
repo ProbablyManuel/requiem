@@ -1,0 +1,84 @@
+FormKey: 0142FC:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2BloodskalBarrow01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Raven Rock Mine
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#000E1212'
+  FogNearColor: '#001E1B11'
+  FogFar: 4000
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00211F16'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: 0
+Location: 01429A:Dragonborn.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 01429B:Dragonborn.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A61:Requiem.esp
+  Base: AE3A60:Requiem.esp
+  PersistentLocation: 01429A:Dragonborn.esm
+  Placement:
+    Position: 5626.346, 7632.0625, -499.69516
+    Rotation: 0, 0, 3.3168237
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A65:Requiem.esp
+  Base: AE3A64:Requiem.esp
+  PersistentLocation: 01429A:Dragonborn.esm
+  Placement:
+    Position: 5823.8354, 7993.9966, -499.43762
+    Rotation: 0, 0, 2.8000019
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A63:Requiem.esp
+  Base: AE3A62:Requiem.esp
+  PersistentLocation: 01429A:Dragonborn.esm
+  Placement:
+    Position: 6135.6655, 7862.7734, -499.43762
+    Rotation: 0, 0, 2.0000181
+- MutagenObjectType: PlacedObject
+  FormKey: 024D68:Dragonborn.esm
+  Base: 020670:Skyrim.esm
+  Scale: 0.75
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01429A:Dragonborn.esm
+  Placement:
+    Position: 7749.572, 4822.9785, -234.46057
+    Rotation: 0, 0, 3.175
+MajorFlags:
+- 0x40000

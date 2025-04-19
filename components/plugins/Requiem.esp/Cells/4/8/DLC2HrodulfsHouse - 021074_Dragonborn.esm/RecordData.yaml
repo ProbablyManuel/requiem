@@ -1,0 +1,60 @@
+FormKey: 021074:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2HrodulfsHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hrodulf's Cellar
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00FFFFFF'
+    DirectionalXMinus: '#00FFFFFF'
+    DirectionalYPlus: '#00FFFFFF'
+    DirectionalYMinus: '#00FFFFFF'
+    DirectionalZPlus: '#00FFFFFF'
+    DirectionalZMinus: '#00FFFFFF'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0A2680:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0142C3:Dragonborn.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+EncounterZone: 0142D0:Dragonborn.esm
+Music: 033917:Dragonborn.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0280F2:Dragonborn.esm
+  Base: 052695:Skyrim.esm
+  LocationReference: 0142C3:Dragonborn.esm
+  Placement:
+    Position: 688.02057, -748.5499, 572.4419
+    Rotation: 6.224376, 0.13152626, 6.275171
+- MutagenObjectType: PlacedObject
+  FormKey: 0280F3:Dragonborn.esm
+  Base: 052695:Skyrim.esm
+  LocationReference: 0142C3:Dragonborn.esm
+  Placement:
+    Position: 694.9775, -742.5653, 570.81824
+    Rotation: 0.0009354965, 0.005670575, 1.0998507
+MajorFlags:
+- 0x40000

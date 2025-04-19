@@ -1,0 +1,34 @@
+FormKey: 58672B:Requiem.esp
+EditorID: REQ_Smelter_SaltPile
+Items:
+- Item:
+    Item: 034CDF:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 05AD9E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05ADA1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 44C4A8:Requiem.esp
+    Count: 3
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE127:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0A82BB:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 58672A:Requiem.esp
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 2

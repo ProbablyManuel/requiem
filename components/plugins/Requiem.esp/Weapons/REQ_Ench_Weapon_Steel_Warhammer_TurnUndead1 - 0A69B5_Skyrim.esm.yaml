@@ -1,0 +1,54 @@
+FormKey: 0A69B5:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Steel_Warhammer_TurnUndead1
+ObjectBounds:
+  First: -12, -33, -4
+  Second: 18, 52, 4
+Name:
+  TargetLanguage: English
+  Value: Steel Warhammer of Dismissal
+Model:
+  File: Weapons\Steel\SteelWarhammer.nif
+  Data: 0x0200000008000000000000004FABDC0564647300A0B86305D09B0BBB64647300A0B86305B221CCA164647300A0B86305DA8E929164647300262C333BBEA1A92A6464730014F240E62537BE4C6464730014F240E6B8EC307B64647300262C333B9F66B7D56464730014F240E6
+ObjectEffect: 05B46C:Skyrim.esm
+EnchantmentAmount: 500
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E719:Skyrim.esm
+- 06D930:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0E4CB0:Skyrim.esm
+FirstPersonModel: 01C4F3:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 0E4F10:Skyrim.esm
+UnequipSound: 0E4F11:Skyrim.esm
+BasicStats:
+  Value: 110
+  Weight: 25
+  Damage: 20
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.6
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1069547520
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.25
+Critical:
+  Damage: 10
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud
+Template: 01398A:Skyrim.esm

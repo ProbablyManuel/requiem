@@ -1,0 +1,295 @@
+FormKey: 019582:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Vigilant_Loc_Ruunvald_Moric
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - LoopedScript
+  - LoopedAudio
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIPackages
+  - ModelAnimation
+  - DefPackList
+  - Keywords
+Factions:
+- Faction: 0135BD:Dawnguard.esm
+  Fluff: 0x000000
+Voice: 0EA266:Skyrim.esm
+Template: 0135BF:Dawnguard.esm
+Race: 013741:Skyrim.esm
+ActorEffect:
+- 018C5D:Dawnguard.esm
+- 93D530:Requiem.esp
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05312A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F61:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F67:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F69:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F592:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F594:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079343:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07934A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079355:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07935E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABED:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E92:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB406:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 103ADA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F1C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0AD7A3:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01D4EC:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03A16A:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 0E3C16:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10BFF1:Skyrim.esm
+    Count: 9
+- Item:
+    Item: 39E7BA:Requiem.esp
+    Count: 9
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 017008:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Moric Sidrey
+ShortName:
+  TargetLanguage: English
+  Value: Moric
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 125
+  Magicka: 130
+  Stamina: 75
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x415AEF
+HeadParts:
+- 024250:Skyrim.esm
+- 051410:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0899B1:Skyrim.esm
+- 0C7123:Skyrim.esm
+HairColor: 0A0432:Skyrim.esm
+CombatStyle: 068849:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 20
+SoundLevel: Normal
+DefaultOutfit: 019583:Dawnguard.esm
+HeadTexture: 05164A:Skyrim.esm
+TextureLighting: '#00C6B0A8'
+FaceMorph:
+  NoseLongVsShort: -0.3
+  NoseUpVsDown: -1
+  JawUpVsDown: -1
+  JawNarrowVsWide: 0.7
+  CheeksUpVsDown: 0.3
+  CheeksForwardVsBack: 0.1
+  EyesUpVsDown: -0.1
+  EyesInVsOut: 0.2
+  BrowsUpVsDown: -0.7
+  BrowsInVsOut: 0.8
+  BrowsForwardVsBack: -1
+  LipsUpVsDown: -0.3
+  LipsInVsOut: -0.4
+  ChinUpVsDown: 0.5
+  ChinUnderbiteVsOverbite: -0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 18
+  Unknown: 4294967295
+  Eyes: 20
+  Mouth: 4
+TintLayers:
+- Index: 2
+  Color: '#00C6B0A8'
+  InterpolationValue: 1
+  Preset: 75
+- Index: 4
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 95
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 631
+- Index: 6
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 102
+- Index: 9
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 121
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 635
+- Index: 58
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 640
+- Index: 59
+  Color: '#00563112'
+  InterpolationValue: 1
+  Preset: 646
+MajorFlags:
+- 0x40000

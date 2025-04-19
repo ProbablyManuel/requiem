@@ -1,0 +1,23 @@
+FormKey: 42442F:Requiem.esp
+EditorID: REQ_Illusion_EnragingOrb
+Name:
+  TargetLanguage: English
+  Value: Enraging Orb
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetActor
+Range: 100000
+HalfCostPerk: 0C44C3:Skyrim.esm
+Effects:
+- BaseEffect: 42442D:Requiem.esp
+  Data:
+    Magnitude: 500
+    Duration: 40

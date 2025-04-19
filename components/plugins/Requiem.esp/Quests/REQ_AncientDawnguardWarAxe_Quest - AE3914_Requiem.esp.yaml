@@ -1,0 +1,29 @@
+FormKey: AE3914:Requiem.esp
+EditorID: REQ_AncientDawnguardWarAxe_Quest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_REQ_AncientDawnguardWarAx_0B03867D
+  - Name: REQ_AncientDawnguardWarAxe
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: undeadKilled
+      Object: 016691:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DawnguardRuneWarAxeEnch
+      Object: 01668F:Dawnguard.esm
+  FileName: QF_REQ_AncientDawnguardWarAx_0B03867D
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_REQ_AncientDawnguardWarAx_0B03867D
+    FragmentName: Fragment_0
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 100
+NextAliasID: 0

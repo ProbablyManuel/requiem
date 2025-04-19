@@ -1,0 +1,29 @@
+FormKey: 0008B2:ccedhsse003-redguard.esl
+EditorID: REQ_NULL_ccEDHSSE003_RecipeArmorRedguardEliteArmor
+Items:
+- Item:
+    Item: 05ACE5:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 05AD93:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 0DB5D2:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB414:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000809:ccedhsse003-redguard.esl
+  ComparisonValue: 1
+CreatedObject: 00080B:ccedhsse003-redguard.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

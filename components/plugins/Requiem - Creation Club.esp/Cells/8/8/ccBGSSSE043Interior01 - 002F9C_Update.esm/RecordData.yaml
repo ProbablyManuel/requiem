@@ -1,0 +1,406 @@
+FormKey: 002F9C:Update.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ccBGSSSE043Interior01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ironback Hideout Cellar
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: 0
+AcousticSpace: 0C5B6B:Skyrim.esm
+EncounterZone: 0F90B1:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 00081C:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x001081850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -37.057022, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 00081D:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x00B907430C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -49.55796, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000824:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x00B180850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -9.104635, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000827:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x00D080850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 64.35244, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000828:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x00B907430C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 47.655716, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000829:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultsetStageTrigSCRIPT
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00089E:ccbgssse043-crosselv.esl
+      - MutagenObjectType: ScriptBoolProperty
+        Name: doOnce
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 200
+  Base: 033F50:Skyrim.esm
+  Primitive:
+    Bounds: 275, 261.7931, 236
+    Color: '#00CC4C33'
+    Unknown: 0.15
+    Type: Box
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -6.928268, 307.9316, -30000
+- MutagenObjectType: PlacedObject
+  FormKey: 00082A:ccbgssse043-crosselv.esl
+  Base: 899DBA:Requiem.esp
+  RagdollData: 0x00B90743200040C100008037000420C09DC31FB640FEFFB2DB0FC9BF
+  Placement:
+    Position: 77.46854, -521.52826, 1927.168
+    Rotation: 0, 0, 1.1000007
+- MutagenObjectType: PlacedObject
+  FormKey: 00082F:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x00D880850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -31.47725, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000830:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x00B907430C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -20.152884, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 00083A:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x00D680850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 23.565384, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 00083D:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x00B907430C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 70.028336, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000840:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x000000000C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 29.575014, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000843:ccbgssse043-crosselv.esl
+  Base: 899DB9:Requiem.esp
+  RagdollData: 0x00B90743400240C1000040B8000020C0B4C90F33ACFCFFB2DB0FC9BF0099EC4100000000000000000000000027BF2BB63CFC3FB289FD2F35
+  ItemCount: 46
+  Placement:
+    Position: -76.320335, -517.4197, 1928.3411
+    Rotation: 0, 0, 1.5000005
+- MutagenObjectType: PlacedObject
+  FormKey: 000846:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x00FD80850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -43.121094, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000854:ccbgssse043-crosselv.esl
+  Base: 899DBA:Requiem.esp
+  RagdollData: 0x00BD8085600040C1000000B8000E20C0AFC31FB680F9FFB2DB0FC9BF
+  Placement:
+    Position: 64.694664, -526.08453, 1927.9478
+    Rotation: 0, 0, 1.9000003
+- MutagenObjectType: PlacedObject
+  FormKey: 000855:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x00B907430C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -61.658455, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000859:ccbgssse043-crosselv.esl
+  EditorID: ccBGSSSE043_EbonyCrossbowRef
+  Base: 899DB6:Requiem.esp
+  RagdollData: 0x00048185000000B8000080B80000003A44E1B0B20000B0B3012F9DB5
+  Placement:
+    Position: -18.832117, -522.64, 1931.8033
+    Rotation: 3.181065, 6.2401314, 5.540738
+- MutagenObjectType: PlacedObject
+  FormKey: 00085A:ccbgssse043-crosselv.esl
+  Base: 899DB9:Requiem.esp
+  RagdollData: 0x00D38085200040C100000000000620C0C8C90F3390FCFFB2DE0FC9BF
+  Placement:
+    Position: -57.682106, -516.20715, 1926.8516
+    Rotation: 0, 0, 1.6999996
+- MutagenObjectType: PlacedObject
+  FormKey: 00085B:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x00B907430C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -26.03076, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000861:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x00BE80850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 17.474518, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 00086C:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x000781850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -55.56759, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000871:ccbgssse043-crosselv.esl
+  Base: 899DBA:Requiem.esp
+  RagdollData: 0x00B9074340FE3FC1000020B8000220C0A3C31FB6F0FDFFB2DB0FC9BF000881C3000000000000000000000000F43E2CB687FFBFB3BA7D2F35
+  ItemCount: 37
+  Placement:
+    Position: 85.97227, -522.6526, 1928.892
+    Rotation: 0, 0, 1.3831943
+- MutagenObjectType: PlacedObject
+  FormKey: 000873:ccbgssse043-crosselv.esl
+  Base: 899DB9:Requiem.esp
+  RagdollData: 0x00E58085E00040C100002039000420C017CA0F335AFCFFB2DB0FC9BF
+  Placement:
+    Position: -68.12928, -511.26303, 1923.13
+    Rotation: 0, 0, 1.300005
+- MutagenObjectType: PlacedObject
+  FormKey: 000875:ccbgssse043-crosselv.esl
+  Base: 899DB9:Requiem.esp
+  RagdollData: 0x00B90743000040C100004038000820C0D1C90F3361FCFFB2DB0FC9BF00B6A6C300000000000000000000000027BF2BB63CFC3FB289FD2F35
+  ItemCount: 23
+  Placement:
+    Position: -83.35213, -545.7251, 1929.0726
+    Rotation: 0, 0, 1.7000014
+- MutagenObjectType: PlacedObject
+  FormKey: 000879:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x00FB80850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 53.10221, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 00087B:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3718:Requiem.esp
+  RagdollData: 0x00ED80850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: -14.780531, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000884:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x000C81850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 36.01187, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000888:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x002681850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 58.980087, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 00088E:ccbgssse043-crosselv.esl
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: AD3710:Requiem.esp
+  RagdollData: 0x002A81850C0040C1F5C8C034060020C0A6C31FB6000000B3DB0FC9BF
+  Placement:
+    Position: 42.075943, -580.8506, 1925.9209
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 00088F:ccbgssse043-crosselv.esl
+  Base: 000808:ccbgssse043-crosselv.esl
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Key: 00080A:ccbgssse043-crosselv.esl
+    Unused2: 0x0000000000000000000000
+  Placement:
+    Position: 178.57173, -201.17184, 1865.0898
+MajorFlags:
+- 0x40000

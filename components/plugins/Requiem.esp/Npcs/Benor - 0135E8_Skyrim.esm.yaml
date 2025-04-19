@@ -1,0 +1,253 @@
+FormKey: 0135E8:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Benor
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - LoopedScript
+  - LoopedAudio
+  Level:
+    MutagenObjectType: PcLevelMult
+    LevelMult: 1
+  CalcMinLevel: 6
+  CalcMaxLevel: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 019809:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02816D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02817D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 0CA213:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0F17E6:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013ADA:Skyrim.esm
+Race: 013746:Skyrim.esm
+Perks:
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07935E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B76:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B77:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 013980:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 108BA5:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 040FFA:Skyrim.esm
+- 040FF9:Skyrim.esm
+- 044392:Skyrim.esm
+- 044391:Skyrim.esm
+- 044394:Skyrim.esm
+- 01B217:Skyrim.esm
+Class: 01CE15:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Benor
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 14
+  - Key: TwoHanded
+    Value: 26
+  - Key: Archery
+    Value: 12
+  - Key: Block
+    Value: 17
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 21
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 137
+  Magicka: 80
+  Stamina: 108
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 0510B5:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C716E:Skyrim.esm
+- 0E7AEC:Skyrim.esm
+HairColor: 0A0433:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 90
+SoundLevel: Normal
+DefaultOutfit: 017F21:Skyrim.esm
+CrimeFaction: 02816D:Skyrim.esm
+HeadTexture: 073259:Skyrim.esm
+TextureLighting: '#00A7867A'
+FaceMorph:
+  NoseLongVsShort: -0.44
+  NoseUpVsDown: -0.3
+  JawUpVsDown: 0.68
+  JawNarrowVsWide: 0.5
+  JawForwardVsBack: 0.24
+  CheeksUpVsDown: 0.32
+  CheeksForwardVsBack: 0.8
+  EyesUpVsDown: -1
+  EyesInVsOut: 0.2
+  BrowsUpVsDown: -1
+  BrowsInVsOut: 0.9
+  BrowsForwardVsBack: 0.76
+  LipsUpVsDown: 0.66
+  LipsInVsOut: -0.84
+  ChinNarrowVsWide: 0.26
+  ChinUpVsDown: -0.9
+  ChinUnderbiteVsOverbite: 0.9
+  EyesForwardVsBack: 0.16
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 14
+  Unknown: 4294967295
+  Eyes: 13
+  Mouth: 10
+TintLayers:
+- Index: 1
+  Color: '#00A7867A'
+  InterpolationValue: 1
+  Preset: 77
+- Index: 2
+  Color: '#00212B52'
+  InterpolationValue: 0.35
+  Preset: 89
+- Index: 3
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 96
+- Index: 6
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 110
+- Index: 7
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 117
+- Index: 9
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 128
+- Index: 11
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 138
+- Index: 12
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 143
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 587
+MajorFlags:
+- 0x40000

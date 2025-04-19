@@ -1,0 +1,73 @@
+FormKey: 00081B:ccbgssse057-ba_stalhrim.esl
+EditorID: ccBGSSSE057_MiscQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccBGSSSE057_MiscQuest_0300081B
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 00081B:ccbgssse057-ba_stalhrim.esl
+      Alias: 0
+  FileName: SSE_QF_ccBGSSSE057_MiscQuest_0300081B
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE057_MiscQuest_0300081B
+    FragmentName: Fragment_1
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE057_MiscQuest_0300081B
+    FragmentName: Fragment_0
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 00081B:ccbgssse057-ba_stalhrim.esl
+      Alias: 0
+    Scripts:
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00081B:ccbgssse057-ba_stalhrim.esl
+Flags:
+- RunOnce
+Priority: 15
+QuestFormVersion: 65
+Type: Misc
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 3331
+- Index: 20
+  Unknown: 124
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Search the camp near Skaal Village
+  Targets:
+  - {}
+NextAliasID: 1
+Aliases:
+- Name: Note
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  ForcedReference: 00082A:ccbgssse057-ba_stalhrim.esl
+  VoiceTypes: Null

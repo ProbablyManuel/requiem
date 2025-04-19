@@ -1,0 +1,21 @@
+FormKey: 0EB789:Skyrim.esm
+EditorID: REQ_NULL_TemperArmorGildedElvenBoots
+Items:
+- Item:
+    Item: 05ADA0:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

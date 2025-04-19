@@ -1,0 +1,29 @@
+FormKey: 6AD103:Requiem.esp
+EditorID: REQ_Effect_Mechanics_Stress_Attacking_
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AttackStaminaDrain
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Drainspell
+      Object: 6AA964:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BlockRemover
+      Object: 6B203A:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Exhaustion from weapon usage
+Keywords:
+- 8CDE08:Requiem.esp
+Flags:
+- Detrimental
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Striking with your melee weapons or using your ranged weaponry tires you. Wearing heavy equipment will increase the required effort.

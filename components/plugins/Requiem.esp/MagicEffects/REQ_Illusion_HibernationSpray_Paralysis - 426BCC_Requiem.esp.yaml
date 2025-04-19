@@ -1,0 +1,31 @@
+FormKey: 426BCC:Requiem.esp
+EditorID: REQ_Illusion_HibernationSpray_Paralysis
+Name:
+  TargetLanguage: English
+  Value: Paralysis
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- NoMagnitude
+- NoArea
+- HideInUI
+- PowerAffectsDuration
+- Painless
+BaseCost: 0.07
+MagicSkill: Illusion
+TaperWeight: 1
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The targets in the cone will fall into a deep slumber for up to <dur> seconds.

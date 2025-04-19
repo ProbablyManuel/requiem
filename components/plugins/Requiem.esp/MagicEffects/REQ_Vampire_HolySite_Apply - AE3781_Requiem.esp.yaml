@@ -1,0 +1,48 @@
+FormKey: AE3781:Requiem.esp
+EditorID: REQ_Vampire_HolySite_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ConditionalSubEffect
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: SubSpells
+      Objects:
+      - Name: ''
+        Object: AE377F:Requiem.esp
+  - Name: VampireSunISMDEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireSunlightISMD03
+      Object: 0FD808:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireSunlightISMD02
+      Object: 0FD807:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerVampireQuest
+      Object: 0EAFD5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireSunlightISMD01
+      Object: 0FD805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGVampireSunlight
+      Object: 0FF9EB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VampireSunlightISMD04
+      Object: 0FD809:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Holy Site
+MenuDisplayObject: 0A0E7F:Skyrim.esm
+Flags:
+- Detrimental
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Temples and other places of worship make your vampire blood boil, weakening your vampiric powers and causing great pain to you.

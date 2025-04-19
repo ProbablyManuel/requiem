@@ -1,0 +1,60 @@
+FormKey: AE3940:Requiem.esp
+EditorID: REQ_Ench_GlassBowOfTheStagPrince_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_GlassBowOfTheStagPrince
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Snow
+      Object: 3A8C1F:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GiantSlaughterfish
+      Object: 077A64:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: description
+      Object: AE3971:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ulik
+      Object: 04517A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GiganticMudcrab
+      Object: 046761:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA05
+      Object: 02A49A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ragnok
+      Object: 35214E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EarthMother
+      Object: 013B74:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Kruul
+      Object: 04517E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GlassBowOfTheStagPrinceEnch
+      Object: 018ED6:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gorak
+      Object: 044BF2:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
+Name:
+  TargetLanguage: English
+  Value: Apply Glass Bow of the Stag Prince Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

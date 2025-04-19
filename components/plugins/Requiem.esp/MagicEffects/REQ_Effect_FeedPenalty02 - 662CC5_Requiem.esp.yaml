@@ -1,0 +1,29 @@
+FormKey: 662CC5:Requiem.esp
+EditorID: REQ_Effect_FeedPenalty02
+Name:
+  TargetLanguage: English
+  Value: Vampire's Victim
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoHitEvent
+- NoArea
+- HideInUI
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoHitEffect
+TaperWeight: 1
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

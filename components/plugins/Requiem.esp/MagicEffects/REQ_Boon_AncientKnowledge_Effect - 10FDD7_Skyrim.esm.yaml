@@ -1,0 +1,22 @@
+FormKey: 10FDD7:Skyrim.esm
+EditorID: REQ_Boon_AncientKnowledge_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AncientKnowledge
+Name:
+  TargetLanguage: English
+  Value: Ancient Knowledge
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+PerkToApply: 0009D4:Update.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Knowledge gained from the lexicon gives you insights into Dwarven smithing secrets. You can now increase the quality of Dwarven armors and weapons at a workbench or grindstone, even without prior smithing skill.

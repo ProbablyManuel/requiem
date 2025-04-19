@@ -1,0 +1,285 @@
+FormKey: 0E0FC0:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EncWarlock02TemplateBossIce
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 100
+  StaminaOffset: -25
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 7
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 75
+Factions:
+- Faction: 026724:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 08601A:Skyrim.esm
+Voice: 013AE6:Skyrim.esm
+Template: 045C60:Skyrim.esm
+Race: 067CD8:Skyrim.esm
+ActorEffect:
+- 0C969C:Skyrim.esm
+- 072319:Skyrim.esm
+- 072315:Skyrim.esm
+- 02B96B:Skyrim.esm
+- 034C38:Skyrim.esm
+Perks:
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 044CD6:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10F8B5:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10F8B4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FACD:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FAD1:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 01317A:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Ice Mage
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 9
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 14
+  - Key: Conjuration
+    Value: 14
+  - Key: Destruction
+    Value: 18
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 18
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 135
+  Magicka: 170
+  Stamina: 25
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 0CDCBE:Skyrim.esm
+- 0C716F:Skyrim.esm
+- 023FB7:Skyrim.esm
+- 051403:Skyrim.esm
+- 08555F:Skyrim.esm
+HairColor: 0A0438:Skyrim.esm
+CombatStyle: 044CD0:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 75
+SoundLevel: Normal
+DefaultOutfit: 044CD5:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00E0E1FC'
+FaceMorph:
+  NoseLongVsShort: 0.06
+  NoseUpVsDown: -0.6
+  JawUpVsDown: -1
+  JawNarrowVsWide: -1
+  JawForwardVsBack: -1
+  CheeksUpVsDown: -1
+  CheeksForwardVsBack: -0.8
+  EyesUpVsDown: 1
+  EyesInVsOut: -0.06
+  BrowsUpVsDown: -1
+  BrowsInVsOut: 0.2
+  BrowsForwardVsBack: 1
+  LipsUpVsDown: -1
+  LipsInVsOut: 0.16
+  ChinNarrowVsWide: -0.34
+  ChinUpVsDown: -0.4
+  ChinUnderbiteVsOverbite: 0.18
+  EyesForwardVsBack: -0.64
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 10
+  Unknown: 4294967295
+  Eyes: 1
+  Mouth: 19
+TintLayers:
+- Index: 1
+  Color: '#00E0E1FC'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 2
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 19
+- Index: 3
+  Color: '#000F0440'
+  InterpolationValue: 0.39
+  Preset: 25
+- Index: 5
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 34
+- Index: 6
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 41
+- Index: 8
+  Color: '#00070C3D'
+  InterpolationValue: 0.56
+  Preset: 51
+- Index: 10
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 63
+- Index: 11
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 68
+- Index: 12
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 73
+- Index: 21
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 78
+- Index: 22
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 102
+- Index: 37
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 126
+- Index: 38
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 150
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 174
+- Index: 40
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 198
+- Index: 41
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 222
+- Index: 42
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 246
+- Index: 23
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 270
+- Index: 43
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 294
+- Index: 60
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 318
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 442
+MajorFlags:
+- 0x40000

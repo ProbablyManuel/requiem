@@ -1,0 +1,46 @@
+FormKey: 000803:ccbgssse057-ba_stalhrim.esl
+EditorID: REQ_NULL_ccBGSSSE057_ArmorStalhrimHelmet
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 60
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00081A:ccbgssse057-ba_stalhrim.esl
+ObjectBounds:
+  First: -15, -13, 0
+  Second: 15, 13, 20
+Name:
+  TargetLanguage: English
+  Value: Stalhrim Fur Helmet
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE057\Armor\StalhrimArmor\HelmetGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Hair
+  - Circlet
+  - Ears
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 088845:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+- 024106:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080B:ccbgssse057-ba_stalhrim.esl
+Value: 1135
+Weight: 7
+ArmorRating: 24

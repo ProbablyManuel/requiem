@@ -1,0 +1,31 @@
+FormKey: 10FAEC:Skyrim.esm
+EditorID: DA08EbonyBladeTracking
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA08EbonyBladeTrackingScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: FriendsKilled
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptIntProperty
+      Name: MaxFriendsKilled
+      Data: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GratsScene
+      Object: 10FAF2:Skyrim.esm
+  Versioning:
+  - Break0
+  ExtraBindDataVersion: 0
+  FileName: ''
+QuestFormVersion: 65
+Filter: Daedric\
+NextAliasID: 1
+Aliases:
+- Name: MephalaInYourHead
+  Flags:
+  - StoresText
+  ForcedReference: 05BF3E:Skyrim.esm
+  VoiceTypes: Null

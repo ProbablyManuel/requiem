@@ -1,0 +1,33 @@
+FormKey: 0008F0:ccbgssse001-fish.esm
+EditorID: ccBGSSSE001_AnglerLarvaeIng
+ObjectBounds:
+  First: -11, -2, -6
+  Second: 11, 2, 6
+Name:
+  TargetLanguage: English
+  Value: Angler Larvae
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishAngler\FishAnglerLarvae01Inv.nif
+  Data: 0x020000000000000000000000
+Value: 1
+Weight: 0.25
+IngredientValue: 27
+Effects:
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 03AC2D:Skyrim.esm
+  Data:
+    Duration: 5
+- BaseEffect: 03EB1A:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

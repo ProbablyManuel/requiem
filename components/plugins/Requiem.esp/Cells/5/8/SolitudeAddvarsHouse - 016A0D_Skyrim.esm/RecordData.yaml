@@ -1,0 +1,79 @@
+FormKey: 016A0D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeAddvarsHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Addvar's House
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00514B39'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00595F66'
+  FogFar: 4000
+  FogClipDistance: 5000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00594B3B'
+    DirectionalXMinus: '#00484B36'
+    DirectionalYPlus: '#00514E39'
+    DirectionalYMinus: '#00514739'
+    DirectionalZPlus: '#00262319'
+    DirectionalZMinus: '#007B7258'
+    Specular: '#00222426'
+    Scale: 1
+  FogFarColor: '#00222426'
+  FogMax: 0.8
+  LightFadeBegin: 100
+  LightFadeEnd: 5000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0B37B0:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 02007E:Skyrim.esm
+Owner: 0C13C1:Skyrim.esm
+LockList: 0C13C2:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0ABDB4:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 016A9A:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0453D8:Skyrim.esm
+  TeleportDestination:
+    Door: 037F46:Skyrim.esm
+    Position: -56631.4, 105252.45, -8601.56
+    Rotation: 0, -0, 0.87266463
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Key: 0C13C3:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 063E2C:Skyrim.esm
+    TeleportMarkerTriangle: 73
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  Owner: 0C13C1:Skyrim.esm
+  LocationReference: 02007E:Skyrim.esm
+  Placement:
+    Position: 576, -1696, 92.00002
+MajorFlags:
+- 0x40000

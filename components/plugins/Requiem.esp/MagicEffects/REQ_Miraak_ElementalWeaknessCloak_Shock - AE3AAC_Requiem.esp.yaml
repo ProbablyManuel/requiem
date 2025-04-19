@@ -1,0 +1,34 @@
+FormKey: AE3AAC:Requiem.esp
+EditorID: REQ_Miraak_ElementalWeaknessCloak_Shock
+Name:
+  TargetLanguage: English
+  Value: Weakness to Shock
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+- 3FCA4C:Requiem.esp
+Flags:
+- Recover
+- Detrimental
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.5
+MagicSkill: Destruction
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistShock
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Shock deals <mag>% more damage to you.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistShock
+  ComparisonValue: 75

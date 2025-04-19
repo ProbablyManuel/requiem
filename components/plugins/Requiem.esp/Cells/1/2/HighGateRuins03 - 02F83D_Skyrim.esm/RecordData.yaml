@@ -1,0 +1,73 @@
+FormKey: 02F83D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HighGateRuins03
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Vokun's Throne Room
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#004B4B4B'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0EDA92:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019195:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC34:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 063DBE:Skyrim.esm
+  Version2: 2
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019195:Skyrim.esm
+  Placement:
+    Position: -607.77765, -2235.6938, 128
+    Rotation: 0, -0, 6.154784
+- MutagenObjectType: PlacedObject
+  FormKey: ADE4A9:Requiem.esp
+  Base: ADE4A6:Requiem.esp
+  Placement:
+    Position: -1124.9647, -2232.0986, 128
+    Rotation: 0, 0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: AD3821:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139B9:Skyrim.esm
+  Placement:
+    Position: -848.57336, -1321.6321, -183.01486
+    Rotation: 3.1415927, 0, 4.245875
+MajorFlags:
+- 0x40000

@@ -1,0 +1,20 @@
+FormKey: AD3817:Requiem.esp
+EditorID: REQ_Effect_Power_FortifyShouts
+Name:
+  TargetLanguage: English
+  Value: Fortify Shouts
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ShoutRecoveryMult
+CastType: FireAndForget
+Sounds:
+- Type: OnHit
+  Sound: 01702E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: >+
+    Your Thu'um can be used more often.

@@ -1,0 +1,18 @@
+FormKey: 0037E9:Dawnguard.esm
+EditorID: REQ_Disease_Trap_SanguinareVampiris
+Name:
+  TargetLanguage: English
+  Value: Sanguinare Vampiris
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+Type: Disease
+TargetType: Touch
+Effects:
+- BaseEffect: 0037EC:Dawnguard.esm
+  Data:
+    Magnitude: 175

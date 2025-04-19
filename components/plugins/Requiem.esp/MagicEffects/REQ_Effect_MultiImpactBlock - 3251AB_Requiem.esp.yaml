@@ -1,0 +1,24 @@
+FormKey: 3251AB:Requiem.esp
+EditorID: REQ_Effect_MultiImpactBlock
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ImpactBlocker
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: duration
+      Data: 0.5
+Name:
+  TargetLanguage: English
+  Value: Block multiple OnHit after Spell Impact
+Flags:
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,72 @@
+FormKey: 0152B7:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BlindCliffCave01
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Blind Cliff Bastion
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#000A0A0A'
+  DirectionalColor: '#00415154'
+  FogNearColor: '#00978866'
+  FogFar: 3000
+  DirectionalRotationZ: 90
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000B0A0A'
+    DirectionalXMinus: '#00080A09'
+    DirectionalYPlus: '#000A0A0A'
+    DirectionalYMinus: '#000A090A'
+    DirectionalZPlus: '#00040404'
+    DirectionalZMinus: '#000F0F0F'
+    Specular: '#009C8858'
+    Scale: 1
+  FogFarColor: '#009C8858'
+  FogMax: 0.7
+  LightFadeBegin: 4000
+  LightFadeEnd: 5000
+LightingTemplate: 0195D3:Skyrim.esm
+WaterHeight: 0
+Location: 018EED:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+SkyAndWeatherFromRegion: 0C5856:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EBF1:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 039AC1:Skyrim.esm
+  Version2: 4
+  Base: 020654:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018EED:Skyrim.esm
+  Placement:
+    Position: -1339.6093, 3091.2788, 351.9707
+    Rotation: 0, 0, 6.04558
+- MutagenObjectType: PlacedObject
+  FormKey: 0D30DB:Skyrim.esm
+  Version2: 1
+  Base: 020667:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 018EED:Skyrim.esm
+  Placement:
+    Position: 1762.8153, 2520.3333, 1247.9707
+    Rotation: 0, -0, 1.1831926
+MajorFlags:
+- 0x40000

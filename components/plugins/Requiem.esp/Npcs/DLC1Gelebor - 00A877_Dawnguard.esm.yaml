@@ -1,0 +1,179 @@
+FormKey: 00A877:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1Gelebor
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Essential
+  - Unique
+  - IsGhost
+  - Invulnerable
+  MagickaOffset: 150
+  StaminaOffset: 450
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 200
+Factions:
+- Faction: 01681B:Dawnguard.esm
+  Fluff: 0x000000
+Voice: 01681D:Dawnguard.esm
+Race: 00377D:Dawnguard.esm
+Perks:
+- Perk: 0BE123:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01681E:Dawnguard.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Class: 017008:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Knight-Paladin Gelebor
+ShortName:
+  TargetLanguage: English
+  Value: Gelebor
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 100
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 79
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 79
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 43
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 10
+  - Key: Destruction
+    Value: 10
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 10
+  - Key: Enchanting
+    Value: 10
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 589
+  Magicka: 50
+  Stamina: 246
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x415AEF
+HeadParts:
+- 0029DE:Dawnguard.esm
+HairColor: 00378E:Dawnguard.esm
+NAM5: 255
+Height: 1
+Weight: 25
+SoundLevel: Normal
+DefaultOutfit: 002B49:Dawnguard.esm
+HeadTexture: 0F204B:Skyrim.esm
+TextureLighting: '#007F7F7F'
+FaceMorph:
+  JawUpVsDown: 0.94
+  JawNarrowVsWide: 0.68
+  CheeksUpVsDown: 0.5
+  CheeksForwardVsBack: 0.42
+  BrowsUpVsDown: 0.66
+  BrowsInVsOut: -0.66
+  BrowsForwardVsBack: 1
+  ChinNarrowVsWide: 0.56
+  ChinUpVsDown: -0.74
+FaceParts:
+  Nose: 13
+  Eyes: 26
+  Mouth: 14
+TintLayers:
+- Index: 1
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 2
+  Color: '#0061817D'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 3
+  Color: '#00617D7F'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 4
+  Color: '#00EDAFAF'
+  InterpolationValue: 0.58
+  Preset: -1
+- Index: 8
+  Color: '#00FFFFFF'
+  InterpolationValue: 1
+  Preset: 88
+- Index: 50
+  Color: '#00563112'
+  InterpolationValue: 1
+  Preset: 369
+MajorFlags:
+- 0x40000

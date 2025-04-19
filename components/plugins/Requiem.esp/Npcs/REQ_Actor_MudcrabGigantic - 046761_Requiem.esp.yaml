@@ -1,0 +1,148 @@
+FormKey: 046761:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_MudcrabGigantic
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -39, -41, 0
+  Second: 39, 41, 56
+Configuration:
+  Flags:
+  - Respawn
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 55
+  SpeedMultiplier: 60
+  DispositionBase: 35
+  HealthOffset: 3000
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02E894:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 1017BA:Skyrim.esm
+Voice: 03E8A6:Skyrim.esm
+Race: 0BA545:Skyrim.esm
+ActorEffect:
+- 029582:Requiem.esp
+- AD39EC:Requiem.esp
+WornArmor: 0E40BB:Skyrim.esm
+AttackRace: 0BA545:Skyrim.esm
+Perks:
+- Perk: 0FAB0B:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 0854FE:Skyrim.esm
+    Count: 75
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  AggroRadiusBehavior: True
+  Warn: 600
+  WarnOrAttack: 600
+  Attack: 600
+Packages:
+- 0C81D4:Skyrim.esm
+Keywords:
+- 5F367F:Requiem.esp
+Class: 0BB4B0:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Mudcrab
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 9
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 9
+  - Key: Block
+    Value: 8
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 10
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 55
+  Magicka: 4
+  Stamina: 35
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+CombatStyle: 0BB4AF:Skyrim.esm
+NAM5: 255
+Height: 4
+Weight: 30
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 03E8A1:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

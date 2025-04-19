@@ -1,0 +1,74 @@
+FormKey: 0165A3:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunDragonsreach
+Version2: 11
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dragonsreach
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#005B5040'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 6300
+  FogClipDistance: 7000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00645043'
+    DirectionalXMinus: '#0051503D'
+    DirectionalYPlus: '#005B5340'
+    DirectionalYMinus: '#005B4C40'
+    DirectionalZPlus: '#002B261D'
+    DirectionalZMinus: '#008A7963'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F871:Skyrim.esm
+Owner: 065794:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0ABB42:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0A298A:Skyrim.esm
+  Scale: 1.3
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01F871:Skyrim.esm
+  Placement:
+    Position: 1380.5594, 2134.3452, -80
+    Rotation: 0, -0, 4.6708
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0DEE45:Skyrim.esm
+  MajorRecordFlagsRaw: 536870912
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  Base: 03133C:Skyrim.esm
+  LocationReference: 01F871:Skyrim.esm
+  Placement:
+    Position: -990.5524, 2852.9993, 48.199867
+    Rotation: -0.00016711786, 0.0004342866, 4.883152
+MajorFlags:
+- 0x40000

@@ -1,0 +1,48 @@
+FormKey: 0037F4:Dawnguard.esm
+EditorID: DLC1TrapSpotLight
+Version2: 5
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1TrapSpotLight
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapSpotLightSpell03
+      Object: 010767:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapSpotLightSpell05
+      Object: 010767:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapSpotLightSpell04
+      Object: 010767:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapSpotLightSpell01
+      Object: 010767:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapSpotLightSpell06
+      Object: 010767:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 1
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapSpotLightSpell02
+      Object: 010767:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 1
+ObjectBounds:
+  First: -50, -54, -51
+  Second: 50, 446, 51
+Model:
+  File: DLC01\Traps\LightTrap\LightTrap01.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

@@ -1,0 +1,35 @@
+FormKey: 06BC04:Skyrim.esm
+EditorID: SabrecatTooth
+ObjectBounds:
+  First: -5, -6, -1
+  Second: 5, 6, 1
+Name:
+  TargetLanguage: English
+  Value: Sabre Cat Tooth
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SabrecatTooth.nif
+  Data: 0x020000000200000000000000A7714D14646473007BF413290D726D51646473007BF41329
+Value: 2
+Weight: 0.1
+IngredientValue: 2
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 4.8
+    Duration: 60
+- BaseEffect: 03EAF9:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 30
+- BaseEffect: 090042:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30

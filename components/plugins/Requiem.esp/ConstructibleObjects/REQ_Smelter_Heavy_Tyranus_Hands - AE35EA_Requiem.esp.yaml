@@ -1,0 +1,19 @@
+FormKey: AE35EA:Requiem.esp
+EditorID: REQ_Smelter_Heavy_Tyranus_Hands
+Items:
+- Item:
+    Item: ADDDA7:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDDA7:Requiem.esp
+CreatedObject: 05AD9E:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

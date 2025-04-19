@@ -1,0 +1,51 @@
+FormKey: 0283D6:Dragonborn.esm
+EditorID: REQ_Ench_Weapon_Stalhrim_WarAxe_Fear6
+Name:
+  TargetLanguage: English
+  Value: Stalhrim War Axe of Terror
+Model:
+  File: DLC02\Weapons\Stahlrim\StahlrimWarAxe.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 05B46A:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C8:Skyrim.esm
+AlternateBlockMaterial: 0774C0:Skyrim.esm
+Keywords:
+- 01E712:Skyrim.esm
+- 08F958:Skyrim.esm
+- 02622F:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B8:Skyrim.esm
+FirstPersonModel: 038A57:Dragonborn.esm
+AttackFailSound: 03F209:Skyrim.esm
+EquipSound: 03DDB7:Skyrim.esm
+UnequipSound: 03DDB8:Skyrim.esm
+BasicStats:
+  Value: 2200
+  Weight: 16
+  Damage: 14
+Data:
+  AnimationType: OneHandAxe
+  Unused: 0x000000
+  Speed: 0.9
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1063675494
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.85
+Critical:
+  Damage: 7
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 01CDB9:Dragonborn.esm

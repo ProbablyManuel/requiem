@@ -1,0 +1,228 @@
+FormKey: 0A0E49:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DBSpectralAssassin
+Version2: 5
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultGhostScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostCorpse
+      Object: 0C674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostWeaponFlickerList
+      Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
+ObjectBounds:
+  First: -24, -24, 0
+  Second: 24, 24, 128
+Configuration:
+  Flags:
+  - Respawn
+  - Summonable
+  - DoesNotBleed
+  StaminaOffset: 10000
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 60
+  CalcMinLevel: 10
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 290
+Factions:
+- Faction: 01BDB3:Skyrim.esm
+  Fluff: 0x000000
+Voice: 074765:Skyrim.esm
+Race: 013744:Skyrim.esm
+Perks:
+- Perk: 079345:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 031284:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 013986:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 0DDD2A:Skyrim.esm
+Keywords:
+- 013796:Skyrim.esm
+- 0D205E:Skyrim.esm
+- 000EDF:Skyrim.esm
+- 0F23C5:Skyrim.esm
+Class: 013176:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Spectral Assassin
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 10
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 110
+  Magicka: 50
+  Stamina: 60
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 02425E:Skyrim.esm
+- 0510B5:Skyrim.esm
+- 05140A:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C7259:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 068848:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 30
+SoundLevel: Normal
+DefaultOutfit: 0E1EC1:Skyrim.esm
+HeadTexture: 0D0725:Skyrim.esm
+TextureLighting: '#00706056'
+FaceMorph:
+  NoseUpVsDown: -0.3
+  JawUpVsDown: -0.4
+  JawNarrowVsWide: -0.38
+  CheeksUpVsDown: -1
+  CheeksForwardVsBack: 0.1
+  EyesUpVsDown: 0.56
+  EyesInVsOut: -0.4
+  BrowsUpVsDown: 0.06
+  BrowsInVsOut: -1
+  BrowsForwardVsBack: 0.62
+  LipsUpVsDown: 0.08
+  ChinNarrowVsWide: 0.7
+  ChinUpVsDown: 0.24
+  ChinUnderbiteVsOverbite: 0.56
+  EyesForwardVsBack: -0.24
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 1
+  Unknown: 4294967295
+  Eyes: 14
+  Mouth: 11
+TintLayers:
+- Index: 1
+  Color: '#00706156'
+  InterpolationValue: 1
+  Preset: 65
+- Index: 2
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 71
+- Index: 14
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 134
+- Index: 15
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 158
+MajorFlags:
+- 0x40000

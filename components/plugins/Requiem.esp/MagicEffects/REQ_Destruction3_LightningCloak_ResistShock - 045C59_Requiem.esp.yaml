@@ -1,0 +1,25 @@
+FormKey: 045C59:Requiem.esp
+EditorID: REQ_Destruction3_LightningCloak_ResistShock
+Name:
+  TargetLanguage: English
+  Value: Resist Shock
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0B62E4:Skyrim.esm
+- 3FCA4C:Requiem.esp
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 0.5
+MagicSkill: Destruction
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistShock
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Increases shock resistance by <mag>%.

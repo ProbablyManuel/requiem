@@ -1,0 +1,94 @@
+FormKey: 013814:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WinterholdTheFrozenHearth
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Frozen Hearth
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01EB7C:Skyrim.esm
+Owner: 0CD698:Skyrim.esm
+SkyAndWeatherFromRegion: 10FDC6:Skyrim.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 0622AB:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E7BCE:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0E7BCD:Skyrim.esm
+  Scale: 1.3
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 01E7D5:Skyrim.esm
+  LocationReference: 01EB7C:Skyrim.esm
+  Placement:
+    Position: 1902.4929, 874.70264, 0.5329819
+    Rotation: 0, -0, 3.1000006
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0DDA80:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01EB7C:Skyrim.esm
+  Placement:
+    Position: 2078.5625, -711.4515, 0
+    Rotation: 0, -0, 6.270588
+- MutagenObjectType: PlacedObject
+  FormKey: 0DDA12:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01EB7C:Skyrim.esm
+  Placement:
+    Position: 1691.8037, -711.4515, 0
+    Rotation: 0, -0, 6.270588
+- MutagenObjectType: PlacedObject
+  FormKey: 0DDB2E:Skyrim.esm
+  Base: 01E3A3:Skyrim.esm
+  LocationReference: 01EB7C:Skyrim.esm
+  Placement:
+    Position: 1666.587, 849.9828, -9.1552734E-05
+    Rotation: 2.1966637E-06, -3.1551306E-06, 5.7354016
+MajorFlags:
+- 0x40000

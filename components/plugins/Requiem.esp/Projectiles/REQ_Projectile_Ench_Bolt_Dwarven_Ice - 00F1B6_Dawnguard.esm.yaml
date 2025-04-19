@@ -1,0 +1,26 @@
+FormKey: 00F1B6:Dawnguard.esm
+EditorID: REQ_Projectile_Ench_Bolt_Dwarven_Ice
+ObjectBounds:
+  First: -24, -15, -1
+  Second: 24, 99, 1
+Name:
+  TargetLanguage: English
+  Value: Dwarven Bolt of Ice
+Model:
+  File: Requiem\Projectiles\dwarven\dwarven_bolt_magic_ice.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+- Supersonic
+Type: Arrow
+Gravity: 0.5
+Speed: 5600
+Range: 60000
+Explosion: 010D91:Dawnguard.esm
+Sound: 03F2B4:Skyrim.esm
+FadeDuration: 5
+ImpactForce: 1.5
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

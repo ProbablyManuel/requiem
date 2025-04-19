@@ -1,0 +1,21 @@
+FormKey: 58B662:Requiem.esp
+EditorID: REQ_Vampire_FeedPenalty1
+Name:
+  TargetLanguage: English
+  Value: Feeding Penalty
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 58B661:Requiem.esp
+  Data:
+    Duration: 259200

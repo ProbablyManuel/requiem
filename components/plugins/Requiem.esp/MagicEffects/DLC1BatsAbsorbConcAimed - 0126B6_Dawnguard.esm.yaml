@@ -1,0 +1,100 @@
+FormKey: 0126B6:Dawnguard.esm
+EditorID: DLC1BatsAbsorbConcAimed
+Version2: 7
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1MagicEatenByBatsScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1BatsEatenBloodSplats
+      Object: 01296F:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireBatsVFX
+      Object: 019C9F:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BloodSprayBleedImpactSetRed
+      Object: 0F457B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampBatsEatenByBatsSkinFXS
+      Object: 012970:Dawnguard.esm
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fEffectDurationMax
+      Data: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 01296A:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Night Cloak
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 2FFEAD:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.7
+ResistValue: ResistMagic
+TaperWeight: 1
+HitShader: 01296E:Dawnguard.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: Absorb
+Projectile: 012FEC:Dawnguard.esm
+CastType: Concentration
+TargetType: Aimed
+SkillUsageMultiplier: 1.4
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Type: OnHit
+  Sound: 01377D:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01269F:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

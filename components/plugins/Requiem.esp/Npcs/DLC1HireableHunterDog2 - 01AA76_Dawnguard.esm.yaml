@@ -1,0 +1,154 @@
+FormKey: 01AA76:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1HireableHunterDog2
+Version2: 9
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -20, -74, 0
+  Second: 20, 74, 78
+Configuration:
+  Flags:
+  - Unique
+  - Protected
+  StaminaOffset: 400
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  CalcMinLevel: 10
+  CalcMaxLevel: 25
+  SpeedMultiplier: 125
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02816B:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 01AA75:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 003375:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 043596:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 09A7B2:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD7D:Skyrim.esm
+Voice: 011687:Dawnguard.esm
+Template: 01AA74:Dawnguard.esm
+Race: 003D01:Dawnguard.esm
+WornArmor: 018B31:Dawnguard.esm
+AttackRace: 0131EE:Skyrim.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Class: 0131E6:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Sceolang
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 43
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 43
+  - Key: Block
+    Value: 63
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 98
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 190
+  Stamina: 145
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x415AEF
+CombatStyle: 030004:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

@@ -1,0 +1,149 @@
+FormKey: 015238:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: NarzulburMauhulakhsLonghouse
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mauhulakh's Longhouse
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00000000'
+    DirectionalXMinus: '#00000000'
+    DirectionalYPlus: '#00000000'
+    DirectionalYMinus: '#00000000'
+    DirectionalZPlus: '#00000000'
+    DirectionalZMinus: '#00000000'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: 0
+Location: 020A00:Skyrim.esm
+Owner: 02C006:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 0B9DCB:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B3FDE:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0B3FE0:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -472.56293, -824.25995, -15.000004
+    Rotation: 0, -0, 5.2831917
+- MutagenObjectType: PlacedObject
+  FormKey: 0B3FE2:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0B3FE1:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -559.426, -890.86066, -15.000008
+    Rotation: 0, -0, 6
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B29B7:Skyrim.esm
+  Version2: 1
+  Base: 097F68:Skyrim.esm
+  Scale: 1.24
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -337.34738, -881.0552, -8.573469
+    Rotation: 0, -0, 0.73318994
+- MutagenObjectType: PlacedObject
+  FormKey: 0B29B8:Skyrim.esm
+  Base: 097F68:Skyrim.esm
+  Scale: 1.24
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -365.59366, -912.16833, -8.573469
+    Rotation: 0, -0, 3.83638
+- MutagenObjectType: PlacedObject
+  FormKey: 0B29B2:Skyrim.esm
+  Version2: 2
+  Base: 0774C8:Skyrim.esm
+  Scale: 0.91
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -290.7442, -200.7051, -14.999985
+    Rotation: 0, -0, 2.5031927
+- MutagenObjectType: PlacedObject
+  FormKey: 0B29BC:Skyrim.esm
+  Base: 097F68:Skyrim.esm
+  Scale: 1.24
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -367.7617, -903.7124, 14.119392
+    Rotation: 0.096459895, 0.11505065, 0.63194317
+- MutagenObjectType: PlacedObject
+  FormKey: 0B29BB:Skyrim.esm
+  Base: 097F68:Skyrim.esm
+  Scale: 1.24
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -402.9227, -940.41437, -8.573469
+    Rotation: 0, -0, 4.0163803
+- MutagenObjectType: PlacedObject
+  FormKey: 0B29BA:Skyrim.esm
+  Base: 097F68:Skyrim.esm
+  Scale: 1.24
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -387.61127, -924.27875, 3.1440773
+    Rotation: 0.11546646, 0.095961116, 0.84193563
+- MutagenObjectType: PlacedObject
+  FormKey: 0B29B9:Skyrim.esm
+  Base: 097F68:Skyrim.esm
+  Scale: 1.24
+  LocationReference: 020A00:Skyrim.esm
+  Placement:
+    Position: -351.86456, -893.312, 3.1440773
+    Rotation: 0.0964599, 0.11505065, 3.8419392
+MajorFlags:
+- 0x40000

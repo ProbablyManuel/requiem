@@ -1,0 +1,77 @@
+FormKey: 0142FA:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2Fahlbtharz01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fahlbtharz
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 08810B:Skyrim.esm
+WaterHeight: 0
+Location: 0142A0:Dragonborn.esm
+Water: 062A72:Skyrim.esm
+AcousticSpace: 0E3247:Skyrim.esm
+EncounterZone: 0142A1:Dragonborn.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0C686A:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0324B0:Dragonborn.esm
+  Base: 052695:Skyrim.esm
+  LocationReference: 0142A0:Dragonborn.esm
+  Placement:
+    Position: 3304.793, 118.12073, 655.688
+    Rotation: 5.9314737, 6.252176, 0.80722874
+- MutagenObjectType: PlacedObject
+  FormKey: 028D50:Dragonborn.esm
+  Base: 02069A:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0142A0:Dragonborn.esm
+  Placement:
+    Position: 7696, -4000, -1392
+    Rotation: 0.132556, 1.5707964, 3.2741487
+- MutagenObjectType: PlacedObject
+  FormKey: 0324B1:Dragonborn.esm
+  Base: 052695:Skyrim.esm
+  LocationReference: 0142A0:Dragonborn.esm
+  Placement:
+    Position: 3332.0977, 105.80631, 652.34674
+    Rotation: 6.039082, 0.06934193, 4.263918
+MajorFlags:
+- 0x40000

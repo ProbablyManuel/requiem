@@ -1,0 +1,30 @@
+FormKey: 00353C:HearthFires.esm
+EditorID: REQ_Food_Butter
+ObjectBounds:
+  First: -6, -6, -3
+  Second: 6, 6, 2
+Name:
+  TargetLanguage: English
+  Value: Butter
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Stew.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Stew:10
+    NewTexture: 00354E:HearthFires.esm
+    Index: 1
+PickUpSound: 0FC21F:Skyrim.esm
+Weight: 0.1
+Value: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 10E2EA:Skyrim.esm
+Effects:
+- BaseEffect: AE3720:Requiem.esp
+  Data:
+    Magnitude: 2
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

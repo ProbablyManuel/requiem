@@ -1,0 +1,71 @@
+FormKey: 00CE10:Dawnguard.esm
+EditorID: REQ_Ench_AurielsBow_SunAttack_PlayerEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1MagicCastFromSunScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellRef
+      Object: 00AEB6:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedXMarker
+      Object: 00003B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherForm
+      Object: 00F89D:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerEffect
+      Object: 00CE10:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActivatorRef
+      Object: 00CE0F:Dawnguard.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecast
+      Data: 0.065
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SunAttackNPC
+      Object: AE37D9:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecastRand
+      Data: 2
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bUseLocalNiceWeather
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ExplosionRef
+      Object: 00C611:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Auriel's Bow
+MenuDisplayObject: 018F02:Dawnguard.esm
+Flags:
+- NoMagnitude
+- NoArea
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+ImageSpaceModifier: 00A3BE:Dawnguard.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The wrath of Magnus itself will reduce whatever dares to oppose you to ash for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 00CE10:Dawnguard.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000038:Skyrim.esm
+  ComparisonValue: 6
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000038:Skyrim.esm
+  ComparisonValue: 19

@@ -1,0 +1,67 @@
+FormKey: 0152AD:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BrucasLeapRedoubt01
+Version2: 1
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bruca's Leap Redoubt
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00282828'
+  DirectionalColor: '#00161F27'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalRotationZ: 270
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2829'
+    DirectionalXMinus: '#00232826'
+    DirectionalYPlus: '#00282928'
+    DirectionalYMinus: '#00282628'
+    DirectionalZPlus: '#00131312'
+    DirectionalZMinus: '#003C3C3D'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 091937:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019151:Skyrim.esm
+SkyAndWeatherFromRegion: 06ED5C:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EBF9:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C89A7:Skyrim.esm
+  Version2: 3
+  Base: 020658:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019151:Skyrim.esm
+  Placement:
+    Position: 1566.8677, 1057.2362, -569.90173
+    Rotation: 0, -0, 5.1081977
+MajorFlags:
+- 0x40000

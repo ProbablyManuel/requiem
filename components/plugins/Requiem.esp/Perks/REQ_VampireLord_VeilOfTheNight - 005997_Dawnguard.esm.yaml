@@ -1,0 +1,21 @@
+FormKey: 005997:Dawnguard.esm
+EditorID: REQ_VampireLord_VeilOfTheNight
+Name:
+  TargetLanguage: English
+  Value: Veil of the Night
+Description:
+  TargetLanguage: English
+  Value: In combat, you are surrounded by swarms of bats that feed on those who are <br> foolish enough to come within their reach. If it's night, the bats even shield you from hostile magic...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 005996:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 01964A:Dawnguard.esm
+  Stage: 110
+  Unknown: 0x000000

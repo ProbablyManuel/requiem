@@ -1,0 +1,105 @@
+FormKey: 016E00:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthTreasuryHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Treasury House
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0D7B14:Skyrim.esm
+WaterHeight: 0
+Location: 01F314:Skyrim.esm
+Owner: 06566B:Skyrim.esm
+LockList: 094388:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: AE3772:Requiem.esp
+  MajorRecordFlagsRaw: 1610613760
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - 0x20000000
+  - 0x40000000
+  Base: 03521F:Skyrim.esm
+  Placement:
+    Position: -5602.174, -1065.0581, 391.5671
+    Rotation: 1.5707964, 0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: AE3771:Requiem.esp
+  MajorRecordFlagsRaw: 1073742848
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - 0x40000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: WeaponRackActivateSCRIPT
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: RackType
+        Data: 2
+  Base: 0E49CB:Skyrim.esm
+  LinkedReferences:
+  - KeywordOrReference: 06D95E:Skyrim.esm
+    Reference: AE3770:Requiem.esp
+  - Reference: AE3772:Requiem.esp
+  Placement:
+    Position: -5601.74, -1065.1284, 392.22147
+    Rotation: 0, 0, 3.1725514
+- MutagenObjectType: PlacedObject
+  FormKey: AE3770:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0E49CA:Skyrim.esm
+  LinkedReferences:
+  - KeywordOrReference: 06D95F:Skyrim.esm
+    Reference: AE3771:Requiem.esp
+  Placement:
+    Position: -5601.74, -1063.7161, 392.22147
+    Rotation: 0, 0, 3.1725514
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C5F60:Skyrim.esm
+  Version2: 3
+  Base: 0800E0:Skyrim.esm
+  Scale: 1.22
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01F314:Skyrim.esm
+  Placement:
+    Position: -5600, -860.0103, 140.5079
+    Rotation: 0, -0, 1.5707964
+MajorFlags:
+- 0x40000

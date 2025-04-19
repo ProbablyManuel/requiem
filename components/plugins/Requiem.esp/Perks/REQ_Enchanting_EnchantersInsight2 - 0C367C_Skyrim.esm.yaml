@@ -1,0 +1,29 @@
+FormKey: 0C367C:Skyrim.esm
+EditorID: REQ_Enchanting_EnchantersInsight2
+Name:
+  TargetLanguage: English
+  Value: Enchanter's Insight
+Description:
+  TargetLanguage: English
+  Value: >+
+    Your advanced knowledge of arcane energy allows you to improve all your enchantments even more.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Enchanting
+  ComparisonValue: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BEE97:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModEnchantmentPower
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.5

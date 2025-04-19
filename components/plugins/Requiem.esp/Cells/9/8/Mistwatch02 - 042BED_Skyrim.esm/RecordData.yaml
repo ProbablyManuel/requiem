@@ -1,0 +1,63 @@
+FormKey: 042BED:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Mistwatch02
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mistwatch West Tower
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00282828'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#FFFFFF'
+    DirectionalXMinus: '#FFFFFF'
+    DirectionalYPlus: '#FFFFFF'
+    DirectionalYMinus: '#FFFFFF'
+    DirectionalZPlus: '#FFFFFF'
+    DirectionalZMinus: '#FFFFFF'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogMax
+LightingTemplate: 0B6BC7:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01927B:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC47:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 04496A:Skyrim.esm
+  Version2: 4
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01927B:Skyrim.esm
+  Placement:
+    Position: 4200.644, -4838.0947, 2112
+    Rotation: 0, -0, 4.4331903
+MajorFlags:
+- 0x40000

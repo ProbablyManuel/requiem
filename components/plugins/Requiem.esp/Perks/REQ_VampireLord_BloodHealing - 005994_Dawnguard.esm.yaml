@@ -1,0 +1,21 @@
+FormKey: 005994:Dawnguard.esm
+EditorID: REQ_VampireLord_BloodHealing
+Name:
+  TargetLanguage: English
+  Value: Blood Healing
+Description:
+  TargetLanguage: English
+  Value: The sweet taste of the juice of life restores your body. <br> Killing mortals with your bite heals all your wounds as you drink them dry...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 005998:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 01964A:Dawnguard.esm
+  Stage: 70
+  Unknown: 0x000000

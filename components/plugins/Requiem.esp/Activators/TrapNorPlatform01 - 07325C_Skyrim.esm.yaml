@@ -1,0 +1,65 @@
+FormKey: 07325C:Skyrim.esm
+EditorID: TrapNorPlatform01
+Version2: 11
+VirtualMachineAdapter:
+  Scripts:
+  - Name: HazardBase
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapHitSound
+      Object: 000E5F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 5000
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFX
+      Object: 01A141:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 20
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 15
+    - MutagenObjectType: ScriptBoolProperty
+      Name: CheckAngle
+      Data: True
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFXAmmo
+      Object: 052E99:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 5000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 25
+  - Name: TrapNorPlatform
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WindupSound
+      Object: 0189EC:Skyrim.esm
+ObjectBounds:
+  First: -268, -273, -885
+  Second: 272, 271, 8
+Model:
+  File: Traps\NorPlatformTrap\TrapNorPlatform01.nif
+  Data: 0x020000000C00000000000000A247EF46646473001E8C9F277341A0E3646473001E8C9F27E07569C5646473001E8C9F27F2BE38E9646473001E8C9F278B095AD6646473001E8C9F27BA228236646473001E8C9F27BDA6C1E5646473001E8C9F272D3EF7F9646473001E8C9F2780D51CB3646473001E8C9F27C800135A646473001E8C9F2776456EB2646473001E8C9F27C5D4FAE8646473001E8C9F27
+MarkerColor: '#00CC4C33'
+Flags: []

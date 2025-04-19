@@ -1,0 +1,28 @@
+FormKey: 0C1E91:Skyrim.esm
+EditorID: REQ_OneHanded_SwordFocus3
+Name:
+  TargetLanguage: English
+  Value: Sword Focus
+Description:
+  TargetLanguage: English
+  Value: You've become a master of sword combat.<br>[+24% attack speed, +21% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0C1E90:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD39A4:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 03E55B:Requiem.esp

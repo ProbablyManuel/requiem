@@ -1,0 +1,38 @@
+FormKey: 0A05C2:Skyrim.esm
+EditorID: dunRebelsCairnSwordBase
+ObjectBounds:
+  First: -8, -21, -1
+  Second: 8, 88, 1
+Name:
+  TargetLanguage: English
+  Value: Red Eagle's Fury
+Model:
+  File: ArteFake\Hjalti_Sword\Hjalti_Sword_1h_.nif
+  Data: 0x0200000008000000000000004FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305DA8E929164647300262C333B606F633E64647300F0AE1445C924D92F64647300F0AE1445F63890AC64647300262C333B7375D0B664647300F0AE1445
+Destructible:
+  Data:
+    Health: 100
+    DESTCount: 4
+  Stages:
+  - Data:
+      HealthPercent: 90
+      ModelDamageStage: 1
+  - Data:
+      HealthPercent: 50
+      Index: 1
+      ModelDamageStage: 2
+  - Data:
+      HealthPercent: 25
+      Index: 2
+      ModelDamageStage: 3
+  - Data:
+      HealthPercent: 10
+      Index: 3
+      ModelDamageStage: 4
+      Flags:
+      - CapDamage
+    Model:
+      File: Clutter\Bucket01.NIF
+      Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []
