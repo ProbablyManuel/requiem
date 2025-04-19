@@ -23,8 +23,6 @@ jobs:
 
       - run: chmod +x .github/spriggit/Spriggit.CLI
 
-      - run: dotnet tool install Spriggit.Yaml.Skyrim --version 0.37.1 --tool-path "Spriggit/Translations/Spriggit.Yaml.Skyrim/0.37.1"
-
       - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
 
       - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
