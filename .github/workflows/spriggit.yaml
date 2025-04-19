@@ -7,6 +7,8 @@ on:
 jobs:
   spriggit:
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/dotnet/sdk:9.0
 
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
