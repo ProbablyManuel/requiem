@@ -26,8 +26,8 @@ jobs:
 
       - run: chmod +x .github/spriggit/Spriggit.CLI
       
-      - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
+      - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml --PackageVersion 0.36.14
 
-      - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
+      - run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml --PackageVersion 0.36.14
 
       - uses: stefanzweifel/git-auto-commit-action@v5
