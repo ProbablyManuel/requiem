@@ -23,6 +23,7 @@ jobs:
 
       - run: chmod +x .github/spriggit/Spriggit.CLI
 
+      - run: dotnet nuget locals all --clear
       - run: dotnet tool install Spriggit.Yaml.Skyrim --version 0.37.1
       - run: ls "/tmp/Spriggit/Translations/Spriggit.Yaml.Skyrim/0.37.1"
       
