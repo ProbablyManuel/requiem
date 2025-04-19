@@ -20,6 +20,10 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
+      - run: |
+        dotnet --list-sdks
+        dotnet --version
+
       - run: wget -O .github/spriggit.zip https://github.com/Mutagen-Modding/Spriggit/releases/latest/download/SpriggitLinuxCLI.zip
 
       - run: 7z x .github/spriggit.zip -o.github/spriggit
