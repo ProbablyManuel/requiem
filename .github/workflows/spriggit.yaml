@@ -15,6 +15,10 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.*
+
       - run: gh release download -O .github/spriggit.zip -p "SpriggitLinuxCLI.zip" -R Mutagen-Modding/Spriggit
         env:
           GH_TOKEN: ${{ github.token }}
