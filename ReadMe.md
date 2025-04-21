@@ -16,6 +16,8 @@ This mod is published on NexusMods:
 * [SSE CreationKit Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/20061) (you're not required to use it for modding, but without it you cannot save a plugin that has a regular plugin as master file)
 * [BSArch](https://www.nexusmods.com/newvegas/mods/64745)
 * [Champollion](https://www.nexusmods.com/skyrim/mods/35307) (you're not required to use it for modding, but you need it to decompile the Papyrus script source files from the Creation Club DLCs)
+* [Spriggit](https://mutagen-modding.github.io/Spriggit/) (optional but highly recommended)
+* [pre-commit](https://pre-commit.com/) (optional but highly recommended)
 * Mod Organizer 2.x
 
 ## Setup
@@ -63,6 +65,7 @@ This mod is published on NexusMods:
 5. Enable this repository as a mod in Mod Organizer and disable any other Requiem version you may have installed.
 6. Follow the regular [installation instructions](../../wiki/Installing-Requiem-with-Mod-Organizer-2) to set
 up the Reqtificator in Mod Organizer.
+6. Open a (power)shell, go to the repository's directory and execute `pre-commit install`.
 
 ## Important Gradle tasks
 
