@@ -1,0 +1,83 @@
+FormKey: 01EDAB:Dragonborn.esm
+EditorID: REQ_Activator_AllMakerStone_Tree
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dlc2standingstonescript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2Pillar
+      Object: 01C4E4:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2VoicePushProjectile03
+      Object: 02174F:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlackHoldImod
+      Object: 0F756E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2SpellLearned
+      Object: 01DFAB:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2PillarBlockingTopic
+      Object: 01DE98:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StoneActivateSound
+      Object: 03D594:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2PillarFollowerScene
+      Object: 03D04C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2VoicePushProjectile01
+      Object: 01F139:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlackImod
+      Object: 0F756D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerAtPillar
+      Object: 01C4E4:Dragonborn.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2PillarMiraakVoice
+      Object: 03544B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlackBackImod
+      Object: 0F756F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StandingStoneNotReadyMsg
+      Object: 03C338:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGStandingStoneActivateB
+      Object: 03D3C6:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGStandingStoneActivateA
+      Object: 03D3C5:Dragonborn.esm
+ObjectBounds:
+  First: -83, -79, -25
+  Second: 102, 106, 687
+Name:
+  TargetLanguage: English
+  Value: Tree Stone
+Model:
+  File: DLC02\Landscape\StandingStone\DLC2StandingStoneTree.nif
+  Data: 0x020000000000000000000000
+Destructible:
+  Data:
+    Health: 100
+    DESTCount: 1
+  Stages:
+  - Data:
+      HealthPercent: 50
+      Flags:
+      - CapDamage
+      - IgnoreExternalDamage
+    Model:
+      File: Dungeons\Mines\Ore\MineOreDepleted03.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: MineOreDepleted03:3
+        NewTexture: 000C0F:Skyrim.esm
+        Index: 1
+MarkerColor: '#00CC4C33'
+Flags: []

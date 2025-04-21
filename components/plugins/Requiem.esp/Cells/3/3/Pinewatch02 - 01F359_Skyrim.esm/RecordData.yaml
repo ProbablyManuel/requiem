@@ -1,0 +1,88 @@
+FormKey: 01F359:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Pinewatch02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Pinewatch Bandit's Sanctuary
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00151D2D'
+  DirectionalColor: '#00233849'
+  FogNearColor: '#00343E5F'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00171D2F'
+    DirectionalXMinus: '#00121D2A'
+    DirectionalYPlus: '#00151E2D'
+    DirectionalYMinus: '#00151B2D'
+    DirectionalZPlus: '#000A0D14'
+    DirectionalZMinus: '#001F2C45'
+    Specular: '#00343E5F'
+    Scale: 1
+  FogFarColor: '#00343E5F'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0B7DB8:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01928A:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC52:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 02D28E:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01928A:Skyrim.esm
+  Placement:
+    Position: 2287.5615, 3508.803, 5696
+    Rotation: 0, 0, 2.9581969
+- MutagenObjectType: PlacedObject
+  FormKey: 02D161:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 01928A:Skyrim.esm
+  Placement:
+    Position: 1953.8691, 3686.171, 5696
+    Rotation: 0, 0, 3.1331906
+- MutagenObjectType: PlacedObject
+  FormKey: 045B0C:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 01928A:Skyrim.esm
+  Placement:
+    Position: 3605.1287, 3827.1697, 6292.436
+    Rotation: 0, 0, 1.133197
+MajorFlags:
+- 0x40000

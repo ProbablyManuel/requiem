@@ -1,0 +1,48 @@
+FormKey: ADE422:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_Chitin
+Name:
+  TargetLanguage: English
+  Value: Chitin Heavy Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: ADE423:Requiem.esp
+  Data:
+    Magnitude: 9
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 024103:Dragonborn.esm
+    ComparisonValue: 1
+- BaseEffect: ADE423:Requiem.esp
+  Data:
+    Magnitude: 18
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 024103:Dragonborn.esm
+    ComparisonValue: 2
+- BaseEffect: ADE423:Requiem.esp
+  Data:
+    Magnitude: 27
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 024103:Dragonborn.esm
+    ComparisonValue: 3
+- BaseEffect: ADE423:Requiem.esp
+  Data:
+    Magnitude: 36
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 024103:Dragonborn.esm
+    ComparisonValue: 4

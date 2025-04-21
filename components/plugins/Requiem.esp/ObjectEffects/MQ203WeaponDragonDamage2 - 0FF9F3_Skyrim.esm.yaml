@@ -1,0 +1,20 @@
+FormKey: 0FF9F3:Skyrim.esm
+EditorID: MQ203WeaponDragonDamage2
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Dragon Damage
+EnchantmentCost: 50
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 50
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 0F1AC2:Skyrim.esm
+  Data:
+    Magnitude: 200
+- BaseEffect: 0FF9F7:Skyrim.esm
+  Data:
+    Magnitude: 10

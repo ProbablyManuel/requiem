@@ -1,0 +1,188 @@
+FormKey: 01522C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PurewaterRun01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Purewater Run
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00000000'
+    DirectionalXMinus: '#00000000'
+    DirectionalYPlus: '#00000000'
+    DirectionalYMinus: '#00000000'
+    DirectionalZPlus: '#00000000'
+    DirectionalZMinus: '#00000000'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01928D:Skyrim.esm
+Water: 033DA7:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\DunCaveRuinGreen_e.dds
+SkyAndWeatherFromRegion: 0C5856:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC55:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 000822:ccedhsse003-redguard.esl
+  MajorRecordFlagsRaw: 3072
+  EditorID: ccEDHSSE001_SpyStandMarker1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000034:Skyrim.esm
+  LocationReference: 01928D:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 505.80353, -920.06323, -130.40921
+    Rotation: 0, 0, 4.1832
+- MutagenObjectType: PlacedObject
+  FormKey: 000825:ccedhsse003-redguard.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 052FF5:Skyrim.esm
+  LocationReference: 01928D:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 614.1217, -1145.9692, -140.46489
+    Rotation: 0, 0, 5.683192
+- MutagenObjectType: PlacedNpc
+  FormKey: 000826:ccedhsse003-redguard.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000821:ccedhsse003-redguard.esl
+  LocationReference: 01928D:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -15639.121, -19607.043, 0
+    Rotation: 0, 0, 5.4831877
+  MajorFlags:
+  - Persistent
+  - InitiallyDisabled
+- MutagenObjectType: PlacedObject
+  FormKey: 0008A8:ccedhsse003-redguard.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 0008A6:ccedhsse003-redguard.esl
+  Lock:
+    Level: 255
+    Unused: 0x000000
+    Key: 0008A7:ccedhsse003-redguard.esl
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01928D:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 340.21075, -788.07513, -145.98578
+    Rotation: 6.211599, 0.1211084, 3.393826
+- MutagenObjectType: PlacedObject
+  FormKey: 0008B8:ccedhsse003-redguard.esl
+  MajorRecordFlagsRaw: 3072
+  EditorID: ccEDHSSE003_SpeakToSpyLeaderTrig
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultsetStageTrigSCRIPT
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: disableWhenDone
+        Data: True
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptBoolProperty
+        Name: doOnce
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 55
+      - MutagenObjectType: ScriptIntProperty
+        Name: prereqStageOPT
+        Data: 50
+  Base: 033F50:Skyrim.esm
+  Primitive:
+    Bounds: 3216.064, 1450.6472, 1721.1543
+    Color: '#00CC4C33'
+    Unknown: 0.15
+    Type: Box
+  LocationReference: 01928D:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 714.1367, -1198.3011, -448.3706
+    Rotation: 0, 0, 3.1415997
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0008A9:ccedhsse003-redguard.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 000021:Skyrim.esm
+  Primitive:
+    Bounds: 96.0001, 49.0001, 238.1493
+    Color: '#00FFFF00'
+    Unknown: 0.15
+    Type: Box
+  CollisionLayer: 49
+  LocationReference: 01928D:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 341.2995, -788.6624, -30000
+    Rotation: 6.211599, 0.1211084, 3.393826
+MajorFlags:
+- 0x40000

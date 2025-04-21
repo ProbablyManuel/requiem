@@ -1,0 +1,96 @@
+FormKey: 041777:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SwindlersDen01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Swindler's Den
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#0062EE8F'
+  DirectionalColor: '#003F4749'
+  FogNearColor: '#009BA28C'
+  FogNear: 1400
+  FogFar: 9000
+  FogClipDistance: 9000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00CE73C8'
+    Scale: 1
+  FogFarColor: '#00949B84'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 094E50:Skyrim.esm
+WaterHeight: 0
+Location: 018EE2:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5858:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EBE7:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 09345B:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: MS08BanditSceneScared
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 01B0BE:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 093461:Skyrim.esm
+  PersistentLocation: 018EE2:Skyrim.esm
+  LocationReference: 018EE2:Skyrim.esm
+  EnableParent:
+    Reference: 042438:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: 1281.6951, 508.66193, 1643.7899
+    Rotation: 0, -0, 1.3962634
+  MajorFlags:
+  - Persistent
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 06DDB3:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018EE2:Skyrim.esm
+  Placement:
+    Position: 405.62286, 1460.0519, 1867.7965
+    Rotation: 0, 0, 2.5831954
+- MutagenObjectType: PlacedObject
+  FormKey: 041EBA:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018EE2:Skyrim.esm
+  Placement:
+    Position: 6729.0034, 2447.004, 1572.5103
+    Rotation: 0, 0, 6.2663865
+MajorFlags:
+- 0x40000

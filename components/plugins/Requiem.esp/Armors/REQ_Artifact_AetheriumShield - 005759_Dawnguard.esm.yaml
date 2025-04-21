@@ -1,0 +1,47 @@
+FormKey: 005759:Dawnguard.esm
+MajorRecordFlagsRaw: 64
+EditorID: REQ_Artifact_AetheriumShield
+SkyrimMajorRecordFlags:
+- 0x40
+ObjectBounds:
+  First: -26, -41, -13
+  Second: 26, 26, 8
+Name:
+  TargetLanguage: English
+  Value: Aetherium Shield
+ObjectEffect: AE3850:Requiem.esp
+WorldModel:
+  Male:
+    Model:
+      File: DLC01\Armor\Dwarven\1stPersonDwarvenShieldCrystal.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: DLC01\Armor\Dwarven\1stPersonDwarvenShieldCrystal.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Shield
+  ArmorType: HeavyArmor
+  ActsLike44: True
+EquipmentType: 0141E8:Skyrim.esm
+BashImpactDataSet: 0183FE:Skyrim.esm
+AlternateBlockMaterial: 016979:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 08F959:Skyrim.esm
+- 0965B2:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 00E299:Dawnguard.esm
+- 06BBD2:Skyrim.esm
+- AD3AF1:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: Blocking renders the carrier ethereal. Enemies struck by this shield become ethereal for <15> seconds, making them unable to attack or be attacked.
+Armature:
+- 013EB6:Dawnguard.esm
+Value: 50000
+Weight: 15
+ArmorRating: 240
+MajorFlags:
+- Shield

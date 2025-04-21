@@ -1,0 +1,32 @@
+FormKey: 01E7F9:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BlackBookNoStaminaEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03D258:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Secret of Strength
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- NoMagnitude
+- FXPersist
+CastingLight: 03F1B5:Skyrim.esm
+HitShader: 03D3BC:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 07331D:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 01C859:Skyrim.esm
+HitEffectArt: 03CD85:Dragonborn.esm
+ImpactData: 073320:Skyrim.esm
+DualCastScale: 1
+PerkToApply: 01E7F8:Dragonborn.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Power attacks cost no Stamina for <dur> seconds.

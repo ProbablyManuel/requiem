@@ -1,0 +1,36 @@
+FormKey: 0E7EBC:Skyrim.esm
+EditorID: HawkBeak
+Version2: 15
+ObjectBounds:
+  First: -2, -4, 0
+  Second: 2, 3, 0
+Name:
+  TargetLanguage: English
+  Value: Hawk Beak
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\HawkBeak01.nif
+  Data: 0x020000000200000000000000168F527564647300604DDD5CF053B6F664647300604DDD5C
+Value: 15
+Weight: 0.25
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1.5
+    Duration: 20
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 300
+- BaseEffect: 03EAEC:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60

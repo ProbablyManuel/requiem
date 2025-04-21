@@ -1,0 +1,25 @@
+FormKey: AE3B1D:Requiem.esp
+EditorID: REQ_Trait_Physique_Khajiit
+Name:
+  TargetLanguage: English
+  Value: Khajiit Physique
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: AE3B55:Requiem.esp
+  Data: {}
+- BaseEffect: 000900:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06C0ED:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 10CD12:Skyrim.esm

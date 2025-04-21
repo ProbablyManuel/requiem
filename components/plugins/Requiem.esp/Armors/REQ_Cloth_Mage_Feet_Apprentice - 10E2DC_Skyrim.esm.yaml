@@ -1,0 +1,44 @@
+FormKey: 10E2DC:Skyrim.esm
+EditorID: REQ_Cloth_Mage_Feet_Apprentice
+Name:
+  TargetLanguage: English
+  Value: College Boots
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\MageApprentice\MageAppBootsGND.nif
+      Data: 0x02000000020000000000000011D36341646473008544CA93D9EC2ADB646473008544CA93
+      AlternateTextures:
+      - Name: bootGND:0
+        NewTexture: 10E2DA:Skyrim.esm
+      - Name: bootGND:1
+        NewTexture: 10E2DA:Skyrim.esm
+        Index: 1
+  Female:
+    Model:
+      File: Clothes\MageApprentice\MageAppBoots_F_GND.nif
+      Data: 0x02000000020000000000000011D36341646473008544CA93D9EC2ADB646473008544CA93
+      AlternateTextures:
+      - Name: bootGND:0
+        NewTexture: 10E2DA:Skyrim.esm
+      - Name: bootGND:1
+        NewTexture: 10E2DA:Skyrim.esm
+        Index: 1
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 10CD12:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 10E2DB:Skyrim.esm
+Value: 2
+Weight: 1

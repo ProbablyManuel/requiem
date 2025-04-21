@@ -1,0 +1,89 @@
+FormKey: 013A81:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DawnstarFrukisHouse
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fruki's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020064:Skyrim.esm
+Owner: 09DA43:Skyrim.esm
+LockList: 09DA44:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5852:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 013D21:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 14
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 029CB0:Skyrim.esm
+  TeleportDestination:
+    Door: 017746:Skyrim.esm
+    Position: 27634.107, 106683.24, -13788.263
+    Rotation: 0, -0, 1.1498168
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 09DA42:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0E054E:Skyrim.esm
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  Owner: 09DA43:Skyrim.esm
+  LocationReference: 020064:Skyrim.esm
+  Placement:
+    Position: 1056.459, -926.1388, 272
+    Rotation: 0, -0, 3.1415927
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 04DC52:Skyrim.esm
+  Version2: 4
+  Base: 09AF19:Skyrim.esm
+  Scale: 0.87
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 071061:Skyrim.esm
+  LocationReference: 020064:Skyrim.esm
+  Placement:
+    Position: 706.89044, -589.2122, 423.47583
+    Rotation: 0, -0, 1.5924506
+MajorFlags:
+- 0x40000

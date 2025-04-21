@@ -1,0 +1,33 @@
+FormKey: 01A16D:Dawnguard.esm
+EditorID: DLC1VoiceUndeadSummonEffect2
+Version2: 7
+Name:
+  TargetLanguage: English
+  Value: Summon Undead From Soul Cairn
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- PowerAffectsDuration
+- NoHitEffect
+BaseCost: 2
+CastingLight: 03BA90:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: 01A16B:Dawnguard.esm
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 03CDFC:Skyrim.esm
+HitEffectArt: 00D60D:Dawnguard.esm
+ImpactData: 03A1E9:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 0440D4:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 10100A:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Calls undead from Soul Cairn for <dur> seconds.

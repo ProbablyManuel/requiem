@@ -1,0 +1,18 @@
+FormKey: AE3975:Requiem.esp
+EditorID: REQ_AllMakerStone_Tree_Perk
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.1

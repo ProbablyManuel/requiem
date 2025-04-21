@@ -1,0 +1,170 @@
+FormKey: 0CF02C:Skyrim.esm
+EditorID: REQ_Player_VampireFeed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PRKF_VampireFeedBeds_000CF02C
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerVampireQuest
+      Object: 0EAFD5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireTurn
+      Object: 00588C:Dawnguard.esm
+  ScriptFragments:
+    FileName: PRKF_VampireFeedBeds_000CF02C
+    Fragments:
+    - Unknown2: 1
+      ScriptName: PRKF_VampireFeedBeds_000CF02C
+      FragmentName: Fragment_0
+    - FragmentIndex: 1
+      Unknown2: 1
+      ScriptName: PRKF_VampireFeedBeds_000CF02C
+      FragmentName: Fragment_15
+Name:
+  TargetLanguage: English
+  Value: Thirst for Blood
+Description:
+  TargetLanguage: English
+  Value: Allows feeding from NPCs when they're asleep.
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointAddActivateChoice
+  Priority: 20
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetVampireFeedConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0A82BB:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsSwimmingConditionData
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDeadConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsChildConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasBeenEatenConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013794:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0A82BB:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 58B661:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 0142E7:Dawnguard.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 0162F7:Dawnguard.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetSleepingConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetSittingConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 00BF72:Dawnguard.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 09E0BB:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 04DEE7:Skyrim.esm
+      ComparisonValue: 1
+  ButtonLabel:
+    TargetLanguage: English
+    Value: Feed
+  Flags:
+    FragmentIndex: 1
+  EntryPoint: Activate
+  PerkConditionTabCount: 2
+  Spell: 58B662:Requiem.esp
+- MutagenObjectType: PerkEntryPointAddActivateChoice
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetVampireFeedConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0A82BB:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDeadConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsChildConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasBeenEatenConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013794:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0A82BB:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 58B661:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 0142E7:Dawnguard.esm
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetSleepingConditionData
+      ComparisonValue: 3
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 0162F7:Dawnguard.esm
+      ComparisonValue: 1
+  ButtonLabel:
+    TargetLanguage: English
+    Value: Feed
+  EntryPoint: Activate
+  PerkConditionTabCount: 2
+  Spell: 58B662:Requiem.esp

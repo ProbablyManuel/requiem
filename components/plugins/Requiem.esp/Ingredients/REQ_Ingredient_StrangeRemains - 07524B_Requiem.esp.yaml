@@ -1,0 +1,29 @@
+FormKey: 07524B:Requiem.esp
+EditorID: REQ_Ingredient_StrangeRemains
+Name:
+  TargetLanguage: English
+  Value: Strange Remains
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Glowdust01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 850
+Weight: 0.75
+IngredientValue: 774
+Effects:
+- BaseEffect: 03EB3D:Skyrim.esm
+  Data:
+    Duration: 60
+- BaseEffect: 20B30F:Requiem.esp
+  Data:
+    Duration: 10
+- BaseEffect: 03EB26:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 03EAEC:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60

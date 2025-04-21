@@ -1,0 +1,21 @@
+FormKey: 10F813:Skyrim.esm
+EditorID: REQ_Ench_RingOfNamira_Blessing1
+Name:
+  TargetLanguage: English
+  Value: Namira's Blessing
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+CastType: FireAndForget
+Effects:
+- BaseEffect: 10F814:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 7200
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedConditionData
+      ItemOrList: 02C37B:Skyrim.esm
+    ComparisonValue: 1

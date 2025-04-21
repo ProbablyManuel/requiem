@@ -1,0 +1,83 @@
+FormKey: 0161FC:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HlaaluFarm
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hlaalu Farm
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: 0
+Location: 01705D:Skyrim.esm
+Owner: 105A5B:Skyrim.esm
+LockList: 01411E:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0832B8:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 884.9882, 78.63084, 62.9797
+- MutagenObjectType: PlacedObject
+  FormKey: 02A8DD:Skyrim.esm
+  Version2: 1
+  Base: 09AF19:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 071061:Skyrim.esm
+  LocationReference: 01705D:Skyrim.esm
+  Placement:
+    Position: 1365.9409, -287.42966, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0832B7:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 865.4337, 91.15332, 63.006546
+    Rotation: 0, -0, 1
+- MutagenObjectType: PlacedObject
+  FormKey: 02AA2C:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.87
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01705D:Skyrim.esm
+  Placement:
+    Position: 642.81384, -228.3888, 0.001024
+    Rotation: 0, 0, 1.5931959
+MajorFlags:
+- 0x40000

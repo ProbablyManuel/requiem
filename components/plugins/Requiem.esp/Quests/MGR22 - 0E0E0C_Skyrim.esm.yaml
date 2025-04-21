@@ -1,0 +1,85 @@
+FormKey: 0E0E0C:Skyrim.esm
+EditorID: MGR22
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MGR22QuestScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: MaxRewardInt
+      Data: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGR22
+      Object: 0E0E0C:Skyrim.esm
+  - Name: QF_MGR22_000E0E0C
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: MaxRewardInt
+      Data: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGR21
+      Object: 0E0E04:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGR21ScrollAlteration
+      Object: 1076E9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGR21ScrollConjuration
+      Object: 1076EB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ShalidorsMirror
+      Object: 02D143:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGR21ScrollRestoration
+      Object: 1076EA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGR21ScrollDestruction
+      Object: 1076E7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGR21ScrollIllusion
+      Object: 1076E8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Urag
+      Object: 0E0E0C:Skyrim.esm
+      Alias: 0
+  FileName: QF_MGR22_000E0E0C
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_MGR22_000E0E0C
+    FragmentName: Fragment_2
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_MGR22_000E0E0C
+    FragmentName: Fragment_0
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_MGR22_000E0E0C
+    FragmentName: Fragment_8
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_MGR22_000E0E0C
+    FragmentName: Fragment_7
+Name:
+  TargetLanguage: English
+  Value: Shalidor's Insights Rewards
+Priority: 30
+QuestFormVersion: 65
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 108
+  LogEntries:
+  - Flags: []
+- Index: 10
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags: []
+NextAliasID: 1
+Aliases:
+- Name: Urag
+  Flags: []
+  UniqueActor: 01C193:Skyrim.esm
+  VoiceTypes: Null

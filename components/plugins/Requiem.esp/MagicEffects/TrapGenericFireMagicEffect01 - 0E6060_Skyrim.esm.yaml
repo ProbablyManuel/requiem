@@ -1,0 +1,38 @@
+FormKey: 0E6060:Skyrim.esm
+EditorID: TrapGenericFireMagicEffect01
+Name:
+  TargetLanguage: English
+  Value: Burning
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoHitEffect
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: ResistFire
+TaperWeight: 0.3
+TaperCurve: 2
+TaperDuration: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    RunOnType: Target
+    MagicEffect: 0E6060:Skyrim.esm

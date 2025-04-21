@@ -1,0 +1,21 @@
+FormKey: 0059A7:Dawnguard.esm
+EditorID: REQ_Werewolf_Gorging
+Name:
+  TargetLanguage: English
+  Value: Gorging
+Description:
+  TargetLanguage: English
+  Value: The Flesh and blood of the fallen are a welcome feast to you, <br>as they now heal even more of your injuries.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0059A5:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 60
+  Unknown: 0x000000

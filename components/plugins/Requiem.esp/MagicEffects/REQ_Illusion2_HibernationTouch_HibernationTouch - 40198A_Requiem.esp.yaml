@@ -1,0 +1,81 @@
+FormKey: 40198A:Requiem.esp
+EditorID: REQ_Illusion2_HibernationTouch_HibernationTouch
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_IllusionBreak
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindEffect
+      Object: 41F4F4:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Skill_ScalingPerks
+      Objects:
+      - Name: ''
+        Object: 0F2CA9:Skyrim.esm
+      - Name: ''
+        Object: 0C44C3:Skyrim.esm
+      - Name: ''
+        Object: 0581E2:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 40198C:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPRate
+      Data: 2
+  - Name: REQ_Illusion_Hibernation
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Nightmare
+      Object: 028533:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Hibernation Touch
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+- 484DDB:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoHitEvent
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+BaseCost: 0.07
+MagicSkill: Illusion
+CastingLight: 07331B:Skyrim.esm
+TaperWeight: 1
+HitShader: 073321:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: TargetActor
+CastingArt: 07331A:Skyrim.esm
+HitEffectArt: 07331C:Skyrim.esm
+ImpactData: 073320:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The touched target will fall into a deep slumber for up to <dur> seconds.

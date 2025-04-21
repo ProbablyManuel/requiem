@@ -1,0 +1,37 @@
+FormKey: 42936D:Requiem.esp
+EditorID: REQ_Illusion3_ShadowStride_NotEmpowered
+Name:
+  TargetLanguage: English
+  Value: Not Empowered
+MenuDisplayObject: 109AC3:Skyrim.esm
+Flags:
+- NoArea
+- PowerAffectsDuration
+- Painless
+BaseCost: 75
+MagicSkill: Illusion
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+CastingArt: 0510CF:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 058E0E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: If the spell is not empowered, running will also break it.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target

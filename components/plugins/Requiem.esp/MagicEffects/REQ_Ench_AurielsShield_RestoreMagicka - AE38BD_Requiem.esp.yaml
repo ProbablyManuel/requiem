@@ -1,0 +1,17 @@
+FormKey: AE38BD:Requiem.esp
+EditorID: REQ_Ench_AurielsShield_RestoreMagicka
+Name:
+  TargetLanguage: English
+  Value: Restore Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Restores <mag> magicka.

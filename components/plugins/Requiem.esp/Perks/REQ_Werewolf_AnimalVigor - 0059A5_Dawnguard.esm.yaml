@@ -1,0 +1,21 @@
+FormKey: 0059A5:Dawnguard.esm
+EditorID: REQ_Werewolf_AnimalVigor
+Name:
+  TargetLanguage: English
+  Value: Animal Vigor
+Description:
+  TargetLanguage: English
+  Value: Your werewolf form grants you even more physical strength <br> and increases both your endurance and your resistance to wounds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0059A4:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 50
+  Unknown: 0x000000

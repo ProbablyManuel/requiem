@@ -1,0 +1,48 @@
+FormKey: 029B03:Requiem.esp
+EditorID: REQ_Destruction4_FrostShock_Slow
+Name:
+  TargetLanguage: English
+  Value: Slow
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 0B729E:Skyrim.esm
+- 2FFEAD:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: ResistFrost
+TaperWeight: 1
+MinimumSkillLevel: 75
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeedMult
+CastType: Concentration
+TargetType: TargetActor
+SkillUsageMultiplier: 0.33
+DualCastScale: 1
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5CB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: ADDDF2:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 029B03:Requiem.esp

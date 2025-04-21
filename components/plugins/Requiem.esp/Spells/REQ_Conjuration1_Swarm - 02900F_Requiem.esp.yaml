@@ -1,0 +1,26 @@
+FormKey: 02900F:Requiem.esp
+EditorID: REQ_Conjuration1_Swarm
+Name:
+  TargetLanguage: English
+  Value: Summon Swarm (Rank I)
+MenuDisplayObject: 10A046:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 40
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: Aimed
+HalfCostPerk: 0F2CA7:Skyrim.esm
+Effects:
+- BaseEffect: 029012:Requiem.esp
+  Data:
+    Magnitude: 5
+    Duration: 1
+- BaseEffect: 309D26:Requiem.esp
+  Data:
+    Magnitude: 5
+    Duration: 1

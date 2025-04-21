@@ -1,0 +1,49 @@
+FormKey: 106616:Skyrim.esm
+EditorID: REQ_Ench_Chillrend_Paralysis
+Name:
+  TargetLanguage: English
+  Value: Paralyze
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 180
+HitShader: 10A044:Skyrim.esm
+EnchantShader: 10A043:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+Projectile: 02F774:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+EnchantArt: 10A045:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 25% chance to paralyze the target for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 25
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 357085:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData

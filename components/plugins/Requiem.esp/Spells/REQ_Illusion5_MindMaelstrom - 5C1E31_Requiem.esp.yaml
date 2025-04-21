@@ -1,0 +1,25 @@
+FormKey: 5C1E31:Requiem.esp
+EditorID: REQ_Illusion5_MindMaelstrom
+Name:
+  TargetLanguage: English
+  Value: Mind Maelstrom
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1100
+Flags:
+- ManualCostCalc
+ChargeTime: 3
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44C6:Skyrim.esm
+Effects:
+- BaseEffect: 5C1E2E:Requiem.esp
+  Data:
+    Area: 250
+    Duration: 20
+- BaseEffect: 5C1E30:Requiem.esp
+  Data:
+    Area: 250
+    Duration: 20

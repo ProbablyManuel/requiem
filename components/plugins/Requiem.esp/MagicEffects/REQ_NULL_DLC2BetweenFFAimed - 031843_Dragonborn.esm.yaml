@@ -1,0 +1,72 @@
+FormKey: 031843:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BetweenFFAimed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2OverwhelmEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeCreature
+      Object: 013795:Skyrim.esm
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 01E130:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Between
+MenuDisplayObject: 09DB72:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+MagicSkill: Alteration
+CastingLight: 06EBC9:Skyrim.esm
+HitShader: 03A299:Dragonborn.esm
+MinimumSkillLevel: 25
+SpellmakingArea: 15
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Calm
+Projectile: 03A297:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 06DE85:Skyrim.esm
+ImpactData: 01E150:Dragonborn.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 03A29A:Dragonborn.esm
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Targets are frozen between Oblivion and Tamriel for <dur> seconds, and immune to all damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 03D2FB:Dragonborn.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 03D2F9:Dragonborn.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsEssentialConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsGhostConditionData

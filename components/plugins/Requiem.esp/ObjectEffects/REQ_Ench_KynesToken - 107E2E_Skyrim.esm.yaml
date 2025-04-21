@@ -1,0 +1,74 @@
+FormKey: 107E2E:Skyrim.esm
+EditorID: REQ_Ench_KynesToken
+Name:
+  TargetLanguage: English
+  Value: Kyne's Token Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 107E2F:Skyrim.esm
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: AE3811:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: AE3812:Requiem.esp
+- BaseEffect: AE3815:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 0FB98C:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: AE380A:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 092C48:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0A82BB:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 01F326:Skyrim.esm
+      Stage: 200
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 01EA51:Skyrim.esm
+      Stage: 200
+    ComparisonValue: 1
+- BaseEffect: AE3816:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 03FA16:Skyrim.esm
+      Stage: 50
+    ComparisonValue: 1

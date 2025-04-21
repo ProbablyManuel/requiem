@@ -1,0 +1,13 @@
+FormKey: 109639:Skyrim.esm
+EditorID: REQ_Spell_MageArmorOnSelf_DamageReduction
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.5

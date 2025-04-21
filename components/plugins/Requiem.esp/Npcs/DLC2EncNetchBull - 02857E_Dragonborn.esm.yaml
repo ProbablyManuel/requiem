@@ -1,0 +1,137 @@
+FormKey: 02857E:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2EncNetchBull
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2NetchFXScript
+ObjectBounds:
+  First: -79, -109, 0
+  Second: 79, 109, 432
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  StaminaOffset: 1000
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 2200
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02507C:Dragonborn.esm
+  Fluff: 0x000000
+DeathItem: 02C43C:Dragonborn.esm
+Voice: 024C31:Dragonborn.esm
+Race: 01FEB8:Dragonborn.esm
+WornArmor: 01FEBB:Dragonborn.esm
+AttackRace: 01FEB8:Dragonborn.esm
+Perks:
+- Perk: 0FAB0B:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+Class: 0F2594:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Netch
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 100
+  - Key: Block
+    Value: 100
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 100
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 3113
+  Stamina: 4082
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 034C03:Dragonborn.esm
+NAM5: 255
+Height: 0.9
+Weight: 50
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 026B44:Dragonborn.esm
+DefaultPackageList: 0EB249:Skyrim.esm
+TextureLighting: '#007E7E7E'
+MajorFlags:
+- 0x40000

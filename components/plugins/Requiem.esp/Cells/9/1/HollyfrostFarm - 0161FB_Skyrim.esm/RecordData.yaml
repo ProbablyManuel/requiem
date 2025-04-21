@@ -1,0 +1,80 @@
+FormKey: 0161FB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HollyfrostFarm
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hollyfrost Farm
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01705B:Skyrim.esm
+Owner: 105A5C:Skyrim.esm
+LockList: 014139:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0710E7:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1193.3435, 137.17491, 63.00656
+    Rotation: 0, -0, 0.31681916
+- MutagenObjectType: PlacedObject
+  FormKey: 0710E4:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1193.2031, 170.43277, 63.00656
+- MutagenObjectType: PlacedObject
+  FormKey: 02B399:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01705B:Skyrim.esm
+  Placement:
+    Position: 1497.7776, -619.12305, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0710E6:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1204.7672, 156.46365, 63.00656
+    Rotation: 0, -0, 4.2000046
+- MutagenObjectType: PlacedObject
+  FormKey: 0710E5:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1205.8009, 185.07365, 63.00656
+    Rotation: 0, -0, 3
+MajorFlags:
+- 0x40000

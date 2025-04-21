@@ -1,0 +1,48 @@
+FormKey: 00095A:ccbgssse041-netchleather.esl
+EditorID: REQ_Light_ShadowedNetchLeather_Head
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 1040
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00094A:ccbgssse041-netchleather.esl
+Name:
+  TargetLanguage: English
+  Value: Shadowed Netch Leather Helmet
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE041\Armor\NetchLeather\NetchLeatherHelmet_GO.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: NetchLeatherHelmet_GO:0
+        NewTexture: 000947:ccbgssse041-netchleather.esl
+      - Name: NetchLeatherHelmet_GO:8
+        NewTexture: 000947:ccbgssse041-netchleather.esl
+        Index: 1
+BodyTemplate:
+  FirstPersonFlags:
+  - Hair
+  - Circlet
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- ADDD70:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00095E:ccbgssse041-netchleather.esl
+- 00095D:ccbgssse041-netchleather.esl
+- 00095C:ccbgssse041-netchleather.esl
+- 00095B:ccbgssse041-netchleather.esl
+Value: 80
+Weight: 2
+ArmorRating: 60

@@ -1,0 +1,31 @@
+FormKey: 4068C9:Requiem.esp
+EditorID: REQ_Illusion2_RuneOfDampening
+Name:
+  TargetLanguage: English
+  Value: Rune of Dampening
+MenuDisplayObject: 1097CD:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 275
+Flags:
+- ManualCostCalc
+ChargeTime: 3
+CastType: FireAndForget
+HalfCostPerk: 0C44C3:Skyrim.esm
+Effects:
+- BaseEffect: 4068C3:Requiem.esp
+  Data:
+    Duration: 600
+- BaseEffect: 4068C4:Requiem.esp
+  Data:
+    Duration: 600
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 409069:Requiem.esp
+- BaseEffect: 409069:Requiem.esp
+  Data:
+    Duration: 2

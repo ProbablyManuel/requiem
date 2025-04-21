@@ -1,0 +1,34 @@
+FormKey: 8749BA:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_Magic_NecromancersAmuletCurse
+Name:
+  TargetLanguage: English
+  Value: Curse of Agony
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 5
+HitShader: 074799:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastingArt: 01C859:Skyrim.esm
+HitEffectArt: 0028E7:Dawnguard.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: A curse must lie on something you wear... You can feel how the life is sucked out of your body with terrifying pace, making your flesh wither within seconds!
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Magicka
+  ComparisonValue: 150

@@ -1,0 +1,26 @@
+FormKey: 03EB17:Skyrim.esm
+EditorID: REQ_Alch_RestoreMagicka
+Name:
+  TargetLanguage: English
+  Value: Restore Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 042508:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+- 66CB3A:Requiem.esp
+Flags:
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.3
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Magicka
+  Association: 66CB3A:Requiem.esp
+CastType: FireAndForget
+HitEffectArt: 04E221:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka recovers by <mag> per second for <dur> seconds.

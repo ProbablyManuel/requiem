@@ -1,0 +1,20 @@
+FormKey: AE3821:Requiem.esp
+EditorID: REQ_Ench_AhzidalsGauntlets
+Name:
+  TargetLanguage: English
+  Value: Ahzidal's Gauntlets Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE3824:Requiem.esp
+  Data: {}
+- BaseEffect: AE390F:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4

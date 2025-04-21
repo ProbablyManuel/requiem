@@ -1,0 +1,84 @@
+FormKey: AD3B3D:Requiem.esp
+EditorID: REQ_Ench_RingOfInebriation
+Name:
+  TargetLanguage: English
+  Value: Ring of Inebriation
+EnchantmentCost: 1738
+EnchantmentAmount: 1738
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 0B7A35:Skyrim.esm
+  Data:
+    Magnitude: 4
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE372A:Requiem.esp
+    ComparisonValue: 25
+- BaseEffect: 0B7A35:Skyrim.esm
+  Data:
+    Magnitude: 8
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE372A:Requiem.esp
+    ComparisonValue: 25
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE372A:Requiem.esp
+    ComparisonValue: 50
+- BaseEffect: 0B7A35:Skyrim.esm
+  Data:
+    Magnitude: 12
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE372A:Requiem.esp
+    ComparisonValue: 50
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE372A:Requiem.esp
+    ComparisonValue: 75
+- BaseEffect: 0B7A35:Skyrim.esm
+  Data:
+    Magnitude: 16
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE372A:Requiem.esp
+    ComparisonValue: 75
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE372A:Requiem.esp
+    ComparisonValue: 100
+- BaseEffect: 0B7A35:Skyrim.esm
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE372A:Requiem.esp
+    ComparisonValue: 100
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 0A63A1:Skyrim.esm
+    ComparisonValue: 1

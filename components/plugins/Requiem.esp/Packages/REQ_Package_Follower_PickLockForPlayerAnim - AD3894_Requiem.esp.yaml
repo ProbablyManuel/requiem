@@ -1,0 +1,88 @@
+FormKey: AD3894:Requiem.esp
+EditorID: REQ_Package_Follower_PickLockForPlayerAnim
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PF_REQ_Package_Follower_PickLockAnim
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerControl
+      Object: 82F3AF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: datastorage
+      Object: AD3B22:Requiem.esp
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: unlockingTarget
+      Object: 82F3AF:Requiem.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: crimeTrigger
+      Object: 82F3AF:Requiem.esp
+      Alias: 10
+  ScriptFragments:
+    FileName: PF_REQ_Package_Follower_PickLockAnim
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: PF_REQ_Package_Follower_PickLockAnim
+      FragmentName: Fragment_0
+Flags:
+- MustComplete
+Type: Package
+PreferredSpeed: Run
+Unknown: 116
+ScheduleMonth: -1
+ScheduleDayOfWeek: 255
+ScheduleHour: -1
+ScheduleMinute: -1
+Unknown3: 0x000000
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 82F3AF:Requiem.esp
+    SecondUnusedIntParameter: -285088000
+    VariableName: ::lockpickCrimeGold_var
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Morality
+  ComparisonValue: 2
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 82F3AF:Requiem.esp
+    SecondUnusedIntParameter: -285087968
+    VariableName: ::lockpickInAnimPhase_var
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetLockedConditionData
+    RunOnType: QuestAlias
+    RunOnTypeIndex: 6
+  ComparisonValue: 1
+OwnerQuest: 82F3AF:Requiem.esp
+PackageTemplate: 0654E2:Skyrim.esm
+Data:
+- Key: 3
+  Value:
+    MutagenObjectType: PackageDataFloat
+    Data: 5
+- Key: 4
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+XnamMarker: 0x05
+OnBegin:
+  Idle: 0BB051:Skyrim.esm
+  Topics:
+  - MutagenObjectType: TopicReference
+OnEnd:
+  Topics:
+  - MutagenObjectType: TopicReferenceSubtype
+    Subtype: FEXT
+OnChange:
+  Topics:
+  - MutagenObjectType: TopicReference

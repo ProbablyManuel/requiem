@@ -1,0 +1,148 @@
+FormKey: 016EA1:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BloodletThrone01
+Version2: 9
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bloodlet Throne
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00302E34'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#0011150D'
+  FogNear: 1000
+  FogFar: 14000
+  DirectionalFade: 1
+  FogClipDistance: 14000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#0011150D'
+    Scale: 1
+  FogFarColor: '#0011150D'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 01952F:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 016F85:Skyrim.esm
+AcousticSpace: 02B3AE:Skyrim.esm
+EncounterZone: 016F87:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 089D4E:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 07AE81:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 01F828:Skyrim.esm
+  LocationReference: 016F85:Skyrim.esm
+  Placement:
+    Position: -2278.477, 3897.3794, 1204.0791
+    Rotation: 1.4827342, -0.8593768, 6.2510095
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 3A6474:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 03AD5B:Skyrim.esm
+  Placement:
+    Position: -2271.03, 3904.602, 1116.4696
+    Rotation: -0.00019313722, -0.0035179919, 0.030109346
+- MutagenObjectType: PlacedObject
+  FormKey: 31E0C6:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139A5:Skyrim.esm
+  RagdollData: 0x0001542B008093BD0000A13E00006CBB6A762BB981261D3AC800CD3F
+  Placement:
+    Position: 2104.798, 394.55573, 533.39905
+- MutagenObjectType: PlacedObject
+  FormKey: 0CD9CE:Skyrim.esm
+  MajorRecordFlagsRaw: 1073743872
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x40000000
+  Base: 01B024:Skyrim.esm
+  RagdollData: 0x007F163B00D8EBBE00003CBC0033FD3F968EDC3F08D5E1BEF1E948C00001FB3B001CF33F00009B3D0080803D5BFA20BBA26D123D1CD3D03F
+  LocationReference: 016F85:Skyrim.esm
+  Placement:
+    Position: 2092.09, 501.59695, 476.69656
+    Rotation: 0, -0, 4.233188
+- MutagenObjectType: PlacedObject
+  FormKey: 0C6ADE:Requiem.esp
+  Base: 0C6ADC:Requiem.esp
+  RagdollData: 0x0030FD0000C0BCBE008044BE00E0083E9E10C9BFC3D7853DEE0C494000000000000416400000003A00000000B8F1AFB55F4882377BF8C93F
+  Placement:
+    Position: -3423.6567, 4388.819, 1107.0135
+    Rotation: 0, -0, 0.70000005
+- MutagenObjectType: PlacedObject
+  FormKey: 3A6475:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 013960:Skyrim.esm
+  Placement:
+    Position: -1516.3336, -2389.387, 873.5134
+    Rotation: -0.0016625894, 0.0024161153, 1.0955483
+- MutagenObjectType: PlacedObject
+  FormKey: 0CD9BE:Skyrim.esm
+  Version2: 1
+  Base: 0965AE:Skyrim.esm
+  LocationReference: 016F85:Skyrim.esm
+  Placement:
+    Position: -3485.6926, 4407.27, 1109.9365
+    Rotation: -0.004061949, 0.007935383, 4.2331743
+- MutagenObjectType: PlacedObject
+  FormKey: 0CD9CF:Skyrim.esm
+  MajorRecordFlagsRaw: 1073743872
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x40000000
+  Base: 0E42E0:Skyrim.esm
+  LocationReference: 016F85:Skyrim.esm
+  Placement:
+    Position: 2110.5618, 245.61577, 477.84753
+    Rotation: 0.43416885, 0.51771975, 1.7158473
+- MutagenObjectType: PlacedNpc
+  FormKey: 07A608:Skyrim.esm
+  MajorRecordFlagsRaw: 512
+  Version2: 10
+  SkyrimMajorRecordFlags:
+  - 0x200
+  Base: 0457FF:Skyrim.esm
+  RagdollData: 0x0200340B00000000000000000000000075AC9A3F856B723F1D167FBF08000000000CD3C00000123D000008BC80651F40073CCC3EB4C646C0090000000000A83C0000203C00B3FA4116813DBF9FDC44BCF426D4BA0AFF7FFF00001E3D002094BEC094DB4195F07F3F973D15BEFC5D703E0E0000FF00C0D3400000783C0000BE3C471042C0B58C2A3E722A41C00FFF7FFF00000EBD0000003D8092FA415B9B2DBEA5278A3A14F4983C100000000000B03B00C095BE8091DB419DF17E3FC168F03DD84A7ABE0237E90000001EBD00B0A9C0007C72402613013E74B690BBA676DEBD03000000008098BD0000B7BD00F10B41D8169CBDE6192EBDD71C843D04FF7FFF0000BABD0000283E00361E41379A943ED33901BDDDE2B1BE00FF7FFF0080963D0080A43D8050B041C04D193E0B5DB0BD3DD6253D0180FFFF0000A83C00005C3C002B0D41F1ED02BC352D9FBD1DE72DBF0BFF7FFF0000A23D00C801BE004E5C412AF50640D195FFBEFB1D58BF0C0000000090B7BE00806E3EC06DA241EB5E2F3FCB94A5BD9BF545BD0D0000000000443C0000C0BB005F8041B0CCC43B152A2C3DACA5BEBF05FF7FFF0000E0BB0000603B986C6041D81CF33F75D6DA3E93D3F83E060000FF000088BC000018BD0021A2411A72B93F105A5C3C2A4A973D07FF7FFF0000803C0080773C40178041EF699A3CFC423ABD122FC03F
+  PersistentLocation: 016F85:Skyrim.esm
+  LocationReference: 016F85:Skyrim.esm
+  Placement:
+    Position: -3629.1172, 4365.005, 1090.1613
+    Rotation: 0, -0, 1.3500007
+  MajorFlags:
+  - StartsDead
+MajorFlags:
+- 0x40000

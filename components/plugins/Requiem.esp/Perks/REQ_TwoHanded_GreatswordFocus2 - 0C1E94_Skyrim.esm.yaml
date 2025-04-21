@@ -1,0 +1,29 @@
+FormKey: 0C1E94:Skyrim.esm
+EditorID: REQ_TwoHanded_GreatswordFocus2
+Name:
+  TargetLanguage: English
+  Value: Greatsword Focus
+Description:
+  TargetLanguage: English
+  Value: You've acquired the advanced techniques of greatsword combat.<br>[+16% attack speed with greatswords, +14% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 03AF83:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: TwoHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+NextPerk: 0C1E95:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD39B3:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 03E55F:Requiem.esp

@@ -1,0 +1,19 @@
+FormKey: AE36BC:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Orcish_Quarterstaff
+Items:
+- Item:
+    Item: ADDF48:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDF48:Requiem.esp
+CreatedObject: 05AD99:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

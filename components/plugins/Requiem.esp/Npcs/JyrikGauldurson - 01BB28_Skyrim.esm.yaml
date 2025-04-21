@@ -1,0 +1,184 @@
+FormKey: 01BB28:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: JyrikGauldurson
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: masterambushscript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ambushOnTrigger
+      Data: True
+  - Name: MG02BossScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MG02BossScene
+      Object: 0EA5E8:Skyrim.esm
+  - Name: dunsaarthalmasterscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BarrierDisableSound
+      Object: 10FF64:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: barrierCage
+      Object: 0E1343:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SaarthalLocation
+      Object: 019299:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: barrierEffect
+      Object: 073321:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: frostAbility
+      Object: 0ED2FD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: barrierCollision
+      Object: 103800:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: flameAbility
+      Object: 0ED2FE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: stormAbility
+      Object: 0ED2FC:Skyrim.esm
+Configuration:
+  Flags:
+  - IsGhost
+  MagickaOffset: 250
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Factions
+  - AIData
+  - ModelAnimation
+  - AttackData
+  HealthOffset: 300
+Template: 06F83E:Skyrim.esm
+Race: 109C7C:Skyrim.esm
+ActorEffect:
+- 034C58:Skyrim.esm
+- 040000:Skyrim.esm
+- 0ABDF3:Skyrim.esm
+- 03280E:Requiem.esp
+CombatOverridePackageList: 0ECF44:Skyrim.esm
+Perks:
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3933:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 02C672:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+Packages:
+- 09448B:Skyrim.esm
+- 088978:Skyrim.esm
+- 09BCBD:Skyrim.esm
+Class: 023C0E:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Jyrik Gauldurson
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 44
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 44
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 82
+  - Key: Destruction
+    Value: 87
+  - Key: Illusion
+    Value: 40
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 55
+  Magicka: 37
+  Stamina: 49
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 038A24:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 01FB60:Skyrim.esm
+TextureLighting: '#00000000'
+MajorFlags:
+- 0x40000

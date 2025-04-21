@@ -1,0 +1,92 @@
+FormKey: 0151F5:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: YngolBarrow01
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Yngol Barrow
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0195D3:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192C9:Skyrim.esm
+Water: 033DA7:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 02B3AE:Skyrim.esm
+EncounterZone: 03EC8F:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 089D4E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 10CD02:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192C9:Skyrim.esm
+  Placement:
+    Position: 7338.806, -3368.548, -633.6828
+    Rotation: -0.05025064, -0.09987469, 1.575811
+- MutagenObjectType: PlacedObject
+  FormKey: 1052A1:Skyrim.esm
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192C9:Skyrim.esm
+  Placement:
+    Position: 977.6425, -5202.5293, 53.653202
+    Rotation: 0.2499997, -0.15000004, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 03310A:Skyrim.esm
+  Version2: 2
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192C9:Skyrim.esm
+  Placement:
+    Position: 5019.178, -493.6758, -581.85144
+    Rotation: -1.7116709, -0.55303264, 0.3986232
+MajorFlags:
+- 0x40000

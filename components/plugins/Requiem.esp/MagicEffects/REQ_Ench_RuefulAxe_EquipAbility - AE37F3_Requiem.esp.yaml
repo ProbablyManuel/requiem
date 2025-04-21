@@ -1,0 +1,22 @@
+FormKey: AE37F3:Requiem.esp
+EditorID: REQ_Ench_RuefulAxe_EquipAbility
+Name:
+  TargetLanguage: English
+  Value: Rueful Axe Equip Ability
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+EquipAbility: AE37F4:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

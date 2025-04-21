@@ -1,0 +1,195 @@
+FormKey: AE39F3:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Reaver_Template_Crossbow_04
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - LoopedScript
+  - LoopedAudio
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 12
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Factions
+  - AIData
+  - AIPackages
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Factions:
+- Faction: 01BCC0:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 024CAB:Dragonborn.esm
+  Fluff: 0x000000
+Template: AE3949:Requiem.esp
+Race: 000019:Skyrim.esm
+ActorEffect:
+- 93AD86:Requiem.esp
+Perks:
+- Perk: 058F61:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F63:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079343:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07934A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABED:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BE123:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 89C595:Requiem.esp
+    Count: 1
+- Item:
+    Item: 89C59B:Requiem.esp
+    Count: 1
+- Item:
+    Item: 89ED3B:Requiem.esp
+    Count: 24
+- Item:
+    Item: 8B02BD:Requiem.esp
+    Count: 6
+- Item:
+    Item: 8B2A5E:Requiem.esp
+    Count: 4
+- Item:
+    Item: 8B2A5F:Requiem.esp
+    Count: 2
+- Item:
+    Item: 8B2A63:Requiem.esp
+    Count: 1
+- Item:
+    Item: 8B2A65:Requiem.esp
+    Count: 1
+- Item:
+    Item: AE39C8:Requiem.esp
+    Count: 3
+- Item:
+    Item: AE39C9:Requiem.esp
+    Count: 2
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 879916:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Reaver
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 12
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 38
+  - Key: Block
+    Value: 19
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 19
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 25
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 117
+  Magicka: 100
+  Stamina: 138
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+HairColor: 0A042C:Skyrim.esm
+CombatStyle: 03BE1D:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: AE3969:Requiem.esp
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00000000'
+MajorFlags:
+- 0x40000

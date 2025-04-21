@@ -1,0 +1,21 @@
+FormKey: 000841:Requiem.esp
+EditorID: REQ_AbShow_FortifyArmor
+Name:
+  TargetLanguage: English
+  Value: Fortify Armor
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: ArmorPerks
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor rating increases by <mag>%.

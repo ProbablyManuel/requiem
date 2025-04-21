@@ -1,0 +1,29 @@
+FormKey: 018EF4:Dawnguard.esm
+EditorID: DLC1BloodPotionEffect
+Version2: 7
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1BloodPotionEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerVampireQuest
+      Object: 0EAFD5:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Blood Ingestion
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: A welcome feast for any vampire...
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0A82BB:Skyrim.esm
+  ComparisonValue: 1

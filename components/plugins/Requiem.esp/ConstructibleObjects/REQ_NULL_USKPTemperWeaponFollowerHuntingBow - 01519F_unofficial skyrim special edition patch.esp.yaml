@@ -1,0 +1,15 @@
+FormKey: 01519F:unofficial skyrim special edition patch.esp
+EditorID: REQ_NULL_USKPTemperWeaponFollowerHuntingBow
+Items:
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 10E2DD:Skyrim.esm
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

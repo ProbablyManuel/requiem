@@ -1,0 +1,83 @@
+FormKey: 0142F6:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2GyldenhulBarrow01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Gyldenhul Barrow
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#0030271C'
+    DirectionalXMinus: '#00272719'
+    DirectionalYPlus: '#002C281B'
+    DirectionalYMinus: '#002C251B'
+    DirectionalZPlus: '#0014120C'
+    DirectionalZMinus: '#005C5238'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128C:Skyrim.esm
+WaterHeight: 0
+Location: 0142A8:Dragonborn.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+EncounterZone: 0142A9:Dragonborn.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 01A3BA:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 018D1C:Dragonborn.esm
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0142A8:Dragonborn.esm
+  Placement:
+    Position: 657.19116, 2819.7256, -260.27942
+    Rotation: 0.081643015, 6.2523313, 2.6304188
+- MutagenObjectType: PlacedObject
+  FormKey: 01A3BB:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 018D1C:Dragonborn.esm
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 0142A8:Dragonborn.esm
+  Placement:
+    Position: 1156, 2014, -259
+    Rotation: 0.045650832, 0.1743549, 4.9741883
+MajorFlags:
+- 0x40000

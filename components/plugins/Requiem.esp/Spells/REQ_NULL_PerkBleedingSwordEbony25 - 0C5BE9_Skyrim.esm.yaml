@@ -1,0 +1,20 @@
+FormKey: 0C5BE9:Skyrim.esm
+EditorID: REQ_NULL_PerkBleedingSwordEbony25
+Name:
+  TargetLanguage: English
+  Value: Bleeding Damage
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- 0x10000
+- 0x40000
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 0C367A:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 5

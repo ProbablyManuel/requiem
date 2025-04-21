@@ -1,0 +1,28 @@
+FormKey: 03B0D1:Skyrim.esm
+EditorID: REQ_Ench_SilentMoons
+Name:
+  TargetLanguage: English
+  Value: Silent Moons Enchantment
+EnchantmentCost: 10
+CastType: FireAndForget
+EnchantmentAmount: 10
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 03B0B1:Skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetCurrentTimeConditionData
+    ComparisonValue: 5
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetCurrentTimeConditionData
+    ComparisonValue: 21

@@ -1,0 +1,237 @@
+FormKey: 0136B4:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Reldith
+Version2: 14
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 4
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 0267EA:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028174:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051591:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 09E136:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0A8006:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AF1:Skyrim.esm
+Race: 013743:Skyrim.esm
+Items:
+- Item:
+    Item: 01397E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 09E134:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D1:Skyrim.esm
+    Count: 1
+AIData:
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 097546:Skyrim.esm
+- 097548:Skyrim.esm
+- 097549:Skyrim.esm
+- 09754A:Skyrim.esm
+Keywords:
+- 01D9E5:Skyrim.esm
+- 0EDF11:Skyrim.esm
+- 0EDF15:Skyrim.esm
+- 0EDF12:Skyrim.esm
+Class: 01326C:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Reldith
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 8
+  - Key: TwoHanded
+    Value: 8
+  - Key: Archery
+    Value: 8
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 9
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 6
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 6
+  - Key: Alchemy
+    Value: 9
+  - Key: Speech
+    Value: 6
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 10
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 10
+  - Key: Enchanting
+    Value: 14
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 95
+  Magicka: 145
+  Stamina: 85
+  Unused: 16743
+  Unused2: 0x425AEF
+HeadParts:
+- 04021C:Skyrim.esm
+- 08CA85:Skyrim.esm
+- 0E4DA4:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 0330B9:Skyrim.esm
+CrimeFaction: 0267EA:Skyrim.esm
+HeadTexture: 0F2062:Skyrim.esm
+TextureLighting: '#00948F58'
+FaceMorph:
+  NoseLongVsShort: 0.2
+  NoseUpVsDown: -0.7
+  JawUpVsDown: -0.4
+  JawNarrowVsWide: 0.2
+  JawForwardVsBack: 0.1
+  CheeksUpVsDown: -0.9
+  CheeksForwardVsBack: 0.4
+  EyesUpVsDown: -0.2
+  EyesInVsOut: 0.7
+  BrowsUpVsDown: 0.1
+  BrowsInVsOut: 0.9
+  BrowsForwardVsBack: 0.5
+  LipsUpVsDown: 0.2
+  LipsInVsOut: 0.3
+  ChinUpVsDown: -0.5
+  EyesForwardVsBack: 0.3
+FaceParts:
+  Nose: 15
+  Unknown: 4294967295
+  Eyes: 25
+  Mouth: 16
+TintLayers:
+- Index: 24
+  Color: '#00948F58'
+  InterpolationValue: 1
+  Preset: 808
+- Index: 25
+  Color: '#003F6220'
+  InterpolationValue: 0.63
+  Preset: 385
+- Index: 26
+  Color: '#003F6220'
+  InterpolationValue: 0.63
+  Preset: 398
+- Index: 27
+  Color: '#00430401'
+  InterpolationValue: 0.66
+  Preset: 403
+- Index: 30
+  Color: '#00A95452'
+  InterpolationValue: 0.19
+  Preset: 417
+- Index: 31
+  Color: '#00500901'
+  InterpolationValue: 0.76
+  Preset: 427
+- Index: 32
+  Color: '#00500901'
+  InterpolationValue: 0.76
+  Preset: -1
+- Index: 35
+  Color: '#FFFFFF'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 36
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 445
+- Index: 46
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 791
+- Index: 47
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 796
+- Index: 48
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 801
+MajorFlags:
+- 0x40000

@@ -1,0 +1,25 @@
+FormKey: 105F19:Skyrim.esm
+EditorID: REQ_Marksmanship_QuickShot
+Name:
+  TargetLanguage: English
+  Value: Quick Shot
+Description:
+  TargetLanguage: English
+  Value: You have learned to draw and fire in one single movement.<br>[+50% draw speed with bows]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Archery
+  ComparisonValue: 60
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F61:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 106642:Skyrim.esm

@@ -1,0 +1,37 @@
+FormKey: 03CA00:Skyrim.esm
+EditorID: REQ_Cloth_Prisoner_Feet
+ObjectBounds:
+  First: -10, -11, 0
+  Second: 10, 11, 7
+Name:
+  TargetLanguage: English
+  Value: Footwraps
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\Prisoner\PrisonerShoesGND.nif
+      Data: 0x0200000002000000000000008A76EDD264647300AECE6CB8E17B23EF64647300AECE6CB8
+  Female:
+    Model:
+      File: Clothes\Prisoner\PrisonerShoesGND.nif
+      Data: 0x0200000002000000000000008A76EDD264647300AECE6CB8E17B23EF64647300AECE6CB8
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 10CD12:Skyrim.esm
+- 002ED8:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 03CA05:Skyrim.esm
+Value: 1
+Weight: 1

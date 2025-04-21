@@ -1,0 +1,29 @@
+FormKey: 0424E2:Skyrim.esm
+EditorID: REQ_NULL_AbFortifyUnarmedDamage
+Name:
+  TargetLanguage: English
+  Value: Fortify Unarmed Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 15
+EnchantShader: 092DEC:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: UnarmedDamage
+DualCastScale: 1
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Unarmed strikes do <mag> additional damage.

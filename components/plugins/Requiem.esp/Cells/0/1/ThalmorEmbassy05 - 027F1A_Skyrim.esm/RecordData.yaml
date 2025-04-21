@@ -1,0 +1,81 @@
+FormKey: 027F1A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ThalmorEmbassy05
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Reeking Cave
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00292618'
+  DirectionalColor: '#001D1A16'
+  FogNearColor: '#004B6361'
+  FogFar: 9000
+  DirectionalRotationZ: 90
+  FogClipDistance: 13000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#004B6361'
+  FogMax: 1
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 018C92:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 027F6F:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 02EDEB:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 31E0BC:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: ADDE5A:Requiem.esp
+  Placement:
+    Position: 2219.6929, 216.23425, 280.42905
+    Rotation: 0.14554824, 6.2053943, 5.8297
+- MutagenObjectType: PlacedObject
+  FormKey: 0D0C54:Skyrim.esm
+  MajorRecordFlagsRaw: 512
+  SkyrimMajorRecordFlags:
+  - 0x200
+  Base: 0AF5FB:Skyrim.esm
+  LocationReference: 018C92:Skyrim.esm
+  Placement:
+    Position: 1962.5333, 590.4925, 457.25735
+    Rotation: 1.7314191, 1.3176055, 3.440755
+- MutagenObjectType: PlacedObject
+  FormKey: 31E0BA:Requiem.esp
+  MajorRecordFlagsRaw: 512
+  SkyrimMajorRecordFlags:
+  - 0x200
+  Base: 0AF5FB:Skyrim.esm
+  Placement:
+    Position: 2242.5325, 239.9447, 283.66302
+    Rotation: 1.5023049, 1.0402964, 2.7158344
+- MutagenObjectType: PlacedObject
+  FormKey: 31E0BB:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: ADDE62:Requiem.esp
+  Placement:
+    Position: 2262.9785, 191.14627, 282.4846
+    Rotation: 0.14461623, 6.199425, 1.2330542
+MajorFlags:
+- 0x40000

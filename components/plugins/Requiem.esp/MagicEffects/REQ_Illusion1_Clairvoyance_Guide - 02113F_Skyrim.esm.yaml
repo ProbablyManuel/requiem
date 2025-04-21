@@ -1,0 +1,36 @@
+FormKey: 02113F:Skyrim.esm
+EditorID: REQ_Illusion1_Clairvoyance_Guide
+Name:
+  TargetLanguage: English
+  Value: Guide
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 25
+MagicSkill: Illusion
+CastingLight: 06B110:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectGuideArchetype
+  Association: 02113E:Skyrim.esm
+CastType: Concentration
+CastingArt: 06B10F:Skyrim.esm
+SkillUsageMultiplier: 0.01
+DualCastScale: 1
+ImageSpaceModifier: 02FB1E:Skyrim.esm
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 06F6D3:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 0AC037:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster thinks of something that is to be found, and the spell will reveal the way.

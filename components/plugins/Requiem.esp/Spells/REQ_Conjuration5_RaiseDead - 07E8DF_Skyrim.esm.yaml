@@ -1,0 +1,24 @@
+FormKey: 07E8DF:Skyrim.esm
+EditorID: REQ_Conjuration5_RaiseDead
+Name:
+  TargetLanguage: English
+  Value: Raise Dead (Rank V)
+MenuDisplayObject: 1097CD:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1000
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+- NoDualCastModification
+ChargeTime: 4.5
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 07E8E0:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 3600

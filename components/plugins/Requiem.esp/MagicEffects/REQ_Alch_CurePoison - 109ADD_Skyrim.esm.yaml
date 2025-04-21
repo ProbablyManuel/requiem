@@ -1,0 +1,25 @@
+FormKey: 109ADD:Skyrim.esm
+EditorID: REQ_Alch_CurePoison
+Name:
+  TargetLanguage: English
+  Value: Cure Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0F8A4E:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.2
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: CurePoison
+CastType: FireAndForget
+HitEffectArt: 04E221:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Poison's continuing effects are stopped.

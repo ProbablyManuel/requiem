@@ -1,0 +1,16 @@
+FormKey: AE379F:Requiem.esp
+EditorID: REQ_Crafting_OtarLight
+Items:
+- Item:
+    Item: 061CC2:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 061CC2:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: AE3926:Requiem.esp
+WorkbenchKeyword: AE378B:Requiem.esp
+CreatedObjectCount: 1

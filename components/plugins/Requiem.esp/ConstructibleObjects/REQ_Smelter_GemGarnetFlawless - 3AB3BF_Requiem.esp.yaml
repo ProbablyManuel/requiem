@@ -1,0 +1,21 @@
+FormKey: 3AB3BF:Requiem.esp
+EditorID: REQ_Smelter_GemGarnetFlawless
+Items:
+- Item:
+    Item: 068521:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 068521:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 3AB3BC:Requiem.esp
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 4

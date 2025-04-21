@@ -1,0 +1,49 @@
+FormKey: ADE48D:Requiem.esp
+EditorID: REQ_Alteration1_AbsorbingGrasp_XP
+Name:
+  TargetLanguage: English
+  Value: XP
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- Detrimental
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 1
+MagicSkill: Alteration
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+Projectile: 1A8278:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 0731CF:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    RunOnType: Target
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

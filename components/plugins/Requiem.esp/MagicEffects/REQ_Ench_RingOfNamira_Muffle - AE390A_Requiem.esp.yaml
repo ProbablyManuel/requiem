@@ -1,0 +1,24 @@
+FormKey: AE390A:Requiem.esp
+EditorID: REQ_Ench_RingOfNamira_Muffle
+Name:
+  TargetLanguage: English
+  Value: Muffle
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsDuration
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: MovementNoiseMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

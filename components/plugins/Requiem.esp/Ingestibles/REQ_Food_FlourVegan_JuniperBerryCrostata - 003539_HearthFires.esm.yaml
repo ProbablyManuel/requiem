@@ -1,0 +1,33 @@
+FormKey: 003539:HearthFires.esm
+EditorID: REQ_Food_FlourVegan_JuniperBerryCrostata
+ObjectBounds:
+  First: -20, -20, 0
+  Second: 20, 20, 7
+Name:
+  TargetLanguage: English
+  Value: Juniper Berry Crostata
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: _BYOH\Clutter\Food\Tart01.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Tart01:0
+    NewTexture: 003547:HearthFires.esm
+Weight: 0.5
+Value: 14
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371C:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 3600
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 3600
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

@@ -1,0 +1,293 @@
+FormKey: 0BD77F:Skyrim.esm
+EditorID: BQ02
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BQScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Hold
+      Object: 0BD77F:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Location
+      Object: 0BD77F:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptIntProperty
+      Name: RewardAmount
+      Data: 500
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BQActiveQuest
+      Object: 0CBA99:Skyrim.esm
+  - Name: QF_BQ02_000BD77F
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BountyLocation
+      Object: 0BD77F:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Jarl
+      Object: 0BD77F:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Location
+      Object: 0BD77F:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 0BD77F:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Steward
+      Object: 0BD77F:Skyrim.esm
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Innkeeper
+      Object: 0BD77F:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter
+      Object: 0BD77F:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MapMarker
+      Object: 0BD77F:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Hold
+      Object: 0BD77F:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bounty
+      Object: 0BD77F:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_LocationCenterMarker
+      Object: 0BD77F:Skyrim.esm
+      Alias: 3
+  FileName: QF_BQ02_000BD77F
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_BQ02_000BD77F
+    FragmentName: Fragment_4
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_BQ02_000BD77F
+    FragmentName: Fragment_3
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_BQ02_000BD77F
+    FragmentName: Fragment_0
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_BQ02_000BD77F
+    FragmentName: Fragment_1
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0BD77F:Skyrim.esm
+      Alias: 7
+    Scripts:
+    - Name: BQBountyScript
+  - Property:
+      Name: ''
+      Object: 0BD77F:Skyrim.esm
+      Alias: 11
+    Scripts:
+    - Name: BQPlayerScript
+Name:
+  TargetLanguage: English
+  Value: 'Bounty: Forsworn'
+Priority: 30
+QuestFormVersion: 65
+Type: Misc
+Event: CLOC
+Filter: Bounty Quests\
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+- Index: 100
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+- Index: 200
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Kill the leader of <Alias=BountyLocation> in <Alias=Hold>
+  Targets:
+  - AliasID: 7
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDeadConditionData
+        RunOnType: QuestAlias
+        RunOnTypeIndex: 7
+- Index: 100
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Collect the bounty from <Alias=Steward>
+  Targets:
+  - AliasID: 13
+- Index: 101
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Collect the bounty from <Alias=Jarl>
+  Targets:
+  - AliasID: 8
+NextAliasID: 14
+Aliases:
+- Type: Location
+  Name: Location
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: CLOC
+    EventData: 0x4C320000
+- ID: 3
+  Name: LocationCenterMarker
+  Flags: []
+  Location:
+    AliasID: 0
+    RefType: 01BDF1:Skyrim.esm
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: Hold
+  Flags:
+  - StoresText
+  - AllowReserved
+  Location:
+    AliasID: 3
+    Keyword: 016771:Skyrim.esm
+- ID: 8
+  Name: Jarl
+  Flags:
+  - StoresText
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 01339F:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050920:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsEditorLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 13
+  Name: Steward
+  Flags:
+  - Optional
+  - StoresText
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 050922:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsEditorLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 10
+  Name: Innkeeper
+  Flags:
+  - AllowReserved
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsEditorLocAliasConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 05091B:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 6
+  Type: Location
+  Name: BountyLocation
+  Flags:
+  - StoresText
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSameEditorLocAsRefAliasConditionData
+      ReferenceAliasIndex: 3
+      Keyword: 016771:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130EE:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasRefTypeConditionData
+      LocationReferenceType: 0130F7:Skyrim.esm
+    ComparisonValue: 1
+- ID: 12
+  Name: MapMarker
+  Flags:
+  - Optional
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsEditorLocAliasConditionData
+      LocationAliasIndex: 6
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000010:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 7
+  Name: Bounty
+  Flags:
+  - StoresText
+  Location:
+    AliasID: 6
+    RefType: 0130F7:Skyrim.esm
+  VoiceTypes: Null
+- ID: 9
+  Name: Letter
+  Flags:
+  - StoresText
+  - UsesStoredText
+  - InitiallyDisabled
+  CreateReferenceToObject:
+    Object: 0BD780:Skyrim.esm
+    AliasID: 8
+  VoiceTypes: Null
+- ID: 11
+  Name: Player
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null

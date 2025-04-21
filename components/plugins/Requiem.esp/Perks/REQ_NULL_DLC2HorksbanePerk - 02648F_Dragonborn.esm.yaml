@@ -1,0 +1,30 @@
+FormKey: 02648F:Dragonborn.esm
+EditorID: REQ_NULL_DLC2HorksbanePerk
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 026490:Dragonborn.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0131FC:Skyrim.esm
+      ComparisonValue: 1
+  PerkConditionTabCount: 3
+  Modification: Add
+  Value: 20

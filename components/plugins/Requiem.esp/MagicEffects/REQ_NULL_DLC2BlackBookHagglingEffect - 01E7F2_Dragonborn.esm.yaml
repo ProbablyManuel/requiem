@@ -1,0 +1,25 @@
+FormKey: 01E7F2:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BlackBookHagglingEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03D25C:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Lover's Insight
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- NoMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+PerkToApply: 01E7F1:Dragonborn.esm
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Do <10>% more damage to and get <10>% better prices from people of the opposite sex.

@@ -1,0 +1,22 @@
+FormKey: 30EC6A:Requiem.esp
+EditorID: REQ_Speech_Masquerade2
+Name:
+  TargetLanguage: English
+  Value: Masquerade
+Description:
+  TargetLanguage: English
+  Value: There is no role you cannot play, and your acting is so believable that there is almost no way <br> for others to see through your disguises.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Speech
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 3CDF4F:Requiem.esp
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True

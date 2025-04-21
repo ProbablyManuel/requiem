@@ -1,0 +1,76 @@
+FormKey: AD3B19:Requiem.esp
+EditorID: REQ_CoreScripts_RetroActiveFixes
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B19:Requiem.esp
+      Alias: 19
+    Scripts:
+    - Name: REQ_RetroActiveFixes
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: AlcoholLevelStorage
+        Object: AE372A:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MassEffect
+        Object: 82CC14:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: OutOfCombatRegeneration
+        Object: AE3598:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: AttackSpeedReapply
+        Objects:
+        - Name: ''
+          Object: 03AF83:Skyrim.esm
+        - Name: ''
+          Object: 05F56F:Skyrim.esm
+        - Name: ''
+          Object: 0C1E90:Skyrim.esm
+        - Name: ''
+          Object: 0C1E91:Skyrim.esm
+        - Name: ''
+          Object: 0C1E94:Skyrim.esm
+        - Name: ''
+          Object: 0C1E95:Skyrim.esm
+        - Name: ''
+          Object: 105F19:Skyrim.esm
+        - Name: ''
+          Object: 106256:Skyrim.esm
+        - Name: ''
+          Object: 106257:Skyrim.esm
+        - Name: ''
+          Object: 17B8C1:Requiem.esp
+        - Name: ''
+          Object: ADDFB0:Requiem.esp
+        - Name: ''
+          Object: ADDFB1:Requiem.esp
+        - Name: ''
+          Object: ADDFB2:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HarbingerBoots
+        Object: AE38FD:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HarbingerCuirass
+        Object: AE37E7:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HarbingerGauntlets
+        Object: AE38FC:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HarbingerHelmet
+        Object: AE38FB:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: KynesPeaceFaction
+        Object: 0E0D58:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Retroactive Fixes'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 19
+  Name: RetroActiveBugfixes
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

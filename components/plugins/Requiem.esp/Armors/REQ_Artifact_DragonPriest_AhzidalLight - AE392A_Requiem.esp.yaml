@@ -1,0 +1,45 @@
+FormKey: AE392A:Requiem.esp
+EditorID: REQ_Artifact_DragonPriest_AhzidalLight
+ObjectBounds:
+  First: -7, -13, 0
+  Second: 7, 11, 11
+Name:
+  TargetLanguage: English
+  Value: Ahzidal
+ObjectEffect: 0250E1:Dragonborn.esm
+WorldModel:
+  Male:
+    Model:
+      File: DLC02\Armor\AcolyteMasks\AcolyteMask_GND.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: robe_GND:0
+        NewTexture: 0240FC:Dragonborn.esm
+  Female:
+    Model:
+      File: DLC02\Armor\AcolyteMasks\AcolyteMask_GND.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: robe_GND:0
+        NewTexture: 0240FC:Dragonborn.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Circlet
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- AE380A:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: Ahzidal means Bitter Destroyer in the dragon language. Its namesake swore an oath of vengeance when the Elves killed everyone he ever knew. The mask strikes nearby Elves with unrelenting wrath.
+Armature:
+- 0240FA:Dragonborn.esm
+- 0248E6:Dragonborn.esm
+Value: 25000
+Weight: 4
+ArmorRating: 96

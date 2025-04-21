@@ -1,0 +1,35 @@
+FormKey: 026D7A:Skyrim.esm
+EditorID: REQ_NULL_PerkShadowWarriorInvisibillityFFContact
+Name:
+  TargetLanguage: English
+  Value: Shadow Warrior Invisibility
+MenuDisplayObject: 109AC3:Skyrim.esm
+Keywords:
+- 01EA6F:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+BaseCost: 50
+HitShader: 081180:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Invisibility
+  Type: Invisibility
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 058E0E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

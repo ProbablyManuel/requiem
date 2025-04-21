@@ -1,0 +1,24 @@
+FormKey: AD3886:Requiem.esp
+EditorID: REQ_Alteration5_Knock
+Name:
+  TargetLanguage: English
+  Value: Knock (Rank III)
+MenuDisplayObject: 109AC2:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 600
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.4
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44BA:Skyrim.esm
+Effects:
+- BaseEffect: AD3897:Requiem.esp
+  Data:
+    Magnitude: 0.8
+    Duration: 1

@@ -1,0 +1,29 @@
+FormKey: 0954D6:Skyrim.esm
+EditorID: REQ_NULL_PertAtronachEffect
+Name:
+  TargetLanguage: English
+  Value: Absorb Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+MagicSkill: Alteration
+ResistValue: ResistMagic
+TaperWeight: 1
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: AbsorbChance
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F208:Skyrim.esm
+- Type: Release
+  Sound: 03F206:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03F205:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

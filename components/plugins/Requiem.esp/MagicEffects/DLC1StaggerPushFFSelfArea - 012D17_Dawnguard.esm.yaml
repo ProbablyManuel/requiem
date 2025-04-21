@@ -1,0 +1,30 @@
+FormKey: 012D17:Dawnguard.esm
+EditorID: DLC1StaggerPushFFSelfArea
+Name:
+  TargetLanguage: English
+  Value: Stagger Push
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoHitEvent
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 0.001
+TaperWeight: 1
+SpellmakingArea: 10
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+Explosion: 012FEE:Dawnguard.esm
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestRunningConditionData
+    Quest: 01909F:Dawnguard.esm

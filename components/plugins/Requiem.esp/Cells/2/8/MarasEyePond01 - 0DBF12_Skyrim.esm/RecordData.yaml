@@ -1,0 +1,75 @@
+FormKey: 0DBF12:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarasEyePond01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mara's Eye Den
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0ECF53:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 0ECF54:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0DC068:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0ECF53:Skyrim.esm
+  Placement:
+    Position: 2839.4114, 2566.9634, -558.958
+    Rotation: 0, 0, 4.383192
+- MutagenObjectType: PlacedObject
+  FormKey: 0DBF75:Skyrim.esm
+  Base: 020664:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 0ECF53:Skyrim.esm
+  Placement:
+    Position: 2033.5337, 2739.207, -831.8559
+    Rotation: -0.19999935, -0, 4.2213902
+MajorFlags:
+- 0x40000

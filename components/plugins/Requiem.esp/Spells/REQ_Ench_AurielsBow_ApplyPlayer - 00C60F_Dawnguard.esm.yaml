@@ -1,0 +1,17 @@
+FormKey: 00C60F:Dawnguard.esm
+EditorID: REQ_Ench_AurielsBow_ApplyPlayer
+Name:
+  TargetLanguage: English
+  Value: Auriel's Bow - Player
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+CastType: FireAndForget
+Effects:
+- BaseEffect: 00CE10:Dawnguard.esm
+  Data:
+    Duration: 60

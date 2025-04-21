@@ -1,0 +1,52 @@
+FormKey: 0E40C2:Skyrim.esm
+EditorID: REQ_NULL_RaceNordBattleCryEffect
+Name:
+  TargetLanguage: English
+  Value: Battle Cry
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0424E0:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- DispelWithKeywords
+- FXPersist
+- PowerAffectsMagnitude
+HitShader: 074799:Skyrim.esm
+SpellmakingArea: 60
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: Demoralize
+Projectile: 013DF4:Skyrim.esm
+Explosion: 10AB49:Skyrim.esm
+CastType: FireAndForget
+ImpactData: 015C7B:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 0440D4:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Targets flee for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

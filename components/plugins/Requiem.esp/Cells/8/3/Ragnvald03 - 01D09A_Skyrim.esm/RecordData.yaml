@@ -1,0 +1,95 @@
+FormKey: 01D09A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Ragnvald03
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ragnvald Canal
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00323232'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#001E1E1E'
+  FogNear: 340
+  FogFar: 7000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00483A29'
+    DirectionalXMinus: '#003B3A26'
+    DirectionalYPlus: '#00423C28'
+    DirectionalYMinus: '#00423728'
+    DirectionalZPlus: '#001F1B12'
+    DirectionalZMinus: '#0064583D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#001E1E1E'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+LightingTemplate: 0EDA91:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01928F:Skyrim.esm
+Water: 0CC7B4:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\DunCaveRuinGreen_e.dds
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC57:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 08695F:Skyrim.esm
+  Version2: 2
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01928F:Skyrim.esm
+  Placement:
+    Position: 5665.015, 2093.9995, 7178.0024
+    Rotation: -0.16519912, -0.04870003, 3.2463346
+- MutagenObjectType: PlacedObject
+  FormKey: 087667:Skyrim.esm
+  Version2: 2
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 01928F:Skyrim.esm
+  Placement:
+    Position: -1480.9371, 2736.8948, 6938.9937
+    Rotation: 0, -0, 2.6431882
+- MutagenObjectType: PlacedNpc
+  FormKey: 086960:Skyrim.esm
+  MajorRecordFlagsRaw: 512
+  Version2: 4
+  SkyrimMajorRecordFlags:
+  - 0x200
+  Base: 05AFA6:Skyrim.esm
+  RagdollData: 0x0288BF250000000000000000000000006B79B5BF53735B3F0EC3E63F0800000000D4F0C000208DBF00848CC0584734C09AEF3FBEECAF37C009000000000014BD0000803A80E90042248524BE60A008BDE0A842BB0A0000000080113E0000783C003C1B42EC82FC3EA7E4FFBC7BD1563D0E00000000E0EE4000F077BF00D08CC0088E2B40EBB6EC3DECA92E400F000000000002BD0000543C803A02424567ABBE6560BD3D78D8D3B9100000000000383C000086BC80761A4261136F3F279F4EBEA4780A3E020000000000F4BC00C49CC000786340050308BEDF4A383DC4E6B93D03000000000082BD000076BC0024004149B663BD80C1DABC58D3903D0400000000005CBD00A0133E00800341B60D0E3E628587BD7A04A6BD0000000000009A3D00CE19C00001B2415B0E063D7AD1C8BD18F3623D0100000000001E3D00000A3C00F81F413CA389BD31A4B9BE3217AE3E0B00000000008E3D0080C63D00743241FCDD9C3F79732FBFF9169ABF0C0000000000C1BD00000F3E0049CE4123B0D93FE9F5173B3464773A0D0000000000EA3D00001C3D0098B24149015DBDB7CE3DBD2DE3AABF050000000000B0BB0000503D009835413A309E3F0202313F1E3A843F060000000000023D0000FE3C0002CD416B0D6A3F08766E3C69B0353C07000000000020BD0000203B00BEB241B2511EBEB491E33E9C2EA83F
+  PersistentLocation: 01928F:Skyrim.esm
+  LocationReference: 01928F:Skyrim.esm
+  Placement:
+    Position: 5811.315, 2082.928, 7199.254
+    Rotation: 0, -0, 6.203193
+  MajorFlags:
+  - StartsDead
+MajorFlags:
+- 0x40000

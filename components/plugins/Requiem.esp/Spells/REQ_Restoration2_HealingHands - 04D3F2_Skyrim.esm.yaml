@@ -1,0 +1,25 @@
+FormKey: 04D3F2:Skyrim.esm
+EditorID: REQ_Restoration2_HealingHands
+Name:
+  TargetLanguage: English
+  Value: Healing Hands (Rank I)
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 25
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: TargetActor
+HalfCostPerk: 0C44C7:Skyrim.esm
+Effects:
+- BaseEffect: 01CEA5:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 1
+- BaseEffect: 04E93E:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 1

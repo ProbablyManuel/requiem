@@ -1,0 +1,48 @@
+FormKey: 029A61:Dragonborn.esm
+EditorID: REQ_NP_Artifact_MiraaksStaff
+ObjectBounds:
+  First: -9, -47, -6
+  Second: 13, 60, 6
+Name:
+  TargetLanguage: English
+  Value: Miraak's Staff
+Model:
+  File: DLC02\Weapons\Miraak\Miraak.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 0397ED:Dragonborn.esm
+EnchantmentAmount: 2000
+EquipmentType: 013F44:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E716:Skyrim.esm
+- 0937A4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+FirstPersonModel: 0365F7:Dragonborn.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03DE2C:Skyrim.esm
+UnequipSound: 03DE2D:Skyrim.esm
+BasicStats:
+  Value: 25
+  Weight: 8
+  Damage: 2
+Data:
+  AnimationType: Staff
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+Critical:
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

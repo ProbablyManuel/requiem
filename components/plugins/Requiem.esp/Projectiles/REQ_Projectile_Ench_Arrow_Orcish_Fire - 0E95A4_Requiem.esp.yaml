@@ -1,0 +1,22 @@
+FormKey: 0E95A4:Requiem.esp
+EditorID: REQ_Projectile_Ench_Arrow_Orcish_Fire
+Name:
+  TargetLanguage: English
+  Value: Orcish Arrow of Fire
+Model:
+  File: Weapons\Orcish\OrcishArrowProjectile.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+Type: Arrow
+Gravity: 0.5
+Speed: 3600
+Range: 60000
+Explosion: 010D90:Dawnguard.esm
+Sound: 03F2B4:Skyrim.esm
+FadeDuration: 5
+ImpactForce: 1
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

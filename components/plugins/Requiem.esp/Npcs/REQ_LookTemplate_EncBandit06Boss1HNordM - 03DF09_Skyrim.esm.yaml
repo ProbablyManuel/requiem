@@ -1,0 +1,274 @@
+FormKey: 03DF09:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_LookTemplate_EncBandit06Boss1HNordM
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - LoopedScript
+  - LoopedAudio
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 24
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Factions:
+- Faction: 01BCC0:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 0C3C9B:Skyrim.esm
+Voice: 013AE6:Skyrim.esm
+Template: 01E611:Skyrim.esm
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 9336A3:Requiem.esp
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F67:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F69:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F594:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079343:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079355:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07935E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E90:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB406:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0AD7A3:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 8B2A64:Requiem.esp
+    Count: 3
+- Item:
+    Item: 8B2A60:Requiem.esp
+    Count: 3
+- Item:
+    Item: 8B2A5E:Requiem.esp
+    Count: 2
+- Item:
+    Item: 8B2A5D:Requiem.esp
+    Count: 3
+- Item:
+    Item: 8B02C1:Requiem.esp
+    Count: 3
+- Item:
+    Item: 8B02BF:Requiem.esp
+    Count: 3
+- Item:
+    Item: 8B02BE:Requiem.esp
+    Count: 6
+- Item:
+    Item: 89761B:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 85BCE3:Requiem.esp
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 71
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 71
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 72
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 166
+  Magicka: 80
+  Stamina: 169
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 024259:Skyrim.esm
+- 051405:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C716E:Skyrim.esm
+- 0CDD71:Skyrim.esm
+HairColor: 0A0434:Skyrim.esm
+CombatStyle: 03BE1B:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 90
+SoundLevel: Normal
+DefaultOutfit: 9336B1:Requiem.esp
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#00A78579'
+FaceMorph:
+  NoseLongVsShort: -0.34
+  NoseUpVsDown: 0.7
+  JawUpVsDown: 0.28
+  JawNarrowVsWide: 0.3
+  JawForwardVsBack: 0.04
+  CheeksUpVsDown: -0.08
+  CheeksForwardVsBack: 0.3
+  EyesInVsOut: 0.34
+  BrowsUpVsDown: -1
+  BrowsInVsOut: -0.6
+  BrowsForwardVsBack: 0.6
+  LipsUpVsDown: 0.96
+  LipsInVsOut: -0.74
+  ChinNarrowVsWide: -0.14
+  ChinUpVsDown: 0.3
+  ChinUnderbiteVsOverbite: 0.58
+  EyesForwardVsBack: -0.64
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 12
+  Unknown: 4294967295
+  Eyes: 11
+  Mouth: 7
+TintLayers:
+- Index: 1
+  Color: '#00A7867A'
+  InterpolationValue: 1
+  Preset: 77
+- Index: 2
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 91
+- Index: 3
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 100
+- Index: 5
+  Color: '#00A95452'
+  InterpolationValue: 0.38
+  Preset: 102
+- Index: 8
+  Color: '#000F0440'
+  InterpolationValue: 0.35
+  Preset: 123
+- Index: 9
+  Color: '#00500901'
+  InterpolationValue: 0.5
+  Preset: 130
+MajorFlags:
+- 0x40000

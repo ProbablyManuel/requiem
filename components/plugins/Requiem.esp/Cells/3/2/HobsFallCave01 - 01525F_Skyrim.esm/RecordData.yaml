@@ -1,0 +1,82 @@
+FormKey: 01525F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HobsFallCave01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hob's Fall Cave
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00344556'
+  DirectionalColor: '#003C4F59'
+  FogNearColor: '#00A2D0E4'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalRotationXY: 200
+  DirectionalRotationZ: 90
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0039455A'
+    DirectionalXMinus: '#002E4551'
+    DirectionalYPlus: '#00344856'
+    DirectionalYMinus: '#00344156'
+    DirectionalZPlus: '#00182026'
+    DirectionalZMinus: '#004F6985'
+    Specular: '#0096B6D6'
+    Scale: 1
+  FogFarColor: '#0096B6D6'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 08E78E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019198:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 02B3AE:Skyrim.esm
+EncounterZone: 03EC38:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C4DA7:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 02065D:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019198:Skyrim.esm
+  Placement:
+    Position: 3359.134, 4401.4893, 7950.659
+    Rotation: 9.2917667E-23, 5.0761158E-23, 5.7831855
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: ADE452:Requiem.esp
+  Base: ADE453:Requiem.esp
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Placement:
+    Position: 3583.6292, 4387.678, 7978.9785
+    Rotation: 0, 0, 3.1415927
+MajorFlags:
+- 0x40000

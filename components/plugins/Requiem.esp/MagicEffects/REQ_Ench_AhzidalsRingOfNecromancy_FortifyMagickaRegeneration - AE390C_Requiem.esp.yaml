@@ -1,0 +1,23 @@
+FormKey: AE390C:Requiem.esp
+EditorID: REQ_Ench_AhzidalsRingOfNecromancy_FortifyMagickaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Fortify Magicka Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F68:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.5
+EnchantShader: 092DED:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MagickaRateMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka regenerates <mag>% faster while wearing at least four relics of Ahzidal (30% plus another 30% per Enchanting perk).

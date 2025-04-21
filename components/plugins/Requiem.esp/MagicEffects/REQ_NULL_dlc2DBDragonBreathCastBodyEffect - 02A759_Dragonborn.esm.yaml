@@ -1,0 +1,35 @@
+FormKey: 02A759:Dragonborn.esm
+EditorID: REQ_NULL_dlc2DBDragonBreathCastBodyEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dlc2DBDragonsBreathEffectSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: SPAWNDRAGONS
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonArmsFX
+      Object: 021735:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonArms
+      Object: 02172F:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: specDragon
+      Object: 0265B1:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: DragonBreathBodyArtHolder
+Flags:
+- NoDuration
+- FXPersist
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

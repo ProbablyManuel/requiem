@@ -1,0 +1,29 @@
+FormKey: 56DAA0:Requiem.esp
+EditorID: REQ_Illusion5_MistressOfTheDark_Cloak
+Name:
+  TargetLanguage: English
+  Value: Cloak
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- NoHitEvent
+- HideInUI
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 56DAAB:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 56DAA7:Requiem.esp

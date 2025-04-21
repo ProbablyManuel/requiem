@@ -1,0 +1,25 @@
+FormKey: 03EB24:Skyrim.esm
+EditorID: REQ_Alch_FortifyAlteration
+Name:
+  TargetLanguage: English
+  Value: Fortify Alteration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A1D:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: AlterationModifier
+  Association: 065A1D:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Alteration spells cost <mag>% less for <dur> seconds.

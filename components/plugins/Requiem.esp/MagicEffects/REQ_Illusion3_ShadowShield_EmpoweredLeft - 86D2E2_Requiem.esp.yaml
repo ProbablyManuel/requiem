@@ -1,0 +1,38 @@
+FormKey: 86D2E2:Requiem.esp
+EditorID: REQ_Illusion3_ShadowShield_EmpoweredLeft
+Name:
+  TargetLanguage: English
+  Value: Empowered Left
+MenuDisplayObject: 1097CD:Skyrim.esm
+Keywords:
+- 482639:Requiem.esp
+Flags:
+- Recover
+- HideInUI
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+MinimumSkillLevel: 50
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: LeftWeaponSpeedMultiply
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Empowering the spell grants immunity to most impact effects and increases his attack speed by <mag>%.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 493B8F:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

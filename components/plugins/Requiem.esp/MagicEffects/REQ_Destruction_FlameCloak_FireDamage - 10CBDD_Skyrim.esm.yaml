@@ -1,0 +1,45 @@
+FormKey: 10CBDD:Skyrim.esm
+EditorID: REQ_Destruction_FlameCloak_FireDamage
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 3FCA4C:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+MagicSkill: Destruction
+ResistValue: ResistFire
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 10F56C:Skyrim.esm
+MinimumSkillLevel: 50
+TaperCurve: 2
+TaperDuration: 0.1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FCF:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 026113:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: A gout that deals <mag> fire damage per second. Targets on fire take extra damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1

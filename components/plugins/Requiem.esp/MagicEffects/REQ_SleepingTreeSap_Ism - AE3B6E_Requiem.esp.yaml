@@ -1,0 +1,41 @@
+FormKey: AE3B6E:Requiem.esp
+EditorID: REQ_SleepingTreeSap_Ism
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptStringProperty
+      Name: Resistvalue
+      Data: None
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 0E3CBC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Sleeping Tree Sap ISM
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B36:Requiem.esp
+Flags:
+- DispelWithKeywords
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013740:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 08883A:Skyrim.esm

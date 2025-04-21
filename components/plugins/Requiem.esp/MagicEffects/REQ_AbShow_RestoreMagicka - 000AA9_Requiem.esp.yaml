@@ -1,0 +1,17 @@
+FormKey: 000AA9:Requiem.esp
+EditorID: REQ_AbShow_RestoreMagicka
+Name:
+  TargetLanguage: English
+  Value: Restore Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka recovers by <mag> per second.

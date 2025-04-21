@@ -1,0 +1,149 @@
+FormKey: 210246:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_Thunder
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  MagickaOffset: 1000
+  StaminaOffset: 50
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 60
+  SpeedMultiplier: 150
+  DispositionBase: 35
+  HealthOffset: 2000
+Factions:
+- Faction: 02B0E5:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD87:Skyrim.esm
+Voice: 01F1D5:Skyrim.esm
+Race: ABF9F5:Requiem.esp
+ActorEffect:
+- 030CEF:Requiem.esp
+- ADDDC7:Requiem.esp
+WornArmor: 06881E:Skyrim.esm
+AttackRace: ABF9F5:Requiem.esp
+Perks:
+- Perk: 058200:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 03AD60:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 21025A:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+  AggroRadiusBehavior: True
+  Warn: 2500
+  WarnOrAttack: 2000
+  Attack: 1500
+Class: 0AD237:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Thunder
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 56
+  - Key: TwoHanded
+    Value: 31
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 31
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 57
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 82
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 441
+  Magicka: 197
+  Stamina: 247
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+CombatStyle: 075D28:Skyrim.esm
+NAM5: 255
+Height: 1.75
+Weight: 50
+SoundLevel: VeryLoud
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0ABF38:Skyrim.esm
+DefaultOutfit: 10C1E0:Skyrim.esm
+SleepingOutfit: 10C1E0:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

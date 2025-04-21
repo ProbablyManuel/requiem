@@ -1,0 +1,22 @@
+FormKey: ADDE92:Requiem.esp
+EditorID: REQ_Temper_Weapon_Dwarven_DaiKatana
+Items:
+- Item:
+    Item: 0DB8A2:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0009D4:Update.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: ADDE78:Requiem.esp
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

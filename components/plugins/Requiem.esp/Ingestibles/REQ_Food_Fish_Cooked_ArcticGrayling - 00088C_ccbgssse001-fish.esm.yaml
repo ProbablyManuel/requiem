@@ -1,0 +1,26 @@
+FormKey: 00088C:ccbgssse001-fish.esm
+EditorID: REQ_Food_Fish_Cooked_ArcticGrayling
+Name:
+  TargetLanguage: English
+  Value: Cooked Arctic Grayling
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishArcticGrayling\FishArcticGrayling01Inv.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: FishArcticGrayling01Inv:0
+    NewTexture: 000800:ccbgssse001-fish.esm
+Weight: 0.5
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

@@ -1,0 +1,22 @@
+FormKey: AE3ADD:Requiem.esp
+EditorID: REQ_Trait_Healing_DragonPriest
+Name:
+  TargetLanguage: English
+  Value: 'Natural Healing: Dragon Priest'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 40
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 01CEAD:Skyrim.esm
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 40

@@ -1,0 +1,82 @@
+FormKey: 081D5B:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: LabyrinthianPriestSanctuary
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bromjunaar Sanctuary
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00423C28'
+  DirectionalColor: '#0062696A'
+  FogNearColor: '#004B6361'
+  FogFar: 3000
+  DirectionalRotationZ: 270
+  FogClipDistance: 12000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#003A3021'
+    DirectionalXMinus: '#002F301E'
+    DirectionalYPlus: '#00353220'
+    DirectionalYMinus: '#00352D20'
+    DirectionalZPlus: '#0019160E'
+    DirectionalZMinus: '#00504931'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#004B6361'
+  FogMax: 0.7
+  LightFadeBegin: 12000
+  LightFadeEnd: 15000
+  Inherits:
+  - AmbientColor
+  - DirectionalFade
+LightingTemplate: 03128D:Skyrim.esm
+WaterHeight: 0
+Location: 0F8474:Skyrim.esm
+SkyAndWeatherFromRegion: 106667:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 081D83:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 052570:Skyrim.esm
+  LocationReference: 0F8474:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -6392, 9744, -30000
+    Rotation: 0, 0, 3.9269907
+- MutagenObjectType: PlacedObject
+  FormKey: AE3789:Requiem.esp
+  Base: AE378A:Requiem.esp
+  Placement:
+    Position: -6363.681, 9754.833, -336
+    Rotation: 0, 0, 2.4562037
+- MutagenObjectType: PlacedObject
+  FormKey: 081D8C:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 0B1B73:Skyrim.esm
+  LocationReference: 0F8474:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -6327.271, 9689.01, -30000
+MajorFlags:
+- 0x40000

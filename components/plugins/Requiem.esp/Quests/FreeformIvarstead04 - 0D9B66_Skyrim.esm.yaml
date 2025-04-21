@@ -1,0 +1,129 @@
+FormKey: 0D9B66:Skyrim.esm
+EditorID: FreeformIvarstead04
+Version2: 9
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_FreeformIvarstead04_000D9B66
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pReward
+      Object: 0494DF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFI04ChestAlias
+      Object: 0D9B66:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFI04KlimmekAlias
+      Object: 0D9B66:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFI04SackAlias
+      Object: 0D9B66:Skyrim.esm
+      Alias: 2
+  FileName: QF_FreeformIvarstead04_000D9B66
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_FreeformIvarstead04_000D9B66
+    FragmentName: Fragment_1
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_FreeformIvarstead04_000D9B66
+    FragmentName: Fragment_4
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_FreeformIvarstead04_000D9B66
+    FragmentName: Fragment_5
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_FreeformIvarstead04_000D9B66
+    FragmentName: Fragment_0
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0D9B66:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+  - Property:
+      Name: ''
+      Object: 0D9B66:Skyrim.esm
+      Alias: 2
+    Scripts:
+    - Name: FFI04SackScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pFFI04Quest
+        Object: 0D9B66:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pFFI04Planted
+        Object: 0DAB0A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pFFI04Chest
+        Object: 09C614:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Climb the Steps
+Flags:
+- StartGameEnabled
+- 0x10
+Priority: 40
+QuestFormVersion: 65
+Type: Misc
+Filter: Dialogue\The Rift\Ivarstead\
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 20
+  LogEntries:
+  - Flags: []
+- Index: 200
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+- Index: 250
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring Klimmek's supplies to High Hrothgar
+  Targets:
+  - AliasID: 1
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Return to Klimmek in Ivarstead
+  Targets:
+  - {}
+NextAliasID: 3
+Aliases:
+- Name: FFI04KlimmekAlias
+  Flags: []
+  UniqueActor: 0136C2:Skyrim.esm
+  VoiceTypes: Null
+- ID: 1
+  Name: FFI04ChestAlias
+  Flags:
+  - QuestObject
+  ForcedReference: 09C614:Skyrim.esm
+  VoiceTypes: Null
+- ID: 2
+  Name: FFI04SackAlias
+  Flags:
+  - QuestObject
+  ForcedReference: 0DAB05:Skyrim.esm
+  VoiceTypes: Null

@@ -1,0 +1,233 @@
+FormKey: 0B5D5A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WEMerchantMiscFemaleCommoner
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - Female
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Factions:
+- Faction: 051596:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0B5D55:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0522B6:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013ADE:Skyrim.esm
+Template: 0BBCD2:Skyrim.esm
+Race: 013744:Skyrim.esm
+AttackRace: 013744:Skyrim.esm
+Items:
+- Item:
+    Item: 09AF11:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 00000A:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 09CD48:Skyrim.esm
+    Count: 10
+- Item:
+    Item: 09AF0D:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 10E8A8:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 037C2B:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 072AEB:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 017177:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 09AF09:Skyrim.esm
+    Count: 5
+- Item:
+    Item: 09AF0E:Skyrim.esm
+    Count: 10
+- Item:
+    Item: 09AF0F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 09CD49:Skyrim.esm
+    Count: 5
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 017008:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 243
+  Magicka: 150
+  Stamina: 232
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 051177:Skyrim.esm
+- 07291A:Skyrim.esm
+- 0E4DA0:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0433:Skyrim.esm
+CombatStyle: 03BE1B:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 70
+SoundLevel: Normal
+DefaultOutfit: 045C34:Skyrim.esm
+CrimeFaction: 0522B6:Skyrim.esm
+TextureLighting: '#0090776E'
+FaceMorph:
+  NoseLongVsShort: 0.4
+  NoseUpVsDown: -0.9
+  JawUpVsDown: -0.4
+  JawNarrowVsWide: 0.6
+  JawForwardVsBack: -0.8
+  CheeksUpVsDown: 0.5
+  CheeksForwardVsBack: -0.3
+  EyesUpVsDown: -0.8
+  EyesInVsOut: 0.4
+  BrowsUpVsDown: 0.4
+  BrowsInVsOut: 0.5
+  LipsUpVsDown: -0.1
+  LipsInVsOut: 0.5
+  ChinNarrowVsWide: -0.1
+  ChinUpVsDown: 0.2
+  ChinUnderbiteVsOverbite: -0.38
+  EyesForwardVsBack: -0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 16
+  Unknown: 4294967295
+  Eyes: 9
+  Mouth: 17
+TintLayers:
+- Index: 13
+  Color: '#0091776F'
+  InterpolationValue: 1
+  Preset: 495
+- Index: 26
+  Color: '#003F6220'
+  InterpolationValue: 0.63
+  Preset: 507
+- Index: 27
+  Color: '#003F6220'
+  InterpolationValue: 0.63
+  Preset: 517
+- Index: 28
+  Color: '#00A95452'
+  InterpolationValue: 0.47
+  Preset: 543
+- Index: 33
+  Color: '#00500901'
+  InterpolationValue: 0.76
+  Preset: 936
+- Index: 34
+  Color: '#002F2013'
+  InterpolationValue: 0.61
+  Preset: 550
+- Index: 35
+  Color: '#00A95452'
+  InterpolationValue: 0.45
+  Preset: 521
+MajorFlags:
+- 0x40000

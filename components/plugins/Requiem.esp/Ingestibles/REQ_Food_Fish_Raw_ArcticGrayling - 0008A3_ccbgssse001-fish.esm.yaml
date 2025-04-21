@@ -1,0 +1,27 @@
+FormKey: 0008A3:ccbgssse001-fish.esm
+EditorID: REQ_Food_Fish_Raw_ArcticGrayling
+ObjectBounds:
+  First: -9, -23, -6
+  Second: 9, 23, 6
+Name:
+  TargetLanguage: English
+  Value: Arctic Grayling
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishArcticGrayling\FishArcticGrayling01Inv.nif
+  Data: 0x020000000000000000000000
+Weight: 0.5
+Value: 5
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

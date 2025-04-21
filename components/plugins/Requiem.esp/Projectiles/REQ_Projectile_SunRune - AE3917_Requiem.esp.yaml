@@ -1,0 +1,20 @@
+FormKey: AE3917:Requiem.esp
+EditorID: REQ_Projectile_SunRune
+Model:
+  File: Elianora\sunruneprojectile.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+- AltTrigger
+Type: Lobber
+Speed: 1000
+Range: 10000
+ExplosionAltTriggerProximity: 150
+Explosion: AE3919:Requiem.esp
+FadeDuration: 0.5
+CollisionRadius: 50
+RelaunchInterval: 0.25
+DecalData: AE3915:Requiem.esp
+CollisionLayer: 100F2F:Skyrim.esm
+MuzzleFlashModel: ''
+SoundLevel: 1

@@ -1,0 +1,57 @@
+FormKey: 0161EC:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SarethiFarm
+Version2: 14
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Sarethi Farm
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00464646'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0B2157:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 07592B:Skyrim.esm
+Owner: 06BBC4:Skyrim.esm
+LockList: 06BBC3:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 06D546:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 07110A:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1632.941, -215.12442, 201.55338
+    Rotation: 0, -0, 1.2
+- MutagenObjectType: PlacedObject
+  FormKey: 071109:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: 1636.994, -193.11215, 201.52895
+    Rotation: 0, -0, 1.2
+MajorFlags:
+- 0x40000

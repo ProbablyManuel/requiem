@@ -1,0 +1,121 @@
+FormKey: 027FB0:Requiem.esp
+EditorID: REQ_Alteration4_TelekineticDisarray
+Name:
+  TargetLanguage: English
+  Value: Telekinetic Disarray
+MenuDisplayObject: 1097CB:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 500
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.2
+CastType: FireAndForget
+TargetType: TargetActor
+Range: 1000
+HalfCostPerk: 0C44B9:Skyrim.esm
+Effects:
+- BaseEffect: 027F94:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013740:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013742:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 067CD8:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0131F4:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013741:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0131F9:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013743:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013744:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013745:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013746:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013747:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013748:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013749:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 1876A3:Requiem.esp
+  Data:
+    Magnitude: 45
+    Duration: 1

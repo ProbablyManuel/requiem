@@ -1,0 +1,63 @@
+FormKey: 01EA6B:Skyrim.esm
+EditorID: REQ_Illusion4_FadeOther_Invisibility
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: AllowForTeammate
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB87C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Invisibility
+MenuDisplayObject: 109AC3:Skyrim.esm
+Keywords:
+- 01EA6F:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Illusion
+CastingLight: 028530:Skyrim.esm
+TaperWeight: 1
+HitShader: 02DF92:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Invisibility
+  Type: Invisibility
+CastType: FireAndForget
+TargetType: TargetActor
+CastingArt: 028531:Skyrim.esm
+HitEffectArt: 0339C8:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster renders the target entity invisible for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetShouldAttackConditionData

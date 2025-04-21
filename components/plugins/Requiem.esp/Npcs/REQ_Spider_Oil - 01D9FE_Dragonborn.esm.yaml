@@ -1,0 +1,203 @@
+FormKey: 01D9FE:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 786432
+EditorID: REQ_Spider_Oil
+SkyrimMajorRecordFlags:
+- Compressed
+- CantWait
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2EncExplodingSpiderSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderCrumbleExplosion
+      Object: 032791:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFrost
+      Object: 01CEAE:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bShouldHandleOnHit
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bShouldExplode
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFire
+      Object: 01CEAD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageShock
+      Object: 01CEAF:Skyrim.esm
+  - Name: DLC2EncExpSpiderGenericControlSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderQuest
+      Object: 017962:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderFriendFaction
+      Object: 017964:Dragonborn.esm
+  - Name: DLC2ExpSpiderOilSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFire
+      Object: 01CEAD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion2
+      Object: 0285D4:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderOilCrumbleExplosion
+      Object: 032791:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion6
+      Object: 0285D8:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OilPool
+      Object: 01DA00:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapOilExplosion01
+      Object: 0889AE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion3
+      Object: 0285D5:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion4
+      Object: 0285D6:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion5
+      Object: 0285D7:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion1
+      Object: 01447C:Dragonborn.esm
+ObjectBounds:
+  First: -47, -67, 0
+  Second: 47, 67, 89
+Configuration:
+  Flags:
+  - AutoCalcStats
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 6
+  SpeedMultiplier: 150
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - AIData
+  - AIPackages
+  - DefPackList
+  - AttackData
+Factions:
+- Faction: 02997F:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 017960:Dragonborn.esm
+  Fluff: 0x000000
+Voice: 01F21D:Skyrim.esm
+Template: 014490:Dragonborn.esm
+Race: 014449:Dragonborn.esm
+WornArmor: 03CA79:Dragonborn.esm
+AttackRace: 014449:Dragonborn.esm
+Items:
+- Item:
+    Item: 017719:Dragonborn.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+Keywords:
+- 000EDF:Skyrim.esm
+Class: 044CCB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Oil Spider
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 16
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 16
+  - Key: Block
+    Value: 12
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 16
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 13
+  Magicka: 4
+  Stamina: 38
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 041446:Skyrim.esm
+NAM5: 255
+Height: 0.7
+Weight: 20
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 038A33:Skyrim.esm
+DefaultOutfit: 053900:Skyrim.esm
+DefaultPackageList: 0EB249:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000
+- 0x80000

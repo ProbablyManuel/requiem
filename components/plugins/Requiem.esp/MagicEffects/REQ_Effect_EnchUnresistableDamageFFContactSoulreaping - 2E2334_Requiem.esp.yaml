@@ -1,0 +1,72 @@
+FormKey: 2E2334:Requiem.esp
+EditorID: REQ_Effect_EnchUnresistableDamageFFContactSoulreaping
+Name:
+  TargetLanguage: English
+  Value: Soulreaping
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 1.1
+HitShader: 054224:Skyrim.esm
+EnchantShader: 05D607:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 02F774:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Health
+ImpactData: 032DA7:Skyrim.esm
+DualCastScale: 1
+PerkToApply: 520E6D:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If wielded by a denizen of the Soul Cairn, it deals <mag> magic damage to any living being and also reduces the potency of all healing effects by <75>% for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    RunOnType: Target
+    Race: 00894D:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    RunOnType: Target
+    Race: 006AFA:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    RunOnType: Target
+    Race: 019FD3:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

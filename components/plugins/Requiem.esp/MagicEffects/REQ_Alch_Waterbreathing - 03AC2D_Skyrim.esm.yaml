@@ -1,0 +1,26 @@
+FormKey: 03AC2D:Skyrim.esm
+EditorID: REQ_Alch_Waterbreathing
+Name:
+  TargetLanguage: English
+  Value: Waterbreathing
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0F8A4E:Skyrim.esm
+- 0F8A4F:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- PowerAffectsDuration
+BaseCost: 15
+HitShader: 0BCF27:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: WaterBreathing
+CastType: FireAndForget
+HitEffectArt: 0BCF28:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You can breathe underwater for <dur> seconds.

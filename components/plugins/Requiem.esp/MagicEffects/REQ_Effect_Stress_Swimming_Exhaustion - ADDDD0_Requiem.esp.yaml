@@ -1,0 +1,38 @@
+FormKey: ADDDD0:Requiem.esp
+EditorID: REQ_Effect_Stress_Swimming_Exhaustion
+Name:
+  TargetLanguage: English
+  Value: Exhaustion
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 8CDE08:Requiem.esp
+Flags:
+- Detrimental
+- NoDuration
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsSwimmingConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsRidingMountConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    Spell: 092C48:Skyrim.esm

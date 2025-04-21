@@ -1,0 +1,22 @@
+FormKey: AD3A34:Requiem.esp
+EditorID: RFTI_All_ArmorWeight
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 100
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 3AFD3C:Requiem.esp
+  EntryPoint: ModArmorWeight
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.5

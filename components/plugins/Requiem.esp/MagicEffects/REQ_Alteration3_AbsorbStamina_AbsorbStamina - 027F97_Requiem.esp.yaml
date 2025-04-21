@@ -1,0 +1,81 @@
+FormKey: 027F97:Requiem.esp
+EditorID: REQ_Alteration3_AbsorbStamina_AbsorbStamina
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABF15:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF19:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0ABF16:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Absorb Stamina
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 2FFEAD:Requiem.esp
+- ADDDF7:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- PowerAffectsMagnitude
+BaseCost: 1.5
+MagicSkill: Alteration
+ResistValue: ResistMagic
+CastingLight: 01E013:Skyrim.esm
+TaperWeight: 1
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: Absorb
+Projectile: 0C4331:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 0ABF11:Skyrim.esm
+ImpactData: 0ABF0C:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA52:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+- Type: OnHit
+  Sound: AD3850:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: Absorbs <mag> stamina per second.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 027F97:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 027F9B:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsReferenceConditionData
+    RunOnType: Target
+    Target: 000014:Skyrim.esm

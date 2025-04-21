@@ -1,0 +1,36 @@
+FormKey: 0BE128:Skyrim.esm
+EditorID: REQ_Speech_Haggling
+Name:
+  TargetLanguage: English
+  Value: Haggling
+Description:
+  TargetLanguage: English
+  Value: You've learned how to deal with Skyrim's greedy merchants <br> and how to haggle for better prices.
+NumRanks: 5
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 101
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C07CE:Skyrim.esm
+  EntryPoint: ModBuyPrices
+  PerkConditionTabCount: 2
+  ActorValue: Speech
+  Value: -0.01
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 100
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C07CE:Skyrim.esm
+  EntryPoint: ModSellPrices
+  PerkConditionTabCount: 2
+  ActorValue: Speech
+  Value: 0.01
+  Modification: MultiplyOnePlusAVMult

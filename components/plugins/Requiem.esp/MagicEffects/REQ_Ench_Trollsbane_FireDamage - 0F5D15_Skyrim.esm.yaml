@@ -1,0 +1,36 @@
+FormKey: 0F5D15:Skyrim.esm
+EditorID: REQ_Ench_Trollsbane_FireDamage
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 14
+ResistValue: ResistFire
+HitShader: 01B212:Skyrim.esm
+EnchantShader: 04E810:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Burns trolls for <mag> fire damage per second for <dur> seconds. Slaying trolls recharges the enchantment.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F5D16:Skyrim.esm
+  ComparisonValue: 1

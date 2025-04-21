@@ -1,0 +1,19 @@
+FormKey: 052FF4:Skyrim.esm
+EditorID: REQ_Trait_Falmer_TheBetrayed
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 0008F8:Requiem.esp
+  Data:
+    Magnitude: 80
+- BaseEffect: 00090D:Requiem.esp
+  Data:
+    Magnitude: 30
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+    ComparisonValue: 1

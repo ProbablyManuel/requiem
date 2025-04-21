@@ -1,0 +1,37 @@
+FormKey: ADDDB9:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_Falmer_Effect
+Name:
+  TargetLanguage: English
+  Value: Resist Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: PoisonResist
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Chaurus chitin absorbs most venoms it is exposed to. Thus, poison deals <mag>% less damage to you (15% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 05C84E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    Keyword: 012CCF:Dawnguard.esm
+  ComparisonValue: 1

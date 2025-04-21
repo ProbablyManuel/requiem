@@ -1,0 +1,25 @@
+FormKey: 03EAEB:Skyrim.esm
+EditorID: REQ_Alch_ResistFrost
+Name:
+  TargetLanguage: English
+  Value: Resist Frost
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 065A38:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 10BEAA:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistFrost
+  Association: 065A38:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Frost deals <mag>% less damage to you for <dur> seconds.

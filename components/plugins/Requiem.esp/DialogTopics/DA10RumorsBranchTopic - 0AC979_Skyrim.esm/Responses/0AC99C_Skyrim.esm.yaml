@@ -1,0 +1,59 @@
+FormKey: 0AC99C:Skyrim.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__000AC99C
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA10MiscObjective
+      Object: 0DC53C:Skyrim.esm
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__000AC99C
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__000AC99C
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - Random
+  ResetHours: 0.49988556
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Got a witchhunter in town, from the Priesthood of Stendarr. Keeps asking questions about that old abandoned house.
+  ScriptNotes: rumormonger
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 0DC53C:Skyrim.esm
+    Stage: 10
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 0DC53C:Skyrim.esm
+    Stage: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 05091B:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 0133A3:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestRunningConditionData
+    Quest: 022F08:Skyrim.esm
+  ComparisonValue: 1

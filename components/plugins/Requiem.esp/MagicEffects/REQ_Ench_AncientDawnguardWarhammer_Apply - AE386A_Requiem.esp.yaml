@@ -1,0 +1,26 @@
+FormKey: AE386A:Requiem.esp
+EditorID: REQ_Ench_AncientDawnguardWarhammer_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AncientDawnguardWarhammer
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: runeSpell
+      Object: 37BCA2:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Apply Ancient Dawnguard Warhammer Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,26 @@
+FormKey: 000888:ccbgssse001-fish.esm
+EditorID: REQ_Food_Fish_Cooked_VampireFish
+Name:
+  TargetLanguage: English
+  Value: Cooked Vampire Fish
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishVampire\FishVampire01Inv.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: FishVampire01Inv:0
+    NewTexture: 000859:ccbgssse001-fish.esm
+Weight: 1
+Value: 18
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

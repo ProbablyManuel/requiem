@@ -1,0 +1,136 @@
+FormKey: 029015:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_Conjuration_SpiritHorse
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_GhostlySteedScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EtherealSpell
+      Object: 029016:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+ObjectBounds:
+  First: -31, -103, 0
+  Second: 31, 103, 169
+Configuration:
+  Flags:
+  - Respawn
+  - Summonable
+  - DoesNotBleed
+  - IsGhost
+  StaminaOffset: 19900
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 50
+  SpeedMultiplier: 150
+  DispositionBase: 35
+Voice: 01F232:Skyrim.esm
+Race: 0131FD:Skyrim.esm
+ActorEffect:
+- 0ED5F3:Skyrim.esm
+- AE3B08:Requiem.esp
+AttackRace: 0131FD:Skyrim.esm
+AIData:
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 02AC7B:Skyrim.esm
+Keywords:
+- 000EDF:Skyrim.esm
+- 026110:Skyrim.esm
+- 10EAD7:Skyrim.esm
+Class: 10F71E:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Spirit Steed
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 100
+  - Key: Block
+    Value: 100
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 100
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 15
+  - Key: Conjuration
+    Value: 15
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 15
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+CombatStyle: 01CF32:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

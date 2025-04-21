@@ -1,0 +1,84 @@
+FormKey: 035604:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: IronbindBarrow01
+Version2: 11
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ironbind Barrow
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#002C3D43'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00608693'
+  FogFar: 8000
+  FogClipDistance: 10000
+  FogPower: 0.4
+  AmbientColors:
+    DirectionalXPlus: '#00303D46'
+    DirectionalXMinus: '#00273D3F'
+    DirectionalYPlus: '#002C3F43'
+    DirectionalYMinus: '#002C3A43'
+    DirectionalZPlus: '#00141D1E'
+    DirectionalZMinus: '#00435C67'
+    Specular: '#00608693'
+    Scale: 1
+  FogFarColor: '#00608693'
+  FogMax: 1
+  LightFadeBegin: 4000
+  LightFadeEnd: 5000
+  Inherits:
+  - DirectionalColor
+  - DirectionalRotation
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: 0
+Location: 0350BC:Skyrim.esm
+AcousticSpace: 02B3AE:Skyrim.esm
+EncounterZone: 022F07:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 089D4E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 02299C:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Scale: 0.94
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0350BC:Skyrim.esm
+  Placement:
+    Position: 740.73755, 1200.7866, -64.77497
+    Rotation: -0.012580365, 0.31260356, 3.3266022
+- MutagenObjectType: PlacedObject
+  FormKey: 03F394:Skyrim.esm
+  Version2: 3
+  Base: 020670:Skyrim.esm
+  Scale: 0.87
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0350BC:Skyrim.esm
+  Placement:
+    Position: -1360.1617, 4011.5874, -599.091
+    Rotation: 0, -0, 1.3423953
+- MutagenObjectType: PlacedObject
+  FormKey: 040088:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0350BC:Skyrim.esm
+  Placement:
+    Position: -247.16449, 3509.7898, -417.9621
+    Rotation: 0, -0, 1.7300014
+MajorFlags:
+- 0x40000

@@ -1,0 +1,69 @@
+FormKey: 064789:Skyrim.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__00064789
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DaedraHeart
+      Object: 03AD5B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardEnchArmor
+      Object: 3591FC:Requiem.esp
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__00064789
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__00064789
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- Emotion: Happy
+  EmotionValue: 25
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Good. I'd prefer using water to cool my metal, but it's what the Jarl wants.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Here. Some of my best armor. Wear it well.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Target
+    ItemOrList: 03AD5B:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 0647B3:Skyrim.esm
+    Stage: 10
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 0647B3:Skyrim.esm
+    Stage: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 055A5E:Skyrim.esm
+  ComparisonValue: 1

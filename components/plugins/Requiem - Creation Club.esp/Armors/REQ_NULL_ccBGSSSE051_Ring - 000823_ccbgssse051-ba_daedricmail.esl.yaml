@@ -1,0 +1,43 @@
+FormKey: 000823:ccbgssse051-ba_daedricmail.esl
+EditorID: REQ_NULL_ccBGSSSE051_Ring
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000819:ccbgssse051-ba_daedricmail.esl
+ObjectBounds:
+  First: -1, -1, 0
+  Second: 1, 1, 0
+Name:
+  TargetLanguage: English
+  Value: Ring of Masser
+ObjectEffect: 000848:ccbgssse051-ba_daedricmail.esl
+WorldModel:
+  Male:
+    Model:
+      File: Armor\AmuletsandRings\SilverRingRubyGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Ring
+  ArmorType: Clothing
+  ActsLike44: True
+Race: 013740:Skyrim.esm
+Keywords:
+- 06BBE9:Skyrim.esm
+- 08F95A:Skyrim.esm
+- 0A8664:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 10CD09:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 08E842:Skyrim.esm
+Value: 3000
+Weight: 0.25

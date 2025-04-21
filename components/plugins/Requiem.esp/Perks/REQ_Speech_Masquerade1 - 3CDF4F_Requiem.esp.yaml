@@ -1,0 +1,23 @@
+FormKey: 3CDF4F:Requiem.esp
+EditorID: REQ_Speech_Masquerade1
+Name:
+  TargetLanguage: English
+  Value: Masquerade
+Description:
+  TargetLanguage: English
+  Value: You've become proficient at acting, and with the right equipment you can now disguise yourself,<br>although sometimes people can still tell that you are not truly one of them.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Speech
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F72:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+NextPerk: 30EC6A:Requiem.esp

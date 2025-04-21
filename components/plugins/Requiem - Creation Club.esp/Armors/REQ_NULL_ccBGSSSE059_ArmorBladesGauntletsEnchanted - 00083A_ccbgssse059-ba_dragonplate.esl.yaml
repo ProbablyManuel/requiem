@@ -1,0 +1,42 @@
+FormKey: 00083A:ccbgssse059-ba_dragonplate.esl
+EditorID: REQ_NULL_ccBGSSSE059_ArmorBladesGauntletsEnchanted
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 80
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000824:ccbgssse059-ba_dragonplate.esl
+Name:
+  TargetLanguage: English
+  Value: Dragonplate Insulated Gauntlets
+ObjectEffect: 0BE025:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE059\Armor\Dragonplate\DragonplateGlovesGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 02C17A:Skyrim.esm
+- 06BBD2:Skyrim.esm
+- 06BBD5:Skyrim.esm
+- 06C0EF:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080C:ccbgssse059-ba_dragonplate.esl
+Value: 500
+Weight: 8
+ArmorRating: 19

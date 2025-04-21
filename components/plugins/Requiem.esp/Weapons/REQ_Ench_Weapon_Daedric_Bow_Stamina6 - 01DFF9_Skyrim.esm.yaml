@@ -1,0 +1,60 @@
+FormKey: 01DFF9:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Daedric_Bow_Stamina6
+ObjectBounds:
+  First: -15, -57, 0
+  Second: 14, 57, 3
+Name:
+  TargetLanguage: English
+  Value: Daedric Bow of Exhaustion
+Model:
+  File: Weapons\Daedric\DaedricBowSkinned.nif
+  Data: 0x020000000600000000000000D63BC1866464730038973CEAFBC7861364647300582C5533669AEAE8646473005E9AFF42555354B4646473005E9AFF42F63890AC64647300262C333BEF025D2D646473005E9AFF42
+ObjectEffect: 05B45E:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E71F:Skyrim.esm
+- 01E715:Skyrim.esm
+- 08F958:Skyrim.esm
+- AD3B2D:Requiem.esp
+- 9F9914:Requiem.esp
+- AD3B2F:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 0D7533:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03D78C:Skyrim.esm
+UnequipSound: 03D882:Skyrim.esm
+BasicStats:
+  Value: 2500
+  Weight: 21
+  Damage: 100
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 0.3704
+  Reach: 1
+  Flags:
+  - NPCsUseAmmo
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  Damage: 9
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+Template: 0139B5:Skyrim.esm

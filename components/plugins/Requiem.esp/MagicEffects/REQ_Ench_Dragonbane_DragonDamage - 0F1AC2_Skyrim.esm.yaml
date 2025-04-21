@@ -1,0 +1,31 @@
+FormKey: 0F1AC2:Skyrim.esm
+EditorID: REQ_Ench_Dragonbane_DragonDamage
+Name:
+  TargetLanguage: English
+  Value: Dragon Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 1.2
+HitShader: 085FAA:Skyrim.esm
+EnchantShader: 059EDA:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+EnchantArt: 10FE5C:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The katana is enchanted to tear the dragons' flesh apart and deals <mag> magic damage to them.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+  ComparisonValue: 1

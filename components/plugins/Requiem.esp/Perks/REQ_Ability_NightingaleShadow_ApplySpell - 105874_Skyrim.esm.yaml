@@ -1,0 +1,23 @@
+FormKey: 105874:Skyrim.esm
+EditorID: REQ_Ability_NightingaleShadow_ApplySpell
+Name:
+  TargetLanguage: English
+  Value: Nightingale Shadow Perk
+Description:
+  TargetLanguage: English
+  Value: This Perk is applied automatically when Nightingale Shadow Ability is chosen.
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 017121:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ApplySneakingSpell
+  PerkConditionTabCount: 1
+  Spell: 0F1988:Skyrim.esm

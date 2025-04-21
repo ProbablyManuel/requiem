@@ -1,0 +1,81 @@
+FormKey: 2C96D1:Requiem.esp
+EditorID: RFTI_Player_WerewolfAbilities
+Name:
+  TargetLanguage: English
+  Value: Bestial Blood
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The Gift of Lycanthropy grants you vast physical power - even when not harnessing the power of the beast.
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 0008BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 092C48:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0CDD84:Skyrim.esm
+- BaseEffect: 0008BE:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 092C48:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0CDD84:Skyrim.esm
+- BaseEffect: 0008C4:Requiem.esp
+  Data:
+    Magnitude: 25
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 092C48:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0CDD84:Skyrim.esm
+- BaseEffect: 0008C7:Requiem.esp
+  Data:
+    Magnitude: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 092C48:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0CDD84:Skyrim.esm
+- BaseEffect: 000A14:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 092C48:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0CDD84:Skyrim.esm

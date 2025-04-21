@@ -1,0 +1,24 @@
+FormKey: AE372F:Requiem.esp
+EditorID: REQ_Alcohol_ResistPoison
+Name:
+  TargetLanguage: English
+  Value: Resist Poison
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: PoisonResist
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Poison deals <mag>% less damage to you for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

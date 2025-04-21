@@ -1,0 +1,179 @@
+FormKey: 090C87:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Bandit_Loc_CragslaneCavern_BouncerExterior
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - Respawn
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - ModelAnimation
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+Voice: 09843B:Skyrim.esm
+Template: 0B623A:Skyrim.esm
+Race: 013742:Skyrim.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  Warn: 2048
+  WarnOrAttack: 1024
+  Attack: 512
+Class: 017008:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Bouncer
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 55
+  Magicka: 37
+  Stamina: 49
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x323FEF
+HeadParts:
+- 053927:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C3CE4:Skyrim.esm
+- 0C7123:Skyrim.esm
+- 0EB7F7:Skyrim.esm
+HairColor: 0A0438:Skyrim.esm
+CombatStyle: 03BE1B:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+TextureLighting: '#00859AA3'
+FaceMorph:
+  NoseLongVsShort: 1
+  NoseUpVsDown: -0.7
+  JawUpVsDown: 0.7
+  JawNarrowVsWide: 1
+  CheeksUpVsDown: 0.2
+  CheeksForwardVsBack: 0.8
+  EyesUpVsDown: -0.5
+  EyesInVsOut: -1
+  BrowsUpVsDown: -1
+  BrowsInVsOut: 0.3
+  LipsUpVsDown: -1
+  LipsInVsOut: -0.1
+  ChinNarrowVsWide: 1
+  EyesForwardVsBack: 0.5
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 19
+  Unknown: 4294967295
+  Eyes: 31
+  Mouth: 11
+TintLayers:
+- Index: 1
+  Color: '#00859AA3'
+  InterpolationValue: 1
+  Preset: 65
+- Index: 2
+  Color: '#00A95452'
+  InterpolationValue: 0.11
+  Preset: 71
+- Index: 8
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 93
+- Index: 11
+  Color: '#00212B52'
+  InterpolationValue: 0.44
+  Preset: 109
+MajorFlags:
+- 0x40000

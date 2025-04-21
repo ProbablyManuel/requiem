@@ -1,0 +1,304 @@
+FormKey: 016DFE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthSilverBloodInn
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Silver-Blood Inn
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00232323'
+  DirectionalColor: '#005C574B'
+  FogNearColor: '#003D484E'
+  FogFar: 4000
+  DirectionalRotationZ: 90
+  DirectionalFade: 1
+  FogClipDistance: 4000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00262324'
+    DirectionalXMinus: '#001F2321'
+    DirectionalYPlus: '#00232423'
+    DirectionalYMinus: '#00232123'
+    DirectionalZPlus: '#0010100F'
+    DirectionalZMinus: '#00353536'
+    Specular: '#00596A73'
+    Scale: 1
+  FogFarColor: '#00596A73'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - DirectionalRotation
+  - DirectionalFade
+  - LightFadeDistances
+LightingTemplate: 09F281:Skyrim.esm
+WaterHeight: 0
+Location: 01F30E:Skyrim.esm
+Owner: 06566F:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 017035:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 00081D:ccbgssse061-ba_dwarven.esl
+  MajorRecordFlagsRaw: 536873984
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 00081B:ccbgssse061-ba_dwarven.esl
+  Owner: 000007:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -5765.407, -1447.4012, 69.999535
+- MutagenObjectType: PlacedObject
+  FormKey: 00083D:ccedhsse002-splkntset.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 000853:ccedhsse002-splkntset.esl
+  RagdollData: 0x009B6985003C05410000003940D295BFDD0FC9BF000040B1CF76484000735C43BA9E1740060072B900E8542C000000800000008065A5C93F
+  Owner: 000007:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -4559.664, -1978.6213, 43.869846
+    Rotation: 0, 0, 1.6831973
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C4296:Skyrim.esm
+  Base: 03199A:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4553.13, -1983.2595, 41.88514
+    Rotation: 0.0030176742, 6.282948, 0.10000038
+- MutagenObjectType: PlacedObject
+  FormKey: 0C4297:Skyrim.esm
+  Base: 03133B:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4547.3774, -1952.2084, 41.93933
+    Rotation: 6.2807612, 0.013210397, 2.6489944
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42AB:Skyrim.esm
+  Base: 012FEB:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4484.0723, -1952.8579, 42.15275
+    Rotation: 6.2819114, 6.2817855, 6.2831593
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42AC:Skyrim.esm
+  Base: 10D666:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4481.136, -1946.3196, 47.781803
+    Rotation: 5.058233, 5.287466, 1.5077009
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42AD:Skyrim.esm
+  Base: 10D666:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4473.6543, -1957.9305, 75.14949
+    Rotation: 4.380607, 5.0200644, 5.531135
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42AF:Skyrim.esm
+  Base: 064B36:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4523.641, -1999.9211, 42.144073
+    Rotation: 0.009901253, 0.005379105, 2.0612898
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42B0:Skyrim.esm
+  Base: 064B32:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4549.5137, -1987.6449, 47.103867
+    Rotation: 1.6216081, 6.2449226, 1.6069893
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42B2:Skyrim.esm
+  Base: 104B40:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4549.5796, -2019.7632, 43.260105
+    Rotation: 6.257126, 0.07176794, 5.885943
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42B3:Skyrim.esm
+  Base: 0319E3:Skyrim.esm
+  Scale: 1.1
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4541.941, -2012.5481, 43.345875
+    Rotation: 0, 0, 0.10000038
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42B4:Skyrim.esm
+  Base: 06E7A4:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4528.749, -1966.2267, 42.81518
+    Rotation: 3.1762724, 6.217514, 5.876681
+- MutagenObjectType: PlacedObject
+  FormKey: 0C42BF:Skyrim.esm
+  Base: 104B3F:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4529.6865, -1959.0698, 44.220165
+    Rotation: 0.018969983, 0.10490127, 4.3864193
+- MutagenObjectType: PlacedObject
+  FormKey: 0E0DEC:Skyrim.esm
+  Base: 01F24A:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  Placement:
+    Position: -4499.057, -2001.3392, 42.636627
+    Rotation: 0, 0, 3.9926326
+- MutagenObjectType: PlacedObject
+  FormKey: 000832:ccedhsse002-splkntset.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  Base: 04C3C6:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -4545.6, -2000.3937, -30000
+- MutagenObjectType: PlacedObject
+  FormKey: 000833:ccedhsse002-splkntset.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 04C3C8:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -4552.8984, -2002.0923, -30000
+    Rotation: 4.7110205, 0.22240731, 1.5059085
+- MutagenObjectType: PlacedObject
+  FormKey: 000837:ccedhsse002-splkntset.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 033761:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -4608.906, -2059.861, -30000
+    Rotation: 3.216017, 5.5029464, 2.5692103
+- MutagenObjectType: PlacedObject
+  FormKey: 000840:ccedhsse002-splkntset.esl
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+  Base: 033761:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -4615.089, -2060.9587, -30000
+    Rotation: 3.216017, 5.5029464, 2.5692103
+- MutagenObjectType: PlacedObject
+  FormKey: 000841:ccedhsse002-splkntset.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 033761:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -4482.6, -1957.911, -30000
+    Rotation: 0, 0, 1.6000026
+- MutagenObjectType: PlacedObject
+  FormKey: 000842:ccedhsse002-splkntset.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 033761:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -4473.6396, -1960.0527, -30000
+    Rotation: 0, 0, 1.6000026
+MajorFlags:
+- 0x40000

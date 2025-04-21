@@ -1,0 +1,36 @@
+FormKey: 03B00E:Dragonborn.esm
+EditorID: REQ_Ench_VisageOfMzund_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2dunFahlbtharzHelmEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunFahlbtharzSteamBreath
+      Object: 038ADC:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Breath of Nchuak
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoRecast
+SpellmakingCastingTime: 5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds:
+- Type: ConcentrationCastLoop
+  Sound: 0FFA0B:Skyrim.esm
+- Type: Release
+  Sound: 0FFA0B:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Draws upon stamina to release a scorching blast of steam that deals <150> fire damage per second.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Stamina
+  ComparisonValue: 25

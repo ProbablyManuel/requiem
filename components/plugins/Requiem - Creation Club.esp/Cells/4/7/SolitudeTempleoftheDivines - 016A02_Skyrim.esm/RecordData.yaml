@@ -1,0 +1,65 @@
+FormKey: 016A02:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeTempleoftheDivines
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Temple of the Divines
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00393531'
+  DirectionalColor: '#002E3443'
+  FogNearColor: '#008A8366'
+  FogFar: 6000
+  FogClipDistance: 6000
+  FogPower: 0.8
+  AmbientColors:
+    DirectionalXPlus: '#00594B3B'
+    DirectionalXMinus: '#00484B36'
+    DirectionalYPlus: '#00514E39'
+    DirectionalYMinus: '#00514739'
+    DirectionalZPlus: '#00262319'
+    DirectionalZMinus: '#007B7258'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00203151'
+  FogMax: 0.6
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+LightingTemplate: 03128C:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0200A3:Skyrim.esm
+Owner: 0C13FD:Skyrim.esm
+AcousticSpace: 10F90D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 02EDEB:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 000823:ccbgssse053-ba_leather.esl
+  MajorRecordFlagsRaw: 536873984
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 00081A:ccbgssse053-ba_leather.esl
+  Owner: 000DB1:Skyrim.esm
+  LocationReference: 0200A3:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 2417.1868, 1028.8048, 351.8274
+MajorFlags:
+- 0x40000

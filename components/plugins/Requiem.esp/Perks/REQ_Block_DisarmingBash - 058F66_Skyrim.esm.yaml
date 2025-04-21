@@ -1,0 +1,64 @@
+FormKey: 058F66:Skyrim.esm
+EditorID: REQ_Block_DisarmingBash
+Name:
+  TargetLanguage: English
+  Value: Disarming Bash
+Description:
+  TargetLanguage: English
+  Value: Sometimes, when you put all your strength into your bashes, your foes drop their weapon because of the pain.<br>[25% chance to disarm when power bashing with a shield, 5% chance to disarm when power bashing with a weapon]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05F594:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Block
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 11
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsAttackTypeConditionData
+        Keyword: 000F54:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsShieldOutConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 25
+  EntryPoint: ApplyBashingSpell
+  PerkConditionTabCount: 2
+  Spell: 81679D:Requiem.esp
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsAttackTypeConditionData
+        Keyword: 000F54:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsShieldOutConditionData
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 5
+  EntryPoint: ApplyBashingSpell
+  PerkConditionTabCount: 2
+  Spell: 81679D:Requiem.esp

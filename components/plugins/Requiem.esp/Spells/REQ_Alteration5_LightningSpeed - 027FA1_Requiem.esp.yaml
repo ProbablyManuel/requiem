@@ -1,0 +1,23 @@
+FormKey: 027FA1:Requiem.esp
+EditorID: REQ_Alteration5_LightningSpeed
+Name:
+  TargetLanguage: English
+  Value: Lightning Speed
+MenuDisplayObject: 0A0E7F:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1200
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+- NoDualCastModification
+ChargeTime: 4.5
+CastType: FireAndForget
+HalfCostPerk: 0C44BA:Skyrim.esm
+Effects:
+- BaseEffect: 027F9E:Requiem.esp
+  Data:
+    Magnitude: 0.01
+    Duration: 3

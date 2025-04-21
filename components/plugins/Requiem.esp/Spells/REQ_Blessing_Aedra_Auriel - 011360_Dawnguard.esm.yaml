@@ -1,0 +1,224 @@
+FormKey: 011360:Dawnguard.esm
+EditorID: REQ_Blessing_Aedra_Auriel
+Name:
+  TargetLanguage: English
+  Value: Blessing of Auriel
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Those blessed by Auriel are better at penetrating armor with ranged weapons. The champions of Auriel are exalted with substantial increases in all three attributes.
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0FBFF5:Skyrim.esm
+  Data:
+    Magnitude: 25
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 0267E3:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 028170:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 029DB0:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816D:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816E:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816C:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816B:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 0267EA:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816F:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetPCMiscStatConditionData
+      MiscStat: -1715763496
+    ComparisonValue: 3000
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetPCMiscStatConditionData
+      MiscStat: -2098097982
+    ComparisonValue: 10
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPCMiscStatConditionData
+      MiscStat: -746821367
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 01EA51:Skyrim.esm
+      Stage: 200
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 01F326:Skyrim.esm
+      Stage: 200
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE3B6A:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 0ED0A8:Skyrim.esm
+- BaseEffect: 0FBFF5:Skyrim.esm
+  Data:
+    Magnitude: 25
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 0267E3:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 028170:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 029DB0:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816D:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816E:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816C:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816B:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 0267EA:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetCrimeGoldConditionData
+      Faction: 02816F:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetPCMiscStatConditionData
+      MiscStat: -1715763496
+    ComparisonValue: 6000
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetPCMiscStatConditionData
+      MiscStat: -2098097982
+    ComparisonValue: 20
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetPCMiscStatConditionData
+      MiscStat: -746821367
+    ComparisonValue: 3
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 01EA51:Skyrim.esm
+      Stage: 200
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 01F326:Skyrim.esm
+      Stage: 200
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: AE3B6A:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 0ED0A8:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 47B5B8:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 011362:Dawnguard.esm
+  Data:
+    Magnitude: 10
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 0ED0A8:Skyrim.esm
+- BaseEffect: 0FB98F:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 0ED0A8:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 002853:Dawnguard.esm
+      Stage: 200
+    ComparisonValue: 1
+- BaseEffect: 0FB98D:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 0ED0A8:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 002853:Dawnguard.esm
+      Stage: 200
+    ComparisonValue: 1
+- BaseEffect: 0FB98E:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 0ED0A8:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetStageDoneConditionData
+      Quest: 002853:Dawnguard.esm
+      Stage: 200
+    ComparisonValue: 1

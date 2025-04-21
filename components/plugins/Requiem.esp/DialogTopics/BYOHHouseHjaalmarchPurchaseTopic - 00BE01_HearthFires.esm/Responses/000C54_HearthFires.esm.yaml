@@ -1,0 +1,45 @@
+FormKey: 000C54:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__01000C54
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__01000C54
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__01000C54
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 000C53:HearthFires.esm
+FavorLevel: None
+LinkTo:
+- 00BE00:HearthFires.esm
+- 00BDFF:HearthFires.esm
+- 00BDFE:HearthFires.esm
+ResponseData: 000C51:HearthFires.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 00BE09:HearthFires.esm
+    SecondUnusedIntParameter: -285090912
+    VariableName: ::bOwnProperty_var
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013605:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 050922:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 087E20:Skyrim.esm
+  ComparisonValue: 3
+Prompt:
+  TargetLanguage: English
+  Value: Is that land you mentioned still available?

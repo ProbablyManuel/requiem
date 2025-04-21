@@ -1,0 +1,35 @@
+FormKey: 03AD66:Skyrim.esm
+EditorID: HagravenFeathers
+Version2: 3
+ObjectBounds:
+  First: -9, -11, -1
+  Second: 9, 11, 1
+Name:
+  TargetLanguage: English
+  Value: Hagraven Feathers
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\HagFeathers.nif
+  Data: 0x02000000020000000000000005494B8864647300604DDD5CFE885EE564647300604DDD5C
+Value: 20
+Weight: 0.1
+IngredientValue: 20
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB25:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 073F29:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 20
+- BaseEffect: 073F2F:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30

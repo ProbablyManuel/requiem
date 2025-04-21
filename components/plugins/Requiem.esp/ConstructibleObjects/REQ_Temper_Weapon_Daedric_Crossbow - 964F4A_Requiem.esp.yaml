@@ -1,0 +1,20 @@
+FormKey: 964F4A:Requiem.esp
+EditorID: REQ_Temper_Weapon_Daedric_Crossbow
+Items:
+- Item:
+    Item: 05AD9D:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetCurrentTimeConditionData
+  ComparisonValue: 23
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB413:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 8F7F91:Requiem.esp
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

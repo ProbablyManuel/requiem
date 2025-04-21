@@ -1,0 +1,21 @@
+FormKey: 0E7328:Skyrim.esm
+EditorID: REQ_StandingStone_Tower
+Name:
+  TargetLanguage: English
+  Value: Stone of the Tower
+MenuDisplayObject: 109AC2:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The Tower grants a blessing of <20> extra carry weight and supernatural lockpicking skills. Expertise is increased by <4> and any effortless lock can be picked in plain sight with nobody noticing, creating a wax-molded copy of the key, if one exists.
+BaseCost: 1117
+Type: Ability
+Effects:
+- BaseEffect: 07A0F4:Skyrim.esm
+  Data:
+    Magnitude: 20
+- BaseEffect: 000868:Requiem.esp
+  Data:
+    Magnitude: 4
+- BaseEffect: 0E7327:Skyrim.esm
+  Data: {}

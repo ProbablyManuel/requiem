@@ -1,0 +1,24 @@
+FormKey: 01711F:Skyrim.esm
+EditorID: REQ_NULL_TGFullSet
+Name:
+  TargetLanguage: English
+  Value: Nightingale Armor Full Set
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 017120:Skyrim.esm
+  Data:
+    Magnitude: 25
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 10FD61:Skyrim.esm
+    ComparisonValue: 4

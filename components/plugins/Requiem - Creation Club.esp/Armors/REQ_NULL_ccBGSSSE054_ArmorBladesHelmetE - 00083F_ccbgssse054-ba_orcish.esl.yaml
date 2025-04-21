@@ -1,0 +1,44 @@
+FormKey: 00083F:ccbgssse054-ba_orcish.esl
+EditorID: REQ_NULL_ccBGSSSE054_ArmorBladesHelmetE
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 60
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000822:ccbgssse054-ba_orcish.esl
+Name:
+  TargetLanguage: English
+  Value: Orcish Plate Helmet
+ObjectEffect: 0AD464:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE054\Armor\OrcishPlate\OrcishPlateHelmetGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Hair
+  - Circlet
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 088845:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBE5:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080A:ccbgssse054-ba_orcish.esl
+- 00080F:ccbgssse054-ba_orcish.esl
+- 00080B:ccbgssse054-ba_orcish.esl
+Value: 550
+Weight: 8
+ArmorRating: 20

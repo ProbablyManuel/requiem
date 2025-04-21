@@ -1,0 +1,24 @@
+FormKey: 039D42:Skyrim.esm
+EditorID: REQ_Attack_Race_Dragon_Tail
+Name:
+  TargetLanguage: English
+  Value: Tail Stagger
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 20
+Flags:
+- ManualCostCalc
+- 0x400000
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 039D41:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Area: 50
+- BaseEffect: 5F3680:Requiem.esp
+  Data:
+    Area: 25

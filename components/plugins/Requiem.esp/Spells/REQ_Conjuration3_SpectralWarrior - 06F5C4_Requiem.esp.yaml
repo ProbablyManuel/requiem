@@ -1,0 +1,23 @@
+FormKey: 06F5C4:Requiem.esp
+EditorID: REQ_Conjuration3_SpectralWarrior
+Name:
+  TargetLanguage: English
+  Value: Summon Spectral Warrior
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 400
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.3
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 20
+HalfCostPerk: 0C44BC:Skyrim.esm
+Effects:
+- BaseEffect: 06F5C1:Requiem.esp
+  Data:
+    Duration: 8

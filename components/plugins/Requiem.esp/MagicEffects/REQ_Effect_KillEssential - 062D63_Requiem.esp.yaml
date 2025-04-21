@@ -1,0 +1,44 @@
+FormKey: 062D63:Requiem.esp
+EditorID: REQ_Effect_KillEssential
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_KillEssentials
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MsgEssentialKilled
+      Object: 723E00:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Kill Essential
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3C6809:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsEssentialConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Health

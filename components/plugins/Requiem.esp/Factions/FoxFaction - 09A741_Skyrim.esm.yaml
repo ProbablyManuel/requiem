@@ -1,0 +1,21 @@
+FormKey: 09A741:Skyrim.esm
+EditorID: FoxFaction
+Name:
+  TargetLanguage: English
+  Value: Fox Faction
+Relations:
+- Target: 0A3087:Skyrim.esm
+  Reaction: Enemy
+- Target: 0B2849:Skyrim.esm
+  Reaction: Enemy
+Flags:
+- IgnoreMurder
+- IgnoreAssault
+- IgnoreStealing
+- IgnoreTrespass
+- IgnorePickpocket
+- IgnoreWerewolf
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

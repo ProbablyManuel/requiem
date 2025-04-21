@@ -1,0 +1,36 @@
+FormKey: 17D82B:Requiem.esp
+EditorID: REQ_Effect_EnchTurnUndeadFFContactDamage
+Name:
+  TargetLanguage: English
+  Value: Turn Undead
+MenuDisplayObject: 1097CA:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+HitShader: 04C6D8:Skyrim.esm
+EnchantShader: 05D608:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 04C6DA:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Additionally, deals <mag> magic damage to undead.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

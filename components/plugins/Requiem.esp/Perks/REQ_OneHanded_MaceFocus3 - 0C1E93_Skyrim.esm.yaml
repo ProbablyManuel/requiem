@@ -1,0 +1,39 @@
+FormKey: 0C1E93:Skyrim.esm
+EditorID: REQ_OneHanded_MaceFocus3
+Name:
+  TargetLanguage: English
+  Value: Mace Focus
+Description:
+  TargetLanguage: English
+  Value: You've become a masterly mace fighter, rendering armor almost useless.<br>[15% more power attack damage, +45% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0C1E92:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD39A1:Requiem.esp
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E714:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPowerAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.15

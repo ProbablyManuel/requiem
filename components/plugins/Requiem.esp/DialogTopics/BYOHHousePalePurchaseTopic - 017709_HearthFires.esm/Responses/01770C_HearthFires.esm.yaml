@@ -1,0 +1,80 @@
+FormKey: 01770C:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__0101770C
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__0101770C
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__0101770C
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - SayOnce
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 017708:HearthFires.esm
+- 017707:HearthFires.esm
+- 017706:HearthFires.esm
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Land? Oh, yes. The Heljarchen estate. I thought of you immediately when it became available.
+  ScriptNotes: ''
+  Edits: ''
+- EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: It's in the south of The Pale, near Giants' Gap. Just the spot for someone like you to establish a steading.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 010BEE:HearthFires.esm
+    SecondUnusedIntParameter: -285379776
+    VariableName: ::bOwnProperty_var
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A50:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 1
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 087E21:Skyrim.esm
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 010BEE:HearthFires.esm
+    Stage: 30
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 010BEE:HearthFires.esm
+    Stage: 50
+Prompt:
+  TargetLanguage: English
+  Value: I got your letter about the land for sale. Is it still available?

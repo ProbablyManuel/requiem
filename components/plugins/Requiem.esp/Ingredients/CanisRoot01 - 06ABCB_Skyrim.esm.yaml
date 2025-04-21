@@ -1,0 +1,37 @@
+FormKey: 06ABCB:Skyrim.esm
+EditorID: CanisRoot01
+Version2: 3
+ObjectBounds:
+  First: -2, -10, -1
+  Second: 7, 0, 15
+Name:
+  TargetLanguage: English
+  Value: Canis Root
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\CanisRoot01.nif
+  Data: 0x02000000020000000000000021E93B9264647300134C1EFAC0D060C264647300134C1EFA
+PickUpSound: 0FB975:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 15
+Weight: 0.1
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB19:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB1B:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 1

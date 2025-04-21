@@ -1,0 +1,22 @@
+FormKey: 02958D:Requiem.esp
+EditorID: REQ_Destruction5_ArcaneVolley
+Name:
+  TargetLanguage: English
+  Value: Arcane Volley
+MenuDisplayObject: 1097CC:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 200
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: Aimed
+HalfCostPerk: 0C44C2:Skyrim.esm
+Effects:
+- BaseEffect: 02958B:Requiem.esp
+  Data:
+    Magnitude: 150

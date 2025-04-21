@@ -1,0 +1,18 @@
+FormKey: 0FE304:Skyrim.esm
+EditorID: REQ_Player_TorchBash
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsTorchOutConditionData
+      ComparisonValue: 1
+  EntryPoint: ApplyBashingSpell
+  PerkConditionTabCount: 2
+  Spell: 0FEAAB:Skyrim.esm

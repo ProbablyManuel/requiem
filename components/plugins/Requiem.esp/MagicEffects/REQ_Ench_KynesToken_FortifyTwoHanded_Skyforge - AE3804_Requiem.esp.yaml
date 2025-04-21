@@ -1,0 +1,26 @@
+FormKey: AE3804:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyTwoHanded_Skyforge
+Name:
+  TargetLanguage: English
+  Value: Fortify Two-Handed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: TwoHandedPowerModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 01CEF6:Skyrim.esm
+    Stage: 30
+  ComparisonValue: 1

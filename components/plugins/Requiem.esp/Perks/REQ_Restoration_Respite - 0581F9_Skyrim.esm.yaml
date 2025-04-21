@@ -1,0 +1,22 @@
+FormKey: 0581F9:Skyrim.esm
+EditorID: REQ_Restoration_Respite
+Name:
+  TargetLanguage: English
+  Value: Respite
+Description:
+  TargetLanguage: English
+  Value: In addition to curing wounds, your healing spells now reinvigorate the body itself,<br>restoring the affected subject's stamina.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0581F8:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Restoration
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True

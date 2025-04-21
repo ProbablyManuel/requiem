@@ -1,0 +1,27 @@
+FormKey: 0721E8:Skyrim.esm
+EditorID: REQ_Food_Meat_Cooked_Beef
+ObjectBounds:
+  First: -5, -9, -2
+  Second: 5, 9, 2
+Name:
+  TargetLanguage: English
+  Value: Cooked Beef
+Keywords:
+- 08CDEA:Skyrim.esm
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\BeefMeatCooked.nif
+  Data: 0x020000000200000000000000C31EE4A064647300604DDD5CCE14F18D64647300604DDD5C
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE4:Update.esm
+  Data: {}

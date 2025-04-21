@@ -1,0 +1,324 @@
+FormKey: 01A16C:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1EncUndeadSummon3
+Version2: 7
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1SummonFromSoulCairnFXSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SummonFXS
+      Object: 00CAD4:Dawnguard.esm
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - Summonable
+  MagickaOffset: 2000
+  StaminaOffset: 3000
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 50
+  SpeedMultiplier: 150
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 250
+Voice: 011CD6:Dawnguard.esm
+Template: 0045B7:Dawnguard.esm
+Race: 006AFA:Dawnguard.esm
+ActorEffect:
+- 10F142:Skyrim.esm
+- 006AEF:Dawnguard.esm
+WornArmor: 006AFB:Dawnguard.esm
+AttackRace: 006AFA:Dawnguard.esm
+Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart2HMForwardPowerChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartGSChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStartGSBackSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartGSForwardPowerB
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart1HMX2
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart2HMPowerChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart2HMBackSwipe
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart1HMBackSlash
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: attackStart1HMForwardPower
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart1HMPowerChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart2HMSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart1HMSwipe
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStartGSX2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HRight
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 50
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart1HMPowerSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart2HMForwardSwipe
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - LeftAttack
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HLeft
+Perks:
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3933:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 031284:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Keywords:
+- 0D205E:Skyrim.esm
+Class: 023C0E:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 95
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 230
+  Magicka: 25
+  Stamina: 80
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x415AEF
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 011CD5:Dawnguard.esm
+DefaultPackageList: 032AE2:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

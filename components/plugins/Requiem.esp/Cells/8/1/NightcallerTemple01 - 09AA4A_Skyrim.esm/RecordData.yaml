@@ -1,0 +1,96 @@
+FormKey: 09AA4A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: NightcallerTemple01
+Version2: 11
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Nightcaller Temple
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#001C1E24'
+  DirectionalColor: '#00414554'
+  FogNearColor: '#006C7599'
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#001E1E25'
+    DirectionalXMinus: '#00191E22'
+    DirectionalYPlus: '#001C1F24'
+    DirectionalYMinus: '#001C1C24'
+    DirectionalZPlus: '#000D0E10'
+    DirectionalZMinus: '#002A2D37'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#005A6674'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0A2680:Skyrim.esm
+WaterHeight: 0
+Location: 0192B9:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC7D:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0F8C98:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E1919:Skyrim.esm
+  MajorRecordFlagsRaw: 1073743872
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x40000000
+  Base: 03AD5B:Skyrim.esm
+  LocationReference: 0192B9:Skyrim.esm
+  Placement:
+    Position: -240.57385, 549.87836, -1150.1622
+    Rotation: -0.059164207, 0.061169624, 6.2783136
+- MutagenObjectType: PlacedObject
+  FormKey: 3A8C1B:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 10D67C:Skyrim.esm
+  Placement:
+    Position: 3263.8118, 3030.1484, -1660.2803
+    Rotation: 0.0025537468, -3.9022765E-05, 3.7294195
+- MutagenObjectType: PlacedObject
+  FormKey: 3A8C1A:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 10D684:Skyrim.esm
+  Placement:
+    Position: 7634.618, 4452.571, -1496.3856
+    Rotation: 0, -0, 4.98319
+- MutagenObjectType: PlacedObject
+  FormKey: 0E1915:Skyrim.esm
+  MajorRecordFlagsRaw: 1073743872
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x40000000
+  Base: 03AD5B:Skyrim.esm
+  LocationReference: 0192B9:Skyrim.esm
+  Placement:
+    Position: -229.27448, 545.9307, -1059.3705
+    Rotation: -0.05889489, 0.062000405, 6.2749615
+MajorFlags:
+- 0x40000

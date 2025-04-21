@@ -1,0 +1,28 @@
+FormKey: AD36F5:Requiem.esp
+EditorID: REQ_Projectile_Ench_Bolt_Glass_Fire
+ObjectBounds:
+  First: -15, -109, -8
+  Second: 15, 62, 7
+Name:
+  TargetLanguage: English
+  Value: Glass Bolt of Fire
+Model:
+  File: Requiem\Projectiles\glass\glass_bolt_magic_fire.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+- Supersonic
+Type: Arrow
+Gravity: 0.2
+Speed: 5600
+Range: 60000
+MuzzleFlash: 0E2172:Skyrim.esm
+Explosion: 284877:Requiem.esp
+Sound: 03F2B4:Skyrim.esm
+MuzzleFlashDuration: 0.5
+FadeDuration: 5
+ImpactForce: 0.5
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

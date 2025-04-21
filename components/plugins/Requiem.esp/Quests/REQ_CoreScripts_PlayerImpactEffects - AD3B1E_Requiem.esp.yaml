@@ -1,0 +1,149 @@
+FormKey: AD3B1E:Requiem.esp
+EditorID: REQ_CoreScripts_PlayerImpactEffects
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B1E:Requiem.esp
+      Alias: 5
+    Scripts:
+    - Name: REQ_PlayerImpactEffects
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BreakableBow
+        Object: 2E232E:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DummyEffect
+        Object: 3251AC:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: OnHitDebug
+        Object: 345506:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Unarmed
+        Object: 0001F4:Skyrim.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: MagickaDamage
+        Objects:
+        - Name: ''
+          Object: 2E9A10:Requiem.esp
+        - Name: ''
+          Object: 2E9A11:Requiem.esp
+        - Name: ''
+          Object: 302649:Requiem.esp
+        - Name: ''
+          Object: 2E9A13:Requiem.esp
+        - Name: ''
+          Object: AE3707:Requiem.esp
+        - Name: ''
+          Object: 302653:Requiem.esp
+        - Name: ''
+          Object: 2E9A1B:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: DestroyedMessage
+        Objects:
+        - Name: ''
+          Object: 0835C9:Requiem.esp
+        - Name: ''
+          Object: 0835CA:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: StaminaGain
+        Objects:
+        - Name: ''
+          Object: 2E9A1F:Requiem.esp
+        - Name: ''
+          Object: 2E9A1F:Requiem.esp
+        - Name: ''
+          Object: 2E9A1F:Requiem.esp
+        - Name: ''
+          Object: 2E9A1F:Requiem.esp
+        - Name: ''
+          Object: 2E9A1F:Requiem.esp
+        - Name: ''
+          Object: 31DA4F:Requiem.esp
+        - Name: ''
+          Object: 31DA54:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: IgnoredAttack
+        Object: 33B68E:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Concentration
+        Object: 2FFEAD:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: blocker
+        Object: 3251AB:Requiem.esp
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: ArmorTresholds
+        Data:
+        - 300
+        - 400
+        - 400
+        - 600
+        - 500
+        - 0
+        - 0
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: StaminaDamage
+        Objects:
+        - Name: ''
+          Object: 302648:Requiem.esp
+        - Name: ''
+          Object: 30264D:Requiem.esp
+        - Name: ''
+          Object: 30264B:Requiem.esp
+        - Name: ''
+          Object: 30264F:Requiem.esp
+        - Name: ''
+          Object: AE3708:Requiem.esp
+        - Name: ''
+          Object: 2E9A17:Requiem.esp
+        - Name: ''
+          Object: 302651:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Stagger
+        Objects:
+        - Name: ''
+          Object: 32C8B2:Requiem.esp
+        - Name: ''
+          Object: 32C8B1:Requiem.esp
+        - Name: ''
+          Object: 32C8B4:Requiem.esp
+        - Name: ''
+          Object: 2E9A1D:Requiem.esp
+        - Name: ''
+          Object: AE3709:Requiem.esp
+        - Name: ''
+          Object: 2E9A1D:Requiem.esp
+        - Name: ''
+          Object: 2E9A1D:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MagicWard
+        Object: 01EA69:Skyrim.esm
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Disarm
+        Objects:
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 31DA4E:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Impact Effects for Player'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 5
+  Name: ImpactEffects
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

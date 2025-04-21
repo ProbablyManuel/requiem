@@ -1,0 +1,40 @@
+FormKey: 51BF31:Requiem.esp
+EditorID: REQ_Effect_Dust_Frost
+Name:
+  TargetLanguage: English
+  Value: Frost Powder
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistFrost
+TaperWeight: 0.3
+HitShader: 01F03A:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 1
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 51BF32:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+SecondActorValue: Stamina
+DualCastScale: 1
+ImageSpaceModifier: 0DEDCB:Skyrim.esm
+Sounds:
+- Type: Ready
+  Sound: 03F1F0:Skyrim.esm
+- Type: Release
+  Sound: 07F8E6:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: An extremely cold powder. Those unfortunate ones who are hit by this blood-freezing dust will suffer <mag> frost damage for <dur> seconds.

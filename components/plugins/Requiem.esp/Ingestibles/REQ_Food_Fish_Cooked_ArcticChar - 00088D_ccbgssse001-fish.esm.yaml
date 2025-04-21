@@ -1,0 +1,29 @@
+FormKey: 00088D:ccbgssse001-fish.esm
+EditorID: REQ_Food_Fish_Cooked_ArcticChar
+ObjectBounds:
+  First: -10, -27, -7
+  Second: 10, 27, 7
+Name:
+  TargetLanguage: English
+  Value: Cooked Arctic Char
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishArcticChar\FishArcticChar01Inv.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: FishArcticChar01Inv:0
+    NewTexture: 00085A:ccbgssse001-fish.esm
+Weight: 1
+Value: 15
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

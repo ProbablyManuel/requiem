@@ -1,0 +1,25 @@
+FormKey: AE3B29:Requiem.esp
+EditorID: REQ_Trait_Heritage_Argonian_Description
+Name:
+  TargetLanguage: English
+  Value: People of the Root
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Poison spells and mixtures are <25>% stronger. Spells cost <30>% less magicka at full magicka. Ingesting Sleeping Tree Sap increases duration of potions and spells by <35>%.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

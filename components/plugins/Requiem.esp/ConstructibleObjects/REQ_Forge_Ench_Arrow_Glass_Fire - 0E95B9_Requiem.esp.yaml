@@ -1,0 +1,23 @@
+FormKey: 0E95B9:Requiem.esp
+EditorID: REQ_Forge_Ench_Arrow_Glass_Fire
+Items:
+- Item:
+    Item: 0139BE:Skyrim.esm
+    Count: 30
+- Item:
+    Item: 03AD5E:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB411:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 0E9589:Requiem.esp
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 30

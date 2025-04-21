@@ -1,0 +1,27 @@
+FormKey: 01DF9A:Dragonborn.esm
+EditorID: REQ_Shout_Thuum_DragonAspect3_Head
+Name:
+  TargetLanguage: English
+  Value: Dragon Aspect - Head
+MenuDisplayObject: 03D58F:Dragonborn.esm
+Keywords:
+- 046B99:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- PowerAffectsDuration
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: ShoutRecoveryMult
+DualCastScale: 1
+Sounds:
+- Type: OnHit
+  Sound: 01702E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The Voice can be used <mag>% more often for <dur> seconds.

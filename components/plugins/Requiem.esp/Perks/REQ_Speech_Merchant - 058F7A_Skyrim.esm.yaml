@@ -1,0 +1,36 @@
+FormKey: 058F7A:Skyrim.esm
+EditorID: REQ_Speech_Merchant
+Name:
+  TargetLanguage: English
+  Value: Merchant
+Description:
+  TargetLanguage: English
+  Value: Your trading skills are good enough to sell almost anything to any merchant willing to trade with you, <br> and you can invest some of your gold with a shopkeeper to increase his available gold permanently.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE128:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Speech
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 100
+  EntryPoint: ModSellPrices
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.15
+- MutagenObjectType: PerkQuestEffect
+  Priority: 1
+  Quest: 0ABD94:Skyrim.esm
+  Stage: 10
+  Unknown: 0x000000
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 0AF66A:Skyrim.esm

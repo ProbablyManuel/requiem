@@ -1,0 +1,88 @@
+FormKey: 016A02:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeTempleoftheDivines
+Version2: 4
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Temple of the Divines
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00393531'
+  DirectionalColor: '#002E3443'
+  FogNearColor: '#008A8366'
+  FogFar: 6000
+  FogClipDistance: 6000
+  FogPower: 0.8
+  AmbientColors:
+    DirectionalXPlus: '#00594B3B'
+    DirectionalXMinus: '#00484B36'
+    DirectionalYPlus: '#00514E39'
+    DirectionalYMinus: '#00514739'
+    DirectionalZPlus: '#00262319'
+    DirectionalZMinus: '#007B7258'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00203151'
+  FogMax: 0.6
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+LightingTemplate: 03128C:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0200A3:Skyrim.esm
+Owner: 0C13FD:Skyrim.esm
+AcousticSpace: 10F90D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 02EDEB:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0CE01F:Skyrim.esm
+  Base: 0C2A04:Skyrim.esm
+  LocationReference: 0200A3:Skyrim.esm
+  Placement:
+    Position: 2658.5366, 1243.4523, 0.69275665
+    Rotation: 0, -0, 1.6057029
+- MutagenObjectType: PlacedObject
+  FormKey: 1E8865:Requiem.esp
+  Base: 0C5891:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Placement:
+    Position: 2514.771, 1218.9154, -15.999985
+    Rotation: 0, -0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 0CE020:Skyrim.esm
+  Base: 0B9BD6:Skyrim.esm
+  LocationReference: 0200A3:Skyrim.esm
+  Placement:
+    Position: 2460.0886, 1132.5399, 0.925767
+    Rotation: 0.031162882, -0.019290576, 3.9149532
+- MutagenObjectType: PlacedObject
+  FormKey: 1E8867:Requiem.esp
+  Base: 0BE1A4:Skyrim.esm
+  Placement:
+    Position: 2500.5352, 1191.5896, 39.47901
+    Rotation: -0.0011943822, 0.20292196, 0.0039514843
+- MutagenObjectType: PlacedObject
+  FormKey: 1E886B:Requiem.esp
+  Base: 0BE213:Skyrim.esm
+  Placement:
+    Position: 2517.9268, 1192.6267, 44.30118
+    Rotation: 0.0006389468, 0.21201703, 0.004671243
+- MutagenObjectType: PlacedObject
+  FormKey: 1E8869:Requiem.esp
+  Base: 0BE1A4:Skyrim.esm
+  Placement:
+    Position: 2497.487, 1254.0457, 38.89042
+    Rotation: -0.00034890955, 0.20811471, 3.104327
+MajorFlags:
+- 0x40000

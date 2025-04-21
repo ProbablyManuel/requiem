@@ -1,0 +1,25 @@
+FormKey: 03EB1D:Skyrim.esm
+EditorID: REQ_Alch_FortifySmithing
+Name:
+  TargetLanguage: English
+  Value: Fortify Smithing
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A22:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Smithing
+  Association: 065A22:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Smithing skill is <mag> higher for <dur> seconds.

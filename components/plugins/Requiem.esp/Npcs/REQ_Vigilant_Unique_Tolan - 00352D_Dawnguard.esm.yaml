@@ -1,0 +1,323 @@
+FormKey: 00352D:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Vigilant_Unique_Tolan
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  MagickaOffset: 100
+  StaminaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 28
+  SpeedMultiplier: 110
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - SpellList
+  - Inventory
+  - DefPackList
+  HealthOffset: 100
+Factions:
+- Faction: 02816B:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0B3292:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 003375:Dawnguard.esm
+  Fluff: 0x000000
+Voice: 013AE6:Skyrim.esm
+Template: ADDDD4:Requiem.esp
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 034C38:Skyrim.esm
+- 04D3F2:Skyrim.esm
+- 93D530:Requiem.esp
+Perks:
+- Perk: 03AF84:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D51:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D52:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05312A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F61:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F67:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F68:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F69:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058F6F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F594:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079346:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07934A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079355:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 07935E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABE8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BABED:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCCAE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0BCD2B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E96:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB407:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 103ADA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F1C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 00BBFE:unofficial skyrim special edition patch.esp
+    Count: 1
+- Item:
+    Item: 39E7BB:Requiem.esp
+    Count: 1
+- Item:
+    Item: 39E7BA:Requiem.esp
+    Count: 1
+- Item:
+    Item: 10BFF1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03A16A:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 01D4EC:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Mood: Sad
+  Assistance: HelpsAllies
+Packages:
+- 01A3D1:Dawnguard.esm
+Keywords:
+- 06F6FB:Skyrim.esm
+Class: ADDDDC:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Vigilant Tolan
+ShortName:
+  TargetLanguage: English
+  Value: Tolan
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 64
+  - Key: Archery
+    Value: 55
+  - Key: Block
+    Value: 60
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 60
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 22
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 301
+  Magicka: 180
+  Stamina: 254
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x663FEF
+HeadParts:
+- 08555F:Skyrim.esm
+- 099D7F:Skyrim.esm
+- 0C7170:Skyrim.esm
+- 0D2EBE:Skyrim.esm
+- 0E7AED:Skyrim.esm
+HairColor: 0A042D:Skyrim.esm
+CombatStyle: 068849:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 20
+SoundLevel: Normal
+DefaultOutfit: 0B3290:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+CrimeFaction: 02816B:Skyrim.esm
+HeadTexture: 0D071D:Skyrim.esm
+TextureLighting: '#00B79C91'
+FaceMorph:
+  NoseLongVsShort: -1
+  NoseUpVsDown: 1
+  JawUpVsDown: -0.18
+  JawNarrowVsWide: -0.38
+  JawForwardVsBack: 0.32
+  CheeksUpVsDown: -0.2
+  CheeksForwardVsBack: -0.2
+  EyesUpVsDown: 1
+  EyesInVsOut: 0.16
+  BrowsUpVsDown: 0.3
+  BrowsInVsOut: -0.6
+  BrowsForwardVsBack: 0.1
+  LipsUpVsDown: 0.1
+  LipsInVsOut: -1
+  ChinNarrowVsWide: 0.46
+  ChinUpVsDown: 0.48
+  EyesForwardVsBack: -0.2
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 10
+  Unknown: 4294967295
+  Eyes: 15
+  Mouth: 20
+TintLayers:
+- Index: 1
+  Color: '#00B79C91'
+  InterpolationValue: 1
+  Preset: 76
+- Index: 21
+  Color: '#00240000'
+  InterpolationValue: 0
+  Preset: 159
+- Index: 22
+  Color: '#00240000'
+  InterpolationValue: 0
+  Preset: 183
+- Index: 23
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 342
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 587
+- Index: 37
+  Color: '#00240000'
+  InterpolationValue: 0
+  Preset: 207
+- Index: 38
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 222
+- Index: 39
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 246
+- Index: 40
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 270
+- Index: 41
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 294
+- Index: 42
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 318
+- Index: 43
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 366
+MajorFlags:
+- 0x40000

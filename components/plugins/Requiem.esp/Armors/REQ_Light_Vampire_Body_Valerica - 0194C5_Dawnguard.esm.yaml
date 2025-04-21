@@ -1,0 +1,42 @@
+FormKey: 0194C5:Dawnguard.esm
+EditorID: REQ_Light_Vampire_Body_Valerica
+ObjectBounds:
+  First: -23, -35, 0
+  Second: 23, 34, 20
+Name:
+  TargetLanguage: English
+  Value: Vampire Royal Cuirass
+ObjectEffect: 10E318:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: DLC01\Clothes\Vampire\VampireRobesGND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: DLC01\Clothes\Vampire\VampireRobesFGND.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: robe_GND:0
+        NewTexture: 0194C3:Dawnguard.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- AD394F:Requiem.esp
+- 01463E:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 0194C4:Dawnguard.esm
+Value: 600
+Weight: 7
+ArmorRating: 200

@@ -1,0 +1,42 @@
+FormKey: 00083B:ccbgssse059-ba_dragonplate.esl
+EditorID: REQ_NULL_ccBGSSSE059_ArmorBladesCuirassEnchanted
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 90
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 000824:ccbgssse059-ba_dragonplate.esl
+Name:
+  TargetLanguage: English
+  Value: Dragonbone Mail
+ObjectEffect: 000866:ccbgssse059-ba_dragonplate.esl
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE059\Armor\DragonboneMail\DragonboneMailTorsoGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBD5:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 000804:ccbgssse059-ba_dragonplate.esl
+Value: 2200
+Weight: 50
+ArmorRating: 48

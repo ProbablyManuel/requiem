@@ -1,0 +1,230 @@
+FormKey: 0131FB:Skyrim.esm
+EditorID: HagravenRace
+Name:
+  TargetLanguage: English
+  Value: Hagraven
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 3888DF:Requiem.esp
+Skin: 097243:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 586728:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 301
+- Key: Magicka
+  Value: 150
+- Key: Stamina
+  Value: 50
+BaseCarryWeight: 200
+BaseMass: 1.5
+AccelerationRate: 2
+DecelerationRate: 2
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 5
+- Key: Stamina
+  Value: 5
+UnarmedDamage: 40
+UnarmedReach: 73
+BodyBipedObject: Head
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Hagraven\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Hagraven\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F22C:Skyrim.esm
+  Female: 01F22C:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B877F:Skyrim.esm
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_L
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B877F:Skyrim.esm
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_R
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 097242:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Hagraven\HagravenProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Hagraven\HagravenProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 01F272:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+- Spell
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x2000000
+- 0x4000000
+- 0x8000000
+- 0x10000000
+- 0x20000000
+- 0x40000000
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F44:Skyrim.esm
+FaceFxPhonemes:
+  ForceNames: True
+  Aah_LipBigAah:
+    Name: LipBigAah
+    EH: 0.5
+    AA: 1
+    AW: 0.5
+    AH: 0.5
+    AO: 0.5
+    OW: 0.5
+    UH: 0.5
+    UW: 0.5
+    HH: 0.5
+    FLAP: 0.5
+  BigAah_LipDST:
+    Name: LipDST
+    S: 1
+    Z: 0.5
+    ZH: 0.5
+    DH: 1
+    M: 0.5
+    N: 0.5
+    B: 0.5
+    D: 1
+    JH: 0.5
+    P: 0.5
+    T: 1
+    CH: 0.5
+    SIL: 0.5
+  BMP_LipEee:
+    Name: LipEee
+    IY: 0.5
+    IH: 1
+    EY: 0.5
+    AE: 0.5
+    AY: 1
+    OY: 1
+    NG: 0.5
+    Y: 0.5
+    SHOTSIL: 0.5
+  ChJSh_LipFV:
+    Name: LipFV
+    F: 1
+    V: 1
+  DST_LipK:
+    Name: LipK
+    AX: 1
+    G: 0.5
+    K: 1
+  Eee_LipL:
+    Name: LipL
+    L: 1
+  Eh_LipR:
+    Name: LipR
+    UW: 1
+    ER: 1
+    SH: 0.5
+    R: 1
+    W: 0.5
+  FV_LipTh:
+    Name: LipTh
+    TH: 1
+BaseMovementDefaultWalk: 097241:Skyrim.esm
+BaseMovementDefaultRun: 097241:Skyrim.esm

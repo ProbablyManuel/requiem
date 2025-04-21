@@ -1,0 +1,19 @@
+FormKey: AE368E:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Elven_Tanto
+Items:
+- Item:
+    Item: ADDE7C:Requiem.esp
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDE7C:Requiem.esp
+CreatedObject: 05AD9F:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,33 @@
+FormKey: 42936E:Requiem.esp
+EditorID: REQ_Illusion3_ShadowStride_DamageMagicka
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka
+MenuDisplayObject: 109AC3:Skyrim.esm
+Flags:
+- Detrimental
+- NoArea
+- PowerAffectsDuration
+- Painless
+BaseCost: 75
+MagicSkill: Illusion
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+CastingArt: 0510CF:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 058E0E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: 'Upkeep cost: <mag>.'

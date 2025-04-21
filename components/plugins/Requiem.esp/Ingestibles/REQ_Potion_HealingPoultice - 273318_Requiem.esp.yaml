@@ -1,0 +1,50 @@
+FormKey: 273318:Requiem.esp
+EditorID: REQ_Potion_HealingPoultice
+ObjectBounds:
+  First: -3, -2, 2
+  Second: 3, 3, 24
+Name:
+  TargetLanguage: English
+  Value: Healing Poultice
+Keywords:
+- 08CDEC:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Mead01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 4
+Flags:
+- NoAutoCalc
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 273319:Requiem.esp
+  Data:
+    Magnitude: 50
+    Area: 15
+    Duration: 1200
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSprintingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData
+- BaseEffect: 333FB9:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1200
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSprintingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData

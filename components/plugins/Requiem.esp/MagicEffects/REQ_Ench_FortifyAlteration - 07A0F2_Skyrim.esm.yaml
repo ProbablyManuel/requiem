@@ -1,0 +1,23 @@
+FormKey: 07A0F2:Skyrim.esm
+EditorID: REQ_Ench_FortifyAlteration
+Name:
+  TargetLanguage: English
+  Value: Fortify Alteration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F5B:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 21
+EnchantShader: 092DED:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: AlterationModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Alteration spells cost <mag>% less.

@@ -1,0 +1,241 @@
+FormKey: 0D66FE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Cairine
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0F8122:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 22
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 02816C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028178:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0656E6:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AE5:Skyrim.esm
+Race: 013741:Skyrim.esm
+Items:
+- Item:
+    Item: 01397E:Skyrim.esm
+    Count: 1
+AIData:
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Packages:
+- 0D6706:Skyrim.esm
+- 01E61A:Skyrim.esm
+- 01E619:Skyrim.esm
+- 01E618:Skyrim.esm
+- 01B210:Skyrim.esm
+- 0D6700:Skyrim.esm
+Class: 01326B:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Cairine
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 29
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 29
+  - Key: Block
+    Value: 29
+  - Key: Smithing
+    Value: 29
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 29
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 29
+  - Key: Alchemy
+    Value: 10
+  - Key: Speech
+    Value: 34
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 20
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 10
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 160
+  Magicka: 130
+  Stamina: 115
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 0E4DA1:Skyrim.esm
+- 0EAA70:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0432:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 028B60:Skyrim.esm
+CrimeFaction: 02816C:Skyrim.esm
+TextureLighting: '#00B9B3AA'
+FaceMorph:
+  JawUpVsDown: -0.5
+  JawNarrowVsWide: -0.2
+  CheeksForwardVsBack: -0.5
+  EyesUpVsDown: -0.3
+  EyesInVsOut: -0.2
+  BrowsUpVsDown: -1
+  BrowsInVsOut: -1
+  LipsUpVsDown: 0.3
+  LipsInVsOut: -1
+  ChinNarrowVsWide: 0.5
+  ChinUpVsDown: -0.2
+  ChinUnderbiteVsOverbite: -0.28
+  EyesForwardVsBack: -0.3
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 4
+  Unknown: 4294967295
+  Eyes: 9
+  Mouth: 9
+TintLayers:
+- Index: 16
+  Color: '#00B9B3AA'
+  InterpolationValue: 1
+  Preset: 651
+- Index: 23
+  Color: '#00430401'
+  InterpolationValue: 0.42
+  Preset: 705
+- Index: 40
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 733
+- Index: 41
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 757
+- Index: 42
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 781
+- Index: 43
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 805
+- Index: 44
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 829
+- Index: 45
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 853
+- Index: 46
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 877
+- Index: 47
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 901
+- Index: 48
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 925
+- Index: 49
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 949
+- Index: 51
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 973
+- Index: 52
+  Color: '#00573400'
+  InterpolationValue: 1
+  Preset: 1016
+- Index: 53
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1021
+- Index: 54
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1045
+- Index: 55
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1069
+MajorFlags:
+- 0x40000

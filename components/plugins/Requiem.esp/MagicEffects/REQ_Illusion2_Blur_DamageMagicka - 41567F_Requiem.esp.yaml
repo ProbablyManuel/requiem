@@ -1,0 +1,26 @@
+FormKey: 41567F:Requiem.esp
+EditorID: REQ_Illusion2_Blur_DamageMagicka
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka
+Flags:
+- Detrimental
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 25
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+DualCastScale: 1
+PerkToApply: 3F537A:Requiem.esp
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 'Upkeep cost: <mag>.'
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 415680:Requiem.esp

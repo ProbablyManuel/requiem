@@ -1,0 +1,60 @@
+FormKey: 1019AE:Skyrim.esm
+EditorID: REQ_Scroll_TGDetectLife
+Version2: 8
+ObjectBounds:
+  First: -13, -6, -3
+  Second: 13, 6, 3
+Name:
+  TargetLanguage: English
+  Value: Scroll of Detect Life
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster detects all nearby living beings and can sense them even through walls. Soulless beings like Daedra will not be revealed.
+Model:
+  File: Clutter\Common\Scroll06.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 500
+Weight: 0.5
+BaseCost: 156
+Flags:
+- AreaEffectIgnoresLOS
+CastType: Concentration
+Effects:
+- BaseEffect: 1019D8:Skyrim.esm
+  Data:
+    Area: 200
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+- BaseEffect: 1019D9:Skyrim.esm
+  Data:
+    Area: 100
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+- BaseEffect: 1019DA:Skyrim.esm
+  Data:
+    Area: 200
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+- BaseEffect: 1019DB:Skyrim.esm
+  Data:
+    Area: 100
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData

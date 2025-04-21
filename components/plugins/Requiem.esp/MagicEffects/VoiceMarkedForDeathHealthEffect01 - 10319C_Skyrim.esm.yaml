@@ -1,0 +1,32 @@
+FormKey: 10319C:Skyrim.esm
+EditorID: VoiceMarkedForDeathHealthEffect01
+Name:
+  TargetLanguage: English
+  Value: Marked for Death
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+TaperWeight: 1
+HitShader: 05D607:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+Projectile: 013DF4:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 015C7B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 0A0F52:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The Thu'um makes the target decay rapidly, dealing <mag> unresistable damage for <dur> seconds.

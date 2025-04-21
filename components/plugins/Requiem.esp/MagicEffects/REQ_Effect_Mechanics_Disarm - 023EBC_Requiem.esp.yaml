@@ -1,0 +1,27 @@
+FormKey: 023EBC:Requiem.esp
+EditorID: REQ_Effect_Mechanics_Disarm
+Name:
+  TargetLanguage: English
+  Value: Disarm
+MenuDisplayObject: 0A59AC:Skyrim.esm
+Flags:
+- FXPersist
+- PowerAffectsMagnitude
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Disarm
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 05194B:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm

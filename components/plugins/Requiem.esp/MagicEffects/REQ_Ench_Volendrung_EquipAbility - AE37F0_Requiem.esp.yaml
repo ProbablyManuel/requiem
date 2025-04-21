@@ -1,0 +1,22 @@
+FormKey: AE37F0:Requiem.esp
+EditorID: REQ_Ench_Volendrung_EquipAbility
+Name:
+  TargetLanguage: English
+  Value: Volendrung Equip Ability
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+EquipAbility: AE37F1:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

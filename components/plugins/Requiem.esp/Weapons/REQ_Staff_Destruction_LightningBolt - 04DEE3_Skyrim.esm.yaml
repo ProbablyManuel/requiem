@@ -1,0 +1,49 @@
+FormKey: 04DEE3:Skyrim.esm
+EditorID: REQ_Staff_Destruction_LightningBolt
+ObjectBounds:
+  First: -6, -69, -2
+  Second: 6, 64, 2
+Name:
+  TargetLanguage: English
+  Value: Staff of Lightning Bolts
+Model:
+  File: Weapons\DragonPriest\DragonPriestStaff3rd.nif
+  Data: 0x020000000200000000000000BCF2340F6464730003AD90D17470EA8C6464730003AD90D1
+ObjectEffect: 04DED9:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E716:Skyrim.esm
+- 0937A4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+FirstPersonModel: 01C200:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03DE2C:Skyrim.esm
+UnequipSound: 03DE2D:Skyrim.esm
+BasicStats:
+  Value: 5
+  Weight: 8
+Data:
+  AnimationType: Staff
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Destruction
+Critical:
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 0BE11F:Skyrim.esm

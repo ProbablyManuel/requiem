@@ -1,0 +1,73 @@
+FormKey: 0FB404:Skyrim.esm
+EditorID: REQ_Ench_HalldirsStaff_SoulTrap
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoultrapfxscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetFXS
+      Object: 054223:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0531B1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterFXS
+      Object: 054224:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 054225:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapSoundFX
+      Object: 056AC6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0531AF:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bIsEnchantmentEffect
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Halldir's Soul Trap
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+SpellmakingArea: 15
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: SoulTrap
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03F37B:Skyrim.esm
+- Type: Ready
+  Sound: 03F37D:Skyrim.esm
+- Type: Release
+  Sound: 03F37C:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Makes the target vulnerable to soul gems for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsEssentialConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

@@ -1,0 +1,43 @@
+FormKey: 5BA754:Requiem.esp
+EditorID: REQ_Illusion5_PhantasmalMiasma
+Name:
+  TargetLanguage: English
+  Value: Phantasmal Miasma
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 300
+Flags:
+- ManualCostCalc
+ChargeTime: 0.3
+CastType: FireAndForget
+HalfCostPerk: 0C44C6:Skyrim.esm
+Effects:
+- BaseEffect: 5BCEF3:Requiem.esp
+  Data:
+    Duration: 2
+- BaseEffect: 5B7FB1:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Magicka
+    ComparisonValue: 1
+- BaseEffect: 5B7FB6:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 86400
+- BaseEffect: 5B7FB5:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 86400
+- BaseEffect: 5D3377:Requiem.esp
+  Data:
+    Magnitude: 5
+    Duration: 86400

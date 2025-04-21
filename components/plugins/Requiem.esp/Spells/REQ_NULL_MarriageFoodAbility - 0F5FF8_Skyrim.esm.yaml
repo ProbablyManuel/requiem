@@ -1,0 +1,28 @@
+FormKey: 0F5FF8:Skyrim.esm
+EditorID: REQ_NULL_MarriageFoodAbility
+Name:
+  TargetLanguage: English
+  Value: Homecooked Meal
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 195
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+CastType: FireAndForget
+Effects:
+- BaseEffect: 10E72F:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 600
+- BaseEffect: 10E730:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 600
+- BaseEffect: 10E731:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 600

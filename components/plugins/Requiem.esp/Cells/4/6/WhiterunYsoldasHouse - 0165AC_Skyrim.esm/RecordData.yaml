@@ -1,0 +1,73 @@
+FormKey: 0165AC:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunYsoldasHouse
+Version2: 3
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ysolda's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 1200
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000F0D0C'
+    DirectionalXMinus: '#000C0D0B'
+    DirectionalYPlus: '#000E0D0C'
+    DirectionalYMinus: '#000E0C0C'
+    DirectionalZPlus: '#00060605'
+    DirectionalZMinus: '#00151312'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - ClipDistance
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F881:Skyrim.esm
+Owner: 093B24:Skyrim.esm
+LockList: 093B04:Skyrim.esm
+SkyAndWeatherFromRegion: 070408:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 016677:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 5
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 024E26:Skyrim.esm
+  TeleportDestination:
+    Door: 01A6FE:Skyrim.esm
+    Position: 24757.912, -9727.534, -3363.334
+    Rotation: 0, -0, -0.7583828
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 093B13:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0C8FA5:Skyrim.esm
+    TeleportMarkerTriangle: 6
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  Owner: 093B24:Skyrim.esm
+  LocationReference: 01F881:Skyrim.esm
+  Placement:
+    Position: 8.071624, -364.23373, 148.21039
+    Rotation: 0, -0, 1.5707964
+MajorFlags:
+- 0x40000

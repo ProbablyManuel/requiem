@@ -1,0 +1,71 @@
+FormKey: 020436:Skyrim.esm
+Version2: 12
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__00020436
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDBSideContract03
+      Object: 01EA5F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGold
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DarkBrotherhoodQuest
+      Object: 01EA5C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LvlQuestReward01Small
+      Object: 0C0404:Skyrim.esm
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__00020436
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__00020436
+      FragmentName: Fragment_1
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__00020436
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: "Of course she is. I hear the mining business is extremely cutthroat. And those hours... they're murder. "
+  ScriptNotes: ''
+  Edits: ''
+- Emotion: Happy
+  EmotionValue: 50
+  ResponseNumber: 2
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: I could do this all day. Here's your payment.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerIdleAnimation: 0B5E20:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 01EA5F:Skyrim.esm
+  ComparisonValue: 20
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01C3AB:Skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: Beitild is dead.

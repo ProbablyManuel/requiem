@@ -1,0 +1,24 @@
+FormKey: AE3850:Requiem.esp
+EditorID: REQ_Ench_AetheriumShield
+Name:
+  TargetLanguage: English
+  Value: Aetherium Shield Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE37D1:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Stamina
+    ComparisonValue: 1
+- BaseEffect: AE3851:Requiem.esp
+  Data: {}

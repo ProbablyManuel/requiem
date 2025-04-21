@@ -1,0 +1,30 @@
+FormKey: 045F9D:Skyrim.esm
+EditorID: REQ_Destruction3_ChainLightning
+Name:
+  TargetLanguage: English
+  Value: Lightning Shackles
+MenuDisplayObject: 09FA64:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 156
+Flags:
+- ManualCostCalc
+ChargeTime: 0.3
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44C0:Skyrim.esm
+Effects:
+- BaseEffect: 05DBAE:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Area: 20
+- BaseEffect: 0153D3:Skyrim.esm
+  Data:
+    Magnitude: 0.25
+- BaseEffect: 045C56:Requiem.esp
+  Data:
+    Magnitude: 25
+    Area: 20
+    Duration: 1

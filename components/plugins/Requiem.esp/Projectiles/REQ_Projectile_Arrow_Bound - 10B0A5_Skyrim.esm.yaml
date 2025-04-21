@@ -1,0 +1,41 @@
+FormKey: 10B0A5:Skyrim.esm
+EditorID: REQ_Projectile_Arrow_Bound
+ObjectBounds:
+  First: -4, -299, -9
+  Second: 4, 0, 9
+Name:
+  TargetLanguage: English
+  Value: Bound Arrow
+Model:
+  File: Weapons\BoundWeapons\BoundArrowFlight.nif
+  Data: 0x0200000005000000010000001FFA61EC646473005E9AFF4239F41B07646473005E9AFF42CACCFA8B6464730038973CEAF63890AC64647300262C333B83A5129E646473005E9AFF4263000000
+Destructible:
+  Data:
+    Health: 20
+    DESTCount: 2
+  Stages:
+  - Data:
+      HealthPercent: 100
+      Flags:
+      - CapDamage
+      SelfDamagePerSecond: 1
+  - Data:
+      Index: 1
+      ModelDamageStage: 1
+      Flags:
+      - Disable
+      - Destroy
+      SelfDamagePerSecond: 1
+Flags:
+- CanBeDisabled
+Type: Arrow
+Speed: 3600
+Range: 60000
+Explosion: 05DBAD:Skyrim.esm
+Sound: 03F2B4:Skyrim.esm
+FadeDuration: 5
+ImpactForce: 1.5
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 2

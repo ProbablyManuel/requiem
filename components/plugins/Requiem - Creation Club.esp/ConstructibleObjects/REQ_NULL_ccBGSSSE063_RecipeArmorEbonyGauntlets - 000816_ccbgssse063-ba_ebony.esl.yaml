@@ -1,0 +1,23 @@
+FormKey: 000816:ccbgssse063-ba_ebony.esl
+EditorID: REQ_NULL_ccBGSSSE063_RecipeArmorEbonyGauntlets
+Items:
+- Item:
+    Item: 05AD9D:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 000840:ccbgssse063-ba_ebony.esl
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB412:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 000802:ccbgssse063-ba_ebony.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

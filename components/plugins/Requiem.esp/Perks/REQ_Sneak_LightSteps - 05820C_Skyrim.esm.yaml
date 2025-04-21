@@ -1,0 +1,22 @@
+FormKey: 05820C:Skyrim.esm
+EditorID: REQ_Sneak_LightSteps
+Name:
+  TargetLanguage: English
+  Value: Light Steps
+Description:
+  TargetLanguage: English
+  Value: By distributing your weight more consciously,<br>you're able to avoid triggering pressure plates or similar mechanisms.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058213:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Sneak
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True

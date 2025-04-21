@@ -1,0 +1,26 @@
+FormKey: 064B3E:Skyrim.esm
+EditorID: REQ_Food_Vegan_LeekCooked
+ObjectBounds:
+  First: -12, -3, -1
+  Second: 15, 5, 2
+Name:
+  TargetLanguage: English
+  Value: Grilled Leeks
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\GrilledLeeks01.nif
+  Data: 0x020000000400000000000000252206E864647300134C1EFAC174BAAA64647300134C1EFA921910EE64647300B91482368CA335B064647300B9148236
+Weight: 0.1
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1800
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

@@ -1,0 +1,58 @@
+FormKey: 755649:Requiem.esp
+EditorID: RFTI_All_Stress_MassEffect
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Mass Effect'
+Description:
+  TargetLanguage: English
+  Value: >-
+    untrained power attack penalties in heavy armor
+
+    mass scaled impact force for bull rush
+
+    mass-scaled falling damage
+
+    base effects from mass effect
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 30
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 769328:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  ActorValue: Infamy
+  Value: 1
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 20
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 058F6F:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPowerAttackStamina
+  PerkConditionTabCount: 2
+  ActorValue: Infamy
+  Value: 1
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 10
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
+  ActorValue: Infamy
+  Value: 1
+  Modification: MultiplyOnePlusAVMult

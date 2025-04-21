@@ -1,0 +1,247 @@
+FormKey: 0B9980:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HirelingMarcurio
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - Protected
+  MagickaOffset: 100
+  Level:
+    MutagenObjectType: PcLevelMult
+    LevelMult: 1
+  CalcMinLevel: 10
+  CalcMaxLevel: 40
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 50
+Factions:
+- Faction: 019809:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 028186:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 0BCC9A:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0BD738:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 103368:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD2:Skyrim.esm
+Race: 013744:Skyrim.esm
+ActorEffect:
+- 072316:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231C:Skyrim.esm
+- 0BB96B:Skyrim.esm
+- 0C969B:Skyrim.esm
+- 0C96A2:Skyrim.esm
+- 0F95EB:Skyrim.esm
+- 101066:Skyrim.esm
+Perks:
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F5:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058200:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B76:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B77:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 0571A1:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: PropertyCrimeOnly
+  Assistance: HelpsAllies
+Packages:
+- 0B9987:Skyrim.esm
+Keywords:
+- 0B997E:Skyrim.esm
+Class: 01E7D0:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Marcurio
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 10
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 10
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 18
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 18
+  - Key: Conjuration
+    Value: 12
+  - Key: Destruction
+    Value: 29
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 35
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 170
+  Magicka: 235
+  Stamina: 105
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 02424F:Skyrim.esm
+- 05107F:Skyrim.esm
+- 05140A:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C3CDA:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+DefaultOutfit: 0D3E06:Skyrim.esm
+CrimeFaction: 103368:Skyrim.esm
+TextureLighting: '#00706156'
+FaceMorph:
+  NoseLongVsShort: -0.4
+  NoseUpVsDown: -0.5
+  JawUpVsDown: -0.3
+  JawNarrowVsWide: -0.3
+  JawForwardVsBack: 0.5
+  CheeksUpVsDown: 0.6
+  CheeksForwardVsBack: 0.8
+  EyesUpVsDown: -0.64
+  EyesInVsOut: -0.4
+  BrowsUpVsDown: -0.94
+  BrowsInVsOut: -0.7
+  BrowsForwardVsBack: 0.2
+  LipsUpVsDown: 0.18
+  ChinNarrowVsWide: 0.5
+  ChinUpVsDown: 0.64
+  ChinUnderbiteVsOverbite: 0.26
+  EyesForwardVsBack: 0.06
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 13
+  Unknown: 4294967295
+  Eyes: 11
+  Mouth: 11
+TintLayers:
+- Index: 1
+  Color: '#00706156'
+  InterpolationValue: 1
+  Preset: 65
+- Index: 2
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 71
+- Index: 6
+  Color: '#00212B52'
+  InterpolationValue: 0.35
+  Preset: 98
+- Index: 11
+  Color: '#00212B52'
+  InterpolationValue: 0.35
+  Preset: 126
+- Index: 14
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 134
+MajorFlags:
+- 0x40000

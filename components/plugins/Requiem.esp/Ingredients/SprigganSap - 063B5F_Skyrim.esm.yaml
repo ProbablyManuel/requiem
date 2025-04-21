@@ -1,0 +1,37 @@
+FormKey: 063B5F:Skyrim.esm
+EditorID: SprigganSap
+Version2: 1
+ObjectBounds:
+  First: -6, -6, -2
+  Second: 6, 6, 2
+Name:
+  TargetLanguage: English
+  Value: Spriggan Sap
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Sap.nif
+  Data: 0x0200000006000000000000008E5603C464647300604DDD5CC38821B064647300604DDD5CF885C63F64647300604DDD5C182E9ED664647300604DDD5CBC9642AF64647300604DDD5C0053B1F364647300262C333B
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 50
+Weight: 0.2
+IngredientValue: 50
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 03EB27:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB28:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB24:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

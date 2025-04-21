@@ -1,0 +1,48 @@
+FormKey: AD8C8D:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_Dawnguard
+Name:
+  TargetLanguage: English
+  Value: Dawnguard Heavy Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: AD8C74:Requiem.esp
+  Data:
+    Magnitude: 21
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 012CCD:Dawnguard.esm
+    ComparisonValue: 1
+- BaseEffect: AD8C74:Requiem.esp
+  Data:
+    Magnitude: 42
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 012CCD:Dawnguard.esm
+    ComparisonValue: 2
+- BaseEffect: AD8C74:Requiem.esp
+  Data:
+    Magnitude: 63
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 012CCD:Dawnguard.esm
+    ComparisonValue: 3
+- BaseEffect: AD8C74:Requiem.esp
+  Data:
+    Magnitude: 84
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 012CCD:Dawnguard.esm
+    ComparisonValue: 4

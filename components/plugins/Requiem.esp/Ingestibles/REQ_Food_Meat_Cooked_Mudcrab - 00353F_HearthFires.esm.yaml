@@ -1,0 +1,27 @@
+FormKey: 00353F:HearthFires.esm
+EditorID: REQ_Food_Meat_Cooked_Mudcrab
+ObjectBounds:
+  First: -17, -17, 0
+  Second: 17, 16, 6
+Name:
+  TargetLanguage: English
+  Value: Steamed Mudcrab Legs
+Keywords:
+- 08CDEA:Skyrim.esm
+- AE3728:Requiem.esp
+Model:
+  File: _BYOH\Clutter\Food\MudcrabLegsCooked01.nif
+  Data: 0x020000000000000000000000
+Weight: 1
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1200
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

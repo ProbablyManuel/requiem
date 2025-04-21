@@ -1,0 +1,33 @@
+FormKey: 482637:Requiem.esp
+EditorID: REQ_Illusion_PhantasmalPain_DrainHealth
+Name:
+  TargetLanguage: English
+  Value: Drain Health
+Keywords:
+- 0A9B1F:Skyrim.esm
+- 482636:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoHitEvent
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 2
+MagicSkill: Illusion
+TaperWeight: 1
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+  Association: 482636:Requiem.esp
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The caster evokes terrible pain in the target and causes him to believe he has suffered a serious wound, reducing his health by <mag> for up to <dur> seconds.

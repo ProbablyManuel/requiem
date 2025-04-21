@@ -1,0 +1,16 @@
+FormKey: AE3791:Requiem.esp
+EditorID: REQ_Crafting_Hevnoraak
+Items:
+- Item:
+    Item: AE3931:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: AE3931:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: 061CC1:Skyrim.esm
+WorkbenchKeyword: AE378B:Requiem.esp
+CreatedObjectCount: 1

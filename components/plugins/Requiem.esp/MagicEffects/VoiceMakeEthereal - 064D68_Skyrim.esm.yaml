@@ -1,0 +1,51 @@
+FormKey: 064D68:Skyrim.esm
+EditorID: VoiceMakeEthereal
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicImodScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 064D69:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 064D69:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStaticDelay
+      Data: 0.15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StaticFX
+      Object: 05E93D:Skyrim.esm
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.33
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FadeToAlpha
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Ethereal
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- NoMagnitude
+- NoArea
+- FXPersist
+TaperWeight: 1
+HitShader: 064D67:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Etherealize
+CastType: FireAndForget
+DualCastScale: 1
+ImageSpaceModifier: 0440D4:Skyrim.esm
+Sounds:
+- Type: Release
+  Sound: 09CE58:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: You become invulnerable, but unable to attack. However you recover magicka and stamina.

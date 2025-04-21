@@ -1,0 +1,22 @@
+FormKey: 003F52:Dawnguard.esm
+EditorID: REQ_Restoration2_SunFire
+Name:
+  TargetLanguage: English
+  Value: Sunfire
+MenuDisplayObject: 018F02:Dawnguard.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 75
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+ChargeTime: 0.4
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44C7:Skyrim.esm
+Effects:
+- BaseEffect: 003F50:Dawnguard.esm
+  Data:
+    Magnitude: 50

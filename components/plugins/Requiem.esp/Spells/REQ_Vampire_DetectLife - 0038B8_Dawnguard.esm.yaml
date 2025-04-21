@@ -1,0 +1,27 @@
+FormKey: 0038B8:Dawnguard.esm
+EditorID: REQ_Vampire_DetectLife
+Name:
+  TargetLanguage: English
+  Value: Vampiric Vision
+MenuDisplayObject: 104F70:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Sends out a quick pulse that detects any creature.
+BaseCost: 5
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+Type: LesserPower
+CastType: FireAndForget
+Effects:
+- BaseEffect: 010A80:Dawnguard.esm
+  Data:
+    Magnitude: 10
+    Area: 200
+    Duration: 2
+- BaseEffect: 010A7F:Dawnguard.esm
+  Data:
+    Magnitude: 20
+    Area: 100
+    Duration: 2

@@ -1,0 +1,20 @@
+FormKey: 01F331:Requiem.esp
+EditorID: REQ_Ench_Konahrik_Healing_RestoreHealth
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoArea
+- PowerAffectsMagnitude
+HitShader: 012FD9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+HitEffectArt: 03F1B4:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Restores <mag> health for <dur> seconds.

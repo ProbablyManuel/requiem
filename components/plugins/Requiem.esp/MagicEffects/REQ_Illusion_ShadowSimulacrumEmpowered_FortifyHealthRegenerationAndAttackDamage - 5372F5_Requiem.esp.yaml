@@ -1,0 +1,41 @@
+FormKey: 5372F5:Requiem.esp
+EditorID: REQ_Illusion_ShadowSimulacrumEmpowered_FortifyHealthRegenerationAndAttackDamage
+Name:
+  TargetLanguage: English
+  Value: Fortify Health Regeneration and Attack Damage
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Recover
+- HideInUI
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: HealRateMult
+  Type: DualValueModifier
+Projectile: 025458:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: AttackDamageMult
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: passive health regeneration and attack damage boni for summoned Simulacrum
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5372F5:Requiem.esp

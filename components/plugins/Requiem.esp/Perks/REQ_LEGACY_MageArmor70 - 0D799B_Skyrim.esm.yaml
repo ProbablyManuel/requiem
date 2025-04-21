@@ -1,0 +1,19 @@
+FormKey: 0D799B:Skyrim.esm
+EditorID: REQ_LEGACY_MageArmor70
+Description:
+  TargetLanguage: English
+  Value: Protection spells like Stoneflesh are three times as strong if not wearing armor.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0D799A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Alteration
+  ComparisonValue: 70
+NumRanks: 1
+Playable: True

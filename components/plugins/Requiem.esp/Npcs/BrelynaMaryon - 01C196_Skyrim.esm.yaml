@@ -1,0 +1,267 @@
+FormKey: 01C196:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BrelynaMaryon
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - Unique
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  CalcMinLevel: 6
+  CalcMaxLevel: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 019809:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 01F259:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02816F:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+Voice: 013ADC:Skyrim.esm
+Race: 013742:Skyrim.esm
+ActorEffect:
+- 034C38:Skyrim.esm
+- 072317:Skyrim.esm
+- 072319:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231B:Skyrim.esm
+- 07231C:Skyrim.esm
+- 0BB969:Skyrim.esm
+- 0C969A:Skyrim.esm
+- 0C969B:Skyrim.esm
+- 100E75:Skyrim.esm
+- 100E76:Skyrim.esm
+- 100E77:Skyrim.esm
+Perks:
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581E7:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB419:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B76:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 270B77:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01ACD5:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 04DEE3:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 020039:Skyrim.esm
+- 036E92:Skyrim.esm
+- 036E93:Skyrim.esm
+Class: 01317B:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Brelyna Maryon
+ShortName:
+  TargetLanguage: English
+  Value: Brelyna
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 52
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 73
+  - Key: Conjuration
+    Value: 47
+  - Key: Destruction
+    Value: 15
+  - Key: Illusion
+    Value: 74
+  - Key: Restoration
+    Value: 26
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 148
+  Magicka: 173
+  Stamina: 124
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 05392A:Skyrim.esm
+- 08CA85:Skyrim.esm
+- 0E4D7C:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0434:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+DefaultOutfit: 0D3DFB:Skyrim.esm
+CrimeFaction: 02816F:Skyrim.esm
+HeadTexture: 019390:Skyrim.esm
+TextureLighting: '#00799FB3'
+FaceMorph:
+  NoseLongVsShort: -0.9
+  NoseUpVsDown: -1
+  JawUpVsDown: -0.6
+  JawNarrowVsWide: -1
+  CheeksForwardVsBack: 0.3
+  EyesUpVsDown: -0.7
+  EyesInVsOut: 0.3
+  BrowsUpVsDown: -0.5
+  LipsUpVsDown: -0.2
+  LipsInVsOut: 0.4
+  ChinNarrowVsWide: -0.5
+  ChinUpVsDown: -0.3
+  ChinUnderbiteVsOverbite: -0.6
+  EyesForwardVsBack: 0.5
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 5
+  Unknown: 4294967295
+  Eyes: 25
+  Mouth: 9
+TintLayers:
+- Index: 24
+  Color: '#00799FB3'
+  InterpolationValue: 1
+  Preset: 541
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 554
+- Index: 26
+  Color: '#000F0440'
+  InterpolationValue: 0.53
+  Preset: 560
+- Index: 27
+  Color: '#00A95452'
+  InterpolationValue: 0.11
+  Preset: 566
+- Index: 28
+  Color: '#00A95452'
+  InterpolationValue: 0.11
+  Preset: 571
+- Index: 30
+  Color: '#000F0440'
+  InterpolationValue: 0.34
+  Preset: 581
+- Index: 35
+  Color: '#00525252'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 46
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1024
+- Index: 59
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1029
+- Index: 60
+  Color: '#00000000'
+  InterpolationValue: 0.43
+  Preset: 1034
+MajorFlags:
+- 0x40000

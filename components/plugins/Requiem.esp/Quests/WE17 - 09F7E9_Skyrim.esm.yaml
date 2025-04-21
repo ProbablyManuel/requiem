@@ -1,0 +1,454 @@
+FormKey: 09F7E9:Skyrim.esm
+EditorID: WE17
+Version2: 8
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_WE17_0009F7E9
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 09F7E9:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bandit2
+      Object: 09F7E9:Skyrim.esm
+      Alias: 29
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SceneMarker3
+      Object: 09F7E9:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PostEncounterSandboxRef
+      Object: 09F7E9:Skyrim.esm
+      Alias: 31
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SceneMarker2
+      Object: 09F7E9:Skyrim.esm
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier1
+      Object: 09F7E9:Skyrim.esm
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 09F7E9:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 09F7E9:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bandit1
+      Object: 09F7E9:Skyrim.esm
+      Alias: 26
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier2
+      Object: 09F7E9:Skyrim.esm
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bandit3
+      Object: 09F7E9:Skyrim.esm
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier3
+      Object: 09F7E9:Skyrim.esm
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SceneMarker1
+      Object: 09F7E9:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SceneCenterMarker
+      Object: 09F7E9:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 09F7E9:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 09F7E9:Skyrim.esm
+      Alias: 6
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Num1
+      Data: 100
+  FileName: QF_WE17_0009F7E9
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_WE17_0009F7E9
+    FragmentName: Fragment_2
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WE17_0009F7E9
+    FragmentName: Fragment_3
+  - Stage: 5
+    Unknown2: 1
+    ScriptName: QF_WE17_0009F7E9
+    FragmentName: Fragment_5
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_WE17_0009F7E9
+    FragmentName: Fragment_4
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 09F7E9:Skyrim.esm
+      Alias: 18
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: KillOnLoad
+        Data: True
+  - Property:
+      Name: ''
+      Object: 09F7E9:Skyrim.esm
+      Alias: 24
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: KillOnLoad
+        Data: True
+  - Property:
+      Name: ''
+      Object: 09F7E9:Skyrim.esm
+      Alias: 25
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: KillOnLoad
+        Data: True
+  - Property:
+      Name: ''
+      Object: 09F7E9:Skyrim.esm
+      Alias: 26
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: PacifyOnLoad
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: MakeAggressiveAndAttackPlayerIfAttacked
+        Data: True
+  - Property:
+      Name: ''
+      Object: 09F7E9:Skyrim.esm
+      Alias: 29
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: PacifyOnLoad
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: MakeAggressiveAndAttackPlayerIfAttacked
+        Data: True
+  - Property:
+      Name: ''
+      Object: 09F7E9:Skyrim.esm
+      Alias: 30
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: PacifyOnLoad
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: MakeAggressiveAndAttackPlayerIfAttacked
+        Data: True
+Name:
+  TargetLanguage: English
+  Value: Bandits dressed as Imperial Soldiers
+Flags:
+- 0x4
+Priority: 50
+QuestFormVersion: 65
+Event: SCPT
+TextDisplayGlobals:
+- 03A381:Skyrim.esm
+Filter: Wilderness Encounters\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 029940:Skyrim.esm
+  ComparisonValue: 1
+Stages:
+- Flags:
+  - StartUpStage
+  LogEntries:
+  - Flags: []
+- Index: 5
+  Unknown: 4
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Unknown: 4
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+NextAliasID: 32
+Aliases:
+- ID: 1
+  Name: TRIGGER
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: myHoldLocation
+  Flags:
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 6
+  Type: Location
+  Name: myHoldContested
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A605:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A606:Skyrim.esm
+    ComparisonValue: 1
+- ID: 7
+  Type: Location
+  Name: myHoldImperial
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A603:Skyrim.esm
+    ComparisonValue: 1
+- ID: 8
+  Type: Location
+  Name: myHoldSons
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsReferenceConditionData
+      RunOnType: EventData
+      RunOnTypeIndex: 12882
+      Target: 04A604:Skyrim.esm
+    ComparisonValue: 1
+- ID: 11
+  Name: SceneCenterMarker
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5FE:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 12
+  Name: SceneMarker1
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F9:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 13
+  Name: SceneMarker2
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F9:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 14
+  Name: SceneMarker3
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F9:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 18
+  Name: Soldier1
+  Flags: []
+  CreateReferenceToObject:
+    Object: 01B547:Skyrim.esm
+    AliasID: 12
+  VoiceTypes: Null
+- ID: 24
+  Name: Soldier2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 01B547:Skyrim.esm
+    AliasID: 13
+  VoiceTypes: Null
+- ID: 25
+  Name: Soldier3
+  Flags: []
+  CreateReferenceToObject:
+    Object: 01B547:Skyrim.esm
+    AliasID: 14
+  VoiceTypes: Null
+- ID: 26
+  Name: Bandit1
+  Flags: []
+  CreateReferenceToObject:
+    Object: 09F7EA:Skyrim.esm
+    AliasID: 11
+    Level: Hard
+  PackageData:
+  - 09F7F3:Skyrim.esm
+  - 0BA03C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 29
+  Name: Bandit2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 09F7F1:Skyrim.esm
+    AliasID: 11
+    Level: Medium
+  PackageData:
+  - 09F7F4:Skyrim.esm
+  - 0BA03C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 30
+  Name: Bandit3
+  Flags: []
+  CreateReferenceToObject:
+    Object: 09F7F2:Skyrim.esm
+    AliasID: 11
+    Level: Medium
+  PackageData:
+  - 09F7F4:Skyrim.esm
+  - 0BA03C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 31
+  Name: PostEncounterSandboxRef
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 01BDF1:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 0130DF:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null

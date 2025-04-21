@@ -1,0 +1,38 @@
+FormKey: 04DA22:Skyrim.esm
+EditorID: Mushroom03
+Version2: 15
+ObjectBounds:
+  First: -11, -9, -13
+  Second: 11, 9, 13
+Name:
+  TargetLanguage: English
+  Value: White Cap
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\Mushroom03.nif
+  Data: 0x0200000002000000000000003E39FF1A646473004E28BE124E84E989646473004E28BE12
+PickUpSound: 0BAD13:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 12
+Weight: 0.3
+IngredientValue: 12
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2E:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 60
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 0.5
+    Duration: 20
+- BaseEffect: 073F27:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10

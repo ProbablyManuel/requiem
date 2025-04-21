@@ -1,0 +1,27 @@
+FormKey: 018C50:Dawnguard.esm
+EditorID: DLC1VampireFeeding
+Version2: 9
+Description:
+  TargetLanguage: English
+  Value: Vampire Lords are the most dangerous specimen of vampires, being capable of unleashing terrible havoc on anything that dares to oppose them.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 0A82BB:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 2
+LoadingScreenNif: 00686E:Dawnguard.esm
+InitialScale: 1
+InitialRotation: 0, 0, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -30
+CameraPath: Cameras\LSCameraPanLFTZoomINBig.nif

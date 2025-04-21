@@ -1,0 +1,38 @@
+FormKey: 011CFA:Dawnguard.esm
+EditorID: REQ_Werewolf_BestialStrength3
+Name:
+  TargetLanguage: English
+  Value: Bestial Strength
+Description:
+  TargetLanguage: English
+  Value: Your muscles are almost as hard as steel in your werewolf form, <br>granting you a significant damage bonus.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 007A3F:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+NextPerk: 011CFB:Dawnguard.esm
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 30
+  Unknown: 0x000000
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0CDD84:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 011CFB:Dawnguard.esm
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.75

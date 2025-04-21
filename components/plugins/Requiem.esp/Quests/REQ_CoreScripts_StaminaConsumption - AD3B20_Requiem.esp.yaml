@@ -1,0 +1,41 @@
+FormKey: AD3B20:Requiem.esp
+EditorID: REQ_CoreScripts_StaminaConsumption
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B20:Requiem.esp
+      Alias: 9
+    Scripts:
+    - Name: REQ_StaminaConsumption
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BullRushCone
+        Object: 766B8B:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: JumpCost
+        Object: 6AA967:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Dodge
+        Object: 6AA965:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: AttackCost
+        Object: 6AA964:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BlockCost
+        Object: 2C6F32:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HorseChargeCone
+        Object: 77D000:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Stamina Consumption'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 9
+  Name: StaminaConsumption
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

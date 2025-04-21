@@ -1,0 +1,25 @@
+FormKey: 039FB6:Dragonborn.esm
+EditorID: REQ_NULL_DLC2MKEnchMiraakSwordNPC
+Name:
+  TargetLanguage: English
+  Value: Miraak's Sword Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 0397F4:Dragonborn.esm
+  Data: {}
+- BaseEffect: AE37FD:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 1
+- BaseEffect: AE37FE:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 1
+- BaseEffect: AE37FF:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 1

@@ -1,0 +1,285 @@
+FormKey: 0CD642:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: dunForelhostLvlGhostWizardFemale
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dunForelhostGhostAmbushScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostWeaponFlickerList
+      Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostCorpse
+      Object: 0C674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: GhostAlpha
+      Data: 0.33
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostLeveledList
+      Object: 10F805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SamplePatrolIdleMarker
+      Object: 082DF8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ambushOnTrigger
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bdefaultLoot
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+Configuration:
+  Flags:
+  - Female
+  - AutoCalcStats
+  - DoesNotBleed
+  MagickaOffset: 50
+  StaminaOffset: -25
+  Level:
+    MutagenObjectType: PcLevelMult
+    LevelMult: 1
+  CalcMinLevel: 6
+  CalcMaxLevel: 35
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - ModelAnimation
+  - BaseData
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: -10
+Factions:
+- Faction: 02430D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 072AB9:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD8B:Skyrim.esm
+Voice: 01F1CD:Skyrim.esm
+Template: 0CD640:Skyrim.esm
+Race: 013746:Skyrim.esm
+ActorEffect:
+- 034C58:Skyrim.esm
+- 05030B:Skyrim.esm
+- 0C969D:Skyrim.esm
+Perks:
+- Perk: 031284:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 01C1FE:Skyrim.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 0A6C6F:Skyrim.esm
+- 03EAB9:Skyrim.esm
+- 01B217:Skyrim.esm
+Keywords:
+- 000EDF:Skyrim.esm
+- 013796:Skyrim.esm
+- 0D205E:Skyrim.esm
+- 0F23C5:Skyrim.esm
+Class: 013177:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 21
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 21
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 16
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 12
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 118
+  Magicka: 138
+  Stamina: 84
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+HeadParts:
+- 040228:Skyrim.esm
+- 0511A7:Skyrim.esm
+- 0E4DA8:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0438:Skyrim.esm
+CombatStyle: 044CD0:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+DefaultOutfit: 0CD641:Skyrim.esm
+HeadTexture: 0EAFA5:Skyrim.esm
+TextureLighting: '#00DDDDDD'
+FaceMorph:
+  NoseLongVsShort: -0.2
+  NoseUpVsDown: 0.3
+  CheeksUpVsDown: 0.3
+  CheeksForwardVsBack: 0.3
+  EyesUpVsDown: -0.7
+  BrowsUpVsDown: 0.1
+  LipsUpVsDown: 0.1
+  LipsInVsOut: -1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 3
+  Unknown: 4294967295
+  Eyes: 9
+  Mouth: 2
+TintLayers:
+- Index: 24
+  Color: '#00DDDDDD'
+  InterpolationValue: 1
+  Preset: 601
+- Index: 31
+  Color: '#00A95452'
+  InterpolationValue: 0.37
+  Preset: 656
+- Index: 44
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 684
+- Index: 45
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 708
+- Index: 46
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 732
+- Index: 47
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 756
+- Index: 48
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 780
+- Index: 50
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 828
+- Index: 52
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 876
+- Index: 53
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 900
+- Index: 54
+  Color: '#00563112'
+  InterpolationValue: 1
+  Preset: 1127
+- Index: 58
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 996
+MajorFlags:
+- 0x40000

@@ -1,0 +1,54 @@
+FormKey: 0FB409:Skyrim.esm
+EditorID: REQ_NULL_dunHagsEndEnchAbsorbHealthFFContact
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fEffectDurationMax
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABEFC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF17:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0ABEFB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Hag's End Drain Health
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1
+MagicSkill: Destruction
+ResistValue: ResistMagic
+TaperWeight: 1
+HitShader: 0ABEFF:Skyrim.esm
+EnchantShader: 0D7661:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: Absorb
+Projectile: 0ABEFD:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 0ABF01:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm

@@ -1,0 +1,26 @@
+FormKey: 106256:Skyrim.esm
+EditorID: REQ_OneHanded_Flurry1
+Name:
+  TargetLanguage: English
+  Value: Flurry
+Description:
+  TargetLanguage: English
+  Value: When fighting with one-handed weapons, you are able to attack faster than normal.<br>[+10% attack speed]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BABE4:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+NextPerk: 106257:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 108A3F:Skyrim.esm

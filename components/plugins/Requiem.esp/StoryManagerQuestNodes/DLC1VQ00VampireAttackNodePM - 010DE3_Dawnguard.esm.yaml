@@ -1,0 +1,62 @@
+FormKey: 010DE3:Dawnguard.esm
+EditorID: DLC1VQ00VampireAttackNodePM
+Version2: 5
+Parent: 01320E:Skyrim.esm
+PreviousSibling: 00D911:Dawnguard.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 2E9A23:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00A26E:Dawnguard.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 015A20:Dawnguard.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 019942:Dawnguard.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000038:Skyrim.esm
+  ComparisonValue: 21
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0162A3:Dawnguard.esm
+  ComparisonValue: 000039:Skyrim.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 0145E9:Dawnguard.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 01764E:Dawnguard.esm
+  ComparisonValue: 000039:Skyrim.esm
+Flags:
+- Random
+QuestFlags:
+- DoAllBeforeRepeating
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 017648:Dawnguard.esm
+- Quest: 01764B:Dawnguard.esm

@@ -1,0 +1,17 @@
+FormKey: 01DF8F:Dragonborn.esm
+EditorID: REQ_Shout_Thuum_DragonAspect1_Perk
+Name:
+  TargetLanguage: English
+  Value: Dragon Aspect - Arms
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModPowerAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.25

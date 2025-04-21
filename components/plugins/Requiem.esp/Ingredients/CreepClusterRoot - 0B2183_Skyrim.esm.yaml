@@ -1,0 +1,37 @@
+FormKey: 0B2183:Skyrim.esm
+EditorID: CreepClusterRoot
+Version2: 13
+ObjectBounds:
+  First: -6, -3, 3
+  Second: 3, 7, 26
+Name:
+  TargetLanguage: English
+  Value: Creep Cluster
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\CreepClusterRoot01.nif
+  Data: 0x0200000002000000000000007884244564647300134C1EFA27FC1A9A64647300134C1EFA
+PutDownSound: 0517C8:Skyrim.esm
+Value: 1
+Weight: 0.2
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 073F2C:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 300
+- BaseEffect: 073F51:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30

@@ -1,0 +1,50 @@
+FormKey: 03D4EB:Requiem.esp
+EditorID: REQ_Effect_EnchantmentAdvToxicity
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ISM_strengthoffset
+      Data: -0.7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_hit
+      Object: 10E3D2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 19151A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_fade
+      Object: 10E3D3:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Toxicity
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+ResistValue: PoisonResist
+HitShader: 10CC64:Skyrim.esm
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Stamina
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The weapon is infused with a magical poison, dealing <mag> damage to health and stamina for <dur> seconds.

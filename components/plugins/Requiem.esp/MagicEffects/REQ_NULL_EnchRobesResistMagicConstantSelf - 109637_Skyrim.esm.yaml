@@ -1,0 +1,24 @@
+FormKey: 109637:Skyrim.esm
+EditorID: REQ_NULL_EnchRobesResistMagicConstantSelf
+Name:
+  TargetLanguage: English
+  Value: Resist Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A3A:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 27
+MagicSkill: Restoration
+EnchantShader: 092DE7:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistMagic
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Increases Magic Resistance by <mag>%.

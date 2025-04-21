@@ -1,0 +1,153 @@
+FormKey: 000897:ccqdrsse001-survivalmode.esl
+EditorID: Survival_PlayerInfoQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Survival_PlayerInfo
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Hunger
+      Object: 000894:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: conditions
+      Object: 000898:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Exhaustion
+      Object: 000899:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Survival_WasLastNearbyTravelRef
+      Object: 0008DD:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Survival_OblivionAreas
+      Object: 00092E:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerAlias
+      Object: 000897:ccqdrsse001-survivalmode.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Cold
+      Object: 000896:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Survival_OblivionLocations
+      Object: 00092D:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Survival_OblivionAreaMessage
+      Object: 000937:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Survival_FastTravelDragonbornBlackBooks
+      Object: 0008B1:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA16
+      Object: 0242AF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Survival_TravelObjects
+      Object: 000930:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Survival_OblivionCells
+      Object: 00092B:ccqdrsse001-survivalmode.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Survival_PlayerLastKnownDaysJailed
+      Object: 0008C4:ccqdrsse001-survivalmode.esl
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000897:ccqdrsse001-survivalmode.esl
+      Alias: 0
+    Scripts:
+    - Name: Survival_PlayerHitInfo
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_DiseaseGreenspore
+        Object: 000912:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_GreensporeCarryingRaces
+        Object: 0009A5:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PlayerRef
+        Object: 000014:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_GutwormCarryingRaces
+        Object: 0009A9:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_BrownRotCarryingRaces
+        Object: 0009A4:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_DiseaseGutworm
+        Object: 000915:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_DiseaseBrownRot
+        Object: 000914:ccqdrsse001-survivalmode.esl
+    - Name: Survival_PlayerLocationInfo
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_ColdInteriorLocations
+        Object: 00092C:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_InteriorAreas
+        Object: 00092F:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_ColdInteriorCells
+        Object: 00092A:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PlayerRef
+        Object: 000014:Skyrim.esm
+    - Name: Survival_PlayerMagicHitInfo
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MagicDamageFrost
+        Object: 01CEAE:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_ColdNeedValue
+        Object: 00081B:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: PlayerRef
+        Object: 000014:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Cold
+        Object: 000896:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MagicDamageFire
+        Object: 01CEAD:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_FrostbitePoisonEffects
+        Object: 0009A8:ccqdrsse001-survivalmode.esl
+    - Name: Survival_VampirismLycanthropy
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Hunger
+        Object: 000894:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Exhaustion
+        Object: 000899:ccqdrsse001-survivalmode.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Survival_SurvivalDiseases
+        Object: 0009A6:ccqdrsse001-survivalmode.esl
+Name:
+  TargetLanguage: English
+  Value: Player Info and General Gameplay Penalties
+QuestFormVersion: 65
+NextAliasID: 2
+Aliases:
+- Name: PlayerAlias
+  Flags:
+  - Optional
+  - AllowReserved
+  ForcedReference: 000014:Skyrim.esm
+  Spells:
+  - 000888:ccqdrsse001-survivalmode.esl
+  - 00088B:ccqdrsse001-survivalmode.esl
+  - 000875:ccqdrsse001-survivalmode.esl
+  - 000874:ccqdrsse001-survivalmode.esl
+  - 000873:ccqdrsse001-survivalmode.esl
+  - 00088F:ccqdrsse001-survivalmode.esl
+  - 00088E:ccqdrsse001-survivalmode.esl
+  - 00087F:ccqdrsse001-survivalmode.esl
+  - 000883:ccqdrsse001-survivalmode.esl
+  - 00090E:ccqdrsse001-survivalmode.esl
+  - 000983:ccqdrsse001-survivalmode.esl
+  - 000872:ccqdrsse001-survivalmode.esl
+  - 0009C5:ccqdrsse001-survivalmode.esl
+  VoiceTypes: Null

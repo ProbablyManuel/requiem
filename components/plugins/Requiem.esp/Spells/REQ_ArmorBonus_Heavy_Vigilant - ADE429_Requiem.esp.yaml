@@ -1,0 +1,48 @@
+FormKey: ADE429:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_Vigilant
+Name:
+  TargetLanguage: English
+  Value: Vigilant Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: ADE42A:Requiem.esp
+  Data:
+    Magnitude: 12
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD3B02:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: ADE42A:Requiem.esp
+  Data:
+    Magnitude: 24
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD3B02:Requiem.esp
+    ComparisonValue: 2
+- BaseEffect: ADE42A:Requiem.esp
+  Data:
+    Magnitude: 36
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD3B02:Requiem.esp
+    ComparisonValue: 3
+- BaseEffect: ADE42A:Requiem.esp
+  Data:
+    Magnitude: 48
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD3B02:Requiem.esp
+    ComparisonValue: 4

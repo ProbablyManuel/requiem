@@ -1,0 +1,19 @@
+FormKey: AE36EF:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Stalhrim_Wakizashi
+Items:
+- Item:
+    Item: ADDE53:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDE53:Requiem.esp
+CreatedObject: 02B06B:Dragonborn.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

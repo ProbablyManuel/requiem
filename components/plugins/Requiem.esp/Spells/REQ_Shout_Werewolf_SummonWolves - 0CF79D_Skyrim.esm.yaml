@@ -1,0 +1,27 @@
+FormKey: 0CF79D:Skyrim.esm
+EditorID: REQ_Shout_Werewolf_SummonWolves
+Name:
+  TargetLanguage: English
+  Value: Howl Of The Pack
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- AreaEffectIgnoresLOS
+Type: Voice
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0CF79C:Skyrim.esm
+  Data:
+    Area: 75
+    Duration: 60
+- BaseEffect: 008A66:Dawnguard.esm
+  Data:
+    Area: 75
+    Duration: 60
+- BaseEffect: 008A69:Dawnguard.esm
+  Data:
+    Area: 75
+    Duration: 60

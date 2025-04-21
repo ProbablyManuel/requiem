@@ -1,0 +1,29 @@
+FormKey: 0A30E4:Skyrim.esm
+EditorID: REQ_Smelter_OreCorundumDUPLICATE001
+Items:
+- Item:
+    Item: 05ACDB:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 071CF3:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 05ACDB:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 071CF3:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 05ACE5:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

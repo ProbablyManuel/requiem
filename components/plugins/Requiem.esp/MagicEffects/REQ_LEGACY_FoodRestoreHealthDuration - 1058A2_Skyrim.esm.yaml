@@ -1,0 +1,29 @@
+FormKey: 1058A2:Skyrim.esm
+EditorID: REQ_LEGACY_FoodRestoreHealthDuration
+Name:
+  TargetLanguage: English
+  Value: Nutrition
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: Stamina
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Consumed out of combat, it restores <mag> stamina and magicka.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInCombatConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

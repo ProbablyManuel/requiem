@@ -1,0 +1,32 @@
+FormKey: 002F64:Dawnguard.esm
+EditorID: DLC1ForebearsHoldout
+Version2: 13
+Name:
+  TargetLanguage: English
+  Value: Forebears' Holdout
+FixedDimensionsCenterCell: 0, 0
+InteriorLighting: 002FDE:Dawnguard.esm
+EncounterZone: 003581:Dawnguard.esm
+Location: 00357F:Dawnguard.esm
+Parent:
+  Worldspace: 00003C:Skyrim.esm
+  Flags:
+  - UseMapData
+Water: 015429:Skyrim.esm
+LodWater: 000018:Skyrim.esm
+LodWaterHeight: 0
+LandDefaults:
+  DefaultLandHeight: -2048
+WorldMapOffsetScale: 0.0001
+WorldMapCellOffset: -87449.6, 65945.6, -10035.2
+DistantLodMultiplier: 1
+Flags:
+- SmallWorld
+- CannotFastTravel
+- NoLodWater
+- NoSky
+- FixedDimensions
+ObjectBoundsMin: -2, -2
+ObjectBoundsMax: 4, 4
+Music: 00EEB9:Dawnguard.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds

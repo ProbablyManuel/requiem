@@ -1,0 +1,21 @@
+FormKey: 10D96A:Skyrim.esm
+EditorID: REQ_Ability_Sleep_LoversComfort_XPGain
+Name:
+  TargetLanguage: English
+  Value: Loved
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.25

@@ -1,0 +1,21 @@
+FormKey: 9715CB:Requiem.esp
+EditorID: REQ_Setup_UpgradeNotAllowed
+Description:
+  TargetLanguage: English
+  Value: >-
+    It seems that you have installed a new major release of Requiem. Unfortunately, major releases (1st number of version changed) do not support upgrading savegames from previous versions.
+
+
+    Since your current game would become unplayable, we will send you back to the main menu. Please relaunch Skyrim and start a fresh new Requiem-based game!
+
+
+    Requiem version: %.0f.%.0f.%.0f
+
+    Savegame version: %.0f.%.0f.%.0f
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Your game is too old

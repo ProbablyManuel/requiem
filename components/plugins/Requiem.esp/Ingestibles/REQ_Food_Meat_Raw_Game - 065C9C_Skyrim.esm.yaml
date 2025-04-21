@@ -1,0 +1,28 @@
+FormKey: 065C9C:Skyrim.esm
+EditorID: REQ_Food_Meat_Raw_Game
+ObjectBounds:
+  First: -20, -14, 0
+  Second: 34, 14, 12
+Name:
+  TargetLanguage: English
+  Value: Game Meat
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\HorseMeat.nif
+  Data: 0x0200000002000000000000002D1E3DE564647300604DDD5C758F0C4D64647300604DDD5C
+Weight: 1
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1200
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

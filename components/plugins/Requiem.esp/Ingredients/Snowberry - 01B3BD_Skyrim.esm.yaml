@@ -1,0 +1,38 @@
+FormKey: 01B3BD:Skyrim.esm
+EditorID: Snowberry
+ObjectBounds:
+  First: -9, -4, 0
+  Second: 11, 7, 29
+Name:
+  TargetLanguage: English
+  Value: Snowberries
+Keywords:
+- 0A0E54:Skyrim.esm
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\Snowberry.nif
+  Data: 0x02000000020000000000000046AB2D5E64647300134C1EFA0AC10E7064647300134C1EFA
+PickUpSound: 0517C9:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EAEC:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60

@@ -1,0 +1,80 @@
+FormKey: 06469B:Skyrim.esm
+EditorID: CrimeAutoAttack
+Version2: 15
+Description:
+  TargetLanguage: English
+  Value: >-
+    "Wanted dead or alive for heinous deeds and assorted crimes against the good people of Falkreath. A generous reward will be offered for anyone who kills him."
+
+
+    -- Steward Nenya, Bounty Letter
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A57:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A56:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A58:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A5A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A59:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A50:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A53:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A49:Skyrim.esm
+  ComparisonValue: 1
+LoadingScreenNif: 03FA6A:Skyrim.esm
+InitialScale: 1.3
+InitialRotation: 0, 135, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -55
+CameraPath: Cameras\LSCameraPanZoomInSmall.nif

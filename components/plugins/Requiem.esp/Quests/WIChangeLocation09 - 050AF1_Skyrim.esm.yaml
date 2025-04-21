@@ -1,0 +1,293 @@
+FormKey: 050AF1:Skyrim.esm
+EditorID: WIChangeLocation09
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_WIChangeLocation09_00050AF1
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Guard3
+      Object: 050AF1:Skyrim.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_NewLocation
+      Object: 050AF1:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Guard1
+      Object: 050AF1:Skyrim.esm
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CenterMarker
+      Object: 050AF1:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dragon
+      Object: 050AF1:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DistantOutsideEntranceMarker
+      Object: 050AF1:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Guard2
+      Object: 050AF1:Skyrim.esm
+      Alias: 14
+  - Name: WIChangeLocation09Script
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WIs
+      Object: 035D64:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WIChangeLocation09Scene
+      Object: 050B03:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pWINextEvent
+      Object: 035D68:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pWIWaitEvent
+      Object: 035D74:Skyrim.esm
+  FileName: QF_WIChangeLocation09_00050AF1
+  Fragments:
+  - Unknown2: 1
+    ScriptName: QF_WIChangeLocation09_00050AF1
+    FragmentName: Fragment_0
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WIChangeLocation09_00050AF1
+    FragmentName: Fragment_6
+  - Stage: 1
+    Unknown2: 1
+    ScriptName: QF_WIChangeLocation09_00050AF1
+    FragmentName: Fragment_4
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 050AF1:Skyrim.esm
+      Alias: 12
+    Scripts:
+    - Name: WIChangeLocation09DragonScript
+  - Property:
+      Name: ''
+      Object: 050AF1:Skyrim.esm
+      Alias: 13
+    Scripts:
+    - Name: WIChangeLocation09GuardScript
+  - Property:
+      Name: ''
+      Object: 050AF1:Skyrim.esm
+      Alias: 14
+    Scripts:
+    - Name: WIChangeLocation09GuardScript
+  - Property:
+      Name: ''
+      Object: 050AF1:Skyrim.esm
+      Alias: 15
+    Scripts:
+    - Name: WIChangeLocation09GuardScript
+Name:
+  TargetLanguage: English
+  Value: Dragon Attack
+Flags:
+- 0x1000
+Priority: 40
+QuestFormVersion: 65
+Event: CLOC
+Filter: World Interactions\Change Location\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetKeywordDataForCurrentLocationConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 0C4EC8:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetKeywordDataForCurrentLocationConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 042890:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 042851:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0C65BB:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0B8EC9:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Function: HasKeyword
+    Member: NewLocation
+    Record: 039793:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0E518E:Skyrim.esm
+  ComparisonValue: 000039:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 046EF2:Skyrim.esm
+  ComparisonValue: 120
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 032926:Skyrim.esm
+    Stage: 200
+  ComparisonValue: 1
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 84
+  LogEntries:
+  - Flags: []
+- Index: 1
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  LogEntries:
+  - Flags: []
+NextAliasID: 16
+Aliases:
+- ID: 4
+  Type: Location
+  Name: NewLocation
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: CLOC
+    EventData: 0x4C320000
+- ID: 10
+  Name: CenterMarker
+  Flags: []
+  Location:
+    AliasID: 4
+    RefType: 01BDF1:Skyrim.esm
+  VoiceTypes: Null
+- ID: 11
+  Name: DistantOutsideEntranceMarker
+  Flags: []
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 0130FB:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetDistanceConditionData
+      RunOnTypeIndex: 1
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 20000
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetDistanceConditionData
+      RunOnTypeIndex: 1
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 40000
+  VoiceTypes: Null
+- ID: 12
+  Name: dragon
+  Flags: []
+  CreateReferenceToObject:
+    Object: 05EACE:Skyrim.esm
+    AliasID: 11
+    Level: Hard
+  PackageData:
+  - 050AF2:Skyrim.esm
+  - 050AF3:Skyrim.esm
+  VoiceTypes: Null
+- ID: 13
+  Name: Guard1
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsVoiceTypeConditionData
+      VoiceTypeOrList: 0B3E4E:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 01DA51:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 14
+  Name: Guard2
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsVoiceTypeConditionData
+      VoiceTypeOrList: 0B3E4E:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 01DA51:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 15
+  Name: Guard3
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInCurrentLocAliasConditionData
+      LocationAliasIndex: 4
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsVoiceTypeConditionData
+      VoiceTypeOrList: 0B3E4E:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 01DA51:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null

@@ -1,0 +1,28 @@
+FormKey: AD3724:Requiem.esp
+EditorID: REQ_Forge_Ench_Bolt_Daedric_Shock
+Items:
+- Item:
+    Item: 03AD60:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 8FCECD:Requiem.esp
+    Count: 30
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetCurrentTimeConditionData
+  ComparisonValue: 23
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB413:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: AD3709:Requiem.esp
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 30

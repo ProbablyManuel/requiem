@@ -1,0 +1,255 @@
+FormKey: 032FE8:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EncVampire01Template
+SkyrimMajorRecordFlags:
+- Compressed
+Configuration:
+  Flags:
+  - Female
+  - Respawn
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 900
+  StaminaOffset: 900
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 46
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Factions
+  - AIData
+  - AIPackages
+  - ModelAnimation
+  - Inventory
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 550
+Factions:
+- Faction: 027242:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03ADA0:Skyrim.esm
+Voice: 013AE0:Skyrim.esm
+Template: 032FE7:Skyrim.esm
+Race: 088794:Skyrim.esm
+ActorEffect:
+- 033976:Skyrim.esm
+- 0F5B58:Skyrim.esm
+- 0F5B5C:Skyrim.esm
+- 0F5B5D:Skyrim.esm
+- 010F6A:Dawnguard.esm
+AttackRace: 013746:Skyrim.esm
+Perks:
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D50:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 052D52:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 053129:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581DD:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581DE:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05F56F:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 079345:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E90:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C1E91:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3678:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0C3679:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3933:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 10FAD4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10962B:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 02DF9A:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 01B210:Skyrim.esm
+- 01B217:Skyrim.esm
+Class: 02E00F:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Vampire
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 17
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 10
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 17
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 16
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 10
+  - Key: Alteration
+    Value: 9
+  - Key: Conjuration
+    Value: 12
+  - Key: Destruction
+    Value: 9
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 120
+  Magicka: 120
+  Stamina: 90
+  Unused: 16743
+  Unused2: 0x6B3FEF
+HeadParts:
+- 051623:Skyrim.esm
+- 0E4D92:Skyrim.esm
+- 0EAA77:Skyrim.esm
+- 0EC1B2:Skyrim.esm
+HairColor: 0A0436:Skyrim.esm
+CombatStyle: 02DFB5:Skyrim.esm
+NAM5: 255
+Height: 1
+SoundLevel: Normal
+DefaultOutfit: 033840:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 006F94:Dawnguard.esm
+TextureLighting: '#00DDDDDD'
+FaceMorph:
+  JawNarrowVsWide: -1
+  CheeksUpVsDown: 1
+  CheeksForwardVsBack: -0.8
+  EyesUpVsDown: -0.6
+  EyesInVsOut: -0.3
+  BrowsInVsOut: -0.4
+  BrowsForwardVsBack: 0.3
+  LipsUpVsDown: 0.4
+  LipsInVsOut: -0.7
+  ChinNarrowVsWide: 0.2
+  ChinUpVsDown: -0.2
+  ChinUnderbiteVsOverbite: -0.08
+  EyesForwardVsBack: -0.1
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 5
+  Unknown: 4294967295
+  Eyes: 15
+  Mouth: 3
+TintLayers:
+- Index: 24
+  Color: '#00DDDDDD'
+  InterpolationValue: 1
+  Preset: -1
+- Index: 26
+  Color: '#00430401'
+  InterpolationValue: 0.69
+  Preset: -1
+- Index: 27
+  Color: '#00430401'
+  InterpolationValue: 0.69
+  Preset: -1
+- Index: 31
+  Color: '#000F0440'
+  InterpolationValue: 0.35
+  Preset: -1
+- Index: 36
+  Color: '#00430401'
+  InterpolationValue: 0.52
+  Preset: -1
+MajorFlags:
+- 0x40000

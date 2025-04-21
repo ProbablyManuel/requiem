@@ -1,0 +1,19 @@
+FormKey: 02FB88:Skyrim.esm
+EditorID: REQ_Creature_AtronachStorm_LightningBolt
+Name:
+  TargetLanguage: English
+  Value: Lightning Bolt
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 30
+Flags:
+- ManualCostCalc
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 01CEA8:Skyrim.esm
+  Data:
+    Magnitude: 50

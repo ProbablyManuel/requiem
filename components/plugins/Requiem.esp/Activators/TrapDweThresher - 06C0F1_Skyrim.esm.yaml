@@ -1,0 +1,103 @@
+FormKey: 06C0F1:Skyrim.esm
+EditorID: TrapDweThresher
+Version2: 11
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrapDweThresher
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 20
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 300
+    - MutagenObjectType: ScriptFloatProperty
+      Name: initialDelay
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 300
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WindupSound
+      Object: 02951C:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 300
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 10
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 6
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 300
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 3
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 300
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 300
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 15
+  - Name: TrapHitBase
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseAtaxia
+      Object: 10A24A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBrainRot
+      Object: 10A24D:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: canDisease
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseWitbane
+      Object: 10A250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBoneBreakFever
+      Object: 10A24C:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: trapPushBack
+      Data: 500
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRockjoint
+      Object: 10A24F:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: cameraShake
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: rumbleAmount
+      Data: 0.2
+    - MutagenObjectType: ScriptBoolProperty
+      Name: rumble
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRattles
+      Object: 10A24E:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: cameraShakeAmount
+      Data: 0.1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapHitSound
+      Object: 0EBC27:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: diseaseChance
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: rumbleDuration
+      Data: 0.2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostAbility
+      Object: 05030B:Skyrim.esm
+ObjectBounds:
+  First: -6, -137, -191
+  Second: 6, 22, 6
+Model:
+  File: Traps\SpinningRailBlade\SpinningRailBlade01.nif
+  Data: 0x02000000090000000000000011EB3B4C646473006A02F2EB1F5928F3646473006A02F2EBA83708C164647300262C333B20B524EE64647300364E8FC24180A6B964647300364E8FC2188FFC7C64647300262C333BFBD1AF2064647300364E8FC2D0C7543C646473006A02F2EB9CA31113646473006A02F2EB
+MarkerColor: '#00CC4C33'
+Flags: []

@@ -1,0 +1,20 @@
+FormKey: ADDEE7:Requiem.esp
+EditorID: REQ_Temper_Weapon_Golden_Katana
+Items:
+- Item:
+    Item: 05AD9E:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB413:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00086B:ccbgssse025-advdsgs.esm
+  ComparisonValue: 1
+CreatedObject: ADDED2:Requiem.esp
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

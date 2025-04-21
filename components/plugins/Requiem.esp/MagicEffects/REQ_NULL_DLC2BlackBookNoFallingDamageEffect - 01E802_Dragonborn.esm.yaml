@@ -1,0 +1,26 @@
+FormKey: 01E802:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BlackBookNoFallingDamageEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03D25E:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: No Falling Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+PerkToApply: 01E801:Dragonborn.esm
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You take no falling damage for <dur> seconds.

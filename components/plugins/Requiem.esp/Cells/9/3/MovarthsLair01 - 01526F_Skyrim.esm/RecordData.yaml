@@ -1,0 +1,121 @@
+FormKey: 01526F:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MovarthsLair01
+Version2: 3
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Movarth's Lair
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00171717'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00877747'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00191718'
+    DirectionalXMinus: '#00141715'
+    DirectionalYPlus: '#00171817'
+    DirectionalYMinus: '#00171517'
+    DirectionalZPlus: '#000A0A0A'
+    DirectionalZMinus: '#00232323'
+    Specular: '#00746D5A'
+    Scale: 1
+  FogFarColor: '#00746D5A'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 068B3E:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01BDFC:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC27:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 08B3F7:Skyrim.esm
+  Version2: 1
+  Base: 00000F:Skyrim.esm
+  LocationReference: 01BDFC:Skyrim.esm
+  Placement:
+    Position: 4247.3345, 2670.7075, 5332.114
+    Rotation: 0.01443284, -0.004103044, 5.9949775
+- MutagenObjectType: PlacedObject
+  FormKey: 08B3F5:Skyrim.esm
+  Version2: 1
+  Base: 00000F:Skyrim.esm
+  LocationReference: 01BDFC:Skyrim.esm
+  Placement:
+    Position: 4251.8867, 2659.6265, 5332.1772
+    Rotation: -0.0013831259, -0.0020444845, 5.597898
+- MutagenObjectType: PlacedObject
+  FormKey: 3A647D:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 013962:Skyrim.esm
+  Placement:
+    Position: 4240.3066, 2654.083, 5333.858
+    Rotation: -0.043375023, 0.106297635, 2.4855003
+- MutagenObjectType: PlacedObject
+  FormKey: 3A647B:Requiem.esp
+  Base: 0D8E7F:Skyrim.esm
+  Placement:
+    Position: 4210.965, 2625.7253, 5331.5083
+    Rotation: 0, -0, 2.9
+- MutagenObjectType: PlacedObject
+  FormKey: 01FBB5:Skyrim.esm
+  Version2: 5
+  Base: 020664:Skyrim.esm
+  Scale: 0.91
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 01BDFC:Skyrim.esm
+  Placement:
+    Position: 5673.416, 1640.1382, 5619.3843
+    Rotation: 0.06943463, 0.11761185, 0.105002746
+- MutagenObjectType: PlacedObject
+  FormKey: 08B3B1:Skyrim.esm
+  MajorRecordFlagsRaw: 1073743872
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x40000000
+  Base: 013EDB:Skyrim.esm
+  LocationReference: 01BDFC:Skyrim.esm
+  Placement:
+    Position: 4258.7646, 2577.6604, 5271.0586
+    Rotation: 0.001375201, -0.0066791535, 1.1750429
+- MutagenObjectType: PlacedObject
+  FormKey: 01FE4F:Skyrim.esm
+  Version2: 2
+  Base: 020662:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01BDFC:Skyrim.esm
+  Placement:
+    Position: 3588.3516, -95.094345, 5340.1157
+    Rotation: 0, -0, 1.7181946
+MajorFlags:
+- 0x40000

@@ -1,0 +1,33 @@
+FormKey: 0581DE:Skyrim.esm
+EditorID: REQ_Conjuration_DarkInfusion
+Name:
+  TargetLanguage: English
+  Value: Dark Infusion
+Description:
+  TargetLanguage: English
+  Value: By infusing your undead creations with dark energies, you are able to make them <br> stronger and more resilient. You can even prevent your creations from decaying to dust.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 17911B:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 00283A:Dawnguard.esm
+  EntryPoint: ApplyReanimateSpell
+  PerkConditionTabCount: 3
+  Spell: 0CAB5C:Skyrim.esm

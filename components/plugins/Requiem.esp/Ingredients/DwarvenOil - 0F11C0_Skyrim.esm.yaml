@@ -1,0 +1,35 @@
+FormKey: 0F11C0:Skyrim.esm
+EditorID: DwarvenOil
+Version2: 12
+ObjectBounds:
+  First: -9, -9, -7
+  Second: 9, 9, 7
+Name:
+  TargetLanguage: English
+  Value: Dwarven Oil
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\DwarvenOil.nif
+  Data: 0x020000000400000000000000608C98CF64647300604DDD5CF066DA1664647300604DDD5C188FFC7C64647300262C333B4A37D38F64647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 50
+Weight: 0.25
+IngredientValue: 38
+Effects:
+- BaseEffect: 073F51:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EB27:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 03EB07:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 20

@@ -1,0 +1,56 @@
+FormKey: 0198DE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: LeftHandMineDaighresHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Daighre's House
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00000000'
+    DirectionalXMinus: '#00000000'
+    DirectionalYPlus: '#00000000'
+    DirectionalYMinus: '#00000000'
+    DirectionalZPlus: '#00000000'
+    DirectionalZMinus: '#00000000'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 08810C:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F7B8:Skyrim.esm
+Owner: 065666:Skyrim.esm
+LockList: 09E478:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 0B9DCB:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0832C7:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -202.08307, -239.25279, 2003.7775
+    Rotation: 0, -0, 1.6999999
+- MutagenObjectType: PlacedObject
+  FormKey: 0832C6:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -214.70395, -224.26735, 2003.7775
+MajorFlags:
+- 0x40000

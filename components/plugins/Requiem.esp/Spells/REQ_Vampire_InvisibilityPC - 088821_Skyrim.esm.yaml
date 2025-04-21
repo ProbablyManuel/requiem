@@ -1,0 +1,99 @@
+FormKey: 088821:Skyrim.esm
+EditorID: REQ_Vampire_InvisibilityPC
+Name:
+  TargetLanguage: English
+  Value: Vampiric Urge
+MenuDisplayObject: 109AC3:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: "Your dire thirst has awakened the ability of a hunter truly in need for blood: Once a day, while you're crazed for a mortal's sweet juice of life, you can become both invisible and gain an enhanced vision."
+Flags:
+- ManualCostCalc
+Type: Power
+CastType: FireAndForget
+Effects:
+- BaseEffect: 033975:Skyrim.esm
+  Data:
+    Duration: 300
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetInWorldspaceConditionData
+      WorldspaceOrList: 000969:Update.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000038:Skyrim.esm
+    ComparisonValue: 19
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000038:Skyrim.esm
+    ComparisonValue: 5
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsInInteriorConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 00A26E:Dawnguard.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 01CD56:Skyrim.esm
+- BaseEffect: 06B10C:Skyrim.esm
+  Data:
+    Duration: 300
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetInWorldspaceConditionData
+      WorldspaceOrList: 000969:Update.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000038:Skyrim.esm
+    ComparisonValue: 19
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000038:Skyrim.esm
+    ComparisonValue: 5
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsInInteriorConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 00A26E:Dawnguard.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 01CD56:Skyrim.esm

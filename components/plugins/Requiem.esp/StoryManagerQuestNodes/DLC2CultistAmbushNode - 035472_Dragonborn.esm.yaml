@@ -1,0 +1,41 @@
+FormKey: 035472:Dragonborn.esm
+EditorID: DLC2CultistAmbushNode
+Parent: 01320E:Skyrim.esm
+PreviousSibling: Null
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Location: 016E2A:Dragonborn.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 046EF2:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 0242BA:Skyrim.esm
+  ComparisonValue: 160
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 017F8E:Dragonborn.esm
+  ComparisonValue: 5
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 0331C0:Dragonborn.esm
+    Stage: 1
+QuestFlags:
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 03546D:Dragonborn.esm

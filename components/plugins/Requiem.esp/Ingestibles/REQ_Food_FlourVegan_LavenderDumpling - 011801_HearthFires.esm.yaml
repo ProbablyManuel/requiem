@@ -1,0 +1,30 @@
+FormKey: 011801:HearthFires.esm
+EditorID: REQ_Food_FlourVegan_LavenderDumpling
+ObjectBounds:
+  First: -117, -28, -117
+  Second: 117, 28, 117
+Name:
+  TargetLanguage: English
+  Value: Lavender Dumpling
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: _BYOH\Clutter\Food\Dumpling01.nif
+  Data: 0x020000000000000000000000
+Weight: 0.25
+Value: 7
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371C:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 1800
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

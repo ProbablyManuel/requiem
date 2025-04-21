@@ -1,0 +1,81 @@
+FormKey: 0152A5:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: CragslaneCavern01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Cragslane Cavern
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00000000'
+    DirectionalXMinus: '#00000000'
+    DirectionalYPlus: '#00000000'
+    DirectionalYMinus: '#00000000'
+    DirectionalZPlus: '#00000000'
+    DirectionalZMinus: '#00000000'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0E7C5E:Skyrim.esm
+WaterHeight: 0
+Location: 019159:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\ShinyDull_e.dds
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC02:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 03516D:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Key: 0D81F9:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019159:Skyrim.esm
+  Placement:
+    Position: 300.866, -1198.8774, -3821.4282
+    Rotation: 0, 0, 1.7081974
+- MutagenObjectType: PlacedObject
+  FormKey: 0D8234:Skyrim.esm
+  Base: 02064F:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 0D81F9:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019159:Skyrim.esm
+  Placement:
+    Position: 954.39105, -4294.658, -3874.727
+    Rotation: 0, 0, 3.158196
+MajorFlags:
+- 0x40000

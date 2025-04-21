@@ -1,0 +1,77 @@
+FormKey: 77CFFF:Requiem.esp
+EditorID: REQ_Effect_Attacks_Trample
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_KnockdownAttacks
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Evasion
+      Object: 105F23:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Impact
+      Object: 95D85E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HeavyArmor
+      Object: 06BBD2:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: MassOffset
+      Data: 3.5
+Name:
+  TargetLanguage: English
+  Value: Trample
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 77A864:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 10E984:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 766B8A:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 71012A:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1

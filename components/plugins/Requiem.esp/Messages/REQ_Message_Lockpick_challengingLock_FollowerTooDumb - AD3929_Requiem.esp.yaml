@@ -1,0 +1,18 @@
+FormKey: AD3929:Requiem.esp
+EditorID: REQ_Message_Lockpick_challengingLock_FollowerTooDumb
+Description:
+  TargetLanguage: English
+  Value: >-
+    This lock seems complex to you, but with some time and enough lockpicks you should be able to open it. Your follower <Alias.ShortName=LockpickMinion> considers this lock far too complex to give it a try. 
+
+
+    A lockpicking expertise of at least %.0f is needed to handle locks of this complexity with less effort.
+
+    Your current lockpicking expertise is %.0f and <Alias.ShortName=LockpickMinion> has an expertise of %.0f.
+Name:
+  TargetLanguage: English
+  Value: Awful lock complexity!
+INAM: 0x00000000
+Quest: 82F3AF:Requiem.esp
+Flags:
+- MessageBox

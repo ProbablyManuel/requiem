@@ -1,0 +1,198 @@
+FormKey: 35214E:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_Ragnok
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -35, -25, 0
+  Second: 35, 25, 268
+Configuration:
+  Flags:
+  - LoopedAudio
+  StaminaOffset: 3800
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 80
+  CalcMinLevel: 10
+  SpeedMultiplier: 120
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 2750
+Factions:
+- Faction: 04359A:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 014750:Dawnguard.esm
+Voice: 01F225:Skyrim.esm
+Template: 00E25A:Dawnguard.esm
+Race: 0131F9:Skyrim.esm
+ActorEffect:
+- 014554:Dawnguard.esm
+- AE3AE7:Requiem.esp
+WornArmor: 006DBA:Dawnguard.esm
+AttackRace: 0131F9:Skyrim.esm
+Perks:
+- Perk: 03DFD0:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 00000F:Skyrim.esm
+    Count: 1250
+- Item:
+    Item: 063B42:Skyrim.esm
+    Count: 4
+- Item:
+    Item: 063B43:Skyrim.esm
+    Count: 4
+- Item:
+    Item: 063B44:Skyrim.esm
+    Count: 5
+- Item:
+    Item: 063B45:Skyrim.esm
+    Count: 5
+- Item:
+    Item: 063B46:Skyrim.esm
+    Count: 5
+- Item:
+    Item: 063B47:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 06851E:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 06851F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 068520:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 068521:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 068522:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 068523:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 012D14:Dawnguard.esm
+    Count: 1
+- Item:
+    Item: 352150:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsAllies
+  AggroRadiusBehavior: True
+  Warn: 1024
+  WarnOrAttack: 750
+  Attack: 375
+Keywords:
+- 10E984:Skyrim.esm
+Class: 0ABB44:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Ragnok
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 100
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 79
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 43
+  - Key: LightArmor
+    Value: 79
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 1039
+  Stamina: 1146
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+CombatStyle: 028349:Skyrim.esm
+NAM5: 255
+Height: 1.25
+Weight: 100
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 0C4E2F:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

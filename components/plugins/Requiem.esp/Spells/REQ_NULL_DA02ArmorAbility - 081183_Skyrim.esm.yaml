@@ -1,0 +1,19 @@
+FormKey: 081183:Skyrim.esm
+EditorID: REQ_NULL_DA02ArmorAbility
+Name:
+  TargetLanguage: English
+  Value: Boethiah's Blessing
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Ebony Mail is silent when sneaking and creates a cloud of poison when in combat.
+Type: Ability
+Effects:
+- BaseEffect: 081182:Skyrim.esm
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+    ComparisonValue: 1

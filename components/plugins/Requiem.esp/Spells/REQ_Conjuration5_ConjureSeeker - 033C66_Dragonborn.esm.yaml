@@ -1,0 +1,23 @@
+FormKey: 033C66:Dragonborn.esm
+EditorID: REQ_Conjuration5_ConjureSeeker
+Name:
+  TargetLanguage: English
+  Value: Conjure Seeker
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 650
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.2
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 25
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 030CCF:Dragonborn.esm
+  Data:
+    Duration: 6

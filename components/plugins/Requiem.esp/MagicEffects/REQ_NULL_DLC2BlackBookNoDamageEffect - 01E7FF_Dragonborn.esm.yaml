@@ -1,0 +1,32 @@
+FormKey: 01E7FF:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BlackBookNoDamageEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03D25D:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Secret of Protection
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- NoMagnitude
+- FXPersist
+CastingLight: 03F1B5:Skyrim.esm
+HitShader: 03D3BC:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 012FDC:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 01C859:Skyrim.esm
+HitEffectArt: 03CD85:Dragonborn.esm
+DualCastScale: 1
+PerkToApply: 01E7FE:Dragonborn.esm
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You take half damage for <dur> seconds from all physical attacks and most magical attacks.

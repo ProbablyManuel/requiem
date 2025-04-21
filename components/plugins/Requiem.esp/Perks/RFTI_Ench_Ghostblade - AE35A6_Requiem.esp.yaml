@@ -1,0 +1,20 @@
+FormKey: AE35A6:Requiem.esp
+EditorID: RFTI_Ench_Ghostblade
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 094A2B:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModTargetDamageResistance
+  PerkConditionTabCount: 3
+  Value: 0

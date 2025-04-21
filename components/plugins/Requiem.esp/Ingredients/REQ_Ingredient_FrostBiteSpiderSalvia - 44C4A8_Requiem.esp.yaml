@@ -1,0 +1,33 @@
+FormKey: 44C4A8:Requiem.esp
+EditorID: REQ_Ingredient_FrostBiteSpiderSalvia
+Name:
+  TargetLanguage: English
+  Value: Venomous Spittle
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\FrostbiteVenom01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0BAD13:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 50
+Weight: 0.3
+IngredientValue: 50
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 60
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 1
+- BaseEffect: 10DE5E:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 60
+- BaseEffect: 073F30:Skyrim.esm
+  Data:
+    Duration: 1

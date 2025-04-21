@@ -1,0 +1,203 @@
+FormKey: 02A5E1:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 537133056
+EditorID: REQ_Actor_Conjuration_GhostlyDragonpriest
+SkyrimMajorRecordFlags:
+- Compressed
+- 0x20000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultGhostScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostCorpse
+      Object: 0C674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostWeaponFlickerList
+      Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bFade
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostLeveledList
+      Object: 10F805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bdefaultLoot
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
+ObjectBounds:
+  First: -26, -18, 0
+  Second: 26, 18, 149
+Configuration:
+  Flags:
+  - Respawn
+  - Summonable
+  - DoesNotBleed
+  - BleedoutOverride
+  MagickaOffset: 32767
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 60
+  CalcMaxLevel: 100
+  SpeedMultiplier: 150
+  DispositionBase: 35
+DeathItem: 03AD7E:Skyrim.esm
+Voice: 029986:Skyrim.esm
+Race: 0131EF:Skyrim.esm
+ActorEffect:
+- 0204C4:Skyrim.esm
+- 0ABDF3:Skyrim.esm
+- 100E77:Skyrim.esm
+- 02A074:Requiem.esp
+- 06F5CE:Requiem.esp
+WornArmor: 03B5AB:Skyrim.esm
+AttackRace: 0131EF:Skyrim.esm
+Perks:
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F5:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Keywords:
+- 013796:Skyrim.esm
+- 0D205E:Skyrim.esm
+- 0F23C5:Skyrim.esm
+Class: 01CE1C:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Ghostly Dragonpriest
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 15
+  - Key: Archery
+    Value: 15
+  - Key: Block
+    Value: 15
+  - Key: Smithing
+    Value: 15
+  - Key: HeavyArmor
+    Value: 15
+  - Key: LightArmor
+    Value: 15
+  - Key: Pickpocket
+    Value: 15
+  - Key: Lockpicking
+    Value: 15
+  - Key: Sneak
+    Value: 55
+  - Key: Alchemy
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Alteration
+    Value: 100
+  - Key: Conjuration
+    Value: 100
+  - Key: Destruction
+    Value: 100
+  - Key: Illusion
+    Value: 15
+  - Key: Restoration
+    Value: 100
+  - Key: Enchanting
+    Value: 15
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 1490
+  Magicka: 545
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+CombatStyle: 0BB365:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 046B83:Skyrim.esm
+DefaultOutfit: 05F281:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000
+- BleedoutOverride

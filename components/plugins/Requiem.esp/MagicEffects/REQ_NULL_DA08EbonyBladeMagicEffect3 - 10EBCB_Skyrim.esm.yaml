@@ -1,0 +1,26 @@
+FormKey: 10EBCB:Skyrim.esm
+EditorID: REQ_NULL_DA08EbonyBladeMagicEffect3
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA08EbonyBladeMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PacifySpell
+      Object: 0EA291:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AlertSpell
+      Object: 0EA28F:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Friendly Fire
+MagicSkill: Destruction
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Destruction
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Strengthened by the infamy of its bearer

@@ -1,0 +1,25 @@
+FormKey: AE3B2A:Requiem.esp
+EditorID: REQ_Trait_Heritage_Bosmer_Description
+Name:
+  TargetLanguage: English
+  Value: Tree-Sap People
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Movement speed is increased by <10>%. Ranged weapons fire <20>% faster. You may choose to worship Y'ffre instead of the Nine Divines by upholding the archaic Green Pact.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

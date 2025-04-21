@@ -1,0 +1,23 @@
+FormKey: 07E597:Skyrim.esm
+EditorID: REQ_Trap_IceStorm6
+Name:
+  TargetLanguage: English
+  Value: Ice Storm
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1256
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 10192E:Skyrim.esm
+  Data:
+    Magnitude: 200
+    Area: 15
+- BaseEffect: 0B729F:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5

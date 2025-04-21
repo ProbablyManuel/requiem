@@ -1,0 +1,27 @@
+FormKey: 4ECEA2:Requiem.esp
+EditorID: REQ_Illusion_Blackout_DrainMagickaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Drain Magicka Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoHitEvent
+- NoArea
+- PowerAffectsMagnitude
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MagickaRateMult
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: reduces the magicka regeneration by <mag>% for up to <dur> seconds.

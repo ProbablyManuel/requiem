@@ -1,0 +1,36 @@
+FormKey: 484DDC:Requiem.esp
+EditorID: REQ_Illusion_Nightmare_DrainAttackDamage
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Illusion_Nightmare
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Empowered
+      Object: 484DDD:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Drain Attack Damage
+Flags:
+- Recover
+- Detrimental
+- NoHitEvent
+- NoArea
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Illusion
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: TargetActor
+SecondActorValue: AttackDamageMult
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The touched faces his worst nightmare, dealing <mag>% less damage for up to <dur> seconds.

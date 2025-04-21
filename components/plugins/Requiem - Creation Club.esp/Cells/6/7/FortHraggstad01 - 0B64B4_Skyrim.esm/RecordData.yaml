@@ -1,0 +1,153 @@
+FormKey: 0B64B4:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortHraggstad01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Hraggstad
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0B6BC7:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019181:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC1F:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0008C7:ccbgssse041-netchleather.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.74
+  Owner: 000007:Skyrim.esm
+  LocationReference: 019181:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 1999.9961, -56.11473, -308.2296
+    Rotation: 0, 0, 4.7831936
+- MutagenObjectType: PlacedObject
+  FormKey: 000922:ccbgssse041-netchleather.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.74
+  Lock:
+    Level: 255
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 000007:Skyrim.esm
+  LocationReference: 019181:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 1999.9961, -56.11473, -308.2296
+    Rotation: 0, 0, 4.7831936
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0008C5:ccbgssse041-netchleather.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 07A603:Skyrim.esm
+  Scale: 0.88
+  LocationReference: 019181:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 2048.6455, -76.607025, -30000
+    Rotation: 0, 0, 0.10000038
+- MutagenObjectType: PlacedObject
+  FormKey: 0008C6:ccbgssse041-netchleather.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 07A605:Skyrim.esm
+  LocationReference: 019181:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 2047.0852, -46.42221, -30000
+- MutagenObjectType: PlacedObject
+  FormKey: 0008C8:ccbgssse041-netchleather.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 097F64:Skyrim.esm
+  LocationReference: 019181:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 2048.061, -11.284905, -30000
+    Rotation: 1.5707964, 5.741587, 4.8415923
+- MutagenObjectType: PlacedObject
+  FormKey: 0008C9:ccbgssse041-netchleather.esl
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 0F5D05:Skyrim.esm
+  LocationReference: 019181:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 1996.0156, -106.8245, -30000
+    Rotation: 0.15116994, 0.020898573, 0.050323077
+MajorFlags:
+- 0x40000

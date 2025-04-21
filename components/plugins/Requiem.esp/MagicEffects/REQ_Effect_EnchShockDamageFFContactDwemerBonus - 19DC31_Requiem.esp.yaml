@@ -1,0 +1,37 @@
+FormKey: 19DC31:Requiem.esp
+EditorID: REQ_Effect_EnchShockDamageFFContactDwemerBonus
+Name:
+  TargetLanguage: English
+  Value: Shock Damage
+MenuDisplayObject: 09FA64:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+ResistValue: ResistShock
+HitShader: 057C67:Skyrim.esm
+EnchantShader: 059EDA:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 02F773:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Magicka
+ImpactData: 038B05:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Does triple damage to constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+  ComparisonValue: 1

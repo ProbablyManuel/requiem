@@ -1,0 +1,28 @@
+FormKey: 08D5C1:Skyrim.esm
+EditorID: REQ_Vampire_Drain03
+Name:
+  TargetLanguage: English
+  Value: Vampiric Drain
+MenuDisplayObject: 10FEF4:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 40
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 0F5B57:Skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 1
+- BaseEffect: 01419C:Dawnguard.esm
+  Data:
+    Magnitude: 15
+    Duration: 1
+- BaseEffect: 01419A:Dawnguard.esm
+  Data:
+    Magnitude: 15
+    Duration: 1

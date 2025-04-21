@@ -1,0 +1,19 @@
+FormKey: 035B1B:Dragonborn.esm
+EditorID: REQ_Ench_RingOfInstinct_Spell
+Name:
+  TargetLanguage: English
+  Value: Frostmoon Instinct
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: LesserPower
+CastType: FireAndForget
+Effects:
+- BaseEffect: 035B1C:Dragonborn.esm
+  Data:
+    Magnitude: 0.4
+    Duration: 20

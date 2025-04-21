@@ -1,0 +1,28 @@
+FormKey: 011EE9:Dawnguard.esm
+EditorID: REQ_Ench_HarkonsKatana
+Name:
+  TargetLanguage: English
+  Value: Harkon's Katana Enchantment
+EnchantmentCost: 100
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 100
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE38EF:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 1
+- BaseEffect: AE38F0:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 1
+- BaseEffect: AE38F1:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 1
+- BaseEffect: AE38F2:Requiem.esp
+  Data:
+    Duration: 5

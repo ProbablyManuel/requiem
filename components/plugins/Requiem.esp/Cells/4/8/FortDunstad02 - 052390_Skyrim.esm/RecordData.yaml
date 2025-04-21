@@ -1,0 +1,66 @@
+FormKey: 052390:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortDunstad02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Dunstad Prison
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#002E281B'
+  DirectionalColor: '#00024951'
+  FogNearColor: '#00394A3A'
+  FogNear: 340
+  FogFar: 7000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0032281C'
+    DirectionalXMinus: '#00292819'
+    DirectionalYPlus: '#002E291B'
+    DirectionalYMinus: '#002E261B'
+    DirectionalZPlus: '#0015130C'
+    DirectionalZMinus: '#00463C29'
+    Specular: '#00394A3A'
+    Scale: 1
+  FogFarColor: '#00394A3A'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 06909B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01917E:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC1C:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E7991:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917E:Skyrim.esm
+  EnableParent:
+    Reference: 0E604D:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -2104.4597, -960.4801, 1606.0989
+    Rotation: 0, 0, 2.9250007
+MajorFlags:
+- 0x40000

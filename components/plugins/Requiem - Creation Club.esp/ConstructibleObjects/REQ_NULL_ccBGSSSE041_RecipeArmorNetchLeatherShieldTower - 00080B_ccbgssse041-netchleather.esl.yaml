@@ -1,0 +1,19 @@
+FormKey: 00080B:ccbgssse041-netchleather.esl
+EditorID: REQ_NULL_ccBGSSSE041_RecipeArmorNetchLeatherShieldTower
+Items:
+- Item:
+    Item: 0DB5D2:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 000909:ccbgssse041-netchleather.esl
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00081C:ccbgssse041-netchleather.esl
+    Stage: 1000
+  ComparisonValue: 1
+CreatedObject: 000805:ccbgssse041-netchleather.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

@@ -1,0 +1,27 @@
+FormKey: AE35A4:Requiem.esp
+EditorID: RFTI_Ench_Trollsbane
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0F5D16:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 06AF63:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSoulPercentCapturedToWeapon
+  PerkConditionTabCount: 3
+  Value: 1

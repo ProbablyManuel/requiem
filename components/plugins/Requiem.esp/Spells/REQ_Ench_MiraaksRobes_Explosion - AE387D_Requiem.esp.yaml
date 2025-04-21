@@ -1,0 +1,20 @@
+FormKey: AE387D:Requiem.esp
+EditorID: REQ_Ench_MiraaksRobes_Explosion
+Name:
+  TargetLanguage: English
+  Value: Hermaeus Mora's Retribution
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- AreaEffectIgnoresLOS
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+Effects:
+- BaseEffect: AE387C:Requiem.esp
+  Data:
+    Magnitude: 400
+    Area: 12
+    Duration: 1

@@ -1,0 +1,72 @@
+FormKey: 0037E2:Dawnguard.esm
+EditorID: DLC1TrapCrossbow
+Version2: 7
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1TrapCrossbow
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapCrossbowWeapon05
+      Object: 010762:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CrossBow
+      Object: 000801:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapCrossbowAmmo
+      Object: 000BB3:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapCrossbowWeapon
+      Object: 0037E5:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: bolt
+      Object: 000BB3:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapCrossbowWeapon03
+      Object: 010762:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapCrossbowWeapon04
+      Object: 010762:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapCrossbowWeapon01
+      Object: 010762:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapCrossbowWeapon02
+      Object: 010762:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: shotCount
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WindupSound
+      Object: 0189EC:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 25
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapCrossbowWeapon06
+      Object: 010762:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapCrossbowNeededMessage
+      Object: 010D82:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 30
+ObjectBounds:
+  First: -31, -64, -6
+  Second: 31, 512, 4
+Name:
+  TargetLanguage: English
+  Value: Crossbow Mount
+Model:
+  File: DLC01\Traps\CrossbowTraps\PlainCrossbow\PlainCrossbowTrap01.nif
+  Data: 0x020000000000000000000000
+MarkerColor: '#00CC4C33'
+Flags: []

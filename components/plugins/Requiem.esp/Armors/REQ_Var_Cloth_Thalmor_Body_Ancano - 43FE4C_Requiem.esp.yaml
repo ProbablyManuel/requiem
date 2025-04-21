@@ -1,0 +1,40 @@
+FormKey: 43FE4C:Requiem.esp
+EditorID: REQ_Var_Cloth_Thalmor_Body_Ancano
+ObjectBounds:
+  First: -23, -32, 1
+  Second: 22, 37, 23
+Name:
+  TargetLanguage: English
+  Value: Ancano's Robes
+ObjectEffect: 10E309:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\Thalmor\ThalmorRobesGO.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: Clothes\Thalmor\ThalmorRobesGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0A8657:Skyrim.esm
+- 10F5E2:Skyrim.esm
+- 3D06F0:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 065BBE:Skyrim.esm
+Value: 10
+Weight: 4
+TemplateArmor: 065BBF:Skyrim.esm

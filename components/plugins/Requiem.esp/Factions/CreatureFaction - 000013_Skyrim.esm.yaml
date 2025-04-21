@@ -1,0 +1,29 @@
+FormKey: 000013:Skyrim.esm
+EditorID: CreatureFaction
+Name:
+  TargetLanguage: English
+  Value: Creature Faction
+Relations:
+- Target: 032D9C:Skyrim.esm
+- Target: 03692E:Skyrim.esm
+  Reaction: Friend
+- Target: 0AA784:Skyrim.esm
+  Reaction: Friend
+- Target: 0D25A6:Skyrim.esm
+  Reaction: Friend
+- Target: 0D42C8:Skyrim.esm
+  Reaction: Enemy
+Flags:
+- HiddenFromPC
+- IgnoreMurder
+- IgnoreAssault
+- IgnoreStealing
+- IgnoreTrespass
+- IgnorePickpocket
+- IgnoreWerewolf
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+Ranks:
+- Number: 0
+VendorValues: {}

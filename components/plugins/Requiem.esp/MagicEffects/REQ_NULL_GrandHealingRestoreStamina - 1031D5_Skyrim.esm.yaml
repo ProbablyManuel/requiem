@@ -1,0 +1,49 @@
+FormKey: 1031D5:Skyrim.esm
+EditorID: REQ_NULL_GrandHealingRestoreStamina
+Version2: 4
+Name:
+  TargetLanguage: English
+  Value: Restore Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+MagicSkill: Restoration
+HitShader: 012FD9:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+Projectile: 012FDC:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 01C859:Skyrim.esm
+SkillUsageMultiplier: 0.2
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 44BE5E:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    RunOnType: Target
+    Perk: 0581F9:Skyrim.esm
+  ComparisonValue: 1

@@ -1,0 +1,40 @@
+FormKey: 058205:Skyrim.esm
+EditorID: REQ_Pickpocket_PerfectedArt
+Name:
+  TargetLanguage: English
+  Value: Perfected Art
+Description:
+  TargetLanguage: English
+  Value: After having learned everything there is to know about thievery,<br>your legendary skill means you almost never get caught.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058201:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Pickpocket
+  ComparisonValue: 100
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 20
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDetectedConditionData
+        TargetNpc: 000014:Skyrim.esm
+  EntryPoint: ModPickpocketChance
+  PerkConditionTabCount: 3
+  Value: 100

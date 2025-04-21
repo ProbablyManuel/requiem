@@ -1,0 +1,22 @@
+FormKey: AD8C85:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_SteelPlate_Effect
+Name:
+  TargetLanguage: English
+  Value: Slash Protection
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Corrundum alloy is nigh impenetrable by blades. Thus, slashing attacks deal <mag>% less damage to you (12% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

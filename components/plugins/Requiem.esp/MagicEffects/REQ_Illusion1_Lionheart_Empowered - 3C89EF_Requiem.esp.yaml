@@ -1,0 +1,34 @@
+FormKey: 3C89EF:Requiem.esp
+EditorID: REQ_Illusion1_Lionheart_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+TaperWeight: 1
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: StaminaRateMult
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: TargetActor
+SecondActorValue: MagickaRateMult
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If empowered, the target will also regenerate these attributes <mag>% faster.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

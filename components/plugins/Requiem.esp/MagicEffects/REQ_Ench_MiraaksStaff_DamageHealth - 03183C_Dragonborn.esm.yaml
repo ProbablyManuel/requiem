@@ -1,0 +1,26 @@
+FormKey: 03183C:Dragonborn.esm
+EditorID: REQ_Ench_MiraaksStaff_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 038305:Dragonborn.esm
+Keywords:
+- 0339A0:Dragonborn.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoDeathDispel
+HitShader: 039E46:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+  Association: 0339A0:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Sprays writhing tentacles on the ground that stagger foes and deal <mag> irresistible damage per second.

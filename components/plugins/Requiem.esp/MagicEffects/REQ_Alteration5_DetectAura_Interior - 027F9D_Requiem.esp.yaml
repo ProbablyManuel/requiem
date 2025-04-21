@@ -1,0 +1,45 @@
+FormKey: 027F9D:Requiem.esp
+EditorID: REQ_Alteration5_DetectAura_Interior
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicImodScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 08AFD0:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Interior
+Flags:
+- Recover
+- NoHitEvent
+- FXPersist
+- NoRecast
+- PowerAffectsDuration
+- Painless
+- NoDeathDispel
+MagicSkill: Alteration
+CastingLight: 0ABF06:Skyrim.esm
+HitShader: 0DC209:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingArea: 2000
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 025458:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 02FB1C:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 08AFCF:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInInteriorConditionData
+  ComparisonValue: 1

@@ -1,0 +1,22 @@
+FormKey: 106642:Skyrim.esm
+EditorID: REQ_Perk_Marksmanship_QuickShot
+Name:
+  TargetLanguage: English
+  Value: Quick Shot
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 0008F9:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+    ComparisonValue: 7

@@ -1,0 +1,22 @@
+FormKey: AE384A:Requiem.esp
+EditorID: REQ_Ench_Dawnbreaker_EquipAbility
+Name:
+  TargetLanguage: English
+  Value: Dawnbreaker Equip Ability
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+EquipAbility: AE3848:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

@@ -1,0 +1,25 @@
+FormKey: 02B96B:Skyrim.esm
+EditorID: REQ_Destruction1_Frostbite
+Name:
+  TargetLanguage: English
+  Value: Icewind
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 40
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+HalfCostPerk: 0F2CA8:Skyrim.esm
+Effects:
+- BaseEffect: 013CAA:Skyrim.esm
+  Data:
+    Magnitude: 17
+    Duration: 1
+- BaseEffect: 0B729D:Skyrim.esm
+  Data:
+    Magnitude: 17
+    Duration: 4

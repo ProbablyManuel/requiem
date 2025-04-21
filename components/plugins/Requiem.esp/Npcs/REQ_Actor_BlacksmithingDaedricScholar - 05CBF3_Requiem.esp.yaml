@@ -1,0 +1,152 @@
+FormKey: 05CBF3:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 786432
+EditorID: REQ_Actor_BlacksmithingDaedricScholar
+SkyrimMajorRecordFlags:
+- Compressed
+- CantWait
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  MagickaOffset: -25
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 1
+  CalcMinLevel: 3
+  CalcMaxLevel: 20
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: -50
+Voice: 013AD2:Skyrim.esm
+Race: 013741:Skyrim.esm
+AttackRace: 013746:Skyrim.esm
+AIData:
+  EnergyLevel: 50
+  Responsibility: NoCrime
+Packages:
+- 016FA9:Skyrim.esm
+Class: 01E7D0:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Dead Wizard
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 5
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 10
+  - Key: Speech
+    Value: 10
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 20
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 10
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 40
+  Magicka: 105
+  Stamina: 80
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+HairColor: 0A0433:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 15
+SoundLevel: Normal
+DefaultOutfit: 0D3E05:Skyrim.esm
+DefaultPackageList: 017040:Skyrim.esm
+TextureLighting: '#00706156'
+FaceMorph:
+  NoseLongVsShort: 0.06
+  NoseUpVsDown: 0.8
+  JawUpVsDown: -0.52
+  JawNarrowVsWide: -1
+  JawForwardVsBack: 0.84
+  CheeksUpVsDown: -0.18
+  CheeksForwardVsBack: 0.5
+  EyesUpVsDown: 0.9
+  EyesInVsOut: 0.04
+  BrowsUpVsDown: -0.8
+  BrowsInVsOut: 0.4
+  BrowsForwardVsBack: 0.26
+  LipsUpVsDown: 0.26
+  LipsInVsOut: -0.24
+  ChinNarrowVsWide: -0.34
+  ChinUpVsDown: 0.1
+  ChinUnderbiteVsOverbite: 0.78
+  EyesForwardVsBack: -0.24
+  Unknown: 3.4028235E+38
+TintLayers:
+- Index: 2
+  Color: '#00706156'
+  InterpolationValue: 1
+  Preset: 79
+MajorFlags:
+- 0x40000
+- 0x80000

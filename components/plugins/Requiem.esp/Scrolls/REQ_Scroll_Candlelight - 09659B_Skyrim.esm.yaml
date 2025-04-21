@@ -1,0 +1,30 @@
+FormKey: 09659B:Skyrim.esm
+EditorID: REQ_Scroll_Candlelight
+Version2: 11
+ObjectBounds:
+  First: -15, -4, -3
+  Second: 15, 4, 3
+Name:
+  TargetLanguage: English
+  Value: Scroll of Candlelight
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Clutter\Common\Scroll02.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 25
+Weight: 0.5
+BaseCost: 123
+Flags:
+- NoAbsorbOrReflect
+CastType: 3
+Effects:
+- BaseEffect: 01EA6C:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300

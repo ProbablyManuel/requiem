@@ -1,0 +1,19 @@
+FormKey: AE362C:Requiem.esp
+EditorID: REQ_Rack_Light_NetchLeather_Body_Boiled
+Items:
+- Item:
+    Item: ADDD7A:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDD7A:Requiem.esp
+CreatedObject: 01CD7C:Dragonborn.esm
+WorkbenchKeyword: 07866A:Skyrim.esm
+CreatedObjectCount: 2

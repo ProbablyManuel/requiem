@@ -1,0 +1,37 @@
+FormKey: 0A44B2:Skyrim.esm
+EditorID: REQ_Scroll_Blizzard
+Version2: 14
+ObjectBounds:
+  First: -15, -4, -3
+  Second: 15, 4, 3
+Name:
+  TargetLanguage: English
+  Value: Scroll of Blizzard
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Clutter\Common\Scroll03.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 500
+Weight: 0.5
+BaseCost: 1106
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+ChargeTime: 4.5
+CastType: 3
+Effects:
+- BaseEffect: 0B72A1:Skyrim.esm
+  Data:
+    Magnitude: 75
+    Area: 100
+    Duration: 10
+- BaseEffect: 0B79FE:Skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 10

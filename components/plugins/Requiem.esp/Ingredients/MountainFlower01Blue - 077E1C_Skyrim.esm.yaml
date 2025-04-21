@@ -1,0 +1,37 @@
+FormKey: 077E1C:Skyrim.esm
+EditorID: MountainFlower01Blue
+Version2: 4
+ObjectBounds:
+  First: -3, -3, -7
+  Second: 3, 3, 7
+Name:
+  TargetLanguage: English
+  Value: Blue Mountain Flower
+Keywords:
+- 08CDEB:Skyrim.esm
+- 0A0E54:Skyrim.esm
+Model:
+  File: Plants\MountainFlower01Blue.nif
+  Data: 0x02000000020000000000000066BE98C764647300134C1EFAF698578864647300134C1EFA
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 0.25
+    Duration: 10
+- BaseEffect: 03EB25:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EAF3:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 5

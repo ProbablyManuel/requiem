@@ -1,0 +1,49 @@
+FormKey: 013CA9:Skyrim.esm
+EditorID: REQ_Destruction1_Flames_FireDamage
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 2FFEAD:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+MagicSkill: Destruction
+ResistValue: ResistFire
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 01B212:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 0.1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FCF:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 026113:Skyrim.esm
+SkillUsageMultiplier: 0.5
+DualCastScale: 1
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5E4:Skyrim.esm
+- Type: Release
+  Sound: 03F2EA:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster evokes a gout that burns everyone inside for <mag> fire damage per second. When the spell is released, the flames slowly dim. Targets already on fire take extra damage. Casting multiple Firesparks at the same target will not increase the applied damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 013CA9:Skyrim.esm

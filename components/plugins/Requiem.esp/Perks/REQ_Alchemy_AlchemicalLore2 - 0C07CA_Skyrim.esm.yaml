@@ -1,0 +1,27 @@
+FormKey: 0C07CA:Skyrim.esm
+EditorID: REQ_Alchemy_AlchemicalLore2
+Name:
+  TargetLanguage: English
+  Value: Alchemical Lore
+Description:
+  TargetLanguage: English
+  Value: Through obscure knowledge, you now can enhance your mixtures and craft alchemistic powders at a smelter. <br> Besides, your sensory organs have become very keen. Thus, you determine all the alchemical properties of consumed ingredients.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE127:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 5
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  EntryPoint: ModInitialIngredientEffectsLearned
+  PerkConditionTabCount: 2
+  Value: 4
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModAlchemyEffectiveness
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.5

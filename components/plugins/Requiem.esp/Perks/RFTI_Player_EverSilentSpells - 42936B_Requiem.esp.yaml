@@ -1,0 +1,23 @@
+FormKey: 42936B:Requiem.esp
+EditorID: RFTI_Player_EverSilentSpells
+Name:
+  TargetLanguage: English
+  Value: 'REQ Magic: Always silent spells'
+Description:
+  TargetLanguage: English
+  Value: since setting the spell's noise level to the lowest possible still causes detection, we hardcode that some specific spells should be noiseless
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsInListConditionData
+        FormList: 7A98E2:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModSpellCastingSoundEvent
+  PerkConditionTabCount: 2
+  Value: 0

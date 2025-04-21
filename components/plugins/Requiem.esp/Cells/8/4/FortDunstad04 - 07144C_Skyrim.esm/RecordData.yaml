@@ -1,0 +1,67 @@
+FormKey: 07144C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortDunstad04
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Stumbling Sabrecat
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#001A133E'
+  DirectionalColor: '#00024951'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00142F2E'
+    DirectionalXMinus: '#00112F29'
+    DirectionalYPlus: '#0013312C'
+    DirectionalYMinus: '#00132C2C'
+    DirectionalZPlus: '#00091613'
+    DirectionalZMinus: '#001C4744'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 06909B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01917E:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+EncounterZone: 03EC1C:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 08AD21:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917E:Skyrim.esm
+  EnableParent:
+    Reference: 0E604E:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: 809.79846, 604.50275, 672.26074
+    Rotation: 0, 0, 4.5113883
+MajorFlags:
+- 0x40000

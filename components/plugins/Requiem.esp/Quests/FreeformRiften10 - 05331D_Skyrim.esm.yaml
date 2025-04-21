@@ -1,0 +1,145 @@
+FormKey: 05331D:Skyrim.esm
+EditorID: FreeformRiften10
+VirtualMachineAdapter:
+  Scripts:
+  - Name: FFR10QuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFR10Quest
+      Object: 05331D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFF10SaltCount
+      Object: 0FE69D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pSalt
+      Object: 03AD5E:Skyrim.esm
+  - Name: QF_FreeformRiften10_0005331D
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFR10QS
+      Object: 05331D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften10Balimund
+      Object: 05331D:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFRiften10Firesalt
+      Object: 03AD5E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften10PlayerAlias
+      Object: 05331D:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFRTQS
+      Object: 065BDF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFRiften10Gold
+      Object: AD3749:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pThaneCount
+      Object: 065BE0:Skyrim.esm
+  FileName: QF_FreeformRiften10_0005331D
+  Fragments:
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften10_0005331D
+    FragmentName: Fragment_2
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften10_0005331D
+    FragmentName: Fragment_5
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften10_0005331D
+    FragmentName: Fragment_9
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: QF_FreeformRiften10_0005331D
+    FragmentName: Fragment_0
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 05331D:Skyrim.esm
+      Alias: 0
+    Scripts:
+    - Name: defaultsetstagealiasscript
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 250
+  - Property:
+      Name: ''
+      Object: 05331D:Skyrim.esm
+      Alias: 1
+    Scripts:
+    - Name: FFRiften10PlayerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pFFR10QS
+        Object: 05331D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pSalt
+        Object: 03AD5E:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pFFR10Quest
+        Object: 05331D:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Stoking the Flames
+Flags:
+- StartGameEnabled
+- 0x10
+Priority: 40
+QuestFormVersion: 65
+Type: Misc
+TextDisplayGlobals:
+- 0FE69E:Skyrim.esm
+- 0FE69D:Skyrim.esm
+Filter: Dialogue\The Rift\Riften\
+Stages:
+- Index: 10
+  Flags:
+  - StartUpStage
+  Unknown: 97
+  LogEntries:
+  - Flags: []
+- Index: 20
+  Unknown: 67
+  LogEntries:
+  - Flags: []
+- Index: 200
+  Unknown: 101
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+- Index: 250
+  LogEntries:
+  - Flags: []
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Collect 10 fire salts for Balimund (<Global=FFR10SaltCount>/<Global=FFR10SaltTotal>)
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Bring the 10 fire salts to Balimund, the Riften blacksmith
+  Targets:
+  - {}
+NextAliasID: 2
+Aliases:
+- Name: FFRiften10Balimund
+  Flags:
+  - ReservesLocationOrReference
+  UniqueActor: 01334C:Skyrim.esm
+  VoiceTypes: Null
+- ID: 1
+  Name: FFRiften10PlayerAlias
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null

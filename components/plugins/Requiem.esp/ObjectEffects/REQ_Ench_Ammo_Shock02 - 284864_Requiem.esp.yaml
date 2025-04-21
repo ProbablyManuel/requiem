@@ -1,0 +1,19 @@
+FormKey: 284864:Requiem.esp
+EditorID: REQ_Ench_Ammo_Shock02
+Name:
+  TargetLanguage: English
+  Value: Shock Damage
+EnchantmentCost: 64
+CastType: FireAndForget
+EnchantmentAmount: 64
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 04605C:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Duration: 1
+- BaseEffect: 19DC31:Requiem.esp
+  Data:
+    Magnitude: 80
+    Duration: 1

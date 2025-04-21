@@ -1,0 +1,41 @@
+FormKey: ADDDA4:Requiem.esp
+MajorRecordFlagsRaw: 64
+EditorID: REQ_Light_Alikr_Shield
+SkyrimMajorRecordFlags:
+- 0x40
+Name:
+  TargetLanguage: English
+  Value: Alik'r Shield
+ObjectEffect: 0FC05D:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: creationclub\SBJSSE001\weapons\RedguardShield\RedguardShield.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: creationclub\SBJSSE001\weapons\RedguardShield\RedguardShield.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Shield
+  ActsLike44: True
+EquipmentType: 0141E8:Skyrim.esm
+BashImpactDataSet: 0183FB:Skyrim.esm
+AlternateBlockMaterial: 016978:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- ADDD9F:Requiem.esp
+- 08F959:Skyrim.esm
+- 0965B2:Skyrim.esm
+- 06BBD3:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 000808:ccedhsse003-redguard.esl
+Value: 100
+Weight: 5
+ArmorRating: 120
+MajorFlags:
+- Shield

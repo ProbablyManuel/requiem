@@ -1,0 +1,31 @@
+FormKey: AE3720:Requiem.esp
+EditorID: REQ_Food_Nutrition
+Name:
+  TargetLanguage: English
+  Value: Nutrition
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD380E:Requiem.esp
+Flags:
+- NoDuration
+- NoArea
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: Magicka
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Consumed out of combat, it restores <mag> stamina and magicka.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInCombatConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

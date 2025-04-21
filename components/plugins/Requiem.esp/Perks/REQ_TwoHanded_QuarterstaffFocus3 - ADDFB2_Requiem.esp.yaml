@@ -1,0 +1,28 @@
+FormKey: ADDFB2:Requiem.esp
+EditorID: REQ_TwoHanded_QuarterstaffFocus3
+Name:
+  TargetLanguage: English
+  Value: Quarterstaff Focus
+Description:
+  TargetLanguage: English
+  Value: You've become a master of quarterstaff combat.<br>[+30% attack speed with quarterstaves, +36% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: ADDFB1:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: TwoHanded
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: ADDFB7:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Ability: ADDFB8:Requiem.esp

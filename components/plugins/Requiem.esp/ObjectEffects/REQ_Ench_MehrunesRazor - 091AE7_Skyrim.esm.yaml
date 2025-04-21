@@ -1,0 +1,16 @@
+FormKey: 091AE7:Skyrim.esm
+EditorID: REQ_Ench_MehrunesRazor
+Name:
+  TargetLanguage: English
+  Value: Mehrunes Razor Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 091AE5:Skyrim.esm
+  Data:
+    Magnitude: 600
+- BaseEffect: AE3888:Requiem.esp
+  Data: {}

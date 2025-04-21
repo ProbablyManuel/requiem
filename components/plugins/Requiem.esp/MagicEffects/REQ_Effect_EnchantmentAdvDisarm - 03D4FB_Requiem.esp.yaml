@@ -1,0 +1,27 @@
+FormKey: 03D4FB:Requiem.esp
+EditorID: REQ_Effect_EnchantmentAdvDisarm
+Name:
+  TargetLanguage: English
+  Value: Disarm
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 0.9
+TaperWeight: 0.2
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Disarm
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Causes targets up to a certain strength to drop their weapons.

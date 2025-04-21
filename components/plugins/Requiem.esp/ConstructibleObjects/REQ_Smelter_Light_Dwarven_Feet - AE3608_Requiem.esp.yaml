@@ -1,0 +1,22 @@
+FormKey: AE3608:Requiem.esp
+EditorID: REQ_Smelter_Light_Dwarven_Feet
+Items:
+- Item:
+    Item: 43D07D:Requiem.esp
+    Count: 1
+- Item:
+    Item: ADDD72:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDD72:Requiem.esp
+CreatedObject: 0DB8A2:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

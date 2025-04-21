@@ -1,0 +1,18 @@
+FormKey: 029B57:Skyrim.esm
+EditorID: StaffEnchConjureAtronachStorm
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Summon Storm Atronach
+EnchantmentCost: 1500
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 1500
+TargetType: TargetLocation
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 01CEAC:Skyrim.esm
+  Data:
+    Duration: 20

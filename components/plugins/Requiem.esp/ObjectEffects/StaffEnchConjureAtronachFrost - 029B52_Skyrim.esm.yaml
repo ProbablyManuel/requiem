@@ -1,0 +1,18 @@
+FormKey: 029B52:Skyrim.esm
+EditorID: StaffEnchConjureAtronachFrost
+Version2: 4
+Name:
+  TargetLanguage: English
+  Value: Summon Frost Atronach
+EnchantmentCost: 1000
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 1000
+TargetType: TargetLocation
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 01CEAB:Skyrim.esm
+  Data:
+    Duration: 20

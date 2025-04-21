@@ -1,0 +1,18 @@
+FormKey: AE3913:Requiem.esp
+EditorID: REQ_Ench_SaviorsHide_ResistPoison
+Name:
+  TargetLanguage: English
+  Value: Resist Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: PoisonResist
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Poison deals <mag>% less damage to you (30% plus another 9% per great beast slain).

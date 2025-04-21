@@ -1,0 +1,58 @@
+FormKey: 017730:Dragonborn.esm
+EditorID: REQ_Destruction_WhirlwindCloak_DamageHealth
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2WhirlwindDamageScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: force
+      Data: 10
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 027C31:Dragonborn.esm
+Keywords:
+- 3FCA4C:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 2
+MagicSkill: Destruction
+ResistValue: ResistMagic
+CastingLight: 032DAA:Skyrim.esm
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 018123:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: Health
+CastingArt: 020BF5:Skyrim.esm
+ImpactData: 018A2E:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5CB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1

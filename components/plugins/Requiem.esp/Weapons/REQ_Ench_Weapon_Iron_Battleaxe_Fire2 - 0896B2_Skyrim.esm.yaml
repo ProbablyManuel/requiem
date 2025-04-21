@@ -1,0 +1,54 @@
+FormKey: 0896B2:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Iron_Battleaxe_Fire2
+ObjectBounds:
+  First: -19, -39, -2
+  Second: 22, 57, 2
+Name:
+  TargetLanguage: English
+  Value: Iron Battleaxe of Burning
+Model:
+  File: Weapons\Iron\IronBattleAxe.nif
+  Data: 0x0200000008000000000000004FABDC0564647300A0B86305D09B0BBB64647300A0B86305B221CCA164647300A0B86305DA8E929164647300262C333B4B7144686464730068EFBA75E4B2A6A36464730068EFBA756BBB96D164647300262C333BFD4433776464730068EFBA75
+ObjectEffect: 045C2A:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E718:Skyrim.esm
+- 06D932:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 036A5B:Skyrim.esm
+FirstPersonModel: 036BAB:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 06036A:Skyrim.esm
+UnequipSound: 0605D3:Skyrim.esm
+BasicStats:
+  Value: 55
+  Weight: 20
+  Damage: 17
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.7
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1068708659
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.15
+Critical:
+  Damage: 8
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud
+Template: 013980:Skyrim.esm

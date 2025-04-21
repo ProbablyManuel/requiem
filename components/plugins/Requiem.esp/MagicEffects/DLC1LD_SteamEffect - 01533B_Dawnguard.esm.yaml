@@ -1,0 +1,31 @@
+FormKey: 01533B:Dawnguard.esm
+EditorID: DLC1LD_SteamEffect
+Name:
+  TargetLanguage: English
+  Value: Steam Damage
+Keywords:
+- 015334:Dawnguard.esm
+Flags:
+- Hostile
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoHitEffect
+ResistValue: ResistFire
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm

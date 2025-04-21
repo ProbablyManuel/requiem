@@ -1,0 +1,116 @@
+FormKey: 000835:ccbgssse041-netchleather.esl
+EditorID: ccBGSSSE041_DialogueQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_EnableMarker01REF
+      Object: 00084B:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 00081C:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_DLC2NetchLeatherBetty
+      Object: 000893:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Leather01
+      Object: 0DB5D2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_DLC2NetchLeatherFake
+      Object: 0008A3:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_FeastNetchLeatherREF
+      Object: 0008E5:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_DLC2NetchLeather
+      Object: 000892:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_FoodSwitchREF
+      Object: 0008E0:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_FakeLeatherREF
+      Object: 0008E8:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Chief
+      Object: 000835:ccbgssse041-netchleather.esl
+      Alias: 0
+  FileName: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+  Fragments:
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+    FragmentName: Fragment_2
+  - Stage: 5
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+    FragmentName: Fragment_9
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+    FragmentName: Fragment_0
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+    FragmentName: Fragment_1
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+    FragmentName: Fragment_4
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+    FragmentName: Fragment_3
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: SSE_QF_ccBGSSSE041_DialogueQu_05000835
+    FragmentName: Fragment_8
+Flags:
+- RunOnce
+QuestFormVersion: 65
+DialogConditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+  ComparisonValue: 1
+Stages:
+- {}
+- Index: 1
+  Unknown: 172
+- Index: 5
+  Unknown: 163
+  LogEntries:
+  - Flags: []
+- Index: 10
+  Unknown: 203
+  LogEntries:
+  - Flags: []
+- Index: 20
+- Index: 30
+  LogEntries:
+  - Flags: []
+- Index: 40
+  LogEntries:
+  - Flags: []
+- Index: 50
+  LogEntries:
+  - Flags: []
+- Index: 60
+  LogEntries:
+  - Flags: []
+- Index: 100
+  LogEntries:
+  - Flags: []
+NextAliasID: 8
+Aliases:
+- Name: Chief
+  Flags:
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  - AllowDestroyed
+  - UsesStoredText
+  ForcedReference: 00082C:ccbgssse041-netchleather.esl
+  DisplayName: 000853:ccbgssse041-netchleather.esl
+  VoiceTypes: Null

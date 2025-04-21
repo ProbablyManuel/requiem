@@ -1,0 +1,60 @@
+FormKey: 027F95:Requiem.esp
+EditorID: REQ_Alteration5_TelekineticBlast_TelekineticBlast
+VirtualMachineAdapter:
+  Scripts:
+  - Name: voicepusheffectscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 20
+Name:
+  TargetLanguage: English
+  Value: Telekinetic Blast
+MenuDisplayObject: 1097CB:Skyrim.esm
+Keywords:
+- 0806E1:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- PowerAffectsMagnitude
+BaseCost: 2
+MagicSkill: Alteration
+CastingLight: 0D13E7:Skyrim.esm
+TaperWeight: 1
+MinimumSkillLevel: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 014000:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 10F7A1:Skyrim.esm
+ImpactData: 015C7B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 0E755C:Skyrim.esm
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Type: Release
+  Sound: 0A0F54:Skyrim.esm
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA53:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster unleashes a wave of telekinetic force that will maim every single bone of the targets while sending them flying through the air.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0172AC:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 50

@@ -1,0 +1,51 @@
+FormKey: 0282F7:Dragonborn.esm
+EditorID: REQ_Ench_Weapon_Quicksilver_Mace_Magicka3
+Name:
+  TargetLanguage: English
+  Value: Quicksilver Mace of Diminishing
+Model:
+  File: DLC02\Weapons\Nordic\NordicMace.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 05B455:Skyrim.esm
+EnchantmentAmount: 1500
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0774C1:Skyrim.esm
+Keywords:
+- 01E714:Skyrim.esm
+- 08F958:Skyrim.esm
+- 026230:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B7:Skyrim.esm
+FirstPersonModel: 03C352:Dragonborn.esm
+AttackFailSound: 105D43:Skyrim.esm
+EquipSound: 03DE2A:Skyrim.esm
+UnequipSound: 03DE2B:Skyrim.esm
+BasicStats:
+  Value: 130
+  Weight: 15
+  Damage: 12
+Data:
+  AnimationType: OneHandMace
+  Unused: 0x000000
+  Speed: 0.8
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 1
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 01CDB0:Dragonborn.esm

@@ -1,0 +1,27 @@
+FormKey: 01AAE2:Dragonborn.esm
+EditorID: REQ_Potion_WellBeingComplete
+Name:
+  TargetLanguage: English
+  Value: Potion of Well-being (Surpassing)
+Keywords:
+- 08CDEC:Skyrim.esm
+Model:
+  File: Clutter\Potions\PotionHealthExtreme.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 1500
+Flags:
+- NoAutoCalc
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 0FFA03:Skyrim.esm
+  Data:
+    Magnitude: 9999
+- BaseEffect: 0FFA04:Skyrim.esm
+  Data:
+    Magnitude: 9999
+- BaseEffect: 0FFA05:Skyrim.esm
+  Data:
+    Magnitude: 9999

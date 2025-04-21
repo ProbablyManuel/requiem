@@ -1,0 +1,19 @@
+FormKey: 0009E3:Requiem.esp
+EditorID: REQ_AbShow_DrainHealthRegeneration
+Name:
+  TargetLanguage: English
+  Value: Drain Health Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: HealRateMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health regenerates <mag>% slower.

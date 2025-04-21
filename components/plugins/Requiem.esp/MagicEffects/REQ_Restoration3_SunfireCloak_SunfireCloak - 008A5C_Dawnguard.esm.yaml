@@ -1,0 +1,38 @@
+FormKey: 008A5C:Dawnguard.esm
+EditorID: REQ_Restoration3_SunfireCloak_SunfireCloak
+Name:
+  TargetLanguage: English
+  Value: Sunfire Cloak
+MenuDisplayObject: 018F02:Dawnguard.esm
+Keywords:
+- 0B62E4:Skyrim.esm
+- 3FCA4C:Requiem.esp
+Flags:
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 2.75
+MagicSkill: Restoration
+CastingLight: 03F1B5:Skyrim.esm
+HitShader: 00A3BC:Dawnguard.esm
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.3
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 008A60:Dawnguard.esm
+CastType: FireAndForget
+CastingArt: 00A3BD:Dawnguard.esm
+HitEffectArt: 00A3B7:Dawnguard.esm
+DualCastScale: 1
+ImageSpaceModifier: 00A3BE:Dawnguard.esm
+Sounds:
+- Sound: 05A018:Skyrim.esm
+- Type: Charge
+  Sound: 00D94A:Dawnguard.esm
+- Type: Ready
+  Sound: 03F37D:Skyrim.esm
+- Type: Release
+  Sound: 00D94B:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: The caster enshrouds himself in bright, almost searing light. For <dur> seconds, undead in its range take <30> sun damage per second.

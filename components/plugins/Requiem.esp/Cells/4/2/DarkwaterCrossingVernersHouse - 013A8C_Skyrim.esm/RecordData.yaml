@@ -1,0 +1,72 @@
+FormKey: 013A8C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DarkwaterCrossingVernersHouse
+Version2: 1
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Verner and Annekke's House
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020A11:Skyrim.esm
+Owner: 09C6F1:Skyrim.esm
+LockList: 09C6FC:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5854:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 0B9DCB:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 013B0A:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 029CB0:Skyrim.esm
+  TeleportDestination:
+    Door: 076B48:Skyrim.esm
+    Position: 121427, -33873.324, -9792.614
+    Rotation: 0, -0, -2.7831528
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Key: 09C6FD:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0E5562:Skyrim.esm
+    TeleportMarkerTriangle: 2
+  Owner: 09C6F1:Skyrim.esm
+  LocationReference: 020A11:Skyrim.esm
+  Placement:
+    Position: -1631.8445, -997.05304, 3.8146973E-06
+    Rotation: 0, -0, 3.1415927
+MajorFlags:
+- 0x40000

@@ -1,0 +1,21 @@
+FormKey: 5F3681:Requiem.esp
+EditorID: REQ_Attack_Race_KnockdownStrong
+Name:
+  TargetLanguage: English
+  Value: StaggerFun
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 5F3680:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1

@@ -1,0 +1,195 @@
+FormKey: 0E7EA9:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: dunHunterBear
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultGhostScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostCorpse
+      Object: 0C674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostWeaponFlickerList
+      Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
+ObjectBounds:
+  First: -65, -100, 0
+  Second: 65, 100, 98
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - DoesNotBleed
+  MagickaOffset: -25
+  StaminaOffset: -25
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 32
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - AIData
+  - AIPackages
+  - Inventory
+  - Script
+  - DefPackList
+  HealthOffset: -25
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02E893:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 03E093:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0FBBF3:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD8B:Skyrim.esm
+Voice: 01F14E:Skyrim.esm
+Template: 023A8A:Skyrim.esm
+Race: 0131E9:Skyrim.esm
+ActorEffect:
+- 05030B:Skyrim.esm
+Perks:
+- Perk: 031284:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0FAB0A:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  Warn: 2500
+  WarnOrAttack: 2000
+  Attack: 1000
+Keywords:
+- 000EDF:Skyrim.esm
+- 013796:Skyrim.esm
+- 0D205E:Skyrim.esm
+- 0F23C5:Skyrim.esm
+Class: 01CE17:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Ursine Guardian
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 72
+  - Key: TwoHanded
+    Value: 73
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 50
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 28
+  - Key: LightArmor
+    Value: 50
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 368
+  Magicka: 65511
+  Stamina: 337
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 08E665:Skyrim.esm
+NAM5: 255
+Height: 1.1
+Weight: 100
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 08A3C2:Skyrim.esm
+DefaultPackageList: 095F47:Skyrim.esm
+TextureLighting: '#007E7E7E'
+MajorFlags:
+- 0x40000

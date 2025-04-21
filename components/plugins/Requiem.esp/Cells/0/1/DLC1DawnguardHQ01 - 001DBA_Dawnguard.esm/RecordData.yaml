@@ -1,0 +1,127 @@
+FormKey: 001DBA:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1DawnguardHQ01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Dawnguard
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#0062EE8F'
+  DirectionalColor: '#003A442F'
+  FogNearColor: '#009BA28C'
+  FogNear: 1400
+  FogFar: 9000
+  FogClipDistance: 9000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002D291F'
+    DirectionalXMinus: '#0024291C'
+    DirectionalYPlus: '#00292A1E'
+    DirectionalYMinus: '#0029271E'
+    DirectionalZPlus: '#0013130D'
+    DirectionalZMinus: '#003E3E2E'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00949B84'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 094E50:Skyrim.esm
+WaterHeight: 0
+Location: 0128FE:Dawnguard.esm
+SkyAndWeatherFromRegion: 0C5858:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 01290A:Dawnguard.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x00CCFB000000000000000000000000005A1E9734AF010031B147D6B5
+  LocationReference: 0128FE:Dawnguard.esm
+  EnableParent:
+    Reference: 014679:Dawnguard.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -2203.9463, 495.33823, 574.9792
+    Rotation: 1.570798, 1.5499763, 3.1415944
+- MutagenObjectType: PlacedObject
+  FormKey: 012907:Dawnguard.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x00491334000080B60000803500000000000000800000008083FA9FB5
+  LeveledItemBaseObject: 0165B9:Skyrim.esm
+  LocationReference: 0128FE:Dawnguard.esm
+  Placement:
+    Position: -1257.6936, 871.5087, -47.17962
+    Rotation: 1.5707964, 0.28340134, 3.1415927
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 00B5E5:Dawnguard.esm
+  Base: 4CAABF:Requiem.esp
+  RagdollData: 0x0010D62800000000000000000000000092F7C8BFD9A7AA3CBBE8484000726448E0FE154000000000000000BABC2CDCB5C06C823755F8C93F
+  LocationReference: 0128FE:Dawnguard.esm
+  Placement:
+    Position: -3487.788, 134.38452, -38
+    Rotation: 0, 0, 0.7750082
+- MutagenObjectType: PlacedObject
+  FormKey: 010285:Dawnguard.esm
+  Version2: 2
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0128FE:Dawnguard.esm
+  Placement:
+    Position: -3202.9956, -364.23828, -127.99988
+    Rotation: 0, -0, 0.10819828
+- MutagenObjectType: PlacedObject
+  FormKey: 014654:Dawnguard.esm
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x00075550000000000000000000000000116C7BBE741E72BD14D9AD3E
+  LocationReference: 0128FE:Dawnguard.esm
+  Placement:
+    Position: -4142.737, 427.5857, -131.23285
+    Rotation: 3.166912, 0.033002432, 5.383608
+- MutagenObjectType: PlacedObject
+  FormKey: 00FEB2:Dawnguard.esm
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x00082E36000000000000000000000000969919BD93F4C9BC77F442BF
+  LocationReference: 0128FE:Dawnguard.esm
+  Placement:
+    Position: -1532.6134, 748.2092, -76.76496
+- MutagenObjectType: PlacedObject
+  FormKey: 0146A6:Dawnguard.esm
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x0007FF6200000000000000000000000029F947B400004633B0653836
+  LocationReference: 0128FE:Dawnguard.esm
+  EnableParent:
+    Reference: 014679:Dawnguard.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -2080.2954, 67.958534, 551.4216
+    Rotation: 3.0939505, 0.078255326, 4.2313256
+MajorFlags:
+- 0x40000

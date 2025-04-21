@@ -1,0 +1,57 @@
+FormKey: 02F83E:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HighGateRuins02
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: High Gate Ruins Catacombs
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#003C3C3C'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 750
+  FogFar: 6500
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - ClipDistance
+LightingTemplate: 0EDA91:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019195:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC34:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B405F:Skyrim.esm
+  Base: 020670:Skyrim.esm
+  Scale: 0.82
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019195:Skyrim.esm
+  Placement:
+    Position: -733.0762, 677.9401, -624.4569
+    Rotation: 0, -0, 0.04159875
+MajorFlags:
+- 0x40000

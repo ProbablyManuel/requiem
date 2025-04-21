@@ -1,0 +1,29 @@
+FormKey: 10FC12:Skyrim.esm
+EditorID: REQ_Ench_Konahrik_DragonPriest_SummonDragonPriest
+Name:
+  TargetLanguage: English
+  Value: Summon Dragon Priest
+MenuDisplayObject: 0A6459:Skyrim.esm
+Keywords:
+- 02482B:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+CastingLight: 03BA90:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: 10FC15:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 03CDFC:Skyrim.esm
+HitEffectArt: 03F811:Skyrim.esm
+ImpactData: 03A1E9:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 06F79B:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Konahrik binds the ghost of a terrifying dragon priest that brings death upon all who dare to cross its path for <dur> seconds.

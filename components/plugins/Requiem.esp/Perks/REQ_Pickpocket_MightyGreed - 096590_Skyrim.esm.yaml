@@ -1,0 +1,25 @@
+FormKey: 096590:Skyrim.esm
+EditorID: REQ_Pickpocket_MightyGreed
+Name:
+  TargetLanguage: English
+  Value: Mighty Greed
+Description:
+  TargetLanguage: English
+  Value: You are either very strong or very greedy... You now can carry more items <br> without becoming overencumbered.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058202:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Pickpocket
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 096592:Skyrim.esm

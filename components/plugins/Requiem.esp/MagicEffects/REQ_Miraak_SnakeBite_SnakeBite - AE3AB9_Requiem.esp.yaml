@@ -1,0 +1,37 @@
+FormKey: AE3AB9:Requiem.esp
+EditorID: REQ_Miraak_SnakeBite_SnakeBite
+Name:
+  TargetLanguage: English
+  Value: Snake Bite
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 0.9
+TaperWeight: 0.2
+HitShader: 06DE84:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: PoisonResist
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Target is <mag>% weaker to poison for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: PoisonResist
+  ComparisonValue: 86

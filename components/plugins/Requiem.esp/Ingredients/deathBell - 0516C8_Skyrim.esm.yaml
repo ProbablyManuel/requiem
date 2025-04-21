@@ -1,0 +1,38 @@
+FormKey: 0516C8:Skyrim.esm
+EditorID: deathBell
+Version2: 5
+ObjectBounds:
+  First: -4, -7, 0
+  Second: 11, 7, 10
+Name:
+  TargetLanguage: English
+  Value: Deathbell
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\DeathBell01.nif
+  Data: 0x020000000200000000000000DB38D3A664647300134C1EFA5D0FE7DD64647300134C1EFA
+PickUpSound: 0517C9:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 4
+Weight: 0.1
+IngredientValue: 4
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 5
+- BaseEffect: 073F23:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 20
+- BaseEffect: 073F25:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5
+- BaseEffect: 090042:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30

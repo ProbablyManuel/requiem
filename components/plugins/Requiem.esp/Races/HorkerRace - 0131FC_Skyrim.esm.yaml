@@ -1,0 +1,187 @@
+FormKey: 0131FC:Skyrim.esm
+EditorID: HorkerRace
+Version2: 7
+Name:
+  TargetLanguage: English
+  Value: Horker
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 08CACA:Skyrim.esm
+Skin: 08CA6A:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013798:Skyrim.esm
+- 013795:Skyrim.esm
+- 586728:Requiem.esp
+- 5F367F:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1.2
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- Swims
+- Walks
+- CantOpenDoors
+Starting:
+- Key: Health
+  Value: 160
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 150
+BaseCarryWeight: 200
+BaseMass: 3.5
+AccelerationRate: 3
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 15
+UnarmedDamage: 35
+UnarmedReach: 64
+BodyBipedObject: Body
+AimAngleTolerance: 10
+AngularAccelerationRate: 1
+AngularTolerance: 45
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Horker\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Horker\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F22D:Skyrim.esm
+  Female: 01F22D:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.4
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    AttackAngle: 10
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_HorkerSwim
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPowerShort
+- AttackData:
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft2
+- AttackData:
+    DamageMult: 1
+    Chance: 0.4
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 08CA6B:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Horker\HorkerProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Horker\HorkerProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 042ABA:Skyrim.esm
+DecapitationFX: 0A6EF5:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x2000000
+- 0x4000000
+- 0x8000000
+- 0x10000000
+- 0x20000000
+- 0x40000000
+- 0x80000000
+- 0x0
+EquipmentSlots:
+- 013F42:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 05965A:Skyrim.esm
+BaseMovementDefaultRun: 05965A:Skyrim.esm
+BaseMovementDefaultSwim: 0C9EDA:Skyrim.esm

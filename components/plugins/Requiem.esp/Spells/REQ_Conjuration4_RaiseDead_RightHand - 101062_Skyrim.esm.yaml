@@ -1,0 +1,25 @@
+FormKey: 101062:Skyrim.esm
+EditorID: REQ_Conjuration4_RaiseDead_RightHand
+Name:
+  TargetLanguage: English
+  Value: Dread Zombie
+MenuDisplayObject: 1097CC:Skyrim.esm
+EquipmentType: 013F42:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 257
+Flags:
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44BD:Skyrim.esm
+Effects:
+- BaseEffect: 016C3D:Skyrim.esm
+  Data:
+    Magnitude: 30
+    Duration: 60
+- BaseEffect: 10EAD9:Skyrim.esm
+  Data:
+    Duration: 60

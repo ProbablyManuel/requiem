@@ -1,0 +1,37 @@
+FormKey: AD8C7C:Requiem.esp
+EditorID: REQ_ArmorBonus_Light_Glass_Effect
+Name:
+  TargetLanguage: English
+  Value: Resist Fire
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistFire
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Malachite is a volcanic glass with remarkable heat resistance. Thus, fire deals <mag>% less damage to you <mag>% (6% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 05C84E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    Keyword: 06BBDC:Skyrim.esm
+  ComparisonValue: 1

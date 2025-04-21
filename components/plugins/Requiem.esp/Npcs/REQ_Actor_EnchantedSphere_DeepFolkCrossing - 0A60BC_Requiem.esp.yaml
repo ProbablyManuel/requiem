@@ -1,0 +1,231 @@
+FormKey: 0A60BC:Requiem.esp
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Actor_EnchantedSphere_DeepFolkCrossing
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -31, -40, 0
+  Second: 32, 39, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  StaminaOffset: 175
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 60
+  SpeedMultiplier: 125
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - SpellList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Script
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 1000
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 043598:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03AD82:Skyrim.esm
+Voice: 01F1D0:Skyrim.esm
+Template: 38AA95:Requiem.esp
+Race: 0131F2:Skyrim.esm
+ActorEffect:
+- 33181B:Requiem.esp
+- AD3A65:Requiem.esp
+- ADDDC7:Requiem.esp
+WornArmor: 07874B:Skyrim.esm
+AttackRace: 0131F2:Skyrim.esm
+Attacks:
+- AttackData:
+    DamageMult: 1.75
+    Chance: 0.75
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 60
+    Stagger: 1
+    RecoveryTime: 1.5
+    StaminaMult: 0.01
+  AttackEvent: attackStartForwardPowerChop
+- AttackData:
+    DamageMult: 1.25
+    Chance: 0.5
+    Flags:
+    - OverrideData
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartChop
+- AttackData:
+    DamageMult: 1.25
+    Chance: 0.5
+    Flags:
+    - OverrideData
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartSlash
+- AttackData:
+    DamageMult: 1.25
+    Chance: 0.5
+    Flags:
+    - OverrideData
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartStab
+- AttackData:
+    DamageMult: 1.75
+    Chance: 0.75
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 60
+    Stagger: 0.75
+    RecoveryTime: 1.5
+    StaminaMult: 0.01
+  AttackEvent: attackStartForwardPowerStab
+- AttackData:
+    DamageMult: 1.25
+    Chance: 1
+    Flags:
+    - BashAttack
+    - OverrideData
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 1.25
+    Chance: 0.5
+    Flags:
+    - OverrideData
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartBackSlash
+Perks:
+- Perk: 0FAB0B:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 16F2B0:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: AD3A63:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 0A60BB:Requiem.esp
+    Count: 1
+- Item:
+    Item: 59A467:Requiem.esp
+    Count: 1
+- Item:
+    Item: 59A46E:Requiem.esp
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+Keywords:
+- 0172AC:Skyrim.esm
+- AD3A4F:Requiem.esp
+Class: 090358:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 100
+  - Key: Block
+    Value: 100
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 100
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 75
+  - Key: Illusion
+    Value: 100
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 1577
+  Stamina: 10293
+  Unused: 65535
+  GearedUpWeapons: 1
+  Unused2: 0x000000
+CombatStyle: 07EA48:Skyrim.esm
+NAM5: 255
+Height: 1.5
+Weight: 100
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 06CE2F:Skyrim.esm
+DefaultOutfit: 0F9071:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007F7F7F'
+MajorFlags:
+- 0x40000

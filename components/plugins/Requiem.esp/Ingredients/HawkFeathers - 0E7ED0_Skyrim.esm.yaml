@@ -1,0 +1,35 @@
+FormKey: 0E7ED0:Skyrim.esm
+EditorID: HawkFeathers
+Version2: 14
+ObjectBounds:
+  First: -4, -7, -7
+  Second: 0, 9, 8
+Name:
+  TargetLanguage: English
+  Value: Hawk Feathers
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\HawkFeather01.nif
+  Data: 0x020000000200000000000000168F527564647300604DDD5CF053B6F664647300604DDD5C
+Value: 10
+Weight: 0.1
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 8.4
+    Duration: 60
+- BaseEffect: 0AE722:Skyrim.esm
+  Data:
+    Magnitude: 100
+- BaseEffect: 03EB19:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB22:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

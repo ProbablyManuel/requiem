@@ -1,0 +1,36 @@
+FormKey: AD3B21:Requiem.esp
+EditorID: REQ_CoreScripts_HealingWhileSleeping
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B21:Requiem.esp
+      Alias: 23
+    Scripts:
+    - Name: REQ_HealingWhileSleeping
+      Properties:
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: healWhileSleeping
+        Objects:
+        - Name: ''
+          Object: 065A30:Skyrim.esm
+        - Name: ''
+          Object: 042503:Skyrim.esm
+        - Name: ''
+          Object: 074F61:Skyrim.esm
+        - Name: ''
+          Object: 01CEB0:Skyrim.esm
+        - Name: ''
+          Object: 66CB39:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Healing while sleeping'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 23
+  Name: HealingWhileSleeping
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

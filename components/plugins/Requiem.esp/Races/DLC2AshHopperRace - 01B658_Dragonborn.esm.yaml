@@ -1,0 +1,216 @@
+FormKey: 01B658:Dragonborn.esm
+EditorID: DLC2AshHopperRace
+Name:
+  TargetLanguage: English
+  Value: Ash Hopper
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 02068F:Dragonborn.esm
+- AE35A2:Requiem.esp
+- AE3ACA:Requiem.esp
+Skin: 019B0A:Dragonborn.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013798:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 0F23C5:Skyrim.esm
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: Sneak
+  Boost: 10
+Height:
+  Male: 0.5
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- TiltLeftRight
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- SpellsAlignWithMagicNode
+- CantOpenDoors
+Starting:
+- Key: Health
+  Value: 125
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 120
+BaseCarryWeight: 200
+BaseMass: 1
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 0
+UnarmedDamage: 20
+UnarmedReach: 128
+AimAngleTolerance: 23
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\DLC02\Scrib\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Skeever\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F17B:Dragonborn.esm
+  Female: 019FE5:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0285C1:Dragonborn.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeMedium
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: AE3978:Requiem.esp
+    AttackAngle: 90
+    StrikeAngle: 45
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: AE3978:Requiem.esp
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0285C1:Dragonborn.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPower
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0285C1:Dragonborn.esm
+    StrikeAngle: 35
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPowerShort
+- AttackData:
+    DamageMult: 1.5
+    Spell: 0285C1:Dragonborn.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeLong
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0285C1:Dragonborn.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeShort
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackStart_StandingPower
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: AE3978:Requiem.esp
+    AttackAngle: -90
+    StrikeAngle: 45
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.25
+    Spell: AE3978:Requiem.esp
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 019AD2:Dragonborn.esm
+BehaviorGraph:
+  Male:
+    File: Actors\DLC02\Scrib\ScribProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Skeever\SkeeverProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F41:Skyrim.esm
+ImpactDataSet: 035B35:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+BaseMovementDefaultWalk: 01FEDC:Dragonborn.esm
+BaseMovementDefaultRun: 01FEDC:Dragonborn.esm

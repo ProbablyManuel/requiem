@@ -1,0 +1,31 @@
+FormKey: AE388E:Requiem.esp
+EditorID: REQ_Ench_Divine_FrostDamage
+Name:
+  TargetLanguage: English
+  Value: Frost Damage
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistFrost
+HitShader: 01F03A:Skyrim.esm
+SecondActorValueWeight: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Stamina
+ImpactData: 032DA7:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> frost damage and twice as much stamina damage.

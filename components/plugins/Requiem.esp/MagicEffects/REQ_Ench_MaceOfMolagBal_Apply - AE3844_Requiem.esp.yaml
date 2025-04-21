@@ -1,0 +1,36 @@
+FormKey: AE3844:Requiem.esp
+EditorID: REQ_Ench_MaceOfMolagBal_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_MaceOfMolagBal
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MaceOfMolagBalEnch
+      Object: 091AE4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoulTrapDuration
+      Object: AE38EA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: description
+      Object: AE3875:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Apply Mace of Molag Bal Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

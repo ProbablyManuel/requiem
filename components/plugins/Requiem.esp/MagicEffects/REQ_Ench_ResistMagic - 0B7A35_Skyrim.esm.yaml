@@ -1,0 +1,23 @@
+FormKey: 0B7A35:Skyrim.esm
+EditorID: REQ_Ench_ResistMagic
+Name:
+  TargetLanguage: English
+  Value: Resist Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F58:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 19
+EnchantShader: 092DED:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistMagic
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magic deals <mag>% less damage to you.

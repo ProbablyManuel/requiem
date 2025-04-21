@@ -1,0 +1,20 @@
+FormKey: 106615:Skyrim.esm
+EditorID: REQ_Ench_Chillrend
+Name:
+  TargetLanguage: English
+  Value: Chillrend Enchantment
+EnchantmentCost: 150
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 150
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 106617:Skyrim.esm
+  Data:
+    Magnitude: 30
+    Duration: 1
+- BaseEffect: 106616:Skyrim.esm
+  Data:
+    Duration: 2

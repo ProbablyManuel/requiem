@@ -1,0 +1,29 @@
+FormKey: AE38FF:Requiem.esp
+EditorID: REQ_Ench_HarbingersHelmet_SummonCompanion
+Name:
+  TargetLanguage: English
+  Value: Summon Companion
+MenuDisplayObject: 0A6459:Skyrim.esm
+Keywords:
+- 1091CF:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+CastingLight: 03BA90:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: AE3900:Requiem.esp
+CastType: FireAndForget
+CastingArt: 03CDFC:Skyrim.esm
+HitEffectArt: 06DE87:Skyrim.esm
+ImpactData: 03A1E9:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 06F79B:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: A Companion from Hircine's Hunting Grounds has come to your assistance for <dur> seconds.

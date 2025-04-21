@@ -1,0 +1,22 @@
+FormKey: 2665BD:Requiem.esp
+EditorID: REQ_KynesPeace_RestoreMagicka
+Name:
+  TargetLanguage: English
+  Value: Restore Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD393A:Requiem.esp
+- 046B99:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Restores <mag> magicka.

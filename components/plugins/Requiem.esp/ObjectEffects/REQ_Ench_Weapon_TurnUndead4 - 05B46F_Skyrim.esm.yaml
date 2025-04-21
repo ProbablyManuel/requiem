@@ -1,0 +1,21 @@
+FormKey: 05B46F:Skyrim.esm
+EditorID: REQ_Ench_Weapon_TurnUndead4
+Name:
+  TargetLanguage: English
+  Value: Turn Undead
+EnchantmentCost: 66
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 66
+TargetType: Touch
+EnchantType: Enchantment
+BaseEnchantment: 10FB9C:Skyrim.esm
+Effects:
+- BaseEffect: 05B46B:Skyrim.esm
+  Data:
+    Magnitude: 30
+    Duration: 5
+- BaseEffect: 17D82B:Requiem.esp
+  Data:
+    Magnitude: 30

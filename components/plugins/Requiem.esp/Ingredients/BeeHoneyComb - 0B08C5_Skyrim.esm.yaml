@@ -1,0 +1,37 @@
+FormKey: 0B08C5:Skyrim.esm
+EditorID: BeeHoneyComb
+ObjectBounds:
+  First: -1, -11, -11
+  Second: 1, 11, 8
+Name:
+  TargetLanguage: English
+  Value: Honeycomb
+Keywords:
+- 08CDEB:Skyrim.esm
+- 08CDEA:Skyrim.esm
+Model:
+  File: Critters\Bee\BeeHoneycomb.nif
+  Data: 0x0200000004000000000000003DE20ADD6464730038973CEA241BC5B36464730038973CEA2E7CB2C964647300262C333BFAE0BBA4646473007F66A5C0
+PickUpSound: 10FD51:Skyrim.esm
+Value: 12
+Weight: 1
+IngredientValue: 12
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 20
+- BaseEffect: 03EB1C:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 4.8
+    Duration: 60
+- BaseEffect: 073F23:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10

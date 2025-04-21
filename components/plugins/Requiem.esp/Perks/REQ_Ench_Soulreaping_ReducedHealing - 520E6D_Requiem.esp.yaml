@@ -1,0 +1,33 @@
+FormKey: 520E6D:Requiem.esp
+EditorID: REQ_Ench_Soulreaping_ReducedHealing
+Name:
+  TargetLanguage: English
+  Value: Soulreaping
+Description:
+  TargetLanguage: English
+  Value: '- decreases incoming healing by 75%'
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01CEB0:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 042503:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.25

@@ -1,0 +1,19 @@
+FormKey: 4A0802:Requiem.esp
+EditorID: REQ_Rack_Light_Leather_Hands
+Items:
+- Item:
+    Item: 013921:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 013921:Skyrim.esm
+CreatedObject: 0DB5D2:Skyrim.esm
+WorkbenchKeyword: 07866A:Skyrim.esm
+CreatedObjectCount: 1

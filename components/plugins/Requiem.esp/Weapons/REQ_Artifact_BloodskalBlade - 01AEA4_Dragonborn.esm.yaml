@@ -1,0 +1,55 @@
+FormKey: 01AEA4:Dragonborn.esm
+EditorID: REQ_Artifact_BloodskalBlade
+ObjectBounds:
+  First: -7, -21, -3
+  Second: 7, 93, 4
+Name:
+  TargetLanguage: English
+  Value: Bloodskal Blade
+Model:
+  File: DLC02\Weapons\BloodSword\BloodSword.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 097786:Skyrim.esm
+Keywords:
+- 06D931:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 10AA1A:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Power attacks release an energy blast that deals <30> magic damage.
+Unused: 0x50726F6A656374696C654E6F646500
+ImpactDataSet: 0949D5:Skyrim.esm
+FirstPersonModel: 0365FC:Dragonborn.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 03C8A9:Skyrim.esm
+UnequipSound: 03C8AA:Skyrim.esm
+BasicStats:
+  Value: 1000
+  Weight: 17
+  Damage: 17
+Data:
+  AnimationType: TwoHandSword
+  Unused: 0x000000
+  Speed: 0.75
+  Reach: 1.3
+  Flags:
+  - EmbeddedWeapon
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1067869798
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.1
+Critical:
+  Damage: 8
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud

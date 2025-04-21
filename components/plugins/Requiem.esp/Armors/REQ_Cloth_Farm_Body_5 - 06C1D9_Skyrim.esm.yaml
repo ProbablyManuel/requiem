@@ -1,0 +1,43 @@
+FormKey: 06C1D9:Skyrim.esm
+EditorID: REQ_Cloth_Farm_Body_5
+ObjectBounds:
+  First: -27, -18, 0
+  Second: 24, 27, 13
+Name:
+  TargetLanguage: English
+  Value: Clothes
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\FarmClothes02\M\TorsoGND.nif
+      Data: 0x0200000002000000000000003369622F646473009545925F620C730F646473009545925F
+      AlternateTextures:
+      - Name: Object02:0
+        NewTexture: 06C1BA:Skyrim.esm
+  Female:
+    Model:
+      File: Clothes\FarmClothes02\F\DressGND.nif
+      Data: 0x0200000002000000000000003369622F646473001D9C40C86A9E2C57646473001D9C40C8
+      AlternateTextures:
+      - Name: BodyGND:0
+        NewTexture: 06C1BB:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0A8657:Skyrim.esm
+- 0A865C:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 06C1D4:Skyrim.esm
+Value: 15
+Weight: 1

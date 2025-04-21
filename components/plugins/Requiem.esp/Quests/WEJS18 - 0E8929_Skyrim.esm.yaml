@@ -1,0 +1,519 @@
+FormKey: 0E8929:Skyrim.esm
+EditorID: WEJS18
+VirtualMachineAdapter:
+  Scripts:
+  - Name: QF_WEJS18_000E8929
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Scene_Marker3
+      Object: 0E8929:Skyrim.esm
+      Alias: 60
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 0E8929:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Scene_Marker
+      Object: 0E8929:Skyrim.esm
+      Alias: 53
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dragon
+      Object: 0E8929:Skyrim.esm
+      Alias: 79
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 0E8929:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BurntCorpse
+      Object: 0E8929:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 0E8929:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dog
+      Object: 0E8929:Skyrim.esm
+      Alias: 80
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AnimalFollower
+      Object: 0750BA:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CenterMarker
+      Object: 0E8929:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 0E8929:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BurntCorpse3
+      Object: 0E8929:Skyrim.esm
+      Alias: 63
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Fire2
+      Object: 0E8929:Skyrim.esm
+      Alias: 65
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BurntCorpse2
+      Object: 0E8929:Skyrim.esm
+      Alias: 62
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Smoke3
+      Object: 0E8929:Skyrim.esm
+      Alias: 71
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Smoke
+      Object: 0E8929:Skyrim.esm
+      Alias: 64
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Scene_Marker2
+      Object: 0E8929:Skyrim.esm
+      Alias: 59
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Fire
+      Object: 0E8929:Skyrim.esm
+      Alias: 69
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Smoke2
+      Object: 0E8929:Skyrim.esm
+      Alias: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 0E8929:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Cart
+      Object: 0E8929:Skyrim.esm
+      Alias: 68
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Fire3
+      Object: 0E8929:Skyrim.esm
+      Alias: 66
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
+  FileName: QF_WEJS18_000E8929
+  Fragments:
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WEJS18_000E8929
+    FragmentName: Fragment_12
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 39
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: KillOnLoad
+        Data: True
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 80
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: KillOnLoad
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 79
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: KillOnLoad
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 62
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: KillOnLoad
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 63
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: KillOnLoad
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 68
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 69
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 64
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 65
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 70
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 66
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+  - Property:
+      Name: ''
+      Object: 0E8929:Skyrim.esm
+      Alias: 71
+    Scripts:
+    - Name: wealiasscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+        Data: True
+Name:
+  TargetLanguage: English
+  Value: Corpses in the aftermath of a dragon attack, Dog left behind
+Flags:
+- 0x4
+- AllowRepeatedStages
+Priority: 50
+QuestFormVersion: 65
+Type: Misc
+Event: SCPT
+Filter: Wilderness Encounters\
+EventConditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 046EF2:Skyrim.esm
+  ComparisonValue: 120
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 042851:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0C65BB:Skyrim.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0E518E:Skyrim.esm
+  ComparisonValue: 000039:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 032926:Skyrim.esm
+    Stage: 200
+  ComparisonValue: 1
+Stages:
+- Flags:
+  - StartUpStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+- Index: 255
+  Flags:
+  - ShutDownStage
+  Unknown: 5
+  LogEntries:
+  - Flags: []
+NextAliasID: 81
+Aliases:
+- ID: 1
+  Name: TRIGGER
+  Flags: []
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  VoiceTypes: Null
+- ID: 4
+  Type: Location
+  Name: myHoldLocation
+  Flags:
+  - AllowReuseInQuest
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- ID: 6
+  Type: Location
+  Name: myHoldContested
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 7
+  Type: Location
+  Name: myHoldImperial
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 8
+  Type: Location
+  Name: myHoldSons
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+- ID: 9
+  Name: CenterMarker
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5FE:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 53
+  Name: Scene Marker
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F9:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 59
+  Name: Scene Marker2
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F9:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 60
+  Name: Scene Marker3
+  Flags: []
+  FindMatchingRefNearAlias:
+    AliasID: 1
+    Type: LinkedRefChild
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsLinkedToConditionData
+      UseAliases: True
+      Target: 1
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasRefTypeConditionData
+      LocationReferenceType: 04A5F9:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 39
+  Name: BurntCorpse
+  Flags:
+  - AllowDead
+  CreateReferenceToObject:
+    Object: 0457F8:Skyrim.esm
+    AliasID: 53
+    Level: Medium
+  VoiceTypes: Null
+- ID: 80
+  Name: Dog
+  Flags:
+  - AllowDead
+  CreateReferenceToObject:
+    Object: 109487:Skyrim.esm
+    AliasID: 53
+    Level: Medium
+  PackageData:
+  - 104F47:Skyrim.esm
+  VoiceTypes: Null
+- ID: 79
+  Name: dragon
+  Flags: []
+  CreateReferenceToObject:
+    Object: AD36E0:Requiem.esp
+    AliasID: 53
+  VoiceTypes: Null
+- ID: 62
+  Name: BurntCorpse2
+  Flags:
+  - AllowDead
+  CreateReferenceToObject:
+    Object: 045802:Skyrim.esm
+    AliasID: 59
+    Level: Medium
+  VoiceTypes: Null
+- ID: 63
+  Name: BurntCorpse3
+  Flags:
+  - AllowDead
+  CreateReferenceToObject:
+    Object: 045801:Skyrim.esm
+    AliasID: 60
+    Level: Medium
+  VoiceTypes: Null
+- ID: 68
+  Name: Cart
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0C7D3E:Skyrim.esm
+    AliasID: 9
+    Level: Medium
+  VoiceTypes: Null
+- ID: 69
+  Name: Fire
+  Flags: []
+  CreateReferenceToObject:
+    Object: 013B40:Skyrim.esm
+    AliasID: 53
+    Level: Medium
+  VoiceTypes: Null
+- ID: 64
+  Name: Smoke
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0B09E4:Skyrim.esm
+    AliasID: 53
+    Level: Medium
+  VoiceTypes: Null
+- ID: 65
+  Name: Fire2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 013B42:Skyrim.esm
+    AliasID: 59
+    Level: Medium
+  VoiceTypes: Null
+- ID: 70
+  Name: Smoke2
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0B09E4:Skyrim.esm
+    AliasID: 59
+    Level: Medium
+  VoiceTypes: Null
+- ID: 66
+  Name: Fire3
+  Flags: []
+  CreateReferenceToObject:
+    Object: 013B42:Skyrim.esm
+    AliasID: 60
+    Level: Medium
+  VoiceTypes: Null
+- ID: 71
+  Name: Smoke3
+  Flags: []
+  CreateReferenceToObject:
+    Object: 0B09E4:Skyrim.esm
+    AliasID: 60
+    Level: Medium
+  VoiceTypes: Null

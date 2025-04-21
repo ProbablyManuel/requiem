@@ -1,0 +1,90 @@
+FormKey: 0ABD31:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FrostmereCrypt01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Frostmere Crypt
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#0055422F'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0030271C'
+    DirectionalXMinus: '#00272719'
+    DirectionalYPlus: '#002C281B'
+    DirectionalYMinus: '#002C251B'
+    DirectionalZPlus: '#0014120C'
+    DirectionalZMinus: '#005C5238'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128C:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192B8:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC7C:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A84CF:Skyrim.esm
+  MajorRecordFlagsRaw: 1073742848
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - 0x40000000
+  Base: AD384B:Requiem.esp
+  LocationReference: 0192B8:Skyrim.esm
+  Placement:
+    Position: -799.06006, -71.72124, -303.68124
+    Rotation: 6.2421947, 0.045032986, 1.936003
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B2524:Skyrim.esm
+  Version2: 4
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 0192B8:Skyrim.esm
+  Placement:
+    Position: -1574, -226, -384
+    Rotation: 0, -0, 4.328417
+- MutagenObjectType: PlacedObject
+  FormKey: 0B30F1:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Scale: 0.91
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192B8:Skyrim.esm
+  Placement:
+    Position: 2002, 1469, 2
+    Rotation: 0, 0, 4.066617
+MajorFlags:
+- 0x40000

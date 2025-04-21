@@ -1,0 +1,19 @@
+FormKey: 0009E4:Requiem.esp
+EditorID: REQ_AbShow_DrainMagickaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Drain Magicka Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MagickaRateMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka regenerates <mag>% slower.

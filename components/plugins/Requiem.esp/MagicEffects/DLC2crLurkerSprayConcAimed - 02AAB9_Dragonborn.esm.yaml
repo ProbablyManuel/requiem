@@ -1,0 +1,45 @@
+FormKey: 02AAB9:Dragonborn.esm
+EditorID: DLC2crLurkerSprayConcAimed
+Name:
+  TargetLanguage: English
+  Value: Lurker Spray
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 02A8DF:Dragonborn.esm
+- 2FFEAD:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- SnapToNavmesh
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 14
+ResistValue: PoisonResist
+CastingLight: 032DAA:Skyrim.esm
+TaperWeight: 1
+HitShader: 10CC64:Skyrim.esm
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 01AE99:Dragonborn.esm
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: Stamina
+CastingArt: 020BF5:Skyrim.esm
+HitEffectArt: 1046CD:Skyrim.esm
+ImpactData: 01AE9F:Dragonborn.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5E3:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

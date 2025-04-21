@@ -1,0 +1,64 @@
+FormKey: 01677A:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WindhelmBloodworks
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Windhelm Barracks
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+Lighting:
+  AmbientColor: '#00484848'
+  DirectionalColor: '#00401D11'
+  FogNearColor: '#004A4940'
+  FogFar: 5000
+  DirectionalRotationZ: 250
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#001D1810'
+    DirectionalXMinus: '#0018180F'
+    DirectionalYPlus: '#001B1910'
+    DirectionalYMinus: '#001B1610'
+    DirectionalZPlus: '#000C0B07'
+    DirectionalZMinus: '#00292418'
+    Specular: '#002E3641'
+    Scale: 1
+  FogFarColor: '#002E3641'
+  FogMax: 1
+LightingTemplate: 0C0C76:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0209E7:Skyrim.esm
+Owner: 0D27F3:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 108D38:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0267E7:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 0FB90D:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  Owner: 0267EA:Skyrim.esm
+  LocationReference: 0209E7:Skyrim.esm
+  Placement:
+    Position: -1256.7219, 3206.817, -67.11587
+    Rotation: 0, -0, 6.091596
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C6AE8:Requiem.esp
+  Base: 0C6ADC:Requiem.esp
+  RagdollData: 0x0016FB000000000000000000000000000CB3CDBFADFB663FB41B474000906C4500FE1540000080390000403A06A9CB3766CF4937C2F8C93F
+  Placement:
+    Position: -1291.1996, 3608.58, -483.78857
+MajorFlags:
+- 0x40000

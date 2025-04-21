@@ -1,0 +1,42 @@
+FormKey: 06F5C1:Requiem.esp
+EditorID: REQ_Conjuration3_SpectralWarrior_SummonSpectralWarrior
+Name:
+  TargetLanguage: English
+  Value: Summon Spectral Warrior
+MenuDisplayObject: 0A6459:Skyrim.esm
+Keywords:
+- 02482B:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+BaseCost: 50
+MagicSkill: Conjuration
+CastingLight: 03BA90:Skyrim.esm
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: 06F5BE:Requiem.esp
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 03CDFC:Skyrim.esm
+HitEffectArt: 06DE87:Skyrim.esm
+ImpactData: 03A1E9:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 06F79B:Skyrim.esm
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster summons the ghost of a warrior for <dur> seconds.

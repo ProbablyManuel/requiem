@@ -1,0 +1,21 @@
+FormKey: 027F89:Dragonborn.esm
+EditorID: REQ_Creature_AshGuardian_AshSpray
+Name:
+  TargetLanguage: English
+  Value: Ash Spray
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 80
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+CastDuration: 2.1
+Effects:
+- BaseEffect: 027F8A:Dragonborn.esm
+  Data:
+    Magnitude: 35
+    Duration: 1

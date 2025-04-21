@@ -1,0 +1,51 @@
+FormKey: 0FF9F8:Skyrim.esm
+EditorID: REQ_NULL_AlchInfluenceAggUpCombo
+Name:
+  TargetLanguage: English
+  Value: Frenzy
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 50
+HitShader: 074799:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Frenzy
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Opponents up to level <mag> attack anything nearby for <dur> seconds while taking <2> damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

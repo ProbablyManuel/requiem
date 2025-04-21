@@ -1,0 +1,30 @@
+FormKey: AD3A79:Requiem.esp
+EditorID: REQ_Trait_Slighted_VisibleAfterHit
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Slighted_VisibleAfterHit
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: appearanceEffect
+      Object: AD3A77:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Slighted - Visibility when hit
+MenuDisplayObject: 1097CD:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: the Slight becomes temporarily visible when hit by any effect

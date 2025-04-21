@@ -1,0 +1,38 @@
+FormKey: 07E5D7:Skyrim.esm
+EditorID: REQ_Conjuration5_StormThrall
+Name:
+  TargetLanguage: English
+  Value: Summon Storm Thrall
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1600
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+- NoDualCastModification
+ChargeTime: 4.5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 100
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 07E5D4:Skyrim.esm
+  Data:
+    Duration: 300
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0CB41A:Skyrim.esm
+- BaseEffect: 0CDED1:Skyrim.esm
+  Data:
+    Duration: 300
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0CB41A:Skyrim.esm
+    ComparisonValue: 1

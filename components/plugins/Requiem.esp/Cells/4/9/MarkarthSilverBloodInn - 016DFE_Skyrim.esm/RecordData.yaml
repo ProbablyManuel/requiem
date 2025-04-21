@@ -1,0 +1,64 @@
+FormKey: 016DFE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthSilverBloodInn
+Version2: 6
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Silver-Blood Inn
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00232323'
+  DirectionalColor: '#005C574B'
+  FogNearColor: '#003D484E'
+  FogFar: 4000
+  DirectionalRotationZ: 90
+  DirectionalFade: 1
+  FogClipDistance: 4000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00262324'
+    DirectionalXMinus: '#001F2321'
+    DirectionalYPlus: '#00232423'
+    DirectionalYMinus: '#00232123'
+    DirectionalZPlus: '#0010100F'
+    DirectionalZMinus: '#00353536'
+    Specular: '#00596A73'
+    Scale: 1
+  FogFarColor: '#00596A73'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - DirectionalRotation
+  - DirectionalFade
+  - LightFadeDistances
+LightingTemplate: 09F281:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F30E:Skyrim.esm
+Owner: 06566F:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 017035:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA72C:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 01F30E:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C731F:Skyrim.esm
+  Placement:
+    Position: -7148.875, -1191.6984, 192.00002
+    Rotation: 0, -0, 1.5707964
+MajorFlags:
+- 0x40000

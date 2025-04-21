@@ -1,0 +1,20 @@
+FormKey: 10F812:Skyrim.esm
+EditorID: REQ_Ench_RingOfNamira_FortifyHealthRegeneration
+Name:
+  TargetLanguage: English
+  Value: Fortify Health Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: HealRateMult
+  Association: AE37DD:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health regenerates <mag>% faster for <dur> seconds.

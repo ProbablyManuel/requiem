@@ -1,0 +1,21 @@
+FormKey: 000805:ccbgssse057-ba_stalhrim.esl
+EditorID: REQ_NULL_ccBGSSSE057_TemperArmorBladesShield
+Items:
+- Item:
+    Item: 02B06B:Dragonborn.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

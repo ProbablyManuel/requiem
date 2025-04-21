@@ -1,0 +1,36 @@
+FormKey: 0BB967:Skyrim.esm
+EditorID: REQ_Conjuration3_FlameAtronach_LeftHand
+Name:
+  TargetLanguage: English
+  Value: Summon Flame Atronach
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 50
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.3
+CastType: FireAndForget
+Range: 50
+HalfCostPerk: 0C44BC:Skyrim.esm
+Effects:
+- BaseEffect: 01CEAA:Skyrim.esm
+  Data:
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0CB41A:Skyrim.esm
+- BaseEffect: 04E945:Skyrim.esm
+  Data:
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0CB41A:Skyrim.esm
+    ComparisonValue: 1

@@ -1,0 +1,31 @@
+FormKey: 104217:Skyrim.esm
+EditorID: LabyrinthianMazeWorld
+Version2: 12
+Name:
+  TargetLanguage: English
+  Value: Shalidor's Maze
+FixedDimensionsCenterCell: 0, -1
+EncounterZone: 03EC42:Skyrim.esm
+Location: 019262:Skyrim.esm
+Parent:
+  Worldspace: 00003C:Skyrim.esm
+  Flags:
+  - UseMapData
+Climate: 000812:Skyrim.esm
+Water: 000018:Skyrim.esm
+LodWater: 000018:Skyrim.esm
+LodWaterHeight: 0
+LandDefaults:
+  DefaultLandHeight: -2048
+  DefaultWaterHeight: -2048
+WorldMapOffsetScale: 1
+WorldMapCellOffset: -16384, 40960, 0
+DistantLodMultiplier: 1
+Flags:
+- SmallWorld
+- CannotFastTravel
+- NoLandscape
+- FixedDimensions
+ObjectBoundsMin: -1, -3
+ObjectBoundsMax: 3, 2
+Music: 02D4C2:Skyrim.esm

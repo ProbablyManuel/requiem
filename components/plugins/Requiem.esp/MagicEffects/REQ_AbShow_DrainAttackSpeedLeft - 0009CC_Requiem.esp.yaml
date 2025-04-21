@@ -1,0 +1,22 @@
+FormKey: 0009CC:Requiem.esp
+EditorID: REQ_AbShow_DrainAttackSpeedLeft
+Name:
+  TargetLanguage: English
+  Value: Drain Attack Speed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: LeftWeaponSpeedMultiply
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Weapons in the left hand swing <mag>% slower.

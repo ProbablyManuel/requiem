@@ -1,0 +1,16 @@
+FormKey: 0A30DC:Skyrim.esm
+EditorID: REQ_Smelter_OreQuicksilver
+Items:
+- Item:
+    Item: 05ACE2:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 05ACE2:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 05ADA0:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,24 @@
+FormKey: 0ED2FD:Skyrim.esm
+EditorID: REQ_Trait_Boss_Jyrik_Frost
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000A15:Requiem.esp
+  Data:
+    Magnitude: 33
+- BaseEffect: 0008CF:Requiem.esp
+  Data:
+    Magnitude: 100
+- BaseEffect: 064458:Skyrim.esm
+  Data:
+    Magnitude: 8
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+- BaseEffect: 0ED600:Skyrim.esm
+  Data: {}

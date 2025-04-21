@@ -1,0 +1,23 @@
+FormKey: 027FA2:Requiem.esp
+EditorID: REQ_Alteration2_Featherfalling
+Name:
+  TargetLanguage: English
+  Value: Featherfalling
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 150
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.4
+CastType: FireAndForget
+HalfCostPerk: 0C44B7:Skyrim.esm
+Effects:
+- BaseEffect: 027F93:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 60

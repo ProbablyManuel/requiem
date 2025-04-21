@@ -1,0 +1,129 @@
+FormKey: 037EE0:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeBlackSmith
+Version2: 12
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Solitude Blacksmith
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#0043442D'
+  DirectionalColor: '#00283E44'
+  FogNearColor: '#004E4D21'
+  FogFar: 5000
+  FogClipDistance: 2200
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#0049442F'
+    DirectionalXMinus: '#003C442A'
+    DirectionalYPlus: '#0043472D'
+    DirectionalYMinus: '#0043402D'
+    DirectionalZPlus: '#001F2014'
+    DirectionalZMinus: '#00666745'
+    Specular: '#00283646'
+    Scale: 1
+  FogFarColor: '#00283646'
+  FogMax: 0.8
+  LightFadeBegin: 100
+  LightFadeEnd: 5000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 06AB01:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 09D5A3:Skyrim.esm
+Owner: 0C13CD:Skyrim.esm
+LockList: 0C13CE:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 04E666:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 037F3A:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0368CE:Skyrim.esm
+  TeleportDestination:
+    Door: 037F3C:Skyrim.esm
+    Position: -61779.844, 107057.34, -7897.5303
+    Rotation: 0, -0, -2.870791
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Key: 0C13CF:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 06381C:Skyrim.esm
+    TeleportMarkerTriangle: 210
+  LocationRefTypes:
+  - 070E64:Skyrim.esm
+  Owner: 0C13CD:Skyrim.esm
+  LocationReference: 09D5A3:Skyrim.esm
+  Placement:
+    Position: -488, -976, 128
+    Rotation: 0, -0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 0A6C0B:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0A6C07:Skyrim.esm
+  Scale: 1.2
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 09D5A3:Skyrim.esm
+  Placement:
+    Position: -401.30353, -689.0538, 0.47407913
+    Rotation: 0, -0, 1.5
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0D71B5:Skyrim.esm
+  Version2: 1
+  Base: 000845:Skyrim.esm
+  LocationReference: 09D5A3:Skyrim.esm
+  Placement:
+    Position: -334.96387, -557.2936, -0.43631172
+    Rotation: 0, -0, 5.7421336
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA735:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 09D5A3:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7328:Skyrim.esm
+  Placement:
+    Position: 315.43506, -1651.2437, 353.40265
+- MutagenObjectType: PlacedObject
+  FormKey: 0D71B4:Skyrim.esm
+  Version2: 1
+  Base: 000845:Skyrim.esm
+  LocationReference: 09D5A3:Skyrim.esm
+  Placement:
+    Position: -334.1187, -492.77838, -0.43631172
+    Rotation: 0, 0, 0.4886922
+MajorFlags:
+- 0x40000

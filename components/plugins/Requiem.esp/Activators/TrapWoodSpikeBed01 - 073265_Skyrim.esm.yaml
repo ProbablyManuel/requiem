@@ -1,0 +1,60 @@
+FormKey: 073265:Skyrim.esm
+EditorID: TrapWoodSpikeBed01
+Version2: 9
+VirtualMachineAdapter:
+  Scripts:
+  - Name: HazardBase
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 22
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapHitSound
+      Object: 000E5F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 500
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFX
+      Object: 01A141:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 14
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 10
+    - MutagenObjectType: ScriptBoolProperty
+      Name: CheckAngle
+      Data: True
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFXAmmo
+      Object: 052E99:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 18
+ObjectBounds:
+  First: -106, -106, -160
+  Second: 104, 130, 120
+Model:
+  File: Traps\NorPlatformTrap\TrapWoodSpikeBed01.nif
+  Data: 0x020000000400000000000000BDA6C1E5646473001E8C9F272D3EF7F9646473001E8C9F272B6E3A7464647300A0B86305C8C8534B64647300A0B86305
+MarkerColor: '#00CC4C33'
+Flags: []

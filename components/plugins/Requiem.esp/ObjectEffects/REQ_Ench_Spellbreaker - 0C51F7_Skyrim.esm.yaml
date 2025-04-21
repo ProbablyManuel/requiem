@@ -1,0 +1,17 @@
+FormKey: 0C51F7:Skyrim.esm
+EditorID: REQ_Ench_Spellbreaker
+Name:
+  TargetLanguage: English
+  Value: Spellbreaker Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 07DCDB:Skyrim.esm
+  Data:
+    Magnitude: 275
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1

@@ -1,0 +1,58 @@
+FormKey: 101931:Skyrim.esm
+EditorID: TrapPoisonFFContactEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ISM_strengthoffset
+      Data: -0.6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_hit
+      Object: 10E3D2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 19151A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_fade
+      Object: 10E3D3:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Poison Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 042509:Skyrim.esm
+- 1093BB:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+ResistValue: PoisonResist
+TaperWeight: 0.2
+HitShader: 10CC64:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Inflicts <mag> poison damage per second for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    RunOnType: Target
+    MagicEffect: 101931:Skyrim.esm

@@ -1,0 +1,29 @@
+FormKey: 010D8A:Dawnguard.esm
+EditorID: REQ_Restoration3_SunfireCloak_Isran
+Name:
+  TargetLanguage: English
+  Value: Sunfire Cloak
+MenuDisplayObject: 018F02:Dawnguard.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 90
+CastType: FireAndForget
+HalfCostPerk: 0C44C8:Skyrim.esm
+Effects:
+- BaseEffect: 010D8B:Dawnguard.esm
+  Data:
+    Magnitude: 12
+    Duration: 60
+- BaseEffect: 00A3B9:Dawnguard.esm
+  Data:
+    Duration: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 008A5C:Dawnguard.esm
+    ComparisonValue: 1
+- BaseEffect: AD387E:Requiem.esp
+  Data: {}

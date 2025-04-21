@@ -1,0 +1,25 @@
+FormKey: 03EAF8:Skyrim.esm
+EditorID: REQ_Alch_FortifyMagicka
+Name:
+  TargetLanguage: English
+  Value: Fortify Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A33:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.15
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Magicka
+  Association: 065A33:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka increases by <mag> for <dur> seconds.

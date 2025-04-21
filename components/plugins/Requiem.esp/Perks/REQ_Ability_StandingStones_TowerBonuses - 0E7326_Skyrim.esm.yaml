@@ -1,0 +1,257 @@
+FormKey: 0E7326:Skyrim.esm
+EditorID: REQ_Ability_StandingStones_TowerBonuses
+Name:
+  TargetLanguage: English
+  Value: The Tower Stone
+Description:
+  TargetLanguage: English
+  Value: >-
+    The Tower stone allows you to pick locks unnoticed in plain sight if they are effortless to you and it will also give you a copy of the key for the lock, if one exists.
+
+
+    -01x - wax key for effortless locks
+
+    -00x - zero crime alert chance for effortless locks
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 15
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A9:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 75
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 100
+  EntryPoint: ModLockpickingKeyRewardChance
+  PerkConditionTabCount: 2
+  Value: 100
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 14
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38AC:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 50
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 75
+  EntryPoint: ModLockpickingKeyRewardChance
+  PerkConditionTabCount: 2
+  Value: 100
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 13
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38AF:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 25
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 50
+  EntryPoint: ModLockpickingKeyRewardChance
+  PerkConditionTabCount: 2
+  Value: 100
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 12
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A4:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 25
+  EntryPoint: ModLockpickingKeyRewardChance
+  PerkConditionTabCount: 2
+  Value: 100
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 11
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38B1:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 1
+  EntryPoint: ModLockpickingKeyRewardChance
+  PerkConditionTabCount: 2
+  Value: 100
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 5
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A9:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 75
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 100
+  EntryPoint: ModLockpickingCrimeChance
+  PerkConditionTabCount: 2
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 4
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38AC:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 50
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 75
+  EntryPoint: ModLockpickingCrimeChance
+  PerkConditionTabCount: 2
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 3
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38AF:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 25
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 50
+  EntryPoint: ModLockpickingCrimeChance
+  PerkConditionTabCount: 2
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38A4:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 25
+  EntryPoint: ModLockpickingCrimeChance
+  PerkConditionTabCount: 2
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: LockpickingModifier
+      ComparisonValue: AD38B1:Requiem.esp
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetLockLevelConditionData
+      ComparisonValue: 1
+  EntryPoint: ModLockpickingCrimeChance
+  PerkConditionTabCount: 2
+  Value: 0

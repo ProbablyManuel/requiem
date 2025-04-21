@@ -1,0 +1,33 @@
+FormKey: 0008EF:ccbgssse001-fish.esm
+EditorID: ccBGSSSE001_GoldfishIng
+ObjectBounds:
+  First: -10, -2, -6
+  Second: 10, 2, 6
+Name:
+  TargetLanguage: English
+  Value: Goldfish
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: CreationClub\BGSSSE001\Critters\Fish\FishGoldfish\FishGoldfish01Inv.nif
+  Data: 0x020000000000000000000000
+Value: 10
+Weight: 0.25
+IngredientValue: 24
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 60
+- BaseEffect: 03AC2D:Skyrim.esm
+  Data:
+    Duration: 5
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60

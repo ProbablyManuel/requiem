@@ -1,0 +1,28 @@
+FormKey: 00D951:Dawnguard.esm
+EditorID: REQ_Ench_AurielsShield_Heal1
+Name:
+  TargetLanguage: English
+  Value: Auriel's Shield - Heal 1
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: FireAndForget
+Effects:
+- BaseEffect: AE38BF:Requiem.esp
+  Data: {}
+- BaseEffect: AE38BC:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1
+- BaseEffect: AE38BD:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1
+- BaseEffect: AE38BE:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 1

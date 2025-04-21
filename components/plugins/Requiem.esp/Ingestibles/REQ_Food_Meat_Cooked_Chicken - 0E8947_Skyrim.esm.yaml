@@ -1,0 +1,27 @@
+FormKey: 0E8947:Skyrim.esm
+EditorID: REQ_Food_Meat_Cooked_Chicken
+ObjectBounds:
+  First: -5, -7, 0
+  Second: 5, 7, 3
+Name:
+  TargetLanguage: English
+  Value: Grilled Chicken Breast
+Keywords:
+- 08CDEA:Skyrim.esm
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Food\CookedChickenMeat01.nif
+  Data: 0x020000000200000000000000EAACD74864647300B91482361E52143664647300484A40BF
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

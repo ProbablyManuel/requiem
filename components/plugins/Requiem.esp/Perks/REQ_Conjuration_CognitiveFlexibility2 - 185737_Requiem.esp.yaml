@@ -1,0 +1,28 @@
+FormKey: 185737:Requiem.esp
+EditorID: REQ_Conjuration_CognitiveFlexibility2
+Name:
+  TargetLanguage: English
+  Value: Cognitive Flexibility
+Description:
+  TargetLanguage: English
+  Value: You have mastered the art of Cognitive Flexibility, a trait of only the most accomplished Summoners throughout history.<br>You can now control three summons, of any type, simultaneously.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 185736:Requiem.esp
+  ComparisonValue: 1
+NumRanks: 2
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModCommandedActorLimit
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 1

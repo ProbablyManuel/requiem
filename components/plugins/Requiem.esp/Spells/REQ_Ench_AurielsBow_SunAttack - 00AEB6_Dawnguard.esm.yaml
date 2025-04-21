@@ -1,0 +1,25 @@
+FormKey: 00AEB6:Dawnguard.esm
+EditorID: REQ_Ench_AurielsBow_SunAttack
+Name:
+  TargetLanguage: English
+  Value: Auriel's Bow - Sun Ray
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 00AEB5:Dawnguard.esm
+  Data:
+    Magnitude: 150
+    Area: 10
+    Duration: 3
+- BaseEffect: 006784:Dawnguard.esm
+  Data:
+    Magnitude: 300
+    Area: 10
+    Duration: 3

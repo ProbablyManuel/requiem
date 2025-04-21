@@ -1,0 +1,54 @@
+FormKey: ADE078:Requiem.esp
+EditorID: REQ_Ench_Weapon_Stalhrim_Shortsword_TurnUndead4
+ObjectBounds:
+  First: -5, -18, -1
+  Second: 5, 48, 1
+Name:
+  TargetLanguage: English
+  Value: Stalhrim Shortsword of Repulsion
+Model:
+  File: PrvtI\Stalhrim\stahlrimshortsword.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 05B46F:Skyrim.esm
+EnchantmentAmount: 2000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+- 02622F:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: ADDF58:Requiem.esp
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 1800
+  Weight: 13
+  Damage: 12
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1.15
+  Reach: 0.9
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.6
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: ADDF4E:Requiem.esp

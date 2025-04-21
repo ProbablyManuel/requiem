@@ -1,0 +1,25 @@
+FormKey: AE3B77:Requiem.esp
+EditorID: REQ_Trait_Cuisine_Orc_Description
+Name:
+  TargetLanguage: English
+  Value: Strong Stomach
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Your stomach is strong enough to digest the infamous Wrothgar Tartare, which increases health by 25.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

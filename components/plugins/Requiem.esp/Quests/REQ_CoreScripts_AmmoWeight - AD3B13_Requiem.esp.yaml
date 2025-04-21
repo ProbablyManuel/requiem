@@ -1,0 +1,66 @@
+FormKey: AD3B13:Requiem.esp
+EditorID: REQ_CoreScripts_AmmoWeight
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B13:Requiem.esp
+      Alias: 1
+    Scripts:
+    - Name: REQ_AmmoWeight
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: weightlessAmmo
+        Object: 9D1F4D:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: displayQuiver
+        Object: AD3A58:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: ammoWeightIdentifiers
+        Objects:
+        - Name: ''
+          Object: 9D1F49:Requiem.esp
+        - Name: ''
+          Object: 9D1F4A:Requiem.esp
+        - Name: ''
+          Object: 9D1F4B:Requiem.esp
+        - Name: ''
+          Object: 9D1F4C:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: hideQuiverPlace
+        Object: AD3A5A:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: ammoWeightDummies
+        Objects:
+        - Name: ''
+          Object: 0710C3:Requiem.esp
+        - Name: ''
+          Object: 0710C4:Requiem.esp
+        - Name: ''
+          Object: 0710C5:Requiem.esp
+        - Name: ''
+          Object: 3D7DC3:Requiem.esp
+      - MutagenObjectType: ScriptIntProperty
+        Name: defaultWeightIndex
+        Data: 1
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Ammo Weight'
+Type: SideQuest
+NextAliasID: 25
+Aliases:
+- ID: 1
+  Name: ArrowWeight
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null
+- ID: 24
+  Name: AmmoWeightDisplay
+  Flags:
+  - QuestObject
+  CreateReferenceToObject:
+    Object: AD3A58:Requiem.esp
+    AliasID: 1
+    Create: In
+  VoiceTypes: Null

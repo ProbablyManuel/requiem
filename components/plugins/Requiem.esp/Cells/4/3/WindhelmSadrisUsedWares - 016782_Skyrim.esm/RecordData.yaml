@@ -1,0 +1,81 @@
+FormKey: 016782:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WindhelmSadrisUsedWares
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Sadri's Used Wares
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 3000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#001D1810'
+    DirectionalXMinus: '#0018180F'
+    DirectionalYPlus: '#001B1910'
+    DirectionalYMinus: '#001B1610'
+    DirectionalZPlus: '#000C0B07'
+    DirectionalZMinus: '#00292418'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+LightingTemplate: 0C3D39:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0209F4:Skyrim.esm
+Owner: 045F64:Skyrim.esm
+LockList: 01413A:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A3F11:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0A3F10:Skyrim.esm
+  Scale: 1.3
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0209F4:Skyrim.esm
+  Placement:
+    Position: -1133.4874, -2217.7268, -128
+    Rotation: 0, -0, 0.51681817
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA726:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 0209F4:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7319:Skyrim.esm
+  Placement:
+    Position: -1233.4161, -1986.7731, -20.999992
+    Rotation: 0, -0, 3.1415927
+MajorFlags:
+- 0x40000

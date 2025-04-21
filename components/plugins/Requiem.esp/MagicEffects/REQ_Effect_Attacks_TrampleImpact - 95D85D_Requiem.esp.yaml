@@ -1,0 +1,38 @@
+FormKey: 95D85D:Requiem.esp
+EditorID: REQ_Effect_Attacks_TrampleImpact
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_KnockDownDamage
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: BaseDamage
+      Data: 15
+    - MutagenObjectType: ScriptIntProperty
+      Name: MassPower
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: MassOffset
+      Data: 3.5
+Name:
+  TargetLanguage: English
+  Value: Trample Impact
+Flags:
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Type: OnHit
+  Sound: 0AF664:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 95D85D:Requiem.esp

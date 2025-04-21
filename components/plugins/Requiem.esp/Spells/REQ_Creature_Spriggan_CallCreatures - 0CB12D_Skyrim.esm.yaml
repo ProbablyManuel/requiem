@@ -1,0 +1,25 @@
+FormKey: 0CB12D:Skyrim.esm
+EditorID: REQ_Creature_Spriggan_CallCreatures
+Name:
+  TargetLanguage: English
+  Value: Spriggan Call of the Wild
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 20
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+- NoDualCastModification
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0CB12C:Skyrim.esm
+  Data:
+    Area: 6000
+    Duration: 60
+- BaseEffect: 109D12:Skyrim.esm
+  Data: {}
+- BaseEffect: 01EA6A:Skyrim.esm
+  Data:
+    Duration: 5

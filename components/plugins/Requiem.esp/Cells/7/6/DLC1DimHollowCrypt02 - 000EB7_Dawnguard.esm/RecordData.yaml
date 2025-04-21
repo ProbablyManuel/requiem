@@ -1,0 +1,90 @@
+FormKey: 000EB7:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1DimHollowCrypt02
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dimhollow Cavern
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#001C180D'
+  DirectionalColor: '#000F0F0F'
+  FogNearColor: '#00161E1F'
+  FogFar: 9000
+  DirectionalRotationZ: 90
+  FogClipDistance: 100000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#001E180D'
+    DirectionalXMinus: '#0019180C'
+    DirectionalYPlus: '#001C190D'
+    DirectionalYMinus: '#001C160D'
+    DirectionalZPlus: '#000D0B05'
+    DirectionalZMinus: '#002A2414'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#003D4A4E'
+  FogMax: 0.6
+  LightFadeBegin: 15000
+  LightFadeEnd: 16000
+  Inherits:
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 006AE9:Dawnguard.esm
+WaterHeight: 0
+Location: 004EE8:Dawnguard.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+SkyAndWeatherFromRegion: 09C487:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 004EE7:Dawnguard.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 02EDEB:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 017724:Dawnguard.esm
+  Version2: 2
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004EE8:Dawnguard.esm
+  Placement:
+    Position: 11232.923, 580.4464, 95.552605
+    Rotation: 0, -0, 5.068585
+- MutagenObjectType: PlacedObject
+  FormKey: 00979C:Dawnguard.esm
+  Version2: 3
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004EE8:Dawnguard.esm
+  Placement:
+    Position: 12490.407, 1667.1061, 493.69885
+    Rotation: 0, -0, 6.016378
+- MutagenObjectType: PlacedObject
+  FormKey: 01804B:Dawnguard.esm
+  Version2: 4
+  Base: 020662:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004EE8:Dawnguard.esm
+  Placement:
+    Position: 474.4156, -1577.8239, -538.8817
+    Rotation: 0, -0, 1.6831895
+MajorFlags:
+- 0x40000

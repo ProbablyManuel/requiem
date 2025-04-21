@@ -1,0 +1,37 @@
+FormKey: 105F26:Skyrim.esm
+EditorID: REQ_Lockpicking_TreasureHunter
+Name:
+  TargetLanguage: English
+  Value: Treasure Hunter
+Description:
+  TargetLanguage: English
+  Value: You are able to locate secret spaces in containers when you search them.<br>[15% chance to find special loot in select chests, 1-4 precious stones in select chests]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Lockpicking
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE125:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Priority: 2
+  Quest: 0FFF50:Skyrim.esm
+  Stage: 10
+  Unknown: 0x000000
+- MutagenObjectType: PerkQuestEffect
+  Priority: 1
+  Quest: 05F596:Skyrim.esm
+  Stage: 30
+  Unknown: 0x000000
+- MutagenObjectType: PerkQuestEffect
+  Quest: 05F596:Skyrim.esm
+  Stage: 40
+  Unknown: 0x000000

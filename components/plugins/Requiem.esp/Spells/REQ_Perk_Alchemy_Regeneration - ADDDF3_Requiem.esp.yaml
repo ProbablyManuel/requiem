@@ -1,0 +1,26 @@
+FormKey: ADDDF3:Requiem.esp
+EditorID: REQ_Perk_Alchemy_Regeneration
+Name:
+  TargetLanguage: English
+  Value: Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 1
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData
+    ComparisonValue: 1
+- BaseEffect: 000941:Requiem.esp
+  Data:
+    Magnitude: 50

@@ -1,0 +1,32 @@
+FormKey: 029B71:Skyrim.esm
+EditorID: REQ_Ench_Staff_RepelLesserUndead
+Version2: 4
+Name:
+  TargetLanguage: English
+  Value: Repel Lesser Undead
+EnchantmentCost: 68
+CastType: FireAndForget
+EnchantmentAmount: 68
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 1
+Effects:
+- BaseEffect: 04D3F7:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 30
+- BaseEffect: 04D3F9:Skyrim.esm
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsUndeadConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013796:Skyrim.esm
+    ComparisonValue: 1

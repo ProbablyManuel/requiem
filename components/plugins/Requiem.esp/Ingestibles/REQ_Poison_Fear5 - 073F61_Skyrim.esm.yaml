@@ -1,0 +1,25 @@
+FormKey: 073F61:Skyrim.esm
+EditorID: REQ_Poison_Fear5
+ObjectBounds:
+  First: -5, -7, 0
+  Second: 5, 6, 19
+Name:
+  TargetLanguage: English
+  Value: Poison of Fear (Remarkable)
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Potions\PoisonFear05.nif
+  Data: 0x020000000400000000000000F9BE93CC64647300BFFA25DA28058E7E64647300BFFA25DAF63890AC64647300262C333BD1E23CE564647300BFFA25DA
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 263
+Flags:
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 073F20:Skyrim.esm
+  Data:
+    Magnitude: 23
+    Duration: 30

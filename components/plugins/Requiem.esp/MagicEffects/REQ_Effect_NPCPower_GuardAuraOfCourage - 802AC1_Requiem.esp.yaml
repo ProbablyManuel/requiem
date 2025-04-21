@@ -1,0 +1,33 @@
+FormKey: 802AC1:Requiem.esp
+EditorID: REQ_Effect_NPCPower_GuardAuraOfCourage
+Name:
+  TargetLanguage: English
+  Value: Aura of Courage
+Flags:
+- Recover
+- FXPersist
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: Rally
+Projectile: 025458:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 802AC1:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsGuardConditionData
+  ComparisonValue: 1

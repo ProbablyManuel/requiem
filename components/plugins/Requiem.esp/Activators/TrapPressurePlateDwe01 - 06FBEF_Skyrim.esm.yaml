@@ -1,0 +1,48 @@
+FormKey: 06FBEF:Skyrim.esm
+EditorID: TrapPressurePlateDwe01
+Version2: 11
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PressurePlate
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pressEffectAmmo
+      Object: 052E99:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TriggerSound
+      Object: 018537:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: checkForLightFootPerk
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: lightFootPerk
+      Object: 05820C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LightFootGlobalVar
+      Object: 067194:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: isTriggerVolume
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pressEffect
+      Object: 01A141:Skyrim.esm
+ObjectBounds:
+  First: -31, -31, 0
+  Second: 31, 31, 5
+Model:
+  File: Traps\PressurePlateDwe\TrapPressurePlateDwe01.nif
+  Data: 0x020000000700000000000000EAC080E9646473006A02F2EB923DDCA8646473006A02F2EBED4CD149646473006A02F2EB0FC49303646473006A02F2EB188FFC7C64647300262C333B6646A523646473006A02F2EBE506313B646473006A02F2EB
+  AlternateTextures:
+  - Name: Frame01:8
+    NewTexture: 000028:Skyrim.esm
+    Index: 3
+  - Name: TriggerPlate01:11
+    NewTexture: 000028:Skyrim.esm
+    Index: 2
+  - Name: TriggerPlate01:8
+    NewTexture: 000028:Skyrim.esm
+    Index: 1
+  - Name: TriggerPlate01:2
+    NewTexture: 000028:Skyrim.esm
+MarkerColor: '#00CC4C33'
+Flags: []

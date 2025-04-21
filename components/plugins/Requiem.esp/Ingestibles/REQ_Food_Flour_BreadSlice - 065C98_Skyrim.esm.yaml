@@ -1,0 +1,26 @@
+FormKey: 065C98:Skyrim.esm
+EditorID: REQ_Food_Flour_BreadSlice
+ObjectBounds:
+  First: -6, -6, 0
+  Second: 6, 6, 5
+Name:
+  TargetLanguage: English
+  Value: Bread Slice
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\Bread01B.nif
+  Data: 0x02000000020000000000000068CCCD4964647300B91482363D2BDFA864647300B9148236
+Weight: 0.2
+Value: 3
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371C:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 1800
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

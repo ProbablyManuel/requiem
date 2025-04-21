@@ -1,0 +1,54 @@
+FormKey: 000951:ccbgssse041-netchleather.esl
+EditorID: REQ_Light_ShadowedNetchLeather_Body
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultsetstageonplayeracquireitem
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 1020
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQST
+      Object: 00094A:ccbgssse041-netchleather.esl
+Name:
+  TargetLanguage: English
+  Value: Shadowed Netch Leather Cuirass
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE041\Armor\NetchLeather\NetchLeatherCuriass_GO.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: NetchLeatherCuriass_GO:1
+        NewTexture: 000945:ccbgssse041-netchleather.esl
+      - Name: NetchLeatherCuriass_GO:9
+        NewTexture: 000945:ccbgssse041-netchleather.esl
+        Index: 1
+  Female:
+    Model:
+      File: CreationClub\BGSSSE041\Armor\NetchLeather\NetchLeatherCuriass_GO.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: NetchLeatherCuriass_GO:1
+        NewTexture: 000944:ccbgssse041-netchleather.esl
+      - Name: NetchLeatherCuriass_GO:9
+        NewTexture: 000944:ccbgssse041-netchleather.esl
+        Index: 1
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- ADDD70:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 000959:ccbgssse041-netchleather.esl
+Value: 200
+Weight: 5
+ArmorRating: 150

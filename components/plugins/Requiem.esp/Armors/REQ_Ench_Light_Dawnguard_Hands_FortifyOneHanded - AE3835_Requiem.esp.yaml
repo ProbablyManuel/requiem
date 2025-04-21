@@ -1,0 +1,39 @@
+FormKey: AE3835:Requiem.esp
+EditorID: REQ_Ench_Light_Dawnguard_Hands_FortifyOneHanded
+ObjectBounds:
+  First: -11, -14, -1
+  Second: 13, 15, 10
+Name:
+  TargetLanguage: English
+  Value: Dawnguard Light Gauntlets of Extreme Wielding
+ObjectEffect: 0BE010:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: DLC01\Armor\Dawnguard\DawnguardGloves1_GND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: DLC01\Armor\Dawnguard\DawnguardGloves1_GND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EF:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0050C4:Dawnguard.esm
+- 00D839:Dawnguard.esm
+- 00D83D:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00F3FD:Dawnguard.esm
+Value: 90
+Weight: 4.5
+ArmorRating: 75
+TemplateArmor: 00F3FE:Dawnguard.esm

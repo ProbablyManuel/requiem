@@ -1,0 +1,30 @@
+FormKey: 101064:Skyrim.esm
+EditorID: REQ_Restoration4_HealingHands_LeftHand
+Name:
+  TargetLanguage: English
+  Value: Healing Hands (Rank III)
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 250
+Flags:
+- ManualCostCalc
+CastType: FireAndForget
+HalfCostPerk: 0C44C9:Skyrim.esm
+Effects:
+- BaseEffect: 0B62ED:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Area: 15
+- BaseEffect: 0B62F2:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Area: 15
+- BaseEffect: 0DD642:Skyrim.esm
+  Data:
+    Magnitude: 50
+- BaseEffect: 04250E:Skyrim.esm
+  Data:
+    Magnitude: 50

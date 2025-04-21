@@ -1,0 +1,19 @@
+FormKey: AE3643:Requiem.esp
+EditorID: REQ_Smelter_Light_Stalhrim_Shield
+Items:
+- Item:
+    Item: 026237:Dragonborn.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 026237:Dragonborn.esm
+CreatedObject: 02B06B:Dragonborn.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 2

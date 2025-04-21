@@ -1,0 +1,21 @@
+FormKey: 01DF97:Dragonborn.esm
+EditorID: REQ_NULL_DLC2DragonAspectBody01Effect
+Name:
+  TargetLanguage: English
+  Value: Damage Resistance
+MenuDisplayObject: 03D58F:Dragonborn.esm
+Keywords:
+- 0F81E3:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: DamageResist
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: +<mag> damage resistance for <dur> seconds.

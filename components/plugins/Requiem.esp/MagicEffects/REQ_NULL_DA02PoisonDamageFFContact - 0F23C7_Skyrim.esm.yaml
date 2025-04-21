@@ -1,0 +1,35 @@
+FormKey: 0F23C7:Skyrim.esm
+EditorID: REQ_NULL_DA02PoisonDamageFFContact
+Name:
+  TargetLanguage: English
+  Value: Ebony Mail Poison Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: PoisonResist
+HitShader: 081180:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 06EBC8:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+HitEffectArt: 1046CD:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+    TargetNpc: 000014:Skyrim.esm
+  ComparisonValue: 1

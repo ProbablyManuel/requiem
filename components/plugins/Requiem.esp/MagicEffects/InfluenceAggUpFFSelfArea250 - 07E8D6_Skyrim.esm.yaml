@@ -1,0 +1,80 @@
+FormKey: 07E8D6:Skyrim.esm
+EditorID: InfluenceAggUpFFSelfArea250
+Version2: 15
+Name:
+  TargetLanguage: English
+  Value: Mayhem
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+- 08BB92:Skyrim.esm
+- 0C44B6:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- DispelWithKeywords
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 4
+MagicSkill: Illusion
+CastingLight: 07479A:Skyrim.esm
+TaperWeight: 1
+HitShader: 074799:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingArea: 250
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Frenzy
+Explosion: 0BECAF:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 0223CA:Skyrim.esm
+HitEffectArt: 074795:Skyrim.esm
+ImpactData: 074798:Skyrim.esm
+SkillUsageMultiplier: 0.4
+DualCastScale: 1
+EquipAbility: 0225AE:Skyrim.esm
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Creatures and people up to level <mag> will attack anything nearby for <dur> seconds, as the spell evokes a dire bloodlust and makes them perceive everything as something they truly and disdainfully hate.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

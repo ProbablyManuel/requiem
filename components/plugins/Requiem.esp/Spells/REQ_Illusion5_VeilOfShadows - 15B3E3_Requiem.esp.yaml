@@ -1,0 +1,67 @@
+FormKey: 15B3E3:Requiem.esp
+EditorID: REQ_Illusion5_VeilOfShadows
+Name:
+  TargetLanguage: English
+  Value: Veil of Shadows
+MenuDisplayObject: 109AC3:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 400
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 3
+CastType: FireAndForget
+HalfCostPerk: 0C44C6:Skyrim.esm
+Effects:
+- BaseEffect: 57024D:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Magicka
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSprintingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 57024F:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsRunningConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 57024F:Requiem.esp
+- BaseEffect: 570252:Requiem.esp
+  Data:
+    Magnitude: 11
+    Duration: 86400
+- BaseEffect: 570253:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 86400
+- BaseEffect: AD3B28:Requiem.esp
+  Data:
+    Magnitude: 48
+    Duration: 86400
+- BaseEffect: 57024F:Requiem.esp
+  Data:
+    Duration: 86400
+- BaseEffect: 57024E:Requiem.esp
+  Data:
+    Magnitude: 4
+    Duration: 86400

@@ -1,0 +1,50 @@
+FormKey: 0F1AC0:Skyrim.esm
+EditorID: REQ_Heavy_Dremora_Hands
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_CursedItem
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeDaedra
+      Object: 013797:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: REQ_KW_CursedItem
+      Object: 6D7249:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurseOfAgony
+      Object: 09E9C3:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myItem
+      Object: 0F1AC0:Skyrim.esm
+ObjectBounds:
+  First: -7, -22, 0
+  Second: 21, 17, 10
+Name:
+  TargetLanguage: English
+  Value: Daedric Gauntlets
+WorldModel:
+  Male:
+    Model:
+      File: Armor\Daedric\DaedricGauntletsGO.nif
+      Data: 0x02000000040000000000000019E11184646473000252BD4C23F224DB646473000252BD4CF63890AC64647300262C333B99A32D42646473000252BD4C
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 02C17B:Skyrim.esm
+- 06BBD2:Skyrim.esm
+- 06BBD4:Skyrim.esm
+- 06C0EF:Skyrim.esm
+- 08F959:Skyrim.esm
+- 6D7249:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ' '
+Armature:
+- 098BB5:Skyrim.esm
+Value: 7500
+Weight: 15
+ArmorRating: 180

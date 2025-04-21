@@ -1,0 +1,22 @@
+FormKey: 0100A1:unofficial skyrim special edition patch.esp
+EditorID: REQ_NULL_USKPTemperArmorClothesUlfricGauntlets
+Items:
+- Item:
+    Item: 0DB5D2:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 06230B:Skyrim.esm
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

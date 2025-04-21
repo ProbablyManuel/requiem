@@ -1,0 +1,44 @@
+FormKey: AD3716:Requiem.esp
+EditorID: REQ_Ench_Bolt_Orcish_Fire
+ObjectBounds:
+  First: -122, -1, -26
+  Second: 0, 1, 0
+Name:
+  TargetLanguage: English
+  Value: Orcish Bolt of Fire
+Model:
+  File: Requiem\ammo\steel\steel_bolt_magic.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Arrow1
+    NewTexture: AD3839:Requiem.esp
+    Index: 3
+  - Name: Arrow2
+    NewTexture: AD3839:Requiem.esp
+    Index: 5
+  - Name: Arrow3
+    NewTexture: AD3839:Requiem.esp
+    Index: 4
+  - Name: Arrow4
+    NewTexture: AD3839:Requiem.esp
+    Index: 2
+  - Name: Arrow:0
+    NewTexture: AD3839:Requiem.esp
+  - Name: ArrowQuiver:1
+    NewTexture: AD3839:Requiem.esp
+    Index: 6
+PickUpSound: 00D219:Dawnguard.esm
+PutDownSound: 00D21A:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: Explodes for <25> fire damage.
+Keywords:
+- 01E71C:Skyrim.esm
+- 0917E7:Skyrim.esm
+- 9D1F4B:Requiem.esp
+- AD397F:Requiem.esp
+- AD3B2D:Requiem.esp
+- ADDDD2:Requiem.esp
+Projectile: AD36FB:Requiem.esp
+Damage: 91
+Value: 10

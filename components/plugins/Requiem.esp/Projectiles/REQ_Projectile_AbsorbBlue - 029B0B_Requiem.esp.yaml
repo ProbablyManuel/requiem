@@ -1,0 +1,20 @@
+FormKey: 029B0B:Requiem.esp
+EditorID: REQ_Projectile_AbsorbBlue
+ObjectBounds:
+  First: -19, 0, -19
+  Second: 19, 512, 19
+Model:
+  File: Magic\AbsorbBlueBeam01.nif
+  Data: 0x020000000000000000000000
+Flags:
+- PassThroughSmallTransparent
+Type: Flame
+Speed: 1000
+Range: 600
+Light: 0ABF06:Skyrim.esm
+Sound: 058E2E:Skyrim.esm
+FadeDuration: 1
+ImpactForce: 5
+CollisionRadius: 10
+RelaunchInterval: 0.5
+MuzzleFlashModel: ''

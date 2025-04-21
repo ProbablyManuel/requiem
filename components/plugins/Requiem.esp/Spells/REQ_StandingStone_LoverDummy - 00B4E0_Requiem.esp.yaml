@@ -1,0 +1,14 @@
+FormKey: 00B4E0:Requiem.esp
+EditorID: REQ_StandingStone_LoverDummy
+Name:
+  TargetLanguage: English
+  Value: DONT USE
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: This is a dummy ability attached to the PlayerSleepQuest so that the game thinks you don't have the Lover Stone and applies the "Well Rested" bonus.
+Type: Ability
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0E5F59:Skyrim.esm
+  Data: {}

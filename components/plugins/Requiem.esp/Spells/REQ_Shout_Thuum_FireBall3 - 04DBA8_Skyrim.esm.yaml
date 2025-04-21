@@ -1,0 +1,20 @@
+FormKey: 04DBA8:Skyrim.esm
+EditorID: REQ_Shout_Thuum_FireBall3
+Name:
+  TargetLanguage: English
+  Value: Fire Ball
+MenuDisplayObject: 04E264:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Voice
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 01CEA1:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Area: 15

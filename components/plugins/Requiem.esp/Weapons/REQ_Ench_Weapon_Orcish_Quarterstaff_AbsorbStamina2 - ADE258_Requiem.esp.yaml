@@ -1,0 +1,54 @@
+FormKey: ADE258:Requiem.esp
+EditorID: REQ_Ench_Weapon_Orcish_Quarterstaff_AbsorbStamina2
+ObjectBounds:
+  First: -7, -39, -2
+  Second: 4, 43, 3
+Name:
+  TargetLanguage: English
+  Value: Orcish Quarterstaff of Gleaning
+Model:
+  File: PrvtI\orcish\orcishquarterstaff.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 0AA159:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E71C:Skyrim.esm
+- 08F958:Skyrim.esm
+- ADDF81:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0E4CB0:Skyrim.esm
+FirstPersonModel: ADDF47:Requiem.esp
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 0E4F10:Skyrim.esm
+UnequipSound: 0E4F11:Skyrim.esm
+BasicStats:
+  Value: 400
+  Weight: 18
+  Damage: 18
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.8
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1069547520
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.2
+Critical:
+  Damage: 9
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: ADDF48:Requiem.esp

@@ -1,0 +1,32 @@
+FormKey: 065314:Requiem.esp
+EditorID: REQ_Ingredient_SabreCatEye
+Name:
+  TargetLanguage: English
+  Value: Sabre Cat Eye
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SabrecatEye.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21E:Skyrim.esm
+Value: 2
+Weight: 0.1
+IngredientValue: 2
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1.5
+    Duration: 20
+- BaseEffect: 073F26:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20

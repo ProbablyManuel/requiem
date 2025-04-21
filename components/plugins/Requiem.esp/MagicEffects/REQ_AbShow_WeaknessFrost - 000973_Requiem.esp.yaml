@@ -1,0 +1,19 @@
+FormKey: 000973:Requiem.esp
+EditorID: REQ_AbShow_WeaknessFrost
+Name:
+  TargetLanguage: English
+  Value: Weakness to Frost
+MenuDisplayObject: 09DB72:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistFrost
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Frost deals <mag>% more damage to you.

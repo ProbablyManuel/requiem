@@ -1,0 +1,37 @@
+FormKey: 01FF75:Dragonborn.esm
+EditorID: DLC2HangingMoss
+ObjectBounds:
+  First: -9, -7, -18
+  Second: 12, 7, 18
+Name:
+  TargetLanguage: English
+  Value: Emperor Parasol Moss
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: DLC02\Plants\DLC2MushroomMoss01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FB974:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 1
+Weight: 0.25
+IngredientValue: 9
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 1
+- BaseEffect: 03EAF8:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EB06:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 03EB1A:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

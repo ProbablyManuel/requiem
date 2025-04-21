@@ -1,0 +1,41 @@
+FormKey: 0252C1:Skyrim.esm
+EditorID: VoiceDragonFireBreathEffect1
+Version2: 7
+Name:
+  TargetLanguage: English
+  Value: Dragon breath
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 2FFEAD:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- GoryVisuals
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistFire
+TaperWeight: 0.3
+HitShader: 01B212:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 0252C6:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 0960A3:Skyrim.esm
+ImpactData: 020DE1:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Type: ConcentrationCastLoop
+  Sound: 03EF56:Skyrim.esm
+- Type: Release
+  Sound: 03F2EA:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: There are few things a Dragon's scorching breath cannot reduce to ashes and cinders within a trice.

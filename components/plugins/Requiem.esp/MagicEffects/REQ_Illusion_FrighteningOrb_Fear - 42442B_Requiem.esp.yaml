@@ -1,0 +1,28 @@
+FormKey: 42442B:Requiem.esp
+EditorID: REQ_Illusion_FrighteningOrb_Fear
+Name:
+  TargetLanguage: English
+  Value: Fear
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 0.035
+MagicSkill: Illusion
+TaperWeight: 1
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: Demoralize
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The target hit by this orb will flee in despair for up to <dur> seconds.

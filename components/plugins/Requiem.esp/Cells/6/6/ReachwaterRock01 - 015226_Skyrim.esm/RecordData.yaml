@@ -1,0 +1,54 @@
+FormKey: 015226:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ReachwaterRock01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Reachwater Rock
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00465A5A'
+  DirectionalColor: '#004D5253'
+  FogNearColor: '#004B616B'
+  FogFar: 5500
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00493A28'
+    DirectionalXMinus: '#003C3A25'
+    DirectionalYPlus: '#00433C27'
+    DirectionalYMinus: '#00433727'
+    DirectionalZPlus: '#001F1B11'
+    DirectionalZMinus: '#0066583C'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00D2E0F0'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - ClipDistance
+LightingTemplate: 034566:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019293:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+SkyAndWeatherFromRegion: 0C5856:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC5B:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0F1CB8:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AD3829:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139B5:Skyrim.esm
+  RagdollData: 0x0009A850B236A73FC3F3CB4064FDA1BCE2FA13B400000080DC0FC93F
+  Placement:
+    Position: 2550, 0, 206.87134
+MajorFlags:
+- 0x40000

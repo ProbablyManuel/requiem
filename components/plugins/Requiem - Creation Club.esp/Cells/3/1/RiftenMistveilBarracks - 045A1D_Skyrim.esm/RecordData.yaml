@@ -1,0 +1,62 @@
+FormKey: 045A1D:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenMistveilBarracks
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mistveil Keep Barracks
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00635A3A'
+  DirectionalColor: '#00464646'
+  FogNearColor: '#00000000'
+  FogFar: 4500
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#006D5A3C'
+    DirectionalXMinus: '#00585A37'
+    DirectionalYPlus: '#00635E3A'
+    DirectionalYMinus: '#0063553A'
+    DirectionalZPlus: '#002F2A1A'
+    DirectionalZMinus: '#00968959'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - FogColor
+  - FogNear
+  - ClipDistance
+LightingTemplate: 0B2157:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 022646:Skyrim.esm
+Owner: 0A251F:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0B215C:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 000821:ccbgssse055-ba_orcishscaled.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 00081C:ccbgssse055-ba_orcishscaled.esl
+  Owner: 000007:Skyrim.esm
+  LocationReference: 022646:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -2199.921, 1812.6565, 448.80133
+MajorFlags:
+- 0x40000

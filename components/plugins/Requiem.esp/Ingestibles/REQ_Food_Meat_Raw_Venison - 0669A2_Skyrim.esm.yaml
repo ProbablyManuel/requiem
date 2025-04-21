@@ -1,0 +1,28 @@
+FormKey: 0669A2:Skyrim.esm
+EditorID: REQ_Food_Meat_Raw_Venison
+ObjectBounds:
+  First: -19, -18, -1
+  Second: 19, 18, 15
+Name:
+  TargetLanguage: English
+  Value: Venison
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\Venison.nif
+  Data: 0x020000000200000000000000CB4858AE64647300604DDD5CBB6420C764647300604DDD5C
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

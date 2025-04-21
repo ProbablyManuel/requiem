@@ -1,0 +1,80 @@
+FormKey: 078AA8:Requiem.esp
+EditorID: RFTI_Player_BagOfHolding
+Name:
+  TargetLanguage: English
+  Value: Bag of Holding
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Often looking like a mundane leather bag, these rare items of unknown origin are enchanted so that the space inside of them twists, creating an anomaly that allows to put much more items in the bag than normally would fit into it.
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 07A0F4:Skyrim.esm
+  Data:
+    Magnitude: 60
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 078AA7:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 07A0F4:Skyrim.esm
+  Data:
+    Magnitude: 120
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 078AA7:Requiem.esp
+    ComparisonValue: 2
+- BaseEffect: 07A0F4:Skyrim.esm
+  Data:
+    Magnitude: 180
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 078AA7:Requiem.esp
+    ComparisonValue: 3
+- BaseEffect: 07A0F4:Skyrim.esm
+  Data:
+    Magnitude: 240
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 078AA7:Requiem.esp
+    ComparisonValue: 4
+- BaseEffect: 07A0F4:Skyrim.esm
+  Data:
+    Magnitude: 300
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 078AA7:Requiem.esp
+    ComparisonValue: 5
+- BaseEffect: 07A0F4:Skyrim.esm
+  Data:
+    Magnitude: 360
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 078AA7:Requiem.esp
+    ComparisonValue: 6
+- BaseEffect: 07A0F4:Skyrim.esm
+  Data:
+    Magnitude: 420
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 078AA7:Requiem.esp
+    ComparisonValue: 7

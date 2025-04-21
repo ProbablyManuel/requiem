@@ -1,0 +1,15 @@
+FormKey: 00FB1C:unofficial skyrim special edition patch.esp
+EditorID: REQ_Temper_Weapon_Spectral_Bow
+Items:
+- Item:
+    Item: 03AD63:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: 0F82FC:Skyrim.esm
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

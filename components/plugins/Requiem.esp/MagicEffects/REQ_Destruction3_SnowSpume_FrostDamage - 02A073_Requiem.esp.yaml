@@ -1,0 +1,45 @@
+FormKey: 02A073:Requiem.esp
+EditorID: REQ_Destruction3_SnowSpume_FrostDamage
+Name:
+  TargetLanguage: English
+  Value: Frost Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAE:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 2.3
+MagicSkill: Destruction
+ResistValue: ResistFrost
+CastingLight: 032DAA:Skyrim.esm
+HitShader: 01F03A:Skyrim.esm
+MinimumSkillLevel: 50
+SpellmakingArea: 15
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 025458:Requiem.esp
+Explosion: 044089:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 042854:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1.1
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Charge
+  Sound: 03EDD5:Skyrim.esm
+- Type: Ready
+  Sound: 03F1F0:Skyrim.esm
+- Type: Release
+  Sound: 03EAC6:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster manifests an explosion of ice shards at the target location, dealing <mag> frost damage in its radius.

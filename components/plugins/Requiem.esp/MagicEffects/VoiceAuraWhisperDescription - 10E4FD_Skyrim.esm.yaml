@@ -1,0 +1,26 @@
+FormKey: 10E4FD:Skyrim.esm
+EditorID: VoiceAuraWhisperDescription
+Name:
+  TargetLanguage: English
+  Value: Aura Whisper
+Keywords:
+- 046B99:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- Recover
+- NoHitEvent
+- FXPersist
+- NoRecast
+- PowerAffectsDuration
+- Painless
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Nearby creatures, including undead, machines, and Daedra, can be seen through walls for <dur> seconds.

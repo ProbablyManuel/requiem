@@ -1,0 +1,19 @@
+FormKey: 03E556:Requiem.esp
+EditorID: RFTI_All_BaseAttackSpeed
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Base Attack Speed Dummy'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 6C84AA:Requiem.esp
+  Data:
+    Magnitude: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 6C84A9:Requiem.esp

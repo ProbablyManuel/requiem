@@ -1,0 +1,24 @@
+FormKey: 000908:ccqdrsse001-survivalmode.esl
+EditorID: REQ_NULL_Survival_DamageHealRate
+Name:
+  TargetLanguage: English
+  Value: Damage Health Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 5
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: HealRateMult
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

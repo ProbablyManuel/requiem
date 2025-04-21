@@ -1,0 +1,23 @@
+FormKey: 029B5A:Skyrim.esm
+EditorID: REQ_Ench_Staff_IceStorm
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Ice Storm
+EnchantmentCost: 309
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 200
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 01CEA3:Skyrim.esm
+  Data:
+    Magnitude: 80
+    Area: 15
+- BaseEffect: 0B729F:Skyrim.esm
+  Data:
+    Magnitude: 35
+    Duration: 5

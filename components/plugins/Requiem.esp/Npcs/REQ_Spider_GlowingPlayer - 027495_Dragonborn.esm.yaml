@@ -1,0 +1,151 @@
+FormKey: 027495:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: REQ_Spider_GlowingPlayer
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2ExpSpiderGlowingScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: spellToCast
+      Object: 02747F:Dragonborn.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bIsFriendly
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderQuest
+      Object: 017962:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderCrumbleExplosion
+      Object: 03CA9E:Dragonborn.esm
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - DoesntAffectStealthMeter
+  MagickaOffset: 235
+  StaminaOffset: 235
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 12
+  SpeedMultiplier: 150
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 235
+Factions:
+- Faction: 017964:Dragonborn.esm
+  Fluff: 0x000000
+Voice: 01F21D:Skyrim.esm
+Template: 014490:Dragonborn.esm
+Race: 014449:Dragonborn.esm
+ActorEffect:
+- 02747F:Dragonborn.esm
+WornArmor: 03C81D:Dragonborn.esm
+AttackRace: 014449:Dragonborn.esm
+AIData:
+  EnergyLevel: 50
+Packages:
+- 04B040:Skyrim.esm
+Class: 044CCB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Glowing Spider
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 29
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 29
+  - Key: Block
+    Value: 21
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 29
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 263
+  Magicka: 239
+  Stamina: 288
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 041446:Skyrim.esm
+NAM5: 255
+Height: 0.7
+Weight: 20
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 038A33:Skyrim.esm
+DefaultOutfit: 053900:Skyrim.esm
+DefaultPackageList: 0EB249:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000

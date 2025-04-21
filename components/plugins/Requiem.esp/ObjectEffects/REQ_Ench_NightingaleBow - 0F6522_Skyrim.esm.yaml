@@ -1,0 +1,21 @@
+FormKey: 0F6522:Skyrim.esm
+EditorID: REQ_Ench_NightingaleBow
+Name:
+  TargetLanguage: English
+  Value: Nightingale Bow Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE388E:Requiem.esp
+  Data:
+    Magnitude: 15
+- BaseEffect: AE388F:Requiem.esp
+  Data:
+    Magnitude: 15
+- BaseEffect: 0B72A0:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 3

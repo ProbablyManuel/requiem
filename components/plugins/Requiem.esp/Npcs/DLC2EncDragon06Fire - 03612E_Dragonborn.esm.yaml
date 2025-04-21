@@ -1,0 +1,208 @@
+FormKey: 03612E:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 537133056
+EditorID: DLC2EncDragon06Fire
+SkyrimMajorRecordFlags:
+- Compressed
+- 0x20000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dragonactorscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonTakeoffImpactSet
+      Object: 019A01:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonLandingImpactSet
+      Object: 02BD39:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: knockBackExplosion
+      Object: 078C57:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: deathFXrange
+      Data: 1024
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQkillDragon
+      Object: 035D56:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NPCDragonFlyby
+      Object: 018B58:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ApocryphaLocation
+      Object: 016E2B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SnowDragonSkin
+      Object: 085808:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TundraDragonSkin
+      Object: 087556:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: forestDragonSkin
+      Object: 087557:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonFOVfx
+      Object: 06C0DA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonTailstompImpactSet
+      Object: 03F819:Skyrim.esm
+  - Name: MGRitual05DragonScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Scales
+      Object: 0D0756:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGRitual05Dagger
+      Object: 0D0758:Skyrim.esm
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - BleedoutOverride
+  MagickaOffset: 4850
+  StaminaOffset: 19900
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 77
+  CalcMaxLevel: 100
+  SpeedMultiplier: 100
+  TemplateFlags:
+  - Factions
+  - AIData
+  - AIPackages
+  - DefPackList
+  - AttackData
+  - Keywords
+  HealthOffset: 400
+Factions:
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 032D9C:Skyrim.esm
+  Fluff: 0x000000
+DeathItem: 03ADA5:Skyrim.esm
+Voice: 02992B:Skyrim.esm
+Template: 0F811E:Skyrim.esm
+Race: 012E82:Skyrim.esm
+ActorEffect:
+- 057B4B:Skyrim.esm
+- 10C4E5:Skyrim.esm
+- 016C40:Skyrim.esm
+- 016CF0:Skyrim.esm
+- 036131:Dragonborn.esm
+- 036132:Dragonborn.esm
+WornArmor: 02C88E:Dragonborn.esm
+FarAwayModel: 02C890:Dragonborn.esm
+AttackRace: 012E82:Skyrim.esm
+Perks:
+- Perk: 033869:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsAllies
+Class: 02F201:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Serpentine Dragon
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 100
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 100
+  - Key: Block
+    Value: 100
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 100
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 5
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 7653
+  Magicka: 5000
+  Stamina: 21027
+  Unused: 16743
+  FarAwayModelDistance: 10000
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 048C83:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 1
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 02F2F0:Skyrim.esm
+DefaultOutfit: 031B4B:Dragonborn.esm
+SleepingOutfit: 031B4B:Dragonborn.esm
+DefaultPackageList: 09C21B:Skyrim.esm
+TextureLighting: '#00808080'
+MajorFlags:
+- 0x40000
+- BleedoutOverride

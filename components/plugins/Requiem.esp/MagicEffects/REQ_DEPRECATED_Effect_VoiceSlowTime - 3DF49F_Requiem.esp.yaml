@@ -1,0 +1,42 @@
+FormKey: 3DF49F:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_VoiceSlowTime
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicimodbeginloopend
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 0FD7DA:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 1.75
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 0FD7DC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LoopFX
+      Object: 0FD7DB:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bPlayerOnly
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Slow Time Effect
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 357085:Requiem.esp
+Flags:
+- NoArea
+- NoRecast
+BaseCost: 500
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: SlowTime
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

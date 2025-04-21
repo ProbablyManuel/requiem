@@ -1,0 +1,17 @@
+FormKey: 00488B:Dawnguard.esm
+EditorID: REQ_Ench_AurielsShield
+Name:
+  TargetLanguage: English
+  Value: Auriel's Shield Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 00488C:Dawnguard.esm
+  Data: {}
+- BaseEffect: 000863:Requiem.esp
+  Data:
+    Magnitude: 100
+- BaseEffect: 00082C:Requiem.esp
+  Data:
+    Magnitude: 40

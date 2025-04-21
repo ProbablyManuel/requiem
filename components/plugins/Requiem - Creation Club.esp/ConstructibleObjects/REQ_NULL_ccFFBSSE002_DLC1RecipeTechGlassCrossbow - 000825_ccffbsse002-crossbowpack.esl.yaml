@@ -1,0 +1,34 @@
+FormKey: 000825:ccffbsse002-crossbowpack.esl
+EditorID: REQ_NULL_ccFFBSSE002_DLC1RecipeTechGlassCrossbow
+Items:
+- Item:
+    Item: 05AD9F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05ADA1:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 06F993:Skyrim.esm
+    Count: 3
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB411:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000842:ccffbsse002-crossbowpack.esl
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00398A:Dawnguard.esm
+CreatedObject: 00080A:ccffbsse002-crossbowpack.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

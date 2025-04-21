@@ -1,0 +1,610 @@
+FormKey: 108272:Skyrim.esm
+EditorID: BretonRaceChildVampire
+Version2: 12
+Name:
+  TargetLanguage: English
+  Value: Breton
+Description:
+  TargetLanguage: English
+  Value: ''
+Skin: 000D64:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Hands
+  - Forearms
+  - Amulet
+  - Ring
+  - Shield
+  - LongHair
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013794:Skyrim.esm
+- 013796:Skyrim.esm
+- 0A82BB:Skyrim.esm
+SkillBoost0:
+  Skill: Conjuration
+  Boost: 10
+SkillBoost1:
+  Skill: Illusion
+  Boost: 5
+SkillBoost2:
+  Skill: Restoration
+  Boost: 5
+SkillBoost3:
+  Skill: Speech
+  Boost: 5
+SkillBoost4:
+  Skill: Alchemy
+  Boost: 5
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 0.8
+  Female: 0.8
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- FaceGenHead
+- Child
+- Swims
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- AllowPcDialog
+- CanPickupItems
+- CanDualWield
+Starting:
+- Key: Health
+  Value: 50
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 50
+BaseCarryWeight: 200
+BaseMass: 1
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+HeadBipedObject: Head
+HairBipedObject: Hair
+ShieldBipedObject: Shield
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 1
+UnarmedReach: 64
+BodyBipedObject: Body
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Character\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: actors\Character\Character Assets Female\skeleton_female.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 013AD2:Skyrim.esm
+  Female: 013ADD:Skyrim.esm
+DefaultHairColors:
+  Male: 0A0431:Skyrim.esm
+  Female: 0A0431:Skyrim.esm
+NumberOfTintsInList: 22
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 3
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E8:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartBackward
+- AttackData:
+    DamageMult: 3
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartInPlace
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartDualWield
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    AttackType: 0914E8:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartBackLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartDualWield
+- AttackData:
+    DamageMult: 3
+    Chance: 0.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForward
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HRight
+- AttackData:
+    DamageMult: 3
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartRight
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartRightLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartLeftLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardH2HLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardH2HRightHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartInPlaceLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartH2HCombo
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardLeftHand
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - LeftAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HLeft
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashStart
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart
+- AttackData:
+    DamageMult: 3
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartLeft
+- AttackData:
+    DamageMult: 3
+    Chance: 0.33
+    Flags:
+    - BashAttack
+    - PowerAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashPowerStart
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 00001D:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Character\DefaultMale.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Character\DefaultFemale.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 05A28F:Skyrim.esm
+ImpactDataSet: 0C190F:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: HEAD
+- Key: Hair
+  Value: Hair
+- Key: Body
+  Value: BODY
+- Key: Hands
+  Value: Hands
+- Key: Forearms
+  Value: RightForearm
+- Key: Amulet
+  Value: LeftForearm
+- Key: Ring
+  Value: Upper Arms
+- Key: Feet
+  Value: Feet
+- Key: Calves
+  Value: Calves
+- Key: Shield
+  Value: SHIELD
+- Key: Tail
+  Value: Amulet
+- Key: LongHair
+  Value: Ring
+EquipmentFlags:
+- HandToHand
+- OneHandSword
+- OneHandDagger
+- OneHandAxe
+- OneHandMace
+- TwoHandSword
+- TwoHandAxe
+- Bow
+- Staff
+- Spell
+- Shield
+- Torch
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x2000000
+- 0x4000000
+- 0x8000000
+- 0x10000000
+- 0x20000000
+- 0x40000000
+- 0x80000000
+- 0x0
+EquipmentSlots:
+- 035698:Skyrim.esm
+- 025BEE:Skyrim.esm
+- 013F43:Skyrim.esm
+- 013F42:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+FaceFxPhonemes:
+  Aah_LipBigAah:
+    Name: Aah
+    EY: 0.6
+    AE: 0.8
+    AA: 1
+    AW: 0.2
+    AH: 0.8
+    AO: 0.1
+    Y: 0.2
+    HH: 0.6
+    G: 0.4
+  BigAah_LipDST:
+    Name: BigAah
+    OW: 0.8
+    UH: 0.5
+    AX: 0.8
+  BMP_LipEee:
+    Name: BMP
+    M: 1
+    B: 1
+    P: 0.9
+  ChJSh_LipFV:
+    Name: ChJSh
+    SH: 0.8
+    ZH: 0.7
+    JH: 1
+    G: 0.3
+    CH: 1
+  DST_LipK:
+    Name: DST
+    S: 0.9
+    Z: 0.8
+    DH: 0.2
+    D: 1
+    T: 0.8
+  Eee_LipL:
+    Name: Eee
+    IY: 1
+    IH: 0.2
+    EY: 0.3
+    AY: 0.2
+    OY: 0.3
+    Y: 0.4
+  Eh_LipR:
+    Name: Eh
+    IH: 0.7
+    EH: 1
+  FV_LipTh:
+    Name: FV
+    F: 0.8
+    V: 1
+  I:
+    Name: I
+    AY: 0.8
+    ER: 0.5
+    Y: 0.4
+  K:
+    Name: K
+    K: 1
+  N:
+    Name: N
+    N: 1
+    NG: 0.9
+    L: 0.6
+  Oh:
+    Name: Oh
+    AW: 0.6
+    AH: 0.2
+    AO: 0.5
+    OY: 0.6
+    OW: 0.2
+    UH: 0.2
+  OohQ:
+    Name: OohQ
+    UW: 1
+  R:
+    Name: R
+    ER: 0.3
+    R: 1
+  Th:
+    Name: Th
+    TH: 1
+    DH: 0.8
+    L: 0.2
+  W:
+    Name: W
+    AO: 0.2
+    W: 1
+HeadData:
+  Male:
+    HeadParts:
+    - Number: 0
+      Head: 01C290:Skyrim.esm
+    - Number: 1
+      Head: 051401:Skyrim.esm
+    - Number: 2
+      Head: 0511CA:Skyrim.esm
+    - Number: 3
+      Head: 1094C4:Skyrim.esm
+    AvailableMorphs:
+      Nose:
+        Data: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Brow:
+        Data: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Eye:
+        Data: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Lip:
+        Data: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    AvailableHairColors:
+    - 0A0431:Skyrim.esm
+    - 0A0434:Skyrim.esm
+    - 0A0435:Skyrim.esm
+    - 0A042F:Skyrim.esm
+    - 0A0430:Skyrim.esm
+    - 0A042C:Skyrim.esm
+    - 0A0433:Skyrim.esm
+    - 0A042E:Skyrim.esm
+    - 0A042D:Skyrim.esm
+    - 0A0432:Skyrim.esm
+    - 0A0439:Skyrim.esm
+    TintMasks:
+    - Index: 1
+      FileName: Actors\Character\Character Assets\TintMasks\SkinTone.dds
+      MaskType: SkinTone
+      PresetDefault: 026956:Skyrim.esm
+      Presets:
+      - Color: 0E6E17:Skyrim.esm
+        DefaultValue: 1
+        Index: 3
+      - Color: 0E6E0A:Skyrim.esm
+        DefaultValue: 1
+        Index: 4
+      - Color: 0E6E08:Skyrim.esm
+        DefaultValue: 1
+        Index: 5
+      - Color: 026956:Skyrim.esm
+        DefaultValue: 1
+        Index: 6
+      - Color: 026A5B:Skyrim.esm
+        DefaultValue: 1
+        Index: 7
+      - Color: 053999:Skyrim.esm
+        DefaultValue: 1
+        Index: 8
+      - Color: 099D12:Skyrim.esm
+        DefaultValue: 1
+        Index: 9
+      - Color: 099D13:Skyrim.esm
+        DefaultValue: 1
+        Index: 10
+      - Color: 099D16:Skyrim.esm
+        DefaultValue: 1
+        Index: 11
+      - Color: 099D1F:Skyrim.esm
+        DefaultValue: 1
+        Index: 12
+  Female:
+    HeadParts:
+    - Number: 0
+      Head: 01C558:Skyrim.esm
+    - Number: 1
+      Head: 051401:Skyrim.esm
+    - Number: 2
+      Head: 0511CA:Skyrim.esm
+    - Number: 3
+      Head: 0511CB:Skyrim.esm
+    AvailableMorphs:
+      Nose:
+        Data: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Brow:
+        Data: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Eye:
+        Data: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      Lip:
+        Data: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    AvailableHairColors:
+    - 0A0434:Skyrim.esm
+    - 0A0435:Skyrim.esm
+    - 0A042F:Skyrim.esm
+    - 0A0430:Skyrim.esm
+    - 0A042C:Skyrim.esm
+    - 0A0433:Skyrim.esm
+    - 0A042E:Skyrim.esm
+    - 0A042D:Skyrim.esm
+    - 0A0432:Skyrim.esm
+    - 0A0439:Skyrim.esm
+    - 0A0431:Skyrim.esm
+    TintMasks:
+    - Index: 2
+      FileName: Actors\Character\Character Assets\TintMasks\SkinTone.dds
+      MaskType: SkinTone
+      PresetDefault: 026956:Skyrim.esm
+      Presets:
+      - Color: 0E6E17:Skyrim.esm
+        DefaultValue: 1
+        Index: 13
+      - Color: 0E6E0A:Skyrim.esm
+        DefaultValue: 1
+        Index: 14
+      - Color: 0E6E08:Skyrim.esm
+        DefaultValue: 1
+        Index: 15
+      - Color: 026956:Skyrim.esm
+        DefaultValue: 1
+        Index: 16
+      - Color: 026A5B:Skyrim.esm
+        DefaultValue: 1
+        Index: 17
+      - Color: 053999:Skyrim.esm
+        DefaultValue: 1
+        Index: 18
+      - Color: 099D12:Skyrim.esm
+        DefaultValue: 1
+        Index: 19
+      - Color: 099D13:Skyrim.esm
+        DefaultValue: 1
+        Index: 20
+      - Color: 099D16:Skyrim.esm
+        DefaultValue: 1
+        Index: 21
+      - Color: 099D1F:Skyrim.esm
+        DefaultValue: 1
+        Index: 22
+MorphRace: 02C65C:Skyrim.esm

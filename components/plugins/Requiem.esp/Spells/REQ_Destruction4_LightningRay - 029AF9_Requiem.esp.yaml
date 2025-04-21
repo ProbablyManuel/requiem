@@ -1,0 +1,21 @@
+FormKey: 029AF9:Requiem.esp
+EditorID: REQ_Destruction4_LightningRay
+Name:
+  TargetLanguage: English
+  Value: Lightning Ray
+MenuDisplayObject: 09FA64:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 200
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+HalfCostPerk: 0C44C1:Skyrim.esm
+Effects:
+- BaseEffect: 029AFA:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1

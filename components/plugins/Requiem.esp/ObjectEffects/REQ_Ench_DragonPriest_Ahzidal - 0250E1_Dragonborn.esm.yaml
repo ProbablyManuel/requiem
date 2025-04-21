@@ -1,0 +1,20 @@
+FormKey: 0250E1:Dragonborn.esm
+EditorID: REQ_Ench_DragonPriest_Ahzidal
+Name:
+  TargetLanguage: English
+  Value: Ahzidal Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE384E:Requiem.esp
+  Data:
+    Magnitude: 32
+- BaseEffect: AE384D:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetRandomPercentConditionData
+    ComparisonValue: 10

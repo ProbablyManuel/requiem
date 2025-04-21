@@ -1,0 +1,110 @@
+FormKey: 01525C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: LargashburShagrolsLonghouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Largashbur Longhouse
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#003F615F'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00A5C7C4'
+    Scale: 1
+  FogFarColor: '#00A5C7C4'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 03BC2B:Skyrim.esm
+Owner: 02C005:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5857:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D546:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0ACB6D:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 3
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0ACB6C:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 03BC2B:Skyrim.esm
+  Placement:
+    Position: -484.01266, -861.7511, 1.0000019
+    Rotation: 0, -0, 5.383188
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B3328:Skyrim.esm
+  Version2: 3
+  Base: 0774C8:Skyrim.esm
+  Scale: 0.85
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 03BC2B:Skyrim.esm
+  Placement:
+    Position: 1032.6705, -497.5265, 7.6293945E-06
+    Rotation: 0, -0, 2.7600005
+- MutagenObjectType: PlacedObject
+  FormKey: 0B3392:Skyrim.esm
+  Base: 000845:Skyrim.esm
+  LocationReference: 03BC2B:Skyrim.esm
+  Placement:
+    Position: -544.5382, -1063.458, 17.364445
+    Rotation: 1.4699996, -0.6600007, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0832B4:Requiem.esp
+  Base: 003534:HearthFires.esm
+  Placement:
+    Position: -35.21386, -70.98175, 62.770428
+- MutagenObjectType: PlacedObject
+  FormKey: 0B3395:Skyrim.esm
+  Base: 097F54:Skyrim.esm
+  Scale: 0.87
+  LocationReference: 03BC2B:Skyrim.esm
+  Placement:
+    Position: -459.01746, -986.73346, 20.744974
+    Rotation: 0, -0, 4.363189
+- MutagenObjectType: PlacedObject
+  FormKey: 0B3394:Skyrim.esm
+  Base: 097F54:Skyrim.esm
+  LocationReference: 03BC2B:Skyrim.esm
+  Placement:
+    Position: -422.78046, -961.2106, 26.159187
+    Rotation: 0, -0, 5.1431875
+MajorFlags:
+- 0x40000

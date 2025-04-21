@@ -1,0 +1,27 @@
+FormKey: 000F78:ccbgssse001-fish.esm
+EditorID: REQ_Food_FlourMeat_CrabCakes
+Name:
+  TargetLanguage: English
+  Value: Crab Cakes
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: CreationClub\BGSSSE001\Clutter\Food\CrabCakes01.nif
+  Data: 0x020000000000000000000000
+Weight: 0.5
+Value: 20
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371C:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 3600
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 3600
+- BaseEffect: 002EE4:Update.esm
+  Data: {}

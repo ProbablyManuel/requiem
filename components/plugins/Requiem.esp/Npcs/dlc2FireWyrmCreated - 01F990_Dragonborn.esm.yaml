@@ -1,0 +1,157 @@
+FormKey: 01F990:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: dlc2FireWyrmCreated
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2SpectralDragonDeathScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FireExplosion
+      Object: 06051F:Skyrim.esm
+ObjectBounds:
+  First: -12, -142, 0
+  Second: 12, 17, 135
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - Summonable
+  MagickaOffset: 500
+  StaminaOffset: 1000
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  HealthOffset: 300
+Factions:
+- Faction: 031846:Dragonborn.esm
+  Fluff: 0x000000
+Voice: 01F236:Skyrim.esm
+Race: 01F98F:Dragonborn.esm
+ActorEffect:
+- 0F8108:Skyrim.esm
+- 10C4E0:Skyrim.esm
+WornArmor: 01F992:Dragonborn.esm
+AttackRace: 01F98F:Dragonborn.esm
+Perks:
+- Perk: 0F392E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 033869:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D02C5:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0FAB0A:Requiem.esp
+  Rank: 1
+  Fluff: 0x000000
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Assistance: HelpsFriendsAndAllies
+Class: 073F1F:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Fire Wyrm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 51
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 51
+  - Key: Block
+    Value: 28
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 5
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 52
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 5
+  - Key: Conjuration
+    Value: 5
+  - Key: Destruction
+    Value: 75
+  - Key: Illusion
+    Value: 5
+  - Key: Restoration
+    Value: 5
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 1097
+  Magicka: 1200
+  Stamina: 1748
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x425AEF
+CombatStyle: 01F996:Dragonborn.esm
+NAM5: 255
+Height: 1
+Weight: 50
+SoundLevel: Normal
+Sound:
+  MutagenObjectType: NpcInheritSound
+  InheritsSoundsFrom: 04D2C2:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+TextureLighting: '#007E7E7E'
+MajorFlags:
+- 0x40000

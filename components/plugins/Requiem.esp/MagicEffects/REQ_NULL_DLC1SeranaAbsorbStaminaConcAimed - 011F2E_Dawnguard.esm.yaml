@@ -1,0 +1,35 @@
+FormKey: 011F2E:Dawnguard.esm
+EditorID: REQ_NULL_DLC1SeranaAbsorbStaminaConcAimed
+Name:
+  TargetLanguage: English
+  Value: Drain Stamina
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: ResistMagic
+TaperWeight: 1
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: Absorb
+CastType: Concentration
+TargetType: Aimed
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Absorb <mag> points of Stamina per second from the target.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm

@@ -1,0 +1,163 @@
+FormKey: 0F1182:Skyrim.esm
+EditorID: WispShadeRace
+Name:
+  TargetLanguage: English
+  Value: Wisp Shade
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 0F1184:Skyrim.esm
+- 0173C2:Dragonborn.esm
+- AE3B7D:Requiem.esp
+Skin: 0F1187:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 06F6FB:Skyrim.esm
+- 4F6D1E:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- DontShowBloodDecal
+- UsesHeadTrackAnims
+- CantOpenDoors
+- NoKnockdowns
+- DontShowWeaponBlood
+Starting:
+- Key: Health
+  Value: 50
+- Key: Magicka
+  Value: 50
+- Key: Stamina
+  Value: 50
+BaseCarryWeight: 200
+BaseMass: 0.5
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+ShieldBipedObject: Shield
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 1
+UnarmedReach: 96
+BodyBipedObject: Head
+AngularAccelerationRate: 1
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Wisp\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Wisp\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- BLDO
+- RUN1
+- SNEK
+- SWIM
+- WALK
+Voices:
+  Male: 01F4A3:Skyrim.esm
+  Female: 01F4A3:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart_TouchPush
+- AttackData:
+    DamageMult: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: bashStart
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 042529:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Wisp\WispProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Wisp\WispProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 100752:Skyrim.esm
+ImpactDataSet: 01F82A:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: BODY
+- Key: Shield
+  Value: SHIELD
+EquipmentFlags:
+- HandToHand
+- OneHandSword
+- Spell
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 04252A:Skyrim.esm
+BaseMovementDefaultRun: 04252A:Skyrim.esm

@@ -1,0 +1,23 @@
+FormKey: 0BE127:Skyrim.esm
+EditorID: REQ_Alchemy_AlchemicalLore1
+Name:
+  TargetLanguage: English
+  Value: Alchemical Lore
+Description:
+  TargetLanguage: English
+  Value: You've acquired basic alchemical insights and understand how to work with a laboratory. <br> Thus, you can now craft your own potions and poisons.
+NumRanks: 5
+Playable: True
+NextPerk: 0C07CA:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C07CA:Skyrim.esm
+  EntryPoint: ModAlchemyEffectiveness
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.25

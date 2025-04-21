@@ -1,0 +1,31 @@
+FormKey: 081181:Skyrim.esm
+EditorID: REQ_NULL_DA02AbArmorShadow
+Name:
+  TargetLanguage: English
+  Value: Boethiah's Shadow
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+ResistValue: ResistFire
+TaperWeight: 0.2
+HitShader: 081180:Skyrim.esm
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 06445B:Skyrim.esm
+HitEffectArt: 1046CD:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 03F2C1:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03EDD4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: For <dur> seconds, opponents in melee range take <mag> points fire damage per second. Targets on fire take extra damage.

@@ -1,0 +1,80 @@
+FormKey: 331E45:Requiem.esp
+EditorID: REQ_Alteration1_AbsorbingGrasp_AbsorbHealth
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABEFC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF17:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0ABEFB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Absorb Health
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 2FFEAD:Requiem.esp
+- ADDDF7:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- PowerAffectsMagnitude
+BaseCost: 1.5
+MagicSkill: Alteration
+ResistValue: ResistMagic
+CastingLight: 07479A:Skyrim.esm
+TaperWeight: 1
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: Absorb
+Projectile: 1A8278:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 0ABF02:Skyrim.esm
+ImpactData: AD384F:Requiem.esp
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA52:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+- Type: OnHit
+  Sound: AD3850:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: The caster lays their grasping hand the target, focuses for a moment and then absorbs <mag> health.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 331E45:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 0731CF:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsReferenceConditionData
+    RunOnType: Target
+    Target: 000014:Skyrim.esm

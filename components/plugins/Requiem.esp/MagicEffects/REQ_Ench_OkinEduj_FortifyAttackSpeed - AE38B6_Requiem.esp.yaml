@@ -1,0 +1,22 @@
+FormKey: AE38B6:Requiem.esp
+EditorID: REQ_Ench_OkinEduj_FortifyAttackSpeed
+Name:
+  TargetLanguage: English
+  Value: Fortify Attack Speed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: WeaponSpeedMult
+  Type: DualValueModifier
+SecondActorValue: LeftWeaponSpeedMultiply
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You feel Okin and Eduj almost swinging on their own will, swinging <15>% faster as long as they are wielded together.

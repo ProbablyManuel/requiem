@@ -1,0 +1,70 @@
+FormKey: 016203:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: CidhnaMine01
+Version2: 4
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Cidhna Mine
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#0021222C'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 091937:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 018C91:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+EncounterZone: 03EBFD:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 03EF02:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: CidhnaMineStolenGoodsChestREF
+  Version2: 9
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0267E7:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 100FA6:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  Owner: 02816C:Skyrim.esm
+  LocationReference: 018C91:Skyrim.esm
+  Placement:
+    Position: -504.7987, -2939.3103, 135.47018
+    Rotation: 0, -0, 0.27080384
+MajorFlags:
+- 0x40000

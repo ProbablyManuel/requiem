@@ -1,0 +1,25 @@
+FormKey: 03EB1C:Skyrim.esm
+EditorID: REQ_Alch_FortifyBlock
+Name:
+  TargetLanguage: English
+  Value: Fortify Block
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A1E:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: BlockPowerModifier
+  Association: 065A1E:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Blocking absorbs <mag>% more damage for <dur> seconds.

@@ -1,0 +1,49 @@
+FormKey: 01CEA4:Skyrim.esm
+EditorID: REQ_Restoration2_HealSelf_RestoreHealth
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEB0:Skyrim.esm
+- 0A9B1E:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 1
+MagicSkill: Restoration
+CastingLight: 03F1B5:Skyrim.esm
+TaperWeight: 1
+HitShader: 012FD9:Skyrim.esm
+MinimumSkillLevel: 25
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FDC:Skyrim.esm
+CastType: Concentration
+CastingArt: 01C859:Skyrim.esm
+HitEffectArt: 03F810:Skyrim.esm
+SkillUsageMultiplier: 4
+DualCastScale: 1
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E958:Skyrim.esm
+- Type: Release
+  Sound: 057C61:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Restores <mag> health per second, but doesn't affect the undead.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1

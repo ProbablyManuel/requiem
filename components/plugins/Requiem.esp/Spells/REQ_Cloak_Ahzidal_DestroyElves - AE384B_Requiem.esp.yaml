@@ -1,0 +1,24 @@
+FormKey: AE384B:Requiem.esp
+EditorID: REQ_Cloak_Ahzidal_DestroyElves
+Name:
+  TargetLanguage: English
+  Value: Ahzidal
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: AE384C:Requiem.esp
+  Data:
+    Duration: 15
+- BaseEffect: AE385A:Requiem.esp
+  Data:
+    Duration: 30
+- BaseEffect: AE385B:Requiem.esp
+  Data:
+    Duration: 60

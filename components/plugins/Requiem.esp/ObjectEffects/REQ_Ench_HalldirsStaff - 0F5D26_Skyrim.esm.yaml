@@ -1,0 +1,20 @@
+FormKey: 0F5D26:Skyrim.esm
+EditorID: REQ_Ench_HalldirsStaff
+Name:
+  TargetLanguage: English
+  Value: Halldir's Staff Enchantment
+EnchantmentCost: 1000
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 1000
+TargetType: TargetActor
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 0FB406:Skyrim.esm
+  Data:
+    Duration: 3
+- BaseEffect: 0FB404:Skyrim.esm
+  Data:
+    Duration: 10

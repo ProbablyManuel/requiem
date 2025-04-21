@@ -1,0 +1,50 @@
+FormKey: AD3AC5:Requiem.esp
+EditorID: REQ_Scroll_MageArmor5_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MagicPlayEffectShaderOnHitScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicEffectShader
+      Object: 10DEAB:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Mage Armor (Rank V)
+MenuDisplayObject: 109AC2:Skyrim.esm
+Keywords:
+- 01EA72:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 250
+MagicSkill: Alteration
+CastingLight: 03F1B5:Skyrim.esm
+HitShader: 056AC9:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: DamageResist
+  Association: 01EA72:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 10E3CE:Skyrim.esm
+HitEffectArt: 056AC8:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 10E3D1:Skyrim.esm
+ImageSpaceModifier: 04408A:Skyrim.esm
+PerkToApply: 109639:Skyrim.esm
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 0571B2:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster creates an almost unpenetrable force field that negates nearly all physical damage taken for <dur> seconds.

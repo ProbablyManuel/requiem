@@ -1,0 +1,21 @@
+FormKey: 038EA6:Dragonborn.esm
+EditorID: REQ_Temper_Heavy_Stalhrim_Head
+Items:
+- Item:
+    Item: 02B06B:Dragonborn.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 01CAF1:Dragonborn.esm
+    Stage: 200
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB412:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 01CDA1:Dragonborn.esm
+WorkbenchKeyword: 0ADB78:Skyrim.esm
+CreatedObjectCount: 1

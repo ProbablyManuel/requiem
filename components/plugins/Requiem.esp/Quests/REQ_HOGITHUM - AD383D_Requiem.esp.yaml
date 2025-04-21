@@ -1,0 +1,240 @@
+FormKey: AD383D:Requiem.esp
+EditorID: REQ_HOGITHUM
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_HogithumQuest
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Giraud
+      Object: AD383D:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DarklightTowerFragment
+      Object: AD383D:Requiem.esp
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: AD383D:Requiem.esp
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Reward
+      Object: AD383D:Requiem.esp
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RobbersCoveFragment
+      Object: AD383D:Requiem.esp
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PelagiusWingFragment
+      Object: AD383D:Requiem.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_WolfskullCaveFragment
+      Object: AD383D:Requiem.esp
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MorthalSwampFragment
+      Object: AD383D:Requiem.esp
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FrostmereCryptFragment
+      Object: AD383D:Requiem.esp
+      Alias: 2
+  FileName: REQ_HogithumQuest
+  Fragments:
+  - Stage: 110
+    Unknown2: 1
+    ScriptName: REQ_HogithumQuest
+    FragmentName: Fragment_4
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: REQ_HogithumQuest
+    FragmentName: Fragment_2
+  - Stage: 10
+    Unknown2: 1
+    ScriptName: REQ_HogithumQuest
+    FragmentName: Fragment_1
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: REQ_HogithumQuest
+    FragmentName: Fragment_3
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD383D:Requiem.esp
+      Alias: 1
+    Scripts:
+    - Name: REQ_HogithumRead
+  - Property:
+      Name: ''
+      Object: AD383D:Requiem.esp
+      Alias: 2
+    Scripts:
+    - Name: REQ_HogithumRead
+  - Property:
+      Name: ''
+      Object: AD383D:Requiem.esp
+      Alias: 3
+    Scripts:
+    - Name: REQ_HogithumRead
+  - Property:
+      Name: ''
+      Object: AD383D:Requiem.esp
+      Alias: 4
+    Scripts:
+    - Name: REQ_HogithumRead
+  - Property:
+      Name: ''
+      Object: AD383D:Requiem.esp
+      Alias: 5
+    Scripts:
+    - Name: REQ_HogithumRead
+  - Property:
+      Name: ''
+      Object: AD383D:Requiem.esp
+      Alias: 6
+    Scripts:
+    - Name: REQ_HogithumRead
+  - Property:
+      Name: ''
+      Object: AD383D:Requiem.esp
+      Alias: 8
+    Scripts:
+    - Name: REQ_HogithumRead
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: Reward
+        Data: True
+Name:
+  TargetLanguage: English
+  Value: On Hogithum
+Flags:
+- RunOnce
+Priority: 20
+Type: SideQuest
+Stages:
+- Flags:
+  - StartUpStage
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I have discovered the fragment of a poem. That seems interesting. Perhaps I should explore at the Bard's College to see what this is all about.
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I found a report at the Bard's college. It mentions a song, and suggests some places where I might find more about it. Giraud Gemane would probably be happy if I found them all.
+- Index: 100
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: I think I found all pieces of the lost poem, but it seems that the last verse is still missing. Perhaps Giraud Gemane can help.
+- Index: 110
+  LogEntries:
+  - Flags: []
+    Entry:
+      TargetLanguage: English
+      Value: Giraud was ecstatic and rewarded me with a copy of the collated fragments, including the last verse. According to Adonato's letter, it might be risky to read the complete version, but I can't resist the temptation. Surely nothing terrible can come out of it.
+- Index: 120
+  Flags:
+  - ShutDownStage
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry:
+      TargetLanguage: English
+      Value: A tale of old has now been told, A bard's reward is due; A queen once brewed a lethal food, And you can brew it too.
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find more information about the missing fragment
+- Index: 50
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Find all six missing fragments
+- Index: 100
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Talk to <Alias=Giraud>
+  Targets:
+  - {}
+- Index: 110
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Read the complete "On Hogithum"
+  Targets:
+  - AliasID: 8
+NextAliasID: 2
+Aliases:
+- Name: Giraud
+  Flags:
+  - StoresText
+  - AllowReserved
+  UniqueActor: 013281:Skyrim.esm
+  VoiceTypes: Null
+- ID: 1
+  Name: WolfskullCaveFragment
+  Flags:
+  - Optional
+  - QuestObject
+  ForcedReference: AD3842:Requiem.esp
+  VoiceTypes: Null
+- ID: 2
+  Name: FrostmereCryptFragment
+  Flags:
+  - Optional
+  - QuestObject
+  ForcedReference: 0A84CF:Skyrim.esm
+  VoiceTypes: Null
+- ID: 3
+  Name: RobbersCoveFragment
+  Flags:
+  - Optional
+  - QuestObject
+  ForcedReference: 0A7E80:Skyrim.esm
+  VoiceTypes: Null
+- ID: 4
+  Name: DarklightTowerFragment
+  Flags:
+  - Optional
+  - QuestObject
+  ForcedReference: AD3843:Requiem.esp
+  VoiceTypes: Null
+- ID: 5
+  Name: MorthalSwampFragment
+  Flags:
+  - Optional
+  - QuestObject
+  ForcedReference: AD3840:Requiem.esp
+  VoiceTypes: Null
+- ID: 6
+  Name: PelagiusWingFragment
+  Flags:
+  - Optional
+  - QuestObject
+  ForcedReference: 0E47AF:Skyrim.esm
+  VoiceTypes: Null
+- ID: 7
+  Name: Player
+  Flags:
+  - Optional
+  - StoresText
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null
+- ID: 8
+  Name: Reward
+  Flags:
+  - Optional
+  - UsesStoredText
+  CreateReferenceToObject:
+    Object: AD3846:Requiem.esp
+  VoiceTypes: Null

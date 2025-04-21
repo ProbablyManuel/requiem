@@ -1,0 +1,58 @@
+FormKey: 000C52:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__01000C52
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__01000C52
+    OnBegin:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__01000C52
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - SayOnce
+PreviousDialog: Null
+FavorLevel: None
+LinkTo:
+- 00BE00:HearthFires.esm
+- 00BDFF:HearthFires.esm
+- 00BDFE:HearthFires.esm
+ResponseData: 000C51:HearthFires.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 00BE09:HearthFires.esm
+    SecondUnusedIntParameter: -285091168
+    VariableName: ::bOwnProperty_var
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 013605:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 050922:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 087E20:Skyrim.esm
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00BE09:HearthFires.esm
+    Stage: 30
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00BE09:HearthFires.esm
+    Stage: 50
+Prompt:
+  TargetLanguage: English
+  Value: I got your letter about the land for sale. Is it still available?

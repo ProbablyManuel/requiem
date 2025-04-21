@@ -1,0 +1,26 @@
+FormKey: 064B30:Skyrim.esm
+EditorID: REQ_Food_Sweets_BoiledCreme
+ObjectBounds:
+  First: -7, -7, -2
+  Second: 7, 7, 2
+Name:
+  TargetLanguage: English
+  Value: Boiled Creme Treat
+Keywords:
+- 08CDEA:Skyrim.esm
+- 0A248C:Skyrim.esm
+Model:
+  File: Clutter\Food\ButterscotchCreams01.nif
+  Data: 0x020000000700000000000000E946083E64647300B9148236CC9F2A8764647300B9148236CE353C0964647300262C333B2A60A24264647300B9148236FAE0BBA4646473007F66A5C01B315936646473007F66A5C0B93AED84646473007F66A5C0
+Weight: 0.1
+Value: 4
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3720:Requiem.esp
+  Data:
+    Magnitude: 50
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

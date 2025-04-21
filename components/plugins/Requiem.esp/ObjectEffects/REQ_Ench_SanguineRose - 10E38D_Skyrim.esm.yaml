@@ -1,0 +1,26 @@
+FormKey: 10E38D:Skyrim.esm
+EditorID: REQ_Ench_SanguineRose
+Name:
+  TargetLanguage: English
+  Value: Sanguine Rose Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: TargetLocation
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 10E38E:Skyrim.esm
+  Data:
+    Duration: 60
+- BaseEffect: AE37E8:Requiem.esp
+  Data:
+    Duration: 60
+- BaseEffect: AE37E9:Requiem.esp
+  Data:
+    Duration: 60
+- BaseEffect: AE37EA:Requiem.esp
+  Data:
+    Duration: 60
+- BaseEffect: AE386B:Requiem.esp
+  Data: {}

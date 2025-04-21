@@ -1,0 +1,67 @@
+FormKey: 3FA2B0:Requiem.esp
+EditorID: REQ_Illusion2_Muffle_Muffle
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Exclusive
+      Object: 3FA2AF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 08F3EB:Skyrim.esm
+  - Name: REQ_Magic_XPGain
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Interval
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPGain
+      Data: 0.2
+    - MutagenObjectType: ScriptStringProperty
+      Name: skill
+      Data: ILLUSION
+Name:
+  TargetLanguage: English
+  Value: Muffle
+MenuDisplayObject: 109AC3:Skyrim.esm
+Keywords:
+- 3FA2AF:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+BaseCost: 60
+MagicSkill: Illusion
+CastingLight: 028530:Skyrim.esm
+TaperWeight: 1
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+Projectile: 07331D:Skyrim.esm
+CastType: FireAndForget
+SecondActorValue: MovementNoiseMult
+CastingArt: 028531:Skyrim.esm
+HitEffectArt: 0BAD3E:Skyrim.esm
+ImpactData: 073320:Skyrim.esm
+DualCastScale: 1
+PerkToApply: 3FF1EC:Requiem.esp
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 06F6D3:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster muffles his movement, reducing the generated noise by <mag>%.

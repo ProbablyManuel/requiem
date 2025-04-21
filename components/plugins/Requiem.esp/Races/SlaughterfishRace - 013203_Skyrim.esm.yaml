@@ -1,0 +1,167 @@
+FormKey: 013203:Skyrim.esm
+EditorID: SlaughterfishRace
+Version2: 9
+Name:
+  TargetLanguage: English
+  Value: Slaughterfish
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 665466:Requiem.esp
+Skin: 04124A:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013798:Skyrim.esm
+- 013795:Skyrim.esm
+- 586728:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Swims
+- CantOpenDoors
+Starting:
+- Key: Health
+  Value: 35
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 30
+BaseCarryWeight: 200
+BaseMass: 0.25
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 5
+UnarmedReach: 64
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Slaughterfish\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Slaughterfish\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 041FBB:Skyrim.esm
+  Female: 041FBB:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.25
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_LCross
+- AttackData:
+    DamageMult: 1
+    Chance: 0.25
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_RCorss
+- AttackData:
+    DamageMult: 1
+    Chance: 0.25
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_RUppercut
+- AttackData:
+    DamageMult: 1
+    Chance: 0.25
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: AttackStart_LSlash
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 040C6A:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Slaughterfish\SlaughterfishProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Slaughterfish\SlaughterfishProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 05A28F:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x2000000
+- 0x4000000
+- 0x8000000
+- 0x10000000
+- 0x20000000
+- 0x40000000
+- 0x80000000
+- 0x0
+EquipmentSlots:
+- 013F42:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 0D8C5E:Skyrim.esm
+BaseMovementDefaultRun: 0D8C5E:Skyrim.esm
+BaseMovementDefaultSwim: 0D8C5E:Skyrim.esm

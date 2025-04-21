@@ -1,0 +1,23 @@
+FormKey: 2B59A5:Requiem.esp
+EditorID: REQ_Ench_Illumination_Power
+Name:
+  TargetLanguage: English
+  Value: Illumination
+MenuDisplayObject: 0A0E7F:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: LesserPower
+ChargeTime: 0.5
+CastType: FireAndForget
+Effects:
+- BaseEffect: 24B185:Requiem.esp
+  Data:
+    Duration: 1
+- BaseEffect: 01EA6C:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300

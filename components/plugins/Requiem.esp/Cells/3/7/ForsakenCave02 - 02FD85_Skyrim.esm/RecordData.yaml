@@ -1,0 +1,65 @@
+FormKey: 02FD85:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ForsakenCave02
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Forsaken Crypt
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00323200'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#004B6361'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogClipDistance: 12000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#0028867E'
+    Scale: 1
+  FogFarColor: '#0028867E'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 03128C:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01917B:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC19:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 048591:Skyrim.esm
+  Version2: 3
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917B:Skyrim.esm
+  Placement:
+    Position: -665.28125, 5028.4033, -1054.7462
+    Rotation: 0, -0, 1.212406
+MajorFlags:
+- 0x40000

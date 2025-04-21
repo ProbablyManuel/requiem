@@ -1,0 +1,25 @@
+FormKey: 04B146:Skyrim.esm
+EditorID: REQ_Restoration2_TurnUndead
+Name:
+  TargetLanguage: English
+  Value: Turn Undead (Rank I)
+MenuDisplayObject: 1097CA:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 84
+Flags:
+- ManualCostCalc
+ChargeTime: 0.4
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44C7:Skyrim.esm
+Effects:
+- BaseEffect: 04B145:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 30
+- BaseEffect: 04D3F9:Skyrim.esm
+  Data:
+    Magnitude: 50

@@ -1,0 +1,19 @@
+FormKey: AE3AE8:Requiem.esp
+EditorID: REQ_Trait_Healing_Karstaag
+Name:
+  TargetLanguage: English
+  Value: 'Natural Healing: Karstaag'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 30
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 01CEAD:Skyrim.esm

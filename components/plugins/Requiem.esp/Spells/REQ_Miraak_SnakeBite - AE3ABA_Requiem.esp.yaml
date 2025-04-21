@@ -1,0 +1,22 @@
+FormKey: AE3ABA:Requiem.esp
+EditorID: REQ_Miraak_SnakeBite
+Name:
+  TargetLanguage: English
+  Value: Snake Bite
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- 0x10000
+- 0x40000
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: AE3AB9:Requiem.esp
+  Data:
+    Magnitude: 5
+    Duration: 10

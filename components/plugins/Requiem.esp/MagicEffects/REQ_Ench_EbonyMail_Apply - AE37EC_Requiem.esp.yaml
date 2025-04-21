@@ -1,0 +1,29 @@
+FormKey: AE37EC:Requiem.esp
+EditorID: REQ_Ench_EbonyMail_Apply
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_EbonyMail
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChampionOfBoethiah
+      Object: 0834FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EnchAbility
+      Object: AE3841:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Apply Ebony Mail Enchantment
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

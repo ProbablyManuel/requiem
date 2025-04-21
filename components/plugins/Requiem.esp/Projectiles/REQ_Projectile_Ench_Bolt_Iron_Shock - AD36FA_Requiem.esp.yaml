@@ -1,0 +1,28 @@
+FormKey: AD36FA:Requiem.esp
+EditorID: REQ_Projectile_Ench_Bolt_Iron_Shock
+ObjectBounds:
+  First: -1, 0, -1
+  Second: 1, 63, 1
+Name:
+  TargetLanguage: English
+  Value: Iron Bolt of Shock
+Model:
+  File: Requiem\Projectiles\iron\iron_bolt_magic_shock.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+- Supersonic
+Type: Arrow
+Gravity: 0.35
+Speed: 5600
+Range: 60000
+MuzzleFlash: 0E2172:Skyrim.esm
+Explosion: 010D92:Dawnguard.esm
+Sound: 03F2B4:Skyrim.esm
+MuzzleFlashDuration: 0.5
+FadeDuration: 5
+ImpactForce: 0.5
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

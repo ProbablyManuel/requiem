@@ -1,0 +1,25 @@
+FormKey: 01DF98:Dragonborn.esm
+EditorID: REQ_Shout_Thuum_DragonAspect2_Chest
+Name:
+  TargetLanguage: English
+  Value: Dragon Aspect - Chest
+MenuDisplayObject: 03D58F:Dragonborn.esm
+Keywords:
+- 046B99:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- PowerAffectsDuration
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistFire
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: ResistFrost
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Fire deals <mag>% less damage to you for <dur> seconds. Frost deals <mag>% less damage to you for <dur> seconds.

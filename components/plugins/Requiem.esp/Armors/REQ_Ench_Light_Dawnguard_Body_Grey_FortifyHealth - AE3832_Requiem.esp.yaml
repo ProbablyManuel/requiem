@@ -1,0 +1,39 @@
+FormKey: AE3832:Requiem.esp
+EditorID: REQ_Ench_Light_Dawnguard_Body_Grey_FortifyHealth
+ObjectBounds:
+  First: -17, -31, -6
+  Second: 17, 31, 7
+Name:
+  TargetLanguage: English
+  Value: Dawnguard Light Cuirass of Extreme Health
+ObjectEffect: 0BDFFD:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: DLC01\Armor\Dawnguard\DawnguardBody4_GND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: DLC01\Armor\Dawnguard\DawnguardBody4_GND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD3:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0050C4:Dawnguard.esm
+- 0050C8:Dawnguard.esm
+- 00D83B:Dawnguard.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00F401:Dawnguard.esm
+Value: 300
+Weight: 15
+ArmorRating: 250
+TemplateArmor: 00F402:Dawnguard.esm

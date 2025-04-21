@@ -1,0 +1,40 @@
+FormKey: 033A27:Dragonborn.esm
+EditorID: REQ_Ench_BloodskalBlade_BlastVertical
+Name:
+  TargetLanguage: English
+  Value: Bloodskal Blade - Vertical Blast
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 033A28:Dragonborn.esm
+  Data:
+    Magnitude: 30
+- BaseEffect: 033A28:Dragonborn.esm
+  Data:
+    Magnitude: 70
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetEquippedConditionData
+      ItemOrList: 024037:Dragonborn.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetEquippedConditionData
+      ItemOrList: AE3935:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedConditionData
+      ItemOrList: AE3929:Requiem.esp
+    ComparisonValue: 1

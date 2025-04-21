@@ -1,0 +1,39 @@
+FormKey: 052D51:Skyrim.esm
+EditorID: REQ_TwoHanded_BarbaricMight
+Name:
+  TargetLanguage: English
+  Value: Barbaric Might
+Description:
+  TargetLanguage: English
+  Value: Your power attacks become mighty blows that will penetrate armor and are less tiring.<br>[50% less power attack stamina cost, +5% armor penetration]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BABE8:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: TwoHanded
+  ComparisonValue: 20
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD39BA:Requiem.esp
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ModPowerAttackStamina
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.5

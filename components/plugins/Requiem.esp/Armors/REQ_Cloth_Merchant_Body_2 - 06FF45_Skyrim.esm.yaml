@@ -1,0 +1,42 @@
+FormKey: 06FF45:Skyrim.esm
+EditorID: REQ_Cloth_Merchant_Body_2
+ObjectBounds:
+  First: -21, -20, -8
+  Second: 21, 20, 8
+Name:
+  TargetLanguage: English
+  Value: Merchant Clothes
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\MerchantClothes\outfitgo.nif
+      Data: 0x0200000002000000000000004FCECAF964647300BD0C91B151271F1964647300BD0C91B1
+      AlternateTextures:
+      - Name: torsogo:0
+        NewTexture: 06FF31:Skyrim.esm
+  Female:
+    Model:
+      File: Clothes\MerchantClothes\Outfit_F_GO.nif
+      Data: 0x020000000200000000000000AE219FF564647300BD0C91B1B0C84A1564647300BD0C91B1
+      AlternateTextures:
+      - Name: Dress_GO:0
+        NewTexture: 06FF47:Skyrim.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0A8657:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 06FF46:Skyrim.esm
+Value: 100
+Weight: 1

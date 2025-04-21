@@ -1,0 +1,48 @@
+FormKey: 004D91:HearthFires.esm
+EditorID: REQ_Weapon_Wood_Sword
+ObjectBounds:
+  First: -6, -6, -1
+  Second: 6, 58, 1
+Name:
+  TargetLanguage: English
+  Value: Wooden Sword
+Model:
+  File: _BYOH\Clutter\WoodenSword\WoodenSword.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 01E717:Skyrim.esm
+- 0914E9:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 008993:HearthFires.esm
+FirstPersonModel: 004D90:HearthFires.esm
+AttackFailSound: 008990:HearthFires.esm
+EquipSound: 014C2B:HearthFires.esm
+UnequipSound: 008991:HearthFires.esm
+BasicStats:
+  Value: 10
+  Weight: 3
+  Damage: 2
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 1
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

@@ -1,0 +1,30 @@
+FormKey: 02E894:Skyrim.esm
+EditorID: PreyFaction
+Version2: 10
+Name:
+  TargetLanguage: English
+  Value: Prey Faction
+Relations:
+- Target: 01BCC0:Skyrim.esm
+- Target: 02E893:Skyrim.esm
+  Reaction: Enemy
+- Target: 02E894:Skyrim.esm
+  Reaction: Friend
+- Target: 032D9C:Skyrim.esm
+- Target: 04E509:Skyrim.esm
+  Reaction: Enemy
+- Target: 0AA784:Skyrim.esm
+  Reaction: Friend
+- Target: 0E0D58:Skyrim.esm
+  Reaction: Friend
+Flags:
+- IgnoreMurder
+- IgnoreAssault
+- IgnoreStealing
+- IgnoreTrespass
+- IgnorePickpocket
+- IgnoreWerewolf
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

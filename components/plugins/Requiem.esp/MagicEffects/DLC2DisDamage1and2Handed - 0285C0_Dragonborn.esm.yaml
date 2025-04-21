@@ -1,0 +1,91 @@
+FormKey: 0285C0:Dragonborn.esm
+EditorID: DLC2DisDamage1and2Handed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_PoisonISM
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
+    - MutagenObjectType: ScriptStringProperty
+      Name: Resistvalue
+      Data: DiseaseResist
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_active
+      Object: 008DAA:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Droops
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+- PowerAffectsDuration
+BaseCost: 5
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: OneHandedPowerModifier
+  Type: DualValueModifier
+TargetType: Touch
+SecondActorValue: TwoHandedPowerModifier
+DualCastScale: 1
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 10
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsBlockingConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetRelativeAngleConditionData
+    Axis: Z
+  ComparisonValue: 145
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRelativeAngleConditionData
+    Axis: Z
+  ComparisonValue: 215
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 01EA69:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetRelativeAngleConditionData
+    Axis: Z
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRelativeAngleConditionData
+    Axis: Z
+  ComparisonValue: 260

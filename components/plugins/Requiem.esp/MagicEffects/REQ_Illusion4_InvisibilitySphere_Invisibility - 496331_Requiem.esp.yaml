@@ -1,0 +1,64 @@
+FormKey: 496331:Requiem.esp
+EditorID: REQ_Illusion4_InvisibilitySphere_Invisibility
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Exclusive
+      Object: 3FA2AF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 01B7C2:Requiem.esp
+  - Name: REQ_Magic_XPGain
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Interval
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPGain
+      Data: 0.4
+    - MutagenObjectType: ScriptStringProperty
+      Name: skill
+      Data: ILLUSION
+Name:
+  TargetLanguage: English
+  Value: Invisibility
+MenuDisplayObject: 109AC3:Skyrim.esm
+Keywords:
+- 01EA6F:Skyrim.esm
+- 3FA2AF:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Illusion
+CastingLight: 028530:Skyrim.esm
+HitShader: 02DF92:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingArea: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Invisibility
+  Type: Invisibility
+CastType: FireAndForget
+CastingArt: 0510CF:Skyrim.esm
+HitEffectArt: 0339C8:Skyrim.esm
+DualCastScale: 1
+PerkToApply: 3FF1EC:Requiem.esp
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 058E0E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

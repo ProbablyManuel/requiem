@@ -1,0 +1,25 @@
+FormKey: 0A3F64:Skyrim.esm
+EditorID: REQ_Restoration_PowerOfLife
+Name:
+  TargetLanguage: English
+  Value: Power of Life
+Description:
+  TargetLanguage: English
+  Value: Your studies of healing magic now grant you <br> the power of making yourself almost invulnerable for a short duration once a day.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0581F4:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Restoration
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 0089CC:Requiem.esp

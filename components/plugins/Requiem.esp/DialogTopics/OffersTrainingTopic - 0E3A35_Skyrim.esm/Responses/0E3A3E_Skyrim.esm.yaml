@@ -1,0 +1,53 @@
+FormKey: 0E3A3E:Skyrim.esm
+Version2: 8
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__000E3A3E
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__000E3A3E
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__000E3A3E
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 0B8128:Skyrim.esm
+FavorLevel: None
+Responses:
+- EmotionValue: 50
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: I'll teach you how to use it effectively, and keep you quick on your feet.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    RunOnType: Target
+    ActorValue: LightArmor
+  ComparisonValue: 90
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01C3AB:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 0E3A49:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 0E3A52:Skyrim.esm
+  ComparisonValue: 1
+Prompt:
+  TargetLanguage: English
+  Value: I need training in Evasion.

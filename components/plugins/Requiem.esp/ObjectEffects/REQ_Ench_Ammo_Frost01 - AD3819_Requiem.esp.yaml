@@ -1,0 +1,19 @@
+FormKey: AD3819:Requiem.esp
+EditorID: REQ_Ench_Ammo_Frost01
+Name:
+  TargetLanguage: English
+  Value: Frost Damage
+EnchantmentCost: 34
+CastType: FireAndForget
+EnchantmentAmount: 34
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 04605B:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 1
+- BaseEffect: 0B72A0:Skyrim.esm
+  Data:
+    Magnitude: 12.5
+    Duration: 3

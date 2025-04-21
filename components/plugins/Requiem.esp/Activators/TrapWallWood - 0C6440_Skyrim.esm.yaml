@@ -1,0 +1,107 @@
+FormKey: 0C6440:Skyrim.esm
+EditorID: TrapWallWood
+Version2: 8
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TrapHitBase
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: cameraShake
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapHitSound
+      Object: 029877:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRockjoint
+      Object: 10A24F:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: rumble
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: staggerAmount
+      Data: 0.7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFX
+      Object: 01A141:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseAtaxia
+      Object: 10A24A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBrainRot
+      Object: 10A24D:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: canDisease
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseWitbane
+      Object: 10A250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBoneBreakFever
+      Object: 10A24C:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: rumbleAmount
+      Data: 0.7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRattles
+      Object: 10A24E:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: trapPushBack
+      Data: 45
+    - MutagenObjectType: ScriptFloatProperty
+      Name: diseaseChance
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFXAmmo
+      Object: 03BDF7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostAbility
+      Object: 05030B:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: trapCausesStagger
+      Data: True
+  - Name: TrapSwingingWall
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 30
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 1000
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WindupSound
+      Object: 02951C:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 25
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 15
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 10
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 20
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 1000
+ObjectBounds:
+  First: -275, -383, -139
+  Second: 123, 362, 139
+Model:
+  File: Traps\WallTrap\WallTrapCW\WallTrapWooden.nif
+  Data: 0x02000000040000000000000085784CF364647300E115AE13886B038F64647300E115AE13BDA6C1E5646473001E8C9F272D3EF7F9646473001E8C9F27
+MarkerColor: '#00CC4C33'
+Flags: []

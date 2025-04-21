@@ -1,0 +1,221 @@
+FormKey: 067635:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: EncAlikr03TemplateMagic
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - Respawn
+  - LoopedScript
+  - LoopedAudio
+  MagickaOffset: 150
+  StaminaOffset: 150
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - AIPackages
+  - BaseData
+  - Script
+  - DefPackList
+  - AttackData
+  HealthOffset: 150
+Factions:
+- Faction: 0215D3:Skyrim.esm
+  Fluff: 0x000000
+Voice: 013AD2:Skyrim.esm
+Template: 06762E:Skyrim.esm
+Race: 013748:Skyrim.esm
+ActorEffect:
+- 02F3B8:Skyrim.esm
+- 0211F1:Skyrim.esm
+- 039D40:Skyrim.esm
+Perks:
+- Perk: 10FCF8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCFA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 08FFFB:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 037C27:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 01397E:Skyrim.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Class: 06766D:Skyrim.esm
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 10
+  - Key: Block
+    Value: 10
+  - Key: Smithing
+    Value: 10
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 14
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 15
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 10
+  - Key: Conjuration
+    Value: 24
+  - Key: Destruction
+    Value: 38
+  - Key: Illusion
+    Value: 24
+  - Key: Restoration
+    Value: 24
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 147
+  Magicka: 103
+  Stamina: 25
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x405AEF
+HeadParts:
+- 0D0564:Skyrim.esm
+- 0E756D:Skyrim.esm
+- 0C7123:Skyrim.esm
+- 08555F:Skyrim.esm
+- 023FB7:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 40
+SoundLevel: Normal
+DefaultOutfit: 06A15B:Skyrim.esm
+DefaultPackageList: 021E81:Skyrim.esm
+HeadTexture: 0D072A:Skyrim.esm
+TextureLighting: '#002D211E'
+FaceMorph:
+  NoseLongVsShort: -0.98
+  NoseUpVsDown: -0.26
+  JawUpVsDown: 1
+  JawNarrowVsWide: -0.54
+  CheeksUpVsDown: 1
+  CheeksForwardVsBack: 1
+  EyesUpVsDown: 0.42
+  EyesInVsOut: 0.8
+  BrowsUpVsDown: -0.86
+  BrowsInVsOut: 0.54
+  BrowsForwardVsBack: 1
+  LipsUpVsDown: -1
+  LipsInVsOut: -1
+  ChinNarrowVsWide: -1
+  ChinUpVsDown: 0.2
+  ChinUnderbiteVsOverbite: 1
+  EyesForwardVsBack: -0.38
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 18
+  Unknown: 4294967295
+  Eyes: 17
+  Mouth: 17
+TintLayers:
+- Index: 1
+  Color: '#002D211E'
+  InterpolationValue: 1
+  Preset: 81
+- Index: 24
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 146
+- Index: 22
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 170
+- Index: 25
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 194
+- Index: 26
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 218
+- Index: 27
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 242
+- Index: 28
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 266
+MajorFlags:
+- 0x40000

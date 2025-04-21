@@ -1,0 +1,51 @@
+FormKey: 045C53:Requiem.esp
+EditorID: REQ_DestructionX_ElectrostaticDischarge_DamageMagicka_Concentration
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+- 2FFEAD:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: ResistShock
+CastingLight: 057C68:Skyrim.esm
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+Projectile: 034190:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 058E9B:Skyrim.esm
+ImpactData: 038B05:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 03F208:Skyrim.esm
+- Type: Release
+  Sound: 03F206:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03F205:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    RunOnType: Target
+    Perk: 0F3F0E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1

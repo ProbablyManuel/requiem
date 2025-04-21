@@ -1,0 +1,19 @@
+FormKey: 053125:Skyrim.esm
+EditorID: REQ_Perk_Alteration_MagicResistance1
+Name:
+  TargetLanguage: English
+  Value: Magic Resistance 1
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 0008D0:Requiem.esp
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 053129:Skyrim.esm

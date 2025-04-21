@@ -1,0 +1,155 @@
+FormKey: 0A1A61:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ShriekwindBastion01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Shriekwind Bastion
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00423C28'
+  DirectionalColor: '#00DB4FDB'
+  FogNearColor: '#001F2929'
+  FogFar: 9000
+  DirectionalRotationZ: 270
+  DirectionalFade: 0.2
+  FogClipDistance: 8000
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002D291F'
+    DirectionalXMinus: '#0024291C'
+    DirectionalYPlus: '#00292A1E'
+    DirectionalYMinus: '#0029271E'
+    DirectionalZPlus: '#0013130D'
+    DirectionalZMinus: '#003E3E2E'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00646556'
+  FogMax: 1
+  LightFadeBegin: 10000
+  LightFadeEnd: 11000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 094E50:Skyrim.esm
+WaterHeight: 0
+Location: 0A0E30:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\Ore_Iron_e.dds
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 0A0E3C:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B5C92:Skyrim.esm
+  Version2: 1
+  Base: 03BC42:Skyrim.esm
+  LocationReference: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 6283.3193, -2183.5632, 3317.101
+    Rotation: 1.8528154, 0.53017604, 4.6592226
+- MutagenObjectType: PlacedObject
+  FormKey: 0B5C8C:Skyrim.esm
+  Base: 03BC46:Skyrim.esm
+  LocationReference: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 6642.5737, -666.6155, 3296.2324
+    Rotation: 1.2962571, -0.8233857, 2.1620636
+- MutagenObjectType: PlacedObject
+  FormKey: 0B4C64:Skyrim.esm
+  Base: 01CD63:Skyrim.esm
+  LocationReference: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 6673.982, -1789.8818, 3282.4014
+    Rotation: 0, -0, 5.300003
+- MutagenObjectType: PlacedObject
+  FormKey: 0B5C83:Skyrim.esm
+  Base: 03BC48:Skyrim.esm
+  LocationReference: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 6494.8433, -644.3818, 3295.98
+    Rotation: 1.2265229, -1.0919855, 1.4899553
+- MutagenObjectType: PlacedObject
+  FormKey: 0C5F42:Skyrim.esm
+  Version2: 1
+  Base: 020664:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 7111.7705, -1788.9187, 3282.4014
+    Rotation: 0, 0, 1.8561957
+- MutagenObjectType: PlacedNpc
+  FormKey: 077FCC:Requiem.esp
+  Base: 02F9E1:Skyrim.esm
+  LevelModifier: Easy
+  PersistentLocation: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 4848.1396, -1080.135, 3031.5828
+    Rotation: 0, 0, 0.60000056
+- MutagenObjectType: PlacedObject
+  FormKey: 077FC9:Requiem.esp
+  Base: 077FC8:Requiem.esp
+  Scale: 1.5
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Key: 3A6476:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  Placement:
+    Position: 7236.4966, -1541.1694, 3278.6067
+    Rotation: 0, -0, 3.3336327
+- MutagenObjectType: PlacedObject
+  FormKey: 0F6C63:Skyrim.esm
+  Version2: 1
+  Base: 020662:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 3306.0444, -407.46143, 982.14496
+    Rotation: 0, -0, 3.3331878
+- MutagenObjectType: PlacedObject
+  FormKey: 3A647A:Requiem.esp
+  Base: 3A6476:Requiem.esp
+  Placement:
+    Position: 6099.7793, -2798.0188, 4613.763
+    Rotation: 1.39022, -0.5559359, 4.4750423
+- MutagenObjectType: PlacedObject
+  FormKey: 0B5C8A:Skyrim.esm
+  Base: 03BC44:Skyrim.esm
+  LocationReference: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 6759.0586, -739.3851, 3284.9033
+    Rotation: 0.053253945, -0.054928157, 5.517684
+- MutagenObjectType: PlacedNpc
+  FormKey: 077FCA:Requiem.esp
+  Base: 02F9E1:Skyrim.esm
+  LevelModifier: Easy
+  PersistentLocation: 0A0E30:Skyrim.esm
+  Placement:
+    Position: 5082.6387, -633.57, 3043.6433
+    Rotation: 0, 0, 2.8000002
+MajorFlags:
+- 0x40000

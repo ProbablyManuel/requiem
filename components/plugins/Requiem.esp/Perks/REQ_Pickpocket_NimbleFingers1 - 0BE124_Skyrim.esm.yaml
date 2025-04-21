@@ -1,0 +1,34 @@
+FormKey: 0BE124:Skyrim.esm
+EditorID: REQ_Pickpocket_NimbleFingers1
+Name:
+  TargetLanguage: English
+  Value: Nimble Fingers
+Description:
+  TargetLanguage: English
+  Value: You've spent some time improving your sleight of hand,<br>which gives you substantial chances when pickpocketing.
+NumRanks: 5
+Playable: True
+NextPerk: 018E6A:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 100
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 018E6A:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDetectedConditionData
+        TargetNpc: 000014:Skyrim.esm
+  EntryPoint: ModPickpocketChance
+  PerkConditionTabCount: 3
+  Modification: Add
+  Value: 20

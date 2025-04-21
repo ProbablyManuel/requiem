@@ -1,0 +1,37 @@
+FormKey: 002A78:Dawnguard.esm
+EditorID: DLC1MountainFlower01Yellow
+Version2: 6
+ObjectBounds:
+  First: -3, -3, -7
+  Second: 3, 3, 7
+Name:
+  TargetLanguage: English
+  Value: Yellow Mountain Flower
+Keywords:
+- 08CDEB:Skyrim.esm
+- 0A0E54:Skyrim.esm
+Model:
+  File: DLC01\Plants\DLC01MountainFlowerYellow.nif
+  Data: 0x020000000000000000000000
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 090041:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EB28:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EAF3:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 073F2C:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5

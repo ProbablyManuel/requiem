@@ -1,0 +1,23 @@
+FormKey: ADE47B:Requiem.esp
+EditorID: REQ_Forge_Ench_Arrow_Quicksilver_Ice
+Items:
+- Item:
+    Item: 03AD5F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 02623B:Dragonborn.esm
+    Count: 30
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: ADE472:Requiem.esp
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 30

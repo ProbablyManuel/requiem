@@ -1,0 +1,143 @@
+FormKey: 04A376:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunDragonsreachBasement
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dragonsreach Dungeon
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 3000
+  FogClipDistance: 3000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0C0BA0:Skyrim.esm
+Owner: 065795:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 09DC64:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 3
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0267E7:Skyrim.esm
+  Scale: 0.81
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 05AEC4:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0C0BA0:Skyrim.esm
+  Placement:
+    Position: 886.67267, 1032.9994, -216.41902
+    Rotation: 0, -0, 4.593196
+- MutagenObjectType: PlacedObject
+  FormKey: 0267E8:Skyrim.esm
+  MajorRecordFlagsRaw: 33555456
+  EditorID: WhiterunJailEvidenceChest
+  Version2: 11
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - 0x2000000
+  Base: 108D36:Skyrim.esm
+  Scale: 0.81
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Key: 05AEC4:Skyrim.esm
+    Unused2: 0x0000000000000000000000
+  Owner: 0267EA:Skyrim.esm
+  LocationReference: 0C0BA0:Skyrim.esm
+  Placement:
+    Position: 820.02563, 1110.2416, -216
+    Rotation: 0, -0, 3.0031962
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 3C18C8:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0CF8B0:Skyrim.esm
+  Placement:
+    Position: -333.6724, 463.3943, -83.28545
+    Rotation: 0, -0, 1.1
+- MutagenObjectType: PlacedObject
+  FormKey: 3C18C5:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0CF8B3:Skyrim.esm
+  Placement:
+    Position: -325.72003, 554.3181, -83.79362
+- MutagenObjectType: PlacedObject
+  FormKey: 3C18C9:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0BE25E:Skyrim.esm
+  Placement:
+    Position: 294.7341, -288.55862, -150.81517
+    Rotation: 0, -0, 1.9245476E-06
+- MutagenObjectType: PlacedObject
+  FormKey: 3C18C7:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0CF8B1:Skyrim.esm
+  Placement:
+    Position: -323.62073, 495.20312, -82.13021
+    Rotation: 0, -0, 4.7000003
+- MutagenObjectType: PlacedObject
+  FormKey: 3C18C6:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0CF8B2:Skyrim.esm
+  Placement:
+    Position: -324.17468, 520.6236, -83.50487
+    Rotation: 0, -0, 1.7000004
+- MutagenObjectType: PlacedObject
+  FormKey: 0A577D:Skyrim.esm
+  Version2: 2
+  Base: 0A760E:Skyrim.esm
+  Scale: 1.02
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0C0BA0:Skyrim.esm
+  EnableParent:
+    Reference: 0A5780:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: 796, -516, -252
+    Rotation: 0, 0, 1.5707964
+MajorFlags:
+- 0x40000

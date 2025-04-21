@@ -1,0 +1,47 @@
+FormKey: AE3B42:Requiem.esp
+EditorID: REQ_Addiction_Skooma
+Name:
+  TargetLanguage: English
+  Value: Skooma
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Addiction
+Effects:
+- BaseEffect: AE3B40:Requiem.esp
+  Data:
+    Magnitude: 10000
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: AE3B39:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013745:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 088845:Skyrim.esm
+- BaseEffect: AE3B40:Requiem.esp
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: AE3B39:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 013745:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 088845:Skyrim.esm
+    ComparisonValue: 1

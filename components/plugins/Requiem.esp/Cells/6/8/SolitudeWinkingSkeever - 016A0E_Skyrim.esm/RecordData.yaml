@@ -1,0 +1,74 @@
+FormKey: 016A0E:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeWinkingSkeever
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Winking Skeever
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#00514B39'
+  DirectionalColor: '#00241F1C'
+  FogNearColor: '#00595F66'
+  FogNear: 250
+  FogFar: 5000
+  DirectionalFade: 1
+  FogClipDistance: 2200
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00594B3B'
+    DirectionalXMinus: '#00484B36'
+    DirectionalYPlus: '#00514E39'
+    DirectionalYMinus: '#00514739'
+    DirectionalZPlus: '#00262319'
+    DirectionalZMinus: '#007B7258'
+    Specular: '#00596066'
+    Scale: 1
+  FogFarColor: '#00596066'
+  FogMax: 0.8
+  LightFadeBegin: 100
+  LightFadeEnd: 50000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 06AB01:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0200A5:Skyrim.esm
+Owner: 0C1403:Skyrim.esm
+LockList: 0C1404:Skyrim.esm
+SkyAndWeatherFromRegion: 07042A:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 017035:Skyrim.esm
+ImageSpace: 0ABDB4:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA732:Skyrim.esm
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 0200A5:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7325:Skyrim.esm
+  Placement:
+    Position: 877.2613, -864.3566, 350.7368
+    Rotation: 0, 0, 3.1415927
+MajorFlags:
+- 0x40000

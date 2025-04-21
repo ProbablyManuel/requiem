@@ -1,0 +1,18 @@
+FormKey: 000F0F:ccbgssse001-fish.esm
+EditorID: REQ_Cook_Food_MeatVegan_CreamyCrabBisqueHot
+Items:
+- Item:
+    Item: 03AD5E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 000F02:ccbgssse001-fish.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00314A:Update.esm
+  ComparisonValue: 1
+CreatedObject: 000F0A:ccbgssse001-fish.esm
+WorkbenchKeyword: 0A5CB3:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,328 @@
+FormKey: 017777:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2Talvas
+SkyrimMajorRecordFlags:
+- Compressed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2PillarBuilderActorScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2Pillar
+      Object: 01C4E4:Dragonborn.esm
+  - Name: DLC2TalvasScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2TTR3a
+      Object: 01B65D:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PCDestructionAdept
+      Object: 0F258A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2TTR3b
+      Object: 01D8D1:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PCConjurationAdept
+      Object: 0F2587:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2AshGuardianForSale
+      Object: 01AAC6:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2WhirlwindCloakForSale
+      Object: 01CDFC:Dragonborn.esm
+ObjectBounds:
+  First: -22, -14, 0
+  Second: 22, 14, 128
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - Unique
+  - Protected
+  MagickaOffset: 100
+  Level:
+    MutagenObjectType: NpcLevel
+    Level: 25
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 050921:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84E:Skyrim.esm
+  Rank: -1
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A58:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 017775:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 0177C6:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 018279:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 01C4E5:Dragonborn.esm
+  Fluff: 0x000000
+Voice: 013AD1:Skyrim.esm
+Race: 013742:Skyrim.esm
+ActorEffect:
+- 072317:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231C:Skyrim.esm
+- 0ABDF3:Skyrim.esm
+- 0BB967:Skyrim.esm
+- 0BB969:Skyrim.esm
+- 0BB96A:Skyrim.esm
+- 0C969B:Skyrim.esm
+Perks:
+- Perk: 0153D2:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 053129:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581E4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581E7:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F5:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581FC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 05820C:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058213:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 068BCC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB419:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 105F30:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+Items:
+- Item:
+    Item: 00000F:Skyrim.esm
+    Count: 25
+- Item:
+    Item: 037C2B:Skyrim.esm
+    Count: 3
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: NoCrime
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 032317:Dragonborn.esm
+- 017E8B:Dragonborn.esm
+- 03D2E0:Dragonborn.esm
+- 017E8A:Dragonborn.esm
+Keywords:
+- 01D9E5:Skyrim.esm
+Class: 0E3A6A:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Talvas Fathryon
+ShortName:
+  TargetLanguage: English
+  Value: Talvas
+PlayerSkills:
+  SkillValues:
+  - Key: OneHanded
+    Value: 15
+  - Key: TwoHanded
+    Value: 5
+  - Key: Archery
+    Value: 5
+  - Key: Block
+    Value: 5
+  - Key: Smithing
+    Value: 5
+  - Key: HeavyArmor
+    Value: 5
+  - Key: LightArmor
+    Value: 10
+  - Key: Pickpocket
+    Value: 5
+  - Key: Lockpicking
+    Value: 5
+  - Key: Sneak
+    Value: 26
+  - Key: Alchemy
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Alteration
+    Value: 58
+  - Key: Conjuration
+    Value: 69
+  - Key: Destruction
+    Value: 31
+  - Key: Illusion
+    Value: 10
+  - Key: Restoration
+    Value: 53
+  - Key: Enchanting
+    Value: 5
+  SkillOffsets:
+  - Key: OneHanded
+    Value: 0
+  - Key: TwoHanded
+    Value: 0
+  - Key: Archery
+    Value: 0
+  - Key: Block
+    Value: 0
+  - Key: Smithing
+    Value: 0
+  - Key: HeavyArmor
+    Value: 0
+  - Key: LightArmor
+    Value: 0
+  - Key: Pickpocket
+    Value: 0
+  - Key: Lockpicking
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Alchemy
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Alteration
+    Value: 0
+  - Key: Conjuration
+    Value: 0
+  - Key: Destruction
+    Value: 0
+  - Key: Illusion
+    Value: 0
+  - Key: Restoration
+    Value: 0
+  - Key: Enchanting
+    Value: 0
+  Health: 140
+  Magicka: 280
+  Stamina: 100
+  Unused: 16743
+  GearedUpWeapons: 1
+  Unused2: 0x435AEF
+HeadParts:
+- 053927:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0C3CE0:Skyrim.esm
+- 0C7123:Skyrim.esm
+- 0EC3B5:Skyrim.esm
+HairColor: 0A0435:Skyrim.esm
+CombatStyle: 03BE1C:Skyrim.esm
+NAM5: 255
+Height: 1
+Weight: 10
+SoundLevel: Normal
+DefaultOutfit: 017776:Dragonborn.esm
+DefaultPackageList: 021E81:Skyrim.esm
+CrimeFaction: 018279:Dragonborn.esm
+HeadTexture: 0F204F:Skyrim.esm
+TextureLighting: '#0062777B'
+FaceMorph:
+  NoseLongVsShort: 1
+  NoseUpVsDown: -0.5
+  JawUpVsDown: -1
+  JawNarrowVsWide: -0.1
+  CheeksUpVsDown: 0.5
+  EyesInVsOut: 0.2
+  BrowsUpVsDown: -1
+  BrowsInVsOut: 0.5
+  BrowsForwardVsBack: -1
+  LipsUpVsDown: 0.6
+  LipsInVsOut: -0.5
+  ChinNarrowVsWide: -0.8
+  ChinUpVsDown: -0.5
+  ChinUnderbiteVsOverbite: 0.5
+  EyesForwardVsBack: 0.5
+  Unknown: 3.4028235E+38
+FaceParts:
+  Nose: 18
+  Unknown: 4294967295
+  Eyes: 11
+  Mouth: 10
+TintLayers:
+- Index: 1
+  Color: '#0062777B'
+  InterpolationValue: 1
+  Preset: 67
+- Index: 8
+  Color: '#00FFFFFF'
+  InterpolationValue: 0
+  Preset: 93
+- Index: 13
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 116
+- Index: 14
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 140
+- Index: 15
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 164
+- Index: 16
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 188
+- Index: 17
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 212
+- Index: 18
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 236
+- Index: 19
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 260
+- Index: 20
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 284
+- Index: 21
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 308
+- Index: 22
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 332
+- Index: 23
+  Color: '#00563112'
+  InterpolationValue: 0
+  Preset: 527
+MajorFlags:
+- 0x40000

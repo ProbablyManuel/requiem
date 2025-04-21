@@ -1,0 +1,241 @@
+FormKey: 00483B:Dawnguard.esm
+EditorID: REQ_NULL_testDraugrRace
+Name:
+  TargetLanguage: English
+  Value: Draugr
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 02431D:Skyrim.esm
+Skin: 016EE3:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013796:Skyrim.esm
+- 10C443:Skyrim.esm
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: Destruction
+  Boost: 5
+SkillBoost6:
+  Skill: Illusion
+  Boost: 5
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- Walks
+- NoCombatInWater
+- UsesHeadTrackAnims
+- DontShowWeaponBlood
+- CanPickupItems
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 50
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 80
+BaseCarryWeight: 9999
+BaseMass: 1
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+ShieldBipedObject: Shield
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 3
+- Key: Stamina
+  Value: 5
+UnarmedDamage: 1
+UnarmedReach: 96
+BodyBipedObject: Body
+AngularAccelerationRate: 0.12
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Draugr\Character Assets\DLC01\SkeletonWarrior.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Draugr\Character Assets\SkeletonF.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 01F1CD:Skyrim.esm
+  Female: 01F1CD:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Spell: 0B8782:Skyrim.esm
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeMedium
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 2
+    Chance: 0.75
+    Spell: 0B8782:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft2
+- AttackData:
+    DamageMult: 2
+    Spell: 0B8782:Skyrim.esm
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeLong
+- AttackData:
+    DamageMult: 2
+    Spell: 0B8782:Skyrim.esm
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeShort
+- AttackData:
+    DamageMult: 2
+    Chance: 0.25
+    Spell: 0B8782:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_StandingPower
+- AttackData:
+    DamageMult: 2
+    Chance: 0.75
+    Spell: 0B8782:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPowerShort
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 048C13:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Draugr\DraugrProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Draugr\DraugrProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 0F0EA8:Skyrim.esm
+ImpactDataSet: 034930:Skyrim.esm
+OpenLootSound: 03DE35:Skyrim.esm
+CloseLootSound: 03DE39:Skyrim.esm
+BipedObjectNames:
+- Key: Head
+  Value: Helmet
+- Key: Hair
+  Value: Hair
+- Key: Body
+  Value: BODY
+- Key: Hands
+  Value: Legs
+- Key: Forearms
+  Value: Beard
+- Key: Shield
+  Value: SHIELD
+EquipmentFlags:
+- HandToHand
+- OneHandSword
+- OneHandDagger
+- OneHandAxe
+- OneHandMace
+- TwoHandSword
+- TwoHandAxe
+- Bow
+- Spell
+- Shield
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+- 025BEE:Skyrim.esm
+- 035698:Skyrim.esm
+UnarmedEquipSlot: 013F44:Skyrim.esm
+BaseMovementDefaultWalk: 05F5C8:Skyrim.esm
+BaseMovementDefaultRun: 05F5C8:Skyrim.esm

@@ -1,0 +1,26 @@
+FormKey: 0E1FC1:Skyrim.esm
+EditorID: dunSleepingTreeSapSpigot
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_SapSpigot
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HarvestSound
+      Object: 035227:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FailureMessage
+      Object: 0E1FC0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Harvest
+      Object: AE3B37:Requiem.esp
+ObjectBounds:
+  First: -3, -8, 0
+  Second: 3, 8, 2
+Name:
+  TargetLanguage: English
+  Value: Sap Spigot
+Model:
+  File: usleep\clutter\meadery\SleepingTreeStaticSpigot01.nif
+  Data: 0x02000000020000000000000034148E11646473002AE2F781C03BD936646473002AE2F781
+MarkerColor: '#00CC4C33'
+Flags: []

@@ -1,0 +1,49 @@
+FormKey: 027F94:Requiem.esp
+EditorID: REQ_Alteration4_TelekineticDisarray_Expose
+VirtualMachineAdapter:
+  Scripts:
+  - Name: AA000XarrianIllusionUnconciousnessScri
+Name:
+  TargetLanguage: English
+  Value: Expose
+MenuDisplayObject: 1097CB:Skyrim.esm
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- PowerAffectsMagnitude
+MagicSkill: Alteration
+CastingLight: 02016B:Skyrim.esm
+MinimumSkillLevel: 75
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: TargetActor
+CastingArt: 02016C:Skyrim.esm
+SkillUsageMultiplier: 0.5
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA53:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+- Type: Release
+  Sound: 07D014:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster magically removes all worn equipment from the target, though one should beware. Unpredictable side-effects like cloth-phobia might occur.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetLevelConditionData
+  ComparisonValue: 40
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 33

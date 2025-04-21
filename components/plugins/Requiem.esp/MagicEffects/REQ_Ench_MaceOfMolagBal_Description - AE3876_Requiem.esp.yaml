@@ -1,0 +1,17 @@
+FormKey: AE3876:Requiem.esp
+EditorID: REQ_Ench_MaceOfMolagBal_Description
+Name:
+  TargetLanguage: English
+  Value: Mace of Molag Bal
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The Mace of Molag Bal absorbs <mag> magicka and stamina (10 plus another 0.1 per soul trapped) and makes the target vulnerable to soul gems for <Global=REQ_GV_MaceOfMolagBal_SoulTrapDuration> seconds (4 plus another 0.04 per soul trapped).

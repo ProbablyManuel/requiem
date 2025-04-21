@@ -1,0 +1,56 @@
+FormKey: 01FF22:Dragonborn.esm
+EditorID: REQ_BlackBook_UntoldLegends_DremoraButler
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2SummonDremoraMerchantScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ConjureEffect
+      Object: 054223:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ConjureImageSpace
+      Object: 06F79B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2DremoraScene
+      Object: 01FF33:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2DremoraMerchantMarker
+      Object: 01EEC2:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2DremoraForceGreet
+      Object: 02067F:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2DremoraRef
+      Object: 01FF27:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ConjureEffectActivator
+      Object: 07CD55:Skyrim.esm
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03B56B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroSoundFX
+      Object: 03B56A:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Dremora Butler
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Summons a Dremora butler for <dur> seconds to carry your excess items.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 01FF22:Dragonborn.esm

@@ -1,0 +1,26 @@
+FormKey: 0A0D9B:Skyrim.esm
+EditorID: REQ_Ench_SkullOfCorruption
+Name:
+  TargetLanguage: English
+  Value: Skull of Corruption Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Aimed
+EnchantType: StaffEnchantment
+Effects:
+- BaseEffect: 0A0D94:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Area: 5
+    Duration: 43200
+- BaseEffect: 0A0D97:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 30
+- BaseEffect: 0A0D96:Skyrim.esm
+  Data:
+    Magnitude: 666
+    Duration: 30
+- BaseEffect: AE386F:Requiem.esp
+  Data: {}

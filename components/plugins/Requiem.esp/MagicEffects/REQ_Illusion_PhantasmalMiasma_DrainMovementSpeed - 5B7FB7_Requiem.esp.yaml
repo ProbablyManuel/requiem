@@ -1,0 +1,37 @@
+FormKey: 5B7FB7:Requiem.esp
+EditorID: REQ_Illusion_PhantasmalMiasma_DrainMovementSpeed
+Name:
+  TargetLanguage: English
+  Value: Drain Movement Speed
+Keywords:
+- 482636:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+MagicSkill: Illusion
+HitShader: 081180:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeedMult
+  Association: 482636:Requiem.esp
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If empowered, the severe pain also reduces movement speed by <mag>%.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    RunOnType: Target
+    MagicEffect: 5B7FB5:Requiem.esp
+  ComparisonValue: 1

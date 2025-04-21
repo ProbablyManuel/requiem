@@ -1,0 +1,20 @@
+FormKey: 03AB2E:Dragonborn.esm
+EditorID: REQ_Temper_Heavy_ImprovedBonemold_Body
+Items:
+- Item:
+    Item: 034CDD:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 03AB27:Dragonborn.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB414:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 03AB26:Dragonborn.esm
+WorkbenchKeyword: 0ADB78:Skyrim.esm
+CreatedObjectCount: 1

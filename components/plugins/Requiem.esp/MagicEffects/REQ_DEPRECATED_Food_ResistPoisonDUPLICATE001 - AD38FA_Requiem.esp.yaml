@@ -1,0 +1,35 @@
+FormKey: AD38FA:Requiem.esp
+EditorID: REQ_DEPRECATED_Food_ResistPoisonDUPLICATE001
+Name:
+  TargetLanguage: English
+  Value: Resist Poison
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- AD38EE:Requiem.esp
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: PoisonResist
+  Association: AD38EE:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Poison deals <mag>% less damage to you for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInCombatConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: AD382D:Requiem.esp
+  ComparisonValue: 25

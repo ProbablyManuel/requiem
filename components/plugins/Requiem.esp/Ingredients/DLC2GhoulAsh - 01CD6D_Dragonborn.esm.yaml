@@ -1,0 +1,36 @@
+FormKey: 01CD6D:Dragonborn.esm
+EditorID: DLC2GhoulAsh
+ObjectBounds:
+  First: -8, -8, 0
+  Second: 7, 8, 11
+Name:
+  TargetLanguage: English
+  Value: Spawn Ash
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: DLC02\Clutter\DLC02SpawnAsh.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 20
+Weight: 0.1
+IngredientValue: 13
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F23:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EB27:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 073F27:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10

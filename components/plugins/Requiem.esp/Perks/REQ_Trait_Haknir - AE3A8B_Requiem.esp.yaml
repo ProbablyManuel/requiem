@@ -1,0 +1,14 @@
+FormKey: AE3A8B:Requiem.esp
+EditorID: REQ_Trait_Haknir
+Description:
+  TargetLanguage: English
+  Value: Better than Mirrak's Armour!
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 100
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.2

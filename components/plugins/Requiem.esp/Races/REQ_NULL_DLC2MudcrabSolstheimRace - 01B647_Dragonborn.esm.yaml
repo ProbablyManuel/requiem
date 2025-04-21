@@ -1,0 +1,174 @@
+FormKey: 01B647:Dragonborn.esm
+EditorID: REQ_NULL_DLC2MudcrabSolstheimRace
+Name:
+  TargetLanguage: English
+  Value: MudCrab
+Description:
+  TargetLanguage: English
+  Value: ''
+ActorEffect:
+- 08CACB:Skyrim.esm
+Skin: 0BA546:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013795:Skyrim.esm
+- 013798:Skyrim.esm
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 0.75
+  Female: 1
+Weight:
+  Male: 1
+  Female: 1
+Flags:
+- TiltFrontBack
+- TiltLeftRight
+- Swims
+- Walks
+- CantOpenDoors
+- UseAdvancedAvoidance
+Starting:
+- Key: Health
+  Value: 25
+- Key: Magicka
+  Value: 4
+- Key: Stamina
+  Value: 25
+BaseCarryWeight: 200
+BaseMass: 0.25
+AccelerationRate: 1
+DecelerationRate: 1
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 5
+UnarmedReach: 120
+AimAngleTolerance: 30
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Mudcrab\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Mudcrab\Character Assets\skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 03E8A6:Skyrim.esm
+  Female: 03E8A6:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - RotatingAttack
+    AttackAngle: 90
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: AttackStart_RSide
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - RotatingAttack
+    AttackAngle: -90
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: AttackStart_LSide
+- AttackData:
+    DamageMult: 1.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: AttackStartLungeBite
+- AttackData:
+    DamageMult: 1
+    Chance: 0.75
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: AttackStart_LeftChop
+- AttackData:
+    DamageMult: 1
+    Chance: 0.75
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: AttackStart_RightChop
+- AttackData:
+    DamageMult: 1
+    Chance: 0.3
+    Flags:
+    - PowerAttack
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: AttackStart_ComboChop
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 0BA549:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Mudcrab\MudcrabProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Mudcrab\MudcrabProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3D:Skyrim.esm
+ImpactDataSet: 01F272:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+EquipmentFlags:
+- HandToHand
+- Spell
+- Shield
+- Torch
+EquipmentSlots:
+- 013F42:Skyrim.esm
+- 013F43:Skyrim.esm
+UnarmedEquipSlot: 013F45:Skyrim.esm
+BaseMovementDefaultWalk: 0BA555:Skyrim.esm
+BaseMovementDefaultRun: 0BA555:Skyrim.esm

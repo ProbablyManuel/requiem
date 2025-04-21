@@ -1,0 +1,42 @@
+FormKey: 09F362:Skyrim.esm
+EditorID: WEDragonQuests
+Version2: 13
+Parent: 0896A8:Skyrim.esm
+PreviousSibling: 0F8A84:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 032926:Skyrim.esm
+    Stage: 200
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 046EF2:Skyrim.esm
+  ComparisonValue: 120
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 042851:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0C65BB:Skyrim.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0E518E:Skyrim.esm
+  ComparisonValue: 000039:Skyrim.esm
+Flags:
+- Random
+QuestFlags:
+- DoAllBeforeRepeating
+MaxConcurrentQuests: 1
+Quests:
+- Quest: 09A9C9:Skyrim.esm
+- Quest: 09C1B8:Skyrim.esm
+- Quest: 09CB5B:Skyrim.esm

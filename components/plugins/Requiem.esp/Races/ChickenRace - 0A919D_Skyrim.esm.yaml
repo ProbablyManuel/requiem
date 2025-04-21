@@ -1,0 +1,157 @@
+FormKey: 0A919D:Skyrim.esm
+MajorRecordFlagsRaw: 524288
+EditorID: ChickenRace
+Version2: 14
+SkyrimMajorRecordFlags:
+- CantWait
+Name:
+  TargetLanguage: English
+  Value: Chicken
+Description:
+  TargetLanguage: English
+  Value: ''
+Skin: 0A919C:Skyrim.esm
+BodyTemplate:
+  ArmorType: Clothing
+  ActsLike44: True
+Keywords:
+- 013798:Skyrim.esm
+- 013795:Skyrim.esm
+- 586728:Requiem.esp
+SkillBoost0:
+  Skill: 255
+SkillBoost1:
+  Skill: 255
+SkillBoost2:
+  Skill: 255
+SkillBoost3:
+  Skill: 255
+SkillBoost4:
+  Skill: 255
+SkillBoost5:
+  Skill: 255
+SkillBoost6:
+  Skill: 255
+Height:
+  Male: 1
+  Female: 1
+Weight:
+  Male: 0.5
+  Female: 1
+Flags:
+- TiltFrontBack
+- Walks
+- NoCombatInWater
+- CantOpenDoors
+- NonHostile
+Starting:
+- Key: Health
+  Value: 5
+- Key: Magicka
+  Value: 0
+- Key: Stamina
+  Value: 25
+BaseCarryWeight: 200
+BaseMass: 0.2
+AccelerationRate: 1
+DecelerationRate: 1
+Size: Medium
+Regen:
+- Key: Health
+  Value: 0
+- Key: Magicka
+  Value: 10
+- Key: Stamina
+  Value: 10
+UnarmedDamage: 1
+UnarmedReach: 32
+BodyBipedObject: Body
+AngularAccelerationRate: 0.25
+AngularTolerance: 5
+MountData:
+  MountOffset: -63.479, 0, 0
+  DismountOffset: -50, 0, 65
+  MountCameraOffset: 0, -300, 0
+SkeletalModel:
+  Male:
+    MutagenObjectType: SimpleModel
+    File: Actors\Ambient\Chicken\Character Assets\Skeleton.nif
+    Data: 0x020000000000000000000000
+  Female:
+    MutagenObjectType: SimpleModel
+    File: Actors\Ambient\Chicken\Character Assets\Skeleton.nif
+    Data: 0x020000000000000000000000
+MovementTypeNames:
+- WALK
+- RUN1
+- SNEK
+- BLDO
+- SWIM
+Voices:
+  Male: 10AA5F:Skyrim.esm
+  Female: 10AA5F:Skyrim.esm
+FacegenMainClamp: 5
+FacegenFaceClamp: 3
+BodyData:
+  Male:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanMale.egt
+      Data: 0x020000000000000000000000
+  Female:
+    Index: BodyTexture
+    Model:
+      File: Actors\Character\UpperBodyHumanFemale.egt
+      Data: 0x020000000000000000000000
+BodyPartData: 0A919E:Skyrim.esm
+BehaviorGraph:
+  Male:
+    File: Actors\Ambient\Chicken\ChickenProject.hkx
+    Data: 0x020000000000000000000000
+  Female:
+    File: Actors\Ambient\Chicken\ChickenProject.hkx
+    Data: 0x020000000000000000000000
+MaterialType: 012F3F:Skyrim.esm
+ImpactDataSet: 05E3D7:Skyrim.esm
+OpenLootSound: 0A5013:Skyrim.esm
+CloseLootSound: 0A5014:Skyrim.esm
+BipedObjectNames:
+- Key: Body
+  Value: BODY
+MovementTypes:
+- MovementType: 0B0B90:Skyrim.esm
+  Overrides:
+    ForwardWalk: 34.71
+    ForwardRun: 251.94
+    RotateWalk: 1.4727088
+    RotateRun: 1.4727088
+    Unknown: 1.4727088
+EquipmentFlags:
+- HandToHand
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x2000000
+- 0x4000000
+- 0x8000000
+- 0x10000000
+- 0x20000000
+- 0x40000000
+- 0x80000000
+- 0x0
+EquipmentSlots:
+- 013F42:Skyrim.esm
+UnarmedEquipSlot: 013F42:Skyrim.esm
+BaseMovementDefaultWalk: 0B0B90:Skyrim.esm
+BaseMovementDefaultRun: 0B0B90:Skyrim.esm
+MajorFlags:
+- Critter

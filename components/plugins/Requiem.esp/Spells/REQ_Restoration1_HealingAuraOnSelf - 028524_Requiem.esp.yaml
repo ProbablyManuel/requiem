@@ -1,0 +1,27 @@
+FormKey: 028524:Requiem.esp
+EditorID: REQ_Restoration1_HealingAuraOnSelf
+Name:
+  TargetLanguage: English
+  Value: Healing Aura on Self
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 150
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 1.5
+CastType: FireAndForget
+HalfCostPerk: 0F2CAA:Skyrim.esm
+Effects:
+- BaseEffect: 028520:Requiem.esp
+  Data:
+    Magnitude: 0.25
+    Duration: 1200
+- BaseEffect: 028523:Requiem.esp
+  Data:
+    Magnitude: 0.25
+    Duration: 1200

@@ -1,0 +1,59 @@
+FormKey: 8F7F8E:Requiem.esp
+EditorID: REQ_Weapon_Iron_Crossbow
+Name:
+  TargetLanguage: English
+  Value: Iron Crossbow
+Model:
+  File: DLC01\Weapons\Crossbow\Crossbow.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Crossbow:0
+    NewTexture: 8F7F8A:Requiem.esp
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E715:Skyrim.esm
+- 08F958:Skyrim.esm
+- AD3B2D:Requiem.esp
+- 899DBE:Requiem.esp
+- 01E718:Skyrim.esm
+- 2E232E:Requiem.esp
+- AD3B2F:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 00A311:Dawnguard.esm
+FirstPersonModel: 8F7F8C:Requiem.esp
+AttackSound: 008E34:Dawnguard.esm
+AttackSound2D: 008E35:Dawnguard.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 017EC9:Dawnguard.esm
+UnequipSound: 017ECA:Dawnguard.esm
+BasicStats:
+  Value: 90
+  Weight: 9
+  Damage: 48
+Data:
+  AnimationType: Crossbow
+  Unused: 0x000000
+  Speed: 0.4445
+  Reach: 1
+  Flags:
+  - NPCsUseAmmo
+  BaseVATStoHitChance: 5
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+  Stagger: 0.75
+Critical:
+  Damage: 9
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

@@ -1,0 +1,30 @@
+FormKey: 0248CC:Dragonborn.esm
+EditorID: REQ_Drink2_Shein
+ObjectBounds:
+  First: -8, -8, 0
+  Second: 8, 8, 24
+Name:
+  TargetLanguage: English
+  Value: Shein
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: DLC02\Clutter\DLC2Shein.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 10
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 30
+    Duration: 600
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 20
+    Duration: 900

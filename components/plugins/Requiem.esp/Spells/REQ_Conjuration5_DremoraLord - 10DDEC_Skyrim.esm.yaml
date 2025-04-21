@@ -1,0 +1,23 @@
+FormKey: 10DDEC:Skyrim.esm
+EditorID: REQ_Conjuration5_DremoraLord
+Name:
+  TargetLanguage: English
+  Value: Summon Dremora Lord
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1000
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.1
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 24
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 10DDED:Skyrim.esm
+  Data:
+    Duration: 5

@@ -1,0 +1,20 @@
+FormKey: 02AA10:Dragonborn.esm
+EditorID: REQ_Creature_Lurker_Spray
+Name:
+  TargetLanguage: English
+  Value: Acid
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 13
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 02AAB9:Dragonborn.esm
+  Data:
+    Magnitude: 150
+    Duration: 1

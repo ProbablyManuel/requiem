@@ -1,0 +1,39 @@
+FormKey: 0009EA:ccqdrsse001-survivalmode.esl
+EditorID: REQ_Food_MeatVegan_ClamHot
+Name:
+  TargetLanguage: English
+  Value: Hot Clam Chowder
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Survival\SoupHot.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Stew:10
+    NewTexture: 003553:HearthFires.esm
+    Index: 3
+PickUpSound: 0FC21F:Skyrim.esm
+Weight: 1
+Value: 30
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 10E2EA:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 3600
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 3600
+- BaseEffect: 002EE4:Update.esm
+  Data: {}
+- BaseEffect: 002EE6:Update.esm
+  Data:
+    Magnitude: 25
+    Duration: 300
+- BaseEffect: 002EE5:Update.esm
+  Data:
+    Magnitude: 200

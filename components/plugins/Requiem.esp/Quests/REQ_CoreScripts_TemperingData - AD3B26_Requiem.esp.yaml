@@ -1,0 +1,101 @@
+FormKey: AD3B26:Requiem.esp
+EditorID: REQ_CoreScripts_TemperingData
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B26:Requiem.esp
+      Alias: 14
+    Scripts:
+    - Name: REQ_TemperingData
+      Properties:
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: tier2_N_rise
+        Data:
+        - 1.6
+        - 1.7
+        - 1.8
+        - 1.8
+        - 1.9
+        - 1.9
+        - 2
+        - 2
+        - 2
+        - 2.1
+        - 2.1
+        - 2.1
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: tier1_N_fall
+        Data:
+        - 1
+        - 1
+        - 1
+        - 1.1
+        - 1.1
+        - 1.1
+        - 1.2
+        - 1.2
+        - 1.3
+        - 1.3
+        - 1.4
+        - 1.5
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: tier2_N_const
+        Data:
+        - 1.6
+        - 1.7
+        - 1.8
+        - 1.9
+        - 2
+        - 2.1
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: tier2_N_fall
+        Data:
+        - 1.6
+        - 1.6
+        - 1.6
+        - 1.7
+        - 1.7
+        - 1.7
+        - 1.8
+        - 1.8
+        - 1.9
+        - 1.9
+        - 2
+        - 2.1
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: tier1_N_const
+        Data:
+        - 1
+        - 1.1
+        - 1.2
+        - 1.3
+        - 1.4
+        - 1.5
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: tier1_N_rise
+        Data:
+        - 1
+        - 1.1
+        - 1.2
+        - 1.2
+        - 1.3
+        - 1.3
+        - 1.4
+        - 1.4
+        - 1.4
+        - 1.5
+        - 1.5
+        - 1.5
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Tempering Data'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 14
+  Name: TemperingData
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

@@ -1,0 +1,28 @@
+FormKey: 496334:Requiem.esp
+EditorID: REQ_Cloak_InvisibilitySphere
+Name:
+  TargetLanguage: English
+  Value: Invisibility Sphere
+MenuDisplayObject: 109AC3:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: TargetActor
+HalfCostPerk: 0C44C5:Skyrim.esm
+Effects:
+- BaseEffect: 496332:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 1
+- BaseEffect: 5D5B12:Requiem.esp
+  Data:
+    Magnitude: 48
+    Duration: 1
+- BaseEffect: 496333:Requiem.esp
+  Data:
+    Duration: 30

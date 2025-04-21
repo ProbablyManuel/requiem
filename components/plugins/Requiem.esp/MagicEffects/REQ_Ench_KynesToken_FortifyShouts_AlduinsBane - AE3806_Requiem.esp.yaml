@@ -1,0 +1,28 @@
+FormKey: AE3806:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyShouts_AlduinsBane
+Name:
+  TargetLanguage: English
+  Value: Fortify Shouts
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: ShoutRecoveryMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Driving away Alduin from the Throat of the World pleases Kyne. The Voice can be used <mag>% more often.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 036193:Skyrim.esm
+    SecondUnusedIntParameter: 150
+  ComparisonValue: 1

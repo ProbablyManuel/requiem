@@ -1,0 +1,22 @@
+FormKey: 0B877E:Skyrim.esm
+EditorID: REQ_Disease_Attack_BoneBreakFever
+Name:
+  TargetLanguage: English
+  Value: Bone Break Fever
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Bone Break Fever is a common disease. Its symptoms include general weariness and effeteness, leading to a state of strong exhaustion.
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+Type: Disease
+ChargeTime: 0.5
+TargetType: Touch
+Effects:
+- BaseEffect: 0B8776:Skyrim.esm
+  Data:
+    Magnitude: 100
+- BaseEffect: 4B8E33:Requiem.esp
+  Data:
+    Magnitude: 25

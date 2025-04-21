@@ -1,0 +1,26 @@
+FormKey: 034835:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BlackBookSeekerMagicEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03D25A:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Seeker of Sorcery
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- NoMagnitude
+HitShader: 03CD84:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+HitEffectArt: 03CD85:Dragonborn.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: All spells cost <10>% less magicka. Enchantments are <10>% more powerful.

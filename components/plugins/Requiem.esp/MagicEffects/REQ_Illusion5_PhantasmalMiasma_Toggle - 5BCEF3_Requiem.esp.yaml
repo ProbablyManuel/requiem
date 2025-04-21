@@ -1,0 +1,50 @@
+FormKey: 5BCEF3:Requiem.esp
+EditorID: REQ_Illusion5_PhantasmalMiasma_Toggle
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_Toggle
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: ToDispel
+      Objects:
+      - Name: ''
+        Object: 5BA754:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Toggle
+Flags:
+- Recover
+- NoHitEvent
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+MagicSkill: Illusion
+CastingLight: 07479A:Skyrim.esm
+HitShader: 074799:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+CastingArt: 074794:Skyrim.esm
+HitEffectArt: 022471:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 08196D:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5B7FB1:Requiem.esp
+  ComparisonValue: 1

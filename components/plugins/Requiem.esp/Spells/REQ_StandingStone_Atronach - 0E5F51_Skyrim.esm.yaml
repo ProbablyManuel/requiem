@@ -1,0 +1,24 @@
+FormKey: 0E5F51:Skyrim.esm
+EditorID: REQ_StandingStone_Atronach
+Name:
+  TargetLanguage: English
+  Value: Stone of the Atronach
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The Sign of the Atronach grants <350> magicka and a <50>% chance for Spell Absorption, but makes it almost impossible to passively regenerate magicka.
+Flags:
+- ManualCostCalc
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 0E5F50:Skyrim.esm
+  Data:
+    Magnitude: 50
+- BaseEffect: 0008BD:Requiem.esp
+  Data:
+    Magnitude: 350
+- BaseEffect: 000A88:Requiem.esp
+  Data:
+    Magnitude: 100000

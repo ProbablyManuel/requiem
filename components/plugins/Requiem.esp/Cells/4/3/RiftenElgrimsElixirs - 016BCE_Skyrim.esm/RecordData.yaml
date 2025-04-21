@@ -1,0 +1,118 @@
+FormKey: 016BCE:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenElgrimsElixirs
+Version2: 2
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Elgrim's Elixirs
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00363327'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalRotationZ: 30
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#003B3328'
+    DirectionalXMinus: '#00303325'
+    DirectionalYPlus: '#00363527'
+    DirectionalYMinus: '#00363027'
+    DirectionalZPlus: '#00191811'
+    DirectionalZMinus: '#00524D3C'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 05C735:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 022487:Skyrim.esm
+Owner: 0A2518:Skyrim.esm
+LockList: 0A2517:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A31BE:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0A31AE:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 022487:Skyrim.esm
+  Placement:
+    Position: -423.23004, 437.96716, 128
+    Rotation: 0, -0, 3.0831957
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 499125:Requiem.esp
+  Base: 0D8E7F:Skyrim.esm
+  Placement:
+    Position: -171.90738, 695.86206, 127.93267
+    Rotation: -0.0019838838, 0.0014192014, 0.036750127
+- MutagenObjectType: PlacedObject
+  FormKey: 499122:Requiem.esp
+  Base: 41D2CD:Requiem.esp
+  Placement:
+    Position: 85.08161, 754.7781, 129.21347
+    Rotation: 0.0032818145, 0.0036549612, 0.70473677
+- MutagenObjectType: PlacedObject
+  FormKey: 499127:Requiem.esp
+  Base: 0D790C:Skyrim.esm
+  Placement:
+    Position: -153.72609, 693.4822, 130.75595
+    Rotation: 0.28890544, 0.8876261, 0.12857805
+- MutagenObjectType: PlacedObject
+  FormKey: 499128:Requiem.esp
+  Base: 0D790C:Skyrim.esm
+  Placement:
+    Position: -134.14029, 692.2482, 134.81938
+    Rotation: -2.632745, 1.3258424, 1.649699
+- MutagenObjectType: PlacedObject
+  FormKey: 499126:Requiem.esp
+  Base: 0D790C:Skyrim.esm
+  Placement:
+    Position: -127.61234, 689.96576, 134.65132
+    Rotation: 1.7523276, 0.1068864, 0.35500294
+- MutagenObjectType: PlacedObject
+  FormKey: 499124:Requiem.esp
+  Base: 0F5CC7:Skyrim.esm
+  Placement:
+    Position: 12.061354, 708.74713, 167.70673
+    Rotation: 0, -0, 2.6
+- MutagenObjectType: PlacedObject
+  FormKey: 499123:Requiem.esp
+  Base: 0F5CC2:Skyrim.esm
+  Placement:
+    Position: 82.156296, 732.68256, 128.94093
+    Rotation: 0.0028623582, -0.0009119314, 1.6411169
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA741:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 022487:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7346:Skyrim.esm
+  Placement:
+    Position: -325.63748, 940.1032, 173.95372
+MajorFlags:
+- 0x40000

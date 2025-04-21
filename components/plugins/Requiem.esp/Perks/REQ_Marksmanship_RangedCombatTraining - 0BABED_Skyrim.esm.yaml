@@ -1,0 +1,31 @@
+FormKey: 0BABED:Skyrim.esm
+EditorID: REQ_Marksmanship_RangedCombatTraining
+Name:
+  TargetLanguage: English
+  Value: Ranged Combat Training
+Description:
+  TargetLanguage: English
+  Value: After some training at the shooting range you can deal more damage with bows and crossbows.<br>[20% more damage, ammunition grants armor penetration]
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 10
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.2
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 2
+  Ability: AD3978:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD3979:Requiem.esp

@@ -1,0 +1,28 @@
+FormKey: AE3729:Requiem.esp
+EditorID: REQ_Alcohol_DamageRegeneration
+Name:
+  TargetLanguage: English
+  Value: Inebriation
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoArea
+SecondActorValueWeight: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: StaminaRateMult
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: MagickaRateMult
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Impairs coordination and focus, slowing the regeneration of stamina by <mag>% and twice that for magicka for <dur> seconds. At least you get to feel good for a while!
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

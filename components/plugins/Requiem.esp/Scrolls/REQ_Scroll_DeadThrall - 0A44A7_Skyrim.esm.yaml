@@ -1,0 +1,32 @@
+FormKey: 0A44A7:Skyrim.esm
+EditorID: REQ_Scroll_DeadThrall
+ObjectBounds:
+  First: -13, -6, -3
+  Second: 13, 6, 3
+Name:
+  TargetLanguage: English
+  Value: Scroll of Dead Thrall
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Clutter\Common\Scroll06.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 500
+Weight: 0.5
+BaseCost: 71161
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 4.5
+CastType: 3
+TargetType: Aimed
+Effects:
+- BaseEffect: 07E8E0:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 600

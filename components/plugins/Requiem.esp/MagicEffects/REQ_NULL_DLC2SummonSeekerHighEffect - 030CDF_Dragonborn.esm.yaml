@@ -1,0 +1,43 @@
+FormKey: 030CDF:Dragonborn.esm
+EditorID: REQ_NULL_DLC2SummonSeekerHighEffect
+Name:
+  TargetLanguage: English
+  Value: Conjure High Seeker
+MenuDisplayObject: 0A6459:Skyrim.esm
+Keywords:
+- 0A9B1F:Skyrim.esm
+- 1076F4:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+BaseCost: 22
+MagicSkill: Conjuration
+CastingLight: 0140EC:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: 030CDE:Dragonborn.esm
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 03CDFC:Skyrim.esm
+HitEffectArt: 03F811:Skyrim.esm
+ImpactData: 03A1E9:Skyrim.esm
+SkillUsageMultiplier: 0.75
+DualCastScale: 1
+ImageSpaceModifier: 06F79B:Skyrim.esm
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Summons a High Seeker for <dur> seconds wherever the caster is pointing.

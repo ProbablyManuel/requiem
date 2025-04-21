@@ -1,0 +1,24 @@
+FormKey: 01CE06:Dragonborn.esm
+EditorID: REQ_Conjuration1_BoundDagger
+Name:
+  TargetLanguage: English
+  Value: Bound Dagger
+MenuDisplayObject: 10AB43:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 180
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+HalfCostPerk: 0F2CA7:Skyrim.esm
+Effects:
+- BaseEffect: 01CE04:Dragonborn.esm
+  Data:
+    Duration: 120
+- BaseEffect: 01CE05:Dragonborn.esm
+  Data:
+    Duration: 120

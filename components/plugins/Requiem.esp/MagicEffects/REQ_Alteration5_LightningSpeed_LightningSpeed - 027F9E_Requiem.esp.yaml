@@ -1,0 +1,63 @@
+FormKey: 027F9E:Requiem.esp
+EditorID: REQ_Alteration5_LightningSpeed_LightningSpeed
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicImodScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 0486F7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 0440D4:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStaticDelay
+      Data: 0.15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StaticFX
+      Object: 0486F4:Skyrim.esm
+  - Name: shaderparticlegeometryscript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FadeOutTime
+      Data: 0.1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: FadeInTime
+      Data: 0.1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PSGD
+      Object: 0486F3:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Lightning Speed
+MenuDisplayObject: 0A0E7F:Skyrim.esm
+Keywords:
+- 0806E1:Skyrim.esm
+- 3FCA4C:Requiem.esp
+Flags:
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+BaseCost: 500
+MagicSkill: Alteration
+TaperWeight: 1
+MinimumSkillLevel: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: SlowTime
+CastType: FireAndForget
+CastingArt: 10E3CE:Skyrim.esm
+DualCastScale: 1
+EquipAbility: 10E3D1:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA53:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+- Type: Release
+  Sound: 0ADE24:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster moves with meteoric speed, making everything slow down almost to motionlessness for <dur> seconds.

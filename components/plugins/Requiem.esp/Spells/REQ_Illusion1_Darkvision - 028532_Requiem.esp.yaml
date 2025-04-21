@@ -1,0 +1,37 @@
+FormKey: 028532:Requiem.esp
+EditorID: REQ_Illusion1_Darkvision
+Name:
+  TargetLanguage: English
+  Value: Darkvision
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 50
+Flags:
+- ManualCostCalc
+ChargeTime: 0.5
+CastType: FireAndForget
+HalfCostPerk: 0F2CA9:Skyrim.esm
+Effects:
+- BaseEffect: 3F0444:Requiem.esp
+  Data:
+    Duration: 1
+- BaseEffect: 3F0442:Requiem.esp
+  Data:
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Magicka
+    ComparisonValue: 1
+- BaseEffect: 3F0443:Requiem.esp
+  Data:
+    Duration: 86400
+- BaseEffect: 41A5BB:Requiem.esp
+  Data:
+    Magnitude: 2
+    Duration: 86400
