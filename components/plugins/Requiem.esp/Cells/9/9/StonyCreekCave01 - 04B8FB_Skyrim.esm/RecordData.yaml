@@ -42,6 +42,17 @@ EncounterZone: 080F29:Skyrim.esm
 Music: 094BDD:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EF07D:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 080F28:Skyrim.esm
+  Placement:
+    Position: 5096.314, 1674.1847, -168.06703
+    Rotation: 0.25491232, 6.2570405, 4.1055136
 - MutagenObjectType: PlacedNpc
   FormKey: 0F4411:Skyrim.esm
   MajorRecordFlagsRaw: 512
@@ -66,16 +77,5 @@ Temporary:
   Placement:
     Position: 5789.1704, 1290.2391, 185.6549
     Rotation: 0.01434137, 0.19949986, 4.784633
-- MutagenObjectType: PlacedObject
-  FormKey: 0EF07D:Skyrim.esm
-  Base: 03AC21:Skyrim.esm
-  Lock:
-    Level: Novice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 080F28:Skyrim.esm
-  Placement:
-    Position: 5096.314, 1674.1847, -168.06703
-    Rotation: 0.25491232, 6.2570405, 4.1055136
 MajorFlags:
 - 0x40000

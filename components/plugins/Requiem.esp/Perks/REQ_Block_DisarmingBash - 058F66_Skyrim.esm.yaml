@@ -22,6 +22,26 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsAttackTypeConditionData
+        Keyword: 000F54:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsShieldOutConditionData
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetRandomPercentConditionData
+      ComparisonValue: 5
+  EntryPoint: ApplyBashingSpell
+  PerkConditionTabCount: 2
+  Spell: 81679D:Requiem.esp
+- MutagenObjectType: PerkEntryPointSelectSpell
   Priority: 11
   Conditions:
   - Conditions:
@@ -39,26 +59,6 @@ Effects:
       Data:
         MutagenObjectType: GetRandomPercentConditionData
       ComparisonValue: 25
-  EntryPoint: ApplyBashingSpell
-  PerkConditionTabCount: 2
-  Spell: 81679D:Requiem.esp
-- MutagenObjectType: PerkEntryPointSelectSpell
-  Priority: 10
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsAttackTypeConditionData
-        Keyword: 000F54:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsShieldOutConditionData
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetRandomPercentConditionData
-      ComparisonValue: 5
   EntryPoint: ApplyBashingSpell
   PerkConditionTabCount: 2
   Spell: 81679D:Requiem.esp

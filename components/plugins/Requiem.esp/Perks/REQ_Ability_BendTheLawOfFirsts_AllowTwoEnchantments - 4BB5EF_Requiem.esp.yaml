@@ -7,12 +7,12 @@ NumRanks: 1
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModNumAppliedEnchantmentsAllowed
+  PerkConditionTabCount: 1
+  Value: 2
+- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   EntryPoint: ModEnchantmentPower
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 0.75
-- MutagenObjectType: PerkEntryPointModifyValue
-  EntryPoint: ModNumAppliedEnchantmentsAllowed
-  PerkConditionTabCount: 1
-  Value: 2

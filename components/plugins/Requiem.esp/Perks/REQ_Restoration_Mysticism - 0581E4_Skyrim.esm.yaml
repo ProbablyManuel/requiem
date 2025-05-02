@@ -45,55 +45,6 @@ Effects:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 013797:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: IsUndeadConditionData
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 013796:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModSpellDuration
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 1.25
-- MutagenObjectType: PerkEntryPointModifyValue
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 013797:Skyrim.esm
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsUndeadConditionData
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 013796:Skyrim.esm
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsObjectTypeConditionData
-        FormType: Spell
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
         Keyword: 3FCA4C:Requiem.esp
   - RunOnTabIndex: 2
     Conditions:
@@ -119,3 +70,52 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013797:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsUndeadConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013796:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsObjectTypeConditionData
+        FormType: Spell
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 412EDF:Requiem.esp
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013797:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: IsUndeadConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013796:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.25

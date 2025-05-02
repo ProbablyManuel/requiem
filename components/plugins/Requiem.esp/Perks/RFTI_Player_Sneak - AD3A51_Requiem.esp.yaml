@@ -8,11 +8,22 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 100
-  EntryPoint: ModDetectionLight
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 092A57:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 3888E4:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModDetectionSneakSkill
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 2
+  Value: 0.01
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 11
   Conditions:
@@ -30,19 +41,8 @@ Effects:
   Modification: Multiply
   Value: 0.33
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 10
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 092A57:Skyrim.esm
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 3888E4:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModDetectionSneakSkill
+  Priority: 100
+  EntryPoint: ModDetectionLight
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.01
+  Value: 2

@@ -36,32 +36,29 @@ Template: 044CCC:Skyrim.esm
 Race: 013742:Skyrim.esm
 ActorEffect:
 - 012FCD:Skyrim.esm
-- 07231A:Skyrim.esm
 - 012FD0:Skyrim.esm
 - 072316:Skyrim.esm
+- 07231A:Skyrim.esm
 - 07231C:Skyrim.esm
 Perks:
-- Perk: 0581F8:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0581F4:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
 - Perk: 053128:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0D7999:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0581E7:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
+- Perk: 0581F4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
 Items:
 - Item:
-    Item: 10FAD1:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 10FACD:Skyrim.esm
+    Item: 044CD6:Skyrim.esm
     Count: 1
 - Item:
     Item: 10F8B4:Skyrim.esm
@@ -70,7 +67,10 @@ Items:
     Item: 10F8B5:Skyrim.esm
     Count: 1
 - Item:
-    Item: 044CD6:Skyrim.esm
+    Item: 10FACD:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FAD1:Skyrim.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -163,11 +163,11 @@ PlayerSkills:
   GearedUpWeapons: 1
   Unused2: 0x405AEF
 HeadParts:
-- 08555F:Skyrim.esm
+- 01750A:Skyrim.esm
 - 053929:Skyrim.esm
+- 08555F:Skyrim.esm
 - 0C7123:Skyrim.esm
 - 0F1A99:Skyrim.esm
-- 01750A:Skyrim.esm
 HairColor: 0A0430:Skyrim.esm
 CombatStyle: 044CD0:Skyrim.esm
 NAM5: 255
@@ -212,6 +212,10 @@ TintLayers:
   Color: '#00212B52'
   InterpolationValue: 0.83
   Preset: 78
+- Index: 4
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 522
 - Index: 8
   Color: '#00FFFFFF'
   InterpolationValue: 0
@@ -264,6 +268,10 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 330
+- Index: 23
+  Color: '#00000000'
+  InterpolationValue: 0.43
+  Preset: 526
 - Index: 52
   Color: '#00000000'
   InterpolationValue: 0
@@ -284,13 +292,5 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 474
-- Index: 4
-  Color: '#00000000'
-  InterpolationValue: 0.58
-  Preset: 522
-- Index: 23
-  Color: '#00000000'
-  InterpolationValue: 0.43
-  Preset: 526
 MajorFlags:
 - 0x40000

@@ -22,6 +22,42 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 024823:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 024829:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 02482A:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 1091CF:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellRange
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 5
+- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
   - RunOnTabIndex: 1
@@ -58,39 +94,3 @@ Effects:
   PerkConditionTabCount: 2
   Modification: Multiply
   Value: 0.75
-- MutagenObjectType: PerkEntryPointModifyValue
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 024823:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 024829:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 02482A:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 1091CF:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModSpellRange
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 5

@@ -22,6 +22,21 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPAlchemyEffectHasKeywordConditionData
+        Keyword: 0F8A4E:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPAlchemyGetMakingPoisonConditionData
+  EntryPoint: ModAlchemyEffectiveness
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.25
+- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
   - Conditions:
@@ -46,21 +61,6 @@ Effects:
         MutagenObjectType: EPAlchemyEffectHasKeywordConditionData
         Keyword: 042504:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: ModAlchemyEffectiveness
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 1.25
-- MutagenObjectType: PerkEntryPointModifyValue
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPAlchemyEffectHasKeywordConditionData
-        Keyword: 0F8A4E:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPAlchemyGetMakingPoisonConditionData
   EntryPoint: ModAlchemyEffectiveness
   PerkConditionTabCount: 1
   Modification: Multiply

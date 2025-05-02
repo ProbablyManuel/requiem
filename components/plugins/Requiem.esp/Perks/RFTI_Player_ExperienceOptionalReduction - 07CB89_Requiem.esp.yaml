@@ -8,7 +8,7 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 95
+  Priority: 50
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -19,130 +19,11 @@ Effects:
       Data:
         MutagenObjectType: GetGlobalValueConditionData
         Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 95
+      ComparisonValue: 50
   EntryPoint: ModSkillUse
   PerkConditionTabCount: 1
   Modification: Multiply
-  Value: 0.95
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 90
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 90
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 0.9
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 85
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 85
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 0.85
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 80
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 80
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 0.8
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 75
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 75
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 0.75
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 70
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 70
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 0.7
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 65
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 65
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 0.65
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 60
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 60
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 0.6
+  Value: 0.5
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 55
   Conditions:
@@ -161,7 +42,7 @@ Effects:
   Modification: Multiply
   Value: 0.55
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 50
+  Priority: 60
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -172,8 +53,127 @@ Effects:
       Data:
         MutagenObjectType: GetGlobalValueConditionData
         Global: 6F9CBA:Requiem.esp
-      ComparisonValue: 50
+      ComparisonValue: 60
   EntryPoint: ModSkillUse
   PerkConditionTabCount: 1
   Modification: Multiply
-  Value: 0.5
+  Value: 0.6
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 65
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 6F9CBA:Requiem.esp
+      ComparisonValue: 65
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.65
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 70
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 6F9CBA:Requiem.esp
+      ComparisonValue: 70
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.7
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 75
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 6F9CBA:Requiem.esp
+      ComparisonValue: 75
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.75
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 80
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 6F9CBA:Requiem.esp
+      ComparisonValue: 80
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.8
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 85
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 6F9CBA:Requiem.esp
+      ComparisonValue: 85
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.85
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 90
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 6F9CBA:Requiem.esp
+      ComparisonValue: 90
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.9
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 95
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: 6F9CBA:Requiem.esp
+      ComparisonValue: 95
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 0.95

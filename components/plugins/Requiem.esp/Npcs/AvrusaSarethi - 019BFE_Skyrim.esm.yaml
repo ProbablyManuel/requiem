@@ -32,19 +32,19 @@ Configuration:
   SpeedMultiplier: 100
   DispositionBase: 35
 Factions:
+- Faction: 019809:Skyrim.esm
+  Fluff: 0x000000
 - Faction: 02816B:Skyrim.esm
   Fluff: 0x000000
-- Faction: 0A8006:Skyrim.esm
+- Faction: 02A454:Skyrim.esm
   Fluff: 0x000000
 - Faction: 051591:Skyrim.esm
   Fluff: 0x000000
-- Faction: 019809:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 0F17E8:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 06BBC4:Skyrim.esm
   Fluff: 0x000000
-- Faction: 02A454:Skyrim.esm
+- Faction: 0A8006:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0F17E8:Skyrim.esm
   Fluff: 0x000000
 Voice: 013AE5:Skyrim.esm
 Race: 013742:Skyrim.esm
@@ -55,16 +55,16 @@ ActorEffect:
 - 0C96A2:Skyrim.esm
 Items:
 - Item:
-    Item: 1046D1:Skyrim.esm
+    Item: 017177:Skyrim.esm
     Count: 1
 - Item:
-    Item: 017177:Skyrim.esm
+    Item: 09CD4A:Skyrim.esm
     Count: 1
 - Item:
     Item: 0E3E99:Skyrim.esm
     Count: 2
 - Item:
-    Item: 09CD4A:Skyrim.esm
+    Item: 1046D1:Skyrim.esm
     Count: 1
 - Item:
     Item: 10F91A:Skyrim.esm
@@ -170,9 +170,9 @@ PlayerSkills:
   Unused2: 0x405AEF
 HeadParts:
 - 053997:Skyrim.esm
-- 0EC1B2:Skyrim.esm
 - 08CA83:Skyrim.esm
 - 0E4DA0:Skyrim.esm
+- 0EC1B2:Skyrim.esm
 HairColor: 0A0430:Skyrim.esm
 CombatStyle: 03BE1C:Skyrim.esm
 NAM5: 255
@@ -222,6 +222,10 @@ TintLayers:
   Color: '#00A95452'
   InterpolationValue: 0.19
   Preset: 578
+- Index: 35
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 1022
 - Index: 36
   Color: '#00000000'
   InterpolationValue: 0
@@ -262,10 +266,6 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 823
-- Index: 35
-  Color: '#00000000'
-  InterpolationValue: 1
-  Preset: 1022
 - Index: 46
   Color: '#006B3D16'
   InterpolationValue: 0

@@ -15,18 +15,6 @@ AcousticSpace: 01AA4D:Skyrim.esm
 Music: 02D4C2:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 086DB8:Skyrim.esm
-  Version2: 1
-  Base: 020670:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 019262:Skyrim.esm
-  Placement:
-    Position: -27505.244, 38704.008, 283.91235
-    Rotation: 0.012026354, 0.17673619, 0.70750386
-- MutagenObjectType: PlacedObject
   FormKey: 086D5A:Skyrim.esm
   Version2: 1
   Base: 020670:Skyrim.esm
@@ -38,17 +26,29 @@ Temporary:
   Placement:
     Position: -26175.598, 39688.76, 987.2481
     Rotation: 0, -0, 0.40000153
-- MutagenObjectType: PlacedNpc
-  FormKey: 447567:Requiem.esp
-  Base: 023A93:Skyrim.esm
+- MutagenObjectType: PlacedObject
+  FormKey: 086DB8:Skyrim.esm
+  Version2: 1
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019262:Skyrim.esm
   Placement:
-    Position: -28010.383, 40954.363, 1006.6203
-    Rotation: 0, -0, 0.70000494
+    Position: -27505.244, 38704.008, 283.91235
+    Rotation: 0.012026354, 0.17673619, 0.70750386
 - MutagenObjectType: PlacedNpc
   FormKey: 447566:Requiem.esp
   Base: 023A93:Skyrim.esm
   Placement:
     Position: -26161.428, 40782.098, 1493.0402
     Rotation: 0, -0, 0.21681467
+- MutagenObjectType: PlacedNpc
+  FormKey: 447567:Requiem.esp
+  Base: 023A93:Skyrim.esm
+  Placement:
+    Position: -28010.383, 40954.363, 1006.6203
+    Rotation: 0, -0, 0.70000494
 MajorFlags:
 - 0x40000

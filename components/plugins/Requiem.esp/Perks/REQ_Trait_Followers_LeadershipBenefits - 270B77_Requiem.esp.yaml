@@ -7,8 +7,9 @@ Description:
 NumRanks: 1
 Hidden: True
 Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 427138:Requiem.esp
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -22,46 +23,7 @@ Effects:
         MutagenObjectType: GetGlobalValueConditionData
         Global: 020E97:Dragonborn.esm
       ComparisonValue: 2
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Alteration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Conjuration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Destruction
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Illusion
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Restoration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
-  EntryPoint: ModSpellDuration
+  EntryPoint: ModAttackDamage
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.2
@@ -123,9 +85,8 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.2
-- MutagenObjectType: PerkAbilityEffect
-  Ability: 427138:Requiem.esp
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -139,7 +100,46 @@ Effects:
         MutagenObjectType: GetGlobalValueConditionData
         Global: 020E97:Dragonborn.esm
       ComparisonValue: 2
-  EntryPoint: ModAttackDamage
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Alteration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Conjuration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Destruction
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Illusion
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Restoration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 412EDF:Requiem.esp
+  EntryPoint: ModSpellDuration
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.2

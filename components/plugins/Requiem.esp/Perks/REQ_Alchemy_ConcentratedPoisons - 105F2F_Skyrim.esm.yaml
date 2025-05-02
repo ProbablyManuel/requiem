@@ -22,6 +22,20 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyActorValue
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 078098:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPoisonDoseCount
+  PerkConditionTabCount: 3
+  ActorValue: Alchemy
+  Value: 0.02
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyActorValue
   Priority: 1
   Conditions:
   - RunOnTabIndex: 2
@@ -38,18 +52,4 @@ Effects:
   PerkConditionTabCount: 3
   ActorValue: Alchemy
   Value: 0.05
-  Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkEntryPointModifyActorValue
-  Conditions:
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 078098:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModPoisonDoseCount
-  PerkConditionTabCount: 3
-  ActorValue: Alchemy
-  Value: 0.02
   Modification: MultiplyOnePlusAVMult

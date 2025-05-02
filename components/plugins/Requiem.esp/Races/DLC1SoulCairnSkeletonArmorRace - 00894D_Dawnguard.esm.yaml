@@ -89,71 +89,17 @@ SkeletalModel:
     File: Actors\Draugr\Character Assets\SkeletonF.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 0BFB2B:Skyrim.esm
   Female: 01F1CD:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
-- AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 60
-    Stagger: 1
-    StaminaMult: 1
-  AttackEvent: attackStart2HMForwardPowerChop
-- AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 60
-    Stagger: 0.75
-    StaminaMult: 1
-  AttackEvent: attackStartGSChop
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 60
-    StaminaMult: 1
-  AttackEvent: attackStartGSBackSlash
-- AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 60
-    Stagger: 1
-    StaminaMult: 1
-  AttackEvent: attackStartGSForwardPowerB
-- AttackData:
-    DamageMult: 1
-    Chance: 0.75
-    StrikeAngle: 60
-    StaminaMult: 1
-  AttackEvent: attackStart1HMX2
-- AttackData:
-    DamageMult: 1.5
-    Chance: 0.5
-    Flags:
-    - PowerAttack
-    StrikeAngle: 60
-    Stagger: 0.75
-    StaminaMult: 1
-  AttackEvent: attackStart2HMPowerChop
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 60
-    StaminaMult: 1
-  AttackEvent: attackStart2HMBackSwipe
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -179,6 +125,57 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStart1HMPowerChop
 - AttackData:
+    DamageMult: 1.5
+    Chance: 0.75
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: attackStart1HMPowerSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 60
+    StaminaMult: 1
+  AttackEvent: attackStart1HMSwipe
+- AttackData:
+    DamageMult: 1
+    Chance: 0.75
+    StrikeAngle: 60
+    StaminaMult: 1
+  AttackEvent: attackStart1HMX2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 60
+    StaminaMult: 1
+  AttackEvent: attackStart2HMBackSwipe
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackStart2HMForwardPowerChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 60
+    StaminaMult: 1
+  AttackEvent: attackStart2HMForwardSwipe
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: attackStart2HMPowerChop
+- AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 60
@@ -189,16 +186,31 @@ Attacks:
     Chance: 1
     StrikeAngle: 60
     StaminaMult: 1
-  AttackEvent: attackStart1HMSwipe
+  AttackEvent: attackStartGSBackSlash
 - AttackData:
-    DamageMult: 0.5
-    Chance: 0.1
+    DamageMult: 1.5
+    Chance: 1
     Flags:
-    - BashAttack
+    - PowerAttack
     StrikeAngle: 60
-    Stagger: 0.5
+    Stagger: 0.75
     StaminaMult: 1
-  AttackEvent: bashStart
+  AttackEvent: attackStartGSChop
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackStartGSForwardPowerB
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 60
+    StaminaMult: 1
+  AttackEvent: attackStartGSX2
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -214,26 +226,14 @@ Attacks:
     StaminaMult: 1
   AttackEvent: AttackStartH2HRight
 - AttackData:
-    DamageMult: 1.5
-    Chance: 0.75
+    DamageMult: 0.5
+    Chance: 0.1
     Flags:
-    - PowerAttack
+    - BashAttack
     StrikeAngle: 60
-    Stagger: 0.75
+    Stagger: 0.5
     StaminaMult: 1
-  AttackEvent: attackStart1HMPowerSlash
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 60
-    StaminaMult: 1
-  AttackEvent: attackStart2HMForwardSwipe
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 60
-    StaminaMult: 1
-  AttackEvent: attackStartGSX2
+  AttackEvent: bashStart
 BodyData:
   Male:
     Index: BodyTexture

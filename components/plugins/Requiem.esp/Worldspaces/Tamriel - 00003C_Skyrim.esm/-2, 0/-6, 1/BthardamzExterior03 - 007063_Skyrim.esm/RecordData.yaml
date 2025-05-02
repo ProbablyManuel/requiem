@@ -60,18 +60,6 @@ Regions:
 Location: 019152:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 03045F:Skyrim.esm
-  Base: 020650:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  EncounterZone: 03EBFA:Skyrim.esm
-  LocationReference: 019152:Skyrim.esm
-  Placement:
-    Position: -170994.03, 43742.35, -4988.723
-    Rotation: 0, -0, 0.9100018
-- MutagenObjectType: PlacedObject
   FormKey: 03045E:Skyrim.esm
   Version2: 1
   Base: 020650:Skyrim.esm
@@ -84,5 +72,17 @@ Temporary:
   Placement:
     Position: -170999.05, 43818.31, -4988.723
     Rotation: 0, -0, 1.8599994
+- MutagenObjectType: PlacedObject
+  FormKey: 03045F:Skyrim.esm
+  Base: 020650:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  EncounterZone: 03EBFA:Skyrim.esm
+  LocationReference: 019152:Skyrim.esm
+  Placement:
+    Position: -170994.03, 43742.35, -4988.723
+    Rotation: 0, -0, 0.9100018
 MajorFlags:
 - 0x40000

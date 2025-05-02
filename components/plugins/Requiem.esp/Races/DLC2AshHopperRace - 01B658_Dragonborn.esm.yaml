@@ -88,11 +88,11 @@ SkeletalModel:
     File: Actors\Skeever\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F17B:Dragonborn.esm
   Female: 019FE5:Skyrim.esm
@@ -100,12 +100,30 @@ FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
 - AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Spell: 0285C1:Dragonborn.esm
+    DamageMult: 1
+    Chance: 0.25
+    Spell: AE3978:Requiem.esp
     StrikeAngle: 35
+    Stagger: 0.25
     StaminaMult: 1
-  AttackEvent: attackStart_SkeeverLungeMedium
+  AttackEvent: attackStart_Attack1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: AE3978:Requiem.esp
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    Spell: AE3978:Requiem.esp
+    AttackAngle: -90
+    StrikeAngle: 45
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
 - AttackData:
     DamageMult: 1
     Chance: 0.5
@@ -115,14 +133,6 @@ Attacks:
     Stagger: 0.5
     StaminaMult: 1
   AttackEvent: attackStart_AttackRight1
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    Spell: AE3978:Requiem.esp
-    StrikeAngle: 35
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: attackStart_Attack2
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -153,6 +163,13 @@ Attacks:
     Spell: 0285C1:Dragonborn.esm
     StrikeAngle: 35
     StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeMedium
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0285C1:Dragonborn.esm
+    StrikeAngle: 35
+    StaminaMult: 1
   AttackEvent: attackStart_SkeeverLungeShort
 - AttackData:
     DamageMult: 1
@@ -161,23 +178,6 @@ Attacks:
     AttackType: 0914E5:Skyrim.esm
     StaminaMult: 1
   AttackEvent: attackStart_StandingPower
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    Spell: AE3978:Requiem.esp
-    AttackAngle: -90
-    StrikeAngle: 45
-    Stagger: 0.5
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackLeft1
-- AttackData:
-    DamageMult: 1
-    Chance: 0.25
-    Spell: AE3978:Requiem.esp
-    StrikeAngle: 35
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: attackStart_Attack1
 BodyData:
   Male:
     Index: BodyTexture

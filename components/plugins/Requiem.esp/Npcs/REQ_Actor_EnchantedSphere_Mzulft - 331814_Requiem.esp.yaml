@@ -46,6 +46,22 @@ WornArmor: 07874B:Skyrim.esm
 AttackRace: 0131F2:Skyrim.esm
 Attacks:
 - AttackData:
+    DamageMult: 1.25
+    Chance: 0.5
+    Flags:
+    - OverrideData
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartBackSlash
+- AttackData:
+    DamageMult: 1.25
+    Chance: 0.5
+    Flags:
+    - OverrideData
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartChop
+- AttackData:
     DamageMult: 1.75
     Chance: 0.75
     Flags:
@@ -57,13 +73,16 @@ Attacks:
     StaminaMult: 0.01
   AttackEvent: attackStartForwardPowerChop
 - AttackData:
-    DamageMult: 1.25
-    Chance: 0.5
+    DamageMult: 1.75
+    Chance: 0.75
     Flags:
+    - PowerAttack
     - OverrideData
     StrikeAngle: 60
+    Stagger: 0.75
+    RecoveryTime: 1.5
     StaminaMult: 0.01
-  AttackEvent: attackStartChop
+  AttackEvent: attackStartForwardPowerStab
 - AttackData:
     DamageMult: 1.25
     Chance: 0.5
@@ -81,17 +100,6 @@ Attacks:
     StaminaMult: 0.01
   AttackEvent: attackStartStab
 - AttackData:
-    DamageMult: 1.75
-    Chance: 0.75
-    Flags:
-    - PowerAttack
-    - OverrideData
-    StrikeAngle: 60
-    Stagger: 0.75
-    RecoveryTime: 1.5
-    StaminaMult: 0.01
-  AttackEvent: attackStartForwardPowerStab
-- AttackData:
     DamageMult: 1.25
     Chance: 1
     Flags:
@@ -100,14 +108,6 @@ Attacks:
     StrikeAngle: 60
     StaminaMult: 0.01
   AttackEvent: bashStart
-- AttackData:
-    DamageMult: 1.25
-    Chance: 0.5
-    Flags:
-    - OverrideData
-    StrikeAngle: 60
-    StaminaMult: 0.01
-  AttackEvent: attackStartBackSlash
 Perks:
 - Perk: 0FAB0B:Requiem.esp
   Rank: 1

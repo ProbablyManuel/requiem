@@ -37,15 +37,6 @@ WornArmor: 016EE4:Skyrim.esm
 AttackRace: 013206:Skyrim.esm
 Attacks:
 - AttackData:
-    DamageMult: 1
-    Spell: 5F3681:Requiem.esp
-    Flags:
-    - PowerAttack
-    - OverrideData
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartForwardPowerRush
-- AttackData:
     DamageMult: 1.5
     Chance: 0.3
     Spell: 5F3681:Requiem.esp
@@ -57,6 +48,15 @@ Attacks:
     RecoveryTime: 1
     StaminaMult: 1
   AttackEvent: attackStartForwardPower
+- AttackData:
+    DamageMult: 1
+    Spell: 5F3681:Requiem.esp
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartForwardPowerRush
 Perks:
 - Perk: 0FAB0B:Requiem.esp
   Rank: 1

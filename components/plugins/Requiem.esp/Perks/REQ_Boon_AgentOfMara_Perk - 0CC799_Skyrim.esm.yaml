@@ -9,6 +9,8 @@ Description:
 NumRanks: 1
 Playable: True
 Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 0CC79A:Skyrim.esm
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
@@ -27,5 +29,3 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.1
-- MutagenObjectType: PerkAbilityEffect
-  Ability: 0CC79A:Skyrim.esm

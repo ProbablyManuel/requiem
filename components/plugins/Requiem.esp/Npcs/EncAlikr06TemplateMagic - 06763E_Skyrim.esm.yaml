@@ -35,10 +35,13 @@ Voice: 013AD2:Skyrim.esm
 Template: 06762E:Skyrim.esm
 Race: 013748:Skyrim.esm
 ActorEffect:
-- 02F3B8:Skyrim.esm
 - 0211F1:Skyrim.esm
+- 02F3B8:Skyrim.esm
 - 039D40:Skyrim.esm
 Perks:
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
 - Perk: 10FCF8:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
@@ -48,18 +51,15 @@ Perks:
 - Perk: 10FCFA:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 0581F8:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
 Items:
 - Item:
-    Item: 08FFFB:Skyrim.esm
+    Item: 01397E:Skyrim.esm
     Count: 1
 - Item:
     Item: 037C27:Skyrim.esm
     Count: 1
 - Item:
-    Item: 01397E:Skyrim.esm
+    Item: 08FFFB:Skyrim.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -151,9 +151,9 @@ PlayerSkills:
   Unused2: 0x405AEF
 HeadParts:
 - 02425C:Skyrim.esm
-- 0C7122:Skyrim.esm
 - 0513FC:Skyrim.esm
 - 08555F:Skyrim.esm
+- 0C7122:Skyrim.esm
 - 0D2EBE:Skyrim.esm
 CombatStyle: 03BE1C:Skyrim.esm
 NAM5: 255

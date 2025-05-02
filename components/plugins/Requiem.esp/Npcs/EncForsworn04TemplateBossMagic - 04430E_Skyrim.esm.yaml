@@ -179,11 +179,11 @@ PlayerSkills:
   Unused: 16743
   Unused2: 0x405AEF
 HeadParts:
-- 099D7C:Skyrim.esm
 - 017508:Skyrim.esm
+- 02424F:Skyrim.esm
+- 099D7C:Skyrim.esm
 - 09F0A2:Skyrim.esm
 - 0C716D:Skyrim.esm
-- 02424F:Skyrim.esm
 HairColor: 0A0433:Skyrim.esm
 CombatStyle: 03BE1C:Skyrim.esm
 NAM5: 255
@@ -212,6 +212,10 @@ TintLayers:
 - Index: 2
   Color: '#00826D5B'
   InterpolationValue: 1
+  Preset: -1
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 0.58
   Preset: -1
 - Index: 29
   Color: '#00FDFDFD'
@@ -253,6 +257,14 @@ TintLayers:
   Color: '#00FDFDFD'
   InterpolationValue: 0
   Preset: -1
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: -1
+- Index: 58
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: -1
 - Index: 60
   Color: '#00FDFDFD'
   InterpolationValue: 0
@@ -288,18 +300,6 @@ TintLayers:
 - Index: 68
   Color: '#00FDFDFD'
   InterpolationValue: 0.7
-  Preset: -1
-- Index: 5
-  Color: '#00000000'
-  InterpolationValue: 0.58
-  Preset: -1
-- Index: 39
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: -1
-- Index: 58
-  Color: '#002F2013'
-  InterpolationValue: 1
   Preset: -1
 MajorFlags:
 - 0x40000

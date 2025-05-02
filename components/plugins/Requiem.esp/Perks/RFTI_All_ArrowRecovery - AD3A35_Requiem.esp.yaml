@@ -7,18 +7,6 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 101
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: WornHasKeywordConditionData
-        Keyword: AD3A4E:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModRecoverArrowChance
-  PerkConditionTabCount: 1
-  Value: 100
-- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 100
   Conditions:
   - Conditions:
@@ -30,3 +18,15 @@ Effects:
   EntryPoint: ModRecoverArrowChance
   PerkConditionTabCount: 1
   Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 101
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: AD3A4E:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModRecoverArrowChance
+  PerkConditionTabCount: 1
+  Value: 100

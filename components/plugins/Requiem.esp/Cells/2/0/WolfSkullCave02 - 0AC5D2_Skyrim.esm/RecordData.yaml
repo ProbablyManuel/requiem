@@ -93,6 +93,27 @@ Persistent:
   - Persistent
   - InitiallyDisabled
 Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 085C69:Skyrim.esm
+  Version2: 2
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_AddItems
+      Properties:
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Items
+        Objects:
+        - Name: ''
+          Object: 02D145:Requiem.esp
+  Base: 02065D:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192C8:Skyrim.esm
+  Placement:
+    Position: 3859.5566, -244.96393, 1863.241
+    Rotation: 0, -0, 2.4331903
 - MutagenObjectType: PlacedNpc
   FormKey: 0AC65C:Skyrim.esm
   MajorRecordFlagsRaw: 2560
@@ -109,25 +130,6 @@ Temporary:
   Placement:
     Position: 76.40625, 1314.4297, 1218.6769
     Rotation: 0, -0, 2.7831998
-  MajorFlags:
-  - StartsDead
-  - InitiallyDisabled
-- MutagenObjectType: PlacedNpc
-  FormKey: 0AC775:Skyrim.esm
-  MajorRecordFlagsRaw: 2560
-  Version2: 1
-  SkyrimMajorRecordFlags:
-  - 0x200
-  - InitiallyDisabled
-  Base: 028F52:Skyrim.esm
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: 0AC7A6:Skyrim.esm
-  PersistentLocation: 0192C8:Skyrim.esm
-  LocationReference: 0192C8:Skyrim.esm
-  Placement:
-    Position: 2031.9297, 897.64844, 1112.8911
-    Rotation: 0, -0, 3.5832
   MajorFlags:
   - StartsDead
   - InitiallyDisabled
@@ -150,26 +152,24 @@ Temporary:
   MajorFlags:
   - StartsDead
   - InitiallyDisabled
-- MutagenObjectType: PlacedObject
-  FormKey: 085C69:Skyrim.esm
-  Version2: 2
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: REQ_AddItems
-      Properties:
-      - MutagenObjectType: ScriptObjectListProperty
-        Name: Items
-        Objects:
-        - Name: ''
-          Object: 02D145:Requiem.esp
-  Base: 02065D:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
+- MutagenObjectType: PlacedNpc
+  FormKey: 0AC775:Skyrim.esm
+  MajorRecordFlagsRaw: 2560
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - InitiallyDisabled
+  Base: 028F52:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 0AC7A6:Skyrim.esm
+  PersistentLocation: 0192C8:Skyrim.esm
   LocationReference: 0192C8:Skyrim.esm
   Placement:
-    Position: 3859.5566, -244.96393, 1863.241
-    Rotation: 0, -0, 2.4331903
+    Position: 2031.9297, 897.64844, 1112.8911
+    Rotation: 0, -0, 3.5832
+  MajorFlags:
+  - StartsDead
+  - InitiallyDisabled
 MajorFlags:
 - 0x40000

@@ -57,6 +57,17 @@ Location: 018C8B:Skyrim.esm
 Water: 001232:Update.esm
 Temporary:
 - MutagenObjectType: PlacedObject
+  FormKey: 0CD6DF:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018C8B:Skyrim.esm
+  Placement:
+    Position: 102544.9, 30499.984, -10426.765
+    Rotation: 6.2430444, 5.843357, 1.1772386
+- MutagenObjectType: PlacedObject
   FormKey: 10E11A:Skyrim.esm
   Version2: 1
   Base: 10AAD2:Skyrim.esm
@@ -68,16 +79,5 @@ Temporary:
   Placement:
     Position: 102475.055, 30710.842, -10392.456
     Rotation: 0.02617994, -0.43247032, 1.470309
-- MutagenObjectType: PlacedObject
-  FormKey: 0CD6DF:Skyrim.esm
-  Base: 03AC21:Skyrim.esm
-  Lock:
-    Level: Novice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 018C8B:Skyrim.esm
-  Placement:
-    Position: 102544.9, 30499.984, -10426.765
-    Rotation: 6.2430444, 5.843357, 1.1772386
 MajorFlags:
 - 0x40000

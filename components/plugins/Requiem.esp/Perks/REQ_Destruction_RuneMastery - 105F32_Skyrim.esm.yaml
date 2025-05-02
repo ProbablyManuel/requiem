@@ -37,15 +37,15 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkAbilityEffect
-  Priority: 2
-  Ability: 0688FA:Requiem.esp
-- MutagenObjectType: PerkAbilityEffect
-  Priority: 1
-  Ability: 0688F9:Requiem.esp
-- MutagenObjectType: PerkAbilityEffect
   Ability: 0688FC:Requiem.esp
 - MutagenObjectType: PerkEntryPointModifyValue
   EntryPoint: ModMaxPlacableMinex
   PerkConditionTabCount: 1
   Modification: Multiply
   Value: 3
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: 0688F9:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 2
+  Ability: 0688FA:Requiem.esp

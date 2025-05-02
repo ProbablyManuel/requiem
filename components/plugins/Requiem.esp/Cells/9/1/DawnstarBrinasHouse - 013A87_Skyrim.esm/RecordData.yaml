@@ -70,19 +70,6 @@ Persistent:
     Rotation: 0, -0, 3.1415927
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 0E040A:Skyrim.esm
-  Base: 09AF19:Skyrim.esm
-  Lock:
-    Level: Novice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationRefTypes:
-  - 071061:Skyrim.esm
-  LocationReference: 02005E:Skyrim.esm
-  Placement:
-    Position: -1170.4109, -514.0569, 0
-    Rotation: 0, 0, 4.7123923
-- MutagenObjectType: PlacedObject
   FormKey: 04D7E5:Skyrim.esm
   Version2: 4
   Base: 03AC21:Skyrim.esm
@@ -96,5 +83,18 @@ Temporary:
   Placement:
     Position: -1168.8179, -745.77814, 0.61244583
     Rotation: 0, -0, 4.70819
+- MutagenObjectType: PlacedObject
+  FormKey: 0E040A:Skyrim.esm
+  Base: 09AF19:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 071061:Skyrim.esm
+  LocationReference: 02005E:Skyrim.esm
+  Placement:
+    Position: -1170.4109, -514.0569, 0
+    Rotation: 0, 0, 4.7123923
 MajorFlags:
 - 0x40000

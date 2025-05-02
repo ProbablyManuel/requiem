@@ -80,17 +80,23 @@ SkeletalModel:
     File: Actors\Goat\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F22A:Skyrim.esm
   Female: 01F22A:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack1
 - AttackData:
     DamageMult: 1.5
     Chance: 0.25
@@ -109,12 +115,6 @@ Attacks:
     Stagger: 0.25
     StaminaMult: 1
   AttackEvent: attackStart_StandingPower
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_Attack1
 BodyData:
   Male:
     Index: BodyTexture

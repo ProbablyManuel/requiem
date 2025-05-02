@@ -8,28 +8,14 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 13
+  Priority: 10
   Conditions:
   - RunOnTabIndex: 2
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3954:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModIncomingDamage
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 0.7
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 12
-  Conditions:
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3955:Requiem.esp
+        Keyword: AD3957:Requiem.esp
       ComparisonValue: 1
   EntryPoint: ModIncomingDamage
   PerkConditionTabCount: 3
@@ -50,16 +36,30 @@ Effects:
   Modification: Multiply
   Value: 0.7
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 10
+  Priority: 12
   Conditions:
   - RunOnTabIndex: 2
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3957:Requiem.esp
+        Keyword: AD3955:Requiem.esp
       ComparisonValue: 1
   EntryPoint: ModIncomingDamage
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 0.85
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 13
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3954:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.7

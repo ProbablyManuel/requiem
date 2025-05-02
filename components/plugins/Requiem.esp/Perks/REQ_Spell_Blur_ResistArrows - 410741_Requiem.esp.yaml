@@ -10,6 +10,24 @@ NumRanks: 1
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointAddRangeToValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 41073F:Requiem.esp
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  From: -30
+  To: -100
+- MutagenObjectType: PerkEntryPointAddRangeToValue
   Priority: 1
   Conditions:
   - Conditions:
@@ -29,21 +47,3 @@ Effects:
   PerkConditionTabCount: 3
   From: -50
   To: -300
-- MutagenObjectType: PerkEntryPointAddRangeToValue
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 41073F:Requiem.esp
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModIncomingDamage
-  PerkConditionTabCount: 3
-  From: -30
-  To: -100

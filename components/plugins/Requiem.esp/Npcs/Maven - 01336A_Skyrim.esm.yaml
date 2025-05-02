@@ -32,51 +32,51 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 60
 Factions:
+- Faction: 01745F:Skyrim.esm
+  Fluff: 0x000000
 - Faction: 02816B:Skyrim.esm
   Fluff: 0x000000
-- Faction: 094393:Skyrim.esm
+- Faction: 028186:Skyrim.esm
   Fluff: 0x000000
 - Faction: 036633:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 047A01:Skyrim.esm
   Fluff: 0x000000
 - Faction: 050920:Skyrim.esm
   Rank: -1
   Fluff: 0x000000
-- Faction: 047A01:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 0665E6:Skyrim.esm
   Fluff: 0x000000
-- Faction: 0BC3E2:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 0A2512:Skyrim.esm
+- Faction: 094393:Skyrim.esm
   Fluff: 0x000000
 - Faction: 09E0E5:Skyrim.esm
   Fluff: 0x000000
-- Faction: 028186:Skyrim.esm
+- Faction: 0A2512:Skyrim.esm
   Fluff: 0x000000
-- Faction: 01745F:Skyrim.esm
+- Faction: 0BC3E2:Skyrim.esm
   Fluff: 0x000000
 Voice: 09F17B:Skyrim.esm
 Race: 013746:Skyrim.esm
 ActorEffect:
 - 040001:Skyrim.esm
-- 0C96A2:Skyrim.esm
 - 07231A:Skyrim.esm
+- 0C96A2:Skyrim.esm
 Perks:
 - Perk: 058200:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 0FDEB8:Skyrim.esm
+    Item: 0571A1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0E3E99:Skyrim.esm
     Count: 1
 - Item:
     Item: 0FDEB7:Skyrim.esm
     Count: 1
 - Item:
-    Item: 0571A1:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 0E3E99:Skyrim.esm
+    Item: 0FDEB8:Skyrim.esm
     Count: 1
 - Item:
     Item: 1046D3:Skyrim.esm
@@ -186,8 +186,8 @@ PlayerSkills:
   Unused2: 0x405AEF
 HeadParts:
 - 040224:Skyrim.esm
-- 0EAA76:Skyrim.esm
 - 0E4DA5:Skyrim.esm
+- 0EAA76:Skyrim.esm
 - 0EC1B2:Skyrim.esm
 HairColor: 0A0435:Skyrim.esm
 CombatStyle: 03DECE:Skyrim.esm
@@ -264,6 +264,10 @@ TintLayers:
   Color: '#00430401'
   InterpolationValue: 0.42
   Preset: 676
+- Index: 36
+  Color: '#00764F32'
+  InterpolationValue: 1
+  Preset: -1
 - Index: 44
   Color: '#00000000'
   InterpolationValue: 0
@@ -276,9 +280,5 @@ TintLayers:
   Color: '#00FFFFFF'
   InterpolationValue: 0
   Preset: 900
-- Index: 36
-  Color: '#00764F32'
-  InterpolationValue: 1
-  Preset: -1
 MajorFlags:
 - 0x40000

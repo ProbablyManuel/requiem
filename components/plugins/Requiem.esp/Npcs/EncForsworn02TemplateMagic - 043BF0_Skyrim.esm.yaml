@@ -38,11 +38,14 @@ Template: 043BDC:Skyrim.esm
 Race: 013741:Skyrim.esm
 ActorEffect:
 - 034C38:Skyrim.esm
-- 0C969A:Skyrim.esm
 - 072319:Skyrim.esm
 - 0BB967:Skyrim.esm
+- 0C969A:Skyrim.esm
 Perks:
 - Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCF8:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 10FCF9:Skyrim.esm
@@ -51,15 +54,12 @@ Perks:
 - Perk: 10FCFA:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 10FCF8:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
 Items:
 - Item:
-    Item: 10FAC1:Skyrim.esm
+    Item: 10FABF:Skyrim.esm
     Count: 1
 - Item:
-    Item: 10FABF:Skyrim.esm
+    Item: 10FAC1:Skyrim.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -153,11 +153,11 @@ PlayerSkills:
   Unused: 16743
   Unused2: 0x405AEF
 HeadParts:
+- 02424F:Skyrim.esm
+- 099D7F:Skyrim.esm
 - 09F0A2:Skyrim.esm
 - 0C7122:Skyrim.esm
-- 099D7F:Skyrim.esm
 - 0D2EB0:Skyrim.esm
-- 02424F:Skyrim.esm
 HairColor: 0A0437:Skyrim.esm
 CombatStyle: 03BE1C:Skyrim.esm
 NAM5: 255
@@ -224,6 +224,14 @@ TintLayers:
   Color: '#00A95452'
   InterpolationValue: 0.38
   Preset: 134
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 635
+- Index: 58
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 640
 - Index: 64
   Color: '#00330000'
   InterpolationValue: 0
@@ -236,13 +244,5 @@ TintLayers:
   Color: '#00000439'
   InterpolationValue: 1
   Preset: 547
-- Index: 39
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: 635
-- Index: 58
-  Color: '#00000000'
-  InterpolationValue: 1
-  Preset: 640
 MajorFlags:
 - 0x40000

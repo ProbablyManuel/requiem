@@ -48,12 +48,23 @@ EncounterZone: 10D415:Skyrim.esm
 Music: 02D4C2:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Temporary:
-- MutagenObjectType: PlacedNpc
-  FormKey: AD3ACA:Requiem.esp
-  Base: AD3AC4:Requiem.esp
-  PersistentLocation: 02BCEB:Skyrim.esm
+- MutagenObjectType: PlacedObject
+  FormKey: 0D7BD3:Skyrim.esm
+  Base: 077773:Skyrim.esm
+  Emittance: 0B9E29:Skyrim.esm
+  LocationReference: 02BCEB:Skyrim.esm
   Placement:
-    Position: 3171.2698, -350.55267, -558.6746
+    Position: 3042.96, -632.0445, -245.30325
+    Rotation: 0, 0, 2.3232358
+- MutagenObjectType: PlacedObject
+  FormKey: 0D7BD4:Skyrim.esm
+  Version2: 1
+  Base: 077773:Skyrim.esm
+  Emittance: 0B9E29:Skyrim.esm
+  LocationReference: 02BCEB:Skyrim.esm
+  Placement:
+    Position: 3045.6135, -617.7625, -504.19492
+    Rotation: 0, 0, 2.3232358
 - MutagenObjectType: PlacedObject
   FormKey: 0EB129:Skyrim.esm
   Version2: 1
@@ -75,22 +86,11 @@ Temporary:
   Placement:
     Position: 3076.461, -721.32996, -381
     Rotation: 0, -0, 2.4043148
-- MutagenObjectType: PlacedObject
-  FormKey: 0D7BD4:Skyrim.esm
-  Version2: 1
-  Base: 077773:Skyrim.esm
-  Emittance: 0B9E29:Skyrim.esm
-  LocationReference: 02BCEB:Skyrim.esm
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3ACA:Requiem.esp
+  Base: AD3AC4:Requiem.esp
+  PersistentLocation: 02BCEB:Skyrim.esm
   Placement:
-    Position: 3045.6135, -617.7625, -504.19492
-    Rotation: 0, 0, 2.3232358
-- MutagenObjectType: PlacedObject
-  FormKey: 0D7BD3:Skyrim.esm
-  Base: 077773:Skyrim.esm
-  Emittance: 0B9E29:Skyrim.esm
-  LocationReference: 02BCEB:Skyrim.esm
-  Placement:
-    Position: 3042.96, -632.0445, -245.30325
-    Rotation: 0, 0, 2.3232358
+    Position: 3171.2698, -350.55267, -558.6746
 MajorFlags:
 - 0x40000

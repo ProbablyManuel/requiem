@@ -49,11 +49,19 @@ Music: 05615B:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 0C6AE4:Requiem.esp
-  Base: 0C6ADC:Requiem.esp
-  RagdollData: 0x00FFB734000000000000000000000000360CC9BF9640D73D07F048400000003F80FE154000008039000000B827AB3735639282371EF9C93F
+  FormKey: 05844F:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019183:Skyrim.esm
+  EnableParent:
+    Reference: 0C867A:Skyrim.esm
+    Unknown: 0x000000
   Placement:
-    Position: -866.6283, -64.25401, -323.2835
+    Position: -3467.727, -1702.592, -1689
+    Rotation: 0.3929888, 0.20089787, 2.5830872
 - MutagenObjectType: PlacedObject
   FormKey: 0C905D:Skyrim.esm
   Base: 03AC21:Skyrim.esm
@@ -69,18 +77,10 @@ Temporary:
     Position: -774.60925, -479.54117, -897.13684
     Rotation: 0, 0, 2.899999
 - MutagenObjectType: PlacedObject
-  FormKey: 05844F:Skyrim.esm
-  Base: 03AC21:Skyrim.esm
-  Lock:
-    Level: Novice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 019183:Skyrim.esm
-  EnableParent:
-    Reference: 0C867A:Skyrim.esm
-    Unknown: 0x000000
+  FormKey: 0C6AE4:Requiem.esp
+  Base: 0C6ADC:Requiem.esp
+  RagdollData: 0x00FFB734000000000000000000000000360CC9BF9640D73D07F048400000003F80FE154000008039000000B827AB3735639282371EF9C93F
   Placement:
-    Position: -3467.727, -1702.592, -1689
-    Rotation: 0.3929888, 0.20089787, 2.5830872
+    Position: -866.6283, -64.25401, -323.2835
 MajorFlags:
 - 0x40000

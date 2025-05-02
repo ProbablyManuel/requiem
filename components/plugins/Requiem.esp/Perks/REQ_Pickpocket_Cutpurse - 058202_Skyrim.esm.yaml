@@ -22,6 +22,30 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 20
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDetectedConditionData
+        TargetNpc: 000014:Skyrim.esm
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0914EF:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPickpocketChance
+  PerkConditionTabCount: 3
+  Value: 100
+- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 100
   Conditions:
   - Conditions:
@@ -46,27 +70,3 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Add
   Value: 40
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 20
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: WornHasKeywordConditionData
-        Keyword: 06BBD2:Skyrim.esm
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetDetectedConditionData
-        TargetNpc: 000014:Skyrim.esm
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 0914EF:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModPickpocketChance
-  PerkConditionTabCount: 3
-  Value: 100

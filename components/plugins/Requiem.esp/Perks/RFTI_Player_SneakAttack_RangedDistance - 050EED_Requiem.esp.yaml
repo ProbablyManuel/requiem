@@ -14,7 +14,7 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 10
+  Priority: 1
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -22,7 +22,7 @@ Effects:
       Data:
         MutagenObjectType: GetActorValueConditionData
         ActorValue: Archery
-      ComparisonValue: 100
+      ComparisonValue: 10
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
@@ -37,203 +37,7 @@ Effects:
       Data:
         MutagenObjectType: GetDistanceConditionData
         Target: 000014:Skyrim.esm
-      ComparisonValue: 5888
-  EntryPoint: ModSneakAttackMult
-  PerkConditionTabCount: 3
-  Value: 1
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 9
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: Archery
-      ComparisonValue: 90
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThanOrEqualTo
-      Data:
-        MutagenObjectType: GetDistanceConditionData
-        Target: 000014:Skyrim.esm
-      ComparisonValue: 5376
-  EntryPoint: ModSneakAttackMult
-  PerkConditionTabCount: 3
-  Value: 1
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 8
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: Archery
-      ComparisonValue: 80
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThanOrEqualTo
-      Data:
-        MutagenObjectType: GetDistanceConditionData
-        Target: 000014:Skyrim.esm
-      ComparisonValue: 4864
-  EntryPoint: ModSneakAttackMult
-  PerkConditionTabCount: 3
-  Value: 1
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 7
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: Archery
-      ComparisonValue: 70
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThanOrEqualTo
-      Data:
-        MutagenObjectType: GetDistanceConditionData
-        Target: 000014:Skyrim.esm
-      ComparisonValue: 4352
-  EntryPoint: ModSneakAttackMult
-  PerkConditionTabCount: 3
-  Value: 1
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 6
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: Archery
-      ComparisonValue: 60
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThanOrEqualTo
-      Data:
-        MutagenObjectType: GetDistanceConditionData
-        Target: 000014:Skyrim.esm
-      ComparisonValue: 3840
-  EntryPoint: ModSneakAttackMult
-  PerkConditionTabCount: 3
-  Value: 1
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 5
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: Archery
-      ComparisonValue: 50
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThanOrEqualTo
-      Data:
-        MutagenObjectType: GetDistanceConditionData
-        Target: 000014:Skyrim.esm
-      ComparisonValue: 3328
-  EntryPoint: ModSneakAttackMult
-  PerkConditionTabCount: 3
-  Value: 1
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 4
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: Archery
-      ComparisonValue: 40
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThanOrEqualTo
-      Data:
-        MutagenObjectType: GetDistanceConditionData
-        Target: 000014:Skyrim.esm
-      ComparisonValue: 2816
-  EntryPoint: ModSneakAttackMult
-  PerkConditionTabCount: 3
-  Value: 1
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 3
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: Archery
-      ComparisonValue: 30
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThanOrEqualTo
-      Data:
-        MutagenObjectType: GetDistanceConditionData
-        Target: 000014:Skyrim.esm
-      ComparisonValue: 2304
+      ComparisonValue: 1280
   EntryPoint: ModSneakAttackMult
   PerkConditionTabCount: 3
   Value: 1
@@ -266,7 +70,7 @@ Effects:
   PerkConditionTabCount: 3
   Value: 1
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
+  Priority: 3
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -274,7 +78,7 @@ Effects:
       Data:
         MutagenObjectType: GetActorValueConditionData
         ActorValue: Archery
-      ComparisonValue: 10
+      ComparisonValue: 30
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
@@ -289,7 +93,203 @@ Effects:
       Data:
         MutagenObjectType: GetDistanceConditionData
         Target: 000014:Skyrim.esm
-      ComparisonValue: 1280
+      ComparisonValue: 2304
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 4
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: Archery
+      ComparisonValue: 40
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetDistanceConditionData
+        Target: 000014:Skyrim.esm
+      ComparisonValue: 2816
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 5
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: Archery
+      ComparisonValue: 50
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetDistanceConditionData
+        Target: 000014:Skyrim.esm
+      ComparisonValue: 3328
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 6
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: Archery
+      ComparisonValue: 60
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetDistanceConditionData
+        Target: 000014:Skyrim.esm
+      ComparisonValue: 3840
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 7
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: Archery
+      ComparisonValue: 70
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetDistanceConditionData
+        Target: 000014:Skyrim.esm
+      ComparisonValue: 4352
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 8
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: Archery
+      ComparisonValue: 80
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetDistanceConditionData
+        Target: 000014:Skyrim.esm
+      ComparisonValue: 4864
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 9
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: Archery
+      ComparisonValue: 90
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetDistanceConditionData
+        Target: 000014:Skyrim.esm
+      ComparisonValue: 5376
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: Archery
+      ComparisonValue: 100
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetDistanceConditionData
+        Target: 000014:Skyrim.esm
+      ComparisonValue: 5888
   EntryPoint: ModSneakAttackMult
   PerkConditionTabCount: 3
   Value: 1

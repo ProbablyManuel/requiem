@@ -10,89 +10,24 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 55
   Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsDualCastingConditionData
-      ComparisonValue: 1
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C6:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.85
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 54
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsDualCastingConditionData
-      ComparisonValue: 1
-  - RunOnTabIndex: 1
-    Conditions:
+        MutagenObjectType: IsInListConditionData
+        FormList: A14CC1:Requiem.esp
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C5:Skyrim.esm
+        Perk: 0F2CA9:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: ModSpellCost
+  EntryPoint: CanDualCastSpell
   PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.8
+  Value: 1
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 53
+  Priority: 1
   Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsDualCastingConditionData
-      ComparisonValue: 1
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C4:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.75
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 52
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsDualCastingConditionData
-      ComparisonValue: 1
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C3:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.7
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 51
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsDualCastingConditionData
-      ComparisonValue: 1
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
@@ -103,54 +38,14 @@ Effects:
   EntryPoint: ModSpellCost
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.65
+  Value: 0.45
+- MutagenObjectType: PerkQuestEffect
+  Priority: 11
+  Quest: 63149E:Requiem.esp
+  Stage: 100
+  Unknown: 0x000000
 - MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 23
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 0C44C3:Skyrim.esm
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C3:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C4:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C5:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C6:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
-  EntryPoint: ModSpellDuration
-  PerkConditionTabCount: 3
-  ActorValue: Illusion
-  Value: 0.01
-  Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 22
+  Priority: 20
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -162,8 +57,8 @@ Effects:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
-  EntryPoint: ModSpellDuration
+        Keyword: 3FCA4C:Requiem.esp
+  EntryPoint: ModSpellMagnitude
   PerkConditionTabCount: 3
   ActorValue: Illusion
   Value: 0.01
@@ -214,7 +109,7 @@ Effects:
   Value: 0.01
   Modification: MultiplyOnePlusAVMult
 - MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 20
+  Priority: 22
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -226,20 +121,65 @@ Effects:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: 3FCA4C:Requiem.esp
-  EntryPoint: ModSpellMagnitude
+        Keyword: 412EDF:Requiem.esp
+  EntryPoint: ModSpellDuration
   PerkConditionTabCount: 3
   ActorValue: Illusion
   Value: 0.01
   Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkQuestEffect
-  Priority: 11
-  Quest: 63149E:Requiem.esp
-  Stage: 100
-  Unknown: 0x000000
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 23
   Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C44C3:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C3:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C4:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C5:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C6:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 412EDF:Requiem.esp
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  ActorValue: Illusion
+  Value: 0.01
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 51
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsDualCastingConditionData
+      ComparisonValue: 1
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
@@ -250,20 +190,80 @@ Effects:
   EntryPoint: ModSpellCost
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.45
+  Value: 0.65
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 52
   Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsDualCastingConditionData
+      ComparisonValue: 1
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: IsInListConditionData
-        FormList: A14CC1:Requiem.esp
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C3:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.7
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 53
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsDualCastingConditionData
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0F2CA9:Skyrim.esm
+        Perk: 0C44C4:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: CanDualCastSpell
+  EntryPoint: ModSpellCost
   PerkConditionTabCount: 2
-  Value: 1
+  Modification: Multiply
+  Value: 0.75
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 54
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsDualCastingConditionData
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C5:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.8
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 55
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsDualCastingConditionData
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C6:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.85

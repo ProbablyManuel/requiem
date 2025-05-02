@@ -8,20 +8,17 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 12
+  Priority: 10
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 058205:Skyrim.esm
-  - RunOnTabIndex: 1
-    Conditions:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3A3D:Requiem.esp
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3ADC:Requiem.esp
-      ComparisonValue: 1
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0BE124:Skyrim.esm
   EntryPoint: ModPickpocketChance
   PerkConditionTabCount: 3
   Value: 0
@@ -44,17 +41,20 @@ Effects:
   PerkConditionTabCount: 3
   Value: 0
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 10
+  Priority: 12
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3A3D:Requiem.esp
+        MutagenObjectType: HasPerkConditionData
+        Perk: 058205:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 0BE124:Skyrim.esm
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3ADC:Requiem.esp
+      ComparisonValue: 1
   EntryPoint: ModPickpocketChance
   PerkConditionTabCount: 3
   Value: 0

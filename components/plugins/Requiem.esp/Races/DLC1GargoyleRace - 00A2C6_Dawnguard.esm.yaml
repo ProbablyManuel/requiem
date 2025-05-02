@@ -88,11 +88,11 @@ SkeletalModel:
     File: Actors\WerewolfBeast\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 00F8AE:Dawnguard.esm
   Female: 013ADD:Skyrim.esm
@@ -111,6 +111,17 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackPowerStart_ForwardPowerAttack
 - AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 010F68:Dawnguard.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 45
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_ForwardPowerDash
+- AttackData:
     DamageMult: 1.5
     Chance: 1
     Spell: 011A1A:Dawnguard.esm
@@ -124,14 +135,10 @@ Attacks:
 - AttackData:
     DamageMult: 1
     Chance: 1
-    Spell: 010F68:Dawnguard.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 45
-    Stagger: 1
-    AttackType: 0914E6:Skyrim.esm
+    Spell: 011A1A:Dawnguard.esm
+    StrikeAngle: 50
     StaminaMult: 1
-  AttackEvent: attackPowerStart_ForwardPowerDash
+  AttackEvent: attackStart_attackL
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -139,13 +146,6 @@ Attacks:
     StrikeAngle: 50
     StaminaMult: 1
   AttackEvent: attackStart_attackR
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 011A1A:Dawnguard.esm
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: attackStart_attackL
 BodyData:
   Male:
     Index: BodyTexture

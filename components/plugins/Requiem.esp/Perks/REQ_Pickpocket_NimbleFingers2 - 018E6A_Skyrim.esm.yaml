@@ -16,6 +16,18 @@ NumRanks: 5
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDetectedConditionData
+        TargetNpc: 000014:Skyrim.esm
+  EntryPoint: ShouldApplyPlacedItem
+  PerkConditionTabCount: 3
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 100
   Conditions:
   - Conditions:
@@ -33,15 +45,3 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Add
   Value: 40
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetDetectedConditionData
-        TargetNpc: 000014:Skyrim.esm
-  EntryPoint: ShouldApplyPlacedItem
-  PerkConditionTabCount: 3
-  Value: 1

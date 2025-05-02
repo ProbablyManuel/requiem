@@ -21,16 +21,16 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 0AF66A:Skyrim.esm
+- MutagenObjectType: PerkQuestEffect
+  Priority: 1
+  Quest: 0ABD94:Skyrim.esm
+  Stage: 10
+  Unknown: 0x000000
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 100
   EntryPoint: ModSellPrices
   PerkConditionTabCount: 2
   Modification: Multiply
   Value: 1.15
-- MutagenObjectType: PerkQuestEffect
-  Priority: 1
-  Quest: 0ABD94:Skyrim.esm
-  Stage: 10
-  Unknown: 0x000000
-- MutagenObjectType: PerkAbilityEffect
-  Ability: 0AF66A:Skyrim.esm

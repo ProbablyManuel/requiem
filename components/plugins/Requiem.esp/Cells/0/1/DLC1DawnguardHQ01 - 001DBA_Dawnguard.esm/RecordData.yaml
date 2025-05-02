@@ -48,6 +48,18 @@ Music: 06D542:Skyrim.esm
 ImageSpace: 09F363:Skyrim.esm
 Persistent:
 - MutagenObjectType: PlacedObject
+  FormKey: 012907:Dawnguard.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x00491334000080B60000803500000000000000800000008083FA9FB5
+  LeveledItemBaseObject: 0165B9:Skyrim.esm
+  LocationReference: 0128FE:Dawnguard.esm
+  Placement:
+    Position: -1257.6936, 871.5087, -47.17962
+    Rotation: 1.5707964, 0.28340134, 3.1415927
+- MutagenObjectType: PlacedObject
   FormKey: 01290A:Dawnguard.esm
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
@@ -61,18 +73,6 @@ Persistent:
   Placement:
     Position: -2203.9463, 495.33823, 574.9792
     Rotation: 1.570798, 1.5499763, 3.1415944
-- MutagenObjectType: PlacedObject
-  FormKey: 012907:Dawnguard.esm
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: AD3746:Requiem.esp
-  RagdollData: 0x00491334000080B60000803500000000000000800000008083FA9FB5
-  LeveledItemBaseObject: 0165B9:Skyrim.esm
-  LocationReference: 0128FE:Dawnguard.esm
-  Placement:
-    Position: -1257.6936, 871.5087, -47.17962
-    Rotation: 1.5707964, 0.28340134, 3.1415927
 Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 00B5E5:Dawnguard.esm
@@ -82,6 +82,13 @@ Temporary:
   Placement:
     Position: -3487.788, 134.38452, -38
     Rotation: 0, 0, 0.7750082
+- MutagenObjectType: PlacedObject
+  FormKey: 00FEB2:Dawnguard.esm
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x00082E36000000000000000000000000969919BD93F4C9BC77F442BF
+  LocationReference: 0128FE:Dawnguard.esm
+  Placement:
+    Position: -1532.6134, 748.2092, -76.76496
 - MutagenObjectType: PlacedObject
   FormKey: 010285:Dawnguard.esm
   Version2: 2
@@ -105,13 +112,6 @@ Temporary:
   Placement:
     Position: -4142.737, 427.5857, -131.23285
     Rotation: 3.166912, 0.033002432, 5.383608
-- MutagenObjectType: PlacedObject
-  FormKey: 00FEB2:Dawnguard.esm
-  Base: AD3746:Requiem.esp
-  RagdollData: 0x00082E36000000000000000000000000969919BD93F4C9BC77F442BF
-  LocationReference: 0128FE:Dawnguard.esm
-  Placement:
-    Position: -1532.6134, 748.2092, -76.76496
 - MutagenObjectType: PlacedObject
   FormKey: 0146A6:Dawnguard.esm
   Base: AD3746:Requiem.esp

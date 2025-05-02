@@ -81,23 +81,17 @@ SkeletalModel:
     File: Actors\IceWraith\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F236:Skyrim.esm
   Female: 013ADD:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackRtoL
 - AttackData:
     DamageMult: 1.25
     Chance: 0.5
@@ -109,12 +103,6 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackPowerStart_GroundDive
 - AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackLtoR
-- AttackData:
     DamageMult: 1.25
     Chance: 0.5
     Spell: 0A26F4:Skyrim.esm
@@ -124,6 +112,18 @@ Attacks:
     Stagger: 0.25
     StaminaMult: 1
   AttackEvent: attackPowerStart_PowerAttack
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLtoR
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRtoL
 BodyData:
   Male:
     Index: BodyTexture

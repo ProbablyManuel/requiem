@@ -36,47 +36,47 @@ Voice: 09843A:Skyrim.esm
 Template: 0551AD:Skyrim.esm
 Race: 013741:Skyrim.esm
 ActorEffect:
-- 101060:Skyrim.esm
-- 07231A:Skyrim.esm
 - 02B96C:Skyrim.esm
-- 10105F:Skyrim.esm
-- 07231C:Skyrim.esm
 - 072316:Skyrim.esm
+- 07231A:Skyrim.esm
+- 07231C:Skyrim.esm
+- 10105F:Skyrim.esm
+- 101060:Skyrim.esm
 - 101066:Skyrim.esm
 Perks:
-- Perk: 0581F8:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0D7999:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
 - Perk: 053128:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0581DD:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 068BCC:Skyrim.esm
+- Perk: 0581F5:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 0581F5:Skyrim.esm
+- Perk: 0581F8:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0581F9:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
+- Perk: 068BCC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
 Items:
-- Item:
-    Item: 10FAD3:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 10FACD:Skyrim.esm
-    Count: 1
 - Item:
     Item: 044CD6:Skyrim.esm
     Count: 1
 - Item:
     Item: 0E0FD7:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FACD:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FAD3:Skyrim.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -169,11 +169,11 @@ PlayerSkills:
   GearedUpWeapons: 1
   Unused2: 0x405AEF
 HeadParts:
-- 0F203C:Skyrim.esm
 - 02425E:Skyrim.esm
-- 0DFC04:Skyrim.esm
 - 0D2EBE:Skyrim.esm
+- 0DFC04:Skyrim.esm
 - 0E4E2B:Skyrim.esm
+- 0F203C:Skyrim.esm
 HairColor: 0A0438:Skyrim.esm
 CombatStyle: 044CD0:Skyrim.esm
 NAM5: 255
@@ -213,6 +213,10 @@ TintLayers:
   Color: '#002F2013'
   InterpolationValue: 1
   Preset: 100
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 631
 - Index: 9
   Color: '#00112D33'
   InterpolationValue: 0.42
@@ -233,6 +237,14 @@ TintLayers:
   Color: '#00FDFDFD'
   InterpolationValue: 0.7
   Preset: 345
+- Index: 39
+  Color: '#002F2013'
+  InterpolationValue: 0
+  Preset: 637
+- Index: 58
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 642
 - Index: 62
   Color: '#00000000'
   InterpolationValue: 0.76
@@ -245,17 +257,5 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 487
-- Index: 5
-  Color: '#00000000'
-  InterpolationValue: 1
-  Preset: 631
-- Index: 39
-  Color: '#002F2013'
-  InterpolationValue: 0
-  Preset: 637
-- Index: 58
-  Color: '#002F2013'
-  InterpolationValue: 1
-  Preset: 642
 MajorFlags:
 - 0x40000

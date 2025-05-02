@@ -53,34 +53,6 @@ Music: 094BDD:Skyrim.esm
 ImageSpace: 089770:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 007052:Dawnguard.esm
-  Version2: 1
-  Base: 020650:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 004D6D:Dawnguard.esm
-  Placement:
-    Position: -348.13632, 3000.7253, 192.8185
-    Rotation: 0.15814199, 0.10972668, 1.9674221
-- MutagenObjectType: PlacedNpc
-  FormKey: 6769AB:Requiem.esp
-  Base: 38AA95:Requiem.esp
-  PersistentLocation: 004D6D:Dawnguard.esm
-  Placement:
-    Position: 2720.021, 8942.984, 2350.5273
-    Rotation: 0, 0, 2.3561945
-- MutagenObjectType: PlacedObject
-  FormKey: 0A60B1:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 0A116A:Requiem.esp
-  Placement:
-    Position: 2346.7275, 10579.842, 2429.5813
-    Rotation: -0.0016437392, 0.0003601184, 3.088999
-- MutagenObjectType: PlacedObject
   FormKey: 00199C:Dawnguard.esm
   Version2: 2
   Base: 03AC21:Skyrim.esm
@@ -92,6 +64,29 @@ Temporary:
   Placement:
     Position: -6743.4863, -1803.9331, 1276.8275
     Rotation: 0.052898515, -0.17407648, 2.615757
+- MutagenObjectType: PlacedObject
+  FormKey: 0038EC:Dawnguard.esm
+  Base: 02069A:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004D6D:Dawnguard.esm
+  Placement:
+    Position: 3892.6604, -7327.429, 1383.7169
+    Rotation: 6.215091, 6.1885014, 2.5078251
+- MutagenObjectType: PlacedObject
+  FormKey: 007052:Dawnguard.esm
+  Version2: 1
+  Base: 020650:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 004D6D:Dawnguard.esm
+  Placement:
+    Position: -348.13632, 3000.7253, 192.8185
+    Rotation: 0.15814199, 0.10972668, 1.9674221
 - MutagenObjectType: PlacedObject
   FormKey: 00E0B6:Dawnguard.esm
   Version2: 1
@@ -105,16 +100,6 @@ Temporary:
     Position: 2514.3213, 10572.218, 2457.202
     Rotation: -1.5707773, 0.4537856, 2.5749207E-05
 - MutagenObjectType: PlacedObject
-  FormKey: 0A60B3:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 00D0D5:Dawnguard.esm
-  RagdollData: 0x000F0000000000000000000000000000556991BE913DD73E918788BE
-  Placement:
-    Position: 2248.5806, 10541.798, 2435.3682
-    Rotation: 0, -0, 5.8
-- MutagenObjectType: PlacedObject
   FormKey: 00E0B8:Dawnguard.esm
   Base: 020652:Skyrim.esm
   Lock:
@@ -126,15 +111,30 @@ Temporary:
     Position: 2300.767, 10606.474, 2417.2983
     Rotation: 0, 0, 5.971386
 - MutagenObjectType: PlacedObject
-  FormKey: 0038EC:Dawnguard.esm
-  Base: 02069A:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 004D6D:Dawnguard.esm
+  FormKey: 0A60B1:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0A116A:Requiem.esp
   Placement:
-    Position: 3892.6604, -7327.429, 1383.7169
-    Rotation: 6.215091, 6.1885014, 2.5078251
+    Position: 2346.7275, 10579.842, 2429.5813
+    Rotation: -0.0016437392, 0.0003601184, 3.088999
+- MutagenObjectType: PlacedObject
+  FormKey: 0A60B3:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 00D0D5:Dawnguard.esm
+  RagdollData: 0x000F0000000000000000000000000000556991BE913DD73E918788BE
+  Placement:
+    Position: 2248.5806, 10541.798, 2435.3682
+    Rotation: 0, -0, 5.8
+- MutagenObjectType: PlacedNpc
+  FormKey: 6769AB:Requiem.esp
+  Base: 38AA95:Requiem.esp
+  PersistentLocation: 004D6D:Dawnguard.esm
+  Placement:
+    Position: 2720.021, 8942.984, 2350.5273
+    Rotation: 0, 0, 2.3561945
 MajorFlags:
 - 0x40000

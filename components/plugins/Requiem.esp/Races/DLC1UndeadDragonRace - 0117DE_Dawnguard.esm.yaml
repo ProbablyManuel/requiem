@@ -92,17 +92,32 @@ SkeletalModel:
     File: Actors\Dragon\Character Assets\Skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 02992B:Skyrim.esm
   Female: 02992B:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    StrikeAngle: 25
+    Stagger: 1.5
+    StaminaMult: 1
+  AttackEvent: attackStartBite
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    AttackAngle: -25
+    StrikeAngle: 25
+    Stagger: 1.5
+    StaminaMult: 1
+  AttackEvent: attackStartBiteLeft
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -121,14 +136,14 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStartTail
 - AttackData:
-    DamageMult: 1
+    DamageMult: 1.5
     Chance: 1
-    AttackAngle: 90
-    StrikeAngle: 35
-    Stagger: 0.75
-    RecoveryTime: 1
+    Spell: 039D42:Skyrim.esm
+    AttackAngle: -135
+    StrikeAngle: 30
+    Stagger: 0.5
     StaminaMult: 1
-  AttackEvent: attackStartWingRight
+  AttackEvent: attackStartTailLeft
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -139,14 +154,6 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStartTailRight
 - AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    AttackAngle: -25
-    StrikeAngle: 25
-    Stagger: 1.5
-    StaminaMult: 1
-  AttackEvent: attackStartBiteLeft
-- AttackData:
     DamageMult: 1
     Chance: 1
     AttackAngle: -90
@@ -156,21 +163,14 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStartWingLeft
 - AttackData:
-    DamageMult: 1.5
+    DamageMult: 1
     Chance: 1
-    StrikeAngle: 25
-    Stagger: 1.5
+    AttackAngle: 90
+    StrikeAngle: 35
+    Stagger: 0.75
+    RecoveryTime: 1
     StaminaMult: 1
-  AttackEvent: attackStartBite
-- AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Spell: 039D42:Skyrim.esm
-    AttackAngle: -135
-    StrikeAngle: 30
-    Stagger: 0.5
-    StaminaMult: 1
-  AttackEvent: attackStartTailLeft
+  AttackEvent: attackStartWingRight
 BodyData:
   Male:
     Index: BodyTexture

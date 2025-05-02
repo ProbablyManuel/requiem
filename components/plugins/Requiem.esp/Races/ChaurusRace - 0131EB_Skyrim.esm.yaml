@@ -86,23 +86,17 @@ SkeletalModel:
     File: Actors\Chaurus\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F152:Skyrim.esm
   Female: 01F152:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_Bite1
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -116,26 +110,25 @@ Attacks:
 - AttackData:
     DamageMult: 1
     Chance: 1
-    Spell: 0B8781:Skyrim.esm
-    Flags:
-    - RotatingAttack
-    AttackAngle: 90
-    StrikeAngle: 45
+    StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: AttackStart_RightSide
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B8781:Skyrim.esm
-    AttackAngle: 45
-    StrikeAngle: 60
-    StaminaMult: 1
-  AttackEvent: AttackStart_RightChop
+  AttackEvent: attackStart_Bite1
 - AttackData:
     DamageMult: 1
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: attackStart_Bite2
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    AttackAngle: 35
+    StrikeAngle: 35
+    Stagger: 0.25
+    RecoveryTime: 3
+    StaminaMult: 1
+  AttackEvent: AttackStart_ComboChop
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -151,16 +144,6 @@ Attacks:
     StrikeAngle: 60
     StaminaMult: 1
   AttackEvent: AttackStart_LeftChop
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Flags:
-    - BashAttack
-    AttackAngle: 45
-    StrikeAngle: 60
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: AttackStart_LHeadBash
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -180,7 +163,7 @@ Attacks:
     StrikeAngle: 60
     Stagger: 0.25
     StaminaMult: 1
-  AttackEvent: AttackStart_RHeadBash
+  AttackEvent: AttackStart_LHeadBash
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -189,16 +172,33 @@ Attacks:
     StaminaMult: 1
   AttackEvent: AttackStart_RBite3
 - AttackData:
-    DamageMult: 1.5
+    DamageMult: 1
     Chance: 1
     Flags:
-    - PowerAttack
-    AttackAngle: 35
-    StrikeAngle: 35
+    - BashAttack
+    AttackAngle: 45
+    StrikeAngle: 60
     Stagger: 0.25
-    RecoveryTime: 3
     StaminaMult: 1
-  AttackEvent: AttackStart_ComboChop
+  AttackEvent: AttackStart_RHeadBash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B8781:Skyrim.esm
+    AttackAngle: 45
+    StrikeAngle: 60
+    StaminaMult: 1
+  AttackEvent: AttackStart_RightChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B8781:Skyrim.esm
+    Flags:
+    - RotatingAttack
+    AttackAngle: 90
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: AttackStart_RightSide
 BodyData:
   Male:
     Index: BodyTexture

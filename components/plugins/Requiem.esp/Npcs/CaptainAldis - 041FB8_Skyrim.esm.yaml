@@ -28,28 +28,28 @@ Configuration:
   CalcMaxLevel: 15
   SpeedMultiplier: 100
 Factions:
+- Faction: 01C9FC:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 02817C:Skyrim.esm
+  Fluff: 0x000000
 - Faction: 029DB0:Skyrim.esm
   Fluff: 0x000000
 - Faction: 02BF9A:Skyrim.esm
   Fluff: 0x000000
-- Faction: 01C9FC:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 0CA43B:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 02817C:Skyrim.esm
   Fluff: 0x000000
 Voice: 0E5003:Skyrim.esm
 Race: 013746:Skyrim.esm
 Items:
 - Item:
-    Item: 01397F:Skyrim.esm
-    Count: 10
+    Item: 01359D:Skyrim.esm
+    Count: 1
 - Item:
     Item: 013841:Skyrim.esm
     Count: 1
 - Item:
-    Item: 01359D:Skyrim.esm
-    Count: 1
+    Item: 01397F:Skyrim.esm
+    Count: 10
 AIData:
   Aggression: Aggressive
   Confidence: Foolhardy
@@ -149,11 +149,11 @@ PlayerSkills:
   Unused: 16743
   Unused2: 0x405AEF
 HeadParts:
-- 0C710A:Skyrim.esm
-- 0514B8:Skyrim.esm
-- 0D2EA2:Skyrim.esm
 - 024259:Skyrim.esm
+- 0514B8:Skyrim.esm
 - 08555F:Skyrim.esm
+- 0C710A:Skyrim.esm
+- 0D2EA2:Skyrim.esm
 HairColor: 0A0434:Skyrim.esm
 NAM5: 255
 Height: 1
@@ -205,6 +205,14 @@ TintLayers:
   Color: '#001A4957'
   InterpolationValue: 0
   Preset: 188
+- Index: 23
+  Color: '#001A4957'
+  InterpolationValue: 0
+  Preset: 356
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 587
 - Index: 37
   Color: '#001A4957'
   InterpolationValue: 0
@@ -229,10 +237,6 @@ TintLayers:
   Color: '#001A4957'
   InterpolationValue: 0
   Preset: 332
-- Index: 23
-  Color: '#001A4957'
-  InterpolationValue: 0
-  Preset: 356
 - Index: 43
   Color: '#001A4957'
   InterpolationValue: 0
@@ -257,10 +261,6 @@ TintLayers:
   Color: '#001A4957'
   InterpolationValue: 0
   Preset: 500
-- Index: 25
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: 587
 - Index: 67
   Color: '#00000000'
   InterpolationValue: 0.42

@@ -21,19 +21,17 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
+- MutagenObjectType: PerkQuestEffect
+  Priority: 1
+  Quest: 05F596:Skyrim.esm
+  Stage: 60
+  Unknown: 0x000000
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 103
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: SameSexAsPCConditionData
-        FirstUnusedIntParameter: 1
-  EntryPoint: ModBuyPrices
+  Priority: 100
+  EntryPoint: ModPlayerIntimidation
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.9
+  Value: 3
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 102
   Conditions:
@@ -48,13 +46,15 @@ Effects:
   Modification: Multiply
   Value: 1.1
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 100
-  EntryPoint: ModPlayerIntimidation
+  Priority: 103
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: SameSexAsPCConditionData
+        FirstUnusedIntParameter: 1
+  EntryPoint: ModBuyPrices
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 3
-- MutagenObjectType: PerkQuestEffect
-  Priority: 1
-  Quest: 05F596:Skyrim.esm
-  Stage: 60
-  Unknown: 0x000000
+  Value: 0.9

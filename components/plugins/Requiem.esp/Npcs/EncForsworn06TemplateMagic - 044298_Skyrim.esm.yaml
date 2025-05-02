@@ -38,46 +38,46 @@ Template: 043BDC:Skyrim.esm
 Race: 013741:Skyrim.esm
 ActorEffect:
 - 02DD29:Skyrim.esm
-- 0BB96B:Skyrim.esm
-- 10F7F8:Skyrim.esm
-- 07231B:Skyrim.esm
-- 0BB968:Skyrim.esm
 - 0400AD:Skyrim.esm
 - 072317:Skyrim.esm
+- 07231B:Skyrim.esm
+- 0BB968:Skyrim.esm
+- 0BB96B:Skyrim.esm
 - 0F95EB:Skyrim.esm
 - 0F95EF:Skyrim.esm
+- 10F7F8:Skyrim.esm
 Perks:
-- Perk: 051B1B:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 053129:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0CB419:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 058200:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0CB41A:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
 - Perk: 0153CF:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0153D2:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
+- Perk: 051B1B:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 053129:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
 - Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 058200:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 068BCC:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 10FCFA:Skyrim.esm
+- Perk: 0CB419:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB41A:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0F3F0E:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 10FCFA:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 Items:
@@ -181,8 +181,8 @@ PlayerSkills:
 HeadParts:
 - 051080:Skyrim.esm
 - 051403:Skyrim.esm
-- 0D2EA8:Skyrim.esm
 - 08555F:Skyrim.esm
+- 0D2EA8:Skyrim.esm
 HairColor: 0A0433:Skyrim.esm
 CombatStyle: 03BE1C:Skyrim.esm
 NAM5: 255
@@ -267,6 +267,10 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 367
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 635
 - Index: 60
   Color: '#00000000'
   InterpolationValue: 0
@@ -303,9 +307,5 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0.76
   Preset: 583
-- Index: 39
-  Color: '#00000000'
-  InterpolationValue: 1
-  Preset: 635
 MajorFlags:
 - 0x40000

@@ -7,20 +7,6 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 103
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsWeaponSkillTypeConditionData
-        ActorValue: Archery
-      ComparisonValue: 1
-  EntryPoint: ModAttackDamage
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 0.9
-- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 102
   Conditions:
   - RunOnTabIndex: 1
@@ -41,3 +27,17 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 103
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: Archery
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.9

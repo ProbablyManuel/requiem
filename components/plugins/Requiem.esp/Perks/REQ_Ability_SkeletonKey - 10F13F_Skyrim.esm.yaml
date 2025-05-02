@@ -19,10 +19,10 @@ NumRanks: 1
 Playable: True
 Hidden: True
 Effects:
-- MutagenObjectType: PerkAbilityEffect
-  Priority: 1
-  Ability: AD3889:Requiem.esp
 - MutagenObjectType: PerkEntryPointModifyValue
   EntryPoint: MakeLockpicksUnbreakable
   PerkConditionTabCount: 1
   Value: 1
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD3889:Requiem.esp

@@ -9,12 +9,64 @@ Description:
 NumRanks: 1
 Playable: True
 Effects:
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 113
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 101
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: IsPowerAttackingConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: TwoHandedModifier
+      ComparisonValue: 80
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ModTargetDamageResistance
+  PerkConditionTabCount: 3
+  ActorValue: TwoHandedModifier
+  Value: -0.01
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 102
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsPowerAttackingConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: OneHandedModifier
+      ComparisonValue: 80
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: OneHanded
+      ComparisonValue: 1
+  EntryPoint: ModTargetDamageResistance
+  PerkConditionTabCount: 3
+  ActorValue: OneHandedModifier
+  Value: -0.01
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 103
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThanOrEqualTo
       Data:
         MutagenObjectType: GetActorValueConditionData
         ActorValue: MarksmanModifier
@@ -25,6 +77,32 @@ Effects:
       Data:
         MutagenObjectType: IsWeaponSkillTypeConditionData
         ActorValue: Archery
+      ComparisonValue: 1
+  EntryPoint: ModTargetDamageResistance
+  PerkConditionTabCount: 3
+  ActorValue: MarksmanModifier
+  Value: -0.01
+  Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 111
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsPowerAttackingConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThan
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: TwoHandedModifier
+      ComparisonValue: 80
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
       ComparisonValue: 1
   EntryPoint: ModTargetDamageResistance
   PerkConditionTabCount: 3
@@ -56,36 +134,11 @@ Effects:
   Modification: Multiply
   Value: 0.2
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 111
+  Priority: 113
   Conditions:
   - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsPowerAttackingConditionData
-      ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       CompareOperator: GreaterThan
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: TwoHandedModifier
-      ComparisonValue: 80
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsWeaponSkillTypeConditionData
-        ActorValue: TwoHanded
-      ComparisonValue: 1
-  EntryPoint: ModTargetDamageResistance
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 0.2
-- MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 103
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThanOrEqualTo
       Data:
         MutagenObjectType: GetActorValueConditionData
         ActorValue: MarksmanModifier
@@ -99,58 +152,5 @@ Effects:
       ComparisonValue: 1
   EntryPoint: ModTargetDamageResistance
   PerkConditionTabCount: 3
-  ActorValue: MarksmanModifier
-  Value: -0.01
-  Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 102
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsPowerAttackingConditionData
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThanOrEqualTo
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: OneHandedModifier
-      ComparisonValue: 80
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsWeaponSkillTypeConditionData
-        ActorValue: OneHanded
-      ComparisonValue: 1
-  EntryPoint: ModTargetDamageResistance
-  PerkConditionTabCount: 3
-  ActorValue: OneHandedModifier
-  Value: -0.01
-  Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 101
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsPowerAttackingConditionData
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThanOrEqualTo
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: TwoHandedModifier
-      ComparisonValue: 80
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsWeaponSkillTypeConditionData
-        ActorValue: TwoHanded
-      ComparisonValue: 1
-  EntryPoint: ModTargetDamageResistance
-  PerkConditionTabCount: 3
-  ActorValue: TwoHandedModifier
-  Value: -0.01
-  Modification: MultiplyOnePlusAVMult
+  Modification: Multiply
+  Value: 0.2

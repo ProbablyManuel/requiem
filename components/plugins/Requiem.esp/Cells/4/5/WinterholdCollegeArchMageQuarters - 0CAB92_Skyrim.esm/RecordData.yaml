@@ -46,21 +46,17 @@ Music: 01BA72:Skyrim.esm
 ImageSpace: 059B60:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 077D06:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  EditorID: PlayerArchMageRobeRef
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 07C932:Skyrim.esm
+  FormKey: 077CEB:Skyrim.esm
+  Version2: 1
+  Base: 0800E0:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
   LocationReference: 0D16E6:Skyrim.esm
-  EnableParent:
-    Reference: 000014:Skyrim.esm
-    Flags:
-    - SetEnableStateToOppositeOfParent
-    Unknown: 0x000000
   Placement:
-    Position: 227.05733, 426.79987, -30000
-    Rotation: 6.282475, 6.2800107, 0.23324056
+    Position: -239.86818, 403.48978, 0.29258347
+    Rotation: 0, -0, 4.2000036
 - MutagenObjectType: PlacedObject
   FormKey: 077D05:Skyrim.esm
   MajorRecordFlagsRaw: 2048
@@ -77,16 +73,20 @@ Temporary:
     Position: 354.2524, 737.8339, -30000
     Rotation: 6.2796946, 0.0054785884, 4.226596
 - MutagenObjectType: PlacedObject
-  FormKey: 077CEB:Skyrim.esm
-  Version2: 1
-  Base: 0800E0:Skyrim.esm
-  Lock:
-    Level: Master
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
+  FormKey: 077D06:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  EditorID: PlayerArchMageRobeRef
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 07C932:Skyrim.esm
   LocationReference: 0D16E6:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
   Placement:
-    Position: -239.86818, 403.48978, 0.29258347
-    Rotation: 0, -0, 4.2000036
+    Position: 227.05733, 426.79987, -30000
+    Rotation: 6.282475, 6.2800107, 0.23324056
 MajorFlags:
 - 0x40000

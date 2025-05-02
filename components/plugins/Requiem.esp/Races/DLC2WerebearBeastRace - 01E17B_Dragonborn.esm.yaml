@@ -92,11 +92,11 @@ SkeletalModel:
     File: Actors\WerewolfBeast\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F2E6:Skyrim.esm
   Female: 013ADD:Skyrim.esm
@@ -104,45 +104,27 @@ FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
 - AttackData:
-    DamageMult: 1.5
+    DamageMult: 0.3
     Chance: 1
+    Spell: 75CD1F:Requiem.esp
     Flags:
     - PowerAttack
     StrikeAngle: 50
-    Stagger: 1
+    Stagger: 0.5
     AttackType: 0914E5:Skyrim.esm
-    RecoveryTime: 10
-    StaminaMult: 1
-  AttackEvent: AttackStartLeftPower
-- AttackData:
-    DamageMult: 2
-    StrikeAngle: 50
-    RecoveryTime: 10
-    StaminaMult: 1
-  AttackEvent: AttackStartDualSprinting
-- AttackData:
-    DamageMult: 2
-    StrikeAngle: 50
-    Knockdown: 1
-    StaminaMult: 1
-  AttackEvent: AttackStartRightSprinting
-- AttackData:
-    DamageMult: 2
-    StrikeAngle: 50
-    Knockdown: 1
-    StaminaMult: 1
-  AttackEvent: AttackStartLeftSprinting
+    RecoveryTime: 20
+    StaminaMult: 3
+  AttackEvent: AttackStartBackHand
 - AttackData:
     DamageMult: 1.5
     Chance: 1
     Flags:
     - PowerAttack
     StrikeAngle: 50
-    Stagger: 1
-    AttackType: 0914E5:Skyrim.esm
-    RecoveryTime: 10
+    Stagger: 0.2
+    RecoveryTime: 15
     StaminaMult: 1
-  AttackEvent: attackStartRightPower
+  AttackEvent: AttackStartDual
 - AttackData:
     DamageMult: 2
     Chance: 1
@@ -150,6 +132,12 @@ Attacks:
     RecoveryTime: 20
     StaminaMult: 1
   AttackEvent: AttackStartDualRunning
+- AttackData:
+    DamageMult: 2
+    StrikeAngle: 50
+    RecoveryTime: 10
+    StaminaMult: 1
+  AttackEvent: AttackStartDualSprinting
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -165,12 +153,16 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStartLeft
 - AttackData:
-    DamageMult: 1
+    DamageMult: 1.5
     Chance: 1
+    Flags:
+    - PowerAttack
     StrikeAngle: 50
-    RecoveryTime: 1.3
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    RecoveryTime: 10
     StaminaMult: 1
-  AttackEvent: attackStartRight
+  AttackEvent: AttackStartLeftPower
 - AttackData:
     DamageMult: 1.3
     Chance: 1
@@ -186,19 +178,35 @@ Attacks:
 - AttackData:
     DamageMult: 1
     Chance: 1
-    AttackAngle: 45
-    StrikeAngle: 45
-    RecoveryTime: 10
-    StaminaMult: 1
-  AttackEvent: AttackStartRightSide
-- AttackData:
-    DamageMult: 1
-    Chance: 1
     AttackAngle: -45
     StrikeAngle: 45
     RecoveryTime: 10
     StaminaMult: 1
   AttackEvent: AttackStartLeftSide
+- AttackData:
+    DamageMult: 2
+    StrikeAngle: 50
+    Knockdown: 1
+    StaminaMult: 1
+  AttackEvent: AttackStartLeftSprinting
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 50
+    RecoveryTime: 1.3
+    StaminaMult: 1
+  AttackEvent: attackStartRight
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 50
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    RecoveryTime: 10
+    StaminaMult: 1
+  AttackEvent: attackStartRightPower
 - AttackData:
     DamageMult: 1.3
     Chance: 1
@@ -212,27 +220,19 @@ Attacks:
     StaminaMult: 1
   AttackEvent: AttackStartRightRunningPower
 - AttackData:
-    DamageMult: 1.5
+    DamageMult: 1
     Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 50
-    Stagger: 0.2
-    RecoveryTime: 15
+    AttackAngle: 45
+    StrikeAngle: 45
+    RecoveryTime: 10
     StaminaMult: 1
-  AttackEvent: AttackStartDual
+  AttackEvent: AttackStartRightSide
 - AttackData:
-    DamageMult: 0.3
-    Chance: 1
-    Spell: 75CD1F:Requiem.esp
-    Flags:
-    - PowerAttack
+    DamageMult: 2
     StrikeAngle: 50
-    Stagger: 0.5
-    AttackType: 0914E5:Skyrim.esm
-    RecoveryTime: 20
-    StaminaMult: 3
-  AttackEvent: AttackStartBackHand
+    Knockdown: 1
+    StaminaMult: 1
+  AttackEvent: AttackStartRightSprinting
 BodyData:
   Male:
     Index: BodyTexture

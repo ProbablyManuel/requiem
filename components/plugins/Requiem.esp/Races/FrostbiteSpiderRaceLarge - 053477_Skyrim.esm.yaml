@@ -85,17 +85,33 @@ SkeletalModel:
     File: Actors\FrostbiteSpider\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 02AFD9:Skyrim.esm
   Female: 02AFD9:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.35
+    Spell: 053475:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: AttackStartLungeBite
 - AttackData:
     DamageMult: 1.5
     Chance: 0.3
@@ -108,23 +124,6 @@ Attacks:
   AttackEvent: attackStart_Bite1
 - AttackData:
     DamageMult: 1.5
-    Chance: 0.35
-    Spell: 053475:Skyrim.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 0.75
-    StaminaMult: 1
-  AttackEvent: AttackStartLungeBite
-- AttackData:
-    DamageMult: 1
-    Flags:
-    - BashAttack
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: bashStart
-- AttackData:
-    DamageMult: 1.5
     Chance: 0.3
     Spell: 053475:Skyrim.esm
     Flags:
@@ -133,12 +132,6 @@ Attacks:
     Stagger: 0.5
     StaminaMult: 1
   AttackEvent: attackStart_Bite2
-- AttackData:
-    DamageMult: 1
-    Chance: 0.75
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: AttackStart_LeftChop
 - AttackData:
     DamageMult: 1
     Chance: 0.3
@@ -150,10 +143,10 @@ Attacks:
   AttackEvent: AttackStart_ComboChop
 - AttackData:
     DamageMult: 1
-    Chance: 0.5
+    Chance: 0.75
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart
+  AttackEvent: AttackStart_LeftChop
 - AttackData:
     DamageMult: 1
     Chance: 0.75
@@ -168,6 +161,13 @@ Attacks:
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: bashPowerStart
+- AttackData:
+    DamageMult: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashStart
 BodyData:
   Male:
     Index: BodyTexture

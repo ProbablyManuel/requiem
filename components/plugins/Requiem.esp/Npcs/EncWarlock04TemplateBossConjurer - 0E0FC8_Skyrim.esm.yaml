@@ -37,45 +37,45 @@ Voice: 09843A:Skyrim.esm
 Template: 06D231:Skyrim.esm
 Race: 013741:Skyrim.esm
 ActorEffect:
-- 02B96C:Skyrim.esm
-- 07231A:Skyrim.esm
-- 100E77:Skyrim.esm
 - 02B96B:Skyrim.esm
+- 02B96C:Skyrim.esm
 - 072316:Skyrim.esm
+- 07231A:Skyrim.esm
 - 07231C:Skyrim.esm
-- 0F95EB:Skyrim.esm
 - 0F95EA:Skyrim.esm
+- 0F95EB:Skyrim.esm
+- 100E77:Skyrim.esm
 Perks:
-- Perk: 0581F8:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
 - Perk: 053128:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0D7999:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0CB419:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 068BCC:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0581F5:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
+- Perk: 0581F8:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
 - Perk: 0581F9:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
+- Perk: 068BCC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB419:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D7999:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
 Items:
-- Item:
-    Item: 10FACD:Skyrim.esm
-    Count: 1
 - Item:
     Item: 044CD6:Skyrim.esm
     Count: 1
 - Item:
     Item: 0E0FD7:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FACD:Skyrim.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -171,11 +171,11 @@ PlayerSkills:
   GearedUpWeapons: 1
   Unused2: 0x405AEF
 HeadParts:
-- 08555F:Skyrim.esm
-- 0DFC05:Skyrim.esm
-- 0D0564:Skyrim.esm
-- 0F203C:Skyrim.esm
 - 023FB7:Skyrim.esm
+- 08555F:Skyrim.esm
+- 0D0564:Skyrim.esm
+- 0DFC05:Skyrim.esm
+- 0F203C:Skyrim.esm
 HairColor: 0A0438:Skyrim.esm
 CombatStyle: 044CD0:Skyrim.esm
 NAM5: 255
@@ -250,6 +250,10 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 367
+- Index: 39
+  Color: '#002F2013'
+  InterpolationValue: 1
+  Preset: 637
 - Index: 60
   Color: '#00000000'
   InterpolationValue: 0
@@ -270,9 +274,5 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 487
-- Index: 39
-  Color: '#002F2013'
-  InterpolationValue: 1
-  Preset: 637
 MajorFlags:
 - 0x40000

@@ -89,69 +89,17 @@ SkeletalModel:
     File: Actors\DwarvenSteamCenturion\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F1CF:Skyrim.esm
   Female: 01F1CF:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: attackStartChop
-- AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1.5
-    RecoveryTime: 1
-    StaminaMult: 1
-  AttackEvent: attackStartForwardPowerRushRight
-- AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1.5
-    RecoveryTime: 1
-    StaminaMult: 1
-  AttackEvent: attackStartForwardPowerRushLeft
-- AttackData:
-    DamageMult: 0.75
-    Chance: 1
-    Flags:
-    - BashAttack
-    StrikeAngle: 35
-    Stagger: 1
-    StaminaMult: 1
-  AttackEvent: bashStart
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    AttackAngle: 90
-    StrikeAngle: 35
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: attackStartRight
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    AttackAngle: -90
-    StrikeAngle: 35
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: attackStartLeft
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -164,15 +112,9 @@ Attacks:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartStab
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
     Stagger: 0.25
     StaminaMult: 1
-  AttackEvent: attackStartSlash
+  AttackEvent: attackStartChop
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -193,6 +135,64 @@ Attacks:
     RecoveryTime: 1
     StaminaMult: 1
   AttackEvent: attackStartForwardPowerRight
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.5
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartForwardPowerRushLeft
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1.5
+    RecoveryTime: 1
+    StaminaMult: 1
+  AttackEvent: attackStartForwardPowerRushRight
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    AttackAngle: -90
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStartLeft
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    AttackAngle: 90
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStartRight
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStartSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartStab
+- AttackData:
+    DamageMult: 0.75
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: bashStart
 BodyData:
   Male:
     Index: BodyTexture

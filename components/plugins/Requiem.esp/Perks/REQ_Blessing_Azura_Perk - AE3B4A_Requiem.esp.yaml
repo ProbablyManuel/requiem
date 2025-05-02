@@ -7,7 +7,7 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 102
+  Priority: 100
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -15,18 +15,43 @@ Effects:
       Flags:
       - OR
       Data:
-        MutagenObjectType: IsWeaponSkillTypeConditionData
-        ActorValue: OneHanded
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Alteration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Conjuration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Destruction
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Illusion
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: IsWeaponSkillTypeConditionData
-        ActorValue: TwoHanded
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Restoration
       ComparisonValue: 1
-  EntryPoint: ModAttackDamage
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 3FCA4C:Requiem.esp
+  EntryPoint: ModSpellMagnitude
   PerkConditionTabCount: 3
   Modification: Multiply
-  Value: 0.9
+  Value: 1.1
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 101
   Conditions:
@@ -74,7 +99,7 @@ Effects:
   Modification: Multiply
   Value: 1.1
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 100
+  Priority: 102
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -82,40 +107,15 @@ Effects:
       Flags:
       - OR
       Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Alteration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Conjuration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Destruction
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Illusion
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: OneHanded
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Restoration
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
       ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 3FCA4C:Requiem.esp
-  EntryPoint: ModSpellMagnitude
+  EntryPoint: ModAttackDamage
   PerkConditionTabCount: 3
   Modification: Multiply
-  Value: 1.1
+  Value: 0.9

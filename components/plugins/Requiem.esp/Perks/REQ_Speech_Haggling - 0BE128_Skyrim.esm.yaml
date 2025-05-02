@@ -10,18 +10,6 @@ NumRanks: 5
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 101
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 0C07CE:Skyrim.esm
-  EntryPoint: ModBuyPrices
-  PerkConditionTabCount: 2
-  ActorValue: Speech
-  Value: -0.01
-- MutagenObjectType: PerkEntryPointModifyActorValue
   Priority: 100
   Conditions:
   - Conditions:
@@ -34,3 +22,15 @@ Effects:
   ActorValue: Speech
   Value: 0.01
   Modification: MultiplyOnePlusAVMult
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 101
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C07CE:Skyrim.esm
+  EntryPoint: ModBuyPrices
+  PerkConditionTabCount: 2
+  ActorValue: Speech
+  Value: -0.01

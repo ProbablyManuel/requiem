@@ -88,42 +88,17 @@ SkeletalModel:
     File: Actors\DwarvenSpider\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F1D1:Skyrim.esm
   Female: 01F1D1:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
-- AttackData:
-    DamageMult: 1
-    Chance: 0.2
-    Flags:
-    - RotatingAttack
-    StrikeAngle: 45
-    StaminaMult: 1
-  AttackEvent: AttackStart_RightStab
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Flags:
-    - RotatingAttack
-    StrikeAngle: 45
-    StaminaMult: 1
-  AttackEvent: attackStart_ComboHigh
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Flags:
-    - RotatingAttack
-    AttackAngle: 90
-    StrikeAngle: 45
-    StaminaMult: 1
-  AttackEvent: AttackStart_RightState
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -137,15 +112,20 @@ Attacks:
   AttackEvent: AttackStartLungeBite
 - AttackData:
     DamageMult: 1
-    Chance: 0.3
+    Chance: 1
     Flags:
-    - PowerAttack
     - RotatingAttack
     StrikeAngle: 45
-    Stagger: 0.25
-    RecoveryTime: 2
     StaminaMult: 1
-  AttackEvent: AttackStart_Spin
+  AttackEvent: attackStart_ComboHigh
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - RotatingAttack
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: attackStart_ComboLow
 - AttackData:
     DamageMult: 1
     Chance: 0.2
@@ -165,12 +145,32 @@ Attacks:
   AttackEvent: AttackStart_LeftState
 - AttackData:
     DamageMult: 1
-    Chance: 1
+    Chance: 0.2
     Flags:
     - RotatingAttack
     StrikeAngle: 45
     StaminaMult: 1
-  AttackEvent: attackStart_ComboLow
+  AttackEvent: AttackStart_RightStab
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - RotatingAttack
+    AttackAngle: 90
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: AttackStart_RightState
+- AttackData:
+    DamageMult: 1
+    Chance: 0.3
+    Flags:
+    - PowerAttack
+    - RotatingAttack
+    StrikeAngle: 45
+    Stagger: 0.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: AttackStart_Spin
 BodyData:
   Male:
     Index: BodyTexture

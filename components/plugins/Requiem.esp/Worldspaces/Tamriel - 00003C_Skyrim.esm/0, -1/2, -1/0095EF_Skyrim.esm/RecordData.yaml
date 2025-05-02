@@ -53,6 +53,12 @@ Regions:
 - 03554C:Skyrim.esm
 - 0C5859:Skyrim.esm
 Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B3520:Skyrim.esm
+  Base: 02EDA0:Skyrim.esm
+  Placement:
+    Position: 73665.45, -4338.874, -4199.3325
+    Rotation: 0.8699515, -0.09104548, 0.7866883
 - MutagenObjectType: PlacedNpc
   FormKey: 044BF8:Requiem.esp
   MajorRecordFlagsRaw: 512
@@ -65,11 +71,5 @@ Temporary:
     Rotation: 0, -0, 1.2168148
   MajorFlags:
   - StartsDead
-- MutagenObjectType: PlacedObject
-  FormKey: 0B3520:Skyrim.esm
-  Base: 02EDA0:Skyrim.esm
-  Placement:
-    Position: 73665.45, -4338.874, -4199.3325
-    Rotation: 0.8699515, -0.09104548, 0.7866883
 MajorFlags:
 - 0x40000

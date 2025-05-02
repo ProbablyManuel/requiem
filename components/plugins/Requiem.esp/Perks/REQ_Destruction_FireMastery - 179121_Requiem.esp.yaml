@@ -21,33 +21,6 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
-- MutagenObjectType: PerkAbilityEffect
-  Priority: 2
-  Ability: 17911C:Requiem.esp
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01CEAD:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsObjectTypeConditionData
-        FormType: Spell
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Destruction
-      ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.9
 - MutagenObjectType: PerkEntryPointModifyValue
   Conditions:
   - RunOnTabIndex: 1
@@ -75,3 +48,30 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.05
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01CEAD:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsObjectTypeConditionData
+        FormType: Spell
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Destruction
+      ComparisonValue: 1
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.9
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 2
+  Ability: 17911C:Requiem.esp

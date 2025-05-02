@@ -8,6 +8,11 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 249
+  EntryPoint: ApplyCombatHitSpell
+  PerkConditionTabCount: 3
+  Spell: ADDDC5:Requiem.esp
+- MutagenObjectType: PerkEntryPointSelectSpell
   Priority: 250
   Conditions:
   - Conditions:
@@ -18,8 +23,3 @@ Effects:
   EntryPoint: ApplyCombatHitSpell
   PerkConditionTabCount: 3
   Spell: 0642ED:Requiem.esp
-- MutagenObjectType: PerkEntryPointSelectSpell
-  Priority: 249
-  EntryPoint: ApplyCombatHitSpell
-  PerkConditionTabCount: 3
-  Spell: ADDDC5:Requiem.esp

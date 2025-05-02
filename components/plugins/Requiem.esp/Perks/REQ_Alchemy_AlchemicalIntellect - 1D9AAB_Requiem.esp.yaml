@@ -47,14 +47,7 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
-- MutagenObjectType: PerkAbilityEffect
-  Priority: 100
-  Ability: 05D6C2:Requiem.esp
-- MutagenObjectType: PerkAbilityEffect
-  Priority: 3
-  Ability: ADDDF5:Requiem.esp
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -96,10 +89,14 @@ Effects:
         MutagenObjectType: EPMagic_SpellHasSkillConditionData
         ActorValue: Alteration
       ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 3FCA4C:Requiem.esp
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
   Modification: Multiply
-  Value: 0.95
+  Value: 1.05
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
@@ -152,6 +149,7 @@ Effects:
   Modification: Multiply
   Value: 1.05
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -193,11 +191,13 @@ Effects:
         MutagenObjectType: EPMagic_SpellHasSkillConditionData
         ActorValue: Alteration
       ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 3FCA4C:Requiem.esp
-  EntryPoint: ModSpellMagnitude
-  PerkConditionTabCount: 3
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 1.05
+  Value: 0.95
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 3
+  Ability: ADDDF5:Requiem.esp
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 100
+  Ability: 05D6C2:Requiem.esp

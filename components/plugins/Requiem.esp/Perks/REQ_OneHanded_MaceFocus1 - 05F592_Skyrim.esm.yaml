@@ -22,9 +22,6 @@ NumRanks: 1
 Playable: True
 NextPerk: 0C1E92:Skyrim.esm
 Effects:
-- MutagenObjectType: PerkAbilityEffect
-  Priority: 1
-  Ability: AD39A3:Requiem.esp
 - MutagenObjectType: PerkEntryPointModifyValue
   Conditions:
   - Conditions:
@@ -43,3 +40,6 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.05
+- MutagenObjectType: PerkAbilityEffect
+  Priority: 1
+  Ability: AD39A3:Requiem.esp

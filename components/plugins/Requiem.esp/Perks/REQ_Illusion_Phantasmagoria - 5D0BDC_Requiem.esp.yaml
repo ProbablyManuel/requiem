@@ -51,46 +51,6 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 255
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsIDConditionData
-        Object: 5BF693:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModSpellMagnitude
-  PerkConditionTabCount: 3
-  Modification: Add
-  Value: -4.5
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 254
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsIDConditionData
-        Object: 15B3E3:Requiem.esp
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsIDConditionData
-        Object: 570255:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModSpellMagnitude
-  PerkConditionTabCount: 3
-  Modification: Add
-  Value: -2.5
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 253
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -115,10 +75,30 @@ Effects:
         MutagenObjectType: GetIsIDConditionData
         Object: 56DAAD:Requiem.esp
       ComparisonValue: 1
-  EntryPoint: ModSpellMagnitude
-  PerkConditionTabCount: 3
-  Modification: Add
-  Value: -3
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 15B3E3:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 570255:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 5BF693:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: CanDualCastSpell
+  PerkConditionTabCount: 2
+  Value: 1
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 10
   Conditions:
@@ -171,6 +151,7 @@ Effects:
   Modification: Multiply
   Value: 1.3
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 253
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -195,6 +176,15 @@ Effects:
         MutagenObjectType: GetIsIDConditionData
         Object: 56DAAD:Requiem.esp
       ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Add
+  Value: -3
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 254
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
     - MutagenObjectType: ConditionFloat
       Flags:
       - OR
@@ -209,6 +199,15 @@ Effects:
         MutagenObjectType: GetIsIDConditionData
         Object: 570255:Requiem.esp
       ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Add
+  Value: -2.5
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 255
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
     - MutagenObjectType: ConditionFloat
       Flags:
       - OR
@@ -216,6 +215,7 @@ Effects:
         MutagenObjectType: GetIsIDConditionData
         Object: 5BF693:Requiem.esp
       ComparisonValue: 1
-  EntryPoint: CanDualCastSpell
-  PerkConditionTabCount: 2
-  Value: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Add
+  Value: -4.5

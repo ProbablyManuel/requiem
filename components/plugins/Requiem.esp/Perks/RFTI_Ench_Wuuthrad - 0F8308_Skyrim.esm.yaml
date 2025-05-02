@@ -8,7 +8,6 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -17,28 +16,21 @@ Effects:
       - OR
       Data:
         MutagenObjectType: GetIsRaceConditionData
-        Race: 013741:Skyrim.esm
+        Race: 0131F4:Skyrim.esm
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Flags:
       - OR
       Data:
         MutagenObjectType: GetIsRaceConditionData
-        Race: 08883C:Skyrim.esm
+        Race: 01AACC:Dawnguard.esm
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Flags:
       - OR
       Data:
         MutagenObjectType: GetIsRaceConditionData
-        Race: 013747:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 0A82B9:Skyrim.esm
+        Race: 00377D:Dawnguard.esm
       ComparisonValue: 1
   - RunOnTabIndex: 2
     Conditions:
@@ -49,7 +41,7 @@ Effects:
       ComparisonValue: 1
   EntryPoint: ModSoulPercentCapturedToWeapon
   PerkConditionTabCount: 3
-  Value: 0.25
+  Value: 1
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
@@ -108,6 +100,7 @@ Effects:
   PerkConditionTabCount: 3
   Value: 0.5
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -116,21 +109,28 @@ Effects:
       - OR
       Data:
         MutagenObjectType: GetIsRaceConditionData
-        Race: 0131F4:Skyrim.esm
+        Race: 013741:Skyrim.esm
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Flags:
       - OR
       Data:
         MutagenObjectType: GetIsRaceConditionData
-        Race: 01AACC:Dawnguard.esm
+        Race: 08883C:Skyrim.esm
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Flags:
       - OR
       Data:
         MutagenObjectType: GetIsRaceConditionData
-        Race: 00377D:Dawnguard.esm
+        Race: 013747:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0A82B9:Skyrim.esm
       ComparisonValue: 1
   - RunOnTabIndex: 2
     Conditions:
@@ -141,4 +141,4 @@ Effects:
       ComparisonValue: 1
   EntryPoint: ModSoulPercentCapturedToWeapon
   PerkConditionTabCount: 3
-  Value: 1
+  Value: 0.25
