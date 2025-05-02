@@ -37,46 +37,46 @@ Voice: 09843A:Skyrim.esm
 Template: 06D232:Skyrim.esm
 Race: 013741:Skyrim.esm
 ActorEffect:
-- 07231A:Skyrim.esm
-- 100E78:Skyrim.esm
 - 02B96C:Skyrim.esm
 - 072316:Skyrim.esm
-- 0F95EB:Skyrim.esm
+- 07231A:Skyrim.esm
 - 07231C:Skyrim.esm
 - 0BB96A:Skyrim.esm
-- 0F95EF:Skyrim.esm
+- 0F95EB:Skyrim.esm
 - 0F95EE:Skyrim.esm
+- 0F95EF:Skyrim.esm
+- 100E78:Skyrim.esm
 Perks:
-- Perk: 0581F8:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0D799A:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0CB419:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 068BCC:Skyrim.esm
+- Perk: 053129:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0581EA:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 053129:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0CB41A:Skyrim.esm
+- Perk: 0581F8:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0581F9:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
+- Perk: 068BCC:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB419:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0CB41A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0D799A:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
 Items:
 - Item:
-    Item: 0E0FDD:Skyrim.esm
+    Item: 044CD6:Skyrim.esm
     Count: 1
 - Item:
-    Item: 044CD6:Skyrim.esm
+    Item: 0E0FDD:Skyrim.esm
     Count: 1
 - Item:
     Item: 10FACD:Skyrim.esm
@@ -175,11 +175,11 @@ PlayerSkills:
   GearedUpWeapons: 1
   Unused2: 0x405AEF
 HeadParts:
-- 051416:Skyrim.esm
-- 0D0564:Skyrim.esm
-- 0C716E:Skyrim.esm
 - 023FB7:Skyrim.esm
+- 051416:Skyrim.esm
 - 08555F:Skyrim.esm
+- 0C716E:Skyrim.esm
+- 0D0564:Skyrim.esm
 HairColor: 0A0437:Skyrim.esm
 CombatStyle: 044CD0:Skyrim.esm
 NAM5: 255
@@ -225,6 +225,10 @@ TintLayers:
   Color: '#00500901'
   InterpolationValue: 0.5
   Preset: 96
+- Index: 5
+  Color: '#00000000'
+  InterpolationValue: 0.58
+  Preset: 631
 - Index: 6
   Color: '#00500901'
   InterpolationValue: 0.5
@@ -277,6 +281,18 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 367
+- Index: 39
+  Color: '#00000000'
+  InterpolationValue: 0.43
+  Preset: 635
+- Index: 58
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 640
+- Index: 59
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 645
 - Index: 60
   Color: '#00000000'
   InterpolationValue: 0
@@ -297,21 +313,5 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 487
-- Index: 5
-  Color: '#00000000'
-  InterpolationValue: 0.58
-  Preset: 631
-- Index: 39
-  Color: '#00000000'
-  InterpolationValue: 0.43
-  Preset: 635
-- Index: 58
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: 640
-- Index: 59
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: 645
 MajorFlags:
 - 0x40000

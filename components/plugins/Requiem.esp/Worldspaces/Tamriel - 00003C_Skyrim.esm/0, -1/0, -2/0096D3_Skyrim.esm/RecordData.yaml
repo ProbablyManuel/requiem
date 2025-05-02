@@ -57,25 +57,6 @@ Regions:
 Water: 001232:Update.esm
 Temporary:
 - MutagenObjectType: PlacedNpc
-  FormKey: 23CB47:Requiem.esp
-  Base: 0E4010:Skyrim.esm
-  Placement:
-    Position: 28056.268, -35262.168, -192.98584
-    Rotation: 0, -0, 2
-- MutagenObjectType: PlacedNpc
-  FormKey: 23CB49:Requiem.esp
-  Base: 0E4010:Skyrim.esm
-  Scale: 1.2
-  Placement:
-    Position: 28142.727, -34760.086, -192.98584
-    Rotation: 0, -0, 0.9168149
-- MutagenObjectType: PlacedNpc
-  FormKey: 23CB4A:Requiem.esp
-  Base: 0E4010:Skyrim.esm
-  Placement:
-    Position: 28261.93, -34579.95, -192.98584
-    Rotation: 0, -0, 2
-- MutagenObjectType: PlacedNpc
   FormKey: 08CACD:Skyrim.esm
   MajorRecordFlagsRaw: 2048
   Version2: 2
@@ -102,6 +83,18 @@ Temporary:
   MajorFlags:
   - InitiallyDisabled
 - MutagenObjectType: PlacedNpc
+  FormKey: 21A0C7:Requiem.esp
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 08CACC:Skyrim.esm
+  LevelModifier: Easy
+  Placement:
+    Position: 28031.682, -35134.863, -235.57898
+    Rotation: 0, -0, 2.3999999
+  MajorFlags:
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
   FormKey: 21A0C8:Requiem.esp
   MajorRecordFlagsRaw: 2048
   SkyrimMajorRecordFlags:
@@ -114,6 +107,12 @@ Temporary:
   MajorFlags:
   - InitiallyDisabled
 - MutagenObjectType: PlacedNpc
+  FormKey: 23CB47:Requiem.esp
+  Base: 0E4010:Skyrim.esm
+  Placement:
+    Position: 28056.268, -35262.168, -192.98584
+    Rotation: 0, -0, 2
+- MutagenObjectType: PlacedNpc
   FormKey: 23CB48:Requiem.esp
   Base: 0E4010:Skyrim.esm
   Scale: 1.1
@@ -121,16 +120,17 @@ Temporary:
     Position: 28031.957, -35012.36, -192.98584
     Rotation: 0, -0, 3.6000001
 - MutagenObjectType: PlacedNpc
-  FormKey: 21A0C7:Requiem.esp
-  MajorRecordFlagsRaw: 2048
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 08CACC:Skyrim.esm
-  LevelModifier: Easy
+  FormKey: 23CB49:Requiem.esp
+  Base: 0E4010:Skyrim.esm
+  Scale: 1.2
   Placement:
-    Position: 28031.682, -35134.863, -235.57898
-    Rotation: 0, -0, 2.3999999
-  MajorFlags:
-  - InitiallyDisabled
+    Position: 28142.727, -34760.086, -192.98584
+    Rotation: 0, -0, 0.9168149
+- MutagenObjectType: PlacedNpc
+  FormKey: 23CB4A:Requiem.esp
+  Base: 0E4010:Skyrim.esm
+  Placement:
+    Position: 28261.93, -34579.95, -192.98584
+    Rotation: 0, -0, 2
 MajorFlags:
 - 0x40000

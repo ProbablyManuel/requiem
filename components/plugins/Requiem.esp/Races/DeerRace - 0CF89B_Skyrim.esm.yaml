@@ -81,11 +81,11 @@ SkeletalModel:
     File: Actors\Deer\Character Assets\Skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 041FBA:Skyrim.esm
   Female: 041FBA:Skyrim.esm
@@ -94,32 +94,10 @@ FacegenFaceClamp: 3
 Attacks:
 - AttackData:
     DamageMult: 1
-    Chance: 1
+    Chance: 0.5
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_SkeeverLungeMedium
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackRight1
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_ForwardPowerShort
-- AttackData:
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_ForwardPower
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackRight2
+  AttackEvent: attackStart_Attack1
 - AttackData:
     DamageMult: 2
     Chance: 0.25
@@ -134,7 +112,7 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_SkeeverLungeLong
+  AttackEvent: attackStart_AttackLeft1
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -146,23 +124,45 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_SkeeverLungeShort
-- AttackData:
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_StandingPower
+  AttackEvent: attackStart_AttackRight1
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_AttackLeft1
+  AttackEvent: attackStart_AttackRight2
 - AttackData:
-    DamageMult: 1
-    Chance: 0.5
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_Attack1
+  AttackEvent: attackStart_ForwardPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPowerShort
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeLong
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeMedium
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_SkeeverLungeShort
+- AttackData:
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_StandingPower
 BodyData:
   Male:
     Index: BodyTexture

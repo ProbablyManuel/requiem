@@ -20,101 +20,6 @@ NumRanks: 1
 Playable: True
 Hidden: True
 Effects:
-- MutagenObjectType: PerkEntryPointAddActivateChoice
-  Priority: 200
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AE3B6A:Requiem.esp
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 0EE5C3:Skyrim.esm
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasBeenEatenConditionData
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 013794:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetDeadConditionData
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetTimeDeadConditionData
-      ComparisonValue: 72
-  ButtonLabel:
-    TargetLanguage: English
-    Value: Feed
-  EntryPoint: Activate
-  PerkConditionTabCount: 2
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 20
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 013749:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 088884:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AE3728:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModSpellMagnitude
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 2
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 3
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 013749:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 088884:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Archery
-      ComparisonValue: 1
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 1.15
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
@@ -174,3 +79,98 @@ Effects:
   PerkConditionTabCount: 1
   Modification: Multiply
   Value: 1.05
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 3
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 013749:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 088884:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Archery
+      ComparisonValue: 1
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.15
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 20
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 013749:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 088884:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AE3728:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 2
+- MutagenObjectType: PerkEntryPointAddActivateChoice
+  Priority: 200
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AE3B6A:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0EE5C3:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasBeenEatenConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013794:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDeadConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetTimeDeadConditionData
+      ComparisonValue: 72
+  ButtonLabel:
+    TargetLanguage: English
+    Value: Feed
+  EntryPoint: Activate
+  PerkConditionTabCount: 2

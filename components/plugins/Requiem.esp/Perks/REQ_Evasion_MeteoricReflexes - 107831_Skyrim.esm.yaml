@@ -27,28 +27,6 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 50
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        RunOnTypeIndex: 0
-        ActorValue: LightArmor
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: WornHasKeywordConditionData
-        Keyword: 06BBD2:Skyrim.esm
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 1.25
-- MutagenObjectType: PerkEntryPointModifyValue
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -70,3 +48,25 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 0.05
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 50
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        RunOnTypeIndex: 0
+        ActorValue: LightArmor
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.25

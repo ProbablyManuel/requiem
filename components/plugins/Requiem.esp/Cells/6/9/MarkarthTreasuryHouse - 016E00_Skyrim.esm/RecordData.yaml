@@ -43,16 +43,17 @@ Music: 02C3CA:Skyrim.esm
 ImageSpace: 09F282:Skyrim.esm
 Persistent:
 - MutagenObjectType: PlacedObject
-  FormKey: AE3772:Requiem.esp
-  MajorRecordFlagsRaw: 1610613760
+  FormKey: AE3770:Requiem.esp
+  MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
   - 0x400
-  - 0x20000000
-  - 0x40000000
-  Base: 03521F:Skyrim.esm
+  Base: 0E49CA:Skyrim.esm
+  LinkedReferences:
+  - KeywordOrReference: 06D95F:Skyrim.esm
+    Reference: AE3771:Requiem.esp
   Placement:
-    Position: -5602.174, -1065.0581, 391.5671
-    Rotation: 1.5707964, 0, 3.1415927
+    Position: -5601.74, -1063.7161, 392.22147
+    Rotation: 0, 0, 3.1725514
 - MutagenObjectType: PlacedObject
   FormKey: AE3771:Requiem.esp
   MajorRecordFlagsRaw: 1073742848
@@ -76,17 +77,16 @@ Persistent:
     Position: -5601.74, -1065.1284, 392.22147
     Rotation: 0, 0, 3.1725514
 - MutagenObjectType: PlacedObject
-  FormKey: AE3770:Requiem.esp
-  MajorRecordFlagsRaw: 1024
+  FormKey: AE3772:Requiem.esp
+  MajorRecordFlagsRaw: 1610613760
   SkyrimMajorRecordFlags:
   - 0x400
-  Base: 0E49CA:Skyrim.esm
-  LinkedReferences:
-  - KeywordOrReference: 06D95F:Skyrim.esm
-    Reference: AE3771:Requiem.esp
+  - 0x20000000
+  - 0x40000000
+  Base: 03521F:Skyrim.esm
   Placement:
-    Position: -5601.74, -1063.7161, 392.22147
-    Rotation: 0, 0, 3.1725514
+    Position: -5602.174, -1065.0581, 391.5671
+    Rotation: 1.5707964, 0, 3.1415927
 Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 0C5F60:Skyrim.esm

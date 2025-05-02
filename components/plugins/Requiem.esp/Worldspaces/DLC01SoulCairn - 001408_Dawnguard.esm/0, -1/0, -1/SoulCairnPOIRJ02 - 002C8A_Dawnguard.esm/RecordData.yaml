@@ -52,6 +52,23 @@ Regions:
 - 007013:Dawnguard.esm
 Temporary:
 - MutagenObjectType: PlacedObject
+  FormKey: 015D7A:Dawnguard.esm
+  MajorRecordFlagsRaw: 536872960
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  - 0x20000000
+  Base: 056A9E:Skyrim.esm
+  Scale: 1.1
+  LocationReference: 003B8F:Dawnguard.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 23194.5, -11090.943, -30000
+    Rotation: 0.4588139, 0.36566743, 5.353028
+- MutagenObjectType: PlacedObject
   FormKey: 015D87:Dawnguard.esm
   MajorRecordFlagsRaw: 536872960
   SkyrimMajorRecordFlags:
@@ -79,22 +96,15 @@ Temporary:
     Position: 23198.012, -10966.414, 97.75269
     Rotation: 3.1415927, 0, 1.5707964
 - MutagenObjectType: PlacedObject
-  FormKey: 015D7A:Dawnguard.esm
-  MajorRecordFlagsRaw: 536872960
+  FormKey: AE376B:Requiem.esp
+  MajorRecordFlagsRaw: 1610612736
   SkyrimMajorRecordFlags:
-  - InitiallyDisabled
   - 0x20000000
-  Base: 056A9E:Skyrim.esm
-  Scale: 1.1
-  LocationReference: 003B8F:Dawnguard.esm
-  EnableParent:
-    Reference: 000014:Skyrim.esm
-    Flags:
-    - SetEnableStateToOppositeOfParent
-    Unknown: 0x000000
+  - 0x40000000
+  Base: 0F9648:Skyrim.esm
   Placement:
-    Position: 23194.5, -11090.943, -30000
-    Rotation: 0.4588139, 0.36566743, 5.353028
+    Position: 23115.537, -11108.361, 85.683655
+    Rotation: 3.318583, 6.1597924, 4.6159334
 - MutagenObjectType: PlacedObject
   FormKey: AE376C:Requiem.esp
   MajorRecordFlagsRaw: 1610612736
@@ -105,15 +115,5 @@ Temporary:
   Placement:
     Position: 23194.64, -11089.266, 138.13103
     Rotation: 0.12217305, 0.19198622, 5.1751804
-- MutagenObjectType: PlacedObject
-  FormKey: AE376B:Requiem.esp
-  MajorRecordFlagsRaw: 1610612736
-  SkyrimMajorRecordFlags:
-  - 0x20000000
-  - 0x40000000
-  Base: 0F9648:Skyrim.esm
-  Placement:
-    Position: 23115.537, -11108.361, 85.683655
-    Rotation: 3.318583, 6.1597924, 4.6159334
 MajorFlags:
 - 0x40000

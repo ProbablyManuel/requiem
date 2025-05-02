@@ -57,6 +57,13 @@ Regions:
 Location: 03A07F:Dragonborn.esm
 UnknownGroupData: 1
 Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 038B06:Dragonborn.esm
+  Base: 06A07E:Skyrim.esm
+  LeveledItemBaseObject: 03A1BE:Skyrim.esm
+  LocationReference: 03A07F:Dragonborn.esm
+  Placement:
+    Position: 25615.105, 46919, 2327.6624
 - MutagenObjectType: PlacedNpc
   FormKey: AE3A6B:Requiem.esp
   Base: 03750F:Dragonborn.esm
@@ -65,11 +72,28 @@ Temporary:
     Position: 26589.654, 46526.54, 1721.3208
     Rotation: 0, 0, 3.600012
 - MutagenObjectType: PlacedNpc
+  FormKey: AE3A6C:Requiem.esp
+  Base: 03750F:Dragonborn.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 025B70:Dragonborn.esm
+  Placement:
+    Position: 27016.906, 45815.89, 1819.157
+    Rotation: 0, 0, 4.083189
+- MutagenObjectType: PlacedNpc
   FormKey: AE3A6D:Requiem.esp
   Base: 03750F:Dragonborn.esm
   LevelModifier: Easy
   Placement:
     Position: 26161.75, 48092.027, 2226.3613
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A6E:Requiem.esp
+  Base: 03750F:Dragonborn.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: AE3A7B:Requiem.esp
+  Placement:
+    Position: 25520.223, 47503.754, 2465.832
 - MutagenObjectType: PlacedNpc
   FormKey: AE3A6F:Requiem.esp
   Base: 03750F:Dragonborn.esm
@@ -80,21 +104,18 @@ Temporary:
     Position: 25126.521, 47068.5, 2476.6677
     Rotation: 0, 0, 5.0831895
 - MutagenObjectType: PlacedNpc
-  FormKey: AE3A74:Requiem.esp
+  FormKey: AE3A70:Requiem.esp
+  Base: 01AA2C:Dragonborn.esm
+  LevelModifier: Easy
+  Placement:
+    Position: 26036.121, 47598.594, 1970.3612
+- MutagenObjectType: PlacedNpc
+  FormKey: AE3A71:Requiem.esp
   Base: 01B3AA:Dragonborn.esm
   LevelModifier: Easy
   Placement:
-    Position: 26482.71, 45843.99, 724.6843
-    Rotation: 0, 0, 4.0831923
-- MutagenObjectType: PlacedNpc
-  FormKey: AE3A6C:Requiem.esp
-  Base: 03750F:Dragonborn.esm
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: 025B70:Dragonborn.esm
-  Placement:
-    Position: 27016.906, 45815.89, 1819.157
-    Rotation: 0, 0, 4.083189
+    Position: 26120.832, 47829.83, 946.3614
+    Rotation: 0, 0, 0.60000056
 - MutagenObjectType: PlacedNpc
   FormKey: AE3A72:Requiem.esp
   Base: 01AA2F:Dragonborn.esm
@@ -110,33 +131,12 @@ Temporary:
   Placement:
     Position: 25702.566, 46249.1, 555.7453
     Rotation: 0, 0, 3.0831938
-- MutagenObjectType: PlacedObject
-  FormKey: 038B06:Dragonborn.esm
-  Base: 06A07E:Skyrim.esm
-  LeveledItemBaseObject: 03A1BE:Skyrim.esm
-  LocationReference: 03A07F:Dragonborn.esm
-  Placement:
-    Position: 25615.105, 46919, 2327.6624
 - MutagenObjectType: PlacedNpc
-  FormKey: AE3A71:Requiem.esp
+  FormKey: AE3A74:Requiem.esp
   Base: 01B3AA:Dragonborn.esm
   LevelModifier: Easy
   Placement:
-    Position: 26120.832, 47829.83, 946.3614
-    Rotation: 0, 0, 0.60000056
-- MutagenObjectType: PlacedNpc
-  FormKey: AE3A70:Requiem.esp
-  Base: 01AA2C:Dragonborn.esm
-  LevelModifier: Easy
-  Placement:
-    Position: 26036.121, 47598.594, 1970.3612
-- MutagenObjectType: PlacedNpc
-  FormKey: AE3A6E:Requiem.esp
-  Base: 03750F:Dragonborn.esm
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: AE3A7B:Requiem.esp
-  Placement:
-    Position: 25520.223, 47503.754, 2465.832
+    Position: 26482.71, 45843.99, 724.6843
+    Rotation: 0, 0, 4.0831923
 MajorFlags:
 - 0x40000

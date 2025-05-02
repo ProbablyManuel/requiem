@@ -22,12 +22,6 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  EntryPoint: ModTemperingHealth
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 1.5
-- MutagenObjectType: PerkEntryPointModifyValue
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -36,6 +30,12 @@ Effects:
         MutagenObjectType: HasKeywordConditionData
         Keyword: AD3AF7:Requiem.esp
       ComparisonValue: 1
+  EntryPoint: ModTemperingHealth
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.5
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
   EntryPoint: ModTemperingHealth
   PerkConditionTabCount: 2
   Modification: Multiply

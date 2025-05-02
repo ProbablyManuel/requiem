@@ -14,26 +14,27 @@ WaterHeight: 3.4028235E+38
 UnknownGroupData: 1
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 10508A:Skyrim.esm
-  MajorRecordFlagsRaw: 536870912
-  SkyrimMajorRecordFlags:
-  - 0x20000000
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: defaultDisableHavokOnLoad
-      Properties:
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnHit
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnZKey
-  Base: 0139AB:Skyrim.esm
-  Scale: 0.75
+  FormKey: 0C3869:Skyrim.esm
+  Base: 013962:Skyrim.esm
   LocationReference: 0BBB45:Skyrim.esm
   Placement:
-    Position: -48541.45, 109224.02, -13501.688
-    Rotation: 6.021386, 6.021386, 0.7853982
+    Position: -48865.195, 108789.56, -13440.672
+    Rotation: 0, 0, 4.983186
+- MutagenObjectType: PlacedObject
+  FormKey: 0C386A:Skyrim.esm
+  Base: 013963:Skyrim.esm
+  LocationReference: 0BBB45:Skyrim.esm
+  Placement:
+    Position: -48660.395, 108904.766, -13395
+    Rotation: 0, 0, 3.403392
+- MutagenObjectType: PlacedObject
+  FormKey: 105034:Skyrim.esm
+  Base: 013961:Skyrim.esm
+  RagdollData: 0x00153835000000BC0000403C00000000B3178FBCB01E84BBAE8C633A
+  LocationReference: 0BBB45:Skyrim.esm
+  Placement:
+    Position: -48821.004, 108634.81, -13448.21
+    Rotation: 0, 0, 0.7000027
 - MutagenObjectType: PlacedObject
   FormKey: 105041:Skyrim.esm
   Base: 0139AE:Skyrim.esm
@@ -63,20 +64,6 @@ Temporary:
     Position: -47751.785, 108695.875, -13498.217
     Rotation: 0.7499994, 0, 4.700001
 - MutagenObjectType: PlacedObject
-  FormKey: 0C386A:Skyrim.esm
-  Base: 013963:Skyrim.esm
-  LocationReference: 0BBB45:Skyrim.esm
-  Placement:
-    Position: -48660.395, 108904.766, -13395
-    Rotation: 0, 0, 3.403392
-- MutagenObjectType: PlacedObject
-  FormKey: 0C3869:Skyrim.esm
-  Base: 013962:Skyrim.esm
-  LocationReference: 0BBB45:Skyrim.esm
-  Placement:
-    Position: -48865.195, 108789.56, -13440.672
-    Rotation: 0, 0, 4.983186
-- MutagenObjectType: PlacedObject
   FormKey: 105089:Skyrim.esm
   Base: 013960:Skyrim.esm
   LocationReference: 0BBB45:Skyrim.esm
@@ -84,12 +71,25 @@ Temporary:
     Position: -48608.26, 109172.445, -13567.905
     Rotation: 0, 0, 3.1499999
 - MutagenObjectType: PlacedObject
-  FormKey: 105034:Skyrim.esm
-  Base: 013961:Skyrim.esm
-  RagdollData: 0x00153835000000BC0000403C00000000B3178FBCB01E84BBAE8C633A
+  FormKey: 10508A:Skyrim.esm
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+  Base: 0139AB:Skyrim.esm
+  Scale: 0.75
   LocationReference: 0BBB45:Skyrim.esm
   Placement:
-    Position: -48821.004, 108634.81, -13448.21
-    Rotation: 0, 0, 0.7000027
+    Position: -48541.45, 109224.02, -13501.688
+    Rotation: 6.021386, 6.021386, 0.7853982
 MajorFlags:
 - 0x40000

@@ -44,11 +44,16 @@ Music: 06D546:Skyrim.esm
 ImageSpace: 059B60:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 32A72D:Requiem.esp
-  Base: 068520:Skyrim.esm
+  FormKey: 0F4880:Skyrim.esm
+  Base: AD3AF8:Requiem.esp
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0200C9:Skyrim.esm
   Placement:
-    Position: 265.10526, -439.87723, 62.91873
-    Rotation: -0.007448216, -0.01769721, 0.39720777
+    Position: 337.18945, 219.70312, -0.247589
+    Rotation: 0, 0, 6.258194
 - MutagenObjectType: PlacedObject
   FormKey: 1062A8:Skyrim.esm
   Version2: 3
@@ -67,57 +72,6 @@ Temporary:
   Placement:
     Position: 807.2722, -282.27728, 55.901234
     Rotation: -0.0039038928, 0.21192974, 4.6705356
-- MutagenObjectType: PlacedObject
-  FormKey: 32A72C:Requiem.esp
-  Base: 0877CA:Skyrim.esm
-  Placement:
-    Position: 271.1198, -434.78018, 62.553024
-    Rotation: 0.0038183744, 0.012606526, 0.70827425
-- MutagenObjectType: PlacedObject
-  FormKey: 0F4880:Skyrim.esm
-  Base: AD3AF8:Requiem.esp
-  Lock:
-    Level: Master
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 0200C9:Skyrim.esm
-  Placement:
-    Position: 337.18945, 219.70312, -0.247589
-    Rotation: 0, 0, 6.258194
-- MutagenObjectType: PlacedObject
-  FormKey: 32A732:Requiem.esp
-  Base: 063B45:Skyrim.esm
-  Placement:
-    Position: 290.07977, -461.49234, 63.566223
-    Rotation: 0, -0, 3.3000002
-- MutagenObjectType: PlacedObject
-  FormKey: 32A731:Requiem.esp
-  Base: 068522:Skyrim.esm
-  Placement:
-    Position: 264.50717, -453.5579, 63.28014
-    Rotation: 0, -0, 0.59999996
-- MutagenObjectType: PlacedObject
-  FormKey: 32A730:Requiem.esp
-  Base: 068523:Skyrim.esm
-  Placement:
-    Position: 281.8119, -468.65158, 63.67531
-    Rotation: 0, -0, 0.5
-- MutagenObjectType: PlacedObject
-  FormKey: 32A729:Requiem.esp
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: defaultDisableHavokOnLoad
-      Properties:
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnHit
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnZKey
-  Base: 0877D5:Skyrim.esm
-  Placement:
-    Position: 805.0218, -268.1555, 55.438076
-    Rotation: 3.173388E-05, 0.21138747, 4.663249
 - MutagenObjectType: PlacedObject
   FormKey: 1062AA:Skyrim.esm
   Version2: 3
@@ -138,11 +92,6 @@ Temporary:
     Position: 795.81, -229.55092, 53.74133
     Rotation: 0.2039578, 0.19596536, 4.7402534
 - MutagenObjectType: PlacedObject
-  FormKey: 32A733:Requiem.esp
-  Base: 063B46:Skyrim.esm
-  Placement:
-    Position: 288.53656, -449.2685, 63.237946
-- MutagenObjectType: PlacedObject
   FormKey: 32A728:Requiem.esp
   VirtualMachineAdapter:
     Scripts:
@@ -159,5 +108,56 @@ Temporary:
   Placement:
     Position: 795.16785, -245.94344, 53.676987
     Rotation: 0.2039578, 0.19596536, 4.7402534
+- MutagenObjectType: PlacedObject
+  FormKey: 32A729:Requiem.esp
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+  Base: 0877D5:Skyrim.esm
+  Placement:
+    Position: 805.0218, -268.1555, 55.438076
+    Rotation: 3.173388E-05, 0.21138747, 4.663249
+- MutagenObjectType: PlacedObject
+  FormKey: 32A72C:Requiem.esp
+  Base: 0877CA:Skyrim.esm
+  Placement:
+    Position: 271.1198, -434.78018, 62.553024
+    Rotation: 0.0038183744, 0.012606526, 0.70827425
+- MutagenObjectType: PlacedObject
+  FormKey: 32A72D:Requiem.esp
+  Base: 068520:Skyrim.esm
+  Placement:
+    Position: 265.10526, -439.87723, 62.91873
+    Rotation: -0.007448216, -0.01769721, 0.39720777
+- MutagenObjectType: PlacedObject
+  FormKey: 32A730:Requiem.esp
+  Base: 068523:Skyrim.esm
+  Placement:
+    Position: 281.8119, -468.65158, 63.67531
+    Rotation: 0, -0, 0.5
+- MutagenObjectType: PlacedObject
+  FormKey: 32A731:Requiem.esp
+  Base: 068522:Skyrim.esm
+  Placement:
+    Position: 264.50717, -453.5579, 63.28014
+    Rotation: 0, -0, 0.59999996
+- MutagenObjectType: PlacedObject
+  FormKey: 32A732:Requiem.esp
+  Base: 063B45:Skyrim.esm
+  Placement:
+    Position: 290.07977, -461.49234, 63.566223
+    Rotation: 0, -0, 3.3000002
+- MutagenObjectType: PlacedObject
+  FormKey: 32A733:Requiem.esp
+  Base: 063B46:Skyrim.esm
+  Placement:
+    Position: 288.53656, -449.2685, 63.237946
 MajorFlags:
 - 0x40000

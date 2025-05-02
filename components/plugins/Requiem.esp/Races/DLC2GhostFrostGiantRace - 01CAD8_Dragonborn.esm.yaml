@@ -90,17 +90,49 @@ SkeletalModel:
     File: Actors\Giant\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F225:Skyrim.esm
   Female: 01F225:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.65
+    Spell: 02A1B7:Dragonborn.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 65
+    Stagger: 1.5
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_ForwardPowerAttack
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.3
+    Spell: 02FFD2:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 180
+    Stagger: 0.5
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_Stomp
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 02822B:Dragonborn.esm
+    Flags:
+    - PowerAttack
+    AttackAngle: 180
+    StrikeAngle: 65
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: attackStart_BackAttack
 - AttackData:
     DamageMult: 1
     Chance: 0.5
@@ -112,16 +144,6 @@ Attacks:
     RecoveryTime: 1.5
     StaminaMult: 1
   AttackEvent: attackStart_ClubAttack1
-- AttackData:
-    DamageMult: 1.5
-    Chance: 0.65
-    Spell: 02A1B7:Dragonborn.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 65
-    Stagger: 1.5
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_ForwardPowerAttack
 - AttackData:
     DamageMult: 1
     Chance: 0.5
@@ -142,17 +164,6 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStart_HandSwipeAttack
 - AttackData:
-    DamageMult: 1.5
-    Chance: 0.3
-    Spell: 02FFD2:Skyrim.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 180
-    Stagger: 0.5
-    RecoveryTime: 2
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_Stomp
-- AttackData:
     DamageMult: 1
     Chance: 1
     Spell: 02822B:Dragonborn.esm
@@ -162,17 +173,6 @@ Attacks:
     Stagger: 0.25
     StaminaMult: 1
   AttackEvent: bashStart
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 02822B:Dragonborn.esm
-    Flags:
-    - PowerAttack
-    AttackAngle: 180
-    StrikeAngle: 65
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: attackStart_BackAttack
 BodyData:
   Male:
     Index: BodyTexture

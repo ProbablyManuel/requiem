@@ -18,11 +18,36 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 100
+  Priority: 50
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsCurrentFurnitureObjConditionData
+        Furniture: 013F11:Dawnguard.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Smithing
+      ComparisonValue: 1
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 80
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E713:Skyrim.esm
+      ComparisonValue: 1
   EntryPoint: ModTemperingHealth
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.5
+  Value: 0.25
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 90
   Conditions:
@@ -61,33 +86,8 @@ Effects:
   Modification: Multiply
   Value: 0.5
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 80
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E713:Skyrim.esm
-      ComparisonValue: 1
+  Priority: 100
   EntryPoint: ModTemperingHealth
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.25
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 50
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: IsCurrentFurnitureObjConditionData
-        Furniture: 013F11:Dawnguard.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Smithing
-      ComparisonValue: 1
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Value: 0
+  Value: 0.5

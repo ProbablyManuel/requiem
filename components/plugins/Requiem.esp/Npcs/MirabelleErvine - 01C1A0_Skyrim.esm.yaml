@@ -25,21 +25,21 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 100
 Factions:
-- Faction: 02816F:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 01F259:Skyrim.esm
   Rank: 5
+  Fluff: 0x000000
+- Faction: 02816F:Skyrim.esm
   Fluff: 0x000000
 Voice: 03924E:Skyrim.esm
 Race: 013741:Skyrim.esm
 ActorEffect:
-- 0DE511:Skyrim.esm
-- 0BB969:Skyrim.esm
 - 012FD0:Skyrim.esm
+- 072316:Skyrim.esm
 - 07231A:Skyrim.esm
 - 07231C:Skyrim.esm
-- 072316:Skyrim.esm
 - 0BB967:Skyrim.esm
+- 0BB969:Skyrim.esm
+- 0DE511:Skyrim.esm
 Perks:
 - Perk: 0153CF:Skyrim.esm
   Rank: 1
@@ -47,10 +47,10 @@ Perks:
 - Perk: 0581E7:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 0581F8:Skyrim.esm
+- Perk: 0581F4:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 0581F4:Skyrim.esm
+- Perk: 0581F8:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0D7999:Skyrim.esm
@@ -163,9 +163,9 @@ PlayerSkills:
   GearedUpWeapons: 1
   Unused2: 0x405AEF
 HeadParts:
-- 0EC1B2:Skyrim.esm
 - 0E4D91:Skyrim.esm
 - 0EAA72:Skyrim.esm
+- 0EC1B2:Skyrim.esm
 NAM5: 255
 Height: 1
 Weight: 30
@@ -204,13 +204,13 @@ TintLayers:
   Color: '#00A95452'
   InterpolationValue: 0.45
   Preset: 670
-- Index: 23
-  Color: '#00A95452'
-  InterpolationValue: 0.37
-  Preset: 704
 - Index: 21
   Color: '#000F0440'
   InterpolationValue: 0.41
   Preset: 1216
+- Index: 23
+  Color: '#00A95452'
+  InterpolationValue: 0.37
+  Preset: 704
 MajorFlags:
 - 0x40000

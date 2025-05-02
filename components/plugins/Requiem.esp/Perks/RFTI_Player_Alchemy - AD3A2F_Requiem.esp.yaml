@@ -8,6 +8,21 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 10
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3A3B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0BE127:Skyrim.esm
+  EntryPoint: ModAlchemyEffectiveness
+  PerkConditionTabCount: 1
+  Value: 0
+- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 200
   Conditions:
   - Conditions:
@@ -99,18 +114,3 @@ Effects:
   PerkConditionTabCount: 1
   Modification: Multiply
   Value: 0.5
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 10
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3A3B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 0BE127:Skyrim.esm
-  EntryPoint: ModAlchemyEffectiveness
-  PerkConditionTabCount: 1
-  Value: 0

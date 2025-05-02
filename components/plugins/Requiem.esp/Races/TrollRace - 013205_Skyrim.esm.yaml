@@ -83,11 +83,11 @@ SkeletalModel:
     File: Actors\Troll\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F289:Skyrim.esm
   Female: 01F289:Skyrim.esm
@@ -103,64 +103,6 @@ Attacks:
   AttackEvent: attackStartBackwardPower
 - AttackData:
     DamageMult: 1.5
-    Chance: 0.2
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    RecoveryTime: 1.75
-    StaminaMult: 1
-  AttackEvent: attackStartRightPower
-- AttackData:
-    DamageMult: 1
-    Chance: 0.2
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartRightA
-- AttackData:
-    DamageMult: 1
-    Chance: 0.2
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartLeftD
-- AttackData:
-    DamageMult: 1.2
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartRightC
-- AttackData:
-    DamageMult: 1.5
-    Spell: 75CD1F:Requiem.esp
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartForwardPowerRush
-- AttackData:
-    DamageMult: 1
-    Chance: 0.2
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartLeftC
-- AttackData:
-    DamageMult: 1.2
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartRightD
-- AttackData:
-    DamageMult: 1
-    Chance: 0.7
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartPowerComboB
-- AttackData:
-    DamageMult: 1
-    Chance: 0.7
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartPowerComboA
-- AttackData:
-    DamageMult: 1.5
     Chance: 0.3
     Spell: 75CD1F:Requiem.esp
     Flags:
@@ -171,24 +113,52 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStartForwardPower
 - AttackData:
-    DamageMult: 1
-    Chance: 0.2
+    DamageMult: 1.5
+    Spell: 75CD1F:Requiem.esp
+    Flags:
+    - PowerAttack
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartRightB
+  AttackEvent: attackStartForwardPowerRush
 - AttackData:
     DamageMult: 1
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: attackStartLeftA
 - AttackData:
-    DamageMult: 1
-    Chance: 1
+    DamageMult: 1.5
+    Chance: 0.2
     Flags:
-    - BashAttack
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    RecoveryTime: 1.75
+    StaminaMult: 1
+  AttackEvent: attackStartLeftB
+- AttackData:
+    DamageMult: 1
+    Chance: 0.2
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: bashStart
+  AttackEvent: attackStartLeftC
+- AttackData:
+    DamageMult: 1
+    Chance: 0.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartLeftD
+- AttackData:
+    DamageMult: 1
+    Chance: 0.7
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartPowerComboA
+- AttackData:
+    DamageMult: 1
+    Chance: 0.7
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartPowerComboB
 - AttackData:
     DamageMult: 1
     Chance: 0.7
@@ -207,6 +177,28 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStartPowerX2
 - AttackData:
+    DamageMult: 1
+    Chance: 0.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRightA
+- AttackData:
+    DamageMult: 1
+    Chance: 0.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRightB
+- AttackData:
+    DamageMult: 1.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRightC
+- AttackData:
+    DamageMult: 1.2
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartRightD
+- AttackData:
     DamageMult: 1.5
     Chance: 0.2
     Flags:
@@ -215,7 +207,15 @@ Attacks:
     Stagger: 1
     RecoveryTime: 1.75
     StaminaMult: 1
-  AttackEvent: attackStartLeftB
+  AttackEvent: attackStartRightPower
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashStart
 BodyData:
   Male:
     Index: BodyTexture

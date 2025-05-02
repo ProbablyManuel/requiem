@@ -89,17 +89,29 @@ SkeletalModel:
     File: Actors\DwarvenSphereCenturion\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F1D0:Skyrim.esm
   Female: 01F1D0:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartBackSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartChop
 - AttackData:
     DamageMult: 1.5
     Chance: 0.75
@@ -110,24 +122,6 @@ Attacks:
     RecoveryTime: 1.5
     StaminaMult: 0.01
   AttackEvent: attackStartForwardPowerChop
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    StrikeAngle: 60
-    StaminaMult: 0.01
-  AttackEvent: attackStartChop
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    StrikeAngle: 60
-    StaminaMult: 0.01
-  AttackEvent: attackStartStab
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    StrikeAngle: 60
-    StaminaMult: 0.01
-  AttackEvent: attackStartBackSlash
 - AttackData:
     DamageMult: 1.5
     Chance: 0.75
@@ -140,18 +134,24 @@ Attacks:
   AttackEvent: attackStartForwardPowerStab
 - AttackData:
     DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 60
+    StaminaMult: 0.01
+  AttackEvent: attackStartStab
+- AttackData:
+    DamageMult: 1
     Chance: 1
     Flags:
     - BashAttack
     StrikeAngle: 60
     StaminaMult: 0.01
   AttackEvent: bashStart
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    StrikeAngle: 60
-    StaminaMult: 0.01
-  AttackEvent: attackStartSlash
 BodyData:
   Male:
     Index: BodyTexture

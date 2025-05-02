@@ -78,11 +78,11 @@ SkeletalModel:
     File: Actors\DLC02\BoarRiekling\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 0208DC:Dragonborn.esm
   Female: 00002E:Skyrim.esm
@@ -90,20 +90,11 @@ FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
 - AttackData:
-    DamageMult: 2
-    Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    StaminaMult: 1
-  AttackEvent: attackStart_ForwardPowerLarge
-- AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_AttackRight1
+  AttackEvent: attackStart_Attack1
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -113,11 +104,18 @@ Attacks:
 - AttackData:
     DamageMult: 1
     Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 2
+    Chance: 1
     Flags:
     - PowerAttack
     StrikeAngle: 35
+    Stagger: 1
     StaminaMult: 1
-  AttackEvent: attackStart_StandingPower
+  AttackEvent: attackStart_ForwardPowerLarge
 - AttackData:
     DamageMult: 2
     Chance: 1
@@ -130,9 +128,11 @@ Attacks:
 - AttackData:
     DamageMult: 1
     Chance: 1
+    Flags:
+    - PowerAttack
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_Attack1
+  AttackEvent: attackStart_StandingPower
 BodyData:
   Male:
     Index: BodyTexture

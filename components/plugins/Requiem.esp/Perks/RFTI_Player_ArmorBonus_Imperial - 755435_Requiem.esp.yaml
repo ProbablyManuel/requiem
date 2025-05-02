@@ -7,7 +7,7 @@ NumRanks: 1
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 203
+  Priority: 200
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -21,7 +21,7 @@ Effects:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: 0965B2:Skyrim.esm
+        Keyword: 06C0EE:Skyrim.esm
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Flags:
@@ -45,7 +45,47 @@ Effects:
   EntryPoint: ModArmorRating
   PerkConditionTabCount: 2
   Modification: Add
-  Value: 15
+  Value: 12
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 201
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        RunOnTypeIndex: 0
+        Faction: 02BF9A:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 06C0EC:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 06BBE0:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 06BBE2:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD39C5:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModArmorRating
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 30
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 202
   Conditions:
@@ -94,7 +134,7 @@ Effects:
   Modification: Add
   Value: 9
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 201
+  Priority: 203
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -108,7 +148,7 @@ Effects:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: 06C0EC:Skyrim.esm
+        Keyword: 0965B2:Skyrim.esm
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Flags:
@@ -132,44 +172,4 @@ Effects:
   EntryPoint: ModArmorRating
   PerkConditionTabCount: 2
   Modification: Add
-  Value: 30
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 200
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetInFactionConditionData
-        RunOnTypeIndex: 0
-        Faction: 02BF9A:Skyrim.esm
-      ComparisonValue: 1
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 06C0EE:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 06BBE0:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 06BBE2:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AD39C5:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModArmorRating
-  PerkConditionTabCount: 2
-  Modification: Add
-  Value: 12
+  Value: 15

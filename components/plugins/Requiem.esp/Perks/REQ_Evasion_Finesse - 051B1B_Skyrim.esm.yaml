@@ -22,6 +22,61 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: WornApparelHasKeywordCountConditionData
+        Keyword: 06BBD2:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModPowerAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.03
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: WornApparelHasKeywordCountConditionData
+        Keyword: 06BBD2:Skyrim.esm
+      ComparisonValue: 2
+  EntryPoint: ModPowerAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.03
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: WornApparelHasKeywordCountConditionData
+        Keyword: 06BBD2:Skyrim.esm
+      ComparisonValue: 3
+  EntryPoint: ModPowerAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.03
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 3
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: WornApparelHasKeywordCountConditionData
+        Keyword: 06BBD2:Skyrim.esm
+      ComparisonValue: 4
+  EntryPoint: ModPowerAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.03
+- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 50
   Conditions:
   - Conditions:
@@ -43,58 +98,3 @@ Effects:
   PerkConditionTabCount: 1
   Modification: Multiply
   Value: 1.25
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 3
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: WornApparelHasKeywordCountConditionData
-        Keyword: 06BBD2:Skyrim.esm
-      ComparisonValue: 4
-  EntryPoint: ModPowerAttackDamage
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 1.03
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: WornApparelHasKeywordCountConditionData
-        Keyword: 06BBD2:Skyrim.esm
-      ComparisonValue: 3
-  EntryPoint: ModPowerAttackDamage
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 1.03
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: WornApparelHasKeywordCountConditionData
-        Keyword: 06BBD2:Skyrim.esm
-      ComparisonValue: 2
-  EntryPoint: ModPowerAttackDamage
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 1.03
-- MutagenObjectType: PerkEntryPointModifyValue
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: WornApparelHasKeywordCountConditionData
-        Keyword: 06BBD2:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModPowerAttackDamage
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 1.03

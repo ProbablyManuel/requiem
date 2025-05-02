@@ -71,6 +71,12 @@ Temporary:
     Position: 90727.68, 91094.414, -12092.222
     Rotation: 0, 0, 4.7331915
 - MutagenObjectType: PlacedObject
+  FormKey: 223F37:Requiem.esp
+  Base: 223F36:Requiem.esp
+  Placement:
+    Position: 91857.75, 91930.71, -12759.725
+    Rotation: 0, -0, 2.3831983
+- MutagenObjectType: PlacedObject
   FormKey: 223F38:Requiem.esp
   Base: 0F9998:Skyrim.esm
   Placement:
@@ -85,25 +91,6 @@ Temporary:
   Placement:
     Position: 91751.88, 91530.766, -12788.972
     Rotation: 0.001672619, -0.0027833374, 0.03530191
-- MutagenObjectType: PlacedObject
-  FormKey: 223F37:Requiem.esp
-  Base: 223F36:Requiem.esp
-  Placement:
-    Position: 91857.75, 91930.71, -12759.725
-    Rotation: 0, -0, 2.3831983
-- MutagenObjectType: PlacedObject
-  FormKey: AD3750:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  EditorID: REQ_Ref_TrainersGuideSaarthalExcavation
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: AD3757:Requiem.esp
-  EnableParent:
-    Reference: AD3754:Requiem.esp
-    Unknown: 0x000000
-  Placement:
-    Position: 90725, 91323, -12072
-    Rotation: 3.1241393, 0, 5.4105206
 - MutagenObjectType: PlacedObject
   FormKey: 223F3E:Requiem.esp
   MajorRecordFlagsRaw: 1073741824
@@ -122,5 +109,18 @@ Temporary:
   Placement:
     Position: 91749.01, 91531.35, -12788.421
     Rotation: -0.0028465183, 0.006800197, 0.4997587
+- MutagenObjectType: PlacedObject
+  FormKey: AD3750:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  EditorID: REQ_Ref_TrainersGuideSaarthalExcavation
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: AD3757:Requiem.esp
+  EnableParent:
+    Reference: AD3754:Requiem.esp
+    Unknown: 0x000000
+  Placement:
+    Position: 90725, 91323, -12072
+    Rotation: 3.1241393, 0, 5.4105206
 MajorFlags:
 - 0x40000

@@ -94,11 +94,11 @@ SkeletalModel:
     File: Actors\AtronachFrost\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F1D4:Skyrim.esm
   Female: 01F1D4:Skyrim.esm
@@ -106,11 +106,15 @@ FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
 - AttackData:
-    DamageMult: 1
-    Chance: 0.25
+    DamageMult: 1.5
+    Chance: 0.1
+    Flags:
+    - PowerAttack
     StrikeAngle: 35
+    Stagger: 1
+    RecoveryTime: 1.5
     StaminaMult: 1
-  AttackEvent: attackStart_Attack_R1
+  AttackEvent: attackPowerStart_ForwardPowerAttack_R1
 - AttackData:
     DamageMult: 1.5
     Chance: 0.1
@@ -123,16 +127,6 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackPowerStart_PowerAttack_L1
 - AttackData:
-    DamageMult: 1.5
-    Chance: 0.1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    RecoveryTime: 1.5
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_ForwardPowerAttack_R1
-- AttackData:
     DamageMult: 1
     Chance: 0.05
     StrikeAngle: 35
@@ -140,13 +134,10 @@ Attacks:
   AttackEvent: attackStart_Attack_L1
 - AttackData:
     DamageMult: 1
-    Chance: 1
-    Flags:
-    - BashAttack
+    Chance: 0.25
     StrikeAngle: 35
-    Stagger: 0.75
     StaminaMult: 1
-  AttackEvent: bashStart
+  AttackEvent: attackStart_Attack_R1
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -157,6 +148,15 @@ Attacks:
     Stagger: 1.5
     StaminaMult: 1
   AttackEvent: bashPowerStart
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: bashStart
 BodyData:
   Male:
     Index: BodyTexture

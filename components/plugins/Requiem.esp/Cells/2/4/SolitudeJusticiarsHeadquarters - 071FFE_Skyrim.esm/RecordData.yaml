@@ -40,6 +40,47 @@ Music: 06D542:Skyrim.esm
 ImageSpace: 04E666:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
+  FormKey: 0E64D5:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 0C5891:Skyrim.esm
+  LocationReference: 020086:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1899.0072, 1189.1697, -30000
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 0E64D6:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+  Base: 020163:Skyrim.esm
+  LeveledItemBaseObject: 017178:Skyrim.esm
+  LocationReference: 020086:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1893.7067, 1196.2114, -30000
+    Rotation: 0, 0, 3.1415927
+- MutagenObjectType: PlacedObject
   FormKey: 0E64D7:Skyrim.esm
   MajorRecordFlagsRaw: 2048
   SkyrimMajorRecordFlags:
@@ -72,46 +113,5 @@ Temporary:
   Placement:
     Position: -1907.1111, 1183.0867, 227.1095
     Rotation: 0, 0, 4.712389
-- MutagenObjectType: PlacedObject
-  FormKey: 0E64D6:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: defaultDisableHavokOnLoad
-      Properties:
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnHit
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnZKey
-  Base: 020163:Skyrim.esm
-  LeveledItemBaseObject: 017178:Skyrim.esm
-  LocationReference: 020086:Skyrim.esm
-  EnableParent:
-    Reference: 000014:Skyrim.esm
-    Flags:
-    - SetEnableStateToOppositeOfParent
-    Unknown: 0x000000
-  Placement:
-    Position: -1893.7067, 1196.2114, -30000
-    Rotation: 0, 0, 3.1415927
-- MutagenObjectType: PlacedObject
-  FormKey: 0E64D5:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 0C5891:Skyrim.esm
-  LocationReference: 020086:Skyrim.esm
-  EnableParent:
-    Reference: 000014:Skyrim.esm
-    Flags:
-    - SetEnableStateToOppositeOfParent
-    Unknown: 0x000000
-  Placement:
-    Position: -1899.0072, 1189.1697, -30000
-    Rotation: 0, 0, 1.5707964
 MajorFlags:
 - 0x40000

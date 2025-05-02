@@ -7,31 +7,18 @@ NumRanks: 1
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 32
+  Priority: 29
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 05AD61:Skyrim.esm
+        MagicEffect: 225F3A:Requiem.esp
       ComparisonValue: 1
   EntryPoint: ModIncomingDamage
   PerkConditionTabCount: 3
   Modification: Multiply
-  Value: 0.15
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 31
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 05AD60:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModIncomingDamage
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 0.25
+  Value: 0.5
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 30
   Conditions:
@@ -46,15 +33,28 @@ Effects:
   Modification: Multiply
   Value: 0.35
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 29
+  Priority: 31
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 225F3A:Requiem.esp
+        MagicEffect: 05AD60:Skyrim.esm
       ComparisonValue: 1
   EntryPoint: ModIncomingDamage
   PerkConditionTabCount: 3
   Modification: Multiply
-  Value: 0.5
+  Value: 0.25
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 32
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 05AD61:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.15

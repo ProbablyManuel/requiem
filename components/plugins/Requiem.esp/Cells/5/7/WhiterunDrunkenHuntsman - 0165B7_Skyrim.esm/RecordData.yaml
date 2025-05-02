@@ -49,22 +49,6 @@ Music: 017035:Skyrim.esm
 ImageSpace: 036ED2:Skyrim.esm
 Persistent:
 - MutagenObjectType: PlacedObject
-  FormKey: 09F258:Skyrim.esm
-  MajorRecordFlagsRaw: 1024
-  Version2: 2
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 09F257:Skyrim.esm
-  Scale: 1.1
-  Lock:
-    Level: Master
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 01F872:Skyrim.esm
-  Placement:
-    Position: -497.13187, -1419.0763, 68
-    Rotation: 0, -0, 6.2123957
-- MutagenObjectType: PlacedObject
   FormKey: 0165C7:Skyrim.esm
   MajorRecordFlagsRaw: 1024
   Version2: 12
@@ -109,29 +93,23 @@ Persistent:
   Placement:
     Position: 128, -832, 120.19987
     Rotation: 0, -0, 1.4603138E-06
-Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 0C7AD2:Skyrim.esm
-  Base: 034C5E:Skyrim.esm
-  LocationReference: 01F872:Skyrim.esm
-  Placement:
-    Position: 247.75896, -1146.7073, 126.41135
-    Rotation: -0.0012886759, 0.0034455266, 6.28312
-- MutagenObjectType: PlacedObject
-  FormKey: 0EA739:Skyrim.esm
-  Version2: 1
-  Base: 0EA722:Skyrim.esm
+  FormKey: 09F258:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 2
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 09F257:Skyrim.esm
+  Scale: 1.1
   Lock:
-    Level: Adept
+    Level: Master
     Unused: 0x000000
     Unused2: 0x0000000000000000000000
-  LocationRefTypes:
-  - 0EA723:Skyrim.esm
   LocationReference: 01F872:Skyrim.esm
-  LinkedReferences:
-  - Reference: 0C732E:Skyrim.esm
   Placement:
-    Position: 29.56548, -402.3597, 128.72798
+    Position: -497.13187, -1419.0763, 68
+    Rotation: 0, -0, 6.2123957
+Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 0C7ACF:Skyrim.esm
   Base: 0B9BCC:Skyrim.esm
@@ -147,6 +125,20 @@ Temporary:
     Position: 258.1169, -1157.843, 126.44223
     Rotation: -0.0053378814, 0.0113944085, 2.3773262E-05
 - MutagenObjectType: PlacedObject
+  FormKey: 0C7AD1:Skyrim.esm
+  Base: 0B9BDC:Skyrim.esm
+  LocationReference: 01F872:Skyrim.esm
+  Placement:
+    Position: 270.53067, -1118.6968, 126.44322
+    Rotation: 0.0106708715, -0.0027677563, 1.8808643E-05
+- MutagenObjectType: PlacedObject
+  FormKey: 0C7AD2:Skyrim.esm
+  Base: 034C5E:Skyrim.esm
+  LocationReference: 01F872:Skyrim.esm
+  Placement:
+    Position: 247.75896, -1146.7073, 126.41135
+    Rotation: -0.0012886759, 0.0034455266, 6.28312
+- MutagenObjectType: PlacedObject
   FormKey: 0C7AD3:Skyrim.esm
   Version2: 1
   Base: 10D666:Skyrim.esm
@@ -155,11 +147,19 @@ Temporary:
     Position: 287.09482, -1130.195, 144.40802
     Rotation: 0.25851658, 0.3693774, 0.07993
 - MutagenObjectType: PlacedObject
-  FormKey: 0C7AD1:Skyrim.esm
-  Base: 0B9BDC:Skyrim.esm
+  FormKey: 0EA739:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
   LocationReference: 01F872:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C732E:Skyrim.esm
   Placement:
-    Position: 270.53067, -1118.6968, 126.44322
-    Rotation: 0.0106708715, -0.0027677563, 1.8808643E-05
+    Position: 29.56548, -402.3597, 128.72798
 MajorFlags:
 - 0x40000

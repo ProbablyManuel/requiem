@@ -7,6 +7,19 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 01CA05:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 2
+- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
   - RunOnTabIndex: 1
@@ -20,16 +33,3 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 0.05
-- MutagenObjectType: PerkEntryPointModifyValue
-  Conditions:
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsIDConditionData
-        Object: 01CA05:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModSpellMagnitude
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 2

@@ -8,24 +8,27 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 12
+  Priority: 10
   Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
   - RunOnTabIndex: 2
     Conditions:
     - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
       Data:
-        MutagenObjectType: GetSleepingConditionData
-      ComparisonValue: 3
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0D205E:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 4F6D1E:Requiem.esp
+      ComparisonValue: 1
   EntryPoint: ModSneakAttackMult
   PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 100
+  Value: 1
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 11
   Conditions:
@@ -61,24 +64,21 @@ Effects:
   Modification: Multiply
   Value: 0.5
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 10
+  Priority: 12
   Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
   - RunOnTabIndex: 2
     Conditions:
     - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
       Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 0D205E:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 4F6D1E:Requiem.esp
-      ComparisonValue: 1
+        MutagenObjectType: GetSleepingConditionData
+      ComparisonValue: 3
   EntryPoint: ModSneakAttackMult
   PerkConditionTabCount: 3
-  Value: 1
+  Modification: Multiply
+  Value: 100

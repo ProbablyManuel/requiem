@@ -47,21 +47,6 @@ Music: 033917:Dragonborn.esm
 ImageSpace: 000167:Skyrim.esm
 Persistent:
 - MutagenObjectType: PlacedObject
-  FormKey: 0177C4:Dragonborn.esm
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0177C0:Dragonborn.esm
-  Lock:
-    Level: Master
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  Owner: 017777:Dragonborn.esm
-  LocationReference: 01CDEA:Dragonborn.esm
-  Placement:
-    Position: 755.3787, 1828.2644, 9.088646
-    Rotation: 0, 0, 5.6831865
-- MutagenObjectType: PlacedObject
   FormKey: 0177C3:Dragonborn.esm
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
@@ -76,14 +61,22 @@ Persistent:
   Placement:
     Position: 516.308, 182.49196, 9.57419
     Rotation: 0, 0, 4.4000063
-Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 033DBD:Dragonborn.esm
-  Base: 03EAE4:Skyrim.esm
+  FormKey: 0177C4:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0177C0:Dragonborn.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 017777:Dragonborn.esm
   LocationReference: 01CDEA:Dragonborn.esm
   Placement:
-    Position: 268.84735, -80.84348, 74.72951
-    Rotation: 0, 0, 0.2000025
+    Position: 755.3787, 1828.2644, 9.088646
+    Rotation: 0, 0, 5.6831865
+Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 033DBB:Dragonborn.esm
   MajorRecordFlagsRaw: 2048
@@ -100,20 +93,6 @@ Temporary:
     Position: 530.5758, 215.75755, -30000
     Rotation: 0, 0, 1.8000034
 - MutagenObjectType: PlacedObject
-  FormKey: 033DBF:Dragonborn.esm
-  Base: 03EAE7:Skyrim.esm
-  LocationReference: 01CDEA:Dragonborn.esm
-  Placement:
-    Position: 263.64658, -60.585533, 75.99979
-    Rotation: 0, 0, 0.2000025
-- MutagenObjectType: PlacedObject
-  FormKey: 033DBE:Dragonborn.esm
-  Base: 039D0A:Skyrim.esm
-  LocationReference: 01CDEA:Dragonborn.esm
-  Placement:
-    Position: 278.80466, -67.8972, 74.63702
-    Rotation: 0, 0, 0.2000025
-- MutagenObjectType: PlacedObject
   FormKey: 033DBC:Dragonborn.esm
   MajorRecordFlagsRaw: 2048
   SkyrimMajorRecordFlags:
@@ -128,5 +107,26 @@ Temporary:
   Placement:
     Position: 531.7462, 197.54825, -30000
     Rotation: 0, 0, 2.8817654
+- MutagenObjectType: PlacedObject
+  FormKey: 033DBD:Dragonborn.esm
+  Base: 03EAE4:Skyrim.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  Placement:
+    Position: 268.84735, -80.84348, 74.72951
+    Rotation: 0, 0, 0.2000025
+- MutagenObjectType: PlacedObject
+  FormKey: 033DBE:Dragonborn.esm
+  Base: 039D0A:Skyrim.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  Placement:
+    Position: 278.80466, -67.8972, 74.63702
+    Rotation: 0, 0, 0.2000025
+- MutagenObjectType: PlacedObject
+  FormKey: 033DBF:Dragonborn.esm
+  Base: 03EAE7:Skyrim.esm
+  LocationReference: 01CDEA:Dragonborn.esm
+  Placement:
+    Position: 263.64658, -60.585533, 75.99979
+    Rotation: 0, 0, 0.2000025
 MajorFlags:
 - 0x40000

@@ -22,31 +22,6 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 201
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 058211:Skyrim.esm
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 01E715:Skyrim.esm
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 013794:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModSneakAttackMult
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 5
-- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 200
   Conditions:
   - Conditions:
@@ -72,3 +47,28 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 2
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 201
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 058211:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 01E715:Skyrim.esm
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013794:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 5

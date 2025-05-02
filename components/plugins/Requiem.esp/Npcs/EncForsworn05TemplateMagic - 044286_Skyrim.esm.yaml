@@ -38,13 +38,13 @@ DeathItem: 10F7F2:Skyrim.esm
 Template: 043BDC:Skyrim.esm
 Race: 013741:Skyrim.esm
 ActorEffect:
-- 0BB96A:Skyrim.esm
-- 07231A:Skyrim.esm
-- 0ABDF3:Skyrim.esm
-- 10F7F7:Skyrim.esm
+- 02B96C:Skyrim.esm
 - 0400AC:Skyrim.esm
 - 072316:Skyrim.esm
-- 02B96C:Skyrim.esm
+- 07231A:Skyrim.esm
+- 0ABDF3:Skyrim.esm
+- 0BB96A:Skyrim.esm
+- 10F7F7:Skyrim.esm
 Perks:
 - Perk: 0153CF:Skyrim.esm
   Rank: 1
@@ -52,19 +52,16 @@ Perks:
 - Perk: 0153D2:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 0581EA:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0F3933:Skyrim.esm
+- Perk: 051B1B:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 053128:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 0CB419:Skyrim.esm
+- Perk: 0581EA:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 051B1B:Skyrim.esm
+- Perk: 0581F5:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0581F8:Skyrim.esm
@@ -76,7 +73,10 @@ Perks:
 - Perk: 068BCC:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 0581F5:Skyrim.esm
+- Perk: 0CB419:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0F3933:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 10FCF9:Skyrim.esm
@@ -84,10 +84,10 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 10FAC1:Skyrim.esm
+    Item: 017178:Skyrim.esm
     Count: 1
 - Item:
-    Item: 017178:Skyrim.esm
+    Item: 10FAC1:Skyrim.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -181,9 +181,9 @@ PlayerSkills:
   Unused: 16743
   Unused2: 0x405AEF
 HeadParts:
-- 0EAA76:Skyrim.esm
 - 07291A:Skyrim.esm
 - 0E4E4C:Skyrim.esm
+- 0EAA76:Skyrim.esm
 HairColor: 0A0431:Skyrim.esm
 CombatStyle: 03BE1C:Skyrim.esm
 NAM5: 255
@@ -232,6 +232,10 @@ TintLayers:
   Color: '#000F0440'
   InterpolationValue: 0.53
   Preset: 684
+- Index: 21
+  Color: '#00430401'
+  InterpolationValue: 0.52
+  Preset: 1214
 - Index: 23
   Color: '#000F0440'
   InterpolationValue: 0.35
@@ -244,6 +248,14 @@ TintLayers:
   Color: '#00A95452'
   InterpolationValue: 0.61
   Preset: 730
+- Index: 56
+  Color: '#00000000'
+  InterpolationValue: 1
+  Preset: 1227
+- Index: 57
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 1232
 - Index: 69
   Color: '#00000000'
   InterpolationValue: 0.76
@@ -260,17 +272,5 @@ TintLayers:
   Color: '#00573400'
   InterpolationValue: 0
   Preset: 1184
-- Index: 21
-  Color: '#00430401'
-  InterpolationValue: 0.52
-  Preset: 1214
-- Index: 56
-  Color: '#00000000'
-  InterpolationValue: 1
-  Preset: 1227
-- Index: 57
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: 1232
 MajorFlags:
 - 0x40000

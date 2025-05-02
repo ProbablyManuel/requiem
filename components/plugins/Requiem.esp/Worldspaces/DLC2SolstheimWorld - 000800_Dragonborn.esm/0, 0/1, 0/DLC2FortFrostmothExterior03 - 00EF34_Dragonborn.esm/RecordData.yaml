@@ -55,6 +55,25 @@ Regions:
 Location: 014293:Dragonborn.esm
 Temporary:
 - MutagenObjectType: PlacedNpc
+  FormKey: AE3A80:Requiem.esp
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: masterambushscript
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ambushOnTrigger
+        Data: True
+  Base: 035E5E:Dragonborn.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: AE3A7D:Requiem.esp
+  ActivateParents:
+    Parents:
+    - Reference: 036171:Dragonborn.esm
+      Delay: 1.8
+  Placement:
+    Position: 51443.887, 23324.545, 1685.4589
+- MutagenObjectType: PlacedNpc
   FormKey: AE3A81:Requiem.esp
   VirtualMachineAdapter:
     Scripts:
@@ -92,25 +111,6 @@ Temporary:
       Delay: 1.8
   Placement:
     Position: 51770.92, 23492.662, 1673.7329
-- MutagenObjectType: PlacedNpc
-  FormKey: AE3A80:Requiem.esp
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: masterambushscript
-      Properties:
-      - MutagenObjectType: ScriptBoolProperty
-        Name: ambushOnTrigger
-        Data: True
-  Base: 035E5E:Dragonborn.esm
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: AE3A7D:Requiem.esp
-  ActivateParents:
-    Parents:
-    - Reference: 036171:Dragonborn.esm
-      Delay: 1.8
-  Placement:
-    Position: 51443.887, 23324.545, 1685.4589
 - MutagenObjectType: PlacedNpc
   FormKey: AE3A83:Requiem.esp
   VirtualMachineAdapter:

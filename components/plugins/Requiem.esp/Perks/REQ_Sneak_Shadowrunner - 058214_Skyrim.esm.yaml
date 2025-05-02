@@ -22,17 +22,16 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: WornHasKeywordConditionData
         Keyword: 06BBD2:Skyrim.esm
-  EntryPoint: 48
-  PerkConditionTabCount: 2
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
   Modification: Multiply
-  Value: 0.9
+  Value: 0.75
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
@@ -46,13 +45,14 @@ Effects:
   Modification: Add
   Value: 15
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: WornHasKeywordConditionData
         Keyword: 06BBD2:Skyrim.esm
-  EntryPoint: ModFallingDamage
-  PerkConditionTabCount: 1
+  EntryPoint: 48
+  PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.75
+  Value: 0.9

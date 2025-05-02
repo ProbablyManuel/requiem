@@ -7,25 +7,30 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 102
+  Priority: 100
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 008A5C:Dawnguard.esm
+        MutagenObjectType: HasMagicEffectKeywordConditionData
+        Keyword: ADDDF8:Requiem.esp
       ComparisonValue: 1
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
+        MutagenObjectType: GetIsObjectTypeConditionData
+        FormType: Spell
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: 101BDE:Skyrim.esm
+        Keyword: ADDDF7:Requiem.esp
       ComparisonValue: 1
   EntryPoint: ModIncomingSpellMagnitude
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.5
+  Value: 0.65
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 101
   Conditions:
@@ -52,27 +57,22 @@ Effects:
   Modification: Multiply
   Value: 0.25
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 100
+  Priority: 102
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasMagicEffectKeywordConditionData
-        Keyword: ADDDF8:Requiem.esp
+        MutagenObjectType: HasMagicEffectConditionData
+        MagicEffect: 008A5C:Dawnguard.esm
       ComparisonValue: 1
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: GetIsObjectTypeConditionData
-        FormType: Spell
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: ADDDF7:Requiem.esp
+        Keyword: 101BDE:Skyrim.esm
       ComparisonValue: 1
   EntryPoint: ModIncomingSpellMagnitude
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.65
+  Value: 0.5

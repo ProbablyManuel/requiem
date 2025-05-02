@@ -68,6 +68,41 @@ Persistent:
     Position: 1414.2565, 2504.7546, 205.47954
     Rotation: 1.3613569, 0, 0
 Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 08C087:Skyrim.esm
+  Version2: 2
+  Base: 02069A:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019283:Skyrim.esm
+  Placement:
+    Position: 1408, 2306.6326, 193.93657
+- MutagenObjectType: PlacedObject
+  FormKey: 08E8F8:Skyrim.esm
+  Version2: 2
+  Base: 020652:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 019283:Skyrim.esm
+  Placement:
+    Position: -1914.9031, 3817.1365, 408.4418
+- MutagenObjectType: PlacedObject
+  FormKey: 08E8FB:Skyrim.esm
+  Base: 020650:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019283:Skyrim.esm
+  Placement:
+    Position: -1979.6517, 6359.441, -127.99997
+    Rotation: 0, 0, 1.7031988
 - MutagenObjectType: PlacedNpc
   FormKey: 1EB01F:Requiem.esp
   MajorRecordFlagsRaw: 512
@@ -90,40 +125,5 @@ Temporary:
   Placement:
     Position: 1363.1925, 2540.482, 132.09695
     Rotation: -2.3772945, -0.21993808, 5.0624127
-- MutagenObjectType: PlacedObject
-  FormKey: 08E8FB:Skyrim.esm
-  Base: 020650:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 019283:Skyrim.esm
-  Placement:
-    Position: -1979.6517, 6359.441, -127.99997
-    Rotation: 0, 0, 1.7031988
-- MutagenObjectType: PlacedObject
-  FormKey: 08E8F8:Skyrim.esm
-  Version2: 2
-  Base: 020652:Skyrim.esm
-  Lock:
-    Level: Expert
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationRefTypes:
-  - 0130F8:Skyrim.esm
-  LocationReference: 019283:Skyrim.esm
-  Placement:
-    Position: -1914.9031, 3817.1365, 408.4418
-- MutagenObjectType: PlacedObject
-  FormKey: 08C087:Skyrim.esm
-  Version2: 2
-  Base: 02069A:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 019283:Skyrim.esm
-  Placement:
-    Position: 1408, 2306.6326, 193.93657
 MajorFlags:
 - 0x40000

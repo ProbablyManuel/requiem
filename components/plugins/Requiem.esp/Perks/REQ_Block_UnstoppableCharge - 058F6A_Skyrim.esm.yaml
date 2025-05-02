@@ -27,7 +27,6 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 1
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -51,6 +50,7 @@ Effects:
   Value: 1
   Modification: MultiplyAVMult
 - MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 1
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat

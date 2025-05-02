@@ -45,6 +45,36 @@ Music: 02D4C2:Skyrim.esm
 ImageSpace: 000167:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedNpc
+  FormKey: 01C785:Dragonborn.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: DLC2dunNchardakWaterRegisteredScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LinkCustom10
+        Object: 0B9506:Skyrim.esm
+    - Name: masterambushscript
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ambushOnTrigger
+        Data: True
+  Base: 38AA95:Requiem.esp
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 01C784:Dragonborn.esm
+  - KeywordOrReference: 05D5E6:Skyrim.esm
+    Reference: 017701:Dragonborn.esm
+  - KeywordOrReference: 0B9506:Skyrim.esm
+    Reference: 017706:Dragonborn.esm
+  ActivateParents:
+    Parents:
+    - Reference: 01D4C3:Dragonborn.esm
+  PersistentLocation: 0142B4:Dragonborn.esm
+  LocationReference: 0142B4:Dragonborn.esm
+  Placement:
+    Position: 192, -5152, 592.1
+- MutagenObjectType: PlacedNpc
   FormKey: 01C790:Dragonborn.esm
   VirtualMachineAdapter:
     Scripts:
@@ -75,35 +105,5 @@ Temporary:
   LocationReference: 0142B4:Dragonborn.esm
   Placement:
     Position: -16, -5152, 592.1
-- MutagenObjectType: PlacedNpc
-  FormKey: 01C785:Dragonborn.esm
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: DLC2dunNchardakWaterRegisteredScript
-      Properties:
-      - MutagenObjectType: ScriptObjectProperty
-        Name: LinkCustom10
-        Object: 0B9506:Skyrim.esm
-    - Name: masterambushscript
-      Flags: Inherited
-      Properties:
-      - MutagenObjectType: ScriptBoolProperty
-        Name: ambushOnTrigger
-        Data: True
-  Base: 38AA95:Requiem.esp
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: 01C784:Dragonborn.esm
-  - KeywordOrReference: 05D5E6:Skyrim.esm
-    Reference: 017701:Dragonborn.esm
-  - KeywordOrReference: 0B9506:Skyrim.esm
-    Reference: 017706:Dragonborn.esm
-  ActivateParents:
-    Parents:
-    - Reference: 01D4C3:Dragonborn.esm
-  PersistentLocation: 0142B4:Dragonborn.esm
-  LocationReference: 0142B4:Dragonborn.esm
-  Placement:
-    Position: 192, -5152, 592.1
 MajorFlags:
 - 0x40000

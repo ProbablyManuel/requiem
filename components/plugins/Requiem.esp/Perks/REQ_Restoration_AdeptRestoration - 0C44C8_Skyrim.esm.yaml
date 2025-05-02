@@ -21,39 +21,27 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
-- MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 23
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
   Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 0C44C9:Skyrim.esm
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
       Data:
         MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C9:Skyrim.esm
+        Perk: 0C44C8:Skyrim.esm
       ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44CA:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
-  EntryPoint: ModSpellDuration
-  PerkConditionTabCount: 3
-  ActorValue: Restoration
-  Value: 0.03
-  Modification: MultiplyOnePlusAVMult
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.45
+- MutagenObjectType: PerkQuestEffect
+  Priority: 11
+  Quest: 63149E:Requiem.esp
+  Stage: 184
+  Unknown: 0x010000
 - MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 22
+  Priority: 20
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -65,8 +53,8 @@ Effects:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
-  EntryPoint: ModSpellDuration
+        Keyword: 3FCA4C:Requiem.esp
+  EntryPoint: ModSpellMagnitude
   PerkConditionTabCount: 3
   ActorValue: Restoration
   Value: 0.03
@@ -103,7 +91,7 @@ Effects:
   Value: 0.03
   Modification: MultiplyOnePlusAVMult
 - MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 20
+  Priority: 22
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -115,28 +103,40 @@ Effects:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: 3FCA4C:Requiem.esp
-  EntryPoint: ModSpellMagnitude
+        Keyword: 412EDF:Requiem.esp
+  EntryPoint: ModSpellDuration
   PerkConditionTabCount: 3
   ActorValue: Restoration
   Value: 0.03
   Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkQuestEffect
-  Priority: 11
-  Quest: 63149E:Requiem.esp
-  Stage: 184
-  Unknown: 0x010000
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 23
   Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C44C9:Skyrim.esm
   - RunOnTabIndex: 1
     Conditions:
     - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
       Data:
         MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C8:Skyrim.esm
+        Perk: 0C44C9:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.45
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44CA:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 412EDF:Requiem.esp
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  ActorValue: Restoration
+  Value: 0.03
+  Modification: MultiplyOnePlusAVMult

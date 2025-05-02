@@ -64,17 +64,16 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 4
-  EntryPoint: ModPowerAttackStamina
-  PerkConditionTabCount: 2
-  Modification: Add
-  Value: 15
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 3
-  EntryPoint: ModSellPrices
+  EntryPoint: ModBuyPrices
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 0.8
+  Value: 1.2
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.15
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 2
   Conditions:
@@ -88,13 +87,14 @@ Effects:
   Modification: Multiply
   Value: 0.85
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  EntryPoint: ModSpellCost
+  Priority: 3
+  EntryPoint: ModSellPrices
   PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 1.15
+  Value: 0.8
 - MutagenObjectType: PerkEntryPointModifyValue
-  EntryPoint: ModBuyPrices
+  Priority: 4
+  EntryPoint: ModPowerAttackStamina
   PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 1.2
+  Modification: Add
+  Value: 15

@@ -84,11 +84,11 @@ SkeletalModel:
     File: Actors\Canine\Character Assets Wolf\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 10F677:Skyrim.esm
   Female: 10F677:Skyrim.esm
@@ -97,16 +97,51 @@ FacegenFaceClamp: 3
 Attacks:
 - AttackData:
     DamageMult: 1
-    Spell: 0B8782:Skyrim.esm
+    Chance: 0.5
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_SkeeverLungeMedium
+  AttackEvent: attackStart_Attack1
+- AttackData:
+    DamageMult: 1
+    Chance: 0.5
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft2
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackRight2
+- AttackData:
+    DamageMult: 2
+    Chance: 0.75
+    Spell: 0B8782:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPower
 - AttackData:
     DamageMult: 2
     Chance: 0.75
@@ -120,29 +155,6 @@ Attacks:
   AttackEvent: attackStart_ForwardPowerShort
 - AttackData:
     DamageMult: 2
-    Chance: 0.75
-    Spell: 0B8782:Skyrim.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 0.25
-    RecoveryTime: 2
-    StaminaMult: 1
-  AttackEvent: attackStart_ForwardPower
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackRight2
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_Attack2
-- AttackData:
-    DamageMult: 2
     Spell: 0B8782:Skyrim.esm
     StrikeAngle: 35
     Stagger: 0.25
@@ -150,10 +162,10 @@ Attacks:
   AttackEvent: attackStart_SkeeverLungeLong
 - AttackData:
     DamageMult: 1
-    Chance: 1
+    Spell: 0B8782:Skyrim.esm
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_AttackLeft2
+  AttackEvent: attackStart_SkeeverLungeMedium
 - AttackData:
     DamageMult: 2
     Spell: 0B8782:Skyrim.esm
@@ -172,18 +184,6 @@ Attacks:
     RecoveryTime: 2
     StaminaMult: 1
   AttackEvent: attackStart_StandingPower
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackLeft1
-- AttackData:
-    DamageMult: 1
-    Chance: 0.5
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_Attack1
 BodyData:
   Male:
     Index: BodyTexture

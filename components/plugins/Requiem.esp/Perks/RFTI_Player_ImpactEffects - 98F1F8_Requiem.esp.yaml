@@ -9,6 +9,26 @@ Description:
 NumRanks: 1
 Playable: True
 Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: GetActorValueConditionData
+        ActorValue: DamageResist
+      ComparisonValue: 800
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 98F1F7:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingSpellMagnitude
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.2
 - MutagenObjectType: PerkEntryPointModifyActorValue
   Priority: 1
   Conditions:
@@ -31,23 +51,3 @@ Effects:
   ActorValue: DamageResist
   Value: -0.001
   Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkEntryPointModifyValue
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThanOrEqualTo
-      Data:
-        MutagenObjectType: GetActorValueConditionData
-        ActorValue: DamageResist
-      ComparisonValue: 800
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 98F1F7:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModIncomingSpellMagnitude
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.2

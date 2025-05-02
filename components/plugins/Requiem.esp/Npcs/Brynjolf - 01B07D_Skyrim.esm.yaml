@@ -34,13 +34,13 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 250
 Factions:
+- Faction: 029DA9:Skyrim.esm
+  Fluff: 0x000000
 - Faction: 094393:Skyrim.esm
   Fluff: 0x000000
 - Faction: 0A2522:Skyrim.esm
   Fluff: 0x000000
 - Faction: 0A2527:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 029DA9:Skyrim.esm
   Fluff: 0x000000
 - Faction: 10A794:Skyrim.esm
   Fluff: 0x000000
@@ -50,7 +50,10 @@ ActorEffect:
 - 0FB8D5:Skyrim.esm
 AttackRace: 013746:Skyrim.esm
 Perks:
-- Perk: 106256:Skyrim.esm
+- Perk: 03AF81:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 03FFFA:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 052D50:Skyrim.esm
@@ -59,25 +62,22 @@ Perks:
 - Perk: 05F56F:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 03FFFA:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 03AF81:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
 - Perk: 0C07C9:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 106256:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 0571A1:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 0571A1:Skyrim.esm
-    Count: 1
-- Item:
     Item: 037C2B:Skyrim.esm
     Count: 7
+- Item:
+    Item: 0571A1:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0571A1:Skyrim.esm
+    Count: 1
 AIData:
   Confidence: Foolhardy
   EnergyLevel: 90
@@ -175,10 +175,10 @@ PlayerSkills:
   GearedUpWeapons: 2
   Unused2: 0x405AEF
 HeadParts:
-- 0C710A:Skyrim.esm
-- 09F0A2:Skyrim.esm
-- 051507:Skyrim.esm
 - 01750A:Skyrim.esm
+- 051507:Skyrim.esm
+- 09F0A2:Skyrim.esm
+- 0C710A:Skyrim.esm
 - 0E7AED:Skyrim.esm
 HairColor: 0A0431:Skyrim.esm
 CombatStyle: 1019AC:Skyrim.esm

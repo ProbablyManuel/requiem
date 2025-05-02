@@ -78,11 +78,11 @@ SkeletalModel:
     File: Actors\DLC02\Riekling\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 0208DC:Dragonborn.esm
   Female: 00002E:Skyrim.esm
@@ -110,13 +110,13 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_Spear_Attack1
+  AttackEvent: attackStart_MT_Attack1
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_MT_Attack1
+  AttackEvent: attackStart_Spear_Attack1
 BodyData:
   Male:
     Index: BodyTexture

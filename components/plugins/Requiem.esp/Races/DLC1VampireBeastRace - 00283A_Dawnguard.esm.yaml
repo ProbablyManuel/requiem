@@ -101,25 +101,17 @@ SkeletalModel:
     File: Actors\VampireLord\Character Assets\Skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 013AD2:Skyrim.esm
   Female: 013ADD:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0059A1:Dawnguard.esm
-    AttackAngle: -25
-    StrikeAngle: 45
-    StaminaMult: 1
-  AttackEvent: attackStartLeft
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -131,14 +123,6 @@ Attacks:
     Stagger: 1.5
     StaminaMult: 1
   AttackEvent: AttackPowerStart_Left
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0059A1:Dawnguard.esm
-    AttackAngle: 25
-    StrikeAngle: 45
-    StaminaMult: 1
-  AttackEvent: attackStartRight
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -160,6 +144,22 @@ Attacks:
     RecoveryTime: 15
     StaminaMult: 1
   AttackEvent: AttackStartDual
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0059A1:Dawnguard.esm
+    AttackAngle: -25
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: attackStartLeft
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0059A1:Dawnguard.esm
+    AttackAngle: 25
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: attackStartRight
 BodyData:
   Male:
     Index: BodyTexture

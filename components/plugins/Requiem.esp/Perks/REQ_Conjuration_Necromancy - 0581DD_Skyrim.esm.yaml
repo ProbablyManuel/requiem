@@ -21,53 +21,6 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
-- MutagenObjectType: PerkEntryPointSelectSpell
-  Priority: 3
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 0581DE:Skyrim.esm
-  EntryPoint: ApplyReanimateSpell
-  PerkConditionTabCount: 3
-  Spell: 162476:Requiem.esp
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 068391:Requiem.esp
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 3FCA4C:Requiem.esp
-  EntryPoint: ModSpellDuration
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 10
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 068391:Requiem.esp
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
-        Keyword: 3FCA4C:Requiem.esp
-  EntryPoint: ModSpellMagnitude
-  PerkConditionTabCount: 3
-  Modification: Multiply
-  Value: 3
 - MutagenObjectType: PerkEntryPointModifyValue
   Conditions:
   - RunOnTabIndex: 1
@@ -89,3 +42,50 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.5
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 068391:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 3FCA4C:Requiem.esp
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 3
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 068391:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 3FCA4C:Requiem.esp
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 10
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 3
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0581DE:Skyrim.esm
+  EntryPoint: ApplyReanimateSpell
+  PerkConditionTabCount: 3
+  Spell: 162476:Requiem.esp

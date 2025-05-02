@@ -77,11 +77,11 @@ SkeletalModel:
     File: Actors\Slaughterfish\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 041FBB:Skyrim.esm
   Female: 041FBB:Skyrim.esm
@@ -99,6 +99,12 @@ Attacks:
     Chance: 0.25
     StrikeAngle: 35
     StaminaMult: 1
+  AttackEvent: AttackStart_LSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 0.25
+    StrikeAngle: 35
+    StaminaMult: 1
   AttackEvent: AttackStart_RCorss
 - AttackData:
     DamageMult: 1
@@ -106,12 +112,6 @@ Attacks:
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: AttackStart_RUppercut
-- AttackData:
-    DamageMult: 1
-    Chance: 0.25
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: AttackStart_LSlash
 BodyData:
   Male:
     Index: BodyTexture

@@ -21,8 +21,24 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
-- MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 22
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsInListConditionData
+        FormList: A14CC0:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C6:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: CanDualCastSpell
+  PerkConditionTabCount: 2
+  Value: 1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -31,15 +47,15 @@ Effects:
         MutagenObjectType: SpellHasCastingPerkConditionData
         Perk: 0C44C6:Skyrim.esm
       ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
-  EntryPoint: ModSpellDuration
-  PerkConditionTabCount: 3
-  ActorValue: Illusion
-  Value: 0.05
-  Modification: MultiplyOnePlusAVMult
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.45
+- MutagenObjectType: PerkQuestEffect
+  Priority: 10
+  Quest: 63149E:Requiem.esp
+  Stage: 180
+  Unknown: 0x000000
 - MutagenObjectType: PerkEntryPointModifyActorValue
   Priority: 20
   Conditions:
@@ -59,13 +75,8 @@ Effects:
   ActorValue: Illusion
   Value: 0.05
   Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkQuestEffect
-  Priority: 10
-  Quest: 63149E:Requiem.esp
-  Stage: 180
-  Unknown: 0x000000
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 22
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -74,23 +85,12 @@ Effects:
         MutagenObjectType: SpellHasCastingPerkConditionData
         Perk: 0C44C6:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.45
-- MutagenObjectType: PerkEntryPointModifyValue
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: IsInListConditionData
-        FormList: A14CC0:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: SpellHasCastingPerkConditionData
-        Perk: 0C44C6:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: CanDualCastSpell
-  PerkConditionTabCount: 2
-  Value: 1
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 412EDF:Requiem.esp
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  ActorValue: Illusion
+  Value: 0.05
+  Modification: MultiplyOnePlusAVMult

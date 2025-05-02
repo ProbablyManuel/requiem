@@ -21,8 +21,8 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
-- MutagenObjectType: PerkEntryPointModifyActorValue
-  Priority: 22
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -31,15 +31,15 @@ Effects:
         MutagenObjectType: SpellHasCastingPerkConditionData
         Perk: 0C44BE:Skyrim.esm
       ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
-  EntryPoint: ModSpellDuration
-  PerkConditionTabCount: 3
-  ActorValue: Conjuration
-  Value: 0.05
-  Modification: MultiplyOnePlusAVMult
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.45
+- MutagenObjectType: PerkQuestEffect
+  Priority: 10
+  Quest: 63149E:Requiem.esp
+  Stage: 24
+  Unknown: 0x010000
 - MutagenObjectType: PerkEntryPointModifyActorValue
   Priority: 20
   Conditions:
@@ -59,13 +59,8 @@ Effects:
   ActorValue: Conjuration
   Value: 0.05
   Modification: MultiplyOnePlusAVMult
-- MutagenObjectType: PerkQuestEffect
-  Priority: 10
-  Quest: 63149E:Requiem.esp
-  Stage: 24
-  Unknown: 0x010000
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
+- MutagenObjectType: PerkEntryPointModifyActorValue
+  Priority: 22
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -74,7 +69,12 @@ Effects:
         MutagenObjectType: SpellHasCastingPerkConditionData
         Perk: 0C44BE:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
-  Modification: Multiply
-  Value: 0.45
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 412EDF:Requiem.esp
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  ActorValue: Conjuration
+  Value: 0.05
+  Modification: MultiplyOnePlusAVMult

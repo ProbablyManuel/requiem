@@ -86,11 +86,11 @@ SkeletalModel:
     File: Actors\Falmer\Character Assets\Skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F1D2:Skyrim.esm
   Female: 01F1D2:Skyrim.esm
@@ -105,7 +105,7 @@ Attacks:
     StrikeAngle: 35
     Stagger: 0.75
     StaminaMult: 1
-  AttackEvent: attackPowerStartPower1
+  AttackEvent: attackPowerStartForward1
 - AttackData:
     DamageMult: 1.5
     Chance: 1
@@ -114,38 +114,13 @@ Attacks:
     StrikeAngle: 35
     Stagger: 0.75
     StaminaMult: 1
-  AttackEvent: attackPowerStartForward1
-- AttackData:
-    DamageMult: 0.5
-    Chance: 1
-    Flags:
-    - BashAttack
-    StrikeAngle: 35
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: bashStart
+  AttackEvent: attackPowerStartPower1
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 50
     StaminaMult: 1
-  AttackEvent: attackStartAttack3
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Flags:
-    - BashAttack
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    StaminaMult: 1
-  AttackEvent: bashPowerStart
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartAttack4
+  AttackEvent: attackStartAttack1
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -157,7 +132,19 @@ Attacks:
     Chance: 1
     StrikeAngle: 50
     StaminaMult: 1
-  AttackEvent: attackStartAttack1
+  AttackEvent: attackStartAttack3
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartAttack4
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartH2HAttack1
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -169,9 +156,22 @@ Attacks:
 - AttackData:
     DamageMult: 1
     Chance: 1
+    Flags:
+    - BashAttack
+    - PowerAttack
     StrikeAngle: 35
+    Stagger: 1
     StaminaMult: 1
-  AttackEvent: attackStartH2HAttack1
+  AttackEvent: bashPowerStart
+- AttackData:
+    DamageMult: 0.5
+    Chance: 1
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: bashStart
 BodyData:
   Male:
     Index: BodyTexture

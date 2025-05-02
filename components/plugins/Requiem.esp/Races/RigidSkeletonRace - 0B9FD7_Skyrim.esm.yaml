@@ -84,11 +84,11 @@ SkeletalModel:
     File: Actors\Draugr\Character Assets\SkeletonF.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F1CD:Skyrim.esm
   Female: 013ADD:Skyrim.esm
@@ -100,42 +100,7 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartA
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartE
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart1HMSlash
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart2HMAttackPowerChop
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartX2
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart1HMX2
-- AttackData:
-    DamageMult: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartForwardB
+  AttackEvent: attackStart1HMBackSlash
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -149,20 +114,17 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStart1HMPowerChop
 - AttackData:
-    DamageMult: 0.5
-    Chance: 0.5
-    Flags:
-    - BashAttack
+    DamageMult: 1
+    Chance: 1
     StrikeAngle: 35
-    Stagger: 0.5
     StaminaMult: 1
-  AttackEvent: bashStart
+  AttackEvent: attackStart1HMPowerSlash
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartPowerChop
+  AttackEvent: attackStart1HMSlash
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -174,31 +136,19 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartC
+  AttackEvent: attackStart1HMX2
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartF
+  AttackEvent: attackStart2HMattackA
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartForwardD
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartGSForwardStab
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartGSForwardPowerChop2
+  AttackEvent: attackStart2HMAttackPowerChop
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -210,25 +160,7 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartForwardC
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartGSX2
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartPowerSlash
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: AttackStartH2HRight
+  AttackEvent: attackStart2HMForwardPowerChop
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -240,25 +172,19 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart2HMForwardPowerChop
+  AttackEvent: attackStart2HMPowerSlash
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartGSBackSlash
+  AttackEvent: attackStart2HMSlash
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart1HMBackSlash
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartForwardA
+  AttackEvent: attackStartA
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -270,7 +196,53 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart2HMSlash
+  AttackEvent: attackStartC
+- AttackData:
+    DamageMult: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartD
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartE
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartF
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartForwardA
+- AttackData:
+    DamageMult: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartForwardB
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartForwardC
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartForwardD
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartForwardE
 - AttackData:
     DamageMult: 2
     Chance: 0.3
@@ -285,12 +257,7 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart2HMPowerSlash
-- AttackData:
-    DamageMult: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartD
+  AttackEvent: attackStartGSBackSlash
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -302,25 +269,49 @@ Attacks:
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
+  AttackEvent: attackStartGSForwardPowerChop2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartGSForwardStab
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartGSX2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
   AttackEvent: AttackStartH2HLeft
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartForwardE
+  AttackEvent: AttackStartH2HRight
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart2HMattackA
+  AttackEvent: attackStartPowerChop
 - AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart1HMPowerSlash
+  AttackEvent: attackStartPowerSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartX2
 - AttackData:
     DamageMult: 1.5
     Chance: 0.5
@@ -331,6 +322,15 @@ Attacks:
     Stagger: 1.5
     StaminaMult: 1
   AttackEvent: bashPowerStart
+- AttackData:
+    DamageMult: 0.5
+    Chance: 0.5
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: bashStart
 BodyData:
   Male:
     Index: BodyTexture

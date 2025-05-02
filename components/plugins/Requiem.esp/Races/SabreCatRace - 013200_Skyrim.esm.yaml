@@ -80,11 +80,11 @@ SkeletalModel:
     File: Actors\SabreCat\Character Assets\Skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01920C:Skyrim.esm
   Female: 01920C:Skyrim.esm
@@ -93,15 +93,35 @@ FacegenFaceClamp: 3
 Attacks:
 - AttackData:
     DamageMult: 1.5
-    Chance: 1
-    Spell: 75CD1F:Requiem.esp
+    Chance: 0.2
+    Spell: 0B8783:Skyrim.esm
     Flags:
     - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1.25
+    StrikeAngle: 45
+    Stagger: 0.75
     RecoveryTime: 2
     StaminaMult: 1
-  AttackEvent: attackStart_ForwardPowerShort
+  AttackEvent: attackStart_Attack1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.2
+    Spell: 0B8783:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 45
+    Stagger: 0.75
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: attackStart_Attack2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Flags:
+    - RotatingAttack
+    AttackAngle: -90
+    StrikeAngle: 45
+    StaminaMult: 1
+  AttackEvent: attackStart_AttackLeft1
 - AttackData:
     DamageMult: 1
     Chance: 0.4
@@ -117,17 +137,6 @@ Attacks:
     StrikeAngle: 45
     StaminaMult: 1
   AttackEvent: attackStart_AttackRight1
-- AttackData:
-    DamageMult: 1.5
-    Chance: 0.2
-    Spell: 0B8783:Skyrim.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 45
-    Stagger: 0.75
-    RecoveryTime: 2
-    StaminaMult: 1
-  AttackEvent: attackStart_Attack2
 - AttackData:
     DamageMult: 1
     Chance: 0.55
@@ -146,25 +155,16 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStart_ForwardPower
 - AttackData:
-    DamageMult: 1
-    Chance: 1
-    Flags:
-    - RotatingAttack
-    AttackAngle: -90
-    StrikeAngle: 45
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackLeft1
-- AttackData:
     DamageMult: 1.5
-    Chance: 0.2
-    Spell: 0B8783:Skyrim.esm
+    Chance: 1
+    Spell: 75CD1F:Requiem.esp
     Flags:
     - PowerAttack
-    StrikeAngle: 45
-    Stagger: 0.75
+    StrikeAngle: 35
+    Stagger: 1.25
     RecoveryTime: 2
     StaminaMult: 1
-  AttackEvent: attackStart_Attack1
+  AttackEvent: attackStart_ForwardPowerShort
 BodyData:
   Male:
     Index: BodyTexture

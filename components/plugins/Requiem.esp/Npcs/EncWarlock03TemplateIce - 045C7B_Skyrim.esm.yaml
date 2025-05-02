@@ -39,32 +39,29 @@ Template: 044CCC:Skyrim.esm
 Race: 013746:Skyrim.esm
 ActorEffect:
 - 02B96B:Skyrim.esm
-- 07231A:Skyrim.esm
 - 02B96C:Skyrim.esm
 - 072316:Skyrim.esm
+- 07231A:Skyrim.esm
 - 07231C:Skyrim.esm
 Perks:
+- Perk: 053128:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581EA:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
+- Perk: 0581F4:Skyrim.esm
+  Rank: 1
+  Fluff: 0x000000
 - Perk: 0581F8:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
 - Perk: 0D7999:Skyrim.esm
   Rank: 1
   Fluff: 0x000000
-- Perk: 053128:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0581F4:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
-- Perk: 0581EA:Skyrim.esm
-  Rank: 1
-  Fluff: 0x000000
 Items:
 - Item:
-    Item: 10FAD1:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 10FACD:Skyrim.esm
+    Item: 044CD6:Skyrim.esm
     Count: 1
 - Item:
     Item: 10F8B4:Skyrim.esm
@@ -73,7 +70,10 @@ Items:
     Item: 10F8B5:Skyrim.esm
     Count: 1
 - Item:
-    Item: 044CD6:Skyrim.esm
+    Item: 10FACD:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 10FAD1:Skyrim.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -166,12 +166,12 @@ PlayerSkills:
   GearedUpWeapons: 1
   Unused2: 0x405AEF
 HeadParts:
-- 08555F:Skyrim.esm
 - 024244:Skyrim.esm
+- 08555F:Skyrim.esm
+- 08555F:Skyrim.esm
 - 0C710A:Skyrim.esm
 - 0D2EB0:Skyrim.esm
 - 0DFC05:Skyrim.esm
-- 08555F:Skyrim.esm
 HairColor: 0A0438:Skyrim.esm
 CombatStyle: 044CD0:Skyrim.esm
 NAM5: 255
@@ -230,6 +230,14 @@ TintLayers:
   Color: '#00000000'
   InterpolationValue: 0
   Preset: 175
+- Index: 23
+  Color: '#00FDFDFD'
+  InterpolationValue: 0
+  Preset: 345
+- Index: 25
+  Color: '#00000000'
+  InterpolationValue: 0
+  Preset: 587
 - Index: 37
   Color: '#00000000'
   InterpolationValue: 0
@@ -254,10 +262,6 @@ TintLayers:
   Color: '#00FDFDFD'
   InterpolationValue: 0
   Preset: 321
-- Index: 23
-  Color: '#00FDFDFD'
-  InterpolationValue: 0
-  Preset: 345
 - Index: 43
   Color: '#00FDFDFD'
   InterpolationValue: 0
@@ -282,9 +286,5 @@ TintLayers:
   Color: '#00FDFDFD'
   InterpolationValue: 0
   Preset: 489
-- Index: 25
-  Color: '#00000000'
-  InterpolationValue: 0
-  Preset: 587
 MajorFlags:
 - 0x40000

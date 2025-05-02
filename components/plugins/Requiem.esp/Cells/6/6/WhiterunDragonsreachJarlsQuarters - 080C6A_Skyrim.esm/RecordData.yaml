@@ -42,33 +42,27 @@ Music: 06D542:Skyrim.esm
 ImageSpace: 036ED2:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 1CD4A3:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 0139B1:Skyrim.esm
-  Placement:
-    Position: -1211.761, 2021.4922, 504.92148
-    Rotation: -0.15163158, -0.15447289, 0.81179976
-- MutagenObjectType: PlacedObject
-  FormKey: 1CD4A0:Requiem.esp
-  Base: 0C5891:Skyrim.esm
+  FormKey: 099F54:Skyrim.esm
+  Version2: 2
+  Base: 021363:Skyrim.esm
   Lock:
     Level: Master
     Unused: 0x000000
     Unused2: 0x0000000000000000000000
+  LocationReference: 01F871:Skyrim.esm
   Placement:
-    Position: -1191.7753, 2051.0337, 448
-    Rotation: 0, -0, 5.483193
+    Position: 258.06046, 2381.6448, 448
 - MutagenObjectType: PlacedObject
-  FormKey: 1CD4A2:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
+  FormKey: 099F63:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  Version2: 2
   SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 0139AF:Skyrim.esm
+  - InitiallyDisabled
+  Base: 021374:Skyrim.esm
+  LocationReference: 01F871:Skyrim.esm
   Placement:
-    Position: -1218.152, 2035.3289, 507.99194
-    Rotation: -0.15336749, -0.15548685, 0.79294664
+    Position: -1420.2346, 2052.501, 448
+    Rotation: 0, -0, 3.1415927
 - MutagenObjectType: PlacedObject
   FormKey: 0E2A12:Skyrim.esm
   Version2: 1
@@ -106,26 +100,32 @@ Temporary:
   Placement:
     Position: -842.10876, 2353.4045, 449.99988
 - MutagenObjectType: PlacedObject
-  FormKey: 099F63:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  Version2: 2
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 021374:Skyrim.esm
-  LocationReference: 01F871:Skyrim.esm
-  Placement:
-    Position: -1420.2346, 2052.501, 448
-    Rotation: 0, -0, 3.1415927
-- MutagenObjectType: PlacedObject
-  FormKey: 099F54:Skyrim.esm
-  Version2: 2
-  Base: 021363:Skyrim.esm
+  FormKey: 1CD4A0:Requiem.esp
+  Base: 0C5891:Skyrim.esm
   Lock:
     Level: Master
     Unused: 0x000000
     Unused2: 0x0000000000000000000000
-  LocationReference: 01F871:Skyrim.esm
   Placement:
-    Position: 258.06046, 2381.6448, 448
+    Position: -1191.7753, 2051.0337, 448
+    Rotation: 0, -0, 5.483193
+- MutagenObjectType: PlacedObject
+  FormKey: 1CD4A2:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139AF:Skyrim.esm
+  Placement:
+    Position: -1218.152, 2035.3289, 507.99194
+    Rotation: -0.15336749, -0.15548685, 0.79294664
+- MutagenObjectType: PlacedObject
+  FormKey: 1CD4A3:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139B1:Skyrim.esm
+  Placement:
+    Position: -1211.761, 2021.4922, 504.92148
+    Rotation: -0.15163158, -0.15447289, 0.81179976
 MajorFlags:
 - 0x40000

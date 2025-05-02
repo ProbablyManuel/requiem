@@ -47,73 +47,6 @@ WornArmor: 006AFB:Dawnguard.esm
 AttackRace: 006AFA:Dawnguard.esm
 Attacks:
 - AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - PowerAttack
-    - OverrideData
-    StrikeAngle: 35
-    Stagger: 0.5
-    StaminaMult: 1
-  AttackEvent: attackStart2HMForwardPowerChop
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartGSChop
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: attackStartGSBackSlash
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartGSForwardPowerB
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: attackStart1HMX2
-- AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - PowerAttack
-    - OverrideData
-    StrikeAngle: 35
-    Stagger: 0.5
-    StaminaMult: 1
-  AttackEvent: attackStart2HMPowerChop
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: attackStart2HMBackSwipe
-- AttackData:
     DamageMult: 1
     Chance: 1
     Spell: 0B7A01:Skyrim.esm
@@ -145,42 +78,6 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackStart1HMPowerChop
 - AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: attackStart2HMSlash
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: attackStart1HMSwipe
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: attackStartGSX2
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    Spell: 0B7A01:Skyrim.esm
-    Flags:
-    - OverrideData
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: AttackStartH2HRight
-- AttackData:
     DamageMult: 1.5
     Chance: 1
     Spell: 0B7A01:Skyrim.esm
@@ -199,7 +96,101 @@ Attacks:
     - OverrideData
     StrikeAngle: 50
     StaminaMult: 1
+  AttackEvent: attackStart1HMSwipe
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart1HMX2
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart2HMBackSwipe
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart2HMForwardPowerChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
   AttackEvent: attackStart2HMForwardSwipe
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - PowerAttack
+    - OverrideData
+    StrikeAngle: 35
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackStart2HMPowerChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStart2HMSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStartGSBackSlash
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartGSChop
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStartGSForwardPowerB
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: attackStartGSX2
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -210,6 +201,15 @@ Attacks:
     StrikeAngle: 50
     StaminaMult: 1
   AttackEvent: AttackStartH2HLeft
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0B7A01:Skyrim.esm
+    Flags:
+    - OverrideData
+    StrikeAngle: 50
+    StaminaMult: 1
+  AttackEvent: AttackStartH2HRight
 Perks:
 - Perk: 0581EA:Skyrim.esm
   Rank: 1

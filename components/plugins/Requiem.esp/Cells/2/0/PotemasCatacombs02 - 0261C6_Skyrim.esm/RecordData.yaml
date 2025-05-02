@@ -37,6 +37,15 @@ EncounterZone: 03EC54:Skyrim.esm
 Music: 094BDD:Skyrim.esm
 ImageSpace: 02EDEB:Skyrim.esm
 Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 31E0C7:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139A7:Skyrim.esm
+  Placement:
+    Position: -3792.614, -451.8331, -153.54105
+    Rotation: 0.055135097, -0.101925716, 5.783526
 - MutagenObjectType: PlacedNpc
   FormKey: 31E0C8:Requiem.esp
   MajorRecordFlagsRaw: 512
@@ -50,14 +59,5 @@ Temporary:
     Rotation: 0, 0, 3.88319
   MajorFlags:
   - StartsDead
-- MutagenObjectType: PlacedObject
-  FormKey: 31E0C7:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 0139A7:Skyrim.esm
-  Placement:
-    Position: -3792.614, -451.8331, -153.54105
-    Rotation: 0.055135097, -0.101925716, 5.783526
 MajorFlags:
 - 0x40000

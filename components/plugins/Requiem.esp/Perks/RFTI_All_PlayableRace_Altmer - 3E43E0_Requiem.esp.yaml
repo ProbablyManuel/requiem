@@ -8,7 +8,97 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 12
+  Priority: 1
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 013743:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 088840:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Alteration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Conjuration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Enchanting
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Restoration
+      ComparisonValue: 1
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.05
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 013743:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 088840:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Destruction
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Illusion
+      ComparisonValue: 1
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.1
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 10
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -29,13 +119,13 @@ Effects:
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 0F8A4E:Skyrim.esm
+        MutagenObjectType: GetIsObjectTypeConditionData
+        FormType: Spell
       ComparisonValue: 1
-  EntryPoint: ModSpellMagnitude
-  PerkConditionTabCount: 3
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 1.15
+  Value: 0.8
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 11
   Conditions:
@@ -276,7 +366,7 @@ Effects:
   Modification: Multiply
   Value: 1.1
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 10
+  Priority: 12
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
@@ -297,100 +387,10 @@ Effects:
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: GetIsObjectTypeConditionData
-        FormType: Spell
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 0F8A4E:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: ModSpellCost
-  PerkConditionTabCount: 2
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
   Modification: Multiply
-  Value: 0.8
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 013743:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 088840:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Destruction
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Illusion
-      ComparisonValue: 1
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 1.1
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 013743:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 088840:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Alteration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Conjuration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Enchanting
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Restoration
-      ComparisonValue: 1
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 1.05
+  Value: 1.15

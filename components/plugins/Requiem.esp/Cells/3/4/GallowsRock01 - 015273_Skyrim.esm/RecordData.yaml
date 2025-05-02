@@ -51,7 +51,8 @@ Music: 05615B:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 0A9CDF:Skyrim.esm
+  FormKey: 0420B4:Skyrim.esm
+  Version2: 2
   Base: 03AC21:Skyrim.esm
   Lock:
     Level: Novice
@@ -60,57 +61,8 @@ Temporary:
     Unused2: 0x0000000000000000000000
   LocationReference: 019187:Skyrim.esm
   Placement:
-    Position: 5559.686, -3853.534, 2.168406
-    Rotation: 0, 0, 4.606381
-- MutagenObjectType: PlacedObject
-  FormKey: 36D50C:Requiem.esp
-  Base: 36D50B:Requiem.esp
-  EnableParent:
-    Reference: 0AA0A1:Skyrim.esm
-    Flags:
-    - SetEnableStateToOppositeOfParent
-    Unknown: 0x000000
-  Placement:
-    Position: 6177.644, 619.90375, 113.45021
-    Rotation: 0.86475223, -1.1953253, 5.396324
-- MutagenObjectType: PlacedObject
-  FormKey: 0A953B:Skyrim.esm
-  Version2: 2
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: dunPrisonerScript
-      Properties:
-      - MutagenObjectType: ScriptObjectProperty
-        Name: Prisoner
-        Object: 0A9544:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: prisonerFaction
-        Object: 043594:Skyrim.esm
-  Base: 0AA785:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Key: 36D50B:Requiem.esp
-    Unused2: 0x0000000000000000000000
-  LocationReference: 019187:Skyrim.esm
-  LinkedReferences:
-  - Reference: 0A9544:Skyrim.esm
-  Placement:
-    Position: 6152.2236, -4916.0576, 519.8404
-    Rotation: 0, 0, 1.5707963
-- MutagenObjectType: PlacedObject
-  FormKey: 0ECB18:Skyrim.esm
-  Version2: 1
-  Base: 02064F:Skyrim.esm
-  Lock:
-    Level: Master
-    Unused: 0x000000
-    Key: 36D50B:Requiem.esp
-    Unused2: 0x0000000000000000000000
-  LocationReference: 019187:Skyrim.esm
-  Placement:
-    Position: 5448.7397, -4135.851, 7.01484
-    Rotation: 0, -0, 2.933189
+    Position: 5859.7075, 16.212564, 0.45990658
+    Rotation: 0, -0, 5.7331905
 - MutagenObjectType: PlacedObject
   FormKey: 0A9533:Skyrim.esm
   Version2: 2
@@ -137,6 +89,57 @@ Temporary:
     Position: 7168, -4621.277, 520.502
     Rotation: 0, 0, 4.712389
 - MutagenObjectType: PlacedObject
+  FormKey: 0A9535:Skyrim.esm
+  Version2: 1
+  Base: 040BB2:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 7168, -5141.591, 519.50793
+    Rotation: 0, 0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 0A9538:Skyrim.esm
+  Version2: 1
+  Base: 040BB2:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  Placement:
+    Position: 6151.733, -3895.9048, 519.8404
+    Rotation: 0, 0, 1.5707963
+- MutagenObjectType: PlacedObject
+  FormKey: 0A953B:Skyrim.esm
+  Version2: 2
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: dunPrisonerScript
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Prisoner
+        Object: 0A9544:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: prisonerFaction
+        Object: 043594:Skyrim.esm
+  Base: 0AA785:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Key: 36D50B:Requiem.esp
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019187:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0A9544:Skyrim.esm
+  Placement:
+    Position: 6152.2236, -4916.0576, 519.8404
+    Rotation: 0, 0, 1.5707963
+- MutagenObjectType: PlacedObject
   FormKey: 0A9C49:Skyrim.esm
   Version2: 1
   Base: 042035:Skyrim.esm
@@ -162,8 +165,7 @@ Temporary:
     Position: 3847.9568, -1887.1522, 369.33258
     Rotation: 0, -0, 3.0331903
 - MutagenObjectType: PlacedObject
-  FormKey: 0420B4:Skyrim.esm
-  Version2: 2
+  FormKey: 0A9CDF:Skyrim.esm
   Base: 03AC21:Skyrim.esm
   Lock:
     Level: Novice
@@ -172,34 +174,21 @@ Temporary:
     Unused2: 0x0000000000000000000000
   LocationReference: 019187:Skyrim.esm
   Placement:
-    Position: 5859.7075, 16.212564, 0.45990658
-    Rotation: 0, -0, 5.7331905
+    Position: 5559.686, -3853.534, 2.168406
+    Rotation: 0, 0, 4.606381
 - MutagenObjectType: PlacedObject
-  FormKey: 0A9538:Skyrim.esm
+  FormKey: 0ECB18:Skyrim.esm
   Version2: 1
-  Base: 040BB2:Skyrim.esm
+  Base: 02064F:Skyrim.esm
   Lock:
-    Level: Novice
+    Level: Master
     Unused: 0x000000
     Key: 36D50B:Requiem.esp
     Unused2: 0x0000000000000000000000
   LocationReference: 019187:Skyrim.esm
   Placement:
-    Position: 6151.733, -3895.9048, 519.8404
-    Rotation: 0, 0, 1.5707963
-- MutagenObjectType: PlacedObject
-  FormKey: 0A9535:Skyrim.esm
-  Version2: 1
-  Base: 040BB2:Skyrim.esm
-  Lock:
-    Level: Novice
-    Unused: 0x000000
-    Key: 36D50B:Requiem.esp
-    Unused2: 0x0000000000000000000000
-  LocationReference: 019187:Skyrim.esm
-  Placement:
-    Position: 7168, -5141.591, 519.50793
-    Rotation: 0, 0, 4.712389
+    Position: 5448.7397, -4135.851, 7.01484
+    Rotation: 0, -0, 2.933189
 - MutagenObjectType: PlacedObject
   FormKey: 0ECB27:Skyrim.esm
   Base: 02064F:Skyrim.esm
@@ -215,5 +204,16 @@ Temporary:
   Placement:
     Position: 1855.8755, 398.01614, 133.44849
     Rotation: 0, 0, 5.676994
+- MutagenObjectType: PlacedObject
+  FormKey: 36D50C:Requiem.esp
+  Base: 36D50B:Requiem.esp
+  EnableParent:
+    Reference: 0AA0A1:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 6177.644, 619.90375, 113.45021
+    Rotation: 0.86475223, -1.1953253, 5.396324
 MajorFlags:
 - 0x40000

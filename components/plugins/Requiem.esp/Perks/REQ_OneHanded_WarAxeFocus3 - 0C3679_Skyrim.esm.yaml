@@ -21,6 +21,8 @@ Conditions:
 NumRanks: 1
 Playable: True
 Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: AD399E:Requiem.esp
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
@@ -35,5 +37,3 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.3
-- MutagenObjectType: PerkAbilityEffect
-  Ability: AD399E:Requiem.esp

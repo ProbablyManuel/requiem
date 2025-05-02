@@ -82,17 +82,34 @@ SkeletalModel:
     File: Actors\Giant\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F225:Skyrim.esm
   Female: 01F225:Skyrim.esm
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
+- AttackData:
+    DamageMult: 0.2
+    Chance: 0.3
+    Spell: 02FFD2:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 180
+    Stagger: 0.5
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_Stomp
+- AttackData:
+    DamageMult: 0.2
+    Chance: 1
+    AttackAngle: 180
+    StrikeAngle: 65
+    StaminaMult: 1
+  AttackEvent: attackStart_BackAttack
 - AttackData:
     DamageMult: 0.1
     Chance: 0.5
@@ -115,16 +132,6 @@ Attacks:
   AttackEvent: attackStart_HandSwipeAttack
 - AttackData:
     DamageMult: 0.2
-    Chance: 0.3
-    Spell: 02FFD2:Skyrim.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 180
-    Stagger: 0.5
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_Stomp
-- AttackData:
-    DamageMult: 0.2
     Chance: 1
     Flags:
     - BashAttack
@@ -132,13 +139,6 @@ Attacks:
     Stagger: 1
     StaminaMult: 1
   AttackEvent: bashStart
-- AttackData:
-    DamageMult: 0.2
-    Chance: 1
-    AttackAngle: 180
-    StrikeAngle: 65
-    StaminaMult: 1
-  AttackEvent: attackStart_BackAttack
 BodyData:
   Male:
     Index: BodyTexture

@@ -10,19 +10,6 @@ NumRanks: 1
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AD380E:Requiem.esp
-      ComparisonValue: 1
-  EntryPoint: ModSecondaryValueWeight
-  PerkConditionTabCount: 3
-  Value: 0
-- MutagenObjectType: PerkEntryPointModifyValue
   Conditions:
   - RunOnTabIndex: 1
     Conditions:
@@ -35,3 +22,16 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 0.66
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD380E:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModSecondaryValueWeight
+  PerkConditionTabCount: 3
+  Value: 0

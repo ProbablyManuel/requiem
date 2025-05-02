@@ -44,6 +44,24 @@ Music: 094BDD:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
+  FormKey: 0F3248:Skyrim.esm
+  MajorRecordFlagsRaw: 1610612736
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  - 0x40000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+  Base: 0AB705:Skyrim.esm
+  RagdollData: 0x0070E932AE36A73FC2F3CB408000A2BCACC31FB40F001C33DB0FC93F
+  LocationReference: 019157:Skyrim.esm
+  Placement:
+    Position: 3897.6782, 4374.9595, 48.652573
+    Rotation: 4.712389, 5.862388, 1.5707964
+- MutagenObjectType: PlacedObject
   FormKey: 0F334E:Skyrim.esm
   Version2: 1
   Base: 020670:Skyrim.esm
@@ -64,23 +82,5 @@ Temporary:
   Placement:
     Position: 3949.4863, 4266.191, 0.765808
     Rotation: 0, 0, 2.5999994
-- MutagenObjectType: PlacedObject
-  FormKey: 0F3248:Skyrim.esm
-  MajorRecordFlagsRaw: 1610612736
-  SkyrimMajorRecordFlags:
-  - 0x20000000
-  - 0x40000000
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: defaultDisableHavokOnLoad
-      Properties:
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnHit
-  Base: 0AB705:Skyrim.esm
-  RagdollData: 0x0070E932AE36A73FC2F3CB408000A2BCACC31FB40F001C33DB0FC93F
-  LocationReference: 019157:Skyrim.esm
-  Placement:
-    Position: 3897.6782, 4374.9595, 48.652573
-    Rotation: 4.712389, 5.862388, 1.5707964
 MajorFlags:
 - 0x40000

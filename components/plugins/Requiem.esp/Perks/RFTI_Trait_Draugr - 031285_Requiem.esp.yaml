@@ -8,29 +8,37 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 20
-  EntryPoint: ModFallingDamage
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 0.01
-- MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 15
+  Priority: 10
   Conditions:
   - RunOnTabIndex: 2
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: 10AA1A:Skyrim.esm
+        Keyword: AD3957:Requiem.esp
       ComparisonValue: 1
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3955:Requiem.esp
+        MutagenObjectType: GetIsIDConditionData
+        Object: 011BAD:Dawnguard.esm
   EntryPoint: ModIncomingDamage
   PerkConditionTabCount: 3
   Modification: Multiply
-  Value: 1.5
+  Value: 0.7
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 11
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3956:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.5
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 14
   Conditions:
@@ -52,34 +60,26 @@ Effects:
   Modification: Multiply
   Value: 0.1
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 11
+  Priority: 15
   Conditions:
   - RunOnTabIndex: 2
     Conditions:
     - MutagenObjectType: ConditionFloat
       Data:
         MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3956:Requiem.esp
+        Keyword: 10AA1A:Skyrim.esm
       ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3955:Requiem.esp
   EntryPoint: ModIncomingDamage
   PerkConditionTabCount: 3
   Modification: Multiply
-  Value: 0.5
+  Value: 1.5
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 10
-  Conditions:
-  - RunOnTabIndex: 2
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: AD3957:Requiem.esp
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsIDConditionData
-        Object: 011BAD:Dawnguard.esm
-  EntryPoint: ModIncomingDamage
-  PerkConditionTabCount: 3
+  Priority: 20
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
   Modification: Multiply
-  Value: 0.7
+  Value: 0.01

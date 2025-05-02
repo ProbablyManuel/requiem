@@ -83,11 +83,11 @@ SkeletalModel:
     File: Actors\Horker\Character Assets\skeleton.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 01F22D:Skyrim.esm
   Female: 01F22D:Skyrim.esm
@@ -96,35 +96,17 @@ FacegenFaceClamp: 3
 Attacks:
 - AttackData:
     DamageMult: 1
-    Chance: 0.4
-    Spell: 0638B2:Skyrim.esm
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_AttackRight1
-- AttackData:
-    DamageMult: 1
     Spell: 0638B2:Skyrim.esm
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: attackStart_Attack2
 - AttackData:
     DamageMult: 1
-    Chance: 1
+    Chance: 0.4
     Spell: 0638B2:Skyrim.esm
-    AttackAngle: 10
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_HorkerSwim
-- AttackData:
-    DamageMult: 1.5
-    Chance: 0.2
-    Spell: 0638B2:Skyrim.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 0.75
-    StaminaMult: 1
-  AttackEvent: attackStart_ForwardPowerShort
+  AttackEvent: attackStart_AttackLeft1
 - AttackData:
     Spell: 0638B2:Skyrim.esm
     StrikeAngle: 35
@@ -136,7 +118,25 @@ Attacks:
     Spell: 0638B2:Skyrim.esm
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStart_AttackLeft1
+  AttackEvent: attackStart_AttackRight1
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.2
+    Spell: 0638B2:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: attackStart_ForwardPowerShort
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    Spell: 0638B2:Skyrim.esm
+    AttackAngle: 10
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_HorkerSwim
 BodyData:
   Male:
     Index: BodyTexture

@@ -16,12 +16,12 @@ NumRanks: 5
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 1
-  EntryPoint: ModInitialIngredientEffectsLearned
-  PerkConditionTabCount: 2
-  Value: 4
-- MutagenObjectType: PerkEntryPointModifyValue
   EntryPoint: ModAlchemyEffectiveness
   PerkConditionTabCount: 1
   Modification: Multiply
   Value: 1.5
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 1
+  EntryPoint: ModInitialIngredientEffectsLearned
+  PerkConditionTabCount: 2
+  Value: 4

@@ -453,50 +453,21 @@ NavigationMeshes:
   - 0x40000
 Persistent:
 - MutagenObjectType: PlacedObject
-  FormKey: 196C93:Requiem.esp
+  FormKey: 196C7A:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
   - 0x400
-  Base: 0C1D83:Skyrim.esm
+  Base: 04203A:Skyrim.esm
+  TeleportDestination:
+    Door: 075E4D:Requiem.esp
+    Position: 4318.249, 8739.019, 25.336777
+    Rotation: 0, 0, 3.5910096
+  NavigationDoorLink:
+    NavMesh: 1994D2:Requiem.esp
+    TeleportMarkerTriangle: 45
   Placement:
-    Position: 1856.919, 1757.8496, 201.16173
-    Rotation: 0, 0.5235988, 4.082554
-- MutagenObjectType: PlacedObject
-  FormKey: 196C7E:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 000034:Skyrim.esm
-  Placement:
-    Position: 2005.9922, 2197.207, 143.46997
-    Rotation: 0, -0, 2.7
-- MutagenObjectType: PlacedObject
-  FormKey: 196C8D:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 2301.211, 1783.8945, 244.98566
-    Rotation: 1.5707964, -1.00472, 6.2482786
-- MutagenObjectType: PlacedObject
-  FormKey: 196C88:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 2447.1367, 2066.3281, 244.98566
-    Rotation: 1.5707964, 6.1784654, 6.2482786
-- MutagenObjectType: PlacedObject
-  FormKey: 196C90:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 1851.1885, 1817.9648, 244.98566
-    Rotation: -1.5707964, -0.53687274, 3.1066859
+    Position: 2249.87, 1594.5723, 141.15312
+    Rotation: 0, 0, 2.791005
 - MutagenObjectType: PlacedObject
   FormKey: 196C7B:Requiem.esp
   MajorRecordFlagsRaw: 1024
@@ -508,15 +479,6 @@ Persistent:
     Position: 2149.2227, 1851.6445, 127.64533
     Rotation: 1.190023, 0.34490848, 3.0450187
 - MutagenObjectType: PlacedObject
-  FormKey: 196C83:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 2305.8926, 1841.8867, 208.45215
-    Rotation: 0, -0, 0.41681972
-- MutagenObjectType: PlacedObject
   FormKey: 196C7C:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
@@ -526,23 +488,23 @@ Persistent:
     Position: 2068.6357, 2044.1914, 143.46997
     Rotation: 0, -0, 1.100001
 - MutagenObjectType: PlacedObject
-  FormKey: 196C89:Requiem.esp
+  FormKey: 196C7D:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
   - 0x400
-  Base: 0C1D83:Skyrim.esm
+  Base: 00003B:Skyrim.esm
   Placement:
-    Position: 2368.0498, 2154.9473, 244.98566
-    Rotation: 1.5707964, 6.1784654, 6.2482786
+    Position: 2005.0469, 2198.92, 178.77292
+    Rotation: 0, -0, 2.6000001
 - MutagenObjectType: PlacedObject
-  FormKey: 196C8C:Requiem.esp
+  FormKey: 196C7E:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
   - 0x400
-  Base: 0C1D83:Skyrim.esm
+  Base: 000034:Skyrim.esm
   Placement:
-    Position: 2335.7178, 1750.0469, 244.98566
-    Rotation: 1.5707964, -1.00472, 6.2482786
+    Position: 2005.9922, 2197.207, 143.46997
+    Rotation: 0, -0, 2.7
 - MutagenObjectType: PlacedObject
   FormKey: 196C7F:Requiem.esp
   MajorRecordFlagsRaw: 536871936
@@ -555,42 +517,6 @@ Persistent:
   Base: 10F738:Skyrim.esm
   Placement:
     Position: 2105.4238, 1954.709, 197.6406
-- MutagenObjectType: PlacedObject
-  FormKey: 196C82:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 2305.8926, 1841.8867, 208.45215
-    Rotation: 0, -0, 2.200005
-- MutagenObjectType: PlacedObject
-  FormKey: 196C8F:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 1898.9404, 1805.373, 244.98566
-    Rotation: -1.5707964, -0.53687274, 3.1066859
-- MutagenObjectType: PlacedObject
-  FormKey: 196C84:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 2227.419, 2079.8457, 208.45215
-    Rotation: 0, -0, 1.5168214
-- MutagenObjectType: PlacedObject
-  FormKey: 196C8B:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 2346.9102, 1798.1445, 244.98566
-    Rotation: 1.5707964, -1.00472, 6.2482786
 - MutagenObjectType: PlacedObject
   FormKey: 196C80:Requiem.esp
   MajorRecordFlagsRaw: 3072
@@ -633,41 +559,41 @@ Persistent:
     Position: 2152.2354, 1847.8008, 154.78728
     Rotation: 4.7472954, 5.8643064, 0
 - MutagenObjectType: PlacedObject
-  FormKey: 196C7D:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 00003B:Skyrim.esm
-  Placement:
-    Position: 2005.0469, 2198.92, 178.77292
-    Rotation: 0, -0, 2.6000001
-- MutagenObjectType: PlacedObject
-  FormKey: 196C8E:Requiem.esp
+  FormKey: 196C81:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
   - 0x400
   Base: 0C1D83:Skyrim.esm
   Placement:
-    Position: 1967.585, 1794.2988, 244.98566
-    Rotation: -1.5707964, -0.53687274, 3.1066859
+    Position: 1873.2959, 1850.5215, 190.02893
+    Rotation: 0, -0, 3.5000045
 - MutagenObjectType: PlacedObject
-  FormKey: 196C86:Requiem.esp
+  FormKey: 196C82:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
   - 0x400
   Base: 0C1D83:Skyrim.esm
   Placement:
-    Position: 2416.417, 2104.9941, 244.98566
-    Rotation: 1.5707964, 6.1784654, 6.2482786
+    Position: 2305.8926, 1841.8867, 208.45215
+    Rotation: 0, -0, 2.200005
 - MutagenObjectType: PlacedObject
-  FormKey: 196C91:Requiem.esp
+  FormKey: 196C83:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
   - 0x400
   Base: 0C1D83:Skyrim.esm
   Placement:
-    Position: 1886.0303, 1851.4688, 244.98566
-    Rotation: -1.5707964, -0.53687274, 3.1066859
+    Position: 2305.8926, 1841.8867, 208.45215
+    Rotation: 0, -0, 0.41681972
+- MutagenObjectType: PlacedObject
+  FormKey: 196C84:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 2227.419, 2079.8457, 208.45215
+    Rotation: 0, -0, 1.5168214
 - MutagenObjectType: PlacedObject
   FormKey: 196C85:Requiem.esp
   MajorRecordFlagsRaw: 1024
@@ -678,6 +604,42 @@ Persistent:
     Position: 2227.419, 2079.8457, 304.87668
     Rotation: 0, -0, 0.71682465
 - MutagenObjectType: PlacedObject
+  FormKey: 196C86:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 2416.417, 2104.9941, 244.98566
+    Rotation: 1.5707964, 6.1784654, 6.2482786
+- MutagenObjectType: PlacedObject
+  FormKey: 196C87:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 2399.17, 2060.3398, 244.98566
+    Rotation: 1.5707964, 6.1784654, 6.2482786
+- MutagenObjectType: PlacedObject
+  FormKey: 196C88:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 2447.1367, 2066.3281, 244.98566
+    Rotation: 1.5707964, 6.1784654, 6.2482786
+- MutagenObjectType: PlacedObject
+  FormKey: 196C89:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 2368.0498, 2154.9473, 244.98566
+    Rotation: 1.5707964, 6.1784654, 6.2482786
+- MutagenObjectType: PlacedObject
   FormKey: 196C8A:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
@@ -686,6 +648,69 @@ Persistent:
   Placement:
     Position: 2355.9756, 1867.084, 244.98566
     Rotation: 1.5707964, -1.00472, 6.2482786
+- MutagenObjectType: PlacedObject
+  FormKey: 196C8B:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 2346.9102, 1798.1445, 244.98566
+    Rotation: 1.5707964, -1.00472, 6.2482786
+- MutagenObjectType: PlacedObject
+  FormKey: 196C8C:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 2335.7178, 1750.0469, 244.98566
+    Rotation: 1.5707964, -1.00472, 6.2482786
+- MutagenObjectType: PlacedObject
+  FormKey: 196C8D:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 2301.211, 1783.8945, 244.98566
+    Rotation: 1.5707964, -1.00472, 6.2482786
+- MutagenObjectType: PlacedObject
+  FormKey: 196C8E:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 1967.585, 1794.2988, 244.98566
+    Rotation: -1.5707964, -0.53687274, 3.1066859
+- MutagenObjectType: PlacedObject
+  FormKey: 196C8F:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 1898.9404, 1805.373, 244.98566
+    Rotation: -1.5707964, -0.53687274, 3.1066859
+- MutagenObjectType: PlacedObject
+  FormKey: 196C90:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 1851.1885, 1817.9648, 244.98566
+    Rotation: -1.5707964, -0.53687274, 3.1066859
+- MutagenObjectType: PlacedObject
+  FormKey: 196C91:Requiem.esp
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 0C1D83:Skyrim.esm
+  Placement:
+    Position: 1886.0303, 1851.4688, 244.98566
+    Rotation: -1.5707964, -0.53687274, 3.1066859
 - MutagenObjectType: PlacedObject
   FormKey: 196C92:Requiem.esp
   MajorRecordFlagsRaw: 1024
@@ -697,171 +722,21 @@ Persistent:
     Position: 1881.2925, 1655.9824, 278.88196
     Rotation: -1.5707964, -0.53687274, 3.1066904
 - MutagenObjectType: PlacedObject
-  FormKey: 196C87:Requiem.esp
+  FormKey: 196C93:Requiem.esp
   MajorRecordFlagsRaw: 1024
   SkyrimMajorRecordFlags:
   - 0x400
   Base: 0C1D83:Skyrim.esm
   Placement:
-    Position: 2399.17, 2060.3398, 244.98566
-    Rotation: 1.5707964, 6.1784654, 6.2482786
-- MutagenObjectType: PlacedObject
-  FormKey: 196C7A:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 04203A:Skyrim.esm
-  TeleportDestination:
-    Door: 075E4D:Requiem.esp
-    Position: 4318.249, 8739.019, 25.336777
-    Rotation: 0, 0, 3.5910096
-  NavigationDoorLink:
-    NavMesh: 1994D2:Requiem.esp
-    TeleportMarkerTriangle: 45
-  Placement:
-    Position: 2249.87, 1594.5723, 141.15312
-    Rotation: 0, 0, 2.791005
-- MutagenObjectType: PlacedObject
-  FormKey: 196C81:Requiem.esp
-  MajorRecordFlagsRaw: 1024
-  SkyrimMajorRecordFlags:
-  - 0x400
-  Base: 0C1D83:Skyrim.esm
-  Placement:
-    Position: 1873.2959, 1850.5215, 190.02893
-    Rotation: 0, -0, 3.5000045
+    Position: 1856.919, 1757.8496, 201.16173
+    Rotation: 0, 0.5235988, 4.082554
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 196D24:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 01396E:Skyrim.esm
-  Placement:
-    Position: 2010.4365, 2194.6602, 187.7015
-    Rotation: 3.1396983, -0.0017892551, 3.5385096
-- MutagenObjectType: PlacedObject
-  FormKey: 196CF6:Requiem.esp
-  Base: 03AD63:Skyrim.esm
-  Scale: 1.7
-  Placement:
-    Position: 1670.7891, 1853.3789, 244.82101
-- MutagenObjectType: PlacedObject
-  FormKey: 196CEA:Requiem.esp
-  Base: 03EADF:Skyrim.esm
-  Placement:
-    Position: 2525.8467, 1977.7402, 239.76999
-    Rotation: 0, -0, 0.6
-- MutagenObjectType: PlacedObject
-  FormKey: 196C99:Requiem.esp
+  FormKey: 196C94:Requiem.esp
   Base: 03CB92:Skyrim.esm
   Placement:
-    Position: 2048.2988, 1500.9805, 143.60078
+    Position: 2055.9688, 1450.3574, 141.22423
     Rotation: 0, -0, 3.1415927
-- MutagenObjectType: PlacedObject
-  FormKey: 196CB3:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.18
-  Placement:
-    Position: 1776.0547, 2246.9473, 176.58441
-    Rotation: 0, 0, 5.07141
-- MutagenObjectType: PlacedObject
-  FormKey: 196CCE:Requiem.esp
-  Base: 0A0F3F:Skyrim.esm
-  Placement:
-    Position: 2519.8867, 2064.0508, 329.57733
-- MutagenObjectType: PlacedObject
-  FormKey: 196CCB:Requiem.esp
-  Base: 0A0F3F:Skyrim.esm
-  Placement:
-    Position: 2045.7412, 1606.2441, 329.57733
-- MutagenObjectType: PlacedObject
-  FormKey: 196D2E:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 03AD60:Skyrim.esm
-  Placement:
-    Position: 1655.5928, 1900.0898, 239.50273
-- MutagenObjectType: PlacedObject
-  FormKey: 196CC6:Requiem.esp
-  Base: 033DA9:Skyrim.esm
-  Placement:
-    Position: 2154.1426, 1894.6426, 140.98654
-    Rotation: 0, -0, 0.361132
-- MutagenObjectType: PlacedObject
-  FormKey: 196CF0:Requiem.esp
-  Base: 043663:Requiem.esp
-  Scale: 0.9
-  Placement:
-    Position: 2472.2285, 1824.2031, 199.26996
-    Rotation: 0, -0, 3.5000002
-- MutagenObjectType: PlacedObject
-  FormKey: 196CF9:Requiem.esp
-  Base: 034CDD:Skyrim.esm
-  Scale: 1.1
-  Placement:
-    Position: 1680.1768, 1797.5195, 243.0383
-- MutagenObjectType: PlacedObject
-  FormKey: 196CBC:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.98
-  Placement:
-    Position: 1936.7266, 1966.8652, 176.65039
-    Rotation: 0, 0, 4.303041
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA3:Requiem.esp
-  Base: 03CB92:Skyrim.esm
-  Placement:
-    Position: 1533.3291, 2114.9727, 143.60078
-    Rotation: 0, -0, 1.6416078
-- MutagenObjectType: PlacedObject
-  FormKey: 196D1B:Requiem.esp
-  Base: 03E69E:Skyrim.esm
-  Placement:
-    Position: 2351.833, 2192.5605, 148.47943
-    Rotation: -0.00029644693, 0.002929549, 6.1963487
-- MutagenObjectType: PlacedObject
-  FormKey: 196CF5:Requiem.esp
-  Base: 06BC00:Skyrim.esm
-  Placement:
-    Position: 2484.665, 1865.9238, 210.50479
-    Rotation: -0.29771268, 0.2807276, 1.5844134
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA4:Requiem.esp
-  Base: 02A77C:Skyrim.esm
-  Placement:
-    Position: 2121.709, 2931.543, 142.3613
-    Rotation: 0, -0, 3.3832016
-- MutagenObjectType: PlacedObject
-  FormKey: 196D1E:Requiem.esp
-  Base: 0F08FB:Skyrim.esm
-  Placement:
-    Position: 1859.4862, 1633.9462, 206.77815
-    Rotation: 0.0056204763, 0.01701605, 2.4012907
-- MutagenObjectType: PlacedObject
-  FormKey: 196CEC:Requiem.esp
-  Base: 043663:Requiem.esp
-  Placement:
-    Position: 2475.079, 1803.373, 199.26996
-    Rotation: 0, -0, 0.8
-- MutagenObjectType: PlacedObject
-  FormKey: 196D11:Requiem.esp
-  Base: 03E6A6:Skyrim.esm
-  Placement:
-    Position: 1853.7393, 1778.6758, 149.20331
-    Rotation: 1.589311, 0.44931853, 3.05113
-- MutagenObjectType: PlacedObject
-  FormKey: 196D07:Requiem.esp
-  Base: 03E6A6:Skyrim.esm
-  Placement:
-    Position: 2410.6104, 1798.9805, 146.94272
-    Rotation: 0.22621447, 0.070682764, 6.2661686
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE0:Requiem.esp
-  Base: 0AF5FD:Skyrim.esm
-  Placement:
-    Position: 1969.8516, 1585.5508, 212.45279
 - MutagenObjectType: PlacedObject
   FormKey: 196C95:Requiem.esp
   Base: 03CB92:Skyrim.esm
@@ -869,41 +744,180 @@ Temporary:
     Position: 2449.503, 1623.9199, 143.60078
     Rotation: 0, -0, 3.1415927
 - MutagenObjectType: PlacedObject
-  FormKey: 196D2D:Requiem.esp
-  Base: 0A44A0:Skyrim.esm
-  Scale: 0.8
+  FormKey: 196C96:Requiem.esp
+  Base: 0D7BA1:Skyrim.esm
   Placement:
-    Position: 1627.625, 1970.8535, 203.1541
-    Rotation: -0.022255769, 0.00019903341, 3.4835331
+    Position: 2007.9062, 2193.8105, 137.94681
+    Rotation: 0, -0, 5.895294
 - MutagenObjectType: PlacedObject
-  FormKey: 196CB9:Requiem.esp
+  FormKey: 196C97:Requiem.esp
+  Base: 02A77C:Skyrim.esm
+  Placement:
+    Position: 2326.9492, 1164.457, 142.3613
+    Rotation: 0, -0, 6.183187
+- MutagenObjectType: PlacedObject
+  FormKey: 196C98:Requiem.esp
+  Base: 03CB92:Skyrim.esm
+  Placement:
+    Position: 2461.0947, 1671.8691, 143.60078
+    Rotation: 0, -0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 196C99:Requiem.esp
+  Base: 03CB92:Skyrim.esm
+  Placement:
+    Position: 2048.2988, 1500.9805, 143.60078
+    Rotation: 0, -0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 196C9A:Requiem.esp
+  Base: 03CB92:Skyrim.esm
+  Placement:
+    Position: 2577.7646, 2139.2695, 143.60078
+    Rotation: 0, -0, 4.441593
+- MutagenObjectType: PlacedObject
+  FormKey: 196C9B:Requiem.esp
+  Base: 02A77C:Skyrim.esm
+  Placement:
+    Position: 2936.376, 1758.5215, 142.3613
+    Rotation: 0, -0, 5.183193
+- MutagenObjectType: PlacedObject
+  FormKey: 196C9C:Requiem.esp
+  Base: 071850:Skyrim.esm
+  Placement:
+    Position: 2070.2383, 2037.9609, 591.5835
+- MutagenObjectType: PlacedObject
+  FormKey: 196C9D:Requiem.esp
+  Base: 03CB92:Skyrim.esm
+  Placement:
+    Position: 2268.8105, 2513.4062, 143.60078
+    Rotation: 0, -0, 4.441593
+- MutagenObjectType: PlacedObject
+  FormKey: 196C9E:Requiem.esp
+  Base: 02A77C:Skyrim.esm
+  Placement:
+    Position: 2775.8428, 2602.211, 142.3613
+    Rotation: 0, -0, 4.183197
+- MutagenObjectType: PlacedObject
+  FormKey: 196C9F:Requiem.esp
+  Base: 03CB92:Skyrim.esm
+  Placement:
+    Position: 1783.8242, 2426.0645, 143.60078
+    Rotation: 0, -0, 4.941593
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA0:Requiem.esp
+  Base: 02A77C:Skyrim.esm
+  Placement:
+    Position: 1159.624, 1882.8965, 142.3613
+    Rotation: 0, -0, 1.5832129
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA1:Requiem.esp
+  Base: 03CB92:Skyrim.esm
+  Placement:
+    Position: 1699.0908, 1658.9531, 143.60078
+    Rotation: 0, -0, 1.6416078
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA2:Requiem.esp
+  Base: 02A77C:Skyrim.esm
+  Placement:
+    Position: 1327.6016, 2602.8633, 142.3613
+    Rotation: 0, -0, 2.383208
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA3:Requiem.esp
+  Base: 03CB92:Skyrim.esm
+  Placement:
+    Position: 1533.3291, 2114.9727, 143.60078
+    Rotation: 0, -0, 1.6416078
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA4:Requiem.esp
+  Base: 02A77C:Skyrim.esm
+  Placement:
+    Position: 2121.709, 2931.543, 142.3613
+    Rotation: 0, -0, 3.3832016
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA5:Requiem.esp
+  Base: 033DA9:Skyrim.esm
+  Placement:
+    Position: 2162.3418, 1922.2363, 142.58508
+    Rotation: 0, -0, 0.71112955
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA6:Requiem.esp
+  Base: 033DA9:Skyrim.esm
+  Placement:
+    Position: 2127.2715, 1884.623, 140.98654
+    Rotation: 0, -0, 0.17794614
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA7:Requiem.esp
+  Base: 033DA9:Skyrim.esm
+  Placement:
+    Position: 2088.2422, 1903.627, 142.58508
+    Rotation: 0, -0, 5.4543147
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA8:Requiem.esp
+  Base: 033DA9:Skyrim.esm
+  Placement:
+    Position: 2170.4912, 1956.4258, 142.58508
+    Rotation: 0, -0, 0.71112955
+- MutagenObjectType: PlacedObject
+  FormKey: 196CA9:Requiem.esp
+  Base: 033DA9:Skyrim.esm
+  Placement:
+    Position: 2053.8057, 1911.9688, 142.58508
+    Rotation: 0, -0, 5.944315
+- MutagenObjectType: PlacedObject
+  FormKey: 196CAA:Requiem.esp
+  Base: 06F705:Skyrim.esm
+  Scale: 0.89
+  Placement:
+    Position: 1824.4482, 1995.2168, 126.93239
+    Rotation: 0, -0, 3.88
+- MutagenObjectType: PlacedObject
+  FormKey: 196CAB:Requiem.esp
+  Base: 06F705:Skyrim.esm
+  Scale: 0.89
+  Placement:
+    Position: 2284.962, 2184.1777, 127.21649
+    Rotation: 0, -0, 1.5800035
+- MutagenObjectType: PlacedObject
+  FormKey: 196CAC:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.18
+  Placement:
+    Position: 1867.9873, 2216.6484, 181.79034
+    Rotation: 0, 0, 5.07141
+- MutagenObjectType: PlacedObject
+  FormKey: 196CAD:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.98
+  Placement:
+    Position: 2006.9297, 2050.621, 181.85632
+    Rotation: 0, 0, 4.303041
+- MutagenObjectType: PlacedObject
+  FormKey: 196CAE:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.04
+  Placement:
+    Position: 2056.7744, 2060.004, 181.87817
+    Rotation: 0, 0, 2.2319322
+- MutagenObjectType: PlacedObject
+  FormKey: 196CAF:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.99
+  Placement:
+    Position: 2144.5986, 2153.0957, 181.85303
+    Rotation: 0, -0, 0.47768778
+- MutagenObjectType: PlacedObject
+  FormKey: 196CB0:Requiem.esp
   Base: 0368B8:Skyrim.esm
   Scale: 0.89
   Placement:
-    Position: 2201.7979, 2334.0547, 176.6801
+    Position: 2135.7725, 2264.7363, 181.88603
     Rotation: 0, 0, 0.20839119
 - MutagenObjectType: PlacedObject
-  FormKey: 3A6469:Requiem.esp
-  Base: 0B18CD:Skyrim.esm
+  FormKey: 196CB1:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.98
   Placement:
-    Position: 1861.887, 1625.9478, 219.07385
-    Rotation: 2.31919, 0.009313242, 5.3216305
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE6:Requiem.esp
-  Base: 03EADD:Skyrim.esm
-  Placement:
-    Position: 2530.4863, 2004.0391, 239.76997
-- MutagenObjectType: PlacedObject
-  FormKey: 196D00:Requiem.esp
-  Base: 03E69F:Skyrim.esm
-  Placement:
-    Position: 2387.8545, 1826.666, 147.41566
-- MutagenObjectType: PlacedNpc
-  FormKey: AD3AC1:Requiem.esp
-  Base: AD3A99:Requiem.esp
-  PersistentLocation: 019177:Skyrim.esm
-  Placement:
-    Position: 1946.2261, 1986.059, 173.0503
+    Position: 2055.6396, 2328.3848, 181.85632
+    Rotation: 0, -0, 2.2756522
 - MutagenObjectType: PlacedObject
   FormKey: 196CB2:Requiem.esp
   Base: 0368B8:Skyrim.esm
@@ -912,11 +926,118 @@ Temporary:
     Position: 1929.9033, 2312.6543, 181.88603
     Rotation: 0, 0, 3.1571026
 - MutagenObjectType: PlacedObject
-  FormKey: 196CFA:Requiem.esp
-  Base: 06BC0B:Skyrim.esm
+  FormKey: 196CB3:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.18
   Placement:
-    Position: 1677.7246, 1840.7285, 213.61346
-    Rotation: 0.0009183409, -0.0052586272, 8.891765E-05
+    Position: 1776.0547, 2246.9473, 176.58441
+    Rotation: 0, 0, 5.07141
+- MutagenObjectType: PlacedObject
+  FormKey: 196CB4:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.18
+  Placement:
+    Position: 1953.2773, 2425.5254, 176.58441
+    Rotation: 0, -0, 6.2714105
+- MutagenObjectType: PlacedObject
+  FormKey: 196CB5:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.18
+  Placement:
+    Position: 2161.7354, 2377.9746, 176.58441
+    Rotation: 0, -0, 0.6882252
+- MutagenObjectType: PlacedObject
+  FormKey: 196CB6:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.18
+  Placement:
+    Position: 2231.0342, 2278.955, 176.58441
+    Rotation: 0, -0, 3.1882253
+- MutagenObjectType: PlacedObject
+  FormKey: 196CB7:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.18
+  Placement:
+    Position: 2225.3643, 2095.3535, 176.58441
+    Rotation: 0, -0, 0.68823254
+- MutagenObjectType: PlacedObject
+  FormKey: 196CB8:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.18
+  Placement:
+    Position: 2168.2734, 2020.3965, 176.58441
+    Rotation: 0, -0, 4.9882255
+- MutagenObjectType: PlacedObject
+  FormKey: 196CB9:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.89
+  Placement:
+    Position: 2201.7979, 2334.0547, 176.6801
+    Rotation: 0, 0, 0.20839119
+- MutagenObjectType: PlacedObject
+  FormKey: 196CBA:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.89
+  Placement:
+    Position: 2029.2969, 2431.2188, 176.6801
+    Rotation: 0, -0, 3.1083913
+- MutagenObjectType: PlacedObject
+  FormKey: 196CBB:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.89
+  Placement:
+    Position: 1785.5859, 2277.9004, 176.6801
+    Rotation: 0, -0, 0.22520606
+- MutagenObjectType: PlacedObject
+  FormKey: 196CBC:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.98
+  Placement:
+    Position: 1936.7266, 1966.8652, 176.65039
+    Rotation: 0, 0, 4.303041
+- MutagenObjectType: PlacedObject
+  FormKey: 196CBD:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.98
+  Placement:
+    Position: 1783.9414, 2115.9727, 176.65039
+    Rotation: 0, -0, 6.103041
+- MutagenObjectType: PlacedObject
+  FormKey: 196CBE:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 1.18
+  Placement:
+    Position: 1772.9541, 2173.0684, 176.58441
+    Rotation: 0, -0, 1.488225
+- MutagenObjectType: PlacedObject
+  FormKey: 196CBF:Requiem.esp
+  Base: 0368B8:Skyrim.esm
+  Scale: 0.98
+  Placement:
+    Position: 2035.0225, 1956.1641, 176.65039
+    Rotation: 0, -0, 0.9198557
+- MutagenObjectType: PlacedObject
+  FormKey: 196CC0:Requiem.esp
+  Base: 0D7BD5:Skyrim.esm
+  Radius: -107.174286
+  LightData:
+    FadeOffset: 2.395873
+    ShadowDepthBias: 1
+  Placement:
+    Position: 2112.0713, 1922.6836, 246.34937
+    Rotation: 0, 0, 4.3000007
+- MutagenObjectType: PlacedObject
+  FormKey: 196CC2:Requiem.esp
+  Base: 02A77C:Skyrim.esm
+  Placement:
+    Position: 1563.9043, 1288.7168, 142.3613
+    Rotation: 0, -0, 0.78321725
+- MutagenObjectType: PlacedObject
+  FormKey: 196CC3:Requiem.esp
+  Base: 02AC59:Skyrim.esm
+  Placement:
+    Position: 2631.9316, 1722.9668, 152.04855
+    Rotation: 0, -0, 3.9707966
 - MutagenObjectType: PlacedObject
   FormKey: 196CC4:Requiem.esp
   Base: 02AC59:Skyrim.esm
@@ -930,20 +1051,129 @@ Temporary:
     Position: 2072.5615, 2034.0059, 568.9702
     Rotation: 0, -0, 3.4000018
 - MutagenObjectType: PlacedObject
-  FormKey: 196D01:Requiem.esp
-  Base: 03E69F:Skyrim.esm
+  FormKey: 196CC6:Requiem.esp
+  Base: 033DA9:Skyrim.esm
   Placement:
-    Position: 2267.46, 1787.7129, 149.7597
-    Rotation: 0.11164022, -0.09760135, 3.9001153
+    Position: 2154.1426, 1894.6426, 140.98654
+    Rotation: 0, -0, 0.361132
 - MutagenObjectType: PlacedObject
-  FormKey: 196CEB:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 039BE4:Skyrim.esm
+  FormKey: 196CC7:Requiem.esp
+  Base: 05F222:Skyrim.esm
   Placement:
-    Position: 2515.544, 1944.1504, 239.86998
-    Rotation: 0, -0, 2.7
+    Position: 2453.1738, 1754.4922, 143.44339
+    Rotation: 0, -0, 0.7500001
+- MutagenObjectType: PlacedObject
+  FormKey: 196CC8:Requiem.esp
+  Base: 05F222:Skyrim.esm
+  Placement:
+    Position: 2051.877, 1589.75, 143.44339
+    Rotation: 0, -0, 2.95
+- MutagenObjectType: PlacedObject
+  FormKey: 196CC9:Requiem.esp
+  Base: 05F222:Skyrim.esm
+  Placement:
+    Position: 1795.0381, 1675.9863, 143.44339
+    Rotation: 0, -0, 2.95
+- MutagenObjectType: PlacedObject
+  FormKey: 196CCA:Requiem.esp
+  Base: 05F222:Skyrim.esm
+  Placement:
+    Position: 2535.5498, 2058.6836, 143.44339
+    Rotation: 0, -0, 2.95
+- MutagenObjectType: PlacedObject
+  FormKey: 196CCB:Requiem.esp
+  Base: 0A0F3F:Skyrim.esm
+  Placement:
+    Position: 2045.7412, 1606.2441, 329.57733
+- MutagenObjectType: PlacedObject
+  FormKey: 196CCC:Requiem.esp
+  Base: 0A0F3F:Skyrim.esm
+  Placement:
+    Position: 1792.541, 1690.5117, 329.57733
+- MutagenObjectType: PlacedObject
+  FormKey: 196CCD:Requiem.esp
+  Base: 0A0F3F:Skyrim.esm
+  Placement:
+    Position: 2439.7715, 1758.8086, 329.57733
+- MutagenObjectType: PlacedObject
+  FormKey: 196CCE:Requiem.esp
+  Base: 0A0F3F:Skyrim.esm
+  Placement:
+    Position: 2519.8867, 2064.0508, 329.57733
+- MutagenObjectType: PlacedObject
+  FormKey: 196CCF:Requiem.esp
+  Base: 0A0F3F:Skyrim.esm
+  Placement:
+    Position: 1628.2002, 2044.2891, 329.57733
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD0:Requiem.esp
+  Base: 05F222:Skyrim.esm
+  Placement:
+    Position: 1612.5059, 2038.5684, 143.44339
+    Rotation: 0, -0, 2.95
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD1:Requiem.esp
+  Base: 05F222:Skyrim.esm
+  Placement:
+    Position: 2288.5674, 2427.3184, 143.44339
+    Rotation: 0, -0, 0.0668147
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD3:Requiem.esp
+  Base: 0D70ED:Skyrim.esm
+  Placement:
+    Position: 1922.9814, 1639.7676, 143.46994
+    Rotation: 0, -0, 0.400006
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD4:Requiem.esp
+  Base: 024CA4:Skyrim.esm
+  Scale: 0.9
+  Placement:
+    Position: 2515.1738, 1966.0098, 143.46999
+    Rotation: 0, -0, 1.8000029
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD5:Requiem.esp
+  Base: 024CA4:Skyrim.esm
+  Scale: 0.9
+  Placement:
+    Position: 2482.795, 1843.1875, 143.46999
+    Rotation: 0, -0, 1.9000021
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD6:Requiem.esp
+  Base: 024CA4:Skyrim.esm
+  Scale: 0.9
+  Placement:
+    Position: 1680.8447, 1817.1738, 143.46999
+    Rotation: 0, -0, 4.300006
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD7:Requiem.esp
+  Base: 024CA4:Skyrim.esm
+  Scale: 0.9
+  Placement:
+    Position: 1633.2803, 1934.9551, 143.46999
+    Rotation: 0, -0, 4.400005
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD8:Requiem.esp
+  Base: 0D068D:Skyrim.esm
+  Placement:
+    Position: 2022.6235, 2520.7793, -79.58345
+    Rotation: 0, -0, 6.1349072
+- MutagenObjectType: PlacedObject
+  FormKey: 196CD9:Requiem.esp
+  Base: 0D068D:Skyrim.esm
+  Placement:
+    Position: 1620.7891, 2283.0098, -79.58345
+    Rotation: 0, -0, 5.23535
+- MutagenObjectType: PlacedObject
+  FormKey: 196CDA:Requiem.esp
+  Base: 0D068D:Skyrim.esm
+  Placement:
+    Position: 2452.208, 2363.4766, -79.58345
+    Rotation: 0, -0, 0.8521661
+- MutagenObjectType: PlacedObject
+  FormKey: 196CDB:Requiem.esp
+  Base: 0A0F3F:Skyrim.esm
+  Placement:
+    Position: 2290.6904, 2407.498, 312.0946
 - MutagenObjectType: PlacedObject
   FormKey: 196CDC:Requiem.esp
   MajorRecordFlagsRaw: 2048
@@ -970,157 +1200,18 @@ Temporary:
   Placement:
     Position: 2114.204, 1955.502, 190.901
 - MutagenObjectType: PlacedObject
-  FormKey: 196CF3:Requiem.esp
-  Base: 07E8C1:Skyrim.esm
+  FormKey: 196CDD:Requiem.esp
+  Base: 034CCE:Skyrim.esm
   Placement:
-    Position: 2500.6523, 1878.457, 241.86974
-    Rotation: -1.421066, -0.25732964, 3.0728014
+    Position: 1869.4814, 1658.8281, 208.04523
+    Rotation: 0.31215653, 0.119742095, 2.8086276
 - MutagenObjectType: PlacedObject
-  FormKey: 196D0B:Requiem.esp
-  Base: 03E69D:Skyrim.esm
+  FormKey: 196CDE:Requiem.esp
+  Base: 034CCE:Skyrim.esm
+  Scale: 0.6
   Placement:
-    Position: 1931.4034, 1800.9691, 154.50084
-    Rotation: 0.14369155, -0.12462098, 2.0946732
-- MutagenObjectType: PlacedObject
-  FormKey: 196D25:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 01399E:Skyrim.esm
-  Placement:
-    Position: 1810.6885, 1830.2422, 145.83444
-    Rotation: 0.006197581, 0.0076218434, 0.58440506
-- MutagenObjectType: PlacedObject
-  FormKey: 196CAD:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.98
-  Placement:
-    Position: 2006.9297, 2050.621, 181.85632
-    Rotation: 0, 0, 4.303041
-- MutagenObjectType: PlacedObject
-  FormKey: 196D17:Requiem.esp
-  Base: 03E69F:Skyrim.esm
-  Placement:
-    Position: 2417.3115, 2031.541, 149.76201
-    Rotation: 0.10866196, 0.09556162, 2.4643064
-- MutagenObjectType: PlacedObject
-  FormKey: 196D14:Requiem.esp
-  Base: 03E6A7:Skyrim.esm
-  Placement:
-    Position: 1934.3135, 1714.0195, 146.56856
-    Rotation: -0.00017441386, -0.0023762265, 3.1974049
-- MutagenObjectType: PlacedObject
-  FormKey: 196C9F:Requiem.esp
-  Base: 03CB92:Skyrim.esm
-  Placement:
-    Position: 1783.8242, 2426.0645, 143.60078
-    Rotation: 0, -0, 4.941593
-- MutagenObjectType: PlacedObject
-  FormKey: 196C9C:Requiem.esp
-  Base: 071850:Skyrim.esm
-  Placement:
-    Position: 2070.2383, 2037.9609, 591.5835
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA5:Requiem.esp
-  Base: 033DA9:Skyrim.esm
-  Placement:
-    Position: 2162.3418, 1922.2363, 142.58508
-    Rotation: 0, -0, 0.71112955
-- MutagenObjectType: PlacedObject
-  FormKey: 196CAA:Requiem.esp
-  Base: 06F705:Skyrim.esm
-  Scale: 0.89
-  Placement:
-    Position: 1824.4482, 1995.2168, 126.93239
-    Rotation: 0, -0, 3.88
-- MutagenObjectType: PlacedObject
-  FormKey: 196CFC:Requiem.esp
-  Base: 03AD63:Skyrim.esm
-  Scale: 1.2
-  Placement:
-    Position: 1670.4395, 1831.8184, 243.33542
-- MutagenObjectType: PlacedObject
-  FormKey: 196D0E:Requiem.esp
-  Base: 03E6A0:Skyrim.esm
-  Placement:
-    Position: 1865.5146, 1834.6855, 147.4204
-    Rotation: -1.5872456, -1.1062472, 4.7271113
-- MutagenObjectType: PlacedObject
-  FormKey: 196D18:Requiem.esp
-  Base: 03E6A6:Skyrim.esm
-  Placement:
-    Position: 2482.3438, 2071.5586, 146.95076
-    Rotation: 0.21415173, 0.11007178, 6.0969257
-- MutagenObjectType: PlacedObject
-  FormKey: 196CC7:Requiem.esp
-  Base: 05F222:Skyrim.esm
-  Placement:
-    Position: 2453.1738, 1754.4922, 143.44339
-    Rotation: 0, -0, 0.7500001
-- MutagenObjectType: PlacedObject
-  FormKey: 3A6467:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 03AD5B:Skyrim.esm
-  Placement:
-    Position: 1855.2754, 1634.071, 210.15465
-    Rotation: 0.4377278, 0.6329276, 0.054106716
-- MutagenObjectType: PlacedObject
-  FormKey: 196CD6:Requiem.esp
-  Base: 024CA4:Skyrim.esm
-  Scale: 0.9
-  Placement:
-    Position: 1680.8447, 1817.1738, 143.46999
-    Rotation: 0, -0, 4.300006
-- MutagenObjectType: PlacedObject
-  FormKey: 196CCA:Requiem.esp
-  Base: 05F222:Skyrim.esm
-  Placement:
-    Position: 2535.5498, 2058.6836, 143.44339
-    Rotation: 0, -0, 2.95
-- MutagenObjectType: PlacedObject
-  FormKey: 196CD9:Requiem.esp
-  Base: 0D068D:Skyrim.esm
-  Placement:
-    Position: 1620.7891, 2283.0098, -79.58345
-    Rotation: 0, -0, 5.23535
-- MutagenObjectType: PlacedNpc
-  FormKey: AD3ABE:Requiem.esp
-  Base: AD3A97:Requiem.esp
-  PersistentLocation: 019177:Skyrim.esm
-  Placement:
-    Position: 1843.0613, 2130.1743, 173.05023
-- MutagenObjectType: PlacedObject
-  FormKey: 196D09:Requiem.esp
-  Base: 03E6A7:Skyrim.esm
-  Placement:
-    Position: 2424.8965, 1863.2852, 146.56856
-    Rotation: 0.002139233, 0.001049072, 1.0974057
-- MutagenObjectType: PlacedObject
-  FormKey: 196CCD:Requiem.esp
-  Base: 0A0F3F:Skyrim.esm
-  Placement:
-    Position: 2439.7715, 1758.8086, 329.57733
-- MutagenObjectType: PlacedObject
-  FormKey: 196CF2:Requiem.esp
-  Base: 0889A2:Skyrim.esm
-  Placement:
-    Position: 2495.7852, 1861.2383, 143.13899
-    Rotation: 1.3159715, -0.31987917, 0.07682524
-- MutagenObjectType: PlacedObject
-  FormKey: 196CD8:Requiem.esp
-  Base: 0D068D:Skyrim.esm
-  Placement:
-    Position: 2022.6235, 2520.7793, -79.58345
-    Rotation: 0, -0, 6.1349072
-- MutagenObjectType: PlacedObject
-  FormKey: 196CBA:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.89
-  Placement:
-    Position: 2029.2969, 2431.2188, 176.6801
-    Rotation: 0, -0, 3.1083913
+    Position: 1884.4531, 1649.6562, 207.65576
+    Rotation: -0.07532918, -0.32137108, 4.975842
 - MutagenObjectType: PlacedObject
   FormKey: 196CDF:Requiem.esp
   Base: 013986:Skyrim.esm
@@ -1128,56 +1219,124 @@ Temporary:
     Position: 1945.2383, 1600.0332, 208.07623
     Rotation: -0.0038061892, -0.0060171452, 1.4209193
 - MutagenObjectType: PlacedObject
-  FormKey: 196D2C:Requiem.esp
-  Base: 0965A5:Skyrim.esm
-  Scale: 0.6
+  FormKey: 196CE0:Requiem.esp
+  Base: 0AF5FD:Skyrim.esm
   Placement:
-    Position: 1652.8369, 1925.2539, 203.26086
-    Rotation: -0.05372096, 0.08875682, 1.0256484
+    Position: 1969.8516, 1585.5508, 212.45279
 - MutagenObjectType: PlacedObject
-  FormKey: 196CB1:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.98
+  FormKey: 196CE1:Requiem.esp
+  Base: 0319E4:Skyrim.esm
   Placement:
-    Position: 2055.6396, 2328.3848, 181.85632
-    Rotation: 0, -0, 2.2756522
+    Position: 1642.2585, 1906.6544, 298.8771
+    Rotation: -0.890357, -0.106928326, 6.20337
 - MutagenObjectType: PlacedObject
-  FormKey: 196D29:Requiem.esp
-  Base: 01ACC8:Skyrim.esm
-  RagdollData: 0x0033FB001C4B25410000C0BA0060463D9D10C9BF556DDB37750549C000FF7FFF4A2039400000A0B60000C028000000800000008064FCCA3F
+  FormKey: 196CE2:Requiem.esp
+  Base: 0319E4:Skyrim.esm
   Placement:
-    Position: 1906.5875, 1639.8921, 209.11385
-    Rotation: 0, -0, 4.000003
+    Position: 1704.7606, 1775.8893, 293.15823
+    Rotation: -0.89035696, -0.10692831, 1.2201855
 - MutagenObjectType: PlacedObject
-  FormKey: 196CBD:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.98
+  FormKey: 196CE3:Requiem.esp
+  Base: 03EAE0:Skyrim.esm
   Placement:
-    Position: 1783.9414, 2115.9727, 176.65039
-    Rotation: 0, -0, 6.103041
+    Position: 2529.582, 2000.6484, 199.26997
 - MutagenObjectType: PlacedObject
-  FormKey: 3A646A:Requiem.esp
-  Base: 0B18CD:Skyrim.esm
+  FormKey: 196CE4:Requiem.esp
+  Base: 03EAE0:Skyrim.esm
   Placement:
-    Position: 1850.4493, 1633.7798, 220.3381
-    Rotation: 2.8013346, -1.0155247, 4.396041
+    Position: 2518.162, 2009.873, 199.26997
+    Rotation: 0, -0, 1.1
+- MutagenObjectType: PlacedObject
+  FormKey: 196CE5:Requiem.esp
+  Base: 03EAE0:Skyrim.esm
+  Placement:
+    Position: 2525.755, 1985.8125, 199.26997
+    Rotation: 0, -0, 1.1
+- MutagenObjectType: PlacedObject
+  FormKey: 196CE6:Requiem.esp
+  Base: 03EADD:Skyrim.esm
+  Placement:
+    Position: 2530.4863, 2004.0391, 239.76997
+- MutagenObjectType: PlacedObject
+  FormKey: 196CE7:Requiem.esp
+  Base: 03EADD:Skyrim.esm
+  Placement:
+    Position: 2519.538, 2011.0488, 239.76997
 - MutagenObjectType: PlacedObject
   FormKey: 196CE8:Requiem.esp
   Base: 03EADD:Skyrim.esm
   Placement:
     Position: 2529.083, 1991.291, 239.76997
 - MutagenObjectType: PlacedObject
-  FormKey: 196D02:Requiem.esp
-  Base: 03E69E:Skyrim.esm
+  FormKey: 196CE9:Requiem.esp
+  Base: 03EADD:Skyrim.esm
   Placement:
-    Position: 2406.121, 1922.5488, 148.4764
-    Rotation: -0.00033288583, -0.0011549741, 0.19967842
+    Position: 2516.1045, 1996.9023, 239.76997
+    Rotation: 0, -0, 1.6
 - MutagenObjectType: PlacedObject
-  FormKey: 196CFF:Requiem.esp
-  Base: 03AD64:Skyrim.esm
+  FormKey: 196CEA:Requiem.esp
+  Base: 03EADF:Skyrim.esm
   Placement:
-    Position: 1696.0996, 1785.4492, 204.3186
-    Rotation: -0.025525603, -0.0009962798, 0.0014519049
+    Position: 2525.8467, 1977.7402, 239.76999
+    Rotation: 0, -0, 0.6
+- MutagenObjectType: PlacedObject
+  FormKey: 196CEB:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 039BE4:Skyrim.esm
+  Placement:
+    Position: 2515.544, 1944.1504, 239.86998
+    Rotation: 0, -0, 2.7
+- MutagenObjectType: PlacedObject
+  FormKey: 196CEC:Requiem.esp
+  Base: 043663:Requiem.esp
+  Placement:
+    Position: 2475.079, 1803.373, 199.26996
+    Rotation: 0, -0, 0.8
+- MutagenObjectType: PlacedObject
+  FormKey: 196CED:Requiem.esp
+  Base: 03AD56:Skyrim.esm
+  Placement:
+    Position: 2476.9258, 1800.7695, 239.76997
+- MutagenObjectType: PlacedObject
+  FormKey: 196CEE:Requiem.esp
+  Base: 03AD56:Skyrim.esm
+  Scale: 0.8
+  Placement:
+    Position: 2479.2002, 1813.1035, 239.76997
+- MutagenObjectType: PlacedObject
+  FormKey: 196CEF:Requiem.esp
+  Base: 03AD56:Skyrim.esm
+  Scale: 0.9
+  Placement:
+    Position: 2464.9785, 1808.3828, 239.76997
+- MutagenObjectType: PlacedObject
+  FormKey: 196CF0:Requiem.esp
+  Base: 043663:Requiem.esp
+  Scale: 0.9
+  Placement:
+    Position: 2472.2285, 1824.2031, 199.26996
+    Rotation: 0, -0, 3.5000002
+- MutagenObjectType: PlacedObject
+  FormKey: 196CF1:Requiem.esp
+  Base: 043663:Requiem.esp
+  Scale: 1.2
+  Placement:
+    Position: 2456.6885, 1812.8789, 199.26996
+    Rotation: 0, -0, 5.1000004
+- MutagenObjectType: PlacedObject
+  FormKey: 196CF2:Requiem.esp
+  Base: 0889A2:Skyrim.esm
+  Placement:
+    Position: 2495.7852, 1861.2383, 143.13899
+    Rotation: 1.3159715, -0.31987917, 0.07682524
+- MutagenObjectType: PlacedObject
+  FormKey: 196CF3:Requiem.esp
+  Base: 07E8C1:Skyrim.esm
+  Placement:
+    Position: 2500.6523, 1878.457, 241.86974
+    Rotation: -1.421066, -0.25732964, 3.0728014
 - MutagenObjectType: PlacedObject
   FormKey: 196CF4:Requiem.esp
   Base: 07E8C1:Skyrim.esm
@@ -1186,12 +1345,226 @@ Temporary:
     Position: 2487.9336, 1864.5605, 242.57106
     Rotation: -1.4275604, 0.0781853, 3.1063573
 - MutagenObjectType: PlacedObject
-  FormKey: 196D26:Requiem.esp
-  Base: 01AD15:Skyrim.esm
-  RagdollData: 0x00FFFB0000DA04410000B8BC005071BFC8FFC8BF3B250E3A28DF48C000000000BA9E1740060072B900E8542C00000080000000806AA5C93F
+  FormKey: 196CF5:Requiem.esp
+  Base: 06BC00:Skyrim.esm
   Placement:
-    Position: 1623.792, 1964.3574, 241.77615
-    Rotation: 0, -0, 3.6000013
+    Position: 2484.665, 1865.9238, 210.50479
+    Rotation: -0.29771268, 0.2807276, 1.5844134
+- MutagenObjectType: PlacedObject
+  FormKey: 196CF6:Requiem.esp
+  Base: 03AD63:Skyrim.esm
+  Scale: 1.7
+  Placement:
+    Position: 1670.7891, 1853.3789, 244.82101
+- MutagenObjectType: PlacedObject
+  FormKey: 196CF7:Requiem.esp
+  Base: 034CDD:Skyrim.esm
+  Scale: 1.5
+  Placement:
+    Position: 1691.6035, 1781.459, 244.22678
+- MutagenObjectType: PlacedObject
+  FormKey: 196CF8:Requiem.esp
+  Base: 034CDD:Skyrim.esm
+  Placement:
+    Position: 1699.5078, 1798.8867, 242.74118
+    Rotation: 0, -0, 2.3000002
+- MutagenObjectType: PlacedObject
+  FormKey: 196CF9:Requiem.esp
+  Base: 034CDD:Skyrim.esm
+  Scale: 1.1
+  Placement:
+    Position: 1680.1768, 1797.5195, 243.0383
+- MutagenObjectType: PlacedObject
+  FormKey: 196CFA:Requiem.esp
+  Base: 06BC0B:Skyrim.esm
+  Placement:
+    Position: 1677.7246, 1840.7285, 213.61346
+    Rotation: 0.0009183409, -0.0052586272, 8.891765E-05
+- MutagenObjectType: PlacedObject
+  FormKey: 196CFB:Requiem.esp
+  Base: 03AD73:Skyrim.esm
+  RagdollData: 0x001851580000943D0080A0BD00F8FB3EB804A33810B1E3B75717C9BF
+  Placement:
+    Position: 1686.4648, 1820.8242, 242.74118
+- MutagenObjectType: PlacedObject
+  FormKey: 196CFC:Requiem.esp
+  Base: 03AD63:Skyrim.esm
+  Scale: 1.2
+  Placement:
+    Position: 1670.4395, 1831.8184, 243.33542
+- MutagenObjectType: PlacedObject
+  FormKey: 196CFD:Requiem.esp
+  Base: 06B689:Skyrim.esm
+  Placement:
+    Position: 1697.8828, 1802.0742, 200.1235
+    Rotation: 0.016090257, 0.02165124, 4.283438
+- MutagenObjectType: PlacedObject
+  FormKey: 196CFE:Requiem.esp
+  Base: 06B689:Skyrim.esm
+  Placement:
+    Position: 1705.2734, 1792.7754, 200.09799
+    Rotation: 0.004079676, -0.005511933, 2.8002968
+- MutagenObjectType: PlacedObject
+  FormKey: 196CFF:Requiem.esp
+  Base: 03AD64:Skyrim.esm
+  Placement:
+    Position: 1696.0996, 1785.4492, 204.3186
+    Rotation: -0.025525603, -0.0009962798, 0.0014519049
+- MutagenObjectType: PlacedObject
+  FormKey: 196D00:Requiem.esp
+  Base: 03E69F:Skyrim.esm
+  Placement:
+    Position: 2387.8545, 1826.666, 147.41566
+- MutagenObjectType: PlacedObject
+  FormKey: 196D01:Requiem.esp
+  Base: 03E69F:Skyrim.esm
+  Placement:
+    Position: 2267.46, 1787.7129, 149.7597
+    Rotation: 0.11164022, -0.09760135, 3.9001153
+- MutagenObjectType: PlacedObject
+  FormKey: 196D02:Requiem.esp
+  Base: 03E69E:Skyrim.esm
+  Placement:
+    Position: 2406.121, 1922.5488, 148.4764
+    Rotation: -0.00033288583, -0.0011549741, 0.19967842
+- MutagenObjectType: PlacedObject
+  FormKey: 196D03:Requiem.esp
+  Base: 03E69E:Skyrim.esm
+  Placement:
+    Position: 2297.8467, 1846.1777, 148.4765
+    Rotation: -0.0004970692, 0.000105971994, 1.6996812
+- MutagenObjectType: PlacedObject
+  FormKey: 196D04:Requiem.esp
+  Base: 03E6A0:Skyrim.esm
+  Placement:
+    Position: 2358.961, 1896.9102, 148.203
+    Rotation: -0.0019274149, -0.0026462318, 0.000111977315
+- MutagenObjectType: PlacedObject
+  FormKey: 196D05:Requiem.esp
+  Base: 03E6A0:Skyrim.esm
+  Placement:
+    Position: 2319.004, 1771.084, 148.20303
+    Rotation: -0.002442644, 0.0022595217, 1.700096
+- MutagenObjectType: PlacedObject
+  FormKey: 196D06:Requiem.esp
+  Base: 03E6A1:Skyrim.esm
+  Placement:
+    Position: 2380.7227, 1744.0566, 150.49573
+    Rotation: -2.138558, -1.3263232, 2.311659
+- MutagenObjectType: PlacedObject
+  FormKey: 196D07:Requiem.esp
+  Base: 03E6A6:Skyrim.esm
+  Placement:
+    Position: 2410.6104, 1798.9805, 146.94272
+    Rotation: 0.22621447, 0.070682764, 6.2661686
+- MutagenObjectType: PlacedObject
+  FormKey: 196D08:Requiem.esp
+  Base: 03E6A6:Skyrim.esm
+  Placement:
+    Position: 2322.832, 1749.5547, 146.94272
+    Rotation: 0.22621435, 0.07068256, 6.2661686
+- MutagenObjectType: PlacedObject
+  FormKey: 196D09:Requiem.esp
+  Base: 03E6A7:Skyrim.esm
+  Placement:
+    Position: 2424.8965, 1863.2852, 146.56856
+    Rotation: 0.002139233, 0.001049072, 1.0974057
+- MutagenObjectType: PlacedObject
+  FormKey: 196D0A:Requiem.esp
+  Base: 03E69D:Skyrim.esm
+  Placement:
+    Position: 2352.6865, 1815.3477, 154.59256
+    Rotation: 0.031537194, -5.472662E-07, 6.2831855
+- MutagenObjectType: PlacedObject
+  FormKey: 196D0B:Requiem.esp
+  Base: 03E69D:Skyrim.esm
+  Placement:
+    Position: 1931.4034, 1800.9691, 154.50084
+    Rotation: 0.14369155, -0.12462098, 2.0946732
+- MutagenObjectType: PlacedObject
+  FormKey: 196D0C:Requiem.esp
+  Base: 03E69E:Skyrim.esm
+  Placement:
+    Position: 1914.9951, 1863.7383, 148.4477
+    Rotation: -0.42655227, -0.69240177, 3.7580676
+- MutagenObjectType: PlacedObject
+  FormKey: 196D0D:Requiem.esp
+  Base: 03E69F:Skyrim.esm
+  Placement:
+    Position: 1972.0898, 1884.2578, 149.69568
+    Rotation: 2.9719512, 0.77837604, 2.733812
+- MutagenObjectType: PlacedObject
+  FormKey: 196D0E:Requiem.esp
+  Base: 03E6A0:Skyrim.esm
+  Placement:
+    Position: 1865.5146, 1834.6855, 147.4204
+    Rotation: -1.5872456, -1.1062472, 4.7271113
+- MutagenObjectType: PlacedObject
+  FormKey: 196D0F:Requiem.esp
+  Base: 03E6A6:Skyrim.esm
+  Placement:
+    Position: 1860.0498, 1876.7227, 146.941
+    Rotation: -0.06774207, -0.22618708, 2.163782
+- MutagenObjectType: PlacedObject
+  FormKey: 196D10:Requiem.esp
+  Base: 03E6A1:Skyrim.esm
+  Placement:
+    Position: 1856.1904, 1793.4492, 149.86646
+    Rotation: 1.7071408, 0.34198672, 1.4668096
+- MutagenObjectType: PlacedObject
+  FormKey: 196D11:Requiem.esp
+  Base: 03E6A6:Skyrim.esm
+  Placement:
+    Position: 1853.7393, 1778.6758, 149.20331
+    Rotation: 1.589311, 0.44931853, 3.05113
+- MutagenObjectType: PlacedObject
+  FormKey: 196D12:Requiem.esp
+  Base: 03E6A0:Skyrim.esm
+  Placement:
+    Position: 1994.1357, 1740.5312, 148.13452
+    Rotation: 2.7809691, -0.12052886, 1.2620921
+- MutagenObjectType: PlacedObject
+  FormKey: 196D13:Requiem.esp
+  Base: 03E69E:Skyrim.esm
+  Placement:
+    Position: 1994.9473, 1700.3047, 148.4764
+    Rotation: -0.0008289289, 0.00087043445, 2.2996778
+- MutagenObjectType: PlacedObject
+  FormKey: 196D14:Requiem.esp
+  Base: 03E6A7:Skyrim.esm
+  Placement:
+    Position: 1934.3135, 1714.0195, 146.56856
+    Rotation: -0.00017441386, -0.0023762265, 3.1974049
+- MutagenObjectType: PlacedObject
+  FormKey: 196D15:Requiem.esp
+  Base: 03E69D:Skyrim.esm
+  Placement:
+    Position: 2379.1807, 2136.6895, 154.53645
+    Rotation: -2.8974319, -0.39868575, 0.085054316
+- MutagenObjectType: PlacedObject
+  FormKey: 196D16:Requiem.esp
+  Base: 03E69E:Skyrim.esm
+  Placement:
+    Position: 2368.6846, 2056.504, 148.47742
+    Rotation: 0.0015813876, -0.0007962592, 5.21377
+- MutagenObjectType: PlacedObject
+  FormKey: 196D17:Requiem.esp
+  Base: 03E69F:Skyrim.esm
+  Placement:
+    Position: 2417.3115, 2031.541, 149.76201
+    Rotation: 0.10866196, 0.09556162, 2.4643064
+- MutagenObjectType: PlacedObject
+  FormKey: 196D18:Requiem.esp
+  Base: 03E6A6:Skyrim.esm
+  Placement:
+    Position: 2482.3438, 2071.5586, 146.95076
+    Rotation: 0.21415173, 0.11007178, 6.0969257
+- MutagenObjectType: PlacedObject
+  FormKey: 196D19:Requiem.esp
+  Base: 03E6A1:Skyrim.esm
+  Placement:
+    Position: 2468.0781, 2222.1113, 150.01701
+    Rotation: 1.3442105, 0.43414697, 1.2997012
 - MutagenObjectType: PlacedObject
   FormKey: 196D1A:Requiem.esp
   Base: 03E6A6:Skyrim.esm
@@ -1199,11 +1572,29 @@ Temporary:
     Position: 2348.6064, 2136.7305, 147.04059
     Rotation: -2.9422035, 0.15060532, 4.23709
 - MutagenObjectType: PlacedObject
-  FormKey: 196C9E:Requiem.esp
-  Base: 02A77C:Skyrim.esm
+  FormKey: 196D1B:Requiem.esp
+  Base: 03E69E:Skyrim.esm
   Placement:
-    Position: 2775.8428, 2602.211, 142.3613
-    Rotation: 0, -0, 4.183197
+    Position: 2351.833, 2192.5605, 148.47943
+    Rotation: -0.00029644693, 0.002929549, 6.1963487
+- MutagenObjectType: PlacedObject
+  FormKey: 196D1C:Requiem.esp
+  Base: 10F77A:Skyrim.esm
+  Placement:
+    Position: 1925.5254, 1610.2832, 207.68839
+    Rotation: 0.0035427439, -0.0030847418, 1.0032817
+- MutagenObjectType: PlacedObject
+  FormKey: 196D1D:Requiem.esp
+  Base: 10F786:Skyrim.esm
+  Placement:
+    Position: 1944.5508, 1625.8691, 207.6698
+    Rotation: 0.00037951523, 0.0023985591, 0.00053798244
+- MutagenObjectType: PlacedObject
+  FormKey: 196D1E:Requiem.esp
+  Base: 0F08FB:Skyrim.esm
+  Placement:
+    Position: 1859.4862, 1633.9462, 206.77815
+    Rotation: 0.0056204763, 0.01701605, 2.4012907
 - MutagenObjectType: PlacedObject
   FormKey: 196D1F:Requiem.esp
   Base: 0B18CD:Skyrim.esm
@@ -1211,72 +1602,17 @@ Temporary:
     Position: 1862.3539, 1629.8492, 212.811
     Rotation: 0.83974874, 0.2873712, 1.5713452
 - MutagenObjectType: PlacedObject
-  FormKey: 196CA8:Requiem.esp
-  Base: 033DA9:Skyrim.esm
+  FormKey: 196D20:Requiem.esp
+  Base: 0B18CD:Skyrim.esm
   Placement:
-    Position: 2170.4912, 1956.4258, 142.58508
-    Rotation: 0, -0, 0.71112955
+    Position: 1861.449, 1637.5709, 212.6595
+    Rotation: 0.9984656, -1.3136164, 2.1868563
 - MutagenObjectType: PlacedObject
-  FormKey: 196CAB:Requiem.esp
-  Base: 06F705:Skyrim.esm
-  Scale: 0.89
+  FormKey: 196D21:Requiem.esp
+  Base: 0B18CD:Skyrim.esm
   Placement:
-    Position: 2284.962, 2184.1777, 127.21649
-    Rotation: 0, -0, 1.5800035
-- MutagenObjectType: PlacedObject
-  FormKey: 196C96:Requiem.esp
-  Base: 0D7BA1:Skyrim.esm
-  Placement:
-    Position: 2007.9062, 2193.8105, 137.94681
-    Rotation: 0, -0, 5.895294
-- MutagenObjectType: PlacedObject
-  FormKey: 196CB7:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.18
-  Placement:
-    Position: 2225.3643, 2095.3535, 176.58441
-    Rotation: 0, -0, 0.68823254
-- MutagenObjectType: PlacedNpc
-  FormKey: AD3AD0:Requiem.esp
-  Base: AD3AC2:Requiem.esp
-  PersistentLocation: 019177:Skyrim.esm
-  Placement:
-    Position: 2194.2756, 2200.2078, 173.05023
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE7:Requiem.esp
-  Base: 03EADD:Skyrim.esm
-  Placement:
-    Position: 2519.538, 2011.0488, 239.76997
-- MutagenObjectType: PlacedObject
-  FormKey: 196D31:Requiem.esp
-  Base: 034CCE:Skyrim.esm
-  Placement:
-    Position: 1888.1167, 1618.0273, 208.02032
-    Rotation: 0.19385546, -0.29224944, 4.1317387
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE5:Requiem.esp
-  Base: 03EAE0:Skyrim.esm
-  Placement:
-    Position: 2525.755, 1985.8125, 199.26997
-    Rotation: 0, -0, 1.1
-- MutagenObjectType: PlacedObject
-  FormKey: 196CC2:Requiem.esp
-  Base: 02A77C:Skyrim.esm
-  Placement:
-    Position: 1563.9043, 1288.7168, 142.3613
-    Rotation: 0, -0, 0.78321725
-- MutagenObjectType: PlacedObject
-  FormKey: 196CDA:Requiem.esp
-  Base: 0D068D:Skyrim.esm
-  Placement:
-    Position: 2452.208, 2363.4766, -79.58345
-    Rotation: 0, -0, 0.8521661
-- MutagenObjectType: PlacedObject
-  FormKey: 196D10:Requiem.esp
-  Base: 03E6A1:Skyrim.esm
-  Placement:
-    Position: 1856.1904, 1793.4492, 149.86646
-    Rotation: 1.7071408, 0.34198672, 1.4668096
+    Position: 1855.3043, 1640.9988, 217.3588
+    Rotation: 0.056948304, -1.126601, 1.0070727
 - MutagenObjectType: PlacedObject
   FormKey: 196D22:Requiem.esp
   MajorRecordFlagsRaw: 1073741824
@@ -1287,345 +1623,6 @@ Temporary:
     Position: 2512.17, 1925.6797, 199.3656
     Rotation: 0, -0, 2.116815
 - MutagenObjectType: PlacedObject
-  FormKey: 3A6468:Requiem.esp
-  Base: 0B18CD:Skyrim.esm
-  Placement:
-    Position: 1867.604, 1634.2123, 216.8726
-    Rotation: 3.021525, 0.0060656313, 0.38637248
-- MutagenObjectType: PlacedObject
-  FormKey: 196C98:Requiem.esp
-  Base: 03CB92:Skyrim.esm
-  Placement:
-    Position: 2461.0947, 1671.8691, 143.60078
-    Rotation: 0, -0, 3.1415927
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA2:Requiem.esp
-  Base: 02A77C:Skyrim.esm
-  Placement:
-    Position: 1327.6016, 2602.8633, 142.3613
-    Rotation: 0, -0, 2.383208
-- MutagenObjectType: PlacedObject
-  FormKey: 196D16:Requiem.esp
-  Base: 03E69E:Skyrim.esm
-  Placement:
-    Position: 2368.6846, 2056.504, 148.47742
-    Rotation: 0.0015813876, -0.0007962592, 5.21377
-- MutagenObjectType: PlacedObject
-  FormKey: 196D04:Requiem.esp
-  Base: 03E6A0:Skyrim.esm
-  Placement:
-    Position: 2358.961, 1896.9102, 148.203
-    Rotation: -0.0019274149, -0.0026462318, 0.000111977315
-- MutagenObjectType: PlacedObject
-  FormKey: 196CAE:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.04
-  Placement:
-    Position: 2056.7744, 2060.004, 181.87817
-    Rotation: 0, 0, 2.2319322
-- MutagenObjectType: PlacedObject
-  FormKey: 196C94:Requiem.esp
-  Base: 03CB92:Skyrim.esm
-  Placement:
-    Position: 2055.9688, 1450.3574, 141.22423
-    Rotation: 0, -0, 3.1415927
-- MutagenObjectType: PlacedObject
-  FormKey: 196CDB:Requiem.esp
-  Base: 0A0F3F:Skyrim.esm
-  Placement:
-    Position: 2290.6904, 2407.498, 312.0946
-- MutagenObjectType: PlacedObject
-  FormKey: 196D0F:Requiem.esp
-  Base: 03E6A6:Skyrim.esm
-  Placement:
-    Position: 1860.0498, 1876.7227, 146.941
-    Rotation: -0.06774207, -0.22618708, 2.163782
-- MutagenObjectType: PlacedObject
-  FormKey: 196D20:Requiem.esp
-  Base: 0B18CD:Skyrim.esm
-  Placement:
-    Position: 1861.449, 1637.5709, 212.6595
-    Rotation: 0.9984656, -1.3136164, 2.1868563
-- MutagenObjectType: PlacedObject
-  FormKey: 196D1D:Requiem.esp
-  Base: 10F786:Skyrim.esm
-  Placement:
-    Position: 1944.5508, 1625.8691, 207.6698
-    Rotation: 0.00037951523, 0.0023985591, 0.00053798244
-- MutagenObjectType: PlacedObject
-  FormKey: 196C9B:Requiem.esp
-  Base: 02A77C:Skyrim.esm
-  Placement:
-    Position: 2936.376, 1758.5215, 142.3613
-    Rotation: 0, -0, 5.183193
-- MutagenObjectType: PlacedObject
-  FormKey: 196CD4:Requiem.esp
-  Base: 024CA4:Skyrim.esm
-  Scale: 0.9
-  Placement:
-    Position: 2515.1738, 1966.0098, 143.46999
-    Rotation: 0, -0, 1.8000029
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE3:Requiem.esp
-  Base: 03EAE0:Skyrim.esm
-  Placement:
-    Position: 2529.582, 2000.6484, 199.26997
-- MutagenObjectType: PlacedNpc
-  FormKey: AD3AC0:Requiem.esp
-  Base: AD3A99:Requiem.esp
-  PersistentLocation: 019177:Skyrim.esm
-  Placement:
-    Position: 2080.645, 2303.9355, 182.17975
-- MutagenObjectType: PlacedObject
-  FormKey: 196CBE:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.18
-  Placement:
-    Position: 1772.9541, 2173.0684, 176.58441
-    Rotation: 0, -0, 1.488225
-- MutagenObjectType: PlacedObject
-  FormKey: 196D28:Requiem.esp
-  Base: 01B22C:Skyrim.esm
-  RagdollData: 0x0033FB0000FE13410048CA3E004347BF2B0AC9BF2C83873CDD0549C0000000004A2039400000A0B60000C028000000800000008064FCCA3F
-  Placement:
-    Position: 1631.9199, 1930.2402, 242.91953
-    Rotation: 0, -0, 2.4000008
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA9:Requiem.esp
-  Base: 033DA9:Skyrim.esm
-  Placement:
-    Position: 2053.8057, 1911.9688, 142.58508
-    Rotation: 0, -0, 5.944315
-- MutagenObjectType: PlacedObject
-  FormKey: 196D30:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 03AD5E:Skyrim.esm
-  Placement:
-    Position: 1640.3574, 1891.8008, 242.8864
-- MutagenObjectType: PlacedObject
-  FormKey: 196CCF:Requiem.esp
-  Base: 0A0F3F:Skyrim.esm
-  Placement:
-    Position: 1628.2002, 2044.2891, 329.57733
-- MutagenObjectType: PlacedObject
-  FormKey: 196D0D:Requiem.esp
-  Base: 03E69F:Skyrim.esm
-  Placement:
-    Position: 1972.0898, 1884.2578, 149.69568
-    Rotation: 2.9719512, 0.77837604, 2.733812
-- MutagenObjectType: PlacedObject
-  FormKey: 196CCC:Requiem.esp
-  Base: 0A0F3F:Skyrim.esm
-  Placement:
-    Position: 1792.541, 1690.5117, 329.57733
-- MutagenObjectType: PlacedObject
-  FormKey: 196D08:Requiem.esp
-  Base: 03E6A6:Skyrim.esm
-  Placement:
-    Position: 2322.832, 1749.5547, 146.94272
-    Rotation: 0.22621435, 0.07068256, 6.2661686
-- MutagenObjectType: PlacedObject
-  FormKey: 196CAC:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.18
-  Placement:
-    Position: 1867.9873, 2216.6484, 181.79034
-    Rotation: 0, 0, 5.07141
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA7:Requiem.esp
-  Base: 033DA9:Skyrim.esm
-  Placement:
-    Position: 2088.2422, 1903.627, 142.58508
-    Rotation: 0, -0, 5.4543147
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA6:Requiem.esp
-  Base: 033DA9:Skyrim.esm
-  Placement:
-    Position: 2127.2715, 1884.623, 140.98654
-    Rotation: 0, -0, 0.17794614
-- MutagenObjectType: PlacedObject
-  FormKey: 196C9A:Requiem.esp
-  Base: 03CB92:Skyrim.esm
-  Placement:
-    Position: 2577.7646, 2139.2695, 143.60078
-    Rotation: 0, -0, 4.441593
-- MutagenObjectType: PlacedObject
-  FormKey: 196C9D:Requiem.esp
-  Base: 03CB92:Skyrim.esm
-  Placement:
-    Position: 2268.8105, 2513.4062, 143.60078
-    Rotation: 0, -0, 4.441593
-- MutagenObjectType: PlacedObject
-  FormKey: 196D15:Requiem.esp
-  Base: 03E69D:Skyrim.esm
-  Placement:
-    Position: 2379.1807, 2136.6895, 154.53645
-    Rotation: -2.8974319, -0.39868575, 0.085054316
-- MutagenObjectType: PlacedObject
-  FormKey: 196CAF:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.99
-  Placement:
-    Position: 2144.5986, 2153.0957, 181.85303
-    Rotation: 0, -0, 0.47768778
-- MutagenObjectType: PlacedObject
-  FormKey: 196D27:Requiem.esp
-  Base: 01ACFC:Skyrim.esm
-  RagdollData: 0x0033FB0000BAF340004083BE00B810BE2E89CBBF1ECBCA3C1EF447C000000000BA9E1740060072B900E8542C00000080000000806AA5C93F
-  Placement:
-    Position: 1615.8955, 1960.6191, 244.50575
-    Rotation: 0, -0, 2.700002
-- MutagenObjectType: PlacedObject
-  FormKey: 196D12:Requiem.esp
-  Base: 03E6A0:Skyrim.esm
-  Placement:
-    Position: 1994.1357, 1740.5312, 148.13452
-    Rotation: 2.7809691, -0.12052886, 1.2620921
-- MutagenObjectType: PlacedObject
-  FormKey: 196CDD:Requiem.esp
-  Base: 034CCE:Skyrim.esm
-  Placement:
-    Position: 1869.4814, 1658.8281, 208.04523
-    Rotation: 0.31215653, 0.119742095, 2.8086276
-- MutagenObjectType: PlacedObject
-  FormKey: 196D0C:Requiem.esp
-  Base: 03E69E:Skyrim.esm
-  Placement:
-    Position: 1914.9951, 1863.7383, 148.4477
-    Rotation: -0.42655227, -0.69240177, 3.7580676
-- MutagenObjectType: PlacedObject
-  FormKey: 196D03:Requiem.esp
-  Base: 03E69E:Skyrim.esm
-  Placement:
-    Position: 2297.8467, 1846.1777, 148.4765
-    Rotation: -0.0004970692, 0.000105971994, 1.6996812
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE9:Requiem.esp
-  Base: 03EADD:Skyrim.esm
-  Placement:
-    Position: 2516.1045, 1996.9023, 239.76997
-    Rotation: 0, -0, 1.6
-- MutagenObjectType: PlacedObject
-  FormKey: 196CD5:Requiem.esp
-  Base: 024CA4:Skyrim.esm
-  Scale: 0.9
-  Placement:
-    Position: 2482.795, 1843.1875, 143.46999
-    Rotation: 0, -0, 1.9000021
-- MutagenObjectType: PlacedObject
-  FormKey: 196CFB:Requiem.esp
-  Base: 03AD73:Skyrim.esm
-  RagdollData: 0x001851580000943D0080A0BD00F8FB3EB804A33810B1E3B75717C9BF
-  Placement:
-    Position: 1686.4648, 1820.8242, 242.74118
-- MutagenObjectType: PlacedObject
-  FormKey: 196CB4:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.18
-  Placement:
-    Position: 1953.2773, 2425.5254, 176.58441
-    Rotation: 0, -0, 6.2714105
-- MutagenObjectType: PlacedObject
-  FormKey: 196CF1:Requiem.esp
-  Base: 043663:Requiem.esp
-  Scale: 1.2
-  Placement:
-    Position: 2456.6885, 1812.8789, 199.26996
-    Rotation: 0, -0, 5.1000004
-- MutagenObjectType: PlacedObject
-  FormKey: 196CC0:Requiem.esp
-  Base: 0D7BD5:Skyrim.esm
-  Radius: -107.174286
-  LightData:
-    FadeOffset: 2.395873
-    ShadowDepthBias: 1
-  Placement:
-    Position: 2112.0713, 1922.6836, 246.34937
-    Rotation: 0, 0, 4.3000007
-- MutagenObjectType: PlacedObject
-  FormKey: 196CF8:Requiem.esp
-  Base: 034CDD:Skyrim.esm
-  Placement:
-    Position: 1699.5078, 1798.8867, 242.74118
-    Rotation: 0, -0, 2.3000002
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA0:Requiem.esp
-  Base: 02A77C:Skyrim.esm
-  Placement:
-    Position: 1159.624, 1882.8965, 142.3613
-    Rotation: 0, -0, 1.5832129
-- MutagenObjectType: PlacedObject
-  FormKey: 196CC3:Requiem.esp
-  Base: 02AC59:Skyrim.esm
-  Placement:
-    Position: 2631.9316, 1722.9668, 152.04855
-    Rotation: 0, -0, 3.9707966
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE4:Requiem.esp
-  Base: 03EAE0:Skyrim.esm
-  Placement:
-    Position: 2518.162, 2009.873, 199.26997
-    Rotation: 0, -0, 1.1
-- MutagenObjectType: PlacedObject
-  FormKey: 3A646C:Requiem.esp
-  Base: 10D673:Skyrim.esm
-  Placement:
-    Position: 1669.4578, 1839.5403, 282.2306
-    Rotation: -0.0003138189, -0.0012021636, 2.4999728
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE1:Requiem.esp
-  Base: 0319E4:Skyrim.esm
-  Placement:
-    Position: 1642.2585, 1906.6544, 298.8771
-    Rotation: -0.890357, -0.106928326, 6.20337
-- MutagenObjectType: PlacedNpc
-  FormKey: AD3AD1:Requiem.esp
-  Base: AD3AC2:Requiem.esp
-  PersistentLocation: 019177:Skyrim.esm
-  Placement:
-    Position: 2094.9795, 2365.7446, 173.05023
-- MutagenObjectType: PlacedObject
-  FormKey: 196CBB:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.89
-  Placement:
-    Position: 1785.5859, 2277.9004, 176.6801
-    Rotation: 0, -0, 0.22520606
-- MutagenObjectType: PlacedNpc
-  FormKey: AD3ABF:Requiem.esp
-  Base: AD3A98:Requiem.esp
-  PersistentLocation: 019177:Skyrim.esm
-  Placement:
-    Position: 2132.2793, 2018.074, 173.05017
-- MutagenObjectType: PlacedNpc
-  FormKey: AD3ABD:Requiem.esp
-  Base: AD3A97:Requiem.esp
-  PersistentLocation: 019177:Skyrim.esm
-  Placement:
-    Position: 2024.377, 2106.4578, 178.77301
-- MutagenObjectType: PlacedObject
-  FormKey: 196D2F:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 03AD5F:Skyrim.esm
-  Placement:
-    Position: 1641.6318, 1908.4629, 239.50273
-- MutagenObjectType: PlacedObject
-  FormKey: 196D2B:Requiem.esp
-  Base: 0A44A0:Skyrim.esm
-  Placement:
-    Position: 1631.2324, 1940.8926, 203.17682
-    Rotation: -0.0010740223, -0.0019299769, 1.8981285
-- MutagenObjectType: PlacedObject
-  FormKey: 196D2A:Requiem.esp
-  Base: 0A44A1:Skyrim.esm
-  Placement:
-    Position: 1646.081, 1904.6055, 203.27023
-    Rotation: 0.11220443, -0.047455184, 0.39926285
-- MutagenObjectType: PlacedObject
   FormKey: 196D23:Requiem.esp
   MajorRecordFlagsRaw: 1073741824
   SkyrimMajorRecordFlags:
@@ -1635,178 +1632,181 @@ Temporary:
     Position: 2497.625, 1930.1992, 239.86998
     Rotation: 0, -0, 2.7
 - MutagenObjectType: PlacedObject
-  FormKey: 196CD1:Requiem.esp
-  Base: 05F222:Skyrim.esm
+  FormKey: 196D24:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 01396E:Skyrim.esm
   Placement:
-    Position: 2288.5674, 2427.3184, 143.44339
-    Rotation: 0, -0, 0.0668147
+    Position: 2010.4365, 2194.6602, 187.7015
+    Rotation: 3.1396983, -0.0017892551, 3.5385096
 - MutagenObjectType: PlacedObject
-  FormKey: 196CDE:Requiem.esp
-  Base: 034CCE:Skyrim.esm
+  FormKey: 196D25:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 01399E:Skyrim.esm
+  Placement:
+    Position: 1810.6885, 1830.2422, 145.83444
+    Rotation: 0.006197581, 0.0076218434, 0.58440506
+- MutagenObjectType: PlacedObject
+  FormKey: 196D26:Requiem.esp
+  Base: 01AD15:Skyrim.esm
+  RagdollData: 0x00FFFB0000DA04410000B8BC005071BFC8FFC8BF3B250E3A28DF48C000000000BA9E1740060072B900E8542C00000080000000806AA5C93F
+  Placement:
+    Position: 1623.792, 1964.3574, 241.77615
+    Rotation: 0, -0, 3.6000013
+- MutagenObjectType: PlacedObject
+  FormKey: 196D27:Requiem.esp
+  Base: 01ACFC:Skyrim.esm
+  RagdollData: 0x0033FB0000BAF340004083BE00B810BE2E89CBBF1ECBCA3C1EF447C000000000BA9E1740060072B900E8542C00000080000000806AA5C93F
+  Placement:
+    Position: 1615.8955, 1960.6191, 244.50575
+    Rotation: 0, -0, 2.700002
+- MutagenObjectType: PlacedObject
+  FormKey: 196D28:Requiem.esp
+  Base: 01B22C:Skyrim.esm
+  RagdollData: 0x0033FB0000FE13410048CA3E004347BF2B0AC9BF2C83873CDD0549C0000000004A2039400000A0B60000C028000000800000008064FCCA3F
+  Placement:
+    Position: 1631.9199, 1930.2402, 242.91953
+    Rotation: 0, -0, 2.4000008
+- MutagenObjectType: PlacedObject
+  FormKey: 196D29:Requiem.esp
+  Base: 01ACC8:Skyrim.esm
+  RagdollData: 0x0033FB001C4B25410000C0BA0060463D9D10C9BF556DDB37750549C000FF7FFF4A2039400000A0B60000C028000000800000008064FCCA3F
+  Placement:
+    Position: 1906.5875, 1639.8921, 209.11385
+    Rotation: 0, -0, 4.000003
+- MutagenObjectType: PlacedObject
+  FormKey: 196D2A:Requiem.esp
+  Base: 0A44A1:Skyrim.esm
+  Placement:
+    Position: 1646.081, 1904.6055, 203.27023
+    Rotation: 0.11220443, -0.047455184, 0.39926285
+- MutagenObjectType: PlacedObject
+  FormKey: 196D2B:Requiem.esp
+  Base: 0A44A0:Skyrim.esm
+  Placement:
+    Position: 1631.2324, 1940.8926, 203.17682
+    Rotation: -0.0010740223, -0.0019299769, 1.8981285
+- MutagenObjectType: PlacedObject
+  FormKey: 196D2C:Requiem.esp
+  Base: 0965A5:Skyrim.esm
   Scale: 0.6
   Placement:
-    Position: 1884.4531, 1649.6562, 207.65576
-    Rotation: -0.07532918, -0.32137108, 4.975842
+    Position: 1652.8369, 1925.2539, 203.26086
+    Rotation: -0.05372096, 0.08875682, 1.0256484
 - MutagenObjectType: PlacedObject
-  FormKey: 196D19:Requiem.esp
-  Base: 03E6A1:Skyrim.esm
-  Placement:
-    Position: 2468.0781, 2222.1113, 150.01701
-    Rotation: 1.3442105, 0.43414697, 1.2997012
-- MutagenObjectType: PlacedObject
-  FormKey: 196CED:Requiem.esp
-  Base: 03AD56:Skyrim.esm
-  Placement:
-    Position: 2476.9258, 1800.7695, 239.76997
-- MutagenObjectType: PlacedObject
-  FormKey: 196D0A:Requiem.esp
-  Base: 03E69D:Skyrim.esm
-  Placement:
-    Position: 2352.6865, 1815.3477, 154.59256
-    Rotation: 0.031537194, -5.472662E-07, 6.2831855
-- MutagenObjectType: PlacedObject
-  FormKey: 196D06:Requiem.esp
-  Base: 03E6A1:Skyrim.esm
-  Placement:
-    Position: 2380.7227, 1744.0566, 150.49573
-    Rotation: -2.138558, -1.3263232, 2.311659
-- MutagenObjectType: PlacedObject
-  FormKey: 196CE2:Requiem.esp
-  Base: 0319E4:Skyrim.esm
-  Placement:
-    Position: 1704.7606, 1775.8893, 293.15823
-    Rotation: -0.89035696, -0.10692831, 1.2201855
-- MutagenObjectType: PlacedObject
-  FormKey: 196CB6:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.18
-  Placement:
-    Position: 2231.0342, 2278.955, 176.58441
-    Rotation: 0, -0, 3.1882253
-- MutagenObjectType: PlacedObject
-  FormKey: 196CFE:Requiem.esp
-  Base: 06B689:Skyrim.esm
-  Placement:
-    Position: 1705.2734, 1792.7754, 200.09799
-    Rotation: 0.004079676, -0.005511933, 2.8002968
-- MutagenObjectType: PlacedObject
-  FormKey: 196CFD:Requiem.esp
-  Base: 06B689:Skyrim.esm
-  Placement:
-    Position: 1697.8828, 1802.0742, 200.1235
-    Rotation: 0.016090257, 0.02165124, 4.283438
-- MutagenObjectType: PlacedObject
-  FormKey: 196CF7:Requiem.esp
-  Base: 034CDD:Skyrim.esm
-  Scale: 1.5
-  Placement:
-    Position: 1691.6035, 1781.459, 244.22678
-- MutagenObjectType: PlacedObject
-  FormKey: 196CEF:Requiem.esp
-  Base: 03AD56:Skyrim.esm
-  Scale: 0.9
-  Placement:
-    Position: 2464.9785, 1808.3828, 239.76997
-- MutagenObjectType: PlacedObject
-  FormKey: 196D13:Requiem.esp
-  Base: 03E69E:Skyrim.esm
-  Placement:
-    Position: 1994.9473, 1700.3047, 148.4764
-    Rotation: -0.0008289289, 0.00087043445, 2.2996778
-- MutagenObjectType: PlacedObject
-  FormKey: 196CD7:Requiem.esp
-  Base: 024CA4:Skyrim.esm
-  Scale: 0.9
-  Placement:
-    Position: 1633.2803, 1934.9551, 143.46999
-    Rotation: 0, -0, 4.400005
-- MutagenObjectType: PlacedObject
-  FormKey: 196CEE:Requiem.esp
-  Base: 03AD56:Skyrim.esm
+  FormKey: 196D2D:Requiem.esp
+  Base: 0A44A0:Skyrim.esm
   Scale: 0.8
   Placement:
-    Position: 2479.2002, 1813.1035, 239.76997
+    Position: 1627.625, 1970.8535, 203.1541
+    Rotation: -0.022255769, 0.00019903341, 3.4835331
 - MutagenObjectType: PlacedObject
-  FormKey: 196D1C:Requiem.esp
-  Base: 10F77A:Skyrim.esm
+  FormKey: 196D2E:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 03AD60:Skyrim.esm
   Placement:
-    Position: 1925.5254, 1610.2832, 207.68839
-    Rotation: 0.0035427439, -0.0030847418, 1.0032817
+    Position: 1655.5928, 1900.0898, 239.50273
 - MutagenObjectType: PlacedObject
-  FormKey: 196CD3:Requiem.esp
-  Base: 0D70ED:Skyrim.esm
+  FormKey: 196D2F:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 03AD5F:Skyrim.esm
   Placement:
-    Position: 1922.9814, 1639.7676, 143.46994
-    Rotation: 0, -0, 0.400006
+    Position: 1641.6318, 1908.4629, 239.50273
 - MutagenObjectType: PlacedObject
-  FormKey: 196D21:Requiem.esp
+  FormKey: 196D30:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 03AD5E:Skyrim.esm
+  Placement:
+    Position: 1640.3574, 1891.8008, 242.8864
+- MutagenObjectType: PlacedObject
+  FormKey: 196D31:Requiem.esp
+  Base: 034CCE:Skyrim.esm
+  Placement:
+    Position: 1888.1167, 1618.0273, 208.02032
+    Rotation: 0.19385546, -0.29224944, 4.1317387
+- MutagenObjectType: PlacedObject
+  FormKey: 3A6467:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 03AD5B:Skyrim.esm
+  Placement:
+    Position: 1855.2754, 1634.071, 210.15465
+    Rotation: 0.4377278, 0.6329276, 0.054106716
+- MutagenObjectType: PlacedObject
+  FormKey: 3A6468:Requiem.esp
   Base: 0B18CD:Skyrim.esm
   Placement:
-    Position: 1855.3043, 1640.9988, 217.3588
-    Rotation: 0.056948304, -1.126601, 1.0070727
+    Position: 1867.604, 1634.2123, 216.8726
+    Rotation: 3.021525, 0.0060656313, 0.38637248
 - MutagenObjectType: PlacedObject
-  FormKey: 196CD0:Requiem.esp
-  Base: 05F222:Skyrim.esm
+  FormKey: 3A6469:Requiem.esp
+  Base: 0B18CD:Skyrim.esm
   Placement:
-    Position: 1612.5059, 2038.5684, 143.44339
-    Rotation: 0, -0, 2.95
+    Position: 1861.887, 1625.9478, 219.07385
+    Rotation: 2.31919, 0.009313242, 5.3216305
 - MutagenObjectType: PlacedObject
-  FormKey: 196C97:Requiem.esp
-  Base: 02A77C:Skyrim.esm
+  FormKey: 3A646A:Requiem.esp
+  Base: 0B18CD:Skyrim.esm
   Placement:
-    Position: 2326.9492, 1164.457, 142.3613
-    Rotation: 0, -0, 6.183187
+    Position: 1850.4493, 1633.7798, 220.3381
+    Rotation: 2.8013346, -1.0155247, 4.396041
 - MutagenObjectType: PlacedObject
-  FormKey: 196CBF:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.98
+  FormKey: 3A646C:Requiem.esp
+  Base: 10D673:Skyrim.esm
   Placement:
-    Position: 2035.0225, 1956.1641, 176.65039
-    Rotation: 0, -0, 0.9198557
-- MutagenObjectType: PlacedObject
-  FormKey: 196CC8:Requiem.esp
-  Base: 05F222:Skyrim.esm
+    Position: 1669.4578, 1839.5403, 282.2306
+    Rotation: -0.0003138189, -0.0012021636, 2.4999728
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3ABD:Requiem.esp
+  Base: AD3A97:Requiem.esp
+  PersistentLocation: 019177:Skyrim.esm
   Placement:
-    Position: 2051.877, 1589.75, 143.44339
-    Rotation: 0, -0, 2.95
-- MutagenObjectType: PlacedObject
-  FormKey: 196CC9:Requiem.esp
-  Base: 05F222:Skyrim.esm
+    Position: 2024.377, 2106.4578, 178.77301
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3ABE:Requiem.esp
+  Base: AD3A97:Requiem.esp
+  PersistentLocation: 019177:Skyrim.esm
   Placement:
-    Position: 1795.0381, 1675.9863, 143.44339
-    Rotation: 0, -0, 2.95
-- MutagenObjectType: PlacedObject
-  FormKey: 196CB8:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.18
+    Position: 1843.0613, 2130.1743, 173.05023
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3ABF:Requiem.esp
+  Base: AD3A98:Requiem.esp
+  PersistentLocation: 019177:Skyrim.esm
   Placement:
-    Position: 2168.2734, 2020.3965, 176.58441
-    Rotation: 0, -0, 4.9882255
-- MutagenObjectType: PlacedObject
-  FormKey: 196D05:Requiem.esp
-  Base: 03E6A0:Skyrim.esm
+    Position: 2132.2793, 2018.074, 173.05017
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3AC0:Requiem.esp
+  Base: AD3A99:Requiem.esp
+  PersistentLocation: 019177:Skyrim.esm
   Placement:
-    Position: 2319.004, 1771.084, 148.20303
-    Rotation: -0.002442644, 0.0022595217, 1.700096
-- MutagenObjectType: PlacedObject
-  FormKey: 196CB5:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 1.18
+    Position: 2080.645, 2303.9355, 182.17975
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3AC1:Requiem.esp
+  Base: AD3A99:Requiem.esp
+  PersistentLocation: 019177:Skyrim.esm
   Placement:
-    Position: 2161.7354, 2377.9746, 176.58441
-    Rotation: 0, -0, 0.6882252
-- MutagenObjectType: PlacedObject
-  FormKey: 196CB0:Requiem.esp
-  Base: 0368B8:Skyrim.esm
-  Scale: 0.89
+    Position: 1946.2261, 1986.059, 173.0503
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3AD0:Requiem.esp
+  Base: AD3AC2:Requiem.esp
+  PersistentLocation: 019177:Skyrim.esm
   Placement:
-    Position: 2135.7725, 2264.7363, 181.88603
-    Rotation: 0, 0, 0.20839119
-- MutagenObjectType: PlacedObject
-  FormKey: 196CA1:Requiem.esp
-  Base: 03CB92:Skyrim.esm
+    Position: 2194.2756, 2200.2078, 173.05023
+- MutagenObjectType: PlacedNpc
+  FormKey: AD3AD1:Requiem.esp
+  Base: AD3AC2:Requiem.esp
+  PersistentLocation: 019177:Skyrim.esm
   Placement:
-    Position: 1699.0908, 1658.9531, 143.60078
-    Rotation: 0, -0, 1.6416078
+    Position: 2094.9795, 2365.7446, 173.05023
 MajorFlags:
 - 0x40000

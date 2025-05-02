@@ -7,47 +7,7 @@ NumRanks: 5
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
   Conditions:
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Alteration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Conjuration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Destruction
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Illusion
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: EPMagic_SpellHasSkillConditionData
-        ActorValue: Restoration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 412EDF:Requiem.esp
   - RunOnTabIndex: 2
     Conditions:
     - MutagenObjectType: ConditionFloat
@@ -58,7 +18,7 @@ Effects:
         MutagenObjectType: HasKeywordConditionData
         Keyword: 013794:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: ModSpellDuration
+  EntryPoint: ModAttackDamage
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.1
@@ -119,7 +79,47 @@ Effects:
   Modification: Multiply
   Value: 1.1
 - MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
   Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Alteration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Conjuration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Destruction
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Illusion
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasSkillConditionData
+        ActorValue: Restoration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 412EDF:Requiem.esp
   - RunOnTabIndex: 2
     Conditions:
     - MutagenObjectType: ConditionFloat
@@ -130,7 +130,7 @@ Effects:
         MutagenObjectType: HasKeywordConditionData
         Keyword: 013794:Skyrim.esm
       ComparisonValue: 1
-  EntryPoint: ModAttackDamage
+  EntryPoint: ModSpellDuration
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.1

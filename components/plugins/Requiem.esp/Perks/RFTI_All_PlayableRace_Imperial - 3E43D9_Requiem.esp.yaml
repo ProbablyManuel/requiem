@@ -8,44 +8,6 @@ Playable: True
 Hidden: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AD3A1B:Requiem.esp
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 013744:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetIsRaceConditionData
-        Race: 088844:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Restoration
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
-        ActorValue: Speech
-      ComparisonValue: 1
-  EntryPoint: ModSkillUse
-  PerkConditionTabCount: 1
-  Modification: Multiply
-  Value: 1.1
-- MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
   - Conditions:
@@ -97,3 +59,41 @@ Effects:
   PerkConditionTabCount: 1
   Modification: Multiply
   Value: 1.05
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 2
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 013744:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 088844:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Restoration
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Speech
+      ComparisonValue: 1
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Modification: Multiply
+  Value: 1.1

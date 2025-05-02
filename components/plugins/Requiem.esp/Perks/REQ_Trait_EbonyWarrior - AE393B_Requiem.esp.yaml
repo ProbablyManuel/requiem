@@ -7,11 +7,10 @@ NumRanks: 1
 Playable: True
 Effects:
 - MutagenObjectType: PerkEntryPointModifyValue
-  Priority: 2
-  EntryPoint: ModFallingDamage
-  PerkConditionTabCount: 1
+  EntryPoint: ModIncomingStagger
+  PerkConditionTabCount: 2
   Modification: Multiply
-  Value: 1E-06
+  Value: 0
 - MutagenObjectType: PerkEntryPointModifyValue
   Priority: 1
   Conditions:
@@ -26,7 +25,8 @@ Effects:
   Modification: Multiply
   Value: 0.33
 - MutagenObjectType: PerkEntryPointModifyValue
-  EntryPoint: ModIncomingStagger
-  PerkConditionTabCount: 2
+  Priority: 2
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
   Modification: Multiply
-  Value: 0
+  Value: 1E-06

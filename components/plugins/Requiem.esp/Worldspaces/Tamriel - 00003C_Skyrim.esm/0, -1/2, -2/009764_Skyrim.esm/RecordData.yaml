@@ -55,23 +55,6 @@ Regions:
 - 0C5859:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedNpc
-  FormKey: 081F36:Skyrim.esm
-  MajorRecordFlagsRaw: 2560
-  Version2: 5
-  SkyrimMajorRecordFlags:
-  - 0x200
-  - InitiallyDisabled
-  Base: 01E7A3:Skyrim.esm
-  LevelModifier: Hard
-  LinkedReferences:
-  - Reference: 0FB28A:Skyrim.esm
-  Placement:
-    Position: 68243.234, -57158.867, 17564.908
-    Rotation: 0, -0, 2.3500009
-  MajorFlags:
-  - StartsDead
-  - InitiallyDisabled
-- MutagenObjectType: PlacedNpc
   FormKey: 081F33:Skyrim.esm
   MajorRecordFlagsRaw: 2560
   Version2: 2
@@ -85,6 +68,23 @@ Temporary:
   Placement:
     Position: 68445.8, -57177.605, 17518.69
     Rotation: 0, -0, 5.061802
+  MajorFlags:
+  - StartsDead
+  - InitiallyDisabled
+- MutagenObjectType: PlacedNpc
+  FormKey: 081F36:Skyrim.esm
+  MajorRecordFlagsRaw: 2560
+  Version2: 5
+  SkyrimMajorRecordFlags:
+  - 0x200
+  - InitiallyDisabled
+  Base: 01E7A3:Skyrim.esm
+  LevelModifier: Hard
+  LinkedReferences:
+  - Reference: 0FB28A:Skyrim.esm
+  Placement:
+    Position: 68243.234, -57158.867, 17564.908
+    Rotation: 0, -0, 2.3500009
   MajorFlags:
   - StartsDead
   - InitiallyDisabled

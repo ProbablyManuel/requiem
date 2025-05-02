@@ -44,22 +44,29 @@ Music: 02C3CA:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Persistent:
 - MutagenObjectType: PlacedObject
-  FormKey: 09CAFE:Skyrim.esm
+  FormKey: 01DB63:Skyrim.esm
   MajorRecordFlagsRaw: 1024
-  EditorID: WhiterunWarmaidensChestRef
-  Version2: 2
+  Version2: 14
   SkyrimMajorRecordFlags:
   - 0x400
-  Base: 09CAFD:Skyrim.esm
-  Scale: 1.4
+  Base: 0252C7:Skyrim.esm
+  TeleportDestination:
+    Door: 01DB52:Skyrim.esm
+    Position: 20800, -8064, -3573.4365
+    Rotation: 0, -0, 5.364419E-06
   Lock:
-    Level: Master
+    Level: Expert
     Unused: 0x000000
+    Key: 093B12:Skyrim.esm
     Unused2: 0x0000000000000000000000
+  NavigationDoorLink:
+    NavMesh: 0C7A7D:Skyrim.esm
+    TeleportMarkerTriangle: 46
+  Owner: 093B22:Skyrim.esm
   LocationReference: 01F86A:Skyrim.esm
   Placement:
-    Position: -364.17297, -101.66553, 64
-    Rotation: 0, -0, 1.2000037
+    Position: -63.68858, -512.6482, 120.19987
+    Rotation: 0, -0, 1.5707964
 - MutagenObjectType: PlacedObject
   FormKey: 06181C:Skyrim.esm
   MajorRecordFlagsRaw: 1024
@@ -85,29 +92,22 @@ Persistent:
     Position: -192, 384, 120.19987
     Rotation: 0, -0, 3.1415927
 - MutagenObjectType: PlacedObject
-  FormKey: 01DB63:Skyrim.esm
+  FormKey: 09CAFE:Skyrim.esm
   MajorRecordFlagsRaw: 1024
-  Version2: 14
+  EditorID: WhiterunWarmaidensChestRef
+  Version2: 2
   SkyrimMajorRecordFlags:
   - 0x400
-  Base: 0252C7:Skyrim.esm
-  TeleportDestination:
-    Door: 01DB52:Skyrim.esm
-    Position: 20800, -8064, -3573.4365
-    Rotation: 0, -0, 5.364419E-06
+  Base: 09CAFD:Skyrim.esm
+  Scale: 1.4
   Lock:
-    Level: Expert
+    Level: Master
     Unused: 0x000000
-    Key: 093B12:Skyrim.esm
     Unused2: 0x0000000000000000000000
-  NavigationDoorLink:
-    NavMesh: 0C7A7D:Skyrim.esm
-    TeleportMarkerTriangle: 46
-  Owner: 093B22:Skyrim.esm
   LocationReference: 01F86A:Skyrim.esm
   Placement:
-    Position: -63.68858, -512.6482, 120.19987
-    Rotation: 0, -0, 1.5707964
+    Position: -364.17297, -101.66553, 64
+    Rotation: 0, -0, 1.2000037
 Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 0BC271:Skyrim.esm
@@ -116,6 +116,20 @@ Temporary:
   Placement:
     Position: -583.4027, -41.24217, 135.75156
     Rotation: 0, -0, 5.897789
+- MutagenObjectType: PlacedObject
+  FormKey: 0BC272:Skyrim.esm
+  Base: 07A60D:Skyrim.esm
+  LocationReference: 01F86A:Skyrim.esm
+  Placement:
+    Position: -586.5957, -71.2995, 87.98334
+- MutagenObjectType: PlacedObject
+  FormKey: 0BC5AE:Skyrim.esm
+  Base: 097F6E:Skyrim.esm
+  Scale: 0.86
+  LocationReference: 01F86A:Skyrim.esm
+  Placement:
+    Position: -566.83655, -109.57027, 129.04214
+    Rotation: 0, -0, 4.983189
 - MutagenObjectType: PlacedObject
   FormKey: 0EA73A:Skyrim.esm
   Base: 0EA722:Skyrim.esm
@@ -131,19 +145,5 @@ Temporary:
   Placement:
     Position: -115.3971, 320.5431, 383.4488
     Rotation: 0, 0, 0.7853982
-- MutagenObjectType: PlacedObject
-  FormKey: 0BC5AE:Skyrim.esm
-  Base: 097F6E:Skyrim.esm
-  Scale: 0.86
-  LocationReference: 01F86A:Skyrim.esm
-  Placement:
-    Position: -566.83655, -109.57027, 129.04214
-    Rotation: 0, -0, 4.983189
-- MutagenObjectType: PlacedObject
-  FormKey: 0BC272:Skyrim.esm
-  Base: 07A60D:Skyrim.esm
-  LocationReference: 01F86A:Skyrim.esm
-  Placement:
-    Position: -586.5957, -71.2995, 87.98334
 MajorFlags:
 - 0x40000

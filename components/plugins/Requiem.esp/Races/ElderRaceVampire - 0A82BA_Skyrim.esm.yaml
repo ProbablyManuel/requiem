@@ -100,11 +100,11 @@ SkeletalModel:
     File: actors\Character\Character Assets Female\skeleton_female.nif
     Data: 0x020000000000000000000000
 MovementTypeNames:
-- WALK
+- BLDO
 - RUN1
 - SNEK
-- BLDO
 - SWIM
+- WALK
 Voices:
   Male: 013AD7:Skyrim.esm
   Female: 013AE2:Skyrim.esm
@@ -115,6 +115,79 @@ NumberOfTintsInList: 916
 FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E8:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartBackLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 0.1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E8:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartBackward
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E5:Skyrim.esm
+    StaminaMult: 0.5
+  AttackEvent: attackPowerStartDualWield
+- AttackData:
+    DamageMult: 2
+    Chance: 0.5
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForward
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardH2HLeftHand
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.5
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardH2HRightHand
+- AttackData:
+    DamageMult: 2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartForwardLeftHand
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -135,16 +208,6 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackPowerStartInPlace
 - AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E5:Skyrim.esm
-    StaminaMult: 0.5
-  AttackEvent: attackPowerStartDualWield
-- AttackData:
     DamageMult: 2
     Chance: 1
     Flags:
@@ -152,31 +215,9 @@ Attacks:
     - LeftAttack
     StrikeAngle: 35
     Stagger: 1
-    AttackType: 0914E8:Skyrim.esm
+    AttackType: 0914E5:Skyrim.esm
     StaminaMult: 1
-  AttackEvent: attackPowerStartBackLeftHand
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStartDualWield
-- AttackData:
-    DamageMult: 2
-    Chance: 0.5
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E6:Skyrim.esm
-    StaminaMult: 1
-  AttackEvent: attackPowerStartForward
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: AttackStartH2HRight
+  AttackEvent: attackPowerStartInPlaceLeftHand
 - AttackData:
     DamageMult: 2
     Chance: 0.2
@@ -186,15 +227,7 @@ Attacks:
     Stagger: 1
     AttackType: 0914E7:Skyrim.esm
     StaminaMult: 1
-  AttackEvent: attackPowerStartRight
-- AttackData:
-    DamageMult: 0.5
-    Chance: 0.5
-    Flags:
-    - BashAttack
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: bashStart
+  AttackEvent: attackPowerStartLeft
 - AttackData:
     DamageMult: 2
     Chance: 1
@@ -208,6 +241,16 @@ Attacks:
   AttackEvent: attackPowerStartLeftLeftHand
 - AttackData:
     DamageMult: 2
+    Chance: 0.2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E7:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStartRight
+- AttackData:
+    DamageMult: 2
     Chance: 1
     Flags:
     - PowerAttack
@@ -218,55 +261,17 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackPowerStartRightLeftHand
 - AttackData:
-    DamageMult: 2
+    DamageMult: 1
     Chance: 1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 0.5
-    AttackType: 0914E6:Skyrim.esm
+    StrikeAngle: 50
     StaminaMult: 1
-  AttackEvent: attackPowerStartForwardH2HRightHand
+  AttackEvent: attackStart
 - AttackData:
     DamageMult: 1
     Chance: 1
-    Flags:
-    - LeftAttack
     StrikeAngle: 35
     StaminaMult: 1
-  AttackEvent: attackStartLeftHand
-- AttackData:
-    DamageMult: 2
-    Chance: 1
-    Flags:
-    - PowerAttack
-    - LeftAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E5:Skyrim.esm
-    StaminaMult: 1
-  AttackEvent: attackPowerStartInPlaceLeftHand
-- AttackData:
-    DamageMult: 2
-    Chance: 1
-    Flags:
-    - PowerAttack
-    - LeftAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E6:Skyrim.esm
-    StaminaMult: 1
-  AttackEvent: attackPowerStartForwardLeftHand
-- AttackData:
-    DamageMult: 2
-    Chance: 0.1
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E8:Skyrim.esm
-    StaminaMult: 1
-  AttackEvent: attackPowerStartBackward
+  AttackEvent: attackStartDualWield
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -276,32 +281,19 @@ Attacks:
     StaminaMult: 1
   AttackEvent: AttackStartH2HLeft
 - AttackData:
-    DamageMult: 2
+    DamageMult: 1
     Chance: 1
-    Flags:
-    - PowerAttack
-    - LeftAttack
     StrikeAngle: 35
-    Stagger: 0.5
-    AttackType: 0914E6:Skyrim.esm
     StaminaMult: 1
-  AttackEvent: attackPowerStartForwardH2HLeftHand
+  AttackEvent: AttackStartH2HRight
 - AttackData:
     DamageMult: 1
     Chance: 1
-    StrikeAngle: 50
-    StaminaMult: 1
-  AttackEvent: attackStart
-- AttackData:
-    DamageMult: 2
-    Chance: 0.2
     Flags:
-    - PowerAttack
+    - LeftAttack
     StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E7:Skyrim.esm
     StaminaMult: 1
-  AttackEvent: attackPowerStartLeft
+  AttackEvent: attackStartLeftHand
 - AttackData:
     DamageMult: 1.5
     Chance: 0.33
@@ -313,6 +305,14 @@ Attacks:
     AttackType: 000F54:Skyrim.esm
     StaminaMult: 1
   AttackEvent: bashPowerStart
+- AttackData:
+    DamageMult: 0.5
+    Chance: 0.5
+    Flags:
+    - BashAttack
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: bashStart
 BodyData:
   Male:
     Index: BodyTexture
