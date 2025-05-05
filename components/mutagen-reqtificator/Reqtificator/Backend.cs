@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Resources;
@@ -26,9 +28,23 @@ using Serilog.Events;
 
 namespace Reqtificator
 {
+    public enum PluginGroup { Main, Actors, Levelled, Equipment }
+    public record ModKeyStruct
+    {
+        public PluginGroup Plugin { get; private set; }
+        public ModKey PluginKey { get; private set; }
+
+        public ModKeyStruct(PluginGroup plugin)
+        {
+            Plugin = plugin;
+            string pluginName = "Requiem for the Indifferent " + plugin.ToString() + ".esp";
+            PluginKey = ModKey.FromNameAndExtension(pluginName);
+        }
+    }
+
     internal class Backend
     {
-        private static readonly ModKey PatchModKey = ModKey.FromNameAndExtension("Requiem for the Indifferent.esp");
+        private static readonly Collection<ModKeyStruct> ModKeys = new();
         private static readonly ModKey RequiemModKey = new("Requiem", ModType.Plugin);
 
         private readonly GameRelease _release;
@@ -55,6 +71,11 @@ namespace Reqtificator
                 _release = GameContext.IsAvailable(GameRelease.SkyrimSEGog) ? GameRelease.SkyrimSEGog : GameRelease.SkyrimSE;
             }
 
+            foreach (PluginGroup value in Enum.GetValues(typeof(PluginGroup)))
+            {
+                ModKeys.Add(new ModKeyStruct(value));
+            }
+
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
             Log.Information($"game release: {_release}");
@@ -63,7 +84,7 @@ namespace Reqtificator
             Log.Information($"build git branch: {buildInfo.GetString("gitBranch")}");
             Log.Information($"build git revision: {buildInfo.GetString("gitRevision")}");
 
-            _context = GameContext.GetRequiemContext(_release, PatchModKey);
+            _context = GameContext.GetRequiemContext(_release, ModKeys);
 
             Log.Information("load order:");
             _context.ActiveMods.WithIndex().ForEach(m => Log.Information($"  {m.Index} - {m.Item.ModKey}"));
@@ -116,20 +137,30 @@ namespace Reqtificator
                 var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
                 _logs.LogLevel.MinimumLevel = logLevel;
                 updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
-                var generatedPatch = GeneratePatch(loadOrder, updatedSettings, PatchModKey);
+                var generatedPatches = GeneratePatch(loadOrder, updatedSettings);
                 Log.Information("done patching, now exporting to disk");
 
                 _events.PublishState(ReqtificatorState.Patching(90, "Saving Patch"));
-                var outcome = WritePatchToDisk(generatedPatch, _context.DataFolder, loadOrder);
-                if (outcome is null)
+                for (int i = 0; i < generatedPatches.Count; i++)
                 {
-                    Log.Information("done exporting");
-                    _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
-                }
-                else
-                {
-                    Log.Information("exporting failed");
-                    _events.PublishState(ReqtificatorState.Stopped(outcome));
+                    var mod = generatedPatches[i];
+                    var outcome = WritePatchToDisk(mod, _context.DataFolder, loadOrder);
+                    if (outcome is null)
+                    {
+                        Log.Information("Exporting patch " + mod.ModKey.Name);
+                        if (i + 1 == generatedPatches.Count)
+                        {
+                            Log.Information("done exporting");
+                            _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
+                            break;
+                        }
+                        continue;
+                    }
+                    else
+                    {
+                        Log.Information("exporting failed");
+                        _events.PublishState(ReqtificatorState.Stopped(outcome));
+                    }
                 }
             }
             catch (Exception ex)
@@ -162,14 +193,27 @@ namespace Reqtificator
         }
 
 
-        public SkyrimMod GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, UserSettings userConfig, ModKey patchModKey)
+        public List<SkyrimMod> GeneratePatch(ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder, UserSettings userConfig)
+        {
+            var result = new List<SkyrimMod>();
+            var plugins = _executor.GeneratePatch(loadOrder, userConfig, ModKeys);
+
+            foreach (var plugin in plugins)
+            {
+                result.Add(ErrorCheck(plugin));
+            }
+
+            return result;
+        }
+
+        private SkyrimMod ErrorCheck(ErrorOr<SkyrimMod> error)
         {
             try
             {
 
                 Log.Information("start patching");
 
-                return _executor.GeneratePatch(loadOrder, userConfig, patchModKey) switch
+                return error switch
                 {
                     Success<SkyrimMod> s => s.Value,
                     Failed<SkyrimMod> f => throw f.Error,
