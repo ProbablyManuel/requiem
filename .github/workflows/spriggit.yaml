@@ -36,10 +36,10 @@ jobs:
         run: chmod +x .github/spriggit/Spriggit.CLI
 
       - name: Convert "Requiem.esp" to Spriggit format
-        run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
+        run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp"
 
       - name: Convert "Requiem - Creation Club.esp" to Spriggit format
-        run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
+        run: .github/spriggit/Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp"
 
       - name: Commit changed files (if any)
         uses: stefanzweifel/git-auto-commit-action@v5
