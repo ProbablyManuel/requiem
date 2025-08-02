@@ -6,6 +6,9 @@ VirtualMachineAdapter:
   - Name: DLC1VampireMesmerizeScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireFeedNoCrimeFaction
+      Object: 014CBD:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DLC1VampireMesmerize
       Object: 00BF73:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
@@ -14,9 +17,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: PerkMasterMindAggDownFFAimed
       Object: 09E0BB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1VampireFeedNoCrimeFaction
-      Object: 014CBD:Dawnguard.esm
 Name:
   TargetLanguage: English
   Value: Vampire Mesmerize

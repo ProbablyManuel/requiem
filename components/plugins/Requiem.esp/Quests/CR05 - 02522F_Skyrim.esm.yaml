@@ -5,16 +5,16 @@ VirtualMachineAdapter:
   - Name: CR05QuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: ParentQuest
-      Object: 04B2D9:Skyrim.esm
+      Name: Boss
+      Object: 02522F:Skyrim.esm
+      Alias: 9
     - MutagenObjectType: ScriptObjectProperty
       Name: MapMarker
       Object: 02522F:Skyrim.esm
       Alias: 16
     - MutagenObjectType: ScriptObjectProperty
-      Name: Boss
-      Object: 02522F:Skyrim.esm
-      Alias: 9
+      Name: ParentQuest
+      Object: 04B2D9:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: QuestGiver
       Object: 02522F:Skyrim.esm
@@ -22,17 +22,13 @@ VirtualMachineAdapter:
   - Name: QF_CR05_0002522F
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Location
-      Object: 02522F:Skyrim.esm
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Boss
       Object: 02522F:Skyrim.esm
       Alias: 9
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_QuestGiver
+      Name: Alias_Location
       Object: 02522F:Skyrim.esm
-      Alias: 0
+      Alias: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_LocationHold
       Object: 02522F:Skyrim.esm
@@ -41,6 +37,10 @@ VirtualMachineAdapter:
       Name: Alias_MapMarker
       Object: 02522F:Skyrim.esm
       Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestGiver
+      Object: 02522F:Skyrim.esm
+      Alias: 0
   FileName: QF_CR05_0002522F
   Fragments:
   - Unknown2: 1

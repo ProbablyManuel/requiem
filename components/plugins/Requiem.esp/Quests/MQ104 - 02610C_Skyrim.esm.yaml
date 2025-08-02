@@ -4,145 +4,160 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultquestrespawnscript
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: respawnTimeMax
-      Data: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: debugFlag
+      Object: 05B43F:Skyrim.esm
     - MutagenObjectType: ScriptIntProperty
       Name: doneStage
       Data: 80
     - MutagenObjectType: ScriptObjectProperty
-      Name: RespawnMarker2
-      Object: 0A9265:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: debugFlag
-      Object: 05B43F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: RespawnMarker1
       Object: 05C9DF:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: respawnTimeMin
-      Data: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RespawnMarker2
+      Object: 0A9265:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: RespawnMarkerFailsafe
       Object: 05C9E0:Skyrim.esm
     - MutagenObjectType: ScriptIntProperty
       Name: respawnPool
       Data: 3
+    - MutagenObjectType: ScriptIntProperty
+      Name: respawnTimeMax
+      Data: 30
+    - MutagenObjectType: ScriptIntProperty
+      Name: respawnTimeMin
+      Data: 15
   - Name: mq104script
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MQDebug
-      Object: 05B43F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortLocation
-      Object: 0D9079:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HQLocation
-      Object: 018A56:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HighHrothgarLocation
-      Object: 018E34:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Dragon
       Object: 02610C:Skyrim.esm
       Alias: 24
     - MutagenObjectType: ScriptObjectProperty
-      Name: MQKillDragonFaction
-      Object: 035D62:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: FactionLeaderAlias
       Object: 02610C:Skyrim.esm
       Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortLocation
+      Object: 0D9079:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HighHrothgarLocation
+      Object: 018E34:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HQLocation
+      Object: 018A56:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQDebug
+      Object: 05B43F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQKillDragonFaction
+      Object: 035D62:Skyrim.esm
   - Name: QF_MQ104B_0002610C
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LearnShoutMsg
-      Object: 022987:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Messenger
-      Object: 02610C:Skyrim.esm
-      Alias: 36
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CastleCourtyardMarker4
-      Object: 02610C:Skyrim.esm
-      Alias: 49
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Farengar
-      Object: 02610C:Skyrim.esm
-      Alias: 52
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HousecarlEnableMarker
-      Object: 0E4ECA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortAttackIntroScene
-      Object: 0A3F58:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SifnarCourtyardScene
-      Object: 05A6BC:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortMoveToMarker
-      Object: 0A1928:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Balgruuf
       Object: 02610C:Skyrim.esm
       Alias: 5
     - MutagenObjectType: ScriptObjectProperty
-      Name: MQ103a
-      Object: 02D75C:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AllowPlayerShout
-      Object: 0AFB80:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: OutroTrigger
-      Object: 0DD04E:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WordFus
-      Object: 013E22:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FortTarget
+      Name: Alias_CastleCourtyardMarker1
       Object: 02610C:Skyrim.esm
-      Alias: 23
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Survivor
-      Object: 02610C:Skyrim.esm
-      Alias: 39
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Irileth
-      Object: 02610C:Skyrim.esm
-      Alias: 34
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pFavorJarlsMakeFriends
-      Object: 087E24:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Player
-      Object: 02610C:Skyrim.esm
-      Alias: 41
+      Alias: 37
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_CastleCourtyardMarker2
       Object: 02610C:Skyrim.esm
       Alias: 47
     - MutagenObjectType: ScriptObjectProperty
-      Name: OutroScene
-      Object: 05A6BE:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Soldier4
+      Name: Alias_CastleCourtyardMarker3
       Object: 02610C:Skyrim.esm
-      Alias: 42
+      Alias: 48
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Soldier1
+      Name: Alias_CastleCourtyardMarker4
       Object: 02610C:Skyrim.esm
-      Alias: 25
+      Alias: 49
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CastleCourtyardMarker5
+      Object: 02610C:Skyrim.esm
+      Alias: 50
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CastleCourtyardMarker6
+      Object: 02610C:Skyrim.esm
+      Alias: 51
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Dagny
       Object: 02610C:Skyrim.esm
       Alias: 57
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Delphine
+      Object: 02610C:Skyrim.esm
+      Alias: 53
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dragon
+      Object: 02610C:Skyrim.esm
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Farengar
+      Object: 02610C:Skyrim.esm
+      Alias: 52
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FortCenterMarker
+      Object: 02610C:Skyrim.esm
+      Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FortTarget
+      Object: 02610C:Skyrim.esm
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Frothar
+      Object: 02610C:Skyrim.esm
+      Alias: 55
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Hold
+      Object: 02610C:Skyrim.esm
+      Alias: 61
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Hrongar
       Object: 02610C:Skyrim.esm
       Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Irileth
+      Object: 02610C:Skyrim.esm
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_JarlWeapon
+      Object: 02610C:Skyrim.esm
+      Alias: 59
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Messenger
+      Object: 02610C:Skyrim.esm
+      Alias: 36
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MessengerStartMarker
+      Object: 02610C:Skyrim.esm
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Nelkir
+      Object: 02610C:Skyrim.esm
+      Alias: 56
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 02610C:Skyrim.esm
+      Alias: 41
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PlayerHousecarl
+      Object: 02610C:Skyrim.esm
+      Alias: 58
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Proventus
+      Object: 02610C:Skyrim.esm
+      Alias: 54
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Soldier1
+      Object: 02610C:Skyrim.esm
+      Alias: 25
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Soldier2
       Object: 02610C:Skyrim.esm
@@ -152,160 +167,145 @@ VirtualMachineAdapter:
       Object: 02610C:Skyrim.esm
       Alias: 31
     - MutagenObjectType: ScriptObjectProperty
-      Name: dunDragonMoundQST
-      Object: 0FDBA2:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WhiterunPlayerHousePackageHouseCarl
-      Object: 0E4ECA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CW03
-      Object: 0D661C:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortMapMarker
-      Object: 0DB889:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Proventus
+      Name: Alias_Soldier4
       Object: 02610C:Skyrim.esm
-      Alias: 54
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CastleCourtyardMarker1
-      Object: 02610C:Skyrim.esm
-      Alias: 37
+      Alias: 42
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Soldier5
       Object: 02610C:Skyrim.esm
       Alias: 43
     - MutagenObjectType: ScriptObjectProperty
-      Name: MQ105
-      Object: 0242BA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MQ103
-      Object: 0D0800:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_JarlWeapon
-      Object: 02610C:Skyrim.esm
-      Alias: 59
-    - MutagenObjectType: ScriptObjectProperty
-      Name: introScene
-      Object: 058F93:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CastleCourtyardMarker6
-      Object: 02610C:Skyrim.esm
-      Alias: 51
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortSoldiersEnableMarker
-      Object: 0D9076:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortAttackFXEnableMarker
-      Object: 0D3FB3:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CW
-      Object: 019E53:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FavorRewardEnchArmorLight
-      Object: 246A1A:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WhiterunDragonsReachMapMarker
-      Object: 0C44AD:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MQGreybeardCallKeyword
-      Object: 10EC62:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PlayerHousecarl
-      Object: 02610C:Skyrim.esm
-      Alias: 58
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Dragon
-      Object: 02610C:Skyrim.esm
-      Alias: 24
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Frothar
-      Object: 02610C:Skyrim.esm
-      Alias: 55
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MQ104DragonFaction
-      Object: 054D00:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DragonBattleScene
-      Object: 0D8C40:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerFaction
-      Object: 000DB1:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CastleCourtyardMarker3
-      Object: 02610C:Skyrim.esm
-      Alias: 48
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortAttackNearbySpawnsMarker
-      Object: 0B8314:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MQ103B
-      Object: 02610B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CaptainStartMarker
-      Object: 05A6C3:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CastleCourtyardMarker5
-      Object: 02610C:Skyrim.esm
-      Alias: 50
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MQ104Shout
-      Object: 10B2F4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortAttackEnableMarker
-      Object: 0D3FB2:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DragonLandingMarker
-      Object: 05A6D1:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FortAttackScene
-      Object: 05C9DE:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GreybeardSummonsSound
-      Object: 0C3CAC:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Nelkir
-      Object: 02610C:Skyrim.esm
-      Alias: 56
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Hold
-      Object: 02610C:Skyrim.esm
-      Alias: 61
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Soldier6
       Object: 02610C:Skyrim.esm
       Alias: 44
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FortCenterMarker
+      Name: Alias_Survivor
       Object: 02610C:Skyrim.esm
-      Alias: 38
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FavorRewardEnchArmor
-      Object: 246A1A:Requiem.esp
+      Alias: 39
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_SurvivorMarker
       Object: 02610C:Skyrim.esm
       Alias: 40
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MessengerStartMarker
-      Object: 02610C:Skyrim.esm
-      Alias: 35
+      Name: AllowPlayerShout
+      Object: 0AFB80:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CaptainStartMarker
+      Object: 05A6C3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CW
+      Object: 019E53:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CW03
+      Object: 0D661C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DragonBattleScene
+      Object: 0D8C40:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DragonCrashDisableMarker
+      Object: 0D8B8F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DragonDeathScene
       Object: 05A6BD:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Delphine
-      Object: 02610C:Skyrim.esm
-      Alias: 53
+      Name: DragonLandingMarker
+      Object: 05A6D1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunDragonMoundQST
+      Object: 0FDBA2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardEnchArmor
+      Object: 246A1A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorRewardEnchArmorLight
+      Object: 246A1A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackEnableMarker
+      Object: 0D3FB2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackFXEnableMarker
+      Object: 0D3FB3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackIntroScene
+      Object: 0A3F58:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackNearbySpawnsMarker
+      Object: 0B8314:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortAttackScene
+      Object: 05C9DE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortMapMarker
+      Object: 0DB889:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortMoveToMarker
+      Object: 0A1928:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FortSoldiersEnableMarker
+      Object: 0D9076:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GreybeardSummonsSound
+      Object: 0C3CAC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HousecarlEnableMarker
+      Object: 0E4ECA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: introScene
+      Object: 058F93:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LearnShoutMsg
+      Object: 022987:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ103
+      Object: 0D0800:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ103a
+      Object: 02D75C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ103B
+      Object: 02610B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ104DragonFaction
+      Object: 054D00:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ104Shout
+      Object: 10B2F4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ105
+      Object: 0242BA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQGreybeardCallKeyword
+      Object: 10EC62:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroScene
+      Object: 05A6BE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroTrigger
+      Object: 0DD04E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorJarlsMakeFriends
+      Object: 087E24:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFaction
+      Object: 000DB1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SifnarCourtyardScene
+      Object: 05A6BC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunDragonsReachMapMarker
+      Object: 0C44AD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WhiterunPlayerHousePackageHouseCarl
+      Object: 0E4ECA:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: WI
       Object: 035D64:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DragonCrashDisableMarker
-      Object: 0D8B8F:Skyrim.esm
+      Name: WordFus
+      Object: 013E22:Skyrim.esm
   FileName: QF_MQ104B_0002610C
   Fragments:
   - Unknown2: 1
@@ -504,11 +504,11 @@ VirtualMachineAdapter:
     - Name: MQ104PlayerScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: UnrelentingForceShout
-        Object: 013E07:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: ForcePushSpell
         Object: 013E09:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: UnrelentingForceShout
+        Object: 013E07:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Dragon Rising

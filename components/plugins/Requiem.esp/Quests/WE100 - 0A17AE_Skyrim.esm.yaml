@@ -5,25 +5,37 @@ VirtualMachineAdapter:
   - Name: QF_WE100_000A17AE
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldLocation
+      Name: Alias_AnyLevelDungeon
       Object: 0A17AE:Skyrim.esm
-      Alias: 4
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Boss
+      Object: 0A17AE:Skyrim.esm
+      Alias: 28
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BossContainer
+      Object: 0A17AE:Skyrim.esm
+      Alias: 29
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dungeon
+      Object: 0A17AE:Skyrim.esm
+      Alias: 27
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Item
       Object: 0A17AE:Skyrim.esm
       Alias: 32
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldSons
+      Name: Alias_Letter
       Object: 0A17AE:Skyrim.esm
-      Alias: 8
+      Alias: 30
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_TreasureHunter
+      Name: Alias_LowLevelDungeon
       Object: 0A17AE:Skyrim.esm
-      Alias: 18
+      Alias: 34
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BossContainer
+      Name: Alias_MapMarker
       Object: 0A17AE:Skyrim.esm
-      Alias: 29
+      Alias: 33
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_myHoldContested
       Object: 0A17AE:Skyrim.esm
@@ -33,37 +45,25 @@ VirtualMachineAdapter:
       Object: 0A17AE:Skyrim.esm
       Alias: 7
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_LowLevelDungeon
+      Name: Alias_myHoldLocation
       Object: 0A17AE:Skyrim.esm
-      Alias: 34
+      Alias: 4
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Dungeon
+      Name: Alias_myHoldSons
       Object: 0A17AE:Skyrim.esm
-      Alias: 27
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Letter
-      Object: 0A17AE:Skyrim.esm
-      Alias: 30
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_AnyLevelDungeon
-      Object: 0A17AE:Skyrim.esm
-      Alias: 35
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Boss
-      Object: 0A17AE:Skyrim.esm
-      Alias: 28
+      Alias: 8
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_SceneCenterMarker
       Object: 0A17AE:Skyrim.esm
       Alias: 11
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TreasureHunter
+      Object: 0A17AE:Skyrim.esm
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Trigger
       Object: 0A17AE:Skyrim.esm
       Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MapMarker
-      Object: 0A17AE:Skyrim.esm
-      Alias: 33
   - Name: WE100Script
     Properties:
     - MutagenObjectType: ScriptObjectProperty

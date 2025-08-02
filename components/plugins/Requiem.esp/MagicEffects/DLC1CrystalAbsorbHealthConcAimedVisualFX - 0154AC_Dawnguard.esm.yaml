@@ -10,9 +10,6 @@ VirtualMachineAdapter:
   - Name: DLC1CrystalDrainScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: SoundLoop
-      Object: 056AC4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: CasterVFX
       Object: 01159C:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
@@ -21,11 +18,14 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: FadeIMOD
     - MutagenObjectType: ScriptObjectProperty
-      Name: TrapImod
-      Object: 00818D:Dawnguard.esm
+      Name: SoundLoop
+      Object: 056AC4:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: TargetVFX
       Object: 01159C:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 00818D:Dawnguard.esm
 Name:
   TargetLanguage: English
   Value: Crystal Drain Visual

@@ -5,8 +5,8 @@ VirtualMachineAdapter:
   - Name: ccEDHSSE002_QuestCounterScript
     Properties:
     - MutagenObjectType: ScriptIntProperty
-      Name: DeathThreshold
-      Data: 3
+      Name: ArmorStageToSet
+      Data: 1000
     - MutagenObjectType: ScriptIntProperty
       Name: ArmorThreshold
       Data: 4
@@ -14,148 +14,149 @@ VirtualMachineAdapter:
       Name: DeathStageToSet
       Data: 50
     - MutagenObjectType: ScriptIntProperty
-      Name: ArmorStageToSet
-      Data: 1000
+      Name: DeathThreshold
+      Data: 3
   - Name: SSE_QF_ccEDHSSE002_Quest_05000800
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Forsworn01
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Note
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_SpellKnightMarkerREF00
-      Object: 0008AA:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_KnightMarkerREF
-      Object: 000830:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_SimonMarkerREF
-      Object: 00087E:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GhostFXShader
-      Object: 03B6CB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DaenellaReal
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 18
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TeleportLocationREF
-      Object: 000852:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Forsworn03
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MGTeleportOutEffect
-      Object: 102731:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_SpellKnightMarkerREF01
-      Object: 00088A:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_SpellKnightMarkerREF02
-      Object: 00088F:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MGTeleportInEffect
-      Object: 102730:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_HagNote
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 25
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_CorruptedKMarkerREF02
-      Object: 0008A7:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Armor01
       Object: 000800:ccedhsse002-splkntset.esl
       Alias: 19
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Trigger
+      Name: Alias_Armor01W
       Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 23
+      Alias: 30
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Coffin
+      Name: Alias_Armor02
       Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 0
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor02W
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 31
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor03
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 21
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor03W
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 32
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Armor04
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 22
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Armor04W
       Object: 000800:ccedhsse002-splkntset.esl
       Alias: 33
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Armor03
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 21
-    - MutagenObjectType: ScriptIntProperty
-      Name: FadeTime
-      Data: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_MagicTeleportEffect
-      Object: 0008BF:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_LItem_QuestArmorSet02
-      Object: 000875:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Armor01W
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 30
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_BEKnight
       Object: 000800:ccedhsse002-splkntset.esl
       Alias: 15
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CoffinActivate
+      Name: Alias_BeldamaWitch
       Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 14
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Knapsack
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 2
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_ArmorSplKntEliteBootsWHITE
-      Object: 00089C:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_Activator04REF
-      Object: 0008AF:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GEKnight
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 17
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BeldamaWitch000000
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 29
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Ghost3
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 27
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_ArmorSplKntEliteHelmetWHITE
-      Object: 00089F:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Shrine
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 13
+      Alias: 11
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_BeldamaWitch000
       Object: 000800:ccedhsse002-splkntset.esl
       Alias: 24
     - MutagenObjectType: ScriptObjectProperty
-      Name: TeleportSoundOUT
-      Object: 00082F:ccedhsse002-splkntset.esl
+      Name: Alias_BeldamaWitch000000
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 29
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Coffin
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CoffinActivate
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Daenella
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DaenellaReal
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Forsworn01
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Forsworn02
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Forsworn03
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ForswornEnableMarker
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_ForswornNote
       Object: 000800:ccedhsse002-splkntset.esl
       Alias: 8
-    - MutagenObjectType: ScriptIntProperty
-      Name: HuggingTime
-      Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GEKnight
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 17
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Ghost
       Object: 000800:ccedhsse002-splkntset.esl
       Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ghost2
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 26
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ghost3
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ghost4
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 28
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_HagNote
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_HagSwitch
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Heart
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Knapsack
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Pureheart
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Shrine
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Trigger
+      Object: 000800:ccedhsse002-splkntset.esl
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_Activator01REF
+      Object: 00084F:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: ccEDHSSE002_Activator02REF
       Object: 0008AD:ccedhsse002-splkntset.esl
@@ -163,93 +164,92 @@ VirtualMachineAdapter:
       Name: ccEDHSSE002_Activator03REF
       Object: 0008AE:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Heart
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 12
+      Name: ccEDHSSE002_Activator04REF
+      Object: 0008AF:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_DaenellaMarkerREF
-      Object: 000869:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_ForswornEnableMarker
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_HumanHeart
-      Object: 00085D:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Ghost2
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 26
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Forsworn02
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BeldamaWitch
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 11
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Armor04
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 22
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Armor02W
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 31
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Ghost4
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 28
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Armor02
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 20
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_Activator01REF
-      Object: 00084F:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_HagSwitch
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_CorruptedKMarkerREF
-      Object: 00083F:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TeleportSoundIN
-      Object: 03B56B:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_SpellKnightMarkerREF03
-      Object: 000891:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_LItem_QuestArmorSet01
-      Object: 000874:ccedhsse002-splkntset.esl
+      Name: ccEDHSSE002_ArmorSplKntEliteBootsWHITE
+      Object: 00089C:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: ccEDHSSE002_ArmorSplKntEliteCuirassWHITE
       Object: 00089D:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: QuestFadeInEffect
-      Object: 102730:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Armor03W
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 32
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccEDHSSE002_SpellKnightMarkerREF04
-      Object: 000892:ccedhsse002-splkntset.esl
-    - MutagenObjectType: ScriptObjectProperty
       Name: ccEDHSSE002_ArmorSplKntEliteGauntletsWHITE
       Object: 00089E:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Daenella
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 9
+      Name: ccEDHSSE002_ArmorSplKntEliteHelmetWHITE
+      Object: 00089F:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_CorruptedKMarkerREF
+      Object: 00083F:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_CorruptedKMarkerREF02
+      Object: 0008A7:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: ccEDHSSE002_CorruptedKMarkerREF03
       Object: 0008A8:ccedhsse002-splkntset.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Pureheart
-      Object: 000800:ccedhsse002-splkntset.esl
-      Alias: 16
+      Name: ccEDHSSE002_DaenellaMarkerREF
+      Object: 000869:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_HumanHeart
+      Object: 00085D:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_KnightMarkerREF
+      Object: 000830:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_LItem_QuestArmorSet01
+      Object: 000874:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_LItem_QuestArmorSet02
+      Object: 000875:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_MagicTeleportEffect
+      Object: 0008BF:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SimonMarkerREF
+      Object: 00087E:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF00
+      Object: 0008AA:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF01
+      Object: 00088A:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF02
+      Object: 00088F:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF03
+      Object: 000891:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccEDHSSE002_SpellKnightMarkerREF04
+      Object: 000892:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: FadeTime
+      Data: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: HuggingTime
+      Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGTeleportInEffect
+      Object: 102730:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MGTeleportOutEffect
+      Object: 102731:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QuestFadeInEffect
+      Object: 102730:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TeleportLocationREF
+      Object: 000852:ccedhsse002-splkntset.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TeleportSoundIN
+      Object: 03B56B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TeleportSoundOUT
+      Object: 00082F:ccedhsse002-splkntset.esl
   FileName: SSE_QF_ccEDHSSE002_Quest_05000800
   Fragments:
   - Stage: 600
@@ -388,15 +388,15 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 25
-      - MutagenObjectType: ScriptIntProperty
-        Name: preReqStage
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: preReqStage
+        Data: 20
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 25
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -404,12 +404,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -417,12 +417,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 37
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 37
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -438,12 +438,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 38
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 38
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -459,12 +459,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 39
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 39
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -480,20 +480,20 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 60
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 60
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 55
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 55
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -501,12 +501,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 70
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 70
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -515,11 +515,11 @@ VirtualMachineAdapter:
     - Name: nealiassetstageonactivatescript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 65
-      - MutagenObjectType: ScriptIntProperty
         Name: StageToLookFor
         Data: 70
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 65
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -528,11 +528,11 @@ VirtualMachineAdapter:
     - Name: nealiassetstageonactivatescript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 80
-      - MutagenObjectType: ScriptIntProperty
         Name: StageToLookFor
         Data: 70
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 80
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -540,12 +540,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 95
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 95
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -553,12 +553,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 600
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 600
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -566,12 +566,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 600
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 600
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -579,12 +579,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 700
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 700
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -592,12 +592,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 700
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 700
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -605,12 +605,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 800
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 800
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -618,12 +618,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 800
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 800
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -631,12 +631,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 900
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 900
   - Property:
       Name: ''
       Object: 000800:ccedhsse002-splkntset.esl
@@ -644,12 +644,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 900
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000800:ccedhsse002-splkntset.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 900
 Name:
   TargetLanguage: English
   Value: Crypt of the Heart

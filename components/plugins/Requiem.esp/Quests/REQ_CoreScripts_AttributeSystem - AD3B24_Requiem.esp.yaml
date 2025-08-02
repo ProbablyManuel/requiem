@@ -10,6 +10,20 @@ VirtualMachineAdapter:
     Scripts:
     - Name: REQ_AttributeSystem
       Properties:
+      - MutagenObjectType: ScriptStringListProperty
+        Name: derived
+        Data:
+        - MagicResist
+        - MagickaRateMult
+        - DiseaseResist
+        - PoisonResist
+        - StaminaRateMult
+        - SpeedMult
+        - CarryWeight
+        - MarksmanPowerMod
+        - OneHandedPowerMod
+        - TwoHandedPowerMod
+        - UnarmedDamage
       - MutagenObjectType: ScriptFloatListProperty
         Name: prefactor
         Data:
@@ -30,6 +44,46 @@ VirtualMachineAdapter:
         - 0.005
         - 0.02
         - 0.05
+      - MutagenObjectType: ScriptStringListProperty
+        Name: shout_derived
+        Data:
+        - Times Shouted
+        - Words Of Power Learned
+        - Words Of Power Unlocked
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: Shout_Thresholds
+        Data:
+        - 50
+        - 5
+        - 0
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: threshold
+        Data:
+        - 150
+        - 100
+        - 100
+        - 140
+        - 100
+        - 125
+        - 110
+        - 150
+        - 150
+        - 150
+        - 125
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: weight_health
+        Data:
+        - 0
+        - 0
+        - 0.4
+        - 0.6
+        - 0
+        - 0.2
+        - 0.8
+        - 0.2
+        - 0.5
+        - 0.8
+        - 0.5
       - MutagenObjectType: ScriptFloatListProperty
         Name: weight_magicka
         Data:
@@ -45,40 +99,6 @@ VirtualMachineAdapter:
         - 0
         - 0
       - MutagenObjectType: ScriptFloatListProperty
-        Name: weight_health
-        Data:
-        - 0
-        - 0
-        - 0.4
-        - 0.6
-        - 0
-        - 0.2
-        - 0.8
-        - 0.2
-        - 0.5
-        - 0.8
-        - 0.5
-      - MutagenObjectType: ScriptStringListProperty
-        Name: derived
-        Data:
-        - MagicResist
-        - MagickaRateMult
-        - DiseaseResist
-        - PoisonResist
-        - StaminaRateMult
-        - SpeedMult
-        - CarryWeight
-        - MarksmanPowerMod
-        - OneHandedPowerMod
-        - TwoHandedPowerMod
-        - UnarmedDamage
-      - MutagenObjectType: ScriptFloatListProperty
-        Name: Shout_Thresholds
-        Data:
-        - 50
-        - 5
-        - 0
-      - MutagenObjectType: ScriptFloatListProperty
         Name: weight_stamina
         Data:
         - 0
@@ -92,26 +112,6 @@ VirtualMachineAdapter:
         - 0.5
         - 0.2
         - 0.5
-      - MutagenObjectType: ScriptStringListProperty
-        Name: shout_derived
-        Data:
-        - Times Shouted
-        - Words Of Power Learned
-        - Words Of Power Unlocked
-      - MutagenObjectType: ScriptFloatListProperty
-        Name: threshold
-        Data:
-        - 150
-        - 100
-        - 100
-        - 140
-        - 100
-        - 125
-        - 110
-        - 150
-        - 150
-        - 150
-        - 125
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Attribute System'

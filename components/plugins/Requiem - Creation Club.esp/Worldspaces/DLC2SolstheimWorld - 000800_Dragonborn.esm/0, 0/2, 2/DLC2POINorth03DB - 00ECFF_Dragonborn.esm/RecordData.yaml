@@ -92,6 +92,13 @@ Temporary:
     Scripts:
     - Name: REQ_AddItems
       Properties:
+      - MutagenObjectType: ScriptIntListProperty
+        Name: Amount
+        Data:
+        - 1
+        - 1
+        - 1
+        - 1
       - MutagenObjectType: ScriptObjectListProperty
         Name: Items
         Objects:
@@ -103,13 +110,6 @@ Temporary:
           Object: 000941:ccbgssse041-netchleather.esl
         - Name: ''
           Object: 000911:ccbgssse041-netchleather.esl
-      - MutagenObjectType: ScriptIntListProperty
-        Name: Amount
-        Data:
-        - 1
-        - 1
-        - 1
-        - 1
   Base: 025E48:Dragonborn.esm
   LocationReference: 016E2A:Dragonborn.esm
   Placement:
@@ -968,11 +968,11 @@ Temporary:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
   Base: 017720:Dragonborn.esm
   LocationReference: 016E2A:Dragonborn.esm
   EnableParent:

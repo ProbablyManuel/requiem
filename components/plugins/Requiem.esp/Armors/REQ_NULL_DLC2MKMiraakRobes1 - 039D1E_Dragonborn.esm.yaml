@@ -4,14 +4,14 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_SwapTo
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Remove
-      Object: 039D1E:Dragonborn.esm
     - MutagenObjectType: ScriptObjectListProperty
       Name: Add
       Objects:
       - Name: ''
         Object: 039D22:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Remove
+      Object: 039D1E:Dragonborn.esm
 ObjectBounds:
   First: -24, -19, 0
   Second: 24, 22, 11

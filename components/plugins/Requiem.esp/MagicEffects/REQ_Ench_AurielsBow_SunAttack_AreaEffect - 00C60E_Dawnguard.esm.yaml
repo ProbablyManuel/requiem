@@ -5,22 +5,22 @@ VirtualMachineAdapter:
   - Name: DLC1MagicCastFromSunScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerEffect
-      Object: 00CE10:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: ActivatorRef
       Object: 00CE0F:Dawnguard.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: fRecast
       Data: 1.5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlacedXMarker
-      Object: 00003B:Skyrim.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: fRecastRand
       Data: 7
     - MutagenObjectType: ScriptFloatProperty
       Name: fWaitDelay
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedXMarker
+      Object: 00003B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerEffect
+      Object: 00CE10:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: SpellRef
       Object: 00AEB6:Dawnguard.esm

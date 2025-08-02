@@ -5,10 +5,6 @@ VirtualMachineAdapter:
   - Name: SSE_QF_ccBGSSSE062_MiscQuest_02000819
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Note
-      Object: 000819:ccbgssse062-ba_dwarvenmail.esl
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Book
       Object: 000819:ccbgssse062-ba_dwarvenmail.esl
       Alias: 3
@@ -16,6 +12,10 @@ VirtualMachineAdapter:
       Name: Alias_Corpse
       Object: 000819:ccbgssse062-ba_dwarvenmail.esl
       Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+      Alias: 1
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Orc
       Object: 000819:ccbgssse062-ba_dwarvenmail.esl
@@ -42,20 +42,20 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 30
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 30
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 000819:ccbgssse062-ba_dwarvenmail.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 20
 Flags:
 - RunOnce
 Priority: 15

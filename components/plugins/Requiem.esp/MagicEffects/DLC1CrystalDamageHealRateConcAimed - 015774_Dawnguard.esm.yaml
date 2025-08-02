@@ -5,12 +5,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC1CrystalDrainHealthCheckScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HuskEffect
-      Object: 014DC5:Dawnguard.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: bleedOutStop
       Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HuskEffect
+      Object: 014DC5:Dawnguard.esm
 Name:
   TargetLanguage: English
   Value: Damage Health Regen

@@ -5,8 +5,8 @@ VirtualMachineAdapter:
   - Name: ccBGSSSE041_DeathCounterScript
     Properties:
     - MutagenObjectType: ScriptIntProperty
-      Name: DeathThreshold
-      Data: 4
+      Name: ArmorStageToSet
+      Data: 15
     - MutagenObjectType: ScriptIntProperty
       Name: ArmorThreshold
       Data: 5
@@ -14,242 +14,242 @@ VirtualMachineAdapter:
       Name: DeathStageToSet
       Data: 70
     - MutagenObjectType: ScriptIntProperty
-      Name: ArmorStageToSet
-      Data: 15
+      Name: DeathThreshold
+      Data: 4
   - Name: SSE_QF_ccBGSSSE041_Quest_0500081C
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_ArmorNetchLeatherShieldRandom
-      Object: 00081A:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RieklingH01
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 21
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Key
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 16
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorCuirassLight
-      Object: 02BC1C:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PaintedArmor01
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 37
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RieklingH03
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 23
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RieklingChief
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LitemArmorBootsLightTown
-      Object: 0374ED:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RieklingH04
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 24
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Journal
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 8
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BettyLeather
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 26
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WIPlayerEnemyFaction
-      Object: 06E02D:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_TableREF
-      Object: 0008E0:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BootsBlindingSpeed
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 36
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Riekling02
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorShieldLightTown
-      Object: 0374F5:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_RieklingSketch
-      Object: 00083E:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_ArmorNetchLeatherCuirassRandom
-      Object: 000819:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Netch01
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 18
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RieklingH02
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 22
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CraftGuide
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 15
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_NetchLeather
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 17
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorGauntletsLightTown
-      Object: 0374F2:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Gauntlets
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 30
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PaintedArmor02
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 38
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2BlacksmithArmorExtra75
-      Object: 0374FF:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Riekling03
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 2
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Barrel
       Object: 00081C:ccbgssse041-netchleather.esl
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorShieldLight
-      Object: 02BC22:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_QuestRieklingCheer
-      Object: 0008FD:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_NetchChest
+      Name: Alias_BettyLeather
       Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 29
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Riekling01
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_PlayerAllyFaction02
-      Object: 0008A8:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Netch03
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 35
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Sack
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 12
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_DialogueQuest
-      Object: 000835:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Cuirass
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 33
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorHelmetLight
-      Object: 02BC20:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Netch02
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 19
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PaintedArmor03
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 39
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_PlayerAllyFaction01
-      Object: 0008A7:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Corpse
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemBanditArmor
-      Object: 026B4F:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Sketch
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 41
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_BootsQuest
-      Object: 000934:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Charcoal
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 27
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PurpleDye
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 25
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_MiscQuest
-      Object: 00094A:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_ArmorNetchLeatherBoot
-      Object: 0008CA:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorGauntletsLight
-      Object: 02BC1E:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_ArmorNetchLeatherHelmetRandom
-      Object: 000818:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorHelmetLightTown
-      Object: 0374F4:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorBootsLight
-      Object: 02BC1A:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_RieklingKey
-      Object: 000882:ccbgssse041-netchleather.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PaintedArmor04
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 40
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Spit
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2LItemArmorCuirassLightTown
-      Object: 0374F0:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Helmet
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 32
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RearGuard
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 28
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Chest
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 14
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Riekling04
-      Object: 00081C:ccbgssse041-netchleather.esl
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE041_ArmorNetchLeatherGauntlet
-      Object: 0008CB:ccbgssse041-netchleather.esl
+      Alias: 26
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_boots
       Object: 00081C:ccbgssse041-netchleather.esl
       Alias: 34
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BootsBlindingSpeed
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 36
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Charcoal
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Chest
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Corpse
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CraftGuide
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Cuirass
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 33
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gauntlets
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Helmet
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 32
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Journal
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Key
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Netch01
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Netch02
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Netch03
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_NetchChest
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 29
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_NetchLeather
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PaintedArmor01
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 37
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PaintedArmor02
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PaintedArmor03
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PaintedArmor04
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PurpleDye
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RearGuard
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 28
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Riekling01
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Riekling02
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Riekling03
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Riekling04
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingChief
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingH01
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 21
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingH02
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 22
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingH03
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 23
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RieklingH04
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Sack
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Shield
       Object: 00081C:ccbgssse041-netchleather.esl
       Alias: 31
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Sketch
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 41
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spit
+      Object: 00081C:ccbgssse041-netchleather.esl
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherBoot
+      Object: 0008CA:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherCuirassRandom
+      Object: 000819:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherGauntlet
+      Object: 0008CB:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherHelmetRandom
+      Object: 000818:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
       Name: ccBGSSSE041_ArmorNetchLeatherSet
       Object: 00081B:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_ArmorNetchLeatherShieldRandom
+      Object: 00081A:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_BootsQuest
+      Object: 000934:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_DialogueQuest
+      Object: 000835:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_MiscQuest
+      Object: 00094A:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_PlayerAllyFaction01
+      Object: 0008A7:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_PlayerAllyFaction02
+      Object: 0008A8:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_QuestRieklingCheer
+      Object: 0008FD:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_RieklingKey
+      Object: 000882:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_RieklingSketch
+      Object: 00083E:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE041_TableREF
+      Object: 0008E0:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2BlacksmithArmorExtra75
+      Object: 0374FF:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorBootsLight
+      Object: 02BC1A:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LitemArmorBootsLightTown
+      Object: 0374ED:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorCuirassLight
+      Object: 02BC1C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorCuirassLightTown
+      Object: 0374F0:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorGauntletsLight
+      Object: 02BC1E:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorGauntletsLightTown
+      Object: 0374F2:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorHelmetLight
+      Object: 02BC20:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorHelmetLightTown
+      Object: 0374F4:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorShieldLight
+      Object: 02BC22:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemArmorShieldLightTown
+      Object: 0374F5:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2LItemBanditArmor
+      Object: 026B4F:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WIPlayerEnemyFaction
+      Object: 06E02D:Skyrim.esm
   FileName: SSE_QF_ccBGSSSE041_Quest_0500081C
   Fragments:
   - Stage: 1030
@@ -460,12 +460,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 2
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 2
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -481,20 +481,20 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 1100
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 1100
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 1000
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 1000
   - Property:
       Name: ''
       Object: 00081C:ccbgssse041-netchleather.esl
@@ -502,20 +502,20 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 30
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 30
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 20
   - Property:
       Name: ''
       Object: 00081C:ccbgssse041-netchleather.esl
@@ -523,12 +523,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 60
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 60
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -544,12 +544,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 80
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 80
   - Property:
       Name: ''
       Object: 00081C:ccbgssse041-netchleather.esl
@@ -557,12 +557,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 6
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 6
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -578,12 +578,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 45
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 45
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -599,12 +599,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 46
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 46
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -620,12 +620,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 47
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 47
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -641,12 +641,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageondeathrefalias
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 48
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 48
     - Name: defaultsetStageOnHitAliasScript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
@@ -662,12 +662,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: defaultsetstageonplayeracquire
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 75
       - MutagenObjectType: ScriptObjectProperty
         Name: myQST
         Object: 00081C:ccbgssse041-netchleather.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 75
   - Property:
       Name: ''
       Object: 00081C:ccbgssse041-netchleather.esl
@@ -676,11 +676,11 @@ VirtualMachineAdapter:
     - Name: nealiassetstageonactivatescript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 1200
-      - MutagenObjectType: ScriptIntProperty
         Name: StageToLookFor
         Data: 1100
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 1200
 Name:
   TargetLanguage: English
   Value: More than you can Chew

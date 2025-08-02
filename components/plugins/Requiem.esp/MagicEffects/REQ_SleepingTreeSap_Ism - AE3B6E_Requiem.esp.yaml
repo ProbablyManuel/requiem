@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_PoisonISM
     Properties:
-    - MutagenObjectType: ScriptStringProperty
-      Name: Resistvalue
-      Data: None
     - MutagenObjectType: ScriptObjectProperty
       Name: ISM_active
       Object: 0E3CBC:Skyrim.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Resistvalue
+      Data: None
 Name:
   TargetLanguage: English
   Value: Sleeping Tree Sap ISM

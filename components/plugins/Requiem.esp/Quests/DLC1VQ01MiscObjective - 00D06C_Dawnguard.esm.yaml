@@ -5,48 +5,64 @@ VirtualMachineAdapter:
   - Name: DLC1_QF_DLC1VQ01MiscObjective_0100D06C
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1HunterBaseIntroIsranStartMarker
-      Object: 00BDF2:Dawnguard.esm
+      Name: Alias_Agmaer
+      Object: 00D06C:Dawnguard.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Celann
+      Object: 00D06C:Dawnguard.esm
+      Alias: 10
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Durak
       Object: 00D06C:Dawnguard.esm
       Alias: 12
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1VQ01IsranAgmaerScene
-      Object: 00D937:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1VQ00
-      Object: 00D90E:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Agmaer
+      Name: Alias_FortDawnguardLocation
       Object: 00D06C:Dawnguard.esm
-      Alias: 9
+      Alias: 7
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1HallNormalState
-      Object: 003531:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1VQ01AgmaerScene
-      Object: 00D91A:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1VQ01
-      Object: 00352A:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1BoltSteel
-      Object: 0FAB12:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DurakMoveMarker
-      Object: 00E8BD:Dawnguard.esm
+      Name: Alias_FortDawnguardWorldspaceDoor
+      Object: 00D06C:Dawnguard.esm
+      Alias: 13
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Isran
       Object: 00D06C:Dawnguard.esm
       Alias: 2
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_IsranLookUpMarker
+      Object: 00D06C:Dawnguard.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Tolan
       Object: 00D06C:Dawnguard.esm
       Alias: 8
     - MutagenObjectType: ScriptObjectProperty
-      Name: HallofVigilantBossChest
-      Object: 10F7BB:Skyrim.esm
+      Name: DawnguardMapMarker
+      Object: 00FC6C:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1BoltSteel
+      Object: 0FAB12:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1CrossBow
+      Object: AD3746:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1HallNormalState
+      Object: 003531:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1HunterBaseIntroIsranStartMarker
+      Object: 00BDF2:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VQ00
+      Object: 00D90E:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VQ01
+      Object: 00352A:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VQ01AgmaerScene
+      Object: 00D91A:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VQ01IsranAgmaerScene
+      Object: 00D937:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC1VQ01IsranIntroScene
       Object: 00D928:Dawnguard.esm
@@ -54,33 +70,17 @@ VirtualMachineAdapter:
       Name: DLC1VQ01IsranTolanDimhollowScene
       Object: 00D92D:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Celann
-      Object: 00D06C:Dawnguard.esm
-      Alias: 10
+      Name: DurakMoveMarker
+      Object: 00E8BD:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: WitchhunterLodgeMarker
-      Object: 0B387B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FortDawnguardLocation
-      Object: 00D06C:Dawnguard.esm
-      Alias: 7
+      Name: HallofVigilantBossChest
+      Object: 10F7BB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: HallofVigilantBossChestMarker
       Object: 014755:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FortDawnguardWorldspaceDoor
-      Object: 00D06C:Dawnguard.esm
-      Alias: 13
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_IsranLookUpMarker
-      Object: 00D06C:Dawnguard.esm
-      Alias: 11
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1CrossBow
-      Object: AD3746:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DawnguardMapMarker
-      Object: 00FC6C:Dawnguard.esm
+      Name: WitchhunterLodgeMarker
+      Object: 0B387B:Skyrim.esm
   FileName: DLC1_QF_DLC1VQ01MiscObjective_0100D06C
   Fragments:
   - Stage: 110

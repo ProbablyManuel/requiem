@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_PoisonISM
     Properties:
-    - MutagenObjectType: ScriptStringProperty
-      Name: Resistvalue
-      Data: None
     - MutagenObjectType: ScriptObjectProperty
       Name: ISM_active
       Object: 008DA2:Requiem.esp
+    - MutagenObjectType: ScriptStringProperty
+      Name: Resistvalue
+      Data: None
 Name:
   TargetLanguage: English
   Value: Euphoria

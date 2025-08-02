@@ -5,14 +5,14 @@ VirtualMachineAdapter:
   - Name: REQ_PoisonISM
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Switch
-      Object: 1CCCDA:Requiem.esp
+      Name: ISM_active
+      Object: 008DAA:Requiem.esp
     - MutagenObjectType: ScriptStringProperty
       Name: Resistvalue
       Data: DiseaseResist
     - MutagenObjectType: ScriptObjectProperty
-      Name: ISM_active
-      Object: 008DAA:Requiem.esp
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Rockjoint

@@ -4,13 +4,13 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_MCM_Skills
     Properties:
-    - MutagenObjectType: ScriptStringProperty
-      Name: ModName
-      Data: Requiem - Skills Menu
     - MutagenObjectType: ScriptObjectProperty
       Name: DATA
       Object: AD3B24:Requiem.esp
       Alias: 11
+    - MutagenObjectType: ScriptStringProperty
+      Name: ModName
+      Data: Requiem - Skills Menu
   FileName: ''
   Aliases:
   - Property:

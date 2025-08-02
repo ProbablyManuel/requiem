@@ -8,36 +8,36 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultGhostScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostHalfDamagePerk
-      Object: 0D205B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostFXShader
-      Object: 03B6CB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostAbilityNew
-      Object: 0D2056:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: bFade
       Data: True
     - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostDeathFXShader
-      Object: 101727:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDisintegrationMainImmunityList
-      Object: 0F6534:Skyrim.esm
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pdefaultGhostLeveledList
       Object: 10F805:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostResistsAbility
-      Object: 0D2060:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pdefaultGhostDeathExplosion
-      Object: 0369CA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: pDefaultGhostWeaponFlickerList
       Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
   - Name: DLC2dunKarstaagSummonScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -45,26 +45,26 @@ VirtualMachineAdapter:
       Object: 0247F8:Dragonborn.esm
       Alias: 17
     - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunKarstaagBlizzard
+      Object: 028245:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunKarstaagConjureIceWraith
+      Object: 034B57:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunKarstaagFrostCloak
+      Object: 02821D:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunKarstaagIceWraithCount
+      Object: 02AF46:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunKarstaagQST
+      Object: 0247F8:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DLC2dunKarstaagQST_Blizzard
       Object: 02823F:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2dunKarstaagQST_IceWraiths
       Object: 034B59:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunKarstaagBlizzard
-      Object: 028245:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunKarstaagFrostCloak
-      Object: 02821D:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunKarstaagConjureIceWraith
-      Object: 034B57:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunKarstaagQST
-      Object: 0247F8:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunKarstaagIceWraithCount
-      Object: 02AF46:Dragonborn.esm
   - Name: giantActorSCRIPT
 Configuration:
   Flags:

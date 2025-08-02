@@ -4,48 +4,57 @@ VirtualMachineAdapter:
   Scripts:
   - Name: FavorChangeLocationQuestScript
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bDisplayObjective
+      Data: True
     - MutagenObjectType: ScriptObjectProperty
-      Name: pFavorTimeLeft
-      Object: 05CDC8:Skyrim.esm
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pFavorLocation
       Object: 0A2C9B:Skyrim.esm
       Alias: 27
     - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bDisplayObjective
-      Data: True
+      Name: pFavorTimeLeft
+      Object: 05CDC8:Skyrim.esm
   - Name: QF_Favor252_000A2C9B
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Gold
-      Object: 00000F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FavorReward
-      Object: 035217:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Favor252QuestGiverFaction
-      Object: 0A2C9D:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Favor250QuestGiverFaction
-      Object: 0A2C87:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PlayerHousecarl
+      Name: Alias_Hold
       Object: 0A2C9B:Skyrim.esm
-      Alias: 30
+      Alias: 28
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_JarlWeapon
       Object: 0A2C9B:Skyrim.esm
       Alias: 32
     - MutagenObjectType: ScriptObjectProperty
-      Name: HousePurchase
-      Object: 0A7B33:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Location
       Object: 0A2C9B:Skyrim.esm
       Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PlayerHousecarl
+      Object: 0A2C9B:Skyrim.esm
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_QuestGiver
+      Object: 0A2C9B:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Steward
+      Object: 0A2C9B:Skyrim.esm
+      Alias: 29
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor250QuestGiverFaction
+      Object: 0A2C87:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Favor252QuestGiverFaction
+      Object: 0A2C9D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorJarlsMakeFriends
+      Object: 087E24:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FavorReward
+      Object: 035217:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: FavorRewardArmor
       Object: 04930B:Skyrim.esm
@@ -53,29 +62,20 @@ VirtualMachineAdapter:
       Name: FavorRewardGold
       Object: 0494DF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Steward
-      Object: 0A2C9B:Skyrim.esm
-      Alias: 29
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Hold
-      Object: 0A2C9B:Skyrim.esm
-      Alias: 28
-    - MutagenObjectType: ScriptObjectProperty
-      Name: USKP_HouseCarlBedroomEnable
-      Object: 0E25D4:Skyrim.esm
+      Name: Gold
+      Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GuestBedroom
       Object: 0E25D4:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_QuestGiver
-      Object: 0A2C9B:Skyrim.esm
-      Alias: 17
+      Name: HousePurchase
+      Object: 0A7B33:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pFavorJarlsMakeFriends
       Object: 087E24:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: FavorJarlsMakeFriends
-      Object: 087E24:Skyrim.esm
+      Name: USKP_HouseCarlBedroomEnable
+      Object: 0E25D4:Skyrim.esm
   FileName: QF_Favor252_000A2C9B
   Fragments:
   - Unknown2: 1
@@ -113,13 +113,13 @@ VirtualMachineAdapter:
       - MutagenObjectType: ScriptObjectProperty
         Name: JobFaction
         Object: 050920:Skyrim.esm
-      - MutagenObjectType: ScriptIntProperty
-        Name: ObjectiveToRedisplay
-        Data: 15
       - MutagenObjectType: ScriptObjectProperty
         Name: MasterJobAlias
         Object: 02E1AD:Skyrim.esm
         Alias: 20
+      - MutagenObjectType: ScriptIntProperty
+        Name: ObjectiveToRedisplay
+        Data: 15
 Name:
   TargetLanguage: English
   Value: Thane of Haafingar

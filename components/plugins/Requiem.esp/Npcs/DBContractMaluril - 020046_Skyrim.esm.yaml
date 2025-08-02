@@ -8,14 +8,14 @@ VirtualMachineAdapter:
   Scripts:
   - Name: pMalurilScript
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: pMalurilDie
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDBSideContract10
-      Object: 01EA66:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DarkBrotherhoodQuest
       Object: 01EA5C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDBSideContract10
+      Object: 01EA66:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: pMalurilDie
 ObjectBounds:
   First: -22, -14, 0
   Second: 22, 14, 128

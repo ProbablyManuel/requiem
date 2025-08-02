@@ -4,18 +4,18 @@ VirtualMachineAdapter:
   Scripts:
   - Name: dlc2DBDragonsBreathEffectSCRIPT
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bSPAWNDRAGONS
+      Data: True
     - MutagenObjectType: ScriptObjectProperty
-      Name: dragonExplosion
-      Object: 0369CA:Skyrim.esm
+      Name: dragonArms
+      Object: 02172F:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: dragonArmsFX
       Object: 021735:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: dragonArms
-      Object: 02172F:Dragonborn.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bSPAWNDRAGONS
-      Data: True
+      Name: dragonExplosion
+      Object: 0369CA:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: specDragon
       Object: 0265B1:Dragonborn.esm

@@ -4,15 +4,15 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_AddItemsOnEffectStart
     Properties:
+    - MutagenObjectType: ScriptIntListProperty
+      Name: Amount
+      Data:
+      - 1
     - MutagenObjectType: ScriptObjectListProperty
       Name: ItemsToAdd
       Objects:
       - Name: ''
         Object: AE3B59:Requiem.esp
-    - MutagenObjectType: ScriptIntListProperty
-      Name: Amount
-      Data:
-      - 1
 Name:
   TargetLanguage: English
   Value: Healing Poultice

@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   Scripts:
   - Name: VoiceCharmFactionScript
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bMakePlayerTeammate
     - MutagenObjectType: ScriptObjectProperty
       Name: CharmFaction
       Object: 08F3E8:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bMakePlayerTeammate
 Name:
   TargetLanguage: English
   Value: Pacify

@@ -10,14 +10,23 @@ VirtualMachineAdapter:
   - Name: WitchlightActorScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: ExplosionIllusionLight01
+      Object: 0F1189:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ingredientDrop
+      Object: 10EB2A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: wispBuff01
       Object: 091F74:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: wispBuff02
+      Object: 091F76:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: wispBuff03
       Object: 091F75:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ingredientDrop
-      Object: 10EB2A:Skyrim.esm
+      Name: WispChild01
+      Object: 09166A:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: WispChild02
       Object: 09166B:Skyrim.esm
@@ -25,17 +34,8 @@ VirtualMachineAdapter:
       Name: WispChild03
       Object: 09166C:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: WispChild01
-      Object: 09166A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: wispKeyword
       Object: 091669:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: wispBuff02
-      Object: 091F76:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ExplosionIllusionLight01
-      Object: 0F1189:Skyrim.esm
 ObjectBounds:
   First: -30, -30, 0
   Second: 30, 30, 130

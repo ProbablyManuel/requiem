@@ -10,18 +10,55 @@ VirtualMachineAdapter:
     Scripts:
     - Name: REQ_PlayerImpactEffects
       Properties:
+      - MutagenObjectType: ScriptFloatListProperty
+        Name: ArmorTresholds
+        Data:
+        - 300
+        - 400
+        - 400
+        - 600
+        - 500
+        - 0
+        - 0
+      - MutagenObjectType: ScriptObjectProperty
+        Name: blocker
+        Object: 3251AB:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: BreakableBow
         Object: 2E232E:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
+        Name: Concentration
+        Object: 2FFEAD:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: DestroyedMessage
+        Objects:
+        - Name: ''
+          Object: 0835C9:Requiem.esp
+        - Name: ''
+          Object: 0835CA:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Disarm
+        Objects:
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 1944DE:Requiem.esp
+        - Name: ''
+          Object: 31DA4E:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
         Name: DummyEffect
         Object: 3251AC:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: OnHitDebug
-        Object: 345506:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: Unarmed
-        Object: 0001F4:Skyrim.esm
+        Name: IgnoredAttack
+        Object: 33B68E:Requiem.esp
       - MutagenObjectType: ScriptObjectListProperty
         Name: MagickaDamage
         Objects:
@@ -39,49 +76,29 @@ VirtualMachineAdapter:
           Object: 302653:Requiem.esp
         - Name: ''
           Object: 2E9A1B:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MagicWard
+        Object: 01EA69:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: OnHitDebug
+        Object: 345506:Requiem.esp
       - MutagenObjectType: ScriptObjectListProperty
-        Name: DestroyedMessage
+        Name: Stagger
         Objects:
         - Name: ''
-          Object: 0835C9:Requiem.esp
+          Object: 32C8B2:Requiem.esp
         - Name: ''
-          Object: 0835CA:Requiem.esp
-      - MutagenObjectType: ScriptObjectListProperty
-        Name: StaminaGain
-        Objects:
+          Object: 32C8B1:Requiem.esp
         - Name: ''
-          Object: 2E9A1F:Requiem.esp
+          Object: 32C8B4:Requiem.esp
         - Name: ''
-          Object: 2E9A1F:Requiem.esp
+          Object: 2E9A1D:Requiem.esp
         - Name: ''
-          Object: 2E9A1F:Requiem.esp
+          Object: AE3709:Requiem.esp
         - Name: ''
-          Object: 2E9A1F:Requiem.esp
+          Object: 2E9A1D:Requiem.esp
         - Name: ''
-          Object: 2E9A1F:Requiem.esp
-        - Name: ''
-          Object: 31DA4F:Requiem.esp
-        - Name: ''
-          Object: 31DA54:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: IgnoredAttack
-        Object: 33B68E:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: Concentration
-        Object: 2FFEAD:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: blocker
-        Object: 3251AB:Requiem.esp
-      - MutagenObjectType: ScriptFloatListProperty
-        Name: ArmorTresholds
-        Data:
-        - 300
-        - 400
-        - 400
-        - 600
-        - 500
-        - 0
-        - 0
+          Object: 2E9A1D:Requiem.esp
       - MutagenObjectType: ScriptObjectListProperty
         Name: StaminaDamage
         Objects:
@@ -100,42 +117,25 @@ VirtualMachineAdapter:
         - Name: ''
           Object: 302651:Requiem.esp
       - MutagenObjectType: ScriptObjectListProperty
-        Name: Stagger
+        Name: StaminaGain
         Objects:
         - Name: ''
-          Object: 32C8B2:Requiem.esp
+          Object: 2E9A1F:Requiem.esp
         - Name: ''
-          Object: 32C8B1:Requiem.esp
+          Object: 2E9A1F:Requiem.esp
         - Name: ''
-          Object: 32C8B4:Requiem.esp
+          Object: 2E9A1F:Requiem.esp
         - Name: ''
-          Object: 2E9A1D:Requiem.esp
+          Object: 2E9A1F:Requiem.esp
         - Name: ''
-          Object: AE3709:Requiem.esp
+          Object: 2E9A1F:Requiem.esp
         - Name: ''
-          Object: 2E9A1D:Requiem.esp
+          Object: 31DA4F:Requiem.esp
         - Name: ''
-          Object: 2E9A1D:Requiem.esp
+          Object: 31DA54:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: MagicWard
-        Object: 01EA69:Skyrim.esm
-      - MutagenObjectType: ScriptObjectListProperty
-        Name: Disarm
-        Objects:
-        - Name: ''
-          Object: 1944DE:Requiem.esp
-        - Name: ''
-          Object: 1944DE:Requiem.esp
-        - Name: ''
-          Object: 1944DE:Requiem.esp
-        - Name: ''
-          Object: 1944DE:Requiem.esp
-        - Name: ''
-          Object: 1944DE:Requiem.esp
-        - Name: ''
-          Object: 1944DE:Requiem.esp
-        - Name: ''
-          Object: 31DA4E:Requiem.esp
+        Name: Unarmed
+        Object: 0001F4:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Impact Effects for Player'

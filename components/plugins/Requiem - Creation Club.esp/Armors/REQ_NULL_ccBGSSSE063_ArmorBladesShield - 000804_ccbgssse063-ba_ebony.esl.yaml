@@ -7,12 +7,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 200
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 000840:ccbgssse063-ba_ebony.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 200
 Name:
   TargetLanguage: English
   Value: Blades Ebony Shield

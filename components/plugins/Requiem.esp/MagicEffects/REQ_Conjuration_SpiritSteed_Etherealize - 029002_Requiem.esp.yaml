@@ -12,15 +12,15 @@ VirtualMachineAdapter:
       Data: True
   - Name: magicImodScript
     Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStaticDelay
+      Data: 0.15
     - MutagenObjectType: ScriptObjectProperty
       Name: IntroFX
       Object: 064D69:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: OutroFX
       Object: 064D69:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fStaticDelay
-      Data: 0.15
     - MutagenObjectType: ScriptObjectProperty
       Name: StaticFX
       Object: 05E93D:Skyrim.esm

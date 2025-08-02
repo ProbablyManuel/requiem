@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 80
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 000824:ccbgssse059-ba_dragonplate.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 80
 Name:
   TargetLanguage: English
   Value: Dragonplate Insulated Gauntlets

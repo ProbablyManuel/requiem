@@ -9,6 +9,9 @@ VirtualMachineAdapter:
   - Name: pHernScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: DarkBrotherhoodQuest
+      Object: 01EA5C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: pDB04
       Object: 01EA53:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
@@ -16,9 +19,6 @@ VirtualMachineAdapter:
       Object: 01EA60:Skyrim.esm
     - MutagenObjectType: ScriptIntProperty
       Name: pHernDie
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DarkBrotherhoodQuest
-      Object: 01EA5C:Skyrim.esm
   - Name: WIDeadBodyCleanupScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty

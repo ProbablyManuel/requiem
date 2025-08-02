@@ -8,21 +8,21 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC1SkeletonAmbushScript
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ambushOnTrigger
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SFX1
+      Object: 0042B8:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: SFX2
       Object: 0042B9:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: SFX3
       Object: 0042BA:Dawnguard.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: ambushOnTrigger
-      Data: True
     - MutagenObjectType: ScriptObjectProperty
       Name: SFX4
       Object: 0042BB:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SFX1
-      Object: 0042B8:Dawnguard.esm
 ObjectBounds:
   First: -41, -25, 0
   Second: 41, 72, 86

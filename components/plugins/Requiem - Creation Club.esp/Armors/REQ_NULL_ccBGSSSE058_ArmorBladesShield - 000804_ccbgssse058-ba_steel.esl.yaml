@@ -7,12 +7,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 300
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 000823:ccbgssse058-ba_steel.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 300
 Name:
   TargetLanguage: English
   Value: Blades Steel Shield

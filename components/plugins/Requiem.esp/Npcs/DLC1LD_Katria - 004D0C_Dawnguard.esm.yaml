@@ -9,14 +9,14 @@ VirtualMachineAdapter:
   - Name: DLC1LD_GhostScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1LD_GhostAbility
+      Object: 00CFAB:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DLC1LD_KatriaKilledByPlayer
       Object: 01433F:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GhostResistsAbility
       Object: 0D2060:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1LD_GhostAbility
-      Object: 00CFAB:Dawnguard.esm
 ObjectBounds:
   First: -22, -14, 0
   Second: 22, 14, 128

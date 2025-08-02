@@ -3082,12 +3082,12 @@ Persistent:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-        Data: True
   Base: 000820:ccmtysse002-ve.esl
   RagdollData: 0x020000000000000000000000000000002727C5BFCCDEA43EF434503B080000000096D4C0000028BD000004BC9E4E41C023C3CA3ED7BF4640090000000000403A0000AABC00B4FA41B7B190BD4026DAB979183CBC0A0000000000503C00209DBE00A1DB413905803F23C503BEF996753E0E0000000046D3400000C7BC0000A03A86CB46C040225EBE4A143D400F000000000018BB000056BC0098FA41F4E293BDF260903AD0187D3C10000000000010BC00409BBE009CDB418017803FE151023E8E8C75BE020000000000E23C0011A8C000C471407CECCF3D9CC3063DCA59343D0300000000001D3D000074BC00D30B413D0B8DBD5E6156BAB50A733E040000000000373D00002CBC00EE1D4105A3A33E265876BBDBBA33BE000000000000583C000090BC0034B041BB833FBDC3B2AD3A308BD7BD01000000000038BC000022BD00F80C417CB026BF61C0B43D25181FBD0B00000000C0AE3D0000C0BD001A6241B31A023F8B05B2BE519F32BE0C00000000A0DA3C00004ABE006CA2414754DD3E299E92BD4AEBADBC0D000000003017BD0080B73D00388041C7442E3DC3FFBEBEFE2ABFBF05000000000096BD0080A8BD00AF614150070D3FD557243FD343013E06000000000025BE0060CDBE00D3A2411018B53EC8EFAD3D2FECD63C070000000000ACBC000066BD80728041C74F25BC8F89C83E2D66BF3F00000000000000000000884100002041000000800000008000000080
   LocationReference: 02DE25:Skyrim.esm
@@ -3174,33 +3174,33 @@ Persistent:
     - Name: ccMTYSSE002_DoorActivateScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
+        Name: BadGuy
+        Object: 000940:ccmtysse002-ve.esl
+      - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 000926:ccmtysse002-ve.esl
       - MutagenObjectType: ScriptObjectProperty
         Name: secretDoor
         Object: 0009CA:ccmtysse002-ve.esl
-      - MutagenObjectType: ScriptObjectProperty
-        Name: BadGuy
-        Object: 000940:ccmtysse002-ve.esl
     - Name: defaultSetStageTRIGSpecificActor
       Flags: Inherited
       Properties:
-      - MutagenObjectType: ScriptObjectProperty
-        Name: triggerActor
-        Object: 00093F:ccmtysse002-ve.esl
+      - MutagenObjectType: ScriptBoolProperty
+        Name: disableWhenDone
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 000926:ccmtysse002-ve.esl
       - MutagenObjectType: ScriptBoolProperty
         Name: onlyOnce
       - MutagenObjectType: ScriptIntProperty
-        Name: stage
-        Data: 45
-      - MutagenObjectType: ScriptIntProperty
         Name: prereqStageOPT
         Data: 50
-      - MutagenObjectType: ScriptBoolProperty
-        Name: disableWhenDone
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 45
+      - MutagenObjectType: ScriptObjectProperty
+        Name: triggerActor
+        Object: 00093F:ccmtysse002-ve.esl
   Base: 046EFF:Skyrim.esm
   Primitive:
     Bounds: 583.0002, 446.0002, 315
@@ -7350,12 +7350,12 @@ Temporary:
       - MutagenObjectType: ScriptBoolProperty
         Name: disableWhenDone
         Data: True
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 000926:ccmtysse002-ve.esl
       - MutagenObjectType: ScriptBoolProperty
         Name: doOnce
         Data: True
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000926:ccmtysse002-ve.esl
       - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 70
@@ -7943,17 +7943,17 @@ Temporary:
     - Name: ccMTYSSE002_MoveSuspectScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: Harald
-        Object: 000940:ccmtysse002-ve.esl
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 000926:ccmtysse002-ve.esl
-      - MutagenObjectType: ScriptObjectProperty
         Name: DawnstarQuicksilverMine
         Object: 02C779:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
+        Name: Harald
+        Object: 000940:ccmtysse002-ve.esl
+      - MutagenObjectType: ScriptObjectProperty
         Name: HaraldStartMarker
         Object: 000950:ccmtysse002-ve.esl
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000926:ccmtysse002-ve.esl
   Base: 00097B:ccmtysse002-ve.esl
   Primitive:
     Bounds: 58, 88.0001, 133
@@ -8011,18 +8011,18 @@ Temporary:
       - MutagenObjectType: ScriptBoolProperty
         Name: disableWhenDone
         Data: True
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 000926:ccmtysse002-ve.esl
       - MutagenObjectType: ScriptBoolProperty
         Name: doOnce
         Data: True
-      - MutagenObjectType: ScriptIntProperty
-        Name: stage
-        Data: 45
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000926:ccmtysse002-ve.esl
       - MutagenObjectType: ScriptIntProperty
         Name: prereqStageOPT
         Data: 50
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 45
   Base: 099312:Skyrim.esm
   Primitive:
     Bounds: 192.6694, 131.9543, 164.7847
@@ -8376,12 +8376,12 @@ Temporary:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-        Data: True
   Base: 000D83:ccmtysse002-ve.esl
   LocationReference: 02DE25:Skyrim.esm
   EnableParent:
@@ -8403,12 +8403,12 @@ Temporary:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-        Data: True
   Base: 000D86:ccmtysse002-ve.esl
   LocationReference: 02DE25:Skyrim.esm
   EnableParent:
@@ -8430,12 +8430,12 @@ Temporary:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-        Data: True
   Base: 000D85:ccmtysse002-ve.esl
   LocationReference: 02DE25:Skyrim.esm
   EnableParent:
@@ -8457,12 +8457,12 @@ Temporary:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-        Data: True
   Base: 000D84:ccmtysse002-ve.esl
   LocationReference: 02DE25:Skyrim.esm
   EnableParent:

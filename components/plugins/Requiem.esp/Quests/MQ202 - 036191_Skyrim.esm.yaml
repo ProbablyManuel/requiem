@@ -5,103 +5,65 @@ VirtualMachineAdapter:
   - Name: MQ202QuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: DialogueFavorGeneric
-      Object: 05A6DC:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TG01
-      Object: 01F326:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Dirge
       Object: 036191:Skyrim.esm
       Alias: 55
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Gissur
-      Object: 036191:Skyrim.esm
-      Alias: 61
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FlagonBartender
       Object: 036191:Skyrim.esm
       Alias: 70
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gissur
+      Object: 036191:Skyrim.esm
+      Alias: 61
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Vekel
       Object: 036191:Skyrim.esm
       Alias: 54
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DialogueFavorGeneric
+      Object: 05A6DC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TG01
+      Object: 01F326:Skyrim.esm
   - Name: QF_MQ202_00036191
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: EsbernVaultMoveMarker
-      Object: 0A8461:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_ShavariNote
-      Object: 036191:Skyrim.esm
-      Alias: 72
-    - MutagenObjectType: ScriptObjectProperty
-      Name: EsbernExplainScene
-      Object: 031900:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MainAmbush3
-      Object: 036191:Skyrim.esm
-      Alias: 68
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FinalAmbush1
-      Object: 036191:Skyrim.esm
-      Alias: 73
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RaggedFlagonMarker
-      Object: 044A62:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Dirge
-      Object: 036191:Skyrim.esm
-      Alias: 55
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_EsbernsDoor
-      Object: 036191:Skyrim.esm
-      Alias: 60
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ThalmorAmbushEnableMarker
-      Object: 022420:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MainAmbush4
-      Object: 036191:Skyrim.esm
-      Alias: 69
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GissurNote
-      Object: 036191:Skyrim.esm
-      Alias: 71
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Vekel
-      Object: 036191:Skyrim.esm
-      Alias: 54
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FinalAmbush2
-      Object: 036191:Skyrim.esm
-      Alias: 74
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Brynjolf
       Object: 036191:Skyrim.esm
       Alias: 52
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Shavari
+      Name: Alias_Delphine
       Object: 036191:Skyrim.esm
-      Alias: 62
+      Alias: 44
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MainAmbush1
+      Name: Alias_Dirge
       Object: 036191:Skyrim.esm
-      Alias: 66
+      Alias: 55
     - MutagenObjectType: ScriptObjectProperty
-      Name: FinalAmbushEnableMarker
-      Object: 06CCF5:Skyrim.esm
+      Name: Alias_Esbern
+      Object: 036191:Skyrim.esm
+      Alias: 51
     - MutagenObjectType: ScriptObjectProperty
-      Name: GissurSummonThalmorScene
-      Object: 06C871:Skyrim.esm
+      Name: Alias_EsbernsDoor
+      Object: 036191:Skyrim.esm
+      Alias: 60
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FinalAmbush1
+      Object: 036191:Skyrim.esm
+      Alias: 73
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FinalAmbush2
+      Object: 036191:Skyrim.esm
+      Alias: 74
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FlagonAmbush1
+      Object: 036191:Skyrim.esm
+      Alias: 63
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FlagonAmbush2
       Object: 036191:Skyrim.esm
       Alias: 64
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Gissur
-      Object: 036191:Skyrim.esm
-      Alias: 61
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FlagonAmbush3
       Object: 036191:Skyrim.esm
@@ -111,44 +73,82 @@ VirtualMachineAdapter:
       Object: 036191:Skyrim.esm
       Alias: 70
     - MutagenObjectType: ScriptObjectProperty
-      Name: MQ201
-      Object: 035D5F:Skyrim.esm
+      Name: Alias_Gissur
+      Object: 036191:Skyrim.esm
+      Alias: 61
     - MutagenObjectType: ScriptObjectProperty
-      Name: MQ203
-      Object: 036192:Skyrim.esm
+      Name: Alias_GissurNote
+      Object: 036191:Skyrim.esm
+      Alias: 71
     - MutagenObjectType: ScriptObjectProperty
-      Name: MQ00
-      Object: 01C5D9:Skyrim.esm
+      Name: Alias_MainAmbush1
+      Object: 036191:Skyrim.esm
+      Alias: 66
     - MutagenObjectType: ScriptObjectProperty
-      Name: Ratway02EnableMarker
-      Object: 0E49AF:Skyrim.esm
+      Name: Alias_MainAmbush3
+      Object: 036191:Skyrim.esm
+      Alias: 68
     - MutagenObjectType: ScriptObjectProperty
-      Name: GissurSummonThalmorStartScene
-      Object: 10C1FF:Skyrim.esm
+      Name: Alias_MainAmbush4
+      Object: 036191:Skyrim.esm
+      Alias: 69
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Shavari
+      Object: 036191:Skyrim.esm
+      Alias: 62
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ShavariNote
+      Object: 036191:Skyrim.esm
+      Alias: 72
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vekel
+      Object: 036191:Skyrim.esm
+      Alias: 54
     - MutagenObjectType: ScriptObjectProperty
       Name: EnemyofPlayerFaction
       Object: 06C86F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: MQ202ShavariTrigger
-      Object: 098FF0:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Delphine
-      Object: 036191:Skyrim.esm
-      Alias: 44
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FlagonAmbush1
-      Object: 036191:Skyrim.esm
-      Alias: 63
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FlagonAmbushMarker
-      Object: 06C874:Skyrim.esm
+      Name: EsbernExplainScene
+      Object: 031900:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: EsbernOpenDoorScene
       Object: 03BCA9:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Esbern
-      Object: 036191:Skyrim.esm
-      Alias: 51
+      Name: EsbernVaultMoveMarker
+      Object: 0A8461:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FinalAmbushEnableMarker
+      Object: 06CCF5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FlagonAmbushMarker
+      Object: 06C874:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GissurSummonThalmorScene
+      Object: 06C871:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GissurSummonThalmorStartScene
+      Object: 10C1FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ00
+      Object: 01C5D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ201
+      Object: 035D5F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ202ShavariTrigger
+      Object: 098FF0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQ203
+      Object: 036192:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RaggedFlagonMarker
+      Object: 044A62:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ratway02EnableMarker
+      Object: 0E49AF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ThalmorAmbushEnableMarker
+      Object: 022420:Skyrim.esm
   FileName: QF_MQ202_00036191
   Fragments:
   - Unknown2: 1
@@ -247,14 +247,14 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 5
+        Name: prereqStageOPT
+        Data: 65
       - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 70
       - MutagenObjectType: ScriptIntProperty
-        Name: prereqStageOPT
-        Data: 65
+        Name: TriggerType
+        Data: 5
   - Property:
       Name: ''
       Object: 036191:Skyrim.esm
@@ -263,17 +263,17 @@ VirtualMachineAdapter:
     - Name: MQ202MakeAggressiveInLocation
       Properties:
       - MutagenObjectType: ScriptObjectProperty
+        Name: AggressionLocation
+        Object: 03B871:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
         Name: AggressionLocation2
         Object: 02264A:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: MQ202ShavariTrigger
-        Object: 098FF0:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: AggressionLocation3
         Object: 022639:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: AggressionLocation
-        Object: 03B871:Skyrim.esm
+        Name: MQ202ShavariTrigger
+        Object: 098FF0:Skyrim.esm
   - Property:
       Name: ''
       Object: 036191:Skyrim.esm
@@ -282,11 +282,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 5
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 70
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
   - Property:
       Name: ''
       Object: 036191:Skyrim.esm
@@ -295,11 +295,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 5
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 70
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
   - Property:
       Name: ''
       Object: 036191:Skyrim.esm
@@ -308,11 +308,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 5
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 70
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
 Name:
   TargetLanguage: English
   Value: A Cornered Rat

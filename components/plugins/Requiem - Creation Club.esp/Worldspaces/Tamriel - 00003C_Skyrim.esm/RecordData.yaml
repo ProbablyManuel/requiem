@@ -74,12 +74,12 @@ TopCell:
       - Name: WETriggerScript
         Flags: Inherited
         Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: TriggerOnLoad
-          Data: True
         - MutagenObjectType: ScriptObjectProperty
           Name: myHoldLocation
           Object: 016769:Skyrim.esm
+        - MutagenObjectType: ScriptBoolProperty
+          Name: TriggerOnLoad
+          Data: True
     Base: 04A5EE:Skyrim.esm
     Primitive:
       Bounds: 512, 512, 512
@@ -245,14 +245,14 @@ TopCell:
         Flags: Inherited
         Properties:
         - MutagenObjectType: ScriptObjectProperty
-          Name: triggerActor
-          Object: 000936:ccmtysse002-ve.esl
-        - MutagenObjectType: ScriptObjectProperty
           Name: MySuspect
           Object: 000936:ccmtysse002-ve.esl
         - MutagenObjectType: ScriptIntProperty
           Name: StageToSet
           Data: 49
+        - MutagenObjectType: ScriptObjectProperty
+          Name: triggerActor
+          Object: 000936:ccmtysse002-ve.esl
     Base: 0009DC:ccmtysse002-ve.esl
     Primitive:
       Bounds: 328.8125, 149.9062, 133
@@ -486,12 +486,12 @@ TopCell:
       - Name: defaultsetStageTrigSCRIPT
         Flags: Inherited
         Properties:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: myQuest
-          Object: 00089E:ccbgssse043-crosselv.esl
         - MutagenObjectType: ScriptBoolProperty
           Name: doOnce
           Data: True
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myQuest
+          Object: 00089E:ccbgssse043-crosselv.esl
         - MutagenObjectType: ScriptIntProperty
           Name: stage
           Data: 30
@@ -751,9 +751,9 @@ TopCell:
           Data: aggression
       - Name: defaultSetStageTRIGSpecificActor
         Properties:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: triggerActor
-          Object: 000007:Skyrim.esm
+        - MutagenObjectType: ScriptBoolProperty
+          Name: disableWhenDone
+          Data: True
         - MutagenObjectType: ScriptObjectProperty
           Name: myQuest
           Object: 000823:ccbgssse058-ba_steel.esl
@@ -761,14 +761,14 @@ TopCell:
           Name: onlyOnce
           Data: True
         - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 60
-        - MutagenObjectType: ScriptIntProperty
           Name: prereqStageOPT
           Data: 50
-        - MutagenObjectType: ScriptBoolProperty
-          Name: disableWhenDone
-          Data: True
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 60
+        - MutagenObjectType: ScriptObjectProperty
+          Name: triggerActor
+          Object: 000007:Skyrim.esm
     Base: 048ABE:Skyrim.esm
     Primitive:
       Bounds: 470.9062, 2442.6094, 128
@@ -838,10 +838,10 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnZKey
+          Name: havokOnActivate
           Data: True
         - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnActivate
+          Name: havokOnZKey
           Data: True
     Base: 00081F:ccbgssse058-ba_steel.esl
     RagdollData: 0x0200803F0000000000000000000000000FC0B1BF0B95023FF07234C00800000000E076C100A004400000B63F73C443C033C5833EC6620F40090000000080793F0080E5BF00D0F6418C6D91BE9BCC313E6C4F7A3D0A0000000000F03C00008ABE00A0DB414A0DD63FB47281BE662EE23D0E00803F00A8D24000A050400000BEBF412F45C00B045C3E8A9040400F00000000804E3F00D47F3F00C0F9411F1737BE90698DBD643E0F3D100000000000D4BD00802ABF0060DA417607763F6222063E27FB5EBE0200000000000E3F002097C0000075403EC1423E4FE8CD3D9FEBC1BD0300803F00009CBE00A03AC000A04741D5ACBF3C6A5BE43C71EE383E0400000000E02AC00088B7C000407941662B5D3EF6F3F8BD1503553D000000000000A5BF00808CBF0000C0416CC2F9BE8815933E87209BBE01000000000030BD0040AFBE00800C4146C77BBDD3CB8C3E82B93DBF0B00803F00008C3F0000B340C0F32C418F9FCC3F1D8BFABE10A7D0BF0C00000000F0D9BF0000F4BE0040B84141A30E405FB68D3E6BFA84BE0D000000000090BF0000E73F00405D419EE83FC0B677B1BFCA35A83F050000000000383E000090BE008068412A93D43EC9EC88BE2803AA3E0600803F0000ACBE000050BD0070A441B05F2440B60EB03E605EBBBD07000000000034BF0000F03E00D080414B1B4F3D0743053F84BCA83F00000000000000000000884100002041000000800000008000000080
@@ -871,10 +871,10 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnZKey
+          Name: havokOnActivate
           Data: True
         - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnActivate
+          Name: havokOnZKey
           Data: True
     Base: 000820:ccbgssse058-ba_steel.esl
     RagdollData: 0x0200370000000000000000BC0000803A665CB3BF8799923E54D120C0080045000090D4C00000303B0000803CDBD14140553F3CBE90944040090053000000223D0000283D00D0FA41154D7FBE35FF86BB3671BABC0A006100000046BD0000A2BE0080DB410029C13FFC6B5ABEA06B183E0E0071000000D3400000923C0000803C151721401FC9F5BE346548400F00830000009C3D0000C03C0090FA411BA7D7BE822E813B8E2B113C10009500000040BD000099BE00A0DB414146823F94660E3ECEA073BE0200A3000000083D004AA8C000807240AAD1743D9D8AA3BD85790DBE0300B1000000C03C000092BD00600B418BFF1ABE3FD38CBD54C8273E0400C0000000A83D0000D7BD00801E411027983EA5563BBD3E372FBE000105010000E0BC0000A83D0060B04153A9DB3D4724B3BDBF8A193C010113010000A0BC0000003C00200D415657443E535E82BE29D90E3F0B0121010000003D000000BC00B05F412945903F0548E6BE9BDC0EBF0C012F010000C03C000080BB0020A2415170DA3EAF0F9EBDFFA765BC0D014201007097BC0000C0BC0010804183705D3CA1A51F3DDD9DBEBF050154010000903D0000703D00AC6041711D6B3FD4F54F3FF1AE603E060163010000A0BD0000B4BD0000A2417FC0C23E5E24AA3D1DE9C93C07017101000020BD0000AEBD002080415FAF58BBFFBBB83EB1BDBF3F00017F01000000000000884100002041000000800000008000000080
@@ -1465,12 +1465,12 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnActivate
+          Data: True
+        - MutagenObjectType: ScriptBoolProperty
           Name: havokOnHit
         - MutagenObjectType: ScriptBoolProperty
           Name: havokOnZKey
-        - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnActivate
-          Data: True
     Base: 00085B:ccedhsse002-splkntset.esl
     LocationReference: 01925F:Skyrim.esm
     EnableParent:
@@ -1529,18 +1529,18 @@ TopCell:
         - MutagenObjectType: ScriptBoolProperty
           Name: disableWhenDone
           Data: True
-        - MutagenObjectType: ScriptObjectProperty
-          Name: myQuest
-          Object: 000800:ccedhsse002-splkntset.esl
         - MutagenObjectType: ScriptBoolProperty
           Name: doOnce
           Data: True
-        - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 1
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myQuest
+          Object: 000800:ccedhsse002-splkntset.esl
         - MutagenObjectType: ScriptIntProperty
           Name: prereqStageOPT
           Data: 25
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 1
     Base: 099312:Skyrim.esm
     Primitive:
       Bounds: 1104.0625, 1144.3633, 586.999
@@ -1693,18 +1693,18 @@ TopCell:
         - MutagenObjectType: ScriptBoolProperty
           Name: disableWhenDone
           Data: True
-        - MutagenObjectType: ScriptObjectProperty
-          Name: myQuest
-          Object: 000800:ccedhsse002-splkntset.esl
         - MutagenObjectType: ScriptBoolProperty
           Name: doOnce
           Data: True
-        - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 2
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myQuest
+          Object: 000800:ccedhsse002-splkntset.esl
         - MutagenObjectType: ScriptIntProperty
           Name: prereqStageOPT
           Data: 25
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 2
     Base: 099312:Skyrim.esm
     Primitive:
       Bounds: 1104.0625, 1144.3633, 586.999
@@ -1764,18 +1764,18 @@ TopCell:
         - MutagenObjectType: ScriptBoolProperty
           Name: disableWhenDone
           Data: True
-        - MutagenObjectType: ScriptObjectProperty
-          Name: myQuest
-          Object: 000800:ccedhsse002-splkntset.esl
         - MutagenObjectType: ScriptBoolProperty
           Name: doOnce
           Data: True
-        - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 3
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myQuest
+          Object: 000800:ccedhsse002-splkntset.esl
         - MutagenObjectType: ScriptIntProperty
           Name: prereqStageOPT
           Data: 25
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 3
     Base: 099312:Skyrim.esm
     Primitive:
       Bounds: 1104.0625, 1144.3633, 586.999
@@ -1927,12 +1927,12 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnActivate
+          Data: True
+        - MutagenObjectType: ScriptBoolProperty
           Name: havokOnHit
         - MutagenObjectType: ScriptBoolProperty
           Name: havokOnZKey
-        - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnActivate
-          Data: True
     Base: 077E1D:Skyrim.esm
     EnableParent:
       Reference: 000014:Skyrim.esm
@@ -2140,11 +2140,11 @@ TopCell:
           Name: myQuest
           Object: 000819:ccbgssse064-ba_elven.esl
         - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 200
-        - MutagenObjectType: ScriptIntProperty
           Name: prereqStageOPT
           Data: 100
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 200
     Base: 000821:ccbgssse064-ba_elven.esl
     EnableParent:
       Reference: 000014:Skyrim.esm
@@ -2246,11 +2246,11 @@ TopCell:
           Name: myQuest
           Object: 000840:ccbgssse063-ba_ebony.esl
         - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 46
-        - MutagenObjectType: ScriptIntProperty
           Name: prereqStageOPT
           Data: 20
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 46
     Base: 000823:ccbgssse063-ba_ebony.esl
     LocationReference: 018A57:Skyrim.esm
     EnableParent:
@@ -2622,11 +2622,11 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnActivate
+        - MutagenObjectType: ScriptBoolProperty
           Name: havokOnHit
         - MutagenObjectType: ScriptBoolProperty
           Name: havokOnZKey
-        - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnActivate
     Base: 000824:ccbgssse051-ba_daedricmail.esl
     RagdollData: 0x020000000000803C000000BC0000803A6B5D953E28DF91BF40B621C00812E83E0080D8C0000000BC000000BD24862440EF9A083EE2163EC009020000000080BC0000203D0070FA4179CBFBBFC6FABDBBCF8D043B0A7FFE3E0000C0BD0000A8BE0040DB41EB91DC3FF1BC6ABE9C8FD93D0E0200000080D440000060BC000080BCF561434006B69B3C2FC53FC00FBB013F0000003C0000003D0070FA416576D9BF1D387E3C84F45DBC10020000000000BD0000A0BE00E0DA419D14DB3FF55E893EDB55EABD02A0033F0000403D00E0A5C000807340DDE0D33D05E778BD080C523D030200000000203D0000683D00400D41461A8CBD2180263D67E67D3E0482883D0000603D00001C3D00201E411D52883E8E9ABC3D1D3102BE00020000000090BD000080BB00E0AF41D7E1053EE92E73BD60DE2E3C011D023E000000000000C0BC00200D416326A43E163092BED971203F0B0200000000F8BD0000603D00A05F41F4DD243F8FD324BFA75F1CBE0CAA023E00004C3E000068BE00C0A241B756C83E55A9B9BD82AD1DBC0D0200000000803C0000A0BC00A08041B7C53B3D7195CEBEE243BFBF05A3B53D0000E03D000080BC00905D415DE3F23F25CE053E33A2B23E060200000000703E00A054BE0038A3416CF30A40B1E2C2BD87349B3D07870D3E000000BE0000C83D005880419295B23C5B50993C6EA3BF3F00020000000000000000884100002041000000800000008000000080
     LocationReference: 0C2EE7:Skyrim.esm

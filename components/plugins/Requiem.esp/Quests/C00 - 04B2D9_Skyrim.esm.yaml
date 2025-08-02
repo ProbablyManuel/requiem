@@ -4,322 +4,372 @@ VirtualMachineAdapter:
   Scripts:
   - Name: companionshousekeepingscript
     Properties:
-    - MutagenObjectType: ScriptBoolProperty
-      Name: IsCurrentSilverHandTarget
-    - MutagenObjectType: ScriptIntProperty
-      Name: FarkasQuests
     - MutagenObjectType: ScriptObjectProperty
-      Name: Farkas
+      Name: Aela
       Object: 04B2D9:Skyrim.esm
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: NordRace
-      Object: 013746:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptBoolProperty
+      Name: AelaInReconMode
+    - MutagenObjectType: ScriptBoolProperty
+      Name: AelaIsObserver
     - MutagenObjectType: ScriptIntProperty
-      Name: FavoriteQuestgiver
+      Name: AelaQuests
     - MutagenObjectType: ScriptObjectProperty
-      Name: CR04
-      Object: 025231:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CurrentHowlWord3
-      Object: 0CF795:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HircinesRingPower
-      Object: 0F8306:Skyrim.esm
+      Name: AelaRadiantKeyword
+      Object: 01CF17:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
-      Name: FarkasHasBeastBlood
-      Data: True
+      Name: AelaShouldForceGreet
     - MutagenObjectType: ScriptObjectProperty
-      Name: BretonRace
-      Object: 013741:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerMetSkjor
+      Name: ArgonianRace
+      Object: 013740:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: HighElfRace
-      Object: 013743:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR11
-      Object: 09D700:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RadiantMiscObjQuest
-      Object: 109AAA:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: VilkasHasHisSwordBack
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR10
-      Object: 09D6FC:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DBInitiateFollower2
-      Object: 015D09:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GenericDialogueSuppressor4
-      Object: 023E60:Skyrim.esm
-      Alias: 4
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerMetAela
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Torvar
-      Object: 04B2D9:Skyrim.esm
-      Alias: 18
+      Name: ArgonianRaceVampire
+      Object: 08883A:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Athis
       Object: 04B2D9:Skyrim.esm
       Alias: 14
     - MutagenObjectType: ScriptObjectProperty
-      Name: WerewolfImmunity
-      Object: 0F5BA0:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: RadiantQuestsUntilC03
-      Data: 1
+      Name: BeastForm
+      Object: 092C48:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Eorlund
-      Object: 04B2D9:Skyrim.esm
-      Alias: 8
+      Name: BretonRace
+      Object: 013741:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: GallowsRock
-      Object: 04B2D9:Skyrim.esm
-      Alias: 24
+      Name: BretonRaceVampire
+      Object: 08883C:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: CR14
-      Object: 0E3156:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: RadiantQuestsDone
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerIsWerewolf
-      Object: 0ED06C:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerMetCompanionsAtGiant
-    - MutagenObjectType: ScriptBoolProperty
-      Name: EorlundToldAboutSkyforge
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CurrentHowlWord1
-      Object: 0CF78E:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: C04
-      Object: 01CEF5:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RadiantQuestgiver
-      Object: 04B2D9:Skyrim.esm
-      Alias: 38
-    - MutagenObjectType: ScriptObjectProperty
-      Name: VilkasWeapon
-      Object: 09F25E:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR12
-      Object: 0E3145:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR06
-      Object: 0C18E1:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR02
-      Object: 025185:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR13
-      Object: 0E3163:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerMetVilkas
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SkjorRadiantKeyword
-      Object: 025253:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: StoryQuestIsRunning
-    - MutagenObjectType: ScriptIntProperty
-      Name: RadiantQuestsUntilC04
-      Data: 2
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Ria
-      Object: 04B2D9:Skyrim.esm
-      Alias: 17
-    - MutagenObjectType: ScriptIntProperty
-      Name: RadiantQuestsUntilC01
-      Data: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WoodElfRaceVampire
-      Object: 088884:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: SkjorQuests
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CurrentFollowerFaction
-      Object: 05C84E:Skyrim.esm
+      Name: C01
+      Object: 06E803:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: C02
       Object: 06E804:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DBScript
-      Object: 01EA5C:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: AelaInReconMode
+      Name: C03
+      Object: 01CEF4:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DBInitiateFollower1
-      Object: 015D07:Skyrim.esm
+      Name: C04
+      Object: 01CEF5:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: C04MinLevel
+      Data: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: QuestgiverStandMarker
-      Object: 0BFC7D:Skyrim.esm
+      Name: C05
+      Object: 06E805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: C06
+      Object: 01CEF6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CiceroFollower
+      Object: 09BCB0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CompanionsArmor
+      Object: 10FDE9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CompanionsFaction
+      Object: 048362:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR01
+      Object: 01CEEE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR02
+      Object: 025185:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR03
+      Object: 025230:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR04
+      Object: 025231:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR05
+      Object: 02522F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR06
+      Object: 0C18E1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR07
+      Object: 025250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR08
+      Object: 025251:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR09
+      Object: 025252:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR10
+      Object: 09D6FC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR11
+      Object: 09D700:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR12
+      Object: 0E3145:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR13
+      Object: 0E3163:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CR14
+      Object: 0E3156:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: CurrentFollower
       Object: 04B2D9:Skyrim.esm
       Alias: 40
     - MutagenObjectType: ScriptObjectProperty
-      Name: CompanionsArmor
-      Object: 10FDE9:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RedguardRace
-      Object: 013748:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ArgonianRaceVampire
-      Object: 08883A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GearChance
-      Object: 10FDEA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: OrcRace
-      Object: 013747:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: YsgramorsTomb
-      Object: 04B2D9:Skyrim.esm
-      Alias: 26
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HighElfRaceVampire
-      Object: 088840:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR03
-      Object: 025230:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DarkElfRace
-      Object: 013742:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: VilkasQuests
-    - MutagenObjectType: ScriptBoolProperty
-      Name: DoneReconQuestForAela
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerHelpedCompanionsAtGiant
-    - MutagenObjectType: ScriptBoolProperty
-      Name: FarkasIsObserver
-    - MutagenObjectType: ScriptObjectProperty
-      Name: NordRaceVampire
-      Object: 088794:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AelaRadiantKeyword
-      Object: 01CF17:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CurrentHowlWord2
-      Object: 0CF794:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerWalkedAwayDuringSAScene
-    - MutagenObjectType: ScriptObjectProperty
-      Name: KhajiitRaceVampire
-      Object: 088845:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: C06
-      Object: 01CEF6:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: AelaIsObserver
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR05
-      Object: 02522F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WerewolfChangeTrackingQuest
-      Object: 02BA16:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WoodElfRace
-      Object: 013749:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrainerFaction
-      Object: 0E3A49:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Njada
-      Object: 04B2D9:Skyrim.esm
-      Alias: 16
-    - MutagenObjectType: ScriptObjectProperty
-      Name: BeastForm
-      Object: 092C48:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: C05
-      Object: 06E805:Skyrim.esm
+      Name: CurrentFollowerFaction
+      Object: 05C84E:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: CurrentHowl
       Object: 0CF790:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerFollowerCount
-      Object: 0BCC98:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: RadiantQuestsDoneInCurrentSegment
+      Name: CurrentHowlWord1
+      Object: 0CF78E:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: CiceroFollower
-      Object: 09BCB0:Skyrim.esm
+      Name: CurrentHowlWord2
+      Object: 0CF794:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ImperialRaceVampire
-      Object: 088844:Skyrim.esm
+      Name: CurrentHowlWord3
+      Object: 0CF795:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DarkElfRace
+      Object: 013742:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DarkElfRaceVampire
+      Object: 08883D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DBInitiateFollower1
+      Object: 015D07:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DBInitiateFollower2
+      Object: 015D09:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DBScript
+      Object: 01EA5C:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: DoneReconQuestForAela
     - MutagenObjectType: ScriptObjectProperty
       Name: DustmansCairn
       Object: 04B2D9:Skyrim.esm
       Alias: 21
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Eorlund
+      Object: 04B2D9:Skyrim.esm
+      Alias: 8
     - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerMetFarkas
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ImperialRace
-      Object: 013744:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RedguardRaceVampire
-      Object: 088846:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CompanionsFaction
-      Object: 048362:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: AelaQuests
-    - MutagenObjectType: ScriptIntProperty
-      Name: GoldRewardMajorAmount
-      Data: 1000
+      Name: EorlundShouldForceGreet
+    - MutagenObjectType: ScriptBoolProperty
+      Name: EorlundToldAboutSkyforge
     - MutagenObjectType: ScriptObjectProperty
       Name: EorlundVendorChest
       Object: 10FDE7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Farkas
+      Object: 04B2D9:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FarkasHasBeastBlood
+      Data: True
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FarkasIsObserver
+    - MutagenObjectType: ScriptIntProperty
+      Name: FarkasQuests
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FarkasRadiantKeyword
+      Object: 025255:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FarkasSceneGo
+    - MutagenObjectType: ScriptIntProperty
+      Name: FavoriteQuestgiver
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerScript
+      Object: 0750BA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GallowsRock
+      Object: 04B2D9:Skyrim.esm
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GearChance
+      Object: 10FDEA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GenericDialogueSuppressor1
+      Object: 023E60:Skyrim.esm
+      Alias: 1
     - MutagenObjectType: ScriptObjectProperty
       Name: GenericDialogueSuppressor2
       Object: 023E60:Skyrim.esm
       Alias: 2
     - MutagenObjectType: ScriptObjectProperty
-      Name: Skjor
-      Object: 04B2D9:Skyrim.esm
+      Name: GenericDialogueSuppressor3
+      Object: 023E60:Skyrim.esm
       Alias: 3
     - MutagenObjectType: ScriptObjectProperty
-      Name: Aela
-      Object: 04B2D9:Skyrim.esm
-      Alias: 0
+      Name: GenericDialogueSuppressor4
+      Object: 023E60:Skyrim.esm
+      Alias: 4
     - MutagenObjectType: ScriptObjectProperty
-      Name: TrainingQuest
-      Object: 0A3EBC:Skyrim.esm
+      Name: GoldReward
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: GoldRewardMajorAmount
+      Data: 1000
+    - MutagenObjectType: ScriptIntProperty
+      Name: GoldRewardMinorAmount
+      Data: 100
     - MutagenObjectType: ScriptIntProperty
       Name: GoldRewardModerateAmount
       Data: 500
     - MutagenObjectType: ScriptObjectProperty
-      Name: CR07
-      Object: 025250:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: GoldRewardMinorAmount
-      Data: 100
+      Name: HighElfRace
+      Object: 013743:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: FarkasRadiantKeyword
-      Object: 025255:Skyrim.esm
+      Name: HighElfRaceVampire
+      Object: 088840:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HircinesRingPower
+      Object: 0F8306:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ImperialRace
+      Object: 013744:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ImperialRaceVampire
+      Object: 088844:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: IsCurrentSilverHandTarget
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KhajiitRace
+      Object: 013745:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KhajiitRaceVampire
+      Object: 088845:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Kodlak
+      Object: 04B2D9:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Njada
+      Object: 04B2D9:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NordRace
+      Object: 013746:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NordRaceVampire
+      Object: 088794:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrcRace
+      Object: 013747:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OrcRaceVampire
+      Object: 0A82B9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFollowerCount
+      Object: 0BCC98:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerHelpedCompanionsAtGiant
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerIsWerewolf
+      Object: 0ED06C:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerMetAela
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerMetCompanionsAtGiant
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerMetEorlund
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerMetFarkas
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerMetKodlak
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerMetSkjor
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerMetVilkas
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerWalkedAwayDuringKVScene
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerWalkedAwayDuringSAScene
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QuestgiverStandMarker
+      Object: 0BFC7D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RadiantMiscObjQuest
+      Object: 109AAA:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: RadiantQuestAccepted
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RadiantQuestgiver
+      Object: 04B2D9:Skyrim.esm
+      Alias: 38
+    - MutagenObjectType: ScriptIntProperty
+      Name: RadiantQuestsDone
+    - MutagenObjectType: ScriptIntProperty
+      Name: RadiantQuestsDoneInCurrentSegment
+    - MutagenObjectType: ScriptIntProperty
+      Name: RadiantQuestsUntilC01
+      Data: 1
+    - MutagenObjectType: ScriptIntProperty
+      Name: RadiantQuestsUntilC03
+      Data: 1
+    - MutagenObjectType: ScriptIntProperty
+      Name: RadiantQuestsUntilC04
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReconRadiantKeyword
+      Object: 0BFC7C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RedguardRace
+      Object: 013748:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RedguardRaceVampire
+      Object: 088846:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ria
+      Object: 04B2D9:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Skjor
+      Object: 04B2D9:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptIntProperty
+      Name: SkjorQuests
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkjorRadiantKeyword
+      Object: 025253:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: SkyforgeSteelWeapons
       Object: 10FDEB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR09
-      Object: 025252:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CR08
-      Object: 025251:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerMetKodlak
+      Name: StoryQuestIsRunning
     - MutagenObjectType: ScriptObjectProperty
-      Name: DarkElfRaceVampire
-      Object: 08883D:Skyrim.esm
+      Name: Torvar
+      Object: 04B2D9:Skyrim.esm
+      Alias: 18
+    - MutagenObjectType: ScriptIntProperty
+      Name: TotemsFound
     - MutagenObjectType: ScriptObjectProperty
-      Name: CR01
-      Object: 01CEEE:Skyrim.esm
+      Name: TrainerFaction
+      Object: 0E3A49:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrainingQuest
+      Object: 0A3EBC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrialObserver
+      Object: 04B2D9:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Vilkas
+      Object: 04B2D9:Skyrim.esm
+      Alias: 2
     - MutagenObjectType: ScriptBoolProperty
-      Name: EorlundShouldForceGreet
+      Name: VilkasHasBeastBlood
+      Data: True
+    - MutagenObjectType: ScriptBoolProperty
+      Name: VilkasHasHisSwordBack
+      Data: True
+    - MutagenObjectType: ScriptIntProperty
+      Name: VilkasQuests
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VilkasQuestSword
+      Object: 04B2D9:Skyrim.esm
+      Alias: 11
     - MutagenObjectType: ScriptObjectProperty
       Name: VilkasRadiantKeyword
       Object: 025254:Skyrim.esm
@@ -328,278 +378,228 @@ VirtualMachineAdapter:
       Object: 04B2D9:Skyrim.esm
       Alias: 9
     - MutagenObjectType: ScriptObjectProperty
-      Name: Kodlak
+      Name: VilkasWeapon
+      Object: 09F25E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WerewolfChangeTrackingQuest
+      Object: 02BA16:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WerewolfImmunity
+      Object: 0F5BA0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WoodElfRace
+      Object: 013749:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WoodElfRaceVampire
+      Object: 088884:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: YsgramorsTomb
       Object: 04B2D9:Skyrim.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: C01
-      Object: 06E803:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ReconRadiantKeyword
-      Object: 0BFC7C:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: C04MinLevel
-      Data: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GenericDialogueSuppressor1
-      Object: 023E60:Skyrim.esm
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: KhajiitRace
-      Object: 013745:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrialObserver
-      Object: 04B2D9:Skyrim.esm
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FollowerScript
-      Object: 0750BA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: VilkasQuestSword
-      Object: 04B2D9:Skyrim.esm
-      Alias: 11
-    - MutagenObjectType: ScriptBoolProperty
-      Name: RadiantQuestAccepted
-    - MutagenObjectType: ScriptBoolProperty
-      Name: AelaShouldForceGreet
-    - MutagenObjectType: ScriptObjectProperty
-      Name: C03
-      Object: 01CEF4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GoldReward
-      Object: 00000F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GenericDialogueSuppressor3
-      Object: 023E60:Skyrim.esm
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Vilkas
-      Object: 04B2D9:Skyrim.esm
-      Alias: 2
-    - MutagenObjectType: ScriptIntProperty
-      Name: TotemsFound
-    - MutagenObjectType: ScriptBoolProperty
-      Name: VilkasHasBeastBlood
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: BretonRaceVampire
-      Object: 08883C:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ArgonianRace
-      Object: 013740:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: FarkasSceneGo
-    - MutagenObjectType: ScriptObjectProperty
-      Name: OrcRaceVampire
-      Object: 0A82B9:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerMetEorlund
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerWalkedAwayDuringKVScene
+      Alias: 26
   - Name: QF_C00_0004B2D9
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Farkas
-      Object: 04B2D9:Skyrim.esm
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DustmansCairnReservation
-      Object: 04B2D9:Skyrim.esm
-      Alias: 21
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SkjorSpot
-      Object: 0A3ECE:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HateFaction
-      Object: 10F5A0:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Vilkas
-      Object: 04B2D9:Skyrim.esm
-      Alias: 2
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PlayerWatched
-      Object: 04B2D9:Skyrim.esm
-      Alias: 39
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Skjor
-      Object: 04B2D9:Skyrim.esm
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CompanionsFaction
-      Object: 048362:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LastFarkasTourScene
-      Object: 0A3EE0:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: KVArgueScene
-      Object: 0A3EB7:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FightTrigger2
-      Object: 0BC0DA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_VilkasEssential
-      Object: 04B2D9:Skyrim.esm
-      Alias: 35
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FragmentsOfWuuthrad
-      Object: 04B2D9:Skyrim.esm
-      Alias: 41
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_EorlundEssential
-      Object: 04B2D9:Skyrim.esm
-      Alias: 37
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DeadSilverHand5
-      Object: 04B2D9:Skyrim.esm
-      Alias: 52
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GlenmorilHead2
-      Object: 04B2D9:Skyrim.esm
-      Alias: 28
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_TrialObserver
-      Object: 04B2D9:Skyrim.esm
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GlenmorilHead4
-      Object: 04B2D9:Skyrim.esm
-      Alias: 30
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RadiantQuestgiver
-      Object: 04B2D9:Skyrim.esm
-      Alias: 38
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DeadSilverHand4
-      Object: 04B2D9:Skyrim.esm
-      Alias: 51
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Torvar
-      Object: 04B2D9:Skyrim.esm
-      Alias: 18
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Eorlund
-      Object: 04B2D9:Skyrim.esm
-      Alias: 8
-    - MutagenObjectType: ScriptObjectProperty
-      Name: C00GiantAttack
-      Object: 0C97D9:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_YsgramorsTombReservation
-      Object: 04B2D9:Skyrim.esm
-      Alias: 26
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FightTrigger1
-      Object: 0BC0D9:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DeadSilverHand3
-      Object: 04B2D9:Skyrim.esm
-      Alias: 50
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Athis
-      Object: 04B2D9:Skyrim.esm
-      Alias: 14
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DeadSilverHand1
-      Object: 04B2D9:Skyrim.esm
-      Alias: 48
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrainingFaction
-      Object: 0A3EBD:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_VilkasSword
-      Object: 04B2D9:Skyrim.esm
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GallowsRockReservation
-      Object: 04B2D9:Skyrim.esm
-      Alias: 24
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DeadKodlak1
-      Object: 04B2D9:Skyrim.esm
-      Alias: 46
+      Name: AelaSpot
+      Object: 0A3ECF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Aela
       Object: 04B2D9:Skyrim.esm
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_VilkasSwordQuestItem
-      Object: 04B2D9:Skyrim.esm
-      Alias: 11
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DeadSilverHand2
-      Object: 04B2D9:Skyrim.esm
-      Alias: 49
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SkjorEssential
-      Object: 04B2D9:Skyrim.esm
-      Alias: 34
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ASScene
-      Object: 0A3ECD:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Kodlak
-      Object: 04B2D9:Skyrim.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: C00JorrvaskrFight
-      Object: 0BC0BD:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FarkasEssential
-      Object: 04B2D9:Skyrim.esm
-      Alias: 36
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CompanionsMiscObjective
-      Object: 0D19B9:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AelaSpot
-      Object: 0A3ECF:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_AelaShieldQuestItem
-      Object: 04B2D9:Skyrim.esm
-      Alias: 13
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DeadKodlak2
-      Object: 04B2D9:Skyrim.esm
-      Alias: 47
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_AelaEssential
       Object: 04B2D9:Skyrim.esm
       Alias: 33
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GlenmorilHead3
-      Object: 04B2D9:Skyrim.esm
-      Alias: 29
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GlenmorilHead1
-      Object: 04B2D9:Skyrim.esm
-      Alias: 27
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Ria
-      Object: 04B2D9:Skyrim.esm
-      Alias: 17
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CurrentFollower
-      Object: 04B2D9:Skyrim.esm
-      Alias: 40
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_AelaShield
       Object: 04B2D9:Skyrim.esm
       Alias: 12
     - MutagenObjectType: ScriptObjectProperty
-      Name: EorlundSpot
-      Object: 02BE28:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_KodlakEssential
+      Name: Alias_AelaShieldQuestItem
       Object: 04B2D9:Skyrim.esm
-      Alias: 32
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Athis
+      Object: 04B2D9:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CurrentFollower
+      Object: 04B2D9:Skyrim.esm
+      Alias: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DeadKodlak1
+      Object: 04B2D9:Skyrim.esm
+      Alias: 46
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DeadKodlak2
+      Object: 04B2D9:Skyrim.esm
+      Alias: 47
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DeadSilverHand1
+      Object: 04B2D9:Skyrim.esm
+      Alias: 48
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DeadSilverHand2
+      Object: 04B2D9:Skyrim.esm
+      Alias: 49
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DeadSilverHand3
+      Object: 04B2D9:Skyrim.esm
+      Alias: 50
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DeadSilverHand4
+      Object: 04B2D9:Skyrim.esm
+      Alias: 51
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DeadSilverHand5
+      Object: 04B2D9:Skyrim.esm
+      Alias: 52
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DustmansCairnReservation
+      Object: 04B2D9:Skyrim.esm
+      Alias: 21
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Eorlund
+      Object: 04B2D9:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_EorlundEssential
+      Object: 04B2D9:Skyrim.esm
+      Alias: 37
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Farkas
+      Object: 04B2D9:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FarkasEssential
+      Object: 04B2D9:Skyrim.esm
+      Alias: 36
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FragmentsOfWuuthrad
+      Object: 04B2D9:Skyrim.esm
+      Alias: 41
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GallowsRockReservation
+      Object: 04B2D9:Skyrim.esm
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GlenmorilHead1
+      Object: 04B2D9:Skyrim.esm
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GlenmorilHead2
+      Object: 04B2D9:Skyrim.esm
+      Alias: 28
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GlenmorilHead3
+      Object: 04B2D9:Skyrim.esm
+      Alias: 29
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GlenmorilHead4
+      Object: 04B2D9:Skyrim.esm
+      Alias: 30
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_GlenmorilHead5
       Object: 04B2D9:Skyrim.esm
       Alias: 31
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Kodlak
+      Object: 04B2D9:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_KodlakEssential
+      Object: 04B2D9:Skyrim.esm
+      Alias: 32
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Njada
       Object: 04B2D9:Skyrim.esm
       Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PlayerWatched
+      Object: 04B2D9:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RadiantQuestgiver
+      Object: 04B2D9:Skyrim.esm
+      Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Ria
+      Object: 04B2D9:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Skjor
+      Object: 04B2D9:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SkjorEssential
+      Object: 04B2D9:Skyrim.esm
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Torvar
+      Object: 04B2D9:Skyrim.esm
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TrialObserver
+      Object: 04B2D9:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vilkas
+      Object: 04B2D9:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_VilkasEssential
+      Object: 04B2D9:Skyrim.esm
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_VilkasSword
+      Object: 04B2D9:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_VilkasSwordQuestItem
+      Object: 04B2D9:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_YsgramorsTombReservation
+      Object: 04B2D9:Skyrim.esm
+      Alias: 26
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ASScene
+      Object: 0A3ECD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: C00GiantAttack
+      Object: 0C97D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: C00JorrvaskrFight
+      Object: 0BC0BD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CompanionsFaction
+      Object: 048362:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CompanionsMiscObjective
+      Object: 0D19B9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EorlundSpot
+      Object: 02BE28:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FightTrigger1
+      Object: 0BC0D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FightTrigger2
+      Object: 0BC0DA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HateFaction
+      Object: 10F5A0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: KVArgueScene
+      Object: 0A3EB7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LastFarkasTourScene
+      Object: 0A3EE0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkjorSpot
+      Object: 0A3ECE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrainingFaction
+      Object: 0A3EBD:Skyrim.esm
   FileName: QF_C00_0004B2D9
   Fragments:
   - Unknown2: 1
@@ -646,11 +646,11 @@ VirtualMachineAdapter:
         Object: 0A3EBC:Skyrim.esm
         Alias: 0
       - MutagenObjectType: ScriptObjectProperty
-        Name: TrainingMarker
-        Object: 023E55:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: TrainingFaction
         Object: 0A3EBD:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: TrainingMarker
+        Object: 023E55:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: TrainingQuest
         Object: 0A3EBC:Skyrim.esm

@@ -4,13 +4,13 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_MCM
     Properties:
-    - MutagenObjectType: ScriptStringProperty
-      Name: ModName
-      Data: Requiem
     - MutagenObjectType: ScriptObjectProperty
       Name: DATA
       Object: AD3B1D:Requiem.esp
       Alias: 10
+    - MutagenObjectType: ScriptStringProperty
+      Name: ModName
+      Data: Requiem
   FileName: ''
   Aliases:
   - Property:

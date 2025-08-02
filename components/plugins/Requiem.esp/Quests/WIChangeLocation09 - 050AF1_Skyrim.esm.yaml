@@ -5,6 +5,26 @@ VirtualMachineAdapter:
   - Name: QF_WIChangeLocation09_00050AF1
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CenterMarker
+      Object: 050AF1:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DistantOutsideEntranceMarker
+      Object: 050AF1:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dragon
+      Object: 050AF1:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Guard1
+      Object: 050AF1:Skyrim.esm
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Guard2
+      Object: 050AF1:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Guard3
       Object: 050AF1:Skyrim.esm
       Alias: 15
@@ -12,34 +32,8 @@ VirtualMachineAdapter:
       Name: Alias_NewLocation
       Object: 050AF1:Skyrim.esm
       Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Guard1
-      Object: 050AF1:Skyrim.esm
-      Alias: 13
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CenterMarker
-      Object: 050AF1:Skyrim.esm
-      Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Dragon
-      Object: 050AF1:Skyrim.esm
-      Alias: 12
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DistantOutsideEntranceMarker
-      Object: 050AF1:Skyrim.esm
-      Alias: 11
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Guard2
-      Object: 050AF1:Skyrim.esm
-      Alias: 14
   - Name: WIChangeLocation09Script
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WIs
-      Object: 035D64:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WIChangeLocation09Scene
-      Object: 050B03:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pGameDaysPassed
       Object: 000039:Skyrim.esm
@@ -49,6 +43,12 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: pWIWaitEvent
       Object: 035D74:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WIChangeLocation09Scene
+      Object: 050B03:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WIs
+      Object: 035D64:Skyrim.esm
   FileName: QF_WIChangeLocation09_00050AF1
   Fragments:
   - Unknown2: 1

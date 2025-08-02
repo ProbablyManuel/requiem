@@ -5,12 +5,12 @@ VirtualMachineAdapter:
   - Name: REQ_FollowerRegistration
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFollowerFaction
+      Object: 084D1B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: vanillaFollower
       Object: 0750BA:Skyrim.esm
       Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerFollowerFaction
-      Object: 084D1B:Skyrim.esm
   Versioning:
   - Break0
   ExtraBindDataVersion: 0

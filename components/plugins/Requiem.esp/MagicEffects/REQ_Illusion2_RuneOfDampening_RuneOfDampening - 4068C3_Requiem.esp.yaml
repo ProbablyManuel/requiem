@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_Magic_PlaceHazard
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: zoffset
-      Data: 10
     - MutagenObjectType: ScriptObjectProperty
       Name: HazardType
       Object: 4068C1:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: zoffset
+      Data: 10
 Name:
   TargetLanguage: English
   Value: Rune Of Dampening

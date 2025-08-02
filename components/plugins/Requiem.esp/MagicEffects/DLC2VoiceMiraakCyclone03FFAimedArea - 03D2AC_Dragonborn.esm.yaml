@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC2CycloneEffectScript
     Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: force
     - MutagenObjectType: ScriptObjectProperty
       Name: ImmuneParalysis
       Object: 0F23C5:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: force
   - Name: magicPlaceExplosionScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty

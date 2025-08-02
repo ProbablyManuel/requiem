@@ -6,6 +6,18 @@ VirtualMachineAdapter:
   - Name: QF_WE18_0009F80A
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Atronach1
+      Object: 09F80A:Skyrim.esm
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 09F80A:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 09F80A:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_myHoldLocation
       Object: 09F80A:Skyrim.esm
       Alias: 4
@@ -14,41 +26,29 @@ VirtualMachineAdapter:
       Object: 09F80A:Skyrim.esm
       Alias: 8
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SceneMarker1
+      Object: 09F80A:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_SceneMarker2
       Object: 09F80A:Skyrim.esm
       Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SceneMarkerCenter
-      Object: 09F80A:Skyrim.esm
-      Alias: 63
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldImperial
-      Object: 09F80A:Skyrim.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Witch
-      Object: 09F80A:Skyrim.esm
-      Alias: 64
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_SceneMarker3
       Object: 09F80A:Skyrim.esm
       Alias: 65
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Atronach1
+      Name: Alias_SceneMarkerCenter
       Object: 09F80A:Skyrim.esm
-      Alias: 35
+      Alias: 63
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Trigger
       Object: 09F80A:Skyrim.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SceneMarker1
+      Name: Alias_Witch
       Object: 09F80A:Skyrim.esm
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldContested
-      Object: 09F80A:Skyrim.esm
-      Alias: 6
+      Alias: 64
   - Name: WEScript
     Properties:
     - MutagenObjectType: ScriptBoolProperty
@@ -75,10 +75,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: PacifyOnLoad
-      - MutagenObjectType: ScriptBoolProperty
         Name: MakeAggressiveAndAttackPlayerIfAttacked
         Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: PacifyOnLoad
   - Property:
       Name: ''
       Object: 09F80A:Skyrim.esm

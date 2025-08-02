@@ -6,20 +6,26 @@ VirtualMachineAdapter:
   - Name: DLC1_QF_DLC1SoulCairnHuskMerc_01016352
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: soulHusk
-      Object: 014DC4:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_MorvenAlias
       Object: 016352:Dawnguard.esm
       Alias: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: soulHusk
+      Object: 014DC4:Dawnguard.esm
   - Name: DLC1SCHMQuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: pLItemEnchArmorLightAllSpecial
-      Object: 0FDA18:Skyrim.esm
+      Name: pDLC1FoodSoulHusk
+      Object: 014DC4:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDLC1SCMerch
+      Object: 01A33F:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pLItemEnchArmorHeavyAllSpecial
       Object: 0FDA19:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pLItemEnchArmorLightAllSpecial
+      Object: 0FDA18:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pLItemEnchWeaponBattleAxeSpecial
       Object: 0F8A4B:Skyrim.esm
@@ -27,17 +33,11 @@ VirtualMachineAdapter:
       Name: pLItemEnchWeaponBowSpecial
       Object: 00E903:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: pLItemSpellTomesSpecial
-      Object: 10FCF0:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: pLItemEnchWeaponSwordSpecial
       Object: 04B586:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: pDLC1FoodSoulHusk
-      Object: 014DC4:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDLC1SCMerch
-      Object: 01A33F:Dawnguard.esm
+      Name: pLItemSpellTomesSpecial
+      Object: 10FCF0:Skyrim.esm
   FileName: DLC1_QF_DLC1SoulCairnHuskMerc_01016352
   Fragments:
   - Stage: 10

@@ -5,43 +5,46 @@ VirtualMachineAdapter:
   - Name: magicProjectileStormScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: SoundFX
-      Object: 0EB382:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fStartDelayRand
-      Data: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpellRef
-      Object: 0E4CB7:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: CastingImod
       Object: 0A9D93:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MAGProjectileStormVar
-      Object: 101DAB:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 3
     - MutagenObjectType: ScriptFloatProperty
       Name: fRecast
       Data: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlacedTargetActivator
-      Object: 0B79FF:Skyrim.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: fRecastRand
       Data: 3
     - MutagenObjectType: ScriptFloatProperty
-      Name: fDelay
+      Name: fStartDelayRand
       Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGProjectileStormVar
+      Object: 101DAB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: PlacedActivator
       Object: 0B79FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedTargetActivator
+      Object: 0B79FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoundFX
+      Object: 0EB382:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellRef
+      Object: 0E4CB7:Skyrim.esm
   - Name: magicSetWeatherScript
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: LocalWeatherB
-      Data: 3
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bHoldWeatherUntilEnd
+      Data: True
     - MutagenObjectType: ScriptIntProperty
       Name: LocalWeatherA
       Data: 2
+    - MutagenObjectType: ScriptIntProperty
+      Name: LocalWeatherB
+      Data: 3
     - MutagenObjectType: ScriptObjectProperty
       Name: WeatherAfterForm
       Object: 0C821F:Skyrim.esm
@@ -51,9 +54,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: WeatherForm
       Object: 0D4886:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bHoldWeatherUntilEnd
-      Data: True
 Name:
   TargetLanguage: English
   Value: Call Storm

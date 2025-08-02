@@ -11,12 +11,12 @@ VirtualMachineAdapter:
     - Name: REQ_FastTravelBlock
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: FastTravelAllowed
-        Object: 067E2E:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
         Name: DLC2TameDragon
         Object: 0179E2:Dragonborn.esm
         Alias: 0
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FastTravelAllowed
+        Object: 067E2E:Requiem.esp
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Fast Travel Block'

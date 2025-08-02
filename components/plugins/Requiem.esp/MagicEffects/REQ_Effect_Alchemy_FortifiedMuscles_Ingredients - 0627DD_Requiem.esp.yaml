@@ -4,9 +4,6 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_AlchemyPerkIngredients
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RemoveWhenDone
-      Object: 52ACD6:Requiem.esp
     - MutagenObjectType: ScriptObjectListProperty
       Name: INGREDIENTS
       Objects:
@@ -14,6 +11,9 @@ VirtualMachineAdapter:
         Object: 03AD72:Skyrim.esm
       - Name: ''
         Object: 043661:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RemoveWhenDone
+      Object: 52ACD6:Requiem.esp
 Archetype:
   MutagenObjectType: MagicEffectArchetype
   Type: Script

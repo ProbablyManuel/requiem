@@ -5,14 +5,8 @@ VirtualMachineAdapter:
   - Name: DLC1WispShieldScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: FXDLC1SCKeeperEffect
-      Object: 00686A:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1SunDamageFFAimedArea
-      Object: 00844B:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1SunDamageFFAimed
-      Object: 003F50:Dawnguard.esm
+      Name: DLC1AbKeeperWispCloak
+      Object: 005160:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC1PCVampireAbsorbHealthConcAimed
       Object: 00A26B:Dawnguard.esm
@@ -20,8 +14,14 @@ VirtualMachineAdapter:
       Name: DLC1PCVampireAbsorbHealthFFAimed
       Object: 019321:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1AbKeeperWispCloak
-      Object: 005160:Dawnguard.esm
+      Name: DLC1SunDamageFFAimed
+      Object: 003F50:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1SunDamageFFAimedArea
+      Object: 00844B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDLC1SCKeeperEffect
+      Object: 00686A:Dawnguard.esm
   - Name: MagicPlayEffectShaderOnHitScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty

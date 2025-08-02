@@ -5,104 +5,21 @@ VirtualMachineAdapter:
   - Name: DA09Script
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: DA09FloatMarker2
-      Object: 075365:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09FloatMarker1
-      Object: 075364:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09TemporaryDragonFriendFaction
-      Object: 10E0BD:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: QSTBeamMeridiaStatueLPRef
-      Object: 0FA21D:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Follower
-      Object: 0750BA:Skyrim.esm
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
       Name: AnimalFollower
       Object: 0750BA:Skyrim.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: DA09SkyPlaneCollision
-      Object: 04E4D7:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09BloomIMOD
-      Object: 109BA7:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09PedestalRef
-      Object: 07F829:Skyrim.esm
+      Name: beamSpell
+      Object: 0994DB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: beamTarget
       Object: 0C5824:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DA09GemScene
-      Object: 04E4F5:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09MeridiaRef
-      Object: 04E4E0:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WINextDragon
-      Object: 0E518E:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09StatueGemMarker
-      Object: 0785D5:Skyrim.esm
+      Name: DA09BloomIMOD
+      Object: 109BA7:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DA09CaveInScene
       Object: 085202:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: xMarkerVoice
-      Object: 04E4E1:Skyrim.esm
-      Alias: 12
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09SkyMarker
-      Object: 04E4D8:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09PedestalEmptyRef
-      Object: 0170F0:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DungeonBlockerToggle
-      Object: 0AF38C:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09SkyBeam2
-      Object: 075369:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09Vision
-      Object: 085200:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: beamSpell
-      Object: 0994DB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FXNecroTendrilRingRef
-      Object: 0EBEBF:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09FXBeamSkyRef
-      Object: 0851FE:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09StatueMarker
-      Object: 04E4EA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09SkyMarkerB
-      Object: 04E4F4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09StatueBeamTarget2
-      Object: 078B18:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09MeridiaStatueFXRef
-      Object: 094166:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09MeridiaStartMarker
-      Object: 04E4DD:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09SkyFadeInOut
-      Object: 075367:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09WhiteIMOD
-      Object: 109BA6:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DA09ChangeLocChance
       Object: 081C58:Skyrim.esm
@@ -110,93 +27,176 @@ VirtualMachineAdapter:
       Name: DA09DawnbreakerList
       Object: 04E4F3:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: DA09FloatMarker1
+      Object: 075364:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09FloatMarker2
+      Object: 075365:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09FXBeamSkyRef
+      Object: 0851FE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09GemScene
+      Object: 04E4F5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09MeridiaRef
+      Object: 04E4E0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09MeridiaStartMarker
+      Object: 04E4DD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09MeridiaStatueFXRef
+      Object: 094166:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09PedestalEmptyRef
+      Object: 0170F0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09PedestalRef
+      Object: 07F829:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyBeam2
+      Object: 075369:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyFadeInOut
+      Object: 075367:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyMarker
+      Object: 04E4D8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyMarkerB
+      Object: 04E4F4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09SkyPlaneCollision
+      Object: 04E4D7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DA09SkyScene
       Object: 04E4E2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09StatueBeamTarget2
+      Object: 078B18:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09StatueGemMarker
+      Object: 0785D5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09StatueMarker
+      Object: 04E4EA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09TemporaryDragonFriendFaction
+      Object: 10E0BD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09Vision
+      Object: 085200:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09WhiteIMOD
+      Object: 109BA6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DungeonBlockerToggle
+      Object: 0AF38C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Follower
+      Object: 0750BA:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXNecroTendrilRingRef
+      Object: 0EBEBF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QSTBeamMeridiaStatueLPRef
+      Object: 0FA21D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WINextDragon
+      Object: 0E518E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: xMarkerVoice
+      Object: 04E4E1:Skyrim.esm
+      Alias: 12
   - Name: QF_DA09_0004E4E1
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GemContainer
-      Object: 04E4E1:Skyrim.esm
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_xMarkerVoice
-      Object: 04E4E1:Skyrim.esm
-      Alias: 12
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BossTrigger
-      Object: 04E4E1:Skyrim.esm
-      Alias: 20
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Statue
-      Object: 04E4E1:Skyrim.esm
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FalkreathMapMarker
-      Object: 04E4E1:Skyrim.esm
-      Alias: 13
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Gem
-      Object: 04E4E1:Skyrim.esm
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_TempleExteriorTrigger
-      Object: 04E4E1:Skyrim.esm
-      Alias: 14
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GemContainerLocation
-      Object: 04E4E1:Skyrim.esm
-      Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SkySceneStartMarker
-      Object: 04E4E1:Skyrim.esm
-      Alias: 19
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Pedestal
-      Object: 04E4E1:Skyrim.esm
-      Alias: 18
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Meridia
-      Object: 04E4E1:Skyrim.esm
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FrontDoor
-      Object: 04E4E1:Skyrim.esm
-      Alias: 22
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GemMapMarker
-      Object: 04E4E1:Skyrim.esm
-      Alias: 25
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Cell1Exit
-      Object: 04E4E1:Skyrim.esm
-      Alias: 24
+      Name: AchievementsQuest
+      Object: 0FC85D:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_BeamSky
       Object: 04E4E1:Skyrim.esm
       Alias: 16
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_GemStatic
+      Name: Alias_BossTrigger
       Object: 04E4E1:Skyrim.esm
-      Alias: 4
+      Alias: 20
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DragonPriest
+      Name: Alias_Cell1Exit
       Object: 04E4E1:Skyrim.esm
-      Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_StatueTrigger
-      Object: 04E4E1:Skyrim.esm
-      Alias: 15
+      Alias: 24
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Dawnsbreaker
       Object: 04E4E1:Skyrim.esm
       Alias: 17
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DragonPriest
+      Object: 04E4E1:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FalkreathMapMarker
+      Object: 04E4E1:Skyrim.esm
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FrontDoor
+      Object: 04E4E1:Skyrim.esm
+      Alias: 22
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Gem
+      Object: 04E4E1:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GemContainer
+      Object: 04E4E1:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GemContainerLocation
+      Object: 04E4E1:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GemMapMarker
+      Object: 04E4E1:Skyrim.esm
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_GemStatic
+      Object: 04E4E1:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Meridia
+      Object: 04E4E1:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Pedestal
+      Object: 04E4E1:Skyrim.esm
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_QuestTargetHelperTrigger
       Object: 04E4E1:Skyrim.esm
       Alias: 21
     - MutagenObjectType: ScriptObjectProperty
-      Name: AchievementsQuest
-      Object: 0FC85D:Skyrim.esm
+      Name: Alias_SkySceneStartMarker
+      Object: 04E4E1:Skyrim.esm
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Statue
+      Object: 04E4E1:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_StatueTrigger
+      Object: 04E4E1:Skyrim.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TempleExteriorTrigger
+      Object: 04E4E1:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_xMarkerVoice
+      Object: 04E4E1:Skyrim.esm
+      Alias: 12
   FileName: QF_DA09_0004E4E1
   Fragments:
   - Unknown2: 1
@@ -268,13 +268,13 @@ VirtualMachineAdapter:
         Name: DA09GemScene
         Object: 04E4F5:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: xMarkerVoice
-        Object: 04E4E1:Skyrim.esm
-        Alias: 12
-      - MutagenObjectType: ScriptObjectProperty
         Name: KilkreathMapMarker
         Object: 04E4E1:Skyrim.esm
         Alias: 13
+      - MutagenObjectType: ScriptObjectProperty
+        Name: xMarkerVoice
+        Object: 04E4E1:Skyrim.esm
+        Alias: 12
   - Property:
       Name: ''
       Object: 04E4E1:Skyrim.esm
@@ -302,13 +302,13 @@ VirtualMachineAdapter:
         Name: DA09ExteriorTempleScene
         Object: 081C5D:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: xMarkerVoice
-        Object: 04E4E1:Skyrim.esm
-        Alias: 12
-      - MutagenObjectType: ScriptObjectProperty
         Name: Gem
         Object: 04E4E1:Skyrim.esm
         Alias: 1
+      - MutagenObjectType: ScriptObjectProperty
+        Name: xMarkerVoice
+        Object: 04E4E1:Skyrim.esm
+        Alias: 12
   - Property:
       Name: ''
       Object: 04E4E1:Skyrim.esm
@@ -320,19 +320,19 @@ VirtualMachineAdapter:
         Name: DA09ExteriorTempleScene
         Object: 081C5D:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: xMarkerVoice
-        Object: 04E4E1:Skyrim.esm
-        Alias: 12
-      - MutagenObjectType: ScriptObjectProperty
         Name: DA09StatueSceneA
         Object: 081C5F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DA09StatueSceneB
+        Object: 081C60:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: Gem
         Object: 04E4E1:Skyrim.esm
         Alias: 1
       - MutagenObjectType: ScriptObjectProperty
-        Name: DA09StatueSceneB
-        Object: 081C60:Skyrim.esm
+        Name: xMarkerVoice
+        Object: 04E4E1:Skyrim.esm
+        Alias: 12
   - Property:
       Name: ''
       Object: 04E4E1:Skyrim.esm

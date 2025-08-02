@@ -22,12 +22,6 @@ VirtualMachineAdapter:
         - 37
         - 39
         - 42
-      - MutagenObjectType: ScriptFloatProperty
-        Name: UpdateInterval
-        Data: 2
-      - MutagenObjectType: ScriptObjectProperty
-        Name: worn
-        Object: AD3A36:Requiem.esp
       - MutagenObjectType: ScriptFloatListProperty
         Name: Skillgain
         Data:
@@ -37,6 +31,12 @@ VirtualMachineAdapter:
         - 0.05
         - 0.1
         - 0.025
+      - MutagenObjectType: ScriptFloatProperty
+        Name: UpdateInterval
+        Data: 2
+      - MutagenObjectType: ScriptObjectProperty
+        Name: worn
+        Object: AD3A36:Requiem.esp
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Passive Armor Training'

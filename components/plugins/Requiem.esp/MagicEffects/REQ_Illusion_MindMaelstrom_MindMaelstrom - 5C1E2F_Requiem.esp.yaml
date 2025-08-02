@@ -4,13 +4,6 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_Illusion_MindMaelstrom
     Properties:
-    - MutagenObjectType: ScriptObjectListProperty
-      Name: NormalSpells
-      Objects:
-      - Name: ''
-        Object: 5C1E34:Requiem.esp
-      - Name: ''
-        Object: 5C1E36:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: DualCast
       Object: 5C1E30:Requiem.esp
@@ -25,6 +18,13 @@ VirtualMachineAdapter:
         Object: 5C1E38:Requiem.esp
       - Name: ''
         Object: 5C1E3A:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: NormalSpells
+      Objects:
+      - Name: ''
+        Object: 5C1E34:Requiem.esp
+      - Name: ''
+        Object: 5C1E36:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Mind Maelstrom

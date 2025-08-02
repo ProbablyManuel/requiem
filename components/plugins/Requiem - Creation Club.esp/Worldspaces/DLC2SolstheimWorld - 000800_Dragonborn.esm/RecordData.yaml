@@ -90,11 +90,11 @@ TopCell:
           Name: myQuest
           Object: 000835:ccbgssse041-netchleather.esl
         - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 100
-        - MutagenObjectType: ScriptIntProperty
           Name: prereqStageOPT
           Data: 30
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 100
     Base: 0008AB:ccbgssse041-netchleather.esl
     LevelModifier: Easy
     LinkedReferences:
@@ -475,12 +475,12 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnActivate
+          Data: True
+        - MutagenObjectType: ScriptBoolProperty
           Name: havokOnHit
         - MutagenObjectType: ScriptBoolProperty
           Name: havokOnZKey
-        - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnActivate
-          Data: True
     Base: 0008AF:ccbgssse041-netchleather.esl
     RagdollData: 0x02703ECD0000000000000000000000B995D1AEBF92217B3ED71CB5BE0800000000F0A2C0000062BF0000163F8E67FE3F7BEBAC3E01A14140091BB0CD0000803C0000F83D0010D6418135C9BF4A4799BC0DCD343D0A0000000000403C0000603D00E0AA41381B9C3F70B3443EA15A9E3D0E3ED4CD00F0A14000006EBF00001C3F1DC507406A8B883D4A983DC00F0000000000C03C0000000000B0D5415BE700C0B35DE0BB3A2B35BD10FC43D0000000BB000000000077AB41F8539B3F0CC325BE32FE8EBD020000000000383D00801EC00040E840DFDC7FBE488BBE3D9EDAB4BD02F8CFCD0000A03C0000E03C00C0DA404195A63E7DB8A13D6A62BF3D01000000000080BD0000A0BC00009340DBE6D3BE3B43383CBDA5A8BD0B3FD3CD0000803B0000803C000C0B414129CFBEB6793EBF0DB737BF0C000000000040BD0000000000548241D45EA53E530318BD4FC2253C0D1ED1CD0000003C0000503D00B05641C4DD68BE16194FBE00F487BF050000000000F03C0000803C00800B4136FD443EEF549B3E5714683F06D9D3CD0000203D000000BD00A0824153FA0E3F1E6D2D3D65DC953B07000000000000BD0000403C00C0574186C671BEB349943C7918903F0047D3CD00000000000000000000000000000080000000800000008000000000009297BE809A0A4290840A42000000800000008000000080
     LocationReference: 016E2A:Dragonborn.esm
@@ -817,10 +817,10 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnHit
-        - MutagenObjectType: ScriptBoolProperty
           Name: havokOnActivate
           Data: True
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnHit
     Base: 000800:ccbgssse057-ba_stalhrim.esl
     LocationReference: 016E2A:Dragonborn.esm
     EnableParent:
@@ -843,10 +843,10 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnHit
-        - MutagenObjectType: ScriptBoolProperty
           Name: havokOnActivate
           Data: True
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnHit
     Base: 000801:ccbgssse057-ba_stalhrim.esl
     LocationReference: 016E2A:Dragonborn.esm
     EnableParent:
@@ -869,10 +869,10 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnHit
-        - MutagenObjectType: ScriptBoolProperty
           Name: havokOnActivate
           Data: True
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnHit
     Base: 000802:ccbgssse057-ba_stalhrim.esl
     LocationReference: 016E2A:Dragonborn.esm
     EnableParent:
@@ -895,10 +895,10 @@ TopCell:
       - Name: defaultDisableHavokOnLoad
         Properties:
         - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnHit
-        - MutagenObjectType: ScriptBoolProperty
           Name: havokOnActivate
           Data: True
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnHit
     Base: 000803:ccbgssse057-ba_stalhrim.esl
     LocationReference: 016E2A:Dragonborn.esm
     EnableParent:

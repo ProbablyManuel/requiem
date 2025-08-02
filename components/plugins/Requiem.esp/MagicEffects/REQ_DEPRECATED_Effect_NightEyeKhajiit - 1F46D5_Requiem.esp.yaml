@@ -4,25 +4,25 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicNightEyeScript
     Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 0.96
     - MutagenObjectType: ScriptObjectProperty
       Name: IntroFX
       Object: 06B10A:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: NightEyeTransitionGlobal
-      Object: 0EFC75:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: IntroSoundFX
-    - MutagenObjectType: ScriptObjectProperty
-      Name: OutroFX
-      Object: 06B10B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: MainFX
       Object: 06B108:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: NightEyeTransitionGlobal
+      Object: 0EFC75:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 06B10B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: OutroSoundFX
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fDelay
-      Data: 0.96
 Name:
   TargetLanguage: English
   Value: Night Eye

@@ -9,18 +9,30 @@ VirtualMachineAdapter:
   Scripts:
   - Name: dragonactorscript
     Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: deathFXrange
+      Data: 1024
     - MutagenObjectType: ScriptObjectProperty
-      Name: FXDragonTakeoffImpactSet
-      Object: 019A01:Skyrim.esm
+      Name: DLC2ApocryphaLocation
+      Object: 016E2B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dragonFOVfx
+      Object: 06C0DA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: forestDragonSkin
+      Object: 087557:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: FXDragonLandingImpactSet
       Object: 02BD39:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonTailstompImpactSet
+      Object: 03F819:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXDragonTakeoffImpactSet
+      Object: 019A01:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: knockBackExplosion
       Object: 078C57:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: deathFXrange
-      Data: 1024
     - MutagenObjectType: ScriptObjectProperty
       Name: MQkillDragon
       Object: 035D56:Skyrim.esm
@@ -28,34 +40,22 @@ VirtualMachineAdapter:
       Name: NPCDragonFlyby
       Object: 018B58:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2ApocryphaLocation
-      Object: 016E2B:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: SnowDragonSkin
       Object: 085808:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: TundraDragonSkin
       Object: 087556:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: forestDragonSkin
-      Object: 087557:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: WI
       Object: 035D64:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: dragonFOVfx
-      Object: 06C0DA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FXDragonTailstompImpactSet
-      Object: 03F819:Skyrim.esm
   - Name: MGRitual05DragonScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Scales
-      Object: 0D0756:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: MGRitual05Dagger
       Object: 0D0758:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Scales
+      Object: 0D0756:Skyrim.esm
 Configuration:
   Flags:
   - Respawn

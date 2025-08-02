@@ -115,18 +115,18 @@ Temporary:
       - MutagenObjectType: ScriptBoolProperty
         Name: disableWhenDone
         Data: True
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 000800:ccedhsse002-splkntset.esl
       - MutagenObjectType: ScriptBoolProperty
         Name: doOnce
         Data: True
-      - MutagenObjectType: ScriptIntProperty
-        Name: stage
-        Data: 4
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 000800:ccedhsse002-splkntset.esl
       - MutagenObjectType: ScriptIntProperty
         Name: prereqStageOPT
         Data: 25
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 4
   Base: 099312:Skyrim.esm
   Primitive:
     Bounds: 584.0625, 1184.3633, 586.999

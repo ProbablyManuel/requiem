@@ -5,14 +5,14 @@ VirtualMachineAdapter:
   - Name: REQ_SapSpigot
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: HarvestSound
-      Object: 035227:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: FailureMessage
       Object: 0E1FC0:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Harvest
       Object: AE3B37:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HarvestSound
+      Object: 035227:Skyrim.esm
 ObjectBounds:
   First: -3, -8, 0
   Second: 3, 8, 2

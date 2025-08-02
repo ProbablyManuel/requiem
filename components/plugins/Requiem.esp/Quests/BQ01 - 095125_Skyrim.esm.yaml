@@ -5,36 +5,60 @@ VirtualMachineAdapter:
   - Name: BQScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Location
+      Object: 095125:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BQActiveQuest
+      Object: 0CBA99:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: Gold001
       Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Hold
       Object: 095125:Skyrim.esm
       Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Location
-      Object: 095125:Skyrim.esm
-      Alias: 0
     - MutagenObjectType: ScriptIntProperty
       Name: RewardAmount
       Data: 500
-    - MutagenObjectType: ScriptObjectProperty
-      Name: BQActiveQuest
-      Object: 0CBA99:Skyrim.esm
   - Name: QF_BQ01_00095125
     Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bounty
+      Object: 095125:Skyrim.esm
+      Alias: 7
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_BountyLocation
       Object: 095125:Skyrim.esm
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Hold
+      Object: 095125:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Innkeeper
+      Object: 095125:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Jarl
       Object: 095125:Skyrim.esm
       Alias: 8
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Letter
+      Object: 095125:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Location
       Object: 095125:Skyrim.esm
       Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_LocationCenterMarker
+      Object: 095125:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MapMarker
+      Object: 095125:Skyrim.esm
+      Alias: 12
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Player
       Object: 095125:Skyrim.esm
@@ -43,30 +67,6 @@ VirtualMachineAdapter:
       Name: Alias_Steward
       Object: 095125:Skyrim.esm
       Alias: 13
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Innkeeper
-      Object: 095125:Skyrim.esm
-      Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Letter
-      Object: 095125:Skyrim.esm
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MapMarker
-      Object: 095125:Skyrim.esm
-      Alias: 12
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Hold
-      Object: 095125:Skyrim.esm
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Bounty
-      Object: 095125:Skyrim.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_LocationCenterMarker
-      Object: 095125:Skyrim.esm
-      Alias: 3
   FileName: QF_BQ01_00095125
   Fragments:
   - Unknown2: 1

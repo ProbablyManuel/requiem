@@ -4,6 +4,11 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_AddItemsOnEffectStart
     Properties:
+    - MutagenObjectType: ScriptIntListProperty
+      Name: Amount
+      Data:
+      - 1
+      - 2
     - MutagenObjectType: ScriptObjectListProperty
       Name: ItemsToAdd
       Objects:
@@ -11,11 +16,6 @@ VirtualMachineAdapter:
         Object: 064B35:Skyrim.esm
       - Name: ''
         Object: 064B31:Skyrim.esm
-    - MutagenObjectType: ScriptIntListProperty
-      Name: Amount
-      Data:
-      - 1
-      - 2
 Name:
   TargetLanguage: English
   Value: Leftover Food - Goat Wheel

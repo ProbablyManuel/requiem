@@ -5,18 +5,18 @@ VirtualMachineAdapter:
   - Name: REQ_MaceOfMolagBal
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: description
+      Object: AE3875:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: MaceOfMolagBalEnch
       Object: 091AE4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SoulTrapDuration
-      Object: AE38EA:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: ReapplyNonPersistentChanges
       Object: AE3843:Requiem.esp
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: description
-      Object: AE3875:Requiem.esp
+      Name: SoulTrapDuration
+      Object: AE38EA:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Apply Mace of Molag Bal Enchantment

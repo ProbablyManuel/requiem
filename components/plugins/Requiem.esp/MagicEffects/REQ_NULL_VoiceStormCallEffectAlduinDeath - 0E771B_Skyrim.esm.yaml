@@ -4,30 +4,30 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicProjectileStormScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MAGProjectileStormVar
-      Object: 101DAB:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fStartDelayRand
-      Data: 2
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlacedTargetActivator
-      Object: 0B79FF:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fRecast
-      Data: 1
     - MutagenObjectType: ScriptBoolProperty
       Name: bDontHitCaster
       Data: True
     - MutagenObjectType: ScriptFloatProperty
+      Name: fRecast
+      Data: 1
+    - MutagenObjectType: ScriptFloatProperty
       Name: fRecastRand
       Data: 2.5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStartDelayRand
+      Data: 2
     - MutagenObjectType: ScriptObjectProperty
-      Name: SpellRef
-      Object: 0D488A:Skyrim.esm
+      Name: MAGProjectileStormVar
+      Object: 101DAB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: PlacedActivator
       Object: 0B79FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedTargetActivator
+      Object: 0B79FF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellRef
+      Object: 0D488A:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Storm Call Effect AlduinDeath

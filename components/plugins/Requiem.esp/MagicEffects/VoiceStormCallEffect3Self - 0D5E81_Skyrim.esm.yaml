@@ -4,12 +4,15 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicSetWeatherScript
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: LocalWeatherB
-      Data: 3
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bHoldWeatherUntilEnd
+      Data: True
     - MutagenObjectType: ScriptIntProperty
       Name: LocalWeatherA
       Data: 2
+    - MutagenObjectType: ScriptIntProperty
+      Name: LocalWeatherB
+      Data: 3
     - MutagenObjectType: ScriptObjectProperty
       Name: WeatherAfterForm
       Object: 0C8220:Skyrim.esm
@@ -19,26 +22,26 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: WeatherForm
       Object: 0D4886:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bHoldWeatherUntilEnd
-      Data: True
   - Name: magicProjectileStormScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: SoundFX
-      Object: 0EB382:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fStartDelayRand
-      Data: 3
+      Name: CastingImod
+      Object: 0A9D93:Skyrim.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: fDelay
       Data: 3
     - MutagenObjectType: ScriptFloatProperty
       Name: fHeight
       Data: 4096
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CastingImod
-      Object: 0A9D93:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecast
+      Data: 0.25
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecastRand
+      Data: 5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStartDelayRand
+      Data: 3
     - MutagenObjectType: ScriptObjectProperty
       Name: MAGProjectileStormVar
       Object: 101DAB:Skyrim.esm
@@ -46,17 +49,14 @@ VirtualMachineAdapter:
       Name: PlacedActivator
       Object: 0B79FF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: SpellRef
-      Object: 0E4CB7:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fRecastRand
-      Data: 5
-    - MutagenObjectType: ScriptObjectProperty
       Name: PlacedTargetActivator
       Object: 0B79FF:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fRecast
-      Data: 0.25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoundFX
+      Object: 0EB382:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellRef
+      Object: 0E4CB7:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Call Storm

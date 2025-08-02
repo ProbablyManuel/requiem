@@ -6,24 +6,24 @@ VirtualMachineAdapter:
   - Name: SayOnHitByMagicEffectScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: TopicToSay
-      Object: 0AB884:Skyrim.esm
+      Name: CombatTopicToSay
+      Object: 0E0C9B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GameDaysPassed
       Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: CombatTopicToSay
-      Object: 0E0C9B:Skyrim.esm
+      Name: TopicToSay
+      Object: 0AB884:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: WICastNonHostileTimer
       Object: 0E0CDC:Skyrim.esm
   - Name: VoiceCharmFactionScript
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bMakePlayerTeammate
     - MutagenObjectType: ScriptObjectProperty
       Name: CharmFaction
       Object: 08F3E8:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bMakePlayerTeammate
 Name:
   TargetLanguage: English
   Value: Harmony

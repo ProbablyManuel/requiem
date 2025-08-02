@@ -72,11 +72,11 @@ Temporary:
         Name: onlyOnce
         Data: True
       - MutagenObjectType: ScriptIntProperty
-        Name: stage
-        Data: 35
-      - MutagenObjectType: ScriptIntProperty
         Name: prereqStageOPT
         Data: 40
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 35
       - MutagenObjectType: ScriptObjectProperty
         Name: TriggerFaction
         Object: 000DB1:Skyrim.esm
@@ -108,18 +108,18 @@ Temporary:
       - MutagenObjectType: ScriptBoolProperty
         Name: disableWhenDone
         Data: True
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 00081C:ccbgssse041-netchleather.esl
       - MutagenObjectType: ScriptBoolProperty
         Name: doOnce
         Data: True
-      - MutagenObjectType: ScriptIntProperty
-        Name: stage
-        Data: 9
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00081C:ccbgssse041-netchleather.esl
       - MutagenObjectType: ScriptIntProperty
         Name: prereqStageOPT
         Data: 60
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 9
   Base: 10DEC3:Skyrim.esm
   Primitive:
     Bounds: 2436.002, 2710, 1572

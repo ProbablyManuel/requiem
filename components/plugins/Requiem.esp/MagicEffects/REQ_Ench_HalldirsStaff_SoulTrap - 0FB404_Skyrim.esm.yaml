@@ -4,27 +4,27 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicsoultrapfxscript
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bIsEnchantmentEffect
+      Data: True
     - MutagenObjectType: ScriptObjectProperty
-      Name: TargetFXS
-      Object: 054223:Skyrim.esm
+      Name: CasterFXS
+      Object: 054224:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: CasterVFX
       Object: 0531B1:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: CasterFXS
-      Object: 054224:Skyrim.esm
+      Name: TargetFXS
+      Object: 054223:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0531AF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: TrapImod
       Object: 054225:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: TrapSoundFX
       Object: 056AC6:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TargetVFX
-      Object: 0531AF:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bIsEnchantmentEffect
-      Data: True
 Name:
   TargetLanguage: English
   Value: Halldir's Soul Trap

@@ -8,12 +8,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: WIDeadBodyCleanupScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DeathContainer
-      Object: 0172B6:Skyrim.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: DaysBeforeCleanUp
       Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0172B6:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: WI
       Object: 035D64:Skyrim.esm

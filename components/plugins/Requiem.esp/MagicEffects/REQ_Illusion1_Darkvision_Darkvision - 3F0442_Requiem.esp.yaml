@@ -7,12 +7,12 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptFloatProperty
       Name: Interval
       Data: 1
-    - MutagenObjectType: ScriptFloatProperty
-      Name: XPGain
-      Data: 0.1
     - MutagenObjectType: ScriptStringProperty
       Name: skill
       Data: ILLUSION
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPGain
+      Data: 0.1
   - Name: REQ_Magic_FinishSpell
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -21,32 +21,32 @@ VirtualMachineAdapter:
   - Name: REQ_Illusion_LowLightVision
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: DualcastVision
+      Object: 3F0443:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 0.96
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fImodStrength
+      Data: 0.5
+    - MutagenObjectType: ScriptObjectProperty
       Name: IntroFX
       Object: 06B10A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: NightEyeTransitionGlobal
-      Object: 0EFC75:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: IntroSoundFX
       Object: 07C723:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: MainFX
+      Object: 06B108:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NightEyeTransitionGlobal
+      Object: 0EFC75:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: OutroFX
       Object: 06B10B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DualcastVision
-      Object: 3F0443:Requiem.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fImodStrength
-      Data: 0.5
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fDelay
-      Data: 0.96
-    - MutagenObjectType: ScriptObjectProperty
       Name: OutroSoundFX
       Object: 07C722:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MainFX
-      Object: 06B108:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Darkvision

@@ -5,45 +5,45 @@ VirtualMachineAdapter:
   - Name: SSE_QF_ccBGSSSE050_QuestMisc_0500081D
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavyTown
-      Object: 016747:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Dossier
       Object: 00081D:ccbgssse050-ba_daedric.esl
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorHelmetHeavyTown
-      Object: 016750:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorHelmetHeavy
-      Object: 016740:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavySpecial
-      Object: 1031C4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: ccBGSSSE050_ArmorBladesCuirass
       Object: 000801:ccbgssse050-ba_daedric.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavy
-      Object: 0166F8:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE050_SubCharBandit06Boss
-      Object: 00083A:ccbgssse050-ba_daedric.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: ccBGSSSE050_ArmorBladesHelmet
       Object: 000803:ccbgssse050-ba_daedric.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavyBlacksmith
-      Object: 09BC36:Skyrim.esm
+      Name: ccBGSSSE050_SubCharBandit06Boss
+      Object: 00083A:ccbgssse050-ba_daedric.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: LCharBanditBoss
       Object: 03DF16:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorHelmetHeavySpecial
-      Object: 1031C8:Skyrim.esm
+      Name: LItemArmorCuirassHeavy
+      Object: 0166F8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavyBlacksmith
+      Object: 09BC36:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavySpecial
+      Object: 1031C4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavyTown
+      Object: 016747:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavy
+      Object: 016740:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: LItemArmorHelmetHeavyBlacksmith
       Object: 09BC3A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavySpecial
+      Object: 1031C8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavyTown
+      Object: 016750:Skyrim.esm
   FileName: SSE_QF_ccBGSSSE050_QuestMisc_0500081D
   Fragments:
   - Stage: 20
@@ -62,12 +62,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00081D:ccbgssse050-ba_daedric.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
 Flags:
 - RunOnce
 Priority: 15

@@ -11,53 +11,32 @@ VirtualMachineAdapter:
     - Name: REQ_MCM_DataStorage
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Combat_EssentialAgain
-        Object: 3C6809:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Skills_HideClutterRecipes
-        Object: 3BA1F3:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Compatibility_AttackSpeed
-        Object: 6C84A9:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Atmosphere_AllowFastTravel
-        Object: 067E2E:Requiem.esp
+        Name: mcm
+        Object: 6E5FE6:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: mcm_skills
         Object: 789603:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: TimeScale
-        Object: 00003A:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Combat_NoFearAndYield
-        Object: 71C730:Requiem.esp
+        Name: REQ_Atmosphere_AllowFastTravel
+        Object: 067E2E:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: REQ_Atmosphere_FasterOutOfCombatRegen
         Object: AE3B5E:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Atmosphere_NoPoisonISM
-        Object: 1CCCDA:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Skills_NoSmithingBooks
-        Object: 6F9CB9:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Skills_RateFactor
-        Object: 6F9CBA:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Combat_NoHorseTrample
-        Object: 71012A:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
         Name: REQ_Atmosphere_KillmoveHealthThreshold
         Object: AD373A:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Debug_OnHit
-        Object: 345506:Requiem.esp
+        Name: REQ_Atmosphere_NoPoisonISM
+        Object: 1CCCDA:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: mcm
-        Object: 6E5FE6:Requiem.esp
+        Name: REQ_Atmosphere_SlowerHorses
+        Object: 0CB37F:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Debug_ArmorTraining
-        Object: 347CA9:Requiem.esp
+        Name: REQ_Atmosphere_VampireRandomCarnage
+        Object: 2E9A23:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Combat_EssentialAgain
+        Object: 3C6809:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: REQ_Combat_NoDeathHandling
         Object: AA1E9C:Requiem.esp
@@ -65,17 +44,38 @@ VirtualMachineAdapter:
         Name: REQ_Combat_NoDragonFear
         Object: 71C731:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Atmosphere_SlowerHorses
-        Object: 0CB37F:Requiem.esp
+        Name: REQ_Combat_NoFearAndYield
+        Object: 71C730:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Combat_NoHorseTrample
+        Object: 71012A:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: REQ_Combat_NoOnHitDisarm
         Object: 71012B:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Compatibility_AttackSpeed
+        Object: 6C84A9:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Debug_ArmorTraining
+        Object: 347CA9:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Debug_OnHit
+        Object: 345506:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Skills_HideClutterRecipes
+        Object: 3BA1F3:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Skills_NoSmithingBooks
+        Object: 6F9CB9:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Skills_RateFactor
+        Object: 6F9CBA:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: TimeScale
+        Object: 00003A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
         Name: WIWaitDragon
         Object: 0E518F:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: REQ_Atmosphere_VampireRandomCarnage
-        Object: 2E9A23:Requiem.esp
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: MCM Datastorage'

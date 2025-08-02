@@ -6,23 +6,23 @@ VirtualMachineAdapter:
   - Name: QF_FreeformRiften13_00043E1A
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: pReward
-      Object: 22FDA6:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiften13DaggerAlias
+      Name: Alias_FFRiften13AlessandraAlias
       Object: 043E1A:Skyrim.esm
-      Alias: 6
+      Alias: 0
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FFRiften13Andurs
       Object: 043E1A:Skyrim.esm
       Alias: 7
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften13DaggerAlias
+      Object: 043E1A:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
       Name: pFFRTQS
       Object: 065BDF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiften13AlessandraAlias
-      Object: 043E1A:Skyrim.esm
-      Alias: 0
+      Name: pReward
+      Object: 22FDA6:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: pThaneCount
       Object: 065BE0:Skyrim.esm
@@ -57,11 +57,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
   - Property:
       Name: ''
       Object: 043E1A:Skyrim.esm
@@ -70,11 +70,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
 Name:
   TargetLanguage: English
   Value: Pilgrimage

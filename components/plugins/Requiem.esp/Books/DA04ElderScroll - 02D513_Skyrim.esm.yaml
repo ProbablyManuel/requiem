@@ -5,11 +5,41 @@ VirtualMachineAdapter:
   - Name: ElderScrollScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: FXTimeTravelImodStatic
-      Object: 044F3B:Skyrim.esm
+      Name: ElderScrollHandAttachArmor
+      Object: 0F71DF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToWhiteInOutImod
+      Object: 101968:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXReadElderScrollEffect
+      Object: 044F20:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: FXReadScrollsBlindImod
       Object: 044F3F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXReadScrollsImod
+      Object: 044F1B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXTimeTravelCamAttachEffect
+      Object: 044F3A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXTimeTravelImodStatic
+      Object: 044F3B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXTimeTravelImodStatic01
+      Object: 1037E2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXTimeTravelImodStatic02
+      Object: 1037E3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXTimeTravelImodStatic03
+      Object: 1037E5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXTimeTravelImodStatic04
+      Object: 1037E6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FXTimeWarpCamAttachEffect
+      Object: 101967:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: IdleReadElderScroll
       Object: 0EC9D0:Skyrim.esm
@@ -17,62 +47,32 @@ VirtualMachineAdapter:
       Name: IdleReadElderScrollLonger
       Object: 101E52:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: TimeWoundTrigger
-      Object: 064769:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ElderScrollHandAttachArmor
-      Object: 0F71DF:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FXTimeTravelImodStatic04
-      Object: 1037E6:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SkyrimMQ206weather
-      Object: 10199F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FXTimeTravelImodStatic02
-      Object: 1037E3:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MUSSpecialElderScrollSquence
-      Object: 10486C:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FXTimeTravelCamAttachEffect
-      Object: 044F3A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FadeToWhiteInOutImod
-      Object: 101968:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FXTimeWarpCamAttachEffect
-      Object: 101967:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: OBJElderScrollBlindIn2D
-      Object: 10A95A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FXTimeTravelImodStatic01
-      Object: 1037E2:Skyrim.esm
+      Name: IdleStop
+      Object: 0E4242:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: MQ206
       Object: 036193:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: IdleStop
-      Object: 0E4242:Skyrim.esm
+      Name: MUSSpecialElderScrollSquence
+      Object: 10486C:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: QSTMQ206TimeTravel2DSound
-      Object: 10F736:Skyrim.esm
+      Name: OBJElderScrollBlindIn2D
+      Object: 10A95A:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: OBJElderScrollBlindOut2D
       Object: 10A95B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: FXReadElderScrollEffect
-      Object: 044F20:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FXReadScrollsImod
-      Object: 044F1B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: QSTMQ206ElderScrollRead2DSound
       Object: 10F735:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: FXTimeTravelImodStatic03
-      Object: 1037E5:Skyrim.esm
+      Name: QSTMQ206TimeTravel2DSound
+      Object: 10F736:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkyrimMQ206weather
+      Object: 10199F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TimeWoundTrigger
+      Object: 064769:Skyrim.esm
 ObjectBounds:
   First: -77, -13, -7
   Second: 77, 1, 7

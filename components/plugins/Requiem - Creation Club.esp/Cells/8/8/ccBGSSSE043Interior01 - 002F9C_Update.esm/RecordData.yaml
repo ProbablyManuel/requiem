@@ -115,12 +115,12 @@ Temporary:
     - Name: defaultsetStageTrigSCRIPT
       Flags: Inherited
       Properties:
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 00089E:ccbgssse043-crosselv.esl
       - MutagenObjectType: ScriptBoolProperty
         Name: doOnce
         Data: True
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00089E:ccbgssse043-crosselv.esl
       - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 200

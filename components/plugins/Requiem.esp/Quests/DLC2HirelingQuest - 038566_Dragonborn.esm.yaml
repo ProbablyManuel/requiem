@@ -5,36 +5,36 @@ VirtualMachineAdapter:
   - Name: DLC2HirelingQuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: CanReHire
+      Object: 104F35:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurrentHireling
+      Object: 0BD738:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DialogueFollower
+      Object: 0750BA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2CanRehireTeldryn
+      Object: 038569:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerAlias
+      Object: 038566:Dragonborn.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: Gold001
       Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: HirelingCommentNextAllowed
       Object: 104817:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2CanRehireTeldryn
-      Object: 038569:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CurrentHireling
-      Object: 0BD738:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerFollowerCount
-      Object: 0BCC98:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: HirelingGold
       Object: 0BCC96:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DialogueFollower
-      Object: 0750BA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CanReHire
-      Object: 104F35:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FollowerAlias
-      Object: 038566:Dragonborn.esm
-      Alias: 1
+      Name: PlayerFollowerCount
+      Object: 0BCC98:Skyrim.esm
   - Name: DLC2_QF_DLC2HirelingQuest_02038566
     Properties:
     - MutagenObjectType: ScriptObjectProperty

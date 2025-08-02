@@ -5,8 +5,17 @@ VirtualMachineAdapter:
   - Name: REQ_IllusionBreak
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 40198C:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: MindEffect
       Object: 41F4F4:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 5
     - MutagenObjectType: ScriptObjectListProperty
       Name: Skill_ScalingPerks
       Objects:
@@ -16,15 +25,6 @@ VirtualMachineAdapter:
         Object: 0C44C3:Skyrim.esm
       - Name: ''
         Object: 0581E2:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: Skill_Offset
-      Data: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: BaseSpell
-      Object: 40198C:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MindFogEffect
-      Object: 3C130A:Requiem.esp
     - MutagenObjectType: ScriptFloatProperty
       Name: XPRate
       Data: 2

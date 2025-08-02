@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 40
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 000819:ccbgssse051-ba_daedricmail.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 40
 ObjectBounds:
   First: -1, -1, 0
   Second: 1, 1, 0

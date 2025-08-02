@@ -5,31 +5,31 @@ VirtualMachineAdapter:
   - Name: magicPlaceActivatorScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlacedActivator
-      Object: 0B79FF:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: ExplosionRef
       Object: 0B7A05:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedActivator
+      Object: 0B79FF:Skyrim.esm
   - Name: shaderparticlegeometryscript
     Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActivatorRef
+      Object: 0B79FF:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: bUseDistanceCheck
       Data: True
     - MutagenObjectType: ScriptFloatProperty
       Name: FadeInTime
       Data: 2
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PSGD
-      Object: 0B79FB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ActivatorRef
-      Object: 0B79FF:Skyrim.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: FadeOutTime
       Data: 2
     - MutagenObjectType: ScriptFloatProperty
       Name: fDistnceCheck
       Data: 1000
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PSGD
+      Object: 0B79FB:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Frost Damage

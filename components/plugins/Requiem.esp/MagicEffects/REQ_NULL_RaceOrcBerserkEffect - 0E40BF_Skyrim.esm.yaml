@@ -4,21 +4,21 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicimodbeginloopend
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: IntroFX
-      Object: 0FD7DA:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bPlayerOnly
+      Data: True
     - MutagenObjectType: ScriptFloatProperty
       Name: fDelay
       Data: 1.75
     - MutagenObjectType: ScriptObjectProperty
-      Name: OutroFX
-      Object: 0FD7DC:Skyrim.esm
+      Name: IntroFX
+      Object: 0FD7DA:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: LoopFX
       Object: 0FD7DB:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bPlayerOnly
-      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 0FD7DC:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Berserk

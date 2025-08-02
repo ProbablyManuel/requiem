@@ -55,7 +55,7 @@ Persistent:
   LocationReference: 022646:Skyrim.esm
   Placement:
     Position: -2248.073, 486.0943, 64.91052
-    Rotation: 0, -0, 1.6000106
+    Rotation: 0, 0, 1.6000106
 Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 0E619D:Skyrim.esm
@@ -64,9 +64,9 @@ Temporary:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnHit
-      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
   Base: 0136D4:Skyrim.esm
@@ -89,6 +89,6 @@ Temporary:
   LocationReference: 022646:Skyrim.esm
   Placement:
     Position: -2238.0706, 725.52405, 64
-    Rotation: 0, -0, 1.5707964
+    Rotation: 0, 0, 1.5707964
 MajorFlags:
 - 0x40000

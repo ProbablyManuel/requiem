@@ -4,14 +4,14 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC1dunRedwaterSkoomaEffectScript
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: timeDelay
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1dunRedwaterDenQST
-      Object: 007C4F:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC1dunRedwaterDenLocation
       Object: 004D6F:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1dunRedwaterDenQST
+      Object: 007C4F:Dawnguard.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: timeDelay
 Name:
   TargetLanguage: English
   Value: DLC1RedwaterSkoomaScriptEffect

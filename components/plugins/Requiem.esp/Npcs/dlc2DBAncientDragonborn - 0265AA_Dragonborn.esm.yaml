@@ -8,18 +8,18 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC2DBAncientDragonbornSCRIPT
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: timer
-      Data: 20
     - MutagenObjectType: ScriptObjectProperty
-      Name: dragonArmsFX
-      Object: 021733:Dragonborn.esm
+      Name: dbAncientMarker
+      Object: 01DC0D:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DragonArmor
       Object: 021739:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: dbAncientMarker
-      Object: 01DC0D:Dragonborn.esm
+      Name: dragonArmsFX
+      Object: 021733:Dragonborn.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: timer
+      Data: 20
 ObjectBounds:
   First: -22, -14, 0
   Second: 22, 14, 128

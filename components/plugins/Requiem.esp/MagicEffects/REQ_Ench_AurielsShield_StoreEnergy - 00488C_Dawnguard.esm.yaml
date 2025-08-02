@@ -5,38 +5,38 @@ VirtualMachineAdapter:
   - Name: DLC1_ReflectShieldSCRIPT
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: BlastIMod
+      Object: 00D95B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: ChargeIMod
       Object: 00D95A:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: TimesHit
-      Object: 00E8F7:Dawnguard.esm
+      Name: ChargeSpell1
+      Object: 00D951:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChargeSpell2
+      Object: 00D954:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ChargeSpell3
       Object: 00D958:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ChargSound
       Object: 0225AA:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: HitsUntilSecondCharge
-      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CurrentStage
+      Object: 00E8F6:Dawnguard.esm
     - MutagenObjectType: ScriptIntProperty
       Name: HitsUntilFirstCharge
       Data: 1
     - MutagenObjectType: ScriptIntProperty
+      Name: HitsUntilSecondCharge
+      Data: 2
+    - MutagenObjectType: ScriptIntProperty
       Name: HitsUntilThirdCharge
       Data: 3
     - MutagenObjectType: ScriptObjectProperty
-      Name: CurrentStage
-      Object: 00E8F6:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ChargeSpell2
-      Object: 00D954:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: BlastIMod
-      Object: 00D95B:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ChargeSpell1
-      Object: 00D951:Dawnguard.esm
+      Name: TimesHit
+      Object: 00E8F7:Dawnguard.esm
 Name:
   TargetLanguage: English
   Value: Store Energy

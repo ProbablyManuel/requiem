@@ -5,68 +5,14 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC1TrapInfectedBones
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage2
-      Data: 50
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage6
-      Data: 50
-    - MutagenObjectType: ScriptBoolProperty
-      Name: FiniteUse
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseRockjoint
-      Object: 10A24F:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: soundLevel
-      Data: 100
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold1
-      Data: 20
-    - MutagenObjectType: ScriptFloatProperty
-      Name: diseaseChance
-      Data: 40
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage3
-      Data: 50
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseAtaxia
-      Object: 10A24A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseBrainRot
-      Object: 10A24D:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: canDisease
       Data: True
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage4
-      Data: 50
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseSanguinareVampiris
-      Object: 0037E9:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TriggerSound
-      Object: 027EB8:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseBoneBreakFever
-      Object: 10A24C:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseWitbane
-      Object: 10A250:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold5
+    - MutagenObjectType: ScriptFloatProperty
+      Name: diseaseChance
       Data: 40
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold3
-      Data: 30
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseRattles
-      Object: 10A24E:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage5
-      Data: 50
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold2
-      Data: 25
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FiniteUse
     - MutagenObjectType: ScriptObjectProperty
       Name: havokNudge
       Object: 07EA04:Skyrim.esm
@@ -74,8 +20,62 @@ VirtualMachineAdapter:
       Name: LvlDamage1
       Data: 50
     - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 50
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 50
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 50
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 50
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 50
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 20
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 25
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 30
+    - MutagenObjectType: ScriptIntProperty
       Name: LvlThreshold4
       Data: 35
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 40
+    - MutagenObjectType: ScriptIntProperty
+      Name: soundLevel
+      Data: 100
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseAtaxia
+      Object: 10A24A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBoneBreakFever
+      Object: 10A24C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBrainRot
+      Object: 10A24D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRattles
+      Object: 10A24E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRockjoint
+      Object: 10A24F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseSanguinareVampiris
+      Object: 0037E9:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseWitbane
+      Object: 10A250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TriggerSound
+      Object: 027EB8:Skyrim.esm
 ObjectBounds:
   First: -21, -18, -207
   Second: 21, 21, 0

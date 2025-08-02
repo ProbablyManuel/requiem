@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: VoiceCharmFactionScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CharmFaction
-      Object: 09E0C9:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: bMakePlayerTeammate
       Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CharmFaction
+      Object: 09E0C9:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Animal Allegiance 3

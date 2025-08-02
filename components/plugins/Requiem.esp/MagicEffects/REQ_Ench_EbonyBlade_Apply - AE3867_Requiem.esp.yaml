@@ -5,18 +5,18 @@ VirtualMachineAdapter:
   - Name: REQ_EbonyBlade
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: ReapplyNonPersistentChanges
-      Object: AE3843:Requiem.esp
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
       Name: description
       Object: AE3873:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EbonyBladeEnch
+      Object: 10FAF0:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: EbonyBladeTracker
       Object: 10FAEC:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: EbonyBladeEnch
-      Object: 10FAF0:Skyrim.esm
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
 Name:
   TargetLanguage: English
   Value: Apply Ebony Blade Enchantment

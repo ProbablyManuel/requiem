@@ -5,21 +5,21 @@ VirtualMachineAdapter:
   - Name: SSE_QF_ccBGSSSE064_MiscQuest_0200081A
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Note
-      Object: 00081A:ccbgssse064-ba_elven.esl
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Bounty
       Object: 00081A:ccbgssse064-ba_elven.esl
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Steward
-      Object: 00081A:ccbgssse064-ba_elven.esl
-      Alias: 2
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Jarl
       Object: 00081A:ccbgssse064-ba_elven.esl
       Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 00081A:ccbgssse064-ba_elven.esl
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Steward
+      Object: 00081A:ccbgssse064-ba_elven.esl
+      Alias: 2
   FileName: SSE_QF_ccBGSSSE064_MiscQuest_0200081A
   Fragments:
   - Stage: 20
@@ -38,12 +38,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00081A:ccbgssse064-ba_elven.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
   - Property:
       Name: ''
       Object: 00081A:ccbgssse064-ba_elven.esl
@@ -51,12 +51,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00081A:ccbgssse064-ba_elven.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
 Flags:
 - RunOnce
 Priority: 15
