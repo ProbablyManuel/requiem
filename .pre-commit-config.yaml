@@ -3,21 +3,11 @@ repos:
     hooks:
       - id: spriggit-requiem
         name: 'Spriggit: Requiem'
-        entry: >-
-          cmd /c
-          Spriggit.CLI sort-randomized-fields --InputPath "Requiem.esp" --OutputPath "Requiem.esp" --GameRelease SkyrimSE
-          &&
-          Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp"
-        language: system
+        entry: components/plugins/spriggit.bat
+        language: script
         files: ^Requiem\.esp$
-        pass_filenames: false
       - id: spriggit-requiem-creation-club
         name: 'Spriggit: Requiem - Creation Club'
-        entry: >-
-          cmd /c
-          Spriggit.CLI sort-randomized-fields --InputPath "Requiem - Creation Club.esp" --OutputPath "Requiem - Creation Club.esp" --GameRelease SkyrimSE
-          &&
-          Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp"
-        language: system
+        entry: components/plugins/spriggit.bat
+        language: script
         files: ^Requiem - Creation Club\.esp$
-        pass_filenames: false
