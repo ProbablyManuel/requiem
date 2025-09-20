@@ -36,7 +36,7 @@ jobs:
         run: chmod +x .github/spriggit/Spriggit.CLI
 
       - name: Add Spriggit to PATH
-        run: export PATH="$PATH:.github/spriggit"
+        run: echo "$GITHUB_WORKSPACE/.github/spriggit" >> $GITHUB_PATH
 
       - name: Convert "Requiem.esp" to Spriggit format
         run: bash components/plugins/spriggit.sh "Requiem.esp"
