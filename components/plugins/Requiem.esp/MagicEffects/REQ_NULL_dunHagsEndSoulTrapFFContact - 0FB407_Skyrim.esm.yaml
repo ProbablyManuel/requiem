@@ -49,10 +49,17 @@ TargetType: Touch
 HitEffectArt: 0506D6:Skyrim.esm
 ImpactData: 04C6DA:Skyrim.esm
 DualCastScale: 1
-Sounds: []
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03F37B:Skyrim.esm
+- Type: Ready
+  Sound: 03F37D:Skyrim.esm
+- Type: Release
+  Sound: 03F37C:Skyrim.esm
 Description:
   TargetLanguage: English
-  Value: Makes the target vulnerable to soul gems for <dur> seconds.
+  Value: If target dies within <dur> seconds, it fills a soul gem.
 Conditions:
 - MutagenObjectType: ConditionFloat
   Data:
@@ -60,11 +67,18 @@ Conditions:
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
+    MutagenObjectType: IsEssentialConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
     MutagenObjectType: IsCommandedActorConditionData
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: HasKeywordConditionData
     Keyword: 103AD2:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetDeadConditionData
