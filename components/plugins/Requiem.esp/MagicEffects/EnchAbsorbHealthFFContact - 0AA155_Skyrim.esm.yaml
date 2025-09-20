@@ -4,18 +4,18 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicAbsorbFXScript
     Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABEFC:Skyrim.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: fEffectDurationMax
       Data: 2
     - MutagenObjectType: ScriptObjectProperty
-      Name: CasterVFX
-      Object: 0ABEFC:Skyrim.esm
+      Name: TargetVFX
+      Object: 0ABEFB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: TrapImod
       Object: 0ABF17:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TargetVFX
-      Object: 0ABEFB:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Absorb Health

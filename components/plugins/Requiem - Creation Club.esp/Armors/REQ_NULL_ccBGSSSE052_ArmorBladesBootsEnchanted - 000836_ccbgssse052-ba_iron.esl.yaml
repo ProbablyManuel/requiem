@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 60
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 000822:ccbgssse052-ba_iron.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 60
 Name:
   TargetLanguage: English
   Value: Iron Plate Boots

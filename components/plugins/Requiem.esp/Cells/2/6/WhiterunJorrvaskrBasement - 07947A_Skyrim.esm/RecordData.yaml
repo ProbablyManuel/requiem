@@ -50,12 +50,6 @@ Persistent:
     Scripts:
     - Name: REQ_AddQuestItems
       Properties:
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 01CEF6:Skyrim.esm
-      - MutagenObjectType: ScriptIntProperty
-        Name: stage
-        Data: 10
       - MutagenObjectType: ScriptObjectListProperty
         Name: Items
         Objects:
@@ -67,6 +61,12 @@ Persistent:
           Object: AE37E4:Requiem.esp
         - Name: ''
           Object: AE37E5:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 01CEF6:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 10
   Base: 021366:Skyrim.esm
   Owner: 1070DD:Skyrim.esm
   LocationReference: 023E5D:Skyrim.esm

@@ -4,9 +4,6 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_QF_SpellchoicePlayerCheck
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: REQ_VersionInstalled
-      Object: 2F38A0:Requiem.esp
     - MutagenObjectType: ScriptObjectListProperty
       Name: PerkList
       Objects:
@@ -60,6 +57,9 @@ VirtualMachineAdapter:
         Object: 0C44B9:Skyrim.esm
       - Name: ''
         Object: 0C44BA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: REQ_VersionInstalled
+      Object: 2F38A0:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: Spellchoices
       Object: 5DAA49:Requiem.esp

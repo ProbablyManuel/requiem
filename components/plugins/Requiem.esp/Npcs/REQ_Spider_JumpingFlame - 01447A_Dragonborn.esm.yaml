@@ -8,52 +8,52 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC2EncExplodingSpiderSCRIPT
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MagicDamageFire
-      Object: 01CEAD:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion2
-      Object: 0285D4:Dragonborn.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: bShouldHandleOnHit
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderCrumbleExplosion
-      Object: 01FF3F:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion6
-      Object: 0285D8:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MagicDamageFrost
-      Object: 01CEAE:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion4
-      Object: 0285D6:Dragonborn.esm
     - MutagenObjectType: ScriptIntProperty
       Name: iElementalResist
       Data: 1
     - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFire
+      Object: 01CEAD:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFrost
+      Object: 01CEAE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: MagicDamageShock
       Object: 01CEAF:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion5
-      Object: 0285D7:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion3
-      Object: 0285D5:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion1
-      Object: 01447C:Dragonborn.esm
-  - Name: DLC2EncExpSpiderGenericControlSCRIPT
-    Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: SpiderCrumbleExplosion
       Object: 01FF3F:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2ExpSpiderQuest
-      Object: 017962:Dragonborn.esm
+      Name: SpiderExplosion1
+      Object: 01447C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion2
+      Object: 0285D4:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion3
+      Object: 0285D5:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion4
+      Object: 0285D6:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion5
+      Object: 0285D7:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion6
+      Object: 0285D8:Dragonborn.esm
+  - Name: DLC2EncExpSpiderGenericControlSCRIPT
+    Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2ExpSpiderFriendFaction
       Object: 017964:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderQuest
+      Object: 017962:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderCrumbleExplosion
+      Object: 01FF3F:Dragonborn.esm
 Configuration:
   Flags:
   - AutoCalcStats

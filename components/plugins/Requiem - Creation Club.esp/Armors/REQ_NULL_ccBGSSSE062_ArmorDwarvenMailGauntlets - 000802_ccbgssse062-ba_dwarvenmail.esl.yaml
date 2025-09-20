@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 70
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 00081A:ccbgssse062-ba_dwarvenmail.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 70
 Name:
   TargetLanguage: English
   Value: Dwarven Mail Gauntlets

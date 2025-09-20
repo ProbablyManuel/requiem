@@ -5,15 +5,15 @@ VirtualMachineAdapter:
   - Name: REQ_AncientDawnguardWarAxe_KillCounter
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: ReapplyNonPersistentChanges
+      Object: AE3843:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
       Name: ResetQuest
       Object: AE3914:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: undeadKilled
       Object: 016691:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ReapplyNonPersistentChanges
-      Object: AE3843:Requiem.esp
-      Alias: 0
 Name:
   TargetLanguage: English
   Value: Update Kill Count

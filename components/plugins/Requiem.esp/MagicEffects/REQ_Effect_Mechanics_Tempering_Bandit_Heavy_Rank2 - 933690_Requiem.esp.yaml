@@ -5,8 +5,9 @@ VirtualMachineAdapter:
   - Name: REQ_TemperedEquipment
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Version_Active
-      Object: 2F38A0:Requiem.esp
+      Name: datastorage
+      Object: AD3B26:Requiem.esp
+      Alias: 14
     - MutagenObjectType: ScriptObjectListProperty
       Name: Keywords
       Objects:
@@ -20,12 +21,11 @@ VirtualMachineAdapter:
       - tier1_N_fall
       - tier1_N_fall
     - MutagenObjectType: ScriptObjectProperty
+      Name: Version_Active
+      Object: 2F38A0:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: Version_Installed
       Object: 2F389F:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: datastorage
-      Object: AD3B26:Requiem.esp
-      Alias: 14
 Name:
   TargetLanguage: English
   Value: 'REQ GM: Tempering - Heavy Armor Bandit - Rank 2'

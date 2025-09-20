@@ -8,9 +8,18 @@ VirtualMachineAdapter:
   Scripts:
   - Name: bwcNightingaleGhostSCRIPT
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bdefaultLoot
+      Data: True
     - MutagenObjectType: ScriptFloatProperty
       Name: GhostAlpha
       Data: 0.33
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ghostCorpse
+      Object: 0C674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ghostEffect
+      Object: 0C7908:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pDefaultAshPileGhost
       Object: 101048:Skyrim.esm
@@ -18,20 +27,11 @@ VirtualMachineAdapter:
       Name: pdefaultGhostLeveledList
       Object: 10F805:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ghostEffect
-      Object: 0C7908:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ghostCorpse
-      Object: 0C674B:Skyrim.esm
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pGhostDeathFXShader
       Object: 101727:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bdefaultLoot
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDisintegrationMainImmunityList
-      Object: 0F6534:Skyrim.esm
 Configuration:
   Flags:
   - DoesNotBleed

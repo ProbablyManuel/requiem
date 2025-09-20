@@ -5,36 +5,36 @@ VirtualMachineAdapter:
   - Name: FFR10QuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: pFFR10Quest
-      Object: 05331D:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: pFF10SaltCount
       Object: 0FE69D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFR10Quest
+      Object: 05331D:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pSalt
       Object: 03AD5E:Skyrim.esm
   - Name: QF_FreeformRiften10_0005331D
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: pFFR10QS
-      Object: 05331D:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FFRiften10Balimund
       Object: 05331D:Skyrim.esm
       Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pFFRiften10Firesalt
-      Object: 03AD5E:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FFRiften10PlayerAlias
       Object: 05331D:Skyrim.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: pFFRTQS
-      Object: 065BDF:Skyrim.esm
+      Name: pFFR10QS
+      Object: 05331D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFRiften10Firesalt
+      Object: 03AD5E:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pFFRiften10Gold
       Object: AD3749:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFFRTQS
+      Object: 065BDF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pThaneCount
       Object: 065BE0:Skyrim.esm
@@ -65,11 +65,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
   - Property:
       Name: ''
       Object: 05331D:Skyrim.esm
@@ -81,11 +81,11 @@ VirtualMachineAdapter:
         Name: pFFR10QS
         Object: 05331D:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: pSalt
-        Object: 03AD5E:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: pFFR10Quest
         Object: 05331D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: pSalt
+        Object: 03AD5E:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Stoking the Flames

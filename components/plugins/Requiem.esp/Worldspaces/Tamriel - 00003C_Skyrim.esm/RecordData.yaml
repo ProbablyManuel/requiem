@@ -53,7 +53,7 @@ TopCell:
     TeleportDestination:
       Door: 017532:Skyrim.esm
       Position: -1222.8816, -375.5119, -7.6293945E-06
-      Rotation: 0, -0, 0.008407601
+      Rotation: 0, 0, 0.008407601
     Lock:
       Level: Apprentice
       Unused: 0x000000
@@ -66,7 +66,7 @@ TopCell:
     LocationReference: 018A52:Skyrim.esm
     Placement:
       Position: -6144.9766, 63372.844, -11157.118
-      Rotation: 0, -0, 2.8543262
+      Rotation: 0, 0, 2.8543262
   - MutagenObjectType: PlacedObject
     FormKey: 03F709:Skyrim.esm
     MajorRecordFlagsRaw: 1024
@@ -83,7 +83,7 @@ TopCell:
     LocationReference: 0192C1:Skyrim.esm
     Placement:
       Position: 74516.914, -2683.541, -4416
-      Rotation: 0, -0, 4.6831903
+      Rotation: 0, 0, 4.6831903
   - MutagenObjectType: PlacedObject
     FormKey: 03F70F:Skyrim.esm
     MajorRecordFlagsRaw: 1024
@@ -131,7 +131,7 @@ TopCell:
     LocationReference: 019193:Skyrim.esm
     Placement:
       Position: 15264.642, 19298.22, -4587.1855
-      Rotation: 0, -0, 2.7832015
+      Rotation: 0, 0, 2.7832015
   - MutagenObjectType: PlacedObject
     FormKey: 07843F:Skyrim.esm
     MajorRecordFlagsRaw: 1024
@@ -158,7 +158,7 @@ TopCell:
     LocationReference: 013163:Skyrim.esm
     Placement:
       Position: 20521.947, -44961.676, -82.26425
-      Rotation: 0, -0, 2.516819
+      Rotation: 0, 0, 2.516819
   - MutagenObjectType: PlacedNpc
     FormKey: 080B20:Skyrim.esm
     MajorRecordFlagsRaw: 1024
@@ -177,12 +177,12 @@ TopCell:
       - Name: defaultOnResetTestAndDisable
         Properties:
         - MutagenObjectType: ScriptObjectProperty
-          Name: myQuest
-          Object: 01C3FB:Skyrim.esm
-        - MutagenObjectType: ScriptObjectProperty
           Name: myAlias
           Object: 0D8E56:Skyrim.esm
           Alias: 9
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myQuest
+          Object: 01C3FB:Skyrim.esm
         - MutagenObjectType: ScriptIntProperty
           Name: myStage
           Data: 255
@@ -203,7 +203,7 @@ TopCell:
     - 0130F7:Skyrim.esm
     Placement:
       Position: 42726.785, -17982.81, 2192.3674
-      Rotation: 0, -0, 4.712389
+      Rotation: 0, 0, 4.712389
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -236,7 +236,7 @@ TopCell:
     - Reference: 10F657:Skyrim.esm
     Placement:
       Position: 141469.12, 153694.77, -13681.819
-      Rotation: 0, -0, 6.0031886
+      Rotation: 0, 0, 6.0031886
     MajorFlags:
     - Persistent
     - InitiallyDisabled
@@ -254,7 +254,7 @@ TopCell:
     - Reference: 0FA350:Skyrim.esm
     Placement:
       Position: 158315.6, -65180.36, 9093.102
-      Rotation: 0, -0, 2.1300008
+      Rotation: 0, 0, 2.1300008
     MajorFlags:
     - StartsDead
     - Persistent
@@ -275,7 +275,7 @@ TopCell:
       Reference: 08F99A:Skyrim.esm
     Placement:
       Position: 178600.36, -88141.414, 11053.045
-      Rotation: 0, -0, 3.3831885
+      Rotation: 0, 0, 3.3831885
     MajorFlags:
     - StartsDead
     - Persistent
@@ -296,7 +296,7 @@ TopCell:
       Reference: 052ECC:Skyrim.esm
     Placement:
       Position: 168813.56, -66830.055, 7896.3345
-      Rotation: 0, -0, 0.83000237
+      Rotation: 0, 0, 0.83000237
     MajorFlags:
     - StartsDead
     - Persistent
@@ -317,7 +317,7 @@ TopCell:
       Reference: 052ECC:Skyrim.esm
     Placement:
       Position: 162074.19, -68321.29, 8278.016
-      Rotation: 0, -0, 0.5000005
+      Rotation: 0, 0, 0.5000005
     MajorFlags:
     - StartsDead
     - Persistent
@@ -337,7 +337,7 @@ TopCell:
     LocationReference: 018A50:Skyrim.esm
     Placement:
       Position: 30833.133, 103976.766, -13770.516
-      Rotation: 0, -0, 4.4000034
+      Rotation: 0, 0, 4.4000034
   - MutagenObjectType: PlacedObject
     FormKey: 09E12D:Skyrim.esm
     MajorRecordFlagsRaw: 1024
@@ -354,7 +354,7 @@ TopCell:
     LocationReference: 019171:Skyrim.esm
     Placement:
       Position: -145748.94, -23992.562, -840
-      Rotation: 0, -0, 3.100001
+      Rotation: 0, 0, 3.100001
   - MutagenObjectType: PlacedObject
     FormKey: 0ACB70:Skyrim.esm
     MajorRecordFlagsRaw: 1024
@@ -370,7 +370,7 @@ TopCell:
     LocationReference: 019263:Skyrim.esm
     Placement:
       Position: 135010.7, -112369.72, 11004.993
-      Rotation: 0, -0, 3.8168292
+      Rotation: 0, 0, 3.8168292
   - MutagenObjectType: PlacedObject
     FormKey: 0AEBFD:Skyrim.esm
     MajorRecordFlagsRaw: 1024
@@ -392,7 +392,7 @@ TopCell:
     TeleportDestination:
       Door: 0BCCB3:Skyrim.esm
       Position: 192, 544, 580
-      Rotation: 0, -0, -3.1415927
+      Rotation: 0, 0, -3.1415927
     Lock:
       Level: Apprentice
       Unused: 0x000000
@@ -434,7 +434,7 @@ TopCell:
     LocationReference: 0358B9:Skyrim.esm
     Placement:
       Position: -66148.15, 97511.23, -13891.649
-      Rotation: 0, -0, 5.700009
+      Rotation: 0, 0, 5.700009
   - MutagenObjectType: PlacedNpc
     FormKey: 0D9651:Skyrim.esm
     MajorRecordFlagsRaw: 1024
@@ -445,11 +445,11 @@ TopCell:
       - Name: dunPOISummoning
         Properties:
         - MutagenObjectType: ScriptObjectProperty
-          Name: Actor2
-          Object: 0D9653:Skyrim.esm
-        - MutagenObjectType: ScriptObjectProperty
           Name: Actor1
           Object: 0D9652:Skyrim.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Actor2
+          Object: 0D9653:Skyrim.esm
     Base: 099544:Skyrim.esm
     LevelModifier: Medium
     LinkedReferences:
@@ -481,7 +481,7 @@ TopCell:
     LocationReference: 0D567A:Skyrim.esm
     Placement:
       Position: 50704.547, -5143.493, -1397.9866
-      Rotation: 0, -0, 0.9499996
+      Rotation: 0, 0, 0.9499996
     MajorFlags:
     - StartsDead
     - Persistent
@@ -507,7 +507,7 @@ TopCell:
     LocationReference: 0D567A:Skyrim.esm
     Placement:
       Position: 51034.195, -5628.1377, -1413.399
-      Rotation: 0, -0, 5.5500097
+      Rotation: 0, 0, 5.5500097
     MajorFlags:
     - StartsDead
     - Persistent
@@ -539,12 +539,12 @@ TopCell:
       - Name: WETriggerScript
         Flags: Inherited
         Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: TriggerOnLoad
-          Data: True
         - MutagenObjectType: ScriptObjectProperty
           Name: myHoldLocation
           Object: 016772:Skyrim.esm
+        - MutagenObjectType: ScriptBoolProperty
+          Name: TriggerOnLoad
+          Data: True
     Base: 04A5EE:Skyrim.esm
     Primitive:
       Bounds: 1437.23, 1034.5459, 407.66016
@@ -571,7 +571,7 @@ TopCell:
       Reference: 045855:Skyrim.esm
     Placement:
       Position: 13968.92, -20118.947, -3770.796
-      Rotation: 0, -0, 0.6000016
+      Rotation: 0, 0, 0.6000016
     MajorFlags:
     - StartsDead
     - Persistent
@@ -589,7 +589,7 @@ TopCell:
     - Reference: 0FB39A:Skyrim.esm
     Placement:
       Position: 44093.906, 1981.5698, -4184
-      Rotation: 0, -0, 3.3500001
+      Rotation: 0, 0, 3.3500001
     MajorFlags:
     - Persistent
     - InitiallyDisabled
@@ -605,7 +605,7 @@ TopCell:
     - Reference: 0FB358:Skyrim.esm
     Placement:
       Position: -4660.767, 16563.416, -5971.467
-      Rotation: 0, -0, 5.983186
+      Rotation: 0, 0, 5.983186
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -619,12 +619,12 @@ TopCell:
       - Name: WETriggerScript
         Flags: Inherited
         Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: TriggerOnLoad
-          Data: True
         - MutagenObjectType: ScriptObjectProperty
           Name: myHoldLocation
           Object: 016772:Skyrim.esm
+        - MutagenObjectType: ScriptBoolProperty
+          Name: TriggerOnLoad
+          Data: True
     Base: 04A5EE:Skyrim.esm
     Primitive:
       Bounds: 1437.23, 1034.5459, 407.66016
@@ -661,7 +661,7 @@ TopCell:
     - Reference: 10F658:Skyrim.esm
     Placement:
       Position: 141269.38, 154164.53, -13694.448
-      Rotation: 0, -0, 6.2431912
+      Rotation: 0, 0, 6.2431912
   - MutagenObjectType: PlacedObject
     FormKey: 094B3D:Requiem.esp
     MajorRecordFlagsRaw: 1024
@@ -698,10 +698,10 @@ TopCell:
     TeleportDestination:
       Door: 4B94DF:Requiem.esp
       Position: 78.84166, -1852.6145, 58.235107
-      Rotation: 0, -0, -0.09999628
+      Rotation: 0, 0, -0.09999628
     Placement:
       Position: 64868.297, -53574.05, 24822.588
-      Rotation: 0, -0, 0.8000051
+      Rotation: 0, 0, 0.8000051
   - MutagenObjectType: PlacedObject
     FormKey: AD3840:Requiem.esp
     MajorRecordFlagsRaw: 1610613760

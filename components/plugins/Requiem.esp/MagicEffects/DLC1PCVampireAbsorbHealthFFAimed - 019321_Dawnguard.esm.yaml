@@ -9,16 +9,22 @@ VirtualMachineAdapter:
       Name: CasterVFX
       Object: 0ABEFC:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: TrapImod
-      Object: 0ABF17:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: TargetVFX
       Object: 014B8B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF17:Skyrim.esm
   - Name: DLC1DrainBloodPointScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1BloodPointsMsg
+      Object: 00A26D:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DLC1VampireBloodPoints
       Object: 00693B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampireMaxPerks
+      Object: 017E8E:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC1VampireNextPerk
       Object: 00693A:Dawnguard.esm
@@ -26,26 +32,20 @@ VirtualMachineAdapter:
       Name: DLC1VampirePerkEarned
       Object: 01571C:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1VampirePerkPoints
+      Object: 006938:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DLC1VampireTotalPerksEarned
       Object: 017E90:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1BloodPointsMsg
-      Object: 00A26D:Dawnguard.esm
+      Name: GhostAbilityNew
+      Object: 0D2056:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ProhibitedCreatures
       Object: 013ECD:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ReanimateSecondaryFFAimed
       Object: 0F52AB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GhostAbilityNew
-      Object: 0D2056:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1VampirePerkPoints
-      Object: 006938:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1VampireMaxPerks
-      Object: 017E8E:Dawnguard.esm
 Name:
   TargetLanguage: English
   Value: Absorb Health

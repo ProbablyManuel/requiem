@@ -4,17 +4,17 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magiceffectshaderapply
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fDuration
-      Data: 1
     - MutagenObjectType: ScriptBoolProperty
       Name: bUseDuration
       Data: True
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fDelay
     - MutagenObjectType: ScriptObjectProperty
       Name: EffectShaderFX
       Object: AD3927:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDuration
+      Data: 1
   - Name: REQ_AlcoholScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty

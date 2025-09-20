@@ -11,14 +11,14 @@ VirtualMachineAdapter:
     - Name: REQ_FoodPoisoning
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: MessageFoodPoisoning
-        Object: AE3725:Requiem.esp
+        Name: ContaminatedFood
+        Object: AE3726:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: FoodPoisoning
         Object: AE3724:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
-        Name: ContaminatedFood
-        Object: AE3726:Requiem.esp
+        Name: MessageFoodPoisoning
+        Object: AE3725:Requiem.esp
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Food Poisoning'

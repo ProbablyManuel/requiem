@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: dlc2MKMiraakRobeAbilityEffectSCRIPT
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: WaitTimer
-      Data: 5
     - MutagenObjectType: ScriptObjectProperty
       Name: tentacleExplosion
       Object: 039D1B:Dragonborn.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: WaitTimer
+      Data: 5
 Name:
   TargetLanguage: English
   Value: Tentacle Explosion

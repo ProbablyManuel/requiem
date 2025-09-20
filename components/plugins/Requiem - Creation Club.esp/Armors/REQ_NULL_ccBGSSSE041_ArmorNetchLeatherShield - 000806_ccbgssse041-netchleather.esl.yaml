@@ -7,12 +7,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 1010
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 00094A:ccbgssse041-netchleather.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 1010
 Name:
   TargetLanguage: English
   Value: Netch Leather Shield

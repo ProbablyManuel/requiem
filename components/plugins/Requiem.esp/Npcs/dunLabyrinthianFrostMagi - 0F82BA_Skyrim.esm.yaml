@@ -10,14 +10,14 @@ VirtualMachineAdapter:
   - Name: defaultGhostScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: pDefaultGhostCorpse
       Object: 0C674B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostHalfDamagePerk
-      Object: 0D205B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostFXShader
-      Object: 03B6CB:Skyrim.esm
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pDefaultGhostWeaponFlickerList
       Object: 0D2058:Skyrim.esm
@@ -25,14 +25,14 @@ VirtualMachineAdapter:
       Name: pGhostAbilityNew
       Object: 0D2056:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: pGhostResistsAbility
       Object: 0D2060:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pdefaultGhostDeathExplosion
-      Object: 0369CA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDefaultAshPileGhost
-      Object: 101048:Skyrim.esm
 ObjectBounds:
   First: -41, -25, 0
   Second: 41, 72, 86

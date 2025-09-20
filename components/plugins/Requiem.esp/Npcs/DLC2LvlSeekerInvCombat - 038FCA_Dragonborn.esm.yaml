@@ -14,33 +14,33 @@ VirtualMachineAdapter:
   - Name: DLC2HMDaedraDeathScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostDeathFXShader
-    - MutagenObjectType: ScriptObjectProperty
       Name: DLC2AbFXHMDaedraSpell
       Object: 023F82:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2HMDaedraAshPile
       Object: 023F83:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
   - Name: DLC2LvlSeekerMirrorScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2Seeker03RightHandSpell
-      Object: 028E85:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2EncSeeker02Mirror
-      Object: 02856B:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2Seeker02RightHandSpell
-      Object: 024FC7:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2Seeker01RightHandSpell
-      Object: 028E81:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2EncSeeker01Mirror
       Object: 028E82:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2EncSeeker02Mirror
+      Object: 02856B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DLC2EncSeeker03Mirror
       Object: 028E86:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2Seeker01RightHandSpell
+      Object: 028E81:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2Seeker02RightHandSpell
+      Object: 024FC7:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2Seeker03RightHandSpell
+      Object: 028E85:Dragonborn.esm
 Configuration:
   Level:
     MutagenObjectType: NpcLevel

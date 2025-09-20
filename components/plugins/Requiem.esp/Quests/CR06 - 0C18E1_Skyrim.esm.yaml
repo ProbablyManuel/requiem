@@ -5,31 +5,12 @@ VirtualMachineAdapter:
   - Name: CR06QuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: ParentQuest
-      Object: 04B2D9:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpawnChest
-      Object: 0C18E1:Skyrim.esm
-      Alias: 20
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MapMarker
-      Object: 0C18E1:Skyrim.esm
-      Alias: 16
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CRSkjor
-      Object: 025253:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Skjor
-      Object: 04B2D9:Skyrim.esm
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
       Name: BossChest
       Object: 0C18E1:Skyrim.esm
       Alias: 9
     - MutagenObjectType: ScriptObjectProperty
-      Name: Vilkas
-      Object: 04B2D9:Skyrim.esm
-      Alias: 2
+      Name: CRSkjor
+      Object: 025253:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: CRVilkas
       Object: 025254:Skyrim.esm
@@ -38,15 +19,30 @@ VirtualMachineAdapter:
       Object: 0C18E1:Skyrim.esm
       Alias: 19
     - MutagenObjectType: ScriptObjectProperty
+      Name: MapMarker
+      Object: 0C18E1:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ParentQuest
+      Object: 04B2D9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: QuestGiver
       Object: 0C18E1:Skyrim.esm
       Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Skjor
+      Object: 04B2D9:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpawnChest
+      Object: 0C18E1:Skyrim.esm
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Vilkas
+      Object: 04B2D9:Skyrim.esm
+      Alias: 2
   - Name: QF_CR06_000C18E1
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_LocationHold
-      Object: 0C18E1:Skyrim.esm
-      Alias: 17
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_BossChest
       Object: 0C18E1:Skyrim.esm
@@ -60,6 +56,14 @@ VirtualMachineAdapter:
       Object: 0C18E1:Skyrim.esm
       Alias: 4
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_LocationHold
+      Object: 0C18E1:Skyrim.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MapMarker
+      Object: 0C18E1:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_QuestGiver
       Object: 0C18E1:Skyrim.esm
       Alias: 0
@@ -67,10 +71,6 @@ VirtualMachineAdapter:
       Name: Alias_SpawnChest
       Object: 0C18E1:Skyrim.esm
       Alias: 20
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MapMarker
-      Object: 0C18E1:Skyrim.esm
-      Alias: 16
   FileName: QF_CR06_000C18E1
   Fragments:
   - Unknown2: 1

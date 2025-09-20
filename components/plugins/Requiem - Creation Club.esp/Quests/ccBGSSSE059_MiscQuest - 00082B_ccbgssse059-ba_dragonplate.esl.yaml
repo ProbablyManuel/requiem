@@ -5,23 +5,17 @@ VirtualMachineAdapter:
   - Name: SSE_QF_ccBGSSSE059_MiscQuest_0500082B
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorBootsHeavyTown
-      Object: 016749:Skyrim.esm
+      Name: ccBGSSSE059_ArmorBladesBoots
+      Object: 000800:ccbgssse059-ba_dragonplate.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorBootsHeavySpecial
-      Object: 1031C2:Skyrim.esm
+      Name: ccBGSSSE059_ArmorBladesCuirass
+      Object: 000801:ccbgssse059-ba_dragonplate.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: myQuest
-      Object: 000824:ccbgssse059-ba_dragonplate.esl
+      Name: ccBGSSSE059_ArmorBladesGauntlets
+      Object: 000802:ccbgssse059-ba_dragonplate.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorHelmetHeavy
-      Object: 016740:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavySpecial
-      Object: 1031C4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavy
-      Object: 0166F8:Skyrim.esm
+      Name: ccBGSSSE059_ArmorBladesHelmet
+      Object: 000803:ccbgssse059-ba_dragonplate.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: ccBGSSSE059_SubCharBandit06Boss
       Object: 00082C:ccbgssse059-ba_dragonplate.esl
@@ -29,50 +23,56 @@ VirtualMachineAdapter:
       Name: LCharBanditBoss
       Object: 03DF16:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE059_ArmorBladesGauntlets
-      Object: 000802:ccbgssse059-ba_dragonplate.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorGauntletsHeavy
-      Object: 01673D:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: LItemArmorBootsHeavy
       Object: 01673A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE059_ArmorBladesBoots
-      Object: 000800:ccbgssse059-ba_dragonplate.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorHelmetHeavyBlacksmith
-      Object: 09BC3A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorHelmetHeavyTown
-      Object: 016750:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorGauntletsHeavyBlacksmith
-      Object: 09BC38:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavyTown
-      Object: 016747:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE059_ArmorBladesCuirass
-      Object: 000801:ccbgssse059-ba_dragonplate.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorGauntletsHeavyTown
-      Object: 01674B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: LItemArmorBootsHeavyBlacksmith
       Object: 09BC34:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE059_ArmorBladesHelmet
-      Object: 000803:ccbgssse059-ba_dragonplate.esl
+      Name: LItemArmorBootsHeavySpecial
+      Object: 1031C2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorBootsHeavyTown
+      Object: 016749:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavy
+      Object: 0166F8:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: LItemArmorCuirassHeavyBlacksmith
       Object: 09BC36:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorHelmetHeavySpecial
-      Object: 1031C8:Skyrim.esm
+      Name: LItemArmorCuirassHeavySpecial
+      Object: 1031C4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavyTown
+      Object: 016747:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorGauntletsHeavy
+      Object: 01673D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorGauntletsHeavyBlacksmith
+      Object: 09BC38:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: LItemArmorGauntletsHeavySpecial
       Object: 1031C6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorGauntletsHeavyTown
+      Object: 01674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavy
+      Object: 016740:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavyBlacksmith
+      Object: 09BC3A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavySpecial
+      Object: 1031C8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorHelmetHeavyTown
+      Object: 016750:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 000824:ccbgssse059-ba_dragonplate.esl
   FileName: SSE_QF_ccBGSSSE059_MiscQuest_0500082B
   Fragments:
   - Stage: 20

@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   Scripts:
   - Name: VoiceCharmFactionScript
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bMakePlayerTeammate
     - MutagenObjectType: ScriptObjectProperty
       Name: CharmFaction
       Object: 0E0D58:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bMakePlayerTeammate
 Name:
   TargetLanguage: English
   Value: Faction - Kyne's Peace

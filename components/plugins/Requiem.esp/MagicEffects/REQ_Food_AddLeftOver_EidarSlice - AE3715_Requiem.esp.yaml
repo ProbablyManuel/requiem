@@ -4,15 +4,15 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_AddItemsOnEffectStart
     Properties:
+    - MutagenObjectType: ScriptIntListProperty
+      Name: Amount
+      Data:
+      - 6
     - MutagenObjectType: ScriptObjectListProperty
       Name: ItemsToAdd
       Objects:
       - Name: ''
         Object: 064B32:Skyrim.esm
-    - MutagenObjectType: ScriptIntListProperty
-      Name: Amount
-      Data:
-      - 6
 Name:
   TargetLanguage: English
   Value: Leftover Food - Eidar Slice

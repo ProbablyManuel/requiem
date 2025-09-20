@@ -10,6 +10,9 @@ VirtualMachineAdapter:
     Scripts:
     - Name: REQ_Disguise
       Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BaseDisguise
+        Object: 3CDF4F:Requiem.esp
       - MutagenObjectType: ScriptObjectListProperty
         Name: Closest
         Objects:
@@ -37,9 +40,6 @@ VirtualMachineAdapter:
         - Name: ''
           Object: 2F38A5:Requiem.esp
           Alias: 7
-      - MutagenObjectType: ScriptObjectProperty
-        Name: BaseDisguise
-        Object: 3CDF4F:Requiem.esp
       - MutagenObjectType: ScriptObjectListProperty
         Name: DisguiseBlown
         Objects:
@@ -55,38 +55,6 @@ VirtualMachineAdapter:
           Object: 3D2E8E:Requiem.esp
         - Name: ''
           Object: 3D2E8E:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: MasterDisguise
-        Object: 30EC6A:Requiem.esp
-      - MutagenObjectType: ScriptFloatProperty
-        Name: UpdateInterval
-        Data: 3
-      - MutagenObjectType: ScriptObjectListProperty
-        Name: FactionKeyword
-        Objects:
-        - Name: ''
-          Object: 3D06EE:Requiem.esp
-        - Name: ''
-          Object: 3D06F2:Requiem.esp
-        - Name: ''
-          Object: 3D06EF:Requiem.esp
-        - Name: ''
-          Object: 3D06F1:Requiem.esp
-        - Name: ''
-          Object: 3D06F0:Requiem.esp
-        - Name: ''
-          Object: 3D06EC:Requiem.esp
-      - MutagenObjectType: ScriptObjectListProperty
-        Name: RequiredRace
-        Objects:
-        - Name: ''
-          Object: 30758A:Requiem.esp
-        - Name: ''
-        - Name: ''
-        - Name: ''
-        - Name: ''
-          Object: 307589:Requiem.esp
-        - Name: ''
       - MutagenObjectType: ScriptObjectListProperty
         Name: DisguiseStart
         Objects:
@@ -123,9 +91,41 @@ VirtualMachineAdapter:
         - Name: ''
           Object: 2F38A4:Requiem.esp
           Alias: 6
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: FactionKeyword
+        Objects:
+        - Name: ''
+          Object: 3D06EE:Requiem.esp
+        - Name: ''
+          Object: 3D06F2:Requiem.esp
+        - Name: ''
+          Object: 3D06EF:Requiem.esp
+        - Name: ''
+          Object: 3D06F1:Requiem.esp
+        - Name: ''
+          Object: 3D06F0:Requiem.esp
+        - Name: ''
+          Object: 3D06EC:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: LOSTracker
         Object: 2F38A5:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MasterDisguise
+        Object: 30EC6A:Requiem.esp
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: RequiredRace
+        Objects:
+        - Name: ''
+          Object: 30758A:Requiem.esp
+        - Name: ''
+        - Name: ''
+        - Name: ''
+        - Name: ''
+          Object: 307589:Requiem.esp
+        - Name: ''
+      - MutagenObjectType: ScriptFloatProperty
+        Name: UpdateInterval
+        Data: 3
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Disguise'

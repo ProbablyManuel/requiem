@@ -135,18 +135,18 @@ Persistent:
       - MutagenObjectType: ScriptBoolProperty
         Name: disableWhenDone
         Data: True
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 00088C:ccedhsse003-redguard.esl
       - MutagenObjectType: ScriptBoolProperty
         Name: doOnce
         Data: True
-      - MutagenObjectType: ScriptIntProperty
-        Name: stage
-        Data: 55
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
       - MutagenObjectType: ScriptIntProperty
         Name: prereqStageOPT
         Data: 50
+      - MutagenObjectType: ScriptIntProperty
+        Name: stage
+        Data: 55
   Base: 033F50:Skyrim.esm
   Primitive:
     Bounds: 3216.064, 1450.6472, 1721.1543

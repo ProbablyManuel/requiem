@@ -4,7 +4,7 @@ Type: Package
 PreferredSpeed: Run
 Unknown: 81
 ScheduleMonth: -1
-ScheduleDayOfWeek: 255
+ScheduleDayOfWeek: Any
 ScheduleHour: -1
 ScheduleMinute: -1
 Unknown3: 0x000000
@@ -50,56 +50,6 @@ Data:
     Target:
       MutagenObjectType: PackageTargetSpecificReference
       Reference: 00D926:Dawnguard.esm
-- Key: 28
-  Value:
-    MutagenObjectType: PackageDataTarget
-    Type: SingleRef
-    Target:
-      MutagenObjectType: PackageTargetSpecificReference
-      Reference: 00D941:Dawnguard.esm
-- Key: 30
-  Value:
-    MutagenObjectType: PackageDataInt
-    Data: 800
-- Key: 37
-  Value:
-    MutagenObjectType: PackageDataTarget
-    Type: SingleRef
-    Target:
-      MutagenObjectType: PackageTargetSpecificReference
-      Reference: 00D941:Dawnguard.esm
-- Key: 39
-  Value:
-    MutagenObjectType: PackageDataTarget
-    Type: SingleRef
-    Target:
-      MutagenObjectType: PackageTargetSpecificReference
-      Reference: 00D941:Dawnguard.esm
-- Key: 38
-  Value:
-    MutagenObjectType: PackageDataInt
-    Data: 800
-- Key: 40
-  Value:
-    MutagenObjectType: PackageDataTarget
-    Type: SingleRef
-    Target:
-      MutagenObjectType: PackageTargetSpecificReference
-      Reference: 00D942:Dawnguard.esm
-- Key: 41
-  Value:
-    MutagenObjectType: PackageDataTarget
-    Type: SingleRef
-    Target:
-      MutagenObjectType: PackageTargetSpecificReference
-      Reference: 00D941:Dawnguard.esm
-- Key: 42
-  Value:
-    MutagenObjectType: PackageDataInt
-    Data: 800
-- Key: 34
-  Value:
-    MutagenObjectType: PackageDataBool
 - Key: 5
   Value:
     MutagenObjectType: PackageDataBool
@@ -107,9 +57,6 @@ Data:
   Value:
     MutagenObjectType: PackageDataBool
     Data: True
-- Key: 32
-  Value:
-    MutagenObjectType: PackageDataBool
 - Key: 7
   Value:
     MutagenObjectType: PackageDataBool
@@ -164,6 +111,23 @@ Data:
 - Key: 25
   Value:
     MutagenObjectType: PackageDataBool
+- Key: 28
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D941:Dawnguard.esm
+- Key: 30
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 800
+- Key: 32
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 34
+  Value:
+    MutagenObjectType: PackageDataBool
 - Key: 35
   Value:
     MutagenObjectType: PackageDataBool
@@ -171,6 +135,42 @@ Data:
   Value:
     MutagenObjectType: PackageDataBool
     Data: True
+- Key: 37
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D941:Dawnguard.esm
+- Key: 38
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 800
+- Key: 39
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D941:Dawnguard.esm
+- Key: 40
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D942:Dawnguard.esm
+- Key: 41
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 00D941:Dawnguard.esm
+- Key: 42
+  Value:
+    MutagenObjectType: PackageDataInt
+    Data: 800
 XnamMarker: 0x2B
 OnBegin:
   Topics:

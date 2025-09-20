@@ -4,12 +4,33 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_Magic_Spellchoices
     Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: Dummies
+      Objects:
+      - Name: ''
+        Object: 5DAA4A:Requiem.esp
+      - Name: ''
+        Object: 5DAA4B:Requiem.esp
+      - Name: ''
+        Object: 5DAA4C:Requiem.esp
+      - Name: ''
+        Object: 5DAA4D:Requiem.esp
+      - Name: ''
+        Object: 5DAA4E:Requiem.esp
+      - Name: ''
+        Object: 5DAA4F:Requiem.esp
+      - Name: ''
+        Object: 5DAA50:Requiem.esp
+      - Name: ''
+        Object: 63DAA1:Requiem.esp
+      - Name: ''
+        Object: 63DAA2:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: Empty
       Object: 5E97FE:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Yes
-      Object: 5DAA5B:Requiem.esp
+      Name: HIDE
+      Object: 5E48C6:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: Menu
       Object: 5DAA48:Requiem.esp
@@ -43,6 +64,12 @@ VirtualMachineAdapter:
       - Name: ''
         Object: 5DAA49:Requiem.esp
         Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: No
+      Object: 5DAA53:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spellcount
+      Object: 5E48C7:Requiem.esp
     - MutagenObjectType: ScriptObjectListProperty
       Name: Toggles
       Objects:
@@ -74,90 +101,98 @@ VirtualMachineAdapter:
         Object: 5DAA49:Requiem.esp
         Alias: 16
     - MutagenObjectType: ScriptObjectProperty
-      Name: Spellcount
-      Object: 5E48C7:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HIDE
-      Object: 5E48C6:Requiem.esp
-    - MutagenObjectType: ScriptObjectListProperty
-      Name: Dummies
-      Objects:
-      - Name: ''
-        Object: 5DAA4A:Requiem.esp
-      - Name: ''
-        Object: 5DAA4B:Requiem.esp
-      - Name: ''
-        Object: 5DAA4C:Requiem.esp
-      - Name: ''
-        Object: 5DAA4D:Requiem.esp
-      - Name: ''
-        Object: 5DAA4E:Requiem.esp
-      - Name: ''
-        Object: 5DAA4F:Requiem.esp
-      - Name: ''
-        Object: 5DAA50:Requiem.esp
-      - Name: ''
-        Object: 63DAA1:Requiem.esp
-      - Name: ''
-        Object: 63DAA2:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: No
-      Object: 5DAA53:Requiem.esp
+      Name: Yes
+      Object: 5DAA5B:Requiem.esp
   - Name: REQ_QF_Spellchoices
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Name8
+      Name: Alias_Name1
       Object: 5DAA49:Requiem.esp
-      Alias: 19
+      Alias: 3
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle6
+      Name: Alias_Name2
       Object: 5DAA49:Requiem.esp
-      Alias: 7
+      Alias: 4
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Name9
+      Name: Alias_Name3
       Object: 5DAA49:Requiem.esp
-      Alias: 18
+      Alias: 10
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle5
+      Name: Alias_Name4
       Object: 5DAA49:Requiem.esp
-      Alias: 8
-    - MutagenObjectType: ScriptObjectListProperty
-      Name: spelllist_illusion
-      Objects:
-      - Name: ''
-        Object: 5DF990:Requiem.esp
-      - Name: ''
-        Object: 5E97FF:Requiem.esp
-      - Name: ''
-        Object: 5E9800:Requiem.esp
-      - Name: ''
-        Object: 5E9801:Requiem.esp
-      - Name: ''
-        Object: 5E9802:Requiem.esp
+      Alias: 14
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle3
+      Name: Alias_Name5
       Object: 5DAA49:Requiem.esp
-      Alias: 5
-    - MutagenObjectType: ScriptObjectListProperty
-      Name: spelllist_restoration
-      Objects:
-      - Name: ''
-        Object: 5EBFA7:Requiem.esp
-      - Name: ''
-        Object: 5EBFA8:Requiem.esp
-      - Name: ''
-        Object: 5EBFA9:Requiem.esp
-      - Name: ''
-        Object: 5EBFAA:Requiem.esp
-      - Name: ''
-        Object: 5EBFAB:Requiem.esp
+      Alias: 13
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Name6
       Object: 5DAA49:Requiem.esp
       Alias: 12
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Name7
+      Object: 5DAA49:Requiem.esp
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Name8
+      Object: 5DAA49:Requiem.esp
+      Alias: 19
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Name9
+      Object: 5DAA49:Requiem.esp
+      Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle1
+      Object: 5DAA49:Requiem.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle2
+      Object: 5DAA49:Requiem.esp
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle3
+      Object: 5DAA49:Requiem.esp
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle4
+      Object: 5DAA49:Requiem.esp
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle5
+      Object: 5DAA49:Requiem.esp
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle6
+      Object: 5DAA49:Requiem.esp
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle7
+      Object: 5DAA49:Requiem.esp
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle8
+      Object: 5DAA49:Requiem.esp
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Toggle9
+      Object: 5DAA49:Requiem.esp
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
       Name: REQ_VersionInstalled
       Object: 2F38A0:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: spelllist_alteration
+      Objects:
+      - Name: ''
+        Object: 5EBFAC:Requiem.esp
+      - Name: ''
+        Object: 5EBFAD:Requiem.esp
+      - Name: ''
+        Object: 5EBFAE:Requiem.esp
+      - Name: ''
+        Object: 5EBFAF:Requiem.esp
+      - Name: ''
+        Object: 5EBFB0:Requiem.esp
     - MutagenObjectType: ScriptObjectListProperty
       Name: spelllist_conjuration
       Objects:
@@ -171,10 +206,6 @@ VirtualMachineAdapter:
         Object: 5EBFA0:Requiem.esp
       - Name: ''
         Object: 5EBFA1:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Name7
-      Object: 5DAA49:Requiem.esp
-      Alias: 11
     - MutagenObjectType: ScriptObjectListProperty
       Name: spelllist_destruction
       Objects:
@@ -189,62 +220,31 @@ VirtualMachineAdapter:
       - Name: ''
         Object: 5EBFA6:Requiem.esp
     - MutagenObjectType: ScriptObjectListProperty
-      Name: spelllist_alteration
+      Name: spelllist_illusion
       Objects:
       - Name: ''
-        Object: 5EBFAC:Requiem.esp
+        Object: 5DF990:Requiem.esp
       - Name: ''
-        Object: 5EBFAD:Requiem.esp
+        Object: 5E97FF:Requiem.esp
       - Name: ''
-        Object: 5EBFAE:Requiem.esp
+        Object: 5E9800:Requiem.esp
       - Name: ''
-        Object: 5EBFAF:Requiem.esp
+        Object: 5E9801:Requiem.esp
       - Name: ''
-        Object: 5EBFB0:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle1
-      Object: 5DAA49:Requiem.esp
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle7
-      Object: 5DAA49:Requiem.esp
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle4
-      Object: 5DAA49:Requiem.esp
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle8
-      Object: 5DAA49:Requiem.esp
-      Alias: 17
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Name4
-      Object: 5DAA49:Requiem.esp
-      Alias: 14
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Name5
-      Object: 5DAA49:Requiem.esp
-      Alias: 13
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Name1
-      Object: 5DAA49:Requiem.esp
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Name3
-      Object: 5DAA49:Requiem.esp
-      Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Name2
-      Object: 5DAA49:Requiem.esp
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle9
-      Object: 5DAA49:Requiem.esp
-      Alias: 16
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Toggle2
-      Object: 5DAA49:Requiem.esp
-      Alias: 2
+        Object: 5E9802:Requiem.esp
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: spelllist_restoration
+      Objects:
+      - Name: ''
+        Object: 5EBFA7:Requiem.esp
+      - Name: ''
+        Object: 5EBFA8:Requiem.esp
+      - Name: ''
+        Object: 5EBFA9:Requiem.esp
+      - Name: ''
+        Object: 5EBFAA:Requiem.esp
+      - Name: ''
+        Object: 5EBFAB:Requiem.esp
   FileName: REQ_QF_Spellchoices
   Fragments:
   - Stage: 260

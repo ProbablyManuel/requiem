@@ -5,12 +5,12 @@ VirtualMachineAdapter:
   - Name: PF_REQ_Package_Follower_PickLock
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: FollowerControl
-      Object: 82F3AF:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: datastorage
       Object: AD3B22:Requiem.esp
       Alias: 18
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerControl
+      Object: 82F3AF:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: unlockingTarget
       Object: 82F3AF:Requiem.esp
@@ -27,7 +27,7 @@ Type: Package
 PreferredSpeed: Run
 Unknown: 101
 ScheduleMonth: -1
-ScheduleDayOfWeek: 255
+ScheduleDayOfWeek: Any
 ScheduleHour: -1
 ScheduleMinute: -1
 Unknown3: 0x000000

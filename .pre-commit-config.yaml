@@ -2,14 +2,12 @@ repos:
   - repo: local
     hooks:
       - id: spriggit-requiem
-        name: 'Spriggit: Requiem'
-        entry: Spriggit.CLI convert-from-plugin --InputPath "Requiem.esp" --OutputPath "components/plugins/Requiem.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
+        name: "Spriggit: Requiem"
+        entry: '"C:\Program Files\Git\bin\bash.exe" components/plugins/spriggit.sh'
         language: system
         files: ^Requiem\.esp$
-        pass_filenames: false
       - id: spriggit-requiem-creation-club
-        name: 'Spriggit: Requiem - Creation Club'
-        entry: Spriggit.CLI convert-from-plugin --InputPath "Requiem - Creation Club.esp" --OutputPath "components/plugins/Requiem - Creation Club.esp" --GameRelease SkyrimSE --PackageName Spriggit.Yaml
+        name: "Spriggit: Requiem - Creation Club"
+        entry: '"C:\Program Files\Git\bin\bash.exe" components/plugins/spriggit.sh'
         language: system
         files: ^Requiem - Creation Club\.esp$
-        pass_filenames: false

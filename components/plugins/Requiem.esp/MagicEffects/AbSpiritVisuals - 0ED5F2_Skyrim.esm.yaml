@@ -4,22 +4,22 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magiceffectshadersonendscript
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fDuration
-      Data: 0.1
     - MutagenObjectType: ScriptObjectProperty
       Name: EffectShaderFX01
       Object: 0EA8FF:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDuration
+      Data: 0.1
   - Name: magicSetActorAlphaScript
     Properties:
     - MutagenObjectType: ScriptFloatProperty
       Name: AlphaValue
       Data: 0.85
     - MutagenObjectType: ScriptBoolProperty
-      Name: FadeToAlpha
+      Name: DontFadeBack
       Data: True
     - MutagenObjectType: ScriptBoolProperty
-      Name: DontFadeBack
+      Name: FadeToAlpha
       Data: True
 Name:
   TargetLanguage: English

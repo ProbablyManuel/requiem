@@ -5,13 +5,25 @@ VirtualMachineAdapter:
   - Name: REQ_HogithumQuest
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DarklightTowerFragment
+      Object: AD383D:Requiem.esp
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FrostmereCryptFragment
+      Object: AD383D:Requiem.esp
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Giraud
       Object: AD383D:Requiem.esp
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DarklightTowerFragment
+      Name: Alias_MorthalSwampFragment
       Object: AD383D:Requiem.esp
-      Alias: 4
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PelagiusWingFragment
+      Object: AD383D:Requiem.esp
+      Alias: 6
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Player
       Object: AD383D:Requiem.esp
@@ -25,21 +37,9 @@ VirtualMachineAdapter:
       Object: AD383D:Requiem.esp
       Alias: 3
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PelagiusWingFragment
-      Object: AD383D:Requiem.esp
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_WolfskullCaveFragment
       Object: AD383D:Requiem.esp
       Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MorthalSwampFragment
-      Object: AD383D:Requiem.esp
-      Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FrostmereCryptFragment
-      Object: AD383D:Requiem.esp
-      Alias: 2
   FileName: REQ_HogithumQuest
   Fragments:
   - Stage: 110

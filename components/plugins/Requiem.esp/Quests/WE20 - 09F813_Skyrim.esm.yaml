@@ -6,13 +6,29 @@ VirtualMachineAdapter:
   - Name: QF_WE20_0009F813
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldLocation
+      Name: Alias_Bandit1
       Object: 09F813:Skyrim.esm
-      Alias: 4
+      Alias: 70
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Bandit2
       Object: 09F813:Skyrim.esm
       Alias: 72
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Bandit3
+      Object: 09F813:Skyrim.esm
+      Alias: 75
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 09F813:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 09F813:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 09F813:Skyrim.esm
+      Alias: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_myHoldSons
       Object: 09F813:Skyrim.esm
@@ -22,22 +38,6 @@ VirtualMachineAdapter:
       Object: 09F813:Skyrim.esm
       Alias: 9
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Bandit1
-      Object: 09F813:Skyrim.esm
-      Alias: 70
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldImperial
-      Object: 09F813:Skyrim.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Bandit3
-      Object: 09F813:Skyrim.esm
-      Alias: 75
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_WarlockSummoner
-      Object: 09F813:Skyrim.esm
-      Alias: 73
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_TravelMarker2
       Object: 09F813:Skyrim.esm
       Alias: 10
@@ -46,9 +46,9 @@ VirtualMachineAdapter:
       Object: 09F813:Skyrim.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldContested
+      Name: Alias_WarlockSummoner
       Object: 09F813:Skyrim.esm
-      Alias: 6
+      Alias: 73
   - Name: WEScript
     Properties:
     - MutagenObjectType: ScriptBoolProperty

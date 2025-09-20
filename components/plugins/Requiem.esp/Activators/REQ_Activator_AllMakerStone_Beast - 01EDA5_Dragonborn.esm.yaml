@@ -8,8 +8,8 @@ VirtualMachineAdapter:
       Name: DLC2StandingStoneCorruptedFXS
       Object: 02ADEE:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: RingTop
-      Object: 027E6F:Dragonborn.esm
+      Name: DLC2StandingStoneCracksFXS
+      Object: 02ADED:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2StandingStoneFXLink
       Object: 031C3C:Dragonborn.esm
@@ -20,34 +20,43 @@ VirtualMachineAdapter:
       Name: OBJSTandingStoneExplode2D
       Object: 03C0D8:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2StandingStoneCracksFXS
-      Object: 02ADED:Dragonborn.esm
+      Name: RingTop
+      Object: 027E6F:Dragonborn.esm
   - Name: dlc2standingstonescript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2Pillar
       Object: 01C4E4:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2VoicePushProjectile03
-      Object: 02174F:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FadeToBlackHoldImod
-      Object: 0F756E:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2SpellLearned
-      Object: 01DFA4:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: DLC2PillarBlockingTopic
       Object: 01DE98:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2StoneActivateSound
-      Object: 03D594:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2PillarFollowerScene
       Object: 03D04C:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2PillarMiraakVoice
+      Object: 03544B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2SpellLearned
+      Object: 01DFA4:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StandingStoneNotReadyMsg
+      Object: 03C338:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2StoneActivateSound
+      Object: 03D594:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DLC2VoicePushProjectile01
       Object: 01F139:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2VoicePushProjectile03
+      Object: 02174F:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlackBackImod
+      Object: 0F756F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FadeToBlackHoldImod
+      Object: 0F756E:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: FadeToBlackImod
       Object: 0F756D:Skyrim.esm
@@ -56,23 +65,14 @@ VirtualMachineAdapter:
       Object: 01C4E4:Dragonborn.esm
       Alias: 15
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2PillarMiraakVoice
-      Object: 03544B:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FadeToBlackBackImod
-      Object: 0F756F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2StandingStoneNotReadyMsg
-      Object: 03C338:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: GameDaysPassed
       Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: MAGStandingStoneActivateB
-      Object: 03D3C6:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: MAGStandingStoneActivateA
       Object: 03D3C5:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGStandingStoneActivateB
+      Object: 03D3C6:Dragonborn.esm
 ObjectBounds:
   First: -86, -78, -85
   Second: 82, 106, 629

@@ -11,17 +11,17 @@ VirtualMachineAdapter:
     - Name: Req_VampireBloodHarvesting
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: bloodPotion
-        Object: 018EF3:Dawnguard.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: DroppedBloodSpell
-        Object: 559DA1:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
         Name: BloodConserver
         Object: 58672A:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
+        Name: bloodPotion
+        Object: 018EF3:Dawnguard.esm
+      - MutagenObjectType: ScriptObjectProperty
         Name: DroppedBlood
         Object: 318ADC:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: DroppedBloodSpell
+        Object: 559DA1:Requiem.esp
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Vampire Blood Harvesting'

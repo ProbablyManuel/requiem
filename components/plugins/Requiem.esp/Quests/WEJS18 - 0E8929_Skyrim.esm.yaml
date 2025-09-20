@@ -5,9 +5,57 @@ VirtualMachineAdapter:
   - Name: QF_WEJS18_000E8929
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Scene_Marker3
+      Name: Alias_BurntCorpse
       Object: 0E8929:Skyrim.esm
-      Alias: 60
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BurntCorpse2
+      Object: 0E8929:Skyrim.esm
+      Alias: 62
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BurntCorpse3
+      Object: 0E8929:Skyrim.esm
+      Alias: 63
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Cart
+      Object: 0E8929:Skyrim.esm
+      Alias: 68
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_CenterMarker
+      Object: 0E8929:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dog
+      Object: 0E8929:Skyrim.esm
+      Alias: 80
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dragon
+      Object: 0E8929:Skyrim.esm
+      Alias: 79
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Fire
+      Object: 0E8929:Skyrim.esm
+      Alias: 69
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Fire2
+      Object: 0E8929:Skyrim.esm
+      Alias: 65
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Fire3
+      Object: 0E8929:Skyrim.esm
+      Alias: 66
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 0E8929:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 0E8929:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 0E8929:Skyrim.esm
+      Alias: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_myHoldSons
       Object: 0E8929:Skyrim.esm
@@ -17,81 +65,33 @@ VirtualMachineAdapter:
       Object: 0E8929:Skyrim.esm
       Alias: 53
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Dragon
+      Name: Alias_Scene_Marker2
       Object: 0E8929:Skyrim.esm
-      Alias: 79
+      Alias: 59
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldImperial
+      Name: Alias_Scene_Marker3
       Object: 0E8929:Skyrim.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BurntCorpse
-      Object: 0E8929:Skyrim.esm
-      Alias: 39
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldContested
-      Object: 0E8929:Skyrim.esm
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Dog
-      Object: 0E8929:Skyrim.esm
-      Alias: 80
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AnimalFollower
-      Object: 0750BA:Skyrim.esm
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CenterMarker
-      Object: 0E8929:Skyrim.esm
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldLocation
-      Object: 0E8929:Skyrim.esm
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BurntCorpse3
-      Object: 0E8929:Skyrim.esm
-      Alias: 63
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Fire2
-      Object: 0E8929:Skyrim.esm
-      Alias: 65
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BurntCorpse2
-      Object: 0E8929:Skyrim.esm
-      Alias: 62
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Smoke3
-      Object: 0E8929:Skyrim.esm
-      Alias: 71
+      Alias: 60
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Smoke
       Object: 0E8929:Skyrim.esm
       Alias: 64
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Scene_Marker2
-      Object: 0E8929:Skyrim.esm
-      Alias: 59
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Fire
-      Object: 0E8929:Skyrim.esm
-      Alias: 69
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Smoke2
       Object: 0E8929:Skyrim.esm
       Alias: 70
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Smoke3
+      Object: 0E8929:Skyrim.esm
+      Alias: 71
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Trigger
       Object: 0E8929:Skyrim.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Cart
-      Object: 0E8929:Skyrim.esm
-      Alias: 68
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Fire3
-      Object: 0E8929:Skyrim.esm
-      Alias: 66
+      Name: AnimalFollower
+      Object: 0750BA:Skyrim.esm
+      Alias: 1
   - Name: WEScript
     Properties:
     - MutagenObjectType: ScriptBoolProperty
@@ -125,11 +125,11 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+      - MutagenObjectType: ScriptBoolProperty
         Name: KillOnLoad
       - MutagenObjectType: ScriptBoolProperty
         Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
-        Name: DisableOnUnload
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -138,11 +138,11 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+      - MutagenObjectType: ScriptBoolProperty
         Name: KillOnLoad
       - MutagenObjectType: ScriptBoolProperty
         Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
-        Name: DisableOnUnload
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -151,12 +151,12 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+      - MutagenObjectType: ScriptBoolProperty
         Name: KillOnLoad
         Data: True
       - MutagenObjectType: ScriptBoolProperty
         Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
-        Name: DisableOnUnload
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -165,12 +165,12 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
+      - MutagenObjectType: ScriptBoolProperty
         Name: KillOnLoad
         Data: True
       - MutagenObjectType: ScriptBoolProperty
         Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
-        Name: DisableOnUnload
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -179,9 +179,9 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
         Name: DisableOnUnload
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -190,10 +190,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
         Name: DisableOnUnload
         Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -202,10 +202,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
         Name: DisableOnUnload
         Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -214,10 +214,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
         Name: DisableOnUnload
         Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -226,10 +226,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
         Name: DisableOnUnload
         Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -238,10 +238,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
         Name: DisableOnUnload
         Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
   - Property:
       Name: ''
       Object: 0E8929:Skyrim.esm
@@ -250,10 +250,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
-      - MutagenObjectType: ScriptBoolProperty
         Name: DisableOnUnload
         Data: True
+      - MutagenObjectType: ScriptBoolProperty
+        Name: RegisterLoadingAndUnloading
 Name:
   TargetLanguage: English
   Value: Corpses in the aftermath of a dragon attack, Dog left behind

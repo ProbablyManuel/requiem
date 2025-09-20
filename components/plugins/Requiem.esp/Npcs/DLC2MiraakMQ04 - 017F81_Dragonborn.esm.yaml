@@ -9,25 +9,25 @@ VirtualMachineAdapter:
   - Name: dlc2miraakscript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2MiraakTeleportReturnFXS
-      Object: 031B11:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2MiraakTeleportReturnExp
-      Object: 031AC3:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2MiraakTeleportStartFXS
-      Object: 031D71:Dragonborn.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: AppearOnLoad
-    - MutagenObjectType: ScriptObjectProperty
       Name: AppearAtRef
       Object: 02072D:Dragonborn.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: AppearOnLoad
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2MiraakTeleportExp
       Object: 030CEA:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2MiraakTeleportIMODStatic
       Object: 0317D8:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MiraakTeleportReturnExp
+      Object: 031AC3:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MiraakTeleportReturnFXS
+      Object: 031B11:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MiraakTeleportStartFXS
+      Object: 031D71:Dragonborn.esm
 Configuration:
   Flags:
   - Unique

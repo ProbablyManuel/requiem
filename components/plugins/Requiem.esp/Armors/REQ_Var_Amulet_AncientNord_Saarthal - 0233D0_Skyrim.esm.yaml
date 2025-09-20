@@ -8,8 +8,8 @@ VirtualMachineAdapter:
   - Name: MG02AmuletScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: pMG02QuestScript
-      Object: 01F252:Skyrim.esm
+      Name: AmuletSpell
+      Object: 06DE0E:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: MG02AmuletResonanceRef
       Object: 106BBA:Skyrim.esm
@@ -17,12 +17,12 @@ VirtualMachineAdapter:
       Name: MG02TolfdirAmuletScene
       Object: 0C1E7C:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: AmuletSpell
-      Object: 06DE0E:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: MG02WallAlias
       Object: 01F252:Skyrim.esm
       Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pMG02QuestScript
+      Object: 01F252:Skyrim.esm
 ObjectBounds:
   First: -2, -11, 0
   Second: 3, 7, 1

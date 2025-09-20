@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 90
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 000823:ccbgssse058-ba_steel.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 90
 Name:
   TargetLanguage: English
   Value: Steel Soldier Armor

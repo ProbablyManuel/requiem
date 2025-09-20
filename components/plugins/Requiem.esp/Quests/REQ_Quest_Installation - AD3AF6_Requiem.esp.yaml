@@ -13,12 +13,6 @@ VirtualMachineAdapter:
       Name: coreScripts
       Object: 2F389E:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: VersionSavegame
-      Object: 2F38A0:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: validator
-      Object: 2F389E:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: NewGameCheck
       Object: 00097F:Update.esm
     - MutagenObjectType: ScriptObjectListProperty
@@ -34,6 +28,12 @@ VirtualMachineAdapter:
         Object: 04DEEB:Skyrim.esm
       - Name: ''
         Object: 02DD2A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: validator
+      Object: 2F389E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VersionSavegame
+      Object: 2F38A0:Requiem.esp
   FileName: QF_REQ_Quest_Installation
   Fragments:
   - Unknown2: 1

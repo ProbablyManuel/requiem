@@ -5,48 +5,48 @@ VirtualMachineAdapter:
   - Name: FFRiftenThaneQuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: pThaneQLDone
-      Object: 0FE1DA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: pFFRiftenThaneQuest
       Object: 065BDF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pThaneCount
       Object: 065BE0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pThaneQLDone
+      Object: 0FE1DA:Skyrim.esm
   - Name: QF_FreeformRiftenThane_00065BDF
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiftenThaneMavenJarlAlias
-      Object: 065BDF:Skyrim.esm
-      Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pFavorJarlsMakeFriends
-      Object: 087E24:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiftenThaneJarlWeaponAlias
-      Object: 065BDF:Skyrim.esm
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiftenThaneHemmingStewardAlias
-      Object: 065BDF:Skyrim.esm
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pJobJarlFaction
-      Object: 050920:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiftenThaneLailaJarlAlias
-      Object: 065BDF:Skyrim.esm
-      Alias: 2
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GuestBedroom
-      Object: 0C7F1A:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FFRiftenThaneAnurielStewardAlias
       Object: 065BDF:Skyrim.esm
       Alias: 3
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneHemmingStewardAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneJarlWeaponAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneLailaJarlAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiftenThaneMavenJarlAlias
+      Object: 065BDF:Skyrim.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GuestBedroom
+      Object: 0C7F1A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: HouseCarl
       Object: 0A2C93:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pFavorJarlsMakeFriends
+      Object: 087E24:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pJobJarlFaction
+      Object: 050920:Skyrim.esm
   FileName: QF_FreeformRiftenThane_00065BDF
   Fragments:
   - Stage: 20

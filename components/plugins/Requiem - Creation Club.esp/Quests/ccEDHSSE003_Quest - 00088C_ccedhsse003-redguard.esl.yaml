@@ -5,168 +5,168 @@ VirtualMachineAdapter:
   - Name: ccEDHSSE003_CourierScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: NoteGiver
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: NoteFormBrawl
-      Object: 000815:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
       Name: CourierScript
       Object: 039F82:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DidBrawl
       Object: 000801:ccedhsse003-redguard.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: NoteFormPersuasion
-      Object: 000814:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
       Name: Note
       Object: 00088C:ccedhsse003-redguard.esl
       Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NoteFormBrawl
+      Object: 000815:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NoteFormPersuasion
+      Object: 000814:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NoteGiver
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 0
     - MutagenObjectType: ScriptFloatProperty
       Name: TimeUntilCourier
       Data: 24
   - Name: ccstartafterchargenscript
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: MyQuestStageToSet
-      Data: 10
     - MutagenObjectType: ScriptObjectProperty
       Name: MQ101
       Object: 03372B:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: MyQuestStageToSet
+      Data: 10
   - Name: QF_ccEDHSSE003_Quest_0200088C
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CaravanGuard3
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 33
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Gold001
-      Object: 00000F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRecruitedRedguardEliteGlobal
-      Object: 000E4B:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RewardAmount
-      Object: 0008B7:ccedhsse003-redguard.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Brawler
       Object: 00088C:ccedhsse003-redguard.esl
       Alias: 26
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_BrawlerNote
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_CaravanGuard1
       Object: 00088C:ccedhsse003-redguard.esl
       Alias: 31
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HostageStandMarker
-      Object: 000822:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SpyLeaderCourierNote
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Spy1Note
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 24
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CaravanGuard4
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 32
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Spy1Note
-      Object: 000812:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SpyLeader
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SupplyChestKey
-      Object: 0008A7:ccedhsse003-redguard.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_CaravanGuard2
       Object: 00088C:ccedhsse003-redguard.esl
       Alias: 34
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Spy4Woods
+      Name: Alias_CaravanGuard3
       Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 19
+      Alias: 33
     - MutagenObjectType: ScriptObjectProperty
-      Name: SpeakToSpyLeaderTrig
-      Object: 0008B8:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_BrawlerNote
+      Name: Alias_CaravanGuard4
       Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RedguardEliteFaction
-      Object: 0008B9:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Hostage
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 25
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Spy2
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SpyLeaderInstructions
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Spy3Woods
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 20
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Spy2Note
-      Object: 000813:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Spy1
-      Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 1
+      Alias: 32
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Chest
       Object: 00088C:ccedhsse003-redguard.esl
       Alias: 28
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_ScoutsMeetMarker
+      Name: Alias_ChestKey
       Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 27
+      Alias: 29
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerFaction
-      Object: 000DB1:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FijehInstructions
-      Object: 000816:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SupplyChestRef
-      Object: 0008A8:ccedhsse003-redguard.esl
+      Name: Alias_Hostage
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 25
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Noble
       Object: 00088C:ccedhsse003-redguard.esl
       Alias: 30
     - MutagenObjectType: ScriptObjectProperty
-      Name: Invisibility
-      Object: 027EB6:Skyrim.esm
+      Name: Alias_NobleEncounterMarker
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ScoutsMeetMarker
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 27
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy1
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy1Note
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 24
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy2
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 3
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Spy2Note
       Object: 00088C:ccedhsse003-redguard.esl
       Alias: 23
     - MutagenObjectType: ScriptObjectProperty
-      Name: RedguardEliteHostageFaction
-      Object: 000E32:ccedhsse003-redguard.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_NobleEncounterMarker
+      Name: Alias_Spy3Woods
       Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 17
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Spy4Woods
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 19
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Spy5Woods
       Object: 00088C:ccedhsse003-redguard.esl
       Alias: 22
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_ChestKey
+      Name: Alias_SpyLeader
       Object: 00088C:ccedhsse003-redguard.esl
-      Alias: 29
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SpyLeaderCourierNote
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SpyLeaderInstructions
+      Object: 00088C:ccedhsse003-redguard.esl
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FijehInstructions
+      Object: 000816:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HostageStandMarker
+      Object: 000822:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Invisibility
+      Object: 027EB6:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerFaction
+      Object: 000DB1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRecruitedRedguardEliteGlobal
+      Object: 000E4B:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RedguardEliteFaction
+      Object: 0008B9:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RedguardEliteHostageFaction
+      Object: 000E32:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RewardAmount
+      Object: 0008B7:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpeakToSpyLeaderTrig
+      Object: 0008B8:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spy1Note
+      Object: 000812:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spy2Note
+      Object: 000813:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SupplyChestKey
+      Object: 0008A7:ccedhsse003-redguard.esl
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SupplyChestRef
+      Object: 0008A8:ccedhsse003-redguard.esl
   FileName: QF_ccEDHSSE003_Quest_0200088C
   Fragments:
   - Stage: 80
@@ -285,12 +285,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 30
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00088C:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 30
   - Property:
       Name: ''
       Object: 00088C:ccedhsse003-redguard.esl
@@ -298,20 +298,20 @@ VirtualMachineAdapter:
     Scripts:
     - Name: ccEDHSSE003_SetStageOnPickup
       Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: myQuest
+        Object: 00088C:ccedhsse003-redguard.esl
       - MutagenObjectType: ScriptIntProperty
         Name: StageToSet
         Data: 40
+    - Name: DefaultOnReadSetQuestStage
+      Properties:
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00088C:ccedhsse003-redguard.esl
-    - Name: DefaultOnReadSetQuestStage
-      Properties:
       - MutagenObjectType: ScriptIntProperty
         Name: myStage
         Data: 50
-      - MutagenObjectType: ScriptObjectProperty
-        Name: myQuest
-        Object: 00088C:ccedhsse003-redguard.esl
   - Property:
       Name: ''
       Object: 00088C:ccedhsse003-redguard.esl
@@ -319,12 +319,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 62
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00088C:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 62
   - Property:
       Name: ''
       Object: 00088C:ccedhsse003-redguard.esl
@@ -332,12 +332,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 82
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00088C:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 82
   - Property:
       Name: ''
       Object: 00088C:ccedhsse003-redguard.esl
@@ -345,12 +345,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 87
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00088C:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 87
   - Property:
       Name: ''
       Object: 00088C:ccedhsse003-redguard.esl
@@ -359,14 +359,14 @@ VirtualMachineAdapter:
     - Name: ccEDHSSE003_SupplyChestScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
+        Name: CraftingGlobal
+        Object: 000809:ccedhsse003-redguard.esl
+      - MutagenObjectType: ScriptObjectProperty
         Name: CraftingMessage
         Object: 000896:ccedhsse003-redguard.esl
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00088C:ccedhsse003-redguard.esl
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CraftingGlobal
-        Object: 000809:ccedhsse003-redguard.esl
       - MutagenObjectType: ScriptIntProperty
         Name: ObjectiveID
         Data: 110
@@ -378,11 +378,11 @@ VirtualMachineAdapter:
     - Name: ccEDHSSE003_RedguardEliteInvisScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: InvisibilityEffect
-        Object: 01EA6A:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: Invisibility
         Object: 027EB6:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: InvisibilityEffect
+        Object: 01EA6A:Skyrim.esm
   - Property:
       Name: ''
       Object: 00088C:ccedhsse003-redguard.esl
@@ -391,11 +391,11 @@ VirtualMachineAdapter:
     - Name: ccEDHSSE003_RedguardEliteInvisScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: InvisibilityEffect
-        Object: 01EA6A:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: Invisibility
         Object: 027EB6:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: InvisibilityEffect
+        Object: 01EA6A:Skyrim.esm
   - Property:
       Name: ''
       Object: 00088C:ccedhsse003-redguard.esl
@@ -404,11 +404,11 @@ VirtualMachineAdapter:
     - Name: ccEDHSSE003_RedguardEliteInvisScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: InvisibilityEffect
-        Object: 01EA6A:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: Invisibility
         Object: 027EB6:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: InvisibilityEffect
+        Object: 01EA6A:Skyrim.esm
   - Property:
       Name: ''
       Object: 00088C:ccedhsse003-redguard.esl

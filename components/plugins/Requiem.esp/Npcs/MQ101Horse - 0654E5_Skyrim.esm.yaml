@@ -8,12 +8,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DefaultDisableSelfOnLoad
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: myQuest
-      Object: 03372B:Skyrim.esm
     - MutagenObjectType: ScriptIntProperty
       Name: disableStage
       Data: 250
+    - MutagenObjectType: ScriptObjectProperty
+      Name: myQuest
+      Object: 03372B:Skyrim.esm
 ObjectBounds:
   First: -31, -103, 0
   Second: 31, 103, 169

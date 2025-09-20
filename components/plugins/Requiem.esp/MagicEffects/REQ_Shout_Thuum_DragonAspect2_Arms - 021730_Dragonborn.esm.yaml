@@ -4,18 +4,18 @@ VirtualMachineAdapter:
   Scripts:
   - Name: dlc2DBSummonAncientSCRIPT
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: WaitTimer
-      Data: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ancientDB
+      Object: 01DC33:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ancientDBMarker
       Object: 01DC0D:Dragonborn.esm
     - MutagenObjectType: ScriptFloatProperty
       Name: healthPCT
       Data: 0.5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ancientDB
-      Object: 01DC33:Dragonborn.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: WaitTimer
+      Data: 30
   - Name: DLC2DragonbornAspectArtSCRIPT
     Properties:
     - MutagenObjectType: ScriptObjectProperty

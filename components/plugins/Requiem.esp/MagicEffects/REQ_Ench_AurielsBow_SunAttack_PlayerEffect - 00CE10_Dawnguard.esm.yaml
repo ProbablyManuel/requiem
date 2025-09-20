@@ -5,35 +5,35 @@ VirtualMachineAdapter:
   - Name: DLC1MagicCastFromSunScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: SpellRef
-      Object: 00AEB6:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlacedXMarker
-      Object: 00003B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WeatherForm
-      Object: 00F89D:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerEffect
-      Object: 00CE10:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: ActivatorRef
       Object: 00CE0F:Dawnguard.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fRecast
-      Data: 0.065
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SunAttackNPC
-      Object: AE37D9:Requiem.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fRecastRand
-      Data: 2
     - MutagenObjectType: ScriptBoolProperty
       Name: bUseLocalNiceWeather
       Data: True
     - MutagenObjectType: ScriptObjectProperty
       Name: ExplosionRef
       Object: 00C611:Dawnguard.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecast
+      Data: 0.065
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecastRand
+      Data: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlacedXMarker
+      Object: 00003B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerEffect
+      Object: 00CE10:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellRef
+      Object: 00AEB6:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SunAttackNPC
+      Object: AE37D9:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherForm
+      Object: 00F89D:Dawnguard.esm
 Name:
   TargetLanguage: English
   Value: Auriel's Bow

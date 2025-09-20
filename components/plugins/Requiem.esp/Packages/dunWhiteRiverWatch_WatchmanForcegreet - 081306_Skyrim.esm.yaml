@@ -4,7 +4,7 @@ Version2: 10
 Type: Package
 PreferredSpeed: Run
 ScheduleMonth: -1
-ScheduleDayOfWeek: 255
+ScheduleDayOfWeek: Any
 ScheduleHour: -1
 ScheduleMinute: -1
 Unknown3: 0x000000
@@ -16,24 +16,6 @@ Data:
     Topics:
     - MutagenObjectType: TopicReference
       Reference: 0812F2:Skyrim.esm
-- Key: 80
-  Value:
-    MutagenObjectType: PackageDataTarget
-    Type: SingleRef
-    Target:
-      MutagenObjectType: PackageTargetReference
-- Key: 62
-  Value:
-    MutagenObjectType: PackageDataLocation
-    Location:
-      Target:
-        MutagenObjectType: LocationFallback
-        Type: NearPackageStart
-      Radius: 1024
-- Key: 77
-  Value:
-    MutagenObjectType: PackageDataBool
-    Data: True
 - Key: 17
   Value:
     MutagenObjectType: PackageDataTarget
@@ -52,6 +34,24 @@ Data:
 - Key: 26
   Value:
     MutagenObjectType: PackageDataBool
+- Key: 62
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationFallback
+        Type: NearPackageStart
+      Radius: 1024
+- Key: 77
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 80
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetReference
 XnamMarker: 0x51
 OnBegin:
   Topics:

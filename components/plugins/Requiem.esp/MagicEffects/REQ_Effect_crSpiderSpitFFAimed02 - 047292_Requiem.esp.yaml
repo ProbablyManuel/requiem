@@ -4,21 +4,21 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_PoisonISM
     Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: ISM_strengthoffset
-      Data: -0.5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ISM_hit
-      Object: 10E3D2:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Switch
-      Object: 1CCCDA:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: ISM_active
       Object: 19151A:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: ISM_fade
       Object: 10E3D3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ISM_hit
+      Object: 10E3D2:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: ISM_strengthoffset
+      Data: -0.5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Spider Spit

@@ -11,14 +11,14 @@ VirtualMachineAdapter:
     - Name: REQ_DeathHandler
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: Fadeout
-        Object: AA4637:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
         Name: DeathNote
         Object: AA4638:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: Disabled
         Object: AA1E9C:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: Fadeout
+        Object: AA4637:Requiem.esp
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Death Handler'

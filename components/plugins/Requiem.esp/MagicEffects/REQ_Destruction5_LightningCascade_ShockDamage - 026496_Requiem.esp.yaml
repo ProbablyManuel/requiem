@@ -4,21 +4,24 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicProjectileStormScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SoundFX
-      Object: 0EB382:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fStartDelayRand
-      Data: 0.1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpellRef
-      Object: 0269FE:Requiem.esp
     - MutagenObjectType: ScriptBoolProperty
       Name: bDontHitCaster
       Data: True
     - MutagenObjectType: ScriptObjectProperty
       Name: CastingImod
       Object: 0A9D93:Skyrim.esm
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 0.1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecast
+      Data: 0.1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fRecastRand
+      Data: 0.1
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStartDelayRand
+      Data: 0.1
     - MutagenObjectType: ScriptObjectProperty
       Name: MAGProjectileStormVar
       Object: 101DAB:Skyrim.esm
@@ -28,15 +31,12 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: PlacedTargetActivator
       Object: 0B79FF:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fRecastRand
-      Data: 0.1
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fDelay
-      Data: 0.1
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fRecast
-      Data: 0.1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SoundFX
+      Object: 0EB382:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellRef
+      Object: 0269FE:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Shock Damage

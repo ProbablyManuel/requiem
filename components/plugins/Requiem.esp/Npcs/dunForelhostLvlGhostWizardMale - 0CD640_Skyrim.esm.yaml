@@ -8,54 +8,54 @@ VirtualMachineAdapter:
   Scripts:
   - Name: dunForelhostGhostAmbushScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pdefaultGhostDeathExplosion
-      Object: 0369CA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostHalfDamagePerk
-      Object: 0D205B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostFXShader
-      Object: 03B6CB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GhostShader
-      Object: 03B6CB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostAbilityNew
-      Object: 0D2056:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDefaultGhostWeaponFlickerList
-      Object: 0D2058:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDefaultGhostCorpse
-      Object: 0C674B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDisintegrationMainImmunityList
-      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ambushOnTrigger
+      Data: True
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bdefaultLoot
+      Data: True
     - MutagenObjectType: ScriptFloatProperty
       Name: GhostAlpha
       Data: 0.33
     - MutagenObjectType: ScriptObjectProperty
-      Name: pdefaultGhostLeveledList
-      Object: 10F805:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SamplePatrolIdleMarker
-      Object: 082DF8:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostDeathFXShader
-      Object: 101727:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: ambushOnTrigger
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostResistsAbility
-      Object: 0D2060:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bdefaultLoot
-      Data: True
+      Name: GhostShader
+      Object: 03B6CB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pDefaultAshPileGhost
       Object: 101048:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostCorpse
+      Object: 0C674B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostLeveledList
+      Object: 10F805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostWeaponFlickerList
+      Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SamplePatrolIdleMarker
+      Object: 082DF8:Skyrim.esm
 ObjectBounds:
   First: -22, -14, 0
   Second: 22, 14, 128

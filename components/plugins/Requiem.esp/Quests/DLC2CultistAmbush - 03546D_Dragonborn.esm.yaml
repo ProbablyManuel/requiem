@@ -5,48 +5,48 @@ VirtualMachineAdapter:
   - Name: DLC2_QF_DLC2CultistAmbush_0203546D
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Cultist2
-      Object: 03546D:Dragonborn.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_CenterMarker
       Object: 03546D:Dragonborn.esm
       Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Location
-      Object: 03546D:Dragonborn.esm
-      Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2MQ01
-      Object: 017F8E:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2WE09Chance
-      Object: 033C24:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WEPlayerEnemy
-      Object: 01DD0F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Note
-      Object: 03546D:Dragonborn.esm
-      Alias: 9
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Cultist1
       Object: 03546D:Dragonborn.esm
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: dunPrisonerFaction
-      Object: 0AA784:Skyrim.esm
+      Name: Alias_Cultist2
+      Object: 03546D:Dragonborn.esm
+      Alias: 7
     - MutagenObjectType: ScriptObjectProperty
-      Name: WEPlayerFriend
-      Object: 01DD09:Skyrim.esm
+      Name: Alias_Location
+      Object: 03546D:Dragonborn.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Note
+      Object: 03546D:Dragonborn.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 03546D:Dragonborn.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2MQ01
+      Object: 017F8E:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2MQ01AliasForObjective
       Object: 017F8E:Dragonborn.esm
       Alias: 11
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Player
-      Object: 03546D:Dragonborn.esm
-      Alias: 10
+      Name: DLC2WE09Chance
+      Object: 033C24:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunPrisonerFaction
+      Object: 0AA784:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEPlayerEnemy
+      Object: 01DD0F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEPlayerFriend
+      Object: 01DD09:Skyrim.esm
   FileName: DLC2_QF_DLC2CultistAmbush_0203546D
   Fragments:
   - Stage: 255
@@ -70,11 +70,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 5
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 10
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
     - Name: DLC2WE09ActorScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
@@ -88,11 +88,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 5
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 10
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 5
     - Name: DLC2WE09ActorScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
@@ -106,6 +106,10 @@ VirtualMachineAdapter:
     - Name: DLC2WECultistAmbushPlayerScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
+        Name: Cultist1
+        Object: 03546D:Dragonborn.esm
+        Alias: 0
+      - MutagenObjectType: ScriptObjectProperty
         Name: Cultist2
         Object: 03546D:Dragonborn.esm
         Alias: 7
@@ -113,10 +117,6 @@ VirtualMachineAdapter:
         Name: pLocation
         Object: 03546D:Dragonborn.esm
         Alias: 5
-      - MutagenObjectType: ScriptObjectProperty
-        Name: Cultist1
-        Object: 03546D:Dragonborn.esm
-        Alias: 0
       - MutagenObjectType: ScriptIntProperty
         Name: StageToStopPollingPlayerLocation
         Data: 1

@@ -5,26 +5,42 @@ VirtualMachineAdapter:
   - Name: C01QuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: TempMessage
-      Object: 0A81FF:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: AmbushLeverPulled
+      Name: Aela
+      Object: 01A697:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: dunPrisonerFaction
-      Object: 0AA784:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Farkas
-      Object: 01A693:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WerewolfChangeFX
-      Object: 0F8208:Skyrim.esm
+      Name: AelaBaseMeleeWeapon
+      Object: 013986:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: AelaBaseRangedWeapon
       Object: 013985:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Observer
+      Name: AelaOutfit
+      Object: ADDDE9:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AmbushFighter1
       Object: 06E803:Skyrim.esm
-      Alias: 1
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AmbushFighter2
+      Object: 06E803:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AmbushFighter3
+      Object: 06E803:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AmbushFighter4
+      Object: 06E803:Skyrim.esm
+      Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AmbushFighter5
+      Object: 06E803:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptBoolProperty
+      Name: AmbushLeverPulled
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AmbushScene
+      Object: 0A6F59:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: C02Kicker
       Object: 0A3EF8:Skyrim.esm
@@ -32,169 +48,153 @@ VirtualMachineAdapter:
       Name: CentralQuest
       Object: 04B2D9:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: WerewolfRace
-      Object: 0CDD84:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: ObserverCloseBy
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AmbushScene
-      Object: 0A6F59:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WolfSkinFXArmor
-      Object: 0F6002:Skyrim.esm
+      Name: DebugFollower
+      Object: 0A81FE:Skyrim.esm
+      Alias: 0
     - MutagenObjectType: ScriptBoolProperty
       Name: DogsOutOfTheBag
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AmbushFighter5
-      Object: 06E803:Skyrim.esm
-      Alias: 14
-    - MutagenObjectType: ScriptBoolProperty
-      Name: ObserverReadyForReveal
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SilverHandFaction
-      Object: 0AA0A4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: NextQuest
-      Object: 06E804:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AelaOutfit
-      Object: ADDDE9:Requiem.esp
-    - MutagenObjectType: ScriptBoolProperty
-      Name: PlayerWalkedAwayFromFromOffer
-    - MutagenObjectType: ScriptObjectProperty
-      Name: IdleWerewolfTransformation
-      Object: 02A59D:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: DoRealTransform
       Data: True
     - MutagenObjectType: ScriptObjectProperty
-      Name: ObserverLycanStorage
-      Object: 06E803:Skyrim.esm
-      Alias: 15
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AmbushFighter3
-      Object: 06E803:Skyrim.esm
-      Alias: 12
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FarkasOutfit
-      Object: 0B3E8D:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ObserverGoesNuts
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PostAmbush
-      Object: 0A6F8D:Skyrim.esm
+      Name: dunPrisonerFaction
+      Object: 0AA784:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
-      Name: ObserverTransform
+      Name: FakeFight
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Farkas
+      Object: 01A693:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: FarkasBaseMeleeWeapon
       Object: 09F25E:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Aela
-      Object: 01A697:Skyrim.esm
+      Name: FarkasOutfit
+      Object: 0B3E8D:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: SilverHandFactionPacified
-      Object: 0A6F88:Skyrim.esm
+      Name: IdleWerewolfTransformation
+      Object: 02A59D:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: AmbushFighter1
+      Name: NextQuest
+      Object: 06E804:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Observer
       Object: 06E803:Skyrim.esm
-      Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DebugFollower
-      Object: 0A81FE:Skyrim.esm
-      Alias: 0
+      Alias: 1
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ObserverCloseBy
     - MutagenObjectType: ScriptObjectProperty
       Name: ObserverCompensationPoint
       Object: 0F5B02:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: AmbushFighter2
-      Object: 06E803:Skyrim.esm
-      Alias: 11
+      Name: ObserverGoesNuts
     - MutagenObjectType: ScriptObjectProperty
-      Name: AmbushFighter4
+      Name: ObserverLycanStorage
       Object: 06E803:Skyrim.esm
-      Alias: 13
+      Alias: 15
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ObserverReadyForReveal
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ObserverTransform
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerWalkedAwayFromFromOffer
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PostAmbush
+      Object: 0A6F8D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SilverHandFaction
+      Object: 0AA0A4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SilverHandFactionPacified
+      Object: 0A6F88:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TempMessage
+      Object: 0A81FF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: WeapTypeBow
       Object: 01E715:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: FakeFight
     - MutagenObjectType: ScriptObjectProperty
-      Name: AelaBaseMeleeWeapon
-      Object: 013986:Skyrim.esm
+      Name: WerewolfChangeFX
+      Object: 0F8208:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WerewolfRace
+      Object: 0CDD84:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WolfSkinFXArmor
+      Object: 0F6002:Skyrim.esm
   - Name: QF_C01_0006E803
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_AmbushSH5
-      Object: 06E803:Skyrim.esm
-      Alias: 14
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_JorrvaskrTarget
-      Object: 06E803:Skyrim.esm
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FragmentTracking
-      Object: 108059:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Dungeon
-      Object: 06E803:Skyrim.esm
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: IsGuardFaction
-      Object: 086EEE:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_AmbushSH2
-      Object: 06E803:Skyrim.esm
-      Alias: 11
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_ObserverWerewolfStorage
-      Object: 06E803:Skyrim.esm
-      Alias: 15
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ToggleMarker
-      Object: 04A3E8:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_KeyContainer
-      Object: 06E803:Skyrim.esm
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Observer
-      Object: 06E803:Skyrim.esm
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: C02Kicker
-      Object: 0A3EF8:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Vilkas
-      Object: 06E803:Skyrim.esm
-      Alias: 16
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Key
-      Object: 06E803:Skyrim.esm
-      Alias: 8
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Skjor
-      Object: 06E803:Skyrim.esm
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DungeonMarker
-      Object: 06E803:Skyrim.esm
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MacGuffin
-      Object: 06E803:Skyrim.esm
-      Alias: 2
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_AmbushSH3
-      Object: 06E803:Skyrim.esm
-      Alias: 12
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_AmbushSH1
       Object: 06E803:Skyrim.esm
       Alias: 10
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AmbushSH2
+      Object: 06E803:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AmbushSH3
+      Object: 06E803:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_AmbushSH4
       Object: 06E803:Skyrim.esm
       Alias: 13
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AmbushSH5
+      Object: 06E803:Skyrim.esm
+      Alias: 14
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Dungeon
+      Object: 06E803:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DungeonMarker
+      Object: 06E803:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_JorrvaskrTarget
+      Object: 06E803:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Key
+      Object: 06E803:Skyrim.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_KeyContainer
+      Object: 06E803:Skyrim.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MacGuffin
+      Object: 06E803:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Observer
+      Object: 06E803:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_ObserverWerewolfStorage
+      Object: 06E803:Skyrim.esm
+      Alias: 15
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Skjor
+      Object: 06E803:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Vilkas
+      Object: 06E803:Skyrim.esm
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: C02Kicker
+      Object: 0A3EF8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FragmentTracking
+      Object: 108059:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IsGuardFaction
+      Object: 086EEE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToggleMarker
+      Object: 04A3E8:Skyrim.esm
   FileName: QF_C01_0006E803
   Fragments:
   - Unknown2: 1
@@ -243,11 +243,11 @@ VirtualMachineAdapter:
     - Name: DefaultAddItemAliasScript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: StageToSet
-        Data: 40
-      - MutagenObjectType: ScriptIntProperty
         Name: MinStageToCheck
         Data: 30
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 40
   - Property:
       Name: ''
       Object: 06E803:Skyrim.esm

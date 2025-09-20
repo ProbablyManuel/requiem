@@ -5,32 +5,8 @@ VirtualMachineAdapter:
   - Name: MineOreScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Ore
-      Object: 003043:HearthFires.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: AchievementsQuest
       Object: 0FC85D:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: ResourceCount
-      Data: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DialogueCidhnaMine
-      Object: 0362AC:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DrScOreOpen
-      Object: 000BA4:HearthFires.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: mineOreToolsList
-      Object: 10ACC4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MS02
-      Object: 040A5E:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FailureMessage
-      Object: 0DDDAA:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: ResourceCountTotal
-      Data: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: CidhnaMineLocation
       Object: 018C91:Skyrim.esm
@@ -40,6 +16,30 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: DepletedMessage
       Object: 00D17C:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DialogueCidhnaMine
+      Object: 0362AC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DrScOreOpen
+      Object: 000BA4:HearthFires.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FailureMessage
+      Object: 0DDDAA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: mineOreToolsList
+      Object: 10ACC4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MS02
+      Object: 040A5E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Ore
+      Object: 003043:HearthFires.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: ResourceCount
+      Data: 4
+    - MutagenObjectType: ScriptIntProperty
+      Name: ResourceCountTotal
+      Data: 4
 Name:
   TargetLanguage: English
   Value: Clay Deposit

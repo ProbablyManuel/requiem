@@ -5,34 +5,34 @@ VirtualMachineAdapter:
   - Name: SayOnHitByMagicEffectScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: TopicToSay
-      Object: 0AB884:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: GameDaysPassed
       Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB884:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: WICastNonHostileTimer
       Object: 0E0CDC:Skyrim.esm
   - Name: magicsoultrapfxscript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: CasterVFX
-      Object: 0531B1:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: CasterFXS
       Object: 054224:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: TrapImod
-      Object: 054225:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapSoundFX
-      Object: 056AC6:Skyrim.esm
+      Name: CasterVFX
+      Object: 0531B1:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: TargetFXS
       Object: 054223:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: TargetVFX
       Object: 0531AF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 054225:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapSoundFX
+      Object: 056AC6:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Soulreaping

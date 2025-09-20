@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: HowlWerewolfSummonWolvesSCRIPT
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: wolf
-      Object: 008A6D:Dawnguard.esm
     - MutagenObjectType: ScriptIntProperty
       Name: numToPlace
       Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: wolf
+      Object: 008A6D:Dawnguard.esm
 Name:
   TargetLanguage: English
   Value: Summon Werewolves 3

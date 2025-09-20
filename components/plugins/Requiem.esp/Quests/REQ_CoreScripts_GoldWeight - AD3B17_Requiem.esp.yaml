@@ -11,14 +11,14 @@ VirtualMachineAdapter:
     - Name: REQ_GoldWeight
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: hidePursePlace
-        Object: AD3A5A:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
         Name: displayPurse
         Object: AD3A5B:Requiem.esp
       - MutagenObjectType: ScriptObjectProperty
         Name: Gold
         Object: 00000F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: hidePursePlace
+        Object: AD3A5A:Requiem.esp
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Gold Weight'

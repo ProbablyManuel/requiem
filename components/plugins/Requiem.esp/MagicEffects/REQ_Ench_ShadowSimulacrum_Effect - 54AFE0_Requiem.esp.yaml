@@ -10,6 +10,15 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: MindEffect
       Object: 54AFE7:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptBoolProperty
+      Name: SingleResist
+      Data: True
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: -15
     - MutagenObjectType: ScriptObjectListProperty
       Name: Skill_ScalingPerks
       Objects:
@@ -19,15 +28,6 @@ VirtualMachineAdapter:
         Object: 534B55:Requiem.esp
       - Name: ''
         Object: 534B55:Requiem.esp
-    - MutagenObjectType: ScriptFloatProperty
-      Name: Skill_Offset
-      Data: -15
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MindFogEffect
-      Object: 3C130A:Requiem.esp
-    - MutagenObjectType: ScriptBoolProperty
-      Name: SingleResist
-      Data: True
     - MutagenObjectType: ScriptFloatProperty
       Name: XPRate
 Name:

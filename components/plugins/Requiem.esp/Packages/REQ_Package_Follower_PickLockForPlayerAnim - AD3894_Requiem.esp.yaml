@@ -5,20 +5,20 @@ VirtualMachineAdapter:
   - Name: PF_REQ_Package_Follower_PickLockAnim
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: FollowerControl
+      Name: crimeTrigger
       Object: 82F3AF:Requiem.esp
+      Alias: 10
     - MutagenObjectType: ScriptObjectProperty
       Name: datastorage
       Object: AD3B22:Requiem.esp
       Alias: 18
     - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerControl
+      Object: 82F3AF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: unlockingTarget
       Object: 82F3AF:Requiem.esp
       Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: crimeTrigger
-      Object: 82F3AF:Requiem.esp
-      Alias: 10
   ScriptFragments:
     FileName: PF_REQ_Package_Follower_PickLockAnim
     OnEnd:
@@ -31,7 +31,7 @@ Type: Package
 PreferredSpeed: Run
 Unknown: 116
 ScheduleMonth: -1
-ScheduleDayOfWeek: 255
+ScheduleDayOfWeek: Any
 ScheduleHour: -1
 ScheduleMinute: -1
 Unknown3: 0x000000

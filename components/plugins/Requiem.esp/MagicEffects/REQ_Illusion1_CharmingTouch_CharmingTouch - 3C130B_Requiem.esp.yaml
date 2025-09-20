@@ -5,13 +5,13 @@ VirtualMachineAdapter:
   - Name: SayOnHitByMagicEffectScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: TopicToSay
+      Name: CombatTopicToSay
       Object: 0AB884:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GameDaysPassed
       Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: CombatTopicToSay
+      Name: TopicToSay
       Object: 0AB884:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: WICastNonHostileTimer
@@ -20,8 +20,17 @@ VirtualMachineAdapter:
   - Name: REQ_IllusionBreak
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: BaseSpell
+      Object: 04DEE9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: MindEffect
       Object: 421C90:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Skill_Offset
+      Data: 1
     - MutagenObjectType: ScriptObjectListProperty
       Name: Skill_ScalingPerks
       Objects:
@@ -29,15 +38,6 @@ VirtualMachineAdapter:
         Object: 0F2CA9:Skyrim.esm
       - Name: ''
         Object: 0581E1:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: Skill_Offset
-      Data: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: BaseSpell
-      Object: 04DEE9:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MindFogEffect
-      Object: 3C130A:Requiem.esp
     - MutagenObjectType: ScriptFloatProperty
       Name: XPRate
       Data: 1

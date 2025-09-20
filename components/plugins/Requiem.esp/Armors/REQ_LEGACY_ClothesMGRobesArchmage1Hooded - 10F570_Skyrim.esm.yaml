@@ -4,9 +4,6 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_SwapTo
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Remove
-      Object: 10F570:Skyrim.esm
     - MutagenObjectType: ScriptObjectListProperty
       Name: Add
       Objects:
@@ -18,6 +15,9 @@ VirtualMachineAdapter:
         Object: 07C92E:Skyrim.esm
       - Name: ''
         Object: AE3861:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Remove
+      Object: 10F570:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Arch-Mage Robes

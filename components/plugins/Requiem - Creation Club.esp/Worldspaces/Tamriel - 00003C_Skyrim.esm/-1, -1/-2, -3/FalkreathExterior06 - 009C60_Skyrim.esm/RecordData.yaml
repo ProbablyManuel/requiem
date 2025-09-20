@@ -68,12 +68,12 @@ Temporary:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+        Data: True
+      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-        Data: True
   Base: 0F5D05:Skyrim.esm
   LocationReference: 018A49:Skyrim.esm
   EnableParent:

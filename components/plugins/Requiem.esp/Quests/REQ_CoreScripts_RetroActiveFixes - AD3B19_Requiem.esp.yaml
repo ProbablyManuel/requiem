@@ -13,12 +13,6 @@ VirtualMachineAdapter:
       - MutagenObjectType: ScriptObjectProperty
         Name: AlcoholLevelStorage
         Object: AE372A:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: MassEffect
-        Object: 82CC14:Requiem.esp
-      - MutagenObjectType: ScriptObjectProperty
-        Name: OutOfCombatRegeneration
-        Object: AE3598:Requiem.esp
       - MutagenObjectType: ScriptObjectListProperty
         Name: AttackSpeedReapply
         Objects:
@@ -63,6 +57,12 @@ VirtualMachineAdapter:
       - MutagenObjectType: ScriptObjectProperty
         Name: KynesPeaceFaction
         Object: 0E0D58:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MassEffect
+        Object: 82CC14:Requiem.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: OutOfCombatRegeneration
+        Object: AE3598:Requiem.esp
 Name:
   TargetLanguage: English
   Value: '[INTERNAL] Requiem Core Scripts: Retroactive Fixes'

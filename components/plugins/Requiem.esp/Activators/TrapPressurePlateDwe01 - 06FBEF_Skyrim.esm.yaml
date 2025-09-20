@@ -5,27 +5,27 @@ VirtualMachineAdapter:
   Scripts:
   - Name: PressurePlate
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: checkForLightFootPerk
+      Data: True
+    - MutagenObjectType: ScriptBoolProperty
+      Name: isTriggerVolume
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LightFootGlobalVar
+      Object: 067194:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: lightFootPerk
+      Object: 05820C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pressEffect
+      Object: 01A141:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pressEffectAmmo
       Object: 052E99:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: TriggerSound
       Object: 018537:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: checkForLightFootPerk
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: lightFootPerk
-      Object: 05820C:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LightFootGlobalVar
-      Object: 067194:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: isTriggerVolume
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pressEffect
-      Object: 01A141:Skyrim.esm
 ObjectBounds:
   First: -31, -31, 0
   Second: 31, 31, 5

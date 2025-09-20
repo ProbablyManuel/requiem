@@ -4,9 +4,15 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_IllusionBreak
     Properties:
+    - MutagenObjectType: ScriptStringProperty
+      Name: CasterSkill
+      Data: None
     - MutagenObjectType: ScriptObjectProperty
       Name: MindEffect
       Object: 56B304:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MindFogEffect
+      Object: 3C130A:Requiem.esp
     - MutagenObjectType: ScriptBoolProperty
       Name: SingleResist
       Data: True
@@ -15,12 +21,6 @@ VirtualMachineAdapter:
       Data: 100
     - MutagenObjectType: ScriptFloatProperty
       Name: XPRate
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MindFogEffect
-      Object: 3C130A:Requiem.esp
-    - MutagenObjectType: ScriptStringProperty
-      Name: CasterSkill
-      Data: None
 Name:
   TargetLanguage: English
   Value: Halldir's Phantasmal Killer

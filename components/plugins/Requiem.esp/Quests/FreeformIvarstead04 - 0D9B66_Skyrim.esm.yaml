@@ -6,9 +6,6 @@ VirtualMachineAdapter:
   - Name: QF_FreeformIvarstead04_000D9B66
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: pReward
-      Object: 0494DF:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FFI04ChestAlias
       Object: 0D9B66:Skyrim.esm
       Alias: 1
@@ -20,6 +17,9 @@ VirtualMachineAdapter:
       Name: Alias_FFI04SackAlias
       Object: 0D9B66:Skyrim.esm
       Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pReward
+      Object: 0494DF:Skyrim.esm
   FileName: QF_FreeformIvarstead04_000D9B66
   Fragments:
   - Stage: 20
@@ -47,11 +47,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
   - Property:
       Name: ''
       Object: 0D9B66:Skyrim.esm
@@ -60,14 +60,14 @@ VirtualMachineAdapter:
     - Name: FFI04SackScript
       Properties:
       - MutagenObjectType: ScriptObjectProperty
-        Name: pFFI04Quest
-        Object: 0D9B66:Skyrim.esm
+        Name: pFFI04Chest
+        Object: 09C614:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: pFFI04Planted
         Object: 0DAB0A:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: pFFI04Chest
-        Object: 09C614:Skyrim.esm
+        Name: pFFI04Quest
+        Object: 0D9B66:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Climb the Steps

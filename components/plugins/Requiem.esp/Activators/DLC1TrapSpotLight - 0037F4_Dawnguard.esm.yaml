@@ -5,23 +5,20 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC1TrapSpotLight
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold5
-      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapSpotLightSpell01
+      Object: 010767:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1TrapSpotLightSpell02
+      Object: 010767:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC1TrapSpotLightSpell03
       Object: 010767:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1TrapSpotLightSpell05
-      Object: 010767:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: DLC1TrapSpotLightSpell04
       Object: 010767:Dawnguard.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold3
-      Data: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1TrapSpotLightSpell01
+      Name: DLC1TrapSpotLightSpell05
       Object: 010767:Dawnguard.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC1TrapSpotLightSpell06
@@ -32,11 +29,14 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptIntProperty
       Name: LvlThreshold2
       Data: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1TrapSpotLightSpell02
-      Object: 010767:Dawnguard.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 1
     - MutagenObjectType: ScriptIntProperty
       Name: LvlThreshold4
+      Data: 1
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
       Data: 1
 ObjectBounds:
   First: -50, -54, -51

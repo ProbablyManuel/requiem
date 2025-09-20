@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 400
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 000826:ccbgssse053-ba_leather.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 400
 Name:
   TargetLanguage: English
   Value: Leather Scout Helmet

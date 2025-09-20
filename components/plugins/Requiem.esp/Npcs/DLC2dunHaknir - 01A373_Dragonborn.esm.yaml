@@ -9,50 +9,20 @@ VirtualMachineAdapter:
   - Name: DLC2dunHaknirBossBattleScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulHaknirSafety
-      Object: 037FDF:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulHaknirSpawn04
-      Object: 037FDD:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulBattleManager02
-      Object: 037FE1:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulComplete01
-      Object: 038028:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulHaknirSpawn02
-      Object: 037FDB:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostDeathFXShader
-      Object: 101727:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDisintegrationMainImmunityList
-      Object: 0F6534:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDefaultGhostCorpse
-      Object: 0C674B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulRitual03
-      Object: 037FAC:Dragonborn.esm
+      Name: defaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2dunGyldenhulBattleManager01
       Object: 037FE0:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunHaknirTreasureQST
-      Object: 024002:Dragonborn.esm
+      Name: DLC2dunGyldenhulBattleManager02
+      Object: 037FE1:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostFXShader
-      Object: 03B6CB:Skyrim.esm
+      Name: DLC2dunGyldenhulBattleManager03
+      Object: 037FE2:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: defaultGhostDeathExplosion
-      Object: 0369CA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SummonValorTargetFXActivator
-      Object: 028214:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulRitual02
-      Object: 037F9A:Dragonborn.esm
+      Name: DLC2dunGyldenhulComplete01
+      Object: 038028:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2dunGyldenhulComplete02
       Object: 038029:Dragonborn.esm
@@ -60,41 +30,71 @@ VirtualMachineAdapter:
       Name: DLC2dunGyldenhulComplete03
       Object: 03802A:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostAbilityNew
-      Object: 0D2056:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostResistsAbility
-      Object: 0D2060:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulHaknirSpawn03
-      Object: 037FDC:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MAGFlamesImpact
-      Object: 0248DE:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pdefaultGhostLeveledList
-      Object: 10F805:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulRitual01
-      Object: 01A369:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunHaknirBuff
-      Object: 037FD8:Dragonborn.esm
+      Name: DLC2dunGyldenhulHaknirSafety
+      Object: 037FDF:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2dunGyldenhulHaknirSpawn01
       Object: 01A371:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunGyldenhulHaknirSpawn02
+      Object: 037FDB:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunGyldenhulHaknirSpawn03
+      Object: 037FDC:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunGyldenhulHaknirSpawn04
+      Object: 037FDD:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunGyldenhulRitual01
+      Object: 01A369:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunGyldenhulRitual02
+      Object: 037F9A:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunGyldenhulRitual03
+      Object: 037FAC:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2dunHaknirBuff
+      Object: 037FD8:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: DLC2dunHaknirScimitar02
       Object: 036689:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2dunGyldenhulBattleManager03
-      Object: 037FE2:Dragonborn.esm
+      Name: DLC2dunHaknirTreasureQST
+      Object: 024002:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGFlamesImpact
+      Object: 0248DE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultAshPileGhost
+      Object: 10C649:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostCorpse
+      Object: 0C674B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pdefaultGhostDeathExplosion
       Object: 0369CA:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: pDefaultAshPileGhost
-      Object: 10C649:Skyrim.esm
+      Name: pdefaultGhostLeveledList
+      Object: 10F805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostResistsAbility
+      Object: 0D2060:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SummonValorTargetFXActivator
+      Object: 028214:Dragonborn.esm
 ObjectBounds:
   First: -41, -25, 0
   Second: 41, 72, 86

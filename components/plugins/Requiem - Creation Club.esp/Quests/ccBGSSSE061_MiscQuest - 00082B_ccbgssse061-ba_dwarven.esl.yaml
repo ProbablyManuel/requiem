@@ -5,15 +5,12 @@ VirtualMachineAdapter:
   - Name: SSE_QF_ccBGSSSE061_MiscQuest_0500082B
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE061_SubCharBandit03Boss
-      Object: 00082D:ccbgssse061-ba_dwarven.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorBootsHeavySpecial
-      Object: 1031C2:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Note01
       Object: 00082B:ccbgssse061-ba_dwarven.esl
       Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ccBGSSSE061_ArmorBladesBoots
+      Object: 000800:ccbgssse061-ba_dwarven.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: ccBGSSSE061_ArmorBladesCuirass
       Object: 000801:ccbgssse061-ba_dwarven.esl
@@ -21,32 +18,35 @@ VirtualMachineAdapter:
       Name: ccBGSSSE061_EnableMarkerREF
       Object: 00082C:ccbgssse061-ba_dwarven.esl
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavySpecial
-      Object: 1031C4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavy
-      Object: 0166F8:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ccBGSSSE061_ArmorBladesBoots
-      Object: 000800:ccbgssse061-ba_dwarven.esl
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavyTown
-      Object: 016747:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorBootsHeavyBlacksmith
-      Object: 09BC34:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorCuirassHeavyBlacksmith
-      Object: 09BC36:Skyrim.esm
+      Name: ccBGSSSE061_SubCharBandit03Boss
+      Object: 00082D:ccbgssse061-ba_dwarven.esl
     - MutagenObjectType: ScriptObjectProperty
       Name: LCharBanditBoss
       Object: 03DF16:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorBootsHeavy
+      Object: 01673A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorBootsHeavyBlacksmith
+      Object: 09BC34:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorBootsHeavySpecial
+      Object: 1031C2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: LItemArmorBootsHeavyTown
       Object: 016749:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: LItemArmorBootsHeavy
-      Object: 01673A:Skyrim.esm
+      Name: LItemArmorCuirassHeavy
+      Object: 0166F8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavyBlacksmith
+      Object: 09BC36:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavySpecial
+      Object: 1031C4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LItemArmorCuirassHeavyTown
+      Object: 016747:Skyrim.esm
   FileName: SSE_QF_ccBGSSSE061_MiscQuest_0500082B
   Fragments:
   - Stage: 20
@@ -65,12 +65,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00082B:ccbgssse061-ba_dwarven.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
 Flags:
 - RunOnce
 Priority: 15

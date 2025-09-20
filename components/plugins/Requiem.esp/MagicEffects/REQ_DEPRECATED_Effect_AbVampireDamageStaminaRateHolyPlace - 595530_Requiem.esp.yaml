@@ -5,14 +5,14 @@ VirtualMachineAdapter:
   - Name: REQ_PoisonISM
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Switch
-      Object: 1CCCDA:Requiem.esp
+      Name: ISM_active
+      Object: 0FD809:Skyrim.esm
     - MutagenObjectType: ScriptStringProperty
       Name: Resistvalue
       Data: None
     - MutagenObjectType: ScriptObjectProperty
-      Name: ISM_active
-      Object: 0FD809:Skyrim.esm
+      Name: Switch
+      Object: 1CCCDA:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Aedric Presence

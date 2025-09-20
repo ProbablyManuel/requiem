@@ -9,33 +9,33 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC2EncExplodingSpiderSCRIPT
     Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bShouldExplode
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bShouldHandleOnHit
     - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderCrumbleExplosion
-      Object: 0200CB:Dragonborn.esm
+      Name: MagicDamageFire
+      Object: 01CEAD:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: MagicDamageFrost
       Object: 01CEAE:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bShouldHandleOnHit
     - MutagenObjectType: ScriptObjectProperty
       Name: MagicDamageShock
       Object: 01CEAF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: MagicDamageFire
-      Object: 01CEAD:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bShouldExplode
+      Name: SpiderCrumbleExplosion
+      Object: 0200CB:Dragonborn.esm
   - Name: DLC2EncExpSpiderGenericControlSCRIPT
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderCrumbleExplosion
-      Object: 0200CB:Dragonborn.esm
+      Name: DLC2ExpSpiderFriendFaction
+      Object: 017964:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2ExpSpiderQuest
       Object: 017962:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2ExpSpiderFriendFaction
-      Object: 017964:Dragonborn.esm
+      Name: SpiderCrumbleExplosion
+      Object: 0200CB:Dragonborn.esm
 ObjectBounds:
   First: -47, -67, 0
   Second: 47, 67, 89

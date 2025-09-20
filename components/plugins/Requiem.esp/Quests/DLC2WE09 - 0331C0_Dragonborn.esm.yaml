@@ -5,6 +5,26 @@ VirtualMachineAdapter:
   - Name: DLC2_QF_DLC2WE09_020331C0
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Actor1
+      Object: 0331C0:Dragonborn.esm
+      Alias: 17
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Actor2
+      Object: 0331C0:Dragonborn.esm
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Actor3
+      Object: 0331C0:Dragonborn.esm
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 0331C0:Dragonborn.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 0331C0:Dragonborn.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_myHoldLocation
       Object: 0331C0:Dragonborn.esm
       Alias: 4
@@ -13,50 +33,31 @@ VirtualMachineAdapter:
       Object: 0331C0:Dragonborn.esm
       Alias: 8
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Actor1
+      Name: Alias_NoteInitial
       Object: 0331C0:Dragonborn.esm
-      Alias: 17
+      Alias: 37
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2WE09Chance
-      Object: 033C24:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Actor2
+      Name: Alias_TravelMarker1
       Object: 0331C0:Dragonborn.esm
-      Alias: 25
+      Alias: 9
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2MQ01AliasForObjective
-      Object: 017F8E:Dragonborn.esm
-      Alias: 11
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldContested
+      Name: Alias_TravelMarker2
       Object: 0331C0:Dragonborn.esm
-      Alias: 6
+      Alias: 10
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Trigger
       Object: 0331C0:Dragonborn.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: WEPlayerFriend
-      Object: 01DD09:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: DLC2MQ01
       Object: 017F8E:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_NoteInitial
-      Object: 0331C0:Dragonborn.esm
-      Alias: 37
+      Name: DLC2MQ01AliasForObjective
+      Object: 017F8E:Dragonborn.esm
+      Alias: 11
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldImperial
-      Object: 0331C0:Dragonborn.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Actor3
-      Object: 0331C0:Dragonborn.esm
-      Alias: 30
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_TravelMarker2
-      Object: 0331C0:Dragonborn.esm
-      Alias: 10
+      Name: DLC2WE09Chance
+      Object: 033C24:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: dunPrisonerFaction
       Object: 0AA784:Skyrim.esm
@@ -64,9 +65,8 @@ VirtualMachineAdapter:
       Name: WEPlayerEnemy
       Object: 01DD0F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_TravelMarker1
-      Object: 0331C0:Dragonborn.esm
-      Alias: 9
+      Name: WEPlayerFriend
+      Object: 01DD09:Skyrim.esm
   - Name: WEScript
     Properties:
     - MutagenObjectType: ScriptBoolProperty
@@ -105,11 +105,11 @@ VirtualMachineAdapter:
         Object: 017F8E:Dragonborn.esm
     - Name: wealiasscript
       Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: DisableOnUnload
       - MutagenObjectType: ScriptIntProperty
         Name: StopRegisteringUnloadingIfStageHasBeenSet
         Data: 10
-      - MutagenObjectType: ScriptBoolProperty
-        Name: DisableOnUnload
   - Property:
       Name: ''
       Object: 0331C0:Dragonborn.esm

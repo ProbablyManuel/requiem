@@ -11,35 +11,77 @@ VirtualMachineAdapter:
   - Name: FXAlduinScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: stormSpell
-      Object: 0E771A:Skyrim.esm
+      Name: AlduinCracksFXS
+      Object: 0154BB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: CrumblingStatue1
-      Object: 0D9A7B:Skyrim.esm
+      Name: AlduinDeathBloom
+      Object: 0154C4:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: HavokRocksExplosionBig
-      Object: 105CB2:Skyrim.esm
+      Name: AlduinDeathExplosion
+      Object: 0E770F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: AlduinHolesFXS
-      Object: 0E7719:Skyrim.esm
+      Name: AlduinDeathFXS
+      Object: 0E7718:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: AlduinFadeFXS
       Object: 106BB6:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: QSTAlduinDeathSoulsB
-      Object: 10E0F1:Skyrim.esm
+      Name: AlduinHolesFXS
+      Object: 0E7719:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: FXAlduinSoulEscapeEffect
-      Object: 0154BE:Skyrim.esm
+      Name: AlduinUnderskin
+      Object: 0E7711:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ShoutAlduinDeathExplosion
-      Object: 0E771C:Skyrim.esm
+      Name: CrumblingStatue1
+      Object: 0D9A7B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CrumblingStatue2
+      Object: 0D9A87:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CrumblingStatue3
+      Object: 0D9A7A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CrumblingStatue4
+      Object: 0D9A86:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ExplosionShoutAreaAlduinDeathBig
       Object: 07E8FA:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: FXAlduinSoulEscapeEffect
+      Object: 0154BE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: HavokRocksExplosion
       Object: 0E7722:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HavokRocksExplosionBig
+      Object: 105CB2:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MAGAlduinFinalExplosionImod
+      Object: 106BB7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MQKillDragonFaction
+      Object: 035D62:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QSTAlduinDeathExplosionA
+      Object: 10E0ED:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QSTAlduinDeathExplosionB
+      Object: 10E0EE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QSTAlduinDeathExplosionC
+      Object: 10E0EF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QSTAlduinDeathSoulsA
+      Object: 10E0F0:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: QSTAlduinDeathSoulsB
+      Object: 10E0F1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RockFallMarker1
+      Object: 105CAF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RockFallMarker2
+      Object: 105CB1:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: RockFallMarker3
       Object: 105CB1:Skyrim.esm
@@ -47,65 +89,23 @@ VirtualMachineAdapter:
       Name: RockFallMarkerBig1
       Object: 105CB3:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: AlduinUnderskin
-      Object: 0E7711:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RockFallMarker2
-      Object: 105CB1:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: QSTAlduinDeathExplosionA
-      Object: 10E0ED:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MQKillDragonFaction
-      Object: 035D62:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AlduinDeathBloom
-      Object: 0154C4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SovngardeClear
-      Object: 10D9EC:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CrumblingStatue3
-      Object: 0D9A7A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: QSTAlduinDeathExplosionB
-      Object: 10E0EE:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CrumblingStatue4
-      Object: 0D9A86:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AlduinDeathExplosion
-      Object: 0E770F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WeatherForm
-      Object: 10C32F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AlduinCracksFXS
-      Object: 0154BB:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: RockFallMarkerBig2
       Object: 105CB4:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: QSTAlduinDeathExplosionC
-      Object: 10E0EF:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MAGAlduinFinalExplosionImod
-      Object: 106BB7:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: RockFallMarkerBig3
       Object: 105CB5:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: AlduinDeathFXS
-      Object: 0E7718:Skyrim.esm
+      Name: ShoutAlduinDeathExplosion
+      Object: 0E771C:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: CrumblingStatue2
-      Object: 0D9A87:Skyrim.esm
+      Name: SovngardeClear
+      Object: 10D9EC:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: RockFallMarker1
-      Object: 105CAF:Skyrim.esm
+      Name: stormSpell
+      Object: 0E771A:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: QSTAlduinDeathSoulsA
-      Object: 10E0F0:Skyrim.esm
+      Name: WeatherForm
+      Object: 10C32F:Skyrim.esm
 ObjectBounds:
   First: -320, -352, 0
   Second: 320, 352, 384

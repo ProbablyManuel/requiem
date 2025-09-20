@@ -5,14 +5,14 @@ VirtualMachineAdapter:
   - Name: REQ_DispelSpellsOnStart
     Properties:
     - MutagenObjectType: ScriptObjectListProperty
+      Name: ToDispel
+      Objects:
+      - Name: ''
+    - MutagenObjectType: ScriptObjectListProperty
       Name: ToRemove
       Objects:
       - Name: ''
         Object: 6AA964:Requiem.esp
-    - MutagenObjectType: ScriptObjectListProperty
-      Name: ToDispel
-      Objects:
-      - Name: ''
 Name:
   TargetLanguage: English
   Value: 'REQ GM: Attack Stamina Drain - End'

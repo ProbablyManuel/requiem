@@ -4,14 +4,14 @@ VirtualMachineAdapter:
   Scripts:
   - Name: REQ_SwapTo
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Remove
-      Object: 10710B:Skyrim.esm
     - MutagenObjectType: ScriptObjectListProperty
       Name: Add
       Objects:
       - Name: ''
         Object: 10710A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Remove
+      Object: 10710B:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Hooded Blue Robes

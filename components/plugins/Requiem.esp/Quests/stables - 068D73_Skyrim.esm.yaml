@@ -5,49 +5,61 @@ VirtualMachineAdapter:
   - Name: QF_Stables_00068D73
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_WhiterunHorse
+      Name: Alias_MarkarthHorse
       Object: 068D73:Skyrim.esm
-      Alias: 25
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RiftenHostlerBackup
-      Object: 068D73:Skyrim.esm
-      Alias: 36
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_PlayersHorse
-      Object: 068D73:Skyrim.esm
-      Alias: 40
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RiftenHostler
-      Object: 068D73:Skyrim.esm
-      Alias: 35
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SolitudeHostlerBackup
-      Object: 068D73:Skyrim.esm
-      Alias: 39
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_WindhelmHorse
-      Object: 068D73:Skyrim.esm
-      Alias: 31
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_WhiterunHostler
-      Object: 068D73:Skyrim.esm
-      Alias: 26
+      Alias: 28
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_MarkarthHostler
       Object: 068D73:Skyrim.esm
       Alias: 29
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MarkarthHostlerBackup
+      Object: 068D73:Skyrim.esm
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_PlayersHorse
+      Object: 068D73:Skyrim.esm
+      Alias: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RiftenHorse
+      Object: 068D73:Skyrim.esm
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RiftenHostler
+      Object: 068D73:Skyrim.esm
+      Alias: 35
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_RiftenHostlerBackup
+      Object: 068D73:Skyrim.esm
+      Alias: 36
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SolitudeHorse
+      Object: 068D73:Skyrim.esm
+      Alias: 37
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_SolitudeHostler
       Object: 068D73:Skyrim.esm
       Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SolitudeHostlerBackup
+      Object: 068D73:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_WhiterunHorse
+      Object: 068D73:Skyrim.esm
+      Alias: 25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_WhiterunHostler
+      Object: 068D73:Skyrim.esm
+      Alias: 26
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_WhiterunHostlerBackup
       Object: 068D73:Skyrim.esm
       Alias: 27
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_RiftenHorse
+      Name: Alias_WindhelmHorse
       Object: 068D73:Skyrim.esm
-      Alias: 34
+      Alias: 31
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_WindhelmHostler
       Object: 068D73:Skyrim.esm
@@ -56,18 +68,6 @@ VirtualMachineAdapter:
       Name: Alias_WindhelmHostlerBackup
       Object: 068D73:Skyrim.esm
       Alias: 32
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SolitudeHorse
-      Object: 068D73:Skyrim.esm
-      Alias: 37
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MarkarthHorse
-      Object: 068D73:Skyrim.esm
-      Alias: 28
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MarkarthHostlerBackup
-      Object: 068D73:Skyrim.esm
-      Alias: 30
   FileName: QF_Stables_00068D73
   Fragments:
   - Stage: 10
@@ -92,11 +92,11 @@ VirtualMachineAdapter:
         Object: 068D73:Skyrim.esm
         Alias: 28
       - MutagenObjectType: ScriptObjectProperty
-        Name: MySelf
-        Object: 03F351:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: LvlHorseSaddled
         Object: 109E41:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MySelf
+        Object: 03F351:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: StablesFaction
         Object: 04C446:Skyrim.esm
@@ -120,11 +120,11 @@ VirtualMachineAdapter:
         Object: 068D73:Skyrim.esm
         Alias: 25
       - MutagenObjectType: ScriptObjectProperty
-        Name: MySelf
-        Object: 068D74:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: LvlHorseSaddled
         Object: 109E3D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MySelf
+        Object: 068D74:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: StablesFaction
         Object: 093B1F:Skyrim.esm
@@ -148,11 +148,11 @@ VirtualMachineAdapter:
         Object: 068D73:Skyrim.esm
         Alias: 31
       - MutagenObjectType: ScriptObjectProperty
-        Name: MySelf
-        Object: 09848C:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: LvlHorseSaddled
         Object: 109AB1:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MySelf
+        Object: 09848C:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: StablesFaction
         Object: 047CB3:Skyrim.esm
@@ -176,11 +176,11 @@ VirtualMachineAdapter:
         Object: 068D73:Skyrim.esm
         Alias: 34
       - MutagenObjectType: ScriptObjectProperty
-        Name: MySelf
-        Object: 0984AB:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: LvlHorseSaddled
         Object: 109E40:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MySelf
+        Object: 0984AB:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: StablesFaction
         Object: 0A2524:Skyrim.esm
@@ -204,11 +204,11 @@ VirtualMachineAdapter:
         Object: 068D73:Skyrim.esm
         Alias: 37
       - MutagenObjectType: ScriptObjectProperty
-        Name: MySelf
-        Object: 0CE66F:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: LvlHorseSaddled
         Object: 109E3E:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MySelf
+        Object: 0CE66F:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: StablesFaction
         Object: 0C13F7:Skyrim.esm

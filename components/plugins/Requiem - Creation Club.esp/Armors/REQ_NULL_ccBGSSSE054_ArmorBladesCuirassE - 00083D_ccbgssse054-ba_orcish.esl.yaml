@@ -4,12 +4,12 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultsetstageonplayeracquireitem
     Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: StageToSet
-      Data: 80
     - MutagenObjectType: ScriptObjectProperty
       Name: myQST
       Object: 000822:ccbgssse054-ba_orcish.esl
+    - MutagenObjectType: ScriptIntProperty
+      Name: StageToSet
+      Data: 80
 Name:
   TargetLanguage: English
   Value: Orcish Plate Armor

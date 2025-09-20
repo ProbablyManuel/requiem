@@ -5,14 +5,17 @@ VirtualMachineAdapter:
   - Name: REQ_ArcaneExperimentation
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: SoulGemGrandFilled
-      Object: 02E4FF:Skyrim.esm
+      Name: CreatedWeapon1
+      Object: 03EACB:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CreatedWeapon2
+      Object: 03EACC:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: CreatedWeapon3
       Object: 03EACE:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: CreatedWeapon1
-      Object: 03EACB:Requiem.esp
+      Name: CreatedWeapon4
+      Object: 03EAD1:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: CreatedWeapon5
       Object: 03EAD3:Requiem.esp
@@ -20,11 +23,8 @@ VirtualMachineAdapter:
       Name: IronDagger
       Object: 01397E:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: CreatedWeapon4
-      Object: 03EAD1:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CreatedWeapon2
-      Object: 03EACC:Requiem.esp
+      Name: SoulGemGrandFilled
+      Object: 02E4FF:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Artificer's Insight

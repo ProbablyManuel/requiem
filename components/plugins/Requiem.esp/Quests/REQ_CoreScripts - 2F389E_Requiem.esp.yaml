@@ -5,49 +5,62 @@ VirtualMachineAdapter:
   - Name: REQ_SetupValidation
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: SkyProcMissing
-      Object: 9715CC:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SKSE_missing
-      Object: 604BBA:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: NoNewGame
-      Object: 9715CA:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SkyProcOutdated
-      Object: 973D6A:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UpgradeForbidden
-      Object: 9715CB:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: BashedPatch_TestList
       Object: 10E4F4:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: BashedPatchFailed
       Object: 999063:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: DowngradeForbidden
+      Object: AD3947:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NoNewGame
+      Object: 9715CA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: SKSE_broken
       Object: 604BBB:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: DowngradeForbidden
-      Object: AD3947:Requiem.esp
+      Name: SKSE_missing
+      Object: 604BBA:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkyProcMissing
+      Object: 9715CC:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SkyProcOutdated
+      Object: 973D6A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UpgradeForbidden
+      Object: 9715CB:Requiem.esp
   - Name: REQ_VersionController
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: validator
+      Name: AutoUpdater
       Object: 2F389E:Requiem.esp
+      Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: VersionSkyProcPatch
-      Object: 973D69:Requiem.esp
+      Name: Fadeout
+      Object: 0B6301:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: InstallationBegins
       Object: 31DA58:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: InstallationDone
+      Object: 2A93A0:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InstallationSoundEffect
+      Object: AD381E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: UpdateBegins
+      Object: 2F38A2:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: UpdateDone
       Object: 2F38A3:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Fadeout
-      Object: 0B6301:Skyrim.esm
+      Name: UpdateFailed
+      Object: 9715CE:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: validator
+      Object: 2F389E:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: VersionPlugin
       Object: 2F389F:Requiem.esp
@@ -55,21 +68,8 @@ VirtualMachineAdapter:
       Name: VersionSavegame
       Object: 2F38A0:Requiem.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: UpdateBegins
-      Object: 2F38A2:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AutoUpdater
-      Object: 2F389E:Requiem.esp
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: InstallationDone
-      Object: 2A93A0:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: UpdateFailed
-      Object: 9715CE:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: InstallationSoundEffect
-      Object: AD381E:Requiem.esp
+      Name: VersionSkyProcPatch
+      Object: 973D69:Requiem.esp
   FileName: ''
   Aliases:
   - Property:

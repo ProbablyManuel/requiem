@@ -4,18 +4,18 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicAttachAshPileOnDeath
     Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fDelay
+      Data: 1.25
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ImmunityList
+      Object: 0F6534:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: MagicEffectShader
       Object: 0D22FB:Skyrim.esm
     - MutagenObjectType: ScriptFloatProperty
-      Name: fDelay
-      Data: 1.25
-    - MutagenObjectType: ScriptFloatProperty
       Name: ShaderDuration
       Data: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ImmunityList
-      Object: 0F6534:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Lightning Storm

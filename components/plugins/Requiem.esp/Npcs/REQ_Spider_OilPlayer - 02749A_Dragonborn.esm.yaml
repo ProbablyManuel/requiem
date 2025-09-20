@@ -8,53 +8,50 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DLC2EncExplodingSpiderSCRIPT
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderCrumbleExplosion
-      Object: 032791:Dragonborn.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MagicDamageFrost
-      Object: 01CEAE:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bShouldHandleOnHit
     - MutagenObjectType: ScriptBoolProperty
       Name: bShouldExplode
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bShouldHandleOnHit
     - MutagenObjectType: ScriptObjectProperty
       Name: MagicDamageFire
       Object: 01CEAD:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: MagicDamageFrost
+      Object: 01CEAE:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: MagicDamageShock
       Object: 01CEAF:Skyrim.esm
-  - Name: DLC2EncExpSpiderGenericControlSCRIPT
-    Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: SpiderCrumbleExplosion
       Object: 032791:Dragonborn.esm
+  - Name: DLC2EncExpSpiderGenericControlSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2ExpSpiderFriendFaction
+      Object: 017964:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2ExpSpiderQuest
       Object: 017962:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DLC2ExpSpiderFriendFaction
-      Object: 017964:Dragonborn.esm
+      Name: SpiderCrumbleExplosion
+      Object: 032791:Dragonborn.esm
   - Name: DLC2ExpSpiderOilSCRIPT
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MagicDamageFire
-      Object: 01CEAD:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion2
-      Object: 0285D4:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: DLC2ExpSpiderOilCrumbleExplosion
       Object: 032791:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion6
-      Object: 0285D8:Dragonborn.esm
+      Name: MagicDamageFire
+      Object: 01CEAD:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: OilPool
       Object: 01DA00:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: TrapOilExplosion01
-      Object: 0889AE:Skyrim.esm
+      Name: SpiderExplosion1
+      Object: 01447C:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpiderExplosion2
+      Object: 0285D4:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: SpiderExplosion3
       Object: 0285D5:Dragonborn.esm
@@ -65,8 +62,11 @@ VirtualMachineAdapter:
       Name: SpiderExplosion5
       Object: 0285D7:Dragonborn.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: SpiderExplosion1
-      Object: 01447C:Dragonborn.esm
+      Name: SpiderExplosion6
+      Object: 0285D8:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapOilExplosion01
+      Object: 0889AE:Skyrim.esm
 Configuration:
   Flags:
   - AutoCalcStats

@@ -5,12 +5,25 @@ VirtualMachineAdapter:
   - Name: QF_FreeformRiften11_00041F91
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11BolliAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11HaelgaAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11HofgrirAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_FFRiften11IndarynAlias
+      Object: 041F91:Skyrim.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FFRiften11MarkAlias01
       Object: 041F91:Skyrim.esm
       Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pHReward
-      Object: 0A44CB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_FFRiften11MarkAlias02
       Object: 041F91:Skyrim.esm
@@ -20,41 +33,28 @@ VirtualMachineAdapter:
       Object: 041F91:Skyrim.esm
       Alias: 7
     - MutagenObjectType: ScriptObjectProperty
-      Name: pSReward
-      Object: 049313:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pMarkCount
-      Object: 041F96:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pThaneCount
-      Object: 065BE0:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiften11IndarynAlias
+      Name: Alias_FFRiften11SvanaAlias
       Object: 041F91:Skyrim.esm
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiften11HaelgaAlias
-      Object: 041F91:Skyrim.esm
-      Alias: 1
+      Alias: 0
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_USKPMarksContainer
       Object: 041F91:Skyrim.esm
       Alias: 10
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiften11SvanaAlias
-      Object: 041F91:Skyrim.esm
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
       Name: pFFRTQS
       Object: 065BDF:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiften11BolliAlias
-      Object: 041F91:Skyrim.esm
-      Alias: 2
+      Name: pHReward
+      Object: 0A44CB:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_FFRiften11HofgrirAlias
-      Object: 041F91:Skyrim.esm
-      Alias: 4
+      Name: pMarkCount
+      Object: 041F96:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pSReward
+      Object: 049313:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pThaneCount
+      Object: 065BE0:Skyrim.esm
   FileName: QF_FreeformRiften11_00041F91
   Fragments:
   - Stage: 40
@@ -102,11 +102,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
   - Property:
       Name: ''
       Object: 041F91:Skyrim.esm
@@ -115,11 +115,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
   - Property:
       Name: ''
       Object: 041F91:Skyrim.esm
@@ -128,11 +128,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
   - Property:
       Name: ''
       Object: 041F91:Skyrim.esm
@@ -141,11 +141,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
   - Property:
       Name: ''
       Object: 041F91:Skyrim.esm
@@ -154,11 +154,11 @@ VirtualMachineAdapter:
     - Name: defaultsetstagealiasscript
       Properties:
       - MutagenObjectType: ScriptIntProperty
-        Name: TriggerType
-        Data: 1
-      - MutagenObjectType: ScriptIntProperty
         Name: stage
         Data: 250
+      - MutagenObjectType: ScriptIntProperty
+        Name: TriggerType
+        Data: 1
   - Property:
       Name: ''
       Object: 041F91:Skyrim.esm
@@ -166,12 +166,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: FFRiften11MarkScript
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: pStage
-        Data: 30
       - MutagenObjectType: ScriptObjectProperty
         Name: pFFRiften11Quest
         Object: 041F91:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: pStage
+        Data: 30
   - Property:
       Name: ''
       Object: 041F91:Skyrim.esm
@@ -179,12 +179,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: FFRiften11MarkScript
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: pStage
-        Data: 40
       - MutagenObjectType: ScriptObjectProperty
         Name: pFFRiften11Quest
         Object: 041F91:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: pStage
+        Data: 40
   - Property:
       Name: ''
       Object: 041F91:Skyrim.esm
@@ -192,12 +192,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: FFRiften11MarkScript
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: pStage
-        Data: 50
       - MutagenObjectType: ScriptObjectProperty
         Name: pFFRiften11Quest
         Object: 041F91:Skyrim.esm
+      - MutagenObjectType: ScriptIntProperty
+        Name: pStage
+        Data: 50
 Name:
   TargetLanguage: English
   Value: Caught Red Handed

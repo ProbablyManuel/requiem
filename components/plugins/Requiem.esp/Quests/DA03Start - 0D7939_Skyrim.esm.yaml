@@ -5,12 +5,17 @@ VirtualMachineAdapter:
   - Name: QF_DA03Start_000D7939
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DA03Meat
+      Object: 0D7939:Skyrim.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DA03StartBarbasMeetMarker
+      Object: 0D7939:Skyrim.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_ImperialGateGuard1
       Object: 0D7939:Skyrim.esm
       Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA03
-      Object: 01BFC4:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_ImperialGateGuard2
       Object: 0D7939:Skyrim.esm
@@ -20,24 +25,19 @@ VirtualMachineAdapter:
       Object: 0D7939:Skyrim.esm
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_SonsGateGuard2
-      Object: 0D7939:Skyrim.esm
-      Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_SonsGateGuard1
       Object: 0D7939:Skyrim.esm
       Alias: 9
     - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_SonsGateGuard2
+      Object: 0D7939:Skyrim.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA03
+      Object: 01BFC4:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: Gold001
       Object: 00000F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DA03Meat
-      Object: 0D7939:Skyrim.esm
-      Alias: 11
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DA03StartBarbasMeetMarker
-      Object: 0D7939:Skyrim.esm
-      Alias: 12
   FileName: QF_DA03Start_000D7939
   Fragments:
   - Stage: 20

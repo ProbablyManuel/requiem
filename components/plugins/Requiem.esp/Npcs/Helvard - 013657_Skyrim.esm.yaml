@@ -9,17 +9,17 @@ VirtualMachineAdapter:
   - Name: pHelvardScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: DarkBrotherhoodQuest
+      Object: 01EA5C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: JarlOfFalkreath
       Object: 04D78E:Skyrim.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: DarkBrotherhoodQuest
-      Object: 01EA5C:Skyrim.esm
-    - MutagenObjectType: ScriptIntProperty
-      Name: pHelvardDie
-    - MutagenObjectType: ScriptObjectProperty
       Name: pDBSideContract11
       Object: 01EA67:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: pHelvardDie
   - Name: WIDeadBodyCleanupScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty

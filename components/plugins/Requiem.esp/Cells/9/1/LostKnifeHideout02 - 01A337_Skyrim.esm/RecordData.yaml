@@ -119,15 +119,15 @@ Temporary:
     Scripts:
     - Name: REQ_AddItems
       Properties:
+      - MutagenObjectType: ScriptIntListProperty
+        Name: Amount
+        Data:
+        - 21
       - MutagenObjectType: ScriptObjectListProperty
         Name: Items
         Objects:
         - Name: ''
           Object: 0508CA:Skyrim.esm
-      - MutagenObjectType: ScriptIntListProperty
-        Name: Amount
-        Data:
-        - 21
   Base: 02064F:Skyrim.esm
   Lock:
     Level: Apprentice

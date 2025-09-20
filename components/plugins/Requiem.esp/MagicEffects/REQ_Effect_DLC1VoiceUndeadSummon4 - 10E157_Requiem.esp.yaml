@@ -4,32 +4,32 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicimodbeginloopend
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: IntroFX
-      Object: 0F756D:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fImodStrength
-      Data: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: OutroFX
-      Object: 0F756F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: LoopFX
-      Object: 0F756E:Skyrim.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: bPlayerOnly
     - MutagenObjectType: ScriptFloatProperty
       Name: fDelay
       Data: 0.01
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fImodStrength
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroFX
+      Object: 0F756D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LoopFX
+      Object: 0F756E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OutroFX
+      Object: 0F756F:Skyrim.esm
   - Name: Req_AlduinAbilityScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TeleportXHeader
-      Object: 5C950C:Requiem.esp
     - MutagenObjectType: ScriptIntProperty
       Name: Marked
     - MutagenObjectType: ScriptIntProperty
       Name: Random
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TeleportXHeader
+      Object: 5C950C:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Summon Undead From Soul Cairn

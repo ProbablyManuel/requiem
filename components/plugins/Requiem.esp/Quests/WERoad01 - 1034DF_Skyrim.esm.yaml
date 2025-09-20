@@ -14,9 +14,33 @@ VirtualMachineAdapter:
   - Name: QF_WERoad01_001034DF
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Trigger
+      Name: Alias_Farmer01
       Object: 1034DF:Skyrim.esm
-      Alias: 1
+      Alias: 16
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Farmer02
+      Object: 1034DF:Skyrim.esm
+      Alias: 34
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_InnCenterMarker
+      Object: 1034DF:Skyrim.esm
+      Alias: 39
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MarkerInCurrentHold
+      Object: 1034DF:Skyrim.esm
+      Alias: 38
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 1034DF:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 1034DF:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 1034DF:Skyrim.esm
+      Alias: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_myHoldSons
       Object: 1034DF:Skyrim.esm
@@ -26,42 +50,18 @@ VirtualMachineAdapter:
       Object: 1034DF:Skyrim.esm
       Alias: 9
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Farmer01
-      Object: 1034DF:Skyrim.esm
-      Alias: 16
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldImperial
-      Object: 1034DF:Skyrim.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MarkerInCurrentHold
-      Object: 1034DF:Skyrim.esm
-      Alias: 38
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_InnCenterMarker
-      Object: 1034DF:Skyrim.esm
-      Alias: 39
-    - MutagenObjectType: ScriptIntProperty
-      Name: GoldGivenF1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Farmer02
-      Object: 1034DF:Skyrim.esm
-      Alias: 34
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_TravelMarker2
       Object: 1034DF:Skyrim.esm
       Alias: 10
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldLocation
+      Name: Alias_Trigger
       Object: 1034DF:Skyrim.esm
-      Alias: 4
+      Alias: 1
     - MutagenObjectType: ScriptObjectProperty
       Name: Gold
       Object: 00000F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldContested
-      Object: 1034DF:Skyrim.esm
-      Alias: 6
+    - MutagenObjectType: ScriptIntProperty
+      Name: GoldGivenF1
   FileName: QF_WERoad01_001034DF
   Fragments:
   - Unknown2: 1
@@ -92,10 +92,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
+        Name: DisableOnUnload
         Data: True
       - MutagenObjectType: ScriptBoolProperty
-        Name: DisableOnUnload
+        Name: RegisterLoadingAndUnloading
         Data: True
     - Name: WECrimeFactionAliasScript
       Properties:
@@ -106,14 +106,38 @@ VirtualMachineAdapter:
         Name: CrimeFactionFalkreath
         Object: 028170:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: ReachHoldLocation
-        Object: 016769:Skyrim.esm
+        Name: CrimeFactionHaafingar
+        Object: 029DB0:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionHjaalmarch
+        Object: 02816D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionPale
+        Object: 02816E:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: CrimeFactionReach
         Object: 02816C:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: WinterholdHoldLocation
-        Object: 01676B:Skyrim.esm
+        Name: CrimeFactionRift
+        Object: 02816B:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionWhiterun
+        Object: 0267EA:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionWinterhold
+        Object: 02816F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EastmarchHoldLocation
+        Object: 01676A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FalkreathHoldLocation
+        Object: 01676F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HaafingarHoldLocation
+        Object: 016770:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HjaalmarchHoldLocation
+        Object: 01676E:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: myHoldLocation
         Object: 1034DF:Skyrim.esm
@@ -122,41 +146,17 @@ VirtualMachineAdapter:
         Name: PaleHoldLocation
         Object: 01676D:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionHjaalmarch
-        Object: 02816D:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionPale
-        Object: 02816E:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionWhiterun
-        Object: 0267EA:Skyrim.esm
+        Name: ReachHoldLocation
+        Object: 016769:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: RiftHoldLocation
         Object: 01676C:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: FalkreathHoldLocation
-        Object: 01676F:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: WhiterunHoldLocation
         Object: 016772:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionHaafingar
-        Object: 029DB0:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: EastmarchHoldLocation
-        Object: 01676A:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionRift
-        Object: 02816B:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: HaafingarHoldLocation
-        Object: 016770:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: HjaalmarchHoldLocation
-        Object: 01676E:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionWinterhold
-        Object: 02816F:Skyrim.esm
+        Name: WinterholdHoldLocation
+        Object: 01676B:Skyrim.esm
   - Property:
       Name: ''
       Object: 1034DF:Skyrim.esm
@@ -165,10 +165,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
+        Name: DisableOnUnload
         Data: True
       - MutagenObjectType: ScriptBoolProperty
-        Name: DisableOnUnload
+        Name: RegisterLoadingAndUnloading
         Data: True
     - Name: WECrimeFactionAliasScript
       Properties:
@@ -179,14 +179,38 @@ VirtualMachineAdapter:
         Name: CrimeFactionFalkreath
         Object: 028170:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: ReachHoldLocation
-        Object: 016769:Skyrim.esm
+        Name: CrimeFactionHaafingar
+        Object: 029DB0:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionHjaalmarch
+        Object: 02816D:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionPale
+        Object: 02816E:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: CrimeFactionReach
         Object: 02816C:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: WinterholdHoldLocation
-        Object: 01676B:Skyrim.esm
+        Name: CrimeFactionRift
+        Object: 02816B:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionWhiterun
+        Object: 0267EA:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: CrimeFactionWinterhold
+        Object: 02816F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EastmarchHoldLocation
+        Object: 01676A:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: FalkreathHoldLocation
+        Object: 01676F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HaafingarHoldLocation
+        Object: 016770:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: HjaalmarchHoldLocation
+        Object: 01676E:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: myHoldLocation
         Object: 1034DF:Skyrim.esm
@@ -195,41 +219,17 @@ VirtualMachineAdapter:
         Name: PaleHoldLocation
         Object: 01676D:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionHjaalmarch
-        Object: 02816D:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionPale
-        Object: 02816E:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionWhiterun
-        Object: 0267EA:Skyrim.esm
+        Name: ReachHoldLocation
+        Object: 016769:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
         Name: RiftHoldLocation
         Object: 01676C:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: FalkreathHoldLocation
-        Object: 01676F:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
         Name: WhiterunHoldLocation
         Object: 016772:Skyrim.esm
       - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionHaafingar
-        Object: 029DB0:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: EastmarchHoldLocation
-        Object: 01676A:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionRift
-        Object: 02816B:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: HaafingarHoldLocation
-        Object: 016770:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: HjaalmarchHoldLocation
-        Object: 01676E:Skyrim.esm
-      - MutagenObjectType: ScriptObjectProperty
-        Name: CrimeFactionWinterhold
-        Object: 02816F:Skyrim.esm
+        Name: WinterholdHoldLocation
+        Object: 01676B:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Farmer refugees after dragon attack

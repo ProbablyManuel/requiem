@@ -9,45 +9,45 @@ VirtualMachineAdapter:
   Scripts:
   - Name: defaultGhostScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostHalfDamagePerk
-      Object: 0D205B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDefaultGhostWeaponFlickerList
-      Object: 0D2058:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostAbilityNew
-      Object: 0D2056:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pdefaultGhostLeveledList
-      Object: 10F805:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bdefaultLoot
+      Data: True
     - MutagenObjectType: ScriptBoolProperty
       Name: bFade
       Data: True
     - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostDeathFXShader
-      Object: 101727:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pdefaultGhostDeathExplosion
-      Object: 0369CA:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDisintegrationMainImmunityList
-      Object: 0F6534:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pGhostFXShader
-      Object: 03B6CB:Skyrim.esm
+      Name: pDefaultAshPileGhost
+      Object: 101048:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: pDefaultGhostCorpse
       Object: 0C674B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostDeathExplosion
+      Object: 0369CA:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pdefaultGhostLeveledList
+      Object: 10F805:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDefaultGhostWeaponFlickerList
+      Object: 0D2058:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pDisintegrationMainImmunityList
+      Object: 0F6534:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostAbilityNew
+      Object: 0D2056:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostDeathFXShader
+      Object: 101727:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostFXShader
+      Object: 03B6CB:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pGhostHalfDamagePerk
+      Object: 0D205B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: pGhostResistsAbility
       Object: 0D2060:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bdefaultLoot
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: pDefaultAshPileGhost
-      Object: 101048:Skyrim.esm
   - Name: masterambushscript
     Properties:
     - MutagenObjectType: ScriptBoolProperty

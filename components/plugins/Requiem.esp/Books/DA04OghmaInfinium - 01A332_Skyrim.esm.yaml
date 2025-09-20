@@ -4,20 +4,20 @@ VirtualMachineAdapter:
   Scripts:
   - Name: OghmaInfiniumScript
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ChoiceMessage
-      Object: 0F6010:Skyrim.esm
-    - MutagenObjectType: ScriptBoolProperty
-      Name: HasBeenRead
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA04
-      Object: 02D512:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MySelf
-      Object: 01A332:Skyrim.esm
     - MutagenObjectType: ScriptIntProperty
       Name: Advancement
       Data: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ChoiceMessage
+      Object: 0F6010:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA04
+      Object: 02D512:Skyrim.esm
+    - MutagenObjectType: ScriptBoolProperty
+      Name: HasBeenRead
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MySelf
+      Object: 01A332:Skyrim.esm
 ObjectBounds:
   First: -12, -16, -5
   Second: 11, 16, 4

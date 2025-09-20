@@ -59,22 +59,22 @@ Temporary:
   LocationReference: 018EE3:Skyrim.esm
   Placement:
     Position: 4994.544, -5908.4053, -863.99994
-    Rotation: 0, -0, 3.1331902
+    Rotation: 0, 0, 3.1331902
 - MutagenObjectType: PlacedObject
   FormKey: 10949F:Skyrim.esm
   VirtualMachineAdapter:
     Scripts:
     - Name: REQ_AddItems
       Properties:
+      - MutagenObjectType: ScriptIntListProperty
+        Name: Amount
+        Data:
+        - 6
       - MutagenObjectType: ScriptObjectListProperty
         Name: Items
         Objects:
         - Name: ''
           Object: 101074:Skyrim.esm
-      - MutagenObjectType: ScriptIntListProperty
-        Name: Amount
-        Data:
-        - 6
   Base: 020671:Skyrim.esm
   LocationReference: 018EE3:Skyrim.esm
   Placement:

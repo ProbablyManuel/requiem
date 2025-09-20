@@ -4,25 +4,25 @@ VirtualMachineAdapter:
   Scripts:
   - Name: magicImodScript
     Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: fStaticDelay
+      Data: 0.15
     - MutagenObjectType: ScriptObjectProperty
       Name: IntroFX
       Object: 0486F7:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: OutroFX
       Object: 0440D4:Skyrim.esm
-    - MutagenObjectType: ScriptFloatProperty
-      Name: fStaticDelay
-      Data: 0.15
     - MutagenObjectType: ScriptObjectProperty
       Name: StaticFX
       Object: 0486F4:Skyrim.esm
   - Name: shaderparticlegeometryscript
     Properties:
     - MutagenObjectType: ScriptFloatProperty
-      Name: FadeOutTime
+      Name: FadeInTime
       Data: 0.1
     - MutagenObjectType: ScriptFloatProperty
-      Name: FadeInTime
+      Name: FadeOutTime
       Data: 0.1
     - MutagenObjectType: ScriptObjectProperty
       Name: PSGD

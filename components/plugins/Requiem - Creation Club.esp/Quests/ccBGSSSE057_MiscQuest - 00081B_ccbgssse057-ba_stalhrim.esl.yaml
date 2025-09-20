@@ -26,12 +26,12 @@ VirtualMachineAdapter:
     Scripts:
     - Name: DefaultOnReadSetQuestStage
       Properties:
-      - MutagenObjectType: ScriptIntProperty
-        Name: myStage
-        Data: 20
       - MutagenObjectType: ScriptObjectProperty
         Name: myQuest
         Object: 00081B:ccbgssse057-ba_stalhrim.esl
+      - MutagenObjectType: ScriptIntProperty
+        Name: myStage
+        Data: 20
 Flags:
 - RunOnce
 Priority: 15

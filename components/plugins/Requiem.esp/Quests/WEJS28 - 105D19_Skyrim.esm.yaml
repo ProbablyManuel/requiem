@@ -14,13 +14,37 @@ VirtualMachineAdapter:
   - Name: QF_WEJS28_00105D19
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldLocation
+      Name: Alias_Assassin
       Object: 105D19:Skyrim.esm
-      Alias: 4
+      Alias: 39
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_CenterMarker
       Object: 105D19:Skyrim.esm
       Alias: 63
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_InnCenterMarker
+      Object: 105D19:Skyrim.esm
+      Alias: 65
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MarkerInCurrentHold
+      Object: 105D19:Skyrim.esm
+      Alias: 64
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldContested
+      Object: 105D19:Skyrim.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldImperial
+      Object: 105D19:Skyrim.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldLocation
+      Object: 105D19:Skyrim.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_myHoldSons
+      Object: 105D19:Skyrim.esm
+      Alias: 8
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Note
       Object: 105D19:Skyrim.esm
@@ -30,41 +54,17 @@ VirtualMachineAdapter:
       Object: 105D19:Skyrim.esm
       Alias: 68
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Scene_Marker2
-      Object: 105D19:Skyrim.esm
-      Alias: 53
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_MarkerInCurrentHold
-      Object: 105D19:Skyrim.esm
-      Alias: 64
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_InnCenterMarker
-      Object: 105D19:Skyrim.esm
-      Alias: 65
-    - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Scene_Marker1
       Object: 105D19:Skyrim.esm
       Alias: 54
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldSons
+      Name: Alias_Scene_Marker2
       Object: 105D19:Skyrim.esm
-      Alias: 8
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Assassin
-      Object: 105D19:Skyrim.esm
-      Alias: 39
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldImperial
-      Object: 105D19:Skyrim.esm
-      Alias: 7
+      Alias: 53
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Trigger
       Object: 105D19:Skyrim.esm
       Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_myHoldContested
-      Object: 105D19:Skyrim.esm
-      Alias: 6
   FileName: QF_WEJS28_00105D19
   Fragments:
   - Unknown2: 1
@@ -83,10 +83,10 @@ VirtualMachineAdapter:
     - Name: wealiasscript
       Properties:
       - MutagenObjectType: ScriptBoolProperty
-        Name: RegisterLoadingAndUnloading
+        Name: DisableOnUnload
         Data: True
       - MutagenObjectType: ScriptBoolProperty
-        Name: DisableOnUnload
+        Name: RegisterLoadingAndUnloading
         Data: True
 Name:
   TargetLanguage: English

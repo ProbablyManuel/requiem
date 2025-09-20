@@ -68,11 +68,11 @@ Temporary:
     - Name: defaultDisableHavokOnLoad
       Properties:
       - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
         Name: havokOnHit
       - MutagenObjectType: ScriptBoolProperty
         Name: havokOnZKey
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
       - MutagenObjectType: ScriptObjectProperty
         Name: linkHavokPartner
   Base: 01D4EC:Skyrim.esm
