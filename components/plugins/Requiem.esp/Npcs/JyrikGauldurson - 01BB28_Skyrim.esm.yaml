@@ -6,16 +6,6 @@ SkyrimMajorRecordFlags:
 - Compressed
 VirtualMachineAdapter:
   Scripts:
-  - Name: masterambushscript
-    Properties:
-    - MutagenObjectType: ScriptBoolProperty
-      Name: ambushOnTrigger
-      Data: True
-  - Name: MG02BossScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MG02BossScene
-      Object: 0EA5E8:Skyrim.esm
   - Name: dunsaarthalmasterscript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -42,6 +32,16 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: stormAbility
       Object: 0ED2FC:Skyrim.esm
+  - Name: masterambushscript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: ambushOnTrigger
+      Data: True
+  - Name: MG02BossScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MG02BossScene
+      Object: 0EA5E8:Skyrim.esm
 Configuration:
   Flags:
   - IsGhost
@@ -62,10 +62,10 @@ Configuration:
 Template: 06F83E:Skyrim.esm
 Race: 109C7C:Skyrim.esm
 ActorEffect:
+- 03280E:Requiem.esp
 - 034C58:Skyrim.esm
 - 040000:Skyrim.esm
 - 0ABDF3:Skyrim.esm
-- 03280E:Requiem.esp
 CombatOverridePackageList: 0ECF44:Skyrim.esm
 Perks:
 - Perk: 0581EA:Skyrim.esm
@@ -170,9 +170,7 @@ PlayerSkills:
   Health: 55
   Magicka: 37
   Stamina: 49
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 CombatStyle: 038A24:Skyrim.esm
 NAM5: 255
 Height: 1

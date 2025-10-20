@@ -95,46 +95,46 @@ VirtualMachineAdapter:
   - Unknown2: 1
     ScriptName: QF_CR08_00025251
     FragmentName: Fragment_2
-  - Stage: 22
-    Unknown2: 1
-    ScriptName: QF_CR08_00025251
-    FragmentName: Fragment_9
-  - Stage: 10
-    Unknown2: 1
-    ScriptName: QF_CR08_00025251
-    FragmentName: Fragment_4
-  - Stage: 25
-    Unknown2: 1
-    ScriptName: QF_CR08_00025251
-    FragmentName: Fragment_10
-  - Stage: 20
-    Unknown2: 1
-    ScriptName: QF_CR08_00025251
-    FragmentName: Fragment_7
-  - Stage: 200
-    Unknown2: 1
-    ScriptName: QF_CR08_00025251
-    FragmentName: Fragment_12
-  - Stage: 50
-    Unknown2: 1
-    ScriptName: QF_CR08_00025251
-    FragmentName: Fragment_13
   - Stage: 1
     Unknown2: 1
     ScriptName: QF_CR08_00025251
     FragmentName: Fragment_6
-  - Stage: 100
+  - Stage: 10
     Unknown2: 1
     ScriptName: QF_CR08_00025251
-    FragmentName: Fragment_11
+    FragmentName: Fragment_4
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_7
   - Stage: 21
     Unknown2: 1
     ScriptName: QF_CR08_00025251
     FragmentName: Fragment_8
+  - Stage: 22
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_9
+  - Stage: 25
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_10
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_13
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_11
   - Stage: 150
     Unknown2: 1
     ScriptName: QF_CR08_00025251
     FragmentName: Fragment_20
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_CR08_00025251
+    FragmentName: Fragment_12
   - Stage: 250
     Unknown2: 1
     ScriptName: QF_CR08_00025251
@@ -196,14 +196,12 @@ DialogConditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 025251:Skyrim.esm
-    SecondUnusedIntParameter: -285350528
     VariableName: ::IsActive_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 04B2D9:Skyrim.esm
-    SecondUnusedIntParameter: -285350496
     VariableName: ::StoryQuestIsRunning_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo

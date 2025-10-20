@@ -38,6 +38,10 @@ Voice: 0176F7:Dawnguard.esm
 Template: 00282B:Dawnguard.esm
 Race: 08883C:Skyrim.esm
 ActorEffect:
+- 002838:Dawnguard.esm
+- 002839:Dawnguard.esm
+- 10E159:Requiem.esp
+- ADDDC7:Requiem.esp
 - 033976:Skyrim.esm
 - 0400AC:Skyrim.esm
 - 0BB96B:Skyrim.esm
@@ -46,10 +50,6 @@ ActorEffect:
 - 0F5B5D:Skyrim.esm
 - 10F7F7:Skyrim.esm
 - 10F7F8:Skyrim.esm
-- 002838:Dawnguard.esm
-- 002839:Dawnguard.esm
-- 10E159:Requiem.esp
-- ADDDC7:Requiem.esp
 AttackRace: 013746:Skyrim.esm
 Perks:
 - Perk: 03AF81:Skyrim.esm
@@ -198,6 +198,12 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 203C40:Requiem.esp
+    Count: 1
+- Item:
+    Item: 5B5816:Requiem.esp
+    Count: 1
+- Item:
     Item: 02DF9A:Skyrim.esm
     Count: 1
 - Item:
@@ -208,12 +214,6 @@ Items:
     Count: 1
 - Item:
     Item: 10FAD4:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 203C40:Requiem.esp
-    Count: 1
-- Item:
-    Item: 5B5816:Requiem.esp
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -307,8 +307,6 @@ PlayerSkills:
   Health: 1098
   Magicka: 403
   Stamina: 314
-  Unused: 16743
-  Unused2: 0x415AEF
 HeadParts:
 - 05140A:Skyrim.esm
 - 08555F:Skyrim.esm

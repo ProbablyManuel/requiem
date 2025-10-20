@@ -27,14 +27,14 @@ Configuration:
   - Keywords
   HealthOffset: 80
 Factions:
+- Faction: 01C4E5:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 0208D9:Dragonborn.esm
+  Fluff: 0x000000
 - Faction: 05C84D:Skyrim.esm
   Fluff: 0x000000
 - Faction: 05C84E:Skyrim.esm
   Rank: -1
-  Fluff: 0x000000
-- Faction: 01C4E5:Dragonborn.esm
-  Fluff: 0x000000
-- Faction: 0208D9:Dragonborn.esm
   Fluff: 0x000000
 DeathItem: 032C79:Dragonborn.esm
 Voice: 0208DC:Dragonborn.esm
@@ -57,10 +57,10 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 07F6DF:Skyrim.esm
+    Item: 017720:Dragonborn.esm
     Count: 1
 - Item:
-    Item: 017720:Dragonborn.esm
+    Item: 07F6DF:Skyrim.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -149,9 +149,7 @@ PlayerSkills:
     Value: 0
   Health: 240
   Stamina: 290
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 CombatStyle: 01D9C8:Dragonborn.esm
 NAM5: 255
 Height: 1

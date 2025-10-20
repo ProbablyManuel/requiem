@@ -3,14 +3,6 @@ EditorID: WE23
 Version2: 10
 VirtualMachineAdapter:
   Scripts:
-  - Name: WEScript
-    Properties:
-    - MutagenObjectType: ScriptBoolProperty
-      Name: StopQuestWhenAliasesUnload
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WEParentS
-      Object: 098BB1:Skyrim.esm
   - Name: QF_WE23_00062103
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -77,6 +69,14 @@ VirtualMachineAdapter:
       Name: Alias_Trigger
       Object: 062103:Skyrim.esm
       Alias: 1
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
   FileName: QF_WE23_00062103
   Fragments:
   - Unknown2: 1

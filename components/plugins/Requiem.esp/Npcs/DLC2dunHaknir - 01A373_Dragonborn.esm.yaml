@@ -123,9 +123,9 @@ Voice: 0854ED:Skyrim.esm
 Template: 0B1F98:Skyrim.esm
 Race: 013746:Skyrim.esm
 ActorEffect:
-- 05030B:Skyrim.esm
 - 03804C:Dragonborn.esm
 - AE3A8A:Requiem.esp
+- 05030B:Skyrim.esm
 AttackRace: 013746:Skyrim.esm
 CombatOverridePackageList: 03805B:Dragonborn.esm
 Perks:
@@ -212,14 +212,14 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 03AD63:Skyrim.esm
-    Count: 2
-- Item:
     Item: 037FF2:Dragonborn.esm
     Count: 1
 - Item:
     Item: 037FF3:Dragonborn.esm
     Count: 1
+- Item:
+    Item: 03AD63:Skyrim.esm
+    Count: 2
 AIData:
   Aggression: VeryAggressive
   Confidence: Foolhardy
@@ -314,9 +314,7 @@ PlayerSkills:
   Health: 2189
   Magicka: 80
   Stamina: 2026
-  Unused: 16743
   GearedUpWeapons: 2
-  Unused2: 0x425AEF
 HeadParts:
 - 023FB7:Skyrim.esm
 - 0510B4:Skyrim.esm

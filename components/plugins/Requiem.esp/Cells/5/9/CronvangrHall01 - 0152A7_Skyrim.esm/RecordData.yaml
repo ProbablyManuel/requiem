@@ -45,37 +45,6 @@ Music: 094BDD:Skyrim.esm
 ImageSpace: 09F363:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedNpc
-  FormKey: 06443B:Skyrim.esm
-  Version2: 3
-  Base: 023AAA:Skyrim.esm
-  LinkedReferences:
-  - Reference: 029D94:Skyrim.esm
-  PersistentLocation: 01915B:Skyrim.esm
-  LocationReference: 01915B:Skyrim.esm
-  Placement:
-    Position: -2421.0002, -205.29462, -569.16534
-- MutagenObjectType: PlacedObject
-  FormKey: 07ED53:Skyrim.esm
-  Version2: 1
-  Base: 020662:Skyrim.esm
-  Scale: 0.9
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 01915B:Skyrim.esm
-  Placement:
-    Position: -4556.2744, -1788.43, -118.650734
-    Rotation: 0.042346645, 0.014376077, 5.084145
-- MutagenObjectType: PlacedObject
-  FormKey: 09AF7E:Skyrim.esm
-  Version2: 4
-  Base: 044964:Skyrim.esm
-  RagdollData: 0x0013F2330000000000000000000000000A762040D74AAABF6ADF0AC0009A3A3D70748E410000ACB8000000005CF9D83BE95A1E3E7FD9C6BD004BFA3EB5FB01420000F2B60000E0353ABB00BC3D1664BD26A16C3E
-  LocationReference: 01915B:Skyrim.esm
-  Placement:
-    Position: 1732.0205, -1360.0625, -1872.733
-- MutagenObjectType: PlacedNpc
   FormKey: 473E55:Requiem.esp
   Base: 37244A:Requiem.esp
   PersistentLocation: 01915B:Skyrim.esm
@@ -346,5 +315,36 @@ Temporary:
     Rotation: 0, 0, 1.5000023
   MajorFlags:
   - StartsDead
+- MutagenObjectType: PlacedNpc
+  FormKey: 06443B:Skyrim.esm
+  Version2: 3
+  Base: 023AAA:Skyrim.esm
+  LinkedReferences:
+  - Reference: 029D94:Skyrim.esm
+  PersistentLocation: 01915B:Skyrim.esm
+  LocationReference: 01915B:Skyrim.esm
+  Placement:
+    Position: -2421.0002, -205.29462, -569.16534
+- MutagenObjectType: PlacedObject
+  FormKey: 07ED53:Skyrim.esm
+  Version2: 1
+  Base: 020662:Skyrim.esm
+  Scale: 0.9
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01915B:Skyrim.esm
+  Placement:
+    Position: -4556.2744, -1788.43, -118.650734
+    Rotation: 0.042346645, 0.014376077, 5.084145
+- MutagenObjectType: PlacedObject
+  FormKey: 09AF7E:Skyrim.esm
+  Version2: 4
+  Base: 044964:Skyrim.esm
+  RagdollData: 0x0013F2330000000000000000000000000A762040D74AAABF6ADF0AC0009A3A3D70748E410000ACB8000000005CF9D83BE95A1E3E7FD9C6BD004BFA3EB5FB01420000F2B60000E0353ABB00BC3D1664BD26A16C3E
+  LocationReference: 01915B:Skyrim.esm
+  Placement:
+    Position: 1732.0205, -1360.0625, -1872.733
 MajorFlags:
 - 0x40000

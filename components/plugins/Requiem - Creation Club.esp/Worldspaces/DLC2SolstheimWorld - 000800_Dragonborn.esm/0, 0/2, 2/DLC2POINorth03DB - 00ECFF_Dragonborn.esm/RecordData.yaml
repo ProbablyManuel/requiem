@@ -54,165 +54,6 @@ Regions:
 - 02F78F:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 028EFA:Dragonborn.esm
-  Base: 0EF5A1:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67196.18, 92331.88, 1274.8027
-- MutagenObjectType: PlacedObject
-  FormKey: 028EFB:Dragonborn.esm
-  Base: 0EF5A1:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67272.86, 92661.91, 1231.5238
-- MutagenObjectType: PlacedObject
-  FormKey: 028F07:Dragonborn.esm
-  Base: 0ABD65:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67081.56, 92360.086, 1244.7177
-    Rotation: 0.12434424, 6.208653, 4.712389
-- MutagenObjectType: PlacedObject
-  FormKey: 028F08:Dragonborn.esm
-  Base: 0ABD65:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67244.92, 92579.7, 1218.0497
-    Rotation: 0.06241123, 6.1590695, 0.99226505
-- MutagenObjectType: PlacedObject
-  FormKey: 039EDC:Dragonborn.esm
-  Base: 018475:Dragonborn.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67439.08, 92324.734, 1249.0739
-    Rotation: 6.2409186, 6.133616, 2.9688697
-- MutagenObjectType: PlacedObject
-  FormKey: 039F00:Dragonborn.esm
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: REQ_AddItems
-      Properties:
-      - MutagenObjectType: ScriptIntListProperty
-        Name: Amount
-        Data:
-        - 1
-        - 1
-        - 1
-        - 1
-      - MutagenObjectType: ScriptObjectListProperty
-        Name: Items
-        Objects:
-        - Name: ''
-          Object: 000938:ccbgssse041-netchleather.esl
-        - Name: ''
-          Object: 00093C:ccbgssse041-netchleather.esl
-        - Name: ''
-          Object: 000941:ccbgssse041-netchleather.esl
-        - Name: ''
-          Object: 000911:ccbgssse041-netchleather.esl
-  Base: 025E48:Dragonborn.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67425.01, 92275.61, 1251.5295
-    Rotation: 0.0339676, 6.1951857, 0.19050618
-- MutagenObjectType: PlacedObject
-  FormKey: 039F02:Dragonborn.esm
-  Base: 0C2C1D:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67134.46, 92826.43, 1238.445
-    Rotation: 6.149521, 5.751441, 2.0266607
-- MutagenObjectType: PlacedObject
-  FormKey: 039F03:Dragonborn.esm
-  Base: 0FB9C9:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67106.016, 92772.664, 1213.9313
-    Rotation: 0.1299991, 6.243186, 0
-- MutagenObjectType: PlacedObject
-  FormKey: 039F04:Dragonborn.esm
-  Base: 0F7299:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67570.35, 92345.31, 1246.1635
-    Rotation: 0.009351474, 6.1535196, 3.0693936
-- MutagenObjectType: PlacedObject
-  FormKey: 039F05:Dragonborn.esm
-  Base: 018666:Dragonborn.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67626.23, 92301.38, 1221.0331
-    Rotation: 0.011384782, 6.08508, 6.249064
-- MutagenObjectType: PlacedObject
-  FormKey: 039F08:Dragonborn.esm
-  Base: 097F6C:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 66906.164, 92870.11, 1212.7031
-    Rotation: 0.120605744, 6.264755, 5.475578
-- MutagenObjectType: PlacedObject
-  FormKey: 039F0C:Dragonborn.esm
-  Base: 097F68:Skyrim.esm
-  Scale: 0.88
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67371.05, 92315.09, 1259.2205
-    Rotation: 0.017695893, 6.166861, 5.179863
-- MutagenObjectType: PlacedObject
-  FormKey: 039F0D:Dragonborn.esm
-  Base: 097F68:Skyrim.esm
-  Scale: 0.88
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67365.875, 92316.48, 1266.1394
-    Rotation: 0.088221155, 0.005227261, 3.7366416
-- MutagenObjectType: PlacedObject
-  FormKey: 039F0E:Dragonborn.esm
-  Base: 0B7879:Skyrim.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67522.96, 92426.625, 1225.3646
-    Rotation: 6.0445375, 5.8451653, 4.071162
-- MutagenObjectType: PlacedNpc
-  FormKey: 039F14:Dragonborn.esm
-  Base: 01B655:Dragonborn.esm
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: 039F18:Dragonborn.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 66550.56, 92471.82, 1607.4058
-    Rotation: 0, 0, 5.3631854
-- MutagenObjectType: PlacedNpc
-  FormKey: 039F15:Dragonborn.esm
-  Base: 01B655:Dragonborn.esm
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: 039F1B:Dragonborn.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 66878.17, 93246.96, 1171.8359
-    Rotation: 0, 0, 1.2400006
-- MutagenObjectType: PlacedNpc
-  FormKey: 039F16:Dragonborn.esm
-  Base: 01B656:Dragonborn.esm
-  LevelModifier: Medium
-  LinkedReferences:
-  - Reference: 039F1C:Dragonborn.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67413.05, 92486.79, 1233.8359
-- MutagenObjectType: PlacedNpc
-  FormKey: 039F17:Dragonborn.esm
-  Base: 025E19:Dragonborn.esm
-  LevelModifier: VeryHard
-  LinkedReferences:
-  - Reference: 039F20:Dragonborn.esm
-  LocationReference: 016E2A:Dragonborn.esm
-  Placement:
-    Position: 67184.4, 93281.76, 1088.7529
-    Rotation: 0, 0, 1.9799992
-- MutagenObjectType: PlacedObject
   FormKey: 00082D:ccbgssse041-netchleather.esl
   MajorRecordFlagsRaw: 2048
   SkyrimMajorRecordFlags:
@@ -1616,5 +1457,164 @@ Temporary:
   Placement:
     Position: 66365.46, 91485.14, -30000
     Rotation: 0, 0, 1.5999992
+- MutagenObjectType: PlacedObject
+  FormKey: 028EFA:Dragonborn.esm
+  Base: 0EF5A1:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67196.18, 92331.88, 1274.8027
+- MutagenObjectType: PlacedObject
+  FormKey: 028EFB:Dragonborn.esm
+  Base: 0EF5A1:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67272.86, 92661.91, 1231.5238
+- MutagenObjectType: PlacedObject
+  FormKey: 028F07:Dragonborn.esm
+  Base: 0ABD65:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67081.56, 92360.086, 1244.7177
+    Rotation: 0.12434424, 6.208653, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 028F08:Dragonborn.esm
+  Base: 0ABD65:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67244.92, 92579.7, 1218.0497
+    Rotation: 0.06241123, 6.1590695, 0.99226505
+- MutagenObjectType: PlacedObject
+  FormKey: 039EDC:Dragonborn.esm
+  Base: 018475:Dragonborn.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67439.08, 92324.734, 1249.0739
+    Rotation: 6.2409186, 6.133616, 2.9688697
+- MutagenObjectType: PlacedObject
+  FormKey: 039F00:Dragonborn.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_AddItems
+      Properties:
+      - MutagenObjectType: ScriptIntListProperty
+        Name: Amount
+        Data:
+        - 1
+        - 1
+        - 1
+        - 1
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Items
+        Objects:
+        - Name: ''
+          Object: 000938:ccbgssse041-netchleather.esl
+        - Name: ''
+          Object: 00093C:ccbgssse041-netchleather.esl
+        - Name: ''
+          Object: 000941:ccbgssse041-netchleather.esl
+        - Name: ''
+          Object: 000911:ccbgssse041-netchleather.esl
+  Base: 025E48:Dragonborn.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67425.01, 92275.61, 1251.5295
+    Rotation: 0.0339676, 6.1951857, 0.19050618
+- MutagenObjectType: PlacedObject
+  FormKey: 039F02:Dragonborn.esm
+  Base: 0C2C1D:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67134.46, 92826.43, 1238.445
+    Rotation: 6.149521, 5.751441, 2.0266607
+- MutagenObjectType: PlacedObject
+  FormKey: 039F03:Dragonborn.esm
+  Base: 0FB9C9:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67106.016, 92772.664, 1213.9313
+    Rotation: 0.1299991, 6.243186, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 039F04:Dragonborn.esm
+  Base: 0F7299:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67570.35, 92345.31, 1246.1635
+    Rotation: 0.009351474, 6.1535196, 3.0693936
+- MutagenObjectType: PlacedObject
+  FormKey: 039F05:Dragonborn.esm
+  Base: 018666:Dragonborn.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67626.23, 92301.38, 1221.0331
+    Rotation: 0.011384782, 6.08508, 6.249064
+- MutagenObjectType: PlacedObject
+  FormKey: 039F08:Dragonborn.esm
+  Base: 097F6C:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 66906.164, 92870.11, 1212.7031
+    Rotation: 0.120605744, 6.264755, 5.475578
+- MutagenObjectType: PlacedObject
+  FormKey: 039F0C:Dragonborn.esm
+  Base: 097F68:Skyrim.esm
+  Scale: 0.88
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67371.05, 92315.09, 1259.2205
+    Rotation: 0.017695893, 6.166861, 5.179863
+- MutagenObjectType: PlacedObject
+  FormKey: 039F0D:Dragonborn.esm
+  Base: 097F68:Skyrim.esm
+  Scale: 0.88
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67365.875, 92316.48, 1266.1394
+    Rotation: 0.088221155, 0.005227261, 3.7366416
+- MutagenObjectType: PlacedObject
+  FormKey: 039F0E:Dragonborn.esm
+  Base: 0B7879:Skyrim.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67522.96, 92426.625, 1225.3646
+    Rotation: 6.0445375, 5.8451653, 4.071162
+- MutagenObjectType: PlacedNpc
+  FormKey: 039F14:Dragonborn.esm
+  Base: 01B655:Dragonborn.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 039F18:Dragonborn.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 66550.56, 92471.82, 1607.4058
+    Rotation: 0, 0, 5.3631854
+- MutagenObjectType: PlacedNpc
+  FormKey: 039F15:Dragonborn.esm
+  Base: 01B655:Dragonborn.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 039F1B:Dragonborn.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 66878.17, 93246.96, 1171.8359
+    Rotation: 0, 0, 1.2400006
+- MutagenObjectType: PlacedNpc
+  FormKey: 039F16:Dragonborn.esm
+  Base: 01B656:Dragonborn.esm
+  LevelModifier: Medium
+  LinkedReferences:
+  - Reference: 039F1C:Dragonborn.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67413.05, 92486.79, 1233.8359
+- MutagenObjectType: PlacedNpc
+  FormKey: 039F17:Dragonborn.esm
+  Base: 025E19:Dragonborn.esm
+  LevelModifier: VeryHard
+  LinkedReferences:
+  - Reference: 039F20:Dragonborn.esm
+  LocationReference: 016E2A:Dragonborn.esm
+  Placement:
+    Position: 67184.4, 93281.76, 1088.7529
+    Rotation: 0, 0, 1.9799992
 MajorFlags:
 - 0x40000

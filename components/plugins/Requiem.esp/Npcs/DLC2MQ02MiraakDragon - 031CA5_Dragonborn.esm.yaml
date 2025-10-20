@@ -75,26 +75,26 @@ Configuration:
   - Keywords
   HealthOffset: 2400
 Factions:
-- Faction: 000013:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 032D9C:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 02645D:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 02BC5C:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 02BC5E:Dragonborn.esm
   Fluff: 0x000000
+- Faction: 000013:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 032D9C:Skyrim.esm
+  Fluff: 0x000000
 DeathItem: 03ADA5:Skyrim.esm
 Voice: 02992B:Skyrim.esm
 Template: 023F7B:Dragonborn.esm
 Race: 012E82:Skyrim.esm
 ActorEffect:
+- 03612B:Dragonborn.esm
+- 03612C:Dragonborn.esm
 - 016CF0:Skyrim.esm
 - 0F77F9:Skyrim.esm
 - 10C4E5:Skyrim.esm
-- 03612B:Dragonborn.esm
-- 03612C:Dragonborn.esm
 WornArmor: 02C88E:Dragonborn.esm
 FarAwayModel: 02C890:Dragonborn.esm
 AttackRace: 012E82:Skyrim.esm
@@ -189,10 +189,8 @@ PlayerSkills:
   Health: 9590
   Magicka: 150
   Stamina: 1095
-  Unused: 16743
   FarAwayModelDistance: 10000
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 CombatStyle: 048C83:Skyrim.esm
 NAM5: 255
 Height: 1

@@ -50,30 +50,6 @@ Regions:
 - 104AB3:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedNpc
-  FormKey: 013B66:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  Version2: 10
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 0F849B:Skyrim.esm
-  LinkedReferences:
-  - Reference: 0E6C68:Skyrim.esm
-  PersistentLocation: 0192AB:Skyrim.esm
-  LocationReference: 0192AB:Skyrim.esm
-  LocationRefTypes:
-  - 0130F7:Skyrim.esm
-  EnableParent:
-    Reference: 0EA5C6:Skyrim.esm
-    Flags:
-    - SetEnableStateToOppositeOfParent
-    Unknown: 0x000000
-  Scale: 1.1
-  Placement:
-    Position: 205852.16, -38151.2, 2944
-    Rotation: 0, 0, 3.324795
-  MajorFlags:
-  - InitiallyDisabled
-- MutagenObjectType: PlacedNpc
   FormKey: 0F2D91:Requiem.esp
   Base: 02025B:Skyrim.esm
   Placement:
@@ -124,5 +100,29 @@ Temporary:
   Placement:
     Position: 206563.5, -38666.5, 2957.2603
     Rotation: -0.008513763, 0.05712555, 0.998584
+- MutagenObjectType: PlacedNpc
+  FormKey: 013B66:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  Version2: 10
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 0F849B:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0E6C68:Skyrim.esm
+  PersistentLocation: 0192AB:Skyrim.esm
+  LocationReference: 0192AB:Skyrim.esm
+  LocationRefTypes:
+  - 0130F7:Skyrim.esm
+  EnableParent:
+    Reference: 0EA5C6:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Scale: 1.1
+  Placement:
+    Position: 205852.16, -38151.2, 2944
+    Rotation: 0, 0, 3.324795
+  MajorFlags:
+  - InitiallyDisabled
 MajorFlags:
 - 0x40000

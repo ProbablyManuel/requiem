@@ -115,39 +115,6 @@ Persistent:
     Rotation: 0, 0, 4.8000035
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 09F268:Skyrim.esm
-  Base: 09F267:Skyrim.esm
-  RagdollData: 0x00616723000000000000000000000000EB41D03F8117F63E809540BC006E735C40FE15400000743A00009E3A9DEA7B38D4ABE836ADF8C93F
-  Owner: 09CAF5:Skyrim.esm
-  LocationReference: 01F86E:Skyrim.esm
-  Placement:
-    Position: 211.49104, -123.32254, 144.35638
-    Rotation: 0, 0, 6.1831937
-- MutagenObjectType: PlacedObject
-  FormKey: 0C83E9:Skyrim.esm
-  Base: 097F70:Skyrim.esm
-  Scale: 0.9
-  LocationReference: 01F86E:Skyrim.esm
-  Placement:
-    Position: 126.0202, 57.643684, 96.4957
-    Rotation: -1.5707964, 0.3999975, 1.5707964
-- MutagenObjectType: PlacedObject
-  FormKey: 0EA738:Skyrim.esm
-  Version2: 1
-  Base: 0EA722:Skyrim.esm
-  Lock:
-    Level: Adept
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationRefTypes:
-  - 0EA723:Skyrim.esm
-  LocationReference: 01F86E:Skyrim.esm
-  LinkedReferences:
-  - Reference: 0C732B:Skyrim.esm
-  Placement:
-    Position: 332.1903, -335.63303, 349.1824
-    Rotation: 0, 0, 4.712389
-- MutagenObjectType: PlacedObject
   FormKey: 32CF07:Requiem.esp
   Base: 0D8E80:Skyrim.esm
   Placement:
@@ -189,5 +156,38 @@ Temporary:
   Placement:
     Position: 211.16013, -126.418274, 142.99213
     Rotation: 0.0063477624, 6.277424, 0.00010821041
+- MutagenObjectType: PlacedObject
+  FormKey: 09F268:Skyrim.esm
+  Base: 09F267:Skyrim.esm
+  RagdollData: 0x00616723000000000000000000000000EB41D03F8117F63E809540BC006E735C40FE15400000743A00009E3A9DEA7B38D4ABE836ADF8C93F
+  Owner: 09CAF5:Skyrim.esm
+  LocationReference: 01F86E:Skyrim.esm
+  Placement:
+    Position: 211.49104, -123.32254, 144.35638
+    Rotation: 0, 0, 6.1831937
+- MutagenObjectType: PlacedObject
+  FormKey: 0C83E9:Skyrim.esm
+  Base: 097F70:Skyrim.esm
+  Scale: 0.9
+  LocationReference: 01F86E:Skyrim.esm
+  Placement:
+    Position: 126.0202, 57.643684, 96.4957
+    Rotation: -1.5707964, 0.3999975, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA738:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 01F86E:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C732B:Skyrim.esm
+  Placement:
+    Position: 332.1903, -335.63303, 349.1824
+    Rotation: 0, 0, 4.712389
 MajorFlags:
 - 0x40000

@@ -49,17 +49,6 @@ EncounterZone: 03EC80:Skyrim.esm
 Music: 094BDD:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Temporary:
-- MutagenObjectType: PlacedObject
-  FormKey: 041138:Skyrim.esm
-  Base: 03AC21:Skyrim.esm
-  Lock:
-    Level: Novice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 0192BC:Skyrim.esm
-  Placement:
-    Position: -2339.3145, 2656.3108, 94.57081
-    Rotation: 0.17987014, 0.0068731066, 3.1038098
 - MutagenObjectType: PlacedNpc
   FormKey: 473ECC:Requiem.esp
   Base: 37244A:Requiem.esp
@@ -81,5 +70,16 @@ Temporary:
   Placement:
     Position: -1349.4633, -3513.6482, -15.966122
     Rotation: 0, 0, 3.3168378
+- MutagenObjectType: PlacedObject
+  FormKey: 041138:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192BC:Skyrim.esm
+  Placement:
+    Position: -2339.3145, 2656.3108, 94.57081
+    Rotation: 0.17987014, 0.0068731066, 3.1038098
 MajorFlags:
 - 0x40000

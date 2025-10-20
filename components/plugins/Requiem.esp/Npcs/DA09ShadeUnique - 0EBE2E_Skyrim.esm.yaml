@@ -8,6 +8,11 @@ SkyrimMajorRecordFlags:
 - 0x20000000
 VirtualMachineAdapter:
   Scripts:
+  - Name: DA09ShadeUniqueScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09
+      Object: 04E4E1:Skyrim.esm
   - Name: REQ_NPCpower_phaseshift
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -16,11 +21,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: PhaseOptics
       Object: 7D8956:Requiem.esp
-  - Name: DA09ShadeUniqueScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DA09
-      Object: 04E4E1:Skyrim.esm
 Configuration:
   Flags:
   - Respawn
@@ -136,9 +136,7 @@ PlayerSkills:
   Health: 112
   Magicka: 213
   Stamina: 50
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x405AEF
 CombatStyle: 0BB365:Skyrim.esm
 NAM5: 255
 Height: 1

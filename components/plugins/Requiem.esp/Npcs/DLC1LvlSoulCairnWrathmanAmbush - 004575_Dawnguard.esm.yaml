@@ -38,19 +38,19 @@ Configuration:
   - Stats
   HealthOffset: 600
 Factions:
+- Faction: 007A66:Dawnguard.esm
+  Fluff: 0x000000
 - Faction: 000013:Skyrim.esm
   Fluff: 0x000000
 - Faction: 02D1DF:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 007A66:Dawnguard.esm
   Fluff: 0x000000
 DeathItem: 011BDA:Dawnguard.esm
 Voice: 0BFB2B:Skyrim.esm
 Template: 0071AD:Dawnguard.esm
 Race: 00894D:Dawnguard.esm
 ActorEffect:
-- 07097C:Skyrim.esm
 - 00BDCC:Dawnguard.esm
+- 07097C:Skyrim.esm
 AttackRace: 00894D:Dawnguard.esm
 Perks:
 - Perk: 03AF81:Skyrim.esm
@@ -250,9 +250,7 @@ PlayerSkills:
     Value: 0
   Health: 50
   Stamina: 80
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x415AEF
 CombatStyle: 000D0D:Skyrim.esm
 NAM5: 255
 Height: 1

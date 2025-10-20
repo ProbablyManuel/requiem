@@ -2,6 +2,14 @@ FormKey: 3FCA4D:Requiem.esp
 EditorID: REQ_Illusion2_Invisibility_Invisibility
 VirtualMachineAdapter:
   Scripts:
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Exclusive
+      Object: 3FA2AF:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 027EB6:Skyrim.esm
   - Name: REQ_Magic_XPGain
     Properties:
     - MutagenObjectType: ScriptFloatProperty
@@ -13,14 +21,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptFloatProperty
       Name: XPGain
       Data: 0.2
-  - Name: REQ_Magic_FinishSpell
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Exclusive
-      Object: 3FA2AF:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ToDispel
-      Object: 027EB6:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Invisibility

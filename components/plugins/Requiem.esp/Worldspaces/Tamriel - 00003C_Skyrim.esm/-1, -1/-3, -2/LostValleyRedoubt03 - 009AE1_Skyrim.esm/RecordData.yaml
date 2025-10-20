@@ -54,20 +54,6 @@ Regions:
 - 04C2A6:Skyrim.esm
 Location: 019268:Skyrim.esm
 Temporary:
-- MutagenObjectType: PlacedObject
-  FormKey: 020288:Skyrim.esm
-  Version2: 3
-  Base: 020654:Skyrim.esm
-  Lock:
-    Level: Apprentice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationRefTypes:
-  - 0130FD:Skyrim.esm
-  LocationReference: 019268:Skyrim.esm
-  Placement:
-    Position: -89843.87, -34549.34, -2112
-    Rotation: 0, 0, 0.029203683
 - MutagenObjectType: PlacedNpc
   FormKey: 1224D8:Requiem.esp
   Base: 03E08A:Skyrim.esm
@@ -100,5 +86,19 @@ Temporary:
   Placement:
     Position: -90105.06, -33763.78, -2125.5771
     Rotation: 0, 0, 4.400001
+- MutagenObjectType: PlacedObject
+  FormKey: 020288:Skyrim.esm
+  Version2: 3
+  Base: 020654:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 019268:Skyrim.esm
+  Placement:
+    Position: -89843.87, -34549.34, -2112
+    Rotation: 0, 0, 0.029203683
 MajorFlags:
 - 0x40000

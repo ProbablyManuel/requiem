@@ -44,54 +44,6 @@ Music: 06D546:Skyrim.esm
 ImageSpace: 059B60:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 0F4880:Skyrim.esm
-  Base: AD3AF8:Requiem.esp
-  Lock:
-    Level: Master
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 0200C9:Skyrim.esm
-  Placement:
-    Position: 337.18945, 219.70312, -0.247589
-    Rotation: 0, 0, 6.258194
-- MutagenObjectType: PlacedObject
-  FormKey: 1062A8:Skyrim.esm
-  Version2: 3
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: defaultDisableHavokOnLoad
-      Properties:
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnHit
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnZKey
-  Base: 0877D5:Skyrim.esm
-  LocationReference: 0200C9:Skyrim.esm
-  Placement:
-    Position: 807.2722, -282.27728, 55.901234
-    Rotation: -0.0039038928, 0.21192974, 4.6705356
-- MutagenObjectType: PlacedObject
-  FormKey: 1062AA:Skyrim.esm
-  Version2: 3
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: defaultDisableHavokOnLoad
-      Properties:
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnActivate
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnHit
-      - MutagenObjectType: ScriptBoolProperty
-        Name: havokOnZKey
-  Base: 0CC842:Skyrim.esm
-  RagdollData: 0x0017434B0000000000000000000000003977883C22274E3EE3BCCA3F0000576880520341008048BC008038BBD490D6B927AE36BBA120A8BB006B616780F01B410000AD3D0080F43B953504B9B2A16FBA1C0C933C
-  LocationReference: 0200C9:Skyrim.esm
-  Placement:
-    Position: 795.81, -229.55092, 53.74133
-    Rotation: 0.2039578, 0.19596536, 4.7402534
-- MutagenObjectType: PlacedObject
   FormKey: 32A728:Requiem.esp
   VirtualMachineAdapter:
     Scripts:
@@ -159,5 +111,53 @@ Temporary:
   Base: 063B46:Skyrim.esm
   Placement:
     Position: 288.53656, -449.2685, 63.237946
+- MutagenObjectType: PlacedObject
+  FormKey: 0F4880:Skyrim.esm
+  Base: AD3AF8:Requiem.esp
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0200C9:Skyrim.esm
+  Placement:
+    Position: 337.18945, 219.70312, -0.247589
+    Rotation: 0, 0, 6.258194
+- MutagenObjectType: PlacedObject
+  FormKey: 1062A8:Skyrim.esm
+  Version2: 3
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+  Base: 0877D5:Skyrim.esm
+  LocationReference: 0200C9:Skyrim.esm
+  Placement:
+    Position: 807.2722, -282.27728, 55.901234
+    Rotation: -0.0039038928, 0.21192974, 4.6705356
+- MutagenObjectType: PlacedObject
+  FormKey: 1062AA:Skyrim.esm
+  Version2: 3
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnActivate
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnHit
+      - MutagenObjectType: ScriptBoolProperty
+        Name: havokOnZKey
+  Base: 0CC842:Skyrim.esm
+  RagdollData: 0x0017434B0000000000000000000000003977883C22274E3EE3BCCA3F0000576880520341008048BC008038BBD490D6B927AE36BBA120A8BB006B616780F01B410000AD3D0080F43B953504B9B2A16FBA1C0C933C
+  LocationReference: 0200C9:Skyrim.esm
+  Placement:
+    Position: 795.81, -229.55092, 53.74133
+    Rotation: 0.2039578, 0.19596536, 4.7402534
 MajorFlags:
 - 0x40000

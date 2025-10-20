@@ -2,6 +2,7 @@ FormKey: 01A935:Dawnguard.esm
 EditorID: DLC1HarkonAbsorbHealthFFAimed
 VirtualMachineAdapter:
   Scripts:
+  - Name: DLC1MagicVampDrainFXRangeScript
   - Name: magicAbsorbFXScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -13,7 +14,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: TrapImod
       Object: 0ABF17:Skyrim.esm
-  - Name: DLC1MagicVampDrainFXRangeScript
 Name:
   TargetLanguage: English
   Value: Absorb Health

@@ -18,6 +18,10 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 50
 Factions:
+- Faction: 005213:HearthFires.esm
+  Fluff: 0x000000
+- Faction: 008460:HearthFires.esm
+  Fluff: 0x000000
 - Faction: 000DB1:Skyrim.esm
   Fluff: 0x000000
 - Faction: 019809:Skyrim.esm
@@ -28,10 +32,6 @@ Factions:
   Rank: -1
   Fluff: 0x000000
 - Faction: 0A2C8D:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 005213:HearthFires.esm
-  Fluff: 0x000000
-- Faction: 008460:HearthFires.esm
   Fluff: 0x000000
 Voice: 013AE6:Skyrim.esm
 Race: 013746:Skyrim.esm
@@ -68,10 +68,10 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 013989:Skyrim.esm
+    Item: A2B164:Requiem.esp
     Count: 1
 - Item:
-    Item: A2B164:Requiem.esp
+    Item: 013989:Skyrim.esm
     Count: 1
 AIData:
   Aggression: Aggressive
@@ -173,9 +173,7 @@ PlayerSkills:
   Health: 200
   Magicka: 80
   Stamina: 115
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x435AEF
 HeadParts:
 - 024250:Skyrim.esm
 - 051403:Skyrim.esm

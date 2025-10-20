@@ -28,10 +28,6 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 50
 Factions:
-- Faction: 05091C:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 051596:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 017775:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 0177C5:Dragonborn.esm
@@ -39,6 +35,10 @@ Factions:
 - Faction: 018279:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 01C4E5:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 05091C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
   Fluff: 0x000000
 Voice: 0247E5:Dragonborn.esm
 Race: 013742:Skyrim.esm
@@ -81,6 +81,9 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 03369E:Dragonborn.esm
+    Count: 1
+- Item:
     Item: 00000F:Skyrim.esm
     Count: 25
 - Item:
@@ -95,9 +98,6 @@ Items:
 - Item:
     Item: 09CD49:Skyrim.esm
     Count: 3
-- Item:
-    Item: 03369E:Dragonborn.esm
-    Count: 1
 AIData:
   Confidence: Average
   EnergyLevel: 50
@@ -194,9 +194,7 @@ PlayerSkills:
   Health: 180
   Magicka: 100
   Stamina: 215
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 HeadParts:
 - 0E4DA0:Skyrim.esm
 - 0EC1B2:Skyrim.esm

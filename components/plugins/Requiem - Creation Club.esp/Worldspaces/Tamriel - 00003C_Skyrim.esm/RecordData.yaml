@@ -47,433 +47,6 @@ TopCell:
   - 08EED7:Skyrim.esm
   - 041449:Skyrim.esm
   Persistent:
-  - MutagenObjectType: PlacedNpc
-    FormKey: 03614F:Skyrim.esm
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0D281F:Skyrim.esm
-    EncounterZone: 03EC94:Skyrim.esm
-    LevelModifier: VeryHard
-    LinkedReferences:
-    - Reference: 068759:Skyrim.esm
-    PersistentLocation: 01925F:Skyrim.esm
-    LocationReference: 01925F:Skyrim.esm
-    Placement:
-      Position: -124429.14, 8571.4795, -7552
-      Rotation: 0, 0, 1.4207993
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
-    FormKey: 045861:Skyrim.esm
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    VirtualMachineAdapter:
-      Scripts:
-      - Name: WETriggerScript
-        Flags: Inherited
-        Properties:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: myHoldLocation
-          Object: 016769:Skyrim.esm
-        - MutagenObjectType: ScriptBoolProperty
-          Name: TriggerOnLoad
-          Data: True
-    Base: 04A5EE:Skyrim.esm
-    Primitive:
-      Bounds: 512, 512, 512
-      Color: '#00FF00FF'
-      Unknown: 0.15
-      Type: Box
-    CollisionLayer: 22
-    Placement:
-      Position: -159046.72, -24180.47, 2150.9604
-      Rotation: 0.021160372, 0.029192377, 3.060016
-  - MutagenObjectType: PlacedNpc
-    FormKey: 069F7C:Skyrim.esm
-    MajorRecordFlagsRaw: 1536
-    SkyrimMajorRecordFlags:
-    - 0x200
-    - 0x400
-    Base: 069F7D:Skyrim.esm
-    EncounterZone: 03EC94:Skyrim.esm
-    RagdollData: 0x00B32E14800AA7BE80065BBE0000000000000080000000800000008002000500000000BC000080BC00000000341DC23F816F833F0726A33C08000C0000A036C100001F3E0000A1BE825244C040ABE93E93DE4040090010000000C03C0000F03C0068864206A8CFBDDF51F33BFE82913D0A0015000000803C0000B8BC00AC8D423115A53F22E572BDB2D71B3E0E001900008036410000083E0000A7BE8FAF47C0004DB0BE714242400F000A000000003C0000383D0068864299D6CABDB80EF2BB018595BD10001D000000C03C0000803C00A48D422C67733FC80EC03B1B3827BE0200200000000000007A3FC100700A41F26F123E173E893E5723EF3B030023000000003D0000C03A00288141822790BDC9A9383E8B6B453D04002B00000000000000BDBD002042414D241C3E7565AABEBD8DA13D00002F00000020BD000046BE00D41742623E65BE6D4A8A3E25639E3C0100370000000000000000BB00C02041A77003BFB348BC3E2E7F373E00003C00000079400000923F00C8E24153E7603F7CA1B8BF4CA88FBF0B0028000080DF3F00009FBD00308F41D07B963EC715EBBEA7A186BE0C0042000040C23F0000BF3E00283E42180BBB3EA19B95BD119C93BC0D0045000000803B000080BC00D839426FDB5C3DD2E67D3DCE2EC3BF0000490000007DC000C09D3F00D8E2410263873F3290B63FF3E5723F050042000040DFBF0000A03C00F08E41EAD488BDFA5ED63E189436BE06FFFFFF0080C1BF0000BC3E00183E42C3F6B73EE0E1953D745A413C07F4E9130000403C000020BE00D83942D56E553C71CF143F7E88C13F
-    LevelModifier: VeryHard
-    LinkedReferences:
-    - Reference: 069F7E:Skyrim.esm
-    PersistentLocation: 01925F:Skyrim.esm
-    LocationReference: 01925F:Skyrim.esm
-    Placement:
-      Position: -124078.48, 8640.341, -7483.02
-      Rotation: 0, 0, 0.95422214
-    MajorFlags:
-    - StartsDead
-    - Persistent
-  - MutagenObjectType: PlacedNpc
-    FormKey: 0E662F:Skyrim.esm
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0E662E:Skyrim.esm
-    LocationReference: 0C2EED:Skyrim.esm
-    Placement:
-      Position: 19489.396, 93000.43, -11819.493
-      Rotation: 0, 0, 3.1331906
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedObject
-    FormKey: 002FC4:Update.esm
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 002FC5:Update.esm
-    TeleportDestination:
-      Door: 002FAB:Update.esm
-      Position: 0, 320, 1865.4319
-      Rotation: 0, 0, 3.1831944
-    Lock:
-      Level: Apprentice
-      Unused: 0x000000
-      Key: 00080A:ccbgssse043-crosselv.esl
-      Unused2: 0x0000000000000000000000
-    NavigationDoorLink:
-      NavMesh: 104D13:Skyrim.esm
-      TeleportMarkerTriangle: 24
-    LocationReference: 0EF546:Skyrim.esm
-    Placement:
-      Position: -92144, 112288, -3078
-      Rotation: 0, 0, 2.6000082
-  - MutagenObjectType: PlacedObject
-    FormKey: 000925:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000811:ccmtysse002-ve.esl
-    LocationReference: 0C342D:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 20441.857, 66473.61, -8684.607
-  - MutagenObjectType: PlacedNpc
-    FormKey: 000930:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 536874496
-    SkyrimMajorRecordFlags:
-    - 0x200
-    - 0x400
-    - InitiallyDisabled
-    - 0x20000000
-    Base: 00095C:ccmtysse002-ve.esl
-    RagdollData: 0x02181B000000000000000000000000002CC19DBF7E0E343F02E52DC0081B000000A4D4C00000183D0000003C54EB43C01BA9533EC3E64240091B00000000303C0000A83C00A0FA41ABD9ABBE68117ABBEFAD3ABC0A1C1900000080BB00009ABE0070DB41BA00CF3FE6CF7BBEDC13F93D0E1B1C000024D3400000143D0000803DE8014240E255923CF8433B400F1B1C0000008C3C0000883D00B0FA414DE9F0BE4A41BE3B1BDF273C101B1C000000CCBC0000AABE0040DB416034D73FCAB9813EFFA3E1BD021C190000008CBC0070A5C000806E404CE7F83D8143FFBCC53E91BD031B1C000000943C0000B03C00000B41ECE534BE0094F1B8E8B4D33D041B1C000000483C000080BC00E01C41CD439D3E7EA2BA3CB32868BE00120000000041BD00001C3D0050B041FFAA01BB2A81F73D29120BBE01120000000030BD0000A8BD00800C413C608ABE7CAB413C6B7699BD0B1310000000203D0000003C00406241EF6A123F1DC0E6BE5C3B27BE0C121311000040BD000038BD00C0A241AF0717407078203D897494BD0D121300000080BC0000003C00407F41C6FD943D0E1CDFBEE97BC0BF051213110000803C000040BC00785F41133E093F5F19ACBD7C1DE33E061213000000003C0000D0BC0070A141506DDB3E5D4D983D13A0D33C071013110000003C000090BD00E07F4138708BBA98F7CD3E9B5CBF3F00131000000000000000884100002041000000800000008000000080
-    LocationReference: 0C2EED:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 19634.258, 92987.45, -11802.784
-      Rotation: 0, 0, 5.649603
-    MajorFlags:
-    - StartsDead
-    - Persistent
-    - InitiallyDisabled
-    - DoNotHavokSettle
-  - MutagenObjectType: PlacedObject
-    FormKey: 000933:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 027D51:Skyrim.esm
-    LocationReference: 0C2EED:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 19673.453, 93062.375, -11723.43
-      Rotation: 2.2831979, 0, 0
-  - MutagenObjectType: PlacedObject
-    FormKey: 00093C:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0F11E9:Skyrim.esm
-    Owner: 000938:ccmtysse002-ve.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 30171.568, 85754.17, -9040.711
-      Rotation: 0, 0, 4.9301887
-  - MutagenObjectType: PlacedObject
-    FormKey: 000986:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000034:Skyrim.esm
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 34712.082, 111044.64, -11315.026
-      Rotation: 0, 0, 1.6000026
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009DE:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    VirtualMachineAdapter:
-      Scripts:
-      - Name: ccMTYSSE002_TrailWrongSuspectScript
-        Flags: Inherited
-        Properties:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: MySuspect
-          Object: 000936:ccmtysse002-ve.esl
-        - MutagenObjectType: ScriptIntProperty
-          Name: StageToSet
-          Data: 49
-        - MutagenObjectType: ScriptObjectProperty
-          Name: triggerActor
-          Object: 000936:ccmtysse002-ve.esl
-    Base: 0009DC:ccmtysse002-ve.esl
-    Primitive:
-      Bounds: 328.8125, 149.9062, 133
-      Color: '#00CC4C33'
-      Unknown: 0.15
-      Type: Box
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 34697.27, 111170.83, -11248.526
-      Rotation: 0, 0, 1.6000026
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009EB:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    LinkedReferences:
-    - Reference: 0009EC:ccmtysse002-ve.esl
-    Placement:
-      Position: 35272.36, 90368.375, -9339.874
-      Rotation: 0, 0, 3.583196
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009EC:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    LinkedReferences:
-    - Reference: 0009ED:ccmtysse002-ve.esl
-    Placement:
-      Position: 34813.227, 89054.91, -9350.892
-      Rotation: 0, 0, 3.583196
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009ED:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    LinkedReferences:
-    - Reference: 0009EE:ccmtysse002-ve.esl
-    Placement:
-      Position: 34578.285, 87741.914, -9388.185
-      Rotation: 0, 0, 3.583196
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009EE:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    LinkedReferences:
-    - Reference: 0009EF:ccmtysse002-ve.esl
-    Placement:
-      Position: 33493.32, 86917.54, -9515.444
-      Rotation: 0, 0, 3.9831955
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009EF:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 32903.61, 85915.9, -9419.158
-      Rotation: 0, 0, 3.9831955
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009F1:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    Owner: 000935:ccmtysse002-ve.esl
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    LinkedReferences:
-    - Reference: 0009F2:ccmtysse002-ve.esl
-    Placement:
-      Position: 31441.691, 107512.19, -13913.023
-      Rotation: 0, 0, 0.7999996
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009F2:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    Owner: 000935:ccmtysse002-ve.esl
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    LinkedReferences:
-    - Reference: 0009F3:ccmtysse002-ve.esl
-    Placement:
-      Position: 32130.531, 108391.72, -13710.298
-      Rotation: 0, 0, 0.7999996
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009F3:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    Owner: 000935:ccmtysse002-ve.esl
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    LinkedReferences:
-    - Reference: 0009F5:ccmtysse002-ve.esl
-    Placement:
-      Position: 32688.645, 108874.125, -13174.695
-      Rotation: 5.68607, 0.33708417, 0.48650005
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009F4:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000034:Skyrim.esm
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 34174.35, 110543.016, -11798.512
-      Rotation: 0, 0, 1.1000007
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009F5:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0140BD:Skyrim.esm
-    Owner: 000935:ccmtysse002-ve.esl
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 32996.273, 109100.234, -12858.7
-      Rotation: 5.68607, 0.33708417, 0.48650005
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009F7:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000034:Skyrim.esm
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 30987.072, 104595.72, -13866.742
-      Rotation: 0, 0, 1.5000005
-  - MutagenObjectType: PlacedObject
-    FormKey: 0009FA:ccmtysse002-ve.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 052FF5:Skyrim.esm
-    Owner: 000935:ccmtysse002-ve.esl
-    LocationReference: 018A50:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 28836.63, 106157, -13874.0625
-      Rotation: 0, 0, 2.6000013
   - MutagenObjectType: PlacedObject
     FormKey: 000897:ccbgssse043-crosselv.esl
     MajorRecordFlagsRaw: 3072
@@ -569,6 +142,76 @@ TopCell:
     - Persistent
     - InitiallyDisabled
     - DoNotHavokSettle
+  - MutagenObjectType: PlacedNpc
+    FormKey: 000826:ccbgssse051-ba_daedricmail.esl
+    MajorRecordFlagsRaw: 536874496
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    - 0x20000000
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultDisableHavokOnLoad
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnActivate
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnHit
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnZKey
+    Base: 000824:ccbgssse051-ba_daedricmail.esl
+    RagdollData: 0x020000000000803C000000BC0000803A6B5D953E28DF91BF40B621C00812E83E0080D8C0000000BC000000BD24862440EF9A083EE2163EC009020000000080BC0000203D0070FA4179CBFBBFC6FABDBBCF8D043B0A7FFE3E0000C0BD0000A8BE0040DB41EB91DC3FF1BC6ABE9C8FD93D0E0200000080D440000060BC000080BCF561434006B69B3C2FC53FC00FBB013F0000003C0000003D0070FA416576D9BF1D387E3C84F45DBC10020000000000BD0000A0BE00E0DA419D14DB3FF55E893EDB55EABD02A0033F0000403D00E0A5C000807340DDE0D33D05E778BD080C523D030200000000203D0000683D00400D41461A8CBD2180263D67E67D3E0482883D0000603D00001C3D00201E411D52883E8E9ABC3D1D3102BE00020000000090BD000080BB00E0AF41D7E1053EE92E73BD60DE2E3C011D023E000000000000C0BC00200D416326A43E163092BED971203F0B0200000000F8BD0000603D00A05F41F4DD243F8FD324BFA75F1CBE0CAA023E00004C3E000068BE00C0A241B756C83E55A9B9BD82AD1DBC0D0200000000803C0000A0BC00A08041B7C53B3D7195CEBEE243BFBF05A3B53D0000E03D000080BC00905D415DE3F23F25CE053E33A2B23E060200000000703E00A054BE0038A3416CF30A40B1E2C2BD87349B3D07870D3E000000BE0000C83D005880419295B23C5B50993C6EA3BF3F00020000000000000000884100002041000000800000008000000080
+    LocationReference: 0C2EE7:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 163200.66, 37958.867, -10399.848
+      Rotation: 0, 0, 2.3495936
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+    - DoNotHavokSettle
+  - MutagenObjectType: PlacedObject
+    FormKey: 00082C:ccbgssse051-ba_daedricmail.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 018EDE:Skyrim.esm
+    LocationReference: 0C2EE7:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 163169.45, 37874.453, -10356.664
+      Rotation: 1.8063093, 1.135321, 0.7168992
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00083A:ccbgssse051-ba_daedricmail.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 00081C:ccbgssse051-ba_daedricmail.esl
+    LinkedReferences:
+    - Reference: 073B6C:Skyrim.esm
+    LocationReference: 0C2EE7:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 163301.73, 37944.273, -10429.916
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
   - MutagenObjectType: PlacedNpc
     FormKey: 00081E:ccbgssse052-ba_iron.esl
     MajorRecordFlagsRaw: 3584
@@ -716,6 +359,99 @@ TopCell:
     Placement:
       Position: -153488.9, 112248.93, -13867.37
       Rotation: 0, 0, 1.5999992
+  - MutagenObjectType: PlacedObject
+    FormKey: 000824:ccbgssse053-ba_leather.esl
+    MajorRecordFlagsRaw: 536873984
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    - 0x20000000
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultDisableHavokOnLoad
+    Base: 000819:ccbgssse053-ba_leather.esl
+    Owner: 000007:Skyrim.esm
+    LocationReference: 0B238D:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: -108281.06, 56258.87, -7473.443
+  - MutagenObjectType: PlacedObject
+    FormKey: 000819:ccbgssse056-ba_silver.esl
+    MajorRecordFlagsRaw: 3072
+    EditorID: ccBGSSSE056_ThalmorMarkerREF
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 00003B:Skyrim.esm
+    LocationReference: 0E66A5:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: -91321.625, 17420.83, -3771.9612
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00081D:ccbgssse056-ba_silver.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000822:ccbgssse056-ba_silver.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: -90012, 17482.867, -3834.8977
+      Rotation: 0, 0, 4.583193
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00081E:ccbgssse056-ba_silver.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000821:ccbgssse056-ba_silver.esl
+    LevelModifier: Easy
+    LocationReference: 0E66A5:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: -90117.33, 16565.719, -3689.6873
+      Rotation: 0, 0, 5.18319
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00081F:ccbgssse056-ba_silver.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000821:ccbgssse056-ba_silver.esl
+    LevelModifier: Easy
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: -90100.75, 18239.238, -3729.8904
+      Rotation: 0, 0, 3.9831922
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
   - MutagenObjectType: PlacedNpc
     FormKey: 000821:ccbgssse058-ba_steel.esl
     MajorRecordFlagsRaw: 3072
@@ -1085,6 +821,115 @@ TopCell:
     - Persistent
     - InitiallyDisabled
   - MutagenObjectType: PlacedNpc
+    FormKey: 00081F:ccbgssse060-ba_dragonscale.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 00081E:ccbgssse060-ba_dragonscale.esl
+    LinkedReferences:
+    - Reference: 000823:ccbgssse060-ba_dragonscale.esl
+    ActivateParents:
+      Parents:
+      - Reference: 000825:ccbgssse060-ba_dragonscale.esl
+        Delay: 0.23
+    LocationReference: 0C3428:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 94407.64, 53411.992, -3535.2668
+      Rotation: 0, 0, 3.1831925
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 000821:ccbgssse060-ba_dragonscale.esl
+    MajorRecordFlagsRaw: 3584
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    Base: 000820:ccbgssse060-ba_dragonscale.esl
+    RagdollData: 0x020D4CCE0000000000000000000000009D17D13FC291173E94CDA33E080000000000D4C00000C0BB0000403C639B45400C80B03E6F8F3E40090000000000803C0000403D00A0FA410FFA71BE466ED1BAE1AEA4BC0A000000000000BC000097BE00A0DB41D18E7C3FD657EBBD3CE27A3E0E0000000040D3400000403C000000BCD9D42A40304B37BF8E1943C00F0000000000003C0000903D0098FA41B537DFBED048A83BD1FDDE3B10000000000080BC00009EBE0098DB41ADB9C73F97A4793E98910DBE02000000000080BC0010A6C000807240BFD8EA3CB2B57F3DA48400BE03714BCE000080BC0000E03C00200C414D1C5EBE6563313DABF6693D04000000000080BC0000C0BB00981D41434D603ECF9DAB3D43B6A1BE0039D1400000C0BC0000F8BC0038B041597875BD8A30A23D05E1C63C01000000000000BD0000F8BD00180D415F58093F3DD292BD6EF50BBF0B000000000000BC0000C03C00A06041FD084C3F645D2ABF529F75BE0C65725C0000603D000058BD00ECA1416AE1C63EE25CADBDCE8F8CBB0D735C4D0000203D0000C4BD803E80410D75223D73FBD0BE0823BFBF050000000000203C0000403C008060416B44023FC87AE2BD051C8D3E06B2D8BF0000403B0000DC3D00F0A14106041A40FD3552BD0503683D07735C41000000000000803D004080412A04C9BB8D5ABB3EC4ADBF3F00204173000000000000884100002041000000800000008000000080
+    LocationReference: 0C3428:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 94437.19, 53471.875, -3532.1743
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedObject
+    FormKey: 000823:ccbgssse060-ba_dragonscale.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 038A49:Skyrim.esm
+    LocationReference: 0C3428:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    LinkedReferences:
+    - Reference: 000824:ccbgssse060-ba_dragonscale.esl
+    Placement:
+      Position: 94419.24, 53227.855, -3547.8457
+  - MutagenObjectType: PlacedObject
+    FormKey: 000824:ccbgssse060-ba_dragonscale.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 06BDD3:Skyrim.esm
+    LocationReference: 0C3428:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 94415.21, 53223.598, -3541.2205
+  - MutagenObjectType: PlacedObject
+    FormKey: 000825:ccbgssse060-ba_dragonscale.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultActivateSelf
+        Flags: Inherited
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: disableWhenDone
+          Data: True
+        - MutagenObjectType: ScriptBoolProperty
+          Name: doOnce
+          Data: True
+    Base: 048AC0:Skyrim.esm
+    Primitive:
+      Bounds: 1080.7969, 560.7656, 226.4243
+      Color: '#000080FF'
+      Unknown: 0.15
+      Type: Box
+    LocationReference: 0C3428:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 94444.37, 53327.105, -3431.0596
+  - MutagenObjectType: PlacedNpc
     FormKey: 000823:ccbgssse061-ba_dwarven.esl
     MajorRecordFlagsRaw: 3072
     SkyrimMajorRecordFlags:
@@ -1121,6 +966,310 @@ TopCell:
     Placement:
       Position: -139913.48, -12939.528, -1443.146
       Rotation: 0, 0, 4.4831886
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00081D:ccbgssse062-ba_dwarvenmail.esl
+    MajorRecordFlagsRaw: 536874496
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    - 0x20000000
+    Base: 00081C:ccbgssse062-ba_dwarvenmail.esl
+    RagdollData: 0x023B4130000000000000000000000000450783BF6D6F93BEB50C2DC008ABCBBE00D0D3C00000003D0000803C814E4240F8B2ED3E413D3F4009000000000020BC000020BD0030FA41A16E5EBFE3350FBCE69775BC0AA10A120000C0BB0000B7BE0060DB41D4A2813FB5E6F2BDBD85743E0E43CF410060D240000080BC0000C03D6CC92240AB02C0BDB6743E400F000000000084BC000080BC0044F9411EFDAABFA7F2813CBA6428BB109F05A500005CBD0080B6BE00A0DB41DF52B83FC8B57B3E692A25BE0266A23E0000183D00C0A8C000806E409FF8BF3D5D9F96BD32290FBE038726410000303D000090BD00600B41C00296BDDCCB38BD3972823D043C000000009C3D000010BE00401E41067FAC3E35B60D3DECFCA8BE00393B3B0000A0BC0000103D0060B0415BED173E9DC6AC3D005BF6BD0197713F0000403C0000903C00200D412FBAFB3ED9B720BE6AD99E3E0B0000000000803C0000013E00606141C064CD3FF4FE83BCD87439BE0CAC0E4F0000003D0000603D0082A241F5F1E83EF3FD98BDD8568ABC0DA0CD41000000BC0000003C00788041B3C99D3CAE01CEBD8879BEBF050000000000003D0000AC3D004060418E76A83FC0F484BEDDFBE6BB06BD96A70000C0BC0000A03D0094A241E4BF163F63F4843D0C3F203D07354FBF0000003C000000BC0090804174B10C3C0BBDE03DD229C03F0031F140000000000000884100002041000000800000008000000080
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 84813.625, -72135.586, 12080.295
+      Rotation: 0, 0, 1.9831967
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+    - DoNotHavokSettle
+  - MutagenObjectType: PlacedObject
+    FormKey: 00081E:ccbgssse062-ba_dwarvenmail.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0C4827:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 88724.57, -85988.68, 11987.874
+      Rotation: 0, 0, 4.0232615
+  - MutagenObjectType: PlacedNpc
+    FormKey: 000820:ccbgssse062-ba_dwarvenmail.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 00081F:ccbgssse062-ba_dwarvenmail.esl
+    LinkedReferences:
+    - Reference: 00081E:ccbgssse062-ba_dwarvenmail.esl
+    LocationReference: 0D566F:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 88681.516, -86017.76, 11944.004
+      Rotation: 0, 0, 4.1831965
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 000828:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000822:ccbgssse063-ba_ebony.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 128624.54, 24378.072, -11874.043
+      Rotation: 0, 0, 0.70000094
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 000829:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000821:ccbgssse063-ba_ebony.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 128629.46, 24378.967, -11854.49
+      Rotation: 0, 0, 0.70000094
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00082A:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000825:ccbgssse063-ba_ebony.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 128633.73, 24375.322, -11856.96
+      Rotation: 0, 0, 0.70000094
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00082B:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultSetStageOnLoad
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: disableWhenDone
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myQuest
+          Object: 000840:ccbgssse063-ba_ebony.esl
+        - MutagenObjectType: ScriptIntProperty
+          Name: prereqStageOPT
+          Data: 20
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 46
+    Base: 000823:ccbgssse063-ba_ebony.esl
+    LocationReference: 018A57:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 139120.33, 33963.902, -13946.69
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00082C:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000820:ccbgssse063-ba_ebony.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 128619.83, 24366.244, -11859.278
+      Rotation: 0, 0, 0.70000094
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedObject
+    FormKey: 00082D:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0C4EFD:Skyrim.esm
+    Owner: 000823:ccbgssse063-ba_ebony.esl
+    LocationReference: 018A57:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 139079.72, 34019.156, -13946.465
+      Rotation: 0, 0, 2.443461
+  - MutagenObjectType: PlacedNpc
+    FormKey: 00083E:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 00081F:ccbgssse063-ba_ebony.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 128657.71, 24393.973, -11860.201
+      Rotation: 0, 0, 0.70000094
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedObject
+    FormKey: 000849:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 05EF7A:Skyrim.esm
+    Owner: 000827:ccbgssse063-ba_ebony.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 128725.91, 24482.543, -11797.455
+      Rotation: 0, 0, 0.70000094
+  - MutagenObjectType: PlacedObject
+    FormKey: 000851:ccbgssse063-ba_ebony.esl
+    MajorRecordFlagsRaw: 3072
+    EditorID: ccBGSSSE063_DratheaStandREF
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000034:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 128711.22, 24467.477, -11818.356
+      Rotation: 0, 0, 0.70000446
+  - MutagenObjectType: PlacedObject
+    FormKey: 000820:ccbgssse064-ba_elven.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 03AC21:Skyrim.esm
+    Lock:
+      Level: 255
+      Unused: 0x000000
+      Key: 000823:ccbgssse064-ba_elven.esl
+      Unused2: 0x0000000000000000000000
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: -64454.94, -39091.78, -1098.2701
+      Rotation: 0, 0, 2.6631892
+  - MutagenObjectType: PlacedNpc
+    FormKey: 000822:ccbgssse064-ba_elven.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultSetStageOnLoad
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: disableWhenDone
+          Data: True
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myQuest
+          Object: 000819:ccbgssse064-ba_elven.esl
+        - MutagenObjectType: ScriptIntProperty
+          Name: prereqStageOPT
+          Data: 100
+        - MutagenObjectType: ScriptIntProperty
+          Name: stage
+          Data: 200
+    Base: 000821:ccbgssse064-ba_elven.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: -64423.625, -39203.523, -1092.532
+      Rotation: 0, 0, 2.7000017
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedNpc
+    FormKey: 000825:ccbgssse064-ba_elven.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000824:ccbgssse064-ba_elven.esl
+    LinkedReferences:
+    - Reference: 000822:ccbgssse064-ba_elven.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: -64501.473, -39254.734, -1112.4542
     MajorFlags:
     - Persistent
     - InitiallyDisabled
@@ -2103,582 +2252,6 @@ TopCell:
       Unknown: 0x000000
     Placement:
       Position: -153204.48, -20490.953, 479.1823
-  - MutagenObjectType: PlacedObject
-    FormKey: 000820:ccbgssse064-ba_elven.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 03AC21:Skyrim.esm
-    Lock:
-      Level: 255
-      Unused: 0x000000
-      Key: 000823:ccbgssse064-ba_elven.esl
-      Unused2: 0x0000000000000000000000
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: -64454.94, -39091.78, -1098.2701
-      Rotation: 0, 0, 2.6631892
-  - MutagenObjectType: PlacedNpc
-    FormKey: 000822:ccbgssse064-ba_elven.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    VirtualMachineAdapter:
-      Scripts:
-      - Name: defaultSetStageOnLoad
-        Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: disableWhenDone
-          Data: True
-        - MutagenObjectType: ScriptObjectProperty
-          Name: myQuest
-          Object: 000819:ccbgssse064-ba_elven.esl
-        - MutagenObjectType: ScriptIntProperty
-          Name: prereqStageOPT
-          Data: 100
-        - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 200
-    Base: 000821:ccbgssse064-ba_elven.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: -64423.625, -39203.523, -1092.532
-      Rotation: 0, 0, 2.7000017
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 000825:ccbgssse064-ba_elven.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000824:ccbgssse064-ba_elven.esl
-    LinkedReferences:
-    - Reference: 000822:ccbgssse064-ba_elven.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: -64501.473, -39254.734, -1112.4542
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 000828:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000822:ccbgssse063-ba_ebony.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 128624.54, 24378.072, -11874.043
-      Rotation: 0, 0, 0.70000094
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 000829:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000821:ccbgssse063-ba_ebony.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 128629.46, 24378.967, -11854.49
-      Rotation: 0, 0, 0.70000094
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00082A:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000825:ccbgssse063-ba_ebony.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 128633.73, 24375.322, -11856.96
-      Rotation: 0, 0, 0.70000094
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00082B:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    VirtualMachineAdapter:
-      Scripts:
-      - Name: defaultSetStageOnLoad
-        Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: disableWhenDone
-        - MutagenObjectType: ScriptObjectProperty
-          Name: myQuest
-          Object: 000840:ccbgssse063-ba_ebony.esl
-        - MutagenObjectType: ScriptIntProperty
-          Name: prereqStageOPT
-          Data: 20
-        - MutagenObjectType: ScriptIntProperty
-          Name: stage
-          Data: 46
-    Base: 000823:ccbgssse063-ba_ebony.esl
-    LocationReference: 018A57:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 139120.33, 33963.902, -13946.69
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00082C:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000820:ccbgssse063-ba_ebony.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 128619.83, 24366.244, -11859.278
-      Rotation: 0, 0, 0.70000094
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedObject
-    FormKey: 00082D:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0C4EFD:Skyrim.esm
-    Owner: 000823:ccbgssse063-ba_ebony.esl
-    LocationReference: 018A57:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 139079.72, 34019.156, -13946.465
-      Rotation: 0, 0, 2.443461
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00083E:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 00081F:ccbgssse063-ba_ebony.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 128657.71, 24393.973, -11860.201
-      Rotation: 0, 0, 0.70000094
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedObject
-    FormKey: 000849:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 05EF7A:Skyrim.esm
-    Owner: 000827:ccbgssse063-ba_ebony.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 128725.91, 24482.543, -11797.455
-      Rotation: 0, 0, 0.70000094
-  - MutagenObjectType: PlacedObject
-    FormKey: 000851:ccbgssse063-ba_ebony.esl
-    MajorRecordFlagsRaw: 3072
-    EditorID: ccBGSSSE063_DratheaStandREF
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000034:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 128711.22, 24467.477, -11818.356
-      Rotation: 0, 0, 0.70000446
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00081D:ccbgssse062-ba_dwarvenmail.esl
-    MajorRecordFlagsRaw: 536874496
-    SkyrimMajorRecordFlags:
-    - 0x200
-    - 0x400
-    - InitiallyDisabled
-    - 0x20000000
-    Base: 00081C:ccbgssse062-ba_dwarvenmail.esl
-    RagdollData: 0x023B4130000000000000000000000000450783BF6D6F93BEB50C2DC008ABCBBE00D0D3C00000003D0000803C814E4240F8B2ED3E413D3F4009000000000020BC000020BD0030FA41A16E5EBFE3350FBCE69775BC0AA10A120000C0BB0000B7BE0060DB41D4A2813FB5E6F2BDBD85743E0E43CF410060D240000080BC0000C03D6CC92240AB02C0BDB6743E400F000000000084BC000080BC0044F9411EFDAABFA7F2813CBA6428BB109F05A500005CBD0080B6BE00A0DB41DF52B83FC8B57B3E692A25BE0266A23E0000183D00C0A8C000806E409FF8BF3D5D9F96BD32290FBE038726410000303D000090BD00600B41C00296BDDCCB38BD3972823D043C000000009C3D000010BE00401E41067FAC3E35B60D3DECFCA8BE00393B3B0000A0BC0000103D0060B0415BED173E9DC6AC3D005BF6BD0197713F0000403C0000903C00200D412FBAFB3ED9B720BE6AD99E3E0B0000000000803C0000013E00606141C064CD3FF4FE83BCD87439BE0CAC0E4F0000003D0000603D0082A241F5F1E83EF3FD98BDD8568ABC0DA0CD41000000BC0000003C00788041B3C99D3CAE01CEBD8879BEBF050000000000003D0000AC3D004060418E76A83FC0F484BEDDFBE6BB06BD96A70000C0BC0000A03D0094A241E4BF163F63F4843D0C3F203D07354FBF0000003C000000BC0090804174B10C3C0BBDE03DD229C03F0031F140000000000000884100002041000000800000008000000080
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 84813.625, -72135.586, 12080.295
-      Rotation: 0, 0, 1.9831967
-    MajorFlags:
-    - StartsDead
-    - Persistent
-    - InitiallyDisabled
-    - DoNotHavokSettle
-  - MutagenObjectType: PlacedObject
-    FormKey: 00081E:ccbgssse062-ba_dwarvenmail.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 0C4827:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 88724.57, -85988.68, 11987.874
-      Rotation: 0, 0, 4.0232615
-  - MutagenObjectType: PlacedNpc
-    FormKey: 000820:ccbgssse062-ba_dwarvenmail.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 00081F:ccbgssse062-ba_dwarvenmail.esl
-    LinkedReferences:
-    - Reference: 00081E:ccbgssse062-ba_dwarvenmail.esl
-    LocationReference: 0D566F:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 88681.516, -86017.76, 11944.004
-      Rotation: 0, 0, 4.1831965
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00081F:ccbgssse060-ba_dragonscale.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 00081E:ccbgssse060-ba_dragonscale.esl
-    LinkedReferences:
-    - Reference: 000823:ccbgssse060-ba_dragonscale.esl
-    ActivateParents:
-      Parents:
-      - Reference: 000825:ccbgssse060-ba_dragonscale.esl
-        Delay: 0.23
-    LocationReference: 0C3428:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 94407.64, 53411.992, -3535.2668
-      Rotation: 0, 0, 3.1831925
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 000821:ccbgssse060-ba_dragonscale.esl
-    MajorRecordFlagsRaw: 3584
-    SkyrimMajorRecordFlags:
-    - 0x200
-    - 0x400
-    - InitiallyDisabled
-    Base: 000820:ccbgssse060-ba_dragonscale.esl
-    RagdollData: 0x020D4CCE0000000000000000000000009D17D13FC291173E94CDA33E080000000000D4C00000C0BB0000403C639B45400C80B03E6F8F3E40090000000000803C0000403D00A0FA410FFA71BE466ED1BAE1AEA4BC0A000000000000BC000097BE00A0DB41D18E7C3FD657EBBD3CE27A3E0E0000000040D3400000403C000000BCD9D42A40304B37BF8E1943C00F0000000000003C0000903D0098FA41B537DFBED048A83BD1FDDE3B10000000000080BC00009EBE0098DB41ADB9C73F97A4793E98910DBE02000000000080BC0010A6C000807240BFD8EA3CB2B57F3DA48400BE03714BCE000080BC0000E03C00200C414D1C5EBE6563313DABF6693D04000000000080BC0000C0BB00981D41434D603ECF9DAB3D43B6A1BE0039D1400000C0BC0000F8BC0038B041597875BD8A30A23D05E1C63C01000000000000BD0000F8BD00180D415F58093F3DD292BD6EF50BBF0B000000000000BC0000C03C00A06041FD084C3F645D2ABF529F75BE0C65725C0000603D000058BD00ECA1416AE1C63EE25CADBDCE8F8CBB0D735C4D0000203D0000C4BD803E80410D75223D73FBD0BE0823BFBF050000000000203C0000403C008060416B44023FC87AE2BD051C8D3E06B2D8BF0000403B0000DC3D00F0A14106041A40FD3552BD0503683D07735C41000000000000803D004080412A04C9BB8D5ABB3EC4ADBF3F00204173000000000000884100002041000000800000008000000080
-    LocationReference: 0C3428:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 94437.19, 53471.875, -3532.1743
-    MajorFlags:
-    - StartsDead
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedObject
-    FormKey: 000823:ccbgssse060-ba_dragonscale.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 038A49:Skyrim.esm
-    LocationReference: 0C3428:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    LinkedReferences:
-    - Reference: 000824:ccbgssse060-ba_dragonscale.esl
-    Placement:
-      Position: 94419.24, 53227.855, -3547.8457
-  - MutagenObjectType: PlacedObject
-    FormKey: 000824:ccbgssse060-ba_dragonscale.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 06BDD3:Skyrim.esm
-    LocationReference: 0C3428:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 94415.21, 53223.598, -3541.2205
-  - MutagenObjectType: PlacedObject
-    FormKey: 000825:ccbgssse060-ba_dragonscale.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    VirtualMachineAdapter:
-      Scripts:
-      - Name: defaultActivateSelf
-        Flags: Inherited
-        Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: disableWhenDone
-          Data: True
-        - MutagenObjectType: ScriptBoolProperty
-          Name: doOnce
-          Data: True
-    Base: 048AC0:Skyrim.esm
-    Primitive:
-      Bounds: 1080.7969, 560.7656, 226.4243
-      Color: '#000080FF'
-      Unknown: 0.15
-      Type: Box
-    LocationReference: 0C3428:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 94444.37, 53327.105, -3431.0596
-  - MutagenObjectType: PlacedObject
-    FormKey: 000819:ccbgssse056-ba_silver.esl
-    MajorRecordFlagsRaw: 3072
-    EditorID: ccBGSSSE056_ThalmorMarkerREF
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 00003B:Skyrim.esm
-    LocationReference: 0E66A5:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: -91321.625, 17420.83, -3771.9612
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00081D:ccbgssse056-ba_silver.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000822:ccbgssse056-ba_silver.esl
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: -90012, 17482.867, -3834.8977
-      Rotation: 0, 0, 4.583193
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00081E:ccbgssse056-ba_silver.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000821:ccbgssse056-ba_silver.esl
-    LevelModifier: Easy
-    LocationReference: 0E66A5:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: -90117.33, 16565.719, -3689.6873
-      Rotation: 0, 0, 5.18319
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00081F:ccbgssse056-ba_silver.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 000821:ccbgssse056-ba_silver.esl
-    LevelModifier: Easy
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: -90100.75, 18239.238, -3729.8904
-      Rotation: 0, 0, 3.9831922
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
-  - MutagenObjectType: PlacedObject
-    FormKey: 000824:ccbgssse053-ba_leather.esl
-    MajorRecordFlagsRaw: 536873984
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    - 0x20000000
-    VirtualMachineAdapter:
-      Scripts:
-      - Name: defaultDisableHavokOnLoad
-    Base: 000819:ccbgssse053-ba_leather.esl
-    Owner: 000007:Skyrim.esm
-    LocationReference: 0B238D:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: -108281.06, 56258.87, -7473.443
-  - MutagenObjectType: PlacedNpc
-    FormKey: 000826:ccbgssse051-ba_daedricmail.esl
-    MajorRecordFlagsRaw: 536874496
-    SkyrimMajorRecordFlags:
-    - 0x200
-    - 0x400
-    - InitiallyDisabled
-    - 0x20000000
-    VirtualMachineAdapter:
-      Scripts:
-      - Name: defaultDisableHavokOnLoad
-        Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnActivate
-        - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnHit
-        - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnZKey
-    Base: 000824:ccbgssse051-ba_daedricmail.esl
-    RagdollData: 0x020000000000803C000000BC0000803A6B5D953E28DF91BF40B621C00812E83E0080D8C0000000BC000000BD24862440EF9A083EE2163EC009020000000080BC0000203D0070FA4179CBFBBFC6FABDBBCF8D043B0A7FFE3E0000C0BD0000A8BE0040DB41EB91DC3FF1BC6ABE9C8FD93D0E0200000080D440000060BC000080BCF561434006B69B3C2FC53FC00FBB013F0000003C0000003D0070FA416576D9BF1D387E3C84F45DBC10020000000000BD0000A0BE00E0DA419D14DB3FF55E893EDB55EABD02A0033F0000403D00E0A5C000807340DDE0D33D05E778BD080C523D030200000000203D0000683D00400D41461A8CBD2180263D67E67D3E0482883D0000603D00001C3D00201E411D52883E8E9ABC3D1D3102BE00020000000090BD000080BB00E0AF41D7E1053EE92E73BD60DE2E3C011D023E000000000000C0BC00200D416326A43E163092BED971203F0B0200000000F8BD0000603D00A05F41F4DD243F8FD324BFA75F1CBE0CAA023E00004C3E000068BE00C0A241B756C83E55A9B9BD82AD1DBC0D0200000000803C0000A0BC00A08041B7C53B3D7195CEBEE243BFBF05A3B53D0000E03D000080BC00905D415DE3F23F25CE053E33A2B23E060200000000703E00A054BE0038A3416CF30A40B1E2C2BD87349B3D07870D3E000000BE0000C83D005880419295B23C5B50993C6EA3BF3F00020000000000000000884100002041000000800000008000000080
-    LocationReference: 0C2EE7:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 163200.66, 37958.867, -10399.848
-      Rotation: 0, 0, 2.3495936
-    MajorFlags:
-    - StartsDead
-    - Persistent
-    - InitiallyDisabled
-    - DoNotHavokSettle
-  - MutagenObjectType: PlacedObject
-    FormKey: 00082C:ccbgssse051-ba_daedricmail.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 018EDE:Skyrim.esm
-    LocationReference: 0C2EE7:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 163169.45, 37874.453, -10356.664
-      Rotation: 1.8063093, 1.135321, 0.7168992
-  - MutagenObjectType: PlacedNpc
-    FormKey: 00083A:ccbgssse051-ba_daedricmail.esl
-    MajorRecordFlagsRaw: 3072
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - InitiallyDisabled
-    Base: 00081C:ccbgssse051-ba_daedricmail.esl
-    LinkedReferences:
-    - Reference: 073B6C:Skyrim.esm
-    LocationReference: 0C2EE7:Skyrim.esm
-    EnableParent:
-      Reference: 000014:Skyrim.esm
-      Flags:
-      - SetEnableStateToOppositeOfParent
-      Unknown: 0x000000
-    Placement:
-      Position: 163301.73, 37944.273, -10429.916
-    MajorFlags:
-    - Persistent
-    - InitiallyDisabled
   - MutagenObjectType: PlacedNpc
     FormKey: 000827:ccedhsse003-redguard.esl
     MajorRecordFlagsRaw: 3072
@@ -3076,6 +2649,433 @@ TopCell:
     - StartsDead
     - Persistent
     - InitiallyDisabled
+  - MutagenObjectType: PlacedObject
+    FormKey: 000925:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000811:ccmtysse002-ve.esl
+    LocationReference: 0C342D:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 20441.857, 66473.61, -8684.607
+  - MutagenObjectType: PlacedNpc
+    FormKey: 000930:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 536874496
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    - InitiallyDisabled
+    - 0x20000000
+    Base: 00095C:ccmtysse002-ve.esl
+    RagdollData: 0x02181B000000000000000000000000002CC19DBF7E0E343F02E52DC0081B000000A4D4C00000183D0000003C54EB43C01BA9533EC3E64240091B00000000303C0000A83C00A0FA41ABD9ABBE68117ABBEFAD3ABC0A1C1900000080BB00009ABE0070DB41BA00CF3FE6CF7BBEDC13F93D0E1B1C000024D3400000143D0000803DE8014240E255923CF8433B400F1B1C0000008C3C0000883D00B0FA414DE9F0BE4A41BE3B1BDF273C101B1C000000CCBC0000AABE0040DB416034D73FCAB9813EFFA3E1BD021C190000008CBC0070A5C000806E404CE7F83D8143FFBCC53E91BD031B1C000000943C0000B03C00000B41ECE534BE0094F1B8E8B4D33D041B1C000000483C000080BC00E01C41CD439D3E7EA2BA3CB32868BE00120000000041BD00001C3D0050B041FFAA01BB2A81F73D29120BBE01120000000030BD0000A8BD00800C413C608ABE7CAB413C6B7699BD0B1310000000203D0000003C00406241EF6A123F1DC0E6BE5C3B27BE0C121311000040BD000038BD00C0A241AF0717407078203D897494BD0D121300000080BC0000003C00407F41C6FD943D0E1CDFBEE97BC0BF051213110000803C000040BC00785F41133E093F5F19ACBD7C1DE33E061213000000003C0000D0BC0070A141506DDB3E5D4D983D13A0D33C071013110000003C000090BD00E07F4138708BBA98F7CD3E9B5CBF3F00131000000000000000884100002041000000800000008000000080
+    LocationReference: 0C2EED:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 19634.258, 92987.45, -11802.784
+      Rotation: 0, 0, 5.649603
+    MajorFlags:
+    - StartsDead
+    - Persistent
+    - InitiallyDisabled
+    - DoNotHavokSettle
+  - MutagenObjectType: PlacedObject
+    FormKey: 000933:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 027D51:Skyrim.esm
+    LocationReference: 0C2EED:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 19673.453, 93062.375, -11723.43
+      Rotation: 2.2831979, 0, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: 00093C:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0F11E9:Skyrim.esm
+    Owner: 000938:ccmtysse002-ve.esl
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 30171.568, 85754.17, -9040.711
+      Rotation: 0, 0, 4.9301887
+  - MutagenObjectType: PlacedObject
+    FormKey: 000986:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000034:Skyrim.esm
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 34712.082, 111044.64, -11315.026
+      Rotation: 0, 0, 1.6000026
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009DE:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: ccMTYSSE002_TrailWrongSuspectScript
+        Flags: Inherited
+        Properties:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: MySuspect
+          Object: 000936:ccmtysse002-ve.esl
+        - MutagenObjectType: ScriptIntProperty
+          Name: StageToSet
+          Data: 49
+        - MutagenObjectType: ScriptObjectProperty
+          Name: triggerActor
+          Object: 000936:ccmtysse002-ve.esl
+    Base: 0009DC:ccmtysse002-ve.esl
+    Primitive:
+      Bounds: 328.8125, 149.9062, 133
+      Color: '#00CC4C33'
+      Unknown: 0.15
+      Type: Box
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 34697.27, 111170.83, -11248.526
+      Rotation: 0, 0, 1.6000026
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009EB:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    LinkedReferences:
+    - Reference: 0009EC:ccmtysse002-ve.esl
+    Placement:
+      Position: 35272.36, 90368.375, -9339.874
+      Rotation: 0, 0, 3.583196
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009EC:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    LinkedReferences:
+    - Reference: 0009ED:ccmtysse002-ve.esl
+    Placement:
+      Position: 34813.227, 89054.91, -9350.892
+      Rotation: 0, 0, 3.583196
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009ED:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    LinkedReferences:
+    - Reference: 0009EE:ccmtysse002-ve.esl
+    Placement:
+      Position: 34578.285, 87741.914, -9388.185
+      Rotation: 0, 0, 3.583196
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009EE:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    LinkedReferences:
+    - Reference: 0009EF:ccmtysse002-ve.esl
+    Placement:
+      Position: 33493.32, 86917.54, -9515.444
+      Rotation: 0, 0, 3.9831955
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009EF:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 32903.61, 85915.9, -9419.158
+      Rotation: 0, 0, 3.9831955
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009F1:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    Owner: 000935:ccmtysse002-ve.esl
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    LinkedReferences:
+    - Reference: 0009F2:ccmtysse002-ve.esl
+    Placement:
+      Position: 31441.691, 107512.19, -13913.023
+      Rotation: 0, 0, 0.7999996
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009F2:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    Owner: 000935:ccmtysse002-ve.esl
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    LinkedReferences:
+    - Reference: 0009F3:ccmtysse002-ve.esl
+    Placement:
+      Position: 32130.531, 108391.72, -13710.298
+      Rotation: 0, 0, 0.7999996
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009F3:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    Owner: 000935:ccmtysse002-ve.esl
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    LinkedReferences:
+    - Reference: 0009F5:ccmtysse002-ve.esl
+    Placement:
+      Position: 32688.645, 108874.125, -13174.695
+      Rotation: 5.68607, 0.33708417, 0.48650005
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009F4:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000034:Skyrim.esm
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 34174.35, 110543.016, -11798.512
+      Rotation: 0, 0, 1.1000007
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009F5:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0140BD:Skyrim.esm
+    Owner: 000935:ccmtysse002-ve.esl
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 32996.273, 109100.234, -12858.7
+      Rotation: 5.68607, 0.33708417, 0.48650005
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009F7:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 000034:Skyrim.esm
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 30987.072, 104595.72, -13866.742
+      Rotation: 0, 0, 1.5000005
+  - MutagenObjectType: PlacedObject
+    FormKey: 0009FA:ccmtysse002-ve.esl
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 052FF5:Skyrim.esm
+    Owner: 000935:ccmtysse002-ve.esl
+    LocationReference: 018A50:Skyrim.esm
+    EnableParent:
+      Reference: 000014:Skyrim.esm
+      Flags:
+      - SetEnableStateToOppositeOfParent
+      Unknown: 0x000000
+    Placement:
+      Position: 28836.63, 106157, -13874.0625
+      Rotation: 0, 0, 2.6000013
+  - MutagenObjectType: PlacedNpc
+    FormKey: 03614F:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0D281F:Skyrim.esm
+    EncounterZone: 03EC94:Skyrim.esm
+    LevelModifier: VeryHard
+    LinkedReferences:
+    - Reference: 068759:Skyrim.esm
+    PersistentLocation: 01925F:Skyrim.esm
+    LocationReference: 01925F:Skyrim.esm
+    Placement:
+      Position: -124429.14, 8571.4795, -7552
+      Rotation: 0, 0, 1.4207993
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 045861:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: WETriggerScript
+        Flags: Inherited
+        Properties:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: myHoldLocation
+          Object: 016769:Skyrim.esm
+        - MutagenObjectType: ScriptBoolProperty
+          Name: TriggerOnLoad
+          Data: True
+    Base: 04A5EE:Skyrim.esm
+    Primitive:
+      Bounds: 512, 512, 512
+      Color: '#00FF00FF'
+      Unknown: 0.15
+      Type: Box
+    CollisionLayer: 22
+    Placement:
+      Position: -159046.72, -24180.47, 2150.9604
+      Rotation: 0.021160372, 0.029192377, 3.060016
+  - MutagenObjectType: PlacedNpc
+    FormKey: 069F7C:Skyrim.esm
+    MajorRecordFlagsRaw: 1536
+    SkyrimMajorRecordFlags:
+    - 0x200
+    - 0x400
+    Base: 069F7D:Skyrim.esm
+    EncounterZone: 03EC94:Skyrim.esm
+    RagdollData: 0x00B32E14800AA7BE80065BBE0000000000000080000000800000008002000500000000BC000080BC00000000341DC23F816F833F0726A33C08000C0000A036C100001F3E0000A1BE825244C040ABE93E93DE4040090010000000C03C0000F03C0068864206A8CFBDDF51F33BFE82913D0A0015000000803C0000B8BC00AC8D423115A53F22E572BDB2D71B3E0E001900008036410000083E0000A7BE8FAF47C0004DB0BE714242400F000A000000003C0000383D0068864299D6CABDB80EF2BB018595BD10001D000000C03C0000803C00A48D422C67733FC80EC03B1B3827BE0200200000000000007A3FC100700A41F26F123E173E893E5723EF3B030023000000003D0000C03A00288141822790BDC9A9383E8B6B453D04002B00000000000000BDBD002042414D241C3E7565AABEBD8DA13D00002F00000020BD000046BE00D41742623E65BE6D4A8A3E25639E3C0100370000000000000000BB00C02041A77003BFB348BC3E2E7F373E00003C00000079400000923F00C8E24153E7603F7CA1B8BF4CA88FBF0B0028000080DF3F00009FBD00308F41D07B963EC715EBBEA7A186BE0C0042000040C23F0000BF3E00283E42180BBB3EA19B95BD119C93BC0D0045000000803B000080BC00D839426FDB5C3DD2E67D3DCE2EC3BF0000490000007DC000C09D3F00D8E2410263873F3290B63FF3E5723F050042000040DFBF0000A03C00F08E41EAD488BDFA5ED63E189436BE06FFFFFF0080C1BF0000BC3E00183E42C3F6B73EE0E1953D745A413C07F4E9130000403C000020BE00D83942D56E553C71CF143F7E88C13F
+    LevelModifier: VeryHard
+    LinkedReferences:
+    - Reference: 069F7E:Skyrim.esm
+    PersistentLocation: 01925F:Skyrim.esm
+    LocationReference: 01925F:Skyrim.esm
+    Placement:
+      Position: -124078.48, 8640.341, -7483.02
+      Rotation: 0, 0, 0.95422214
+    MajorFlags:
+    - StartsDead
+    - Persistent
+  - MutagenObjectType: PlacedNpc
+    FormKey: 0E662F:Skyrim.esm
+    MajorRecordFlagsRaw: 3072
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - InitiallyDisabled
+    Base: 0E662E:Skyrim.esm
+    LocationReference: 0C2EED:Skyrim.esm
+    Placement:
+      Position: 19489.396, 93000.43, -11819.493
+      Rotation: 0, 0, 3.1331906
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  - MutagenObjectType: PlacedObject
+    FormKey: 002FC4:Update.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 002FC5:Update.esm
+    TeleportDestination:
+      Door: 002FAB:Update.esm
+      Position: 0, 320, 1865.4319
+      Rotation: 0, 0, 3.1831944
+    Lock:
+      Level: Apprentice
+      Unused: 0x000000
+      Key: 00080A:ccbgssse043-crosselv.esl
+      Unused2: 0x0000000000000000000000
+    NavigationDoorLink:
+      NavMesh: 104D13:Skyrim.esm
+      TeleportMarkerTriangle: 24
+    LocationReference: 0EF546:Skyrim.esm
+    Placement:
+      Position: -92144, 112288, -3078
+      Rotation: 0, 0, 2.6000082
   MajorFlags:
   - Persistent
   - 0x40000

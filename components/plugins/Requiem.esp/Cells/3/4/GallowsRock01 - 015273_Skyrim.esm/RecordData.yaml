@@ -51,6 +51,17 @@ Music: 05615B:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
+  FormKey: 36D50C:Requiem.esp
+  Base: 36D50B:Requiem.esp
+  EnableParent:
+    Reference: 0AA0A1:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 6177.644, 619.90375, 113.45021
+    Rotation: 0.86475223, -1.1953253, 5.396324
+- MutagenObjectType: PlacedObject
   FormKey: 0420B4:Skyrim.esm
   Version2: 2
   Base: 03AC21:Skyrim.esm
@@ -204,16 +215,5 @@ Temporary:
   Placement:
     Position: 1855.8755, 398.01614, 133.44849
     Rotation: 0, 0, 5.676994
-- MutagenObjectType: PlacedObject
-  FormKey: 36D50C:Requiem.esp
-  Base: 36D50B:Requiem.esp
-  EnableParent:
-    Reference: 0AA0A1:Skyrim.esm
-    Flags:
-    - SetEnableStateToOppositeOfParent
-    Unknown: 0x000000
-  Placement:
-    Position: 6177.644, 619.90375, 113.45021
-    Rotation: 0.86475223, -1.1953253, 5.396324
 MajorFlags:
 - 0x40000

@@ -30,6 +30,8 @@ Factions:
 Voice: 018469:Dragonborn.esm
 Race: 013742:Skyrim.esm
 ActorEffect:
+- 01DBE8:Dragonborn.esm
+- 03D473:Dragonborn.esm
 - 072317:Skyrim.esm
 - 07231A:Skyrim.esm
 - 07231B:Skyrim.esm
@@ -38,8 +40,6 @@ ActorEffect:
 - 0BB96B:Skyrim.esm
 - 10F7F6:Skyrim.esm
 - 10F7F8:Skyrim.esm
-- 01DBE8:Dragonborn.esm
-- 03D473:Dragonborn.esm
 Perks:
 - Perk: 0153CF:Skyrim.esm
   Rank: 1
@@ -130,13 +130,13 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 018451:Dragonborn.esm
+    Count: 1
+- Item:
     Item: 01399E:Skyrim.esm
     Count: 1
 - Item:
     Item: 1046D1:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 018451:Dragonborn.esm
     Count: 1
 AIData:
   Confidence: Brave
@@ -231,9 +231,7 @@ PlayerSkills:
   Health: 220
   Magicka: 940
   Stamina: 175
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 HeadParts:
 - 05107D:Skyrim.esm
 - 053927:Skyrim.esm

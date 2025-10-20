@@ -45,59 +45,6 @@ TopCell:
   WaterHeight: 3.4028235E+38
   Persistent:
   - MutagenObjectType: PlacedObject
-    FormKey: 02EC86:Skyrim.esm
-    MajorRecordFlagsRaw: 1024
-    Version2: 1
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 06FBEF:Skyrim.esm
-    LocationReference: 018EE1:Skyrim.esm
-    Placement:
-      Position: 2737.1362, 3343.3513, 293.53027
-      Rotation: 0, 0, 6.003933
-  - MutagenObjectType: PlacedObject
-    FormKey: 02EC87:Skyrim.esm
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 06FBEF:Skyrim.esm
-    LocationReference: 018EE1:Skyrim.esm
-    Placement:
-      Position: 2779.2249, 3522.3784, 293.53027
-      Rotation: 0, 0, 6.003933
-  - MutagenObjectType: PlacedObject
-    FormKey: 02EC88:Skyrim.esm
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 06FBEF:Skyrim.esm
-    LocationReference: 018EE1:Skyrim.esm
-    Placement:
-      Position: 2877.175, 3469.2764, 293.53027
-      Rotation: 0, 0, 6.003933
-  - MutagenObjectType: PlacedObject
-    FormKey: 02EC89:Skyrim.esm
-    MajorRecordFlagsRaw: 1024
-    Version2: 1
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 079986:Skyrim.esm
-    ActivateParents:
-      Flags:
-      - ParentActivateOnly
-      Parents:
-      - Reference: 02EC86:Skyrim.esm
-      - Reference: 02EC87:Skyrim.esm
-      - Reference: 02EC88:Skyrim.esm
-      - Reference: 244251:Requiem.esp
-      - Reference: 244256:Requiem.esp
-      - Reference: 244259:Requiem.esp
-      - Reference: 24425C:Requiem.esp
-    LocationReference: 018EE1:Skyrim.esm
-    Placement:
-      Position: 2746.0261, 3651.7554, 453.53027
-      Rotation: -1.5707964, -0.27925247, 6.283185
-  - MutagenObjectType: PlacedObject
     FormKey: 244251:Requiem.esp
     MajorRecordFlagsRaw: 1024
     SkyrimMajorRecordFlags:
@@ -196,6 +143,59 @@ TopCell:
     Placement:
       Position: 2918.993, 3326.5532, 293.03027
       Rotation: 0, 0, 6.003933
+  - MutagenObjectType: PlacedObject
+    FormKey: 02EC86:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 1
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 06FBEF:Skyrim.esm
+    LocationReference: 018EE1:Skyrim.esm
+    Placement:
+      Position: 2737.1362, 3343.3513, 293.53027
+      Rotation: 0, 0, 6.003933
+  - MutagenObjectType: PlacedObject
+    FormKey: 02EC87:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 06FBEF:Skyrim.esm
+    LocationReference: 018EE1:Skyrim.esm
+    Placement:
+      Position: 2779.2249, 3522.3784, 293.53027
+      Rotation: 0, 0, 6.003933
+  - MutagenObjectType: PlacedObject
+    FormKey: 02EC88:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 06FBEF:Skyrim.esm
+    LocationReference: 018EE1:Skyrim.esm
+    Placement:
+      Position: 2877.175, 3469.2764, 293.53027
+      Rotation: 0, 0, 6.003933
+  - MutagenObjectType: PlacedObject
+    FormKey: 02EC89:Skyrim.esm
+    MajorRecordFlagsRaw: 1024
+    Version2: 1
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 079986:Skyrim.esm
+    ActivateParents:
+      Flags:
+      - ParentActivateOnly
+      Parents:
+      - Reference: 02EC86:Skyrim.esm
+      - Reference: 02EC87:Skyrim.esm
+      - Reference: 02EC88:Skyrim.esm
+      - Reference: 244251:Requiem.esp
+      - Reference: 244256:Requiem.esp
+      - Reference: 244259:Requiem.esp
+      - Reference: 24425C:Requiem.esp
+    LocationReference: 018EE1:Skyrim.esm
+    Placement:
+      Position: 2746.0261, 3651.7554, 453.53027
+      Rotation: -1.5707964, -0.27925247, 6.283185
   MajorFlags:
   - Persistent
   - 0x40000

@@ -35,23 +35,17 @@ VirtualMachineAdapter:
       ScriptName: SF_MQ101KeepIntroSceneANew_00020167
       FragmentName: Fragment_0
     - Flags:
-      - OnCompletion
-      Index: 28
+      - OnStart
+      Index: 8
       Unknown: 16777216
       ScriptName: SF_MQ101KeepIntroSceneANew_00020167
-      FragmentName: Fragment_29
+      FragmentName: Fragment_16
     - Flags:
       - OnCompletion
       Index: 14
       Unknown: 16777216
       ScriptName: SF_MQ101KeepIntroSceneANew_00020167
       FragmentName: Fragment_12
-    - Flags:
-      - OnCompletion
-      Index: 31
-      Unknown: 16777216
-      ScriptName: SF_MQ101KeepIntroSceneANew_00020167
-      FragmentName: Fragment_4
     - Flags:
       - OnCompletion
       Index: 22
@@ -65,11 +59,17 @@ VirtualMachineAdapter:
       ScriptName: SF_MQ101KeepIntroSceneANew_00020167
       FragmentName: Fragment_27
     - Flags:
-      - OnStart
-      Index: 8
+      - OnCompletion
+      Index: 28
       Unknown: 16777216
       ScriptName: SF_MQ101KeepIntroSceneANew_00020167
-      FragmentName: Fragment_16
+      FragmentName: Fragment_29
+    - Flags:
+      - OnCompletion
+      Index: 31
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneANew_00020167
+      FragmentName: Fragment_4
 Flags:
 - 0x4
 Phases:
@@ -224,14 +224,12 @@ Phases:
     Data:
       MutagenObjectType: GetVMScriptVariableConditionData
       Target: 090A05:Skyrim.esm
-      SecondUnusedIntParameter: -285087040
       VariableName: ::isOpen_var
   CompletionConditions:
   - MutagenObjectType: ConditionFloat
     Data:
       MutagenObjectType: GetVMScriptVariableConditionData
       Target: 090A05:Skyrim.esm
-      SecondUnusedIntParameter: -285087008
       VariableName: ::isOpen_var
     ComparisonValue: 1
   Unused2: {}
@@ -333,7 +331,6 @@ Phases:
     Data:
       MutagenObjectType: GetVMScriptVariableConditionData
       Target: 0B35AF:Skyrim.esm
-      SecondUnusedIntParameter: -285086752
       VariableName: ::isOpen_var
     ComparisonValue: 1
   Unused2: {}

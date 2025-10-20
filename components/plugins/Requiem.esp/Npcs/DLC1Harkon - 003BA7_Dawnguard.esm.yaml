@@ -39,12 +39,12 @@ DeathItem: 011D69:Dawnguard.esm
 Voice: 007D86:Dawnguard.esm
 Race: 013746:Skyrim.esm
 ActorEffect:
-- 033976:Skyrim.esm
-- 0F5B5C:Skyrim.esm
-- 0F5B5D:Skyrim.esm
 - 0038BA:Dawnguard.esm
 - 00E662:Dawnguard.esm
 - 01A938:Dawnguard.esm
+- 033976:Skyrim.esm
+- 0F5B5C:Skyrim.esm
+- 0F5B5D:Skyrim.esm
 Perks:
 - Perk: 03FFFA:Skyrim.esm
   Rank: 1
@@ -60,11 +60,11 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 039BE5:Skyrim.esm
-    Count: 5
-- Item:
     Item: 0067CF:Dawnguard.esm
     Count: 1
+- Item:
+    Item: 039BE5:Skyrim.esm
+    Count: 5
 AIData:
   Aggression: Aggressive
   Confidence: Foolhardy
@@ -163,9 +163,7 @@ PlayerSkills:
   Health: 478
   Magicka: 338
   Stamina: 179
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x663FEF
 HeadParts:
 - 05140A:Skyrim.esm
 - 08555F:Skyrim.esm

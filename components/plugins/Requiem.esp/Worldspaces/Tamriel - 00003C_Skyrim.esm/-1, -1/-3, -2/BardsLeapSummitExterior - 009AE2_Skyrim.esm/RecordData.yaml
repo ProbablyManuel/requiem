@@ -55,6 +55,14 @@ Regions:
 Location: 018EE7:Skyrim.esm
 Water: 001232:Update.esm
 Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 1224DC:Requiem.esp
+  Base: 03E08A:Skyrim.esm
+  LevelModifier: Medium
+  PersistentLocation: 018EE7:Skyrim.esm
+  Placement:
+    Position: -91120.63, -33515.918, -2112
+    Rotation: 0, 0, 3.000001
 - MutagenObjectType: PlacedObject
   FormKey: 0B3C35:Skyrim.esm
   Version2: 1
@@ -69,13 +77,5 @@ Temporary:
   Placement:
     Position: -93515.32, -33202.273, -2112
     Rotation: 0, 0, 1.51319
-- MutagenObjectType: PlacedNpc
-  FormKey: 1224DC:Requiem.esp
-  Base: 03E08A:Skyrim.esm
-  LevelModifier: Medium
-  PersistentLocation: 018EE7:Skyrim.esm
-  Placement:
-    Position: -91120.63, -33515.918, -2112
-    Rotation: 0, 0, 3.000001
 MajorFlags:
 - 0x40000

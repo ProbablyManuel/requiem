@@ -26,24 +26,6 @@ VirtualMachineAdapter:
       FragmentName: Fragment_9
     PhaseFragments:
     - Flags:
-      - OnCompletion
-      Index: 20
-      Unknown: 16777216
-      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
-      FragmentName: Fragment_0
-    - Flags:
-      - OnStart
-      Index: 11
-      Unknown: 16777216
-      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
-      FragmentName: Fragment_18
-    - Flags:
-      - OnCompletion
-      Index: 26
-      Unknown: 16777216
-      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
-      FragmentName: Fragment_30
-    - Flags:
       - OnStart
       Index: 10
       Unknown: 16777216
@@ -56,11 +38,29 @@ VirtualMachineAdapter:
       ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
       FragmentName: Fragment_10
     - Flags:
-      - OnCompletion
-      Index: 33
+      - OnStart
+      Index: 11
       Unknown: 16777216
       ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
-      FragmentName: Fragment_5
+      FragmentName: Fragment_18
+    - Flags:
+      - OnCompletion
+      Index: 20
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_0
+    - Flags:
+      - OnStart
+      Index: 24
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_15
+    - Flags:
+      - OnCompletion
+      Index: 26
+      Unknown: 16777216
+      ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
+      FragmentName: Fragment_30
     - Flags:
       - OnCompletion
       Index: 31
@@ -68,11 +68,11 @@ VirtualMachineAdapter:
       ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
       FragmentName: Fragment_28
     - Flags:
-      - OnStart
-      Index: 24
+      - OnCompletion
+      Index: 33
       Unknown: 16777216
       ScriptName: SF_MQ101KeepIntroSceneB_0004E1E2
-      FragmentName: Fragment_15
+      FragmentName: Fragment_5
 Flags:
 - 0x4
 Phases:
@@ -271,7 +271,6 @@ Phases:
     Data:
       MutagenObjectType: GetVMScriptVariableConditionData
       Target: 0B35AF:Skyrim.esm
-      SecondUnusedIntParameter: -285084288
       VariableName: ::isOpen_var
     ComparisonValue: 1
   Unused2: {}

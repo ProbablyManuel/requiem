@@ -26,14 +26,6 @@ Configuration:
   SpeedMultiplier: 100
   DispositionBase: 35
 Factions:
-- Faction: 05091C:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 051596:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 0E3A49:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 0E3A56:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 018279:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 018426:Dragonborn.esm
@@ -42,17 +34,25 @@ Factions:
   Fluff: 0x000000
 - Faction: 02501A:Dragonborn.esm
   Fluff: 0x000000
+- Faction: 05091C:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A49:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0E3A56:Skyrim.esm
+  Fluff: 0x000000
 Voice: 013ADD:Skyrim.esm
 Race: 013742:Skyrim.esm
 Items:
+- Item:
+    Item: 018457:Dragonborn.esm
+    Count: 1
 - Item:
     Item: 013986:Skyrim.esm
     Count: 1
 - Item:
     Item: 1046D2:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 018457:Dragonborn.esm
     Count: 1
 AIData:
   Confidence: Average
@@ -150,9 +150,7 @@ PlayerSkills:
   Health: 115
   Magicka: 115
   Stamina: 115
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 HeadParts:
 - 05392A:Skyrim.esm
 - 08CA86:Skyrim.esm

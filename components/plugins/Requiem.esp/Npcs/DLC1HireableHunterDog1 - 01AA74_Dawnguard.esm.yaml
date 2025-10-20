@@ -25,6 +25,10 @@ Configuration:
   - Inventory
   - AttackData
 Factions:
+- Faction: 003375:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 01AA75:Dawnguard.esm
+  Fluff: 0x000000
 - Faction: 000013:Skyrim.esm
   Fluff: 0x000000
 - Faction: 02816B:Skyrim.esm
@@ -35,10 +39,6 @@ Factions:
   Rank: -1
   Fluff: 0x000000
 - Faction: 09A7B2:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 003375:Dawnguard.esm
-  Fluff: 0x000000
-- Faction: 01AA75:Dawnguard.esm
   Fluff: 0x000000
 DeathItem: 03AD7D:Skyrim.esm
 Voice: 011687:Dawnguard.esm
@@ -132,9 +132,7 @@ PlayerSkills:
     Value: 0
   Health: 340
   Stamina: 220
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x415AEF
 CombatStyle: 030004:Skyrim.esm
 NAM5: 255
 Height: 1

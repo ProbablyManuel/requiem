@@ -17,14 +17,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: StopCarryingEvent
       Object: 08C0A0:Skyrim.esm
-  - Name: WIDeadBodyCleanupScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DeathContainer
-      Object: 0F93E9:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WI
-      Object: 035D64:Skyrim.esm
   - Name: TrainerGoldScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -33,6 +25,14 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptIntProperty
       Name: TrainerType
       Data: 1
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 0F93E9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
 Configuration:
   Flags:
   - AutoCalcStats
@@ -160,9 +160,7 @@ PlayerSkills:
   Health: 106
   Magicka: 126
   Stamina: 103
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x405AEF
 HeadParts:
 - 09D74B:Skyrim.esm
 - 0B2FD5:Skyrim.esm

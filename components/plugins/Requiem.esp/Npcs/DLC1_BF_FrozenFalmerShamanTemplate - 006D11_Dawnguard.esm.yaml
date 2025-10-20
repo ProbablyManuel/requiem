@@ -23,22 +23,22 @@ Configuration:
   - AttackData
   HealthOffset: 250
 Factions:
+- Faction: 013814:Dawnguard.esm
+  Fluff: 0x000000
 - Faction: 000013:Skyrim.esm
   Fluff: 0x000000
 - Faction: 02997E:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 013814:Dawnguard.esm
   Fluff: 0x000000
 DeathItem: 03AD84:Skyrim.esm
 Voice: 01F1D2:Skyrim.esm
 Template: 025D32:Skyrim.esm
 Race: 01AACC:Dawnguard.esm
 ActorEffect:
+- 10E15D:Requiem.esp
+- 592D6F:Requiem.esp
 - 0400AC:Skyrim.esm
 - 07231A:Skyrim.esm
 - 0B62EE:Skyrim.esm
-- 10E15D:Requiem.esp
-- 592D6F:Requiem.esp
 WornArmor: 00D97F:Dawnguard.esm
 Perks:
 - Perk: 05312A:Skyrim.esm
@@ -166,9 +166,7 @@ PlayerSkills:
   Health: 360
   Magicka: 360
   Stamina: 220
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x415AEF
 CombatStyle: 05238B:Skyrim.esm
 NAM5: 255
 Height: 1

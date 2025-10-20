@@ -35,11 +35,11 @@ DeathItem: 01E0C8:Dragonborn.esm
 Voice: 013AD2:Skyrim.esm
 Race: 013748:Skyrim.esm
 ActorEffect:
-- 07D997:Skyrim.esm
-- 0A1992:Skyrim.esm
 - 008A62:Dawnguard.esm
 - AE393C:Requiem.esp
 - AE393D:Requiem.esp
+- 07D997:Skyrim.esm
+- 0A1992:Skyrim.esm
 Perks:
 - Perk: 03AF81:Skyrim.esm
   Rank: 1
@@ -220,6 +220,12 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 0E9585:Requiem.esp
+    Count: 100
+- Item:
+    Item: AE3939:Requiem.esp
+    Count: 1
+- Item:
     Item: 039BE5:Skyrim.esm
     Count: 2
 - Item:
@@ -227,12 +233,6 @@ Items:
     Count: 1
 - Item:
     Item: 0CF88F:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 0E9585:Requiem.esp
-    Count: 100
-- Item:
-    Item: AE3939:Requiem.esp
     Count: 1
 AIData:
   Aggression: Aggressive
@@ -330,9 +330,7 @@ PlayerSkills:
   Health: 2071
   Magicka: 250
   Stamina: 364
-  Unused: 16743
   GearedUpWeapons: 2
-  Unused2: 0x435AEF
 HeadParts:
 - 0513FE:Skyrim.esm
 - 0C7122:Skyrim.esm

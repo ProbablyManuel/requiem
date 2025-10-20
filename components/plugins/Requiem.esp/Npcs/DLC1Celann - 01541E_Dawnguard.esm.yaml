@@ -21,27 +21,27 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 150
 Factions:
-- Faction: 02816B:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 05C84D:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 003375:Dawnguard.esm
   Fluff: 0x000000
 - Faction: 00C3CC:Dawnguard.esm
   Fluff: 0x000000
 - Faction: 014217:Dawnguard.esm
   Fluff: 0x000000
+- Faction: 02816B:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 05C84D:Skyrim.esm
+  Fluff: 0x000000
 Voice: 013AD2:Skyrim.esm
 Race: 013741:Skyrim.esm
 ActorEffect:
-- 013018:Skyrim.esm
-- 02F3B8:Skyrim.esm
-- 04D3F2:Skyrim.esm
 - 010D8D:Dawnguard.esm
 - 03281F:Requiem.esp
 - 05F1B3:Requiem.esp
 - 3141B4:Requiem.esp
 - 93D530:Requiem.esp
+- 013018:Skyrim.esm
+- 02F3B8:Skyrim.esm
+- 04D3F2:Skyrim.esm
 AttackRace: 013741:Skyrim.esm
 Perks:
 - Perk: 0153D1:Skyrim.esm
@@ -157,17 +157,17 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 01D4EC:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 03EAE3:Skyrim.esm
-    Count: 3
-- Item:
     Item: 00D098:Dawnguard.esm
     Count: 1
 - Item:
     Item: 0150B8:Dawnguard.esm
     Count: 1
+- Item:
+    Item: 01D4EC:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03EAE3:Skyrim.esm
+    Count: 3
 AIData:
   Aggression: Aggressive
   Confidence: Brave
@@ -259,9 +259,7 @@ PlayerSkills:
   Health: 308
   Magicka: 314
   Stamina: 298
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x663FEF
 HeadParts:
 - 024259:Skyrim.esm
 - 08555F:Skyrim.esm

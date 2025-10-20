@@ -22,12 +22,12 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 70
 Factions:
+- Faction: 027802:Dragonborn.esm
+  Fluff: 0x000000
 - Faction: 05C84D:Skyrim.esm
   Fluff: 0x000000
 - Faction: 05C84E:Skyrim.esm
   Rank: -1
-  Fluff: 0x000000
-- Faction: 027802:Dragonborn.esm
   Fluff: 0x000000
 Voice: 018469:Dragonborn.esm
 Race: 013742:Skyrim.esm
@@ -95,6 +95,9 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 0179C9:Dragonborn.esm
+    Count: 1
+- Item:
     Item: 01397E:Skyrim.esm
     Count: 1
 - Item:
@@ -114,9 +117,6 @@ Items:
     Count: 1
 - Item:
     Item: 0E3C16:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 0179C9:Dragonborn.esm
     Count: 1
 AIData:
   Confidence: Brave
@@ -212,9 +212,7 @@ PlayerSkills:
   Health: 237
   Magicka: 112
   Stamina: 256
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x435AEF
 HeadParts:
 - 01750A:Skyrim.esm
 - 051080:Skyrim.esm

@@ -2,17 +2,6 @@ FormKey: 20B30F:Requiem.esp
 EditorID: REQ_Effect_SoulTrapFFActorPoison
 VirtualMachineAdapter:
   Scripts:
-  - Name: SayOnHitByMagicEffectScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TopicToSay
-      Object: 0AB884:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WICastNonHostileTimer
-      Object: 0E0CDC:Skyrim.esm
   - Name: magicsoultrapfxscript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -33,6 +22,17 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: TrapSoundFX
       Object: 056AC6:Skyrim.esm
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB884:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Soulreaping

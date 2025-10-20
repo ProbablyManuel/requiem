@@ -71,9 +71,9 @@ Persistent:
       - MutagenObjectType: ScriptObjectProperty
         Name: linkSisterSwitch
         Object: 091880:Skyrim.esm
-    - Name: TrapLever
-      Flags: InheritedAndRemoved
     - Name: NorLever01SCRIPT
+      Flags: InheritedAndRemoved
+    - Name: TrapLever
       Flags: InheritedAndRemoved
   Base: 021513:Skyrim.esm
   LocationReference: 019262:Skyrim.esm
@@ -125,76 +125,6 @@ Persistent:
     Position: -5784.0835, 369.35138, -195.27509
     Rotation: 0, 0, 1.5707964
 Temporary:
-- MutagenObjectType: PlacedObject
-  FormKey: 09187D:Skyrim.esm
-  Version2: 2
-  Base: 023A32:Skyrim.esm
-  ActivateParents:
-    Flags:
-    - ParentActivateOnly
-    Parents:
-    - Reference: 09187E:Skyrim.esm
-      Delay: 0.5
-    - Reference: 09187F:Skyrim.esm
-      Delay: 0.5
-  LocationReference: 019262:Skyrim.esm
-  Placement:
-    Position: -5787.19, 388.4636, -316.77512
-    Rotation: 0, 0, 1.5707964
-- MutagenObjectType: PlacedObject
-  FormKey: 100866:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  Version2: 1
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 033DA4:Skyrim.esm
-  LocationReference: 019262:Skyrim.esm
-  Placement:
-    Position: -2670.4795, -914.1785, 150.39857
-    Rotation: 0, 0, 0.11866977
-- MutagenObjectType: PlacedObject
-  FormKey: 100868:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  Version2: 1
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 033DA4:Skyrim.esm
-  LocationReference: 019262:Skyrim.esm
-  Placement:
-    Position: -2642.4666, 1659.4926, 114.88867
-    Rotation: 0, 0, 4.721857
-- MutagenObjectType: PlacedObject
-  FormKey: 10086A:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  Version2: 1
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 033DA4:Skyrim.esm
-  LocationReference: 019262:Skyrim.esm
-  Placement:
-    Position: -3781.0356, 1651.4603, 150.39857
-    Rotation: 0, 0, 3.6318576
-- MutagenObjectType: PlacedObject
-  FormKey: 10086C:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  Version2: 1
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 033DA4:Skyrim.esm
-  LocationReference: 019262:Skyrim.esm
-  Placement:
-    Position: -3760.1877, -885.41895, 150.39857
-    Rotation: 0, 0, 1.56186
-- MutagenObjectType: PlacedObject
-  FormKey: 10086D:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 016441:Skyrim.esm
-  Emittance: 088242:Skyrim.esm
-  LocationReference: 019262:Skyrim.esm
-  Placement:
-    Position: -3504.444, 445.71542, -350.79373
 - MutagenObjectType: PlacedNpc
   FormKey: 19DC33:Requiem.esp
   Base: 023A93:Skyrim.esm
@@ -272,5 +202,75 @@ Temporary:
   Placement:
     Position: 810.8558, 592.9935, -321.10107
     Rotation: 0, 0, 3.8831952
+- MutagenObjectType: PlacedObject
+  FormKey: 09187D:Skyrim.esm
+  Version2: 2
+  Base: 023A32:Skyrim.esm
+  ActivateParents:
+    Flags:
+    - ParentActivateOnly
+    Parents:
+    - Reference: 09187E:Skyrim.esm
+      Delay: 0.5
+    - Reference: 09187F:Skyrim.esm
+      Delay: 0.5
+  LocationReference: 019262:Skyrim.esm
+  Placement:
+    Position: -5787.19, 388.4636, -316.77512
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 100866:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 033DA4:Skyrim.esm
+  LocationReference: 019262:Skyrim.esm
+  Placement:
+    Position: -2670.4795, -914.1785, 150.39857
+    Rotation: 0, 0, 0.11866977
+- MutagenObjectType: PlacedObject
+  FormKey: 100868:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 033DA4:Skyrim.esm
+  LocationReference: 019262:Skyrim.esm
+  Placement:
+    Position: -2642.4666, 1659.4926, 114.88867
+    Rotation: 0, 0, 4.721857
+- MutagenObjectType: PlacedObject
+  FormKey: 10086A:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 033DA4:Skyrim.esm
+  LocationReference: 019262:Skyrim.esm
+  Placement:
+    Position: -3781.0356, 1651.4603, 150.39857
+    Rotation: 0, 0, 3.6318576
+- MutagenObjectType: PlacedObject
+  FormKey: 10086C:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 033DA4:Skyrim.esm
+  LocationReference: 019262:Skyrim.esm
+  Placement:
+    Position: -3760.1877, -885.41895, 150.39857
+    Rotation: 0, 0, 1.56186
+- MutagenObjectType: PlacedObject
+  FormKey: 10086D:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 016441:Skyrim.esm
+  Emittance: 088242:Skyrim.esm
+  LocationReference: 019262:Skyrim.esm
+  Placement:
+    Position: -3504.444, 445.71542, -350.79373
 MajorFlags:
 - 0x40000

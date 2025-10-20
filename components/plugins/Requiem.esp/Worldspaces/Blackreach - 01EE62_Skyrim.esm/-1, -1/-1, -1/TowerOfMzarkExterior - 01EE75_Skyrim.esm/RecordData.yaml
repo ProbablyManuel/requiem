@@ -14,6 +14,17 @@ WaterHeight: 1000
 Regions:
 - 048C2E:Skyrim.esm
 Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 586725:Requiem.esp
+  Base: 063230:Skyrim.esm
+  Placement:
+    Position: -1711.0779, -1949.4375, 1742.5032
+- MutagenObjectType: PlacedNpc
+  FormKey: 586726:Requiem.esp
+  Base: 06322B:Skyrim.esm
+  Placement:
+    Position: -1838.022, -1724.3936, 1742.5032
+    Rotation: 0, 0, 2.2
 - MutagenObjectType: PlacedObject
   FormKey: 0F3B3B:Skyrim.esm
   Version2: 1
@@ -26,16 +37,5 @@ Temporary:
   Placement:
     Position: -814.03174, -3839.4746, 1194.8346
     Rotation: -0.029173665, -0.17414188, 5.668566
-- MutagenObjectType: PlacedNpc
-  FormKey: 586725:Requiem.esp
-  Base: 063230:Skyrim.esm
-  Placement:
-    Position: -1711.0779, -1949.4375, 1742.5032
-- MutagenObjectType: PlacedNpc
-  FormKey: 586726:Requiem.esp
-  Base: 06322B:Skyrim.esm
-  Placement:
-    Position: -1838.022, -1724.3936, 1742.5032
-    Rotation: 0, 0, 2.2
 MajorFlags:
 - 0x40000

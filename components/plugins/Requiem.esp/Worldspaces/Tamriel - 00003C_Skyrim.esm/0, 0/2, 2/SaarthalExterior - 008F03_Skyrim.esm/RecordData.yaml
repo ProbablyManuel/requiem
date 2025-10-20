@@ -59,18 +59,6 @@ Regions:
 Location: 019299:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 03C17C:Skyrim.esm
-  Base: 0F1F66:Skyrim.esm
-  Lock:
-    Level: Novice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  EncounterZone: 03EC61:Skyrim.esm
-  LocationReference: 019299:Skyrim.esm
-  Placement:
-    Position: 90727.68, 91094.414, -12092.222
-    Rotation: 0, 0, 4.7331915
-- MutagenObjectType: PlacedObject
   FormKey: 223F37:Requiem.esp
   Base: 223F36:Requiem.esp
   Placement:
@@ -122,5 +110,17 @@ Temporary:
   Placement:
     Position: 90725, 91323, -12072
     Rotation: 3.1241393, 0, 5.4105206
+- MutagenObjectType: PlacedObject
+  FormKey: 03C17C:Skyrim.esm
+  Base: 0F1F66:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  EncounterZone: 03EC61:Skyrim.esm
+  LocationReference: 019299:Skyrim.esm
+  Placement:
+    Position: 90727.68, 91094.414, -12092.222
+    Rotation: 0, 0, 4.7331915
 MajorFlags:
 - 0x40000

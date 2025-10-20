@@ -58,35 +58,6 @@ Location: 0192C1:Skyrim.esm
 Water: 001232:Update.esm
 Temporary:
 - MutagenObjectType: PlacedNpc
-  FormKey: 03F7B1:Skyrim.esm
-  Base: 0B623B:Skyrim.esm
-  LevelModifier: Medium
-  LinkedReferences:
-  - Reference: 03F7A0:Skyrim.esm
-  PersistentLocation: 0192C1:Skyrim.esm
-  LocationReference: 0192C1:Skyrim.esm
-  Placement:
-    Position: 74021.27, -812.71747, -3761.241
-    Rotation: 0, 0, 1.5999992
-- MutagenObjectType: PlacedNpc
-  FormKey: 03F7B3:Skyrim.esm
-  Base: 0B623B:Skyrim.esm
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: 03F7B4:Skyrim.esm
-  PersistentLocation: 0192C1:Skyrim.esm
-  LocationReference: 0192C1:Skyrim.esm
-  Placement:
-    Position: 74099.32, -2145.899, -2879.8162
-    Rotation: 0, 0, 4.78319
-- MutagenObjectType: PlacedObject
-  FormKey: 0E6BCF:Skyrim.esm
-  Base: 0A7329:Skyrim.esm
-  LocationReference: 0192C1:Skyrim.esm
-  Placement:
-    Position: 74951.305, -3275.6726, -4404.8506
-    Rotation: 0.20518567, -0.014449541, 1.1831354
-- MutagenObjectType: PlacedNpc
   FormKey: 48CAFA:Requiem.esp
   Base: 01E79C:Skyrim.esm
   LevelModifier: Easy
@@ -139,5 +110,34 @@ Temporary:
   Placement:
     Position: 75075.26, -3878.2913, -4703.7695
     Rotation: -1.5999894, 0, 1.6
+- MutagenObjectType: PlacedNpc
+  FormKey: 03F7B1:Skyrim.esm
+  Base: 0B623B:Skyrim.esm
+  LevelModifier: Medium
+  LinkedReferences:
+  - Reference: 03F7A0:Skyrim.esm
+  PersistentLocation: 0192C1:Skyrim.esm
+  LocationReference: 0192C1:Skyrim.esm
+  Placement:
+    Position: 74021.27, -812.71747, -3761.241
+    Rotation: 0, 0, 1.5999992
+- MutagenObjectType: PlacedNpc
+  FormKey: 03F7B3:Skyrim.esm
+  Base: 0B623B:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 03F7B4:Skyrim.esm
+  PersistentLocation: 0192C1:Skyrim.esm
+  LocationReference: 0192C1:Skyrim.esm
+  Placement:
+    Position: 74099.32, -2145.899, -2879.8162
+    Rotation: 0, 0, 4.78319
+- MutagenObjectType: PlacedObject
+  FormKey: 0E6BCF:Skyrim.esm
+  Base: 0A7329:Skyrim.esm
+  LocationReference: 0192C1:Skyrim.esm
+  Placement:
+    Position: 74951.305, -3275.6726, -4404.8506
+    Rotation: 0.20518567, -0.014449541, 1.1831354
 MajorFlags:
 - 0x40000

@@ -41,33 +41,6 @@ EncounterZone: 038AB1:Skyrim.esm
 Music: 02D4C2:Skyrim.esm
 ImageSpace: 02EDEB:Skyrim.esm
 Temporary:
-- MutagenObjectType: PlacedObject
-  FormKey: 01CDCE:Skyrim.esm
-  Version2: 5
-  Base: 020670:Skyrim.esm
-  Lock:
-    Level: Apprentice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 018EE9:Skyrim.esm
-  Placement:
-    Position: -8585.538, -2294.9988, 532.2893
-    Rotation: -0.12516432, -0.041836586, 1.2100652
-- MutagenObjectType: PlacedObject
-  FormKey: 10F79B:Skyrim.esm
-  MajorRecordFlagsRaw: 2048
-  Version2: 1
-  SkyrimMajorRecordFlags:
-  - InitiallyDisabled
-  Base: 0EF052:Skyrim.esm
-  Lock:
-    Level: Apprentice
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 018EE9:Skyrim.esm
-  Placement:
-    Position: -8495.405, 1077.7455, 348.19785
-    Rotation: 0.13431607, 0.08720765, 2.5690618
 - MutagenObjectType: PlacedNpc
   FormKey: 06BA16:Requiem.esp
   Base: 03BE22:Skyrim.esm
@@ -207,5 +180,32 @@ Temporary:
   Placement:
     Position: -8407.482, -2512.9465, 507.4954
     Rotation: 0, 0, 3.3000128
+- MutagenObjectType: PlacedObject
+  FormKey: 01CDCE:Skyrim.esm
+  Version2: 5
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018EE9:Skyrim.esm
+  Placement:
+    Position: -8585.538, -2294.9988, 532.2893
+    Rotation: -0.12516432, -0.041836586, 1.2100652
+- MutagenObjectType: PlacedObject
+  FormKey: 10F79B:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  Version2: 1
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 0EF052:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018EE9:Skyrim.esm
+  Placement:
+    Position: -8495.405, 1077.7455, 348.19785
+    Rotation: 0.13431607, 0.08720765, 2.5690618
 MajorFlags:
 - 0x40000

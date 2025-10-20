@@ -2,18 +2,6 @@ FormKey: 019321:Dawnguard.esm
 EditorID: DLC1PCVampireAbsorbHealthFFAimed
 VirtualMachineAdapter:
   Scripts:
-  - Name: DLC1MagicVampDrainFXRangeScript
-  - Name: magicAbsorbFXScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CasterVFX
-      Object: 0ABEFC:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TargetVFX
-      Object: 014B8B:Dawnguard.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapImod
-      Object: 0ABF17:Skyrim.esm
   - Name: DLC1DrainBloodPointScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -46,6 +34,18 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: ReanimateSecondaryFFAimed
       Object: 0F52AB:Skyrim.esm
+  - Name: DLC1MagicVampDrainFXRangeScript
+  - Name: magicAbsorbFXScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0ABEFC:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 014B8B:Dawnguard.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 0ABF17:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Absorb Health

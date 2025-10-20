@@ -3,6 +3,7 @@ EditorID: BeeHive
 Version2: 10
 VirtualMachineAdapter:
   Scripts:
+  - Name: BeeHiveHavokOnHit
   - Name: critterspawn
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -32,7 +33,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptIntProperty
       Name: iMaxCritterCount
       Data: 4
-  - Name: BeeHiveHavokOnHit
 ObjectBounds:
   First: -20, -18, -46
   Second: 19, 21, 6

@@ -93,6 +93,8 @@ Configuration:
   - Keywords
   HealthOffset: 7500
 Factions:
+- Faction: 01D9C9:Dragonborn.esm
+  Fluff: 0x000000
 - Faction: 000013:Skyrim.esm
   Fluff: 0x000000
 - Faction: 04359A:Skyrim.esm
@@ -100,8 +102,6 @@ Factions:
 - Faction: 0435A0:Skyrim.esm
   Fluff: 0x000000
 - Faction: 091AE6:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 01D9C9:Dragonborn.esm
   Fluff: 0x000000
 Voice: 028241:Dragonborn.esm
 Template: 019665:Dragonborn.esm
@@ -222,9 +222,7 @@ PlayerSkills:
     Value: 0
   Health: 8282
   Stamina: 3013
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 CombatStyle: 028248:Dragonborn.esm
 NAM5: 255
 Height: 1

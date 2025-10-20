@@ -28,21 +28,21 @@ Configuration:
   - AttackData
   HealthOffset: 125
 Factions:
-- Faction: 01BCC0:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 024CAB:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 01BCC0:Skyrim.esm
   Fluff: 0x000000
 DeathItem: 0C3C9E:Skyrim.esm
 Voice: 013AF2:Skyrim.esm
 Template: 01E838:Dragonborn.esm
 Race: 013742:Skyrim.esm
 ActorEffect:
+- 01E8AF:Dragonborn.esm
+- 01E8B0:Dragonborn.esm
 - 072316:Skyrim.esm
 - 07231A:Skyrim.esm
 - 07231C:Skyrim.esm
 - 103A97:Skyrim.esm
-- 01E8AF:Dragonborn.esm
-- 01E8B0:Dragonborn.esm
 Perks:
 - Perk: 051B1B:Skyrim.esm
   Rank: 1
@@ -73,6 +73,9 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 03183B:Dragonborn.esm
+    Count: 2
+- Item:
     Item: 01399E:Skyrim.esm
     Count: 1
 - Item:
@@ -81,9 +84,6 @@ Items:
 - Item:
     Item: 03DF1C:Skyrim.esm
     Count: 1
-- Item:
-    Item: 03183B:Dragonborn.esm
-    Count: 2
 AIData:
   Aggression: VeryAggressive
   Confidence: Foolhardy
@@ -169,9 +169,7 @@ PlayerSkills:
   Health: 285
   Magicka: 115
   Stamina: 165
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 HeadParts:
 - 053927:Skyrim.esm
 - 08555F:Skyrim.esm

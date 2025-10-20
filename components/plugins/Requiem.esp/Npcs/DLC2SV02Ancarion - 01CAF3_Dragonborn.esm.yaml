@@ -20,9 +20,9 @@ Configuration:
   - Inventory
   HealthOffset: 250
 Factions:
-- Faction: 039F26:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 02173A:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 039F26:Skyrim.esm
   Fluff: 0x000000
 Voice: 013AF0:Skyrim.esm
 Template: 07D989:Skyrim.esm
@@ -79,13 +79,13 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 203C40:Requiem.esp
+    Count: 1
+- Item:
     Item: 07D986:Skyrim.esm
     Count: 1
 - Item:
     Item: 10FADC:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 203C40:Requiem.esp
     Count: 1
 AIData:
   Aggression: Aggressive
@@ -178,9 +178,7 @@ PlayerSkills:
   Health: 402
   Magicka: 383
   Stamina: 80
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 HairColor: 0A042E:Skyrim.esm
 NAM5: 255
 Height: 1

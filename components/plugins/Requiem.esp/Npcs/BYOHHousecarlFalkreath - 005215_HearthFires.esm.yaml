@@ -23,6 +23,10 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 50
 Factions:
+- Faction: 005211:HearthFires.esm
+  Fluff: 0x000000
+- Faction: 008460:HearthFires.esm
+  Fluff: 0x000000
 - Faction: 000DB1:Skyrim.esm
   Fluff: 0x000000
 - Faction: 019809:Skyrim.esm
@@ -33,10 +37,6 @@ Factions:
   Rank: -1
   Fluff: 0x000000
 - Faction: 0A2C8D:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 005211:HearthFires.esm
-  Fluff: 0x000000
-- Faction: 008460:HearthFires.esm
   Fluff: 0x000000
 Voice: 013AE3:Skyrim.esm
 Race: 013748:Skyrim.esm
@@ -178,9 +178,7 @@ PlayerSkills:
   Health: 210
   Magicka: 60
   Stamina: 135
-  Unused: 16743
   GearedUpWeapons: 2
-  Unused2: 0x435AEF
 HeadParts:
 - 040224:Skyrim.esm
 - 0E4D88:Skyrim.esm

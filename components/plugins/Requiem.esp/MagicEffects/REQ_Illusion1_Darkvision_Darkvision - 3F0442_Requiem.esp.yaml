@@ -2,22 +2,6 @@ FormKey: 3F0442:Requiem.esp
 EditorID: REQ_Illusion1_Darkvision_Darkvision
 VirtualMachineAdapter:
   Scripts:
-  - Name: REQ_Magic_XPGain
-    Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: Interval
-      Data: 1
-    - MutagenObjectType: ScriptStringProperty
-      Name: skill
-      Data: ILLUSION
-    - MutagenObjectType: ScriptFloatProperty
-      Name: XPGain
-      Data: 0.1
-  - Name: REQ_Magic_FinishSpell
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ToDispel
-      Object: 028532:Requiem.esp
   - Name: REQ_Illusion_LowLightVision
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -47,6 +31,22 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: OutroSoundFX
       Object: 07C722:Skyrim.esm
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 028532:Requiem.esp
+  - Name: REQ_Magic_XPGain
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: Interval
+      Data: 1
+    - MutagenObjectType: ScriptStringProperty
+      Name: skill
+      Data: ILLUSION
+    - MutagenObjectType: ScriptFloatProperty
+      Name: XPGain
+      Data: 0.1
 Name:
   TargetLanguage: English
   Value: Darkvision

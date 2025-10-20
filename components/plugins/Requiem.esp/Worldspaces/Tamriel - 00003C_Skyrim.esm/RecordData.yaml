@@ -44,6 +44,118 @@ TopCell:
   - 0CAD0A:Skyrim.esm
   Persistent:
   - MutagenObjectType: PlacedObject
+    FormKey: 094B3D:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0F0155:Skyrim.esm
+    Placement:
+      Position: 64949.992, -53253.598, 24745.258
+      Rotation: 1.5707964, 0, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: 24425D:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 06FBEF:Skyrim.esm
+    Placement:
+      Position: 78837.05, 25674.633, -7517.7188
+      Rotation: 0, 0, 2.2854
+  - MutagenObjectType: PlacedObject
+    FormKey: 24425E:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 06FBEF:Skyrim.esm
+    Placement:
+      Position: 78969.29, 25562.883, -7517.7188
+      Rotation: 0, 0, 2.2854
+  - MutagenObjectType: PlacedObject
+    FormKey: 4B94E0:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0180D8:Skyrim.esm
+    TeleportDestination:
+      Door: 4B94DF:Requiem.esp
+      Position: 78.84166, -1852.6145, 58.235107
+      Rotation: 0, 0, -0.09999628
+    Placement:
+      Position: 64868.297, -53574.05, 24822.588
+      Rotation: 0, 0, 0.8000051
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3840:Requiem.esp
+    MajorRecordFlagsRaw: 1610613760
+    SkyrimMajorRecordFlags:
+    - 0x400
+    - 0x20000000
+    - 0x40000000
+    VirtualMachineAdapter:
+      Scripts:
+      - Name: defaultDisableHavokOnLoad
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: havokOnHit
+    Base: AD3848:Requiem.esp
+    RagdollData: 0x003F464F00800541000080BB008096BFDB0FC9BF0000A0B5D476484000008001BA9E1740060072B900E8542C000000800000008060A5C93F
+    Placement:
+      Position: -48101.695, 76464.92, -13783.562
+      Rotation: 1.3962634, 0.5476459, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: AD38CF:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0C1D83:Skyrim.esm
+    Placement:
+      Position: 2318.3994, -59664.273, 1411.993
+      Rotation: 1.5707964, 0, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: AD38D0:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0C1D83:Skyrim.esm
+    Placement:
+      Position: 2264.7688, -59637.645, 1399.6631
+      Rotation: 1.5707964, 0, 0
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3933:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0E2BC7:Skyrim.esm
+    Placement:
+      Position: 34167.37, 39114.605, -7295.698
+      Rotation: 0, 0, 2.800002
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3934:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0E2BC7:Skyrim.esm
+    Placement:
+      Position: 29816.746, 35317.96, -6707.444
+      Rotation: 0, 0, 4.983189
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3935:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0E2BC7:Skyrim.esm
+    Placement:
+      Position: -8401.941, -68667.13, 2361.4219
+      Rotation: 0, 0, 2.4000337
+  - MutagenObjectType: PlacedObject
+    FormKey: AD3936:Requiem.esp
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0613A7:Skyrim.esm
+    Placement:
+      Position: -8504.79, -70341.17, 2335.2244
+      Rotation: 0, 0, 2.00002
+  - MutagenObjectType: PlacedObject
     FormKey: 0177E7:Skyrim.esm
     MajorRecordFlagsRaw: 1024
     Version2: 11
@@ -168,12 +280,6 @@ TopCell:
     - 0x400
     VirtualMachineAdapter:
       Scripts:
-      - Name: masterambushscript
-        Flags: Inherited
-        Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: ambushOnTrigger
-          Data: True
       - Name: defaultOnResetTestAndDisable
         Properties:
         - MutagenObjectType: ScriptObjectProperty
@@ -186,6 +292,12 @@ TopCell:
         - MutagenObjectType: ScriptIntProperty
           Name: myStage
           Data: 255
+      - Name: masterambushscript
+        Flags: Inherited
+        Properties:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: ambushOnTrigger
+          Data: True
     Base: 0E1F81:Skyrim.esm
     LevelModifier: Hard
     LinkedReferences:
@@ -662,118 +774,6 @@ TopCell:
     Placement:
       Position: 141269.38, 154164.53, -13694.448
       Rotation: 0, 0, 6.2431912
-  - MutagenObjectType: PlacedObject
-    FormKey: 094B3D:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0F0155:Skyrim.esm
-    Placement:
-      Position: 64949.992, -53253.598, 24745.258
-      Rotation: 1.5707964, 0, 0
-  - MutagenObjectType: PlacedObject
-    FormKey: 24425D:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 06FBEF:Skyrim.esm
-    Placement:
-      Position: 78837.05, 25674.633, -7517.7188
-      Rotation: 0, 0, 2.2854
-  - MutagenObjectType: PlacedObject
-    FormKey: 24425E:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 06FBEF:Skyrim.esm
-    Placement:
-      Position: 78969.29, 25562.883, -7517.7188
-      Rotation: 0, 0, 2.2854
-  - MutagenObjectType: PlacedObject
-    FormKey: 4B94E0:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0180D8:Skyrim.esm
-    TeleportDestination:
-      Door: 4B94DF:Requiem.esp
-      Position: 78.84166, -1852.6145, 58.235107
-      Rotation: 0, 0, -0.09999628
-    Placement:
-      Position: 64868.297, -53574.05, 24822.588
-      Rotation: 0, 0, 0.8000051
-  - MutagenObjectType: PlacedObject
-    FormKey: AD3840:Requiem.esp
-    MajorRecordFlagsRaw: 1610613760
-    SkyrimMajorRecordFlags:
-    - 0x400
-    - 0x20000000
-    - 0x40000000
-    VirtualMachineAdapter:
-      Scripts:
-      - Name: defaultDisableHavokOnLoad
-        Properties:
-        - MutagenObjectType: ScriptBoolProperty
-          Name: havokOnHit
-    Base: AD3848:Requiem.esp
-    RagdollData: 0x003F464F00800541000080BB008096BFDB0FC9BF0000A0B5D476484000008001BA9E1740060072B900E8542C000000800000008060A5C93F
-    Placement:
-      Position: -48101.695, 76464.92, -13783.562
-      Rotation: 1.3962634, 0.5476459, 0
-  - MutagenObjectType: PlacedObject
-    FormKey: AD38CF:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0C1D83:Skyrim.esm
-    Placement:
-      Position: 2318.3994, -59664.273, 1411.993
-      Rotation: 1.5707964, 0, 0
-  - MutagenObjectType: PlacedObject
-    FormKey: AD38D0:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0C1D83:Skyrim.esm
-    Placement:
-      Position: 2264.7688, -59637.645, 1399.6631
-      Rotation: 1.5707964, 0, 0
-  - MutagenObjectType: PlacedObject
-    FormKey: AD3933:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0E2BC7:Skyrim.esm
-    Placement:
-      Position: 34167.37, 39114.605, -7295.698
-      Rotation: 0, 0, 2.800002
-  - MutagenObjectType: PlacedObject
-    FormKey: AD3934:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0E2BC7:Skyrim.esm
-    Placement:
-      Position: 29816.746, 35317.96, -6707.444
-      Rotation: 0, 0, 4.983189
-  - MutagenObjectType: PlacedObject
-    FormKey: AD3935:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0E2BC7:Skyrim.esm
-    Placement:
-      Position: -8401.941, -68667.13, 2361.4219
-      Rotation: 0, 0, 2.4000337
-  - MutagenObjectType: PlacedObject
-    FormKey: AD3936:Requiem.esp
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0613A7:Skyrim.esm
-    Placement:
-      Position: -8504.79, -70341.17, 2335.2244
-      Rotation: 0, 0, 2.00002
   MajorFlags:
   - Persistent
   - 0x40000

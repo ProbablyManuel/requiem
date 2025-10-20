@@ -6,14 +6,6 @@ SkyrimMajorRecordFlags:
 - Compressed
 VirtualMachineAdapter:
   Scripts:
-  - Name: WIDeadBodyCleanupScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DeathContainer
-      Object: 08634B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WI
-      Object: 035D64:Skyrim.esm
   - Name: TrainerGoldScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -22,6 +14,14 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptIntProperty
       Name: TrainerType
       Data: 3
+  - Name: WIDeadBodyCleanupScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DeathContainer
+      Object: 08634B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WI
+      Object: 035D64:Skyrim.esm
 ObjectBounds:
   First: -22, -14, 0
   Second: 22, 14, 128
@@ -155,9 +155,7 @@ PlayerSkills:
   Health: 95
   Magicka: 130
   Stamina: 90
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 HeadParts:
 - 08555F:Skyrim.esm
 - 099D80:Skyrim.esm
