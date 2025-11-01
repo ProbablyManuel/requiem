@@ -36,8 +36,16 @@ Owner: 045F5E:Skyrim.esm
 AcousticSpace: 0C5B6B:Skyrim.esm
 Music: 017035:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
-UnknownGroupData: 1
 Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AD374C:Requiem.esp
+  Base: AD374B:Requiem.esp
+  LocationRefTypes:
+  - 03F491:Skyrim.esm
+  LocationReference: 0209EA:Skyrim.esm
+  Placement:
+    Position: -41.02, -3638.65, 356.62
+    Rotation: 0.029496064, 6.2711425, 5.0750685
 - MutagenObjectType: PlacedObject
   FormKey: 0EA725:Skyrim.esm
   Version2: 1
@@ -54,14 +62,5 @@ Temporary:
   Placement:
     Position: -325.9546, -3509.6619, 171
     Rotation: 0, 0, 4.6831903
-- MutagenObjectType: PlacedObject
-  FormKey: AD374C:Requiem.esp
-  Base: AD374B:Requiem.esp
-  LocationRefTypes:
-  - 03F491:Skyrim.esm
-  LocationReference: 0209EA:Skyrim.esm
-  Placement:
-    Position: -41.02, -3638.65, 356.62
-    Rotation: 0.029496064, 6.2711425, 5.0750685
 MajorFlags:
 - 0x40000

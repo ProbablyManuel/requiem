@@ -29,9 +29,9 @@ Configuration:
   - DefPackList
   - AttackData
 Factions:
-- Faction: 01BCC0:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 024CAB:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 01BCC0:Skyrim.esm
   Fluff: 0x000000
 DeathItem: 0C3C9B:Skyrim.esm
 Voice: 0247E4:Dragonborn.esm
@@ -96,6 +96,12 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 027663:Dragonborn.esm
+    Count: 1
+- Item:
+    Item: 03183B:Dragonborn.esm
+    Count: 1
+- Item:
     Item: 037C2B:Skyrim.esm
     Count: 1
 - Item:
@@ -106,12 +112,6 @@ Items:
     Count: 1
 - Item:
     Item: 09AF10:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 027663:Dragonborn.esm
-    Count: 1
-- Item:
-    Item: 03183B:Dragonborn.esm
     Count: 1
 AIData:
   Aggression: VeryAggressive
@@ -200,9 +200,7 @@ PlayerSkills:
   Health: 146
   Magicka: 100
   Stamina: 169
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 HeadParts:
 - 05107D:Skyrim.esm
 - 053998:Skyrim.esm

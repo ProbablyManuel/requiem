@@ -36,11 +36,11 @@ Configuration:
   - Keywords
   HealthOffset: 330
 Factions:
-- Faction: 02816B:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 003375:Dawnguard.esm
   Fluff: 0x000000
 - Faction: 010EC1:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 02816B:Skyrim.esm
   Fluff: 0x000000
 Voice: 013AE7:Skyrim.esm
 Template: 00336F:Dawnguard.esm
@@ -175,15 +175,6 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 01D4EC:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 03EAE3:Skyrim.esm
-    Count: 2
-- Item:
-    Item: 04F78D:Skyrim.esm
-    Count: 1
-- Item:
     Item: 00DD55:Dawnguard.esm
     Count: 1
 - Item:
@@ -191,6 +182,15 @@ Items:
     Count: 300
 - Item:
     Item: AD373E:Requiem.esp
+    Count: 1
+- Item:
+    Item: 01D4EC:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03EAE3:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 04F78D:Skyrim.esm
     Count: 1
 AIData:
   Aggression: Aggressive
@@ -284,9 +284,7 @@ PlayerSkills:
   Health: 132
   Magicka: 80
   Stamina: 128
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x415AEF
 HeadParts:
 - 040228:Skyrim.esm
 - 051107:Skyrim.esm

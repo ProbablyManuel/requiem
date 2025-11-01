@@ -80,22 +80,6 @@ Persistent:
     Rotation: 0, 0, 4.593196
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 0A577D:Skyrim.esm
-  Version2: 2
-  Base: 0A760E:Skyrim.esm
-  Scale: 1.02
-  Lock:
-    Level: Master
-    Unused: 0x000000
-    Unused2: 0x0000000000000000000000
-  LocationReference: 0C0BA0:Skyrim.esm
-  EnableParent:
-    Reference: 0A5780:Skyrim.esm
-    Unknown: 0x000000
-  Placement:
-    Position: 796, -516, -252
-    Rotation: 0, 0, 1.5707964
-- MutagenObjectType: PlacedObject
   FormKey: 3C18C5:Requiem.esp
   MajorRecordFlagsRaw: 1073741824
   SkyrimMajorRecordFlags:
@@ -139,5 +123,21 @@ Temporary:
   Placement:
     Position: 294.7341, -288.55862, -150.81517
     Rotation: 0, 0, 1.9245476E-06
+- MutagenObjectType: PlacedObject
+  FormKey: 0A577D:Skyrim.esm
+  Version2: 2
+  Base: 0A760E:Skyrim.esm
+  Scale: 1.02
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0C0BA0:Skyrim.esm
+  EnableParent:
+    Reference: 0A5780:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: 796, -516, -252
+    Rotation: 0, 0, 1.5707964
 MajorFlags:
 - 0x40000

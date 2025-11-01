@@ -42,12 +42,12 @@ Voice: 013ADD:Skyrim.esm
 Template: 10C44C:Skyrim.esm
 Race: 013746:Skyrim.esm
 ActorEffect:
+- 93D530:Requiem.esp
 - 012FD2:Skyrim.esm
 - 02F3B8:Skyrim.esm
 - 05DD5D:Skyrim.esm
 - 07231A:Skyrim.esm
 - 0F95EA:Skyrim.esm
-- 93D530:Requiem.esp
 Perks:
 - Perk: 03AF81:Skyrim.esm
   Rank: 1
@@ -135,6 +135,12 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
+    Item: 39E7BA:Requiem.esp
+    Count: 1
+- Item:
+    Item: 39E7BB:Requiem.esp
+    Count: 1
+- Item:
     Item: 01D4EC:Skyrim.esm
     Count: 1
 - Item:
@@ -145,12 +151,6 @@ Items:
     Count: 1
 - Item:
     Item: 00B69A:unofficial skyrim special edition patch.esp
-    Count: 1
-- Item:
-    Item: 39E7BA:Requiem.esp
-    Count: 1
-- Item:
-    Item: 39E7BB:Requiem.esp
     Count: 1
 AIData:
   Aggression: Aggressive
@@ -241,9 +241,7 @@ PlayerSkills:
   Health: 308
   Magicka: 238
   Stamina: 229
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x415AEF
 HeadParts:
 - 040228:Skyrim.esm
 - 0E4D9F:Skyrim.esm

@@ -2,6 +2,12 @@ FormKey: 038566:Dragonborn.esm
 EditorID: DLC2HirelingQuest
 VirtualMachineAdapter:
   Scripts:
+  - Name: DLC2_QF_DLC2HirelingQuest_02038566
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_DLC2FollowerAlias
+      Object: 038566:Dragonborn.esm
+      Alias: 1
   - Name: DLC2HirelingQuestScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -35,12 +41,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: PlayerFollowerCount
       Object: 0BCC98:Skyrim.esm
-  - Name: DLC2_QF_DLC2HirelingQuest_02038566
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_DLC2FollowerAlias
-      Object: 038566:Dragonborn.esm
-      Alias: 1
   FileName: DLC2_QF_DLC2HirelingQuest_02038566
   Fragments:
   - Stage: 10

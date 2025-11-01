@@ -2,11 +2,6 @@ FormKey: 004E24:Dawnguard.esm
 EditorID: DLC1HunterBaseIntro
 VirtualMachineAdapter:
   Scripts:
-  - Name: DLC1HunterBaseIntroQuestScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DLC1Radiant
-      Object: 004C1C:Dawnguard.esm
   - Name: DLC1_QF_DLC1HunterBaseIntro_01004E24
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -170,19 +165,16 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: VigilantIntroSceneMarker3
       Object: 01768E:Dawnguard.esm
+  - Name: DLC1HunterBaseIntroQuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC1Radiant
+      Object: 004C1C:Dawnguard.esm
   FileName: DLC1_QF_DLC1HunterBaseIntro_01004E24
   Fragments:
   - Unknown2: 1
     ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
     FragmentName: Fragment_15
-  - Stage: 40
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
-    FragmentName: Fragment_9
-  - Stage: 45
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
-    FragmentName: Fragment_17
   - Stage: 10
     Unknown2: 1
     ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
@@ -191,18 +183,26 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
     FragmentName: Fragment_2
-  - Stage: 60
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
-    FragmentName: Fragment_6
-  - Stage: 50
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
-    FragmentName: Fragment_13
   - Stage: 30
     Unknown2: 1
     ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
     FragmentName: Fragment_7
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
+    FragmentName: Fragment_9
+  - Stage: 45
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
+    FragmentName: Fragment_17
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
+    FragmentName: Fragment_13
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24
+    FragmentName: Fragment_6
   - Stage: 70
     Unknown2: 1
     ScriptName: DLC1_QF_DLC1HunterBaseIntro_01004E24

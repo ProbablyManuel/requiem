@@ -3,6 +3,44 @@ EditorID: TrapBatteringRam01
 Version2: 4
 VirtualMachineAdapter:
   Scripts:
+  - Name: BatteringTrap
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage1
+      Data: 175
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage2
+      Data: 175
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage3
+      Data: 175
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage4
+      Data: 175
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage5
+      Data: 175
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlDamage6
+      Data: 175
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold1
+      Data: 10
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold2
+      Data: 15
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold3
+      Data: 20
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold4
+      Data: 25
+    - MutagenObjectType: ScriptIntProperty
+      Name: LvlThreshold5
+      Data: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WindupSound
+      Object: 02951C:Skyrim.esm
   - Name: TrapHitBase
     Properties:
     - MutagenObjectType: ScriptBoolProperty
@@ -44,44 +82,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptIntProperty
       Name: trapPushBack
       Data: 500
-  - Name: BatteringTrap
-    Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage1
-      Data: 175
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage2
-      Data: 175
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage3
-      Data: 175
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage4
-      Data: 175
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage5
-      Data: 175
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlDamage6
-      Data: 175
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold1
-      Data: 10
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold2
-      Data: 15
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold3
-      Data: 20
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold4
-      Data: 25
-    - MutagenObjectType: ScriptIntProperty
-      Name: LvlThreshold5
-      Data: 30
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WindupSound
-      Object: 02951C:Skyrim.esm
 ObjectBounds:
   First: -20, -321, 66
   Second: 20, 322, 421

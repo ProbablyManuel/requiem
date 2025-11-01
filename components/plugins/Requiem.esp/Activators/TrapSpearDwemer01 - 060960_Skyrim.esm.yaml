@@ -6,38 +6,6 @@ SkyrimMajorRecordFlags:
 - 0x200
 VirtualMachineAdapter:
   Scripts:
-  - Name: TrapHitBase
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GhostAbility
-      Object: 05030B:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: hitFX
-      Object: 01A141:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: hitFXAmmo
-      Object: 03BDF7:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseAtaxia
-      Object: 10A24A:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseBoneBreakFever
-      Object: 10A24C:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseBrainRot
-      Object: 10A24D:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseRattles
-      Object: 10A24E:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseRockjoint
-      Object: 10A24F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapDiseaseWitbane
-      Object: 10A250:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TrapHitSound
-      Object: 018E7F:Skyrim.esm
   - Name: SpearTrap
     Properties:
     - MutagenObjectType: ScriptIntProperty
@@ -76,6 +44,38 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: WindupSound
       Object: 02951C:Skyrim.esm
+  - Name: TrapHitBase
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GhostAbility
+      Object: 05030B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFX
+      Object: 01A141:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: hitFXAmmo
+      Object: 03BDF7:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseAtaxia
+      Object: 10A24A:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBoneBreakFever
+      Object: 10A24C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseBrainRot
+      Object: 10A24D:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRattles
+      Object: 10A24E:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseRockjoint
+      Object: 10A24F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapDiseaseWitbane
+      Object: 10A250:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapHitSound
+      Object: 018E7F:Skyrim.esm
 ObjectBounds:
   First: -2, -7, -390
   Second: 5, 8, 386

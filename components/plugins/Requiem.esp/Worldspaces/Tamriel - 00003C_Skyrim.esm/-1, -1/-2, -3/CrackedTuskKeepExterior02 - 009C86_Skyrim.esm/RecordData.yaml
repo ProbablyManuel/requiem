@@ -58,6 +58,16 @@ Regions:
 Location: 01918D:Skyrim.esm
 Temporary:
 - MutagenObjectType: PlacedObject
+  FormKey: 05CBEF:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 05CBCA:Requiem.esp
+  RagdollData: 0x00051A01006005410000003C00D095BFDB0FC9BF008070B6C7764840006F434100A017400000003C0000803BE51B57342AA727B46BA5C93F
+  Placement:
+    Position: -56293.707, -86639.74, -2346.235
+    Rotation: 0, 0, 4.8
+- MutagenObjectType: PlacedObject
   FormKey: 06B2B4:Skyrim.esm
   Base: 013911:Skyrim.esm
   EncounterZone: 0A3857:Skyrim.esm
@@ -97,15 +107,5 @@ Temporary:
   Placement:
     Position: -56258.77, -86685.26, -2344.7253
     Rotation: 5.570407, 0.38214508, 5.291226
-- MutagenObjectType: PlacedObject
-  FormKey: 05CBEF:Requiem.esp
-  MajorRecordFlagsRaw: 1073741824
-  SkyrimMajorRecordFlags:
-  - 0x40000000
-  Base: 05CBCA:Requiem.esp
-  RagdollData: 0x00051A01006005410000003C00D095BFDB0FC9BF008070B6C7764840006F434100A017400000003C0000803BE51B57342AA727B46BA5C93F
-  Placement:
-    Position: -56293.707, -86639.74, -2346.235
-    Rotation: 0, 0, 4.8
 MajorFlags:
 - 0x40000

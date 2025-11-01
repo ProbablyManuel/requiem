@@ -2,26 +2,6 @@ FormKey: 0D5E81:Skyrim.esm
 EditorID: VoiceStormCallEffect3Self
 VirtualMachineAdapter:
   Scripts:
-  - Name: magicSetWeatherScript
-    Properties:
-    - MutagenObjectType: ScriptBoolProperty
-      Name: bHoldWeatherUntilEnd
-      Data: True
-    - MutagenObjectType: ScriptIntProperty
-      Name: LocalWeatherA
-      Data: 2
-    - MutagenObjectType: ScriptIntProperty
-      Name: LocalWeatherB
-      Data: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WeatherAfterForm
-      Object: 0C8220:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WeatherExceptionList
-      Object: 000998:Update.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WeatherForm
-      Object: 0D4886:Skyrim.esm
   - Name: magicProjectileStormScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -57,6 +37,26 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: SpellRef
       Object: 0E4CB7:Skyrim.esm
+  - Name: magicSetWeatherScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bHoldWeatherUntilEnd
+      Data: True
+    - MutagenObjectType: ScriptIntProperty
+      Name: LocalWeatherA
+      Data: 2
+    - MutagenObjectType: ScriptIntProperty
+      Name: LocalWeatherB
+      Data: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherAfterForm
+      Object: 0C8220:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherExceptionList
+      Object: 000998:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WeatherForm
+      Object: 0D4886:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Call Storm

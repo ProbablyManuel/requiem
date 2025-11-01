@@ -3,14 +3,6 @@ EditorID: WEJS28
 Version2: 4
 VirtualMachineAdapter:
   Scripts:
-  - Name: WEScript
-    Properties:
-    - MutagenObjectType: ScriptBoolProperty
-      Name: StopQuestWhenAliasesUnload
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WEParentS
-      Object: 098BB1:Skyrim.esm
   - Name: QF_WEJS28_00105D19
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -65,6 +57,14 @@ VirtualMachineAdapter:
       Name: Alias_Trigger
       Object: 105D19:Skyrim.esm
       Alias: 1
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
   FileName: QF_WEJS28_00105D19
   Fragments:
   - Unknown2: 1

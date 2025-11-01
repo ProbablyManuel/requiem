@@ -202,30 +202,18 @@ VirtualMachineAdapter:
   - Unknown2: 1
     ScriptName: QF_DA09_0004E4E1
     FragmentName: Fragment_5
-  - Stage: 300
-    Unknown2: 1
-    ScriptName: QF_DA09_0004E4E1
-    FragmentName: Fragment_2
-  - Stage: 400
-    Unknown2: 1
-    ScriptName: QF_DA09_0004E4E1
-    FragmentName: Fragment_7
-  - Stage: 100
-    Unknown2: 1
-    ScriptName: QF_DA09_0004E4E1
-    FragmentName: Fragment_0
   - Stage: 1
     Unknown2: 1
     ScriptName: QF_DA09_0004E4E1
     FragmentName: Fragment_13
-  - Stage: 350
+  - Stage: 50
     Unknown2: 1
     ScriptName: QF_DA09_0004E4E1
-    FragmentName: Fragment_19
-  - Stage: 410
+    FragmentName: Fragment_12
+  - Stage: 100
     Unknown2: 1
     ScriptName: QF_DA09_0004E4E1
-    FragmentName: Fragment_17
+    FragmentName: Fragment_0
   - Stage: 150
     Unknown2: 1
     ScriptName: QF_DA09_0004E4E1
@@ -234,10 +222,22 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: QF_DA09_0004E4E1
     FragmentName: Fragment_1
-  - Stage: 50
+  - Stage: 300
     Unknown2: 1
     ScriptName: QF_DA09_0004E4E1
-    FragmentName: Fragment_12
+    FragmentName: Fragment_2
+  - Stage: 350
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_19
+  - Stage: 400
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_7
+  - Stage: 410
+    Unknown2: 1
+    ScriptName: QF_DA09_0004E4E1
+    FragmentName: Fragment_17
   - Stage: 450
     Unknown2: 1
     ScriptName: QF_DA09_0004E4E1
@@ -473,7 +473,6 @@ Objectives:
       Data:
         MutagenObjectType: GetVMQuestVariableConditionData
         Quest: 04E4E1:Skyrim.esm
-        SecondUnusedIntParameter: -285341792
         VariableName: ::PlayerInQTHelperTrigger_var
       ComparisonValue: 1
   - AliasID: 22
@@ -487,7 +486,6 @@ Objectives:
       Data:
         MutagenObjectType: GetVMQuestVariableConditionData
         Quest: 04E4E1:Skyrim.esm
-        SecondUnusedIntParameter: -285341824
         VariableName: ::PlayerInQTHelperTrigger_var
   - AliasID: 24
     Conditions:

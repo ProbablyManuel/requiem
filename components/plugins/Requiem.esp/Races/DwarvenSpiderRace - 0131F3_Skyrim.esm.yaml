@@ -100,17 +100,6 @@ FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
 - AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Flags:
-    - PowerAttack
-    - RotatingAttack
-    StrikeAngle: 45
-    Stagger: 0.5
-    RecoveryTime: 2
-    StaminaMult: 1
-  AttackEvent: AttackStartLungeBite
-- AttackData:
     DamageMult: 1
     Chance: 1
     Flags:
@@ -171,6 +160,17 @@ Attacks:
     RecoveryTime: 2
     StaminaMult: 1
   AttackEvent: AttackStart_Spin
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Flags:
+    - PowerAttack
+    - RotatingAttack
+    StrikeAngle: 45
+    Stagger: 0.5
+    RecoveryTime: 2
+    StaminaMult: 1
+  AttackEvent: AttackStartLungeBite
 BodyData:
   Male:
     Index: BodyTexture

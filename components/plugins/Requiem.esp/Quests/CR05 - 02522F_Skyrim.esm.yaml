@@ -46,14 +46,6 @@ VirtualMachineAdapter:
   - Unknown2: 1
     ScriptName: QF_CR05_0002522F
     FragmentName: Fragment_9
-  - Stage: 200
-    Unknown2: 1
-    ScriptName: QF_CR05_0002522F
-    FragmentName: Fragment_11
-  - Stage: 250
-    Unknown2: 1
-    ScriptName: QF_CR05_0002522F
-    FragmentName: Fragment_21
   - Stage: 10
     Unknown2: 1
     ScriptName: QF_CR05_0002522F
@@ -106,6 +98,14 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: QF_CR05_0002522F
     FragmentName: Fragment_8
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_11
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: QF_CR05_0002522F
+    FragmentName: Fragment_21
   Aliases:
   - Property:
       Name: ''
@@ -139,14 +139,12 @@ DialogConditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 02522F:Skyrim.esm
-    SecondUnusedIntParameter: -285350912
     VariableName: ::IsActive_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 04B2D9:Skyrim.esm
-    SecondUnusedIntParameter: -285350880
     VariableName: ::StoryQuestIsRunning_var
 Stages:
 - Flags:

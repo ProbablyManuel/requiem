@@ -3,14 +3,6 @@ EditorID: WERoad01
 Version2: 7
 VirtualMachineAdapter:
   Scripts:
-  - Name: WEScript
-    Properties:
-    - MutagenObjectType: ScriptBoolProperty
-      Name: StopQuestWhenAliasesUnload
-      Data: True
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WEParentS
-      Object: 098BB1:Skyrim.esm
   - Name: QF_WERoad01_001034DF
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -62,15 +54,19 @@ VirtualMachineAdapter:
       Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptIntProperty
       Name: GoldGivenF1
+  - Name: WEScript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: StopQuestWhenAliasesUnload
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WEParentS
+      Object: 098BB1:Skyrim.esm
   FileName: QF_WERoad01_001034DF
   Fragments:
   - Unknown2: 1
     ScriptName: QF_WERoad01_001034DF
     FragmentName: Fragment_1
-  - Stage: 255
-    Unknown2: 1
-    ScriptName: QF_WERoad01_001034DF
-    FragmentName: Fragment_5
   - Stage: 10
     Unknown2: 1
     ScriptName: QF_WERoad01_001034DF
@@ -83,6 +79,10 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: QF_WERoad01_001034DF
     FragmentName: Fragment_9
+  - Stage: 255
+    Unknown2: 1
+    ScriptName: QF_WERoad01_001034DF
+    FragmentName: Fragment_5
   Aliases:
   - Property:
       Name: ''

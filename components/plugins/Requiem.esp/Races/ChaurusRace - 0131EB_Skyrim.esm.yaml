@@ -98,16 +98,6 @@ FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
 - AttackData:
-    DamageMult: 1.5
-    Chance: 1
-    Spell: 053474:Skyrim.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 60
-    Stagger: 0.75
-    StaminaMult: 1
-  AttackEvent: AttackStartLungeBite
-- AttackData:
     DamageMult: 1
     Chance: 1
     StrikeAngle: 35
@@ -199,6 +189,16 @@ Attacks:
     StrikeAngle: 45
     StaminaMult: 1
   AttackEvent: AttackStart_RightSide
+- AttackData:
+    DamageMult: 1.5
+    Chance: 1
+    Spell: 053474:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 60
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: AttackStartLungeBite
 BodyData:
   Male:
     Index: BodyTexture

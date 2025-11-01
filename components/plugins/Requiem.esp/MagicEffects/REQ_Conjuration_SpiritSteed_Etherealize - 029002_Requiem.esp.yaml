@@ -2,14 +2,7 @@ FormKey: 029002:Requiem.esp
 EditorID: REQ_Conjuration_SpiritSteed_Etherealize
 VirtualMachineAdapter:
   Scripts:
-  - Name: magicSetActorAlphaScript
-    Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: AlphaValue
-      Data: 0.33
-    - MutagenObjectType: ScriptBoolProperty
-      Name: FadeToAlpha
-      Data: True
+  - Name: magicimodbeginloopend
   - Name: magicImodScript
     Properties:
     - MutagenObjectType: ScriptFloatProperty
@@ -24,7 +17,14 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: StaticFX
       Object: 05E93D:Skyrim.esm
-  - Name: magicimodbeginloopend
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.33
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FadeToAlpha
+      Data: True
 Name:
   TargetLanguage: English
   Value: Etherealize

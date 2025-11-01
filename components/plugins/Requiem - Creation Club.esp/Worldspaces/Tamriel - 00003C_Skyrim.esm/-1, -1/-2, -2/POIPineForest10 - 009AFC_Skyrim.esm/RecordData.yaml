@@ -55,15 +55,6 @@ Regions:
 - 04C2A6:Skyrim.esm
 - 02A72D:Skyrim.esm
 Temporary:
-- MutagenObjectType: PlacedNpc
-  FormKey: 099856:Skyrim.esm
-  Base: 04E50A:Skyrim.esm
-  LevelModifier: Easy
-  LinkedReferences:
-  - Reference: 099855:Skyrim.esm
-  Placement:
-    Position: -64353.35, -39182.23, -1102.2861
-    Rotation: 0, 0, 2.6831872
 - MutagenObjectType: PlacedObject
   FormKey: 000839:ccedhsse003-redguard.esl
   MajorRecordFlagsRaw: 1073743872
@@ -104,5 +95,14 @@ Temporary:
   Placement:
     Position: -63889.38, -37951.184, -30000
     Rotation: 0, 0, 1.7000014
+- MutagenObjectType: PlacedNpc
+  FormKey: 099856:Skyrim.esm
+  Base: 04E50A:Skyrim.esm
+  LevelModifier: Easy
+  LinkedReferences:
+  - Reference: 099855:Skyrim.esm
+  Placement:
+    Position: -64353.35, -39182.23, -1102.2861
+    Rotation: 0, 0, 2.6831872
 MajorFlags:
 - 0x40000

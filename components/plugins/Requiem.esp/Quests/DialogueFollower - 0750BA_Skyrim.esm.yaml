@@ -57,6 +57,19 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: HirelingCommentNextAllowed
       Object: 104817:Skyrim.esm
+  - Name: QF_DialogueFollower_000750BA
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Animal
+      Object: 0750BA:Skyrim.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Follower
+      Object: 0750BA:Skyrim.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FreeformSkyhavenTempleA
+      Object: 0E38C9:Skyrim.esm
   - Name: SetHirelingRehire
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -104,29 +117,8 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: Vorstag
       Object: 0B997F:Skyrim.esm
-  - Name: QF_DialogueFollower_000750BA
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Animal
-      Object: 0750BA:Skyrim.esm
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Follower
-      Object: 0750BA:Skyrim.esm
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FreeformSkyhavenTempleA
-      Object: 0E38C9:Skyrim.esm
   FileName: QF_DialogueFollower_000750BA
   Fragments:
-  - Stage: 20
-    Unknown2: 1
-    ScriptName: QF_DialogueFollower_000750BA
-    FragmentName: Fragment_4
-  - Stage: 400
-    Unknown2: 1
-    ScriptName: QF_DialogueFollower_000750BA
-    FragmentName: Fragment_5
   - Stage: 10
     Unknown2: 1
     ScriptName: QF_DialogueFollower_000750BA
@@ -135,10 +127,18 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: QF_DialogueFollower_000750BA
     FragmentName: Fragment_3
+  - Stage: 20
+    Unknown2: 1
+    ScriptName: QF_DialogueFollower_000750BA
+    FragmentName: Fragment_4
   - Stage: 30
     Unknown2: 1
     ScriptName: QF_DialogueFollower_000750BA
     FragmentName: Fragment_13
+  - Stage: 400
+    Unknown2: 1
+    ScriptName: QF_DialogueFollower_000750BA
+    FragmentName: Fragment_5
   Aliases:
   - Property:
       Name: ''

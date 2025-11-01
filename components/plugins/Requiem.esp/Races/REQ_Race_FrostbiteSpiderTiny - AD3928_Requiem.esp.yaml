@@ -94,15 +94,6 @@ FacegenMainClamp: 5
 FacegenFaceClamp: 3
 Attacks:
 - AttackData:
-    DamageMult: 1.5
-    Chance: 0.35
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 0.25
-    StaminaMult: 1
-  AttackEvent: AttackStartLungeBite
-- AttackData:
     DamageMult: 1
     Chance: 0.3
     StrikeAngle: 35
@@ -135,6 +126,15 @@ Attacks:
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: AttackStart_RightChop
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.35
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.25
+    StaminaMult: 1
+  AttackEvent: AttackStartLungeBite
 - AttackData:
     DamageMult: 1
     Flags:

@@ -1,7 +1,13 @@
 FormKey: 0192C2:Skyrim.esm
 EditorID: VolskyggeLocation
 PersistentActorReferencesAdded:
-- Actor: 473E7D:Requiem.esp
+- Actor: 473E76:Requiem.esp
+  Location: 02471A:Skyrim.esm
+  Grid: 32767, 32767
+- Actor: 473E77:Requiem.esp
+  Location: 02471A:Skyrim.esm
+  Grid: 32767, 32767
+- Actor: 473E78:Requiem.esp
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
 - Actor: 473E79:Requiem.esp
@@ -10,22 +16,16 @@ PersistentActorReferencesAdded:
 - Actor: 473E7A:Requiem.esp
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
-- Actor: 473E7C:Requiem.esp
-  Location: 02471A:Skyrim.esm
-  Grid: 32767, 32767
 - Actor: 473E7B:Requiem.esp
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
-- Actor: 473E78:Requiem.esp
+- Actor: 473E7C:Requiem.esp
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
-- Actor: 473E77:Requiem.esp
+- Actor: 473E7D:Requiem.esp
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
 - Actor: 473E7E:Requiem.esp
-  Location: 02471A:Skyrim.esm
-  Grid: 32767, 32767
-- Actor: 473E76:Requiem.esp
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
 UniqueActorReferencesAdded:
@@ -33,32 +33,44 @@ UniqueActorReferencesAdded:
   Ref: 041931:Skyrim.esm
   Location: 0192C2:Skyrim.esm
 LocationRefTypeReferencesAdded:
+- LocationRefType: 0130F7:Skyrim.esm
+  Ref: 041931:Skyrim.esm
+  Location: 00003C:Skyrim.esm
+  Grid: -34, 22
+- LocationRefType: 0E7520:Skyrim.esm
+  Ref: 106B99:Skyrim.esm
+  Location: 00003C:Skyrim.esm
+  Grid: -34, 22
+- LocationRefType: 10F63C:Skyrim.esm
+  Ref: 0162CA:Skyrim.esm
+  Location: 00003C:Skyrim.esm
+  Grid: -32, 22
+- LocationRefType: 0216B4:Skyrim.esm
+  Ref: 07CC26:Skyrim.esm
+  Location: 00003C:Skyrim.esm
+  Grid: -31, 22
+- LocationRefType: 0130FB:Skyrim.esm
+  Ref: 07CC27:Skyrim.esm
+  Location: 00003C:Skyrim.esm
+  Grid: -31, 22
 - LocationRefType: 01BDF1:Skyrim.esm
   Ref: 02B0CB:Skyrim.esm
-  Location: 0151FC:Skyrim.esm
-  Grid: 32767, 32767
-- LocationRefType: 0130FC:Skyrim.esm
-  Ref: 02B0CE:Skyrim.esm
   Location: 0151FC:Skyrim.esm
   Grid: 32767, 32767
 - LocationRefType: 01DBF9:Skyrim.esm
   Ref: 02B0CC:Skyrim.esm
   Location: 0151FC:Skyrim.esm
   Grid: 32767, 32767
+- LocationRefType: 0130FC:Skyrim.esm
+  Ref: 02B0CE:Skyrim.esm
+  Location: 0151FC:Skyrim.esm
+  Grid: 32767, 32767
+- LocationRefType: 0130FD:Skyrim.esm
+  Ref: 04082D:Skyrim.esm
+  Location: 02471A:Skyrim.esm
+  Grid: 32767, 32767
 - LocationRefType: 0130FD:Skyrim.esm
   Ref: 075EEC:Skyrim.esm
-  Location: 02471A:Skyrim.esm
-  Grid: 32767, 32767
-- LocationRefType: 0130F8:Skyrim.esm
-  Ref: 10BFB1:Skyrim.esm
-  Location: 02471A:Skyrim.esm
-  Grid: 32767, 32767
-- LocationRefType: 0130FD:Skyrim.esm
-  Ref: 0CAB21:Skyrim.esm
-  Location: 02471A:Skyrim.esm
-  Grid: 32767, 32767
-- LocationRefType: 0130FD:Skyrim.esm
-  Ref: 0CAB22:Skyrim.esm
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
 - LocationRefType: 0130FA:Skyrim.esm
@@ -70,29 +82,17 @@ LocationRefTypeReferencesAdded:
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
 - LocationRefType: 0130FD:Skyrim.esm
-  Ref: 04082D:Skyrim.esm
+  Ref: 0CAB21:Skyrim.esm
   Location: 02471A:Skyrim.esm
   Grid: 32767, 32767
-- LocationRefType: 10F63C:Skyrim.esm
-  Ref: 0162CA:Skyrim.esm
-  Location: 00003C:Skyrim.esm
-  Grid: -32, 22
-- LocationRefType: 0130FB:Skyrim.esm
-  Ref: 07CC27:Skyrim.esm
-  Location: 00003C:Skyrim.esm
-  Grid: -31, 22
-- LocationRefType: 0216B4:Skyrim.esm
-  Ref: 07CC26:Skyrim.esm
-  Location: 00003C:Skyrim.esm
-  Grid: -31, 22
-- LocationRefType: 0E7520:Skyrim.esm
-  Ref: 106B99:Skyrim.esm
-  Location: 00003C:Skyrim.esm
-  Grid: -34, 22
-- LocationRefType: 0130F7:Skyrim.esm
-  Ref: 041931:Skyrim.esm
-  Location: 00003C:Skyrim.esm
-  Grid: -34, 22
+- LocationRefType: 0130FD:Skyrim.esm
+  Ref: 0CAB22:Skyrim.esm
+  Location: 02471A:Skyrim.esm
+  Grid: 32767, 32767
+- LocationRefType: 0130F8:Skyrim.esm
+  Ref: 10BFB1:Skyrim.esm
+  Location: 02471A:Skyrim.esm
+  Grid: 32767, 32767
 Name:
   TargetLanguage: English
   Value: Volskygge

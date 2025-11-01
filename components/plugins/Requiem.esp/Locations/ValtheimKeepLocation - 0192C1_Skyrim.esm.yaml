@@ -1,10 +1,13 @@
 FormKey: 0192C1:Skyrim.esm
 EditorID: ValtheimKeepLocation
 PersistentActorReferencesAdded:
-- Actor: 48CB05:Requiem.esp
+- Actor: 48CB07:Requiem.esp
+  Location: 00003C:Skyrim.esm
+  Grid: 17, -1
+- Actor: 48CAFA:Requiem.esp
   Location: 00003C:Skyrim.esm
   Grid: 18, -1
-- Actor: 48CAFA:Requiem.esp
+- Actor: 48CB05:Requiem.esp
   Location: 00003C:Skyrim.esm
   Grid: 18, -1
 - Actor: 48CB0B:Requiem.esp
@@ -13,9 +16,12 @@ PersistentActorReferencesAdded:
 - Actor: 4C33DC:Requiem.esp
   Location: 00003C:Skyrim.esm
   Grid: 18, -1
-- Actor: 48CB07:Requiem.esp
+- Actor: 48CAFC:Requiem.esp
   Location: 00003C:Skyrim.esm
-  Grid: 17, -1
+  Grid: 18, 0
+- Actor: 48CAFF:Requiem.esp
+  Location: 00003C:Skyrim.esm
+  Grid: 18, 0
 - Actor: 48CB00:Requiem.esp
   Location: 00003C:Skyrim.esm
   Grid: 18, 0
@@ -31,35 +37,25 @@ PersistentActorReferencesAdded:
 - Actor: 48CB04:Requiem.esp
   Location: 00003C:Skyrim.esm
   Grid: 18, 0
-- Actor: 48CAFF:Requiem.esp
-  Location: 00003C:Skyrim.esm
-  Grid: 18, 0
-- Actor: 48CAFC:Requiem.esp
-  Location: 00003C:Skyrim.esm
-  Grid: 18, 0
 LocationRefTypeReferencesAdded:
-- LocationRefType: 10F63C:Skyrim.esm
-  Ref: 0162C9:Skyrim.esm
-  Location: 00003C:Skyrim.esm
-  Grid: 18, -1
 - LocationRefType: 0AE06B:Skyrim.esm
-  Ref: 48CB05:Requiem.esp
+  Ref: 48CB07:Requiem.esp
   Location: 00003C:Skyrim.esm
-  Grid: 18, -1
-- LocationRefType: 0AE309:Skyrim.esm
-  Ref: 03F7B8:Skyrim.esm
+  Grid: 17, -1
+- LocationRefType: 0216B4:Skyrim.esm
+  Ref: 0AE4D9:Skyrim.esm
   Location: 00003C:Skyrim.esm
-  Grid: 18, -1
+  Grid: 17, -1
+- LocationRefType: 01DBF9:Skyrim.esm
+  Ref: 0AE4DA:Skyrim.esm
+  Location: 00003C:Skyrim.esm
+  Grid: 17, -1
 - LocationRefType: 0AE06B:Skyrim.esm
   Ref: 48CAFA:Requiem.esp
   Location: 00003C:Skyrim.esm
   Grid: 18, -1
-- LocationRefType: 0130FD:Skyrim.esm
-  Ref: 03F709:Skyrim.esm
-  Location: 00003C:Skyrim.esm
-  Grid: 18, -1
-- LocationRefType: 01BDF1:Skyrim.esm
-  Ref: 0AE4DB:Skyrim.esm
+- LocationRefType: 0AE06B:Skyrim.esm
+  Ref: 48CB05:Requiem.esp
   Location: 00003C:Skyrim.esm
   Grid: 18, -1
 - LocationRefType: 0AE06B:Skyrim.esm
@@ -70,18 +66,22 @@ LocationRefTypeReferencesAdded:
   Ref: 4C33DC:Requiem.esp
   Location: 00003C:Skyrim.esm
   Grid: 18, -1
-- LocationRefType: 0216B4:Skyrim.esm
-  Ref: 0AE4D9:Skyrim.esm
+- LocationRefType: 10F63C:Skyrim.esm
+  Ref: 0162C9:Skyrim.esm
   Location: 00003C:Skyrim.esm
-  Grid: 17, -1
-- LocationRefType: 01DBF9:Skyrim.esm
-  Ref: 0AE4DA:Skyrim.esm
+  Grid: 18, -1
+- LocationRefType: 0130FD:Skyrim.esm
+  Ref: 03F709:Skyrim.esm
   Location: 00003C:Skyrim.esm
-  Grid: 17, -1
-- LocationRefType: 0AE06B:Skyrim.esm
-  Ref: 48CB07:Requiem.esp
+  Grid: 18, -1
+- LocationRefType: 0AE309:Skyrim.esm
+  Ref: 03F7B8:Skyrim.esm
   Location: 00003C:Skyrim.esm
-  Grid: 17, -1
+  Grid: 18, -1
+- LocationRefType: 01BDF1:Skyrim.esm
+  Ref: 0AE4DB:Skyrim.esm
+  Location: 00003C:Skyrim.esm
+  Grid: 18, -1
 LocationRefTypeReferencesRemoved:
 - 03F7AD:Skyrim.esm
 - 03F7AF:Skyrim.esm

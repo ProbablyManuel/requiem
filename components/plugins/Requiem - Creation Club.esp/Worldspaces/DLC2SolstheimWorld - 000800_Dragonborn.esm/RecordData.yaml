@@ -44,38 +44,6 @@ TopCell:
     Flags: -616983296
   WaterHeight: 3.4028235E+38
   Persistent:
-  - MutagenObjectType: PlacedObject
-    FormKey: 039F1C:Dragonborn.esm
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0140BD:Skyrim.esm
-    LocationReference: 016E2A:Dragonborn.esm
-    LinkedReferences:
-    - Reference: 039F1D:Dragonborn.esm
-    Patrol:
-      IdleTime: 16
-      Topics:
-      - MutagenObjectType: TopicReference
-    Placement:
-      Position: 67436.2, 92347.18, 1245.5385
-      Rotation: 0, 0, 3.2031922
-  - MutagenObjectType: PlacedObject
-    FormKey: 039F20:Dragonborn.esm
-    MajorRecordFlagsRaw: 1024
-    SkyrimMajorRecordFlags:
-    - 0x400
-    Base: 0140BD:Skyrim.esm
-    LocationReference: 016E2A:Dragonborn.esm
-    LinkedReferences:
-    - Reference: 039F1E:Dragonborn.esm
-    Patrol:
-      IdleTime: 14
-      Topics:
-      - MutagenObjectType: TopicReference
-    Placement:
-      Position: 67433.76, 92794.68, 1204.9082
-      Rotation: 0, 0, 0.5231956
   - MutagenObjectType: PlacedNpc
     FormKey: 00082C:ccbgssse041-netchleather.esl
     MajorRecordFlagsRaw: 3072
@@ -926,6 +894,38 @@ TopCell:
     Placement:
       Position: 28505.285, 100348.78, 359.62054
       Rotation: 0, 0, 5.583188
+  - MutagenObjectType: PlacedObject
+    FormKey: 039F1C:Dragonborn.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0140BD:Skyrim.esm
+    LocationReference: 016E2A:Dragonborn.esm
+    LinkedReferences:
+    - Reference: 039F1D:Dragonborn.esm
+    Patrol:
+      IdleTime: 16
+      Topics:
+      - MutagenObjectType: TopicReference
+    Placement:
+      Position: 67436.2, 92347.18, 1245.5385
+      Rotation: 0, 0, 3.2031922
+  - MutagenObjectType: PlacedObject
+    FormKey: 039F20:Dragonborn.esm
+    MajorRecordFlagsRaw: 1024
+    SkyrimMajorRecordFlags:
+    - 0x400
+    Base: 0140BD:Skyrim.esm
+    LocationReference: 016E2A:Dragonborn.esm
+    LinkedReferences:
+    - Reference: 039F1E:Dragonborn.esm
+    Patrol:
+      IdleTime: 14
+      Topics:
+      - MutagenObjectType: TopicReference
+    Placement:
+      Position: 67433.76, 92794.68, 1204.9082
+      Rotation: 0, 0, 0.5231956
   MajorFlags:
   - Persistent
   - 0x40000

@@ -33,8 +33,6 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 50
 Factions:
-- Faction: 051596:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 017775:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 0177C7:Dragonborn.esm
@@ -43,9 +41,13 @@ Factions:
   Fluff: 0x000000
 - Faction: 019B8A:Dragonborn.esm
   Fluff: 0x000000
+- Faction: 051596:Skyrim.esm
+  Fluff: 0x000000
 Voice: 01777B:Dragonborn.esm
 Race: 013742:Skyrim.esm
 ActorEffect:
+- 01DBE8:Dragonborn.esm
+- 03D473:Dragonborn.esm
 - 072317:Skyrim.esm
 - 072318:Skyrim.esm
 - 07231A:Skyrim.esm
@@ -55,8 +57,6 @@ ActorEffect:
 - 0BB96B:Skyrim.esm
 - 10F7F7:Skyrim.esm
 - 10F7F8:Skyrim.esm
-- 01DBE8:Dragonborn.esm
-- 03D473:Dragonborn.esm
 Perks:
 - Perk: 0153D2:Skyrim.esm
   Rank: 1
@@ -220,9 +220,7 @@ PlayerSkills:
   Health: 225
   Magicka: 950
   Stamina: 175
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x435AEF
 HeadParts:
 - 053929:Skyrim.esm
 - 08555F:Skyrim.esm

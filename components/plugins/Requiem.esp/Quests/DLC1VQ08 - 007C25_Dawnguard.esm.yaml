@@ -2,44 +2,6 @@ FormKey: 007C25:Dawnguard.esm
 EditorID: DLC1VQ08
 VirtualMachineAdapter:
   Scripts:
-  - Name: DLC1VQ08QuestScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: AgmaerAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 3
-    - MutagenObjectType: ScriptObjectProperty
-      Name: BelevalAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 4
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CelannAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 5
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DurakAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 6
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FlorentiusAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 10
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GunmarAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 9
-    - MutagenObjectType: ScriptObjectProperty
-      Name: IngjardAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 7
-    - MutagenObjectType: ScriptObjectProperty
-      Name: IsranAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 2
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SorineAlias
-      Object: 007C25:Dawnguard.esm
-      Alias: 8
   - Name: DLC1_QF_DLC1VQ08_01007C25
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -328,39 +290,53 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: VampireBeastRace
       Object: 00283A:Dawnguard.esm
+  - Name: DLC1VQ08QuestScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AgmaerAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BelevalAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CelannAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DurakAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FlorentiusAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GunmarAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IngjardAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IsranAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SorineAlias
+      Object: 007C25:Dawnguard.esm
+      Alias: 8
   FileName: DLC1_QF_DLC1VQ08_01007C25
   Fragments:
   - Unknown2: 1
     ScriptName: DLC1_QF_DLC1VQ08_01007C25
     FragmentName: Fragment_4
-  - Stage: 40
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1VQ08_01007C25
-    FragmentName: Fragment_0
   - Stage: 10
     Unknown2: 1
     ScriptName: DLC1_QF_DLC1VQ08_01007C25
     FragmentName: Fragment_11
-  - Stage: 25
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1VQ08_01007C25
-    FragmentName: Fragment_17
-  - Stage: 55
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1VQ08_01007C25
-    FragmentName: Fragment_16
-  - Stage: 60
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1VQ08_01007C25
-    FragmentName: Fragment_15
-  - Stage: 50
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1VQ08_01007C25
-    FragmentName: Fragment_10
-  - Stage: 30
-    Unknown2: 1
-    ScriptName: DLC1_QF_DLC1VQ08_01007C25
-    FragmentName: Fragment_1
   - Stage: 20
     Unknown2: 1
     ScriptName: DLC1_QF_DLC1VQ08_01007C25
@@ -370,6 +346,30 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: DLC1_QF_DLC1VQ08_01007C25
     FragmentName: Fragment_5
+  - Stage: 25
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1VQ08_01007C25
+    FragmentName: Fragment_17
+  - Stage: 30
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1VQ08_01007C25
+    FragmentName: Fragment_1
+  - Stage: 40
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1VQ08_01007C25
+    FragmentName: Fragment_0
+  - Stage: 50
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1VQ08_01007C25
+    FragmentName: Fragment_10
+  - Stage: 55
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1VQ08_01007C25
+    FragmentName: Fragment_16
+  - Stage: 60
+    Unknown2: 1
+    ScriptName: DLC1_QF_DLC1VQ08_01007C25
+    FragmentName: Fragment_15
   - Stage: 200
     Unknown2: 1
     ScriptName: DLC1_QF_DLC1VQ08_01007C25

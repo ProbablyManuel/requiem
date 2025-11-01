@@ -28,10 +28,6 @@ Configuration:
   - Keywords
   HealthOffset: 4000
 Factions:
-- Faction: 091AE6:Skyrim.esm
-  Fluff: 0x000000
-- Faction: 0ABDAE:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 0200E7:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 02645D:Dragonborn.esm
@@ -40,21 +36,25 @@ Factions:
   Fluff: 0x000000
 - Faction: 0397E3:Dragonborn.esm
   Fluff: 0x000000
+- Faction: 091AE6:Skyrim.esm
+  Fluff: 0x000000
+- Faction: 0ABDAE:Skyrim.esm
+  Fluff: 0x000000
 Voice: 017F7E:Dragonborn.esm
 Template: 017F7D:Dragonborn.esm
 Race: 013746:Skyrim.esm
 ActorEffect:
+- 01DF92:Dragonborn.esm
+- 023F6B:Dragonborn.esm
+- 023F79:Dragonborn.esm
+- 023F7A:Dragonborn.esm
+- 10E161:Requiem.esp
 - 0B62EE:Skyrim.esm
 - 0E5F51:Skyrim.esm
 - 10F72E:Skyrim.esm
 - 10F72F:Skyrim.esm
 - 10F732:Skyrim.esm
 - 10F734:Skyrim.esm
-- 01DF92:Dragonborn.esm
-- 023F6B:Dragonborn.esm
-- 023F79:Dragonborn.esm
-- 023F7A:Dragonborn.esm
-- 10E161:Requiem.esp
 Perks:
 - Perk: 0153CF:Skyrim.esm
   Rank: 1
@@ -145,11 +145,11 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 039BE5:Skyrim.esm
-    Count: 2
-- Item:
     Item: 029A61:Dragonborn.esm
     Count: 1
+- Item:
+    Item: 039BE5:Skyrim.esm
+    Count: 2
 AIData:
   Confidence: Foolhardy
   EnergyLevel: 50
@@ -241,9 +241,7 @@ PlayerSkills:
   Health: 661
   Magicka: 1572
   Stamina: 612
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x425AEF
 HeadParts:
 - 02425E:Skyrim.esm
 - 05107F:Skyrim.esm

@@ -25,16 +25,16 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 2000
 Factions:
-- Faction: 02D1DF:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 007A66:Dawnguard.esm
+  Fluff: 0x000000
+- Faction: 02D1DF:Skyrim.esm
   Fluff: 0x000000
 Voice: 0BFB2B:Skyrim.esm
 Race: 0B7998:Skyrim.esm
 ActorEffect:
+- 0FAB09:Requiem.esp
 - 0BF741:Skyrim.esm
 - 0EB86F:Skyrim.esm
-- 0FAB09:Requiem.esp
 AttackRace: 0B7998:Skyrim.esm
 CombatOverridePackageList: 0510CE:Skyrim.esm
 Perks:
@@ -197,8 +197,6 @@ PlayerSkills:
     Value: 0
   Health: 2350
   Stamina: 2245
-  Unused: 16743
-  Unused2: 0x663FEF
 CombatStyle: 086F4E:Skyrim.esm
 NAM5: 255
 Height: 1.3

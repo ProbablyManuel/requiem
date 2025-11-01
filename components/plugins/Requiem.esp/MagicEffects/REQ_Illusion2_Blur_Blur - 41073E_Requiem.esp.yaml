@@ -2,6 +2,16 @@ FormKey: 41073E:Requiem.esp
 EditorID: REQ_Illusion2_Blur_Blur
 VirtualMachineAdapter:
   Scripts:
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.5
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 410740:Requiem.esp
   - Name: REQ_Magic_XPGain
     Properties:
     - MutagenObjectType: ScriptFloatProperty
@@ -13,16 +23,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptFloatProperty
       Name: XPGain
       Data: 0.2
-  - Name: magicSetActorAlphaScript
-    Properties:
-    - MutagenObjectType: ScriptFloatProperty
-      Name: AlphaValue
-      Data: 0.5
-  - Name: REQ_Magic_FinishSpell
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ToDispel
-      Object: 410740:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Blur

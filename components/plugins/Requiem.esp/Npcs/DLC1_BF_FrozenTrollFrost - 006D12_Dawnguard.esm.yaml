@@ -7,12 +7,12 @@ SkyrimMajorRecordFlags:
 - Compressed
 VirtualMachineAdapter:
   Scripts:
-  - Name: masterambushscript
   - Name: DLC1_BF_FrozenExplodeOnDying
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: ExplosionOnDying
       Object: 05E994:Skyrim.esm
+  - Name: masterambushscript
 ObjectBounds:
   First: -39, -36, 0
   Second: 39, 36, 128
@@ -136,9 +136,7 @@ PlayerSkills:
     Value: 0
   Health: 460
   Stamina: 855
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x415AEF
 CombatStyle: 03F1B6:Skyrim.esm
 NAM5: 255
 Height: 1

@@ -22,8 +22,6 @@ Configuration:
   DispositionBase: 35
   HealthOffset: 50
 Factions:
-- Faction: 086EEE:Skyrim.esm
-  Fluff: 0x000000
 - Faction: 018279:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 01841F:Dragonborn.esm
@@ -31,6 +29,8 @@ Factions:
 - Faction: 0195AD:Dragonborn.esm
   Fluff: 0x000000
 - Faction: 03D3AE:Dragonborn.esm
+  Fluff: 0x000000
+- Faction: 086EEE:Skyrim.esm
   Fluff: 0x000000
 Voice: 023FF6:Dragonborn.esm
 Race: 013742:Skyrim.esm
@@ -150,16 +150,16 @@ Perks:
   Fluff: 0x000000
 Items:
 - Item:
-    Item: 01399C:Skyrim.esm
-    Count: 1
-- Item:
-    Item: 1046D1:Skyrim.esm
-    Count: 1
-- Item:
     Item: 88AEF1:Requiem.esp
     Count: 1
 - Item:
     Item: 899DCA:Requiem.esp
+    Count: 1
+- Item:
+    Item: 01399C:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 1046D1:Skyrim.esm
     Count: 1
 AIData:
   Aggression: Aggressive
@@ -260,9 +260,7 @@ PlayerSkills:
   Health: 301
   Magicka: 100
   Stamina: 284
-  Unused: 16743
   GearedUpWeapons: 1
-  Unused2: 0x435AEF
 HeadParts:
 - 01750B:Skyrim.esm
 - 053929:Skyrim.esm

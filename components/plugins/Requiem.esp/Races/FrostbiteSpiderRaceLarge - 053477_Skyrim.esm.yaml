@@ -104,16 +104,6 @@ Attacks:
   AttackEvent: attackStart
 - AttackData:
     DamageMult: 1.5
-    Chance: 0.35
-    Spell: 053475:Skyrim.esm
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 0.75
-    StaminaMult: 1
-  AttackEvent: AttackStartLungeBite
-- AttackData:
-    DamageMult: 1.5
     Chance: 0.3
     Spell: 053475:Skyrim.esm
     Flags:
@@ -153,6 +143,16 @@ Attacks:
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: AttackStart_RightChop
+- AttackData:
+    DamageMult: 1.5
+    Chance: 0.35
+    Spell: 053475:Skyrim.esm
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 0.75
+    StaminaMult: 1
+  AttackEvent: AttackStartLungeBite
 - AttackData:
     DamageMult: 0.4
     Flags:

@@ -133,6 +133,63 @@ FacegenFaceClamp: 3
 Attacks:
 - AttackData:
     DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_2HMSprint
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_2HWSprint
+- AttackData:
+    DamageMult: 2.2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    AttackAngle: -90
+    StrikeAngle: 85
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_MC_1HMLeft
+- AttackData:
+    DamageMult: 2.2
+    Chance: 1
+    Flags:
+    - PowerAttack
+    AttackAngle: 90
+    StrikeAngle: 85
+    Stagger: 1
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_MC_1HMRight
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_Sprint
+- AttackData:
+    DamageMult: 2
+    Flags:
+    - PowerAttack
+    - LeftAttack
+    StrikeAngle: 35
+    Stagger: 1
+    AttackType: 0914E6:Skyrim.esm
+    StaminaMult: 1
+  AttackEvent: attackPowerStart_SprintLeftHand
+- AttackData:
+    DamageMult: 2
     Chance: 1
     Flags:
     - PowerAttack
@@ -277,69 +334,32 @@ Attacks:
     StaminaMult: 1
   AttackEvent: attackPowerStartRightLeftHand
 - AttackData:
-    DamageMult: 2
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E6:Skyrim.esm
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_2HMSprint
-- AttackData:
-    DamageMult: 2
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E6:Skyrim.esm
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_2HWSprint
-- AttackData:
-    DamageMult: 2.2
-    Chance: 1
-    Flags:
-    - PowerAttack
-    AttackAngle: -90
-    StrikeAngle: 85
-    Stagger: 1
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_MC_1HMLeft
-- AttackData:
-    DamageMult: 2.2
-    Chance: 1
-    Flags:
-    - PowerAttack
-    AttackAngle: 90
-    StrikeAngle: 85
-    Stagger: 1
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_MC_1HMRight
-- AttackData:
-    DamageMult: 2
-    Flags:
-    - PowerAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E6:Skyrim.esm
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_Sprint
-- AttackData:
-    DamageMult: 2
-    Flags:
-    - PowerAttack
-    - LeftAttack
-    StrikeAngle: 35
-    Stagger: 1
-    AttackType: 0914E6:Skyrim.esm
-    StaminaMult: 1
-  AttackEvent: attackPowerStart_SprintLeftHand
-- AttackData:
     DamageMult: 1
     Chance: 1
     Spell: 0B8780:Skyrim.esm
     StrikeAngle: 50
     StaminaMult: 1
   AttackEvent: attackStart
+- AttackData:
+    DamageMult: 1
+    Chance: 1
+    StrikeAngle: 35
+    StaminaMult: 1
+  AttackEvent: attackStart_MC
+- AttackData:
+    DamageMult: 1.2
+    Chance: 1
+    AttackAngle: -90
+    StrikeAngle: 85
+    StaminaMult: 1
+  AttackEvent: attackStart_MC_1HMLeft
+- AttackData:
+    DamageMult: 1.2
+    Chance: 1
+    AttackAngle: 90
+    StrikeAngle: 85
+    StaminaMult: 1
+  AttackEvent: attackStart_MC_1HMRight
 - AttackData:
     DamageMult: 1
     Chance: 1
@@ -383,26 +403,6 @@ Attacks:
     StrikeAngle: 35
     StaminaMult: 1
   AttackEvent: attackStartSprintLeftHand
-- AttackData:
-    DamageMult: 1
-    Chance: 1
-    StrikeAngle: 35
-    StaminaMult: 1
-  AttackEvent: attackStart_MC
-- AttackData:
-    DamageMult: 1.2
-    Chance: 1
-    AttackAngle: -90
-    StrikeAngle: 85
-    StaminaMult: 1
-  AttackEvent: attackStart_MC_1HMLeft
-- AttackData:
-    DamageMult: 1.2
-    Chance: 1
-    AttackAngle: 90
-    StrikeAngle: 85
-    StaminaMult: 1
-  AttackEvent: attackStart_MC_1HMRight
 - AttackData:
     DamageMult: 1.5
     Chance: 0.33

@@ -2,20 +2,6 @@ FormKey: 3C130B:Requiem.esp
 EditorID: REQ_Illusion1_CharmingTouch_CharmingTouch
 VirtualMachineAdapter:
   Scripts:
-  - Name: SayOnHitByMagicEffectScript
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CombatTopicToSay
-      Object: 0AB884:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TopicToSay
-      Object: 0AB884:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WICastNonHostileTimer
-      Object: 0E0CDC:Skyrim.esm
   - Name: REQ_Illusion_Charm
   - Name: REQ_IllusionBreak
     Properties:
@@ -41,6 +27,20 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptFloatProperty
       Name: XPRate
       Data: 1
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatTopicToSay
+      Object: 0AB884:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB884:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Charming Touch

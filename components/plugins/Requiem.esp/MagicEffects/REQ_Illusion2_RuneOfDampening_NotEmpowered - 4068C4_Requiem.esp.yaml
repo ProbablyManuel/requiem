@@ -2,16 +2,16 @@ FormKey: 4068C4:Requiem.esp
 EditorID: REQ_Illusion2_RuneOfDampening_NotEmpowered
 VirtualMachineAdapter:
   Scripts:
-  - Name: REQ_Magic_PlaceHazard
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HazardType
-      Object: 4068C2:Requiem.esp
   - Name: REQ_Magic_FinishSpell
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: Exclusive
       Object: 409068:Requiem.esp
+  - Name: REQ_Magic_PlaceHazard
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HazardType
+      Object: 4068C2:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Not Empowered

@@ -2,6 +2,11 @@ FormKey: 40198A:Requiem.esp
 EditorID: REQ_Illusion2_HibernationTouch_HibernationTouch
 VirtualMachineAdapter:
   Scripts:
+  - Name: REQ_Illusion_Hibernation
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Nightmare
+      Object: 028533:Requiem.esp
   - Name: REQ_IllusionBreak
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -28,11 +33,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptFloatProperty
       Name: XPRate
       Data: 2
-  - Name: REQ_Illusion_Hibernation
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Nightmare
-      Object: 028533:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Hibernation Touch

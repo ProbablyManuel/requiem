@@ -2,20 +2,6 @@ FormKey: 3C6252:Requiem.esp
 EditorID: REQ_Illusion1_Lionheart_Lionheart
 VirtualMachineAdapter:
   Scripts:
-  - Name: SayOnHitByMagicEffectScript
-    Properties:
-    - MutagenObjectType: ScriptIntProperty
-      Name: AllowForTeammate
-      Data: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: TopicToSay
-      Object: 0B2DD8:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: WICastNonHostileTimer
-      Object: 0E0CDC:Skyrim.esm
   - Name: REQ_IllusionBreak
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -40,6 +26,20 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptFloatProperty
       Name: XPRate
       Data: 1
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: AllowForTeammate
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0B2DD8:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
 Name:
   TargetLanguage: English
   Value: Lionheart
