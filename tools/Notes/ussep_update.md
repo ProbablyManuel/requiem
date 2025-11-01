@@ -9,7 +9,7 @@
 
 # How to forward changes in the scripts
 
-You can use [find_ussep_papryrus_script_diff.py](#../Python/find_ussep_papryrus_script_diff.py) to identify scripts used by Requiem that have been changed between the old and new USSEP version.
+You can use [find_ussep_papryrus_script_diff.py](../Python/find_ussep_papryrus_script_diff.py) to identify scripts used by Requiem that have been changed between the old and new USSEP version.
 
 ```shell
 python find_ussep_papryrus_script_diff.py "C:\Skyrim Tools\Mod Organizer SSE\mods\Unofficial Skyrim Special Edition Patch" "C:\Skyrim Tools\Mod Organizer SSE\mods\Unofficial Skyrim Special Edition Patch-266-4-3-2-1721451025" "C:\Skyrim Tools\Mod Organizer SSE\mods\requiem\components\papyrus-scripts\src"
