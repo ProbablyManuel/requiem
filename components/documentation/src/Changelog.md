@@ -8,6 +8,11 @@ Reqtificator
 * All dependencies of the Reqtificator are updated to the latest version.
 * The "Open encounter zones" setting is correctly saved between consecutive runs.
 
+Bug Fixes
+---------
+
+* Synchronize with Unofficial Skyrim Special Edition Patch v4.3.6.
+
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
 ===============================================
