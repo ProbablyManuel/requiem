@@ -11,7 +11,7 @@ Reqtificator
 Tweaks
 ------
 
-* Dual wield power attacks cannot be executed when sneaking.
+* Dual wield power attacks cannot be executed when sneaking. This replaces a previous feature that allowed such sneak attacks but artifically nerfed their damage to match a single-handed sneak attack.
 
 Bug Fixes
 ---------
