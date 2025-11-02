@@ -12,6 +12,7 @@ Bug Fixes
 ---------
 
 * Synchronize with Unofficial Skyrim Special Edition Patch v4.3.6.
+* Miraak always drops his mask upon death.
 
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
