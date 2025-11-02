@@ -20,6 +20,7 @@ Bug Fixes
 * Miraak always drops his mask upon death.
 * Miraak's Fire Storm deals damage instantly instead of continuously over 26 seconds (not including 4 seconds of tapering). This significantly reduces the damage dealt by Miraak.
 * Miraak's fire wyrm lasts for 60 seconds instead of 10.
+* Vampires can travel via carriage or ferry during the day without dying upon arrival.
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 
 
