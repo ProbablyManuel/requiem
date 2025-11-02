@@ -8,6 +8,11 @@ Reqtificator
 * All dependencies of the Reqtificator are updated to the latest version.
 * The "Open encounter zones" setting is correctly saved between consecutive runs.
 
+Tweaks
+------
+
+* Dual wield power attacks cannot be executed when sneaking.
+
 Bug Fixes
 ---------
 
@@ -15,6 +20,7 @@ Bug Fixes
 * Miraak always drops his mask upon death.
 * Miraak's Fire Storm deals damage instantly instead of continuously over 26 seconds (not including 4 seconds of tapering). This significantly reduces the damage dealt by Miraak.
 * Miraak's fire wyrm lasts for 60 seconds instead of 10.
+* Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
