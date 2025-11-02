@@ -13,6 +13,8 @@ Bug Fixes
 
 * Synchronize with Unofficial Skyrim Special Edition Patch v4.3.6.
 * Miraak always drops his mask upon death.
+* Miraak's Fire Storm deals damage instantly instead of continuously over 26 seconds (not including 4 seconds of tapering). This significantly reduces the damage dealt by Miraak.
+* Miraak's fire wyrm lasts for 60 seconds instead of 10.
 
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
