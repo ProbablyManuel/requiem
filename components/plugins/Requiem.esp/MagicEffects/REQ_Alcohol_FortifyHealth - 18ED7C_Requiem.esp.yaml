@@ -48,3 +48,9 @@ Conditions:
   Data:
     MutagenObjectType: HasKeywordConditionData
     Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Health
+  ComparisonValue: AE372A:Requiem.esp
