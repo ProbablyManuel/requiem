@@ -1,8 +1,8 @@
 FormKey: ADDD76:Requiem.esp
 EditorID: REQ_Light_Ulfric_Body
 ObjectBounds:
-  First: -24, -24, 0
-  Second: 24, 21, 22
+  First: -23, -21, -1
+  Second: 23, 21, 14
 Name:
   TargetLanguage: English
   Value: Ulfric's Cuirass
@@ -10,8 +10,18 @@ ObjectEffect: 0FC060:Skyrim.esm
 WorldModel:
   Male:
     Model:
-      File: DLC02\Armor\StahlrimLight\CuirassGND.nif
-      Data: 0x020000000000000000000000
+      File: Clothes\YarlClothes02\OutfitGO.nif
+      Data: 0x020000000200000000000000161F580B6464730086C4F163BEBEB9066464730086C4F163
+      AlternateTextures:
+      - Name: ClothesGO:0
+        NewTexture: 02F6A6:unofficial skyrim special edition patch.esp
+  Female:
+    Model:
+      File: Clothes\YarlClothes02\OutfitGO.nif
+      Data: 0x020000000200000000000000161F580B6464730086C4F163BEBEB9066464730086C4F163
+      AlternateTextures:
+      - Name: ClothesGO:0
+        NewTexture: 02F6A6:unofficial skyrim special edition patch.esp
 BodyTemplate:
   FirstPersonFlags:
   - Body
@@ -27,7 +37,7 @@ Description:
   TargetLanguage: English
   Value: ''
 Armature:
-- 03B3DB:Dragonborn.esm
+- 062302:Skyrim.esm
 Value: 3000
 Weight: 12.5
 ArmorRating: 275
