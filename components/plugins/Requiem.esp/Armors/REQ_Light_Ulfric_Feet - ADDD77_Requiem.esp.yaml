@@ -1,8 +1,8 @@
 FormKey: ADDD77:Requiem.esp
 EditorID: REQ_Light_Ulfric_Feet
 ObjectBounds:
-  First: -12, -17, 0
-  Second: 17, 12, 30
+  First: -11, -11, -1
+  Second: 11, 11, 25
 Name:
   TargetLanguage: English
   Value: Ulfric's Boots
@@ -10,8 +10,18 @@ ObjectEffect: 98CA5C:Requiem.esp
 WorldModel:
   Male:
     Model:
-      File: DLC02\Armor\StahlrimLight\BootsGND.nif
-      Data: 0x020000000000000000000000
+      File: Clothes\YarlClothes02\BootsGO.nif
+      Data: 0x020000000200000000000000C45EF2596464730086C4F1638F3A6CB46464730086C4F163
+      AlternateTextures:
+      - Name: boot01GO:0
+        NewTexture: 02F6A7:unofficial skyrim special edition patch.esp
+  Female:
+    Model:
+      File: Clothes\YarlClothes02\BootsGO.nif
+      Data: 0x020000000200000000000000C45EF2596464730086C4F1638F3A6CB46464730086C4F163
+      AlternateTextures:
+      - Name: boot01GO:0
+        NewTexture: 02F6A7:unofficial skyrim special edition patch.esp
 BodyTemplate:
   FirstPersonFlags:
   - Feet
@@ -27,7 +37,7 @@ Description:
   TargetLanguage: English
   Value: ''
 Armature:
-- 03B3DA:Dragonborn.esm
+- 06230C:Skyrim.esm
 Value: 900
 Weight: 3.75
 ArmorRating: 83

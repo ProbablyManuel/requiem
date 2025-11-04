@@ -14,6 +14,7 @@ Tweaks
 * Dual wield power attacks cannot be executed when sneaking. This replaces a previous feature that allowed such sneak attacks but artifically nerfed their damage to match a single-handed sneak attack.
 * Alcohol ceases to apply beneficial effects when your alcohol level exceeds your base health.
 * Herebane's sword and shield are moved from the Soul Cairn to a more accessible location.
+* Ulfric's armor has the vanilla appearance if not using the Creation Club patch.
 
 Bug Fixes
 ---------

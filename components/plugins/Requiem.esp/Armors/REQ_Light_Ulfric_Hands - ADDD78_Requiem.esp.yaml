@@ -1,8 +1,8 @@
 FormKey: ADDD78:Requiem.esp
 EditorID: REQ_Light_Ulfric_Hands
 ObjectBounds:
-  First: -17, -11, 0
-  Second: 11, 17, 12
+  First: -10, -12, -1
+  Second: 10, 12, 9
 Name:
   TargetLanguage: English
   Value: Ulfric's Gauntlets
@@ -10,8 +10,11 @@ ObjectEffect: 0BE011:Skyrim.esm
 WorldModel:
   Male:
     Model:
-      File: DLC02\Armor\StahlrimLight\GauntletsGND.nif
-      Data: 0x020000000000000000000000
+      File: Clothes\YarlClothes02\GlovesGO.nif
+      Data: 0x0200000002000000000000008D9C1C1D6464730086C4F163B129BDE06464730086C4F163
+      AlternateTextures:
+      - Name: glove01GO:0
+        NewTexture: 062304:Skyrim.esm
 BodyTemplate:
   FirstPersonFlags:
   - Hands
@@ -27,9 +30,7 @@ Description:
   TargetLanguage: English
   Value: ''
 Armature:
-- 03B3DC:Dragonborn.esm
-- 03B3DD:Dragonborn.esm
-- 03B3DE:Dragonborn.esm
+- 062307:Skyrim.esm
 Value: 900
 Weight: 3.75
 ArmorRating: 82
