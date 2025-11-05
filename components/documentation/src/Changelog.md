@@ -25,6 +25,7 @@ Bug Fixes
 * Miraak's fire wyrm lasts for 60 seconds instead of 10.
 * Vampires can travel via carriage or ferry during the day without dying upon arrival.
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
+* Stealing dreams with the Skull of Corruption doesn't aggro the target.
 
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
