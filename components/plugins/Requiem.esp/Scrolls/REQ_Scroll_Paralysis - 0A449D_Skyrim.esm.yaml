@@ -1,0 +1,38 @@
+FormKey: 0A449D:Skyrim.esm
+EditorID: REQ_Scroll_Paralysis
+Version2: 12
+ObjectBounds:
+  First: -15, -4, -4
+  Second: 17, 4, 4
+Name:
+  TargetLanguage: English
+  Value: Scroll of Paralysis
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Clutter\Common\Scroll05.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 250
+Weight: 0.5
+BaseCost: 119
+ChargeTime: 0.5
+CastType: 3
+TargetType: Aimed
+Effects:
+- BaseEffect: 01EA6E:Skyrim.esm
+  Data:
+    Duration: 3
+- BaseEffect: 0A44C0:Skyrim.esm
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 035D59:Skyrim.esm
+    ComparisonValue: 1

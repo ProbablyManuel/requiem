@@ -1,0 +1,26 @@
+FormKey: 0B62E6:Skyrim.esm
+EditorID: REQ_Alteration5_Paralysis
+Name:
+  TargetLanguage: English
+  Value: Paralysis (Rank II)
+MenuDisplayObject: 10A046:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 937
+Flags:
+- ManualCostCalc
+- NoDualCastModification
+ChargeTime: 4.5
+CastType: FireAndForget
+HalfCostPerk: 0C44BA:Skyrim.esm
+Effects:
+- BaseEffect: 0B62E5:Skyrim.esm
+  Data:
+    Area: 40
+    Duration: 1
+- BaseEffect: 0B8F52:Skyrim.esm
+  Data:
+    Magnitude: 0.05
+    Area: 40
