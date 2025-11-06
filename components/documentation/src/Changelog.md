@@ -28,6 +28,11 @@ Bug Fixes
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
 
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* All staves use the vanilla paralysis enchantment.
+
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
 ===============================================
