@@ -27,6 +27,7 @@ Bug Fixes
 * Vampires can travel via carriage or ferry during the day without dying upon arrival.
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
+* Duplicate claws in Fellglow Keep are replaced by the normal ingredient.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
