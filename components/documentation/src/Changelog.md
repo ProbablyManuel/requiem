@@ -15,6 +15,7 @@ Tweaks
 * Alcohol ceases to apply beneficial effects when your alcohol level exceeds your base health.
 * Herebane's sword and shield are moved from the Soul Cairn to a more accessible location.
 * Ulfric's armor has the vanilla appearance if not using the Creation Club patch.
+* Paralyis effects are consistently named "Paralyis".
 
 Bug Fixes
 ---------
@@ -26,6 +27,11 @@ Bug Fixes
 * Vampires can travel via carriage or ferry during the day without dying upon arrival.
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* All staves use the vanilla paralysis enchantment.
 
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2

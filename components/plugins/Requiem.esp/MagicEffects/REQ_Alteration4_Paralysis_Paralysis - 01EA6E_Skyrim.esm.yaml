@@ -1,0 +1,66 @@
+FormKey: 01EA6E:Skyrim.esm
+EditorID: REQ_Alteration4_Paralysis_Paralysis
+Name:
+  TargetLanguage: English
+  Value: Paralysis
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+- 3FCA4C:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 450
+MagicSkill: Alteration
+CastingLight: 06EBCC:Skyrim.esm
+TaperWeight: 1
+HitShader: 06DE84:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+TaperDuration: 5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+Projectile: 06EBC8:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 06DE85:Skyrim.esm
+HitEffectArt: 06DE86:Skyrim.esm
+ImpactData: 300D62:unofficial skyrim special edition patch.esp
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster tries to telekinetically imprison the target for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 357085:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0D205E:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData
