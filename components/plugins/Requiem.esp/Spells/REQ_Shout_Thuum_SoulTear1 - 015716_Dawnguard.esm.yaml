@@ -1,0 +1,20 @@
+FormKey: 015716:Dawnguard.esm
+EditorID: REQ_Shout_Thuum_SoulTear1
+Name:
+  TargetLanguage: English
+  Value: Soul Tear
+MenuDisplayObject: 0A59AC:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Voice
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 015714:Dawnguard.esm
+  Data:
+    Magnitude: 0.05
