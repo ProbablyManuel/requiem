@@ -34,6 +34,7 @@ Bug Fixes
 * Soul Tear doesn't damage or soul trap enemies who cannot be reanimated such as dwarven automatons.
 * Soul Tear doesn't reanimate devoured corpses.
 * Soul Tear can soul trap essential actors.
+* Soulreaping weapons cannot be disenchanted.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
