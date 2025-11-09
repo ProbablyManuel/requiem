@@ -35,6 +35,7 @@ Bug Fixes
 * Soul Tear doesn't reanimate devoured corpses.
 * Soul Tear can soul trap essential actors.
 * Soulreaping weapons cannot be disenchanted.
+* Draugr don't use steel shields.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
