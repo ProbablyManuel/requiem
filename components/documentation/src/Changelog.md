@@ -16,6 +16,8 @@ Tweaks
 * Herebane's sword and shield are moved from the Soul Cairn to a more accessible location.
 * Ulfric's armor has the vanilla appearance if not using the Creation Club patch.
 * Paralyis effects are consistently named "Paralyis".
+* Magnitude of Arcane Power is doubled.
+* Annihilation doesn't deal random damage.
 
 Bug Fixes
 ---------
@@ -27,6 +29,7 @@ Bug Fixes
 * Archers don't recoil when their arrow is blocked by a shield.
 * Vampires can travel via carriage or ferry during the day without dying upon arrival.
 * Netch float above the water.
+* Annihilation isn't resisted by magic resistance.
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
 * Duplicate claws in Fellglow Keep are replaced by the normal ingredient.
@@ -36,6 +39,7 @@ Bug Fixes
 * Soul Tear can soul trap essential actors.
 * Soulreaping weapons cannot be disenchanted.
 * Draugr don't use steel shields.
+* Arcane Power clarifies it deals magic damage rather than truly irresistible damage.
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
