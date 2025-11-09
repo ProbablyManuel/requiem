@@ -1,0 +1,27 @@
+FormKey: 184F06:Requiem.esp
+EditorID: REQ_Ench_ArcanePower_MagicDamage
+Name:
+  TargetLanguage: English
+  Value: Magic Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 14
+ResistValue: ResistMagic
+HitShader: 10ECCF:Skyrim.esm
+EnchantShader: 059EDA:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> magic damage.
