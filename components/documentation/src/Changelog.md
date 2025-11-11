@@ -41,7 +41,8 @@ Bug Fixes
 * Soulreaping weapons cannot be disenchanted.
 * Draugr don't use steel shields.
 * Arcane Power clarifies it deals magic damage rather than truly irresistible damage.
-* The Charmed Necklace states that it prevents you from stumbling while drunk.  
+* The Charmed Necklace states that it prevents you from stumbling while drunk.
+* The total lifetime bounty is correctly adjusted after escaping from Cidhna Mine if other mods change the bounty values.
 
 
 Internal Quality Improvements (only relevant for modders)
