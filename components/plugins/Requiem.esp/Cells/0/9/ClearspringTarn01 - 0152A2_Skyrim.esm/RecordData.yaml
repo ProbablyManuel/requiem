@@ -43,13 +43,29 @@ EncounterZone: 03EC00:Skyrim.esm
 Music: 094BDD:Skyrim.esm
 ImageSpace: 0A2687:Skyrim.esm
 Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 005907:Requiem.esp
+  Base: 0E49A7:Skyrim.esm
+  Placement:
+    Position: 4184.893, 4133.315, 10.15089
+    Rotation: 0, -0, -0.5999983
 - MutagenObjectType: PlacedNpc
   FormKey: AE38E0:Requiem.esp
-  Base: 013B74:Dawnguard.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: masterAmbushScript
+      Flags: Inherited
+  Base: 01AAB2:Dawnguard.esm
+  LinkedReferences:
+  - Reference: 005907:Requiem.esp
+  ActivateParents:
+    Parents:
+    - Reference: 0F3248:Skyrim.esm
   PersistentLocation: 019157:Skyrim.esm
+  LocationReference: 019157:Skyrim.esm
   Placement:
-    Position: 3949.4863, 4266.191, 0.765808
-    Rotation: 0, 0, 2.5999994
+    Position: 4149.116, 4188.338, 0.765808
+    Rotation: 0, -0, 5.7999997
 - MutagenObjectType: PlacedObject
   FormKey: 0F3248:Skyrim.esm
   MajorRecordFlagsRaw: 1610612736
