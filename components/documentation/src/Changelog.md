@@ -45,6 +45,7 @@ Bug Fixes
 * The total lifetime bounty is correctly adjusted after escaping from Cidhna Mine if other mods change the bounty values.
 * Smelting dwarven armors and weapons requires the same amount of dwarven powder than it yields ingots.
 * The daedric weapons added by Requiem have Atronach Forge recipes.
+* A number of typos in descriptions, names, and editor ids are fixed.
 
 
 Internal Quality Improvements (only relevant for modders)
