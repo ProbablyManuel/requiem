@@ -16,6 +16,7 @@ Tweaks
 * Herebane's sword and shield are moved from the Soul Cairn to a more accessible location.
 * Spriggans and trolls leave each other be.
 * Ulfric's armor has the vanilla appearance if not using the Creation Club patch.
+* The Notched Pickaxe is restored to improve interactions with other mods such as Legacy of the Dragonborn. It is wielded by a unique miner.
 * Paralyis effects are consistently named "Paralyis".
 * Magnitude of Arcane Power is doubled.
 * Annihilation doesn't deal random damage.
