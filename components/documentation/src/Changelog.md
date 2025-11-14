@@ -17,6 +17,8 @@ Tweaks
 * Spriggans and trolls leave each other be.
 * Ulfric's armor has the vanilla appearance if not using the Creation Club patch.
 * The Notched Pickaxe is restored to improve interactions with other mods such as Legacy of the Dragonborn. It is wielded by a unique miner.
+* Sun damage to vampire NPCs stops earlier than for the player because unlike the player they cannot appropriately react to the sun.
+* Vampire NPCs don't regenerate health in the sun.
 * Paralyis effects are consistently named "Paralyis".
 * Magnitude of Arcane Power is doubled.
 * Annihilation doesn't deal random damage.
