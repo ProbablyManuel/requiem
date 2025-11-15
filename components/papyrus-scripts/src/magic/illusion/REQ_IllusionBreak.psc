@@ -61,7 +61,7 @@ Event OnEffectStart(Actor akTarget, Actor akCaster)
 	XPRate *= 0.25 + temp * Math.sqrt(temp) + 0.01 * (chance/2.0) * Math.sqrt(chance/2.0)
 	If ( (random < chance && !InverseFunction) || (random > chance && InverseFunction) )
 		If (Basespell != None)
-			GetTargetActor().DispelSpell(BaseSpell)
+			akTarget.DispelSpell(BaseSpell)
 		Else
 			Self.Dispel()
 		EndIf
