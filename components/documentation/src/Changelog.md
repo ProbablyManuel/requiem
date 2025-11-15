@@ -38,6 +38,7 @@ Bug Fixes
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
 * Illusion spells don't grant XP when cast on dead NPCs.
 * Fog of Shadows isn't easier to resist when dual-cast.
+* Fog of Shadows periodically checks if the target can break free from the spell insteading rapidly repeating the check until it succeeds.
 * Duplicate claws in Fellglow Keep are replaced by the normal ingredient.
 * Soul Tear is affected by shout perks instead of conjuration perks.
 * Soul Tear doesn't damage or soul trap enemies who cannot be reanimated such as dwarven automatons.
