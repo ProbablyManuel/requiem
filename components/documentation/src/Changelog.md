@@ -36,6 +36,7 @@ Bug Fixes
 * Annihilation isn't resisted by magic resistance.
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
+* Illusion spells don't grant XP when cast on dead NPCs.
 * Duplicate claws in Fellglow Keep are replaced by the normal ingredient.
 * Soul Tear is affected by shout perks instead of conjuration perks.
 * Soul Tear doesn't damage or soul trap enemies who cannot be reanimated such as dwarven automatons.

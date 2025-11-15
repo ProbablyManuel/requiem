@@ -68,3 +68,11 @@ Sounds:
 Description:
   TargetLanguage: English
   Value: The caster evokes an orb of vile, red magical energy. If a target is hit by this orb, it will flee in despair for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

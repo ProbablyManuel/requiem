@@ -79,3 +79,11 @@ Sounds:
 Description:
   TargetLanguage: English
   Value: The touched target will fall into a deep slumber for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

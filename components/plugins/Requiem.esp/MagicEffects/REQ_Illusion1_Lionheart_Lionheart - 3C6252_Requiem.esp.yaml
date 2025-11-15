@@ -82,3 +82,11 @@ Sounds:
 Description:
   TargetLanguage: English
   Value: The caster's touch inspires valor. The target will not flee and
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

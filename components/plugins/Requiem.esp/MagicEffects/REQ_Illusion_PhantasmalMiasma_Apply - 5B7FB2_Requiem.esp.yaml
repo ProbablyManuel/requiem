@@ -78,3 +78,10 @@ Conditions:
   Data:
     MutagenObjectType: IsHostileToActorConditionData
   ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

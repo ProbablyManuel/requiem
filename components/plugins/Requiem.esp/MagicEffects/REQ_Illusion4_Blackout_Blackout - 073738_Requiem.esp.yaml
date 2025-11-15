@@ -70,3 +70,11 @@ Sounds:
 Description:
   TargetLanguage: English
   Value: The caster evokes an orb that causes a mental blackout on impact, draining <mag> magicka per second and
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

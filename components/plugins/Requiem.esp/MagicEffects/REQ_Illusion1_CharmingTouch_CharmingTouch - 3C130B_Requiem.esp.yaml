@@ -83,3 +83,11 @@ Sounds:
 Description:
   TargetLanguage: English
   Value: The touched target considers the caster a good friend and stops all hostilities for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData
