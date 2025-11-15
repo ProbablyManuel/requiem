@@ -64,3 +64,11 @@ Sounds:
 Description:
   TargetLanguage: English
   Value: The touched faces his worst nightmare, dealing <mag>% less damage for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

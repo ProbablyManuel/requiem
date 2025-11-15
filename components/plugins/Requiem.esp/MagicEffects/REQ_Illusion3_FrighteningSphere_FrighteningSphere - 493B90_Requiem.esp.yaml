@@ -74,3 +74,11 @@ Sounds:
 Description:
   TargetLanguage: English
   Value: The caster unleashes an orb which will explode upon impact. Affected targets will flee in despair for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData
