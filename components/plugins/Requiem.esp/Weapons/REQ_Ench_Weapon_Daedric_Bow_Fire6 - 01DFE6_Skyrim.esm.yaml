@@ -1,21 +1,5 @@
 FormKey: 01DFE6:Skyrim.esm
 EditorID: REQ_Ench_Weapon_Daedric_Bow_Fire6
-VirtualMachineAdapter:
-  Scripts:
-  - Name: REQ_CursedItem
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ActorTypeDaedra
-      Object: 013797:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CurseOfAgony
-      Object: 09E9C3:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: myItem
-      Object: 01DFE6:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: REQ_KW_CursedItem
-      Object: 6D7249:Requiem.esp
 ObjectBounds:
   First: -15, -57, 0
   Second: 14, 57, 3
@@ -34,9 +18,8 @@ Keywords:
 - 01E715:Skyrim.esm
 - 01E71F:Skyrim.esm
 - 08F958:Skyrim.esm
-- 6D7249:Requiem.esp
-- AD3B2D:Requiem.esp
 - 9F9914:Requiem.esp
+- AD3B2D:Requiem.esp
 - AD3B2F:Requiem.esp
 Description:
   TargetLanguage: English
@@ -74,3 +57,4 @@ Critical:
   - OnDeath
   Unused2: 0x000000
 DetectionSoundLevel: Silent
+Template: 0139B5:Skyrim.esm

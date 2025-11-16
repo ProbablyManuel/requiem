@@ -1,27 +1,12 @@
 FormKey: 10F75F:Skyrim.esm
 EditorID: REQ_Heavy_Dremora_Head
-VirtualMachineAdapter:
-  Scripts:
-  - Name: REQ_CursedItem
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ActorTypeDaedra
-      Object: 013797:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CurseOfAgony
-      Object: 09E9C3:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: myItem
-      Object: 10F75F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: REQ_KW_CursedItem
-      Object: 6D7249:Requiem.esp
 ObjectBounds:
   First: -11, -13, 0
   Second: 11, 15, 31
 Name:
   TargetLanguage: English
   Value: Daedric Helmet
+ObjectEffect: 005912:Requiem.esp
 WorldModel:
   Male:
     Model:
@@ -41,12 +26,12 @@ Keywords:
 - 06BBD4:Skyrim.esm
 - 06C0EE:Skyrim.esm
 - 08F959:Skyrim.esm
-- 6D7249:Requiem.esp
+- 0C27BD:Skyrim.esm
 Description:
   TargetLanguage: English
-  Value: ' '
+  Value: Forged in the deepest fires of Oblivion, this armor rejects all mortal claimants. Its Daedric essence gnaws at the wearer's life unless they are Dremora by blood and flame.
 Armature:
 - 098BB2:Skyrim.esm
-Value: 10000
+Value: 1000
 Weight: 20
 ArmorRating: 240
