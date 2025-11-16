@@ -1,24 +1,9 @@
 FormKey: 016FFF:Skyrim.esm
 EditorID: REQ_Cloth_Dremora_Feet
-VirtualMachineAdapter:
-  Scripts:
-  - Name: REQ_CursedItem
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ActorTypeDaedra
-      Object: 013797:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: CurseOfAgony
-      Object: 09E9C3:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: myItem
-      Object: 016FFF:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: REQ_KW_CursedItem
-      Object: 6D7249:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Boots
+ObjectEffect: 005912:Requiem.esp
 WorldModel:
   Male:
     Model:
@@ -39,11 +24,11 @@ Race: 000019:Skyrim.esm
 Keywords:
 - 06BBE8:Skyrim.esm
 - 08F95B:Skyrim.esm
+- 0C27BD:Skyrim.esm
 - 10CD12:Skyrim.esm
-- 6D7249:Requiem.esp
 Description:
   TargetLanguage: English
-  Value: ' '
+  Value: Woven in the deepest pits of Oblivion, this piece of clothing rejects all mortal claimants. Its Daedric essence gnaws at the wearer's life unless they are Dremora by blood and flame.
 Armature:
 - 0C36EB:Skyrim.esm
 Value: 4

@@ -46,6 +46,9 @@ Bug Fixes
 * Soul Tear doesn't reanimate devoured corpses.
 * Soul Tear can soul trap essential actors.
 * Soulreaping weapons cannot be disenchanted.
+* The curse from dremora items cannot be bypassed.
+* The Atronach Forge doesn't yield cursed daedric weapons.
+* Cursed dremora items have a less exorbitant price.
 * Draugr don't use steel shields.
 * Arcane Power clarifies it deals magic damage rather than truly irresistible damage.
 * The Charmed Necklace states that it prevents you from stumbling while drunk.
