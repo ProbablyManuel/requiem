@@ -15,6 +15,7 @@ Tweaks
 * Dual wield power attacks cannot be executed when sneaking. This replaces a previous feature that allowed such sneak attacks but artifically nerfed their damage to match a single-handed sneak attack.
 * Alcohol ceases to apply beneficial effects when your alcohol level exceeds your base health.
 * Herebane's sword and shield are moved from the Soul Cairn to a more accessible location.
+* Each word of Dragon Aspect increases armor rating by 250.
 * Spriggans and trolls leave each other be.
 * Ulfric's armor has the vanilla appearance if not using the Creation Club patch.
 * The Notched Pickaxe is restored to improve interactions with other mods such as Legacy of the Dragonborn. It is wielded by a unique miner.
