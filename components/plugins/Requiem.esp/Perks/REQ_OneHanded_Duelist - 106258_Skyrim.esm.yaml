@@ -1,11 +1,11 @@
 FormKey: 106258:Skyrim.esm
-EditorID: REQ_OneHanded_StormOfSteel
+EditorID: REQ_OneHanded_Duelist
 Name:
   TargetLanguage: English
-  Value: Storm of Steel
+  Value: Duelist
 Description:
   TargetLanguage: English
-  Value: You've become very skilled in wielding two weapons at once.<br>[20% more dual-wield power attack damage]
+  Value: With both hands claimed for battle, every strike hits with unified purpose.<br>[25% more power attack damage if both hands are equipped with a weapon or fist.]
 Conditions:
 - MutagenObjectType: ConditionFloat
   Data:
@@ -25,40 +25,17 @@ Effects:
   Conditions:
   - Conditions:
     - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThan
-      Data:
-        MutagenObjectType: GetEquippedItemTypeConditionData
-    - MutagenObjectType: ConditionFloat
       CompareOperator: LessThanOrEqualTo
       Data:
         MutagenObjectType: GetEquippedItemTypeConditionData
       ComparisonValue: 4
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: GreaterThan
-      Data:
-        MutagenObjectType: GetEquippedItemTypeConditionData
-        ItemSource: Right
     - MutagenObjectType: ConditionFloat
       CompareOperator: LessThanOrEqualTo
       Data:
         MutagenObjectType: GetEquippedItemTypeConditionData
         ItemSource: Right
       ComparisonValue: 4
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: IsAttackTypeConditionData
-        Keyword: 0914E6:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: IsAttackTypeConditionData
-        Keyword: 0914E5:Skyrim.esm
-      ComparisonValue: 1
-  EntryPoint: ModAttackDamage
+  EntryPoint: ModPowerAttackDamage
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 1.25
