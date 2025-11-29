@@ -61,7 +61,8 @@ Bug Fixes
 * Smelting dwarven armors and weapons requires the same amount of dwarven powder than it yields ingots.
 * The daedric weapons added by Requiem have Atronach Forge recipes.
 * Simulacrum Battleaxe is loud.
-* Poisonous dragon breath has 5 second cooldown like elemental dragon breath. 
+* Poisonous dragon breath has 5 second cooldown like elemental dragon breath.
+* Enchanted iron arrows aren't supersonic.
 * A number of typos in descriptions, names, and editor ids are fixed.
 
 
