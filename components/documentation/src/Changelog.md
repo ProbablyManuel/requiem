@@ -60,6 +60,10 @@ Bug Fixes
 * The total lifetime bounty is correctly adjusted after escaping from Cidhna Mine if other mods change the bounty values.
 * Smelting dwarven armors and weapons requires the same amount of dwarven powder than it yields ingots.
 * The daedric weapons added by Requiem have Atronach Forge recipes.
+* Simulacrum Battleaxe is loud.
+* Poisonous dragon breath has 5 second cooldown like elemental dragon breath.
+* Enchanted iron arrows aren't supersonic.
+* Necromancy doesn't increase the duration of spells that are supposed to be excluded from it.
 * A number of typos in descriptions, names, and editor ids are fixed.
 
 
@@ -67,6 +71,8 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * All staves use the vanilla paralysis enchantment.
+* Arrows and bolts have consistent impact force.
+* Bolts have no muzzle flash data.
 
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
