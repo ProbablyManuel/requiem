@@ -63,6 +63,7 @@ Bug Fixes
 * Simulacrum Battleaxe is loud.
 * Poisonous dragon breath has 5 second cooldown like elemental dragon breath.
 * Enchanted iron arrows aren't supersonic.
+* Necromancy doesn't increase the duration of spells that are supposed to be excluded from it.
 * A number of typos in descriptions, names, and editor ids are fixed.
 
 
