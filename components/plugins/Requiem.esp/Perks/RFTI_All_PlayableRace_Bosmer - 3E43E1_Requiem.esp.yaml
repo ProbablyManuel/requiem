@@ -1,18 +1,5 @@
 FormKey: 3E43E1:Requiem.esp
 EditorID: RFTI_All_PlayableRace_Bosmer
-VirtualMachineAdapter:
-  Scripts:
-  - Name: PRKF_RFTI_All_PlayableRace_B_0B3E43E1
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: blessing
-      Object: AE3B61:Requiem.esp
-  ScriptFragments:
-    FileName: PRKF_RFTI_All_PlayableRace_B_0B3E43E1
-    Fragments:
-    - Unknown2: 1
-      ScriptName: PRKF_RFTI_All_PlayableRace_B_0B3E43E1
-      FragmentName: Fragment_0
 Description:
   TargetLanguage: English
   Value: ''
@@ -137,40 +124,3 @@ Effects:
   PerkConditionTabCount: 3
   Modification: Multiply
   Value: 2
-- MutagenObjectType: PerkEntryPointAddActivateChoice
-  Priority: 200
-  Conditions:
-  - Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetGlobalValueConditionData
-        Global: AE3B6A:Requiem.esp
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasPerkConditionData
-        Perk: 0EE5C3:Skyrim.esm
-  - RunOnTabIndex: 1
-    Conditions:
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasBeenEatenConditionData
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: HasKeywordConditionData
-        Keyword: 013794:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Data:
-        MutagenObjectType: GetDeadConditionData
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      CompareOperator: LessThan
-      Data:
-        MutagenObjectType: GetTimeDeadConditionData
-      ComparisonValue: 72
-  ButtonLabel:
-    TargetLanguage: English
-    Value: Feed
-  EntryPoint: Activate
-  PerkConditionTabCount: 2

@@ -20,6 +20,8 @@ Tweaks
 * Ulfric's armor has the vanilla appearance if not using the Creation Club patch.
 * The Notched Pickaxe is restored to improve interactions with other mods such as Legacy of the Dragonborn. It is wielded by a unique miner.
 * Sun damage to vampire NPCs stops earlier than for the player because unlike the player they cannot appropriately react to the sun.
+* Feeding on corpses via the Ring of Namira and the Green Pact use the same mechanism and rules. Notably, they properly stack now and the Green Pact has a cooldown of 8 hours so that the feeding prompt doesn't appear on every corpse.
+* The Green Pact lasts twice as long.
 * Vampire NPCs don't regenerate health in the sun.
 * Paralyis effects are consistently named "Paralyis".
 * Magnitude of Arcane Power is doubled.

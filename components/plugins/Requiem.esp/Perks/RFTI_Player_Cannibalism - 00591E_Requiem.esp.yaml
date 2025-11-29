@@ -1,0 +1,90 @@
+FormKey: 00591E:Requiem.esp
+EditorID: RFTI_Player_Cannibalism
+VirtualMachineAdapter:
+  Scripts:
+  - Name: PRKF_RFTI_Player_Cannibalism_0C000802
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CorpsesEaten
+      Object: AE3904:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowsGreenpact
+      Object: AE3B6A:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GreenPactBlessing
+      Object: AE3B61:Requiem.esp
+    - MutagenObjectType: ScriptFloatProperty
+      Name: HoursBetweenCorpseEating
+      Data: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NamirasBlessing1
+      Object: 10F813:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NamirasBlessing2
+      Object: 0EE5C5:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NextCorpseEating
+      Object: AE3905:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RingOfNamira
+      Object: 02C37B:Skyrim.esm
+  ScriptFragments:
+    FileName: PRKF_RFTI_Player_Cannibalism_0C000802
+    Fragments:
+    - Unknown2: 1
+      ScriptName: PRKF_RFTI_Player_Cannibalism_0C000802
+      FragmentName: Fragment_0
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointAddActivateChoice
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetEquippedConditionData
+        ItemOrList: 02C37B:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AE3B6A:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionGlobal
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AE3905:Requiem.esp
+      ComparisonValue: 000039:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasBeenEatenConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 013794:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetDeadConditionData
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: LessThan
+      Data:
+        MutagenObjectType: GetTimeDeadConditionData
+      ComparisonValue: 72
+  ButtonLabel:
+    TargetLanguage: English
+    Value: Feed
+  EntryPoint: Activate
+  PerkConditionTabCount: 2
