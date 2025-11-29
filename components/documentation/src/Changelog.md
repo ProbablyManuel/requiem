@@ -41,6 +41,7 @@ Bug Fixes
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
 * Glass Bow of the Stag Prince recognizes slaying Sinding.
+* Gaining Voice of the Sky while it is already active refreshes the duration instead of applying multiple instances.
 * Illusion spells don't grant XP when cast on dead NPCs.
 * Fog of Shadows isn't easier to resist when dual-cast.
 * Fog of Shadows periodically checks if the target can break free from the spell insteading rapidly repeating the check until it succeeds.
