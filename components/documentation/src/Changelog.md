@@ -70,6 +70,8 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * All staves use the vanilla paralysis enchantment.
+* Arrows and bolts have consistent impact force.
+* Bolts have no muzzle flash data.
 
 
 Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
