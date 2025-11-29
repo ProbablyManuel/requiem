@@ -50,6 +50,8 @@ Bug Fixes
 * Soul Tear doesn't damage or soul trap enemies who cannot be reanimated such as dwarven automatons.
 * Soul Tear doesn't reanimate devoured corpses.
 * Soul Tear can soul trap essential actors.
+* Elemental Fury and Frostburst slow targets.
+* Elemental Fury and Shockburst deal triple damage to constructs.
 * Soulreaping weapons cannot be disenchanted.
 * The curse from dremora items cannot be bypassed.
 * The Atronach Forge doesn't yield cursed daedric weapons.

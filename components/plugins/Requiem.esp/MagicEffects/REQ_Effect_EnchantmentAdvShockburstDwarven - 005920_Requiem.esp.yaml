@@ -1,0 +1,37 @@
+FormKey: 005920:Requiem.esp
+EditorID: REQ_Effect_EnchantmentAdvShockburstDwarven
+Name:
+  TargetLanguage: English
+  Value: Shockburst
+MenuDisplayObject: 09FA64:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+ResistValue: ResistShock
+HitShader: 057C67:Skyrim.esm
+EnchantShader: 059EDA:Skyrim.esm
+SpellmakingArea: 25
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 02F773:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Magicka
+ImpactData: 038B05:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Does triple damage to constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+  ComparisonValue: 1
