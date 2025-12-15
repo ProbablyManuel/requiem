@@ -1,0 +1,26 @@
+FormKey: 01EDA1:Dragonborn.esm
+EditorID: REQ_NULL_dlc2BBUnlimitedStaminaEffect
+Name:
+  TargetLanguage: English
+  Value: Regenerate Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0FB98C:Skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+MagicSkill: Restoration
+EnchantShader: 092DEE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: StaminaRate
+  Association: 0FB98C:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina regenerates <mag>% faster.

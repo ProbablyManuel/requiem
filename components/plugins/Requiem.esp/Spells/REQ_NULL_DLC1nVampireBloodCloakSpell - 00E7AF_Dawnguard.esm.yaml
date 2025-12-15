@@ -1,0 +1,29 @@
+FormKey: 00E7AF:Dawnguard.esm
+EditorID: REQ_NULL_DLC1nVampireBloodCloakSpell
+Name:
+  TargetLanguage: English
+  Value: Blood Cloak
+MenuDisplayObject: 10FEF4:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 65
+CastType: FireAndForget
+Effects:
+- BaseEffect: 00E7B0:Dawnguard.esm
+  Data:
+    Magnitude: 15
+    Duration: 30
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsInCombatConditionData
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:Skyrim.esm
