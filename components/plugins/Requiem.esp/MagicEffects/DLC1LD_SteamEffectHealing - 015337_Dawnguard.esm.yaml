@@ -1,0 +1,29 @@
+FormKey: 015337:Dawnguard.esm
+EditorID: DLC1LD_SteamEffectHealing
+Name:
+  TargetLanguage: English
+  Value: Steam Construct Healing
+Keywords:
+- 015334:Dawnguard.esm
+Flags:
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- Painless
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+  ComparisonValue: 1
