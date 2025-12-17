@@ -11,6 +11,9 @@ Event OnEffectStart(Actor akTarget, Actor akCaster)
 	RescaleEnchantment()
 	akTarget.AddSpell(EnchAbility, False)
 	ReapplyNonPersistentChanges.VolendrungScript = Self
+	If akTarget == Game.GetPlayer()
+		RegisterForMenu("StatsMenu")
+	EndIf
 EndEvent
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
@@ -18,6 +21,9 @@ Event OnEffectFinish(Actor akTarget, Actor akCaster)
 	ReapplyNonPersistentChanges.VolendrungScript = None
 EndEvent
 
+Event OnMenuClose(String Menu)
+	ReapplyNonPersistentChanges()
+EndEvent
 
 Function ReapplyNonPersistentChanges()
 	Actor Target = GetTargetActor()

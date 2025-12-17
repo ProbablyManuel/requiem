@@ -6,12 +6,21 @@ Spell Property EnchAbility Auto
 Event OnEffectStart(Actor akTarget, Actor akCaster)
 	RescaleEnchantment()
 	akTarget.AddSpell(EnchAbility, False)
+	If akTarget == Game.GetPlayer()
+		RegisterForMenu("StatsMenu")
+	EndIf
 EndEvent
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
 	akTarget.RemoveSpell(EnchAbility)
 EndEvent
 
+Event OnMenuClose(String Menu)
+	Actor Target = GetTargetActor()
+	Target.RemoveSpell(EnchAbility)
+	RescaleEnchantment()
+	Target.AddSpell(EnchAbility, False)
+EndEvent
 
 Function RescaleEnchantment()
 	Float BaseMagicka = GetTargetActor().GetBaseActorValue("Magicka")

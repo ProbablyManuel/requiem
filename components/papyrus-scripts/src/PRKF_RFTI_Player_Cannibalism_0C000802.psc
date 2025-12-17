@@ -15,6 +15,10 @@ Function Fragment_0(ObjectReference akTargetRef, Actor akActor)
         NamirasBlessing2.Cast(akActor)
     EndIf
     NextCorpseEating.SetValue(GameDaysPassed.GetValue() + HoursBetweenCorpseEating / 24.0)
+    Int Handle = ModEvent.Create("Requiem_CannibalFeed")
+    ModEvent.PushForm(Handle, akTargetRef)
+    ModEvent.PushForm(Handle, akActor)
+    ModEvent.Send(handle)
 ;END CODE
 EndFunction
 ;END FRAGMENT

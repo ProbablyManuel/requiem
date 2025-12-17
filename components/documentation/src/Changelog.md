@@ -46,7 +46,9 @@ Bug Fixes
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
 * Glass Bow of the Stag Prince recognizes slaying Sinding.
 * Gaining Voice of the Sky while it is already active refreshes the duration instead of applying multiple instances.
-* A number of scenarios in which effects dispel other effects are fixed. Most notably Chaurus, 
+* A number of scenarios in which effects dispel other effects are fixed. Most notably, fire spells no longer dispel passive buffs such as Healing Aura.
+* The scaling effects of the Gauldur Amulet, Ring of Namura, and Volendrung update immediately.
+* The scaling effects of Dawnbreaker, Ebony Mail, Glass Bow of the Stag Prince, Mace of Molag Bal, Mehrunes' Razor, and Savior's Hide update periodically in the background.
 * Illusion spells don't grant XP when cast on dead NPCs.
 * Fog of Shadows isn't easier to resist when dual-cast.
 * Fog of Shadows periodically checks if the target can break free from the spell insteading rapidly repeating the check until it succeeds.
