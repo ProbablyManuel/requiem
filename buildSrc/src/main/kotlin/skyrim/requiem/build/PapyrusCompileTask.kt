@@ -23,6 +23,8 @@ open class PapyrusCompileTask : DefaultTask() {
     lateinit var compilerLogs: File
     @Internal
     var failFast: Boolean = false
+    @Internal
+    val rootDir: File = project.rootDir
 
     @TaskAction
     fun compileScripts() {
@@ -35,7 +37,7 @@ open class PapyrusCompileTask : DefaultTask() {
                     val compileResult = compileScriptsFolder(folder, templateArgs)
                     if (!compileResult) {
                         logger.error("failed compilation(s) in folder " +
-                            "${folder.relativeTo(project.rootDir)}, see logs for details")
+                            "${folder.relativeTo(rootDir)}, see logs for details")
                     }
                     state && compileResult
                 } else {

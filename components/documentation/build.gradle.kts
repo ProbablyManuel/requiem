@@ -2,7 +2,7 @@ plugins {
     base
 }
 
-val outputDir by project.extra(file("$buildDir/output"))
+val outputDir by project.extra(layout.buildDirectory.dir("output").get().asFile)
 val releaseDocsDir by project.extra(file("$outputDir/documentation"))
 
 val copyDocsForDistribution by tasks.registering(Copy::class) {

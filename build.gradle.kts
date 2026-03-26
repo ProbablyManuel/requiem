@@ -8,10 +8,6 @@ plugins {
     base
 }
 
-if (JavaVersion.current() != JavaVersion.VERSION_13) {
-    throw ProjectConfigurationException("Java 13 is required to build Requiem", listOf())
-}
-
 try {
     apply("userSetup.gradle")
 } catch (ex: Exception) {
