@@ -5,7 +5,7 @@ plugins {
     base
 }
 
-val outputDir by project.extra(file("$buildDir/output"))
+val outputDir by project.extra(layout.buildDirectory.dir("output").get().asFile)
 
 val generateMcmTranslations by tasks.registering(McmTranslationsTask::class) {
     description = "generate MCM files for all languages supported by Skyrim"

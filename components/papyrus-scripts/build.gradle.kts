@@ -9,7 +9,7 @@ val papyrusCompilerFlags: File by rootProject.extra
 val papyrusFailFast: Boolean by rootProject.extra
 val papyrusIncludeFolders: FileCollection by rootProject.extra
 
-val outputDir by project.extra(file("$buildDir/output"))
+val outputDir by project.extra(layout.buildDirectory.dir("output").get().asFile)
 
 val compilePapyrus by tasks.registering(PapyrusCompileTask::class) {
     description = "Compiles all Papyrus Scripts belonging to Requiem"
@@ -21,7 +21,7 @@ val compilePapyrus by tasks.registering(PapyrusCompileTask::class) {
     includeFolders = papyrusIncludeFolders
     sourceFolder = file("src")
     targetDir = file("$outputDir")
-    compilerLogs = file("$buildDir/logs")
+    compilerLogs = layout.buildDirectory.dir("logs").get().asFile
 }
 
 val copySourceFiles by tasks.registering(Copy::class) {

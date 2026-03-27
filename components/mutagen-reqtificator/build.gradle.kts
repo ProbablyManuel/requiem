@@ -4,14 +4,14 @@ plugins {
     base
 }
 
-buildDir = file("./bin")
+layout.buildDirectory.set(file("./bin"))
 val projectDirs = file(".").listFiles().filter { it.isDirectory && it.listFiles().any { f -> f.extension == "csproj" } }
 val objectDirs = files(projectDirs.map { "$it/obj" })
 val compileDirs = files(projectDirs.map { "$it/bin" })
 
 val csharpWarningsAsErrors: Boolean = rootProject.findProperty("csharpWarningsAsErrors") as Boolean? ?: false
 
-val outputDir by project.extra(file("$buildDir/Reqtificator-SSE"))
+val outputDir by project.extra(layout.buildDirectory.dir("Reqtificator-SSE").get().asFile)
 val generatedResources = file("Reqtificator/GeneratedResources")
 
 val createVersionFile by tasks.registering(VersionFileTask::class) {
@@ -45,6 +45,7 @@ val testCompile by tasks.registering(CompileCSharpTask::class) {
     projectName = "ReqtificatorTest"
 
     dependsOn(restoreTools)
+    dependsOn(createVersionFile)
 }
 
 val copyConfigFiles by tasks.registering(Copy::class) {
