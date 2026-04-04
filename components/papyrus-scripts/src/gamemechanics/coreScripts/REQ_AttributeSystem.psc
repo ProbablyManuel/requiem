@@ -60,11 +60,13 @@ Function initScript(Int currentVersion, Int nevVersion)
 	RegisterForMenu("MagicMenu")
 EndFunction
 
+Event OnLevelUp()
+	; bonuses are based on Base Actor Values, these only change on level up.
+	UpdateAttributeBonuses()
+EndEvent
+
 Event OnMenuClose(String Menu)
 	GoToState("working")
-	If Menu != "MagicMenu"
-		UpdateAttributeBonuses()
-	EndIf
 	UpdateShoutBonuses()
 	GoToState("")
 	If doagain
