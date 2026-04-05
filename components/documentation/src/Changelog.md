@@ -34,6 +34,7 @@ Bug Fixes
 * Miraak always drops his mask upon death.
 * Miraak's Fire Storm deals damage instantly instead of continuously over 26 seconds (not including 4 seconds of tapering). This significantly reduces the damage dealt by Miraak.
 * Miraak's fire wyrm lasts for 60 seconds instead of 10.
+* The wounded dragon is always a common dragon with reduced health instead of having varying strength and one of the highest health pools of any dragon. In return, Irileth no longer deals artifically increased damage against the dragon.
 * Archers don't recoil when their arrow is blocked by a shield.
 * Vampires can travel via carriage or ferry during the day without dying upon arrival.
 * Netch float above the water.
