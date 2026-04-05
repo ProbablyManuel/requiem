@@ -1,0 +1,35 @@
+FormKey: 106E1A:Skyrim.esm
+EditorID: CritterPondFish03Ingredient
+ObjectBounds:
+  First: -3, -10, 0
+  Second: 4, 9, 2
+Name:
+  TargetLanguage: English
+  Value: River Betty
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\DeadPondFish03.nif
+  Data: 0x020000000300000000000000CA4B523464647300D2A84AD14A9E324764647300D2A84AD1CE353C0964647300262C333B
+Value: 15
+Weight: 0.25
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB24:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 5
+- BaseEffect: 073F25:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 300

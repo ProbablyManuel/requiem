@@ -1,0 +1,24 @@
+FormKey: 067970:Skyrim.esm
+EditorID: REQ_Destruction2_ShockRune1
+Name:
+  TargetLanguage: English
+  Value: Lightning Rune (Rank I)
+MenuDisplayObject: 09FA64:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 200
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+ChargeTime: 1
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 20
+HalfCostPerk: 0C44BF:Skyrim.esm
+Effects:
+- BaseEffect: 06796E:Skyrim.esm
+  Data:
+    Magnitude: 60
+    Duration: 1

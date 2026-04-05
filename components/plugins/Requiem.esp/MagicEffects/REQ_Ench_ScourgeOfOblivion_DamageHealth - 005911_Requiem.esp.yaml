@@ -1,0 +1,29 @@
+FormKey: 005911:Requiem.esp
+EditorID: REQ_Ench_ScourgeOfOblivion_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Scourge of Oblivion
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 005913:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- NoArea
+- FXPersist
+HitShader: 074799:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  Association: 005913:Requiem.esp
+HitEffectArt: 0028E7:Dawnguard.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Damages health by <mag> per second.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm

@@ -1,0 +1,57 @@
+FormKey: 03B696:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RiftenEsbernsVault
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: The Ratway Warrens
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogClipDistance: 12000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 05C734:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 022639:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 05C73D:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 094015:Skyrim.esm
+  Base: 013EDC:Skyrim.esm
+  Owner: 094012:Skyrim.esm
+  LocationReference: 022639:Skyrim.esm
+  Placement:
+    Position: 1383.0513, -1785.9991, -576.5552
+    Rotation: 0, 0, 0.98319983
+MajorFlags:
+- 0x40000

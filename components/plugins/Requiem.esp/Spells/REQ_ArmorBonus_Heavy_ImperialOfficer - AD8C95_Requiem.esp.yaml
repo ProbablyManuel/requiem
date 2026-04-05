@@ -1,0 +1,48 @@
+FormKey: AD8C95:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_ImperialOfficer
+Name:
+  TargetLanguage: English
+  Value: Imperial Officer's Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: AD8C7D:Requiem.esp
+  Data:
+    Magnitude: 32
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD39C5:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AD8C7E:Requiem.esp
+  Data:
+    Magnitude: 32
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD39C5:Requiem.esp
+    ComparisonValue: 2
+- BaseEffect: AD8C7F:Requiem.esp
+  Data:
+    Magnitude: 32
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD39C5:Requiem.esp
+    ComparisonValue: 3
+- BaseEffect: AD8C80:Requiem.esp
+  Data:
+    Magnitude: 32
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: AD39C5:Requiem.esp
+    ComparisonValue: 4

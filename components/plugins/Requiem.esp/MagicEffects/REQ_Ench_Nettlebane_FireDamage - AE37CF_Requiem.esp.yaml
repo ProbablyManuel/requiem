@@ -1,0 +1,33 @@
+FormKey: AE37CF:Requiem.esp
+EditorID: REQ_Ench_Nettlebane_FireDamage
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 14
+ResistValue: ResistFire
+HitShader: 01B212:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Burns spriggans for <mag> fire damage per second for <dur> seconds, and staggers them. Nettlebane draws energy from the animus of sacrificed spriggans.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: AD3905:Requiem.esp
+  ComparisonValue: 1

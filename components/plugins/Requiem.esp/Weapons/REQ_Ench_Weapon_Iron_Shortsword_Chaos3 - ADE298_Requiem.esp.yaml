@@ -1,0 +1,56 @@
+FormKey: ADE298:Requiem.esp
+EditorID: REQ_Ench_Weapon_Iron_Shortsword_Chaos3
+ObjectBounds:
+  First: -6, -9, -1
+  Second: 6, 48, 1
+Name:
+  TargetLanguage: English
+  Value: Iron Shortsword of Chaos
+Model:
+  File: PrvtI\iron\Ironshortsword.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 02C46F:Dragonborn.esm
+EnchantmentAmount: 1500
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 01E718:Skyrim.esm
+- 08F958:Skyrim.esm
+- DA0155:Update.esm
+- DA0159:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: ADDEF1:Requiem.esp
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 25
+  Weight: 8
+  Damage: 6
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1.15
+  Reach: 0.9
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.6
+Critical:
+  Damage: 3
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: ADDEF9:Requiem.esp

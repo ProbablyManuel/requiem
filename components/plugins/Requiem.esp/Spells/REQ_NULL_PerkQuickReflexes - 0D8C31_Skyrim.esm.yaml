@@ -1,0 +1,20 @@
+FormKey: 0D8C31:Skyrim.esm
+EditorID: REQ_NULL_PerkQuickReflexes
+Name:
+  TargetLanguage: English
+  Value: Quick Reflexes
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 39
+Flags:
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 0D8C32:Skyrim.esm
+  Data:
+    Magnitude: 0.05
+    Duration: 1

@@ -1,0 +1,39 @@
+FormKey: 037066:Dragonborn.esm
+EditorID: REQ_Cloth_Dunmer_Body_Red
+Name:
+  TargetLanguage: English
+  Value: Dunmer Outfit
+ObjectEffect: 105250:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: DLC02\Clothes\DarkElf\DarkElfOutfitGND.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: DarkElfOutfit_GND:0
+        NewTexture: 03705C:Dragonborn.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Hair
+  - Body
+  - Circlet
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 013746:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0A8657:Skyrim.esm
+- 002EDB:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 037060:Dragonborn.esm
+- 037062:Dragonborn.esm
+- 037064:Dragonborn.esm
+- 038957:Dragonborn.esm
+Value: 25
+Weight: 2

@@ -23,10 +23,12 @@ open class ReleaseArchiveTask : DefaultTask() {
     lateinit var pluginCreationClub: File
     @Input
     lateinit var excludePatterns: List<String>
+    @Internal
+    val rootDir: File = project.rootDir
 
     @TaskAction
     fun buildArchive() {
-        project.delete(archiveFile)
+        archiveFile.delete()
         val patterns = excludePatterns.map { Pattern.compile(it, Pattern.CASE_INSENSITIVE).asPredicate() }
 
         SevenZOutputFile(archiveFile).use { archive ->
@@ -45,7 +47,7 @@ open class ReleaseArchiveTask : DefaultTask() {
                              patterns: List<Predicate<String>>,
                              archive: SevenZOutputFile) {
         source.walkTopDown()
-            .onEnter { logger.quiet("now packing folder '${it.relativeTo(project.rootDir)}'"); true }
+            .onEnter { logger.quiet("now packing folder '${it.relativeTo(rootDir)}'"); true }
             .filter { it.isFile }
             .forEach {
                 copyFile(it, relativeTargetDir.resolve(it.relativeTo(source)), patterns, archive)

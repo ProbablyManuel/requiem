@@ -1,0 +1,33 @@
+FormKey: AD8C77:Requiem.esp
+EditorID: REQ_ArmorBonus_Light_Dragonscale_Effect
+Name:
+  TargetLanguage: English
+  Value: The Voice Within
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: ShoutRecoveryMult
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Part of a dragon's soul lingers in their scales. Thus, the Voice can be used <mag>% more often and hostile shouts deal <mag>% less damage to you (6% per piece). You are immune to Unrelenting Force when wearing at least 3 pieces.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    Keyword: 06BBD6:Skyrim.esm
+  ComparisonValue: 1

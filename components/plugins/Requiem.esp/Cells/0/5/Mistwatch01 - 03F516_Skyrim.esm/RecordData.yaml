@@ -1,0 +1,72 @@
+FormKey: 03F516:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Mistwatch01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Mistwatch North Tower
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00282828'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#FFFFFF'
+    DirectionalXMinus: '#FFFFFF'
+    DirectionalYPlus: '#FFFFFF'
+    DirectionalYMinus: '#FFFFFF'
+    DirectionalZPlus: '#FFFFFF'
+    DirectionalZMinus: '#FFFFFF'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogMax
+LightingTemplate: 0B6BC7:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01927B:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC47:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 043C72:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01927B:Skyrim.esm
+  Placement:
+    Position: 2074.2515, -878.72125, 74.7647
+    Rotation: 0.017453292, 6.161012, 3.7175512
+- MutagenObjectType: PlacedObject
+  FormKey: 0C89BE:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01927B:Skyrim.esm
+  Placement:
+    Position: 1314.3297, 320.4585, 1096.9337
+    Rotation: 0, 0, 3.9581904
+MajorFlags:
+- 0x40000

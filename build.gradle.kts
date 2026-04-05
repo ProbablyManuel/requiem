@@ -8,10 +8,6 @@ plugins {
     base
 }
 
-if (JavaVersion.current() != JavaVersion.VERSION_13) {
-    throw ProjectConfigurationException("Java 13 is required to build Requiem", listOf())
-}
-
 try {
     apply("userSetup.gradle")
 } catch (ex: Exception) {
@@ -23,7 +19,7 @@ try {
 }
 
 allprojects {
-    version = RequiemVersion(5, 4, 5, "Towers and Shadows")
+    version = RequiemVersion(6, 0, 3, "Unbroken Road")
 }
 
 fun runCommand(command: List<String>): String = try {

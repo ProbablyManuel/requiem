@@ -1,0 +1,25 @@
+FormKey: AE3B2B:Requiem.esp
+EditorID: REQ_Trait_Heritage_Breton_Description
+Name:
+  TargetLanguage: English
+  Value: Spell Knights
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Spell cost penalty from worn armor is <35>% lower. Weapon enchantments consume <20>% less charges.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

@@ -1,0 +1,25 @@
+FormKey: 027FB2:Requiem.esp
+EditorID: REQ_Alteration4_TelekineticNova
+Name:
+  TargetLanguage: English
+  Value: Telekinetic Nova
+MenuDisplayObject: 1097CB:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 500
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.2
+CastType: FireAndForget
+HalfCostPerk: 0C44B9:Skyrim.esm
+Effects:
+- BaseEffect: 027F9F:Requiem.esp
+  Data:
+    Magnitude: 75
+    Area: 25
+    Duration: 1

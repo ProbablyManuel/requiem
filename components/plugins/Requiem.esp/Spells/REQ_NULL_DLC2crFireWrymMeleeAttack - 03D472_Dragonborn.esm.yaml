@@ -1,0 +1,19 @@
+FormKey: 03D472:Dragonborn.esm
+EditorID: REQ_NULL_DLC2crFireWrymMeleeAttack
+Name:
+  TargetLanguage: English
+  Value: Fire Wyrm Flames
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- 0x400000
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 050CF6:Skyrim.esm
+  Data:
+    Magnitude: 15

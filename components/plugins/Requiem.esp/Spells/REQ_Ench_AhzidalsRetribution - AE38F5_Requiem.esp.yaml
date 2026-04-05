@@ -1,0 +1,23 @@
+FormKey: AE38F5:Requiem.esp
+EditorID: REQ_Ench_AhzidalsRetribution
+Name:
+  TargetLanguage: English
+  Value: Ahzidal's Retribution
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: TargetActor
+Effects:
+- BaseEffect: AE38F6:Requiem.esp
+  Data:
+    Duration: 3
+- BaseEffect: AE38F7:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 1

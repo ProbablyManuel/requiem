@@ -1,0 +1,25 @@
+FormKey: 0CAB66:Skyrim.esm
+EditorID: REQ_Conjuration3_RaiseDead_LeftHand
+Name:
+  TargetLanguage: English
+  Value: Revenant
+MenuDisplayObject: 1097CC:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 173
+Flags:
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44BC:Skyrim.esm
+Effects:
+- BaseEffect: 016C3B:Skyrim.esm
+  Data:
+    Magnitude: 21
+    Duration: 60
+- BaseEffect: 10EAD9:Skyrim.esm
+  Data:
+    Duration: 60

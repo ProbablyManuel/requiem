@@ -1,0 +1,70 @@
+FormKey: 01462A:Dawnguard.esm
+EditorID: REQ_Trait_VampireLord_Enchantments
+Name:
+  TargetLanguage: English
+  Value: Vampire Lord Enchantments
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 0008C7:Requiem.esp
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 014627:Dawnguard.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 0008BC:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 86313600
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 014627:Dawnguard.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 0008BD:Requiem.esp
+  Data:
+    Magnitude: 100
+    Duration: 86313600
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 014628:Dawnguard.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 000940:Requiem.esp
+  Data:
+    Magnitude: 150
+    Duration: 86313600
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 014628:Dawnguard.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      Object: 000007:Skyrim.esm
+    ComparisonValue: 1

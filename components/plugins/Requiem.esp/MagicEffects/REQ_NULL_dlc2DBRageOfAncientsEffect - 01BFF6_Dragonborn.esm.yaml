@@ -1,0 +1,32 @@
+FormKey: 01BFF6:Dragonborn.esm
+EditorID: REQ_NULL_dlc2DBRageOfAncientsEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dlc2DBBloodOfTheDragonSCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dbDragonWeapons
+      Object: 01BFF1:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Rage Of The Ancients
+MenuDisplayObject: 104F70:Skyrim.esm
+Flags:
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+SpellmakingArea: 100
+Archetype:
+  MutagenObjectType: MagicEffectEnhanceWeaponArchetype
+  ActorValue: WeaponSpeedMult
+  Association: 01BFF0:Dragonborn.esm
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Type: Release
+  Sound: 09CE58:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

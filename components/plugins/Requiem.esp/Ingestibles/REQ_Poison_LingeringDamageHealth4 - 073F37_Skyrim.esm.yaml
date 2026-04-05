@@ -1,0 +1,26 @@
+FormKey: 073F37:Skyrim.esm
+EditorID: REQ_Poison_LingeringDamageHealth4
+ObjectBounds:
+  First: -4, -6, 0
+  Second: 5, 6, 16
+Name:
+  TargetLanguage: English
+  Value: Poison of Lingering Damage Health (Good)
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Potions\PoisonDamageHealthLinger04.nif
+  Data: 0x02000000090000000000000063DF5C0164647300BFFA25DAB9FB95CF64647300BFFA25DAFAE0BBA4646473007F66A5C0CE353C0964647300262C333BFD5A856264647300BFFA25DAF9BE93CC64647300BFFA25DA28058E7E64647300BFFA25DAF63890AC64647300262C333BD1E23CE564647300BFFA25DA
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 55
+Flags:
+- NoAutoCalc
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 300

@@ -4,7 +4,6 @@ using Moq;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Cache;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Exceptions;
 using Reqtificator.Utils;
 using Xunit;
@@ -27,11 +26,11 @@ namespace ReqtificatorTest.Utils
 
             var version1 = new FormList(formlist.FormKey, SkyrimRelease.SkyrimSE)
             {
-                Items = new ExtendedList<IFormLinkGetter<ISkyrimMajorRecordGetter>> { perk1 }
+                Items = [perk1]
             };
             var version2 = new FormList(formlist.FormKey, SkyrimRelease.SkyrimSE)
             {
-                Items = new ExtendedList<IFormLinkGetter<ISkyrimMajorRecordGetter>> { perk2 }
+                Items = [perk2]
             };
 
             IPerkGetter? perkDummy1 = new Perk(perk1.FormKey, SkyrimRelease.SkyrimSE);
@@ -39,13 +38,13 @@ namespace ReqtificatorTest.Utils
 
             linkCache.Setup(c =>
                     c.ResolveAllContexts<FormList, IFormListGetter>(formlist.FormKey, ResolveTarget.Winner))
-                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, FormList, IFormListGetter>>
-                {
+                .Returns(
+                [
                     new ModContext<ISkyrimMod, ISkyrimModGetter, FormList, IFormListGetter>(mod2, version2, null!,
                         null!),
                     new ModContext<ISkyrimMod, ISkyrimModGetter, FormList, IFormListGetter>(mod1, version1, null!,
                         null!),
-                });
+                ]);
 
             linkCache.Setup(c => c.TryResolve<IPerkGetter>(perk1.FormKey, out perkDummy1, ResolveTarget.Winner))
                 .Returns(true);
@@ -74,11 +73,11 @@ namespace ReqtificatorTest.Utils
 
             var version1 = new FormList(formlist.FormKey, SkyrimRelease.SkyrimSE)
             {
-                Items = new ExtendedList<IFormLinkGetter<ISkyrimMajorRecordGetter>> { perk1 }
+                Items = [perk1]
             };
             var version2 = new FormList(formlist.FormKey, SkyrimRelease.SkyrimSE)
             {
-                Items = new ExtendedList<IFormLinkGetter<ISkyrimMajorRecordGetter>> { perk2 }
+                Items = [perk2]
             };
 
             IPerkGetter? perkDummy1 = new Perk(perk1.FormKey, SkyrimRelease.SkyrimSE);
@@ -86,13 +85,13 @@ namespace ReqtificatorTest.Utils
 
             linkCache.Setup(c =>
                     c.ResolveAllContexts<FormList, IFormListGetter>(formlist.FormKey, ResolveTarget.Winner))
-                .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, FormList, IFormListGetter>>
-                {
+                .Returns(
+                [
                     new ModContext<ISkyrimMod, ISkyrimModGetter, FormList, IFormListGetter>(mod2, version2, null!,
                         null!),
                     new ModContext<ISkyrimMod, ISkyrimModGetter, FormList, IFormListGetter>(mod1, version1, null!,
                         null!),
-                });
+                ]);
 
             linkCache.Setup(c => c.TryResolve<IPerkGetter>(perk1.FormKey, out perkDummy1, ResolveTarget.Winner))
                 .Returns(true);

@@ -1,0 +1,22 @@
+FormKey: 000982:ccqdrsse001-survivalmode.esl
+EditorID: REQ_NULL_Survival_abLowerRegenSpell
+Name:
+  TargetLanguage: English
+  Value: Lower Regeneration Rates
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 792
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 000908:ccqdrsse001-survivalmode.esl
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000826:ccqdrsse001-survivalmode.esl
+    ComparisonValue: 1

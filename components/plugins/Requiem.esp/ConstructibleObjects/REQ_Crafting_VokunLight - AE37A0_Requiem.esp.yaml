@@ -1,0 +1,16 @@
+FormKey: AE37A0:Requiem.esp
+EditorID: REQ_Crafting_VokunLight
+Items:
+- Item:
+    Item: 061CC9:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 061CC9:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: AE3927:Requiem.esp
+WorkbenchKeyword: AE378B:Requiem.esp
+CreatedObjectCount: 1

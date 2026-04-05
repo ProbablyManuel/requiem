@@ -1,0 +1,29 @@
+FormKey: 000816:ccbgssse064-ba_elven.esl
+EditorID: REQ_NULL_ccBGSSSE064_RecipeArmorElvenGauntlets
+Items:
+- Item:
+    Item: 05ACE4:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05AD9F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 0DB5D2:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 000819:ccbgssse064-ba_elven.esl
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40F:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 000802:ccbgssse064-ba_elven.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

@@ -1,0 +1,66 @@
+FormKey: 0270AB:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Ustengrav01
+Version2: 1
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ustengrav
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00323232'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#002F5B68'
+  FogNear: 340
+  FogFar: 3000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00493A28'
+    DirectionalXMinus: '#003C3A25'
+    DirectionalYPlus: '#00433C27'
+    DirectionalYMinus: '#00433727'
+    DirectionalZPlus: '#001F1B11'
+    DirectionalZMinus: '#0066583C'
+    Specular: '#002F5B68'
+    Scale: 1
+  FogFarColor: '#002F5B68'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0359CC:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192BF:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC83:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 040BE3:Skyrim.esm
+  Version2: 4
+  Base: 020670:Skyrim.esm
+  Scale: 0.81
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192BF:Skyrim.esm
+  Placement:
+    Position: 4127.946, -1398.2094, 144.79292
+    Rotation: 0.07558774, 0.12464687, 4.0207987
+MajorFlags:
+- 0x40000

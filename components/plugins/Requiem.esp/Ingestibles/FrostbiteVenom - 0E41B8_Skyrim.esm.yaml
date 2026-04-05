@@ -1,0 +1,49 @@
+FormKey: 0E41B8:Skyrim.esm
+EditorID: FrostbiteVenom
+Version2: 10
+ObjectBounds:
+  First: -4, -4, 0
+  Second: 4, 4, 21
+Name:
+  TargetLanguage: English
+  Value: Venom of a Spider
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\FrostbiteVenom01.nif
+  Data: 0x0200000002000000000000003E196E7264647300604DDD5C17CC87B264647300604DDD5C
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 150
+Flags:
+- NoAutoCalc
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 0EA65A:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 073F30:Skyrim.esm
+  Data:
+    Duration: 2
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0131F8:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 04E507:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 053477:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: PoisonResist
+    ComparisonValue: 50

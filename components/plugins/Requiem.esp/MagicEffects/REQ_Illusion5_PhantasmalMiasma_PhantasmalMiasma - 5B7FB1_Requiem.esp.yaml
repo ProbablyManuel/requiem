@@ -1,0 +1,40 @@
+FormKey: 5B7FB1:Requiem.esp
+EditorID: REQ_Illusion5_PhantasmalMiasma_PhantasmalMiasma
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 5BA754:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Phantasmal Miasma
+Flags:
+- Recover
+- NoHitEvent
+- FXPersist
+- PowerAffectsDuration
+MagicSkill: Illusion
+CastingLight: 07479A:Skyrim.esm
+HitShader: 074799:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 5BA755:Requiem.esp
+CastType: FireAndForget
+CastingArt: 074794:Skyrim.esm
+HitEffectArt: 022471:Skyrim.esm
+DualCastScale: 1
+PerkToApply: 3F537A:Requiem.esp
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The caster creates a <mag> foot wide sphere of doom and suffering, causing illusions of painful injuries.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5BCEF3:Requiem.esp

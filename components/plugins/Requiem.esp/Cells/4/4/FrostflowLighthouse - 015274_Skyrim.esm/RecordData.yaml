@@ -1,0 +1,64 @@
+FormKey: 015274:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FrostflowLighthouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Frostflow Lighthouse
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00282417'
+  DirectionalColor: '#001B2836'
+  FogNearColor: '#004A5559'
+  FogNear: 4000
+  FogFar: 12000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#00343A61'
+    DirectionalZMinus: '#00353D60'
+    Specular: '#00698189'
+    Scale: 1
+  FogFarColor: '#00698189'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0195D3:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019186:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC24:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 047261:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019186:Skyrim.esm
+  Placement:
+    Position: 962.29944, -22.68378, -320.91678
+    Rotation: 0, 6.1081862, 5.158195
+MajorFlags:
+- 0x40000

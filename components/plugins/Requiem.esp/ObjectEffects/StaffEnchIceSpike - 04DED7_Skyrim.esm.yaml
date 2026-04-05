@@ -1,0 +1,25 @@
+FormKey: 04DED7:Skyrim.esm
+EditorID: StaffEnchIceSpike
+Version2: 8
+Name:
+  TargetLanguage: English
+  Value: Ice Spike
+EnchantmentCost: 80
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 60
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 01CEA2:Skyrim.esm
+  Data:
+    Magnitude: 20
+- BaseEffect: 0B729F:Skyrim.esm
+  Data:
+    Magnitude: 30
+    Duration: 3
+- BaseEffect: 223794:Requiem.esp
+  Data:
+    Magnitude: 20

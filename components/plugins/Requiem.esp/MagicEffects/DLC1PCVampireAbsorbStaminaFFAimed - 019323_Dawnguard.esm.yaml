@@ -1,0 +1,44 @@
+FormKey: 019323:Dawnguard.esm
+EditorID: DLC1PCVampireAbsorbStaminaFFAimed
+Name:
+  TargetLanguage: English
+  Value: Absorb Stamina
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 101BDE:Skyrim.esm
+- ADDDF7:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Alteration
+ResistValue: ResistMagic
+TaperWeight: 1
+SpellmakingArea: 10
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: Absorb
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp

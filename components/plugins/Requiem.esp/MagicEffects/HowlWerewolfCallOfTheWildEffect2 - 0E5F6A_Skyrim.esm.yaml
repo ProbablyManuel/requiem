@@ -1,0 +1,33 @@
+FormKey: 0E5F6A:Skyrim.esm
+EditorID: HowlWerewolfCallOfTheWildEffect2
+VirtualMachineAdapter:
+  Scripts:
+  - Name: voicepusheffectscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 15
+Name:
+  TargetLanguage: English
+  Value: Call Of The Wild 2
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- PowerAffectsMagnitude
+BaseCost: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+Projectile: 013FFF:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 015C7B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 04046F:Skyrim.esm
+Sounds:
+- Type: Release
+  Sound: 0A0F53:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

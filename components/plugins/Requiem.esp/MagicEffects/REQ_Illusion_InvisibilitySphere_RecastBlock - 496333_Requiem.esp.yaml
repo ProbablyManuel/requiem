@@ -1,0 +1,48 @@
+FormKey: 496333:Requiem.esp
+EditorID: REQ_Illusion_InvisibilitySphere_RecastBlock
+Name:
+  TargetLanguage: English
+  Value: Recast Block
+MenuDisplayObject: 109AC3:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Illusion
+HitShader: 02DF92:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingArea: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 012E84:Skyrim.esm
+CastType: Concentration
+TargetType: TargetActor
+HitEffectArt: 0339C8:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 058E0E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetPlayerTeammateConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 496332:Requiem.esp
+  ComparisonValue: 1

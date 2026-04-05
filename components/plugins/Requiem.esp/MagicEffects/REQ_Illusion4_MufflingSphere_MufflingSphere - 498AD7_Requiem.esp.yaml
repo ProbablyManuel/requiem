@@ -1,0 +1,29 @@
+FormKey: 498AD7:Requiem.esp
+EditorID: REQ_Illusion4_MufflingSphere_MufflingSphere
+Name:
+  TargetLanguage: English
+  Value: Muffling Sphere
+Keywords:
+- 01EA6F:Skyrim.esm
+- 3FA2AF:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingArea: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 498AD9:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+PerkToApply: 3FF1EC:Requiem.esp
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The sphere has a radius of <mag> feet.

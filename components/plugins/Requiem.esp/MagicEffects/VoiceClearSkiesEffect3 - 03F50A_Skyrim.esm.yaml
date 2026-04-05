@@ -1,0 +1,30 @@
+FormKey: 03F50A:Skyrim.esm
+EditorID: VoiceClearSkiesEffect3
+Name:
+  TargetLanguage: English
+  Value: Clear Skies Effect 3
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 04390D:Skyrim.esm
+- 046B99:Skyrim.esm
+Flags:
+- HideInUI
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 0732C7:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+ImageSpaceModifier: 0440D4:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInInteriorConditionData
+    RunOnType: Target

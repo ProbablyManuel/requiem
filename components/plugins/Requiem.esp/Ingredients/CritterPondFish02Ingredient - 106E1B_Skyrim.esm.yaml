@@ -1,0 +1,36 @@
+FormKey: 106E1B:Skyrim.esm
+EditorID: CritterPondFish02Ingredient
+ObjectBounds:
+  First: -3, -10, 0
+  Second: 4, 9, 2
+Name:
+  TargetLanguage: English
+  Value: Abecean Longfin
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\DeadPondFish02.nif
+  Data: 0x020000000300000000000000CA4B523464647300D2A84AD14A9E324764647300D2A84AD1CE353C0964647300262C333B
+Value: 15
+Weight: 0.5
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB22:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 073F2E:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 090042:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EB28:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

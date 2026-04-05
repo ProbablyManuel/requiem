@@ -1,0 +1,65 @@
+FormKey: 0AA20C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: LiarsRetreat01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Liar's Retreat
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#002C2C2C'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00234856'
+  FogFar: 12000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0033291D'
+    DirectionalXMinus: '#002A291A'
+    DirectionalYPlus: '#002F2A1C'
+    DirectionalYMinus: '#002F271C'
+    DirectionalZPlus: '#0016130C'
+    DirectionalZMinus: '#005C5138'
+    Specular: '#001F484B'
+    Scale: 1
+  FogFarColor: '#001F484B'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0B9EF5:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019264:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC41:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0AA3EC:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 019264:Skyrim.esm
+  Placement:
+    Position: -994.8334, -1658.0803, -374.57336
+    Rotation: 6.1837854, 6.1392164, 1.7233311
+MajorFlags:
+- 0x40000

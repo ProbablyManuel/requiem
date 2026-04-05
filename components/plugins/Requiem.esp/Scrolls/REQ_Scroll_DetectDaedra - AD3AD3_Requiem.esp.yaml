@@ -1,0 +1,58 @@
+FormKey: AD3AD3:Requiem.esp
+EditorID: REQ_Scroll_DetectDaedra
+ObjectBounds:
+  First: -13, -6, -3
+  Second: 13, 6, 3
+Name:
+  TargetLanguage: English
+  Value: Scroll of Detect Daedra
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster detects all nearby Daedra and can sense them even through walls.
+Model:
+  File: Clutter\Common\Scroll06.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 500
+Weight: 0.5
+Flags:
+- AreaEffectIgnoresLOS
+CastType: FireAndForget
+Effects:
+- BaseEffect: AD3AD7:Requiem.esp
+  Data:
+    Area: 400
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+    ComparisonValue: 1
+- BaseEffect: AD3AD6:Requiem.esp
+  Data:
+    Area: 200
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+    ComparisonValue: 1
+- BaseEffect: AD3AD5:Requiem.esp
+  Data:
+    Area: 400
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData
+- BaseEffect: AD3AD4:Requiem.esp
+  Data:
+    Area: 200
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsHostileToActorConditionData

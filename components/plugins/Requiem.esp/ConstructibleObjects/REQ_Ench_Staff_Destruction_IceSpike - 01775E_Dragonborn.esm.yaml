@@ -1,0 +1,20 @@
+FormKey: 01775E:Dragonborn.esm
+EditorID: REQ_Ench_Staff_Destruction_IceSpike
+Items:
+- Item:
+    Item: 0BE11F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 017749:Dragonborn.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Spell: 02B96C:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 04DED8:Skyrim.esm
+WorkbenchKeyword: 017738:Dragonborn.esm
+CreatedObjectCount: 1

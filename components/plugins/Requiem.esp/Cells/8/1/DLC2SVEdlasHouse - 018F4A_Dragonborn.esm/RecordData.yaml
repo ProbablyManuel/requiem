@@ -1,0 +1,98 @@
+FormKey: 018F4A:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2SVEdlasHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Edla's House
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00302D25'
+  DirectionalColor: '#00444E51'
+  FogNearColor: '#009E8A76'
+  FogFar: 4500
+  DirectionalRotationZ: 90
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#00392622'
+    DirectionalXMinus: '#002E261F'
+    DirectionalYPlus: '#00342721'
+    DirectionalYMinus: '#00342421'
+    DirectionalZPlus: '#0018120E'
+    DirectionalZMinus: '#004F3933'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00444757'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 035560:Dragonborn.esm
+WaterHeight: -2.1474836E+09
+Location: 01D938:Dragonborn.esm
+Owner: 018FBC:Dragonborn.esm
+LockList: 018FC4:Dragonborn.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 033917:Dragonborn.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 01F88E:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 01F88D:Dragonborn.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 01F88C:Dragonborn.esm
+  LocationReference: 01D938:Dragonborn.esm
+  Placement:
+    Position: -28.322311, 677.68225, 290.08713
+    Rotation: 0, 0, 4.6831965
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 02B2BC:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 097F68:Skyrim.esm
+  LocationReference: 01D938:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -27.78154, 637.79333, -30000
+    Rotation: 0, 0, 1.37881
+- MutagenObjectType: PlacedObject
+  FormKey: 02B2BD:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 097F68:Skyrim.esm
+  LocationReference: 01D938:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -34.37352, 661.27625, -30000
+    Rotation: 0.30000114, 0, 1.1693705
+MajorFlags:
+- 0x40000

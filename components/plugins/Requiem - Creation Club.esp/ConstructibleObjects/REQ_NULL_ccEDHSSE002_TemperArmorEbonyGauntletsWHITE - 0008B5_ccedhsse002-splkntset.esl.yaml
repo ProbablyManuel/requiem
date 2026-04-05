@@ -1,0 +1,22 @@
+FormKey: 0008B5:ccedhsse002-splkntset.esl
+EditorID: REQ_NULL_ccEDHSSE002_TemperArmorEbonyGauntletsWHITE
+Items:
+- Item:
+    Item: 05AD9D:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 00089E:ccedhsse002-splkntset.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

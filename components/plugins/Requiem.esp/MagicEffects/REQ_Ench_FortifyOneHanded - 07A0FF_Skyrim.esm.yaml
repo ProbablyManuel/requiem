@@ -1,0 +1,23 @@
+FormKey: 07A0FF:Skyrim.esm
+EditorID: REQ_Ench_FortifyOneHanded
+Name:
+  TargetLanguage: English
+  Value: Fortify One-Handed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F6B:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 22
+EnchantShader: 092DEC:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: OneHandedPowerModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: One-handed weapons deal <mag>% more damage.

@@ -1,0 +1,37 @@
+FormKey: 03AD5F:Skyrim.esm
+EditorID: FrostSalts
+Version2: 3
+ObjectBounds:
+  First: -5, -5, 0
+  Second: 5, 5, 6
+Name:
+  TargetLanguage: English
+  Value: Frost Salts
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\FrostSalts.nif
+  Data: 0x0200000002000000000000005B0C2EB864647300604DDD5C5E7DD0C764647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 400
+Weight: 0.25
+IngredientValue: 217
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2D:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 300
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 3.5
+    Duration: 45
+- BaseEffect: 03EB25:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 180

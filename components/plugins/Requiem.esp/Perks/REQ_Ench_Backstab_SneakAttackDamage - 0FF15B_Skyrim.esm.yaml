@@ -1,0 +1,26 @@
+FormKey: 0FF15B:Skyrim.esm
+EditorID: REQ_Ench_Backstab_SneakAttackDamage
+Name:
+  TargetLanguage: English
+  Value: Backstab
+Description:
+  TargetLanguage: English
+  Value: Double sneak attack damage with one-handed weapons.
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: OneHanded
+      ComparisonValue: 1
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 2

@@ -1,0 +1,34 @@
+FormKey: 023F1B:Skyrim.esm
+EditorID: WIChangeLocationThiefNode
+Parent: 01320E:Skyrim.esm
+PreviousSibling: 0C791B:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 023FB4:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000038:Skyrim.esm
+  ComparisonValue: 22
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000038:Skyrim.esm
+  ComparisonValue: 4
+Flags:
+- Random
+QuestFlags:
+- DoAllBeforeRepeating
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 023EEB:Skyrim.esm

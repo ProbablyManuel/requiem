@@ -28,7 +28,7 @@ namespace Reqtificator.Transformers.Actors
 
             return input.Modify(record =>
             {
-                record.Perks ??= new ExtendedList<PerkPlacement>();
+                record.Perks ??= [];
                 var presentPerks = record.Perks.Select(p => p.Perk.AsGetter()).ToImmutableHashSet();
                 _globalPerks.Where(p => presentPerks.ContainsNot(p))
                     .ForEach(p => record.Perks.Add(new PerkPlacement { Perk = p.AsSetter(), Rank = 1 }));

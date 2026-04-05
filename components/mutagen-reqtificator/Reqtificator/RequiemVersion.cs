@@ -1,6 +1,6 @@
 ﻿namespace Reqtificator
 {
-    public record RequiemVersion(int Major, int Minor, int Patch, string Title)
+    internal record RequiemVersion(int Major, int Minor, int Patch, string Title)
     {
         public RequiemVersion(int version) : this(version / 10000, version % 10000 / 100, version % 100, "")
         {

@@ -31,7 +31,7 @@ namespace Reqtificator.Transformers.Actors
             {
                 return input.Modify(record =>
                 {
-                    record.ActorEffect ??= new ExtendedList<IFormLinkGetter<ISpellRecordGetter>>();
+                    record.ActorEffect ??= [];
                     assignments.Where(a => record.ActorEffect.ContainsNot(a.ToAssign))
                         .ForEach(a =>
                         {

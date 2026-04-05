@@ -1,0 +1,38 @@
+FormKey: 6C3574:Requiem.esp
+EditorID: REQ_Effect_Mechanics_Dodge
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ImpactBlocker
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: duration
+      Data: 0.2
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Dodge Speed Bonus'
+Flags:
+- Recover
+- HideInUI
+SecondActorValueWeight: 0.0001
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: SpeedMult
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: CarryWeight
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 'Dodge speed bonus + minimal carry weight bonus to enforce movement speed update '
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    Keyword: 06BBD2:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 079376:Skyrim.esm
+  ComparisonValue: 1

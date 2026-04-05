@@ -1,0 +1,22 @@
+FormKey: 0D799C:Skyrim.esm
+EditorID: REQ_Conjuration_MysticBanishment
+Name:
+  TargetLanguage: English
+  Value: Mystic Banishment
+Description:
+  TargetLanguage: English
+  Value: Your bound weapons are now able to send summoned creatures back into the waters of Oblivion <br> and to turn the undead.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0D799E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True

@@ -1,0 +1,25 @@
+FormKey: AD389C:Requiem.esp
+EditorID: REQ_Message_Lockpick_followerHasOptimalSkill_Confirmation
+Description:
+  TargetLanguage: English
+  Value: >-
+    This lock seems very complex to you and you're certain you would just be wasting your time and lockpicks trying to open it. Your follower <Alias.ShortName=LockpickMinion> however considers this lock trivial and claims <Alias.Pronoun=LockpickMinion> could pick it with %.0f lockpicks.
+
+
+    A lockpicking expertise of at least %.0f is needed to handle locks of this complexity.
+
+    Your current lockpicking expertise is %.0f and <Alias.ShortName=LockpickMinion> has an expertise of %.0f.
+Name:
+  TargetLanguage: English
+  Value: Mind-Blowing lock complexity! (at least for you)
+INAM: 0x00000000
+Quest: 82F3AF:Requiem.esp
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Do nothing
+- Text:
+    TargetLanguage: English
+    Value: Let follower pick the lock

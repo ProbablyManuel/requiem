@@ -1,0 +1,31 @@
+FormKey: 01BFF3:Dragonborn.esm
+EditorID: REQ_NULL_dlc2DBDragonSwordEffect
+Name:
+  TargetLanguage: English
+  Value: Dragon Sword Effect
+MenuDisplayObject: 09FA64:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- HideInUI
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+EnchantShader: 04E810:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 'The swords true power can only be unlocked by the Thuum of the Dohvakiin. Rage Of Ancients Active: <Global=dlc2DBDragonWeapons>'
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData

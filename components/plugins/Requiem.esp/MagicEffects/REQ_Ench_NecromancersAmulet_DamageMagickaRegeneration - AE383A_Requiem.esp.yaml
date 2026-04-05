@@ -1,0 +1,27 @@
+FormKey: AE383A:Requiem.esp
+EditorID: REQ_Ench_NecromancersAmulet_DamageMagickaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka Regeneration
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+HitShader: 10ECCF:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MagickaRateMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka regenerates <mag>% slower. At least 130 base magicka is required to curb the dark powers of the Necromancer's Amulet.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Magicka
+  ComparisonValue: 130

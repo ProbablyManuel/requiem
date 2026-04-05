@@ -1,0 +1,74 @@
+FormKey: 013909:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: KarthwastenSanuarachMine
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Sanuarach Mine
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 9000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 0.9
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - LightFadeDistances
+LightingTemplate: 091937:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01F7BF:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 1E8850:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: ADDEA1:Requiem.esp
+  Placement:
+    Position: -416.93738, 2679.1428, -478.11874
+    Rotation: 8.552113E-05, 6.283168, 4.856026
+- MutagenObjectType: PlacedObject
+  FormKey: 0EE75F:Skyrim.esm
+  Base: 064B2E:Skyrim.esm
+  LocationReference: 01F7BF:Skyrim.esm
+  Placement:
+    Position: -446.2156, 2670.2026, -476.75232
+    Rotation: 0.88859195, 0.5675562, 0.16749482
+- MutagenObjectType: PlacedObject
+  FormKey: 0EE760:Skyrim.esm
+  Version2: 1
+  Base: 064B35:Skyrim.esm
+  Scale: 0.84
+  LocationReference: 01F7BF:Skyrim.esm
+  Placement:
+    Position: -447.08572, 2617.884, -461.51535
+    Rotation: -3.1378725, 0.025459576, 1.1766478
+MajorFlags:
+- 0x40000

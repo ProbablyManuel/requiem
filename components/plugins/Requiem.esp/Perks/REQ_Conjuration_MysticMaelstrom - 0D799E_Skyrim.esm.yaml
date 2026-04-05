@@ -1,0 +1,22 @@
+FormKey: 0D799E:Skyrim.esm
+EditorID: REQ_Conjuration_MysticMaelstrom
+Name:
+  TargetLanguage: English
+  Value: Mystic Maelstrom
+Description:
+  TargetLanguage: English
+  Value: The weapon-shaped Daedra you conjure now directly cut into their victims' souls, <br> thereby making them vulnerable to soul gems.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0640B3:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True

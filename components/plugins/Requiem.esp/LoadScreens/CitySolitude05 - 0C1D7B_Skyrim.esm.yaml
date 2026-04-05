@@ -1,0 +1,24 @@
+FormKey: 0C1D7B:Skyrim.esm
+EditorID: CitySolitude05
+Description:
+  TargetLanguage: English
+  Value: Solitude has traditionally strong ties to the Empire, and many of the city's Jarls were connected to the Septim bloodline.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 5
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCurrentLocConditionData
+    Location: 018A5A:Skyrim.esm
+  ComparisonValue: 1
+LoadingScreenNif: 10CC32:Skyrim.esm
+InitialScale: 1.6
+InitialRotation: 0, -20, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: -10, 0, -10
+CameraPath: Cameras\LSCameraPanZoomInSmall.nif

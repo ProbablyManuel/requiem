@@ -1,0 +1,19 @@
+FormKey: AE3AEE:Requiem.esp
+EditorID: REQ_Trait_Healing_TrollFrost
+Name:
+  TargetLanguage: English
+  Value: 'Natural Healing: Frost Troll '
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 80
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 01CEAD:Skyrim.esm

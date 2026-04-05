@@ -1,0 +1,44 @@
+FormKey: 0037F8:Dawnguard.esm
+EditorID: DLC1TrapSpotLightConcAimed
+Name:
+  TargetLanguage: English
+  Value: Trap Sunlight
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 2FFEAD:Requiem.esp
+- ADDDF6:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 3
+CastingLight: 088246:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 04C6D8:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 0.1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 0037FC:Dawnguard.esm
+CastType: Concentration
+TargetType: Aimed
+SkillUsageMultiplier: 1.4
+DualCastScale: 3
+Sounds:
+- Type: Release
+  Sound: 057C61:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 057C65:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0A82BB:Skyrim.esm
+  ComparisonValue: 1

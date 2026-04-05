@@ -1,0 +1,20 @@
+FormKey: AE38E6:Requiem.esp
+EditorID: REQ_Ench_AhzidalsRingOfNecromancy
+Name:
+  TargetLanguage: English
+  Value: Ahzidal's Ring of Necromancy Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE38F4:Requiem.esp
+  Data: {}
+- BaseEffect: AE390C:Requiem.esp
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0270E7:Dragonborn.esm
+    ComparisonValue: 4

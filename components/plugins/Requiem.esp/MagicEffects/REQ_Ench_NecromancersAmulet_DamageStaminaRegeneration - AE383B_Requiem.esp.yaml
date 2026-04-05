@@ -1,0 +1,27 @@
+FormKey: AE383B:Requiem.esp
+EditorID: REQ_Ench_NecromancersAmulet_DamageStaminaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Damage Stamina Regeneration
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+HitShader: 10ECCE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: StaminaRateMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina regenerates <mag>% slower. At least 130 base stamina is required to curb the dark powers of the Necromancer's Amulet.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Stamina
+  ComparisonValue: 130

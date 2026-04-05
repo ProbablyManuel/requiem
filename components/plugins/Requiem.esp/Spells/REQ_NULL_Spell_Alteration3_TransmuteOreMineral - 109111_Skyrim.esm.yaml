@@ -1,0 +1,22 @@
+FormKey: 109111:Skyrim.esm
+EditorID: REQ_NULL_Spell_Alteration3_TransmuteOreMineral
+Name:
+  TargetLanguage: English
+  Value: 'Transmute: Minerals'
+MenuDisplayObject: 109AC2:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 100
+Flags:
+- ManualCostCalc
+- NoDualCastModification
+ChargeTime: 0.5
+CastType: FireAndForget
+HalfCostPerk: 0C44B8:Skyrim.esm
+Effects:
+- BaseEffect: 109110:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 1

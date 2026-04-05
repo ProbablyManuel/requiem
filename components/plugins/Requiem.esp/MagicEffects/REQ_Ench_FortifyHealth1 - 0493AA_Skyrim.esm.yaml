@@ -1,0 +1,23 @@
+FormKey: 0493AA:Skyrim.esm
+EditorID: REQ_Ench_FortifyHealth1
+Name:
+  TargetLanguage: English
+  Value: Fortify Health (Rank I)
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F62:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 7.5
+EnchantShader: 092DEC:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health increases by <mag>.

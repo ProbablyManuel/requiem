@@ -1,0 +1,26 @@
+FormKey: 053128:Skyrim.esm
+EditorID: REQ_Alteration_MagicResistance1
+Name:
+  TargetLanguage: English
+  Value: Magic Resistance
+Description:
+  TargetLanguage: English
+  Value: You're able to block a part of a dangerous spell's effect.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0C44B7:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Alteration
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+NextPerk: 053129:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 053125:Skyrim.esm

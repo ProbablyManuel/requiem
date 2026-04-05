@@ -1,0 +1,17 @@
+FormKey: 4F457C:Requiem.esp
+EditorID: REQ_Hazard_MindFog
+ObjectBounds:
+  First: -155, -146, -170
+  Second: 137, 146, 30
+Name:
+  TargetLanguage: English
+  Value: Mind Fog
+Model:
+  File: Effects\Ambient\FXMistLowSmokey01.nif
+  Data: 0x020000000000000000000000
+Radius: 20
+TargetInterval: 2
+Flags:
+- InheritDurationFromSpawnSpell
+- DropToGround
+Spell: 52D477:Requiem.esp

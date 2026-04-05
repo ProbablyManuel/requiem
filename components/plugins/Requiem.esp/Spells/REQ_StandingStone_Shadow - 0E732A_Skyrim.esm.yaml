@@ -1,0 +1,22 @@
+FormKey: 0E732A:Skyrim.esm
+EditorID: REQ_StandingStone_Shadow
+Name:
+  TargetLanguage: English
+  Value: Stone of the Shadow
+MenuDisplayObject: 109AC3:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Those under the Sign of the Shadow are able of becoming invisible and inaudible once a day.
+Flags:
+- ManualCostCalc
+Type: Power
+CastType: FireAndForget
+Effects:
+- BaseEffect: 0E732B:Skyrim.esm
+  Data:
+    Duration: 300
+- BaseEffect: 08F3EA:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 300

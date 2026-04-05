@@ -1,0 +1,32 @@
+FormKey: 01DF9D:Dragonborn.esm
+EditorID: REQ_AllMakerStone_Sun_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_AllMakerStoneRemoveGift
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Apocrypha
+      Object: 016E2B:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Solstheim
+      Object: 016E2A:Dragonborn.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StoneSpell
+      Object: 01DF9C:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Gift of the Sun
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+PerkToApply: AE3974:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Sun spells do <10>% more damage. The Gift of the Sun vanishes when leaving Solstheim and has to be reacquired at the sacred stone.

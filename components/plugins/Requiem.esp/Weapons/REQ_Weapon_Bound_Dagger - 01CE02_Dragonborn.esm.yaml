@@ -1,0 +1,53 @@
+FormKey: 01CE02:Dragonborn.esm
+MajorRecordFlagsRaw: 4
+EditorID: REQ_Weapon_Bound_Dagger
+SkyrimMajorRecordFlags:
+- NotPlayable
+Name:
+  TargetLanguage: English
+  Value: Bound Dagger
+Model:
+  File: USSEP\Weapons\BoundWeapons\BoundDagger.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 03D37C:Dragonborn.esm
+EquipmentType: 013F44:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E713:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 089114:unofficial skyrim special edition patch.esp
+AttackFailSound: 03C730:Skyrim.esm
+IdleSound: 0960E6:Skyrim.esm
+BasicStats:
+  Damage: 6
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  Flags:
+  - CantDrop
+  - NonPlayable
+  - BoundWeapon
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 3
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+MajorFlags:
+- NonPlayable

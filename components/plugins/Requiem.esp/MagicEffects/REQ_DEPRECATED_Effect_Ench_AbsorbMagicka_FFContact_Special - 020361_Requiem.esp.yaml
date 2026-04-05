@@ -1,0 +1,32 @@
+FormKey: 020361:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_Ench_AbsorbMagicka_FFContact_Special
+Name:
+  TargetLanguage: English
+  Value: Drain Magicka
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 21
+ResistValue: ResistMagic
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+  Type: Absorb
+CastType: FireAndForget
+TargetType: Touch
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Absorbs <mag> magicka, but doesn't affect constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm

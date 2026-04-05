@@ -1,0 +1,63 @@
+FormKey: AD3746:Requiem.esp
+EditorID: REQ_Weapon_Dawnguard_Crossbow
+ObjectBounds:
+  First: -27, -34, -5
+  Second: 27, 21, 6
+Name:
+  TargetLanguage: English
+  Value: Dawnguard Crossbow
+Model:
+  File: DLC01\Weapons\Dwarven Crossbow\DwarvenCrossbow.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Crossbow:0
+    NewTexture: AD3745:Requiem.esp
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E715:Skyrim.esm
+- 01E719:Skyrim.esm
+- 08F958:Skyrim.esm
+- 10AA1A:Skyrim.esm
+- 015992:Dawnguard.esm
+- 9F7179:Requiem.esp
+- AD3B2D:Requiem.esp
+- AD3B2F:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 00A311:Dawnguard.esm
+FirstPersonModel: AD3742:Requiem.esp
+AttackSound: 008E34:Dawnguard.esm
+AttackSound2D: 008E35:Dawnguard.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 017EC9:Dawnguard.esm
+UnequipSound: 017ECA:Dawnguard.esm
+BasicStats:
+  Value: 300
+  Weight: 12
+  Damage: 60
+Data:
+  AnimationType: Crossbow
+  Unused: 0x000000
+  Speed: 0.5333
+  Reach: 1
+  Flags:
+  - NPCsUseAmmo
+  BaseVATStoHitChance: 5
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+  Stagger: 0.75
+Critical:
+  Damage: 9
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

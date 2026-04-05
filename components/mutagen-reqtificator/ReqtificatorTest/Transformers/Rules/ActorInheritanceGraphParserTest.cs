@@ -16,7 +16,7 @@ namespace ReqtificatorTest.Transformers.Rules
 {
     public class ActorInheritanceGraphParserTest
     {
-        private class Fixture
+        private sealed class Fixture
         {
             internal Npc Template1 { get; }
             internal Npc Template2 { get; }
@@ -41,8 +41,8 @@ namespace ReqtificatorTest.Transformers.Rules
                 LeveledCharWithMultipleActors =
                     new LeveledNpc(FormKey.Factory("ABC444:Templates.esm"), SkyrimRelease.SkyrimSE)
                     {
-                        Entries = new ExtendedList<LeveledNpcEntry>
-                        {
+                        Entries =
+                        [
                             new()
                             {
                                 Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template2.ToLink() }
@@ -51,7 +51,7 @@ namespace ReqtificatorTest.Transformers.Rules
                             {
                                 Data = new LeveledNpcEntryData { Count = 1, Level = 1, Reference = Template3.ToLink() }
                             }
-                        }
+                        ]
                     };
             }
 

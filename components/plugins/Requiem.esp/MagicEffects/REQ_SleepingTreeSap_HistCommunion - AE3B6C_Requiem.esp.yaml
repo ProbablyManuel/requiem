@@ -1,0 +1,34 @@
+FormKey: AE3B6C:Requiem.esp
+EditorID: REQ_SleepingTreeSap_HistCommunion
+Name:
+  TargetLanguage: English
+  Value: Hist Communion
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B36:Requiem.esp
+Flags:
+- DispelWithKeywords
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The substance emits a mesmerizing purple glow.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013740:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 08883A:Skyrim.esm
+  ComparisonValue: 1

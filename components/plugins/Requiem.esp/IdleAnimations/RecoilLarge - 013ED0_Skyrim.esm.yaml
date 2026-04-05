@@ -1,0 +1,25 @@
+FormKey: 013ED0:Skyrim.esm
+EditorID: RecoilLarge
+FormVersion: 16
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsBleedingOutConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    ItemSource: Right
+  ComparisonValue: 7
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    ItemSource: Right
+  ComparisonValue: 12
+Filename: Actors\Character\Behaviors\0_Master.hkx
+AnimationEvent: recoilLargeStart
+RelatedIdles:
+- 013ECF:Skyrim.esm
+- Null
+AnimationGroupSection: 18

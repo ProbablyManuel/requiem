@@ -1,0 +1,23 @@
+FormKey: 0BEE97:Skyrim.esm
+EditorID: REQ_Enchanting_EnchantersInsight1
+Name:
+  TargetLanguage: English
+  Value: Enchanter's Insight
+Description:
+  TargetLanguage: English
+  Value: You've acquired fundamental insights into how matter and magic intertwine. Thus, you can now infuse<br> items with arcane energy at an enchanter and use soul gems to recharge enchanted items of all kinds.
+NumRanks: 1
+Playable: True
+NextPerk: 0C367C:Skyrim.esm
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0C367C:Skyrim.esm
+  EntryPoint: ModEnchantmentPower
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.15

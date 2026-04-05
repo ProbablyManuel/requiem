@@ -1,0 +1,42 @@
+FormKey: 03AFA7:Skyrim.esm
+EditorID: REQ_TwoHanded_DevastatingCleave
+Name:
+  TargetLanguage: English
+  Value: Devastating Cleave
+Description:
+  TargetLanguage: English
+  Value: Putting your whole weight behind your swing, your sidewards power attacks are now powerful enough to knock down foes.<br>[Sideways power attacks can knock down]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 03AF9E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: TwoHanded
+  ComparisonValue: 100
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 50
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsAttackTypeConditionData
+        Keyword: 0914E7:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: ApplyCombatHitSpell
+  PerkConditionTabCount: 3
+  Spell: 75CD1F:Requiem.esp

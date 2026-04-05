@@ -1,0 +1,40 @@
+FormKey: 106255:Skyrim.esm
+EditorID: PerkWarmasterEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dunKatariahScimitarScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 5
+Name:
+  TargetLanguage: English
+  Value: Knockdown Effect
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 2
+MagicSkill: Destruction
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+Projectile: 014000:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 015C7B:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 50

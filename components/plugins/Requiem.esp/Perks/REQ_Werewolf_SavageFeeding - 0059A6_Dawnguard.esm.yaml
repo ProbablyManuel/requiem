@@ -1,0 +1,21 @@
+FormKey: 0059A6:Dawnguard.esm
+EditorID: REQ_Werewolf_SavageFeeding
+Name:
+  TargetLanguage: English
+  Value: Savage Feeding
+Description:
+  TargetLanguage: English
+  Value: Your stomach has become otherwordly sturdy and now <br> allows you to even feast upon the flesh of more savage things.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0059A7:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 70
+  Unknown: 0x000000

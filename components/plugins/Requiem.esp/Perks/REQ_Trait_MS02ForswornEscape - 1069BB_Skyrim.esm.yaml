@@ -1,0 +1,47 @@
+FormKey: 1069BB:Skyrim.esm
+EditorID: REQ_Trait_MS02ForswornEscape
+Description:
+  TargetLanguage: English
+  Value: >-
+    - Increase damage dealt by 1000% while escaping Cidhna Mine
+
+    - Reduce incoming damage by 90% while escaping Cidhna Mine
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 040A5E:Skyrim.esm
+        Stage: 70
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInCurrentLocConditionData
+        Location: 01916F:Skyrim.esm
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 10
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetStageDoneConditionData
+        Quest: 040A5E:Skyrim.esm
+        Stage: 70
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInCurrentLocConditionData
+        Location: 01916F:Skyrim.esm
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.1

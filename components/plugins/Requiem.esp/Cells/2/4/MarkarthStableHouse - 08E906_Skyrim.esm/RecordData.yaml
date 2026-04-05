@@ -1,0 +1,66 @@
+FormKey: 08E906:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: MarkarthStableHouse
+Version2: 11
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Markarth Stables
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00172116'
+  FogFar: 4500
+  DirectionalFade: 1
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00172116'
+    Scale: 1
+  FogFarColor: '#00172116'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - LightFadeDistances
+LightingTemplate: 0D7B14:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0C6C2A:Skyrim.esm
+Owner: 04C446:Skyrim.esm
+LockList: 04C447:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 0B9DCB:Skyrim.esm
+ImageSpace: 09F282:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA72E:Skyrim.esm
+  Version2: 1
+  Base: 0EA722:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0EA723:Skyrim.esm
+  LocationReference: 0C6C2A:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0C7321:Skyrim.esm
+  Placement:
+    Position: 359.09866, -670.44415, 219.1257
+MajorFlags:
+- 0x40000

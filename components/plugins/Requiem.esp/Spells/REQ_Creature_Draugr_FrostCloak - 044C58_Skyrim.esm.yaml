@@ -1,0 +1,21 @@
+FormKey: 044C58:Skyrim.esm
+EditorID: REQ_Creature_Draugr_FrostCloak
+Name:
+  TargetLanguage: English
+  Value: Draugr Frost Cloak
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 110
+CastType: FireAndForget
+Effects:
+- BaseEffect: 044C57:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 55
+- BaseEffect: 045C58:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 60

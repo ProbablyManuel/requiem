@@ -1,0 +1,25 @@
+FormKey: 0FFA05:Skyrim.esm
+EditorID: REQ_Alch_RestoreStaminaComplete
+Name:
+  TargetLanguage: English
+  Value: Restore Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 042504:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.006
+HitShader: 0ABF07:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+CastType: FireAndForget
+HitEffectArt: 04E221:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: This powerful elixir is capable of restoring the imbiber's stamina completely within the blink of an eye.

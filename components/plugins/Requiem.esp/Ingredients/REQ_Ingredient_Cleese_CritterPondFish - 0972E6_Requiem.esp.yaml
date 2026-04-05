@@ -1,0 +1,36 @@
+FormKey: 0972E6:Requiem.esp
+EditorID: REQ_Ingredient_Cleese_CritterPondFish
+ObjectBounds:
+  First: -3, -10, 0
+  Second: 4, 9, 2
+Name:
+  TargetLanguage: English
+  Value: Jon's Giant Abecean Longfin
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\DeadPondFish02.nif
+  Data: 0x020000000000000000000000
+Value: 500
+Weight: 30
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2E:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 03EB22:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 090042:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EB28:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

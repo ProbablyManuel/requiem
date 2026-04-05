@@ -1,0 +1,41 @@
+FormKey: 56DAA2:Requiem.esp
+EditorID: REQ_Illusion_MistressOfTheDarkEmpowered_FortifySpeedAndAttackSpeed
+Name:
+  TargetLanguage: English
+  Value: Fortify Speed and Attack Speed
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Recover
+- HideInUI
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: SpeedMult
+  Type: DualValueModifier
+Projectile: 025458:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+SecondActorValue: WeaponSpeedMult
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: passive health regeneration and attack damage boni for summoned Simulacrum
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 5372F5:Requiem.esp

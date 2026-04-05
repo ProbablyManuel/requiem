@@ -1,0 +1,20 @@
+FormKey: AE3886:Requiem.esp
+EditorID: REQ_Ench_MiraaksSword_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Additionally deals <mag> irresistible damage per second for <dur> seconds.

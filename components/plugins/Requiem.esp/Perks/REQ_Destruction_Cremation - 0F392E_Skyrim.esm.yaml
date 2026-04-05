@@ -1,0 +1,22 @@
+FormKey: 0F392E:Skyrim.esm
+EditorID: REQ_Destruction_Cremation
+Name:
+  TargetLanguage: English
+  Value: Cremation
+Description:
+  TargetLanguage: English
+  Value: Your higher level fire spells burn so ferociously that foes are set ablaze,<br>often causing them to run away in gruesome agony as their very skin becomes molten.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0581E7:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Destruction
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True

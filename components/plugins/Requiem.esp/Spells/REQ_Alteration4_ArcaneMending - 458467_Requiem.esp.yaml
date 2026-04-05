@@ -1,0 +1,23 @@
+FormKey: 458467:Requiem.esp
+EditorID: REQ_Alteration4_ArcaneMending
+Name:
+  TargetLanguage: English
+  Value: Arcane Mending
+MenuDisplayObject: 109AC2:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 150
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.1
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44B9:Skyrim.esm
+Effects:
+- BaseEffect: 458466:Requiem.esp
+  Data:
+    Magnitude: 75

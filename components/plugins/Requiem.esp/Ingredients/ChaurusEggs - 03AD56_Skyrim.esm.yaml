@@ -1,0 +1,36 @@
+FormKey: 03AD56:Skyrim.esm
+EditorID: ChaurusEggs
+Version2: 6
+ObjectBounds:
+  First: -4, -4, 0
+  Second: 4, 4, 8
+Name:
+  TargetLanguage: English
+  Value: Chaurus Eggs
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\ChaurusEggs\Eggs.nif
+  Data: 0x0200000003000000000000007207D0A26464730070932EE4C32144146464730070932EE46799986D6464730070932EE4
+PickUpSound: 0BFB1F:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 10
+Weight: 0.2
+IngredientValue: 10
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 090042:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 30
+- BaseEffect: 03EAF9:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB3D:Skyrim.esm
+  Data:
+    Duration: 4

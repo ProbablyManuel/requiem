@@ -1,0 +1,24 @@
+FormKey: 27CA80:Requiem.esp
+EditorID: REQ_Restoration3_ArcaneDisjunction
+Name:
+  TargetLanguage: English
+  Value: Arcane Disjunction (Rank I)
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 400
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.3
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44C8:Skyrim.esm
+Effects:
+- BaseEffect: 27CA7F:Requiem.esp
+  Data:
+    Magnitude: 5
+    Duration: 7

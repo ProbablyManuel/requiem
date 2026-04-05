@@ -1,0 +1,24 @@
+FormKey: 07E881:Skyrim.esm
+EditorID: REQ_Creature_AtronachFlame_Flames
+Name:
+  TargetLanguage: English
+  Value: Flames
+MenuDisplayObject: 04E264:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 5
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 013CA9:Skyrim.esm
+  Data:
+    Magnitude: 8
+    Duration: 1
+- BaseEffect: 017714:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 10

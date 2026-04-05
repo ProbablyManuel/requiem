@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using FluentAssertions;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Actors;
 using Reqtificator.Transformers.Rules;
@@ -30,18 +28,18 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Configuration = new NpcConfiguration { TemplateFlags = NpcConfiguration.TemplateFlag.Script },
                 // inheritance resolution is mocked by the supplied ActorInheritanceGraphParser
-                Perks = new ExtendedList<PerkPlacement> { dummyPerk },
+                Perks = [dummyPerk],
                 Race = f.CheckRaceNode2.AsSetter()
             };
 
             var transformer =
                 new ActorPerksFromRules(ImmutableList<AssignmentRule<INpcGetter, IPerkGetter>>.Empty.Add(f.TestRule));
             f.InheritanceGraph.Setup(g => g.FindAllTemplates(input, NpcConfiguration.TemplateFlag.Traits))
-                .Returns(new List<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>
-                {
+                .Returns(
+                [
                     ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty.Add(
                         NpcConfiguration.TemplateFlag.Traits, input)
-                });
+                ]);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -59,18 +57,18 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Configuration = new NpcConfiguration { TemplateFlags = NpcConfiguration.TemplateFlag.Script },
                 // inheritance resolution is mocked by the supplied ActorInheritanceGraphParser
-                Perks = new ExtendedList<PerkPlacement> { dummyPerk },
+                Perks = [dummyPerk],
                 Race = new FormLink<IRaceGetter>(FormKey.Factory("123456:OtherRaces.esm"))
             };
 
             var transformer =
                 new ActorPerksFromRules(ImmutableList<AssignmentRule<INpcGetter, IPerkGetter>>.Empty.Add(f.TestRule));
             f.InheritanceGraph.Setup(g => g.FindAllTemplates(input, NpcConfiguration.TemplateFlag.Traits))
-                .Returns(new List<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>
-                {
+                .Returns(
+                [
                     ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty.Add(
                         NpcConfiguration.TemplateFlag.Traits, input)
-                });
+                ]);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -89,18 +87,18 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Configuration = new NpcConfiguration { TemplateFlags = NpcConfiguration.TemplateFlag.Script },
                 // inheritance resolution is mocked by the supplied ActorInheritanceGraphParser
-                Perks = new ExtendedList<PerkPlacement> { dummyPerk },
+                Perks = [dummyPerk],
                 Race = f.CheckRaceRoot.AsSetter()
             };
 
             var transformer =
                 new ActorPerksFromRules(ImmutableList<AssignmentRule<INpcGetter, IPerkGetter>>.Empty.Add(f.TestRule));
             f.InheritanceGraph.Setup(g => g.FindAllTemplates(input, NpcConfiguration.TemplateFlag.Traits))
-                .Returns(new List<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>
-                {
+                .Returns(
+                [
                     ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty.Add(
                         NpcConfiguration.TemplateFlag.Traits, input)
-                });
+                ]);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<UnChanged<Npc, INpcGetter>>();
@@ -115,18 +113,18 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Configuration = new NpcConfiguration { TemplateFlags = NpcConfiguration.TemplateFlag.SpellList },
                 // inheritance resolution is mocked by the supplied ActorInheritanceGraphParser
-                Perks = new ExtendedList<PerkPlacement> { dummyPerk },
+                Perks = [dummyPerk],
                 Race = f.CheckRaceNode2.AsSetter()
             };
 
             var transformer =
                 new ActorPerksFromRules(ImmutableList<AssignmentRule<INpcGetter, IPerkGetter>>.Empty.Add(f.TestRule));
             f.InheritanceGraph.Setup(g => g.FindAllTemplates(input, NpcConfiguration.TemplateFlag.Traits))
-                .Returns(new List<IImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>>
-                {
+                .Returns(
+                [
                     ImmutableDictionary<NpcConfiguration.TemplateFlag, INpcGetter>.Empty.Add(
                         NpcConfiguration.TemplateFlag.Traits, input)
-                });
+                ]);
 
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<UnChanged<Npc, INpcGetter>>();

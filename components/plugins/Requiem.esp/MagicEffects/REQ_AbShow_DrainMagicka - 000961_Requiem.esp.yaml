@@ -1,0 +1,19 @@
+FormKey: 000961:Requiem.esp
+EditorID: REQ_AbShow_DrainMagicka
+Name:
+  TargetLanguage: English
+  Value: Drain Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka decreases by <mag>.

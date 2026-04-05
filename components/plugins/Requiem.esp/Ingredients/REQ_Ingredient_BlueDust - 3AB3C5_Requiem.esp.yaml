@@ -1,0 +1,29 @@
+FormKey: 3AB3C5:Requiem.esp
+EditorID: REQ_Ingredient_BlueDust
+Name:
+  TargetLanguage: English
+  Value: Blue Glitterdust
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\FrostSalts.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 100
+Weight: 0.3
+IngredientValue: 106
+Effects:
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 109ADD:Skyrim.esm
+  Data:
+    Magnitude: 5
+- BaseEffect: 03AC2D:Skyrim.esm
+  Data:
+    Duration: 30
+- BaseEffect: 090041:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 180

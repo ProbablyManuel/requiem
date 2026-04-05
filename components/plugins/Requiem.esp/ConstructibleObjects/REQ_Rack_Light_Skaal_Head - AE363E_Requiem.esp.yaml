@@ -1,0 +1,19 @@
+FormKey: AE363E:Requiem.esp
+EditorID: REQ_Rack_Light_Skaal_Head
+Items:
+- Item:
+    Item: 039114:Dragonborn.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 039114:Dragonborn.esm
+CreatedObject: 0DB5D2:Skyrim.esm
+WorkbenchKeyword: 07866A:Skyrim.esm
+CreatedObjectCount: 1

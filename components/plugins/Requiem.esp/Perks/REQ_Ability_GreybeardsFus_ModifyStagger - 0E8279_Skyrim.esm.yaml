@@ -1,0 +1,21 @@
+FormKey: 0E8279:Skyrim.esm
+EditorID: REQ_Ability_GreybeardsFus_ModifyStagger
+Name:
+  TargetLanguage: English
+  Value: Force Without Effort
+Description:
+  TargetLanguage: English
+  Value: You stagger 25% less and foes stagger 25% more
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModIncomingStagger
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.75
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModTargetStagger
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.25

@@ -1,0 +1,25 @@
+FormKey: AD393E:Requiem.esp
+EditorID: REQ_Message_Lockpick_easyLock_FollowerCanPickRequired
+Description:
+  TargetLanguage: English
+  Value: >-
+    This lock seems easy to you, but unfortunately you do not have any lockpicks at hand. Your follower <Alias.ShortName=LockpickMinion> thinks <Alias.Pronoun=LockpickMinion> could pick this lock with some effort and  %.0f lockpicks.
+
+
+    A lockpicking expertise of at least %.0f is needed to handle locks of this complexity with less effort.
+
+    Your current lockpicking expertise is %.0f and <Alias.ShortName=LockpickMinion> has an expertise of %.0f.
+Name:
+  TargetLanguage: English
+  Value: A simple lock! (at least for you)
+INAM: 0x00000000
+Quest: 82F3AF:Requiem.esp
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Ok
+- Text:
+    TargetLanguage: English
+    Value: Let follower pick the lock

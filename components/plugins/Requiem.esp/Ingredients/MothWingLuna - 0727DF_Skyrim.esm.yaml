@@ -1,0 +1,35 @@
+FormKey: 0727DF:Skyrim.esm
+EditorID: MothWingLuna
+Version2: 4
+ObjectBounds:
+  First: -8, -11, 0
+  Second: 0, 7, 0
+Name:
+  TargetLanguage: English
+  Value: Luna Moth Wing
+Keywords:
+- 08CDEB:Skyrim.esm
+- 0A248C:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\MothWing01.nif
+  Data: 0x02000000020000000000000012B1F2956464730038973CEAFF6BBB536464730038973CEA
+Value: 5
+Weight: 0.1
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 60
+- BaseEffect: 03EB06:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 03EB3D:Skyrim.esm
+  Data:
+    Duration: 4

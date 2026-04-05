@@ -1,0 +1,56 @@
+FormKey: 10FAEF:Skyrim.esm
+EditorID: DA08KillFriendNode
+Parent: 013010:Skyrim.esm
+PreviousSibling: Null
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12882
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetEquippedConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12882
+    ItemOrList: 04A38F:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Function: GetValue
+    Member: Value2
+  ComparisonValue: 2
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12626
+    Keyword: 013794:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12626
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12626
+    Faction: 0BCC9A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    RunOnType: EventData
+    RunOnTypeIndex: 12626
+    Object: 065657:Skyrim.esm
+  ComparisonValue: 1
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 10FAEE:Skyrim.esm

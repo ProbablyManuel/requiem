@@ -1,0 +1,20 @@
+FormKey: AE3B48:Requiem.esp
+EditorID: REQ_Blessing_Boethiah_Effect
+Name:
+  TargetLanguage: English
+  Value: The Reclamations
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+PerkToApply: AE3B4B:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Ranged weapons deal <10>% more damage, but spells are <10>% weaker.

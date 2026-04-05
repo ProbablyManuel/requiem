@@ -1,0 +1,33 @@
+FormKey: 3C1309:Requiem.esp
+EditorID: REQ_Illusion1_Fear_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoHitEvent
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+MagicSkill: Illusion
+TaperWeight: 1
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: DamageResist
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If empowered, the target is so terrified that it totally neglects its defense and loses <mag> armor rating.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

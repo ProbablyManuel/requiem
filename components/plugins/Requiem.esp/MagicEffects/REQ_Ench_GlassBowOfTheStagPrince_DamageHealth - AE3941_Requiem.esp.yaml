@@ -1,0 +1,22 @@
+FormKey: AE3941:Requiem.esp
+EditorID: REQ_Ench_GlassBowOfTheStagPrince_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- PowerAffectsMagnitude
+HitShader: 085FAA:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> magic damage.

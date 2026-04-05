@@ -1,0 +1,76 @@
+FormKey: 0778F1:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: RobbersGorge01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Robber's Cove
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01929B:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+SkyAndWeatherFromRegion: 0C5858:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 03EC63:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0A7E80:Skyrim.esm
+  MajorRecordFlagsRaw: 1073742848
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - 0x40000000
+  Base: AD384A:Requiem.esp
+  LocationReference: 01929B:Skyrim.esm
+  Placement:
+    Position: -1030.7379, -201.53064, 1801.05
+    Rotation: 2.9283292, 0.18462268, 5.448693
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 078DC8:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130FD:Skyrim.esm
+  LocationReference: 01929B:Skyrim.esm
+  Placement:
+    Position: -1232.6469, -78.2093, 1463.858
+    Rotation: 0.12217305, 6.0737457, 2.0420353
+MajorFlags:
+- 0x40000

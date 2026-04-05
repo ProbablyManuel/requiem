@@ -1,0 +1,71 @@
+FormKey: 000454:Skyrim.esm
+EditorID: AVLockpicking
+Name:
+  TargetLanguage: English
+  Value: Lockpicking
+Description:
+  TargetLanguage: English
+  Value: Lockpicking is the art of defeating mechanical locks and other similar mechanisms.
+CNAM: 0x03000000
+Skill:
+  UseMult: 36
+  OffsetMult: 10
+  ImproveMult: 0.25
+  ImproveOffset: 300
+PerkTree:
+- FNAM: 0x00000000
+  PerkGridX: 0
+  PerkGridY: 0
+  HorizontalPosition: 0
+  VerticalPosition: 0
+  AssociatedSkill: 000454:Skyrim.esm
+  ConnectionLineToIndices:
+  - 10
+  Index: 0
+- Perk: 0F392A:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 3
+  PerkGridY: 0
+  HorizontalPosition: -0.54
+  VerticalPosition: -0.04
+  AssociatedSkill: 000454:Skyrim.esm
+  ConnectionLineToIndices:
+  - 1
+  Index: 10
+- Perk: 0BE125:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 2
+  PerkGridY: 1
+  HorizontalPosition: -0.346667
+  VerticalPosition: -0.12
+  AssociatedSkill: 000454:Skyrim.esm
+  ConnectionLineToIndices:
+  - 2
+  - 3
+  Index: 1
+- Perk: 0C3680:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 1
+  PerkGridY: 2
+  HorizontalPosition: -0.153333
+  VerticalPosition: 0.12
+  AssociatedSkill: 000454:Skyrim.esm
+  ConnectionLineToIndices:
+  - 8
+  Index: 2
+- Perk: 0C3681:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 1
+  PerkGridY: 3
+  HorizontalPosition: -0.473333
+  VerticalPosition: 0.04
+  AssociatedSkill: 000454:Skyrim.esm
+  Index: 8
+- Perk: 105F26:Skyrim.esm
+  FNAM: 0x01000000
+  PerkGridX: 4
+  PerkGridY: 2
+  HorizontalPosition: 0
+  VerticalPosition: 0
+  AssociatedSkill: 000454:Skyrim.esm
+  Index: 3

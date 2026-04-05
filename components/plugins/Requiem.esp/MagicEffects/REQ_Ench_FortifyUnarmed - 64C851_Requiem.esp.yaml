@@ -1,0 +1,22 @@
+FormKey: 64C851:Requiem.esp
+EditorID: REQ_Ench_FortifyUnarmed
+Name:
+  TargetLanguage: English
+  Value: Fortify Unarmed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 15
+EnchantShader: 092DEC:Skyrim.esm
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: UnarmedDamage
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Unarmed strikes do <mag> additional damage.

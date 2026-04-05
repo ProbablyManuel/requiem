@@ -1,0 +1,13 @@
+FormKey: ADDDC8:Requiem.esp
+EditorID: REQ_Power_AncestorGuardian_DamageReduction
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.1

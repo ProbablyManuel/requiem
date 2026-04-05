@@ -1,0 +1,25 @@
+FormKey: 10FCF6:Skyrim.esm
+EditorID: StaffEnchIcySpear
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Icy Spear
+EnchantmentCost: 562
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 100
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 10F7F0:Skyrim.esm
+  Data:
+    Magnitude: 50
+- BaseEffect: 0B729F:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Duration: 3
+- BaseEffect: 223794:Requiem.esp
+  Data:
+    Magnitude: 50

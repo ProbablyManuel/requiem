@@ -1,0 +1,29 @@
+FormKey: 000880:ccqdrsse001-survivalmode.esl
+EditorID: Survival_HungerStage2
+Name:
+  TargetLanguage: English
+  Value: Peckish
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Total Stamina is reduced. Attacks with weapons are <10>% slower. You are <30>% less effective with using shields and sneaking.
+BaseCost: 435
+Type: Ability
+Effects:
+- BaseEffect: 00095E:ccqdrsse001-survivalmode.esl
+  Data: {}
+- BaseEffect: 000848:ccqdrsse001-survivalmode.esl
+  Data:
+    Magnitude: 30
+- BaseEffect: 000849:ccqdrsse001-survivalmode.esl
+  Data:
+    Magnitude: 30
+- BaseEffect: 0008EA:ccqdrsse001-survivalmode.esl
+  Data: {}
+- BaseEffect: 000A41:Requiem.esp
+  Data:
+    Magnitude: 10
+- BaseEffect: 000A70:Requiem.esp
+  Data:
+    Magnitude: 10

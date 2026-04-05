@@ -1,0 +1,23 @@
+FormKey: 091F76:Skyrim.esm
+EditorID: REQ_NULL_WispBuffStamina
+Name:
+  TargetLanguage: English
+  Value: Wisp's Stamina Blessing
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- 0x10000
+- 0x40000
+- NoAbsorbOrReflect
+- NoDualCastModification
+Type: Ability
+Effects:
+- BaseEffect: 0FEAAA:Skyrim.esm
+  Data:
+    Magnitude: 5
+- BaseEffect: 064458:Skyrim.esm
+  Data:
+    Magnitude: 5

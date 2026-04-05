@@ -1,0 +1,358 @@
+FormKey: 082A3A:Skyrim.esm
+EditorID: REQ_Shout_Thuum_KynesPeace3
+Name:
+  TargetLanguage: English
+  Value: Kyne's Peace
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Voice
+CastType: FireAndForget
+Effects:
+- BaseEffect: AE3B7C:Requiem.esp
+  Data: {}
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 120
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 120
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 120
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380D:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380D:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380D:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3810:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3810:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3810:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380E:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380E:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380E:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380F:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380F:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE380F:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C7:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CC:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CD:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CE:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C7:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CC:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CD:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CE:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C7:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CC:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CD:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38CE:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3814:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3814:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3814:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C3:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C3:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C3:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3817:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3817:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3817:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3818:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3818:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE3818:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BB:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C4:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BC:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C4:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 2665BD:Requiem.esp
+  Data:
+    Magnitude: 50
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSpellTargetConditionData
+      MagicItem: AE38C4:Requiem.esp
+    ComparisonValue: 1

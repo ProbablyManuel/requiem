@@ -1,0 +1,35 @@
+FormKey: AD38FB:Requiem.esp
+EditorID: REQ_DEPRECATED_Food_FortifyOneHandedDUPLICATE001
+Name:
+  TargetLanguage: English
+  Value: Fortify One-Handed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD38F0:Requiem.esp
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: OneHandedPowerModifier
+  Association: AD38F0:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: One-handed weapons deal <mag>% more damage for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInCombatConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: AD382D:Requiem.esp
+  ComparisonValue: 25

@@ -1,0 +1,45 @@
+FormKey: 03D37C:Dragonborn.esm
+EditorID: BoundDaggerEnchantment
+Name:
+  TargetLanguage: English
+  Value: Bound Dagger FX
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 03D37B:Dragonborn.esm
+  Data:
+    Magnitude: 1
+- BaseEffect: 0D799D:Skyrim.esm
+  Data:
+    Magnitude: 99
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Target
+      Perk: 0D799C:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 0D799F:Skyrim.esm
+  Data:
+    Duration: 3
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Target
+      Perk: 0D799E:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 0E826D:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 3
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnType: Target
+      Perk: 0D799C:Skyrim.esm
+    ComparisonValue: 1

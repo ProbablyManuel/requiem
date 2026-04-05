@@ -1,0 +1,54 @@
+FormKey: 0067CF:Dawnguard.esm
+EditorID: REQ_Artifact_HarkonsKatana
+ObjectBounds:
+  First: -5, -18, -5
+  Second: 5, 76, 3
+Name:
+  TargetLanguage: English
+  Value: Harkon's Katana
+Model:
+  File: DLC01\Weapons\Vampire\Sword.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 011EE9:Dawnguard.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- AD3AF7:Requiem.esp
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Lord Harkon's katana emnates a vile and dark power that absorbs <50> health, magicka, and stamina from warm-blooded creatures, and makes them vulnerable to soul gems for <5> seconds.
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 0067CE:Dawnguard.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 1800
+  Weight: 15
+  Damage: 13
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

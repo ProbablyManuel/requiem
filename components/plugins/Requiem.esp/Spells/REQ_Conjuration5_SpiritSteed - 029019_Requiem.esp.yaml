@@ -1,0 +1,47 @@
+FormKey: 029019:Requiem.esp
+EditorID: REQ_Conjuration5_SpiritSteed
+Name:
+  TargetLanguage: English
+  Value: Summon Spirit Steed
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster summons the spirit of a noble steed.
+BaseCost: 500
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 4.5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 20
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 029017:Requiem.esp
+  Data:
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: AD385A:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInInteriorConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+- BaseEffect: AD386A:Requiem.esp
+  Data:
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: AD385A:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsInInteriorConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm

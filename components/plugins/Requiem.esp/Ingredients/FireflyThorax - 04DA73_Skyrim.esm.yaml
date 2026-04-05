@@ -1,0 +1,36 @@
+FormKey: 04DA73:Skyrim.esm
+EditorID: FireflyThorax
+Version2: 14
+ObjectBounds:
+  First: -3, -1, -5
+  Second: 3, 4, 7
+Name:
+  TargetLanguage: English
+  Value: Torchbug Thorax
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Critters\Firefly\FireflyGO.nif
+  Data: 0x02000000030000000000000079BB70B46464730038973CEA0F1167356464730038973CEAABA9BB4C6464730038973CEA
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 10DE5F:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 073F51:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EAF9:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

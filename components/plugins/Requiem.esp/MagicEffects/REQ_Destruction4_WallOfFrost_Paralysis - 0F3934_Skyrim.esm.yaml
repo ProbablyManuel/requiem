@@ -1,0 +1,79 @@
+FormKey: 0F3934:Skyrim.esm
+EditorID: REQ_Destruction4_WallOfFrost_Paralysis
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magiceffectshadersonendscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX01
+      Object: 0EA519:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX02
+      Object: 0EA51A:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Paralysis
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+- 2FFEAD:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+MagicSkill: Destruction
+CastingLight: 06EBCC:Skyrim.esm
+HitShader: 0DC20E:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+Projectile: 06EBC8:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 06DE85:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    RunOnType: Target
+    Perk: 0F3933:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 357085:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsHostileToActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistFrost
+  ComparisonValue: 25

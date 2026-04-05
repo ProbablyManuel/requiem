@@ -1,0 +1,36 @@
+FormKey: 03AD70:Skyrim.esm
+EditorID: SlaughterfishScales
+Version2: 2
+ObjectBounds:
+  First: -6, -8, 0
+  Second: 6, 8, 4
+Name:
+  TargetLanguage: English
+  Value: Slaughterfish Scales
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SlaughterFishScale.nif
+  Data: 0x020000000400000000000000A6D69EF364647300604DDD5CD492C40064647300604DDD5CD51B1E3C64647300262C333B6EC3CD9964647300604DDD5C
+Value: 3
+Weight: 0.1
+IngredientValue: 3
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EAEB:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 8.4
+    Duration: 60
+- BaseEffect: 03EB1C:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

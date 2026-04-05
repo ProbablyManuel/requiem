@@ -1,0 +1,23 @@
+FormKey: 048C8B:Skyrim.esm
+EditorID: REQ_Ench_ResistFire
+Name:
+  TargetLanguage: English
+  Value: Resist Fire
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 074F56:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 9
+EnchantShader: 092DE7:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistFire
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Fire deals <mag>% less damage to you.

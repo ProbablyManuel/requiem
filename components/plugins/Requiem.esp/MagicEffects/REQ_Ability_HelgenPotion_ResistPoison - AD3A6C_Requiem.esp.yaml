@@ -1,0 +1,30 @@
+FormKey: AD3A6C:Requiem.esp
+EditorID: REQ_Ability_HelgenPotion_ResistPoison
+Name:
+  TargetLanguage: English
+  Value: Resist Poison
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: PoisonResist
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCellConditionData
+    Cell: 05DE24:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestRunningConditionData
+    Quest: 03372B:Skyrim.esm
+  ComparisonValue: 1

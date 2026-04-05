@@ -38,11 +38,10 @@ EndFunction
 
 Function RescaleEnchantment()
 	Int GreatBeastsSlain = 0
-	Int DA05Stage = DA05.GetStage()
-	If DA05Stage >= 50  ; White Stag
+	If DA05.IsStageDone(50)  ; White Stag
 		GreatBeastsSlain += 1
 	EndIf
-	If DA05Stage == 100  ; Sinding
+	If DA05.IsStageDone(100)  ; Sinding
 		GreatBeastsSlain += 1
 	EndIf
 	If GiantSlaughterfish.GetDeadCount() >= 1

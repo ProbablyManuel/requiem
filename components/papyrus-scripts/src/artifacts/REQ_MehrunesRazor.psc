@@ -16,7 +16,7 @@ EndEvent
 
 
 Function RescaleEnchantment()
-	Float Chance = 0.0
+	Float Chance = 1.0
 	If Game.QueryStat("People Killed") >= 100
 		Chance += 1.0
 	EndIf

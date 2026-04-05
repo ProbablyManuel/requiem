@@ -1,0 +1,26 @@
+FormKey: 064B40:Skyrim.esm
+EditorID: REQ_Food_Vegan_Carrot
+ObjectBounds:
+  First: -3, -5, -10
+  Second: 3, 4, 23
+Name:
+  TargetLanguage: English
+  Value: Carrot
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Carrot01.nif
+  Data: 0x0200000003000000000000006D357C0964647300604DDD5C71D5C91164647300604DDD5CFAE0BBA4646473007F66A5C0
+Weight: 0.1
+Value: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1200
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

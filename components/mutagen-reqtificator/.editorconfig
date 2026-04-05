@@ -13,17 +13,16 @@ dotnet_style_prefer_conditional_expression_over_assignment = false
 dotnet_style_prefer_conditional_expression_over_return = false
 csharp_style_var_when_type_is_apparent = true
 csharp_style_var_elsewhere = true
+dotnet_style_require_accessibility_modifiers = always
+csharp_style_prefer_primary_constructors = false # entails a significant diff, may be enabled at a later time
 
 # global suppression rules
 dotnet_diagnostic.CA1003.severity = none # seems to trigger false positives when I try to use relaxed non-"EventArgs" extending types for events
 dotnet_diagnostic.CA1032.severity = none # our exceptions aren't used externally, so we don't need to add constructors we don't use
 dotnet_diagnostic.CA1303.severity = none # we're not supporting any localization in the initial release
 dotnet_diagnostic.CA1826.severity = none # our collections shouldn't be large enough to suffer any noteworthy performance impacts 
+dotnet_diagnostic.CA1859.severity = none # our collections don't receive enough calls to suffer any noteworthy performance impacts
 dotnet_diagnostic.IDE0072.severity = none # too many false positives
 dotnet_diagnostic.IDE0130.severity = none # https://github.com/dotnet/format/issues/1623
-
-[UserSettings.cs]
-dotnet_diagnostic.CA1308.severity = none # only used to write booleans to json
-
-[LogUtils.cs]
-dotnet_diagnostic.CA1305.severity = none # no idea how to fix this
+dotnet_diagnostic.SYSLIB1045.severity = none # Unnecessarily cumbersome for negligible performance improvements
+dotnet_diagnostic.SYSLIB1054.severity = none # no idea how to get this working

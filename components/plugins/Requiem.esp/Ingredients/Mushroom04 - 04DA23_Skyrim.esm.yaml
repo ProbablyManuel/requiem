@@ -1,0 +1,38 @@
+FormKey: 04DA23:Skyrim.esm
+EditorID: Mushroom04
+Version2: 1
+ObjectBounds:
+  First: -13, -10, -9
+  Second: 13, 10, 9
+Name:
+  TargetLanguage: English
+  Value: Imp Stool
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\Mushroom04.nif
+  Data: 0x0200000002000000000000009DAC9B84646473004E28BE12CB92A68C646473004E28BE12
+PickUpSound: 0BAD13:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 12
+Weight: 0.3
+IngredientValue: 12
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 1
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 0.5
+    Duration: 20

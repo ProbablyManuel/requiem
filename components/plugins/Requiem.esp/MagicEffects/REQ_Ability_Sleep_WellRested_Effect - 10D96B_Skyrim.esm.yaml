@@ -1,0 +1,32 @@
+FormKey: 10D96B:Skyrim.esm
+EditorID: REQ_Ability_Sleep_WellRested_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TimedAbilityScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pAbilityToRemove
+      Object: 0FB984:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: pHoursToWait
+      Data: 16
+Name:
+  TargetLanguage: English
+  Value: Well Rested
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+DualCastScale: 1
+PerkToApply: 10D969:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds:
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: All skills improve <15>% faster.

@@ -1,0 +1,18 @@
+FormKey: 02672B:Dragonborn.esm
+EditorID: REQ_NULL_DLC2SkillSmithing
+Description:
+  TargetLanguage: English
+  Value: The Steel Smithing perk allows you to forge Bonemold armor. Elven Smithing allows you to forge Chitin armor. Advanced Armors allows you to forge Nordic armor and weapons. Ebony Smithing allows you to forge Stalhrim armor and weapons.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 0216A9:Skyrim.esm
+LoadingScreenNif: 10E85F:Skyrim.esm
+InitialScale: 1.3
+InitialRotation: -8, 0, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 5, 0, -40
+CameraPath: Cameras\LSCameraPanZoomInSmall.nif

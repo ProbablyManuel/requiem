@@ -1,0 +1,37 @@
+FormKey: 0204C5:Skyrim.esm
+EditorID: REQ_Conjuration4_StormAtronach
+Name:
+  TargetLanguage: English
+  Value: Summon Storm Atronach
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 675
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 1
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 24
+HalfCostPerk: 0C44BD:Skyrim.esm
+Effects:
+- BaseEffect: 01CEAC:Skyrim.esm
+  Data:
+    Duration: 6
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0CB41A:Skyrim.esm
+- BaseEffect: 04E947:Skyrim.esm
+  Data:
+    Duration: 6
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0CB41A:Skyrim.esm
+    ComparisonValue: 1

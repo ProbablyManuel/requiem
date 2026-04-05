@@ -1,0 +1,16 @@
+FormKey: AE378C:Requiem.esp
+EditorID: REQ_Crafting_Morokei
+Items:
+- Item:
+    Item: AE392C:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: AE392C:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: 061C8B:Skyrim.esm
+WorkbenchKeyword: AE378B:Requiem.esp
+CreatedObjectCount: 1

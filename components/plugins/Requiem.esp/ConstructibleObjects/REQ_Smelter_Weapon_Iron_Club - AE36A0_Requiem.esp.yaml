@@ -1,0 +1,19 @@
+FormKey: AE36A0:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Iron_Club
+Items:
+- Item:
+    Item: ADDF1D:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: ADDF1D:Requiem.esp
+CreatedObject: 05ACE4:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

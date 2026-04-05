@@ -1,0 +1,29 @@
+FormKey: 029A25:Dragonborn.esm
+EditorID: REQ_BlackBook_VisualEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03BE30:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Power of Apocrypha
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- NoMagnitude
+- NoArea
+- FXPersist
+- HideInUI
+HitShader: 03CD84:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+HitEffectArt: 029A24:Dragonborn.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

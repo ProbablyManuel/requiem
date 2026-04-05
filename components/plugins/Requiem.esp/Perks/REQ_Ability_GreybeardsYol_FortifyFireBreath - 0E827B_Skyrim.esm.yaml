@@ -1,0 +1,24 @@
+FormKey: 0E827B:Skyrim.esm
+EditorID: REQ_Ability_GreybeardsYol_FortifyFireBreath
+Name:
+  TargetLanguage: English
+  Value: The Fire Within
+Description:
+  TargetLanguage: English
+  Value: Fire Breath shout deals 25% more damage
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 0E827C:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.25

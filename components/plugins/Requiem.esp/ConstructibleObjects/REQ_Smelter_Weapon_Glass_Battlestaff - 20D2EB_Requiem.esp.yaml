@@ -1,0 +1,19 @@
+FormKey: 20D2EB:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Glass_Battlestaff
+Items:
+- Item:
+    Item: 06B479:Requiem.esp
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 06B479:Requiem.esp
+CreatedObject: 05ADA1:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

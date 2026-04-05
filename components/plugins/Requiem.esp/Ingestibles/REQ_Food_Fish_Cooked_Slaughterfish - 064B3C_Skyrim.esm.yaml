@@ -1,0 +1,26 @@
+FormKey: 064B3C:Skyrim.esm
+EditorID: REQ_Food_Fish_Cooked_Slaughterfish
+ObjectBounds:
+  First: 0, -12, 12
+  Second: 0, 11, 14
+Name:
+  TargetLanguage: English
+  Value: Seared Slaughterfish
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\CookedSlaughterfishSteak01.nif
+  Data: 0x0200000002000000000000005774FA7A64647300B91482368809BB3564647300B9148236
+Weight: 1
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

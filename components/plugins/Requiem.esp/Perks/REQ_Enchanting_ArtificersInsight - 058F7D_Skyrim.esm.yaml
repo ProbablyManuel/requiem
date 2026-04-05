@@ -1,0 +1,30 @@
+FormKey: 058F7D:Skyrim.esm
+EditorID: REQ_Enchanting_ArtificersInsight
+Name:
+  TargetLanguage: English
+  Value: Artificer's Insight
+Description:
+  TargetLanguage: English
+  Value: You could fill grimoires with your newfound knowledge that allows you to create<br>even better enchantments and staves.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F7E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Enchanting
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 03F041:Requiem.esp
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModEnchantmentPower
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.15

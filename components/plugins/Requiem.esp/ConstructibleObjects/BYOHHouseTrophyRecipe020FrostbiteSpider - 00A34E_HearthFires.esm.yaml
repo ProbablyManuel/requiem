@@ -1,0 +1,19 @@
+FormKey: 00A34E:HearthFires.esm
+EditorID: BYOHHouseTrophyRecipe020FrostbiteSpider
+Items:
+- Item:
+    Item: 005A68:HearthFires.esm
+    Count: 1
+- Item:
+    Item: 44C4A8:Requiem.esp
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    ItemOrList: 00A31D:HearthFires.esm
+CreatedObject: 00A341:HearthFires.esm
+WorkbenchKeyword: 00A31C:HearthFires.esm
+CreatedObjectCount: 1

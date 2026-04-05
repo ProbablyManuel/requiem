@@ -1,0 +1,22 @@
+FormKey: 01E2A6:Dragonborn.esm
+EditorID: REQ_Attack_Race_AshGuardianArea
+Name:
+  TargetLanguage: English
+  Value: Flame Explosion
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 52
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 01E2A5:Dragonborn.esm
+  Data:
+    Magnitude: 40
+    Area: 15
+- BaseEffect: 01E2A5:Dragonborn.esm
+  Data:
+    Magnitude: 2
+    Area: 15
+    Duration: 30

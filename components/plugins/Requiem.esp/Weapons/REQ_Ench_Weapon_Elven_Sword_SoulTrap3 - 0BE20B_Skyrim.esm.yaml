@@ -1,0 +1,54 @@
+FormKey: 0BE20B:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Elven_Sword_SoulTrap3
+ObjectBounds:
+  First: -9, -13, -1
+  Second: 9, 69, 1
+Name:
+  TargetLanguage: English
+  Value: Elven Sword of Binding
+Model:
+  File: Weapons\Elven\ElvenSword.nif
+  Data: 0x020000000A000000000000007318373764647300E1CA22649088578064647300E1CA2264B65D9E1F64647300262C333B2AD95E1964647300E1CA226433168C0764647300A0B8630503D8C24064647300A0B863054FE0756464647300A0B8630562F8D1296464730008EFABCB7C1104C96464730008EFABCBC6400D506464730008EFABCB
+ObjectEffect: 05B461:Skyrim.esm
+EnchantmentAmount: 1500
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E71B:Skyrim.esm
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 036BD1:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 135
+  Weight: 8
+  Damage: 9
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 4
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 0139A1:Skyrim.esm

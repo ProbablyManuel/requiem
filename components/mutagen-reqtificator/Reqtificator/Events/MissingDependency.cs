@@ -37,5 +37,5 @@ namespace Reqtificator.Events
         public override string Title { get; }
         public override string Message { get; }
     }
-    public record BugfixDependency(string Name, string ExpectedLocation, string DownloadLocation, Uri DownloadUrl);
+    internal record BugfixDependency(string Name, string ExpectedLocation, string DownloadLocation, Uri DownloadUrl);
 }

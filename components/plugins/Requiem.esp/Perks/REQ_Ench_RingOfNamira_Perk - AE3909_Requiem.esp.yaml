@@ -1,0 +1,53 @@
+FormKey: AE3909:Requiem.esp
+EditorID: REQ_Ench_RingOfNamira_Perk
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetEquippedConditionData
+        ItemOrList: 02C37B:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetEquippedConditionData
+        ItemOrList: 013104:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetEquippedConditionData
+        ItemOrList: 013105:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetEquippedConditionData
+        ItemOrList: 013106:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06C0EF:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 10CD13:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 10CD0A:Skyrim.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsInCombatConditionData
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsSpellTargetConditionData
+        MagicItem: AE3906:Requiem.esp
+  EntryPoint: ApplySneakingSpell
+  PerkConditionTabCount: 1
+  Spell: AE3906:Requiem.esp

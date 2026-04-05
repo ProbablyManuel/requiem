@@ -1,0 +1,27 @@
+FormKey: 2897D4:Requiem.esp
+EditorID: REQ_Food_WrothgarTartare
+Name:
+  TargetLanguage: English
+  Value: Wrothgar Tartare
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Stew.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21F:Skyrim.esm
+Weight: 1
+Value: 20
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 10E2EA:Skyrim.esm
+Effects:
+- BaseEffect: AE371E:Requiem.esp
+  Data:
+    Magnitude: 25
+    Duration: 3600
+- BaseEffect: AE371F:Requiem.esp
+  Data:
+    Duration: 7
+- BaseEffect: 002EE4:Update.esm
+  Data: {}

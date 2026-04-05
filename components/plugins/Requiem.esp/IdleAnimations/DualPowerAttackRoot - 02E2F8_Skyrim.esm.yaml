@@ -1,0 +1,67 @@
+FormKey: 02E2F8:Skyrim.esm
+EditorID: DualPowerAttackRoot
+FormVersion: 39
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    ItemSource: Right
+  ComparisonValue: 7
+- MutagenObjectType: ConditionFloat
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: GetGraphVariableIntConditionData
+    GraphVariable: bInJumpState
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+  ComparisonValue: 10
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+  ComparisonValue: 11
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+  ComparisonValue: 8
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    ItemSource: Right
+  ComparisonValue: 8
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+  ComparisonValue: 9
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    ItemSource: Right
+  ComparisonValue: 9
+- MutagenObjectType: ConditionFloat
+  Unknown2: 11084
+  Data:
+    MutagenObjectType: IsWeaponMagicOutConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsSneakingConditionData
+Filename: Actors\Character\Behaviors\0_Master.hkx
+RelatedIdles:
+- 02E2F7:Skyrim.esm
+- Null
+AnimationGroupSection: 105

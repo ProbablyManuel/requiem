@@ -1,0 +1,18 @@
+FormKey: 0B62DF:Skyrim.esm
+EditorID: StaffEnchShockRune
+Version2: 4
+Name:
+  TargetLanguage: English
+  Value: Shock Rune
+EnchantmentCost: 200
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 200
+TargetType: TargetLocation
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 06796E:Skyrim.esm
+  Data:
+    Magnitude: 100

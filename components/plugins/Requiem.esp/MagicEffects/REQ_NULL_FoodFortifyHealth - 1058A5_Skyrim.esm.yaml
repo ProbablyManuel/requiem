@@ -1,0 +1,24 @@
+FormKey: 1058A5:Skyrim.esm
+EditorID: REQ_NULL_FoodFortifyHealth
+Name:
+  TargetLanguage: English
+  Value: Fortify Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 042503:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 1
+HitShader: 012FD9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+CastType: FireAndForget
+HitEffectArt: 03F1B4:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health is increased by <mag> points for <dur> seconds.

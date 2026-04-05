@@ -1,0 +1,74 @@
+FormKey: 003BF0:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1Ruunvald01
+Version2: 10
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ruunvald Excavation
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#0023231D'
+  DirectionalColor: '#004B5540'
+  FogNearColor: '#00434639'
+  FogNear: 1400
+  FogFar: 5500
+  FogClipDistance: 9000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#0026231E'
+    DirectionalXMinus: '#001F231B'
+    DirectionalYPlus: '#0023241D'
+    DirectionalYMinus: '#0023211D'
+    DirectionalZPlus: '#0010100D'
+    DirectionalZMinus: '#0035352C'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#004E5342'
+  FogMax: 1
+  Inherits:
+  - FogNear
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 094E50:Skyrim.esm
+WaterHeight: 0
+Location: 007B21:Dawnguard.esm
+SkyAndWeatherFromRegion: 0C5858:Skyrim.esm
+AcousticSpace: 0FD93A:Skyrim.esm
+EncounterZone: 007B22:Dawnguard.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 013467:Dawnguard.esm
+  Version2: 2
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 007B21:Dawnguard.esm
+  Placement:
+    Position: -2096.9578, -2161.0889, -2683.9473
+    Rotation: 0.037751473, 6.281798, 0.83726585
+- MutagenObjectType: PlacedObject
+  FormKey: 013635:Dawnguard.esm
+  Version2: 2
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 007B21:Dawnguard.esm
+  Placement:
+    Position: -3607.074, 1094.7484, -599.55804
+    Rotation: -0.0034477795, 0.2117047, 0.7633415
+MajorFlags:
+- 0x40000

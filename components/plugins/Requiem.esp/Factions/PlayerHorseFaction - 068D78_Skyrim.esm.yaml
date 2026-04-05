@@ -1,0 +1,25 @@
+FormKey: 068D78:Skyrim.esm
+EditorID: PlayerHorseFaction
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Player Horse Faction
+Relations:
+- Target: 000DB1:Skyrim.esm
+  Reaction: Ally
+- Target: 05A1A4:Skyrim.esm
+  Reaction: Ally
+- Target: 05C84E:Skyrim.esm
+  Reaction: Ally
+Flags:
+- IgnoreMurder
+- IgnoreAssault
+- IgnoreStealing
+- IgnoreTrespass
+- DoNotReportCrimesAgainstMembers
+- IgnorePickpocket
+- IgnoreWerewolf
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

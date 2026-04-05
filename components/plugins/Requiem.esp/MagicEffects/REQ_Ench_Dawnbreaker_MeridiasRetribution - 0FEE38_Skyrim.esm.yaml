@@ -1,0 +1,39 @@
+FormKey: 0FEE38:Skyrim.esm
+EditorID: REQ_Ench_Dawnbreaker_MeridiasRetribution
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA09EncDawnbreakerScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA09DawnbreakerBaneOfUndeadSpell
+      Object: 0FEE36:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Meridia's Retribution
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoMagnitude
+- NoArea
+- NoDeathDispel
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

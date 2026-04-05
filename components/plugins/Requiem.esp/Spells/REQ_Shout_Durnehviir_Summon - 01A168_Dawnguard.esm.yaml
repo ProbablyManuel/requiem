@@ -1,0 +1,26 @@
+FormKey: 01A168:Dawnguard.esm
+EditorID: REQ_Shout_Durnehviir_Summon
+Name:
+  TargetLanguage: English
+  Value: Soul Cairn Summon
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Voice
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 100
+Effects:
+- BaseEffect: 01A169:Dawnguard.esm
+  Data:
+    Duration: 180
+- BaseEffect: 01A16D:Dawnguard.esm
+  Data:
+    Duration: 180
+- BaseEffect: 01A16E:Dawnguard.esm
+  Data:
+    Duration: 180

@@ -1,0 +1,22 @@
+FormKey: 0206DF:Dragonborn.esm
+EditorID: REQ_Trait_Spider_FrostFX
+Name:
+  TargetLanguage: English
+  Value: Spider Visuals Frost
+Flags:
+- NoDuration
+- FXPersist
+HitShader: 0206DE:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm

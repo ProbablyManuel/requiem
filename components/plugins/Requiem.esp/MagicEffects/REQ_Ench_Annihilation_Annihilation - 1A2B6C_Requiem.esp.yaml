@@ -1,0 +1,28 @@
+FormKey: 1A2B6C:Requiem.esp
+EditorID: REQ_Ench_Annihilation_Annihilation
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Annihilation
+Name:
+  TargetLanguage: English
+  Value: Annihilation
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 35
+HitShader: 0B93D8:Skyrim.esm
+EnchantShader: 0D7661:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> irresistible damage.

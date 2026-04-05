@@ -3,7 +3,7 @@ using Mutagen.Bethesda.Skyrim;
 
 namespace Reqtificator.StaticReferences
 {
-    public static class Keywords
+    internal static class Keywords
     {
         public static readonly IFormLinkGetter<IKeywordGetter> ArmorHeavy =
             new FormLink<IKeywordGetter>(FormKey.Factory("06BBD2:Skyrim.esm"));
@@ -51,7 +51,7 @@ namespace Reqtificator.StaticReferences
             new FormLink<IKeywordGetter>(FormKey.Factory("899DBE:Requiem.esp"));
     }
 
-    public static class GlobalVariables
+    internal static class GlobalVariables
     {
         public static readonly IFormLinkGetter<IGlobalGetter> VersionStampPlugin =
             new FormLink<IGlobalGetter>(FormKey.Factory("2F389F:Requiem.esp"));
@@ -60,7 +60,7 @@ namespace Reqtificator.StaticReferences
             new FormLink<IGlobalGetter>(FormKey.Factory("973D69:Requiem.esp"));
     }
 
-    public static class FormLists
+    internal static class FormLists
     {
         public static readonly IFormLinkGetter<IFormListGetter> ClosedEncounterZones =
             new FormLink<IFormListGetter>(FormKey.Factory("A46546:Requiem.esp"));
@@ -78,7 +78,7 @@ namespace Reqtificator.StaticReferences
             new FormLink<IFormListGetter>(FormKey.Factory("000165:Skyrim.esm"));
     }
 
-    public static class Quests
+    internal static class Quests
     {
         public static readonly IFormLinkGetter<IQuestGetter> LockpickingControl =
             new FormLink<IQuestGetter>(FormKey.Factory("AD3B22:Requiem.esp"));
@@ -87,13 +87,13 @@ namespace Reqtificator.StaticReferences
             new FormLink<IQuestGetter>(FormKey.Factory("82F3AF:Requiem.esp"));
     }
 
-    public static class Npcs
+    internal static class Npcs
     {
         public static readonly IFormLinkGetter<INpcGetter> Player =
             new FormLink<INpcGetter>(FormKey.Factory("000007:Skyrim.esm"));
     }
 
-    public static class Spells
+    internal static class Spells
     {
         public static readonly IFormLinkGetter<ISpellGetter> MassEffectBase =
             new FormLink<ISpellGetter>(FormKey.Factory("7E76F4:Requiem.esp"));

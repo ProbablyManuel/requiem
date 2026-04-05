@@ -1,0 +1,40 @@
+FormKey: 039D27:Dragonborn.esm
+EditorID: REQ_NULL_dlc2MKMiraakMaskShoutSpell
+Name:
+  TargetLanguage: English
+  Value: Scream For Mora
+MenuDisplayObject: 0A59AC:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 35
+Type: Voice
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 039D26:Dragonborn.esm
+  Data:
+    Magnitude: 25
+    Duration: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0172AC:Skyrim.esm
+- BaseEffect: 0EA075:Skyrim.esm
+  Data:
+    Magnitude: 20
+- BaseEffect: 07F82E:Skyrim.esm
+  Data:
+    Magnitude: 1.5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0172AC:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 01FF2B:Dragonborn.esm
+  Data:
+    Magnitude: 10
+    Duration: 1

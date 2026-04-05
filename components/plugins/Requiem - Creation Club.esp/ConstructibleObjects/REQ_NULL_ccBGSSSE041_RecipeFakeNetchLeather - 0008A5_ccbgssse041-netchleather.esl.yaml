@@ -1,0 +1,37 @@
+FormKey: 0008A5:ccbgssse041-netchleather.esl
+EditorID: REQ_NULL_ccBGSSSE041_RecipeFakeNetchLeather
+Items:
+- Item:
+    Item: 033760:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 077E1E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0DB5D2:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00081C:ccbgssse041-netchleather.esl
+    Stage: 200
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00081C:ccbgssse041-netchleather.esl
+    Stage: 1000
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00081C:ccbgssse041-netchleather.esl
+    Stage: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 00081C:ccbgssse041-netchleather.esl
+  ComparisonValue: 30
+CreatedObject: 0008A3:ccbgssse041-netchleather.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

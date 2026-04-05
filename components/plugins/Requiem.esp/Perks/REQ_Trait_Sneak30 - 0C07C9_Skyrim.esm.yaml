@@ -1,0 +1,13 @@
+FormKey: 0C07C9:Skyrim.esm
+EditorID: REQ_Trait_Sneak30
+Description:
+  TargetLanguage: English
+  Value: 30% harder to detect when sneaking.
+NumRanks: 5
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModDetectionSneakSkill
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 30

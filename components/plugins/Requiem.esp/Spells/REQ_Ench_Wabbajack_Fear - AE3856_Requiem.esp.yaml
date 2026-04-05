@@ -1,0 +1,19 @@
+FormKey: AE3856:Requiem.esp
+EditorID: REQ_Ench_Wabbajack_Fear
+Name:
+  TargetLanguage: English
+  Value: Wabbajack - Fear
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+Effects:
+- BaseEffect: 01EA77:Skyrim.esm
+  Data:
+    Magnitude: 9999
+    Duration: 30

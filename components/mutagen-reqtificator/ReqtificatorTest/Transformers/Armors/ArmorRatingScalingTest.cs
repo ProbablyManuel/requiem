@@ -13,10 +13,10 @@ namespace ReqtificatorTest.Transformers.Armors
 {
     public class ArmorRatingScalingTest
     {
-        public static readonly ArmorRatingThresholds LightArmorThresholds = new(10, 20, 30, 40, 50);
-        public static readonly ArmorRatingThresholds HeavyArmorThresholds = new(60, 70, 80, 90, 100);
+        private static readonly ArmorRatingThresholds LightArmorThresholds = new(10, 20, 30, 40, 50);
+        private static readonly ArmorRatingThresholds HeavyArmorThresholds = new(60, 70, 80, 90, 100);
 
-        public static readonly ArmorPatchingConfiguration Config = new(HeavyArmorThresholds, LightArmorThresholds);
+        private static readonly ArmorPatchingConfiguration Config = new(HeavyArmorThresholds, LightArmorThresholds);
 
         [Fact]
         public void Should_scale_up_light_body_armor_ratings_if_below_the_corresponding_threshold()
@@ -166,7 +166,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate() { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>> { Keywords.ArmorBody },
+                Keywords = [Keywords.ArmorBody],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
                 ArmorRating = 42.0f
             };
@@ -185,8 +185,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
-                    {Keywords.ArmorBody, Keywords.AlreadyReqtified},
+                Keywords = [Keywords.ArmorBody, Keywords.AlreadyReqtified],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
                 ArmorRating = 42.0f
             };
@@ -205,8 +204,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var input = new Armor(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 BodyTemplate = new BodyTemplate { ArmorType = ArmorType.HeavyArmor },
-                Keywords = new ExtendedList<IFormLinkGetter<IKeywordGetter>>
-                    {Keywords.ArmorBody, Keywords.NoArmorRatingRescaling},
+                Keywords = [Keywords.ArmorBody, Keywords.NoArmorRatingRescaling],
                 TemplateArmor = new FormLinkNullable<IArmorGetter>(template),
                 ArmorRating = 42.0f
             };

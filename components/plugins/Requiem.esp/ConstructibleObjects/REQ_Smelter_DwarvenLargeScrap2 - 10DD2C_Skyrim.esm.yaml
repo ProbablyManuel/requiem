@@ -1,0 +1,18 @@
+FormKey: 10DD2C:Skyrim.esm
+EditorID: REQ_Smelter_DwarvenLargeScrap2
+Items:
+- Item:
+    Item: 0C8874:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 43D07D:Requiem.esp
+    Count: 5
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 0C8874:Skyrim.esm
+CreatedObject: 0DB8A2:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 5

@@ -1,0 +1,42 @@
+FormKey: 0F80FC:Skyrim.esm
+EditorID: VoiceDragonFireballEffect1
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: Fireball
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 2
+ResistValue: ResistFire
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 1
+HitShader: 01B212:Skyrim.esm
+SpellmakingArea: 15
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 022383:Skyrim.esm
+Explosion: 0E1530:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 020DE1:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 3
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Release
+  Sound: 03F2EA:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5E4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: There are few things a Dragon's scorching breath cannot reduce to ashes and cinders within a trice.

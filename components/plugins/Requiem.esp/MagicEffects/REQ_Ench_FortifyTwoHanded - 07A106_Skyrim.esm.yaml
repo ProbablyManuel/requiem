@@ -1,0 +1,23 @@
+FormKey: 07A106:Skyrim.esm
+EditorID: REQ_Ench_FortifyTwoHanded
+Name:
+  TargetLanguage: English
+  Value: Fortify Two-Handed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F73:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 22
+EnchantShader: 092DEC:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: TwoHandedPowerModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Two-handed weapons deal <mag>% more damage.

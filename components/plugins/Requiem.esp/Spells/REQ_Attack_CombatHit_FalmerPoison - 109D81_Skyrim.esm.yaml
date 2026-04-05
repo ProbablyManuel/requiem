@@ -1,0 +1,24 @@
+FormKey: 109D81:Skyrim.esm
+EditorID: REQ_Attack_CombatHit_FalmerPoison
+Name:
+  TargetLanguage: English
+  Value: Falmer Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+Type: Poison
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 109D7C:Skyrim.esm
+  Data:
+    Magnitude: 33
+    Duration: 3
+- BaseEffect: 03281D:Requiem.esp
+  Data:
+    Duration: 7

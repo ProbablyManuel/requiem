@@ -1,0 +1,46 @@
+FormKey: 48263B:Requiem.esp
+EditorID: REQ_Illusion3_ShadowShield_FortifyArmorRating
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.75
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: 48263E:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Fortify Armor Rating
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+CastingLight: 028530:Skyrim.esm
+HitShader: 6BBEA4:Requiem.esp
+MinimumSkillLevel: 50
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: DamageResist
+CastType: FireAndForget
+CastingArt: 0225B0:Skyrim.esm
+HitEffectArt: 0339C8:Skyrim.esm
+DualCastScale: 1
+PerkToApply: 3F537A:Requiem.esp
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The caster shifts his body partially out of this plane, raising his armor rating by <mag>.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 493B8F:Requiem.esp

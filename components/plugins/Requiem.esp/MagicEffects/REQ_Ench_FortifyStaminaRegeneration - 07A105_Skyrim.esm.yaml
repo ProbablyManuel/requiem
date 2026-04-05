@@ -1,0 +1,23 @@
+FormKey: 07A105:Skyrim.esm
+EditorID: REQ_Ench_FortifyStaminaRegeneration
+Name:
+  TargetLanguage: English
+  Value: Fortify Stamina Regeneration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F72:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 2.5
+EnchantShader: 092DEE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: StaminaRateMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina regenerates <mag>% faster.

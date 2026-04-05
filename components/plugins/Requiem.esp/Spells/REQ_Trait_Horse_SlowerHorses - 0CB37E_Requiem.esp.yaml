@@ -1,0 +1,22 @@
+FormKey: 0CB37E:Requiem.esp
+EditorID: REQ_Trait_Horse_SlowerHorses
+Name:
+  TargetLanguage: English
+  Value: Slower Horses
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Ability
+Effects:
+- BaseEffect: 062276:Requiem.esp
+  Data:
+    Magnitude: 25
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 0CB37F:Requiem.esp
+    ComparisonValue: 1

@@ -1,0 +1,26 @@
+FormKey: 064B3B:Skyrim.esm
+EditorID: REQ_Food_Fish_Cooked_Salmon
+ObjectBounds:
+  First: -4, -7, -1
+  Second: 4, 7, 1
+Name:
+  TargetLanguage: English
+  Value: Salmon Steak
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\CookedSalmonSteak01.nif
+  Data: 0x020000000200000000000000CAF19F3264647300B914823615C2866C64647300B9148236
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 3600
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

@@ -1,0 +1,64 @@
+FormKey: 2F1740:Requiem.esp
+EditorID: REQ_Restoration4_HealingAuraOnSelf_RestoreHealth
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+Keywords:
+- 01CEB0:Skyrim.esm
+- 028522:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 1
+MagicSkill: Restoration
+CastingLight: 03F1B5:Skyrim.esm
+HitShader: 012FD9:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+  Association: 028522:Requiem.esp
+CastType: FireAndForget
+CastingArt: 01C859:Skyrim.esm
+HitEffectArt: 03F1B4:Skyrim.esm
+SkillUsageMultiplier: 0.2
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The recipient is surrounded by a powerful aura that restores health for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 44BE5E:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

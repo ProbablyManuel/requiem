@@ -1,0 +1,35 @@
+FormKey: 06BC0E:Skyrim.esm
+EditorID: WispWrappings
+Version2: 14
+ObjectBounds:
+  First: -4, -7, 0
+  Second: 4, 7, 0
+Name:
+  TargetLanguage: English
+  Value: Wisp Wrappings
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\WispWrappings.nif
+  Data: 0x020000000200000000000000F5AC9B1264647300CFEE2DC164E5822164647300CFEE2DC1
+Value: 30
+Weight: 0.1
+IngredientValue: 30
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 20B30F:Requiem.esp
+  Data:
+    Duration: 4
+- BaseEffect: 03EB26:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 300
+- BaseEffect: 039E51:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 60

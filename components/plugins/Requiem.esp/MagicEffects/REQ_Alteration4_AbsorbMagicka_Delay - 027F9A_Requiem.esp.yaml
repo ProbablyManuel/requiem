@@ -1,0 +1,31 @@
+FormKey: 027F9A:Requiem.esp
+EditorID: REQ_Alteration4_AbsorbMagicka_Delay
+Name:
+  TargetLanguage: English
+  Value: Delay
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- NoHitEvent
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- Painless
+- NoHitEffect
+MagicSkill: Alteration
+TaperWeight: 1
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 029B0B:Requiem.esp
+CastType: Concentration
+TargetType: Aimed
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

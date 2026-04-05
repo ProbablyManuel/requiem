@@ -1,0 +1,19 @@
+FormKey: AE3657:Requiem.esp
+EditorID: REQ_Smelter_Heavy_Madness_Head
+Items:
+- Item:
+    Item: 000BBC:ccbgssse025-advdsgs.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 000BBC:ccbgssse025-advdsgs.esm
+CreatedObject: 000BC8:ccbgssse025-advdsgs.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,67 @@
+FormKey: 04A38F:Skyrim.esm
+EditorID: REQ_Artifact_EbonyBlade
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DA08EbonyBladeScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DA08
+      Object: 04A37B:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: InitialPickup
+      Object: 062CF0:Skyrim.esm
+ObjectBounds:
+  First: -5, -22, -4
+  Second: 9, 88, 5
+Name:
+  TargetLanguage: English
+  Value: Ebony Blade
+Model:
+  File: Weapons\EbonyBlade\EbonyBlade.nif
+  Data: 0x0200000007000000000000004FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B8630545496A5C646473007FD15913DA132715646473007FD15913B65D9E1F64647300262C333BF63890AC64647300262C333B
+ObjectEffect: 10FAF0:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 097786:Skyrim.esm
+Keywords:
+- 06D931:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0917E8:Skyrim.esm
+- 0A8668:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- AD3AF7:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: Mephala's sphere is murder, sex, secrets, and meddling in the affairs of mortals. The Ebony Blade grows in power whenever Mephala's champion betrays and murders a confidant.
+ImpactDataSet: 0949D5:Skyrim.esm
+FirstPersonModel: 0C1434:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 03C8A9:Skyrim.esm
+UnequipSound: 03C8AA:Skyrim.esm
+BasicStats:
+  Value: 80000
+  Weight: 19
+  Damage: 22
+Data:
+  AnimationType: TwoHandSword
+  Unused: 0x000000
+  Speed: 0.75
+  Reach: 1.3
+  Flags:
+  - NonHostile
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.1
+Critical:
+  Damage: 11
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

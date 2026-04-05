@@ -1,0 +1,62 @@
+FormKey: 022F52:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Forelhost03
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Forelhost Refectory
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001A1711'
+  DirectionalColor: '#004D5557'
+  FogNearColor: '#00484F66'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#001C1711'
+    DirectionalXMinus: '#00171710'
+    DirectionalYPlus: '#001A1811'
+    DirectionalYMinus: '#001A1511'
+    DirectionalZPlus: '#000C0A07'
+    DirectionalZMinus: '#0027231A'
+    Specular: '#00453D56'
+    Scale: 1
+  FogFarColor: '#00495664'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 03128B:Skyrim.esm
+WaterHeight: 0
+Location: 01917A:Skyrim.esm
+SkyAndWeatherFromRegion: 04D7FD:Skyrim.esm
+AcousticSpace: 01E1A0:Skyrim.esm
+EncounterZone: 03EC18:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: AD382A:Requiem.esp
+  MajorRecordFlagsRaw: 1610612736
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  - 0x40000000
+  Base: 0139BA:Skyrim.esm
+  Placement:
+    Position: 1277.885, -17.97261, 2335.2825
+    Rotation: 0, 0, 3.1415927
+MajorFlags:
+- 0x40000

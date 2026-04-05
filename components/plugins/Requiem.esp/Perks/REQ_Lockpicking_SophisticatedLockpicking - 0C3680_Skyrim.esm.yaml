@@ -1,0 +1,25 @@
+FormKey: 0C3680:Skyrim.esm
+EditorID: REQ_Lockpicking_SophisticatedLockpicking
+Name:
+  TargetLanguage: English
+  Value: Sophisticated Lockpicking
+Description:
+  TargetLanguage: English
+  Value: You have memorized the inner mechanics of sophisticated locks and security systems.<br>[+2 Lockpicking Expertise]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Lockpicking
+  ComparisonValue: 60
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE125:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 5
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: AD388A:Requiem.esp

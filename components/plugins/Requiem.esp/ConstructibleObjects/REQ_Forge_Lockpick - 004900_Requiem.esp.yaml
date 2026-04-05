@@ -1,0 +1,26 @@
+FormKey: 004900:Requiem.esp
+EditorID: REQ_Forge_Lockpick
+Items:
+- Item:
+    Item: 05ACE5:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0F392A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 05ACE5:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 00000A:Skyrim.esm
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 10

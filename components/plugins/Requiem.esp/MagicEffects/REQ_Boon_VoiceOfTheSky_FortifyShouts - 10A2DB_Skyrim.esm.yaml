@@ -1,0 +1,23 @@
+FormKey: 10A2DB:Skyrim.esm
+EditorID: REQ_Boon_VoiceOfTheSky_FortifyShouts
+Name:
+  TargetLanguage: English
+  Value: Fortify Shouts
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+SecondActorValueWeight: -0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: ShoutRecoveryMult
+DualCastScale: 1
+Sounds:
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The Voice can be used <mag>% more often.

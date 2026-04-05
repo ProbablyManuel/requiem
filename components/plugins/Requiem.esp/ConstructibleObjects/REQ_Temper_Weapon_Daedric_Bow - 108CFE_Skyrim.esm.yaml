@@ -1,0 +1,20 @@
+FormKey: 108CFE:Skyrim.esm
+EditorID: REQ_Temper_Weapon_Daedric_Bow
+Items:
+- Item:
+    Item: 05AD9D:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetCurrentTimeConditionData
+  ComparisonValue: 23
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB413:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 0139B5:Skyrim.esm
+WorkbenchKeyword: 088108:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,27 @@
+FormKey: 011BAB:Dawnguard.esm
+EditorID: REQ_NULL_DLCDawnguardRuneHammerAbility
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1testPhilRuneHammerAbilitySCRIPT
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: runeSpell
+      Object: 05DB90:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Runehammer Ability
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- HideInUI
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

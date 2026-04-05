@@ -1,0 +1,34 @@
+FormKey: 000810:ccffbsse002-crossbowpack.esl
+EditorID: REQ_NULL_ccFFBSSE002_DLC1RecipeTechDaedricCrossbow
+Items:
+- Item:
+    Item: 03AD5B:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 05AD9D:Skyrim.esm
+    Count: 2
+- Item:
+    Item: 06F993:Skyrim.esm
+    Count: 3
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB413:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00083F:ccffbsse002-crossbowpack.esl
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00398A:Dawnguard.esm
+CreatedObject: 000808:ccffbsse002-crossbowpack.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

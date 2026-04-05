@@ -1,0 +1,69 @@
+FormKey: 00E8D3:Dawnguard.esm
+EditorID: REQ_Conjuration2_NecromanticEmpowermentOnTarget_NecromanticEmpowerment
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: AllowForTeammate
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB87F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Necromantic Empowerment
+MenuDisplayObject: 1097CD:Skyrim.esm
+Keywords:
+- 01CEB0:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 1
+MagicSkill: Conjuration
+CastingLight: 03BA90:Skyrim.esm
+HitShader: 04E220:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FDC:Skyrim.esm
+CastType: FireAndForget
+TargetType: TargetActor
+CastingArt: 06F79A:Skyrim.esm
+HitEffectArt: 04E221:Skyrim.esm
+SkillUsageMultiplier: 0.8
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA53:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+- Type: Release
+  Sound: 07D014:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster heals the undead target for <mag>.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

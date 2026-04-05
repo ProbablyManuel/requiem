@@ -30,9 +30,27 @@ EndFunction
 
 Function RescaleEnchantment()
 	Int SoulsTrapped = Game.QueryStat("Souls Trapped")
-	MaceOfMolagBalEnch.SetNthEffectMagnitude(0, SoulsTrapped * 0.1)
-	MaceOfMolagBalEnch.SetNthEffectMagnitude(1, SoulsTrapped * 0.1)
-	MaceOfMolagBalEnch.SetNthEffectDuration(2, SoulsTrapped / 100)
-	Description.SetNthEffectMagnitude(0, SoulsTrapped * 0.1)
-	SoulTrapDuration.SetValueInt(SoulsTrapped / 100)
+	Float Absorb = Min(10.0 + SoulsTrapped * 0.1, 75.0)
+	Int SoulTrap = MinInt(4 + SoulsTrapped / 25, 30)
+	MaceOfMolagBalEnch.SetNthEffectMagnitude(0, Absorb)
+	MaceOfMolagBalEnch.SetNthEffectMagnitude(1, Absorb)
+	MaceOfMolagBalEnch.SetNthEffectDuration(2, SoulTrap)
+	Description.SetNthEffectMagnitude(0, Absorb)
+	SoulTrapDuration.SetValueInt(SoulTrap)
+EndFunction
+
+Float Function Min(Float a, Float b)
+	If a < b
+		Return a
+	Else
+		Return b
+	EndIf
+EndFunction
+
+Int Function MinInt(Int a, Int b)
+	If a < b
+		Return a
+	Else
+		Return b
+	EndIf
 EndFunction

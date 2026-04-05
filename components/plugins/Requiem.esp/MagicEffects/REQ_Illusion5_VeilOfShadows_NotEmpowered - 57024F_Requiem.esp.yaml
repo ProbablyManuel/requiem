@@ -1,0 +1,25 @@
+FormKey: 57024F:Requiem.esp
+EditorID: REQ_Illusion5_VeilOfShadows_NotEmpowered
+Name:
+  TargetLanguage: English
+  Value: Not Empowered
+Flags:
+- NoArea
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If not empowered, the caster cannot maintain the spell while moving swiftly.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData

@@ -1,0 +1,31 @@
+FormKey: 0F2011:Skyrim.esm
+EditorID: REQ_Food_Meat_Raw_Chicken
+ObjectBounds:
+  First: -5, -7, 0
+  Second: 5, 7, 3
+Name:
+  TargetLanguage: English
+  Value: Chicken Breast
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\PheasantMeat01.nif
+  Data: 0x020000000200000000000000C18756AF64647300484A40BF1E52143664647300484A40BF
+  AlternateTextures:
+  - Name: PheasantMeat01:0
+    NewTexture: 0F2010:Skyrim.esm
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

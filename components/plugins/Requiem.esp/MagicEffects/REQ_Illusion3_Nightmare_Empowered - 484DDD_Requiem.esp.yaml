@@ -1,0 +1,41 @@
+FormKey: 484DDD:Requiem.esp
+EditorID: REQ_Illusion3_Nightmare_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+Flags:
+- NoHitEvent
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+MagicSkill: Illusion
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Empowering the spell can kill sleeping targets instantly.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 484DDB:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetSleepingConditionData
+  ComparisonValue: 3
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

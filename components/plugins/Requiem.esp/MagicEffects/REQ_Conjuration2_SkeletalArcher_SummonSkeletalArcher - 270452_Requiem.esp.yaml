@@ -1,0 +1,43 @@
+FormKey: 270452:Requiem.esp
+EditorID: REQ_Conjuration2_SkeletalArcher_SummonSkeletalArcher
+Name:
+  TargetLanguage: English
+  Value: Summon Skeletal Archer
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 02482B:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+BaseCost: 50
+MagicSkill: Conjuration
+CastingLight: 03BA90:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: 270445:Requiem.esp
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 03CDFC:Skyrim.esm
+HitEffectArt: 03F811:Skyrim.esm
+ImpactData: 03A1E9:Skyrim.esm
+SkillUsageMultiplier: 0.873016
+DualCastScale: 1
+ImageSpaceModifier: 06F79B:Skyrim.esm
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster summons the skeletal remains of an archer from the realms of the deceased for <dur> seconds.

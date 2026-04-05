@@ -1,0 +1,44 @@
+FormKey: 03D4F2:Requiem.esp
+EditorID: REQ_Effect_EnchantmentAdvFlameBurst
+VirtualMachineAdapter:
+  Scripts:
+  - Name: AA000XarrianEnchantAdvExplosionSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: NewProperty
+      Object: 03EAD5:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Flameburst
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- PowerAffectsMagnitude
+BaseCost: 0.9
+ResistValue: ResistFire
+TaperWeight: 0.2
+HitShader: 01B212:Skyrim.esm
+EnchantShader: 04E810:Skyrim.esm
+SpellmakingArea: 25
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Explosion: 06051F:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Causes a fiery explosion when hitting a target, dealing <mag> fire damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm

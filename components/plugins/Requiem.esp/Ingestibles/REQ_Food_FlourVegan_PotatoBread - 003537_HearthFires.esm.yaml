@@ -1,0 +1,33 @@
+FormKey: 003537:HearthFires.esm
+EditorID: REQ_Food_FlourVegan_PotatoBread
+ObjectBounds:
+  First: -12, -6, 0
+  Second: 12, 6, 5
+Name:
+  TargetLanguage: English
+  Value: Potato Bread
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\Bread01A.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: Bread01A:0
+    NewTexture: 003546:HearthFires.esm
+Weight: 0.5
+Value: 14
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371C:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 3600
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 3600
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

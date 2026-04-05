@@ -1,0 +1,22 @@
+FormKey: 058F6E:Skyrim.esm
+EditorID: REQ_HeavyArmor_CombatCasting
+Name:
+  TargetLanguage: English
+  Value: Combat Casting
+Description:
+  TargetLanguage: English
+  Value: You are able to keep concentrated enough in heavy armor.<br>[No spell cost penalty for casting Novice and Apprentice spells in heavy armor]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BCD2A:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: HeavyArmor
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True

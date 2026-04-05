@@ -1,0 +1,37 @@
+FormKey: 0E4F0C:Skyrim.esm
+EditorID: DragonflyBlue
+Version2: 14
+ObjectBounds:
+  First: -8, -9, -1
+  Second: 8, 8, 4
+Name:
+  TargetLanguage: English
+  Value: Blue Dartwing
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\DragonFlyBlue.nif
+  Data: 0x020000000300000000000000B9BB79ED6464730038973CEAEE1D051A6464730038973CEA7AA5D2346464730038973CEA
+PickUpSound: 100527:Skyrim.esm
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EAEC:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EB20:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 0.5
+    Duration: 20
+- BaseEffect: 073F20:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30

@@ -1,0 +1,22 @@
+FormKey: AD8C9F:Requiem.esp
+EditorID: REQ_Cloak_ArmorBonus_Imperial4
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: AD8C7B:Requiem.esp
+  Data:
+    Magnitude: 0.16
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetInFactionConditionData
+      Faction: 02BF9A:Skyrim.esm
+    ComparisonValue: 1

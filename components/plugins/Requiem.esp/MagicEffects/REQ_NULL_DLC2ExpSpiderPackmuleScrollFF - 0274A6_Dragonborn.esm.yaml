@@ -1,0 +1,43 @@
+FormKey: 0274A6:Dragonborn.esm
+EditorID: REQ_NULL_DLC2ExpSpiderPackmuleScrollFF
+Name:
+  TargetLanguage: English
+  Value: Pack Spider
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 2.3
+MagicSkill: Destruction
+TaperWeight: 0.3
+MinimumSkillLevel: 50
+SpellmakingArea: 5
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 0274A4:Dragonborn.esm
+Explosion: 0274A7:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 0274A3:Dragonborn.esm
+ImpactData: 03D5DE:Dragonborn.esm
+SkillUsageMultiplier: 0.5
+DualCastScale: 1.1
+Sounds:
+- Sound: 027EA3:Dragonborn.esm
+- Type: Charge
+  Sound: 027EA0:Dragonborn.esm
+- Type: Ready
+  Sound: 027EA1:Dragonborn.esm
+- Type: Release
+  Sound: 027EA2:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: Spawns a spider that can be used to haul items.  Only one can be spawned at once.

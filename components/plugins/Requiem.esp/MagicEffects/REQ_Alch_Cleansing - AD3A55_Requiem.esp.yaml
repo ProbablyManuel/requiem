@@ -1,0 +1,28 @@
+FormKey: AD3A55:Requiem.esp
+EditorID: REQ_Alch_Cleansing
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_DispelAllSpells
+Name:
+  TargetLanguage: English
+  Value: Cleansing
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0F8A4E:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: CureDisease
+CastType: FireAndForget
+HitEffectArt: 04E221:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: All temporary effects are dispelled.

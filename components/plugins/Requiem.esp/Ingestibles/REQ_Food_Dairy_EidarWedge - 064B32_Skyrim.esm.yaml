@@ -1,0 +1,26 @@
+FormKey: 064B32:Skyrim.esm
+EditorID: REQ_Food_Dairy_EidarWedge
+ObjectBounds:
+  First: -3, -4, 0
+  Second: 3, 4, 8
+Name:
+  TargetLanguage: English
+  Value: Eidar Cheese Wedge
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\CheeseWedge02.nif
+  Data: 0x020000000200000000000000C4A2D1CF64647300B91482369B12670064647300B9148236
+Weight: 0.25
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371B:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 1200
+- BaseEffect: 002EE1:Update.esm
+  Data: {}

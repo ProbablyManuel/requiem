@@ -1,0 +1,22 @@
+FormKey: 0CB41A:Skyrim.esm
+EditorID: REQ_Conjuration_ElementalBinding
+Name:
+  TargetLanguage: English
+  Value: Elemental Binding
+Description:
+  TargetLanguage: English
+  Value: Your knowledge of Oblivion's elemental aspects increases the strength of all your summoned Atronachs<br>while the highest level rituals will conjure Thralls that are immune to Banishment and Control spells.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB419:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True

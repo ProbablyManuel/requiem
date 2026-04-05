@@ -64,6 +64,7 @@ Mods included in Requiem
 * [Katana Crafting](https://www.nexusmods.com/skyrimspecialedition/mods/5306) by [lautasantenni](https://www.nexusmods.com/users/983976)
 * [Low-Tier Wooden Crossbow](https://www.nexusmods.com/skyrim/mods/54134) by [Jokerine](https://www.nexusmods.com/users/2543917)
 * [Modern Brawl Bug Fix](https://www.nexusmods.com/skyrim/mods/77465) by [EnaiSiaion](https://www.nexusmods.com/users/3959191)
+* [Ranged Block Recoil Fix](https://www.nexusmods.com/skyrimspecialedition/mods/141037) by [AugustGuy](https://www.nexusmods.com/users/169661178).
 * [Shields Block Poisons](https://www.nexusmods.com/skyrim/mods/79280) by [Paulicus](https://www.nexusmods.com/users/23313089)
 * [Smaller Ice Spike and Ice Spear](https://www.nexusmods.com/skyrim/mods/31899) by [odin_ml](https://www.nexusmods.com/users/50001)
 * [Smaller Kingthings Petrock fonts](https://www.nexusmods.com/skyrim/mods/20773) by[Eckhart](https://www.nexusmods.com/users/2412528) with font improvements (umlauts, parantheses and accents) by myzticrice

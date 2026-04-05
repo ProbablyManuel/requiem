@@ -1,0 +1,21 @@
+FormKey: 018CD8:Dragonborn.esm
+EditorID: REQ_NULL_testPhilFox
+Name:
+  TargetLanguage: English
+  Value: Blessing Of The Fox
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+- IgnoreResistance
+Type: LesserPower
+CastType: FireAndForget
+Effects:
+- BaseEffect: 018CD9:Dragonborn.esm
+  Data:
+    Magnitude: 70
+    Area: 500
+    Duration: 30

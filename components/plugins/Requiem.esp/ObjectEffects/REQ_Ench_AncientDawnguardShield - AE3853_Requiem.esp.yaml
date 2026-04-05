@@ -1,0 +1,23 @@
+FormKey: AE3853:Requiem.esp
+EditorID: REQ_Ench_AncientDawnguardShield
+Name:
+  TargetLanguage: English
+  Value: Ancient Dawnguard Shield Enchantment
+Flags:
+- NoAutoCalc
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 011BB1:Dawnguard.esm
+  Data:
+    Magnitude: 12
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Stamina
+    ComparisonValue: 1

@@ -1,0 +1,54 @@
+FormKey: 0ACC41:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Dwarven_Sword_Shock2
+ObjectBounds:
+  First: -5, -13, -1
+  Second: 5, 71, 1
+Name:
+  TargetLanguage: English
+  Value: Dwarven Sword of Arcing
+Model:
+  File: Weapons\Dwarven\DwarvenSword.nif
+  Data: 0x0200000004000000000000007731B5C164647300364E8FC27A2389A664647300364E8FC2188FFC7C64647300262C333BC072803F64647300364E8FC2
+ObjectEffect: 045D97:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E71A:Skyrim.esm
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 036BCA:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 180
+  Weight: 12
+  Damage: 10
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 5
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 013999:Skyrim.esm

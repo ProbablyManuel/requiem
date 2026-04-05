@@ -1,0 +1,55 @@
+FormKey: 0CDB70:Skyrim.esm
+EditorID: REQ_Alteration5_MageArmorOnSelf
+Name:
+  TargetLanguage: English
+  Value: Mage Armor on Self (Rank V)
+MenuDisplayObject: 109AC2:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1000
+Flags:
+- ManualCostCalc
+ChargeTime: 4.5
+CastType: FireAndForget
+HalfCostPerk: 0C44BA:Skyrim.esm
+Effects:
+- BaseEffect: 0CDB75:Skyrim.esm
+  Data:
+    Magnitude: 240
+    Duration: 7
+- BaseEffect: 104AB5:Skyrim.esm
+  Data:
+    Magnitude: 360
+    Duration: 7
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0D7999:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnTypeIndex: 0
+      Perk: 0D799A:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      RunOnTypeIndex: 0
+      Perk: 0D799B:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD3:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: 06BBD2:Skyrim.esm

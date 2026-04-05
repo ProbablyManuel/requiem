@@ -1,0 +1,22 @@
+FormKey: 000811:ccbgssse041-netchleather.esl
+EditorID: REQ_NULL_ccBGSSSE041_TemperArmorNetchLeatherShieldTower
+Items:
+- Item:
+    Item: 000909:ccbgssse041-netchleather.esl
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 000805:ccbgssse041-netchleather.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

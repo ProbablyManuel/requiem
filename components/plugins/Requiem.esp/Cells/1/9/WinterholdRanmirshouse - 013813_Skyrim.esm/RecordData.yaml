@@ -1,0 +1,63 @@
+FormKey: 013813:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WinterholdRanmirshouse
+Version2: 3
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Birna's Oddments
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01EB7B:Skyrim.esm
+Owner: 09E28D:Skyrim.esm
+LockList: 0967E4:Skyrim.esm
+SkyAndWeatherFromRegion: 10FDC6:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 09DA64:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 3
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 09DA63:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 01C187:Skyrim.esm
+  LocationReference: 01EB7B:Skyrim.esm
+  Placement:
+    Position: -1098.4266, -321.91663, 2.9802322E-08
+MajorFlags:
+- 0x40000

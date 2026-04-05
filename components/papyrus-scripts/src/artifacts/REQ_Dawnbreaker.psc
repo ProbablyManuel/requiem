@@ -30,8 +30,18 @@ EndFunction
 
 Function RescaleEnchantment()
 	Int UndeadKilled = Game.QueryStat("Undead Killed")
-	DawnbreakerEnch.SetNthEffectMagnitude(1, UndeadKilled * 0.25)
-	DawnbreakerEnch.SetNthEffectMagnitude(2, UndeadKilled / 10)
-	Description.SetNthEffectMagnitude(0, UndeadKilled * 0.25)
-	TurnUndeadMagnitude.SetValueInt(UndeadKilled / 10)
+	Float SunDamage = Min(20.0 + UndeadKilled * 0.25, 200.0)
+	Float TurnUndead = Min(8.0 + UndeadKilled / 10, 80.0)
+	DawnbreakerEnch.SetNthEffectMagnitude(1, SunDamage)
+	DawnbreakerEnch.SetNthEffectMagnitude(2, TurnUndead)
+	Description.SetNthEffectMagnitude(0, SunDamage)
+	TurnUndeadMagnitude.SetValue(TurnUndead)
+EndFunction
+
+Float Function Min(Float a, Float b)
+	If a < b
+		Return a
+	Else
+		Return b
+	EndIf
 EndFunction

@@ -1,0 +1,81 @@
+FormKey: 10FE1E:Skyrim.esm
+EditorID: REQ_NULL_L_VoiceDragonFireBall01
+Name:
+  TargetLanguage: English
+  Value: Fire Ball
+MenuDisplayObject: 04E264:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Voice
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 0F80FC:Skyrim.esm
+  Data:
+    Magnitude: 600
+    Area: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetLevelConditionData
+    ComparisonValue: 16
+- BaseEffect: 0F80FC:Skyrim.esm
+  Data:
+    Magnitude: 600
+    Area: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetLevelConditionData
+    ComparisonValue: 16
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetLevelConditionData
+    ComparisonValue: 23
+- BaseEffect: 0F80FC:Skyrim.esm
+  Data:
+    Magnitude: 600
+    Area: 16
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetLevelConditionData
+    ComparisonValue: 23
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetLevelConditionData
+    ComparisonValue: 31
+- BaseEffect: 0F80FC:Skyrim.esm
+  Data:
+    Magnitude: 600
+    Area: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetLevelConditionData
+    ComparisonValue: 31
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetLevelConditionData
+    ComparisonValue: 40
+- BaseEffect: 0F80FC:Skyrim.esm
+  Data:
+    Magnitude: 600
+    Area: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetLevelConditionData
+    ComparisonValue: 40

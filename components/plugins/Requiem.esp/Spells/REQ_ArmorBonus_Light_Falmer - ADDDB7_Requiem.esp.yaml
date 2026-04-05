@@ -1,0 +1,48 @@
+FormKey: ADDDB7:Requiem.esp
+EditorID: REQ_ArmorBonus_Light_Falmer
+Name:
+  TargetLanguage: English
+  Value: Falmer Light Armor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: ADDDB8:Requiem.esp
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BD:Update.esm
+    ComparisonValue: 1
+- BaseEffect: ADDDB8:Requiem.esp
+  Data:
+    Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BD:Update.esm
+    ComparisonValue: 2
+- BaseEffect: ADDDB8:Requiem.esp
+  Data:
+    Magnitude: 30
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BD:Update.esm
+    ComparisonValue: 3
+- BaseEffect: ADDDB8:Requiem.esp
+  Data:
+    Magnitude: 40
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BD:Update.esm
+    ComparisonValue: 4

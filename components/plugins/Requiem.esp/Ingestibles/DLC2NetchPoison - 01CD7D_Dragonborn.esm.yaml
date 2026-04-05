@@ -1,0 +1,36 @@
+FormKey: 01CD7D:Dragonborn.esm
+EditorID: DLC2NetchPoison
+Name:
+  TargetLanguage: English
+  Value: Netch Poison
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\FrostbiteVenom01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 150
+Flags:
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 0EA65A:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 073F30:Skyrim.esm
+  Data:
+    Duration: 3
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 03A157:Dragonborn.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: PoisonResist
+    ComparisonValue: 50

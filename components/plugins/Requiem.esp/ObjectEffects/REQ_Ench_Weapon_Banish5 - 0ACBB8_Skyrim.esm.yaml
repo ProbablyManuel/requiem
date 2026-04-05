@@ -1,0 +1,21 @@
+FormKey: 0ACBB8:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Banish5
+Name:
+  TargetLanguage: English
+  Value: Banish
+EnchantmentCost: 100
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 100
+TargetType: Touch
+EnchantType: Enchantment
+BaseEnchantment: 10FB93:Skyrim.esm
+Effects:
+- BaseEffect: 0ACBB5:Skyrim.esm
+  Data:
+    Magnitude: 20
+- BaseEffect: 19DC30:Requiem.esp
+  Data:
+    Magnitude: 80
+    Duration: 1

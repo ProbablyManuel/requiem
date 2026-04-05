@@ -1,0 +1,35 @@
+FormKey: 106E18:Skyrim.esm
+EditorID: CritterPondFish05Ingredient
+ObjectBounds:
+  First: -3, -10, 0
+  Second: 4, 9, 2
+Name:
+  TargetLanguage: English
+  Value: Histcarp
+Keywords:
+- 08CDEB:Skyrim.esm
+- AE3727:Requiem.esp
+Model:
+  File: Clutter\DeadAnimals\DeadPondFish05.nif
+  Data: 0x020000000300000000000000CA4B523464647300D2A84AD14A9E324764647300D2A84AD1CE353C0964647300262C333B
+Value: 6
+Weight: 0.25
+IngredientValue: 6
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 0.5
+    Duration: 20
+- BaseEffect: 03EAF8:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 073F2C:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 03AC2D:Skyrim.esm
+  Data:
+    Duration: 5

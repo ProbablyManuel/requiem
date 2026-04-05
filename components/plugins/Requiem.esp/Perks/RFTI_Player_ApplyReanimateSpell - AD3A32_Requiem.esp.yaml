@@ -1,0 +1,20 @@
+FormKey: AD3A32:Requiem.esp
+EditorID: RFTI_Player_ApplyReanimateSpell
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectSpell
+  Priority: 210
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 0581DD:Skyrim.esm
+  EntryPoint: ApplyReanimateSpell
+  PerkConditionTabCount: 3
+  Spell: 162476:Requiem.esp

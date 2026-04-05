@@ -1,0 +1,24 @@
+FormKey: 0E0CD1:Skyrim.esm
+EditorID: REQ_HazardSpell_GuardianCircle
+Name:
+  TargetLanguage: English
+  Value: Guardian Circle
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 169
+Flags:
+- NoAbsorbOrReflect
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 0E0CD4:Skyrim.esm
+  Data:
+    Magnitude: 35
+    Duration: 30
+- BaseEffect: 0E0CD2:Skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 2

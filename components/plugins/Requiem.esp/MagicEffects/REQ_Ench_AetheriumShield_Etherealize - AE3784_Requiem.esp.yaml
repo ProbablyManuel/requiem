@@ -1,0 +1,32 @@
+FormKey: AE3784:Requiem.esp
+EditorID: REQ_Ench_AetheriumShield_Etherealize
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicSetActorAlphaScript
+    Properties:
+    - MutagenObjectType: ScriptFloatProperty
+      Name: AlphaValue
+      Data: 0.33
+    - MutagenObjectType: ScriptBoolProperty
+      Name: FadeToAlpha
+      Data: True
+Name:
+  TargetLanguage: English
+  Value: Etherealize
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- FXPersist
+- HideInUI
+HitShader: 064D67:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Etherealize
+DualCastScale: 1
+ImageSpaceModifier: 0440D4:Skyrim.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

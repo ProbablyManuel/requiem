@@ -1,0 +1,49 @@
+FormKey: 029B93:Skyrim.esm
+EditorID: REQ_Staff_Restoration_HealingHands
+ObjectBounds:
+  First: -6, -67, -5
+  Second: 4, 67, 5
+Name:
+  TargetLanguage: English
+  Value: Staff of the Healing Hand
+Model:
+  File: Weapons\Staff01\Staff01.nif
+  Data: 0x02000000030000000000000018F2EE356464730014182719433381466464730014182719AB9539816464730053131ACC
+ObjectEffect: 0B62E2:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E716:Skyrim.esm
+- 0937A4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+FirstPersonModel: 07A91D:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03DE2C:Skyrim.esm
+UnequipSound: 03DE2D:Skyrim.esm
+BasicStats:
+  Value: 5
+  Weight: 8
+Data:
+  AnimationType: Staff
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Restoration
+Critical:
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 051B0C:Skyrim.esm

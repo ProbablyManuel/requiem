@@ -1,0 +1,32 @@
+FormKey: 02816C:Skyrim.esm
+EditorID: CrimeFactionReach
+Version2: 13
+Name:
+  TargetLanguage: English
+  Value: The Reach
+Relations:
+- Target: 091822:Skyrim.esm
+  Reaction: Enemy
+- Target: 0C4DE0:Skyrim.esm
+  Reaction: Enemy
+Flags:
+- TrackCrime
+- CrimeGoldUseDefaults
+- CanBeOwner
+ExteriorJailMarker: 03EF57:Skyrim.esm
+FollowerWaitMarker: 03EF57:Skyrim.esm
+StolenGoodsContainer: 03EF02:Skyrim.esm
+PlayerInventoryContainer: 03EF03:Skyrim.esm
+SharedCrimeFactionList: 026953:Skyrim.esm
+JailOutfit: 0A1983:Skyrim.esm
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+  Murder: 10000
+  Assault: 500
+  Trespass: 250
+  Pickpocket: 250
+  StealMult: 2
+  Escape: 5000
+  Werewolf: 10000
+VendorValues: {}

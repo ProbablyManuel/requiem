@@ -1,0 +1,29 @@
+FormKey: 105834:Skyrim.esm
+EditorID: REQ_NULL_dunAnsilvundDamageFFContact
+Name:
+  TargetLanguage: English
+  Value: Insubstantial
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+TaperWeight: 0.2
+HitShader: 085FAA:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: <mag> points of extra damage which ignores armor.

@@ -1,0 +1,19 @@
+FormKey: 3CB7A9:Requiem.esp
+EditorID: REQ_Smelter_Weapon_Orcish_Dagger
+Items:
+- Item:
+    Item: 01398E:Skyrim.esm
+    Count: 2
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 01398E:Skyrim.esm
+CreatedObject: 05AD99:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

@@ -1,0 +1,28 @@
+FormKey: 012CCC:Dawnguard.esm
+EditorID: REQ_NULL_DLC1abCrossbowStagger
+Name:
+  TargetLanguage: English
+  Value: Crossbow bonus
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 06C0F3:Skyrim.esm
+  Data:
+    Magnitude: 0.25
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetRandomPercentConditionData
+    ComparisonValue: 50
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+    ComparisonValue: 12

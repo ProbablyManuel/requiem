@@ -27,11 +27,25 @@ Function ReapplyNonPersistentChanges()
 EndFunction
 
 Function RescaleEnchantment()
-	Float EffectiveBaseHealth = Game.GetPlayer().GetBaseActorValue("Health") - 100
-	If EffectiveBaseHealth < 0
-		EffectiveBaseHealth = 0
+	Float Strength = Max(Game.GetPlayer().GetBaseActorValue("Health") - 100, 0.0)
+	Float Absorb = Min(10.0 + Strength * 0.5, 75.0)
+	VolendrungEnch.SetNthEffectMagnitude(0, Absorb)
+	VolendrungEnch.SetNthEffectMagnitude(2, Absorb)
+	EnchAbility.SetNthEffectMagnitude(0, Absorb)
+EndFunction
+
+Float Function Min(Float a, Float b)
+	If a < b
+		Return a
+	Else
+		Return b
 	EndIf
-	VolendrungEnch.SetNthEffectMagnitude(0, EffectiveBaseHealth * 0.3)
-	VolendrungEnch.SetNthEffectMagnitude(2, EffectiveBaseHealth * 0.3)
-	EnchAbility.SetNthEffectMagnitude(0, EffectiveBaseHealth * 0.3)
+EndFunction
+
+Float Function Max(Float a, Float b)
+	If a > b
+		Return a
+	Else
+		Return b
+	EndIf
 EndFunction

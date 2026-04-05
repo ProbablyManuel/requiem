@@ -1,0 +1,38 @@
+FormKey: 039D22:Dragonborn.esm
+EditorID: REQ_Cloth_Miraak_Body
+ObjectBounds:
+  First: -24, -19, 0
+  Second: 24, 22, 11
+Name:
+  TargetLanguage: English
+  Value: Miraak's Robes
+ObjectEffect: AE37D5:Requiem.esp
+WorldModel:
+  Male:
+    Model:
+      File: DLC02\Clothes\MiraakRobes\MiraakRobes_GND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: DLC02\Clothes\MiraakRobes\MiraakRobes_GND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0A8657:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Hermaeus Mora's sphere is scrying of the tides of Fate, of the past and future as read in the stars and heavens.
+Armature:
+- 02B0F6:Dragonborn.esm
+Value: 25000
+Weight: 4

@@ -1,0 +1,34 @@
+FormKey: 003535:HearthFires.esm
+EditorID: REQ_Drink5_ArgonianBloodwine
+ObjectBounds:
+  First: -5, -5, 0
+  Second: 5, 5, 29
+Name:
+  TargetLanguage: English
+  Value: Argonian Bloodwine
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: _BYOH\Clutter\Wine\WineBottle04.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 100
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 75
+    Duration: 900
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 1350
+- BaseEffect: AE372F:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 900

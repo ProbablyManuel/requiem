@@ -1,0 +1,25 @@
+FormKey: 03EB01:Skyrim.esm
+EditorID: REQ_Alch_FortifyCarryWeight
+Name:
+  TargetLanguage: English
+  Value: Fortify Carry Weight
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A2F:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.0725
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: CarryWeight
+  Association: 065A2F:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Carry weight increases by <mag> for <dur> seconds.

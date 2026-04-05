@@ -1,0 +1,27 @@
+FormKey: 0965B1:Skyrim.esm
+EditorID: REQ_NULL_HazardFireboltSpell
+Name:
+  TargetLanguage: English
+  Value: Fire
+MenuDisplayObject: 04E264:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 22
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 02ACD4:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 4
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 03AEA0:Skyrim.esm

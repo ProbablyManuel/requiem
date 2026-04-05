@@ -1,0 +1,51 @@
+FormKey: 10CAAF:Skyrim.esm
+EditorID: REQ_NULL_shieldChargeSpell
+Name:
+  TargetLanguage: English
+  Value: Shield Charge
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 10CAAB:Skyrim.esm
+  Data:
+    Magnitude: 6
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsRidingMountConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSneakingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSprintingConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1
+- BaseEffect: 017331:Skyrim.esm
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsRidingMountConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSneakingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSprintingConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1

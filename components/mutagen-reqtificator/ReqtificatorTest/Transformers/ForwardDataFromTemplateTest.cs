@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using FluentAssertions;
 using Moq;
 using Mutagen.Bethesda.Plugins;
@@ -14,12 +13,12 @@ namespace ReqtificatorTest.Transformers
 {
     public class ForwardDataFromTemplateTest
     {
-        public static readonly ModKey Skyrim = new("Skyrim", ModType.Master);
-        public static readonly ModKey VisualMod = new("Amazing Actors", ModType.Plugin);
-        public static readonly ModKey UnrelatedMod = new("Serious Loot", ModType.Light);
-        public static readonly ModKey DataMod = new("Skilled Actors", ModType.Plugin);
+        private static readonly ModKey Skyrim = new("Skyrim", ModType.Master);
+        private static readonly ModKey VisualMod = new("Amazing Actors", ModType.Plugin);
+        private static readonly ModKey UnrelatedMod = new("Serious Loot", ModType.Light);
+        private static readonly ModKey DataMod = new("Skilled Actors", ModType.Plugin);
 
-        private class Fixture
+        private sealed class Fixture
         {
             public static readonly FormKey Record = FormKey.Factory("123456:Skyrim.esm");
             public readonly Mock<IDataForwardingLogic<Npc, INpcGetter>> Logic = new(MockBehavior.Strict);
@@ -48,8 +47,8 @@ namespace ReqtificatorTest.Transformers
                         active);
 
                 Cache.Setup(c => c.ResolveAllContexts<Npc, INpcGetter>(Record, ResolveTarget.Winner))
-                    .Returns(new List<IModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>>
-                    {
+                    .Returns(
+                    [
                         new ModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>(DataMod,
                             DataRecord, null!, null!),
                         new ModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>(UnrelatedMod,
@@ -58,7 +57,7 @@ namespace ReqtificatorTest.Transformers
                             VisualRecord, null!, null!),
                         new ModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>(Skyrim,
                             SkyrimRecord, null!, null!)
-                    });
+                    ]);
                 Cache.Setup(c => c.ResolveContext<Npc, INpcGetter>(Record, ResolveTarget.Winner)).Returns(
                     new ModContext<ISkyrimMod, ISkyrimModGetter, Npc, INpcGetter>(DataMod, DataRecord, null!, null!));
             }

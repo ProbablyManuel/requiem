@@ -1,0 +1,27 @@
+FormKey: AE383C:Requiem.esp
+EditorID: REQ_Ench_NecromancersAmulet_FortifyHealth2
+Name:
+  TargetLanguage: English
+  Value: Fortify Health (Rank II)
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 357085:Requiem.esp
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health increases by <mag>. Most paralysis effects don't adversely affect you.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Health
+  ComparisonValue: 130

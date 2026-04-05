@@ -1,0 +1,54 @@
+FormKey: AE3859:Requiem.esp
+EditorID: REQ_Ench_Wabbajack_Freeze
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MagicDispelSpellOnHitScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Spell01
+      Object: AE3858:Requiem.esp
+  - Name: magiceffectshadersonendscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX01
+      Object: 0EA519:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EffectShaderFX02
+      Object: 0EA51A:Skyrim.esm
+  - Name: VoiceIceFormScript
+Name:
+  TargetLanguage: English
+  Value: Ice Form
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 1
+HitShader: 0DC20E:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+Projectile: 0DEDCA:Skyrim.esm
+CastType: FireAndForget
+ImpactData: 049B64:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+ImageSpaceModifier: 0DEDCB:Skyrim.esm
+Sounds:
+- Type: Release
+  Sound: 07F8E7:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm

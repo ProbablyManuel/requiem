@@ -1,0 +1,264 @@
+FormKey: 2F38A5:Requiem.esp
+EditorID: REQ_Quest_DisguiseObservers
+Name:
+  TargetLanguage: English
+  Value: REQ_DisguiseObservers
+Flags:
+- 0x1000
+NextAliasID: 8
+Aliases:
+- Name: Observer1
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPlayerTeammateConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDetectedConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: 000DB1:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 2
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetLineOfSightConditionData
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 1
+  Name: Observer2
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPlayerTeammateConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDetectedConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: 000DB1:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 2
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetLineOfSightConditionData
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 2
+  Name: Observer3
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPlayerTeammateConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDetectedConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: 000DB1:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 2
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetLineOfSightConditionData
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 3
+  Name: Observer4
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPlayerTeammateConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDetectedConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: 000DB1:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 2
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetLineOfSightConditionData
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 4
+  Name: Observer5
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPlayerTeammateConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDetectedConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: 000DB1:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 2
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetLineOfSightConditionData
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 5
+  Name: Observer6
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPlayerTeammateConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDetectedConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: 000DB1:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 2
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetLineOfSightConditionData
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 6
+  Name: Observer7
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPlayerTeammateConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDetectedConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: 000DB1:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 2
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetLineOfSightConditionData
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null
+- ID: 7
+  Name: Observer8
+  Flags:
+  - Optional
+  - MatchingRefInLoadedArea
+  - MatchingRefClosest
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetPlayerTeammateConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetDetectedConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetFactionRankConditionData
+      Faction: 000DB1:Skyrim.esm
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetFactionRelationConditionData
+      TargetNpc: 000014:Skyrim.esm
+    ComparisonValue: 2
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetLineOfSightConditionData
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 1
+  VoiceTypes: Null

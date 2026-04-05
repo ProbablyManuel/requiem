@@ -1,0 +1,46 @@
+FormKey: ADDDCF:Requiem.esp
+EditorID: REQ_Effect_Stress_Swimming_Exertion
+Name:
+  TargetLanguage: English
+  Value: Exertion
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 8CDE08:Requiem.esp
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+- HideInUI
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MagickaRateMult
+  Type: DualValueModifier
+SecondActorValue: StaminaRateMult
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsSwimmingConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsRidingMountConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    Spell: 092C48:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    Spell: 0E5F54:Skyrim.esm

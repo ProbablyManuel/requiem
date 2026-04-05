@@ -1,0 +1,54 @@
+FormKey: ADE305:Requiem.esp
+EditorID: REQ_Ench_Weapon_Steel_Quarterstaff_AbsorbMagicka3
+ObjectBounds:
+  First: -3, -42, -3
+  Second: 3, 53, 3
+Name:
+  TargetLanguage: English
+  Value: Steel Quarterstaff of Harrowing
+Model:
+  File: PrvtI\steel\steelStaff.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 0AA15E:Skyrim.esm
+EnchantmentAmount: 1500
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E719:Skyrim.esm
+- 08F958:Skyrim.esm
+- ADDF81:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0E4CB0:Skyrim.esm
+FirstPersonModel: ADDF22:Requiem.esp
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 0E4F10:Skyrim.esm
+UnequipSound: 0E4F11:Skyrim.esm
+BasicStats:
+  Value: 80
+  Weight: 15
+  Damage: 15
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.8
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1069547520
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.2
+Critical:
+  Damage: 7
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: ADDF23:Requiem.esp

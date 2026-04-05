@@ -1,0 +1,37 @@
+FormKey: 06BC10:Skyrim.esm
+EditorID: PowderedMammothTusk
+Version2: 12
+ObjectBounds:
+  First: -8, -9, -3
+  Second: 8, 9, 4
+Name:
+  TargetLanguage: English
+  Value: Powdered Mammoth Tusk
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\PowderedMammothTusk.nif
+  Data: 0x0200000004000000000000005D5CAE3364647300604DDD5CAC00E1FA64647300604DDD5CD4C2358864647300604DDD5C7626170764647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 25
+Weight: 0.1
+IngredientValue: 25
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 2.5
+    Duration: 20
+- BaseEffect: 03EB22:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 073F2D:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 073F20:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30

@@ -1,0 +1,32 @@
+FormKey: 106253:Skyrim.esm
+EditorID: REQ_Block_DefensiveStance
+Name:
+  TargetLanguage: English
+  Value: Defensive Stance
+Description:
+  TargetLanguage: English
+  Value: You have honed your defensive movements to perfection.<br>[Blocking with a shield does not slow you down]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F69:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Block
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointSelectText
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsSneakingConditionData
+  EntryPoint: SetBooleanGraphVariable
+  PerkConditionTabCount: 1
+  Text: bPerkShieldCharge

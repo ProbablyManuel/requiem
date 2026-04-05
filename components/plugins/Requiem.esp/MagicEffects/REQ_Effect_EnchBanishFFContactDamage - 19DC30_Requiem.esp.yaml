@@ -1,0 +1,28 @@
+FormKey: 19DC30:Requiem.esp
+EditorID: REQ_Effect_EnchBanishFFContactDamage
+Name:
+  TargetLanguage: English
+  Value: Banishment
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If the target is not banished, it will be dealt <mag> magic damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+  ComparisonValue: 1

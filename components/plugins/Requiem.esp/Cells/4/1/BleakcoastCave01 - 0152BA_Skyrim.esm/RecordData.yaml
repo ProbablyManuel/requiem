@@ -1,0 +1,74 @@
+FormKey: 0152BA:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BleakcoastCave01
+Version2: 13
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bleakcoast Cave
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#00282828'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2829'
+    DirectionalXMinus: '#00232826'
+    DirectionalYPlus: '#00282928'
+    DirectionalYMinus: '#00282628'
+    DirectionalZPlus: '#00131312'
+    DirectionalZMinus: '#003C3C3D'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 0195D3:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 018EEA:Skyrim.esm
+SkyAndWeatherFromRegion: 10FE79:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EBEE:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 089D4E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 0CA587:Skyrim.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 023ABB:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0CA588:Skyrim.esm
+  PersistentLocation: 018EEA:Skyrim.esm
+  LocationReference: 018EEA:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -5068.9253, 2682.5693, -30000
+    Rotation: 0, 0, 1.1000007
+  MajorFlags:
+  - InitiallyDisabled
+MajorFlags:
+- 0x40000

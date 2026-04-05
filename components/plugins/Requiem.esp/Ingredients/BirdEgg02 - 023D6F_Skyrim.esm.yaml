@@ -1,0 +1,38 @@
+FormKey: 023D6F:Skyrim.esm
+EditorID: BirdEgg02
+ObjectBounds:
+  First: -6, -6, 0
+  Second: 3, 7, 9
+Name:
+  TargetLanguage: English
+  Value: Pine Thrush Egg
+Keywords:
+- 08CDEA:Skyrim.esm
+- 08CDEB:Skyrim.esm
+- 0A248C:Skyrim.esm
+Model:
+  File: Plants\BirdEgg02.nif
+  Data: 0x020000000200000000000000332391EA64647300134C1EFA4E4D63C364647300134C1EFA
+PutDownSound: 0517C8:Skyrim.esm
+Value: 2
+Weight: 0.5
+IngredientValue: 2
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 03EB21:Skyrim.esm
+  Data:
+    Magnitude: 0.35
+    Duration: 30
+- BaseEffect: 090042:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EAEC:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60

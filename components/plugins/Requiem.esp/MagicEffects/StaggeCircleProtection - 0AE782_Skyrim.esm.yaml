@@ -1,0 +1,38 @@
+FormKey: 0AE782:Skyrim.esm
+EditorID: StaggeCircleProtection
+Name:
+  TargetLanguage: English
+  Value: Stagger Circle Protection
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- PowerAffectsMagnitude
+BaseCost: 0.0001
+MagicSkill: Restoration
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 0AE782:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

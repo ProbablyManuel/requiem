@@ -1,0 +1,25 @@
+FormKey: 058F63:Skyrim.esm
+EditorID: REQ_Marksmanship_Ranger
+Name:
+  TargetLanguage: English
+  Value: Ranger
+Description:
+  TargetLanguage: English
+  Value: You improved your footwork when engaging in ranged combat with light weapons.<br>[Able to run with a drawn light bow or crossbow]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BABED:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Archery
+  ComparisonValue: 15
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 32F076:Requiem.esp

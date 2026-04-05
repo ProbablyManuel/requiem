@@ -1,0 +1,23 @@
+FormKey: AE38E1:Requiem.esp
+EditorID: REQ_Ench_Horksbane
+Name:
+  TargetLanguage: English
+  Value: Horksbane Enchantment
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE38E2:Requiem.esp
+  Data:
+    Magnitude: 8
+    Duration: 15
+- BaseEffect: 07809B:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsRaceConditionData
+      Race: 0131FC:Skyrim.esm
+    ComparisonValue: 1

@@ -1,0 +1,25 @@
+FormKey: 0581F4:Skyrim.esm
+EditorID: REQ_Restoration_FocusedMind
+Name:
+  TargetLanguage: English
+  Value: Focused Mind
+Description:
+  TargetLanguage: English
+  Value: You've learned to focus your mind. Thus, you can keep your concentration even<br>in stressful situations and regenerate your magicka faster.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0C44C7:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Restoration
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 06C3D1:Skyrim.esm

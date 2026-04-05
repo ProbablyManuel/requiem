@@ -1,0 +1,36 @@
+FormKey: 04DA24:Skyrim.esm
+EditorID: Mushroom05
+ObjectBounds:
+  First: -13, -10, -13
+  Second: 13, 10, 13
+Name:
+  TargetLanguage: English
+  Value: Namira's Rot
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\Mushroom05.nif
+  Data: 0x0200000002000000000000000B9C9CF3646473004E28BE12FCF8648D646473004E28BE12
+PickUpSound: 0BAD13:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 12
+Weight: 0.25
+IngredientValue: 12
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB21:Skyrim.esm
+  Data:
+    Magnitude: 0.2
+    Duration: 30
+- BaseEffect: 073F20:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EB06:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300

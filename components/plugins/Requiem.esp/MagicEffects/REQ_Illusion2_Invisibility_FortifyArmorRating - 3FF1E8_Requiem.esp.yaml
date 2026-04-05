@@ -1,0 +1,22 @@
+FormKey: 3FF1E8:Requiem.esp
+EditorID: REQ_Illusion2_Invisibility_FortifyArmorRating
+Name:
+  TargetLanguage: English
+  Value: Fortify Armor Rating
+Flags:
+- Recover
+- NoArea
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: DamageResist
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The caster also gains <mag> armor rating and he cannot be aimed at precisely.

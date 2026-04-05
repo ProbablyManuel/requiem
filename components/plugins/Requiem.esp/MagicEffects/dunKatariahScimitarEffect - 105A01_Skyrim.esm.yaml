@@ -1,0 +1,41 @@
+FormKey: 105A01:Skyrim.esm
+EditorID: dunKatariahScimitarEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dunKatariahScimitarScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 5
+Name:
+  TargetLanguage: English
+  Value: Windshear Bash Effect
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- PowerAffectsMagnitude
+BaseCost: 2
+MagicSkill: Destruction
+TaperWeight: 1
+HitShader: 073321:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+Projectile: 014000:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+HitEffectArt: 07331C:Skyrim.esm
+ImpactData: 015C7B:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 60

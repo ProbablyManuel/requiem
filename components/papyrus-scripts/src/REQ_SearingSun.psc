@@ -17,10 +17,20 @@ Event OnUpdate()
 EndEvent
 
 Function ApplySunDamage(Actor akTarget)
-	Float Damage = GetMagnitude() * CalculateWeatherFactor()
-	SearingSunDamage.SetNthEffectMagnitude(0, Damage)
-	SearingSunDamage.SetNthEffectMagnitude(1, Damage)
-	SearingSunDamage.SetNthEffectMagnitude(2, Damage)
+	Float WeatherFactor = CalculateWeatherFactor()
+	If akTarget == Game.GetPlayer()	
+		Float Damage = GetMagnitude() * WeatherFactor
+		SearingSunDamage.SetNthEffectMagnitude(0, Damage)
+		SearingSunDamage.SetNthEffectMagnitude(1, Damage)
+		SearingSunDamage.SetNthEffectMagnitude(2, Damage)
+	Else
+		Float HealthDamage = GetTotalDamageToNpc(akTarget, "Health", WeatherFactor)
+		Float MagickaDamage = GetTotalDamageToNpc(akTarget, "Magicka", WeatherFactor)
+		Float StaminaDamage = GetTotalDamageToNpc(akTarget, "Stamina", WeatherFactor)
+		SearingSunDamage.SetNthEffectMagnitude(0, HealthDamage / 60.0)
+		SearingSunDamage.SetNthEffectMagnitude(1, MagickaDamage / 60.0)
+		SearingSunDamage.SetNthEffectMagnitude(2, StaminaDamage / 60.0)
+	EndIf
 	SearingSunDamage.Cast(akTarget, akTarget)
 EndFunction
 
@@ -37,4 +47,16 @@ Float Function CalculateWeatherFactor()
 	EndIf
 
 	Return WeatherFactor
+EndFunction
+
+Float Function GetTotalDamageToNpc(Actor akTarget, String asAttribute, Float afWeatherFactor)
+	Float MaxValue = akTarget.GetActorValueMax(asAttribute)
+	Float CurrValue = akTarget.GetActorValue(asAttribute)
+	Float TargetValue = MaxValue * (1 - 0.65 * afWeatherFactor)
+	Float Damage = CurrValue - TargetValue
+	If Damage < 0.0
+		Return 0.0
+	Else
+		Return Damage
+	EndIf
 EndFunction

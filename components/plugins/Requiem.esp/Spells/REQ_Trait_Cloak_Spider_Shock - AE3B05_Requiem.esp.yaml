@@ -1,0 +1,19 @@
+FormKey: AE3B05:Requiem.esp
+EditorID: REQ_Trait_Cloak_Spider_Shock
+Name:
+  TargetLanguage: English
+  Value: Shock Spider Cloak
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 026D67:Dragonborn.esm
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: IsInCombatConditionData

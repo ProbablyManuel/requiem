@@ -1,0 +1,25 @@
+FormKey: AE3B75:Requiem.esp
+EditorID: REQ_Trait_Cuisine_Bosmer_Description
+Name:
+  TargetLanguage: English
+  Value: Carnivore
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Meat is twice as nourishing.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

@@ -1,0 +1,26 @@
+FormKey: 05BDB2:Skyrim.esm
+EditorID: TGRFOBusinessLedger
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TGRFOLedgerBaseScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pTGRFOMessage
+      Object: 0D06B3:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: pTGRFOQuest
+      Object: 06098E:Skyrim.esm
+ObjectBounds:
+  First: -30, -19, -2
+  Second: 30, 19, 2
+Name:
+  TargetLanguage: English
+  Value: Business Ledger
+Model:
+  File: Clutter\Quest\TGRBusinessLedger.nif
+  Data: 0x0200000004000000000000002F2DC03064647300B5139F091C59EAC064647300B5139F092B21C7986464730030C19300F4C8A2A364647300B5139F09
+MarkerColor: '#00CC4C33'
+ActivateTextOverride:
+  TargetLanguage: English
+  Value: <font color='#FF0000'>Forge Numbers</font>
+Flags: []

@@ -1,0 +1,22 @@
+FormKey: 0F3F0E:Skyrim.esm
+EditorID: REQ_Destruction_ElectrostaticDischarge
+Name:
+  TargetLanguage: English
+  Value: Electrostatic Discharge
+Description:
+  TargetLanguage: English
+  Value: Your lightning strikes pass through body and mind with thundering intensity.<br>Thus, they now vaporize vast amounts of Magicka off your targets.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058200:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Destruction
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True

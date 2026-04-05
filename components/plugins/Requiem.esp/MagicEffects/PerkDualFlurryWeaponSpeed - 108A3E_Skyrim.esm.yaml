@@ -1,0 +1,21 @@
+FormKey: 108A3E:Skyrim.esm
+EditorID: PerkDualFlurryWeaponSpeed
+Name:
+  TargetLanguage: English
+  Value: Flurry
+Flags:
+- Recover
+- NoDuration
+- HideInUI
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: WeaponSpeedMult
+  Type: DualValueModifier
+SecondActorValue: LeftWeaponSpeedMultiply
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

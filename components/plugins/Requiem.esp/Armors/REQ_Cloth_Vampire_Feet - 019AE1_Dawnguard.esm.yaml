@@ -1,0 +1,35 @@
+FormKey: 019AE1:Dawnguard.esm
+EditorID: REQ_Cloth_Vampire_Feet
+ObjectBounds:
+  First: -14, -9, -89
+  Second: 8, 11, -64
+Name:
+  TargetLanguage: English
+  Value: Vampire Boots
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\FarmClothes03\farmerbootsmGO.nif
+      Data: 0x020000000000000000000000
+      AlternateTextures:
+      - Name: shoeGO:0
+        NewTexture: 019AE6:Dawnguard.esm
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 10CD12:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 019AE0:Dawnguard.esm
+Value: 2
+Weight: 1

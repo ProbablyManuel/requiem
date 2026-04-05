@@ -7,7 +7,7 @@ namespace Reqtificator.Transformers.Weapons
     internal class WeaponMeleeRangeScaling : Transformer<Weapon, IWeapon, IWeaponGetter>
     {
         private static readonly WeaponAnimationType[] MeleeWeaponTypes =
-        {
+        [
             WeaponAnimationType.HandToHand,
             WeaponAnimationType.OneHandSword,
             WeaponAnimationType.OneHandDagger,
@@ -15,7 +15,7 @@ namespace Reqtificator.Transformers.Weapons
             WeaponAnimationType.OneHandMace,
             WeaponAnimationType.TwoHandSword,
             WeaponAnimationType.TwoHandAxe
-        };
+        ];
 
         public override TransformationResult<Weapon, IWeaponGetter> Process(TransformationResult<Weapon, IWeaponGetter> input)
         {

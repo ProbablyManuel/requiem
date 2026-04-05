@@ -1,0 +1,23 @@
+FormKey: 07A0FE:Skyrim.esm
+EditorID: REQ_Ench_FortifyMarksman
+Name:
+  TargetLanguage: English
+  Value: Fortify Marksman
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F69:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 21
+EnchantShader: 092DEE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MarksmanPowerModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Ranged weapons deal <mag>% more damage.

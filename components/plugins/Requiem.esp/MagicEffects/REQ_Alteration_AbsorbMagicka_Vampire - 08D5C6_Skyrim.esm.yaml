@@ -1,0 +1,43 @@
+FormKey: 08D5C6:Skyrim.esm
+EditorID: REQ_Alteration_AbsorbMagicka_Vampire
+Name:
+  TargetLanguage: English
+  Value: Absorb Magicka
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 101BDE:Skyrim.esm
+- 2FFEAD:Requiem.esp
+- ADDDF7:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Alteration
+ResistValue: ResistMagic
+TaperWeight: 1
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+  Type: Absorb
+CastType: Concentration
+TargetType: Aimed
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Absorbs <mag> magicka per second from the target, but doesn't affect constructs.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp

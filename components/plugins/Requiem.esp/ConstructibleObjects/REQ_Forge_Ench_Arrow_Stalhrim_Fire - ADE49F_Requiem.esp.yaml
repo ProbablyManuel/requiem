@@ -1,0 +1,29 @@
+FormKey: ADE49F:Requiem.esp
+EditorID: REQ_Forge_Ench_Arrow_Stalhrim_Fire
+Items:
+- Item:
+    Item: 03AD5E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 026239:Dragonborn.esm
+    Count: 30
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 01CAF1:Dragonborn.esm
+    Stage: 200
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB412:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: ADE499:Requiem.esp
+WorkbenchKeyword: 088105:Skyrim.esm
+CreatedObjectCount: 30

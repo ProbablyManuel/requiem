@@ -1,0 +1,53 @@
+FormKey: 057A7B:Skyrim.esm
+EditorID: REQ_Drug_KordirsSkooma
+ObjectBounds:
+  First: -2, -2, 0
+  Second: 2, 2, 12
+Name:
+  TargetLanguage: English
+  Value: Kordir's Skooma
+Keywords:
+- 444D86:Requiem.esp
+Model:
+  File: Clutter\Potions\PotionSkooma.nif
+  Data: 0x02000000050000000000000063DF5C0164647300BFFA25DAB9FB95CF64647300BFFA25DAFAE0BBA4646473007F66A5C0CE353C0964647300262C333BFD5A856264647300BFFA25DA
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 100
+Flags:
+- NoAutoCalc
+Addiction: AE3B42:Requiem.esp
+AddictionChance: 1
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: AE3B39:Requiem.esp
+  Data:
+    Duration: 300
+- BaseEffect: AE3B43:Requiem.esp
+  Data:
+    Duration: 300
+- BaseEffect: AE3B3A:Requiem.esp
+  Data:
+    Magnitude: 25
+    Duration: 300
+- BaseEffect: AE3B3B:Requiem.esp
+  Data:
+    Magnitude: 0.25
+    Duration: 300
+- BaseEffect: AE3B3C:Requiem.esp
+  Data:
+    Magnitude: 0.25
+    Duration: 300
+- BaseEffect: AE3B3D:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 300
+- BaseEffect: AE3B3E:Requiem.esp
+  Data:
+    Magnitude: 50
+    Duration: 300
+- BaseEffect: AE3B3F:Requiem.esp
+  Data:
+    Magnitude: 500
+    Duration: 300

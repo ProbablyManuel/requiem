@@ -1,0 +1,29 @@
+FormKey: 4EA704:Requiem.esp
+EditorID: REQ_Illusion4_ShadowSimulacrum_DamageMagicka
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Detrimental
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+DualCastScale: 1
+PerkToApply: 3F537A:Requiem.esp
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 'Upkeep cost: <mag>.'
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 493B8F:Requiem.esp

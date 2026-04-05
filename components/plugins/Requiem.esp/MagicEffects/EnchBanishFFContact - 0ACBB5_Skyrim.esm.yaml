@@ -1,0 +1,50 @@
+FormKey: 0ACBB5:Skyrim.esm
+EditorID: EnchBanishFFContact
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicBanishScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ImodFX
+      Object: 06F79B:Skyrim.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: SecondsBeforeDelete
+      Data: 4
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ThingToPlace
+      Object: 06F794:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Banish
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 9
+HitShader: 054223:Skyrim.esm
+EnchantShader: 05D607:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: Banish
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 03A1E9:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Summoned daedra up to level <mag> are sent back to Oblivion.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+  ComparisonValue: 1

@@ -1,0 +1,20 @@
+FormKey: AE3B65:Requiem.esp
+EditorID: REQ_Blessing_Yffre_RestoreStamina
+Name:
+  TargetLanguage: English
+  Value: Restore Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B66:Requiem.esp
+Flags:
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Stamina
+  Association: AE3B66:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina recovers by <mag> per second.

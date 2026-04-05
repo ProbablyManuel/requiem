@@ -1,0 +1,21 @@
+FormKey: AE3A9E:Requiem.esp
+EditorID: REQ_Miraak_FlameStrike_ScriptEffectAI
+Name:
+  TargetLanguage: English
+  Value: Gives spells high priority for AI / Cast
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+ScriptEffectAIScore: 100000
+ScriptEffectAIDelayTime: 18
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

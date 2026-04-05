@@ -1,0 +1,25 @@
+FormKey: 015717:Dawnguard.esm
+EditorID: REQ_Projectile_Arrow_Elven_Sunhallowed
+ObjectBounds:
+  First: -4, -299, -9
+  Second: 4, 0, 9
+Name:
+  TargetLanguage: English
+  Value: Sunhallowed Elven Arrow
+Model:
+  File: DLC01\Weapons\Auriel\AurielsArrowFlight.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+Type: Arrow
+Gravity: 0.2
+Speed: 3600
+Range: 60000
+Explosion: 00AEB4:Dawnguard.esm
+Sound: 03F2B4:Skyrim.esm
+FadeDuration: 5
+ImpactForce: 1
+CollisionRadius: 0.5
+RelaunchInterval: 0.25
+MuzzleFlashModel: ''
+SoundLevel: 1

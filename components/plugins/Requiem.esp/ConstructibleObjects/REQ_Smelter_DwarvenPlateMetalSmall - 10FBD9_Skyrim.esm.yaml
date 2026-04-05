@@ -1,0 +1,18 @@
+FormKey: 10FBD9:Skyrim.esm
+EditorID: REQ_Smelter_DwarvenPlateMetalSmall
+Items:
+- Item:
+    Item: 0C8866:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 43D07D:Requiem.esp
+    Count: 3
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 0C8866:Skyrim.esm
+CreatedObject: 0DB8A2:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 3

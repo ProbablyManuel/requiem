@@ -29,7 +29,7 @@ Function ReapplyNonPersistentChanges()
 EndFunction
 
 Function RescaleEnchantment()
-	Float Magnitude = EbonyBladeTracker.FriendsKilled * 6.0
-	EbonyBladeEnch.SetNthEffectMagnitude(0, Magnitude)
-	Description.SetNthEffectMagnitude(0, Magnitude)
+	Float AbsorbHealth = EbonyBladeTracker.FriendsKilled * 4.0
+	EbonyBladeEnch.SetNthEffectMagnitude(0, AbsorbHealth)
+	Description.SetNthEffectMagnitude(0, AbsorbHealth)
 EndFunction

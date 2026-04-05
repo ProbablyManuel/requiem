@@ -1,0 +1,28 @@
+FormKey: AD37EB:Requiem.esp
+EditorID: REQ_Scroll_SoulGemEvocation_NoXPGain
+Name:
+  TargetLanguage: English
+  Value: 'REQ Magic/Scrolls: Soul Gem Evocation'
+Description:
+  TargetLanguage: English
+  Value: This perk prevents exp gain while recharging weapons with scrolls.
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 6
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetGlobalValueConditionData
+        Global: AD3A1B:Requiem.esp
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_IsAdvanceSkillConditionData
+        ActorValue: Enchanting
+      ComparisonValue: 1
+  EntryPoint: ModSkillUse
+  PerkConditionTabCount: 1
+  Value: 0

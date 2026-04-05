@@ -1,0 +1,34 @@
+FormKey: 56DAA4:Requiem.esp
+EditorID: REQ_Illusion5_MistressOfTheDark_Empowered
+Name:
+  TargetLanguage: English
+  Value: Empowered
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoHitEvent
+- NoArea
+- PowerAffectsDuration
+MagicSkill: Illusion
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 56DAAD:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Empowering the spell will make her move like lightning.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 56DAA7:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target
+  ComparisonValue: 1

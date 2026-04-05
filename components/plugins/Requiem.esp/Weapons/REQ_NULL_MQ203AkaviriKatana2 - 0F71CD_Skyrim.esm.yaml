@@ -1,0 +1,54 @@
+FormKey: 0F71CD:Skyrim.esm
+EditorID: REQ_NULL_MQ203AkaviriKatana2
+ObjectBounds:
+  First: -4, -20, -5
+  Second: 8, 79, 4
+Name:
+  TargetLanguage: English
+  Value: Dragonbane
+Model:
+  File: Weapons\Dragonbane\Dragonbane.nif
+  Data: 0x0200000008000000000000004FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305DA8E929164647300262C333B9EDC25D4646473005EC15CE78AE08EF7646473005EC15CE7B8EC307B64647300262C333B30B1876E646473005EC15CE7
+ObjectEffect: 0FF9F6:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E719:Skyrim.esm
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The katana's edge thirsts for the dragons' blood!
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 06AEDC:Requiem.esp
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 5000
+  Weight: 6
+  Damage: 14
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 7
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

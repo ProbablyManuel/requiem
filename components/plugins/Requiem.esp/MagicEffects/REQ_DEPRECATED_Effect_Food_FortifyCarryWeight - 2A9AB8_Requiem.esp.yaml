@@ -1,0 +1,39 @@
+FormKey: 2A9AB8:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_Food_FortifyCarryWeight
+Name:
+  TargetLanguage: English
+  Value: Fortify Carry Weight
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 68F5C2:Requiem.esp
+Flags:
+- Recover
+- NoArea
+BaseCost: 1
+HitShader: 012FD9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: CarryWeight
+  Association: 68F5C2:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Carrying capacity increases by <mag> for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInCombatConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetFactionRankConditionData
+    Faction: AD382D:Requiem.esp
+  ComparisonValue: 25

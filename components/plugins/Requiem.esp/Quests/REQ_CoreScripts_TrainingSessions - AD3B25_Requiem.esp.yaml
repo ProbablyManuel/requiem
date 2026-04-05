@@ -1,0 +1,26 @@
+FormKey: AD3B25:Requiem.esp
+EditorID: REQ_CoreScripts_TrainingSessions
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AD3B25:Requiem.esp
+      Alias: 21
+    Scripts:
+    - Name: REQ_TrainingSessions
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: REQ_Player_Is_Training
+        Object: AD3A1B:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: '[INTERNAL] Requiem Core Scripts: Training Sessions'
+Type: SideQuest
+NextAliasID: 24
+Aliases:
+- ID: 21
+  Name: TrainingSessions
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

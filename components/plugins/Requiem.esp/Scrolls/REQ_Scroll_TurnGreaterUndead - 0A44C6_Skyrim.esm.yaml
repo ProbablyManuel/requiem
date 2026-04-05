@@ -1,0 +1,45 @@
+FormKey: 0A44C6:Skyrim.esm
+EditorID: REQ_Scroll_TurnGreaterUndead
+Version2: 12
+ObjectBounds:
+  First: -9, -3, -2
+  Second: 12, 3, 2
+Name:
+  TargetLanguage: English
+  Value: Scroll of Turn Greater Undead
+Keywords:
+- 0A0E57:Skyrim.esm
+MenuDisplayObject: 076E8F:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Model:
+  File: Clutter\Common\Scroll04.nif
+  Data: 0x0200000002000000000000006BC0AC7B646473008EAEA792B406448A646473008EAEA792
+Value: 250
+Weight: 0.5
+BaseCost: 542
+ChargeTime: 1
+CastType: 3
+TargetType: Aimed
+Effects:
+- BaseEffect: 05DD5C:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Duration: 30
+- BaseEffect: 04D3F9:Skyrim.esm
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsUndeadConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 013796:Skyrim.esm
+    ComparisonValue: 1

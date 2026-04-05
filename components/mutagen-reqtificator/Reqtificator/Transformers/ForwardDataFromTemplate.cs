@@ -74,7 +74,7 @@ namespace Reqtificator.Transformers
         }
     }
 
-    public interface IDataForwardingLogic<in T1, in T1Getter>
+    internal interface IDataForwardingLogic<in T1, in T1Getter>
     {
         public bool CheckRecordEquality(T1Getter reference, T1Getter other);
 

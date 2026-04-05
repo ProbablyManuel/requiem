@@ -1,0 +1,23 @@
+FormKey: 802AC4:Requiem.esp
+EditorID: REQ_Cloak_GuardOfficer
+Name:
+  TargetLanguage: English
+  Value: Aura of Courage
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 802AC1:Requiem.esp
+  Data:
+    Magnitude: 500
+    Duration: 5
+- BaseEffect: 802AC2:Requiem.esp
+  Data:
+    Magnitude: 0.2
+    Duration: 5

@@ -1,0 +1,51 @@
+FormKey: 02830C:Dragonborn.esm
+EditorID: REQ_Ench_Weapon_Quicksilver_Greatsword_TurnUndead5
+Name:
+  TargetLanguage: English
+  Value: Quicksilver Greatsword of Turning
+Model:
+  File: DLC02\Weapons\Nordic\NordicGreatSword.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 05B470:Skyrim.esm
+EnchantmentAmount: 2500
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 097786:Skyrim.esm
+Keywords:
+- 06D931:Skyrim.esm
+- 08F958:Skyrim.esm
+- 026230:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0949D5:Skyrim.esm
+FirstPersonModel: 03C351:Dragonborn.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 03C8A9:Skyrim.esm
+UnequipSound: 03C8AA:Skyrim.esm
+BasicStats:
+  Value: 180
+  Weight: 18
+  Damage: 19
+Data:
+  AnimationType: TwoHandSword
+  Unused: 0x000000
+  Speed: 0.75
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1067869798
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.1
+Critical:
+  Damage: 9
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud
+Template: 01CDAF:Dragonborn.esm

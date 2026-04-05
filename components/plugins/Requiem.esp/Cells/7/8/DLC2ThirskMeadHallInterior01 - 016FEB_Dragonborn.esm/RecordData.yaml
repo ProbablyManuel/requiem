@@ -1,0 +1,103 @@
+FormKey: 016FEB:Dragonborn.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC2ThirskMeadHallInterior01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Thirsk Mead Hall
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00312C1A'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00625F4D'
+  FogFar: 4500
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#00352C1B'
+    DirectionalXMinus: '#002C2C18'
+    DirectionalYPlus: '#00312E1A'
+    DirectionalYMinus: '#0031291A'
+    DirectionalZPlus: '#0017140B'
+    DirectionalZMinus: '#004A4328'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00635F4B'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0300E2:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 016FFE:Dragonborn.esm
+AcousticSpace: 0C5D0A:Skyrim.esm
+Music: 03D4A3:Dragonborn.esm
+ImageSpace: 013B32:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 035730:Dragonborn.esm
+  MajorRecordFlagsRaw: 1024
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 03572E:Dragonborn.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  Owner: 03572D:Dragonborn.esm
+  LocationReference: 016FFE:Dragonborn.esm
+  Placement:
+    Position: 3673.9807, 2869.207, 6698.3013
+    Rotation: 0, 0, 3.2000105
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 02955B:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 10C0E3:Skyrim.esm
+  LocationReference: 016FFE:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 3632.6313, 2877.2622, -30000
+    Rotation: 0, 0, 4.6831946
+- MutagenObjectType: PlacedObject
+  FormKey: 029DD7:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 10C0E3:Skyrim.esm
+  LocationReference: 016FFE:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 3633.0925, 2877.2622, -30000
+    Rotation: 0, 0, 4.6831946
+- MutagenObjectType: PlacedObject
+  FormKey: 029EB5:Dragonborn.esm
+  MajorRecordFlagsRaw: 2048
+  SkyrimMajorRecordFlags:
+  - InitiallyDisabled
+  Base: 019C51:Dragonborn.esm
+  LocationReference: 016FFE:Dragonborn.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 3690.114, 2863.2278, -30000
+    Rotation: 0, 0, 0.5168199
+MajorFlags:
+- 0x40000

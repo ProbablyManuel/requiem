@@ -1,0 +1,28 @@
+FormKey: 0FBBF3:Skyrim.esm
+EditorID: BearFaction
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Bear Faction
+Relations:
+- Target: 02997F:Skyrim.esm
+  Reaction: Enemy
+- Target: 03E691:Skyrim.esm
+  Reaction: Enemy
+- Target: 0435A1:Skyrim.esm
+  Reaction: Enemy
+- Target: 0435A2:Skyrim.esm
+  Reaction: Enemy
+- Target: 0FBBF3:Skyrim.esm
+  Reaction: Ally
+Flags:
+- IgnoreMurder
+- IgnoreAssault
+- IgnoreStealing
+- IgnoreTrespass
+- IgnorePickpocket
+- IgnoreWerewolf
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

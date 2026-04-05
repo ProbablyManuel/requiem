@@ -1,0 +1,19 @@
+FormKey: 20D2F8:Requiem.esp
+EditorID: REQ_Smelter_Light_Glass_Head
+Items:
+- Item:
+    Item: 01393B:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 01393B:Skyrim.esm
+CreatedObject: 05ADA1:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

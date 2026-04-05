@@ -1,0 +1,18 @@
+FormKey: 0B8782:Skyrim.esm
+EditorID: REQ_Disease_Attack_Rockjoint
+Name:
+  TargetLanguage: English
+  Value: Rockjoint
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Rockjoint is an acute common disease affecting a victim's manual dexterity. Symptoms include painful swelling and immobility of all joints.
+BaseCost: 172
+Flags:
+- NoAbsorbOrReflect
+Type: Disease
+TargetType: Touch
+Effects:
+- BaseEffect: 0B877A:Skyrim.esm
+  Data:
+    Magnitude: 25

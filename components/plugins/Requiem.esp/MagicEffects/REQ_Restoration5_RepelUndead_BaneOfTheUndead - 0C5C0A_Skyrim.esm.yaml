@@ -1,0 +1,48 @@
+FormKey: 0C5C0A:Skyrim.esm
+EditorID: REQ_Restoration5_RepelUndead_BaneOfTheUndead
+Name:
+  TargetLanguage: English
+  Value: Bane of the Undead
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 0806E1:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsDuration
+MagicSkill: Restoration
+ResistValue: ResistFire
+TaperWeight: 0.3
+HitShader: 0E7557:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingArea: 80
+SpellmakingCastingTime: 3
+TaperCurve: 2
+TaperDuration: 4
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+DualCastScale: 1.4
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1

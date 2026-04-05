@@ -1,0 +1,75 @@
+FormKey: 0B29D4:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BlackreachZcell06
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hall of Rumination
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 08810A:Skyrim.esm
+WaterHeight: 0
+Location: 018EE8:Skyrim.esm
+AcousticSpace: 0F993E:Skyrim.esm
+EncounterZone: 03EBED:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0B2C23:Skyrim.esm
+  Base: 020653:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018EE8:Skyrim.esm
+  Placement:
+    Position: 2601.405, -1638.4026, 1312.4235
+    Rotation: 4.712389, 5.497787, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0B2CD1:Skyrim.esm
+  Base: 02069A:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 018EE8:Skyrim.esm
+  Placement:
+    Position: -786.04517, -1907.2155, 1416.27
+    Rotation: 0, 0, 2.3831894
+MajorFlags:
+- 0x40000

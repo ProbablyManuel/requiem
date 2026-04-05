@@ -5,7 +5,7 @@ using Reqtificator.Utils;
 
 namespace Reqtificator.Events.Outcomes
 {
-    public class InvalidLoadOrder : ReqtificatorOutcome
+    internal class InvalidLoadOrder : ReqtificatorOutcome
     {
         public ModKey Mod { get; }
         public IImmutableSet<ModKey> OutOfOrderMasters { get; }

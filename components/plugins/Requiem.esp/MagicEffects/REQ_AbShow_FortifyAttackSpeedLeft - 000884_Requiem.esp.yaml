@@ -1,0 +1,21 @@
+FormKey: 000884:Requiem.esp
+EditorID: REQ_AbShow_FortifyAttackSpeedLeft
+Name:
+  TargetLanguage: English
+  Value: Fortify Attack Speed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: LeftWeaponSpeedMultiply
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Weapons in the left hand swing <mag>% faster.

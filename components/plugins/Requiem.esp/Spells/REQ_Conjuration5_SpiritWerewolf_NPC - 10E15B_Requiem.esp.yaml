@@ -1,0 +1,23 @@
+FormKey: 10E15B:Requiem.esp
+EditorID: REQ_Conjuration5_SpiritWerewolf_NPC
+Name:
+  TargetLanguage: English
+  Value: Summon Spirit Werewolf
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 100
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 20
+HalfCostPerk: 0C44BE:Skyrim.esm
+Effects:
+- BaseEffect: 0461EF:Requiem.esp
+  Data:
+    Duration: 60

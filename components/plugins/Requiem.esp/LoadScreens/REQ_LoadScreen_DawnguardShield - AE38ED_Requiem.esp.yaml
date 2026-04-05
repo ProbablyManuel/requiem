@@ -1,0 +1,25 @@
+FormKey: AE38ED:Requiem.esp
+EditorID: REQ_LoadScreen_DawnguardShield
+Description:
+  TargetLanguage: English
+  Value: The Dawnguard reinforce their shields with a silver layer that increases bash damage against undead.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 5
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 00352A:Dawnguard.esm
+  ComparisonValue: 10
+LoadingScreenNif: 0B1D9E:unofficial skyrim special edition patch.esp
+InitialScale: 1.5
+InitialRotation: 0, 0, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: -12, 0, -20
+CameraPath: Cameras\LSCameraPanZoomInSmall.nif

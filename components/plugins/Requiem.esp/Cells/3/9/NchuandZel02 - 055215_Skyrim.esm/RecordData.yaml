@@ -1,0 +1,65 @@
+FormKey: 055215:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: NchuandZel02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Nchuand-Zel
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00446A73'
+  FogNearColor: '#00AE0000'
+  FogNear: 750
+  FogFar: 12000
+  DirectionalFade: 1
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00FF4242'
+    Scale: 1
+  FogFarColor: '#00FF4242'
+  FogMax: 0.9
+  LightFadeBegin: 6000
+  LightFadeEnd: 7000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 01F932:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 019283:Skyrim.esm
+Water: 0CC7B7:Skyrim.esm
+AcousticSpace: 0F993E:Skyrim.esm
+EncounterZone: 03EC4D:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 07F5AF:Skyrim.esm
+  Base: 02069A:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019283:Skyrim.esm
+  Placement:
+    Position: 1792, -1442.0319, -1024.9055
+MajorFlags:
+- 0x40000

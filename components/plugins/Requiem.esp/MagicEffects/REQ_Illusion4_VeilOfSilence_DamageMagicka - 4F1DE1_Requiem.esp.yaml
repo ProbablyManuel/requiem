@@ -1,0 +1,23 @@
+FormKey: 4F1DE1:Requiem.esp
+EditorID: REQ_Illusion4_VeilOfSilence_DamageMagicka
+Name:
+  TargetLanguage: English
+  Value: Damage Magicka
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Flags:
+- Detrimental
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+DualCastScale: 1
+PerkToApply: 3FF1EC:Requiem.esp
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: 'Upkeep cost: <mag>.'

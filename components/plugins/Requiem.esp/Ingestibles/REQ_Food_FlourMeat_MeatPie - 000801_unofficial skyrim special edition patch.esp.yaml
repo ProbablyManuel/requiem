@@ -1,0 +1,33 @@
+FormKey: 000801:unofficial skyrim special edition patch.esp
+EditorID: REQ_Food_FlourMeat_MeatPie
+ObjectBounds:
+  First: -13, -12, -4
+  Second: 12, 13, 1
+Name:
+  TargetLanguage: English
+  Value: Meat Pie
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\Pie01.nif
+  Data: 0x020000000200000000000000692D16DD64647300604DDD5C495CC96664647300604DDD5C
+  AlternateTextures:
+  - Name: Pie:0
+    NewTexture: 000800:unofficial skyrim special edition patch.esp
+Weight: 0.5
+Value: 20
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371C:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 3600
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 3600
+- BaseEffect: 002EE4:Update.esm
+  Data: {}

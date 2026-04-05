@@ -1,0 +1,21 @@
+FormKey: 016908:Dawnguard.esm
+EditorID: REQ_VampireLord_SummonGargoyle
+Name:
+  TargetLanguage: English
+  Value: Summon Gargoyle
+Description:
+  TargetLanguage: English
+  Value: Your knowledge about Blood Magic now grants you the ability to <br>call forth a gargoyle to your aid.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 00599A:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 01964A:Dawnguard.esm
+  Stage: 20
+  Unknown: 0x000000
