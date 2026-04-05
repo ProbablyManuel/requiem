@@ -1,0 +1,39 @@
+FormKey: 0889A2:Skyrim.esm
+EditorID: DragonsTongue
+Version2: 3
+ObjectBounds:
+  First: -6, -7, 0
+  Second: 5, 3, 26
+Name:
+  TargetLanguage: English
+  Value: Dragon's Tongue
+Keywords:
+- 08CDEB:Skyrim.esm
+- 0A0E54:Skyrim.esm
+Model:
+  File: Plants\DragonsTongue01.nif
+  Data: 0x020000000200000000000000A471AD5964647300134C1EFA2E6C407A64647300134C1EFA
+PickUpSound: 0519D5:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 5
+Weight: 0.1
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 80
+- BaseEffect: 03EB23:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EB27:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 60
+- BaseEffect: 03EB1A:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60

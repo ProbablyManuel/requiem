@@ -1,0 +1,34 @@
+FormKey: 42442D:Requiem.esp
+EditorID: REQ_Illusion_EnragingOrb_Frenzy
+Name:
+  TargetLanguage: English
+  Value: Frenzy
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 0.07
+MagicSkill: Illusion
+TaperWeight: 1
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Aggression
+  Type: Frenzy
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The target hit by this orb will attack anything nearby for up to <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData

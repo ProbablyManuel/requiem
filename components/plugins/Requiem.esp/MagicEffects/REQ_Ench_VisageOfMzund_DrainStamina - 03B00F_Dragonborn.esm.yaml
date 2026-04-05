@@ -1,0 +1,28 @@
+FormKey: 03B00F:Dragonborn.esm
+EditorID: REQ_Ench_VisageOfMzund_DrainStamina
+Name:
+  TargetLanguage: English
+  Value: Drain Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Detrimental
+- HideInUI
+- NoRecast
+- PowerAffectsMagnitude
+SpellmakingCastingTime: 5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: Stamina
+  ComparisonValue: 25

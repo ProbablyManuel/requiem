@@ -1,0 +1,24 @@
+FormKey: 01E7F4:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BlackBookCompanionsSafeEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03D257:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Companion's Insight
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- NoMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+PerkToApply: 01E7F0:Dragonborn.esm
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Your attacks, shouts, and destruction spells do no damage to your followers when in combat.

@@ -1,0 +1,29 @@
+FormKey: AE3B40:Requiem.esp
+EditorID: REQ_Skooma_Lethargy
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_SkoomaCureAddiction
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Addiction
+      Object: AE3B42:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Lethargy
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- Detrimental
+- NoDuration
+- NoArea
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MagickaRateMult
+  Type: DualValueModifier
+SecondActorValue: StaminaRateMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: There is no miracle cure, no potion to be taken, no magical incantation which frees you from the memory of the thrill of Skooma. Either persevere it, or give in to another bottle.

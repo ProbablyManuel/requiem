@@ -1,0 +1,23 @@
+FormKey: 0038B6:Dawnguard.esm
+EditorID: REQ_Restoration3_Sunburst
+Name:
+  TargetLanguage: English
+  Value: Sunburst
+MenuDisplayObject: 018F02:Dawnguard.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 325
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+ChargeTime: 0.3
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44C8:Skyrim.esm
+Effects:
+- BaseEffect: 00844B:Dawnguard.esm
+  Data:
+    Magnitude: 100
+    Area: 35

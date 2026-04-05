@@ -1,0 +1,26 @@
+FormKey: 0239A0:Skyrim.esm
+EditorID: REQ_Ench_StaffOfMagnus
+Name:
+  TargetLanguage: English
+  Value: Staff of Magnus Enchantment
+EnchantmentCost: 500
+Flags:
+- NoAutoCalc
+CastType: Concentration
+EnchantmentAmount: 500
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 0239A1:Skyrim.esm
+  Data:
+    Magnitude: 500
+    Duration: 1
+- BaseEffect: 10BF17:Skyrim.esm
+  Data:
+    Magnitude: 500
+    Duration: 1
+- BaseEffect: 0208C5:Requiem.esp
+  Data:
+    Magnitude: 500
+    Duration: 1

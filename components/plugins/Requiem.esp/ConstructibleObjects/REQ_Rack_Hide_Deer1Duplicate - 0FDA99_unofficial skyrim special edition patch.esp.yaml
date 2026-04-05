@@ -1,0 +1,18 @@
+FormKey: 0FDA99:unofficial skyrim special edition patch.esp
+EditorID: REQ_Rack_Hide_Deer1Duplicate
+Items:
+- Item:
+    Item: 0CF89E:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    ItemOrList: 0CF89E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 0DB5D2:Skyrim.esm
+WorkbenchKeyword: 07866A:Skyrim.esm
+CreatedObjectCount: 2

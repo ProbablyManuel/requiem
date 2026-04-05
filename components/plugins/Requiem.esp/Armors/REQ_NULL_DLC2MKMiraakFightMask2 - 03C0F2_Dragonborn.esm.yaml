@@ -1,0 +1,42 @@
+FormKey: 03C0F2:Dragonborn.esm
+MajorRecordFlagsRaw: 4
+EditorID: REQ_NULL_DLC2MKMiraakFightMask2
+SkyrimMajorRecordFlags:
+- NotPlayable
+Name:
+  TargetLanguage: English
+  Value: Miraak's Mask
+ObjectEffect: 0FC05B:Skyrim.esm
+WorldModel:
+  Male:
+    Model:
+      File: DLC02\Clothes\MiraakRobes\MiraakHelm_GND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: DLC02\Clothes\MiraakRobes\MiraakHelm_GND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Head
+  - Circlet
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06BBD4:Skyrim.esm
+- 06C0EE:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Increases Magic Resistance by <10>%.  Gives access to Benthic Scream.
+Armature:
+- 0248E7:Dragonborn.esm
+- 02B0FA:Dragonborn.esm
+Value: 500
+Weight: 9
+ArmorRating: 80
+MajorFlags:
+- NonPlayable

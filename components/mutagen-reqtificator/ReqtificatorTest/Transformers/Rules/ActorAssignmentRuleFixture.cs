@@ -8,7 +8,7 @@ using Reqtificator.Transformers.Rules.Conditions;
 
 namespace ReqtificatorTest.Transformers.Rules
 {
-    internal class ActorAssignmentRuleFixture<TAssign> where TAssign : class, IMajorRecordGetter
+    internal sealed class ActorAssignmentRuleFixture<TAssign> where TAssign : class, IMajorRecordGetter
     {
         internal readonly Mock<IActorInheritanceGraphParser> InheritanceGraph;
         internal readonly IFormLinkGetter<IRaceGetter> CheckRaceNode1;

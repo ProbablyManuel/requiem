@@ -1,0 +1,95 @@
+FormKey: 02C49F:Dragonborn.esm
+EditorID: DLC2EbonyWarriorNode
+Parent: 01320E:Skyrim.esm
+PreviousSibling: 020686:Dragonborn.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 046EF2:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 007C25:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 0179D7:Dragonborn.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Member: OldLocation
+    Record: 016E2A:Dragonborn.esm
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Member: NewLocation
+    Record: 018A56:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Member: NewLocation
+    Record: 018A58:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Member: NewLocation
+    Record: 018A57:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Member: NewLocation
+    Record: 018A59:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Member: NewLocation
+    Record: 018A5A:Skyrim.esm
+  ComparisonValue: 1
+QuestFlags:
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 02C49E:Dragonborn.esm

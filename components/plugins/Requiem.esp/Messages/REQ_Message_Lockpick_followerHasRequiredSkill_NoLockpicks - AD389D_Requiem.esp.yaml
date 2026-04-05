@@ -1,0 +1,18 @@
+FormKey: AD389D:Requiem.esp
+EditorID: REQ_Message_Lockpick_followerHasRequiredSkill_NoLockpicks
+Description:
+  TargetLanguage: English
+  Value: >-
+    This lock seems very complex to you. You're certain you would just be wasting your time and lockpicks trying to open it. Your follower <Alias.ShortName=LockpickMinion> however thinks <Alias.Pronoun=LockpickMinion> could pick this lock with some effort if <Alias.Pronoun=LockpickMinion> had at least %.0f lockpicks.
+
+
+    A lockpicking expertise of at least %.0f is needed to handle locks of this complexity with less effort and fewer broken lockpicks.
+
+    Your current lockpicking expertise is %.0f and <Alias.ShortName=LockpickMinion> has an expertise of %.0f.
+Name:
+  TargetLanguage: English
+  Value: Mind-Blowing lock complexity! (at least for you)
+INAM: 0x00000000
+Quest: 82F3AF:Requiem.esp
+Flags:
+- MessageBox

@@ -1,0 +1,18 @@
+FormKey: 2C6F32:Requiem.esp
+EditorID: REQ_Stress_Blocking
+Name:
+  TargetLanguage: English
+  Value: Physical Exertion (Blocking)
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Ability
+Effects:
+- BaseEffect: 8D2D45:Requiem.esp
+  Data:
+    Magnitude: 4

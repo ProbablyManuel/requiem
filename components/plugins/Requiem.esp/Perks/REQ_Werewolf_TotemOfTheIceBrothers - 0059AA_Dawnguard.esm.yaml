@@ -1,0 +1,21 @@
+FormKey: 0059AA:Dawnguard.esm
+EditorID: REQ_Werewolf_TotemOfTheIceBrothers
+Name:
+  TargetLanguage: English
+  Value: Totem of Ice Brothers
+Description:
+  TargetLanguage: English
+  Value: Your Werewolf Totem of Brotherhood Howl is now able to call Ice Wolves to your aid.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0059A4:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 100
+  Unknown: 0x000000

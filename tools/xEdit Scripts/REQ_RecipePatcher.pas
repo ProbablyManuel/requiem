@@ -3,7 +3,7 @@ unit RecipePatcher;
 uses REQ_Util;
 
 var
-  re_ignore, re_recipe, re_recipe_artifact: TPerlRegEx;
+  re_recipe, re_recipe_artifact: TPerlRegEx;
   recipes_ingredients, recipes_conditions: TStringList;
 
 
@@ -15,11 +15,8 @@ begin
   recipes_conditions := TStringList.Create;
   recipes_conditions.LoadFromFile('Edit Scripts\REQ_RecipePatcherConditions.txt');
 
-  re_ignore := TPerlRegEx.Create;
-  re_ignore.RegEx := '^[^_]+_(DEPRECATED|LEGACY|NULL|AetheriumForge|Cook|Ench|Forge_(?:Amulet|Arrow|Bolt|Circlet|Ench|Ring|Special|Staff)|Mill|Oven|Rack|Skyforge_Arrow|Smelter|Temper_Special)_.+$';
-
   re_recipe := TPerlRegEx.Create;
-  re_recipe.RegEx := '^[^_]+_((?:Forge|Skyforge|Temper(?:_Var)?)_(?:Heavy|Light|Weapon)_([^_]+)_([^_]+))(?:_(.+))?$';
+  re_recipe.RegEx := '^[^_]+_((?:Forge|Skyforge|Smelter|Rack|Temper(?:_Var)?)_(?:Heavy|Light|Weapon)_([^_]+)_([^_]+))(?:_(.+))?$';
 
   re_recipe_artifact := TPerlRegEx.Create;
   re_recipe_artifact.RegEx := '^[^_]+_(Temper_Artifact_.+)$';
@@ -30,12 +27,10 @@ var
   key: String;
 begin
   if Signature(e) <> 'COBJ' then Exit;
-  re_ignore.Subject := EditorID(e);
-  if re_ignore.Match then Exit;
 
   re_recipe.Subject := EditorID(e);
   re_recipe_artifact.Subject := EditorID(e);
-  if re_recipe.Match then  begin
+  if re_recipe.Match then begin
     key := re_recipe.Groups[1];
     if Pos('Temper_Var', key) = 1 then
       // Remove "_Var" modifier
@@ -44,7 +39,7 @@ begin
   else if re_recipe_artifact.Match then
     key := re_recipe_artifact.Groups[1]
   else begin
-    AddMessage('EditorID ' + EditorID(e) + ' is invalid');
+    AddMessage('EditorID ' + EditorID(e) + ' is not a crafting/temper/breakdown recipe');
     Exit;
   end;
   if (recipes_ingredients.IndexOfName(key) = -1) then begin
@@ -55,14 +50,16 @@ begin
     AddMessage('EditorID ' + EditorID(e) + ' is not recognized');
     Exit;
   end;
-  SetIngredients(e, key);
+  if (Pos('Smelter', key) = 1) or (Pos('Rack', key) = 1) then
+    SetCreatedObject(e, key)
+  else
+    SetIngredients(e, key);
   SetConditions(e, key);
 end;
 
 function Finalize: Integer;
 begin
   recipes_ingredients.Free;
-  re_ignore.Free;
   re_recipe.Free;
   re_recipe_artifact.Free;
 end;
@@ -104,7 +101,9 @@ begin
   conditions.StrictDelimiter := True;
   conditions.DelimitedText := recipes_conditions.Values[recipe];
   for i := 0 to Pred(conditions.Count div 6) do begin
-    if conditions[6 * i + 3] <> '00 00 00 00' then
+    if conditions[6 * i + 3] = 'GetBreakdownItem()' then
+      conditions[6 * i + 3] := IntToHex(GetLoadOrderFormID(GetBreakdownItem(e)), 8)
+    else if conditions[6 * i + 3] <> '00 00 00 00' then
       conditions[6 * i + 3] := IntToHex(PairToLoadOrderFormID(conditions[6 * i + 3]), 8);
   end;
 
@@ -126,6 +125,25 @@ begin
   conditions.Free;
 end;
 
+procedure SetCreatedObject(e: IInterface; recipe: String);
+var
+  createdObject, createdObjectCount: String;
+  i: Integer;
+  ingredients: TStringList;
+begin
+  ingredients := TStringList.Create;
+  ingredients.StrictDelimiter := True;
+  ingredients.DelimitedText := recipes_ingredients.Values[recipe];
+  ingredients[0] := IntToHex(PairToLoadOrderFormID(ingredients[0]), 8);
+
+  if IntToHex(GetElementLoadOrderFormID(e, 'CNAM - Created Object'), 8) <> ingredients[0] then
+    SetElementEditValues(e, 'CNAM - Created Object', ingredients[0]);
+  if GetElementEditValues(e, 'NAM1 - Created Object Count') <> ingredients[1] then
+    SetElementEditValues(e, 'NAM1 - Created Object Count', ingredients[1]);
+
+  ingredients.Free;
+end;
+
 function SerializeItems(items: IInterface): String;
 var
   entry: IInterface;
@@ -133,7 +151,7 @@ var
 begin
   for i := 0 to Pred(ElementCount(items)) do begin
     entry := ElementByIndex(items, i);
-    Result := Result + ',' + IntToHex(FileFormIDtoLoadOrderFormID(GetFile(items), GetElementNativeValues(entry, 'CNTO - Item\Item')), 8);
+    Result := Result + ',' + IntToHex(GetElementLoadOrderFormID(entry, 'CNTO - Item\Item'), 8);
     Result := Result + ',' + GetElementEditValues(entry, 'CNTO - Item\Count');
     if ElementExists(entry, 'COED - Extra Data') then
       Result := 'COED';
@@ -152,7 +170,7 @@ begin
     Result := Result + ',' + GetElementEditValues(c, 'CTDA\Comparison Value');
     Result := Result + ',' + GetElementEditValues(c, 'CTDA\Function');
     if Assigned(LinksTo(ElementByPath(c, 'CTDA\Parameter #1'))) then
-      Result := Result + ',' + IntToHex(FileFormIDtoLoadOrderFormID(GetFile(conditions), GetElementNativeValues(c, 'CTDA\Parameter #1')), 8)
+      Result := Result + ',' + IntToHex(GetElementLoadOrderFormID(c, 'CTDA\Parameter #1'), 8)
     else
       Result := Result + ',' + GetElementEditValues(c, 'CTDA\Parameter #1');
     // The edit value of a quest stage is preceded by its log entry which is not the expected behavior
@@ -163,6 +181,21 @@ begin
     Result := Result + ',' + GetElementEditValues(c, 'CTDA\Run On');
   end;
   Result := Delete(Result, 1, 1);
+end;
+
+function GetBreakdownItem(e: IInterface): IInterface;
+var
+  i: Integer;
+  item, items: IInterface;
+begin
+  items := ElementByPath(e, 'Items');
+  for i := 0 to Pred(ElementCount(items)) do begin
+    item := LinksTo(ElementByPath(ElementByIndex(items, i), 'CNTO - Item\Item'));
+    if GetLoadOrderFormID(item) <> PairToLoadOrderFormID('Requiem.esp:43D07D') then begin
+      Result := item;
+      Exit;
+    end;
+  end;
 end;
 
 end.

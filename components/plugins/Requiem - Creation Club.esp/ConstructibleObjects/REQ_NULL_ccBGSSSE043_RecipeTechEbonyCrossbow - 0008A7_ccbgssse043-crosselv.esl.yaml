@@ -1,0 +1,20 @@
+FormKey: 0008A7:ccbgssse043-crosselv.esl
+EditorID: REQ_NULL_ccBGSSSE043_RecipeTechEbonyCrossbow
+Items:
+- Item:
+    Item: 05AD9D:Skyrim.esm
+    Count: 5
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB412:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000807:ccbgssse043-crosselv.esl
+  ComparisonValue: 1
+CreatedObject: 0008A6:ccbgssse043-crosselv.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

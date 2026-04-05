@@ -1,0 +1,58 @@
+FormKey: 016A09:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: SolitudeErikursHouse
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Erikur's House
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00514B39'
+  DirectionalColor: '#002F4855'
+  FogNearColor: '#00595F66'
+  FogNear: 340
+  FogFar: 5000
+  FogClipDistance: 5000
+  FogPower: 0.7
+  AmbientColors:
+    DirectionalXPlus: '#00594B3B'
+    DirectionalXMinus: '#00484B36'
+    DirectionalYPlus: '#00514E39'
+    DirectionalYMinus: '#00514739'
+    DirectionalZPlus: '#00262319'
+    DirectionalZMinus: '#007B7258'
+    Specular: '#003F4529'
+    Scale: 1
+  FogFarColor: '#003F4529'
+  FogMax: 0.8
+  LightFadeBegin: 100
+  LightFadeEnd: 5000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+LightingTemplate: 06256A:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 020090:Skyrim.esm
+Owner: 0C13DF:Skyrim.esm
+LockList: 0C13E0:Skyrim.esm
+AcousticSpace: 0E3261:Skyrim.esm
+Music: 02C3CA:Skyrim.esm
+ImageSpace: 0ABDB4:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0DA119:Skyrim.esm
+  Base: 0800E0:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 020090:Skyrim.esm
+  Placement:
+    Position: 211.20615, -567.9583, -288
+MajorFlags:
+- 0x40000

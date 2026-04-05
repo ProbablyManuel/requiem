@@ -1,0 +1,25 @@
+FormKey: 03EB28:Skyrim.esm
+EditorID: REQ_Alch_FortifyRestoration
+Name:
+  TargetLanguage: English
+  Value: Fortify Restoration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A2D:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 012FD9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: RestorationModifier
+  Association: 065A2D:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Restoration spells cost <mag>% less for <dur> seconds.

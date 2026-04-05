@@ -1,0 +1,43 @@
+FormKey: 029B0D:Requiem.esp
+EditorID: REQ_Destruction5_FireStrike_FireDamage
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: ResistFire
+CastingLight: 01CBB3:Skyrim.esm
+HitShader: 01B212:Skyrim.esm
+MinimumSkillLevel: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 03021C:Requiem.esp
+Explosion: 029B0F:Requiem.esp
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: VeryLoud
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 029B0C:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: The caster evokes a flaming meteor that obliterates everything in its impact radius.

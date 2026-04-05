@@ -1,0 +1,28 @@
+FormKey: 03BD14:Dragonborn.esm
+EditorID: REQ_Food_Meat_Raw_Boar
+ObjectBounds:
+  First: -13, -14, -4
+  Second: 13, 14, 4
+Name:
+  TargetLanguage: English
+  Value: Boar Meat
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: DLC02\Clutter\DLC02BoarMeat.nif
+  Data: 0x020000000000000000000000
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

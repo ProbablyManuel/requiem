@@ -1,0 +1,36 @@
+FormKey: 187ED2:Requiem.esp
+EditorID: REQ_HeavyArmor_BattleMage
+Name:
+  TargetLanguage: English
+  Value: Battle Mage
+Description:
+  TargetLanguage: English
+  Value: 'You have mastered spellcasting while wearing heavy armor.<br>[No spell cost penalty for casting Master spells in heavy armor, 15% less spell cost when wearing all heavy armor: head, chest, hands, feet]'
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F6D:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: HeavyArmor
+  ComparisonValue: 100
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      CompareOperator: GreaterThanOrEqualTo
+      Data:
+        MutagenObjectType: WornApparelHasKeywordCountConditionData
+        Keyword: 06BBD2:Skyrim.esm
+      ComparisonValue: 4
+  EntryPoint: ModSpellCost
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.85

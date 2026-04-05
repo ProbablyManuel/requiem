@@ -1,0 +1,41 @@
+FormKey: AD8C73:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_Daedric_Effect
+Name:
+  TargetLanguage: English
+  Value: Resist Magic
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistMagic
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Daedric armor is infused by the animus of a resilient dremora. Thus, magic deals <mag>% less damage to you (9% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 05C84E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    Keyword: 06BBD4:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm

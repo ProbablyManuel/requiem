@@ -1,0 +1,53 @@
+FormKey: 0008A6:ccbgssse043-crosselv.esl
+EditorID: REQ_NULL_ccBGSSSE043_EbonyCrossbow
+ObjectBounds:
+  First: -28, -28, -4
+  Second: 27, 27, 8
+Name:
+  TargetLanguage: English
+  Value: Ebony Crossbow
+Model:
+  File: CreationClub\BGSSSE043\Weapons\Ebony\EbonyCrossbow.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E715:Skyrim.esm
+- 01E71E:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 00A311:Dawnguard.esm
+FirstPersonModel: 0008B3:ccbgssse043-crosselv.esl
+AttackSound: 008E34:Dawnguard.esm
+AttackSound2D: 008E35:Dawnguard.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 017EC9:Dawnguard.esm
+UnequipSound: 017ECA:Dawnguard.esm
+BasicStats:
+  Value: 610
+  Weight: 23
+  Damage: 25
+Data:
+  AnimationType: Crossbow
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  BaseVATStoHitChance: 5
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+  Stagger: 0.85
+Critical:
+  Damage: 11
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

@@ -25,7 +25,7 @@ LeveledItem property lItemGems10 auto
 int Property ResourceCount = 1 Auto
 {how many resources you get per drop}
 
-int property ResourceCountTotal = 6 auto ; Xarrian changed from 3
+int property ResourceCountTotal = 6 auto
 {how many resources this has before it is depleted}
 
 int property ResourceCountCurrent = -1 auto Hidden

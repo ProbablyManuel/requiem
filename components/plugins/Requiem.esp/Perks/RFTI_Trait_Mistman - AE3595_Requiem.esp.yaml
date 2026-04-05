@@ -1,0 +1,14 @@
+FormKey: AE3595:Requiem.esp
+EditorID: RFTI_Trait_Mistman
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 20
+  EntryPoint: ModFallingDamage
+  PerkConditionTabCount: 1
+  Value: 0

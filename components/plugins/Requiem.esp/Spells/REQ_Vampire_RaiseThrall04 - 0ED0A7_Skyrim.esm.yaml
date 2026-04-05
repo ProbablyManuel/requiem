@@ -1,0 +1,25 @@
+FormKey: 0ED0A7:Skyrim.esm
+EditorID: REQ_Vampire_RaiseThrall04
+Name:
+  TargetLanguage: English
+  Value: Vampire's Servant
+MenuDisplayObject: 1097CD:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The vampire calls upon vile powers to raise a corpse from the dead to serve him caster temporarily.
+Flags:
+- ManualCostCalc
+Type: Power
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 096D0D:Skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 180
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 3141B4:Requiem.esp

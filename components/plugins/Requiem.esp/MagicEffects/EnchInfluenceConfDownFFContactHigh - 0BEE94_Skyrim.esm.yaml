@@ -1,0 +1,63 @@
+FormKey: 0BEE94:Skyrim.esm
+EditorID: EnchInfluenceConfDownFFContactHigh
+Version2: 15
+Name:
+  TargetLanguage: English
+  Value: Fear
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Keywords:
+- 078098:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+BaseCost: 1.25
+ResistValue: ResistMagic
+HitShader: 04C6D8:Skyrim.esm
+EnchantShader: 05D608:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Confidence
+  Type: Demoralize
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 04C6DA:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Creatures and people up to level <mag> flee from combat for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 25
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

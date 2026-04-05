@@ -1,0 +1,24 @@
+FormKey: AD390D:Requiem.esp
+EditorID: REQ_Alcohol_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Inebriation
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Detrimental
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: That might feel good for a short time... or it might just shorten your time.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

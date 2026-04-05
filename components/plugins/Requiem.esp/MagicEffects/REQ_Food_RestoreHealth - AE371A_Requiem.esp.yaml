@@ -1,0 +1,25 @@
+FormKey: AE371A:Requiem.esp
+EditorID: REQ_Food_RestoreHealth
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD380D:Requiem.esp
+Flags:
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+  Association: AD380D:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health recovers by <mag> per second for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm

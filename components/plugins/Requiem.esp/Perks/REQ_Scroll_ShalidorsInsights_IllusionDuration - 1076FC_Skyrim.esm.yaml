@@ -1,0 +1,52 @@
+FormKey: 1076FC:Skyrim.esm
+EditorID: REQ_Scroll_ShalidorsInsights_IllusionDuration
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C4:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C3:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C5:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0F2CA9:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C6:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.5

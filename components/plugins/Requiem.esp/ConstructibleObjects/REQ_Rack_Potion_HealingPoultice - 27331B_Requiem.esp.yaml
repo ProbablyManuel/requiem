@@ -1,0 +1,22 @@
+FormKey: 27331B:Requiem.esp
+EditorID: REQ_Rack_Potion_HealingPoultice
+Items:
+- Item:
+    Item: 034C5E:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 03F7F8:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 077E1C:Skyrim.esm
+    Count: 3
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 682FB7:Requiem.esp
+  ComparisonValue: 1
+CreatedObject: 273318:Requiem.esp
+WorkbenchKeyword: 07866A:Skyrim.esm
+CreatedObjectCount: 3

@@ -1,0 +1,21 @@
+FormKey: 37BCA2:Requiem.esp
+EditorID: REQ_Ench_AncientDawnguardWarhammer_SunRune
+Name:
+  TargetLanguage: English
+  Value: Sun Rune
+MenuDisplayObject: 018F02:Dawnguard.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 20
+Effects:
+- BaseEffect: 37BCA1:Requiem.esp
+  Data:
+    Magnitude: 120
+    Duration: 1

@@ -1,0 +1,34 @@
+FormKey: 058213:Skyrim.esm
+EditorID: REQ_Sneak_MuffledMovement
+Name:
+  TargetLanguage: English
+  Value: Muffled Movement
+Description:
+  TargetLanguage: English
+  Value: Your newfound finesse allows you to move more quietly while not wearing any heavy armor.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BE126:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Sneak
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  EntryPoint: ModDetectionSneakSkill
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 15

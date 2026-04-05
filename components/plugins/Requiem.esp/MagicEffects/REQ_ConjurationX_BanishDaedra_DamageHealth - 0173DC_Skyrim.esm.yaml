@@ -1,0 +1,38 @@
+FormKey: 0173DC:Skyrim.esm
+EditorID: REQ_ConjurationX_BanishDaedra_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Detrimental
+- NoDuration
+- FXPersist
+- PowerAffectsMagnitude
+MagicSkill: Conjuration
+CastingLight: 0ABEFE:Skyrim.esm
+TaperWeight: 1
+HitShader: 0ABEFF:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: TargetActor
+CastingArt: 0ABF02:Skyrim.esm
+HitEffectArt: 0ABF10:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 05A017:Skyrim.esm
+- Type: Release
+  Sound: 057C61:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: If the target is not banished, it will be dealt <mag> magic damage and staggered.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+  ComparisonValue: 1

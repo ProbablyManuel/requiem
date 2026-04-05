@@ -1,0 +1,19 @@
+FormKey: 24B189:Requiem.esp
+EditorID: REQ_Smelter_Ring_Silver
+Items:
+- Item:
+    Item: 03B97C:Skyrim.esm
+    Count: 4
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 03B97C:Skyrim.esm
+CreatedObject: 05ACE3:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

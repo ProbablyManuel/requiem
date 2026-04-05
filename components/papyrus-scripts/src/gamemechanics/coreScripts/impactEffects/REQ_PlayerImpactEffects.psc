@@ -11,14 +11,12 @@ Spell[] Property Stagger Auto
 {stagger spell, applied randomly depending on various things}
 Spell[] Property Disarm Auto
 {disarm effect, applied randomly, if player is out of stamina}
-Keyword[] Property Twohanded Auto
-{keywords for weapons to be considered as 2H weapons}
-Keyword[] Property RangedWeapons Auto
-{weapon types which are considered ranged weapons}
 Keyword Property BreakableBow Auto
 {bows with this keyword break on hit}
 Keyword Property Concentration Auto
 {keyword for spell with concentration effects}
+Keyword Property MagicWard Auto
+{keyword for ward spells}
 Keyword Property IgnoredAttack Auto
 {if the attacks "source" (weapon, spell etc) has this keyword, it will not trigger any impact effects}
 Float[] Property ArmorTresholds Auto
@@ -66,20 +64,18 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 		GotoState("")
 		Return
 	ElseIf (akSource as Weapon)
-		While (count < RangedWeapons.Length && spelltype == 0)
-			spelltype = 4 * aksource.HasKeyword(RangedWeapons[count]) as Int
-			count += 1
-		EndWhile
-		count = 0
-		If (akProjectile == None && spelltype == 0)
-			While (count < Twohanded.Length && spelltype == 0)
-				spelltype = aksource.HasKeyword(Twohanded[count]) as Int
-				count += 1
-			EndWhile
-			spelltype += 2 * ((abPowerAttack && !abBashAttack) as Int)
+		If (akSource as Weapon).GetSkill() == "Marksman"
+			spelltype = 4
+		ElseIf (akSource as Weapon).GetSkill() == "OneHanded" || akSource == Unarmed
+			spelltype = 0
+		ElseIf (akSource as Weapon).GetSkill() == "TwoHanded"
+			spelltype = 1
 		Else
 			GotoState("")
-			return
+			Return
+		EndIf
+		If abPowerAttack && !abBashAttack
+			spelltype += 2
 		EndIf
 	ElseIf (akSource as Spell && !absorbed)
 		If ( akSource.HasKeyword(Concentration) )
@@ -98,7 +94,8 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 		GotoState("")
 		return
 	EndIf
-	Float chance = Staggerchance(spelltype, abPowerAttack, abBashAttack, abHitBlocked)
+	Bool ward = Player.HasMagicEffectWithKeyword(MagicWard)
+	Float chance = Staggerchance(spelltype, abPowerAttack, abBashAttack, abHitBlocked || ward)
 	float random = Utility.RandomFloat()
 	If (OnHitDebug.GetValue() == 1)
 		Debug.MessageBox("Hit Event type: "+spelltype+" ("+aksource+")\nSource-Ench: "+(akSource as Enchantment) +"\nSourceweapon: "+(akSource as Weapon)+"\npower: "+abPowerAttack +"\nblock: " + abhitblocked+ "\nstagger: "+random+"/"+chance+"\nbash: "+abBashAttack+"\nProjectile: "+akProjectile+"\nBad Guy: " + akAggressor)
@@ -112,7 +109,7 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 	EndIf
 	If ( abHitBlocked )
 		StaminaGain[spelltype].cast(Player, Player)
-	Else
+	ElseIf (!ward)
 		StaminaDamage[spelltype].cast(Player, Player)
 	EndIf
 	

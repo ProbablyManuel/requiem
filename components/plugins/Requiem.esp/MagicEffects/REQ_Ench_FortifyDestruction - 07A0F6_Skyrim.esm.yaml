@@ -1,0 +1,23 @@
+FormKey: 07A0F6:Skyrim.esm
+EditorID: REQ_Ench_FortifyDestruction
+Name:
+  TargetLanguage: English
+  Value: Fortify Destruction
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F5F:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 26
+EnchantShader: 092DE7:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: DestructionModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Destruction spells cost <mag>% less.

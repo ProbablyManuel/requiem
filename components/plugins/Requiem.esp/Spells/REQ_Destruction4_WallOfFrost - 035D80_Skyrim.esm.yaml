@@ -1,0 +1,28 @@
+FormKey: 035D80:Skyrim.esm
+EditorID: REQ_Destruction4_WallOfFrost
+Name:
+  TargetLanguage: English
+  Value: Icewall
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster calls forth a gust of frost that temporarily creates a wall of ice where it hits.
+BaseCost: 145
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: Aimed
+HalfCostPerk: 0C44C1:Skyrim.esm
+Effects:
+- BaseEffect: 08F3F7:Skyrim.esm
+  Data:
+    Magnitude: 20
+    Duration: 1
+- BaseEffect: 0B729D:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Duration: 5
+- BaseEffect: 0F3934:Skyrim.esm
+  Data:
+    Duration: 1

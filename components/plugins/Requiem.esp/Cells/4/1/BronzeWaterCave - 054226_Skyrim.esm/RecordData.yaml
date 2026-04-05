@@ -1,0 +1,69 @@
+FormKey: 054226:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: BronzeWaterCave
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Bronze Water Cave
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00201B27'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  LightFadeBegin: 8000
+  LightFadeEnd: 9000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0345A4:Skyrim.esm
+WaterHeight: 0
+Location: 046BAC:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 046BBC:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C76C9:Skyrim.esm
+  Base: 020650:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 046BAC:Skyrim.esm
+  Placement:
+    Position: 2138.861, 1993.6495, -5981.7695
+    Rotation: 0, 0, 5.0331874
+MajorFlags:
+- 0x40000

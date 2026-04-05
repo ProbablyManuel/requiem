@@ -1,0 +1,21 @@
+FormKey: 0FEAAA:Skyrim.esm
+EditorID: REQ_NULL_AbFortifyHealRateCombat
+Name:
+  TargetLanguage: English
+  Value: Fortified Combat Healing
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+- Painless
+BaseCost: 5
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: CombatHealthRegenMultiply
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

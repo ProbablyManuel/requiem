@@ -1,0 +1,26 @@
+FormKey: 07A0FB:Skyrim.esm
+EditorID: REQ_Ench_FortifyArmorRatingLight
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ShieldEffectUnequipFix
+Name:
+  TargetLanguage: English
+  Value: Fortify Armor Rating
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F65:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 16
+EnchantShader: 092DEE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: DamageResist
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor rating increases by <mag>.

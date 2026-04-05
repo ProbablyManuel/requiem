@@ -1,0 +1,38 @@
+FormKey: 007A3F:Dawnguard.esm
+EditorID: REQ_Werewolf_BestialStrength2
+Name:
+  TargetLanguage: English
+  Value: Bestial Strength
+Description:
+  TargetLanguage: English
+  Value: You can feel how your muscles become even stronger when being a werewolf, <br>granting you a moderate damage bonus.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0059A4:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+NextPerk: 011CFA:Dawnguard.esm
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 20
+  Unknown: 0x000000
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 011CFA:Dawnguard.esm
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsRaceConditionData
+        Race: 0CDD84:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.5

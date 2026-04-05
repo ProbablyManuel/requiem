@@ -1,0 +1,99 @@
+FormKey: 000645:Skyrim.esm
+EditorID: AVHealRatePowerMod
+Version2: 11
+Name:
+  TargetLanguage: English
+  Value: Werewolf
+Description:
+  TargetLanguage: English
+  Value: Your werewolf form grows in power with every bit of flesh you tear from the shredded corpses of your unfortunate foes...
+CNAM: 0x00000000
+Skill:
+  UseMult: 1
+  ImproveMult: 1
+  ImproveOffset: 20
+PerkTree:
+- FNAM: 0x01000000
+  PerkGridX: 0
+  PerkGridY: 0
+  HorizontalPosition: 0
+  VerticalPosition: 0
+  AssociatedSkill: 000645:Skyrim.esm
+  ConnectionLineToIndices:
+  - 1
+  Index: 0
+- Perk: 0059A4:Dawnguard.esm
+  FNAM: 0x01000000
+  PerkGridX: 4
+  PerkGridY: 0
+  HorizontalPosition: 0.11333334
+  VerticalPosition: 0
+  AssociatedSkill: 000645:Skyrim.esm
+  ConnectionLineToIndices:
+  - 4
+  - 5
+  - 7
+  - 6
+  Index: 1
+- Perk: 0059A5:Dawnguard.esm
+  FNAM: 0x01000000
+  PerkGridX: 3
+  PerkGridY: 0
+  HorizontalPosition: -0.30666667
+  VerticalPosition: 0.6
+  AssociatedSkill: 000645:Skyrim.esm
+  ConnectionLineToIndices:
+  - 2
+  Index: 4
+- Perk: 0059A7:Dawnguard.esm
+  FNAM: 0x01000000
+  PerkGridX: 1
+  PerkGridY: 0
+  HorizontalPosition: -0.24666667
+  VerticalPosition: 0.92
+  AssociatedSkill: 000645:Skyrim.esm
+  ConnectionLineToIndices:
+  - 3
+  Index: 2
+- Perk: 0059A6:Dawnguard.esm
+  FNAM: 0x01000000
+  PerkGridX: 0
+  PerkGridY: 1
+  HorizontalPosition: 0.033333335
+  VerticalPosition: 1.14
+  AssociatedSkill: 000645:Skyrim.esm
+  Index: 3
+- Perk: 0059A8:Dawnguard.esm
+  FNAM: 0x01000000
+  PerkGridX: 3
+  PerkGridY: 2
+  HorizontalPosition: -0.11333334
+  VerticalPosition: 0.12
+  AssociatedSkill: 000645:Skyrim.esm
+  Index: 5
+- Perk: 0059AA:Dawnguard.esm
+  FNAM: 0x01000000
+  PerkGridX: 7
+  PerkGridY: 0
+  HorizontalPosition: -0.033333335
+  VerticalPosition: 0.92
+  AssociatedSkill: 000645:Skyrim.esm
+  ConnectionLineToIndices:
+  - 8
+  Index: 7
+- Perk: 0059AB:Dawnguard.esm
+  FNAM: 0x01000000
+  PerkGridX: 9
+  PerkGridY: 1
+  HorizontalPosition: 0.006666667
+  VerticalPosition: 0.84
+  AssociatedSkill: 000645:Skyrim.esm
+  Index: 8
+- Perk: 0059A9:Dawnguard.esm
+  FNAM: 0x01000000
+  PerkGridX: 5
+  PerkGridY: 2
+  HorizontalPosition: 0.033333335
+  VerticalPosition: 1.08
+  AssociatedSkill: 000645:Skyrim.esm
+  Index: 6

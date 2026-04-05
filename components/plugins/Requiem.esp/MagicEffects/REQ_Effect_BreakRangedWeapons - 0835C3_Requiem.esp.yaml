@@ -1,0 +1,58 @@
+FormKey: 0835C3:Requiem.esp
+EditorID: REQ_Effect_BreakRangedWeapons
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_DestroyRangedWeapons
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Breakable
+      Object: 2E232E:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MsgDestroyedBow
+      Object: 0835C5:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MsgDestroyedCrossbow
+      Object: 0835C7:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Break Ranged Weapons
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDetectedConditionData
+    TargetNpc: 000014:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    ItemSource: Right
+  ComparisonValue: 7
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    ItemSource: Right
+  ComparisonValue: 12

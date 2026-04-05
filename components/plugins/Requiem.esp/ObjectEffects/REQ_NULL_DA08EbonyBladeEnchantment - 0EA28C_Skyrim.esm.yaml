@@ -1,0 +1,29 @@
+FormKey: 0EA28C:Skyrim.esm
+EditorID: REQ_NULL_DA08EbonyBladeEnchantment
+Name:
+  TargetLanguage: English
+  Value: Ebony Blade Enchantment
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 0EA28D:Skyrim.esm
+  Data:
+    Magnitude: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Variable02
+    ComparisonValue: 50
+- BaseEffect: 0F23FC:Skyrim.esm
+  Data:
+    Duration: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Variable02
+    ComparisonValue: 50

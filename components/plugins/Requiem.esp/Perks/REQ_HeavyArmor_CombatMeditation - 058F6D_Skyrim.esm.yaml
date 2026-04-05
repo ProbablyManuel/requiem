@@ -1,0 +1,22 @@
+FormKey: 058F6D:Skyrim.esm
+EditorID: REQ_HeavyArmor_CombatMeditation
+Name:
+  TargetLanguage: English
+  Value: Combat Meditation
+Description:
+  TargetLanguage: English
+  Value: You're accustomed to your heavy armor so much that you can now cast even sophisticated spells with relative ease.<br>[No spell cost penalty for casting Expert spells in heavy armor]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0BCD2B:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: HeavyArmor
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True

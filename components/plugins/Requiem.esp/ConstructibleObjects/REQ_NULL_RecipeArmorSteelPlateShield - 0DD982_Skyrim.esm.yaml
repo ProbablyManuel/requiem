@@ -1,0 +1,20 @@
+FormKey: 0DD982:Skyrim.esm
+EditorID: REQ_NULL_RecipeArmorSteelPlateShield
+Items:
+- Item:
+    Item: 05ACE5:Skyrim.esm
+    Count: 4
+- Item:
+    Item: 05AD93:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

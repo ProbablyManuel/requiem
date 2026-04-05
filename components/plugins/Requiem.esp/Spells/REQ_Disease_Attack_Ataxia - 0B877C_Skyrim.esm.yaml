@@ -1,0 +1,19 @@
+FormKey: 0B877C:Skyrim.esm
+EditorID: REQ_Disease_Attack_Ataxia
+Name:
+  TargetLanguage: English
+  Value: Ataxia
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Ataxia is a mild common disease affecting the victim's strength and dexterity. Symptoms include generalized pain and muscle stiffness accompanied by uncontrollable shivering from time to time.
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+Type: Disease
+ChargeTime: 0.5
+TargetType: Touch
+Effects:
+- BaseEffect: 0B8775:Skyrim.esm
+  Data:
+    Magnitude: 300

@@ -1,0 +1,27 @@
+FormKey: 058F79:Skyrim.esm
+EditorID: REQ_Speech_Fencing
+Name:
+  TargetLanguage: English
+  Value: Fencing
+Description:
+  TargetLanguage: English
+  Value: You've become so persuasive that you could make almost anyone believe that <br> your goods are of a legal origin.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Speech
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F7A:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 0AF668:Skyrim.esm

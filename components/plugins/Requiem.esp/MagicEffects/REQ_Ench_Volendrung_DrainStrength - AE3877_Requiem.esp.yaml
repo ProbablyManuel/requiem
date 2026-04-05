@@ -1,0 +1,27 @@
+FormKey: AE3877:Requiem.esp
+EditorID: REQ_Ench_Volendrung_DrainStrength
+Name:
+  TargetLanguage: English
+  Value: Drain Strength
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: BlockPowerModifier
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: AttackDamageMult
+HitEffectArt: 0028E7:Dawnguard.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Reduces damage and the amount of blockable damage by <mag>% for <dur> seconds.

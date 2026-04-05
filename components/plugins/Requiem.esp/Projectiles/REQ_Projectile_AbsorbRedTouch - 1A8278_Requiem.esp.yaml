@@ -1,0 +1,20 @@
+FormKey: 1A8278:Requiem.esp
+EditorID: REQ_Projectile_AbsorbRedTouch
+ObjectBounds:
+  First: -19, 0, -19
+  Second: 19, 512, 19
+Model:
+  File: Magic\AbsorbBeam01.nif
+  Data: 0x020000000000000000000000
+Flags:
+- PassThroughSmallTransparent
+Type: Flame
+Speed: 1000
+Range: 120
+Light: 0ABEFE:Skyrim.esm
+Sound: 058E2E:Skyrim.esm
+FadeDuration: 1
+ImpactForce: 5
+CollisionRadius: 10
+RelaunchInterval: 0.5
+MuzzleFlashModel: ''

@@ -1,0 +1,34 @@
+FormKey: 03AD6A:Skyrim.esm
+EditorID: IceWraithTeeth
+Version2: 2
+ObjectBounds:
+  First: -3, -6, 0
+  Second: 3, 5, 5
+Name:
+  TargetLanguage: English
+  Value: Ice Wraith Teeth
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\IceWraithTeeth.nif
+  Data: 0x0200000003000000000000002185563A64647300604DDD5CDE55648664647300604DDD5CAD99560A64647300262C333B
+Value: 30
+Weight: 0.25
+IngredientValue: 30
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2E:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 20B30F:Requiem.esp
+  Data:
+    Duration: 2
+- BaseEffect: 03EB3D:Skyrim.esm
+  Data:
+    Duration: 4
+- BaseEffect: 073F2D:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30

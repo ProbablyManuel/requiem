@@ -1,0 +1,29 @@
+FormKey: 01EDA3:Dragonborn.esm
+EditorID: REQ_NULL_dlc2BBUnlimitedMagickaEffect
+Name:
+  TargetLanguage: English
+  Value: Regenerate Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0FB98C:Skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+MagicSkill: Restoration
+HitShader: 0ABF08:Skyrim.esm
+EnchantShader: 092DEE:Skyrim.esm
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MagickaRate
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: Magicka
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka regenerates <mag>% faster.

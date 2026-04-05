@@ -1,0 +1,33 @@
+FormKey: 8D54E1:Requiem.esp
+EditorID: REQ_Effect_Mechanics_Stress_Swimming
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ConditionalSubEffect
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: SubSpells
+      Objects:
+      - Name: ''
+        Object: ADDDCC:Requiem.esp
+      - Name: ''
+        Object: ADDDCB:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: 'REQ GM: Stamina Drain for swimming'
+Keywords:
+- 8CDE08:Requiem.esp
+Flags:
+- Detrimental
+- NoHitEvent
+- NoArea
+- HideInUI
+- NoDeathDispel
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

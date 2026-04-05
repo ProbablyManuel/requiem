@@ -1,0 +1,24 @@
+FormKey: 17E064:Requiem.esp
+EditorID: REQ_Perk_Restoration_PowerOfLife3
+Name:
+  TargetLanguage: English
+  Value: Power of Life
+MenuDisplayObject: 0A0E7D:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster's health becomes almost inexhaustable for a short duration.
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Power
+CastType: FireAndForget
+Effects:
+- BaseEffect: 020E2E:Requiem.esp
+  Data:
+    Magnitude: 5000
+    Duration: 12
+- BaseEffect: 109ADD:Skyrim.esm
+  Data:
+    Magnitude: 100

@@ -1,0 +1,36 @@
+FormKey: 017008:Dragonborn.esm
+EditorID: DLC2TramaRoot01
+ObjectBounds:
+  First: -6, -3, -8
+  Second: 6, 4, 9
+Name:
+  TargetLanguage: English
+  Value: Trama Root
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: DLC02\Plants\TramaRoot01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 01DBEF:Dragonborn.esm
+PutDownSound: 03C7C3:Skyrim.esm
+Value: 1
+Weight: 0.2
+IngredientValue: 7
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F2F:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 300
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 073F25:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5

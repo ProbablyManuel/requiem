@@ -1,0 +1,37 @@
+FormKey: 000801:ccbgssse056-ba_silver.esl
+EditorID: REQ_NULL_ccBGSSSE056_ArmorBladesCuirass
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2defaultAddPerkOnEquipScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PerkToAdd
+      Object: 000804:ccbgssse056-ba_silver.esl
+Name:
+  TargetLanguage: English
+  Value: Silver Armor
+WorldModel:
+  Male:
+    Model:
+      File: CreationClub\BGSSSE056\Armor\Silver\SilverBodyGO.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06C0EC:Skyrim.esm
+- 08F959:Skyrim.esm
+- 002ED9:Update.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 00080D:ccbgssse056-ba_silver.esl
+- 00080A:ccbgssse056-ba_silver.esl
+Value: 400
+Weight: 40
+ArmorRating: 42

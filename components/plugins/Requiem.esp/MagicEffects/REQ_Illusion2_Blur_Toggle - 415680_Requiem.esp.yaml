@@ -1,0 +1,44 @@
+FormKey: 415680:Requiem.esp
+EditorID: REQ_Illusion2_Blur_Toggle
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_Toggle
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: ToDispel
+      Objects:
+      - Name: ''
+        Object: 410740:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Toggle
+Flags:
+- HideInUI
+- PowerAffectsDuration
+MagicSkill: Illusion
+CastingLight: 0AD392:Skyrim.esm
+MinimumSkillLevel: 25
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+CastingArt: 0510CF:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 07BBAB:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: Ready
+  Sound: 07C720:Skyrim.esm
+- Type: Release
+  Sound: 07BBAE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 41073E:Requiem.esp
+  ComparisonValue: 1

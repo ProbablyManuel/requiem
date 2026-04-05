@@ -1,0 +1,44 @@
+FormKey: 02C46B:Dragonborn.esm
+EditorID: DLC2EnchFireDamageFFContact50
+Name:
+  TargetLanguage: English
+  Value: Fire Damage
+MenuDisplayObject: 04E264:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 7
+ResistValue: ResistFire
+TaperWeight: 0.2
+HitShader: 01B212:Skyrim.esm
+EnchantShader: 04E810:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+    RunOnType: Target
+  ComparisonValue: 1

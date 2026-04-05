@@ -1,0 +1,34 @@
+FormKey: 101BDC:Skyrim.esm
+EditorID: REQ_NULL_dunClearspringTarnDmgFFContact
+Name:
+  TargetLanguage: English
+  Value: Animal Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.2
+ResistValue: DamageResist
+TaperWeight: 0.2
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Animals take <mag> points of extra damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013798:Skyrim.esm
+  ComparisonValue: 1

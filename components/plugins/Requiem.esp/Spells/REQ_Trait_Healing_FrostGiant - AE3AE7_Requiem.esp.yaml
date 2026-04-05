@@ -1,0 +1,19 @@
+FormKey: AE3AE7:Requiem.esp
+EditorID: REQ_Trait_Healing_FrostGiant
+Name:
+  TargetLanguage: English
+  Value: 'Natural Healing: Frost Giant'
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000B4C:Requiem.esp
+  Data:
+    Magnitude: 120
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 01CEAD:Skyrim.esm

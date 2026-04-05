@@ -1,0 +1,30 @@
+FormKey: 085368:Skyrim.esm
+EditorID: REQ_Drink3_SpicedWine
+ObjectBounds:
+  First: -7, -6, 0
+  Second: 7, 6, 29
+Name:
+  TargetLanguage: English
+  Value: Spiced Wine
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Wine\WineSanSpicedwine.nif
+  Data: 0x020000000600000000000000A5698F6D646473002659B6B41BF13770646473002659B6B42883CF3C646473002659B6B43B4DC5BE646473002659B6B4164E0459646473002659B6B4B8EC307B64647300262C333B
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 14
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 18ED7C:Requiem.esp
+  Data:
+    Magnitude: 45
+    Duration: 600
+- BaseEffect: AE3729:Requiem.esp
+  Data:
+    Magnitude: 30
+    Duration: 900

@@ -1,0 +1,18 @@
+FormKey: AE38B8:Requiem.esp
+EditorID: REQ_Ench_Okin
+Name:
+  TargetLanguage: English
+  Value: Okin Enchantment
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 04605B:Skyrim.esm
+  Data:
+    Magnitude: 30
+- BaseEffect: 0B72A0:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 3
+- BaseEffect: AE38BA:Requiem.esp
+  Data: {}

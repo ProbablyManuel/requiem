@@ -1,0 +1,13 @@
+FormKey: 0FAB0A:Requiem.esp
+EditorID: REQ_Trait_ArmorPenetration25
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModTargetDamageResistance
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.75

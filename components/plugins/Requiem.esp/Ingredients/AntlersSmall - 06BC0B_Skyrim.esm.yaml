@@ -1,0 +1,35 @@
+FormKey: 06BC0B:Skyrim.esm
+EditorID: AntlersSmall
+ObjectBounds:
+  First: -16, -27, -13
+  Second: 16, 27, 13
+Name:
+  TargetLanguage: English
+  Value: Small Antlers
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SmallAntlers.nif
+  Data: 0x020000000200000000000000F61584F8646473000C54DE96905712B8646473000C54DE96
+Value: 15
+Weight: 1.5
+IngredientValue: 15
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 090042:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 30
+- BaseEffect: 03EB28:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 10DE5E:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+- BaseEffect: 03EB42:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 1

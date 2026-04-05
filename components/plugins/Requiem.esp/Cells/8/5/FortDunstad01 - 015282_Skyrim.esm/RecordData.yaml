@@ -1,0 +1,68 @@
+FormKey: 015282:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortDunstad01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Dunstad
+Flags:
+- IsInteriorCell
+- HasWater
+- PublicArea
+Lighting:
+  AmbientColor: '#001C1A11'
+  DirectionalColor: '#00024951'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 7000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#001E1A11'
+    DirectionalXMinus: '#00191A10'
+    DirectionalYPlus: '#001C1B11'
+    DirectionalYMinus: '#001C1811'
+    DirectionalZPlus: '#000D0C07'
+    DirectionalZMinus: '#002A271A'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 06909B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01917E:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC1C:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0E79D2:Skyrim.esm
+  Base: 03AC21:Skyrim.esm
+  Lock:
+    Level: Novice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01917E:Skyrim.esm
+  EnableParent:
+    Reference: 0E604C:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -169.26892, -469.6276, 512.00006
+    Rotation: 0, 0, 5.23319
+MajorFlags:
+- 0x40000

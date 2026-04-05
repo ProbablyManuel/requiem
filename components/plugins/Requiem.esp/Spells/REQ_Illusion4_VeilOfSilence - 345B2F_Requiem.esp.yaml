@@ -1,0 +1,54 @@
+FormKey: 345B2F:Requiem.esp
+EditorID: REQ_Illusion4_VeilOfSilence
+Name:
+  TargetLanguage: English
+  Value: Veil of Silence
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 200
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+HalfCostPerk: 0C44C5:Skyrim.esm
+Effects:
+- BaseEffect: 345B30:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 86400
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Magicka
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsSprintingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 4F1DDF:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsRunningConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 4F1DDF:Requiem.esp
+- BaseEffect: 4F1DDF:Requiem.esp
+  Data:
+    Duration: 86400
+- BaseEffect: 4F1DE1:Requiem.esp
+  Data:
+    Magnitude: 6
+    Duration: 86400

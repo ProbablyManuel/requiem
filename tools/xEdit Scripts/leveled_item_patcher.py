@@ -27,6 +27,13 @@ with open("patcher_data/leveled_potion.json") as fh:
 
 leveled_items = strict_dict()
 
+replace = {
+    "Heavy_Chitin_Shield": "Heavy_Iron_Shield_Dented",
+    "Light_NetchLeather_Body": "LI_Light_NetchLeather_Body",
+    "Light_NetchLeather_Head": "LI_Light_NetchLeather_Head",
+    "Light_NetchLeather_Shield": "LI_Light_NetchLeather_Shield",
+}
+
 
 def generate_leveled_items(editor_id_template: str,
                            quantities: dict[str: int],
@@ -34,9 +41,11 @@ def generate_leveled_items(editor_id_template: str,
     for specifier in specifier_list:
         items = []
         for item_template, count in quantities.items():
-            item_editor_id = "REQ_" + item_template.format(specifier)
+            item = item_template.format(specifier)
+            if item in replace:
+                item = replace[item]
             try:
-                form = lookup.form_by_editor_id(item_editor_id)
+                form = lookup.form_by_editor_id("REQ_" + item)
             except KeyError:
                 continue
             data = ["1", form, "1"]

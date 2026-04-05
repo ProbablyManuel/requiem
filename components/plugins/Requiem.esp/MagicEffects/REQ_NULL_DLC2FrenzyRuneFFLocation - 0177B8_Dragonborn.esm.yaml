@@ -1,0 +1,71 @@
+FormKey: 0177B8:Dragonborn.esm
+EditorID: REQ_NULL_DLC2FrenzyRuneFFLocation
+Name:
+  TargetLanguage: English
+  Value: Frenzy Rune
+MenuDisplayObject: 0A59AD:Skyrim.esm
+Keywords:
+- 0C44B6:Skyrim.esm
+- 109D79:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsDuration
+- NoDeathDispel
+BaseCost: 3500
+MagicSkill: Illusion
+CastingLight: 07479A:Skyrim.esm
+HitShader: 074799:Skyrim.esm
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 0177B9:Dragonborn.esm
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 074794:Skyrim.esm
+HitEffectArt: 074795:Skyrim.esm
+ImpactData: 01E0BF:Dragonborn.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Targets up to level <20> that fail to resist are frenzied for <30> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

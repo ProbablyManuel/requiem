@@ -1,0 +1,23 @@
+FormKey: AD382E:Requiem.esp
+EditorID: REQ_SkoomaDealer
+Relations:
+- Target: 01BCC0:Skyrim.esm
+  Reaction: Friend
+Flags:
+- Vendor
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+Ranks:
+- Number: 0
+- Number: 1
+VendorBuySellList: 0ABDA0:Skyrim.esm
+MerchantContainer: 0BBCD1:Skyrim.esm
+VendorValues:
+  EndHour: 24
+  Radius: 256
+VendorLocation:
+  Target:
+    MutagenObjectType: LocationFallback
+    Type: NearSelf

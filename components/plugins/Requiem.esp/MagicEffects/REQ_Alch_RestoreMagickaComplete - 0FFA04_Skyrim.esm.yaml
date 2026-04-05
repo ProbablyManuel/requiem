@@ -1,0 +1,25 @@
+FormKey: 0FFA04:Skyrim.esm
+EditorID: REQ_Alch_RestoreMagickaComplete
+Name:
+  TargetLanguage: English
+  Value: Restore Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 042508:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.006
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Magicka
+CastType: FireAndForget
+HitEffectArt: 04E221:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: This powerful elixir is capable of restoring the imbiber's magicka completely within the blink of an eye.

@@ -1,0 +1,19 @@
+FormKey: 00080F:ccbgssse041-netchleather.esl
+EditorID: REQ_NULL_ccBGSSSE041_RecipeArmorNetchLeatherCuirassBoiled
+Items:
+- Item:
+    Item: 0800E4:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 000909:ccbgssse041-netchleather.esl
+    Count: 4
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 00081C:ccbgssse041-netchleather.esl
+    Stage: 1000
+  ComparisonValue: 1
+CreatedObject: 000807:ccbgssse041-netchleather.esl
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

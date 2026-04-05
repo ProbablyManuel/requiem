@@ -1,0 +1,25 @@
+FormKey: 03EAEC:Skyrim.esm
+EditorID: REQ_Alch_ResistShock
+Name:
+  TargetLanguage: English
+  Value: Resist Shock
+MenuDisplayObject: 09FA64:Skyrim.esm
+Keywords:
+- 065A39:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 10BEAC:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistShock
+  Association: 065A39:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Shock deals <mag>% less damage to you for <dur> seconds.

@@ -1,0 +1,25 @@
+FormKey: 058F62:Skyrim.esm
+EditorID: REQ_Marksmanship_PowerShot
+Name:
+  TargetLanguage: English
+  Value: Power Shot
+Description:
+  TargetLanguage: English
+  Value: You have discovered the art of aiming at tendons and joints.<br>[Chance to stagger targets]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F61:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Archery
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 06C0F4:Skyrim.esm

@@ -1,0 +1,39 @@
+FormKey: AE385C:Requiem.esp
+EditorID: REQ_Ench_Deathbrand_CurseOfAgony
+Name:
+  TargetLanguage: English
+  Value: Curse of Agony
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Detrimental
+- NoDuration
+- NoArea
+- FXPersist
+HitShader: 074799:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+HitEffectArt: 0028E7:Dawnguard.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You can feel how the life is sucked out of your body with terrifying pace, making your flesh wither within seconds!
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsGhostConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01A373:Dragonborn.esm
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 024002:Dragonborn.esm

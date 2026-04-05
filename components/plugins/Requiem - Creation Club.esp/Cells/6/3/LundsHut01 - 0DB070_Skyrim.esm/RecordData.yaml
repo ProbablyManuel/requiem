@@ -1,0 +1,53 @@
+FormKey: 0DB070:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: LundsHut01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Lund's Hut
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#000F0D0C'
+    DirectionalXMinus: '#000C0D0B'
+    DirectionalYPlus: '#000E0D0C'
+    DirectionalYMinus: '#000E0C0C'
+    DirectionalZPlus: '#00060605'
+    DirectionalZMinus: '#00151312'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0E66A5:Skyrim.esm
+SkyAndWeatherFromRegion: 02A72D:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+EncounterZone: 0E66A6:Skyrim.esm
+Music: 0B9DCB:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0DB120:Skyrim.esm
+  Base: 09AF19:Skyrim.esm
+  LocationReference: 0E66A5:Skyrim.esm
+  Placement:
+    Position: 433.41232, 821.6582, 60.901672
+    Rotation: 0, 0, 5.769076
+MajorFlags:
+- 0x40000

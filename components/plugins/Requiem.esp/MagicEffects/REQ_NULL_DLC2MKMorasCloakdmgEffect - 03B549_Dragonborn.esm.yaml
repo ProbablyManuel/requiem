@@ -1,0 +1,36 @@
+FormKey: 03B549:Dragonborn.esm
+EditorID: REQ_NULL_DLC2MKMorasCloakdmgEffect
+Name:
+  TargetLanguage: English
+  Value: Mora's Curse
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.5
+MagicSkill: Destruction
+ResistValue: PoisonResist
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 039E46:Dragonborn.esm
+TaperCurve: 2
+TaperDuration: 0.1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 0ABF04:Skyrim.esm
+CastType: Concentration
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Does <mag> damage over <dur> seconds. Additional opponents in melee range have a chance to be infected.

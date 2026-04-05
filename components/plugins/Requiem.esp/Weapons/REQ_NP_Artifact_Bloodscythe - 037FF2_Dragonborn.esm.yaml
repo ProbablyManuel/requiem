@@ -1,0 +1,60 @@
+FormKey: 037FF2:Dragonborn.esm
+MajorRecordFlagsRaw: 4
+EditorID: REQ_NP_Artifact_Bloodscythe
+SkyrimMajorRecordFlags:
+- NotPlayable
+Name:
+  TargetLanguage: English
+  Value: Bloodscythe
+Model:
+  File: ArteFake\Haknir_Saber\Haknir_Saber_01_1h_.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 038056:Dragonborn.esm
+EnchantmentAmount: 5000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 01E71E:Skyrim.esm
+- 038050:Dragonborn.esm
+Description:
+  TargetLanguage: English
+  Value: The sword scythes men like grass and absorbs <25> points of health with each strike. When attacking with two weapons, damage taken is halved.
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: AE374A:Requiem.esp
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 1800
+  Weight: 15
+  Damage: 13
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  Flags:
+  - CantDrop
+  - NonPlayable
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+MajorFlags:
+- NonPlayable

@@ -1,0 +1,29 @@
+FormKey: 01E7FC:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BlackBookNoMagickaEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 03D257:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Secret of Arcana
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- NoMagnitude
+- FXPersist
+HitShader: 03D3BC:Dragonborn.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+HitEffectArt: 03CD85:Dragonborn.esm
+DualCastScale: 1
+PerkToApply: 01E7FB:Dragonborn.esm
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Spells cost no Magicka for <dur> seconds.

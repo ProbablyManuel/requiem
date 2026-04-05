@@ -1,0 +1,25 @@
+FormKey: 02AF84:Dragonborn.esm
+EditorID: REQ_Attack_Race_AlbinoSpider
+Name:
+  TargetLanguage: English
+  Value: Albino Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+Type: Poison
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 053473:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 300
+- BaseEffect: 03281E:Requiem.esp
+  Data:
+    Duration: 15

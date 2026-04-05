@@ -1,0 +1,25 @@
+FormKey: 003541:HearthFires.esm
+EditorID: REQ_NULL_SalmonCooked02
+ObjectBounds:
+  First: -4, -7, -1
+  Second: 4, 7, 1
+Name:
+  TargetLanguage: English
+  Value: Salmon Steak
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\CookedSalmonSteak01.nif
+  Data: 0x020000000200000000000000CAF19F3264647300B914823615C2866C64647300B9148236
+Weight: 0.2
+Value: 4
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: 0F33CC:Skyrim.esm
+  Data:
+    Magnitude: 40
+- BaseEffect: 002EE3:Update.esm
+  Data: {}

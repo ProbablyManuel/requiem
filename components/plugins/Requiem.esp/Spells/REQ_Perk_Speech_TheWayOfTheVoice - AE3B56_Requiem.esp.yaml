@@ -1,0 +1,20 @@
+FormKey: AE3B56:Requiem.esp
+EditorID: REQ_Perk_Speech_TheWayOfTheVoice
+Name:
+  TargetLanguage: English
+  Value: Tongue's Trance
+MenuDisplayObject: 0A59AC:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: You can enter a trance that allows you to use your Thu'um again and again in a rapid succession. However, this is extremely exhausting, and therefore lasts only shortly and can only be used once every day.
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+Type: Power
+CastType: FireAndForget
+Effects:
+- BaseEffect: AD3817:Requiem.esp
+  Data:
+    Magnitude: 1.5
+    Duration: 5

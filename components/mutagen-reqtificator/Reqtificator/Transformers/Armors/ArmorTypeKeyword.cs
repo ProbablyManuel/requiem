@@ -12,10 +12,19 @@ namespace Reqtificator.Transformers.Armors
     {
         public override ArmorTransformationResult Process(ArmorTransformationResult input)
         {
-            return (input.Record().TemplateArmor.IsNull, input.Record().BodyTemplate?.ArmorType) switch
+            if (input.Record().Keywords is null ||
+                !input.Record().Keywords!.Contains(Keywords.ArmorShield.FormKey) ||
+                input.Record().Keywords!.Contains(Keywords.AlreadyReqtified.FormKey) ||
+                input.Record().Keywords!.Contains(Keywords.NoArmorTypeKeyword.FormKey) ||
+                !input.Record().TemplateArmor.IsNull
+            )
             {
-                (true, ArmorType.HeavyArmor) => AddKeywordIfMissing(input, Keywords.ArmorHeavy.FormKey),
-                (true, ArmorType.LightArmor) => AddKeywordIfMissing(input, Keywords.ArmorLight.FormKey),
+                return input;
+            }
+            return input.Record().BodyTemplate?.ArmorType switch
+            {
+                ArmorType.HeavyArmor => AddKeywordIfMissing(input, Keywords.ArmorHeavy.FormKey),
+                ArmorType.LightArmor => AddKeywordIfMissing(input, Keywords.ArmorLight.FormKey),
                 _ => input
             };
         }
@@ -26,7 +35,7 @@ namespace Reqtificator.Transformers.Armors
             {
                 return input.Modify(armor =>
                 {
-                    armor.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
+                    armor.Keywords ??= [];
                     armor.Keywords.Add(keyword);
                     Log.Debug("added missing armor type keyword");
                 });

@@ -1,0 +1,19 @@
+FormKey: 4068C7:Requiem.esp
+EditorID: REQ_Illusion_RuneOfDampeningCost_CastingCost
+Name:
+  TargetLanguage: English
+  Value: Casting Cost
+Flags:
+- NoHitEvent
+MagicSkill: Illusion
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If not empowered, the rune also increases the casting cost of all illusion spells by <20>%.

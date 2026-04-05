@@ -1,0 +1,35 @@
+FormKey: AE3907:Requiem.esp
+EditorID: REQ_Ench_RingOfNamira_Invisibility
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_Magic_FinishSpell
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ToDispel
+      Object: AE3906:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Invisibility
+MenuDisplayObject: 109AC3:Skyrim.esm
+Keywords:
+- 01EA6F:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+HitShader: 02DF92:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Invisibility
+  Type: Invisibility
+CastType: FireAndForget
+TargetType: Touch
+HitEffectArt: 0339C8:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

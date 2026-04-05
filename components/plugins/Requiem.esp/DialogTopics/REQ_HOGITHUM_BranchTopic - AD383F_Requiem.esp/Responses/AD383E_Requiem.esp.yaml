@@ -1,0 +1,37 @@
+FormKey: AD383E:Requiem.esp
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_HogithumDialogue
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: REQ_HogithumDialogue
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: REQ_HogithumDialogue
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- Emotion: Surprise
+  EmotionValue: 100
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Wait, where did you get this? This piece was thought to be lost forever, please take this with my utmost thanks!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: AD383D:Requiem.esp
+  ComparisonValue: 100
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+  ComparisonValue: 1

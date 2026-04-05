@@ -1,0 +1,37 @@
+FormKey: AE3AB2:Requiem.esp
+EditorID: REQ_Miraak_KnowledgeDrain_WeaknessToMagic
+Name:
+  TargetLanguage: English
+  Value: Vulnerability to Magic
+MenuDisplayObject: 10A046:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 0.5
+TaperWeight: 0.2
+HitShader: 06DE84:Skyrim.esm
+TaperCurve: 2
+TaperDuration: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: ResistMagic
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Target is <mag>% weaker to magic for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetActorValueConditionData
+    ActorValue: ResistMagic
+  ComparisonValue: 75

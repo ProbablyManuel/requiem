@@ -1,0 +1,21 @@
+FormKey: 0F23C6:Skyrim.esm
+EditorID: REQ_NULL_DA02MuffledMovement
+Name:
+  TargetLanguage: English
+  Value: Muffled Movement
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 6
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 0F23CA:Skyrim.esm
+  Data:
+    Magnitude: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSneakingConditionData
+    ComparisonValue: 1

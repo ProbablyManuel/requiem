@@ -1,0 +1,39 @@
+FormKey: 0048D4:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+SkyrimMajorRecordFlags:
+- Compressed
+Flags:
+- HasWater
+Grid:
+  Point: -1, -1
+  Flags: -279297792
+WaterHeight: 3.4028235E+38
+Regions:
+- 092C8E:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedNpc
+  FormKey: 00FFC9:Dawnguard.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: masterambushscript
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ambushOnTrigger
+        Data: True
+  Base: 08900D:Skyrim.esm
+  LevelModifier: Medium
+  LinkedReferences:
+  - Reference: 00FFC8:Dawnguard.esm
+  ActivateParents:
+    Parents:
+    - Reference: 00FFC7:Dawnguard.esm
+  LocationReference: 003583:Dawnguard.esm
+  EnableParent:
+    Reference: 01AA4B:Dawnguard.esm
+    Unknown: 0x000000
+  Placement:
+    Position: -164.167, -3056.0154, 1456.4946
+MajorFlags:
+- 0x40000

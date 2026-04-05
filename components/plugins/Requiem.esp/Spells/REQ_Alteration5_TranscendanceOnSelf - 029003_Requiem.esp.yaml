@@ -1,0 +1,21 @@
+FormKey: 029003:Requiem.esp
+EditorID: REQ_Alteration5_TranscendanceOnSelf
+Name:
+  TargetLanguage: English
+  Value: Transcendance on Self
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1200
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 4.5
+CastType: FireAndForget
+HalfCostPerk: 0C44BA:Skyrim.esm
+Effects:
+- BaseEffect: 029001:Requiem.esp
+  Data:
+    Duration: 15

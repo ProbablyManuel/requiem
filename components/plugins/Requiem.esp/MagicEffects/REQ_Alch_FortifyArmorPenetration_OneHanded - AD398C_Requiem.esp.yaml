@@ -1,0 +1,25 @@
+FormKey: AD398C:Requiem.esp
+EditorID: REQ_Alch_FortifyArmorPenetration_OneHanded
+Name:
+  TargetLanguage: English
+  Value: Fortify One-Handed Armor Penetration
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A1F:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: OneHandedModifier
+  Association: 065A1F:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor penetration with one-handed weapons is increased by <mag> for <dur> seconds.

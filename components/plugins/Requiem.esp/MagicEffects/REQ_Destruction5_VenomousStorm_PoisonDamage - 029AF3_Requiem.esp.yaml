@@ -1,0 +1,43 @@
+FormKey: 029AF3:Requiem.esp
+EditorID: REQ_Destruction5_VenomousStorm_PoisonDamage
+Name:
+  TargetLanguage: English
+  Value: Poison Damage
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 0806E1:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+- AD3904:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: PoisonResist
+CastingLight: 06EBC9:Skyrim.esm
+HitShader: 10CC64:Skyrim.esm
+MinimumSkillLevel: 100
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Explosion: 031047:Skyrim.esm
+CastType: FireAndForget
+CastingArt: 031048:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 03104A:Skyrim.esm
+CastingSoundLevel: VeryLoud
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 0FDA53:Skyrim.esm
+- Type: Ready
+  Sound: 0FDA52:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Inflicts <mag> poison damage per second for <dur> seconds to all hit targets.

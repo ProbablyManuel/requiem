@@ -7,6 +7,7 @@ using Serilog;
 
 namespace Reqtificator
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Maintainability", "CA1515:Consider making public types internal", Justification = "Accessibility modifiers are defined by the generated class")]
     public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)
@@ -33,16 +34,13 @@ namespace Reqtificator
 
                 window.Show();
 
-                var backend = new Backend(eventQueue, logContext);
+                ArgumentNullException.ThrowIfNull(e);
+                var backend = new Backend(eventQueue, logContext, e);
                 Log.Debug("Gui Started");
             }
             catch (Exception ex)
             {
-                Log.Error(ex.Message);
-                if (ex.StackTrace != null)
-                {
-                    Log.Error(ex.StackTrace);
-                }
+                Log.Error(ex.ToString());
                 HandlePatchingResult(window, ReqtificatorState.Stopped(ReqtificatorFailure.CausedBy(ex)));
                 window?.Close();
                 throw;

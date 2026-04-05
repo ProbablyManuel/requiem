@@ -1,0 +1,29 @@
+FormKey: AE3B0D:Requiem.esp
+EditorID: REQ_Trait_Werewolf_AnimalVigor
+Name:
+  TargetLanguage: English
+  Value: Animal Vigor
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 0008BC:Requiem.esp
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0059A5:Dawnguard.esm
+    ComparisonValue: 1
+- BaseEffect: 0008BE:Requiem.esp
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 0059A5:Dawnguard.esm
+    ComparisonValue: 1

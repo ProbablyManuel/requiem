@@ -1,0 +1,27 @@
+FormKey: 03BD02:Dragonborn.esm
+EditorID: REQ_NULL_DLC2FortifyOnehandedFFSelf
+Name:
+  TargetLanguage: English
+  Value: Fortify One-handed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0FB98C:Skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+EnchantShader: 092DEE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: OneHandedPowerModifier
+  Association: 0FB98C:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds:
+- Type: OnHit
+  Sound: 01702C:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: One-handed weapons do <mag>% more damage.

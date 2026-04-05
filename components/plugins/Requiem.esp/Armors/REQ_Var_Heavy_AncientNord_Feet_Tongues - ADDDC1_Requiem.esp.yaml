@@ -1,0 +1,39 @@
+FormKey: ADDDC1:Requiem.esp
+EditorID: REQ_Var_Heavy_AncientNord_Feet_Tongues
+ObjectBounds:
+  First: -13, -12, -19
+  Second: 13, 12, 19
+Name:
+  TargetLanguage: English
+  Value: Ancient Nord Boots of the Tongue
+ObjectEffect: AD3AE0:Requiem.esp
+WorldModel:
+  Male:
+    Model:
+      File: Armor\Draugr\DraugrBootsMale_GO.nif
+      Data: 0x020000000200000000000000B196DB7F64647300F8C054DC97DB9B7364647300F8C054DC
+  Female:
+    Model:
+      File: Armor\Draugr\DraugrBootsFemale_GO.nif
+      Data: 0x020000000200000000000000262612E864647300F8C054DC0FE3FA8664647300F8C054DC
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: HeavyArmor
+  ActsLike44: True
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBD2:Skyrim.esm
+- 06C0ED:Skyrim.esm
+- 08F959:Skyrim.esm
+- 0C27BD:Skyrim.esm
+- 002ED8:Update.esm
+- AD39BE:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 027DE4:Skyrim.esm
+Value: 45
+Weight: 7.5
+ArmorRating: 90

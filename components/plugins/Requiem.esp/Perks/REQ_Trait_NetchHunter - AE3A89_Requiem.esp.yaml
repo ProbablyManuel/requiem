@@ -1,0 +1,52 @@
+FormKey: AE3A89:Requiem.esp
+MajorRecordFlagsRaw: 4
+EditorID: REQ_Trait_NetchHunter
+SkyrimMajorRecordFlags:
+- NotPlayable
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 03A157:Dragonborn.esm
+      ComparisonValue: 1
+  EntryPoint: ModAttackDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 3
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 03A157:Dragonborn.esm
+      ComparisonValue: 1
+  EntryPoint: ModIncomingDamage
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.5
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 01CEAF:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModIncomingSpellMagnitude
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 0.5
+MajorFlags:
+- NonPlayable

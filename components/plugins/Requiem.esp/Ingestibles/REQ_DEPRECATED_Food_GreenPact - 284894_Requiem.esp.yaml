@@ -1,0 +1,26 @@
+FormKey: 284894:Requiem.esp
+EditorID: REQ_DEPRECATED_Food_GreenPact
+Name:
+  TargetLanguage: English
+  Value: Strange Meat
+Keywords:
+- AE3726:Requiem.esp
+Model:
+  File: Clutter\Ingredients\BeefMeat.nif
+  Data: 0x020000000000000000000000
+Weight: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: 2897D1:Requiem.esp
+  Data:
+    Magnitude: 2
+    Duration: 300
+- BaseEffect: 2897D2:Requiem.esp
+  Data:
+    Magnitude: 2
+    Duration: 300
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

@@ -1,0 +1,37 @@
+FormKey: 01CD74:Dragonborn.esm
+EditorID: DLC2AshCreepCluster
+ObjectBounds:
+  First: -6, -3, 3
+  Second: 3, 7, 26
+Name:
+  TargetLanguage: English
+  Value: Ash Creep Cluster
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\CreepClusterRoot01.nif
+  Data: 0x020000000000000000000000
+  AlternateTextures:
+  - Name: CreepClusterRoot01:0
+    NewTexture: 102C12:unofficial skyrim special edition patch.esp
+PickUpSound: 0FB975:Skyrim.esm
+Value: 20
+Weight: 0.25
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB3D:Skyrim.esm
+  Data:
+    Duration: 4
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60
+- BaseEffect: 03EB26:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60

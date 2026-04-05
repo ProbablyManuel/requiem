@@ -6,10 +6,10 @@ namespace Reqtificator.Transformers.Weapons
     internal class WeaponNpcAmmunitionUsage : Transformer<Weapon, IWeapon, IWeaponGetter>
     {
         private static readonly WeaponAnimationType[] RangedWeaponTypes =
-        {
+        [
             WeaponAnimationType.Bow,
             WeaponAnimationType.Crossbow
-        };
+        ];
 
         public override TransformationResult<Weapon, IWeaponGetter> Process(
             TransformationResult<Weapon, IWeaponGetter> input)

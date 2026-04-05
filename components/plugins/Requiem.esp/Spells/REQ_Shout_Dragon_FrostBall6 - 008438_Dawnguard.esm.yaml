@@ -1,0 +1,21 @@
+FormKey: 008438:Dawnguard.esm
+EditorID: REQ_Shout_Dragon_FrostBall6
+Name:
+  TargetLanguage: English
+  Value: Frost Ball
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Voice
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 0DD605:Skyrim.esm
+  Data:
+    Magnitude: 120
+    Area: 15
+    Duration: 5

@@ -1,0 +1,43 @@
+FormKey: 016874:Dawnguard.esm
+EditorID: REQ_Shout_Thuum_SoulTear_SoulTear
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1MagicSoulRendScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReanimateEffect
+      Object: 10EAD9:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellRef
+      Object: 007CBA:Dawnguard.esm
+Name:
+  TargetLanguage: English
+  Value: Soul Tear
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- Painless
+- NoDeathDispel
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 06F6FB:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

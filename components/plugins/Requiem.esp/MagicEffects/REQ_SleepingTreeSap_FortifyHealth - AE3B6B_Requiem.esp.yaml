@@ -1,0 +1,32 @@
+FormKey: AE3B6B:Requiem.esp
+EditorID: REQ_SleepingTreeSap_FortifyHealth
+Name:
+  TargetLanguage: English
+  Value: Fortify Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B36:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+  Association: AE3B36:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013740:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 08883A:Skyrim.esm

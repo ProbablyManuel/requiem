@@ -1,0 +1,22 @@
+FormKey: 006974:HearthFires.esm
+VirtualMachineAdapter:
+  Scripts:
+  - Name: BYOH_TIF__01006974
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: BYOH_TIF__01006974
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: BYOH_TIF__01006974
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: 002FFE:HearthFires.esm
+FavorLevel: None
+ResponseData: 0E0CBC:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: -1

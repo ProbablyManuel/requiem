@@ -1,0 +1,33 @@
+FormKey: 028235:Dragonborn.esm
+EditorID: DLC2dunKarstaagFrostCloakFFSelf
+Name:
+  TargetLanguage: English
+  Value: Frost Cloak
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 0B62E4:Skyrim.esm
+Flags:
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 3.5
+MagicSkill: Destruction
+ResistValue: ResistFrost
+CastingLight: 032DAA:Skyrim.esm
+TaperWeight: 0.2
+HitShader: 01F03A:Skyrim.esm
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+TaperCurve: 2
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 028236:Dragonborn.esm
+CastType: FireAndForget
+CastingArt: 042854:Skyrim.esm
+HitEffectArt: 04253F:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: For <dur> seconds, opponents in melee range take <15> points frost damage and Stamina damage per second.

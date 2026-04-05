@@ -1,0 +1,25 @@
+FormKey: AE387B:Requiem.esp
+EditorID: REQ_Ench_MiraaksRobes_Retribution
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_MiraaksRobes
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tentacleExplosion
+      Object: AE387D:Requiem.esp
+Name:
+  TargetLanguage: English
+  Value: Hermaeus Mora's Retribution
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Tentacles reach out to those who dare to hit Hermaeus Mora's champion, dealing <400> irresistible damage.

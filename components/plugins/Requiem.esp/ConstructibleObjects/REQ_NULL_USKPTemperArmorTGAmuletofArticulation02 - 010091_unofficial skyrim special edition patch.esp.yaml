@@ -1,0 +1,22 @@
+FormKey: 010091:unofficial skyrim special edition patch.esp
+EditorID: REQ_NULL_USKPTemperArmorTGAmuletofArticulation02
+Items:
+- Item:
+    Item: 05ACE3:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 0F6904:Skyrim.esm
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

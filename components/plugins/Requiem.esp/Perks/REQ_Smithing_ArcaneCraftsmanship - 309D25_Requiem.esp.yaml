@@ -1,0 +1,42 @@
+FormKey: 309D25:Requiem.esp
+EditorID: REQ_Smithing_ArcaneCraftsmanship
+Name:
+  TargetLanguage: English
+  Value: Arcane Craftsmanship
+Description:
+  TargetLanguage: English
+  Value: After reading a tome about the ancient secrets of explosive dwemer bolts, you've learned the<br>necessary techniques to craft bolts and arrows that will explode with elemental fury upon impact.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 309D25:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: AD3748:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 6F9CB9:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Smithing
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True

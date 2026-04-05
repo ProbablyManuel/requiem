@@ -1,0 +1,28 @@
+FormKey: 029B02:Requiem.esp
+EditorID: REQ_Destruction4_FrostShock
+Name:
+  TargetLanguage: English
+  Value: Iceshock
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 200
+Flags:
+- ManualCostCalc
+CastType: Concentration
+TargetType: TargetActor
+HalfCostPerk: 0C44C1:Skyrim.esm
+Effects:
+- BaseEffect: 029B00:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1
+- BaseEffect: 029B03:Requiem.esp
+  Data:
+    Magnitude: 60
+    Duration: 3
+- BaseEffect: 02C0F0:Requiem.esp
+  Data:
+    Duration: 1

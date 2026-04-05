@@ -1,0 +1,32 @@
+FormKey: 9D1F48:Requiem.esp
+EditorID: REQ_Conjuration3_SpectralArrow_DrainAttackSpeed
+Name:
+  TargetLanguage: English
+  Value: Drain Attack Speed
+Keywords:
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- PowerAffectsMagnitude
+MagicSkill: Conjuration
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+CastType: FireAndForget
+TargetType: Aimed
+SecondActorValue: WeaponSpeedMult
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The arrow will also hinder the target and reduce his attack speed by <mag>% for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 9D1F48:Requiem.esp

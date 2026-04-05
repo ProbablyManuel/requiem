@@ -1,16 +1,484 @@
-Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
-===================================================
+Requiem 6.0.3 - "Unbroken Road"  Bugfix Pack #3
+===============================================
+
+Reqtificator
+------------
+
+* The keywords ArmorHeavy and ArmorLight are only added to shields. This prevents the armor type keywords from being added to hidden creature items such as draugr beards.
+* All dependencies of the Reqtificator are updated to the latest version.
+* The "Open encounter zones" setting is correctly saved between consecutive runs.
+
+Tweaks
+------
+
+* Storm of Steel is renamed to Duelist and increases power attack damage if both hands are equipped with a one-handed weapon or fist.
+* Dual wield power attacks cannot be executed when sneaking. This replaces a previous feature that allowed such sneak attacks but artifically nerfed their damage to match a single-handed sneak attack.
+* Alcohol ceases to apply beneficial effects when your alcohol level exceeds your base health.
+* Herebane's sword and shield are moved from the Soul Cairn to a more accessible location.
+* Each word of Dragon Aspect increases armor rating by 250.
+* Spriggans and trolls leave each other be.
+* Ulfric's armor has the vanilla appearance if not using the Creation Club patch.
+* The Notched Pickaxe is restored to improve interactions with other mods such as Legacy of the Dragonborn. It is wielded by a unique miner.
+* Sun damage to vampire NPCs stops earlier than for the player because unlike the player they cannot appropriately react to the sun.
+* Feeding on corpses via the Ring of Namira and the Green Pact use the same mechanism and rules. Notably, they properly stack now and the Green Pact has a cooldown of 8 hours so that the feeding prompt doesn't appear on every corpse.
+* The Green Pact lasts twice as long.
+* Vampire NPCs don't regenerate health in the sun.
+* Paralyis effects are consistently named "Paralyis".
+* Magnitude of Arcane Power is doubled.
+* Annihilation doesn't deal random damage.
 
 Bug Fixes
 ---------
 
-* Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
-* Imperial Dagger, Mace, and Shortsword can be tempered.
+* Synchronize with Unofficial Skyrim Special Edition Patch v4.3.6.
+* Miraak always drops his mask upon death.
+* Miraak's Fire Storm deals damage instantly instead of continuously over 26 seconds (not including 4 seconds of tapering). This significantly reduces the damage dealt by Miraak.
+* Miraak's fire wyrm lasts for 60 seconds instead of 10.
+* The wounded dragon is always a common dragon with reduced health instead of having varying strength and one of the highest health pools of any dragon. In return, Irileth no longer deals artifically increased damage against the dragon.
+* Archers don't recoil when their arrow is blocked by a shield.
+* Vampires can travel via carriage or ferry during the day without dying upon arrival.
+* Netch float above the water.
+* Annihilation isn't resisted by magic resistance.
+* Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
+* Stealing dreams with the Skull of Corruption doesn't aggro the target.
+* Glass Bow of the Stag Prince recognizes slaying Sinding.
+* Gaining Voice of the Sky while it is already active refreshes the duration instead of applying multiple instances.
+* A number of scenarios in which effects dispel other effects are fixed. Most notably Chaurus, 
+* Illusion spells don't grant XP when cast on dead NPCs.
+* Fog of Shadows isn't easier to resist when dual-cast.
+* Fog of Shadows periodically checks if the target can break free from the spell insteading rapidly repeating the check until it succeeds.
+* Duplicate claws in Fellglow Keep are replaced by the normal ingredient.
+* Soul Tear is affected by shout perks instead of conjuration perks.
+* Soul Tear doesn't damage or soul trap enemies who cannot be reanimated such as dwarven automatons.
+* Soul Tear doesn't reanimate devoured corpses.
+* Soul Tear can soul trap essential actors.
+* Elemental Fury and Frostburst slow targets.
+* Elemental Fury and Shockburst deal triple damage to constructs.
+* Soulreaping weapons cannot be disenchanted.
+* The curse from dremora items cannot be bypassed.
+* The Atronach Forge doesn't yield cursed daedric weapons.
+* Cursed dremora items have a less exorbitant price.
+* Draugr don't use steel shields.
+* Vilkas consistently wields a Skyforge Steel Greatsword throughout the Companion's introduction. Farkas wields a battleaxe instead.
+* Arcane Power clarifies it deals magic damage rather than truly irresistible damage.
+* The Charmed Necklace states that it prevents you from stumbling while drunk.
+* The total lifetime bounty is correctly adjusted after escaping from Cidhna Mine if other mods change the bounty values.
+* Smelting dwarven armors and weapons requires the same amount of dwarven powder than it yields ingots.
+* The daedric weapons added by Requiem have Atronach Forge recipes.
+* Simulacrum Battleaxe is loud.
+* Poisonous dragon breath has 5 second cooldown like elemental dragon breath.
+* Enchanted iron arrows aren't supersonic.
+* Necromancy doesn't increase the duration of spells that are supposed to be excluded from it.
+* A number of typos in descriptions, names, and editor ids are fixed.
+
 
 Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
-* Existing tempering recipes from the Unofficial Patch are prefered over Requiem's where applicable.
+* All staves use the vanilla paralysis enchantment.
+* Arrows and bolts have consistent impact force.
+* Bolts have no muzzle flash data.
+
+
+Requiem 6.0.2 - "Unbroken Road"  Bugfix Pack #2
+===============================================
+
+Tweaks
+------
+
+* `_ResourcePack.esl` is added as a dependency to patch the Aloe Vera Leaves sold by Khajiit caravans.
+* Kyne's Token reduces damage taken from animals by 15% instead of making them friendly.
+* Enchanted weapons rewarded by the Thieves Guild are either Dwarven, Elven, Orcish, or Glass materials.
+* Effects that reduce the cost of all spells are called Fortify Spells.
+* Effects that increase the strength of all spells are called Fortify Spell Power.
+* Fortify Unarmed Damage is renamed to Fortify Unarmed.
+
+Bug Fixes
+---------
+
+* The distorted vision from alcohol disappears when multiple effects wear off.
+* Blessings don't stack when Survival Mode is enabled.
+* The Reclamations don't require an offering when Survival Mode is enabled.
+* Waterbreathing is flagged as No Magnitude as the effect doesn't apply otherwise.
+* Ashen Grass Pod has a normal magnitude for the Fortify Lockpicking effect.
+* The Dodge perk doesn't activate while standing still.
+* Healing Hands (Rank II) works correctly.
+* The Beast Stone works correctly.
+* Perks correctly increase attack speed even on existing save games.
+* Harbinger's armor can't be disenchanted.
+* Venomous dragons are resistant to elemental damage.
+* Lurkers and Seekers are weak to daedric weapons.
+* Frozen chaurus are resistant to poison.
+* Whisp shades and wisps are immune to poison and frost.
+* Creatures who fly or levitate are immune to fall damage.
+* Night eye lasts indefinitely.
+* Stability enchantment can only be applied to a cuirass, shield, boots, necklace, or ring.
+* Chaos damage has the same properties as elemental enchantments.
+* Nahkriin is flagged as unique.
+* Boots of Muffling are removed from leveled lists rather than replaced by boots enchanted with Fortify Sneaking.
+* Ebony and Glass quarterstaves and shortswords can be bought from blacksmiths who sell high-quality materials.
+* Crafting fishing rods requires Craftsmanship.
+* Stone of the Mage doesn't state that it negates the reduced magicka regeneration while running.
+* A number of errors in names and editor ids are fixed.
+* A number of dirty edits are removed.
+
+
+Requiem 6.0.1 - "Unbroken Road"  Bugfix Pack #1
+===============================================
+
+Tweaks
+------
+
+* Worn armor weight is stored in the unused actor value AlterationSkillAdvance instead of IgnoreCrippledLimbs to avoid a conflict with the mod "Dismembering Framework".
+* Healing poultices are crafted in batches of three and have a lower price instead of having multiple servings.
+* Simple meat has a shorter duration to make stews more useful.
+* Mammoth Snout is a third more nourishing than other meat (was double).
+* Argonian spell cost reduction at full magicka allows a grace margin of up to 5% missing magicka.
+* Dunmer blessings are renamed to "Teachings of ..." to emphasize that they stack with normal blessings.
+
+Bug Fixes
+---------
+
+* Facial appearance issues for playable races have been fixed.
+* The distorted vision from alcohol disappears when the effect wears off.
+* Healing poultices aren't continuously added to the player's inventory.
+* Food doesn't restore magicka while under the Stone of the Atronach.
+* Perks correctly increase attack speed.
+* Muffle enchantments reduce movement noise.
+* Enchanted spheres don't have extremely high armor rating.
+* Food from the Fishing DLC is updated to match other food.
+* Fish ingredients from the Fishing DLC support the Argonian affinity.
+* Argonian webs only affect swimming speed.
+* Lock bashing attempts are only considered a crime if the container or door is locked.
+* Harbinger armor can be tempered.
+* Kyne's Peace has proper visual and sound effects.
+* Kyne's Peace is marked as a shout.
+* The "Faster regeneration out of combat" MCM option increases Stamina/MagickaRate instead of Stamina/MagickaRateMult.
+* Cyrodilic Brandy and Aged Flin apply the side effects of alcohol.
+* Argonian Physique mentions reduced stamina cost of swimming.
+* Racial food bonuses are described ingame.
+* Newly added NPCs have a persistent location set.
+* A number of errors in descriptions and editor ids are fixed.
+* The Creation Club patch doesn't have a dependency on `_ResourcePack.esl`.
+
+
+Requiem 6.0.0 - "Unbroken Road"
+===============================
+
+Tweaks
+------
+
+* Dragonborn DLC is fully integrated based on [Fozar's Dragonborn Patch](https://www.nexusmods.com/skyrimspecialedition/mods/34829). Notable changes compared to the patch:
+    * There are no additional smithing perks. Chitin, netch leather, and bonemold armors are crafted and tempered with the Advanced Light Armors perk.
+    * The Acolyte Priests are at a similar power level as normal dragon priests. Vahlok the Jailor is significantly stronger.
+    * Ash Hoppers have more plausible stats for a moderate-sized insect. In return, their bite can paralyze in the style of scribs from Morrowind.
+    * Rieklings deal less damage.
+    * Armor penetration of lurkers, werebears, and serpentine dragons is reduced.
+    * The All-Maker's Stones grant stacking boons that last while remaining in Solstheim.
+    * Merchant inventories better represent the local economy.
+    * Reavers are exclusively Dunmer and they are more likely to wear Morrowind armors.
+    * Miraak's cultists don't seek out the player in Skyrim until the main quest is completed. However, the Dragonborn questline can still be started earlier by traveling to Solstheim.
+    * The Ebony Warrior can be encountered after defeating Alduin, Harkon, or Miraak, or reaching level 50.
+* Playable races are completely overhauled. A full list of changes is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Races.md).
+    * Daily powers are removed.
+    * Every race has two or more passive abilities that establish a strong racial identity. These abilities focus on cultural heritage rather than physical or hereditary traits and aim to represent racial affinities described in the lore.
+    * The beast races additionally have passive abilities that model their unique physique.
+    * Magical resistances are capped at 60 points in total per race (magic resistance counts triple).
+    * The humanoid races with magical resistances (Breton, Dunmer, Nord) have the lowest starting attributes with 300 points. The other humanoid races are in the middle with 310 (Altmer, Bosmer, Redguard) and 315 points respectively (Imperial). The beast races (Argonian, Khajiit, Orc) have the highest starting attributes with 320 points.
+    * Magicka and stamina rates are derived from the corresponding starting attribute.
+    * Unarmed damage is derived from starting health.
+    * Carry weight is loosely derived from starting health and height.
+    * Skill rate bonuses equal the skill boosts.
+    * Power attack stamina modifiers are removed, as the new abilities provide a distinct identity for each race as a warrior, mage, or thief.
+    * The Strong Stomach trait, which allowed for eating raw meat without penalties, is removed. The food poisoning caused by raw meat is instead countered by disease resistance. The two races who are known for eating raw meat, Argonian and Bosmer, are already resistant to disease. To keep the spirit of the Strong Stomach trait alive, the four races that used to have this trait now each have a favorite meal that grants a small bonus.
+    * Bosmer must consciously choose whether to follow or reject the Green Pact.
+* Artifacts are completely overhauled. A full list of changes is available [here](https://github.com/ProbablyManuel/requiem/blob/main/components/documentation/src/Artifacts.md).
+* Most food provides one or more long lasting effect that is determined by the nutrition of the food. Different effects stack with each other. The magnitude is the same for each effect so that there are no useless items. The duration depends on the meal type (e.g. a stew lasts longer than a single vegetable) and is generally more long-lasting than before. The nutrients and their effects are as follows:
+    * Vegan: +40% disease resistance
+    * Meat: +15 carry weight
+    * Flour: Recovers 1 stamina per second
+    * Dairy: Recovers 1 magicka per second
+    * Sweets: Restores 50 magicka and stamina
+* Most unique items have a unique model using assets from [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254) and [Vastly More Unique Visage of Mzund](https://www.nexusmods.com/skyrimspecialedition/mods/3125).
+* The runes created by the Ancient Dawnguard Warhammer have custom visual effects using assets from [Sun Rune](https://www.nexusmods.com/skyrim/mods/67891).
+* A unique war axe using assets from [Royal Armory - New Artifacts](https://www.nexusmods.com/skyrimspecialedition/mods/6994) can be found at the Throat of the World.
+* Harbinger armor set can be found in Kodlak's end table during Glory of the Dead.
+* Kyne's Token grants the Blessing of Kyne to Nords who have completed Kyne's Sacred Trials. They must not kill Paarthurnax, equip a dragon priest mask, have the blessing of another divine, join the Dark Brotherhood or Thieves Guild, or be a vampire or werewolf.
+    * Animals become friendly.
+    * Completing Climb the Steps increases stamina by 50 (Rank II).
+    * Completing The Blessings of Nature by returning a sapling increases health by 50 (Rank II).
+    * Completing Glory of the Dead up to Kodlak's funeral increases one-handed, two-handed, and ranged damage by 20%.
+    * Joining the Stormcloaks and earning the rank Ice-Veins/Bone-Breaker/Snow-Hammer/Stormblade increases one-handed, two-handed and ranged damage by 5/10/15/20%.
+    * Completing A Blade in the Dark reduces shout cooldown by 10%.
+    * Completing Throat of the World reduces shout cooldown by 10%.
+    * Completing Alduin's Bane reduces shout cooldown by 10%.
+    * Completing Sovngarde reduces shout cooldown by 10%.
+    * Completing Dragonslayer increases health, magicka and stamina by 100.
+* Instead of instantly reducing the attributes of vampires by up to 400 during the day, the sun damages attributes by up to 12 per second. The condition is mitigated when the sun is low or covered by clouds. The health damage stops when health drops below 30 in accordance with the Sanguinare Vampiris lore, which has no record of direct deaths from sunlight.
+* Vampires are not penalized for entering Sovngarde or a Hall of the Dead.
+* Health, magicka, and stamina regenerate at the same rate in and out of combat. A MCM option is available that increases magicka and stamina out of combat by 100%.
+* Armor penetration of enchanted spheres, giant frostbite spiders, and great beasts is reduced to 50% (was 75%).
+* Spell cost reduction is capped at 80%.
+* Potions reduce spell cost by at most 25%.
+* Strength of self-made spell cost reduction enchantments is increased by 50%.
+* The trajectory of ammo is less affected by gravity and scales with ammo weight.
+* The Atronach Stone does not penalize food.
+* Skooma is reworked to more closely reflect the euphoria and subsequent lethargy described in the lore.
+* Alcohol does not dispel food but causes you to tumble after your alcohol level exceeds your base health.
+* The White Phial refills every 15 minutes (real time) or upon sleeping. It has one of the following effects:
+    * Increases magic resistance by 25% for 300 seconds.
+    * Increases stamina by 100 and stamina regeneration by 100% for 300 seconds.
+    * Improves sneaking by 25% and grants invisibility for 300 seconds.
+    * Increases magicka by 100 and magicka regeneration by 100% for 300 seconds.
+    * Increases one-handed, two-handed, and marksman damage by 25% for 300 seconds.
+    * Completely restores health.
+* Eating raw meat or mammoth cheese applies the disease Food Poisoning which drains magicka and stamina by 50.
+* The Sap Spigot yields multiple bottles of Sleeping Tree Sap and it can be used more often.
+* Shrines of Azura, Boethiah, and Mephala are available in the mainland.
+* The Shrine of Nocturnal only applies cleansing. The Nightingale armor and weapons function as Nocturnal's blessing.
+* Dragon priest masks armor type can be changed on the workbench in Bromjunaar Sanctuary. Their armor rating and weight matches a dragonscale or dragonplate helmet respectively. Tempering requires Legendary Blacksmithing.
+* Kyne's Peace doesn't make animals friendly but only restores attributes. Magnitude is reduced to 30/60/120 (was 100/250/500) and increases by 10/20/50 for each of Kyne's blessings.
+* The fonts in Apocrypha increase magicka or stamina regeneration by 10%.
+* Agent of Mara increases the effectiveness of healing spells by 10%.
+* Sailor's Repose increases magic resistance by 5%.
+* Blessing of the Blades (fka Dragonslayer's Blessing) increases physical damage dealt to dragons by 15%.
+* Neloth's Experimental Spell increases health by 50. After swimming or being in the rain it decreases health by 50 instead.
+* Prowler's Profit increases movement speed by 10%. The previous effect, more gems in loot, has been merged into the Treasure Hunter perk.
+* Sinderion's Serendipity increases the effectivess of potions and poisons by 50% if they contain nirnroot as an ingredient.
+* The Gift of Gab is removed. Instead completing Tending the Flames unlocks Dibella's greater blessing.
+* Voice of the Sky reduces shout cooldown by 10% for 1 day.
+* The rewards for promotions in the Imperial Legion and Stormcloaks follow a logical progression.
+* Sahloknir is always a fire dragon.
+* Spriggan Earth Mother is a unique boss encounter in Clearspring Cave.
+* Velehk Sain's Locker contains a random set of enchanted glass armor.
+* Gunmar sells enchanted Dawnguard armor.
+* Important Dawnguard members wear enchanted Dawnguard armor.
+* Harkon wears a Necklace of Nullification and a Ring of Peerless Destruction.
+* Ancano wears a Necklace of Warmth and a Ring of Peerless Alteration.
+* Galmar wears a Necklace of Magic Supression and a Ring of Eminent Sure Grip.
+* Legate Rikke wears a Ring of Necklace of Eminent Blocking and a Ring of Eminent Wielding.
+* Ulfric wears a Necklace of Grounding and a Ring of the Peerless Knight.
+* General Tullius wears a Necklace of Peerless Health and a Ring of Peerless Stamina.
+* Belethor carries a Ring of Major Health.
+* Treasure Map I and IV lead to a cuirass of Major Health.
+* Sunhallowed Elven Arrow explodes for 60 sun damage (was 20). Undead take triple damage (was double). Base damage is decreased to match an Elven Arrow.
+* Bloodcursed Elven Arrow has the same armor penetration as an Elven arrow.
+* Vampires can touch Dawnbreaker with impunity to prevent silly pickpocket interactions. However, wielding Dawnbreaker as a vampire remains a suicidal endeavour due to the nature of the enchantment.
+* Paralysis enchantment has a 5% chance to apply (was 3%). It can affect targets regardless of their magic resistance but is blocked by Fortify Health (Rank II) enchantments.
+* Amren carries an iron sword so that he equips his family sword once returned by the player.
+* Feeding on corpses via the Ring of Namira has a cooldown of 8 hours and the body must have been dead for less than an hour.
+* Vigilant armor looks like robes with a hood and steel boots and gauntlets if not using the Creation Club patch.
+* Vampires lose their powers inside temples, and the holy ground damages attributes by 4 per second. The health damage stops when health drops below 30.
+* The visual distortion of vampires during the day is lessened when well-fed.
+* No message is displayed when vampires enter sunlight.
+* Innkeepers offer a greater variety of food so that each nutrition is available everywhere.
+* Innkeepers sell meat only as stews.
+* Buying prices at innkeepers are always set to the base price.
+* Buffs from special alcoholic beverages stack with potions.
+* Strength of some alcoholic beverages is adjusted.
+* Bottled Water is removed.
+* Alchemists do not buy food.
+* The first effect of fish ingredients is always beneficial to support the Argonian affinity.
+* Healing poultices increase health regeneration by 100% (was 50%).
+* Healing poultices have four servings.
+* Eating meals with multiple servings (bread and cheese wheels/slices) adds the leftover portions.
+* Food recipes and price are rebalanced to be more consistent.
+* Dremora Lord wields a greatsword.
+* The second rank of Battle Axe Focus and War Axe Focus increases damage by 20% (was 15%).
+* Imperial crossbow deals 15% more damage to better match its role as an Imperial weapon.
+* Elder Scrolls have distinct names.
+* Ice Wraith Bane is replaced by common healing potions.
+* Armor set bonus for Nightingale and shrouded armor is removed.
+* Wisp mothers are immune to poison and frost.
+* Corrupted shades are immune to poison and strongly resistant to frost.
+* Death hounds are immune to poison and resistant to frost.
+* All divine amulets cost 200 gold.
+* Ulfric only knows the shouts Unrelenting Force, Disarm, and Ice Form to better match the lore.
+* The Nordic Ebony Vampire knows Marked for Death instead of Ice Form.
+* Predator's Might is reverted to its original name Animal Allegiance to match the words of power.
+* Death hounds deal 10 frost damage to enemies within melee range.
+* White frostbite spiders and ice wolves don't deal more damage than their counterparts.
+* Whispmothers don't regenerate health.
+* Kru'ul, Gigantic Mudcrab, Giant Slaughterfish, and Ulik don't have poison resistance.
+* The hostages in the Abandoned Shack don't have poison resistance.
+* Katria doesn't have a weakness to fire.
+* Shadowmere recovers 25 health per second.
+* Abilities added by perks don't show as active magic effects.
+* Creation Club patch is a light plugin.
+
+Bug Fixes
+---------
+
+* Synchronize with Unofficial Skyrim Special Edition Patch v4.3.2.
+* The Creation Club patch forwards all keywords from the main plugin.
+* SKSE functions that manipulate input keys are avoided. This should resolve a number of issues for players who use a gamepad instead of a keyboard.
+* Crossbows have innate stagger when wielded by NPCs.
+* Stamina cost of jumping increases with effective mass.
+* Lesser soul gems can be found in loot.
+* Salmon Roe is in line with other ingredients.
+* Black Book dungeons never respawn.
+* Fire Breath only spawns one fire wyrm.
+* Fortify Shouts magic effects display the magnitude of the effect.
+* Muffle enchantments reduce movement noise by a variable percentage instead of always reducing it by 100%.
+* Killing reanimated NPCs does not empower the Ebony Blade.
+* Skeletons do not unequip weapons and shields when dying.
+* Breaking down battlestaffs and quarterstaffs yields one item.
+* The frost rune explosion doesn't have an enchantment.
+* Ebony Mace of Fire and Ebony Mace of the Blaze are obtainable.
+* Dead Silver Hands have the standard inventory of a Silver Hand.
+* Fire and frost enchantments have the correct enchantment cost.
+* The boss chest in Tolvald's Crossing has an expert lock (was master).
+* Simulacra, golden saints, and dark seducers have correct attack data.
+* Snow Elves and a cured Serana don't stagger foes with normal shield bashes.
+* Disarming Bash works reliably.
+* Dremora Lord cannot be disarmed.
+* Dremora are never affected by cursed daedric armor.
+* All bandits in Robber's Gorge become aggressive if the player initiates combat.
+* Elven Dai-Katana has the correct block bash impact data.
+* Steel Katana, Steel Wakizashi, Silver Katana, and Silver Wakizashi have the correct alternate block material.
+* Silver weapons have silver ingots as primary component to match all other weapon materials and avoid strange situations like that smelting down a silver greatsword yields more silver than is required to craft it.
+* A rarely used leveled list containing enchanted maces includes elven maces.
+* The additional damage from turn undead enchantments works.
+* Unarmed attacks apply impact effects to the player.
+* Dawnguard fighters have mace and battleaxe perks.
+* Raise Dead spells don't have a secondary effect that fortifies health regeneration because the effect can't work as designed.
+* Alchemical powders don't share the vendor keyword with potions. Among other things, this fixes an incompatibility with Zxlice's Ultimate Potion Animation.
+* Dawnguard weapons have proper material keywords.
+* Lock bashing is a crime.
+* Mentor's Ring doesn't respawn.
+* The description of Banish Daedra and Command Daedra clarifies that the spell only affects daedra.
+* Turn Undead can affect the skeletal dragon.
+* Enchanted robes found in boss chests have the correct spawn probability.
+* The cost of created paralysis and fear enchantments matches existing enchantments.
+* Banish only applies its visual effect to summons.
+* Penetrating Strikes and Barbaric Might clarify that the power attack cost reduction is multiplicative.
+* Scroll of Courage doesn't mention that it increases health and stamina because it has no such effect.
+* Imperial crossbow is flagged as an Imperial weapon.
+* The lock level of Heartwood Mill is reverted to avoid a conflict with Skyrim Landscape and Water Fixes.
+* A number of typos in descriptions and editor ids are fixed.
+* Death hound companions have the same stats and abilities as hostile death hounds.
+* Armored and rigid skeleton have the same resistances as standard skeletons.
+* Coffins added by Dawnguard and Hearthfire provide the same magic resistance bonus to vampires.
+* Jyrik Gauldurson's elemental cloaks have a normal range.
+* Loyal and strange dogs have the same racial traits.
+* Wild and domesticated goats have the same racial traits.
+* Durnehviir doesn't level with the player.
+* The allied soldiers during Compelling Tribute don't level with the player.
+* The combatants in Kindred Judgment don't have inflated magic resistance and other stats.
+* Big trolls don't deal increased damage twice.
+* Armored trolls don't have increased armor rating twice.
+* Improved Healing doesn't improve mage armor spells.
+* The Dealer in Redwater Den trades black market goods.
+
+Reqtificator
+------------
+
+* Armors with the keyword RFTI_Exclusions_NoArmorTypeKeyword do not receive an armor type keyword.
+* The game release (Steam or GOG) is written to the log file.
+* A custom error message is displayed if parsing the settings file from Scrambled Bugs failed.
+* The generated plugin uses header version 1.71.
+* Inner exceptions are written to the log file.
+* The command line argument `--game=SkyrimSE` works as expected.
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* The actor value "Infamy" (used to store effective mass) starts at 0.0 instead of 1.0. This allows for more expressive perk entry point functions.
+* The unused actor value "IgnoreCrippledLimbs" is repurposed to store worn armor weight.
+* Creation Club scripts modified by Requiem use the official sources as a baseline.
+* Deprecated records are deleted.
+* Fortify Lockpicking magic effects are mapped to their vanilla formids.
+* Teleport script is modernized.
+* Unused properties are removed from the stamina consumption script.
+* The \<Magic\>PowerMod actor values increase both spell magnitude and duration, and they respect the REQ_NoMagnitudeScaling/REQ_NoDurationScaling keywords.
+* The common Fortify Shouts magic effects reduce shout cooldown instead of increasing it.
+* The common Fortify Lockpicking magic effects immediately increase lockpick durability.
+* The common Muffle magic effects are called Muffle instead of Fortify Muffle.
+* Unused keyword REQ_RaceHuman is deprecated. As a result, Requiem no longer edits child races.
+* Orcish Light Armor uses the armor keyword from Update.esm.
+* Thane weapons don't have a display name.
+* Stagger from power bashes is applied by attack data rather than a bash spell.
+* Extra damage of wolves is applied by racial data rather than magic effects.
+* Carry weight bonus of werewolves is applied by racial data rather than magic effects. 
+* The Aetherium Wars is added to leveled lists by hand rather than script.
+* All perk abilities and racial traits use the common AbShow/AbHide effects.
+* Racial traits should be split into separate spells for FX, natural healing, armor, magical resistances, and other abilities.
+* Magic effects of abilities are sorted by actor values.
+* Bounties rewards are paid out directly instead of being nested inside a leveled list. As a result, Requiem no longer edits the BQScript script.
+* Spells that model natural armor are directly assigned to the race in the plugin instead of being distributed by the Reqtificator.
+
+
+Requiem 5.4.5 - "Towers and Shadows" Bugfix Pack #5
+===================================================
+
+Tweaks
+------
+
+* Excessively high lock levels on chests are reduced to account for the increased skill requirements of lockpicking perks. Generally, the following rules apply:
+    * Bandits chests are capped at Novice.
+    * Bandits boss chests are capped at Apprentice.
+    * Draugr chests are capped at Adept.
+    * Draugr boss chests are capped at Expert.
+    * Dwarven chests are capped at Adept.
+    * Dwarven boss chests are capped at Expert.
+* A new book and note are added to provide context for Galmar's dragonplate armor.
+* An official lore book is added to provide context for werewolves' weakness to poison.
+* Training cost thresholds are reverted to skill 35/65/90 because the previous rebalance attempt failed due to engine limitations.
+* Breakdown recipes are standardized to yield half of the item's main component.
+* Most armors and weapons can be broken down at a tanning rack or smelter.
+* Tempering Forsworn weapons requires leather strips.
+* Guards may comment on the armors and weapons added by Requiem.
+* Warmth rating of armors is adjusted based on [Requiem - WACCF CCOR ACE Patches](https://www.nexusmods.com/skyrimspecialedition/mods/31758).
+* Ancient Helmet of the Unburned is restored to its vanilla model. Instead, a new Ancient Helmet of the Unfrozen is added to the world.
+* Wolf armor has a more reasonable price.
+* Generic arrow leveled lists do not spawn enchanted iron or steel arrows.
+* Powerful Charge and Devastating Charge do not cause critical damage.
+* Critical damage of Dragonslayer's Blessing and Valdr's Dagger is doubled.
+
+Bug Fixes
+---------
+
+* Non-power attacks do not break wooden bows.
+* Health bonus in werewolf form is restored.
+* Arrows damage stamina and magicka on hit.
+* Wards block stamina damage on hit and reduce the probability of being staggered.
+* Rune traps are resisted by elemental resistance.
+* Extra shock damage to construct is resisted shock resistance.
+* The hood of randomly spawned skeleton mages does not stretch upon death.
+* The Challenger is a mage.
+* Aicantar has heavy armor casting perks.
+* A rarely used draugr boss template has proper perks.
+* Lock bashing only works with melee weapon attacks.
+* Perfected Art has no effect when the player rather than the target is wearing heavy armor.
+* Polymorph does not affect dead targets.
+* Polymorph affects unique or essentials actors.
+* Weapons enchanted with Turn Undead have the same naming convention as other enchanted items.
+* Imperial Dagger, Mace, and Shortsword can be tempered.
+* Stamina Damage enchantment is not considered a Destruction effect.
+* Stalhrim Light Gauntlets do not receive extra unarmed damage from Combat Training.
+* Tantos have the correct equip sound.
+* Elven Greatsword has the correct Block Bash Impact Data Set.
+* Bonemold, Chitin, and Stalhrim shield have the correct Bash Impact Data Set.
+* A leveled list containing hunter loot is deleveled.
+* Description of Scroll of Soul Gem Evocation ends with a period.
+
+Reqtificator
+------------
+
+* Load order for GOG is automatically located. If both the Steam and GOG release are installed, GOG is preferred by default. This behavior can be overridden by the command line argument `--game=SkyrimSE` or `--game=SkyrimSEGog` respectively.
+* Critical damage is set to the weapon's final base damage to work around rounding errors. This computation cannot be opted out. From now on, it is the responsibility of each perk that uses **Calculate My Critical Hit Chance** to additionally set the desired critical damage through **Calculate My Critical Hit Damage**.
+
+Internal Quality Improvements (only relevant for modders)
+---------------------------------------------------------
+
+* Existing tempering recipes from the Unofficial Patch are preferred over Requiem's where applicable.
+* All shields have the armor type keyword assigned in the plugin.
+* Player impact effects are determined by weapon skill type instead of keywords.
+* Enchanted steel weapons have a proper EditorID.
+* Heavy Falmer armor does not have a redundant "Heavy" in its EditorID.
+* Ingredients do not have the VendorItemAnimalPart keyword.
+* Unused keyword REQ_Ench_RestoreHealthKeyword is deprecated.
+* Several unused leveled lists are deprecated.
 
 
 Requiem 5.4.4 - "Towers and Shadows" Bugfix Pack #4

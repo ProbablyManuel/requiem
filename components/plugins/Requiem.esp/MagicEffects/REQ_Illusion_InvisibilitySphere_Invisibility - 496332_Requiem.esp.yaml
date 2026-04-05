@@ -1,0 +1,49 @@
+FormKey: 496332:Requiem.esp
+EditorID: REQ_Illusion_InvisibilitySphere_Invisibility
+Name:
+  TargetLanguage: English
+  Value: Invisibility
+MenuDisplayObject: 109AC3:Skyrim.esm
+Keywords:
+- 01EA6F:Skyrim.esm
+- 3FA2AF:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Illusion
+HitShader: 02DF92:Skyrim.esm
+MinimumSkillLevel: 75
+SpellmakingArea: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Invisibility
+  Type: Invisibility
+CastType: Concentration
+TargetType: TargetActor
+HitEffectArt: 0339C8:Skyrim.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The caster creates an aura which renders nearby allies and himself invisible.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetPlayerTeammateConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 496333:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 496332:Requiem.esp
+  ComparisonValue: 1

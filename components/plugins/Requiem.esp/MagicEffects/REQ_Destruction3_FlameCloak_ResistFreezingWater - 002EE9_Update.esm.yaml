@@ -1,0 +1,26 @@
+FormKey: 002EE9:Update.esm
+EditorID: REQ_Destruction3_FlameCloak_ResistFreezingWater
+Name:
+  TargetLanguage: English
+  Value: Resist Freezing Water
+Keywords:
+- 3FCA4C:Requiem.esp
+Flags:
+- NoArea
+- PowerAffectsDuration
+MagicSkill: Destruction
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: '[SURV=Swim unharmed in freezing cold water.]'
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsReferenceConditionData
+    Target: 000014:Skyrim.esm
+  ComparisonValue: 1

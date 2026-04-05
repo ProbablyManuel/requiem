@@ -1,0 +1,34 @@
+FormKey: 011BB0:Dawnguard.esm
+EditorID: REQ_NULL_DLC1DawnguardRuneShieldSpell
+Name:
+  TargetLanguage: English
+  Value: Rune Shield Spell
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 011BB1:Dawnguard.esm
+  Data:
+    Magnitude: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Data:
+      MutagenObjectType: GetActorValueConditionData
+      ActorValue: Stamina
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1
+- BaseEffect: 017331:Skyrim.esm
+  Data:
+    Magnitude: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsBlockingConditionData
+    ComparisonValue: 1

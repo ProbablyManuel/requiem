@@ -1,0 +1,73 @@
+FormKey: 01382E:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: ShorsStoneRedbellyMine
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Redbelly Mine
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00544641'
+  FogNearColor: '#00804000'
+  FogNear: 500
+  FogFar: 1500
+  DirectionalRotationZ: 270
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#002B1000'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 098B91:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0226B3:Skyrim.esm
+AcousticSpace: 0FECCF:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 000167:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0ED10D:Skyrim.esm
+  Base: 0A2BE6:Skyrim.esm
+  LocationReference: 0226B3:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0ED10E:Skyrim.esm
+  Placement:
+    Position: -174.80956, -522.13605, -851.99243
+    Rotation: 0, -0, 3.8231897
+- MutagenObjectType: PlacedObject
+  FormKey: 0ED110:Skyrim.esm
+  Base: 0A2BE6:Skyrim.esm
+  LocationReference: 0226B3:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0ED10F:Skyrim.esm
+  Placement:
+    Position: 453.04218, -506.91208, -1048.5676
+    Rotation: 0, -0, 4.9231896
+- MutagenObjectType: PlacedObject
+  FormKey: 0ED11B:Skyrim.esm
+  Base: 0A2BE6:Skyrim.esm
+  LocationReference: 0226B3:Skyrim.esm
+  LinkedReferences:
+  - Reference: 0ED11A:Skyrim.esm
+  Placement:
+    Position: 255.97392, 60.23996, -1038.7738
+    Rotation: 0, -0, 2.6731927
+MajorFlags:
+- 0x40000

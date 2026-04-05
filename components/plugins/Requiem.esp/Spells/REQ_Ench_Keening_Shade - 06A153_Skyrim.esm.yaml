@@ -1,0 +1,24 @@
+FormKey: 06A153:Skyrim.esm
+EditorID: REQ_Ench_Keening_Shade
+Name:
+  TargetLanguage: English
+  Value: Summon Shade of Arniel Gane
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: "It's unclear what went wrong during Arniel's experiment, but his shade is now bound to Keening and can be summoned by its wielder. "
+Type: LesserPower
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 100
+Effects:
+- BaseEffect: 06A154:Skyrim.esm
+  Data:
+    Duration: 3600
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedConditionData
+      ItemOrList: 06A13C:Skyrim.esm
+    ComparisonValue: 1

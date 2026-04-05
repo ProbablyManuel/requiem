@@ -1,0 +1,87 @@
+FormKey: 015258:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: IlinaltasDeep01
+Version2: 14
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Ilinalta's Deep
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#003F4749'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00191B29'
+    DirectionalXMinus: '#00141B26'
+    DirectionalYPlus: '#00171C28'
+    DirectionalYMinus: '#00171928'
+    DirectionalZPlus: '#000A0C12'
+    DirectionalZMinus: '#0023293D'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 08CDDA:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01919C:Skyrim.esm
+WaterEnvironmentMap: Data\Textures\Cubemaps\CaveGreenCube_e.dds
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC3C:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A0328:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C7C80:Skyrim.esm
+  Version2: 1
+  Base: 02065D:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationRefTypes:
+  - 0130F8:Skyrim.esm
+  LocationReference: 01919C:Skyrim.esm
+  Placement:
+    Position: 2509.5835, 4135.0605, -195.58989
+- MutagenObjectType: PlacedObject
+  FormKey: 0EA7A2:Skyrim.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_AddItems
+      Properties:
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Items
+        Objects:
+        - Name: ''
+          Object: 02D145:Requiem.esp
+  Base: 05418E:Skyrim.esm
+  Lock:
+    Level: Master
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 01919C:Skyrim.esm
+  Placement:
+    Position: 3435.1685, 3449.3218, -502.2874
+    Rotation: 0, 0, 4.700001
+MajorFlags:
+- 0x40000

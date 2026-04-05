@@ -1,0 +1,22 @@
+FormKey: 0008F9:Requiem.esp
+EditorID: REQ_AbHide_FortifyAttackSpeedRight
+Name:
+  TargetLanguage: English
+  Value: Fortify Attack Speed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+SecondActorValueWeight: 0.01
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Fame
+  Type: DualValueModifier
+SecondActorValue: WeaponSpeedMult
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

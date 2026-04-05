@@ -1,0 +1,19 @@
+FormKey: 0AA024:Skyrim.esm
+EditorID: REQ_NULL_AbResistPoison
+Name:
+  TargetLanguage: English
+  Value: Resist Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: PoisonResist
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: <mag>% resistant to poison.

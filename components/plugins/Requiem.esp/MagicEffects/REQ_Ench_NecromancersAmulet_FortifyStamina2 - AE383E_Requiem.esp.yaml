@@ -1,0 +1,27 @@
+FormKey: AE383E:Requiem.esp
+EditorID: REQ_Ench_NecromancersAmulet_FortifyStamina2
+Name:
+  TargetLanguage: English
+  Value: Fortify Stamina (Rank II)
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- ADDDF2:Requiem.esp
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina increases by <mag>. Most slowing effects don't adversely affect you.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Stamina
+  ComparisonValue: 130

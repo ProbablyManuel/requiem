@@ -1,0 +1,25 @@
+FormKey: AE3B31:Requiem.esp
+EditorID: REQ_Trait_Heritage_Redguard_Description
+Name:
+  TargetLanguage: English
+  Value: Sword Singer
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Armor penetration is increased by <10>. Attack speed is increased by <20>%.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

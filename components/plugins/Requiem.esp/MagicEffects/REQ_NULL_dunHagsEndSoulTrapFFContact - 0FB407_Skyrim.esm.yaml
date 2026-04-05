@@ -1,0 +1,84 @@
+FormKey: 0FB407:Skyrim.esm
+EditorID: REQ_NULL_dunHagsEndSoulTrapFFContact
+VirtualMachineAdapter:
+  Scripts:
+  - Name: magicsoultrapfxscript
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: bIsEnchantmentEffect
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterFXS
+      Object: 054224:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CasterVFX
+      Object: 0531B1:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetFXS
+      Object: 054223:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TargetVFX
+      Object: 0531AF:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapImod
+      Object: 054225:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TrapSoundFX
+      Object: 056AC6:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Hag's End Soul Trap
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 20
+MagicSkill: Conjuration
+HitShader: 0506D7:Skyrim.esm
+EnchantShader: 05D607:Skyrim.esm
+MinimumSkillLevel: 25
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: SoulTrap
+Projectile: 04BE35:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+HitEffectArt: 0506D6:Skyrim.esm
+ImpactData: 04C6DA:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03F37B:Skyrim.esm
+- Type: Ready
+  Sound: 03F37D:Skyrim.esm
+- Type: Release
+  Sound: 03F37C:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: If target dies within <dur> seconds, it fills a soul gem.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsEssentialConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 103AD2:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

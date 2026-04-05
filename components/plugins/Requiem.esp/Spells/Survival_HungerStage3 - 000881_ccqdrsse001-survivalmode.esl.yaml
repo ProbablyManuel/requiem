@@ -1,0 +1,29 @@
+FormKey: 000881:ccqdrsse001-survivalmode.esl
+EditorID: Survival_HungerStage3
+Name:
+  TargetLanguage: English
+  Value: Hungry
+MenuDisplayObject: 10FEF4:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Total Stamina is reduced. Attacks with weapons are <20>% slower. You are <50>% less effective with using shields and sneaking.
+BaseCost: 753
+Type: Ability
+Effects:
+- BaseEffect: 000849:ccqdrsse001-survivalmode.esl
+  Data:
+    Magnitude: 50
+- BaseEffect: 00095D:ccqdrsse001-survivalmode.esl
+  Data: {}
+- BaseEffect: 000848:ccqdrsse001-survivalmode.esl
+  Data:
+    Magnitude: 50
+- BaseEffect: 0008EB:ccqdrsse001-survivalmode.esl
+  Data: {}
+- BaseEffect: 000A41:Requiem.esp
+  Data:
+    Magnitude: 20
+- BaseEffect: 000A70:Requiem.esp
+  Data:
+    Magnitude: 20

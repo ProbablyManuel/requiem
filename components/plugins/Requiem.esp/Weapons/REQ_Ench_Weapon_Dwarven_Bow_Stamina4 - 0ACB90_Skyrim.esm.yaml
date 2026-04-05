@@ -1,0 +1,60 @@
+FormKey: 0ACB90:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Dwarven_Bow_Stamina4
+ObjectBounds:
+  First: -15, -56, -1
+  Second: 5, 56, 3
+Name:
+  TargetLanguage: English
+  Value: Dwarven Bow of Debilitation
+Model:
+  File: Weapons\Dwarven\DwarvenBowSkinned.nif
+  Data: 0x02000000040000000000000059717F1B64647300364E8FC20CB152DB64647300364E8FC2188FFC7C64647300262C333BB6E05B4264647300364E8FC2
+ObjectEffect: 05B45C:Skyrim.esm
+EnchantmentAmount: 2000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E71A:Skyrim.esm
+- 01E715:Skyrim.esm
+- 08F958:Skyrim.esm
+- AD3B2F:Requiem.esp
+- 9F9914:Requiem.esp
+- AD3B2D:Requiem.esp
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 05271A:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03D78C:Skyrim.esm
+UnequipSound: 03D882:Skyrim.esm
+BasicStats:
+  Value: 270
+  Weight: 9
+  Damage: 60
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 0.3704
+  Reach: 1
+  Flags:
+  - NPCsUseAmmo
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1084227584
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+Template: 013995:Skyrim.esm

@@ -1,0 +1,27 @@
+FormKey: 03D43D:Dragonborn.esm
+EditorID: REQ_Boon_SeekersGift_FortifyMagickaRegeneration
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_ApocryphaFont
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Apocrypha
+      Object: 016E2B:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Fortify Magicka Regeneration
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+HitShader: 0ABF08:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MagickaRateMult
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Magicka regenerates <mag>% faster for <dur> seconds. The Seeker's Gift vanishes when leaving Apocrypha.

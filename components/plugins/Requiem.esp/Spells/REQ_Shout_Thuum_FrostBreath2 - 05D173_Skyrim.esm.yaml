@@ -1,0 +1,41 @@
+FormKey: 05D173:Skyrim.esm
+EditorID: REQ_Shout_Thuum_FrostBreath2
+Name:
+  TargetLanguage: English
+  Value: Frost Breath
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 134
+Type: Voice
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 05D170:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Duration: 5
+- BaseEffect: 0B729F:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5
+- BaseEffect: 0A44C0:Skyrim.esm
+  Data:
+    Magnitude: 0.5
+- BaseEffect: 020E96:Dragonborn.esm
+  Data:
+    Duration: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetIsIDConditionData
+      RunOnType: Target
+      Object: 000007:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 020E99:Dragonborn.esm
+    ComparisonValue: 3

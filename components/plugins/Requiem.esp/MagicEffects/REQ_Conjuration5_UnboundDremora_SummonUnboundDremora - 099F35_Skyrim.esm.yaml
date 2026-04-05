@@ -1,0 +1,41 @@
+FormKey: 099F35:Skyrim.esm
+EditorID: REQ_Conjuration5_UnboundDremora_SummonUnboundDremora
+Name:
+  TargetLanguage: English
+  Value: Summon Unbound Dremora
+Keywords:
+- 0806E1:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+BaseCost: 10
+MagicSkill: Conjuration
+CastingLight: 03BA90:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 044F56:Skyrim.esm
+ImpactData: 03A1E9:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 044F59:Skyrim.esm
+ImageSpaceModifier: 06F79B:Skyrim.esm
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster summons an unbound Dremora for <dur> seconds.

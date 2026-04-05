@@ -1,0 +1,37 @@
+FormKey: 007CB5:Dawnguard.esm
+EditorID: REQ_Shout_Thuum_SoulTear_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+HitShader: 054223:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 007CBB:Dawnguard.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 007CC0:Dawnguard.esm
+DualCastScale: 1
+ImageSpaceModifier: 01A3F8:Dawnguard.esm
+CastingSoundLevel: VeryLoud
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 06F6FB:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetDeadConditionData

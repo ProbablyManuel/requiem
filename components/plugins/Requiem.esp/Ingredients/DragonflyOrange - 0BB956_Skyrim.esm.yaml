@@ -1,0 +1,37 @@
+FormKey: 0BB956:Skyrim.esm
+EditorID: DragonflyOrange
+Version2: 2
+ObjectBounds:
+  First: -8, -9, -1
+  Second: 8, 8, 4
+Name:
+  TargetLanguage: English
+  Value: Orange Dartwing
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\DragonFlyOrange.nif
+  Data: 0x020000000300000000000000B9BB79ED6464730038973CEA9CE57CA96464730038973CEA5977BD9A6464730038973CEA
+PickUpSound: 100527:Skyrim.esm
+Value: 1
+Weight: 0.1
+IngredientValue: 1
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 073F27:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+- BaseEffect: 03EB20:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 10AA4A:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 10

@@ -1,0 +1,19 @@
+FormKey: AE365D:Requiem.esp
+EditorID: REQ_Smelter_Light_Amber_Shield
+Items:
+- Item:
+    Item: 000BC0:ccbgssse025-advdsgs.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 3BA1F3:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 000BC0:ccbgssse025-advdsgs.esm
+CreatedObject: 000BC7:ccbgssse025-advdsgs.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 2

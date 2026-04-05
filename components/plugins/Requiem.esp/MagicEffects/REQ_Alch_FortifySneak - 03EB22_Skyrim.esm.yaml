@@ -1,0 +1,25 @@
+FormKey: 03EB22:Skyrim.esm
+EditorID: REQ_Alch_FortifySneak
+Name:
+  TargetLanguage: English
+  Value: Fortify Sneak
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A27:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.25
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SneakingPowerModifier
+  Association: 065A27:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You are <mag>% harder to detect for <dur> seconds.

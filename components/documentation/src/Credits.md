@@ -21,7 +21,10 @@ Retired Dungeon Masters
 Individual Contributions
 ========================
 
-* [Pamposzek](https://www.nexusmods.com/skyrimspecialedition/users/14780709) - Numerous text improvements to magic effects
+* [Fozar](https://next.nexusmods.com/profile/Fozar), [SonneUa](https://next.nexusmods.com/profile/SonneUa), and [Newrite](https://next.nexusmods.com/profile/Newrite) - [Requiem - Dragonborn Patch](https://www.nexusmods.com/skyrimspecialedition/mods/34829)
+* [Pamposzek](https://www.nexusmods.com/users/14780709) - Numerous text improvements to magic effects
+* [JazzKiwifruit](https://www.nexusmods.com/users/16518979) - Numerous fixes related to armors, weapons, and smithing recipes
+* [IamPrettyUgly](https://www.nexusmods.com/users/191297574) - Initial draft of the continuous sun damage for vampires during the day
 
 We want to use this chance to thank all those who helped (and still help) us creating this mod:
 ===============================================================================================
@@ -49,6 +52,7 @@ Mods included in Requiem
 ========================
 
 * [D13 Faster GET UP STAND UP animation vanilla friendly](https://www.nexusmods.com/skyrim/mods/17491) by [Darkangel13](https://www.nexusmods.com/users/771437)
+* [ArteFakes - Unique Artifacts Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/41254) by [Registrant](https://www.nexusmods.com/users/2422162)
 * [Carved Nordic Crossbow](https://www.nexusmods.com/skyrim/mods/48847) by [DJjojo](https://www.nexusmods.com/users/2977948)
 * [Chainmail Armor](https://www.nexusmods.com/skyrimspecialedition/mods/27340) by [NordWarUA](https://www.nexusmods.com/users/53732701)
 * [Crossbows Basic Collection](https://www.nexusmods.com/skyrim/mods/23876) by [DJjojo](https://www.nexusmods.com/users/2977948)
@@ -60,19 +64,23 @@ Mods included in Requiem
 * [Katana Crafting](https://www.nexusmods.com/skyrimspecialedition/mods/5306) by [lautasantenni](https://www.nexusmods.com/users/983976)
 * [Low-Tier Wooden Crossbow](https://www.nexusmods.com/skyrim/mods/54134) by [Jokerine](https://www.nexusmods.com/users/2543917)
 * [Modern Brawl Bug Fix](https://www.nexusmods.com/skyrim/mods/77465) by [EnaiSiaion](https://www.nexusmods.com/users/3959191)
+* [Ranged Block Recoil Fix](https://www.nexusmods.com/skyrimspecialedition/mods/141037) by [AugustGuy](https://www.nexusmods.com/users/169661178).
 * [Shields Block Poisons](https://www.nexusmods.com/skyrim/mods/79280) by [Paulicus](https://www.nexusmods.com/users/23313089)
 * [Smaller Ice Spike and Ice Spear](https://www.nexusmods.com/skyrim/mods/31899) by [odin_ml](https://www.nexusmods.com/users/50001)
 * [Smaller Kingthings Petrock fonts](https://www.nexusmods.com/skyrim/mods/20773) by[Eckhart](https://www.nexusmods.com/users/2412528) with font improvements (umlauts, parantheses and accents) by myzticrice
+* [Sun Rune](https://www.nexusmods.com/skyrim/mods/67891) by [Elianora](https://next.nexusmods.com/profile/Elianora), this mod uses assets from [Arcane Runes II](https://www.obsidiandawn.com/arcane-runes-ii-photoshop-gimp-brushes)
 * [True Yield](https://www.nexusmods.com/skyrim/mods/7252) by [sushisquid](https://www.nexusmods.com/users/851501)
 * [Varied Guard Armor](https://www.nexusmods.com/skyrim/mods/96744) by [QwibQwibMods](https://www.nexusmods.com/users/57153782)
+* [Vastly More Unique Visage of Mzund](https://www.nexusmods.com/skyrimspecialedition/mods/3125) by [Trainwiz](https://next.nexusmods.com/profile/trainwiz)
 
 Assets taken from other mods
 ============================
 
+* Battlestaves from [Weapons of the Third Era](https://www.nexusmods.com/skyrim/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
 * Dawnguard Crossbow from [Faction Crossbows](https://www.nexusmods.com/skyrim/mods/58704/) by [nsk13](https://www.nexusmods.com/users/3373573)
 * Heroic Imperial Armor from [Lore Friendly Armor Pack](https://www.nexusmods.com/skyrim/mods/6684) by [rahman530](https://www.nexusmods.com/users/3052977)
 * Open Faced Guard Helmets from [Teh-Husky Mod Compilation](https://www.nexusmods.com/skyrim/mods/32226) by [THusky](https://www.nexusmods.com/users/5226693)
-* Battlestaves from [Weapons of the Third Era](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
+* Rikvard from [Royal Armory - New Artifacts](https://www.nexusmods.com/skyrimspecialedition/mods/6994) by [PrivateEye](https://www.nexusmods.com/users/887024)
 
 Non-Skyrim assets
 =================
@@ -84,7 +92,7 @@ Assets used in former versions of Requiem
 
 * [3rd Person Dual Wield Animation Fix](https://www.nexusmods.com/skyrim/mods/248) by [imeltfaces](https://www.nexusmods.com/users/1073116)
 * [Aetherium Armor and Weapons Compilation](https://www.nexusmods.com/skyrim/mods/23530) by [lautasantenni](https://www.nexusmods.com/users/983976)
-* [Brawl Bugs Patch - Plugins - Modder Resource](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/24020) by [jonwd7](https://www.nexusmods.com/users/2492841)
+* [Brawl Bugs Patch - Plugins - Modder Resource](https://www.nexusmods.com/skyrim/mods/24020) by [jonwd7](https://www.nexusmods.com/users/2492841)
 * [CAT Hohenzollern](http://www.peter-wiegel.de/CATHohenzollern.html) by Peter Wiegel
 * [Dragon Knight Armor](https://www.nexusmods.com/skyrim/mods/28287) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
 * [Golden Elven Armour and Weapons](https://www.nexusmods.com/skyrim/mods/31638) by [starz82](https://www.nexusmods.com/users/601350)
@@ -105,7 +113,7 @@ Assets used in former versions of Requiem
 * [Vagabond Armor](https://www.nexusmods.com/skyrim/mods/13230) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
 * [Vanguard Armor](https://www.nexusmods.com/skyrim/mods/16238/) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
 * [Warchief Armor](https://www.nexusmods.com/skyrim/mods/13366) by [hothtrooper44](https://www.nexusmods.com/users/3656551)
-* [Weapons of the Third Era](https://requiem.atlassian.net/wiki/skyrim.nexusmods.com/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
+* [Weapons of the Third Era](https://www.nexusmods.com/skyrim/mods/3871) by [747823](https://www.nexusmods.com/users/3186836)
 
 Donators
 ========

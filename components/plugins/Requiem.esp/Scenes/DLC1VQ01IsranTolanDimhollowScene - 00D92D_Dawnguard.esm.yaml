@@ -1,0 +1,315 @@
+FormKey: 00D92D:Dawnguard.esm
+EditorID: DLC1VQ01IsranTolanDimhollowScene
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1_SF_DLC1VQ01IsranTolanDim_0100D92D
+  ScriptFragments:
+    FileName: DLC1_SF_DLC1VQ01IsranTolanDim_0100D92D
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: DLC1_SF_DLC1VQ01IsranTolanDim_0100D92D
+      FragmentName: Fragment_1
+    PhaseFragments:
+    - Flags:
+      - OnCompletion
+      Index: 2
+      Unknown: 16777216
+      ScriptName: DLC1_SF_DLC1VQ01IsranTolanDim_0100D92D
+      FragmentName: Fragment_0
+    - Flags:
+      - OnCompletion
+      Index: 4
+      Unknown: 16777216
+      ScriptName: DLC1_SF_DLC1VQ01IsranTolanDim_0100D92D
+      FragmentName: Fragment_7
+Flags:
+- 0x4
+Phases:
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: setstage 180 - start VQ01
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: SetStage 190 - Give player a crossbow
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      ItemOrList: AD3746:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetDistanceConditionData
+      RunOnType: QuestAlias
+      RunOnTypeIndex: 8
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 900
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: Wait for player to be near
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetDistanceConditionData
+      RunOnType: QuestAlias
+      RunOnTypeIndex: 8
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 900
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetInCellConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      RunOnTypeIndex: 8
+      Cell: 001DBA:Dawnguard.esm
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  StartConditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Data:
+      MutagenObjectType: GetDistanceConditionData
+      RunOnType: QuestAlias
+      RunOnTypeIndex: 8
+      Target: 000014:Skyrim.esm
+    ComparisonValue: 900
+  CompletionConditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSceneActionCompleteConditionData
+      Scene: 00D92D:Dawnguard.esm
+      SceneActionIndex: 10
+    ComparisonValue: 1
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+- Name: ''
+  Unused2: {}
+  EditorWidth: 200
+Actors:
+- ID: 2
+  Flags: []
+  BehaviorFlags:
+  - DeathEnd
+  - CombatPause
+  - DialoguePause
+  - ObsComPause
+- ID: 8
+  Flags: []
+  BehaviorFlags:
+  - DeathEnd
+  - CombatPause
+  - DialoguePause
+  - ObsComPause
+Actions:
+- Name: ''
+  ActorID: 2
+  Index: 1
+  StartPhase: 0
+  EndPhase: 1
+  Topic: 00D8BA:Dawnguard.esm
+  HeadtrackActorID: 8
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 8
+  Index: 2
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 0
+  EndPhase: 0
+  Topic: Null
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 8
+  Index: 3
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 2
+  EndPhase: 2
+  Topic: 00D8B9:Dawnguard.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 2
+  Index: 4
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 3
+  EndPhase: 3
+  Topic: 00D8B8:Dawnguard.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 8
+  Index: 5
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 7
+  EndPhase: 7
+  Topic: 00D8B7:Dawnguard.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 2
+  Index: 6
+  Flags:
+  - FaceTarget
+  StartPhase: 8
+  EndPhase: 8
+  Topic: 00D8B6:Dawnguard.esm
+  HeadtrackActorID: 8
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 2
+  Index: 7
+  Flags:
+  - FaceTarget
+  StartPhase: 9
+  EndPhase: 10
+  Topic: 00D8B5:Dawnguard.esm
+  HeadtrackActorID: 8
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 8
+  Index: 8
+  StartPhase: 9
+  EndPhase: 9
+  TimerSeconds: 1
+- Name: ''
+  ActorID: 8
+  Index: 9
+  Flags:
+  - FaceTarget
+  StartPhase: 10
+  EndPhase: 11
+  Topic: 00D8B4:Dawnguard.esm
+  HeadtrackActorID: 2
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Name: ''
+  ActorID: 8
+  Index: 10
+  Flags:
+  - FaceTarget
+  - HeadtrackPlayer
+  StartPhase: 12
+  EndPhase: 12
+  Topic: 00D8B3:Dawnguard.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Package
+  Name: ''
+  ActorID: 8
+  Index: 11
+  StartPhase: 1
+  EndPhase: 12
+  Packages:
+  - 00D919:Dawnguard.esm
+- Type: Package
+  Name: ''
+  ActorID: 2
+  Index: 12
+  StartPhase: 0
+  EndPhase: 12
+  Packages:
+  - 00D934:Dawnguard.esm
+- Name: ''
+  ActorID: 2
+  Index: 13
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 5
+  EndPhase: 5
+  Topic: 00D8A7:Dawnguard.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+- Type: Timer
+  Name: ''
+  ActorID: 8
+  Index: 14
+  StartPhase: 0
+  EndPhase: 0
+  TimerSeconds: 1
+- Name: ''
+  ActorID: 2
+  Index: 15
+  Flags:
+  - HeadtrackPlayer
+  StartPhase: 4
+  EndPhase: 4
+  Topic: 011EE4:Dawnguard.esm
+  HeadtrackActorID: -1
+  LoopingMax: 10
+  LoopingMin: 1
+  Emotion: Neutral
+  EmotionValue: 0
+Unused2: {}
+Quest: 00D06C:Dawnguard.esm
+LastActionIndex: 16
+VNAM: 0x03000000010000000300000001000000

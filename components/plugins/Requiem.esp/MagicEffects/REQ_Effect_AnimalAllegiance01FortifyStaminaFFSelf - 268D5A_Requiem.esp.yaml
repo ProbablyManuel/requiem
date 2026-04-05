@@ -1,0 +1,23 @@
+FormKey: 268D5A:Requiem.esp
+EditorID: REQ_Effect_AnimalAllegiance01FortifyStaminaFFSelf
+Name:
+  TargetLanguage: English
+  Value: Predator's Endurance
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Stamina
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The forces of nature grant you the endurance of a sabrecat for as long as your Thu'um lasts. Your stamina is therefore increased by <mag>.

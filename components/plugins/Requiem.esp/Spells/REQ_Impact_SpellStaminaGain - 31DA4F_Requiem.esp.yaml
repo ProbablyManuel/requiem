@@ -1,0 +1,22 @@
+FormKey: 31DA4F:Requiem.esp
+EditorID: REQ_Impact_SpellStaminaGain
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+CastType: FireAndForget
+Effects:
+- BaseEffect: 2E9A0D:Requiem.esp
+  Data:
+    Magnitude: 12
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasPerkConditionData
+      Perk: 058F69:Skyrim.esm
+    ComparisonValue: 1

@@ -1,0 +1,47 @@
+FormKey: 10757F:Skyrim.esm
+EditorID: MQ101DragonVoiceUnrelentingForceEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MQ101VoicePushEffectScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 15
+Name:
+  TargetLanguage: English
+  Value: Unrelenting Force Strong
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+Flags:
+- Hostile
+BaseCost: 2
+TaperWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 016D3F:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+ImpactData: 015C7B:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+Sounds:
+- Type: Release
+  Sound: 0A0F54:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013794:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 0AA7D6:Skyrim.esm

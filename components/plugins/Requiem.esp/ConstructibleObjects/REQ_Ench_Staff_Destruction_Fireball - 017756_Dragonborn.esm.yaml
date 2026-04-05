@@ -1,0 +1,20 @@
+FormKey: 017756:Dragonborn.esm
+EditorID: REQ_Ench_Staff_Destruction_Fireball
+Items:
+- Item:
+    Item: 0BE11F:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 017749:Dragonborn.esm
+    Count: 3
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasSpellConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Spell: 01C789:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 029B82:Skyrim.esm
+WorkbenchKeyword: 017738:Dragonborn.esm
+CreatedObjectCount: 1

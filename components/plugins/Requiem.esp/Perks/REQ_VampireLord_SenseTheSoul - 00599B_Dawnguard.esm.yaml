@@ -1,0 +1,21 @@
+FormKey: 00599B:Dawnguard.esm
+EditorID: REQ_VampireLord_SenseTheSoul
+Name:
+  TargetLanguage: English
+  Value: Sense the Soul
+Description:
+  TargetLanguage: English
+  Value: You've gained the ability to detect about any entity nearby.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 005998:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 01964A:Dawnguard.esm
+  Stage: 50
+  Unknown: 0x000000

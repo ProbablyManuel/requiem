@@ -1,0 +1,25 @@
+FormKey: 10394D:Skyrim.esm
+EditorID: REQ_Food_Sweets_Honey
+ObjectBounds:
+  First: -21, -21, 0
+  Second: 21, 21, 40
+Name:
+  TargetLanguage: English
+  Value: Honey
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\HoneyPot01.nif
+  Data: 0x020000000400000000000000EC76DF3664647300BFFA25DAF25384DC64647300BFFA25DA4A28DF7564647300262C333B4DD3988364647300BFFA25DA
+Weight: 0.1
+Value: 4
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3720:Requiem.esp
+  Data:
+    Magnitude: 50
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

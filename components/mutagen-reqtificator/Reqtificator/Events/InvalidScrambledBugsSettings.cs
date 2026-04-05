@@ -10,11 +10,11 @@ namespace Reqtificator.Events
             Status = PatchStatus.WARNING;
             Title = "Invalid Scrambled Bugs Settings!";
             Message = Formatter.FormatMultiline(@"
-                The recommended settings for Scrambled Bugs could not be verified!
+                The settings for Scrambled Bugs are invalid!
                 
-                This likely means you are using different version of Scrambled
-                Bugs than expected. You can still choose to run the  Reqtificator
-                if you want.");
+                This likely means you made a typo while editing the settings file.
+                If you are unable to find the error in the file, please reinstall
+                Scrambled Bugs and apply the recommended settings again.");
         }
 
         public override PatchStatus Status { get; }

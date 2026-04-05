@@ -1,0 +1,37 @@
+FormKey: 016E26:Dragonborn.esm
+EditorID: DLC2SpikyGrassAsh01
+ObjectBounds:
+  First: -6, -4, -8
+  Second: 6, 4, 8
+Name:
+  TargetLanguage: English
+  Value: Ashen Grass Pod
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: DLC02\Plants\SpikyGrassAsh01.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 100F88:Skyrim.esm
+PutDownSound: 0517C8:Skyrim.esm
+Value: 1
+Weight: 0.1
+IngredientValue: 7
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EAEA:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 80
+- BaseEffect: 073F2F:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30
+- BaseEffect: 03EB21:Skyrim.esm
+  Data:
+    Magnitude: 0.2
+    Duration: 30
+- BaseEffect: 03EB22:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 60

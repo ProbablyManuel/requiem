@@ -5,10 +5,10 @@ plugins {
     base
 }
 
-val outputDir by project.extra(file("$buildDir/output"))
+val outputDir by project.extra(layout.buildDirectory.dir("output").get().asFile)
 val installerDir by project.extra(file("$outputDir/fomod"))
 
-val generatedFiles = file("$buildDir/generated")
+val generatedFiles = layout.buildDirectory.dir("generated").get().asFile
 
 val generateFomodInstallerInfo by tasks.registering(FomodInstallerInfoTask::class) {
     description = "set up the Fomod installer info file"

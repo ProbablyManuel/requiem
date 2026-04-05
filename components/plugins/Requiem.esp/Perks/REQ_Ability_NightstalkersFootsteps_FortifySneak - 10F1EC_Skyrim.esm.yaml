@@ -1,0 +1,13 @@
+FormKey: 10F1EC:Skyrim.esm
+EditorID: REQ_Ability_NightstalkersFootsteps_FortifySneak
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModDetectionSneakSkill
+  PerkConditionTabCount: 2
+  Modification: Add
+  Value: 25

@@ -1,0 +1,23 @@
+FormKey: 42442C:Requiem.esp
+EditorID: REQ_Illusion_FrighteningOrb
+Name:
+  TargetLanguage: English
+  Value: Frightening Orb
+MenuDisplayObject: 0A59AE:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetActor
+Range: 100000
+HalfCostPerk: 0F2CA9:Skyrim.esm
+Effects:
+- BaseEffect: 42442B:Requiem.esp
+  Data:
+    Magnitude: 500
+    Duration: 60

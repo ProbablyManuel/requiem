@@ -1,0 +1,49 @@
+FormKey: 028527:Requiem.esp
+EditorID: REQ_Destruction5_VenomousShock_PoisonDamage
+Name:
+  TargetLanguage: English
+  Value: Poison Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD3904:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1000
+MagicSkill: Destruction
+ResistValue: PoisonResist
+CastingLight: 045D7B:Skyrim.esm
+TaperWeight: 0.3
+HitShader: 10CC64:Skyrim.esm
+MinimumSkillLevel: 100
+TaperCurve: 2
+TaperDuration: 0.1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 025F26:Requiem.esp
+CastType: Concentration
+TargetType: TargetActor
+CastingArt: 031048:Skyrim.esm
+ImpactData: 0FFF4B:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Release
+  Sound: 03F2EA:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5E4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> poison damage for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 028527:Requiem.esp

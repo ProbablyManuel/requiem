@@ -1,0 +1,22 @@
+FormKey: 038053:Dragonborn.esm
+EditorID: REQ_Ench_Bloodscythe_EquipAbility
+Name:
+  TargetLanguage: English
+  Value: Bloodscythe Equip Ability
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+EquipAbility: AE385F:Requiem.esp
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

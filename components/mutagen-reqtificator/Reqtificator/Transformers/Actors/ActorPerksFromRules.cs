@@ -31,7 +31,7 @@ namespace Reqtificator.Transformers.Actors
             {
                 return input.Modify(record =>
                 {
-                    record.Perks ??= new ExtendedList<PerkPlacement>();
+                    record.Perks ??= [];
                     assignments.Where(a => record.Perks.Select(p => p.Perk).ContainsNot(a.ToAssign))
                         .ForEach(a =>
                         {

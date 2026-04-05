@@ -1,0 +1,21 @@
+FormKey: AE3B63:Requiem.esp
+EditorID: REQ_Blessing_Yffre_FortifyOneHandedPowerModifier
+Name:
+  TargetLanguage: English
+  Value: Fortify One-Handed
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B66:Requiem.esp
+Flags:
+- Recover
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: OneHandedPowerModifier
+  Association: AE3B66:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: One-handed weapons deal <mag>% more damage.

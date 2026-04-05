@@ -1,0 +1,28 @@
+FormKey: 065C9A:Skyrim.esm
+EditorID: REQ_Food_Meat_Raw_Goat
+ObjectBounds:
+  First: -19, -16, -1
+  Second: 19, 16, 14
+Name:
+  TargetLanguage: English
+  Value: Goat Leg
+Keywords:
+- 0A0E56:Skyrim.esm
+- AE3726:Requiem.esp
+- AE3728:Requiem.esp
+Model:
+  File: Clutter\Ingredients\GoatMeat.nif
+  Data: 0x02000000020000000000000030C7269A64647300604DDD5C02F66F4D64647300604DDD5C
+Weight: 1
+Value: 8
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE3719:Requiem.esp
+  Data:
+    Magnitude: 15
+    Duration: 1800
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

@@ -1,0 +1,33 @@
+FormKey: 043661:Requiem.esp
+EditorID: REQ_Ingredient_MammothHeart
+Name:
+  TargetLanguage: English
+  Value: Mammoth Heart
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\HumanHeart.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 0FC21E:Skyrim.esm
+Value: 250
+Weight: 5
+IngredientValue: 258
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB01:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 600
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 12
+    Duration: 60
+- BaseEffect: 03EAF9:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 03EAF3:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 180

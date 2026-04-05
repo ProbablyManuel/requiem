@@ -1,0 +1,69 @@
+FormKey: 015269:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: GuldunRock01
+Version2: 15
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Guldun Rock Cave
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 0B6BC7:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01918E:Skyrim.esm
+AcousticSpace: 01989F:Skyrim.esm
+EncounterZone: 0B8AA2:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 31E0C1:Requiem.esp
+  MajorRecordFlagsRaw: 1073741824
+  SkyrimMajorRecordFlags:
+  - 0x40000000
+  Base: 0139A4:Skyrim.esm
+  Placement:
+    Position: 178.20921, -3131.2727, -692.8778
+    Rotation: -0.10421003, 0.14047532, 2.9772737
+- MutagenObjectType: PlacedObject
+  FormKey: 10DDB8:Skyrim.esm
+  Version2: 1
+  Base: 01AFFA:Skyrim.esm
+  RagdollData: 0x0002F100000000000000000000000000E37ACFBF376B50BB45A448C00000000000001640000000000000A03A155A763868C2EF3679F8C93F
+  LocationReference: 01918E:Skyrim.esm
+  Placement:
+    Position: 295.26413, -3165.215, -697.0851
+MajorFlags:
+- 0x40000

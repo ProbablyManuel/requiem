@@ -1,0 +1,53 @@
+FormKey: AE3B0A:Requiem.esp
+EditorID: REQ_Trait_Vampire_FortifyHealth
+Name:
+  TargetLanguage: English
+  Value: Vampirism
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Your Vampiric blood greatly enhances your body's durability but also renders you vulnerable to the sun. Health increases by <300>.
+Type: Ability
+Effects:
+- BaseEffect: 000818:Requiem.esp
+  Data:
+    Magnitude: 300
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetInWorldspaceConditionData
+      WorldspaceOrList: 000969:Update.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000038:Skyrim.esm
+    ComparisonValue: 19
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000038:Skyrim.esm
+    ComparisonValue: 5
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsInInteriorConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 00A26E:Dawnguard.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 01CD56:Skyrim.esm

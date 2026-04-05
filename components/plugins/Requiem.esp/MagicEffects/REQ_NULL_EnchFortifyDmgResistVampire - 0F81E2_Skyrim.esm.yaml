@@ -1,0 +1,43 @@
+FormKey: 0F81E2:Skyrim.esm
+EditorID: REQ_NULL_EnchFortifyDmgResistVampire
+Name:
+  TargetLanguage: English
+  Value: Vampire Fortify Dmg Resist
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 0F81E3:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: DamageResist
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: +<mag> damage resistance, if wearer is undead.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0A82BB:Skyrim.esm
+  ComparisonValue: 1

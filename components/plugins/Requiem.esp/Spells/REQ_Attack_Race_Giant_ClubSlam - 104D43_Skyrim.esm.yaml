@@ -1,0 +1,21 @@
+FormKey: 104D43:Skyrim.esm
+EditorID: REQ_Attack_Race_Giant_ClubSlam
+Name:
+  TargetLanguage: English
+  Value: Giant Stomp
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+- 0x400000
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 104D45:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Area: 35

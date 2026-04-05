@@ -1,0 +1,20 @@
+FormKey: ADDFB6:Requiem.esp
+EditorID: REQ_Perk_TwoHanded_QuarterstaffFocus2_Speed
+Name:
+  TargetLanguage: English
+  Value: Quarterstaff Focus (Rank 2)
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 0008F9:Requiem.esp
+  Data:
+    Magnitude: 10
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: WornHasKeywordConditionData
+      Keyword: ADDF81:Requiem.esp
+    ComparisonValue: 1

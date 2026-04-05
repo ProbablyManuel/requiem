@@ -1,0 +1,54 @@
+FormKey: 0ACC07:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Dwarven_Mace_AbsorbHealth2
+ObjectBounds:
+  First: -7, -23, -7
+  Second: 7, 34, 7
+Name:
+  TargetLanguage: English
+  Value: Dwarven Mace of Absorption
+Model:
+  File: Weapons\Dwarven\DwarvenMace.nif
+  Data: 0x0200000007000000000000004FABDC0564647300A0B86305D09B0BBB64647300A0B86305B221CCA164647300A0B86305FFE9275364647300364E8FC24DF9DBDD64647300364E8FC2188FFC7C64647300262C333BF7A8D24464647300364E8FC2
+ObjectEffect: 0AA145:Skyrim.esm
+EnchantmentAmount: 1000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0774C1:Skyrim.esm
+Keywords:
+- 01E71A:Skyrim.esm
+- 01E714:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B7:Skyrim.esm
+FirstPersonModel: 036BC9:Skyrim.esm
+AttackFailSound: 105D43:Skyrim.esm
+EquipSound: 03DE2A:Skyrim.esm
+UnequipSound: 03DE2B:Skyrim.esm
+BasicStats:
+  Value: 260
+  Weight: 16
+  Damage: 12
+Data:
+  AnimationType: OneHandMace
+  Unused: 0x000000
+  Speed: 0.8
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 1
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: 013998:Skyrim.esm

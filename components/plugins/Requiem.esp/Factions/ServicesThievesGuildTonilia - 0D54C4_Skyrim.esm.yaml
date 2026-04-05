@@ -1,0 +1,25 @@
+FormKey: 0D54C4:Skyrim.esm
+EditorID: ServicesThievesGuildTonilia
+Version2: 3
+Flags:
+- Vendor
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorBuySellList: 444D87:Requiem.esp
+MerchantContainer: 0D54C7:Skyrim.esm
+VendorValues:
+  EndHour: 24
+  OnlyBuysStolenItems: True
+  NotSellBuy: True
+VendorLocation:
+  Target:
+    MutagenObjectType: LocationCell
+    Link: 016BCF:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 02154E:Skyrim.esm
+    Stage: 20
+  ComparisonValue: 1

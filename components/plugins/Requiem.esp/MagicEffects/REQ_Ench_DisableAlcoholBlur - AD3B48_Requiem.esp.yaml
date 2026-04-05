@@ -1,0 +1,30 @@
+FormKey: AD3B48:Requiem.esp
+EditorID: REQ_Ench_DisableAlcoholBlur
+VirtualMachineAdapter:
+  Scripts:
+  - Name: REQ_DisableAlcoholBlur
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: controller
+      Object: AD3B46:Requiem.esp
+      Alias: 2
+Name:
+  TargetLanguage: English
+  Value: Drunken Eagle-Eye
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD3B45:Requiem.esp
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 7.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You have a straight vision even while being inebriated, regardless of wether you're just tipsy or dead drunk. All other side-effects of alcohol apply normally.

@@ -1,0 +1,130 @@
+FormKey: 06BBD1:Skyrim.esm
+EditorID: REQ_NULL_PerkMatchingSet
+Name:
+  TargetLanguage: English
+  Value: Matching Set
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 06BBD0:Skyrim.esm
+  Data:
+    Magnitude: 0.25
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBD6:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBD9:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBDB:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBE0:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BB:Update.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBDC:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBDD:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 06BBDE:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0AC13A:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BE:Update.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009B9:Update.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BA:Update.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 10FD61:Skyrim.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BC:Update.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 0009BF:Update.esm
+    ComparisonValue: 4
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: WornApparelHasKeywordCountConditionData
+      Keyword: 10FD62:Skyrim.esm
+    ComparisonValue: 4

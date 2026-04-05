@@ -1,0 +1,26 @@
+FormKey: 02ACD5:Skyrim.esm
+EditorID: REQ_HazardSpell_FireDragon
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 35
+Flags:
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: Touch
+Effects:
+- BaseEffect: 02ACD4:Skyrim.esm
+  Data:
+    Magnitude: 15
+    Duration: 4
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      MagicEffect: 03AEA0:Skyrim.esm

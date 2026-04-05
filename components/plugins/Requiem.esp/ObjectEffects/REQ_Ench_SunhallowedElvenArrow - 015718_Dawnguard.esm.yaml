@@ -1,0 +1,18 @@
+FormKey: 015718:Dawnguard.esm
+EditorID: REQ_Ench_SunhallowedElvenArrow
+Name:
+  TargetLanguage: English
+  Value: Sunhallowed Elven Arrow Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 015719:Dawnguard.esm
+  Data:
+    Magnitude: 60
+    Duration: 1
+- BaseEffect: 01571B:Dawnguard.esm
+  Data:
+    Magnitude: 120

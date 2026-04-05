@@ -1,0 +1,65 @@
+FormKey: 0181C8:Dawnguard.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DLC1HunterCave02
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dead Drop Mine
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#00202621'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#002E3D3C'
+  FogFar: 4000
+  FogPower: 0.6
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#004B5F5C'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogNear
+  - ClipDistance
+LightingTemplate: 10ACD3:Skyrim.esm
+WaterHeight: 0
+Location: 019C8E:Dawnguard.esm
+AcousticSpace: 01989F:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 09F363:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 018230:Dawnguard.esm
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x00093636000000B90000000000000000000000800000008003EF77B5
+  LocationReference: 019C8E:Dawnguard.esm
+  Placement:
+    Position: 2667.9705, -2342.981, 9369.314
+    Rotation: 0, 0, 2.8165932
+- MutagenObjectType: PlacedObject
+  FormKey: 018231:Dawnguard.esm
+  MajorRecordFlagsRaw: 536870912
+  SkyrimMajorRecordFlags:
+  - 0x20000000
+  Base: AD3746:Requiem.esp
+  RagdollData: 0x000FD136000000BA000080B90000000000000080000000807AEEFFB5
+  LocationReference: 019C8E:Dawnguard.esm
+  Placement:
+    Position: 2840.037, -2349.983, 9369.212
+    Rotation: 0, 0, 3.5665944
+MajorFlags:
+- 0x40000

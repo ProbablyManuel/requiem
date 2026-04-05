@@ -1,0 +1,22 @@
+FormKey: 04D05F:ccbgssse001-fish.esm
+EditorID: REQ_NULL_ccBGSSSE001_TemperWeaponSpecialDwarvenAxe02
+Items:
+- Item:
+    Item: 0DB8A2:Skyrim.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: EPTemperingItemIsEnchantedConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 05218E:Skyrim.esm
+  ComparisonValue: 1
+CreatedObject: 04D05E:ccbgssse001-fish.esm
+WorkbenchKeyword: AD3B01:Requiem.esp
+CreatedObjectCount: 1

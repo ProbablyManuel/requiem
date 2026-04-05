@@ -1,0 +1,62 @@
+FormKey: 028EDF:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: Skuldafn04
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Skuldafn South Tower
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#0032323C'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0037323E'
+    DirectionalXMinus: '#002C3239'
+    DirectionalYPlus: '#0032343C'
+    DirectionalYMinus: '#00322F3C'
+    DirectionalZPlus: '#0017171B'
+    DirectionalZMinus: '#004C4C5C'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 03128B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0192AB:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC71:Skyrim.esm
+Music: 094BDD:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 03185A:Skyrim.esm
+  Base: 020670:Skyrim.esm
+  Lock:
+    Level: Adept
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 0192AB:Skyrim.esm
+  Placement:
+    Position: 128, 384, 768
+    Rotation: 0, 0, 3.113191
+MajorFlags:
+- 0x40000

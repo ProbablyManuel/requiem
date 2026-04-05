@@ -1,0 +1,47 @@
+FormKey: 058201:Skyrim.esm
+EditorID: REQ_Pickpocket_Misdirection
+Name:
+  TargetLanguage: English
+  Value: Misdirection
+Description:
+  TargetLanguage: English
+  Value: Why should someone own a nice weapon or piece of jewelry when it could be yours? <br> Now you can sometimes adjust this inequity.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058204:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Pickpocket
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: WornHasKeywordConditionData
+        Keyword: 06BBD2:Skyrim.esm
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsObjectTypeConditionData
+        FormType: Weapon
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: 06BBE9:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: CanPickpocketEquippedItem
+  PerkConditionTabCount: 3
+  Value: 1

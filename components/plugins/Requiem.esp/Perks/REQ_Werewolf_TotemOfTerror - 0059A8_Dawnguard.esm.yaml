@@ -1,0 +1,21 @@
+FormKey: 0059A8:Dawnguard.esm
+EditorID: REQ_Werewolf_TotemOfTerror
+Name:
+  TargetLanguage: English
+  Value: Totem of Terror
+Description:
+  TargetLanguage: English
+  Value: Your Werewolf Howl of Terror strikes fear into even more terrible foes.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0059A4:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 000E46:Skyrim.esm
+  Stage: 80
+  Unknown: 0x000000

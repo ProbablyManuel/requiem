@@ -1,0 +1,27 @@
+FormKey: AE35A5:Requiem.esp
+EditorID: RFTI_Ench_Nettlebane
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3905:Requiem.esp
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 01C492:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSoulPercentCapturedToWeapon
+  PerkConditionTabCount: 3
+  Value: 1

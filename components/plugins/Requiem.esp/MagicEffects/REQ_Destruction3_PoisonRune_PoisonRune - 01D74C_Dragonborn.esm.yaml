@@ -1,0 +1,50 @@
+FormKey: 01D74C:Dragonborn.esm
+EditorID: REQ_Destruction3_PoisonRune_PoisonRune
+Name:
+  TargetLanguage: English
+  Value: Poison Rune
+MenuDisplayObject: 0A59AE:Skyrim.esm
+Keywords:
+- 109D79:Skyrim.esm
+- AD3904:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 22
+MagicSkill: Destruction
+ResistValue: PoisonResist
+CastingLight: 0FFF49:Skyrim.esm
+HitShader: 10ECCE:Skyrim.esm
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 01D74D:Dragonborn.esm
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 06DE85:Skyrim.esm
+HitEffectArt: 1046CD:Skyrim.esm
+ImpactData: 01E0C2:Dragonborn.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Cast on a nearby surface, it explodes for <mag> points of poison damage when enemies come near.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsChildConditionData

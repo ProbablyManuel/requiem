@@ -1,0 +1,25 @@
+FormKey: 0BCC54:Requiem.esp
+EditorID: REQ_DEPRECATED_Alch_FortifyLockpicking
+Name:
+  TargetLanguage: English
+  Value: Fortify Lockpicking
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A26:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.5
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: LockpickingModifier
+  Association: 065A26:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Lockpicking expertise is increased by <mag> for <dur> seconds.

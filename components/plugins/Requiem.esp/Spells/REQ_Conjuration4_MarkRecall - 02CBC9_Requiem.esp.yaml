@@ -1,0 +1,23 @@
+FormKey: 02CBC9:Requiem.esp
+EditorID: REQ_Conjuration4_MarkRecall
+Name:
+  TargetLanguage: English
+  Value: Mark & Recall
+MenuDisplayObject: 1097CD:Skyrim.esm
+EquipmentType: 013F45:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Marks the current location for subsequent castings while facing down on the ground. Recalls the caster to the mark and swaps the mark to the caster's old location while facing ahead.
+BaseCost: 1000
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+- NoDualCastModification
+ChargeTime: 4.5
+CastType: FireAndForget
+HalfCostPerk: 0C44BD:Skyrim.esm
+Effects:
+- BaseEffect: 02CBCE:Requiem.esp
+  Data:
+    Duration: 1

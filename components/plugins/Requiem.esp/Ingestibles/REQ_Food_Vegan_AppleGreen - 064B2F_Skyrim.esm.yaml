@@ -1,0 +1,26 @@
+FormKey: 064B2F:Skyrim.esm
+EditorID: REQ_Food_Vegan_AppleGreen
+ObjectBounds:
+  First: -5, -5, 0
+  Second: 5, 5, 12
+Name:
+  TargetLanguage: English
+  Value: Green Apple
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\Apple02.nif
+  Data: 0x0200000002000000000000005C8C4CF764647300B9148236DB27296564647300B9148236
+Weight: 0.1
+Value: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371D:Requiem.esp
+  Data:
+    Magnitude: 40
+    Duration: 1200
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

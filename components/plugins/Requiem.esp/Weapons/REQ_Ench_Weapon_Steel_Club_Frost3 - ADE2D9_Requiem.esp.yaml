@@ -1,0 +1,54 @@
+FormKey: ADE2D9:Requiem.esp
+EditorID: REQ_Ench_Weapon_Steel_Club_Frost3
+ObjectBounds:
+  First: -8, -12, -7
+  Second: 8, 37, 6
+Name:
+  TargetLanguage: English
+  Value: Steel Spiked Club of Ice
+Model:
+  File: PrvtI\steel\steelClub.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 045C39:Skyrim.esm
+EnchantmentAmount: 1500
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0774C1:Skyrim.esm
+Keywords:
+- 01E714:Skyrim.esm
+- 01E719:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B7:Skyrim.esm
+FirstPersonModel: ADDF1C:Requiem.esp
+AttackFailSound: 105D43:Skyrim.esm
+EquipSound: 03DE2A:Skyrim.esm
+UnequipSound: 03DE2B:Skyrim.esm
+BasicStats:
+  Value: 65
+  Weight: 13
+  Damage: 9
+Data:
+  AnimationType: OneHandMace
+  Unused: 0x000000
+  Speed: 0.95
+  Reach: 0.9
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1065353216
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.85
+Critical:
+  Damage: 4
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal
+Template: ADDF1E:Requiem.esp

@@ -1,0 +1,25 @@
+FormKey: 002E7A:unofficial skyrim special edition patch.esp
+EditorID: UDGPDawnguardCrossbow
+Description:
+  TargetLanguage: English
+  Value: Crossbows are slow but they deal heavy damage and they are specifically made to penetrate an opponent's armor.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 5
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 00F1C6:Dawnguard.esm
+  ComparisonValue: 1
+LoadingScreenNif: 005055:Dawnguard.esm
+InitialScale: 2
+InitialRotation: -10, 0, 0
+RotationOffsetConstraints:
+  Min: -180
+  Max: 180
+InitialTranslationOffset: 0, 0, -30
+CameraPath: Cameras\LSCameraPanZoomInSmall.nif

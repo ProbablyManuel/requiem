@@ -1,0 +1,56 @@
+FormKey: 01419A:Dawnguard.esm
+EditorID: REQ_Alteration_AbsorbStamina_VampirePlayer
+Name:
+  TargetLanguage: English
+  Value: Absorb Stamina
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Keywords:
+- 101BDE:Skyrim.esm
+- 2FFEAD:Requiem.esp
+- ADDDF7:Requiem.esp
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Alteration
+ResistValue: ResistMagic
+TaperWeight: 1
+SpellmakingCastingTime: 0.2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: Absorb
+CastType: Concentration
+TargetType: Aimed
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 01397A:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: 2EA062:Requiem.esp
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000039:Skyrim.esm
+  ComparisonValue: 014199:Dawnguard.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000039:Skyrim.esm
+  ComparisonValue: 0149A6:Dawnguard.esm

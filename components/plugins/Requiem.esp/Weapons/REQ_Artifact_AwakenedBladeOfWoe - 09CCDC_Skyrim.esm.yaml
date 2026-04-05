@@ -1,0 +1,54 @@
+FormKey: 09CCDC:Skyrim.esm
+EditorID: REQ_Artifact_AwakenedBladeOfWoe
+ObjectBounds:
+  First: -5, -3, -1
+  Second: 2, 49, 1
+Name:
+  TargetLanguage: English
+  Value: Awakened Blade of Woe
+Model:
+  File: Weapons\BladeofWoe\BladeofWoe.nif
+  Data: 0x02000000070000000000000033168C0764647300A0B8630503D8C24064647300A0B863054FE0756464647300A0B86305F8AE224D6464730068EFBA75BCA5227A6464730068EFBA75EE24E8DF64647300D4BCDB909FE8D76B64647300D4BCDB90
+ObjectEffect: 0AA15D:Skyrim.esm
+EnchantmentAmount: 3000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E713:Skyrim.esm
+- 01E719:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 0CAF5C:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03CED9:Skyrim.esm
+UnequipSound: 03CEDB:Skyrim.esm
+BasicStats:
+  Value: 5000
+  Weight: 5
+  Damage: 12
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  Flags:
+  - HideBackpack
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 6
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

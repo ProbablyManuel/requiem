@@ -1,0 +1,30 @@
+FormKey: 005996:Dawnguard.esm
+EditorID: REQ_VampireLord_VampiricTalons
+Name:
+  TargetLanguage: English
+  Value: Vampiric Talons
+Description:
+  TargetLanguage: English
+  Value: Your fearsome talons become even more deadly, <br> as they now drain the life forces of those they strike.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 005994:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 005995:Dawnguard.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkQuestEffect
+  Quest: 01964A:Dawnguard.esm
+  Stage: 100
+  Unknown: 0x000000

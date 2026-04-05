@@ -1,0 +1,54 @@
+FormKey: 0BEEA1:Skyrim.esm
+EditorID: REQ_Ench_Weapon_Glass_Battleaxe_AbsorbMagicka4
+ObjectBounds:
+  First: -19, -48, -3
+  Second: 6, 70, 3
+Name:
+  TargetLanguage: English
+  Value: Glass Battleaxe of Winnowing
+Model:
+  File: Weapons\Glass\GlassBattleAxe.nif
+  Data: 0x0200000007000000000000004FE0756464647300A0B8630533168C0764647300A0B8630503D8C24064647300A0B86305E984419164647300D8AC1470199340F264647300D8AC14706BBB96D164647300262C333B83C26B8764647300D8AC1470
+ObjectEffect: 0AA15F:Skyrim.esm
+EnchantmentAmount: 2000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C7:Skyrim.esm
+AlternateBlockMaterial: 0E64A9:Skyrim.esm
+Keywords:
+- 01E71D:Skyrim.esm
+- 06D932:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 036A5B:Skyrim.esm
+FirstPersonModel: 036BD4:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 06036A:Skyrim.esm
+UnequipSound: 0605D3:Skyrim.esm
+BasicStats:
+  Value: 2500
+  Weight: 20
+  Damage: 22
+Data:
+  AnimationType: TwoHandAxe
+  Unused: 0x000000
+  Speed: 0.7
+  Reach: 1.3
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1068708659
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.15
+Critical:
+  Damage: 11
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Loud
+Template: 0139A4:Skyrim.esm

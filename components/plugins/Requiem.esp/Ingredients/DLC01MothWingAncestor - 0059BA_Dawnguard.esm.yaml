@@ -1,0 +1,36 @@
+FormKey: 0059BA:Dawnguard.esm
+EditorID: DLC01MothWingAncestor
+Version2: 6
+ObjectBounds:
+  First: -12, -5, 0
+  Second: 0, 6, 0
+Name:
+  TargetLanguage: English
+  Value: Ancestor Moth Wing
+Keywords:
+- 08CDEB:Skyrim.esm
+- 0A248C:Skyrim.esm
+Model:
+  File: DLC01\Critters\AncestorMothWing01.nif
+  Data: 0x020000000000000000000000
+Value: 2
+Weight: 0.1
+IngredientValue: 2
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB25:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 60
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+- BaseEffect: 03EAF8:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 30

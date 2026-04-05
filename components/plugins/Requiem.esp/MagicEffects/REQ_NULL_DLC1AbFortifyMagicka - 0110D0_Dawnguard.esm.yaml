@@ -1,0 +1,29 @@
+FormKey: 0110D0:Dawnguard.esm
+EditorID: REQ_NULL_DLC1AbFortifyMagicka
+Name:
+  TargetLanguage: English
+  Value: Fortify Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- HideInUI
+- PowerAffectsMagnitude
+BaseCost: 5
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Magicka
+CastingArt: 01C859:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Charge
+  Sound: 056622:Skyrim.esm
+- Type: Ready
+  Sound: 03F363:Skyrim.esm
+- Type: Release
+  Sound: 03F361:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

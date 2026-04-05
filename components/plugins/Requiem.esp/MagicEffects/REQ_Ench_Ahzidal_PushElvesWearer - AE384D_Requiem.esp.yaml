@@ -1,0 +1,116 @@
+FormKey: AE384D:Requiem.esp
+EditorID: REQ_Ench_Ahzidal_PushElvesWearer
+VirtualMachineAdapter:
+  Scripts:
+  - Name: voicepusheffectscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 30
+Name:
+  TargetLanguage: English
+  Value: Destroy Elves
+MenuDisplayObject: 0A59AC:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 0131F4:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 01AACC:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 00377D:Dawnguard.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013743:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 088840:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013742:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 08883D:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013749:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 088884:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013741:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 08883C:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013747:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 0A82B9:Skyrim.esm
+  ComparisonValue: 1

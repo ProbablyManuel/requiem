@@ -1,0 +1,47 @@
+FormKey: 07E5D4:Skyrim.esm
+EditorID: REQ_Conjuration5_StormThrall_SummonStormThrall
+Name:
+  TargetLanguage: English
+  Value: Summon Storm Thrall
+MenuDisplayObject: 0A6459:Skyrim.esm
+Keywords:
+- 02482A:Skyrim.esm
+- 0806E1:Skyrim.esm
+- 0A9B1F:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+BaseCost: 0.1
+MagicSkill: Conjuration
+CastingLight: 03BA90:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 3
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: 07E87F:Skyrim.esm
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 044F56:Skyrim.esm
+HitEffectArt: 03F811:Skyrim.esm
+ImpactData: 03A1E9:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+EquipAbility: 044F59:Skyrim.esm
+ImageSpaceModifier: 06F79B:Skyrim.esm
+ScriptEffectAIScore: 1
+ScriptEffectAIDelayTime: 10
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster summons an exceptionally strong Storm Atronach that brings the devastating havoc of Oblivion's storms upon its foes.

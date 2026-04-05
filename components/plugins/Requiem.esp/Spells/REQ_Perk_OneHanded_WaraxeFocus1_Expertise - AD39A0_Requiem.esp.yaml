@@ -1,0 +1,69 @@
+FormKey: AD39A0:Requiem.esp
+EditorID: REQ_Perk_OneHanded_WaraxeFocus1_Expertise
+Name:
+  TargetLanguage: English
+  Value: War Axe Focus 1
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 000904:Requiem.esp
+  Data:
+    Magnitude: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+    ComparisonValue: 3
+- BaseEffect: 000904:Requiem.esp
+  Data:
+    Magnitude: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+    ComparisonValue: 3
+- BaseEffect: 000904:Requiem.esp
+  Data:
+    Magnitude: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+    ComparisonValue: 3
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+    ComparisonValue: 3
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+    ComparisonValue: 5
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetEquippedItemTypeConditionData
+      ItemSource: Right
+    ComparisonValue: 5

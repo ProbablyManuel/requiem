@@ -1,0 +1,16 @@
+FormKey: 10FAF0:Skyrim.esm
+EditorID: REQ_Ench_EbonyBlade
+Name:
+  TargetLanguage: English
+  Value: Ebony Blade Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: 10FAF1:Skyrim.esm
+  Data:
+    Duration: 1
+- BaseEffect: AE3865:Requiem.esp
+  Data: {}

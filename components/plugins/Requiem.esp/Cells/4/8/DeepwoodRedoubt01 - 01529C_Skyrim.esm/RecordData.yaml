@@ -1,0 +1,70 @@
+FormKey: 01529C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DeepwoodRedoubt01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Deepwood Redoubt
+Flags:
+- IsInteriorCell
+- HasWater
+- ShowSky
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+  - LightFadeDistances
+LightingTemplate: 08E78E:Skyrim.esm
+WaterHeight: 0
+Location: 019162:Skyrim.esm
+SkyAndWeatherFromRegion: 04D7FD:Skyrim.esm
+AcousticSpace: 0FD942:Skyrim.esm
+EncounterZone: 03EC0C:Skyrim.esm
+Music: 05228A:Skyrim.esm
+ImageSpace: 0A28E6:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 0289D3:Skyrim.esm
+  MajorRecordFlagsRaw: 1024
+  Version2: 5
+  SkyrimMajorRecordFlags:
+  - 0x400
+  Base: 020654:Skyrim.esm
+  Scale: 0.9
+  Lock:
+    Level: Apprentice
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019162:Skyrim.esm
+  Placement:
+    Position: -1886.8867, 2104.8098, -344.767
+    Rotation: 0.07328761, 0.23328584, 5.8846693
+MajorFlags:
+- 0x40000

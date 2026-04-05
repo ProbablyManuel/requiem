@@ -1,0 +1,22 @@
+FormKey: 029B4F:Skyrim.esm
+EditorID: StaffEnchBanishDaedra
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Banish Daedra
+EnchantmentCost: 125
+CastType: FireAndForget
+EnchantmentAmount: 125
+TargetType: TargetActor
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 06D22B:Skyrim.esm
+  Data:
+    Magnitude: 10
+- BaseEffect: 06D22D:Skyrim.esm
+  Data:
+    Magnitude: 100
+- BaseEffect: 0173DC:Skyrim.esm
+  Data:
+    Magnitude: 10

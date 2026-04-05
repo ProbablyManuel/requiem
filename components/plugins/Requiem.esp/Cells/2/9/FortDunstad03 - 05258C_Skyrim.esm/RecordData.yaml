@@ -1,0 +1,62 @@
+FormKey: 05258C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: FortDunstad03
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Fort Dunstad Commander's Quarters
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#001A133E'
+  DirectionalColor: '#00024951'
+  FogNearColor: '#00B0DCF7'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#002C2418'
+    DirectionalXMinus: '#00232415'
+    DirectionalYPlus: '#00282517'
+    DirectionalYMinus: '#00282217'
+    DirectionalZPlus: '#0013110A'
+    DirectionalZMinus: '#003C3623'
+    Specular: '#00B0DCF7'
+    Scale: 1
+  FogFarColor: '#00B0DCF7'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 06909B:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 01917E:Skyrim.esm
+AcousticSpace: 04075D:Skyrim.esm
+EncounterZone: 03EC1C:Skyrim.esm
+Music: 05615B:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0C97C7:Skyrim.esm
+  Base: 09610D:Skyrim.esm
+  LocationReference: 01917E:Skyrim.esm
+  EnableParent:
+    Reference: 0C63D6:Skyrim.esm
+    Unknown: 0x000000
+  Placement:
+    Position: 2.658685, 527.66016, 826.87756
+    Rotation: 0.05749638, 0.12509298, 3.7619455
+MajorFlags:
+- 0x40000

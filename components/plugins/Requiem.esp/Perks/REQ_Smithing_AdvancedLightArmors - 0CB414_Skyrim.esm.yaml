@@ -1,0 +1,56 @@
+FormKey: 0CB414:Skyrim.esm
+EditorID: REQ_Smithing_AdvancedLightArmors
+Name:
+  TargetLanguage: English
+  Value: Advanced Light Armors
+Description:
+  TargetLanguage: English
+  Value: You've been able to learn more advanced techniques, allowing you to craft and efficiently improve<br>advanced light materials such as scale, netch leather, chitin, bonemold, and chainmail.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB414:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 05CBD4:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 6F9CB9:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB40D:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Smithing
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasKeywordConditionData
+        Keyword: AD3AEE:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModTemperingHealth
+  PerkConditionTabCount: 2
+  Modification: Multiply
+  Value: 1.6

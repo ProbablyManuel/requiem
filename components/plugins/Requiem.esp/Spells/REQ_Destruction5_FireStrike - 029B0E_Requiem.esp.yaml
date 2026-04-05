@@ -1,0 +1,49 @@
+FormKey: 029B0E:Requiem.esp
+EditorID: REQ_Destruction5_FireStrike
+Name:
+  TargetLanguage: English
+  Value: Firestrike
+MenuDisplayObject: 04E264:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 2000
+Flags:
+- ManualCostCalc
+- AreaEffectIgnoresLOS
+ChargeTime: 0.1
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44C2:Skyrim.esm
+Effects:
+- BaseEffect: 029B0D:Requiem.esp
+  Data:
+    Magnitude: 250
+    Area: 75
+    Duration: 1
+- BaseEffect: 017C7B:Requiem.esp
+  Data:
+    Magnitude: 10
+    Area: 75
+    Duration: 120
+- BaseEffect: 017C7B:Requiem.esp
+  Data:
+    Magnitude: 10
+    Area: 75
+    Duration: 120
+- BaseEffect: 017C7B:Requiem.esp
+  Data:
+    Magnitude: 10
+    Area: 75
+    Duration: 120
+- BaseEffect: 017C7B:Requiem.esp
+  Data:
+    Magnitude: 10
+    Area: 75
+    Duration: 120
+- BaseEffect: 017C7B:Requiem.esp
+  Data:
+    Magnitude: 10
+    Area: 75
+    Duration: 120

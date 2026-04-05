@@ -1,0 +1,23 @@
+FormKey: 100E60:Skyrim.esm
+EditorID: REQ_Ench_ResistDisease
+Name:
+  TargetLanguage: English
+  Value: Resist Disease
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 100E61:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 1.6
+EnchantShader: 05D606:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: ResistDisease
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You are <mag>% less likely to contract diseases.

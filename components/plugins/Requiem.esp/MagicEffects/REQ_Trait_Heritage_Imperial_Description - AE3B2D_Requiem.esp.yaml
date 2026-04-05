@@ -1,0 +1,25 @@
+FormKey: AE3B2D:Requiem.esp
+EditorID: REQ_Trait_Heritage_Imperial_Description
+Name:
+  TargetLanguage: English
+  Value: Star of the West
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: You restore <1> magicka and stamina each second. You haggle <15>% better prices.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

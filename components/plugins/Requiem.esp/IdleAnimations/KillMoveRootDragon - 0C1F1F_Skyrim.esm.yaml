@@ -1,0 +1,54 @@
+FormKey: 0C1F1F:Skyrim.esm
+EditorID: KillMoveRootDragon
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 100F19:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    RunOnType: Target
+    Object: 000007:Skyrim.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetActorValuePercentConditionData
+    RunOnType: Target
+    ActorValue: Health
+  ComparisonValue: AD373A:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    RunOnType: Target
+    Object: 000007:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    RunOnType: Target
+    Perk: 18F5A8:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornApparelHasKeywordCountConditionData
+    RunOnType: Target
+    Keyword: 06BBD2:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    RunOnType: Target
+    Object: 000007:Skyrim.esm
+Filename: Actors\Dragon\Behaviors\DragonBehavior.hkx
+RelatedIdles:
+- 013383:Skyrim.esm
+- Null
+AnimationGroupSection: 77

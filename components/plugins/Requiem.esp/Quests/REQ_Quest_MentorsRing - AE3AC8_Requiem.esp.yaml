@@ -1,0 +1,29 @@
+FormKey: AE3AC8:Requiem.esp
+EditorID: REQ_Quest_MentorsRing
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: AE3AC8:Requiem.esp
+      Alias: 0
+    Scripts:
+    - Name: REQ_MentorsRingNecromancer
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: MentorsRing
+        Object: 000B29:ccbgssse001-fish.esm
+Flags:
+- StartGameEnabled
+- 0x10
+- RunOnce
+NextAliasID: 2
+Aliases:
+- Name: Necromancer
+  Flags: []
+  ForcedReference: 0D9651:Skyrim.esm
+  Items:
+  - Item:
+      Item: 000B29:ccbgssse001-fish.esm
+      Count: 1
+  VoiceTypes: Null

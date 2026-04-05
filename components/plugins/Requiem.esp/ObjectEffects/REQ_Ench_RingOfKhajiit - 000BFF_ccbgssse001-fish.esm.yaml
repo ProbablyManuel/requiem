@@ -1,0 +1,15 @@
+FormKey: 000BFF:ccbgssse001-fish.esm
+EditorID: REQ_Ench_RingOfKhajiit
+Name:
+  TargetLanguage: English
+  Value: Ring of Khajiit
+EnchantType: Enchantment
+Effects:
+- BaseEffect: ADE451:Requiem.esp
+  Data:
+    Magnitude: 15
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSneakingConditionData
+    ComparisonValue: 1

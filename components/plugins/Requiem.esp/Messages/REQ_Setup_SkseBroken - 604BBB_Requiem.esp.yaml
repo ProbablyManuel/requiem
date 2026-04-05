@@ -1,0 +1,16 @@
+FormKey: 604BBB:Requiem.esp
+EditorID: REQ_Setup_SkseBroken
+Description:
+  TargetLanguage: English
+  Value: >-
+    Your Skyrim Script Extender is installed but it seems to be broken (executable-version: %.0f, script version: %.0f). Requiem requires a proper installation of the latest SKSE version to run.
+
+
+    Since your current game would become unplayable, we will send you back to the main menu. Please exit, properly install SKSE and restart Skyrim.
+INAM: 0x00000000
+Flags:
+- MessageBox
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: SKSE is broken

@@ -1,0 +1,41 @@
+FormKey: 01570C:Dawnguard.esm
+MajorRecordFlagsRaw: 4
+EditorID: REQ_Cloth_Prelate_Body
+SkyrimMajorRecordFlags:
+- NotPlayable
+ObjectBounds:
+  First: -21, -25, 0
+  Second: 25, 25, 8
+Name:
+  TargetLanguage: English
+  Value: Monk Robes
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\Monk\MonkRobesGND.nif
+      Data: 0x020000000000000000000000
+  Female:
+    Model:
+      File: Clothes\Monk\MonkRobesGND.nif
+      Data: 0x020000000000000000000000
+BodyTemplate:
+  FirstPersonFlags:
+  - Body
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 0A8657:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 01570E:Dawnguard.esm
+Value: 5
+Weight: 1
+MajorFlags:
+- NonPlayable

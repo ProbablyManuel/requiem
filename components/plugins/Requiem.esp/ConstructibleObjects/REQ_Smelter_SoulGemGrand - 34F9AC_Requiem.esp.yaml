@@ -1,0 +1,24 @@
+FormKey: 34F9AC:Requiem.esp
+EditorID: REQ_Smelter_SoulGemGrand
+Items:
+- Item:
+    Item: 05AD9F:Skyrim.esm
+    Count: 3
+- Item:
+    Item: 05ADA0:Skyrim.esm
+    Count: 3
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F7C:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Enchanting
+  ComparisonValue: 100
+CreatedObject: 02E4FC:Skyrim.esm
+WorkbenchKeyword: 0A5CCE:Skyrim.esm
+CreatedObjectCount: 1

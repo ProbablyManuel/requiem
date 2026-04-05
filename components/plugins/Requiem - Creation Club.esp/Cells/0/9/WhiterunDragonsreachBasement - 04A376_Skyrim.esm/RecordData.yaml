@@ -1,0 +1,102 @@
+FormKey: 04A376:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: WhiterunDragonsreachBasement
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dragonsreach Dungeon
+Flags:
+- IsInteriorCell
+- PublicArea
+Lighting:
+  AmbientColor: '#001E1E28'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  FogFar: 3000
+  FogClipDistance: 3000
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00211E29'
+    DirectionalXMinus: '#001A1E26'
+    DirectionalYPlus: '#001E1F28'
+    DirectionalYMinus: '#001E1C28'
+    DirectionalZPlus: '#000E0E12'
+    DirectionalZMinus: '#002D2D3D'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Inherits:
+  - DirectionalColor
+  - FogColor
+  - FogNear
+LightingTemplate: 06175D:Skyrim.esm
+WaterHeight: -2.1474836E+09
+Location: 0C0BA0:Skyrim.esm
+Owner: 065795:Skyrim.esm
+AcousticSpace: 0C5B6D:Skyrim.esm
+Music: 06D542:Skyrim.esm
+ImageSpace: 036ED2:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 00081C:ccbgssse050-ba_daedric.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 000819:ccbgssse050-ba_daedric.esl
+  Owner: 000DB1:Skyrim.esm
+  LocationReference: 0C0BA0:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -237.33835, 502.77637, -151.0737
+    Rotation: 0, 0, 4.88319
+- MutagenObjectType: PlacedObject
+  FormKey: 00082B:ccbgssse050-ba_daedric.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 00081A:ccbgssse050-ba_daedric.esl
+  RagdollData: 0x00290643C0390541000010B980D095BFD50FC9BF0040F1B5CF76484000000000BA9E1740060072B900E8542C000000800000008060A5C93F
+  Owner: 000DB1:Skyrim.esm
+  LocationReference: 0C0BA0:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -234.96857, 521.352, -149.87064
+    Rotation: 0, 0, 4.6831894
+- MutagenObjectType: PlacedObject
+  FormKey: 000817:ccbgssse056-ba_silver.esl
+  MajorRecordFlagsRaw: 536873984
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  - 0x20000000
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: defaultDisableHavokOnLoad
+  Base: 000815:ccbgssse056-ba_silver.esl
+  Owner: 000007:Skyrim.esm
+  LocationReference: 0C0BA0:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: 866.00146, 1123.7278, -216
+MajorFlags:
+- 0x40000

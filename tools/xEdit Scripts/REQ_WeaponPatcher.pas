@@ -17,7 +17,7 @@ begin
   re_weapon.RegEx := '^[^_]+(?:_(?:Ench|NP|Var))?_(Weapon_([^_]+)_([^_]+))(?:_.+)?$';
 
   re_weapon_artifact := TPerlRegEx.Create;
-  re_weapon_artifact.RegEx := '^[^_]+(?:_NP)?_(Artifact_.+)$';
+  re_weapon_artifact.RegEx := '^[^_]+(?:_NP)?_(Artifact_\D+)\d?$';
 end;
 
 function Process(e: IInterface): Integer;

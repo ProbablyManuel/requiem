@@ -1,0 +1,21 @@
+FormKey: 016CD1:Skyrim.esm
+EditorID: DragonFrostProjectile01
+Version2: 4
+ObjectBounds:
+  First: -532, -137, -600
+  Second: 578, 1930, 496
+Model:
+  File: Magic\MAGdragonFrost01.nif
+  Data: 0x0200000008000000000000006C6AC81F6464730038973CEA886EBB8964647300582C5533573DB8666464730038973CEA2D2DC2E364647300582C553310A8EAB16464730038973CEAE85FED0564647300582C553375145FF46464730038973CEABEF227C964647300582C5533
+Flags:
+- PassThroughSmallTransparent
+Type: Flame
+Speed: 2000
+Range: 2000
+Light: 0DC20C:Skyrim.esm
+FadeDuration: 2
+ImpactForce: 5
+CollisionRadius: 10
+RelaunchInterval: 0.15
+MuzzleFlashModel: ''
+SoundLevel: 1

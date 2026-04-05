@@ -1,0 +1,43 @@
+FormKey: 0461EF:Requiem.esp
+EditorID: REQ_Conjuration5_SpiritWerewolf_SummonSpiritWerewolf
+Name:
+  TargetLanguage: English
+  Value: Summon Spirit Werewolf
+MenuDisplayObject: 0A6459:Skyrim.esm
+Keywords:
+- 0A9B1F:Skyrim.esm
+- 1091CF:Skyrim.esm
+Flags:
+- SnapToNavmesh
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- NoHitEffect
+BaseCost: 50
+MagicSkill: Conjuration
+CastingLight: 03BA90:Skyrim.esm
+MinimumSkillLevel: 100
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectSummonCreatureArchetype
+  Association: 0461DF:Requiem.esp
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 03CDFC:Skyrim.esm
+HitEffectArt: 06DE87:Skyrim.esm
+ImpactData: 03A1E9:Skyrim.esm
+SkillUsageMultiplier: 11.097337
+DualCastScale: 1
+ImageSpaceModifier: 06F79B:Skyrim.esm
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: The caster summons the spirit of a bloodthirsty werewolf for <dur> seconds.

@@ -1,0 +1,14 @@
+FormKey: AE3828:Requiem.esp
+EditorID: REQ_Ench_Krosis_Perk
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Priority: 5
+  EntryPoint: ModSneakAttackMult
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 2

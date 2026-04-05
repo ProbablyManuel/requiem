@@ -1,0 +1,30 @@
+FormKey: 058F7E:Skyrim.esm
+EditorID: REQ_Enchanting_ArcaneExperimentation
+Name:
+  TargetLanguage: English
+  Value: Arcane Experimentation
+Description:
+  TargetLanguage: English
+  Value: Your studies have enabled you to research unique enchantments of your own<br>and to craft better staves at the forge.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 058F7C:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Enchanting
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: 03F03D:Requiem.esp
+- MutagenObjectType: PerkEntryPointModifyValue
+  EntryPoint: ModEnchantmentPower
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.15

@@ -37,13 +37,13 @@ begin
   end;
 
   if HasKeyword(ammo, 'REQ_AmmoWeight_Massive') then
-    gravity := 1.0
-  else if HasKeyword(ammo, 'REQ_AmmoWeight_Heavy') then
     gravity := 0.65
+  else if HasKeyword(ammo, 'REQ_AmmoWeight_Heavy') then
+    gravity := 0.5
   else if HasKeyword(ammo, 'REQ_AmmoWeight_Medium') then
     gravity := 0.35
   else if HasKeyword(ammo, 'REQ_AmmoWeight_Light') then
-    gravity := 0.15
+    gravity := 0.2
   else if HasKeyword(ammo, 'REQ_AmmoWeight_None') then
     gravity := 0.0
   else begin

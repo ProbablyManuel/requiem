@@ -1,0 +1,30 @@
+FormKey: 01AAE0:Dragonborn.esm
+EditorID: REQ_Potion_WellBeing4
+Name:
+  TargetLanguage: English
+  Value: Potion of Well-being (Good)
+Keywords:
+- 08CDEC:Skyrim.esm
+Model:
+  File: Clutter\Potions\PotionHealthGreat.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 390
+Flags:
+- NoAutoCalc
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 20
+- BaseEffect: 03EB17:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 20
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 20

@@ -1,0 +1,42 @@
+FormKey: 062311:Skyrim.esm
+EditorID: REQ_Cloth_Ulfric_Feet
+ObjectBounds:
+  First: -11, -11, -1
+  Second: 11, 11, 25
+Name:
+  TargetLanguage: English
+  Value: Ulfric's Boots
+WorldModel:
+  Male:
+    Model:
+      File: Clothes\YarlClothes02\BootsGO.nif
+      Data: 0x020000000200000000000000C45EF2596464730086C4F1638F3A6CB46464730086C4F163
+      AlternateTextures:
+      - Name: boot01GO:0
+        NewTexture: 02F6A7:unofficial skyrim special edition patch.esp
+  Female:
+    Model:
+      File: Clothes\YarlClothes02\BootsGO.nif
+      Data: 0x020000000200000000000000C45EF2596464730086C4F1638F3A6CB46464730086C4F163
+      AlternateTextures:
+      - Name: boot01GO:0
+        NewTexture: 02F6A7:unofficial skyrim special edition patch.esp
+BodyTemplate:
+  FirstPersonFlags:
+  - Feet
+  ArmorType: Clothing
+  ActsLike44: True
+PickUpSound: 03E879:Skyrim.esm
+PutDownSound: 03E909:Skyrim.esm
+Race: 000019:Skyrim.esm
+Keywords:
+- 06BBE8:Skyrim.esm
+- 08F95B:Skyrim.esm
+- 10CD12:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Armature:
+- 06230C:Skyrim.esm
+Value: 25
+Weight: 1

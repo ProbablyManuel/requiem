@@ -1,0 +1,34 @@
+FormKey: 0693C4:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_Food_Paralysis_Beast
+Name:
+  TargetLanguage: English
+  Value: Paralysis
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- NoArea
+BaseCost: 500
+HitShader: 06DE84:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+CastType: FireAndForget
+HitEffectArt: 06DE86:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Only they can enjoy this meal without vomiting.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 4CF31E:Requiem.esp

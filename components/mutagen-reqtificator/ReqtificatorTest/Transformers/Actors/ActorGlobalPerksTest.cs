@@ -37,7 +37,7 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Template = new FormLinkNullable<INpcSpawnGetter>(FormKey.Null),
                 Configuration = new NpcConfiguration { TemplateFlags = 0 },
-                Perks = new ExtendedList<PerkPlacement> { OtherPerk }
+                Perks = [OtherPerk]
             };
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -54,7 +54,7 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Template = new FormLinkNullable<INpcSpawnGetter>(FormKey.Factory("567890:Skyrim.esm")),
                 Configuration = new NpcConfiguration { TemplateFlags = 0 },
-                Perks = new ExtendedList<PerkPlacement> { OtherPerk }
+                Perks = [OtherPerk]
             };
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
@@ -88,7 +88,7 @@ namespace ReqtificatorTest.Transformers.Actors
             {
                 Template = new FormLinkNullable<INpcSpawnGetter>(FormKey.Null),
                 Configuration = new NpcConfiguration { TemplateFlags = 0 },
-                Perks = new ExtendedList<PerkPlacement> { PerksToAdd.First() }
+                Perks = [PerksToAdd.First()]
             };
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();

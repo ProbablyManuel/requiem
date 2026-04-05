@@ -1,0 +1,21 @@
+FormKey: 0F5B54:Skyrim.esm
+EditorID: REQ_Vampire_ChampionOfTheNight
+Name:
+  TargetLanguage: English
+  Value: Champion of the Night
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Your vampiric powers grant you a great insight into the minds of the weak, improving the strength of your illusion spells.
+Type: Ability
+Effects:
+- BaseEffect: 0F5B55:Skyrim.esm
+  Data: {}
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasSpellConditionData
+      Spell: 0C1E8B:Skyrim.esm
+    ComparisonValue: 1

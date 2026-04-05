@@ -1,0 +1,66 @@
+FormKey: 45352E:Requiem.esp
+MajorRecordFlagsRaw: 4
+EditorID: REQ_NP_Weapon_Soulreaping_Bow
+SkyrimMajorRecordFlags:
+- NotPlayable
+Name:
+  TargetLanguage: English
+  Value: Bow of Soulreaping
+Model:
+  File: Weapons\Draugr\DraugrBowSkinned.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 2E2331:Requiem.esp
+EnchantmentAmount: 1000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0193C6:Skyrim.esm
+AlternateBlockMaterial: 0774B6:Skyrim.esm
+Keywords:
+- 01E715:Skyrim.esm
+- 08F958:Skyrim.esm
+- 0C5C02:Skyrim.esm
+- 2E232E:Requiem.esp
+- 9F9914:Requiem.esp
+- AD3B2D:Requiem.esp
+- AD3B2F:Requiem.esp
+- 0C27BD:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0193B9:Skyrim.esm
+FirstPersonModel: 0302C9:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03D78C:Skyrim.esm
+UnequipSound: 03D882:Skyrim.esm
+BasicStats:
+  Value: 235
+  Weight: 18
+  Damage: 60
+Data:
+  AnimationType: Bow
+  Unused: 0x000000
+  Speed: 0.3704
+  Reach: 1
+  Flags:
+  - CantDrop
+  - NonPlayable
+  - NPCsUseAmmo
+  BaseVATStoHitChance: 5
+  NumProjectiles: 1
+  RangeMin: 500
+  RangeMax: 2000
+  AnimationAttackMult: 1
+  Unknown2: 1084227584
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: Archery
+Critical:
+  Damage: 7
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent
+MajorFlags:
+- NonPlayable

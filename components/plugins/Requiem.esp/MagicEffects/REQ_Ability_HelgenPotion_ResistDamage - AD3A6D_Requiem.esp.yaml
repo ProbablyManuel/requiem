@@ -1,0 +1,30 @@
+FormKey: AD3A6D:Requiem.esp
+EditorID: REQ_Ability_HelgenPotion_ResistDamage
+Name:
+  TargetLanguage: English
+  Value: Resist Damage
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: DamageResist
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInCellConditionData
+    Cell: 05DE24:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestRunningConditionData
+    Quest: 03372B:Skyrim.esm
+  ComparisonValue: 1

@@ -1,0 +1,23 @@
+FormKey: 03EB14:Skyrim.esm
+EditorID: REQ_Potion_FortifyStaminaRegeneration4
+ObjectBounds:
+  First: -6, -8, 0
+  Second: 6, 6, 31
+Name:
+  TargetLanguage: English
+  Value: Potion of Fortify Stamina Regeneration (Good)
+Keywords:
+- 08CDEC:Skyrim.esm
+Model:
+  File: Clutter\Potions\PotionFortifyStamRateExtreme.nif
+  Data: 0x02000000050000000000000063DF5C0164647300BFFA25DAB9FB95CF64647300BFFA25DAFAE0BBA4646473007F66A5C0CE353C0964647300262C333BFD5A856264647300BFFA25DA
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 522
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 80
+    Duration: 300

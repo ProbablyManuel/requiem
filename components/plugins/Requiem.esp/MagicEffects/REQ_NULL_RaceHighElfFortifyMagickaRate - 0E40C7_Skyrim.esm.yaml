@@ -1,0 +1,23 @@
+FormKey: 0E40C7:Skyrim.esm
+EditorID: REQ_NULL_RaceHighElfFortifyMagickaRate
+Name:
+  TargetLanguage: English
+  Value: Regenerate Magicka
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+HitShader: 10CC48:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: MagickaRate
+CastType: FireAndForget
+DualCastScale: 1
+ImageSpaceModifier: 09E586:Skyrim.esm
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Regenerate magicka faster for <dur> seconds.

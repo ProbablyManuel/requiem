@@ -1,0 +1,25 @@
+FormKey: 074A3B:Skyrim.esm
+EditorID: REQ_Poison_Paralysis5
+ObjectBounds:
+  First: -5, -7, 0
+  Second: 5, 6, 19
+Name:
+  TargetLanguage: English
+  Value: Poison of Paralysis (Remarkable)
+Keywords:
+- 08CDED:Skyrim.esm
+Model:
+  File: Clutter\Potions\PoisonParalyze05.nif
+  Data: 0x020000000400000000000000F9BE93CC64647300BFFA25DA28058E7E64647300BFFA25DAF63890AC64647300262C333BD1E23CE564647300BFFA25DA
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 390
+Flags:
+- NoAutoCalc
+- Poison
+ConsumeSound: 106614:Skyrim.esm
+Effects:
+- BaseEffect: 073F30:Skyrim.esm
+  Data:
+    Duration: 5

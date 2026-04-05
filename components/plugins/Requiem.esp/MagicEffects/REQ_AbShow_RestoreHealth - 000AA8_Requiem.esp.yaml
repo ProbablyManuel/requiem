@@ -1,0 +1,17 @@
+FormKey: 000AA8:Requiem.esp
+EditorID: REQ_AbShow_RestoreHealth
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health recovers by <mag> per second.

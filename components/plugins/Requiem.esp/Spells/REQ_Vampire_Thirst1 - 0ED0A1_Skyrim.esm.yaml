@@ -1,0 +1,56 @@
+FormKey: 0ED0A1:Skyrim.esm
+EditorID: REQ_Vampire_Thirst1
+Name:
+  TargetLanguage: English
+  Value: Vampirism
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 5A6A76:Requiem.esp
+  Data:
+    Magnitude: 15
+- BaseEffect: 0008BC:Requiem.esp
+  Data:
+    Magnitude: 100
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetInWorldspaceConditionData
+      WorldspaceOrList: 000969:Update.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000038:Skyrim.esm
+    ComparisonValue: 19
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: LessThan
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 000038:Skyrim.esm
+    ComparisonValue: 5
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: IsInInteriorConditionData
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      Global: 00A26E:Dawnguard.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      Keyword: 01CD56:Skyrim.esm

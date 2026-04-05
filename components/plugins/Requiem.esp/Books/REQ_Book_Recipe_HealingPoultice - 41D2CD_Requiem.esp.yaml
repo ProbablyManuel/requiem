@@ -1,0 +1,52 @@
+FormKey: 41D2CD:Requiem.esp
+EditorID: REQ_Book_Recipe_HealingPoultice
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Req_HealingPoulticeRecipeScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CanCraft
+      Object: 682FB7:Requiem.esp
+ObjectBounds:
+  First: -8, -5, 0
+  Second: 8, 5, 0
+Name:
+  TargetLanguage: English
+  Value: 'Recipe: Healing Poultice'
+Model:
+  File: Clutter\Books\Note03.nif
+  Data: 0x020000000000000000000000
+BookText:
+  TargetLanguage: English
+  Value: >-
+    <font face='$HandwrittenFont'>
+
+    Healing Poultice:
+
+
+    1. Take three pieces of Tundra Cotton and refine it at a tanning rack.
+
+
+    2. Soak the cotton in weak alcohol, preferably in ale.
+
+
+    3. Add three blue mountain flowers to the bottle and shake it strongly.
+
+
+
+    When the substance begins to appear like a moist, somewhat fluffy mush, the process is finished. The mush can be applied on almost any wound, and will heal it in less than a day, as it forms a layer on the wound and hardens quickly after coming into contact with a warm body. After that, the layer slowly and gently applies the alchemical healing properties of the mountain flowers, allowing it to even heal more severe wounds and broken bones, given enough time and rest. However, the mixture cannot do its work when the patient is suffering from stress of any sort!
+
+    Also, one should remember that the poultice has to be reapplied after a few hours!
+
+
+    </font>
+PickUpSound: 0C7A54:Skyrim.esm
+Keywords:
+- 0F5CB0:Skyrim.esm
+Teaches:
+  MutagenObjectType: BookTeachesNothing
+Value: 100
+InventoryArt: 01541C:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

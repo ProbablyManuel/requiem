@@ -1,0 +1,70 @@
+FormKey: 026D68:Dragonborn.esm
+EditorID: REQ_Cloak_Spider_Shock
+Name:
+  TargetLanguage: English
+  Value: Shock
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 448
+CastType: Concentration
+TargetType: Aimed
+Effects:
+- BaseEffect: 10FDD2:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+- BaseEffect: 10FDD2:Skyrim.esm
+  Data:
+    Magnitude: 80
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: 10FDD2:Skyrim.esm
+  Data:
+    Magnitude: 40
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 01397A:Skyrim.esm
+    ComparisonValue: 1
+- BaseEffect: 10FDD2:Skyrim.esm
+  Data:
+    Magnitude: 80
+    Duration: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectConditionData
+      RunOnType: Reference
+      Reference: 000014:Skyrim.esm
+      MagicEffect: AE38E8:Requiem.esp
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 01397A:Skyrim.esm
+    ComparisonValue: 1

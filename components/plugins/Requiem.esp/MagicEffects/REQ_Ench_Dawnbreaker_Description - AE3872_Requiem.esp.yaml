@@ -1,0 +1,17 @@
+FormKey: AE3872:Requiem.esp
+EditorID: REQ_Ench_Dawnbreaker_Description
+Name:
+  TargetLanguage: English
+  Value: Dawnbreaker
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Dawnbreaker deals <mag> sun damage to undead (20 plus another 0.25 per undead killed) and turns undead up to level <Global=REQ_GV_Dawnbreaker_TurnUndeadMagnitude> (8 plus another 0.1 per undead killed). Killing an undead causes an explosion that turns nearby undead up to level <50> and deals <300> sun damage.

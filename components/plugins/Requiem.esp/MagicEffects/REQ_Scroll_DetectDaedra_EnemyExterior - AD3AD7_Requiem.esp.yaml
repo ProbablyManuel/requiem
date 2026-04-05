@@ -1,0 +1,46 @@
+FormKey: AD3AD7:Requiem.esp
+EditorID: REQ_Scroll_DetectDaedra_EnemyExterior
+Name:
+  TargetLanguage: English
+  Value: Detect Daedra Enemy Exterior
+MenuDisplayObject: 104F70:Skyrim.esm
+Flags:
+- Recover
+- NoHitEvent
+- FXPersist
+- HideInUI
+- NoRecast
+- Painless
+CastingLight: 03BA90:Skyrim.esm
+HitShader: 0DC209:Skyrim.esm
+SpellmakingArea: 400
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: DetectLife
+CastType: FireAndForget
+CastingArt: 02FB1C:Skyrim.esm
+DualCastScale: 1
+ImageSpaceModifier: 02FB1E:Skyrim.esm
+CastingSoundLevel: Silent
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 07C71F:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 081189:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsInInteriorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013797:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F82F4:Skyrim.esm

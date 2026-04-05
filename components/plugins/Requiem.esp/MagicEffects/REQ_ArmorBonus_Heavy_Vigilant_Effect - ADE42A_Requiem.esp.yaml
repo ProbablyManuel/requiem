@@ -1,0 +1,22 @@
+FormKey: ADE42A:Requiem.esp
+EditorID: REQ_ArmorBonus_Heavy_Vigilant_Effect
+Name:
+  TargetLanguage: English
+  Value: Stendarr's Justice
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Vigilant armor is blessed by an acolyte of Stendarr to protect the righteous from the abominations of Oblivion. Thus, daedra deal <mag>% less damage to you (12% per piece).
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

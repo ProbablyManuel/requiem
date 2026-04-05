@@ -31,7 +31,7 @@ namespace Reqtificator.Transformers.LeveledCharacters
         {
             if (input.Entries is null)
             {
-                return ImmutableList<ILeveledNpcEntryGetter>.Empty;
+                return [];
             }
 
             if (!IsCompactLeveledList(input))

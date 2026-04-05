@@ -1,0 +1,34 @@
+FormKey: AD3AFA:Requiem.esp
+MajorRecordFlagsRaw: 134217728
+EditorID: REQ_Chest_GlassGauntlets_Morthal
+SkyrimMajorRecordFlags:
+- 0x8000000
+VirtualMachineAdapter:
+  Scripts:
+  - Name: AA000XarrianLockBreakScriptNormal
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Unarmed
+      Object: 0001F4:Skyrim.esm
+ObjectBounds:
+  First: -68, -24, 0
+  Second: 68, 24, 32
+Name:
+  TargetLanguage: English
+  Value: Jarl's Chest
+Model:
+  File: Furniture\Noble\NobleChest01.nif
+  Data: 0x020000000000000000000000
+Items:
+- Item:
+    Item: 01393A:Skyrim.esm
+    Count: 1
+- Item:
+    Item: 100E8A:Skyrim.esm
+    Count: 7
+Flags:
+- AllowSoundsWhenAnimation
+OpenSound: 0E3CB8:Skyrim.esm
+CloseSound: 0E3CB9:Skyrim.esm
+MajorFlags:
+- NavMeshGenerationBoundingBox

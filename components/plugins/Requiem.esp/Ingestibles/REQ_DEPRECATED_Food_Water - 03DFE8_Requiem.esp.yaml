@@ -1,0 +1,25 @@
+FormKey: 03DFE8:Requiem.esp
+EditorID: REQ_DEPRECATED_Food_Water
+ObjectBounds:
+  First: -8, -8, 0
+  Second: 8, 8, 27
+Name:
+  TargetLanguage: English
+  Value: Bottled Water
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Wine\WineBottle01A.nif
+  Data: 0x020000000000000000000000
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 1
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 0F33CB:Skyrim.esm
+  Data:
+    Magnitude: 5

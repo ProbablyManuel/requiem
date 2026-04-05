@@ -586,13 +586,13 @@ endif
 ; no summoning dragons in Apocrypha
 OversizedSummoningExceptionWorldSpaces.AddForm(DLC2ApocryphaWorld)
 
-; add perks
-game.GetPlayer().AddPerk(DLC2MatchingSet)
-game.GetPlayer().AddPerk(DLC2MatchingSetHeavy)
-game.GetPlayer().AddPerk(DLC2Summoner)
-game.GetPlayer().AddPerk(DLC2Smithing)
-
 ; Disabled by Requiem
+; add perks
+; game.GetPlayer().AddPerk(DLC2MatchingSet)
+; game.GetPlayer().AddPerk(DLC2MatchingSetHeavy)
+; game.GetPlayer().AddPerk(DLC2Summoner)
+; game.GetPlayer().AddPerk(DLC2Smithing)
+
 ; add armor and weapons to bandits
 ; LItemBanditBossBattleaxe.AddForm( DLC2NordicBattleaxe, 23, 1)
 ; LItemBanditBossGreatsword.AddForm( DLC2NordicGreatsword, 23, 1)

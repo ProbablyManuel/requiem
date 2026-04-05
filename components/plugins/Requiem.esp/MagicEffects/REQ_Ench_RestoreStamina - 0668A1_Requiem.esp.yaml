@@ -1,0 +1,23 @@
+FormKey: 0668A1:Requiem.esp
+EditorID: REQ_Ench_RestoreStamina
+Name:
+  TargetLanguage: English
+  Value: Restore Stamina
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 1
+EnchantShader: 092DEE:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Stamina recovers by <mag> per second.

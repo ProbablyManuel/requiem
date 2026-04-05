@@ -1,0 +1,23 @@
+FormKey: 42BB0A:Requiem.esp
+EditorID: REQ_Projectile_EnragingRune
+Name:
+  TargetLanguage: English
+  Value: Enraging Rune
+Model:
+  File: DLC02\Effects\RuneFrenzyProjectile.nif
+  Data: 0x020000000000000000000000
+Flags:
+- Explosion
+- AltTrigger
+Type: Lobber
+Speed: 1000
+Range: 10000
+ExplosionAltTriggerProximity: 150
+Explosion: 0177BA:Dragonborn.esm
+FadeDuration: 0.5
+CollisionRadius: 50
+RelaunchInterval: 0.25
+DecalData: 03D5E5:Dragonborn.esm
+CollisionLayer: 100F2F:Skyrim.esm
+MuzzleFlashModel: ''
+SoundLevel: 2

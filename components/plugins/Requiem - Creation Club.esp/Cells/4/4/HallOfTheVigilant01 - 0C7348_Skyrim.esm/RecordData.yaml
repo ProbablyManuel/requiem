@@ -1,0 +1,65 @@
+FormKey: 0C7348:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: HallOfTheVigilant01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Hall of the Vigilant
+Flags:
+- IsInteriorCell
+- PublicArea
+- ShowSky
+Lighting:
+  AmbientColor: '#002D3030'
+  DirectionalColor: '#00534B3E'
+  FogNearColor: '#00416578'
+  FogFar: 4000
+  DirectionalRotationZ: 150
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#00313032'
+    DirectionalXMinus: '#0028302D'
+    DirectionalYPlus: '#002D3230'
+    DirectionalYMinus: '#002D2D30'
+    DirectionalZPlus: '#00151615'
+    DirectionalZMinus: '#0044494A'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#002C4452'
+  FogMax: 1
+  Inherits:
+  - AmbientColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+LightingTemplate: 0A1196:Skyrim.esm
+WaterHeight: 0
+Location: 0C342D:Skyrim.esm
+Owner: 0B3292:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5853:Skyrim.esm
+AcousticSpace: 0C5B6B:Skyrim.esm
+EncounterZone: 0C3442:Skyrim.esm
+Music: 0B9DCE:Skyrim.esm
+ImageSpace: 059B60:Skyrim.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 000816:ccmtysse002-ve.esl
+  MajorRecordFlagsRaw: 3072
+  SkyrimMajorRecordFlags:
+  - 0x400
+  - InitiallyDisabled
+  Base: 000811:ccmtysse002-ve.esl
+  Owner: 000007:Skyrim.esm
+  LocationReference: 0C342D:Skyrim.esm
+  EnableParent:
+    Reference: 000014:Skyrim.esm
+    Flags:
+    - SetEnableStateToOppositeOfParent
+    Unknown: 0x000000
+  Placement:
+    Position: -1289.7642, -50.918083, 64.82847
+    Rotation: 0, 0, 1.5000005
+MajorFlags:
+- 0x40000

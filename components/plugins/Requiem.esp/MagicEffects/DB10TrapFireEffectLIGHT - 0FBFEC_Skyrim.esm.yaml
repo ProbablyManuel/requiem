@@ -1,0 +1,28 @@
+FormKey: 0FBFEC:Skyrim.esm
+EditorID: DB10TrapFireEffectLIGHT
+Name:
+  TargetLanguage: English
+  Value: Lingering Fire Damage
+Keywords:
+- 0FBFEF:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+ResistValue: ResistFire
+HitShader: 01B212:Skyrim.esm
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+ImpactData: 01C2AF:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

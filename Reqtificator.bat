@@ -1,3 +1,3 @@
 @echo off
-Reqtificator\app\Reqtificator.exe
+Reqtificator\app\Reqtificator.exe %*
 exit

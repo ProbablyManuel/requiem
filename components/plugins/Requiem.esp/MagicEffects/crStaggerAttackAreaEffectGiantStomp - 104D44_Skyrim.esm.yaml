@@ -1,0 +1,33 @@
+FormKey: 104D44:Skyrim.esm
+EditorID: crStaggerAttackAreaEffectGiantStomp
+Version2: 4
+VirtualMachineAdapter:
+  Scripts:
+  - Name: voicepusheffectscript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: PushForce
+      Data: 1
+Name:
+  TargetLanguage: English
+  Value: Stagger Area Attack
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Hostile
+- HideInUI
+- PowerAffectsMagnitude
+MagicSkill: Destruction
+TaperWeight: 1
+SpellmakingArea: 7
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Stagger
+Explosion: 072675:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

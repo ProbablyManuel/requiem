@@ -1,0 +1,24 @@
+FormKey: 06F6FE:Skyrim.esm
+EditorID: REQ_Creature_Chaurus_Spit1
+Name:
+  TargetLanguage: English
+  Value: Chaurus Poison
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F43:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 1
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+- NoDualCastModification
+Type: Poison
+CastType: FireAndForget
+TargetType: Aimed
+Effects:
+- BaseEffect: 06F6FD:Skyrim.esm
+  Data:
+    Magnitude: 0.3
+    Duration: 120

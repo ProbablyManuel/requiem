@@ -1,0 +1,33 @@
+FormKey: 03AD76:Skyrim.esm
+EditorID: vampireDust
+ObjectBounds:
+  First: -6, -6, -2
+  Second: 6, 6, 2
+Name:
+  TargetLanguage: English
+  Value: Vampire Dust
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\VampireDust.nif
+  Data: 0x0200000004000000000000008E5603C464647300604DDD5CC38821B064647300604DDD5C5D5CAE3364647300604DDD5CAC00E1FA64647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 250
+Weight: 0.2
+IngredientValue: 318
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 4F6D1D:Requiem.esp
+  Data:
+    Magnitude: 20
+    Duration: 4
+- BaseEffect: 20B30F:Requiem.esp
+  Data:
+    Duration: 10
+- BaseEffect: 03EB3D:Skyrim.esm
+  Data:
+    Duration: 15
+- BaseEffect: 109ADD:Skyrim.esm
+  Data:
+    Magnitude: 5

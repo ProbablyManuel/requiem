@@ -1,0 +1,35 @@
+FormKey: 06BC02:Skyrim.esm
+EditorID: BearClaws
+ObjectBounds:
+  First: -6, -5, -6
+  Second: 6, 5, 6
+Name:
+  TargetLanguage: English
+  Value: Claws
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\BearClaws.nif
+  Data: 0x020000000200000000000000E0C7B0CE64647300F9A10A398B6757CC64647300F9A10A39
+Value: 2
+Weight: 0.1
+IngredientValue: 2
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 20
+- BaseEffect: 03EB1F:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 60
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 60
+- BaseEffect: 073F2B:Skyrim.esm
+  Data:
+    Magnitude: 100
+    Duration: 5

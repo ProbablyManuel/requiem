@@ -1,0 +1,33 @@
+FormKey: 10201D:Skyrim.esm
+EditorID: REQ_WhitePhial_FortifyWeapons
+Name:
+  TargetLanguage: English
+  Value: The White Phial (Full)
+Keywords:
+- 08CDEC:Skyrim.esm
+Model:
+  File: Clutter\Quest\MS12WhitePhialRepaired.nif
+  Data: 0x0200000004000000000000008BB3A3C76464730030C19300B9FB95CF64647300BFFA25DAFD85DABA64647300262C333B05103E216464730030C19300
+PickUpSound: 03EDBD:Skyrim.esm
+PutDownSound: 03EDC0:Skyrim.esm
+Weight: 0.5
+Value: 50000
+Flags:
+- NoAutoCalc
+ConsumeSound: 0B6435:Skyrim.esm
+Effects:
+- BaseEffect: 03EB19:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 300
+- BaseEffect: 03EB1A:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 300
+- BaseEffect: 03EB1B:Skyrim.esm
+  Data:
+    Magnitude: 25
+    Duration: 300
+- BaseEffect: 0009D6:Update.esm
+  Data:
+    Duration: 1

@@ -12,7 +12,8 @@ armor = pd.read_excel(
         "Unnamed: 0",
         "Armor Rating",
         "Weight",
-        "Gold"]).convert_dtypes()
+        "Gold",
+        "Survival"]).convert_dtypes()
 armor_artifacts = pd.read_excel(
     "patcher_data/Armor.xlsx",
     sheet_name="Artifacts",
@@ -22,7 +23,8 @@ armor_artifacts = pd.read_excel(
         "Base",
         "Armor Rating",
         "Weight",
-        "Gold"]).convert_dtypes().dropna(how="all")
+        "Gold",
+        "Survival"]).convert_dtypes().dropna(how="all")
 armor_extras = pd.read_excel(
     "patcher_data/Armor.xlsx",
     sheet_name="Extras",
@@ -31,7 +33,8 @@ armor_extras = pd.read_excel(
         "Unnamed: 0",
         "Armor Rating",
         "Weight",
-        "Gold"]).convert_dtypes()
+        "Gold",
+        "Survival"]).convert_dtypes()
 armor_variants = pd.read_excel(
     "patcher_data/Armor.xlsx",
     sheet_name="Patches",
@@ -84,6 +87,16 @@ def get_weight(set_weight: int, part: str) -> float:
     raise ValueError(f'Unknown body part: {part}')
 
 
+def get_survival(set_survival: str, part: str) -> str:
+    if part in ("Head", "Feet", "Hands", "Body"):
+        if set_survival in ("Cold", "None", "Warm"):
+            return set_survival
+        raise ValueError(f'Unknown survival keyword: {set_survival}')
+    if part == "Shield":
+        return "None"
+    raise ValueError(f'Unknown body part: {part}')
+
+
 armor_stats = strict_dict()
 for armor_set, set_stats in armor.iterrows():
     for armor_part in ("Head", "Feet", "Hands", "Body", "Shield"):
@@ -93,6 +106,7 @@ for armor_set, set_stats in armor.iterrows():
             set_stats["Armor Rating"], armor_part)
         stats["Weight"] = get_weight(set_stats["Weight"], armor_part)
         stats["Gold"] = get_gold(set_stats["Gold"], armor_part)
+        stats["Survival"] = get_survival(set_stats["Survival"], armor_part)
         armor_stats[editor_id] = stats
 for extra, rows in armor_extras.iterrows():
     template, _, _ = extra.rpartition("_")
@@ -103,6 +117,8 @@ for extra, rows in armor_extras.iterrows():
         stats["Weight"] += rows["Weight"]
     if pd.notna(rows["Gold"]):
         stats["Gold"] += rows["Gold"]
+    if pd.notna(rows["Survival"]):
+        stats["Survival"] = rows["Survival"]
     armor_stats[extra] = stats
 for artifact, rows in armor_artifacts.iterrows():
     editor_id = f'Artifact_{artifact}'
@@ -113,6 +129,8 @@ for artifact, rows in armor_artifacts.iterrows():
         stats["Weight"] += rows["Weight"]
     if pd.notna(rows["Gold"]):
         stats["Gold"] = rows["Gold"]
+    if pd.notna(rows["Survival"]):
+        stats["Survival"] = rows["Survival"]
     armor_stats[editor_id] = stats
 for variant, rows in armor_variants.iterrows():
     for armor_part in ("Head", "Feet", "Hands", "Body", "Shield"):
@@ -125,6 +143,8 @@ for variant, rows in armor_variants.iterrows():
             stats["Weight"] += get_weight(rows["Weight"], armor_part)
         if pd.notna(rows["Gold"]):
             stats["Gold"] += get_gold(rows["Gold"], armor_part)
+        if pd.notna(rows["Survival"]):
+            stats["Survival"] = rows["Survival"]
         armor_stats[editor_id] = stats
 
 
@@ -133,4 +153,5 @@ with open("REQ_ArmorPatcher.txt", "w") as fh:
         fh.write(f'{armor}=')
         fh.write(f'{stats["Armor Rating"]:6f},')
         fh.write(f'{stats["Weight"]:.6f},')
-        fh.write(f'{stats["Gold"]:d}\n')
+        fh.write(f'{stats["Gold"]:d},')
+        fh.write(f'{stats["Survival"]:s}\n')

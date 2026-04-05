@@ -1,0 +1,22 @@
+FormKey: 0CB406:Skyrim.esm
+EditorID: REQ_OneHanded_PowerfulCharge
+Name:
+  TargetLanguage: English
+  Value: Powerful Charge
+Description:
+  TargetLanguage: English
+  Value: You have learned to perform a leaping power attack while sprinting.<br>[Able to do sprinting power attack]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 052D50:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: OneHanded
+  ComparisonValue: 50
+NumRanks: 1
+Playable: True

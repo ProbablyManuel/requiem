@@ -1,0 +1,50 @@
+FormKey: 01E112:Dragonborn.esm
+EditorID: REQ_NULL_DLC2CrBenthicLurkerWeapon
+Name:
+  TargetLanguage: English
+  Value: Giant Fishman Weapon
+Model:
+  File: Actors\DLC02\Giant_fishman\CharacterAssets\DLC2GiantFishmanWeapon.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F45:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 097786:Skyrim.esm
+Keywords:
+- 01E719:Skyrim.esm
+- 01E711:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 0C4E32:Skyrim.esm
+FirstPersonModel: 0461DB:Skyrim.esm
+AttackFailSound: 0E4CAC:Skyrim.esm
+EquipSound: 03C8A9:Skyrim.esm
+UnequipSound: 03C8AA:Skyrim.esm
+BasicStats:
+  Value: 1
+  Weight: 18
+  Damage: 60
+Data:
+  AnimationType: TwoHandSword
+  Unused: 0x000000
+  Speed: 0.6
+  Reach: 1.3
+  Flags:
+  - CantDrop
+  - NonPlayable
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1067869798
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: TwoHanded
+  Stagger: 1.5
+Critical:
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

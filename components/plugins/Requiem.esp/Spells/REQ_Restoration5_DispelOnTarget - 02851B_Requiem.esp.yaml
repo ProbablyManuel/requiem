@@ -1,0 +1,26 @@
+FormKey: 02851B:Requiem.esp
+EditorID: REQ_Restoration5_DispelOnTarget
+Name:
+  TargetLanguage: English
+  Value: Dispel on Target
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 800
+Flags:
+- ManualCostCalc
+- IgnoreResistance
+- NoAbsorbOrReflect
+ChargeTime: 0.1
+CastType: FireAndForget
+TargetType: TargetActor
+HalfCostPerk: 0C44CA:Skyrim.esm
+Effects:
+- BaseEffect: 028519:Requiem.esp
+  Data:
+    Magnitude: 100
+- BaseEffect: 2500BE:Requiem.esp
+  Data:
+    Magnitude: 35

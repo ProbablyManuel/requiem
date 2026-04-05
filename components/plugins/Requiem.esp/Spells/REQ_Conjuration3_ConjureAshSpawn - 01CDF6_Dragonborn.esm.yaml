@@ -1,0 +1,23 @@
+FormKey: 01CDF6:Dragonborn.esm
+EditorID: REQ_Conjuration3_ConjureAshSpawn
+Name:
+  TargetLanguage: English
+  Value: Conjure Ash Spawn
+MenuDisplayObject: 027BF9:Dragonborn.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 186
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.5
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 24
+HalfCostPerk: 0C44BC:Skyrim.esm
+Effects:
+- BaseEffect: 01CDF7:Dragonborn.esm
+  Data:
+    Duration: 8

@@ -1,0 +1,23 @@
+FormKey: 268D59:Requiem.esp
+EditorID: REQ_Effect_animalAllegiance01FortifyHealthFFSelf
+Name:
+  TargetLanguage: English
+  Value: Predator's Resilience
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 046B99:Skyrim.esm
+- AD393A:Requiem.esp
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 5
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: The forces of nature grant you the resilience of a bear for as long as your Thu'um lasts. Your health is therefore increased by <mag>.

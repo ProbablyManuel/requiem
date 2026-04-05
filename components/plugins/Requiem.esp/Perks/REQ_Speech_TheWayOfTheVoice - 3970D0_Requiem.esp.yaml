@@ -1,0 +1,25 @@
+FormKey: 3970D0:Requiem.esp
+EditorID: REQ_Speech_TheWayOfTheVoice
+Name:
+  TargetLanguage: English
+  Value: The Way of the Voice
+Description:
+  TargetLanguage: English
+  Value: You've meditated thoroughly, and acquired vast insights into the Way of the Voice. <br> Thus, you can call upon the power of your Thu'um rapidly once each day.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 02D515:Skyrim.esm
+  ComparisonValue: 200
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0D02C5:Requiem.esp
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkAbilityEffect
+  Ability: AE3B56:Requiem.esp

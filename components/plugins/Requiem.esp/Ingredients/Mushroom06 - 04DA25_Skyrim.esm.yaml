@@ -1,0 +1,38 @@
+FormKey: 04DA25:Skyrim.esm
+EditorID: Mushroom06
+Version2: 3
+ObjectBounds:
+  First: -13, -9, -13
+  Second: 13, 9, 13
+Name:
+  TargetLanguage: English
+  Value: Blisterwort
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Plants\Mushroom06.nif
+  Data: 0x020000000200000000000000B1CD956A646473004E28BE12A546228F646473004E28BE12
+PickUpSound: 0BAD13:Skyrim.esm
+PutDownSound: 0519D1:Skyrim.esm
+Value: 12
+Weight: 0.2
+IngredientValue: 12
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03A2C6:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 10
+- BaseEffect: 073F29:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 20
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 1.5
+    Duration: 10
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 30

@@ -1,0 +1,57 @@
+FormKey: 0640B3:Skyrim.esm
+EditorID: REQ_Conjuration_MysticBinding
+Name:
+  TargetLanguage: English
+  Value: Mystic Binding
+Description:
+  TargetLanguage: English
+  Value: You've become very skilled in binding weapon-shaped daedra from Oblivion. <br> Thereby, bound weapons are stronger and longer-lasting. Bound arrows will penetrate armor more easily.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0F2CA7:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Conjuration
+  ComparisonValue: 25
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 0211EC:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 0211ED:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 0211EB:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 01CE06:Dragonborn.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 2

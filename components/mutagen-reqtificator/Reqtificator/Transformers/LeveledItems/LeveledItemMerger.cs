@@ -9,6 +9,7 @@ namespace Reqtificator.Transformers.LeveledItems
 {
     internal class LeveledItemMerger : ILeveledListMerger<LeveledItem, ILeveledItemGetter, ILeveledItemEntryGetter>
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0305:Simplify collection initialization", Justification = "Not simpler")]
         public IReadOnlyList<LeveledListMerging.LeveledListEntry> GetEntries(
             IReadOnlyList<ILeveledItemEntryGetter> input)
         {

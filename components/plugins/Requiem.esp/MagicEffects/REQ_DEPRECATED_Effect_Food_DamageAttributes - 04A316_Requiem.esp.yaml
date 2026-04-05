@@ -1,0 +1,35 @@
+FormKey: 04A316:Requiem.esp
+EditorID: REQ_DEPRECATED_Effect_Food_DamageAttributes
+Name:
+  TargetLanguage: English
+  Value: Weak Stomach
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Detrimental
+- NoDuration
+- NoArea
+SecondActorValueWeight: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+  Type: DualValueModifier
+CastType: FireAndForget
+SecondActorValue: Magicka
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Its raw taste is revolting to anyone but those with a strong stomach.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 4CF31E:Requiem.esp
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 02C37B:Skyrim.esm

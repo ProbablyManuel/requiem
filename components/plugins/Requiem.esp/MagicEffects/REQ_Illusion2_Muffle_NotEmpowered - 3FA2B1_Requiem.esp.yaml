@@ -1,0 +1,29 @@
+FormKey: 3FA2B1:Requiem.esp
+EditorID: REQ_Illusion2_Muffle_NotEmpowered
+Name:
+  TargetLanguage: English
+  Value: Not Empowered
+Flags:
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+TaperWeight: 1
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: If not empowered, the caster can only move at walking speed.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: EffectWasDualCastConditionData
+    RunOnType: Target

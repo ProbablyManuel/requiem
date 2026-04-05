@@ -5,14 +5,13 @@ using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Weapons;
 using Xunit;
-using KeywordList = Noggog.ExtendedList<Mutagen.Bethesda.Plugins.IFormLinkGetter<Mutagen.Bethesda.Skyrim.IKeywordGetter>>;
 
 namespace ReqtificatorTest.Transformers.Weapons
 {
     public class WeaponMeleeRangeScalingTest
     {
         private readonly WeaponAnimationType[] _meleeTypes =
-        {
+        [
             WeaponAnimationType.HandToHand,
             WeaponAnimationType.OneHandAxe,
             WeaponAnimationType.OneHandDagger,
@@ -20,14 +19,14 @@ namespace ReqtificatorTest.Transformers.Weapons
             WeaponAnimationType.OneHandSword,
             WeaponAnimationType.TwoHandAxe,
             WeaponAnimationType.TwoHandSword
-        };
+        ];
 
         private readonly WeaponAnimationType[] _ignoredTypes =
-        {
+        [
             WeaponAnimationType.Bow,
             WeaponAnimationType.Crossbow,
             WeaponAnimationType.Staff
-        };
+        ];
 
         private readonly Weapon.TranslationMask _verificationMask = new(defaultOn: true)
         {
@@ -49,7 +48,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Reach = 10.0f
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -74,7 +73,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Reach = 10.0f
                     },
-                    Keywords = new KeywordList { otherKeyword }
+                    Keywords = [otherKeyword]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -98,7 +97,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Reach = 10.0f
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.AlreadyReqtified }
+                    Keywords = [otherKeyword, Keywords.AlreadyReqtified]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -122,7 +121,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Reach = 10.0f
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.NoWeaponReachRescaling }
+                    Keywords = [otherKeyword, Keywords.NoWeaponReachRescaling]
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
@@ -146,7 +145,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                         AnimationType = weaponType,
                         Reach = 10.0f
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     Template = new FormLinkNullable<IWeaponGetter>(FormKey.Factory("ABCDEF:Requiem.esp"))
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));

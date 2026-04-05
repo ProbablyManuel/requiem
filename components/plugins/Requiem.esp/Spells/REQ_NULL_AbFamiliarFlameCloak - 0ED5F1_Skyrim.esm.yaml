@@ -1,0 +1,23 @@
+FormKey: 0ED5F1:Skyrim.esm
+EditorID: REQ_NULL_AbFamiliarFlameCloak
+Name:
+  TargetLanguage: English
+  Value: Familiar Flame Cloak
+MenuDisplayObject: 0435A5:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Type: Ability
+Effects:
+- BaseEffect: 024314:Skyrim.esm
+  Data:
+    Magnitude: 100
+- BaseEffect: 064459:Skyrim.esm
+  Data:
+    Magnitude: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: NotEqualTo
+    Data:
+      MutagenObjectType: IsInCombatConditionData

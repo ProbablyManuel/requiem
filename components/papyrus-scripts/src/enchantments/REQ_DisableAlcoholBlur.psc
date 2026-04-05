@@ -5,13 +5,13 @@ REQ_AlcoholEffectsPlayer Property controller Auto
 
 Event OnEffectStart(Actor akTarget, Actor akCaster)
 	If (akTarget == Game.GetPlayer())
-	    controller.UpdatePlayerAlcoholVisionPenalties()
+	    controller.UpdatePlayerAlcoholPenalties()
     EndIf
 EndEvent
 
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
     If (akTarget == Game.GetPlayer())
-        controller.UpdatePlayerAlcoholVisionPenalties()
+        controller.UpdatePlayerAlcoholPenalties()
     EndIf
 EndEvent

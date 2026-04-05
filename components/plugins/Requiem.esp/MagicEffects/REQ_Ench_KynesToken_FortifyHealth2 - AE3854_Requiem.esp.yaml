@@ -1,0 +1,27 @@
+FormKey: AE3854:Requiem.esp
+EditorID: REQ_Ench_KynesToken_FortifyHealth2
+Name:
+  TargetLanguage: English
+  Value: Fortify Health (Rank II)
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 357085:Requiem.esp
+Flags:
+- Recover
+- NoDuration
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Restoring Gildergreen without harming Eldergleam pleases Kyne. Health increases by <mag>. Most paralysis effects don't adversely affect you.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 01C48E:Skyrim.esm
+    Stage: 105
+  ComparisonValue: 1

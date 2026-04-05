@@ -1,0 +1,34 @@
+FormKey: 014CC5:Dawnguard.esm
+EditorID: REQ_Destruction2_IceSpike_Serana
+Name:
+  TargetLanguage: English
+  Value: Ice Spike
+MenuDisplayObject: 09DB72:Skyrim.esm
+EquipmentType: 013F42:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+BaseCost: 48
+Flags:
+- ManualCostCalc
+ChargeTime: 0.4
+CastType: FireAndForget
+TargetType: Aimed
+HalfCostPerk: 0C44BF:Skyrim.esm
+Effects:
+- BaseEffect: 01CEA2:Skyrim.esm
+  Data:
+    Magnitude: 25
+- BaseEffect: 0153D3:Skyrim.esm
+  Data:
+    Magnitude: 0.25
+- BaseEffect: 0B729F:Skyrim.esm
+  Data:
+    Magnitude: 30
+    Duration: 3
+- BaseEffect: 0F3932:Skyrim.esm
+  Data:
+    Duration: 1
+- BaseEffect: 223794:Requiem.esp
+  Data:
+    Magnitude: 25

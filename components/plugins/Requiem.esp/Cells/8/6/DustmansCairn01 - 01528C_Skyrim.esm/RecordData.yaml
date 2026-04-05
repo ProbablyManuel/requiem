@@ -1,0 +1,75 @@
+FormKey: 01528C:Skyrim.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: DustmansCairn01
+SkyrimMajorRecordFlags:
+- Compressed
+Name:
+  TargetLanguage: English
+  Value: Dustman's Cairn
+Flags:
+- IsInteriorCell
+- ShowSky
+Lighting:
+  AmbientColor: '#001F2730'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00010303'
+  FogNear: 340
+  FogFar: 14000
+  DirectionalFade: 1
+  FogPower: 1
+  AmbientColors:
+    DirectionalXPlus: '#0033291D'
+    DirectionalXMinus: '#002A291A'
+    DirectionalYPlus: '#002F2A1C'
+    DirectionalYMinus: '#002F271C'
+    DirectionalZPlus: '#0016130C'
+    DirectionalZMinus: '#005C5138'
+    Specular: '#00000000'
+    Scale: 1
+  FogFarColor: '#00010303'
+  FogMax: 1
+  LightFadeBegin: 5000
+  LightFadeEnd: 6000
+  Inherits:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - DirectionalRotation
+  - DirectionalFade
+  - ClipDistance
+  - FogPower
+  - FogMax
+LightingTemplate: 034566:Skyrim.esm
+WaterHeight: 0
+Location: 019173:Skyrim.esm
+SkyAndWeatherFromRegion: 0C5858:Skyrim.esm
+AcousticSpace: 01AA4D:Skyrim.esm
+EncounterZone: 03EC11:Skyrim.esm
+Music: 02D4C2:Skyrim.esm
+ImageSpace: 0A2687:Skyrim.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0ECD0F:Skyrim.esm
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: REQ_AddItems
+      Properties:
+      - MutagenObjectType: ScriptObjectListProperty
+        Name: Items
+        Objects:
+        - Name: ''
+          Object: 02D145:Requiem.esp
+  Base: 020671:Skyrim.esm
+  Lock:
+    Level: Expert
+    Unused: 0x000000
+    Unused2: 0x0000000000000000000000
+  LocationReference: 019173:Skyrim.esm
+  Placement:
+    Position: -3019.0063, 8418.947, -501.78165
+    Rotation: 5.688145, 0.08212647, 4.832995
+MajorFlags:
+- 0x40000

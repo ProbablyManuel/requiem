@@ -1,0 +1,25 @@
+FormKey: AE3B54:Requiem.esp
+EditorID: REQ_Trait_Physique_Argonian_Description
+Name:
+  TargetLanguage: English
+  Value: Lizard Folk
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Argonian scales increase armor rating by <80>. Argonian gills allow breathing underwater. Argonian webs increase swimming speed by <25>% while not wearing boots. Swimming consumes <75>% less stamina.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

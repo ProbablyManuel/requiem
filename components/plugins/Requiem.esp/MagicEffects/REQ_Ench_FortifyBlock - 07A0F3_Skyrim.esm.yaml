@@ -1,0 +1,23 @@
+FormKey: 07A0F3:Skyrim.esm
+EditorID: REQ_Ench_FortifyBlock
+Name:
+  TargetLanguage: English
+  Value: Fortify Block
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 074F5C:Skyrim.esm
+Flags:
+- Recover
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 14
+EnchantShader: 092DEE:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: BlockModifier
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Blocking absorbs <mag>% more damage.

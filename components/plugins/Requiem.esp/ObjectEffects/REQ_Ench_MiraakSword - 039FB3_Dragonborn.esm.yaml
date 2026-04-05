@@ -1,0 +1,34 @@
+FormKey: 039FB3:Dragonborn.esm
+EditorID: REQ_Ench_MiraakSword
+Name:
+  TargetLanguage: English
+  Value: Miraak's Sword Enchantment
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+TargetType: Touch
+EnchantType: Enchantment
+Effects:
+- BaseEffect: AE38C2:Requiem.esp
+  Data:
+    Duration: 10
+- BaseEffect: 07809B:Skyrim.esm
+  Data:
+    Magnitude: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Data:
+      MutagenObjectType: HasKeywordConditionData
+      Keyword: 0F23C5:Skyrim.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: HasMagicEffectKeywordConditionData
+      Keyword: 357085:Requiem.esp
+    ComparisonValue: 1
+- BaseEffect: AE3886:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 10

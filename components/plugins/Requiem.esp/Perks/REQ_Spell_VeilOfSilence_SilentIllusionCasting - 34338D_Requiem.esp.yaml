@@ -1,0 +1,50 @@
+FormKey: 34338D:Requiem.esp
+EditorID: REQ_Spell_VeilOfSilence_SilentIllusionCasting
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Hidden: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0F2CA9:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C3:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C4:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C5:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: SpellHasCastingPerkConditionData
+        Perk: 0C44C6:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSpellCastingSoundEvent
+  PerkConditionTabCount: 2
+  Value: 0

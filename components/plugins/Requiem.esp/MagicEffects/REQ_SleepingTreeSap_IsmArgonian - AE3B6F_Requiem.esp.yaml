@@ -1,0 +1,42 @@
+FormKey: AE3B6F:Requiem.esp
+EditorID: REQ_SleepingTreeSap_IsmArgonian
+VirtualMachineAdapter:
+  Scripts:
+  - Name: dunSleepingTreeSapDruggedEffect
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: dunSleepingTreeCampISMD
+      Object: 0E3CBC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Sleeping Tree Sap ISM
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AE3B36:Requiem.esp
+Flags:
+- DispelWithKeywords
+- NoMagnitude
+- NoArea
+- HideInUI
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 013740:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsRaceConditionData
+    Race: 08883A:Skyrim.esm
+  ComparisonValue: 1

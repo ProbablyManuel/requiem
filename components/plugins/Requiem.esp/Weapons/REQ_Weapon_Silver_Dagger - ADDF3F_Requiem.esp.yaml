@@ -1,0 +1,50 @@
+FormKey: ADDF3F:Requiem.esp
+EditorID: REQ_Weapon_Silver_Dagger
+ObjectBounds:
+  First: -6, -9, -1
+  Second: 6, 27, 1
+Name:
+  TargetLanguage: English
+  Value: Silver Dagger
+Model:
+  File: PrvtI\silver\silverdagger.nif
+  Data: 0x020000000000000000000000
+EquipmentType: 013F42:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 018401:Skyrim.esm
+Keywords:
+- 01E713:Skyrim.esm
+- 08F958:Skyrim.esm
+- 10AA1A:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: ADDF3E:Requiem.esp
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03CED9:Skyrim.esm
+UnequipSound: 03CEDB:Skyrim.esm
+BasicStats:
+  Value: 35
+  Weight: 2.5
+  Damage: 5
+Data:
+  AnimationType: OneHandDagger
+  Unused: 0x000000
+  Speed: 1.3
+  Reach: 0.7
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1056964608
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+Critical:
+  Damage: 2
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Silent

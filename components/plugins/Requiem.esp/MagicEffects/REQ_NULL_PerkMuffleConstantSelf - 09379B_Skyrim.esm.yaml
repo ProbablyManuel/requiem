@@ -1,0 +1,32 @@
+FormKey: 09379B:Skyrim.esm
+EditorID: REQ_NULL_PerkMuffleConstantSelf
+Name:
+  TargetLanguage: English
+  Value: Muffle
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- Recover
+- DispelWithKeywords
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+- Painless
+BaseCost: 6
+TaperWeight: 1
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: MovementNoiseMult
+DualCastScale: 1
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: You move more quietly.

@@ -1,0 +1,44 @@
+FormKey: 02C46C:Dragonborn.esm
+EditorID: DLC2EnchShockDamageFFContact50
+Name:
+  TargetLanguage: English
+  Value: Shock Damage
+MenuDisplayObject: 09FA64:Skyrim.esm
+Keywords:
+- 01CEAF:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 7
+ResistValue: ResistShock
+HitShader: 057C67:Skyrim.esm
+EnchantShader: 059EDA:Skyrim.esm
+SecondActorValueWeight: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+  Type: DualValueModifier
+Projectile: 02F773:Skyrim.esm
+CastType: FireAndForget
+TargetType: Touch
+SecondActorValue: Magicka
+ImpactData: 038B05:Skyrim.esm
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: <50>% chance for each element of fire, frost, and shock to deal <mag> damage.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 50
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsActorConditionData
+    RunOnType: Target
+  ComparisonValue: 1

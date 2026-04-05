@@ -1,0 +1,21 @@
+FormKey: 000882:ccqdrsse001-survivalmode.esl
+EditorID: Survival_FreezingWaterDamage
+Name:
+  TargetLanguage: English
+  Value: Freezing Water
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Freezing water is slowly damaging you.
+BaseCost: 821
+Type: Ability
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 00084F:ccqdrsse001-survivalmode.esl
+  Data:
+    Magnitude: 5
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsSwimmingConditionData
+    ComparisonValue: 1

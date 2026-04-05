@@ -1,0 +1,25 @@
+FormKey: AE3B28:Requiem.esp
+EditorID: REQ_Trait_Heritage_Altmer_Description
+Name:
+  TargetLanguage: English
+  Value: Cultured People
+MenuDisplayObject: 0435A5:Skyrim.esm
+Flags:
+- NoDuration
+- NoMagnitude
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Spells cost <20>% less magicka. Worn enchantments are <10>% stronger. Imbibed potions are <15>% stronger.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 000007:Skyrim.esm
+  ComparisonValue: 1

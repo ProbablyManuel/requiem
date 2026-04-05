@@ -1,0 +1,46 @@
+FormKey: 03AF9E:Skyrim.esm
+EditorID: REQ_TwoHanded_Cleave
+Name:
+  TargetLanguage: English
+  Value: Cleave
+Description:
+  TargetLanguage: English
+  Value: Your power attacks are truly devastating and can cut down multiple foes with a single sweeping blow.<br>[Able to do sideways power attack that hits multiple targets]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: TwoHanded
+  ComparisonValue: 75
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0CB407:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 052D52:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsAttackTypeConditionData
+        Keyword: 0914E7:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: IsWeaponSkillTypeConditionData
+        ActorValue: TwoHanded
+      ComparisonValue: 1
+  EntryPoint: SetSweepAttack
+  PerkConditionTabCount: 2
+  Value: 1

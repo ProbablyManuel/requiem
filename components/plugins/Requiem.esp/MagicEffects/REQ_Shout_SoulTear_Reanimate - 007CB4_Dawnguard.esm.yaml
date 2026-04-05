@@ -1,0 +1,42 @@
+FormKey: 007CB4:Dawnguard.esm
+EditorID: REQ_Shout_SoulTear_Reanimate
+Name:
+  TargetLanguage: English
+  Value: Reanimate
+MenuDisplayObject: 1097CD:Skyrim.esm
+Keywords:
+- 02482B:Skyrim.esm
+- 068391:Requiem.esp
+- 3FCA4C:Requiem.esp
+- 412EDF:Requiem.esp
+Flags:
+- Recover
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Reanimate
+CastType: FireAndForget
+TargetType: TargetActor
+DualCastScale: 1
+Sounds:
+- Sound: 03F269:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03F2B1:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Reanimate a powerful dead body to fight for you for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 06F6FB:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasBeenEatenConditionData

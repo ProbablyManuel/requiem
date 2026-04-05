@@ -1,0 +1,29 @@
+FormKey: 5372F2:Requiem.esp
+EditorID: REQ_Illusion4_ShadowSimulacrum_Cloak
+Name:
+  TargetLanguage: English
+  Value: Cloak
+MenuDisplayObject: 1097CD:Skyrim.esm
+Flags:
+- NoHitEvent
+- HideInUI
+- PowerAffectsDuration
+- Painless
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 5372F4:Requiem.esp
+CastType: FireAndForget
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 4EA705:Requiem.esp

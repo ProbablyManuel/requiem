@@ -1,0 +1,27 @@
+FormKey: 0FFA03:Skyrim.esm
+EditorID: REQ_Alch_RestoreHealthComplete
+Name:
+  TargetLanguage: English
+  Value: Restore Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 042503:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.01
+HitShader: 012FD9:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+HitEffectArt: 03F1B4:Skyrim.esm
+DualCastScale: 1
+Sounds:
+- Type: OnHit
+  Sound: 0CD671:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: This powerful elixir is capable of restoring the imbiber's health completely within the blink of an eye and even affects the undead.

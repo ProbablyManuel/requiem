@@ -1,0 +1,26 @@
+FormKey: ACBFFD:Requiem.esp
+Flags:
+  Flags:
+  - Goodbye
+  - Random
+PreviousDialog: 064919:Skyrim.esm
+FavorLevel: None
+ResponseData: 0648F9:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 12
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 03372B:Skyrim.esm
+  ComparisonValue: 380
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 03372B:Skyrim.esm
+  ComparisonValue: 440

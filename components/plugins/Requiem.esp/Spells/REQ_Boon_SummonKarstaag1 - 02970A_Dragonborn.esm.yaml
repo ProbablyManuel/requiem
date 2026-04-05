@@ -1,0 +1,24 @@
+FormKey: 02970A:Dragonborn.esm
+EditorID: REQ_Boon_SummonKarstaag1
+Name:
+  TargetLanguage: English
+  Value: Summon Karstaag
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 025BEE:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+- NoDualCastModification
+Type: Power
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 24
+Effects:
+- BaseEffect: 02970C:Dragonborn.esm
+  Data:
+    Duration: 120
+- BaseEffect: 025E14:Dragonborn.esm
+  Data: {}

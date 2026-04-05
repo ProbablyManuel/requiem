@@ -1,0 +1,36 @@
+FormKey: 008B30:Dawnguard.esm
+EditorID: DLC1CrystalSoulDrainEffect
+Version2: 7
+Name:
+  TargetLanguage: English
+  Value: Drain Effect To Look For Targets
+MenuDisplayObject: 10FEF4:Skyrim.esm
+Flags:
+- NoDuration
+- NoArea
+- FXPersist
+- NoRecast
+- PowerAffectsMagnitude
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 008B2F:Dawnguard.esm
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 014DC5:Dawnguard.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThan
+  Data:
+    MutagenObjectType: GetActorValuePercentConditionData
+    ActorValue: Health
+  ComparisonValue: 0.25
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsBleedingOutConditionData

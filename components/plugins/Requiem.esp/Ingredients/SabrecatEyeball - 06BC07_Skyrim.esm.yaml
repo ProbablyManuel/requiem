@@ -1,0 +1,35 @@
+FormKey: 06BC07:Skyrim.esm
+EditorID: SabrecatEyeball
+ObjectBounds:
+  First: -1, -1, -1
+  Second: 1, 1, 1
+Name:
+  TargetLanguage: English
+  Value: Sabre Cat Eye
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SabrecatEye.nif
+  Data: 0x020000000200000000000000A7714D14646473007BF413290D726D51646473007BF41329
+PickUpSound: 0FC21E:Skyrim.esm
+Value: 2
+Weight: 0.1
+IngredientValue: 2
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 1.5
+    Duration: 20
+- BaseEffect: 073F26:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+- BaseEffect: 03A2B6:Skyrim.esm
+  Data:
+    Magnitude: 3
+- BaseEffect: 03EB15:Skyrim.esm
+  Data:
+    Magnitude: 0.5
+    Duration: 20

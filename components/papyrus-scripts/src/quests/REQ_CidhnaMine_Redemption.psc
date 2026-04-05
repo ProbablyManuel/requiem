@@ -10,7 +10,8 @@ auto STATE waitingForPlayer
             Bool correctstate = CidhnaMineEscape.IsStageDone(70)
             correctstate = correctstate || CidhnaMineEscape.IsStageDone(230)
 			If (CidhnaMineEscape.IsRunning() && correctstate)
-				Game.IncrementStat("Total Lifetime Bounty", -6000)
+				Int CidhnaBounty = 1000 + Game.GetGameSettingInt("iCrimeGoldEscape")
+				Game.IncrementStat("Total Lifetime Bounty", -CidhnaBounty)
 				GoToState("hasBeenTriggered")
 			EndIf
 		EndIf

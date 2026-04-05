@@ -1,0 +1,37 @@
+FormKey: 0A9195:Skyrim.esm
+EditorID: CritterBeeIngredient
+Version2: 14
+ObjectBounds:
+  First: -5, -5, 1
+  Second: 4, 8, 8
+Name:
+  TargetLanguage: English
+  Value: Bee
+Keywords:
+- 08CDEB:Skyrim.esm
+Model:
+  File: Critters\Bee\BeeIngredient.nif
+  Data: 0x020000000300000000000000E51FF8D66464730038973CEA0F1167356464730038973CEA958ABF116464730038973CEA
+PickUpSound: 100527:Skyrim.esm
+Value: 3
+Weight: 0.1
+IngredientValue: 3
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 03EB16:Skyrim.esm
+  Data:
+    Magnitude: 0.5
+    Duration: 20
+- BaseEffect: 073F23:Skyrim.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+- BaseEffect: 03EB08:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300
+- BaseEffect: 073F2F:Skyrim.esm
+  Data:
+    Magnitude: 3
+    Duration: 30

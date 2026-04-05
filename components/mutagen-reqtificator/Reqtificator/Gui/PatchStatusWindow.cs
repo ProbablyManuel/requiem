@@ -8,6 +8,7 @@ namespace Reqtificator.Gui
     /// <summary>
     /// Interaction logic for PatchingFinishedWindow.xaml
     /// </summary>
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Maintainability", "CA1515:Consider making public types internal", Justification = "Accessibility modifiers are defined by the generated class")]
     public partial class PatchStatusWindow : Window
     {
         // https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowlongptra
@@ -31,7 +32,7 @@ namespace Reqtificator.Gui
 
         private void HideWindowMenu(object? _, EventArgs e)
         {
-            var hwnd = new WindowInteropHelper(this).Handle;
+            nint hwnd = new WindowInteropHelper(this).Handle;
             int styleWithoutWindowMenu = GetWindowLongPtr(hwnd, GWL_STYLE) & ~WS_SYSMENU;
             _ = SetWindowLongPtr(hwnd, GWL_STYLE, styleWithoutWindowMenu);
         }

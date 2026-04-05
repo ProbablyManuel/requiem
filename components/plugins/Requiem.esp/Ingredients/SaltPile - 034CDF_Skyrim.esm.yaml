@@ -1,0 +1,37 @@
+FormKey: 034CDF:Skyrim.esm
+EditorID: SaltPile
+ObjectBounds:
+  First: -6, -6, -4
+  Second: 6, 6, 1
+Name:
+  TargetLanguage: English
+  Value: Salt
+Keywords:
+- 08CDEB:Skyrim.esm
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Ingredients\SaltPile.nif
+  Data: 0x0200000004000000000000008E5603C464647300604DDD5CC38821B064647300604DDD5C43B9D3A464647300604DDD5CF9BEC0FE64647300604DDD5C
+PickUpSound: 0FC21F:Skyrim.esm
+Value: 5
+Weight: 0.2
+IngredientValue: 5
+Flags:
+- NoAutoCalculation
+Effects:
+- BaseEffect: 073F51:Skyrim.esm
+  Data:
+    Magnitude: 1
+    Duration: 30
+- BaseEffect: 03EB28:Skyrim.esm
+  Data:
+    Magnitude: 4
+    Duration: 60
+- BaseEffect: 073F25:Skyrim.esm
+  Data:
+    Magnitude: 50
+    Duration: 5
+- BaseEffect: 03EB07:Skyrim.esm
+  Data:
+    Magnitude: 5
+    Duration: 300

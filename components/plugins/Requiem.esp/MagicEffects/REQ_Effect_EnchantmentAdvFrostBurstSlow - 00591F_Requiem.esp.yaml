@@ -1,0 +1,35 @@
+FormKey: 00591F:Requiem.esp
+EditorID: REQ_Effect_EnchantmentAdvFrostBurstSlow
+Name:
+  TargetLanguage: English
+  Value: Slow
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 0B729E:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+ResistValue: ResistFrost
+TaperWeight: 1
+SpellmakingArea: 25
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeedMult
+CastType: FireAndForget
+TargetType: Touch
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectKeywordConditionData
+    Keyword: ADDDF2:Requiem.esp

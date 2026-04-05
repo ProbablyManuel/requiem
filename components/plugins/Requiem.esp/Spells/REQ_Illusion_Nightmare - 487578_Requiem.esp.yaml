@@ -1,0 +1,23 @@
+FormKey: 487578:Requiem.esp
+EditorID: REQ_Illusion_Nightmare
+Name:
+  TargetLanguage: English
+  Value: Nightmare
+MenuDisplayObject: 1097CD:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- ManualCostCalc
+- NoAbsorbOrReflect
+ChargeTime: 0.3
+CastType: FireAndForget
+TargetType: TargetActor
+Range: 100000
+HalfCostPerk: 0C44C4:Skyrim.esm
+Effects:
+- BaseEffect: 484DDC:Requiem.esp
+  Data:
+    Magnitude: 10
+    Duration: 30

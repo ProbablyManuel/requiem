@@ -1,0 +1,32 @@
+FormKey: 68CE21:Requiem.esp
+EditorID: REQ_Effect_KynesPeace01RestoreHealthFFSelfCure
+Name:
+  TargetLanguage: English
+  Value: Kyne's Grace
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- AD393A:Requiem.esp
+Flags:
+- NoDuration
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: CureDisease
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsUndeadConditionData

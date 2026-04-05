@@ -1,0 +1,50 @@
+FormKey: 044BFD:Requiem.esp
+EditorID: REQ_Artifact_GoraksTrollGuttingKnife
+Name:
+  TargetLanguage: English
+  Value: Gorak's Troll Gutting Knife
+Model:
+  File: Weapons\Forsworn\ForswornSword.nif
+  Data: 0x020000000000000000000000
+ObjectEffect: 045C35:Skyrim.esm
+EnchantmentAmount: 5000
+EquipmentType: 013F44:Skyrim.esm
+BlockBashImpact: 0183FF:Skyrim.esm
+AlternateBlockMaterial: 0774C2:Skyrim.esm
+Keywords:
+- 01E711:Skyrim.esm
+- 01E719:Skyrim.esm
+- 08F958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Gorak must have taken this from a forsworn shaman or something like that - whatever the case, it seems to scare trolls terribly while also burning hit targets.
+ImpactDataSet: 013CAC:Skyrim.esm
+FirstPersonModel: 0CADE8:Skyrim.esm
+AttackFailSound: 03C730:Skyrim.esm
+EquipSound: 03C72E:Skyrim.esm
+UnequipSound: 03C72F:Skyrim.esm
+BasicStats:
+  Value: 100
+  Weight: 13
+  Damage: 10
+Data:
+  AnimationType: OneHandSword
+  Unused: 0x000000
+  Speed: 1
+  Reach: 1
+  NumProjectiles: 1
+  AnimationAttackMult: 1
+  Unknown2: 1061997773
+  RumbleLeftMotorStrength: 0.5
+  RumbleRightMotorStrength: 1
+  RumbleDuration: 0.33
+  Unknown3: 0x000000000000000000000000
+  Skill: OneHanded
+  Stagger: 0.75
+Critical:
+  Damage: 5
+  PercentMult: 1
+  Flags:
+  - OnDeath
+  Unused2: 0x000000
+DetectionSoundLevel: Normal

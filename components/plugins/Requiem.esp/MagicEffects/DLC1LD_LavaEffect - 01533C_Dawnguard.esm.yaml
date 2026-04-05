@@ -1,0 +1,26 @@
+FormKey: 01533C:Dawnguard.esm
+EditorID: DLC1LD_LavaEffect
+Name:
+  TargetLanguage: English
+  Value: Massive Fire Damage
+Keywords:
+- 015336:Dawnguard.esm
+Flags:
+- Hostile
+- Detrimental
+- DispelWithKeywords
+- NoArea
+- NoRecast
+- PowerAffectsMagnitude
+- NoHitEffect
+ResistValue: ResistFire
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''

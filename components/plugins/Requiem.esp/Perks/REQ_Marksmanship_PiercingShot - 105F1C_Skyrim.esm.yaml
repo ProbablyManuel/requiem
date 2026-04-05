@@ -1,0 +1,50 @@
+FormKey: 105F1C:Skyrim.esm
+EditorID: REQ_Marksmanship_PiercingShot
+Name:
+  TargetLanguage: English
+  Value: Piercing Shot
+Description:
+  TargetLanguage: English
+  Value: You've learned how to hit the weakest parts of armor.<br>[+50% armor penetration from ammunition]
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Archery
+  ComparisonValue: 45
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 07934A:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: HasPerkConditionData
+        Perk: 105F1E:Skyrim.esm
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: AD3979:Requiem.esp
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Flags:
+      - OR
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: AD3978:Requiem.esp
+      ComparisonValue: 1
+  EntryPoint: ModSpellMagnitude
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.5

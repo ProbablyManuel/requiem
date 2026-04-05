@@ -1,0 +1,28 @@
+FormKey: AE38E4:Requiem.esp
+EditorID: REQ_Ench_BolarsOathlade_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+Flags:
+- Hostile
+- Detrimental
+- NoDuration
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 1
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Deals <mag> magic damage to Thalmor. Killing Thalmor renews the Blades' oath.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 039F26:Skyrim.esm
+  ComparisonValue: 1

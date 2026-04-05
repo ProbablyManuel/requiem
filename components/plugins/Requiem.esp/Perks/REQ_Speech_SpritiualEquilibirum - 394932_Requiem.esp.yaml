@@ -1,0 +1,39 @@
+FormKey: 394932:Requiem.esp
+EditorID: REQ_Speech_SpritiualEquilibirum
+Name:
+  TargetLanguage: English
+  Value: Spiritual Equilibrium
+Description:
+  TargetLanguage: English
+  Value: You have been guided in meditating on the Thu'um.<br>Now your shouts linger, lasting longer than they did before.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0D02C5:Requiem.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetQuestCompletedConditionData
+    Quest: 02D515:Skyrim.esm
+  ComparisonValue: 1
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 046B99:Skyrim.esm
+      ComparisonValue: 1
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: EPMagic_SpellHasKeywordConditionData
+        Keyword: 412EDF:Requiem.esp
+  EntryPoint: ModSpellDuration
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 1.15

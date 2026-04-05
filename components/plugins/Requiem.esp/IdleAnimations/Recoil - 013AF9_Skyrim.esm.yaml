@@ -1,0 +1,25 @@
+FormKey: 013AF9:Skyrim.esm
+EditorID: Recoil
+FormVersion: 25
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown2: 6569
+  Data:
+    MutagenObjectType: IsPowerAttackingConditionData
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    ItemSource: Right
+  ComparisonValue: 7
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Data:
+    MutagenObjectType: GetEquippedItemTypeConditionData
+    ItemSource: Right
+  ComparisonValue: 12
+Filename: Actors\Character\Behaviors\0_Master.hkx
+AnimationEvent: recoilStart
+RelatedIdles:
+- 013AF8:Skyrim.esm
+- Null

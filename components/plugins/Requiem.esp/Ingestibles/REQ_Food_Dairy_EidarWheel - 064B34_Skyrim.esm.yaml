@@ -1,0 +1,28 @@
+FormKey: 064B34:Skyrim.esm
+EditorID: REQ_Food_Dairy_EidarWheel
+ObjectBounds:
+  First: -9, -9, 0
+  Second: 9, 9, 8
+Name:
+  TargetLanguage: English
+  Value: Eidar Cheese Wheel
+Keywords:
+- 08CDEA:Skyrim.esm
+Model:
+  File: Clutter\Food\CheeseWheel02A.nif
+  Data: 0x020000000200000000000000C4A2D1CF64647300B91482369B12670064647300B9148236
+Weight: 2
+Value: 16
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 0CAF94:Skyrim.esm
+Effects:
+- BaseEffect: AE371B:Requiem.esp
+  Data:
+    Magnitude: 1
+    Duration: 1200
+- BaseEffect: AE3716:Requiem.esp
+  Data: {}
+- BaseEffect: 002EE2:Update.esm
+  Data: {}

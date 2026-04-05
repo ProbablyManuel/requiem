@@ -6,15 +6,13 @@ using Reqtificator.StaticReferences;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.Weapons;
 using Xunit;
-using KeywordList =
-    Noggog.ExtendedList<Mutagen.Bethesda.Plugins.IFormLinkGetter<Mutagen.Bethesda.Skyrim.IKeywordGetter>>;
 
 namespace ReqtificatorTest.Transformers.Weapons
 {
     public class WeaponDamageScalingTest
     {
         private readonly WeaponAnimationType[] _meleeTypes =
-        {
+        [
             WeaponAnimationType.HandToHand,
             WeaponAnimationType.OneHandAxe,
             WeaponAnimationType.OneHandDagger,
@@ -22,23 +20,22 @@ namespace ReqtificatorTest.Transformers.Weapons
             WeaponAnimationType.OneHandSword,
             WeaponAnimationType.TwoHandAxe,
             WeaponAnimationType.TwoHandSword
-        };
+        ];
 
         private readonly WeaponAnimationType[] _rangedTypes =
-        {
+        [
             WeaponAnimationType.Bow,
             WeaponAnimationType.Crossbow
-        };
+        ];
 
         private readonly WeaponAnimationType[] _ignoredTypes =
-        {
+        [
             WeaponAnimationType.Staff
-        };
+        ];
 
         private readonly Weapon.TranslationMask _verificationMask = new(defaultOn: true)
         {
             BasicStats = new WeaponBasicStats.TranslationMask(defaultOn: true) { Damage = false },
-            Critical = new CriticalData.TranslationMask(defaultOn: true) { Damage = false }
         };
 
         [Fact]
@@ -55,16 +52,14 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 },
-                    Critical = new CriticalData { Damage = 2 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
                 result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
                 result.Record().Equals(input, _verificationMask).Should().BeTrue();
                 result.Record().BasicStats!.Damage.Should().Be((ushort)(input.BasicStats.Damage * 6));
-                result.Record().Critical!.Damage.Should().Be((ushort)(input.Critical.Damage * 6));
             }
         }
 
@@ -82,16 +77,14 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 },
-                    Critical = new CriticalData { Damage = 2 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
 
                 result.Should().BeOfType<Modified<Weapon, IWeaponGetter>>();
                 result.Record().Equals(input, _verificationMask).Should().BeTrue();
                 result.Record().BasicStats!.Damage.Should().Be((ushort)(input.BasicStats.Damage * 4));
-                result.Record().Critical!.Damage.Should().Be((ushort)(input.Critical.Damage * 4));
             }
         }
 
@@ -109,7 +102,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword },
+                    Keywords = [otherKeyword],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -132,7 +125,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.AlreadyReqtified },
+                    Keywords = [otherKeyword, Keywords.AlreadyReqtified],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));
@@ -155,7 +148,7 @@ namespace ReqtificatorTest.Transformers.Weapons
                     {
                         AnimationType = weaponType
                     },
-                    Keywords = new KeywordList { otherKeyword, Keywords.NoDamageRescaling },
+                    Keywords = [otherKeyword, Keywords.NoDamageRescaling],
                     BasicStats = new WeaponBasicStats { Damage = 5 }
                 };
                 var result = transformer.Process(new UnChanged<Weapon, IWeaponGetter>(input));

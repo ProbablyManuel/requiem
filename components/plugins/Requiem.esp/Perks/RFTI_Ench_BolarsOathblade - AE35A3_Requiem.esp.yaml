@@ -1,0 +1,27 @@
+FormKey: AE35A3:Requiem.esp
+EditorID: RFTI_Ench_BolarsOathblade
+Description:
+  TargetLanguage: English
+  Value: ''
+NumRanks: 1
+Playable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 1
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetInFactionConditionData
+        Faction: 039F26:Skyrim.esm
+      ComparisonValue: 1
+  - RunOnTabIndex: 2
+    Conditions:
+    - MutagenObjectType: ConditionFloat
+      Data:
+        MutagenObjectType: GetIsIDConditionData
+        Object: 0C1989:Skyrim.esm
+      ComparisonValue: 1
+  EntryPoint: ModSoulPercentCapturedToWeapon
+  PerkConditionTabCount: 3
+  Value: 0.2

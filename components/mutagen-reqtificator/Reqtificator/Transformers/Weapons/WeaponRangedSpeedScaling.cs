@@ -1,7 +1,6 @@
 ﻿using System;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.StaticReferences;
 
 namespace Reqtificator.Transformers.Weapons
@@ -33,7 +32,7 @@ namespace Reqtificator.Transformers.Weapons
             return record =>
             {
                 record.Data!.Speed = speed;
-                record.Keywords ??= new ExtendedList<IFormLinkGetter<IKeywordGetter>>();
+                record.Keywords ??= [];
                 if (record.Keywords.ContainsNot(keyword))
                 {
                     record.Keywords.Add(keyword);

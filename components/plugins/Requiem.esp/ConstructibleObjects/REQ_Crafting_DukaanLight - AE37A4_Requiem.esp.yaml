@@ -1,0 +1,16 @@
+FormKey: AE37A4:Requiem.esp
+EditorID: REQ_Crafting_DukaanLight
+Items:
+- Item:
+    Item: 0240FF:Dragonborn.esm
+    Count: 1
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    ItemOrList: 0240FF:Dragonborn.esm
+  ComparisonValue: 1
+CreatedObject: AE392B:Requiem.esp
+WorkbenchKeyword: AE378B:Requiem.esp
+CreatedObjectCount: 1

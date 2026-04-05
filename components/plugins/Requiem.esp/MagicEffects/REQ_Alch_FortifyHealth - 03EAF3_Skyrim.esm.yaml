@@ -1,0 +1,25 @@
+FormKey: 03EAF3:Skyrim.esm
+EditorID: REQ_Alch_FortifyHealth
+Name:
+  TargetLanguage: English
+  Value: Fortify Health
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 065A31:Skyrim.esm
+- 0F8A4E:Skyrim.esm
+Flags:
+- Recover
+- NoArea
+- PowerAffectsMagnitude
+BaseCost: 0.2
+HitShader: 04E220:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: Health
+  Association: 065A31:Skyrim.esm
+CastType: FireAndForget
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Health increases by <mag> for <dur> seconds.

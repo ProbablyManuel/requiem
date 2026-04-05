@@ -1,0 +1,45 @@
+FormKey: 0D5EB6:Skyrim.esm
+Flags:
+  Flags:
+  - Random
+  ResetHours: 3.999817
+PreviousDialog: 0D5E8D:Skyrim.esm
+FavorLevel: None
+Responses:
+- Emotion: Disgust
+  EmotionValue: 20
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: So you can cast a few spells. Am I supposed to be impressed?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 013AE3:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsVoiceTypeConditionData
+    VoiceTypeOrList: 013AD8:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetPCInFactionConditionData
+    Faction: 01F259:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    Faction: 02BE3B:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetPCMiscStatConditionData
+    MiscStat: SpellsLearned
+  ComparisonValue: 5

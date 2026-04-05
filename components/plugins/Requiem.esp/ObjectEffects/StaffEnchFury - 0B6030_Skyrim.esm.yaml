@@ -1,0 +1,23 @@
+FormKey: 0B6030:Skyrim.esm
+EditorID: StaffEnchFury
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: Fury
+EnchantmentCost: 92
+Flags:
+- NoAutoCalc
+CastType: FireAndForget
+EnchantmentAmount: 92
+TargetType: Aimed
+EnchantType: StaffEnchantment
+ChargeTime: 0.5
+Effects:
+- BaseEffect: 04DEE6:Skyrim.esm
+  Data:
+    Magnitude: 10
+    Duration: 5
+- BaseEffect: 026D7E:Skyrim.esm
+  Data:
+    Magnitude: 6
+    Duration: 30

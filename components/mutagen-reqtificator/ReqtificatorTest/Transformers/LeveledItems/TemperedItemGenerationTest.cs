@@ -3,7 +3,6 @@ using System.Collections.Immutable;
 using FluentAssertions;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Skyrim;
-using Noggog;
 using Reqtificator.Exceptions;
 using Reqtificator.Transformers;
 using Reqtificator.Transformers.LeveledItems;
@@ -23,10 +22,10 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_Really_Cool_Dagger_Quality1_H_fall",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new TemperedItemGeneration(ImmutableHashSet.Create(modKey));
@@ -55,10 +54,10 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_Really_Cool_Sword_Quality2_N_rise",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new TemperedItemGeneration(ImmutableHashSet.Create(modKey));
@@ -93,10 +92,10 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_Really_Cool_Warhammer_Quality3_D_const",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new TemperedItemGeneration(ImmutableHashSet.Create(modKey));
@@ -131,10 +130,10 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_this_record_has_no_tempering_qualifiers_and_will_be_ignored",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new TemperedItemGeneration(ImmutableHashSet.Create(modKey));
@@ -152,10 +151,10 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:ModWithoutTheFeature.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_Really_Cool_Warhammer_Quality3_D_const",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new TemperedItemGeneration(ImmutableHashSet.Create(modKey));
@@ -173,10 +172,10 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_Really_Cool_Warhammer_Quality3_H_unknownDistribution",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new TemperedItemGeneration(ImmutableHashSet.Create(modKey));
@@ -195,11 +194,11 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_Really_Cool_Warhammer_Quality3_D_const",
-                Entries = new ExtendedList<LeveledItemEntry>
-                {
+                Entries =
+                [
                     new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
                     new() {Data = new LeveledItemEntryData {Count = 1, Level = 1, Reference = itemRef1}},
-                }
+                ]
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new TemperedItemGeneration(ImmutableHashSet.Create(modKey));
@@ -216,7 +215,7 @@ namespace ReqtificatorTest.Transformers.LeveledItems
             var input = new LeveledItem(FormKey.Factory("123456:Requiem.esp"), SkyrimRelease.SkyrimSE)
             {
                 EditorID = "REQ_Really_Cool_Warhammer_Quality3_D_const",
-                Entries = new ExtendedList<LeveledItemEntry>()
+                Entries = []
             };
             var modKey = ModKey.FromFileName("Requiem.esp");
             var transformer = new TemperedItemGeneration(ImmutableHashSet.Create(modKey));

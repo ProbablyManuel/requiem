@@ -1,0 +1,22 @@
+FormKey: 0F3933:Skyrim.esm
+EditorID: REQ_Destruction_DeepFreeze
+Name:
+  TargetLanguage: English
+  Value: Deep Freeze
+Description:
+  TargetLanguage: English
+  Value: Your higher level ice spells are colder than Skyrim's most ferocious blizzards,<br>causing them to freeze foes with low resistance to frost.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasPerkConditionData
+    Perk: 0581EA:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Data:
+    MutagenObjectType: GetBaseActorValueConditionData
+    ActorValue: Destruction
+  ComparisonValue: 75
+NumRanks: 1
+Playable: True

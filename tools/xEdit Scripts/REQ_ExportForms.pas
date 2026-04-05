@@ -18,6 +18,7 @@ begin
   signatures.Add('ALCH');
   signatures.Add('ARMO');
   signatures.Add('INGR');
+  signatures.Add('LVLI');
   signatures.Add('MISC');
   signatures.Add('PERK');
   signatures.Add('SLGM');

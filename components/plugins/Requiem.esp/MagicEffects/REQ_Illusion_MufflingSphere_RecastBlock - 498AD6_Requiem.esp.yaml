@@ -1,0 +1,38 @@
+FormKey: 498AD6:Requiem.esp
+EditorID: REQ_Illusion_MufflingSphere_RecastBlock
+Name:
+  TargetLanguage: English
+  Value: Recast Block
+MenuDisplayObject: 109AC3:Skyrim.esm
+Flags:
+- Recover
+- NoMagnitude
+- FXPersist
+- HideInUI
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Illusion
+MinimumSkillLevel: 75
+SpellmakingArea: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+CastType: Concentration
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetPlayerTeammateConditionData
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasMagicEffectConditionData
+    MagicEffect: 498AD5:Requiem.esp
+  ComparisonValue: 1
