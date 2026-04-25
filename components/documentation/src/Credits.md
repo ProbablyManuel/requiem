@@ -23,6 +23,7 @@ Individual Contributions
 
 * [Fozar](https://next.nexusmods.com/profile/Fozar), [SonneUa](https://next.nexusmods.com/profile/SonneUa), and [Newrite](https://next.nexusmods.com/profile/Newrite) - [Requiem - Dragonborn Patch](https://www.nexusmods.com/skyrimspecialedition/mods/34829)
 * [Pamposzek](https://www.nexusmods.com/users/14780709) - Numerous text improvements to magic effects
+* [Noxcrab](https://www.nexusmods.com/profile/Noxcrab) - Numerous fixes and improvements
 * [JazzKiwifruit](https://www.nexusmods.com/users/16518979) - Numerous fixes related to armors, weapons, and smithing recipes
 * [IamPrettyUgly](https://www.nexusmods.com/users/191297574) - Initial draft of the continuous sun damage for vampires during the day
 
