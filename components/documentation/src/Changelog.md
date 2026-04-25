@@ -61,6 +61,7 @@ Bug Fixes
 * Cursed dremora items have a less exorbitant price.
 * Draugr don't use steel shields.
 * Vilkas consistently wields a Skyforge Steel Greatsword throughout the Companion's introduction. Farkas wields a battleaxe instead.
+* Silver arrows correctly show on the character's back.
 * Arcane Power clarifies it deals magic damage rather than truly irresistible damage.
 * The Charmed Necklace states that it prevents you from stumbling while drunk.
 * The total lifetime bounty is correctly adjusted after escaping from Cidhna Mine if other mods change the bounty values.
