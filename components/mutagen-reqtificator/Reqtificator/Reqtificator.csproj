@@ -2,11 +2,12 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net9.0-windows</TargetFramework>
+		<TargetFramework>net10.0-windows</TargetFramework>
 		<TargetPlatformIdentifier>windows</TargetPlatformIdentifier>
 		<Nullable>enable</Nullable>
 		<AnalysisMode>AllEnabledByDefault</AnalysisMode>
 		<UseWPF>true</UseWPF>
+		<CETCompat>false</CETCompat>
 		<StartupObject>Reqtificator.App</StartupObject>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 	</PropertyGroup>
@@ -14,7 +15,7 @@
     <ItemGroup>
         <PackageReference Include="Hocon.Configuration" Version="2.0.4" />
         <PackageReference Include="MdXaml" Version="1.27.0" />
-        <PackageReference Include="Mutagen.Bethesda" Version="0.49.0" />
+        <PackageReference Include="Mutagen.Bethesda" Version="0.54.4" />
         <PackageReference Include="Serilog" Version="4.2.0" />
         <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
         <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />

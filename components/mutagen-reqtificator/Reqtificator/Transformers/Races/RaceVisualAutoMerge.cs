@@ -53,7 +53,7 @@ namespace Reqtificator.Transformers.Races
             FacegenMainClamp = true,
             BodyData = new GenderedItem<BodyData.TranslationMask>(true, true),
             BodyPartData = true,
-            BehaviorGraph = new GenderedItem<Model.TranslationMask>(true, true),
+            BehaviorGraph = new GenderedItem<ModelBehavior.TranslationMask>(true, true),
             FaceFxPhonemes = true,
             HeadData = new GenderedItem<HeadData.TranslationMask>(true, true),
             ArmorRace = true
@@ -103,7 +103,7 @@ namespace Reqtificator.Transformers.Races
                    CheckGenderedField(r => r.SkeletalModel, CompareSimpleModel) &&
                    CheckGenderedField(r => r.DefaultHairColors, (x, y) => x.Equals(y)) &&
                    CheckGenderedField(r => r.BodyData, CompareBodyData) &&
-                   CheckGenderedField(r => r.BehaviorGraph, CompareSimpleModel) &&
+                   CheckGenderedField(r => r.BehaviorGraph, CompareBehaviorModel) &&
                    CheckGenderedField(r => r.HeadData, CompareHeadparts) &&
                    ComparePhonemes(reference.FaceFxPhonemes, other.FaceFxPhonemes);
         }
@@ -122,10 +122,15 @@ namespace Reqtificator.Transformers.Races
             {
                 return false;
             }
-            return CompareSimpleModel(reference.Model, other.Model);
+            return reference.Model.File.DataRelativePath.Path.Equals(other.Model.File.DataRelativePath.Path, StringComparison.Ordinal);
         }
 
         private static bool CompareSimpleModel(ISimpleModelGetter reference, ISimpleModelGetter other)
+        {
+            return reference.File.DataRelativePath.Path.Equals(other.File.DataRelativePath.Path, StringComparison.Ordinal);
+        }
+
+        private static bool CompareBehaviorModel(IModelBehaviorGetter reference, IModelBehaviorGetter other)
         {
             return reference.File.DataRelativePath.Path.Equals(other.File.DataRelativePath.Path, StringComparison.Ordinal);
         }

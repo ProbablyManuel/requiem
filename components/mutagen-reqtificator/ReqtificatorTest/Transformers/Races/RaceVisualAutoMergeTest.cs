@@ -61,11 +61,11 @@ namespace ReqtificatorTest.Transformers.Races
                 DefaultHairColors = new GenderedItem<IFormLinkGetter<IColorRecordGetter>>(Color1, Color2),
                 FacegenFaceClamp = 3.0f,
                 FacegenMainClamp = 5.0f,
-                BodyData = new GenderedItem<BodyData?>(new BodyData { Model = new Model { File = "male body" } },
-                    new BodyData { Model = new Model { File = "female body" } }),
+                BodyData = new GenderedItem<BodyData?>(new BodyData { Model = new ModelBodyTexture { File = "male body" } },
+                    new BodyData { Model = new ModelBodyTexture { File = "female body" } }),
                 BodyPartData = new FormLinkNullable<IBodyPartDataGetter>(BodyParts),
-                BehaviorGraph = new GenderedItem<Model?>(new Model { File = "male graph" },
-                    new Model { File = "female graph" }),
+                BehaviorGraph = new GenderedItem<ModelBehavior?>(new ModelBehavior { File = "male graph" },
+                    new ModelBehavior { File = "female graph" }),
                 FaceFxPhonemes = new FaceFxPhonemes
                 {
                     I = new Phoneme { B = 0.5f, D = 0.6f }
