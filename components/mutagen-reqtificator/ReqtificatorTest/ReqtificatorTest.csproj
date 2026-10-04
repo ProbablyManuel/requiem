@@ -24,6 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <!-- lets NuGet prune the vulnerable System.Drawing.Common 4.7.0 pulled in via Hocon (NU1904) -->
       <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
       <ProjectReference Include="..\Reqtificator\Reqtificator.csproj" />
     </ItemGroup>
