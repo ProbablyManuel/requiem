@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0-windows</TargetFramework>
+        <TargetFramework>net10.0-windows</TargetFramework>
         <TargetPlatformIdentifier>windows</TargetPlatformIdentifier>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
@@ -24,6 +24,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <!-- lets NuGet prune the vulnerable System.Drawing.Common 4.7.0 pulled in via Hocon (NU1904) -->
+      <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
       <ProjectReference Include="..\Reqtificator\Reqtificator.csproj" />
     </ItemGroup>
 
