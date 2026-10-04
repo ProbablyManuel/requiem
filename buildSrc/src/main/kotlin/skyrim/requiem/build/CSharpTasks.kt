@@ -2,6 +2,7 @@ package skyrim.requiem.build
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
+import org.gradle.api.file.FileTree
 import org.gradle.api.tasks.*
 import java.io.File
 
@@ -15,11 +16,19 @@ private fun runProcess(args: List<String>, workDir: File): Boolean {
 
 }
 
-//TODO: refine input parameters to avoid unnecessary re-executions after temp build subfolders are created
-open class CompileCSharpTask : DefaultTask() {
+abstract class CSharpSolutionTask : DefaultTask() {
 
-    @InputDirectory
+    @Internal
     lateinit var solutionFolder: File
+
+    // build outputs and IDE state (e.g. files locked by Visual Studio) must not be tracked as inputs
+    @get:InputFiles
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    val solutionSources: FileTree
+        get() = project.fileTree(solutionFolder) { exclude("**/.vs/**", "**/bin/**", "**/obj/**") }
+}
+
+open class CompileCSharpTask : CSharpSolutionTask() {
 
     @Input
     lateinit var projectName: String
@@ -34,13 +43,10 @@ open class CompileCSharpTask : DefaultTask() {
     }
 }
 
-open class PublishCSharpTask : DefaultTask() {
+open class PublishCSharpTask : CSharpSolutionTask() {
 
     @OutputDirectory
     lateinit var targetDirectory: File
-
-    @InputDirectory
-    lateinit var solutionFolder: File
 
     @Input
     lateinit var projectName: String
@@ -56,12 +62,10 @@ open class PublishCSharpTask : DefaultTask() {
     }
 }
 
-open class TestCSharpTask : DefaultTask() {
+open class TestCSharpTask : CSharpSolutionTask() {
 
     @Input
     var loglevel: String = "normal"
-    @InputDirectory
-    lateinit var solutionFolder: File
 
     @TaskAction
     fun taskAction() {
@@ -70,12 +74,10 @@ open class TestCSharpTask : DefaultTask() {
     }
 }
 
-open class CheckFormatCSharpTask : DefaultTask() {
+open class CheckFormatCSharpTask : CSharpSolutionTask() {
 
     @Input
     var loglevel: String = "normal"
-    @InputDirectory
-    lateinit var solutionFolder: File
 
     @TaskAction
     fun taskAction() {
@@ -84,12 +86,10 @@ open class CheckFormatCSharpTask : DefaultTask() {
     }
 }
 
-open class FormatCSharpTask : DefaultTask() {
+open class FormatCSharpTask : CSharpSolutionTask() {
 
     @Input
     var loglevel: String = "normal"
-    @InputDirectory
-    lateinit var solutionFolder: File
 
     @TaskAction
     fun taskAction() {
