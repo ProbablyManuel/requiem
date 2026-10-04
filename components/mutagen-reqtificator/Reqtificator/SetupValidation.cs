@@ -58,7 +58,7 @@ namespace Reqtificator
                             .AsEnumerable();
                     }
 
-                    var missingMasters = elem.Value.Mod!.MasterReferences
+                    var missingMasters = elem.Value.Mod.MasterReferences
                         .Where(e => modList.Take(index).ContainsNot(e.Master))
                         .Select(e => e.Master)
                         .ToImmutableList();

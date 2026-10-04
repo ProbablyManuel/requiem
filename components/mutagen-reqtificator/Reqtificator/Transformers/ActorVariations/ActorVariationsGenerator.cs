@@ -129,7 +129,7 @@ namespace Reqtificator.Transformers.ActorVariations
         {
             if (record.Entries is null)
             {
-                return ImmutableDictionary<VariationKey, int>.Empty;
+                return [];
             }
 
             var skillsTemplates = record.Entries

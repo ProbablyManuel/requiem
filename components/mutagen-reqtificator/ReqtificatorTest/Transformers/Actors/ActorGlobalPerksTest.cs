@@ -42,7 +42,7 @@ namespace ReqtificatorTest.Transformers.Actors
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
             result.Record().Equals(input, Mask).Should().BeTrue();
-            result.Record().Perks!.Should().BeEquivalentTo(PerksToAdd.Add(OtherPerk));
+            result.Record().Perks.Should().BeEquivalentTo(PerksToAdd.Add(OtherPerk));
         }
 
         [Fact]
@@ -59,7 +59,7 @@ namespace ReqtificatorTest.Transformers.Actors
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
             result.Record().Equals(input, Mask).Should().BeTrue();
-            result.Record().Perks!.Should().BeEquivalentTo(PerksToAdd.Add(OtherPerk));
+            result.Record().Perks.Should().BeEquivalentTo(PerksToAdd.Add(OtherPerk));
         }
 
         [Fact]
@@ -76,7 +76,7 @@ namespace ReqtificatorTest.Transformers.Actors
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
             result.Record().Equals(input, Mask).Should().BeTrue();
-            result.Record().Perks!.Should().BeEquivalentTo(PerksToAdd);
+            result.Record().Perks.Should().BeEquivalentTo(PerksToAdd);
         }
 
         [Fact]
@@ -93,7 +93,7 @@ namespace ReqtificatorTest.Transformers.Actors
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
             result.Record().Equals(input, Mask).Should().BeTrue();
-            result.Record().Perks!.Should().BeEquivalentTo(PerksToAdd);
+            result.Record().Perks.Should().BeEquivalentTo(PerksToAdd);
         }
 
         [Fact]

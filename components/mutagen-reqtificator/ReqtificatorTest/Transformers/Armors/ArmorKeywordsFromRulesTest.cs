@@ -27,7 +27,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
             result.Record().Equals(input, _mask).Should().BeTrue();
-            var expectedKeywords = input.Keywords!.ToImmutableList().Add(AssignKeywordNode1);
+            var expectedKeywords = input.Keywords.ToImmutableList().Add(AssignKeywordNode1);
             result.Record().Keywords.Should().BeEquivalentTo(expectedKeywords);
         }
 
@@ -45,7 +45,7 @@ namespace ReqtificatorTest.Transformers.Armors
             var result = transformer.Process(new UnChanged<Armor, IArmorGetter>(input));
             result.Should().BeOfType<Modified<Armor, IArmorGetter>>();
             result.Record().Equals(input, _mask).Should().BeTrue();
-            var expectedKeywords = input.Keywords!.ToImmutableList().Add(AssignKeywordNode1).Add(AssignKeywordNode2);
+            var expectedKeywords = input.Keywords.ToImmutableList().Add(AssignKeywordNode1).Add(AssignKeywordNode2);
             result.Record().Keywords.Should().BeEquivalentTo(expectedKeywords);
         }
 

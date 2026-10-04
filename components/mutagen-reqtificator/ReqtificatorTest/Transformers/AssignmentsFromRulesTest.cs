@@ -293,7 +293,7 @@ namespace ReqtificatorTest.Transformers
                 ((RuleConfigurationParsingException)e).FailingPath.Should().Be("feature_foo.keywords_all");
                 ((RuleConfigurationParsingException)e).SourceFile.Should().Be("tests");
                 e.InnerException.Should().BeOfType<ArgumentException>();
-                e.InnerException!.Message.Should().Be("Malformed FormKey string: 123XYZ:Skyrim.esm");
+                e.InnerException.Message.Should().Be("Malformed FormKey string: 123XYZ:Skyrim.esm");
             });
         }
 
@@ -321,7 +321,7 @@ namespace ReqtificatorTest.Transformers
                 ((RuleConfigurationParsingException)e).FailingPath.Should().Be("feature_foo.keywords_all");
                 ((RuleConfigurationParsingException)e).SourceFile.Should().Be("tests");
                 e.InnerException.Should().BeOfType<ArgumentException>();
-                e.InnerException!.Message.Should().Be("keywords must be non-empty (Parameter 'keywords')");
+                e.InnerException.Message.Should().Be("keywords must be non-empty (Parameter 'keywords')");
             });
         }
     }

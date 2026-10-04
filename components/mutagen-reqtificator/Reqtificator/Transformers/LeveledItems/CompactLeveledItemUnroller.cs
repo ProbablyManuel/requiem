@@ -22,7 +22,7 @@ namespace Reqtificator.Transformers.LeveledItems
 
         public bool IsCompactLeveledList(ILeveledItemGetter input)
         {
-            return input.EditorID is not null && Pattern.IsMatch(input.EditorID!) &&
+            return input.EditorID is not null && Pattern.IsMatch(input.EditorID) &&
                    _registeredMods.Contains(input.FormKey.ModKey) && input.Entries is not null;
         }
 
