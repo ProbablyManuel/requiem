@@ -23,7 +23,7 @@ namespace Reqtificator.Transformers.LeveledCharacters
 
         public bool IsCompactLeveledList(ILeveledNpcGetter input)
         {
-            return input.EditorID is not null && Pattern.IsMatch(input.EditorID!) &&
+            return input.EditorID is not null && Pattern.IsMatch(input.EditorID) &&
                    _registeredMods.Contains(input.FormKey.ModKey) && input.Entries is not null;
         }
 

@@ -42,7 +42,7 @@ namespace ReqtificatorTest.Transformers.Actors
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
             result.Record().Equals(input, _mask).Should().BeTrue();
-            var expectedSpells = input.ActorEffect!.ToImmutableList().Add(f.AssignRecordNode1);
+            var expectedSpells = input.ActorEffect.ToImmutableList().Add(f.AssignRecordNode1);
             result.Record().ActorEffect.Should().BeEquivalentTo(expectedSpells);
         }
 
@@ -70,7 +70,7 @@ namespace ReqtificatorTest.Transformers.Actors
             var result = transformer.Process(new UnChanged<Npc, INpcGetter>(input));
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
             result.Record().Equals(input, _mask).Should().BeTrue();
-            var expectedSpells = input.ActorEffect!.ToImmutableList().Add(f.AssignRecordNode1).Add(f.AssignRecordNode2);
+            var expectedSpells = input.ActorEffect.ToImmutableList().Add(f.AssignRecordNode1).Add(f.AssignRecordNode2);
             result.Record().ActorEffect.Should().BeEquivalentTo(expectedSpells);
         }
 

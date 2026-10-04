@@ -45,7 +45,7 @@ namespace ReqtificatorTest.Transformers.Actors
             result.Should().BeOfType<Modified<Npc, INpcGetter>>();
             result.Record().Equals(input, _mask).Should().BeTrue();
             var expectedNewPerk = new PerkPlacement { Perk = f.AssignRecordNode1.AsSetter(), Rank = 1 };
-            var expectedPerks = input.Perks!.ToImmutableList().Add(expectedNewPerk);
+            var expectedPerks = input.Perks.ToImmutableList().Add(expectedNewPerk);
             result.Record().Perks.Should().BeEquivalentTo(expectedPerks);
         }
 
@@ -75,7 +75,7 @@ namespace ReqtificatorTest.Transformers.Actors
             result.Record().Equals(input, _mask).Should().BeTrue();
             var expectedNewPerk1 = new PerkPlacement { Perk = f.AssignRecordNode1.AsSetter(), Rank = 1 };
             var expectedNewPerk2 = new PerkPlacement { Perk = f.AssignRecordNode2.AsSetter(), Rank = 1 };
-            var expectedPerks = input.Perks!.ToImmutableList().Add(expectedNewPerk1).Add(expectedNewPerk2);
+            var expectedPerks = input.Perks.ToImmutableList().Add(expectedNewPerk1).Add(expectedNewPerk2);
             result.Record().Perks.Should().BeEquivalentTo(expectedPerks);
         }
 
