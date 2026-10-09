@@ -5,6 +5,7 @@ Reqtificator
 ------------
 
 * If the generated patch exceeds the masterlist size limit, it is split into multiple plugins.
+* The Reqtificator can run without its window via `Reqtificator.exe --headless`. Run `Reqtificator.exe --help` for the options.
 * The keywords ArmorHeavy and ArmorLight are only added to shields. This prevents the armor type keywords from being added to hidden creature items such as draugr beards.
 * All dependencies of the Reqtificator are updated to the latest version.
 * The "Open encounter zones" setting is correctly saved between consecutive runs.

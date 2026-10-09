@@ -13,6 +13,14 @@ namespace Reqtificator
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            ArgumentNullException.ThrowIfNull(e);
+            var arguments = CommandLineArguments.Parse(e.Args);
+            if (arguments.Headless || arguments.ShowHelp)
+            {
+                Shutdown(HeadlessRunner.Run(arguments));
+                return;
+            }
+
             MainWindow? window = null;
             try
             {
@@ -34,8 +42,7 @@ namespace Reqtificator
 
                 window.Show();
 
-                ArgumentNullException.ThrowIfNull(e);
-                var backend = new Backend(eventQueue, logContext, e);
+                var backend = new Backend(eventQueue, logContext, arguments.Release, saveUserSettings: true);
                 Log.Debug("Gui Started");
             }
             catch (Exception ex)
