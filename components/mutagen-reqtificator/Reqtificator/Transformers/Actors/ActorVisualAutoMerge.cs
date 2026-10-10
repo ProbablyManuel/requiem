@@ -18,7 +18,6 @@ namespace Reqtificator.Transformers.Actors
             _compareTraitsMask.FaceMorph = false; // can contain small numeric differences that are irrelevant
             _compareTraitsMask.Height = false;
             _compareTraitsMask.Weight = false;
-            _compareTraitsMask.DeathItem = false;
         }
 
         public bool CheckRecordEquality(INpcGetter reference, INpcGetter other)
