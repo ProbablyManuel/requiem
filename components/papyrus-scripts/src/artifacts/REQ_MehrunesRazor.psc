@@ -8,10 +8,17 @@ Spell Property Description Auto
 Event OnEffectStart(Actor akTarget, Actor akCaster)
 	RescaleEnchantment()
 	akTarget.AddSpell(Description, False)
+	RegisterForUpdate(300)
 EndEvent
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
 	akTarget.RemoveSpell(Description)
+EndEvent
+
+Event OnUpdate()
+	If !GetTargetActor().IsInCombat()
+		RescaleEnchantment()
+	EndIf
 EndEvent
 
 

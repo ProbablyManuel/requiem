@@ -15,10 +15,20 @@ Spell Property EnchAbility Auto
 Event OnEffectStart(Actor akTarget, Actor akCaster)
 	RescaleEnchantment()
 	akTarget.AddSpell(EnchAbility, False)
+	RegisterForUpdate(300)
 EndEvent
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
 	akTarget.RemoveSpell(EnchAbility)
+EndEvent
+
+Event OnUpdate()
+	Actor Target = GetTargetActor()
+	If !Target.IsInCombat()
+		Target.RemoveSpell(EnchAbility)
+		RescaleEnchantment()
+		Target.AddSpell(EnchAbility)
+	EndIf
 EndEvent
 
 
