@@ -1,10 +1,10 @@
 ﻿using System.IO;
+using System.Linq;
 using FluentAssertions;
 using Mutagen.Bethesda.Plugins;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Reqtificator;
-using Reqtificator.Events.Outcomes;
 using Xunit;
 
 namespace ReqtificatorTest
@@ -22,13 +22,12 @@ namespace ReqtificatorTest
             string tempDir = Path.GetTempPath();
             var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>();
 
-            var outcome = Backend.WritePatchToDisk(dummyMod, tempDir, loadOrder);
-            outcome.Should().BeNull();
+            Backend.WritePatchToDisk(dummyMod, tempDir, loadOrder);
             File.Exists(Path.Combine(tempDir, dummyMod.ModKey.FileName)).Should().BeTrue();
         }
 
         [Fact]
-        public void Should_return_a_failed_outcome_if_there_are_too_many_masters()
+        public void Should_split_the_patch_if_there_are_too_many_masters()
         {
             var dummyMod = new SkyrimMod(new ModKey("export", ModType.Plugin), SkyrimRelease.SkyrimSE);
             var loadOrder = new LoadOrder<IModListing<ISkyrimModGetter>>();
@@ -40,11 +39,25 @@ namespace ReqtificatorTest
                 dummyMod.Armors.Add(record);
                 loadOrder.Add(mod);
             }
-            string tempDir = Path.GetTempPath();
+            string tempDir = Directory.CreateTempSubdirectory().FullName;
 
-            var outcome = Backend.WritePatchToDisk(dummyMod, tempDir, loadOrder);
-            outcome.Should().NotBeNull();
-            outcome.Should().BeOfType<TooManyMasters>();
+            try
+            {
+                Backend.WritePatchToDisk(dummyMod, tempDir, loadOrder);
+
+                var exportedFiles = Directory.GetFiles(tempDir).Select(Path.GetFileName);
+                exportedFiles.Should().BeEquivalentTo("export.esp", "export_2.esp");
+
+                var exportedMods = Directory.GetFiles(tempDir)
+                    .Select(f => SkyrimMod.CreateFromBinary(f, SkyrimRelease.SkyrimSE))
+                    .ToList();
+                exportedMods.Should().AllSatisfy(m => m.ModHeader.MasterReferences.Count.Should().BeLessThanOrEqualTo(254));
+                exportedMods.Sum(m => m.Armors.Count).Should().Be(259);
+            }
+            finally
+            {
+                Directory.Delete(tempDir, true);
+            }
         }
     }
 }

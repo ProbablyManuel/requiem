@@ -13,11 +13,18 @@ Event OnEffectStart(Actor akTarget, Actor akCaster)
 	RescaleEnchantment()
 	akTarget.AddSpell(Description, False)
 	ReapplyNonPersistentChanges.DawnbreakerScript = Self
+	RegisterForUpdate(300)
 EndEvent
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
 	akTarget.RemoveSpell(Description)
 	ReapplyNonPersistentChanges.DawnbreakerScript = None
+EndEvent
+
+Event OnUpdate()
+	If !GetTargetActor().IsInCombat()
+		ReapplyNonPersistentChanges()
+	EndIf
 EndEvent
 
 

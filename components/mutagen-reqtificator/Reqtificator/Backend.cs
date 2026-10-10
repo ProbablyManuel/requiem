@@ -3,12 +3,9 @@ using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Runtime.CompilerServices;
-using System.Windows;
 using Hocon;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Plugins;
-using Mutagen.Bethesda.Plugins.Binary.Parameters;
-using Mutagen.Bethesda.Plugins.Exceptions;
 using Mutagen.Bethesda.Plugins.Order;
 using Mutagen.Bethesda.Skyrim;
 using Noggog;
@@ -37,23 +34,15 @@ namespace Reqtificator
         private readonly ReqtificatorLogContext _logs;
         private readonly GameContext _context;
         private readonly RequiemVersion _version;
+        private readonly bool _saveUserSettings;
 
-        public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext, StartupEventArgs startupEventArgs)
+        public Backend(InternalEvents eventsQueue, ReqtificatorLogContext logContext, GameRelease? requestedRelease, bool saveUserSettings)
         {
             _events = eventsQueue;
             _logs = logContext;
-            if (startupEventArgs.Args.Contains("--game=SkyrimSEGog"))
-            {
-                _release = GameRelease.SkyrimSEGog;
-            }
-            else if (startupEventArgs.Args.Contains("--game=SkyrimSE"))
-            {
-                _release = GameRelease.SkyrimSE;
-            }
-            else
-            {
-                _release = GameContext.IsAvailable(GameRelease.SkyrimSEGog) ? GameRelease.SkyrimSEGog : GameRelease.SkyrimSE;
-            }
+            _saveUserSettings = saveUserSettings;
+            _release = requestedRelease
+                ?? (GameContext.IsAvailable(GameRelease.SkyrimSEGog) ? GameRelease.SkyrimSEGog : GameRelease.SkyrimSE);
 
             var buildInfo = HoconConfigurationFactory.FromResource<Backend>("VersionInfo");
             _version = new RequiemVersion(buildInfo.GetInt("versionNumber"), buildInfo.GetString("versionName"));
@@ -115,22 +104,17 @@ namespace Reqtificator
             {
                 var logLevel = updatedSettings.VerboseLogging ? LogEventLevel.Debug : LogEventLevel.Information;
                 _logs.LogLevel.MinimumLevel = logLevel;
-                updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
+                if (_saveUserSettings)
+                {
+                    updatedSettings.WriteToFile(Path.Combine(_context.DataFolder, "Reqtificator", "UserSettings.json"));
+                }
                 var generatedPatch = GeneratePatch(loadOrder, updatedSettings, PatchModKey);
                 Log.Information("done patching, now exporting to disk");
 
                 _events.PublishState(ReqtificatorState.Patching(90, "Saving Patch"));
-                var outcome = WritePatchToDisk(generatedPatch, _context.DataFolder, loadOrder);
-                if (outcome is null)
-                {
-                    Log.Information("done exporting");
-                    _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
-                }
-                else
-                {
-                    Log.Information("exporting failed");
-                    _events.PublishState(ReqtificatorState.Stopped(outcome));
-                }
+                WritePatchToDisk(generatedPatch, _context.DataFolder, loadOrder);
+                Log.Information("done exporting");
+                _events.PublishState(ReqtificatorState.Stopped(ReqtificatorOutcome.Success));
             }
             catch (Exception ex)
             {
@@ -184,22 +168,13 @@ namespace Reqtificator
             }
         }
 
-        public static ReqtificatorOutcome? WritePatchToDisk(SkyrimMod generatedPatch, string outputDirectory, ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
+        public static void WritePatchToDisk(SkyrimMod generatedPatch, string outputDirectory, ILoadOrder<IModListing<ISkyrimModGetter>> loadOrder)
         {
-            try
-            {
-                generatedPatch.WriteToBinary(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName), new BinaryWriteParameters
-                {
-                    MastersListOrdering = new MastersListOrderingByLoadOrder(loadOrder)
-                });
-                return null;
-            }
-            catch (TooManyMastersException e)
-            {
-                Log.Information("master files:");
-                e.Masters.ForEach(m => Log.Information($"  {m.FileName}"));
-                return new TooManyMasters();
-            }
+            generatedPatch.BeginWrite
+                .ToPath(Path.Combine(outputDirectory, generatedPatch.ModKey.FileName))
+                .WithLoadOrder(loadOrder)
+                .WithAutoSplit()
+                .Write();
         }
     }
 }
