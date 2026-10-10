@@ -84,6 +84,7 @@ Internal Quality Improvements (only relevant for modders)
 ---------------------------------------------------------
 
 * All staves use the vanilla paralysis enchantment.
+* The damage of werewolves is defined in the race record.
 * Arrows and bolts have consistent impact force.
 * Bolts have no muzzle flash data.
 

@@ -1,73 +1,79 @@
-FormKey: 0A092F:Skyrim.esm
+FormKey: 032896:Skyrim.esm
 IsCompressed: True
 MajorRecordFlagsRaw: 262144
-EditorID: EncWerewolf06
-Version2: 12
+EditorID: ArnbjornWerewolf
 SkyrimMajorRecordFlags:
 - Compressed
 Configuration:
-  StaminaOffset: 900
+  Flags:
+  - AutoCalcStats
+  - IsGhost
   Level:
     MutagenObjectType: NpcLevel
-    Level: 50
+    Level: 1
   SpeedMultiplier: 100
   DispositionBase: 35
-  HealthOffset: 100
+  TemplateFlags:
+  - Traits
+  - SpellList
 Factions:
-- Faction: 000013:Skyrim.esm
+- Faction: 01BDB3:Skyrim.esm
   Fluff: 0x000000
-- Faction: 043594:Skyrim.esm
+- Faction: 04135B:Skyrim.esm
   Fluff: 0x000000
-DeathItem: 38FFDE:Requiem.esp
 Voice: 01F2E6:Skyrim.esm
+Template: 0A1976:Skyrim.esm
 Race: 0CDD84:Skyrim.esm
+CombatOverridePackageList: 101C00:Skyrim.esm
 AIData:
-  Aggression: VeryAggressive
+  Aggression: Aggressive
   Confidence: Foolhardy
   EnergyLevel: 50
-  Assistance: HelpsFriendsAndAllies
-Class: 0A1993:Skyrim.esm
+  Responsibility: NoCrime
+Packages:
+- 101C01:Skyrim.esm
+Class: 013176:Skyrim.esm
 Name:
   TargetLanguage: English
-  Value: Werewolf
+  Value: Arnbjorn
 PlayerSkills:
   SkillValues:
   - Key: OneHanded
-    Value: 85
+    Value: 15
   - Key: TwoHanded
-    Value: 5
+    Value: 15
   - Key: Archery
-    Value: 59
+    Value: 15
   - Key: Block
-    Value: 59
+    Value: 15
   - Key: Smithing
-    Value: 5
+    Value: 15
   - Key: HeavyArmor
-    Value: 5
+    Value: 15
   - Key: LightArmor
-    Value: 32
+    Value: 15
   - Key: Pickpocket
-    Value: 5
+    Value: 15
   - Key: Lockpicking
-    Value: 5
+    Value: 15
   - Key: Sneak
-    Value: 86
+    Value: 15
   - Key: Alchemy
-    Value: 5
+    Value: 15
   - Key: Speech
-    Value: 5
+    Value: 15
   - Key: Alteration
-    Value: 5
+    Value: 15
   - Key: Conjuration
-    Value: 5
+    Value: 15
   - Key: Destruction
-    Value: 5
+    Value: 15
   - Key: Illusion
-    Value: 5
+    Value: 15
   - Key: Restoration
-    Value: 5
+    Value: 15
   - Key: Enchanting
-    Value: 5
+    Value: 15
   SkillOffsets:
   - Key: OneHanded
     Value: 0
@@ -105,8 +111,8 @@ PlayerSkills:
     Value: 0
   - Key: Enchanting
     Value: 0
-  Health: 470
-  Stamina: 285
+  Health: 100
+  Stamina: 100
   GearedUpWeapons: 1
 CombatStyle: 0A199D:Skyrim.esm
 NAM5: 255
@@ -116,8 +122,7 @@ SoundLevel: Normal
 Sound:
   MutagenObjectType: NpcInheritSound
   InheritsSoundsFrom: 0F7EAD:Skyrim.esm
-DefaultOutfit: 0A1986:Skyrim.esm
-DefaultPackageList: 021E81:Skyrim.esm
-TextureLighting: '#00808080'
+DefaultOutfit: 05AC40:Skyrim.esm
+TextureLighting: '#007F7F7F'
 MajorFlags:
 - 0x40000
