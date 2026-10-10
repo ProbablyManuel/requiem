@@ -145,7 +145,7 @@ namespace Reqtificator.Transformers
                 Weight = true,
                 FarAwayModel = true,
                 Voice = true,
-                DeathItem = true,
+                //DeathItem = true,
                 // PlayerSkills = new PlayerSkills.TranslationMask(defaultOn: false)
                 // {
                 //     FarAwayModelDistance = true

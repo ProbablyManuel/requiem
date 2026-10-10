@@ -133,5 +133,17 @@ namespace ReqtificatorTest.Transformers.Actors
             f.Actor1.Equals(f.Actor2).Should().BeFalse();
         }
 
+        [Fact]
+        public void Should_not_copy_the_death_item_from_the_template()
+        {
+            var f = new Fixture();
+            var originalDeathItem = FormKey.Factory("3333AB:Skyrim.esm");
+            f.Actor1.DeathItem = new FormLinkNullable<ILeveledItemGetter>(originalDeathItem);
+            f.Actor2.DeathItem = new FormLinkNullable<ILeveledItemGetter>(FormKey.Factory("3333CD:Skyrim.esm"));
+            f.Logic.ForwardDataFromTemplate(f.Actor1, f.Actor2);
+
+            f.Actor1.DeathItem.FormKey.Should().Be(originalDeathItem);
+        }
+
     }
 }
