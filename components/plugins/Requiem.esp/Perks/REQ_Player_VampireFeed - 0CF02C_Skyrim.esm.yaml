@@ -143,22 +143,8 @@ Effects:
         MutagenObjectType: GetSittingConditionData
     - MutagenObjectType: ConditionFloat
       Data:
-        MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 00BF72:Dawnguard.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 09E0BB:Skyrim.esm
-      ComparisonValue: 1
-    - MutagenObjectType: ConditionFloat
-      Flags:
-      - OR
-      Data:
-        MutagenObjectType: HasMagicEffectConditionData
-        MagicEffect: 04DEE7:Skyrim.esm
+        MutagenObjectType: HasMagicEffectKeywordConditionData
+        Keyword: 0424EE:Skyrim.esm
       ComparisonValue: 1
   ButtonLabel:
     TargetLanguage: English
