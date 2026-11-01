@@ -51,6 +51,7 @@ Bug Fixes
 * A number of scenarios in which effects dispel other effects are fixed. Most notably, fire spells no longer dispel passive buffs such as Healing Aura.
 * The scaling effects of the Gauldur Amulet, Ring of Namura, and Volendrung update immediately.
 * The scaling effects of Dawnbreaker, Ebony Mail, Glass Bow of the Stag Prince, Mace of Molag Bal, Mehrunes' Razor, and Savior's Hide update periodically in the background.
+* Fire Breath, Frost Breath, and Drain Vitality are affected by perks that increase shout strength.
 * Illusion spells don't grant XP when cast on dead NPCs.
 * Fog of Shadows isn't easier to resist when dual-cast.
 * Fog of Shadows periodically checks if the target can break free from the spell insteading rapidly repeating the check until it succeeds.
