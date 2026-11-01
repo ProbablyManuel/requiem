@@ -63,6 +63,7 @@ Bug Fixes
 * Soul Tear can soul trap essential actors.
 * Elemental Fury and Frostburst slow targets.
 * Elemental Fury and Shockburst deal triple damage to constructs.
+* Improper skill assignments are removed from many magic effects.
 * Soulreaping weapons cannot be disenchanted.
 * The curse from dremora items cannot be bypassed.
 * The Atronach Forge doesn't yield cursed daedric weapons.
