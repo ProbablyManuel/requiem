@@ -1,0 +1,42 @@
+FormKey: 018CE9:Dragonborn.esm
+EditorID: REQ_NULL_testPhilWhaleEffect
+Name:
+  TargetLanguage: English
+  Value: Slow
+MenuDisplayObject: 09DB72:Skyrim.esm
+Keywords:
+- 0B729E:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoArea
+- FXPersist
+- HideInUI
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: ResistMagic
+TaperWeight: 1
+HitShader: 01F03A:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: WeaponSpeedMult
+Projectile: 0DD604:Skyrim.esm
+Explosion: 0D6C63:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 0334B9:Skyrim.esm
+ImpactData: 0D6C64:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+CastingSoundLevel: Normal
+Sounds:
+- Sound: 03E5E3:Skyrim.esm
+- Type: Release
+  Sound: 03F2EB:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5CB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

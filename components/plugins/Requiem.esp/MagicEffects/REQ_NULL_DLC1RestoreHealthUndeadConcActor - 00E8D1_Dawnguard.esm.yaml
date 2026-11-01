@@ -1,0 +1,68 @@
+FormKey: 00E8D1:Dawnguard.esm
+EditorID: REQ_NULL_DLC1RestoreHealthUndeadConcActor
+VirtualMachineAdapter:
+  Scripts:
+  - Name: SayOnHitByMagicEffectScript
+    Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: AllowForTeammate
+      Data: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TopicToSay
+      Object: 0AB87F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: WICastNonHostileTimer
+      Object: 0E0CDC:Skyrim.esm
+Name:
+  TargetLanguage: English
+  Value: Restore Health to Undead
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEB0:Skyrim.esm
+- 0A9B1E:Skyrim.esm
+Flags:
+- FXPersist
+- PowerAffectsMagnitude
+BaseCost: 3
+MagicSkill: Restoration
+CastingLight: 03F1B5:Skyrim.esm
+TaperWeight: 1
+HitShader: 012FD9:Skyrim.esm
+MinimumSkillLevel: 25
+TaperDuration: 0.3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FDC:Skyrim.esm
+CastType: Concentration
+TargetType: TargetActor
+CastingArt: 01C859:Skyrim.esm
+HitEffectArt: 03F810:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03E957:Skyrim.esm
+- Type: Release
+  Sound: 057C61:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E958:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Heals the undead target <mag> points per second, but not the living, atronachs, or machines.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1

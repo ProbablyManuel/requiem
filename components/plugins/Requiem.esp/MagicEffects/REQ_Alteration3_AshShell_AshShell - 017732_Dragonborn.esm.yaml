@@ -1,0 +1,70 @@
+FormKey: 017732:Dragonborn.esm
+EditorID: REQ_Alteration3_AshShell_AshShell
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC2AshShellScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DLC2AshShellDmgPerk
+      Object: 0177B4:Dragonborn.esm
+  - Name: magicsoundplayintrooutro
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: IntroSoundFX
+      Object: 01E2A1:Dragonborn.esm
+Name:
+  TargetLanguage: English
+  Value: Ash Shell
+MenuDisplayObject: 10A046:Skyrim.esm
+Keywords:
+- 01EA70:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 75
+MagicSkill: Alteration
+CastingLight: 0140EC:Skyrim.esm
+HitShader: 027E34:Dragonborn.esm
+MinimumSkillLevel: 50
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Paralysis
+  Type: Paralysis
+Projectile: 027E35:Dragonborn.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 027BF7:Dragonborn.esm
+ImpactData: 01E150:Dragonborn.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03C8F9:Skyrim.esm
+- Type: Ready
+  Sound: 03C8FA:Skyrim.esm
+- Type: Release
+  Sound: 03C8FB:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Targets that fail to resist are immobilized in hardened ash for <dur> seconds.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 035D59:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 0F23C5:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 028FDE:Dragonborn.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetRestrainedConditionData

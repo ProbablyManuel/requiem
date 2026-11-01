@@ -1,0 +1,20 @@
+FormKey: 0142C0:Dawnguard.esm
+EditorID: REQ_NULL_DLC1LD_AetherialStaffSummonDwarvenSphere01Spell
+Name:
+  TargetLanguage: English
+  Value: Conjure Dwarven Sphere
+MenuDisplayObject: 0A6459:Skyrim.esm
+EquipmentType: 013F44:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''
+Flags:
+- NoAbsorbOrReflect
+- NoDualCastModification
+CastType: FireAndForget
+TargetType: TargetLocation
+Range: 10000
+Effects:
+- BaseEffect: 00CF9F:Dawnguard.esm
+  Data:
+    Duration: 60

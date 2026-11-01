@@ -1,0 +1,40 @@
+FormKey: 015C3B:Dawnguard.esm
+EditorID: DLC1LD_ForgemasterFireballEffect
+Name:
+  TargetLanguage: English
+  Value: Forgemaster Fireball
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 0.5
+ResistValue: ResistFire
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 1
+HitShader: 01B212:Skyrim.esm
+SpellmakingArea: 10
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 022383:Skyrim.esm
+Explosion: 0E1530:Skyrim.esm
+CastType: FireAndForget
+TargetType: Aimed
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 020DE1:Skyrim.esm
+SkillUsageMultiplier: 1.4
+DualCastScale: 2
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Release
+  Sound: 03F2EA:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5E4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Burns the target <mag> points per second. Targets on fire take extra damage.

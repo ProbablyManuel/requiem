@@ -1,0 +1,45 @@
+FormKey: 028585:Dragonborn.esm
+EditorID: REQ_NULL_DLC2BarrierFireFFLocation
+Name:
+  TargetLanguage: English
+  Value: Fire Barrier
+MenuDisplayObject: 0435A5:Skyrim.esm
+Keywords:
+- 01CEAD:Skyrim.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+- FXPersist
+- GoryVisuals
+- NoRecast
+- PowerAffectsMagnitude
+- NoDeathDispel
+BaseCost: 1.2
+MagicSkill: Destruction
+ResistValue: ResistFire
+CastingLight: 0140EC:Skyrim.esm
+TaperWeight: 0.5
+HitShader: 01B212:Skyrim.esm
+MinimumSkillLevel: 75
+TaperCurve: 2
+TaperDuration: 2
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+Projectile: 012FCF:Skyrim.esm
+CastType: FireAndForget
+TargetType: TargetLocation
+CastingArt: 01B211:Skyrim.esm
+ImpactData: 08F3F0:Skyrim.esm
+SkillUsageMultiplier: 1
+DualCastScale: 3
+Sounds:
+- Sound: 03C8F8:Skyrim.esm
+- Type: Release
+  Sound: 03F2EA:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 03E5E4:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: Cast on the ground, it creates an area of fire that does <50> points of fire damage per second.
