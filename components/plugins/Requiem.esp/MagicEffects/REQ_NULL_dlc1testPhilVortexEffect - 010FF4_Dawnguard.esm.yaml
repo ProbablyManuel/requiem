@@ -1,0 +1,54 @@
+FormKey: 010FF4:Dawnguard.esm
+EditorID: REQ_NULL_dlc1testPhilVortexEffect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DLC1testPhilVortexSCRIPT
+Name:
+  TargetLanguage: English
+  Value: Vortex Effect
+Flags:
+- Hostile
+- Recover
+- NoMagnitude
+- NoArea
+- FXPersist
+- PowerAffectsDuration
+BaseCost: 15
+MagicSkill: Conjuration
+CastingLight: 03BA90:Skyrim.esm
+HitShader: 0506D7:Skyrim.esm
+MinimumSkillLevel: 25
+SpellmakingCastingTime: 0.5
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Projectile: 04BE35:Skyrim.esm
+CastType: FireAndForget
+TargetType: TargetActor
+CastingArt: 0510CF:Skyrim.esm
+HitEffectArt: 0506D6:Skyrim.esm
+ImpactData: 04C6DA:Skyrim.esm
+SkillUsageMultiplier: 2
+DualCastScale: 1
+Sounds:
+- Sound: 03F37A:Skyrim.esm
+- Type: Charge
+  Sound: 03F37B:Skyrim.esm
+- Type: Ready
+  Sound: 03F37D:Skyrim.esm
+- Type: Release
+  Sound: 03F37C:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: If target dies within <dur> seconds, fills a soul gem.
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsEssentialConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: IsCommandedActorConditionData
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 103AD2:Skyrim.esm

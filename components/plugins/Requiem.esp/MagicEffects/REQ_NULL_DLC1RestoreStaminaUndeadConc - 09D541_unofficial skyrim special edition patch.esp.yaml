@@ -1,0 +1,36 @@
+FormKey: 09D541:unofficial skyrim special edition patch.esp
+EditorID: REQ_NULL_DLC1RestoreStaminaUndeadConc
+Name:
+  TargetLanguage: English
+  Value: Restore Stamina to Undead
+Flags:
+- HideInUI
+- PowerAffectsMagnitude
+MagicSkill: Restoration
+TaperWeight: 1
+TaperDuration: 0.3
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Stamina
+CastType: Concentration
+TargetType: TargetActor
+DualCastScale: 1
+CastingSoundLevel: Silent
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    Keyword: 013796:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: IsUndeadConditionData
+  ComparisonValue: 1
