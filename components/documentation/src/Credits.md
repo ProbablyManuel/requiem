@@ -26,6 +26,7 @@ Individual Contributions
 * [Noxcrab](https://www.nexusmods.com/profile/Noxcrab) - Numerous fixes and improvements
 * [JazzKiwifruit](https://www.nexusmods.com/users/16518979) - Numerous fixes related to armors, weapons, and smithing recipes
 * [IamPrettyUgly](https://www.nexusmods.com/users/191297574) - Initial draft of the continuous sun damage for vampires during the day
+* [Harby94](https://www.nexusmods.com/profile/Harby94) - Food tweaks
 
 We want to use this chance to thank all those who helped (and still help) us creating this mod:
 ===============================================================================================

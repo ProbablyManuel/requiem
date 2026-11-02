@@ -15,6 +15,8 @@ Tweaks
 ------
 
 * Tempered items no longer use custom labels and are now simply marked as "Tempered". This change reflects Requiem's tempering formula, which made the previous labels unclear and often confusing.
+* Potatoes, yams, and food cooked with them count as carbs instead of vegetables and restore stamina instead of increasing disease resistance.
+* Food cooked with butter counts as dairy nutrition and restores magicka. Cabbage Potato Soup and Potato Soup use a second potato instead of butter so that all soups provide only two effects.
 * Storm of Steel is renamed to Duelist and increases power attack damage if both hands are equipped with a one-handed weapon or fist.
 * Werebears deal less extreme damage.
 * Dual wield power attacks cannot be executed when sneaking. This replaces a previous feature that allowed such sneak attacks but artifically nerfed their damage to match a single-handed sneak attack.
