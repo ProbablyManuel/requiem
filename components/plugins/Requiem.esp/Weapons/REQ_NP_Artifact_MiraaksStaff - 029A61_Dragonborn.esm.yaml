@@ -1,5 +1,8 @@
 FormKey: 029A61:Dragonborn.esm
+MajorRecordFlagsRaw: 4
 EditorID: REQ_NP_Artifact_MiraaksStaff
+SkyrimMajorRecordFlags:
+- NotPlayable
 ObjectBounds:
   First: -9, -47, -6
   Second: 13, 60, 6
@@ -9,8 +12,7 @@ Name:
 Model:
   File: DLC02\Weapons\Miraak\Miraak.nif
   Data: 0x020000000000000000000000
-ObjectEffect: 0397ED:Dragonborn.esm
-EnchantmentAmount: 2000
+ObjectEffect: 039FA9:Dragonborn.esm
 EquipmentType: 013F44:Skyrim.esm
 BlockBashImpact: 0193C6:Skyrim.esm
 AlternateBlockMaterial: 0774B6:Skyrim.esm
@@ -33,6 +35,9 @@ Data:
   Unused: 0x000000
   Speed: 1
   Reach: 1.3
+  Flags:
+  - CantDrop
+  - NonPlayable
   NumProjectiles: 1
   AnimationAttackMult: 1
   Unknown2: 1065353216
@@ -46,3 +51,5 @@ Critical:
   - OnDeath
   Unused2: 0x000000
 DetectionSoundLevel: Normal
+MajorFlags:
+- NonPlayable

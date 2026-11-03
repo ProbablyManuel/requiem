@@ -4,19 +4,18 @@ Name:
   TargetLanguage: English
   Value: Mora's Agony
 MenuDisplayObject: 038305:Dragonborn.esm
-Keywords:
-- 0339A0:Dragonborn.esm
 Flags:
 - Hostile
 - Detrimental
 - NoArea
 - FXPersist
+- PowerAffectsMagnitude
 - NoDeathDispel
+ResistValue: PoisonResist
 HitShader: 039E46:Dragonborn.esm
 Archetype:
-  MutagenObjectType: MagicEffectPeakValueModArchetype
+  MutagenObjectType: MagicEffectArchetype
   ActorValue: Health
-  Association: 0339A0:Dragonborn.esm
 Projectile: 03A3D5:Dragonborn.esm
 CastType: Concentration
 TargetType: Aimed
@@ -29,4 +28,4 @@ Sounds:
   Sound: 01E2A2:Dragonborn.esm
 Description:
   TargetLanguage: English
-  Value: Sprays writhing tentacles on the ground that stagger foes and deal <mag> irresistible damage per second.
+  Value: Deals <mag> poison damage per second. Sprays writhing tentacles on the ground that stagger foes and reduce poison resistance by <100>% for <10> seconds.

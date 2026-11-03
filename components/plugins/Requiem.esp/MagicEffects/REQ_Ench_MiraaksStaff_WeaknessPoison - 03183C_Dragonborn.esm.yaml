@@ -1,26 +1,28 @@
 FormKey: 03183C:Dragonborn.esm
-EditorID: REQ_Ench_MiraaksStaff_DamageHealth
+EditorID: REQ_Ench_MiraaksStaff_WeaknessPoison
 Name:
   TargetLanguage: English
-  Value: Damage Health
+  Value: Weakness to Poison
 MenuDisplayObject: 038305:Dragonborn.esm
 Keywords:
 - 0339A0:Dragonborn.esm
 Flags:
 - Hostile
+- Recover
 - Detrimental
+- DispelWithKeywords
 - NoArea
 - FXPersist
+- PowerAffectsMagnitude
 - NoDeathDispel
 HitShader: 039E46:Dragonborn.esm
 Archetype:
-  MutagenObjectType: MagicEffectPeakValueModArchetype
-  ActorValue: Health
-  Association: 0339A0:Dragonborn.esm
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: PoisonResist
 CastType: FireAndForget
 TargetType: Touch
 DualCastScale: 1
 Sounds: []
 Description:
   TargetLanguage: English
-  Value: Sprays writhing tentacles on the ground that stagger foes and deal <mag> irresistible damage per second.
+  Value: Sprays writhing tentacles on the ground that stagger foes and reduce poison resistance by <mag>% for <dur> seconds.
