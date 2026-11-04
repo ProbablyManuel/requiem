@@ -1,0 +1,36 @@
+FormKey: 01AE9B:Dragonborn.esm
+EditorID: REQ_NULL_DLC2LurkerSlimeConcAimed
+Name:
+  TargetLanguage: English
+  Value: Lurker Slime
+MenuDisplayObject: 09DB72:Skyrim.esm
+Flags:
+- Hostile
+- Recover
+- Detrimental
+- NoArea
+- FXPersist
+- PowerAffectsMagnitude
+- NoDeathDispel
+MagicSkill: Destruction
+ResistValue: PoisonResist
+TaperWeight: 1
+HitShader: 10CC64:Skyrim.esm
+Archetype:
+  MutagenObjectType: MagicEffectPeakValueModArchetype
+  ActorValue: SpeedMult
+Projectile: 01AE99:Dragonborn.esm
+CastType: Concentration
+TargetType: Aimed
+HitEffectArt: 1046CD:Skyrim.esm
+ImpactData: 01AE9F:Dragonborn.esm
+SkillUsageMultiplier: 1
+DualCastScale: 1
+Sounds:
+- Type: Release
+  Sound: 03F37E:Skyrim.esm
+- Type: ConcentrationCastLoop
+  Sound: 06CB4E:Skyrim.esm
+Description:
+  TargetLanguage: English
+  Value: ''

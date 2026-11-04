@@ -18,6 +18,7 @@ Tweaks
 * Potatoes, yams, and food cooked with them count as carbs instead of vegetables and restore stamina instead of increasing disease resistance.
 * Food cooked with butter counts as dairy nutrition and restores magicka. Cabbage Potato Soup and Potato Soup use a second potato instead of butter so that all soups provide only two effects.
 * Storm of Steel is renamed to Duelist and increases power attack damage if both hands are equipped with a one-handed weapon or fist.
+* Staff of Miraak deals 30 irresistible damage and 300 poison damage per second (was 300 irresistible damage). The tentacles on the ground reduce poison resistance by 100%.
 * Werebears deal less extreme damage.
 * Dual wield power attacks cannot be executed when sneaking. This replaces a previous feature that allowed such sneak attacks but artifically nerfed their damage to match a single-handed sneak attack.
 * Alcohol ceases to apply beneficial effects when your alcohol level exceeds your base health.
@@ -41,6 +42,7 @@ Bug Fixes
 * Miraak always drops his mask upon death.
 * Miraak's Fire Storm deals damage instantly instead of continuously over 26 seconds (not including 4 seconds of tapering). This significantly reduces the damage dealt by Miraak.
 * Miraak's fire wyrm lasts for 60 seconds instead of 10.
+* Miraak's weapons during the fight have the same enchantments as the ones rewarded to the player.
 * The wounded dragon is always a common dragon with reduced health instead of having varying strength and one of the highest health pools of any dragon. In return, Irileth no longer deals artifically increased damage against the dragon.
 * Archers don't recoil when their arrow is blocked by a shield.
 * Vampires can travel via carriage or ferry during the day without dying upon arrival.

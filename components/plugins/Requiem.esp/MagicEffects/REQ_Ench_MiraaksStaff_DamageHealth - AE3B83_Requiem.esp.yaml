@@ -1,0 +1,20 @@
+FormKey: AE3B83:Requiem.esp
+EditorID: REQ_Ench_MiraaksStaff_DamageHealth
+Name:
+  TargetLanguage: English
+  Value: Damage Health
+MenuDisplayObject: 038305:Dragonborn.esm
+Flags:
+- Hostile
+- Detrimental
+- NoArea
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  ActorValue: Health
+CastType: FireAndForget
+TargetType: Touch
+DualCastScale: 1
+Sounds: []
+Description:
+  TargetLanguage: English
+  Value: Additionally deals <mag> irresistible damage per second.
