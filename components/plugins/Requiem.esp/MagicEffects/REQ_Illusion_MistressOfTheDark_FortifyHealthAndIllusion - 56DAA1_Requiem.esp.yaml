@@ -26,7 +26,7 @@ CastingSoundLevel: Silent
 Sounds: []
 Description:
   TargetLanguage: English
-  Value: passive health and damage boni for summoned Simulacrum
+  Value: ''
 Conditions:
 - MutagenObjectType: ConditionFloat
   Data:
@@ -36,7 +36,3 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: IsHostileToActorConditionData
-- MutagenObjectType: ConditionFloat
-  Data:
-    MutagenObjectType: HasMagicEffectConditionData
-    MagicEffect: 56DAA1:Requiem.esp
