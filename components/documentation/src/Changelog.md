@@ -51,6 +51,7 @@ Bug Fixes
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
 * Glass Bow of the Stag Prince recognizes slaying Sinding.
+* Ring of Namira's invisibility cannot be absorbed.
 * Gaining Voice of the Sky while it is already active refreshes the duration instead of applying multiple instances.
 * A number of scenarios in which effects dispel other effects are fixed. Most notably, fire spells no longer dispel passive buffs such as Healing Aura.
 * The scaling effects of the Gauldur Amulet, Ring of Namura, and Volendrung update immediately.
