@@ -53,6 +53,7 @@ Bug Fixes
 * Glass Bow of the Stag Prince recognizes slaying Sinding.
 * Ring of Namira's invisibility cannot be absorbed.
 * Gaining Voice of the Sky while it is already active refreshes the duration instead of applying multiple instances.
+* Meridia's Malediction always ends when you no longer carry Meridia's Beacon, including after placing the beacon on Meridia's statue.
 * A number of scenarios in which effects dispel other effects are fixed. Most notably, fire spells no longer dispel passive buffs such as Healing Aura.
 * The scaling effects of the Gauldur Amulet, Ring of Namura, and Volendrung update immediately.
 * The scaling effects of Dawnbreaker, Ebony Mail, Glass Bow of the Stag Prince, Mace of Molag Bal, Mehrunes' Razor, and Savior's Hide update periodically in the background.

@@ -16,3 +16,10 @@ Effects:
 - BaseEffect: 0D7995:Requiem.esp
   Data:
     Magnitude: 20
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    CompareOperator: GreaterThanOrEqualTo
+    Data:
+      MutagenObjectType: GetItemCountConditionData
+      ItemOrList: 04E4E6:Skyrim.esm
+    ComparisonValue: 1
