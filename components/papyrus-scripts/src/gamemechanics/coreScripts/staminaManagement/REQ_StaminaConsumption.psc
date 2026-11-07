@@ -50,7 +50,7 @@ Event OnControlDown(String Control)
 			If (!Player.IsSwimming() && !Player.IsOnMount())
 				Player.AddSpell(Jumpcost, False)
 			EndIf
-		ElseIf Control == "Right Attack/Block" && player.GetEquippedItemType(1) == 7
+		ElseIf Control == "Right Attack/Block" && player.GetEquippedItemType(1) == 7 && player.GetAnimationVariableBool("IsAttacking")
 			Player.AddSpell(AttackCost, False)
 		ElseIf Control == "Left Attack/Block" && player.GetAnimationVariableBool("Isblocking") ; RRO-207
 			Player.AddSpell(BlockCost, False)
