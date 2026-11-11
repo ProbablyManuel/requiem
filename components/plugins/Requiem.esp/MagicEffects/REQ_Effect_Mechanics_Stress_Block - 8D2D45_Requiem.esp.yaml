@@ -1,15 +1,15 @@
 FormKey: 8D2D45:Requiem.esp
-EditorID: REQ_Effect_Mechanics_Stress_Block_
+EditorID: REQ_Effect_Mechanics_Stress_Block
 VirtualMachineAdapter:
   Scripts:
-  - Name: REQ_AttackStaminaDrain
+  - Name: REQ_BlockStaminaCost
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: BlockRemover
-      Object: 95FFFA:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Drainspell
+      Name: StaminaCost
       Object: 2C6F32:Requiem.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StaminaCostChecker
+      Object: 95FFFA:Requiem.esp
 Name:
   TargetLanguage: English
   Value: Exhaustion from Blocking
@@ -27,8 +27,3 @@ Sounds: []
 Description:
   TargetLanguage: English
   Value: Keeping your shield and weapons raised to block incoming attacks tires you. The more weight your worn equipment has, the faster you will be exhausted.
-Conditions:
-- MutagenObjectType: ConditionFloat
-  Data:
-    MutagenObjectType: IsBlockingConditionData
-  ComparisonValue: 1

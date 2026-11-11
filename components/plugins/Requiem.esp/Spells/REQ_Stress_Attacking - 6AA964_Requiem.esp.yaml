@@ -16,3 +16,8 @@ Effects:
 - BaseEffect: 6AD103:Requiem.esp
   Data:
     Magnitude: 4
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Data:
+      MutagenObjectType: IsAttackingConditionData
+    ComparisonValue: 1
