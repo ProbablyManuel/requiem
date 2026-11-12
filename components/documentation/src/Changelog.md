@@ -84,6 +84,7 @@ Bug Fixes
 * Arcane Power clarifies it deals magic damage rather than truly irresistible damage.
 * The Charmed Necklace states that it prevents you from stumbling while drunk.
 * The total lifetime bounty is correctly adjusted after escaping from Cidhna Mine if other mods change the bounty values.
+* The vampire blood harvesting script doesn't trigger a Papyrus event every time an item is added to the player's inventory.
 * Smelting dwarven armors and weapons requires the same amount of dwarven powder than it yields ingots.
 * The daedric weapons added by Requiem have Atronach Forge recipes.
 * Simulacrum Battleaxe is loud.
