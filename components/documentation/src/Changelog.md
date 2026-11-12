@@ -49,6 +49,7 @@ Bug Fixes
 * Netch float above the water.
 * Annihilation isn't resisted by magic resistance.
 * Single-handed power attacks while wielding two weapons use the normal sneak attack damage mutiplier.
+* Attacking and blocking doesn't continue draining stamina when Papyrus script lag becomes abnormally high. 
 * Readying a bow with the attack button doesn't cost stamina.
 * Stealing dreams with the Skull of Corruption doesn't aggro the target.
 * Glass Bow of the Stag Prince recognizes slaying Sinding.

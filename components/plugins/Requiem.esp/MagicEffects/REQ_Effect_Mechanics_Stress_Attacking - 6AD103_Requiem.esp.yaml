@@ -1,14 +1,11 @@
 FormKey: 6AD103:Requiem.esp
-EditorID: REQ_Effect_Mechanics_Stress_Attacking_
+EditorID: REQ_Effect_Mechanics_Stress_Attacking
 VirtualMachineAdapter:
   Scripts:
-  - Name: REQ_AttackStaminaDrain
+  - Name: REQ_AttackStaminaCost
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: BlockRemover
-      Object: 6B203A:Requiem.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Drainspell
+      Name: StaminaCost
       Object: 6AA964:Requiem.esp
 Name:
   TargetLanguage: English
